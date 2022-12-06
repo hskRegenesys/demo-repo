@@ -64,34 +64,11 @@ const navItems = [
    
   },  
   {
-   id: 3,
-  name: "Courses",
-   href: "/shop",
-   subNavItems: [
-    { id: 1, name: "Cart Page", href: "/cart" },
-     { id: 2, name: "Pricing 02", href: "/pricing-2", isNew: true },
-    { id: 3, name: "How it Works", href: "/how-it-works" },
-       { id: 4, name: "Coming Soon", href: "/coming-soon" },
-    { id: 5, name: "Testimonials", href: "/testimonials" },
-    { id: 6, name: "Testimonials Two", href: "/testimonials-2" },
-    { id: 7, name: "FAQs", href: "/faqs" }, 
-    { id: 9, name: "Event Details", href: "/event-details" },
-     { id: 10, name: "Clients Page", href: "/clients" },
-   { id: 11, name: "404 Page", href: "/404" },
-   ],
- },
-{
    id: 4,
    name: "Courses",
-   href: "/shop",
-   subNavItems: [
-   { id: 1, name: "All Courses", href: "/shop" },
-   { id: 3, name: "Website Development", href: "/web-development" },
-    { id: 4, name: "Graphic Designing", href: "/graphic-designing" },
-     { id: 5, name: "Digital Marketing", href: "/digital-marketing" },
-   { id: 6, name: "SEO & Content Writing", href: "/seo" },
-     { id: 7, name: "App Development", href: "/app-development" },
-    { id: 8, name: "UI/UX Designing", href: "/ui-designing" },
+   href: "/all-course",
+   subNavItems: [   
+     { id: 5, name: "Digital Marketing", href: "/digital-marketing" },  
     ],
  },
   {

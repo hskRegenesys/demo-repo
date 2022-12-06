@@ -13,7 +13,7 @@ import PartnerOne from "@/components/PartnerSection/PartnerOne";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import TeamSection from "@/components/TeamSection/TeamSection";
 
-const Shop = () => {
+const allCourse = () => {
   return (
     <Layout pageTitle="All courses">
       <Style />
@@ -32,4 +32,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default allCourse;
