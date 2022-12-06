@@ -28,7 +28,7 @@ import PartnerOne from "@/components/PartnerSection/PartnerOne";
 
 const Home2 = () => {
   return (
-    <Layout pageTitle="Home 02">
+    <Layout pageTitle="Home">
       <Style />
       <HeaderOne/>
       <MobileMenu />
