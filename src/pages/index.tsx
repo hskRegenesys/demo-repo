@@ -30,14 +30,14 @@ const Home2 = () => {
   return (
     <Layout pageTitle="Home">
       <Style />
-      <HeaderOne/>
+      <HeaderOne />
       <MobileMenu />
-      <SearchPopup />    
+      <SearchPopup />
       <FeaturedSection />
       <SponsorsSection />
-      <CallToSectionTwo/>
+      <CallToSectionTwo />
       <GallerySection />
-      <PartnerOne />    
+      <PartnerOne />
       <ServiceSectionThree />
       <TeamSection />
       <TestimonialsFive />

@@ -82,8 +82,7 @@ const HeaderOne = ({
       )}
       <div className="header-upper">
         <div className="autoContainer">
-          <div
-            className="auto-container clearfix">
+          <div className="auto-container clearfix">
             <div className="logo-box">
               <div className="logo">
                 <Link href="/index-2">
@@ -127,26 +126,26 @@ const HeaderOne = ({
             </div>
 
             {links && (
-              <div className="other-links clearfix">               
+              <div className="other-links clearfix">
                 <div className="search-btn">
                   <button
                     onClick={toggleSearch}
                     type="button"
                     className="theme-btn search-toggler"
-                  >       <span className="flaticon-loupe"></span>
+                  >
+                    {" "}
+                    <span className="flaticon-loupe"></span>
                   </button>
                 </div>
 
-
                 <div className="link-box">
-              <Link href="/contact">
-                <a className="theme-btn btn-style-two">
-                  <i className="btn-curve"></i>
-                  <span className="btn-title">Login</span>
-                </a>
-              </Link>
-            </div>
-               
+                  <Link href="/contact">
+                    <a className="theme-btn btn-style-two">
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Login</span>
+                    </a>
+                  </Link>
+                </div>
               </div>
             )}
             {rightMenu && (

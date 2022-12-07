@@ -95,26 +95,21 @@ const ProductTab = ({ tab = {}, current, carousel = "" }) => {
                 ></a>
                 <div className="cap-box">
                   <div className="cap-inner">
-                  <div className="title">
+                    <div className="title">
                       <h5>
                         <Link href="/portfolio-single">{title}</Link>
                       </h5>
                     </div>
 
                     <div className="cat">
-                    <ul className="about-seven__list list-unstyled">
-                {tagline.map((list, i) => (
-                  <li key={i}>                   
-                    {list}
-                  </li>
-                ))}
-              </ul>                 
+                      <ul className="about-seven__list list-unstyled">
+                        {tagline.map((list, i) => (
+                          <li key={i}>{list}</li>
+                        ))}
+                      </ul>
                     </div>
 
-                    <div className="batch">
-                      {batch}
-                    </div>
-              
+                    <div className="batch">{batch}</div>
                   </div>
                 </div>
               </div>
