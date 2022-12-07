@@ -1,17 +1,14 @@
 import PageBanner from "@/components/BannerSection/PageBanner";
 import ContactSection from "@/components/ContactSection/ContactSection";
-import FeaturesSectionTwo from "@/components/FeaturesSection/FeaturesSectionTwo";
+import GetInTouch from "@/components/FeaturesSection/FeaturesSectionTwo";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import ContactInfoTwo from "@/components/ContactSection/ContactInfoTwo";
-import CallToSection from "@/components/CallToSection/CallToSection";
-import ServicesSectionThree from "@/components/ServicesSection/ServicesSectionThree";
-import DiscoverSection from "@/components/DiscoverSection/DiscoverSection";
-
+import CallToSection from "@/components/HomeSkillDescription/CallToSection";
+import SocialMedia from "@/components/SocialMedia/SocialMedia";
 
 
 import React from "react";
@@ -24,9 +21,9 @@ const Contact = () => {
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="Contact" />
-      <FeaturesSectionTwo/>
+      <GetInTouch/>
       <ContactSection form map  />  
-      <ServicesSectionThree />
+      <SocialMedia />
       <CallToSection />
       <MainFooter normalPadding={false} />
     </Layout>

@@ -39,7 +39,7 @@ const settings = {
   },
 };
 
-const SponsorsSection = ({ className = "" }) => {
+const StudentPlacement = ({ className = "" }) => {
   const listRef = useRef(null);
 
   return (
@@ -84,4 +84,4 @@ const SponsorsSection = ({ className = "" }) => {
   );
 };
 
-export default SponsorsSection;
+export default StudentPlacement;

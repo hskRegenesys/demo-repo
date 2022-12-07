@@ -4,7 +4,7 @@ import { Col, Image, Row } from "react-bootstrap";
 
 const { image, title, text, text2, text3, socials, highlight, subtitle } = aboutMeOne;
 
-const AboutMeOne = () => {
+const AboutMarko = () => {
   return (
     <section className="about-me-one about-me-bg">    
         <div className="auto-container">
@@ -44,4 +44,4 @@ const AboutMeOne = () => {
   );
 };
 
-export default AboutMeOne;
+export default AboutMarko;

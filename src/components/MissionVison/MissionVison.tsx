@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
-const HowItWorksPage = () => {
+const MissionVison = () => {
   return (
     <section className="how-it-works">
       <div className="FluidSection">
@@ -26,4 +26,4 @@ const HowItWorksPage = () => {
   );
 };
 
-export default HowItWorksPage;
+export default MissionVison;

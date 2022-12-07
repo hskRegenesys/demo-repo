@@ -6,7 +6,7 @@ import SingleService from "./SingleService";
 
 const { title, services } = servicesSectionThree;
 
-const ServicesSectionThree = ({ className = "" }) => {
+const GetInTouch = ({ className = "" }) => {
   const ref = useActive("#services");
 
   return (
@@ -33,4 +33,4 @@ const ServicesSectionThree = ({ className = "" }) => {
   );
 };
 
-export default ServicesSectionThree;
+export default GetInTouch;

@@ -5,7 +5,7 @@ import { Col, Image, Row } from "react-bootstrap";
 const { image, title, text, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
 
-const FeaturedSection = ({ className = "" }) => {
+const HomeBanner = ({ className = "" }) => {
   return (
     <section className={`featured-section ${className}`}>
       <div className="auto-container">
@@ -37,4 +37,4 @@ const FeaturedSection = ({ className = "" }) => {
   );
 };
 
-export default FeaturedSection;
+export default HomeBanner;

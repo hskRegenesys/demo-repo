@@ -24,7 +24,7 @@ const settings = {
 
 const { title, items } = testimonialsFive;
 
-const TestimonialsFive = () => {
+const TestimonialsStudent = () => {
   const listRef = useRef(null);
 
   return (
@@ -59,4 +59,4 @@ const TestimonialsFive = () => {
   );
 };
 
-export default TestimonialsFive;
+export default TestimonialsStudent;
