@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const CallToSectionTwo = ({
+const HomeSkillDescription = ({
   className = "",
   btnClassName = "btn-style-two",
 }) => {
@@ -30,4 +30,4 @@ const CallToSectionTwo = ({
   );
 };
 
-export default CallToSectionTwo;
+export default HomeSkillDescription;

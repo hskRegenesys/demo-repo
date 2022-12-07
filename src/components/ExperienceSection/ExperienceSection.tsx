@@ -2,7 +2,7 @@ import { partnerOne } from "@/data/partnerSection";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 
-const PartnerOne = () => {
+const ExperienceSection = () => {
   return (
     <section className="partner-one">
       <div className="auto-container">
@@ -39,4 +39,4 @@ const PartnerOne = () => {
   );
 };
 
-export default PartnerOne;
+export default ExperienceSection;

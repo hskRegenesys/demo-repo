@@ -5,13 +5,13 @@ import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import CallToSection from "@/components/CallToSection/CallToSection";
+import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import ShopPage from "@/components/ShopPage/ShopPage";
-import AllCourseText from "@/components/SponsorsSection/AllCourseText";
+import AllCourseText from "@/components/StudentPlacement/AllCourseText";
 import React from "react";
-import PartnerOne from "@/components/PartnerSection/PartnerOne";
+import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
-import TeamSection from "@/components/TeamSection/TeamSection";
+import PopularTopics from "@/components/PopularTopics/PopularTopics";
 
 const allCourse = () => {
   return (
@@ -25,7 +25,7 @@ const allCourse = () => {
       <ShopPage />
       <PartnerOne />   
       <VideoOne /> 
-      <TeamSection />
+      <PopularTopics />
       <CallToSection />
       <MainFooter />
     </Layout>

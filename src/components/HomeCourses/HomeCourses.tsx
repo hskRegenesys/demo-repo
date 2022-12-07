@@ -4,7 +4,7 @@ import ProductTab from "./ProductTab";
 
 const { title, tabBtns, pTabs, pTabs2 } = gallerySection;
 
-const GallerySection = ({ className = "", carousel = "" }) => {
+const HomeCourses = ({ className = "", carousel = "" }) => {
   const [current, setCurrent] = useState("p-tab-1");
   const newPTabs = carousel ? pTabs2 : pTabs;
 
@@ -55,4 +55,4 @@ const GallerySection = ({ className = "", carousel = "" }) => {
   );
 };
 
-export default GallerySection;
+export default HomeCourses;

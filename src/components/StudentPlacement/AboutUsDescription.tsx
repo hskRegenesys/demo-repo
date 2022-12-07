@@ -7,7 +7,7 @@ import LiveSection from "@/components/LiveSection/LiveSection";
 
 const { title, pagedesc, subtitle, imagearrow, text1, text2, highlight } = sponsorsSectionFour;
 
-const SponsorsSectionFour = () => {
+const AboutUsDescription = () => {
   return (
     <section className="sponsors-section-four about-us-wave">
       <div className="auto-container ">
@@ -44,4 +44,4 @@ const SponsorsSectionFour = () => {
   );
 };
 
-export default SponsorsSectionFour;
+export default AboutUsDescription;

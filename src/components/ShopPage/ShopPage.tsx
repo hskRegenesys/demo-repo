@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import CustomSelect from "../Reuseable/CustomSelect";
 import ProductCard from "./ProductCard";
-import GallerySectionOne from "@/components/GallerySection/GallerySectionOne";
+import GallerySectionOne from "@/components/HomeCourses/GallerySectionOne";
 
 const options = ["Sort by Price", "Sort by Date", "Sort by Ratings"].map(
   (it) => ({

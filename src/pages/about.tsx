@@ -5,10 +5,10 @@ import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import CallToSection from "@/components/CallToSection/CallToSection";
-import AboutMeOne from "@/components/AboutSection/AboutMeOne";
-import SponsorsSectionFour from "@/components/SponsorsSection/SponsorsSectionFour";
-import HowItWorksPage from "@/components/HowItWorks/HowItWorksPage";
+import CallToSection from "@/components/HomeSkillDescription/CallToSection";
+import AboutMarko from "@/components/AboutMarko/AboutMarko";
+import AboutUsDescription from "@/components/StudentPlacement/AboutUsDescription";
+import MissionVison from "@/components/MissionVison/MissionVison";
 
 import React from "react";
 
@@ -20,9 +20,9 @@ const About = () => {
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="About" />
-      <SponsorsSectionFour />
-      <HowItWorksPage />
-      <AboutMeOne />
+      <AboutUsDescription />
+      <MissionVison />
+      <AboutMarko />
       <CallToSection />
       <MainFooter normalPadding={false} />
     </Layout>

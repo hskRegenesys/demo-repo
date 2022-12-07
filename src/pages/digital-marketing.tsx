@@ -1,5 +1,5 @@
 import PageBanner from "@/components/BannerSection/PageBanner";
-import CallToSection from "@/components/CallToSection/CallToSection";
+import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";

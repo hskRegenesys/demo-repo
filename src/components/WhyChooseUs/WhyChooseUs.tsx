@@ -2,7 +2,7 @@ import { serviceSectionThree } from "@/data/servicesSection";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
-const ServiceSectionThree = () => {
+const WhyChooseUs = () => {
   return (
     <section className="service-block-three">
       <div className="auto-container">
@@ -33,4 +33,4 @@ const ServiceSectionThree = () => {
   );
 };
 
-export default ServiceSectionThree;
+export default WhyChooseUs;
