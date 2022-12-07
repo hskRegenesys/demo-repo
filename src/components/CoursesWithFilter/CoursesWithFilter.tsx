@@ -16,7 +16,7 @@ const options = ["Sort by Price", "Sort by Date", "Sort by Ratings"].map(
 
 const { categories, products } = shopPage;
 
-const ShopPage = () => {
+const CoursesWithFilter = () => {
   const [sliderValue, setSliderValue] = useState([30, 150]);
 
   const [sortBy, setSortBy] = useState("Sort by Price");
@@ -105,4 +105,4 @@ const ShopPage = () => {
   );
 };
 
-export default ShopPage;
+export default CoursesWithFilter;

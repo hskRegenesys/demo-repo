@@ -1,36 +1,36 @@
-import { servicesSectionThree } from "@/data/servicesSection";
-import useActive from "@/hooks/useActive";
+import { serviceSectionThree } from "@/data/servicesSection";
 import React from "react";
-import { Row } from "react-bootstrap";
-import SingleService from "./SingleService";
+import { Col, Row } from "react-bootstrap";
 
-const { title, services } = servicesSectionThree;
-
-const ServicesSectionThree = ({ className = "" }) => {
-  const ref = useActive("#services");
-
+const WhyChooseUs = () => {
   return (
-    <section
-      ref={ref}
-      className={`services-section-three ${className}`}
-      id="services"
-    >
+    <section className="service-block-three">
       <div className="auto-container">
         <div className="sec-title centered">
-          <h2>
-            {title}
+          <h2 className="with-curve-center title-width mx-auto">
+            Why choose Digital Regenesys
           </h2>
+          <h6 className="desc">In a one to one setting, a tutor is able to focus on the individual learner's needs</h6>
         </div>
-        <div className="services">
-          <Row className="clearfix">
-            {services.map((service) => (
-              <SingleService service={service} key={service.id} />
-            ))}
-          </Row>
-        </div>
+        <Row>
+          {serviceSectionThree.map(({ id, icon, title, href, desc }) => (
+            <Col key={id} sm={12} md={6} lg={6} className="animated fadeInLeft">
+              <div className="service-block-three__single">
+                <div className="icon-box">
+                  <span className={icon}></span>
+                  {title}
+                </div>
+                <h6>
+                  {desc}
+
+                </h6>
+              </div>
+            </Col>
+          ))}
+        </Row>
       </div>
     </section>
   );
 };
 
-export default ServicesSectionThree;
+export default WhyChooseUs;

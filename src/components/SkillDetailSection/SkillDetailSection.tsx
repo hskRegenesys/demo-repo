@@ -3,7 +3,7 @@ import React from "react";
 
 const { title, text1, text2 } = productDescription;
 
-const ProductDescription = () => {
+const FeesDetails = () => {
   return (
     <section className="product-description">
       <div className="auto-container">
@@ -14,4 +14,4 @@ const ProductDescription = () => {
   );
 };
 
-export default ProductDescription;
+export default FeesDetails;

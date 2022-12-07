@@ -11,8 +11,8 @@ import { digitalMarketing } from "@/data/sidebarPageContainer";
 import FaqsSection from "@/components/FaqsSection/FaqsSection";
 import CourseDetails from "@/components/CourseDetails/CourseDetails";
 import VideoOne from "@/components/VideoSection/VideoOne";
-import ProductDescription from "@/components/ProductDetails/ProductDescription";
-import ProductDetailsPage from "@/components/ProductDetails/ProductDetailsPage";
+import SkillDetailSection from "@/components/SkillDetailSection/SkillDetailSection";
+import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
 
 import React from "react";
 import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
@@ -26,10 +26,10 @@ const DigitalMarketing = () => {
       <SearchPopup />
       <PageBanner title="Digital Marketing" parent="All courses" parentHref="/shop" />      
       <CourseDetails />  
-      <ProductDescription /> 
+      <SkillDetailSection /> 
       <VideoOne /> 
       <CourseCurriculum />  
-      <ProductDetailsPage />
+      <FeesDetails />
       <FaqsSection />
       <CallToSection />
       <MainFooter />

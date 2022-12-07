@@ -6,7 +6,7 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import ShopPage from "@/components/ShopPage/ShopPage";
+import CoursesWithFilter from "@/components/CoursesWithFilter/CoursesWithFilter";
 import AllCourseText from "@/components/StudentPlacement/AllCourseText";
 import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
@@ -22,7 +22,7 @@ const allCourse = () => {
       <SearchPopup />
       <PageBanner title="Products" page="All courses" />
       <AllCourseText />
-      <ShopPage />
+      <CoursesWithFilter />
       <PartnerOne />   
       <VideoOne /> 
       <PopularTopics />
