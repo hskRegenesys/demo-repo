@@ -36,7 +36,7 @@ const CoursesWithFilter = () => {
   };
 
   return (
-    <section className="shop-page">
+    <section className="shop-page gallery-section-two">
       <div className="FluidSection">
         <Row>
           <Col lg={3}>
