@@ -494,8 +494,7 @@ figure {
   color: #fff;
 }
 
-.btn-style-four
-{
+.btn-style-four {
   border: 1px solid #000;
   color: #000;
   padding: 8px 20px;
@@ -503,8 +502,7 @@ figure {
   font-family: 'Raleway-semibold';
 }
 
-.btn-style-four:hover
-{
+.btn-style-four:hover {
   border: 1px solid #000;
   color: #c3eadb;
   padding: 8px 20px;
@@ -513,8 +511,7 @@ figure {
   background-color: #000000
 }
 
-.btn-style-four span.btn-title
-{
+.btn-style-four span.btn-title {
   font-family: 'Raleway-semibold';
 }
 
@@ -3678,8 +3675,10 @@ img.lazy-image.loaded {
   margin: 0 0 20px;
 }
 
-.sec-title h2, .how-it-works-card__inner h2, .all-course-section h3, .faq-block h3
- {
+.sec-title h2,
+.how-it-works-card__inner h2,
+.all-course-section h3,
+.faq-block h3 {
   position: relative;
   display: block;
   font-size: 46px;
@@ -4179,7 +4178,7 @@ img.lazy-image.loaded {
   display: block;
   float: right;
   width: 100%;
-  height:250px;
+  height: 250px;
   border-radius: 50%;
 }
 
@@ -5897,7 +5896,7 @@ img.lazy-image.loaded {
   .sponsors-section-four .content-box h3 {
     margin-bottom: 40px;
     max-width: 782px;
-    
+
   }
 }
 
@@ -6753,7 +6752,7 @@ img.lazy-image.loaded {
 }
 
 
-.main-footer .footer-widget .contact-info h6{
+.main-footer .footer-widget .contact-info h6 {
   margin-top: 40px;
 }
 
@@ -7514,7 +7513,8 @@ img.lazy-image.loaded {
   -o-transition: all 0.5s ease;
 }
 
-.service-block-two .inner-box .icon-box span.fab, .service-block-two .inner-box .icon-box span.fas{
+.service-block-two .inner-box .icon-box span.fab,
+.service-block-two .inner-box .icon-box span.fas {
   font-size: 36px;
   margin-right: 10px;
 }
@@ -7568,9 +7568,11 @@ img.lazy-image.loaded {
   font-size: 20px;
   color: #000000;
 }
-.service-block-two .inner-box:hover a{
+
+.service-block-two .inner-box:hover a {
   color: #FFFFFF;
 }
+
 /***
 
 ====================================================================
@@ -7709,6 +7711,12 @@ img.lazy-image.loaded {
 .gallery-section-two {
   position: relative;
   padding: 120px 0 0px;
+  background-image: url(/_next/static/media/all-course-bg.116dd555.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 768px;
 }
 
 .gallery-section-two.alternate {
@@ -7719,6 +7727,31 @@ img.lazy-image.loaded {
 
 .gallery-section-two .sec-title {
   margin-bottom: 40px;
+}
+
+.gallery-section-two .sec-title h2 {
+  max-width: 300px;
+}
+
+.all-course-link {
+  display: flex;
+  margin: 30px;
+  justify-content: end;
+  font-size: 18px;
+
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.all-course-link a
+{
+  font-family: 'Raleway-semibold';
+  color:#000000;
+}
+
+.all-course-link a:hover
+{
+  color:#1fa393;
+  transition: all 0.5s ease;
 }
 
 .project-tab {
@@ -7754,6 +7787,7 @@ img.lazy-image.loaded {
   border-radius: 12px;
   box-shadow: 6px 6px 0 0 #c3ead8;
   transition: .1s cubic-bezier(.25, .46, .45, .94);
+  background-color: #FFF;
 }
 
 /* .project-tab .product-tab-btns .p-tab-btn:before {
@@ -9745,8 +9779,8 @@ img.lazy-image.loaded {
   padding: 0;
 }
 
-.discover-section .auto-container .row .discover-block:first-child, .discover-section .auto-container .row .discover-block:nth-child(2)
-{
+.discover-section .auto-container .row .discover-block:first-child,
+.discover-section .auto-container .row .discover-block:nth-child(2) {
   border-right: 1px solid #000;
 }
 
@@ -9865,7 +9899,7 @@ img.lazy-image.loaded {
   margin-bottom: 40px;
 }
 
-.features-section-two .sec-title h2{
+.features-section-two .sec-title h2 {
   max-width: 275px;
 }
 
@@ -11197,9 +11231,9 @@ img.lazy-image.loaded {
   background-color: #c3ead8;
   margin-bottom: 80px;
 }
-.faqs-section.curriculum
-{
-background-color: #FFF !important;
+
+.faqs-section.curriculum {
+  background-color: #FFF !important;
 }
 
 .faqs-section .faq-block {
@@ -11401,14 +11435,14 @@ background-color: #FFF !important;
 
 .contact-section .form-box {
   position: relative;
-    display: block;
-    width: 100%;
-    margin: 0 auto 100px;
-    text-align: center;
-    background: rgba(255,255,255,0.50);
-    padding: 100px 100px 40px;
-    border: 2px solid #000;
-    border-radius: 25px;
+  display: block;
+  width: 100%;
+  margin: 0 auto 100px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.50);
+  padding: 100px 100px 40px;
+  border: 2px solid #000;
+  border-radius: 25px;
 }
 
 .contact-section .form-box form .row {
@@ -15147,11 +15181,11 @@ background-color: #FFF !important;
 /*--------------------------------------------------------------
 # Shop
 --------------------------------------------------------------*/
-.shop-page 
-{
+.shop-page {
   background-color: #c3ead8;
 }
-.shop-page .FluidSection{
+
+.shop-page .FluidSection {
   padding-top: 100px;
   padding-bottom: 85px;
   max-width: 1500px;
@@ -16589,11 +16623,10 @@ background-color: #FFF !important;
   background-image: url(../assets/images/background/wave-line.png);
   background-size: 100%;
   background-position: center center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
-.how-it-works .FluidSection
-{
+.how-it-works .FluidSection {
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -16605,7 +16638,7 @@ background-color: #FFF !important;
 }
 
 .how-it-works-card {
-  
+
   border-radius: 12px;
   -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
@@ -16636,7 +16669,8 @@ background-color: #FFF !important;
 
 .how-it-works-card__title {
   margin: 0;
-  color: var(--thm-black);  line-height: 1;
+  color: var(--thm-black);
+  line-height: 1;
 
   font-size: 30px;
 }
@@ -16650,9 +16684,9 @@ background-color: #FFF !important;
   max-width: 340px;
   margin-top: 35px;
   font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    font-family: Raleway-medium;
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-family: Raleway-medium;
 }
 
 .how-it-works-card__link {
@@ -23882,7 +23916,7 @@ background-color: #FFF !important;
 }
 
 /* process one */
-.process-one { 
+.process-one {
   padding: 30px;
   max-width: 1600px;
   margin: 0 auto;
@@ -23909,15 +23943,14 @@ background-color: #FFF !important;
 }
 
 
-.process-one__content
-{
+.process-one__content {
   background-color: #ffe55b;
   padding: 100px;
   border-radius: 10px;
   float: left;
 }
 
-.process-one__content ul{
+.process-one__content ul {
   background-color: #ffe55b;
   padding: 100px;
   border-radius: 10px;
@@ -23967,7 +24000,7 @@ background-color: #FFF !important;
   float: left;
 }
 
-.process-one__list li>i { 
+.process-one__list li>i {
   color: var(--thm-black);
   position: absolute;
   top: 5px;
@@ -24198,8 +24231,7 @@ background-color: #FFF !important;
   font-size: 22px;
 }
 
-.footer-section-yellow ul li a
-{
+.footer-section-yellow ul li a {
   font-size: 14px;
   font-family: raleway-medium;
   color: #000000 !important;
@@ -24270,8 +24302,7 @@ h6.desc {
   font-family: 'Raleway-semibold';
 }
 
-.all-course-section .content-box
-{
+.all-course-section .content-box {
   max-width: 700px;
   position: relative;
   padding-right: 80px;
@@ -24356,8 +24387,7 @@ p.highlight {
   margin-bottom: 80px;
 }
 
-.about-us-wave
-{
+.about-us-wave {
   background-image: url(../assets/images/background/about-us-wave.png);
   background-position: center top;
   background-size: 100%;
@@ -24366,8 +24396,7 @@ p.highlight {
   min-height: 850px;
 }
 
-.about-us-bg
-{
+.about-us-bg {
   background-image: url(../assets/images/background/about-us-bg.png);
   background-position: center top;
   background-size: 100%;
@@ -24378,8 +24407,7 @@ p.highlight {
 }
 
 
-.all-course-bg
-{
+.all-course-bg {
   background-image: url(../assets/images/background/bg-all-course.png);
   background-position: center top;
   background-size: 100%;
@@ -24389,8 +24417,7 @@ p.highlight {
 }
 
 
-.all-course-wave
-{
+.all-course-wave {
   background-image: url(../assets/images/background/all-course-bg.png);
   background-position: center top;
   background-size: 100%;
@@ -24399,14 +24426,13 @@ p.highlight {
   min-height: 768px;
 }
 
-.who-we-are
-{
+.who-we-are {
   padding-left: 140px;
   position: relative;
   padding-top: 100px;
 }
 
-.sign-arrow img{
+.sign-arrow img {
   position: absolute;
   left: 0;
   width: 118px;
@@ -24414,36 +24440,31 @@ p.highlight {
 }
 
 
-.how-it-works .FluidSection .row div:first-child .how-it-works-card .how-it-works-card__inner
-{
-      background-color: #c3ead8 !important;
-      background-image: url(../assets/images/background/our-mission.png);
-      background-size: 80%;
-      background-position: bottom right;
-      background-repeat: no-repeat;
-      box-shadow: 8px 8px 0 0 #ffe55b;
-    transition: .1s cubic-bezier(.25, .46, .45, .94);
+.how-it-works .FluidSection .row div:first-child .how-it-works-card .how-it-works-card__inner {
+  background-color: #c3ead8 !important;
+  background-image: url(../assets/images/background/our-mission.png);
+  background-size: 80%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  box-shadow: 8px 8px 0 0 #ffe55b;
+  transition: .1s cubic-bezier(.25, .46, .45, .94);
 }
 
-.how-it-works .FluidSection .row div:nth-child(2) .how-it-works-card .how-it-works-card__inner
-{
-      background-color: #ffe55b !important;
-      background-image: url(../assets/images/background/our-vision-bg.png);
-      background-size: 34%;
-      background-position: bottom right;
-      background-repeat: no-repeat; 
-      box-shadow: 8px 8px 0 0 #1fa393;
-    transition: .1s cubic-bezier(.25, .46, .45, .94);
+.how-it-works .FluidSection .row div:nth-child(2) .how-it-works-card .how-it-works-card__inner {
+  background-color: #ffe55b !important;
+  background-image: url(../assets/images/background/our-vision-bg.png);
+  background-size: 34%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  box-shadow: 8px 8px 0 0 #1fa393;
+  transition: .1s cubic-bezier(.25, .46, .45, .94);
 }
 
-.features-section-two
-{
-      background-color: #C3EAD8 !important;
-      background-image: url(../assets/images/background/contact-wave.png);
-      background-size: 100%;
-      background-position: center center;
-      background-repeat: no-repeat;  
-    transition: .1s cubic-bezier(.25, .46, .45, .94);
+.features-section-two {
+  background-color: #C3EAD8 !important;
+  background-image: url(../assets/images/background/contact-wave.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: .1s cubic-bezier(.25, .46, .45, .94);
 }
-
-

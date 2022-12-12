@@ -288,6 +288,7 @@ const items2 = [
 
 const gallerySection = {
   title: "Explore Our Courses",
+  describe: "Facilitator led courses",
   tabBtns: [
     {
       id: 1,
@@ -323,7 +324,7 @@ const gallerySection = {
   pTabs: [
     {
       id: "p-tab-1",
-      items ,
+      items,
     },
     {
       id: "p-tab-2",
@@ -335,7 +336,7 @@ const gallerySection = {
     },
     {
       id: "p-tab-4",
-      items: cyberSecurity, dataScience,
+      items: cyberSecurity,
     },
     {
       id: "p-tab-5",

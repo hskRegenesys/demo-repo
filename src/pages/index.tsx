@@ -4,7 +4,7 @@ import FeaturesSection from "@/components/FeaturesSection/FeaturesSection";
 import FluidSection from "@/components/FluidSection/FluidSection";
 import FunFacts from "@/components/FunFacts/FunFacts";
 import HomeCourses from "@/components/HomeCourses/HomeCourses";
-import GetQuote from "@/components/GetQuote/GetQuote";
+
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";

@@ -1,8 +1,9 @@
 import gallerySection from "@/data/gallerySection";
 import React, { useState } from "react";
 import ProductTab from "./ProductTab";
+import Link from "next/link";
 
-const { title, tabBtns, pTabs, pTabs2 } = gallerySection;
+const { title, describe, tabBtns, pTabs, pTabs2 } = gallerySection;
 
 const HomeCourses = ({ className = "", carousel = "" }) => {
   const [current, setCurrent] = useState("p-tab-1");
@@ -15,6 +16,8 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
           <h2>
             {title}
           </h2>
+
+          <h6 className="desc">{describe}</h6>
         </div>
       </div>
       <div className="project-tab">
@@ -38,6 +41,13 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
             </div>
           </div>
         </div>
+
+   
+        <div className="auto-container">
+            <div className="all-course-link"><Link href="/all-course">All Courses</Link></div>
+      </div>
+
+
         <div className={className ? "auto-container" : ""}>
           <div className="p-tabs-content">
             {newPTabs.map((tab) => (
