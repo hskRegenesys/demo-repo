@@ -41,7 +41,7 @@ export default servicesSection;
 export const serviceSectionThree = [
   {
     id: 1,
-    icon: "fa fa-facebook",
+    icon: "fa fa-laptop",
     title: "Live Classes",
     desc : "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
   },

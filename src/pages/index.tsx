@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import HomeBanner from "@/components/HomeBanner/HomeBanner";
 import HomeCourses from "@/components/HomeCourses/HomeCourses";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 505d64d90bbd6e4c110acbf827872660d23af776
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
