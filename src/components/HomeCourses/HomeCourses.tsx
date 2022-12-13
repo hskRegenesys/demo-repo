@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ProductTab from "./ProductTab";
 import Link from "next/link";
 
-let { title, tabBtns, pTabs, pTabs2 } = gallerySection;
+let { title, tabBtns, pTabs, pTabs2, describe } = gallerySection;
 
 const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
   const [current, setCurrent] = useState("p-tab-1");
