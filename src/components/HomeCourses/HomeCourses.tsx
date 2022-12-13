@@ -2,19 +2,18 @@ import gallerySection from "@/data/gallerySection";
 import React, { useState } from "react";
 import ProductTab from "./ProductTab";
 
-const { title, tabBtns, pTabs, pTabs2 } = gallerySection;
+let { title, tabBtns, pTabs, pTabs2 } = gallerySection;
 
-const HomeCourses = ({ className = "", carousel = "" }) => {
+const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
   const [current, setCurrent] = useState("p-tab-1");
   const newPTabs = carousel ? pTabs2 : pTabs;
 
+  console.log("Ravi", data);
   return (
     <section className={`gallery-section-two ${className}`}>
       <div className="auto-container">
         <div className="sec-title">
-          <h2>
-            {title}
-          </h2>
+          <h2>{title}</h2>
         </div>
       </div>
       <div className="project-tab">
@@ -31,7 +30,6 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
                     }`}
                   >
                     {name}
-                    {/* <sup>[{count}]</sup> */}
                   </li>
                 ))}
               </ul>

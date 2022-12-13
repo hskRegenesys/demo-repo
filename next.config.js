@@ -4,8 +4,5 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  env: {
-    base_Url: process.env.DR_API_BASE_URL,
-  },
 };
 module.exports = nextConfig;
