@@ -83,6 +83,9 @@ const ProductTab = ({ tab = {}, current, carousel = "" }) => {
           {items.map(({ id, image, title, tagline, batch }) => (
             <div ref={listRef} className="gallery-item" key={id}>
               <div className="inner-box">
+                <div className="icon">
+                  <i className="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
                 <figure className="image">
                   <Image
                     src={require(`@/images/gallery/${image}`).default.src}

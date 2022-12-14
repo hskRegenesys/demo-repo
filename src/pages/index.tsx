@@ -13,6 +13,7 @@ import StudentPlacement from "@/components/StudentPlacement/StudentPlacement";
 import WhyChooseUs from "@/components/WhyChooseUs/ServicesSectionThree";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
+import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
 import { courseService } from "src/services";
 
@@ -35,6 +36,7 @@ const Home2 = () => {
       <HomeBanner />
       <StudentPlacement />
       <HomeSkillDescription />
+      <TrendingSection />
       <HomeCourses data={courseData} />
       <ExperienceSection />
       <WhyChooseUs />

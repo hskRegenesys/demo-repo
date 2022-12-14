@@ -15,7 +15,6 @@ const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
       <div className="auto-container">
         <div className="sec-title">
           <h2>{title}</h2>
-
           <h6 className="desc">{describe}</h6>
         </div>
       </div>
