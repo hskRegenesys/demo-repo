@@ -1,19 +1,50 @@
+import React, { useState, useEffect, useContext } from "react";
 import gallerySection from "@/data/gallerySection";
-import React, { useState } from "react";
+
 import ProductTab from "./ProductTab";
 import Link from "next/link";
 import { Tab } from "react-bootstrap";
+import { courseService } from "src/services";
+import _ from "lodash";
 
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
-const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
+const HomeCourses = ({ className = "", carousel = "" }) => {
+  const [courseData, setcourseData] = useState([]);
+  const getData = async () => {
+    let courseListResponse = await courseService.allParentCourses();
+    setcourseData(courseListResponse);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
   const [current, setCurrent] = useState("p-tab-1");
   const newPTabs = carousel ? pTabs2 : pTabs;
   const courseHome = carousel ? courseTab : cTab;
+  let courses: any = [];
+  let CourseCard: any = [];
+  if (courseData.length) {
+    courses = _.filter(
+      courseData,
+      (item) =>
+        item?.parent_id === null &&
+        item?.isAddon === false &&
+        item?.mode_id === 1
+    );
+  }
 
-  console.log("Ravi", data);
-
+  if (courseData.length) {
+    CourseCard = _.filter(
+      courseData,
+      (item) =>
+        item?.parent_id === null &&
+        item?.isAddon === false &&
+        item?.mode_id === 2
+    );
+  }
+  console.log("Ravindra", CourseCard);
   return (
     <section className={`gallery-section-two ${className}`}>
       <div className="auto-container">
@@ -28,7 +59,7 @@ const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
           <div className="tab-btns-box">
             <div className="tabs-header">
               <ul className="product-tab-btns clearfix text-start">
-                {data.map(({ id, name, tab, count }) => (
+                {courses.map(({ id, name, tab, count }) => (
                   <li
                     key={id}
                     onClick={() => setCurrent(tab)}

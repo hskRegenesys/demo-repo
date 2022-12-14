@@ -15,18 +15,8 @@ import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
-import { courseService } from "src/services";
 
 const Home2 = () => {
-  const [courseData, setcourseData] = useState([]);
-  const getData = async () => {
-    let studentListResponse = await courseService.allCourses();
-    setcourseData(studentListResponse);
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
   return (
     <Layout pageTitle="Home">
       <Style />
@@ -36,8 +26,7 @@ const Home2 = () => {
       <HomeBanner />
       <StudentPlacement />
       <HomeSkillDescription />
-      <TrendingSection />
-      <HomeCourses data={courseData} />
+      <HomeCourses />
       <ExperienceSection />
       <WhyChooseUs />
       <PopularTopics />
