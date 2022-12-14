@@ -2,20 +2,24 @@ import gallerySection from "@/data/gallerySection";
 import React, { useState } from "react";
 import ProductTab from "./ProductTab";
 import Link from "next/link";
+import { Tab } from "react-bootstrap";
 
-let { title, tabBtns, pTabs, pTabs2, describe } = gallerySection;
+let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
+  gallerySection;
 
 const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
   const [current, setCurrent] = useState("p-tab-1");
   const newPTabs = carousel ? pTabs2 : pTabs;
+  const courseHome = carousel ? courseTab : cTab;
 
   console.log("Ravi", data);
+
   return (
     <section className={`gallery-section-two ${className}`}>
       <div className="auto-container">
         <div className="sec-title">
           <h2>{title}</h2>
-
+          <div></div>
           <h6 className="desc">{describe}</h6>
         </div>
       </div>
@@ -24,7 +28,7 @@ const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
           <div className="tab-btns-box">
             <div className="tabs-header">
               <ul className="product-tab-btns clearfix text-start">
-                {tabBtns.map(({ id, name, tab, count }) => (
+                {data.map(({ id, name, tab, count }) => (
                   <li
                     key={id}
                     onClick={() => setCurrent(tab)}
@@ -48,7 +52,7 @@ const HomeCourses = ({ className = "", carousel = "", data = [] }) => {
 
         <div className={className ? "auto-container" : ""}>
           <div className="p-tabs-content">
-            {newPTabs.map((tab) => (
+            {courseHome.map((tab) => (
               <ProductTab
                 carousel={carousel}
                 tab={tab}
