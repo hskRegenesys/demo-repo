@@ -10,7 +10,7 @@ import _ from "lodash";
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
-const CourseCardHome = ["id", "image", "title", "batch"];
+// const CourseCardHome = ["id", "image", "title", "batch"];
 
 const HomeCourses = ({ className = "", carousel = "" }) => {
   const [courseData, setcourseData] = useState([]);
