@@ -2,12 +2,14 @@ import image from "@/images/update-26-01-2021/shops/shop-d-1.jpg";
 
 export const productDetails = {
   image,
-  title: "Comfy chair",
-  price: 46.98,
-  stars: 5,
-  customerReviews: 2,
-  text: "Aliquam hendrerit a augue insuscipit. Etiam aliquam massa quis des mauris commodo venenatis ligula commodo leez sed blandit convallis dignissim onec vel pellentesque neque.",
-  text2: "REF. 4231/406 \n Available in store",
+  title: "Fees structure & Certfication",
+  subTitle: "Get Certified",
+  price: 64499,
+  text: "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
+  text2: "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+  text3: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.", 
+  admissionText:"Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+  termsConditions: '*Terms & Conditions'
 };
 
 export const productDescription = {
