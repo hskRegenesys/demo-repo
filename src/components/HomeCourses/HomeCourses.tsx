@@ -10,6 +10,8 @@ import _ from "lodash";
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
+const CourseCardHome = ["id", "image", "title", "batch"];
+
 const HomeCourses = ({ className = "", carousel = "" }) => {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
@@ -36,15 +38,17 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
   }
 
   if (courseData.length) {
+    CourseCard = ["id", "name", "description"];
     CourseCard = _.filter(
       courseData,
       (item) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 2
+        item?.mode_id === 1
     );
   }
   console.log("Ravindra", CourseCard);
+  console.log("Ravin", courseHome);
   return (
     <section className={`gallery-section-two ${className}`}>
       <div className="auto-container">
