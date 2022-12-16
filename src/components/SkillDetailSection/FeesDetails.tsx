@@ -1,73 +1,66 @@
-import { socials } from "@/data/header";
 import { productDetails } from "@/data/productDetails";
 import Link from "next/link";
-import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import TextSplit from "../Reuseable/TextSplit";
 
-const { image, title, price, text, text2, text3, subTitle, admissionText, termsConditions } =
+const { falgsa, flagnig, flagind, flagus, title, price, certifiedText1, certifiedText2, certifiedText3, subTitle, certifiedTitle1, certifiedTitle2, certifiedTitle3, admissionText, termsConditions } =
   productDetails;
 
 const ProductDetailsPage = () => {
-  const [quantity, setQuantity] = useState(1);
-
   return (
     <section className="product-details">
       <div className="auto-container">
         <Row>
 
-          <Col lg={12} xl={6}>
+          <Col lg={12} xl={12}>
             <div className="product-details__top">
               <h3 className="product-details__title">{title}</h3>
-              <h5 className="product-details__subtitle">{subTitle}</h5>
+              <h5 className="product-details__subtitle mt-3">{subTitle}</h5>
             </div>
 
-            <div className="product-details__content">
-              <p>{text}</p>
-              <p>
-                <TextSplit text={text2} />
-              </p>
-              <p>
-                <TextSplit text={text3} />
-              </p>
+          </Col>
+
+          <Col lg={12} xl={6}>
+            <div className="product-details__content get__certified__section">
+              <div className="subTitle">  <i className="flaticon-check"></i>{certifiedTitle1}</div>
+              <p>{certifiedText1}</p>
+              <div className="subTitle"><i className="flaticon-check"></i>{certifiedTitle2}</div>
+              <p>{certifiedText2}</p>
+              <div className="subTitle"><i className="flaticon-check"></i>{certifiedTitle3}</div>
+              <p>{certifiedText3}</p>
             </div>
           </Col>
 
           <Col lg={12} xl={6}>
 
-            <div className="product-details__social">
+            <div className="product-details__flag">
               <h5 className="product-details__subtitle">Total Admission Fee</h5>
-
               <div className="flags">
                 <Link href="/">
-                  <a className="theme-btn btn-style-two">
-                    <Image src={image.src} alt="" />
+                  <a>
+                    <Image src={flagind.src} alt="" />
                   </a>
                 </Link>
-
                 <Link href="/">
-                  <a className="theme-btn btn-style-two">
-                    <Image src={image.src} alt="" />
+                  <a>
+                    <Image src={flagus.src} alt="" />
                   </a>
                 </Link>
-
                 <Link href="/">
-                  <a className="theme-btn btn-style-two">
-                    <Image src={image.src} alt="" />
+                  <a>
+                    <Image src={falgsa.src} alt="" />
                   </a>
                 </Link>
-
                 <Link href="/">
-                  <a className="theme-btn btn-style-two">
-                    <Image src={image.src} alt="" />
+                  <a>
+                    <Image src={flagnig.src} alt="" />
                   </a>
                 </Link>
               </div>
             </div>
 
-            <p className="product-details__price"> &#8377; {price} + GST</p>
+            <h2 className="product-details__price"> &#8377; {price} + GST</h2>
 
-          
+
             <Link href="/">
               <a className="refer-link">
                 Refer a friend
@@ -85,8 +78,6 @@ const ProductDetailsPage = () => {
               </Link>
             </div>
           </Col>
-
-
         </Row>
       </div>
     </section>

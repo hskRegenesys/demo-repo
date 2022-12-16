@@ -1,4 +1,4 @@
-import demoBg from "@/images/background/footer-bg-2.jpg";
+
 import logo from "@/images/footer-logo.png";
 import logo3 from "@/images/logo-3.png";
 import logo6 from "@/images/update-01-10-2021/logo-6-light.png";
@@ -10,7 +10,6 @@ export const footer = { year: new Date().getFullYear(), author: "Linoor" };
 
 export const mainFooterDemo = {
   ...footer,
-  demoBg,
   title: "Create Stunning Website Now!",
   tagline: "Purchase linoor Template Now",
   templateLink: "#",
@@ -22,8 +21,6 @@ export const mainFooter = {
   logo5,
   logo6,
   logo7,
-  logo8,
-  bg: demoBg,
   title: "Let’s Start Working Together",
   about:
     "There are many variation of passages of lorem ipsum available, but the majority suffered.",
