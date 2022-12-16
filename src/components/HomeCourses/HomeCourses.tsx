@@ -10,24 +10,24 @@ import _ from "lodash";
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
-const CourseCardHome = ["id", "image", "title", "batch"];
+// const CourseCardHome = ["id", "image", "title", "batch"];
 
-const data = [{}];
-let blank = [];
-let blankObj = {};
+// const data = [{}];
+// let blank = [];
+// let blankObj = {};
 
-let blankObjArr = [
-  { id: "", image: "", title: "", batch: "" },
-  { id: "", image: "", title: "", batch: "" },
-  { id: "", image: "", title: "", batch: "" },
-  { id: "", image: "", title: "", batch: "" },
-];
+// let blankObjArr = [
+//   { id: "", image: "", title: "", batch: "" },
+//   { id: "", image: "", title: "", batch: "" },
+//   { id: "", image: "", title: "", batch: "" },
+//   { id: "", image: "", title: "", batch: "" },
+// ];
 
-blankObjArr.forEach(function (value, index) {
-  console.log(index, value);
-});
+// blankObjArr.forEach(function (value, index) {
+//   console.log(index, value);
+// });
 
-const abc = [1, 2, 3];
+// const abc = [1, 2, 3];
 
 const HomeCourses = ({ className = "", carousel = "" }) => {
   const [courseData, setcourseData] = useState([]);
