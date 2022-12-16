@@ -10,7 +10,7 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import StudentPlacement from "@/components/StudentPlacement/StudentPlacement";
-import WhyChooseUs from "@/components/WhyChooseUs/ServicesSectionThree";
+import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";

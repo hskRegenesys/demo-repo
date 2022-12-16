@@ -22,7 +22,6 @@ const WhyChooseUs = () => {
                 </div>
                 <h6>
                   {desc}
-
                 </h6>
               </div>
             </Col>
