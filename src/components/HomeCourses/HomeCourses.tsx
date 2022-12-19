@@ -3,31 +3,11 @@ import gallerySection from "@/data/gallerySection";
 
 import ProductTab from "./ProductTab";
 import Link from "next/link";
-import { Tab } from "react-bootstrap";
 import { courseService } from "src/services";
 import _ from "lodash";
 
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
-
-// const CourseCardHome = ["id", "image", "title", "batch"];
-
-// const data = [{}];
-// let blank = [];
-// let blankObj = {};
-
-// let blankObjArr = [
-//   { id: "", image: "", title: "", batch: "" },
-//   { id: "", image: "", title: "", batch: "" },
-//   { id: "", image: "", title: "", batch: "" },
-//   { id: "", image: "", title: "", batch: "" },
-// ];
-
-// blankObjArr.forEach(function (value, index) {
-//   console.log(index, value);
-// });
-
-// const abc = [1, 2, 3];
 
 const HomeCourses = ({ className = "", carousel = "" }) => {
   const [courseData, setcourseData] = useState([]);
@@ -40,10 +20,10 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
     getData();
   }, []);
   const [current, setCurrent] = useState("p-tab-1");
-  const newPTabs = carousel ? pTabs2 : pTabs;
   const courseHome = carousel ? courseTab : cTab;
   let courses: any = [];
   let CourseCard: any = [];
+
   if (courseData.length) {
     courses = _.filter(
       courseData,
@@ -54,20 +34,17 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
     );
   }
 
-  if (courseData.length) {
-    CourseCard = ["id", "name", "description"];
-    CourseCard = _.filter(
-      courseData,
-      (item) =>
-        item?.parent_id === null &&
-        item?.isAddon === false &&
-        item?.mode_id === 1
-    );
-  }
-  console.log("Ravindra", CourseCard);
-  console.log("Ravindra1", courseHome);
+  courseData.forEach(function (val) {
+    if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
+      CourseCard.push(val);
+    }
+  });
+
+  console.log("coursecard", CourseCard);
+
   return (
     <section className={`gallery-section-two ${className}`}>
+      <div>{CourseCard.batches}</div>
       <div className="auto-container">
         <div className="sec-title">
           <h2>{title}</h2>
@@ -110,6 +87,7 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
                 tab={tab}
                 key={tab.id}
                 current={current}
+                CourseCard={CourseCard}
               />
             ))}
           </div>

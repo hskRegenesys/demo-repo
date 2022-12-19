@@ -26,6 +26,7 @@ const Home2 = () => {
       <HomeBanner />
       <StudentPlacement />
       <HomeSkillDescription />
+      <TrendingSection />
       <HomeCourses />
       <ExperienceSection />
       <WhyChooseUs />

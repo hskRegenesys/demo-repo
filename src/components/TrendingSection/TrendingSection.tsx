@@ -1,13 +1,14 @@
+import React, { useState, useEffect, useContext, useRef } from "react";
 import trendingSection from "@/data/trendingSection";
 import useActive from "@/hooks/useActive";
 import dynamic from "next/dynamic";
-import React, { useRef } from "react";
-import SingleTrending from "./SingleTrending";
-
+import Link from "next/link";
+import { courseService } from "src/services";
+import _ from "lodash";
+import { Image } from "react-bootstrap";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
-
 
 const responsive1 = {
   768: {
@@ -71,34 +72,111 @@ const settings = {
   },
 };
 
-const { title, details, description, tagline } = trendingSection;
+const { title, details, description, CourseCard = [] } = trendingSection;
 
-const TrendingSection = (carousel ) => {
+const TrendingSection = (carousel) => {
+  const [courseData, setcourseData] = useState([]);
+  const getData = async () => {
+    let courseListResponse = await courseService.allParentCourses();
+    setcourseData(courseListResponse);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  let courses: any = [];
+  let CourseCard: any = [];
+
+  if (courseData.length) {
+    courses = _.filter(
+      courseData,
+      (item) =>
+        item?.parent_id === null &&
+        item?.isAddon === false &&
+        item?.mode_id === 1
+    );
+  }
+
+  courseData.forEach(function (val) {
+    if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
+      CourseCard.push(val);
+    }
+  });
   const listRef = useRef(null);
   const ref = useActive("#testimonials");
 
+  function getWeeksDiff(start_date, end_date) {
+    const msInWeek = 1000 * 60 * 60 * 24 * 7;
+    return Math.round(
+      Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
+        msInWeek
+    );
+  }
   return (
     <section ref={ref} className="testimonials-section" id="testimonials">
       <div className="auto-container">
         <div className="sec-title text-center">
-          <h2>
-            {title}          
-          </h2>
+          <h2>{title}</h2>
           <h6 className="desc">{description}</h6>
         </div>
+
         <div className="carousel-box">
           <div className="testimonials-carousel">
             <TinySlider
-              options={{ ...settings, container: `.my-slider-5`  , nav: !carousel,
-              responsive: carousel ? responsive2 : responsive1, }} 
+              options={{
+                ...settings,
+                container: `.my-slider-5`,
+                nav: !carousel,
+                responsive: carousel ? responsive2 : responsive1,
+              }}
               ref={listRef}
             >
-              {details.map((details) => (
-                <SingleTrending
-                  key={details.id}
-                  testimonial={details}
-                  ref={listRef}
-                />
+              {CourseCard.map(({ id, name, courseMode, batches }) => (
+                <div ref={listRef} className="gallery-item" key={id}>
+                  <div className="inner-box">
+                    <div className="icon">
+                      <i className="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+                    <figure className="image">
+                      <Image src={require(`@/images/gallery/1.jpg`)} alt="" />
+                    </figure>
+                    <a
+                      className="lightbox-image overlay-box"
+                      data-fancybox="gallery"
+                    ></a>
+                    <div className="cap-box">
+                      <div className="cap-inner">
+                        <div className="title">
+                          <h5>
+                            <Link href="/portfolio-single">
+                              <a>{name}</a>
+                            </Link>
+                          </h5>
+                        </div>
+
+                        <div className="cat">
+                          <ul className="about-seven__list list-unstyled">
+                            <li>{courseMode.name}</li>
+                            <li>
+                              {batches.map((item) => (
+                                <>
+                                  {getWeeksDiff(item.start_date, item.end_date)}
+                                  &nbsp;Week
+                                </>
+                              ))}
+                            </li>
+                            <li>Internation certification </li>
+                            <li>Capstone projects </li>
+                          </ul>
+                        </div>
+                        {batches.map((item) => (
+                          <div className="batch">{item.description}</div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               ))}
             </TinySlider>
           </div>

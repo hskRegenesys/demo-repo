@@ -63,9 +63,16 @@ const settings = {
   autoplayButtonOutput: false,
 };
 
-const ProductTab = ({ tab = {}, current, carousel = "" }) => {
-  const listRef = useRef(null);
+const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
+  function getWeeksDiff(start_date, end_date) {
+    const msInWeek = 1000 * 60 * 60 * 24 * 7;
+    return Math.round(
+      Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
+        msInWeek
+    );
+  }
 
+  const listRef = useRef(null);
   const { id, items } = tab;
 
   return (
@@ -80,17 +87,14 @@ const ProductTab = ({ tab = {}, current, carousel = "" }) => {
           }}
           ref={listRef}
         >
-          {items.map(({ id, image, title, tagline, batch }) => (
+          {CourseCard.map(({ id, name, courseMode, batches }) => (
             <div ref={listRef} className="gallery-item" key={id}>
               <div className="inner-box">
                 <div className="icon">
                   <i className="fa fa-share-alt" aria-hidden="true"></i>
                 </div>
                 <figure className="image">
-                  <Image
-                    src={require(`@/images/gallery/${image}`).default.src}
-                    alt=""
-                  />
+                  <Image src={require(`@/images/gallery/1.jpg`)} alt="" />
                 </figure>
                 <a
                   className="lightbox-image overlay-box"
@@ -100,19 +104,30 @@ const ProductTab = ({ tab = {}, current, carousel = "" }) => {
                   <div className="cap-inner">
                     <div className="title">
                       <h5>
-                        <Link href="/portfolio-single">{title}</Link>
+                        <Link href="/portfolio-single">
+                          <a>{name}</a>
+                        </Link>
                       </h5>
                     </div>
 
                     <div className="cat">
                       <ul className="about-seven__list list-unstyled">
-                        {tagline.map((list, i) => (
-                          <li key={i}>{list}</li>
-                        ))}
+                        <li>{courseMode.name}</li>
+                        <li>
+                          {batches.map((item) => (
+                            <>
+                              {getWeeksDiff(item.start_date, item.end_date)}
+                              &nbsp;Week
+                            </>
+                          ))}
+                        </li>
+                        <li>Internation certification </li>
+                        <li>Capstone projects </li>
                       </ul>
                     </div>
-
-                    <div className="batch">{batch}</div>
+                    {batches.map((item) => (
+                      <div className="batch">{item.description}</div>
+                    ))}
                   </div>
                 </div>
               </div>
