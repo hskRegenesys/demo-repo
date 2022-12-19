@@ -40,8 +40,6 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
     }
   });
 
-  console.log("coursecard", CourseCard);
-
   return (
     <section className={`gallery-section-two ${className}`}>
       <div>{CourseCard.batches}</div>
