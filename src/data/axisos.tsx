@@ -4,5 +4,6 @@ export const ApiServiceConstants = {
 export const apiEndPoints = Object.freeze({
   contactApi: "/contacts",
   coursesApi: "/course/all",
-  parentCourseApi:"/course/parent"
+  parentCourseApi: "/course/parent",
+  coursePriceApi: "/course/price",
 });
