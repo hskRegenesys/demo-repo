@@ -8,7 +8,7 @@ joinReasons;
 const JoinReasons = () => {
   return (
     <section className="service-block-three">
-      <div className="auto-container">
+      <div className="Fluidsection">
         <div className="sec-title centered">
           <h2 className="curve-right">
           {title}

@@ -1,4 +1,4 @@
-import { allCourse } from "@/data/sponsorsSection";
+import { allCourse } from "@/data/aboutUsDescriptionData";
 import Link from "next/link";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";

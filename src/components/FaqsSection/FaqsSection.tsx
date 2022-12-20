@@ -8,6 +8,7 @@ const Faqs = ({ allFaqs = {} }) => {
 
   return (
     <Col lg={12} md={12} sm={12} className="faq-block">
+          <h3 className="with-curve-center text-center">Frequently Answered Questions</h3>
       <ul className="accordion-box clearfix">
         {faqs.map(({ id, title, text }) => (
           <li

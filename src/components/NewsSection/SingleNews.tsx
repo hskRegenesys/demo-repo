@@ -3,7 +3,7 @@ import React from "react";
 import { Col, Image } from "react-bootstrap";
 
 const SingleNews = ({ news = {} }) => {
-  const { image, date, admin, comments, title, text } = news;
+  const { image, date, admin, comments, header, text } = news;
 
   return (
     <Col lg={4} md={6} sm={12} className="news-block animated fadeInUp">
@@ -33,7 +33,7 @@ const SingleNews = ({ news = {} }) => {
             </ul>
           </div>
           <h5>
-            <Link href="/blog-single">{title}</Link>
+            <Link href="/blog-single">{header}</Link>
           </h5>
           <div className="text">{text}</div>
           <div className="link-box">
