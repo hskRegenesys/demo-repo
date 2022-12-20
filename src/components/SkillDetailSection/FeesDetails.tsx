@@ -1,93 +1,81 @@
-import { socials } from "@/data/header";
 import { productDetails } from "@/data/productDetails";
 import Link from "next/link";
-import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import TextSplit from "../Reuseable/TextSplit";
 
-const { image, title, price, stars, customerReviews, text, text2 } =
+const { falgsa, flagnig, flagind, flagus, title, price, certifiedText1, certifiedText2, certifiedText3, subTitle, certifiedTitle1, certifiedTitle2, certifiedTitle3, admissionText, termsConditions } =
   productDetails;
 
 const ProductDetailsPage = () => {
-  const [quantity, setQuantity] = useState(1);
-
   return (
     <section className="product-details">
       <div className="auto-container">
         <Row>
-          <Col lg={12} xl={6}>
-            <a className="product-details__image lightbox-image">
-              <Image src={image.src} alt="" />
-            </a>
-          </Col>
-          <Col lg={12} xl={6}>
+
+          <Col lg={12} xl={12}>
             <div className="product-details__top">
               <h3 className="product-details__title">{title}</h3>
-              <p className="product-details__price">${price}</p>
+              <h5 className="product-details__subtitle mt-3">{subTitle}</h5>
             </div>
-            <div className="product-details__reveiw">
-              {Array.from(Array(stars)).map((_, i) => (
-                <i key={i} className="fa fa-star"></i>
-              ))}
 
-              <span>{customerReviews} Customer Reviews</span>
+          </Col>
+
+          <Col lg={12} xl={6}>
+            <div className="product-details__content get__certified__section">
+              <div className="subTitle">  <i className="flaticon-check"></i>{certifiedTitle1}</div>
+              <p>{certifiedText1}</p>
+              <div className="subTitle"><i className="flaticon-check"></i>{certifiedTitle2}</div>
+              <p>{certifiedText2}</p>
+              <div className="subTitle"><i className="flaticon-check"></i>{certifiedTitle3}</div>
+              <p>{certifiedText3}</p>
             </div>
-            <div className="product-details__content">
-              <p>{text}</p>
-              <p>
-                <TextSplit text={text2} />
-              </p>
-            </div>
-            <div className="product-details__quantity">
-              <h3 className="product-details__quantity-title">
-                Choose quantity
-              </h3>
-              <div className="quantity-box">
-                <button
-                  onClick={() =>
-                    setQuantity((preQuantity) =>
-                      preQuantity > 1 ? preQuantity - 1 : preQuantity
-                    )
-                  }
-                  type="button"
-                  className="sub"
-                >
-                  <i className="fa fa-minus"></i>
-                </button>
-                <input
-                  onChange={(e) => setQuantity(+e.target.value)}
-                  type="number"
-                  id="1"
-                  value={quantity}
-                />
-                <button
-                  onClick={() => setQuantity((preQuantity) => preQuantity + 1)}
-                  type="button"
-                  className="add"
-                >
-                  <i className="fa fa-plus"></i>
-                </button>
+          </Col>
+
+          <Col lg={12} xl={6}>
+
+            <div className="product-details__flag">
+              <h5 className="product-details__subtitle">Total Admission Fee</h5>
+              <div className="flags">
+                <Link href="/">
+                  <a>
+                    <Image src={flagind.src} alt="" />
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <Image src={flagus.src} alt="" />
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <Image src={falgsa.src} alt="" />
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <Image src={flagnig.src} alt="" />
+                  </a>
+                </Link>
               </div>
             </div>
+
+            <h2 className="product-details__price"> &#8377; {price} + GST</h2>
+
+
+            <Link href="/">
+              <a className="refer-link">
+                Refer a friend
+              </a>
+            </Link>
+
+            <p>{termsConditions}</p>
+            <p>{admissionText}</p>
             <div className="product-details__buttons">
-              <Link href="/cart">
+              <Link href="/">
                 <a className="theme-btn btn-style-two">
                   <i className="btn-curve"></i>
-                  <span className="btn-title">Add to wishlist</span>
+                  <span className="btn-title">Enroll Now</span>
                 </a>
               </Link>
-              <Link href="/cart">
-                <a className="theme-btn btn-style-one">
-                  <i className="btn-curve"></i>
-                  <span className="btn-title">Add to cart</span>
-                </a>
-              </Link>
-            </div>
-            <div className="product-details__social">
-              <span>Share with friends</span>
-              {socials.map(({ id, icon, href }) => (
-                <a key={id} href={href} className={icon}></a>
-              ))}
             </div>
           </Col>
         </Row>

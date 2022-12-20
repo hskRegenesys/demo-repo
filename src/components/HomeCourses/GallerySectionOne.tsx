@@ -60,7 +60,7 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
           </div>
           <Masonry
             options={masonryOptions}
-            className="row position-relative filter-list"
+            className="row position-relative filter-list" 
           >
             {currentItems.slice(similar ? 3 : 0).map((item) => (
               <GalleryItem item={item} key={item.id} />
@@ -71,7 +71,7 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
               <Link href="/portfolio">
                 <a className="theme-btn btn-style-one">
                   <i className="btn-curve"></i>
-                  <span className="btn-title">Load more work</span>
+                  <span className="btn-title">Load more courses</span>
                 </a>
               </Link>
             </div>

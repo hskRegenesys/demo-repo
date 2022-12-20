@@ -16,6 +16,7 @@ import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
 
 import React from "react";
 import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
+import JoinReasons from "@/components/JoinReasons/JoinReasons";
 
 const DigitalMarketing = () => {
   return (
@@ -27,6 +28,7 @@ const DigitalMarketing = () => {
       <PageBanner title="Digital Marketing" parent="All courses" parentHref="/shop" />      
       <CourseDetails />  
       <SkillDetailSection /> 
+      <JoinReasons/>
       <VideoOne /> 
       <CourseCurriculum />  
       <FeesDetails />

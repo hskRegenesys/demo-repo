@@ -3,8 +3,6 @@ import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import CustomSelect from "../Reuseable/CustomSelect";
-import ProductCard from "./ProductCard";
 import GallerySectionOne from "@/components/HomeCourses/GallerySectionOne";
 
 const options = ["Sort by Price", "Sort by Date", "Sort by Ratings"].map(
@@ -36,7 +34,7 @@ const CoursesWithFilter = () => {
   };
 
   return (
-    <section className="shop-page">
+    <section className="shop-page gallery-section-two">
       <div className="FluidSection">
         <Row>
           <Col lg={3}>
@@ -97,7 +95,7 @@ const CoursesWithFilter = () => {
             </div>
           </Col>
           <Col lg={9}>
-          <GallerySectionOne portfolio />
+            <GallerySectionOne portfolio />
           </Col>
         </Row>
       </div>
