@@ -23,7 +23,6 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
 
   return (
     <section
-      ref={ref}
       className={`gallery-section${similar ? " similar-gallery" : ""}`}
       id="portfolio"
     >

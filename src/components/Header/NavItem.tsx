@@ -3,13 +3,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-const SubItem = ({ subItem = {} }) => {
+const SubItem = (props:any) => {
   const [active, setActive] = useState(false);
-  const { menuStatus } = useRootContext();
-  const { subItems, href, name, isNew } = subItem;
+  const contextRoot:any = useRootContext();
+  const { menuStatus } = contextRoot;
+  const { subItems, href, name, isNew } = props.subItem;
   const { pathname } = useRouter();
 
-  const handleActive = (e) => {
+  const handleActive = (e:any) => {
     e.preventDefault();
     setActive((preActive) => !preActive);
   };
@@ -34,7 +35,7 @@ const SubItem = ({ subItem = {} }) => {
         </a>
       </Link>
       <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
-        {subItems?.map((item) => (
+        {subItems?.map((item:any) => (
           <li key={item.id}>
             <Link href={item.href}>
               <a href={item.href}>
@@ -48,18 +49,19 @@ const SubItem = ({ subItem = {} }) => {
   );
 };
 
-const NavItem = ({ navItem = {}, mobile = false, onePage = false }) => {
+const NavItem = (props:any) => {
+  const { navItem = {}, mobile = false, onePage = false } = props;
   const [active, setActive] = useState(false);
   const { pathname } = useRouter();
-  const { menuStatus, toggleMenu, currentActive } = useRootContext();
-
+  const contextRoot:any = useRootContext();
+  const { menuStatus, toggleMenu, currentActive } = contextRoot;
   const { name, href, subNavItems = [] } = navItem;
-  const subHref = subNavItems.map((item) => item.href);
+  const subHref = subNavItems.map((item:any) => item.href);
   const current = !onePage
     ? pathname === href || subHref.includes(pathname)
     : currentActive === href;
 
-  const handleActive = (e) => {
+  const handleActive = (e:any) => {
     e.stopPropagation();
     e.preventDefault();
     setActive((preActive) => !preActive);
@@ -89,7 +91,7 @@ const NavItem = ({ navItem = {}, mobile = false, onePage = false }) => {
             display: !menuStatus || active ? "block" : "none",
           }}
         >
-          {subNavItems.map((subItem) => (
+          {subNavItems.map((subItem:any) => (
             <SubItem key={subItem.id} subItem={subItem} />
           ))}
         </ul>

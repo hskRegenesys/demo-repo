@@ -2,7 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
-const GalleryItem = ({ item = {} }) => {
+const GalleryItem = (props:any) => {
+  const { item = {} } = props;
   const { image, title, tagline, filter } = item;
 
   return (

@@ -31,7 +31,8 @@ const HeaderOne = ({
   rightMenu = false,
 }) => {
   const { scrollTop } = useScroll(120);
-  const { toggleMenu, toggleSearch } = useRootContext();
+  const contextRoots:any = useRootContext();
+  const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : navItems;
   let Logo =
     logo === 2

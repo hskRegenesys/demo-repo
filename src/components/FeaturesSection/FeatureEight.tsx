@@ -9,7 +9,7 @@ const { image, title, text, barTitle, percent } = featureEight;
 const FeatureEight = () => {
   const [countStart, setCountStart] = useState(false);
 
-  const onVisibilityChange = (isVisible) => {
+  const onVisibilityChange = (isVisible:any) => {
     if (isVisible) {
       setCountStart(true);
     }
