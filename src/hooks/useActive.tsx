@@ -2,9 +2,10 @@ import { useRootContext } from "@/context/context";
 import { useEffect, useRef } from "react";
 import useScroll from "./useScroll";
 
-const useActive = (id) => {
-  const ref = useRef();
-  const { setCurrentActive } = useRootContext();
+const useActive = (id: string) => {
+  const ref:any = useRef();
+  const rootContext: any = useRootContext();
+  const { setCurrentActive } = rootContext;
   const { scroll } = useScroll();
 
   useEffect(() => {

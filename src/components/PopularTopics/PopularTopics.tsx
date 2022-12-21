@@ -73,10 +73,9 @@ const { title, teams } = teamSection;
 
 const TeamSection = ({ onePage = false }) => {
   const listRef = useRef(null);
-  const ref = useActive("#team");
 
   return (
-    <section ref={ref} className="team-section no-padd-top" id="team">
+    <section  className="team-section no-padd-top" id="team">
       <div className="auto-container">
         <div className="sec-title">
           <h2 className="with-curve">

@@ -32,10 +32,9 @@ const { title, testimonials } = testimonialsSection;
 
 const TestimonialsSection = () => {
   const listRef = useRef(null);
-  const ref = useActive("#testimonials");
 
   return (
-    <section ref={ref} className="testimonials-section" id="testimonials">
+    <section  className="testimonials-section" id="testimonials">
       <div className="auto-container">
         <div className="sec-title">
           <h2>

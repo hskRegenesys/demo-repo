@@ -7,7 +7,7 @@ import Link from "next/link";
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
-const HomeCourses = ({ className = "", carousel = "", courses = [] }) => {
+const HomeCourses = ({ className = "", carousel = "", courses = [] }:any) => {
   const [current, setCurrent] = useState();
 
   useEffect(() => {
@@ -32,7 +32,9 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }) => {
           <div className="tab-btns-box">
             <div className="tabs-header">
               <ul className="product-tab-btns clearfix text-start">
-                {courses.map(({ id, name, tab, count }) => (
+                {courses.map((item:any) => {
+                  const { id, name, tab, count } = item;
+                  return(
                   <li
                     key={id}
                     onClick={() => setCurrent(id)}
@@ -42,7 +44,7 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }) => {
                   >
                     {name}
                   </li>
-                ))}
+                )})}
               </ul>
             </div>
           </div>

@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
-const ProductCard = ({ product = {} }) => {
-  const { image, title, price, stars } = product;
+const ProductCard = (props:any) => {
+  const { image, title, price, stars } = props.product;
 
   return (
     <Col sm={12} md={6} lg={4}>

@@ -28,7 +28,7 @@ class CourseService {
       );
       result = response?.data;
     } catch (err: any) {
-      result = err?.response;
+      result = [];
       console.log("Error while getting student details ", err.message);
     } finally {
       // eslint-disable-next-line no-unsafe-finally

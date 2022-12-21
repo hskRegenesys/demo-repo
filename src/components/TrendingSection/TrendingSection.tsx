@@ -72,9 +72,9 @@ const settings = {
   },
 };
 
-const { title, details, description, CourseCard = [] } = trendingSection;
+const { title, details, description } = trendingSection;
 
-const TrendingSection = (carousel) => {
+const TrendingSection = (carousel:any) => {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
@@ -88,17 +88,17 @@ const TrendingSection = (carousel) => {
   let courses: any = [];
   let CourseCard: any = [];
 
-  if (courseData.length) {
+  if (courseData?.length) {
     courses = _.filter(
       courseData,
-      (item) =>
+      (item:any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1
     );
   }
 
-  courseData.forEach(function (val) {
+  courseData?.forEach(function (val:any) {
     if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
       CourseCard.push(val);
     }
@@ -106,7 +106,7 @@ const TrendingSection = (carousel) => {
   const listRef = useRef(null);
   const ref = useActive("#testimonials");
 
-  function getWeeksDiff(start_date, end_date) {
+  function getWeeksDiff(start_date:any, end_date:any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
@@ -132,7 +132,7 @@ const TrendingSection = (carousel) => {
               }}
               ref={listRef}
             >
-              {CourseCard.map(({ id, name, courseMode, batches }) => (
+              {CourseCard?.map(({ id, name, courseMode, batches }:any) => (
                 <div ref={listRef} className="gallery-item" key={id}>
                   <div className="inner-box">
                     <div className="icon">
@@ -159,7 +159,7 @@ const TrendingSection = (carousel) => {
                           <ul className="about-seven__list list-unstyled">
                             <li>{courseMode.name}</li>
                             <li>
-                              {batches.map((item) => (
+                              {batches.map((item:any) => (
                                 <>
                                   {getWeeksDiff(item.start_date, item.end_date)}
                                   &nbsp;Week
@@ -170,7 +170,7 @@ const TrendingSection = (carousel) => {
                             <li>Capstone projects </li>
                           </ul>
                         </div>
-                        {batches.map((item) => (
+                        {batches.map((item:any) => (
                           <div className="batch">{item.description}</div>
                         ))}
                       </div>

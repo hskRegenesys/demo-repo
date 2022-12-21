@@ -8,10 +8,10 @@ import SingleNews from "./SingleNews";
 const { title, newsData } = newsSection;
 
 const NewsSection = ({ className = "", showTitle = true, isMore = false }) => {
-  const ref = useActive("#blog");
+
 
   return (
-    <section ref={ref} className={`news-section ${className}`} id="blog">
+    <section className={`news-section ${className}`} id="blog">
       <div className="auto-container">
         {showTitle && (
           <div className="sec-title centered">

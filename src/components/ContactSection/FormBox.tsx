@@ -1,13 +1,13 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
-const FormBox = ({ inputs = [] }) => {
-  const handleSubmit = (e) => {
+const FormBox = (props:any) => {
+  let { inputs } = props
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const data = {};
-    inputs.forEach(({ name }) => (data[name] = formData.get(name)));
-    console.log(data);
+    const data:any = {};
+    inputs.forEach((item:any) => (data[item.name] = formData.get(item.name)));
   };
 
   return (
@@ -20,7 +20,9 @@ const FormBox = ({ inputs = [] }) => {
       <div className="default-form">
         <form onSubmit={handleSubmit} id="contact-form">
           <Row className="clearfix">
-            {inputs.map(({ name, type, placeholder, required }) => (
+            {inputs.map((item:any) => {
+              let { name, type, placeholder, required } = item;
+              return(
               <Col
                 key={name}
                 lg={type ? 6 : 12}
@@ -45,7 +47,7 @@ const FormBox = ({ inputs = [] }) => {
                   )}
                 </div>
               </Col>
-            ))}
+            )})}
             <Col lg={12} md={12} sm={12} className="form-group">
               <button className="theme-btn btn-style-one">
                 <i className="btn-curve"></i>

@@ -19,15 +19,15 @@ const CoursesWithFilter = () => {
 
   const [sortBy, setSortBy] = useState("Sort by Price");
 
-  const handleSelectSortBy = ({ value }) => {
-    setSortBy(value);
+  const handleSelectSortBy = (props:any) => {
+    setSortBy(props.value);
   };
 
-  const handleSlideChange = (value) => {
+  const handleSlideChange = (value:any) => {
     setSliderValue(value);
   };
 
-  const handleSearch = (e) => {
+  const handleSearch = (e:any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     console.log(formData.get("search"));
@@ -58,7 +58,6 @@ const CoursesWithFilter = () => {
                     max={200}
                     min={10}
                     className="range-slider-price"
-                    id="range-slider-price"
                     draggableTrack
                   />
                   <div className="form-group">

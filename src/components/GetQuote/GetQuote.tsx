@@ -28,15 +28,15 @@ const {
 const GetQuote = () => {
   const [service, setService] = useState("");
 
-  const handleSelectService = ({ value }) => {
-    setService(value);
+  const handleSelectService = (props:any) => {
+    setService(props.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const data = {};
-    inputs.forEach(({ name }) => (data[name] = formData.get(name)));
+    const data:any = {};
+    inputs.forEach((item:any) => (data[item.name] = formData.get(item.name)));
     console.log({ ...data, service });
   };
 
