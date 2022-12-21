@@ -1,13 +1,13 @@
 import { servicesSectionThree } from "@/data/servicesSection";
 import useActive from "@/hooks/useActive";
-import React from "react";
+import React, { useRef } from "react";
 import { Row } from "react-bootstrap";
 import SingleService from "./SingleService";
 
 const { title, services } = servicesSectionThree;
 
 const GetInTouch = ({ className = "" }) => {
-  const ref = useActive("#services");
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
     <section

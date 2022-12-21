@@ -2,35 +2,34 @@ import Link from "next/link";
 import React, { forwardRef } from "react";
 import { Image } from "react-bootstrap";
 
-const SingleTrending = (
-  { testimonial = {}, className = "", userSelect = false },
-  ref
-) => {
+const SingleTrending = ({
+  testimonial = {image:"", name:"", designation:"", tagline:[]},
+  className = "",
+  userSelect = false,
+}) => {
   const { image, name, designation, tagline } = testimonial;
 
   return (
     <div
-      ref={ref}
       style={{ userSelect: userSelect ? "auto" : "none" }}
       className={`testi-block ${className}`}
     >
       <div className="inner">
         <div className="icon">
-        <i className="fa fa-share-alt" aria-hidden="true"></i>
+          <i className="fa fa-share-alt" aria-hidden="true"></i>
         </div>
         <div className="info">
           <div className="image">
             <Link href="/team">
               <a>
-              <Image
-                    src={require(`@/images/gallery/${image}`).default.src}
-                    alt=""
-                  />
+                <Image
+                  src={require(`@/images/gallery/${image}`).default.src}
+                  alt=""
+                />
               </a>
             </Link>
           </div>
           <div className="name">{name}</div>
-
 
           <div className="cat">
             <ul className="about-seven__list list-unstyled">

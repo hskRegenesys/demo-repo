@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
           <h6 className="desc">In a one to one setting, a tutor is able to focus on the individual learner's needs</h6>
         </div>
         <Row>
-          {serviceSectionThree.map(({ id, icon, title, href, desc }) => (
+          {serviceSectionThree.map(({ id, icon, title, desc }) => (
             <Col key={id} sm={12} md={6} lg={6} className="animated fadeInLeft">
               <div className="service-block-three__single">
                 <div className="icon-box">
