@@ -43,8 +43,12 @@ const ToolsCovered = ({ className = "tools-covered" }) => {
   const listRef = useRef(null);
   return (
     <section className={`sponsors-section ${className}`}>
-      <div className="sponsors-outer">
+           <h5>
+        Tools Covered
+          </h5>
+      <div className="sponsors-outer">     
         <div className="fluidSection">
+     
           <div className="sponsors-carousel">
             <TinySlider
               options={{ ...settings, container: `.my-slider-15` }}
@@ -56,8 +60,7 @@ const ToolsCovered = ({ className = "tools-covered" }) => {
                   key={index}
                   className="slide-item text-center"
                 >
-                  <figure className="image-box">
-                    <a href="#">
+                  <figure className="image-box">                  
                       <Image
                         src={
                           require(`@/images/clients/${
@@ -65,8 +68,7 @@ const ToolsCovered = ({ className = "tools-covered" }) => {
                           }`).default.src
                         }
                         alt=""
-                      />
-                    </a>
+                      />                 
                   </figure>
                 </div>
               ))}

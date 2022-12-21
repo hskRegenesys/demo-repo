@@ -55,12 +55,14 @@ export const featureSeven = {
       image: "7.jpg",
       title: "Bhupendra Mishra",
       text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
+      designation : "Senior lecture",
     },
     {
       id: 2,
       image: "7.jpg",
       title: "Dr. Deepika Sharma",
       text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
+      designation : "Senior lecture",
     },    
   ],
 };

@@ -5788,6 +5788,13 @@ img.lazy-image.loaded {
 
 .sponsors-outer {
   position: relative;
+
+}
+
+.tools-covered .sponsors-outer
+{
+  background-color: #1fa393;
+  padding: 30px;
 }
 
 .sponsors-outer .slide-item {
@@ -5797,6 +5804,9 @@ img.lazy-image.loaded {
 .sponsors-outer .image-box {
   position: relative;
   display: inline-block;
+  background-color: #FFF;
+  border-radius: 19px;
+  padding: 5px 30px;
 }
 
 .sponsors-outer .image-box img {
@@ -24718,13 +24728,44 @@ p.highlight {
   transition: .1s cubic-bezier(.25, .46, .45, .94);
 }
 
-
 .sponsors-section.tools-covered
 {
-  background-color: #1fa393;
-  padding: 30px;
+text-align: center;
+padding: 50px 0 0   ;
 }
-.sponsors-section.tools-covered .sponsors-outer .image-box img
+
+.sponsors-section.tools-covered h5
 {
+font-family: 'Raleway-semibold';
+font-size: 26px;
+}
+
+h6.designation
+{
+  font-size: 14px;
+  font-family: 'Raleway-bold';
+  margin: 15px 0 0;
+}
+
+.contact-section input,
+.contact-section textarea{
+  background: rgba(255, 255, 255, 0.50);
+  padding: 15px;
+  border: 2px solid #000;
   border-radius: 12px;
+}
+
+.contact-section textarea{
+width: 100%;
+}
+
+.contact-section .btn-style-two 
+{
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.courseSelect input, .courseSelect .form-control
+{
+  padding: 0;
 }
