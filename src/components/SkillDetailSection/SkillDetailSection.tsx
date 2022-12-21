@@ -1,7 +1,7 @@
 import { productDescription } from "@/data/productDetails";
 import React from "react";
 
-const { title, text1, text2 } = productDescription;
+const { title, text1 } = productDescription;
 
 const FeesDetails = () => {
   return (

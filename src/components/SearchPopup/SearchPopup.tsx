@@ -2,9 +2,10 @@ import { useRootContext } from "@/context/context";
 import React from "react";
 
 const SearchPopup = () => {
-  const { openSearch, toggleSearch } = useRootContext();
+  const rootContext: any = useRootContext();
+  const { openSearch, toggleSearch } = rootContext;
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     console.log(formData.get("search"));
