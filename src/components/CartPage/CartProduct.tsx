@@ -1,8 +1,19 @@
 import Link from "next/link";
 import React from "react";
 import { Image } from "react-bootstrap";
-
-const CartProduct = ({ product = {}, handleQuantity, handleRemove }) => {
+interface useProps {
+  product?: {} | undefined;
+  handleQuantity?: (id: number, isPlus: boolean, quantity: number) => void;
+  handleRemove?: (id: number) => void;
+}
+interface HandleuseProps {
+  id?: {} | undefined;
+  image?: string;
+  title?: any;
+  price?: any;
+  quantity?: any;
+}
+const CartProduct = ({ product, handleQuantity, handleRemove }: useProps) => {
   const { id, image, title, price, quantity } = product;
   const total = (price * quantity).toFixed(2);
 

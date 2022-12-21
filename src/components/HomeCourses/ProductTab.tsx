@@ -63,7 +63,7 @@ const settings = {
   autoplayButtonOutput: false,
 };
 
-const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
+const ProductTab = ({ tab = [], current, carousel = "", CourseCard = [] }) => {
   function getWeeksDiff(start_date, end_date) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
@@ -73,10 +73,10 @@ const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
   }
 
   const listRef = useRef(null);
-  const { id, items } = tab;
+  const id = 29;
 
   return (
-    <div className={`p-tab${current === id ? " active-tab" : ""}`} id={id}>
+    <div className={`p-tab${current === id ? " active-tab" : ""}`}>
       <div className={carousel || "project-carousel"}>
         <TinySlider
           options={{
@@ -87,7 +87,7 @@ const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
           }}
           ref={listRef}
         >
-          {CourseCard.map(({ id, name, courseMode, batches }) => (
+          {tab.map(({ id, name, courseMode, batches }) => (
             <div ref={listRef} className="gallery-item" key={id}>
               <div className="inner-box">
                 <div className="icon">

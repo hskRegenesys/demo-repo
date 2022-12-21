@@ -2,8 +2,9 @@ import Link from "next/link";
 import React, { forwardRef } from "react";
 import TextSplit from "../Reuseable/TextSplit";
 
-const SlideItem = ({ slide = {} }, ref) => {
-  const { bg, subtitle, title } = slide;
+const SlideItem = (props: { [x: string]: any; ref: any }) => {
+  let { ref, ...rest } = props;
+  let { bg, subtitle, title } = rest.slide;
 
   return (
     <div ref={ref} style={{ userSelect: "none" }} className="slide-item">

@@ -5,9 +5,10 @@ import { tns } from "tiny-slider/src/tiny-slider";
  * @param {{children: ReactNode, options: import("tiny-slider/src/tiny-slider").TinySliderSettings, slider?: import("tiny-slider/src/tiny-slider").TinySliderInstance || null, setSlider?: (slider: import("tiny-slider/src/tiny-slider").TinySliderInstance) => void}} props
  */
 
-const TinySlider = ({ children, options = {}, slider, setSlider }, ref) => {
+const TinySlider = (props) => {
   const [innerSlider, setInnerSlider] = useState(null);
-
+  let { ref, ...rest } = props;
+  let { children, options = {}, slider, setSlider } = rest;
   useEffect(() => {
     if (setSlider && slider !== undefined) {
       if (!slider) {

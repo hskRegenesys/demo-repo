@@ -15,8 +15,33 @@ import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
+import { courseService } from "src/services";
+import _ from "lodash";
 
 const Home2 = () => {
+  const [courseData, setcourseData] = useState([]);
+  const getData = async () => {
+    let courseListResponse = await courseService.allParentCourses();
+    setcourseData(courseListResponse);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  console.log("coursses", courseData);
+  let courses: any = [];
+
+  if (courseData.length) {
+    courses = _.filter(
+      courseData,
+      (item) =>
+        item?.parent_id === null &&
+        item?.isAddon === false &&
+        item?.mode_id === 1
+    );
+  }
+
   return (
     <Layout pageTitle="Home">
       <Style />
@@ -27,7 +52,7 @@ const Home2 = () => {
       <StudentPlacement />
       <HomeSkillDescription />
       <TrendingSection />
-      <HomeCourses />
+      <HomeCourses courses={courses} />
       <ExperienceSection />
       <WhyChooseUs />
       <PopularTopics />
