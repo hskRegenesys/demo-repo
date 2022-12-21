@@ -69,11 +69,11 @@ const CustomSelect = (propps:any) => {
       ...provided,
       ...customStyle.option(provided, state),
       borderBottom:
-        state.label === options[options.length - 1].label
+        state.label === options[options?.length - 1].label
           ? "none"
           : "0.5px solid #e9ebee",
       borderRadius:
-        state.label === options[options.length - 1].label ? "0 0 8px 8px" : 0,
+        state.label === options[options?.length - 1].label ? "0 0 8px 8px" : 0,
     }),
   };
 

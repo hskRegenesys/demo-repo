@@ -75,7 +75,7 @@ const NavItem = (props:any) => {
           href={href}
         >
           {name}{" "}
-          {subNavItems.length > 0 && (
+          {subNavItems?.length > 0 && (
             <div
               onClick={handleActive}
               className={`dropdown-btn${active ? " open" : ""}`}
@@ -85,7 +85,7 @@ const NavItem = (props:any) => {
           )}
         </a>
       </Link>
-      {subNavItems.length > 0 && (
+      {subNavItems?.length > 0 && (
         <ul
           style={{
             display: !menuStatus || active ? "block" : "none",

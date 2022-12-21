@@ -24,7 +24,7 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
   let courses: any = [];
   let CourseCard: any = [];
 
-  if (courseData.length) {
+  if (courseData?.length) {
     courses = _.filter(
       courseData,
       (item:any) =>

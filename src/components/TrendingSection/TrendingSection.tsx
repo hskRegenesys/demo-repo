@@ -88,7 +88,7 @@ const TrendingSection = (carousel:any) => {
   let courses: any = [];
   let CourseCard: any = [];
 
-  if (courseData.length) {
+  if (courseData?.length) {
     courses = _.filter(
       courseData,
       (item:any) =>
@@ -98,7 +98,7 @@ const TrendingSection = (carousel:any) => {
     );
   }
 
-  courseData.forEach(function (val:any) {
+  courseData?.forEach(function (val:any) {
     if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
       CourseCard.push(val);
     }
@@ -132,7 +132,7 @@ const TrendingSection = (carousel:any) => {
               }}
               ref={listRef}
             >
-              {CourseCard.map(({ id, name, courseMode, batches }:any) => (
+              {CourseCard?.map(({ id, name, courseMode, batches }:any) => (
                 <div ref={listRef} className="gallery-item" key={id}>
                   <div className="inner-box">
                     <div className="icon">

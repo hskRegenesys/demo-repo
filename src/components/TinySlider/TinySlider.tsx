@@ -7,9 +7,11 @@ import { tns } from "tiny-slider/src/tiny-slider";
 
 const TinySlider = (props:any) => {
   let { children, options = {}, slider, setSlider , ref} = props
-  const [innerSlider, setInnerSlider] = useState(tns(options));
+  console.log("options ======>", options)
+  const [innerSlider, setInnerSlider] = useState<any>();
 
   useEffect(() => {
+    try{
     if (setSlider && slider !== undefined) {
       if (!slider) {
         setSlider(tns(options));
@@ -19,6 +21,9 @@ const TinySlider = (props:any) => {
         setInnerSlider(tns(options));
       }
     }
+  }catch(err){
+    console.log("errr", err)
+  }
   }, [setSlider, slider, innerSlider, ref, options]);
 
   return (
