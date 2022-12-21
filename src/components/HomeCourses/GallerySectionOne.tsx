@@ -57,14 +57,17 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
               </div>
             )}
           </div>
-          <Masonry
+          {/* <Masonry
             options={masonryOptions}
+            elementType={'ul'} // default 'div'
+            disableImagesLoaded={false} // default false
+            updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
             className="row position-relative filter-list" 
           >
             {currentItems.slice(similar ? 3 : 0).map((item) => (
               <GalleryItem item={item} key={item.id} />
             ))}
-          </Masonry>
+          </Masonry> */}
           {portfolio && (
             <div className="more-box">
               <Link href="/portfolio">

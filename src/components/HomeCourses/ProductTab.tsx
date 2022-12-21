@@ -63,8 +63,9 @@ const settings = {
   autoplayButtonOutput: false,
 };
 
-const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
-  function getWeeksDiff(start_date, end_date) {
+const ProductTab = (props:any) => {
+  const { tab = {}, current, carousel = "", CourseCard = [] } = props;
+  function getWeeksDiff(start_date:any, end_date:any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
@@ -87,7 +88,9 @@ const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
           }}
           ref={listRef}
         >
-          {CourseCard.map(({ id, name, courseMode, batches }) => (
+          {CourseCard.map((item:any) => {
+            const { id, name, courseMode, batches } = item;
+            return(
             <div ref={listRef} className="gallery-item" key={id}>
               <div className="inner-box">
                 <div className="icon">
@@ -114,7 +117,7 @@ const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
                       <ul className="about-seven__list list-unstyled">
                         <li>{courseMode.name}</li>
                         <li>
-                          {batches.map((item) => (
+                          {batches.map((item:any) => (
                             <>
                               {getWeeksDiff(item.start_date, item.end_date)}
                               &nbsp;Week
@@ -125,14 +128,14 @@ const ProductTab = ({ tab = {}, current, carousel = "", CourseCard = [] }) => {
                         <li>Capstone projects </li>
                       </ul>
                     </div>
-                    {batches.map((item) => (
+                    {batches.map((item:any) => (
                       <div className="batch">{item.description}</div>
                     ))}
                   </div>
                 </div>
               </div>
             </div>
-          ))}
+          )})}
         </TinySlider>
       </div>
     </div>

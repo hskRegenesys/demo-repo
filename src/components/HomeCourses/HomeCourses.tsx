@@ -27,14 +27,14 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
   if (courseData.length) {
     courses = _.filter(
       courseData,
-      (item) =>
+      (item:any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1
     );
   }
 
-  courseData.forEach(function (val) {
+  courseData.forEach(function (val:any) {
     if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
       CourseCard.push(val);
     }
@@ -55,7 +55,9 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
           <div className="tab-btns-box">
             <div className="tabs-header">
               <ul className="product-tab-btns clearfix text-start">
-                {courses.map(({ id, name, tab, count }) => (
+                {courses.map((item:any) => {
+                  const { id, name, tab, count } = item;
+                  return(
                   <li
                     key={id}
                     onClick={() => setCurrent(tab)}
@@ -65,7 +67,7 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
                   >
                     {name}
                   </li>
-                ))}
+                )})}
               </ul>
             </div>
           </div>
