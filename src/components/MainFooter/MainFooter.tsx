@@ -25,7 +25,7 @@ const {
 } = mainFooter;
 
 const MainFooter = ({ normalPadding = true }) => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     console.log(formData.get("email"));

@@ -4,13 +4,8 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
-const Layout = ({
-  children,
-  pageTitle,
-  preloader,
-  mainClass,
-  preloaderClass,
-}) => {
+const Layout = (props: any) => {
+  const { children, pageTitle, preloader, mainClass, preloaderClass } = props;
   const [loading, setLoading] = useState(true);
   const { scrollTop } = useScroll(100);
 
@@ -26,7 +21,10 @@ const Layout = ({
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Digital Regenesys: Online Certificate Courses for Professionals | {pageTitle}</title>
+        <title>
+          Digital Regenesys: Online Certificate Courses for Professionals |{" "}
+          {pageTitle}
+        </title>
       </Head>
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
       <main

@@ -1,7 +1,8 @@
 import bg1 from "@/images/icons/preloader.png";
 import React from "react";
 
-const Preloader = ({ loading, bg = bg1, className = "" }) => {
+const Preloader = (props: any) => {
+  const { loading, bg = bg1, className = "" } = props;
   return (
     <div
       style={{
