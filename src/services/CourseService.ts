@@ -35,11 +35,13 @@ class CourseService {
       return result;
     }
   }
-  async allcoursePrice() {
+  async allcoursePrice(id: string) {
     let result: any = [];
 
     try {
-      const response = await this.appAPIServer.get(apiEndPoints.coursePriceApi);
+      const response = await this.appAPIServer.get(
+        `${apiEndPoints.coursePriceApi}/${id}`
+      );
       result = response?.data;
     } catch (err: any) {
       result = err?.response;

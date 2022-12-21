@@ -3,46 +3,23 @@ import gallerySection from "@/data/gallerySection";
 
 import ProductTab from "./ProductTab";
 import Link from "next/link";
-import { courseService } from "src/services";
-import _ from "lodash";
 
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
-const HomeCourses = ({ className = "", carousel = "" }) => {
-  const [courseData, setcourseData] = useState([]);
-  const getData = async () => {
-    let courseListResponse = await courseService.allParentCourses();
-    setcourseData(courseListResponse);
-  };
+const HomeCourses = ({ className = "", carousel = "", courses = [] }:any) => {
+  const [current, setCurrent] = useState();
 
   useEffect(() => {
-    getData();
-  }, []);
-  const [current, setCurrent] = useState("p-tab-1");
-  const courseHome = carousel ? courseTab : cTab;
-  let courses: any = [];
-  let CourseCard: any = [];
-
-  if (courseData?.length) {
-    courses = _.filter(
-      courseData,
-      (item:any) =>
-        item?.parent_id === null &&
-        item?.isAddon === false &&
-        item?.mode_id === 1
-    );
-  }
-
-  courseData.forEach(function (val:any) {
-    if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
-      CourseCard.push(val);
+    if (courses.length > 0) {
+      setCurrent(courses[0].id);
     }
-  });
+  }, [courses.length]);
 
+  console.log("current data", current);
   return (
     <section className={`gallery-section-two ${className}`}>
-      <div>{CourseCard.batches}</div>
+      <div>{courses.batches}</div>
       <div className="auto-container">
         <div className="sec-title">
           <h2>{title}</h2>
@@ -60,7 +37,7 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
                   return(
                   <li
                     key={id}
-                    onClick={() => setCurrent(tab)}
+                    onClick={() => setCurrent(id)}
                     className={`p-tab-btn${
                       current === tab ? " active-btn" : ""
                     }`}
@@ -81,15 +58,7 @@ const HomeCourses = ({ className = "", carousel = "" }) => {
 
         <div className={className ? "auto-container" : ""}>
           <div className="p-tabs-content">
-            {courseHome.map((tab) => (
-              <ProductTab
-                carousel={carousel}
-                tab={tab}
-                key={tab.id}
-                current={current}
-                CourseCard={CourseCard}
-              />
-            ))}
+            <ProductTab carousel={carousel} tab={courses} current={current} />
           </div>
         </div>
       </div>

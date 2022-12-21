@@ -63,8 +63,7 @@ const settings = {
   autoplayButtonOutput: false,
 };
 
-const ProductTab = (props:any) => {
-  const { tab = {}, current, carousel = "", CourseCard = [] } = props;
+const ProductTab = ({ tab = [], current, carousel = "", CourseCard = [] }:any) => {
   function getWeeksDiff(start_date:any, end_date:any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
@@ -74,10 +73,10 @@ const ProductTab = (props:any) => {
   }
 
   const listRef = useRef(null);
-  const { id, items } = tab;
+  const id = 29;
 
   return (
-    <div className={`p-tab${current === id ? " active-tab" : ""}`} id={id}>
+    <div className={`p-tab${current === id ? " active-tab" : ""}`}>
       <div className={carousel || "project-carousel"}>
         <TinySlider
           options={{
@@ -88,9 +87,7 @@ const ProductTab = (props:any) => {
           }}
           ref={listRef}
         >
-          {CourseCard.map((item:any) => {
-            const { id, name, courseMode, batches } = item;
-            return(
+          {tab.map(({ id, name, courseMode, batches }:any) => (
             <div ref={listRef} className="gallery-item" key={id}>
               <div className="inner-box">
                 <div className="icon">
@@ -135,7 +132,7 @@ const ProductTab = (props:any) => {
                 </div>
               </div>
             </div>
-          )})}
+          ))}
         </TinySlider>
       </div>
     </div>

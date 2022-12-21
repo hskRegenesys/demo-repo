@@ -11,14 +11,19 @@ export const productDetails = {
   title: "Fees structure & Certfication",
   subTitle: "Get Certified",
   price: 64499,
-  certifiedTitle1 : "Earn Your Digital Marketing certificate",
-  certifiedText1: "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-  certifiedTitle2 : "Share Your Achievement",
-  certifiedText2: "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
-  certifiedTitle3 : "Benefits",
-  certifiedText3 : "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
-  admissionText:"Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
-  termsConditions: '*Terms & Conditions'
+  certifiedTitle1: "Earn Your Digital Marketing certificate2",
+  certifiedText1:
+    "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
+  certifiedTitle2: "Share Your Achievement2",
+
+  certifiedText2:
+    "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+  certifiedTitle3: "Benefits",
+  certifiedText3:
+    "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+  admissionText:
+    "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+  termsConditions: "*Terms & Conditions",
 };
 
 export const productDescription = {
