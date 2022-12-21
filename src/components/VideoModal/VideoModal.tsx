@@ -11,7 +11,6 @@ const VideoModal = ({ isOpen, setOpen, id }:propsType) => {
       {typeof window !== "undefined" && (
         <ModalVideo
           channel="youtube"
-          autoplay
           ratio="16:9"
           isOpen={isOpen}
           videoId={id}
