@@ -33,7 +33,7 @@ const ProcessOne = () => {
                 <ul className="list-unstyled process-one__list">
                   {lists.map((text, i) => (
                     <li key={i}>
-                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <i className="fa fa-check" aria-hidden="true"></i>
                       {text}
                     </li>
                   ))}

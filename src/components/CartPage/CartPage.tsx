@@ -10,7 +10,7 @@ const CartPage = () => {
   const [products, setProducts] = useState(defaultProducts);
   const shipping = 0.0;
 
-  const handleQuantity = (id, isPlus, quantity) => {
+  const handleQuantity = (id:number, isPlus:boolean, quantity:number) => {
     setProducts((preProducts) => {
       const newProducts = [...preProducts];
       const preProductIndex = preProducts.findIndex((it) => it.id === id);
@@ -32,13 +32,13 @@ const CartPage = () => {
     });
   };
 
-  const handleRemove = (id) => {
+  const handleRemove = (id:number) => {
     setProducts((preProducts) =>
       preProducts.filter((product) => product.id !== id)
     );
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     console.log(formData.get("couponCode"));

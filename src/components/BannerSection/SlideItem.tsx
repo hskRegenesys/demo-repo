@@ -2,7 +2,8 @@ import Link from "next/link";
 import React, { forwardRef } from "react";
 import TextSplit from "../Reuseable/TextSplit";
 
-const SlideItem = ({ slide = {} }, ref) => {
+const SlideItem = (props:{key:any, slide:any, ref:any}) => {
+  const {key, slide, ref} = props;
   const { bg, subtitle, title } = slide;
 
   return (

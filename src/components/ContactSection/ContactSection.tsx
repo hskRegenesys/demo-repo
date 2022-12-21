@@ -12,10 +12,8 @@ const FormBox = dynamic(() => import("./FormBox"));
 const { title, contacts, inputs } = contactSection;
 
 const ContactSection = ({ className = "", map = false, form = false }) => {
-  const ref = useActive("#contact");
-
-  return (
-    <section ref={ref} className={`contact-section ${className}`} id="contact">
+    return (
+    <section  className={`contact-section ${className}`} id="contact">
       <div className="auto-container">     
 
         <div className="upper-info">
