@@ -16,7 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
+    npm install --force
     npm run build
     mkdir dr-phase-2-ui
     tar -czvf dr-1-$(Build.BuildId).tar.gz .next public src next-env.d.ts tsconfig.json package.json next.config.js yarn.lock .eslintrc.json
