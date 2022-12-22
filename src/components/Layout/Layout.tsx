@@ -2,7 +2,6 @@ import Preloader from "@/components/Preloader/Preloader";
 import useScroll from "@/hooks/useScroll";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
 
 const Layout = (props: any) => {
   const { children, pageTitle, preloader, mainClass, preloaderClass } = props;
@@ -34,18 +33,7 @@ const Layout = (props: any) => {
       >
         {children}
       </main>
-      {scrollTop && (
-        <ScrollLink
-          to="wrapper"
-          smooth={true}
-          duration={500}
-          id="backToTop"
-          style={{ cursor: "pointer" }}
-          className="scroll-to-target scroll-to-top d-inline-block fadeIn animated"
-        >
-          <i className="fa fa-angle-up"></i>
-        </ScrollLink>
-      )}
+
     </>
   );
 };
