@@ -17,15 +17,17 @@ import React from "react";
 import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 import JoinReasons from "@/components/JoinReasons/JoinReasons";
 import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
+import { useRouter } from "next/router";
 
 const DigitalMarketing = () => {
+  const router = useRouter();
   return (
-    <Layout pageTitle="Digital Marketing">
+    <Layout pageTitle={router?.query?.course}>
       <Style />
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Digital Marketing" parent="All courses" parentHref="/shop" />      
+      <PageBanner title={router?.query?.course?.toString()} parent="All courses" parentHref="/shop" />      
       <CourseDetails />  
       <SkillDetailSection /> 
       <JoinReasons/>
@@ -33,7 +35,7 @@ const DigitalMarketing = () => {
       <FeatureSeven />
       <VideoOne /> 
       <CourseCurriculum />  
-      <FeesDetails />
+      <FeesDetails courseId={router?.query?.id}/>
       <CourseBenefits />
       <FaqsSection />
       <CallToSection />

@@ -16,7 +16,6 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }:any) => {
     }
   }, [courses.length]);
 
-  console.log("current data", current);
   return (
     <section className={`gallery-section-two ${className}`}>
       <div>{courses.batches}</div>

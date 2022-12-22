@@ -29,7 +29,6 @@ const Home2 = () => {
     getData();
   }, []);
 
-  console.log("coursses", courseData);
   let courses: any = [];
 
   if (courseData.length) {
