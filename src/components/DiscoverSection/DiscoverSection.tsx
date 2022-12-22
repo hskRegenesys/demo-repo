@@ -16,7 +16,7 @@ const DiscoverSection = ({ ShowTitle = true }) => {
               <div className="inner-box">
                 <div className="image-box">
                   <Image
-                    src={require(`src/assets/images/icons/${image}`).default.src}
+                    src={require(`/src/assets/images/icons/${image}`).default.src}
                     alt=""
                   />
                 </div>

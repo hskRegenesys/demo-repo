@@ -1,4 +1,4 @@
-import bg from "src/assets/images/background/video-bg.png"
+import bg from "/src/assets/images/background/video-bg.png"
 const funFacts = [
   {
     id: 1,

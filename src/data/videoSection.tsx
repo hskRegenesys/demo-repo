@@ -1,6 +1,6 @@
-import bg2 from "src/assets/images/update-01-10-2021/background/video-seven-1-1.jpg";
-import bg from "src/assets/images/update-01-10-2021/background/video-six-bg-1.jpg";
-import image from "src/assets/images/background/full-video-bg.png";
+import bg2 from "/src/assets/images/update-01-10-2021/background/video-seven-1-1.jpg";
+import bg from "/src/assets/images/update-01-10-2021/background/video-six-bg-1.jpg";
+import image from "/src/assets/images/background/full-video-bg.png";
 
 
 export const videoSix = {

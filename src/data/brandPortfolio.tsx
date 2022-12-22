@@ -1,4 +1,4 @@
-import bg from "src/assets/images/update-09-06-2021/background/brand-bg-1-1.jpg";
+import bg from "/src/assets/images/update-09-06-2021/background/brand-bg-1-1.jpg";
 
 const brandPortfolio = [
   {

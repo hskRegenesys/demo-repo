@@ -1,5 +1,5 @@
-import counterImage from "src/assets/images/resource/featured-image-10.jpg";
-import featuredImage from "src/assets/images/resource/featured-image-9.jpg";
+import counterImage from "/src/assets/images/resource/featured-image-10.jpg";
+import featuredImage from "/src/assets/images/resource/featured-image-9.jpg";
 
 const getQuote = {
   featuredImage,

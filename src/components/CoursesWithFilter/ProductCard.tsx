@@ -11,7 +11,7 @@ const ProductCard = (props:any) => {
         <div className="product-card__image">
           <Image
             src={
-              require(`src/assets/images/update-26-01-2021/shops/${image}`).default.src
+              require(`/src/assets/images/update-26-01-2021/shops/${image}`).default.src
             }
             alt=""
           />

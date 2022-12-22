@@ -12,7 +12,7 @@ const SlideItem = (props:{key:any, slide:any, ref:any}) => {
         className="image-layer"
         style={{
           backgroundImage: `url(${
-            require(`src/assets/images/main-slider/${bg}`).default.src
+            require(`/src/assets/images/main-slider/${bg}`).default.src
           })`,
         }}
       ></div>

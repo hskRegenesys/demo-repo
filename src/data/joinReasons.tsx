@@ -1,7 +1,7 @@
-import bg1 from "src/assets/images/background/reason-bg1.png";
-import bg2 from "src/assets/images/background/reason-bg2.png";
-import bg3 from "src/assets/images/background/reason-bg3.png";
-import bg4 from "src/assets/images/background/reason-bg4.png";
+import bg1 from "/src/assets/images/background/reason-bg1.png";
+import bg2 from "/src/assets/images/background/reason-bg2.png";
+import bg3 from "/src/assets/images/background/reason-bg3.png";
+import bg4 from "/src/assets/images/background/reason-bg4.png";
 
 export const joinReasons = {
   title: "Reasons To Join This Course",

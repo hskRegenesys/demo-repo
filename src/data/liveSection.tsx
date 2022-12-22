@@ -1,5 +1,5 @@
-import bg from "src/assets/images/background/video-bg.png";
-import bg2 from "src/assets/images/background/video-bg.png";
+import bg from "/src/assets/images/background/video-bg.png";
+import bg2 from "/src/assets/images/background/video-bg.png";
 
 const liveSection = {
   secTitle: "Experience us live",

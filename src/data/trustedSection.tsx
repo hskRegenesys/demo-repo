@@ -1,4 +1,4 @@
-import image from "src/assets/images/resource/featured-image-5.jpg";
+import image from "/src/assets/images/resource/featured-image-5.jpg";
 
 const trustedSection = {
   title: "We’re Committed To Deliver High Quality Projects.",

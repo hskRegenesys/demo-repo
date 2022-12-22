@@ -1,5 +1,5 @@
-import image from "src/assets/images/resource/featured-image-16.jpg";
-import featuredImage from "src/assets/images/resource/featured-image-17.jpg";
+import image from "/src/assets/images/resource/featured-image-16.jpg";
+import featuredImage from "/src/assets/images/resource/featured-image-17.jpg";
 
 export const sidebar = {
   title: "All Services",

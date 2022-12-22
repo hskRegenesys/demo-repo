@@ -1,17 +1,17 @@
-import image1 from "src/assets/images/resource/featured-image-1.jpg";
-import image3 from "src/assets/images/resource/featured-image-15.jpg";
-import image2 from "src/assets/images/resource/featured-image-2.jpg";
-import image12 from "src/assets/images/update-01-10-2021/resources/about-10-1-1.jpg";
-import image11 from "src/assets/images/update-01-10-2021/resources/about-11-1-3.jpg";
-import image10 from "src/assets/images/update-01-10-2021/resources/about-eight-1-1.png";
-import image9 from "src/assets/images/update-01-10-2021/resources/about-nine-1-1.png";
-import image6 from "src/assets/images/update-01-10-2021/resources/about-seven-1-1.jpg";
-import image7 from "src/assets/images/update-01-10-2021/resources/about-seven-1-2.jpg";
-import image8 from "src/assets/images/update-01-10-2021/resources/about-six-1-1.jpg";
-import image4 from "src/assets/images/update-1-12-2020/resources/about-1-1.jpg";
-import image5 from "src/assets/images/update-1-12-2020/resources/signture-1-1.png";
-import image13 from "src/assets/images/update-26-02-2021/resources/about-me-1.jpg";
-import marko from "src/assets/images/marko.png";
+import image1 from "/src/assets/images/resource/featured-image-1.jpg";
+import image3 from "/src/assets/images/resource/featured-image-15.jpg";
+import image2 from "/src/assets/images/resource/featured-image-2.jpg";
+import image12 from "/src/assets/images/update-01-10-2021/resources/about-10-1-1.jpg";
+import image11 from "/src/assets/images/update-01-10-2021/resources/about-11-1-3.jpg";
+import image10 from "/src/assets/images/update-01-10-2021/resources/about-eight-1-1.png";
+import image9 from "/src/assets/images/update-01-10-2021/resources/about-nine-1-1.png";
+import image6 from "/src/assets/images/update-01-10-2021/resources/about-seven-1-1.jpg";
+import image7 from "/src/assets/images/update-01-10-2021/resources/about-seven-1-2.jpg";
+import image8 from "/src/assets/images/update-01-10-2021/resources/about-six-1-1.jpg";
+import image4 from "/src/assets/images/update-1-12-2020/resources/about-1-1.jpg";
+import image5 from "/src/assets/images/update-1-12-2020/resources/signture-1-1.png";
+import image13 from "/src/assets/images/update-26-02-2021/resources/about-me-1.jpg";
+import marko from "/src/assets/images/marko.png";
 
 export const aboutSectionOne = {
   image1,
