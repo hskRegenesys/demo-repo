@@ -1,5 +1,4 @@
-import bg from "@/images/background/image-1.jpg";
-
+import bg from "@/images/background/video-bg.png"
 const funFacts = [
   {
     id: 1,

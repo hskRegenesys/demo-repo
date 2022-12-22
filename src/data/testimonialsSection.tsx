@@ -1,5 +1,4 @@
-import bg from "@/images/background/image-6.jpg";
-import image from "@/images/update-26-02-2021/resources/testimonial-1-1.jpg";
+import bg from "@/images/background/video-bg.png";
 
 const testimonialsSection = {
   title: "Customer feedbacks",
