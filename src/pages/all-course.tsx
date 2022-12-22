@@ -12,6 +12,7 @@ import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
+import AllCourseGallery from "@/components/AllCourseGallery/AllCourseGallery";
 
 const allCourse = () => {
   return (
@@ -22,7 +23,7 @@ const allCourse = () => {
       <SearchPopup />
       <PageBanner title="Products" page="All courses" />
       <AllCourseText />
-      <CoursesWithFilter />
+      <AllCourseGallery />
       <PartnerOne />   
       <VideoOne /> 
       <PopularTopics />

@@ -15379,13 +15379,12 @@ img.lazy-image.loaded {
 .shop-search form {
   border-radius: 8px;
   position: relative;
-  background-color: var(--thm-base);
 }
 
 .shop-search button[type="submit"] {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 15px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   color: var(--thm-black);
@@ -15404,14 +15403,16 @@ img.lazy-image.loaded {
 .shop-search form input[type="search"],
 .shop-search form input[type="text"] {
   width: 100%;
-  height: 70px;
-  background-color: var(--thm-base);
+  height: 60px;
+  background-color: transparent;
   border-radius: 8px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
   color: var(--thm-black);
-  font-family: var(--thm-b-font);
+  border: 2px solid #000;
+  border-radius: 18px;
+  font-family: 'Raleway-medium';
 }
 
 .shop-search form ::-webkit-input-placeholder {
@@ -15563,10 +15564,10 @@ img.lazy-image.loaded {
 
 .shop-sidebar__single {
   padding: 30px;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #000;
   margin-bottom: 30px;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .shop-sidebar__single.shop-search {
@@ -16874,7 +16875,8 @@ h2.curve-right:after {
 
 .how-it-works .FluidSection,
 .we-work-section .FluidSection,
-.service-block-three {
+.service-block-three,
+.all-course-filter .FluidSection{
   max-width: 1500px !important;
   margin: 0 auto;
 }
@@ -24856,4 +24858,53 @@ width: 100%;
 {
   transform: rotate(-180deg);
   color: var(--thm-black);
+}
+
+.all-course-filter
+{
+  background-color: #c3ead8;
+  padding: 50px 20px;
+}
+.all-course-filter h5{
+  font-size: 24px;
+  font-family: 'Raleway-semibold';
+}
+
+.all-course-filter h6{
+  font-size: 18px;
+  font-family: 'Raleway-semibold';
+}
+
+
+
+.shop-search button[type="submit"] i
+{
+  font-weight: bold;
+}
+
+
+.all-course-filter h6.border-bottom
+{
+  border-bottom: 1px solid #000 !important;
+  padding-bottom: 15px;
+}
+
+
+.all-course-filter .form-check-input
+{
+  background-color: transparent;
+  border: 2px solid #000;
+  margin-top: 8px;
+  float: left;
+  height: 18px;
+  width: 18px;
+}
+
+.all-course-filter .form-check-input:checked {
+  background-color: #000000 !important;
+}
+.all-course-filter label
+{
+  font-family: raleway-medium;
+  line-height: 28px;
 }
