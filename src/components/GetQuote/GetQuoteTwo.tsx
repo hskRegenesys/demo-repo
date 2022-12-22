@@ -11,7 +11,7 @@ const GetQuoteTwo = ({ className = "" }) => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data:any) => console.log(data);
 
   return (
     <section className={`get-quote-two ${className}`}>
@@ -64,13 +64,11 @@ const GetQuoteTwo = ({ className = "" }) => {
                             {type ? (
                               <input
                                 type={type}
-                                name={name}
                                 placeholder={placeholder}
                                 {...register(name, { required: true })}
                               />
                             ) : (
                               <textarea
-                                name={name}
                                 placeholder={placeholder}
                                 {...register(name, { required: true })}
                               ></textarea>

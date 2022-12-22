@@ -1,11 +1,9 @@
 import { aboutUsDescriptionData } from "@/data/aboutUsDescriptionData";
-import Link from "next/link";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import TextSplit from "../Reuseable/TextSplit";
 import LiveSection from "@/components/LiveSection/LiveSection";
 
-const { title, pagedesc, subtitle, imagearrow, text1, text2, highlight } = aboutUsDescriptionData;
+const { pagedesc, imagearrow, text1, text2, highlight } = aboutUsDescriptionData;
 
 const AboutUsDescription = () => {
   return (

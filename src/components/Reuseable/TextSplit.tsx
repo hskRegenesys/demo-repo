@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const TextSplit = ({ text = "", separator = "\n", children = "" }) => {
   const newText = children || text;
   const arr = newText.split(separator);
-  const lastIndex = arr.length - 1;
+  const lastIndex = arr?.length - 1;
 
   return (
     <Fragment>

@@ -2,11 +2,12 @@ import Link from "next/link";
 import React, { forwardRef } from "react";
 
 
-const SingleTeam = ({ team = {}, className = "" }, ref) => {
+const SingleTeam = (props:any) => {
+  const { team = {}, className = "" } = props
   const { name } = team;
 
   return (
-    <div ref={ref} className={`team-block ${className}`}>
+    <div className={`team-block ${className}`}>
       <div className="inner-box">   
         <div className="lower-box">
           <h5>

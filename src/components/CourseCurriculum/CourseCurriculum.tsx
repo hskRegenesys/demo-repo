@@ -2,7 +2,8 @@ import { faqsSection } from "@/data/CourseCurriculum";
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
-const Faqs = ({ allFaqs = {} }) => {
+const Faqs = (props:any) => {
+  let { allFaqs } = props;
   const { faqs, defaultCurrent } = allFaqs;
   const [current, setCurrent] = useState(defaultCurrent);
 
@@ -10,7 +11,9 @@ const Faqs = ({ allFaqs = {} }) => {
     <Col lg={12} md={12} sm={12} className="faq-block curri">
        <h3 className="with-curve-center text-center">Course curriculum</h3>
       <ul className="accordion-box clearfix">
-        {faqs.map(({ id, title, text }) => (
+        {faqs.map((item:any) => {
+          let { id, title, text } = item;
+          return(
           <li
             key={id}
             className={`accordion block${
@@ -34,7 +37,7 @@ const Faqs = ({ allFaqs = {} }) => {
               </div>
             </div>
           </li>
-        ))}
+        )})}
       </ul>
     </Col>
   );

@@ -7,8 +7,8 @@ import { Image } from "react-bootstrap";
 const { icon, text, email, phone, socials, navItems, navItemsTwo } = headerData;
 
 const MobileMenu = ({ onePage = false }) => {
-  const { menuStatus, toggleMenu } = useRootContext();
-
+  const contextRoot:any = useRootContext();
+  const { menuStatus, toggleMenu } = contextRoot;
   const newNavItems = onePage ? navItemsTwo : navItems;
 
   return (

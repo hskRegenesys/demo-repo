@@ -63,13 +63,20 @@ const settings = {
   autoplayButtonOutput: false,
 };
 
-const ProductTab = ({ tab = {}, current, carousel = "" }) => {
-  const listRef = useRef(null);
+const ProductTab = ({ tab = [], current, carousel = "", CourseCard = [] }:any) => {
+  function getWeeksDiff(start_date:any, end_date:any) {
+    const msInWeek = 1000 * 60 * 60 * 24 * 7;
+    return Math.round(
+      Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
+        msInWeek
+    );
+  }
 
-  const { id, items } = tab;
+  const listRef = useRef(null);
+  const id = 29;
 
   return (
-    <div className={`p-tab${current === id ? " active-tab" : ""}`} id={id}>
+    <div className={`p-tab${current === id ? " active-tab" : ""}`}>
       <div className={carousel || "project-carousel"}>
         <TinySlider
           options={{
@@ -80,17 +87,14 @@ const ProductTab = ({ tab = {}, current, carousel = "" }) => {
           }}
           ref={listRef}
         >
-          {items.map(({ id, image, title, tagline, batch }) => (
+          {tab.map(({ id, name, courseMode, batches }:any) => (
             <div ref={listRef} className="gallery-item" key={id}>
               <div className="inner-box">
                 <div className="icon">
                   <i className="fa fa-share-alt" aria-hidden="true"></i>
                 </div>
                 <figure className="image">
-                  <Image
-                    src={require(`@/images/gallery/${image}`).default.src}
-                    alt=""
-                  />
+                  <Image src={require(`@/images/gallery/1.jpg`)} alt="" />
                 </figure>
                 <a
                   className="lightbox-image overlay-box"
@@ -100,19 +104,30 @@ const ProductTab = ({ tab = {}, current, carousel = "" }) => {
                   <div className="cap-inner">
                     <div className="title">
                       <h5>
-                        <Link href="/portfolio-single">{title}</Link>
+                        <Link href="/portfolio-single">
+                          <a>{name}</a>
+                        </Link>
                       </h5>
                     </div>
 
                     <div className="cat">
                       <ul className="about-seven__list list-unstyled">
-                        {tagline.map((list, i) => (
-                          <li key={i}>{list}</li>
-                        ))}
+                        <li>{courseMode.name}</li>
+                        <li>
+                          {batches.map((item:any) => (
+                            <>
+                              {getWeeksDiff(item.start_date, item.end_date)}
+                              &nbsp;Week
+                            </>
+                          ))}
+                        </li>
+                        <li>Internation certification </li>
+                        <li>Capstone projects </li>
                       </ul>
                     </div>
-
-                    <div className="batch">{batch}</div>
+                    {batches.map((item:any) => (
+                      <div className="batch">{item.description}</div>
+                    ))}
                   </div>
                 </div>
               </div>

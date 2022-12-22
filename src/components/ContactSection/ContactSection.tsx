@@ -20,15 +20,9 @@ const options = ["USA", "Canada", "Australia"].map((it) => ({
 }));
 
 const ContactSection = ({ className = "", map = false, form = false }) => {
-  const ref = useActive("#contact");
-  const [country, setCountry] = useState("USA");
-  const handleSelectCourse = ({ value }) => {
-    setCountry(value);
-  };
-
-  return (
-    <section ref={ref} className={`contact-section ${className}`} id="contact">
-      <div className="auto-container">
+    return (
+    <section  className={`contact-section ${className}`} id="contact">
+      <div className="auto-container">     
 
         <div className="upper-info">
           <form className="form-box text-start">

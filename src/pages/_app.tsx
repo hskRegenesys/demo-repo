@@ -16,7 +16,7 @@ import "@/styles/style.css";
 import "@/styles/hover.css";
 import "@/styles/responsive.css";
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }:any) => {
   return (
     <ContextProvider>
       <Component {...pageProps} />

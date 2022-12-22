@@ -2,15 +2,17 @@ import { faqsSection } from "@/data/faqsSection";
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
-const Faqs = ({ allFaqs = {} }) => {
-  const { faqs, defaultCurrent } = allFaqs;
+const Faqs = (props:any) => {
+  const { faqs, defaultCurrent } = props.allFaqs;
   const [current, setCurrent] = useState(defaultCurrent);
 
   return (
     <Col lg={12} md={12} sm={12} className="faq-block">
           <h3 className="with-curve-center text-center">Frequently Answered Questions</h3>
       <ul className="accordion-box clearfix">
-        {faqs.map(({ id, title, text }) => (
+        {faqs.map((item:any) => {
+          let { id, title, text } = item;
+          return (
           <li
             key={id}
             className={`accordion block${
@@ -34,7 +36,7 @@ const Faqs = ({ allFaqs = {} }) => {
               </div>
             </div>
           </li>
-        ))}
+        )})}
       </ul>
     </Col>
   );

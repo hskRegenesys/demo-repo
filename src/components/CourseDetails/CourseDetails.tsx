@@ -9,7 +9,6 @@ const ProcessOne = () => {
       <div className="FluidSection">
         {processOne.map(({ id, image, title, text, lists }) => (
           <Row key={id}>
-
             <Col md={7}>
               <div className="process-one__content">
                 <div className="sec-title">
@@ -18,24 +17,23 @@ const ProcessOne = () => {
                   </h2>
                 </div>
                 <p className="process-one__summery">{text}</p>
-            
-                  <div className="product-details__buttons">             
-                      <a className="theme-btn btn-style-two">
-                        <i className="btn-curve"></i>
-                        <span className="btn-title">Enquire now</span>
-                      </a>              
-            
-                      <a className="theme-btn btn-style-four">
-                        <i className="btn-curve"></i>
-                        <span className="btn-title">Download Brouchure</span>
-                      </a>                
-                  </div>
-       
+
+                <div className="product-details__buttons">
+                  <a className="theme-btn btn-style-two">
+                    <i className="btn-curve"></i>
+                    <span className="btn-title">Enquire now</span>
+                  </a>
+
+                  <a className="theme-btn btn-style-four">
+                    <i className="btn-curve"></i>
+                    <span className="btn-title">Download Brouchure</span>
+                  </a>
+                </div>
 
                 <ul className="list-unstyled process-one__list">
                   {lists.map((text, i) => (
                     <li key={i}>
-                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <i className="fa fa-check" aria-hidden="true"></i>
                       {text}
                     </li>
                   ))}
@@ -47,8 +45,7 @@ const ProcessOne = () => {
               <div className="process-one__image animated fadeInLeft">
                 <Image
                   src={
-                    require(`@/images/update-01-10-2021/${image}`)
-                      .default.src
+                    require(`@/images/update-01-10-2021/${image}`).default.src
                   }
                   alt=""
                 />

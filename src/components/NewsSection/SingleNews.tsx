@@ -2,8 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
+<<<<<<< HEAD
 const SingleNews = ({ news = {} }) => {
   const { image, date, admin, comments, header, text } = news;
+=======
+const SingleNews = (props:any) => {
+  const { image, date, admin, comments, title, text } = props.news;
+>>>>>>> 8784c5a78e0325baf8c7fb6f1fa63d58c1ac5501
 
   return (
     <Col lg={4} md={6} sm={12} className="news-block animated fadeInUp">
