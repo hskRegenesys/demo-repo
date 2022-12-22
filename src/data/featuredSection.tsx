@@ -1,4 +1,4 @@
-import image from "src/assets/images/resource/banner-bg.png";
+import image from "/src/assets/images/resource/banner-bg.png";
 
 const featuredSection = {
   image,

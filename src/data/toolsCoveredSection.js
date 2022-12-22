@@ -1,7 +1,7 @@
-import image from "src/assets/images/clients/2.png";
-import image3 from "src/assets/images/update-01-10-2021/sponsor/sponsor-1-1.png";
-import image4 from "src/assets/images/update-01-10-2021/sponsor/sponsor-2-1.png";
-import image2 from "src/assets/images/update-1-12-2020/resources/client-1.png";
+import image from "/src/assets/images/clients/2.png";
+import image3 from "/src/assets/images/update-01-10-2021/sponsor/sponsor-1-1.png";
+import image4 from "/src/assets/images/update-01-10-2021/sponsor/sponsor-2-1.png";
+import image2 from "/src/assets/images/update-1-12-2020/resources/client-1.png";
 
 const sponsors = [
   "1.png",

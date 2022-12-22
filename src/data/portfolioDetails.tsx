@@ -1,5 +1,5 @@
-import image from "src/assets/images/update-26-02-2021/resources/portfolio-d-3.jpg";
-import image2 from "src/assets/images/update-26-02-2021/resources/portfolio-d-video-1.jpg";
+import image from "/src/assets/images/update-26-02-2021/resources/portfolio-d-3.jpg";
+import image2 from "/src/assets/images/update-26-02-2021/resources/portfolio-d-video-1.jpg";
 
 export const portfolioDetailsHeader = {
   title: "filmore experience",

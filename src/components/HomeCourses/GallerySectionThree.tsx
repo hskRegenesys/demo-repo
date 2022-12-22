@@ -19,7 +19,7 @@ const GallerySectionThree = () => {
               <div className="gallery-item-three">
                 <Image
                   src={
-                    require(`src/assets/images/update-1-12-2020/projects/${image}`)
+                    require(`/src/assets/images/update-1-12-2020/projects/${image}`)
                       .default.src
                   }
                   alt=""

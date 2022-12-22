@@ -1,7 +1,7 @@
-import bg from "src/assets/images/background/video-bg.png";
-import image from "src/assets/images/resource/featured-image-13.jpg";
-import image2 from "src/assets/images/update-26-02-2021/resources/feature-2-1.jpg";
-import image3 from "src/assets/images/update-26-02-2021/resources/feature-3-1.jpg";
+import bg from "/src/assets/images/background/video-bg.png";
+import image from "/src/assets/images/resource/featured-image-13.jpg";
+import image2 from "/src/assets/images/update-26-02-2021/resources/feature-2-1.jpg";
+import image3 from "/src/assets/images/update-26-02-2021/resources/feature-3-1.jpg";
 
 const featuresSection = {
   bg,

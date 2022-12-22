@@ -1,4 +1,4 @@
-import featuredImage from "src/assets/images/resource/featured-image-4.jpg";
+import featuredImage from "/src/assets/images/resource/featured-image-4.jpg";
 
 const weDOSection = {
   title: "We do more then ever\nplatforms",

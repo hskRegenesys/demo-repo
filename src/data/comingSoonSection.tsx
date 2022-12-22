@@ -1,5 +1,5 @@
-import logo from "src/assets/images/logo.png";
-import bg from "src/assets/images/update-26-01-2021/background/coming-soon-bg-1.jpg";
+import logo from "/src/assets/images/logo.png";
+import bg from "/src/assets/images/update-26-01-2021/background/coming-soon-bg-1.jpg";
 
 export const comingSoonSection = {
   bg,

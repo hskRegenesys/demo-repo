@@ -1,4 +1,4 @@
-import image from "src/assets/images/resource/featured-image-8.jpg";
+import image from "/src/assets/images/resource/featured-image-8.jpg";
 
 const whyUs = {
   image,
