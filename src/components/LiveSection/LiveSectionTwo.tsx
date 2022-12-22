@@ -5,7 +5,7 @@ import JarallaxImage from "../Jarallax/JarallaxImage";
 import VideoModal from "../VideoModal/VideoModal";
 const Jarallax = dynamic(() => import("../Jarallax/Jarallax"), { ssr: false });
 
-const { bg, tagline, title, videoId } = liveSectionTwo;
+const { bg, tagline, videoId } = liveSectionTwo;
 
 const LiveSectionTwo = () => {
   const [isOpen, setOpen] = useState(false);
@@ -17,7 +17,6 @@ const LiveSectionTwo = () => {
         <div className="auto-container">
           <div className="sec-title-two">
             <p>{tagline}</p>
-            <h2>{title}</h2>
           </div>
           <div className="button-block">
             <a onClick={() => setOpen(true)} className="lightbox-image">
