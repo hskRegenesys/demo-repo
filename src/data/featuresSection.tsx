@@ -47,29 +47,23 @@ export const featureSix = {
 };
 
 export const featureSeven = {
-  title: "planning and strategy",
+  title: "Meet our faculties",
+  desc: "Revolutionise your career with future ready skills",
   features: [
     {
       id: 1,
-      image: "strategy-1-1.jpg",
-      title: "Take a look around our business growth",
-      text: "Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.",
-      href: "/services",
+      image: "7.jpg",
+      title: "Bhupendra Mishra",
+      text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
+      designation : "Senior lecture",
     },
     {
       id: 2,
-      image: "strategy-1-2.jpg",
-      title: "Our Mission and unique vissions",
-      text: "Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.",
-      href: "/about",
-    },
-    {
-      id: 3,
-      image: "strategy-1-3.jpg",
-      title: "Finance advice and a global solution",
-      text: "Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.",
-      href: "/services",
-    },
+      image: "7.jpg",
+      title: "Dr. Deepika Sharma",
+      text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
+      designation : "Senior lecture",
+    },    
   ],
 };
 

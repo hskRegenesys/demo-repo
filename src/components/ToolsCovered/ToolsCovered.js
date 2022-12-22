@@ -1,4 +1,4 @@
-import sponsors from "@/data/courseTools";
+import courseTools from "@/data/courseTools";
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
 import { Image } from "react-bootstrap";
@@ -21,7 +21,7 @@ const settings = {
   autoplayButtonOutput: false,
   responsive: {
     600: {
-      items: 2,
+      items: 3,
       gutter: 30,
     },
     768: {
@@ -39,31 +39,28 @@ const settings = {
   },
 };
 
-const StudentPlacement = ({ className = "" }) => {
+const ToolsCovered = ({ className = "tools-covered" }) => {
   const listRef = useRef(null);
-
   return (
     <section className={`sponsors-section ${className}`}>
-      <div className="sponsors-outer">
-        <div className="FluidSection">
-        <div className="sec-title animated fadeInLeft text-center">
-              <h4>
-              Our Students Have Been Placed at
-              </h4>
-            </div>
+           <h5>
+        Tools Covered
+          </h5>
+      <div className="sponsors-outer">     
+        <div className="fluidSection">
+     
           <div className="sponsors-carousel">
             <TinySlider
               options={{ ...settings, container: `.my-slider-15` }}
               ref={listRef}
             >
-              {sponsors.map((image, index) => (
+              {courseTools.map((image, index) => (
                 <div
                   ref={listRef}
                   key={index}
                   className="slide-item text-center"
                 >
-                  <figure className="image-box">
-                    <a href="#">
+                  <figure className="image-box">                  
                       <Image
                         src={
                           require(`@/images/clients/${
@@ -71,8 +68,7 @@ const StudentPlacement = ({ className = "" }) => {
                           }`).default.src
                         }
                         alt=""
-                      />
-                    </a>
+                      />                 
                   </figure>
                 </div>
               ))}
@@ -84,4 +80,4 @@ const StudentPlacement = ({ className = "" }) => {
   );
 };
 
-export default StudentPlacement;
+export default ToolsCovered;

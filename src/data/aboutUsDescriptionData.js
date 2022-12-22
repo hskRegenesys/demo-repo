@@ -78,7 +78,7 @@ export const sponsorEight = [
   image4,
 ];
 
-export const sponsorsSectionFour = {
+export const aboutUsDescriptionData = {
   title: "We’re empowering students Upskilling digital courses, educate, and grow.",
   pagedesc: "Revolutionise your career with future ready skills",
   highlight:"Know who we are",

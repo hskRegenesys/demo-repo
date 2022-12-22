@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 
-const { title, features } = featureSeven;
+const { title, features, desc, designation } = featureSeven;
 
 const FeatureSeven = () => {
   return (
@@ -12,18 +12,22 @@ const FeatureSeven = () => {
         <div className="sec-title centered">
           <h2>
             {title}
-            <span className="dot">.</span>
           </h2>
+
+          <h6 className="desc">
+            {desc}
+          </h6>
+
         </div>
-        <Row>
-          {features.map(({ id, title, href, text, image }) => (
+        <Row className="justify-content-center">
+          {features.map(({ id, title, designation, text, image }) => (
             <Col key={id} md={12} lg={4}>
               <div className="feature-seven-card">
                 <div className="feature-seven-card__inner">
                   <div className="feature-seven-card__image">
                     <Image
                       src={
-                        require(`@/images/update-26-02-2021/strategy/${image}`)
+                        require(`@/images/faculties/${image}`)
                           .default.src
                       }
                       alt=""
@@ -31,8 +35,12 @@ const FeatureSeven = () => {
                   </div>
                   <div className="feature-seven-card__content">
                     <h3 className="feature-seven-card__title">
-                      <Link href={href}>{title}</Link>
+                      {title}
                     </h3>
+
+                    <h6 className="designation">
+                      {designation}
+                    </h6>
                     <p className="feature-seven-card__text">{text}</p>
                   </div>
                 </div>
