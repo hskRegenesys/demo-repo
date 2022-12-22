@@ -1,7 +1,7 @@
 import { videoOne } from "@/data/videoSection";
 import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 
 const { image, videoId, title, text1, text2 } = videoOne;
 
@@ -28,7 +28,7 @@ const VideoOne = () => {
           </div> 
         </div>
       </div>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };

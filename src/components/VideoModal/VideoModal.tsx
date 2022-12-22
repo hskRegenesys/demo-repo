@@ -1,5 +1,5 @@
 import React from "react";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 interface propsType{
   isOpen:boolean
   setOpen:(setOpen:boolean)=>void
@@ -8,7 +8,7 @@ interface propsType{
 const VideoModal = ({ isOpen, setOpen, id }:propsType) => {
   return (
     <>
-      {typeof window !== "undefined" && (
+      {/* {typeof window !== "undefined" && (
         <ModalVideo
           channel="youtube"
           ratio="16:9"
@@ -16,7 +16,7 @@ const VideoModal = ({ isOpen, setOpen, id }:propsType) => {
           videoId={id}
           onClose={() => setOpen(false)}
         />
-      )}
+      )} */}
     </>
   );
 };
