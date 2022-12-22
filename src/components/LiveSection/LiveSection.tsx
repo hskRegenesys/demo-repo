@@ -2,7 +2,7 @@ import liveSection from "@/data/liveSection";
 import Link from "next/link";
 import React, { useState } from "react";
 import TextSplit from "../Reuseable/TextSplit";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 
 const { bg, videoId } = liveSection;
 
@@ -42,7 +42,7 @@ const LiveSection = ({ className = "" }) => {
     
         </div>
       </section>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };

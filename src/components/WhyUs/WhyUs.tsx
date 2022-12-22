@@ -1,7 +1,7 @@
 import whyUs from "@/data/whyUs";
 import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 
 const { image, title, features, videoId } = whyUs;
 
@@ -53,7 +53,7 @@ const WhyUs = () => {
           </Row>
         </div>
       </section>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };

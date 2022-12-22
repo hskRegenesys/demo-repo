@@ -2,7 +2,7 @@ import { liveSectionTwo } from "@/data/liveSection";
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import JarallaxImage from "../Jarallax/JarallaxImage";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 const Jarallax = dynamic(() => import("../Jarallax/Jarallax"), { ssr: false });
 
 const { bg, tagline, videoId } = liveSectionTwo;
@@ -27,7 +27,7 @@ const LiveSectionTwo = () => {
           </div>
         </div>
       </Jarallax>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };
