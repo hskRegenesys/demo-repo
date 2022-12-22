@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 
-const { title, features, desc, designation } = featureSeven;
+const { title, features, desc } = featureSeven;
 
 const FeatureSeven = () => {
   return (

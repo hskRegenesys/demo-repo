@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import TextSplit from "../Reuseable/TextSplit";
 import VideoModal from "../VideoModal/VideoModal";
 
-const { secTitle, bg, videoId, title } = liveSection;
+const { bg, videoId } = liveSection;
 
 const LiveSection = ({ className = "" }) => {
   const [isOpen, setOpen] = useState(false);

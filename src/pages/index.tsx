@@ -35,7 +35,7 @@ const Home2 = () => {
   if (courseData.length) {
     courses = _.filter(
       courseData,
-      (item) =>
+      (item:any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1

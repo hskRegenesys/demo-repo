@@ -25,7 +25,7 @@ const {
 
 const ProductDetailsPage = () => {
   const [coursePriceDetails, setcoursePrice] = useState([]);
-  const [priceDetails, setPriceDetails] = useState(0);
+  const [priceDetails, setPriceDetails] = useState<any>(0);
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice("32");
@@ -43,14 +43,13 @@ const ProductDetailsPage = () => {
   }, []);
 
   function CoursePriceChange(id: number) {
-    coursePriceDetails?.forEach(function (val) {
+    coursePriceDetails?.forEach(function (val:any) {
       val?.coursePrices?.forEach(function (item: any) {
         if (item.country_id === id) {
           setPriceDetails(item);
         }
       });
     });
-    console.log("CoursePriceChange--------->", coursePriceDetails);
   }
 
   return (
