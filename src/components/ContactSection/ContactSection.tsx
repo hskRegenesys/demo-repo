@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import Link from "next/link";
 import DiscoverSection from "@/components/DiscoverSection/DiscoverSection";
 
+
 const MapBox = dynamic(() => import("../MapSection/MapBox"));
 const FormBox = dynamic(() => import("./FormBox"));
 
@@ -64,19 +65,20 @@ const ContactSection = ({ className = "", map = false, form = false }) => {
               <Form.Group className="mb-3 col-md-6" controlId="">
                 <Form.Label>Course of interest</Form.Label>
                 <div className="field-inner">
-                  <CustomSelect
-                    name="country"
-                    className="courseSelect"
-                    options={options}
-                    onChange={handleSelectCourse}
-                    defaultValue={options[0]}
-                    placeholder="Select Interested Course"
-                    instanceId="countrySelect"
-                  />
+                  <Form.Select className="select-course">
+                    <option>Select Course</option>
+                    <option value="1">Data Science</option>
+                    <option value="2">Digital Marketing</option>
+                    <option value="3">Project Management</option>
+                    <option value="4">Cyber Security</option>
+                    <option value="5">Investment, Trading and Personal finance</option>
+                  </Form.Select>
                 </div>
               </Form.Group>
 
-              <Col md={12} className="form-group">
+
+
+              <Col md={12} className="form-group mt-3">
                 <div className="field-inner">
                   <textarea
                     name="notes"
@@ -92,7 +94,7 @@ const ContactSection = ({ className = "", map = false, form = false }) => {
                 </a>
               </Link>
             </Row>
-         </form>
+          </form>
         </div>
 
         <DiscoverSection />
