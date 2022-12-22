@@ -1,4 +1,4 @@
-import bg from "/src/assets/images/background/video-bg.png";
+
 
 const testimonialsSection = {
   title: "Customer feedbacks",
@@ -44,7 +44,7 @@ const testimonialsSection = {
 export default testimonialsSection;
 
 export const testimonialsSectionTwo = {
-  bg,
+  bg:"/assets/images/background/video-bg.png",
   testimonials: [
     {
       id: 1,

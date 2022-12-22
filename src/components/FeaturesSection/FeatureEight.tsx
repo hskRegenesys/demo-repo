@@ -21,7 +21,7 @@ const FeatureEight = () => {
         <Row>
           <Col md={12} lg={5}>
             <div className="feature-eight__image">
-              <Image src={image.src} alt="" />
+              <Image src={image} alt="" />
             </div>
           </Col>
           <Col md={12} lg={7}>

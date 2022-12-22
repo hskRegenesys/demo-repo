@@ -1,8 +1,7 @@
-import featuredImage from "/src/assets/images/resource/featured-image-4.jpg";
 
 const weDOSection = {
   title: "We do more then ever\nplatforms",
-  featuredImage,
+  featuredImage:"/assets/images/resource/featured-image-4.jpg",
   text: "There are many variatns of passages the majority have suffered alteration in some foor randomised words believable.",
   barTitle: "Digital marketing",
   barPercent: 70,

@@ -12,9 +12,7 @@ const CartProduct = (props: any) => {
       <td>
         <div className="product-box">
           <Image
-            src={
-              require(`/src/assets/images/update-26-01-2021/shops/${image}`).default.src
-            }
+            src={`/assets/images/update-26-01-2021/shops/${image}`}
             alt=""
           />
           <h3>

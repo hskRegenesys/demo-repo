@@ -24,7 +24,7 @@ const AboutUsDescription = () => {
             <Col md={7} lg={7}>
               <div className="about-me-one__content who-we-are">      
               <div className="sign-arrow">
-                <Image src={imagearrow.src} alt="" />
+                <Image src={imagearrow} alt="" />
               </div>  
                 <p className="highlight">{highlight}</p>
                 <p className="about-me-one__text">{text1}</p>

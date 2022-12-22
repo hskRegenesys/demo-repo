@@ -1,5 +1,3 @@
-import image from "/src/assets/images/resource/featured-image-16.jpg";
-import featuredImage from "/src/assets/images/resource/featured-image-17.jpg";
 
 export const sidebar = {
   title: "All Services",
@@ -41,13 +39,13 @@ export const sidebar = {
 };
 
 const common = {
-  image,
+  image:"/assets/images/resource/featured-image-16.jpg",
   text1:
     "Need something changed or is there something not quite working the way you envisaged? Is your van a little old and tired and need refreshing? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
   featuredTitle: "planning & strategy",
   featuredText:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage,
+  featuredImage:"/assets/images/resource/featured-image-17.jpg",
   features: [
     "Research beyond the business plan",
     "Marketing options and rates",

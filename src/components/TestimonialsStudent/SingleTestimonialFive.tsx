@@ -8,7 +8,7 @@ const SingleTestimonialFive = (props:any) => {
     <div className="item" style={{ userSelect: "none" }}>
       <div className="testimonials-five-card">
         <Image
-          src={image.src}
+          src={image}
           alt=""
           className="testimonials-five-card__image"
         />

@@ -88,15 +88,15 @@ const ProductDetailsPage = () => {
               <h5 className="product-details__subtitle">Total Admission Fee</h5>
               <div className="flags">
                 <a onClick={() => CoursePriceChange(2)}>
-                  <Image src={flagind.src} alt="India" />
+                  <Image src={flagind} alt="India" />
                 </a>
 
                 <a onClick={() => CoursePriceChange(1)}>
-                  <Image src={falgsa.src} alt="South Africa" />
+                  <Image src={falgsa} alt="South Africa" />
                 </a>
 
                 <a onClick={() => CoursePriceChange(3)}>
-                  <Image src={flagnig.src} alt="Nigeria" />
+                  <Image src={flagnig} alt="Nigeria" />
                 </a>
               </div>
             </div>

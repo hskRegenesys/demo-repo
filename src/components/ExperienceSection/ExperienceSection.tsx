@@ -18,10 +18,7 @@ const ExperienceSection = () => {
               <div className="partner-one__card">
                 <div className="partner-one__image">
                   <Image
-                    src={
-                      require(`/src/assets/images/icons/${image}`)
-                        .default.src
-                    }
+                    src={`/assets/images/icons/${image}`}
                     alt=""
                   />
                 </div>

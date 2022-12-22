@@ -1,10 +1,5 @@
 
-import logo from "/src/assets/images/footer-logo.png";
-import logo3 from "/src/assets/images/logo-3.png";
-import logo6 from "/src/assets/images/update-01-10-2021/logo-6-light.png";
-import logo7 from "/src/assets/images/update-01-10-2021/logo-7-light.png";
-import logo8 from "/src/assets/images/update-01-10-2021/logo-8-light.png";
-import logo5 from "/src/assets/images/update-09-06-2021/logo-5-light.png";
+
 
 export const footer = { year: new Date().getFullYear(), author: "Linoor" };
 
@@ -16,11 +11,12 @@ export const mainFooterDemo = {
 };
 
 export const mainFooter = {
-  logo,
-  logo3,
-  logo5,
-  logo6,
-  logo7,
+ logo : "/assets/images/footer-logo.png",
+logo3 : "/assets/images/logo-3.png",
+ logo6 : "/assets/images/update-01-10-2021/logo-6-light.png",
+ logo7 : "/assets/images/update-01-10-2021/logo-7-light.png",
+logo8 : "/assets/images/update-01-10-2021/logo-8-light.png",
+ logo5 : "/assets/images/update-09-06-2021/logo-5-light.png",
   title: "Let’s Start Working Together",
   about:
     "There are many variation of passages of lorem ipsum available, but the majority suffered.",

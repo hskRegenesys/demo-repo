@@ -23,7 +23,7 @@ const SingleTrending = ({
             <Link href="/team">
               <a>
                 <Image
-                  src={require(`/src/assets/images/gallery/${image}`).default.src}
+                  src={`/assets/images/gallery/${image}`}
                   alt=""
                 />
               </a>

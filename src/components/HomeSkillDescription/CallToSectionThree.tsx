@@ -14,7 +14,7 @@ const CallToSectionThree = () => {
       speed={0.3}
       imgPosition="50% 80%"
     >
-      <JarallaxImage src={bg.src} />
+      <JarallaxImage src={bg} />
       <div className="auto-container">
         <h3>{title}</h3>
         <div className="button-wrap">

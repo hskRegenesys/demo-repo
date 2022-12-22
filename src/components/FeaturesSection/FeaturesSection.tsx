@@ -11,7 +11,7 @@ const { bg, title, features } = featuresSection;
 const FeaturesSection = () => {
   return (
     <Jarallax speed={0.3} imgPosition="50% 50%" className="features-section">
-      <JarallaxImage src={bg.src} />
+      <JarallaxImage src={bg} />
       <div className="auto-container">
         <div className="content-box">
           <h2>

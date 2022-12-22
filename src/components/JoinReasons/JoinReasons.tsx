@@ -18,7 +18,7 @@ const JoinReasons = () => {
         <Row>       
             <Col sm={12} md={6} lg={4} className="animated fadeInLeft">
               <div className="reasons__secOne">
-            <Image src={bg1.src} alt="" />
+            <Image src={bg1} alt="" />
               <div className="join__reasons">
                 <h5 className="heading">              
                   {subTitle1}
@@ -33,7 +33,7 @@ const JoinReasons = () => {
             <Col sm={12} md={6} lg={8} className="animated fadeInLeft">
 
               <div className="reasons__secTwo">
-            <Image src={bg2.src} alt="" />              
+            <Image src={bg2} alt="" />              
               <div className="join__reasons">
                 <h5 className="heading">              
                   {subTitle2}
@@ -48,7 +48,7 @@ const JoinReasons = () => {
             <Row className="mt-4">
             <Col sm={12} md={6} lg={8} className="animated fadeInLeft secThree">
             <div className="reasons__secThree">
-            <Image src={bg3.src} alt="" />
+            <Image src={bg3} alt="" />
               <div className="join__reasons">
                 <h5 className="heading">              
                   {subTitle3}
@@ -63,7 +63,7 @@ const JoinReasons = () => {
 
             <Col sm={12} md={6} lg={4} className="animated fadeInLeft secFour">
               <div className="reasons__secFour">
-            <Image src={bg4.src} alt="" />
+            <Image src={bg4} alt="" />
               <div className="join__reasons">
                 <h5 className="heading">              
                   {subTitle4}

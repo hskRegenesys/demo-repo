@@ -1,4 +1,4 @@
-import bg from "/src/assets/images/background/video-bg.png"
+
 const funFacts = [
   {
     id: 1,
@@ -23,7 +23,7 @@ const funFacts = [
 ];
 
 export const funFactsOne = {
-  bg,
+ bg :"/assets/images/background/video-bg.png",
   funFacts,
 };
 

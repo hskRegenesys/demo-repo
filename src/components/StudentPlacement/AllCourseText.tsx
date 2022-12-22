@@ -21,7 +21,7 @@ const AllCourseText = () => {
 
          <div className="content-box text-left">
         <div className="sign-arrow">
-                <Image src={imagearrow.src} alt="" />
+                <Image src={imagearrow} alt="" />
               </div>  
           <h3>
             <TextSplit text={title} />

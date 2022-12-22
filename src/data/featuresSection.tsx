@@ -1,10 +1,6 @@
-import bg from "/src/assets/images/background/video-bg.png";
-import image from "/src/assets/images/resource/featured-image-13.jpg";
-import image2 from "/src/assets/images/update-26-02-2021/resources/feature-2-1.jpg";
-import image3 from "/src/assets/images/update-26-02-2021/resources/feature-3-1.jpg";
 
 const featuresSection = {
-  bg,
+  bg:"/assets/images/background/video-bg.png",
   title: "Grow With Community & Experience Endless Possibilities",
   features: [
     {
@@ -28,13 +24,13 @@ const featuresSection = {
 export default featuresSection;
 
 export const featuresSectionTwo = {
-  image,
+  image:"/assets/images/resource/featured-image-13.jpg",
   title: "Get in touch \n with us",
   title2: "Everything you need to know about digital regenesis",  
 };
 
 export const featureSix = {
-  image: image2,
+  image: "/assets/images/update-26-02-2021/resources/feature-2-1.jpg",
   imageCaption: "Total design freedom \n for everyone",
   title: "Linoor place a very strong impact",
   text: "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form injected humour, or randomised words.",
@@ -68,7 +64,7 @@ export const featureSeven = {
 };
 
 export const featureEight = {
-  image: image3,
+  image: "/assets/images/update-26-02-2021/resources/feature-3-1.jpg",
   title: "We’re here to help your businesses growth",
   text: "There are many variations of pass of lorem ips but the majority have suffered alteration in some form. Injected humour not randomised words which.",
   barTitle: "Digital marketing",

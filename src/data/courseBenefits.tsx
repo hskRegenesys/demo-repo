@@ -1,8 +1,8 @@
-import imagebg from "/src/assets/images/background/career-support.png";
+
 export const courseBenefits = {
   title: "Benefits",
   desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
-  imagebg,
+  imagebg:' "/assets/images/background/career-support.png"',
   tabBtns: [
     {
       id: "tab-1",

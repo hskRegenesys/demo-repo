@@ -1,4 +1,3 @@
-import image from "/src/assets/images/update-09-06-2021/events/event-d-1.jpg";
 
 export const eventsOne = [
   {
@@ -54,7 +53,7 @@ export const eventsOne = [
 export const eventsDetails = {
   date: "23 Jun",
   year: "2021",
-  image,
+  image:"/assets/images/update-09-06-2021/events/event-d-1.jpg",
   title: "New Web design trends",
   time: "04:00am to 06:00pm",
   category: "Web Design",

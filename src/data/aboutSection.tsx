@@ -1,21 +1,7 @@
-import image1 from "/src/assets/images/resource/featured-image-1.jpg";
-import image3 from "/src/assets/images/resource/featured-image-15.jpg";
-import image2 from "/src/assets/images/resource/featured-image-2.jpg";
-import image12 from "/src/assets/images/update-01-10-2021/resources/about-10-1-1.jpg";
-import image11 from "/src/assets/images/update-01-10-2021/resources/about-11-1-3.jpg";
-import image10 from "/src/assets/images/update-01-10-2021/resources/about-eight-1-1.png";
-import image9 from "/src/assets/images/update-01-10-2021/resources/about-nine-1-1.png";
-import image6 from "/src/assets/images/update-01-10-2021/resources/about-seven-1-1.jpg";
-import image7 from "/src/assets/images/update-01-10-2021/resources/about-seven-1-2.jpg";
-import image8 from "/src/assets/images/update-01-10-2021/resources/about-six-1-1.jpg";
-import image4 from "/src/assets/images/update-1-12-2020/resources/about-1-1.jpg";
-import image5 from "/src/assets/images/update-1-12-2020/resources/signture-1-1.png";
-import image13 from "/src/assets/images/update-26-02-2021/resources/about-me-1.jpg";
-import marko from "/src/assets/images/marko.png";
 
 export const aboutSectionOne = {
-  image1,
-  image2,
+  image1:"/assets/images/resource/featured-image-1.jpg",
+  image2:"/assets/images/resource/featured-image-2.jpg",
   title: "We’re the best agency\nin downtown",
   text1:
     "We are committed to providing our customers with exceptional service while offering our employees the best training.",
@@ -30,7 +16,7 @@ export const aboutSectionOne = {
 };
 
 export const aboutSectionTwo = {
-  image: image3,
+  image: "/assets/images/resource/featured-image-15.jpg",
   title: "We are standout\nexperts in business",
   text: "We believe that success is achieved through a highly collaborative interaction, so that we can work together to identify and evaluate opportunities beyond your current operations.",
   counters: [
@@ -41,7 +27,7 @@ export const aboutSectionTwo = {
 };
 
 export const aboutSectionThree = {
-  image: image4,
+  image:"/assets/images/update-1-12-2020/resources/about-1-1.jpg",
   title: "The Right People for your Business",
   subtitle: "welcome to business agency",
   text: "There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words which don look even slightly believable.",
@@ -52,11 +38,11 @@ export const aboutSectionThree = {
   ],
   barTitle: "Bussiness Success",
   barPercent: 70,
-  aboutPerson: { name: "William Smith", tagline: "Co Founder", image: image5 },
+  aboutPerson: { name: "William Smith", tagline: "Co Founder", image:"/assets/images/update-1-12-2020/resources/signture-1-1.png" },
 };
 
 export const aboutSeven = {
-  images: [image6, image7],
+  images: ["/assets/images/update-01-10-2021/resources/about-seven-1-1.jpg",  "/assets/images/update-01-10-2021/resources/about-seven-1-2.jpg"],
   tagline: "About Company",
   title: "We provide the best business services",
   text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, simply free text by injected humour, or randomised.",
@@ -72,7 +58,7 @@ export const aboutSix = {
   tagline: "Our Company Benefits",
   title: "Mission is to protect your business",
   text: "There are many variations of passages of available but the majority have suffered alteration in some form, injected humou or randomised words slightly believable.",
-  image: image8,
+  image:  "/assets/images/update-01-10-2021/resources/about-six-1-1.jpg",
   items: [
     {
       id: 1,
@@ -93,7 +79,7 @@ export const aboutSix = {
 };
 
 export const aboutNine = {
-  image: image9,
+  image:"/assets/images/update-01-10-2021/resources/about-nine-1-1.png",
   icon: "flaticon-data",
   title: "Powerful Tools for Your Customers",
   titleHighlight: "Tools",
@@ -106,7 +92,7 @@ export const aboutNine = {
 };
 
 export const aboutEight = {
-  image: image10,
+  image: "/assets/images/update-01-10-2021/resources/about-eight-1-1.png",
   icon: "flaticon-data",
   title: "Control Everything from One Solution",
   titleHighlight: "Everything",
@@ -144,13 +130,13 @@ export const aboutEleven = {
   ],
   progressTitle: "Finance & Consulting",
   percent: 77,
-  image: image11,
+  image: "/assets/images/update-01-10-2021/resources/about-11-1-3.jpg",
   name: "Christine Eve",
   infoText: "Co Founder & Consultant",
 };
 
 export const aboutTen = {
-  image: image12,
+  image: "/assets/images/update-01-10-2021/resources/about-10-1-1.jpg",
   tagline: "Why Choose Us",
   title: "The Largest Business Experts",
   text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -169,7 +155,7 @@ export const aboutTen = {
 };
 
 export const aboutMeOne = {
-  image: marko,
+  image:"/assets/images/marko.png",
   title: "Dr Marko Saravanja",
   subtitle:"Executive Chairperson / Regenesys Business School",
   highlight: "Shifting The Focus to The New Digital World",

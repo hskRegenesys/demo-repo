@@ -13,7 +13,7 @@ const LiveSectionTwo = () => {
   return (
     <>
       <Jarallax className="live-section-two" speed={0.3} imgPosition="50% 80%">
-        <JarallaxImage src={bg.src} />
+        <JarallaxImage src={bg} />
         <div className="auto-container">
           <div className="sec-title-two">
             <p>{tagline}</p>

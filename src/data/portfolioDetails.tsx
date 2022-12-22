@@ -1,9 +1,7 @@
-import image from "/src/assets/images/update-26-02-2021/resources/portfolio-d-3.jpg";
-import image2 from "/src/assets/images/update-26-02-2021/resources/portfolio-d-video-1.jpg";
 
 export const portfolioDetailsHeader = {
   title: "filmore experience",
-  image,
+  image:"/assets/images/update-26-02-2021/resources/portfolio-d-3.jpg",
   text: "Lorem Ipsum is simply dummy text of the printing and type setting industry has been the standard dummy.",
   lists: ["Website Designing", "Development", "Set Up Demo"],
   clients: "Jessica Brown",
@@ -32,6 +30,6 @@ export const portfolioDetailsInfo = [
 ];
 
 export const portfolioDetailsVideo = {
-  image: image2,
+  image: "/assets/images/update-26-02-2021/resources/portfolio-d-video-1.jpg",
   videoId: "Get7rqXYrbQ",
 };
