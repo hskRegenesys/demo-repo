@@ -1,4 +1,4 @@
-import bg1 from "@/images/icons/preloader.png";
+import bg1 from "src/assets/images/icons/preloader.png";
 import React from "react";
 
 const Preloader = (props: any) => {

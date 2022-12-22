@@ -1,4 +1,4 @@
-import image from "@/images/icons/404-image.png";
+import image from "src/assets/images/icons/404-image.png";
 
 export const errorSection = {
   image,

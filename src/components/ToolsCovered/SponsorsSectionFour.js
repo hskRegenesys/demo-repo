@@ -17,7 +17,7 @@ const SponsorsSectionFour = () => {
                 <a href="#">
                   <Image
                     src={
-                      require(`@/images/update-09-06-2021/brand/${image}`)
+                      require(`src/assets/images/update-09-06-2021/brand/${image}`)
                         .default.src
                     }
                     alt=""

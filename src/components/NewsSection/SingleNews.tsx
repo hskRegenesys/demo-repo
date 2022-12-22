@@ -12,7 +12,7 @@ const SingleNews = (props:any) => {
           <Link href="/blog-single">
             <a>
               <Image
-                src={require(`@/images/resource/${image}`).default.src}
+                src={require(`src/assets/images/resource/${image}`).default.src}
                 alt=""
               />
             </a>

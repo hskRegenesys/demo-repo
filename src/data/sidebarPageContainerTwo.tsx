@@ -1,4 +1,4 @@
-import image from "@/images/resource/news-7.jpg";
+import image from "src/assets/images/resource/news-7.jpg";
 
 export const blogPage = {
   title: "Delivering the best digital marketing",

@@ -139,7 +139,7 @@ const TrendingSection = (carousel:any) => {
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div>
                     <figure className="image">
-                      <Image src={require(`@/images/gallery/1.jpg`)} alt="" />
+                      <Image src={require(`src/assets/images/gallery/1.jpg`)} alt="" />
                     </figure>
                     <a
                       className="lightbox-image overlay-box"

@@ -13,7 +13,7 @@ const CartProduct = (props: any) => {
         <div className="product-box">
           <Image
             src={
-              require(`@/images/update-26-01-2021/shops/${image}`).default.src
+              require(`src/assets/images/update-26-01-2021/shops/${image}`).default.src
             }
             alt=""
           />

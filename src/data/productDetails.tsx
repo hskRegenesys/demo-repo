@@ -1,7 +1,7 @@
-import falgsa from "@/images/icons/sa_flag.png";
-import flagnig from "@/images/icons/flag_nigeria.png";
-import flagus from "@/images/icons/us_flag.png";
-import flagind from "@/images/icons/india_flag.png";
+import falgsa from "src/assets/images/icons/sa_flag.png";
+import flagnig from "src/assets/images/icons/flag_nigeria.png";
+import flagus from "src/assets/images/icons/us_flag.png";
+import flagind from "src/assets/images/icons/india_flag.png";
 
 export const productDetails = {
   falgsa,
