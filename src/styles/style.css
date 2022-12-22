@@ -87,35 +87,35 @@
  ***/
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Raleway-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway-medium";
-  src: url("../assets/fonts/Raleway-Medium.ttf") format("truetype");
+  src: url("/assets/fonts/Raleway-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway-semibold";
-  src: url("../assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+  src: url("/assets/fonts/Raleway-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway-bold";
-  src: url("../assets/fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("/assets/fonts/Raleway-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins-semiBold";
-  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  src: url("/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -269,7 +269,7 @@ p {
 
 .page-wrapper__dark {
   background-color: #1c1e22;
-  background-image: url(../assets/images/background/home-portfolio-bg-1-1.png);
+  background-image: url(/assets/images/background/home-portfolio-bg-1-1.png);
 }
 
 .page-wrapper__gradient {
@@ -729,7 +729,7 @@ img {
   top: 0;
   width: 44px;
   height: 42px;
-  background: url(../assets/images/icons/chat-icon.png) left center no-repeat;
+  background: url(/assets/images/icons/chat-icon.png) left center no-repeat;
 }
 
 .main-header .other-links .link-box .sub-text {
@@ -1151,7 +1151,7 @@ img {
 }
 
 .header-style-four .other-links .link-box .link .icon {
-  background-image: url(../assets/images/icons/chat-icon-dark.png);
+  background-image: url(/assets/images/icons/chat-icon-dark.png);
 }
 
 .header-style-four .other-links .link-box .sub-text {
@@ -2064,7 +2064,7 @@ img {
 
 ***/
 img.lazy-image {
-  background: url(../assets/images/icons/image-bg.svg) center center no-repeat;
+  background: url(/assets/images/icons/image-bg.svg) center center no-repeat;
 }
 
 img.lazy-image.loaded {
@@ -2433,7 +2433,7 @@ img.lazy-image.loaded {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../assets/images/main-slider/slide-2-pattern-1.png);
+  background-image: url(/assets/images/main-slider/slide-2-pattern-1.png);
   z-index: 10;
 }
 
@@ -2452,7 +2452,7 @@ img.lazy-image.loaded {
   width: 350px;
   max-width: 100%;
   height: 100%;
-  background: url(../assets/images/main-slider/left-curve-line.png) left top
+  background: url(/assets/images/main-slider/left-curve-line.png) left top
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2477,7 +2477,7 @@ img.lazy-image.loaded {
   width: 655px;
   max-width: 100%;
   height: 100%;
-  background: url(../assets/images/main-slider/right-curved-bg.png) right bottom
+  background: url(/assets/images/main-slider/right-curved-bg.png) right bottom
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2502,7 +2502,7 @@ img.lazy-image.loaded {
   width: 164px;
   max-width: 100%;
   height: 100%;
-  background: url(../assets/images/main-slider/right-white-curve.png) right top
+  background: url(/assets/images/main-slider/right-white-curve.png) right top
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2551,7 +2551,7 @@ img.lazy-image.loaded {
   width: 570px;
   max-width: 100%;
   height: 810px;
-  background: url(../assets/images/main-slider/b-2-shape-1.png) left top
+  background: url(/assets/images/main-slider/b-2-shape-1.png) left top
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2576,7 +2576,7 @@ img.lazy-image.loaded {
   width: 333px;
   max-width: 100%;
   height: 366px;
-  background: url(../assets/images/main-slider/b-2-shape-2.png) left bottom
+  background: url(/assets/images/main-slider/b-2-shape-2.png) left bottom
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2601,7 +2601,7 @@ img.lazy-image.loaded {
   width: 824px;
   max-width: 100%;
   height: 424px;
-  background: url(../assets/images/main-slider/b-2-shape-3.png) right bottom
+  background: url(/assets/images/main-slider/b-2-shape-3.png) right bottom
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2626,7 +2626,7 @@ img.lazy-image.loaded {
   width: 218px;
   max-width: 100%;
   height: 571px;
-  background: url(../assets/images/main-slider/b-2-shape-4.png) right top
+  background: url(/assets/images/main-slider/b-2-shape-4.png) right top
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2651,7 +2651,7 @@ img.lazy-image.loaded {
   width: 306px;
   max-width: 100%;
   height: 904px;
-  background: url(../assets/images/main-slider/b-2-shape-5.png) right top
+  background: url(/assets/images/main-slider/b-2-shape-5.png) right top
     no-repeat;
   z-index: 2;
   opacity: 0;
@@ -2676,7 +2676,7 @@ img.lazy-image.loaded {
   width: 100%;
   max-width: 100%;
   height: 100%;
-  background: url(../assets/images/main-slider/b-2-shape-6.png) center center
+  background: url(/assets/images/main-slider/b-2-shape-6.png) center center
     no-repeat;
   z-index: 3;
   opacity: 0;
@@ -2943,7 +2943,7 @@ img.lazy-image.loaded {
   bottom: -50px;
   width: 330px;
   height: 330px;
-  background: url(../assets/images/main-slider/b-3-shape.png) center center
+  background: url(/assets/images/main-slider/b-3-shape.png) center center
     no-repeat;
   z-index: 3;
   opacity: 0;
@@ -3263,7 +3263,7 @@ img.lazy-image.loaded {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../assets/images/update-1-12-2020/shapes/menu-top-shadow.png);
+  background-image: url(/assets/images/update-1-12-2020/shapes/menu-top-shadow.png);
   background-repeat: no-repeat;
   background-position: top center;
   z-index: 10;
@@ -3749,7 +3749,7 @@ img.lazy-image.loaded {
 .services-section {
   position: relative;
   padding: 120px 0px 90px;
-  background: var(--thm-black) url(../assets/images/background/pattern-1.png)
+  background: var(--thm-black) url(/assets/images/background/pattern-1.png)
     center top repeat;
   color: #ffffff;
 }
@@ -4453,7 +4453,7 @@ img.lazy-image.loaded {
 .we-do-section {
   position: relative;
   padding: 240px 0px 90px;
-  background: #ffffff url(../assets/images/background/pattern-2.png) left top
+  background: #ffffff url(/assets/images/background/pattern-2.png) left top
     repeat;
 }
 
@@ -5197,7 +5197,7 @@ img.lazy-image.loaded {
   bottom: -39px;
   width: 50px;
   height: 40px;
-  background: url(../assets/images/icons/curve-down-left.png) left top no-repeat;
+  background: url(/assets/images/icons/curve-down-left.png) left top no-repeat;
 }
 
 .trusted-section .features {
@@ -5518,7 +5518,7 @@ img.lazy-image.loaded {
 }
 
 .team-three__about-two {
-  background-image: url(../assets/images/background/pattern-2.png);
+  background-image: url(/assets/images/background/pattern-2.png);
 }
 
 .team-card-three {
@@ -5927,7 +5927,7 @@ img.lazy-image.loaded {
 .agency-section {
   position: relative;
   padding: 120px 0px 80px;
-  background: #ffffff url(../assets/images/background/pattern-2.png) left top
+  background: #ffffff url(/assets/images/background/pattern-2.png) left top
     repeat;
 }
 
@@ -6173,7 +6173,7 @@ img.lazy-image.loaded {
 }
 
 .news-section.alt-bg {
-  background: #ffffff url(../assets/images/background/pattern-2.png) left top
+  background: #ffffff url(/assets/images/background/pattern-2.png) left top
     repeat;
 }
 
@@ -7598,7 +7598,7 @@ img.lazy-image.loaded {
 .featured-section {
   position: relative;
   padding: 200px 0px 90px;
-  /* background: #ffffff url(../assets/images/background/pattern-2.png) left top
+  /* background: #ffffff url(/assets/images/background/pattern-2.png) left top
     repeat; */
   background-color: #c3ead8;
   max-height: 886px;
@@ -7733,7 +7733,7 @@ img.lazy-image.loaded {
 
 .gallery-section-two.alternate {
   position: relative;
-  background: #ffffff url(../assets/images/background/pattern-2.png) right top
+  background: #ffffff url(/assets/images/background/pattern-2.png) right top
     repeat;
   padding-bottom: 90px;
 }
@@ -7988,7 +7988,7 @@ img.lazy-image.loaded {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(../assets/images/icons/shape-1.png) left top no-repeat;
+  background: url(/assets/images/icons/shape-1.png) left top no-repeat;
   z-index: 1;
 }
 
@@ -8389,7 +8389,7 @@ img.lazy-image.loaded {
   content: "";
   width: 78px;
   height: 20px;
-  background-image: url(../assets/images/update-1-12-2020/shapes/testi-arrow-hover.png);
+  background-image: url(/assets/images/update-1-12-2020/shapes/testi-arrow-hover.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -8402,7 +8402,7 @@ img.lazy-image.loaded {
 }
 
 .testi-block-three__single:hover .testi-block-three__top::after {
-  background-image: url(../assets/images/update-1-12-2020/shapes/testi-arrow.png);
+  background-image: url(/assets/images/update-1-12-2020/shapes/testi-arrow.png);
 }
 
 .testi-block-three__single h3 {
@@ -9620,7 +9620,7 @@ img.lazy-image.loaded {
 
 .call-to-section-two.alternate {
   background: var(--thm-base);
-  background-image: url(../assets/images/background/cta-2-bg-1-1.png);
+  background-image: url(/assets/images/background/cta-2-bg-1-1.png);
 }
 
 .call-to-section-two .inner {
@@ -9726,7 +9726,7 @@ img.lazy-image.loaded {
   position: relative;
   padding: 120px 0px 90px;
   background-color: var(--thm-black);
-  background-image: url(../assets/images/background/contact-bg-1-1.png);
+  background-image: url(/assets/images/background/contact-bg-1-1.png);
   background-size: cover;
   color: #999b9f;
 }
@@ -10818,7 +10818,7 @@ img.lazy-image.loaded {
   position: relative;
   padding: 120px 0px 210px;
   background-color: var(--thm-black);
-  background-image: url(../assets/images/background/contact-bg-1-1.png);
+  background-image: url(/assets/images/background/contact-bg-1-1.png);
   background-size: cover;
   color: #999b9f;
 }
@@ -11128,7 +11128,7 @@ img.lazy-image.loaded {
   width: 250px;
   max-width: 100%;
   height: 100%;
-  background: url(../assets/images/background/b-shape-1.png) right bottom
+  background: url(/assets/images/background/b-shape-1.png) right bottom
     no-repeat;
   z-index: 1;
 }
@@ -11140,7 +11140,7 @@ img.lazy-image.loaded {
   width: 250px;
   max-width: 100%;
   height: 100%;
-  background: url(../assets/images/background/b-shape-2.png) right top no-repeat;
+  background: url(/assets/images/background/b-shape-2.png) right top no-repeat;
   z-index: 1;
 }
 
@@ -13421,7 +13421,7 @@ img.lazy-image.loaded {
 .body-dark .faqs-section,
 .body-dark .we-do-section {
   background-color: #222429;
-  background-image: url(../assets/images/background/we-do-section-bg-dark.jpg);
+  background-image: url(/assets/images/background/we-do-section-bg-dark.jpg);
 }
 
 .body-dark .we-do-section .progress-box .bar {
@@ -13496,7 +13496,7 @@ img.lazy-image.loaded {
 /* agency section dark */
 .body-dark .agency-section {
   background-color: #222429;
-  background-image: url(../assets/images/background/we-do-section-bg-dark.jpg);
+  background-image: url(/assets/images/background/we-do-section-bg-dark.jpg);
 }
 
 .body-dark .agency-section .default-tabs .tab-buttons .tab-btn span {
@@ -14300,7 +14300,7 @@ img.lazy-image.loaded {
 .portfolio-horizontal__carousel .tns-controls .icon {
   width: 41px;
   height: 59px;
-  background-image: url(../assets/images/update-26-02-2021/shapes/portfolio-horizontal-arrow.png);
+  background-image: url(/assets/images/update-26-02-2021/shapes/portfolio-horizontal-arrow.png);
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
@@ -14502,7 +14502,7 @@ img.lazy-image.loaded {
   padding-top: 265px;
   padding-bottom: 170px;
   background-color: #1c1e22;
-  background-image: url(../assets/images/background/home-portfolio-bg-1-1.png);
+  background-image: url(/assets/images/background/home-portfolio-bg-1-1.png);
 }
 
 .demo-top .auto-container {
@@ -15697,7 +15697,7 @@ img.lazy-image.loaded {
   padding-bottom: 60px;
   padding-top: 100px;
   background-color: #ffe55b;
-  background-image: url(../assets/images/background/fees_bg.png);
+  background-image: url(/assets/images/background/fees_bg.png);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -16101,7 +16101,7 @@ h2.curve-right:after {
   display: block;
   margin-left: auto;
   margin-right: 0;
-  background-image: url(../assets/images/icons/curve.png);
+  background-image: url(/assets/images/icons/curve.png);
   width: 192px;
   padding-top: 22px;
   height: 40px;
@@ -16866,7 +16866,7 @@ h2.curve-right:after {
 .how-it-works {
   padding-top: 90px;
   padding-bottom: 60px;
-  background-image: url(../assets/images/background/wave-line.png);
+  background-image: url(/assets/images/background/wave-line.png);
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -19481,7 +19481,7 @@ h2.curve-right:after {
 /* Footer seven */
 .footer-seven {
   background-color: var(--thm-black);
-  background-image: url(../assets/images/update-01-10-2021/shapes/footer-bg-1-1.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/footer-bg-1-1.png);
   background-position: center center;
   padding-top: 100px;
   padding-bottom: 60px;
@@ -20091,7 +20091,7 @@ h2.curve-right:after {
   background-color: #ff9a61;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(../assets/images/update-01-10-2021/shapes/subscribe-two-bg-1-1.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/subscribe-two-bg-1-1.png);
   background-repeat: no-repeat;
   background-position: top right;
   position: relative;
@@ -20110,7 +20110,7 @@ h2.curve-right:after {
   left: 150px;
   width: 154px;
   height: 92px;
-  background-image: url(../assets/images/update-01-10-2021/shapes/subscribe-two-shape-1.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/subscribe-two-shape-1.png);
   background-repeat: no-repeat;
 }
 
@@ -20687,7 +20687,7 @@ h2.curve-right:after {
 /* Pricing two */
 .pricing-two {
   background-color: #f8f4f0;
-  background-image: url(../assets/images/update-01-10-2021/shapes/pricing-2-bg-1-1.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/pricing-2-bg-1-1.png);
   background-position: center center;
   padding-top: 100px;
   padding-bottom: 70px;
@@ -21813,7 +21813,7 @@ h2.curve-right:after {
 }
 
 .slider-seven__shape-1 {
-  background-image: url(../assets/images/update-01-10-2021/shapes/slide-seven-shape-1-1.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/slide-seven-shape-1-1.png);
   background-repeat: no-repeat;
   width: 326px;
   height: 419px;
@@ -21823,7 +21823,7 @@ h2.curve-right:after {
 }
 
 .slider-seven__shape-2 {
-  background-image: url(../assets/images/update-01-10-2021/shapes/slide-seven-shape-1-2.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/slide-seven-shape-1-2.png);
   background-repeat: no-repeat;
   width: 36px;
   height: 36px;
@@ -21843,7 +21843,7 @@ h2.curve-right:after {
 }
 
 .slider-seven__shape-3 {
-  background-image: url(../assets/images/update-01-10-2021/shapes/slide-seven-shape-1-3.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/slide-seven-shape-1-3.png);
   background-repeat: no-repeat;
   width: 19px;
   height: 16px;
@@ -21863,7 +21863,7 @@ h2.curve-right:after {
 }
 
 .slider-seven__shape-4 {
-  background-image: url(../assets/images/update-01-10-2021/shapes/slide-seven-shape-1-4.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/slide-seven-shape-1-4.png);
   background-repeat: no-repeat;
   width: 35px;
   height: 32px;
@@ -21883,7 +21883,7 @@ h2.curve-right:after {
 }
 
 .slider-seven__shape-5 {
-  background-image: url(../assets/images/update-01-10-2021/shapes/slide-seven-shape-1-5.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/slide-seven-shape-1-5.png);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -22306,7 +22306,7 @@ h2.curve-right:after {
 /* testimonials eight */
 .testimonials-eight {
   background-color: #eef0f6;
-  background-image: url(../assets/images/update-01-10-2021/shapes/testi-8-bg-1-1.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/testi-8-bg-1-1.png);
   background-repeat: repeat;
   background-position: center;
   padding-top: 96px;
@@ -22735,7 +22735,7 @@ h2.curve-right:after {
   padding-top: 100px;
   padding-bottom: 70px;
   background-color: #eef0f6;
-  background-image: url(../assets/images/update-01-10-2021/shapes/testi-8-bg-1-1.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/testi-8-bg-1-1.png);
   background-repeat: repeat;
   background-position: center;
   counter-reset: serviceNumber;
@@ -23550,7 +23550,7 @@ h2.curve-right:after {
   content: "";
   width: 15px;
   height: 8px;
-  background-image: url(../assets/images/update-01-10-2021/shapes/menu-arrow.png);
+  background-image: url(/assets/images/update-01-10-2021/shapes/menu-arrow.png);
   background-repeat: no-repeat;
   background-position: top center;
   position: absolute;
@@ -24538,7 +24538,7 @@ p.para-text {
 h2.with-curve:after {
   content: "";
   display: block;
-  background-image: url(../assets/images/icons/curve.png);
+  background-image: url(/assets/images/icons/curve.png);
   width: 200px;
   padding-top: 22px;
   height: 40px;
@@ -24553,7 +24553,7 @@ h2.with-curve-center:after {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url(../assets/images/icons/curve.png);
+  background-image: url(/assets/images/icons/curve.png);
   width: 200px;
   padding-top: 22px;
   height: 40px;
@@ -24672,7 +24672,7 @@ p.highlight {
 }
 
 .about-me-bg {
-  background-image: url(../assets/images/background/marko-bg.png);
+  background-image: url(/assets/images/background/marko-bg.png);
   background-position: right bottom;
   background-size: 75%;
   background-repeat: no-repeat;
@@ -24680,7 +24680,7 @@ p.highlight {
 }
 
 .about-us-wave {
-  background-image: url(../assets/images/background/about-us-wave.png);
+  background-image: url(/assets/images/background/about-us-wave.png);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -24689,7 +24689,7 @@ p.highlight {
 }
 
 .about-us-bg {
-  background-image: url(../assets/images/background/about-us-bg.png);
+  background-image: url(/assets/images/background/about-us-bg.png);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -24699,7 +24699,7 @@ p.highlight {
 }
 
 .all-course-bg {
-  background-image: url(../assets/images/background/bg-all-course.png);
+  background-image: url(/assets/images/background/bg-all-course.png);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -24708,7 +24708,7 @@ p.highlight {
 }
 
 .all-course-wave {
-  background-image: url(../assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.png);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -24736,7 +24736,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #c3ead8 !important;
-  background-image: url(../assets/images/background/our-mission.png);
+  background-image: url(/assets/images/background/our-mission.png);
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -24751,7 +24751,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #ffe55b !important;
-  background-image: url(../assets/images/background/our-vision-bg.png);
+  background-image: url(/assets/images/background/our-vision-bg.png);
   background-size: 34%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -24761,7 +24761,7 @@ p.highlight {
 
 .features-section-two {
   background-color: #c3ead8 !important;
-  background-image: url(../assets/images/background/contact-wave.png);
+  background-image: url(/assets/images/background/contact-wave.png);
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
