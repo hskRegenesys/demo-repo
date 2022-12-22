@@ -2,7 +2,6 @@
 export const courseBenefits = {
   title: "Benefits",
   desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
-  imagebg:' "/assets/images/background/career-support.png"',
   tabBtns: [
     {
       id: "tab-1",
