@@ -1,14 +1,14 @@
-import icon from "@/images/icons/close-1-1.png";
-import logo4 from "@/images/logo-2.png";
-import logo3 from "@/images/logo-3.png";
-import logo2 from "@/images/logo-dark.png";
-import logo1 from "@/images/logo.png";
-import logo6 from "@/images/update-01-10-2021/logo-6-dark.png";
-import logo7 from "@/images/update-01-10-2021/logo-7-dark.png";
-import logo8 from "@/images/update-01-10-2021/logo-8-light.png";
-import logo5 from "@/images/update-09-06-2021/logo-5.png";
-import logo10 from "@/images/update-09-06-2021/logo-6.png";
-import logo9 from "@/images/update-26-02-2021/logo-horizontal-portfolio.png";
+import icon from "src/assets/images/icons/close-1-1.png";
+import logo4 from "src/assets/images/logo-2.png";
+import logo3 from "src/assets/images/logo-3.png";
+import logo2 from "src/assets/images/logo-dark.png";
+import logo1 from "src/assets/images/logo.png";
+import logo6 from "src/assets/images/update-01-10-2021/logo-6-dark.png";
+import logo7 from "src/assets/images/update-01-10-2021/logo-7-dark.png";
+import logo8 from "src/assets/images/update-01-10-2021/logo-8-light.png";
+import logo5 from "src/assets/images/update-09-06-2021/logo-5.png";
+import logo10 from "src/assets/images/update-09-06-2021/logo-6.png";
+import logo9 from "src/assets/images/update-26-02-2021/logo-horizontal-portfolio.png";
 
 const home = {
   id: 1,

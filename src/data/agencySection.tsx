@@ -1,4 +1,4 @@
-import image from "@/images/resource/featured-image-6.jpg";
+import image from "src/assets/images/resource/featured-image-6.jpg";
 
 const agencySection = {
   image,

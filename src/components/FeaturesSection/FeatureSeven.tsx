@@ -27,7 +27,7 @@ const FeatureSeven = () => {
                   <div className="feature-seven-card__image">
                     <Image
                       src={
-                        require(`@/images/faculties/${image}`)
+                        require(`src/assets/images/faculties/${image}`)
                           .default.src
                       }
                       alt=""

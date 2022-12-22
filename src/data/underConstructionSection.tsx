@@ -1,5 +1,5 @@
-import logo from "@/images/logo-dark.png";
-import bg from "@/images/update-01-10-2021/background/under-construction-bg-1-1.png";
+import logo from "src/assets/images/logo-dark.png";
+import bg from "src/assets/images/update-01-10-2021/background/under-construction-bg-1-1.png";
 
 export const underConstructionSection = {
   bg,

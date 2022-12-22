@@ -1,4 +1,4 @@
-import bg from "@/images/main-slider/banner-bg-shape-3.png";
+import bg from "src/assets/images/main-slider/banner-bg-shape-3.png";
 
 export const bannerTwo = [
   {

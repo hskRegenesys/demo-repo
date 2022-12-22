@@ -1,4 +1,4 @@
-import image from "@/images/update-09-06-2021/events/event-d-1.jpg";
+import image from "src/assets/images/update-09-06-2021/events/event-d-1.jpg";
 
 export const eventsOne = [
   {

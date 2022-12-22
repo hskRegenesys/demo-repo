@@ -66,7 +66,7 @@ const StudentPlacement = ({ className = "" }) => {
                     <a href="#">
                       <Image
                         src={
-                          require(`@/images/clients/${
+                          require(`src/assets/images/clients/${
                             className.includes("dark") ? "dark-1.png" : image
                           }`).default.src
                         }
