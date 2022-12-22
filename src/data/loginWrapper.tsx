@@ -1,9 +1,7 @@
-import logo from "/src/assets/images/logo-dark.png";
-import bg from "/src/assets/images/update-1-12-2020/background/login-bg.jpg";
 
 export const loginWrapper = {
-  bg,
-  logo,
+  bg:"/assets/images/update-1-12-2020/background/login-bg.jpg",
+  logo: "/assets/images/logo-dark.png",
   logoTitle: "Linoor - DIgital Agency NextJS Template",
   year: new Date().getFullYear(),
   author: "Linoor",

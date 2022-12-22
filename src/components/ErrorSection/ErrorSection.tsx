@@ -18,7 +18,7 @@ const ErrorSection = () => {
         <div className="content">
           <div className="big-text">
             <Image
-              src={image.src}
+              src={image}
               id="error-404"
               className="img-fluid"
               alt=""

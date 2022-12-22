@@ -46,7 +46,7 @@ const SponsorsSectionThree = () => {
           <div className="swiper-wrapper">
             {sponsorsSectionThree.map((image, i) => (
               <SwiperSlide key={i}>
-                <Image src={image.src} alt="" />
+                <Image src={image} alt="" />
               </SwiperSlide>
             ))}
           </div>

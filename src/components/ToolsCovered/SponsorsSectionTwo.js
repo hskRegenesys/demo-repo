@@ -32,7 +32,7 @@ const SponsorsSectionTwo = () => {
                 >
                   <div className="image-box">
                     <a href="#">
-                      <Image src={image.src} alt="" />
+                      <Image src={image} alt="" />
                     </a>
                   </div>
                 </Col>

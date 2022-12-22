@@ -34,7 +34,7 @@ const HeaderOne = ({
   const contextRoots:any = useRootContext();
   const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : navItems;
-  let Logo =
+  let Logo:any =
     logo === 2
       ? logo2
       : logo === 3
@@ -90,7 +90,7 @@ const HeaderOne = ({
                   <a title={title}>
                     <Image
                       id="thm-logo"
-                      src={Logo.src}
+                      src={Logo}
                       alt={title}
                       title={title}
                     />

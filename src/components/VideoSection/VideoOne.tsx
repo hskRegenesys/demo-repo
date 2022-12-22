@@ -14,7 +14,7 @@ const VideoOne = () => {
         <div className="auto-container">
           <div className="video-one__image">
             <Image
-              src={image.src}
+              src={image}
               alt="Linoor is trusted by millions of customers"
             />
             <div className="vid-link">

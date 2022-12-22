@@ -46,7 +46,7 @@ const SponsorEight = () => {
           <div className="swiper-wrapper">
             {sponsorEight.map((image, i) => (
               <SwiperSlide key={i}>
-                <Image src={image.src} alt="" />
+                <Image src={image} alt="" />
               </SwiperSlide>
             ))}
           </div>

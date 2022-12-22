@@ -59,11 +59,9 @@ const ToolsCovered = ({ className = "tools-covered" }) => {
                 >
                   <figure className="image-box">
                     <Image
-                      src={
-                        require(`/src/assets/images/clients/${
-                          className.includes("dark") ? "dark-1.png" : image
-                        }`).default.src
-                      }
+                      src={`/assets/images/clients/${
+                        className.includes("dark") ? "dark-1.png" : image
+                      }`}
                       alt=""
                     />
                   </figure>

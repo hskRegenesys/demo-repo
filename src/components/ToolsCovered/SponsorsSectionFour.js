@@ -16,10 +16,7 @@ const SponsorsSectionFour = () => {
               <div className="image-box">
                 <a href="#">
                   <Image
-                    src={
-                      require(`/src/assets/images/update-09-06-2021/brand/${image}`)
-                        .default.src
-                    }
+                    src={`/assets/images/update-09-06-2021/brand/${image}`}
                     alt=""
                   />
                 </a>

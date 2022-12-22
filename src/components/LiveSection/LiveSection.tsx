@@ -22,7 +22,7 @@ const LiveSection = ({ className = "" }) => {
           <div className="main-image-box">
             <div
               className="image-layer"
-              style={{ backgroundImage: `url(${bg.src})` }}
+              style={{ backgroundImage: `url(${bg})` }}
             ></div>
             <div className="inner clearfix">
               <div className="animated fadeInUp round-box">

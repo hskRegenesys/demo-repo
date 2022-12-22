@@ -1,13 +1,12 @@
-import counterImage from "/src/assets/images/resource/featured-image-10.jpg";
-import featuredImage from "/src/assets/images/resource/featured-image-9.jpg";
+
 
 const getQuote = {
-  featuredImage,
+  featuredImage:"/assets/images/resource/featured-image-9.jpg",
   featuredTitle: "our Values & Strategy",
   text: "Lorem Ipsum is simply proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem is simply free text quis bibendum.",
   count: 345600,
   counterTitle: "projects was completed successfully",
-  counterImage,
+  counterImage:"/assets/images/resource/featured-image-10.jpg",
   formTitle: "Get a free quote ",
   inputs: [
     {

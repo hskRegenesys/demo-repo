@@ -1,13 +1,8 @@
-import falgsa from "/src/assets/images/icons/sa_flag.png";
-import flagnig from "/src/assets/images/icons/flag_nigeria.png";
-import flagus from "/src/assets/images/icons/us_flag.png";
-import flagind from "/src/assets/images/icons/india_flag.png";
-
 export const productDetails = {
-  falgsa,
-  flagnig,
-  flagind,
-  flagus,
+  falgsa: "/assets/images/icons/sa_flag.png",
+  flagnig: "/assets/images/icons/flag_nigeria.png",
+  flagus: "/assets/images/icons/us_flag.png",
+  flagind: "/assets/images/icons/india_flag.png",
   title: "Fees structure & Certfication",
   subTitle: "Get Certified",
   price: 64499,
@@ -20,7 +15,7 @@ export const productDetails = {
     "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
   certifiedTitle3: "Benefits",
   certifiedText3:
-    "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+    "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
   admissionText:
     "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
   termsConditions: "*Terms & Conditions",

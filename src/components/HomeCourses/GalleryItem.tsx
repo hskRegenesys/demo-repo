@@ -16,7 +16,7 @@ const GalleryItem = (props:any) => {
       <div className="inner-box">
         <figure className="image">
           <Image
-            src={require(`/src/assets/images/gallery/${image}`).default.src}
+            src={`/assets/images/gallery/${image}`}
             alt=""
           />
         </figure>

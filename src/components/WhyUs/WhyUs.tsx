@@ -17,7 +17,7 @@ const WhyUs = () => {
               <div className="inner animated fadeInLeft">
                 <div className="round-box">
                   <div className="image-box">
-                    <Image src={image.src} alt="" />
+                    <Image src={image} alt="" />
                   </div>
                   <div className="vid-link">
                     <a onClick={() => setOpen(true)} className="lightbox-image">

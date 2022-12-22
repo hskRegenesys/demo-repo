@@ -65,10 +65,9 @@ const StudentPlacement = ({ className = "" }) => {
                   <figure className="image-box">
                     <a href="#">
                       <Image
-                        src={
-                          require(`/src/assets/images/clients/${
+                        src={`/assets/images/clients/${
                             className.includes("dark") ? "dark-1.png" : image
-                          }`).default.src
+                          }`
                         }
                         alt=""
                       />

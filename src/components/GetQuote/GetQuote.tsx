@@ -48,7 +48,7 @@ const GetQuote = () => {
             <div className="inner">
               <div className="featured-block clearfix">
                 <div className="image">
-                  <Image src={featuredImage.src} alt="" />
+                  <Image src={featuredImage} alt="" />
                 </div>
                 <h4>{featuredTitle}</h4>
                 <div className="text">{text}</div>
@@ -64,7 +64,7 @@ const GetQuote = () => {
                     <div className="counter-title">{counterTitle}</div>
                   </div>
                   <div className="counter-image">
-                    <Image src={counterImage.src} alt="" />
+                    <Image src={counterImage} alt="" />
                   </div>
                 </div>
               </div>

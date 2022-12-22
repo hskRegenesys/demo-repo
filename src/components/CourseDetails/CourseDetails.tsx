@@ -44,8 +44,7 @@ const ProcessOne = () => {
             <Col md={5} className="process-one__image__column">
               <div className="process-one__image animated fadeInLeft">
                 <Image
-                  src={
-                    require(`/src/assets/images/update-01-10-2021/${image}`).default.src
+                  src={`/assets/images/update-01-10-2021/${image}`
                   }
                   alt=""
                 />

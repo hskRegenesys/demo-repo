@@ -14,8 +14,7 @@ const FluidSection = () => {
                 <div
                   className="image-layer"
                   style={{
-                    backgroundImage: `url(${
-                      require(`/src/assets/images/background/${bg}`).default.src
+                    backgroundImage: `url(${`/assets/images/background/${bg}`
                     })`,
                   }}
                 ></div>

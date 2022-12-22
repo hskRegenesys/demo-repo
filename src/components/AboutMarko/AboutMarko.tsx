@@ -34,7 +34,7 @@ const AboutMarko = () => {
 
             <Col md={12} lg={6}>
               <div className="about-me-one__image">
-                <Image src={image.src} alt="" />
+                <Image src={image} alt="" />
               </div>
             </Col>
           </Row>

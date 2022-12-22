@@ -1,7 +1,7 @@
-import image from "/src/assets/images/resource/banner-bg.png";
+
 
 const featuredSection = {
-  image,
+  image:"/assets/images/resource/banner-bg.png",
   title: "Upgrade Your Career with Digital Regenesys",
   text: "We are committed to providing our customers with exceptional service while offering our employees the best training. There are many variations of passages of lorem ipsum is simply free text available in the market, but the majority have suffered time.",
   features: [

@@ -2,8 +2,8 @@ import Link from "next/link";
 import React, { forwardRef } from "react";
 import TextSplit from "../Reuseable/TextSplit";
 
-const SlideItem = (props:{key:any, slide:any, ref:any}) => {
-  const {key, slide, ref} = props;
+const SlideItem = (props: { key: any; slide: any; ref: any }) => {
+  const { key, slide, ref } = props;
   const { bg, subtitle, title } = slide;
 
   return (
@@ -11,9 +11,7 @@ const SlideItem = (props:{key:any, slide:any, ref:any}) => {
       <div
         className="image-layer"
         style={{
-          backgroundImage: `url(${
-            require(`/src/assets/images/main-slider/${bg}`).default.src
-          })`,
+          backgroundImage: `url(${`/assets/images/main-slider/${bg}`})`,
         }}
       ></div>
       {Array.from(Array(6)).map((_, i) => (

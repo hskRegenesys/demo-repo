@@ -1,7 +1,6 @@
-import image from "/src/assets/images/resource/featured-image-8.jpg";
 
 const whyUs = {
-  image,
+  image:"/assets/images/resource/featured-image-8.jpg",
   videoId: "Get7rqXYrbQ",
   title: "See Why you should choose linoor",
   features: [
