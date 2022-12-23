@@ -1,62 +1,26 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
-import trendingSection from "@/data/trendingSection";
-import useActive from "@/hooks/useActive";
-import dynamic from "next/dynamic";
+import { digitalMarketingMain } from "@/data/course";
+import React, { useState, useEffect } from "react";
+import { Col, Row, Image } from "react-bootstrap";
 import Link from "next/link";
 import { courseService } from "src/services";
 import _ from "lodash";
-import { Image } from "react-bootstrap";
-const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
-  ssr: false,
-});
 
-const settings = {
-  container: ".my-slider",
-  items: 3,
-  slideBy: "page",
-  autoplay: true,
-  loop: true,
-  gutter: 30,
-  nav: false,
-  controls: false,
-  autoplayButtonOutput: false,
-  mouseDrag: true,
-};
-
-const { title, details, description } = trendingSection;
-
-const TrendingSection = () => {
-  const [courseData, setcourseData] = useState([]);
+const SubCourseDetails = ({ page }: any) => {
+  const [subCourse, setSubCourse] = useState<any>([]);
   const getData = async () => {
-    let courseListResponse = await courseService.allParentCourses();
-    setcourseData(courseListResponse);
+    let courseListResponse = await courseService.allCourses();
+     if (page === "Data-Science") {
+      const subCourse = _.filter(courseListResponse, (item) => item.parent_id === 10);
+      setSubCourse(subCourse);
+    } else {
+      const subCourse = _.filter(courseListResponse, (item) => item.parent_id === 24);
+      setSubCourse(subCourse);
+    }
   };
 
   useEffect(() => {
     getData();
-  }, []);
-
-  let courses: any = [];
-  let CourseCard: any = [];
-
-  if (courseData?.length) {
-    courses = _.filter(
-      courseData,
-      (item: any) =>
-        item?.parent_id === null &&
-        item?.isAddon === false &&
-        item?.mode_id === 1
-    );
-  }
-  if (courseData?.length) {
-    courseData?.forEach(function (val: any) {
-      if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
-        CourseCard.push(val);
-      }
-    });
-  }
-  const listRef = useRef(null);
-  const ref = useActive("#testimonials");
+  }, [page]);
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
@@ -65,24 +29,22 @@ const TrendingSection = () => {
     );
   }
   return (
-    <section ref={ref} className="testimonials-section" id="testimonials">
-      <div className="auto-container">
-        <div className="sec-title text-center">
-          <h2>{title}</h2>
-          <h6 className="desc">{description}</h6>
-        </div>
-
-        <div className="carousel-box">
-          <div className="testimonials-carousel">
-            <TinySlider
-              options={{
-                ...settings,
-              }}
-              ref={listRef}
-            >
-              {CourseCard?.map(
+    <>
+      <section className="all-course-filter">
+        <div className="auto-container">
+          <Row>
+            <Col sm={6} md={12} lg={12}>
+              <Row>
+                      {subCourse?.map(
                 ({ id, name, courseMode, batches, code }: any) => (
-                  <div ref={listRef} className="gallery-item" key={id}>
+                            <Col
+                    key={id}
+                    sm={12}
+                    md={3}
+                    lg={4}
+                    className="animated fadeInLeft testi-block"
+                  >
+                  <div className="gallery-item" key={id}>
                     <div className="inner-box">
                       {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
@@ -134,14 +96,16 @@ const TrendingSection = () => {
                       </div>
                     </div>
                   </div>
+                  </Col>
                 )
               )}
-            </TinySlider>
-          </div>
+              </Row>
+            </Col>
+          </Row>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-export default TrendingSection;
+export default SubCourseDetails;

@@ -42,3 +42,12 @@ export const digitalMarketingText = {
   pagedesc: "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advance and applied. Learn these aspects of Digital Marketing and its real-world use case.",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
+
+
+export const dataScienceCourse = {
+  title: "Data Science",
+  pagedesc: "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advance and applied. Learn these aspects of Digital Marketing and its real-world use case.",
+  imagearrow: "/assets/images/background/sign-arrow.png",
+};
+
+

@@ -6,23 +6,28 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import DigitalMarketingText from "@/components/courses/coursesText";
+import CourseText from "@/components/courses/coursesText";
 import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
-import DigitalMarketingCourses from "@/components/courses/subcourseDetails";
+import SubCourseDetails from "@/components/courses/subcourseDetails";
+import { useRouter } from "next/router";
 
-const DigitalMarketingMain = () => {
+const Course = () => {
+  const router = useRouter();
   return (
-    <Layout pageTitle="Digital Marketing">
+    <Layout pageTitle={router?.query?.course}>
       <Style />
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Digital Marketing" page="Digital Marketing" />
-      <DigitalMarketingText />
-      <DigitalMarketingCourses />
+      <PageBanner
+        title={router?.query?.course?.toString()}
+        page={router?.query?.course?.toString()}
+      />
+      <CourseText page={router?.query?.course?.toString()} />
+      <SubCourseDetails page={router?.query?.course?.toString()} />
       <PartnerOne />
       <VideoOne />
       <PopularTopics />
@@ -32,4 +37,4 @@ const DigitalMarketingMain = () => {
   );
 };
 
-export default DigitalMarketingMain;
+export default Course;
