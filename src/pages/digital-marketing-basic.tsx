@@ -18,14 +18,14 @@ import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 import JoinReasons from "@/components/JoinReasons/JoinReasons";
 import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
 
-const DigitalMarketing = () => {
+const DigitalMarketingBasic = () => {
   return (
-    <Layout pageTitle="Digital Marketing">
+    <Layout pageTitle="Digital Marketing Basic">
       <Style />
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Digital Marketing" parent="All courses" parentHref="/shop" />      
+      <PageBanner title="Digital Marketing Basic" parent="Digital Marketing" parentHref="/digital-marketing-main" />      
       <CourseDetails />  
       <SkillDetailSection /> 
       <JoinReasons/>
@@ -42,4 +42,4 @@ const DigitalMarketing = () => {
   );
 };
 
-export default DigitalMarketing;
+export default DigitalMarketingBasic;

@@ -24875,3 +24875,21 @@ width: 100%;
   margin-right: 0;
 
 }
+
+.all-course-section .digital-marketing-text
+{
+  max-width: 90% !important;
+}
+
+.digital-marketing-text .sign-arrow
+{
+  position: absolute;
+  left: 0;
+  width: 115px;
+  top: -70px;
+  left: 600px;
+}
+.digital-marketing-text h6.desc
+{
+  line-height: 30px;
+}

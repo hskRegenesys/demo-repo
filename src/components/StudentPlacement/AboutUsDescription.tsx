@@ -8,7 +8,7 @@ const { pagedesc, imagearrow, text1, text2, highlight, title } = aboutUsDescript
 const AboutUsDescription = () => {
   return (
     <section className="sponsors-section-four about-us-wave">
-      <div className="auto-container ">
+      <div className="auto-container">
         <div className="content-box text-center">
           <h3>
           {title}
