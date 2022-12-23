@@ -9,20 +9,21 @@ import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import SocialMedia from "@/components/SocialMedia/SocialMedia";
-
+import LandingForm from "@/components/commonForm/AllForms";
 
 import React from "react";
 
 const Contact = () => {
   return (
-    <Layout pageTitle="Contact us"> 
+    <Layout pageTitle="Contact us">
       <Style />
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="Contact" />
-      <GetInTouch/>
-      <ContactSection form map  />  
+      <GetInTouch />
+      <LandingForm />
+      {/* <ContactSection form map /> */}
       <SocialMedia />
       <CallToSection />
       <MainFooter normalPadding={false} />
