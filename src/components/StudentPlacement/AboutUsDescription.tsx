@@ -3,16 +3,16 @@ import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import LiveSection from "@/components/LiveSection/LiveSection";
 
-const { pagedesc, imagearrow, text1, text2, highlight } = aboutUsDescriptionData;
+const { pagedesc, imagearrow, text1, text2, highlight, title } = aboutUsDescriptionData;
 
 const AboutUsDescription = () => {
   return (
     <section className="sponsors-section-four about-us-wave">
-      <div className="auto-container ">
+      <div className="auto-container">
         <div className="content-box text-center">
-          {/* <h3>
-            <TextSplit text={title} />
-          </h3> */}
+          <h3>
+          {title}
+          </h3>
           <h6 className="desc">{pagedesc}</h6>
         </div>
             <Col md={12} lg={12}>
