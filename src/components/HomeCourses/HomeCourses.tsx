@@ -35,7 +35,7 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }: any) => {
           <div className="tab-btns-box">
             <div className="tabs-header">
               <ul className="product-tab-btns clearfix text-start">
-                {parentCourse.map((item: any) => {
+                {parentCourse?.map((item: any) => {
                   const { id, name } = item;
                   return (
                     <li

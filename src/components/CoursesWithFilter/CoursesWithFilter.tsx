@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import GallerySectionOne from "@/components/HomeCourses/GallerySectionOne";
 
-const options = ["Sort by Price", "Sort by Date", "Sort by Ratings"].map(
+const options = ["Sort by Price", "Sort by Date", "Sort by Ratings"]?.map(
   (it) => ({
     value: it,
     label: it,
@@ -84,7 +84,7 @@ const CoursesWithFilter = () => {
               <div className="shop-category shop-sidebar__single">
                 <h3 className="shop-sidebar__title">Categories</h3>
                 <ul className="list-unstyled">
-                  {categories.map((category, i) => (
+                  {categories?.map((category, i) => (
                     <li key={i}>
                       <a href="#">{category}</a>
                     </li>

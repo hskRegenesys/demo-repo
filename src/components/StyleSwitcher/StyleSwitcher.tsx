@@ -10,7 +10,7 @@ const StyleSwitcher = () => {
       </a>
       <h3>Color Skins</h3>
       <ul id="styleOptions" title="Switch Color">
-        {Array.from(Array(6)).map((_, i) => (
+        {Array.from(Array(6))?.map((_, i) => (
           <li key={i}>
             <a
               href=""

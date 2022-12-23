@@ -14,7 +14,7 @@ const GallerySectionThree = () => {
           <h2>{title}</h2>
         </div>
         <Row>
-          {items.map(({ id, title, tagline, image }) => (
+          {items?.map(({ id, title, tagline, image }) => (
             <Col key={id} sm={12} md={6} lg={4}>
               <div className="gallery-item-three">
                 <Image

@@ -7,7 +7,7 @@ const ProcessOne = () => {
   return (
     <section className="process-one">
       <div className="FluidSection">
-        {processOne.map(({ id, image, title, text, lists }) => (
+        {processOne?.map(({ id, image, title, text, lists }) => (
           <Row key={id}>
             <Col md={7}>
               <div className="process-one__content">
@@ -31,7 +31,7 @@ const ProcessOne = () => {
                 </div>
 
                 <ul className="list-unstyled process-one__list">
-                  {lists.map((text, i) => (
+                  {lists?.map((text, i) => (
                     <li key={i}>
                       <i className="fa fa-check" aria-hidden="true"></i>
                       {text}

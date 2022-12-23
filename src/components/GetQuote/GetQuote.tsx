@@ -9,7 +9,7 @@ const options = [
   "Graphic Designing",
   "Digital Marketing",
   "App Development",
-].map((it) => ({
+]?.map((it) => ({
   value: it,
   label: it,
 }));
@@ -34,10 +34,10 @@ const GetQuote = () => {
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const data:any = {};
-    inputs?.forEach((item:any) => (data[item.name] = formData.get(item.name)));
-    console.log({ ...data, service });
+    // const formData = new FormData(e.target);
+    // const data:any = {};
+    // inputs?.forEach((item:any) => (data[item.name] = formData.get(item.name)));
+    // console.log({ ...data, service });
   };
 
   return (
@@ -79,7 +79,7 @@ const GetQuote = () => {
                     <span>.</span>
                   </h4>
                   <form onSubmit={handleSubmit}>
-                    {inputs.map(({ name, type, placeholder }) => (
+                    {inputs?.map(({ name, type, placeholder }) => (
                       <div key={name} className="form-group">
                         <div className="field-inner">
                           <input

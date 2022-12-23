@@ -13,7 +13,7 @@ const DigitalMarketingCourses = () => {
             <Col sm={6} md={12} lg={12}>
               <Row>
 
-                {digitalMarketingMain.map(({ id, name, tagline, image }) => (
+                {digitalMarketingMain?.map(({ id, name, tagline, image }) => (
                   <Col key={id} sm={12} md={3} lg={4} className="animated fadeInLeft testi-block">
                     <div className="inner">
                       <div className="icon">
@@ -35,7 +35,7 @@ const DigitalMarketingCourses = () => {
 
                         <div className="cat">
                           <ul className="about-seven__list list-unstyled">
-                            {tagline.map((list, i) => (
+                            {tagline?.map((list, i) => (
                               <li key={i}>{list}</li>
                             ))}
                           </ul>

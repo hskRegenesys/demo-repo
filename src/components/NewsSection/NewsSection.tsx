@@ -23,7 +23,7 @@ const NewsSection = ({ className = "", showTitle = true, isMore = false }) => {
         )}
 
         <Row className="clearfix">
-          {newsData.slice(0, showTitle ? 3 : undefined).map((news) => (
+          {newsData.slice(0, showTitle ? 3 : undefined)?.map((news) => (
             <SingleNews key={news.id} news={news} />
           ))}
         </Row>
