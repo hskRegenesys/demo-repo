@@ -36,7 +36,7 @@ const GetQuote = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data:any = {};
-    inputs.forEach((item:any) => (data[item.name] = formData.get(item.name)));
+    inputs?.forEach((item:any) => (data[item.name] = formData.get(item.name)));
     console.log({ ...data, service });
   };
 

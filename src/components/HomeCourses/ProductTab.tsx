@@ -34,7 +34,7 @@ const ProductTab = ({
   let id = current;
   const filterCourse = (id: number) => {
     let filterCourse: any = [];
-    courses.forEach((item: any) => {
+    courses?.forEach((item: any) => {
       if (item.id === id || item.parent_id === id) {
         filterCourse.push(item);
       }

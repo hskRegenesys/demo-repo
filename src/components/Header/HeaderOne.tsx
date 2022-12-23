@@ -65,7 +65,7 @@ const HeaderOne = ({
         item?.isAddon === false
     );
     const coursesSubItem: any = [];
-    filterData.forEach((item) => {
+    filterData?.forEach((item) => {
       coursesSubItem?.push({
         id: item?.id,
         name: item?.name,
@@ -154,7 +154,7 @@ const HeaderOne = ({
 
             {links && (
               <div className="other-links clearfix">
-                <div className="search-btn">
+                {/* <div className="search-btn">
                   <button
                     onClick={toggleSearch}
                     type="button"
@@ -163,10 +163,10 @@ const HeaderOne = ({
                     {" "}
                     <span className="flaticon-loupe"></span>
                   </button>
-                </div>
+                </div> */}
 
                 <div className="link-box">
-                  <Link href="/contact">
+                  <Link href="https://mydigital.regenesys.net/login/index.php">
                     <a className="theme-btn btn-style-two">
                       <i className="btn-curve"></i>
                       <span className="btn-title">Login</span>
