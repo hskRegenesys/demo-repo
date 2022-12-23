@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: false, // it should be false by default
+  experimental: {
+    newNextLinkBehavior: false,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
