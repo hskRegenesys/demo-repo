@@ -3,11 +3,11 @@ import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import Link from "next/link";
 
-const ProcessOne = () => {
+const ProcessOne = ({courseDetails}:any) => {
   return (
     <section className="process-one">
       <div className="FluidSection">
-        {processOne?.map(({ id, image, title, text, lists }) => (
+        {courseDetails?.processOne?.map(({ id, image, title, text, lists }:any) => (
           <Row key={id}>
             <Col md={7}>
               <div className="process-one__content">
@@ -31,7 +31,7 @@ const ProcessOne = () => {
                 </div>
 
                 <ul className="list-unstyled process-one__list">
-                  {lists?.map((text, i) => (
+                  {lists?.map((text:string, i:number) => (
                     <li key={i}>
                       <i className="fa fa-check" aria-hidden="true"></i>
                       {text}

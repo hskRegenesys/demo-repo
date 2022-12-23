@@ -39,10 +39,10 @@ const settings = {
   },
 };
 
-const ToolsCovered = ({ className = "tools-covered" }) => {
+const ToolsCovered = ({ courseDetails }) => {
   const listRef = useRef(null);
   return (
-    <section className={`sponsors-section ${className}`}>
+    <section className={`sponsors-section tools-covered`}>
       <h5>Tools Covered</h5>
       <div className="sponsors-outer">
         <div className="fluidSection">
@@ -51,19 +51,14 @@ const ToolsCovered = ({ className = "tools-covered" }) => {
               options={{ ...settings, container: `.my-slider-15` }}
               ref={listRef}
             >
-              {courseTools?.map((image, index) => (
+              {courseDetails?.courseTools?.map((image, index) => (
                 <div
                   ref={listRef}
                   key={index}
                   className="slide-item text-center"
                 >
                   <figure className="image-box">
-                    <Image
-                      src={`/assets/images/clients/${
-                        className.includes("dark") ? "dark-1.png" : image
-                      }`}
-                      alt=""
-                    />
+                    <Image src={`/assets/images/clients/${image}`} alt="" />
                   </figure>
                 </div>
               ))}

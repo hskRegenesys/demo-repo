@@ -1,4 +1,3 @@
-import { faqsSection } from "@/data/CourseCurriculum";
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
@@ -43,12 +42,12 @@ const Faqs = (props:any) => {
   );
 };
 
-const CourseCurriculum = () => {
+const CourseCurriculum = ({ courseDetails }: any) => {
   return (
     <section className="faqs-section curriculum">
       <div className="auto-container">
         <Row className="clearfix">
-          {faqsSection?.map((allFaqs) => (
+          {courseDetails?.faqsSection?.map((allFaqs:any) => (
             <Faqs key={allFaqs.id} allFaqs={allFaqs} />
           ))}
         </Row>

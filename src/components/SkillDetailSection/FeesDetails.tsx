@@ -24,7 +24,25 @@ const {
   termsConditions,
 } = productDetails;
 
-const ProductDetailsPage = ({ courseId }: any) => {
+const ProductDetailsPage = ({courseDetails, courseId }: any) => {
+  const {
+  falgsa,
+  flagnig,
+  flagind,
+  flagus,
+  title,
+  price,
+  certifiedText1,
+  certifiedText2,
+  certifiedText3,
+  subTitle,
+  certifiedTitle1,
+  certifiedTitle2,
+
+  certifiedTitle3,
+  admissionText,
+  termsConditions,
+} = courseDetails?.productDetails;
   const [coursePriceDetails, setcoursePrice] = useState([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
 
@@ -36,7 +54,6 @@ const ProductDetailsPage = ({ courseId }: any) => {
 
   useEffect(() => {
     if (coursePriceDetails?.length) {
-      console.log("in condition ======>", coursePriceDetails);
       CoursePriceChange(2);
     }
   }, [coursePriceDetails]);

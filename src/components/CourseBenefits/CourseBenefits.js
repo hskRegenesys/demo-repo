@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import SingleCourseBenefits from "./SingleCourseBenefits";
 import { Col, Image, Row } from "react-bootstrap";
 
-const { title, tabBtns, tabsContents, desc } = courseBenefits;
-
-const CourseBenefits = () => {
+const CourseBenefits = ({ courseDetails }) => {
+  const { title, tabBtns, tabsContents, desc } = courseDetails?.courseBenefits;
   const [current, setCurrent] = useState("tab-1");
 
   return (
