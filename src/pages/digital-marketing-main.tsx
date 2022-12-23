@@ -6,25 +6,25 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import AllCourseText from "@/components/StudentPlacement/AllCourseText";
+import DigitalMarketingText from "@/components/DigitalMarketingCourses/DigitalMarketingText";
 import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
-import AllCourseGallery from "@/components/AllCourseGallery/AllCourseGallery";
+import DigitalMarketingCourses from "@/components/DigitalMarketingCourses/DigitalMarketingCourses";
 
-const allCourse = () => {
+const DigitalMarketingMain = () => {
   return (
-    <Layout pageTitle="All courses">
+    <Layout pageTitle="Digital Marketing">
       <Style />
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Products" page="All courses" />
-      <AllCourseText />
-      <AllCourseGallery />
-      <PartnerOne />   
-      <VideoOne /> 
+      <PageBanner title="Digital Marketing" page="Digital Marketing" />
+      <DigitalMarketingText />
+      <DigitalMarketingCourses />
+      <PartnerOne />
+      <VideoOne />
       <PopularTopics />
       <CallToSection />
       <MainFooter />
@@ -32,4 +32,4 @@ const allCourse = () => {
   );
 };
 
-export default allCourse;
+export default DigitalMarketingMain;

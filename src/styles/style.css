@@ -1,73 +1,3 @@
-/* Linoor - DIgital Agency HTML Template  */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.	Fonts
-2.	Reset
-3.	Global Settings
-4.	Scroll To Top style
-5.	Main Header style / Header Style One
-6.	Sticky Header
-7.	Search Popup
-8.	Mobile Menu
-9.	Lazy Load Settings
-10.	Banner Section
-11.	Section Title
-12.	Services Section
-13.	About Section
-14.	Live Section
-15.	We DO Section
-16.	Gallery Section
-17.	Fun Facts Section
-18.	We DO Section
-19.	Team Section
-20.	Parallax Section
-21.	Sponsors Section
-22.	Agency Section
-23.	News Section
-24.	Call Section
-25.	Main Footer
-26.	Services Section
-27.	We DO Section
-28.	Gallery Section
-29.	Why Us Section
-30.	Testimonials Section
-31.	Parallax Section
-32.	We DO Section
-33.	Call Section
-34.	Call Section
-35.	Services Section
-36.	Discover Section
-37.	Parallax Section
-38.	We Work Section
-39.	Testimonials Section
-40.	We DO Section
-41.	Get Quote
-42.	Map Section
-43.	Sponsors Section
-44.	Page Banner
-45.	Faqs Section
-46.	Get Quote
-47.	Error Section
-48.	Contact Section
-49.	Sidebar Page Container
-50.	Comment Area
-51.	Leave Comments Form
-52.	Service Details
-53.	Service Details
---------------------------------------------------------------*/
-/*
-  font-family: 'Teko', sans-serif;
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Rubik', sans-serif;
-*/
-/***
-
-====================================================================
-2.	Reset
-====================================================================
-
- ***/
 * {
   margin: 0px;
   padding: 0px;
@@ -525,8 +455,7 @@ figure {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: white;
-  background-color: #1c1e22;
+  background: rgba(0, 0, 0,.5);
 }
 
 .preloader__gradient {
@@ -15387,13 +15316,12 @@ width: 25%;
 .shop-search form {
   border-radius: 8px;
   position: relative;
-  background-color: var(--thm-base);
 }
 
 .shop-search button[type="submit"] {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 15px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   color: var(--thm-black);
@@ -15412,14 +15340,16 @@ width: 25%;
 .shop-search form input[type="search"],
 .shop-search form input[type="text"] {
   width: 100%;
-  height: 70px;
-  background-color: var(--thm-base);
+  height: 60px;
+  background-color: transparent;
   border-radius: 8px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
   color: var(--thm-black);
-  font-family: var(--thm-b-font);
+  border: 2px solid #000;
+  border-radius: 18px;
+  font-family: 'Raleway-medium';
 }
 
 .shop-search form ::-webkit-input-placeholder {
@@ -15571,10 +15501,10 @@ width: 25%;
 
 .shop-sidebar__single {
   padding: 30px;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #000;
   margin-bottom: 30px;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .shop-sidebar__single.shop-search {
@@ -16882,7 +16812,8 @@ h2.curve-right:after {
 
 .how-it-works .FluidSection,
 .we-work-section .FluidSection,
-.service-block-three {
+.service-block-three,
+.all-course-filter .FluidSection{
   max-width: 1500px !important;
   margin: 0 auto;
 }
@@ -24864,4 +24795,109 @@ width: 100%;
 {
   transform: rotate(-180deg);
   color: var(--thm-black);
+}
+
+.all-course-filter
+{
+  background-color: #c3ead8;
+  padding: 50px 20px;
+}
+.all-course-filter h5{
+  font-size: 24px;
+  font-family: 'Raleway-semibold';
+}
+
+.all-course-filter h6{
+  font-size: 18px;
+  font-family: 'Raleway-semibold';
+}
+
+
+
+.shop-search button[type="submit"] i
+{
+  font-weight: bold;
+}
+
+
+.all-course-filter h6.border-bottom
+{
+  border-bottom: 1px solid #000 !important;
+  padding-bottom: 15px;
+}
+
+
+.all-course-filter .form-check-input
+{
+  background-color: transparent;
+  border: 2px solid #000;
+  margin-top: 8px;
+  float: left;
+  height: 18px;
+  width: 18px;
+}
+
+.all-course-filter .form-check-input:checked {
+  background-color: #000000 !important;
+}
+.all-course-filter label
+{
+  font-family: raleway-medium;
+  line-height: 28px;
+}
+
+.page-item .page-link
+{
+  border: 0 none;
+  background-color:transparent;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 24px; 
+  margin: 0 5px;  
+}
+
+.page-item.active .page-link{
+  font-family: Poppins-semiBold;
+  background-color:transparent;
+  color: #000;
+
+}
+
+.page-item:first-child .page-link, .page-item:last-child .page-link
+{
+  height: 36px;
+  width: 36px;
+  border-radius: 25px;
+  line-height: 20px;
+  background-color: #ffe55b;
+  font-family: Poppins-semiBold;
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 3px 3px 0 0 #1fa393;  
+  text-align: center;
+}
+
+.page-item:last-child .page-link
+{
+  margin-right: 0;
+
+}
+
+.all-course-section .digital-marketing-text
+{
+  max-width: 90% !important;
+}
+
+.digital-marketing-text .sign-arrow
+{
+  position: absolute;
+  left: 0;
+  width: 115px;
+  top: -70px;
+  left: 600px;
+}
+.digital-marketing-text h6.desc
+{
+  line-height: 30px;
 }
