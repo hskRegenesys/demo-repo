@@ -11,7 +11,7 @@ const SponsorsSectionFour = () => {
     <section className="sponsors-section-four">
       <div className="auto-container">
         <Row>
-          {sponsors.map((image, i) => (
+          {sponsors?.map((image, i) => (
             <Col key={i} md={6} lg={4}>
               <div className="image-box">
                 <a href="#">

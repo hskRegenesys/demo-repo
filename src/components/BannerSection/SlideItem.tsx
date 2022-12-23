@@ -14,7 +14,7 @@ const SlideItem = (props: { key: any; slide: any; ref: any }) => {
           backgroundImage: `url(${`/assets/images/main-slider/${bg}`})`,
         }}
       ></div>
-      {Array.from(Array(6)).map((_, i) => (
+      {Array.from(Array(6))?.map((_, i) => (
         <div key={i} className={`shape-${i + 1}`}></div>
       ))}
       <div className="auto-container">

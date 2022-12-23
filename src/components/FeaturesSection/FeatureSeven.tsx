@@ -20,7 +20,7 @@ const FeatureSeven = () => {
 
         </div>
         <Row className="justify-content-center">
-          {features.map(({ id, title, designation, text, image }) => (
+          {features?.map(({ id, title, designation, text, image }) => (
             <Col key={id} md={12} lg={4}>
               <div className="feature-seven-card">
                 <div className="feature-seven-card__inner">

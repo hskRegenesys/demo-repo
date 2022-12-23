@@ -51,7 +51,7 @@ const ToolsCovered = ({ className = "tools-covered" }) => {
               options={{ ...settings, container: `.my-slider-15` }}
               ref={listRef}
             >
-              {courseTools.map((image, index) => (
+              {courseTools?.map((image, index) => (
                 <div
                   ref={listRef}
                   key={index}

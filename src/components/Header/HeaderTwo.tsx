@@ -35,7 +35,7 @@ const HeaderTwo = ({ headerStyle = "mainmenu-six", header = 6 }) => {
               id="navbarSupportedContent"
             >
               <ul className="navigation clearfix">
-                {navItems.map((navItem) => (
+                {navItems?.map((navItem) => (
                   <NavItem navItem={navItem} key={navItem.id} />
                 ))}
               </ul>

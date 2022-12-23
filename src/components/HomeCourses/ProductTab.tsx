@@ -49,7 +49,7 @@ const ProductTab = ({
   return (
     <div className={`p-tab${current === id ? " active-tab" : ""}`}>
       <div className="project-carousel tabFullBox">
-        {filterCourses.map(({ id, name, courseMode, batches, code }: any) => (
+        {filterCourses?.map(({ id, name, courseMode, batches, code }: any) => (
           <div ref={listRef} className="gallery-item tab-item" key={id}>
             <div className="inner-box">
               {/* <div className="icon">
@@ -76,7 +76,7 @@ const ProductTab = ({
                     <ul className="about-seven__list list-unstyled">
                       <li>{courseMode.name}</li>
                       <li>
-                        {batches.map((item: any) => (
+                        {batches?.map((item: any) => (
                           <>
                             {getWeeksDiff(item.start_date, item.end_date)}
                             &nbsp;Week
@@ -87,7 +87,7 @@ const ProductTab = ({
                       <li>Capstone projects </li>
                     </ul>
                   </div>
-                  {batches.map((item: any) => (
+                  {batches?.map((item: any) => (
                     <div className="batch">{item.description}</div>
                   ))}
                 </div>

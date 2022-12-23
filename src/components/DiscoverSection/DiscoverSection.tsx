@@ -11,7 +11,7 @@ const DiscoverSection = ({ ShowTitle = true }) => {
     <section className="discover-section">
       <div className="auto-container">        
         <Row className="clearfix">
-          {discovers.map(({ id, image, title, buttonText, text }) => (
+          {discovers?.map(({ id, image, title, buttonText, text }) => (
             <Col key={id} lg={4} md={12} sm={12} className="discover-block">
               <div className="inner-box">
                 <div className="image-box">

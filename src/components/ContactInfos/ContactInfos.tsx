@@ -12,7 +12,7 @@ const ContactInfos = () => {
         <Row>
           <Col sm={12} md={6} lg={3}>
             <p>
-              {dayRanges.map((day, i) => (
+              {dayRanges?.map((day, i) => (
                 <Fragment key={i}>
                   {day} <br />
                 </Fragment>

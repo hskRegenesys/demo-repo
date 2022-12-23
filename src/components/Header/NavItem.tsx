@@ -56,7 +56,7 @@ const NavItem = (props:any) => {
   const contextRoot:any = useRootContext();
   const { menuStatus, toggleMenu, currentActive } = contextRoot;
   const { name, href, subNavItems = [] } = navItem;
-  const subHref = subNavItems.map((item:any) => item.href);
+  const subHref = subNavItems?.map((item:any) => item.href);
   const current = !onePage
     ? pathname === href || subHref.includes(pathname)
     : currentActive === href;
@@ -91,7 +91,7 @@ const NavItem = (props:any) => {
             display: !menuStatus || active ? "block" : "none",
           }}
         >
-          {subNavItems.map((subItem:any) => (
+          {subNavItems?.map((subItem:any) => (
             <SubItem key={subItem.id} subItem={subItem} />
           ))}
         </ul>

@@ -11,7 +11,7 @@ const Faqs = (props:any) => {
     <Col lg={12} md={12} sm={12} className="faq-block curri">
        <h3 className="with-curve-center text-center">Course curriculum</h3>
       <ul className="accordion-box clearfix">
-        {faqs.map((item:any) => {
+        {faqs?.map((item:any) => {
           let { id, title, text } = item;
           return(
           <li
@@ -48,7 +48,7 @@ const CourseCurriculum = () => {
     <section className="faqs-section curriculum">
       <div className="auto-container">
         <Row className="clearfix">
-          {faqsSection.map((allFaqs) => (
+          {faqsSection?.map((allFaqs) => (
             <Faqs key={allFaqs.id} allFaqs={allFaqs} />
           ))}
         </Row>

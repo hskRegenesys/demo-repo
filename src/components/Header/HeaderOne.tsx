@@ -72,7 +72,7 @@ const HeaderOne = ({
         href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
       });
     });
-    const data = navItems.map((item:any) => {
+    const data = navItems?.map((item:any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
       }
@@ -100,7 +100,7 @@ const HeaderOne = ({
                 <a href={`tel:${phone.split(" ").join("")}`}>{phone}</a>
               </div>
               <ul className="list-unstyled social-links">
-                {socials.map(({ id, icon, href }) => (
+                {socials?.map(({ id, icon, href }) => (
                   <li key={id}>
                     <a href={href}>
                       <span className={icon}></span>
@@ -140,7 +140,7 @@ const HeaderOne = ({
                   id={autoContainer ? "" : "navbarSupportedContent"}
                 >
                   <ul className="navigation clearfix">
-                    {newNavItems.map((navItem: any) => (
+                    {newNavItems?.map((navItem: any) => (
                       <NavItem
                         navItem={navItem}
                         key={navItem.id}

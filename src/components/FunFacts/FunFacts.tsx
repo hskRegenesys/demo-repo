@@ -10,7 +10,7 @@ const FunFacts = () => {
         <div className="inner-container">
           <div className="fact-counter">
             <Row className="clearfix">
-              {funFacts.map(({ id, title, count }) => (
+              {funFacts?.map(({ id, title, count }) => (
                 <Col
                   key={id}
                   lg={3}

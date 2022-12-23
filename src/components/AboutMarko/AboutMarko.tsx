@@ -22,7 +22,7 @@ const AboutMarko = () => {
                 <p className="about-me-one__text">{text2}</p>
                 <p className="about-me-one__text">{text3}</p>
                 <div className="about-me-one__social">
-                  {socials.map(({ id, icon, href }) => (
+                  {socials?.map(({ id, icon, href }) => (
                     <a key={id} href={href}>
                       <i className={icon}></i>
                     </a>

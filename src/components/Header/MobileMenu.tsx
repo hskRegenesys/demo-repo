@@ -36,7 +36,7 @@ const MobileMenu = ({ onePage = false }) => {
             id="navbarSupportedContent"
           >
             <ul className="navigation clearfix">
-              {newNavItems.map((navItem) => (
+              {newNavItems?.map((navItem) => (
                 <NavItem navItem={navItem} key={navItem.id} mobile />
               ))}
             </ul>
@@ -50,7 +50,7 @@ const MobileMenu = ({ onePage = false }) => {
             <a href={`tel:${phone.split(" ").join("")}`}>{phone}</a>
           </p>
           <div className="side-menu__social">
-            {socials.map(({ id, icon, href }) => (
+            {socials?.map(({ id, icon, href }) => (
               <a key={id} href={href}>
                 <i className={icon}></i>
               </a>

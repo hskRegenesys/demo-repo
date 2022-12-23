@@ -44,7 +44,7 @@ const SponsorEight = () => {
       <div className="auto-container">
         <Swiper {...options} className="thm-swiper__slider">
           <div className="swiper-wrapper">
-            {sponsorEight.map((image, i) => (
+            {sponsorEight?.map((image, i) => (
               <SwiperSlide key={i}>
                 <Image src={image} alt="" />
               </SwiperSlide>

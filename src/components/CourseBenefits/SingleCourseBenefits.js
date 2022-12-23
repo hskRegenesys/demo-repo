@@ -17,7 +17,7 @@ const SingleCourseBenefits = ({ work = {}, current }) => {
                 <p>{text1}</p>
                 <p>{text2}</p>
                 <ul>
-                  {lists.map((text, i) => (
+                  {lists?.map((text, i) => (
                     <li key={i}>{text}</li>
                   ))}
                 </ul>

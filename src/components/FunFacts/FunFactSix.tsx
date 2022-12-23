@@ -8,7 +8,7 @@ const FunFactSix = () => {
     <section className="funfact-six">
       <div className="auto-container">
         <Row>
-          {funFactSix.map(({ id, icon, text, count }) => (
+          {funFactSix?.map(({ id, icon, text, count }) => (
             <Col key={id} sm={12} md={6} lg={4}>
               <div className="funfact-six__item">
                

@@ -106,7 +106,7 @@ const TrendingSection = (carousel: any) => {
                           <ul className="about-seven__list list-unstyled">
                             <li>{courseMode.name}</li>
                             <li>
-                              {batches.map((item: any) => (
+                              {batches?.map((item: any) => (
                                 <>
                                   {getWeeksDiff(item.start_date, item.end_date)}
                                   &nbsp;Week
@@ -117,7 +117,7 @@ const TrendingSection = (carousel: any) => {
                             <li>Capstone projects </li>
                           </ul>
                         </div>
-                        {batches.map((item: any) => (
+                        {batches?.map((item: any) => (
                           <div className="batch">{item.description}</div>
                         ))}
                       </div>

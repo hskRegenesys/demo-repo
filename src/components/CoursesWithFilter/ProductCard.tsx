@@ -35,7 +35,7 @@ const ProductCard = (props:any) => {
           </h3>
           <p className="product-card__price">${price}</p>
           <div className="product-card__stars">
-            {Array.from(Array(stars)).map((_, i) => (
+            {Array.from(Array(stars))?.map((_, i) => (
               <i key={i} className="fa fa-star"></i>
             ))}
           </div>

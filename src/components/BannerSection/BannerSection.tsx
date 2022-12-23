@@ -30,7 +30,7 @@ const BannerSection = () => {
     <section className="banner-section banner-two">
       <div className="banner-carousel">
         <TinySlider options={settings} ref={listRef}>
-          {bannerTwo.map((slide) => (
+          {bannerTwo?.map((slide) => (
             <SlideItem key={slide.id} slide={slide} ref={listRef} />
           ))}
         </TinySlider>
