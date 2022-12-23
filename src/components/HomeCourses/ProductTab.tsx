@@ -18,10 +18,7 @@ const settings = {
   mouseDrag: true,
 };
 
-const ProductTab = ({
-  courses = [],
-  current,
-}: any) => {
+const ProductTab = ({ courses = [], current }: any) => {
   const [filterCourses, setFilterCourses] = useState([]);
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
@@ -34,11 +31,13 @@ const ProductTab = ({
   let id = current;
   const filterCourse = (id: number) => {
     let filterCourse: any = [];
-    courses?.forEach((item: any) => {
-      if (item.id === id || item.parent_id === id) {
-        filterCourse.push(item);
-      }
-    });
+    if (courses?.length) {
+      courses?.forEach((item: any) => {
+        if (item.id === id || item.parent_id === id) {
+          filterCourse.push(item);
+        }
+      });
+    }
     setFilterCourses(filterCourse);
   };
   useEffect(() => {
