@@ -1,9 +1,10 @@
-import { productDescription } from "@/data/productDetails";
 import React from "react";
 
-const { title, text1 } = productDescription;
 
-const FeesDetails = () => {
+
+const FeesDetails = ({courseDetails}:any) => {
+  console.log("courseDetails =====>", courseDetails)
+  const { title, text1 } = courseDetails?.productDescription;
   return (
     <section className="product-description">
       <div className="auto-container">

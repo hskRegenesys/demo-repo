@@ -67,11 +67,19 @@ const HeaderOne = ({
     const coursesSubItem: any = [];
     if (filterData?.length) {
       filterData?.forEach((item) => {
-        coursesSubItem?.push({
-          id: item?.id,
-          name: item?.name,
-          href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
-        });
+        if (_.find(allData, (course) => course.parent_id === item.id)) {
+          coursesSubItem?.push({
+            id: item?.id,
+            name: item?.name,
+            href: `/${item?.name?.split(" ").join("-")}`,
+          });
+        } else {
+          coursesSubItem?.push({
+            id: item?.id,
+            name: item?.name,
+            href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+          });
+        }
       });
     }
     const data = navItems?.map((item: any) => {

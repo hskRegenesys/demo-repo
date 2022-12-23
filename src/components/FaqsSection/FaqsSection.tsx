@@ -42,12 +42,12 @@ const Faqs = (props:any) => {
   );
 };
 
-const FaqsSection = () => {
+const FaqsSection = ({ courseDetails }:any) => {
   return (
     <section className="faqs-section">
       <div className="auto-container">
         <Row className="clearfix">
-          {faqsSection?.map((allFaqs) => (
+          {courseDetails?.faqsSection?.map((allFaqs:any) => (
             <Faqs key={allFaqs.id} allFaqs={allFaqs} />
           ))}
         </Row>
