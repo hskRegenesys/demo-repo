@@ -3,6 +3,7 @@ import { productDetails } from "@/data/productDetails";
 import { courseService } from "src/services";
 import Link from "next/link";
 import { Col, Image, Row } from "react-bootstrap";
+import { useRouter } from "next/router";
 
 const {
   falgsa,
@@ -23,28 +24,35 @@ const {
   termsConditions,
 } = productDetails;
 
-const ProductDetailsPage = () => {
+const ProductDetailsPage = ({courseId}:any) => {
   const [coursePriceDetails, setcoursePrice] = useState([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
 
   const getData = async () => {
-    let courseListResponse = await courseService.allcoursePrice("32");
+    let courseListResponse = await courseService.allcoursePrice(courseId);
     setcoursePrice(courseListResponse);
     console.log("Price", courseListResponse);
   };
 
   useEffect(() => {
     if (coursePriceDetails?.length) {
+      console.log("in condition ======>", coursePriceDetails)
       CoursePriceChange(2);
     }
   }, [coursePriceDetails]);
   useEffect(() => {
+    if(courseId){
     getData();
-  }, []);
+    }
+
+  }, [courseId]);
 
   function CoursePriceChange(id: number) {
-    coursePriceDetails?.forEach(function (val:any) {
+    console.log("course ====>", id)
+    coursePriceDetails?.forEach(function (val: any) {
+      console.log("for each ======>",val )
       val?.coursePrices?.forEach(function (item: any) {
+        console.log("for each ======>",item )
         if (item.country_id === id) {
           setPriceDetails(item);
         }

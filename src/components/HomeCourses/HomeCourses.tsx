@@ -3,20 +3,23 @@ import gallerySection from "@/data/gallerySection";
 
 import ProductTab from "./ProductTab";
 import Link from "next/link";
+import _ from "lodash";
 
 let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
-const HomeCourses = ({ className = "", carousel = "", courses = [] }:any) => {
+const HomeCourses = ({ className = "", carousel = "", courses = [] }: any) => {
   const [current, setCurrent] = useState();
-
   useEffect(() => {
     if (courses.length > 0) {
       setCurrent(courses[0].id);
     }
   }, [courses.length]);
+  let parentCourse: any = [];
 
-  console.log("current data", current);
+  if (courses.length) {
+    parentCourse = _.filter(courses, (item: any) => item?.parent_id === null);
+  }
   return (
     <section className={`gallery-section-two ${className}`}>
       <div>{courses.batches}</div>
@@ -32,19 +35,22 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }:any) => {
           <div className="tab-btns-box">
             <div className="tabs-header">
               <ul className="product-tab-btns clearfix text-start">
-                {courses.map((item:any) => {
-                  const { id, name, tab, count } = item;
-                  return(
-                  <li
-                    key={id}
-                    onClick={() => setCurrent(id)}
-                    className={`p-tab-btn${
-                      current === tab ? " active-btn" : ""
-                    }`}
-                  >
-                    {name}
-                  </li>
-                )})}
+                {parentCourse.map((item: any) => {
+                  const { id, name } = item;
+                  return (
+                    <li
+                      key={id}
+                      onClick={() => {
+                        setCurrent(id);
+                      }}
+                      className={`p-tab-btn${
+                        current === id ? " active-btn" : ""
+                      }`}
+                    >
+                      {name}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -58,7 +64,11 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }:any) => {
 
         <div className={className ? "auto-container" : ""}>
           <div className="p-tabs-content">
-            <ProductTab carousel={carousel} tab={courses} current={current} />
+            <ProductTab
+              carousel={carousel}
+              courses={courses}
+              current={current}
+            />
           </div>
         </div>
       </div>

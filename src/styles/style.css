@@ -4800,7 +4800,14 @@ img.lazy-image.loaded {
 .mix {
   display: none;
 }
-
+.tabFullBox{
+  display: flex;
+  justify-content: center;
+}
+.tabFullBox .tab-item{
+width: 25%;
+    margin: 20px;
+}
 .gallery-item {
   position: relative;
   margin-bottom: 30px;
@@ -4816,6 +4823,7 @@ img.lazy-image.loaded {
   padding: 20px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  height: 500px;
 }
 
 .gallery-item .inner-box:hover {

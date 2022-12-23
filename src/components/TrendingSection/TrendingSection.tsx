@@ -10,71 +10,22 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
 
-const responsive1 = {
-  768: {
-    items: 2,
-    gutter: 30,
-  },
-  992: {
-    items: 3,
-    gutter: 30,
-  },
-  1200: {
-    items: 3,
-    gutter: 30,
-  },
-  1500: {
-    items: 4,
-    gutter: 30,
-  },
-  1600: {
-    items: 5,
-    gutter: 30,
-  },
-};
-
-const responsive2 = {
-  600: {
-    items: 1,
-    gutter: 30,
-  },
-  768: {
-    items: 2,
-    gutter: 30,
-  },
-  992: {
-    items: 3,
-    gutter: 30,
-  },
-  1200: {
-    items: 3,
-    gutter: 30,
-  },
-};
-
 const settings = {
-  loop: false,
-  lazyload: true,
-  nav: true,
-  mouseDrag: true,
-  items: 1,
+  container: ".my-slider",
+  items: 3,
+  slideBy: "page",
   autoplay: true,
-  autoHeight: true,
+  loop: true,
+  gutter: 30,
+  nav: false,
   controls: false,
-  gutter: 0,
-  autoplayButton: false,
   autoplayButtonOutput: false,
-  responsive: {
-    991: {
-      items: 2,
-      gutter: 30,
-    },
-  },
+  mouseDrag: true,
 };
 
 const { title, details, description } = trendingSection;
 
-const TrendingSection = (carousel:any) => {
+const TrendingSection = (carousel: any) => {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
@@ -91,22 +42,21 @@ const TrendingSection = (carousel:any) => {
   if (courseData?.length) {
     courses = _.filter(
       courseData,
-      (item:any) =>
+      (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1
     );
   }
 
-  courseData?.forEach(function (val:any) {
+  courseData?.forEach(function (val: any) {
     if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
       CourseCard.push(val);
     }
   });
   const listRef = useRef(null);
   const ref = useActive("#testimonials");
-
-  function getWeeksDiff(start_date:any, end_date:any) {
+  function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
@@ -126,20 +76,17 @@ const TrendingSection = (carousel:any) => {
             <TinySlider
               options={{
                 ...settings,
-                container: `.my-slider-5`,
-                nav: !carousel,
-                responsive: carousel ? responsive2 : responsive1,
               }}
               ref={listRef}
             >
-              {CourseCard?.map(({ id, name, courseMode, batches }:any) => (
+              {CourseCard?.map(({ id, name, courseMode, batches, code }: any) => (
                 <div ref={listRef} className="gallery-item" key={id}>
                   <div className="inner-box">
-                    <div className="icon">
+                    {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
-                    </div>
+                    </div> */}
                     <figure className="image">
-                      <Image src={`/assets/images/gallery/1.jpg`} alt="" />
+                      <Image src={`/assets/images/gallery/${code}.png`} alt="" />
                     </figure>
                     <a
                       className="lightbox-image overlay-box"
@@ -149,7 +96,7 @@ const TrendingSection = (carousel:any) => {
                       <div className="cap-inner">
                         <div className="title">
                           <h5>
-                            <Link href="/portfolio-single">
+                            <Link href={`/${name?.split(" ").join("-")}/${id}`}>
                               <a>{name}</a>
                             </Link>
                           </h5>
@@ -159,7 +106,7 @@ const TrendingSection = (carousel:any) => {
                           <ul className="about-seven__list list-unstyled">
                             <li>{courseMode.name}</li>
                             <li>
-                              {batches.map((item:any) => (
+                              {batches.map((item: any) => (
                                 <>
                                   {getWeeksDiff(item.start_date, item.end_date)}
                                   &nbsp;Week
@@ -170,7 +117,7 @@ const TrendingSection = (carousel:any) => {
                             <li>Capstone projects </li>
                           </ul>
                         </div>
-                        {batches.map((item:any) => (
+                        {batches.map((item: any) => (
                           <div className="batch">{item.description}</div>
                         ))}
                       </div>
