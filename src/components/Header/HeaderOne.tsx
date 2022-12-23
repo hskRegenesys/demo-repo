@@ -65,24 +65,26 @@ const HeaderOne = ({
         item?.isAddon === false
     );
     const coursesSubItem: any = [];
-    filterData?.forEach((item) => {
-      coursesSubItem?.push({
-        id: item?.id,
-        name: item?.name,
-        href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+    if (filterData?.length) {
+      filterData?.forEach((item) => {
+        coursesSubItem?.push({
+          id: item?.id,
+          name: item?.name,
+          href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+        });
       });
-    });
-    const data = navItems?.map((item:any) => {
+    }
+    const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
       }
       return item;
     });
-    setNav(data)
+    setNav(data);
   };
-  useEffect(()=>{
-  allCourses();
-  },[])
+  useEffect(() => {
+    allCourses();
+  }, []);
 
   return (
     <header

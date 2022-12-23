@@ -24,7 +24,7 @@ const {
   termsConditions,
 } = productDetails;
 
-const ProductDetailsPage = ({courseId}:any) => {
+const ProductDetailsPage = ({ courseId }: any) => {
   const [coursePriceDetails, setcoursePrice] = useState([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
 
@@ -36,28 +36,28 @@ const ProductDetailsPage = ({courseId}:any) => {
 
   useEffect(() => {
     if (coursePriceDetails?.length) {
-      console.log("in condition ======>", coursePriceDetails)
+      console.log("in condition ======>", coursePriceDetails);
       CoursePriceChange(2);
     }
   }, [coursePriceDetails]);
   useEffect(() => {
-    if(courseId){
-    getData();
+    if (courseId) {
+      getData();
     }
-
   }, [courseId]);
 
   function CoursePriceChange(id: number) {
-    console.log("course ====>", id)
-    coursePriceDetails?.forEach(function (val: any) {
-      console.log("for each ======>",val )
-      val?.coursePrices?.forEach(function (item: any) {
-        console.log("for each ======>",item )
-        if (item.country_id === id) {
-          setPriceDetails(item);
+    if (coursePriceDetails?.length) {
+      coursePriceDetails?.forEach(function (val: any) {
+        if (val?.coursePrices?.length) {
+          val?.coursePrices?.forEach(function (item: any) {
+            if (item.country_id === id) {
+              setPriceDetails(item);
+            }
+          });
         }
       });
-    });
+    }
   }
 
   return (
