@@ -42,7 +42,7 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
                 className={`filters clearfix${portfolio ? " centered" : ""}`}
               >
                 <ul className="filter-tabs filter-btns clearfix">
-                  {tabBtns.map(({ id, name, tab }) => (
+                  {tabBtns?.map(({ id, name, tab }) => (
                     <li
                       onClick={() => setCurrent(tab)}
                       key={id}
@@ -64,7 +64,7 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
             updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
             className="row position-relative filter-list" 
           >
-            {currentItems.slice(similar ? 3 : 0).map((item) => (
+            {currentItems.slice(similar ? 3 : 0)?.map((item) => (
               <GalleryItem item={item} key={item.id} />
             ))}
           </Masonry> */}

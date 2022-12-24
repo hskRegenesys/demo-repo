@@ -23,7 +23,7 @@ const GetInTouch = ({ className = "" }) => {
         </div>
         <div className="services">
           <Row className="clearfix">
-            {services.map((service) => (
+            {services?.map((service) => (
               <SingleService service={service} key={service.id} />
             ))}
           </Row>

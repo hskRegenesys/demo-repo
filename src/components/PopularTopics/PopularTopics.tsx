@@ -96,7 +96,7 @@ const TeamSection = ({ onePage = false }) => {
               }}
               ref={listRef}
             >
-              {teams.map((team) => (
+              {teams?.map((team) => (
                 <SingleTeam key={team.id} team={team} ref={listRef} />
               ))}
             </TinySlider>

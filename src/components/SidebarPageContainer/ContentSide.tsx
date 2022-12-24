@@ -34,7 +34,7 @@ const ContentSide = (props:any) => {
                 <h4>{featuredTitle}</h4>
                 <p>{featuredText}</p>
                 <ul>
-                  {features.map((text:string, i:number) => (
+                  {features?.map((text:string, i:number) => (
                     <li key={i}>{text}</li>
                   ))}
                 </ul>

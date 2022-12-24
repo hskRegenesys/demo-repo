@@ -37,7 +37,7 @@ const TestimonialsStudent = () => {
         </div>
         <div className="testimonials-carousel-two testimonials-five__carousel position-relative">
           <TinySlider options={settings} ref={listRef}>
-            {items.map((testimonial) => (
+            {items?.map((testimonial) => (
               <SingleTestimonialFive
                 key={testimonial.id}
                 testimonial={testimonial}

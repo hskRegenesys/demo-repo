@@ -10,11 +10,9 @@ import DiscoverSection from "@/components/DiscoverSection/DiscoverSection";
 
 
 const MapBox = dynamic(() => import("../MapSection/MapBox"));
-const FormBox = dynamic(() => import("./FormBox"));
 
-const { title, contacts, inputs } = contactSection;
 
-const options = ["USA", "Canada", "Australia"].map((it) => ({
+const options = ["USA", "Canada", "Australia"]?.map((it) => ({
   value: it,
   label: it,
 }));

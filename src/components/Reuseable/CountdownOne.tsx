@@ -1,7 +1,5 @@
-import dynamic from "next/dynamic";
 import React from "react";
-
-const Countdown = dynamic(() => import("react-countdown"));
+import Countdown from "react-countdown";
 
 const Renderer = (props: any) => {
   const { days, hours, minutes, seconds, completed } = props;

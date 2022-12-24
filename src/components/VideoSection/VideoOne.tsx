@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 // import VideoModal from "../VideoModal/VideoModal";
 
-const { image, videoId, title, text1, text2 } = videoOne;
-
-const VideoOne = () => {
+const VideoOne = ({ courseDetails }: any) => {
+  const { image, videoId, title, text1, text2 } = courseDetails?.videoOne
+    ? courseDetails?.videoOne
+    : videoOne;
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -25,7 +26,7 @@ const VideoOne = () => {
                 </div>
               </a>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
       {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}

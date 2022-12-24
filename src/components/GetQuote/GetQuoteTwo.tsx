@@ -52,7 +52,7 @@ const GetQuoteTwo = ({ className = "" }) => {
                 <div className="default-form">
                   <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
                     <Row className="clearfix">
-                      {inputs.map(({ name, type, placeholder }) => (
+                      {inputs?.map(({ name, type, placeholder }) => (
                         <Col
                           key={name}
                           lg={type ? 6 : 12}

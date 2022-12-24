@@ -33,7 +33,7 @@ const SingleTrending = ({
 
           <div className="cat">
             <ul className="about-seven__list list-unstyled">
-              {tagline.map((list, i) => (
+              {tagline?.map((list, i) => (
                 <li key={i}>{list}</li>
               ))}
             </ul>

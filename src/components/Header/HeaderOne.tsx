@@ -2,9 +2,11 @@ import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
 import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 import NavItem from "./NavItem";
+import { courseService } from "src/services";
+import _ from "lodash";
 
 const {
   title,
@@ -31,10 +33,11 @@ const HeaderOne = ({
   rightMenu = false,
 }) => {
   const { scrollTop } = useScroll(120);
-  const contextRoots:any = useRootContext();
+  const contextRoots: any = useRootContext();
+  const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
-  const newNavItems = onePage ? navItemsTwo : navItems;
-  let Logo:any =
+  const newNavItems = onePage ? navItemsTwo : nav;
+  let Logo: any =
     logo === 2
       ? logo2
       : logo === 3
@@ -52,6 +55,44 @@ const HeaderOne = ({
       Logo = logo4;
     }
   }
+  const allCourses = async () => {
+    const allData = await courseService.allCourses();
+    const filterData = _.filter(
+      allData,
+      (item) =>
+        item?.parent_id === null &&
+        item?.mode_id === 1 &&
+        item?.isAddon === false
+    );
+    const coursesSubItem: any = [];
+    if (filterData?.length) {
+      filterData?.forEach((item) => {
+        if (_.find(allData, (course) => course.parent_id === item.id)) {
+          coursesSubItem?.push({
+            id: item?.id,
+            name: item?.name,
+            href: `/${item?.name?.split(" ").join("-")}`,
+          });
+        } else {
+          coursesSubItem?.push({
+            id: item?.id,
+            name: item?.name,
+            href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+          });
+        }
+      });
+    }
+    const data = navItems?.map((item: any) => {
+      if (item.id === 4 && item.name === "Courses") {
+        item.subNavItems = coursesSubItem;
+      }
+      return item;
+    });
+    setNav(data);
+  };
+  useEffect(() => {
+    allCourses();
+  }, []);
 
   return (
     <header
@@ -69,7 +110,7 @@ const HeaderOne = ({
                 <a href={`tel:${phone.split(" ").join("")}`}>{phone}</a>
               </div>
               <ul className="list-unstyled social-links">
-                {socials.map(({ id, icon, href }) => (
+                {socials?.map(({ id, icon, href }) => (
                   <li key={id}>
                     <a href={href}>
                       <span className={icon}></span>
@@ -88,12 +129,7 @@ const HeaderOne = ({
               <div className="logo">
                 <Link href="#">
                   <a title={title}>
-                    <Image
-                      id="thm-logo"
-                      src={Logo}
-                      alt={title}
-                      title={title}
-                    />
+                    <Image id="thm-logo" src={Logo} alt={title} title={title} />
                   </a>
                 </Link>
               </div>
@@ -114,7 +150,7 @@ const HeaderOne = ({
                   id={autoContainer ? "" : "navbarSupportedContent"}
                 >
                   <ul className="navigation clearfix">
-                    {newNavItems.map((navItem) => (
+                    {newNavItems?.map((navItem: any) => (
                       <NavItem
                         navItem={navItem}
                         key={navItem.id}
@@ -128,7 +164,7 @@ const HeaderOne = ({
 
             {links && (
               <div className="other-links clearfix">
-                <div className="search-btn">
+                {/* <div className="search-btn">
                   <button
                     onClick={toggleSearch}
                     type="button"
@@ -137,10 +173,10 @@ const HeaderOne = ({
                     {" "}
                     <span className="flaticon-loupe"></span>
                   </button>
-                </div>
+                </div> */}
 
                 <div className="link-box">
-                  <Link href="/contact">
+                  <Link href="https://mydigital.regenesys.net/login/index.php">
                     <a className="theme-btn btn-style-two">
                       <i className="btn-curve"></i>
                       <span className="btn-title">Login</span>
