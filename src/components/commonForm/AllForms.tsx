@@ -216,10 +216,6 @@ export default function LandingForm(contactform: any) {
                   {Data.qualification.map((item) => (
                     <option value={item.value}>{item.option}</option>
                   ))}
-                  {/* <option value="Masters Degree">Masters Degree{}</option>
-                  <option value="Bachelor's Degree">Bachelor's Degree</option>
-                  <option value="Diploma">Diploma</option>
-                  <option value="Higher Certificate">Higher Certificate</option> */}
                 </select>
                 {errors.qualification && (
                   <small className="text-danger">

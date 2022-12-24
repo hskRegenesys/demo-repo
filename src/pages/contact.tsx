@@ -23,7 +23,6 @@ const Contact = () => {
       <PageBanner title="Contact" />
       <GetInTouch />
       <LandingForm />
-      {/* <ContactSection form map /> */}
       <SocialMedia />
       <CallToSection />
       <MainFooter normalPadding={false} />
