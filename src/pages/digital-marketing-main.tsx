@@ -6,12 +6,12 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import DigitalMarketingText from "@/components/DigitalMarketingCourses/DigitalMarketingText";
+import DigitalMarketingText from "@/components/courses/coursesText";
 import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
-import DigitalMarketingCourses from "@/components/DigitalMarketingCourses/DigitalMarketingCourses";
+import DigitalMarketingCourses from "@/components/courses/subcourseDetails";
 
 const DigitalMarketingMain = () => {
   return (

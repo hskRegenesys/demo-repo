@@ -19,7 +19,7 @@ const FeaturesSection = () => {
             <span>.</span>
           </h2>
           <div className="features clearfix">
-            {features.map(({ id, title, icon }) => (
+            {features?.map(({ id, title, icon }) => (
               <div key={id} className="feature-block">
                 <div className="inner">
                   <div className="icon-box">

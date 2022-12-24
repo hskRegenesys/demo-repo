@@ -58,13 +58,13 @@ const CartPage = () => {
           <table className="table cart-table">
             <thead>
               <tr>
-                {items.map((item, i) => (
+                {items?.map((item, i) => (
                   <th key={i}>{item}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {products.map((product) => (
+              {products?.map((product) => (
                 <CartProduct
                   key={product.id}
                   product={product}

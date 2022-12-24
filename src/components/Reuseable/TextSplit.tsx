@@ -7,7 +7,7 @@ const TextSplit = ({ text = "", separator = "\n", children = "" }) => {
 
   return (
     <Fragment>
-      {arr.map((t, i) => (
+      {arr?.map((t, i) => (
         <Fragment key={i}>
           {t.trim()} {i !== lastIndex && <br />}
         </Fragment>

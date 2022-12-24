@@ -20,7 +20,7 @@ const SponsorsSectionTwo = () => {
 
           <Col xl={7} lg={12} md={12} className="logo-col">
             <Row className="clearfix">
-              {images.map((image, i) => (
+              {images?.map((image, i) => (
                 <Col
                   key={i}
                   xl={4}

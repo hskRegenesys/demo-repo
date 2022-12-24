@@ -56,7 +56,7 @@ const StudentPlacement = ({ className = "" }) => {
               options={{ ...settings, container: `.my-slider-15` }}
               ref={listRef}
             >
-              {sponsors.map((image, index) => (
+              {sponsors?.map((image, index) => (
                 <div
                   ref={listRef}
                   key={index}

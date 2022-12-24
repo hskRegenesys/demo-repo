@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
               options={{ ...settings, container: `.my-slider-5` }}
               ref={listRef}
             >
-              {testimonials.map((testimonial) => (
+              {testimonials?.map((testimonial) => (
                 <SingleTestimonial
                   key={testimonial.id}
                   testimonial={testimonial}

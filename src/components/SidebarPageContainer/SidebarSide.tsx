@@ -16,7 +16,7 @@ const SidebarSide = () => {
             <h4>{title}</h4>
           </div>
           <ul>
-            {navItems.map(({ id, href, title }) => (
+            {navItems?.map(({ id, href, title }) => (
               <li key={id} className={pathname === href ? "active" : ""}>
                 <Link href={href}>{title}</Link>
               </li>

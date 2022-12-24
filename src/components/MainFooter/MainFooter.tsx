@@ -42,7 +42,7 @@ const MainFooter = ({ normalPadding = true }) => {
                 <Row className="clearfix">
                   <Col md={12} sm={12}>
                     <ul>
-                      {links.slice(0, 8).map(({ id, href, title }) => (
+                      {links.slice(0, 8)?.map(({ id, href, title }) => (
                         <li key={id}>
                           <Link href={href}>{title}</Link>
                         </li>
@@ -50,7 +50,7 @@ const MainFooter = ({ normalPadding = true }) => {
                     </ul>
 
                     <ul className="social-links clearfix">
-                      {socials.map(({ id, icon, href }) => (
+                      {socials?.map(({ id, icon, href }) => (
                         <li key={id}>
                           <a href={href}>
                             <span className={icon}></span>

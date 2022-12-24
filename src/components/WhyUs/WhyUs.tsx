@@ -39,7 +39,7 @@ const WhyUs = () => {
                   </h2>
                 </div>
                 <div className="features">
-                  {features.map(({ id, title, text }) => (
+                  {features?.map(({ id, title, text }) => (
                     <div key={id} className="feature">
                       <div className="inner-box">
                         <h6>{title}</h6>

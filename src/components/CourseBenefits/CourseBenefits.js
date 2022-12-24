@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import SingleCourseBenefits from "./SingleCourseBenefits";
 import { Col, Image, Row } from "react-bootstrap";
 
-const { title, tabBtns, tabsContents, desc } = courseBenefits;
-
-const CourseBenefits = () => {
+const CourseBenefits = ({ courseDetails }) => {
+  const { title, tabBtns, tabsContents, desc } = courseDetails?.courseBenefits;
   const [current, setCurrent] = useState("tab-1");
 
   return (
@@ -15,7 +14,10 @@ const CourseBenefits = () => {
           <Col md={4}>
             <div className="inner animated fadeInLeft">
               <div className="image-box">
-                <Image src='/assets/images/background/career-support.png' alt="" />
+                <Image
+                  src="/assets/images/background/career-support.png"
+                  alt=""
+                />
               </div>
             </div>
           </Col>
@@ -26,7 +28,7 @@ const CourseBenefits = () => {
             <p>{desc}</p>
             <div className="work-tabs tabs-box">
               <ul className="tab-btns tab-buttons clearfix">
-                {tabBtns.map(({ id, title }) => (
+                {tabBtns?.map(({ id, title }) => (
                   <li
                     onClick={() => setCurrent(id)}
                     key={id}
@@ -37,7 +39,7 @@ const CourseBenefits = () => {
                 ))}
               </ul>
               <div className="tabs-content">
-                {tabsContents.map((work) => (
+                {tabsContents?.map((work) => (
                   <SingleCourseBenefits
                     key={work.id}
                     work={work}

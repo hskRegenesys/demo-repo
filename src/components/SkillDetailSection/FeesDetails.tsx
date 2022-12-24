@@ -3,6 +3,7 @@ import { productDetails } from "@/data/productDetails";
 import { courseService } from "src/services";
 import Link from "next/link";
 import { Col, Image, Row } from "react-bootstrap";
+import { useRouter } from "next/router";
 
 const {
   falgsa,
@@ -23,12 +24,30 @@ const {
   termsConditions,
 } = productDetails;
 
-const ProductDetailsPage = () => {
+const ProductDetailsPage = ({courseDetails, courseId }: any) => {
+  const {
+  falgsa,
+  flagnig,
+  flagind,
+  flagus,
+  title,
+  price,
+  certifiedText1,
+  certifiedText2,
+  certifiedText3,
+  subTitle,
+  certifiedTitle1,
+  certifiedTitle2,
+
+  certifiedTitle3,
+  admissionText,
+  termsConditions,
+} = courseDetails?.productDetails;
   const [coursePriceDetails, setcoursePrice] = useState([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
 
   const getData = async () => {
-    let courseListResponse = await courseService.allcoursePrice("32");
+    let courseListResponse = await courseService.allcoursePrice(courseId);
     setcoursePrice(courseListResponse);
     console.log("Price", courseListResponse);
   };
@@ -39,17 +58,23 @@ const ProductDetailsPage = () => {
     }
   }, [coursePriceDetails]);
   useEffect(() => {
-    getData();
-  }, []);
+    if (courseId) {
+      getData();
+    }
+  }, [courseId]);
 
   function CoursePriceChange(id: number) {
-    coursePriceDetails?.forEach(function (val:any) {
-      val?.coursePrices?.forEach(function (item: any) {
-        if (item.country_id === id) {
-          setPriceDetails(item);
+    if (coursePriceDetails?.length) {
+      coursePriceDetails?.forEach(function (val: any) {
+        if (val?.coursePrices?.length) {
+          val?.coursePrices?.forEach(function (item: any) {
+            if (item.country_id === id) {
+              setPriceDetails(item);
+            }
+          });
         }
       });
-    });
+    }
   }
 
   return (

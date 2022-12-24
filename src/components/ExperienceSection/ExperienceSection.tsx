@@ -13,7 +13,7 @@ const ExperienceSection = () => {
           <h6 className="desc">We are here to build your career</h6>
         </div>
         <Row>
-          {partnerOne.map(({ id, image, title, text }) => (
+          {partnerOne?.map(({ id, image, title, text }) => (
             <Col key={id} md={6} lg={4}>
               <div className="partner-one__card">
                 <div className="partner-one__image">

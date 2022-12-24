@@ -1,6 +1,7 @@
 import { apiEndPoints } from "@/data/axisos";
 
 class CourseService {
+  static allCourses: any;
   constructor(private appAPIServer: any) {
     this.appAPIServer = appAPIServer;
   }
@@ -35,7 +36,7 @@ class CourseService {
       return result;
     }
   }
-  async allcoursePrice(id: string) {
+  async allcoursePrice(id: any) {
     let result: any = [];
 
     try {

@@ -21,7 +21,7 @@ import _ from "lodash";
 const Home2 = () => {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
-    let courseListResponse = await courseService.allParentCourses();
+    let courseListResponse = await courseService.allCourses();
     setcourseData(courseListResponse);
   };
 
@@ -29,14 +29,12 @@ const Home2 = () => {
     getData();
   }, []);
 
-  console.log("coursses", courseData);
   let courses: any = [];
 
   if (courseData.length) {
     courses = _.filter(
       courseData,
       (item:any) =>
-        item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1
     );
