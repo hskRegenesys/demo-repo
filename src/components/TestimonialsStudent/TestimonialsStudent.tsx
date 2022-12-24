@@ -29,6 +29,7 @@ const TestimonialsStudent = () => {
 
   return (
     <section className="testimonials-five">
+
       <div className="auto-container">
         <div className="sec-title text-center">
           <h2>
@@ -36,6 +37,7 @@ const TestimonialsStudent = () => {
           </h2>
         </div>
         <div className="testimonials-carousel-two testimonials-five__carousel position-relative">
+        <i className="fa fa-quote-right"></i>
           <TinySlider options={settings} ref={listRef}>
             {items?.map((testimonial) => (
               <SingleTestimonialFive

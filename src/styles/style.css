@@ -7714,7 +7714,7 @@ width: 25%;
 .all-course-link {
   display: flex;
   margin: 30px;
-  justify-content: end;
+  justify-content: flex-end;;
   font-size: 18px;
 
   text-decoration: underline;
@@ -8594,19 +8594,19 @@ width: 25%;
 
 .testimonials-five-card {
   text-align: center;
-  background-color: #1fa393;
-  border-radius: 18px;
-  padding: 40px;
+  padding-top: 50px;
 }
+
 
 .testimonials-five .testimonials-five-card .testimonials-five-card__image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%;
+  border-radius: 20px;
   width: 125px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  background-color: #ffe55b;
+  border: 2px solid #000;
+  padding-top: 5px;
 }
 
 .testimonials-five-card__text {
@@ -8618,23 +8618,23 @@ width: 25%;
   max-width: 875px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
-  font-family: Raleway;
+  margin-top: 40px;
+  font-family: Raleway-medium;
 }
 
 @media (min-width: 992px) {
   .testimonials-five-card__text {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 .testimonials-five-card__title {
   margin: 0;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1;
-  margin-top: 55px;
-  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 50px;
   font-family: "Raleway-medium";
 }
 
@@ -8657,7 +8657,29 @@ width: 25%;
   align-items: center;
   text-align: center;
   margin-top: 40px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px !important;
+  position: absolute;
+  right: 90px;
+  bottom: 70px;
+
+
 }
+
+.testimonials-five__carousel .fa-quote-right
+{
+  transform: scaleX(-1);
+  font-size: 40px;
+  color: #FFF;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
 
 @media (min-width: 992px) {
   .testimonials-five__carousel .tns-controls {
@@ -8666,9 +8688,9 @@ width: 25%;
 }
 
 .testimonials-five__carousel .tns-controls button {
-  width: 55px;
-  height: 55px;
-  background-color: #f4f5f8;
+  width: 34px;
+  height: 34px;
+  background-color: #ffe55b;
   border-radius: 50%;
   color: var(--thm-black);
   font-size: 18px;
@@ -8688,8 +8710,8 @@ width: 25%;
 
 @media (min-width: 992px) {
   .testimonials-five__carousel .tns-controls button {
-    width: 73px;
-    height: 73px;
+    width: 40px;
+    height: 40px;
     font-size: 22px;
     position: absolute;
     top: 50%;
@@ -23814,7 +23836,7 @@ h2.curve-right:after {
   border-radius: 8px;
   height: 240px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .partner-one__image img {
@@ -24983,4 +25005,10 @@ input.PhoneInputInput
   margin-top: 28px;
   margin-left: 18px;
   height: 10px;
+}
+
+.testimonials-carousel-two
+{
+  background-color:#1fa393;
+  border-radius: 15px;
 }
