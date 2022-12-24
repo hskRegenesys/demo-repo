@@ -65,9 +65,15 @@ const ProductTab = ({ courses = [], current }: any) => {
                 <div className="cap-inner">
                   <div className="title">
                     <h5>
-                      <Link href={`/${name?.split(" ").join("-")}/${id}`}>
-                        <a>{name}</a>
-                      </Link>
+                      {code === "DSCI" || code === "DM" ? (
+                        <Link href={`/${name?.split(" ").join("-")}`}>
+                          <a>{name}</a>
+                        </Link>
+                      ) : (
+                        <Link href={`/${name?.split(" ").join("-")}/${id}`}>
+                          <a>{name}</a>
+                        </Link>
+                      )}
                     </h5>
                   </div>
 
