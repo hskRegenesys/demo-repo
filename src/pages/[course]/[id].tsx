@@ -27,7 +27,6 @@ const DigitalMarketing = () => {
   const [coursePriceDetails, setcoursePrice] = useState<any>([]);
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
-    console.log("price ===>", courseListResponse)
     setcoursePrice(courseListResponse);
   };
   useEffect(() => {

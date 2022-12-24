@@ -2,27 +2,10 @@ import React, { useState, useEffect, useContext } from "react";
 import { productDetails } from "@/data/productDetails";
 import { courseService } from "src/services";
 import Link from "next/link";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Image, Modal, Row } from "react-bootstrap";
 import { useRouter } from "next/router";
+import ModalPopup from "../Modal/ModalPopup";
 
-const {
-  falgsa,
-  flagnig,
-  flagind,
-  flagus,
-  title,
-  price,
-  certifiedText1,
-  certifiedText2,
-  certifiedText3,
-  subTitle,
-  certifiedTitle1,
-  certifiedTitle2,
-
-  certifiedTitle3,
-  admissionText,
-  termsConditions,
-} = productDetails;
 
 const ProductDetailsPage = ({courseDetails, courseId }: any) => {
   const {
@@ -45,6 +28,7 @@ const ProductDetailsPage = ({courseDetails, courseId }: any) => {
 } = courseDetails?.productDetails;
   const [coursePriceDetails, setcoursePrice] = useState([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
+  const [show, setShow] = useState(false)
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
@@ -135,16 +119,17 @@ const ProductDetailsPage = ({courseDetails, courseId }: any) => {
             <p>{termsConditions}</p>
             <p>{admissionText}</p>
             <div className="product-details__buttons">
-              <Link href="/">
-                <a className="theme-btn btn-style-two">
+                <a className="theme-btn btn-style-two" onClick={()=>setShow(!show)}>
                   <i className="btn-curve"></i>
                   <span className="btn-title">Enroll Now</span>
                 </a>
-              </Link>
             </div>
           </Col>
         </Row>
       </div>
+       <Modal show={show}>
+        <ModalPopup setShows={setShow}  />
+      </Modal>
     </section>
   );
 };
