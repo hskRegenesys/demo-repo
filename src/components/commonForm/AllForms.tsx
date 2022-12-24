@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
+import { courseService } from "src/services";
+import _ from "lodash";
+import Data from "@/data/AllformsData";
 
-export default function LandingForm() {
+export default function LandingForm(contactform: any) {
+  const [courseData, setcourseData] = useState([]);
+  const getData = async () => {
+    let courseListResponse = await courseService.allParentCourses();
+    setcourseData(courseListResponse);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  let courses: any = [];
+
+  if (courseData.length) {
+    courses = _.filter(
+      courseData,
+      (item: any) =>
+        item?.parent_id === null &&
+        item?.isAddon === false &&
+        item?.mode_id === 1
+    );
+  }
+
   const onSubmit = (data: any) => console.log(data);
 
   const {
@@ -137,10 +162,14 @@ export default function LandingForm() {
                   <option value="" disabled selected>
                     Course you are looking for *
                   </option>
-                  <option value="Data Science">Data Science</option>
-                  <option value="Cyber Security">Cyber Security</option>
-                  <option value="Digital Marketing">Digital Marketing</option>
-                  <option value="Project Management">Project Management</option>
+
+                  {courses.map((val: any) => {
+                    return (
+                      <option key={val.id} value={val.name}>
+                        {val.name}
+                      </option>
+                    );
+                  })}
                 </select>
                 {errors.Programme && (
                   <small className="text-danger">
@@ -184,10 +213,13 @@ export default function LandingForm() {
                   })}
                 >
                   <option value="">Highest Qualification</option>
-                  <option value="Masters Degree">Masters Degree</option>
+                  {Data.qualification.map((item) => (
+                    <option value={item.value}>{item.option}</option>
+                  ))}
+                  {/* <option value="Masters Degree">Masters Degree{}</option>
                   <option value="Bachelor's Degree">Bachelor's Degree</option>
                   <option value="Diploma">Diploma</option>
-                  <option value="Higher Certificate">Higher Certificate</option>
+                  <option value="Higher Certificate">Higher Certificate</option> */}
                 </select>
                 {errors.qualification && (
                   <small className="text-danger">
@@ -196,8 +228,10 @@ export default function LandingForm() {
                 )}
               </div>
             </div>
-            <div className="form-group">
-              <input type="submit" />
+            <div className="col-md-12 mt-4">
+              <div className="form-group">
+                <input type="submit" />
+              </div>
             </div>
           </div>
         </form>

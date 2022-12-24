@@ -38,5 +38,26 @@ const Data = {
       },
     ],
   },
+
+  qualification: [
+    {
+      option: "Masters Degree",
+      value: "Masters Degree",
+    },
+    {
+      option: "Bachelor's Degree",
+      value: "Bachelor's Degree",
+    },
+    {
+      option: "Diploma",
+      value: "Diploma",
+    },
+
+    {
+      option: "Higher Certificate",
+      value: "Higher Certificate",
+    },
+  ],
 };
+
 export default Data;
