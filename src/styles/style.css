@@ -4764,6 +4764,7 @@ img.lazy-image.loaded {
 .tabFullBox .tab-item{
 width: 25%;
     margin: 20px;
+    max-width: 370px;
 }
 .gallery-item {
   position: relative;
@@ -11392,7 +11393,7 @@ width: 25%;
 ***/
 .contact-section {
   position: relative;
-  padding: 0 0 100px;
+  padding: 0 0 0;
   margin-top: -300px;
 }
 
@@ -24762,9 +24763,10 @@ h6.designation {
 .contact-section input,
 .contact-section textarea {
   background: rgba(255, 255, 255, 0.5);
-  padding: 15px;
+  padding: 12px;
   border: 2px solid #000;
   border-radius: 12px;
+  height: 62px;
 }
 
 .contact-section textarea {
@@ -24792,6 +24794,7 @@ h6.designation {
   padding: 15px;
   border: 2px solid #000;
   border-radius: 12px;
+  height: 62px;
 }
 
 .main-menu .navigation > li:nth-child(3)::before {
@@ -24967,4 +24970,17 @@ font-size: 24px;
 .mr-2
 {
   margin-right: 10px;
+}
+
+input.PhoneInputInput
+{
+  padding-left: 66px !important;
+}
+
+.PhoneInputCountry
+{
+  position: absolute !important;
+  margin-top: 28px;
+  margin-left: 18px;
+  height: 10px;
 }

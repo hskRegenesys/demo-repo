@@ -44,8 +44,9 @@ export default function LandingForm(contactform: any) {
   return (
     <div className="contact-section ">
       <div className="auto-container">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="row">
+        <form className="form-box text-start" onSubmit={handleSubmit(onSubmit)}>
+ 
+          <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Full Name*</label>
@@ -92,6 +93,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
+            </div>
+
+            <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Phone</label>
@@ -147,6 +151,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
+            </div>
+
+            <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Course you are looking for*</label>
@@ -200,6 +207,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
+            </div>
+
+            <div className="row">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Select Highest Qualification</label>
@@ -224,12 +234,23 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
-            <div className="col-md-12 mt-4">
+            </div>
+
+
+
+
+            {/* <div className="col-md-12 mt-4">
               <div className="form-group">
                 <input type="submit" />
               </div>
+            </div> */}
+    
+            <div className="row text-center">
+            <a className="theme-btn btn-style-two mt-5" type="submit">
+                  <i className="btn-curve"></i>
+                  <span className="btn-title">Request a Call</span>
+            </a>         
             </div>
-          </div>
         </form>
       </div>
     </div>
