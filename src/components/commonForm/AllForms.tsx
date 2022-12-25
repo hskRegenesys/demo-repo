@@ -243,13 +243,13 @@ export default function LandingForm(contactform: any) {
               <div className="form-group">
                 <input type="submit" />
               </div>
-            </div> */}
+            </div>  */}
     
             <div className="row text-center">
-            <a className="theme-btn btn-style-two mt-5" type="submit">
+            <button className="theme-btn btn-style-two mt-5" type="submit">
                   <i className="btn-curve"></i>
                   <span className="btn-title">Submit</span>
-            </a>         
+            </button>         
             </div>
         </form>
       </div>

@@ -13,17 +13,23 @@ const CallToSection = ({ className = "", container = true }) => {
       <section className={`call-to-section ${className}`}>
         <div className={container ? "auto-container" : "inner clearfix"}>
           <div className={container ? "inner clearfix" : ""}>
-            <div className={container ? "" : "auto-container clearfix"}>
-              <h2>Revolutionise your career with future{container ? <br /> : ""}
-                ready skills
-              </h2>
-              <div className="link-box">
+
+            <div className="row h-100">
+              <div className="col-md-8 align-self-start">
+              
+                <h2><i className='call-to-action-arrow'></i> Revolutionise your career with future{container ? <br /> : ""}
+                  ready skills 
+                </h2>
+              </div>
+
+              <div className="link-box col-md-4 text-right">
                 <a className="theme-btn btn-style-two" onClick={handleShow}>
                   <i className="btn-curve"></i>
                   <span className="btn-title">Request a Call</span>
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </section>

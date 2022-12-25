@@ -32,7 +32,7 @@ const servicesSection = {
 };
 
 export const servicesSectionThree = {
-  title: "Find us on socail medias",
+  title: "Find us on social medias",
   services,
 };
 

@@ -72,7 +72,7 @@ function ModalPopup(props: any) {
             </Form.Group>
           </Row>
 
-          <div className="d-block mt-3 text-center">
+          <div className="d-flex mt-3 justify-content-center align-items-center">
             <a
               className="theme-btn btn-style-two mr-2"
               onClick={(e) => props.setShows(false)}

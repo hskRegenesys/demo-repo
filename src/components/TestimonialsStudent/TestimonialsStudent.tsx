@@ -52,7 +52,7 @@ const TestimonialsStudent = () => {
               <span className="icon fa fa-angle-left"></span>
             </button>
             <button className="tns-next">
-              <span className="icon fa fa-angle-right"></span>
+              <span className="icon fas fa-angle-right"></span>
             </button>
           </div>
         </div>
