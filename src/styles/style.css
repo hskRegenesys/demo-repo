@@ -10173,7 +10173,7 @@ featured-section  .right-col .sec-title h2
   position: relative;
   line-height: 2.125em;
   margin-bottom: 8px;
-  padding-left: 30px;
+  padding-left: 40px;
   font-weight: 400;
 }
 
@@ -10183,9 +10183,17 @@ featured-section  .right-col .sec-title h2
   position: absolute;
   left: 0;
   top: -1px;
-  color: var(--thm-base);
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  color: #1fa393;
+  background-color: #ffe55b;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 0 0 #1fa393;
 }
 
 /***
@@ -11263,6 +11271,11 @@ featured-section  .right-col .sec-title h2
 .faqs-section .faq-block {
   position: relative;
   margin-bottom: 20px;
+}
+
+.faqs-section .faq-block .accordion-box .block .content
+{
+  padding: 0px 40px 20px 0;
 }
 
 /***
@@ -25145,14 +25158,14 @@ top: -37px;
 background-repeat: no-repeat;
 }
 
-.faq-block.curriculum h2
+.faq-block.curriculum h3
 {
   max-width: 600px;
   margin: 0 auto;
 }
 
 
-.faq-block.curriculum h2 i
+.faq-block.curriculum h3 i
 {
   background-image: url(/assets/images/background/sign-arrow-left.png);
   background-size: 100px 100px;
