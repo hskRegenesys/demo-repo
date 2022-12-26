@@ -14,9 +14,9 @@ const HomeBanner = ({ className = "" }) => {
           <Col lg={6} md={12} sm={12} className="right-col">
             <div className="inner">
               <div className="sec-title">
-                <h2>
+                <h1>
                   {title}                
-                </h2>
+                </h1>
                 <FunFactSix />
               </div>
               

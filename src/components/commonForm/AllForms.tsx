@@ -77,9 +77,9 @@ export default function LandingForm(contactform: any) {
                     trigger("fullname");
                   }}
                 />
-                {errors.fullname && (
+                {errors?.fullname && (
                   <small className="text-danger">
-                    {errors.fullname.message}
+                    {errors?.fullname?.message}
                   </small>
                 )}
               </div>

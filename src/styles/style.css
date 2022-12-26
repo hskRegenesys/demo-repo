@@ -3623,6 +3623,9 @@ img.lazy-image.loaded {
   position: relative;
   margin-bottom: 50px;
 }
+.sec-title >h1 {
+  font-size: 46px;
+}
 
 .sec-title.centered {
   max-width: 700px;

@@ -71,7 +71,7 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Full Name*</label>
                 <input
-                  className={`{errors.fullname && "invalid"}`}
+                  className={`${errors?.fullname && "invalid"}`}
                   placeholder="Full Name*"
                   {...register("fullname", {
                     required: "Full Name is Required",
@@ -84,9 +84,9 @@ function ModalPopup(props: any) {
                     trigger("fullname");
                   }}
                 />
-                {errors.fullname && (
+                {errors?.fullname && (
                   <small className="text-danger">
-                    {errors.fullname.message}
+                    {errors?.fullname?.message}
                   </small>
                 )}
               </div>
@@ -95,7 +95,7 @@ function ModalPopup(props: any) {
               <label>Email*</label>
               <div className="form-group">
                 <input
-                  className={`{errors.email && "invalid"}`}
+                  className={`${errors?.email && "invalid"}`}
                   placeholder="Email*"
                   {...register("email", {
                     required: "Email is Required",
@@ -108,8 +108,8 @@ function ModalPopup(props: any) {
                     trigger("email");
                   }}
                 />
-                {errors.email && (
-                  <small className="text-danger">{errors.email.message}</small>
+                {errors?.email && (
+                  <small className="text-danger">{errors?.email?.message}</small>
                 )}
               </div>
             </div>
@@ -138,10 +138,10 @@ function ModalPopup(props: any) {
                   onChange={(e) => {
                     setValue("phone", e);
                   }}
-                  className={`${errors.phone && "invalid"}`}
+                  className={`${errors?.phone && "invalid"}`}
                 />
-                {errors.phone && (
-                  <small className="text-danger">{errors.phone.message}</small>
+                {errors?.phone && (
+                  <small className="text-danger">{errors?.phone?.message}</small>
                 )}
               </div>
             </div>
@@ -151,7 +151,7 @@ function ModalPopup(props: any) {
                 <input
                   type="text"
                   placeholder="Enter City"
-                  className={`${errors.city && "invalid"}`}
+                  className={`${errors?.city && "invalid"}`}
                   {...register("city", {
                     required: "City is Required",
                     pattern: {
@@ -163,8 +163,8 @@ function ModalPopup(props: any) {
                     trigger("city");
                   }}
                 />
-                {errors.city && (
-                  <small className="text-danger">{errors.city.message}</small>
+                {errors?.city && (
+                  <small className="text-danger">{errors?.city?.message}</small>
                 )}
               </div>
             </div>
@@ -172,8 +172,8 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Course you are looking for*</label>
                 <select
-                  className={`select-course form-select{
-                    errors.gender &&
+                  className={`select-course form-select${
+                    errors?.gender &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   }`}
                   {...register("Programme", {
@@ -192,9 +192,9 @@ function ModalPopup(props: any) {
                     );
                   })}
                 </select>
-                {errors.Programme && (
+                {errors?.Programme && (
                   <small className="text-danger">
-                    {errors.Programme.message}
+                    {errors?.Programme?.message}
                   </small>
                 )}
               </div>
@@ -203,7 +203,7 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Interested Topic*</label>
                 <input
-                  className={`{errors.fullname && "invalid"}`}
+                  className={`${errors?.fullname && "invalid"}`}
                   placeholder="Full Name*"
                   {...register("topic", {
                     required: "Full Name is Required",
@@ -216,8 +216,8 @@ function ModalPopup(props: any) {
                     trigger("topic");
                   }}
                 />
-                {errors.topic && (
-                  <small className="text-danger">{errors.topic.message}</small>
+                {errors?.topic && (
+                  <small className="text-danger">{errors?.topic.message}</small>
                 )}
               </div>
             </div>
@@ -225,8 +225,8 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Select Highest Qualification</label>
                 <select
-                  className={`select-course form-select{
-                    errors.gender &&
+                  className={`select-course form-select${
+                    errors?.gender &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   }`}
                   {...register("qualification", {
@@ -238,16 +238,16 @@ function ModalPopup(props: any) {
                     <option value={item.value}>{item.option}</option>
                   ))}
                 </select>
-                {errors.qualification && (
+                {errors?.qualification && (
                   <small className="text-danger">
-                    {errors.qualification.message}
+                    {errors?.qualification.message}
                   </small>
                 )}
               </div>
             </div>
           </div>
 
-          <div className="d-flex mt-3 justify-content-center align-items-center">      
+          <div className="d-flex mt-3 justify-content-center align-items-center">
             <button
               className="theme-btn btn-style-two mr-2"
               onClick={(e) => props.setShows(false)}
