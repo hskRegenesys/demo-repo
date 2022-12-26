@@ -43,7 +43,7 @@ export default function LandingForm(contactform: any) {
         item?.mode_id === 1
     );
   }
-
+  const hookForm: any = useForm();
   const {
     formState: { errors },
     reset,
@@ -52,13 +52,12 @@ export default function LandingForm(contactform: any) {
     setError,
     register,
     handleSubmit,
-  } = useForm();
+  } = hookForm;
 
   return (
     <div className="contact-section ">
       <div className="auto-container">
         <form className="form-box text-start" onSubmit={handleSubmit(onSubmit)}>
- 
           <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group">
@@ -106,9 +105,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
-            </div>
+          </div>
 
-            <div className="row mb-4">
+          <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group position-relative">
                 <label>Phone</label>
@@ -164,9 +163,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
-            </div>
+          </div>
 
-            <div className="row mb-4">
+          <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Course you are looking for*</label>
@@ -220,9 +219,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
-            </div>
+          </div>
 
-            <div className="row">
+          <div className="row">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Select Highest Qualification</label>
@@ -247,12 +246,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
-            </div>
+          </div>
 
-
-
-
-            {/* <div className="col-md-12 mt-4">
+          {/* <div className="col-md-12 mt-4">
               <div className="form-group">
                 <button type="submit" className="theme-btn btn-style-two">
                   <i className="btn-curve"></i>
@@ -260,13 +256,13 @@ export default function LandingForm(contactform: any) {
                 </button>
               </div>
             </div>  */}
-    
-            <div className="row text-center">
+
+          <div className="row text-center">
             <button className="theme-btn btn-style-two mt-5" type="submit">
-                  <i className="btn-curve"></i>
-                  <span className="btn-title">Submit</span>
-            </button>         
-            </div>
+              <i className="btn-curve"></i>
+              <span className="btn-title">Submit</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
