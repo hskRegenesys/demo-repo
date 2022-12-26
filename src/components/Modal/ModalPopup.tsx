@@ -185,7 +185,6 @@ function ModalPopup(props: any) {
                   </option>
 
                   {courses.map((val: any) => {
-                    console.log("courses--------------->", courses);
                     return (
                       <option key={val.id} value={val.name}>
                         {val.name}
