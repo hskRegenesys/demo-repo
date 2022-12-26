@@ -13,7 +13,7 @@ function ModalPopup(props: any) {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
   };
-
+  const hookForm: any = useForm();
   const {
     formState: { errors },
     reset,
@@ -22,7 +22,7 @@ function ModalPopup(props: any) {
     setError,
     register,
     handleSubmit,
-  } = useForm();
+  } = hookForm;
 
   const onSubmit = (data: any) => {
     const current = new Date();
@@ -109,7 +109,9 @@ function ModalPopup(props: any) {
                   }}
                 />
                 {errors?.email && (
-                  <small className="text-danger">{errors?.email?.message}</small>
+                  <small className="text-danger">
+                    {errors?.email?.message}
+                  </small>
                 )}
               </div>
             </div>
@@ -141,7 +143,9 @@ function ModalPopup(props: any) {
                   className={`${errors?.phone && "invalid"}`}
                 />
                 {errors?.phone && (
-                  <small className="text-danger">{errors?.phone?.message}</small>
+                  <small className="text-danger">
+                    {errors?.phone?.message}
+                  </small>
                 )}
               </div>
             </div>
