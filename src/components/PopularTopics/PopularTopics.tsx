@@ -75,12 +75,10 @@ const TeamSection = ({ onePage = false }) => {
   const listRef = useRef(null);
 
   return (
-    <section  className="team-section no-padd-top" id="team">
+    <section className="team-section no-padd-top" id="team">
       <div className="auto-container">
         <div className="sec-title">
-          <h2 className="with-curve">
-            {title}      
-          </h2>
+          <h2 className="with-curve">{title}</h2>
         </div>
       </div>
       <div className={onePage ? "auto-container" : ""}>

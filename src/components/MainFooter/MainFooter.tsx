@@ -25,7 +25,7 @@ const {
 } = mainFooter;
 
 const MainFooter = ({ normalPadding = true }) => {
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     console.log(formData.get("email"));
@@ -52,27 +52,24 @@ const MainFooter = ({ normalPadding = true }) => {
                     <ul className="social-links clearfix">
                       {socials?.map(({ id, icon, href }) => (
                         <li key={id}>
-                          <a href={href}>
+                          <a href={href} target="_blank">
                             <span className={icon}></span>
                           </a>
                         </li>
                       ))}
                     </ul>
-
                   </Col>
-
                 </Row>
               </div>
             </div>
           </Col>
 
-
           <Col xl={9} lg={8} md={8} sm={12} className="column">
             <div className="footer-widget logo-widget">
               <div className="widget-content row">
                 <h5>{text}</h5>
-                </div>
-                <div className="widget-content row">
+              </div>
+              <div className="widget-content row">
                 <Col xl={3} lg={6} md={6} sm={12} className="column">
                   <div className="footer-widget info-widget">
                     <div className="widget-content address">
@@ -86,17 +83,20 @@ const MainFooter = ({ normalPadding = true }) => {
                         <h6>Contact Details</h6>
                         <li>
                           <span className="icon flaticon-call"></span>
-                          <a href={`tel:${phone.split(" ").join("")}`}>{phone}</a>
+                          <a href={`tel:${phone.split(" ").join("")}`}>
+                            {phone}
+                          </a>
                         </li>
                         <li>
                           <span className="icon flaticon-link"></span>
-                          <a href={`${web}`}>{web}</a>
+                          <a href={`${web}`} target="_blank">
+                            {web}
+                          </a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </Col>
-
 
                 <Col xl={3} lg={6} md={6} sm={12} className="column">
                   <div className="footer-widget info-widget">
@@ -110,17 +110,20 @@ const MainFooter = ({ normalPadding = true }) => {
                         <h6>Contact Details</h6>
                         <li>
                           <span className="icon flaticon-call"></span>
-                          <a href={`tel:${phone2.split(" ").join("")}`}>{phone2}</a>
+                          <a href={`tel:${phone2.split(" ").join("")}`}>
+                            {phone2}
+                          </a>
                         </li>
                         <li>
                           <span className="icon flaticon-link"></span>
-                          <a href={`${web2}`}>{web2}</a>
+                          <a href={`${web2}`} target="_blank">
+                            {web2}
+                          </a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </Col>
-
 
                 <Col xl={3} lg={6} md={6} sm={12} className="column">
                   <div className="footer-widget info-widget">
@@ -134,31 +137,30 @@ const MainFooter = ({ normalPadding = true }) => {
                         <h6>Contact Details</h6>
                         <li>
                           <span className="icon flaticon-call"></span>
-                          <a href={`tel:${phone3.split(" ").join("")}`}>{phone3}</a>
+                          <a href={`tel:${phone3.split(" ").join("")}`}>
+                            {phone3}
+                          </a>
                         </li>
                         <li>
                           <span className="icon flaticon-link "></span>
-                          <a href={`${web3}`}>{web3}</a>
+                          <a href={`${web3}`} target="_blank">
+                            {web3}
+                          </a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </Col>
-
-
               </div>
             </div>
           </Col>
-
-
-
         </Row>
-
       </div>
       <div className="footer-bottom bg-secondary">
         <div className="inner clearfix">
           <div className="copyright">
-            Copyright &copy; {year} | Regenesys Business School (Pvt) Ltd | All Rights Reserved
+            Copyright &copy; {year} | Regenesys Business School (Pvt) Ltd | All
+            Rights Reserved
           </div>
         </div>
       </div>
