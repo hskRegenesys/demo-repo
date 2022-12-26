@@ -36,7 +36,6 @@ const DigitalMarketing = () => {
   }, [courseId]);
   const allContent: any = courseData;
   const courseDetails: any = allContent[coursePriceDetails[0]?.code];
-  console.log(courseDetails)
   return (
     <Layout pageTitle={router?.query?.course}>
       <Style />

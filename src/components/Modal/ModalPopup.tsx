@@ -6,13 +6,18 @@ import { useForm } from "react-hook-form";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
 import { courseService, leadService } from "src/services";
+import { useRouter } from "next/router";
 
 function ModalPopup(props: any) {
+  const router = useRouter()
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
   };
+  useEffect(() => {
+    getData();
+  }, []);
   const hookForm: any = useForm();
   const {
     formState: { errors },
@@ -24,22 +29,20 @@ function ModalPopup(props: any) {
     handleSubmit,
   } = hookForm;
 
-  const onSubmit = (data: any) => {
+  const onSubmit = async(data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
     data.zapUrl = "";
-    data.highestQualification = "";
-    data.interestedTopic = "";
     const date = `${current.getDate()}/${
       current.getMonth() + 1
     }/${current.getFullYear()}`;
     if (date) {
       data.date = date;
     }
-    useEffect(() => {
-      getData();
-    }, []);
-    const result = leadService.saveLead(data);
+    const result = await leadService.saveLead(data);
+    if(result?.data){
+      router.push('/thankYou')
+    }
   };
 
   let courses: any = [];
@@ -71,9 +74,9 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Full Name*</label>
                 <input
-                  className={`${errors?.fullname && "invalid"}`}
+                  className={`${errors?.Name && "invalid"}`}
                   placeholder="Full Name*"
-                  {...register("fullname", {
+                  {...register("Name", {
                     required: "Full Name is Required",
                     pattern: {
                       value: /^[a-zA-Z_ ]+$/,
@@ -81,13 +84,11 @@ function ModalPopup(props: any) {
                     },
                   })}
                   onKeyUp={() => {
-                    trigger("fullname");
+                    trigger("Name");
                   }}
                 />
-                {errors?.fullname && (
-                  <small className="text-danger">
-                    {errors?.fullname?.message}
-                  </small>
+                {errors?.Name && (
+                  <small className="text-danger">{errors?.Name?.message}</small>
                 )}
               </div>
             </div>
@@ -95,9 +96,9 @@ function ModalPopup(props: any) {
               <label>Email*</label>
               <div className="form-group">
                 <input
-                  className={`${errors?.email && "invalid"}`}
+                  className={`${errors?.Email && "invalid"}`}
                   placeholder="Email*"
-                  {...register("email", {
+                  {...register("Email", {
                     required: "Email is Required",
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -105,12 +106,12 @@ function ModalPopup(props: any) {
                     },
                   })}
                   onKeyUp={() => {
-                    trigger("email");
+                    trigger("Email");
                   }}
                 />
-                {errors?.email && (
+                {errors?.Email && (
                   <small className="text-danger">
-                    {errors?.email?.message}
+                    {errors?.Email?.message}
                   </small>
                 )}
               </div>
@@ -120,7 +121,7 @@ function ModalPopup(props: any) {
                 <label>Phone</label>
                 <input
                   type="hidden"
-                  {...register("phone", {
+                  {...register("Phone", {
                     maxLength: {
                       value: 16,
                       message: "Cannot Exceed 10 digits",
@@ -138,13 +139,13 @@ function ModalPopup(props: any) {
                   defaultCountry="ZA"
                   placeholder="Select Country Code*"
                   onChange={(e) => {
-                    setValue("phone", e);
+                    setValue("Phone", e);
                   }}
-                  className={`${errors?.phone && "invalid"}`}
+                  className={`${errors?.Phone && "invalid"}`}
                 />
-                {errors?.phone && (
+                {errors?.Phone && (
                   <small className="text-danger">
-                    {errors?.phone?.message}
+                    {errors?.Phone?.message}
                   </small>
                 )}
               </div>
@@ -155,8 +156,8 @@ function ModalPopup(props: any) {
                 <input
                   type="text"
                   placeholder="Enter City"
-                  className={`${errors?.city && "invalid"}`}
-                  {...register("city", {
+                  className={`${errors?.City && "invalid"}`}
+                  {...register("City", {
                     required: "City is Required",
                     pattern: {
                       value: /^[a-zA-Z_ ]+$/,
@@ -164,11 +165,11 @@ function ModalPopup(props: any) {
                     },
                   })}
                   onKeyUp={() => {
-                    trigger("city");
+                    trigger("City");
                   }}
                 />
-                {errors?.city && (
-                  <small className="text-danger">{errors?.city?.message}</small>
+                {errors?.City && (
+                  <small className="text-danger">{errors?.City?.message}</small>
                 )}
               </div>
             </div>
@@ -177,10 +178,10 @@ function ModalPopup(props: any) {
                 <label>Course you are looking for*</label>
                 <select
                   className={`select-course form-select${
-                    errors?.gender &&
+                    errors?.interested_topic &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   }`}
-                  {...register("Programme", {
+                  {...register("interested_topic", {
                     required: "Course is required",
                   })}
                 >
@@ -196,32 +197,10 @@ function ModalPopup(props: any) {
                     );
                   })}
                 </select>
-                {errors?.Programme && (
+                {errors?.interested_topic && (
                   <small className="text-danger">
-                    {errors?.Programme?.message}
+                    {errors?.interested_topic?.message}
                   </small>
-                )}
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="form-group">
-                <label>Interested Topic*</label>
-                <input
-                  className={`${errors?.fullname && "invalid"}`}
-                  placeholder="Full Name*"
-                  {...register("topic", {
-                    required: "Full Name is Required",
-                    pattern: {
-                      value: /^[a-zA-Z_ ]+$/,
-                      message: "Invalid User Name",
-                    },
-                  })}
-                  onKeyUp={() => {
-                    trigger("topic");
-                  }}
-                />
-                {errors?.topic && (
-                  <small className="text-danger">{errors?.topic.message}</small>
                 )}
               </div>
             </div>
@@ -230,10 +209,10 @@ function ModalPopup(props: any) {
                 <label>Select Highest Qualification</label>
                 <select
                   className={`select-course form-select${
-                    errors?.gender &&
+                    errors?.highest_qualification &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   }`}
-                  {...register("qualification", {
+                  {...register("highest_qualification", {
                     required: "Qualification is required",
                   })}
                 >
@@ -242,9 +221,9 @@ function ModalPopup(props: any) {
                     <option value={item.value}>{item.option}</option>
                   ))}
                 </select>
-                {errors?.qualification && (
+                {errors?.highest_qualification && (
                   <small className="text-danger">
-                    {errors?.qualification.message}
+                    {errors?.highest_qualification?.message}
                   </small>
                 )}
               </div>
