@@ -5,12 +5,27 @@ import { useForm } from "react-hook-form";
 import { courseService } from "src/services";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
+import { leadService } from "src/services";
 
 export default function LandingForm(contactform: any) {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
+  };
+  const onSubmit = (data: any) => {
+    const current = new Date();
+    data.page_url = window.location.href;
+    data.zapUrl = "";
+    data.highestQualification = "";
+    data.interestedTopic = "";
+    const date = `${current.getDate()}/${
+      current.getMonth() + 1
+    }/${current.getFullYear()}`;
+    if (date) {
+      data.date = date;
+    }
+    const result = leadService.saveLead(data);
   };
 
   useEffect(() => {
@@ -28,8 +43,6 @@ export default function LandingForm(contactform: any) {
         item?.mode_id === 1
     );
   }
-
-  const onSubmit = (data: any) => console.log(data);
 
   const {
     formState: { errors },
@@ -93,7 +106,7 @@ export default function LandingForm(contactform: any) {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="form-group">
+              <div className="form-group position-relative">
                 <label>Phone</label>
                 <input
                   type="hidden"
@@ -130,7 +143,7 @@ export default function LandingForm(contactform: any) {
                 <input
                   type="text"
                   placeholder="Enter City"
-                  className={`form-control ${errors.city && "invalid"}`}
+                  className={`${errors.city && "invalid"}`}
                   {...register("city", {
                     required: "City is Required",
                     pattern: {
@@ -224,9 +237,12 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
-            <div className="col-md-12 mt-4">
+            <div className="col-md-12 text-center mt-4">
               <div className="form-group">
-                <input type="submit" />
+                <button type="submit" className="theme-btn btn-style-two">
+                  <i className="btn-curve"></i>
+                  <span className="btn-title">Submit</span>
+                </button>
               </div>
             </div>
           </div>
