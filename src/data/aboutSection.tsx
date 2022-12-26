@@ -1,7 +1,6 @@
-
 export const aboutSectionOne = {
-  image1:"/assets/images/resource/featured-image-1.jpg",
-  image2:"/assets/images/resource/featured-image-2.jpg",
+  image1: "/assets/images/resource/featured-image-1.jpg",
+  image2: "/assets/images/resource/featured-image-2.jpg",
   title: "We’re the best agency\nin downtown",
   text1:
     "We are committed to providing our customers with exceptional service while offering our employees the best training.",
@@ -27,7 +26,7 @@ export const aboutSectionTwo = {
 };
 
 export const aboutSectionThree = {
-  image:"/assets/images/update-1-12-2020/resources/about-1-1.jpg",
+  image: "/assets/images/update-1-12-2020/resources/about-1-1.jpg",
   title: "The Right People for your Business",
   subtitle: "welcome to business agency",
   text: "There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words which don look even slightly believable.",
@@ -38,11 +37,18 @@ export const aboutSectionThree = {
   ],
   barTitle: "Bussiness Success",
   barPercent: 70,
-  aboutPerson: { name: "William Smith", tagline: "Co Founder", image:"/assets/images/update-1-12-2020/resources/signture-1-1.png" },
+  aboutPerson: {
+    name: "William Smith",
+    tagline: "Co Founder",
+    image: "/assets/images/update-1-12-2020/resources/signture-1-1.png",
+  },
 };
 
 export const aboutSeven = {
-  images: ["/assets/images/update-01-10-2021/resources/about-seven-1-1.jpg",  "/assets/images/update-01-10-2021/resources/about-seven-1-2.jpg"],
+  images: [
+    "/assets/images/update-01-10-2021/resources/about-seven-1-1.jpg",
+    "/assets/images/update-01-10-2021/resources/about-seven-1-2.jpg",
+  ],
   tagline: "About Company",
   title: "We provide the best business services",
   text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, simply free text by injected humour, or randomised.",
@@ -58,7 +64,7 @@ export const aboutSix = {
   tagline: "Our Company Benefits",
   title: "Mission is to protect your business",
   text: "There are many variations of passages of available but the majority have suffered alteration in some form, injected humou or randomised words slightly believable.",
-  image:  "/assets/images/update-01-10-2021/resources/about-six-1-1.jpg",
+  image: "/assets/images/update-01-10-2021/resources/about-six-1-1.jpg",
   items: [
     {
       id: 1,
@@ -79,7 +85,7 @@ export const aboutSix = {
 };
 
 export const aboutNine = {
-  image:"/assets/images/update-01-10-2021/resources/about-nine-1-1.png",
+  image: "/assets/images/update-01-10-2021/resources/about-nine-1-1.png",
   icon: "flaticon-data",
   title: "Powerful Tools for Your Customers",
   titleHighlight: "Tools",
@@ -155,36 +161,36 @@ export const aboutTen = {
 };
 
 export const aboutMeOne = {
-  image:"/assets/images/marko.png",
+  image: "/assets/images/marko.png",
   title: "Dr Marko Saravanja",
-  subtitle:"Executive Chairperson / Regenesys Business School",
+  subtitle: "Executive Chairperson / Regenesys Business School",
   highlight: "Shifting The Focus to The New Digital World",
   text: "I am delighted to welcome you to Digital Regenesys at Regenesys Business School. The ongoing digital revolution demands a new breed of professionals to succeed in the new digital world where new technologies have sparked rapid innovation.",
   text2:
     "To give you a competitive advantage, we have developed cuttingedge digital technology Courses in the areas of information technology and management. Our Courses are facilitated by leading experts, entrepreneurs, and academics from top local and international institutions. Get inspired and energised to transform your career with Courses grounded in the realities of the new digtital world.",
   text3: "I wish you success on your journey towards greatness.",
-  socials: [
-    {
-      id: 1,
-      icon: "fab fa-twitter",
-      href: "#",
-    },
-    {
-      id: 2,
-      icon: "fab fa-facebook-f",
-      href: "#",
-    },
-    {
-      id: 3,
-      icon: "fab fa-linkedin-in",
-      href: "#",
-    },
-    {
-      id: 4,
-      icon: "fab fa-pinterest-p",
-      href: "#",
-    },
-  ],
+  // socials: [
+  //   {
+  //     id: 1,
+  //     icon: "fab fa-twitter",
+  //     href: "#",
+  //   },
+  //   {
+  //     id: 2,
+  //     icon: "fab fa-facebook-f",
+  //     href: "#",
+  //   },
+  //   {
+  //     id: 3,
+  //     icon: "fab fa-linkedin-in",
+  //     href: "#",
+  //   },
+  //   {
+  //     id: 4,
+  //     icon: "fab fa-pinterest-p",
+  //     href: "#",
+  //   },
+  // ],
 };
 
 export const aboutMeCounter = {
