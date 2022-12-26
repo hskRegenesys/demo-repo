@@ -17,9 +17,10 @@ const ProcessOne = ({ courseDetails }: any) => {
               <Col md={7}>
                 <div className="process-one__content">
                   <div className="sec-title">
-                    <h1>
-                      {title} <span className="dot">.</span>
-                    </h1>
+                    <h2 className="arrow-right-bottom">
+                      <i className="arrow-sign-right"></i>
+                      {title}
+                    </h2>
                   </div>
                   <p className="process-one__summery">{text}</p>
 

@@ -122,9 +122,8 @@ const HeaderOne = ({
           </div>
         </div>
       )}
-      <div className="header-upper">
-        <div className="autoContainer">
-          <div className="auto-container clearfix">
+      <div className="header-upper">       
+          <div className="auto-container d-flex clearfix">
             <div className="logo-box">
               <div className="logo">
                 <Link href="#">
@@ -205,7 +204,6 @@ const HeaderOne = ({
               </div>
             )}
           </div>
-        </div>
       </div>
     </header>
   );

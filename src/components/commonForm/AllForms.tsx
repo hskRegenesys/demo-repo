@@ -5,12 +5,27 @@ import { useForm } from "react-hook-form";
 import { courseService } from "src/services";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
+import { leadService } from "src/services";
 
 export default function LandingForm(contactform: any) {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
+  };
+  const onSubmit = (data: any) => {
+    const current = new Date();
+    data.page_url = window.location.href;
+    data.zapUrl = "";
+    data.highestQualification = "";
+    data.interestedTopic = "";
+    const date = `${current.getDate()}/${
+      current.getMonth() + 1
+    }/${current.getFullYear()}`;
+    if (date) {
+      data.date = date;
+    }
+    const result = leadService.saveLead(data);
   };
 
   useEffect(() => {
@@ -29,8 +44,6 @@ export default function LandingForm(contactform: any) {
     );
   }
 
-  const onSubmit = (data: any) => console.log(data);
-
   const {
     formState: { errors },
     reset,
@@ -44,8 +57,9 @@ export default function LandingForm(contactform: any) {
   return (
     <div className="contact-section ">
       <div className="auto-container">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="row">
+        <form className="form-box text-start" onSubmit={handleSubmit(onSubmit)}>
+ 
+          <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Full Name*</label>
@@ -92,8 +106,11 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
+            </div>
+
+            <div className="row mb-4">
             <div className="col-md-6">
-              <div className="form-group">
+              <div className="form-group position-relative">
                 <label>Phone</label>
                 <input
                   type="hidden"
@@ -130,7 +147,7 @@ export default function LandingForm(contactform: any) {
                 <input
                   type="text"
                   placeholder="Enter City"
-                  className={`form-control ${errors.city && "invalid"}`}
+                  className={`${errors.city && "invalid"}`}
                   {...register("city", {
                     required: "City is Required",
                     pattern: {
@@ -147,6 +164,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
+            </div>
+
+            <div className="row mb-4">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Course you are looking for*</label>
@@ -200,6 +220,9 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
+            </div>
+
+            <div className="row">
             <div className="col-md-6">
               <div className="form-group">
                 <label>Select Highest Qualification</label>
@@ -224,12 +247,26 @@ export default function LandingForm(contactform: any) {
                 )}
               </div>
             </div>
-            <div className="col-md-12 mt-4">
-              <div className="form-group">
-                <input type="submit" />
-              </div>
             </div>
-          </div>
+
+
+
+
+            {/* <div className="col-md-12 mt-4">
+              <div className="form-group">
+                <button type="submit" className="theme-btn btn-style-two">
+                  <i className="btn-curve"></i>
+                  <span className="btn-title">Submit</span>
+                </button>
+              </div>
+            </div>  */}
+    
+            <div className="row text-center">
+            <button className="theme-btn btn-style-two mt-5" type="submit">
+                  <i className="btn-curve"></i>
+                  <span className="btn-title">Submit</span>
+            </button>         
+            </div>
         </form>
       </div>
     </div>

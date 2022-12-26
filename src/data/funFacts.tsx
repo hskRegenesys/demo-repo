@@ -32,19 +32,19 @@ export default funFacts;
 export const funFactSix = [
   {
     id: 1,
-    icon: "flaticon-architect",
+    image: "assets/images/icons/academic.png",
     count: 200000,
     text: "Alumini",
   },
   {
     id: 2,
-    icon: "flaticon-architect-1",
+    image: "assets/images/icons/students.png",
     count: 35276,
     text: "Students",
   },
   {
     id: 3,
-    icon: "flaticon-buildings",
+    image: "assets/images/icons/awards.png",
     count: 1997,
     text: "Established",
   }

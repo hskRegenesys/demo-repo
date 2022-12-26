@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { Image } from "react-bootstrap";
 
 const SingleTestimonialFive = (props:any) => {
-  const { image, text, title } = props.testimonial;
+  const { image, text, name } = props.testimonial;
 
   return (
     <div className="item" style={{ userSelect: "none" }}>
@@ -13,10 +13,7 @@ const SingleTestimonialFive = (props:any) => {
           className="testimonials-five-card__image"
         />
         <p className="testimonials-five-card__text">{text}</p>
-        <h3 className="testimonials-five-card__title">{title}</h3>
-        <span className="testimonials-five-card__designation">
-          
-        </span>
+        <h3 className="testimonials-five-card__title">{name}</h3>     
       </div>
     </div>
   );
