@@ -43,29 +43,26 @@ export const serviceSectionThree = [
     id: 1,
     icon: "fa fa-laptop",
     title: "Live Classes",
-    desc : "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
+    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
   },
   {
     id: 2,
     icon: "fa fa-user-check",
     title: "Ph.D.Faculty",
-    desc : "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
-  
+    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
   },
   {
     id: 3,
     icon: "fa fa-users",
     title: "Industry Experts",
-    desc : "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
-  
+    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
   },
   {
     id: 4,
     icon: "far fa-file-alt",
     title: "Digital Regenesys Certification",
-    desc : "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
-  
-  }
+    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
+  },
 ];
 
 export const servicesSectionOne = {
