@@ -247,7 +247,7 @@ function ModalPopup(props: any) {
             </div>
           </div>
 
-          <div className="d-block mt-3 text-center">
+          <div className="d-flex mt-3 justify-content-center align-items-center">      
             <button
               className="theme-btn btn-style-two mr-2"
               onClick={(e) => props.setShows(false)}
