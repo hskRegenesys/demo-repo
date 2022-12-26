@@ -1784,3 +1784,13 @@ export const courseData = {
     },
   },
 };
+
+export const brochureName = {
+  AVDM: {},
+  PM: {},
+  CS: {},
+  BDM: {},
+  APDM: {},
+  APDSCI: {},
+  BDSCI: {},
+};
