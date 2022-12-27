@@ -6,11 +6,13 @@ class LeadService {
     this.appAPIServer = appAPIServer;
   }
 
-
-async saveLead(params:any) {
+  async saveLead(params: any) {
     let result: any = [];
     try {
-      const response = await this.appAPIServer.post(apiEndPoints.leadApi, params);
+      const response = await this.appAPIServer.post(
+        apiEndPoints.leadApi,
+        params
+      );
       result = response?.data;
     } catch (err: any) {
       result = err?.response;
@@ -20,8 +22,6 @@ async saveLead(params:any) {
       return result;
     }
   }
-
- 
 }
 
 export default LeadService;

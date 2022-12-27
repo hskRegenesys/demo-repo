@@ -1809,12 +1809,34 @@ export const courseData = {
   },
 };
 
-export const brochureName = {
-  AVDM: {},
-  PM: {},
-  CS: {},
-  BDM: {},
-  APDM: {},
-  APDSCI: {},
-  BDSCI: {},
+export const brochureDetails:any = {
+  //Advance-Digital-Marketing
+  AVDM: {
+    name: "DigitalMarketingAdvancedBrochure.pdf",
+  },
+
+  //Project Management
+  PM: {
+    name: "projectManagement_brochure.pdf",
+  },
+
+  //Cybersecurity
+  CS: { name: "cyberSecurity_brochure.pdf" },
+
+  //Basic Data Science
+  BDSCI: { name: "basicDataScience_brochure.pdf" },
+
+  //"Basic Digital Marketing"
+  BDM: { name: "DigitalMarketingBasicBrochure.pdf" },
+
+  //"Applied Digital Marketing"
+  APDM: { name: "DigitalMarketingAppliedBrochure.pdf" },
+
+  //Applied Data Science
+  APDSCI: {
+    name: "appliedDataScience_brochure.pdf",
+  },
+
+  //Advance Data Science
+  ADDSCI: { name: "advanceDataScience_brochure.pdf" },
 };

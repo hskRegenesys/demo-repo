@@ -7,6 +7,7 @@ import _ from "lodash";
 import Data from "@/data/AllformsData";
 import { courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
+import {downloadFromBlob} from "@/components/config/helper"
 
 function ModalPopup(props: any) {
   const router = useRouter()
@@ -41,6 +42,8 @@ function ModalPopup(props: any) {
     }
     const result = await leadService.saveLead(data);
     if(result?.data){
+    const response =  await courseService.downloadBrochure(props?.brochureName?.name)
+    downloadFromBlob(response?.data, props?.brochureName?.name)==false
       router.push('/thankYou')
     }
   };
