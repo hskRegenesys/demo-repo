@@ -25236,3 +25236,8 @@ background-repeat: no-repeat;
 width: 100%;
 min-height: 850px;
 }
+
+.sponsors-carousel .tns-inner
+{
+  text-align: center;
+}
