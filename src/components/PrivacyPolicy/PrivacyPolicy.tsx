@@ -62,8 +62,8 @@ const PrivacyPolicy = () => {
               </h5>
 
               <ul>
-                <li><i class="far fa-check-circle"></i> {list1}</li>
-                <li><i class="far fa-check-circle"></i>{list2}</li>
+                <li><i className="far fa-check-circle"></i> {list1}</li>
+                <li><i className="far fa-check-circle"></i>{list2}</li>
               </ul>
               <p>{paragraph10}</p>
 

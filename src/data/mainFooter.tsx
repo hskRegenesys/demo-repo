@@ -60,12 +60,12 @@ export const mainFooter = {
   links: [
     {
       id: 1,
-      href: "",
+      href: "/terms-and-conditions",
       title: "Terms & Conditions",
     },
     {
       id: 2,
-      href: "",
+      href: "/privacy-policy",
       title: "Privacy Policy",
     },
     {

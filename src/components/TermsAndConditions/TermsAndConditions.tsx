@@ -23,13 +23,13 @@ const TermsAndConditions = () => {
               </h6>
               
               <ul>
-                <li><i class="far fa-check-circle"></i>{list1}</li>
-                <li><i class="far fa-check-circle"></i>{list2}</li>
-                <li><i class="far fa-check-circle"></i>{list3}</li>
-                <li><i class="far fa-check-circle"></i>{list4}</li>
-                <li><i class="far fa-check-circle"></i>{list5}</li>
-                <li><i class="far fa-check-circle"></i>{list6}</li>
-                <li><i class="far fa-check-circle"></i> {list7}</li>
+                <li><i className="far fa-check-circle"></i>{list1}</li>
+                <li><i className="far fa-check-circle"></i>{list2}</li>
+                <li><i className="far fa-check-circle"></i>{list3}</li>
+                <li><i className="far fa-check-circle"></i>{list4}</li>
+                <li><i className="far fa-check-circle"></i>{list5}</li>
+                <li><i className="far fa-check-circle"></i>{list6}</li>
+                <li><i className="far fa-check-circle"></i> {list7}</li>
               </ul>
 
               <h6>
@@ -67,15 +67,15 @@ const TermsAndConditions = () => {
 
 
 
-              
+
 
               <h5>
                 {subTitle}
               </h5>
 
               <ul>
-                <li><i class="far fa-check-circle"></i> {list1}</li>
-                <li><i class="far fa-check-circle"></i>{list2}</li>
+                <li><i className="far fa-check-circle"></i> {list1}</li>
+                <li><i className="far fa-check-circle"></i>{list2}</li>
               </ul>
               <p>{paragraph10}</p>
 
