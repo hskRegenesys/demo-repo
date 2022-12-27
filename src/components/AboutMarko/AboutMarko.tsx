@@ -24,14 +24,13 @@ const AboutMarko = () => {
                </div>
             </Col>
 
-            <Col md={12} lg={6}>
-              <div className="about-me-one__image">
-                <Image src={image} alt="" />
-              </div>
-            </Col>
-          </Row>
-        </div>
-      
+          <Col md={12} lg={6}>
+            <div className="about-me-one__image">
+              <Image src={image} alt="" />
+            </div>
+          </Col>
+        </Row>
+      </div>
     </section>
   );
 };
