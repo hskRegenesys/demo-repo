@@ -685,8 +685,7 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1:
-        "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
+      subTitle1: "Exposure",
       desc1:
         "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
 
