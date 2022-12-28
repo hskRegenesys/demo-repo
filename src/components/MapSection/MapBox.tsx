@@ -5,7 +5,8 @@ const MapBox = () => {
     <div className="map-box">
       <iframe
         className="map-iframe"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15088.900050223941!2d72.835704!3d19.009804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7701195b79ba988!2sRegenesys%20Business%20School!5e0!3m2!1sen!2sin!4v1670132120897!5m2!1sen!2sin"   loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.6920871831026!2d73.0072521!3d19.077271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1f0b34f5f01%3A0x6ddb59351ca12c12!2sDigital%20Regenesys%20-%20India!5e0!3m2!1sen!2sin!4v1672136061648!5m2!1sen!2sin"
+        loading="lazy"
         aria-hidden={false}
         tabIndex={0}
       ></iframe>
@@ -13,9 +14,4 @@ const MapBox = () => {
   );
 };
 
-
-
-
 export default MapBox;
-
-

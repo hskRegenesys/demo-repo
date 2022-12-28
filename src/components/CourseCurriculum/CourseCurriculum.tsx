@@ -14,7 +14,7 @@ const Faqs = (props: any) => {
       </h3>
       <ul className="accordion-box clearfix">
         {faqs?.map((item: any) => {
-          let { id, title, text } = item;
+          let { id, title, lists } = item;
           return (
             <li
               key={id}
@@ -35,7 +35,14 @@ const Faqs = (props: any) => {
                 }`}
               >
                 <div className="content">
-                  <div className="text">{text}</div>
+                  <div className="text">
+                    {lists?.map((text: string, i: number) => (
+                      <li key={i}>
+                        <i className="fa fa-check" aria-hidden="true"></i>
+                        {text}
+                      </li>
+                    ))}
+                  </div>
                 </div>
               </div>
             </li>
@@ -51,7 +58,7 @@ const CourseCurriculum = ({ courseDetails }: any) => {
     <section className="faqs-section curriculum">
       <div className="auto-container">
         <Row className="clearfix">
-          {courseDetails?.faqsSection?.map((allFaqs: any) => (
+          {courseDetails?.CourseCurriculum?.map((allFaqs: any) => (
             <Faqs key={allFaqs.id} allFaqs={allFaqs} />
           ))}
         </Row>

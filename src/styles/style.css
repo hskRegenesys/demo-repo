@@ -733,7 +733,7 @@ img {
 }
 
 .main-header .nav-outer {
-   text-align: right;
+  text-align: right;
   width: 100%;
   z-index: 5;
   margin-right: 40px;
@@ -3623,7 +3623,7 @@ img.lazy-image.loaded {
   position: relative;
   margin-bottom: 50px;
 }
-.sec-title >h1 {
+.sec-title > h1 {
   font-size: 46px;
 }
 
@@ -4632,6 +4632,9 @@ img.lazy-image.loaded {
   display: block;
 }
 
+.accordion-box .block .acc-content i {
+  margin-right: 10px;
+}
 .accordion-box .block .content .text {
   display: block;
   position: relative;
@@ -4760,10 +4763,10 @@ img.lazy-image.loaded {
   display: flex;
   justify-content: center;
 }
-.tabFullBox .tab-item{
-width: 25%;
-    margin: 20px;
-    max-width: 370px;
+.tabFullBox .tab-item {
+  width: 25%;
+  margin: 20px;
+  max-width: 370px;
 }
 .gallery-item {
   position: relative;
@@ -6677,12 +6680,11 @@ width: 25%;
   font-weight: 500;
   margin: 0;
   z-index: 3;
-  font-family: "Raleway-semibold";  
+  font-family: "Raleway-semibold";
   max-width: 400px;
 }
 
-.call-to-action-arrow
-{
+.call-to-action-arrow {
   background-image: url(/assets/images/icons/call-to-action.png);
   background-repeat: no-repeat;
   background-size: 30px;
@@ -6693,8 +6695,7 @@ width: 25%;
   top: -20px;
 }
 
-.contact-page.call-to-action-arrow
-{
+.contact-page.call-to-action-arrow {
   right: -12px;
   top: -18px;
 }
@@ -6759,13 +6760,11 @@ width: 25%;
   position: relative;
 }
 
-.main-footer .footer-widget.links-widget
-{
+.main-footer .footer-widget.links-widget {
   position: absolute;
   width: 400px;
   bottom: 0;
 }
-
 
 .main-footer .footer-widget .contact-info h6 {
   margin-top: 40px;
@@ -7599,18 +7598,15 @@ width: 25%;
   max-height: 886px;
 }
 
-featured-section  .right-col .sec-title h2
-{
+featured-section .right-col .sec-title h2 {
   max-width: 420px;
 }
 
-
-.featured-section .right-col .inner h1{
+.featured-section .right-col .inner h1 {
   font-size: 52px;
-  font-family: 'Raleway-semibold';
+  font-family: "Raleway-semibold";
   max-width: 465px;
 }
-
 
 .featured-section__about-two {
   background-color: #fff;
@@ -7758,7 +7754,7 @@ featured-section  .right-col .sec-title h2
 .all-course-link {
   display: flex;
   margin: 30px;
-  justify-content: flex-end;;
+  justify-content: flex-end;
   font-size: 18px;
 
   text-decoration: underline;
@@ -8641,7 +8637,6 @@ featured-section  .right-col .sec-title h2
   padding-top: 50px;
 }
 
-
 .testimonials-five .testimonials-five-card .testimonials-five-card__image {
   display: block;
   margin-left: auto;
@@ -8710,20 +8705,16 @@ featured-section  .right-col .sec-title h2
   position: absolute;
   right: 90px;
   bottom: 70px;
-
-
 }
 
-.testimonials-five__carousel .fa-quote-right
-{
+.testimonials-five__carousel .fa-quote-right {
   transform: scaleX(-1);
   font-size: 40px;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 50px;
   left: 50px;
 }
-
 
 @media (min-width: 992px) {
   .testimonials-five__carousel .tns-controls {
@@ -10664,13 +10655,12 @@ featured-section  .right-col .sec-title h2
   }
 }
 
-.about-me-one__image
-{
+.about-me-one__image {
   text-align: center;
 }
 
 .about-me-one__image img {
-max-width: 450px;
+  max-width: 450px;
 }
 
 @media (min-width: 1200px) {
@@ -11292,8 +11282,7 @@ max-width: 450px;
   margin-bottom: 20px;
 }
 
-.faqs-section .faq-block .accordion-box .block .content
-{
+.faqs-section .faq-block .accordion-box .block .content {
   padding: 0px 40px 20px 0;
 }
 
@@ -11500,8 +11489,7 @@ max-width: 450px;
   border: 2px solid #000;
   border-radius: 25px;
 }
-.contact-section .form-box label
-{
+.contact-section .form-box label {
   font-family: Raleway-bold;
 }
 
@@ -16168,7 +16156,6 @@ h2.curve-right:after {
   transform: scaleX(-1);
 }
 
-
 @media (min-width: 1200px) {
   .product-details__title {
     margin-top: -5px;
@@ -19167,10 +19154,7 @@ h2.curve-right:after {
   align-items: center;
 }
 
-
-
 .funfact-six__count .image-box {
-
   color: #fff;
   font-size: 26px;
   line-height: 1;
@@ -24301,7 +24285,7 @@ h2.curve-right:after {
   background-repeat: no-repeat;
 }
 
-.process-one__content h2{
+.process-one__content h2 {
   max-width: 525px;
 }
 
@@ -24315,9 +24299,11 @@ h2.curve-right:after {
   float: left;
   width: 100%;
 }
+.process-one__content i {
+  margin-right: 10px;
+}
 
-.process-one__image__column  .process-one__image
-{
+.process-one__image__column .process-one__image {
   max-height: 800px;
   background-image: url(/assets/images/background/all-course-bg.png);
   background-position: left center;
@@ -24826,12 +24812,11 @@ p.highlight {
   height: auto;
 }
 
-
 .sign-arrow-contact img {
   position: absolute;
   width: 118px;
   right: 0;
-  top: 120px
+  top: 120px;
 }
 
 .how-it-works
@@ -25079,38 +25064,32 @@ h6.designation {
   margin-right: 10px;
 }
 
-input.PhoneInputInput
-{
+input.PhoneInputInput {
   padding-left: 66px !important;
 }
 
-.PhoneInputCountry
-{
+.PhoneInputCountry {
   position: absolute !important;
   margin-top: 28px;
   margin-left: 18px;
   height: 10px;
 }
 
-.testimonials-carousel-two
-{
-  background-color:#1fa393;
+.testimonials-carousel-two {
+  background-color: #1fa393;
   border-radius: 15px;
 }
 
-.text-danger
-{
+.text-danger {
   color: red;
-  font-family: 'Raleway-semibold';
+  font-family: "Raleway-semibold";
 }
 
-.pl-0
-{
+.pl-0 {
   padding-left: 0;
 }
 
-.process-one__content .sec-title h2 i
-{
+.process-one__content .sec-title h2 i {
   background-image: url(/assets/images/background/sign-arrow.png);
   background-size: 120px 120px;
   position: absolute;
@@ -25121,8 +25100,7 @@ input.PhoneInputInput
   top: 88px;
   background-repeat: no-repeat;
 }
-.we-work-section .sec-title h2
-{
+.we-work-section .sec-title h2 {
   max-width: 280px;
 }
 
@@ -25138,32 +25116,10 @@ input.PhoneInputInput
   background-repeat: no-repeat;
 }
 
-.product-details__title
-{
+.product-details__title {
   max-width: 450px;
 }
-.product-details__title i
-{
-background-image: url(/assets/images/background/sign-arrow-left.png);
-background-size: 100px 100px;
-position: absolute;
-z-index: 9;
-width: 100px;
-height: 100px;
-right: -12px;
-top: -37px;
-background-repeat: no-repeat;
-}
-
-.faq-block.curriculum h3
-{
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-
-.faq-block.curriculum h3 i
-{
+.product-details__title i {
   background-image: url(/assets/images/background/sign-arrow-left.png);
   background-size: 100px 100px;
   position: absolute;
@@ -25175,50 +25131,62 @@ background-repeat: no-repeat;
   background-repeat: no-repeat;
 }
 
-.fa-check-circle
-{
+.faq-block.curriculum h3 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-block.curriculum h3 i {
+  background-image: url(/assets/images/background/sign-arrow-left.png);
+  background-size: 100px 100px;
+  position: absolute;
+  z-index: 9;
+  width: 100px;
+  height: 100px;
+  right: -12px;
+  top: -37px;
+  background-repeat: no-repeat;
+}
+
+.fa-check-circle {
   font-size: 22px;
   color: #1fa393;
 }
 
-.privacy-policy h6{
-  font-family: 'Raleway-semibold';
+.privacy-policy h6 {
+  font-family: "Raleway-semibold";
   margin-bottom: 5px;
   margin-top: 40px;
   color: #1fa393;
 }
-.privacy-policy h6:first-child
-{
+.privacy-policy h6:first-child {
   margin-top: 0;
 }
 
-.privacy-policy
-{
+.privacy-policy {
   margin-bottom: 100px;
 }
 
-.privacy-policy ul
-{
+.privacy-policy ul {
   margin-left: 20px;
   margin-bottom: 20px;
 }
-.privacy-policy ul li{
-font-size: 14px; 
-font-family: 'Raleway-semibold'
+.privacy-policy ul li {
+  font-size: 14px;
+  font-family: "Raleway-semibold";
 }
 
 .privacy-policy p {
   margin-bottom: 15px;
   font-size: 14px;
-  font-family: 'Raleway-semibold';
+  font-family: "Raleway-semibold";
   text-align: justify;
 }
 
-.privacy-policy h5
-{
-font-size: 16px;
-font-family: 'Raleway-bold';
-margin: 15px 0 0;
+.privacy-policy h5 {
+  font-size: 16px;
+  font-family: "Raleway-bold";
+  margin: 15px 0 0;
 }
 
 .privacy-policy .fa-check-circle {
@@ -25227,12 +25195,11 @@ margin: 15px 0 0;
   margin-right: 5px;
 }
 
-.privacy-bg
-{
-background-image: url(/assets/images/background/about-us-wave.png);
-background-position: top center;
-background-size: 100%;
-background-repeat: no-repeat;
-width: 100%;
-min-height: 850px;
+.privacy-bg {
+  background-image: url(/assets/images/background/about-us-wave.png);
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 850px;
 }

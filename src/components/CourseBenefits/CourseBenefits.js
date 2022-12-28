@@ -23,7 +23,10 @@ const CourseBenefits = ({ courseDetails }) => {
           </Col>
           <Col md={8}>
             <div className="sec-title">
-              <h2>{title}<i className="arrow-sign-left"></i></h2>
+              <h2>
+                {title}
+                <i className="arrow-sign-left"></i>
+              </h2>
             </div>
             <p>{desc}</p>
             <div className="work-tabs tabs-box">
