@@ -8,9 +8,12 @@ const WhyChooseUs = () => {
       <div className="auto-container">
         <div className="sec-title centered">
           <h2 className="with-curve-center title-width mx-auto">
-            Why choose Digital Regenesys
+            Why Choose Digital Regenesys
           </h2>
-          <h6 className="desc">In a one to one setting, a tutor is able to focus on the individual learner's needs</h6>
+          <h6 className="desc">
+            In a one to one setting, a tutor is able to focus on the individual
+            learner's needs
+          </h6>
         </div>
         <Row>
           {serviceSectionThree?.map(({ id, icon, title, desc }) => (
@@ -20,9 +23,7 @@ const WhyChooseUs = () => {
                   <span className={icon}></span>
                   {title}
                 </div>
-                <h6>
-                  {desc}
-                </h6>
+                <h6>{desc}</h6>
               </div>
             </Col>
           ))}

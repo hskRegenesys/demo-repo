@@ -2,6 +2,7 @@ const services = [
   {
     id: 1,
     icon: "fab fa-facebook-square",
+    href: "https://www.facebook.com/digitalregenesys",
     title: "Facebook",
     text: "Lorem ipsum is are many variations of pass of majority.",
   },
@@ -9,18 +10,21 @@ const services = [
     id: 2,
     icon: "fab fa-instagram",
     title: "Instagram",
+    href: "https://www.instagram.com/digital_regenesys/",
     text: "Lorem ipsum is are many variations of pass of majority.",
   },
   {
     id: 3,
     icon: "fab fa-youtube",
     title: "Youtube",
+    href: "https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A",
     text: "Lorem ipsum is are many variations of pass of majority.",
   },
   {
     id: 4,
     icon: "fas fa-envelope",
     title: "Mail",
+    href: "mailto:https://www.instagram.com/digital_regenesys/",
     text: "Lorem ipsum is are many variations of pass of majority.",
   },
 ];
@@ -48,7 +52,7 @@ export const serviceSectionThree = [
   {
     id: 2,
     icon: "fa fa-user-check",
-    title: "Ph.D.Faculty",
+    title: "Ph.d. Faculty",
     desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
   },
   {

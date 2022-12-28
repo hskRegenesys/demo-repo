@@ -126,7 +126,7 @@ const HeaderOne = ({
           <div className="auto-container d-flex clearfix">
             <div className="logo-box">
               <div className="logo">
-                <Link href="/">
+                <Link href="#">
                   <a title={title}>
                     <Image id="thm-logo" src={Logo} alt={title} title={title} />
                   </a>

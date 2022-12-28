@@ -73,7 +73,7 @@ const MainFooter = ({ normalPadding = true }) => {
                 <Col xl={3} lg={6} md={6} sm={12} className="column col-6">
                   <div className="footer-widget info-widget">
                     <div className="widget-content address">
-                      <h6>South Africa Campus</h6>
+                      <h6>South African Campus</h6>
                       <ul className="contact-info">
                         <li className="address">
                           <span className="icon flaticon-pin-1"></span>{" "}

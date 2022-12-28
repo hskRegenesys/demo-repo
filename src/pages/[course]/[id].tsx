@@ -47,19 +47,21 @@ const DigitalMarketing = () => {
         parent="All courses"
         parentHref="/shop"
       />
-      {courseDetails&&<>
-      <CourseDetails courseDetails={courseDetails}/>
-      <SkillDetailSection courseDetails={courseDetails}/>
-      <JoinReasons courseDetails={courseDetails}/>
-      <ToolsCovered courseDetails={courseDetails}/>
-      <FeatureSeven courseDetails={courseDetails}/>
-      <VideoOne courseDetails={courseDetails}/>
-      <CourseCurriculum courseDetails={courseDetails}/>
-      <FeesDetails courseDetails={courseDetails} courseId={courseId} />
-      <CourseBenefits courseDetails={courseDetails}/>
-      <FaqsSection courseDetails={courseDetails}/>
-      <CallToSection />
-      </>}
+      {courseDetails && (
+        <>
+          <CourseDetails courseDetails={courseDetails} />
+          <SkillDetailSection courseDetails={courseDetails} />
+          <JoinReasons courseDetails={courseDetails} />
+          <ToolsCovered courseDetails={courseDetails} />
+          <FeatureSeven courseDetails={courseDetails} />
+          <VideoOne courseDetails={courseDetails} />
+          <CourseCurriculum courseDetails={courseDetails} />
+          <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+          <CourseBenefits courseDetails={courseDetails} />
+          <FaqsSection courseDetails={courseDetails} />
+          <CallToSection />
+        </>
+      )}
       <MainFooter />
     </Layout>
   );

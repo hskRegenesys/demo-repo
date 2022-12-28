@@ -109,15 +109,15 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "Dennis-Laxton.jpeg",
           title: "Dr. Dennis Laxton ",
           text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
           designation: "Academic Team Leader and Senior Lecturer",
         },
         {
           id: 2,
-          image: "7.jpg",
-          title: "James Forson ",
+          image: "James_forson.jpeg",
+          title: "James Forson",
           text: "James Forson is known for his excellent work in Project Management. James has pursued B Soc Sc (Hons) from UCT and MBA from UCT. James is the Chief Operating Officer at Regenesys Business School.",
           designation: "Vice President: Strategic Relations",
         },
@@ -132,6 +132,67 @@ export const courseData = {
       text2:
         "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
     },
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "Week 1",
+            lists: ["Introduction to Project Management", "Project Profiling"],
+          },
+          {
+            id: 2,
+            title: "Week 2",
+            lists: ["Developing Team Capabilities"],
+          },
+          {
+            id: 3,
+            title: "Week 3",
+            lists: ["Planning and Managing"],
+          },
+          {
+            id: 4,
+            title: "Week 4",
+            lists: ["Time Management"],
+          },
+          {
+            id: 5,
+            title: "Week 5",
+            lists: ["Monitoring and Reporting", "Quality Management"],
+          },
+          {
+            id: 6,
+            title: "Week 6",
+            lists: ["Project Closure"],
+          },
+          {
+            id: 7,
+            title: "Week 7",
+            lists: ["Change Management", "Disaster Management"],
+          },
+          {
+            id: 8,
+            title: "Week 8",
+            lists: [
+              "International Project Management",
+              "Software for Project Management - (Microsoft Project Plan- MPP)",
+            ],
+          },
+          {
+            id: 9,
+            title: "Week 9",
+            lists: ["Design Thinking"],
+          },
+          {
+            id: 10,
+            title: "Week 10",
+            lists: ["Contracts and Agreement", "Industry Expert Session"],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     faqsSection: [
       {
         id: 1,
@@ -144,7 +205,7 @@ export const courseData = {
           {
             id: 2,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
           },
           {
             id: 3,
@@ -185,7 +246,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -208,58 +269,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],
@@ -352,14 +397,14 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "bhupendra_mishra.jpeg",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior lecture",
         },
         {
           id: 2,
-          image: "7.jpg",
+          image: "faculty_deepika_sharma.jfif",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior lecture",
@@ -375,6 +420,108 @@ export const courseData = {
       text2:
         "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
     },
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "Week 1",
+            lists: [
+              "Introductory fundamentals of cybersecurity threat actors, attacks, and mitigation",
+              "Cybersecurity fundamentals",
+              "Security policies and procedures",
+              "Cybersecurity mitigation methods",
+              "Cia triad",
+            ],
+          },
+          {
+            id: 2,
+            title: "Week 2",
+            lists: [
+              "Enterprise architecture",
+              "Organizational security policy and components",
+              "Internet & networking basics",
+              "Introduction to secured architecture",
+              "Wireless networks",
+              "Network security controls",
+              "Cloud virtualization",
+              "Byod, and iot security testing",
+            ],
+          },
+          {
+            id: 3,
+            title: "Week 3",
+            lists: [
+              "Information system governance and risk assessment",
+              "Introduction to information security",
+              "Governance risk",
+              "Management information security programs",
+              "Network security",
+            ],
+          },
+          {
+            id: 4,
+            title: "Week 4",
+            lists: [
+              "Introduction to incident management",
+              "Developing an incident management and response system",
+              "Digital forensics business",
+              "Continuity and disaster recovery",
+            ],
+          },
+          {
+            id: 5,
+            title: "Week 5",
+            lists: [
+              "Secure development",
+              "Secure coding devsecop",
+              "Honeypot",
+              "Network security and spoofing",
+              "Wi-Fi network security",
+              "Web security",
+              "Cryptography",
+              "OS fundamentals and security",
+              "Cryptography and encryption",
+              "Cryptanalysis",
+              "Project - exploiting virtual machine",
+            ],
+          },
+          {
+            id: 6,
+            title: "Week 6",
+            lists: [
+              "Malware analysis, Memory forensics",
+              "Cyber forensic",
+              "Application security",
+              "Hands-on security - Network traffic analysis + CTF + VAPT",
+            ],
+          },
+          {
+            id: 7,
+            title: "Week 7",
+            lists: [
+              "Introduction to application security",
+              "Web-based applications and associated vulnerabilities",
+              "Cookies and tracking",
+              "Data and database security",
+              "Phishing and other attacks on identity",
+              "Regulation, compliance, and risk management",
+              "Project - exploit web application",
+            ],
+          },
+          {
+            id: 8,
+            title: "Week 8",
+            lists: [
+              "Session by industry experts",
+              "Session on work readiness skills",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     faqsSection: [
       {
         id: 1,
@@ -387,7 +534,7 @@ export const courseData = {
           {
             id: 2,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
           },
           {
             id: 3,
@@ -428,7 +575,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -451,58 +598,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],
@@ -593,21 +724,21 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "Samidha_Photo.jpg",
           title: "Samidha Kurle",
           text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "7.jpg",
+          image: "dr_nilay.jpg",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
-          image: "7.jpg",
+          image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
           text: "A highly regarded faculty and the head of academics and facilitator, Dr. Shilpa has done wonders in her whooping teaching career of 20+ years. She has managed to train and teach more than 2000+ students who are now placed in several different global MNC's and are recognized as the leaders of the corporate world.",
           designation: "Senior Lecturer",
@@ -623,6 +754,137 @@ export const courseData = {
       text2:
         "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
     },
+
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "Math For Data Science",
+            lists: [
+              "Probability",
+              "Descriptive Statistics",
+              "Inferential Statistics",
+              "Linear Algebra",
+            ],
+          },
+          {
+            id: 2,
+            title: "Excel",
+            lists: [
+              "Excel basic",
+              "Data tools",
+              "Formatting data and tables",
+              "Pivot tables",
+              "Excel charts",
+              "Pivot charts",
+              "Named ranges",
+              "Excel shortcuts",
+              "Macros",
+            ],
+          },
+          {
+            id: 3,
+            title: "Basic Data Science",
+            lists: [
+              "Project on exploratory data analysis",
+              `Data analysis and data visualization tools :
+             Numpy, Pandas, Matplotlib, Seaborn
+             `,
+              "Web Scrapping",
+              "Feature engineering",
+              "Feature selection",
+              "Exploratory data analysis",
+            ],
+          },
+          {
+            id: 4,
+            title: "Python Programming",
+            lists: [
+              "1 Project on Python database connectivity",
+              "Installation and configuration",
+              "Python programming basics",
+              "Python data structures",
+              "Python date & time",
+              "Operators in Python",
+              "Program flow control statements",
+              "Python functions and modules",
+              "File handling in Python",
+              "Exception handling",
+              "Object oriented programming in Python",
+              "Database connectivity with Python",
+            ],
+          },
+          {
+            id: 5,
+            title: "MySQL RDBMS",
+            lists: [
+              "MySQL installation",
+              "DDL commands",
+              "DML commands",
+              "Keys",
+              "Clauses",
+              "Conditions",
+              "Control flow statement",
+              "Aggregate functions",
+              "Date functions",
+              "String functions",
+              "Joins",
+            ],
+          },
+          {
+            id: 6,
+            title: "R-Programming Language",
+            lists: [
+              "1 Project on exploratory data analysis",
+              "Fundamentals of R",
+              "Vectors",
+              "Control statements",
+              "Functions",
+              "Matrices",
+              "Strings",
+              "Lists",
+              "Arrays",
+              "R factors",
+              "Data frames",
+              "Data visualization",
+              "Stringr package",
+              "Dplyr package",
+            ],
+          },
+          {
+            id: 7,
+            title: "MongoDB (DBMS",
+            lists: [
+              "MongoDB installation",
+              "MongoDB compass app",
+              "Data types in MongoDB",
+              "JSON, BSON",
+              "Database",
+              "Models",
+              "Collection",
+              "Documents",
+              "Operators",
+              "CRUD operations",
+              "JSON, BSON",
+              "Queries",
+              "Sort, skip, limit",
+            ],
+          },
+          {
+            id: 8,
+            title: "Business Intelligence (BI) Tool",
+            lists: [
+              `Power BI : 1 Project on dashboard`,
+
+              `Tableau : 1 Project on dashboard`,
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     faqsSection: [
       {
         id: 1,
@@ -641,7 +903,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -683,7 +945,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -706,58 +968,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],
@@ -848,21 +1094,21 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "Samidha_Photo.jpg",
           title: "Samidha Kurle",
           text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "7.jpg",
+          image: "dr_nilay.jpg",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
-          image: "7.jpg",
+          image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
           text: "A highly regarded faculty and the head of academics and facilitator, Dr. Shilpa has done wonders in her whooping teaching career of 20+ years. She has managed to train and teach more than 2000+ students who are now placed in several different global MNC's and are recognized as the leaders of the corporate world.",
           designation: "Senior Lecturer",
@@ -878,6 +1124,99 @@ export const courseData = {
       text2:
         "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
     },
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "Machine Learning",
+            lists: [
+              "2 Projects using machine learning models",
+              "10 Machine learning models for Regression, classification, clustering",
+              "ML model evaluation metrics",
+              "- MAE, RMSE, MSE, R square, Adjusted R square",
+              "- Accuracy, confusion matrix, precision, recall, F1 score",
+              "Train test dateset splitting",
+              "K Fold CV",
+              "Grid search CV",
+              "Hyper parameter tuning",
+              "Bias and variance",
+              "Model over fitting & under fitting",
+              "Regularization techniques",
+            ],
+          },
+          {
+            id: 2,
+            title: "Deep Learning",
+            lists: [
+              "2 Projects using deep learning models",
+              "Artificial neural network",
+              "Convolutional neural network",
+              "Recurrent neural network & LSTM",
+            ],
+          },
+          {
+            id: 3,
+            title: "Web Development",
+            lists: ["HTML, CSS basics", "Streamlit", "Flask"],
+          },
+          {
+            id: 4,
+            title: "Natural Language Processing",
+            lists: [
+              "1 Project on NLP",
+              "Text preprocessing",
+              "- Lower casing",
+              "- Stopword removal",
+              "- Regular expression",
+              "- Tokenization, unigram, bigram, n-gram",
+              "- Stemming & Lemmetization",
+              "- POS tagging",
+              "- Named entity recognition",
+              "- Text processing with Spacy and NLTK",
+              "Text vectorization and embedding",
+              "- Bag of words",
+              "- TF-ITDF",
+              "- Word2Vec",
+              "- Doc2Vec",
+              "- Word embedding",
+              "Deep learning and probabilistic models for NLP",
+              "Text classification",
+              "Text summerization",
+              "Text generation",
+            ],
+          },
+          {
+            id: 5,
+            title: "Time Series Analysis And Forecasting",
+            lists: [
+              "1 Project on computer vision",
+              "Image basics & processing",
+              "Video basics & processing",
+              "Object detection",
+              "Object segmentation",
+              "Object tracking",
+            ],
+          },
+          {
+            id: 6,
+            title: "Time Series Analysis And Forecasting",
+            lists: [
+              "Pandas for time series analysis",
+              "- Statistical Models for Time Series Forecasting",
+              "- Deep Learning LSTM model for Time Series Forecasting",
+              "Unsupervised learning II – Association rule learning",
+              "Apriori",
+              "Eclat",
+              "Data science application in sales",
+              "Customer churn and market basket analysis",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     faqsSection: [
       {
         id: 1,
@@ -896,7 +1235,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -938,7 +1277,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -961,58 +1300,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],
@@ -1102,27 +1425,75 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "Samidha_Photo.jpg",
           title: "Samidha Kurle",
           text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "7.jpg",
+          image: "dr_nilay.jpg",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
-          image: "7.jpg",
+          image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
           text: "A highly regarded faculty and the head of academics and facilitator, Dr. Shilpa has done wonders in her whooping teaching career of 20+ years. She has managed to train and teach more than 2000+ students who are now placed in several different global MNC's and are recognized as the leaders of the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
     },
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "AWS Cloud Computing",
+            lists: [
+              "Identity and access management",
+              "AWS CLI",
+              "EC2 - Elastic computer cloud",
+              "S3 Cloud object storage",
+              "Databases and analytics",
+              "ECS, lambda, batch",
+              "Cloud integrations and monitoring",
+              "ML in AWS - SageMaker overview",
+              "Speech and vision API",
+            ],
+          },
+          {
+            id: 2,
+            title: "Big Data Analytics With PySpark",
+            lists: [
+              "Spark RDD & dataframe",
+              "Spark SQL",
+              "Spark NLP",
+              "Spark ML",
+              "Spark streaming",
+              "Spark with Kafka",
+            ],
+          },
+          {
+            id: 3,
+            title: "ML Ops",
+            lists: [
+              "Auto ML with pyCaret",
+              "Docker",
+              "ML flow",
+              "GIT & GITHUB",
+              "ML model deployment",
+              "ML model monitoring",
+              "ML model retraining",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     videoOne: {
       image: "/assets/images/background/full-video-bg.png",
       videoId: "y2Eqx6ys1hQ",
@@ -1150,7 +1521,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1192,7 +1563,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -1215,58 +1586,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],
@@ -1361,20 +1716,68 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "bhupendra_mishra.jpeg",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "7.jpg",
+          image: "faculty_deepika_sharma.jfif",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior Lecturer",
         },
       ],
     },
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "Introduction To Marketing And Digital Marketing:",
+            lists: [
+              "Introduction to Marketing - Basics of Marketing",
+              "Branding and Consumer Behavior or Psychology",
+              "Global marketing opportunities",
+              "Types of marketing",
+              "Introduction to Digital Marketing ",
+              "Basics of Digital Marketing World of Web (1.0, 2.0, 3.0.)",
+              "Difference between Digitalization and Digitization",
+              "Marketing Automation",
+              "Digital Channels & Platforms",
+            ],
+          },
+          {
+            id: 2,
+            title: "Search Engine Optimization (SEO)",
+            lists: ["Technical SEO & Non-Technical SEO"],
+          },
+          {
+            id: 3,
+            title: "Content Creation & Marketing",
+            lists: ["Introduction to Content Marketing"],
+          },
+          {
+            id: 4,
+            title: "Social Media Marketing",
+            lists: ["Introduction to Social Media Marketing"],
+          },
+          {
+            id: 5,
+            title: "Bonus Topics",
+            lists: [
+              "Pogo Sticking",
+              "WhatsApp Marketing",
+              "Meme & Topical Marketing",
+              "Marketing Psychology",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     videoOne: {
       image: "/assets/images/background/full-video-bg.png",
       videoId: "y2Eqx6ys1hQ",
@@ -1402,7 +1805,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1443,7 +1846,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -1466,58 +1869,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],
@@ -1606,20 +1993,77 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "bhupendra_mishra.jpeg",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "7.jpg",
+          image: "faculty_deepika_sharma.jfif",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior Lecturer",
         },
       ],
     },
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title:
+              "Programmatic Advertising & Paid Media Marketing, Importance Of Analytics",
+            lists: [
+              "Different types of Paid media marketing and Advertising formats",
+              "Google Ads & various ad types and formats, GBP",
+              "Setting up of Google Ad account",
+              "Setting up of GSC, GA, Pixels, Goals setting etc.",
+              "Analyzing google ad campaign",
+            ],
+          },
+          {
+            id: 2,
+            title: "Importance Of IMC (Media Planning & Media Buying)",
+            lists: [
+              "Meaning, Importance of IMC",
+              "Types of Media formats",
+              "Media buying and planning",
+              "Media plan from brief to execution",
+              "Advance IMC management",
+              "5 Ms of advertising",
+            ],
+          },
+          {
+            id: 3,
+            title: "Online After Sales (Reputation) Management",
+            lists: ["Introduction to Reputation management"],
+          },
+          {
+            id: 4,
+            title: "E-Commerce Marketing & Email Marketing",
+            lists: ["E-Commerce and E-Mail Marketing"],
+          },
+          {
+            id: 5,
+            title: "Affiliate Marketing & Mobile Marketing",
+            lists: ["Affiliate Marketing & Mobile Marketing"],
+          },
+          {
+            id: 6,
+            title: "Bonus Topics",
+            lists: [
+              "Funnel Marketing",
+              "Marktech & Adtech",
+              "Koo App and Inshort App",
+              "Metaverse",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     videoOne: {
       image: "/assets/images/background/full-video-bg.png",
       videoId: "y2Eqx6ys1hQ",
@@ -1647,7 +2091,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1683,7 +2127,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -1706,58 +2150,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],
@@ -1846,20 +2274,58 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "7.jpg",
+          image: "bhupendra_mishra.jpeg",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "7.jpg",
+          image: "faculty_deepika_sharma.jfif",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior Lecturer",
         },
       ],
     },
+    CourseCurriculum: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "UX Digital Approach",
+            lists: ["Brand Experience & User"],
+          },
+          {
+            id: 2,
+            title: "Influencer Marketing",
+            lists: ["Importance of Influencer Marketing"],
+          },
+          {
+            id: 3,
+            title: "Chatbots",
+            lists: ["Introduction to Chatbots"],
+          },
+          {
+            id: 4,
+            title: "OTT Marketing",
+            lists: ["Leveraging Video Advertising"],
+          },
+          {
+            id: 5,
+            title: "Podcast",
+            lists: ["Importance of Podcast marketing"],
+          },
+          {
+            id: 6,
+            title: "Behavioral Digital Marketing",
+            lists: ["Online Consumer Behavior"],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
     videoOne: {
       image: "/assets/images/background/full-video-bg.png",
       videoId: "y2Eqx6ys1hQ",
@@ -1887,7 +2353,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1923,7 +2389,7 @@ export const courseData = {
     ],
     courseBenefits: {
       title: "Benefits",
-      desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      desc: "",
       tabBtns: [
         {
           id: "tab-1",
@@ -1946,58 +2412,42 @@ export const courseData = {
         {
           id: "tab-1",
           image: "featured-image-14.jpg",
-          text1:
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-          text2:
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
           ],
         },
         {
           id: "tab-2",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
           ],
         },
         {
           id: "tab-3",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
           ],
         },
 
         {
           id: "tab-4",
           image: "featured-image-14.jpg",
-          text1:
-            "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          text2:
-            "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+
           lists: [
-            "Self-contained, state-of-the-art time clock",
-            "Scalability of up to 500 employees per time clock",
-            "The ability to connect up to 32 time clocks",
-            "Employee self-enrollment",
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
           ],
         },
       ],

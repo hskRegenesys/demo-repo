@@ -4626,6 +4626,9 @@ tns-controls2 {
   display: block;
 }
 
+.accordion-box .block .acc-content i {
+  margin-right: 10px;
+}
 .accordion-box .block .content .text {
   display: block;
   position: relative;
@@ -4755,7 +4758,10 @@ tns-controls2 {
   display: flex;
   justify-content: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .tabFullBox .tab-item {
   width: 25%;
   margin: 20px;
@@ -6756,7 +6762,6 @@ tns-controls2 {
   bottom: 0;
 }
 
-
 .main-footer .footer-widget .contact-info h6 {
   margin-top: 40px;
   font-family: raleway-bold;
@@ -7595,13 +7600,15 @@ featured-section .right-col .sec-title h2 {
   max-width: 420px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .featured-section .right-col .inner h1 {
   font-size: 52px;
-  font-family: 'Raleway-semibold';
+  font-family: "Raleway-semibold";
   max-width: 465px;
 }
-
 
 .featured-section__about-two {
   background-color: #fff;
@@ -8632,7 +8639,6 @@ featured-section .right-col .sec-title h2 {
   padding-top: 50px;
 }
 
-
 .testimonials-five .testimonials-five-card .testimonials-five-card__image {
   display: block;
   margin-left: auto;
@@ -8701,19 +8707,16 @@ featured-section .right-col .sec-title h2 {
   position: absolute;
   right: 90px;
   bottom: 70px;
-
-
 }
 
 .testimonials-five__carousel .fa-quote-right {
   transform: scaleX(-1);
   font-size: 40px;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 50px;
   left: 50px;
 }
-
 
 @media (min-width: 992px) {
   .testimonials-five__carousel .tns-controls {
@@ -11493,7 +11496,10 @@ featured-section .right-col .sec-title h2 {
   border: 2px solid #000;
   border-radius: 25px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .contact-section .form-box label {
   font-family: Raleway-bold;
 }
@@ -16160,7 +16166,6 @@ h2.curve-right:after {
   transform: scaleX(-1);
 }
 
-
 @media (min-width: 1200px) {
   .product-details__title {
     margin-top: -5px;
@@ -19144,10 +19149,7 @@ h2.curve-right:after {
   align-items: center;
 }
 
-
-
 .funfact-six__count .image-box {
-
   color: #fff;
   font-size: 26px;
   line-height: 1;
@@ -24261,6 +24263,9 @@ h2.curve-right:after {
   float: left;
   width: 100%;
 }
+.process-one__content i {
+  margin-right: 10px;
+}
 
 .process-one__image__column .process-one__image {
   max-height: 800px;
@@ -24741,12 +24746,11 @@ p.highlight {
   height: auto;
 }
 
-
 .sign-arrow-contact img {
   position: absolute;
   width: 118px;
   right: 0;
-  top: 120px
+  top: 120px;
 }
 
 .how-it-works .FluidSection .row div:first-child .how-it-works-card .how-it-works-card__inner {
@@ -25005,7 +25009,7 @@ input.PhoneInputInput {
 
 .text-danger {
   color: red;
-  font-family: 'Raleway-semibold';
+  font-family: "Raleway-semibold";
 }
 
 .pl-0 {
@@ -25023,7 +25027,6 @@ input.PhoneInputInput {
   top: 88px;
   background-repeat: no-repeat;
 }
-
 .we-work-section .sec-title h2 {
   max-width: 280px;
 }
@@ -25043,7 +25046,10 @@ input.PhoneInputInput {
 .product-details__title {
   max-width: 450px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .product-details__title i {
   background-image: url(/assets/images/background/sign-arrow-left.png);
   background-size: 100px 100px;
@@ -25060,7 +25066,6 @@ input.PhoneInputInput {
   max-width: 600px;
   margin: 0 auto;
 }
-
 
 .faq-block.curriculum h3 i {
   background-image: url(/assets/images/background/sign-arrow-left.png);
@@ -25085,7 +25090,6 @@ input.PhoneInputInput {
   margin-top: 40px;
   color: #1fa393;
 }
-
 .privacy-policy h6:first-child {
   margin-top: 0;
 }
@@ -25107,7 +25111,7 @@ input.PhoneInputInput {
 .privacy-policy p {
   margin-bottom: 15px;
   font-size: 14px;
-  font-family: 'Raleway-semibold';
+  font-family: "Raleway-semibold";
   text-align: justify;
 }
 
