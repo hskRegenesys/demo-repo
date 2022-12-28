@@ -55,7 +55,7 @@ const teamSection = {
     },
     {
       id: 6,
-      name: "DATA SCIENCE",
+      name: "Data Science",
     },
     {
       id: 5,

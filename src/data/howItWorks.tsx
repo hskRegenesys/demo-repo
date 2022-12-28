@@ -6,7 +6,7 @@ export const howItWorksPage = [
   },
   {
     id: 2,
-    title: "our vision",
+    title: "Our vision",
     text: "To embrace digital advancements, spread the power of technology and share knowledge across the world.",
   },
 ];

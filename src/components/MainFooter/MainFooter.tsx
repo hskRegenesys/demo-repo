@@ -18,8 +18,11 @@ const {
   phone2,
   phone3,
   web,
+  weblink,
   web2,
+  web2link,
   web3,
+  web3link,
   email,
   textBottom,
 } = mainFooter;
@@ -89,7 +92,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </li>
                         <li>
                           <span className="icon flaticon-link"></span>
-                          <a href={`${web}`} target="_blank">
+                          <a href={`${weblink}`} target="_blank">
                             {web}
                           </a>
                         </li>
@@ -116,7 +119,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </li>
                         <li>
                           <span className="icon flaticon-link"></span>
-                          <a href={`${web2}`} target="_blank">
+                          <a href={`${web2link}`} target="_blank">
                             {web2}
                           </a>
                         </li>
@@ -143,7 +146,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </li>
                         <li>
                           <span className="icon flaticon-link "></span>
-                          <a href={`${web3}`} target="_blank">
+                          <a href={`${web3link}`} target="_blank">
                             {web3}
                           </a>
                         </li>

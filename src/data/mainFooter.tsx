@@ -31,9 +31,12 @@ export const mainFooter = {
   phone: "+27 (11) 669 5000",
   phone2: "+91 1800 212 9950",
   phone3: "+234 (1) 453 0959",
-  web: "https://www.regenesys.net/",
-  web2: "https://www.india.regenesys.net/",
-  web3: "https://www.nigeria.regenesys.net/",
+  web: "www.regenesys.net",
+  weblink: "https://www.regenesys.net/",
+  web2: "www.india.regenesys.net",
+  web2link: "https://www.india.regenesys.net/",
+  web3: "www.nigeria.regenesys.net",
+  web3link: "https://www.nigeria.regenesys.net/",
 
   email: "needhelp@linoor.com",
   textBottom:
