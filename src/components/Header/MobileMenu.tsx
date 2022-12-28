@@ -61,7 +61,7 @@ const MobileMenu = ({ onePage = false }) => {
                 <span className="btn-title">Login</span>
               </a>
             </Link>
-
+            {/* request url */}
             <Link href="https://mydigital.regenesys.net/login/index.php">
               <a target="_blank" className="theme-btn btn-style-two w100 mt-5">
                 <i className="btn-curve"></i>
