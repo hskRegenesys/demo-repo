@@ -159,7 +159,7 @@ const AllCourseGallery = () => {
                                       </>
                                     ))}
                                   </li>
-                                  <li>Internation certification </li>
+                                  <li>International certification </li>
                                   <li>Capstone projects </li>
                                 </ul>
                               </div>

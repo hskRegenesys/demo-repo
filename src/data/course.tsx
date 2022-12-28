@@ -6,7 +6,7 @@ export const digitalMarketingMain = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
@@ -18,7 +18,7 @@ export const digitalMarketingMain = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
@@ -30,7 +30,7 @@ export const digitalMarketingMain = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
@@ -61,7 +61,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Project Management",
-        text: "Enroll for this course to advance your career in the most in-demand industries.",
+        text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
           "10 weeks cousrse",
           "Live Sessions",
@@ -73,7 +73,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -87,7 +87,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -205,7 +205,7 @@ export const courseData = {
           {
             id: 2,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
           },
           {
             id: 3,
@@ -314,19 +314,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn Your Project Management certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -339,7 +339,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Basic Cyber Security",
-        text: "Enroll for this course to advance your career in the most in-demand industries.",
+        text: "Upskill yourself with a course in Cyber Security Program, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
         lists: [
           "10 weeks cousrse",
           "Live Sessions",
@@ -351,7 +351,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Cyber Security Program, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -365,7 +365,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -534,7 +534,7 @@ export const courseData = {
           {
             id: 2,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
           },
           {
             id: 3,
@@ -643,19 +643,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn Your Cyber Security certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Cyber Security career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -669,7 +669,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Basic Basic Data Science",
-        text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
+        text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 weeks cousrse",
           "Live Sessions",
@@ -685,7 +685,8 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
+      subTitle1:
+        "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
       desc1:
         "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
 
@@ -695,7 +696,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -903,7 +904,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1013,19 +1014,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn Your Data Science certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1039,7 +1040,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Basic Advanced Data Science",
-        text: "Enroll for this course to advance your career in the most in-demand industries.",
+        text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now.",
         lists: [
           "11 weeks",
           "Live classes",
@@ -1051,7 +1052,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -1065,7 +1066,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1235,7 +1236,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1345,19 +1346,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn Your Data Science certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1370,7 +1371,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Applied Data Science",
-        text: "Enroll for this course to advance your career in the most in-demand industries.",
+        text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
           "9 weeks",
           "Live classes",
@@ -1382,7 +1383,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -1396,7 +1397,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1521,7 +1522,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1631,19 +1632,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn Your Data Science certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1657,7 +1658,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Basic Digital Marketing",
-        text: "Enroll for this course to advance your career in the most in-demand industries.",
+        text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 weeks cousrse",
           "Live Sessions",
@@ -1683,7 +1684,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1805,7 +1806,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -1914,19 +1915,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn your Digital Marketing certificate.",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Digital Marketing Career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1939,7 +1940,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Advanced Digital Marketing",
-        text: "Enroll for this course to advance your career in the most in-demand industries.",
+        text: "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 weeks cousrse",
           "Live Sessions",
@@ -1951,7 +1952,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -1965,7 +1966,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -2091,7 +2092,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -2195,19 +2196,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn your Digital Marketing certificate.",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Digital Marketing Career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -2220,7 +2221,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Applied Digital Marketing",
-        text: "Enroll for this course to advance your career in the most in-demand industries.",
+        text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 weeks cousrse",
           "Live Sessions",
@@ -2232,7 +2233,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -2246,7 +2247,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right : scratch",
+        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -2353,7 +2354,7 @@ export const courseData = {
           {
             id: 3,
             title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+            text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
           },
           {
             id: 4,
@@ -2457,19 +2458,19 @@ export const courseData = {
       flagnig: "/assets/images/icons/flag_nigeria.png",
       flagus: "/assets/images/icons/us_flag.png",
       flagind: "/assets/images/icons/india_flag.png",
-      title: "Fees structure & Certfication",
+      title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Digital Marketing certificate2",
+      certifiedTitle1: "Earn your Digital Marketing certificate.",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Digital Marketing career.",
-      certifiedTitle2: "Share Your Achievement2",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Digital Marketing Career.",
+      certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship : industry experts, networking opportunities, and more.",
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
