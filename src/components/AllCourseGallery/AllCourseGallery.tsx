@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import Pagination from "react-bootstrap/Pagination";
 import { courseService } from "src/services";
 import _ from "lodash";
+import { useRouter } from "next/router";
 
 const handleSearch = (e: any) => {
   e.preventDefault();
@@ -14,6 +15,7 @@ const handleSearch = (e: any) => {
 };
 
 const AllCourseGallery = () => {
+  const router = useRouter();
   const [courseData, setcourseData] = useState<any>([]);
   const getData = async () => {
     let courseListResponse = await courseService.allCourses();
@@ -27,6 +29,14 @@ const AllCourseGallery = () => {
   useEffect(() => {
     getData();
   }, []);
+
+  function redirectCard(name: any, code: any, id: any) {
+    if (code === "DSCI" || code === "DM") {
+      router.push(`/${name?.split(" ").join("-")}`);
+    } else {
+      router.push(`/${name?.split(" ").join("-")}/${id}`);
+    }  
+  }
 
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
@@ -112,7 +122,7 @@ const AllCourseGallery = () => {
                       className="animated fadeInLeft testi-block"
                     >
                       <div className="gallery-item" key={id}>
-                        <div className="inner-box">
+                        <div className="inner-box" onClick={() => redirectCard(name, code, id)}>
                           {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div> */}
@@ -130,21 +140,7 @@ const AllCourseGallery = () => {
                             <div className="cap-inner">
                               <div className="title">
                                 <h5>
-                                  {code === "DSCI" || code === "DM" ? (
-                                    <Link
-                                      href={`/${name?.split(" ").join("-")}`}
-                                    >
-                                      <a>{name}</a>
-                                    </Link>
-                                  ) : (
-                                    <Link
-                                      href={`/${name
-                                        ?.split(" ")
-                                        .join("-")}/${id}`}
-                                    >
-                                      <a>{name}</a>
-                                    </Link>
-                                  )}
+                                <a>{name}</a>
                                 </h5>
                               </div>
 

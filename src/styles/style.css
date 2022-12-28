@@ -4785,10 +4785,6 @@ tns-controls2 {
   display: flex;
   justify-content: center;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .tabFullBox .tab-item {
   width: 25%;
   margin: 20px;
@@ -4812,6 +4808,7 @@ tns-controls2 {
   transition: all 300ms ease;
   max-width: 380px;
   height: 500px;
+  cursor: pointer;
 }
 
 .gallery-item .inner-box:hover {
@@ -7627,10 +7624,6 @@ featured-section .right-col .sec-title h2 {
   max-width: 420px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .featured-section .right-col .inner h1 {
   font-size: 52px;
   font-family: "Raleway-semibold";
@@ -9178,7 +9171,7 @@ featured-section .right-col .sec-title h2 {
 
 @media (min-width: 992px) {
   .feature-seven {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 
@@ -11547,10 +11540,6 @@ featured-section .right-col .sec-title h2 {
   border: 2px solid #000;
   border-radius: 25px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .contact-section .form-box label {
   font-family: Raleway-bold;
 }
@@ -25106,10 +25095,6 @@ input.PhoneInputInput {
 .product-details__title {
   max-width: 450px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 18e1fb91c0837741719d03a0b34b7ecff5000eda
 .product-details__title i {
   background-image: url(/assets/images/background/sign-arrow-left.png);
   background-size: 100px 100px;
