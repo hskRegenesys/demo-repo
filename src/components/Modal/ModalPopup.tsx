@@ -9,11 +9,13 @@ import { courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 
 function ModalPopup(props: any) {
-  const router = useRouter()
+  const router = useRouter();
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
+
+    // console.log("courseListResponse----", courseListResponse);
   };
   useEffect(() => {
     getData();
@@ -29,7 +31,7 @@ function ModalPopup(props: any) {
     handleSubmit,
   } = hookForm;
 
-  const onSubmit = async(data: any) => {
+  const onSubmit = async (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
     data.zapUrl = "";
@@ -40,8 +42,8 @@ function ModalPopup(props: any) {
       data.date = date;
     }
     const result = await leadService.saveLead(data);
-    if(result?.data){
-      router.push('/thankYou')
+    if (result?.data) {
+      router.push("/thankYou");
     }
   };
 

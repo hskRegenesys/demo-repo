@@ -84,7 +84,7 @@ export const aboutUsDescriptionData = {
   pagedesc: "Revolutionise your career with future ready skills",
   highlight: "Know who we are",
   text1:
-    "Digital Regenesys is a Cutting edge digital learning platform introduced by the Regenesys Business School, a global business school with state-of-the-art campuses in Johannesburg, Mumbai, and Lagos.",
+    "Digital Regenesys is a Cutting-edge digital learning platform introduced by the Regenesys Business School, a global business school with state-of-the-art campuses in Johannesburg, Mumbai, and Lagos.",
   text2:
     "Digital Regenesys offers upskilling digital courses in futuristic domains relevant to multiple industries. We have transformed lives and elevated the careers of more than 1100 students, helping them to upskill and get placed in top MNCs in all over the globe.",
   imagearrow: "/assets/images/background/sign-arrow.png",
@@ -95,7 +95,7 @@ export const allCourse = {
   pagedesc: "Revolutionise your career with future ready skills",
   highlight: "Know who we are",
   text1:
-    "Digital Regenesys is a Cutting edge digital learning platform introduced by the Regenesys Business School, a global business school with state-of-the-art campuses in Johannesburg, Mumbai, and Lagos.",
+    "Digital Regenesys is a Cutting-edge digital learning platform introduced by the Regenesys Business School, a global business school with state-of-the-art campuses in Johannesburg, Mumbai, and Lagos.",
   text2:
     "Digital Regenesys offers upskilling digital courses in futuristic domains relevant to multiple industries. We have transformed lives and elevated the careers of more than 1100 students, helping them to upskill and get placed in top MNCs in all over the globe.",
   imagearrow: "/assets/images/background/sign-arrow.png",

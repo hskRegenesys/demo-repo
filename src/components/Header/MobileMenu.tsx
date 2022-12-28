@@ -7,7 +7,7 @@ import { Image } from "react-bootstrap";
 const { icon, text, email, phone, socials, navItems, navItemsTwo } = headerData;
 
 const MobileMenu = ({ onePage = false }) => {
-  const contextRoot:any = useRootContext();
+  const contextRoot: any = useRootContext();
   const { menuStatus, toggleMenu } = contextRoot;
   const newNavItems = onePage ? navItemsTwo : navItems;
 
@@ -51,7 +51,7 @@ const MobileMenu = ({ onePage = false }) => {
           </p>
           <div className="side-menu__social">
             {socials?.map(({ id, icon, href }) => (
-              <a key={id} href={href}>
+              <a title="SOcial" key={id} href={href}>
                 <i className={icon}></i>
               </a>
             ))}
