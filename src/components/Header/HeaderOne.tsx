@@ -7,6 +7,7 @@ import { Image } from "react-bootstrap";
 import NavItem from "./NavItem";
 import { courseService } from "src/services";
 import _ from "lodash";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const {
   title,

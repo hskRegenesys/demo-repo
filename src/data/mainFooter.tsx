@@ -20,7 +20,7 @@ export const mainFooter = {
   about2: "The new corporate agency theme",
   about3:
     "We’ve grown our business on a set of \n three building blocks. Enjoy the \n people you work.",
-  text: "Revolutionise you career with future ready skills",
+  text: "Revolutionise your career with future ready skills",
   address:
     "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
   address2:
@@ -45,16 +45,19 @@ export const mainFooter = {
       id: 1,
       href: "https://www.facebook.com/digitalregenesys",
       icon: "fab fa-facebook",
+      title: "Facebook",
     },
     {
       id: 2,
       href: "https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A",
       icon: "fab fa-youtube",
+      title: "Youtube",
     },
     {
       id: 3,
       href: "https://www.instagram.com/digital_regenesys/",
       icon: "fab fa-instagram",
+      title: "Instagram",
     },
   ],
   links: [
