@@ -18,8 +18,9 @@ const settings = {
   loop: true,
   gutter: 30,
   nav: false,
-  controls: false,
+  controls: true,
   autoplayButtonOutput: false,
+  controlsContainer: ".tns-controls1",
   mouseDrag: true,
 };
 
@@ -143,6 +144,17 @@ const TrendingSection = () => {
                 )
               )}
             </TinySlider>
+
+            <div className="tns-controls1">
+            <button className="tns-prev">
+              <span className="icon fa fa-angle-left"></span>
+            </button>
+            <button className="tns-next">
+              <span className="icon fas fa-angle-right"></span>
+            </button>
+          </div>
+
+          
           </div>
         </div>
       </div>
