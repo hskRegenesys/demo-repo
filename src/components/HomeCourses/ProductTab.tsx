@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
+import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -31,7 +32,7 @@ const ProductTab = ({ courses = [], current }: any) => {
   } 
 
   function redirectCard(name: any, code: any, id: any) {
-    if (code === "DSCI" || code === "DM") {
+    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
       router.push(`/${name?.split(" ").join("-")}`);
     } else {
       router.push(`/${name?.split(" ").join("-")}/${id}`);

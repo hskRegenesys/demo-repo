@@ -7,6 +7,7 @@ import Pagination from "react-bootstrap/Pagination";
 import { courseService } from "src/services";
 import _ from "lodash";
 import { useRouter } from "next/router";
+import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 
 const handleSearch = (e: any) => {
   e.preventDefault();
@@ -31,7 +32,7 @@ const AllCourseGallery = () => {
   }, []);
 
   function redirectCard(name: any, code: any, id: any) {
-    if (code === "DSCI" || code === "DM") {
+    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
       router.push(`/${name?.split(" ").join("-")}`);
     } else {
       router.push(`/${name?.split(" ").join("-")}/${id}`);

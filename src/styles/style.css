@@ -25204,6 +25204,39 @@ input.PhoneInputInput {
 
 
 @media only screen and (max-width: 479px) {
+
+  .we-work-section .sec-title h2
+  {
+  max-width: 100%;
+  text-align: center;  
+  }
+  .process-one__content, .process-one__image
+  {
+    padding: 20px;
+  }
+
+  .process-one__content .sec-title h2 i, .we-work-section .sec-title h2 i
+  {
+    display: none;
+  }
+
+  .reasons__secOne, .reasons__secTwo, .reasons__secThree, .reasons__secFour
+  {
+    margin-bottom: 30px;
+  }
+
+  .tns-horizontal.tns-subpixel>.tns-item, .tabFullBox .tab-item
+  {
+    min-width: 356px
+  }
+
+  .discover-block .cap-box
+  {
+    position: relative !important;
+    left: unset !important;
+    bottom: unset !important;
+    right: unset !important;
+  }
   .main-header .nav-outer {
     position: absolute !important;
     right: 0;
@@ -25311,9 +25344,9 @@ input.PhoneInputInput {
 
 .call-to-section .inner
 {
-  padding: unset;
-  bottom: unset;
-  margin-top: unset;
+  padding: unset !important;
+  bottom: unset !important;
+  margin-top: unset !important;
   padding: 30px !important;
   border-radius: 25px;
 }
@@ -25385,7 +25418,7 @@ input.PhoneInputInput {
 
 .call-to-section .auto-container, .contact-section
 {
-  padding: 0;
+  padding: 0 !important;
 }
 .who-we-are
 {
@@ -25458,6 +25491,7 @@ input.PhoneInputInput {
 .discover-section 
 {
   background-color: transparent;
+  padding: 0 !important;
 }
 
 .discover-section .discover-block
@@ -25466,6 +25500,23 @@ input.PhoneInputInput {
   border-radius: 15px;
   margin-bottom: 15px;
   border: 0 none !important;
+  text-align: center;
+}
+
+.discover-block .cap-inner
+{
+  padding: 20px !important;
+}
+
+.discover-block .image-box
+{
+  max-width: 70px;
+  margin: 0 auto 30px;
+}
+
+.discover-block .inner-box
+{
+  padding: 20px !important;
 }
 
 }

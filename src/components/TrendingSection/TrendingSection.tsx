@@ -7,6 +7,7 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
+import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -40,7 +41,7 @@ const TrendingSection = () => {
 
 
   function redirectCard(name: any, code: any, id: any) {
-    if (code === "DSCI" || code === "DM") {
+    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
       router.push(`/${name?.split(" ").join("-")}`);
     } else {
       router.push(`/${name?.split(" ").join("-")}/${id}`);
