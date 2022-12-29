@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
 import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
+import { allCoursesId } from "../config/constant";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -48,6 +49,7 @@ const ProductTab = ({ courses = [], current }: any) => {
         if (item.id === id || item.parent_id === id) {
           filterCourse.push(item);
         } else if (id === 1) {
+        } else if (id === allCoursesId) {
           filterCourse = courses;
         }
       });
@@ -55,8 +57,9 @@ const ProductTab = ({ courses = [], current }: any) => {
     setFilterCourses(filterCourse);
   };
   useEffect(() => {
-    if (current) {
+    if (current >= 0) {
       filterCourse(current);
+      console.log("current", current);
     }
   }, [current]);
 
