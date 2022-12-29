@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
+import { allCoursesId } from "../config/constant";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -35,7 +36,7 @@ const ProductTab = ({ courses = [], current }: any) => {
       courses?.forEach((item: any) => {
         if (item.id === id || item.parent_id === id) {
           filterCourse.push(item);
-        } else if (id === 1) {
+        } else if (id === allCoursesId) {
           filterCourse = courses;
         }
       });
@@ -43,8 +44,9 @@ const ProductTab = ({ courses = [], current }: any) => {
     setFilterCourses(filterCourse);
   };
   useEffect(() => {
-    if (current) {
+    if (current >= 0) {
       filterCourse(current);
+      console.log("current", current);
     }
   }, [current]);
 
