@@ -6,6 +6,8 @@ import Link from "next/link";
 import { courseService } from "src/services";
 import _ from "lodash";
 import { Image } from "react-bootstrap";
+import { useRouter } from "next/router";
+import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -24,14 +26,27 @@ const settings = {
   mouseDrag: true,
 };
 
+
+
 const { title, details, description } = trendingSection;
 
-const TrendingSection = () => {
+
+const TrendingSection = () => { 
+  const router = useRouter();
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
   };
+
+
+  function redirectCard(name: any, code: any, id: any) {
+    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
+      router.push(`/${name?.split(" ").join("-")}`);
+    } else {
+      router.push(`/${name?.split(" ").join("-")}/${id}`);
+    }  
+  }
 
   useEffect(() => {
     getData();
@@ -84,7 +99,7 @@ const TrendingSection = () => {
               {CourseCard?.map(
                 ({ id, name, courseMode, batches, code }: any) => (
                   <div ref={listRef} className="gallery-item" key={id}>
-                    <div className="inner-box">
+                    <div className="inner-box" onClick={() => redirectCard(name, code, id)}>
                       {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div> */}
@@ -101,18 +116,8 @@ const TrendingSection = () => {
                       <div className="cap-box">
                         <div className="cap-inner">
                           <div className="title">
-                            <h5>
-                              {code === "DSCI" || code === "DM" ? (
-                                <Link href={`/${name?.split(" ").join("-")}`}>
+                            <h5>                         
                                   <a>{name}</a>
-                                </Link>
-                              ) : (
-                                <Link
-                                  href={`/${name?.split(" ").join("-")}/${id}`}
-                                >
-                                  <a>{name}</a>
-                                </Link>
-                              )}
                             </h5>
                           </div>
 

@@ -86,7 +86,7 @@ const TeamSection = ({ onePage = false }) => {
               ref={listRef}
             >
               {teams?.map((team) => (
-                <SingleTeam key={team.id} team={team} ref={listRef} />
+                <SingleTeam key={team.id} team={team} href={team.href} ref={listRef}  passHref />
               ))}
             </TinySlider>
 

@@ -4,8 +4,11 @@ import { Col, Row, Image } from "react-bootstrap";
 import Link from "next/link";
 import { courseService } from "src/services";
 import _ from "lodash";
+import { useRouter } from "next/router";
+import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 
 const SubCourseDetails = ({ page }: any) => {
+  const router = useRouter();
   const [subCourse, setSubCourse] = useState<any>([]);
   const getData = async () => {
     let courseListResponse = await courseService.allCourses();
@@ -17,6 +20,14 @@ const SubCourseDetails = ({ page }: any) => {
       setSubCourse(subCourse);
     }
   };
+
+  function redirectCard(name: any, code: any, id: any) {
+    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
+      router.push(`/${name?.split(" ").join("-")}`);
+    } else {
+      router.push(`/${name?.split(" ").join("-")}/${id}`);
+    }  
+  }
 
   useEffect(() => {
     getData();
@@ -35,7 +46,7 @@ const SubCourseDetails = ({ page }: any) => {
           <Row>
             <Col sm={6} md={12} lg={12}>
               <Row>
-                      {subCourse?.map(
+                {subCourse?.map(
                 ({ id, name, courseMode, batches, code }: any) => (
                             <Col
                     key={id}
@@ -45,7 +56,7 @@ const SubCourseDetails = ({ page }: any) => {
                     className="animated fadeInLeft testi-block"
                   >
                   <div className="gallery-item" key={id}>
-                    <div className="inner-box">
+                    <div className="inner-box" onClick={() => redirectCard(name, code, id)}>
                       {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div> */}

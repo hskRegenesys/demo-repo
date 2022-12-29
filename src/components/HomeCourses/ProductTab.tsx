@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
+import { useRouter } from "next/router";
+import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -19,6 +21,7 @@ const settings = {
 };
 
 const ProductTab = ({ courses = [], current }: any) => {
+  const router = useRouter();
   const [filterCourses, setFilterCourses] = useState([]);
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
@@ -26,7 +29,17 @@ const ProductTab = ({ courses = [], current }: any) => {
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
         msInWeek
     );
+  } 
+
+  function redirectCard(name: any, code: any, id: any) {
+    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
+      router.push(`/${name?.split(" ").join("-")}`);
+    } else {
+      router.push(`/${name?.split(" ").join("-")}/${id}`);
+    }  
   }
+
+  
   const listRef = useRef(null);
   let id = current;
   const filterCourse = (id: number) => {
@@ -50,7 +63,7 @@ const ProductTab = ({ courses = [], current }: any) => {
       <div className="project-carousel tabFullBox">
         {filterCourses?.map(({ id, name, courseMode, batches, code }: any) => (
           <div ref={listRef} className="gallery-item tab-item" key={id}>
-            <div className="inner-box">
+            <div className="inner-box" onClick={() => redirectCard(name, code, id)}>
               {/* <div className="icon">
                 <i className="fa fa-share-alt" aria-hidden="true"></i>
               </div> */}
@@ -64,16 +77,8 @@ const ProductTab = ({ courses = [], current }: any) => {
               <div className="cap-box">
                 <div className="cap-inner">
                   <div className="title">
-                    <h5>
-                      {code === "DSCI" || code === "DM" ? (
-                        <Link href={`/${name?.split(" ").join("-")}`}>
-                          <a>{name}</a>
-                        </Link>
-                      ) : (
-                        <Link href={`/${name?.split(" ").join("-")}/${id}`}>
-                          <a>{name}</a>
-                        </Link>
-                      )}
+                    <h5>               
+                          <a>{name}</a>                     
                     </h5>
                   </div>
 
