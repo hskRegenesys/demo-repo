@@ -6,7 +6,7 @@ export const allCourseGallery = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
@@ -18,7 +18,7 @@ export const allCourseGallery = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
@@ -30,7 +30,7 @@ export const allCourseGallery = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
@@ -42,7 +42,7 @@ export const allCourseGallery = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
@@ -54,10 +54,9 @@ export const allCourseGallery = [
     tagline: [
       "Live Class ",
       "8 Weeks ",
-      "Internation certification ",
+      "International certification ",
       "Capstone projects ",
     ],
     batch: "New Batch - 8th October, 2022",
   },
 ];
-

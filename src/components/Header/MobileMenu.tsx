@@ -56,20 +56,18 @@ const MobileMenu = ({ onePage = false }) => {
         <div className="side-menu__content">
           <div className="link-box mt-5">
             <Link href="https://mydigital.regenesys.net/login/index.php">
-              <a target='_blank' className="theme-btn btn-style-four w100">
+              <a target="_blank" className="theme-btn btn-style-four w100">
                 <i className="btn-curve"></i>
                 <span className="btn-title">Login</span>
               </a>
             </Link>
-
-            <Link  href="https://mydigital.regenesys.net/login/index.php">
-              <a target='_blank' className="theme-btn btn-style-two w100 mt-5">
+            {/* request url */}
+            <Link href="https://mydigital.regenesys.net/login/index.php">
+              <a target="_blank" className="theme-btn btn-style-two w100 mt-5">
                 <i className="btn-curve"></i>
                 <span className="btn-title">Request a call</span>
               </a>
             </Link>
-
-
           </div>
         </div>
       </div>
