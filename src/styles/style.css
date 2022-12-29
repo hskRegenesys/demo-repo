@@ -643,7 +643,7 @@ img {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  max-height: 60px;
+  max-height: 40px;
   z-index: 1;
 }
 
@@ -4806,7 +4806,8 @@ tns-controls2 {
   padding: 20px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  max-width: 380px;
+  max-width: 360px;
+  min-width: 360px;
   height: 500px;
   cursor: pointer;
 }
@@ -12873,7 +12874,7 @@ featured-section .right-col .sec-title h2 {
 
 .mobile-nav__container li.dropdown .dropdown-btn {
   position: absolute;
-  top: 0;
+  top: 12px;
   right: 0;
   line-height: 22px;
   width: 22px;
@@ -25227,7 +25228,12 @@ input.PhoneInputInput {
 
   .tns-horizontal.tns-subpixel>.tns-item, .tabFullBox .tab-item
   {
-    min-width: 356px
+    min-width: 300px
+  }
+
+  .featured-section .left-col .inner
+  {
+    max-width: 320px;
   }
 
   .discover-block .cap-box
@@ -25278,6 +25284,18 @@ input.PhoneInputInput {
   .partner-one {
     padding-bottom: 30px;
     padding-top: 30px;
+}
+
+.gallery-item .inner-box
+{
+  max-width: 300px;
+  min-width: 300px;
+}
+
+
+.all-course-filter .gallery-item .inner-box
+{
+  max-width: 100%;
 }
 
   .featured-section .right-col .inner h1
@@ -25517,6 +25535,49 @@ input.PhoneInputInput {
 .discover-block .inner-box
 {
   padding: 20px !important;
+}
+
+.main-footer.normal-padding .widgets-section
+{
+  padding: 30px 0 0 !important;
+}
+
+.faqs-section, .get-quote-three {
+  padding: 60px 0px 70px;
+}
+
+faqs-section .auto-container, .work-tabs .tabs-content
+{
+  padding: 0 30px;
+}
+
+.product-details
+{
+  padding-top: 30px;
+  padding: 30px
+}
+
+.product-details__title i
+{
+  background-image: none;
+}
+
+.faqs-section .faq-block
+{
+  padding: 30px;
+}
+
+.faqs-section.curriculum
+{
+  padding: 10px;
+}
+
+.product-description__title {
+  margin: 0 auto;
+  font-size: 32px;
+  color: #FFF;
+  margin-bottom: 30px;
+  max-width: 300px;
 }
 
 }
