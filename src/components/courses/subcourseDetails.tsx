@@ -12,11 +12,13 @@ const SubCourseDetails = ({ page }: any) => {
   const [subCourse, setSubCourse] = useState<any>([]);
   const getData = async () => {
     let courseListResponse = await courseService.allCourses();
+
     if (page === "Data-Science") {
       const subCourse = _.filter(
         courseListResponse,
         (item) => item.parent_id === 10
       );
+
       setSubCourse(subCourse);
     } else {
       const subCourse = _.filter(
@@ -45,6 +47,7 @@ const SubCourseDetails = ({ page }: any) => {
         msInWeek
     );
   }
+
   return (
     <>
       <section className="all-course-filter">

@@ -6,34 +6,33 @@ import { Col, Image, Modal, Row } from "react-bootstrap";
 import { useRouter } from "next/router";
 import ModalPopup from "../Modal/ModalPopup";
 
-
-const ProductDetailsPage = ({courseDetails, courseId }: any) => {
+const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   const {
-  falgsa,
-  flagnig,
-  flagind,
-  flagus,
-  title,
-  price,
-  certifiedText1,
-  certifiedText2,
-  certifiedText3,
-  subTitle,
-  certifiedTitle1,
-  certifiedTitle2,
+    falgsa,
+    flagnig,
+    flagind,
+    flagus,
+    title,
+    price,
+    certifiedText1,
+    certifiedText2,
+    certifiedText3,
+    subTitle,
+    certifiedTitle1,
+    certifiedTitle2,
 
-  certifiedTitle3,
-  admissionText,
-  termsConditions,
-} = courseDetails?.productDetails;
+    certifiedTitle3,
+    admissionText,
+    termsConditions,
+  } = courseDetails?.productDetails;
   const [coursePriceDetails, setcoursePrice] = useState([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
     setcoursePrice(courseListResponse);
-    console.log("Price", courseListResponse);
+    console.log("CountryPrice", courseListResponse);
   };
 
   useEffect(() => {
@@ -67,7 +66,10 @@ const ProductDetailsPage = ({courseDetails, courseId }: any) => {
         <Row>
           <Col lg={12} xl={12}>
             <div className="product-details__top">
-              <h3 className="product-details__title">{title}<i className="arrow-sign-right"></i></h3>
+              <h3 className="product-details__title">
+                {title}
+                <i className="arrow-sign-right"></i>
+              </h3>
               <h5 className="product-details__subtitle mt-3">{subTitle}</h5>
             </div>
           </Col>
@@ -119,16 +121,19 @@ const ProductDetailsPage = ({courseDetails, courseId }: any) => {
             <p>{termsConditions}</p>
             <p>{admissionText}</p>
             <div className="product-details__buttons">
-                <a className="theme-btn btn-style-two" onClick={()=>setShow(!show)}>
-                  <i className="btn-curve"></i>
-                  <span className="btn-title">Enroll Now</span>
-                </a>
+              <a
+                className="theme-btn btn-style-two"
+                onClick={() => setShow(!show)}
+              >
+                <i className="btn-curve"></i>
+                <span className="btn-title">Enroll Now</span>
+              </a>
             </div>
           </Col>
         </Row>
       </div>
-       <Modal show={show}>
-        <ModalPopup setShows={setShow}  />
+      <Modal show={show}>
+        <ModalPopup setShows={setShow} />
       </Modal>
     </section>
   );

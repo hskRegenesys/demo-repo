@@ -14,8 +14,6 @@ function ModalPopup(props: any) {
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
-
-    // console.log("courseListResponse----", courseListResponse);
   };
   useEffect(() => {
     getData();
