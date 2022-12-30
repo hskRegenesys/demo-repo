@@ -45,11 +45,7 @@ const navItemsTwo = [
 
 const navItems = [
   home,
-  {
-    id: 2,
-    name: "About Us",
-    href: "/about",
-  },
+
   {
     id: 4,
     name: "Courses",
@@ -58,6 +54,11 @@ const navItems = [
       { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
       { id: 6, name: "Data Science", href: "/data-science-main" },
     ],
+  },
+  {
+    id: 2,
+    name: "About",
+    href: "/about",
   },
   {
     id: 8,

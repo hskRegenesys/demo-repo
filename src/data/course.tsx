@@ -669,7 +669,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Program in Basic Basic Data Science",
-        text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
         lists: [
           "10 weeks cousrse",
           "Live Sessions",
@@ -681,7 +681,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -1039,7 +1039,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Basic Advanced Data Science",
+        title: "Certification Program in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now.",
         lists: [
           "11 weeks",
