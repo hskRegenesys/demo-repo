@@ -4,7 +4,7 @@ import ModalPopup from "../Modal/ModalPopup";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 
-const ProcessOne = ({ courseDetails }: any) => {
+const ProcessOne = ({ courseDetails, brochureName }: any) => {
   const router = useRouter();
   const [show, setShow] = useState<boolean>(false);
   const [title, setTitle] = useState("");
@@ -72,7 +72,7 @@ const ProcessOne = ({ courseDetails }: any) => {
         )}
       </div>
       <Modal show={show}>
-        <ModalPopup setShows={setShow} title={title} query={router?.query} />
+        <ModalPopup setShows={setShow} title={title} query={router?.query} brochureName={brochureName} />
       </Modal>
     </section>
   );

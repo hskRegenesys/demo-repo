@@ -19,7 +19,7 @@ import JoinReasons from "@/components/JoinReasons/JoinReasons";
 import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
 import { useRouter } from "next/router";
 import { courseService } from "src/services";
-import { courseData } from "@/data/course";
+import { brochureDetails, courseData } from "@/data/course";
 
 const DigitalMarketing = () => {
   const router = useRouter();
@@ -35,7 +35,10 @@ const DigitalMarketing = () => {
     }
   }, [courseId]);
   const allContent: any = courseData;
-  const courseDetails: any = allContent[coursePriceDetails[0]?.code];
+  const code = coursePriceDetails[0]?.code
+  const courseDetails: any = allContent[code];
+  const brochureName:any = brochureDetails[code];
+  console.log("courseDetails =====>", brochureName)
   return (
     <Layout pageTitle={router?.query?.course}>
       <Style />
@@ -47,21 +50,19 @@ const DigitalMarketing = () => {
         parent="All courses"
         parentHref="/shop"
       />
-      {courseDetails && (
-        <>
-          <CourseDetails courseDetails={courseDetails} />
-          <SkillDetailSection courseDetails={courseDetails} />
-          <JoinReasons courseDetails={courseDetails} />
-          <ToolsCovered courseDetails={courseDetails} />
-          <FeatureSeven courseDetails={courseDetails} />
-          <VideoOne courseDetails={courseDetails} />
-          <CourseCurriculum courseDetails={courseDetails} />
-          <FeesDetails courseDetails={courseDetails} courseId={courseId} />
-          <CourseBenefits courseDetails={courseDetails} />
-          <FaqsSection courseDetails={courseDetails} />
-          <CallToSection />
-        </>
-      )}
+      {courseDetails&&<>
+      <CourseDetails courseDetails={courseDetails} brochureName={brochureName}/>
+      <SkillDetailSection courseDetails={courseDetails}/>
+      <JoinReasons courseDetails={courseDetails}/>
+      <ToolsCovered courseDetails={courseDetails}/>
+      <FeatureSeven courseDetails={courseDetails}/>
+      <VideoOne courseDetails={courseDetails}/>
+      <CourseCurriculum courseDetails={courseDetails}/>
+      <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+      <CourseBenefits courseDetails={courseDetails}/>
+      <FaqsSection courseDetails={courseDetails}/>
+      <CallToSection />
+      </>}
       <MainFooter />
     </Layout>
   );

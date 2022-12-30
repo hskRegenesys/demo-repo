@@ -10,4 +10,5 @@ export const apiEndPoints = Object.freeze({
   parentCourseApi: "/course/parent",
   coursePriceApi: "/course/price",
   leadApi: "/leads",
+  downloadBrochure:"/document/downloadurl"
 });
