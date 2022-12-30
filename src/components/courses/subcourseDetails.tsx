@@ -1,4 +1,3 @@
-import { digitalMarketingMain } from "@/data/course";
 import React, { useState, useEffect } from "react";
 import { Col, Row, Image } from "react-bootstrap";
 import Link from "next/link";
