@@ -25335,6 +25335,7 @@ input.PhoneInputInput {
     margin-bottom: 30px;
   }
 
+<<<<<<< HEAD
   .tns-horizontal.tns-subpixel>.tns-item, .tabFullBox .tab-item
   {
     min-width: 300px;
@@ -25346,6 +25347,13 @@ input.PhoneInputInput {
     max-width: 320px;
   }
 
+=======
+  .tns-horizontal.tns-subpixel > .tns-item,
+  .tabFullBox .tab-item {
+    min-width: 356px;
+  }
+
+>>>>>>> ca3c86bbb7fe0c4af8aca2454a79b93664fe0b88
   .discover-block .cap-box {
     position: relative !important;
     left: unset !important;
@@ -25389,6 +25397,7 @@ input.PhoneInputInput {
     padding-bottom: 30px;
     padding-top: 30px;
   }
+<<<<<<< HEAD
 
 .gallery-item .inner-box
 {
@@ -25401,9 +25410,10 @@ input.PhoneInputInput {
 {
   max-width: 100%;
 }
+=======
+>>>>>>> ca3c86bbb7fe0c4af8aca2454a79b93664fe0b88
 
-  .featured-section .right-col .inner h1
-  {
+  .featured-section .right-col .inner h1 {
     text-align: center;
     z-index: 3;
     font-family: "Raleway-bold";
