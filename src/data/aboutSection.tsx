@@ -167,7 +167,7 @@ export const aboutMeOne = {
   highlight: "Shifting The Focus to The New Digital World",
   text: "I am delighted to welcome you to Digital Regenesys at Regenesys Business School. The ongoing digital revolution demands a new breed of professionals to succeed in the new digital world where new technologies have sparked rapid innovation.",
   text2:
-    "To give you a competitive advantage, we have developed cuttingedge digital technology Courses in the areas of information technology and management. Our Courses are facilitated by leading experts, entrepreneurs, and academics from top local and international institutions. Get inspired and energised to transform your career with Courses grounded in the realities of the new digtital world.",
+    "To give you a competitive advantage, we have developed cutting-edge digital technology Courses in the areas of information technology and management. Our Courses are facilitated by leading experts, entrepreneurs, and academics from top local and international institutions. Get inspired and energised to transform your career with Courses grounded in the realities of the new digtital world.",
   text3: "I wish you success on your journey towards greatness.",
   // socials: [
   //   {
