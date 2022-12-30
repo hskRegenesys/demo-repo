@@ -4789,6 +4789,7 @@ tns-controls2 {
   width: 25%;
   margin: 20px;
   max-width: 370px;
+  min-width: 350px;
 }
 
 .gallery-item {
@@ -25228,7 +25229,8 @@ input.PhoneInputInput {
 
   .tns-horizontal.tns-subpixel>.tns-item, .tabFullBox .tab-item
   {
-    min-width: 300px
+    min-width: 300px;
+    margin-right: 30px;
   }
 
   .featured-section .left-col .inner
