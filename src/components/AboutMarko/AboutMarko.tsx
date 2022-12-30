@@ -21,18 +21,16 @@ const AboutMarko = () => {
                 <p className="about-me-one__text">{text}</p>
                 <p className="about-me-one__text">{text2}</p>
                 <p className="about-me-one__text">{text3}</p>
-
-              </div>
+               </div>
             </Col>
 
-            <Col md={12} lg={6}>
-              <div className="about-me-one__image">
-                <Image src={image} alt="" />
-              </div>
-            </Col>
-          </Row>
-        </div>
-      
+          <Col md={12} lg={6}>
+            <div className="about-me-one__image">
+              <Image src={image} alt="" />
+            </div>
+          </Col>
+        </Row>
+      </div>
     </section>
   );
 };

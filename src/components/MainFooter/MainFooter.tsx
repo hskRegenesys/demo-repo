@@ -18,8 +18,11 @@ const {
   phone2,
   phone3,
   web,
+  weblink,
   web2,
+  web2link,
   web3,
+  web3link,
   email,
   textBottom,
 } = mainFooter;
@@ -50,10 +53,10 @@ const MainFooter = ({ normalPadding = true }) => {
                     </ul>
 
                     <ul className="social-links clearfix">
-                      {socials?.map(({ id, icon, href }) => (
+                      {socials?.map(({ id, icon, href, title }) => (
                         <li key={id}>
                           <a href={href} target="_blank">
-                            <span className={icon}></span>
+                            <span title={title} className={icon}></span>
                           </a>
                         </li>
                       ))}
@@ -70,10 +73,10 @@ const MainFooter = ({ normalPadding = true }) => {
                 <h5>{text}</h5>
               </div>
               <div className="widget-content row">
-                <Col xl={3} lg={6} md={6} sm={12} className="column">
+                <Col xl={3} lg={6} md={6} sm={12} className="column col-6">
                   <div className="footer-widget info-widget">
                     <div className="widget-content address">
-                      <h6>South Africa Campus</h6>
+                      <h6>South African Campus</h6>
                       <ul className="contact-info">
                         <li className="address">
                           <span className="icon flaticon-pin-1"></span>{" "}
@@ -89,7 +92,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </li>
                         <li>
                           <span className="icon flaticon-link"></span>
-                          <a href={`${web}`} target="_blank">
+                          <a href={`${weblink}`} target="_blank">
                             {web}
                           </a>
                         </li>
@@ -98,7 +101,7 @@ const MainFooter = ({ normalPadding = true }) => {
                   </div>
                 </Col>
 
-                <Col xl={3} lg={6} md={6} sm={12} className="column">
+                <Col xl={3} lg={6} md={6} sm={12} className="column col-6">
                   <div className="footer-widget info-widget">
                     <div className="widget-content">
                       <h6>India Corporate Office</h6>
@@ -116,7 +119,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </li>
                         <li>
                           <span className="icon flaticon-link"></span>
-                          <a href={`${web2}`} target="_blank">
+                          <a href={`${web2link}`} target="_blank">
                             {web2}
                           </a>
                         </li>
@@ -125,7 +128,7 @@ const MainFooter = ({ normalPadding = true }) => {
                   </div>
                 </Col>
 
-                <Col xl={3} lg={6} md={6} sm={12} className="column">
+                <Col xl={3} lg={6} md={6} sm={12} className="column col-6">
                   <div className="footer-widget info-widget">
                     <div className="widget-content ">
                       <h6>Nigeria Corporate Office</h6>
@@ -143,7 +146,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </li>
                         <li>
                           <span className="icon flaticon-link "></span>
-                          <a href={`${web3}`} target="_blank">
+                          <a href={`${web3link}`} target="_blank">
                             {web3}
                           </a>
                         </li>

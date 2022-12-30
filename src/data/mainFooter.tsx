@@ -20,7 +20,7 @@ export const mainFooter = {
   about2: "The new corporate agency theme",
   about3:
     "We’ve grown our business on a set of \n three building blocks. Enjoy the \n people you work.",
-  text: "Revolutionise you career with future ready skills",
+  text: "Revolutionise your career with future ready skills",
   address:
     "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
   address2:
@@ -31,9 +31,12 @@ export const mainFooter = {
   phone: "+27 (11) 669 5000",
   phone2: "+91 1800 212 9950",
   phone3: "+234 (1) 453 0959",
-  web: "https://www.regenesys.net/",
-  web2: "https://www.india.regenesys.net/",
-  web3: "https://www.nigeria.regenesys.net/",
+  web: "www.regenesys.net",
+  weblink: "https://www.regenesys.net/",
+  web2: "www.india.regenesys.net",
+  web2link: "https://www.india.regenesys.net/",
+  web3: "www.nigeria.regenesys.net",
+  web3link: "https://www.nigeria.regenesys.net/",
 
   email: "needhelp@linoor.com",
   textBottom:
@@ -45,27 +48,30 @@ export const mainFooter = {
       id: 1,
       href: "https://www.facebook.com/digitalregenesys",
       icon: "fab fa-facebook",
+      title: "Facebook",
     },
     {
       id: 2,
       href: "https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A",
       icon: "fab fa-youtube",
+      title: "Youtube",
     },
     {
       id: 3,
       href: "https://www.instagram.com/digital_regenesys/",
       icon: "fab fa-instagram",
+      title: "Instagram",
     },
   ],
   links: [
     {
       id: 1,
-      href: "",
+      href: "/terms-and-conditions",
       title: "Terms & Conditions",
     },
     {
       id: 2,
-      href: "",
+      href: "/privacy-policy",
       title: "Privacy Policy",
     },
     {

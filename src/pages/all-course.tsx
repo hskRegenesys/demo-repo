@@ -12,6 +12,7 @@ import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import AllCourseGallery from "@/components/AllCourseGallery/AllCourseGallery";
+import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 
 const allCourse = () => {
   return (
@@ -23,8 +24,9 @@ const allCourse = () => {
       <PageBanner title="Products" page="All courses" />
       <AllCourseText />
       <AllCourseGallery />
-      <PartnerOne />   
-      <VideoOne /> 
+      <PartnerOne />
+      <VideoOne />
+      <CourseCurriculum />
       <PopularTopics />
       <CallToSection />
       <MainFooter />

@@ -9,16 +9,17 @@ let { title, tabBtns, pTabs, courseTab, cTab, pTabs2, describe } =
   gallerySection;
 
 const HomeCourses = ({ className = "", carousel = "", courses = [] }: any) => {
-  const [current, setCurrent] = useState();
+  const [current, setCurrent] = useState<any>();
   useEffect(() => {
     if (courses.length > 0) {
-      setCurrent(courses[0].id);
+      setCurrent(0);
     }
   }, [courses.length]);
   let parentCourse: any = [];
 
   if (courses.length) {
     parentCourse = _.filter(courses, (item: any) => item?.parent_id === null);
+    parentCourse.unshift({ id: 0, name: "All Courses", code: "all" });
   }
   return (
     <section className={`gallery-section-two ${className}`}>

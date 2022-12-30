@@ -1,6 +1,5 @@
-
 export const courseBenefits = {
-  title: "Benefits",
+  title: "Benefitsssss",
   desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
   tabBtns: [
     {
@@ -24,8 +23,10 @@ export const courseBenefits = {
     {
       id: "tab-1",
       image: "featured-image-14.jpg",
-      text1: "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-      text2: "Elevate your LinkedIn game with a comprehensive profile building session",
+      text1:
+        "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+      text2:
+        "Elevate your LinkedIn game with a comprehensive profile building session",
       lists: [
         "Self-contained, state-of-the-art time clock",
         "Scalability of up to 500 employees per time clock",

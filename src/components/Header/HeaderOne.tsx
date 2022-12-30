@@ -7,6 +7,7 @@ import { Image } from "react-bootstrap";
 import NavItem from "./NavItem";
 import { courseService } from "src/services";
 import _ from "lodash";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const {
   title,
@@ -19,8 +20,6 @@ const {
   title2,
   navItems,
   navItemsTwo,
-  phone,
-  socials,
 } = headerData;
 
 const HeaderOne = ({
@@ -104,21 +103,6 @@ const HeaderOne = ({
         <div className="topbar-four">
           <div className="auto-container">
             <p>{title2}</p>
-            <div className="right-content">
-              <div className="phone">
-                <span className="icon flaticon-call"></span>
-                <a href={`tel:${phone.split(" ").join("")}`}>{phone}</a>
-              </div>
-              <ul className="list-unstyled social-links">
-                {socials?.map(({ id, icon, href }) => (
-                  <li key={id}>
-                    <a href={href}>
-                      <span className={icon}></span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       )}
@@ -126,7 +110,7 @@ const HeaderOne = ({
           <div className="auto-container d-flex clearfix">
             <div className="logo-box">
               <div className="logo">
-                <Link href="#">
+                <Link href="/">
                   <a title={title}>
                     <Image id="thm-logo" src={Logo} alt={title} title={title} />
                   </a>

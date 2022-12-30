@@ -51,7 +51,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                   <ul className="list-unstyled process-one__list">
                     {lists?.map((text: string, i: number) => (
                       <li key={i}>
-                        <i className="fa fa-check" aria-hidden="true"></i>
+                        <i className="fa fa-check mr-3" aria-hidden="true"></i>
                         {text}
                       </li>
                     ))}

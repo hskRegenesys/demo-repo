@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import {downloadFromBlob} from "@/components/config/helper"
 
 function ModalPopup(props: any) {
-  const router = useRouter()
+  const router = useRouter();
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
@@ -30,7 +30,7 @@ function ModalPopup(props: any) {
     handleSubmit,
   } = hookForm;
 
-  const onSubmit = async(data: any) => {
+  const onSubmit = async (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
     data.zapUrl = "";

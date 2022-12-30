@@ -3,11 +3,12 @@ import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
 import React from "react";
 import { Image } from "react-bootstrap";
+import Link from "next/link";
 
-const { icon, text, email, phone, socials, navItems, navItemsTwo } = headerData;
+const { icon, navItems, navItemsTwo } = headerData;
 
 const MobileMenu = ({ onePage = false }) => {
-  const contextRoot:any = useRootContext();
+  const contextRoot: any = useRootContext();
   const { menuStatus, toggleMenu } = contextRoot;
   const newNavItems = onePage ? navItemsTwo : navItems;
 
@@ -21,7 +22,17 @@ const MobileMenu = ({ onePage = false }) => {
         <div className="cursor-follower"></div>
       </div>
       <div className="side-menu__block-inner">
-        <div className="side-menu__top justify-content-end">
+        <div className="side-menu__top">
+          <div className="logo-box-mobile">
+            <div className="logo">
+              <Link href="/">
+                <a>
+                  <Image id="thm-logo" src="/assets/images/logo.png" />
+                </a>
+              </Link>
+            </div>
+          </div>
+
           <a
             onClick={toggleMenu}
             className="side-menu__toggler side-menu__close-btn"
@@ -42,19 +53,21 @@ const MobileMenu = ({ onePage = false }) => {
             </ul>
           </div>
         </nav>
-        <div className="side-menu__sep"></div>
         <div className="side-menu__content">
-          <p>{text}</p>
-          <p>
-            <a href={`mailto:${email}`}>{email}</a> <br />{" "}
-            <a href={`tel:${phone.split(" ").join("")}`}>{phone}</a>
-          </p>
-          <div className="side-menu__social">
-            {socials?.map(({ id, icon, href }) => (
-              <a key={id} href={href}>
-                <i className={icon}></i>
+          <div className="link-box mt-5">
+            <Link href="https://mydigital.regenesys.net/login/index.php">
+              <a target="_blank" className="theme-btn btn-style-four w100">
+                <i className="btn-curve"></i>
+                <span className="btn-title">Login</span>
               </a>
-            ))}
+            </Link>
+            {/* request url */}
+            <Link href="https://mydigital.regenesys.net/login/index.php">
+              <a target="_blank" className="theme-btn btn-style-two w100 mt-5">
+                <i className="btn-curve"></i>
+                <span className="btn-title">Request a call</span>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

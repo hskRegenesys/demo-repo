@@ -32,43 +32,53 @@ const teamSection = {
     {
       id: 9,
       name: "Basic Digital Marketing ",
+      href: "/Digital-Marketing",
     },
     {
       id: 10,
       name: "Advanced Digital Marketing",
+      href: "/Digital-Marketing",
     },
     {
       id: 11,
       name: "Applied Digital Marketing",
+      href: "/Digital-Marketing",
     },
     {
       id: 2,
       name: "Project Management",
+      href: "/Project-Management",
     },
     {
       id: 3,
       name: "Cyber Security",
+      href: "/Digital-Marketing",
     },
     {
       id: 4,
       name: "Investment, Trading and Personal finance",
+      href: "/Digital-Marketing",
     },
     {
       id: 6,
-      name: "DATA SCIENCE",
+      name: "Data Science",
+      href: "/Digital-Marketing",
     },
     {
       id: 5,
       name: "Basic Data Science ",
+      href: "/Digital-Marketing",
     },
 
     {
       id: 7,
       name: "Advanced Data Science",
+      href: "/Digital-Marketing",
     },
     {
       id: 8,
       name: "Applied Data Science",
+      href: "/Digital-Marketing",
     },
   ],
 };
