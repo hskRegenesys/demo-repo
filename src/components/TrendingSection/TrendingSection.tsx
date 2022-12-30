@@ -8,6 +8,7 @@ import _ from "lodash";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
 import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
+import { batchInfo } from "../config/helper";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -125,7 +126,7 @@ const TrendingSection = () => {
                             <ul className="about-seven__list list-unstyled">
                               <li>{courseMode.name}</li>
                               <li>
-                                {batches?.map((item: any) => (
+                                {batchInfo(batches)?.map((item: any) => (
                                   <>
                                     {getWeeksDiff(
                                       item.start_date,
@@ -139,7 +140,7 @@ const TrendingSection = () => {
                               <li>Capstone projects </li>
                             </ul>
                           </div>
-                          {batches?.map((item: any) => (
+                          {batchInfo(batches)?.map((item: any) => (
                             <div className="batch">{item.description}</div>
                           ))}
                         </div>
