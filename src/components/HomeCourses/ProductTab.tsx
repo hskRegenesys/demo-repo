@@ -3,8 +3,8 @@ import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
-import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
-import { allCoursesId } from "../config/constant";
+import { dataScienceCode, digitalMarkrtingCode, allCoursesId } from "../config/constant";
+
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -70,7 +70,7 @@ const ProductTab = ({ courses = [], current }: any) => {
           {filterCourses?.map(
             ({ id, name, courseMode, batches, code }: any) => (
               <div ref={listRef} className="gallery-item tab-item" key={id}>
-                <div className="inner-box">
+                <div className="inner-box" onClick={() => redirectCard(name, code, id)}>
                   {/* <div className="icon">
                 <i className="fa fa-share-alt" aria-hidden="true"></i>
               </div> */}
