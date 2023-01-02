@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Col, Image, Modal, Row } from "react-bootstrap";
 import { useRouter } from "next/router";
 import ModalPopup from "../Modal/ModalPopup";
+import { indiaCountryId, nigeriaCountryId, southAfricaCountryId } from "../config/constant";
 
 const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   const {
@@ -25,16 +26,14 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
     admissionText,
     termsConditions,
   } = courseDetails?.productDetails;
-  const [coursePriceDetails, setcoursePrice] = useState([]);
+  const [coursePriceDetails, setcoursePrice] = useState<any>([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
   const [show, setShow] = useState(false);
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
     setcoursePrice(courseListResponse);
-    console.log("CountryPrice", courseListResponse);
   };
-
   useEffect(() => {
     if (coursePriceDetails?.length) {
       CoursePriceChange(2);
@@ -45,7 +44,6 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
       getData();
     }
   }, [courseId]);
-
   function CoursePriceChange(id: number) {
     if (coursePriceDetails?.length) {
       coursePriceDetails?.forEach(function (val: any) {
@@ -59,7 +57,6 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
       });
     }
   }
-
   return (
     <section className="product-details">
       <div className="auto-container">
@@ -98,17 +95,21 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
             <div className="product-details__flag">
               <h5 className="product-details__subtitle">Total Admission Fee</h5>
               <div className="flags">
-                <a onClick={() => CoursePriceChange(2)}>
-                  <Image src={flagind} alt="India" />
-                </a>
-
-                <a onClick={() => CoursePriceChange(1)}>
-                  <Image src={falgsa} alt="South Africa" />
-                </a>
-
-                <a onClick={() => CoursePriceChange(3)}>
-                  <Image src={flagnig} alt="Nigeria" />
-                </a>
+                {coursePriceDetails[0]?.coursePrices?.map((item: any) => (
+                  <>
+                  <a onClick={() => CoursePriceChange(item.country_id)}>
+                    {item.country_id === southAfricaCountryId && (
+                      <Image src={falgsa} alt="South Africa" />
+                    )}
+                    {item.country_id === indiaCountryId && (
+                      <Image src={flagind} alt="India" />
+                    )}
+                    {item.country_id === nigeriaCountryId && (
+                      <Image src={flagnig} alt="Nigeria" />
+                    )}
+                  </a>
+                  </>
+                ))}
               </div>
             </div>
 
