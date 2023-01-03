@@ -1,9 +1,6 @@
 import React from "react";
 
-
-
-const FeesDetails = ({courseDetails}:any) => {
-  console.log("courseDetails =====>", courseDetails)
+const FeesDetails = ({ courseDetails }: any) => {
   const { title, text1 } = courseDetails?.productDescription;
   return (
     <section className="product-description">

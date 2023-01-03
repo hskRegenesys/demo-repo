@@ -5,6 +5,7 @@ import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
+
 import { courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
@@ -20,6 +21,9 @@ function ModalPopup(props: any) {
     getData();
   }, []);
   const hookForm: any = useForm();
+
+  const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
+
   const {
     formState: { errors },
     reset,
@@ -33,21 +37,29 @@ function ModalPopup(props: any) {
   const onSubmit = async (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
-    data.zapUrl = "";
+    data.zapUrl = props?.courseDetails?.zapUrl;
+    if (utm_source) data.utm_source = utm_source;
+    if (utm_medium) data.utm_medium = utm_medium;
+    if (utm_campaign) data.utm_campaign = utm_campaign;
+    if (utm_content) data.utm_content = utm_content;
     const date = `${current.getDate()}/${
       current.getMonth() + 1
     }/${current.getFullYear()}`;
     if (date) {
       data.date = date;
     }
+
     const result = await leadService.saveLead(data);
     if (result?.data && props?.title === "Download Brochure") {
       const response = await courseService.downloadBrochure(
         props?.brochureName?.name
       );
+      props.setShows(false);
       downloadFromBlob(response?.data, props?.brochureName?.name) == false;
     }
-     router.push("/thankYou");
+    if (props?.title !== "Download Brochure") {
+      router.push("/thankYou");
+    }
   };
 
   let courses: any = [];

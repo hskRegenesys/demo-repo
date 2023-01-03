@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/router";
 import { courseService } from "src/services";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
@@ -16,8 +17,8 @@ export default function LandingForm(contactform: any) {
   const onSubmit = (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
-    data.zapUrl = "";
-    data.highestQualification = "";
+    (data.zapUrl = process.env.LEADS_API_BASE_URL + "/leads"),
+      (data.highestQualification = "");
     data.interestedTopic = "";
     const date = `${current.getDate()}/${
       current.getMonth() + 1
@@ -25,6 +26,7 @@ export default function LandingForm(contactform: any) {
     if (date) {
       data.date = date;
     }
+    router.push("/thankYou");
     const result = leadService.saveLead(data);
   };
 
@@ -44,6 +46,8 @@ export default function LandingForm(contactform: any) {
     );
   }
   const hookForm: any = useForm();
+  const router = useRouter();
+  const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
   const {
     formState: { errors },
     reset,
@@ -63,9 +67,9 @@ export default function LandingForm(contactform: any) {
               <div className="form-group">
                 <label>Full Name*</label>
                 <input
-                  className={`{errors.fullname && "invalid"}`}
+                  className={`{errors.Name && "invalid"}`}
                   placeholder="Full Name*"
-                  {...register("fullname", {
+                  {...register("Name", {
                     required: "Full Name is Required",
                     pattern: {
                       value: /^[a-zA-Z_ ]+$/,
@@ -73,13 +77,11 @@ export default function LandingForm(contactform: any) {
                     },
                   })}
                   onKeyUp={() => {
-                    trigger("fullname");
+                    trigger("Name");
                   }}
                 />
-                {errors?.fullname && (
-                  <small className="text-danger">
-                    {errors?.fullname?.message}
-                  </small>
+                {errors?.Name && (
+                  <small className="text-danger">{errors?.Name?.message}</small>
                 )}
               </div>
             </div>
@@ -87,9 +89,9 @@ export default function LandingForm(contactform: any) {
               <label>Email*</label>
               <div className="form-group">
                 <input
-                  className={`{errors.email && "invalid"}`}
+                  className={`{errors.Email && "invalid"}`}
                   placeholder="Email*"
-                  {...register("email", {
+                  {...register("Email", {
                     required: "Email is Required",
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -97,11 +99,11 @@ export default function LandingForm(contactform: any) {
                     },
                   })}
                   onKeyUp={() => {
-                    trigger("email");
+                    trigger("Email");
                   }}
                 />
-                {errors.email && (
-                  <small className="text-danger">{errors.email.message}</small>
+                {errors.Email && (
+                  <small className="text-danger">{errors.Email.message}</small>
                 )}
               </div>
             </div>
@@ -113,7 +115,7 @@ export default function LandingForm(contactform: any) {
                 <label>Phone</label>
                 <input
                   type="hidden"
-                  {...register("phone", {
+                  {...register("Phone", {
                     maxLength: {
                       value: 16,
                       message: "Cannot Exceed 10 digits",
@@ -131,12 +133,12 @@ export default function LandingForm(contactform: any) {
                   defaultCountry="ZA"
                   placeholder="Select Country Code*"
                   onChange={(e) => {
-                    setValue("phone", e);
+                    setValue("Phone", e);
                   }}
-                  className={`${errors.phone && "invalid"}`}
+                  className={`${errors.Phone && "invalid"}`}
                 />
-                {errors.phone && (
-                  <small className="text-danger">{errors.phone.message}</small>
+                {errors.Phone && (
+                  <small className="text-danger">{errors.Phone.message}</small>
                 )}
               </div>
             </div>
@@ -146,7 +148,7 @@ export default function LandingForm(contactform: any) {
                 <input
                   type="text"
                   placeholder="Enter City"
-                  className={`${errors.city && "invalid"}`}
+                  className={`${errors.City && "invalid"}`}
                   {...register("city", {
                     required: "City is Required",
                     pattern: {
@@ -155,11 +157,11 @@ export default function LandingForm(contactform: any) {
                     },
                   })}
                   onKeyUp={() => {
-                    trigger("city");
+                    trigger("City");
                   }}
                 />
-                {errors.city && (
-                  <small className="text-danger">{errors.city.message}</small>
+                {errors.City && (
+                  <small className="text-danger">{errors.City.message}</small>
                 )}
               </div>
             </div>
@@ -174,7 +176,7 @@ export default function LandingForm(contactform: any) {
                     errors.gender &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   }`}
-                  {...register("Programme", {
+                  {...register("interested_topic", {
                     required: "Course is required",
                   })}
                 >
@@ -190,9 +192,9 @@ export default function LandingForm(contactform: any) {
                     );
                   })}
                 </select>
-                {errors.Programme && (
+                {errors.interested_topic && (
                   <small className="text-danger">
-                    {errors.Programme.message}
+                    {errors.interested_topic.message}
                   </small>
                 )}
               </div>
@@ -201,7 +203,7 @@ export default function LandingForm(contactform: any) {
               <div className="form-group">
                 <label>Interested Topic*</label>
                 <input
-                  className={`{errors.fullname && "invalid"}`}
+                  className={`{errors.Name && "invalid"}`}
                   placeholder="Full Name*"
                   {...register("topic", {
                     required: "Full Name is Required",
@@ -227,7 +229,7 @@ export default function LandingForm(contactform: any) {
                     errors.gender &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   }`}
-                  {...register("qualification", {
+                  {...register("highest_qualification", {
                     required: "Qualification is required",
                   })}
                 >
@@ -236,9 +238,9 @@ export default function LandingForm(contactform: any) {
                     <option value={item.value}>{item.option}</option>
                   ))}
                 </select>
-                {errors.qualification && (
+                {errors.highest_qualification && (
                   <small className="text-danger">
-                    {errors.qualification.message}
+                    {errors.highest_qualification.message}
                   </small>
                 )}
               </div>

@@ -13,7 +13,6 @@ import { batchInfo } from "../config/helper";
 const handleSearch = (e: any) => {
   e.preventDefault();
   const formData = new FormData(e.target);
-  console.log(formData.get("search"));
 };
 
 const AllCourseGallery = () => {

@@ -8,6 +8,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
   const router = useRouter();
   const [show, setShow] = useState<boolean>(false);
   const [title, setTitle] = useState("");
+
   return (
     <section className="process-one">
       <div className="FluidSection">
@@ -72,7 +73,13 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
         )}
       </div>
       <Modal show={show}>
-        <ModalPopup setShows={setShow} title={title} query={router?.query} brochureName={brochureName} />
+        <ModalPopup
+          setShows={setShow}
+          title={title}
+          query={router?.query}
+          brochureName={brochureName}
+          courseDetails={courseDetails}
+        />
       </Modal>
     </section>
   );
