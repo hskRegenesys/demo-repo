@@ -8,6 +8,7 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
+import { batchInfo } from "../config/helper";
 
 const handleSearch = (e: any) => {
   e.preventDefault();
@@ -32,11 +33,11 @@ const AllCourseGallery = () => {
   }, []);
 
   function redirectCard(name: any, code: any, id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
+    if (code === dataScienceCode || code === digitalMarkrtingCode) {
       router.push(`/${name?.split(" ").join("-")}`);
     } else {
       router.push(`/${name?.split(" ").join("-")}/${id}`);
-    }  
+    }
   }
 
   function getWeeksDiff(start_date: any, end_date: any) {
@@ -123,7 +124,10 @@ const AllCourseGallery = () => {
                       className="animated fadeInLeft testi-block"
                     >
                       <div className="gallery-item" key={id}>
-                        <div className="inner-box" onClick={() => redirectCard(name, code, id)}>
+                        <div
+                          className="inner-box"
+                          onClick={() => redirectCard(name, code, id)}
+                        >
                           {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div> */}
@@ -141,7 +145,7 @@ const AllCourseGallery = () => {
                             <div className="cap-inner">
                               <div className="title">
                                 <h5>
-                                <a>{name}</a>
+                                  <a>{name}</a>
                                 </h5>
                               </div>
 
@@ -149,7 +153,7 @@ const AllCourseGallery = () => {
                                 <ul className="about-seven__list list-unstyled">
                                   <li>{courseMode.name}</li>
                                   <li>
-                                    {batches?.map((item: any) => (
+                                    {batchInfo(batches)?.map((item: any) => (
                                       <>
                                         {getWeeksDiff(
                                           item.start_date,
@@ -163,7 +167,7 @@ const AllCourseGallery = () => {
                                   <li>Capstone projects </li>
                                 </ul>
                               </div>
-                              {batches?.map((item: any) => (
+                              {batchInfo(batches)?.map((item: any) => (
                                 <div className="batch">{item.description}</div>
                               ))}
                             </div>
