@@ -331,6 +331,7 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
   },
   //Cybersecurity
   CS: {
@@ -660,6 +661,7 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
   },
 
   //Basic Data Science
@@ -1031,6 +1033,7 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
   },
 
   //Advance Data Science
@@ -1363,6 +1366,7 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
   },
   //Applied Data Science
   APDSCI: {
@@ -1649,6 +1653,7 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
   },
 
   //"Basic Digital Marketing"
@@ -1932,6 +1937,7 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
   },
   //"Advanced Digital Marketing"
   AVDM: {
@@ -2213,6 +2219,7 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
   },
   //"Applied Digital Marketing"
   APDM: {
@@ -2475,10 +2482,11 @@ export const courseData = {
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
     },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
   },
 };
 
-export const brochureDetails:any = {
+export const brochureDetails: any = {
   //Advance-Digital-Marketing
   AVDM: {
     name: "DigitalMarketingAdvancedBrochure.pdf",

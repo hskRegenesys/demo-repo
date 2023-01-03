@@ -63,7 +63,6 @@ const ProductTab = ({ courses = [], current }: any) => {
   useEffect(() => {
     if (current >= 0) {
       filterCourse(current);
-      console.log("current", current);
     }
   }, [current]);
 

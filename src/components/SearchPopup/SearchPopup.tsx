@@ -8,7 +8,7 @@ const SearchPopup = () => {
   const handleSearch = (e: any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    console.log(formData.get("search"));
+
     toggleSearch();
   };
 
