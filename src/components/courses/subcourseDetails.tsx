@@ -5,6 +5,7 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
+import { batchInfo } from "../config/helper";
 
 const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
@@ -99,7 +100,7 @@ const SubCourseDetails = ({ page }: any) => {
                                 <ul className="about-seven__list list-unstyled">
                                   <li>{courseMode.name}</li>
                                   <li>
-                                    {batches?.map((item: any) => (
+                                    {batchInfo(batches)?.map((item: any) => (
                                       <>
                                         {getWeeksDiff(
                                           item.start_date,
@@ -113,7 +114,7 @@ const SubCourseDetails = ({ page }: any) => {
                                   <li>Capstone projects </li>
                                 </ul>
                               </div>
-                              {batches?.map((item: any) => (
+                              {batchInfo(batches)?.map((item: any) => (
                                 <div className="batch">{item.description}</div>
                               ))}
                             </div>
