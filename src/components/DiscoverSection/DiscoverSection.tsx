@@ -1,12 +1,14 @@
 import discoverSection from "@/data/discoverSection";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import TextSplit from "../Reuseable/TextSplit";
+const MapBox = dynamic(() => import("../MapSection/MapBox"));
 
 const { title, discovers, discovers2, discovers3 } = discoverSection;
 
-const DiscoverSection = ({ ShowTitle = true }) => {
+const DiscoverSection = ({ ShowTitle = true, map = false }) => {
   return (
     <section className="discover-section">
       <div className="auto-container">
@@ -21,10 +23,9 @@ const DiscoverSection = ({ ShowTitle = true }) => {
                   <div className="cap-inner">
                     <h5>{title}</h5>
                     <p>{text}</p>
-
                     <a
                       href={href}
-                      className="theme-btn btn-style-four"
+                      className="theme-btn btn-style-four mobile-hide"
                       target="_blank"
                     >
                       {buttonText}
@@ -32,6 +33,14 @@ const DiscoverSection = ({ ShowTitle = true }) => {
                   </div>
                 </div>
               </div>
+
+              <Row className="desktop-hide mobile-show">
+                <Col>
+                <MapBox />
+                </Col>
+              </Row>
+
+
             </Col>
           ))}
           {discovers2?.map(

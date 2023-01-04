@@ -18,6 +18,7 @@ import ExperienceSection from "@/components/ExperienceSection/ExperienceSection"
 import { courseService } from "src/services";
 import _ from "lodash";
 
+
 const Home2 = () => {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {

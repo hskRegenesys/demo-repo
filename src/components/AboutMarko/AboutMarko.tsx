@@ -9,6 +9,13 @@ const AboutMarko = () => {
     <section className="about-me-one about-me-bg">    
         <div className="auto-container">
           <Row>
+          <Col md={12} lg={6} className="mobile-show desktop-hide">
+            <div className="about-me-one__image">
+              <Image src={image} alt="" />
+            </div>
+          </Col>
+
+
             <Col md={12} lg={6}>
               <div className="about-me-one__content">
                 <div className="sec-title">
@@ -24,7 +31,7 @@ const AboutMarko = () => {
                </div>
             </Col>
 
-          <Col md={12} lg={6}>
+           <Col md={12} lg={6} className="mobile-hide">
             <div className="about-me-one__image">
               <Image src={image} alt="" />
             </div>
