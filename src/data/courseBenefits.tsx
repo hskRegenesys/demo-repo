@@ -91,7 +91,12 @@ export const courseBenefitsMobile = {
         "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
       text2:
         "Elevate your LinkedIn game with a comprehensive profile building session",
-   
+        lists: [
+          "Self-contained, state-of-the-art time clock",
+          "Scalability of up to 500 employees per time clock",
+          "The ability to connect up to 32 time clocks",
+          "Employee self-enrollment",   
+        ],
     },
     {
       id: "2",

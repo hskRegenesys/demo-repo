@@ -2909,7 +2909,9 @@ tns-controls1,
 .banner-carousel .tns-controls,
 tns-controls2,
 .banner-carousel .tns-controls,
-tns-controls3 {
+tns-controls3,
+.banner-carousel .tns-controls,
+tns-controls5 {
   position: absolute;
   left: 50%;
   margin-left: -600px;
@@ -2926,7 +2928,9 @@ tns-controls3 {
 .banner-carousel .tns-controls2 .tns-next,
 .banner-carousel .tns-controls2 .tns-prev,
 .banner-carousel .tns-controls3 .tns-next,
-.banner-carousel .tns-controls3 .tns-prev {
+.banner-carousel .tns-controls3 .tns-prev,
+.banner-carousel .tns-controls5 .tns-next,
+.banner-carousel .tns-controls5 .tns-prev {
   position: absolute;
   top: 0;
   right: 0;
@@ -3891,6 +3895,7 @@ tns-controls3 {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  min-width: 60px;
 }
 
 .service-block-three__single .icon-box {
@@ -4811,8 +4816,6 @@ tns-controls3 {
   padding: 20px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  max-width: 360px;
-  min-width: 360px;
   height: 500px;
   cursor: pointer;
 }
@@ -7620,8 +7623,6 @@ tns-controls3 {
 .featured-section {
   position: relative;
   padding: 200px 0px 90px;
-  /* background: #ffffff url(/assets/images/background/pattern-2.png) left top
-    repeat; */
   background-color: #c3ead8;
   max-height: 886px;
 }
@@ -8752,7 +8753,8 @@ featured-section .right-col .sec-title h2 {
 .testimonials-five__carousel .tns-controls button,
 .tns-controls1 button,
 .tns-controls2 button,
-.tns-controls3 button {
+.tns-controls3 button,
+.tns-controls5 button {
   width: 34px;
   height: 34px;
   background-color: #ffe55b;
@@ -8767,7 +8769,8 @@ featured-section .right-col .sec-title h2 {
 .testimonials-five__carousel .tns-controls button:hover,
 .tns-controls1 button:hover,
 .tns-controls2 button:hover,
-.tns-controls3 button:hover {
+.tns-controls3 button:hover,
+.tns-controls5 button:hover {
   background-color: var(--thm-base);
   color: var(--thm-black);
 }
@@ -8775,7 +8778,8 @@ featured-section .right-col .sec-title h2 {
 .testimonials-five__carousel .tns-controls button.tns-next,
 .tns-controls1 button.tns-next,
 .tns-controls2 button.tns-next,
-.tns-controls3 button.tns-next {
+.tns-controls3 button.tns-next,
+.tns-controls5 button.tns-next {
   margin-left: 20px;
 }
 
@@ -24306,7 +24310,7 @@ h2.curve-right:after {
   padding: 100px;
   border-radius: 10px;
   background-color: #c3ead8;
-  margin-top: 50px;
+  margin-top: 0;
   padding: 30px;
   float: left;
   width: 100%;
@@ -24624,6 +24628,11 @@ h2.curve-right:after {
 .sec-title h4 {
   font-size: 32px;
   font-family: "Raleway-semibold";
+  padding: 0 30px;
+}
+
+.call-to-section-two {
+  padding: 40px 0px 30px;
 }
 
 p.para-text {
@@ -25215,7 +25224,8 @@ input.PhoneInputInput {
 
 .tns-controls1 button,
 .tns-controls2 button,
-.tns-controls3 button {
+.tns-controls3 button,
+.tns-controls5 button {
   box-shadow: 3px 3px 0 0 #1fa393;
 }
 
@@ -25292,12 +25302,9 @@ input.PhoneInputInput {
     padding-top: 30px;
   }
 
-  .gallery-item .inner-box {
-    max-width: 300px;
-  }
 
-  .project-carousel .gallery-item
-  {
+
+  .project-carousel .gallery-item {
     max-width: 300px;
   }
 
@@ -25331,7 +25338,11 @@ input.PhoneInputInput {
   }
 
   .project-tab .product-tab-btns .p-tab-btn {
-    padding: 10px;
+    padding: 4px;
+    font-size: 12px;
+    margin-right: 0 !important;
+    height: 40px;
+    line-height: 30px;
   }
 
   .testimonials-five h2 {
@@ -25433,7 +25444,7 @@ input.PhoneInputInput {
   }
 
   .who-we-are {
-    padding: 0 30px;
+    padding: 15px 30px;
     text-align: center;
     font-size: 16px;
     font-family: raleway-semibold;
@@ -25471,6 +25482,14 @@ input.PhoneInputInput {
 
   .sign-arrow-contact {
     display: none;
+  }
+
+  .form-box .row.mb-4 {
+    margin-bottom: 0 !important;
+  }
+
+  .form-box .form-group {
+    margin-bottom: 20px;
   }
 
   .features-section-two .sec-title h2 {
@@ -25517,6 +25536,10 @@ input.PhoneInputInput {
 
   .discover-block .inner-box {
     padding: 20px !important;
+  }
+
+  .map-box {
+    padding: 0 30px 30px;
   }
 }
 
@@ -25619,23 +25642,53 @@ input.PhoneInputInput {
   #experience-mobile .gallery-item .inner-box,
   .experience-section {
     padding: 0 !important;
+
   }
 
   #experience-mobile .partner-one__card {
     margin-bottom: 0;
   }
 
-  #experience-mobile .gallery-item:first-child .partner-one__card {
+  #experience-mobile .gallery-item:first-child .partner-one__card,
+  #experience-mobile .gallery-item:nth-child(7) .partner-one__card {
     background-color: #1fa393;
     border-top-right-radius: 40%;
   }
 
 
-  #experience-mobile .gallery-item:nth-child(2) .partner-one__card {
+  #experience-mobile .gallery-item:nth-child(2) .partner-one__card,
+  #experience-mobile .gallery-item:nth-child(8) .partner-one__card {
     background-color: #bef1d9 !important;
     color: #000;
     border-top-right-radius: 40%;
   }
+
+
+  #experience-mobile .gallery-item:nth-child(3) .partner-one__card,
+  #experience-mobile .gallery-item:nth-child(9) .partner-one__card {
+    background-color: #ffcf2d !important;
+    border-top-right-radius: 40%;
+  }
+
+  #experience-mobile .gallery-item:nth-child(4) .partner-one__card,
+  #experience-mobile .gallery-item:nth-child(10) .partner-one__card {
+    background-color: #c3ead8 !important;
+    border-top-right-radius: 40%;
+  }
+
+
+  #experience-mobile .gallery-item:nth-child(5) .partner-one__card,
+  #experience-mobile .gallery-item:nth-child(11) .partner-one__card {
+    background-color: #033d4a !important;
+    border-top-right-radius: 40%;
+  }
+
+  #experience-mobile .gallery-item:nth-child(6) .partner-one__card,
+  #experience-mobile .gallery-item:nth-child(12) .partner-one__card {
+    background-color: #1f6ca3 !important;
+    border-top-right-radius: 40%;
+  }
+
 
   #experience-mobile .gallery-item:nth-child(2) .partner-one__card .partner-one__title,
   #experience-mobile .gallery-item:nth-child(2) .partner-one__card .partner-one__text,
@@ -25644,27 +25697,6 @@ input.PhoneInputInput {
   #experience-mobile .gallery-item:nth-child(4) .partner-one__card .partner-one__title,
   #experience-mobile .gallery-item:nth-child(4) .partner-one__card .partner-one__text {
     color: #000;
-  }
-
-  #experience-mobile .gallery-item:nth-child(3) .partner-one__card {
-    background-color: #ffcf2d !important;
-    border-top-right-radius: 40%;
-  }
-
-  #experience-mobile .gallery-item:nth-child(4) .partner-one__card {
-    background-color: #c3ead8 !important;
-    border-top-right-radius: 40%;
-  }
-
-
-  #experience-mobile .gallery-item:nth-child(5) .partner-one__card {
-    background-color: #033d4a !important;
-    border-top-right-radius: 40%;
-  }
-
-  #experience-mobile .gallery-item:nth-child(6) .partner-one__card {
-    background-color: #1f6ca3 !important;
-    border-top-right-radius: 40%;
   }
 
   #experience-mobile .gallery-item .partner-one__card .partner-one__image {
@@ -25697,6 +25729,7 @@ input.PhoneInputInput {
 
 
 
+
   .mobile-hide {
     display: none;
   }
@@ -25705,4 +25738,132 @@ input.PhoneInputInput {
     display: block !important;
   }
 
+
+  .featured-section {
+    position: relative;
+    padding: 200px 0px 90px;
+    background-color: #c3ead8;
+    height: 1000px;
+    max-height: unset;
+  }
+
+  .banner-button {
+    margin-top: 64px;
+    width: 100%;
+    display: block !important;
+  }
+
+  .contact-section .btn-style-two {
+    margin-top: 0 !important;
+  }
+
+  .about-us-wave.sponsors-section-four .content-box {
+    padding-top: 10px !important; 
+  }
+
+  .about-me-one__content .sec-title .portfolio-horizontal__shape-2,
+  .how-it-works-card__inner h2{
+    font-size: 30px;
+  }
+  .how-it-works-card__text {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .about-us-wave .sponsors-section-four .content-box h3
+  {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about-me-one__image {
+    text-align: center;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+
+  .about-me-one  .about-me-one__content
+  {
+    margin-top: 10px;
+  }
+
+  
+
+  .about-me-one__content
+  {
+    text-align: center;
+    margin-top: 300px;
+  }
+
+  
+
+.about-us-bg {
+    background-image: url(/assets/images/background/about-us-mobile.png) !important;
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+}
+
+
+}
+
+.desktop-hide,
+.banner-button {
+  display: none;
+}
+
+.mobile_course_benefits ul {
+  text-align: left;
+  position: relative;
+  margin-top: 30px;
+}
+
+.mobile_course_benefits ul li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 22px;
+  float: left;
+  margin-bottom: 24px;
+  font-family: Raleway-medium;
+}
+
+.mobile_course_benefits ul li:before {
+  content: "\f131";
+  font-family: "Flaticon";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  color: #1fa393;
+  background-color: #ffe55b;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 0 0 #1fa393;
+}
+
+#career-benefits-mobile .auto-container {
+  padding: 0 30px;
+}
+
+.mobile_course_benefits h3 {
+  font-size: 24px;
+  font-family: Raleway-semibold;
+}
+
+#career-benefits-mobile .partner-one__card {
+  margin-bottom: 0;
+}
+
+.testimonials-carousel .gallery-item {
+  min-width: 330px
 }

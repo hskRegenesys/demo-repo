@@ -13,7 +13,7 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 });
 
 const settings = {
-  container: ".my-slider",
+  container: ".my-slider2",
   items: 3,
   slideBy: "page",
   autoplay: true,

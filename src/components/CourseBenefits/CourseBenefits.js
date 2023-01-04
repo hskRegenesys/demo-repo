@@ -2,6 +2,7 @@ import { courseBenefits } from "@/data/courseBenefits";
 import React, { useState } from "react";
 import SingleCourseBenefits from "./SingleCourseBenefits";
 import { Col, Image, Row } from "react-bootstrap";
+import CourseBenefitsMobile from "@/components/CourseBenefitsMobile/CourseBenefitsMobile";
 
 const CourseBenefits = ({ courseDetails }) => {
   const { title, tabBtns, tabsContents, desc } = courseDetails?.courseBenefits;
@@ -10,7 +11,7 @@ const CourseBenefits = ({ courseDetails }) => {
   return (
     <section className="we-work-section">
       <div className="FluidSection">
-        <Row>
+        <Row className="mobile-hide">
           <Col md={4}>
             <div className="inner animated fadeInLeft">
               <div className="image-box">
@@ -52,6 +53,18 @@ const CourseBenefits = ({ courseDetails }) => {
               </div>
             </div>
           </Col>
+        </Row>
+
+        <Row className="mobile-show desktop-hide">
+          <Col>
+          <div className="sec-title">
+              <h2>
+                {title}
+                </h2>
+            </div>
+            <p>{desc}</p>
+            <CourseBenefitsMobile />
+            </Col>
         </Row>
       </div>
     </section>
