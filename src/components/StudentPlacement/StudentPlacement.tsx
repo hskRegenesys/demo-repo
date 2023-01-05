@@ -8,35 +8,34 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 });
 
 const settings = {
-  loop: false,
-  lazyload: true,
-  nav: false,
-  mouseDrag: true,
-  items: 1,
-  autoplay: true,
-  autoHeight: true,
-  controls: false,
-  gutter: 0,
-  autoplayButton: false,
-  autoplayButtonOutput: false,
+  gutter: 20,
+  fixedWidth: 200,
   responsive: {
+    475: {
+      slideBy: 1,
+      items: 4,
+
+    },
     600: {
       items: 2,
       gutter: 30,
-    },
-    768: {
-      items: 4,
-      gutter: 30,
+
     },
     992: {
-      items: 6,
+      items: 3,
       gutter: 30,
+
     },
     1200: {
-      items: 8,
+      items: 4,
       gutter: 30,
-    },
+    }
   },
+  autoplay: true,
+  loop: true,
+  nav: false,
+  controls: false,
+  autoplayButtonOutput: false,
 };
 
 const StudentPlacement = ({ className = "" }) => {

@@ -73,17 +73,19 @@ const MainFooter = ({ normalPadding = true }) => {
                 <h5>{text}</h5>
               </div>
               <div className="widget-content row">
-                <Col xl={4} lg={6} md={4} sm={12} xxl={3} className="column col-6">
+                <Col xl={4} lg={6} md={4} sm={12} xxl={3} className="column">
                   <div className="footer-widget info-widget">
                     <div className="widget-content address">
-                      <h6>South African Campus</h6>
-                      <ul className="contact-info">
-                        <li className="address">
+                    
+                      <Row className="contact-info">
+                        <Col xs={6} sm="12" className="address">
+                        <h6>South African Campus</h6>
                           <span className="icon flaticon-pin-1"></span>{" "}
                           <TextSplit text={address} />
-                        </li>
-
+                        </Col>
+                        <Col xs={6} sm="12">
                         <h6>Contact Details</h6>
+                        <ul>
                         <li>
                           <span className="icon flaticon-call"></span>
                           <a href={`tel:${phone.split(" ").join("")}`}>
@@ -96,7 +98,9 @@ const MainFooter = ({ normalPadding = true }) => {
                             {web}
                           </a>
                         </li>
-                      </ul>
+                        </ul>
+                        </Col>
+                      </Row>
                     </div>
                   </div>
                 </Col>
@@ -104,13 +108,16 @@ const MainFooter = ({ normalPadding = true }) => {
                 <Col xl={4} lg={6} md={4} sm={12} xxl={3} className="column">
                   <div className="footer-widget info-widget">
                     <div className="widget-content">
+               
+                    <Row className="contact-info">                     
+                      <Col xs={6} sm="12" className="address">
                       <h6>India Corporate Office</h6>
-                      <ul className="contact-info">
-                        <li className="address">
                           <span className="icon flaticon-pin-1"></span>{" "}
                           <TextSplit text={address2} />
-                        </li>
+                        </Col>
+                        <Col xs={6} sm="12">
                         <h6>Contact Details</h6>
+                        <ul>
                         <li>
                           <span className="icon flaticon-call"></span>
                           <a href={`tel:${phone2.split(" ").join("")}`}>
@@ -124,20 +131,24 @@ const MainFooter = ({ normalPadding = true }) => {
                           </a>
                         </li>
                       </ul>
+                      </Col>
+                      </Row>
                     </div>
                   </div>
                 </Col>
 
                 <Col xl={4} lg={6} md={4} sm={12} xxl={3} className="column">
                   <div className="footer-widget info-widget">
-                    <div className="widget-content ">
-                      <h6>Nigeria Corporate Office</h6>
-                      <ul className="contact-info">
-                        <li className="address">
+                    <div className="widget-content">                   
+                      <Row className="contact-info">
+                        <Col xs={6} sm="12" className="address">
+                        <h6>Nigeria Corporate Office</h6>
                           <span className="icon flaticon-pin-1"></span>{" "}
                           <TextSplit text={address3} />
-                        </li>
+                        </Col>
+                        <Col xs={6} sm="12">
                         <h6>Contact Details</h6>
+                        <ul>
                         <li>
                           <span className="icon flaticon-call"></span>
                           <a href={`tel:${phone3.split(" ").join("")}`}>
@@ -150,7 +161,9 @@ const MainFooter = ({ normalPadding = true }) => {
                             {web3}
                           </a>
                         </li>
-                      </ul>
+                        </ul>
+                      </Col>
+                      </Row>
                     </div>
                   </div>
                 </Col>

@@ -1,9 +1,11 @@
 import NavItem from "@/components/Header/NavItem";
 import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
-import React from "react";
+import React, { useState } from 'react';
 import { Image } from "react-bootstrap";
 import Link from "next/link";
+import Modal from 'react-bootstrap/Modal';
+import ModalPopup from "@/components/Modal/ModalPopup";
 
 const { icon, navItems, navItemsTwo } = headerData;
 
@@ -11,8 +13,11 @@ const MobileMenu = ({ onePage = false }) => {
   const contextRoot: any = useRootContext();
   const { menuStatus, toggleMenu } = contextRoot;
   const newNavItems = onePage ? navItemsTwo : navItems;
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
 
   return (
+    <>
     <div className={`side-menu__block${menuStatus ? " active" : ""}`}>
       <div
         onClick={toggleMenu}
@@ -62,17 +67,20 @@ const MobileMenu = ({ onePage = false }) => {
               </a>
             </Link>
             {/* request url */}
-            <Link href="https://mydigital.regenesys.net/login/index.php">
-              <a target="_blank" className="theme-btn btn-style-two w100 mt-5">
+         
+              <a className="theme-btn btn-style-two w100 mt-5" onClick={handleShow}>
                 <i className="btn-curve"></i>
                 <span className="btn-title">Request a call</span>
               </a>
-            </Link>
           </div>
         </div>
       </div>
     </div>
-  );
+      <Modal show={show}>
+      <ModalPopup setShows={setShow} />
+    </Modal>
+    </>
+   );
 };
 
 export default MobileMenu;

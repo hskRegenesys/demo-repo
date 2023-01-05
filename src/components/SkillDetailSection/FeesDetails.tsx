@@ -91,7 +91,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
             </div>
           </Col>
 
-          <Col lg={12} xl={6}>
+          <Col lg={12} xl={6} className="mobile-pricing-section">
             <div className="product-details__flag">
               <h5 className="product-details__subtitle">Total Admission Fee</h5>
               <div className="flags">
