@@ -73,7 +73,7 @@ const MainFooter = ({ normalPadding = true }) => {
                 <h5>{text}</h5>
               </div>
               <div className="widget-content row">
-                <Col xl={3} lg={6} md={6} sm={12} className="column col-6">
+                <Col xl={4} lg={6} md={4} sm={12} xxl={3} className="column col-6">
                   <div className="footer-widget info-widget">
                     <div className="widget-content address">
                       <h6>South African Campus</h6>
@@ -101,7 +101,7 @@ const MainFooter = ({ normalPadding = true }) => {
                   </div>
                 </Col>
 
-                <Col xl={3} lg={6} md={6} sm={12} className="column col-6">
+                <Col xl={4} lg={6} md={4} sm={12} xxl={3} className="column">
                   <div className="footer-widget info-widget">
                     <div className="widget-content">
                       <h6>India Corporate Office</h6>
@@ -128,7 +128,7 @@ const MainFooter = ({ normalPadding = true }) => {
                   </div>
                 </Col>
 
-                <Col xl={3} lg={6} md={6} sm={12} className="column col-6">
+                <Col xl={4} lg={6} md={4} sm={12} xxl={3} className="column">
                   <div className="footer-widget info-widget">
                     <div className="widget-content ">
                       <h6>Nigeria Corporate Office</h6>

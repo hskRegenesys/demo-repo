@@ -252,7 +252,19 @@ body.boxed-wrapper {
   .page-wrapper.boxed-wrapper {
     max-width: 90%;
   }
+  .main-footer .footer-widget.links-widget
+  {
+    width: 340px !important;
+  }
 }
+@media (max-width: 1024px) {
+  .all-course-filter .tns-ovh
+  {
+    max-height: 580px !important;
+    position: relative;
+  }
+}
+
 
 @media (max-width: 768px) {
   .page-wrapper.boxed-wrapper {
@@ -2906,12 +2918,9 @@ img.lazy-image.loaded {
 
 .banner-carousel .tns-controls,
 tns-controls1,
-.banner-carousel .tns-controls,
 tns-controls2,
-.banner-carousel .tns-controls,
 tns-controls3,
-.banner-carousel .tns-controls,
-tns-controls5 {
+tns-controls5, tns-controls6{
   position: absolute;
   left: 50%;
   margin-left: -600px;
@@ -2930,7 +2939,9 @@ tns-controls5 {
 .banner-carousel .tns-controls3 .tns-next,
 .banner-carousel .tns-controls3 .tns-prev,
 .banner-carousel .tns-controls5 .tns-next,
-.banner-carousel .tns-controls5 .tns-prev {
+.banner-carousel .tns-controls5 .tns-prev,
+.banner-carousel .tns-controls6 .tns-next,
+.banner-carousel .tns-controls6 .tns-prev  {
   position: absolute;
   top: 0;
   right: 0;
@@ -8225,6 +8236,11 @@ featured-section .right-col .sec-title h2 {
 
 .tns-ovh .testi-block {
   margin: 0;
+  width: 25%;
+  float: left;
+  width: calc(25% - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .testi-block .inner {
@@ -8754,7 +8770,8 @@ featured-section .right-col .sec-title h2 {
 .tns-controls1 button,
 .tns-controls2 button,
 .tns-controls3 button,
-.tns-controls5 button {
+.tns-controls5 button,
+.tns-controls6 button {
   width: 34px;
   height: 34px;
   background-color: #ffe55b;
@@ -8770,7 +8787,8 @@ featured-section .right-col .sec-title h2 {
 .tns-controls1 button:hover,
 .tns-controls2 button:hover,
 .tns-controls3 button:hover,
-.tns-controls5 button:hover {
+.tns-controls5 button:hover,
+.tns-controls6 button:hover {
   background-color: var(--thm-base);
   color: var(--thm-black);
 }
@@ -8779,7 +8797,8 @@ featured-section .right-col .sec-title h2 {
 .tns-controls1 button.tns-next,
 .tns-controls2 button.tns-next,
 .tns-controls3 button.tns-next,
-.tns-controls5 button.tns-next {
+.tns-controls5 button.tns-next,
+.tns-controls6 button.tns-next {
   margin-left: 20px;
 }
 
@@ -25225,7 +25244,8 @@ input.PhoneInputInput {
 .tns-controls1 button,
 .tns-controls2 button,
 .tns-controls3 button,
-.tns-controls5 button {
+.tns-controls5 button,
+.tns-controls6 button {
   box-shadow: 3px 3px 0 0 #1fa393;
 }
 
@@ -25384,10 +25404,11 @@ input.PhoneInputInput {
 
   .main-footer .footer-widget.links-widget {
     position: relative;
+    width: 100% !important;
   }
 
   .main-footer .widgets-section {
-    padding: 40px 0px 0;
+    padding: 40px 0px 0 !important;
   }
 
   .main-footer .logo-widget {
@@ -25566,6 +25587,81 @@ input.PhoneInputInput {
 .reasonsMobile,
 .desktop-hide {
   display: none;
+}
+
+
+.desktop-hide,
+.banner-button {
+  display: none;
+}
+
+.mobile_course_benefits ul {
+  text-align: left;
+  position: relative;
+  margin-top: 30px;
+}
+
+.mobile_course_benefits ul li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 22px;
+  float: left;
+  margin-bottom: 24px;
+  font-family: Raleway-medium;
+}
+
+.mobile_course_benefits ul li:before {
+  content: "\f131";
+  font-family: "Flaticon";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  color: #1fa393;
+  background-color: #ffe55b;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 0 0 #1fa393;
+}
+
+#career-benefits-mobile .auto-container {
+  padding: 0 30px;
+}
+
+.mobile_course_benefits h3 {
+  font-size: 24px;
+  font-family: Raleway-semibold;
+}
+
+#career-benefits-mobile .partner-one__card {
+  margin-bottom: 0;
+}
+
+.testimonials-carousel .gallery-item {
+  min-width: 330px
+}
+
+.my-slider3 
+{
+  display: flex;
+  justify-content: center;
+}
+
+.my-slider3 .tns-item
+{
+  width: 350px;
+  float: left;
+  margin-right: 30px;
+}
+
+.FludiSection
+{
+  padding: 0 40px;
 }
 
 @media (max-width: 575.98px) {
@@ -25810,60 +25906,38 @@ input.PhoneInputInput {
 }
 
 
+.all-course-bg {
+  background-image: url(/assets/images/background/all-course-page-mobile.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 352px;
 }
 
-.desktop-hide,
-.banner-button {
-  display: none;
+.all-course-section .content-box
+{
+  padding-right: 0;
+  text-align: center;
+  padding-top: 30px;
 }
 
-.mobile_course_benefits ul {
-  text-align: left;
-  position: relative;
-  margin-top: 30px;
-}
-
-.mobile_course_benefits ul li {
-  position: relative;
-  padding-left: 40px;
-  line-height: 22px;
-  float: left;
-  margin-bottom: 24px;
-  font-family: Raleway-medium;
-}
-
-.mobile_course_benefits ul li:before {
-  content: "\f131";
-  font-family: "Flaticon";
+.all-course-section .content-box .sign-arrow img {
   position: absolute;
-  left: 0;
-  top: -3px;
-  font-weight: bold;
-  font-size: 12px;
-  width: 25px;
-  height: 25px;
-  color: #1fa393;
-  background-color: #ffe55b;
+  right: 64px !important;
+  width: 58px;
+  height: auto;
+  left: unset;
+  top: -50px;
+}
+
+.all-course-section .content-box .btn-style-two
+{
+  width: 80%;
+}
+.my-slider3 
+{
   display: flex;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 3px 3px 0 0 #1fa393;
+  justify-content: start !important;
 }
-
-#career-benefits-mobile .auto-container {
-  padding: 0 30px;
-}
-
-.mobile_course_benefits h3 {
-  font-size: 24px;
-  font-family: Raleway-semibold;
-}
-
-#career-benefits-mobile .partner-one__card {
-  margin-bottom: 0;
-}
-
-.testimonials-carousel .gallery-item {
-  min-width: 330px
 }
