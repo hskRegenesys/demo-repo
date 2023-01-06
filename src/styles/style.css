@@ -252,14 +252,14 @@ body.boxed-wrapper {
   .page-wrapper.boxed-wrapper {
     max-width: 90%;
   }
-  .main-footer .footer-widget.links-widget
-  {
+
+  .main-footer .footer-widget.links-widget {
     width: 340px !important;
   }
 }
+
 @media (max-width: 1024px) {
-  .all-course-filter .tns-ovh
-  {
+  .all-course-filter .tns-ovh {
     max-height: 580px !important;
     position: relative;
   }
@@ -2920,7 +2920,8 @@ img.lazy-image.loaded {
 tns-controls1,
 tns-controls2,
 tns-controls3,
-tns-controls5, tns-controls6{
+tns-controls5,
+tns-controls6 {
   position: absolute;
   left: 50%;
   margin-left: -600px;
@@ -2941,7 +2942,7 @@ tns-controls5, tns-controls6{
 .banner-carousel .tns-controls5 .tns-next,
 .banner-carousel .tns-controls5 .tns-prev,
 .banner-carousel .tns-controls6 .tns-next,
-.banner-carousel .tns-controls6 .tns-prev  {
+.banner-carousel .tns-controls6 .tns-prev {
   position: absolute;
   top: 0;
   right: 0;
@@ -25258,6 +25259,7 @@ input.PhoneInputInput {
   .process-one__content,
   .process-one__image {
     padding: 20px;
+    text-align: center;
   }
 
   .process-one__content .sec-title h2 i,
@@ -25341,7 +25343,7 @@ input.PhoneInputInput {
   }
 
   .featured-section .right-col {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .service-block-three__single {
@@ -25349,7 +25351,7 @@ input.PhoneInputInput {
   }
 
   .service-block-three {
-    margin: 20px 20px 50px;
+    margin: 20px;
     padding-bottom: 30px;
   }
 
@@ -25395,7 +25397,7 @@ input.PhoneInputInput {
     bottom: unset !important;
     margin-top: unset !important;
     padding: 30px !important;
-    border-radius: 25px;
+    border-radius: 0;
   }
 
   .call-to-section .link-box {
@@ -25412,7 +25414,7 @@ input.PhoneInputInput {
   }
 
   .main-footer .logo-widget {
-    padding: 30px;
+    padding: 15px;
   }
 
   .footer-section-yellow {
@@ -25457,6 +25459,7 @@ input.PhoneInputInput {
 
   .main-footer .info-widget ul li {
     padding-left: 0;
+    font-size: 14px;
   }
 
   .call-to-section .auto-container,
@@ -25510,7 +25513,7 @@ input.PhoneInputInput {
   }
 
   .form-box .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .features-section-two .sec-title h2 {
@@ -25562,6 +25565,31 @@ input.PhoneInputInput {
   .map-box {
     padding: 0 30px 30px;
   }
+
+  .select-course {
+    padding: 10px;
+    height: 46px;
+  }
+
+  .popup-form input,
+  .popup-form textarea {
+    height: 48px;
+  }
+
+  .PhoneInputCountry
+  {
+    margin-top: 20px;
+  }
+
+  .main-footer .footer-widget .contact-info h6
+  {
+    margin-top: 0;
+  }
+  .main-footer .column
+  {
+    margin-bottom: 30px;
+  }
+  
 }
 
 .w100 {
@@ -25646,21 +25674,18 @@ input.PhoneInputInput {
   min-width: 330px
 }
 
-.my-slider3 
-{
+.my-slider3 {
   display: flex;
   justify-content: center;
 }
 
-.my-slider3 .tns-item
-{
+.my-slider3 .tns-item {
   width: 350px;
   float: left;
   margin-right: 30px;
 }
 
-.FludiSection
-{
+.FludiSection {
   padding: 0 40px;
 }
 
@@ -25696,7 +25721,11 @@ input.PhoneInputInput {
     margin-bottom: 30px;
     border: 0 none;
   }
-
+  .main-footer h6
+  {
+    font-size: 16px;
+    font-family: 'Raleway-semibold' !important;
+  }
 
   .reasonsMobile .accordion-item:first-child .accordion-button,
   .reasonsMobile .accordion-item:nth-child(2) .accordion-button,
@@ -25711,6 +25740,7 @@ input.PhoneInputInput {
     padding: 0 20px;
     height: 70px;
   }
+  
 
   .reasonsMobile .accordion-item:nth-child(2) .accordion-button {
     background-color: #e7e0eb !important;
@@ -25830,7 +25860,7 @@ input.PhoneInputInput {
     display: none;
   }
 
-  .mobile-show {
+  .mobile-show, .desktop-hide {
     display: block !important;
   }
 
@@ -25854,20 +25884,20 @@ input.PhoneInputInput {
   }
 
   .about-us-wave.sponsors-section-four .content-box {
-    padding-top: 10px !important; 
+    padding-top: 10px !important;
   }
 
   .about-me-one__content .sec-title .portfolio-horizontal__shape-2,
-  .how-it-works-card__inner h2{
+  .how-it-works-card__inner h2 {
     font-size: 30px;
   }
+
   .how-it-works-card__text {
     margin-top: 15px;
     margin-bottom: 10px;
   }
 
-  .about-us-wave .sponsors-section-four .content-box h3
-  {
+  .about-us-wave .sponsors-section-four .content-box h3 {
     font-size: 30px;
     line-height: 40px;
   }
@@ -25878,22 +25908,20 @@ input.PhoneInputInput {
     margin: 20px auto;
   }
 
-  .about-me-one  .about-me-one__content
-  {
+  .about-me-one .about-me-one__content {
     margin-top: 10px;
   }
 
-  
 
-  .about-me-one__content
-  {
+
+  .about-me-one__content {
     text-align: center;
     margin-top: 300px;
   }
 
-  
 
-.about-us-bg {
+
+  .about-us-bg {
     background-image: url(/assets/images/background/about-us-mobile.png) !important;
     background-position: center top;
     background-size: 100%;
@@ -25903,41 +25931,141 @@ input.PhoneInputInput {
     margin-top: 0;
     position: absolute;
     left: 0;
+  }
+
+
+  .all-course-bg {
+    background-image: url(/assets/images/background/all-course-page-mobile.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 352px;
+  }
+
+  .all-course-section .content-box {
+    padding-right: 0;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .all-course-section .content-box .sign-arrow img {
+    position: absolute;
+    right: 64px !important;
+    width: 58px;
+    height: auto;
+    left: unset;
+    top: -50px;
+  }
+
+  .all-course-section .content-box .btn-style-two {
+    width: 80%;
+  }
+
+  .my-slider3 {
+    display: flex;
+    justify-content: start !important;
+  }
+
+  .how-it-works-card__inner h2, .all-course-section h3, .faq-block h3
+  {
+    font-size: 32px !important;
+  }
+
+  .faqs-section, .get-quote-three, .product-details
+  {
+    padding: 30px !important;
+  }
+
+  .process-one__image
+  {
+    background-color: transparent;
+  }
+
+  .mobile-pricing-section
+  {
+    background-color: #FFF;
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  .mobile-pricing-section .flags
+  {
+    justify-content: center;
+  }
+  .mobile-pricing-section  .product-details__buttons .theme-btn
+  {
+    width: 100%;
+  }
+  .page-banner .inner-container {
+    padding: 120px 0px 10px !important;
 }
 
-
-.all-course-bg {
-  background-image: url(/assets/images/background/all-course-page-mobile.png);
-  background-position: center center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 352px;
-}
-
-.all-course-section .content-box
+.mobile-product-buttons
 {
-  padding-right: 0;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.all-course-section .content-box .sign-arrow img {
+  display: block;
+  background: #ffeb3b;
   position: absolute;
-  right: 64px !important;
-  width: 58px;
-  height: auto;
-  left: unset;
-  top: -50px;
+  width: 100%;
+  left: 0;
+  padding: 55px;
+  margin-top: 100px;
+}
+.process-one__content ul
+{
+  background-color: #ffe55b;
+  padding: 100px;
+  border-radius: 10px;
+  background-color: #c3ead8;
+  margin-top: 0;
+  padding: 15px;
+  float: left;
+  width: 100%;
+  z-index: 2;
+  position: relative;
 }
 
-.all-course-section .content-box .btn-style-two
+.process-one__list.desktop-hide li
 {
-  width: 80%;
+  text-align: left;
+  float: left;
+  display: inline-block;
+  width: auto;
+  margin-right: 12px;
 }
-.my-slider3 
+.mobile-product-buttons .theme-btn
 {
-  display: flex;
-  justify-content: start !important;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
 }
+.process-one .process-one__content
+{
+  background-color: transparent;
+  padding: 0;
+}
+
+.process-one__image__column .process-one__image
+{
+  position: relative;
+}
+.accordion-box .block .acc-btn:before
+{
+  right: 5px;
+}
+
+.feature-seven {
+  margin-top: -1px;
+  z-index: 1;
+  position: relative;
+}
+
+.contact-info .address{
+  font-size: 14px;
+  line-height: 24px;
+}
+
 }

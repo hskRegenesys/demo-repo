@@ -23,9 +23,33 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                       {title}
                     </h2>
                   </div>
-                  <p className="process-one__summery">{text}</p>
+                  <section className="product-description desktop-hide p-0">
+                  <h3 className="product-description__title">Revolutionise your career with future ready skills.</h3>
+                  </section>
+                  
+                  <Col xs={12} className="process-one__image__column desktop-hide">
+                <div className="process-one__image animated fadeInLeft">
+                  <Image
+                    src={`/assets/images/update-01-10-2021/${image}`}
+                    alt=""
+                  />
+                </div>
+              </Col>
 
-                  <div className="product-details__buttons">
+                  <p className="process-one__summery mobile-hide">{text}</p>
+
+
+                  <ul className="list-unstyled process-one__list desktop-hide">
+                    {lists?.map((text: string, i: number) => (
+                      <li key={i}>
+                        <i className="fa fa-check mr-3" aria-hidden="true"></i>
+                        {text}
+                      </li>
+                    ))}
+                  </ul>
+
+
+                  <div className="product-details__buttons mobile-product-buttons">
                     <a
                       className="theme-btn btn-style-two"
                       onClick={() => {
@@ -48,8 +72,10 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                       <span className="btn-title">Download Brochure</span>
                     </a>
                   </div>
+                  
+                 
 
-                  <ul className="list-unstyled process-one__list">
+                  <ul className="list-unstyled process-one__list mobile-hide">
                     {lists?.map((text: string, i: number) => (
                       <li key={i}>
                         <i className="fa fa-check mr-3" aria-hidden="true"></i>
@@ -57,10 +83,12 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                       </li>
                     ))}
                   </ul>
+
+                  <p className="process-one__summery desktop-hide">{text}</p>
                 </div>
               </Col>
 
-              <Col md={5} className="process-one__image__column">
+              <Col md={5} className="process-one__image__column mobile-hide">
                 <div className="process-one__image animated fadeInLeft">
                   <Image
                     src={`/assets/images/update-01-10-2021/${image}`}
