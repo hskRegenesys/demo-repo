@@ -11360,6 +11360,7 @@ featured-section .right-col .sec-title h2 {
 .page-banner .bread-crumb li a:hover,
 .page-banner .bread-crumb li.active {
   color: var(--thm-black);
+  font-weight: bold;
 }
 
 /***
