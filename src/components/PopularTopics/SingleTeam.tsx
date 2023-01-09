@@ -4,14 +4,14 @@ import React, { forwardRef } from "react";
 
 const SingleTeam = (props:any) => {
   const { team = {}, className = "" } = props
-  const { name } = team;
+  const { name, href } = team;
 
   return (
     <div className={`team-block ${className}`}>
       <div className="inner-box">   
         <div className="lower-box">
           <h5>
-            <a href="#">{name}</a>
+           <a href={href}>{name}</a> 
           </h5>         
         </div>
       </div>

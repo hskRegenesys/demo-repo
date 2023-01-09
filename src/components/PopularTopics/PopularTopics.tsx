@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import React, { useRef } from "react";
 import SingleTeam from "./SingleTeam";
 
+
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -86,7 +87,7 @@ const TeamSection = ({ onePage = false }) => {
               ref={listRef}
             >
               {teams?.map((team) => (
-                <SingleTeam key={team.id} team={team} href={team.href} ref={listRef}  passHref />
+                <SingleTeam key={team.id} team={team} ref={listRef} />
               ))}
             </TinySlider>
 

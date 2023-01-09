@@ -2921,10 +2921,11 @@ tns-controls1,
 tns-controls2,
 tns-controls3,
 tns-controls5,
-tns-controls6 {
+tns-controls6,
+tns-controls-tools {
   position: absolute;
   left: 50%;
-  margin-left: -600px;
+  /* margin-left: -600px; */
   top: 50%;
   width: 1200px;
   height: 110px;
@@ -2942,7 +2943,9 @@ tns-controls6 {
 .banner-carousel .tns-controls5 .tns-next,
 .banner-carousel .tns-controls5 .tns-prev,
 .banner-carousel .tns-controls6 .tns-next,
-.banner-carousel .tns-controls6 .tns-prev {
+.banner-carousel .tns-controls6 .tns-prev,
+.banner-carousel .tns-controls-tools .tns-next,
+.banner-carousel .tns-controls-tools .tns-prev  {
   position: absolute;
   top: 0;
   right: 0;
@@ -8772,7 +8775,8 @@ featured-section .right-col .sec-title h2 {
 .tns-controls2 button,
 .tns-controls3 button,
 .tns-controls5 button,
-.tns-controls6 button {
+.tns-controls6 button,
+.tns-controls-tools button {
   width: 34px;
   height: 34px;
   background-color: #ffe55b;
@@ -8784,12 +8788,33 @@ featured-section .right-col .sec-title h2 {
   transition: all 500ms ease;
 }
 
+
+.sponsors-carousel
+{
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+.tns-controls-tools .tns-prev
+{
+  position: absolute;
+  left: 20px;
+  top: 55px;
+}
+  
+.tns-controls-tools .tns-next
+{
+  position: absolute;
+  right: 20px;
+  top: 55px;
+}
+
 .testimonials-five__carousel .tns-controls button:hover,
 .tns-controls1 button:hover,
 .tns-controls2 button:hover,
 .tns-controls3 button:hover,
 .tns-controls5 button:hover,
-.tns-controls6 button:hover {
+.tns-controls6 button:hover,
+.tns-controls-tools button:hover {
   background-color: var(--thm-base);
   color: var(--thm-black);
 }
@@ -8799,7 +8824,8 @@ featured-section .right-col .sec-title h2 {
 .tns-controls2 button.tns-next,
 .tns-controls3 button.tns-next,
 .tns-controls5 button.tns-next,
-.tns-controls6 button.tns-next {
+.tns-controls6 button.tns-next,
+.tns-controls-tools button.tns-next {
   margin-left: 20px;
 }
 
@@ -26011,7 +26037,7 @@ input.PhoneInputInput {
   position: absolute;
   width: 100%;
   left: 0;
-  padding: 55px;
+  padding: 120px 30px 50px;
   margin-top: 100px;
 }
 .process-one__content ul
@@ -26068,4 +26094,24 @@ input.PhoneInputInput {
   line-height: 24px;
 }
 
+.tns-controls-tools button
+{
+  margin-top: 30px;
 }
+
+.tns-controls-tools .tns-next
+{
+  position: relative !important;
+  top: unset;
+  right: 0;
+}
+
+.tns-controls-tools .tns-prev
+{
+  position: relative !important;
+  top: unset;
+  left: 0;
+}
+}
+
+  

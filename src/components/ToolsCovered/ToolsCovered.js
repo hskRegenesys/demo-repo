@@ -15,7 +15,8 @@ const settings = {
   items: 1,
   autoplay: true,
   autoHeight: true,
-  controls: false,
+  controls: true,
+  controlsContainer: ".tns-controls-tools",
   gutter: 0,
   autoplayButton: false,
   autoplayButtonOutput: false,
@@ -63,6 +64,17 @@ const ToolsCovered = ({ courseDetails }) => {
                 </div>
               ))}
             </TinySlider>
+
+            <div className="tns-controls-tools">
+            <button className="tns-prev">
+              <span className="icon fa fa-angle-left"></span>
+            </button>
+            <button className="tns-next">
+              <span className="icon fas fa-angle-right"></span>
+            </button>
+          </div>
+
+
           </div>
         </div>
       </div>

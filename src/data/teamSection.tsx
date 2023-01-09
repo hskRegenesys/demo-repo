@@ -52,7 +52,7 @@ const teamSection = {
     {
       id: 3,
       name: "Cyber Security",
-      href: "/Digital-Marketing",
+      href: "/Cybersecurity",
     },
     {
       id: 4,
