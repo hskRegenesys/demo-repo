@@ -26115,3 +26115,8 @@ input.PhoneInputInput {
 }
 
   
+
+.fixed-header .header-upper .auto-container
+{
+  background-color: #FFF !important
+}
