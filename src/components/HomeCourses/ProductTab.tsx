@@ -9,6 +9,7 @@ import {
   allCoursesId,
 } from "../config/constant";
 import { batchInfo } from "../config/helper";
+import _ from "lodash";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -58,7 +59,12 @@ const ProductTab = ({ courses = [], current }: any) => {
         }
       });
     }
-    setFilterCourses(filterCourse);
+    const courseOrder: any = _.filter(
+      filterCourse,
+      (item) =>
+        item.code !== dataScienceCode && item.code !== digitalMarkrtingCode
+    );
+    setFilterCourses(courseOrder);
   };
   useEffect(() => {
     if (current >= 0) {

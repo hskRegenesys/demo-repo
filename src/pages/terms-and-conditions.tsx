@@ -14,6 +14,7 @@ const Terms = () => {
   return (
     <Layout pageTitle="Terms & Conditions">
       <Style />
+
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />

@@ -35,10 +35,10 @@ const DigitalMarketing = () => {
     }
   }, [courseId]);
   const allContent: any = courseData;
-  const code = coursePriceDetails[0]?.code
+  const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
-  const brochureName:any = brochureDetails[code];
-  console.log("courseDetails =====>", brochureName)
+  const brochureName: any = brochureDetails[code];
+
   return (
     <Layout pageTitle={router?.query?.course}>
       <Style />
@@ -50,19 +50,24 @@ const DigitalMarketing = () => {
         parent="All courses"
         parentHref="/shop"
       />
-      {courseDetails&&<>
-      <CourseDetails courseDetails={courseDetails} brochureName={brochureName}/>
-      <SkillDetailSection courseDetails={courseDetails}/>
-      <JoinReasons courseDetails={courseDetails}/>
-      <ToolsCovered courseDetails={courseDetails}/>
-      <FeatureSeven courseDetails={courseDetails}/>
-      <VideoOne courseDetails={courseDetails}/>
-      <CourseCurriculum courseDetails={courseDetails}/>
-      <FeesDetails courseDetails={courseDetails} courseId={courseId} />
-      <CourseBenefits courseDetails={courseDetails}/>
-      <FaqsSection courseDetails={courseDetails}/>
-      <CallToSection />
-      </>}
+      {courseDetails && (
+        <>
+          <CourseDetails
+            courseDetails={courseDetails}
+            brochureName={brochureName}
+          />
+          <SkillDetailSection courseDetails={courseDetails} />
+          <JoinReasons courseDetails={courseDetails} />
+          <ToolsCovered courseDetails={courseDetails} />
+          <FeatureSeven courseDetails={courseDetails} />
+          <VideoOne courseDetails={courseDetails} />
+          <CourseCurriculum courseDetails={courseDetails} />
+          <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+          <CourseBenefits courseDetails={courseDetails} />
+          <FaqsSection courseDetails={courseDetails} />
+          <CallToSection />
+        </>
+      )}
       <MainFooter />
     </Layout>
   );

@@ -16,6 +16,7 @@ import { useRouter } from "next/router";
 
 const Course = () => {
   const router = useRouter();
+  console.log("router.query----", router.query);
   return (
     <Layout pageTitle={router?.query?.course}>
       <Style />
