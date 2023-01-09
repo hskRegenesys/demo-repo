@@ -18,7 +18,6 @@ import ExperienceSection from "@/components/ExperienceSection/ExperienceSection"
 import { courseService } from "src/services";
 import _ from "lodash";
 
-
 const Home2 = () => {
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
@@ -35,15 +34,14 @@ const Home2 = () => {
   if (courseData.length) {
     courses = _.filter(
       courseData,
-      (item:any) =>
-        item?.isAddon === false &&
-        item?.mode_id === 1
+      (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }
 
   return (
     <Layout pageTitle="Home">
       <Style />
+
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />

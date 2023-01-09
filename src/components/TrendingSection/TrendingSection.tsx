@@ -7,6 +7,7 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
+import { batchInfo } from "../config/helper";
 import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -26,12 +27,9 @@ const settings = {
   mouseDrag: true,
 };
 
-
-
 const { title, details, description } = trendingSection;
 
-
-const TrendingSection = () => { 
+const TrendingSection = () => {
   const router = useRouter();
   const [courseData, setcourseData] = useState([]);
   const getData = async () => {
@@ -39,13 +37,12 @@ const TrendingSection = () => {
     setcourseData(courseListResponse);
   };
 
-
   function redirectCard(name: any, code: any, id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode ) {
+    if (code === dataScienceCode || code === digitalMarkrtingCode) {
       router.push(`/${name?.split(" ").join("-")}`);
     } else {
       router.push(`/${name?.split(" ").join("-")}/${id}`);
-    }  
+    }
   }
 
   useEffect(() => {
@@ -99,7 +96,10 @@ const TrendingSection = () => {
               {CourseCard?.map(
                 ({ id, name, courseMode, batches, code }: any) => (
                   <div ref={listRef} className="gallery-item" key={id}>
-                    <div className="inner-box" onClick={() => redirectCard(name, code, id)}>
+                    <div
+                      className="inner-box"
+                      onClick={() => redirectCard(name, code, id)}
+                    >
                       {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div> */}
@@ -116,8 +116,8 @@ const TrendingSection = () => {
                       <div className="cap-box">
                         <div className="cap-inner">
                           <div className="title">
-                            <h5>                         
-                                  <a>{name}</a>
+                            <h5>
+                              <a>{name}</a>
                             </h5>
                           </div>
 
@@ -125,7 +125,7 @@ const TrendingSection = () => {
                             <ul className="about-seven__list list-unstyled">
                               <li>{courseMode.name}</li>
                               <li>
-                                {batches?.map((item: any) => (
+                                {batchInfo(batches)?.map((item: any) => (
                                   <>
                                     {getWeeksDiff(
                                       item.start_date,
@@ -139,7 +139,7 @@ const TrendingSection = () => {
                               <li>Capstone projects </li>
                             </ul>
                           </div>
-                          {batches?.map((item: any) => (
+                          {batchInfo(batches)?.map((item: any) => (
                             <div className="batch">{item.description}</div>
                           ))}
                         </div>
@@ -151,15 +151,13 @@ const TrendingSection = () => {
             </TinySlider>
 
             <div className="tns-controls1">
-            <button className="tns-prev">
-              <span className="icon fa fa-angle-left"></span>
-            </button>
-            <button className="tns-next">
-              <span className="icon fas fa-angle-right"></span>
-            </button>
-          </div>
-
-          
+              <button className="tns-prev">
+                <span className="icon fa fa-angle-left"></span>
+              </button>
+              <button className="tns-next">
+                <span className="icon fas fa-angle-right"></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

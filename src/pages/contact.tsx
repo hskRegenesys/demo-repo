@@ -17,13 +17,14 @@ const Contact = () => {
   return (
     <Layout pageTitle="Contact us">
       <Style />
+
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="Contact" />
       <GetInTouch />
       <LandingForm />
-      <ContactSection map  />  
+      <ContactSection map />
       <SocialMedia />
       <CallToSection />
       <MainFooter normalPadding={false} />
