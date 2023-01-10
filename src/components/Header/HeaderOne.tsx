@@ -55,6 +55,7 @@ const HeaderOne = ({
   }
   const allCourses = async () => {
     const allData = await courseService.allCourses();
+
     const orderData: any = [];
 
     const filterData = _.filter(
@@ -66,7 +67,7 @@ const HeaderOne = ({
         item?.isAddon === false
     );
 
-    const course = ["DSCI", "DM", "PM", "CS"];
+    const course = ["DSCI", "DM", "PM", "CS", "BDM"];
     const coursesSubItem: any = [];
 
     course.forEach((courseCode) => {
