@@ -56,6 +56,7 @@ const Layout = (props: any) => {
         />
       </Head>
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
+      <a id="chat" className="chat d-inline-block fadeIn animated"><i className="chat-icon"></i></a>
       <main
         id="wrapper"
         style={{ opacity: loading ? 0 : 1 }}
