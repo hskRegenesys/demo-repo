@@ -11,7 +11,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <Layout pageTitle="Privacy Policy">
+    <Layout pageTitle="privacyPolicy">
       <Style />
       <HeaderOne />
       <MobileMenu />

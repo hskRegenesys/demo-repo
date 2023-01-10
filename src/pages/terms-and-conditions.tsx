@@ -12,7 +12,7 @@ import React from "react";
 
 const Terms = () => {
   return (
-    <Layout pageTitle="Terms & Conditions">
+    <Layout pageTitle="termsCondition">
       <Style />
 
       <HeaderOne />
