@@ -137,7 +137,6 @@ const AllCourseGallery = () => {
     setCheckCourseData(result);
   }
   function checkFilter(value: any) {
-    console.log("value.length", value.length);
     if (value.length === 0) {
       setcourseData(allData);
       return;
