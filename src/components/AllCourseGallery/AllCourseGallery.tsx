@@ -85,6 +85,7 @@ const AllCourseGallery = () => {
 
   useEffect(() => {
     checkFilter(checkFilterData);
+    console.log("checkFilterData", checkFilterData);
   }, [checkFilterData]);
 
   function redirectCard(name: any, code: any, id: any) {
@@ -137,6 +138,7 @@ const AllCourseGallery = () => {
     setCheckCourseData(result);
   }
   function checkFilter(value: any) {
+    console.log("value.length", value.length);
     if (value.length === 0) {
       setcourseData(allData);
       return;
@@ -148,6 +150,7 @@ const AllCourseGallery = () => {
           element.id === parseInt(item) ||
           element.parent_id === parseInt(item)
         ) {
+          // const filterData = _.filter(allData)
           result.push(element);
         }
       });
