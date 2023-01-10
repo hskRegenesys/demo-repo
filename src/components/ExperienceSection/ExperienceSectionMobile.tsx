@@ -19,6 +19,7 @@ const settings = {
   autoplayButtonOutput: false,
   controlsContainer: ".tns-controls3",
   mouseDrag: true,
+  fixedWidth: 250,
 };
 
 

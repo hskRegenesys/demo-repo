@@ -7,6 +7,7 @@ import { Image } from "react-bootstrap";
 import NavItem from "./NavItem";
 import { courseService } from "src/services";
 import _ from "lodash";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const {
   title,
@@ -55,50 +56,37 @@ const HeaderOne = ({
   }
   const allCourses = async () => {
     const allData = await courseService.allCourses();
-    const orderData: any = [];
-
     const filterData = _.filter(
       allData,
-
       (item) =>
         item?.parent_id === null &&
         item?.mode_id === 1 &&
         item?.isAddon === false
     );
-
-    const course = ["DSCI", "DM", "PM", "CS"];
     const coursesSubItem: any = [];
-
-    course.forEach((courseCode) => {
-      if (filterData?.length) {
-        filterData?.forEach((item) => {
-          if (item.code === courseCode) {
-            if (_.find(allData, (course) => course.parent_id === item.id)) {
-              coursesSubItem?.push({
-                id: item?.id,
-                name: item?.name,
-
-                href: `/${item?.name?.split(" ").join("-")}`,
-              });
-            } else {
-              coursesSubItem?.push({
-                id: item?.id,
-                name: item?.name,
-                href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
-              });
-            }
-          }
-        });
-      }
-    });
-
+    if (filterData?.length) {
+      filterData?.forEach((item) => {
+        if (_.find(allData, (course) => course.parent_id === item.id)) {
+          coursesSubItem?.push({
+            id: item?.id,
+            name: item?.name,
+            href: `/${item?.name?.split(" ").join("-")}`,
+          });
+        } else {
+          coursesSubItem?.push({
+            id: item?.id,
+            name: item?.name,
+            href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+          });
+        }
+      });
+    }
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
       }
       return item;
     });
-
     setNav(data);
   };
   useEffect(() => {
@@ -118,75 +106,88 @@ const HeaderOne = ({
           </div>
         </div>
       )}
-      <div className="header-upper">
-        <div className="auto-container d-flex clearfix">
-          <div className="logo-box">
-            <div className="logo">
-              <Link href="/">
-                <a title={title}>
-                  <Image id="thm-logo" src={Logo} alt={title} title={title} />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className="nav-outer clearfix">
-            <div onClick={toggleMenu} className="mobile-nav-toggler">
-              <span className="icon flaticon-menu-2"></span>
-              <span className="txt">Menu</span>
-            </div>
-
-            <nav className="main-menu navbar-expand-md navbar-light">
-              <div
-                className={
-                  autoContainer ? "" : "collapse navbar-collapse show clearfix"
-                }
-                id={autoContainer ? "" : "navbarSupportedContent"}
-              >
-                <ul className="navigation clearfix">
-                  {newNavItems?.map((navItem: any) => (
-                    <NavItem
-                      navItem={navItem}
-                      key={navItem.id}
-                      onePage={onePage}
-                    />
-                  ))}
-                </ul>
-              </div>
-            </nav>
-          </div>
-
-          {links && (
-            <div className="other-links clearfix">
-              <div className="link-box">
-                <Link href="https://mydigital.regenesys.net/login/index.php">
-                  <a className="theme-btn btn-style-two">
-                    <i className="btn-curve"></i>
-                    <span className="btn-title">Login</span>
+      <div className="header-upper">       
+          <div className="auto-container d-flex clearfix">
+            <div className="logo-box">
+              <div className="logo">
+                <Link href="/">
+                  <a title={title}>
+                    <Image id="thm-logo" src={Logo} alt={title} title={title} />
                   </a>
                 </Link>
               </div>
             </div>
-          )}
-          {rightMenu && (
-            <div className="right-menu">
-              <div className="search-btn">
-                <button
-                  onClick={toggleSearch}
-                  type="button"
-                  className="theme-btn search-toggler"
-                >
-                  <span className="flaticon-loupe"></span>
-                </button>
-              </div>
+            <div className="nav-outer clearfix">
               <div onClick={toggleMenu} className="mobile-nav-toggler">
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+                <span className="icon flaticon-menu-2"></span>
                 <span className="txt">Menu</span>
               </div>
+
+              <nav className="main-menu navbar-expand-md navbar-light">
+                <div
+                  className={
+                    autoContainer
+                      ? ""
+                      : "collapse navbar-collapse show clearfix"
+                  }
+                  id={autoContainer ? "" : "navbarSupportedContent"}
+                >
+                  <ul className="navigation clearfix">
+                    {newNavItems?.map((navItem: any) => (
+                      <NavItem
+                        navItem={navItem}
+                        key={navItem.id}
+                        onePage={onePage}
+                      />
+                    ))}
+                  </ul>
+                </div>
+              </nav>
             </div>
-          )}
-        </div>
+
+            {links && (
+              <div className="other-links clearfix">
+                {/* <div className="search-btn">
+                  <button
+                    onClick={toggleSearch}
+                    type="button"
+                    className="theme-btn search-toggler"
+                  >
+                    {" "}
+                    <span className="flaticon-loupe"></span>
+                  </button>
+                </div> */}
+
+                <div className="link-box">
+                  <Link href="https://mydigital.regenesys.net/login/index.php">
+                    <a className="theme-btn btn-style-two">
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Login</span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            )}
+            {rightMenu && (
+              <div className="right-menu">
+                <div className="search-btn">
+                  <button
+                    onClick={toggleSearch}
+                    type="button"
+                    className="theme-btn search-toggler"
+                  >
+                    <span className="flaticon-loupe"></span>
+                  </button>
+                </div>
+                <div onClick={toggleMenu} className="mobile-nav-toggler">
+                  <span className="bar"></span>
+                  <span className="bar"></span>
+                  <span className="bar"></span>
+                  <span className="txt">Menu</span>
+                </div>
+              </div>
+            )}
+          </div>
       </div>
     </header>
   );

@@ -14,6 +14,7 @@ const HomeBanner = ({ className = "" }) => {
 
   return (
     <>
+    
     <section className={`featured-section ${className}`}>
       <div className="auto-container">
         <Row className="row clearfix">
@@ -45,7 +46,7 @@ const HomeBanner = ({ className = "" }) => {
         </Row>
         <div className="yellow-half-bg"></div>
       </div>
-    </section>
+    </section>   
 
 <Modal show={show}>
 <ModalPopup setShows={setShow} />

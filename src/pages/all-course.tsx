@@ -26,7 +26,6 @@ const allCourse = () => {
       <AllCourseGallery />
       <PartnerOne />
       <VideoOne />
-      <CourseCurriculum />
       <PopularTopics />
       <CallToSection />
       <MainFooter />
