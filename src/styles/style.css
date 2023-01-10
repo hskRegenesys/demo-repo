@@ -4842,7 +4842,7 @@ tns-controls-tools {
 .gallery-item .inner-box .image {
   position: relative;
   border-radius: 10px;
-  height: 190px;
+  height: 185px;
   width: 100%;
   margin: 0 auto;
   border: 2px solid #000;
@@ -11320,24 +11320,28 @@ featured-section .right-col .sec-title h2 {
   line-height: 30px;
   color: #000;
   font-weight: 400;
-  letter-spacing: 1px;
   cursor: default;
   padding-right: 15px;
   margin-right: 15px;
-  letter-spacing: 0.1em;
   font-family: var(--thm-font);
 }
 
 .page-banner .bread-crumb li:before {
+  right: -16px;
+  content: "\f105";
+  font-family: Font Awesome\ 5 Free;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
   position: absolute;
-  right: -15px;
-  width: 30px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  content: ">";
-  font-family: Raleway-semibold;
+  margin: 10px 10px 0 5px;
+  transition: all .3s ease;
 }
 
 .page-banner .bread-crumb li:last-child {
@@ -15372,11 +15376,8 @@ featured-section .right-col .sec-title h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
@@ -17710,7 +17711,7 @@ h2.curve-right:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
+  -webkit-box-align: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
   -webkit-box-pack: justify;
@@ -25366,7 +25367,7 @@ input.PhoneInputInput {
     text-align: center;
     z-index: 3;
     font-family: "Raleway-bold";
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .featured-section .right-col {
@@ -25529,6 +25530,7 @@ input.PhoneInputInput {
 
   .about-me-one {
     padding: 15px;
+    margin-bottom: 20px;
   }
 
   .sign-arrow-contact {
@@ -25697,9 +25699,7 @@ input.PhoneInputInput {
   margin-bottom: 0;
 }
 
-.testimonials-carousel .gallery-item {
-  min-width: 330px
-}
+
 
 .my-slider3 {
   display: flex;
@@ -25714,6 +25714,18 @@ input.PhoneInputInput {
 
 .FludiSection {
   padding: 0 40px;
+}
+
+.fixed-header .header-upper .auto-container
+{
+  background-color: #FFF !important
+}
+
+
+button.tns-next:disabled,
+button[disabled]
+{
+    background-color: #CCC !important
 }
 
 @media (max-width: 575.98px) {
@@ -25876,10 +25888,10 @@ input.PhoneInputInput {
     padding: 100px 0px;
   }
 
-  #experience-mobile .gallery-item {
+  /* #experience-mobile .gallery-item {
     max-width: 260px !important;
   }
-
+ */
 
 
 
@@ -25968,6 +25980,12 @@ input.PhoneInputInput {
     background-repeat: no-repeat;
     width: 100%;
     height: 352px;
+  }
+
+  .all-course-wave
+
+  {
+    min-height: 630px !important;
   }
 
   .all-course-section .content-box {
@@ -26113,11 +26131,62 @@ input.PhoneInputInput {
   top: unset;
   left: 0;
 }
+
+.sponsors-section
+{
+  padding: 30px 0px;
 }
 
-  
-
-.fixed-header .header-upper .auto-container
+.sponsors-section .sec-title
 {
-  background-color: #FFF !important
+  margin-bottom: 20px !important;
+}
+
+.service-block-three
+{
+  padding-top: 0;
+}
+.testimonials-section
+{
+  background-color: #FFF;
+}
+}  
+
+.chat-icon
+{
+  background: url(/assets/images/icons/chat.svg);
+  background-size: 26px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: inherit;
+  width: inherit;
+  display: inline-block;
+}
+
+
+.chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  color: var(--thm-black);
+  font-size: 14px;
+  line-height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  background: #1fa393;
+  display: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  box-shadow: 3px 3px 0 0 #ffe55b;
+    transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.chat:hover {
+  background: var(--thm-black);
+  color: #ffffff;
 }
