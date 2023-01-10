@@ -85,7 +85,6 @@ const AllCourseGallery = () => {
 
   useEffect(() => {
     checkFilter(checkFilterData);
-    console.log("checkFilterData", checkFilterData);
   }, [checkFilterData]);
 
   function redirectCard(name: any, code: any, id: any) {
@@ -150,7 +149,6 @@ const AllCourseGallery = () => {
           element.id === parseInt(item) ||
           element.parent_id === parseInt(item)
         ) {
-          // const filterData = _.filter(allData)
           result.push(element);
         }
       });
@@ -196,7 +194,6 @@ const AllCourseGallery = () => {
                     <Form.Check
                       onChange={(e) => {
                         if (e.target.checked) {
-                          console.log("in", e.target.value);
                           setCheckFilterData([
                             ...checkFilterData,
                             e.target.value,
