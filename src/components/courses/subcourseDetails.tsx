@@ -1,11 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Col, Row, Image } from "react-bootstrap";
 import Link from "next/link";
 import { courseService } from "src/services";
 import _ from "lodash";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 import { batchInfo } from "../config/helper";
+const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
+  ssr: false,
+});
+
+const settings = {
+  container: ".sub-courses",
+  items: 1.7,
+  slideBy: "page",
+  autoplay: true,
+  loop: false,
+  gutter: 30,
+  nav: false,
+  controls: true,
+  autoplayButtonOutput: false,
+  controlsContainer: ".tns-controls9",
+  mouseDrag: true,
+  responsive: {
+    320: {
+      gutter: 30,
+      fixedWidth: 280,
+    },
+    900: {
+      items: 3,
+      fixedWidth: 320,
+    }
+  }
+};
 
 const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
@@ -48,23 +76,26 @@ const SubCourseDetails = ({ page }: any) => {
     );
   }
 
+  const listRef = useRef(null);
+
   return (
     <>
       <section className="all-course-filter">
         <div className="auto-container">
-          <Row>
-            <Col sm={6} md={12} lg={12}>
-              <Row>
+          <Row>      
+            
+              <TinySlider 
+              options={{
+                ...settings,
+              }}
+              ref={listRef}
+            >
                 {subCourse?.map(
                   ({ id, name, courseMode, batches, code }: any) => (
-                    <Col
-                      key={id}
-                      sm={12}
-                      md={3}
-                      lg={4}
-                      className="animated fadeInLeft testi-block"
+                    <Col 
+                    ref={listRef} key={id} className="testi-block"
                     >
-                      <div className="gallery-item" key={id}>
+                      <div className="gallery-item" >
                         <div
                           className="inner-box"
                           onClick={() => redirectCard(name, code, id)}
@@ -122,10 +153,19 @@ const SubCourseDetails = ({ page }: any) => {
                         </div>
                       </div>
                     </Col>
-                  )
+                  )                
                 )}
-              </Row>
-            </Col>
+              </TinySlider>
+
+              <div className="tns-controls9">
+              <button className="tns-prev">
+                <span className="icon fa fa-angle-left"></span>
+              </button>
+              <button className="tns-next">
+                <span className="icon fas fa-angle-right"></span>
+              </button>
+            </div>           
+          
           </Row>
         </div>
       </section>
