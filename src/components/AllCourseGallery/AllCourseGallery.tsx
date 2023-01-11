@@ -1,7 +1,7 @@
-import { allCourseGallery } from "@/data/allCourseGallery";
+import { allCourseGallery, courseCheckbox } from "@/data/allCourseGallery";
 import React, { useEffect, useState, useRef } from "react";
 import { Col, Row, Image } from "react-bootstrap";
-import dynamic from "next/dynamic"
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import Form from "react-bootstrap/Form";
 import Pagination from "react-bootstrap/Pagination";
@@ -20,31 +20,28 @@ const settings = {
   items: 1.2,
   gutter: 20,
   responsive: {
-    475: {  
+    475: {
       slideBy: "page",
-    
     },
     600: {
       items: 2,
-      gutter: 30,     
-
+      gutter: 30,
     },
     992: {
       items: 3,
       gutter: 30,
-    
     },
     1200: {
       items: 4,
-      gutter: 30,   
-      disable: true,   
+      gutter: 30,
+      disable: true,
       mode: "gallery",
       axis: "horizontal",
     },
-    1500: {    
+    1500: {
       gutter: 30,
     },
-    1600: {   
+    1600: {
       gutter: 30,
     },
   },
@@ -56,27 +53,39 @@ const settings = {
   controlsContainer: ".tns-controls5",
 };
 
-
 const handleSearch = (e: any) => {
   e.preventDefault();
   const formData = new FormData(e.target);
 };
 
 const AllCourseGallery = () => {
+  const checkBoxData = courseCheckbox;
+
   const router = useRouter();
   const [courseData, setcourseData] = useState<any>([]);
+  const [allData, setAllData] = useState<any>([]);
+  const [checkCourseData, setCheckCourseData] = useState<any>([]);
+  const [checkFilterData, setCheckFilterData] = useState<any>([]);
+
   const getData = async () => {
     let courseListResponse = await courseService.allCourses();
+
     const courses = _.filter(
       courseListResponse,
       (item: any) => item?.mode_id === 1
     );
+    checkData(courses);
+    setAllData(courses);
     setcourseData(courses);
   };
 
   useEffect(() => {
     getData();
   }, []);
+
+  useEffect(() => {
+    checkFilter(checkFilterData);
+  }, [checkFilterData]);
 
   function redirectCard(name: any, code: any, id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
@@ -86,11 +95,72 @@ const AllCourseGallery = () => {
     }
   }
 
+  function searchFilter(value: string) {
+    const result = [];
+    for (let i = 0; i < allData.length; i++) {
+      let entry = allData[i];
+
+      if (
+        entry &&
+        entry.name &&
+        entry.name.toLowerCase().indexOf(value.toLowerCase()) !== -1
+      ) {
+        result.push(entry);
+      }
+
+      setcourseData(result);
+    }
+  }
+
+  function checkData(courses: any) {
+    const filterData = _.filter(
+      courses,
+
+      (item) =>
+        item?.parent_id === null &&
+        item?.mode_id === 1 &&
+        item?.isAddon === false
+    );
+    const checkCourseList = ["DSCI", "DM", "PM", "CS"];
+
+    const result: any = [];
+
+    checkCourseList.forEach((courseCode) => {
+      if (filterData?.length) {
+        filterData?.forEach((item) => {
+          if (item.code === courseCode) {
+            result?.push(item);
+          }
+        });
+      }
+    });
+    setCheckCourseData(result);
+  }
+  function checkFilter(value: any) {
+    if (value.length === 0) {
+      setcourseData(allData);
+      return;
+    }
+    const result: any = [];
+    value.forEach((item: any) => {
+      allData.forEach((element: any) => {
+        if (
+          element.id === parseInt(item) ||
+          element.parent_id === parseInt(item)
+        ) {
+          result.push(element);
+        }
+      });
+    });
+
+    setcourseData(result);
+  }
+
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-      msInWeek
+        msInWeek
     );
   }
   const listRef = useRef(null);
@@ -99,67 +169,55 @@ const AllCourseGallery = () => {
       <section className="all-course-filter">
         <div className="FluidSection">
           <Row>
-            {/* <Col sm={12} md={3} lg={3} className="filter-section">
+            <Col sm={12} md={3} lg={3} className="filter-section">
               <div className="shop-sidebar__single">
-
                 <h5>Filter</h5>
                 <h6 className="mt-5">Find Course</h6>
                 <div className="shop-sidebar">
                   <div className="shop-search shop-sidebar__single">
                     <form onSubmit={handleSearch}>
-                      <input type="text" placeholder="Search" name="search" />
+                      <input
+                        onChange={(e) => searchFilter(e.target.value)}
+                        type="text"
+                        placeholder="Search"
+                        name="search"
+                      />
                       <button type="submit">
                         <i className="flaticon-magnifying-glass"></i>
                       </button>
                     </form>
                   </div>
 
-                  <h6 className="border-bottom">All Classes</h6>
-                  <Form.Check
-                    inline-block
-                    label="Data Science"
-                    name="group1"
-                    type="checkbox"
-                    id="inline-checkbox1"
-                  />
-
-                  <Form.Check
-                    inline-block
-                    label="Digital Marketing"
-                    name="group1"
-                    type="checkbox"
-                    id="inline-checkbox2"
-                  />
-
-                  <Form.Check
-                    inline-block
-                    label="Project Management"
-                    name="group1"
-                    type="checkbox"
-                    id="inline-checkbox2"
-                  />
-
-                  <Form.Check
-                    inline-block
-                    label="Cyber Security"
-                    name="group1"
-                    type="checkbox"
-                    id="inline-checkbox2"
-                  />
-
-
-                  <Form.Check
-                    inline-block
-                    label="Investment, Trading & Personal Finance"
-                    name="group1"
-                    type="checkbox"
-                    id="inline-checkbox2"
-                  />
+                  <h6 className="border-bottom">All Courses</h6>
+                  {checkCourseData?.map(({ code, name, id }: any) => (
+                    <Form.Check
+                      onChange={(e) => {
+                        if (e.target.checked) {
+                          setCheckFilterData([
+                            ...checkFilterData,
+                            e.target.value,
+                          ]);
+                        } else {
+                          setCheckFilterData(
+                            checkFilterData.filter(
+                              (item: any) => parseInt(item) !== id
+                            )
+                          );
+                        }
+                      }}
+                      inline-block
+                      label={name}
+                      name={name}
+                      type="checkbox"
+                      id={code}
+                      value={id}
+                    />
+                  ))}
                 </div>
               </div>
-            </Col> */}
+            </Col>
 
-            <Col sm={12} md={12} lg={12}>
+            <Col sm={12} md={9} lg={9}>
               <Row>
                 <TinySlider
                   options={{
@@ -169,73 +227,70 @@ const AllCourseGallery = () => {
                 >
                   {courseData?.map(
                     ({ id, name, courseMode, batches, code }: any) => (
-                      <Col ref={listRef} key={id} 
+                      <Col
+                        ref={listRef}
+                        key={id}
                         className="animated testi-block gallery-item"
                       >
-                     
-                          <div
-                            className="inner-box"
-                            onClick={() => redirectCard(name, code, id)}
-                          >
-                            {/* <div className="icon">
-                      <i className="fa fa-share-alt" aria-hidden="true"></i>
-                    </div> */}
-                            <figure className="image">
-                              <Image
-                                src={`/assets/images/gallery/${code}.png`}
-                                alt=""
-                              />
-                            </figure>
-                            <a
-                              className="lightbox-image overlay-box"
-                              data-fancybox="gallery"
-                            ></a>
-                            <div className="cap-box">
-                              <div className="cap-inner">
-                                <div className="title">
-                                  <h5>
-                                    <a>{name}</a>
-                                  </h5>
-                                </div>
-
-                                <div className="cat">
-                                  <ul className="about-seven__list list-unstyled">
-                                    <li>{courseMode.name}</li>
-                                    <li>
-                                      {batchInfo(batches)?.map((item: any) => (
-                                        <>
-                                          {getWeeksDiff(
-                                            item.start_date,
-                                            item.end_date
-                                          )}
-                                          &nbsp;Week
-                                        </>
-                                      ))}
-                                    </li>
-                                    <li>International certification </li>
-                                    <li>Capstone projects </li>
-                                  </ul>
-                                </div>
-                                {batchInfo(batches)?.map((item: any) => (
-                                  <div className="batch">{item.description}</div>
-                                ))}
+                        <div
+                          className="inner-box"
+                          onClick={() => redirectCard(name, code, id)}
+                        >
+                          <figure className="image">
+                            <Image
+                              src={`/assets/images/gallery/${code}.png`}
+                              alt=""
+                            />
+                          </figure>
+                          <a
+                            className="lightbox-image overlay-box"
+                            data-fancybox="gallery"
+                          ></a>
+                          <div className="cap-box">
+                            <div className="cap-inner">
+                              <div className="title">
+                                <h5>
+                                  <a>{name}</a>
+                                </h5>
                               </div>
+
+                              <div className="cat">
+                                <ul className="about-seven__list list-unstyled">
+                                  <li>{courseMode.name} classes</li>
+                                  <li>
+                                    {batchInfo(batches)?.map((item: any) => (
+                                      <>
+                                        {getWeeksDiff(
+                                          item.start_date,
+                                          item.end_date
+                                        )}
+                                        &nbsp;Weeks
+                                      </>
+                                    ))}
+                                  </li>
+                                  <li>International certification </li>
+                                  <li>Capstone projects </li>
+                                </ul>
+                              </div>
+                              {batchInfo(batches)?.map((item: any) => (
+                                <div className="batch">{item.description}</div>
+                              ))}
                             </div>
                           </div>
+                        </div>
                       </Col>
                     )
                   )}
-
                 </TinySlider>
 
                 <div className="tns-controls5 text-center">
-              <button className="tns-prev">
-                <span className="icon fa fa-angle-left"></span>
-              </button>
-              <button className="tns-next">
-                <span className="icon fas fa-angle-right"></span>
-              </button>
-            </div>
+                  <button className="tns-prev">
+                    <span className="icon fa fa-angle-left"></span>
+                  </button>
+                  <button className="tns-next">
+                    <span className="icon fas fa-angle-right"></span>
+                  </button>
+                </div>
 
                 {/* <Pagination className="d-flex justify-content-center mt-3">
                   <Pagination.Prev />
@@ -255,4 +310,3 @@ const AllCourseGallery = () => {
 };
 
 export default AllCourseGallery;
-

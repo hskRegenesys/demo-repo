@@ -74,7 +74,7 @@ const NavItem = (props: any) => {
           onClick={() => mobile && href.includes("#") && toggleMenu()}
           href={href}
         >
-          {name}{" "}
+          {name}
           {subNavItems?.length > 0 && (
             <div
               onClick={handleActive}

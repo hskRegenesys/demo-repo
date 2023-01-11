@@ -11,7 +11,6 @@ const Layout = (props: any) => {
   const [loading, setLoading] = useState(true);
   const { scrollTop } = useScroll(100);
 
-  console.log("props.pageTitle---", pageTitle);
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLoading(false);

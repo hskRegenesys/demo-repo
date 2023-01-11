@@ -10,8 +10,8 @@ const { navItems, title, logo7 } = headerData;
 
 const HeaderTwo = ({ headerStyle = "mainmenu-six", header = 6 }) => {
   const { scrollTop } = useScroll(120);
-  const contextRoot:any = useRootContext();
-  const { toggleSearch, toggleMenu } = contextRoot
+  const contextRoot: any = useRootContext();
+  const { toggleSearch, toggleMenu } = contextRoot;
   return (
     <nav
       className={`${headerStyle} main-header${

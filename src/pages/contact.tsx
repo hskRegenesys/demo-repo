@@ -15,7 +15,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <Layout pageTitle="Contact us">
+    <Layout pageTitle="contact">
       <Style />
 
       <HeaderOne />

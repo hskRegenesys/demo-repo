@@ -39,7 +39,7 @@ const Home2 = () => {
   }
 
   return (
-    <Layout pageTitle="Home">
+    <Layout pageTitle="home">
       <Style />
       <HeaderOne />
       <MobileMenu />
