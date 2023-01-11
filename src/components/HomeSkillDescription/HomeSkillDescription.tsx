@@ -6,7 +6,7 @@ const HomeSkillDescription = ({
   btnClassName = "btn-style-two",
 }) => {
   return (
-    <section className={`call-to-section-two ${className}`}>
+    <section className={`call-to-section-two mobile-hide ${className}`}>
       <div className="auto-container">
         <div className="inner clearfix">
           <div className="sec-title animated fadeInLeft text-center">

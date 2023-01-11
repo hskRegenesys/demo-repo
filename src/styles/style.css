@@ -765,9 +765,16 @@ img {
     margin-right: 70px;
   }
 
-  .discover-block .cap-inner p {
-    min-height: 80px;
+  .contact-equal-spacing
+  {
+    margin-bottom: 46px;
   }
+  
+  .contact-equal-spacing2
+  {
+    margin-bottom: 71px;
+  }
+ 
 }
 
 .main-menu .navbar-collapse {
@@ -2922,6 +2929,7 @@ tns-controls2,
 tns-controls3,
 tns-controls5,
 tns-controls6,
+tns-controls9,
 tns-controls-tools {
   position: absolute;
   left: 50%;
@@ -2945,7 +2953,10 @@ tns-controls-tools {
 .banner-carousel .tns-controls6 .tns-next,
 .banner-carousel .tns-controls6 .tns-prev,
 .banner-carousel .tns-controls-tools .tns-next,
-.banner-carousel .tns-controls-tools .tns-prev  {
+.banner-carousel .tns-controls-tools .tns-prev,
+.banner-carousel .tns-controls9 .tns-next,
+.banner-carousel .tns-controls9 .tns-prev
+  {
   position: absolute;
   top: 0;
   right: 0;
@@ -6792,7 +6803,7 @@ tns-controls-tools {
 
 .main-footer .widgets-section {
   position: relative;
-  padding: 170px 0px 0;
+  padding: 100px 0px 0;
 }
 
 .main-footer.normal-padding .widgets-section {
@@ -8235,16 +8246,15 @@ featured-section .right-col .sec-title h2 {
 
 .testi-block {
   position: relative;
-  margin-bottom: 30px;
 }
 
 .tns-ovh .testi-block {
-  margin: 0;
+  /* margin: 0;
   width: 25%;
   float: left;
   width: calc(25% - 30px);
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
 
 .testi-block .inner {
@@ -8776,6 +8786,7 @@ featured-section .right-col .sec-title h2 {
 .tns-controls3 button,
 .tns-controls5 button,
 .tns-controls6 button,
+.tns-controls9 button,
 .tns-controls-tools button {
   width: 34px;
   height: 34px;
@@ -8814,9 +8825,11 @@ featured-section .right-col .sec-title h2 {
 .tns-controls3 button:hover,
 .tns-controls5 button:hover,
 .tns-controls6 button:hover,
+.tns-controls9 button:hover,
 .tns-controls-tools button:hover {
-  background-color: var(--thm-base);
-  color: var(--thm-black);
+  background-color: #1fa393;
+  color: #FFF;
+  box-shadow: 3px 3px 0 0 #ffe55b;
 }
 
 .testimonials-five__carousel .tns-controls button.tns-next,
@@ -8825,6 +8838,7 @@ featured-section .right-col .sec-title h2 {
 .tns-controls3 button.tns-next,
 .tns-controls5 button.tns-next,
 .tns-controls6 button.tns-next,
+.tns-controls9 button.tns-next,
 .tns-controls-tools button.tns-next {
   margin-left: 20px;
 }
@@ -24635,7 +24649,7 @@ h2.curve-right:after {
 /*# sourceMappingURL=style.css.map */
 
 .footer-section-yellow {
-  padding: 50px 50px 60px 116px;
+  padding: 50px 50px 140px 116px;
   background-color: #ffe55b;
   border-top-right-radius: 50px;
 }
@@ -25261,7 +25275,7 @@ input.PhoneInputInput {
   margin-bottom: 40px;
 }
 
-.tns-controls3 {
+.tns-controls3, .tns-controls9 {
 
   margin-top: 0;
   text-align: right;
@@ -25274,7 +25288,8 @@ input.PhoneInputInput {
 .tns-controls2 button,
 .tns-controls3 button,
 .tns-controls5 button,
-.tns-controls6 button {
+.tns-controls6 button,
+.tns-controls9 button {
   box-shadow: 3px 3px 0 0 #1fa393;
 }
 
@@ -25379,7 +25394,7 @@ input.PhoneInputInput {
   }
 
   .service-block-three {
-    margin: 20px;
+    margin: 150px 30px 30px;
     padding-bottom: 30px;
   }
 
@@ -25728,6 +25743,51 @@ button[disabled]
     background-color: #CCC !important
 }
 
+
+.chat-icon
+{
+  background: url(/assets/images/icons/chat.svg);
+  background-size: 26px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: inherit;
+  width: inherit;
+  display: inline-block;
+}
+
+
+.chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  color: var(--thm-black);
+  font-size: 14px;
+  line-height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  background: #1fa393;
+  display: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  box-shadow: 3px 3px 0 0 #ffe55b;
+    transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.chat:hover {
+  background: var(--thm-black);
+  color: #ffffff;
+}
+.all-course-filter .tns-ovh
+{
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 575.98px) {
 
   .reasonsMobile {
@@ -25906,9 +25966,9 @@ button[disabled]
 
   .featured-section {
     position: relative;
-    padding: 200px 0px 90px;
+    padding: 200px 0px 0 !important;
     background-color: #c3ead8;
-    height: 1000px;
+    min-height: 1584px;
     max-height: unset;
   }
 
@@ -25979,7 +26039,7 @@ button[disabled]
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 352px;
+    height: 220px;
   }
 
   .all-course-wave
@@ -25989,9 +26049,8 @@ button[disabled]
   }
 
   .all-course-section .content-box {
-    padding-right: 0;
     text-align: center;
-    padding-top: 30px;
+    padding: 0 0 30px;
   }
 
   .all-course-section .content-box .sign-arrow img {
@@ -26150,43 +26209,58 @@ button[disabled]
 {
   background-color: #FFF;
 }
+
+.testimonials-five__carousel .tns-controls button,
+.tns-controls1 button,
+.tns-controls2 button,
+.tns-controls3 button,
+.tns-controls5 button,
+.tns-controls6 button,
+.tns-controls-tools button {
+  background-color: #1fa393;
+  box-shadow: 4px 4px 0 0 #ffe55b;
+  color: #FFF;
+}
+
+.yellow-half-bg
+{
+  width: 100%;
+  bottom: unset;
+  top: 600px;
+}
+
+.revolutionise-text
+{
+  z-index: 3;
+  position: relative;
+  background-color: #ffe55b;
+  margin-top: -15px;
+  padding: 40px 26px;
+  text-align: justify;
+}
+
+.revolutionise-text .sec-title h4
+{
+ font-size: 28px;
+}
+
+.gallery-item .inner-box .image
+{
+  height: 160px;
+}
+
+.gallery-item .inner-box
+{
+  height: 470px;
+}
+.about-seven__list
+{
+  margin: 20px 0 20px;
+}
+
+.all-course-filter .tns-ovh
+{
+  display: block;
+}
 }  
 
-.chat-icon
-{
-  background: url(/assets/images/icons/chat.svg);
-  background-size: 26px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: inherit;
-  width: inherit;
-  display: inline-block;
-}
-
-
-.chat {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
-  color: var(--thm-black);
-  font-size: 14px;
-  line-height: 44px;
-  border-radius: 50%;
-  text-align: center;
-  z-index: 100;
-  cursor: pointer;
-  background: #1fa393;
-  display: none;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  box-shadow: 3px 3px 0 0 #ffe55b;
-    transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.chat:hover {
-  background: var(--thm-black);
-  color: #ffffff;
-}

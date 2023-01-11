@@ -9,6 +9,8 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
+
+
 const {
   title,
   logo1,
@@ -56,6 +58,7 @@ const HeaderOne = ({
   }
   const allCourses = async () => {
     const allData = await courseService.allCourses();
+    const orderData: any = [];
     const filterData = _.filter(
       allData,
       (item) =>
