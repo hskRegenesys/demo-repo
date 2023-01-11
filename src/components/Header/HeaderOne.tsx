@@ -7,7 +7,6 @@ import { Image } from "react-bootstrap";
 import NavItem from "./NavItem";
 import { courseService } from "src/services";
 import _ from "lodash";
-import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const {
   title,
@@ -56,11 +55,11 @@ const HeaderOne = ({
   }
   const allCourses = async () => {
     const allData = await courseService.allCourses();
-
     const orderData: any = [];
 
     const filterData = _.filter(
       allData,
+
       (item) =>
         item?.parent_id === null &&
         item?.mode_id === 1 &&
@@ -69,29 +68,37 @@ const HeaderOne = ({
 
     const course = ["DSCI", "DM", "PM", "CS", "BDM"];
     const coursesSubItem: any = [];
-    if (filterData?.length) {
-      filterData?.forEach((item) => {
-        if (_.find(allData, (course) => course.parent_id === item.id)) {
-          coursesSubItem?.push({
-            id: item?.id,
-            name: item?.name,
-            href: `/${item?.name?.split(" ").join("-")}`,
-          });
-        } else {
-          coursesSubItem?.push({
-            id: item?.id,
-            name: item?.name,
-            href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
-          });
-        }
-      });
-    }
+
+    course.forEach((courseCode) => {
+      if (filterData?.length) {
+        filterData?.forEach((item) => {
+          if (item.code === courseCode) {
+            if (_.find(allData, (course) => course.parent_id === item.id)) {
+              coursesSubItem?.push({
+                id: item?.id,
+                name: item?.name,
+
+                href: `/${item?.name?.split(" ").join("-")}`,
+              });
+            } else {
+              coursesSubItem?.push({
+                id: item?.id,
+                name: item?.name,
+                href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+              });
+            }
+          }
+        });
+      }
+    });
+
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
       }
       return item;
     });
+
     setNav(data);
   };
   useEffect(() => {
@@ -150,17 +157,6 @@ const HeaderOne = ({
 
           {links && (
             <div className="other-links clearfix">
-              {/* <div className="search-btn">
-                  <button
-                    onClick={toggleSearch}
-                    type="button"
-                    className="theme-btn search-toggler"
-                  >
-                    {" "}
-                    <span className="flaticon-loupe"></span>
-                  </button>
-                </div> */}
-
               <div className="link-box">
                 <Link href="https://mydigital.regenesys.net/login/index.php">
                   <a className="theme-btn btn-style-two">
