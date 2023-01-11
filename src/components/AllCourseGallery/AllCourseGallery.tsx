@@ -19,32 +19,7 @@ const settings = {
   container: ".my-slider2",
   items: 1.2,
   gutter: 20,
-  responsive: {
-    475: {
-      slideBy: "page",
-    },
-    600: {
-      items: 2,
-      gutter: 30,
-    },
-    992: {
-      items: 3,
-      gutter: 30,
-    },
-    1200: {
-      items: 4,
-      gutter: 30,
-      disable: true,
-      mode: "gallery",
-      axis: "horizontal",
-    },
-    1500: {
-      gutter: 30,
-    },
-    1600: {
-      gutter: 30,
-    },
-  },
+  fixedWidth: 320,
   autoplay: true,
   loop: true,
   nav: false,
@@ -218,7 +193,7 @@ const AllCourseGallery = () => {
             </Col>
 
             <Col sm={12} md={9} lg={9}>
-              <Row>
+              <Row className="desktop-hide">
                 <TinySlider
                   options={{
                     ...settings,
@@ -283,14 +258,78 @@ const AllCourseGallery = () => {
                   )}
                 </TinySlider>
 
-                <div className="tns-controls5 text-center">
+                <div className="tns-controls5 desktop-hide text-center">
                   <button className="tns-prev">
                     <span className="icon fa fa-angle-left"></span>
                   </button>
                   <button className="tns-next">
                     <span className="icon fas fa-angle-right"></span>
                   </button>
-                </div>
+                </div>     
+              </Row>
+
+              
+
+
+                 <Row className="mobile-hide">       
+                  {courseData?.map(
+                    ({ id, name, courseMode, batches, code }: any) => (
+                      <Col 
+                        ref={listRef}
+                        key={id} 
+                        className="animated testi-block gallery-item"  md={6} lg={4}
+                      >
+                        <div
+                          className="inner-box"
+                          onClick={() => redirectCard(name, code, id)}
+                        >
+                          <figure className="image">
+                            <Image
+                              src={`/assets/images/gallery/${code}.png`}
+                              alt=""
+                            />
+                          </figure>
+                          <a
+                            className="lightbox-image overlay-box"
+                            data-fancybox="gallery"
+                          ></a>
+                          <div className="cap-box">
+                            <div className="cap-inner">
+                              <div className="title">
+                                <h5>
+                                  <a>{name}</a>
+                                </h5>
+                              </div>
+
+                              <div className="cat">
+                                <ul className="about-seven__list list-unstyled">
+                                  <li>{courseMode.name} classes</li>
+                                  <li>
+                                    {batchInfo(batches)?.map((item: any) => (
+                                      <>
+                                        {getWeeksDiff(
+                                          item.start_date,
+                                          item.end_date
+                                        )}
+                                        &nbsp;Weeks
+                                      </>
+                                    ))}
+                                  </li>
+                                  <li>International certification </li>
+                                  <li>Capstone projects </li>
+                                </ul>
+                              </div>
+                              {batchInfo(batches)?.map((item: any) => (
+                                <div className="batch">{item.description}</div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </Col>
+                    )
+                  )}       
+
+        
 
                 {/* <Pagination className="d-flex justify-content-center mt-3">
                   <Pagination.Prev />

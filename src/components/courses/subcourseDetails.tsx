@@ -22,18 +22,12 @@ const settings = {
   controls: true,
   autoplayButtonOutput: false,
   controlsContainer: ".tns-controls9",
-  mouseDrag: true,
-  responsive: {
-    320: {
-      gutter: 30,
-      fixedWidth: 280,
-    },
-    900: {
-      items: 3,
-      fixedWidth: 320,
-    }
-  }
+  fixedWidth: 320,
+  mouseDrag: true
 };
+
+
+
 
 const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
@@ -82,7 +76,7 @@ const SubCourseDetails = ({ page }: any) => {
     <>
       <section className="all-course-filter">
         <div className="auto-container">
-          <Row>      
+      
             
               <TinySlider 
               options={{
@@ -92,10 +86,10 @@ const SubCourseDetails = ({ page }: any) => {
             >
                 {subCourse?.map(
                   ({ id, name, courseMode, batches, code }: any) => (
-                    <Col 
+                    <div 
                     ref={listRef} key={id} className="testi-block"
                     >
-                      <div className="gallery-item" >
+                      <div className="gallery-item tns-item" >
                         <div
                           className="inner-box"
                           onClick={() => redirectCard(name, code, id)}
@@ -152,7 +146,7 @@ const SubCourseDetails = ({ page }: any) => {
                           </div>
                         </div>
                       </div>
-                    </Col>
+                    </div>
                   )                
                 )}
               </TinySlider>
@@ -166,7 +160,7 @@ const SubCourseDetails = ({ page }: any) => {
               </button>
             </div>           
           
-          </Row>
+    
         </div>
       </section>
     </>

@@ -25782,11 +25782,6 @@ button[disabled]
   background: var(--thm-black);
   color: #ffffff;
 }
-.all-course-filter .tns-ovh
-{
-  display: flex;
-  justify-content: center;
-}
 
 @media (max-width: 575.98px) {
 
@@ -26050,7 +26045,7 @@ button[disabled]
 
   .all-course-section .content-box {
     text-align: center;
-    padding: 0 0 30px;
+    padding: 60px 0 30px;
   }
 
   .all-course-section .content-box .sign-arrow img {
@@ -26262,5 +26257,21 @@ button[disabled]
 {
   display: block;
 }
+
+.map-section {
+  padding-bottom: 20px;
+}
+
+h2.curve-right:after
+{
+  height: 0;
+}
+
 }  
+
+
+.testimonials-five .auto-container, .map-section .auto-container, .services-section-three .auto-container
+{
+  max-width: 1500px;
+}
 
