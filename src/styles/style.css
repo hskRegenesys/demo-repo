@@ -8671,7 +8671,8 @@ featured-section .right-col .sec-title h2 {
 .testimonials-five {
   padding-top: 90px;
   padding-bottom: 45px;
-  background-color: #ffe55b;
+  /* background-color: #ffe55b; */
+  background: linear-gradient(180deg, #ffe55b 50%, #FFFFFF 50%);
 }
 
 @media (min-width: 992px) {
@@ -25437,10 +25438,14 @@ input.PhoneInputInput {
 
   .call-to-section .inner {
     padding: unset !important;
-    bottom: unset !important;
+    bottom: -50px !important;
     margin-top: unset !important;
     padding: 30px !important;
     border-radius: 0;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: auto;
   }
 
   .call-to-section .link-box {
@@ -25453,7 +25458,11 @@ input.PhoneInputInput {
   }
 
   .main-footer .widgets-section {
-    padding: 40px 0px 0 !important;
+    padding: 70px 0px 0 !important;
+  }
+  .call-to-action-arrow
+  {
+    display: none;
   }
 
   .main-footer .logo-widget {
@@ -26198,11 +26207,13 @@ button[disabled]
 
 .service-block-three
 {
-  padding-top: 0;
+  padding-top: 20px;
+  margin-top: 0;
 }
 .testimonials-section
 {
   background-color: #FFF;
+  padding-top: 20px !important;
 }
 
 .testimonials-five__carousel .tns-controls button,
@@ -26259,7 +26270,7 @@ button[disabled]
 }
 
 .map-section {
-  padding-bottom: 20px;
+  padding-bottom: 20px !important;
 }
 
 h2.curve-right:after
@@ -26267,7 +26278,36 @@ h2.curve-right:after
   height: 0;
 }
 
-}  
+
+
+.testimonials-carousel-two
+{
+  max-height: 500px;
+  margin-bottom: 50px;
+}
+
+.call-to-section h2, .call-to-section-two h2 {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+.contact-section input, .contact-section textarea
+{
+  height: 46px;
+}
+
+.main-header .header-upper .logo-box .logo img
+{
+  max-height: 44px;
+}
+
+.gallery-section-two
+
+{
+  padding-top: 20px;
+}
+}
+
 
 
 .testimonials-five .auto-container, .map-section .auto-container, .services-section-three .auto-container
