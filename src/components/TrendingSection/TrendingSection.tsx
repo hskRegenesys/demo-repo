@@ -18,7 +18,7 @@ const settings = {
   items: 3,
   slideBy: "page",
   autoplay: true,
-  loop: false,
+  loop: true,
   gutter: 30,
   nav: false,
   controls: true,
@@ -27,7 +27,7 @@ const settings = {
   mouseDrag: true,
   startIndex: 1,
   fixedWidth: 320,
-};
+}
 
 const { title, details, description } = trendingSection;
 
