@@ -41,7 +41,6 @@ const Home2 = () => {
   return (
     <Layout pageTitle="home">
       <Style />
-
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />

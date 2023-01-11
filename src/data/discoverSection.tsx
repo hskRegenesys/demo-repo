@@ -20,7 +20,8 @@ const discoverSection = {
       phone3: " +27 116 669 212 5000",
       buttonText1: "call  (IND)",
       buttonText2: "call  (SA)",
-      text: "India: +91 1800 212 9950 \n S.Africa: +27 116 669 212 5000",
+      text: "India: +91 1800 212 9950",
+      text1: "S.Africa: +27 116 669 212 5000",
     },
   ],
   discovers3: [

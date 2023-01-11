@@ -53,6 +53,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
               phone2,
               phone3,
               text,
+              text1,
             }) => (
               <Col key={id} lg={4} md={12} sm={12} className="discover-block">
                 <div className="inner-box">
@@ -62,7 +63,8 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                   <div className="cap-box animated fadeInUp">
                     <div className="cap-inner">
                       <h5>{title}</h5>
-                      <p>{text}</p>
+                      <p className="mb-0">{text}</p>
+                      <p className="contact-equal-spacing">{text1}</p>
                       <a
                         className="theme-btn btn-style-four mr-2"
                         href={`tel:${phone2} `}
@@ -99,7 +101,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                   <div className="cap-box animated fadeInUp">
                     <div className="cap-inner">
                       <h5>{title}</h5>
-                      <p>{text}</p>
+                      <p className="contact-equal-spacing2">{text}</p>
 
                       <a
                         className="theme-btn btn-style-four mr-2"
