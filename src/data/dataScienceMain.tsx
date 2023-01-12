@@ -40,6 +40,6 @@ export const dataScienceMain = [
 export const dataScienceText = {
   title: "Data Science",
   pagedesc:
-    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advance and applied. Learn these aspects of Digital Marketing and its real-world use case.",
+    "Upskill yourself with a course in Data Science. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };

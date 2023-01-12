@@ -105,12 +105,32 @@ const HeaderOne = ({
     allCourses();
   }, []);
 
-  return (
-    <header
-      className={`main-header${
-        scrollTop ? " fixed-header" : ""
-      } ${headerStyle}`}
-    >
+
+
+
+
+  const [scroll, setScroll] = useState(false);
+  const checkScroll = () => {
+      if (window.scrollY > 38) {
+          setScroll(true);
+      } else {
+          setScroll(false);
+      }
+  };
+  
+  useEffect(() => {
+      window.addEventListener("scroll", checkScroll);
+      return () => {
+          window.removeEventListener("scroll", checkScroll);
+      };
+  }, []);
+  
+  
+    return (
+      <header
+        className={`main-header ${scroll ? "fixed-header" : ""} ${headerStyle}`}
+      >
+  
       {topBar && (
         <div className="topbar-four">
           <div className="auto-container">

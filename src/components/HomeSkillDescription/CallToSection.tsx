@@ -17,8 +17,7 @@ const CallToSection = ({ className = "", container = true }) => {
             <div className="row h-100">
               <div className="col-md-8 align-self-start">
               
-                <h2><i className='call-to-action-arrow'></i> Revolutionise your career with future{container ? <br /> : ""}
-                  ready skills 
+                <h2><i className='call-to-action-arrow'></i> Revolutionise your career with future ready skills 
                 </h2>
               </div>
 

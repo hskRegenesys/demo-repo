@@ -15,7 +15,7 @@ const settings = {
   navPosition: "bottom",
   mouseDrag: true,
   items: 1,
-  autoplay: true,
+  autoplay: false,
   autoHeight: true,
   controls: false,
   gutter: 0,

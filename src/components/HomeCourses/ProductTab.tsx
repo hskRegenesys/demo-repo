@@ -120,8 +120,8 @@ const ProductTab = ({ courses = [], current }: any) => {
                               </>
                             ))}
                           </li>
-                          <li>Internation certification </li>
-                          <li>Capstone projects </li>
+                          <li>Internation Certification </li>
+                          <li>Capstone Projects </li>
                         </ul>
                       </div>
                       {batchInfo(batches)?.map((item: any) => (

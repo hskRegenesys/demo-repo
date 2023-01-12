@@ -26,8 +26,8 @@ const settings = {
   controlsContainer: ".tns-controls1",
   mouseDrag: true,
   startIndex: 1,
-  fixedWidth: 320,
-};
+  fixedWidth: 290,
+}
 
 const { title, details, description } = trendingSection;
 
@@ -125,7 +125,11 @@ const TrendingSection = () => {
 
                           <div className="cat">
                             <ul className="about-seven__list list-unstyled">
+<<<<<<< HEAD
                               <li>{courseMode.name} classes</li>
+=======
+                              <li>{courseMode.name} Classes</li>
+>>>>>>> dfa12ffb7d3cda59c9e0d1e0ed44772932c739e7
                               <li>
                                 {batchInfo(batches)?.map((item: any) => (
                                   <>

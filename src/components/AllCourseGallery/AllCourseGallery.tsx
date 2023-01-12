@@ -11,48 +11,6 @@ import { useRouter } from "next/router";
 import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
 import { batchInfo } from "../config/helper";
 
-const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
-  ssr: false,
-});
-
-const settings = {
-  container: ".my-slider2",
-  items: 1.2,
-  gutter: 20,
-  responsive: {
-    475: {
-      slideBy: "page",
-    },
-    600: {
-      items: 2,
-      gutter: 30,
-    },
-    992: {
-      items: 3,
-      gutter: 30,
-    },
-    1200: {
-      items: 4,
-      gutter: 30,
-      disable: true,
-      mode: "gallery",
-      axis: "horizontal",
-    },
-    1500: {
-      gutter: 30,
-    },
-    1600: {
-      gutter: 30,
-    },
-  },
-  autoplay: true,
-  loop: true,
-  nav: false,
-  controls: true,
-  autoplayButtonOutput: false,
-  controlsContainer: ".tns-controls5",
-};
-
 const handleSearch = (e: any) => {
   e.preventDefault();
   const formData = new FormData(e.target);
@@ -173,7 +131,7 @@ const AllCourseGallery = () => {
       <section className="all-course-filter">
         <div className="FluidSection">
           <Row>
-            <Col sm={12} md={3} lg={3} className="filter-section">
+            <Col sm={12} md={12} lg={3} className="filter-section">
               <div className="shop-sidebar__single">
                 <h5>Filter</h5>
                 <h6 className="mt-5">Find Course</h6>
@@ -221,20 +179,17 @@ const AllCourseGallery = () => {
               </div>
             </Col>
 
-            <Col sm={12} md={9} lg={9}>
-              <Row>
-                <TinySlider
-                  options={{
-                    ...settings,
-                  }}
-                  ref={listRef}
-                >
+            <Col sm={12} md={12} lg={9}>
+              <Row>     
+           
                   {courseData?.map(
                     ({ id, name, courseMode, batches, code }: any) => (
                       <Col
                         ref={listRef}
                         key={id}
-                        className="animated testi-block gallery-item"
+                        lg={4}  
+                        md={6}  
+                        className="gallery-item"                     
                       >
                         <div
                           className="inner-box"
@@ -284,17 +239,23 @@ const AllCourseGallery = () => {
                         </div>
                       </Col>
                     )
-                  )}
-                </TinySlider>
+                  )}              
 
-                <div className="tns-controls5 text-center">
+                <div className="tns-controls5 desktop-hide text-center">
                   <button className="tns-prev">
                     <span className="icon fa fa-angle-left"></span>
                   </button>
                   <button className="tns-next">
                     <span className="icon fas fa-angle-right"></span>
                   </button>
-                </div>
+                </div>     
+              </Row>    
+
+
+                    
+                     
+
+        
 
                 {/* <Pagination className="d-flex justify-content-center mt-3">
                   <Pagination.Prev />
@@ -303,7 +264,6 @@ const AllCourseGallery = () => {
 
                   <Pagination.Next />
                 </Pagination> */}
-              </Row>
             </Col>
           </Row>
         </div>
