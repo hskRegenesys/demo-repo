@@ -38,14 +38,13 @@ const settings = {
   lazyload: true,
   navPosition: false,
   mouseDrag: true,
-  items: 1,
+  items: 2,
+  gutter: 30,
   controls: true,
   autoplayButtonOutput: false,
   nav: false,
   controlsContainer: ".tns-controls2",
   autoplay: true,
-  autoHeight: true,
-  gutter: 0,
   autoplayButton: false,
   
 };

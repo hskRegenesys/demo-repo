@@ -19,7 +19,7 @@ const HomeBanner = ({ className = "" }) => {
       <div className="auto-container">
         <Row className="row clearfix">
 
-          <Col lg={6} md={12} sm={12} className="right-col">
+          <Col lg={6} md={6} sm={12} className="right-col">
             <div className="inner">
               <div className="sec-title">
                 <h1>
@@ -31,7 +31,7 @@ const HomeBanner = ({ className = "" }) => {
             </div>
           </Col>
 
-          <Col lg={6} md={12} sm={12} className="left-col">
+          <Col lg={6} md={6} sm={12} className="left-col">
             <div className="inner animated fadeInLeft">
               <div className="image-box">
                 <Image src={image} alt="" />

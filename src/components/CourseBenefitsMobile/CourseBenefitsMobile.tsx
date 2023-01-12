@@ -10,7 +10,7 @@ const settings = {
   container: ".my-slider2",
   items: 1,
   slideBy: "page",
-  autoplay: true,
+  autoplay: false,
   loop: true,
   nav: false,
   controls: true,

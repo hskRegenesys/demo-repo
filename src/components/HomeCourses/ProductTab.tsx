@@ -116,12 +116,12 @@ const ProductTab = ({ courses = [], current }: any) => {
                             {batchInfo(batches)?.map((item: any) => (
                               <>
                                 {getWeeksDiff(item.start_date, item.end_date)}
-                                &nbsp;Week
+                                &nbsp;Weeks
                               </>
                             ))}
                           </li>
-                          <li>Internation certification </li>
-                          <li>Capstone projects </li>
+                          <li>Internation Certification </li>
+                          <li>Capstone Projects </li>
                         </ul>
                       </div>
                       {batchInfo(batches)?.map((item: any) => (

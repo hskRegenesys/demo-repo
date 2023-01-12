@@ -127,7 +127,7 @@ const AllCourseGallery = () => {
       <section className="all-course-filter">
         <div className="FluidSection">
           <Row>
-            <Col sm={12} md={3} lg={3} className="filter-section">
+            <Col sm={12} md={12} lg={3} className="filter-section">
               <div className="shop-sidebar__single">
                 <h5>Filter</h5>
                 <h6 className="mt-5">Find Course</h6>
@@ -175,7 +175,7 @@ const AllCourseGallery = () => {
               </div>
             </Col>
 
-            <Col sm={12} md={9} lg={9}>
+            <Col sm={12} md={12} lg={9}>
               <Row>     
            
                   {courseData?.map(
@@ -184,6 +184,7 @@ const AllCourseGallery = () => {
                         ref={listRef}
                         key={id}
                         lg={4}  
+                        md={6}  
                         className="gallery-item"                     
                       >
                         <div
