@@ -5,14 +5,21 @@ import Link from "next/link";
 import { Col, Image, Modal, Row } from "react-bootstrap";
 import { useRouter } from "next/router";
 import ModalPopup from "../Modal/ModalPopup";
-import { indiaCountryId, nigeriaCountryId, southAfricaCountryId } from "../config/constant";
+import {
+  indiaCountryId,
+  nigeriaCountryId,
+  ukCountryId,
+  kenyaCountryId,
+  southAfricaCountryId,
+} from "../config/constant";
 
 const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   const {
-    falgsa,
+    flagsa,
     flagnig,
     flagind,
     flagus,
+    flagken,
     title,
     price,
     certifiedText1,
@@ -97,17 +104,23 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
               <div className="flags">
                 {coursePriceDetails[0]?.coursePrices?.map((item: any) => (
                   <>
-                  <a onClick={() => CoursePriceChange(item.country_id)}>
-                    {item.country_id === southAfricaCountryId && (
-                      <Image src={falgsa} alt="South Africa" />
-                    )}
-                    {item.country_id === indiaCountryId && (
-                      <Image src={flagind} alt="India" />
-                    )}
-                    {item.country_id === nigeriaCountryId && (
-                      <Image src={flagnig} alt="Nigeria" />
-                    )}
-                  </a>
+                    <a onClick={() => CoursePriceChange(item.country_id)}>
+                      {item.country_id === southAfricaCountryId && (
+                        <Image src={flagsa} alt="South Africa" />
+                      )}
+                      {item.country_id === indiaCountryId && (
+                        <Image src={flagind} alt="India" />
+                      )}
+                      {item.country_id === nigeriaCountryId && (
+                        <Image src={flagnig} alt="Nigeria" />
+                      )}
+                      {item.country_id === ukCountryId && (
+                        <Image src={flagus} alt="UK" />
+                      )}
+                      {item.country_id === kenyaCountryId && (
+                        <Image src={flagken} alt="Kenya" />
+                      )}
+                    </a>
                   </>
                 ))}
               </div>

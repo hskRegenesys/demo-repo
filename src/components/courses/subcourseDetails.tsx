@@ -31,8 +31,8 @@ const settings = {
     900: {
       items: 3,
       fixedWidth: 320,
-    }
-  }
+    },
+  },
 };
 
 const SubCourseDetails = ({ page }: any) => {
@@ -82,90 +82,84 @@ const SubCourseDetails = ({ page }: any) => {
     <>
       <section className="all-course-filter">
         <div className="auto-container">
-          <Row>      
-            
-              <TinySlider 
+          <Row>
+            <TinySlider
               options={{
                 ...settings,
               }}
               ref={listRef}
             >
-                {subCourse?.map(
-                  ({ id, name, courseMode, batches, code }: any) => (
-                    <Col 
-                    ref={listRef} key={id} className="testi-block"
-                    >
-                      <div className="gallery-item" >
-                        <div
-                          className="inner-box"
-                          onClick={() => redirectCard(name, code, id)}
-                        >
-                          {/* <div className="icon">
+              {subCourse?.map(
+                ({ id, name, courseMode, batches, code }: any) => (
+                  <Col ref={listRef} key={id} className="testi-block">
+                    <div className="gallery-item">
+                      <div
+                        className="inner-box"
+                        onClick={() => redirectCard(name, code, id)}
+                      >
+                        {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div> */}
-                          <figure className="image">
-                            <Image
-                              src={`/assets/images/gallery/${code}.png`}
-                              alt=""
-                            />
-                          </figure>
-                          <a
-                            className="lightbox-image overlay-box"
-                            data-fancybox="gallery"
-                          ></a>
-                          <div className="cap-box">
-                            <div className="cap-inner">
-                              <div className="title">
-                                <h5>
-                                  <Link
-                                    href={`/${name
-                                      ?.split(" ")
-                                      .join("-")}/${id}`}
-                                  >
-                                    <a>{name}</a>
-                                  </Link>
-                                </h5>
-                              </div>
-
-                              <div className="cat">
-                                <ul className="about-seven__list list-unstyled">
-                                  <li>{courseMode.name}</li>
-                                  <li>
-                                    {batchInfo(batches)?.map((item: any) => (
-                                      <>
-                                        {getWeeksDiff(
-                                          item.start_date,
-                                          item.end_date
-                                        )}
-                                        &nbsp;Week
-                                      </>
-                                    ))}
-                                  </li>
-                                  <li>International certification </li>
-                                  <li>Capstone projects </li>
-                                </ul>
-                              </div>
-                              {batchInfo(batches)?.map((item: any) => (
-                                <div className="batch">{item.description}</div>
-                              ))}
+                        <figure className="image">
+                          <Image
+                            src={`/assets/images/gallery/${code}.png`}
+                            alt=""
+                          />
+                        </figure>
+                        <a
+                          className="lightbox-image overlay-box"
+                          data-fancybox="gallery"
+                        ></a>
+                        <div className="cap-box">
+                          <div className="cap-inner">
+                            <div className="title">
+                              <h5>
+                                <Link
+                                  href={`/${name?.split(" ").join("-")}/${id}`}
+                                >
+                                  <a>{name}</a>
+                                </Link>
+                              </h5>
                             </div>
+
+                            <div className="cat">
+                              <ul className="about-seven__list list-unstyled">
+                                <li>{courseMode.name} classes</li>
+                                <li>
+                                  {batchInfo(batches)?.map((item: any) => (
+                                    <>
+                                      {getWeeksDiff(
+                                        item.start_date,
+                                        item.end_date
+                                      )}
+                                      &nbsp;Weeks
+                                    </>
+                                  ))}
+                                </li>
+                                <li>International certification </li>
+                                <li>Capstone projects </li>
+                              </ul>
+                            </div>
+                            {batchInfo(batches)?.map((item: any) => (
+                              <div className="batch">{item.description}</div>
+                            ))}
                           </div>
                         </div>
                       </div>
-                    </Col>
-                  )                
-                )}
-              </TinySlider>
+                    </div>
+                  </Col>
+                )
+              )}
+            </TinySlider>
 
-              <div className="tns-controls9">
+            <div className="tns-controls9">
               <button className="tns-prev">
                 <span className="icon fa fa-angle-left"></span>
               </button>
               <button className="tns-next">
                 <span className="icon fas fa-angle-right"></span>
               </button>
-            </div>           
-          
+            </div>
           </Row>
         </div>
       </section>

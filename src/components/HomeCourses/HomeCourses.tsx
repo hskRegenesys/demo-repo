@@ -22,7 +22,7 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }: any) => {
     parentCourse = _.filter(courses, (item: any) => item?.parent_id === null);
     parentCourse.unshift({ id: 0, name: "All Courses", code: "all" });
   }
-  console.log("parentCourse", parentCourse);
+
   return (
     <section className={`gallery-section-two ${className}`}>
       <div>{courses.batches}</div>
