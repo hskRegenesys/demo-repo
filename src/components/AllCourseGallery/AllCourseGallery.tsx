@@ -17,6 +17,8 @@ const handleSearch = (e: any) => {
 };
 
 const AllCourseGallery = () => {
+  const pageSize = 10;
+
   const checkBoxData = courseCheckbox;
 
   const router = useRouter();
@@ -35,6 +37,8 @@ const AllCourseGallery = () => {
     checkData(courses);
     setAllData(courses);
     setcourseData(courses);
+
+    console.log("allData---", allData);
   };
 
   useEffect(() => {
@@ -257,8 +261,7 @@ const AllCourseGallery = () => {
                   <Pagination.Prev />
                   <Pagination.Item active>{1}</Pagination.Item>
                   <Pagination.Item>{2}</Pagination.Item>
-                  <Pagination.Item>{3}</Pagination.Item>
-                  <Pagination.Item>{4}</Pagination.Item>
+
                   <Pagination.Next />
                 </Pagination> */}
             </Col>

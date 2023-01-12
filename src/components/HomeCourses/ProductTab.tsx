@@ -111,7 +111,7 @@ const ProductTab = ({ courses = [], current }: any) => {
 
                       <div className="cat">
                         <ul className="about-seven__list list-unstyled">
-                          <li>{courseMode.name}</li>
+                          <li>{courseMode.name} classes</li>
                           <li>
                             {batchInfo(batches)?.map((item: any) => (
                               <>

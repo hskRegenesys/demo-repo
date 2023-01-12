@@ -27,7 +27,7 @@ const settings = {
   mouseDrag: true,
   startIndex: 1,
   fixedWidth: 290,
-}
+};
 
 const { title, details, description } = trendingSection;
 

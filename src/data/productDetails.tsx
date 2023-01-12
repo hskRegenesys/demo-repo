@@ -1,8 +1,9 @@
 export const productDetails = {
-  falgsa: "/assets/images/icons/sa_flag.png",
+  flagsa: "/assets/images/icons/flag_sa.png",
   flagnig: "/assets/images/icons/flag_nigeria.png",
-  flagus: "/assets/images/icons/us_flag.png",
-  flagind: "/assets/images/icons/india_flag.png",
+  flagus: "/assets/images/icons/flag_us.png",
+  flagind: "/assets/images/icons/flag_india.png",
+  flagken: "/assets/images/icons/flag_kenya.png",
   title: "Fees structure & Certfication",
   subTitle: "Get Certified",
   price: 64499,
