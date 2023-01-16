@@ -14,7 +14,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
       <div className="auto-container">
         <Row className="clearfix">
           {discovers?.map(({ id, image, title, buttonText, href, text }) => (
-            <Col key={id} lg={4} md={12} sm={12} className="discover-block">
+            <Col key={id} lg={4} md={4} sm={12} className="discover-block">
               <div className="inner-box">
                 <div className="image-box">
                   <Image src={`/assets/images/icons/${image}`} alt="" />
@@ -55,7 +55,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
               text,
               text1,
             }) => (
-              <Col key={id} lg={4} md={12} sm={12} className="discover-block">
+              <Col key={id} lg={4} md={4} sm={12} className="discover-block">
                 <div className="inner-box">
                   <div className="image-box">
                     <Image src={`/assets/images/icons/${image}`} alt="" />
@@ -93,7 +93,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
               email,
               text,
             }) => (
-              <Col key={id} lg={4} md={12} sm={12} className="discover-block">
+              <Col key={id} lg={4} md={4} sm={12} className="discover-block">
                 <div className="inner-box">
                   <div className="image-box">
                     <Image src={`/assets/images/icons/${image}`} alt="" />

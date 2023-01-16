@@ -38,7 +38,7 @@ const MainFooter = ({ normalPadding = true }) => {
     <footer className={`main-footer${normalPadding ? " normal-padding" : ""}`}>
       <div className="widgets-section">
         <Row className="clearfix">
-          <Col xl={3} lg={4} md={4} sm={12} className="column">
+          <Col xl={3} lg={4} md={12} sm={12} className="column">
             <div className="footer-widget links-widget">
               <div className="widget-content footer-section-yellow">
                 <h6>Quick links</h6>
@@ -67,7 +67,7 @@ const MainFooter = ({ normalPadding = true }) => {
             </div>
           </Col>
 
-          <Col xl={9} lg={8} md={8} sm={12} className="column">
+          <Col xl={9} lg={8} md={12} sm={12} className="column">
             <div className="footer-widget logo-widget">
               <div className="widget-content row">
                 <h5>{text}</h5>

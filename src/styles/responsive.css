@@ -98,6 +98,38 @@
 }
 
 @media only screen and (max-width: 1199px) {
+
+
+  .main-footer .logo-widget, .footer-section-yellow
+  {
+    position: relative;
+  padding: 30px;
+  }
+  .main-footer .links-widget ul li
+  {
+    float: left;
+    margin-right:30px;
+  }
+
+  .main-footer .social-links
+  {
+    float: left;
+  }
+
+  .main-footer .logo-widget h5
+  {
+    margin-bottom: 0;
+  }
+
+  .main-footer .footer-widget.links-widget
+  {
+    position: relative;
+  }
+
+  .main-footer .footer-widget.links-widget
+  {
+    width: 100% !important;
+  }
   .main-header.fixed-header .header-upper .logo-box {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -106,6 +138,7 @@
   .contact-section .form-box
   {
     padding: 40px;
+    margin-bottom: 0;
   }
 
   .sign-arrow-contact img
@@ -377,6 +410,11 @@
 
 @media only screen and (max-width: 991px) {
 
+  .discover-block .inner-box
+  {
+    padding: 10px;
+  }
+
   .testimonials-five-card__text
   {
     max-width: 500px;
@@ -446,14 +484,21 @@
   .gallery-section,
   .news-section,
   .get-quote-section,
-  .discover-section,
-  .features-section-two .content-container,
   .about-section-two,
   .sponsors-section-two,
   .sidebar-page-container {
     padding: 90px 0px 60px;
   }
+  .discover-section,
+  .features-section-two .content-container
+  {
+    padding: 30px 0;
+  }
 
+  .features-section-two
+  {
+    height: auto;
+  }
   .live-section,
   .services-section-two,
   .gallery-section-two,
@@ -521,6 +566,7 @@
 
   .call-to-section .inner {
     padding: 30px;
+    margin: 0 0 50px;
   }
 
   .agency-section,
