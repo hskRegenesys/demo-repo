@@ -22,7 +22,7 @@ const settings = {
   controls: true,
   autoplayButtonOutput: false,
   controlsContainer: ".tns-controls9",
-  fixedWidth: 290,
+  fixedWidth: 320,
   mouseDrag: true,
 };
 

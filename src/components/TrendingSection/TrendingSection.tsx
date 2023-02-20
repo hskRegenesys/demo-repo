@@ -26,7 +26,7 @@ const settings = {
   controlsContainer: ".tns-controls1",
   mouseDrag: true,
   startIndex: 1,
-  fixedWidth: 290,
+  fixedWidth: 320,
 };
 
 const { title, details, description } = trendingSection;

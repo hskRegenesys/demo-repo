@@ -3987,7 +3987,7 @@ tns-controls-tools {
   padding: 20px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  min-height: 420px;
+  min-height: 440px;
   cursor: pointer;
 }
 
@@ -15937,6 +15937,7 @@ h2.curve-right:after {
   font-size: 14px;
   color: #000;
   font-family: Raleway-semibold;
+  max-height: 24px;
 }
 
 /* Funfact six */
@@ -19726,7 +19727,7 @@ button[disabled]
 
 .gallery-item .inner-box
 {
- min-height: 420px;
+ min-height: 440px;
 }
 .about-seven__list
 {
