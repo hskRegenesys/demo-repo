@@ -8423,7 +8423,7 @@ featured-section .right-col .sec-title h2 {
 .features-section-two {
   padding: 257px 0px 90px;
   background-color: #c3ead8;
-  height: 800px;
+  height: 800px !important;
   position: relative;
   margin-top: -257px;
   width: 100%;
@@ -18787,6 +18787,11 @@ input.PhoneInputInput {
   .reasons__secFour {
     margin-bottom: 30px;
   }
+  .featured-section .left-col
+  {
+   max-width: 100%  !important;
+   width: 100% !important;
+  }
 
   .featured-section .left-col .inner {
     max-width: 320px;
@@ -18912,7 +18917,7 @@ input.PhoneInputInput {
     padding: 30px !important;
     border-radius: 0;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto !important;
     border-radius: 15px;
     height: auto;
   }
@@ -18936,7 +18941,7 @@ input.PhoneInputInput {
   }
 
   .main-footer .logo-widget {
-    padding: 15px;
+    padding: 15px !important;
   }
 
   .footer-section-yellow {
@@ -19062,6 +19067,12 @@ input.PhoneInputInput {
   .discover-section {
     background-color: transparent;
     padding: 0 !important;
+    margin-top: 30px;
+  }
+
+  .map-canvas, .map-iframe
+  {
+    height: 250px;
   }
 
   .discover-section .discover-block {
@@ -19781,7 +19792,12 @@ h2.curve-right:after
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 18px;
+}
+
+.team-block
+{
+  height: 84px !important;
 }
 }
 
