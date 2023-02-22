@@ -180,66 +180,64 @@ const AllCourseGallery = () => {
             </Col>
 
             <Col sm={12} md={12} lg={9}>
-              <Row>     
-           
-                  {courseData?.map(
-                    ({ id, name, courseMode, batches, code }: any) => (
-                      <Col
-                        ref={listRef}
-                        key={id}
-                        lg={4}  
-                        md={6}  
-                        className="gallery-item"                     
+              <Row>
+                {courseData?.map(
+                  ({ id, name, courseMode, batches, code }: any) => (
+                    <Col
+                      ref={listRef}
+                      key={id}
+                      lg={4}
+                      md={6}
+                      className="gallery-item"
+                    >
+                      <div
+                        className="inner-box"
+                        onClick={() => redirectCard(name, code, id)}
                       >
-                        <div
-                          className="inner-box"
-                          onClick={() => redirectCard(name, code, id)}
-                        >
-                          <figure className="image">
-                            <Image
-                              src={`/assets/images/gallery/${code}.png`}
-                              alt=""
-                            />
-                          </figure>
-                          <a
-                            className="lightbox-image overlay-box"
-                            data-fancybox="gallery"
-                          ></a>
-                          <div className="cap-box">
-                            <div className="cap-inner">
-                              <div className="title">
-                                <h5>
-                                  <a>{name}</a>
-                                </h5>
-                              </div>
+                        <figure className="image">
+                          <Image
+                            src={`/assets/images/gallery/${code}.png`}
+                            alt=""
+                          />
+                        </figure>
+                        <a
+                          className="lightbox-image overlay-box"
+                          data-fancybox="gallery"
+                        ></a>
+                        <div className="cap-box">
+                          <div className="cap-inner">
+                            <div className="title">
+                              <h5>
+                                <a>{name}</a>
+                              </h5>
+                            </div>
 
-                              <div className="cat">
-                                <ul className="about-seven__list list-unstyled">
-                                  <li>{courseMode.name} classes</li>
-                                  <li>
-                                    {batchInfo(batches)?.map((item: any) => (
-                                      <>
-                                        {getWeeksDiff(
-                                          item.start_date,
-                                          item.end_date
-                                        )}
-                                        &nbsp;Weeks
-                                      </>
-                                    ))}
-                                  </li>
-                                  <li>International certification </li>
-                                  <li>Capstone projects </li>
-                                </ul>
-                              </div>
-                              {batchInfo(batches)?.map((item: any) => (
-                                <div className="batch">{item.description}</div>
-                              ))}
+                            <div className="cat">
+                              <ul className="about-seven__list list-unstyled">
+                                <li>{courseMode.name} classes</li>
+                                <li>
+                                  <>
+                                    {getWeeksDiff(
+                                      batchInfo(batches)?.start_date,
+                                      batchInfo(batches)?.end_date
+                                    )}
+                                    &nbsp;Weeks
+                                  </>
+                                </li>
+                                <li>International certification </li>
+                                <li>Capstone projects </li>
+                              </ul>
+                            </div>
+
+                            <div className="batch">
+                              {batchInfo(batches)?.description}
                             </div>
                           </div>
                         </div>
-                      </Col>
-                    )
-                  )}              
+                      </div>
+                    </Col>
+                  )
+                )}
 
                 <div className="tns-controls5 desktop-hide text-center">
                   <button className="tns-prev">
@@ -248,16 +246,10 @@ const AllCourseGallery = () => {
                   <button className="tns-next">
                     <span className="icon fas fa-angle-right"></span>
                   </button>
-                </div>     
-              </Row>    
+                </div>
+              </Row>
 
-
-                    
-                     
-
-        
-
-                {/* <Pagination className="d-flex justify-content-center mt-3">
+              {/* <Pagination className="d-flex justify-content-center mt-3">
                   <Pagination.Prev />
                   <Pagination.Item active>{1}</Pagination.Item>
                   <Pagination.Item>{2}</Pagination.Item>

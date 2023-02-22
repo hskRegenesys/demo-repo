@@ -16,7 +16,14 @@ export function downloadFromBlob(blob, fileName) {
 export function batchInfo(batches) {
   const filterBatch = _.filter(
     batches,
-    (item) => new Date() >= new Date(item?.start_date)
+    (item) => new Date() <= new Date(item?.end_date)
   );
-  return filterBatch;
+  if (filterBatch.length > 1) {
+    return filterBatch?.reduce((accu, curr) => {
+      accu.start_date > curr.start_date;
+      return accu;
+    });
+  } else {
+    return filterBatch[0];
+  }
 }
