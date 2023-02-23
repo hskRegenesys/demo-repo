@@ -6,6 +6,8 @@
   font-size: 100%;
   line-height: inherit;
   box-sizing: border-box;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 /***
@@ -13457,6 +13459,16 @@ featured-section .right-col .sec-title h2 {
 .flags {
   display: flex;
   margin: 20px 0 60px;
+}
+.flag-shadow{
+  border: 4px solid rgb(32 135 83/ 33%);
+  box-shadow:
+  1px 2px 3px rgba(0,0,0,.5),
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072)
+;
 }
 
 .reasons__secOne {
