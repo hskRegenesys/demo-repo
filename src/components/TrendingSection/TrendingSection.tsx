@@ -127,23 +127,19 @@ const TrendingSection = () => {
                             <ul className="about-seven__list list-unstyled">
                               <li>{courseMode.name} Classes</li>
                               <li>
-                                {batchInfo(batches)?.map((item: any) => (
-                                  <>
-                                    {getWeeksDiff(
-                                      item.start_date,
-                                      item.end_date
-                                    )}
-                                    &nbsp;Weeks
-                                  </>
-                                ))}
+                                {getWeeksDiff(
+                                  batchInfo(batches)?.start_date,
+                                  batchInfo(batches)?.end_date
+                                )}
+                                &nbsp;Weeks
                               </li>
                               <li>International certification </li>
                               <li>Capstone projects </li>
                             </ul>
                           </div>
-                          {batchInfo(batches)?.map((item: any) => (
-                            <div className="batch">{item.description}</div>
-                          ))}
+                          <div className="batch">
+                            {batchInfo(batches)?.description}
+                          </div>
                         </div>
                       </div>
                     </div>
