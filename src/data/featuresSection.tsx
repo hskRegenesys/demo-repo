@@ -43,8 +43,8 @@ export const featureSix = {
 };
 
 export const featureSeven = {
-  title: "Meet our faculties",
-  desc: "Revolutionise your career with future ready skills",
+  title: "Meet our staff",
+  desc: "Revolutionise your career with future-ready skills",
   features: [
     {
       id: 1,

@@ -34,7 +34,7 @@ export const funFactSix = [
     id: 1,
     image: "assets/images/icons/academic.png",
     count: 200000,
-    text: "Alumini",
+    text: "Alumni",
   },
   {
     id: 2,

@@ -43,7 +43,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   };
   useEffect(() => {
     if (coursePriceDetails?.length) {
-      CoursePriceChange(2);
+      CoursePriceChange(1);
     }
   }, [coursePriceDetails]);
   useEffect(() => {

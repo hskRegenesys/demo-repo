@@ -8,10 +8,10 @@ const WhyChooseUs = () => {
       <div className="auto-container">
         <div className="sec-title centered">
           <h2 className="with-curve-center title-width mx-auto">
-            Why Choose Digital Regenesys
+            Why Choose Digital Regenesys ?
           </h2>
           <h6 className="desc">
-            In a one to one setting, a tutor is able to focus on the individual
+            In a one-on-one setting, a tutor is able to focus on the individual
             learner's needs
           </h6>
         </div>

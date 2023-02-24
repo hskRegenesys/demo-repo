@@ -81,7 +81,7 @@ export const sponsorEight = [
 export const aboutUsDescriptionData = {
   title:
     "We’re empowering students Upskilling digital courses, educate, and grow.",
-  pagedesc: "Revolutionise your career with future ready skills",
+  pagedesc: "Revolutionise your career with future-ready skills",
   highlight: "Know who we are",
   text1:
     "Digital Regenesys is a Cutting-edge digital learning platform introduced by the Regenesys Business School, a global business school with state-of-the-art campuses in Johannesburg, Mumbai, and Lagos.",
@@ -92,7 +92,7 @@ export const aboutUsDescriptionData = {
 
 export const allCourse = {
   title: "Get Certified, Get Ahead with Our Programs",
-  pagedesc: "Revolutionise your career with future ready skills",
+  pagedesc: "Revolutionise your career with future-ready skills",
   highlight: "Know who we are",
   text1:
     "Digital Regenesys is a Cutting-edge digital learning platform introduced by the Regenesys Business School, a global business school with state-of-the-art campuses in Johannesburg, Mumbai, and Lagos.",

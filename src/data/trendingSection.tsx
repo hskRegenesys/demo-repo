@@ -1,6 +1,6 @@
 const trendingSection = {
-  title: "Our trending programs",
-  description: "Revolutionise your career with future ready skills",
+  title: "Our trending programmes ",
+  description: "Revolutionize your career with future-ready skills",
   details: [
     {
       id: 1,
@@ -27,7 +27,7 @@ const trendingSection = {
     {
       id: 3,
       image: "7.jpg",
-      name: "Cyber Security",
+      name: "Cybersecurity",
       tagline: [
         "Live Class ",
         "8 Weeks ",
@@ -82,7 +82,7 @@ const trendingSection = {
     {
       id: 8,
       image: "7.jpg",
-      name: "Cyber Security",
+      name: "Cybersecurity",
       tagline: [
         "Live Class ",
         "8 Weeks ",
