@@ -39,7 +39,6 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
-    console.log("courseListResponse ======>", courseListResponse)
     setcoursePrice(courseListResponse);
   };
   useEffect(() => {
