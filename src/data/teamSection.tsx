@@ -46,7 +46,7 @@ const teamSection = {
     },
     {
       id: 3,
-      name: "Cyber Security",
+      name: "Cybersecurity",
       href: "/Cybersecurity/29",
     },   
     {

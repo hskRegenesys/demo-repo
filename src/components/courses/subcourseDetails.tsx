@@ -76,7 +76,7 @@ const SubCourseDetails = ({ page }: any) => {
         <div className="auto-container desktop-hide">
           <div className="sec-title">
             <h2>Explore Our Courses</h2>
-            <h6 className="desc">Facilitator led courses</h6>
+            <h6 className="desc">Facilitator-led courses</h6>
           </div>
         </div>
         {subCourse?.length && (

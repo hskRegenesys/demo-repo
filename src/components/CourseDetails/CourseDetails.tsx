@@ -24,7 +24,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                     </h2>
                   </div>
                   <section className="product-description desktop-hide p-0">
-                  <h3 className="product-description__title">Revolutionise your career with future ready skills.</h3>
+                  <h3 className="product-description__title">Revolutionise your career with future-ready skills.</h3>
                   </section>
                   
                   <Col xs={12} className="process-one__image__column desktop-hide">

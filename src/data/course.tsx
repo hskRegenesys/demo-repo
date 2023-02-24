@@ -40,7 +40,7 @@ export const digitalMarketingMain = [
 export const digitalMarketingText = {
   title: "Digital Marketing",
   pagedesc:
-    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advance and applied. Learn these aspects of Digital Marketing and its real-world use case.",
+    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advance and applied. Learn these aspects of Digital Marketing and its real-world use.",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
 
@@ -60,7 +60,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Project Management",
+        title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
           "10 Weeks Course",
@@ -71,7 +71,7 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
         "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
     },
@@ -83,7 +83,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -104,8 +104,8 @@ export const courseData = {
     ],
 
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -119,7 +119,7 @@ export const courseData = {
           image: "James_forson.jpeg",
           title: "James Forson",
           text: "James Forson is known for his excellent work in Project Management. James has pursued B Soc Sc (Hons) from UCT and MBA from UCT. James is the Chief Operating Officer at Regenesys Business School.",
-          designation: "Vice President: Strategic Relations",
+          designation: "BSocSc (Hons)",
         },
       ],
     },
@@ -340,8 +340,8 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Basic Cyber Security",
-        text: "Upskill yourself with a course in Cyber Security Program, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+        title: "Certification Programme in Basic Cybersecurity",
+        text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -351,9 +351,9 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Cyber Security Program, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+        "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -363,7 +363,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -394,8 +394,8 @@ export const courseData = {
       "./cs/cybersecurity-tools-15.png",
     ],
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -649,9 +649,9 @@ export const courseData = {
       title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Cyber Security certificate",
+      certifiedTitle1: "Earn Your Cybersecurity certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Cyber Security career.",
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Cybersecurity career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -672,7 +672,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Basic Basic Data Science",
+        title: "Certification Programme in Basic Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
         lists: [
           "10 Weeks Course",
@@ -683,7 +683,7 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
         "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
     },
@@ -695,7 +695,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -723,8 +723,8 @@ export const courseData = {
       "./ds/tools_covered12.png",
     ],
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -737,14 +737,14 @@ export const courseData = {
           id: 2,
           image: "dr_nilay.jpg",
           title: "Dr. Nilay Karade ",
-          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "A highly regarded faculty and the head of academics and facilitator, Dr. Shilpa has done wonders in her whooping teaching career of 20+ years. She has managed to train and teach more than 2000+ students who are now placed in several different global MNC's and are recognized as the leaders of the corporate world.",
+          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -812,7 +812,7 @@ export const courseData = {
               "Python data structures",
               "Python date & time",
               "Operators in Python",
-              "Program flow control statements",
+              "Programme flow control statements",
               "Python functions and modules",
               "File handling in Python",
               "Exception handling",
@@ -1044,8 +1044,8 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Advanced Data Science",
-        text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now.",
+        title: "Certification Programme in Advanced Data Science",
+        text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
           "11 Weeks",
           "Live Classes",
@@ -1055,9 +1055,9 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now.",
+        "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -1067,7 +1067,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -1095,8 +1095,8 @@ export const courseData = {
       "./ds/tools_covered12.png",
     ],
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -1109,14 +1109,14 @@ export const courseData = {
           id: 2,
           image: "dr_nilay.jpg",
           title: "Dr. Nilay Karade ",
-          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "A highly regarded faculty and the head of academics and facilitator, Dr. Shilpa has done wonders in her whooping teaching career of 20+ years. She has managed to train and teach more than 2000+ students who are now placed in several different global MNC's and are recognized as the leaders of the corporate world.",
+          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -1377,7 +1377,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Applied Data Science",
+        title: "Certification Programme in Applied Data Science",
         text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
           "9 Weeks",
@@ -1388,7 +1388,7 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
         "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
     },
@@ -1400,7 +1400,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -1428,8 +1428,8 @@ export const courseData = {
       "./ds/tools_covered12.png",
     ],
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -1442,14 +1442,14 @@ export const courseData = {
           id: 2,
           image: "dr_nilay.jpg",
           title: "Dr. Nilay Karade ",
-          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "A highly regarded faculty and the head of academics and facilitator, Dr. Shilpa has done wonders in her whooping teaching career of 20+ years. She has managed to train and teach more than 2000+ students who are now placed in several different global MNC's and are recognized as the leaders of the corporate world.",
+          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -1666,7 +1666,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Basic Digital Marketing",
+        title: "Certification Programme in Basic Digital Marketing",
         text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
@@ -1677,7 +1677,7 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
         "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
     },
@@ -1689,7 +1689,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -1721,8 +1721,8 @@ export const courseData = {
       "./dm/digital_marketing_tools16.png",
     ],
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -1950,7 +1950,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Advanced Digital Marketing",
+        title: "Certification Programme in Advanced Digital Marketing",
         text: "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
@@ -1961,7 +1961,7 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
         "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
     },
@@ -1973,7 +1973,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -2000,8 +2000,8 @@ export const courseData = {
       "5.png",
     ],
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -2233,7 +2233,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Program in Applied Digital Marketing",
+        title: "Certification Programme in Applied Digital Marketing",
         text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
@@ -2244,7 +2244,7 @@ export const courseData = {
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future ready skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
         "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
     },
@@ -2256,7 +2256,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
       subTitle3: "Live sessions",
       desc3:
@@ -2283,8 +2283,8 @@ export const courseData = {
       "5.png",
     ],
     featureSeven: {
-      title: "Meet our faculties",
-      desc: "Revolutionise your career with future ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,

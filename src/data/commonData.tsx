@@ -12,7 +12,7 @@ const Data = {
       login: "Login",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
-      Cybersecurity: "Cyber Security Course Online | Digital Regenesys",
+      Cybersecurity: "Cybersecurity Course Online | Digital Regenesys",
       "Digital-Marketing":
         "Digital Marketing Course Online | Digital Regenesys",
       "Basic-Digital-Marketing":
@@ -36,7 +36,7 @@ const Data = {
         "Investment, Trading, Personal Finance Course | Digital Regenesys",
     },
     keywords: {
-      home: "Digital Regenesys, digital skills, digital marketing course, data science course, project management course, cyber security courses, online courses",
+      home: "Digital Regenesys, digital skills, digital marketing course, data science course, project management course, Cybersecurity courses, online courses",
       about: "About",
       contact: "Contact Us",
       privacyPolicy: "Privacy Policy",
@@ -48,7 +48,7 @@ const Data = {
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
       Cybersecurity:
-        "cyber security, cyber security courses, cyber security south africa, cyber security courses in south africa, cyber security course",
+        "Cybersecurity, Cybersecurity courses, Cybersecurity south africa, Cybersecurity courses in south africa, Cybersecurity course",
       "Digital-Marketing":
         "digital marketing, digital marketing college, digital marketing course, digital marketing schools, digital school of marketing",
 
@@ -86,7 +86,7 @@ const Data = {
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
       Cybersecurity:
-        "High-quality Cyber Security course from Digital Regenesys. Learn all about network threats, vulnerabilities, data security, risk management, and much more.",
+        "High-quality Cybersecurity course from Digital Regenesys. Learn all about network threats, vulnerabilities, data security, risk management, and much more.",
       "Digital-Marketing":
         "Sharpen your digital makreting skills with a Digital Marketing course from Digital Regenesys that helps you gain a competitive edge in the digital economy.",
       "Basic-Digital-Marketing":
