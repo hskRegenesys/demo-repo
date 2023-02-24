@@ -104,9 +104,10 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
               <div className="flags">
                 {coursePriceDetails[0]?.coursePrices?.map((item: any) => (
                   <>
-                    <a onClick={() => CoursePriceChange(item.country_id)}>
+                    <a onClick={() => CoursePriceChange(item.country_id)} >
+                      <div className={item.country_id === priceDetails.country_id ? 'flag-shadow' : ''}>
                       {item.country_id === southAfricaCountryId && (
-                        <Image src={flagsa} alt="South Africa" />
+                        <Image src={flagsa} alt="South Africa"/>
                       )}
                       {item.country_id === indiaCountryId && (
                         <Image src={flagind} alt="India" />
@@ -120,6 +121,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                       {item.country_id === kenyaCountryId && (
                         <Image src={flagken} alt="Kenya" />
                       )}
+                      </div>
                     </a>
                   </>
                 ))}

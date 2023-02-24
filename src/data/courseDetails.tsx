@@ -5,8 +5,8 @@ export const processOne = [
     title: "Certification Programme in Basic Digital Marketing",
     text: "Enroll for this course to advance your career in the most in-demand industries.",
     lists: [
-      "10 weeks course",
-      "Live sessions",
+      "10 Weeks Course",
+      "Live Sessions",
       "Career Counselling",
       "Guaranteed Certification",
     ],

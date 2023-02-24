@@ -9,7 +9,7 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 
 const settings = {
   loop: false,
-  lazyload: true,
+  lazyload: false,
   nav: false,
   mouseDrag: true,
   items: 1,

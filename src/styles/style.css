@@ -6,6 +6,8 @@
   font-size: 100%;
   line-height: inherit;
   box-sizing: border-box;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 /***
@@ -13458,6 +13460,14 @@ featured-section .right-col .sec-title h2 {
   display: flex;
   margin: 20px 0 60px;
 }
+.flag-shadow{
+  border: 2px solid #645400;
+  display: flex;
+  padding: 3px;
+  box-shadow: 3px 3px 0 0 #20a392;
+  transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-color: #FFF;
+}
 
 .reasons__secOne {
   background-color: #dfefd7;
@@ -19280,7 +19290,7 @@ button[disabled]
   }
 
   .reasons-title {
-    margin-top: 50px !important;
+    margin-top: 130px !important;
   }
 
   .reasons-title h2 {
@@ -19319,16 +19329,18 @@ button[disabled]
     box-shadow: 8px 8px 0 0 #ffe55b;
     font-family: 'Raleway-bold';
     color: #000;
-    font-size: 22px;
     border-radius: 25px;
     padding: 0 20px;
     height: 70px;
+    line-height: 24px;
+    font-size: 20px;
   }
   
 
   .reasonsMobile .accordion-item:nth-child(2) .accordion-button {
     background-color: #e7e0eb !important;
     box-shadow: 8px 8px 0 0 #1fa393 !important;
+  
   }
 
   .reasonsMobile .accordion-item:nth-child(3) .accordion-button {
