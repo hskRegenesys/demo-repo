@@ -6,7 +6,7 @@ export const joinReasons = {
 
   subTitle2: "Best-in-class instructors",
   desc2:
-    "Learn : the best-in-class instructors who will help you with every technological concept : scratch",
+    "Learn : the best-in-class instructors who will help you with every technological concept scratch",
 
   subTitle3: "Live sessions",
   desc3:

@@ -13,7 +13,7 @@ const HomeSkillDescription = ({
             <h4>
               Revolutionise your career with
               <br />
-              future ready skills
+              future-ready skills
             </h4>
           </div>
           <p className="para-text">

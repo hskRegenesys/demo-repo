@@ -16,8 +16,8 @@ export const courseCheckbox = [
   //   id: "inline-checkbox4",
   // },
   // {
-  //   label: "Cyber Security",
-  //   name: "Cyber Security",
+  //   label: "Cybersecurity",
+  //   name: "Cybersecurity",
   //   id: "inline-checkbox5",
   // },
 ];

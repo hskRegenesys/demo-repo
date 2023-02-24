@@ -26,7 +26,7 @@ const items = [
   {
     id: 3,
     image: "9.jpg",
-    title: "Cyber Security",
+    title: "Cybersecurity",
     tagline: [
       "Live Class ",
       "8 Weeks ",
@@ -191,7 +191,7 @@ const cyberSecurity = [
   {
     id: 1,
     image: "7.jpg",
-    title: "Cyber Security 1",
+    title: "Cybersecurity 1",
     tagline: [
       "Live Class ",
       "8 Weeks ",
@@ -203,7 +203,7 @@ const cyberSecurity = [
   {
     id: 2,
     image: "8.jpg",
-    title: "Cyber Security 2",
+    title: "Cybersecurity 2",
     tagline: [
       "Live Class ",
       "8 Weeks ",
@@ -215,7 +215,7 @@ const cyberSecurity = [
   {
     id: 3,
     image: "9.jpg",
-    title: "Cyber Security 3",
+    title: "Cybersecurity 3",
     tagline: [
       "Live Class ",
       "8 Weeks ",
@@ -388,7 +388,7 @@ const items2 = [
 
 const gallerySection = {
   title: "Explore Our Courses",
-  describe: "Facilitator led courses",
+  describe: "Facilitator-led courses",
   tabBtns: [
     {
       id: 1,
@@ -410,7 +410,7 @@ const gallerySection = {
     },
     {
       id: 4,
-      name: "Cyber Security",
+      name: "Cybersecurity",
       tab: "p-tab-4",
       count: 10,
     },
@@ -526,7 +526,7 @@ export const gallerySectionOne = {
     },
     {
       id: 4,
-      name: "Cyber Security",
+      name: "Cybersecurity",
       tab: "cyber-security",
     },
     {

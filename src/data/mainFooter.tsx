@@ -20,7 +20,7 @@ export const mainFooter = {
   about2: "The new corporate agency theme",
   about3:
     "We’ve grown our business on a set of \n three building blocks. Enjoy the \n people you work.",
-  text: "Revolutionise your career with future ready skills",
+  text: "Revolutionise your career with future-ready skills",
   address:
     "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
   address2:

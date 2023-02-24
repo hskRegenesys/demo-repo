@@ -2,11 +2,11 @@ export const processOne = [
   {
     id: 1,
     image: "yellow-bg-details-bg.png",  
-    title: "Certification Program in Basic Digital Marketing",
+    title: "Certification Programme in Basic Digital Marketing",
     text: "Enroll for this course to advance your career in the most in-demand industries.",
     lists: [
-      "10 weeks cousrse",
-      "Live Sessions",
+      "10 weeks course",
+      "Live sessions",
       "Career Counselling",
       "Guaranteed Certification",
     ],

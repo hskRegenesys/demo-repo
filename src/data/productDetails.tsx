@@ -23,7 +23,7 @@ export const productDetails = {
 };
 
 export const productDescription = {
-  title: "Revolutionise your career with future ready skills",
+  title: "Revolutionise your career with future-ready skills",
   text1:
     "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
 };
