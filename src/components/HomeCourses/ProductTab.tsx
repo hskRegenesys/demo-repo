@@ -113,20 +113,19 @@ const ProductTab = ({ courses = [], current }: any) => {
                         <ul className="about-seven__list list-unstyled">
                           <li>{courseMode.name} classes</li>
                           <li>
-                            {batchInfo(batches)?.map((item: any) => (
-                              <>
-                                {getWeeksDiff(item.start_date, item.end_date)}
-                                &nbsp;Weeks
-                              </>
-                            ))}
+                            {getWeeksDiff(
+                              batchInfo(batches)?.start_date,
+                              batchInfo(batches)?.end_date
+                            )}
+                            &nbsp;Weeks
                           </li>
                           <li>Internation Certification </li>
                           <li>Capstone Projects </li>
                         </ul>
                       </div>
-                      {batchInfo(batches)?.map((item: any) => (
-                        <div className="batch">{item.description}</div>
-                      ))}
+                      <div className="batch">
+                        {batchInfo(batches)?.description}
+                      </div>
                     </div>
                   </div>
                 </div>

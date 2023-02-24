@@ -11,20 +11,20 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
 
-  const settings = {
-    container: ".sub-courses",
-    items: 3,
-    slideBy: "page",
-    autoplay: true,
-    loop: false,
-    gutter: 30,
-    nav: false,
-    controls: true,
-    autoplayButtonOutput: false,
-    controlsContainer: ".tns-controls9",
-    fixedWidth: 320,
+const settings = {
+  container: ".sub-courses",
+  items: 3,
+  slideBy: "page",
+  autoplay: true,
+  loop: false,
+  gutter: 30,
+  nav: false,
+  controls: true,
+  autoplayButtonOutput: false,
+  controlsContainer: ".tns-controls9",
+  fixedWidth: 320,
     mouseDrag: true,
-  };
+};
 
 const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
@@ -124,25 +124,19 @@ const SubCourseDetails = ({ page }: any) => {
                               <ul className="about-seven__list list-unstyled">
                                 <li>{courseMode.name}</li>
                                 <li>
-                                  {batchInfo(batches)?.map((item: any) => (
-                                    <>
-                                      {getWeeksDiff(
-                                        item.start_date,
-                                        item.end_date
-                                      )}
-                                      &nbsp;Week
-                                    </>
-                                  ))}
+                                  {getWeeksDiff(
+                                    batchInfo(batches)?.start_date,
+                                    batchInfo(batches)?.end_date
+                                  )}
+                                  &nbsp;Week
                                 </li>
                                 <li>International certification </li>
                                 <li>Capstone projects </li>
                               </ul>
                             </div>
-                            {batchInfo(batches)?.map((item: any) => (
-                              <div key={item.description} className="batch">
-                                {item.description}
-                              </div>
-                            ))}
+                            <div className="batch">
+                              {batchInfo(batches)?.description}
+                            </div>
                           </div>
                         </div>
                       </div>
