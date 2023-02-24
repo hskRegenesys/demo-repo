@@ -48,7 +48,7 @@ const DigitalMarketing = () => {
       <PageBanner
         title={router?.query?.course?.toString()}
         parent="All courses"
-        parentHref="/shop"
+        parentHref="/all-course"
       />
       {courseDetails && (
         <>
