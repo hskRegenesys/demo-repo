@@ -39,11 +39,12 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
+    console.log("courseListResponse ======>", courseListResponse)
     setcoursePrice(courseListResponse);
   };
   useEffect(() => {
     if (coursePriceDetails?.length) {
-      CoursePriceChange(2);
+      CoursePriceChange(1);
     }
   }, [coursePriceDetails]);
   useEffect(() => {
