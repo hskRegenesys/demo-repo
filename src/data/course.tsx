@@ -1047,7 +1047,7 @@ export const courseData = {
         title: "Certification Programme in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
-          "11 Weeks",
+          "10 Weeks",
           "Live Classes",
           "Capstone Projects",
           "International Certification",
@@ -1380,7 +1380,7 @@ export const courseData = {
         title: "Certification Programme in Applied Data Science",
         text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
-          "9 Weeks",
+          "10 Weeks",
           "Live Classes",
           "Capstone Projects",
           "International Certification",
@@ -1752,7 +1752,7 @@ export const courseData = {
               "Branding and Consumer Behavior or Psychology",
               "Global marketing opportunities",
               "Types of marketing",
-              "Introduction to Digital Marketing ",
+              // "Introduction to Digital Marketing ",
               "Basics of Digital Marketing World of Web (1.0, 2.0, 3.0.)",
               "Difference between Digitalization and Digitization",
               "Marketing Automation",
