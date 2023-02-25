@@ -5,7 +5,7 @@ const FeesDetails = ({ courseDetails }: any) => {
   return (
     <section className="product-description">
       <div className="auto-container">
-        <h3 className="product-description__title mobile-hide">{title}</h3>
+        <h2 className="product-description__title mobile-hide">{title}</h2>
         <p className="product-description__text mobile-hide">{text1}</p>
       </div>
     </section>

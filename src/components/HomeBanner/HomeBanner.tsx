@@ -22,9 +22,9 @@ const HomeBanner = ({ className = "" }) => {
           <Col lg={6} md={6} sm={12} className="right-col">
             <div className="inner">
               <div className="sec-title">
-                <h1>
+                <h2>
                   {title}
-                </h1>
+                </h2>
                 <FunFactSix />
               </div>
 

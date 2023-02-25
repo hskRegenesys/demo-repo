@@ -19,10 +19,10 @@ const WhyChooseUs = () => {
           {serviceSectionThree?.map(({ id, icon, title, desc }) => (
             <Col key={id} sm={12} md={6} lg={6} className="animated fadeInLeft">
               <div className="service-block-three__single">
-                <div className="icon-box">
+                <h3 className="icon-box">
                   <span className={icon}></span>
                   {title}
-                </div>
+                </h3>
                 <h6>{desc}</h6>
               </div>
             </Col>

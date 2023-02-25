@@ -26,9 +26,9 @@ const AllCourseText = () => {
           <div className="sign-arrow">
             <Image src={imagearrow} alt="" />
           </div>
-          <h3>
+          <h1 className="page-head">
             <TextSplit text={title} />
-          </h3>
+          </h1>
           <h6 className="desc">{pagedesc}</h6>
 
           <Link href="">
