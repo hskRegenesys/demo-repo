@@ -23,7 +23,7 @@ const settings = {
   autoplayButtonOutput: false,
   controlsContainer: ".tns-controls9",
   fixedWidth: 320,
-    mouseDrag: true,
+  mouseDrag: true,
 };
 
 const SubCourseDetails = ({ page }: any) => {
@@ -64,7 +64,7 @@ const SubCourseDetails = ({ page }: any) => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-        msInWeek
+      msInWeek
     );
   }
 
@@ -88,7 +88,7 @@ const SubCourseDetails = ({ page }: any) => {
               ref={listRef}
             >
               {subCourse?.map(
-                ({ id, name, courseMode, batches, code }: any) => (
+                ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
                   <div ref={listRef} key={id} className="testi-block">
                     <div className="gallery-item tns-item">
                       <div
@@ -122,13 +122,9 @@ const SubCourseDetails = ({ page }: any) => {
 
                             <div className="cat">
                               <ul className="about-seven__list list-unstyled">
-                                <li>{courseMode.name}</li>
+                                <li>{courseMode.name} Classes</li>
                                 <li>
-                                  {getWeeksDiff(
-                                    batchInfo(batches)?.start_date,
-                                    batchInfo(batches)?.end_date
-                                  )}
-                                  &nbsp;Week
+                                  {durationInWeeks} Weeks
                                 </li>
                                 <li>International certification </li>
                                 <li>Capstone projects </li>

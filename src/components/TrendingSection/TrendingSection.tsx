@@ -75,8 +75,8 @@ const TrendingSection = () => {
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
-      Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-        msInWeek
+      Math.ceil(new Date(end_date).getTime() - new Date(start_date).getTime()) /
+      msInWeek
     );
   }
   return (
@@ -96,7 +96,7 @@ const TrendingSection = () => {
               ref={listRef}
             >
               {CourseCard?.map(
-                ({ id, name, courseMode, batches, code }: any) => (
+                ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
                   <div ref={listRef} className="gallery-item" key={id}>
                     <div
                       className="inner-box"
@@ -127,11 +127,7 @@ const TrendingSection = () => {
                             <ul className="about-seven__list list-unstyled">
                               <li>{courseMode.name} Classes</li>
                               <li>
-                                {getWeeksDiff(
-                                  batchInfo(batches)?.start_date,
-                                  batchInfo(batches)?.end_date
-                                )}
-                                &nbsp;Weeks
+                                {durationInWeeks} Weeks
                               </li>
                               <li>International certification </li>
                               <li>Capstone projects </li>
