@@ -33,7 +33,7 @@ const ProductTab = ({ courses = [], current }: any) => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-        msInWeek
+      msInWeek
     );
   }
 
@@ -77,7 +77,7 @@ const ProductTab = ({ courses = [], current }: any) => {
       <div className={`p-tab${current === id ? " active-tab" : ""}`}>
         <div className="project-carousel tabFullBox">
           {filterCourses?.map(
-            ({ id, name, courseMode, batches, code }: any) => (
+            ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
               <div ref={listRef} className="gallery-item tab-item" key={id}>
                 <div
                   className="inner-box"
@@ -111,13 +111,9 @@ const ProductTab = ({ courses = [], current }: any) => {
 
                       <div className="cat">
                         <ul className="about-seven__list list-unstyled">
-                          <li>{courseMode.name} classes</li>
+                          <li>{courseMode.name} Classes</li>
                           <li>
-                            {getWeeksDiff(
-                              batchInfo(batches)?.start_date,
-                              batchInfo(batches)?.end_date
-                            )}
-                            &nbsp;Weeks
+                            {durationInWeeks} Weeks
                           </li>
                           <li>Internation Certification </li>
                           <li>Capstone Projects </li>
