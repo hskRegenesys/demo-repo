@@ -58,7 +58,7 @@ const TeamSection = ({ onePage = false }) => {
     <section className="team-section no-padd-top" id="team">
       <div className="auto-container">
         <div className="sec-title">
-          <h2 className="with-curve">{title}</h2>
+          <h3 className="with-curve">{title}</h3>
         </div>
       </div>
       <div className={onePage ? "auto-container" : ""}>

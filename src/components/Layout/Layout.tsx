@@ -40,7 +40,6 @@ const Layout = (props: any) => {
         <link rel="canonical" href={canonicalUrl} />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
-        <meta name="robots" content="index, follow" />
         {process.env.ENV_NAME === "PRODUCTION" && (
           <meta name="robots" content="index, follow" />
         )}

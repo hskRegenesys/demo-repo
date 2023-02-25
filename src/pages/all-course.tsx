@@ -16,7 +16,7 @@ import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 
 const allCourse = () => {
   return (
-    <Layout pageTitle="home">
+    <Layout pageTitle="allCourse">
       <Style />
       <HeaderOne />
       <MobileMenu />
