@@ -1,4 +1,4 @@
-export const canonicalConstants = "http://localhost:3010/";
+export const canonicalConstants = "https://www.digitalregenesys.com";
 
 export const digitalMarkrtingCode = "DM";
 export const dataScienceCode = "DSCI";
