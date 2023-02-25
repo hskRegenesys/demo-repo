@@ -26,7 +26,7 @@ export default featuresSection;
 export const featuresSectionTwo = {
   image:"/assets/images/resource/featured-image-13.jpg",
   title: "Get in touch \n with us",
-  title2: "Everything you need to know about digital regenesis",  
+  title2: "Everything you need to know about Digital regenesys",  
 };
 
 export const featureSix = {
