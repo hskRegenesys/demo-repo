@@ -17,6 +17,7 @@ const settings = {
   slideBy: "page",
   autoplay: true,
   loop: false,
+  lazyload: false,
   gutter: 30,
   nav: false,
   controls: true,

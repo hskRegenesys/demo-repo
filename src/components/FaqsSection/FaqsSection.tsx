@@ -4,6 +4,9 @@ import { Col, Row } from "react-bootstrap";
 const Faqs = (props: any) => {
   const { faqs, defaultCurrent } = props.allFaqs;
   const [current, setCurrent] = useState(defaultCurrent);
+  const handleClick = (id: number) => {
+    current === id ? setCurrent("") : setCurrent(id);
+  };
 
   return (
     <Col lg={12} md={12} sm={12} className="faq-block">
@@ -21,8 +24,10 @@ const Faqs = (props: any) => {
               }`}
             >
               <div
-                onClick={() => setCurrent(id)}
-                className={`acc-btn${current === id ? " active" : ""}`}
+                onClick={() => handleClick(id)}
+                className={`acc-btn${
+                  current === id ? " active" : ""
+                }`}
               >
                 <span className="count">{id}.</span>
                 {title}

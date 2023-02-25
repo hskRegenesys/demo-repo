@@ -6,6 +6,10 @@ const Faqs = (props: any) => {
   const { faqs, defaultCurrent } = allFaqs;
   const [current, setCurrent] = useState(defaultCurrent);
 
+  const handleClick = (id: number) => {
+    current === id ? setCurrent("") : setCurrent(id);
+  };
+
   return (
     <Col lg={12} md={12} sm={12} className="faq-block curriculum">
       <h3 className="text-center">
@@ -23,8 +27,10 @@ const Faqs = (props: any) => {
               }`}
             >
               <div
-                onClick={() => setCurrent(id)}
-                className={`acc-btn${current === id ? " active" : ""}`}
+                onClick={() => handleClick(id)}
+                className={`acc-btn${
+                  current === id ? " active" : ""
+                }`}
               >
                 {/* <span className="count">{id}.</span> */}
                 {title}
@@ -38,7 +44,10 @@ const Faqs = (props: any) => {
                   <div className="text">
                     {lists?.map((text: string, i: number) => (
                       <li key={i}>
-                        <i className="fa fa-check" aria-hidden="true"></i>
+                        <i
+                          className="fa fa-check"
+                          aria-hidden="true"
+                        ></i>
                         {text}
                       </li>
                     ))}
