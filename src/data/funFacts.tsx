@@ -19,4 +19,32 @@
   }
 ];
 
-;
+const funFacts = [
+  {
+    id: 1,
+    title: "Projects Completed",
+    count: 8705,
+  },
+  {
+    id: 2,
+    title: "Active clients",
+    count: 480,
+  },
+  {
+    id: 3,
+    title: "cups of coffee",
+    count: 626,
+  },
+  {
+    id: 4,
+    title: "happy clients",
+    count: 9704,
+  },
+];
+
+export const funFactsOne = {
+ bg :"/assets/images/background/video-bg.png",
+  funFacts,
+};
+
+export default funFacts;
