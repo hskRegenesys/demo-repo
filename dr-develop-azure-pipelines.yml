@@ -17,6 +17,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    set -e
     npm install --force
     npm run build
     mkdir dr-phase-2-ui
