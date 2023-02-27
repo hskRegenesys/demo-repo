@@ -107,7 +107,9 @@ const HeaderOne = ({
               href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
             };
           });
-          data.subItems = filterData;
+          if (filterData) {
+            data.subItems = filterData;
+          }
         });
       }
       return item;

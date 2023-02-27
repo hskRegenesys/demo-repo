@@ -20,13 +20,17 @@ import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
 import { useRouter } from "next/router";
 import { courseService } from "src/services";
 import { brochureDetails, courseData } from "@/data/course";
+import _ from "lodash";
 
 const DigitalMarketing = () => {
   const router = useRouter();
   const courseId = router?.query?.id;
   const [coursePriceDetails, setcoursePrice] = useState<any>([]);
+  const [parentCourse, setParentCourse] = useState<any>([]);
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
+    const parentCourses = await courseService.allParentCourses();
+    setParentCourse(parentCourses);
     setcoursePrice(courseListResponse);
   };
   useEffect(() => {
@@ -38,6 +42,22 @@ const DigitalMarketing = () => {
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
   const brochureName: any = brochureDetails[code];
+  const parentToParentName = () => {
+    let result = "";
+    const filterData = _.find(
+      parentCourse,
+      (item) =>
+        item?.parent_id === null &&
+        item?.mode_id === 1 &&
+        item?.isAddon === false &&
+        item?.id === coursePriceDetails[0]?.parent_id
+    );
+    if (filterData?.name) {
+      result = filterData?.name;
+    }
+    return result;
+  };
+  parentToParentName();
 
   return (
     <Layout pageTitle={router?.query?.course}>
@@ -46,9 +66,11 @@ const DigitalMarketing = () => {
       <MobileMenu />
       <SearchPopup />
       <PageBanner
-        title={router?.query?.course?.toString()}
+        title={router?.query?.course?.toString().replace("-", " ")}
         parent="All courses"
         parentHref="/all-course"
+        parentToParent={parentToParentName()}
+        parentToParentHref={`/${parentToParentName()?.toLowerCase().split(" ").join("-")}`}
       />
       {courseDetails && (
         <>

@@ -23,7 +23,7 @@ const SubItem = (props: any) => {
       <Link href={href}>
         <a href={href}>
           {name} {isNew && <span>new</span>}
-          {subItems?.length && (
+          {!!subItems?.length && (
             <div
               onClick={handleActive}
               className={`dropdown-btn${active ? " open" : ""}`}
