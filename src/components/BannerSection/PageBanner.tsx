@@ -6,6 +6,8 @@ const PageBanner = ({
   page = "",
   parent = "",
   parentHref = "/",
+  parentToParent = "",
+  parentToParentHref = "/",
 }) => {
   return (
     <section className="page-banner">
@@ -23,7 +25,12 @@ const PageBanner = ({
                     <Link href={parentHref}>{parent}</Link>
                   </li>
                 )}
-                <li className="active">{page || title}</li>
+                {parentToParent && (
+                  <li className=" font-capitalized">
+                    <Link href={parentToParentHref}>{parentToParent}</Link>
+                  </li>
+                )}
+                <li className="active font-capitalized">{page || title}</li>
               </ul>
             </div>
           </div>

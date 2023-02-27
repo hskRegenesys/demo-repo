@@ -19825,4 +19825,6 @@ h2.curve-right:after
 .page-head{
   font-size: 3rem;
 }
-
+.font-capitalized{
+  text-transform: capitalize;
+}
