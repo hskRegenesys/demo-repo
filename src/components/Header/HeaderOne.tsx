@@ -56,7 +56,6 @@ const HeaderOne = ({
   const allCourses = async () => {
     const allData = await courseService.allCourses();
     const orderData: any = [];
-
     const filterData = _.filter(
       allData,
 
@@ -97,6 +96,19 @@ const HeaderOne = ({
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
+        item.subNavItems?.map((data: any) => {
+          const filterData = _.filter(
+            allData,
+            (item) => item?.parent_id === data?.id
+          ).map((item) => {
+            return {
+              id: item?.id,
+              name: item?.name,
+              href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+            };
+          });
+          data.subItems = filterData;
+        });
       }
       return item;
     });
