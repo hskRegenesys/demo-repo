@@ -5811,13 +5811,18 @@ tns-controls-tools {
 .service-block-two .inner-box {
   position: relative;
   display: flex;
-  padding: 10px;
+  padding: 20px 15px;
   background: #ffffff;
   border-radius: 0;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   align-items: center;
   border-bottom: 1px solid #000;
+}
+
+.service-block-two .inner-box a{
+  align-items: center;
+  width: 100%;
 }
 
 .service-block-two .inner-box:before {
@@ -5866,20 +5871,21 @@ tns-controls-tools {
   position: relative;
   display: block;
   color: #000000;
-  font-size: 64px;
-  line-height: 1em;
-  margin-bottom: 20px;
+  line-height: 2em;
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  font-family: Raleway-semibold;
+  font-size: 18px;
 }
 
 .service-block-two .inner-box .icon-box span.fab,
 .service-block-two .inner-box .icon-box span.fas {
   font-size: 36px;
   margin-right: 10px;
+  float: left;
 }
 
 .service-block-two .inner-box:hover .icon-box {
@@ -5895,7 +5901,7 @@ tns-controls-tools {
   margin: 0;
 }
 
-.service-block-two .inner-box h5 a {
+.service-block-two .inner-box a {
   color: var(--thm-black);
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -5907,12 +5913,13 @@ tns-controls-tools {
 }
 
 .service-block-two .inner-box:hover h5,
-.service-block-two .inner-box:hover h5 a {
+.service-block-two .inner-box:hover a {
   color: #ffffff;
 }
 
-.service-block-two .inner-box h5 a:hover {
+.service-block-two .inner-box a:hover {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .service-block-two .link-box {
@@ -5921,6 +5928,7 @@ tns-controls-tools {
   width: 30px;
   height: 30px;
   z-index: 1;
+  top: 22px;
 }
 
 .service-block-two .link-box a {
@@ -5930,9 +5938,7 @@ tns-controls-tools {
   color: #000000;
 }
 
-.service-block-two .inner-box:hover a {
-  color: #ffffff;
-}
+
 
 
 
