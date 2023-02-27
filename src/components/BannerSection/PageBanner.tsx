@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import React from "react";
 
@@ -9,7 +8,7 @@ const PageBanner = ({
   parentHref = "/",
 }) => {
   return (
-    <section className="page-banner">   
+    <section className="page-banner">
       <div className="banner-inner">
         <div className="auto-container">
           <div className="inner-container clearfix">

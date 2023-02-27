@@ -51,9 +51,9 @@ const AllCourseGallery = () => {
 
   function redirectCard(name: any, code: any, id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-")}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}`);
     } else {
-      router.push(`/${name?.split(" ").join("-")}/${id}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}/${id}`);
     }
   }
 

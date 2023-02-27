@@ -31,10 +31,10 @@ const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
   const [subCourse, setSubCourse] = useState<any>([]);
   const getData = async () => {
-    setSubCourse([])
+    setSubCourse([]);
     let courseListResponse = await courseService.allCourses();
 
-    if (page === "Data-Science") {
+    if (page === "data-science") {
       const subCourse = _.filter(
         courseListResponse,
         (item) => item.parent_id === 10
@@ -52,9 +52,9 @@ const SubCourseDetails = ({ page }: any) => {
 
   function redirectCard(name: any, code: any, id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-")}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}`);
     } else {
-      router.push(`/${name?.split(" ").join("-")}/${id}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}/${id}`);
     }
   }
 
@@ -65,7 +65,7 @@ const SubCourseDetails = ({ page }: any) => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-      msInWeek
+        msInWeek
     );
   }
 
@@ -89,7 +89,14 @@ const SubCourseDetails = ({ page }: any) => {
               ref={listRef}
             >
               {subCourse?.map(
-                ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
+                ({
+                  id,
+                  name,
+                  courseMode,
+                  batches,
+                  code,
+                  durationInWeeks,
+                }: any) => (
                   <div ref={listRef} key={id} className="testi-block">
                     <div className="gallery-item tns-item">
                       <div
@@ -114,7 +121,10 @@ const SubCourseDetails = ({ page }: any) => {
                             <div className="title">
                               <h5>
                                 <Link
-                                  href={`/${name?.split(" ").join("-")}/${id}`}
+                                  href={`/${name
+                                    ?.split(" ")
+                                    .join("-")
+                                    .toLowerCase()}/${id}`}
                                 >
                                   <a>{name}</a>
                                 </Link>
@@ -124,17 +134,16 @@ const SubCourseDetails = ({ page }: any) => {
                             <div className="cat">
                               <ul className="about-seven__list list-unstyled">
                                 <li>{courseMode.name} Classes</li>
-                                <li>
-                                  {durationInWeeks} Weeks
-                                </li>
+                                <li>{durationInWeeks} Weeks</li>
                                 <li>International certification </li>
                                 <li>Capstone projects </li>
                               </ul>
                             </div>
-                            {code != 'ADDSCI' && code != 'APDSCI' &&
+                            {code != "ADDSCI" && code != "APDSCI" && (
                               <div className="batch">
                                 {batchInfo(batches)?.description}
-                              </div>}
+                              </div>
+                            )}
                           </div>
                         </div>
                       </div>

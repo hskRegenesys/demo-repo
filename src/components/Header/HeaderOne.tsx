@@ -78,13 +78,15 @@ const HeaderOne = ({
                 id: item?.id,
                 name: item?.name,
 
-                href: `/${item?.name?.split(" ").join("-")}`,
+                href: `/${item?.name?.toLowerCase().split(" ").join("-")}`,
               });
             } else {
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
-                href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+                href: `/${item?.name?.toLowerCase().split(" ").join("-")}/${
+                  item?.id
+                }`,
               });
             }
           }
@@ -105,32 +107,26 @@ const HeaderOne = ({
     allCourses();
   }, []);
 
-
-
-
-
   const [scroll, setScroll] = useState(false);
   const checkScroll = () => {
-      if (window.scrollY > 38) {
-          setScroll(true);
-      } else {
-          setScroll(false);
-      }
+    if (window.scrollY > 38) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
   };
-  
+
   useEffect(() => {
-      window.addEventListener("scroll", checkScroll);
-      return () => {
-          window.removeEventListener("scroll", checkScroll);
-      };
+    window.addEventListener("scroll", checkScroll);
+    return () => {
+      window.removeEventListener("scroll", checkScroll);
+    };
   }, []);
-  
-  
-    return (
-      <header
-        className={`main-header ${scroll ? "fixed-header" : ""} ${headerStyle}`}
-      >
-  
+
+  return (
+    <header
+      className={`main-header ${scroll ? "fixed-header" : ""} ${headerStyle}`}
+    >
       {topBar && (
         <div className="topbar-four">
           <div className="auto-container">
