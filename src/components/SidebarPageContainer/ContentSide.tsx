@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 
-const ContentSide = ({ service = {} }) => {
+const ContentSide = (props:any) => {
   const {
     image,
     title,
@@ -12,12 +12,12 @@ const ContentSide = ({ service = {} }) => {
     features,
     text2,
     text3,
-  } = service;
+  } = props.service;
 
   return (
     <div className="service-details">
       <div className="main-image image">
-        <Image src={image.src} alt="" />
+        <Image src={image} alt="" />
       </div>
       <div className="text-content">
         <h3>{title}</h3>
@@ -26,7 +26,7 @@ const ContentSide = ({ service = {} }) => {
           <Row className="clearfix">
             <Col md={6} sm={12} className="image-col">
               <div className="image">
-                <Image src={featuredImage.src} alt="" />
+                <Image src={featuredImage} alt="" />
               </div>
             </Col>
             <Col md={6} sm={12} className="text-col">
@@ -34,7 +34,7 @@ const ContentSide = ({ service = {} }) => {
                 <h4>{featuredTitle}</h4>
                 <p>{featuredText}</p>
                 <ul>
-                  {features.map((text, i) => (
+                  {features?.map((text:string, i:number) => (
                     <li key={i}>{text}</li>
                   ))}
                 </ul>

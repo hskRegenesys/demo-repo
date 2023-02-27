@@ -1,4 +1,3 @@
-import bg from "@/images/background/image-1.jpg";
 
 const funFacts = [
   {
@@ -24,7 +23,7 @@ const funFacts = [
 ];
 
 export const funFactsOne = {
-  bg,
+ bg :"/assets/images/background/video-bg.png",
   funFacts,
 };
 
@@ -33,19 +32,19 @@ export default funFacts;
 export const funFactSix = [
   {
     id: 1,
-    icon: "flaticon-architect",
+    image: "assets/images/icons/academic.png",
     count: 200000,
-    text: "Alumini",
+    text: "Alumni",
   },
   {
     id: 2,
-    icon: "flaticon-architect-1",
+    image: "assets/images/icons/students.png",
     count: 35276,
     text: "Students",
   },
   {
     id: 3,
-    icon: "flaticon-buildings",
+    image: "assets/images/icons/awards.png",
     count: 1997,
     text: "Established",
   }

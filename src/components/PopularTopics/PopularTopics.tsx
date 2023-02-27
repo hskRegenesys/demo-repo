@@ -1,8 +1,8 @@
 import teamSection from "@/data/teamSection";
-import useActive from "@/hooks/useActive";
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
 import SingleTeam from "./SingleTeam";
+
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -31,57 +31,34 @@ const responsive1 = {
   },
 };
 
-const responsive2 = {
-  600: {
-    items: 2,
-    gutter: 30,
-  },
-  992: {
-    items: 3,
-    gutter: 30,
-  },
-  1200: {
-    items: 3,
-    gutter: 30,
-  },
-  1500: {
-    items: 3,
-    gutter: 30,
-  },
-  1600: {
-    items: 3,
-    gutter: 30,
-  },
-};
 
 const settings = {
   container: ".my-slider-19",
   loop: false,
   lazyload: true,
-  navPosition: "bottom",
+  navPosition: false,
   mouseDrag: true,
-  items: 1,
-  autoplay: true,
-  autoHeight: true,
-  controls: false,
-  gutter: 0,
-  autoplayButton: false,
+  items: 2,
+  gutter: 30,
+  controls: true,
   autoplayButtonOutput: false,
+  nav: false,
+  controlsContainer: ".tns-controls2",
+  autoplay: true,
+  autoplayButton: false,
+  
 };
 
 const { title, teams } = teamSection;
 
 const TeamSection = ({ onePage = false }) => {
   const listRef = useRef(null);
-  const ref = useActive("#team");
 
   return (
-    <section ref={ref} className="team-section no-padd-top" id="team">
+    <section className="team-section no-padd-top" id="team">
       <div className="auto-container">
         <div className="sec-title">
-          <h2 className="with-curve">
-            {title}      
-          </h2>
+          <h3 className="with-curve">{title}</h3>
         </div>
       </div>
       <div className={onePage ? "auto-container" : ""}>
@@ -89,18 +66,32 @@ const TeamSection = ({ onePage = false }) => {
           <div
             className={onePage ? "team-carousel__one-page" : "team-carousel"}
           >
+
+            <div className="auto-container text-right">
+              <div className="tns-controls2">
+                <button className="tns-prev">
+                  <span className="icon fa fa-angle-left"></span>
+                </button>
+                <button className="tns-next">
+                  <span className="icon fas fa-angle-right"></span>
+                </button>
+              </div>
+            </div>
+
             <TinySlider
               options={{
                 ...settings,
-                responsive: onePage ? responsive2 : responsive1,
-                nav: !onePage,
+                responsive: responsive1,
               }}
               ref={listRef}
             >
-              {teams.map((team) => (
+              {teams?.map((team) => (
                 <SingleTeam key={team.id} team={team} ref={listRef} />
               ))}
             </TinySlider>
+
+
+
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import CountUp from "react-countup";
+import CountUp, { CountUpProps } from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
-const VisibilityCountUp = ({ count }) => {
+const VisibilityCountUp = ({ count=0 }) => {
   const [countStart, setCountStart] = useState(false);
 
-  const onVisibilityChange = (isVisible) => {
+  const onVisibilityChange = (isVisible: boolean) => {
     if (isVisible) {
       setCountStart(true);
     }

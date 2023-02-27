@@ -2,9 +2,9 @@ import liveSection from "@/data/liveSection";
 import Link from "next/link";
 import React, { useState } from "react";
 import TextSplit from "../Reuseable/TextSplit";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 
-const { secTitle, bg, videoId, title } = liveSection;
+const { bg, videoId } = liveSection;
 
 const LiveSection = ({ className = "" }) => {
   const [isOpen, setOpen] = useState(false);
@@ -22,7 +22,7 @@ const LiveSection = ({ className = "" }) => {
           <div className="main-image-box">
             <div
               className="image-layer"
-              style={{ backgroundImage: `url(${bg.src})` }}
+              style={{ backgroundImage: `url(${bg})` }}
             ></div>
             <div className="inner clearfix">
               <div className="animated fadeInUp round-box">
@@ -42,7 +42,7 @@ const LiveSection = ({ className = "" }) => {
     
         </div>
       </section>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };

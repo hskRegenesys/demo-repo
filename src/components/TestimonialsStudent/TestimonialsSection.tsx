@@ -32,10 +32,9 @@ const { title, testimonials } = testimonialsSection;
 
 const TestimonialsSection = () => {
   const listRef = useRef(null);
-  const ref = useActive("#testimonials");
 
   return (
-    <section ref={ref} className="testimonials-section" id="testimonials">
+    <section  className="testimonials-section" id="testimonials">
       <div className="auto-container">
         <div className="sec-title">
           <h2>
@@ -49,7 +48,7 @@ const TestimonialsSection = () => {
               options={{ ...settings, container: `.my-slider-5` }}
               ref={listRef}
             >
-              {testimonials.map((testimonial) => (
+              {testimonials?.map((testimonial) => (
                 <SingleTestimonial
                   key={testimonial.id}
                   testimonial={testimonial}

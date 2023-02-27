@@ -1,23 +1,20 @@
-import bg2 from "@/images/update-01-10-2021/background/video-seven-1-1.jpg";
-import bg from "@/images/update-01-10-2021/background/video-six-bg-1.jpg";
-import image from "@/images/background/full-video-bg.png";
 
 
 export const videoSix = {
-  bg,
+  bg:"/assets/images/update-01-10-2021/background/video-six-bg-1.jpg",
   title: "Delivering only exceptional quality work",
   videoId: "8DP4NgupAhI",
   text: "Watch video",
 };
 
 export const videoSeven = {
-  bg: bg2,
+  bg: "/assets/images/update-01-10-2021/background/video-seven-1-1.jpg",
   title: "Mission is to Protect Your Business & More",
   videoId: "8DP4NgupAhI",
 };
 
 export const videoOne = {
-  image,
+  image:"/assets/images/background/full-video-bg.png",
   videoId: "y2Eqx6ys1hQ",
   title: "Linoor is trusted by millions of customers",
   text1:

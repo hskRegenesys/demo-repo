@@ -1,19 +1,17 @@
-import { sponsorsSectionFour } from "@/data/sponsorsSection";
-import Link from "next/link";
+import { aboutUsDescriptionData } from "@/data/aboutUsDescriptionData";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import TextSplit from "../Reuseable/TextSplit";
 import LiveSection from "@/components/LiveSection/LiveSection";
 
-const { title, pagedesc, subtitle, imagearrow, text1, text2, highlight } = sponsorsSectionFour;
+const { pagedesc, imagearrow, text1, text2, highlight, title } = aboutUsDescriptionData;
 
 const AboutUsDescription = () => {
   return (
     <section className="sponsors-section-four about-us-wave">
-      <div className="auto-container ">
+      <div className="auto-container">
         <div className="content-box text-center">
           <h3>
-            <TextSplit text={title} />
+          {title}
           </h3>
           <h6 className="desc">{pagedesc}</h6>
         </div>
@@ -26,7 +24,7 @@ const AboutUsDescription = () => {
             <Col md={7} lg={7}>
               <div className="about-me-one__content who-we-are">      
               <div className="sign-arrow">
-                <Image src={imagearrow.src} alt="" />
+                <Image src={imagearrow} alt="" />
               </div>  
                 <p className="highlight">{highlight}</p>
                 <p className="about-me-one__text">{text1}</p>

@@ -2,16 +2,15 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
-const ProductCard = ({ product = {} }) => {
-  const { image, title, price, stars } = product;
+const ProductCard = (props:any) => {
+  const { image, title, price, stars } = props.product;
 
   return (
     <Col sm={12} md={6} lg={4}>
       <div className="product-card">
         <div className="product-card__image">
           <Image
-            src={
-              require(`@/images/update-26-01-2021/shops/${image}`).default.src
+            src={`/assets/images/update-26-01-2021/shops/${image}`
             }
             alt=""
           />
@@ -36,7 +35,7 @@ const ProductCard = ({ product = {} }) => {
           </h3>
           <p className="product-card__price">${price}</p>
           <div className="product-card__stars">
-            {Array.from(Array(stars)).map((_, i) => (
+            {Array.from(Array(stars))?.map((_, i) => (
               <i key={i} className="fa fa-star"></i>
             ))}
           </div>

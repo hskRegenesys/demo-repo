@@ -17,13 +17,11 @@ const SocialMedia = ({ className = "" }) => {
     >
       <div className="auto-container">
         <div className="sec-title centered">
-          <h2>
-            {title}
-          </h2>
+          <h2 className="curve-right">{title}</h2>
         </div>
         <div className="services">
           <Row className="clearfix">
-            {services.map((service) => (
+            {services?.map((service) => (
               <SingleService service={service} key={service.id} />
             ))}
           </Row>

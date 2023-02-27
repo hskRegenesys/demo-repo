@@ -1,4 +1,3 @@
-import image from "@/images/resource/news-7.jpg";
 
 export const blogPage = {
   title: "Delivering the best digital marketing",
@@ -144,7 +143,7 @@ export const sidebar = {
 };
 
 export const blogDetails = {
-  image,
+  image:"/assets/images/resource/news-7.jpg",
   date: "20 Mar",
   admin: "Admin",
   title: "basic rules of running web agency business",

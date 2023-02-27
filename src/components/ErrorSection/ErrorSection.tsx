@@ -6,7 +6,7 @@ import { Image } from "react-bootstrap";
 const { image, title, text } = errorSection;
 
 const ErrorSection = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     const fromData = new FormData(e.target);
     console.log(fromData.get("email"));
@@ -18,7 +18,7 @@ const ErrorSection = () => {
         <div className="content">
           <div className="big-text">
             <Image
-              src={image.src}
+              src={image}
               id="error-404"
               className="img-fluid"
               alt=""

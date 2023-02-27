@@ -23,7 +23,6 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
 
   return (
     <section
-      ref={ref}
       className={`gallery-section${similar ? " similar-gallery" : ""}`}
       id="portfolio"
     >
@@ -43,7 +42,7 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
                 className={`filters clearfix${portfolio ? " centered" : ""}`}
               >
                 <ul className="filter-tabs filter-btns clearfix">
-                  {tabBtns.map(({ id, name, tab }) => (
+                  {tabBtns?.map(({ id, name, tab }) => (
                     <li
                       onClick={() => setCurrent(tab)}
                       key={id}
@@ -58,20 +57,23 @@ const GallerySectionOne = ({ portfolio = false, similar = false }) => {
               </div>
             )}
           </div>
-          <Masonry
+          {/* <Masonry
             options={masonryOptions}
-            className="row position-relative filter-list"
+            elementType={'ul'} // default 'div'
+            disableImagesLoaded={false} // default false
+            updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+            className="row position-relative filter-list" 
           >
-            {currentItems.slice(similar ? 3 : 0).map((item) => (
+            {currentItems.slice(similar ? 3 : 0)?.map((item) => (
               <GalleryItem item={item} key={item.id} />
             ))}
-          </Masonry>
+          </Masonry> */}
           {portfolio && (
             <div className="more-box">
               <Link href="/portfolio">
                 <a className="theme-btn btn-style-one">
                   <i className="btn-curve"></i>
-                  <span className="btn-title">Load more work</span>
+                  <span className="btn-title">Load more courses</span>
                 </a>
               </Link>
             </div>

@@ -8,10 +8,10 @@ import SingleNews from "./SingleNews";
 const { title, newsData } = newsSection;
 
 const NewsSection = ({ className = "", showTitle = true, isMore = false }) => {
-  const ref = useActive("#blog");
+
 
   return (
-    <section ref={ref} className={`news-section ${className}`} id="blog">
+    <section className={`news-section ${className}`} id="blog">
       <div className="auto-container">
         {showTitle && (
           <div className="sec-title centered">
@@ -23,7 +23,7 @@ const NewsSection = ({ className = "", showTitle = true, isMore = false }) => {
         )}
 
         <Row className="clearfix">
-          {newsData.slice(0, showTitle ? 3 : undefined).map((news) => (
+          {newsData.slice(0, showTitle ? 3 : undefined)?.map((news) => (
             <SingleNews key={news.id} news={news} />
           ))}
         </Row>

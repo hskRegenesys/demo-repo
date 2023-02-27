@@ -15,7 +15,7 @@ const settings = {
   navPosition: "bottom",
   mouseDrag: true,
   items: 1,
-  autoplay: true,
+  autoplay: false,
   autoHeight: true,
   controls: false,
   gutter: 0,
@@ -30,7 +30,7 @@ const BannerSection = () => {
     <section className="banner-section banner-two">
       <div className="banner-carousel">
         <TinySlider options={settings} ref={listRef}>
-          {bannerTwo.map((slide) => (
+          {bannerTwo?.map((slide) => (
             <SlideItem key={slide.id} slide={slide} ref={listRef} />
           ))}
         </TinySlider>

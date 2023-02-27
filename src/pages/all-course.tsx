@@ -6,25 +6,26 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import CoursesWithFilter from "@/components/CoursesWithFilter/CoursesWithFilter";
 import AllCourseText from "@/components/StudentPlacement/AllCourseText";
 import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
+import AllCourseGallery from "@/components/AllCourseGallery/AllCourseGallery";
+import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 
 const allCourse = () => {
   return (
-    <Layout pageTitle="All courses">
+    <Layout pageTitle="allCourse">
       <Style />
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="Products" page="All courses" />
       <AllCourseText />
-      <CoursesWithFilter />
-      <PartnerOne />   
-      <VideoOne /> 
+      <AllCourseGallery />
+      <PartnerOne />
+      <VideoOne />
       <PopularTopics />
       <CallToSection />
       <MainFooter />

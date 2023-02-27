@@ -2,15 +2,16 @@ import Link from "next/link";
 import React, { forwardRef } from "react";
 
 
-const SingleTeam = ({ team = {}, className = "" }, ref) => {
-  const { name } = team;
+const SingleTeam = (props:any) => {
+  const { team = {}, className = "" } = props
+  const { name, href } = team;
 
   return (
-    <div ref={ref} className={`team-block ${className}`}>
+    <div className={`team-block ${className}`}>
       <div className="inner-box">   
         <div className="lower-box">
           <h5>
-            <a href="#">{name}</a>
+           <a href={href}>{name}</a> 
           </h5>         
         </div>
       </div>

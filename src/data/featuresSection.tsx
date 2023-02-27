@@ -1,10 +1,6 @@
-import bg from "@/images/background/image-3.jpg";
-import image from "@/images/resource/featured-image-13.jpg";
-import image2 from "@/images/update-26-02-2021/resources/feature-2-1.jpg";
-import image3 from "@/images/update-26-02-2021/resources/feature-3-1.jpg";
 
 const featuresSection = {
-  bg,
+  bg:"/assets/images/background/video-bg.png",
   title: "Grow With Community & Experience Endless Possibilities",
   features: [
     {
@@ -28,13 +24,13 @@ const featuresSection = {
 export default featuresSection;
 
 export const featuresSectionTwo = {
-  image,
+  image:"/assets/images/resource/featured-image-13.jpg",
   title: "Get in touch \n with us",
-  title2: "Everything you need to know about digital regenesis",  
+  title2: "Everything you need to know about Digital regenesys",  
 };
 
 export const featureSix = {
-  image: image2,
+  image: "/assets/images/update-26-02-2021/resources/feature-2-1.jpg",
   imageCaption: "Total design freedom \n for everyone",
   title: "Linoor place a very strong impact",
   text: "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form injected humour, or randomised words.",
@@ -47,34 +43,28 @@ export const featureSix = {
 };
 
 export const featureSeven = {
-  title: "planning and strategy",
+  title: "Meet our staff",
+  desc: "Revolutionise your career with future-ready skills",
   features: [
     {
       id: 1,
-      image: "strategy-1-1.jpg",
-      title: "Take a look around our business growth",
-      text: "Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.",
-      href: "/services",
+      image: "7.jpg",
+      title: "Bhupendra Mishra",
+      text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
+      designation : "Senior lecture",
     },
     {
       id: 2,
-      image: "strategy-1-2.jpg",
-      title: "Our Mission and unique vissions",
-      text: "Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.",
-      href: "/about",
-    },
-    {
-      id: 3,
-      image: "strategy-1-3.jpg",
-      title: "Finance advice and a global solution",
-      text: "Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.",
-      href: "/services",
-    },
+      image: "7.jpg",
+      title: "Dr. Deepika Sharma",
+      text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
+      designation : "Senior lecture",
+    },    
   ],
 };
 
 export const featureEight = {
-  image: image3,
+  image: "/assets/images/update-26-02-2021/resources/feature-3-1.jpg",
   title: "We’re here to help your businesses growth",
   text: "There are many variations of pass of lorem ips but the majority have suffered alteration in some form. Injected humour not randomised words which.",
   barTitle: "Digital marketing",

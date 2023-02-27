@@ -2,28 +2,28 @@ import React from "react";
 import Select from "react-select";
 
 const customStyle = {
-  valueContainer: (provided) => ({
+  valueContainer: (provided:any) => ({
     ...provided,
     fontSize: 14,
     textAlign: "left",
   }),
-  placeholder: (provided) => ({
+  placeholder: (provided:any) => ({
     ...provided,
     color: "#686a6f",
   }),
-  singleValue: (provided) => ({
+  singleValue: (provided:any) => ({
     ...provided,
     cursor: "pointer",
     color: "#686a6f",
   }),
-  menu: (provided) => ({
+  menu: (provided:any) => ({
     ...provided,
     border: "1px solid #e9ebee",
     boxShadow: "none",
     zIndex: 10,
     backgroundColor: "#f4f5f8",
   }),
-  option: (provided, state) => ({
+  option: (provided:any, state:any) => ({
     ...provided,
     color: "#333333",
     padding: "14px 30px",
@@ -38,7 +38,7 @@ const customStyle = {
     textAlign: "left",
     fontWeight: 400,
   }),
-  control: (base) => ({
+  control: (base:any) => ({
     ...base,
     borderColor: "transparent",
     boxShadow: "none",
@@ -56,23 +56,24 @@ const customStyle = {
  * @param {React.ComponentProps<typeof Select>} props
  */
 
-const CustomSelect = ({
-  options = [],
-  styles = {},
-  isSearchable = false,
-  components = {},
-  ...props
-}) => {
+const CustomSelect = (propps:any) => {
+  let {
+    options = [],
+    styles = {},
+    isSearchable = false,
+    components = {},
+    ...props
+  } = propps
   const customStyle2 = {
-    option: (provided, state) => ({
+    option: (provided:any, state:any) => ({
       ...provided,
       ...customStyle.option(provided, state),
       borderBottom:
-        state.label === options[options.length - 1].label
+        state.label === options[options?.length - 1].label
           ? "none"
           : "0.5px solid #e9ebee",
       borderRadius:
-        state.label === options[options.length - 1].label ? "0 0 8px 8px" : 0,
+        state.label === options[options?.length - 1].label ? "0 0 8px 8px" : 0,
     }),
   };
 

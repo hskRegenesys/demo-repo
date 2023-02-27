@@ -1,97 +1,156 @@
-import { socials } from "@/data/header";
+import React, { useState, useEffect, useContext } from "react";
 import { productDetails } from "@/data/productDetails";
+import { courseService } from "src/services";
 import Link from "next/link";
-import React, { useState } from "react";
-import { Col, Image, Row } from "react-bootstrap";
-import TextSplit from "../Reuseable/TextSplit";
+import { Col, Image, Modal, Row } from "react-bootstrap";
+import { useRouter } from "next/router";
+import ModalPopup from "../Modal/ModalPopup";
+import {
+  indiaCountryId,
+  nigeriaCountryId,
+  ukCountryId,
+  kenyaCountryId,
+  southAfricaCountryId,
+} from "../config/constant";
 
-const { image, title, price, stars, customerReviews, text, text2 } =
-  productDetails;
+const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
+  const {
+    flagsa,
+    flagnig,
+    flagind,
+    flagus,
+    flagken,
+    title,
+    price,
+    certifiedText1,
+    certifiedText2,
+    certifiedText3,
+    subTitle,
+    certifiedTitle1,
+    certifiedTitle2,
 
-const ProductDetailsPage = () => {
-  const [quantity, setQuantity] = useState(1);
+    certifiedTitle3,
+    admissionText,
+    termsConditions,
+  } = courseDetails?.productDetails;
+  const [coursePriceDetails, setcoursePrice] = useState<any>([]);
+  const [priceDetails, setPriceDetails] = useState<any>(0);
+  const [show, setShow] = useState(false);
 
+  const getData = async () => {
+    let courseListResponse = await courseService.allcoursePrice(courseId);
+    setcoursePrice(courseListResponse);
+  };
+  useEffect(() => {
+    if (coursePriceDetails?.length) {
+      CoursePriceChange(1);
+    }
+  }, [coursePriceDetails]);
+  useEffect(() => {
+    if (courseId) {
+      getData();
+    }
+  }, [courseId]);
+  function CoursePriceChange(id: number) {
+    if (coursePriceDetails?.length) {
+      coursePriceDetails?.forEach(function (val: any) {
+        if (val?.coursePrices?.length) {
+          val?.coursePrices?.forEach(function (item: any) {
+            if (item.country_id === id) {
+              setPriceDetails(item);
+            }
+          });
+        }
+      });
+    }
+  }
   return (
     <section className="product-details">
       <div className="auto-container">
         <Row>
-          <Col lg={12} xl={6}>
-            <a className="product-details__image lightbox-image">
-              <Image src={image.src} alt="" />
-            </a>
-          </Col>
-          <Col lg={12} xl={6}>
+          <Col lg={12} xl={12}>
             <div className="product-details__top">
-              <h3 className="product-details__title">{title}</h3>
-              <p className="product-details__price">${price}</p>
-            </div>
-            <div className="product-details__reveiw">
-              {Array.from(Array(stars)).map((_, i) => (
-                <i key={i} className="fa fa-star"></i>
-              ))}
-
-              <span>{customerReviews} Customer Reviews</span>
-            </div>
-            <div className="product-details__content">
-              <p>{text}</p>
-              <p>
-                <TextSplit text={text2} />
-              </p>
-            </div>
-            <div className="product-details__quantity">
-              <h3 className="product-details__quantity-title">
-                Choose quantity
+              <h3 className="product-details__title">
+                {title}
+                <i className="arrow-sign-right"></i>
               </h3>
-              <div className="quantity-box">
-                <button
-                  onClick={() =>
-                    setQuantity((preQuantity) =>
-                      preQuantity > 1 ? preQuantity - 1 : preQuantity
-                    )
-                  }
-                  type="button"
-                  className="sub"
-                >
-                  <i className="fa fa-minus"></i>
-                </button>
-                <input
-                  onChange={(e) => setQuantity(+e.target.value)}
-                  type="number"
-                  id="1"
-                  value={quantity}
-                />
-                <button
-                  onClick={() => setQuantity((preQuantity) => preQuantity + 1)}
-                  type="button"
-                  className="add"
-                >
-                  <i className="fa fa-plus"></i>
-                </button>
+              <h5 className="product-details__subtitle mt-3">{subTitle}</h5>
+            </div>
+          </Col>
+
+          <Col lg={12} xl={6}>
+            <div className="product-details__content get__certified__section">
+              <div className="subTitle">
+                <i className="flaticon-check"></i>
+                {certifiedTitle1}
+              </div>
+              <p>{certifiedText1}</p>
+              <div className="subTitle">
+                <i className="flaticon-check"></i>
+                {certifiedTitle2}
+              </div>
+              <p>{certifiedText2}</p>
+              <div className="subTitle">
+                <i className="flaticon-check"></i>
+                {certifiedTitle3}
+              </div>
+              <p>{certifiedText3}</p>
+            </div>
+          </Col>
+
+          <Col lg={12} xl={6} className="mobile-pricing-section">
+            <div className="product-details__flag">
+              <h5 className="product-details__subtitle">Total Admission Fee</h5>
+              <div className="flags">
+                {coursePriceDetails[0]?.coursePrices?.map((item: any) => (
+                  <>
+                    <a onClick={() => CoursePriceChange(item.country_id)} >
+                      <div className={item.country_id === priceDetails.country_id ? 'flag-shadow' : ''}>
+                      {item.country_id === southAfricaCountryId && (
+                        <Image src={flagsa} alt="South Africa"/>
+                      )}
+                      {item.country_id === indiaCountryId && (
+                        <Image src={flagind} alt="India" />
+                      )}
+                      {item.country_id === nigeriaCountryId && (
+                        <Image src={flagnig} alt="Nigeria" />
+                      )}
+                      {item.country_id === ukCountryId && (
+                        <Image src={flagus} alt="UK" />
+                      )}
+                      {item.country_id === kenyaCountryId && (
+                        <Image src={flagken} alt="Kenya" />
+                      )}
+                      </div>
+                    </a>
+                  </>
+                ))}
               </div>
             </div>
+
+            <h2 className="product-details__price">{`${priceDetails?.country?.currency} ${priceDetails?.price}`}</h2>
+
+            <Link href="/">
+              <a className="refer-link">Refer a friend</a>
+            </Link>
+
+            <p>{termsConditions}</p>
+            <p>{admissionText}</p>
             <div className="product-details__buttons">
-              <Link href="/cart">
-                <a className="theme-btn btn-style-two">
-                  <i className="btn-curve"></i>
-                  <span className="btn-title">Add to wishlist</span>
-                </a>
-              </Link>
-              <Link href="/cart">
-                <a className="theme-btn btn-style-one">
-                  <i className="btn-curve"></i>
-                  <span className="btn-title">Add to cart</span>
-                </a>
-              </Link>
-            </div>
-            <div className="product-details__social">
-              <span>Share with friends</span>
-              {socials.map(({ id, icon, href }) => (
-                <a key={id} href={href} className={icon}></a>
-              ))}
+              <a
+                className="theme-btn btn-style-two"
+                onClick={() => setShow(!show)}
+              >
+                <i className="btn-curve"></i>
+                <span className="btn-title">Enroll Now</span>
+              </a>
             </div>
           </Col>
         </Row>
       </div>
+      <Modal show={show}>
+        <ModalPopup setShows={setShow} />
+      </Modal>
     </section>
   );
 };

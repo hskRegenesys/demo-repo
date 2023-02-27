@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
-const SingleNews = ({ news = {} }) => {
-  const { image, date, admin, comments, title, text } = news;
+const SingleNews = (props:any) => {
+  const { image, date, admin, comments, header, text } = props.news;
 
   return (
     <Col lg={4} md={6} sm={12} className="news-block animated fadeInUp">
@@ -12,7 +12,7 @@ const SingleNews = ({ news = {} }) => {
           <Link href="/blog-single">
             <a>
               <Image
-                src={require(`@/images/resource/${image}`).default.src}
+                src={`/assets/images/resource/${image}`}
                 alt=""
               />
             </a>
@@ -33,7 +33,7 @@ const SingleNews = ({ news = {} }) => {
             </ul>
           </div>
           <h5>
-            <Link href="/blog-single">{title}</Link>
+            <Link href="/blog-single">{header}</Link>
           </h5>
           <div className="text">{text}</div>
           <div className="link-box">

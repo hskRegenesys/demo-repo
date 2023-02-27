@@ -1,16 +1,20 @@
 import Link from "next/link";
 import React, { forwardRef } from "react";
 import { Image } from "react-bootstrap";
-
-const SingleTestimonial = (
-  { testimonial = {}, className = "", userSelect = false },
-  ref
-) => {
-  const { image, name, text, designation } = testimonial;
+const defaultTestimonial = {
+  image: "",
+  name: "",
+  text: "",
+};
+const SingleTestimonial = ({
+  testimonial = { ...defaultTestimonial },
+  className = "",
+  userSelect = false,
+}) => {
+  const { image, name, text } = testimonial;
 
   return (
     <div
-      ref={ref}
       style={{ userSelect: userSelect ? "auto" : "none" }}
       className={`testi-block ${className}`}
     >
@@ -23,14 +27,14 @@ const SingleTestimonial = (
             <Link href="/team">
               <a>
                 <Image
-                  src={require(`@/images/resource/${image}`).default.src}
+                  src={`/assets/images/resource/${image}`}
                   alt=""
                 />
               </a>
             </Link>
           </div>
           <div className="name">{name}</div>
-          <div className="designation">{designation}</div>
+          <div className="designation"></div>
         </div>
         <div className="text">{text}</div>
       </div>

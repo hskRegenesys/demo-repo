@@ -1,46 +1,53 @@
-import { jarallax, jarallaxVideo } from "jarallax";
-import "jarallax/dist/jarallax.css";
-import React, { useEffect, useRef } from "react";
+// import { jarallax, jarallaxVideo } from "jarallax";
+// import "jarallax/dist/jarallax.css";
+// import React, { useEffect, useRef } from "react";
 
-// Optional video extension
-jarallaxVideo();
+// // Optional video extension
+// jarallaxVideo();
 
 /**
  * @param {JarallaxOptions&{className?: string, children: ReactNode}} props
  */
 
-const Jarallax = ({ className = "", children, ...props }) => {
-  const element = useRef();
+// const Jarallax = (propps:any) => {
+//   const { className = "", children, ...props } = propps; 
+//   const element = useRef();
 
-  // Init Jarallax.
-  useEffect(() => {
-    const { current } = element;
-    if (current) {
-      jarallax(current, props);
-    }
+//   // Init Jarallax.
+//   useEffect(() => {
+//     const { current } = element;
+//     if (current) {
+//       jarallax(current, props);
+//     }
 
-    // Destroy Jarallax.
-    return () => {
-      if (current) {
-        jarallax(current, "destroy");
-      }
-    };
-  }, [props]);
+//     // Destroy Jarallax.
+//     return () => {
+//       if (current) {
+//         jarallax(current, "destroy");
+//       }
+//     };
+//   }, [props]);
 
-  // Update options.
-  useEffect(() => {
-    const { current } = element;
-    if (current) {
-      jarallax(current, "destroy");
-      jarallax(current, props);
-    }
-  }, [props]);
+//   // Update options.
+//   useEffect(() => {
+//     const { current } = element;
+//     if (current) {
+//       jarallax(current, "destroy");
+//       jarallax(current, props);
+//     }
+//   }, [props]);
 
-  return (
-    <div ref={element} className={`${className} jarallax`}>
-      {children}
-    </div>
-  );
-};
+//   return (
+//     <div 
+//     // ref={element} 
+//     className={`${className} jarallax`}>
+//       {children}
+//     </div>
+//   );
+// };
+
+const Jarallax = (props:any) => {
+  return props.children
+}
 
 export default Jarallax;

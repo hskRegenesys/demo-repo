@@ -29,6 +29,7 @@ const TestimonialsStudent = () => {
 
   return (
     <section className="testimonials-five">
+
       <div className="auto-container">
         <div className="sec-title text-center">
           <h2>
@@ -36,8 +37,9 @@ const TestimonialsStudent = () => {
           </h2>
         </div>
         <div className="testimonials-carousel-two testimonials-five__carousel position-relative">
+        <i className="fa fa-quote-right"></i>
           <TinySlider options={settings} ref={listRef}>
-            {items.map((testimonial) => (
+            {items?.map((testimonial) => (
               <SingleTestimonialFive
                 key={testimonial.id}
                 testimonial={testimonial}
@@ -50,7 +52,7 @@ const TestimonialsStudent = () => {
               <span className="icon fa fa-angle-left"></span>
             </button>
             <button className="tns-next">
-              <span className="icon fa fa-angle-right"></span>
+              <span className="icon fas fa-angle-right"></span>
             </button>
           </div>
         </div>

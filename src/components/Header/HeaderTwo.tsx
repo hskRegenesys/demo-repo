@@ -10,8 +10,8 @@ const { navItems, title, logo7 } = headerData;
 
 const HeaderTwo = ({ headerStyle = "mainmenu-six", header = 6 }) => {
   const { scrollTop } = useScroll(120);
-  const { toggleSearch, toggleMenu } = useRootContext();
-
+  const contextRoot: any = useRootContext();
+  const { toggleSearch, toggleMenu } = contextRoot;
   return (
     <nav
       className={`${headerStyle} main-header${
@@ -24,7 +24,7 @@ const HeaderTwo = ({ headerStyle = "mainmenu-six", header = 6 }) => {
             <div className="mainmenu-seven__left">
               <Link href="#">
                 <a>
-                  <Image src={logo7.src} width={134} alt={title} />
+                  <Image src={logo7} width={134} alt={title} />
                 </a>
               </Link>
             </div>
@@ -35,7 +35,7 @@ const HeaderTwo = ({ headerStyle = "mainmenu-six", header = 6 }) => {
               id="navbarSupportedContent"
             >
               <ul className="navigation clearfix">
-                {navItems.map((navItem) => (
+                {navItems?.map((navItem) => (
                   <NavItem navItem={navItem} key={navItem.id} />
                 ))}
               </ul>

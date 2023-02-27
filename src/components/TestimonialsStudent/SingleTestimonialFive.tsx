@@ -1,22 +1,19 @@
 import React, { forwardRef } from "react";
 import { Image } from "react-bootstrap";
 
-const SingleTestimonialFive = ({ testimonial = {} }, ref) => {
-  const { image, text, title, designation } = testimonial;
+const SingleTestimonialFive = (props:any) => {
+  const { image, text, name } = props.testimonial;
 
   return (
-    <div ref={ref} className="item" style={{ userSelect: "none" }}>
+    <div className="item" style={{ userSelect: "none" }}>
       <div className="testimonials-five-card">
         <Image
-          src={image.src}
+          src={image}
           alt=""
           className="testimonials-five-card__image"
         />
         <p className="testimonials-five-card__text">{text}</p>
-        <h3 className="testimonials-five-card__title">{title}</h3>
-        <span className="testimonials-five-card__designation">
-          {designation}
-        </span>
+        <h3 className="testimonials-five-card__title">{name}</h3>     
       </div>
     </div>
   );

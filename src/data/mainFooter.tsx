@@ -1,46 +1,42 @@
-import demoBg from "@/images/background/footer-bg-2.jpg";
-import logo from "@/images/footer-logo.png";
-import logo3 from "@/images/logo-3.png";
-import logo6 from "@/images/update-01-10-2021/logo-6-light.png";
-import logo7 from "@/images/update-01-10-2021/logo-7-light.png";
-import logo8 from "@/images/update-01-10-2021/logo-8-light.png";
-import logo5 from "@/images/update-09-06-2021/logo-5-light.png";
-
 export const footer = { year: new Date().getFullYear(), author: "Linoor" };
 
 export const mainFooterDemo = {
   ...footer,
-  demoBg,
   title: "Create Stunning Website Now!",
   tagline: "Purchase linoor Template Now",
   templateLink: "#",
 };
 
 export const mainFooter = {
-  logo,
-  logo3,
-  logo5,
-  logo6,
-  logo7,
-  logo8,
-  bg: demoBg,
+  logo: "/assets/images/footer-logo.png",
+  logo3: "/assets/images/logo-3.png",
+  logo6: "/assets/images/update-01-10-2021/logo-6-light.png",
+  logo7: "/assets/images/update-01-10-2021/logo-7-light.png",
+  logo8: "/assets/images/update-01-10-2021/logo-8-light.png",
+  logo5: "/assets/images/update-09-06-2021/logo-5-light.png",
   title: "Let’s Start Working Together",
   about:
     "There are many variation of passages of lorem ipsum available, but the majority suffered.",
   about2: "The new corporate agency theme",
   about3:
     "We’ve grown our business on a set of \n three building blocks. Enjoy the \n people you work.",
-  text: "Revolutionise you career with future ready skills",
-  address: "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
-  address2: "Proxima Building,\n Unit 1101 11th Floor, Plot 19, \n Sector 30A, Vashi Navi Mumbai,\n India, 400705",
-  address3: "8th Floor,  \n Churchgate Tower 2  \n PC 31 Victoria Island, \n  Nigeria",
+  text: "Revolutionise your career with future-ready skills",
+  address:
+    "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
+  address2:
+    "Proxima Building,\n Unit 1101 11th Floor, Plot 19, \n Sector 30A, Vashi Navi Mumbai,\n India, 400705",
+  address3:
+    "8th Floor,  \n Churchgate Tower 2  \n PC 31 Victoria Island, \n  Nigeria",
 
   phone: "+27 (11) 669 5000",
   phone2: "+91 1800 212 9950",
   phone3: "+234 (1) 453 0959",
   web: "www.regenesys.net",
+  weblink: "https://www.regenesys.net/",
   web2: "www.india.regenesys.net",
+  web2link: "https://www.india.regenesys.net/",
   web3: "www.nigeria.regenesys.net",
+  web3link: "https://www.nigeria.regenesys.net/",
 
   email: "needhelp@linoor.com",
   textBottom:
@@ -50,52 +46,55 @@ export const mainFooter = {
   socials: [
     {
       id: 1,
-      href: "#",
+      href: "https://www.facebook.com/digitalregenesys",
       icon: "fab fa-facebook",
+      title: "Facebook",
     },
     {
       id: 2,
-      href: "#",
+      href: "https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A",
       icon: "fab fa-youtube",
+      title: "Youtube",
     },
     {
       id: 3,
-      href: "#",
+      href: "https://www.instagram.com/digital_regenesys/",
       icon: "fab fa-instagram",
-    }
+      title: "Instagram",
+    },
   ],
   links: [
     {
       id: 1,
-      href: "",
+      href: "/terms-and-conditions",
       title: "Terms & Conditions",
     },
     {
       id: 2,
-      href: "",
+      href: "/privacy-policy",
       title: "Privacy Policy",
     },
     {
       id: 3,
-      href: "",
+      href: "/contact",
       title: "Contact us",
     },
     {
       id: 4,
-      href: "",
+      href: "/about",
       title: "About us",
     },
-    {
-      id: 5,
-      href: "",
-      title: "Blogs",
-    },
- 
+    // {
+    //   id: 5,
+    //   href: "",
+    //   title: "Blogs",
+    // },
+
     {
       id: 7,
-      href: "",
+      href: "/all-course",
       title: "Our Courses",
-    }
+    },
   ],
   ...footer,
   newses: [

@@ -8,7 +8,7 @@ const MissionVison = () => {
     <section className="how-it-works">
       <div className="FluidSection">
         <Row>
-          {howItWorksPage.map(({ id, title, text }) => (
+          {howItWorksPage?.map(({ id, title, text }) => (
             <Col key={id} md={6} lg={6}>
               <div className="how-it-works-card">
                 <div className="how-it-works-card__inner">                 

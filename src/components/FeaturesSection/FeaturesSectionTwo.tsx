@@ -14,14 +14,17 @@ const FeaturesSectionTwo = () => {
               <div className="inner">
                 <div className="sec-title">
                   <h2>
+                  <i className="contact-page call-to-action-arrow"> </i>
                     {title}                   
                   </h2>
 
                   <h6 className="desc">
                     {title2}                   
                   </h6>
-                </div>
-          
+                </div> 
+                <div className="sign-arrow-contact">              
+                   <Image src="/assets/images/background/sign-arrow-left.png" alt="" />           
+                </div>         
               </div>
             </Col>
  

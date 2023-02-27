@@ -11,7 +11,7 @@ const { bg, title, features } = featuresSection;
 const FeaturesSection = () => {
   return (
     <Jarallax speed={0.3} imgPosition="50% 50%" className="features-section">
-      <JarallaxImage src={bg.src} />
+      <JarallaxImage src={bg} />
       <div className="auto-container">
         <div className="content-box">
           <h2>
@@ -19,7 +19,7 @@ const FeaturesSection = () => {
             <span>.</span>
           </h2>
           <div className="features clearfix">
-            {features.map(({ id, title, icon }) => (
+            {features?.map(({ id, title, icon }) => (
               <div key={id} className="feature-block">
                 <div className="inner">
                   <div className="icon-box">

@@ -24,6 +24,17 @@
 }
 
 @media only screen and (max-width: 1499px) {
+
+  .testimonials-five .auto-container, .map-section .auto-container, .services-section-three .auto-container
+  {
+    max-width: 1280px;
+  }
+
+ .call-to-section  .auto-container
+  {
+
+    max-width: 1000px;
+  }
   .main-header .other-links .search-btn {
     padding-right: 30px;
     margin-right: 30px;
@@ -87,11 +98,68 @@
 }
 
 @media only screen and (max-width: 1199px) {
+
+
+  .main-footer .logo-widget, .footer-section-yellow
+  {
+    position: relative;
+  padding: 30px;
+  }
+  .main-footer .links-widget ul li
+  {
+    float: left;
+    margin-right:30px;
+  }
+
+  .main-footer .social-links
+  {
+    float: left;
+  }
+
+  .main-footer .logo-widget h5
+  {
+    margin-bottom: 0;
+  }
+
+  .main-footer .footer-widget.links-widget
+  {
+    position: relative;
+  }
+
+  .main-footer .footer-widget.links-widget
+  {
+    width: 100% !important;
+  }
   .main-header.fixed-header .header-upper .logo-box {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
+  .contact-section .form-box
+  {
+    padding: 40px;
+    margin-bottom: 0;
+  }
+
+  .sign-arrow-contact img
+  {
+    display: none;
+  }
+
+  .all-course-wave
+  {
+    min-height: 600px;
+  }
+
+  .all-course-bg
+  {
+    height: 240px;
+  }
+
+  .featured-section .left-col
+  {
+    max-width: 300px;
+  }
   .main-header.fixed-header .nav-outer .mobile-nav-toggler {
     margin-top: 20px;
   }
@@ -119,10 +187,45 @@
 
   .main-header .nav-outer {
     float: right;
-    position: relative;
+    position: absolute;
     width: auto;
     height: auto;
     padding: 0;
+    right: 0;
+  }
+  .featured-section .right-col .inner h1
+  {
+    font-size: 30px;
+  }
+
+  .featured-section
+  {
+    padding: 200px 30px 90px;
+  }
+
+  .featured-section .right-col
+  {
+    margin-top: 0;
+  }
+  .gallery-section-two .sec-title h2
+  {
+    max-width: 100%;
+  }
+  .project-tab .product-tab-btns .p-tab-btn
+  {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #thm-logo
+  {
+    height: 50px;
+  }
+
+  .side-menu__top
+  {
+    padding-left: 10px;
   }
 
   .main-header.fixed-header .other-links .search-btn {
@@ -200,8 +303,8 @@
 
   .call-to-section h2,
   .call-to-section-two h2 {
-    font-size: 48px;
-    line-height: 1em;
+    font-size: 34px;
+    line-height: 44px;
   }
 
   .call-to-section-two .link-box {
@@ -306,6 +409,16 @@
 }
 
 @media only screen and (max-width: 991px) {
+
+  .discover-block .inner-box
+  {
+    padding: 10px;
+  }
+
+  .testimonials-five-card__text
+  {
+    max-width: 500px;
+  }
   .banner-carousel .slide-item .shape-1 {
     left: -300px;
   }
@@ -371,14 +484,21 @@
   .gallery-section,
   .news-section,
   .get-quote-section,
-  .discover-section,
-  .features-section-two .content-container,
   .about-section-two,
   .sponsors-section-two,
   .sidebar-page-container {
     padding: 90px 0px 60px;
   }
+  .discover-section,
+  .features-section-two .content-container
+  {
+    padding: 30px 0;
+  }
 
+  .features-section-two
+  {
+    height: auto;
+  }
   .live-section,
   .services-section-two,
   .gallery-section-two,
@@ -445,7 +565,8 @@
   }
 
   .call-to-section .inner {
-    padding: 70px 20px 60px;
+    padding: 30px;
+    margin: 0 0 50px;
   }
 
   .agency-section,
@@ -494,7 +615,7 @@
   }
 
   .sec-title h2 {
-    font-size: 50px;
+    font-size: 36px;
     line-height: 1.05em;
   }
 
@@ -554,8 +675,8 @@
 
   .call-to-section .link-box,
   .call-to-section-two .link-box {
-    width: 100%;
     padding: 20px 0 0;
+    text-align: left;
   }
 
   .why-us-section .right-col .inner {

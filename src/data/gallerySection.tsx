@@ -3,37 +3,266 @@ const items = [
     id: 1,
     image: "7.jpg",
     title: "Project Management",
-    tagline: ["Live Class ", "8 Weeks ", "Internation certification ", "Capstone projects "],
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
     batch: "New Batch - 8th October, 2022",
   },
   {
     id: 2,
     image: "8.jpg",
     title: "Data Science",
-    tagline: ["Live Class ", "8 Weeks ", "Internation certification ", "Capstone projects "],
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
     batch: "New Batch - 8th October, 2022",
   },
   {
     id: 3,
     image: "9.jpg",
-    title: "Cyber Security",
-    tagline: ["Live Class ", "8 Weeks ", "Internation certification ", "Capstone projects "],
+    title: "Cybersecurity",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
     batch: "New Batch - 8th October, 2022",
   },
   {
     id: 4,
     image: "10.jpg",
     title: "Digital Marketing",
-    tagline: ["Live Class ", "8 Weeks ", "Internation certification ", "Capstone projects "],
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
     batch: "New Batch - 8th October, 2022",
   },
   {
     id: 5,
     image: "11.jpg",
     title: "Investment, Trading & Personal Finance",
-    tagline: ["Live Class ", "8 Weeks ", "Internation certification ", "Capstone projects "],
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
     batch: "New Batch - 8th October, 2022",
-  }
+  },
+];
+
+const digitalMarketing = [
+  {
+    id: 1,
+    image: "7.jpg",
+    title: "Digital Marketing 1",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 2,
+    image: "8.jpg",
+    title: "Digital Marketing 2",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 3,
+    image: "9.jpg",
+    title: "Digital Marketing 3",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 4,
+    image: "10.jpg",
+    title: "Digital Marketing 4",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 5,
+    image: "11.jpg",
+    title: "Digital Marketing 5",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+];
+
+const projectManagement = [
+  {
+    id: 1,
+    image: "7.jpg",
+    title: "Project Management 1",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 2,
+    image: "8.jpg",
+    title: "Project Management 2",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 3,
+    image: "9.jpg",
+    title: "Project Management 3",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 4,
+    image: "10.jpg",
+    title: "Project Management 4",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 5,
+    image: "11.jpg",
+    title: "Project Management 5",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+];
+
+const cyberSecurity = [
+  {
+    id: 1,
+    image: "7.jpg",
+    title: "Cybersecurity 1",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 2,
+    image: "8.jpg",
+    title: "Cybersecurity 2",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 3,
+    image: "9.jpg",
+    title: "Cybersecurity 3",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+];
+
+const dataScience = [
+  {
+    id: 1,
+    image: "7.jpg",
+    title: "Data Science 1",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 2,
+    image: "8.jpg",
+    title: "Data Science 2",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
+  {
+    id: 3,
+    image: "9.jpg",
+    title: "Data Science 3",
+    tagline: [
+      "Live Class ",
+      "8 Weeks ",
+      "Internation certification ",
+      "Capstone projects ",
+    ],
+    batch: "New Batch - 8th October, 2022",
+  },
 ];
 
 const items3 = [
@@ -65,7 +294,7 @@ const items3 = [
     id: 5,
     image: "5.jpg",
     title: "Fimlor Experience",
-    tagline: "Graphic",                 
+    tagline: "Graphic",
   },
   {
     id: 6,
@@ -118,35 +347,35 @@ const items2 = [
     image: "1.jpg",
     title: "Fimlor Experience",
     tagline: "Graphic",
-    filter: ["all", "web-design"],
+    filter: ["all", "digital-marketing"],
   },
   {
     id: 2,
     image: "2.jpg",
     title: "Fimlor Experience",
     tagline: "Graphic",
-    filter: ["all", "photography", "web-design"],
+    filter: ["all", "cyber-security"],
   },
   {
     id: 3,
     image: "3.jpg",
     title: "Fimlor Experience",
     tagline: "Graphic",
-    filter: ["all", "branding", "web-design"],
+    filter: ["all", "project-management"],
   },
   {
     id: 4,
     image: "4.jpg",
     title: "Fimlor Experience",
     tagline: "Graphic",
-    filter: ["all", "branding", "illustration"],
+    filter: ["all", "data-science"],
   },
   {
     id: 5,
     image: "5.jpg",
     title: "Fimlor Experience",
     tagline: "Graphic",
-    filter: ["all", "branding", "illustration", "photography", "web-design"],
+    filter: ["all", "data-science"],
   },
   {
     id: 6,
@@ -159,6 +388,7 @@ const items2 = [
 
 const gallerySection = {
   title: "Explore Our Courses",
+  describe: "Facilitator-led courses",
   tabBtns: [
     {
       id: 1,
@@ -180,7 +410,7 @@ const gallerySection = {
     },
     {
       id: 4,
-      name: "Cyber Security",
+      name: "Cybersecurity",
       tab: "p-tab-4",
       count: 10,
     },
@@ -198,19 +428,42 @@ const gallerySection = {
     },
     {
       id: "p-tab-2",
-      items,
+      items: digitalMarketing,
     },
     {
       id: "p-tab-3",
-      items,
+      items: projectManagement,
     },
     {
       id: "p-tab-4",
-      items,
+      items: cyberSecurity,
     },
     {
       id: "p-tab-5",
+      items: dataScience,
+    },
+  ],
+  cTab: [
+    {
+      id: "p-tab-1",
+      name: "Digital Marketing",
       items,
+    },
+    {
+      id: "p-tab-2",
+      items: digitalMarketing,
+    },
+    {
+      id: "p-tab-3",
+      items: projectManagement,
+    },
+    {
+      id: "p-tab-4",
+      items: cyberSecurity,
+    },
+    {
+      id: "p-tab-5",
+      items: dataScience,
     },
   ],
   pTabs2: [
@@ -233,6 +486,20 @@ const gallerySection = {
     {
       id: "p-tab-5",
       items: items3,
+    },
+  ],
+  courseTab: [
+    {
+      id: 1,
+      image: "7.jpg",
+      name: "Project Management",
+      tagline: [
+        "Live Class ",
+        "8 Weeks ",
+        "Internation certification ",
+        "Capstone projects ",
+      ],
+      batch: "New Batch - 8th October, 2022",
     },
   ],
 };
@@ -259,7 +526,7 @@ export const gallerySectionOne = {
     },
     {
       id: 4,
-      name: "Cyber Security",
+      name: "Cybersecurity",
       tab: "cyber-security",
     },
     {

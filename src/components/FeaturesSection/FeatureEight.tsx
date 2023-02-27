@@ -9,7 +9,7 @@ const { image, title, text, barTitle, percent } = featureEight;
 const FeatureEight = () => {
   const [countStart, setCountStart] = useState(false);
 
-  const onVisibilityChange = (isVisible) => {
+  const onVisibilityChange = (isVisible:any) => {
     if (isVisible) {
       setCountStart(true);
     }
@@ -21,7 +21,7 @@ const FeatureEight = () => {
         <Row>
           <Col md={12} lg={5}>
             <div className="feature-eight__image">
-              <Image src={image.src} alt="" />
+              <Image src={image} alt="" />
             </div>
           </Col>
           <Col md={12} lg={7}>

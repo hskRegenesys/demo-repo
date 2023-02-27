@@ -1,11 +1,12 @@
 import { videoOne } from "@/data/videoSection";
 import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 
-const { image, videoId, title, text1, text2 } = videoOne;
-
-const VideoOne = () => {
+const VideoOne = ({ courseDetails }: any) => {
+  const { image, videoId, title, text1, text2 } = courseDetails?.videoOne
+    ? courseDetails?.videoOne
+    : videoOne;
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -14,7 +15,7 @@ const VideoOne = () => {
         <div className="auto-container">
           <div className="video-one__image">
             <Image
-              src={image.src}
+              src={image}
               alt="Linoor is trusted by millions of customers"
             />
             <div className="vid-link">
@@ -25,10 +26,10 @@ const VideoOne = () => {
                 </div>
               </a>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };

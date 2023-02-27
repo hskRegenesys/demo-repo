@@ -11,7 +11,7 @@ const GetQuoteTwo = ({ className = "" }) => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data:any) => console.log(data);
 
   return (
     <section className={`get-quote-two ${className}`}>
@@ -52,7 +52,7 @@ const GetQuoteTwo = ({ className = "" }) => {
                 <div className="default-form">
                   <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
                     <Row className="clearfix">
-                      {inputs.map(({ name, type, placeholder }) => (
+                      {inputs?.map(({ name, type, placeholder }) => (
                         <Col
                           key={name}
                           lg={type ? 6 : 12}
@@ -64,13 +64,11 @@ const GetQuoteTwo = ({ className = "" }) => {
                             {type ? (
                               <input
                                 type={type}
-                                name={name}
                                 placeholder={placeholder}
                                 {...register(name, { required: true })}
                               />
                             ) : (
                               <textarea
-                                name={name}
                                 placeholder={placeholder}
                                 {...register(name, { required: true })}
                               ></textarea>

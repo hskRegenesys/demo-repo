@@ -1,7 +1,6 @@
-import image from "@/images/resource/featured-image-6.jpg";
 
 const agencySection = {
-  image,
+  image: "/assets/images/resource/featured-image-6.jpg",
   title: "Best design Agency\nsolutions",
   text: "There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words which don't look even slightly believable.",
   tabBtns: [

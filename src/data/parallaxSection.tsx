@@ -1,7 +1,6 @@
-import bg from "@/images/background/image-2.jpg";
 
 const parallaxSection = {
-  bg,
+  bg:"/assets/images/background/image-2.jpg",
   icon: "flaticon-app-development",
   title: "Great things in business are never done by one person.",
   title2: "They’re done by a team of people.",

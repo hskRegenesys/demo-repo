@@ -8,14 +8,13 @@ const FluidSection = () => {
     <section className="fluid-section">
       <div className="outer-container">
         <Row className="clearfix">
-          {fluidSection.map(({ id, title, href, btnClassName, bg }) => (
+          {fluidSection?.map(({ id, title, href, btnClassName, bg }) => (
             <Col key={id} lg={6} md={12} sm={12} className="column">
               <div className="inner">
                 <div
                   className="image-layer"
                   style={{
-                    backgroundImage: `url(${
-                      require(`@/images/background/${bg}`).default.src
+                    backgroundImage: `url(${`/assets/images/background/${bg}`
                     })`,
                   }}
                 ></div>

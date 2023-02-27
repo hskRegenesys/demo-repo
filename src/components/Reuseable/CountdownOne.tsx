@@ -1,9 +1,8 @@
-import dynamic from "next/dynamic";
 import React from "react";
+import Countdown from "react-countdown";
 
-const Countdown = dynamic(() => import("react-countdown"));
-
-const Renderer = ({ days, hours, minutes, seconds, completed }) => {
+const Renderer = (props: any) => {
+  const { days, hours, minutes, seconds, completed } = props;
   if (completed) {
     // Render a completed state
     return <h1>Completed</h1>;
@@ -43,11 +42,12 @@ const Renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 const CountdownOne = ({ deadlineDate = "", className = "" }) => {
+  const today: string = new Date().toDateString();
   const deadLine =
     deadlineDate === "dynamicDate"
-      ? new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000)
+      ? new Date(Date.parse(today) + 31 * 24 * 60 * 60 * 1000)
       : deadlineDate === "dynamicHour"
-      ? new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000)
+      ? new Date(Date.parse(today) + 24 * 60 * 60 * 1000)
       : deadlineDate;
 
   return (

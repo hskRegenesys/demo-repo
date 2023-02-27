@@ -1,4 +1,3 @@
-import bg from "@/images/main-slider/banner-bg-shape-3.png";
 
 export const bannerTwo = [
   {
@@ -22,7 +21,7 @@ export const bannerTwo = [
 ];
 
 export const bannerOne = {
-  bg,
+  bg:"/assets/images/main-slider/banner-bg-shape-3.png",
   dayRange: "mon - fri",
   timeRange: "9am - 7pm",
   socials: [

@@ -1,19 +1,7 @@
-import icon from "@/images/icons/close-1-1.png";
-import logo4 from "@/images/logo-2.png";
-import logo3 from "@/images/logo-3.png";
-import logo2 from "@/images/logo-dark.png";
-import logo1 from "@/images/logo.png";
-import logo6 from "@/images/update-01-10-2021/logo-6-dark.png";
-import logo7 from "@/images/update-01-10-2021/logo-7-dark.png";
-import logo8 from "@/images/update-01-10-2021/logo-8-light.png";
-import logo5 from "@/images/update-09-06-2021/logo-5.png";
-import logo10 from "@/images/update-09-06-2021/logo-6.png";
-import logo9 from "@/images/update-26-02-2021/logo-horizontal-portfolio.png";
-
 const home = {
   id: 1,
   name: "Home",
-  href: "/", 
+  href: "/",
 };
 
 const navItemsTwo = [
@@ -57,26 +45,26 @@ const navItemsTwo = [
 
 const navItems = [
   home,
+
+  {
+    id: 4,
+    name: "Courses",
+    href: "/all-course",
+    subNavItems: [
+      { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
+      { id: 6, name: "Data Science", href: "/data-science-main" },
+    ],
+  },
   {
     id: 2,
-    name: "About Us",
+    name: "About",
     href: "/about",
-   
-  },  
-  {
-   id: 4,
-   name: "Courses",
-   href: "/all-course",
-   subNavItems: [   
-     { id: 5, name: "Digital Marketing", href: "/digital-marketing" },  
-    ],
- },
+  },
   {
     id: 8,
-   name: "Contact",
-    href: "/contact", 
-  },  
-
+    name: "Contact",
+    href: "/contact",
+  },
 ];
 
 export const socials = [
@@ -106,23 +94,23 @@ const headerData = {
   title: "",
   title2: "",
   title3: ".",
-  logo1,
-  logo2,
-  logo3,
-  logo4,
-  logo5,
-  logo6,
-  logo7,
-  logo8,
-  logo9,
-  logo10,
+  logo4: "/assets/images/logo-dark.png",
+  logo3: "/assets/images/logo-3.png",
+  logo2: "/assets/images/logo-dark.png",
+  logo1: "/assets/images/logo.png",
+  logo6: "/assets/images/update-01-10-2021/logo-6-dark.png",
+  logo7: "/assets/images/update-01-10-2021/logo-7-dark.png",
+  logo8: "/assets/images/update-01-10-2021/logo-8-light.png",
+  logo5: "/assets/images/update-09-06-2021/logo-5.png",
+  logo10: "/assets/images/update-09-06-2021/logo-6.png",
+  logo9: "/assets/images/update-26-02-2021/logo-horizontal-portfolio.png",
   navItems,
   navItemsTwo,
   address: "",
   phone: "",
   phone2: "",
   email: "",
-  icon,
+  icon: "/assets/images/icons/close-1-1.png",
   socials,
   text: "",
 };

@@ -1,7 +1,7 @@
 import whyUs from "@/data/whyUs";
 import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 
 const { image, title, features, videoId } = whyUs;
 
@@ -17,7 +17,7 @@ const WhyUs = () => {
               <div className="inner animated fadeInLeft">
                 <div className="round-box">
                   <div className="image-box">
-                    <Image src={image.src} alt="" />
+                    <Image src={image} alt="" />
                   </div>
                   <div className="vid-link">
                     <a onClick={() => setOpen(true)} className="lightbox-image">
@@ -39,7 +39,7 @@ const WhyUs = () => {
                   </h2>
                 </div>
                 <div className="features">
-                  {features.map(({ id, title, text }) => (
+                  {features?.map(({ id, title, text }) => (
                     <div key={id} className="feature">
                       <div className="inner-box">
                         <h6>{title}</h6>
@@ -53,7 +53,7 @@ const WhyUs = () => {
           </Row>
         </div>
       </section>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };

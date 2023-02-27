@@ -9,7 +9,7 @@ const options = [
   "Graphic Designing",
   "Digital Marketing",
   "App Development",
-].map((it) => ({
+]?.map((it) => ({
   value: it,
   label: it,
 }));
@@ -28,16 +28,16 @@ const {
 const GetQuote = () => {
   const [service, setService] = useState("");
 
-  const handleSelectService = ({ value }) => {
-    setService(value);
+  const handleSelectService = (props:any) => {
+    setService(props.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = {};
-    inputs.forEach(({ name }) => (data[name] = formData.get(name)));
-    console.log({ ...data, service });
+    // const formData = new FormData(e.target);
+    // const data:any = {};
+    // inputs?.forEach((item:any) => (data[item.name] = formData.get(item.name)));
+    // console.log({ ...data, service });
   };
 
   return (
@@ -48,7 +48,7 @@ const GetQuote = () => {
             <div className="inner">
               <div className="featured-block clearfix">
                 <div className="image">
-                  <Image src={featuredImage.src} alt="" />
+                  <Image src={featuredImage} alt="" />
                 </div>
                 <h4>{featuredTitle}</h4>
                 <div className="text">{text}</div>
@@ -64,7 +64,7 @@ const GetQuote = () => {
                     <div className="counter-title">{counterTitle}</div>
                   </div>
                   <div className="counter-image">
-                    <Image src={counterImage.src} alt="" />
+                    <Image src={counterImage} alt="" />
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const GetQuote = () => {
                     <span>.</span>
                   </h4>
                   <form onSubmit={handleSubmit}>
-                    {inputs.map(({ name, type, placeholder }) => (
+                    {inputs?.map(({ name, type, placeholder }) => (
                       <div key={name} className="form-group">
                         <div className="field-inner">
                           <input

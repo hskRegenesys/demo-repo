@@ -2,7 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { Image } from "react-bootstrap";
 
-const CartProduct = ({ product = {}, handleQuantity, handleRemove }) => {
+const CartProduct = (props: any) => {
+  let { product = {}, handleQuantity, handleRemove } = props;
   const { id, image, title, price, quantity } = product;
   const total = (price * quantity).toFixed(2);
 
@@ -11,9 +12,7 @@ const CartProduct = ({ product = {}, handleQuantity, handleRemove }) => {
       <td>
         <div className="product-box">
           <Image
-            src={
-              require(`@/images/update-26-01-2021/shops/${image}`).default.src
-            }
+            src={`/assets/images/update-26-01-2021/shops/${image}`}
             alt=""
           />
           <h3>

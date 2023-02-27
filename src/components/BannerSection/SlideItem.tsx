@@ -2,7 +2,8 @@ import Link from "next/link";
 import React, { forwardRef } from "react";
 import TextSplit from "../Reuseable/TextSplit";
 
-const SlideItem = ({ slide = {} }, ref) => {
+const SlideItem = (props: { key: any; slide: any; ref: any }) => {
+  const { key, slide, ref } = props;
   const { bg, subtitle, title } = slide;
 
   return (
@@ -10,12 +11,10 @@ const SlideItem = ({ slide = {} }, ref) => {
       <div
         className="image-layer"
         style={{
-          backgroundImage: `url(${
-            require(`@/images/main-slider/${bg}`).default.src
-          })`,
+          backgroundImage: `url(${`/assets/images/main-slider/${bg}`})`,
         }}
       ></div>
-      {Array.from(Array(6)).map((_, i) => (
+      {Array.from(Array(6))?.map((_, i) => (
         <div key={i} className={`shape-${i + 1}`}></div>
       ))}
       <div className="auto-container">

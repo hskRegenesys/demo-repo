@@ -1,11 +1,18 @@
 export const contactSection = {
   inputs: [
     {
-      name: "username",
+      name: "firstname",
       type: "text",
-      placeholder: "Your Name",
+      placeholder: "Your First name",
       required: true,
       label: "First Name"
+    },
+    {
+      name: "lastname",
+      type: "text",
+      placeholder: "Your Last name",
+      required: true,
+      label: "Last Name"
     },
     {
       name: "email",
@@ -20,9 +27,9 @@ export const contactSection = {
       required: true,
     },
     {
-      name: "subject",
+      name: "country",
       type: "text",
-      placeholder: "Subject",
+      placeholder: "Enter your Country",
       required: true,
     },
     {
@@ -31,6 +38,8 @@ export const contactSection = {
       required: true,
     },
   ],
+
+
   title: "Offices near you",
   contacts: [
     {
