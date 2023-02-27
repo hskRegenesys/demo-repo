@@ -3087,7 +3087,6 @@ tns-controls-tools {
   font-size: 15px;
   line-height: 25px;
   font-weight: bold;
-  text-transform: capitalize;
   transition: all 500ms ease;
   font-family: raleway;
 }
