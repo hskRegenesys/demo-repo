@@ -17,11 +17,11 @@ const discoverSection = {
       image: "contact-time-call.png",
       title: "Make a Call",
       phone2: " +91 1800 212 9950",
-      phone3: " +27 116 669 212 5000",
+      phone3: " +27 11 669 212 5000",
       buttonText1: "call  (IND)",
       buttonText2: "call  (SA)",
       text: "India: +91 1800 212 9950",
-      text1: "South Africa : +27 116 669 212 5000",
+      text1: "South Africa : +27 11 669 212 5000",
     },
   ],
   discovers3: [

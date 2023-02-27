@@ -8,21 +8,16 @@ const SingleService = (props: any) => {
   return (
     <Col xl={3} lg={6} md={6} sm={12} className="service-block-two">
       <div className="inner-box animated fadeInUp">
-        <div className="bottom-curve"></div>
-        <div className="icon-box">
-          <span className={icon}></span>
-        </div>
-        <h5>
-          <a href={href} target="_blank">
+         <a href={href} target="_blank" rel="noreferrer">
+          <div className="icon-box">
+            <span className={icon}></span>
             <TextSplit text={title} />
-          </a>
-        </h5>
-
-        <div className="link-box">
-          <a href="#">
+          </div>
+       
+          <div className="link-box">
             <span className="fa fa-arrow-right"></span>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </Col>
   );
