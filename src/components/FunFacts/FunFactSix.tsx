@@ -18,7 +18,8 @@ const FunFactSix = () => {
 
 
                   <div className="count-text text-start">
-                    <VisibilityCountUp count={count} />
+                    <VisibilityCountUp count={count}/><span>+</span>
+                    
                     <p className="funfact-six__text">{text}</p>
                   </div>
                  
