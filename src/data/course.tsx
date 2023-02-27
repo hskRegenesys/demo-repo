@@ -78,16 +78,15 @@ export const courseData = {
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+      desc1: "Get exposure to Yammer, Excel, Discord, and Slack",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -358,16 +357,15 @@ export const courseData = {
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+      desc1: "We have to Remove the Exposure & Tools covered section as requested by Vigor.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -689,17 +687,17 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
+        subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1061,17 +1059,17 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
+        subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1394,17 +1392,17 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
+        subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1683,17 +1681,17 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
+         subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1967,17 +1965,17 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
+        subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -2250,17 +2248,17 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
+        subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "From the respective Page from DR Course Page Links.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",

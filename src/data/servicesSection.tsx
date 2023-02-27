@@ -47,25 +47,25 @@ export const serviceSectionThree = [
     id: 1,
     icon: "fa fa-laptop",
     title: "Live Classes",
-    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
+    desc: "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real time and take your skills to the next level.",
   },
   {
     id: 2,
     icon: "fa fa-user-check",
     title: "Ph.d. Faculty",
-    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
+    desc: "Highly trained experts having PhDs in their respective fields possess the skills and knowledge to provide top-quality education.",
   },
   {
     id: 3,
     icon: "fa fa-users",
     title: "Industry Experts",
-    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
+    desc: "Learn from the best in the business! Our education programs are taught by industry experts, ensuring you gain insights and skills from the top leaders in the field.",
   },
   {
     id: 4,
     icon: "far fa-file-alt",
     title: "Digital Regenesys Certification",
-    desc: "Live online classes are synchronous events organized in a live virtual meeting room where students and teachers meet together to communicate with voice, video.",
+    desc: "Certify your skills and knowledge with our industry-recognized certification programs, designed to validate your expertise and open doors to new opportunities.",
   },
 ];
 
