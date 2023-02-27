@@ -16042,7 +16042,8 @@ h2.curve-right:after {
   font-size: 14px;
   font-weight: bold;
   color: #000;
-  line-height: 1;
+  line-height: 18px;
+  width: 100px;
 }
 
 /* Project six */
@@ -18169,7 +18170,6 @@ h2.curve-right:after {
   font-family: "Poppins-semibold", sans-serif;
   font-size: 22px;
   margin-bottom: 8px;
-  float: left;
 }
 
 .sec-title h4 {
@@ -19827,4 +19827,21 @@ h2.curve-right:after
 }
 .font-capitalized{
   text-transform: capitalize;
+}
+
+
+.video-one, #vid-link
+{
+  display: none !important;
+}
+
+.funfact-six .pl-0:first-child .image-box:first-child
+{
+  padding: 8px;
+} 
+
+.funfact-six .pl-0:first-child .count-text span, 
+.funfact-six .pl-0:nth-child(3) .count-text span
+{
+display: none;
 }
