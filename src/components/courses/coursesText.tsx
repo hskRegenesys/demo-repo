@@ -10,7 +10,7 @@ const CourseText = ({ page }: any) => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const { title, pagedesc, imagearrow } =
-    page === "Data-Science" ? dataScienceCourse : digitalMarketingText;
+    page === "data-science" ? dataScienceCourse : digitalMarketingText;
   return (
     <>
       <section className="all-course-section all-course-wave">

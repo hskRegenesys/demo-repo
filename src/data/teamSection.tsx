@@ -24,20 +24,20 @@ const socials = [
 const teamSection = {
   title: "Popular topics",
   teams: [
-      {
+    {
       id: 9,
       name: "Basic Digital Marketing ",
-      href: "/Basic-Digital-Marketing/25",
+      href: "/basic-digital-marketing/25",
     },
     {
       id: 10,
       name: "Advanced Digital Marketing",
-      href: "/Advance-Digital-Marketing/26",
+      href: "/advance-digital-marketing/26",
     },
     {
       id: 11,
       name: "Applied Digital Marketing",
-      href: "/Applied-Digital-Marketing/27",
+      href: "/applied-digital-marketing/27",
     },
     {
       id: 2,
@@ -48,21 +48,21 @@ const teamSection = {
       id: 3,
       name: "Cybersecurity",
       href: "/Cybersecurity/29",
-    },   
+    },
     {
       id: 6,
-      name: "Basic Data Science",
-      href: "/Basic-Data-Science/11",
+      name: "basic data science",
+      href: "/basic-data-science/11",
     },
-     {
+    {
       id: 7,
-      name: "Advanced Data Science",
-      href: "/Advance-Data-Science/18",
+      name: "advanced data science",
+      href: "/advance-data-science/18",
     },
     {
       id: 8,
       name: "Applied Data Science",
-      href: "/Applied-Data-Science/23",
+      href: "/applied-data-science/23",
     },
   ],
 };

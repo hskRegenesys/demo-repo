@@ -41,9 +41,9 @@ const TrendingSection = () => {
 
   function redirectCard(name: any, code: any, id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-")}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}`);
     } else {
-      router.push(`/${name?.split(" ").join("-")}/${id}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}/${id}`);
     }
   }
 
@@ -76,7 +76,7 @@ const TrendingSection = () => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.ceil(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-      msInWeek
+        msInWeek
     );
   }
   return (
@@ -96,7 +96,14 @@ const TrendingSection = () => {
               ref={listRef}
             >
               {CourseCard?.map(
-                ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
+                ({
+                  id,
+                  name,
+                  courseMode,
+                  batches,
+                  code,
+                  durationInWeeks,
+                }: any) => (
                   <div ref={listRef} className="gallery-item" key={id}>
                     <div
                       className="inner-box"
@@ -126,9 +133,7 @@ const TrendingSection = () => {
                           <div className="cat">
                             <ul className="about-seven__list list-unstyled">
                               <li>{courseMode.name} Classes</li>
-                              <li>
-                                {durationInWeeks} Weeks
-                              </li>
+                              <li>{durationInWeeks} Weeks</li>
                               <li>International certification </li>
                               <li>Capstone projects </li>
                             </ul>

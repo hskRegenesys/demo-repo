@@ -33,15 +33,15 @@ const ProductTab = ({ courses = [], current }: any) => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-      msInWeek
+        msInWeek
     );
   }
 
   function redirectCard(name: any, code: any, id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-")}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}`);
     } else {
-      router.push(`/${name?.split(" ").join("-")}/${id}`);
+      router.push(`/${name?.split(" ").join("-").toLowerCase()}/${id}`);
     }
   }
 
@@ -98,11 +98,21 @@ const ProductTab = ({ courses = [], current }: any) => {
                       <div className="title">
                         <h5>
                           {code === "DSCI" || code === "DM" ? (
-                            <Link href={`/${name?.split(" ").join("-")}`}>
+                            <Link
+                              href={`/${name
+                                ?.split(" ")
+                                .join("-")
+                                .toLowerCase()}`}
+                            >
                               <a>{name}</a>
                             </Link>
                           ) : (
-                            <Link href={`/${name?.split(" ").join("-")}/${id}`}>
+                            <Link
+                              href={`/${name
+                                ?.split(" ")
+                                .join("-")
+                                .toLowerCase()}/${id}`}
+                            >
                               <a>{name}</a>
                             </Link>
                           )}
@@ -112,9 +122,7 @@ const ProductTab = ({ courses = [], current }: any) => {
                       <div className="cat">
                         <ul className="about-seven__list list-unstyled">
                           <li>{courseMode.name} Classes</li>
-                          <li>
-                            {durationInWeeks} Weeks
-                          </li>
+                          <li>{durationInWeeks} Weeks</li>
                           <li>Internation Certification </li>
                           <li>Capstone Projects </li>
                         </ul>
