@@ -40,7 +40,7 @@ export const digitalMarketingMain = [
 export const digitalMarketingText = {
   title: "Digital Marketing",
   pagedesc:
-    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advance and applied. Learn these aspects of Digital Marketing and its real-world use.",
+    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advanced and applied. Learn these aspects of Digital Marketing and its real-world use.",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
 
@@ -117,7 +117,7 @@ export const courseData = {
           id: 2,
           image: "James_forson.jpeg",
           title: "James Forson",
-          text: "James Forson is known for his excellent work in Project Management. James has pursued B Soc Sc (Hons) from UCT and MBA from UCT. James is the Chief Operating Officer at Regenesys Business School.",
+          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
           designation: "BSocSc (Hons)",
         },
       ],
