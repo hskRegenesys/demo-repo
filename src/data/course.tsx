@@ -1949,7 +1949,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Programme in Advanced Digital Marketing",
-        text: "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -1961,7 +1961,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
