@@ -29,10 +29,10 @@ export const partnerOne = [
     title: "Mock interviews",
     text: "Prepare for success with our expert-led mock interview sessions to simulate real-world interview scenarios and help you gain the confidence and skills needed to ace your next interview.",
   },
-  {
-    id: 6,
-    image: "shape6.png",
-    title: "One-on-one session",
-    text: "Maximize your learning potential with our personalized one-on-one sessions, tailored to your unique needs and learning style, and unlock your full potential.",
-  },
+  // {
+  //   id: 6,
+  //   image: "shape6.png",
+  //   title: "One-on-one session",
+  //   text: "Maximize your learning potential with our personalized one-on-one sessions, tailored to your unique needs and learning style, and unlock your full potential.",
+  // },
 ];

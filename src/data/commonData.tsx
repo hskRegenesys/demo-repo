@@ -29,7 +29,7 @@ const Data = {
         "Project Management Course in South Africa | Digital Regenesys",
       designThinking: "Design Thinking",
       "data-science":
-        "Data Science, advance your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
+        "Data Science, advanced your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
       "advanced-data-science":
         "Advanced Data Science Courses Online | Digital Regenesys",
       "applied-data-science":
@@ -102,7 +102,7 @@ const Data = {
       cybersecurity:
         "High-quality Cybersecurity course from Digital Regenesys. Learn all about network threats, vulnerabilities, data security, risk management, and much more.",
       "digital-marketing":
-        "Digital marketing, advance your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
+        "Digital marketing, advanced your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
       "basic-digital-marketing":
         "The basic digital marketing course offered by Digital Regenesys lays a solid foundation of essential digital marketing domains. Visit our website to explore more.",
       "advanced-digital-marketing":
@@ -113,7 +113,7 @@ const Data = {
         "Study a Project Management course in South Africa with Digital Regenesys to acquire the know-how on managing projects successfully. Enquire now.",
       designThinking: "Design Thinking",
       "data-science":
-        "Data Science, advance your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
+        "Data Science, advanced your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
       "advanced-data-science":
         "Advanced Data Science course will help you build a successful career as a Data Scientist with in-demand skills such as data analytics, machine learning, AI, and more.",
       "applied-data-science":
