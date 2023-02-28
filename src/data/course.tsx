@@ -693,14 +693,14 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from foundation phase in this course through to the applied and advanced programmes.",
 
       subTitle3: "Live sessions",
       desc3:
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      desc4: "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
       bg1: "/assets/images/background/reason-bg1.png",
       bg2: "/assets/images/background/reason-bg2.png",
       bg3: "/assets/images/background/reason-bg3.png",
@@ -742,7 +742,7 @@ export const courseData = {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -1114,7 +1114,7 @@ export const courseData = {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -1447,7 +1447,7 @@ export const courseData = {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -2250,7 +2250,7 @@ export const courseData = {
       title: "Reasons To Join This Course",
         subTitle1: "Exposure",
       desc1:
-        "From the respective Page from DR Course Page Links.",
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
       subTitle2: "Best-in-class instructors",
       desc2:

@@ -51,12 +51,12 @@ const teamSection = {
     },
     {
       id: 6,
-      name: "basic data science",
+      name: "Basic Data Science",
       href: "/basic-data-science/11",
     },
     {
       id: 7,
-      name: "advanced data science",
+      name: "Advanced Data Science",
       href: "/advance-data-science/18",
     },
     {
