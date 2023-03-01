@@ -4,7 +4,7 @@ const Data = {
       home: "Digital Regenesys: Online Certificate Courses for Professionals",
       about: "About Digital Regenesys: Online Digital Skills Course Provider",
       allCourse:
-        "All Courses: Boost Your Career with Professional Courses | Digital Regenesys",
+        "Boost Your Career with Professional Courses | Digital Regenesys",
       contact: "Contact Us: Reach Out for Help and Support | Digital Regenesys",
       privacyPolicy:
         "Privacy Policy: Protecting Your Data & Information | Digital Regenesys",
@@ -16,7 +16,7 @@ const Data = {
       login: "Login",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
-      cybersecurity: "Cybersecurity Course Online | Digital Regenesys",
+      cybersecurity: "Cyber Security Course Online | Digital Regenesys",
       "digital-marketing":
         "Digital Marketing Course Online | Digital Regenesys",
       "basic-digital-marketing":
@@ -26,10 +26,10 @@ const Data = {
       "applied-digital-marketing":
         "Applied Digital Marketing Course Online | Digital Regenesys",
       "project-management":
-        "Project Management Course in South Africa | Digital Regenesys",
+        "Project Management Course Online | Digital Regenesys",
       designThinking: "Design Thinking",
       "data-science":
-        "Data Science, advanced your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
+        "Data Science: Data Science Course Online | Digital Regenesys",
       "advanced-data-science":
         "Advanced Data Science Courses Online | Digital Regenesys",
       "applied-data-science":
@@ -41,11 +41,12 @@ const Data = {
         "Investment, Trading, Personal Finance Course | Digital Regenesys",
     },
     keywords: {
-      home: "Digital Regenesys, digital skills, digital marketing course, data science course, project management course, Cybersecurity courses, online courses",
-      about: "About",
-      allCourse: "All Course",
+      home: "online courses",
+      about:
+        "about digital regenesys, best digital courses, best digital regenesys courses online",
+      allCourse: "Online learning",
       contact: "Contact Us",
-      privacyPolicy: "Privacy Policy",
+      privacyPolicy: "Privacy and Policy",
       refundPolicy: "Refund Policy",
       termsCondition:
         "All academic and accredited Courses are subject to academic rules, regulations and applicable domestic legislation as published and revised from time-to-time.",
@@ -54,8 +55,7 @@ const Data = {
       login: "Login",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
-      cybersecurity:
-        "Cybersecurity, Cybersecurity courses, Cybersecurity south africa, Cybersecurity courses in south africa, Cybersecurity course",
+      cybersecurity: "cyber security",
       "digital-marketing":
         "Digital Regenesys, digital skills, digital marketing course, data science course, project management course, cyber security courses, online courses, digital marketing digital marketing course what is digital marketing digital school of marketing digital marketing meaning digital marketing salary digital marketing strategy fundamentals of digital marketing digital marketing courses in south africa online digital marketing courses career in digital marketing digital marketing degree",
 
@@ -64,15 +64,12 @@ const Data = {
       "advanced-digital-marketing": "Advanced Digital Marketing",
       "applied-digital-marketing":
         "applied Digital Marketing Course, applied Digital Marketing Course details, applied Digital Marketing Course eligibility, applied Digital Marketing Course fees, applied Digital Marketing Course duration, best applied Digital Marketing Course, applied Digital Marketing Course online",
-      "project-management":
-        "project management, project management course, project management courses in south africa, project management institute, project management courses online",
+      "project-management": "project management courses online",
       designThinking: "Design Thinking",
       "data-science":
         "data science, explore data science academy, data science course, what is data science, data science course south africa, data science south africa, Data science courses South Africa, Data science training South Africa, Best data science courses in South Africa, Data science certification South Africa, Data analytics courses South Africa, Machine learning courses South Africa, Python for data science courses South Africa, R programming for data science courses South Africa, Data science bootcamp South Africa, Big data courses South Africa, Business analytics courses South Africa, Artificial intelligence courses South Africa, Data engineering courses South Africa, Data visualization courses South Africa, Data science online courses South Africa, Data science skills South Africa, Data science jobs South Africa, Data science salary South Africa, Data science career path South Africa, Data science universities in South Africa",
-      "advanced-data-science":
-        "Best advanced data science courses advanced data science advanced python for data science advanced data science courses",
-      "applied-data-science":
-        "applied data science with python specialization applied statistics vs data science applied data science with python applied data science with python specialization review applied data science applied data science course what is applied data science",
+      "advanced-data-science": "best advanced data science courses",
+      "applied-data-science": "applied data science with python specialization",
       "basic-data-science": "basic data science, basic data science course,",
       thankYou: "Thank You",
       createMyWealth:
@@ -100,9 +97,9 @@ const Data = {
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
       cybersecurity:
-        "High-quality Cybersecurity course from Digital Regenesys. Learn all about network threats, vulnerabilities, data security, risk management, and much more.",
+        "High-quality Cyber Security course from Digital Regenesys. Learn all about network threats, vulnerabilities, data security, risk management, and much more.",
       "digital-marketing":
-        "Digital marketing, advanced your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
+        "Digital marketing, advance your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
       "basic-digital-marketing":
         "The basic digital marketing course offered by Digital Regenesys lays a solid foundation of essential digital marketing domains. Visit our website to explore more.",
       "advanced-digital-marketing":
@@ -110,10 +107,10 @@ const Data = {
       "applied-digital-marketing":
         "The applied digital marketing course offered by Digital Regenesys equips students with real-world applications of Digital Marketing taught by industry experts. ",
       "project-management":
-        "Study a Project Management course in South Africa with Digital Regenesys to acquire the know-how on managing projects successfully. Enquire now.",
+        "Study a Project Management course with Digital Regenesys to acquire the know-how on managing projects successfully. Enquire now.",
       designThinking: "Design Thinking",
       "data-science":
-        "Data Science, advanced your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
+        "Data Science, advance your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
       "advanced-data-science":
         "Advanced Data Science course will help you build a successful career as a Data Scientist with in-demand skills such as data analytics, machine learning, AI, and more.",
       "applied-data-science":

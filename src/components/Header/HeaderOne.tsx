@@ -104,7 +104,9 @@ const HeaderOne = ({
             return {
               id: item?.id,
               name: item?.name,
-              href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+              href: `/${item?.name?.split(" ").join("-").toLowerCase()}/${
+                item?.id
+              }`,
             };
           });
           if (filterData) {

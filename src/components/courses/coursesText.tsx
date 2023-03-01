@@ -25,9 +25,9 @@ const CourseText = ({ page }: any) => {
             <div className="sign-arrow">
               <Image src={imagearrow} alt="" />
             </div>
-            <h1 className="page-head">
+            <h2 className="page-head">
               <TextSplit text={title} />
-            </h1>
+            </h2>
             <h6 className="desc">{pagedesc}</h6>
 
             <a className="theme-btn btn-style-two" onClick={handleShow}>
