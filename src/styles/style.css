@@ -17647,6 +17647,7 @@ h2.curve-right:after {
 }
 
 .partner-one__card {
+  min-height: 500px;
   margin-bottom: 30px;
   border: 0 none;
   border-radius: 20px;
