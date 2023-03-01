@@ -4979,9 +4979,25 @@ tns-controls-tools {
 }
 
 @media (min-width: 992px) {
-  .sponsors-section-four .content-box h3 {
-    margin-bottom: 40px;
+  .sponsors-section-four .content-box h1 {
     max-width: 782px;
+    line-height: 1em;
+    font-size: 48px;
+    margin: 0 auto 10px;
+    font-weight: 600;
+    font-family: Raleway-semibold;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .sponsors-section-four .content-box h1 {
+    max-width: 782px;
+    line-height: 1em;
+    font-size: 40px;
+    margin: 0 auto 10px;
+    font-weight: 600;
+    font-family: Raleway-semibold;
+    margin-bottom: 40px;
   }
 }
 
@@ -6058,6 +6074,11 @@ featured-section .right-col .sec-title h2 {
   font-size: 52px;
   font-family: "Raleway-semibold";
   max-width: 465px;
+}
+.featured-section .right-col .inner h1.title-home {
+  font-size: 46px;
+  font-family: "Raleway-semibold";
+  max-width: 100%;
 }
 
 .featured-section__about-two {
@@ -8445,8 +8466,9 @@ featured-section .right-col .sec-title h2 {
   margin-bottom: 40px;
 }
 
-.features-section-two .sec-title h2 {
+.features-section-two .sec-title h1 {
   max-width: 275px;
+  font-weight: 600;
 }
 
 .features-section-two .features {
@@ -19110,7 +19132,7 @@ input.PhoneInputInput {
     margin-bottom: 15px;
   }
 
-  .features-section-two .sec-title h2 {
+  .features-section-two .sec-title h1 {
     max-width: 100%;
   }
 

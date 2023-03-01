@@ -357,7 +357,8 @@ export const courseData = {
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1: "We have to Remove the Exposure & Tools covered section as requested by Vigor.",
+      desc1:
+        "We have to Remove the Exposure & Tools covered section as requested by Vigor.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -687,7 +688,7 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-        subTitle1: "Exposure",
+      subTitle1: "Exposure",
       desc1:
         "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
@@ -700,7 +701,8 @@ export const courseData = {
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
+      desc4:
+        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
       bg1: "/assets/images/background/reason-bg1.png",
       bg2: "/assets/images/background/reason-bg2.png",
       bg3: "/assets/images/background/reason-bg3.png",
@@ -1059,7 +1061,7 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-        subTitle1: "Exposure",
+      subTitle1: "Exposure",
       desc1:
         "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
@@ -1392,7 +1394,7 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-        subTitle1: "Exposure",
+      subTitle1: "Exposure",
       desc1:
         "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
@@ -1681,7 +1683,7 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-         subTitle1: "Exposure",
+      subTitle1: "Exposure",
       desc1:
         "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
@@ -1965,7 +1967,7 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-        subTitle1: "Exposure",
+      subTitle1: "Exposure",
       desc1:
         "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
@@ -1985,7 +1987,7 @@ export const courseData = {
       bg4: "/assets/images/background/reason-bg4.png",
     },
     courseTools: [
-       "./dm/digital_marketing_tools1.png",
+      "./dm/digital_marketing_tools1.png",
       "./dm/digital_marketing_tools2.png",
       "./dm/digital_marketing_tools3.png",
       "./dm/digital_marketing_tools4.png",
@@ -2253,7 +2255,7 @@ export const courseData = {
     },
     joinReasons: {
       title: "Reasons To Join This Course",
-        subTitle1: "Exposure",
+      subTitle1: "Exposure",
       desc1:
         "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 

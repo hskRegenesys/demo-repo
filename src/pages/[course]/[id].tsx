@@ -70,7 +70,10 @@ const DigitalMarketing = () => {
         parent="All courses"
         parentHref="/all-course"
         parentToParent={parentToParentName()}
-        parentToParentHref={`/${parentToParentName()?.toLowerCase().split(" ").join("-")}`}
+        parentToParentHref={`/${parentToParentName()
+          ?.toLowerCase()
+          .split(" ")
+          .join("-")}`}
       />
       {courseDetails && (
         <>

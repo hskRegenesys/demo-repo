@@ -64,7 +64,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
       });
     }
   }
-  console.log("priceDetails =====>", priceDetails);
+
   return (
     <section className="product-details">
       <div className="auto-container">
