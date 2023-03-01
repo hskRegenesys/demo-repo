@@ -19834,6 +19834,15 @@ button[disabled] {
 .page-head {
   font-size: 3rem;
 }
+span.page-head {
+  position: relative;
+  font-weight: 400;
+  margin: 0 0 20px;
+  background: none;
+  line-height: 1.25em;
+  font-family: var(--thm-font);
+  color: var(--thm-black);
+}
 .font-capitalized {
   text-transform: capitalize;
 }
