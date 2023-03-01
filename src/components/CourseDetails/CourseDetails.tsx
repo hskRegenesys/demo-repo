@@ -20,7 +20,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                   <div className="sec-title">
                     <h2 className="arrow-right-bottom">
                       <i className="arrow-sign-right"></i>
-                      <span className="page-head">{title}</span>
+                      <h1 className="page-head">{title}</h1>
                     </h2>
                   </div>
                   <section className="product-description desktop-hide p-0">

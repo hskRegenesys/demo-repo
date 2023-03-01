@@ -42,6 +42,8 @@ const DigitalMarketing = () => {
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
   const brochureName: any = brochureDetails[code];
+
+  console.log("allContent--", allContent);
   const parentToParentName = () => {
     let result = "";
     const filterData = _.find(
@@ -70,7 +72,10 @@ const DigitalMarketing = () => {
         parent="All courses"
         parentHref="/all-course"
         parentToParent={parentToParentName()}
-        parentToParentHref={`/${parentToParentName()?.toLowerCase().split(" ").join("-")}`}
+        parentToParentHref={`/${parentToParentName()
+          ?.toLowerCase()
+          .split(" ")
+          .join("-")}`}
       />
       {courseDetails && (
         <>

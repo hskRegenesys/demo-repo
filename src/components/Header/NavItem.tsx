@@ -7,7 +7,7 @@ const SubItem = (props: any) => {
   const [active, setActive] = useState(false);
   const contextRoot: any = useRootContext();
   const { menuStatus } = contextRoot;
-  const { subItems,  href, name, isNew } = props.subItem;
+  const { subItems, href, name, isNew } = props.subItem;
   const { pathname } = useRouter();
 
   const handleActive = (e: any) => {
@@ -35,9 +35,12 @@ const SubItem = (props: any) => {
       </Link>
       <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
         {subItems?.map((item: any) => (
-          <li key={item.id}  className={`dropdown`}>
+          <li key={item.id} className={`dropdown`}>
             <Link href={item.href}>
-              <a href={item.href} style={{fontSize:'14px', fontWeight:'400'}}>
+              <a
+                href={item.href}
+                style={{ fontSize: "14px", fontWeight: "400" }}
+              >
                 {item.name} {item.isNew && <span>new</span>}
               </a>
             </Link>
@@ -90,7 +93,7 @@ const NavItem = (props: any) => {
           }}
         >
           {subNavItems?.map((subItem: any) => (
-            <SubItem key={subItem.id} subItem={subItem}/>
+            <SubItem key={subItem.id} subItem={subItem} />
           ))}
         </ul>
       )}
