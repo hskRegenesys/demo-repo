@@ -1036,7 +1036,6 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
-    pageId: "abc",
   },
 
   //Advance Data Science

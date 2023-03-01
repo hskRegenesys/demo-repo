@@ -17,10 +17,8 @@ export default function LandingForm(contactform: any) {
   };
 
   const onSubmit = (data: any) => {
-    let pageId = data.pageId;
     const current = new Date();
     data.page_url = window.location.href;
-    data.pageId = pageId;
 
     (data.zapUrl = process.env.LEADS_API_BASE_URL + "/leads"),
       (data.highestQualification = "");

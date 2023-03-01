@@ -42,8 +42,6 @@ const DigitalMarketing = () => {
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
   const brochureName: any = brochureDetails[code];
-
-  console.log("allContent--", allContent);
   const parentToParentName = () => {
     let result = "";
     const filterData = _.find(
