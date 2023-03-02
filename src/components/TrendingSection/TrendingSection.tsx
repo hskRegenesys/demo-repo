@@ -7,8 +7,8 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
-import { batchInfo } from "../config/helper";
-import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
+import { batchInfo, urlInfo } from "../config/helper";
+import { dataScienceCode, digitalMarkrtingCode, programBaseUrl } from "../config/constant";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -39,11 +39,21 @@ const TrendingSection = () => {
     setcourseData(courseListResponse);
   };
 
-  function redirectCard(name: any, code: any, id: any) {
+  function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-").toLowerCase()}`);
+      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
-      router.push(`/${name?.split(" ").join("-").toLowerCase()}/${id}`);
+      const courseDetails = _.find(
+        courseData,
+        (item) => item?.id === parent_id
+      );
+      courseDetails
+        ? router.push(
+            `/${programBaseUrl}/${urlInfo(courseDetails?.name)}/${urlInfo(
+              name
+            )}`
+          )
+        : router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     }
   }
 
@@ -103,11 +113,12 @@ const TrendingSection = () => {
                   batches,
                   code,
                   durationInWeeks,
+                  parent_id
                 }: any) => (
                   <div ref={listRef} className="gallery-item" key={id}>
                     <div
                       className="inner-box"
-                      onClick={() => redirectCard(name, code, id)}
+                      onClick={() => redirectCard(name, code, id, parent_id)}
                     >
                       {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>

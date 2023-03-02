@@ -8,8 +8,12 @@ import Pagination from "react-bootstrap/Pagination";
 import { courseService } from "src/services";
 import _ from "lodash";
 import { useRouter } from "next/router";
-import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
-import { batchInfo } from "../config/helper";
+import {
+  dataScienceCode,
+  digitalMarkrtingCode,
+  programBaseUrl,
+} from "../config/constant";
+import { batchInfo, urlInfo } from "../config/helper";
 
 const handleSearch = (e: any) => {
   e.preventDefault();
@@ -49,11 +53,21 @@ const AllCourseGallery = () => {
     checkFilter(checkFilterData);
   }, [checkFilterData]);
 
-  function redirectCard(name: any, code: any, id: any) {
+  function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-").toLowerCase()}`);
+      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
-      router.push(`/${name?.split(" ").join("-").toLowerCase()}/${id}`);
+      const courseDetails = _.find(
+        courseData,
+        (item) => item?.id === parent_id
+      );
+      courseDetails
+        ? router.push(
+            `/${programBaseUrl}/${urlInfo(courseDetails?.name)}/${urlInfo(
+              name
+            )}`
+          )
+        : router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     }
   }
 
@@ -153,6 +167,7 @@ const AllCourseGallery = () => {
                   <h6 className="border-bottom">All Courses</h6>
                   {checkCourseData?.map(({ code, name, id }: any) => (
                     <Form.Check
+                      key={id}
                       onChange={(e) => {
                         if (e.target.checked) {
                           setCheckFilterData([
@@ -182,7 +197,7 @@ const AllCourseGallery = () => {
             <Col sm={12} md={12} lg={9}>
               <Row>
                 {courseData?.map(
-                  ({ id, name, courseMode, batches, code }: any) => (
+                  ({ id, name, courseMode, batches, code, parent_id }: any) => (
                     <Col
                       ref={listRef}
                       key={id}
@@ -192,7 +207,7 @@ const AllCourseGallery = () => {
                     >
                       <div
                         className="inner-box"
-                        onClick={() => redirectCard(name, code, id)}
+                        onClick={() => redirectCard(name, code, id, parent_id)}
                       >
                         <figure className="image">
                           <Image

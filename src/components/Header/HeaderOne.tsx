@@ -73,6 +73,7 @@ const HeaderOne = ({
     course.forEach((courseCode) => {
       if (filterData?.length) {
         filterData?.forEach((item) => {
+          console.log("item")
           if (item.code === courseCode) {
             if (_.find(allData, (course) => course.parent_id === item.id)) {
               coursesSubItem?.push({
@@ -82,10 +83,11 @@ const HeaderOne = ({
                 href: `/${programBaseUrl}/${urlInfo(item?.name)}`,
               });
             } else {
+              const courseName = _.find(filterData,(courseItem) => courseItem === item?.parent_id)
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
-                href: `/${programBaseUrl}//${urlInfo(item?.name)}/${item?.id}`,
+                href: `/${programBaseUrl}/${urlInfo(courseName?.name)}/${urlInfo(item?.name)}`,
               });
             }
           }
@@ -106,7 +108,7 @@ const HeaderOne = ({
               name: subCourse?.name,
               href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
                 subCourse?.name
-              )}/${subCourse?.id}`,
+              )}`,
             };
           });
           if (filterData) {
