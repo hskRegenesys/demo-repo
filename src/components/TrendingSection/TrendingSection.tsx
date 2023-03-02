@@ -33,9 +33,9 @@ const { title, details, description } = trendingSection;
 
 const TrendingSection = () => {
   const router = useRouter();
-  const [courseData, setcourseData] = useState([]);
+  const [courseData, setcourseData] = useState<any>([]);
   const getData = async () => {
-    let courseListResponse = await courseService.allParentCourses();
+    let courseListResponse = await courseService.allCourses();
     setcourseData(courseListResponse);
   };
 
