@@ -27,42 +27,42 @@ const teamSection = {
     {
       id: 9,
       name: "Basic Digital Marketing ",
-      href: "/basic-digital-marketing/25",
+      href: "/programs/digital-marketing/basic-digital-marketing",
     },
     {
       id: 10,
       name: "Advanced Digital Marketing",
-      href: "/advance-digital-marketing/26",
+      href: "/programs/digital-marketing/advanced-digital-marketing",
     },
     {
       id: 11,
       name: "Applied Digital Marketing",
-      href: "/applied-digital-marketing/27",
+      href: "/programs/digital-marketing/applied-digital-marketing",
     },
     {
       id: 2,
       name: "Project Management",
-      href: "/Project-Management/28",
+      href: "/programs/project-management",
     },
     {
       id: 3,
       name: "Cybersecurity",
-      href: "/Cybersecurity/29",
+      href: "/programs/cybersecurity",
     },
     {
       id: 6,
       name: "Basic Data Science",
-      href: "/basic-data-science/11",
+      href: "/programs/data-science/basic-data-science",
     },
     {
       id: 7,
       name: "Advanced Data Science",
-      href: "/advance-data-science/18",
+      href: "/programs/data-science/advanced-data-science",
     },
     {
       id: 8,
       name: "Applied Data Science",
-      href: "/applied-data-science/23",
+      href: "/programs/data-science/applied-data-science",
     },
   ],
 };
