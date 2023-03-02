@@ -25,7 +25,12 @@ const Course = () => {
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title={pageName} page={pageName} />
+      <PageBanner
+        title={pageName}
+        page={pageName}
+        parent="All courses"
+        parentHref="/all-course"
+      />
       <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />
       <PartnerOne />

@@ -10,13 +10,16 @@ import { leadService } from "src/services";
 
 export default function LandingForm(contactform: any) {
   const [courseData, setcourseData] = useState([]);
+
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
   };
+
   const onSubmit = (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
+
     (data.zapUrl = process.env.LEADS_API_BASE_URL + "/leads"),
       (data.highestQualification = "");
     data.interestedTopic = "";

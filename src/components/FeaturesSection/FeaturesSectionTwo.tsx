@@ -13,21 +13,21 @@ const FeaturesSectionTwo = () => {
             <Col lg={12} md={12} sm={12} className="left-col">
               <div className="inner">
                 <div className="sec-title">
-                  <h2>
-                  <i className="contact-page call-to-action-arrow"> </i>
-                    {title}                   
-                  </h2>
+                  <h1>
+                    <i className="contact-page call-to-action-arrow"> </i>
+                    {title}
+                  </h1>
 
-                  <h6 className="desc">
-                    {title2}                   
-                  </h6>
-                </div> 
-                <div className="sign-arrow-contact">              
-                   <Image src="/assets/images/background/sign-arrow-left.png" alt="" />           
-                </div>         
+                  <h6 className="desc">{title2}</h6>
+                </div>
+                <div className="sign-arrow-contact">
+                  <Image
+                    src="/assets/images/background/sign-arrow-left.png"
+                    alt=""
+                  />
+                </div>
               </div>
             </Col>
- 
           </Row>
         </div>
       </div>

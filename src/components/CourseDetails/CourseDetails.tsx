@@ -24,20 +24,24 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                     </h2>
                   </div>
                   <section className="product-description desktop-hide p-0">
-                  <h3 className="product-description__title">Revolutionise your career with future-ready skills.</h3>
+                    <h3 className="product-description__title">
+                      Revolutionise your career with future-ready skills.
+                    </h3>
                   </section>
-                  
-                  <Col xs={12} className="process-one__image__column desktop-hide">
-                <div className="process-one__image animated fadeInLeft">
-                  <Image
-                    src={`/assets/images/update-01-10-2021/${image}`}
-                    alt=""
-                  />
-                </div>
-              </Col>
+
+                  <Col
+                    xs={12}
+                    className="process-one__image__column desktop-hide"
+                  >
+                    <div className="process-one__image animated fadeInLeft">
+                      <Image
+                        src={`/assets/images/update-01-10-2021/${image}`}
+                        alt=""
+                      />
+                    </div>
+                  </Col>
 
                   <p className="process-one__summery mobile-hide">{text}</p>
-
 
                   <ul className="list-unstyled process-one__list desktop-hide">
                     {lists?.map((text: string, i: number) => (
@@ -47,7 +51,6 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                       </li>
                     ))}
                   </ul>
-
 
                   <div className="product-details__buttons mobile-product-buttons">
                     <a
@@ -72,8 +75,6 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                       <span className="btn-title">Download Brochure</span>
                     </a>
                   </div>
-                  
-                 
 
                   <ul className="list-unstyled process-one__list mobile-hide">
                     {lists?.map((text: string, i: number) => (
