@@ -26,7 +26,7 @@ const PageBanner = ({
                   </li>
                 )}
                 {parentToParent && (
-                  <li className=" font-capitalized">
+                  <li className="font-capitalized">
                     <Link href={parentToParentHref}>{parentToParent}</Link>
                   </li>
                 )}

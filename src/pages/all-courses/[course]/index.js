@@ -29,7 +29,7 @@ const Course = () => {
         title={pageName}
         page={pageName}
         parent="All courses"
-        parentHref="/all-course"
+        parentHref="/all-courses"
       />
       <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />
