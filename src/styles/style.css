@@ -7226,14 +7226,16 @@ featured-section .right-col .sec-title h2 {
 }
 .tns-controls-tools .tns-prev {
   position: absolute;
-  left: 20px;
-  top: 55px;
+  left: 2%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tns-controls-tools .tns-next {
   position: absolute;
-  right: 20px;
+  right: 1%;
   top: 55px;
+  transform: translate(-50%, -50%);
 }
 
 .testimonials-five__carousel .tns-controls button:hover,
@@ -9777,6 +9779,7 @@ featured-section .right-col .sec-title h2 {
   position: absolute;
   margin: 10px 10px 0 5px;
   transition: all 0.3s ease;
+  display: block;
 }
 .live-section .main-image-box .vid-link {
   display: none;
