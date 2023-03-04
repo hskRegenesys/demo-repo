@@ -71,10 +71,10 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
         <Row>
           <Col lg={12} xl={12}>
             <div className="product-details__top">
-              <h3 className="product-details__title">
+              <h2 className="product-details__title">
                 {title}
                 <i className="arrow-sign-right"></i>
-              </h3>
+              </h2>
               <h5 className="product-details__subtitle mt-3">{subTitle}</h5>
             </div>
           </Col>

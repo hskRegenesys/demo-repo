@@ -12,10 +12,9 @@ const Faqs = (props: any) => {
 
   return (
     <Col lg={12} md={12} sm={12} className="faq-block curriculum">
-      <h3 className="text-center">
-        {" "}
+      <h2 className="text-center">
         <i className="arrow-sign-right"></i>Course curriculum
-      </h3>
+      </h2>
       <ul className="accordion-box clearfix">
         {faqs?.map((item: any) => {
           let { id, title, lists } = item;
@@ -28,9 +27,7 @@ const Faqs = (props: any) => {
             >
               <div
                 onClick={() => handleClick(id)}
-                className={`acc-btn${
-                  current === id ? " active" : ""
-                }`}
+                className={`acc-btn${current === id ? " active" : ""}`}
               >
                 {/* <span className="count">{id}.</span> */}
                 {title}
@@ -44,10 +41,7 @@ const Faqs = (props: any) => {
                   <div className="text">
                     {lists?.map((text: string, i: number) => (
                       <li key={i}>
-                        <i
-                          className="fa fa-check"
-                          aria-hidden="true"
-                        ></i>
+                        <i className="fa fa-check" aria-hidden="true"></i>
                         {text}
                       </li>
                     ))}
