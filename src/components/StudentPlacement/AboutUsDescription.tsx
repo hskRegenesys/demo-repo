@@ -23,7 +23,7 @@ const AboutUsDescription = () => {
               <div className="sign-arrow">
                 <Image src={imagearrow} alt="" />
               </div>
-              <p className="highlight">{highlight}</p>
+              <h2 className="highlight small-heading">{highlight}</h2>
               <p className="about-me-one__text">{text1}</p>
               <p className="about-me-one__text">{text2}</p>
             </div>

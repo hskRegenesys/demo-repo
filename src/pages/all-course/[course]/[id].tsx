@@ -67,7 +67,7 @@ const DigitalMarketing = () => {
       <SearchPopup />
       <PageBanner
         title={router?.query?.course?.toString().replace("-", " ")}
-        parent="All courses"
+        parent="All course"
         parentHref="/all-course"
         parentToParent={parentToParentName()}
         parentToParentHref={`/${parentToParentName()

@@ -18,16 +18,16 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
               <Col md={7}>
                 <div className="process-one__content">
                   <div className="sec-title">
-                    <h2 className="arrow-right-bottom">
+                    <h1 className="arrow-right-bottom">
                       <i className="arrow-sign-right"></i>
-                      <h1 className="page-head">{title}</h1>
-                    </h2>
+                      <span className="page-head">{title}</span>
+                    </h1>
                   </div>
-                  <section className="product-description desktop-hide p-0">
+                  {/* <section className="product-description desktop-hide p-0">
                     <h3 className="product-description__title">
                       Revolutionise your career with future-ready skills.
                     </h3>
-                  </section>
+                  </section> */}
 
                   <Col
                     xs={12}

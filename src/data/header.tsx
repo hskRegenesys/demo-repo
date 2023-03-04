@@ -49,7 +49,7 @@ const navItems = [
   {
     id: 4,
     name: "Courses",
-    href: "/all-courses",
+    href: "/all-course",
     subNavItems: [
       { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
       { id: 6, name: "Data Science", href: "/data-science-main" },
