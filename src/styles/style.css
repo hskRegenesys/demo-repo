@@ -18094,7 +18094,7 @@ h2.curve-right:after {
   background-repeat: no-repeat;
 }
 
-.process-one__content h2 {
+.process-one__content h1 {
   max-width: 525px;
 }
 
@@ -18711,7 +18711,7 @@ input.PhoneInputInput {
   padding-left: 0;
 }
 
-.process-one__content .sec-title h2 i {
+.process-one__content .sec-title h1 i {
   background-image: url(/assets/images/background/sign-arrow.png);
   background-size: 120px 120px;
   position: absolute;
@@ -18872,8 +18872,8 @@ input.PhoneInputInput {
     text-align: center;
   }
 
-  .process-one__content .sec-title h2 i,
-  .we-work-section .sec-title h2 i {
+  .process-one__content .sec-title h1 i,
+  .we-work-section .sec-title h1 i {
     display: none;
   }
 
@@ -19371,7 +19371,7 @@ button[disabled] {
   .reasonsWeb,
   .faq-block.curriculum h3 i,
   .product-details__title i,
-  .process-one__content .sec-title h2 i,
+  .process-one__content .sec-title h1 i,
   .product-details__title i {
     display: none !important;
   }
@@ -19868,6 +19868,7 @@ span.page-head {
   line-height: 1.25em;
   font-family: var(--thm-font);
   color: var(--thm-black);
+  display: inline-block;
 }
 .font-capitalized {
   text-transform: capitalize;
@@ -19885,4 +19886,20 @@ span.page-head {
 .funfact-six .pl-0:first-child .count-text span,
 .funfact-six .pl-0:nth-child(3) .count-text span {
   display: none;
+}
+
+h2.small-heading {
+  font-size: 32px;
+  font-family: Raleway-semibold;
+  padding: 0 30px;
+  line-height: 1.25em;
+  display: block;
+  width: 100%;
+  text-transform: none;
+}
+h2.small-heading.color-black {
+  color: #000;
+}
+h2.highlight {
+  padding-left: 0px;
 }

@@ -10,11 +10,10 @@ const HomeSkillDescription = ({
       <div className="auto-container">
         <div className="inner clearfix">
           <div className="sec-title animated fadeInLeft text-center">
-            <h4>
+            <h2 className="small-heading color-black">
               Revolutionise your career with
-              <br />
-              future-ready skills
-            </h4>
+              <br /> future-ready skills
+            </h2>
           </div>
           <p className="para-text">
             Learn the next-gen digital skills with India’s leading EdTech

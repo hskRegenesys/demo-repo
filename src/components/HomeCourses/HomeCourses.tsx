@@ -61,7 +61,7 @@ const HomeCourses = ({ className = "", carousel = "", courses = [] }: any) => {
 
         <div className="auto-container">
           <div className="all-course-link">
-            <Link href="/all-course">All Courses</Link>
+            <Link href="/all-course">All Course</Link>
           </div>
         </div>
 
