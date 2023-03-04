@@ -1011,6 +1011,11 @@
     min-height: 100vh;
     height: 100%;
   }
+  .faq-head,
+  .head-tools-covered,
+  .head-popular-topics {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (max-width: 599px) {

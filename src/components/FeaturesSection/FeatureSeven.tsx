@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import dynamic from "next/dynamic"
+import dynamic from "next/dynamic";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -12,24 +12,20 @@ const settings = {
     475: {
       slideBy: "page",
       items: 1.5,
-
     },
     600: {
       items: 2,
       gutter: 30,
-
     },
     992: {
       items: 3,
       gutter: 30,
-
     },
     1200: {
       items: 4,
       gutter: 30,
       disable: true,
       mode: "gallery",
-
     },
     1500: {
       gutter: 30,
@@ -58,7 +54,6 @@ const FeatureSeven = ({ courseDetails }: any) => {
           <h6 className="desc">{desc}</h6>
         </div>
         <Row className="justify-content-center">
-        
           <TinySlider
             options={{
               ...settings,
@@ -66,7 +61,7 @@ const FeatureSeven = ({ courseDetails }: any) => {
             ref={listRef}
           >
             {features?.map(({ id, title, designation, text, image }: any) => (
-              <Col ref={listRef}  key={id} sm={6} md={4} lg={3}>
+              <Col ref={listRef} key={id} sm={6} md={4} lg={3}>
                 <div className="feature-seven-card">
                   <div className="feature-seven-card__inner">
                     <div className="feature-seven-card__image">
@@ -82,19 +77,16 @@ const FeatureSeven = ({ courseDetails }: any) => {
                 </div>
               </Col>
             ))}
-
           </TinySlider>
 
           <div className="tns-controls6 text-center">
-              <button className="tns-prev">
-                <span className="icon fa fa-angle-left"></span>
-              </button>
-              <button className="tns-next">
-                <span className="icon fas fa-angle-right"></span>
-              </button>
-            </div>
-         
-
+            <button className="tns-prev">
+              <span className="icon fa fa-angle-left"></span>
+            </button>
+            <button className="tns-next">
+              <span className="icon fas fa-angle-right"></span>
+            </button>
+          </div>
         </Row>
       </div>
     </section>

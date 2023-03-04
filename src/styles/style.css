@@ -18755,12 +18755,18 @@ input.PhoneInputInput {
   background-repeat: no-repeat;
 }
 
-.faq-block.curriculum h3 {
+.faq-block.curriculum h2 {
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
+  display: block;
+  font-size: 46px;
+  color: var(--thm-black);
+  font-weight: 800;
+  font-family: Raleway-semibold;
 }
 
-.faq-block.curriculum h3 i {
+.faq-block.curriculum h2 i {
   background-image: url(/assets/images/background/sign-arrow-left.png);
   background-size: 100px 100px;
   position: absolute;
@@ -19902,4 +19908,18 @@ h2.small-heading.color-black {
 }
 h2.highlight {
   padding-left: 0px;
+}
+.faq-head,
+.head-tools-covered,
+.head-popular-topics {
+  position: relative;
+  display: block;
+  font-size: 46px;
+  color: var(--thm-black);
+  font-weight: 800;
+  font-family: Raleway-semibold;
+}
+.faq-head::after,
+.head-popular-topics::after {
+  display: none !important;
 }
