@@ -133,7 +133,7 @@ const createReWrites = () => {
     },
     {
       source: "/all-course/data-science/applied-data-science",
-      destination: "/all-course/applied-data-science/18",
+      destination: "/all-course/applied-data-science/23",
     },
     {
       source: "/all-course/digital-marketing/basic-digital-marketing",
