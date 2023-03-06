@@ -108,43 +108,47 @@ const redirectURL = () => {
 const createReWrites = () => {
   const paths = [
     {
-      source: "/all-course/data-science",
+      source: "/programs/data-science",
       destination: "/all-course/data-science",
     },
     {
-      source: "/all-course/digital-marketing",
+      source: "/programs/digital-marketing",
       destination: "/all-course/digital-marketing",
     },
     {
-      source: "/all-course/project-management",
+      source: "/programs/project-management",
       destination: "/all-course/project-management/28",
     },
     {
-      source: "/all-course/cybersecurity",
+      source: "/programs/cybersecurity",
       destination: "/all-course/cybersecurity/29",
     },
     {
-      source: "/all-course/data-science/basic-data-science",
+      source: "/programs/data-science",
+      destination: "/all-course/data-science",
+    },
+    {
+      source: "/programs/data-science/basic-data-science",
       destination: "/all-course/basic-data-science/11",
     },
     {
-      source: "/all-course/data-science/advanced-data-science",
+      source: "/programs/data-science/advanced-data-science",
       destination: "/all-course/advanced-data-science/18",
     },
     {
-      source: "/all-course/data-science/applied-data-science",
+      source: "/programs/data-science/applied-data-science",
       destination: "/all-course/applied-data-science/23",
     },
     {
-      source: "/all-course/digital-marketing/basic-digital-marketing",
+      source: "/programs/digital-marketing/basic-digital-marketing",
       destination: "/all-course/basic-digital-marketing/25",
     },
     {
-      source: "/all-course/digital-marketing/advanced-digital-marketing",
+      source: "/programs/digital-marketing/advanced-digital-marketing",
       destination: "/all-course/advanced-digital-marketing/26",
     },
     {
-      source: "/all-course/digital-marketing/applied-digital-marketing",
+      source: "/programs/digital-marketing/applied-digital-marketing",
       destination: "/all-course/applied-digital-marketing/27",
     },
   ];
