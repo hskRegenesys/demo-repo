@@ -164,6 +164,10 @@ const createReWrites = () => {
       destination: "/all-course/basic-digital-marketing/25",
     },
     {
+      source: "/all-course/digital-marketing/basic-digital-marketing",
+      destination: "/all-course/basic-digital-marketing/25",
+    },
+    {
       source: "/programs/digital-marketing/advanced-digital-marketing",
       destination: "/all-course/advanced-digital-marketing/26",
     },
