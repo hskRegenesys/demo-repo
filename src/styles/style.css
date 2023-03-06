@@ -17686,7 +17686,6 @@ h2.curve-right:after {
 }
 
 .partner-one__card {
-  min-height: 500px;
   margin-bottom: 30px;
   border: 0 none;
   border-radius: 20px;
@@ -19362,6 +19361,11 @@ button[disabled] {
     display: block;
   }
 
+  .sponsors-section.tools-covered
+  {
+    margin-bottom: 24px !important;
+  }
+
   .reasons-title {
     margin-top: 130px !important;
   }
@@ -19433,6 +19437,7 @@ button[disabled] {
 
   #experience-mobile .partner-one__card {
     margin-bottom: 0;
+    min-height: 375px;
   }
 
   #experience-mobile .gallery-item:first-child .partner-one__card,
@@ -19620,7 +19625,7 @@ button[disabled] {
 
   .all-course-section .content-box {
     text-align: center;
-    padding: 60px 0 30px;
+    padding: 20px 0 30px;
   }
 
   .all-course-section .content-box .sign-arrow img {
@@ -19629,7 +19634,7 @@ button[disabled] {
     width: 58px;
     height: auto;
     left: unset;
-    top: -50px;
+    top: 7px;
   }
 
   .all-course-section .content-box .btn-style-two {
@@ -19650,9 +19655,18 @@ button[disabled] {
   .faqs-section,
   .get-quote-three,
   .product-details {
-    padding: 30px !important;
+    padding: 50px 30px !important;
+    margin-top: 25px;
   }
 
+  .sponsors-section-four
+  {
+    padding-bottom: 0 !important;
+  }
+  .live-section
+  {
+    display: none !important;
+    }
   .process-one__image {
     background-color: transparent;
   }
@@ -19682,8 +19696,8 @@ button[disabled] {
     position: absolute;
     width: 100%;
     left: 0;
-    padding: 120px 30px 50px;
-    margin-top: 100px;
+    padding: 80px 30px 30px;
+    margin-top: 76px;
   }
   .process-one__content ul {
     background-color: #ffe55b;
@@ -19726,7 +19740,14 @@ button[disabled] {
     margin-top: -1px;
     z-index: 1;
     position: relative;
+    padding: 20px 30px;
   }
+
+  .sec-title.centered
+  {
+    margin-bottom: 20px;
+  }
+  
 
   .contact-info .address {
     font-size: 14px;
@@ -19747,8 +19768,19 @@ button[disabled] {
     position: relative !important;
     top: unset;
     left: 0;
+    background-color: #ffe55b;
+    box-shadow: 4px 4px 0 0 #000;
+    color: #000;
   }
 
+  .tns-controls-tools .tns-next, .tns-controls-tools button:hover, .tns-controls6 button:hover,   .tns-controls6 button.tns-next, .tns-controls6 button
+  {
+    background-color: #ffe55b !important;
+    box-shadow: 4px 4px 0 0 #000 !important;
+    color: #000 !important;
+  }
+
+  
   .sponsors-section {
     padding: 30px 0px;
   }
@@ -19922,4 +19954,21 @@ h2.highlight {
 .faq-head::after,
 .head-popular-topics::after {
   display: none !important;
+}
+
+
+.mobile-nav__container li.dropdown ul li a
+{
+  color: #000000;
+    font-size: 20px !important;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    transition: all 500ms ease;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    font-size: 26px;
 }
