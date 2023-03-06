@@ -6,7 +6,7 @@ import { Image } from "react-bootstrap";
 const { image, title, text } = errorSection;
 
 const ErrorSection = () => {
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     const fromData = new FormData(e.target);
     console.log(fromData.get("email"));
@@ -17,12 +17,7 @@ const ErrorSection = () => {
       <div className="auto-container">
         <div className="content">
           <div className="big-text">
-            <Image
-              src={image}
-              id="error-404"
-              className="img-fluid"
-              alt=""
-            />
+            <Image src={image} id="error-404" className="img-fluid" alt="" />
           </div>
           <h2>{title}</h2>
           <div className="text">{text}</div>
@@ -42,7 +37,7 @@ const ErrorSection = () => {
             </form>
           </div>
           <div className="link-box">
-            <Link href="/index-main">
+            <Link href="/">
               <a className="theme-btn btn-style-one">
                 <i className="btn-curve"></i>
                 <span className="btn-title">Back to home</span>
