@@ -7,8 +7,12 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
-import { batchInfo } from "../config/helper";
-import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
+import { batchInfo, urlInfo } from "../config/helper";
+import {
+  dataScienceCode,
+  digitalMarkrtingCode,
+  programBaseUrl,
+} from "../config/constant";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -33,17 +37,27 @@ const { title, details, description } = trendingSection;
 
 const TrendingSection = () => {
   const router = useRouter();
-  const [courseData, setcourseData] = useState([]);
+  const [courseData, setcourseData] = useState<any>([]);
   const getData = async () => {
-    let courseListResponse = await courseService.allParentCourses();
+    let courseListResponse = await courseService.allCourses();
     setcourseData(courseListResponse);
   };
 
-  function redirectCard(name: any, code: any, id: any) {
+  function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-")}`);
+      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
-      router.push(`/${name?.split(" ").join("-")}/${id}`);
+      const courseDetails = _.find(
+        courseData,
+        (item) => item?.id === parent_id
+      );
+      courseDetails
+        ? router.push(
+            `/${programBaseUrl}/${urlInfo(courseDetails?.name)}/${urlInfo(
+              name
+            )}`
+          )
+        : router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     }
   }
 
@@ -76,7 +90,7 @@ const TrendingSection = () => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.ceil(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-      msInWeek
+        msInWeek
     );
   }
   return (
@@ -84,7 +98,7 @@ const TrendingSection = () => {
       <div className="auto-container">
         <div className="sec-title text-center">
           <h2>{title}</h2>
-          <h6 className="desc">{description}</h6>
+          {/* <h6 className="desc">{description}</h6> */}
         </div>
 
         <div className="carousel-box">
@@ -96,11 +110,19 @@ const TrendingSection = () => {
               ref={listRef}
             >
               {CourseCard?.map(
-                ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
+                ({
+                  id,
+                  name,
+                  courseMode,
+                  batches,
+                  code,
+                  durationInWeeks,
+                  parent_id,
+                }: any) => (
                   <div ref={listRef} className="gallery-item" key={id}>
                     <div
                       className="inner-box"
-                      onClick={() => redirectCard(name, code, id)}
+                      onClick={() => redirectCard(name, code, id, parent_id)}
                     >
                       {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
@@ -126,9 +148,7 @@ const TrendingSection = () => {
                           <div className="cat">
                             <ul className="about-seven__list list-unstyled">
                               <li>{courseMode.name} Classes</li>
-                              <li>
-                                {durationInWeeks} Weeks
-                              </li>
+                              <li>{durationInWeeks} Weeks</li>
                               <li>International certification </li>
                               <li>Capstone projects </li>
                             </ul>

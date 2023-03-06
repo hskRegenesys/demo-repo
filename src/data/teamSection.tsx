@@ -24,45 +24,45 @@ const socials = [
 const teamSection = {
   title: "Popular topics",
   teams: [
-      {
+    {
       id: 9,
       name: "Basic Digital Marketing ",
-      href: "/Basic-Digital-Marketing/25",
+      href: "/all-course/digital-marketing/basic-digital-marketing",
     },
     {
       id: 10,
       name: "Advanced Digital Marketing",
-      href: "/Advance-Digital-Marketing/26",
+      href: "/all-course/digital-marketing/advanced-digital-marketing",
     },
     {
       id: 11,
       name: "Applied Digital Marketing",
-      href: "/Applied-Digital-Marketing/27",
+      href: "/all-course/digital-marketing/applied-digital-marketing",
     },
     {
       id: 2,
       name: "Project Management",
-      href: "/Project-Management/28",
+      href: "/all-course/project-management",
     },
     {
       id: 3,
       name: "Cybersecurity",
-      href: "/Cybersecurity/29",
-    },   
+      href: "/all-course/cybersecurity",
+    },
     {
       id: 6,
       name: "Basic Data Science",
-      href: "/Basic-Data-Science/11",
+      href: "/all-course/data-science/basic-data-science",
     },
-     {
+    {
       id: 7,
       name: "Advanced Data Science",
-      href: "/Advance-Data-Science/18",
+      href: "/all-course/data-science/advanced-data-science",
     },
     {
       id: 8,
       name: "Applied Data Science",
-      href: "/Applied-Data-Science/23",
+      href: "/all-course/data-science/applied-data-science",
     },
   ],
 };

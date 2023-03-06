@@ -7,6 +7,8 @@ import { Image } from "react-bootstrap";
 import NavItem from "./NavItem";
 import { courseService } from "src/services";
 import _ from "lodash";
+import { programBaseUrl } from "../config/constant";
+import { urlInfo } from "../config/helper";
 
 const {
   title,
@@ -56,7 +58,6 @@ const HeaderOne = ({
   const allCourses = async () => {
     const allData = await courseService.allCourses();
     const orderData: any = [];
-
     const filterData = _.filter(
       allData,
 
@@ -72,19 +73,21 @@ const HeaderOne = ({
     course.forEach((courseCode) => {
       if (filterData?.length) {
         filterData?.forEach((item) => {
+          console.log("item")
           if (item.code === courseCode) {
             if (_.find(allData, (course) => course.parent_id === item.id)) {
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
 
-                href: `/${item?.name?.split(" ").join("-")}`,
+                href: `/${programBaseUrl}/${urlInfo(item?.name)}`,
               });
             } else {
+              const courseName = _.find(filterData,(courseItem) => courseItem === item?.parent_id)
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
-                href: `/${item?.name?.split(" ").join("-")}/${item?.id}`,
+                href: `/${programBaseUrl}/${urlInfo(courseName?.name)}/${urlInfo(item?.name)}`,
               });
             }
           }
@@ -95,6 +98,23 @@ const HeaderOne = ({
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
+        item.subNavItems?.map((data: any) => {
+          const filterData = _.filter(
+            allData,
+            (item) => item?.parent_id === data?.id
+          ).map((subCourse) => {
+            return {
+              id: subCourse?.id,
+              name: subCourse?.name,
+              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
+                subCourse?.name
+              )}`,
+            };
+          });
+          if (filterData) {
+            data.subItems = filterData;
+          }
+        });
       }
       return item;
     });
@@ -105,32 +125,26 @@ const HeaderOne = ({
     allCourses();
   }, []);
 
-
-
-
-
   const [scroll, setScroll] = useState(false);
   const checkScroll = () => {
-      if (window.scrollY > 38) {
-          setScroll(true);
-      } else {
-          setScroll(false);
-      }
+    if (window.scrollY > 38) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
   };
-  
+
   useEffect(() => {
-      window.addEventListener("scroll", checkScroll);
-      return () => {
-          window.removeEventListener("scroll", checkScroll);
-      };
+    window.addEventListener("scroll", checkScroll);
+    return () => {
+      window.removeEventListener("scroll", checkScroll);
+    };
   }, []);
-  
-  
-    return (
-      <header
-        className={`main-header ${scroll ? "fixed-header" : ""} ${headerStyle}`}
-      >
-  
+
+  return (
+    <header
+      className={`main-header ${scroll ? "fixed-header" : ""} ${headerStyle}`}
+    >
       {topBar && (
         <div className="topbar-four">
           <div className="auto-container">

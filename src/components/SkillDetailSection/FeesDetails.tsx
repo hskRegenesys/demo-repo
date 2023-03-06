@@ -64,16 +64,17 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
       });
     }
   }
+
   return (
     <section className="product-details">
       <div className="auto-container">
         <Row>
           <Col lg={12} xl={12}>
             <div className="product-details__top">
-              <h3 className="product-details__title">
+              <h2 className="product-details__title">
                 {title}
                 <i className="arrow-sign-right"></i>
-              </h3>
+              </h2>
               <h5 className="product-details__subtitle mt-3">{subTitle}</h5>
             </div>
           </Col>
@@ -104,23 +105,29 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
               <div className="flags">
                 {coursePriceDetails[0]?.coursePrices?.map((item: any) => (
                   <>
-                    <a onClick={() => CoursePriceChange(item.country_id)} >
-                      <div className={item.country_id === priceDetails.country_id ? 'flag-shadow' : ''}>
-                      {item.country_id === southAfricaCountryId && (
-                        <Image src={flagsa} alt="South Africa"/>
-                      )}
-                      {item.country_id === indiaCountryId && (
-                        <Image src={flagind} alt="India" />
-                      )}
-                      {item.country_id === nigeriaCountryId && (
-                        <Image src={flagnig} alt="Nigeria" />
-                      )}
-                      {item.country_id === ukCountryId && (
-                        <Image src={flagus} alt="UK" />
-                      )}
-                      {item.country_id === kenyaCountryId && (
-                        <Image src={flagken} alt="Kenya" />
-                      )}
+                    <a onClick={() => CoursePriceChange(item.country_id)}>
+                      <div
+                        className={
+                          item.country_id === priceDetails.country_id
+                            ? "flag-shadow"
+                            : ""
+                        }
+                      >
+                        {item.country_id === southAfricaCountryId && (
+                          <Image src={flagsa} alt="South Africa" />
+                        )}
+                        {item.country_id === indiaCountryId && (
+                          <Image src={flagind} alt="India" />
+                        )}
+                        {item.country_id === nigeriaCountryId && (
+                          <Image src={flagnig} alt="Nigeria" />
+                        )}
+                        {item.country_id === ukCountryId && (
+                          <Image src={flagus} alt="UK" />
+                        )}
+                        {item.country_id === kenyaCountryId && (
+                          <Image src={flagken} alt="Kenya" />
+                        )}
                       </div>
                     </a>
                   </>
@@ -128,7 +135,12 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
               </div>
             </div>
 
-            <h2 className="product-details__price">{`${priceDetails?.country?.currency} ${priceDetails?.price}`}</h2>
+            <h2 className="product-details__price">
+              {`${priceDetails?.country?.currency} ${priceDetails?.price} `}
+              {priceDetails?.country_id === indiaCountryId && (
+                <span>+ GST</span>
+              )}
+            </h2>
 
             <Link href="/">
               <a className="refer-link">Refer a friend</a>

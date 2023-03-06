@@ -80,7 +80,7 @@ export const sponsorEight = [
 
 export const aboutUsDescriptionData = {
   title:
-    "We’re empowering students Upskilling digital courses, educate, and grow.",
+    "We're empowering students through revolutionary upskilling Digital Courses to inspire, motivate and grow!",
   pagedesc: "Revolutionise your career with future-ready skills",
   highlight: "Know who we are",
   text1:

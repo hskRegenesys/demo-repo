@@ -18,6 +18,7 @@ const ExperienceSection = () => {
 
         <Row className="mobile-hide">
           {partnerOne?.map(({ id, image, title, text }) => (
+            <>
             <Col key={id} md={6} lg={4}>
               <div className="partner-one__card">
                 <div className="partner-one__image">
@@ -32,6 +33,7 @@ const ExperienceSection = () => {
                 </div>
               </div>
             </Col>
+            </>
           ))}
         </Row>
 

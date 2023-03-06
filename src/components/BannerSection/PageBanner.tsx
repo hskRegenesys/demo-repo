@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import React from "react";
 
@@ -7,9 +6,11 @@ const PageBanner = ({
   page = "",
   parent = "",
   parentHref = "/",
+  parentToParent = "",
+  parentToParentHref = "/",
 }) => {
   return (
-    <section className="page-banner">   
+    <section className="page-banner">
       <div className="banner-inner">
         <div className="auto-container">
           <div className="inner-container clearfix">
@@ -24,7 +25,12 @@ const PageBanner = ({
                     <Link href={parentHref}>{parent}</Link>
                   </li>
                 )}
-                <li className="active">{page || title}</li>
+                {parentToParent && (
+                  <li className="font-capitalized">
+                    <Link href={parentToParentHref}>{parentToParent}</Link>
+                  </li>
+                )}
+                <li className="active font-capitalized">{page || title}</li>
               </ul>
             </div>
           </div>

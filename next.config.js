@@ -108,47 +108,49 @@ const redirectURL = () => {
 const createReWrites = () => {
   const paths = [
     {
-      source: "/Cybersecurity",
-      // destination: "/landing?course=blackfriday&country=sa",
-      destination: "/Cybersecurity/29",
+      source: "/programs/data-science",
+      destination: "/all-course/data-science",
     },
-    // {
-    //   source: "/Data-Science",
-    //   destination: "/programs/createMyWealth",
-    // },
-    // {
-    //   source: "/Digital-Marketing",
-    //   destination: "/landing?course=allCourses&country=sa",
-    // },
-    // {
-    //   source: "/Project-Management/28",
-    //   destination: "/landing?course=allCourses01&country=sa",
-    // },
-
-    // {
-    //   source: "/Basic-Digital-Marketing/25",
-    //   destination: "/landing?course=dataScience&country=sa",
-    // },
-    // {
-    //   source: "/Advance-Digital-Marketing/26",
-    //   destination: "/landing?course=dataScience&country=ng",
-    // },
-    // {
-    //   source: "/Applied-Digital-Marketing/27",
-    //   destination: "/landing?course=dataScience&country=ky",
-    // },
-    // {
-    //   source: "/Basic-Data-Science/11",
-    //   destination: "/landing?course=projectManagement&country=ng",
-    // },
-    // {
-    //   source: "/Advance-Digital-Marketing/26",
-    //   destination: "/landing?course=projectManagement&country=ky",
-    // },
-    // {
-    //   source: "/Applied-Digital-Marketing/27",
-    //   destination: "/landing?course=digitalMarketing&country=ng",
-    // },
+    {
+      source: "/programs/digital-marketing",
+      destination: "/all-course/digital-marketing",
+    },
+    {
+      source: "/programs/project-management",
+      destination: "/all-course/project-management/28",
+    },
+    {
+      source: "/programs/cybersecurity",
+      destination: "/all-course/cybersecurity/29",
+    },
+    {
+      source: "/programs/data-science",
+      destination: "/all-course/data-science",
+    },
+    {
+      source: "/programs/data-science/basic-data-science",
+      destination: "/all-course/basic-data-science/11",
+    },
+    {
+      source: "/programs/data-science/advanced-data-science",
+      destination: "/all-course/advanced-data-science/18",
+    },
+    {
+      source: "/programs/data-science/applied-data-science",
+      destination: "/all-course/applied-data-science/23",
+    },
+    {
+      source: "/programs/digital-marketing/basic-digital-marketing",
+      destination: "/all-course/basic-digital-marketing/25",
+    },
+    {
+      source: "/programs/digital-marketing/advanced-digital-marketing",
+      destination: "/all-course/advanced-digital-marketing/26",
+    },
+    {
+      source: "/programs/digital-marketing/applied-digital-marketing",
+      destination: "/all-course/applied-digital-marketing/27",
+    },
   ];
   return paths;
 };

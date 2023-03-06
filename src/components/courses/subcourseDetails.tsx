@@ -5,8 +5,12 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-import { dataScienceCode, digitalMarkrtingCode } from "../config/constant";
-import { batchInfo } from "../config/helper";
+import {
+  dataScienceCode,
+  digitalMarkrtingCode,
+  programBaseUrl,
+} from "../config/constant";
+import { batchInfo, urlInfo } from "../config/helper";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -30,11 +34,16 @@ const settings = {
 const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
   const [subCourse, setSubCourse] = useState<any>([]);
+  const [courseData, setCourseData] = useState<any>([]);
   const getData = async () => {
-    setSubCourse([])
+    setSubCourse([]);
     let courseListResponse = await courseService.allCourses();
-
-    if (page === "Data-Science") {
+    const courses = _.filter(
+      courseListResponse,
+      (item: any) => item?.mode_id === 1
+    );
+    setCourseData(courses);
+    if (page === "data-science") {
       const subCourse = _.filter(
         courseListResponse,
         (item) => item.parent_id === 10
@@ -50,11 +59,21 @@ const SubCourseDetails = ({ page }: any) => {
     }
   };
 
-  function redirectCard(name: any, code: any, id: any) {
+  function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-")}`);
+      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
-      router.push(`/${name?.split(" ").join("-")}/${id}`);
+      const courseDetails = _.find(
+        courseData,
+        (item) => item?.id === parent_id
+      );
+      courseDetails
+        ? router.push(
+            `/${programBaseUrl}/${urlInfo(courseDetails?.name)}/${urlInfo(
+              name
+            )}`
+          )
+        : router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     }
   }
 
@@ -65,7 +84,7 @@ const SubCourseDetails = ({ page }: any) => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-      msInWeek
+        msInWeek
     );
   }
 
@@ -89,12 +108,20 @@ const SubCourseDetails = ({ page }: any) => {
               ref={listRef}
             >
               {subCourse?.map(
-                ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
+                ({
+                  id,
+                  name,
+                  courseMode,
+                  batches,
+                  code,
+                  durationInWeeks,
+                  parent_id,
+                }: any) => (
                   <div ref={listRef} key={id} className="testi-block">
                     <div className="gallery-item tns-item">
                       <div
                         className="inner-box"
-                        onClick={() => redirectCard(name, code, id)}
+                        onClick={() => redirectCard(name, code, id, parent_id)}
                       >
                         {/* <div className="icon">
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
@@ -113,28 +140,23 @@ const SubCourseDetails = ({ page }: any) => {
                           <div className="cap-inner">
                             <div className="title">
                               <h5>
-                                <Link
-                                  href={`/${name?.split(" ").join("-")}/${id}`}
-                                >
-                                  <a>{name}</a>
-                                </Link>
+                                <a>{name}</a>
                               </h5>
                             </div>
 
                             <div className="cat">
                               <ul className="about-seven__list list-unstyled">
                                 <li>{courseMode.name} Classes</li>
-                                <li>
-                                  {durationInWeeks} Weeks
-                                </li>
+                                <li>{durationInWeeks} Weeks</li>
                                 <li>International certification </li>
                                 <li>Capstone projects </li>
                               </ul>
                             </div>
-                            {code != 'ADDSCI' && code != 'APDSCI' &&
+                            {code != "ADDSCI" && code != "APDSCI" && (
                               <div className="batch">
                                 {batchInfo(batches)?.description}
-                              </div>}
+                              </div>
+                            )}
                           </div>
                         </div>
                       </div>

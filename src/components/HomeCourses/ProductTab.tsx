@@ -7,8 +7,9 @@ import {
   dataScienceCode,
   digitalMarkrtingCode,
   allCoursesId,
+  programBaseUrl,
 } from "../config/constant";
-import { batchInfo } from "../config/helper";
+import { batchInfo, urlInfo } from "../config/helper";
 import _ from "lodash";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
@@ -33,15 +34,22 @@ const ProductTab = ({ courses = [], current }: any) => {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
       Math.abs(new Date(end_date).getTime() - new Date(start_date).getTime()) /
-      msInWeek
+        msInWeek
     );
   }
 
-  function redirectCard(name: any, code: any, id: any) {
+  function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
-      router.push(`/${name?.split(" ").join("-")}`);
+      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
-      router.push(`/${name?.split(" ").join("-")}/${id}`);
+      const courseDetails = _.find(courses, (item) => item?.id === parent_id);
+      courseDetails
+        ? router.push(
+            `/${programBaseUrl}/${urlInfo(courseDetails?.name)}/${urlInfo(
+              name
+            )}`
+          )
+        : router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     }
   }
 
@@ -77,11 +85,19 @@ const ProductTab = ({ courses = [], current }: any) => {
       <div className={`p-tab${current === id ? " active-tab" : ""}`}>
         <div className="project-carousel tabFullBox">
           {filterCourses?.map(
-            ({ id, name, courseMode, batches, code, durationInWeeks }: any) => (
+            ({
+              id,
+              name,
+              courseMode,
+              batches,
+              code,
+              durationInWeeks,
+              parent_id,
+            }: any) => (
               <div ref={listRef} className="gallery-item tab-item" key={id}>
                 <div
                   className="inner-box"
-                  onClick={() => redirectCard(name, code, id)}
+                  onClick={() => redirectCard(name, code, id, parent_id)}
                 >
                   {/* <div className="icon">
                 <i className="fa fa-share-alt" aria-hidden="true"></i>
@@ -96,25 +112,13 @@ const ProductTab = ({ courses = [], current }: any) => {
                   <div className="cap-box">
                     <div className="cap-inner">
                       <div className="title">
-                        <h5>
-                          {code === "DSCI" || code === "DM" ? (
-                            <Link href={`/${name?.split(" ").join("-")}`}>
-                              <a>{name}</a>
-                            </Link>
-                          ) : (
-                            <Link href={`/${name?.split(" ").join("-")}/${id}`}>
-                              <a>{name}</a>
-                            </Link>
-                          )}
-                        </h5>
+                        <h5>{name}</h5>
                       </div>
 
                       <div className="cat">
                         <ul className="about-seven__list list-unstyled">
                           <li>{courseMode.name} Classes</li>
-                          <li>
-                            {durationInWeeks} Weeks
-                          </li>
+                          <li>{durationInWeeks} Weeks</li>
                           <li>Internation Certification </li>
                           <li>Capstone Projects </li>
                         </ul>

@@ -14,7 +14,6 @@ const SubItem = (props: any) => {
     e.preventDefault();
     setActive((preActive) => !preActive);
   };
-
   return (
     <li
       className={`${subItems?.length ? "dropdown" : ""} ${
@@ -24,7 +23,7 @@ const SubItem = (props: any) => {
       <Link href={href}>
         <a href={href}>
           {name} {isNew && <span>new</span>}
-          {subItems?.length && (
+          {!!subItems?.length && (
             <div
               onClick={handleActive}
               className={`dropdown-btn${active ? " open" : ""}`}
@@ -36,9 +35,12 @@ const SubItem = (props: any) => {
       </Link>
       <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
         {subItems?.map((item: any) => (
-          <li key={item.id}>
+          <li key={item.id} className={`dropdown`}>
             <Link href={item.href}>
-              <a href={item.href}>
+              <a
+                href={item.href}
+                style={{ fontSize: "14px", fontWeight: "400" }}
+              >
                 {item.name} {item.isNew && <span>new</span>}
               </a>
             </Link>
@@ -66,7 +68,6 @@ const NavItem = (props: any) => {
     e.preventDefault();
     setActive((preActive) => !preActive);
   };
-
   return (
     <li className={`dropdown${current ? " current" : ""}`}>
       <Link href={href}>

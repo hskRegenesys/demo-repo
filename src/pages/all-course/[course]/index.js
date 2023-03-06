@@ -17,6 +17,8 @@ import { useRouter } from "next/router";
 const Course = () => {
   const router = useRouter();
 
+  const pageName = router?.query?.course?.toString().replace("-", " ");
+
   return (
     <Layout pageTitle={router?.query?.course}>
       <Style />
@@ -24,8 +26,10 @@ const Course = () => {
       <MobileMenu />
       <SearchPopup />
       <PageBanner
-        title={router?.query?.course?.toString()}
-        page={router?.query?.course?.toString()}
+        title={pageName}
+        page={pageName}
+        parent="All course"
+        parentHref="/all-course"
       />
       <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />

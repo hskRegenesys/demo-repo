@@ -40,7 +40,7 @@ export const digitalMarketingMain = [
 export const digitalMarketingText = {
   title: "Digital Marketing",
   pagedesc:
-    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advance and applied. Learn these aspects of Digital Marketing and its real-world use.",
+    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advanced and applied. Learn these aspects of Digital Marketing and its real-world use.",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
 
@@ -78,16 +78,15 @@ export const courseData = {
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+      desc1: "Get exposure to Yammer, Excel, Discord, and Slack",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -118,7 +117,7 @@ export const courseData = {
           id: 2,
           image: "James_forson.jpeg",
           title: "James Forson",
-          text: "James Forson is known for his excellent work in Project Management. James has pursued B Soc Sc (Hons) from UCT and MBA from UCT. James is the Chief Operating Officer at Regenesys Business School.",
+          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
           designation: "BSocSc (Hons)",
         },
       ],
@@ -340,7 +339,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Programme in Basic Cybersecurity",
+        title: "Certification Programme in Basic Cyber Security",
         text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
         lists: [
           "10 Weeks Course",
@@ -359,15 +358,15 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "We have to Remove the Exposure & Tools covered section as requested by Vigor.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -672,7 +671,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Programme in Basic Basic Data Science",
+        title: "Certification Program in Basic Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
         lists: [
           "10 Weeks Course",
@@ -691,18 +690,19 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from foundation phase in this course through to the applied and advanced programmes.",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      desc4:
+        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
       bg1: "/assets/images/background/reason-bg1.png",
       bg2: "/assets/images/background/reason-bg2.png",
       bg3: "/assets/images/background/reason-bg3.png",
@@ -744,7 +744,7 @@ export const courseData = {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -1044,7 +1044,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg.png",
-        title: "Certification Programme in Advanced Data Science",
+        title: "Certification Program in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
           "10 Weeks",
@@ -1063,15 +1063,15 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1116,7 +1116,7 @@ export const courseData = {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -1396,15 +1396,15 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1449,7 +1449,7 @@ export const courseData = {
           id: 3,
           image: "dr_shilpa_joshi.jpg",
           title: "Dr. Shilpa Joshi ",
-          text: "Dr Shilpa's bio to read as I've written: A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
         },
       ],
@@ -1685,15 +1685,15 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1951,7 +1951,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg.png",
         title: "Certification Programme in Advanced Digital Marketing",
-        text: "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -1963,21 +1963,21 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -1987,17 +1987,22 @@ export const courseData = {
       bg4: "/assets/images/background/reason-bg4.png",
     },
     courseTools: [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
+      "./dm/digital_marketing_tools1.png",
+      "./dm/digital_marketing_tools2.png",
+      "./dm/digital_marketing_tools3.png",
+      "./dm/digital_marketing_tools4.png",
+      "./dm/digital_marketing_tools5.png",
+      "./dm/digital_marketing_tools6.png",
+      "./dm/digital_marketing_tools7.png",
+      "./dm/digital_marketing_tools8.png",
+      "./dm/digital_marketing_tools9.png",
+      "./dm/digital_marketing_tools10.png",
+      "./dm/digital_marketing_tools11.png",
+      "./dm/digital_marketing_tools12.png",
+      "./dm/digital_marketing_tools13.png",
+      "./dm/digital_marketing_tools14.png",
+      "./dm/digital_marketing_tools15.png",
+      "./dm/digital_marketing_tools16.png",
     ],
     featureSeven: {
       title: "Meet our staff",
@@ -2252,15 +2257,15 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Aircrack-ng, Cain and Abel, NMAP, Nikto, TrueCrypt, WireShark, and other techniques",
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn : the best-in-class instructors who will help you with every technological concept scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by industry experts who will teach you about the concept right from scratch",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -2270,17 +2275,22 @@ export const courseData = {
       bg4: "/assets/images/background/reason-bg4.png",
     },
     courseTools: [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
+      "./dm/digital_marketing_tools1.png",
+      "./dm/digital_marketing_tools2.png",
+      "./dm/digital_marketing_tools3.png",
+      "./dm/digital_marketing_tools4.png",
+      "./dm/digital_marketing_tools5.png",
+      "./dm/digital_marketing_tools6.png",
+      "./dm/digital_marketing_tools7.png",
+      "./dm/digital_marketing_tools8.png",
+      "./dm/digital_marketing_tools9.png",
+      "./dm/digital_marketing_tools10.png",
+      "./dm/digital_marketing_tools11.png",
+      "./dm/digital_marketing_tools12.png",
+      "./dm/digital_marketing_tools13.png",
+      "./dm/digital_marketing_tools14.png",
+      "./dm/digital_marketing_tools15.png",
+      "./dm/digital_marketing_tools16.png",
     ],
     featureSeven: {
       title: "Meet our staff",

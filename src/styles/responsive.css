@@ -24,15 +24,13 @@
 }
 
 @media only screen and (max-width: 1499px) {
-
-  .testimonials-five .auto-container, .map-section .auto-container, .services-section-three .auto-container
-  {
+  .testimonials-five .auto-container,
+  .map-section .auto-container,
+  .services-section-three .auto-container {
     max-width: 1280px;
   }
 
- .call-to-section  .auto-container
-  {
-
+  .call-to-section .auto-container {
     max-width: 1000px;
   }
   .main-header .other-links .search-btn {
@@ -98,36 +96,29 @@
 }
 
 @media only screen and (max-width: 1199px) {
-
-
-  .main-footer .logo-widget, .footer-section-yellow
-  {
+  .main-footer .logo-widget,
+  .footer-section-yellow {
     position: relative;
-  padding: 30px;
+    padding: 30px;
   }
-  .main-footer .links-widget ul li
-  {
+  .main-footer .links-widget ul li {
     float: left;
-    margin-right:30px;
+    margin-right: 30px;
   }
 
-  .main-footer .social-links
-  {
+  .main-footer .social-links {
     float: left;
   }
 
-  .main-footer .logo-widget h5
-  {
+  .main-footer .logo-widget h5 {
     margin-bottom: 0;
   }
 
-  .main-footer .footer-widget.links-widget
-  {
+  .main-footer .footer-widget.links-widget {
     position: relative;
   }
 
-  .main-footer .footer-widget.links-widget
-  {
+  .main-footer .footer-widget.links-widget {
     width: 100% !important;
   }
   .main-header.fixed-header .header-upper .logo-box {
@@ -135,29 +126,24 @@
     padding-bottom: 20px;
   }
 
-  .contact-section .form-box
-  {
+  .contact-section .form-box {
     padding: 40px;
     margin-bottom: 0;
   }
 
-  .sign-arrow-contact img
-  {
+  .sign-arrow-contact img {
     display: none;
   }
 
-  .all-course-wave
-  {
+  .all-course-wave {
     min-height: 600px;
   }
 
-  .all-course-bg
-  {
+  .all-course-bg {
     height: 240px;
   }
 
-  .featured-section .left-col
-  {
+  .featured-section .left-col {
     max-width: 300px;
   }
   .main-header.fixed-header .nav-outer .mobile-nav-toggler {
@@ -193,38 +179,31 @@
     padding: 0;
     right: 0;
   }
-  .featured-section .right-col .inner h1
-  {
+  .featured-section .right-col .inner h1 {
     font-size: 30px;
   }
 
-  .featured-section
-  {
+  .featured-section {
     padding: 200px 30px 90px;
   }
 
-  .featured-section .right-col
-  {
+  .featured-section .right-col {
     margin-top: 0;
   }
-  .gallery-section-two .sec-title h2
-  {
+  .gallery-section-two .sec-title h2 {
     max-width: 100%;
   }
-  .project-tab .product-tab-btns .p-tab-btn
-  {
+  .project-tab .product-tab-btns .p-tab-btn {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 14px;
   }
 
-  #thm-logo
-  {
+  #thm-logo {
     height: 50px;
   }
 
-  .side-menu__top
-  {
+  .side-menu__top {
     padding-left: 10px;
   }
 
@@ -409,14 +388,11 @@
 }
 
 @media only screen and (max-width: 991px) {
-
-  .discover-block .inner-box
-  {
+  .discover-block .inner-box {
     padding: 10px;
   }
 
-  .testimonials-five-card__text
-  {
+  .testimonials-five-card__text {
     max-width: 500px;
   }
   .banner-carousel .slide-item .shape-1 {
@@ -490,13 +466,11 @@
     padding: 90px 0px 60px;
   }
   .discover-section,
-  .features-section-two .content-container
-  {
+  .features-section-two .content-container {
     padding: 30px 0;
   }
 
-  .features-section-two
-  {
+  .features-section-two {
     height: auto;
   }
   .live-section,
@@ -1037,6 +1011,11 @@
     min-height: 100vh;
     height: 100%;
   }
+  .faq-head,
+  .head-tools-covered,
+  .head-popular-topics {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -1081,7 +1060,10 @@
     font-size: 36px;
     line-height: 1.15em;
   }
-
+  .featured-section .right-col .inner h1.title-home {
+    font-size: 36px;
+    line-height: 1.15em;
+  }
   .trusted-section .featured-block-two,
   .agency-section .featured-block-two {
     padding-left: 0;
@@ -1423,7 +1405,9 @@
     margin: 0 0 10px;
     width: 100%;
   }
-
+  .features-section-two .sec-title h1 {
+    font-size: 36px;
+  }
   .trusted-section .feature,
   .why-us-section .feature .inner-box,
   .why-us-section .right-col .inner,

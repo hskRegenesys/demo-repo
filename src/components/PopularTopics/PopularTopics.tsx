@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import React, { useRef } from "react";
 import SingleTeam from "./SingleTeam";
 
-
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -31,7 +30,6 @@ const responsive1 = {
   },
 };
 
-
 const settings = {
   container: ".my-slider-19",
   loop: false,
@@ -46,7 +44,6 @@ const settings = {
   controlsContainer: ".tns-controls2",
   autoplay: true,
   autoplayButton: false,
-  
 };
 
 const { title, teams } = teamSection;
@@ -58,7 +55,7 @@ const TeamSection = ({ onePage = false }) => {
     <section className="team-section no-padd-top" id="team">
       <div className="auto-container">
         <div className="sec-title">
-          <h3 className="with-curve">{title}</h3>
+          <h2 className="with-curve head-popular-topics">{title}</h2>
         </div>
       </div>
       <div className={onePage ? "auto-container" : ""}>
@@ -66,7 +63,6 @@ const TeamSection = ({ onePage = false }) => {
           <div
             className={onePage ? "team-carousel__one-page" : "team-carousel"}
           >
-
             <div className="auto-container text-right">
               <div className="tns-controls2">
                 <button className="tns-prev">
@@ -89,9 +85,6 @@ const TeamSection = ({ onePage = false }) => {
                 <SingleTeam key={team.id} team={team} ref={listRef} />
               ))}
             </TinySlider>
-
-
-
           </div>
         </div>
       </div>
