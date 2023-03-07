@@ -21,6 +21,8 @@ import { useRouter } from "next/router";
 import { courseService } from "src/services";
 import { brochureDetails, courseData } from "@/data/course";
 import _ from "lodash";
+import { urlInfo } from "@/components/config/helper";
+import { programBaseUrl } from "@/components/config/constant";
 
 const DigitalMarketing = () => {
   const router = useRouter();
@@ -70,10 +72,7 @@ const DigitalMarketing = () => {
         parent="All course"
         parentHref="/all-course"
         parentToParent={parentToParentName()}
-        parentToParentHref={`/${parentToParentName()
-          ?.toLowerCase()
-          .split(" ")
-          .join("-")}`}
+        parentToParentHref={`/${programBaseUrl}/${urlInfo(parentToParentName())}`}
       />
       {courseDetails && (
         <>

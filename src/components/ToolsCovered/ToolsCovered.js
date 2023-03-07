@@ -44,38 +44,42 @@ const ToolsCovered = ({ courseDetails }) => {
   const listRef = useRef(null);
   return (
     <section className={`sponsors-section tools-covered`}>
-      <h2 className="head-tools-covered">Tools Covered</h2>
-      <div className="sponsors-outer">
-        <div className="fluidSection">
-          <div className="sponsors-carousel">
-            <TinySlider
-              options={{ ...settings, container: `.my-slider-15` }}
-              ref={listRef}
-            >
-              {courseDetails?.courseTools?.map((image, index) => (
-                <div
+      {courseDetails?.courseTools?.length && (
+        <>
+          <h2 className="head-tools-covered">Tools Covered</h2>
+          <div className="sponsors-outer">
+            <div className="fluidSection">
+              <div className="sponsors-carousel">
+                <TinySlider
+                  options={{ ...settings, container: `.my-slider-15` }}
                   ref={listRef}
-                  key={index}
-                  className="slide-item text-center"
                 >
-                  <figure className="image-box">
-                    <Image src={`/assets/images/clients/${image}`} alt="" />
-                  </figure>
-                </div>
-              ))}
-            </TinySlider>
+                  {courseDetails?.courseTools?.map((image, index) => (
+                    <div
+                      ref={listRef}
+                      key={index}
+                      className="slide-item text-center"
+                    >
+                      <figure className="image-box">
+                        <Image src={`/assets/images/clients/${image}`} alt="" />
+                      </figure>
+                    </div>
+                  ))}
+                </TinySlider>
 
-            <div className="tns-controls-tools">
-              <button className="tns-prev">
-                <span className="icon fa fa-angle-left"></span>
-              </button>
-              <button className="tns-next">
-                <span className="icon fas fa-angle-right"></span>
-              </button>
+                <div className="tns-controls-tools">
+                  <button className="tns-prev">
+                    <span className="icon fa fa-angle-left"></span>
+                  </button>
+                  <button className="tns-next">
+                    <span className="icon fas fa-angle-right"></span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
     </section>
   );
 };
