@@ -989,9 +989,8 @@ img {
   padding: 5px 0px;
   line-height: 24px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px !important;
   color: #171b27;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
   text-align: left;
   transition: all 300ms ease;
@@ -1002,7 +1001,7 @@ img {
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a:hover {
-  color: var(--thm-base);
+  color: #1fa393;
 }
 
 .main-menu .navigation > li > ul > li.dropdown > a:after {
@@ -7226,14 +7225,16 @@ featured-section .right-col .sec-title h2 {
 }
 .tns-controls-tools .tns-prev {
   position: absolute;
-  left: 20px;
-  top: 55px;
+  left: 2%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tns-controls-tools .tns-next {
   position: absolute;
-  right: 20px;
+  right: 1%;
   top: 55px;
+  transform: translate(-50%, -50%);
 }
 
 .testimonials-five__carousel .tns-controls button:hover,
@@ -9764,7 +9765,7 @@ featured-section .right-col .sec-title h2 {
 .page-banner .bread-crumb li:before {
   right: -16px;
   content: "\f105";
-  font-family: Font Awesome\5 Free;
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -9777,6 +9778,8 @@ featured-section .right-col .sec-title h2 {
   position: absolute;
   margin: 10px 10px 0 5px;
   transition: all 0.3s ease;
+  display: block;
+  position: absolute;
 }
 .live-section .main-image-box .vid-link {
   display: none;
@@ -17683,7 +17686,6 @@ h2.curve-right:after {
 }
 
 .partner-one__card {
-  min-height: 500px;
   margin-bottom: 30px;
   border: 0 none;
   border-radius: 20px;
@@ -18091,7 +18093,7 @@ h2.curve-right:after {
   background-repeat: no-repeat;
 }
 
-.process-one__content h2 {
+.process-one__content h1 {
   max-width: 525px;
 }
 
@@ -18708,7 +18710,7 @@ input.PhoneInputInput {
   padding-left: 0;
 }
 
-.process-one__content .sec-title h2 i {
+.process-one__content .sec-title h1 i {
   background-image: url(/assets/images/background/sign-arrow.png);
   background-size: 120px 120px;
   position: absolute;
@@ -18752,12 +18754,18 @@ input.PhoneInputInput {
   background-repeat: no-repeat;
 }
 
-.faq-block.curriculum h3 {
+.faq-block.curriculum h2 {
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
+  display: block;
+  font-size: 46px;
+  color: var(--thm-black);
+  font-weight: 800;
+  font-family: Raleway-semibold;
 }
 
-.faq-block.curriculum h3 i {
+.faq-block.curriculum h2 i {
   background-image: url(/assets/images/background/sign-arrow-left.png);
   background-size: 100px 100px;
   position: absolute;
@@ -18869,8 +18877,8 @@ input.PhoneInputInput {
     text-align: center;
   }
 
-  .process-one__content .sec-title h2 i,
-  .we-work-section .sec-title h2 i {
+  .process-one__content .sec-title h1 i,
+  .we-work-section .sec-title h1 i {
     display: none;
   }
 
@@ -19353,6 +19361,11 @@ button[disabled] {
     display: block;
   }
 
+  .sponsors-section.tools-covered
+  {
+    margin-bottom: 24px !important;
+  }
+
   .reasons-title {
     margin-top: 130px !important;
   }
@@ -19368,7 +19381,7 @@ button[disabled] {
   .reasonsWeb,
   .faq-block.curriculum h3 i,
   .product-details__title i,
-  .process-one__content .sec-title h2 i,
+  .process-one__content .sec-title h1 i,
   .product-details__title i {
     display: none !important;
   }
@@ -19424,6 +19437,7 @@ button[disabled] {
 
   #experience-mobile .partner-one__card {
     margin-bottom: 0;
+    min-height: 375px;
   }
 
   #experience-mobile .gallery-item:first-child .partner-one__card,
@@ -19611,7 +19625,7 @@ button[disabled] {
 
   .all-course-section .content-box {
     text-align: center;
-    padding: 60px 0 30px;
+    padding: 20px 0 30px;
   }
 
   .all-course-section .content-box .sign-arrow img {
@@ -19620,7 +19634,7 @@ button[disabled] {
     width: 58px;
     height: auto;
     left: unset;
-    top: -50px;
+    top: 7px;
   }
 
   .all-course-section .content-box .btn-style-two {
@@ -19641,9 +19655,18 @@ button[disabled] {
   .faqs-section,
   .get-quote-three,
   .product-details {
-    padding: 30px !important;
+    padding: 50px 30px !important;
+    margin-top: 25px;
   }
 
+  .sponsors-section-four
+  {
+    padding-bottom: 0 !important;
+  }
+  .live-section
+  {
+    display: none !important;
+    }
   .process-one__image {
     background-color: transparent;
   }
@@ -19673,8 +19696,8 @@ button[disabled] {
     position: absolute;
     width: 100%;
     left: 0;
-    padding: 120px 30px 50px;
-    margin-top: 100px;
+    padding: 80px 30px 30px;
+    margin-top: 76px;
   }
   .process-one__content ul {
     background-color: #ffe55b;
@@ -19717,7 +19740,14 @@ button[disabled] {
     margin-top: -1px;
     z-index: 1;
     position: relative;
+    padding: 20px 30px;
   }
+
+  .sec-title.centered
+  {
+    margin-bottom: 20px;
+  }
+  
 
   .contact-info .address {
     font-size: 14px;
@@ -19738,8 +19768,19 @@ button[disabled] {
     position: relative !important;
     top: unset;
     left: 0;
+    background-color: #ffe55b;
+    box-shadow: 4px 4px 0 0 #000;
+    color: #000;
   }
 
+  .tns-controls-tools .tns-next, .tns-controls-tools button:hover, .tns-controls6 button:hover,   .tns-controls6 button.tns-next, .tns-controls6 button
+  {
+    background-color: #ffe55b !important;
+    box-shadow: 4px 4px 0 0 #000 !important;
+    color: #000 !important;
+  }
+
+  
   .sponsors-section {
     padding: 30px 0px;
   }
@@ -19865,6 +19906,7 @@ span.page-head {
   line-height: 1.25em;
   font-family: var(--thm-font);
   color: var(--thm-black);
+  display: inline-block;
 }
 .font-capitalized {
   text-transform: capitalize;
@@ -19882,4 +19924,51 @@ span.page-head {
 .funfact-six .pl-0:first-child .count-text span,
 .funfact-six .pl-0:nth-child(3) .count-text span {
   display: none;
+}
+
+h2.small-heading {
+  font-size: 32px;
+  font-family: Raleway-semibold;
+  padding: 0 30px;
+  line-height: 1.25em;
+  display: block;
+  width: 100%;
+  text-transform: none;
+}
+h2.small-heading.color-black {
+  color: #000;
+}
+h2.highlight {
+  padding-left: 0px;
+}
+.faq-head,
+.head-tools-covered,
+.head-popular-topics {
+  position: relative;
+  display: block;
+  font-size: 46px;
+  color: var(--thm-black);
+  font-weight: 800;
+  font-family: Raleway-semibold;
+}
+.faq-head::after,
+.head-popular-topics::after {
+  display: none !important;
+}
+
+
+.mobile-nav__container li.dropdown ul li a
+{
+  color: #000000;
+    font-size: 20px !important;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    transition: all 500ms ease;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    font-size: 26px;
 }

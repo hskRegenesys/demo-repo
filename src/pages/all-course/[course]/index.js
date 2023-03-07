@@ -28,7 +28,7 @@ const Course = () => {
       <PageBanner
         title={pageName}
         page={pageName}
-        parent="All courses"
+        parent="All course"
         parentHref="/all-course"
       />
       <CourseText page={router?.query?.course?.toString()} />

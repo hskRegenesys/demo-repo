@@ -8,7 +8,11 @@ import _ from "lodash";
 import { Image } from "react-bootstrap";
 import { useRouter } from "next/router";
 import { batchInfo, urlInfo } from "../config/helper";
-import { dataScienceCode, digitalMarkrtingCode, programBaseUrl } from "../config/constant";
+import {
+  dataScienceCode,
+  digitalMarkrtingCode,
+  programBaseUrl,
+} from "../config/constant";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -94,7 +98,7 @@ const TrendingSection = () => {
       <div className="auto-container">
         <div className="sec-title text-center">
           <h2>{title}</h2>
-          <h6 className="desc">{description}</h6>
+          {/* <h6 className="desc">{description}</h6> */}
         </div>
 
         <div className="carousel-box">
@@ -113,7 +117,7 @@ const TrendingSection = () => {
                   batches,
                   code,
                   durationInWeeks,
-                  parent_id
+                  parent_id,
                 }: any) => (
                   <div ref={listRef} className="gallery-item" key={id}>
                     <div

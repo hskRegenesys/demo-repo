@@ -1011,6 +1011,11 @@
     min-height: 100vh;
     height: 100%;
   }
+  .faq-head,
+  .head-tools-covered,
+  .head-popular-topics {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -1058,7 +1063,6 @@
   .featured-section .right-col .inner h1.title-home {
     font-size: 36px;
     line-height: 1.15em;
-    text-align: left;
   }
   .trusted-section .featured-block-two,
   .agency-section .featured-block-two {

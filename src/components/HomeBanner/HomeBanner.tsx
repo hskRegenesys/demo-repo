@@ -44,11 +44,11 @@ const HomeBanner = ({ className = "" }) => {
 
           <Row className="revolutionise-text desktop-hide">
             <div className="sec-title animated fadeInLeft text-center">
-              <h4>
+              <h2 className="desktop-hide">
                 Revolutionise your career with
                 <br />
                 future-ready skills
-              </h4>
+              </h2>
             </div>
             <p className="para-text">
               Learn the next-gen digital skills with India’s leading EdTech

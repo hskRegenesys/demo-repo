@@ -14,22 +14,19 @@ const settings = {
     475: {
       slideBy: 1,
       items: 4,
-
     },
     600: {
       items: 2,
       gutter: 30,
-
     },
     992: {
       items: 3,
       gutter: 30,
-
     },
     1200: {
       items: 4,
       gutter: 30,
-    }
+    },
   },
   autoplay: true,
   loop: true,
@@ -45,11 +42,9 @@ const StudentPlacement = ({ className = "" }) => {
     <section className={`sponsors-section ${className}`}>
       <div className="sponsors-outer">
         <div className="FluidSection">
-        <div className="sec-title animated fadeInLeft text-center">
-              <h4>
-              Our Students Have Been Placed at
-              </h4>
-            </div>
+          <div className="sec-title animated fadeInLeft text-center">
+            <h2 className="small-heading">Our Students Have Been Placed at</h2>
+          </div>
           <div className="sponsors-carousel">
             <TinySlider
               options={{ ...settings, container: `.my-slider-15` }}
@@ -65,9 +60,8 @@ const StudentPlacement = ({ className = "" }) => {
                     <a href="#">
                       <Image
                         src={`/assets/images/clients/${
-                            className.includes("dark") ? "dark-1.png" : image
-                          }`
-                        }
+                          className.includes("dark") ? "dark-1.png" : image
+                        }`}
                         alt=""
                       />
                     </a>
