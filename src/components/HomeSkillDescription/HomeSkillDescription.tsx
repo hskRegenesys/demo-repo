@@ -11,7 +11,7 @@ const HomeSkillDescription = ({
         <div className="inner clearfix">
           <div className="sec-title animated fadeInLeft text-center">
             <h2 className="small-heading color-black">
-              Revolutionise your career with
+              Revolutionise your career with {" "}
               <br /> future-ready skills
             </h2>
           </div>
