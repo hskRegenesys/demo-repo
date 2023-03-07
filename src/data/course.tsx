@@ -2241,7 +2241,7 @@ export const courseData = {
         title: "Certification Programme in Applied Digital Marketing",
         text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
-          "10 Weeks Course",
+          "4 Weeks Course",
           "Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
