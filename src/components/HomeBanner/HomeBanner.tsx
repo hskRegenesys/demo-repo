@@ -45,8 +45,8 @@ const HomeBanner = ({ className = "" }) => {
           <Row className="revolutionise-text desktop-hide">
             <div className="sec-title animated fadeInLeft text-center">
               <h2 className="desktop-hide">
-                Revolutionise your career with
-                <br />
+                Revolutionise your career with {" "}
+                <br/>
                 future-ready skills
               </h2>
             </div>
