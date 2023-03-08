@@ -9,6 +9,7 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import { programBaseUrl } from "../config/constant";
 import { urlInfo } from "../config/helper";
+import { url } from "inspector";
 
 const {
   title,
@@ -73,7 +74,6 @@ const HeaderOne = ({
     course.forEach((courseCode) => {
       if (filterData?.length) {
         filterData?.forEach((item) => {
-          console.log("item")
           if (item.code === courseCode) {
             if (_.find(allData, (course) => course.parent_id === item.id)) {
               coursesSubItem?.push({
@@ -83,11 +83,16 @@ const HeaderOne = ({
                 href: `/${programBaseUrl}/${urlInfo(item?.name)}`,
               });
             } else {
-              const courseName = _.find(filterData,(courseItem) => courseItem === item?.parent_id)
+              const courseName = _.find(
+                filterData,
+                (courseItem) => courseItem === item?.parent_id
+              );
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
-                href: `/${programBaseUrl}/${urlInfo(courseName?.name)}/${urlInfo(item?.name)}`,
+                href: `/${programBaseUrl}${urlInfo(courseName?.name)}/${urlInfo(
+                  item?.name
+                )}`,
               });
             }
           }
@@ -116,6 +121,7 @@ const HeaderOne = ({
           }
         });
       }
+
       return item;
     });
 

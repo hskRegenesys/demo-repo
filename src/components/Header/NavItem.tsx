@@ -14,6 +14,7 @@ const SubItem = (props: any) => {
     e.preventDefault();
     setActive((preActive) => !preActive);
   };
+
   return (
     <li
       className={`${subItems?.length ? "dropdown" : ""} ${
@@ -68,6 +69,7 @@ const NavItem = (props: any) => {
     e.preventDefault();
     setActive((preActive) => !preActive);
   };
+
   return (
     <li className={`dropdown${current ? " current" : ""}`}>
       <Link href={href}>
