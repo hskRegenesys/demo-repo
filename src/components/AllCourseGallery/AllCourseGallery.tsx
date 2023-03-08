@@ -42,7 +42,7 @@ const AllCourseGallery = () => {
     setAllData(courses);
     setcourseData(courses);
 
-    console.log("allData---", allData);
+    // console.log("allData---", allData);
   };
 
   useEffect(() => {
