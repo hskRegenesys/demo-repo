@@ -25,6 +25,10 @@ const Course = () => {
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
+      <Schemas
+        type={Constants.course}
+        data={{ name: pageName, description: pageName }}
+      />
       <PageBanner
         title={pageName}
         page={pageName}

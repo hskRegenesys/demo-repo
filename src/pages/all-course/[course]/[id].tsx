@@ -23,6 +23,8 @@ import { brochureDetails, courseData } from "@/data/course";
 import _ from "lodash";
 import { urlInfo } from "@/components/config/helper";
 import { programBaseUrl } from "@/components/config/constant";
+import Schemas from "src/schemas";
+import { Constants } from "src/schemas/data";
 
 const DigitalMarketing = () => {
   const router = useRouter();
@@ -44,16 +46,18 @@ const DigitalMarketing = () => {
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
   const brochureName: any = brochureDetails[code];
+
+  const filterData = _.find(
+    parentCourse,
+    (item) =>
+      item?.parent_id === null &&
+      item?.mode_id === 1 &&
+      item?.isAddon === false &&
+      item?.id === coursePriceDetails[0]?.parent_id
+  );
+
   const parentToParentName = () => {
     let result = "";
-    const filterData = _.find(
-      parentCourse,
-      (item) =>
-        item?.parent_id === null &&
-        item?.mode_id === 1 &&
-        item?.isAddon === false &&
-        item?.id === coursePriceDetails[0]?.parent_id
-    );
     if (filterData?.name) {
       result = filterData?.name;
     }
@@ -63,6 +67,7 @@ const DigitalMarketing = () => {
 
   return (
     <Layout pageTitle={router?.query?.course}>
+      <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
       <HeaderOne />
       <MobileMenu />
@@ -72,7 +77,9 @@ const DigitalMarketing = () => {
         parent="All course"
         parentHref="/all-course"
         parentToParent={parentToParentName()}
-        parentToParentHref={`/${programBaseUrl}/${urlInfo(parentToParentName())}`}
+        parentToParentHref={`/${programBaseUrl}/${urlInfo(
+          parentToParentName()
+        )}`}
       />
       {courseDetails && (
         <>
