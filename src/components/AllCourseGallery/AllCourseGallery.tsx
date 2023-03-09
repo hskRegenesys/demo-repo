@@ -164,7 +164,7 @@ const AllCourseGallery = () => {
                     </form>
                   </div>
 
-                  <h6 className="border-bottom">All Course</h6>
+                  <h6 className="border-bottom">All Courses</h6>
                   {checkCourseData?.map(({ code, name, id }: any) => (
                     <Form.Check
                       key={id}
