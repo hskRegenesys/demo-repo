@@ -28,6 +28,12 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/programs",
+      destination: "/all-course",
+      permanent: true,
+    },
+
+    {
       source: "/programs/data-science/basic-data-science",
       destination: "/all-course/data-science/basic-data-science",
       permanent: true,
@@ -45,6 +51,11 @@ const redirectURL = () => {
 
     {
       source: "/programs/digital-marketing-course",
+      destination: "/all-course/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/programs/digital-marketing",
       destination: "/all-course/digital-marketing",
       permanent: true,
     },
@@ -76,6 +87,26 @@ const redirectURL = () => {
     {
       source: "/terms-and-condition",
       destination: "/terms-and-conditions",
+      permanent: true,
+    },
+    {
+      source: "/login",
+      destination: "https://www.digitalregenesys.com",
+      permanent: true,
+    },
+    {
+      source: "/register",
+      destination: "https://www.digitalregenesys.com",
+      permanent: true,
+    },
+    {
+      source: "/home",
+      destination: "https://www.digitalregenesys.com",
+      permanent: true,
+    },
+    {
+      source: "/search",
+      destination: "https://www.digitalregenesys.com",
       permanent: true,
     },
 
@@ -119,6 +150,12 @@ const redirectURL = () => {
     {
       source: "/study-data-science-ky",
       destination: "https://lp.digitalregenesys.com/study-data-science-ky",
+      permanent: true,
+    },
+    {
+      source: "/landing/sa/data-science",
+      destination:
+        "https://lp.digitalregenesys.com/landing/sa/digital-marketing",
       permanent: true,
     },
     {
