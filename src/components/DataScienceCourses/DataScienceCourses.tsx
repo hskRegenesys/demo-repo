@@ -25,7 +25,7 @@ const DataScienceCourses = () => {
                       </div>
                       <div className="info">
                         <div className="image">
-                          <Link href="/all-course/digital-marketing/basic-digital-marketing">
+                          <Link href="/all-courses/digital-marketing/basic-digital-marketing">
                             <a>
                               <Image
                                 src={`/assets/images/gallery/${image}`}

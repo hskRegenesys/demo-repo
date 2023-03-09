@@ -17,6 +17,8 @@ import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
 import { courseService } from "src/services";
 import _ from "lodash";
+import Schemas from "../schemas";
+import { Constants } from "src/schemas/data";
 
 const Home2 = () => {
   const [courseData, setcourseData] = useState([]);
@@ -40,6 +42,7 @@ const Home2 = () => {
 
   return (
     <Layout pageTitle="home">
+      <Schemas type={Constants.home} />
       <Style />
       <HeaderOne />
       <MobileMenu />
