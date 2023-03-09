@@ -8,8 +8,6 @@ interface props {
 }
 
 const Schemas = ({ type, data }: props) => {
-  console.log(" hello ", data);
-  console.log(" type ", type);
   return (
     <Head>
       <script
