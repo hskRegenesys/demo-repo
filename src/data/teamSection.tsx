@@ -27,42 +27,42 @@ const teamSection = {
     {
       id: 9,
       name: "Basic Digital Marketing ",
-      href: "/all-course/digital-marketing/basic-digital-marketing",
+      href: "/all-courses/digital-marketing/basic-digital-marketing",
     },
     {
       id: 10,
       name: "Advanced Digital Marketing",
-      href: "/all-course/digital-marketing/advanced-digital-marketing",
+      href: "/all-courses/digital-marketing/advanced-digital-marketing",
     },
     {
       id: 11,
       name: "Applied Digital Marketing",
-      href: "/all-course/digital-marketing/applied-digital-marketing",
+      href: "/all-courses/digital-marketing/applied-digital-marketing",
     },
     {
       id: 2,
       name: "Project Management",
-      href: "/all-course/project-management",
+      href: "/all-courses/project-management",
     },
     {
       id: 3,
       name: "Cybersecurity",
-      href: "/all-course/cybersecurity",
+      href: "/all-courses/cybersecurity",
     },
     {
       id: 6,
       name: "Basic Data Science",
-      href: "/all-course/data-science/basic-data-science",
+      href: "/all-courses/data-science/basic-data-science",
     },
     {
       id: 7,
       name: "Advanced Data Science",
-      href: "/all-course/data-science/advanced-data-science",
+      href: "/all-courses/data-science/advanced-data-science",
     },
     {
       id: 8,
       name: "Applied Data Science",
-      href: "/all-course/data-science/applied-data-science",
+      href: "/all-courses/data-science/applied-data-science",
     },
   ],
 };

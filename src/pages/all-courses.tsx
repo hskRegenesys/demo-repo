@@ -21,7 +21,7 @@ const allCourse = () => {
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Products" page="All course" />
+      <PageBanner title="Products" page="All courses" />
       <AllCourseText />
       <AllCourseGallery />
       <PartnerOne />

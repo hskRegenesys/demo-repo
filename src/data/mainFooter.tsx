@@ -92,7 +92,7 @@ export const mainFooter = {
 
     {
       id: 7,
-      href: "/all-course",
+      href: "/all-courses",
       title: "Our Courses",
     },
   ],
