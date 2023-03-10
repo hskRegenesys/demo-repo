@@ -28,7 +28,7 @@ const demoFeatures = {
     },
     {
       id: 6,
-      icon: "icon-1-7.jpg",
+      icon: "icon-1-7.webp",
       title: "parallax\nbackgrounds",
     },
     {

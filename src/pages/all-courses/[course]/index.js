@@ -13,6 +13,8 @@ import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import SubCourseDetails from "@/components/courses/subcourseDetails";
 import { useRouter } from "next/router";
+import Schemas from "../../../schemas/";
+import { Constants } from "../../../schemas/data";
 
 const Course = () => {
   const router = useRouter();
@@ -25,6 +27,10 @@ const Course = () => {
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
+      <Schemas
+        type={Constants.course}
+        data={{ name: pageName, description: pageName }}
+      />
       <PageBanner
         title={pageName}
         page={pageName}

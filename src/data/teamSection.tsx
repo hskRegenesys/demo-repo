@@ -153,7 +153,7 @@ export const teamFour = [
   },
   {
     id: 7,
-    image: "team-4-7.jpg",
+    image: "team-4-7.webp",
     name: "Lucy Matthews",
     designation: "Designer",
     socials,

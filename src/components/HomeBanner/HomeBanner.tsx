@@ -14,7 +14,7 @@ const HomeBanner = ({ className = "" }) => {
   return (
     <>
       <section className={`featured-section ${className}`}>
-        <div className="auto-container">
+        <div className="auto-container tablet-spacing">
           <Row className="row clearfix">
             <Col lg={6} md={6} sm={12} className="right-col">
               <div className="inner">

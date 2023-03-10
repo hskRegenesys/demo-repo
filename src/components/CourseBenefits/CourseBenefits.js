@@ -16,7 +16,7 @@ const CourseBenefits = ({ courseDetails }) => {
             <div className="inner animated fadeInLeft">
               <div className="image-box">
                 <Image
-                  src="/assets/images/background/career-support.png"
+                  src="/assets/images/background/career-support.webp"
                   alt=""
                 />
               </div>
@@ -57,14 +57,12 @@ const CourseBenefits = ({ courseDetails }) => {
 
         <Row className="mobile-show desktop-hide">
           <Col>
-          <div className="sec-title">
-              <h2>
-                {title}
-                </h2>
+            <div className="sec-title">
+              <h2>{title}</h2>
             </div>
             <p>{desc}</p>
             <CourseBenefitsMobile />
-            </Col>
+          </Col>
         </Row>
       </div>
     </section>

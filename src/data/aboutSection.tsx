@@ -161,7 +161,7 @@ export const aboutTen = {
 };
 
 export const aboutMeOne = {
-  image: "/assets/images/marko.png",
+  image: "/assets/images/marko.webp",
   title: "Dr Marko Saravanja",
   subtitle: "Executive Chairperson / Regenesys Business School",
   highlight: "Shifting The Focus to The New Digital World",

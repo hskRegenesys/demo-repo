@@ -2804,7 +2804,7 @@ tns-controls-tools {
 .sec-title.centered {
   max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .sec-title .upper-text {
@@ -3023,8 +3023,8 @@ tns-controls-tools {
 
 /* service three block */
 .service-block-three {
-  padding-top: 90px;
-  padding-bottom: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .service-block-three__single {
@@ -3279,7 +3279,7 @@ tns-controls-tools {
 ***/
 .live-section {
   position: relative;
-  padding: 100px 0px 0px;
+  padding: 80px 0px 0px;
   background: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -4514,13 +4514,9 @@ tns-controls-tools {
 ***/
 .team-section {
   position: relative;
-  padding: 120px 0px 90px;
+  padding: 50px 0px 20px;
   background: none;
   z-index: 2;
-}
-
-.team-section.no-padd-top {
-  padding-top: 0;
 }
 
 .team-section .carousel-box {
@@ -4842,7 +4838,7 @@ tns-controls-tools {
 ***/
 .sponsors-section {
   position: relative;
-  padding: 100px 0px;
+  padding: 50px 0px;
   background: #ffffff;
 }
 
@@ -4909,13 +4905,13 @@ tns-controls-tools {
 
 .sponsors-section-four {
   padding-top: 0;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 992px) {
   .sponsors-section-four {
     padding-top: 0;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
   }
 }
 
@@ -5012,6 +5008,7 @@ tns-controls-tools {
   padding: 0;
   z-index: 1;
   /* background-color: #ffe55b */
+  margin-top: 50px;
 }
 
 .call-to-section .inner {
@@ -6200,7 +6197,8 @@ featured-section .right-col .sec-title h2 {
 .gallery-section-two {
   position: relative;
   padding: 120px 0 0px;
-  background-image: url(/assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.webp);
+
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -6641,7 +6639,7 @@ featured-section .right-col .sec-title h2 {
 ***/
 .testimonials-section {
   position: relative;
-  padding: 100px 0px;
+  padding: 50px 0px;
   background: #c3ead8;
   overflow: hidden;
 }
@@ -7088,15 +7086,15 @@ featured-section .right-col .sec-title h2 {
 
 /* testimonials five */
 .testimonials-five {
-  padding-top: 90px;
-  padding-bottom: 45px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   /* background-color: #ffe55b; */
   background: linear-gradient(180deg, #ffffff 50%, #ffe55b 50%);
 }
 
 @media (min-width: 992px) {
   .testimonials-five {
-    padding-top: 120px;
+    padding-top: 50px;
     padding-bottom: 252px;
     margin-bottom: -252px;
   }
@@ -7663,7 +7661,8 @@ featured-section .right-col .sec-title h2 {
 
 @media (min-width: 992px) {
   .feature-seven {
-    padding-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
 }
 
@@ -8272,7 +8271,7 @@ featured-section .right-col .sec-title h2 {
 ***/
 .services-section-three {
   position: relative;
-  padding: 0px 0px 90px;
+  padding: 0px 0px 50px;
   background: #ffffff;
 }
 
@@ -8339,7 +8338,7 @@ featured-section .right-col .sec-title h2 {
   padding: 0;
   background-color: #c3eadb;
   border-radius: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .discover-block {
@@ -8449,7 +8448,7 @@ featured-section .right-col .sec-title h2 {
 .features-section-two .content-container {
   position: relative;
   display: block;
-  padding: 30px 0px 90px;
+  padding: 0 0px 90px;
 }
 
 .features-section-two .left-col {
@@ -8579,7 +8578,7 @@ featured-section .right-col .sec-title h2 {
 ***/
 .we-work-section {
   position: relative;
-  padding: 120px 0 80px;
+  padding: 70px 0 40px;
 }
 
 .we-work-section .sec-title {
@@ -9184,15 +9183,15 @@ featured-section .right-col .sec-title h2 {
 
 /* about me */
 .about-me-one {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #c3ead8;
 }
 
 @media (min-width: 1200px) {
   .about-me-one {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
 }
 
@@ -9534,7 +9533,7 @@ featured-section .right-col .sec-title h2 {
 ***/
 .map-section {
   position: relative;
-  padding: 0px 0px 120px;
+  padding: 0px 0px 100px;
 }
 
 .map-section .map-container {
@@ -9724,7 +9723,7 @@ featured-section .right-col .sec-title h2 {
 
 .page-banner .inner-container {
   position: relative;
-  padding: 170px 0 40px;
+  padding: 120px 0 40px;
 }
 
 .page-banner h1 {
@@ -9752,8 +9751,8 @@ featured-section .right-col .sec-title h2 {
 .page-banner .bread-crumb li {
   position: relative;
   float: left;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 36px;
   color: #000;
   font-weight: 400;
   cursor: default;
@@ -9817,10 +9816,9 @@ featured-section .right-col .sec-title h2 {
 
 .faqs-section {
   position: relative;
-  padding: 80px 0px 80px;
+  padding: 50px 0px 50px;
   overflow: hidden;
   background-color: #c3ead8;
-  margin-bottom: 80px;
 }
 
 .faqs-section.curriculum {
@@ -9880,7 +9878,7 @@ featured-section .right-col .sec-title h2 {
 .contact-section {
   position: relative;
   padding: 0 0 0;
-  margin-top: -242px;
+  margin-top: -280px;
 }
 
 .contact-section__one-page {
@@ -13222,6 +13220,7 @@ featured-section .right-col .sec-title h2 {
 /* product description */
 .product-description {
   padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .product-description__title {
@@ -13248,15 +13247,15 @@ featured-section .right-col .sec-title h2 {
 
 /* product details */
 .product-details {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   padding-top: 100px;
   background-color: #ffe55b;
-  background-image: url(/assets/images/background/fees_bg.png);
+  background-image: url(/assets/images/background/fees_bg.webp);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 768px;
+  min-height: 720px;
 }
 
 .product-details p {
@@ -13268,7 +13267,7 @@ featured-section .right-col .sec-title h2 {
 
 @media (min-width: 1200px) {
   .product-details {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 
@@ -13668,7 +13667,7 @@ h2.curve-right:after {
   background-image: url(/assets/images/icons/curve.png);
   width: 192px;
   padding-top: 22px;
-  height: 40px;
+  height: 20px;
   background-repeat: no-repeat;
   background-size: 144px;
   margin-top: 5px;
@@ -14478,8 +14477,8 @@ h2.curve-right:after {
 .how-it-works-card__inner {
   border-radius: 8px;
   background-color: #fff;
-  padding: 100px;
-  min-height: 500px;
+  padding: 50px;
+  min-height: 320px;
 }
 
 .how-it-works-card__icon {
@@ -16055,11 +16054,21 @@ h2.curve-right:after {
   display: flex;
   align-items: center;
   background-color: #1fa393;
-  padding: 12px;
   border-radius: 50%;
   height: 55px;
   width: 55px;
   box-shadow: 4px 4px 0 0 #ffe55b;
+  justify-content: center;
+}
+
+.funfact-six .pl-0:first-child .image-box:first-child img
+{
+  width: 40px !important;
+}
+
+.funfact-six__count .image-box img{
+  width: 30px;
+  height: auto;
 }
 
 .funfact-six__text {
@@ -17674,14 +17683,14 @@ h2.curve-right:after {
 
 /* Partner one */
 .partner-one {
-  padding-bottom: 70px;
-  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 @media (min-width: 992px) {
   .partner-one {
-    padding-top: 120px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 }
 
@@ -18061,7 +18070,7 @@ h2.curve-right:after {
 
 /* process one */
 .process-one {
-  padding: 30px;
+  padding:0 30px;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -18087,7 +18096,7 @@ h2.curve-right:after {
   border-radius: 10px;
   float: left;
   max-height: 800px;
-  background-image: url(/assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.webp);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18114,7 +18123,7 @@ h2.curve-right:after {
 
 .process-one__image__column .process-one__image {
   max-height: 800px;
-  background-image: url(/assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.webp);
   background-position: left center;
   background-size: 200% 218px;
   background-repeat: no-repeat;
@@ -18179,7 +18188,7 @@ h2.curve-right:after {
 }
 
 .footer-section-yellow {
-  padding: 50px 50px 140px 116px;
+  padding: 50px 50px 70px 100px;
   background-color: #ffe55b;
   border-top-right-radius: 50px;
 }
@@ -18223,7 +18232,7 @@ h2.curve-right:after {
 }
 
 .call-to-section-two {
-  padding: 40px 0px 30px;
+  padding: 20px 0px 40px;
 }
 
 p.para-text {
@@ -18368,15 +18377,15 @@ p.highlight {
 }
 
 .about-me-bg {
-  background-image: url(/assets/images/background/marko-bg.png);
+  background-image: url(/assets/images/background/marko-bg.webp);
   background-position: right bottom;
-  background-size: 75%;
+  background-size: 60%;
   background-repeat: no-repeat;
   margin-bottom: 80px;
 }
 
 .about-us-wave {
-  background-image: url(/assets/images/background/about-us-wave.png);
+  background-image: url(/assets/images/background/about-us-wave.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18385,7 +18394,7 @@ p.highlight {
 }
 
 .about-us-bg {
-  background-image: url(/assets/images/background/about-us-bg.png);
+  background-image: url(/assets/images/background/about-us-bg.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18395,7 +18404,7 @@ p.highlight {
 }
 
 .all-course-bg {
-  background-image: url(/assets/images/background/bg-all-course.png);
+  background-image: url(/assets/images/background/bg-all-course.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18404,7 +18413,7 @@ p.highlight {
 }
 
 .all-course-wave {
-  background-image: url(/assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18415,7 +18424,7 @@ p.highlight {
 .who-we-are {
   padding-left: 140px;
   position: relative;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .sign-arrow img {
@@ -18439,7 +18448,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #c3ead8 !important;
-  background-image: url(/assets/images/background/our-mission.png);
+  background-image: url(/assets/images/background/our-mission.webp);
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18454,7 +18463,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #ffe55b !important;
-  background-image: url(/assets/images/background/our-vision-bg.png);
+  background-image: url(/assets/images/background/our-vision-bg.webp);
   background-size: 34%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18641,7 +18650,7 @@ h6.designation {
 
 .modal-content {
   background-color: #c3ead8 !important;
-  background-image: url(/assets/images/background/our-mission.png);
+  background-image: url(/assets/images/background/our-mission.webp);
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18827,7 +18836,7 @@ input.PhoneInputInput {
 }
 
 .privacy-bg {
-  background-image: url(/assets/images/background/about-us-wave.png);
+  background-image: url(/assets/images/background/about-us-wave.webp);
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -19361,8 +19370,7 @@ button[disabled] {
     display: block;
   }
 
-  .sponsors-section.tools-covered
-  {
+  .sponsors-section.tools-covered {
     margin-bottom: 24px !important;
   }
 
@@ -19477,6 +19485,12 @@ button[disabled] {
     border-top-right-radius: 40%;
   }
 
+  .shop-sidebar .form-check
+  {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
   #experience-mobile
     .gallery-item:nth-child(2)
     .partner-one__card
@@ -19548,10 +19562,15 @@ button[disabled] {
 
   .featured-section {
     position: relative;
-    padding: 200px 0px 0 !important;
+    padding: 160px 0px 0 !important;
     background-color: #c3ead8;
     min-height: 1584px;
     max-height: unset;
+  }
+
+  .team-section.no-padd-top
+  {
+    padding: 0 !important;
   }
 
   .banner-button {
@@ -19599,7 +19618,7 @@ button[disabled] {
   }
 
   .about-us-bg {
-    background-image: url(/assets/images/background/about-us-mobile.png) !important;
+    background-image: url(/assets/images/background/about-us-mobile.webp) !important;
     background-position: center top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -19611,7 +19630,7 @@ button[disabled] {
   }
 
   .all-course-bg {
-    background-image: url(/assets/images/background/all-course-page-mobile.png);
+    background-image: url(/assets/images/background/all-course-page-mobile.webp);
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -19659,14 +19678,12 @@ button[disabled] {
     margin-top: 25px;
   }
 
-  .sponsors-section-four
-  {
+  .sponsors-section-four {
     padding-bottom: 0 !important;
   }
-  .live-section
-  {
+  .live-section {
     display: none !important;
-    }
+  }
   .process-one__image {
     background-color: transparent;
   }
@@ -19743,11 +19760,9 @@ button[disabled] {
     padding: 20px 30px;
   }
 
-  .sec-title.centered
-  {
+  .sec-title.centered {
     margin-bottom: 20px;
   }
-  
 
   .contact-info .address {
     font-size: 14px;
@@ -19773,14 +19788,16 @@ button[disabled] {
     color: #000;
   }
 
-  .tns-controls-tools .tns-next, .tns-controls-tools button:hover, .tns-controls6 button:hover,   .tns-controls6 button.tns-next, .tns-controls6 button
-  {
+  .tns-controls-tools .tns-next,
+  .tns-controls-tools button:hover,
+  .tns-controls6 button:hover,
+  .tns-controls6 button.tns-next,
+  .tns-controls6 button {
     background-color: #ffe55b !important;
     box-shadow: 4px 4px 0 0 #000 !important;
     color: #000 !important;
   }
 
-  
   .sponsors-section {
     padding: 30px 0px;
   }
@@ -19917,9 +19934,9 @@ span.page-head {
   display: none !important;
 }
 
-.funfact-six .pl-0:first-child .image-box:first-child {
+/* .funfact-six .pl-0:first-child .image-box:first-child {
   padding: 8px;
-}
+} */
 
 .funfact-six .pl-0:first-child .count-text span,
 .funfact-six .pl-0:nth-child(3) .count-text span {
@@ -19956,9 +19973,7 @@ h2.highlight {
   display: none !important;
 }
 
-
-.mobile-nav__container li.dropdown ul li a
-{
+.mobile-nav__container li.dropdown ul li a {
   color: #000000;
     font-size: 20px !important;
     letter-spacing: 1px;
@@ -19971,4 +19986,187 @@ h2.highlight {
     justify-content: center;
     padding: 10px;
     font-size: 26px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+  .process-one .process-one__image__column .process-one__image
+  {
+    display: none !important;
+  }
+
+  .process-one__content
+  {
+    padding: 30px !important;
+  }
+
+  .process-one .tablet-fix
+  {
+    width: 100% !important;
+  }
+
+  .work-tabs .tab-buttons .tab-btn
+  {
+    padding: 10px !important;
+    margin: 10px !important;
+    width: auto !important;
+  }
+  .work-tabs .tab-buttons
+  {
+    margin-bottom: 0 !important;
+  }
+
+  .page-banner .inner-container {
+    padding: 120px 0px 10px !important;
+}
+
+.sponsors-section-four
+{
+  padding-bottom: 30px !important;
+}
+
+.funfact-six__count .image-box
+{
+  margin-bottom: 10px !important;
+}
+  
+.funfact-six__count
+{
+  display: block !important;
+}
+
+.about-us-bg
+{
+  height: 432px !important;
+}
+
+.how-it-works
+{
+  padding-top: 40px !important;
+  padding:0 30px;
+}
+
+.sponsors-section-four .content-box
+{
+  padding-top: 40px !important;
+}
+
+.who-we-are
+{
+  padding-top: 50px !important;
+}
+
+.auto-container
+{
+  padding: 0 30px !important;
+}
+
+.about-me-bg
+{
+  margin-bottom: 0 !important;
+}
+
+.contact-section
+{
+  padding-top: 0 !important;
+}
+
+.services-section-three
+{
+  padding-bottom: 0 !important;
+}
+
+.btn-style-four
+{
+  padding: 5px 10px;
+}
+
+.team-section.no-padd-top
+{
+  padding-bottom: 0 !important;
+}
+.all-course-wave
+{
+  min-height: 500px !important;
+}
+.shop-sidebar .form-check
+{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.all-course-link
+{
+  margin: 5px !important;
+}
+
+.project-tab .product-tab-btns
+{
+  margin-bottom: 10px !important;
+}
+
+.service-block-three__single
+{
+  padding: 20px !important;
+}
+
+funfact-six .auto-container
+{
+  padding: 0 !important;
+}
+
+.featured-section .right-col .inner h1.title-home
+{
+  font-size: 34px;
+}
+
+.funfact-six
+{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sec-title
+{
+  margin-bottom: 0 !important;
+}
+
+.featured-section
+{
+  padding-bottom: 0 !important;
+}
+
+.featured-section .tablet-spacing
+{
+  padding: 0 !important;
+}
+
+.funfact-six__count
+{
+  margin-top: 0 !important;
+}
+.gallery-section-two
+{
+  padding-top: 30px 0 30px;
+}
+
+.call-to-section
+{
+  margin-top: 0 !important;
+}
+
+.feature-seven
+{
+  padding-top: 40px !important;
+}
+
+.tns-controls2, .tns-controls3
+{
+  margin-top: -20px !important;
+}
+.features-section-two .left-col
+{
+  margin-bottom: 0 !important;
+}
+
 }

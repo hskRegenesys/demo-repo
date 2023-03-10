@@ -1,4 +1,3 @@
-
 export const blogPage = {
   title: "Delivering the best digital marketing",
   text: "There are many variations of passages of available but majority have alteration in some by inject humour or random words. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
@@ -6,7 +5,7 @@ export const blogPage = {
   newsData: [
     {
       id: 1,
-      image: "news-7.jpg",
+      image: "news-7.webp",
       date: "20 Mar",
       admin: "Admin",
       comments: 2,
@@ -143,7 +142,7 @@ export const sidebar = {
 };
 
 export const blogDetails = {
-  image:"/assets/images/resource/news-7.jpg",
+  image: "/assets/images/resource/news-7.webp",
   date: "20 Mar",
   admin: "Admin",
   title: "basic rules of running web agency business",
@@ -160,7 +159,7 @@ export const blogDetails = {
   comments: [
     {
       id: 1,
-      image: "author-7.jpg",
+      image: "author-7.webp",
       name: "Jessica Brown",
       date: "20 May, 2020 . 4:00 pm",
       text: "Lorem Ipsum is simply dummy free text of the available printing and typesetting been the industry standard dummy text ever sincer condimentum purus.",
