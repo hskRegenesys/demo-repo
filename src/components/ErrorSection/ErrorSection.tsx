@@ -19,9 +19,9 @@ const ErrorSection = () => {
           <div className="big-text">
             <Image src={image} id="error-404" className="img-fluid" alt="" />
           </div>
-          <h2>{title}</h2>
-          <div className="text">{text}</div>
-          <div className="error-form">
+          <h4 className="mt-5">{title}</h4>
+          <div className="text mt-3">{text}</div>
+          {/* <div className="error-form">
             <form onSubmit={handleSubmit}>
               <div className="form-group clearfix">
                 <input
@@ -35,8 +35,8 @@ const ErrorSection = () => {
                 </button>
               </div>
             </form>
-          </div>
-          <div className="link-box">
+          </div> */}
+          <div className="link-box mb-5 mt-3">
             <Link href="/">
               <a className="theme-btn btn-style-one">
                 <i className="btn-curve"></i>
