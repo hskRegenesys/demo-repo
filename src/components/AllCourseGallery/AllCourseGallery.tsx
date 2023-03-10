@@ -211,7 +211,7 @@ const AllCourseGallery = () => {
                       >
                         <figure className="image">
                           <Image
-                            src={`/assets/images/gallery/${code}.png`}
+                            src={`/assets/images/gallery/${code}.webp`}
                             alt=""
                           />
                         </figure>

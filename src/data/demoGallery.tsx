@@ -170,7 +170,7 @@ const demoGallery = {
     },
     {
       id: 14,
-      image: "demo-7.jpg",
+      image: "demo-7.webp",
       tagline: "Portfolio",
       title: "Home Portfolio",
       isNew: false,

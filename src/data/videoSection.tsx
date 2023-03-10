@@ -1,7 +1,5 @@
-
-
 export const videoSix = {
-  bg:"/assets/images/update-01-10-2021/background/video-six-bg-1.jpg",
+  bg: "/assets/images/update-01-10-2021/background/video-six-bg-1.jpg",
   title: "Delivering only exceptional quality work",
   videoId: "8DP4NgupAhI",
   text: "Watch video",
@@ -14,7 +12,7 @@ export const videoSeven = {
 };
 
 export const videoOne = {
-  image:"/assets/images/background/full-video-bg.png",
+  image: "/assets/images/background/full-video-bg.webp",
   videoId: "y2Eqx6ys1hQ",
   title: "Linoor is trusted by millions of customers",
   text1:
