@@ -59,7 +59,7 @@ const portfolioMasonary = {
     {
       id: 5,
       filter: ["filter-item", "photography"],
-      image: "portfolio-home-7.jpg",
+      image: "portfolio-home-7.webp",
       tagline: "Graphic",
       title: "Fimlor Experience",
     },

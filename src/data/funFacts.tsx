@@ -1,4 +1,4 @@
-  export const funFactSix = [
+export const funFactSix = [
   {
     id: 1,
     image: "assets/images/icons/globe.svg",
@@ -16,7 +16,7 @@
     image: "assets/images/icons/growth.svg",
     count: 1997,
     text: "Upskilling Courses",
-  }
+  },
 ];
 
 const funFacts = [
@@ -43,7 +43,7 @@ const funFacts = [
 ];
 
 export const funFactsOne = {
- bg :"/assets/images/background/video-bg.png",
+  bg: "/assets/images/background/video-bg.webp",
   funFacts,
 };
 
