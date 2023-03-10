@@ -37,19 +37,18 @@ function ModalPopup(props: any) {
   const onSubmit = async (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
-    data.zapUrl = props?.courseDetails?.zapUrl;
     if (utm_source) data.utm_source = utm_source;
     if (utm_medium) data.utm_medium = utm_medium;
     if (utm_campaign) data.utm_campaign = utm_campaign;
     if (utm_content) data.utm_content = utm_content;
-    const date = `${current.getDate()}/${
-      current.getMonth() + 1
-    }/${current.getFullYear()}`;
+    const date = `${current.getDate()}/${current.getMonth() + 1
+      }/${current.getFullYear()}`;
     if (date) {
       data.date = date;
     }
 
     const result = await leadService.saveLead(data);
+
     if (result?.data && props?.title === "Download Brochure") {
       const response = await courseService.downloadBrochure(
         props?.brochureName?.name
@@ -194,10 +193,9 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Course you are looking for*</label>
                 <select
-                  className={`select-course form-select${
-                    errors?.interested_topic &&
+                  className={`select-course form-select${errors?.interested_topic &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
-                  }`}
+                    }`}
                   {...register("interested_topic", {
                     required: "Course is required",
                   })}
@@ -225,10 +223,9 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Select Highest Qualification</label>
                 <select
-                  className={`select-course form-select${
-                    errors?.highest_qualification &&
+                  className={`select-course form-select${errors?.highest_qualification &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
-                  }`}
+                    }`}
                   {...register("highest_qualification", {
                     required: "Qualification is required",
                   })}
