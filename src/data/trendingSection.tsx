@@ -4,7 +4,7 @@ const trendingSection = {
   details: [
     {
       id: 1,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Project Management",
       tagline: [
         "Live Class ",
@@ -15,7 +15,7 @@ const trendingSection = {
     },
     {
       id: 2,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Data Science",
       tagline: [
         "Live Class ",
@@ -26,7 +26,7 @@ const trendingSection = {
     },
     {
       id: 3,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Cybersecurity",
       tagline: [
         "Live Class ",
@@ -37,7 +37,7 @@ const trendingSection = {
     },
     {
       id: 4,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Digitial Marketing",
       tagline: [
         "Live Class ",
@@ -48,7 +48,7 @@ const trendingSection = {
     },
     {
       id: 5,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Investment, Trading & Personal Finance",
       tagline: [
         "Live Class ",
@@ -59,7 +59,7 @@ const trendingSection = {
     },
     {
       id: 6,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Project Management",
       tagline: [
         "Live Class ",
@@ -70,7 +70,7 @@ const trendingSection = {
     },
     {
       id: 7,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Data Science",
       tagline: [
         "Live Class ",
@@ -81,7 +81,7 @@ const trendingSection = {
     },
     {
       id: 8,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Cybersecurity",
       tagline: [
         "Live Class ",
@@ -92,7 +92,7 @@ const trendingSection = {
     },
     {
       id: 9,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Digitial Marketing",
       tagline: [
         "Live Class ",
@@ -103,7 +103,7 @@ const trendingSection = {
     },
     {
       id: 10,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Investment, Trading & Personal Finance",
       tagline: [
         "Live Class ",

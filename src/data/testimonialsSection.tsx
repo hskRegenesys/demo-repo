@@ -1,5 +1,3 @@
-
-
 const testimonialsSection = {
   title: "Customer feedbacks",
   testimonials: [
@@ -44,7 +42,7 @@ const testimonialsSection = {
 export default testimonialsSection;
 
 export const testimonialsSectionTwo = {
-  bg:"/assets/images/background/video-bg.png",
+  bg: "/assets/images/background/video-bg.webp",
   testimonials: [
     {
       id: 1,
@@ -293,6 +291,6 @@ export const testimonialsFive = {
       image: "assets/images/students/Thibedi-Grandy-Mmatli.png",
       name: "Thibedi Grandy Mmatli",
       text: "The best part about the Cybersecurity course that I took at Digital Regenesys is that my lecturer helped me greatly by solving my doubts during and outside the class as well. Vijal Mam was very helpful and she made sure that each and every student in the class understood the course properly.",
-    },  
+    },
   ],
 };

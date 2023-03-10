@@ -52,7 +52,7 @@ export const shopPage = {
     },
     {
       id: 7,
-      image: "shop1-7.jpg",
+      image: "shop1-7.webp",
       title: "Round Chair",
       price: "33.00",
       stars: 5,

@@ -1,7 +1,7 @@
 const items = [
   {
     id: 1,
-    image: "7.jpg",
+    image: "7.webp",
     title: "Project Management",
     tagline: [
       "Live Class ",
@@ -64,7 +64,7 @@ const items = [
 const digitalMarketing = [
   {
     id: 1,
-    image: "7.jpg",
+    image: "7.webp",
     title: "Digital Marketing 1",
     tagline: [
       "Live Class ",
@@ -127,7 +127,7 @@ const digitalMarketing = [
 const projectManagement = [
   {
     id: 1,
-    image: "7.jpg",
+    image: "7.webp",
     title: "Project Management 1",
     tagline: [
       "Live Class ",
@@ -190,7 +190,7 @@ const projectManagement = [
 const cyberSecurity = [
   {
     id: 1,
-    image: "7.jpg",
+    image: "7.webp",
     title: "Cybersecurity 1",
     tagline: [
       "Live Class ",
@@ -229,7 +229,7 @@ const cyberSecurity = [
 const dataScience = [
   {
     id: 1,
-    image: "7.jpg",
+    image: "7.webp",
     title: "Data Science 1",
     tagline: [
       "Live Class ",
@@ -491,7 +491,7 @@ const gallerySection = {
   courseTab: [
     {
       id: 1,
-      image: "7.jpg",
+      image: "7.webp",
       name: "Project Management",
       tagline: [
         "Live Class ",
