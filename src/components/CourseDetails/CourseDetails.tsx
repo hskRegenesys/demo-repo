@@ -15,7 +15,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
         {courseDetails?.processOne?.map(
           ({ id, image, title, text, lists }: any) => (
             <Row key={id}>
-              <Col md={7}>
+              <Col md={7} className="tablet-fix">
                 <div className="process-one__content">
                   <div className="sec-title">
                     <h1 className="arrow-right-bottom">

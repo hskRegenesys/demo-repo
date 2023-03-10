@@ -255,7 +255,6 @@
   }
 
   .sec-title h2 {
-    font-size: 60px;
     line-height: 1em;
   }
 
@@ -522,11 +521,11 @@
   .parallax-section,
   .testimonials-section,
   .error-section {
-    padding: 80px 0px;
+    padding: 50px 0px;
   }
 
   .call-to-section-two {
-    padding: 80px 0px 70px;
+    padding: 30px 0px 30px;
   }
 
   .services-section-three,
@@ -535,7 +534,7 @@
   }
 
   .sponsors-section {
-    padding: 70px 0px;
+    padding: 40px 0px;
   }
 
   .call-to-section .inner {
