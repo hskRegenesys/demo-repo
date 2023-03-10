@@ -19,13 +19,10 @@ export default function LandingForm(contactform: any) {
   const onSubmit = (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
-
-    (data.zapUrl = process.env.LEADS_API_BASE_URL + "/leads"),
-      (data.highestQualification = "");
+    (data.highestQualification = "");
     data.interestedTopic = "";
-    const date = `${current.getDate()}/${
-      current.getMonth() + 1
-    }/${current.getFullYear()}`;
+    const date = `${current.getDate()}/${current.getMonth() + 1
+      }/${current.getFullYear()}`;
     if (date) {
       data.date = date;
     }
