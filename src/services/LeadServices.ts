@@ -3,10 +3,10 @@ import { apiEndPoints } from "@/data/axisos";
 class LeadService {
     static allCourses: any;
     salesforceProgramOfIngterest = new Map([
-        ["Cybersecurity", "Live Cyber Security"],
-        ["Data Science", "Live Data Science"],
-        ["Digital Marketing", "Live Digital Marketing"],
-        ["Project Management", "Live Project Management"],
+        ["Cybersecurity", "Cyber Security"],
+        ["Data Science", "Data Science"],
+        ["Digital Marketing", "Digital Marketing"],
+        ["Project Management", "Project Management"],
     ]);
     drLeadRecordTypeId = "0127Q000000NDbXQAW";
     constructor(private leadServer: any, private salesforceServer: any) {
