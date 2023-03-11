@@ -27,6 +27,8 @@ class LeadService {
                 params.saleforceObjectId = salesforceResponse?.data?.data.Id;
                 params.saleforceObjectStatus = salesforceResponse?.data?.data.ResultCode;
             }
+            params.Interested_Topic = params.interested_topic;
+            params.Qualification = params.highest_qualification;
             const response = await this.leadServer.post(apiEndPoints.leadApi, params);
             result = response?.data;
         } catch (err: any) {
