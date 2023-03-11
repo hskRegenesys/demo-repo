@@ -6196,8 +6196,9 @@ featured-section .right-col .sec-title h2 {
 ***/
 .gallery-section-two {
   position: relative;
-  padding: 50px 0 50px;
-  background-image: url(/assets/images/background/all-course-bg.png);
+  padding: 120px 0 0px;
+  background-image: url(/assets/images/background/all-course-bg.webp);
+
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -13249,7 +13250,7 @@ featured-section .right-col .sec-title h2 {
   padding-bottom: 20px;
   padding-top: 100px;
   background-color: #ffe55b;
-  background-image: url(/assets/images/background/fees_bg.png);
+  background-image: url(/assets/images/background/fees_bg.webp);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18095,7 +18096,7 @@ h2.curve-right:after {
   border-radius: 10px;
   float: left;
   max-height: 800px;
-  background-image: url(/assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.webp);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18122,7 +18123,7 @@ h2.curve-right:after {
 
 .process-one__image__column .process-one__image {
   max-height: 800px;
-  background-image: url(/assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.webp);
   background-position: left center;
   background-size: 200% 218px;
   background-repeat: no-repeat;
@@ -18376,7 +18377,7 @@ p.highlight {
 }
 
 .about-me-bg {
-  background-image: url(/assets/images/background/marko-bg.png);
+  background-image: url(/assets/images/background/marko-bg.webp);
   background-position: right bottom;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -18384,7 +18385,7 @@ p.highlight {
 }
 
 .about-us-wave {
-  background-image: url(/assets/images/background/about-us-wave.png);
+  background-image: url(/assets/images/background/about-us-wave.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18393,7 +18394,7 @@ p.highlight {
 }
 
 .about-us-bg {
-  background-image: url(/assets/images/background/about-us-bg.png);
+  background-image: url(/assets/images/background/about-us-bg.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18403,7 +18404,7 @@ p.highlight {
 }
 
 .all-course-bg {
-  background-image: url(/assets/images/background/bg-all-course.png);
+  background-image: url(/assets/images/background/bg-all-course.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18412,7 +18413,7 @@ p.highlight {
 }
 
 .all-course-wave {
-  background-image: url(/assets/images/background/all-course-bg.png);
+  background-image: url(/assets/images/background/all-course-bg.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18447,7 +18448,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #c3ead8 !important;
-  background-image: url(/assets/images/background/our-mission.png);
+  background-image: url(/assets/images/background/our-mission.webp);
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18462,7 +18463,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #ffe55b !important;
-  background-image: url(/assets/images/background/our-vision-bg.png);
+  background-image: url(/assets/images/background/our-vision-bg.webp);
   background-size: 34%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18649,7 +18650,7 @@ h6.designation {
 
 .modal-content {
   background-color: #c3ead8 !important;
-  background-image: url(/assets/images/background/our-mission.png);
+  background-image: url(/assets/images/background/our-mission.webp);
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18835,7 +18836,7 @@ input.PhoneInputInput {
 }
 
 .privacy-bg {
-  background-image: url(/assets/images/background/about-us-wave.png);
+  background-image: url(/assets/images/background/about-us-wave.webp);
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -19369,8 +19370,7 @@ button[disabled] {
     display: block;
   }
 
-  .sponsors-section.tools-covered
-  {
+  .sponsors-section.tools-covered {
     margin-bottom: 24px !important;
   }
 
@@ -19618,7 +19618,7 @@ button[disabled] {
   }
 
   .about-us-bg {
-    background-image: url(/assets/images/background/about-us-mobile.png) !important;
+    background-image: url(/assets/images/background/about-us-mobile.webp) !important;
     background-position: center top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -19630,7 +19630,7 @@ button[disabled] {
   }
 
   .all-course-bg {
-    background-image: url(/assets/images/background/all-course-page-mobile.png);
+    background-image: url(/assets/images/background/all-course-page-mobile.webp);
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -19678,14 +19678,12 @@ button[disabled] {
     margin-top: 25px;
   }
 
-  .sponsors-section-four
-  {
+  .sponsors-section-four {
     padding-bottom: 0 !important;
   }
-  .live-section
-  {
+  .live-section {
     display: none !important;
-    }
+  }
   .process-one__image {
     background-color: transparent;
   }
@@ -19762,11 +19760,9 @@ button[disabled] {
     padding: 20px 30px;
   }
 
-  .sec-title.centered
-  {
+  .sec-title.centered {
     margin-bottom: 20px;
   }
-  
 
   .contact-info .address {
     font-size: 14px;
@@ -19792,14 +19788,16 @@ button[disabled] {
     color: #000;
   }
 
-  .tns-controls-tools .tns-next, .tns-controls-tools button:hover, .tns-controls6 button:hover,   .tns-controls6 button.tns-next, .tns-controls6 button
-  {
+  .tns-controls-tools .tns-next,
+  .tns-controls-tools button:hover,
+  .tns-controls6 button:hover,
+  .tns-controls6 button.tns-next,
+  .tns-controls6 button {
     background-color: #ffe55b !important;
     box-shadow: 4px 4px 0 0 #000 !important;
     color: #000 !important;
   }
 
-  
   .sponsors-section {
     padding: 30px 0px;
   }
@@ -19975,9 +19973,7 @@ h2.highlight {
   display: none !important;
 }
 
-
-.mobile-nav__container li.dropdown ul li a
-{
+.mobile-nav__container li.dropdown ul li a {
   color: #000000;
     font-size: 20px !important;
     letter-spacing: 1px;

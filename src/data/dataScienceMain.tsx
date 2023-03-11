@@ -1,7 +1,7 @@
 export const dataScienceMain = [
   {
     id: 1,
-    image: "7.jpg",
+    image: "7.webp",
     name: "Basic Data Science",
     tagline: [
       "Live Class ",
@@ -13,7 +13,7 @@ export const dataScienceMain = [
   },
   {
     id: 2,
-    image: "7.jpg",
+    image: "7.webp",
     name: "Advanced Data Science",
     tagline: [
       "Live Class ",
@@ -25,7 +25,7 @@ export const dataScienceMain = [
   },
   {
     id: 3,
-    image: "7.jpg",
+    image: "7.webp",
     name: "Applied Data Science",
     tagline: [
       "Live Class ",

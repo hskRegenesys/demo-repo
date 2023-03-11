@@ -103,7 +103,7 @@ const ProductTab = ({ courses = [], current }: any) => {
                 <i className="fa fa-share-alt" aria-hidden="true"></i>
               </div> */}
                   <figure className="image">
-                    <Image src={`/assets/images/gallery/${code}.png`} alt="" />
+                    <Image src={`/assets/images/gallery/${code}.webp`} alt="" />
                   </figure>
                   <a
                     className="lightbox-image overlay-box"
