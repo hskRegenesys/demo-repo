@@ -37,12 +37,14 @@ function ModalPopup(props: any) {
   const onSubmit = async (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
+    data.utm_parameters = window.location.href;
     if (utm_source) data.utm_source = utm_source;
     if (utm_medium) data.utm_medium = utm_medium;
     if (utm_campaign) data.utm_campaign = utm_campaign;
     if (utm_content) data.utm_content = utm_content;
-    const date = `${current.getDate()}/${current.getMonth() + 1
-      }/${current.getFullYear()}`;
+    const date = `${current.getDate()}/${
+      current.getMonth() + 1
+    }/${current.getFullYear()}`;
     if (date) {
       data.date = date;
     }
@@ -193,10 +195,11 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Course you are looking for*</label>
                 <select
-                  className={`select-course form-select${errors?.interested_topic &&
+                  className={`select-course form-select${
+                    errors?.Programme_Of_Interest &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
-                    }`}
-                  {...register("interested_topic", {
+                  }`}
+                  {...register("Programme_Of_Interest", {
                     required: "Course is required",
                   })}
                 >
@@ -212,9 +215,9 @@ function ModalPopup(props: any) {
                     );
                   })}
                 </select>
-                {errors?.interested_topic && (
+                {errors?.Programme_Of_Interest && (
                   <small className="text-danger">
-                    {errors?.interested_topic?.message}
+                    {errors?.Programme_Of_Interest?.message}
                   </small>
                 )}
               </div>
@@ -223,9 +226,10 @@ function ModalPopup(props: any) {
               <div className="form-group">
                 <label>Select Highest Qualification</label>
                 <select
-                  className={`select-course form-select${errors?.highest_qualification &&
+                  className={`select-course form-select${
+                    errors?.highest_qualification &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
-                    }`}
+                  }`}
                   {...register("highest_qualification", {
                     required: "Qualification is required",
                   })}
