@@ -1,3 +1,5 @@
+import { leadSource, sourceCampaign } from "@/components/config/constant";
+
 export const digitalMarketingMain = [
   {
     id: 1,
@@ -2507,30 +2509,56 @@ export const brochureDetails: any = {
   //Advance-Digital-Marketing
   AVDM: {
     name: "DigitalMarketingAdvancedBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
   },
 
   //Project Management
   PM: {
     name: "projectManagement_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
   },
 
   //Cybersecurity
-  CS: { name: "cyberSecurity_brochure.pdf" },
+  CS: {
+    name: "cyberSecurity_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //Basic Data Science
-  BDSCI: { name: "basicDataScience_brochure.pdf" },
+  BDSCI: {
+    name: "basicDataScience_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //"Basic Digital Marketing"
-  BDM: { name: "DigitalMarketingBasicBrochure.pdf" },
+  BDM: {
+    name: "DigitalMarketingBasicBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //"Applied Digital Marketing"
-  APDM: { name: "DigitalMarketingAppliedBrochure.pdf" },
+  APDM: {
+    name: "DigitalMarketingAppliedBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //Applied Data Science
   APDSCI: {
     name: "appliedDataScience_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
   },
 
   //Advance Data Science
-  ADDSCI: { name: "advanceDataScience_brochure.pdf" },
+  ADDSCI: {
+    name: "advanceDataScience_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 };

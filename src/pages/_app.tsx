@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Pixel code script start */}
       <Script
-        strategy="lazyOnload"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
               !function(f,b,e,v,n,t,s)
@@ -42,7 +42,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       {/* Pixel code script end */}
       {/* GTM code start */}
       <Script
-        strategy="lazyOnload"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -57,11 +57,11 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Google Tag Script Start  */}
       <Script
-        strategy="lazyOnload"
+        strategy="beforeInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=AW-873313553"
       />
       <Script
-        strategy="lazyOnload"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];

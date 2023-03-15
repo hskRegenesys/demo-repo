@@ -9,6 +9,9 @@ import Data from "@/data/AllformsData";
 import { leadService } from "src/services";
 
 export default function LandingForm(contactform: any) {
+  const hookForm: any = useForm();
+  const router = useRouter();
+  const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
   const [courseData, setcourseData] = useState([]);
 
   const getData = async () => {
@@ -19,10 +22,12 @@ export default function LandingForm(contactform: any) {
   const onSubmit = (data: any) => {
     const current = new Date();
     data.page_url = window.location.href;
-    (data.highestQualification = "");
+    data.highestQualification = "";
     data.interestedTopic = "";
-    const date = `${current.getDate()}/${current.getMonth() + 1
-      }/${current.getFullYear()}`;
+    data.utm_parameters = window.location.href;
+    const date = `${current.getDate()}/${
+      current.getMonth() + 1
+    }/${current.getFullYear()}`;
     if (date) {
       data.date = date;
     }
@@ -45,9 +50,7 @@ export default function LandingForm(contactform: any) {
         item?.mode_id === 1
     );
   }
-  const hookForm: any = useForm();
-  const router = useRouter();
-  const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
+
   const {
     formState: { errors },
     reset,
@@ -176,7 +179,7 @@ export default function LandingForm(contactform: any) {
                     errors.gender &&
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   }`}
-                  {...register("interested_topic", {
+                  {...register("Programme_Of_Interest", {
                     required: "Course is required",
                   })}
                 >
@@ -192,9 +195,9 @@ export default function LandingForm(contactform: any) {
                     );
                   })}
                 </select>
-                {errors.interested_topic && (
+                {errors.Programme_Of_Interest && (
                   <small className="text-danger">
-                    {errors.interested_topic.message}
+                    {errors.Programme_Of_Interest.message}
                   </small>
                 )}
               </div>
