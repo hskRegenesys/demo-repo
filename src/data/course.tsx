@@ -1,3 +1,5 @@
+// import { leadSource, sourceCampaign } from "@/components/config/constant";
+
 export const digitalMarketingMain = [
   {
     id: 1,
@@ -2507,6 +2509,8 @@ export const brochureDetails: any = {
   //Advance-Digital-Marketing
   AVDM: {
     name: "DigitalMarketingAdvancedBrochure.pdf",
+    // leadSource: leadSource,
+    // sourceCampaign: sourceCampaign,
   },
 
   //Project Management
