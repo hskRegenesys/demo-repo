@@ -43,6 +43,7 @@ Template[Constants.home] = () => {
       "@type": "SearchAction",
       target:
         "https://www.digitalregenesys.com/search?searchKey={search_term_string}",
+      "query-input": "required name=search_term_string",
     },
   };
 };
@@ -66,6 +67,8 @@ Template[Constants.course] = (data) => {
   return {
     "@type": "Course",
     "@context": "http://schema.org",
+    name: title,
+    description: bannerDescp1,
     publisher: {
       "@type": "Organization",
       name: "Digital Regenesys",
@@ -77,8 +80,6 @@ Template[Constants.course] = (data) => {
       sameAs: "https://digitalregenesys.com",
     },
     "@id": id,
-    name: title,
-    description: bannerDescp1,
     isAccessibleForFree: false,
     inLanguage: "en",
     audience: {
