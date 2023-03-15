@@ -35,18 +35,20 @@ const SubItem = (props: any) => {
         </a>
       </Link>
       <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
-        {subItems?.map((item: any) => (
-          <li key={item.id} className={`dropdown`}>
-            <Link href={item.href}>
-              <a
-                href={item.href}
-                style={{ fontSize: "14px", fontWeight: "400" }}
-              >
-                {item.name} {item.isNew && <span>new</span>}
-              </a>
-            </Link>
-          </li>
-        ))}
+        {subItems
+          ?.filter((item: any) => item.name !== "Full-Stack")
+          ?.map((item: any) => (
+            <li key={item.id} className={`dropdown`}>
+              <Link href={item.href}>
+                <a
+                  href={item.href}
+                  style={{ fontSize: "14px", fontWeight: "400" }}
+                >
+                  {item.name} {item.isNew && <span>new</span>}
+                </a>
+              </Link>
+            </li>
+          ))}
       </ul>
     </li>
   );
