@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import HeaderOne from "@/components/Header/HeaderOne";
@@ -15,7 +14,7 @@ import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
 import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
 import ToolsCovered from "@/components/ToolsCovered/ToolsCovered";
 import React, { useEffect, useState } from "react";
-// import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
+import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 import JoinReasons from "@/components/JoinReasons/JoinReasons";
 import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
 import { useRouter } from "next/router";
@@ -26,10 +25,6 @@ import { urlInfo } from "@/components/config/helper";
 import { programBaseUrl } from "@/components/config/constant";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
-
-const CourseCurriculum = dynamic(
-  () => import("@/components/CourseCurriculum/CourseCurriculum")
-);
 
 const DigitalMarketing = () => {
   const router = useRouter();
