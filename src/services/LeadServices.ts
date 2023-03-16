@@ -35,7 +35,7 @@ class LeadService {
         params.saleforceObjectStatus =
           salesforceResponse?.data?.data.ResultCode;
       }
-      params.Programme_Of_Interest = params.Programme_Of_Interest;
+      params.Interested_Topic = params.Programme_Of_Interest;
       params.Qualification = params.highest_qualification;
 
       const response = await this.leadServer.post(apiEndPoints.leadApi, params);
