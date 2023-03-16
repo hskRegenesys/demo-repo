@@ -1,3 +1,5 @@
+import { leadSource, sourceCampaign } from "@/components/config/constant";
+
 export const digitalMarketingMain = [
   {
     id: 1,
@@ -59,7 +61,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
@@ -108,14 +110,14 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "Dennis-Laxton.jpeg",
+          image: "Dennis-Laxton.webp",
           title: "Dr. Dennis Laxton ",
           text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
           designation: "Academic Team Leader and Senior Lecturer",
         },
         {
           id: 2,
-          image: "James_forson.jpeg",
+          image: "James_forson.webp",
           title: "James Forson",
           text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
           designation: "BSocSc (Hons)",
@@ -338,7 +340,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Programme in Basic Cyber Security",
         text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
         lists: [
@@ -398,14 +400,14 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "bhupendra_mishra.jpeg",
+          image: "bhupendra_mishra.webp",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior lecture",
         },
         {
           id: 2,
-          image: "faculty_deepika_sharma.jfif",
+          image: "faculty_deepika_sharma.webp",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior lecture",
@@ -670,7 +672,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Program in Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
         lists: [
@@ -728,21 +730,21 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "Samidha_Photo.jpg",
+          image: "Samidha_Photo.webp",
           title: "Samidha Kurle",
           text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "dr_nilay.jpg",
+          image: "dr_nilay.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
-          image: "dr_shilpa_joshi.jpg",
+          image: "dr_shilpa_joshi.webp",
           title: "Dr. Shilpa Joshi ",
           text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
@@ -1043,7 +1045,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Program in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
@@ -1100,21 +1102,21 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "Samidha_Photo.jpg",
+          image: "Samidha_Photo.webp",
           title: "Samidha Kurle",
           text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "dr_nilay.jpg",
+          image: "dr_nilay.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
-          image: "dr_shilpa_joshi.jpg",
+          image: "dr_shilpa_joshi.webp",
           title: "Dr. Shilpa Joshi ",
           text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
@@ -1376,7 +1378,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Programme in Applied Data Science",
         text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
@@ -1433,21 +1435,21 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "Samidha_Photo.jpg",
+          image: "Samidha_Photo.webp",
           title: "Samidha Kurle",
           text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "dr_nilay.jpg",
+          image: "dr_nilay.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
           id: 3,
-          image: "dr_shilpa_joshi.jpg",
+          image: "dr_shilpa_joshi.webp",
           title: "Dr. Shilpa Joshi ",
           text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
           designation: "Senior Lecturer",
@@ -1665,7 +1667,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Programme in Basic Digital Marketing",
         text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
@@ -1726,14 +1728,14 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "bhupendra_mishra.jpeg",
+          image: "bhupendra_mishra.webp",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "faculty_deepika_sharma.jfif",
+          image: "faculty_deepika_sharma.webp",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior Lecturer",
@@ -1949,7 +1951,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Programme in Advanced Digital Marketing",
         text: "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
@@ -2010,14 +2012,14 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "bhupendra_mishra.jpeg",
+          image: "bhupendra_mishra.webp",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "faculty_deepika_sharma.jfif",
+          image: "faculty_deepika_sharma.webp",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior Lecturer",
@@ -2237,7 +2239,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg.webp",
+        image: "yellow-bg-details-bg2.webp",
         title: "Certification Programme in Applied Digital Marketing",
         text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
@@ -2298,14 +2300,14 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "bhupendra_mishra.jpeg",
+          image: "bhupendra_mishra.webp",
           title: "Bhupendra Mishra",
           text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "faculty_deepika_sharma.jfif",
+          image: "faculty_deepika_sharma.webp",
           title: "Dr. Deepika Sharma",
           text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
           designation: "Senior Lecturer",
@@ -2507,30 +2509,56 @@ export const brochureDetails: any = {
   //Advance-Digital-Marketing
   AVDM: {
     name: "DigitalMarketingAdvancedBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
   },
 
   //Project Management
   PM: {
     name: "projectManagement_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
   },
 
   //Cybersecurity
-  CS: { name: "cyberSecurity_brochure.pdf" },
+  CS: {
+    name: "cyberSecurity_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //Basic Data Science
-  BDSCI: { name: "basicDataScience_brochure.pdf" },
+  BDSCI: {
+    name: "basicDataScience_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //"Basic Digital Marketing"
-  BDM: { name: "DigitalMarketingBasicBrochure.pdf" },
+  BDM: {
+    name: "DigitalMarketingBasicBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //"Applied Digital Marketing"
-  APDM: { name: "DigitalMarketingAppliedBrochure.pdf" },
+  APDM: {
+    name: "DigitalMarketingAppliedBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 
   //Applied Data Science
   APDSCI: {
     name: "appliedDataScience_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
   },
 
   //Advance Data Science
-  ADDSCI: { name: "advanceDataScience_brochure.pdf" },
+  ADDSCI: {
+    name: "advanceDataScience_brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 };

@@ -1,7 +1,7 @@
 export const processOne = [
   {
     id: 1,
-    image: "yellow-bg-details-bg.webp",
+    image: "yellow-bg-details-bg2.webp",
     title: "Certification Programme in Basic Digital Marketing",
     text: "Enroll for this course to advance your career in the most in-demand industries.",
     lists: [
