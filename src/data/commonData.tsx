@@ -16,7 +16,7 @@ const Data = {
       login: "Login",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
-      cybersecurity: "Cyber Security Course Online | Digital Regenesys",
+      "cyber-security": "Cyber Security Course Online | Digital Regenesys",
       "digital-marketing":
         "Digital Marketing Course Online | Digital Regenesys",
       "basic-digital-marketing":
@@ -107,7 +107,7 @@ const Data = {
       login: "Login",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
-      cybersecurity: `
+      "cyber-security": `
         cyber security, 
         cyber security course, 
         what is cyber security, 
@@ -243,7 +243,7 @@ const Data = {
       login: "Login",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
-      cybersecurity:
+      "cyber-security":
         "High-quality Cyber Security course from Digital Regenesys. Learn all about network threats, vulnerabilities, data security, risk management, and much more.",
       "digital-marketing":
         "Digital marketing, advance your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
