@@ -16061,12 +16061,11 @@ h2.curve-right:after {
   justify-content: center;
 }
 
-.funfact-six .pl-0:first-child .image-box:first-child img
-{
+.funfact-six .pl-0:first-child .image-box:first-child img {
   width: 40px !important;
 }
 
-.funfact-six__count .image-box img{
+.funfact-six__count .image-box img {
   width: 30px;
   height: auto;
 }
@@ -18070,7 +18069,7 @@ h2.curve-right:after {
 
 /* process one */
 .process-one {
-  padding:0 30px;
+  padding: 0 30px;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -19485,8 +19484,7 @@ button[disabled] {
     border-top-right-radius: 40%;
   }
 
-  .shop-sidebar .form-check
-  {
+  .shop-sidebar .form-check {
     display: inline-block;
     margin-right: 15px;
   }
@@ -19568,8 +19566,7 @@ button[disabled] {
     max-height: unset;
   }
 
-  .team-section.no-padd-top
-  {
+  .team-section.no-padd-top {
     padding: 0 !important;
   }
 
@@ -19975,198 +19972,162 @@ h2.highlight {
 
 .mobile-nav__container li.dropdown ul li a {
   color: #000000;
-    font-size: 20px !important;
-    letter-spacing: 1px;
-    line-height: 24px;
-    font-weight: 500;
-    display: flex;
-    transition: all 500ms ease;
-    font-family: "Raleway", sans-serif;
-    position: relative;
-    justify-content: center;
-    padding: 10px;
-    font-size: 26px;
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: 500;
+  display: flex;
+  transition: all 500ms ease;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  justify-content: center;
+  padding: 10px;
+  font-size: 26px;
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 1024px) { 
-  .process-one .process-one__image__column .process-one__image
-  {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .process-one .process-one__image__column .process-one__image {
     display: none !important;
   }
 
-  .process-one__content
-  {
+  .process-one__content {
     padding: 30px !important;
   }
 
-  .process-one .tablet-fix
-  {
+  .process-one .tablet-fix {
     width: 100% !important;
   }
 
-  .work-tabs .tab-buttons .tab-btn
-  {
+  .work-tabs .tab-buttons .tab-btn {
     padding: 10px !important;
     margin: 10px !important;
     width: auto !important;
   }
-  .work-tabs .tab-buttons
-  {
+  .work-tabs .tab-buttons {
     margin-bottom: 0 !important;
   }
 
   .page-banner .inner-container {
     padding: 120px 0px 10px !important;
-}
+  }
 
-.sponsors-section-four
-{
-  padding-bottom: 30px !important;
-}
+  .sponsors-section-four {
+    padding-bottom: 30px !important;
+  }
 
-.funfact-six__count .image-box
-{
-  margin-bottom: 10px !important;
-}
-  
-.funfact-six__count
-{
-  display: block !important;
-}
+  .funfact-six__count .image-box {
+    margin-bottom: 10px !important;
+  }
 
-.about-us-bg
-{
-  height: 432px !important;
-}
+  .funfact-six__count {
+    display: block !important;
+  }
 
-.how-it-works
-{
-  padding-top: 40px !important;
-  padding:0 30px;
-}
+  .about-us-bg {
+    height: 432px !important;
+  }
 
-.sponsors-section-four .content-box
-{
-  padding-top: 40px !important;
-}
+  .how-it-works {
+    padding-top: 40px !important;
+    padding: 0 30px;
+  }
 
-.who-we-are
-{
-  padding-top: 50px !important;
-}
+  .sponsors-section-four .content-box {
+    padding-top: 40px !important;
+  }
 
-.auto-container
-{
-  padding: 0 30px !important;
-}
+  .who-we-are {
+    padding-top: 50px !important;
+  }
 
-.about-me-bg
-{
-  margin-bottom: 0 !important;
-}
+  .auto-container {
+    padding: 0 30px !important;
+  }
 
-.contact-section
-{
-  padding-top: 0 !important;
-}
+  .about-me-bg {
+    margin-bottom: 0 !important;
+  }
 
-.services-section-three
-{
-  padding-bottom: 0 !important;
-}
+  .contact-section {
+    padding-top: 0 !important;
+  }
 
-.btn-style-four
-{
-  padding: 5px 10px;
-}
+  .services-section-three {
+    padding-bottom: 0 !important;
+  }
 
-.team-section.no-padd-top
-{
-  padding-bottom: 0 !important;
-}
-.all-course-wave
-{
-  min-height: 500px !important;
-}
-.shop-sidebar .form-check
-{
-  display: inline-block;
-  margin-right: 30px;
-}
+  .btn-style-four {
+    padding: 5px 10px;
+  }
 
-.all-course-link
-{
-  margin: 5px !important;
-}
+  .team-section.no-padd-top {
+    padding-bottom: 0 !important;
+  }
+  .all-course-wave {
+    min-height: 500px !important;
+  }
+  .shop-sidebar .form-check {
+    display: inline-block;
+    margin-right: 30px;
+  }
 
-.project-tab .product-tab-btns
-{
-  margin-bottom: 10px !important;
-}
+  .all-course-link {
+    margin: 5px !important;
+  }
 
-.service-block-three__single
-{
-  padding: 20px !important;
-}
+  .project-tab .product-tab-btns {
+    margin-bottom: 10px !important;
+  }
 
-funfact-six .auto-container
-{
-  padding: 0 !important;
-}
+  .service-block-three__single {
+    padding: 20px !important;
+  }
 
-.featured-section .right-col .inner h1.title-home
-{
-  font-size: 34px;
-}
+  funfact-six .auto-container {
+    padding: 0 !important;
+  }
 
-.funfact-six
-{
-  padding-top: 0;
-  padding-bottom: 0;
-}
+  .featured-section .right-col .inner h1.title-home {
+    font-size: 34px;
+  }
 
-.sec-title
-{
-  margin-bottom: 0 !important;
-}
+  .funfact-six {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-.featured-section
-{
-  padding-bottom: 0 !important;
-}
+  .sec-title {
+    margin-bottom: 0 !important;
+  }
 
-.featured-section .tablet-spacing
-{
-  padding: 0 !important;
-}
+  .featured-section {
+    padding-bottom: 0 !important;
+  }
 
-.funfact-six__count
-{
-  margin-top: 0 !important;
-}
-.gallery-section-two
-{
-  padding-top: 30px 0 30px;
-}
+  .featured-section .tablet-spacing {
+    padding: 0 !important;
+  }
 
-.call-to-section
-{
-  margin-top: 0 !important;
-}
+  .funfact-six__count {
+    margin-top: 0 !important;
+  }
+  .gallery-section-two {
+    padding-top: 30px 0 30px;
+  }
 
-.feature-seven
-{
-  padding-top: 40px !important;
-}
+  .call-to-section {
+    margin-top: 0 !important;
+  }
 
-.tns-controls2, .tns-controls3
-{
-  margin-top: -20px !important;
-}
-.features-section-two .left-col
-{
-  margin-bottom: 0 !important;
-}
+  .feature-seven {
+    padding-top: 40px !important;
+  }
 
+  .tns-controls2,
+  .tns-controls3 {
+    margin-top: -20px !important;
+  }
+  .features-section-two .left-col {
+    margin-bottom: 0 !important;
+  }
 }

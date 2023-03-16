@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
@@ -5,14 +6,28 @@ import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import AllCourseText from "@/components/StudentPlacement/AllCourseText";
+// import CallToSection from "@/components/HomeSkillDescription/CallToSection";
+// import AllCourseText from "@/components/StudentPlacement/AllCourseText";
 import React from "react";
-import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
-import VideoOne from "@/components/VideoSection/VideoOne";
+// import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
+// import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
-import AllCourseGallery from "@/components/AllCourseGallery/AllCourseGallery";
-import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
+// import AllCourseGallery from "@/components/AllCourseGallery/AllCourseGallery";
+
+const CallToSection = dynamic(
+  () => import("@/components/HomeSkillDescription/CallToSection")
+);
+const AllCourseText = dynamic(
+  () => import("@/components/StudentPlacement/AllCourseText")
+);
+const PartnerOne = dynamic(
+  () => import("@/components/ExperienceSection/ExperienceSection")
+);
+
+const VideoOne = dynamic(() => import("@/components/VideoSection/VideoOne"));
+const AllCourseGallery = dynamic(
+  () => import("@/components/AllCourseGallery/AllCourseGallery")
+);
 
 const allCourse = () => {
   return (
