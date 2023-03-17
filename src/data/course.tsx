@@ -61,7 +61,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
@@ -92,10 +92,10 @@ export const courseData = {
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
       "./pm/project-management-tools1.png",
@@ -340,7 +340,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Basic Cyber Security",
         text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
         lists: [
@@ -372,10 +372,10 @@ export const courseData = {
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     // courseTools: [
     //   "./cs/cybersecurity-tools-1.png",
@@ -672,7 +672,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Program in Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
         lists: [
@@ -705,10 +705,10 @@ export const courseData = {
       subTitle4: "Tools usage",
       desc4:
         "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
       "./ds/tools_covered1.png",
@@ -1045,7 +1045,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Program in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
@@ -1077,10 +1077,10 @@ export const courseData = {
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
       "./ds/tools_covered1.png",
@@ -1378,7 +1378,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Applied Data Science",
         text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
@@ -1410,10 +1410,10 @@ export const courseData = {
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
       "./ds/tools_covered1.png",
@@ -1667,7 +1667,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Basic Digital Marketing",
         text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
@@ -1699,10 +1699,10 @@ export const courseData = {
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
       "./dm/digital_marketing_tools1.png",
@@ -1951,7 +1951,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Advanced Digital Marketing",
         text: "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
@@ -1983,10 +1983,10 @@ export const courseData = {
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
       "./dm/digital_marketing_tools1.png",
@@ -2239,7 +2239,7 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg2.webp",
+        image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Applied Digital Marketing",
         text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
@@ -2271,10 +2271,10 @@ export const courseData = {
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1.webp",
-      bg2: "/assets/images/background/reason-bg2.webp",
-      bg3: "/assets/images/background/reason-bg3.webp",
-      bg4: "/assets/images/background/reason-bg4.webp",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
       "./dm/digital_marketing_tools1.png",

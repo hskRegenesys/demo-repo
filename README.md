@@ -1,10 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+## Local Enviroment variables setup
 
 ```bash
+# Add .env.development file and below code
+NEXT_PUBLIC_DR_API_BASE_URL=https://Uat-api-new.digitalregenesys.com/api
+NEXT_PUBLIC_LEADS_API_BASE_URL=https://Uat-api-leads.digitalregenesys.com
+NEXT_PUBLIC_SALESFORCE_API_BASE_URL=https://uat-api-leads.digitalregenesys.com
+
+
+# OR for windows environment
+set NEXT_PUBLIC_DR_API_BASE_URL=https://Uat-api-new.digitalregenesys.com/api
+set NEXT_PUBLIC_LEADS_API_BASE_URL=https://Uat-api-leads.digitalregenesys.com
+set NEXT_PUBLIC_SALESFORCE_API_BASE_URL=https://uat-api-leads.digitalregenesys.com
+
+# OR for Linux environment
+export NEXT_PUBLIC_DR_API_BASE_URL=https://Uat-api-new.digitalregenesys.com/api
+export NEXT_PUBLIC_LEADS_API_BASE_URL=https://Uat-api-leads.digitalregenesys.com
+export NEXT_PUBLIC_SALESFORCE_API_BASE_URL=https://uat-api-leads.digitalregenesys.com
+
+
+## Getting Started
+First, run the development server:
 npm run dev
 # or
 yarn dev
