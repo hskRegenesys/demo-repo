@@ -1,4 +1,5 @@
-import PageBanner from "@/components/BannerSection/PageBanner";
+import dynamic from "next/dynamic";
+// import PageBanner from "@/components/BannerSection/PageBanner";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
@@ -11,10 +12,17 @@ import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
-import SubCourseDetails from "@/components/courses/subcourseDetails";
+// import SubCourseDetails from "@/components/courses/subcourseDetails";
 import { useRouter } from "next/router";
 import Schemas from "../../../schemas/";
 import { Constants } from "../../../schemas/data";
+
+const PageBanner = dynamic(() =>
+  import("@/components/BannerSection/PageBanner")
+);
+const SubCourseDetails = dynamic(() =>
+  import("@/components/courses/subcourseDetails")
+);
 
 const Course = () => {
   const router = useRouter();

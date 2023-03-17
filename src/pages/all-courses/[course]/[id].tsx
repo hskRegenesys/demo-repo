@@ -1,4 +1,5 @@
-import PageBanner from "@/components/BannerSection/PageBanner";
+import dynamic from "next/dynamic";
+// import PageBanner from "@/components/BannerSection/PageBanner";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
@@ -6,15 +7,15 @@ import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import FaqsSection from "@/components/FaqsSection/FaqsSection";
-import CourseDetails from "@/components/CourseDetails/CourseDetails";
+// import FaqsSection from "@/components/FaqsSection/FaqsSection";
+// import CourseDetails from "@/components/CourseDetails/CourseDetails";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import SkillDetailSection from "@/components/SkillDetailSection/SkillDetailSection";
-import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
-import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
-import ToolsCovered from "@/components/ToolsCovered/ToolsCovered";
+// import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
+// import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
+// import ToolsCovered from "@/components/ToolsCovered/ToolsCovered";
 import React, { useEffect, useState } from "react";
-import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
+// import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 import JoinReasons from "@/components/JoinReasons/JoinReasons";
 import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
 import { useRouter } from "next/router";
@@ -25,6 +26,28 @@ import { urlInfo } from "@/components/config/helper";
 import { programBaseUrl } from "@/components/config/constant";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
+
+const PageBanner = dynamic(
+  () => import("@/components/BannerSection/PageBanner")
+);
+const FaqsSection = dynamic(
+  () => import("@/components/FaqsSection/FaqsSection")
+);
+const CourseDetails = dynamic(
+  () => import("@/components/CourseDetails/CourseDetails")
+);
+const FeesDetails = dynamic(
+  () => import("@/components/SkillDetailSection/FeesDetails")
+);
+const CourseBenefits = dynamic(
+  () => import("@/components/CourseBenefits/CourseBenefits")
+);
+const ToolsCovered = dynamic(
+  () => import("@/components/ToolsCovered/ToolsCovered")
+);
+const CourseCurriculum = dynamic(
+  () => import("@/components/CourseCurriculum/CourseCurriculum")
+);
 
 const DigitalMarketing = () => {
   const router = useRouter();
