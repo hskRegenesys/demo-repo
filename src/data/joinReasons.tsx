@@ -14,10 +14,10 @@ export const joinReasons = {
 
   subTitle4: "Tools usage",
   desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-  bg1: "/assets/images/background/reason-bg1.webp",
-  bg2: "/assets/images/background/reason-bg2.webp",
-  bg3: "/assets/images/background/reason-bg3.webp",
-  bg4: "/assets/images/background/reason-bg4.webp",
+  bg1: "/assets/images/background/reason-bg1-1.webp",
+  bg2: "/assets/images/background/reason-bg2-1.webp",
+  bg3: "/assets/images/background/reason-bg3-1.webp",
+  bg4: "/assets/images/background/reason-bg4-1.webp",
 };
 
 export default joinReasons;
