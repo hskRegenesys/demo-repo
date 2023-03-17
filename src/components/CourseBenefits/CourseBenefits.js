@@ -16,7 +16,7 @@ const CourseBenefits = ({ courseDetails }) => {
             <div className="inner animated fadeInLeft">
               <div className="image-box">
                 <Image
-                  src="/assets/images/background/career-support.webp"
+                  src="/assets/images/background/career-support2.webp"
                   alt=""
                 />
               </div>

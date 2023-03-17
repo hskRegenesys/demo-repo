@@ -6197,7 +6197,7 @@ featured-section .right-col .sec-title h2 {
 .gallery-section-two {
   position: relative;
   padding: 120px 0 0px;
-  background-image: url(/assets/images/background/all-course-bg.webp);
+  background-image: url(/assets/images/background/all-course-bg2.webp);
 
   background-position: center center;
   background-size: 100%;
@@ -13250,7 +13250,7 @@ featured-section .right-col .sec-title h2 {
   padding-bottom: 20px;
   padding-top: 100px;
   background-color: #ffe55b;
-  background-image: url(/assets/images/background/fees_bg.webp);
+  background-image: url(/assets/images/background/fees_bg-1.webp);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18095,7 +18095,7 @@ h2.curve-right:after {
   border-radius: 10px;
   float: left;
   max-height: 800px;
-  background-image: url(/assets/images/background/all-course-bg.webp);
+  background-image: url(/assets/images/background/all-course-bg2.webp);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18122,7 +18122,7 @@ h2.curve-right:after {
 
 .process-one__image__column .process-one__image {
   max-height: 800px;
-  background-image: url(/assets/images/background/all-course-bg.webp);
+  background-image: url(/assets/images/background/all-course-bg2.webp);
   background-position: left center;
   background-size: 200% 218px;
   background-repeat: no-repeat;
@@ -18376,7 +18376,7 @@ p.highlight {
 }
 
 .about-me-bg {
-  background-image: url(/assets/images/background/marko-bg.webp);
+  background-image: url(/assets/images/background/marko-bg-1.webp);
   background-position: right bottom;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -18412,7 +18412,7 @@ p.highlight {
 }
 
 .all-course-wave {
-  background-image: url(/assets/images/background/all-course-bg.webp);
+  background-image: url(/assets/images/background/all-course-bg2.webp);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -18447,7 +18447,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #c3ead8 !important;
-  background-image: url(/assets/images/background/our-mission.webp);
+  background-image: url(/assets/images/background/our-mission-1.webp);
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18462,7 +18462,7 @@ p.highlight {
   .how-it-works-card
   .how-it-works-card__inner {
   background-color: #ffe55b !important;
-  background-image: url(/assets/images/background/our-vision-bg.webp);
+  background-image: url(/assets/images/background/our-vision-bg-1.webp);
   background-size: 34%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -18649,7 +18649,7 @@ h6.designation {
 
 .modal-content {
   background-color: #c3ead8 !important;
-  background-image: url(/assets/images/background/our-mission.webp);
+  background-image: url(/assets/images/background/our-mission-1.webp);
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
