@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Col, Modal, Row } from "react-bootstrap";
+import { Col, Image, Modal, Row } from "react-bootstrap";
 import ModalPopup from "../Modal/ModalPopup";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
-import Image from "next/image";
 
 const ProcessOne = ({ courseDetails, brochureName }: any) => {
   const router = useRouter();
@@ -33,10 +32,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                       <Image
                         src={`/assets/images/update-01-10-2021/${image}`}
                         alt=""
-                        layout="intrinsic"
-                        width="500"
-                        height="596"
-                      ></Image>
+                      />
                     </div>
                   </Col>
 
@@ -93,10 +89,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                   <Image
                     src={`/assets/images/update-01-10-2021/${image}`}
                     alt=""
-                    layout="intrinsic"
-                    width="500"
-                    height="596"
-                  ></Image>
+                  />
                 </div>
               </Col>
             </Row>
