@@ -6,11 +6,13 @@ import TextSplit from "../Reuseable/TextSplit";
 import LiveSection from "@/components/LiveSection/LiveSection";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const { title, pagedesc, imagearrow, text1, text2, highlight } = allCourse;
 
 const AllCourseText = () => {
   const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
   return (
     <>
@@ -42,7 +44,10 @@ const AllCourseText = () => {
       </section>
 
       <Modal show={show}>
-        <ModalPopup setShows={setShow} />
+        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
     </>
   );
