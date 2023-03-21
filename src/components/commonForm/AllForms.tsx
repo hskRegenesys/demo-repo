@@ -3,7 +3,7 @@ import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import { courseService } from "src/services";
+import { courseService, countryCodeService } from "src/services";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
 import { leadService } from "src/services";
@@ -13,10 +13,15 @@ export default function LandingForm(contactform: any) {
   const router = useRouter();
   const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
   const [courseData, setcourseData] = useState([]);
+  const [countryData, setCountryData] = useState<any>({});
 
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
+  };
+  const getCountryCode = async () => {
+    let countryData = await countryCodeService.countryDetails();
+    setCountryData(countryData);
   };
 
   const onSubmit = (data: any) => {
@@ -37,6 +42,7 @@ export default function LandingForm(contactform: any) {
 
   useEffect(() => {
     getData();
+    getCountryCode();
   }, []);
 
   let courses: any = [];
@@ -133,7 +139,7 @@ export default function LandingForm(contactform: any) {
                 <PhoneInput
                   international
                   countryCallingCodeEditable={false}
-                  defaultCountry="ZA"
+                  defaultCountry={countryData?.country_code}
                   placeholder="Select Country Code*"
                   onChange={(e) => {
                     setValue("Phone", e);
