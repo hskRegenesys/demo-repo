@@ -30,7 +30,6 @@ function ModalPopup(props: any) {
     getCountryCode();
   }, []);
 
-  console.log("countryData---", countryData);
   const hookForm: any = useForm();
 
   const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
