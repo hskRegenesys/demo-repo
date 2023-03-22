@@ -7,6 +7,9 @@ export const LeadApiServiceConstants = {
 export const LalesforceApiServiceConstants = {
   baseURL: process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL,
 };
+export const CountryCodeApiServiceConstants = {
+  baseURL: process.env.NEXT_PUBLIC_COUNTRY_CODE_API,
+};
 export const apiEndPoints = Object.freeze({
   contactApi: "/contacts",
   coursesApi: "/course/all",
@@ -14,7 +17,6 @@ export const apiEndPoints = Object.freeze({
   coursePriceApi: "/course/price",
   leadApi: "/leads",
   salesforceApi: "/salesforce",
-  downloadBrochure: "/document/downloadurl"
+  downloadBrochure: "/document/downloadurl",
+  countryCode: "/json",
 });
-
-

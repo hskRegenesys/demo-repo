@@ -2,27 +2,29 @@ import React, { useState, useEffect, useContext } from "react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
-import { useRouter } from "next/router";
-import { courseService } from "src/services";
+import { courseService, countryCodeService } from "src/services";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
 import { leadService } from "src/services";
-import ThankYouPopup from "../Modal/ThankYouPopup";
 import Modal from "react-bootstrap/Modal";
 
 export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
-  const router = useRouter();
-  const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
   const [courseData, setcourseData] = useState([]);
+  const [countryData, setCountryData] = useState<any>({});
+
   const [show, setShow] = useState(false);
-  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
+  };
+  const getCountryCode = async () => {
+    let countryData = await countryCodeService.countryDetails();
+    setCountryData(countryData);
   };
 
   const onSubmit = (data: any) => {
@@ -37,6 +39,7 @@ export default function LandingForm(contactform: any) {
     if (date) {
       data.date = date;
     }
+    handleShow();
     // router.push("/thankYou");
 
     const result = leadService.saveLead(data);
@@ -44,6 +47,7 @@ export default function LandingForm(contactform: any) {
 
   useEffect(() => {
     getData();
+    getCountryCode();
   }, []);
 
   let courses: any = [];
@@ -148,7 +152,7 @@ export default function LandingForm(contactform: any) {
                   <PhoneInput
                     international
                     countryCallingCodeEditable={false}
-                    defaultCountry="ZA"
+                    defaultCountry={countryData?.country_code}
                     placeholder="Select Country Code*"
                     onChange={(e) => {
                       setValue("Phone", e);
@@ -168,8 +172,8 @@ export default function LandingForm(contactform: any) {
                   <input
                     type="text"
                     placeholder="Enter City"
-                    className={`${errors.City && "invalid"}`}
-                    {...register("city", {
+                    className={`${errors?.City && "invalid"}`}
+                    {...register("City", {
                       required: "City is Required",
                       pattern: {
                         value: /^[a-zA-Z_ ]+$/,
@@ -180,8 +184,10 @@ export default function LandingForm(contactform: any) {
                       trigger("City");
                     }}
                   />
-                  {errors.City && (
-                    <small className="text-danger">{errors.City.message}</small>
+                  {errors?.City && (
+                    <small className="text-danger">
+                      {errors?.City?.message}
+                    </small>
                   )}
                 </div>
               </div>
@@ -268,11 +274,7 @@ export default function LandingForm(contactform: any) {
             </div>
 
             <div className="row text-center">
-              <button
-                className="theme-btn btn-style-two mt-5"
-                type="submit"
-                onClick={handleShow}
-              >
+              <button className="theme-btn btn-style-two mt-5" type="submit">
                 <i className="btn-curve"></i>
                 <span className="btn-title">Submit</span>
               </button>
@@ -280,6 +282,7 @@ export default function LandingForm(contactform: any) {
           </form>
         </div>
       </div>
+
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
