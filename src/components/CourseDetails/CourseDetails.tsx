@@ -3,10 +3,12 @@ import { Col, Image, Modal, Row } from "react-bootstrap";
 import ModalPopup from "../Modal/ModalPopup";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const ProcessOne = ({ courseDetails, brochureName }: any) => {
   const router = useRouter();
   const [show, setShow] = useState<boolean>(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const [title, setTitle] = useState("");
 
   return (
@@ -99,11 +101,15 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
       <Modal show={show}>
         <ModalPopup
           setShows={setShow}
+          thankYouShow={setThankYouShow}
           title={title}
           query={router?.query}
           brochureName={brochureName}
           courseDetails={courseDetails}
         />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
     </section>
   );

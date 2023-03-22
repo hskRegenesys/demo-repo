@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
+import React, { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const CallToSection = ({ className = "", container = true }) => {
-
   const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-
 
   return (
     <>
       <section className={`call-to-section ${className}`}>
         <div className={container ? "auto-container" : "inner clearfix"}>
           <div className={container ? "inner clearfix" : ""}>
-
             <div className="row h-100">
               <div className="col-md-8 align-self-start">
-              
-                <h2><i className='call-to-action-arrow'></i>Equip yourself with the future-ready skills to elevate your career to new heights
+                <h2>
+                  <i className="call-to-action-arrow"></i>Equip yourself with
+                  the future-ready skills to elevate your career to new heights
                 </h2>
               </div>
 
@@ -28,16 +28,16 @@ const CallToSection = ({ className = "", container = true }) => {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
       <Modal show={show}>
-        <ModalPopup setShows={setShow} />
+        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
       </Modal>
-
-
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
+      </Modal>
     </>
   );
 };

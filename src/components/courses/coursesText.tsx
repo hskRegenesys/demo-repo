@@ -5,9 +5,11 @@ import Link from "next/link";
 import { Col, Image } from "react-bootstrap";
 import TextSplit from "../Reuseable/TextSplit";
 import ModalPopup from "../Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const CourseText = ({ page }: any) => {
   const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
   const { title, pagedesc, imagearrow } =
     page === "data-science" ? dataScienceCourse : digitalMarketingText;
@@ -38,7 +40,10 @@ const CourseText = ({ page }: any) => {
         </div>
       </section>
       <Modal show={show}>
-        <ModalPopup setShows={setShow} />
+        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
     </>
   );
