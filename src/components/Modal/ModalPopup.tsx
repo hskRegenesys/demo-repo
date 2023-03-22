@@ -13,6 +13,9 @@ import { downloadFromBlob } from "@/components/config/helper";
 function ModalPopup(props: any) {
   const router = useRouter();
   const [courseData, setcourseData] = useState([]);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
@@ -59,7 +62,8 @@ function ModalPopup(props: any) {
       downloadFromBlob(response?.data, props?.brochureName?.name) == false;
     }
     if (props?.title !== "Download Brochure") {
-      router.push("/thankYou");
+      props.setShows(false);
+      props.thankYouShow(true);
     }
   };
 
@@ -257,7 +261,11 @@ function ModalPopup(props: any) {
               <span className="btn-title">Cancel</span>
             </button>
 
-            <button type="submit" className="theme-btn btn-style-two">
+            <button
+              type="submit"
+              className="theme-btn btn-style-two"
+              onClick={handleShow}
+            >
               <i className="btn-curve"></i>
               <span className="btn-title">Submit</span>
             </button>

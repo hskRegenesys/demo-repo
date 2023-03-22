@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const { image, title, text, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
 
 const HomeBanner = ({ className = "" }) => {
   const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
 
   return (
@@ -45,8 +47,7 @@ const HomeBanner = ({ className = "" }) => {
           <Row className="revolutionise-text desktop-hide">
             <div className="sec-title animated fadeInLeft text-center">
               <h2 className="desktop-hide">
-                Revolutionise your career with {" "}
-                <br/>
+                Revolutionise your career with <br />
                 future-ready skills
               </h2>
             </div>
@@ -71,7 +72,10 @@ const HomeBanner = ({ className = "" }) => {
       </section>
 
       <Modal show={show}>
-        <ModalPopup setShows={setShow} />
+        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
     </>
   );

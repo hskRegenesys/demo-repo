@@ -19363,10 +19363,30 @@ button[disabled] {
   background: var(--thm-black);
   color: #ffffff;
 }
+.modal-thankyou-text {
+  text-align: center;
+  padding: 3% 5%;
+}
+.modal-thankyou-text h4 {
+  font-weight: 800;
+}
+.modal-thankyou-text p {
+  font-weight: 800;
+  font-size: 24px;
+}
 
 @media (max-width: 575.98px) {
   .reasonsMobile {
     display: block;
+  }
+  .modal-thankyou-text {
+    padding: 0px;
+  }
+  .modal-thankyou-text h4 {
+    font-size: 28px;
+  }
+  .modal-thankyou-text p {
+    font-size: 18px;
   }
 
   .sponsors-section.tools-covered {

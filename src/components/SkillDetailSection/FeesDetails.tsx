@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Col, Image, Modal, Row } from "react-bootstrap";
 import { useRouter } from "next/router";
 import ModalPopup from "../Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
+
 import {
   indiaCountryId,
   nigeriaCountryId,
@@ -36,6 +38,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   const [coursePriceDetails, setcoursePrice] = useState<any>([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
   const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
@@ -161,7 +164,10 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
         </Row>
       </div>
       <Modal show={show}>
-        <ModalPopup setShows={setShow} />
+        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
     </section>
   );
