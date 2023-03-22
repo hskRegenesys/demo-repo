@@ -287,7 +287,7 @@ export default function LandingForm(contactform: any) {
             <h4>THANK YOU FOR YOUR INTEREST!</h4>
             <p>
               Your details have been recorded and you can expect a call from one
-              of our expert counselor.
+              of our expert counsellor.
             </p>
           </div>
         </Modal.Body>
