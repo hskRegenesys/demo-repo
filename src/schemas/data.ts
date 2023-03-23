@@ -2,12 +2,16 @@ const Constants = {
   breadCrumb: "breadCrumb",
   home: "home",
   course: "course",
+  organization: "organization",
+  localbusiness: "local business",
+  website: "website",
+  image: "image",
+  faq: "faqpage",
 };
 
 interface TemplateInterface {
   [Key: string]: (data: any) => {};
 }
-
 const ListTemplate: TemplateInterface = {};
 const Template: TemplateInterface = {};
 
@@ -86,6 +90,81 @@ Template[Constants.course] = (data) => {
       "@type": "Audience",
       audienceType: audienceData,
     },
+  };
+};
+
+Template[Constants.organization] = (data) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://www.digitalregenesys.com",
+    logo: "https://www.digitalregenesys.com/images/logo.png",
+  };
+};
+
+Template[Constants.localbusiness] = (data) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "local business",
+
+    name: "Digital Regenesys",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "165 West Street",
+      addressLocality: "Sandton",
+      addressRegion: "Johannesburg",
+      postalCode: "2031",
+      addressCountry: "South Africa",
+    },
+  };
+};
+
+Template[Constants.website] = (data) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: "https://www.digitalregenesys.com",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate:
+          "https://www.digitalregenesys.com/search?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+};
+
+Template[Constants.image] = (data) => {
+  return {
+    "@context": "https://schema.org/",
+    "@type": "ImageObject",
+    contentUrl: "https://www.digitalregenesys.com/photos",
+    license: "https://www.digitalregenesys.com/license",
+    acquireLicensePage: "https://www.digitalregenesys.com/how-to-use-my-images",
+    creditText: "Digital Regenesys",
+    creator: {
+      "@type": "Organization",
+      name: "Digital Regenesys",
+    },
+  };
+};
+
+Template[Constants.faq] = (data) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Application Fee?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "<p>A non-refundable fee of R1,100 is required in order for an application to be processed. Regenesys reserves the right to amend this fee from time-to-time..</p>",
+        },
+      },
+    ],
   };
 };
 
