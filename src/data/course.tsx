@@ -673,7 +673,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Program in Basic Data Science",
+        title: "Certification Programme in Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
         lists: [
           "10 Weeks Course",
@@ -1046,7 +1046,7 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Program in Advanced Data Science",
+        title: "Certification Programme in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
           "10 Weeks",
