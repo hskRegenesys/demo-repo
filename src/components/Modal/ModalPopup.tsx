@@ -15,6 +15,7 @@ function ModalPopup(props: any) {
   const [courseData, setcourseData] = useState([]);
   const [countryData, setCountryData] = useState<any>({});
   const [show, setShow] = useState(false);
+  const [btnDisable, sebtnDisable] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const getData = async () => {
@@ -45,6 +46,7 @@ function ModalPopup(props: any) {
   } = hookForm;
 
   const onSubmit = async (data: any) => {
+    sebtnDisable(true);
     const current = new Date();
     data.page_url = window.location.href;
     data.utm_parameters = window.location.href;
@@ -273,6 +275,7 @@ function ModalPopup(props: any) {
               type="submit"
               className="theme-btn btn-style-two"
               onClick={handleShow}
+              disabled={btnDisable}
             >
               <i className="btn-curve"></i>
               <span className="btn-title">Submit</span>
