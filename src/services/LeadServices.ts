@@ -26,7 +26,7 @@ class LeadService {
       salesforceParam.Lead_Source = leadSource;
       salesforceParam.Source_Campaign = sourceCampaign;
       const salesforceResponse = await this.salesforceServer.post(
-        "apiEndPoints.salesforceApi",
+        apiEndPoints.salesforceApi,
         salesforceParam
       );
       //Save leads on Leads DB
