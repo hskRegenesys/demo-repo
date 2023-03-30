@@ -8,7 +8,7 @@ export const LalesforceApiServiceConstants = {
   baseURL: process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL,
 };
 export const CountryCodeApiServiceConstants = {
-  baseURL: process.env.NEXT_PUBLIC_COUNTRY_CODE_API,
+  baseURL: "/api",
 };
 export const apiEndPoints = Object.freeze({
   contactApi: "/contacts",
@@ -18,5 +18,5 @@ export const apiEndPoints = Object.freeze({
   leadApi: "/leads",
   salesforceApi: "/salesforce",
   downloadBrochure: "/document/downloadurl",
-  countryCode: "/json",
+  countryCode: "/geoLocation",
 });
