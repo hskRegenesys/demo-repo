@@ -16,11 +16,11 @@ export default sponsors;
 export const sponsorsSectionTwo = {
   title: "Some of the clients we have worked with",
   images: [
-    "/assets/images/clients/2.png",
-    "/assets/images/clients/2.png",
-    "/assets/images/clients/2.png",
-    "/assets/images/clients/2.png",
-    "/assets/images/clients/2.png",
+    "/assets/images/clients/2.webp",
+    "/assets/images/clients/2.webp",
+    "/assets/images/clients/2.webp",
+    "/assets/images/clients/2.webp",
+    "/assets/images/clients/2.webp",
   ],
 };
 

@@ -6,13 +6,14 @@ import { useForm } from "react-hook-form";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
 
-import { courseService, leadService } from "src/services";
+import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
 
 function ModalPopup(props: any) {
   const router = useRouter();
   const [courseData, setcourseData] = useState([]);
+  const [countryData, setCountryData] = useState<any>({});
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -20,9 +21,15 @@ function ModalPopup(props: any) {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
   };
+  const getCountryCode = async () => {
+    let countryData = await countryCodeService.countryDetails();
+    setCountryData(countryData);
+  };
   useEffect(() => {
     getData();
+    getCountryCode();
   }, []);
+
   const hookForm: any = useForm();
 
   const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
@@ -158,6 +165,7 @@ function ModalPopup(props: any) {
                 <PhoneInput
                   international
                   countryCallingCodeEditable={false}
+                  // defaultCountry={countryData?.country_code}
                   defaultCountry="ZA"
                   placeholder="Select Country Code*"
                   onChange={(e) => {

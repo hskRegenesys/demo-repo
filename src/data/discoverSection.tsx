@@ -3,7 +3,7 @@ const discoverSection = {
   discovers: [
     {
       id: 1,
-      image: "contact-location.png",
+      image: "contact-location.webp",
       title: "Location",
       href: "https://www.google.com/maps/place/Digital+Regenesys+-+India/@19.077271,73.0050634,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c1f0b34f5f01:0x6ddb59351ca12c12!8m2!3d19.077271!4d73.0072521",
       buttonText: "Open in Google Map",
@@ -14,7 +14,7 @@ const discoverSection = {
   discovers2: [
     {
       id: 2,
-      image: "contact-time-call.png",
+      image: "contact-time-call.webp",
       title: "Make a Call",
       phone2: " +91 1800 212 9950",
       phone3: " +27 (11) 669 5000",
@@ -27,7 +27,7 @@ const discoverSection = {
   discovers3: [
     {
       id: 3,
-      image: "contact-mail.png",
+      image: "contact-mail.webp",
 
       email: "info.digital@regenesys.net",
       title: "Send a mail",
