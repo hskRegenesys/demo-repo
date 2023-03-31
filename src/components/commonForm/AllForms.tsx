@@ -13,6 +13,7 @@ export default function LandingForm(contactform: any) {
   const [courseData, setcourseData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [countryData, setCountryData] = useState<any>({});
+  const [btnDisable, sebtnDisable] = useState(false);
 
   const [show, setShow] = useState(false);
 
@@ -30,6 +31,7 @@ export default function LandingForm(contactform: any) {
   };
 
   const onSubmit = (data: any) => {
+    sebtnDisable(true);
     const current = new Date();
     data.page_url = window.location.href;
     data.highestQualification = "";
@@ -283,6 +285,7 @@ export default function LandingForm(contactform: any) {
                 </div>
               </div>
 
+<<<<<<< HEAD
               <div className="row text-center">
                 <button className="theme-btn btn-style-two mt-5" type="submit">
                   <i className="btn-curve"></i>
@@ -291,6 +294,19 @@ export default function LandingForm(contactform: any) {
               </div>
             </form>
           )}
+=======
+            <div className="row text-center">
+              <button
+                disabled={btnDisable}
+                className="theme-btn btn-style-two mt-5"
+                type="submit"
+              >
+                <i className="btn-curve"></i>
+                <span className="btn-title">Submit</span>
+              </button>
+            </div>
+          </form>
+>>>>>>> e7be3e9477a500c7ea2df19f6f8c9f5ddd98eb28
         </div>
       </div>
 
