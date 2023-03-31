@@ -12,6 +12,7 @@ export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
   const [courseData, setcourseData] = useState([]);
   const [countryData, setCountryData] = useState<any>({});
+  const [btnDisable, sebtnDisable] = useState(false);
 
   const [show, setShow] = useState(false);
 
@@ -25,9 +26,11 @@ export default function LandingForm(contactform: any) {
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
     setCountryData(countryData);
+    sebtnDisable(false);
   };
 
   const onSubmit = (data: any) => {
+    sebtnDisable(true);
     const current = new Date();
     data.page_url = window.location.href;
     data.highestQualification = "";
@@ -275,7 +278,11 @@ export default function LandingForm(contactform: any) {
             </div>
 
             <div className="row text-center">
-              <button className="theme-btn btn-style-two mt-5" type="submit">
+              <button
+                disabled={btnDisable}
+                className="theme-btn btn-style-two mt-5"
+                type="submit"
+              >
                 <i className="btn-curve"></i>
                 <span className="btn-title">Submit</span>
               </button>
