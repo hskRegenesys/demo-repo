@@ -37,12 +37,16 @@ class LeadService {
       }
       params.Interested_Topic = params.Programme_Of_Interest;
       params.Qualification = params.highest_qualification;
-
-      const response = await this.leadServer.post(apiEndPoints.leadApi, params);
-      result = response?.data;
     } catch (err: any) {
       result = err?.response;
       console.log("Error while getting student details ", err.message);
+    }
+
+    try {
+      const response = await this.leadServer.post(apiEndPoints.leadApi, params);
+      result = response?.data;
+    } catch (err) {
+      console.log("Leads Api Error ");
     } finally {
       // eslint-disable-next-line no-unsafe-finally
       return result;
