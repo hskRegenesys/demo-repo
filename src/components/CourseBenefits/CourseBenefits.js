@@ -1,7 +1,8 @@
 import { courseBenefits } from "@/data/courseBenefits";
 import React, { useState } from "react";
 import SingleCourseBenefits from "./SingleCourseBenefits";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Image from "next/image";
 import CourseBenefitsMobile from "@/components/CourseBenefitsMobile/CourseBenefitsMobile";
 
 const CourseBenefits = ({ courseDetails }) => {
@@ -15,8 +16,15 @@ const CourseBenefits = ({ courseDetails }) => {
           <Col md={4}>
             <div className="inner animated fadeInLeft">
               <div className="image-box">
+                {/* <Image
+                  src="/assets/images/background/career-support2.webp"
+                  alt=""
+                /> */}
                 <Image
                   src="/assets/images/background/career-support2.webp"
+                  layout="intrinsic"
+                  width="700"
+                  height="703"
                   alt=""
                 />
               </div>

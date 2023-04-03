@@ -32,11 +32,11 @@ const MobileMenu = ({ onePage = false }) => {
               <div className="logo">
                 <Link href="/">
                   <a>
-                    <Image
+                    {/* <Image
                       alt="Digital Regenesys"
                       id="thm-logo"
                       src="/assets/images/logo.png"
-                    />
+                    /> */}
                   </a>
                 </Link>
               </div>

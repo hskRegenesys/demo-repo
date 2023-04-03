@@ -1,7 +1,7 @@
 import courseTools from "@/data/courseTools";
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -61,7 +61,14 @@ const ToolsCovered = ({ courseDetails }) => {
                       className="slide-item text-center"
                     >
                       <figure className="image-box">
-                        <Image src={`/assets/images/clients/${image}`} alt="" />
+                        {/* <Image src={`/assets/images/clients/${image}`} alt="" /> */}
+                        <Image
+                          src={`/assets/images/clients/${image}`}
+                          layout="intrinsic"
+                          width="320"
+                          height="178"
+                          alt=""
+                        />
                       </figure>
                     </div>
                   ))}

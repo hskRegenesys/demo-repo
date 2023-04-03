@@ -1,9 +1,10 @@
 import featuredSection from "@/data/featuredSection";
 import React, { useState } from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import Image from "next/image";
 
 const { image, title, text, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
@@ -27,10 +28,16 @@ const HomeBanner = ({ className = "" }) => {
               </div>
             </Col>
 
-            <Col lg={6} md={6} sm={12} className="left-col">
-              <div className="inner animated fadeInLeft">
+            <Col lg={6} md={6} sm={12} className="left-col center-block-image">
+              <div className="inner center-image animated fadeInLeft">
                 <div className="image-box">
-                  <Image src={image} alt="" />
+                  <Image
+                    src={image}
+                    layout="responsive"
+                    width="432"
+                    height="547"
+                    alt="gmba banner"
+                  ></Image>
                 </div>
 
                 <a

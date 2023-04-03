@@ -1,6 +1,7 @@
 import { joinReasons } from "@/data/joinReasons";
 import React from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion";
 
 const JoinReasons = ({ courseDetails }: any) => {
@@ -29,7 +30,16 @@ const JoinReasons = ({ courseDetails }: any) => {
         <Row className="reasonsWeb">
           <Col sm={12} md={6} lg={4} className="animated fadeInLeft">
             <div className="reasons__secOne">
-              <Image src={bg1} alt="" />
+              {/* <Image src={bg1} alt="" /> */}
+              <div className="reasons-shape-image-height1">
+                <Image
+                  src={bg1}
+                  layout="responsive"
+                  width="500"
+                  height="209"
+                  alt=""
+                />
+              </div>
 
               <div className="join__reasons">
                 <h5 className="heading">{subTitle1}</h5>
@@ -40,7 +50,16 @@ const JoinReasons = ({ courseDetails }: any) => {
 
           <Col sm={12} md={6} lg={8} className="animated fadeInLeft">
             <div className="reasons__secTwo">
-              <Image src={bg2} alt="" />
+              {/* <Image src={bg2} alt="" /> */}
+              <div className="reasons-shape-image-height2">
+                <Image
+                  src={bg2}
+                  layout="responsive"
+                  width="484"
+                  height="785"
+                  alt=""
+                />
+              </div>
               <div className="join__reasons">
                 <h5 className="heading">{subTitle2}</h5>
                 <p>{desc2}</p>
@@ -51,7 +70,18 @@ const JoinReasons = ({ courseDetails }: any) => {
         <Row className="mt-4 reasonsWeb">
           <Col sm={12} md={6} lg={8} className="animated fadeInLeft secThree">
             <div className="reasons__secThree">
-              <Image src={bg3} alt="" />
+              {/* <Image src={bg3} alt="" /> */}
+
+              <div className="reasons-shape-image-height3">
+                <Image
+                  src={bg3}
+                  layout="responsive"
+                  width="484"
+                  height="785"
+                  alt=""
+                />
+              </div>
+
               <div className="join__reasons">
                 <h5 className="heading">{subTitle3}</h5>
                 <p>{desc3}</p>
@@ -61,7 +91,16 @@ const JoinReasons = ({ courseDetails }: any) => {
 
           <Col sm={12} md={6} lg={4} className="animated fadeInLeft secFour">
             <div className="reasons__secFour">
-              <Image src={bg4} alt="" />
+              {/* <Image src={bg4} alt="" /> */}
+              <div className="reasons-shape-image-height4">
+                <Image
+                  src={bg4}
+                  layout="responsive"
+                  width="484"
+                  height="785"
+                  alt=""
+                />
+              </div>
               <div className="join__reasons">
                 <h5 className="heading">{subTitle4}</h5>
                 <p>{desc4}</p>

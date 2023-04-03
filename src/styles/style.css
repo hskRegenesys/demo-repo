@@ -3631,6 +3631,12 @@ tns-controls-tools {
   position: relative;
   margin-bottom: 30px;
 }
+.left-col.center-block-image {
+  display: block !important;
+}
+.center-image {
+  margin: 0 auto !important;
+}
 
 .we-do-section .left-col .inner {
   position: relative;
@@ -13317,7 +13323,7 @@ featured-section .right-col .sec-title h2 {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: baseline;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -13372,7 +13378,32 @@ featured-section .right-col .sec-title h2 {
   font-family: var(--thm-b-font);
   padding-left: 30px;
 }
-
+.reasons-shape-image-height1 span {
+  width: 500px !important;
+  height: 209px !important;
+  position: absolute !important;
+}
+.reasons-shape-image-height2 span {
+  width: 187px !important;
+  height: 304px !important;
+  position: absolute !important;
+  right: 0px;
+  top: 0px;
+}
+.reasons-shape-image-height3 span {
+  width: 341px !important;
+  height: 272px !important;
+  position: absolute !important;
+  right: 0px;
+  top: 11%;
+}
+.reasons-shape-image-height4 span {
+  width: 286px !important;
+  height: 320px !important;
+  position: absolute !important;
+  left: 0px;
+  top: 0px;
+}
 .product-details__quantity .quantity-box button {
   width: 29px;
   height: 29px;

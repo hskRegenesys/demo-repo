@@ -1,6 +1,7 @@
 import { dataScienceMain } from "@/data/dataScienceMain";
 import React from "react";
-import { Col, Row, Image } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Image from "next/image";
 import Link from "next/link";
 
 const DataScienceCourses = () => {
@@ -27,8 +28,15 @@ const DataScienceCourses = () => {
                         <div className="image">
                           <Link href="/all-courses/digital-marketing/basic-digital-marketing">
                             <a>
+                              {/* <Image
+                                src={`/assets/images/gallery/${image}`}
+                                alt=""
+                              /> */}
                               <Image
                                 src={`/assets/images/gallery/${image}`}
+                                layout="responsive"
+                                width="274"
+                                height="182"
                                 alt=""
                               />
                             </a>
