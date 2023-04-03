@@ -2,7 +2,8 @@ import discoverSection from "@/data/discoverSection";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import React from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Image from "next/image";
 import TextSplit from "../Reuseable/TextSplit";
 const MapBox = dynamic(() => import("../MapSection/MapBox"));
 
@@ -17,7 +18,15 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
             <Col key={id} lg={4} md={4} sm={12} className="discover-block">
               <div className="inner-box">
                 <div className="image-box">
-                  <Image src={`/assets/images/icons/${image}`} alt="" />
+                  {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
+
+                  <Image
+                    src={`/assets/images/icons/${image}`}
+                    layout="intrinsic"
+                    width="232"
+                    height="232"
+                    alt=""
+                  />
                 </div>
                 <div className="cap-box animated fadeInUp">
                   <div className="cap-inner">
@@ -36,11 +45,9 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
 
               <Row className="desktop-hide mobile-show">
                 <Col>
-                <MapBox />
+                  <MapBox />
                 </Col>
               </Row>
-
-
             </Col>
           ))}
           {discovers2?.map(
@@ -58,7 +65,16 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
               <Col key={id} lg={4} md={4} sm={12} className="discover-block">
                 <div className="inner-box">
                   <div className="image-box">
-                    <Image src={`/assets/images/icons/${image}`} alt="" />
+                    {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
+                    <div>
+                      <Image
+                        src={`/assets/images/icons/${image}`}
+                        layout="intrinsic"
+                        width="232"
+                        height="232"
+                        alt=""
+                      />
+                    </div>
                   </div>
                   <div className="cap-box animated fadeInUp">
                     <div className="cap-inner">
@@ -96,7 +112,14 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
               <Col key={id} lg={4} md={4} sm={12} className="discover-block">
                 <div className="inner-box">
                   <div className="image-box">
-                    <Image src={`/assets/images/icons/${image}`} alt="" />
+                    {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
+                    <Image
+                      src={`/assets/images/icons/${image}`}
+                      layout="intrinsic"
+                      width="232"
+                      height="232"
+                      alt=""
+                    />
                   </div>
                   <div className="cap-box animated fadeInUp">
                     <div className="cap-inner">

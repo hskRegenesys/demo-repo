@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Col, Image, Modal, Row } from "react-bootstrap";
+import { Col, Modal, Row } from "react-bootstrap";
 import ModalPopup from "../Modal/ModalPopup";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import Image from "next/image";
 
 const ProcessOne = ({ courseDetails, brochureName }: any) => {
   const router = useRouter();
@@ -31,8 +32,15 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                     className="process-one__image__column desktop-hide"
                   >
                     <div className="process-one__image animated fadeInLeft">
+                      {/* <Image
+                        src={`/assets/images/update-01-10-2021/${image}`}
+                        alt=""
+                      /> */}
                       <Image
                         src={`/assets/images/update-01-10-2021/${image}`}
+                        layout="intrinsic"
+                        width="500"
+                        height="596"
                         alt=""
                       />
                     </div>
@@ -88,8 +96,15 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
 
               <Col md={5} className="process-one__image__column mobile-hide">
                 <div className="process-one__image animated fadeInLeft">
+                  {/* <Image
+                    src={`/assets/images/update-01-10-2021/${image}`}
+                    alt=""
+                  /> */}
                   <Image
                     src={`/assets/images/update-01-10-2021/${image}`}
+                    layout="intrinsic"
+                    width="500"
+                    height="596"
                     alt=""
                   />
                 </div>

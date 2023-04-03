@@ -1,6 +1,7 @@
 import { aboutMeOne } from "@/data/aboutSection";
 import React from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Image from "next/image";
 
 const { image, title, text, text2, text3, highlight, subtitle } = aboutMeOne;
 
@@ -11,7 +12,14 @@ const AboutMarko = () => {
         <Row>
           <Col md={12} lg={6} className="mobile-show desktop-hide">
             <div className="about-me-one__image">
-              <Image src={image} alt="" />
+              {/* <Image src={image} alt="" /> */}
+              <Image
+                src="/assets/images/marko.webp"
+                layout="intrinsic"
+                width="450"
+                height="511"
+                alt=""
+              />
             </div>
           </Col>
 
@@ -30,7 +38,14 @@ const AboutMarko = () => {
 
           <Col md={12} lg={6} className="mobile-hide">
             <div className="about-me-one__image">
-              <Image src={image} alt="" />
+              {/* <Image src={image} alt="" /> */}
+              <Image
+                src="/assets/images/marko.webp"
+                layout="intrinsic"
+                width="450"
+                height="511"
+                alt=""
+              />
             </div>
           </Col>
         </Row>

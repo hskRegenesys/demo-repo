@@ -2,7 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import { productDetails } from "@/data/productDetails";
 import { courseService } from "src/services";
 import Link from "next/link";
-import { Col, Image, Modal, Row } from "react-bootstrap";
+import { Col, Modal, Row } from "react-bootstrap";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import ModalPopup from "../Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
@@ -117,19 +118,54 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                         }
                       >
                         {item.country_id === southAfricaCountryId && (
-                          <Image src={flagsa} alt="South Africa" />
+                          // <Image src={flagsa} alt="South Africa" />
+                          <Image
+                            src={flagsa}
+                            layout="intrinsic"
+                            width="100"
+                            height="69"
+                            alt="South Africa"
+                          />
                         )}
                         {item.country_id === indiaCountryId && (
-                          <Image src={flagind} alt="India" />
+                          // <Image src={flagind} alt="India" />
+                          <Image
+                            src={flagind}
+                            layout="intrinsic"
+                            width="100"
+                            height="69"
+                            alt="India"
+                          />
                         )}
                         {item.country_id === nigeriaCountryId && (
-                          <Image src={flagnig} alt="Nigeria" />
+                          // <Image src={flagnig} alt="Nigeria" />
+                          <Image
+                            src={flagnig}
+                            alt="Nigeria"
+                            layout="intrinsic"
+                            width="100"
+                            height="69"
+                          />
                         )}
                         {item.country_id === ukCountryId && (
-                          <Image src={flagus} alt="UK" />
+                          // <Image src={flagus} alt="UK" />
+                          <Image
+                            src={flagus}
+                            alt="UK"
+                            layout="intrinsic"
+                            width="100"
+                            height="69"
+                          />
                         )}
                         {item.country_id === kenyaCountryId && (
-                          <Image src={flagken} alt="Kenya" />
+                          // <Image src={flagken} alt="Kenya" />
+                          <Image
+                            src={flagken}
+                            alt="Kenya"
+                            layout="intrinsic"
+                            width="100"
+                            height="69"
+                          />
                         )}
                       </div>
                     </a>

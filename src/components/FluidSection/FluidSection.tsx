@@ -14,8 +14,7 @@ const FluidSection = () => {
                 <div
                   className="image-layer"
                   style={{
-                    backgroundImage: `url(${`/assets/images/background/${bg}`
-                    })`,
+                    backgroundImage: `url(${`/assets/images/background/${bg}`})`,
                   }}
                 ></div>
                 <div className="content-box">
