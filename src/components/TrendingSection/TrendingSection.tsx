@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { courseService } from "src/services";
 import _ from "lodash";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { batchInfo, urlInfo } from "../config/helper";
 import {
@@ -128,8 +128,15 @@ const TrendingSection = () => {
                       <i className="fa fa-share-alt" aria-hidden="true"></i>
                     </div> */}
                       <figure className="image">
+                        {/* <Image
+                          src={`/assets/images/gallery/${code}.webp`}
+                          alt=""
+                        /> */}
                         <Image
                           src={`/assets/images/gallery/${code}.webp`}
+                          layout="responsive"
+                          width="274"
+                          height="182"
                           alt=""
                         />
                       </figure>

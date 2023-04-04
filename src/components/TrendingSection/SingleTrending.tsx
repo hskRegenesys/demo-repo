@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { forwardRef } from "react";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 
 const SingleTrending = ({
-  testimonial = {image:"", name:"", designation:"", tagline:[]},
+  testimonial = { image: "", name: "", designation: "", tagline: [] },
   className = "",
   userSelect = false,
 }) => {
@@ -22,8 +22,15 @@ const SingleTrending = ({
           <div className="image">
             <Link href="/team">
               <a>
+                {/* <Image
+                  src={`/assets/images/gallery/${image}`}
+                  alt=""
+                /> */}
                 <Image
                   src={`/assets/images/gallery/${image}`}
+                  layout="responsive"
+                  width="274"
+                  height="182"
                   alt=""
                 />
               </a>

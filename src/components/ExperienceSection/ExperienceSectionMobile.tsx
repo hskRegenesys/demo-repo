@@ -2,7 +2,8 @@ import { partnerOne } from "@/data/partnerSection";
 import React, { useState, useEffect, useContext, useRef } from "react";
 import useActive from "@/hooks/useActive";
 import dynamic from "next/dynamic";
-import { Col, Image, Row } from "react-bootstrap";
+
+import Image from "next/image";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -22,14 +23,14 @@ const settings = {
   fixedWidth: 250,
 };
 
-
-
 const ExperienceSectionMobile = () => {
   const listRef = useRef(null);
 
-
   return (
-    <section className="experience-section desktop-hide mobile-show" id="experience-mobile">
+    <section
+      className="experience-section desktop-hide mobile-show"
+      id="experience-mobile"
+    >
       <div className="auto-container">
         <div className="carousel-box">
           <div className="testimonials-carousel">
@@ -41,20 +42,26 @@ const ExperienceSectionMobile = () => {
             >
               {partnerOne?.map(({ id, image, title, text }) => (
                 <div ref={listRef} className="gallery-item" key={id}>
-                
                   <div className="partner-one__card">
                     <div className="partner-one__image">
+                      {/* <Image
+                        src={`/assets/images/icons/${image}`}
+                        alt=""
+                      /> */}
                       <Image
                         src={`/assets/images/icons/${image}`}
+                        layout="intrinsic"
+                        width="1207"
+                        height="761"
                         alt=""
                       />
                     </div>
                     <div className="partner-one__content">
                       <h3 className="partner-one__title">{title}</h3>
                       <p className="partner-one__text">{text}</p>
-                    </div>                
+                    </div>
                   </div>
-                  </div>  
+                </div>
               ))}
             </TinySlider>
 

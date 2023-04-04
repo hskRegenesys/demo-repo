@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { Col, Image } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import Image from "next/image";
 
-const GalleryItem = (props:any) => {
+const GalleryItem = (props: any) => {
   const { item = {} } = props;
   const { image, title, tagline, filter } = item;
 
@@ -15,8 +16,15 @@ const GalleryItem = (props:any) => {
     >
       <div className="inner-box">
         <figure className="image">
+          {/* <Image
+            src={`/assets/images/gallery/${image}`}
+            alt=""
+          /> */}
           <Image
             src={`/assets/images/gallery/${image}`}
+            layout="responsive"
+            width="274"
+            height="182"
             alt=""
           />
         </figure>

@@ -3,7 +3,8 @@ import headerData from "@/data/header";
 import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { Image } from "react-bootstrap";
+// import { Image } from "react-bootstrap";
+import Image from "next/image";
 import NavItem from "./NavItem";
 import { courseService } from "src/services";
 import _ from "lodash";
@@ -164,7 +165,17 @@ const HeaderOne = ({
             <div className="logo">
               <Link href="/">
                 <a title={title}>
-                  <Image id="thm-logo" src={Logo} alt={title} title={title} />
+                  {/* <Image id="thm-logo" src={Logo} alt={title} title={title} /> */}
+                  <div>
+                    <Image
+                      src={Logo}
+                      layout="intrinsic"
+                      width="237"
+                      height="60"
+                      title={title}
+                      alt={title}
+                    ></Image>
+                  </div>
                 </a>
               </Link>
             </div>
