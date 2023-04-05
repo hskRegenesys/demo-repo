@@ -15,6 +15,7 @@ function ModalPopup(props: any) {
   const router = useRouter();
   const [courseData, setcourseData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
   const [show, setShow] = useState(false);
   const [btnDisable, sebtnDisable] = useState(false);
@@ -28,6 +29,16 @@ function ModalPopup(props: any) {
     let countryData = await countryCodeService.countryDetails();
     setCountryData(countryData);
     countryData ? setIsLoading(false) : setIsLoading(true);
+
+    try {
+      const response = await fetch("https://geolocation-db.com/json/");
+      const result = await response.json();
+      setGeoLocationData(result);
+      return result;
+    } catch (error) {
+      console.log("error", error);
+      return error;
+    }
   };
   useEffect(() => {
     getData();
@@ -179,8 +190,8 @@ function ModalPopup(props: any) {
                   <PhoneInput
                     international
                     countryCallingCodeEditable={false}
-                    // defaultCountry={countryData?.country_code}
-                    defaultCountry="ZA"
+                    defaultCountry={geoLocationData?.country_code}
+                    // defaultCountry="ZA"
                     placeholder="Select Country Code*"
                     onChange={(e) => {
                       setValue("Phone", e);
