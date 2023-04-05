@@ -400,17 +400,10 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "bhupendra_mishra.webp",
-          title: "Bhupendra Mishra",
-          text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
-          designation: "Senior lecture",
-        },
-        {
-          id: 2,
-          image: "faculty_deepika_sharma.webp",
-          title: "Dr. Deepika Sharma",
-          text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
-          designation: "Senior lecture",
+          image: "Dr-Saquib-Ahmad-Khan.webp",
+          title: "Dr. Saquib Ahmad Khan",
+          text: "Dr. Saquib Ahmad Khan is a highly regarded and accomplished professional in the cybersecurity field. With a Ph.D. in Computer Science and several cybersecurity certifications under his belt, Dr. Khan is a renowned expert in the field cyber security. He has authored numerous research papers and articles on cybersecurity and frequently speaks at industry conferences and events, sharing his expertise with others. His contributions to the field have earned him several accolades, including widespread recognition for his knowledge and expertise. Dr. Khan is also well-versed in marketing, management, information technology, and applications, with multiple degrees. He is an exceptional faculty member, having published over 26 research papers on various subjects, and his contributions to the field are widely praised. Dr. Khan's exceptional verbal and written communication skills, coupled with his remarkable presentation abilities, have established him as a highly respected and sought-after expert in his field.",
+          designation: "PhD Computer Science",
         },
       ],
     },
