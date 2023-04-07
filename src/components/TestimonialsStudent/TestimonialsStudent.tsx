@@ -8,7 +8,7 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 
 const settings = {
   container: ".my-slider-33",
-  loop: true,
+  loop: false,
   lazyload: true,
   nav: false,
   mouseDrag: true,
@@ -29,15 +29,12 @@ const TestimonialsStudent = () => {
 
   return (
     <section className="testimonials-five">
-
       <div className="auto-container">
         <div className="sec-title text-center">
-          <h2>
-            {title}
-          </h2>
+          <h2>{title}</h2>
         </div>
         <div className="testimonials-carousel-two testimonials-five__carousel position-relative">
-        <i className="fa fa-quote-right"></i>
+          <i className="fa fa-quote-right"></i>
           <TinySlider options={settings} ref={listRef}>
             {items?.map((testimonial) => (
               <SingleTestimonialFive
