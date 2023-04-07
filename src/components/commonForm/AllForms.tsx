@@ -12,6 +12,7 @@ export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
   const [courseData, setcourseData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
   const [btnDisable, sebtnDisable] = useState(false);
 
@@ -26,8 +27,19 @@ export default function LandingForm(contactform: any) {
   };
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
+    console.log("countryData--", countryData);
     setCountryData(countryData);
     countryData ? setIsLoading(false) : setIsLoading(true);
+
+    try {
+      const response = await fetch("https://geolocation-db.com/json/");
+      const result = await response.json();
+      setGeoLocationData(result);
+      return result;
+    } catch (error) {
+      console.log("error", error);
+      return error;
+    }
   };
 
   const onSubmit = (data: any) => {
@@ -163,7 +175,7 @@ export default function LandingForm(contactform: any) {
                     <PhoneInput
                       international
                       countryCallingCodeEditable={false}
-                      // defaultCountry={countryData?.country_code}
+                      // defaultCountry={geoLocationData?.country_code}
                       defaultCountry="ZA"
                       placeholder="Select Country Code*"
                       onChange={(e) => {

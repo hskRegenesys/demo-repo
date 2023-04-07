@@ -400,7 +400,7 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "Dr-Saquib-Ahmad-Khan.webp",
+          image: "Dr-Saquib-Ahmad-Khan2.webp",
           title: "Dr. Saquib Ahmad Khan",
           text: "Dr. Saquib Ahmad Khan is a highly regarded and accomplished professional in the cybersecurity field. With a Ph.D. in Computer Science and several cybersecurity certifications under his belt, Dr. Khan is a renowned expert in the field cyber security. He has authored numerous research papers and articles on cybersecurity and frequently speaks at industry conferences and events, sharing his expertise with others. His contributions to the field have earned him several accolades, including widespread recognition for his knowledge and expertise. Dr. Khan is also well-versed in marketing, management, information technology, and applications, with multiple degrees. He is an exceptional faculty member, having published over 26 research papers on various subjects, and his contributions to the field are widely praised. Dr. Khan's exceptional verbal and written communication skills, coupled with his remarkable presentation abilities, have established him as a highly respected and sought-after expert in his field.",
           designation: "PhD Computer Science",

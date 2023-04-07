@@ -1,7 +1,7 @@
 import sponsors from "@/data/courseTools";
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
@@ -29,10 +29,12 @@ const settings = {
     },
   },
   autoplay: true,
-  loop: true,
+  loop: false,
+  lazyload: true,
   nav: false,
   controls: false,
   autoplayButtonOutput: false,
+  mouseDrag: true,
 };
 
 const StudentPlacement = ({ className = "" }) => {
@@ -46,10 +48,7 @@ const StudentPlacement = ({ className = "" }) => {
             <h2 className="small-heading">Our Students Have Been Placed at</h2>
           </div>
           <div className="sponsors-carousel">
-            <TinySlider
-              options={{ ...settings, container: `.my-slider-15` }}
-              ref={listRef}
-            >
+            <TinySlider options={{ ...settings, container: `.my-slider-15` }}>
               {sponsors?.map((image, index) => (
                 <div
                   ref={listRef}
@@ -57,14 +56,15 @@ const StudentPlacement = ({ className = "" }) => {
                   className="slide-item text-center"
                 >
                   <figure className="image-box">
-                    <a href="#">
-                      <Image
-                        src={`/assets/images/clients/${
-                          className.includes("dark") ? "dark-1.png" : image
-                        }`}
-                        alt=""
-                      />
-                    </a>
+                    <Image
+                      src={`/assets/images/clients/${
+                        className.includes("dark") ? "dark-1.png" : image
+                      }`}
+                      alt=""
+                      layout="intrinsic"
+                      width="240"
+                      height="150"
+                    />
                   </figure>
                 </div>
               ))}
