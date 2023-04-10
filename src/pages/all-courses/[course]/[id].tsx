@@ -48,7 +48,7 @@ const ToolsCovered = dynamic(
 const CourseCurriculum = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculum")
 );
-
+import StickyBar from "@/components/StickyFooter/Sticky";
 const DigitalMarketing = () => {
   const router = useRouter();
   const courseId = router?.query?.id;
@@ -123,6 +123,7 @@ const DigitalMarketing = () => {
         </>
       )}
       <MainFooter />
+      <StickyBar />
     </Layout>
   );
 };

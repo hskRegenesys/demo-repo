@@ -7,6 +7,7 @@ import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import RefundPolicy from "@/components/RefundPolicy/RefundPolicy";
+import StickyBar from "@/components/StickyFooter/Sticky";
 
 import React from "react";
 
@@ -21,6 +22,7 @@ const Terms = () => {
       <RefundPolicy />
       <CallToSection />
       <MainFooter normalPadding={false} />
+      <StickyBar />
     </Layout>
   );
 };
