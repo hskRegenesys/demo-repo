@@ -52,7 +52,7 @@ const Faqs = (props: any) => {
 const FaqsSection = ({ courseDetails }: any) => {
   return (
     <section className="faqs-section">
-      <Schemas type={Constants.faq} />
+      <Schemas type={Constants.faq} data={courseDetails} />
       <div className="auto-container">
         <Row className="clearfix">
           {courseDetails?.faqsSection?.map((allFaqs: any) => (

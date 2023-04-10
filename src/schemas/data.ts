@@ -158,26 +158,27 @@ Template[Constants.image] = (data) => {
 };
 
 Template[Constants.faq] = (data) => {
-  let title, answer;
+  let faqs: Array<{ [key: string]: string }> = [];
 
-  if (data?.name) {
-    title = data?.Question;
-    answer = data?.Answer;
-  }
+  data?.faqsSection?.map((value: { faqs: Array<{ [key: string]: string }> }) =>
+    value.faqs.map((val) =>
+      faqs.push({ question: val.title, answer: val.text })
+    )
+  );
 
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
+    mainEntity: faqs.map((item) => {
+      return {
         "@type": "Question",
-        name: title,
+        name: item.question,
         acceptedAnswer: {
           "@type": "Answer",
-          text: answer,
+          text: item.answer,
         },
-      },
-    ],
+      };
+    }),
   };
 };
 
