@@ -19779,7 +19779,7 @@ button[disabled] {
 
   .process-one__list.desktop-hide li {
     text-align: left;
-    float: left;
+    /* float: left; */
     display: inline-block;
     width: auto;
     margin-right: 12px;
@@ -20034,6 +20034,77 @@ h2.highlight {
   justify-content: center;
   padding: 10px;
   font-size: 26px;
+}
+
+/* sticky css */
+
+.stickyRow {
+  background: #ffe55b;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 111;
+}
+.inlineSticky {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inlineSticky span {
+  font-size: 20px;
+}
+.inlineSticky button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0 6px;
+}
+.styckySpace {
+  margin-top: 80px;
+}
+@media (max-width: 767.98px) {
+  .inlineSticky span {
+    font-size: 14px;
+    line-height: normal;
+    display: inline-block;
+  }
+  .styckySpace {
+    margin-top: 173px;
+  }
+  .inlineSticky {
+    display: block;
+  }
+  .inlineSticky button {
+    padding: 7px 16px;
+
+    font-size: 13px;
+    width: 117px;
+  }
+  .sticky-footer-buttons {
+    display: inline-flex;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .inlineSticky button {
+    font-size: 12px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+    line-height: normal;
+  }
+  .chat {
+    right: 15px;
+    bottom: 134px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

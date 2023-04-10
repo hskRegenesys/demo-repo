@@ -19,6 +19,7 @@ import { courseService } from "src/services";
 import _ from "lodash";
 import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
+import StickyBar from "@/components/StickyFooter/Sticky";
 
 const Home2 = () => {
   const [courseData, setcourseData] = useState([]);
@@ -58,6 +59,7 @@ const Home2 = () => {
       <TestimonialsStudent />
       <CallToSection />
       <MainFooter normalPadding={false} />
+      <StickyBar />
     </Layout>
   );
 };
