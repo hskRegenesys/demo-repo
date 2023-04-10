@@ -9,8 +9,8 @@ import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import AboutMarko from "@/components/AboutMarko/AboutMarko";
 import AboutUsDescription from "@/components/StudentPlacement/AboutUsDescription";
 import MissionVison from "@/components/MissionVison/MissionVison";
-
 import React from "react";
+import StickyBar from "@/components/StickyFooter/Sticky";
 
 const About = () => {
   return (
@@ -26,6 +26,7 @@ const About = () => {
       <AboutMarko />
       <CallToSection />
       <MainFooter normalPadding={false} />
+      <StickyBar />
     </Layout>
   );
 };
