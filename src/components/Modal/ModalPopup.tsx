@@ -300,6 +300,7 @@ function ModalPopup(props: any) {
                 type="submit"
                 className="theme-btn btn-style-two"
                 onClick={handleShow}
+                disabled={btnDisable}
               >
                 <i className="btn-curve"></i>
                 <span className="btn-title">Submit</span>
