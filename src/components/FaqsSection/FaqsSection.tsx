@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
+import Schemas from "src/schemas";
+import { Constants } from "src/schemas/data";
 
 const Faqs = (props: any) => {
   const { faqs, defaultCurrent } = props.allFaqs;
@@ -50,6 +52,7 @@ const Faqs = (props: any) => {
 const FaqsSection = ({ courseDetails }: any) => {
   return (
     <section className="faqs-section">
+      <Schemas type={Constants.faq} />
       <div className="auto-container">
         <Row className="clearfix">
           {courseDetails?.faqsSection?.map((allFaqs: any) => (

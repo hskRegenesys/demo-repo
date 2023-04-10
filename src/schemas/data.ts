@@ -102,10 +102,10 @@ Template[Constants.organization] = (data) => {
   };
 };
 
-Template[Constants.localbusiness] = (data) => {
+Template[Constants.localbusiness] = () => {
   return {
     "@context": "https://schema.org",
-    "@type": "local business",
+    "@type": "LocalBusiness",
 
     name: "Digital Regenesys",
     address: {
@@ -116,6 +116,7 @@ Template[Constants.localbusiness] = (data) => {
       postalCode: "2031",
       addressCountry: "South Africa",
     },
+    image: ["https://www.digitalregenesys.com/images/logo.png"],
   };
 };
 
@@ -137,31 +138,43 @@ Template[Constants.website] = (data) => {
 };
 
 Template[Constants.image] = (data) => {
+  let title, organisation;
+  if (data?.name) {
+    title = data?.creditText;
+    organisation = data?.Organization;
+  }
   return {
     "@context": "https://schema.org/",
     "@type": "ImageObject",
     contentUrl: "https://www.digitalregenesys.com/photos",
     license: "https://www.digitalregenesys.com/license",
     acquireLicensePage: "https://www.digitalregenesys.com/how-to-use-my-images",
-    creditText: "Digital Regenesys",
+    creditText: title,
     creator: {
       "@type": "Organization",
-      name: "Digital Regenesys",
+      name: organisation,
     },
   };
 };
 
 Template[Constants.faq] = (data) => {
+  let title, answer;
+
+  if (data?.name) {
+    title = data?.Question;
+    answer = data?.Answer;
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
       {
         "@type": "Question",
-        name: "Application Fee?",
+        name: title,
         acceptedAnswer: {
           "@type": "Answer",
-          text: "<p>A non-refundable fee of R1,100 is required in order for an application to be processed. Regenesys reserves the right to amend this fee from time-to-time..</p>",
+          text: answer,
         },
       },
     ],
