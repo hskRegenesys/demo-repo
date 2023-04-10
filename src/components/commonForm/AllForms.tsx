@@ -298,7 +298,11 @@ export default function LandingForm(contactform: any) {
               </div>
 
               <div className="row text-center">
-                <button className="theme-btn btn-style-two mt-5" type="submit">
+                <button
+                  className="theme-btn btn-style-two mt-5"
+                  disabled={btnDisable}
+                  type="submit"
+                >
                   <i className="btn-curve"></i>
                   <span className="btn-title">Submit</span>
                 </button>
