@@ -44,15 +44,16 @@ const StickyBar = (props: any) => {
           <div className="stickyRow">
             <div className="container">
               <div className="inlineSticky">
-                <span>
+                <strong>
                   Schedule a 1:1 Free Career Counseling session with Digital
                   Regenesys.
-                </span>
+                </strong>
 
                 <div className="sticky-footer-buttons">
-                  <button onClick={handleShow}>Talk To a Career Expert</button>
-                  <button onClick={handleShow}>Download Brochure</button>
-                  <button onClick={handleShow}>Apply Now</button>
+                  <a className="theme-btn btn-style-two" onClick={handleShow}>
+                    <i className="btn-curve"></i>
+                    <span className="btn-title">Talk To a Career Expert</span>
+                  </a>
                 </div>
               </div>
             </div>
