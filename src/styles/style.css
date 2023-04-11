@@ -20089,6 +20089,7 @@ h2.highlight {
     display: block;
     padding-bottom: 16px;
     padding-top: 14px;
+    text-align: center;
   }
   .styckySpace {
     margin-top: 145px;
@@ -20106,6 +20107,11 @@ h2.highlight {
     display: inline-flex;
     width: 100%;
     padding-bottom: 8px;
+    justify-content: center;
+  }
+  .sticky-footer-buttons .btn-style-two .btn-title {
+    padding: 10px 15px;
+    font-size: 16px;
   }
 
   .inlineSticky button {
