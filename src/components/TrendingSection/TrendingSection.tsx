@@ -133,6 +133,7 @@ const TrendingSection = () => {
                           alt=""
                         /> */}
                         <Image
+                          priority={true}
                           src={`/assets/images/gallery/${code}.webp`}
                           layout="responsive"
                           width="274"

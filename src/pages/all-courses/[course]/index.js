@@ -16,6 +16,7 @@ import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import { useRouter } from "next/router";
 import Schemas from "../../../schemas/";
 import { Constants } from "../../../schemas/data";
+import StickyBar from "@/components/StickyFooter/Sticky";
 
 const PageBanner = dynamic(() =>
   import("@/components/BannerSection/PageBanner")
@@ -52,6 +53,7 @@ const Course = () => {
       <PopularTopics />
       <CallToSection />
       <MainFooter />
+      <StickyBar />
     </Layout>
   );
 };

@@ -19779,7 +19779,7 @@ button[disabled] {
 
   .process-one__list.desktop-hide li {
     text-align: left;
-    float: left;
+    /* float: left; */
     display: inline-block;
     width: auto;
     margin-right: 12px;
@@ -20034,6 +20034,94 @@ h2.highlight {
   justify-content: center;
   padding: 10px;
   font-size: 26px;
+}
+
+/* sticky css */
+
+.stickyRow {
+  background: #ffe55b;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 111;
+}
+.inlineSticky {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inlineSticky strong {
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--thm-black);
+  font-weight: 500;
+  margin: 0;
+  z-index: 3;
+  font-family: "Raleway-semibold";
+  margin-right: 30px;
+}
+.inlineSticky button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0 6px;
+}
+.inlineSticky .btn-style-two {
+  vertical-align: middle;
+}
+.styckySpace {
+  margin-top: 80px;
+}
+@media (max-width: 767.98px) {
+  .inlineSticky span {
+    font-size: 14px;
+    line-height: normal;
+    display: inline-block;
+  }
+  .inlineSticky strong {
+    font-size: 17px;
+    line-height: 19px;
+    display: block;
+    padding-bottom: 16px;
+    padding-top: 14px;
+  }
+  .styckySpace {
+    margin-top: 145px;
+  }
+  .inlineSticky {
+    display: block;
+  }
+  .inlineSticky button {
+    padding: 7px 16px;
+
+    font-size: 13px;
+    width: 117px;
+  }
+  .sticky-footer-buttons {
+    display: inline-flex;
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+  .inlineSticky button {
+    font-size: 12px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+    line-height: normal;
+  }
+  .chat {
+    right: 15px;
+    bottom: 122px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

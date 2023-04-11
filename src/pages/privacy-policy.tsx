@@ -6,6 +6,7 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import PrivacyPolicy from "@/components/PrivacyPolicy/PrivacyPolicy";
+import StickyBar from "@/components/StickyFooter/Sticky";
 
 import React from "react";
 
@@ -19,6 +20,7 @@ const About = () => {
       <PrivacyPolicy />
       <CallToSection />
       <MainFooter normalPadding={false} />
+      <StickyBar />
     </Layout>
   );
 };
