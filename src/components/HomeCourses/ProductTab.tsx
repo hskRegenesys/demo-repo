@@ -12,6 +12,9 @@ import {
 import { batchInfo, urlInfo } from "../config/helper";
 import _ from "lodash";
 
+import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
@@ -30,6 +33,11 @@ const settings = {
 const ProductTab = ({ courses = [], current }: any) => {
   const router = useRouter();
   const [filterCourses, setFilterCourses] = useState([]);
+
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const handleShow = () => setShow(true);
+
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
@@ -97,13 +105,9 @@ const ProductTab = ({ courses = [], current }: any) => {
               <div ref={listRef} className="gallery-item tab-item" key={id}>
                 <div
                   className="inner-box"
-                  onClick={() => redirectCard(name, code, id, parent_id)}
+                  // onClick={() => redirectCard(name, code, id, parent_id)}
                 >
-                  {/* <div className="icon">
-                <i className="fa fa-share-alt" aria-hidden="true"></i>
-              </div> */}
                   <figure className="image">
-                    {/* <Image src={`/assets/images/gallery/${code}.webp`} alt="" /> */}
                     <Image
                       src={`/assets/images/gallery/${code}.webp`}
                       layout="responsive"
@@ -135,7 +139,29 @@ const ProductTab = ({ courses = [], current }: any) => {
                       </div>
                     </div>
                   </div>
+                  <div className="link-box inline-button">
+                    <a
+                      className="theme-btn btn-style-two"
+                      onClick={() => redirectCard(name, code, id, parent_id)}
+                    >
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Learn More</span>
+                    </a>
+                    <a className="theme-btn btn-style-two" onClick={handleShow}>
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Enquire Now</span>
+                    </a>
+                  </div>
                 </div>
+                <Modal show={show}>
+                  <ModalPopup
+                    setShows={setShow}
+                    thankYouShow={setThankYouShow}
+                  />
+                </Modal>
+                <Modal show={thankYouShow}>
+                  <ThankYouPopup setShows={setThankYouShow} />
+                </Modal>
               </div>
             )
           )}

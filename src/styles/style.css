@@ -20124,6 +20124,20 @@ h2.highlight {
   }
 }
 
+/* card buttons style */
+.inline-button {
+  display: flex;
+  margin-top: 15px;
+}
+.inline-button .btn-style-two {
+  margin: 0 5px;
+  background-color: #1fa393;
+  border-radius: 10px;
+}
+.inline-button .btn-style-two .btn-title {
+  padding: 10px;
+  line-height: normal;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .process-one .process-one__image__column .process-one__image {
     display: none !important;
