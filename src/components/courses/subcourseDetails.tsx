@@ -160,11 +160,12 @@ const SubCourseDetails = ({ page }: any) => {
                                 <li>Capstone projects </li>
                               </ul>
                             </div>
-                            {code != "ADDSCI" && code != "APDSCI" && (
-                              <div className="batch">
-                                {batchInfo(batches)?.description}
-                              </div>
-                            )}
+
+                            <div className="batch">
+                              {code != "ADDSCI" && code != "APDSCI" && (
+                                <div>{batchInfo(batches)?.description}</div>
+                              )}
+                            </div>
                           </div>
                         </div>
                         <div className="link-box inline-button">

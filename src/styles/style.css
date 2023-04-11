@@ -3989,12 +3989,11 @@ tns-controls-tools {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   min-height: 440px;
-  cursor: pointer;
 }
 
-.gallery-item .inner-box:hover {
+/* .gallery-item .inner-box:hover {
   background-color: #ffe55b;
-}
+} */
 
 .gallery-item .inner-box .image {
   position: relative;
@@ -4090,7 +4089,7 @@ tns-controls-tools {
 }
 
 .gallery-item .cap-box h5 {
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
@@ -16008,6 +16007,7 @@ h2.curve-right:after {
   color: #000;
   font-family: Raleway-semibold;
   max-height: 24px;
+  min-height: 24px;
 }
 
 /* Funfact six */
