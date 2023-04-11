@@ -11,16 +11,21 @@ import "node_modules/swiper/swiper-bundle.min.css";
 import "react-circular-progressbar/dist/styles.css";
 // import "react-modal-video/css/modal-video.min.css";
 import "tiny-slider/dist/tiny-slider.css";
+import { Constants } from "src/schemas/data";
 
 // extra css
 import "@/styles/style.css";
 import "@/styles/hover.css";
 import "@/styles/responsive.css";
+import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
   return (
     <ContextProvider>
       <Component {...pageProps} />
+      <Schemas type={Constants.image} />
+      <Schemas type={Constants.organization} />
+      <Schemas type={Constants.localbusiness} />
 
       {/* Pixel code script start */}
       <Script
