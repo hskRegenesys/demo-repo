@@ -25,6 +25,7 @@ const CallToSection = dynamic(
 const PartnerOne = dynamic(
   () => import("@/components/ExperienceSection/ExperienceSection")
 );
+import StickyBar from "@/components/StickyFooter/Sticky";
 const allCourse = () => {
   return (
     <Layout pageTitle="allCourse">
@@ -40,6 +41,7 @@ const allCourse = () => {
       <PopularTopics />
       <CallToSection />
       <MainFooter />
+      <StickyBar />
     </Layout>
   );
 };

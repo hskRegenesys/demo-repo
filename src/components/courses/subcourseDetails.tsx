@@ -15,6 +15,9 @@ import { batchInfo, urlInfo } from "../config/helper";
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
+import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const settings = {
   container: ".sub-courses",
@@ -36,6 +39,10 @@ const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
   const [subCourse, setSubCourse] = useState<any>([]);
   const [courseData, setCourseData] = useState<any>([]);
+
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const handleShow = () => setShow(true);
   const getData = async () => {
     setSubCourse([]);
     let courseListResponse = await courseService.allCourses();
@@ -122,17 +129,9 @@ const SubCourseDetails = ({ page }: any) => {
                     <div className="gallery-item tns-item">
                       <div
                         className="inner-box"
-                        onClick={() => redirectCard(name, code, id, parent_id)}
+                        // onClick={() => redirectCard(name, code, id, parent_id)}
                       >
-                        {/* <div className="icon">
-                      <i className="fa fa-share-alt" aria-hidden="true"></i>
-                    </div> */}
                         <figure className="image">
-                          {/* <Image
-                            src={`/assets/images/gallery/${code}.webp`}
-                            alt=""
-                          /> */}
-
                           <Image
                             src={`/assets/images/gallery/${code}.webp`}
                             layout="responsive"
@@ -161,15 +160,43 @@ const SubCourseDetails = ({ page }: any) => {
                                 <li>Capstone projects </li>
                               </ul>
                             </div>
-                            {code != "ADDSCI" && code != "APDSCI" && (
-                              <div className="batch">
-                                {batchInfo(batches)?.description}
-                              </div>
-                            )}
+
+                            <div className="batch">
+                              {code != "ADDSCI" && code != "APDSCI" && (
+                                <div>{batchInfo(batches)?.description}</div>
+                              )}
+                            </div>
                           </div>
+                        </div>
+                        <div className="link-box inline-button">
+                          <a
+                            className="theme-btn btn-style-two"
+                            onClick={() =>
+                              redirectCard(name, code, id, parent_id)
+                            }
+                          >
+                            <i className="btn-curve"></i>
+                            <span className="btn-title">Learn More</span>
+                          </a>
+                          <a
+                            className="theme-btn btn-style-two"
+                            onClick={handleShow}
+                          >
+                            <i className="btn-curve"></i>
+                            <span className="btn-title">Enquire Now</span>
+                          </a>
                         </div>
                       </div>
                     </div>
+                    <Modal show={show}>
+                      <ModalPopup
+                        setShows={setShow}
+                        thankYouShow={setThankYouShow}
+                      />
+                    </Modal>
+                    <Modal show={thankYouShow}>
+                      <ThankYouPopup setShows={setThankYouShow} />
+                    </Modal>
                   </div>
                 )
               )}

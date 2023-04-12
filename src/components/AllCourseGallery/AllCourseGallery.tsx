@@ -15,6 +15,10 @@ import {
 } from "../config/constant";
 import { batchInfo, urlInfo } from "../config/helper";
 
+import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
+
 const handleSearch = (e: any) => {
   e.preventDefault();
   const formData = new FormData(e.target);
@@ -30,6 +34,10 @@ const AllCourseGallery = () => {
   const [allData, setAllData] = useState<any>([]);
   const [checkCourseData, setCheckCourseData] = useState<any>([]);
   const [checkFilterData, setCheckFilterData] = useState<any>([]);
+
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const handleShow = () => setShow(true);
 
   const getData = async () => {
     let courseListResponse = await courseService.allCourses();
@@ -207,7 +215,7 @@ const AllCourseGallery = () => {
                     >
                       <div
                         className="inner-box"
-                        onClick={() => redirectCard(name, code, id, parent_id)}
+                        // onClick={() => redirectCard(name, code, id, parent_id)}
                       >
                         <figure className="image">
                           <Image
@@ -247,6 +255,24 @@ const AllCourseGallery = () => {
                             <div className="batch">
                               {batchInfo(batches)?.description}
                             </div>
+                            <div className="link-box inline-button">
+                              <a
+                                className="theme-btn btn-style-two"
+                                onClick={() =>
+                                  redirectCard(name, code, id, parent_id)
+                                }
+                              >
+                                <i className="btn-curve"></i>
+                                <span className="btn-title">Learn More</span>
+                              </a>
+                              <a
+                                className="theme-btn btn-style-two"
+                                onClick={handleShow}
+                              >
+                                <i className="btn-curve"></i>
+                                <span className="btn-title">Enquire Now</span>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -273,6 +299,12 @@ const AllCourseGallery = () => {
                 </Pagination> */}
             </Col>
           </Row>
+          <Modal show={show}>
+            <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+          </Modal>
+          <Modal show={thankYouShow}>
+            <ThankYouPopup setShows={setThankYouShow} />
+          </Modal>
         </div>
       </section>
     </>

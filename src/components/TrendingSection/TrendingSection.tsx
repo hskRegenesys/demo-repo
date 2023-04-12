@@ -16,6 +16,9 @@ import {
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
+import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const settings = {
   container: ".my-slider2",
@@ -42,6 +45,9 @@ const TrendingSection = () => {
     let courseListResponse = await courseService.allCourses();
     setcourseData(courseListResponse);
   };
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const handleShow = () => setShow(true);
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
@@ -122,16 +128,9 @@ const TrendingSection = () => {
                   <div ref={listRef} className="gallery-item" key={id}>
                     <div
                       className="inner-box"
-                      onClick={() => redirectCard(name, code, id, parent_id)}
+                      // onClick={() => redirectCard(name, code, id, parent_id)}
                     >
-                      {/* <div className="icon">
-                      <i className="fa fa-share-alt" aria-hidden="true"></i>
-                    </div> */}
                       <figure className="image">
-                        {/* <Image
-                          src={`/assets/images/gallery/${code}.webp`}
-                          alt=""
-                        /> */}
                         <Image
                           priority={true}
                           src={`/assets/images/gallery/${code}.webp`}
@@ -166,6 +165,25 @@ const TrendingSection = () => {
                           </div>
                         </div>
                       </div>
+
+                      <div className="link-box inline-button">
+                        <a
+                          className="theme-btn btn-style-two"
+                          onClick={() =>
+                            redirectCard(name, code, id, parent_id)
+                          }
+                        >
+                          <i className="btn-curve"></i>
+                          <span className="btn-title">Learn More</span>
+                        </a>
+                        <a
+                          className="theme-btn btn-style-two"
+                          onClick={handleShow}
+                        >
+                          <i className="btn-curve"></i>
+                          <span className="btn-title">Enquire Now</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 )
@@ -180,6 +198,12 @@ const TrendingSection = () => {
                 <span className="icon fas fa-angle-right"></span>
               </button>
             </div>
+            <Modal show={show}>
+              <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+            </Modal>
+            <Modal show={thankYouShow}>
+              <ThankYouPopup setShows={setThankYouShow} />
+            </Modal>
           </div>
         </div>
       </div>

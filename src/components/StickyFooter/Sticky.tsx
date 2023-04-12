@@ -45,7 +45,7 @@ const StickyBar = (props: any) => {
             <div className="container">
               <div className="inlineSticky">
                 <strong>
-                  Schedule a 1:1 Free Career Counseling session with Digital
+                  Schedule a free 1:1 career counselling session with Digital
                   Regenesys.
                 </strong>
 
