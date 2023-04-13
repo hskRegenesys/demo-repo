@@ -3,6 +3,7 @@ import headerData from "@/data/header";
 import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 // import { Image } from "react-bootstrap";
 import Image from "next/image";
 import NavItem from "./NavItem";
@@ -11,6 +12,11 @@ import _ from "lodash";
 import { programBaseUrl } from "../config/constant";
 import { urlInfo } from "../config/helper";
 import { url } from "inspector";
+import StickyForm from "../StickyHeaderForm/StickyForm";
+import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
+import Loader from "../Loader/Loader";
 
 const {
   title,
@@ -35,6 +41,11 @@ const HeaderOne = ({
   rightMenu = false,
 }) => {
   const { scrollTop } = useScroll(120);
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
+
   const contextRoots: any = useRootContext();
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
@@ -59,6 +70,7 @@ const HeaderOne = ({
   }
   const allCourses = async () => {
     const allData = await courseService.allCourses();
+    allData ? setIsLoading(false) : setIsLoading(true);
     const orderData: any = [];
     const filterData = _.filter(
       allData,
@@ -159,7 +171,12 @@ const HeaderOne = ({
           </div>
         </div>
       )}
-      <div className="header-upper">
+      <div
+        // style={{
+        //   top: router.pathname.includes("all-courses") ? "60px" : "0px",
+        // }}
+        className="header-upper"
+      >
         <div className="auto-container d-flex clearfix">
           <div className="logo-box">
             <div className="logo">
@@ -199,6 +216,7 @@ const HeaderOne = ({
                       navItem={navItem}
                       key={navItem.id}
                       onePage={onePage}
+                      isLoading={isLoading}
                     />
                   ))}
                 </ul>
@@ -239,6 +257,12 @@ const HeaderOne = ({
           )}
         </div>
       </div>
+      <Modal show={show}>
+        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
+      </Modal>
     </header>
   );
 };

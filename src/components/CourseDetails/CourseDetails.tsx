@@ -37,6 +37,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                         alt=""
                       /> */}
                       <Image
+                        priority={true}
                         src={`/assets/images/update-01-10-2021/${image}`}
                         layout="intrinsic"
                         width="500"
@@ -101,6 +102,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                     alt=""
                   /> */}
                   <Image
+                    priority={true}
                     src={`/assets/images/update-01-10-2021/${image}`}
                     layout="intrinsic"
                     width="500"

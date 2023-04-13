@@ -8,6 +8,9 @@ import _ from "lodash";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { batchInfo, urlInfo } from "../config/helper";
+import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 import {
   dataScienceCode,
   digitalMarkrtingCode,
@@ -16,9 +19,8 @@ import {
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
-import Modal from "react-bootstrap/Modal";
-import ModalPopup from "@/components/Modal/ModalPopup";
-import ThankYouPopup from "../Modal/ThankYouPopup";
+
+import Loader from "../Loader/Loader";
 
 const settings = {
   container: ".my-slider2",
@@ -41,13 +43,15 @@ const { title, details, description } = trendingSection;
 const TrendingSection = () => {
   const router = useRouter();
   const [courseData, setcourseData] = useState<any>([]);
-  const getData = async () => {
-    let courseListResponse = await courseService.allCourses();
-    setcourseData(courseListResponse);
-  };
+  const [isLoading, setIsLoading] = useState(true);
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
+  const getData = async () => {
+    let courseListResponse = await courseService.allCourses();
+    setcourseData(courseListResponse);
+    courseListResponse ? setIsLoading(false) : setIsLoading(true);
+  };
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
@@ -106,106 +110,113 @@ const TrendingSection = () => {
           <h2>{title}</h2>
           {/* <h6 className="desc">{description}</h6> */}
         </div>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <div className="carousel-box">
+            <div className="testimonials-carousel">
+              <TinySlider
+                options={{
+                  ...settings,
+                }}
+                ref={listRef}
+              >
+                {CourseCard?.map(
+                  ({
+                    id,
+                    name,
+                    courseMode,
+                    batches,
+                    code,
+                    durationInWeeks,
+                    parent_id,
+                  }: any) => (
+                    <div ref={listRef} className="gallery-item" key={id}>
+                      <div
+                        className="inner-box"
+                        // onClick={() => redirectCard(name, code, id, parent_id)}
+                      >
+                        <figure className="image">
+                          <Image
+                            priority={true}
+                            src={`/assets/images/gallery/${code}.webp`}
+                            layout="responsive"
+                            width="274"
+                            height="182"
+                            alt=""
+                          />
+                        </figure>
+                        <a
+                          className="lightbox-image overlay-box"
+                          data-fancybox="gallery"
+                        ></a>
+                        <div className="cap-box">
+                          <div className="cap-inner">
+                            <div className="title">
+                              <h5>
+                                <a>{name}</a>
+                              </h5>
+                            </div>
 
-        <div className="carousel-box">
-          <div className="testimonials-carousel">
-            <TinySlider
-              options={{
-                ...settings,
-              }}
-              ref={listRef}
-            >
-              {CourseCard?.map(
-                ({
-                  id,
-                  name,
-                  courseMode,
-                  batches,
-                  code,
-                  durationInWeeks,
-                  parent_id,
-                }: any) => (
-                  <div ref={listRef} className="gallery-item" key={id}>
-                    <div
-                      className="inner-box"
-                      // onClick={() => redirectCard(name, code, id, parent_id)}
-                    >
-                      <figure className="image">
-                        <Image
-                          priority={true}
-                          src={`/assets/images/gallery/${code}.webp`}
-                          layout="responsive"
-                          width="274"
-                          height="182"
-                          alt=""
-                        />
-                      </figure>
-                      <a
-                        className="lightbox-image overlay-box"
-                        data-fancybox="gallery"
-                      ></a>
-                      <div className="cap-box">
-                        <div className="cap-inner">
-                          <div className="title">
-                            <h5>
-                              <a>{name}</a>
-                            </h5>
-                          </div>
-
-                          <div className="cat">
-                            <ul className="about-seven__list list-unstyled">
-                              <li>{courseMode.name} Classes</li>
-                              <li>{durationInWeeks} Weeks</li>
-                              <li>International certification </li>
-                              <li>Capstone projects </li>
-                            </ul>
-                          </div>
-                          <div className="batch">
-                            {batchInfo(batches)?.description}
+                            <div className="cat">
+                              <ul className="about-seven__list list-unstyled">
+                                <li>{courseMode.name} Classes</li>
+                                <li>{durationInWeeks} Weeks</li>
+                                <li>International certification </li>
+                                <li>Capstone projects </li>
+                              </ul>
+                            </div>
+                            <div className="batch">
+                              {batchInfo(batches)?.description}
+                            </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div className="link-box inline-button">
-                        <a
-                          className="theme-btn btn-style-two"
-                          onClick={() =>
-                            redirectCard(name, code, id, parent_id)
-                          }
-                        >
-                          <i className="btn-curve"></i>
-                          <span className="btn-title">Learn More</span>
-                        </a>
-                        <a
-                          className="theme-btn btn-style-two"
-                          onClick={handleShow}
-                        >
-                          <i className="btn-curve"></i>
-                          <span className="btn-title">Enquire Now</span>
-                        </a>
+                        <div className="link-box inline-button">
+                          <a
+                            className="theme-btn btn-style-two"
+                            onClick={() =>
+                              redirectCard(name, code, id, parent_id)
+                            }
+                          >
+                            <i className="btn-curve"></i>
+                            <span className="btn-title">Learn More</span>
+                          </a>
+
+                          <a
+                            className="theme-btn btn-style-two"
+                            onClick={handleShow}
+                          >
+                            <i className="btn-curve"></i>
+                            <span className="btn-title">Enquire Now</span>
+                          </a>
+                        </div>
                       </div>
+                      <Modal show={show}>
+                        <ModalPopup
+                          setShows={setShow}
+                          thankYouShow={setThankYouShow}
+                        />
+                      </Modal>
+                      <Modal show={thankYouShow}>
+                        <ThankYouPopup setShows={setThankYouShow} />
+                      </Modal>
                     </div>
-                  </div>
-                )
-              )}
-            </TinySlider>
+                  )
+                )}
+              </TinySlider>
 
-            <div className="tns-controls1">
-              <button className="tns-prev">
-                <span className="icon fa fa-angle-left"></span>
-              </button>
-              <button className="tns-next">
-                <span className="icon fas fa-angle-right"></span>
-              </button>
+              <div className="tns-controls1">
+                <button className="tns-prev">
+                  <span className="icon fa fa-angle-left"></span>
+                </button>
+                <button className="tns-next">
+                  <span className="icon fas fa-angle-right"></span>
+                </button>
+              </div>
             </div>
-            <Modal show={show}>
-              <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
-            </Modal>
-            <Modal show={thankYouShow}>
-              <ThankYouPopup setShows={setThankYouShow} />
-            </Modal>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

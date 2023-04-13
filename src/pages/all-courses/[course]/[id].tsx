@@ -49,8 +49,11 @@ const CourseCurriculum = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculum")
 );
 import StickyBar from "@/components/StickyFooter/Sticky";
+import StickyData from "@/components/StickyHeaderForm/StickyData";
 const DigitalMarketing = () => {
   const router = useRouter();
+
+  console.log("router", router);
   const courseId = router?.query?.id;
   const [coursePriceDetails, setcoursePrice] = useState<any>([]);
   const [parentCourse, setParentCourse] = useState<any>([]);
@@ -68,6 +71,7 @@ const DigitalMarketing = () => {
   const allContent: any = courseData;
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
+  console.log("courseDetails", courseDetails);
   const brochureName: any = brochureDetails[code];
 
   const filterData = _.find(
@@ -92,6 +96,9 @@ const DigitalMarketing = () => {
     <Layout pageTitle={router?.query?.course}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
+      {/* {router.pathname.includes("all-courses") && (
+        <StickyData stickyText={courseDetails?.stickyText} />
+      )} */}
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />

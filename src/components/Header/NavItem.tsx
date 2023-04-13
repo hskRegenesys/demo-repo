@@ -2,6 +2,7 @@ import { useRootContext } from "@/context/context";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Loader from "../Loader/Loader";
 
 const SubItem = (props: any) => {
   const [active, setActive] = useState(false);
@@ -55,7 +56,7 @@ const SubItem = (props: any) => {
 };
 
 const NavItem = (props: any) => {
-  const { navItem = {}, mobile = false, onePage = false } = props;
+  const { navItem = {}, mobile = false, onePage = false, isLoading } = props;
   const [active, setActive] = useState(false);
   const { pathname } = useRouter();
   const contextRoot: any = useRootContext();
@@ -90,16 +91,20 @@ const NavItem = (props: any) => {
           )}
         </a>
       </Link>
-      {subNavItems?.length > 0 && (
-        <ul
-          style={{
-            display: !menuStatus || active ? "block" : "none",
-          }}
-        >
-          {subNavItems?.map((subItem: any) => (
-            <SubItem key={subItem.id} subItem={subItem} />
-          ))}
-        </ul>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        subNavItems?.length > 0 && (
+          <ul
+            style={{
+              display: !menuStatus || active ? "block" : "none",
+            }}
+          >
+            {subNavItems?.map((subItem: any) => (
+              <SubItem key={subItem.id} subItem={subItem} />
+            ))}
+          </ul>
+        )
       )}
     </li>
   );

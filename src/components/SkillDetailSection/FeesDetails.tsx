@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import ModalPopup from "../Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import Loader from "../Loader/Loader";
 
 import {
   indiaCountryId,
@@ -38,12 +39,14 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   } = courseDetails?.productDetails;
   const [coursePriceDetails, setcoursePrice] = useState<any>([]);
   const [priceDetails, setPriceDetails] = useState<any>(0);
+  const [isLoading, setIsLoading] = useState(true);
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
 
   const getData = async () => {
     let courseListResponse = await courseService.allcoursePrice(courseId);
     setcoursePrice(courseListResponse);
+    courseListResponse ? setIsLoading(false) : setIsLoading(true);
   };
   useEffect(() => {
     if (coursePriceDetails?.length) {
@@ -106,72 +109,81 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
           <Col lg={12} xl={6} className="mobile-pricing-section">
             <div className="product-details__flag">
               <h5 className="product-details__subtitle">Total Admission Fee</h5>
-              <div className="flags">
-                {coursePriceDetails[0]?.coursePrices?.map((item: any) => (
-                  <>
-                    <a onClick={() => CoursePriceChange(item.country_id)}>
-                      <div
-                        className={
-                          item.country_id === priceDetails.country_id
-                            ? "flag-shadow"
-                            : ""
-                        }
-                      >
-                        {item.country_id === southAfricaCountryId && (
-                          // <Image src={flagsa} alt="South Africa" />
-                          <Image
-                            src={flagsa}
-                            layout="intrinsic"
-                            width="100"
-                            height="69"
-                            alt="South Africa"
-                          />
-                        )}
-                        {item.country_id === indiaCountryId && (
-                          // <Image src={flagind} alt="India" />
-                          <Image
-                            src={flagind}
-                            layout="intrinsic"
-                            width="100"
-                            height="69"
-                            alt="India"
-                          />
-                        )}
-                        {item.country_id === nigeriaCountryId && (
-                          // <Image src={flagnig} alt="Nigeria" />
-                          <Image
-                            src={flagnig}
-                            alt="Nigeria"
-                            layout="intrinsic"
-                            width="100"
-                            height="69"
-                          />
-                        )}
-                        {item.country_id === ukCountryId && (
-                          // <Image src={flagus} alt="UK" />
-                          <Image
-                            src={flagus}
-                            alt="UK"
-                            layout="intrinsic"
-                            width="100"
-                            height="69"
-                          />
-                        )}
-                        {item.country_id === kenyaCountryId && (
-                          // <Image src={flagken} alt="Kenya" />
-                          <Image
-                            src={flagken}
-                            alt="Kenya"
-                            layout="intrinsic"
-                            width="100"
-                            height="69"
-                          />
-                        )}
-                      </div>
-                    </a>
-                  </>
-                ))}
-              </div>
+              {isLoading ? (
+                <Loader />
+              ) : (
+                <div className="flags">
+                  {coursePriceDetails[0]?.coursePrices?.map((item: any) => (
+                    <>
+                      <a onClick={() => CoursePriceChange(item.country_id)}>
+                        <div
+                          className={
+                            item.country_id === priceDetails.country_id
+                              ? "flag-shadow"
+                              : ""
+                          }
+                        >
+                          {item.country_id === southAfricaCountryId && (
+                            // <Image src={flagsa} alt="South Africa" />
+                            <Image
+                              priority={true}
+                              src={flagsa}
+                              layout="intrinsic"
+                              width="100"
+                              height="69"
+                              alt="South Africa"
+                            />
+                          )}
+                          {item.country_id === indiaCountryId && (
+                            // <Image src={flagind} alt="India" />
+                            <Image
+                              priority={true}
+                              src={flagind}
+                              layout="intrinsic"
+                              width="100"
+                              height="69"
+                              alt="India"
+                            />
+                          )}
+                          {item.country_id === nigeriaCountryId && (
+                            // <Image src={flagnig} alt="Nigeria" />
+                            <Image
+                              priority={true}
+                              src={flagnig}
+                              alt="Nigeria"
+                              layout="intrinsic"
+                              width="100"
+                              height="69"
+                            />
+                          )}
+                          {item.country_id === ukCountryId && (
+                            // <Image src={flagus} alt="UK" />
+                            <Image
+                              priority={true}
+                              src={flagus}
+                              alt="UK"
+                              layout="intrinsic"
+                              width="100"
+                              height="69"
+                            />
+                          )}
+                          {item.country_id === kenyaCountryId && (
+                            // <Image src={flagken} alt="Kenya" />
+                            <Image
+                              priority={true}
+                              src={flagken}
+                              alt="Kenya"
+                              layout="intrinsic"
+                              width="100"
+                              height="69"
+                            />
+                          )}
+                        </div>
+                      </a>
+                    </>
+                  ))}
+                </div>
+              )}
             </div>
 
             <h2 className="product-details__price">

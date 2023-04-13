@@ -18,6 +18,7 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import Loader from "../Loader/Loader";
 
 const settings = {
   container: ".sub-courses",
@@ -39,6 +40,7 @@ const SubCourseDetails = ({ page }: any) => {
   const router = useRouter();
   const [subCourse, setSubCourse] = useState<any>([]);
   const [courseData, setCourseData] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
@@ -46,6 +48,7 @@ const SubCourseDetails = ({ page }: any) => {
   const getData = async () => {
     setSubCourse([]);
     let courseListResponse = await courseService.allCourses();
+    courseListResponse ? setIsLoading(false) : setIsLoading(true);
     const courses = _.filter(
       courseListResponse,
       (item: any) => item?.mode_id === 1
@@ -109,98 +112,103 @@ const SubCourseDetails = ({ page }: any) => {
         </div>
         {subCourse?.length && (
           <div className="auto-container">
-            <TinySlider
-              options={{
-                ...settings,
-              }}
-              ref={listRef}
-            >
-              {subCourse?.map(
-                ({
-                  id,
-                  name,
-                  courseMode,
-                  batches,
-                  code,
-                  durationInWeeks,
-                  parent_id,
-                }: any) => (
-                  <div ref={listRef} key={id} className="testi-block">
-                    <div className="gallery-item tns-item">
-                      <div
-                        className="inner-box"
-                        // onClick={() => redirectCard(name, code, id, parent_id)}
-                      >
-                        <figure className="image">
-                          <Image
-                            src={`/assets/images/gallery/${code}.webp`}
-                            layout="responsive"
-                            width="274"
-                            height="182"
-                            alt=""
-                          />
-                        </figure>
-                        <a
-                          className="lightbox-image overlay-box"
-                          data-fancybox="gallery"
-                        ></a>
-                        <div className="cap-box">
-                          <div className="cap-inner">
-                            <div className="title">
-                              <h5>
-                                <a>{name}</a>
-                              </h5>
-                            </div>
+            {isLoading ? (
+              <Loader />
+            ) : (
+              <TinySlider
+                options={{
+                  ...settings,
+                }}
+                ref={listRef}
+              >
+                {subCourse?.map(
+                  ({
+                    id,
+                    name,
+                    courseMode,
+                    batches,
+                    code,
+                    durationInWeeks,
+                    parent_id,
+                  }: any) => (
+                    <div ref={listRef} key={id} className="testi-block">
+                      <div className="gallery-item tns-item">
+                        <div
+                          className="inner-box"
+                          // onClick={() => redirectCard(name, code, id, parent_id)}
+                        >
+                          <figure className="image">
+                            <Image
+                              priority={true}
+                              src={`/assets/images/gallery/${code}.webp`}
+                              layout="responsive"
+                              width="274"
+                              height="182"
+                              alt=""
+                            />
+                          </figure>
+                          <a
+                            className="lightbox-image overlay-box"
+                            data-fancybox="gallery"
+                          ></a>
+                          <div className="cap-box">
+                            <div className="cap-inner">
+                              <div className="title">
+                                <h5>
+                                  <a>{name}</a>
+                                </h5>
+                              </div>
 
-                            <div className="cat">
-                              <ul className="about-seven__list list-unstyled">
-                                <li>{courseMode.name} Classes</li>
-                                <li>{durationInWeeks} Weeks</li>
-                                <li>International certification </li>
-                                <li>Capstone projects </li>
-                              </ul>
-                            </div>
+                              <div className="cat">
+                                <ul className="about-seven__list list-unstyled">
+                                  <li>{courseMode.name} Classes</li>
+                                  <li>{durationInWeeks} Weeks</li>
+                                  <li>International certification </li>
+                                  <li>Capstone projects </li>
+                                </ul>
+                              </div>
 
-                            <div className="batch">
-                              {code != "ADDSCI" && code != "APDSCI" && (
-                                <div>{batchInfo(batches)?.description}</div>
-                              )}
+                              <div className="batch">
+                                {code != "ADDSCI" && code != "APDSCI" && (
+                                  <div>{batchInfo(batches)?.description}</div>
+                                )}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="link-box inline-button">
-                          <a
-                            className="theme-btn btn-style-two"
-                            onClick={() =>
-                              redirectCard(name, code, id, parent_id)
-                            }
-                          >
-                            <i className="btn-curve"></i>
-                            <span className="btn-title">Learn More</span>
-                          </a>
-                          <a
-                            className="theme-btn btn-style-two"
-                            onClick={handleShow}
-                          >
-                            <i className="btn-curve"></i>
-                            <span className="btn-title">Enquire Now</span>
-                          </a>
+                          <div className="link-box inline-button">
+                            <a
+                              className="theme-btn btn-style-two"
+                              onClick={() =>
+                                redirectCard(name, code, id, parent_id)
+                              }
+                            >
+                              <i className="btn-curve"></i>
+                              <span className="btn-title">Learn More</span>
+                            </a>
+                            <a
+                              className="theme-btn btn-style-two"
+                              onClick={handleShow}
+                            >
+                              <i className="btn-curve"></i>
+                              <span className="btn-title">Enquire Now</span>
+                            </a>
+                          </div>
                         </div>
                       </div>
+                      <Modal show={show}>
+                        <ModalPopup
+                          setShows={setShow}
+                          thankYouShow={setThankYouShow}
+                        />
+                      </Modal>
+                      <Modal show={thankYouShow}>
+                        <ThankYouPopup setShows={setThankYouShow} />
+                      </Modal>
                     </div>
-                    <Modal show={show}>
-                      <ModalPopup
-                        setShows={setShow}
-                        thankYouShow={setThankYouShow}
-                      />
-                    </Modal>
-                    <Modal show={thankYouShow}>
-                      <ThankYouPopup setShows={setThankYouShow} />
-                    </Modal>
-                  </div>
-                )
-              )}
-            </TinySlider>
+                  )
+                )}
+              </TinySlider>
+            )}
 
             <div className="tns-controls9">
               <button className="tns-prev">
