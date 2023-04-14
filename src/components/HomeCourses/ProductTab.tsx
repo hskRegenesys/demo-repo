@@ -109,6 +109,7 @@ const ProductTab = ({ courses = [], current }: any) => {
                 >
                   <figure className="image">
                     <Image
+                      priority={true}
                       src={`/assets/images/gallery/${code}.webp`}
                       layout="responsive"
                       width="274"
@@ -147,6 +148,7 @@ const ProductTab = ({ courses = [], current }: any) => {
                       <i className="btn-curve"></i>
                       <span className="btn-title">Learn More</span>
                     </a>
+
                     <a className="theme-btn btn-style-two" onClick={handleShow}>
                       <i className="btn-curve"></i>
                       <span className="btn-title">Enquire Now</span>

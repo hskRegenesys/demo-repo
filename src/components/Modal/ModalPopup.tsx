@@ -10,6 +10,7 @@ import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
 import Preloader from "../Preloader/Preloader";
+import Loader from "../Loader/Loader";
 
 function ModalPopup(props: any) {
   const router = useRouter();
@@ -111,11 +112,12 @@ function ModalPopup(props: any) {
 
       <Modal.Body>
         {isLoading ? (
-          <div className="d-flex justify-content-center w-100">
-            <div className="spinner-border" role="status">
-              <span className="sr-only" />
-            </div>
-          </div>
+          // <div className="d-flex justify-content-center w-100">
+          //   <div className="spinner-border" role="status">
+          //     <span className="sr-only" />
+          //   </div>
+          // </div>
+          <Loader />
         ) : (
           <form
             className="form-box text-start popup-form"

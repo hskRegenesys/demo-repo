@@ -57,6 +57,7 @@ const StudentPlacement = ({ className = "" }) => {
                 >
                   <figure className="image-box">
                     <Image
+                      priority={true}
                       src={`/assets/images/clients/${
                         className.includes("dark") ? "dark-1.png" : image
                       }`}

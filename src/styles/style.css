@@ -574,12 +574,11 @@ img {
   position: fixed;
   display: block;
   left: 0;
-  top: 0;
+  top: 0px;
   width: 100%;
   background: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1;
-  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
@@ -5286,6 +5285,7 @@ tns-controls-tools {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   word-break: break-all;
+  font-size: 15px;
 }
 
 .main-footer .info-widget ul li a:hover {
@@ -9729,6 +9729,7 @@ featured-section .right-col .sec-title h2 {
 .page-banner .inner-container {
   position: relative;
   padding: 120px 0 40px;
+  padding-bottom: 20px;
 }
 
 .page-banner h1 {
@@ -19752,7 +19753,7 @@ button[disabled] {
     width: 100%;
   }
   .page-banner .inner-container {
-    padding: 120px 0px 10px !important;
+    padding: 87px 0px 45px !important;
   }
 
   .mobile-product-buttons {
@@ -20144,6 +20145,66 @@ h2.highlight {
   padding: 10px;
   line-height: normal;
 }
+
+.sticky-form-header .contact-section {
+  margin-top: 0px;
+}
+
+.sticky-form-header .contact-section .form-box {
+  padding: 0px;
+  border: none;
+}
+.sticky-form form {
+  background-color: #03b2cb;
+}
+.sticky-form {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 15px;
+}
+.sticky-form-header .contact-section .form-box {
+  background: transparent;
+  margin-bottom: 0px;
+}
+.sticky-form-header .sticky-form-fields-group {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 16px;
+}
+.sticky-form-header .PhoneInputCountry {
+  margin-top: 18px;
+}
+.sticky-form-header {
+  z-index: 11;
+}
+.sticky-form-header .contact-section {
+  border-bottom: 1px solid #8dcbb2;
+  padding: 10px;
+}
+.sticky-form-header .contact-section input,
+.sticky-form-header .contact-section textarea {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 45px;
+}
+.sticky-contant span {
+  font-weight: 700px;
+}
+
+.sticky-form-header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: #fff;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .process-one .process-one__image__column .process-one__image {
     display: none !important;
@@ -20288,5 +20349,93 @@ h2.highlight {
   }
   .features-section-two .left-col {
     margin-bottom: 0 !important;
+  }
+}
+
+.loaderBG {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.center-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dot-stretching {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffe55b;
+  color: #ffe55b;
+  transform: scale(1.25, 1.25);
+  animation: dot-stretching 2s infinite ease-in;
+}
+.dot-stretching::before,
+.dot-stretching::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-stretching::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffe55b;
+  color: #ffe55b;
+  animation: dot-stretching-before 2s infinite ease-in;
+  left: -14px;
+}
+.dot-stretching::after {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffe55b;
+  color: #ffe55b;
+  animation: dot-stretching-after 2s infinite ease-in;
+  right: -14px;
+}
+
+@keyframes dot-stretching {
+  0% {
+    transform: scale(1.25, 1.25);
+  }
+  50%,
+  60% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1.25, 1.25);
+  }
+}
+@keyframes dot-stretching-before {
+  0% {
+    transform: translate(0) scale(0.7, 0.7);
+  }
+  50%,
+  60% {
+    transform: translate(-20px) scale(1, 1);
+  }
+  100% {
+    transform: translate(0) scale(0.7, 0.7);
+  }
+}
+@keyframes dot-stretching-after {
+  0% {
+    transform: translate(0) scale(0.7, 0.7);
+  }
+  50%,
+  60% {
+    transform: translate(20px) scale(1, 1);
+  }
+  100% {
+    transform: translate(0) scale(0.7, 0.7);
   }
 }

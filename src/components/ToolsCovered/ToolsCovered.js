@@ -63,6 +63,7 @@ const ToolsCovered = ({ courseDetails }) => {
                       <figure className="image-box">
                         {/* <Image src={`/assets/images/clients/${image}`} alt="" /> */}
                         <Image
+                          priority={true}
                           src={`/assets/images/clients/${image}`}
                           layout="intrinsic"
                           width="320"

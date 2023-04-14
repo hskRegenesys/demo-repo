@@ -7,6 +7,7 @@ import _ from "lodash";
 import Data from "@/data/AllformsData";
 import { leadService } from "src/services";
 import Modal from "react-bootstrap/Modal";
+import Loader from "../Loader/Loader";
 
 export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
@@ -27,7 +28,6 @@ export default function LandingForm(contactform: any) {
   };
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
-    console.log("countryData--", countryData);
     setCountryData(countryData);
     countryData ? setIsLoading(false) : setIsLoading(true);
 
@@ -93,11 +93,7 @@ export default function LandingForm(contactform: any) {
       <div className="contact-section ">
         <div className="auto-container">
           {isLoading ? (
-            <div className="d-flex justify-content-center w-100">
-              <div className="spinner-border" role="status">
-                <span className="sr-only" />
-              </div>
-            </div>
+            <Loader />
           ) : (
             <form
               className="form-box text-start"

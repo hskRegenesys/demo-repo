@@ -18,6 +18,7 @@ import { batchInfo, urlInfo } from "../config/helper";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import Loader from "../Loader/Loader";
 
 const handleSearch = (e: any) => {
   e.preventDefault();
@@ -34,6 +35,7 @@ const AllCourseGallery = () => {
   const [allData, setAllData] = useState<any>([]);
   const [checkCourseData, setCheckCourseData] = useState<any>([]);
   const [checkFilterData, setCheckFilterData] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
@@ -41,6 +43,7 @@ const AllCourseGallery = () => {
 
   const getData = async () => {
     let courseListResponse = await courseService.allCourses();
+    courseListResponse ? setIsLoading(false) : setIsLoading(true);
 
     const courses = _.filter(
       courseListResponse,
@@ -203,93 +206,103 @@ const AllCourseGallery = () => {
             </Col>
 
             <Col sm={12} md={12} lg={9}>
-              <Row>
-                {courseData?.map(
-                  ({ id, name, courseMode, batches, code, parent_id }: any) => (
-                    <Col
-                      ref={listRef}
-                      key={id}
-                      lg={4}
-                      md={6}
-                      className="gallery-item"
-                    >
-                      <div
-                        className="inner-box"
-                        // onClick={() => redirectCard(name, code, id, parent_id)}
+              {isLoading ? (
+                <Loader />
+              ) : (
+                <Row>
+                  {courseData?.map(
+                    ({
+                      id,
+                      name,
+                      courseMode,
+                      batches,
+                      code,
+                      parent_id,
+                    }: any) => (
+                      <Col
+                        ref={listRef}
+                        key={id}
+                        lg={4}
+                        md={6}
+                        className="gallery-item"
                       >
-                        <figure className="image">
-                          <Image
-                            src={`/assets/images/gallery/${code}.webp`}
-                            alt=""
-                          />
-                        </figure>
-                        <a
-                          className="lightbox-image overlay-box"
-                          data-fancybox="gallery"
-                        ></a>
-                        <div className="cap-box">
-                          <div className="cap-inner">
-                            <div className="title">
-                              <h5>
-                                <a>{name}</a>
-                              </h5>
-                            </div>
+                        <div
+                          className="inner-box"
+                          // onClick={() => redirectCard(name, code, id, parent_id)}
+                        >
+                          <figure className="image">
+                            <Image
+                              src={`/assets/images/gallery/${code}.webp`}
+                              alt=""
+                            />
+                          </figure>
+                          <a
+                            className="lightbox-image overlay-box"
+                            data-fancybox="gallery"
+                          ></a>
+                          <div className="cap-box">
+                            <div className="cap-inner">
+                              <div className="title">
+                                <h5>
+                                  <a>{name}</a>
+                                </h5>
+                              </div>
 
-                            <div className="cat">
-                              <ul className="about-seven__list list-unstyled">
-                                <li>{courseMode.name} classes</li>
-                                <li>
-                                  <>
-                                    {getWeeksDiff(
-                                      batchInfo(batches)?.start_date,
-                                      batchInfo(batches)?.end_date
-                                    )}
-                                    &nbsp;Weeks
-                                  </>
-                                </li>
-                                <li>International certification </li>
-                                <li>Capstone projects </li>
-                              </ul>
-                            </div>
+                              <div className="cat">
+                                <ul className="about-seven__list list-unstyled">
+                                  <li>{courseMode.name} classes</li>
+                                  <li>
+                                    <>
+                                      {getWeeksDiff(
+                                        batchInfo(batches)?.start_date,
+                                        batchInfo(batches)?.end_date
+                                      )}
+                                      &nbsp;Weeks
+                                    </>
+                                  </li>
+                                  <li>International certification </li>
+                                  <li>Capstone projects </li>
+                                </ul>
+                              </div>
 
-                            <div className="batch">
-                              {batchInfo(batches)?.description}
-                            </div>
-                            <div className="link-box inline-button">
-                              <a
-                                className="theme-btn btn-style-two"
-                                onClick={() =>
-                                  redirectCard(name, code, id, parent_id)
-                                }
-                              >
-                                <i className="btn-curve"></i>
-                                <span className="btn-title">Learn More</span>
-                              </a>
-                              <a
-                                className="theme-btn btn-style-two"
-                                onClick={handleShow}
-                              >
-                                <i className="btn-curve"></i>
-                                <span className="btn-title">Enquire Now</span>
-                              </a>
+                              <div className="batch">
+                                {batchInfo(batches)?.description}
+                              </div>
+                              <div className="link-box inline-button">
+                                <a
+                                  className="theme-btn btn-style-two"
+                                  onClick={() =>
+                                    redirectCard(name, code, id, parent_id)
+                                  }
+                                >
+                                  <i className="btn-curve"></i>
+                                  <span className="btn-title">Learn More</span>
+                                </a>
+                                <a
+                                  className="theme-btn btn-style-two"
+                                  onClick={handleShow}
+                                >
+                                  <i className="btn-curve"></i>
+                                  <span className="btn-title">Enquire Now</span>
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </Col>
-                  )
-                )}
+                      </Col>
+                    )
+                  )}
 
-                <div className="tns-controls5 desktop-hide text-center">
-                  <button className="tns-prev">
-                    <span className="icon fa fa-angle-left"></span>
-                  </button>
-                  <button className="tns-next">
-                    <span className="icon fas fa-angle-right"></span>
-                  </button>
-                </div>
-              </Row>
-
+                  <div className="tns-controls5 desktop-hide text-center">
+                    <button className="tns-prev">
+                      <span className="icon fa fa-angle-left"></span>
+                    </button>
+                    <button className="tns-next">
+                      <span className="icon fas fa-angle-right"></span>
+                    </button>
+                  </div>
+                </Row>
+              )}
               {/* <Pagination className="d-flex justify-content-center mt-3">
                   <Pagination.Prev />
                   <Pagination.Item active>{1}</Pagination.Item>

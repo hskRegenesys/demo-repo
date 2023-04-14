@@ -792,6 +792,45 @@
   .news-two__content h3 {
     font-size: 30px;
   }
+  .sticky-contant span {
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .sticky-form-header .contact-section {
+    padding: 20px !important;
+    background-color: #fff;
+  }
+  .sticky-form-header .sticky-form-fields-group {
+    display: block;
+  }
+  .sticky-form {
+    display: block;
+    padding-bottom: 12px;
+    border-bottom: none;
+  }
+  .sticky-form-header .contact-section .btn-style-two {
+    margin: 0 auto;
+    display: table;
+  }
+  .closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+  }
+  .sticky-form-header .inline-button {
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .sticky-form-header {
+    padding-bottom: 0px;
+  }
+  .closeBtn button {
+    background-color: #e9b811;
+    border-radius: 2px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -805,6 +844,14 @@
 
   .banner-section .owl-dots {
     bottom: 20px;
+  }
+  .page-banner .bread-crumb li {
+    position: relative;
+    float: left;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
   }
 
   .banner-carousel .content-box h1 {

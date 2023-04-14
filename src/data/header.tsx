@@ -113,6 +113,39 @@ const headerData = {
   icon: "/assets/images/icons/close-1-1.png",
   socials,
   text: "",
+
+  PM: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
+  CS: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
+  BDSCI: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
+  ADDSCI: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
+  APDSCI: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
+  BDM: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
+  AVDM: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
+  APDM: {
+    stickyText: ` Boost your career with a Data Science Course. Contact now for
+    free counselling!`,
+  },
 };
 
 export default headerData;

@@ -32,12 +32,13 @@ const HomeBanner = ({ className = "" }) => {
               <div className="inner center-image animated fadeInLeft">
                 <div className="image-box">
                   <Image
+                    priority={true}
                     src={image}
                     layout="responsive"
                     width="432"
                     height="547"
                     alt="gmba banner"
-                  ></Image>
+                  />
                 </div>
 
                 <a

@@ -334,6 +334,8 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+    stickyText:
+      "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   //Cybersecurity
   CS: {
@@ -658,6 +660,8 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
+    stickyText:
+      "CS-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
 
   //Basic Data Science
@@ -1031,6 +1035,9 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
+
+    stickyText:
+      "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
 
   //Advance Data Science
@@ -1365,6 +1372,9 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
+
+    stickyText:
+      "ADSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   //Applied Data Science
   APDSCI: {
@@ -1653,6 +1663,9 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
+
+    stickyText:
+      "APSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
 
   //"Basic Digital Marketing"
@@ -1938,6 +1951,9 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
+
+    stickyText:
+      "BDM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   //"Advanced Digital Marketing"
   AVDM: {
@@ -2226,6 +2242,9 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
+
+    stickyText:
+      "ADM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   //"Applied Digital Marketing"
   APDM: {
@@ -2495,6 +2514,8 @@ export const courseData = {
       termsConditions: "*Terms & Conditions",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
+    stickyText:
+      "APDM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
 };
 

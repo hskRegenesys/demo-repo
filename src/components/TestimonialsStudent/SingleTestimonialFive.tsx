@@ -9,6 +9,7 @@ const SingleTestimonialFive = (props: any) => {
       <div className="testimonials-five-card">
         {/* <Image src={image} alt="" className="testimonials-five-card__image" /> */}
         <Image
+          priority={true}
           className="testimonials-five-card__image"
           src={image}
           alt=""

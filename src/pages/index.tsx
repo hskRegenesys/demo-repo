@@ -20,6 +20,7 @@ import _ from "lodash";
 import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
+import Loader from "@/components/Loader/Loader";
 
 const Home2 = () => {
   const [courseData, setcourseData] = useState([]);
@@ -34,7 +35,7 @@ const Home2 = () => {
 
   let courses: any = [];
 
-  if (courseData.length) {
+  if (courseData?.length) {
     courses = _.filter(
       courseData,
       (item: any) => item?.isAddon === false && item?.mode_id === 1
