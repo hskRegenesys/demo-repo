@@ -5,8 +5,10 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import { canonicalConstants } from "@/components/config/constant";
 import Data from "@/data/commonData";
+import { useRouter } from "next/router";
 
 const Layout = (props: any) => {
+  const Router = useRouter();
   const { children, pageTitle, preloader, mainClass, preloaderClass } = props;
   const [loading, setLoading] = useState(true);
 
@@ -27,7 +29,14 @@ const Layout = (props: any) => {
     : metaData?.metaInfo?.description?.["home"];
   const keywords = metaData?.metaInfo?.keywords?.[pageTitle];
 
-  const canonicalBaseUrl = metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+  let canonicalBaseUrl =
+    "https://www.digitalregenesys.com" +
+    metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+  if (process.env.ENV_NAME !== "PRODUCTION") {
+    canonicalBaseUrl =
+      "https://uat-new.digitalregenesys.com" +
+      metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+  }
 
   return (
     <>
@@ -36,6 +45,7 @@ const Layout = (props: any) => {
         <link rel="canonical" href={canonicalBaseUrl} />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
+
         {process.env.ENV_NAME === "PRODUCTION" && (
           <meta name="robots" content="index, follow" />
         )}
