@@ -115,6 +115,7 @@ const DigitalMarketing = (props: any) => {
 };
 export async function getServerSideProps(context: any) {
   const { id, course } = context.query;
+  console.log("context1", context.req.headers);
 
   return { props: { course } };
 }
