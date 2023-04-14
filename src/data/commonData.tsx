@@ -268,6 +268,35 @@ const Data = {
       createMyWealth:
         "Digital Regenesys offers an all in one trading course, investment course, and finance course. Enrol for the Investment, Trading & Personal Finance course. Enquire now.",
     },
+    canonicalUrlData: {
+      home: "https://www.digitalregenesys.com",
+      about: "https://www.digitalregenesys.com/about",
+      allCourse: "https://www.digitalregenesys.com/all-courses",
+      contact: "https://www.digitalregenesys.com/contact",
+      privacyPolicy: "https://www.digitalregenesys.com/privacy-policy/",
+      termsCondition: "https://www.digitalregenesys.com/terms-and-conditions",
+      "cyber-security":
+        "https://www.digitalregenesys.com/all-courses/cyber-security",
+      "digital-marketing":
+        "https://www.digitalregenesys.com/all-courses/digital-marketing",
+      "basic-digital-marketing":
+        "https://www.digitalregenesys.com/all-courses/digital-marketing/basic-digital-marketing",
+      "advanced-digital-marketing":
+        "https://www.digitalregenesys.com/all-courses/digital-marketing/advanced-digital-marketing",
+      "applied-digital-marketing":
+        "https://www.digitalregenesys.com/all-courses/digital-marketing/applied-digital-marketing",
+      "project-management":
+        "https://www.digitalregenesys.com/all-courses/project-management",
+
+      "data-science":
+        "https://www.digitalregenesys.com/all-courses/data-science",
+      "basic-data-science":
+        "https://www.digitalregenesys.com/all-courses/data-science/basic-data-science",
+      "advanced-data-science":
+        "https://www.digitalregenesys.com/all-courses/data-science/advanced-data-science",
+      "applied-data-science":
+        "https://www.digitalregenesys.com/all-courses/data-science/applied-data-science",
+    },
   },
 };
 

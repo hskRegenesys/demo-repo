@@ -52,8 +52,6 @@ const AllCourseGallery = () => {
     checkData(courses);
     setAllData(courses);
     setcourseData(courses);
-
-    // console.log("allData---", allData);
   };
 
   useEffect(() => {
