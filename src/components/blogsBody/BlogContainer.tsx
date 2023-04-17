@@ -4,7 +4,7 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import ShortcutIcon from "@mui/icons-material/Shortcut";
 import Image from "next/image";
 import ApplyNow from "./ApplyNow";
-
+import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 interface IRecommendPost {
   image: string;
   title: string;
@@ -50,30 +50,53 @@ const Pointer = () => {
   );
 };
 
-const ImageWithBtnBox = ({ handleClickApplyClick }: any) => {
+const ImageWithBtnBox = ({
+  handleClickApplyClick,
+  button,
+  imgHeight = 400,
+  imgWidth = 600,
+}: any) => {
   return (
     <>
       <div className="img-content position-relative w-100 mt-2">
         <Image
           src={"/assets/images/background/full-video-bg.webp"}
           alt="test"
-          width={600}
-          height={400}
+          width={imgWidth}
+          height={imgHeight}
         />
-        <div
-          onClick={ImageWithBtnBox}
-          className="applyNow-btn position-absolute"
-          style={{ bottom: "35px", left: "40%" }}
-        >
-          <button
-            onClick={handleClickApplyClick}
-            className="theme-btn btn-style-two mt-5"
-            type="submit"
+        {!button && (
+          <div
+            onClick={ImageWithBtnBox}
+            className="applyNow-btn position-absolute"
+            style={{ bottom: "35px", left: "40%" }}
           >
-            <i className="btn-curve"></i>
-            <span className="btn-title">Apply</span>
-          </button>
-        </div>
+            <button
+              onClick={handleClickApplyClick}
+              className="theme-btn btn-style-two mt-5"
+              type="submit"
+            >
+              <i className="btn-curve"></i>
+              <span className="btn-title">Apply</span>
+            </button>
+          </div>
+        )}
+        {button === "center" && (
+          <div
+            onClick={ImageWithBtnBox}
+            className="applyNow-btn position-absolute"
+            style={{ bottom: "35px", left: "30%" }}
+          >
+            <button
+              onClick={handleClickApplyClick}
+              className="theme-btn btn-style-two mt-5"
+              type="submit"
+            >
+              <i className="btn-curve"></i>
+              <span className="btn-title">Apply</span>
+            </button>
+          </div>
+        )}
       </div>
     </>
   );
@@ -102,7 +125,13 @@ const BlogIntroduction = ({ text, heading, customContent = "" }: any) => {
   );
 };
 
-const RecomendPosts = ({ posts }: {posts:IRecommendPost[]}) => {
+const RecomendPosts = ({
+  posts,
+  handleExpand,
+}: {
+  posts: IRecommendPost[];
+  handleExpand: () => void;
+}) => {
   return (
     <>
       <div className="text-center bg-light p-3 rounded m-3">
@@ -125,6 +154,15 @@ const RecomendPosts = ({ posts }: {posts:IRecommendPost[]}) => {
             </div>
           </div>
         ))}
+        {posts.length > 7 && (
+          <div>
+            <ExpandCircleDownOutlinedIcon
+              style={{ width: "40px", height: "40px", cursor: "pointer" }}
+              color="success"
+              onClick={handleExpand}
+            />
+          </div>
+        )}
       </div>
     </>
   );
@@ -205,7 +243,12 @@ const BlogContainer = () => {
           <div className="col-4">
             <ApplyNow />
             <br />
-            <RecomendPosts posts={recommentPosts} />
+            <RecomendPosts
+              posts={recommentPosts}
+              handleExpand={() => undefined}
+            />
+            <br />
+            <ImageWithBtnBox button={"center"} imgHeight={700} imgWidth={400} />
           </div>
         </div>
       </div>
