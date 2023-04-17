@@ -8,7 +8,7 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import CategoryBlogsBody from "@/components/CategoryBlogBody";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
-import NewsLetter from "@/components/CategoryBlogBody/NewsLetter";
+import NewsLetter from "@/components/blogsBody/NewsLetter";
 const CategoryBlog = () => {
   return (
     <Layout pageTitle="Blogs">

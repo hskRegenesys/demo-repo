@@ -1,5 +1,5 @@
 import React from "react";
-import ApplyNow from "./ApplyNow";
+import ApplyNow from "../blogsBody/ApplyNow";
 import About from "./About";
 import Ads from "./Ads";
 
