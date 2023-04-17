@@ -5,6 +5,8 @@ import ShortcutIcon from "@mui/icons-material/Shortcut";
 import Image from "next/image";
 import ApplyNow from "./ApplyNow";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
+import FeedBackForm from "./FeedBackForm";
+import NewsLetter from "./NewsLetter";
 interface IRecommendPost {
   image: string;
   title: string;
@@ -72,6 +74,7 @@ const ImageWithBtnBox = ({
             style={{ bottom: "35px", left: "40%" }}
           >
             <button
+              style={{ background: "#ffde59", color: "black" }}
               onClick={handleClickApplyClick}
               className="theme-btn btn-style-two mt-5"
               type="submit"
@@ -88,8 +91,9 @@ const ImageWithBtnBox = ({
             style={{ bottom: "35px", left: "30%" }}
           >
             <button
+              style={{ background: "#ffde59", color: "black" }}
               onClick={handleClickApplyClick}
-              className="theme-btn btn-style-two mt-5"
+              className="theme-btn btn-style-two mt-5 yellow-btn"
               type="submit"
             >
               <i className="btn-curve"></i>
@@ -237,11 +241,14 @@ const BlogContainer = () => {
                     )
                   )}
                 </div>
+                <div className="feedback-form">
+                  <FeedBackForm />
+                </div>
               </div>
             </div>
           </div>
           <div className="col-4">
-            <ApplyNow />
+            <ApplyNow yellowBtn />
             <br />
             <RecomendPosts
               posts={recommentPosts}
@@ -250,6 +257,9 @@ const BlogContainer = () => {
             <br />
             <ImageWithBtnBox button={"center"} imgHeight={700} imgWidth={400} />
           </div>
+        </div>
+        <div className="w-100">
+          <NewsLetter />
         </div>
       </div>
     </>

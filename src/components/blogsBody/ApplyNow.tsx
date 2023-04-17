@@ -5,7 +5,7 @@ import PhoneInput from "react-phone-number-input";
 import Data from "@/data/AllformsData";
 import _ from "lodash";
 
-const ApplyNow = () => {
+const ApplyNow = (props: any) => {
   const hookForm: any = useForm();
   const [courseData, setcourseData] = useState([]);
 
@@ -192,7 +192,14 @@ const ApplyNow = () => {
         </div>
 
         <div className=" text-center">
-          <button className="theme-btn btn-style-two mt-5" type="submit">
+          <button
+            style={{
+              background: props?.yellowBtn ? "#ffde59" : "",
+              color: props?.yellowBtn ? "black" : "white",
+            }}
+            className={"theme-btn btn-style-two mt-5"}
+            type="submit"
+          >
             <i className="btn-curve"></i>
             <span className="btn-title">Submit</span>
           </button>
