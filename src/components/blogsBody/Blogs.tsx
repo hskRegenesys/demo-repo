@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { wpService } from "src/services";
 
 const blogsData: { [key: string]: Array<{ [key: string]: string }> } = {
   "Popular Post": [
@@ -48,6 +49,15 @@ const blogsData: { [key: string]: Array<{ [key: string]: string }> } = {
 };
 
 const Blogs = () => {
+  const getAllPosts = async () => {
+    const response = wpService.allPosts();
+    console.log("response", response);
+  };
+
+  useEffect(() => {
+    getAllPosts();
+  });
+
   return (
     <div>
       {Object.keys(blogsData).map((value) => (
