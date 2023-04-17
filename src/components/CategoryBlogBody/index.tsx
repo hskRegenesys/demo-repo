@@ -7,7 +7,7 @@ import TrendingCourse from "./TrendingCourse";
 
 const CategoryBlogsBody = () => {
   return (
-    <div style={{ paddingTop: "100px" }}>
+    <div style={{ marginTop: 120 }}>
       <div className="row">
         <div className="col-9">
           <Blogs />
