@@ -20448,3 +20448,11 @@ h2.highlight {
     transform: translate(0) scale(0.7, 0.7);
   }
 }
+
+
+/* ///Blog component/// */
+
+.apply-now-form-box {
+  top: 0;
+  left: 100%
+}

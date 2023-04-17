@@ -4,12 +4,41 @@ import RightSidePanel from "./RightSidePanel";
 import Blogs from "./Blogs";
 import NewsLetter from "./NewsLetter";
 import TrendingCourse from "./TrendingCourse";
+import CarouselComponent from "./Carousel";
+import LandingForm from "../commonForm/AllForms";
+import BlogContainer from "./BlogContainer";
+
+const carasoulProps = [
+  {
+    image: "image-1",
+    label: "test label",
+    caption: "test caption",
+  },
+  {
+    image: "image-1",
+    label: "test",
+    caption: "test",
+  },
+  {
+    image: "image-1",
+    label: "test",
+    caption: "test",
+  },
+];
 
 const BlogsBody = () => {
   return (
     <div style={{ paddingTop: "100px" }}>
-      <div className="w-100" style={{ overflow: "hidden", height: "50vh" }}>
-        <img src="https://placehold.co/4000x1000?text=Slider" />
+      <div className="row">
+        <div className="col-md-12">
+          <div className="carasoul-container my-5 position-relative">
+            <CarouselComponent carouselProps={carasoulProps} />
+            <BlogContainer />
+            <div className="apply-now-form-box position-absolute">
+              <LandingForm />
+            </div>
+          </div>
+        </div>
       </div>
       <div className="container">
         <div className="row">
