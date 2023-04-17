@@ -1,4 +1,6 @@
 import React from "react";
+import BlogContainer from "./BlogContainer";
+import Link from "next/link";
 
 const blogsData: { [key: string]: Array<{ [key: string]: string }> } = {
   "Popular Post": [

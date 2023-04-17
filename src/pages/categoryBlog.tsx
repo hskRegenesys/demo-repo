@@ -8,6 +8,7 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import CategoryBlogsBody from "@/components/CategoryBlogBody";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
+import NewsLetter from "@/components/CategoryBlogBody/NewsLetter";
 const CategoryBlog = () => {
   return (
     <Layout pageTitle="Blogs">
@@ -16,7 +17,7 @@ const CategoryBlog = () => {
       <MobileMenu />
       <SearchPopup />
       <CategoryBlogsBody />
-      <div>NewsLetter</div>
+      <NewsLetter />
       <TrendingSection />
       <MainFooter />
       <StickyBar />
