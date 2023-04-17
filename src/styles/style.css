@@ -18736,6 +18736,15 @@ input.PhoneInputInput {
   height: 10px;
 }
 
+.blogs-apply-now .PhoneInputCountry {
+  margin-top: 8px !important;
+  margin-left: 0px !important;
+}
+
+.blogs-apply-now input.PhoneInputInput {
+  padding-left: 40px !important;
+}
+
 .testimonials-carousel-two {
   background-color: #1fa393;
   border-radius: 15px;
@@ -20352,7 +20361,7 @@ h2.highlight {
   }
 }
 
-.loaderBG {
+/* .loaderBG {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -20360,12 +20369,13 @@ h2.highlight {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 99;
-}
+} */
 .center-loader {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 99;
 }
 .dot-stretching {
   position: fixed;
@@ -20438,4 +20448,12 @@ h2.highlight {
   100% {
     transform: translate(0) scale(0.7, 0.7);
   }
+}
+
+
+/* ///Blog component/// */
+
+.apply-now-form-box {
+  top: 0;
+  left: 100%
 }

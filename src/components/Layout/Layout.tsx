@@ -1,15 +1,16 @@
 import Preloader from "@/components/Preloader/Preloader";
 import useScroll from "@/hooks/useScroll";
 import Head from "next/head";
-import { useRouter } from "next/router";
+
 import React, { useEffect, useState } from "react";
 import { canonicalConstants } from "@/components/config/constant";
 import Data from "@/data/commonData";
+import { useRouter } from "next/router";
 
 const Layout = (props: any) => {
+  const Router = useRouter();
   const { children, pageTitle, preloader, mainClass, preloaderClass } = props;
   const [loading, setLoading] = useState(true);
-  const { scrollTop } = useScroll(100);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -18,10 +19,6 @@ const Layout = (props: any) => {
 
     return () => clearTimeout(timeoutId);
   }, []);
-  const router = useRouter();
-  const canonicalUrl = (
-    `${canonicalConstants}` + (router.asPath === "/" ? "" : router.asPath)
-  ).split("?")[0];
 
   const metaData: any = Data;
   const title = metaData?.metaInfo?.title?.[pageTitle]
@@ -30,16 +27,25 @@ const Layout = (props: any) => {
   const description = metaData?.metaInfo?.description?.[pageTitle]
     ? metaData?.metaInfo?.description?.[pageTitle]
     : metaData?.metaInfo?.description?.["home"];
-  const keywords = metaData?.metaInfo?.keywords?.[pageTitle]
-    ? metaData?.metaInfo?.keywords?.[pageTitle]
-    : metaData?.metaInfo?.keywords?.["home"];
+  const keywords = metaData?.metaInfo?.keywords?.[pageTitle];
+
+  let canonicalBaseUrl =
+    "https://www.digitalregenesys.com" +
+    metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+  if (process.env.ENV_NAME !== "PRODUCTION") {
+    canonicalBaseUrl =
+      "https://uat-new.digitalregenesys.com" +
+      metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+  }
+
   return (
     <>
       <Head>
         <title>{title}</title>
-        <link rel="canonical" href={canonicalUrl} />
+        <link rel="canonical" href={canonicalBaseUrl} />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
+
         {process.env.ENV_NAME === "PRODUCTION" && (
           <meta name="robots" content="index, follow" />
         )}
@@ -53,8 +59,11 @@ const Layout = (props: any) => {
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
       </Head>
+
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
-      <a id="chat" className="chat d-inline-block fadeIn animated"><i className="chat-icon"></i></a>
+      <a id="chat" className="chat d-inline-block fadeIn animated">
+        <i className="chat-icon"></i>
+      </a>
       <main
         id="wrapper"
         style={{ opacity: loading ? 0 : 1 }}

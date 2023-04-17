@@ -91,20 +91,17 @@ const NavItem = (props: any) => {
           )}
         </a>
       </Link>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        subNavItems?.length > 0 && (
-          <ul
-            style={{
-              display: !menuStatus || active ? "block" : "none",
-            }}
-          >
-            {subNavItems?.map((subItem: any) => (
-              <SubItem key={subItem.id} subItem={subItem} />
-            ))}
-          </ul>
-        )
+
+      {subNavItems?.length > 0 && (
+        <ul
+          style={{
+            display: !menuStatus || active ? "block" : "none",
+          }}
+        >
+          {subNavItems?.map((subItem: any) => (
+            <SubItem key={subItem.id} subItem={subItem} />
+          ))}
+        </ul>
       )}
     </li>
   );

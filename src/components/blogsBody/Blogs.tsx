@@ -51,11 +51,11 @@ const Blogs = () => {
   return (
     <div>
       {Object.keys(blogsData).map((value) => (
-        <div key={value}>
+        <div key={value} className="pt-5">
           <h5>{value}</h5>
           <div className="row">
             {blogsData[value].map((item, index) => (
-              <div className="col" key={index}>
+              <div className="col " key={index}>
                 <div
                   style={{
                     border: "gray 1px solid",
