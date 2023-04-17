@@ -281,6 +281,10 @@ figure {
   text-align: center !important;
 }
 
+.yellow-btn {
+  background-color: #ffde59;
+}
+
 /*Btn Style One*/
 .btn-style-one {
   position: relative;
