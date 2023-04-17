@@ -18736,6 +18736,15 @@ input.PhoneInputInput {
   height: 10px;
 }
 
+.blogs-apply-now .PhoneInputCountry {
+  margin-top: 8px !important;
+  margin-left: 0px !important;
+}
+
+.blogs-apply-now input.PhoneInputInput {
+  padding-left: 40px !important;
+}
+
 .testimonials-carousel-two {
   background-color: #1fa393;
   border-radius: 15px;
@@ -20439,4 +20448,12 @@ h2.highlight {
   100% {
     transform: translate(0) scale(0.7, 0.7);
   }
+}
+
+
+/* ///Blog component/// */
+
+.apply-now-form-box {
+  top: 0;
+  left: 100%
 }
