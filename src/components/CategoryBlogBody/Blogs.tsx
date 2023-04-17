@@ -75,10 +75,7 @@ const blogsData: { [key: string]: Array<{ [key: string]: string }> } = {
 const Blogs = () => {
   return (
     <div>
-      <div
-        className="col-12 d-flex"
-        style={{ marginBottom: 15, marginTop: 20 }}
-      >
+      <div className="col-12 d-flex">
         <h6 style={{ marginLeft: 10 }}>All Blogs</h6>
         <div className="ms-auto" style={{ width: 350 }}>
           <button
