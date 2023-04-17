@@ -6,7 +6,6 @@ import NewsLetter from "./NewsLetter";
 import TrendingCourse from "./TrendingCourse";
 import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
-import BlogContainer from "./BlogContainer";
 
 const carasoulProps = [
   {
@@ -33,7 +32,6 @@ const BlogsBody = () => {
         <div className="col-md-12">
           <div className="carasoul-container my-5 position-relative">
             <CarouselComponent carouselProps={carasoulProps} />
-            <BlogContainer />
             <div className="apply-now-form-box position-absolute">
               <LandingForm />
             </div>
@@ -49,10 +47,11 @@ const BlogsBody = () => {
           <div className="col-3">
             <RightSidePanel />
           </div>
-          <NewsLetter />
+
           <TrendingCourse />
         </div>
       </div>
+      <NewsLetter />
     </div>
   );
 };

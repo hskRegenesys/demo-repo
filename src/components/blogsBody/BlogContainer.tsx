@@ -56,11 +56,11 @@ const ImageWithBtnBox = ({
   handleClickApplyClick,
   button,
   imgHeight = 400,
-  imgWidth = 600,
+  imgWidth = 1100,
 }: any) => {
   return (
     <>
-      <div className="img-content position-relative w-100 mt-2">
+      <div className="img-content position-relative w-100 mt-2 ">
         <Image
           src={"/assets/images/background/full-video-bg.webp"}
           alt="test"
@@ -255,12 +255,17 @@ const BlogContainer = () => {
               handleExpand={() => undefined}
             />
             <br />
-            <ImageWithBtnBox button={"center"} imgHeight={700} imgWidth={400} />
+            <div style={{ marginLeft: 90 }}>
+              <ImageWithBtnBox
+                button={"center"}
+                imgHeight={700}
+                imgWidth={400}
+              />
+            </div>
           </div>
         </div>
-        <div className="w-100">
-          <NewsLetter />
-        </div>
+
+        <NewsLetter />
       </div>
     </>
   );

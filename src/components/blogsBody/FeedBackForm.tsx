@@ -16,7 +16,10 @@ const FeedBackForm = () => {
   };
   return (
     <>
-      <div style={{background:'#88c2a4',borderRadius:'8px'}} className="d-flex flex-column p-4">
+      <div
+        style={{ background: "#88c2a4", borderRadius: "8px" }}
+        className="d-flex flex-column p-4"
+      >
         <h6 className="fw-bold">Rate your read & Leave a comment</h6>
         <p className="text-white">
           Your email id will not be published. Required Fields are marked as *
@@ -114,7 +117,7 @@ const FeedBackForm = () => {
                 )}
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-6 mt-2">
               <button
                 style={{ background: "#ffde59", color: "black" }}
                 className="theme-btn btn-style-two mt-1 pt-1"
