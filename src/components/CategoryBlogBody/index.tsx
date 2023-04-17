@@ -1,10 +1,8 @@
 import React from "react";
-import Categories from "./Categories";
+
 import RightSidePanel from "./RightSidePanel";
 import Blogs from "./Blogs";
-import NewsLetter from "./NewsLetter";
-import TrendingCourse from "./TrendingCourse";
-import ApplyNow from "./ApplyNow";
+
 const CategoryBlogsBody = () => {
   return (
     <div style={{ marginTop: 150 }}>
