@@ -64,15 +64,18 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
       activeIndex={index}
       onSelect={handleSelect}
     >
-      {carouselProps.map(({ image, label, caption }, index) => (
+      {carouselProps?.map(({ image, label, caption }, index) => (
         <Carousel.Item key={index}>
-          <Image
-            className="d-block w-100"
-            src={`/assets/images/background/${image}`}
-            alt={`${image}-index`}
-            height={400}
-            width={"100%"}
-          />
+          <div className="w-100 position-relative" style={{ height: "400px" }}>
+            <Image
+              className="d-block w-100"
+              src={`/assets/images/background/${image}`}
+              alt={`${image}-index`}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+
           <Carousel.Caption className="d-flex align-item-center justify-content-center flex-column">
             <div>
               <h3 className="text-dark">{label}</h3>
