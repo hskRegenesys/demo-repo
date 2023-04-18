@@ -140,7 +140,7 @@ const RecomendPosts = ({
     <>
       <div className="text-center bg-light p-3 rounded m-3">
         <h6>Recommended Posts</h6>
-        {posts.map(({ image, title, date }, index) => (
+        {posts?.map(({ image, title, date }, index) => (
           <div className="row" key={index}>
             <div className="col-6">
               <Image
@@ -191,7 +191,7 @@ const BlogContainer = () => {
                 <div>
                   {" "}
                   <ul className="d-flex justify-content-around">
-                    {links.map(({ name, value, icon }, index) => (
+                    {links?.map(({ name, value, icon }, index) => (
                       <li key={index} className="fw-bold me-4">
                         <span className="">{icon}</span>
                         {name}
@@ -204,7 +204,7 @@ const BlogContainer = () => {
                   <ImageWithBtnBox />
                 </div>
                 <div className="blog-introducton mt-3">
-                  {blogIntroductionData.map(
+                  {blogIntroductionData?.map(
                     ({ text, heading, customContent }, index) => (
                       <>
                         <BlogIntroduction
