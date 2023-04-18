@@ -3,9 +3,10 @@ import { wpService } from "src/services";
 
 const Blogs = () => {
   const [response, setResponse] = useState<Array<any>>([]);
+
   const getAllPosts = async () => {
     const response = await wpService.allPosts();
-    setResponse(response);
+    !!response ? setResponse(response) : setResponse([]);
   };
 
   useEffect(() => {
@@ -15,10 +16,10 @@ const Blogs = () => {
   return (
     <div>
       <div>
-        {response.map((item: any) => {
+        {response?.map((item: any) => {
           return (
             <>
-              <h3>{item?.title.rendered} </h3>
+              <h3>{item?.title?.rendered} </h3>
               <div
                 key={item.id}
                 dangerouslySetInnerHTML={{ __html: item?.content?.rendered }}
@@ -26,6 +27,7 @@ const Blogs = () => {
               <div
                 dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered }}
               />
+              <hr />
             </>
           );
         })}
