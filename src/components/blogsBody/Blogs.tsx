@@ -16,7 +16,7 @@ const Blogs = () => {
   return (
     <div>
       <div>
-        {response?.map((item: any) => {
+        {response.length > 0 && response?.map((item: any) => {
           return (
             <>
               <h3>{item?.title?.rendered} </h3>
