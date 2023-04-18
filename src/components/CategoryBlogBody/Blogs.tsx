@@ -100,7 +100,7 @@ const Blogs = () => {
           </button>
         </div>
       </div>
-      {Object.keys(blogsData).map((value) => (
+      {Object.keys(blogsData)?.map((value) => (
         <div key={value}>
           <div className="row">
             {blogsData[value].map((item, index) => (

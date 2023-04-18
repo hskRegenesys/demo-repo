@@ -1,8 +1,6 @@
 import React from "react";
-
 import RightSidePanel from "./RightSidePanel";
 import Blogs from "./Blogs";
-
 const CategoryBlogsBody = () => {
   return (
     <div style={{ marginTop: 150 }}>

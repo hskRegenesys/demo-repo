@@ -7,6 +7,9 @@ export const LeadApiServiceConstants = {
 export const LalesforceApiServiceConstants = {
   baseURL: process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL,
 };
+export const WPApiServiceConstants = {
+  baseURL: process.env.NEXT_PUBLIC_WP_REST_API,
+};
 export const CountryCodeApiServiceConstants = {
   baseURL: "/api",
 };
@@ -19,4 +22,6 @@ export const apiEndPoints = Object.freeze({
   salesforceApi: "/salesforce",
   downloadBrochure: "/document/downloadurl",
   countryCode: "/geoLocation",
+  wpPosts: "/posts",
+  wpCategories: "/categories",
 });
