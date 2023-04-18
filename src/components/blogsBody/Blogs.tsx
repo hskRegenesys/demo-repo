@@ -3,6 +3,7 @@ import { wpService } from "src/services";
 
 const Blogs = () => {
   const [response, setResponse] = useState<Array<any>>([]);
+
   const getAllPosts = async () => {
     const response = await wpService.allPosts();
     !!response ? setResponse(response) : setResponse([]);
