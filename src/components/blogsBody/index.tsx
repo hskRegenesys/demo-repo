@@ -9,17 +9,17 @@ import LandingForm from "../commonForm/AllForms";
 
 const carasoulProps = [
   {
-    image: "image-1",
+    image: "Sample-Banner-01.jpeg",
     label: "test label",
     caption: "test caption",
   },
   {
-    image: "image-1",
+    image: "Sample-Banner-02.jpeg",
     label: "test",
     caption: "test",
   },
   {
-    image: "image-1",
+    image: "Sample-Blog-Card-Image.png",
     label: "test",
     caption: "test",
   },
