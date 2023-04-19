@@ -22,32 +22,29 @@ const SubItem = (props: any) => {
         pathname === href ? "current" : ""
       }`}
     >
-      <Link href={href}>
-        <a href={href}>
-          {name} {isNew && <span>new</span>}
-          {!!subItems?.length && (
-            <div
-              onClick={handleActive}
-              className={`dropdown-btn${active ? " open" : ""}`}
-            >
-              <span className="fa fa-angle-right"></span>
-            </div>
-          )}
-        </a>
-      </Link>
+      <a href={href}>
+        {name} {isNew && <span>new</span>}
+        {!!subItems?.length && (
+          <div
+            onClick={handleActive}
+            className={`dropdown-btn${active ? " open" : ""}`}
+          >
+            <span className="fa fa-angle-right"></span>
+          </div>
+        )}
+      </a>
+
       <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
         {subItems
           ?.filter((item: any) => item.name !== "Full-Stack")
           ?.map((item: any) => (
             <li key={item.id} className={`dropdown`}>
-              <Link href={item.href}>
-                <a
-                  href={item.href}
-                  style={{ fontSize: "14px", fontWeight: "400" }}
-                >
-                  {item.name} {item.isNew && <span>new</span>}
-                </a>
-              </Link>
+              <a
+                href={item.href}
+                style={{ fontSize: "14px", fontWeight: "400" }}
+              >
+                {item.name} {item.isNew && <span>new</span>}
+              </a>
             </li>
           ))}
       </ul>
