@@ -214,6 +214,7 @@
 
   .nav-outer .mobile-nav-toggler {
     display: block;
+    margin: 14px 0px 0px;
   }
 
   .header-style-two .nav-outer .mobile-nav-toggler {

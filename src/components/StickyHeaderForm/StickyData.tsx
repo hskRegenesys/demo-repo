@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import AllPageStickyData from "@/data/stickyData";
 
 const StickyData = (props: any) => {
   const handleShow = () => setShow(true);
@@ -11,13 +12,16 @@ const StickyData = (props: any) => {
   const handleClick = () => {
     setIsShown((current) => !current);
   };
+
+  const AllPageStickText = AllPageStickyData[props.pageTitle];
+
   return (
     <div>
       {isShown && (
         <div className="sticky-form-header">
           <div className="sticky-form">
             <div className="sticky-contant">
-              <span>{props.stickyText}</span>
+              <span> {AllPageStickText}</span>
             </div>
             <div className="link-box inline-button">
               <a className="theme-btn btn-style-two" onClick={handleShow}>

@@ -617,6 +617,7 @@ img {
   padding: 40px 0px;
   margin-right: 20px;
   z-index: 7;
+  padding-top: 10px;
 }
 
 .main-header .header-upper .logo-box .logo {
@@ -641,7 +642,7 @@ img {
 .main-header .other-links .link-box {
   position: relative;
   float: left;
-  padding: 34px 0px;
+  padding: 10px 0px;
 }
 
 .main-header .other-links .link-box .link {
@@ -767,6 +768,7 @@ img {
   margin-left: 40px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  padding-top: 10px;
 }
 
 .main-menu .navigation > li:last-child {
@@ -19752,9 +19754,9 @@ button[disabled] {
   .mobile-pricing-section .product-details__buttons .theme-btn {
     width: 100%;
   }
-  .page-banner .inner-container {
+  /* .page-banner .inner-container {
     padding: 87px 0px 45px !important;
-  }
+  } */
 
   .mobile-product-buttons {
     display: block;
@@ -20199,10 +20201,9 @@ h2.highlight {
 
 .sticky-form-header {
   z-index: 10;
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 0px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
