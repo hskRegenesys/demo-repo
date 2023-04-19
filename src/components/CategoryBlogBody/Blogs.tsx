@@ -93,11 +93,18 @@ const Blogs = () => {
     <div>
       <div className="col-12 d-flex" style={{ zIndex: 100 }}>
         <h6 style={{ marginLeft: 10 }}>All Blogs</h6>
-        <div className="d-flex flex-row  ms-auto p-2" style={{ zIndex: 100 }}>
-          <div className="dropdown" style={{ zIndex: 100 }}>
+        <div
+          className="d-flex p-2 ms-auto"
+          style={{
+            width: 300,
+            justifyContent: "flex-end",
+          }}
+        >
+          <div style={{ position: "absolute", width: 300 }}>
             <button
               onClick={handleOpen}
               style={{
+                position: "relative",
                 backgroundColor: "#289665",
                 width: 150,
                 marginRight: 10,
@@ -107,10 +114,10 @@ const Blogs = () => {
               Topic Filter
             </button>
             {open ? (
-              <div style={{ borderStyle: "solid" }}>
-                <ul className="menu">
+              <div style={{ borderStyle: "solid", backgroundColor: "white" }}>
+                <ul className="dropdown">
                   {response.map((item) => (
-                    <li className="menu-item">
+                    <li className="dropdown">
                       <div>{item.name}</div>
                     </li>
                   ))}
@@ -118,7 +125,8 @@ const Blogs = () => {
               </div>
             ) : null}
           </div>
-          <div className="dropdown">
+
+          <div className="dropdown" style={{ position: "relative", left: 20 }}>
             <button
               style={{
                 backgroundColor: "#289665",
