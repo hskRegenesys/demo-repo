@@ -28,7 +28,10 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
     >
       {carouselProps?.map(({ image, label, caption }, index) => (
         <Carousel.Item key={index}>
-          <div className="w-100 position-relative" style={{ height: "400px" }}>
+          <div
+            className="w-100 position-relative"
+            style={{ minHeight: "400px" }}
+          >
             <Image
               className="d-block w-100"
               src={`/assets/images/background/${image}`}
@@ -40,9 +43,9 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
 
           <Carousel.Caption className="d-flex align-item-center justify-content-center flex-column">
             <div>
-              <h3 className="text-dark">{label}</h3>
+              <h3 className="text-light carousal-text">{label}</h3>
             </div>
-            {caption && <p className="text-dark">{caption}</p>}
+            {caption && <p className="text-light carousal-text">{caption}</p>}
           </Carousel.Caption>
         </Carousel.Item>
       ))}

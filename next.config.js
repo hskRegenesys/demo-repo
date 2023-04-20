@@ -17,6 +17,9 @@ const nextConfig = {
   env: {
     ENV_NAME: process.env.ENV_NAME,
   },
+  images: {
+    domains: ["www.regenesys.net"],
+  },
 };
 
 const redirectURL = () => {
