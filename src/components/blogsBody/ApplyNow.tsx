@@ -42,7 +42,7 @@ const ApplyNow = (props: any) => {
     handleSubmit,
   } = hookForm;
   return (
-    <div className="text-center bg-light p-3 rounded m-3">
+    <div className="text-center bg-light-green p-3 rounded m-3">
       <h6>Apply Now</h6>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group mt-2">

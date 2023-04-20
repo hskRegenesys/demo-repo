@@ -1,15 +1,30 @@
 import { apiEndPoints } from "@/data/axisos";
 
+interface IParameters {
+  search?: string;
+  orderby?: string;
+  per_page?: number;
+  page?: number;
+  categories?: number;
+}
+
 class WpRestApiServices {
   constructor(private appAPIServer: any) {
     this.appAPIServer = appAPIServer;
   }
 
-  async allPosts() {
+  async allPosts(params?: IParameters) {
     let result: any = {};
+    let endUrlName = `${apiEndPoints.wpPosts}?per_page=${params?.per_page}`;
+    if (params?.page) endUrlName = `${endUrlName}&&page=${params?.page}`;
+    if (params?.search) endUrlName = `${endUrlName}&&search=${params?.search}`;
+    if (params?.categories)
+      endUrlName = `${endUrlName}&&categories=${params?.categories}`;
+    if (params?.orderby)
+      endUrlName = `${endUrlName}&&orderby=${params?.orderby}`;
 
     try {
-      const response = await this.appAPIServer.get(apiEndPoints.wpPosts);
+      const response = await this.appAPIServer.get(endUrlName);
       result = response?.data;
     } catch (err: any) {
       result = err?.response;
@@ -21,11 +36,16 @@ class WpRestApiServices {
     }
   }
 
-  async allCategories() {
+  async allCategories(params?: IParameters) {
     let result: any = {};
+    let endUrlName = `${apiEndPoints.wpCategories}?per_page=${params?.per_page}`;
+    if (params?.page) endUrlName = `${endUrlName}&&page=${params?.page}`;
+    if (params?.search) endUrlName = `${endUrlName}&&search=${params?.search}`;
+    if (params?.orderby)
+      endUrlName = `${endUrlName}&&orderby=${params?.orderby}`;
 
     try {
-      const response = await this.appAPIServer.get(apiEndPoints.wpCategories);
+      const response = await this.appAPIServer.get(endUrlName);
       result = response?.data;
     } catch (err: any) {
       result = err?.response;

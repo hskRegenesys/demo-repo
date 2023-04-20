@@ -5,17 +5,20 @@
 NEXT_PUBLIC_DR_API_BASE_URL=https://Uat-api-new.digitalregenesys.com/api
 NEXT_PUBLIC_LEADS_API_BASE_URL=https://Uat-api-leads.digitalregenesys.com
 NEXT_PUBLIC_SALESFORCE_API_BASE_URL=https://uat-api-leads.digitalregenesys.com
+NEXT_PUBLIC_WP_REST_API=https://www.regenesys.net/reginsights/wp-json/wp/v2
 
 
 # OR for windows environment
 set NEXT_PUBLIC_DR_API_BASE_URL=https://Uat-api-new.digitalregenesys.com/api
 set NEXT_PUBLIC_LEADS_API_BASE_URL=https://Uat-api-leads.digitalregenesys.com
 set NEXT_PUBLIC_SALESFORCE_API_BASE_URL=https://uat-api-leads.digitalregenesys.com
+set NEXT_PUBLIC_WP_REST_API=https://www.regenesys.net/reginsights/wp-json/wp/v2
 
 # OR for Linux environment
 export NEXT_PUBLIC_DR_API_BASE_URL=https://Uat-api-new.digitalregenesys.com/api
 export NEXT_PUBLIC_LEADS_API_BASE_URL=https://Uat-api-leads.digitalregenesys.com
 export NEXT_PUBLIC_SALESFORCE_API_BASE_URL=https://uat-api-leads.digitalregenesys.com
+export NEXT_PUBLIC_WP_REST_API=https://www.regenesys.net/reginsights/wp-json/wp/v2
 
 
 ## Getting Started

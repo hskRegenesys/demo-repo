@@ -8,7 +8,6 @@ const NewsLetter = () => {
     phone: "",
     email: "",
   });
-  console.log({ formState });
   const onChange = (name: string, value: string) => {
     setFormState((prevState) => ({ ...prevState, [name]: value }));
   };

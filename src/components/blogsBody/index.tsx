@@ -3,25 +3,25 @@ import Categories from "./Categories";
 import RightSidePanel from "./RightSidePanel";
 import Blogs from "./Blogs";
 import NewsLetter from "./NewsLetter";
-import TrendingCourse from "./TrendingCourse";
+import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
 
 const carasoulProps = [
   {
     image: "Sample-Banner-01.jpeg",
-    label: "test label",
-    caption: "test caption",
+    label: "Title",
+    caption: "Caption",
   },
   {
     image: "Sample-Banner-02.jpeg",
-    label: "test",
-    caption: "test",
+    label: "Title",
+    caption: "Caption",
   },
   {
     image: "Sample-Blog-Card-Image.png",
-    label: "test",
-    caption: "test",
+    label: "Title",
+    caption: "Caption",
   },
 ];
 
@@ -47,10 +47,9 @@ const BlogsBody = () => {
           <div className="col-3">
             <RightSidePanel />
           </div>
-
-          <TrendingCourse />
         </div>
       </div>
+      <TrendingSection />
       <NewsLetter />
     </div>
   );
