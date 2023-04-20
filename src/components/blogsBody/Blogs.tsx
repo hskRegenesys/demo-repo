@@ -29,8 +29,6 @@ const Blogs = () => {
     setPostList(apiResponse);
   };
 
-  console.log(postList);
-
   return (
     <div>
       <div>

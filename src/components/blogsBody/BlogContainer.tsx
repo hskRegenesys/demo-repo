@@ -39,7 +39,6 @@ const Pointer = () => {
     .map((_, index) => {
       text: index > 10 ? index : `0${index}`;
     });
-  console.log({ content });
   return (
     <>
       {content.map((text, index) => (
