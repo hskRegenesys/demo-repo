@@ -391,6 +391,10 @@
   .discover-block .inner-box {
     padding: 10px;
   }
+  .main-header .header-upper {
+    top: 0px;
+    padding-top: 5px;
+  }
 
   .testimonials-five-card__text {
     max-width: 500px;
@@ -708,7 +712,7 @@
   }
 
   .page-banner .inner-container {
-    padding: 180px 0px 50px;
+    padding: 160px 0px 10px;
   }
 
   .error-section .big-text {
@@ -797,7 +801,7 @@
     font-weight: 700;
     line-height: normal;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
   }
   .sticky-form-header .contact-section {
@@ -818,8 +822,8 @@
   }
   .closeBtn {
     position: absolute;
-    right: 10px;
-    top: 16px;
+    right: 24%;
+    top: 50px;
   }
   .sticky-form-header .inline-button {
     justify-content: center;
