@@ -174,7 +174,7 @@ const HeaderOne = ({
         </div>
       )}
       <div className="header-upper">
-        <StickyData pageTitle={pageTitle} />
+        {pageTitle !== "allCourse" && <StickyData pageTitle={pageTitle} />}
 
         <div className="auto-container d-flex clearfix">
           <div className="logo-box">
