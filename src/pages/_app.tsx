@@ -79,9 +79,38 @@ const MyApp = ({ Component, pageProps }: any) => {
               `,
         }}
       />
+      {/* linked start */}
+      <Script
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          _linkedin_partner_id = "5438577";
+          window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+          window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+          </script><script type="text/javascript">
+          (function(l) {
+          if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+          window.lintrk.q=[]}
+          var s = document.getElementsByTagName("script")[0];
+          var b = document.createElement("script");
+          b.type = "text/javascript";b.async = true;
+          b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+          s.parentNode.insertBefore(b, s);})(window.lintrk);
+              `,
+        }}
+      />
+      {/* linked end */}
       <noscript>
         <iframe
           src="https://www.facebook.com/tr?id=613242390822464&ev=PageView&noscript=1"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
+      <noscript>
+        <iframe
+          src="https://px.ads.linkedin.com/collect/?pid=5438577&fmt=gif"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
