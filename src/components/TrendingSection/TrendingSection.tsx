@@ -22,7 +22,7 @@ const settings = {
   items: 3,
   slideBy: "page",
   autoplay: true,
-  loop: true,
+  loop: false,
   gutter: 30,
   nav: false,
   controls: true,
@@ -119,19 +119,14 @@ const TrendingSection = () => {
                   durationInWeeks,
                   parent_id,
                 }: any) => (
-                  <div ref={listRef} className="gallery-item" key={id}>
-                    <div
-                      className="inner-box"
-                      onClick={() => redirectCard(name, code, id, parent_id)}
-                    >
-                      {/* <div className="icon">
-                      <i className="fa fa-share-alt" aria-hidden="true"></i>
-                    </div> */}
+                  <div
+                    ref={listRef}
+                    className="gallery-item"
+                    key={id}
+                    onClick={() => redirectCard(name, code, id, parent_id)}
+                  >
+                    <div className="inner-box">
                       <figure className="image">
-                        {/* <Image
-                          src={`/assets/images/gallery/${code}.webp`}
-                          alt=""
-                        /> */}
                         <Image
                           priority={true}
                           src={`/assets/images/gallery/${code}.webp`}
@@ -141,10 +136,10 @@ const TrendingSection = () => {
                           alt=""
                         />
                       </figure>
-                      <a
+                      {/* <a
                         className="lightbox-image overlay-box"
                         data-fancybox="gallery"
-                      ></a>
+                      ></a> */}
                       <div className="cap-box">
                         <div className="cap-inner">
                           <div className="title">
