@@ -5,7 +5,7 @@ interface IParameters {
   orderby?: string;
   per_page?: number;
   page?: number;
-  categories?: number;
+  categories?: number | string;
 }
 
 class WpRestApiServices {
@@ -15,7 +15,9 @@ class WpRestApiServices {
 
   async allPosts(params?: IParameters) {
     let result: any = {};
-    let endUrlName = `${apiEndPoints.wpPosts}?per_page=${params?.per_page}`;
+    let endUrlName = `${apiEndPoints.wpPosts}?per_page=${
+      params?.per_page ?? 10
+    }`;
     if (params?.page) endUrlName = `${endUrlName}&&page=${params?.page}`;
     if (params?.search) endUrlName = `${endUrlName}&&search=${params?.search}`;
     if (params?.categories)
@@ -36,9 +38,27 @@ class WpRestApiServices {
     }
   }
 
+  async specificPost(postId: number) {
+    let result: any = {};
+    let endUrlName = `${apiEndPoints.wpPosts}/${postId}`;
+    try {
+      const response = await this.appAPIServer.get(endUrlName);
+      result = response?.data;
+    } catch (err: any) {
+      result = err?.response;
+
+      console.log("Error while getting specific Post", err.message);
+    } finally {
+      // eslint-disable-next-line no-unsafe-finally
+      return result;
+    }
+  }
+
   async allCategories(params?: IParameters) {
     let result: any = {};
-    let endUrlName = `${apiEndPoints.wpCategories}?per_page=${params?.per_page}`;
+    let endUrlName = `${apiEndPoints.wpCategories}?per_page=${
+      params?.per_page ?? 10
+    }`;
     if (params?.page) endUrlName = `${endUrlName}&&page=${params?.page}`;
     if (params?.search) endUrlName = `${endUrlName}&&search=${params?.search}`;
     if (params?.orderby)

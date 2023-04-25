@@ -20483,12 +20483,6 @@ h2.highlight {
   height: 160px;
 }
 
-.blog-grid-desc {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
 .blog-grid-title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -20500,4 +20494,10 @@ h2.highlight {
 }
 .bg-dark-green {
   background-color: #88c2a5;
+}
+.text-dark-green {
+  color: #289665;
+}
+.btn-hover:hover {
+  text-decoration: underline;
 }
