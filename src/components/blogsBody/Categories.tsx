@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 
@@ -19,17 +20,18 @@ const Categories = () => {
     <div className="row">
       {categoryList?.length > 0
         ? categoryList?.map((item) => {
-            const { yoast_head_json } = item;
-            const { title } = yoast_head_json;
+            const { slug, id, name } = item;
             return (
-              <div key={item} className="col-6">
-                <div className="inline-button w-100 text-truncate">
-                  <a className="theme-btn btn-style-two w-100">
-                    <i className="btn-curve" />
-                    <span className="btn-title">{title}</span>
-                  </a>
+              <Link key={item} href={`/blogs/category/${slug}/${id}`} passHref>
+                <div className="col-6">
+                  <div className="inline-button w-100 text-truncate">
+                    <a className="theme-btn btn-style-two w-100">
+                      <i className="btn-curve" />
+                      <span className="btn-title">{name}</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </Link>
             );
           })
         : null}

@@ -20454,8 +20454,6 @@ h2.highlight {
   }
 }
 
-
-
 /* ///Blog component/// */
 
 .apply-now-form-box {
@@ -20474,27 +20472,26 @@ h2.highlight {
   justify-content: center;
   align-items: center;
   background-color: #cae7d8;
-  
 }
-.blog-grid-content{
+.blog-grid-content {
   height: 160px;
 }
 
-.blog-grid-desc {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
 .blog-grid-title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.bg-light-green{
+.bg-light-green {
   background-color: #eef5ed;
 }
-.bg-dark-green{
+.bg-dark-green {
   background-color: #88c2a5;
+}
+.text-dark-green {
+  color: #289665;
+}
+.btn-hover:hover{
+text-decoration: underline;
 }

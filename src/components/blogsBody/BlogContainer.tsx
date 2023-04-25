@@ -1,29 +1,18 @@
-import React from "react";
-import PersonIcon from "@mui/icons-material/Person";
-import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import ShortcutIcon from "@mui/icons-material/Shortcut";
+import React, { useEffect, useState } from "react";
+import { LeftOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import ApplyNow from "./ApplyNow";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
+import { wpService } from "src/services";
+import { IPostTypes } from "./dataTypes";
+import Link from "next/link";
 interface IRecommendPost {
   image: string;
   title: string;
   date: string;
 }
-
-const links = [
-  { name: "Author Name", value: "(Name)" },
-  { name: "Updated On", value: new Date().toLocaleDateString() },
-  { name: "", value: "04 Min Read", icon: <PersonIcon /> },
-  { name: "", value: "427 Views", icon: <RemoveRedEyeIcon /> },
-  {
-    name: "",
-    value: "Share",
-    icon: <ShortcutIcon />,
-  },
-];
 
 const recommentPosts: IRecommendPost[] = [
   { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
@@ -32,24 +21,6 @@ const recommentPosts: IRecommendPost[] = [
   { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
   { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
 ];
-
-const Pointer = () => {
-  const content = Array(10)
-    .fill(`0`)
-    .map((_, index) => {
-      text: index > 10 ? index : `0${index}`;
-    });
-  return (
-    <>
-      {content.map((text, index) => (
-        <p className="mb-0" key={index}>
-          {" "}
-          {">"}Pointer {index + 1 >= 10 ? index + 1 : `0${index + 1}`}
-        </p>
-      ))}
-    </>
-  );
-};
 
 const ImageWithBtnBox = ({
   handleClickApplyClick,
@@ -105,29 +76,6 @@ const ImageWithBtnBox = ({
   );
 };
 
-const blogIntroductionData = [
-  {
-    heading: "Blog Introduction",
-    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here.",
-  },
-  {
-    heading: "Blog Includes",
-    customContent: <Pointer />,
-  },
-];
-
-const BlogIntroduction = ({ text, heading, customContent = "" }: any) => {
-  return (
-    <>
-      <div>
-        <h5 className="fw-bold">{heading}</h5>
-        {text && <p>{text}</p>}
-        {customContent && <p>{customContent}</p>}
-      </div>
-    </>
-  );
-};
-
 const RecomendPosts = ({
   posts,
   handleExpand,
@@ -171,80 +119,55 @@ const RecomendPosts = ({
   );
 };
 
-const BlogContainer = () => {
+const BlogContainer = ({ postId }: { postId: number }) => {
+  const [postResponse, setPostResponse] = useState<IPostTypes>();
+  const getPost = async () => {
+    const response = await wpService.specificPost(Number(postId));
+
+    !!response && setPostResponse(response);
+  };
+
+  useEffect(() => {
+    getPost();
+  }, [postId]);
+
   return (
-    <>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="ps-5 col-8">
-            <div className="breadCrums">
-              <p>
-                Home {">"} Blog Category {">"} Digital Marketing Blog
-              </p>
-            </div>
-            <div className="content d-flex flex-column">
-              <h4 className="text-uppercase">
-                <strong>digital marketing blog (Title)</strong>
-              </h4>
-              <div className="d-flex flex-column">
-                <div>
-                  {" "}
-                  <ul className="d-flex justify-content-around">
-                    {links?.map(({ name, value, icon }, index) => (
-                      <li key={index} className="fw-bold me-4">
-                        <span className="">{icon}</span>
-                        {name}
-                        <span className="fw-normal">{value}</span>
-                      </li>
-                    ))}
-                  </ul>
+    <div style={{ paddingTop: "150px" }}>
+      <div className="container">
+        <Link href={`/blogs/`} passHref>
+          <p
+            role="button"
+            className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
+          >
+            <LeftOutlined className="pe-2" />
+            Back to list
+          </p>
+        </Link>
+        <div className="row py-3">
+          <div className="col-8">
+            {!!postResponse ? (
+              <div>
+                <h4>{postResponse?.title?.rendered}</h4>
+                <div className="w-100 position-relative">
+                  {postResponse?.yoast_head_json?.og_image?.map((img) => (
+                    <Image
+                      key={img.url}
+                      src={img.url.toString()}
+                      width={img.width}
+                      height={img.height}
+                      alt={postResponse?.yoast_head_json?.og_title}
+                    />
+                  ))}
                 </div>
-                <div>
-                  <ImageWithBtnBox />
-                </div>
-                <div className="blog-introducton mt-3">
-                  {blogIntroductionData?.map(
-                    ({ text, heading, customContent }, index) => (
-                      <>
-                        <BlogIntroduction
-                          key={index}
-                          text={text}
-                          heading={heading}
-                          customContent={customContent}
-                        />
-                        <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when
-                          looking at its layout. The point of using Lorem Ipsum
-                          is that it has a more-or-less normal distribution of
-                          letters, as opposed to using Content here, content
-                          here.
-                        </p>
-                        <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when
-                          looking at its layout. The point of using Lorem Ipsum
-                          is that it has a more-or-less normal distribution of
-                          letters, as opposed to using Content here, content
-                          here.
-                        </p>
-                        <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when
-                          looking at its layout. The point of using Lorem Ipsum
-                          is that it has a more-or-less normal distribution of
-                          letters, as opposed to using Content here, content
-                          here.
-                        </p>
-                      </>
-                    )
-                  )}
-                </div>
-                <div className="feedback-form">
-                  <FeedBackForm />
-                </div>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: postResponse?.content?.rendered,
+                  }}
+                />
               </div>
-            </div>
+            ) : (
+              <p>Loading</p>
+            )}
           </div>
           <div className="col-4">
             <ApplyNow yellowBtn />
@@ -263,10 +186,12 @@ const BlogContainer = () => {
             </div>
           </div>
         </div>
-
+        <div className="feedback-form">
+          <FeedBackForm />
+        </div>
         <NewsLetter />
       </div>
-    </>
+    </div>
   );
 };
 
