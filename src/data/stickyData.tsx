@@ -1,4 +1,7 @@
-const AllPageStickyData = {
+interface IAllPageStickyDataType {
+  [key: string]: string;
+}
+const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-security":
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
   "digital-marketing":

@@ -18169,7 +18169,6 @@ h2.curve-right:after {
   .process-one__image {
     margin-bottom: 0;
   }
-  
 }
 
 .process-one__image img {
@@ -20150,10 +20149,17 @@ h2.highlight {
   display: flex;
   margin-top: 15px;
 }
+
 .inline-button .btn-style-two {
   margin: 0 5px;
   background-color: #1fa393;
   border-radius: 10px;
+  border: 1px solid #1fa393;
+}
+.inline-button .btn-style-two:last-child {
+  background-color: #ffe55b;
+  color: #000;
+  border: 1px solid #000;
 }
 .inline-button .btn-style-two .btn-title {
   padding: 10px;
@@ -20472,9 +20478,8 @@ h2.highlight {
   justify-content: center;
   align-items: center;
   background-color: #cae7d8;
-  
 }
-.blog-grid-content{
+.blog-grid-content {
   height: 160px;
 }
 
@@ -20490,9 +20495,9 @@ h2.highlight {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.bg-light-green{
+.bg-light-green {
   background-color: #eef5ed;
 }
-.bg-dark-green{
+.bg-dark-green {
   background-color: #88c2a5;
 }
