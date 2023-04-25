@@ -70,7 +70,7 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
-
+  console.log("props.course", props.course);
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
@@ -78,7 +78,7 @@ const DigitalMarketing = (props: any) => {
       {/* {router.pathname.includes("all-courses") && (
         <StickyData stickyText={courseDetails?.stickyText} />
       )} */}
-      <HeaderOne />
+      <HeaderOne pageTitle={props.course} />
       <MobileMenu />
       <SearchPopup />
       <PageBanner
@@ -113,6 +113,7 @@ const DigitalMarketing = (props: any) => {
     </Layout>
   );
 };
+
 export async function getServerSideProps(context: any) {
   const { id, course } = context.query;
   console.log("context1", context.req.headers);

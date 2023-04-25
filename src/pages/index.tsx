@@ -46,7 +46,7 @@ const Home2 = () => {
     <Layout pageTitle="home">
       <Schemas type={Constants.home} />
       <Style />
-      <HeaderOne />
+      <HeaderOne pageTitle="home" />
       <MobileMenu />
       <SearchPopup />
       <HomeBanner />

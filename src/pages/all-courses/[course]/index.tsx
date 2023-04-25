@@ -33,7 +33,7 @@ const Course = (props: any) => {
   return (
     <Layout pageTitle={props?.course}>
       <Style />
-      <HeaderOne />
+      <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
       <SearchPopup />
       <Schemas

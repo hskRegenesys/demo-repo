@@ -14,7 +14,7 @@ const About = () => {
   return (
     <Layout pageTitle="privacyPolicy">
       <Style />
-      <HeaderOne />
+      <HeaderOne pageTitle="privacyPolicy" />
       <MobileMenu />
       <PageBanner title="Privacy Policy" />
       <PrivacyPolicy />

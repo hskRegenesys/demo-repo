@@ -12,7 +12,6 @@ const AboutMarko = () => {
         <Row>
           <Col md={12} lg={6} className="mobile-show desktop-hide">
             <div className="about-me-one__image">
-              {/* <Image src={image} alt="" /> */}
               <Image
                 src="/assets/images/marko.webp"
                 layout="intrinsic"
@@ -38,7 +37,6 @@ const AboutMarko = () => {
 
           <Col md={12} lg={6} className="mobile-hide">
             <div className="about-me-one__image">
-              {/* <Image src={image} alt="" /> */}
               <Image
                 src="/assets/images/marko.webp"
                 layout="intrinsic"
