@@ -18,7 +18,7 @@ const Contact = () => {
     <Layout pageTitle="contact">
       <Style />
 
-      <HeaderOne />
+      <HeaderOne pageTitle="contact" />
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="Contact" />

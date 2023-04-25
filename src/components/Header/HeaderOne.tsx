@@ -17,6 +17,7 @@ import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
+import StickyData from "../StickyHeaderForm/StickyData";
 
 const {
   title,
@@ -39,6 +40,7 @@ const HeaderOne = ({
   autoContainer = false,
   links = true,
   rightMenu = false,
+  pageTitle = "",
 }) => {
   const { scrollTop } = useScroll(120);
   const [show, setShow] = useState(false);
@@ -171,12 +173,9 @@ const HeaderOne = ({
           </div>
         </div>
       )}
-      <div
-        // style={{
-        //   top: router.pathname.includes("all-courses") ? "60px" : "0px",
-        // }}
-        className="header-upper"
-      >
+      <div className="header-upper">
+        {pageTitle !== "allCourse" && <StickyData pageTitle={pageTitle} />}
+
         <div className="auto-container d-flex clearfix">
           <div className="logo-box">
             <div className="logo">

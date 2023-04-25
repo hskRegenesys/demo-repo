@@ -15,7 +15,7 @@ const Terms = () => {
   return (
     <Layout pageTitle="refundPolicy">
       <Style />
-      <HeaderOne />
+      <HeaderOne pageTitle="refundPolicy" />
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="RefundPolicy" />
