@@ -4,59 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
-import { CarouselRef } from "antd/es/carousel";
 import { getRandom } from "src/utils/common";
 import { Spinner } from "react-bootstrap";
 
-const carouselResponsiveSettings = [
-  {
-    breakpoint: 1258,
-    settings: {
-      slidesToShow: 4,
-      slidesToScroll: 3,
-      infinite: true,
-      dots: true,
-    },
-  },
-  {
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      infinite: true,
-      dots: true,
-    },
-  },
-  {
-    breakpoint: 876,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 3,
-      infinite: true,
-      dots: true,
-    },
-  },
-  {
-    breakpoint: 600,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 2,
-      initialSlide: 2,
-    },
-  },
-  {
-    breakpoint: 480,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    },
-  },
-];
-
 const Blogs = () => {
-  const ref = useRef<CarouselRef | null>();
-  console.log("ref", ref.current);
-
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
   const getCategoryList = async () => {
@@ -108,14 +59,7 @@ const Blogs = () => {
                 {values?.posts?.length > 3 ? (
                   <div className="d-flex justify-content-space-between align-items-center">
                     <div>
-                      {ref?.current && (
-                        <button
-                          onClick={() => ref?.current?.prev()}
-                          className="btn"
-                        >
-                          Prev
-                        </button>
-                      )}
+                      <button className="btn">Prev</button>
                     </div>
                     <div style={{ width: "90%" }}>
                       <Carousel
@@ -128,7 +72,6 @@ const Blogs = () => {
                         slidesToShow={3}
                         slidesToScroll={1}
                         swipeToSlide
-                        ref={ref}
                       >
                         {values?.posts?.map((item) => (
                           <div key={item.id} className="px-2">
@@ -182,14 +125,7 @@ const Blogs = () => {
                       </Carousel>
                     </div>
                     <div>
-                      {ref?.current && (
-                        <button
-                          className="btn"
-                          onClick={() => ref?.current?.next()}
-                        >
-                          Next
-                        </button>
-                      )}
+                      <button className="btn">Next</button>
                     </div>
                   </div>
                 ) : (
