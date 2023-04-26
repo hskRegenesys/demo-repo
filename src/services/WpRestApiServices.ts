@@ -6,6 +6,7 @@ interface IParameters {
   per_page?: number;
   page?: number;
   categories?: number | string;
+  slug?: string;
 }
 
 class WpRestApiServices {
@@ -24,6 +25,7 @@ class WpRestApiServices {
       endUrlName = `${endUrlName}&&categories=${params?.categories}`;
     if (params?.orderby)
       endUrlName = `${endUrlName}&&orderby=${params?.orderby}`;
+    if (params?.slug) endUrlName = `${endUrlName}&&slug=${params?.slug}`;
 
     try {
       const response = await this.appAPIServer.get(endUrlName);
@@ -63,6 +65,7 @@ class WpRestApiServices {
     if (params?.search) endUrlName = `${endUrlName}&&search=${params?.search}`;
     if (params?.orderby)
       endUrlName = `${endUrlName}&&orderby=${params?.orderby}`;
+    if (params?.slug) endUrlName = `${endUrlName}&&slug=${params?.slug}`;
 
     try {
       const response = await this.appAPIServer.get(endUrlName);

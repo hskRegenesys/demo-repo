@@ -22,7 +22,7 @@ const Categories = () => {
         ? categoryList?.map((item) => {
             const { slug, id, name } = item;
             return (
-              <Link key={item} href={`/blogs/category/${slug}/${id}`} passHref>
+              <Link key={item} href={`/blogs/category/${slug}`} passHref>
                 <div className="col-6">
                   <div className="inline-button w-100 text-truncate">
                     <a className="theme-btn btn-style-two w-100">

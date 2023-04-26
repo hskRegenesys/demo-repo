@@ -119,17 +119,17 @@ const RecomendPosts = ({
   );
 };
 
-const BlogContainer = ({ postId }: { postId: number }) => {
-  const [postResponse, setPostResponse] = useState<IPostTypes>();
-  const getPost = async () => {
-    const response = await wpService.specificPost(Number(postId));
+const BlogContainer = ({ slug }: { slug: string }) => {
+  const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
 
+  const getPost = async () => {
+    const response = await wpService.allPosts({ slug: slug });
     !!response && setPostResponse(response);
   };
 
   useEffect(() => {
     getPost();
-  }, [postId]);
+  }, [slug]);
 
   return (
     <div style={{ paddingTop: "150px" }}>
@@ -145,26 +145,28 @@ const BlogContainer = ({ postId }: { postId: number }) => {
         </Link>
         <div className="row py-3">
           <div className="col-8">
-            {!!postResponse ? (
-              <div>
-                <h4>{postResponse?.title?.rendered}</h4>
-                <div className="w-100 position-relative">
-                  {postResponse?.yoast_head_json?.og_image?.map((img) => (
-                    <Image
-                      key={img.url}
-                      src={img.url.toString()}
-                      width={img.width}
-                      height={img.height}
-                      alt={postResponse?.yoast_head_json?.og_title}
-                    />
-                  ))}
+            {postResponse?.length > 0 ? (
+              postResponse?.map((item) => (
+                <div key={item.id}>
+                  <h4>{item?.title?.rendered}</h4>
+                  <div className="w-100 position-relative">
+                    {item?.yoast_head_json?.og_image?.map((img) => (
+                      <Image
+                        key={img.url}
+                        src={img.url.toString()}
+                        width={img.width}
+                        height={img.height}
+                        alt={item?.yoast_head_json?.og_title}
+                      />
+                    ))}
+                  </div>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: item?.content?.rendered,
+                    }}
+                  />
                 </div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: postResponse?.content?.rendered,
-                  }}
-                />
-              </div>
+              ))
             ) : (
               <p>Loading</p>
             )}
