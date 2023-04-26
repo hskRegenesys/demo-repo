@@ -101,6 +101,7 @@
     position: relative;
     padding: 30px;
   }
+
   .main-footer .links-widget ul li {
     float: left;
     margin-right: 30px;
@@ -393,6 +394,10 @@
   }
   .main-header .header-upper {
     top: 0px;
+  }
+  .sticky-contant span {
+    font-weight: bold;
+    font-size: 15px;
     padding-top: 5px;
   }
 
@@ -820,7 +825,7 @@
     margin: 0 auto;
     display: table;
   }
-  .closeBtn {
+  .sticky-form-header .closeBtn {
     position: absolute;
     right: 24%;
     top: 50px;
@@ -833,7 +838,6 @@
     padding-bottom: 0px;
   }
   .closeBtn button {
-    background-color: #e9b811;
     border-radius: 2px;
   }
 }
@@ -846,7 +850,9 @@
   .banner-carousel .slide-item .shape-5 {
     display: none;
   }
-
+  .sticky-form-header .inline-button .btn-style-two span {
+    font-size: 15px;
+  }
   .banner-section .owl-dots {
     bottom: 20px;
   }

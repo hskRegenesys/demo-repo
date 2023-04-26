@@ -20161,9 +20161,16 @@ h2.highlight {
   color: #000;
   border: 1px solid #000;
 }
+.sticky-form-header .inline-button .btn-style-two span {
+  font-size: 18px;
+}
 .inline-button .btn-style-two .btn-title {
   padding: 10px;
   line-height: normal;
+}
+.sticky-form-header .btn-close {
+  position: absolute;
+  top: 34%;
 }
 
 .sticky-form-header .contact-section {
@@ -20214,21 +20221,29 @@ h2.highlight {
   height: 45px;
 }
 .sticky-contant span {
-  font-weight: 700px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .sticky-form-header {
   z-index: 10;
   position: relative;
   width: 100%;
-  background-color: transparent;
+  background-color: #c3c3c3;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .process-one .process-one__image__column .process-one__image {
     display: none !important;
   }
-
+  .sticky-form-header .closeBtn {
+    position: absolute;
+    right: 24%;
+    top: 31px;
+  }
+  .btn-style-two .btn-title {
+    line-height: 18px;
+  }
   .process-one__content {
     padding: 30px !important;
   }
@@ -20247,7 +20262,7 @@ h2.highlight {
   }
 
   .page-banner .inner-container {
-    padding: 120px 0px 10px !important;
+    padding: 148px 0px 10px !important;
   }
 
   .sponsors-section-four {
