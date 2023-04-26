@@ -1,10 +1,8 @@
-import { JsxElement } from "typescript";
-
 export interface IPostListTypes {
   category: string | number;
   posts: Array<{
     id: number;
-    slug: number;
+    slug: string;
     yoast_head_json: {
       og_image: Array<{ [key: string]: string | number }>;
       og_title: string;
@@ -15,7 +13,7 @@ export interface IPostListTypes {
 
 export interface IPostTypes {
   id: number;
-  slug: number;
+  slug: string;
   yoast_head_json: {
     og_image: Array<{ [key: string]: string | number }>;
     og_title: string;

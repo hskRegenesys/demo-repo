@@ -1,6 +1,6 @@
 import { Carousel } from "antd";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
@@ -26,13 +26,13 @@ const Blogs = () => {
       [key: string]: number | string;
     }>
   ) => {
-    console.log("getRandom(response)", response, getRandom(response));
+    getRandom(response);
 
     const apiResponse = await Promise.all(
       response?.map(async (category) => ({
         category: category.name,
         posts: await wpService.allPosts({
-          per_page: 10,
+          per_page: 12,
           categories: category.id,
         }),
       }))
@@ -100,14 +100,11 @@ const Blogs = () => {
                                   <small>
                                     {item?.yoast_head_json?.og_description?.slice(
                                       0,
-                                      100
+                                      80
                                     )}
                                     ...
                                   </small>
-                                  <Link
-                                    href={`/blogs/${item?.slug}/${item?.id}`}
-                                    passHref
-                                  >
+                                  <Link href={`/blogs/${item?.slug}`} passHref>
                                     <a>
                                       <b
                                         role="button"
@@ -159,14 +156,11 @@ const Blogs = () => {
                                   <small>
                                     {item?.yoast_head_json?.og_description?.slice(
                                       0,
-                                      100
+                                      80
                                     )}
                                     ...
                                   </small>
-                                  <Link
-                                    href={`/blogs/${item?.slug}/${item?.id}`}
-                                    passHref
-                                  >
+                                  <Link href={`/blogs/${item?.slug}`} passHref>
                                     <a>
                                       <b
                                         role="button"

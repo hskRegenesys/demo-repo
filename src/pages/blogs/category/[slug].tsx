@@ -6,11 +6,11 @@ import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import StickyBar from "@/components/StickyFooter/Sticky";
-import BlogContainer from "@/components/blogsBody/BlogContainer";
+import BlogsByCategories from "@/components/blogsBody/BlogsByCategories";
 
-const Post = () => {
+const PostsByCategory = () => {
   const router = useRouter();
-  const { id } = router.query;
+  const { slug } = router.query;
 
   return (
     <Layout pageTitle="Blogs">
@@ -18,11 +18,11 @@ const Post = () => {
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <BlogContainer postId={Number(id)} />
+      {slug && <BlogsByCategories categorySlug={slug.toString()} />}
       <MainFooter />
       <StickyBar />
     </Layout>
   );
 };
 
-export default Post;
+export default PostsByCategory;
