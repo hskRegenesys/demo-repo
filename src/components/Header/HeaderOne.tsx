@@ -18,7 +18,9 @@ import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
 import StickyData from "../StickyHeaderForm/StickyData";
+import { Input, Space } from "antd";
 
+const { Search } = Input;
 const {
   title,
   logo1,
@@ -29,10 +31,13 @@ const {
   logo9,
   title2,
   navItems,
+  blogsNavItem,
   navItemsTwo,
 } = headerData;
 
 const HeaderOne = ({
+  variant,
+  search,
   headerStyle = "header-style-one",
   logo = 1,
   onePage = false,
@@ -70,6 +75,8 @@ const HeaderOne = ({
       Logo = logo4;
     }
   }
+  const onSearch = (value: string) => search(value);
+
   const allCourses = async () => {
     const allData = await courseService.allCourses();
     allData ? setIsLoading(false) : setIsLoading(true);
@@ -210,30 +217,52 @@ const HeaderOne = ({
                 id={autoContainer ? "" : "navbarSupportedContent"}
               >
                 <ul className="navigation clearfix">
-                  {newNavItems?.map((navItem: any) => (
-                    <NavItem
-                      navItem={navItem}
-                      key={navItem.id}
-                      onePage={onePage}
-                      isLoading={isLoading}
-                    />
-                  ))}
+                  {variant === "blog"
+                    ? blogsNavItem?.map((navItem: any) => (
+                        <NavItem
+                          navItem={navItem}
+                          key={navItem.id}
+                          onePage={onePage}
+                          isLoading={isLoading}
+                        />
+                      ))
+                    : newNavItems?.map((navItem: any) => (
+                        <NavItem
+                          navItem={navItem}
+                          key={navItem.id}
+                          onePage={onePage}
+                          isLoading={isLoading}
+                        />
+                      ))}
                 </ul>
               </div>
             </nav>
           </div>
-
-          {links && (
+          {variant === "blog" ? (
             <div className="other-links clearfix">
               <div className="link-box">
-                <Link href="https://mydigital.regenesys.net/login/index.php">
-                  <a className="theme-btn btn-style-two">
-                    <i className="btn-curve"></i>
-                    <span className="btn-title">Login</span>
-                  </a>
-                </Link>
+                <Space direction="vertical">
+                  <Search
+                    placeholder="Search Topics"
+                    onSearch={onSearch}
+                    style={{ width: 200 }}
+                  />
+                </Space>
               </div>
             </div>
+          ) : (
+            links && (
+              <div className="other-links clearfix">
+                <div className="link-box">
+                  <Link href="https://mydigital.regenesys.net/login/index.php">
+                    <a className="theme-btn btn-style-two">
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Login</span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            )
           )}
           {rightMenu && (
             <div className="right-menu">

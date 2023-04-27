@@ -6,22 +6,28 @@ import NewsLetter from "./NewsLetter";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
+import { wpService } from "src/services";
 
 const carasoulProps = [
   {
-    image: "Sample-Banner-01.jpeg",
-    label: "Title",
-    caption: "Caption",
+    image: "data-0_awU-za2-transformed.jpeg",
+    label: "",
+    caption: "",
   },
   {
-    image: "Sample-Banner-02.jpeg",
-    label: "Title",
-    caption: "Caption",
+    image: "Digital_(2)-transformed.jpeg",
+    label: "",
+    caption: "",
   },
   {
-    image: "Sample-Blog-Card-Image.png",
-    label: "Title",
-    caption: "Caption",
+    image: "Project-Management-Banner.png",
+    label: "",
+    caption: "",
+  },
+  {
+    image: "1634114902599.jpg",
+    label: "",
+    caption: "",
   },
 ];
 

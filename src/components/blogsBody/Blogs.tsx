@@ -78,13 +78,14 @@ const Blogs = () => {
                             <div className="blog-grid-column">
                               <div>
                                 {item?.yoast_head_json?.og_image?.map((img) => (
-                                  <Image
-                                    key={img.url}
-                                    src={img.url.toString()}
-                                    width={img.width}
-                                    height={img.height}
-                                    alt={item?.yoast_head_json?.og_title}
-                                  />
+                                  <div key={img.url}>
+                                    <img
+                                      src={img.url.toString()}
+                                      height={350}
+                                      width={300}
+                                      alt={item?.yoast_head_json?.og_title}
+                                    />
+                                  </div>
                                 ))}
                               </div>
                               <div className="px-3 blog-grid-content">
@@ -134,13 +135,23 @@ const Blogs = () => {
                             <div className="blog-grid-column">
                               <div>
                                 {item?.yoast_head_json?.og_image?.map((img) => (
-                                  <Image
+                                  <div
                                     key={img.url}
-                                    src={img.url.toString()}
-                                    width={img.width}
-                                    height={img.height}
-                                    alt={item?.yoast_head_json?.og_title}
-                                  />
+                                    style={{
+                                      height: "120px",
+                                      width: "100%",
+                                      overflow: "hidden",
+                                      position: "relative",
+                                    }}
+                                  >
+                                    <Image
+                                      key={img.url}
+                                      src={img.url.toString()}
+                                      layout="fill"
+                                      objectFit="contain"
+                                      alt={item?.yoast_head_json?.og_title}
+                                    />
+                                  </div>
                                 ))}
                               </div>
                               <div className="p-3">

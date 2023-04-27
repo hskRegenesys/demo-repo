@@ -30,15 +30,23 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
         <Carousel.Item key={index}>
           <div
             className="w-100 position-relative"
-            style={{ minHeight: "400px" }}
+            style={{ minHeight: "500px" }}
           >
-            <Image
-              className="d-block w-100"
-              src={`/assets/images/background/${image}`}
-              alt={`${image}-index`}
-              layout="fill"
-              objectFit="cover"
-            />
+            <div style={{ width: "100%", height: "100%" }}>
+              <Image
+                className="d-block w-100"
+                src={`/assets/images/background/${image}`}
+                alt={`${image}-index`}
+                width="100%"
+                height="100%"
+                layout="fill"
+                objectFit="cover"
+                unoptimized
+                // layout="fill"
+                // // objectFit="cover"
+                // sizes="100vw"
+              />
+            </div>
           </div>
 
           <Carousel.Caption className="d-flex align-item-center justify-content-center flex-column">

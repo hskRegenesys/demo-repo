@@ -13,17 +13,22 @@ import { Spinner } from "react-bootstrap";
 
 const carasoulProps = [
   {
-    image: "Sample-Banner-01.jpeg",
+    image: "data-science.jpg",
     label: "Title",
     caption: "Caption",
   },
   {
-    image: "Sample-Banner-02.jpeg",
+    image: "digitalMarketing.png",
     label: "Title",
     caption: "Caption",
   },
   {
-    image: "Sample-Blog-Card-Image.png",
+    image: "Baldrige-for-Project-Managers.jpg",
+    label: "Title",
+    caption: "Caption",
+  },
+  {
+    image: "1634114902599.jpg",
     label: "Title",
     caption: "Caption",
   },

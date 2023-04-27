@@ -67,6 +67,34 @@ const navItems = [
   },
 ];
 
+export const blogsNavItem = [
+  { id: 1, name: "Home", href: "/blogs" },
+
+  {
+    id: 4,
+    name: "Courses",
+    href: "/all-courses",
+    subNavItems: [
+      { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
+      { id: 6, name: "Data Science", href: "/data-science-main" },
+    ],
+  },
+  {
+    id: 1,
+    name: "Digital Regenesys",
+    href: "/",
+  },
+  {
+    id: 2,
+    name: "About",
+    href: "/about",
+  },
+  {
+    id: 8,
+    name: "Contact",
+    href: "/contact",
+  },
+];
 export const socials = [
   {
     id: 1,
@@ -106,6 +134,7 @@ const headerData = {
   logo9: "/assets/images/update-26-02-2021/logo-horizontal-portfolio.png",
   navItems,
   navItemsTwo,
+  blogsNavItem,
   address: "",
   phone: "",
   phone2: "",
