@@ -44,7 +44,7 @@ const BlogsBody = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid px-5">
         <div className="row">
           <div className="col-9">
             <Categories />

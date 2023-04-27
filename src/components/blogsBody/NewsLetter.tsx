@@ -23,41 +23,44 @@ const NewsLetter = () => {
           DIGITAL REGENYSYS
         </p>
         <form>
-          <div className="d-flex flex-wrap align-items-center justify-content-around">
-            <div className="form-group mt-3">
-              <input
-                className={`form-control `}
-                placeholder="Name*"
-                name="name"
-                type="text"
-                onChange={({ target: { name, value } }) =>
-                  onChange(name, value)
-                }
-              />
-            </div>
-            <div className="form-group mt-3 position-relative">
-              <PhoneInput
-                international
-                countryCallingCodeEditable={false}
-                defaultCountry="ZA"
-                placeholder="Select Country Code*"
-                onChange={(e) => {
-                  onChange("Phone", e as string);
-                }}
-              />
-            </div>
-            <div className="form-group mt-3">
-              <input
-                className={"form-control "}
-                placeholder="Email*"
-                name="email"
-                onChange={(e) => {
-                  onChange("phone", e.target.value as string);
-                }}
-              />
+          <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex flex-wrap align-items-center justify-content-evenly w-50">
+              <div className="form-group mt-3">
+                <input
+                  className={`form-control `}
+                  placeholder="Name*"
+                  name="name"
+                  type="text"
+                  onChange={({ target: { name, value } }) =>
+                    onChange(name, value)
+                  }
+                />
+              </div>
+              <div className="form-group mt-3 position-relative">
+                <PhoneInput
+                  international
+                  countryCallingCodeEditable={false}
+                  defaultCountry="ZA"
+                  placeholder="Select Country Code*"
+                  onChange={(e) => {
+                    onChange("Phone", e as string);
+                  }}
+                  className="blogs-apply-now form-control"
+                />
+              </div>
+              <div className="form-group mt-3">
+                <input
+                  className={"form-control "}
+                  placeholder="Email*"
+                  name="email"
+                  onChange={(e) => {
+                    onChange("phone", e.target.value as string);
+                  }}
+                />
+              </div>
             </div>
           </div>
-          <div className="form-group mt-3 w-100 text-center">
+          <div className=" d-flex form-group mt-3 w-100 text-center align-items-center justify-content-center">
             <Form.Check
               key={"test"}
               onChange={(e) => {}}
@@ -67,6 +70,7 @@ const NewsLetter = () => {
               }
               name={"check"}
               type="checkbox"
+              className="check-tick"
             />
           </div>
           <div className="form-group mt-3 w-100 text-center">

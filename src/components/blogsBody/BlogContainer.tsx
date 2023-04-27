@@ -133,7 +133,7 @@ const BlogContainer = ({ slug }: { slug: string }) => {
 
   return (
     <div style={{ paddingTop: "150px" }}>
-      <div className="container">
+      <div className="container-fluid px-5">
         <Link href={`/blogs/`} passHref>
           <p
             role="button"
@@ -161,6 +161,7 @@ const BlogContainer = ({ slug }: { slug: string }) => {
                     ))}
                   </div>
                   <div
+                    className="link-title"
                     dangerouslySetInnerHTML={{
                       __html: item?.content?.rendered,
                     }}
