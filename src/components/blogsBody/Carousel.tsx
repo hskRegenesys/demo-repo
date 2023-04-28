@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 interface IImage {
   image: string;
-  label: string;
+  label?: string;
   caption?: string;
 }
 interface ICarouselProps {
@@ -30,29 +30,23 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
         <Carousel.Item key={index}>
           <div
             className="w-100 position-relative"
-            style={{ minHeight: "500px" }}
+            style={{ minHeight: "60vh" }}
           >
-            <div style={{ width: "100%", height: "100%" }}>
-              <Image
-                className="d-block w-100"
-                src={`/assets/images/background/${image}`}
-                alt={`${image}-index`}
-                width="100%"
-                height="100%"
-                layout="fill"
-                objectFit="cover"
-                unoptimized
-                // layout="fill"
-                // // objectFit="cover"
-                // sizes="100vw"
-              />
-            </div>
+            <Image
+              src={`/assets/images/background/${image}`}
+              alt={`${image}-index`}
+              layout="fill"
+              objectFit="cover"
+              unoptimized
+            />
           </div>
 
           <Carousel.Caption className="d-flex align-item-center justify-content-center flex-column">
-            <div>
-              <h3 className="text-light carousal-text">{label}</h3>
-            </div>
+            {label && (
+              <div>
+                <h3 className="text-light carousal-text">{label}</h3>
+              </div>
+            )}
             {caption && <p className="text-light carousal-text">{caption}</p>}
           </Carousel.Caption>
         </Carousel.Item>

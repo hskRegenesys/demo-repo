@@ -6,7 +6,6 @@ import NewsLetter from "./NewsLetter";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
-import { wpService } from "src/services";
 
 const carasoulProps = [
   {
@@ -37,7 +36,9 @@ const BlogsBody = () => {
       <div className="row">
         <div className="col-md-12">
           <div className="carasoul-container my-5 position-relative">
-            <CarouselComponent carouselProps={carasoulProps} />
+            <div className="border border-dark">
+              <CarouselComponent carouselProps={carasoulProps} />
+            </div>
             <div className="apply-now-form-box position-absolute">
               <LandingForm />
             </div>

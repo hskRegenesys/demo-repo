@@ -76,16 +76,18 @@ const Blogs = () => {
                         {values?.posts?.map((item) => (
                           <div key={item.id} className="px-2">
                             <div className="blog-grid-column">
-                              <div>
+                              <div
+                                className="w-100 position-relative overflow-hidden"
+                                style={{ height: "150px" }}
+                              >
                                 {item?.yoast_head_json?.og_image?.map((img) => (
-                                  <div key={img.url}>
-                                    <img
-                                      src={img.url.toString()}
-                                      height={350}
-                                      width={300}
-                                      alt={item?.yoast_head_json?.og_title}
-                                    />
-                                  </div>
+                                  <Image
+                                    key={img.url}
+                                    src={img.url.toString()}
+                                    alt={item?.yoast_head_json?.og_title}
+                                    layout="fill"
+                                    objectFit="cover"
+                                  />
                                 ))}
                               </div>
                               <div className="px-3 blog-grid-content">
@@ -133,25 +135,18 @@ const Blogs = () => {
                         {values?.posts?.map((item) => (
                           <div key={item.id} className="px-2 col-4">
                             <div className="blog-grid-column">
-                              <div>
+                              <div
+                                className="w-100 position-relative overflow-hidden"
+                                style={{ height: "140px" }}
+                              >
                                 {item?.yoast_head_json?.og_image?.map((img) => (
-                                  <div
+                                  <Image
                                     key={img.url}
-                                    style={{
-                                      height: "120px",
-                                      width: "100%",
-                                      overflow: "hidden",
-                                      position: "relative",
-                                    }}
-                                  >
-                                    <Image
-                                      key={img.url}
-                                      src={img.url.toString()}
-                                      layout="fill"
-                                      objectFit="contain"
-                                      alt={item?.yoast_head_json?.og_title}
-                                    />
-                                  </div>
+                                    src={img.url.toString()}
+                                    alt={item?.yoast_head_json?.og_title}
+                                    layout="fill"
+                                    objectFit="cover"
+                                  />
                                 ))}
                               </div>
                               <div className="p-3">

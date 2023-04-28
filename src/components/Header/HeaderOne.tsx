@@ -36,8 +36,7 @@ const {
 } = headerData;
 
 const HeaderOne = ({
-  variant,
-  search,
+  variant = "",
   headerStyle = "header-style-one",
   logo = 1,
   onePage = false,
@@ -75,12 +74,12 @@ const HeaderOne = ({
       Logo = logo4;
     }
   }
-  const onSearch = (value: string) => search(value);
+
+  const onSearch = (value: string) => router.push(`blogs/search?q=${value}`);
 
   const allCourses = async () => {
     const allData = await courseService.allCourses();
     allData ? setIsLoading(false) : setIsLoading(true);
-    const orderData: any = [];
     const filterData = _.filter(
       allData,
 

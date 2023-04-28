@@ -9,24 +9,24 @@ import StickyBar from "@/components/StickyFooter/Sticky";
 import BlogsBody from "@/components/blogsBody";
 import { wpService } from "src/services";
 
-const [searchData, setSearchData] = useState([]);
-const search = (val: string) => {
-  console.log("val", val);
-  searchAPI(val);
-};
-const searchAPI = async (value: any) => {
-  const response = await wpService.allPosts({
-    search: value,
-  });
-  setSearchData(response);
-  console.log("respose", response);
-};
-
 const Blogs = () => {
+  const [searchData, setSearchData] = useState([]);
+  const search = (val: string) => {
+    console.log("val", val);
+    searchAPI(val);
+  };
+  const searchAPI = async (value: any) => {
+    const response = await wpService.allPosts({
+      search: value,
+    });
+    setSearchData(response);
+    console.log("response", response);
+  };
+
   return (
     <Layout pageTitle="Blogs">
       <Style />
-      <HeaderOne variant="blog" search={search} />
+      <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
       <BlogsBody />
