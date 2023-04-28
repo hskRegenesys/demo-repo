@@ -52,7 +52,7 @@ class CourseService {
       return result;
     }
   }
-    async downloadBrochure(params: string) {
+  async downloadBrochure(params: string) {
     let result: any = "";
     try {
       const response = await this.appAPIServer.get(

@@ -13,12 +13,11 @@ import SkillDetailSection from "@/components/SkillDetailSection/SkillDetailSecti
 import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
 import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
 import ToolsCovered from "@/components/ToolsCovered/ToolsCovered";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
 import JoinReasons from "@/components/JoinReasons/JoinReasons";
 import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
 import { useRouter } from "next/router";
-import { courseService } from "src/services";
 import { brochureDetails, courseData } from "@/data/course";
 import _ from "lodash";
 import { urlInfo } from "@/components/config/helper";
@@ -28,25 +27,23 @@ import { Constants } from "src/schemas/data";
 
 import StickyBar from "@/components/StickyFooter/Sticky";
 import PageBanner from "@/components/BannerSection/PageBanner";
+import { allCourseList } from "@/data/courseData";
 
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
 
-  const courseId = router?.query?.id;
+  const courseId: any = router?.query?.id;
+  
+  const coursePriceDetails = _.filter(
+    allCourseList,
+    (item) => item.id === parseInt(courseId)
+  );
+  const parentCourse = _.filter(
+    allCourseList,
+    (item) => item.parent_id === null
+  );
 
-  const [coursePriceDetails, setcoursePrice] = useState<any>([]);
-  const [parentCourse, setParentCourse] = useState<any>([]);
-  const getData = async () => {
-    let courseListResponse = await courseService.allcoursePrice(courseId);
-    const parentCourses = await courseService.allParentCourses();
-    setParentCourse(parentCourses);
-    setcoursePrice(courseListResponse);
-  };
-  useEffect(() => {
-    if (courseId) {
-      getData();
-    }
-  }, [courseId]);
+
   const allContent: any = courseData;
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
@@ -70,14 +67,10 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
-  console.log("props.course", props.course);
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      {/* {router.pathname.includes("all-courses") && (
-        <StickyData stickyText={courseDetails?.stickyText} />
-      )} */}
       <HeaderOne pageTitle={props.course} />
       <MobileMenu />
       <SearchPopup />
@@ -116,8 +109,6 @@ const DigitalMarketing = (props: any) => {
 
 export async function getServerSideProps(context: any) {
   const { id, course } = context.query;
-  console.log("context1", context.req.headers);
-
   return { props: { course } };
 }
 export default DigitalMarketing;

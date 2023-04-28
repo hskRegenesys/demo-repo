@@ -238,6 +238,10 @@ const createReWrites = () => {
       source: "/all-courses/digital-marketing/applied-digital-marketing",
       destination: "/all-courses/applied-digital-marketing/27",
     },
+    {
+      source: "/all-courses/digital-marketing/basic-digital-marketing-course",
+      destination: "/all-courses/basic-digital-marketing-course/101",
+    },
   ];
   return paths;
 };
