@@ -1,4 +1,5 @@
 export interface IPostListTypes {
+  slug?: string;
   category: string | number;
   posts: Array<{
     id: number;

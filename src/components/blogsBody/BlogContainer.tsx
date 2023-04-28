@@ -132,67 +132,82 @@ const BlogContainer = ({ slug }: { slug: string }) => {
   }, [slug]);
 
   return (
-    <div style={{ paddingTop: "150px" }}>
-      <div className="container-fluid px-5">
-        <Link href={`/blogs/`} passHref>
-          <p
-            role="button"
-            className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
-          >
-            <LeftOutlined className="pe-2" />
-            Back to list
-          </p>
-        </Link>
-        <div className="row py-3">
-          <div className="col-8">
-            {postResponse?.length > 0 ? (
-              postResponse?.map((item) => (
-                <div key={item.id}>
-                  <h4>{item?.title?.rendered}</h4>
-                  <div className="w-100 position-relative">
-                    {item?.yoast_head_json?.og_image?.map((img) => (
-                      <Image
-                        key={img.url}
-                        src={img.url.toString()}
-                        width={img.width}
-                        height={img.height}
-                        alt={item?.yoast_head_json?.og_title}
-                      />
-                    ))}
+    <div style={{ paddingTop: "100px" }}>
+      <div className="container-fluid p-4  w-100 position-relative ">
+        <div className="w-100 position-absolute " style={{ height: "500px" }}>
+          <Image
+            src="/assets/images/background/1634114902599.jpg"
+            layout="fill"
+            objectFit="cover"
+            alt={"header"}
+          />
+        </div>
+        <div className="position-absolute" style={{ right: "10px" }}>
+          <ApplyNow yellowBtn isBlack />
+        </div>
+      </div>
+      <div style={{ paddingTop: "500px" }}>
+        <div className="container-fluid px-5">
+          <Link href={`/blogs/`} passHref>
+            <p
+              role="button"
+              className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
+            >
+              <LeftOutlined className="pe-2" />
+              Back to list
+            </p>
+          </Link>
+          <div className="row py-3">
+            <div className="col-8">
+              {postResponse?.length > 0 ? (
+                postResponse?.map((item) => (
+                  <div key={item.id}>
+                    <h4>{item?.title?.rendered}</h4>
+                    <div className="w-100 position-relative">
+                      {item?.yoast_head_json?.og_image?.map((img) => (
+                        <Image
+                          key={img.url}
+                          src={img.url.toString()}
+                          width={img.width}
+                          height={img.height}
+                          alt={item?.yoast_head_json?.og_title}
+                        />
+                      ))}
+                    </div>
+                    <div
+                      className="link-title"
+                      dangerouslySetInnerHTML={{
+                        __html: item?.content?.rendered,
+                      }}
+                    />
                   </div>
-                  <div
-                    className="link-title"
-                    dangerouslySetInnerHTML={{
-                      __html: item?.content?.rendered,
-                    }}
-                  />
-                </div>
-              ))
-            ) : (
-              <p>Loading</p>
-            )}
-          </div>
-          <div className="col-4">
-            <ApplyNow yellowBtn />
-            <br />
-            <RecomendPosts
-              posts={recommentPosts}
-              handleExpand={() => undefined}
-            />
-            <br />
-            <div style={{ marginLeft: 90 }}>
-              <ImageWithBtnBox
-                button={"center"}
-                imgHeight={700}
-                imgWidth={400}
+                ))
+              ) : (
+                <p>Loading</p>
+              )}
+            </div>
+            <div className="col-4">
+              <ApplyNow yellowBtn />
+              <br />
+              <RecomendPosts
+                posts={recommentPosts}
+                handleExpand={() => undefined}
               />
+              <br />
+              <div style={{ marginLeft: 90 }}>
+                <ImageWithBtnBox
+                  button={"center"}
+                  imgHeight={700}
+                  imgWidth={400}
+                />
+              </div>
             </div>
           </div>
+          <div className="feedback-form">
+            <FeedBackForm />
+          </div>
+          <NewsLetter />
         </div>
-        <div className="feedback-form">
-          <FeedBackForm />
-        </div>
-        <NewsLetter />
       </div>
     </div>
   );

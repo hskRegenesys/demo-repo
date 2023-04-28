@@ -31,6 +31,7 @@ const Blogs = () => {
     const apiResponse = await Promise.all(
       response?.map(async (category) => ({
         category: category.name,
+        slug: category.slug.toString(),
         posts: await wpService.allPosts({
           per_page: 12,
           categories: category.id,
@@ -45,7 +46,7 @@ const Blogs = () => {
 
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
-      <Spinner />
+      <Spinner animation={"border"} />
     </div>
   ) : (
     <div className="py-5">
@@ -54,7 +55,23 @@ const Blogs = () => {
           postList?.map((values) => {
             return values?.posts?.length > 0 ? (
               <div key={values?.category} className="py-3">
-                <h6>{values?.category}</h6>
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <h6>{values?.category}</h6>
+                  <div>
+                    <Link href={`/blogs/category/${values?.slug}`} passHref>
+                      <a>
+                        <b
+                          role="button"
+                          className="btn px-1 py-0 text-dark-green m-0"
+                        >
+                          View more
+                        </b>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
 
                 {values?.posts?.length > 3 ? (
                   <div className="d-flex justify-content-space-between align-items-center">

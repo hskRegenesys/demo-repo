@@ -90,7 +90,7 @@ const SearchBlog = ({ query }: { query: string }) => {
               postList?.map((values) => {
                 return isLoading ? (
                   <div className="d-flex justify-content-center align-items-center h-25">
-                    <Spinner />
+                    <Spinner animation={"border"} />
                   </div>
                 ) : values?.posts?.length > 0 ? (
                   <div key={values?.category} className="py-3">

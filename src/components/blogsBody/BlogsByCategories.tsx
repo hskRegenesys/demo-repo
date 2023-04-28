@@ -36,7 +36,7 @@ const carasoulProps = [
 
 const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
-
+  const [category, setCategory] = useState<string | number>("");
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ slug: categorySlug });
@@ -55,13 +55,18 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
     }>
   ) => {
     const apiResponse = await Promise.all(
-      response?.map(async (category) => ({
-        category: category.name,
-        posts: await wpService.allPosts({
-          per_page: 12,
-          categories: category.id,
-        }),
-      }))
+      response?.map(
+        async (category) => (
+          setCategory(category.name),
+          {
+            category: category.name,
+            posts: await wpService.allPosts({
+              per_page: 12,
+              categories: category.id,
+            }),
+          }
+        )
+      )
     );
     if (apiResponse.length > 0) {
       setIsLoading(false);
@@ -71,12 +76,47 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
 
   return (
     <div style={{ paddingTop: "150px" }}>
-      <div className="row">
-        <div className="col-md-12">
-          <div className="carasoul-container my-5 position-relative">
-            <CarouselComponent carouselProps={carasoulProps} />
-            <div className="apply-now-form-box position-absolute">
-              <LandingForm />
+      <div
+        className="row"
+        style={{
+          backgroundColor: "#eef5ed",
+          marginBottom: "80px",
+          height: "200px",
+        }}
+      >
+        <div>
+          <div className="col-md-12">
+            <div className="carasoul-container my-5 position-relative">
+              {/* <CarouselComponent carouselProps={carasoulProps} /> */}
+              <div style={{ justifyContent: " center", display: "grid" }}>
+                <div>
+                  <p
+                    style={{
+                      color: "black",
+                      fontSize: "25px",
+                      justifyContent: " center",
+                      display: "flex",
+                    }}
+                  >
+                    Category
+                  </p>{" "}
+                </div>
+                <div>
+                  <p
+                    style={{
+                      color: "black",
+                      fontSize: "40px",
+                      justifyContent: " center",
+                      display: "flex",
+                    }}
+                  >
+                    {category}
+                  </p>
+                </div>
+              </div>
+              <div className="apply-now-form-box position-absolute">
+                <LandingForm />
+              </div>
             </div>
           </div>
         </div>
@@ -97,7 +137,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
               postList?.map((values) => {
                 return isLoading ? (
                   <div className="d-flex justify-content-center align-items-center h-25">
-                    <Spinner />
+                    <Spinner animation={"border"} />
                   </div>
                 ) : values?.posts?.length > 0 ? (
                   <div key={values?.category} className="py-3">

@@ -20532,7 +20532,12 @@ h2.highlight {
   overflow: hidden;
 }
 .bg-light-green {
+
   background-color: #eef5ed;
+}
+.bg-light-black {
+  background: rgba(0, 0, 0, 0.5);
+
 }
 .bg-dark-green {
   background-color: #88c2a5;
@@ -20540,6 +20545,7 @@ h2.highlight {
 .text-dark-green {
   color: #289665;
 }
+
 .btn-hover:hover {
   text-decoration: underline;
 }
