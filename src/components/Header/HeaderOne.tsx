@@ -56,6 +56,7 @@ const HeaderOne = ({
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : nav;
+
   let Logo: any =
     logo === 2
       ? logo2
@@ -121,6 +122,30 @@ const HeaderOne = ({
       }
     });
 
+    const data2 = blogsNavItem?.map((item: any) => {
+      if (item.id === 4 && item.name === "Courses") {
+        item.subNavItems = coursesSubItem;
+        item.subNavItems?.map((data: any) => {
+          const filterData = _.filter(
+            allData,
+            (item) => item?.parent_id === data?.id
+          ).map((subCourse) => {
+            return {
+              id: subCourse?.id,
+              name: subCourse?.name,
+              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
+                subCourse?.name
+              )}`,
+            };
+          });
+          if (filterData) {
+            data.subItems = filterData;
+          }
+        });
+      }
+
+      return item;
+    });
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
@@ -145,8 +170,7 @@ const HeaderOne = ({
 
       return item;
     });
-
-    setNav(data);
+    variant === "blog" ? setNav(data2) : setNav(data);
   };
   useEffect(() => {
     allCourses();
