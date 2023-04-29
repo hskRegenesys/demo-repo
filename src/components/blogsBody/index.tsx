@@ -6,24 +6,7 @@ import NewsLetter from "./NewsLetter";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
-
-const carasoulProps = [
-  {
-    image: "Sample-Banner-01.jpeg",
-    label: "Title",
-    caption: "Caption",
-  },
-  {
-    image: "Sample-Banner-02.jpeg",
-    label: "Title",
-    caption: "Caption",
-  },
-  {
-    image: "Sample-Blog-Card-Image.png",
-    label: "Title",
-    caption: "Caption",
-  },
-];
+import { carousalProps } from "./dataTypes";
 
 const BlogsBody = () => {
   return (
@@ -31,14 +14,16 @@ const BlogsBody = () => {
       <div className="row">
         <div className="col-md-12">
           <div className="carasoul-container my-5 position-relative">
-            <CarouselComponent carouselProps={carasoulProps} />
+            <div className="border border-dark">
+              <CarouselComponent carouselProps={carousalProps} />
+            </div>
             <div className="apply-now-form-box position-absolute">
               <LandingForm />
             </div>
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid px-5">
         <div className="row">
           <div className="col-9">
             <Categories />

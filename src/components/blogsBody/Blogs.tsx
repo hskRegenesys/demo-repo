@@ -1,15 +1,17 @@
 import { Carousel } from "antd";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { RefObject, useEffect, useRef, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
 import { getRandom } from "src/utils/common";
 import { Spinner } from "react-bootstrap";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 const Blogs = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
+
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ per_page: 40 });
     if (response?.length > 0) {
@@ -31,6 +33,7 @@ const Blogs = () => {
     const apiResponse = await Promise.all(
       response?.map(async (category) => ({
         category: category.name,
+        slug: category.slug.toString(),
         posts: await wpService.allPosts({
           per_page: 12,
           categories: category.id,
@@ -45,7 +48,7 @@ const Blogs = () => {
 
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
-      <Spinner />
+      <Spinner animation={"border"} />
     </div>
   ) : (
     <div className="py-5">
@@ -54,14 +57,29 @@ const Blogs = () => {
           postList?.map((values) => {
             return values?.posts?.length > 0 ? (
               <div key={values?.category} className="py-3">
-                <h6>{values?.category}</h6>
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <h6>
+                    <b>{values?.category}</b>
+                  </h6>
+                  <div>
+                    <Link href={`/blogs/category/${values?.slug}`} passHref>
+                      <a>
+                        <b
+                          role="button"
+                          className="btn px-1 py-0 text-dark-green m-0"
+                        >
+                          View more
+                        </b>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
 
                 {values?.posts?.length > 3 ? (
-                  <div className="d-flex justify-content-space-between align-items-center">
-                    <div>
-                      <button className="btn">Prev</button>
-                    </div>
-                    <div style={{ width: "90%" }}>
+                  <div className="d-flex justify-content-end align-items-center">
+                    <div style={{ width: "95%" }}>
                       <Carousel
                         lazyLoad="ondemand"
                         autoplay
@@ -72,18 +90,24 @@ const Blogs = () => {
                         slidesToShow={3}
                         slidesToScroll={1}
                         swipeToSlide
+                        className="horizontal-slider"
+                        nextArrow={<ChevronRight fontSize="large" />}
+                        prevArrow={<ChevronLeft fontSize="large" />}
                       >
                         {values?.posts?.map((item) => (
                           <div key={item.id} className="px-2">
                             <div className="blog-grid-column">
-                              <div>
+                              <div
+                                className="w-100 rounded position-relative overflow-hidden"
+                                style={{ height: "150px" }}
+                              >
                                 {item?.yoast_head_json?.og_image?.map((img) => (
                                   <Image
                                     key={img.url}
                                     src={img.url.toString()}
-                                    width={img.width}
-                                    height={img.height}
                                     alt={item?.yoast_head_json?.og_title}
+                                    layout="fill"
+                                    objectFit="cover"
                                   />
                                 ))}
                               </div>
@@ -121,9 +145,6 @@ const Blogs = () => {
                         ))}
                       </Carousel>
                     </div>
-                    <div>
-                      <button className="btn">Next</button>
-                    </div>
                   </div>
                 ) : (
                   <div className="d-flex justify-content-center ">
@@ -132,14 +153,17 @@ const Blogs = () => {
                         {values?.posts?.map((item) => (
                           <div key={item.id} className="px-2 col-4">
                             <div className="blog-grid-column">
-                              <div>
+                              <div
+                                className="w-100 position-relative overflow-hidden"
+                                style={{ height: "140px" }}
+                              >
                                 {item?.yoast_head_json?.og_image?.map((img) => (
                                   <Image
                                     key={img.url}
                                     src={img.url.toString()}
-                                    width={img.width}
-                                    height={img.height}
                                     alt={item?.yoast_head_json?.og_title}
+                                    layout="fill"
+                                    objectFit="cover"
                                   />
                                 ))}
                               </div>

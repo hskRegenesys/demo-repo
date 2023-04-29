@@ -15,7 +15,7 @@ const PostsByCategory = () => {
   return (
     <Layout pageTitle="Blogs">
       <Style />
-      <HeaderOne />
+      <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
       {slug && <BlogsByCategories categorySlug={slug.toString()} />}

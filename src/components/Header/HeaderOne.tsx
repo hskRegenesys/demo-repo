@@ -18,7 +18,9 @@ import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
 import StickyData from "../StickyHeaderForm/StickyData";
+import { Input, Space } from "antd";
 
+const { Search } = Input;
 const {
   title,
   logo1,
@@ -29,10 +31,12 @@ const {
   logo9,
   title2,
   navItems,
+  blogsNavItem,
   navItemsTwo,
 } = headerData;
 
 const HeaderOne = ({
+  variant = "",
   headerStyle = "header-style-one",
   logo = 1,
   onePage = false,
@@ -52,6 +56,7 @@ const HeaderOne = ({
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : nav;
+
   let Logo: any =
     logo === 2
       ? logo2
@@ -70,10 +75,12 @@ const HeaderOne = ({
       Logo = logo4;
     }
   }
+
+  const onSearch = (value: string) => router.push(`/blogs/search?q=${value}`);
+
   const allCourses = async () => {
     const allData = await courseService.allCourses();
     allData ? setIsLoading(false) : setIsLoading(true);
-    const orderData: any = [];
     const filterData = _.filter(
       allData,
 
@@ -115,6 +122,30 @@ const HeaderOne = ({
       }
     });
 
+    const data2 = blogsNavItem?.map((item: any) => {
+      if (item.id === 4 && item.name === "Courses") {
+        item.subNavItems = coursesSubItem;
+        item.subNavItems?.map((data: any) => {
+          const filterData = _.filter(
+            allData,
+            (item) => item?.parent_id === data?.id
+          ).map((subCourse) => {
+            return {
+              id: subCourse?.id,
+              name: subCourse?.name,
+              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
+                subCourse?.name
+              )}`,
+            };
+          });
+          if (filterData) {
+            data.subItems = filterData;
+          }
+        });
+      }
+
+      return item;
+    });
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
@@ -139,8 +170,7 @@ const HeaderOne = ({
 
       return item;
     });
-
-    setNav(data);
+    variant === "blog" ? setNav(data2) : setNav(data);
   };
   useEffect(() => {
     allCourses();
@@ -210,30 +240,52 @@ const HeaderOne = ({
                 id={autoContainer ? "" : "navbarSupportedContent"}
               >
                 <ul className="navigation clearfix">
-                  {newNavItems?.map((navItem: any) => (
-                    <NavItem
-                      navItem={navItem}
-                      key={navItem.id}
-                      onePage={onePage}
-                      isLoading={isLoading}
-                    />
-                  ))}
+                  {variant === "blog"
+                    ? blogsNavItem?.map((navItem: any) => (
+                        <NavItem
+                          navItem={navItem}
+                          key={navItem.id}
+                          onePage={onePage}
+                          isLoading={isLoading}
+                        />
+                      ))
+                    : newNavItems?.map((navItem: any) => (
+                        <NavItem
+                          navItem={navItem}
+                          key={navItem.id}
+                          onePage={onePage}
+                          isLoading={isLoading}
+                        />
+                      ))}
                 </ul>
               </div>
             </nav>
           </div>
-
-          {links && (
+          {variant === "blog" ? (
             <div className="other-links clearfix">
               <div className="link-box">
-                <Link href="https://mydigital.regenesys.net/login/index.php">
-                  <a className="theme-btn btn-style-two">
-                    <i className="btn-curve"></i>
-                    <span className="btn-title">Login</span>
-                  </a>
-                </Link>
+                <Space direction="vertical">
+                  <Search
+                    placeholder="Search Topics"
+                    onSearch={onSearch}
+                    style={{ width: 200 }}
+                  />
+                </Space>
               </div>
             </div>
+          ) : (
+            links && (
+              <div className="other-links clearfix">
+                <div className="link-box">
+                  <Link href="https://mydigital.regenesys.net/login/index.php">
+                    <a className="theme-btn btn-style-two">
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Login</span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            )
           )}
           {rightMenu && (
             <div className="right-menu">

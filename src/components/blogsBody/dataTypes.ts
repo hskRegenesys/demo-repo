@@ -1,4 +1,5 @@
 export interface IPostListTypes {
+  slug?: string;
   category: string | number;
   posts: Array<{
     id: number;
@@ -22,3 +23,18 @@ export interface IPostTypes {
   title: { rendered: string };
   content: { rendered: string };
 }
+
+export const carousalProps = [
+  {
+    image: "digital-marketing.jpeg",
+  },
+  {
+    image: "data-science.jpeg",
+  },
+  {
+    image: "Project-Management-Banner.png",
+  },
+  {
+    image: "cyber-security.jpg",
+  },
+];

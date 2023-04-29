@@ -6,7 +6,7 @@ const About = () => {
   const handleReadMore = () => router.push("/about");
 
   return (
-    <div className="rounded bg-light-green p-3 rounded m-3">
+    <div className="rounded bg-light-green p-3 rounded">
       <div className="py-3 px-1 text-center bg-dark-green rounded">
         <p className="h6 p-0 m-0">About Digital Regenesys</p>
       </div>

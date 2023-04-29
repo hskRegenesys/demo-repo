@@ -1,126 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { LeftOutlined } from "@ant-design/icons";
 import Image from "next/image";
-import ApplyNow from "./ApplyNow";
-import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
 import { wpService } from "src/services";
 import { IPostTypes } from "./dataTypes";
 import Link from "next/link";
-interface IRecommendPost {
-  image: string;
-  title: string;
-  date: string;
-}
+import RightSidePanel from "./RightSidePanel";
+import ApplyNow from "./ApplyNow";
 
-const recommentPosts: IRecommendPost[] = [
-  { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
-  { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
-  { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
-  { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
-  { image: "", title: "blog 1", date: new Date().toLocaleDateString() },
+const bannerImages = [
+  "Project-Management-Banner.png",
+  "digital-marketing.jpeg",
+  "data-science.jpeg",
+  "cyber-security.jpg",
 ];
-
-const ImageWithBtnBox = ({
-  handleClickApplyClick,
-  button,
-  imgHeight = 400,
-  imgWidth = 1100,
-}: any) => {
-  return (
-    <>
-      <div className="img-content position-relative w-100 mt-2 ">
-        <Image
-          src={"/assets/images/background/full-video-bg.webp"}
-          alt="test"
-          width={imgWidth}
-          height={imgHeight}
-        />
-        {!button && (
-          <div
-            onClick={ImageWithBtnBox}
-            className="applyNow-btn position-absolute"
-            style={{ bottom: "35px", left: "40%" }}
-          >
-            <button
-              style={{ background: "#ffde59", color: "black" }}
-              onClick={handleClickApplyClick}
-              className="theme-btn btn-style-two mt-5"
-              type="submit"
-            >
-              <i className="btn-curve"></i>
-              <span className="btn-title">Apply</span>
-            </button>
-          </div>
-        )}
-        {button === "center" && (
-          <div
-            onClick={ImageWithBtnBox}
-            className="applyNow-btn position-absolute"
-            style={{ bottom: "35px", left: "30%" }}
-          >
-            <button
-              style={{ background: "#ffde59", color: "black" }}
-              onClick={handleClickApplyClick}
-              className="theme-btn btn-style-two mt-5 yellow-btn"
-              type="submit"
-            >
-              <i className="btn-curve"></i>
-              <span className="btn-title">Apply</span>
-            </button>
-          </div>
-        )}
-      </div>
-    </>
-  );
-};
-
-const RecomendPosts = ({
-  posts,
-  handleExpand,
-}: {
-  posts: IRecommendPost[];
-  handleExpand: () => void;
-}) => {
-  return (
-    <>
-      <div className="text-center bg-light p-3 rounded m-3">
-        <h6>Recommended Posts</h6>
-        {posts?.map(({ image, title, date }, index) => (
-          <div className="row" key={index}>
-            <div className="col-6">
-              <Image
-                src={"/assets/images/background/full-video-bg.webp"}
-                alt="test"
-                width={100}
-                height={60}
-              />
-            </div>
-            <div className="col-6">
-              <p className="fw-bold mb-0">{title}</p>
-              <p className="fw-bold">
-                Date: <span className="fw-regualr">{date}</span>
-              </p>
-            </div>
-          </div>
-        ))}
-        {posts.length > 7 && (
-          <div>
-            <ExpandCircleDownOutlinedIcon
-              style={{ width: "40px", height: "40px", cursor: "pointer" }}
-              color="success"
-              onClick={handleExpand}
-            />
-          </div>
-        )}
-      </div>
-    </>
-  );
-};
 
 const BlogContainer = ({ slug }: { slug: string }) => {
   const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
+  const randomIndex = Math.floor(Math.random() * bannerImages.length);
 
   const getPost = async () => {
     const response = await wpService.allPosts({ slug: slug });
@@ -132,67 +30,61 @@ const BlogContainer = ({ slug }: { slug: string }) => {
   }, [slug]);
 
   return (
-    <div style={{ paddingTop: "150px" }}>
-      <div className="container">
-        <Link href={`/blogs/`} passHref>
-          <p
-            role="button"
-            className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
+    <div style={{ paddingTop: "100px" }}>
+      <div className="">
+        <div
+          className="w-100 d-grid"
+          style={{
+            height: "500px",
+            background: `url(/assets/images/background/${bannerImages[randomIndex]})`,
+            backgroundSize: "cover",
+          }}
+        >
+          <div
+            className="align-self-center pe-5 col-3 ps-5"
+            style={{ justifySelf: "end" }}
           >
-            <LeftOutlined className="pe-2" />
-            Back to list
-          </p>
-        </Link>
-        <div className="row py-3">
-          <div className="col-8">
-            {postResponse?.length > 0 ? (
-              postResponse?.map((item) => (
-                <div key={item.id}>
-                  <h4>{item?.title?.rendered}</h4>
-                  <div className="w-100 position-relative">
-                    {item?.yoast_head_json?.og_image?.map((img) => (
-                      <Image
-                        key={img.url}
-                        src={img.url.toString()}
-                        width={img.width}
-                        height={img.height}
-                        alt={item?.yoast_head_json?.og_title}
-                      />
-                    ))}
-                  </div>
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: item?.content?.rendered,
-                    }}
-                  />
-                </div>
-              ))
-            ) : (
-              <p>Loading</p>
-            )}
+            <ApplyNow yellowBtn isBlack />
           </div>
-          <div className="col-4">
-            <ApplyNow yellowBtn />
-            <br />
-            <RecomendPosts
-              posts={recommentPosts}
-              handleExpand={() => undefined}
-            />
-            <br />
-            <div style={{ marginLeft: 90 }}>
-              <ImageWithBtnBox
-                button={"center"}
-                imgHeight={700}
-                imgWidth={400}
-              />
+        </div>
+      </div>
+      <div className="py-5">
+        <div className="container-fluid px-5">
+          <Link href={`/blogs/`} passHref>
+            <p
+              role="button"
+              className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
+            >
+              <LeftOutlined className="pe-2" />
+              Back to list
+            </p>
+          </Link>
+          <div className="row py-3">
+            <div className="col-9">
+              {postResponse?.length > 0 ? (
+                postResponse?.map((item) => (
+                  <div key={item.id}>
+                    <h4>{item?.title?.rendered}</h4>
+                    <div
+                      className="link-title"
+                      dangerouslySetInnerHTML={{
+                        __html: item?.content?.rendered,
+                      }}
+                    />
+                    <FeedBackForm />
+                  </div>
+                ))
+              ) : (
+                <p>Loading</p>
+              )}
+            </div>
+            <div className="col-3">
+              <RightSidePanel isRecommendedPost yellowBtn />
             </div>
           </div>
         </div>
-        <div className="feedback-form">
-          <FeedBackForm />
-        </div>
-        <NewsLetter />
       </div>
+      <NewsLetter />
     </div>
   );
 };

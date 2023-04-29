@@ -93,6 +93,31 @@ a {
   color: var(--thm-base);
 }
 
+.link-title h2 {
+  font-size: 40px;
+}
+
+.link-title p a {
+  color: #000;
+}
+
+.link-title h2 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+}
+.link-title h3 {
+  font-size: 40px;
+}
+
+.link-title h3 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+}
+
 .theme_color {
   color: var(--thm-base);
 }
@@ -18624,6 +18649,12 @@ h6.designation {
   width: 18px;
 }
 
+.check-tick input {
+  height: 25px;
+  width: 30px;
+  margin-right: 5px;
+}
+
 .all-course-filter .form-check-input:checked {
   background-color: #000000 !important;
 }
@@ -20161,6 +20192,12 @@ h2.highlight {
   color: #000;
   border: 1px solid #000;
 }
+
+.category-btn {
+  background-color: #289665 !important;
+  color: #ffffff !important;
+}
+
 .sticky-form-header .inline-button .btn-style-two span {
   font-size: 18px;
 }
@@ -20507,12 +20544,62 @@ h2.highlight {
 .bg-light-green {
   background-color: #eef5ed;
 }
+.bg-light-black {
+  background: rgba(0, 0, 0, 0.5);
+}
 .bg-dark-green {
   background-color: #88c2a5;
 }
 .text-dark-green {
   color: #289665;
 }
+
 .btn-hover:hover {
   text-decoration: underline;
+}
+
+.horizontal-slider .slick-prev,
+.horizontal-slider .slick-next {
+  color: #289665;
+  font-size: unset;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #289665;
+  border-radius: 100%;
+}
+.horizontal-slider .slick-prev {
+  margin-left: -30px;
+}
+.horizontal-slider .slick-next {
+  margin-right: -30px;
+}
+
+.horizontal-slider .slick-prev:hover,
+.horizontal-slider .slick-next:hover,
+.horizontal-slider .slick-prev:focus,
+.horizontal-slider .slick-next:focus {
+  color: unset;
+}
+
+
+.vertical-slider .slick-next {
+  color: #289665;
+  font-size: unset;
+  width: 40px;
+  height: 40px;
+  transform: rotate(90deg);
+}
+
+.vertical-slider .slick-next:hover,
+.vertical-slider .slick-next:focus {
+  color: unset;
+}
+.vertical-slider {
+  position: unset !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.vertical-slider .slick-next {
+  position: unset;
 }

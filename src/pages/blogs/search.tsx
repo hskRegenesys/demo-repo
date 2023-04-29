@@ -6,11 +6,11 @@ import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import StickyBar from "@/components/StickyFooter/Sticky";
-import BlogContainer from "@/components/blogsBody/BlogContainer";
+import SearchBlog from "@/components/blogsBody/SearchBlog";
 
-const Post = () => {
+const Search = () => {
   const router = useRouter();
-  const { slug } = router.query;
+  const { q } = router.query;
 
   return (
     <Layout pageTitle="Blogs">
@@ -18,11 +18,11 @@ const Post = () => {
       <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
-      {slug && <BlogContainer slug={slug.toString()} />}
+      {q && <SearchBlog query={q.toString()} />}
       <MainFooter />
       <StickyBar />
     </Layout>
   );
 };
 
-export default Post;
+export default Search;

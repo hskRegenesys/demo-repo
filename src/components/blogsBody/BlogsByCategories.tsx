@@ -11,27 +11,9 @@ import { LeftOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
 
-const carasoulProps = [
-  {
-    image: "Sample-Banner-01.jpeg",
-    label: "Title",
-    caption: "Caption",
-  },
-  {
-    image: "Sample-Banner-02.jpeg",
-    label: "Title",
-    caption: "Caption",
-  },
-  {
-    image: "Sample-Blog-Card-Image.png",
-    label: "Title",
-    caption: "Caption",
-  },
-];
-
 const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
-
+  const [category, setCategory] = useState<string | number>("");
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ slug: categorySlug });
@@ -50,13 +32,18 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
     }>
   ) => {
     const apiResponse = await Promise.all(
-      response?.map(async (category) => ({
-        category: category.name,
-        posts: await wpService.allPosts({
-          per_page: 12,
-          categories: category.id,
-        }),
-      }))
+      response?.map(
+        async (category) => (
+          setCategory(category.name),
+          {
+            category: category.name,
+            posts: await wpService.allPosts({
+              per_page: 12,
+              categories: category.id,
+            }),
+          }
+        )
+      )
     );
     if (apiResponse.length > 0) {
       setIsLoading(false);
@@ -66,17 +53,17 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
 
   return (
     <div style={{ paddingTop: "150px" }}>
-      <div className="row">
-        <div className="col-md-12">
-          <div className="carasoul-container my-5 position-relative">
-            <CarouselComponent carouselProps={carasoulProps} />
-            <div className="apply-now-form-box position-absolute">
-              <LandingForm />
-            </div>
+      <div className="d-flex justify-content-center text-center py-5 bg-light-green">
+        <div>
+          <div>
+            <p className="h5 p-0">Category</p>
+          </div>
+          <div>
+            <p className="h3 p-0">{category}</p>
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid p-5">
         <Link href={`/blogs/`} passHref>
           <p
             role="button"
@@ -92,7 +79,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
               postList?.map((values) => {
                 return isLoading ? (
                   <div className="d-flex justify-content-center align-items-center h-25">
-                    <Spinner />
+                    <Spinner animation={"border"} />
                   </div>
                 ) : values?.posts?.length > 0 ? (
                   <div key={values?.category} className="py-3">
