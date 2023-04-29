@@ -2,79 +2,43 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
-import { IPostListTypes } from "./dataTypes";
-import CarouselComponent from "./Carousel";
-import LandingForm from "../commonForm/AllForms";
+import { IPostTypes } from "./dataTypes";
 import TrendingSection from "../TrendingSection/TrendingSection";
 import NewsLetter from "./NewsLetter";
 import { LeftOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
 
-const carasoulProps = [
-  {
-    image: "data-science.jpg",
-    label: "",
-  },
-  {
-    image: "digitalMarketing.png",
-  },
-  {
-    image: "Baldrige-for-Project-Managers.jpg",
-  },
-  {
-    image: "1634114902599.jpg",
-  },
-];
-
 const SearchBlog = ({ query }: { query: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [postList, setPostList] = useState<Array<IPostTypes>>([]);
 
-  const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
-  const getCategoryList = async () => {
-    const response = await wpService.allCategories({ slug: query });
-    if (response?.length > 0) {
-      postByCategory(response);
+  const getPostList = async () => {
+    const response = await wpService.allPosts({ search: query, per_page: 30 });
+    if (response) {
+      setIsLoading(false);
+      setPostList(response);
     }
   };
   useEffect(() => {
-    getCategoryList();
+    getPostList();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const postByCategory = async (
-    response: Array<{
-      [key: string]: number | string;
-    }>
-  ) => {
-    const apiResponse = await Promise.all(
-      response?.map(async (category) => ({
-        category: category.name,
-        posts: await wpService.allPosts({
-          per_page: 12,
-          categories: category.id,
-        }),
-      }))
-    );
-    if (apiResponse.length > 0) {
-      setIsLoading(false);
-      setPostList(apiResponse);
-    }
-  };
+  }, [query]);
 
   return (
     <div style={{ paddingTop: "150px" }}>
-      <div className="row">
-        <div className="col-md-12">
-          <div className="carasoul-container my-5 position-relative">
-            <CarouselComponent carouselProps={carasoulProps} />
-            <div className="apply-now-form-box position-absolute">
-              <LandingForm />
-            </div>
+      <div className="d-flex justify-content-center text-center py-5 bg-light-green">
+        <div>
+          <div>
+            <p className="h5 p-0">Search Results</p>
+          </div>
+          <div>
+            <p className="h3 p-0">{query}</p>
           </div>
         </div>
       </div>
-      <div className="container">
+
+      <div className="container-fluid px-5">
         <Link href={`/blogs/`} passHref>
           <p
             role="button"
@@ -86,69 +50,69 @@ const SearchBlog = ({ query }: { query: string }) => {
         </Link>
         <div className="row">
           <div className="col-9">
-            {postList.length > 0 &&
-              postList?.map((values) => {
-                return isLoading ? (
-                  <div className="d-flex justify-content-center align-items-center h-25">
-                    <Spinner animation={"border"} />
-                  </div>
-                ) : values?.posts?.length > 0 ? (
-                  <div key={values?.category} className="py-3">
-                    <h6>{values?.category}</h6>
-
-                    {values?.posts?.length > 0 ? (
-                      <div className="row py-3">
-                        {values?.posts?.map((item) => (
-                          <div key={item.id} className="p-3 col-4">
-                            <div className="blog-grid-column">
-                              <div>
-                                {item?.yoast_head_json?.og_image?.map((img) => (
-                                  <Image
-                                    key={img.url}
-                                    src={img.url.toString()}
-                                    width={img.width}
-                                    height={img.height}
-                                    alt={item?.yoast_head_json?.og_title}
-                                  />
-                                ))}
-                              </div>
-                              <div className="p-3">
-                                <p
-                                  className="blog-grid-title m-0 py-1"
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="top"
-                                  title={item?.yoast_head_json?.og_title}
+            {isLoading ? (
+              <div className="d-flex justify-content-center align-items-center h-25">
+                <Spinner animation={"border"} />
+              </div>
+            ) : postList?.length > 0 ? (
+              <div className="row">
+                {postList?.map((values) => {
+                  return (
+                    <div key={values.id} className="p-3 col-4">
+                      <div className="blog-grid-column">
+                        <div>
+                          {values?.yoast_head_json?.og_image?.map((img) => (
+                            <Image
+                              key={img.url}
+                              src={img.url.toString()}
+                              width={img.width}
+                              height={img.height}
+                              alt={values?.yoast_head_json?.og_title}
+                            />
+                          ))}
+                        </div>
+                        <div className="p-3">
+                          <p
+                            className="blog-grid-title m-0 py-1"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title={values?.yoast_head_json?.og_title}
+                          >
+                            {values?.yoast_head_json?.og_title}
+                          </p>
+                          <p className="blog-grid-desc py-1 m-0 w-100">
+                            <small>
+                              {values?.yoast_head_json?.og_description?.slice(
+                                0,
+                                110
+                              )}
+                              ...
+                            </small>
+                            <Link href={`/blogs/${values?.slug}`} passHref>
+                              <a>
+                                <b
+                                  role="button"
+                                  className="btn px-1 py-0 text-dark-green m-0"
                                 >
-                                  {item?.yoast_head_json?.og_title}
-                                </p>
-                                <p className="blog-grid-desc py-1 m-0 w-100">
-                                  <small>
-                                    {item?.yoast_head_json?.og_description?.slice(
-                                      0,
-                                      80
-                                    )}
-                                    ...
-                                  </small>
-                                  <Link href={`/blogs/${item?.slug}`} passHref>
-                                    <a>
-                                      <b
-                                        role="button"
-                                        className="btn px-1 py-0 text-dark-green m-0"
-                                      >
-                                        Read More.
-                                      </b>
-                                    </a>
-                                  </Link>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
+                                  Read More.
+                                </b>
+                              </a>
+                            </Link>
+                          </p>
+                        </div>
                       </div>
-                    ) : null}
-                  </div>
-                ) : null;
-              })}
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <div
+                className="w-100 h-25 d-grid"
+                style={{ placeContent: "center" }}
+              >
+                <h4>No post here</h4>
+              </div>
+            )}
           </div>
           <div className="col-3">
             <RightSidePanel />

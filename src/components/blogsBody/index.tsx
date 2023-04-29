@@ -6,29 +6,7 @@ import NewsLetter from "./NewsLetter";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
-
-const carasoulProps = [
-  {
-    image: "data-0_awU-za2-transformed.jpeg",
-    label: "",
-    caption: "",
-  },
-  {
-    image: "Digital_(2)-transformed.jpeg",
-    label: "",
-    caption: "",
-  },
-  {
-    image: "Project-Management-Banner.png",
-    label: "",
-    caption: "",
-  },
-  {
-    image: "1634114902599.jpg",
-    label: "",
-    caption: "",
-  },
-];
+import { carousalProps } from "./dataTypes";
 
 const BlogsBody = () => {
   return (
@@ -37,7 +15,7 @@ const BlogsBody = () => {
         <div className="col-md-12">
           <div className="carasoul-container my-5 position-relative">
             <div className="border border-dark">
-              <CarouselComponent carouselProps={carasoulProps} />
+              <CarouselComponent carouselProps={carousalProps} />
             </div>
             <div className="apply-now-form-box position-absolute">
               <LandingForm />

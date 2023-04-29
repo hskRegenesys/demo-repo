@@ -11,29 +11,6 @@ import { LeftOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
 
-const carasoulProps = [
-  {
-    image: "data-science.jpg",
-    label: "Title",
-    caption: "Caption",
-  },
-  {
-    image: "digitalMarketing.png",
-    label: "Title",
-    caption: "Caption",
-  },
-  {
-    image: "Baldrige-for-Project-Managers.jpg",
-    label: "Title",
-    caption: "Caption",
-  },
-  {
-    image: "1634114902599.jpg",
-    label: "Title",
-    caption: "Caption",
-  },
-];
-
 const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>("");
@@ -76,52 +53,17 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
 
   return (
     <div style={{ paddingTop: "150px" }}>
-      <div
-        className="row"
-        style={{
-          backgroundColor: "#eef5ed",
-          marginBottom: "80px",
-          height: "200px",
-        }}
-      >
+      <div className="d-flex justify-content-center text-center py-5 bg-light-green">
         <div>
-          <div className="col-md-12">
-            <div className="carasoul-container my-5 position-relative">
-              {/* <CarouselComponent carouselProps={carasoulProps} /> */}
-              <div style={{ justifyContent: " center", display: "grid" }}>
-                <div>
-                  <p
-                    style={{
-                      color: "black",
-                      fontSize: "25px",
-                      justifyContent: " center",
-                      display: "flex",
-                    }}
-                  >
-                    Category
-                  </p>{" "}
-                </div>
-                <div>
-                  <p
-                    style={{
-                      color: "black",
-                      fontSize: "40px",
-                      justifyContent: " center",
-                      display: "flex",
-                    }}
-                  >
-                    {category}
-                  </p>
-                </div>
-              </div>
-              <div className="apply-now-form-box position-absolute">
-                <LandingForm />
-              </div>
-            </div>
+          <div>
+            <p className="h5 p-0">Category</p>
+          </div>
+          <div>
+            <p className="h3 p-0">{category}</p>
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid p-5">
         <Link href={`/blogs/`} passHref>
           <p
             role="button"

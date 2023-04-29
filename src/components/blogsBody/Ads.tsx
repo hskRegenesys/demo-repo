@@ -3,7 +3,7 @@ import React from "react";
 
 const Ads = () => {
   return (
-    <div className="overflow-hidden p-3 rounded">
+    <div className="overflow-hidden rounded">
       <div
         className="w-100 position-relative rounded"
         style={{ minHeight: "400px" }}

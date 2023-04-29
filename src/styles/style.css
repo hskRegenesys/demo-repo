@@ -107,6 +107,16 @@ a {
   font-size: 40px;
   font-weight: 400;
 }
+.link-title h3 {
+  font-size: 40px;
+}
+
+.link-title h3 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+}
 
 .theme_color {
   color: var(--thm-base);
@@ -20532,12 +20542,10 @@ h2.highlight {
   overflow: hidden;
 }
 .bg-light-green {
-
   background-color: #eef5ed;
 }
 .bg-light-black {
   background: rgba(0, 0, 0, 0.5);
-
 }
 .bg-dark-green {
   background-color: #88c2a5;
@@ -20548,4 +20556,50 @@ h2.highlight {
 
 .btn-hover:hover {
   text-decoration: underline;
+}
+
+.horizontal-slider .slick-prev,
+.horizontal-slider .slick-next {
+  color: #289665;
+  font-size: unset;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #289665;
+  border-radius: 100%;
+}
+.horizontal-slider .slick-prev {
+  margin-left: -30px;
+}
+.horizontal-slider .slick-next {
+  margin-right: -30px;
+}
+
+.horizontal-slider .slick-prev:hover,
+.horizontal-slider .slick-next:hover,
+.horizontal-slider .slick-prev:focus,
+.horizontal-slider .slick-next:focus {
+  color: unset;
+}
+
+
+.vertical-slider .slick-next {
+  color: #289665;
+  font-size: unset;
+  width: 40px;
+  height: 40px;
+  transform: rotate(90deg);
+}
+
+.vertical-slider .slick-next:hover,
+.vertical-slider .slick-next:focus {
+  color: unset;
+}
+.vertical-slider {
+  position: unset !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.vertical-slider .slick-next {
+  position: unset;
 }

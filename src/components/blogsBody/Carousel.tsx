@@ -21,11 +21,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
   };
 
   return (
-    <Carousel
-      style={{ background: "beige" }}
-      activeIndex={index}
-      onSelect={handleSelect}
-    >
+    <Carousel activeIndex={index} onSelect={handleSelect}>
       {carouselProps?.map(({ image, label, caption }, index) => (
         <Carousel.Item key={index}>
           <div

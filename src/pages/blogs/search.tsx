@@ -15,10 +15,9 @@ const Search = () => {
   return (
     <Layout pageTitle="Blogs">
       <Style />
-      <HeaderOne />
+      <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
-      <h1>Search</h1>
       {q && <SearchBlog query={q.toString()} />}
       <MainFooter />
       <StickyBar />

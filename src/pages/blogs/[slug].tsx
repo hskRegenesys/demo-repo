@@ -15,7 +15,7 @@ const Post = () => {
   return (
     <Layout pageTitle="Blogs">
       <Style />
-      <HeaderOne />
+      <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
       {slug && <BlogContainer slug={slug.toString()} />}

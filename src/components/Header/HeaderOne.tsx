@@ -76,7 +76,7 @@ const HeaderOne = ({
     }
   }
 
-  const onSearch = (value: string) => router.push(`blogs/search?q=${value}`);
+  const onSearch = (value: string) => router.push(`/blogs/search?q=${value}`);
 
   const allCourses = async () => {
     const allData = await courseService.allCourses();

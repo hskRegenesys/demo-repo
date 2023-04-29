@@ -43,14 +43,13 @@ const ApplyNow = (props: any) => {
   } = hookForm;
   return (
     <div
-      className={`text-center ${
+      className={`text-center p-3 rounded ${
         props.isBlack ? " bg-light-black" : " bg-light-green"
-      } p-3 rounded m-3`}
+      }`}
     >
       <h6 style={{ color: `${props.isBlack ? "yellow" : "black"}` }}>
         Apply Now
       </h6>
-
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group mt-2">
           <input
