@@ -16,6 +16,8 @@ import {
   kenyaCountryId,
   southAfricaCountryId,
 } from "../config/constant";
+import { allCourseList } from "@/data/courseData";
+import _ from "lodash";
 
 const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   const {
@@ -44,7 +46,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
 
   const getData = async () => {
-    let courseListResponse = await courseService.allcoursePrice(courseId);
+    let courseListResponse = _.filter(allCourseList,(item)=>item?.id === parseInt(courseId))
     setcoursePrice(courseListResponse);
     courseListResponse ? setIsLoading(false) : setIsLoading(true);
   };
