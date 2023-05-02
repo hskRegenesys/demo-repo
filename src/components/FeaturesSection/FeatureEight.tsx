@@ -1,7 +1,6 @@
 import { featureEight } from "@/data/featuresSection";
 import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
 const { image, title, text, barTitle, percent } = featureEight;
@@ -46,11 +45,7 @@ const FeatureEight = () => {
                     >
                       <div className="count-box counted">
                         <span className="count-text">
-                          <CountUp
-                            start={0}
-                            end={countStart ? percent : 0}
-                            duration={1}
-                          />
+                          {percent ? percent : 0}
                         </span>
                         %
                       </div>
