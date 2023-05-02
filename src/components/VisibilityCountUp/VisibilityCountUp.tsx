@@ -16,7 +16,7 @@ const VisibilityCountUp = ({ count = 0 }) => {
       delayedCall={true}
       onChange={onVisibilityChange}
     >
-      {count ? `${count}+` : `0`}
+      <> {count ? `${count} +` : `0`}</>
     </VisibilitySensor>
   );
 };
