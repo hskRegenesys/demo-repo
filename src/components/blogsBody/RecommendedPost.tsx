@@ -36,15 +36,13 @@ const RecommendedPost = () => {
         lazyLoad="ondemand"
         autoplay
         autoplaySpeed={6000}
-        arrows
+        arrows={false}
         infinite
         dots={false}
         slidesToShow={6}
         slidesToScroll={1}
         swipeToSlide
         vertical
-        className="vertical-slider"
-        nextArrow={<ChevronRight fontSize="large" />}
       >
         {postList.length > 0 &&
           postList?.map((values) => (
