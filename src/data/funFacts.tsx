@@ -2,7 +2,7 @@ export const funFactSix = [
   {
     id: 1,
     image: "assets/images/icons/globe.svg",
-    count: 200000,
+    count: 0,
     text: "South Africa, Nigeria, Kenya & India",
   },
   {
@@ -14,7 +14,7 @@ export const funFactSix = [
   {
     id: 3,
     image: "assets/images/icons/growth.svg",
-    count: 1997,
+    count: 0,
     text: "Upskilling Courses",
   },
 ];
