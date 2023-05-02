@@ -20580,26 +20580,3 @@ h2.highlight {
 .horizontal-slider .slick-next:focus {
   color: unset;
 }
-
-
-.vertical-slider .slick-next {
-  color: #289665;
-  font-size: unset;
-  width: 40px;
-  height: 40px;
-  transform: rotate(90deg);
-}
-
-.vertical-slider .slick-next:hover,
-.vertical-slider .slick-next:focus {
-  color: unset;
-}
-.vertical-slider {
-  position: unset !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
-.vertical-slider .slick-next {
-  position: unset;
-}
