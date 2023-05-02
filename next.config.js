@@ -242,6 +242,23 @@ const createReWrites = () => {
       source: "/all-courses/digital-marketing/basic-digital-marketing-course",
       destination: "/all-courses/basic-digital-marketing-course/101",
     },
+    {
+      source:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      destination: "/all-courses/advanced-digital-marketing-course/102",
+    },
+    {
+      source: "/all-courses/cyber-security-fundamentals-course",
+      destination: "/all-courses/cyber-security-fundamentals-course/103",
+    },
+    {
+      source: "/all-courses/cyber-defense-toolbox-course",
+      destination: "/all-courses/cyber-defense-toolbox-course/104",
+    },
+    {
+      source: "/all-courses/design-thinking-course",
+      destination: "/all-courses/design-thinking-course/105",
+    },
   ];
   return paths;
 };

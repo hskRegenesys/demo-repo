@@ -33,7 +33,7 @@ const DigitalMarketing = (props: any) => {
   const router = useRouter();
 
   const courseId: any = router?.query?.id;
-  
+
   const coursePriceDetails = _.filter(
     allCourseList,
     (item) => item.id === parseInt(courseId)
@@ -42,7 +42,6 @@ const DigitalMarketing = (props: any) => {
     allCourseList,
     (item) => item.parent_id === null
   );
-
 
   const allContent: any = courseData;
   const code = coursePriceDetails[0]?.code;
