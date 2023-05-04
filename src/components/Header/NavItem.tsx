@@ -34,7 +34,12 @@ const SubItem = (props: any) => {
         )}
       </a>
 
-      <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
+      <ul
+        style={{
+          display: !menuStatus || active ? "block" : "none",
+        }}
+        className={name === "Blog Categories" ? "sub-nav-items" : ""}
+      >
         {subItems
           ?.filter((item: any) => item.name !== "Full-Stack")
           ?.map((item: any) => (
@@ -63,7 +68,6 @@ const NavItem = (props: any) => {
   const current = !onePage
     ? pathname === href || subHref.includes(pathname)
     : currentActive === href;
-
   const handleActive = (e: any) => {
     e.stopPropagation();
     e.preventDefault();

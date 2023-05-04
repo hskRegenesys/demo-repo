@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 // import { Image } from "react-bootstrap";
 import Image from "next/image";
 import NavItem from "./NavItem";
-import { courseService } from "src/services";
+import { courseService, wpService } from "src/services";
 import _ from "lodash";
 import { programBaseUrl } from "../config/constant";
 import { urlInfo } from "../config/helper";
@@ -51,7 +51,6 @@ const HeaderOne = ({
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
-
   const contextRoots: any = useRootContext();
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
@@ -81,6 +80,9 @@ const HeaderOne = ({
   const allCourses = async () => {
     const allData = await courseService.allCourses();
     allData ? setIsLoading(false) : setIsLoading(true);
+    const allCategories = await wpService.allCategories({ per_page: 100 });
+    allCategories ? setIsLoading(false) : setIsLoading(true);
+
     const filterData = _.filter(
       allData,
 
@@ -92,7 +94,6 @@ const HeaderOne = ({
 
     const course = ["DSCI", "DM", "PM", "CS", "BDM"];
     const coursesSubItem: any = [];
-
     course.forEach((courseCode) => {
       if (filterData?.length) {
         filterData?.forEach((item) => {
@@ -101,7 +102,6 @@ const HeaderOne = ({
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
-
                 href: `/${programBaseUrl}/${urlInfo(item?.name)}`,
               });
             } else {
@@ -120,31 +120,6 @@ const HeaderOne = ({
           }
         });
       }
-    });
-
-    const data2 = blogsNavItem?.map((item: any) => {
-      if (item.id === 4 && item.name === "Courses") {
-        item.subNavItems = coursesSubItem;
-        item.subNavItems?.map((data: any) => {
-          const filterData = _.filter(
-            allData,
-            (item) => item?.parent_id === data?.id
-          ).map((subCourse) => {
-            return {
-              id: subCourse?.id,
-              name: subCourse?.name,
-              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
-                subCourse?.name
-              )}`,
-            };
-          });
-          if (filterData) {
-            data.subItems = filterData;
-          }
-        });
-      }
-
-      return item;
     });
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
@@ -170,12 +145,58 @@ const HeaderOne = ({
 
       return item;
     });
+
+    const data2 = blogsNavItem?.map((item: any) => {
+      if (item.id === 4 && item.name === "Courses") {
+        item.subNavItems = coursesSubItem;
+        item.subNavItems?.map((data: any) => {
+          const filterData = _.filter(
+            allData,
+            (item) => item?.parent_id === data?.id
+          ).map((subCourse) => {
+            return {
+              id: subCourse?.id,
+              name: subCourse?.name,
+              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
+                subCourse?.name
+              )}`,
+            };
+          });
+          if (filterData) {
+            data.subItems = filterData;
+          }
+        });
+      }
+      const categorySubItem: any = [];
+      if (allCategories.length > 0 && item.id === 3 && item.name === "Blog") {
+        categorySubItem.push({
+          id: 1,
+          name: "Blog Categories",
+          href: "/blogs",
+          subItems: [],
+        });
+        item.subNavItems = categorySubItem;
+        item.subNavItems?.map((data: any) => {
+          const subCategories = allCategories.map((categories: any) => {
+            return {
+              id: categories?.id,
+              name: categories?.name,
+              href: `/blogs/category/${categories?.slug}`,
+            };
+          });
+          if (subCategories) {
+            data.subItems = subCategories;
+          }
+        });
+      }
+      return item;
+    });
+
     variant === "blog" ? setNav(data2) : setNav(data);
   };
   useEffect(() => {
     allCourses();
   }, []);
-
   const [scroll, setScroll] = useState(false);
   const checkScroll = () => {
     if (window.scrollY > 38) {
@@ -232,7 +253,11 @@ const HeaderOne = ({
               <span className="txt">Menu</span>
             </div>
 
-            <nav className="main-menu navbar-expand-md navbar-light">
+            <nav
+              className={`main-menu navbar-expand-md navbar-light ${
+                variant === "blog" ? " blog-menu" : ""
+              }`}
+            >
               <div
                 className={
                   autoContainer ? "" : "collapse navbar-collapse show clearfix"
