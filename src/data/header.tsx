@@ -80,6 +80,12 @@ export const blogsNavItem = [
     ],
   },
   {
+    id: 3,
+    name: "Blog",
+    href: "/blogs",
+    subNavItems: [],
+  },
+  {
     id: 1,
     name: "Digital Regenesys",
     href: "/",
