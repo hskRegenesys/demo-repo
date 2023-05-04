@@ -1,15 +1,17 @@
 import { Carousel } from "antd";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { RefObject, useEffect, useRef, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
 import { getRandom } from "src/utils/common";
 import { Spinner } from "react-bootstrap";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 const Blogs = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
+
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ per_page: 40 });
     if (response?.length > 0) {
@@ -58,7 +60,9 @@ const Blogs = () => {
                 <div
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >
-                  <h6>{values?.category}</h6>
+                  <h6>
+                    <b>{values?.category}</b>
+                  </h6>
                   <div>
                     <Link href={`/blogs/category/${values?.slug}`} passHref>
                       <a>
@@ -74,11 +78,8 @@ const Blogs = () => {
                 </div>
 
                 {values?.posts?.length > 3 ? (
-                  <div className="d-flex justify-content-space-between align-items-center">
-                    <div>
-                      <button className="btn">Prev</button>
-                    </div>
-                    <div style={{ width: "90%" }}>
+                  <div className="d-flex justify-content-end align-items-center">
+                    <div style={{ width: "95%" }}>
                       <Carousel
                         lazyLoad="ondemand"
                         autoplay
@@ -89,12 +90,15 @@ const Blogs = () => {
                         slidesToShow={3}
                         slidesToScroll={1}
                         swipeToSlide
+                        className="horizontal-slider"
+                        nextArrow={<ChevronRight fontSize="large" />}
+                        prevArrow={<ChevronLeft fontSize="large" />}
                       >
                         {values?.posts?.map((item) => (
                           <div key={item.id} className="px-2">
                             <div className="blog-grid-column">
                               <div
-                                className="w-100 position-relative overflow-hidden"
+                                className="w-100 rounded position-relative overflow-hidden"
                                 style={{ height: "150px" }}
                               >
                                 {item?.yoast_head_json?.og_image?.map((img) => (
@@ -140,9 +144,6 @@ const Blogs = () => {
                           </div>
                         ))}
                       </Carousel>
-                    </div>
-                    <div>
-                      <button className="btn">Next</button>
                     </div>
                   </div>
                 ) : (

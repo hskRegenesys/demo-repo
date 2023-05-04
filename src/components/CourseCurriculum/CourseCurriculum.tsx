@@ -40,10 +40,12 @@ const Faqs = (props: any) => {
                 <div className="content">
                   <div className="text">
                     {lists?.map((text: string, i: number) => (
-                      <li key={i}>
-                        <i className="fa fa-check" aria-hidden="true"></i>
-                        {text}
-                      </li>
+                      <ul key={`${text}-${i}`}>
+                        <li>
+                          <i className="fa fa-check" aria-hidden="true"></i>
+                          {text}
+                        </li>
+                      </ul>
                     ))}
                   </div>
                 </div>
