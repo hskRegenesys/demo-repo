@@ -1,12 +1,10 @@
-import { Carousel } from "antd";
-import Image from "next/image";
-import React, { RefObject, useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
 import { getRandom } from "src/utils/common";
 import { Spinner } from "react-bootstrap";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import PostCarousel from "./PostCarousel";
 
 const Blogs = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -31,7 +29,7 @@ const Blogs = () => {
     getRandom(response);
 
     const apiResponse = await Promise.all(
-      response?.map(async (category) => ({
+      response?.slice(0, 12).map(async (category) => ({
         category: category.name,
         slug: category.slug.toString(),
         posts: await wpService.allPosts({
@@ -57,12 +55,14 @@ const Blogs = () => {
           postList?.map((values) => {
             return values?.posts?.length > 0 ? (
               <div key={values?.category} className="py-3">
-                <div
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <h6>
-                    <b>{values?.category}</b>
-                  </h6>
+                <div className="d-flex justify-content-between align-items-center">
+                  <p
+                    className="h6 p-0 m-0"
+                    dangerouslySetInnerHTML={{
+                      __html: values?.category.toString(),
+                    }}
+                  />
+
                   <div>
                     <Link href={`/blogs/category/${values?.slug}`} passHref>
                       <a>
@@ -76,133 +76,15 @@ const Blogs = () => {
                     </Link>
                   </div>
                 </div>
-
-                {values?.posts?.length > 3 ? (
-                  <div className="d-flex justify-content-end align-items-center">
-                    <div style={{ width: "95%" }}>
-                      <Carousel
-                        lazyLoad="ondemand"
-                        autoplay
-                        autoplaySpeed={6000}
-                        arrows
-                        infinite
-                        dots={false}
-                        slidesToShow={3}
-                        slidesToScroll={1}
-                        swipeToSlide
-                        className="horizontal-slider"
-                        nextArrow={<ChevronRight fontSize="large" />}
-                        prevArrow={<ChevronLeft fontSize="large" />}
-                      >
-                        {values?.posts?.map((item) => (
-                          <div key={item.id} className="px-2">
-                            <div className="blog-grid-column">
-                              <div
-                                className="w-100 rounded position-relative overflow-hidden"
-                                style={{ height: "150px" }}
-                              >
-                                {item?.yoast_head_json?.og_image?.map((img) => (
-                                  <Image
-                                    key={img.url}
-                                    src={img.url.toString()}
-                                    alt={item?.yoast_head_json?.og_title}
-                                    layout="fill"
-                                    objectFit="cover"
-                                  />
-                                ))}
-                              </div>
-                              <div className="px-3 blog-grid-content">
-                                <p
-                                  className="blog-grid-title m-0 py-1"
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="top"
-                                  title={item?.yoast_head_json?.og_title}
-                                >
-                                  {item?.yoast_head_json?.og_title}
-                                </p>
-                                <p className="blog-grid-desc py-1 m-0 w-100">
-                                  <small>
-                                    {item?.yoast_head_json?.og_description?.slice(
-                                      0,
-                                      80
-                                    )}
-                                    ...
-                                  </small>
-                                  <Link href={`/blogs/${item?.slug}`} passHref>
-                                    <a>
-                                      <b
-                                        role="button"
-                                        className="btn px-1 py-0 text-dark-green m-0"
-                                      >
-                                        Read More.
-                                      </b>
-                                    </a>
-                                  </Link>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </Carousel>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="d-flex justify-content-center ">
-                    <div style={{ width: "90%" }}>
-                      <div className="row">
-                        {values?.posts?.map((item) => (
-                          <div key={item.id} className="px-2 col-4">
-                            <div className="blog-grid-column">
-                              <div
-                                className="w-100 position-relative overflow-hidden"
-                                style={{ height: "140px" }}
-                              >
-                                {item?.yoast_head_json?.og_image?.map((img) => (
-                                  <Image
-                                    key={img.url}
-                                    src={img.url.toString()}
-                                    alt={item?.yoast_head_json?.og_title}
-                                    layout="fill"
-                                    objectFit="cover"
-                                  />
-                                ))}
-                              </div>
-                              <div className="p-3">
-                                <p
-                                  className="blog-grid-title m-0 py-1"
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="top"
-                                  title={item?.yoast_head_json?.og_title}
-                                >
-                                  {item?.yoast_head_json?.og_title}
-                                </p>
-                                <p className="blog-grid-desc py-1 m-0 w-100">
-                                  <small>
-                                    {item?.yoast_head_json?.og_description?.slice(
-                                      0,
-                                      80
-                                    )}
-                                    ...
-                                  </small>
-                                  <Link href={`/blogs/${item?.slug}`} passHref>
-                                    <a>
-                                      <b
-                                        role="button"
-                                        className="btn px-1 py-0 text-dark-green m-0"
-                                      >
-                                        Read More.
-                                      </b>
-                                    </a>
-                                  </Link>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                )}
+                <div className="d-none d-lg-block">
+                  <PostCarousel values={values} screen="lg" />
+                </div>
+                <div className="d-none d-md-block d-lg-none">
+                  <PostCarousel values={values} screen="md" />
+                </div>
+                <div className="d-block d-md-none d-lg-none">
+                  <PostCarousel values={values} screen="sm" />
+                </div>
               </div>
             ) : null;
           })}
