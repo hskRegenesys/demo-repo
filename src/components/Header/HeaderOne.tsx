@@ -51,6 +51,7 @@ const HeaderOne = ({
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
+  const [isSearching, setIsSearching] = useState(false);
   const contextRoots: any = useRootContext();
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
@@ -75,7 +76,10 @@ const HeaderOne = ({
     }
   }
 
-  const onSearch = (value: string) => router.push(`/blogs/search?q=${value}`);
+  const onSearch = (value: string) => {
+    router.pathname !== "/blogs/search" && setIsSearching(true);
+    router.push(`/blogs/search?q=${value}`);
+  };
 
   const allCourses = async () => {
     const allData = await courseService.allCourses();
@@ -294,6 +298,7 @@ const HeaderOne = ({
                     placeholder="Search Topics"
                     onSearch={onSearch}
                     style={{ width: 200 }}
+                    loading={isSearching}
                   />
                 </Space>
               </div>

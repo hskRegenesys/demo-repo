@@ -20,9 +20,35 @@ export interface IPostTypes {
     og_title: string;
     og_description: string;
   };
-  title: { rendered: string };
-  content: { rendered: string };
+  title?: { rendered: string };
+  content?: { rendered: string };
 }
+
+export interface IPostCarouselTypes {
+  values: IPostListTypes;
+  screen: string;
+}
+export interface IPostContainerTypes {
+  post: IPostTypes;
+  restPost?: boolean;
+}
+interface IImage {
+  image: string;
+  label?: string;
+  caption?: string;
+}
+export interface ICarouselProps {
+  carouselProps: IImage[];
+}
+
+interface IPostToShow {
+  [key: string]: number;
+}
+export const postToShow: IPostToShow = {
+  sm: 1,
+  md: 2,
+  lg: 3,
+};
 
 export const carousalProps = [
   {

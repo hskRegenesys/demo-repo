@@ -1,13 +1,13 @@
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostTypes } from "./dataTypes";
-import TrendingSection from "../TrendingSection/TrendingSection";
+import TrendingSection from "src/components/TrendingSection/TrendingSection";
 import NewsLetter from "./NewsLetter";
 import { LeftOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
+import PostContainer from "./PostContainer";
 
 const SearchBlog = ({ query }: { query: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -49,61 +49,16 @@ const SearchBlog = ({ query }: { query: string }) => {
           </p>
         </Link>
         <div className="row">
-          <div className="col-9">
+          <div className="col-12 col-lg-9">
             {isLoading ? (
               <div className="d-flex justify-content-center align-items-center h-25">
                 <Spinner animation={"border"} />
               </div>
             ) : postList?.length > 0 ? (
               <div className="row">
-                {postList?.map((values) => {
-                  return (
-                    <div key={values.id} className="p-3 col-4">
-                      <div className="blog-grid-column">
-                        <div>
-                          {values?.yoast_head_json?.og_image?.map((img) => (
-                            <Image
-                              key={img.url}
-                              src={img.url.toString()}
-                              width={img.width}
-                              height={img.height}
-                              alt={values?.yoast_head_json?.og_title}
-                            />
-                          ))}
-                        </div>
-                        <div className="p-3">
-                          <p
-                            className="blog-grid-title m-0 py-1"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title={values?.yoast_head_json?.og_title}
-                          >
-                            {values?.yoast_head_json?.og_title}
-                          </p>
-                          <p className="blog-grid-desc py-1 m-0 w-100">
-                            <small>
-                              {values?.yoast_head_json?.og_description?.slice(
-                                0,
-                                110
-                              )}
-                              ...
-                            </small>
-                            <Link href={`/blogs/${values?.slug}`} passHref>
-                              <a>
-                                <b
-                                  role="button"
-                                  className="btn px-1 py-0 text-dark-green m-0"
-                                >
-                                  Read More.
-                                </b>
-                              </a>
-                            </Link>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
+                {postList?.map((values) => (
+                  <PostContainer post={values} key={values.id} restPost />
+                ))}
               </div>
             ) : (
               <div
@@ -114,7 +69,7 @@ const SearchBlog = ({ query }: { query: string }) => {
               </div>
             )}
           </div>
-          <div className="col-3">
+          <div className="col-12 col-lg-3">
             <RightSidePanel />
           </div>
         </div>

@@ -14,14 +14,14 @@ const RightSidePanel = ({
   yellowBtn,
 }: IRightSidePanelTypes) => {
   return (
-    <div>
-      <div className="my-3 ms-5">
+    <div className="row">
+      <div className="col-12 col-sm-4 col-lg-12 py-3 _ps-lg-5">
         <ApplyNow yellowBtn={yellowBtn} />
       </div>
-      <div className="my-5 ms-5">
+      <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5">
         {isRecommendedPost ? <RecommendedPost /> : <About />}
       </div>
-      <div className="my-5 ms-5">
+      <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5">
         <Ads />
       </div>
     </div>

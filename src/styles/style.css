@@ -20550,14 +20550,21 @@ h2.highlight {
   justify-content: center;
   align-items: center;
   background-color: #cae7d8;
+  cursor: pointer;
 }
 .blog-grid-content {
-  height: 160px;
+  /* height: 180px; */
 }
 
 .blog-grid-title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-grid-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

@@ -5,7 +5,6 @@ import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostTypes } from "./dataTypes";
 import { Spinner } from "react-bootstrap";
-import { ChevronRight } from "@mui/icons-material";
 
 const RecommendedPost = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -72,11 +71,13 @@ const RecommendedPost = () => {
                       title={values?.yoast_head_json?.og_title}
                     >
                       <b>
-                        <small
-                          dangerouslySetInnerHTML={{
-                            __html: values?.title?.rendered,
-                          }}
-                        />
+                        {values?.title && (
+                          <small
+                            dangerouslySetInnerHTML={{
+                              __html: values?.title?.rendered,
+                            }}
+                          />
+                        )}
                       </b>
                     </p>
                   </div>

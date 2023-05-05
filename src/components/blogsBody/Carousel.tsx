@@ -1,14 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-interface IImage {
-  image: string;
-  label?: string;
-  caption?: string;
-}
-interface ICarouselProps {
-  carouselProps: IImage[];
-}
+import { ICarouselProps } from "./dataTypes";
 
 function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
   const [index, setIndex] = useState(0);
@@ -33,7 +26,6 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
               alt={`${image}-index`}
               layout="fill"
               objectFit="cover"
-              unoptimized
             />
           </div>
 
