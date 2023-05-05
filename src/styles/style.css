@@ -20212,6 +20212,9 @@ h2.highlight {
   color: #000;
   border: 1px solid #000;
 }
+.inline-button .btn-style-two :hover{
+  background-color: #000;
+}
 
 .category-btn {
   background-color: #289665 !important;
