@@ -9757,7 +9757,7 @@ featured-section .right-col .sec-title h2 {
 
 .page-banner .inner-container {
   position: relative;
-  padding: 120px 0 40px;
+  padding: 134px 0 40px;
   padding-bottom: 20px;
 }
 
@@ -20212,7 +20212,7 @@ h2.highlight {
   color: #000;
   border: 1px solid #000;
 }
-.inline-button .btn-style-two :hover{
+.inline-button .btn-style-two :hover {
   background-color: #000;
 }
 
