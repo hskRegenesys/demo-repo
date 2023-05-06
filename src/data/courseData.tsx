@@ -1185,9 +1185,9 @@ export const allCourseList = [
   // custom courses
   {
     id: 101,
-    name: "Basic Digital Marketing Course",
+    name: "Certification Programme in Digital Marketing Fundamentals",
     code: "BDMC",
-    description: "Basic Digital Marketing Course",
+    description: "Certification Programme in Digital Marketing Fundamentals",
     parent_id: 24,
     mode_id: 1,
     isAddon: false,
@@ -1308,9 +1308,10 @@ export const allCourseList = [
 
   {
     id: 102,
-    name: "Advanced Digital Marketing Course",
+    name: "Certification Programme in Advance Digital Marketing Strategies",
     code: "AVDMC",
-    description: "Advanced Digital Marketing",
+    description:
+      "Certification Programme in Advance Digital Marketing Strategies",
     parent_id: 24,
     mode_id: 1,
     isAddon: false,
@@ -1431,9 +1432,9 @@ export const allCourseList = [
 
   {
     id: 103,
-    name: "cyber security fundamentals course",
+    name: "Certification Programme in Cybersecurity Fundamentals",
     code: "CSFC",
-    description: "cyber security fundamentals course",
+    description: "Certification Programme in Cybersecurity Fundamentals",
     parent_id: null,
     mode_id: 1,
     isAddon: false,
@@ -1544,9 +1545,9 @@ export const allCourseList = [
   },
   {
     id: 104,
-    name: "cyber security fundamentals course",
+    name: "Certification Programme in Cybersecurity Defence Toolbox",
     code: "CDTC",
-    description: "cyber security fundamentals course",
+    description: "Certification Programme in Cybersecurity Defence Toolbox",
     parent_id: null,
     mode_id: 1,
     isAddon: false,
@@ -1587,7 +1588,7 @@ export const allCourseList = [
         id: 138,
         course_id: 29,
         country_id: 2,
-        price: 49699,
+        price: 37399,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1601,7 +1602,7 @@ export const allCourseList = [
         id: 165,
         course_id: 29,
         country_id: 1,
-        price: 9939,
+        price: 7589,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1615,7 +1616,7 @@ export const allCourseList = [
         id: 192,
         course_id: 29,
         country_id: 3,
-        price: 268899,
+        price: 211899,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1629,7 +1630,7 @@ export const allCourseList = [
         id: 219,
         course_id: 29,
         country_id: 4,
-        price: 78599,
+        price: 59549,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1643,7 +1644,7 @@ export const allCourseList = [
         id: 237,
         course_id: 29,
         country_id: 5,
-        price: 649,
+        price: 489,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {

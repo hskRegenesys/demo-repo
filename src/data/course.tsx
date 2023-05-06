@@ -2523,8 +2523,8 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Programme in Basic Digital Marketing Course",
-        text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        title: "Certification Programme in Digital Marketing Fundamentals",
+        text: "Upskill yourself with a course in Digital Marketing Fundamentals, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -2536,7 +2536,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Digital Regenesys' Digital Marketing Fundamentals course is a comprehensive online training program designed to equip participants with the foundational knowledge and practical skills necessary to excel in the dynamic field of digital marketing. The course covers critical topics such as SEO, social media marketing, email marketing, content marketing, and digital analytics. It is suitable for beginners and professionals alike. Participants can expect to gain a solid understanding of the digital marketing landscape and develop practical skills through hands-on assignments and case studies.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -2603,33 +2603,40 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "Introduction To Marketing And Digital Marketing:",
+            title: "Overview of Marketing and Behavioral Digital Marketing",
             lists: [
-              "Introduction to Marketing - Basics of Marketing",
-              "Branding and Consumer Behavior or Psychology",
-              "Global marketing opportunities",
-              "Types of marketing",
-              // "Introduction to Digital Marketing ",
-              "Basics of Digital Marketing World of Web (1.0, 2.0, 3.0.)",
-              "Difference between Digitalization and Digitization",
-              "Marketing Automation",
-              "Digital Channels & Platforms",
+              "Fundamentals of Marketing",
+              "Consumer Behavior",
+              "Marketing Strategies",
+              "Digital Marketing",
             ],
           },
           {
             id: 2,
-            title: "Search Engine Optimization (SEO)",
-            lists: ["Technical SEO & Non-Technical SEO"],
+            title: "Search Engine Optimization",
+            lists: [
+              "Introduction to Search Engine Optimization",
+              "Standard Practices for SEO",
+              "Website Design and Structure",
+              "Google Algorithm",
+            ],
           },
           {
             id: 3,
-            title: "Content Creation & Marketing",
-            lists: ["Introduction to Content Marketing"],
+            title: "Content Creation and Marketing with UX Digital Approach",
+            lists: [
+              "Meaning, Importance, and Types of Content",
+              "Super Quality Content and FAQ Schema",
+              "RACE Model and Content Planning",
+              "Importance of Copywriting, Content Imagery, and Visualization",
+              "Infographics, PESO Model, and Hero Story",
+              "Importance of Branding from UX Perspective",
+            ],
           },
           {
             id: 4,
-            title: "Social Media Marketing",
-            lists: ["Introduction to Social Media Marketing"],
+            title: "Marketing through Social Media and Influencers",
+            lists: ["Social Media Marketing", "Influencer Marketing"],
           },
           {
             id: 5,
@@ -2639,6 +2646,16 @@ export const courseData = {
               "WhatsApp Marketing",
               "Meme & Topical Marketing",
               "Marketing Psychology",
+            ],
+          },
+          {
+            id: 6,
+            title: "Major Certifications",
+            lists: [
+              "Google Analytics – Basic",
+              "Content marketing",
+              "Google Ads",
+              "Shopping Ads",
             ],
           },
         ],
@@ -2809,8 +2826,9 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Programme in Advanced Digital Marketing Course",
-        text: "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        title:
+          "Certification Programme in Advance Digital Marketing Strategies",
+        text: "Upskill yourself with a course in Advance Digital Marketing Strategies, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -2822,7 +2840,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Advanced Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Digital Regenesys' Advance Digital Marketing Strategies course is a comprehensive online training program that goes beyond the basics of digital marketing and covers advanced strategies and techniques for building and executing successful digital marketing campaigns. Participants will learn cutting-edge topics such as marketing automation, advanced analytics, influencer marketing, and digital branding. The course is designed for marketing professionals looking to enhance their skills and knowledge in the digital marketing space and stay ahead of the curve.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -2890,50 +2908,70 @@ export const courseData = {
           {
             id: 1,
             title:
-              "Programmatic Advertising & Paid Media Marketing, Importance Of Analytics",
+              "The significance of analytics in Programmatic Advertising and Paid Media Marketing",
             lists: [
-              "Different types of Paid media marketing and Advertising formats",
-              "Google Ads & various ad types and formats, GBP",
-              "Setting up of Google Ad account",
-              "Setting up of GSC, GA, Pixels, Goals setting etc.",
-              "Analyzing google ad campaign",
+              "Different types of Paid Media Marketing and Advertising Formats",
+              "Google Ads and Various Ad Types and Formats",
+              "Setting up Google Ad Account:",
+              "Setting up GSC, GA, Pixels, Goals Setting",
+              "Analyzing Google Ad Campaign",
             ],
           },
           {
             id: 2,
-            title: "Importance Of IMC (Media Planning & Media Buying)",
+            title:
+              "The significance of Integrated Marketing Communications (IMC) in Media Planning, Media Buying, and Over-The-Top (OTT) Marketing",
             lists: [
-              "Meaning, Importance of IMC",
-              "Types of Media formats",
-              "Media buying and planning",
-              "Media plan from brief to execution",
-              "Advance IMC management",
-              "5 Ms of advertising",
+              "Introduction to IMC",
+              "Types of Media Formats",
+              "Media Buying and Planning",
+              "Advanced IMC Management",
+              "5 M's of Advertising",
+              "Email Marketing",
+              "Over-the-Top (OTT) Advertising and Marketing",
             ],
           },
           {
             id: 3,
-            title: "Online After Sales (Reputation) Management",
-            lists: ["Introduction to Reputation management"],
+            title:
+              "Managing Online Reputation Management for Post-Sales Services",
+            lists: ["Online Reputation Management"],
           },
           {
             id: 4,
-            title: "E-Commerce Marketing & Email Marketing",
-            lists: ["E-Commerce and E-Mail Marketing"],
+            title:
+              "Digital Marketing Strategies for E-commerce, Email Marketing, and Chatbots",
+            lists: ["E-Commerce", "Email Marketing", "Chatbots"],
           },
           {
             id: 5,
-            title: "Affiliate Marketing & Mobile Marketing",
-            lists: ["Affiliate Marketing & Mobile Marketing"],
+            title:
+              "Influencer and Affiliate Marketing & Mobile Marketing & Podcast",
+            lists: [
+              "Influencer and Affiliate Marketing",
+              "Mobile Marketing",
+              "Podcast Marketing",
+            ],
           },
           {
             id: 6,
             title: "Bonus Topics",
             lists: [
               "Funnel Marketing",
-              "Marktech & Adtech",
-              "Koo App and Inshort App",
+              "Martech & Adtech",
+              "Inshort app",
               "Metaverse",
+            ],
+          },
+          {
+            id: 7,
+            title: "Major Certifications",
+            lists: [
+              "Google Analytics - Advance",
+              "Email marketing",
+              "E-Commerce marketing",
+              "Affiliate Marketing",
+              "Mobile Marketing",
             ],
           },
         ],
@@ -3100,10 +3138,10 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Programme in cyber security fundamentals",
-        text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+        title: "Certification Programme in Cybersecurity Fundamentals",
+        text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with Cyber Security Fundamentals course.",
         lists: [
-          "10 Weeks Course",
+          "08 Weeks Course",
           "Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
@@ -3113,7 +3151,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+        "Digital Regenesys' Cybersecurity Fundamentals course is an online course that provides a comprehensive understanding of cybersecurity principles, policies, and practices. The course is designed to equip participants with the skills and knowledge needed to identify, prevent, and respond to cyber threats. Key topics covered include threat intelligence, risk management, network security, and cryptography. Participants can expect to develop practical skills through hands-on exercises and real-world scenarios. The course is ideal for anyone looking to start a career in cybersecurity or enhance their existing skills.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -3136,23 +3174,7 @@ export const courseData = {
       bg3: "/assets/images/background/reason-bg3-1.webp",
       bg4: "/assets/images/background/reason-bg4-1.webp",
     },
-    // courseTools: [
-    //   "cs/cybersecurity-tools-1.png",
-    //   "cs/cybersecurity-tools-2.png",
-    //   "cs/cybersecurity-tools-3.png",
-    //   "cs/cybersecurity-tools-4.png",
-    //   "cs/cybersecurity-tools-5.png",
-    //   "cs/cybersecurity-tools-6.png",
-    //   "cs/cybersecurity-tools-7.png",
-    //   "cs/cybersecurity-tools-8.png",
-    //   "cs/cybersecurity-tools-9.png",
-    //   "cs/cybersecurity-tools-10.png",
-    //   "cs/cybersecurity-tools-11.png",
-    //   "cs/cybersecurity-tools-12.png",
-    //   "cs/cybersecurity-tools-13.png",
-    //   "cs/cybersecurity-tools-14.png",
-    //   "cs/cybersecurity-tools-15.png",
-    // ],
+
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -3183,25 +3205,24 @@ export const courseData = {
             id: 1,
             title: "Week 1",
             lists: [
-              "Introductory fundamentals of cybersecurity threat actors, attacks, and mitigation",
-              "Cybersecurity fundamentals",
+              "Cyber security fundamentals",
               "Security policies and procedures",
-              "Cybersecurity mitigation methods",
-              "Cia triad",
+              "Cyber security mitigation methods",
+              "CIA triad",
             ],
           },
           {
             id: 2,
             title: "Week 2",
             lists: [
-              "Enterprise architecture",
-              "Organizational security policy and components",
+              "Enterprise Architecture",
+              "Organisational security policy and components",
               "Internet & networking basics",
               "Introduction to secured architecture",
               "Wireless networks",
               "Network security controls",
-              "Cloud virtualization",
-              "Byod, and iot security testing",
+              "Cloud Virtualisation",
+              "BYOD and IOT security testing",
             ],
           },
           {
@@ -3211,50 +3232,36 @@ export const courseData = {
               "Information system governance and risk assessment",
               "Introduction to information security",
               "Governance risk",
-              "Management information security programs",
-              "Network security",
+              "Management information security programmes",
+              "Network security and spoofing",
             ],
           },
           {
             id: 4,
             title: "Week 4",
             lists: [
-              "Introduction to incident management",
               "Developing an incident management and response system",
               "Digital forensics business",
               "Continuity and disaster recovery",
+              "Wi-Fi network security",
+              "Web security",
+              "OS fundamentals and security",
             ],
           },
           {
             id: 5,
             title: "Week 5",
             lists: [
-              "Secure development",
-              "Secure coding devsecop",
-              "Honeypot",
-              "Network security and spoofing",
-              "Wi-Fi network security",
-              "Web security",
-              "Cryptography",
-              "OS fundamentals and security",
-              "Cryptography and encryption",
+              "Cryptography and Encryption",
               "Cryptanalysis",
-              "Project - exploiting virtual machine",
+              "Malware Analysis, Memory Forensics",
+              "Cyber Forensic",
+              "Application Security",
             ],
           },
           {
             id: 6,
             title: "Week 6",
-            lists: [
-              "Malware analysis, Memory forensics",
-              "Cyber forensic",
-              "Application security",
-              "Hands-on security - Network traffic analysis + CTF + VAPT",
-            ],
-          },
-          {
-            id: 7,
-            title: "Week 7",
             lists: [
               "Introduction to application security",
               "Web-based applications and associated vulnerabilities",
@@ -3262,7 +3269,17 @@ export const courseData = {
               "Data and database security",
               "Phishing and other attacks on identity",
               "Regulation, compliance, and risk management",
-              "Project - exploit web application",
+            ],
+          },
+          {
+            id: 7,
+            title: "Week 7",
+            lists: [
+              "Introduction to Ethical Hacking",
+              "Overview of information security, threats, attack vectors, and ethical hacking concepts",
+              "Information security controls",
+              "Penetration testing concepts and information security laws and standards",
+              "Footprinting and Reconnaissance",
             ],
           },
           {
@@ -3425,10 +3442,10 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Programme in cyber defense toolbox course",
-        text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+        title: "Certification Programme in Cybersecurity Defence Toolbox",
+        text: "Upskill yourself with a Cybersecurity Defence Toolbox course that offers hands-on experience with industry tools and techniques. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",
         lists: [
-          "10 Weeks Course",
+          "05 Weeks Course",
           "Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
@@ -3438,7 +3455,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+        "Digital Regenesys' Defence Toolbox course is an online training program that provides participants with practical skills in using various tools for cybersecurity defence. The course covers a range of tools, including John The Ripper, KeePass, VeraCrypt, and techniques for email forensics. Participants will learn how to use these tools to identify and prevent cyber attacks, and respond to security incidents. The course is ideal for cybersecurity professionals looking to enhance their skills and knowledge in cyber defence.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
