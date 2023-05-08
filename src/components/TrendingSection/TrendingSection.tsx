@@ -27,7 +27,7 @@ const settings = {
   items: 3,
   slideBy: "page",
   autoplay: true,
-  loop: true,
+  loop: false,
   gutter: 30,
   nav: false,
   controls: true,

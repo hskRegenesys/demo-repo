@@ -362,7 +362,7 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "We have to Remove the Exposure & Tools covered section as requested by Vigor.",
+        "Get exposure to a range of industry tools, preparing you with practical skills and knowledge to defend against cyber threats.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
