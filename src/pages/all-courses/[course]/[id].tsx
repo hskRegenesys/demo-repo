@@ -66,6 +66,8 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
+
+  console.log("courseDetails", courseDetails);
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />

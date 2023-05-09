@@ -17,7 +17,8 @@ const Faqs = (props: any) => {
       </h2>
       <ul className="accordion-box clearfix">
         {faqs?.map((item: any) => {
-          let { id, title, lists } = item;
+          let { id, title, firstPara, secondPara, boldText, lists, lastPara } =
+            item;
           return (
             <li
               key={id}
@@ -39,6 +40,9 @@ const Faqs = (props: any) => {
               >
                 <div className="content">
                   <div className="text">
+                    {firstPara && <span>{firstPara}</span>}
+                    {secondPara && <span>{secondPara}</span>}
+                    {boldText && <strong>{boldText}</strong>}
                     {lists?.map((text: string, i: number) => (
                       <ul key={`${text}-${i}`}>
                         <li>
@@ -47,6 +51,7 @@ const Faqs = (props: any) => {
                         </li>
                       </ul>
                     ))}
+                    {lastPara && <span>{lastPara}</span>}
                   </div>
                 </div>
               </div>

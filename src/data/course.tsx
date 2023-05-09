@@ -3157,7 +3157,7 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "We have to Remove the Exposure & Tools covered section as requested by Vigor.",
+        "Get exposure to a range of industry tools, preparing you with practical skills and knowledge to defend against cyber threats.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -3461,7 +3461,7 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "We have to Remove the Exposure & Tools covered section as requested by Vigor.",
+        "Get exposure to a range of industry tools, preparing you with practical skills and knowledge to defend against cyber threats.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -3523,97 +3523,231 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "Week 1",
+            firstPara:
+              "Email forensics involves the process of collecting, analysing, and interpreting electronic mail messages and metadata as evidence in legal or investigative matters.",
+            secondPara: "",
+            boldText: "The key steps in email forensics include:",
+            title: "Email Forensics ",
             lists: [
-              "Introductory fundamentals of cybersecurity threat actors, attacks, and mitigation",
-              "Cybersecurity fundamentals",
-              "Security policies and procedures",
-              "Cybersecurity mitigation methods",
-              "Cia triad",
+              "The key steps in email forensics include identification, collection, analysis, interpretation, and reporting",
+              "It is an essential tool for investigating criminal or fraudulent activities, data breaches, harassment, or other workplace violations involving email messages.",
             ],
+            lastPara:
+              "By following a systematic and rigorous process, email forensic experts can uncover evidence that can be used in court or to improve the security posture of an organisation.",
           },
           {
             id: 2,
-            title: "Week 2",
+            firstPara:
+              "John the Ripper is a popular open-source password cracking tool that is commonly used by security professionals and hackers alike. It was originally developed for Unix-based systems but has since been ported to a variety of platforms, including Windows and MacOS. The tool uses a various attack methods to crack passwords, including dictionary attacks, brute-force attacks, and hybrid attacks.",
+            secondPara: "",
+            boldText: "",
+            title: "John The Ripper ",
             lists: [
-              "Enterprise architecture",
-              "Organizational security policy and components",
-              "Internet & networking basics",
-              "Introduction to secured architecture",
-              "Wireless networks",
-              "Network security controls",
-              "Cloud virtualization",
-              "Byod, and iot security testing",
+              "John the Ripper can leverage various types of password-cracking techniques, such as rainbow tables, which can greatly increase its speed and efficiency",
+              "One of the key features of John the Ripper is its ability to detect weak passwords and provide recommendations for stronger ones",
+              "It can also be used to audit password policies and identify vulnerabilities in systems and applications",
             ],
+            lastPara: "",
           },
           {
             id: 3,
-            title: "Week 3",
+            firstPara:
+              "KeePass is a popular open-source password manager that allows users to store and manage their passwords in a secure and organised manner. It is available for Windows, MacOS, Linux, and mobile platforms. The tool uses strong encryption algorithms to protect users' passwords, ensuring that they are secure even in the event of a data breach. KeePass also offers several additional security features, such as two-factor authentication, a master password, ability to lock the database after a set period of inactivity. ",
+            secondPara:
+              "KeePass allows users to store various types of information, including usernames, passwords, and website URLs. In addition, users can create custom fields to store additional information, such as security questions and answers.",
+            boldText: "",
+            title: "KeePass ",
             lists: [
-              "Information system governance and risk assessment",
-              "Introduction to information security",
-              "Governance risk",
-              "Management information security programs",
-              "Network security",
+              "One of the key advantages of KeePass is its flexibility and customisation options. ",
+              "Users can create and manage multiple password databases, each with its own unique settings and password requirements. ",
+              "The tool also offers a range of plugins and integrations that allow users to customise their experience even further",
             ],
+            lastPara:
+              "Overall, KeePass is a powerful and secure password manager that provides users with an easy way to manage their passwords and keep them safe from cyber threats.",
           },
           {
             id: 4,
-            title: "Week 4",
+            firstPara:
+              "VeraCrypt is a popular open-source disk encryption tool that allows users to encrypt and protect their data stored on a computer or external drive. It is available for Windows, MacOS, and Linux. The tool uses strong encryption algorithms such as AES, Serpent, and Twofish to ensure that users' data is secure from unauthorised access, theft, and hacking attempts. ",
+            secondPara: "",
+            boldText:
+              "VeraCrypt also offers several advanced security features, such as",
+            title: "VeraCrypt",
             lists: [
-              "Introduction to incident management",
-              "Developing an incident management and response system",
-              "Digital forensics business",
-              "Continuity and disaster recovery",
+              "Hidden volumes, ",
+              "Deniable encryption, and",
+              "Keyfile support, which provides users with added protection against brute-force attacks and other types of threats.  ",
             ],
+            lastPara:
+              "VeraCrypt can be used to encrypt an entire hard drive, a partition, or a removable storage device such as a USB drive. Overall, VeraCrypt is a powerful and reliable encryption tool that provides users with robust protection for their data",
           },
           {
             id: 5,
-            title: "Week 5",
+            firstPara:
+              "Burp Suite is a popular web application security testing tool used by security professionals, ethical hackers, and penetration testers. It is designed to identify vulnerabilities and security issues in web applications, including Cross-Site Scripting (XSS), SQL injection, and session hijacking. Burp Suite offers a range of features and tools to help users identify and exploit vulnerabilities in web applications. ",
+            secondPara: "",
+            boldText: "",
+            title: "Burpsuite",
             lists: [
-              "Secure development",
-              "Secure coding devsecop",
-              "Honeypot",
-              "Network security and spoofing",
-              "Wi-Fi network security",
-              "Web security",
-              "Cryptography",
-              "OS fundamentals and security",
-              "Cryptography and encryption",
-              "Cryptanalysis",
-              "Project - exploiting virtual machine",
+              "Its proxy server intercepts all web traffic, allowing users to inspect and modify HTTP requests and responses.",
+              "Its scanner identifies common web application vulnerabilities and provides detailed reports and recommendations for remediation.",
+              "In addition to its scanning and proxy features, Burp Suite also offers a range of tools for advanced penetration testing and vulnerability research, including a repeater, intruder, and sequencer.",
+              "It offers a wide range of plugins and extensions, allowing users to tailor the tool to their specific needs and preferences.",
+              "It also provides integration with other tools and platforms, including popular vulnerability scanners and security frameworks. ",
             ],
+            lastPara:
+              "Overall, Burp Suite is a powerful and comprehensive web application security testing tool that provides users with a range of features and tools to identify and remediate vulnerabilities in web applications.",
           },
           {
             id: 6,
-            title: "Week 6",
+            firstPara:
+              "Nikto is an open-source web server scanner that helps security professionals identify and remediate vulnerabilities in web servers and applications. It is designed to test web servers for common vulnerabilities, such as outdated software versions, misconfigured server settings, and known vulnerabilities. In addition, Nikto offers a range of features and tools to help users identify and exploit vulnerabilities in web servers ",
+            secondPara: "",
+            boldText: "",
+            title: "Nikto",
             lists: [
-              "Malware analysis, Memory forensics",
-              "Cyber forensic",
-              "Application security",
-              "Hands-on security - Network traffic analysis + CTF + VAPT",
+              "It can scan multiple web servers simultaneously, allowing users to identify vulnerabilities across their entire infrastructure.",
+              "It also provides detailed reports on the vulnerabilities it finds, including recommendations for remediation. ",
+              "It offers a simple and intuitive interface allowing users to configure and run scans quickly and easily. ",
+              "It also provides detailed documentation and tutorials to help users get started and make the most of its features. ",
+              "In addition to its scanning features, Nikto offers a range of customisation options and plugins, allowing users to tailor the tool to their specific needs and preferences. ",
+              "It also integrates with other security tools and platforms, making it a valuable addition to any security toolkit.",
             ],
+            lastPara:
+              "Overall, Nikto is a powerful and comprehensive web server scanner that provides users with a range of features and tools to identify and remediate vulnerabilities in web servers and applications.",
           },
           {
             id: 7,
-            title: "Week 7",
+            firstPara:
+              "OWASP (Open Web Application Security Project) is a non-profit organisation dedicated to improving the security of software and web applications. It is a community-driven organisation providing tools, resources, and guidelines to help developers and security professionals build secure applications and protect against common web application vulnerabilities. OWASP offers a range of resources and tools to help organisations improve their application security posture. ",
+            secondPara: "",
+            boldText: "",
+            title: "OWASP",
             lists: [
-              "Introduction to application security",
-              "Web-based applications and associated vulnerabilities",
-              "Cookies and tracking",
-              "Data and database security",
-              "Phishing and other attacks on identity",
-              "Regulation, compliance, and risk management",
-              "Project - exploit web application",
+              "Its flagship project, the OWASP Top 10, identifies the top 10 most critical web application security risks, including injection attacks, cross-site scripting, broken authentication and session management. ",
+              "The organisation also offers a range of guides, tools, and best practices to help developers and security professionals mitigate these risks and protect their applications. ",
+              "In addition to its educational and awareness-raising efforts, OWASP also supports a number of software security projects, including web application security scanners, vulnerability scanners, and security testing frameworks ",
+              "These projects are open source and community-driven, providing users with free and reliable security tools that can help them improve their security posture. ",
             ],
+            lastPara:
+              "Overall, OWASP is a valuable resource for developers and security professionals looking to improve the security of their software and web applications.",
           },
           {
             id: 8,
-            title: "Week 8",
+            firstPara:
+              "Wireshark is a popular open-source network protocol analyser that allows users to capture and analyse network traffic in real-time. It is used by security professionals, network administrators, and developers to troubleshoot network issues, identify security threats, and optimise network performance. ",
+            secondPara: "",
+            boldText: "",
+            title: "Wireshark",
             lists: [
-              "Session by industry experts",
-              "Session on work readiness skills",
+              "Wireshark offers a range of features and tools to help users analyse network traffic",
+              "Ethernet, Wi-Fi, and Bluetooth are just a few of the network interfaces whose traffic its packet capture engine may record. ",
+              "It can decode and analyse a wide range of network protocols, including TCP/IP, HTTP, DNS, and SSL/TLS. It also offers a powerful filtering engine, allowing users to focus on specific packets or protocols of interest. ",
+              "Additionally, it offers integration with other tools and platforms, such as network vulnerability scanners and intrusion detection systems. ",
+              "Wireshark includes a variety of statistics and visualisation tools alongside its packet analysis features to aid users in understanding network traffic patterns and optimising network efficiency. ",
+              "Its powerful scripting engine allows users to automate and customise their analysis, making it more efficient and effective. ",
             ],
+            lastPara:
+              "One of the key advantages of Wireshark is its versatility and customisation options. Overall, Wireshark is a powerful and comprehensive network protocol analyser that provides users with a range of features and tools to analyse network traffic, identify security threats, and optimise network performance.",
+          },
+          {
+            id: 9,
+            firstPara:
+              "Nmap (Network Mapper) is a popular open-source network scanning tool that allows users to discover hosts and services on a network, identify security vulnerabilities, and map network architecture. It is used by security professionals, network administrators, and developers to secure their networks and optimise network performance. ",
+            secondPara:
+              "Its powerful scanning engine can detect hosts and services on a wide range of network protocols, including TCP, UDP, and ICMP. It can also perform a range of scanning techniques, including ping scans, port scans, and OS detection. One of the key advantages of Nmap is its versatility and customisation options.",
+            boldText: "",
+            title: "Nmap",
+            lists: [
+              "It offers a wide range of scanning options and configuration parameters, allowing users to tailor the tool to their specific needs and preferences. ",
+              "It also provides integration with other tools and platforms, including network vulnerability scanners and intrusion detection systems. ",
+              "In addition to its scanning features, Nmap also offers a range of scripting and automation options, allowing users to automate their scanning and analysis tasks and integrate with other tools and platforms. ",
+              "Its powerful reporting engine allows users to generate detailed reports on their network scans and analysis, making identifying and remediating security vulnerabilities easier.",
+            ],
+            lastPara:
+              "Overall, Nmap is a powerful and comprehensive network scanning tool that provides users with a range of features and tools to discover hosts and services on a network, identify security vulnerabilities and map network architecture.",
+          },
+          {
+            id: 10,
+            firstPara:
+              "inSSIDer is a popular Windows-based wireless network scanner that allows users to discover and analyse wireless networks in their vicinity. It is used by security professionals, network administrators, and wireless network enthusiasts to troubleshoot wireless network issues, optimise wireless network performance, and identify security vulnerabilities. inSSIDer offers a range of features and tools to help users analyse wireless networks.",
+            secondPara: "",
+            boldText: "",
+            title: "inSSIDer",
+            lists: [
+              "Its wireless network scanner can detect and display information on wireless networks, including inSSIDer, signal strength, encryption type, and channel. ",
+              "It can also perform a range of scanning techniques, including active scanning, passive scanning, and war driving. ",
+              "One of the key advantages of inSSIDer is its ease of use and user-friendly interface. ",
+              "It provides clear and concise information on wireless networks, making it easy for users to understand and analyse their wireless network environment. ",
+              "Additionally, a variety of customisation options are provided, enabling users to tailor the tool to meet their specific needs and preferences. ",
+              "inSSIDer includes a variety of statistics and visualisation tools as well to its scanning features that help users in comprehend wireless network traffic patterns and enhance network efficiency.  ",
+            ],
+            lastPara:
+              "Overall, inSSIDer is a powerful and comprehensive wireless network scanner that provides users with a range of features and tools to analyse wireless networks, troubleshoot network issues, and optimise network performance.  ",
+          },
+          {
+            id: 11,
+            firstPara:
+              "Tor (The Onion Router) is a free and open-source network protocol that allows users to browse the internet anonymously. It is used by individuals and organisations to protect their privacy, avoid censorship and surveillance, and access content that may be restricted in their location. Tor works by routing internet traffic through a network of volunteer-operated servers known as nodes or relays. Each relay in the network only knows the IP address of the previous and next relays in the chain, creating multiple layers of encryption and making it difficult for anyone to trace the source of the traffic. ",
+            secondPara: "",
+            boldText: "",
+            title: "Tor",
+            lists: [
+              "One of the key advantages of Tor is its ability to protect user privacy & anonymity. ",
+              "By encrypting internet traffic and routing it through multiple relays, Tor makes it difficult for anyone to monitor or track user activity. ",
+              "It also allows users to access content that may be blocked or censored in their location, such as social media, news sites, and messaging apps. ",
+              "In addition to its anonymity features, Tor also offers a range of security and privacy tools, including a built-in web browser, support for end-to-end encryption, and protection against common internet threats, such as malware and phishing attacks.    ",
+            ],
+            lastPara:
+              "Overall, Tor is a powerful and versatile tool that provides users with a range of features and tools to protect their privacy and security online. ",
+          },
+          {
+            id: 12,
+            firstPara:
+              "Aircrack-NG is a popular open-source network security tool that is used for testing and analysing wireless networks. It is used by security professionals, network administrators, and penetration testers to test the security of wireless networks, identify vulnerabilities, and perform network audits. Aircrack-ng offers a range of features and tools to help users analyse wireless networks. Its wireless network scanner can detect and display information on wireless networks, including SSID, signal strength, encryption type, and channel. Aircrack-NG can perform a range of scanning techniques, including active scanning and passive scanning.",
+            secondPara: "",
+            boldText: "",
+            title: "Aircrack-NG ",
+            lists: [
+              "Its ability to perform wireless network cracking and analysis. ",
+              "It can crack WEP and WPA-PSK encryption on wireless networks and capture network traffic for further analysis. ",
+              "It offers a range of customisation options, allowing users to tailor the tool to their specific needs and preferences. ",
+              "In addition to its cracking and analysis features, Aircrack-ng also offers a range of scripting and automation options, allowing users to automate their scanning and analysis tasks and integrate with other tools and platforms  ",
+            ],
+            lastPara:
+              "Overall, Aircrack-ng is a powerful and comprehensive wireless network security tool that provides users with a range of features and tools to analyse and test wireless networks.",
+          },
+          {
+            id: 13,
+            firstPara:
+              "Splunk is a powerful and versatile data analysis platform used by organisations to collect, analyse, and visualise large amounts of machine-generated data in real-time. It is used by security professionals, IT administrators, and business analysts to gain insights into their systems, applications, and processes and to detect and remediate security threats and performance issues. One of the key advantages of Splunk is its ability to collect and analyse data from a wide range of sources, including servers, applications, network devices, and security systems. ",
+            secondPara: "",
+            boldText: "",
+            title: "Splunk",
+            lists: [
+              "It provides a centralised platform for organisations to monitor and analyse data in real-time, making it easier to detect and remediate issues as they arise. ",
+              "Splunk also offers a range of advanced analytics and visualisation tools, allowing users to gain insights into their data and identify trends and patterns. ",
+              "Its machine learning and artificial intelligence capabilities enable it to identify anomalies and threats automatically, making it easier for organisations to detect and respond to security threats quickly. ",
+              "In addition to its data analysis and visualisation features, Splunk also offers a range of integration options, allowing users to integrate with other tools and platforms, such as security information and event management (SIEM) systems, cloud platforms, and IT service management (ITSM) tools. This makes it easier for organisations to streamline their operations and improve their overall security posture.  ",
+            ],
+            lastPara:
+              "Overall, Splunk is a powerful and comprehensive data analysis platform that provides organisations with a range of features and tools to monitor and analyse their systems, applications, and processes.  ",
+          },
+          {
+            id: 14,
+            firstPara:
+              "Wazuh is an open-source security information and event management (SIEM) platform that provides organisations with a comprehensive set of tools to monitor and analyse security events across their network. It is used by security professionals and IT administrators to detect and respond to security threats in real-time and to improve the overall security posture of their organisation. One of the key advantages of Wazuh is its ability to collect, monitor, and analyse security events from a wide range of sources, including servers, network devices, and cloud platforms.  ",
+            secondPara: "",
+            boldText: "",
+            title: "Wazuh – SIEM",
+            lists: [
+              "Wazuh offers a range of compliance and regulatory compliance features, allowing organisations to monitor and enforce security policies and regulatory requirements, such as PCI DSS, HIPAA, and GDPR. ",
+              "Its powerful reporting and visualisation tools allow organisations to generate detailed reports on security events and compliance status, making it easier to demonstrate compliance to auditors and stakeholders. ",
+              "In addition to its SIEM features, Wazuh also offers a range of intrusion detection and prevention (IDS/IPS) capabilities, allowing organisations to detect and respond to known and unknown threats in real-time. ",
+              "Its integration options with other security tools and platforms, such as endpoint detection and response (EDR) tools and vulnerability scanners, make it easier for organisations to streamline their security operations and improve their overall security posture",
+            ],
+            lastPara:
+              "Overall, Wazuh is a comprehensive and powerful open-source SIEM platform that provides organisations with a range of features and tools to monitor and analyse security events across their network.",
           },
         ],
         defaultCurrent: 1,
@@ -3767,10 +3901,10 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Programme in design thinking course",
-        text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
+        title: "Certification Programme in Design Thinking",
+        text: "Upskill yourself with a course in Design thinking. It is an innovative problem-solving approach used by leading organizations worldwide. Learn this valuable skill through our Design Thinking course and unleash your creativity to solve complex problems. Enroll yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
-          "10 Weeks Course",
+          "08 Weeks Course",
           "Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
@@ -3780,12 +3914,13 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
+        "Digital Regenesys' Design Thinking course is an online training program that teaches participants the principles of design thinking, a creative problem-solving approach used by leading organizations worldwide. Participants will learn how to apply design thinking to real-world challenges and develop innovative solutions. The course is ideal for professionals looking to enhance their problem-solving and innovation skills. Enroll now and transform your mindset!",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1: "Get exposure to Yammer, Excel, Discord, and Slack",
+      desc1:
+        "Exposure to a proven problem-solving approach empowers you to think creatively, develop user-centric solutions, and drive innovation in your organizations.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -3796,7 +3931,8 @@ export const courseData = {
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      desc4:
+        "Transform your problem-solving skills and drive innovation with our Design Thinking course. This innovative approach empowers you to develop user-centric solutions and unlock their creative potential.",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
@@ -3844,56 +3980,80 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "Week 1",
-            lists: ["Introduction to Project Management", "Project Profiling"],
-          },
-          {
-            id: 2,
-            title: "Week 2",
-            lists: ["Developing Team Capabilities"],
-          },
-          {
-            id: 3,
-            title: "Week 3",
-            lists: ["Planning and Managing"],
-          },
-          {
-            id: 4,
-            title: "Week 4",
-            lists: ["Time Management"],
-          },
-          {
-            id: 5,
-            title: "Week 5",
-            lists: ["Monitoring and Reporting", "Quality Management"],
-          },
-          {
-            id: 6,
-            title: "Week 6",
-            lists: ["Project Closure"],
-          },
-          {
-            id: 7,
-            title: "Week 7",
-            lists: ["Change Management", "Disaster Management"],
-          },
-          {
-            id: 8,
-            title: "Week 8",
+            title: "Introduction to Design Thinking",
             lists: [
-              "International Project Management",
-              "Software for Project Management - (Microsoft Project Plan- MPP)",
+              "Identifying Critical Problems",
+              "Design Thinking Foundations",
             ],
           },
           {
-            id: 9,
-            title: "Week 9",
-            lists: ["Design Thinking"],
+            id: 2,
+            title: "Innovation and Design Thinking",
+            lists: [
+              "What is Innovation",
+              "Types of Innovation",
+              "Human-Centered Innovation",
+            ],
           },
           {
-            id: 10,
-            title: "Week 10",
-            lists: ["Contracts and Agreement", "Industry Expert Session"],
+            id: 3,
+            title: "Design Thinking Mindset",
+            lists: [
+              "Elements of Design Thinking mindset",
+              "Need for Design thinking mindset",
+              "Applying Design Thinking Mindset to real-world problems",
+              "Applying Lean thinking into Design Thinking",
+            ],
+          },
+          {
+            id: 4,
+            title: "Design Thinking for Creative Problem Solving",
+            lists: [
+              "Design challenges & preliminaries",
+              "An Introduction to the five-stage process of Design Thinking",
+              "Identifying situations where learners can apply such frameworks in their industry",
+              "Apply Design thinking framework to real-world challenges",
+              "Implementation timeline",
+              "Considerations for resource allocation",
+            ],
+          },
+          {
+            id: 5,
+            title: "Establishing Design Thinking in organization",
+            lists: ["Scaling up", "Design Thinking & Organizational culture"],
+          },
+          {
+            id: 6,
+            title:
+              "Digital Transformation: Integrating Design Thinking and Technology",
+            lists: [
+              "Introduction to Digital Transformation ",
+              "Design Thinking as a Strategy for Digital Transformation",
+            ],
+          },
+          {
+            id: 7,
+            title: "User Experience Research and Design Thinking",
+            lists: [
+              "Introduction to User-Centered Design Thinking",
+              "Techniques for Conducting User Experience Research",
+              "Integrating User Experience Research into the Design Thinking Process",
+              "Analyzing User Experience Research Data to Inform Design Decisions",
+              "Prototyping and Iterating Designs Based on User Experience Research",
+              "Evaluating the Impact of User Experience Research on Design Thinking Outcomes",
+              "Overcoming Challenges and Obstacles in Integrating User Experience Research and Design Thinking",
+            ],
+          },
+          {
+            id: 8,
+            title:
+              "Design Thinking for Data Science: User Needs and Data Insights",
+            lists: [
+              "Part 1: Introduction to Data Science",
+              "Part 2: Applying Design Thinking Principles to Data Science",
+              "Part 3: Case Studies and Practical Applications",
+              "Target Audience",
+            ],
           },
         ],
         defaultCurrent: 1,
