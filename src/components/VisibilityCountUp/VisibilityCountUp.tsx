@@ -20,7 +20,12 @@ const VisibilityCountUp = ({ count = 0 }) => {
     >
       {count > 0 ? (
         <span>
-          <CountUp thousandsSeparator={","} isCounting end={count} duration={3.2} />
+          <CountUp
+            thousandsSeparator={","}
+            isCounting
+            end={count}
+            duration={3.2}
+          />
         </span>
       ) : (
         <div></div>

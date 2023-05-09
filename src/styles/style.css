@@ -3754,6 +3754,17 @@ tns-controls-tools {
 .accordion-box {
   position: relative;
 }
+.accordion-box .content span {
+  font-weight: 400;
+  display: block;
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+}
+.accordion-box strong {
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 700;
+}
 
 .accordion-box .block {
   position: relative;
@@ -3854,11 +3865,14 @@ tns-controls-tools {
   align-items: center;
   box-shadow: 3px 3px 0 0 #ffe55b;
   float: left;
+  position: absolute;
+  left: 0px;
 }
 
 .accordion-box .block .acc-content li {
   margin-bottom: 20px;
   line-height: 24px;
+  padding-left: 38px;
 }
 
 .accordion-box .block .content .text {

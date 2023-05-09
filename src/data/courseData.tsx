@@ -1658,9 +1658,9 @@ export const allCourseList = [
   },
   {
     id: 105,
-    name: "Project Management",
+    name: "Certification Programme in Design Thinking",
     code: "DTC",
-    description: "Project Management",
+    description: "Certification Programme in Design Thinking",
     parent_id: null,
     mode_id: 1,
     isAddon: false,
@@ -1701,7 +1701,7 @@ export const allCourseList = [
         id: 164,
         course_id: 28,
         country_id: 1,
-        price: 10499,
+        price: 67499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1715,7 +1715,7 @@ export const allCourseList = [
         id: 137,
         course_id: 28,
         country_id: 2,
-        price: 61989,
+        price: 13499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1729,7 +1729,7 @@ export const allCourseList = [
         id: 191,
         course_id: 28,
         country_id: 3,
-        price: 284249,
+        price: 365499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1743,7 +1743,7 @@ export const allCourseList = [
         id: 218,
         course_id: 28,
         country_id: 4,
-        price: 83449,
+        price: 107499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1757,7 +1757,7 @@ export const allCourseList = [
         id: 236,
         course_id: 28,
         country_id: 5,
-        price: 689,
+        price: 889,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
