@@ -19,7 +19,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
         <Carousel.Item key={index}>
           <div
             className="w-100 position-relative"
-            style={{ minHeight: "60vh" }}
+            style={{ minHeight: "500px" }}
           >
             <Image
               src={`/assets/images/background/${image}`}

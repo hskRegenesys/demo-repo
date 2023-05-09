@@ -29,7 +29,7 @@ const BlogContainer = ({ slug }: { slug: string }) => {
   }, [slug]);
 
   return (
-    <div style={{ paddingTop: "100px" }}>
+    <div style={{ paddingTop: "85px" }}>
       <div className="">
         <div
           className="w-100 d-grid blog-container-bg-image"

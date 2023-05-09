@@ -9,7 +9,7 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
         <div className="blog-grid-column">
           <div
             className="w-100 rounded position-relative overflow-hidden"
-            style={{ height: "150px" }}
+            style={{ height: "108px" }}
           >
             {post?.yoast_head_json?.og_image?.map((img) => (
               <Image
