@@ -10,8 +10,8 @@ import { carousalProps } from "./dataTypes";
 
 const BlogsBody = () => {
   return (
-    <div style={{ paddingTop: "100px" }}>
-      <div className="my-5 position-relative">
+    <div style={{ paddingTop: "85px" }}>
+      <div className="position-relative">
         <div className="border border-dark">
           <CarouselComponent carouselProps={carousalProps} />
         </div>

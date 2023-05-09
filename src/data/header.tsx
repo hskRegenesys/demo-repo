@@ -69,7 +69,17 @@ const navItems = [
 
 export const blogsNavItem = [
   { id: 1, name: "Home", href: "/blogs" },
-
+  {
+    id: 3,
+    name: "Blog",
+    href: "/blogs",
+    subNavItems: [],
+  },
+  {
+    id: 2,
+    name: "Digital Regenesys",
+    href: "/",
+  },
   {
     id: 4,
     name: "Courses",
@@ -80,23 +90,12 @@ export const blogsNavItem = [
     ],
   },
   {
-    id: 3,
-    name: "Blog",
-    href: "/blogs",
-    subNavItems: [],
-  },
-  {
-    id: 1,
-    name: "Digital Regenesys",
-    href: "/",
-  },
-  {
-    id: 2,
+    id: 5,
     name: "About",
     href: "/about",
   },
   {
-    id: 8,
+    id: 6,
     name: "Contact",
     href: "/contact",
   },

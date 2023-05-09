@@ -18,7 +18,7 @@ const nextConfig = {
     ENV_NAME: process.env.ENV_NAME,
   },
   images: {
-    domains: ["www.regenesys.net"],
+    domains: ["www.regenesys.net", "blog-api.digitalregenesys.com"],
   },
 };
 

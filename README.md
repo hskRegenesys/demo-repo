@@ -5,20 +5,20 @@
 ENV_NAME=development
 LEADS_API_BASE_URL=https://uat-api-new.digitalregenesys.com/api
 NEXT_PUBLIC_DR_API_BASE_URL=https://uat-api-new.digitalregenesys.com/api
-NEXT_PUBLIC_WP_REST_API=https://www.regenesys.net/reginsights/wp-json/wp/v2
+NEXT_PUBLIC_WP_REST_API=https://blog-api.digitalregenesys.com/wp-json/wp/v2
 
 
 # OR for windows environment
 set ENV_NAME=development
 set LEADS_API_BASE_URL=https://uat-api-new.digitalregenesys.com/api
 set NEXT_PUBLIC_DR_API_BASE_URL=https://uat-api-new.digitalregenesys.com/api
-set NEXT_PUBLIC_WP_REST_API=https://www.regenesys.net/reginsights/wp-json/wp/v2
+set NEXT_PUBLIC_WP_REST_API=https://blog-api.digitalregenesys.com/wp-json/wp/v2
 
 # OR for Linux environment
 export ENV_NAME=development
 export LEADS_API_BASE_URL=https://uat-api-new.digitalregenesys.com/api
 export NEXT_PUBLIC_DR_API_BASE_URL=https://uat-api-new.digitalregenesys.com/api
-export NEXT_PUBLIC_WP_REST_API=https://www.regenesys.net/reginsights/wp-json/wp/v2
+export NEXT_PUBLIC_WP_REST_API=https://blog-api.digitalregenesys.com/wp-json/wp/v2
 
 
 ## Getting Started

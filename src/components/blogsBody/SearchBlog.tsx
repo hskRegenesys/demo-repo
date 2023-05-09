@@ -26,7 +26,7 @@ const SearchBlog = ({ query }: { query: string }) => {
   }, [query]);
 
   return (
-    <div style={{ paddingTop: "150px" }}>
+    <div style={{ paddingTop: "85px" }}>
       <div className="d-flex justify-content-center text-center py-5 bg-light-green">
         <div>
           <div>
