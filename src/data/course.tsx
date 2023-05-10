@@ -3930,7 +3930,7 @@ export const courseData = {
       desc3:
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
-      subTitle4: "Tools usage",
+      subTitle4: "Approach",
       desc4:
         "Transform your problem-solving skills and drive innovation with our Design Thinking course. This innovative approach empowers you to develop user-centric solutions and unlock their creative potential.",
       bg1: "/assets/images/background/reason-bg1-1.webp",
@@ -3938,12 +3938,12 @@ export const courseData = {
       bg3: "/assets/images/background/reason-bg3-1.webp",
       bg4: "/assets/images/background/reason-bg4-1.webp",
     },
-    courseTools: [
-      "pm/project-management-tools1.webp",
-      "pm/project-management-tools2.webp",
-      "pm/project-management-tools3.webp",
-      "pm/project-management-tools4.webp",
-    ],
+    // courseTools: [
+    //   "pm/project-management-tools1.webp",
+    //   "pm/project-management-tools2.webp",
+    //   "pm/project-management-tools3.webp",
+    //   "pm/project-management-tools4.webp",
+    // ],
 
     featureSeven: {
       title: "Meet our staff",
