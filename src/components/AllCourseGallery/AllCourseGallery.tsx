@@ -140,7 +140,6 @@ const AllCourseGallery = () => {
     );
   }
 
-  console.log("courseData", courseData.courseMode);
   const listRef = useRef(null);
   return (
     <>
