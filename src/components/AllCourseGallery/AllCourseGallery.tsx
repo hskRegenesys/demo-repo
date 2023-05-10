@@ -139,6 +139,7 @@ const AllCourseGallery = () => {
         msInWeek
     );
   }
+
   const listRef = useRef(null);
   return (
     <>
@@ -197,7 +198,15 @@ const AllCourseGallery = () => {
             <Col sm={12} md={12} lg={9}>
               <Row>
                 {courseData?.map(
-                  ({ id, name, courseMode, batches, code, parent_id }: any) => (
+                  ({
+                    id,
+                    name,
+                    courseMode,
+                    batches,
+                    durationInWeeks,
+                    code,
+                    parent_id,
+                  }: any) => (
                     <Col
                       ref={listRef}
                       key={id}
@@ -230,15 +239,7 @@ const AllCourseGallery = () => {
                             <div className="cat">
                               <ul className="about-seven__list list-unstyled">
                                 <li>{courseMode.name} classes</li>
-                                <li>
-                                  <>
-                                    {getWeeksDiff(
-                                      batchInfo(batches)?.start_date,
-                                      batchInfo(batches)?.end_date
-                                    )}
-                                    &nbsp;Weeks
-                                  </>
-                                </li>
+                                <li>{durationInWeeks} Weeks</li>
                                 <li>International certification </li>
                                 <li>Capstone projects </li>
                               </ul>
