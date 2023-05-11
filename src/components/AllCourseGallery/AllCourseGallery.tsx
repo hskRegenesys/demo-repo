@@ -148,6 +148,7 @@ const AllCourseGallery = () => {
         msInWeek
     );
   }
+
   const listRef = useRef(null);
   return (
     <>
