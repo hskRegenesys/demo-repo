@@ -259,6 +259,10 @@ const createReWrites = () => {
       source: "/all-courses/design-thinking-course",
       destination: "/all-courses/design-thinking-course/105",
     },
+    {
+      source: "/all-courses/cyber-security-course",
+      destination: "/all-courses/cyber-security-course/106",
+    },
   ];
   return paths;
 };

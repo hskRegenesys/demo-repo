@@ -13,8 +13,7 @@ const Faqs = (props: any) => {
   return (
     <Col lg={12} md={12} sm={12} className="faq-block curriculum">
       <h2 className="text-center">
-        <i className="arrow-sign-right"></i>
-        {allFaqs.courseCurriculumTitle}
+        <i className="arrow-sign-right"></i>Cybersecurity Defence Toolsbox
       </h2>
       <ul className="accordion-box clearfix">
         {faqs?.map((item: any) => {
@@ -64,12 +63,12 @@ const Faqs = (props: any) => {
   );
 };
 
-const CourseCurriculum = ({ courseDetails }: any) => {
+const CourseCurriculumTwo = ({ courseDetails }: any) => {
   return (
     <section className="faqs-section curriculum">
       <div className="auto-container">
         <Row className="clearfix">
-          {courseDetails?.CourseCurriculum?.map((allFaqs: any) => (
+          {courseDetails?.CourseCurriculumTwo?.map((allFaqs: any) => (
             <Faqs key={allFaqs.id} allFaqs={allFaqs} />
           ))}
         </Row>
@@ -78,4 +77,4 @@ const CourseCurriculum = ({ courseDetails }: any) => {
   );
 };
 
-export default CourseCurriculum;
+export default CourseCurriculumTwo;
