@@ -34,6 +34,8 @@ const AllPageStickyData: IAllPageStickyDataType = {
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
   "design-thinking-course":
     "Master the art of problem-solving and take your career to new heights with the Design Thinking Course",
+  "cyber-security-course":
+    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
 };
 
 export default AllPageStickyData;

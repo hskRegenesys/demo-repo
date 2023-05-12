@@ -28,6 +28,7 @@ import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import { allCourseList } from "@/data/courseData";
+import CourseCurriculumTwo from "@/components/CourseCurriculum/CourseCurriculumTwo";
 
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
@@ -95,6 +96,9 @@ const DigitalMarketing = (props: any) => {
           <FeatureSeven courseDetails={courseDetails} />
           <VideoOne courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
+          {CourseCurriculumTwo && (
+            <CourseCurriculumTwo courseDetails={courseDetails} />
+          )}
           <FeesDetails courseDetails={courseDetails} courseId={courseId} />
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
