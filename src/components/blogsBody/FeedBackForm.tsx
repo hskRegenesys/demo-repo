@@ -11,9 +11,7 @@ const FeedBackForm = () => {
     register,
     handleSubmit,
   }: any = useForm();
-  const onSubmit = (data: any) => {
-    console.log("form data", data);
-  };
+  const onSubmit = (data: any) => {};
   return (
     <>
       <div

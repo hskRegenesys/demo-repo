@@ -57,7 +57,7 @@ const AllCourseGallery = () => {
   useEffect(() => {
     getData();
   }, []);
-  
+
   useEffect(() => {
     setcourseData(allData);
   }, [allData]);
@@ -110,7 +110,7 @@ const AllCourseGallery = () => {
         item?.mode_id === 1 &&
         item?.isAddon === false
     );
-    const checkCourseList = ["DSCI", "DM", "PM", "CS"];
+    const checkCourseList = ["DSCI", "DM", "PM", "CSC", "DTC"];
 
     const result: any = [];
 

@@ -40,7 +40,6 @@ const Blogs = () => {
   const handleSortOpen = () => {
     setSortOpen(!sortOpen);
   };
-  console.log("est", responsePost);
   return (
     <div>
       <div className="col-12 d-flex" style={{ zIndex: 100 }}>

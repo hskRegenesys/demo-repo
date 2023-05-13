@@ -98,7 +98,7 @@ const HeaderOne = ({
         item?.isAddon === false
     );
 
-    const course = ["DSCI", "DM", "PM", "CS", "BDM"];
+    const course = ["DSCI", "DM", "PM", "CSC", "DTC"];
     const coursesSubItem: any = [];
     course.forEach((courseCode) => {
       if (filterData?.length) {

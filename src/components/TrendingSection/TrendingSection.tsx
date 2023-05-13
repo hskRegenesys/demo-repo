@@ -2,8 +2,7 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import trendingSection from "@/data/trendingSection";
 import useActive from "@/hooks/useActive";
 import dynamic from "next/dynamic";
-import Link from "next/link";
-import { courseService } from "src/services";
+
 import _ from "lodash";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -43,16 +42,11 @@ const { title, details, description } = trendingSection;
 
 const TrendingSection = () => {
   const router = useRouter();
-  // const [courseData, setcourseData] = useState<any>([]);
+
   const [isLoading, setIsLoading] = useState(true);
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  // const getData = async () => {
-  //   let courseListResponse = await courseService.allCourses();
-  //   setcourseData(courseListResponse);
-  //   courseListResponse ? setIsLoading(false) : setIsLoading(true);
-  // };
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
@@ -85,7 +79,6 @@ const TrendingSection = () => {
       }
     });
   }
-  console.log("CourseCard", CourseCard);
 
   const listRef = useRef(null);
   const ref = useActive("#testimonials");
