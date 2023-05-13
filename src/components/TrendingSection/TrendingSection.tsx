@@ -21,6 +21,7 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 });
 
 import Loader from "../Loader/Loader";
+import { allCourseList } from "@/data/courseData";
 
 const settings = {
   container: ".my-slider2",
@@ -42,23 +43,23 @@ const { title, details, description } = trendingSection;
 
 const TrendingSection = () => {
   const router = useRouter();
-  const [courseData, setcourseData] = useState<any>([]);
+  // const [courseData, setcourseData] = useState<any>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  const getData = async () => {
-    let courseListResponse = await courseService.allCourses();
-    setcourseData(courseListResponse);
-    courseListResponse ? setIsLoading(false) : setIsLoading(true);
-  };
+  // const getData = async () => {
+  //   let courseListResponse = await courseService.allCourses();
+  //   setcourseData(courseListResponse);
+  //   courseListResponse ? setIsLoading(false) : setIsLoading(true);
+  // };
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (code === dataScienceCode || code === digitalMarkrtingCode) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(
-        courseData,
+        allCourseList,
         (item) => item?.id === parent_id
       );
       courseDetails
@@ -72,28 +73,19 @@ const TrendingSection = () => {
   }
 
   useEffect(() => {
-    getData();
-  }, []);
+    setIsLoading(false);
+  }, [allCourseList]);
 
-  let courses: any = [];
   let CourseCard: any = [];
 
-  if (courseData?.length) {
-    courses = _.filter(
-      courseData,
-      (item: any) =>
-        item?.parent_id === null &&
-        item?.isAddon === false &&
-        item?.mode_id === 1
-    );
-  }
-  if (courseData?.length) {
-    courseData?.forEach(function (val: any) {
+  if (allCourseList?.length) {
+    allCourseList?.forEach(function (val: any) {
       if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
         CourseCard.push(val);
       }
     });
   }
+  console.log("CourseCard", CourseCard);
   const listRef = useRef(null);
   const ref = useActive("#testimonials");
   function getWeeksDiff(start_date: any, end_date: any) {

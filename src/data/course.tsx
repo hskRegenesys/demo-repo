@@ -349,7 +349,7 @@ export const courseData = {
         title: "Certification Programme in Basic Cyber Security",
         text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
         lists: [
-          "10 Weeks Course",
+          "13 Weeks Course",
           "Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
