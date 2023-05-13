@@ -19,6 +19,7 @@ import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
+import { allCourseApiData } from "@/data/courseData";
 
 const handleSearch = (e: any) => {
   e.preventDefault();
@@ -41,22 +42,25 @@ const AllCourseGallery = () => {
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
 
-  const getData = async () => {
-    let courseListResponse = await courseService.allCourses();
-    courseListResponse ? setIsLoading(false) : setIsLoading(true);
+  const getData = () => {
+    // let courseListResponse = await courseService.allCourses();
+    allCourseApiData ? setIsLoading(false) : setIsLoading(true);
 
     const courses = _.filter(
-      courseListResponse,
+      allCourseApiData,
       (item: any) => item?.mode_id === 1
     );
     checkData(courses);
     setAllData(courses);
-    setcourseData(courses);
   };
 
   useEffect(() => {
     getData();
   }, []);
+  
+  useEffect(() => {
+    setcourseData(allData);
+  }, [allData]);
 
   useEffect(() => {
     checkFilter(checkFilterData);

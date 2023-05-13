@@ -21,7 +21,7 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 });
 
 import Loader from "../Loader/Loader";
-import { allCourseList } from "@/data/courseData";
+import { allCourseApiData } from "@/data/courseData";
 
 const settings = {
   container: ".my-slider2",
@@ -59,7 +59,7 @@ const TrendingSection = () => {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(
-        allCourseList,
+        allCourseApiData,
         (item) => item?.id === parent_id
       );
       courseDetails
@@ -74,18 +74,19 @@ const TrendingSection = () => {
 
   useEffect(() => {
     setIsLoading(false);
-  }, [allCourseList]);
+  }, [allCourseApiData]);
 
   let CourseCard: any = [];
 
-  if (allCourseList?.length) {
-    allCourseList?.forEach(function (val: any) {
+  if (allCourseApiData?.length) {
+    allCourseApiData?.forEach(function (val: any) {
       if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
         CourseCard.push(val);
       }
     });
   }
   console.log("CourseCard", CourseCard);
+
   const listRef = useRef(null);
   const ref = useActive("#testimonials");
   function getWeeksDiff(start_date: any, end_date: any) {
