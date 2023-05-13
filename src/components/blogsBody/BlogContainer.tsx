@@ -3,17 +3,10 @@ import { LeftOutlined } from "@ant-design/icons";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
 import { wpService } from "src/services";
-import { IPostTypes } from "./dataTypes";
+import { IPostTypes, bannerImages } from "./dataTypes";
 import Link from "next/link";
 import RightSidePanel from "./RightSidePanel";
 import ApplyNow from "./ApplyNow";
-
-const bannerImages = [
-  "Project-Management-Banner.png",
-  "digital-marketing.jpeg",
-  "data-science.jpeg",
-  "cyber-security.jpg",
-];
 
 const BlogContainer = ({ slug }: { slug: string }) => {
   const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
@@ -35,11 +28,14 @@ const BlogContainer = ({ slug }: { slug: string }) => {
           className="w-100 d-grid blog-container-bg-image"
           style={{
             height: "500px",
-            background: `no-repeat url(/assets/images/background/${bannerImages[randomIndex]})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "contain",
+            backgroundImage: `url(/assets/images/background/${bannerImages[randomIndex]})`,
           }}
         >
           <div
-            className="d-none d-lg-block align-self-center pe-5 col-3 ps-5"
+            className="d-none d-lg-block align-self-center pe-5 col-3"
             style={{ justifySelf: "end" }}
           >
             <ApplyNow yellowBtn isBlack />

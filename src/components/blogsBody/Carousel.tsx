@@ -25,7 +25,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
               src={`/assets/images/background/${image}`}
               alt={`${image}-index`}
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
             />
           </div>
 

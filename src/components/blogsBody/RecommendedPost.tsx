@@ -3,8 +3,9 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
-import { IPostTypes } from "./dataTypes";
+import { IPostTypes, bannerImages } from "./dataTypes";
 import { Spinner } from "react-bootstrap";
+import { getOneRandom } from "src/utils/common";
 
 const RecommendedPost = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -21,6 +22,8 @@ const RecommendedPost = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  console.log(getOneRandom(bannerImages));
+
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
       <Spinner animation="border" />
@@ -30,40 +33,51 @@ const RecommendedPost = () => {
       <p className="text-center pt-4">
         <b>Recommended Posts</b>
       </p>
-
-      <Carousel
-        lazyLoad="ondemand"
-        autoplay
-        autoplaySpeed={6000}
-        arrows={false}
-        infinite
-        dots={false}
-        slidesToShow={6}
-        slidesToScroll={1}
-        swipeToSlide
-        vertical
-      >
-        {postList.length > 0 &&
-          postList?.map((values) => (
+      {postList.length > 0 && (
+        <Carousel
+          lazyLoad="ondemand"
+          autoplay
+          autoplaySpeed={6000}
+          arrows={false}
+          infinite
+          dots={false}
+          slidesToShow={postList.length < 6 ? postList.length - 1 : 6}
+          slidesToScroll={1}
+          swipeToSlide
+          vertical
+        >
+          {postList?.map((values) => (
             <Link key={values.id} href={`/blogs/${values?.slug}`} passHref>
-              <div className="m-2 rounded  btn" role="button">
+              <div className="m-2 w-100 rounded btn" role="button">
                 <div className="row align-items-center">
                   <div
-                    className="col-6 position-relative rounded "
+                    className="col-5 position-relative rounded "
                     style={{ height: "80px" }}
                   >
-                    {values?.yoast_head_json?.og_image?.map((img) => (
+                    {values?.yoast_head_json?.og_image ? (
+                      values?.yoast_head_json?.og_image?.map((img) => (
+                        <Image
+                          key={img.url}
+                          src={img.url.toString()}
+                          alt={values?.yoast_head_json?.og_title}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded"
+                        />
+                      ))
+                    ) : (
                       <Image
-                        key={img.url}
-                        src={img.url.toString()}
-                        alt={values?.yoast_head_json?.og_title}
+                        src={`/assets/images/background/${
+                          bannerImages[getOneRandom(bannerImages)]
+                        }`}
+                        alt={bannerImages[getOneRandom(bannerImages)]}
                         layout="fill"
                         objectFit="cover"
                         className="rounded"
                       />
-                    ))}
+                    )}
                   </div>
-                  <div className="col-6">
+                  <div className="col-7 text-start">
                     <p
                       className="m-0 py-1"
                       data-bs-toggle="tooltip"
@@ -85,7 +99,8 @@ const RecommendedPost = () => {
               </div>
             </Link>
           ))}
-      </Carousel>
+        </Carousel>
+      )}
     </div>
   );
 };

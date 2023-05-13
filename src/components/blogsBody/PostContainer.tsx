@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { IPostContainerTypes } from "./dataTypes";
+import { IPostContainerTypes, bannerImages } from "./dataTypes";
 import Link from "next/link";
+import { getOneRandom } from "src/utils/common";
 
 const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
   return (
@@ -11,15 +12,28 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
             className="w-100 rounded position-relative overflow-hidden"
             style={{ height: "108px" }}
           >
-            {post?.yoast_head_json?.og_image?.map((img) => (
+            {post?.yoast_head_json?.og_image ? (
+              post?.yoast_head_json?.og_image?.map((img) => (
+                <Image
+                  key={img.url}
+                  src={img.url.toString()}
+                  alt={post?.yoast_head_json?.og_title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded"
+                />
+              ))
+            ) : (
               <Image
-                key={img.url}
-                src={img.url.toString()}
-                alt={post?.yoast_head_json?.og_title}
+                src={`/assets/images/background/${
+                  bannerImages[getOneRandom(bannerImages)]
+                }`}
+                alt={bannerImages[getOneRandom(bannerImages)]}
                 layout="fill"
                 objectFit="cover"
+                className="rounded"
               />
-            ))}
+            )}
           </div>
           <div className="p-3 blog-grid-content">
             <p
