@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
-import { getRandom } from "src/utils/common";
+import { shuffleArray } from "src/utils/common";
 
 const Categories = () => {
   const [categoryList, setCategoryList] = useState<Array<any>>([]);
@@ -9,7 +9,7 @@ const Categories = () => {
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ per_page: 40 });
     if (response?.length > 0) {
-      getRandom(response);
+      shuffleArray(response);
       setCategoryList(response.slice(0, 6));
     }
   };
