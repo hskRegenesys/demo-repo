@@ -52,15 +52,22 @@ export const postToShow: IPostToShow = {
 
 export const carousalProps = [
   {
-    image: "digital-marketing.jpeg",
+    image: "digital-marketing.webp",
   },
   {
-    image: "data-science.jpeg",
+    image: "data-science.webp",
   },
   {
-    image: "Project-Management-Banner.png",
+    image: "Project-Management.webp",
   },
   {
     image: "cyber-security.jpg",
   },
+];
+
+export const bannerImages = [
+  "Project-Management.webp",
+  "digital-marketing.webp",
+  "data-science.webp",
+  "cyber-security.jpg",
 ];
