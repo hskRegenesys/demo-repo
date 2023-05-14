@@ -21,7 +21,7 @@ import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import Loader from "@/components/Loader/Loader";
-import { allCourseApiData } from "@/data/courseData";
+import { allCourseList } from "@/data/courseData";
 
 const Home2 = () => {
   // const [courseData, setcourseData] = useState([]);
@@ -36,9 +36,9 @@ const Home2 = () => {
 
   let courses: any = [];
 
-  if (allCourseApiData?.length) {
+  if (allCourseList?.length) {
     courses = _.filter(
-      allCourseApiData,
+      allCourseList,
       (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }

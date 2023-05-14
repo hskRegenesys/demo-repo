@@ -1,11 +1,7 @@
 import { allCourseGallery, courseCheckbox } from "@/data/allCourseGallery";
 import React, { useEffect, useState, useRef } from "react";
 import { Col, Row, Image } from "react-bootstrap";
-import dynamic from "next/dynamic";
-import Link from "next/link";
 import Form from "react-bootstrap/Form";
-import Pagination from "react-bootstrap/Pagination";
-import { courseService } from "src/services";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import {
@@ -19,7 +15,7 @@ import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
-import { allCourseApiData } from "@/data/courseData";
+import { allCourseList } from "@/data/courseData";
 
 const handleSearch = (e: any) => {
   e.preventDefault();
@@ -43,13 +39,9 @@ const AllCourseGallery = () => {
   const handleShow = () => setShow(true);
 
   const getData = () => {
-    // let courseListResponse = await courseService.allCourses();
-    allCourseApiData ? setIsLoading(false) : setIsLoading(true);
+    allCourseList ? setIsLoading(false) : setIsLoading(true);
 
-    const courses = _.filter(
-      allCourseApiData,
-      (item: any) => item?.mode_id === 1
-    );
+    const courses = _.filter(allCourseList, (item: any) => item?.mode_id === 1);
     checkData(courses);
     setAllData(courses);
   };

@@ -20,7 +20,7 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 });
 
 import Loader from "../Loader/Loader";
-import { allCourseApiData } from "@/data/courseData";
+import { allCourseList } from "@/data/courseData";
 
 const settings = {
   container: ".my-slider2",
@@ -53,7 +53,7 @@ const TrendingSection = () => {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(
-        allCourseApiData,
+        allCourseList,
         (item) => item?.id === parent_id
       );
       courseDetails
@@ -68,12 +68,12 @@ const TrendingSection = () => {
 
   useEffect(() => {
     setIsLoading(false);
-  }, [allCourseApiData]);
+  }, [allCourseList]);
 
   let CourseCard: any = [];
 
-  if (allCourseApiData?.length) {
-    allCourseApiData?.forEach(function (val: any) {
+  if (allCourseList?.length) {
+    allCourseList?.forEach(function (val: any) {
       if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
         CourseCard.push(val);
       }
