@@ -7,20 +7,35 @@ import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import FaqsSection from "@/components/FaqsSection/FaqsSection";
-import CourseDetails from "@/components/CourseDetails/CourseDetails";
+
+const FaqsSection = dynamic(
+  () => import("@/components/FaqsSection/FaqsSection")
+);
+const CourseDetails = dynamic(
+  () => import("@/components/CourseDetails/CourseDetails")
+);
 import VideoOne from "@/components/VideoSection/VideoOne";
 import SkillDetailSection from "@/components/SkillDetailSection/SkillDetailSection";
 import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
 import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
-import ToolsCovered from "@/components/ToolsCovered/ToolsCovered";
+
+const ToolsCovered = dynamic(
+  () => import("@/components/ToolsCovered/ToolsCovered")
+);
 import React from "react";
 
-import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
+const CourseCurriculum = dynamic(
+  () => import("@/components/CourseCurriculum/CourseCurriculum")
+);
 
-import JoinReasons from "@/components/JoinReasons/JoinReasons";
+const JoinReasons = dynamic(
+  () => import("@/components/JoinReasons/JoinReasons")
+);
 
-import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
+const FeatureSeven = dynamic(
+  () => import("@/components/FeaturesSection/FeatureSeven")
+);
+
 import { useRouter } from "next/router";
 import { brochureDetails, courseData } from "@/data/course";
 import _ from "lodash";
@@ -33,7 +48,9 @@ import StickyBar from "@/components/StickyFooter/Sticky";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import { allCourseList } from "@/data/courseData";
 
-import CourseCurriculumTwo from "@/components/CourseCurriculum/CourseCurriculumTwo";
+const CourseCurriculumTwo = dynamic(
+  () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
+);
 
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
@@ -44,7 +61,7 @@ const DigitalMarketing = (props: any) => {
     allCourseList,
     (item) => item.id === parseInt(courseId)
   );
-  console.log("coursePriceDetails", coursePriceDetails);
+
   const parentCourse = _.filter(
     allCourseList,
     (item) => item.parent_id === null
