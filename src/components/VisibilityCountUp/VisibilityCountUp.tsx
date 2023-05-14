@@ -6,7 +6,6 @@ const VisibilityCountUp = ({ count = 0 }) => {
   const [countStart, setCountStart] = useState(false);
 
   const onVisibilityChange = (isVisible: boolean) => {
-    console.log("isVisible ====>", isVisible);
     if (isVisible) {
       setCountStart(true);
     }

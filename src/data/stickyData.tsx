@@ -32,7 +32,7 @@ const AllPageStickyData: IAllPageStickyDataType = {
     "Grasp the Fundamentals of Digital Marketing for Career Advancement",
   "cyber-security-fundamentals-course":
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
-  "design-thinking-course":
+  "design-thinking":
     "Master the art of problem-solving and take your career to new heights with the Design Thinking Course",
   "cyber-security-course":
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",

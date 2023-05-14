@@ -12,7 +12,6 @@ import { wpService } from "src/services";
 const Blogs = () => {
   const [searchData, setSearchData] = useState([]);
   const search = (val: string) => {
-    console.log("val", val);
     searchAPI(val);
   };
   const searchAPI = async (value: any) => {

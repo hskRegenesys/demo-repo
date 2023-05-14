@@ -21,23 +21,24 @@ import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import Loader from "@/components/Loader/Loader";
+import { allCourseApiData } from "@/data/courseData";
 
 const Home2 = () => {
-  const [courseData, setcourseData] = useState([]);
-  const getData = async () => {
-    let courseListResponse = await courseService.allCourses();
-    setcourseData(courseListResponse);
-  };
+  // const [courseData, setcourseData] = useState([]);
+  // const getData = async () => {
+  //   let courseListResponse = await courseService.allCourses();
+  //   setcourseData(courseListResponse);
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   let courses: any = [];
 
-  if (courseData?.length) {
+  if (allCourseApiData?.length) {
     courses = _.filter(
-      courseData,
+      allCourseApiData,
       (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }

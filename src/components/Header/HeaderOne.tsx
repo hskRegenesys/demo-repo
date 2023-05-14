@@ -19,6 +19,7 @@ import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
 import StickyData from "../StickyHeaderForm/StickyData";
 import { Input, Space } from "antd";
+import { allCourseApiData } from "@/data/courseData";
 
 const { Search } = Input;
 const {
@@ -82,13 +83,14 @@ const HeaderOne = ({
   };
 
   const allCourses = async () => {
-    const allData = await courseService.allCourses();
-    allData ? setIsLoading(false) : setIsLoading(true);
+    // const allData = await courseService.allCourses();
+    allCourseApiData ? setIsLoading(false) : setIsLoading(true);
+
     const allCategories = await wpService.allCategories({ per_page: 100 });
     allCategories ? setIsLoading(false) : setIsLoading(true);
 
     const filterData = _.filter(
-      allData,
+      allCourseApiData,
 
       (item) =>
         item?.parent_id === null &&
@@ -96,13 +98,15 @@ const HeaderOne = ({
         item?.isAddon === false
     );
 
-    const course = ["DSCI", "DM", "PM", "CS", "BDM"];
+    const course = ["DSCI", "DM", "PM", "CSC", "DTC"];
     const coursesSubItem: any = [];
     course.forEach((courseCode) => {
       if (filterData?.length) {
         filterData?.forEach((item) => {
           if (item.code === courseCode) {
-            if (_.find(allData, (course) => course.parent_id === item.id)) {
+            if (
+              _.find(allCourseApiData, (course) => course.parent_id === item.id)
+            ) {
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
@@ -111,7 +115,7 @@ const HeaderOne = ({
             } else {
               const courseName = _.find(
                 filterData,
-                (courseItem) => courseItem === item?.parent_id
+                (courseItem) => courseItem.id === item?.parent_id
               );
               coursesSubItem?.push({
                 id: item?.id,
@@ -130,7 +134,7 @@ const HeaderOne = ({
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
-            allData,
+            allCourseApiData,
             (item) => item?.parent_id === data?.id
           ).map((subCourse) => {
             return {
@@ -155,7 +159,7 @@ const HeaderOne = ({
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
-            allData,
+            allCourseApiData,
             (item) => item?.parent_id === data?.id
           ).map((subCourse) => {
             return {

@@ -95,8 +95,6 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
     }
   }
 
-  console.log("coursePriceDetails", coursePriceDetails);
-
   return (
     <section className="product-details">
       <div className="auto-container">

@@ -226,20 +226,20 @@ const createReWrites = () => {
       source: "/all-courses/data-science/applied-data-science",
       destination: "/all-courses/applied-data-science/23",
     },
-    {
-      source: "/all-courses/digital-marketing/basic-digital-marketing",
-      destination: "/all-courses/basic-digital-marketing/25",
-    },
+    // {
+    //   source: "/all-courses/digital-marketing/basic-digital-marketing",
+    //   destination: "/all-courses/basic-digital-marketing/25",
+    // },
     {
       source: "/all-courses/digital-marketing/advanced-digital-marketing",
       destination: "/all-courses/advanced-digital-marketing/26",
     },
+    // {
+    //   source: "/all-courses/digital-marketing/applied-digital-marketing",
+    //   destination: "/all-courses/applied-digital-marketing/27",
+    // },
     {
-      source: "/all-courses/digital-marketing/applied-digital-marketing",
-      destination: "/all-courses/applied-digital-marketing/27",
-    },
-    {
-      source: "/all-courses/digital-marketing/basic-digital-marketing-course",
+      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
       destination: "/all-courses/basic-digital-marketing-course/101",
     },
     {
@@ -256,8 +256,8 @@ const createReWrites = () => {
       destination: "/all-courses/cyber-defense-toolbox-course/104",
     },
     {
-      source: "/all-courses/design-thinking-course",
-      destination: "/all-courses/design-thinking-course/105",
+      source: "/all-courses/design-thinking",
+      destination: "/all-courses/design-thinking/105",
     },
     {
       source: "/all-courses/cyber-security-course",
