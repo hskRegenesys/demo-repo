@@ -5,9 +5,9 @@ const discoverSection = {
       id: 1,
       image: "contact-location.webp",
       title: "Location",
-      href: "https://www.google.com/maps/place/Digital+Regenesys+-+India/@19.077271,73.0050634,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c1f0b34f5f01:0x6ddb59351ca12c12!8m2!3d19.077271!4d73.0072521",
+      href: "https://www.google.com/maps/place/548+Market+St,+San+Francisco,+CA+94104,+USA/@37.790069,-122.400744,16z/data=!4m6!3m5!1s0x808581942ecaf9e3:0x163a8f17c7ba01ee!8m2!3d37.7900688!4d-122.4007436!16s%2Fg%2F11t276pg_5?hl=en",
       buttonText: "Open in Google Map",
-      text: "Proxima Building,\n Unit 1101 11th Floor, Plot 19, \n Sector 30A, Vashi Navi Mumbai,\n India, 400705",
+      text: "548 Market St. #243271, \n  San Francisco,\n California 94104-5401",
     },
   ],
 

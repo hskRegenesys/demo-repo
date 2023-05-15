@@ -243,7 +243,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                                     : ""
                                 }
                               >
-                                {item.country_id === southAfricaCountryId && (
+                                {/* {item.country_id === southAfricaCountryId && (
                                   // <Image src={flagsa} alt="South Africa" />
                                   <Image
                                     priority={true}
@@ -253,7 +253,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                                     height="69"
                                     alt="South Africa"
                                   />
-                                )}
+                                )} */}
                                 {item.country_id === indiaCountryId && (
                                   // <Image src={flagind} alt="India" />
                                   <Image

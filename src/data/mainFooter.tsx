@@ -24,19 +24,27 @@ export const mainFooter = {
   address:
     "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
   address2:
-    "Proxima Building,\n Unit 1101 11th Floor, Plot 19, \n Sector 30A, Vashi Navi Mumbai,\n India, 400705",
+    "548 Market \n St. #243271,\n San Francisco,\n California 94104-5401",
   address3:
     "8th Floor,  \n Churchgate Tower 2  \n PC 31 Victoria Island, \n  Nigeria",
+  address4:
+    "8th Floor,  \n Delta Corner Tower,\n Chiromo Road, 07th Floor, \n Westlands, Nairobi, 00800",
 
   phone: "+27 (11) 669 5000",
-  phone2: "+91 1800 212 9950",
+  phone2: "",
   phone3: "+234 (1) 453 0959",
+  phone4: "",
   web: "www.regenesys.net",
   weblink: "https://www.regenesys.net/",
-  web2: "www.india.regenesys.net",
-  web2link: "https://www.india.regenesys.net/",
+
+  web2: "",
+  web2link: "",
+
   web3: "www.nigeria.regenesys.net",
   web3link: "https://www.nigeria.regenesys.net/",
+
+  web4: "www.nigeria.regenesys.net",
+  web4link: "https://www.nigeria.regenesys.net/",
 
   email: "needhelp@linoor.com",
   textBottom:
