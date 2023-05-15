@@ -19,7 +19,7 @@ import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
-import { allCourseApiData } from "@/data/courseData";
+import { allCourseList } from "@/data/courseData";
 
 const settings = {
   container: ".sub-courses",
@@ -49,22 +49,19 @@ const SubCourseDetails = ({ page }: any) => {
   const getData = async () => {
     setSubCourse([]);
 
-    allCourseApiData ? setIsLoading(false) : setIsLoading(true);
-    const courses = _.filter(
-      allCourseApiData,
-      (item: any) => item?.mode_id === 1
-    );
+    allCourseList ? setIsLoading(false) : setIsLoading(true);
+    const courses = _.filter(allCourseList, (item: any) => item?.mode_id === 1);
     setCourseData(courses);
     if (page === "data-science") {
       const subCourse = _.filter(
-        allCourseApiData,
+        allCourseList,
         (item) => item.parent_id === 10
       );
 
       setSubCourse(subCourse);
     } else {
       const subCourse = _.filter(
-        allCourseApiData,
+        allCourseList,
         (item) => item.parent_id === 24
       );
       setSubCourse(subCourse);
