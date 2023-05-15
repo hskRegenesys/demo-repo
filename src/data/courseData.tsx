@@ -1266,7 +1266,7 @@ export const allCourseList = [
         id: 164,
         course_id: 28,
         country_id: 1,
-        price: 67499,
+        price: 13499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
@@ -1280,7 +1280,7 @@ export const allCourseList = [
         id: 137,
         course_id: 28,
         country_id: 2,
-        price: 13499,
+        price: 67499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
         country: {
