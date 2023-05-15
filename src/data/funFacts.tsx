@@ -3,7 +3,7 @@ export const funFactSix = [
     id: 1,
     image: "assets/images/icons/globe.svg",
     count: 0,
-    text: "South Africa, Nigeria, Kenya & India",
+    text: "USA, South Africa, Nigeria, Kenya & India",
   },
   {
     id: 2,
