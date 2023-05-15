@@ -101,6 +101,7 @@
     position: relative;
     padding: 30px;
   }
+
   .main-footer .links-widget ul li {
     float: left;
     margin-right: 30px;
@@ -214,6 +215,7 @@
 
   .nav-outer .mobile-nav-toggler {
     display: block;
+    margin: 14px 0px 0px;
   }
 
   .header-style-two .nav-outer .mobile-nav-toggler {
@@ -389,6 +391,14 @@
 @media only screen and (max-width: 991px) {
   .discover-block .inner-box {
     padding: 10px;
+  }
+  .main-header .header-upper {
+    top: 0px;
+  }
+  .sticky-contant span {
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 5px;
   }
 
   .testimonials-five-card__text {
@@ -707,7 +717,7 @@
   }
 
   .page-banner .inner-container {
-    padding: 180px 0px 50px;
+    padding: 160px 0px 10px;
   }
 
   .error-section .big-text {
@@ -792,6 +802,44 @@
   .news-two__content h3 {
     font-size: 30px;
   }
+  .sticky-contant span {
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .sticky-form-header .contact-section {
+    padding: 20px !important;
+    background-color: #fff;
+  }
+  .sticky-form-header .sticky-form-fields-group {
+    display: block;
+  }
+  .sticky-form {
+    display: block;
+    padding-bottom: 12px;
+    border-bottom: none;
+  }
+  .sticky-form-header .contact-section .btn-style-two {
+    margin: 0 auto;
+    display: table;
+  }
+  .sticky-form-header .closeBtn {
+    position: absolute;
+    right: 24%;
+    top: 50px;
+  }
+  .sticky-form-header .inline-button {
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .sticky-form-header {
+    padding-bottom: 0px;
+  }
+  .closeBtn button {
+    border-radius: 2px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -802,9 +850,19 @@
   .banner-carousel .slide-item .shape-5 {
     display: none;
   }
-
+  .sticky-form-header .inline-button .btn-style-two span {
+    font-size: 15px;
+  }
   .banner-section .owl-dots {
     bottom: 20px;
+  }
+  .page-banner .bread-crumb li {
+    position: relative;
+    float: left;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
   }
 
   .banner-carousel .content-box h1 {

@@ -33,6 +33,7 @@ const JoinReasons = ({ courseDetails }: any) => {
               {/* <Image src={bg1} alt="" /> */}
               <div className="reasons-shape-image-height1">
                 <Image
+                  priority={true}
                   src={bg1}
                   layout="responsive"
                   width="500"
@@ -53,6 +54,7 @@ const JoinReasons = ({ courseDetails }: any) => {
               {/* <Image src={bg2} alt="" /> */}
               <div className="reasons-shape-image-height2">
                 <Image
+                  priority={true}
                   src={bg2}
                   layout="responsive"
                   width="484"
@@ -74,6 +76,7 @@ const JoinReasons = ({ courseDetails }: any) => {
 
               <div className="reasons-shape-image-height3">
                 <Image
+                  priority={true}
                   src={bg3}
                   layout="responsive"
                   width="484"
@@ -94,6 +97,7 @@ const JoinReasons = ({ courseDetails }: any) => {
               {/* <Image src={bg4} alt="" /> */}
               <div className="reasons-shape-image-height4">
                 <Image
+                  priority={true}
                   src={bg4}
                   layout="responsive"
                   width="484"

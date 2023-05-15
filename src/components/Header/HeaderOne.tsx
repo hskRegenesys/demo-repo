@@ -3,15 +3,25 @@ import headerData from "@/data/header";
 import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 // import { Image } from "react-bootstrap";
 import Image from "next/image";
 import NavItem from "./NavItem";
-import { courseService } from "src/services";
+import { courseService, wpService } from "src/services";
 import _ from "lodash";
 import { programBaseUrl } from "../config/constant";
 import { urlInfo } from "../config/helper";
 import { url } from "inspector";
+import StickyForm from "../StickyHeaderForm/StickyForm";
+import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
+import Loader from "../Loader/Loader";
+import StickyData from "../StickyHeaderForm/StickyData";
+import { Input, Space } from "antd";
+import { allCourseList } from "@/data/courseData";
 
+const { Search } = Input;
 const {
   title,
   logo1,
@@ -22,10 +32,12 @@ const {
   logo9,
   title2,
   navItems,
+  blogsNavItem,
   navItemsTwo,
 } = headerData;
 
 const HeaderOne = ({
+  variant = "",
   headerStyle = "header-style-one",
   logo = 1,
   onePage = false,
@@ -33,12 +45,19 @@ const HeaderOne = ({
   autoContainer = false,
   links = true,
   rightMenu = false,
+  pageTitle = "",
 }) => {
   const { scrollTop } = useScroll(120);
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
+  const [isSearching, setIsSearching] = useState(false);
   const contextRoots: any = useRootContext();
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : nav;
+
   let Logo: any =
     logo === 2
       ? logo2
@@ -57,11 +76,21 @@ const HeaderOne = ({
       Logo = logo4;
     }
   }
+
+  const onSearch = (value: string) => {
+    router.pathname !== "/blogs/search" && setIsSearching(true);
+    router.push(`/blogs/search?q=${value}`);
+  };
+
   const allCourses = async () => {
-    const allData = await courseService.allCourses();
-    const orderData: any = [];
+    // const allData = await courseService.allCourses();
+    allCourseList ? setIsLoading(false) : setIsLoading(true);
+
+    const allCategories = await wpService.allCategories({ per_page: 100 });
+    allCategories ? setIsLoading(false) : setIsLoading(true);
+
     const filterData = _.filter(
-      allData,
+      allCourseList,
 
       (item) =>
         item?.parent_id === null &&
@@ -69,24 +98,24 @@ const HeaderOne = ({
         item?.isAddon === false
     );
 
-    const course = ["DSCI", "DM", "PM", "CS", "BDM"];
+    const course = ["DSCI", "DM", "PM", "CSC", "DTC"];
     const coursesSubItem: any = [];
-
     course.forEach((courseCode) => {
       if (filterData?.length) {
         filterData?.forEach((item) => {
           if (item.code === courseCode) {
-            if (_.find(allData, (course) => course.parent_id === item.id)) {
+            if (
+              _.find(allCourseList, (course) => course.parent_id === item.id)
+            ) {
               coursesSubItem?.push({
                 id: item?.id,
                 name: item?.name,
-
                 href: `/${programBaseUrl}/${urlInfo(item?.name)}`,
               });
             } else {
               const courseName = _.find(
                 filterData,
-                (courseItem) => courseItem === item?.parent_id
+                (courseItem) => courseItem.id === item?.parent_id
               );
               coursesSubItem?.push({
                 id: item?.id,
@@ -100,13 +129,12 @@ const HeaderOne = ({
         });
       }
     });
-
     const data = navItems?.map((item: any) => {
       if (item.id === 4 && item.name === "Courses") {
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
-            allData,
+            allCourseList,
             (item) => item?.parent_id === data?.id
           ).map((subCourse) => {
             return {
@@ -126,12 +154,57 @@ const HeaderOne = ({
       return item;
     });
 
-    setNav(data);
+    const data2 = blogsNavItem?.map((item: any) => {
+      if (item.id === 4 && item.name === "Courses") {
+        item.subNavItems = coursesSubItem;
+        item.subNavItems?.map((data: any) => {
+          const filterData = _.filter(
+            allCourseList,
+            (item) => item?.parent_id === data?.id
+          ).map((subCourse) => {
+            return {
+              id: subCourse?.id,
+              name: subCourse?.name,
+              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
+                subCourse?.name
+              )}`,
+            };
+          });
+          if (filterData) {
+            data.subItems = filterData;
+          }
+        });
+      }
+      const categorySubItem: any = [];
+      if (allCategories.length > 0 && item.id === 3 && item.name === "Blog") {
+        categorySubItem.push({
+          id: 1,
+          name: "Blog Categories",
+          href: "/blogs",
+          subItems: [],
+        });
+        item.subNavItems = categorySubItem;
+        item.subNavItems?.map((data: any) => {
+          const subCategories = allCategories.map((categories: any) => {
+            return {
+              id: categories?.id,
+              name: categories?.name,
+              href: `/blogs/category/${categories?.slug}`,
+            };
+          });
+          if (subCategories) {
+            data.subItems = subCategories;
+          }
+        });
+      }
+      return item;
+    });
+
+    variant === "blog" ? setNav(data2) : setNav(data);
   };
   useEffect(() => {
     allCourses();
   }, []);
-
   const [scroll, setScroll] = useState(false);
   const checkScroll = () => {
     if (window.scrollY > 38) {
@@ -160,6 +233,8 @@ const HeaderOne = ({
         </div>
       )}
       <div className="header-upper">
+        {pageTitle !== "allCourse" && <StickyData pageTitle={pageTitle} />}
+
         <div className="auto-container d-flex clearfix">
           <div className="logo-box">
             <div className="logo">
@@ -186,7 +261,11 @@ const HeaderOne = ({
               <span className="txt">Menu</span>
             </div>
 
-            <nav className="main-menu navbar-expand-md navbar-light">
+            <nav
+              className={`main-menu navbar-expand-md navbar-light ${
+                variant === "blog" ? " blog-menu" : ""
+              }`}
+            >
               <div
                 className={
                   autoContainer ? "" : "collapse navbar-collapse show clearfix"
@@ -194,29 +273,53 @@ const HeaderOne = ({
                 id={autoContainer ? "" : "navbarSupportedContent"}
               >
                 <ul className="navigation clearfix">
-                  {newNavItems?.map((navItem: any) => (
-                    <NavItem
-                      navItem={navItem}
-                      key={navItem.id}
-                      onePage={onePage}
-                    />
-                  ))}
+                  {variant === "blog"
+                    ? blogsNavItem?.map((navItem: any) => (
+                        <NavItem
+                          navItem={navItem}
+                          key={navItem.id}
+                          onePage={onePage}
+                          isLoading={isLoading}
+                        />
+                      ))
+                    : newNavItems?.map((navItem: any) => (
+                        <NavItem
+                          navItem={navItem}
+                          key={navItem.id}
+                          onePage={onePage}
+                          isLoading={isLoading}
+                        />
+                      ))}
                 </ul>
               </div>
             </nav>
           </div>
-
-          {links && (
+          {variant === "blog" ? (
             <div className="other-links clearfix">
               <div className="link-box">
-                <Link href="https://mydigital.regenesys.net/login/index.php">
-                  <a className="theme-btn btn-style-two">
-                    <i className="btn-curve"></i>
-                    <span className="btn-title">Login</span>
-                  </a>
-                </Link>
+                <Space direction="vertical">
+                  <Search
+                    placeholder="Search Topics"
+                    onSearch={onSearch}
+                    style={{ width: 200 }}
+                    loading={isSearching}
+                  />
+                </Space>
               </div>
             </div>
+          ) : (
+            links && (
+              <div className="other-links clearfix">
+                <div className="link-box">
+                  <Link href="https://mydigital.regenesys.net/login/index.php">
+                    <a className="theme-btn btn-style-two">
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Login</span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            )
           )}
           {rightMenu && (
             <div className="right-menu">
@@ -239,6 +342,12 @@ const HeaderOne = ({
           )}
         </div>
       </div>
+      <Modal show={show}>
+        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
+      </Modal>
     </header>
   );
 };

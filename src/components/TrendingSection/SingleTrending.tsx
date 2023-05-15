@@ -27,6 +27,7 @@ const SingleTrending = ({
                   alt=""
                 /> */}
                 <Image
+                  priority={true}
                   src={`/assets/images/gallery/${image}`}
                   layout="responsive"
                   width="274"

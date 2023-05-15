@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-// import PageBanner from "@/components/BannerSection/PageBanner";
+
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
@@ -7,19 +7,36 @@ import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-// import FaqsSection from "@/components/FaqsSection/FaqsSection";
-// import CourseDetails from "@/components/CourseDetails/CourseDetails";
+
+const FaqsSection = dynamic(
+  () => import("@/components/FaqsSection/FaqsSection")
+);
+const CourseDetails = dynamic(
+  () => import("@/components/CourseDetails/CourseDetails")
+);
 import VideoOne from "@/components/VideoSection/VideoOne";
 import SkillDetailSection from "@/components/SkillDetailSection/SkillDetailSection";
-// import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
-// import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
-// import ToolsCovered from "@/components/ToolsCovered/ToolsCovered";
-import React, { useEffect, useState } from "react";
-// import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
-import JoinReasons from "@/components/JoinReasons/JoinReasons";
-import FeatureSeven from "@/components/FeaturesSection/FeatureSeven";
+import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
+import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
+
+const ToolsCovered = dynamic(
+  () => import("@/components/ToolsCovered/ToolsCovered")
+);
+import React from "react";
+
+const CourseCurriculum = dynamic(
+  () => import("@/components/CourseCurriculum/CourseCurriculum")
+);
+
+const JoinReasons = dynamic(
+  () => import("@/components/JoinReasons/JoinReasons")
+);
+
+const FeatureSeven = dynamic(
+  () => import("@/components/FeaturesSection/FeatureSeven")
+);
+
 import { useRouter } from "next/router";
-import { courseService } from "src/services";
 import { brochureDetails, courseData } from "@/data/course";
 import _ from "lodash";
 import { urlInfo } from "@/components/config/helper";
@@ -27,47 +44,33 @@ import { programBaseUrl } from "@/components/config/constant";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
 
-const PageBanner = dynamic(
-  () => import("@/components/BannerSection/PageBanner")
-);
-const FaqsSection = dynamic(
-  () => import("@/components/FaqsSection/FaqsSection")
-);
-const CourseDetails = dynamic(
-  () => import("@/components/CourseDetails/CourseDetails")
-);
-const FeesDetails = dynamic(
-  () => import("@/components/SkillDetailSection/FeesDetails")
-);
-const CourseBenefits = dynamic(
-  () => import("@/components/CourseBenefits/CourseBenefits")
-);
-const ToolsCovered = dynamic(
-  () => import("@/components/ToolsCovered/ToolsCovered")
-);
-const CourseCurriculum = dynamic(
-  () => import("@/components/CourseCurriculum/CourseCurriculum")
-);
 import StickyBar from "@/components/StickyFooter/Sticky";
-const DigitalMarketing = () => {
+import PageBanner from "@/components/BannerSection/PageBanner";
+import { allCourseList } from "@/data/courseData";
+
+const CourseCurriculumTwo = dynamic(
+  () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
+);
+
+const DigitalMarketing = (props: any) => {
   const router = useRouter();
-  const courseId = router?.query?.id;
-  const [coursePriceDetails, setcoursePrice] = useState<any>([]);
-  const [parentCourse, setParentCourse] = useState<any>([]);
-  const getData = async () => {
-    let courseListResponse = await courseService.allcoursePrice(courseId);
-    const parentCourses = await courseService.allParentCourses();
-    setParentCourse(parentCourses);
-    setcoursePrice(courseListResponse);
-  };
-  useEffect(() => {
-    if (courseId) {
-      getData();
-    }
-  }, [courseId]);
+
+  const courseId: any = router?.query?.id;
+
+  const coursePriceDetails = _.filter(
+    allCourseList,
+    (item) => item.id === parseInt(courseId)
+  );
+
+  const parentCourse = _.filter(
+    allCourseList,
+    (item) => item.parent_id === null
+  );
+
   const allContent: any = courseData;
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
+
   const brochureName: any = brochureDetails[code];
 
   const filterData = _.find(
@@ -89,10 +92,10 @@ const DigitalMarketing = () => {
   parentToParentName();
 
   return (
-    <Layout pageTitle={router?.query?.course}>
+    <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      <HeaderOne />
+      <HeaderOne pageTitle={props.course} />
       <MobileMenu />
       <SearchPopup />
       <PageBanner
@@ -116,6 +119,9 @@ const DigitalMarketing = () => {
           <FeatureSeven courseDetails={courseDetails} />
           <VideoOne courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
+          {CourseCurriculumTwo && (
+            <CourseCurriculumTwo courseDetails={courseDetails} />
+          )}
           <FeesDetails courseDetails={courseDetails} courseId={courseId} />
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
@@ -128,4 +134,8 @@ const DigitalMarketing = () => {
   );
 };
 
+export async function getServerSideProps(context: any) {
+  const { id, course } = context.query;
+  return { props: { course } };
+}
 export default DigitalMarketing;

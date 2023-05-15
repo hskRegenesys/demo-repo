@@ -20,23 +20,25 @@ import _ from "lodash";
 import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
+import Loader from "@/components/Loader/Loader";
+import { allCourseList } from "@/data/courseData";
 
 const Home2 = () => {
-  const [courseData, setcourseData] = useState([]);
-  const getData = async () => {
-    let courseListResponse = await courseService.allCourses();
-    setcourseData(courseListResponse);
-  };
+  // const [courseData, setcourseData] = useState([]);
+  // const getData = async () => {
+  //   let courseListResponse = await courseService.allCourses();
+  //   setcourseData(courseListResponse);
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   let courses: any = [];
 
-  if (courseData.length) {
+  if (allCourseList?.length) {
     courses = _.filter(
-      courseData,
+      allCourseList,
       (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }
@@ -45,7 +47,7 @@ const Home2 = () => {
     <Layout pageTitle="home">
       <Schemas type={Constants.home} />
       <Style />
-      <HeaderOne />
+      <HeaderOne pageTitle="home" />
       <MobileMenu />
       <SearchPopup />
       <HomeBanner />

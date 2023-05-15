@@ -21,6 +21,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                   {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
 
                   <Image
+                    priority={true}
                     src={`/assets/images/icons/${image}`}
                     layout="intrinsic"
                     width="232"
@@ -114,6 +115,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                   <div className="image-box">
                     {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
                     <Image
+                      priority={true}
                       src={`/assets/images/icons/${image}`}
                       layout="intrinsic"
                       width="232"

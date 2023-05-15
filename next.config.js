@@ -17,6 +17,9 @@ const nextConfig = {
   env: {
     ENV_NAME: process.env.ENV_NAME,
   },
+  images: {
+    domains: ["www.regenesys.net", "blog-api.digitalregenesys.com"],
+  },
 };
 
 const redirectURL = () => {
@@ -223,17 +226,42 @@ const createReWrites = () => {
       source: "/all-courses/data-science/applied-data-science",
       destination: "/all-courses/applied-data-science/23",
     },
-    {
-      source: "/all-courses/digital-marketing/basic-digital-marketing",
-      destination: "/all-courses/basic-digital-marketing/25",
-    },
+    // {
+    //   source: "/all-courses/digital-marketing/basic-digital-marketing",
+    //   destination: "/all-courses/basic-digital-marketing/25",
+    // },
     {
       source: "/all-courses/digital-marketing/advanced-digital-marketing",
       destination: "/all-courses/advanced-digital-marketing/26",
     },
+    // {
+    //   source: "/all-courses/digital-marketing/applied-digital-marketing",
+    //   destination: "/all-courses/applied-digital-marketing/27",
+    // },
     {
-      source: "/all-courses/digital-marketing/applied-digital-marketing",
-      destination: "/all-courses/applied-digital-marketing/27",
+      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      destination: "/all-courses/basic-digital-marketing-course/101",
+    },
+    {
+      source:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      destination: "/all-courses/advanced-digital-marketing-course/102",
+    },
+    {
+      source: "/all-courses/cyber-security-fundamentals-course",
+      destination: "/all-courses/cyber-security-fundamentals-course/103",
+    },
+    {
+      source: "/all-courses/cyber-defense-toolbox-course",
+      destination: "/all-courses/cyber-defense-toolbox-course/104",
+    },
+    {
+      source: "/all-courses/design-thinking",
+      destination: "/all-courses/design-thinking/105",
+    },
+    {
+      source: "/all-courses/cyber-security-course",
+      destination: "/all-courses/cyber-security-course/106",
     },
   ];
   return paths;

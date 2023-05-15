@@ -14,26 +14,26 @@ import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
 // import SubCourseDetails from "@/components/courses/subcourseDetails";
 import { useRouter } from "next/router";
-import Schemas from "../../../schemas/";
+import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 
-const PageBanner = dynamic(() =>
-  import("@/components/BannerSection/PageBanner")
+const PageBanner = dynamic(
+  () => import("@/components/BannerSection/PageBanner")
 );
-const SubCourseDetails = dynamic(() =>
-  import("@/components/courses/subcourseDetails")
+const SubCourseDetails = dynamic(
+  () => import("@/components/courses/subcourseDetails")
 );
 
-const Course = () => {
+const Course = (props: any) => {
   const router = useRouter();
 
   const pageName = router?.query?.course?.toString().replace("-", " ");
 
   return (
-    <Layout pageTitle={router?.query?.course}>
+    <Layout pageTitle={props?.course}>
       <Style />
-      <HeaderOne />
+      <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
       <SearchPopup />
       <Schemas
@@ -57,5 +57,9 @@ const Course = () => {
     </Layout>
   );
 };
+export async function getServerSideProps(context: any) {
+  const { id, course } = context.query;
 
+  return { props: { course } };
+}
 export default Course;
