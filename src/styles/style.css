@@ -9844,6 +9844,9 @@ featured-section .right-col .sec-title h2 {
 .page-banner .bread-crumb li:last-child:before {
   display: none;
 }
+.extra-space-footer {
+  margin-top: 50px;
+}
 
 .page-banner .bread-crumb li a {
   color: #000000;

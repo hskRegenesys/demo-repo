@@ -14,19 +14,24 @@ const {
   address,
   address3,
   address4,
+  address5,
   address2,
   phone,
   phone2,
   phone3,
   phone4,
+  phone5,
   web,
   weblink,
   web2,
   web2link,
   web3,
   web4,
+  web5,
   web3link,
   web4link,
+  web5link,
+
   email,
   textBottom,
 } = mainFooter;
@@ -81,7 +86,7 @@ const MainFooter = ({ normalPadding = true }) => {
                   <div className="footer-widget info-widget">
                     <div className="widget-content">
                       <Row className="contact-info">
-                        <Col xs={6} sm="12" className="address">
+                        <Col sm="12" className="address">
                           <h6>Digital Regenesys Corporation</h6>
                           <span className="icon flaticon-pin-1"></span>{" "}
                           <TextSplit text={address2} />
@@ -89,18 +94,31 @@ const MainFooter = ({ normalPadding = true }) => {
                       </Row>
                     </div>
                   </div>
+                  <div className="extra-space-footer">
+                    <div className="footer-widget info-widget">
+                      <div className="widget-content">
+                        <Row className="contact-info">
+                          <Col sm="12" className="address">
+                            <h6>Digital Regenesys Limited</h6>
+                            <span className="icon flaticon-pin-1"></span>{" "}
+                            <TextSplit text={address4} />
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </div>
                 </Col>
                 <Col xl={3} lg={6} md={4} sm={12} xxl={3} className="column">
                   <div className="footer-widget info-widget">
                     <div className="widget-content address">
                       <Row className="contact-info">
-                        <Col xs={6} sm="12" className="address">
+                        <Col sm="12" className="address">
                           <h6>South African Campus</h6>
                           <span className="icon flaticon-pin-1"></span>{" "}
                           <TextSplit text={address} />
                         </Col>
-                        <Col xs={6} sm="12">
-                          <h6>Contact Details</h6>
+                        <Col sm="12">
+                          {/* <h6>Contact Details</h6> */}
                           <ul>
                             <li>
                               <span className="icon flaticon-call"></span>
@@ -125,13 +143,13 @@ const MainFooter = ({ normalPadding = true }) => {
                   <div className="footer-widget info-widget">
                     <div className="widget-content">
                       <Row className="contact-info">
-                        <Col xs={6} sm="12" className="address">
+                        <Col sm="12" className="address">
                           <h6>Nigeria Corporate Office</h6>
                           <span className="icon flaticon-pin-1"></span>{" "}
                           <TextSplit text={address3} />
                         </Col>
-                        <Col xs={6} sm="12">
-                          <h6>Contact Details</h6>
+                        <Col sm="12">
+                          {/* <h6>Contact Details</h6> */}
                           <ul>
                             <li>
                               <span className="icon flaticon-call"></span>
@@ -153,12 +171,29 @@ const MainFooter = ({ normalPadding = true }) => {
                 </Col>
                 <Col xl={3} lg={6} md={4} sm={12} xxl={3} className="column">
                   <div className="footer-widget info-widget">
-                    <div className="widget-content">
+                    <div className="widget-content address">
                       <Row className="contact-info">
-                        <Col xs={6} sm="12" className="address">
-                          <h6>Digital Regenesys Limited</h6>
+                        <Col sm="12" className="address">
+                          <h6>India Corporate Office</h6>
                           <span className="icon flaticon-pin-1"></span>{" "}
-                          <TextSplit text={address4} />
+                          <TextSplit text={address5} />
+                        </Col>
+                        <Col sm="12">
+                          {/* <h6>Contact Details</h6> */}
+                          <ul>
+                            <li>
+                              <span className="icon flaticon-call"></span>
+                              <a href={`tel:${phone.split(" ").join("")}`}>
+                                {phone5}
+                              </a>
+                            </li>
+                            <li>
+                              <span className="icon flaticon-link"></span>
+                              <a href={`${web5link}`} target="_blank">
+                                {web5}
+                              </a>
+                            </li>
+                          </ul>
                         </Col>
                       </Row>
                     </div>

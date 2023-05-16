@@ -30,10 +30,14 @@ export const mainFooter = {
   address4:
     "8th Floor,  \n Delta Corner Tower,\n Chiromo Road, 07th Floor, \n Westlands, Nairobi, 00800",
 
+  address5:
+    "Proxima Building, \n Unit 1101 11th Floor, \n Plot 19,Sector 30A, Vashi \n Navi Mumbai, India, 400705",
+
   phone: "+27 (11) 669 5000",
   phone2: "",
   phone3: "+234 (1) 453 0959",
   phone4: "",
+  phone5: "+91 1800 212 9950",
   web: "www.regenesys.net",
   weblink: "https://www.regenesys.net/",
 
@@ -45,6 +49,9 @@ export const mainFooter = {
 
   web4: "www.nigeria.regenesys.net",
   web4link: "https://www.nigeria.regenesys.net/",
+
+  web5: "www.india.regenesys.net",
+  web5link: "https://www.india.regenesys.net/",
 
   email: "needhelp@linoor.com",
   textBottom:
