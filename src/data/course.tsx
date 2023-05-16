@@ -2840,7 +2840,7 @@ export const courseData = {
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
-      CsFundamentals: "CTotal Admission Fee",
+      CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
