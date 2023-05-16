@@ -20134,6 +20134,14 @@ h2.highlight {
   justify-content: center;
   align-items: center;
 }
+.stickyRow .inlineSticky button {
+  background-color: transparent;
+  font-size: 20px;
+}
+.stickyRow .inlineSticky .closeBtn {
+  position: relative;
+  top: 5px;
+}
 .inlineSticky strong {
   font-size: 22px;
   line-height: 32px;
@@ -20165,6 +20173,12 @@ h2.highlight {
     font-size: 14px;
     line-height: normal;
     display: inline-block;
+  }
+  .stickyRow .inlineSticky .closeBtn {
+    position: absolute;
+    bottom: 24px;
+    left: -20px;
+    top: auto;
   }
   .inlineSticky strong {
     font-size: 17px;
