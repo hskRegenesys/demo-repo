@@ -4799,16 +4799,9 @@ export const courseData = {
 };
 
 export const brochureDetails: any = {
-  //Advance-Digital-Marketing
-  AVDM: {
-    name: "DigitalMarketingAdvancedBrochure.pdf",
-    leadSource: leadSource,
-    sourceCampaign: sourceCampaign,
-  },
-
   //Project Management
   PM: {
-    name: "projectManagement_brochure.pdf",
+    name: "ProjectManagementBrochure23.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -4822,7 +4815,48 @@ export const brochureDetails: any = {
 
   //Basic Data Science
   BDSCI: {
-    name: "basicDataScience_brochure.pdf",
+    name: "PrintDataScienceBasicBrochure23.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  //Advance Data Science
+  ADDSCI: {
+    name: "PrintDataScienceAdvancedBrochure23.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  //Applied Data Science
+  APDSCI: {
+    name: "PrintDataScienceAppliedBrochure23.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  //Advance-Digital-Marketing
+  AVDM: {
+    name: "DigitalMarketingAdvancedBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  //Digital Marketing Strategies
+  AVDMC: {
+    name: "AdvanceDigitalMarketingStrategiesBrochure23.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  //Digital Marketing Fundamentals
+  BDMC: {
+    name: "DigitalMarketingFundamentalsBrochure23.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  //"Cybersecurity Fundamentals"
+  CSFC: {
+    name: "CompleteCybersecuritySolution-Brochure23.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -4834,23 +4868,22 @@ export const brochureDetails: any = {
     sourceCampaign: sourceCampaign,
   },
 
-  //"Applied Digital Marketing"
-  // APDM: {
-  //   name: "DigitalMarketingAppliedBrochure.pdf",
-  //   leadSource: leadSource,
-  //   sourceCampaign: sourceCampaign,
-  // },
-
-  //Applied Data Science
-  APDSCI: {
-    name: "appliedDataScience_brochure.pdf",
+  //Cybersecurity Defence Toolbox
+  CDTC: {
+    name: "cyberSecurity_brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
 
-  //Advance Data Science
-  ADDSCI: {
-    name: "advanceDataScience_brochure.pdf",
+  DTC: {
+    name: "DesignThinkingCourseDevelopmentBrochure23.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  // Certification Programme in Cybersecurity
+  CSC: {
+    name: "cyberSecurity_brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
