@@ -41,12 +41,20 @@ const Data = {
 
   qualification: [
     {
-      option: "Masters Degree",
-      value: "Masters Degree",
+      option: "Doctorate",
+      value: "Doctorate",
+    },
+    {
+      option: "Master's Degree",
+      value: "Master's Degree",
     },
     {
       option: "Bachelor's Degree",
       value: "Bachelor's Degree",
+    },
+    {
+      option: "Hons Degree",
+      value: "Hons Degree",
     },
     {
       option: "Diploma",

@@ -8,6 +8,7 @@ import Data from "@/data/AllformsData";
 import { leadService } from "src/services";
 import Modal from "react-bootstrap/Modal";
 import Loader from "../Loader/Loader";
+import { allCourseList } from "@/data/courseData";
 
 export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
@@ -68,9 +69,9 @@ export default function LandingForm(contactform: any) {
 
   let courses: any = [];
 
-  if (courseData.length) {
+  if (allCourseList.length) {
     courses = _.filter(
-      courseData,
+      allCourseList,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
