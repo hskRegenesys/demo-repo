@@ -6,7 +6,7 @@ import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Image from "next/image";
 
-const { image, title, text, features } = featuredSection;
+const { image, title, subtitle, subsubtitle, text, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
 
 const HomeBanner = ({ className = "" }) => {
@@ -22,7 +22,10 @@ const HomeBanner = ({ className = "" }) => {
             <Col lg={6} md={6} sm={12} className="right-col">
               <div className="inner">
                 <div className="sec-title">
-                  <h1 className="title-home">{title}</h1>
+                  <h1 className="title-home">
+                    <strong>{title}</strong>
+                    <span>{subtitle}</span> <p>{subsubtitle}</p>
+                  </h1>
                   <FunFactSix />
                 </div>
               </div>

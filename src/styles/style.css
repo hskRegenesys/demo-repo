@@ -6136,7 +6136,19 @@ featured-section .right-col .sec-title h2 {
   font-family: "Raleway-semibold";
   max-width: 100%;
 }
+.featured-section .right-col .inner h1.title-home strong {
+  display: block;
+  font-size: 35px;
+}
 
+.featured-section .right-col .inner h1.title-home span {
+  display: block;
+  font-size: 47px;
+  font-family: "Raleway-semibold";
+}
+.featured-section .right-col .inner h1.title-home p {
+  font-size: 18px;
+}
 .featured-section__about-two {
   background-color: #fff;
   background-image: none;
@@ -9460,6 +9472,12 @@ featured-section .right-col .sec-title h2 {
 @media (max-width: 991px) {
   .get-quote-two__one-page {
     padding-bottom: 70px !important;
+  }
+  .featured-section .right-col .inner h1.title-home span {
+    display: block;
+    font-size: 42px;
+    margin: 10px 0;
+    font-family: "Raleway-semibold";
   }
 }
 
