@@ -9,12 +9,13 @@ import Data from "@/data/AllformsData";
 import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
-import Preloader from "../Preloader/Preloader";
+
 import Loader from "../Loader/Loader";
+import { allCourseList } from "@/data/courseData";
 
 function ModalPopup(props: any) {
   const router = useRouter();
-  const [courseData, setcourseData] = useState([]);
+
   const [isLoading, setIsLoading] = useState(true);
   const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
@@ -22,10 +23,7 @@ function ModalPopup(props: any) {
   const [btnDisable, sebtnDisable] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const getData = async () => {
-    let courseListResponse = await courseService.allParentCourses();
-    setcourseData(courseListResponse);
-  };
+
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
     setCountryData(countryData);
@@ -42,7 +40,6 @@ function ModalPopup(props: any) {
     }
   };
   useEffect(() => {
-    getData();
     getCountryCode();
   }, []);
 
@@ -93,9 +90,9 @@ function ModalPopup(props: any) {
 
   let courses: any = [];
 
-  if (courseData.length) {
+  if (allCourseList.length) {
     courses = _.filter(
-      courseData,
+      allCourseList,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&

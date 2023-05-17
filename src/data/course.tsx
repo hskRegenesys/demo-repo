@@ -4808,7 +4808,7 @@ export const brochureDetails: any = {
 
   //Cybersecurity
   CS: {
-    name: "cyberSecurity_brochure.pdf",
+    name: "CompleteCybersecuritySolution-Brochure23.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -4870,7 +4870,7 @@ export const brochureDetails: any = {
 
   //Cybersecurity Defence Toolbox
   CDTC: {
-    name: "cyberSecurity_brochure.pdf",
+    name: "CompleteCybersecuritySolution-Brochure23.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -4883,7 +4883,7 @@ export const brochureDetails: any = {
 
   // Certification Programme in Cybersecurity
   CSC: {
-    name: "cyberSecurity_brochure.pdf",
+    name: "CompleteCybersecuritySolution-Brochure23.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
