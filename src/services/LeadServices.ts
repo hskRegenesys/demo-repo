@@ -4,7 +4,7 @@ import { apiEndPoints } from "@/data/axisos";
 class LeadService {
   static allCourses: any;
   salesforceProgramOfIngterest = new Map([
-    ["Cyber Security", "Cyber Security"],
+    ["Cyber Security Course", "Cyber Security Course"],
     ["Data Science", "Data Science"],
     ["Digital Marketing", "Digital Marketing"],
     ["Project Management", "Project Management"],
