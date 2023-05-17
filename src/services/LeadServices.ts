@@ -8,6 +8,7 @@ class LeadService {
     ["Data Science", "Data Science"],
     ["Digital Marketing", "Digital Marketing"],
     ["Project Management", "Project Management"],
+    ["Design Thinking", "Design Thinking"],
   ]);
   drLeadRecordTypeId = "0127Q000000NDbXQAW";
   constructor(private leadServer: any, private salesforceServer: any) {

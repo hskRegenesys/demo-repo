@@ -12,6 +12,12 @@ const StickyBar = (props: any) => {
   const handleShow = () => setShow(true);
   //   const stickyData = Data[props.data];
   const [showButton, setShowButton] = useState(false);
+
+  const [isShown, setIsShown] = useState(true);
+
+  const handleClick = () => {
+    setIsShown((current) => !current);
+  };
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -38,7 +44,7 @@ const StickyBar = (props: any) => {
           <ThankYouPopup setShows={setThankYouShow} />
         </Modal>
       </div>
-      {showButton && (
+      {isShown && (
         <>
           <div className="styckySpace"></div>
           <div className="stickyRow">
@@ -54,6 +60,14 @@ const StickyBar = (props: any) => {
                     <i className="btn-curve"></i>
                     <span className="btn-title">Talk To a Career Expert</span>
                   </a>
+                </div>
+                <div className="closeBtn">
+                  <button
+                    onClick={handleClick}
+                    type="button"
+                    className="btn-close"
+                    aria-label="Close"
+                  ></button>
                 </div>
               </div>
             </div>
