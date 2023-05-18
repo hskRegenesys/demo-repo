@@ -63,17 +63,38 @@ const redirectURL = () => {
     },
     {
       source: "/programs/digital-marketing-course/basic-digital-marketing",
-      destination: "/all-courses/digital-marketing/basic-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/digital-marketing/basic-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/digital-marketing-fundamentals",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/advanced-digital-marketing",
-      destination: "/all-courses/digital-marketing/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/digital-marketing/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/applied-digital-marketing",
-      destination: "/all-courses/digital-marketing/applied-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/digital-marketing/applied-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
       permanent: true,
     },
     {
@@ -209,10 +230,10 @@ const createReWrites = () => {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
-    {
-      source: "/all-courses/cyber-security",
-      destination: "/all-courses/cyber-security/29",
-    },
+    // {
+    //   source: "/all-courses/cyber-security",
+    //   destination: "/all-courses/cyber-security/29",
+    // },
 
     {
       source: "/all-courses/data-science/basic-data-science",
@@ -260,8 +281,8 @@ const createReWrites = () => {
       destination: "/all-courses/design-thinking/105",
     },
     {
-      source: "/all-courses/cyber-security-course",
-      destination: "/all-courses/cyber-security-course/106",
+      source: "/all-courses/cyber-security",
+      destination: "/all-courses/cyber-security/106",
     },
   ];
   return paths;
