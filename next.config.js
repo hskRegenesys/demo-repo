@@ -63,17 +63,38 @@ const redirectURL = () => {
     },
     {
       source: "/programs/digital-marketing-course/basic-digital-marketing",
-      destination: "/all-courses/digital-marketing/basic-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/digital-marketing/basic-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/digital-marketing-fundamentals",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/advanced-digital-marketing",
-      destination: "/all-courses/digital-marketing/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/digital-marketing/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/applied-digital-marketing",
-      destination: "/all-courses/digital-marketing/applied-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/digital-marketing/applied-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
       permanent: true,
     },
     {
@@ -83,6 +104,16 @@ const redirectURL = () => {
     },
     {
       source: "/programs/cyber-security",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/cyber-security-course",
       destination: "/all-courses/cyber-security",
       permanent: true,
     },
@@ -199,6 +230,11 @@ const redirectURL = () => {
         "https://lp.digitalregenesys.com/study-project-management-ng",
       permanent: true,
     },
+    {
+      source: "/all-courses/%5bcourse%5d/%5bid%5d",
+      destination: "/all-courses",
+      permanent: true,
+    },
   ];
   return path;
 };
@@ -209,10 +245,10 @@ const createReWrites = () => {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
-    {
-      source: "/all-courses/cyber-security",
-      destination: "/all-courses/cyber-security/29",
-    },
+    // {
+    //   source: "/all-courses/cyber-security",
+    //   destination: "/all-courses/cyber-security/29",
+    // },
 
     {
       source: "/all-courses/data-science/basic-data-science",
@@ -240,7 +276,7 @@ const createReWrites = () => {
     // },
     {
       source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
-      destination: "/all-courses/basic-digital-marketing-course/101",
+      destination: "/all-courses/digital-marketing-fundamentals/101",
     },
     {
       source:
@@ -260,8 +296,8 @@ const createReWrites = () => {
       destination: "/all-courses/design-thinking/105",
     },
     {
-      source: "/all-courses/cyber-security-course",
-      destination: "/all-courses/cyber-security-course/106",
+      source: "/all-courses/cyber-security",
+      destination: "/all-courses/cyber-security/106",
     },
   ];
   return paths;

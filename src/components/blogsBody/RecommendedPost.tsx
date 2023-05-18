@@ -47,7 +47,7 @@ const RecommendedPost = () => {
           vertical
         >
           {postList?.map((values) => (
-            <Link key={values.id} href={`/blogs/${values?.slug}`} passHref>
+            <Link key={values.id} href={`/blog/${values?.slug}`} passHref>
               <div className="m-2 w-100 rounded btn" role="button">
                 <div className="row align-items-center">
                   <div

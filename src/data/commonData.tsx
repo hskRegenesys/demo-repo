@@ -21,13 +21,17 @@ const Data = {
         "Digital Marketing Course Online | Digital Regenesys",
       "basic-digital-marketing":
         "Basic Digital Marketing Course Online | Digital Regenesys",
+      "basic-digital-marketing-course":
+        "Digital Marketing Fundamentals Course Online | Digital Regenesys",
       "advanced-digital-marketing":
         "Advanced Digital Marketing Course Online | Digital Regenesys",
+      "advanced-digital-marketing-course":
+        "Advance Digital Marketing Strategies Course Online | Digital Regenesys",
       "applied-digital-marketing":
         "Applied Digital Marketing Course Online | Digital Regenesys",
       "project-management":
         "Project Management Course Online | Digital Regenesys",
-      designThinking: "Design Thinking",
+      "design-thinking": "Design Thinking Course Online | Digital Regnesys",
       "data-science":
         "Data Science: Data Science Course Online | Digital Regenesys",
       "advanced-data-science":
@@ -108,19 +112,7 @@ const Data = {
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
       "cyber-security": `
-        cyber security, 
-        cyber security course, 
-        what is cyber security, 
-        cyber security jobs, 
-        cyber security poster, 
-        cyber security salary, 
-        cyber security ppt, 
-        types of cyber security, 
-        cyber security certifications, 
-        importance of cyber security, 
-        cyber security awareness, 
-        cyber security course fees, 
-        cyber security definition
+      cyber security, cyber security course, what is cyber security, cyber security jobs, cyber security poster, cyber security salary, cyber security ppt, types of cyber security, cyber security certifications, importance of cyber security, cyber security awareness, cyber security course fees, cyber security definition
       `,
       "digital-marketing": `
         Digital Regenesys, 
@@ -153,6 +145,8 @@ const Data = {
         best Basic Digital Marketing Course, 
         Basic Digital Marketing Course online
         `,
+      "basic-digital-marketing-course":
+        "digital marketing, digital marketing course, online digital marketing course, digital marketing certification, digital marketing training, digital marketing for beginners, digital marketing for business, digital marketing for startups, digital marketing for small businesses, digital marketing fundamental course, digital marketing fundamental course details, digital marketing fundamental course durations, digital marketing fundamental course scope, digital marketing fundamental course fees",
       "advanced-digital-marketing": `
         Advanced Digital Marketing, 
         Advanced Digital Marketing Course, 
@@ -172,6 +166,8 @@ const Data = {
         best applied Digital Marketing Course, 
         applied Digital Marketing Course online
         `,
+      "advanced-digital-marketing-course":
+        "digital marketing, digital marketing course, online digital marketing course, digital marketing certification, digital marketing training, digital marketing for beginners, digital marketing for business, digital marketing for startups, digital marketing for small businesses, Advance Digital Marketing Strategies course, Advance Digital Marketing Strategies course details, Advance Digital Marketing Strategies course durations, Advance Digital Marketing Strategies course scope, Advance Digital Marketing Strategies course fees",
       "project-management": `
         project management courses online, 
         best online project management courses, 
@@ -184,7 +180,8 @@ const Data = {
         online project management degree courses, 
         project management basics an official pmi online course review
       `,
-      designThinking: "Design Thinking",
+      "design-thinking":
+        "design thinking, design thinking course, design thinking course duration, design thinking course fees, online design thinking course, design thinking certification, design thinking boot camp, design thinking training, design thinking for beginners, design thinking for business, design thinking for innovation, design thinking for problem solving",
       "data-science": `
         data science, 
         explore data science academy, 
@@ -249,13 +246,18 @@ const Data = {
         "Digital marketing, advance your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
       "basic-digital-marketing":
         "The basic digital marketing course offered by Digital Regenesys lays a solid foundation of essential digital marketing domains. Visit our website to explore more.",
+      "basic-digital-marketing-course":
+        "Learn the fundamentals of digital marketing with our online course. Gain the skills you need to launch or grow your business online. Enrol today!",
       "advanced-digital-marketing":
         "The advanced digital marketing course offered by Digital Regenesys equips students with advanced knowledge of digital marketing domains and hands-on projects.",
       "applied-digital-marketing":
         "The applied digital marketing course offered by Digital Regenesys equips students with real-world applications of Digital Marketing taught by industry experts. ",
+      "advanced-digital-marketing-course":
+        "Advance your digital marketing career with our online course. Learn from industry experts and develop the skills you need to create and execute successful digital marketing strategies.",
       "project-management":
         "Study a Project Management course with Digital Regenesys to acquire the know-how on managing projects successfully. Enquire now.",
-      designThinking: "Design Thinking",
+      "design-thinking":
+        "Unlock your creative potential with our Design Thinking Course Online. Discover innovative problem-solving techniques at Digital Regnesys. Enrol now!",
       "data-science":
         "Data Science, advance your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
       "advanced-data-science":
@@ -279,10 +281,14 @@ const Data = {
       "digital-marketing": "/all-courses/digital-marketing",
       "basic-digital-marketing":
         "/all-courses/digital-marketing/basic-digital-marketing",
+      "basic-digital-marketing-course":
+        "/all-courses/digital-marketing/basic-digital-marketing-course",
       "advanced-digital-marketing":
         "/all-courses/digital-marketing/advanced-digital-marketing",
       "applied-digital-marketing":
         "/all-courses/digital-marketing/applied-digital-marketing",
+      "advanced-digital-marketing-course":
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
       "project-management": "/all-courses/project-management",
 
       "data-science": "/all-courses/data-science",
@@ -290,6 +296,7 @@ const Data = {
       "advanced-data-science":
         "/all-courses/data-science/advanced-data-science",
       "applied-data-science": "/all-courses/data-science/applied-data-science",
+      "design-thinking": "/all-courses/design-thinking",
     },
   },
 };

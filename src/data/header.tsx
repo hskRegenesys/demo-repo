@@ -61,6 +61,12 @@ const navItems = [
     href: "/about",
   },
   {
+    id: 3,
+    name: "Blog",
+    href: "/blog",
+  },
+
+  {
     id: 8,
     name: "Contact",
     href: "/contact",
@@ -68,11 +74,11 @@ const navItems = [
 ];
 
 export const blogsNavItem = [
-  { id: 1, name: "Home", href: "/blogs" },
+  { id: 1, name: "Home", href: "/blog" },
   {
     id: 3,
     name: "Blog",
-    href: "/blogs",
+    href: "/blog",
     subNavItems: [],
   },
   {

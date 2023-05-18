@@ -79,6 +79,13 @@ export const mainFooter = {
       href: "/contact",
       title: "Contact us",
     },
+
+    {
+      id: 6,
+      href: "/blog",
+      title: "Blog",
+    },
+
     {
       id: 4,
       href: "/about",
