@@ -4090,57 +4090,57 @@ export const courseData = {
         defaultCurrent: 1,
       },
     ],
-    faqsSection: [
-      {
-        id: 1,
-        faqs: [
-          {
-            id: 1,
-            title: "How This Course Will Help Me In My Career?",
-            text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
-          },
-          {
-            id: 2,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
-          },
-          {
-            id: 3,
-            title: "What Are The Modes Of Payment Available For Me?",
-            text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
-          },
-          {
-            id: 4,
-            title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
-            text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
-          },
-          {
-            id: 5,
-            title: "Is This A Certified Course?",
-            text: "Yes, all the courses are certified by the Regenesys Business School.",
-          },
-          {
-            id: 6,
-            title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
-          },
-          {
-            id: 7,
-            title:
-              "How Will I Get Access To The Assignments And Learning Content?",
-            text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
-          },
-          {
-            id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
-            text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
-          },
-        ],
-        defaultCurrent: 1,
-      },
-    ],
+    // faqsSection: [
+    //   {
+    //     id: 1,
+    //     faqs: [
+    //       {
+    //         id: 1,
+    //         title: "How This Course Will Help Me In My Career?",
+    //         text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
+    //       },
+    //       {
+    //         id: 2,
+    //         title: "Will Digital Regenesys Offer Me Job Assistance?",
+    //         text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+    //       },
+    //       {
+    //         id: 3,
+    //         title: "What Are The Modes Of Payment Available For Me?",
+    //         text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+    //       },
+    //       {
+    //         id: 4,
+    //         title:
+    //           "For How Long Will I Be Able To Access The Content After My Course Completion?",
+    //         text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+    //       },
+    //       {
+    //         id: 5,
+    //         title: "Is This A Certified Course?",
+    //         text: "Yes, all the courses are certified by the Regenesys Business School.",
+    //       },
+    //       {
+    //         id: 6,
+    //         title:
+    //           "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+    //         text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+    //       },
+    //       {
+    //         id: 7,
+    //         title:
+    //           "How Will I Get Access To The Assignments And Learning Content?",
+    //         text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+    //       },
+    //       {
+    //         id: 8,
+    //         title: "What If The Course Timings Don't Match My Work Timings?",
+    //         text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+    //       },
+    //     ],
+    //     defaultCurrent: 1,
+    //   },
+    // ],
     courseBenefits: {
       title: "Benefits",
       desc: "",

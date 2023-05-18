@@ -39,7 +39,7 @@ const SearchBlog = ({ query }: { query: string }) => {
       </div>
 
       <div className="container-fluid px-5">
-        <Link href={`/blogs/`} passHref>
+        <Link href={`/blog/`} passHref>
           <p
             role="button"
             className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"

@@ -62,7 +62,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
         </div>
       </div>
       <div className="container-fluid p-5">
-        <Link href={`/blogs/`} passHref>
+        <Link href={`/blog/`} passHref>
           <p
             role="button"
             className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
