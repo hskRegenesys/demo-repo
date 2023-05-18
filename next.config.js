@@ -113,6 +113,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/all-courses/cyber-security-course",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
       source: "/terms-and-condition",
       destination: "/terms-and-conditions",
       permanent: true,
@@ -223,6 +228,11 @@ const redirectURL = () => {
       source: "/study-project-management-ng",
       destination:
         "https://lp.digitalregenesys.com/study-project-management-ng",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/%5bcourse%5d/%5bid%5d",
+      destination: "/all-courses",
       permanent: true,
     },
   ];
