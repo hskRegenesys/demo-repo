@@ -26,7 +26,7 @@ const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-defense-toolbox-course":
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
 
-  "basic-digital-marketing-course":
+  "digital-marketing-fundamentals":
     "Grasp the Fundamentals of Digital Marketing for Career Advancement",
   "advanced-digital-marketing-course":
     "Grasp the Fundamentals of Digital Marketing for Career Advancement",
