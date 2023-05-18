@@ -16,8 +16,7 @@ const About = () => {
   return (
     <Layout pageTitle="about">
       <Style />
-
-      <HeaderOne />
+      <HeaderOne pageTitle="about" />
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="About" />

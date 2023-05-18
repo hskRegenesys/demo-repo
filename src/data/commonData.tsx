@@ -268,6 +268,29 @@ const Data = {
       createMyWealth:
         "Digital Regenesys offers an all in one trading course, investment course, and finance course. Enrol for the Investment, Trading & Personal Finance course. Enquire now.",
     },
+    canonicalUrlData: {
+      home: "/home",
+      about: "/about",
+      allCourse: "/all-courses",
+      contact: "/contact",
+      privacyPolicy: "/privacy-policy/",
+      termsCondition: "/terms-and-conditions",
+      "cyber-security": "/all-courses/cyber-security",
+      "digital-marketing": "/all-courses/digital-marketing",
+      "basic-digital-marketing":
+        "/all-courses/digital-marketing/basic-digital-marketing",
+      "advanced-digital-marketing":
+        "/all-courses/digital-marketing/advanced-digital-marketing",
+      "applied-digital-marketing":
+        "/all-courses/digital-marketing/applied-digital-marketing",
+      "project-management": "/all-courses/project-management",
+
+      "data-science": "/all-courses/data-science",
+      "basic-data-science": "/all-courses/data-science/basic-data-science",
+      "advanced-data-science":
+        "/all-courses/data-science/advanced-data-science",
+      "applied-data-science": "/all-courses/data-science/applied-data-science",
+    },
   },
 };
 

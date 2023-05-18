@@ -21,6 +21,7 @@ const CourseBenefits = ({ courseDetails }) => {
                   alt=""
                 /> */}
                 <Image
+                  priority={true}
                   src="/assets/images/background/career-support2.webp"
                   layout="intrinsic"
                   width="700"

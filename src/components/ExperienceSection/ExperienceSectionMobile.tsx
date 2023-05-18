@@ -49,6 +49,7 @@ const ExperienceSectionMobile = () => {
                         alt=""
                       /> */}
                       <Image
+                        priority={true}
                         src={`/assets/images/icons/${image}`}
                         layout="intrinsic"
                         width="1207"

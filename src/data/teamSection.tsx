@@ -26,13 +26,13 @@ const teamSection = {
   teams: [
     {
       id: 9,
-      name: "Basic Digital Marketing ",
-      href: "/all-courses/digital-marketing/basic-digital-marketing",
+      name: "Basic Digital Marketing Course",
+      href: "/all-courses/digital-marketing/basic-digital-marketing-course",
     },
     {
       id: 10,
-      name: "Advanced Digital Marketing",
-      href: "/all-courses/digital-marketing/advanced-digital-marketing",
+      name: "Advanced Digital Marketing Course",
+      href: "/all-courses/digital-marketing/advanced-digital-marketing-course",
     },
     {
       id: 11,
@@ -45,9 +45,9 @@ const teamSection = {
       href: "/all-courses/project-management",
     },
     {
-      id: 3,
-      name: "Cybersecurity",
-      href: "/all-courses/cybersecurity",
+      id: 12,
+      name: "Cyber Security Course",
+      href: "/all-courses/cyber-security-course",
     },
     {
       id: 6,
@@ -63,6 +63,11 @@ const teamSection = {
       id: 8,
       name: "Applied Data Science",
       href: "/all-courses/data-science/applied-data-science",
+    },
+    {
+      id: 11,
+      name: "Design Thinking",
+      href: "/all-courses/design-thinking",
     },
   ],
 };

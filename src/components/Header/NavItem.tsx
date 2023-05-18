@@ -2,6 +2,7 @@ import { useRootContext } from "@/context/context";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Loader from "../Loader/Loader";
 
 const SubItem = (props: any) => {
   const [active, setActive] = useState(false);
@@ -21,32 +22,34 @@ const SubItem = (props: any) => {
         pathname === href ? "current" : ""
       }`}
     >
-      <Link href={href}>
-        <a href={href}>
-          {name} {isNew && <span>new</span>}
-          {!!subItems?.length && (
-            <div
-              onClick={handleActive}
-              className={`dropdown-btn${active ? " open" : ""}`}
-            >
-              <span className="fa fa-angle-right"></span>
-            </div>
-          )}
-        </a>
-      </Link>
-      <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
+      <a href={href}>
+        {name} {isNew && <span>new</span>}
+        {!!subItems?.length && (
+          <div
+            onClick={handleActive}
+            className={`dropdown-btn${active ? " open" : ""}`}
+          >
+            <span className="fa fa-angle-right"></span>
+          </div>
+        )}
+      </a>
+
+      <ul
+        style={{
+          display: !menuStatus || active ? "block" : "none",
+        }}
+        className={name === "Blog Categories" ? "sub-nav-items" : ""}
+      >
         {subItems
           ?.filter((item: any) => item.name !== "Full-Stack")
           ?.map((item: any) => (
             <li key={item.id} className={`dropdown`}>
-              <Link href={item.href}>
-                <a
-                  href={item.href}
-                  style={{ fontSize: "14px", fontWeight: "400" }}
-                >
-                  {item.name} {item.isNew && <span>new</span>}
-                </a>
-              </Link>
+              <a
+                href={item.href}
+                style={{ fontSize: "14px", fontWeight: "400" }}
+              >
+                {item.name} {item.isNew && <span>new</span>}
+              </a>
             </li>
           ))}
       </ul>
@@ -55,7 +58,7 @@ const SubItem = (props: any) => {
 };
 
 const NavItem = (props: any) => {
-  const { navItem = {}, mobile = false, onePage = false } = props;
+  const { navItem = {}, mobile = false, onePage = false, isLoading } = props;
   const [active, setActive] = useState(false);
   const { pathname } = useRouter();
   const contextRoot: any = useRootContext();
@@ -65,7 +68,6 @@ const NavItem = (props: any) => {
   const current = !onePage
     ? pathname === href || subHref.includes(pathname)
     : currentActive === href;
-
   const handleActive = (e: any) => {
     e.stopPropagation();
     e.preventDefault();
@@ -90,6 +92,7 @@ const NavItem = (props: any) => {
           )}
         </a>
       </Link>
+
       {subNavItems?.length > 0 && (
         <ul
           style={{

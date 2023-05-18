@@ -23,6 +23,7 @@ const ExperienceSection = () => {
                   <div className="partner-one__image">
                     {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
                     <Image
+                      priority={true}
                       src={`/assets/images/icons/${image}`}
                       layout="intrinsic"
                       width="1207"

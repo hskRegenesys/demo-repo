@@ -13,11 +13,13 @@ const Faqs = (props: any) => {
   return (
     <Col lg={12} md={12} sm={12} className="faq-block curriculum">
       <h2 className="text-center">
-        <i className="arrow-sign-right"></i>Course curriculum
+        <i className="arrow-sign-right"></i>
+        {allFaqs.courseCurriculumTitle}
       </h2>
       <ul className="accordion-box clearfix">
         {faqs?.map((item: any) => {
-          let { id, title, lists } = item;
+          let { id, title, firstPara, secondPara, boldText, lists, lastPara } =
+            item;
           return (
             <li
               key={id}
@@ -39,12 +41,18 @@ const Faqs = (props: any) => {
               >
                 <div className="content">
                   <div className="text">
+                    {firstPara && <span>{firstPara}</span>}
+                    {secondPara && <span>{secondPara}</span>}
+                    {boldText && <strong>{boldText}</strong>}
                     {lists?.map((text: string, i: number) => (
-                      <li key={i}>
-                        <i className="fa fa-check" aria-hidden="true"></i>
-                        {text}
-                      </li>
+                      <ul key={`${text}-${i}`}>
+                        <li>
+                          <i className="fa fa-check" aria-hidden="true"></i>
+                          {text}
+                        </li>
+                      </ul>
                     ))}
+                    {lastPara && <span>{lastPara}</span>}
                   </div>
                 </div>
               </div>

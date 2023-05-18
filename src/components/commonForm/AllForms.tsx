@@ -2,15 +2,17 @@ import React, { useState, useEffect, useContext } from "react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
-import { courseService, countryCodeService } from "src/services";
+import { countryCodeService } from "src/services";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
 import { leadService } from "src/services";
 import Modal from "react-bootstrap/Modal";
+import Loader from "../Loader/Loader";
+import { allCourseList } from "@/data/courseData";
 
 export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
-  const [courseData, setcourseData] = useState([]);
+
   const [isLoading, setIsLoading] = useState(true);
   const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
@@ -21,13 +23,8 @@ export default function LandingForm(contactform: any) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const getData = async () => {
-    let courseListResponse = await courseService.allParentCourses();
-    setcourseData(courseListResponse);
-  };
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
-    console.log("countryData--", countryData);
     setCountryData(countryData);
     countryData ? setIsLoading(false) : setIsLoading(true);
 
@@ -62,15 +59,14 @@ export default function LandingForm(contactform: any) {
   };
 
   useEffect(() => {
-    getData();
     getCountryCode();
   }, []);
 
   let courses: any = [];
 
-  if (courseData.length) {
+  if (allCourseList.length) {
     courses = _.filter(
-      courseData,
+      allCourseList,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
@@ -93,11 +89,7 @@ export default function LandingForm(contactform: any) {
       <div className="contact-section ">
         <div className="auto-container">
           {isLoading ? (
-            <div className="d-flex justify-content-center w-100">
-              <div className="spinner-border" role="status">
-                <span className="sr-only" />
-              </div>
-            </div>
+            <Loader />
           ) : (
             <form
               className="form-box text-start"
