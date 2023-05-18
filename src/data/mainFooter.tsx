@@ -82,8 +82,8 @@ export const mainFooter = {
 
     {
       id: 6,
-      href: "/blogs",
-      title: "Blogs",
+      href: "/blog",
+      title: "Blog",
     },
 
     {

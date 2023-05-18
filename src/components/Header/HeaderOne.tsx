@@ -78,8 +78,8 @@ const HeaderOne = ({
   }
 
   const onSearch = (value: string) => {
-    router.pathname !== "/blogs/search" && setIsSearching(true);
-    router.push(`/blogs/search?q=${value}`);
+    router.pathname !== "/blog/search" && setIsSearching(true);
+    router.push(`/blog/search?q=${value}`);
   };
 
   const allCourses = async () => {
@@ -180,7 +180,7 @@ const HeaderOne = ({
         categorySubItem.push({
           id: 1,
           name: "Blog Categories",
-          href: "/blogs",
+          href: "/blog",
           subItems: [],
         });
         item.subNavItems = categorySubItem;
@@ -189,7 +189,7 @@ const HeaderOne = ({
             return {
               id: categories?.id,
               name: categories?.name,
-              href: `/blogs/category/${categories?.slug}`,
+              href: `/blog/category/${categories?.slug}`,
             };
           });
           if (subCategories) {

@@ -64,7 +64,7 @@ const Blogs = () => {
                   />
 
                   <div>
-                    <Link href={`/blogs/category/${values?.slug}`} passHref>
+                    <Link href={`/blog/category/${values?.slug}`} passHref>
                       <a>
                         <b
                           role="button"
