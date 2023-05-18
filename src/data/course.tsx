@@ -341,334 +341,334 @@ export const courseData = {
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   //Cybersecurity
-  CS: {
-    processOne: [
-      {
-        id: 1,
-        image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Programme in Basic Cyber Security",
-        text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
-        lists: [
-          "13 Weeks Course",
-          "Live Sessions",
-          "Career Counselling",
-          "Guaranteed Certification",
-        ],
-      },
-    ],
-    productDescription: {
-      title: "Revolutionise your career with future-ready skills",
-      text1:
-        "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
-    },
-    joinReasons: {
-      title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
-      desc1:
-        "Get exposure to a range of industry tools, preparing you with practical skills and knowledge to defend against cyber threats.",
+  // CS: {
+  //   processOne: [
+  //     {
+  //       id: 1,
+  //       image: "yellow-bg-details-bg-1.webp",
+  //       title: "Certification Programme in Basic Cyber Security",
+  //       text: "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+  //       lists: [
+  //         "13 Weeks Course",
+  //         "Live Sessions",
+  //         "Career Counselling",
+  //         "Guaranteed Certification",
+  //       ],
+  //     },
+  //   ],
+  //   productDescription: {
+  //     title: "Revolutionise your career with future-ready skills",
+  //     text1:
+  //       "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
+  //   },
+  //   joinReasons: {
+  //     title: "Reasons To Join This Course",
+  //     subTitle1: "Exposure",
+  //     desc1:
+  //       "Get exposure to a range of industry tools, preparing you with practical skills and knowledge to defend against cyber threats.",
 
-      subTitle2: "Best-in-class instructors",
-      desc2:
-        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
+  //     subTitle2: "Best-in-class instructors",
+  //     desc2:
+  //       "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
-      subTitle3: "Live sessions",
-      desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+  //     subTitle3: "Live sessions",
+  //     desc3:
+  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
-      subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1-1.webp",
-      bg2: "/assets/images/background/reason-bg2-1.webp",
-      bg3: "/assets/images/background/reason-bg3-1.webp",
-      bg4: "/assets/images/background/reason-bg4-1.webp",
-    },
-    // courseTools: [
-    //   "cs/cybersecurity-tools-1.png",
-    //   "cs/cybersecurity-tools-2.png",
-    //   "cs/cybersecurity-tools-3.png",
-    //   "cs/cybersecurity-tools-4.png",
-    //   "cs/cybersecurity-tools-5.png",
-    //   "cs/cybersecurity-tools-6.png",
-    //   "cs/cybersecurity-tools-7.png",
-    //   "cs/cybersecurity-tools-8.png",
-    //   "cs/cybersecurity-tools-9.png",
-    //   "cs/cybersecurity-tools-10.png",
-    //   "cs/cybersecurity-tools-11.png",
-    //   "cs/cybersecurity-tools-12.png",
-    //   "cs/cybersecurity-tools-13.png",
-    //   "cs/cybersecurity-tools-14.png",
-    //   "cs/cybersecurity-tools-15.png",
-    // ],
-    featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
-      features: [
-        {
-          id: 1,
-          image: "Dr-Saquib-Ahmad-Khan2.webp",
-          title: "Dr. Saquib Ahmad Khan",
-          text: "Dr. Saquib Ahmad Khan is a highly regarded and accomplished professional in the cybersecurity field. With a Ph.D. in Computer Science and several cybersecurity certifications under his belt, Dr. Khan is a renowned expert in the field cyber security. He has authored numerous research papers and articles on cybersecurity and frequently speaks at industry conferences and events, sharing his expertise with others. His contributions to the field have earned him several accolades, including widespread recognition for his knowledge and expertise. Dr. Khan is also well-versed in marketing, management, information technology, and applications, with multiple degrees. He is an exceptional faculty member, having published over 26 research papers on various subjects, and his contributions to the field are widely praised. Dr. Khan's exceptional verbal and written communication skills, coupled with his remarkable presentation abilities, have established him as a highly respected and sought-after expert in his field.",
-          designation: "PhD Computer Science",
-        },
-      ],
-    },
-    videoOne: {
-      image: "/assets/images/background/full-video-bg.webp",
-      videoId: "y2Eqx6ys1hQ",
-      title: "Linoor is trusted by millions of customers",
-      text1:
-        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
-      text2:
-        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
-    },
-    CourseCurriculum: [
-      {
-        id: 1,
-        courseCurriculumTitle: "Course curriculum",
-        faqs: [
-          {
-            id: 1,
-            title: "Week 1",
-            lists: [
-              "Introductory fundamentals of cybersecurity threat actors, attacks, and mitigation",
-              "Cybersecurity fundamentals",
-              "Security policies and procedures",
-              "Cybersecurity mitigation methods",
-              "Cia triad",
-            ],
-          },
-          {
-            id: 2,
-            title: "Week 2",
-            lists: [
-              "Enterprise architecture",
-              "Organizational security policy and components",
-              "Internet & networking basics",
-              "Introduction to secured architecture",
-              "Wireless networks",
-              "Network security controls",
-              "Cloud virtualization",
-              "Byod, and iot security testing",
-            ],
-          },
-          {
-            id: 3,
-            title: "Week 3",
-            lists: [
-              "Information system governance and risk assessment",
-              "Introduction to information security",
-              "Governance risk",
-              "Management information security programs",
-              "Network security",
-            ],
-          },
-          {
-            id: 4,
-            title: "Week 4",
-            lists: [
-              "Introduction to incident management",
-              "Developing an incident management and response system",
-              "Digital forensics business",
-              "Continuity and disaster recovery",
-            ],
-          },
-          {
-            id: 5,
-            title: "Week 5",
-            lists: [
-              "Secure development",
-              "Secure coding devsecop",
-              "Honeypot",
-              "Network security and spoofing",
-              "Wi-Fi network security",
-              "Web security",
-              "Cryptography",
-              "OS fundamentals and security",
-              "Cryptography and encryption",
-              "Cryptanalysis",
-              "Project - exploiting virtual machine",
-            ],
-          },
-          {
-            id: 6,
-            title: "Week 6",
-            lists: [
-              "Malware analysis, Memory forensics",
-              "Cyber forensic",
-              "Application security",
-              "Hands-on security - Network traffic analysis + CTF + VAPT",
-            ],
-          },
-          {
-            id: 7,
-            title: "Week 7",
-            lists: [
-              "Introduction to application security",
-              "Web-based applications and associated vulnerabilities",
-              "Cookies and tracking",
-              "Data and database security",
-              "Phishing and other attacks on identity",
-              "Regulation, compliance, and risk management",
-              "Project - exploit web application",
-            ],
-          },
-          {
-            id: 8,
-            title: "Week 8",
-            lists: [
-              "Session by industry experts",
-              "Session on work readiness skills",
-            ],
-          },
-        ],
-        defaultCurrent: 1,
-      },
-    ],
-    faqsSection: [
-      {
-        id: 1,
-        faqs: [
-          {
-            id: 1,
-            title: "How This Course Will Help Me In My Career?",
-            text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
-          },
-          {
-            id: 2,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
-          },
-          {
-            id: 3,
-            title: "What Are The Modes Of Payment Available For Me?",
-            text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
-          },
-          {
-            id: 4,
-            title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
-            text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
-          },
-          {
-            id: 5,
-            title: "Is This A Certified Course?",
-            text: "Yes, all the courses are certified by the Regenesys Business School.",
-          },
-          {
-            id: 6,
-            title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
-          },
-          {
-            id: 7,
-            title:
-              "How Will I Get Access To The Assignments And Learning Content?",
-            text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
-          },
-          {
-            id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
-            text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
-          },
-        ],
-        defaultCurrent: 1,
-      },
-    ],
-    courseBenefits: {
-      title: "Benefits",
-      desc: "",
-      tabBtns: [
-        {
-          id: "tab-1",
-          title: "Career Support",
-        },
-        {
-          id: "tab-2",
-          title: "Doubt Resolution",
-        },
-        {
-          id: "tab-3",
-          title: "Learning Support",
-        },
-        {
-          id: "tab-4",
-          title: "Networking",
-        },
-      ],
-      tabsContents: [
-        {
-          id: "tab-1",
-          image: "featured-image-14.jpg",
+  //     subTitle4: "Tools usage",
+  //     desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+  //     bg1: "/assets/images/background/reason-bg1-1.webp",
+  //     bg2: "/assets/images/background/reason-bg2-1.webp",
+  //     bg3: "/assets/images/background/reason-bg3-1.webp",
+  //     bg4: "/assets/images/background/reason-bg4-1.webp",
+  //   },
+  //   // courseTools: [
+  //   //   "cs/cybersecurity-tools-1.png",
+  //   //   "cs/cybersecurity-tools-2.png",
+  //   //   "cs/cybersecurity-tools-3.png",
+  //   //   "cs/cybersecurity-tools-4.png",
+  //   //   "cs/cybersecurity-tools-5.png",
+  //   //   "cs/cybersecurity-tools-6.png",
+  //   //   "cs/cybersecurity-tools-7.png",
+  //   //   "cs/cybersecurity-tools-8.png",
+  //   //   "cs/cybersecurity-tools-9.png",
+  //   //   "cs/cybersecurity-tools-10.png",
+  //   //   "cs/cybersecurity-tools-11.png",
+  //   //   "cs/cybersecurity-tools-12.png",
+  //   //   "cs/cybersecurity-tools-13.png",
+  //   //   "cs/cybersecurity-tools-14.png",
+  //   //   "cs/cybersecurity-tools-15.png",
+  //   // ],
+  //   featureSeven: {
+  //     title: "Meet our staff",
+  //     desc: "Revolutionise your career with future-ready skills",
+  //     features: [
+  //       {
+  //         id: 1,
+  //         image: "Dr-Saquib-Ahmad-Khan2.webp",
+  //         title: "Dr. Saquib Ahmad Khan",
+  //         text: "Dr. Saquib Ahmad Khan is a highly regarded and accomplished professional in the cybersecurity field. With a Ph.D. in Computer Science and several cybersecurity certifications under his belt, Dr. Khan is a renowned expert in the field cyber security. He has authored numerous research papers and articles on cybersecurity and frequently speaks at industry conferences and events, sharing his expertise with others. His contributions to the field have earned him several accolades, including widespread recognition for his knowledge and expertise. Dr. Khan is also well-versed in marketing, management, information technology, and applications, with multiple degrees. He is an exceptional faculty member, having published over 26 research papers on various subjects, and his contributions to the field are widely praised. Dr. Khan's exceptional verbal and written communication skills, coupled with his remarkable presentation abilities, have established him as a highly respected and sought-after expert in his field.",
+  //         designation: "PhD Computer Science",
+  //       },
+  //     ],
+  //   },
+  //   videoOne: {
+  //     image: "/assets/images/background/full-video-bg.webp",
+  //     videoId: "y2Eqx6ys1hQ",
+  //     title: "Linoor is trusted by millions of customers",
+  //     text1:
+  //       "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+  //     text2:
+  //       "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+  //   },
+  //   CourseCurriculum: [
+  //     {
+  //       id: 1,
+  //       courseCurriculumTitle: "Course curriculum",
+  //       faqs: [
+  //         {
+  //           id: 1,
+  //           title: "Week 1",
+  //           lists: [
+  //             "Introductory fundamentals of cybersecurity threat actors, attacks, and mitigation",
+  //             "Cybersecurity fundamentals",
+  //             "Security policies and procedures",
+  //             "Cybersecurity mitigation methods",
+  //             "Cia triad",
+  //           ],
+  //         },
+  //         {
+  //           id: 2,
+  //           title: "Week 2",
+  //           lists: [
+  //             "Enterprise architecture",
+  //             "Organizational security policy and components",
+  //             "Internet & networking basics",
+  //             "Introduction to secured architecture",
+  //             "Wireless networks",
+  //             "Network security controls",
+  //             "Cloud virtualization",
+  //             "Byod, and iot security testing",
+  //           ],
+  //         },
+  //         {
+  //           id: 3,
+  //           title: "Week 3",
+  //           lists: [
+  //             "Information system governance and risk assessment",
+  //             "Introduction to information security",
+  //             "Governance risk",
+  //             "Management information security programs",
+  //             "Network security",
+  //           ],
+  //         },
+  //         {
+  //           id: 4,
+  //           title: "Week 4",
+  //           lists: [
+  //             "Introduction to incident management",
+  //             "Developing an incident management and response system",
+  //             "Digital forensics business",
+  //             "Continuity and disaster recovery",
+  //           ],
+  //         },
+  //         {
+  //           id: 5,
+  //           title: "Week 5",
+  //           lists: [
+  //             "Secure development",
+  //             "Secure coding devsecop",
+  //             "Honeypot",
+  //             "Network security and spoofing",
+  //             "Wi-Fi network security",
+  //             "Web security",
+  //             "Cryptography",
+  //             "OS fundamentals and security",
+  //             "Cryptography and encryption",
+  //             "Cryptanalysis",
+  //             "Project - exploiting virtual machine",
+  //           ],
+  //         },
+  //         {
+  //           id: 6,
+  //           title: "Week 6",
+  //           lists: [
+  //             "Malware analysis, Memory forensics",
+  //             "Cyber forensic",
+  //             "Application security",
+  //             "Hands-on security - Network traffic analysis + CTF + VAPT",
+  //           ],
+  //         },
+  //         {
+  //           id: 7,
+  //           title: "Week 7",
+  //           lists: [
+  //             "Introduction to application security",
+  //             "Web-based applications and associated vulnerabilities",
+  //             "Cookies and tracking",
+  //             "Data and database security",
+  //             "Phishing and other attacks on identity",
+  //             "Regulation, compliance, and risk management",
+  //             "Project - exploit web application",
+  //           ],
+  //         },
+  //         {
+  //           id: 8,
+  //           title: "Week 8",
+  //           lists: [
+  //             "Session by industry experts",
+  //             "Session on work readiness skills",
+  //           ],
+  //         },
+  //       ],
+  //       defaultCurrent: 1,
+  //     },
+  //   ],
+  //   faqsSection: [
+  //     {
+  //       id: 1,
+  //       faqs: [
+  //         {
+  //           id: 1,
+  //           title: "How This Course Will Help Me In My Career?",
+  //           text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
+  //         },
+  //         {
+  //           id: 2,
+  //           title: "Will Digital Regenesys Offer Me Job Assistance?",
+  //           text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+  //         },
+  //         {
+  //           id: 3,
+  //           title: "What Are The Modes Of Payment Available For Me?",
+  //           text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+  //         },
+  //         {
+  //           id: 4,
+  //           title:
+  //             "For How Long Will I Be Able To Access The Content After My Course Completion?",
+  //           text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+  //         },
+  //         {
+  //           id: 5,
+  //           title: "Is This A Certified Course?",
+  //           text: "Yes, all the courses are certified by the Regenesys Business School.",
+  //         },
+  //         {
+  //           id: 6,
+  //           title:
+  //             "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+  //           text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+  //         },
+  //         {
+  //           id: 7,
+  //           title:
+  //             "How Will I Get Access To The Assignments And Learning Content?",
+  //           text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+  //         },
+  //         {
+  //           id: 8,
+  //           title: "What If The Course Timings Don't Match My Work Timings?",
+  //           text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+  //         },
+  //       ],
+  //       defaultCurrent: 1,
+  //     },
+  //   ],
+  //   courseBenefits: {
+  //     title: "Benefits",
+  //     desc: "",
+  //     tabBtns: [
+  //       {
+  //         id: "tab-1",
+  //         title: "Career Support",
+  //       },
+  //       {
+  //         id: "tab-2",
+  //         title: "Doubt Resolution",
+  //       },
+  //       {
+  //         id: "tab-3",
+  //         title: "Learning Support",
+  //       },
+  //       {
+  //         id: "tab-4",
+  //         title: "Networking",
+  //       },
+  //     ],
+  //     tabsContents: [
+  //       {
+  //         id: "tab-1",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "100% Career Counselling",
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-            "Elevate your LinkedIn game with a comprehensive profile building session",
-          ],
-        },
-        {
-          id: "tab-2",
-          image: "featured-image-14.jpg",
+  //         lists: [
+  //           "100% Career Counselling",
+  //           "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+  //           "Elevate your LinkedIn game with a comprehensive profile building session",
+  //         ],
+  //       },
+  //       {
+  //         id: "tab-2",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "Solve all your queries with one-on-one interaction during the lectures",
-            "Ask questions, get answers and complete support from the faculty",
-            "Enhanced learning experience offered by our highly experienced and achieved faculties",
-          ],
-        },
-        {
-          id: "tab-3",
-          image: "featured-image-14.jpg",
+  //         lists: [
+  //           "Solve all your queries with one-on-one interaction during the lectures",
+  //           "Ask questions, get answers and complete support from the faculty",
+  //           "Enhanced learning experience offered by our highly experienced and achieved faculties",
+  //         ],
+  //       },
+  //       {
+  //         id: "tab-3",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "Get unlimited learning access for 1 year to the learning management system",
-            "Receive proper guidance as per your special requirements from our faculties",
-            "Access the recorded lectures in case you miss a session",
-          ],
-        },
+  //         lists: [
+  //           "Get unlimited learning access for 1 year to the learning management system",
+  //           "Receive proper guidance as per your special requirements from our faculties",
+  //           "Access the recorded lectures in case you miss a session",
+  //         ],
+  //       },
 
-        {
-          id: "tab-4",
-          image: "featured-image-14.jpg",
+  //       {
+  //         id: "tab-4",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
-          ],
-        },
-      ],
-    },
-    productDetails: {
-      flagsa: "/assets/images/icons/flag_sa.webp",
-      flagnig: "/assets/images/icons/flag_nigeria.webp",
-      flagus: "/assets/images/icons/flag_us.webp",
-      flagind: "/assets/images/icons/flag_india.webp",
-      flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
-      subTitle: "Get Certified",
-      price: 64499,
-      certifiedTitle1: "Earn Your Cybersecurity certificate",
-      certifiedText1:
-        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Cybersecurity career.",
-      certifiedTitle2: "Share Your Achievement",
+  //         lists: [
+  //           "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+  //           "Connect with the Industry experts who will help you guide through your career after course completion",
+  //           "Talk, share, connect, learn and grow along with other students in your batch",
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   productDetails: {
+  //     flagsa: "/assets/images/icons/flag_sa.webp",
+  //     flagnig: "/assets/images/icons/flag_nigeria.webp",
+  //     flagus: "/assets/images/icons/flag_us.webp",
+  //     flagind: "/assets/images/icons/flag_india.webp",
+  //     flagken: "/assets/images/icons/flag_kenya.webp",
+  //     title: "Fees structure & Certification",
+  //     subTitle: "Get Certified",
+  //     price: 64499,
+  //     certifiedTitle1: "Earn Your Cybersecurity certificate",
+  //     certifiedText1:
+  //       "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Cybersecurity career.",
+  //     certifiedTitle2: "Share Your Achievement",
 
-      certifiedText2:
-        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
-      certifiedTitle3: "Benefits",
-      certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
-      admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
-      termsConditions: "*Terms & Conditions",
-      CsFundamentals: "Total Admission Fee",
-      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
-    },
-    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
-    stickyText:
-      "CS-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-  },
+  //     certifiedText2:
+  //       "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+  //     certifiedTitle3: "Benefits",
+  //     certifiedText3:
+  //       "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+  //     admissionText:
+  //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+  //     termsConditions: "*Terms & Conditions",
+  //     CsFundamentals: "Total Admission Fee",
+  //     CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+  //   },
+  //   zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
+  //   stickyText:
+  //     "CS-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  // },
 
   //Basic Data Science
   BDSCI: {

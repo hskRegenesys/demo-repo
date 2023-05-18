@@ -46,8 +46,8 @@ const teamSection = {
     },
     {
       id: 12,
-      name: "Cyber Security Course",
-      href: "/all-courses/cyber-security-course",
+      name: "Cyber Security",
+      href: "/all-courses/cyber-security",
     },
     {
       id: 6,
