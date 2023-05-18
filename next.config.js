@@ -108,6 +108,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/all-courses/cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
       source: "/terms-and-condition",
       destination: "/terms-and-conditions",
       permanent: true,
@@ -261,7 +266,7 @@ const createReWrites = () => {
     // },
     {
       source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
-      destination: "/all-courses/basic-digital-marketing-course/101",
+      destination: "/all-courses/digital-marketing-fundamentals/101",
     },
     {
       source:
