@@ -19,8 +19,9 @@ const Data = {
       "cyber-security": "Cyber Security Course Online | Digital Regenesys",
       "digital-marketing":
         "Digital Marketing Course Online | Digital Regenesys",
-      "basic-digital-marketing":
-        "Basic Digital Marketing Course Online | Digital Regenesys",
+      "digital-marketing-fundamentals":
+        "Digital Marketing Fundamentals Course Online | Digital Regenesys",
+
       "basic-digital-marketing-course":
         "Digital Marketing Fundamentals Course Online | Digital Regenesys",
       "advanced-digital-marketing":
@@ -145,7 +146,7 @@ const Data = {
         best Basic Digital Marketing Course, 
         Basic Digital Marketing Course online
         `,
-      "basic-digital-marketing-course":
+      "digital-marketing-fundamentals":
         "digital marketing, digital marketing course, online digital marketing course, digital marketing certification, digital marketing training, digital marketing for beginners, digital marketing for business, digital marketing for startups, digital marketing for small businesses, digital marketing fundamental course, digital marketing fundamental course details, digital marketing fundamental course durations, digital marketing fundamental course scope, digital marketing fundamental course fees",
       "advanced-digital-marketing": `
         Advanced Digital Marketing, 
@@ -246,7 +247,7 @@ const Data = {
         "Digital marketing, advance your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
       "basic-digital-marketing":
         "The basic digital marketing course offered by Digital Regenesys lays a solid foundation of essential digital marketing domains. Visit our website to explore more.",
-      "basic-digital-marketing-course":
+      "digital-marketing-fundamentals":
         "Learn the fundamentals of digital marketing with our online course. Gain the skills you need to launch or grow your business online. Enrol today!",
       "advanced-digital-marketing":
         "The advanced digital marketing course offered by Digital Regenesys equips students with advanced knowledge of digital marketing domains and hands-on projects.",
@@ -271,7 +272,7 @@ const Data = {
         "Digital Regenesys offers an all in one trading course, investment course, and finance course. Enrol for the Investment, Trading & Personal Finance course. Enquire now.",
     },
     canonicalUrlData: {
-      home: "/home",
+      home: "/",
       about: "/about",
       allCourse: "/all-courses",
       contact: "/contact",
@@ -281,8 +282,8 @@ const Data = {
       "digital-marketing": "/all-courses/digital-marketing",
       "basic-digital-marketing":
         "/all-courses/digital-marketing/basic-digital-marketing",
-      "basic-digital-marketing-course":
-        "/all-courses/digital-marketing/basic-digital-marketing-course",
+      "digital-marketing-fundamentals":
+        "/all-courses/digital-marketing/digital-marketing-fundamentals",
       "advanced-digital-marketing":
         "/all-courses/digital-marketing/advanced-digital-marketing",
       "applied-digital-marketing":

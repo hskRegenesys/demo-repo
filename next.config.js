@@ -235,6 +235,12 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
+    {
+      source: "/all-courses/digital-marketing/basic-digital-marketing-course",
+      destination:
+        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      permanent: true,
+    },
   ];
   return path;
 };
