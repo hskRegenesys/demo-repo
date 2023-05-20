@@ -3988,6 +3988,13 @@ export const courseData = {
       features: [
         {
           id: 1,
+          image: "Dennis-Laxton.webp",
+          title: "Dr. Dennis Laxton ",
+          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
+          designation: "Academic Team Leader and Senior Lecturer",
+        },
+        {
+          id: 2,
           image: "Shaista-Fatima.webp",
           title: "Dr. Shaista Fatima",
           text: "Dr. Shaista is a resource person on Creative thinking and allied areas such as Innovation and Design Thinking. She has a PhD. in Management from an Institute of National Importance (MNNIT Allahabad) in India and has also qualified the coveted UGC-NET for Lectureship accreditation. She is a Gold medalist in the certificate course on Design Thinking coordinated by IIT Madras.",
