@@ -118,13 +118,20 @@ const ProductTab = ({ courses = [], current }: any) => {
                     />
                   </figure>
                   <a
+                    onClick={() => redirectCard(name, code, id, parent_id)}
                     className="lightbox-image overlay-box"
                     data-fancybox="gallery"
                   ></a>
                   <div className="cap-box">
                     <div className="cap-inner">
                       <div className="title">
-                        <h5>{name}</h5>
+                        <h5
+                          onClick={() =>
+                            redirectCard(name, code, id, parent_id)
+                          }
+                        >
+                          {name}
+                        </h5>
                       </div>
 
                       <div className="cat">

@@ -6001,6 +6001,11 @@ tns-controls-tools {
   font-size: 20px;
   color: #000000;
 }
+.link-box.inline-button-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .tabs-box {
   position: relative;
@@ -20300,10 +20305,11 @@ h2.highlight {
 .sticky-form {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   gap: 16px;
   border-bottom: 2px solid #ccc;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 .sticky-form-header .contact-section .form-box {
   background: transparent;

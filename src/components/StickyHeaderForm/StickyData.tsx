@@ -25,7 +25,7 @@ const StickyData = (props: any) => {
               <div className="sticky-contant">
                 <span> {AllPageStickText}</span>
               </div>
-              <div className="link-box inline-button">
+              <div className="link-box inline-button-position">
                 <a className="theme-btn btn-style-two" onClick={handleShow}>
                   <i className="btn-curve"></i>
                   <span className="btn-title">Enquire Now</span>
