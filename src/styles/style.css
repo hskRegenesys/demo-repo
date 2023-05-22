@@ -269,6 +269,7 @@ p {
   .page-wrapper.boxed-wrapper {
     max-width: 95%;
   }
+  
 }
 
 .auto-container {
@@ -4139,6 +4140,7 @@ tns-controls-tools {
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
+  cursor: pointer;
 }
 
 .gallery-item .cap-box h5 a {
@@ -5993,7 +5995,11 @@ tns-controls-tools {
   font-size: 20px;
   color: #000000;
 }
-
+.link-box .inline-button-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .tabs-box {
   position: relative;
 }
@@ -20279,10 +20285,11 @@ h2.highlight {
 .sticky-form {
   display: flex;
   justify-content: center;
-  align-items: baseline;
   gap: 16px;
   border-bottom: 2px solid #ccc;
   padding-bottom: 15px;
+  padding-top: 15px;
+  align-items: center;
 }
 .sticky-form-header .contact-section .form-box {
   background: transparent;

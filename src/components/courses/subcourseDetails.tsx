@@ -148,12 +148,21 @@ const SubCourseDetails = ({ page }: any) => {
                           <a
                             className="lightbox-image overlay-box"
                             data-fancybox="gallery"
+                            onClick={() =>
+                              redirectCard(name, code, id, parent_id)
+                            }
                           ></a>
                           <div className="cap-box">
                             <div className="cap-inner">
                               <div className="title">
                                 <h5>
-                                  <a>{name}</a>
+                                  <a
+                                    onClick={() =>
+                                      redirectCard(name, code, id, parent_id)
+                                    }
+                                  >
+                                    {name}
+                                  </a>
                                 </h5>
                               </div>
 
