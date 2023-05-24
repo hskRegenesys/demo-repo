@@ -4,32 +4,29 @@ import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
 
 const {
-  title1,
-  paragraph1,
-  paragraph2,
-  paragraph3,
-  title2,
-  paragraph4,
-  title3,
-  paragraph5,
-  title4,
-  paragraph6,
-  title5,
-  paragraph7,
-  title6,
-  paragraph8,
-  title7,
-  paragraph9,
-  subTitle,
-  list1,
-  list2,
-  paragraph10,
-  paragraph11,
-  paragraph12,
-  paragraph13,
-  title8,
-  paragraph14,
-  paragraph15,
+  listTitleOne,
+  listTitleTwo,
+  listTitleThree,
+  listTitleFour,
+  listTitleFive,
+  listTitleSix,
+  listTitleSeven,
+  listTitleEight,
+  listTitleNine,
+  listGroupOne,
+  listGroupTwo,
+  listGroupThree,
+  listGroupFour,
+  listGroupFive,
+  listGroupSix,
+  listGroupSeven,
+  listGroupEight,
+  listGroupNine,
+  contactDetailsName,
+  contactDetailsAddress,
+  contactDetailsEmail,
+  contactDetailsDescriptionOne,
+  contactDetailsDescriptionTwo,
 } = privacyPolicy;
 
 const PrivacyPolicy = () => {
@@ -40,53 +37,121 @@ const PrivacyPolicy = () => {
           <Col md={12} lg={12}>
             <div className="p-0 privacy-policy">
               <h1 className="page-head">Privacy and Policy</h1>
-              <h6>{title1}</h6>
-              <p>{paragraph1}</p>
-              <p>{paragraph2}</p>
-              <p>{paragraph3}</p>
+              <div className="effective-date">
+                <strong>Effective Date: </strong>
+                <span>
+                  01<sup>st</sup> June, 2023
+                </span>
+              </div>
+              <h6>{listTitleOne}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupOne?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h6>{title2}</h6>
-              <p>{paragraph4}</p>
+              <h6>{listTitleTwo}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupTwo?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h6>{title3}</h6>
-              <p>{paragraph5}</p>
+              <h6>{listTitleThree}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupThree?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h6>{title4}</h6>
-              <p>{paragraph6}</p>
+              <h6>{listTitleFour}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupFour?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h6>{title5}</h6>
-              <p>{paragraph7}</p>
+              <h6>{listTitleFive}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupFive?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h6>{title6}</h6>
-              <p>{paragraph8}</p>
+              <h6>{listTitleSix}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupSix?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h6>{title7}</h6>
-              <p>{paragraph9}</p>
+              <h6>{listTitleSeven}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupSeven?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h5>{subTitle}</h5>
+              <h6>{listTitleEight}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupEight?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <ul>
-                <li>
-                  <i className="far fa-check-circle"></i> {list1}
-                </li>
-                <li>
-                  <i className="far fa-check-circle"></i>
-                  {list2}
-                </li>
-              </ul>
-              <p>{paragraph10}</p>
-
-              <p>{paragraph11}</p>
-
-              <p>{paragraph12}</p>
-
-              <p>{paragraph13}</p>
-
-              <h6>{title8}</h6>
-
-              <p>{paragraph14}</p>
-
-              <p>{paragraph15}</p>
+              <h6>{listTitleNine}</h6>
+              <div className="terms-list-items">
+                <ul>
+                  {listGroupNine?.map((items) => (
+                    <li>
+                      <i className="far fa-check-circle"></i> {items}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="privacy-contact-details">
+                <div>
+                  <p>{contactDetailsName}</p>
+                  <span>{contactDetailsAddress}</span>
+                  <a href="mailto:info.digital@regenesys.net">
+                    Email: {contactDetailsEmail}
+                  </a>
+                  <p>{contactDetailsDescriptionOne}</p>
+                  <p>{contactDetailsDescriptionTwo}</p>
+                </div>
+              </div>
             </div>
           </Col>
         </Row>

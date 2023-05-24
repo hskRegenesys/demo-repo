@@ -18952,15 +18952,30 @@ input.PhoneInputInput {
 .privacy-policy {
   margin-bottom: 100px;
 }
+.terms-list-items {
+  position: relative;
+}
 
 .privacy-policy ul {
-  margin-left: 20px;
+  margin-left: 0px;
   margin-bottom: 20px;
 }
 
 .privacy-policy ul li {
   font-size: 14px;
+  padding-left: 25px;
+  line-height: 26px;
+  margin: 15px 0;
+  vertical-align: text-top;
   font-family: "Raleway-semibold";
+}
+.privacy-policy ul li i {
+  position: absolute;
+  left: 0px;
+  font-size: 18px;
+  color: #1fa393;
+  margin-right: 5px;
+  margin-top: 3px;
 }
 
 .privacy-policy p {
@@ -18980,6 +18995,17 @@ input.PhoneInputInput {
   font-size: 18px;
   color: #1fa393;
   margin-right: 5px;
+}
+.privacy-contact-details a {
+  display: block;
+  color: #1fa393;
+  font-weight: 800;
+}
+.terms-list-items a {
+  color: #000;
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 15px;
 }
 
 .privacy-bg {
