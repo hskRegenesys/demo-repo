@@ -1,47 +1,64 @@
-export const privacyPolicy = {  
+export const privacyPolicy = {
+  pageHeading: "We Respect Your Privacy",
+  listTitleOne: "Information We Collect",
+  listTitleTwo: "Use of Information",
+  listTitleThree: "Disclosure of Information",
+  listTitleFour: "Data Security",
+  listTitleFive: "Your Choices",
+  listTitleSix: "Children's Privacy",
+  listTitleSeven: "Changes to this Privacy Policy",
+  listTitleEight: "International Users",
+  listTitleNine: "Contact Us",
 
-  title1: "We Respect Your Privacy",
-  paragraph1:
-  "Privacy Statement for regenesys.net",
-  paragraph2: "We respect you and we hold your personal information private.",
-  paragraph3: "Regenesys has created this privacy statement in order to demonstrate our firm commitment to your privacy. The following discloses our information gathering and dissemination practices for this website.",
+  pageParagraph: `
+  Welcome to Digital Regenesys ("we," "us," or "our"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and protect the information you provide when you access our website or use our services. By visiting our website or using our services, you accept the practices described in this Privacy Policy.
+  `,
+  listGroupOne: [
+    "Personal Information: We may collect personal information from you, such as your name, email address, phone number, and billing information when you voluntarily provide it to us. We may also collect personal information from you when you create an account, request information, participate in surveys or contests, or otherwise interact with our website or services.",
+    "Usage Information: We automatically collect certain information when you visit our website or use our services. This may include your IP address, browser type, operating system, referring URLs, pages viewed, and the dates and times of your interactions. We may use cookies and similar technologies to collect this information.",
+  ],
+  listGroupTwo: [
+    "Personal Information: We use the personal information you provide to respond to your inquiries, provide requested services, process transactions, personalize your experience, and communicate with you about our products, services, and promotions.",
+    "Usage Information: We use usage information to analyze trends, administer our website, improve our services, and gather demographic information about our user base. This information helps us enhance the user experience and tailor our offerings to better meet your needs.",
+  ],
+  listGroupThree: [
+    "Service Providers: We may share your personal information with trusted third-party service providers who assist us in operating our website, conducting business, or providing services to you. These service providers are obligated to maintain the confidentiality and security of your personal information.",
+    "Legal Requirements: We may disclose your personal information if required to do so by law or if we believe that such action is necessary to (a) comply with a legal obligation, (b) protect and defend our rights or property, (c) prevent fraud, (d) act in urgent circumstances to protect the personal safety of users of our website or the public, or (e) enforce our Privacy Policy and Terms of Use.",
+    "Business Transfers: In the event of a merger, acquisition, sale of assets, or bankruptcy, your personal information may be transferred to a third party as part of the transaction. We will notify you via email and/or a prominent notice on our website of any change in ownership or uses of your personal information.",
+  ],
+  listGroupFour: [
+    "We implement industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction. However, no method of transmission over the internet or electronic storage is entirely secure. Therefore, while we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security. In the event of a data breach where your personal data, as defined in our Privacy Policy, is compromised, we will make reasonable efforts to notify you and any applicable supervisory authorities as required by law. We will take immediate action to mitigate the breach, investigate its cause, and implement necessary measures to prevent future occurrences. Notification may be made through email, website announcements, or other appropriate means. Please ensure that your contact information is up to date to ensure effective communication in such circumstances.",
+  ],
+  listGroupFive: [
+    "You can update or correct your personal information by logging into your account or contacting us directly via email at info.digital@regenesys.net. You may also unsubscribe from our marketing communications by following the instructions provided in the emails you receive from us.",
+  ],
+  listGroupSix: [
+    "Our website and services are not directed to individuals under the age of 21. We do not knowingly collect personal information from children under 21. If we become aware that we have collected personal information from a child under the age of 21, we will take steps to delete it promptly.",
+  ],
+  listGroupSeven: [
+    `We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the "Effective Date" at the top will reflect the date of the most recent changes. We encourage you to review this Privacy Policy periodically to stay informed about any changes to how we collect, use, disclose, or protect your personal information. Your continued use of our website or services after any modifications to this Privacy Policy constitutes your acceptance of the revised policy.`,
+  ],
+  listGroupEight: [
+    `Our website is operated and managed on servers located within the United States. If you access our website or use our services from outside the United States, please be aware that your personal information may be transferred to, stored, and processed in the United States, where our servers are located. By using our website or services, you consent to the transfer of your personal information to the United States, which may have different data protection laws than your country of residence.`,
+  ],
+  listGroupNine: [
+    `If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:`,
+  ],
 
+  contactDetailsName: "Digital Regenesys Corporation",
 
-  title2: "Disclosure",  
-  paragraph4: "We never disclose your personal information to any third party.",
-  title3: "IP address Identification",  
+  contactDetailsAddress: `
+    548 Market
+    St. #243271,
+    San Francisco,
+    California 94104-5401
 
+    `,
+  contactDetailsEmail: "info.digital@regenesys.net",
 
-  paragraph5: "We use your IP address to help diagnose problems with our server, and to administer our web site. Your IP address may be used to help identify you and your behavior on this website and to gather broad technical and/or demographic information.",
+  contactDetailsDescriptionOne:
+    "We will make reasonable efforts to address your inquiry in a timely manner.",
 
-
-  title4: "Cookies",  
-  paragraph6: "Our site uses cookies to keep track of your navigational and other preferences, occasionally to deliver content specific to your expressed interests and possibly to save your password so you don’t have to re-enter it each time you visit our site.",
-
-
-  title5: "Registration Information",  
-  paragraph7: "Our site’s registration, comment and order forms require users to give us contact information (like your name and email address) and rarely unique identifiers (like your identity number). We use customer contact information from the registration forms and depending on visitor preferences to send the user information about our company and promotional material from our company but not from third parties or marketing partners. The customer’s contact information is also used to contact the visitor when necessary. Users may opt-out of receiving future mailings; see the choice/opt-out section below. Unique identifiers (such as usernames and identity numbers) are collected for use as account numbers in our record system.",
-
-  title6: "Public Forums",  
-  paragraph8: "This site may make blogs, chat rooms, forums, message boards, and/or news groups available to its users. Please remember that any information that is disclosed in these areas becomes public information and you should exercise caution when deciding to disclose your personal information.",
-
-  title7: "Security",  
-  paragraph9: "This site has security measures in place to protect the loss, misuse and alteration of the information under our control.",
-
-
-  subTitle: "Choice/Opt-Out",
-  list1: "We do not provide your personal information, including email address, to any third party.",
-  list2: "You will only receive communications from Regenesys.",
-  
-  paragraph10: "This site gives users the following options for removing their information from our database to not receive future communications or to no longer receive our service.",
-  paragraph11: "You can send email to info@regenesys.co.za and subscription management links are included in any mass mailings we perform.",
-  paragraph12: "Comments, Suggestions, Criticisms and Contacting the Web Site Owner",
-  paragraph13: "Your opinion is very important to us, If you spot something that is amiss or if you have any questions about this privacy statement, the practices of this site, or your dealings with this web site, you can contact us through via info@regenesys.co.za",
-
-  title8: "Complete Privacy Guide", 
-  paragraph14: "This site has security measures in place to protect the loss, misuse and alteration of the information under our control.",
-  paragraph15: "Click here to download our complete privacy policy .",
-  
-
+  contactDetailsDescriptionTwo:
+    "Thank you for trusting Digital Regenesys with your personal information. We are committed to protecting your privacy and providing you with a secure online experience.",
 };
-
