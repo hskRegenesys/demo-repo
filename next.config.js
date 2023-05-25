@@ -241,6 +241,46 @@ const redirectURL = () => {
         "/all-courses/digital-marketing/digital-marketing-fundamentals",
       permanent: true,
     },
+    {
+      source: "/all-course/data-science",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-course/data-science/basic-data-science",
+      destination: "/all-courses/data-science/basic-data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-course/data-science/advanced-data-science",
+      destination: "/all-courses/data-science/advanced-data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-course/data-science/applied-data-science",
+      destination: "/all-courses/data-science/applied-data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-course/project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/all-course/digital-marketing/basic-digital-marketing",
+      destination: "/all-courses/digital-marketing/basic-digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/all-course/digital-marketing/advanced-digital-marketing",
+      destination: "/all-courses/digital-marketing/advanced-digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/all-course/digital-marketing/applied-digital-marketing",
+      destination: "/all-courses/digital-marketing/applied-digital-marketing",
+      permanent: true,
+    },
   ];
   return path;
 };

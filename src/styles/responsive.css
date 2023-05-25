@@ -398,7 +398,7 @@
   .sticky-contant span {
     font-weight: bold;
     font-size: 15px;
-    padding-top: 5px;
+    padding-top: 1px;
   }
 
   .testimonials-five-card__text {
@@ -820,15 +820,17 @@
     display: block;
     padding-bottom: 12px;
     border-bottom: none;
+    padding-top: 5px;
   }
+
   .sticky-form-header .contact-section .btn-style-two {
     margin: 0 auto;
     display: table;
   }
   .sticky-form-header .closeBtn {
     position: absolute;
-    right: 24%;
-    top: 50px;
+    right: 28%;
+    bottom: 44%;
   }
   .sticky-form-header .inline-button {
     justify-content: center;
@@ -839,6 +841,13 @@
   }
   .closeBtn button {
     border-radius: 2px;
+  }
+  .sticky-form .inline-button-position {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+  .sticky-form .inline-button-position .btn-title {
+    padding: 5px 25px 5px !important;
   }
 }
 

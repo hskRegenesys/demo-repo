@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
-import { shuffleArray } from "src/utils/common";
 import { Spinner } from "react-bootstrap";
 import PostCarousel from "./PostCarousel";
 
@@ -26,8 +25,6 @@ const Blogs = () => {
       [key: string]: number | string;
     }>
   ) => {
-    shuffleArray(response);
-
     const apiResponse = await Promise.all(
       response?.slice(0, 12).map(async (category) => ({
         category: category.name,

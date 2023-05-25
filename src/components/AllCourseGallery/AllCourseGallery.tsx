@@ -233,6 +233,9 @@ const AllCourseGallery = () => {
                             />
                           </figure>
                           <a
+                            onClick={() =>
+                              redirectCard(name, code, id, parent_id)
+                            }
                             className="lightbox-image overlay-box"
                             data-fancybox="gallery"
                           ></a>
@@ -240,7 +243,13 @@ const AllCourseGallery = () => {
                             <div className="cap-inner">
                               <div className="title">
                                 <h5>
-                                  <a>{name}</a>
+                                  <a
+                                    onClick={() =>
+                                      redirectCard(name, code, id, parent_id)
+                                    }
+                                  >
+                                    {name}
+                                  </a>
                                 </h5>
                               </div>
 
