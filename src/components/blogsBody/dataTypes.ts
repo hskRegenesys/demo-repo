@@ -33,7 +33,8 @@ export interface IPostContainerTypes {
   restPost?: boolean;
 }
 interface IImage {
-  image: string;
+  desktopImage: string;
+  mobileImage: string;
   label?: string;
   caption?: string;
 }
@@ -52,16 +53,24 @@ export const postToShow: IPostToShow = {
 
 export const carousalProps = [
   {
-    image: "digital-marketing.webp",
+    desktopImage: "blog-home-Cyber-Security.webp",
+    mobileImage: "blog-home-Cyber-Security-responsive.webp",
   },
   {
-    image: "data-science.webp",
+    desktopImage: "blog-home-Data-Science.webp",
+    mobileImage: "blog-home-Data-Science-Responsive.webp",
   },
   {
-    image: "Project-Management.webp",
+    desktopImage: "blog-home-Design-Thinking.webp",
+    mobileImage: "blog-home-desig-thinking-responsive.webp",
   },
   {
-    image: "cyber-security.jpg",
+    desktopImage: "blog-home-Digital-Marketing.webp",
+    mobileImage: "blog-home-Digital-Marketing-responsive.webp",
+  },
+  {
+    desktopImage: "blog-home-Project-Management.webp",
+    mobileImage: "blog-home-Project-Management-Responsive.webp",
   },
 ];
 
