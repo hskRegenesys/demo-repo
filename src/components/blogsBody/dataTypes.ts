@@ -73,11 +73,6 @@ export const carousalProps = [
     link: "/all-courses/digital-marketing",
     mobileImage: "blog-home-Digital-Marketing-responsive.webp",
   },
-  {
-    desktopImage: "blog-home-Project-Management.webp",
-    link: "/all-courses/project-management",
-    mobileImage: "blog-home-Project-Management-Responsive.webp",
-  },
 ];
 
 export const bannerImages = [
