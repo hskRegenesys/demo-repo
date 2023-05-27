@@ -23,7 +23,7 @@ const Blogs = () => {
   };
 
   return (
-    <Layout pageTitle="Blogs">
+    <Layout pageTitle="blog">
       <Style />
       <HeaderOne variant="blog" />
       <MobileMenu />

@@ -35,6 +35,7 @@ export interface IPostContainerTypes {
 interface IImage {
   desktopImage: string;
   mobileImage: string;
+  link: string;
   label?: string;
   caption?: string;
 }
@@ -54,22 +55,27 @@ export const postToShow: IPostToShow = {
 export const carousalProps = [
   {
     desktopImage: "blog-home-Cyber-Security.webp",
+    link: "/all-courses/cyber-security",
     mobileImage: "blog-home-Cyber-Security-responsive.webp",
   },
   {
     desktopImage: "blog-home-Data-Science.webp",
+    link: "/all-courses/data-science",
     mobileImage: "blog-home-Data-Science-Responsive.webp",
   },
   {
     desktopImage: "blog-home-Design-Thinking.webp",
+    link: "/all-courses/design-thinking",
     mobileImage: "blog-home-desig-thinking-responsive.webp",
   },
   {
     desktopImage: "blog-home-Digital-Marketing.webp",
+    link: "/all-courses/digital-marketing",
     mobileImage: "blog-home-Digital-Marketing-responsive.webp",
   },
   {
     desktopImage: "blog-home-Project-Management.webp",
+    link: "/all-courses/project-management",
     mobileImage: "blog-home-Project-Management-Responsive.webp",
   },
 ];
