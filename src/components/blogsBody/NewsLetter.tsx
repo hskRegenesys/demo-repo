@@ -19,7 +19,10 @@ const NewsLetter = () => {
         className="d-flex flex-column mt-4 p-3"
       >
         <div className="container">
-          <h4 className="text-center w-100">Our Newsletters!</h4>
+          <div className="sec-title text-center">
+            <h2 className="text-center w-100">Our Newsletters!</h2>
+          </div>
+
           <p className="text-center text-white w-100">
             Get notified about the latest career insights, study tips & offers
             at DIGITAL REGENYSYS

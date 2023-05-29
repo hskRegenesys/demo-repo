@@ -1088,6 +1088,11 @@
   .banner-carousel .content-box h1 {
     font-size: 46px;
   }
+  .blog-title-heading h1 {
+    font-size: 25px;
+    line-height: 1.15em;
+    margin-top: 15px;
+  }
 
   .banner-three .banner-carousel .content-box h1 {
     font-size: 46px;
