@@ -82,7 +82,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
                 ) : values?.posts?.length > 0 ? (
                   <div key={values?.category} className="py-3">
                     <h2
-                      className="h2 p-0 m-0"
+                      className="h6 p-0 m-0 fw-bold"
                       dangerouslySetInnerHTML={{
                         __html: values?.category.toString(),
                       }}
