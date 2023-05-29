@@ -53,8 +53,8 @@ const Blogs = () => {
             return values?.posts?.length > 0 ? (
               <div key={values?.category} className="py-3">
                 <div className="d-flex justify-content-between align-items-center">
-                  <p
-                    className="h6 p-0 m-0"
+                  <h2
+                    className="h2 p-0 m-0"
                     dangerouslySetInnerHTML={{
                       __html: values?.category.toString(),
                     }}
