@@ -13,7 +13,7 @@ const Post = () => {
   const { slug } = router.query;
 
   return (
-    <Layout pageTitle="Blogs">
+    <Layout pageTitle="blog">
       <Style />
       <HeaderOne variant="blog" />
       <MobileMenu />

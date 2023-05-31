@@ -344,7 +344,11 @@ figure {
   background: var(--thm-base);
   color: #ffffff;
 }
-
+.blog-title-heading h1 {
+  font-size: 46px;
+  font-family: Raleway-semibold;
+  max-width: 100%;
+}
 .btn-style-one .btn-curve {
   position: absolute;
   right: -15px;
