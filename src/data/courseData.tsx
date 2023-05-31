@@ -752,9 +752,9 @@ export const allCourseList = [
   },
   {
     id: 102,
-    name: "Advanced Digital Marketing Course",
+    name: "Advance Digital Marketing Course",
     code: "AVDMC",
-    description: "Advanced Digital Marketing Course",
+    description: "Advance Digital Marketing Course",
     parent_id: 24,
     mode_id: 1,
     isAddon: false,

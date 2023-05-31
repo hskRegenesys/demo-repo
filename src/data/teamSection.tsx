@@ -31,8 +31,8 @@ const teamSection = {
     },
     {
       id: 10,
-      name: "Advanced Digital Marketing Course",
-      href: "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      name: "Advance Digital Marketing Course",
+      href: "/all-courses/digital-marketing/advance-digital-marketing-course",
     },
     {
       id: 11,
@@ -56,8 +56,8 @@ const teamSection = {
     },
     {
       id: 7,
-      name: "Advanced Data Science",
-      href: "/all-courses/data-science/advanced-data-science",
+      name: "Advance Data Science",
+      href: "/all-courses/data-science/advance-data-science",
     },
     {
       id: 8,
