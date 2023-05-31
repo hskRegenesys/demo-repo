@@ -281,6 +281,31 @@ const redirectURL = () => {
       destination: "/all-courses/digital-marketing/applied-digital-marketing",
       permanent: true,
     },
+    {
+      source: "/all-course",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/course",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/[course]",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/[course]/[id]",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/blog/category/[slug]",
+      destination: "/blog",
+      permanent: true,
+    },
   ];
   return path;
 };
