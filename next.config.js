@@ -311,7 +311,7 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/[course]/[id]",
+      source: "/all-courses/[course]/[id]",
       destination: "/all-courses",
       permanent: true,
     },
