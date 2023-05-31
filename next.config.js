@@ -76,25 +76,31 @@ const redirectURL = () => {
     {
       source: "/programs/digital-marketing-course/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
+      permanent: true,
+    },
+    {
+      source: "/programs/digital-marketing-course/advance-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/all-courses/digital-marketing/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/applied-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/all-courses/digital-marketing/applied-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
@@ -272,8 +278,16 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
+      permanent: true,
+    },
+    {
       source: "/all-course/digital-marketing/advanced-digital-marketing",
-      destination: "/all-courses/digital-marketing/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
       permanent: true,
     },
     {
@@ -339,7 +353,7 @@ const createReWrites = () => {
     // },
     {
       source: "/all-courses/digital-marketing/advanced-digital-marketing",
-      destination: "/all-courses/advanced-digital-marketing/26",
+      destination: "/all-courses/advance-digital-marketing-course/26",
     },
     // {
     //   source: "/all-courses/digital-marketing/applied-digital-marketing",
@@ -350,9 +364,8 @@ const createReWrites = () => {
       destination: "/all-courses/digital-marketing-fundamentals/101",
     },
     {
-      source:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
-      destination: "/all-courses/advanced-digital-marketing-course/102",
+      source: "/all-courses/digital-marketing/advance-digital-marketing-course",
+      destination: "/all-courses/advance-digital-marketing-course/102",
     },
     {
       source: "/all-courses/cyber-security-fundamentals-course",
