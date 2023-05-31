@@ -28,7 +28,7 @@ const AllPageStickyData: IAllPageStickyDataType = {
 
   "digital-marketing-fundamentals":
     "Grasp the Fundamentals of Digital Marketing for Career Advancement",
-  "advanced-digital-marketing-course":
+  "advance-digital-marketing-course":
     "Grasp the Fundamentals of Digital Marketing for Career Advancement",
   "cyber-security-fundamentals-course":
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
