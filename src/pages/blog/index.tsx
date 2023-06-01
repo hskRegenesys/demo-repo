@@ -19,7 +19,6 @@ const Blogs = () => {
       search: value,
     });
     setSearchData(response);
-    console.log("response", response);
   };
 
   return (
@@ -28,6 +27,7 @@ const Blogs = () => {
       <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
+
       <BlogsBody />
       <MainFooter />
       <StickyBar />

@@ -7,6 +7,7 @@ import { IPostTypes, bannerImages } from "./dataTypes";
 import Link from "next/link";
 import RightSidePanel from "./RightSidePanel";
 import ApplyNow from "./ApplyNow";
+import BreadCrumb from "./BreadCrumb";
 
 const BlogContainer = ({ slug }: { slug: string }) => {
   const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
@@ -23,15 +24,15 @@ const BlogContainer = ({ slug }: { slug: string }) => {
 
   return (
     <div style={{ paddingTop: "85px" }}>
-      <div className="">
+      <div>
         <div
           className="w-100 d-grid blog-container-bg-image"
           style={{
-            height: "500px",
+            height: "600px",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "contain",
-            backgroundImage: `url(/assets/images/background/${bannerImages[randomIndex]})`,
+            backgroundImage: `url(${postResponse[0]?.yoast_head_json.og_image[0].url})`,
           }}
         >
           <div
@@ -44,6 +45,11 @@ const BlogContainer = ({ slug }: { slug: string }) => {
       </div>
       <div className="py-5">
         <div className="container-fluid px-5">
+          <BreadCrumb
+            title={slug?.toString().replaceAll("-", " ")}
+            parent="Blog"
+            parentHref="/blog"
+          />
           <Link href={`/blog/`} passHref>
             <p
               role="button"
@@ -59,10 +65,11 @@ const BlogContainer = ({ slug }: { slug: string }) => {
                 postResponse?.map((item) => (
                   <div key={item.id}>
                     {item?.title && (
-                      <h4
+                      <h1
                         dangerouslySetInnerHTML={{
                           __html: item?.title?.rendered,
                         }}
+                        className="blog-h1"
                       />
                     )}
                     {item?.content && (
