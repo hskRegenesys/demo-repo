@@ -2,6 +2,7 @@ export interface IPostListTypes {
   slug?: string;
   category: string | number;
   posts: Array<{
+    title: { rendered: string };
     id: number;
     slug: string;
     yoast_head_json: {
@@ -20,7 +21,7 @@ export interface IPostTypes {
     og_title: string;
     og_description: string;
   };
-  title?: { rendered: string };
+  title: { rendered: string };
   content?: { rendered: string };
 }
 

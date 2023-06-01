@@ -40,10 +40,12 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
               className="blog-grid-title m-0 py-1"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              title={post?.yoast_head_json?.og_title}
-            >
-              {post?.yoast_head_json?.og_title}
-            </p>
+              title={post?.title?.rendered}
+              dangerouslySetInnerHTML={{
+                __html: post?.title?.rendered,
+              }}
+            />
+
             <p className="blog-grid-desc py-1 m-0 w-100">
               <small>{post?.yoast_head_json?.og_description}</small>
             </p>

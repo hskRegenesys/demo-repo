@@ -8,6 +8,7 @@ import { LeftOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
 import PostContainer from "./PostContainer";
+import BreadCrumb from "./BreadCrumb";
 
 const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -62,6 +63,11 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
         </div>
       </div>
       <div className="container-fluid p-5">
+        <BreadCrumb
+          title={`Category - ${categorySlug?.toString().replaceAll("-", " ")}`}
+          parent="Blog"
+          parentHref="/blog"
+        />
         <Link href={`/blog/`} passHref>
           <p
             role="button"
