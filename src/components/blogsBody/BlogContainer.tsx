@@ -55,13 +55,19 @@ const BlogContainer = ({ slug }: { slug: string }) => {
               parentHref="/blog"
             />
             {postResponse?.length && (
-              <div className="link-title">
-                Author : {postResponse[0]?.yoast_head_json?.author}
-                Published Date :{" "}
-                {new Date(
-                  postResponse[0]?.yoast_head_json?.article_published_time
-                ).toLocaleDateString()}
-                Published By : {postResponse[0]?.yoast_head_json?.og_site_name}
+              <div className="link-title d-flex justify-content-left mb-3">
+                <div className="p-2 bg-warning">
+                  Author : {postResponse[0]?.yoast_head_json?.author}
+                </div>
+                <div className="p-2 bg-warning">
+                  Published Date :
+                  {new Date(
+                    postResponse[0]?.yoast_head_json?.article_published_time
+                  ).toLocaleDateString()}
+                </div>
+                <div className="p-2 bg-warning">
+                  Publisher :{postResponse[0]?.yoast_head_json?.og_site_name}
+                </div>
               </div>
             )}
             <Link href={`/blog/`} passHref>
