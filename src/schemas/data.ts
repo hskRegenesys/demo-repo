@@ -7,6 +7,7 @@ const Constants = {
   website: "website",
   image: "image",
   faq: "faqpage",
+  article: "article",
 };
 
 interface TemplateInterface {
@@ -180,6 +181,32 @@ Template[Constants.faq] = (data) => {
       };
     }),
   };
+};
+
+Template[Constants.article] = (data) => {
+  let schemaData;
+  if (data?.length) {
+    schemaData = data[0]?.yoast_head_json;
+    return {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: schemaData?.og_title,
+      image: schemaData?.og_image?.map((item: any) => item?.url),
+      datePublished: schemaData?.article_published_time,
+      dateModified: schemaData?.article_modified_time,
+      author: [
+        {
+          "@type": "Person",
+          name: schemaData?.author,
+        },
+      ],
+      publisher: {
+        "@type": "Organization",
+        name: schemaData?.og_site_name,
+      },
+    };
+  }
+  return "";
 };
 
 export { Template, Constants };
