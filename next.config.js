@@ -320,6 +320,16 @@ const redirectURL = () => {
       destination: "/blog",
       permanent: true,
     },
+    {
+      source: "/digital-marketing-main",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/data-science-main",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
   ];
   return path;
 };
