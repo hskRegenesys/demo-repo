@@ -20,6 +20,9 @@ export interface IPostTypes {
     og_image: Array<{ [key: string]: string | number }>;
     og_title: string;
     og_description: string;
+    author: string;
+    og_site_name: string;
+    article_published_time: string;
   };
   title: { rendered: string };
   content?: { rendered: string };
