@@ -30,12 +30,12 @@ const BlogContainer = ({ slug }: { slug: string }) => {
       <div style={{ paddingTop: "85px" }}>
         <div>
           <div
-            className="w-100 d-grid blog-container-bg-image"
+            className="d-lg-grid w-100 d-none blog-container-bg-image"
             style={{
-              height: "600px",
+              height: "500px",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              backgroundSize: "contain",
+              backgroundSize: "100% auto",
               backgroundImage: `url(${postResponse[0]?.yoast_head_json.og_image[0].url})`,
             }}
           >

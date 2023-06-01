@@ -27,7 +27,6 @@ const Blogs = () => {
       <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
-
       <BlogsBody />
       <MainFooter />
       <StickyBar />
