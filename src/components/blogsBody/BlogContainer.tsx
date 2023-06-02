@@ -98,16 +98,16 @@ const BlogContainer = ({ slug }: { slug: string }) => {
           <div className="container-fluid px-5">
             {postResponse?.length && (
               <div className="link-title d-flex justify-content-left mb-3">
-                <div className="p-2 bg-warning">
+                <div className="p-2 ">
                   Author : {postResponse[0]?.yoast_head_json?.author}
                 </div>
-                <div className="p-2 bg-warning">
+                <div className="p-2 ">
                   Published Date :
                   {new Date(
                     postResponse[0]?.yoast_head_json?.article_published_time
                   ).toLocaleDateString()}
                 </div>
-                <div className="p-2 bg-warning">
+                <div className="p-2 ">
                   Publisher :{postResponse[0]?.yoast_head_json?.og_site_name}
                 </div>
               </div>
