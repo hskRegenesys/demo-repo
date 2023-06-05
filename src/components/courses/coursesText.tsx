@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { digitalMarketingText, dataScienceCourse } from "@/data/course";
+import {
+  digitalMarketingText,
+  dataScienceCourse,
+  artificialIntelligenceCourse,
+} from "@/data/course";
 import Link from "next/link";
 import { Col, Image } from "react-bootstrap";
 import TextSplit from "../Reuseable/TextSplit";
@@ -11,8 +15,21 @@ const CourseText = ({ page }: any) => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  const { title, pagedesc, imagearrow } =
-    page === "data-science" ? dataScienceCourse : digitalMarketingText;
+
+  let mainCourseData = {
+    title: "",
+    pagedesc: "",
+    imagearrow: "",
+  };
+  if (page === "data-science") {
+    mainCourseData = dataScienceCourse;
+  } else if (page === "digital-marketing") {
+    mainCourseData = digitalMarketingText;
+  } else {
+    mainCourseData = artificialIntelligenceCourse;
+  }
+  const { title, pagedesc, imagearrow } = mainCourseData;
+
   return (
     <>
       <section className="all-course-section all-course-wave">

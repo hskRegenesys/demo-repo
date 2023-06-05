@@ -1128,8 +1128,20 @@
   }
 
   .sec-title h2 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.15em;
+  }
+  .page-head {
+    font-size: 2.2rem !important;
+  }
+  .process-one {
+    padding: 0px;
+  }
+  .process-one p {
+    padding: 0 20px;
+  }
+  .process-one__content h1 {
+    padding: 0 20px;
   }
   .featured-section .right-col .inner h1.title-home {
     font-size: 36px;
