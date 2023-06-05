@@ -11,6 +11,7 @@ import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import {
+  artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
@@ -49,7 +50,11 @@ const TrendingSection = () => {
   const handleShow = () => setShow(true);
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode) {
+    if (
+      code === dataScienceCode ||
+      code === digitalMarkrtingCode ||
+      code === artificialIntelligenceCode
+    ) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(

@@ -69,6 +69,26 @@ const teamSection = {
       name: "Design Thinking",
       href: "/all-courses/design-thinking",
     },
+    {
+      id: 12,
+      name: "Artificial Intelligence",
+      href: "/all-courses/artificial-intelligence",
+    },
+    {
+      id: 13,
+      name: "Artificial Intelligence Introductory Programme",
+      href: "/all-courses/artificial-intelligence/artificial-intelligence-introductory-programme",
+    },
+    {
+      id: 14,
+      name: "Artificial Intelligence Intermediary Programme for Professionals",
+      href: "/all-courses/artificial-intelligence/artificial-intelligence-intermediary-programme",
+    },
+    {
+      id: 15,
+      name: "Artificial Intelligence Advanced Applied Programme for Professionals",
+      href: "/all-courses/artificial-intelligence/artificial-intelligence-advanced-applied-programme",
+    },
   ],
 };
 

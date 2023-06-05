@@ -7,6 +7,7 @@ import _ from "lodash";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import {
+  artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
@@ -59,17 +60,27 @@ const SubCourseDetails = ({ page }: any) => {
       );
 
       setSubCourse(subCourse);
-    } else {
+    } else if (page === "digital-marketing") {
       const subCourse = _.filter(
         allCourseList,
         (item) => item.parent_id === 24
+      );
+      setSubCourse(subCourse);
+    } else {
+      const subCourse = _.filter(
+        allCourseList,
+        (item) => item.parent_id === 400
       );
       setSubCourse(subCourse);
     }
   };
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode) {
+    if (
+      code === dataScienceCode ||
+      code === digitalMarkrtingCode ||
+      code === artificialIntelligenceCode
+    ) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(
