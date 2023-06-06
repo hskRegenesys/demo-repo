@@ -5784,23 +5784,4 @@ export const brochureDetails: any = {
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
-
-  // artificial intelligence
-  AIIP: {
-    name: "CompleteCybersecuritySolution-Brochure23.pdf",
-    leadSource: leadSource,
-    sourceCampaign: sourceCampaign,
-  },
-  // Certification Programme in Cybersecurity
-  AIIPF: {
-    name: "CompleteCybersecuritySolution-Brochure23.pdf",
-    leadSource: leadSource,
-    sourceCampaign: sourceCampaign,
-  },
-  // Certification Programme in Cybersecurity
-  AIAAPP: {
-    name: "CompleteCybersecuritySolution-Brochure23.pdf",
-    leadSource: leadSource,
-    sourceCampaign: sourceCampaign,
-  },
 };
