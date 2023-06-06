@@ -12,34 +12,40 @@ export const ukCountryId = 5;
 export const programBaseUrl = "all-courses";
 export const leadSource = "DR Website";
 export const sourceCampaign = "DR Website";
+export const dataScienceMainID = 10;
+export const digitalMarketingMainID = 24;
+export const artificialIntelligenceMainID = 400;
+
+export const dataScienceMainCourse = "data-science";
+export const digitalMarketingMainCourse = "digital-marketing";
 
 export const SA = {
-  id: 1,
-  name: "South Africa",
-  code: "SA",
-  currency: "R",
+    id: 1,
+    name: "South Africa",
+    code: "SA",
+    currency: "R",
 };
 export const India = {
-  id: 2,
-  name: "India",
-  code: "IND",
-  currency: "₹",
+    id: 2,
+    name: "India",
+    code: "IND",
+    currency: "₹",
 };
 export const Nigeria = {
-  id: 3,
-  name: "Nigeria",
-  code: "NG",
-  currency: "₦",
+    id: 3,
+    name: "Nigeria",
+    code: "NG",
+    currency: "₦",
 };
 export const kenya = {
-  id: 4,
-  name: "Kenya",
-  code: "KY",
-  currency: "KSh",
+    id: 4,
+    name: "Kenya",
+    code: "KY",
+    currency: "KSh",
 };
 export const USA = {
-  id: 5,
-  name: "USA",
-  code: "USD",
-  currency: "$",
+    id: 5,
+    name: "USA",
+    code: "USD",
+    currency: "$",
 };
