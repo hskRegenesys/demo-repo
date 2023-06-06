@@ -12,3 +12,9 @@ export const ukCountryId = 5;
 export const programBaseUrl = "all-courses";
 export const leadSource = "DR Website";
 export const sourceCampaign = "DR Website";
+export const dataScienceMainID = 10;
+export const digitalMarketingMainID = 24;
+export const artificialIntelligenceMainID = 400;
+
+export const dataScienceMainCourse = "data-science";
+export const digitalMarketingMainCourse = "digital-marketing";

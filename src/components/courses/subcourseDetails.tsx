@@ -8,7 +8,12 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import {
   artificialIntelligenceCode,
+  artificialIntelligenceMainID,
   dataScienceCode,
+  dataScienceMainCourse,
+  dataScienceMainID,
+  digitalMarketingMainCourse,
+  digitalMarketingMainID,
   digitalMarkrtingCode,
   programBaseUrl,
 } from "../config/constant";
@@ -53,23 +58,23 @@ const SubCourseDetails = ({ page }: any) => {
     allCourseList ? setIsLoading(false) : setIsLoading(true);
     const courses = _.filter(allCourseList, (item: any) => item?.mode_id === 1);
     setCourseData(courses);
-    if (page === "data-science") {
+    if (page === dataScienceMainCourse) {
       const subCourse = _.filter(
         allCourseList,
-        (item) => item.parent_id === 10
+        (item) => item.parent_id === dataScienceMainID
       );
 
       setSubCourse(subCourse);
-    } else if (page === "digital-marketing") {
+    } else if (page === digitalMarketingMainCourse) {
       const subCourse = _.filter(
         allCourseList,
-        (item) => item.parent_id === 24
+        (item) => item.parent_id === digitalMarketingMainID
       );
       setSubCourse(subCourse);
     } else {
       const subCourse = _.filter(
         allCourseList,
-        (item) => item.parent_id === 400
+        (item) => item.parent_id === artificialIntelligenceMainID
       );
       setSubCourse(subCourse);
     }

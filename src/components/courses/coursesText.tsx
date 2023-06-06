@@ -10,6 +10,10 @@ import { Col, Image } from "react-bootstrap";
 import TextSplit from "../Reuseable/TextSplit";
 import ModalPopup from "../Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import {
+  dataScienceMainCourse,
+  digitalMarketingMainCourse,
+} from "../config/constant";
 
 const CourseText = ({ page }: any) => {
   const [show, setShow] = useState(false);
@@ -21,9 +25,9 @@ const CourseText = ({ page }: any) => {
     pagedesc: "",
     imagearrow: "",
   };
-  if (page === "data-science") {
+  if (page === dataScienceMainCourse) {
     mainCourseData = dataScienceCourse;
-  } else if (page === "digital-marketing") {
+  } else if (page === digitalMarketingMainCourse) {
     mainCourseData = digitalMarketingText;
   } else {
     mainCourseData = artificialIntelligenceCourse;
