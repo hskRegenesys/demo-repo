@@ -52,7 +52,15 @@ export const dataScienceCourse = {
     "Upskill yourself with a course in Data Science. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields.",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
-
+export const artificialIntelligenceCourse = {
+  title: "Artificial Intelligence",
+  pagedesc: `Embark on a transformative journey into the realm of AI. Gain the skills to thrive amidst the AI revolution, shaping
+    industries globally. Stay competitive, propel your career, and be at the forefront of this technological wave. Unlock
+    exciting entrepreneurial avenues and seize AI-driven business opportunities. This course future-proofs your career,
+    turning innovative ideas into reality. Expand your knowledge, make a positive impact, and thrive in an AI-driven
+    world. Join us today and let your potential soar in the fascinating realm of AI.`,
+  imagearrow: "/assets/images/background/sign-arrow.png",
+};
 export const courseData = {
   //Advance-Digital-Marketing
 
@@ -1681,6 +1689,888 @@ export const courseData = {
 
     stickyText:
       "APSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+
+  //Artificial Intelligence Introductory Programme
+  AIIP: {
+    processOne: [
+      {
+        id: 1,
+        image: "yellow-bg-details-bg-1.webp",
+        title:
+          "Certification in Artificial Intelligence Introductory Programme",
+        text: `Embark on a transformative journey with our 'Artificial Intelligence Introductory Programme' and unlock the
+        boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves
+        deep into the fundamental concepts and techniques of AI. Whether you're an aspiring enthusiast or a professional
+        seeking to enhance your skills, this programme builds a solid foundation in AI and its practical applications. Step into
+        the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery.
+        `,
+        lists: [
+          "10 Weeks Course",
+          "Live Sessions",
+          "Capstone Projects",
+          "International Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Revolutionise your career with future-ready skills",
+      text1: `Revolutionize your career with Digital Regenesys and our 'Artificial Intelligence Introductory Programme.' Unlock the
+        limitless potential of AI, gaining a solid foundation in its fundamental concepts and techniques. Whether you're an
+        aspiring enthusiast or a professional, embrace the future with our cutting-edge course.`,
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1:
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
+
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every technological concept from foundation phase in this course through to the applied and advanced programmes.",
+
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+
+      subTitle4: "Tools usage",
+      desc4:
+        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    // courseTools: [
+
+    // ],
+    featureSeven: {
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
+      features: [
+        {
+          id: 1,
+          image: "Samidha_Photo.webp",
+          title: "Samidha Kurle",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 2,
+          image: "dr_nilay.webp",
+          title: "Dr. Nilay Karade ",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 3,
+          image: "dr_shilpa_joshi.webp",
+          title: "Dr. Shilpa Joshi ",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          designation: "Senior Lecturer",
+        },
+      ],
+    },
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Module 01",
+            lists: [
+              "Python Programming for Artificial Intelligence.",
+              "Demonstrate a clear understanding of Python syntax",
+              "Comprehend various data structures in Python",
+              "Apply control structures effectively in Python programming",
+              "Utilise functions and modules in Python for enhanced code organisation and reusability",
+              "Grasp the principles of object-oriented programming in Python and implement them in practice",
+              "Perform basic database operations using Python, including connecting to databases, executing queries, and manipulating data.",
+            ],
+          },
+          {
+            id: 2,
+            title: "Module 02",
+            lists: [
+              "Introduction to Data Analysis & Data Visualisation",
+              "Develop a solid understanding of fundamental concepts and techniques in data analysis",
+              "Gain practical experience using data analysis and visualisation tools",
+              "Acquire knowledge and skills in web scraping and its applications for data collection",
+              "Understand the principles and techniques of feature engineering and feature selection for effective data preprocessing and modeling.",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    // faqsSection: [
+    //   {
+    //     id: 1,
+    //     faqs: [
+    //       {
+    //         id: 1,
+    //         title:
+    //           "Do I Need To Have Prior Experience Or Understanding Of Data Science To Learn This Course?",
+    //         text: "No, this course does not demand you to have technical understanding about Data Science. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
+    //       },
+    //       {
+    //         id: 2,
+    //         title: "What Are The Modes Of Payment Available For Me?",
+    //         text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+    //       },
+    //       {
+    //         id: 3,
+    //         title: "Will Digital Regenesys Offer Me Job Assistance?",
+    //         text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+    //       },
+    //       {
+    //         id: 4,
+    //         title:
+    //           "For How Long Will I Be Able To Access The Content After My Course Completion?",
+    //         text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+    //       },
+    //       {
+    //         id: 5,
+    //         title:
+    //           "What Is The Difference Between Basic, Applied And Advanced Data Science Course?",
+    //         text: "The three stages of the Data Science Course such as Basic, Advance and Applied are bifurcated for the people who are willing to expand their knowledge to become a Data Science expert. After learning the Basics of Data Science, you can choose to elect any or both the modules of Advance and Applied.",
+    //       },
+    //       {
+    //         id: 6,
+    //         title: "Is This A Certified Course?",
+    //         text: "Yes, all the courses are certified by the Regenesys Business School.",
+    //       },
+    //       {
+    //         id: 7,
+    //         title:
+    //           "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+    //         text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+    //       },
+    //       {
+    //         id: 8,
+    //         title:
+    //           "How Will I Get Access To The Assignments And Learning Content?",
+    //         text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+    //       },
+    //       {
+    //         id: 9,
+    //         title: "What If The Course Timings Don't Match My Work Timings?",
+    //         text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+    //       },
+    //     ],
+    //     defaultCurrent: 1,
+    //   },
+    // ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
+          ],
+        },
+
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Data Science certificate",
+      certifiedText1:
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+      certifiedTitle2: "Share Your Achievement",
+
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
+
+    stickyText:
+      "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+
+  //Artificial Intelligence Intermediary Programme for Professionals
+  AIIPF: {
+    processOne: [
+      {
+        id: 1,
+        image: "yellow-bg-details-bg-1.webp",
+        title:
+          "Certification in Artificial Intelligence Intermediary Programme",
+        text: `In the dynamic digital landscape, harnessing the power of Artificial Intelligence (AI) is crucial for staying ahead. Join
+        our AI Intermediary Programme, tailored for professionals seeking an in-depth understanding of AI and its
+        applications. Explore AI and ML fundamentals, artificial neural networks, and deploying AI models. Master the
+        foundations of AI and ML, unlock the secrets of neural networks, and gain hands-on experience deploying AI in realworld scenarios. Revolutionize your career and be at the forefront of AI innovation.`,
+        lists: [
+          "12 Weeks Course",
+          "Live Sessions",
+          "Capstone Projects",
+          "International Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Revolutionise your career with future-ready skills",
+      text1: `Revolutionize your career with Digital Regenesys and our 'AI Intermediary Programme.' Stay competitive in the
+        evolving digital landscape by harnessing the power of AI. Gain a deep understanding of AI and its practical
+        applications. Master AI fundamentals, neural networks, and deploying AI models. Transform your career with the
+        practical aspects of real-world AI deployment`,
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1:
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
+
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every technological concept from foundation phase in this course through to the applied and advanced programmes.",
+
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+
+      subTitle4: "Tools usage",
+      desc4:
+        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    // courseTools: [
+    //   "ds/tools_covered1.webp",
+    //   "ds/tools_covered2.webp",
+    //   "ds/tools_covered3.webp",
+    //   "ds/tools_covered4.webp",
+    //   "ds/tools_covered5.webp",
+    //   "ds/tools_covered6.webp",
+    //   "ds/tools_covered7.webp",
+    //   "ds/tools_covered8.webp",
+    //   "ds/tools_covered9.webp",
+    //   "ds/tools_covered10.webp",
+    //   "ds/tools_covered11.webp",
+    //   "ds/tools_covered12.webp",
+    // ],
+    featureSeven: {
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
+      features: [
+        {
+          id: 1,
+          image: "Samidha_Photo.webp",
+          title: "Samidha Kurle",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 2,
+          image: "dr_nilay.webp",
+          title: "Dr. Nilay Karade ",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 3,
+          image: "dr_shilpa_joshi.webp",
+          title: "Dr. Shilpa Joshi ",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          designation: "Senior Lecturer",
+        },
+      ],
+    },
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Module 01",
+            lists: [
+              "Artificial Intelligence and Machine Learning",
+              "Evaluate machine learning models using appropriate metrics",
+              "Split datasets into training and testing sets for model assessment",
+              "Utilise cross-validation for model validation and optimisation",
+              "Perform hyperparameter tuning using Grid Search CV",
+              "Address bias, variance, overfitting, and underfitting in models",
+              "Apply regularisation techniques for improved model performance",
+            ],
+          },
+          {
+            id: 2,
+            title: "Module 02",
+            lists: [
+              "Artificial Neural Networks.",
+              "Artificial Neural Network",
+              "Convolutional Neural Network",
+              "Recurrent Neural Network & LST",
+            ],
+          },
+          {
+            id: 3,
+            title: "Module 03",
+            lists: [
+              "Deploying AI models in Production",
+              "Understand HTML and CSS basics for web development.",
+
+              "Deploy web applications using Streamlit or Flask.",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    // faqsSection: [
+    //   {
+    //     id: 1,
+    //     faqs: [
+    //       {
+    //         id: 1,
+    //         title:
+    //           "Do I Need To Have Prior Experience Or Understanding Of Data Science To Learn This Course?",
+    //         text: "No, this course does not demand you to have technical understanding about Data Science. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
+    //       },
+    //       {
+    //         id: 2,
+    //         title: "What Are The Modes Of Payment Available For Me?",
+    //         text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+    //       },
+    //       {
+    //         id: 3,
+    //         title: "Will Digital Regenesys Offer Me Job Assistance?",
+    //         text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+    //       },
+    //       {
+    //         id: 4,
+    //         title:
+    //           "For How Long Will I Be Able To Access The Content After My Course Completion?",
+    //         text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+    //       },
+    //       {
+    //         id: 5,
+    //         title:
+    //           "What Is The Difference Between Basic, Applied And Advanced Data Science Course?",
+    //         text: "The three stages of the Data Science Course such as Basic, Advance and Applied are bifurcated for the people who are willing to expand their knowledge to become a Data Science expert. After learning the Basics of Data Science, you can choose to elect any or both the modules of Advance and Applied.",
+    //       },
+    //       {
+    //         id: 6,
+    //         title: "Is This A Certified Course?",
+    //         text: "Yes, all the courses are certified by the Regenesys Business School.",
+    //       },
+    //       {
+    //         id: 7,
+    //         title:
+    //           "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+    //         text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+    //       },
+    //       {
+    //         id: 8,
+    //         title:
+    //           "How Will I Get Access To The Assignments And Learning Content?",
+    //         text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+    //       },
+    //       {
+    //         id: 9,
+    //         title: "What If The Course Timings Don't Match My Work Timings?",
+    //         text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+    //       },
+    //     ],
+    //     defaultCurrent: 1,
+    //   },
+    // ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
+          ],
+        },
+
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Data Science certificate",
+      certifiedText1:
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+      certifiedTitle2: "Share Your Achievement",
+
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
+
+    stickyText:
+      "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+
+  //Artificial Intelligence Advanced Applied Programme for Professionals
+  AIAAPP: {
+    processOne: [
+      {
+        id: 1,
+        image: "yellow-bg-details-bg-1.webp",
+        title:
+          "Certification in Artificial Intelligence Advanced Applied Programme",
+        text: `Unleash your potential with our 'AI Advanced Applied Programme.' Skyrocket your career by mastering advanced AI
+        skills and applications. Become an AI trailblazer in your field with this cutting-edge course. Delve into NLP, computer
+        vision, cloud computing, big data analytics, and ML Ops. Gain theoretical knowledge and practical experience to
+        innovate and solve complex problems. Elevate your career with the power of AI.
+        `,
+        lists: [
+          "15 Weeks Course",
+          "Live Sessions",
+          "Capstone Projects",
+          "International Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Revolutionise your career with future-ready skills",
+      text1: `Revolutionize your career with our 'AI Advanced Applied Programme.' Gain advanced AI skills and become an AI
+        trailblazer. Delve into NLP, computer vision, cloud computing, big data analytics, and ML Ops. Acquire the skills to
+        innovate and solve complex problems with AI.`,
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1:
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
+
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every technological concept from foundation phase in this course through to the applied and advanced programmes.",
+
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+
+      subTitle4: "Tools usage",
+      desc4:
+        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    // courseTools: [
+    //   "ds/tools_covered1.webp",
+    //   "ds/tools_covered2.webp",
+    //   "ds/tools_covered3.webp",
+    //   "ds/tools_covered4.webp",
+    //   "ds/tools_covered5.webp",
+    //   "ds/tools_covered6.webp",
+    //   "ds/tools_covered7.webp",
+    //   "ds/tools_covered8.webp",
+    //   "ds/tools_covered9.webp",
+    //   "ds/tools_covered10.webp",
+    //   "ds/tools_covered11.webp",
+    //   "ds/tools_covered12.webp",
+    // ],
+    featureSeven: {
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
+      features: [
+        {
+          id: 1,
+          image: "Samidha_Photo.webp",
+          title: "Samidha Kurle",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 2,
+          image: "dr_nilay.webp",
+          title: "Dr. Nilay Karade ",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 3,
+          image: "dr_shilpa_joshi.webp",
+          title: "Dr. Shilpa Joshi ",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          designation: "Senior Lecturer",
+        },
+      ],
+    },
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Module 01",
+            lists: [
+              "AI-Powered Applications for Natural Language Processing (NLP)",
+              "Analyze, interpret, and generate human language text efficiently using AI ",
+              "Develop powerful applications for Natural Language Processing",
+            ],
+          },
+          {
+            id: 2,
+            title: "Module 02",
+            lists: [
+              "Enhancing Visual Content with Computer Vision Techniques",
+              "Enhance visual content using computer vision",
+              "Tackle challenges in the field of computer vision",
+            ],
+          },
+          {
+            id: 3,
+            title: "Module 03",
+            lists: [
+              "Leveraging Cloud Computing Services for AI Applications",
+              "Leverage cloud platforms for deploying, managing, and optimising AI applications",
+              "Gain insights into best practices for deploying AI models",
+              "Utilise cloud platforms to accelerate the management of AI-driven solutions",
+            ],
+          },
+          {
+            id: 4,
+            title: "Module 04",
+            lists: [
+              "Unleashing Insights from Big Data through Analytics",
+              "learn about the big data ecosystem, Spark RDD and Dataframe, Spark SQL, and ETL pipeline",
+              "Explore challenges associated with massive datasets and acquire skills in data acquisition, cleaning, integration, and preprocessing",
+            ],
+          },
+          {
+            id: 5,
+            title: "Module 05",
+            lists: [
+              "Streamlining AI Development with ML Ops.",
+              "Enhance the efficiency and scalability of AI model development and deployment",
+              "Gain a comprehensive understanding of the ML Ops principles, tools, and practices",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    // faqsSection: [
+    //   {
+    //     id: 1,
+    //     faqs: [
+    //       {
+    //         id: 1,
+    //         title:
+    //           "Do I Need To Have Prior Experience Or Understanding Of Data Science To Learn This Course?",
+    //         text: "No, this course does not demand you to have technical understanding about Data Science. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
+    //       },
+    //       {
+    //         id: 2,
+    //         title: "What Are The Modes Of Payment Available For Me?",
+    //         text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+    //       },
+    //       {
+    //         id: 3,
+    //         title: "Will Digital Regenesys Offer Me Job Assistance?",
+    //         text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+    //       },
+    //       {
+    //         id: 4,
+    //         title:
+    //           "For How Long Will I Be Able To Access The Content After My Course Completion?",
+    //         text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+    //       },
+    //       {
+    //         id: 5,
+    //         title:
+    //           "What Is The Difference Between Basic, Applied And Advanced Data Science Course?",
+    //         text: "The three stages of the Data Science Course such as Basic, Advance and Applied are bifurcated for the people who are willing to expand their knowledge to become a Data Science expert. After learning the Basics of Data Science, you can choose to elect any or both the modules of Advance and Applied.",
+    //       },
+    //       {
+    //         id: 6,
+    //         title: "Is This A Certified Course?",
+    //         text: "Yes, all the courses are certified by the Regenesys Business School.",
+    //       },
+    //       {
+    //         id: 7,
+    //         title:
+    //           "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+    //         text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+    //       },
+    //       {
+    //         id: 8,
+    //         title:
+    //           "How Will I Get Access To The Assignments And Learning Content?",
+    //         text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+    //       },
+    //       {
+    //         id: 9,
+    //         title: "What If The Course Timings Don't Match My Work Timings?",
+    //         text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+    //       },
+    //     ],
+    //     defaultCurrent: 1,
+    //   },
+    // ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
+          ],
+        },
+
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Data Science certificate",
+      certifiedText1:
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+      certifiedTitle2: "Share Your Achievement",
+
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
+
+    stickyText:
+      "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
 
   //"Basic Digital Marketing"

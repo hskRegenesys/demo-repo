@@ -393,6 +393,24 @@ const createReWrites = () => {
       source: "/all-courses/cyber-security",
       destination: "/all-courses/cyber-security/106",
     },
+    {
+      source:
+        "/all-courses/artificial-intelligence/artificial-intelligence-introductory-programme",
+      destination:
+        "/all-courses/artificial-intelligence-introductory-programme/401",
+    },
+    {
+      source:
+        "/all-courses/artificial-intelligence/artificial-intelligence-intermediary-programme",
+      destination:
+        "/all-courses/artificial-intelligence-intermediary-programme/402",
+    },
+    {
+      source:
+        "/all-courses/artificial-intelligence/artificial-intelligence-advanced-applied-programme",
+      destination:
+        "/all-courses/artificial-intelligence-advanced-applied-programme/403",
+    },
   ];
   return paths;
 };
