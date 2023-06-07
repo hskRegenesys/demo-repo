@@ -1250,7 +1250,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: "KSh",
         },
       },
       {
@@ -1629,7 +1629,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: "KSh",
         },
       },
       {
@@ -1751,7 +1751,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: "KSh",
         },
       },
       {
@@ -1873,7 +1873,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: "KSh",
         },
       },
       {
