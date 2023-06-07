@@ -1,3 +1,9 @@
+const currencyIN = "₹";
+const currencySA = "R";
+const currencyNG = "₦";
+const currencyKE = "KSh";
+const currencyUSA = "$";
+
 export const allCourseList = [
   {
     id: 11,
@@ -60,7 +66,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -74,7 +80,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -88,7 +94,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -102,7 +108,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -116,7 +122,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -182,7 +188,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -196,7 +202,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -210,7 +216,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -224,7 +230,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -238,7 +244,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -295,7 +301,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -309,7 +315,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -323,7 +329,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -337,7 +343,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -351,7 +357,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -409,7 +415,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -423,7 +429,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -437,7 +443,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -451,7 +457,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -465,7 +471,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -522,7 +528,7 @@ export const allCourseList = [
   //         id: 2,
   //         name: "India",
   //         code: "IND",
-  //         currency: "₹",
+  //         currency: currencyIN,
   //       },
   //     },
   //     {
@@ -536,7 +542,7 @@ export const allCourseList = [
   //         id: 1,
   //         name: "South Africa",
   //         code: "SA",
-  //         currency: "R",
+  //         currency: currencySA,
   //       },
   //     },
   //     {
@@ -550,7 +556,7 @@ export const allCourseList = [
   //         id: 3,
   //         name: "Nigeria",
   //         code: "NG",
-  //         currency: "₦",
+  //         currency: currencyNG,
   //       },
   //     },
   //     {
@@ -564,7 +570,7 @@ export const allCourseList = [
   //         id: 4,
   //         name: "Kenya",
   //         code: "KY",
-  //         currency: "K",
+  //          currency: currencyKE,
   //       },
   //     },
   //     {
@@ -578,7 +584,7 @@ export const allCourseList = [
   //         id: 5,
   //         name: "USA",
   //         code: "USD",
-  //         currency: "$",
+  //         currency: currencyUSA,
   //       },
   //     },
   //   ],
@@ -812,7 +818,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -826,7 +832,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -840,7 +846,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -854,7 +860,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -868,7 +874,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -934,7 +940,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -948,7 +954,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -962,7 +968,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -976,7 +982,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -990,7 +996,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -1047,7 +1053,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -1061,7 +1067,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -1075,7 +1081,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -1089,7 +1095,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -1103,7 +1109,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -1160,7 +1166,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -1174,7 +1180,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -1188,7 +1194,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -1202,7 +1208,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -1216,7 +1222,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -1273,7 +1279,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -1287,7 +1293,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -1301,7 +1307,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -1315,7 +1321,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -1329,7 +1335,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -1386,7 +1392,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -1400,7 +1406,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -1414,7 +1420,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -1428,7 +1434,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -1442,7 +1448,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
@@ -1458,7 +1464,7 @@ export const allCourseList = [
           id: 2,
           name: "India",
           code: "IND",
-          currency: "₹",
+          currency: currencyIN,
         },
       },
       {
@@ -1472,7 +1478,7 @@ export const allCourseList = [
           id: 1,
           name: "South Africa",
           code: "SA",
-          currency: "R",
+          currency: currencySA,
         },
       },
       {
@@ -1486,7 +1492,7 @@ export const allCourseList = [
           id: 3,
           name: "Nigeria",
           code: "NG",
-          currency: "₦",
+          currency: currencyNG,
         },
       },
       {
@@ -1500,7 +1506,7 @@ export const allCourseList = [
           id: 4,
           name: "Kenya",
           code: "KY",
-          currency: "K",
+          currency: currencyKE,
         },
       },
       {
@@ -1514,7 +1520,7 @@ export const allCourseList = [
           id: 5,
           name: "USA",
           code: "USD",
-          currency: "$",
+          currency: currencyUSA,
         },
       },
     ],
