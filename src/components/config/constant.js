@@ -11,3 +11,34 @@ export const ukCountryId = 5;
 export const programBaseUrl = "all-courses";
 export const leadSource = "DR Website";
 export const sourceCampaign = "DR Website";
+
+export const SA = {
+  id: 1,
+  name: "South Africa",
+  code: "SA",
+  currency: "R",
+};
+export const india = {
+  id: 2,
+  name: "India",
+  code: "IND",
+  currency: "₹",
+};
+export const Nigeria = {
+  id: 3,
+  name: "Nigeria",
+  code: "NG",
+  currency: "₦",
+};
+export const kenya = {
+  id: 4,
+  name: "Kenya",
+  code: "KY",
+  currency: "KSh",
+};
+export const USA = {
+  id: 5,
+  name: "USA",
+  code: "USD",
+  currency: "$",
+};
