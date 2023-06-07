@@ -1,3 +1,5 @@
+import { Nigeria, SA, USA, india, kenya } from "@/components/config/constant";
+
 export const allCourseList = [
   {
     id: 11,
@@ -56,12 +58,7 @@ export const allCourseList = [
         price: 68499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 148,
@@ -70,12 +67,7 @@ export const allCourseList = [
         price: 11499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 175,
@@ -84,12 +76,7 @@ export const allCourseList = [
         price: 311499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 202,
@@ -98,12 +85,7 @@ export const allCourseList = [
         price: 95469,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 220,
@@ -112,12 +94,7 @@ export const allCourseList = [
         price: 789,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -178,12 +155,7 @@ export const allCourseList = [
         price: 74499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 155,
@@ -192,12 +164,7 @@ export const allCourseList = [
         price: 12499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 182,
@@ -206,12 +173,7 @@ export const allCourseList = [
         price: 341499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 209,
@@ -220,12 +182,7 @@ export const allCourseList = [
         price: 102729,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 227,
@@ -234,12 +191,7 @@ export const allCourseList = [
         price: 849,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -291,12 +243,7 @@ export const allCourseList = [
         price: 62499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 160,
@@ -305,12 +252,7 @@ export const allCourseList = [
         price: 10499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 187,
@@ -319,12 +261,7 @@ export const allCourseList = [
         price: 285499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 214,
@@ -333,12 +270,7 @@ export const allCourseList = [
         price: 84579,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 232,
@@ -347,12 +279,7 @@ export const allCourseList = [
         price: 699,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -405,12 +332,7 @@ export const allCourseList = [
         price: 10499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 137,
@@ -419,12 +341,7 @@ export const allCourseList = [
         price: 61989,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 191,
@@ -433,12 +350,7 @@ export const allCourseList = [
         price: 284249,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 218,
@@ -447,12 +359,7 @@ export const allCourseList = [
         price: 83449,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 236,
@@ -461,12 +368,7 @@ export const allCourseList = [
         price: 689,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -696,12 +598,7 @@ export const allCourseList = [
         price: 64499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 161,
@@ -710,12 +607,7 @@ export const allCourseList = [
         price: 12899,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 188,
@@ -724,12 +616,7 @@ export const allCourseList = [
         price: 348649,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 215,
@@ -738,12 +625,7 @@ export const allCourseList = [
         price: 102399,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 233,
@@ -752,12 +634,7 @@ export const allCourseList = [
         price: 849,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -818,12 +695,7 @@ export const allCourseList = [
         price: 57999,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 162,
@@ -832,12 +704,7 @@ export const allCourseList = [
         price: 11589,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 189,
@@ -846,12 +713,7 @@ export const allCourseList = [
         price: 313249,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 216,
@@ -860,12 +722,7 @@ export const allCourseList = [
         price: 90699,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 234,
@@ -874,12 +731,7 @@ export const allCourseList = [
         price: 749,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -931,12 +783,7 @@ export const allCourseList = [
         price: 49699,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 165,
@@ -945,12 +792,7 @@ export const allCourseList = [
         price: 9939,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 192,
@@ -959,12 +801,7 @@ export const allCourseList = [
         price: 268899,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 219,
@@ -973,12 +810,7 @@ export const allCourseList = [
         price: 78599,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 237,
@@ -987,12 +819,7 @@ export const allCourseList = [
         price: 649,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -1044,12 +871,7 @@ export const allCourseList = [
         price: 37399,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 165,
@@ -1058,12 +880,7 @@ export const allCourseList = [
         price: 7589,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 192,
@@ -1072,12 +889,7 @@ export const allCourseList = [
         price: 211899,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 219,
@@ -1086,12 +898,7 @@ export const allCourseList = [
         price: 59549,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 237,
@@ -1100,12 +907,7 @@ export const allCourseList = [
         price: 489,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -1157,12 +959,7 @@ export const allCourseList = [
         price: 13499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 137,
@@ -1171,12 +968,7 @@ export const allCourseList = [
         price: 67499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 191,
@@ -1185,12 +977,7 @@ export const allCourseList = [
         price: 365499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 218,
@@ -1199,12 +986,7 @@ export const allCourseList = [
         price: 107499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 236,
@@ -1213,12 +995,7 @@ export const allCourseList = [
         price: 889,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -1270,12 +1047,7 @@ export const allCourseList = [
         price: 49699,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 165,
@@ -1284,12 +1056,7 @@ export const allCourseList = [
         price: 9939,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 192,
@@ -1298,12 +1065,7 @@ export const allCourseList = [
         price: 268899,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 219,
@@ -1312,12 +1074,7 @@ export const allCourseList = [
         price: 78599,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 237,
@@ -1326,12 +1083,7 @@ export const allCourseList = [
         price: 649,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
     coursePricesTwo: [
@@ -1342,12 +1094,7 @@ export const allCourseList = [
         price: 37399,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 141,
@@ -1356,12 +1103,7 @@ export const allCourseList = [
         price: 7589,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 143,
@@ -1370,12 +1112,7 @@ export const allCourseList = [
         price: 211899,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 144,
@@ -1384,12 +1121,7 @@ export const allCourseList = [
         price: 59549,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 145,
@@ -1398,12 +1130,7 @@ export const allCourseList = [
         price: 489,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -1477,12 +1204,7 @@ export const allCourseList = [
         price: 58900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 148,
@@ -1491,12 +1213,7 @@ export const allCourseList = [
         price: 9900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 175,
@@ -1505,12 +1222,7 @@ export const allCourseList = [
         price: 269900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 202,
@@ -1519,12 +1231,7 @@ export const allCourseList = [
         price: 79900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 220,
@@ -1533,12 +1240,7 @@ export const allCourseList = [
         price: 690,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -1599,12 +1301,7 @@ export const allCourseList = [
         price: 118900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 148,
@@ -1613,12 +1310,7 @@ export const allCourseList = [
         price: 19990,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 175,
@@ -1627,12 +1319,7 @@ export const allCourseList = [
         price: 543900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 202,
@@ -1641,12 +1328,7 @@ export const allCourseList = [
         price: 161900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 220,
@@ -1655,12 +1337,7 @@ export const allCourseList = [
         price: 1390,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
@@ -1721,12 +1398,7 @@ export const allCourseList = [
         price: 178900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 2,
-          name: "India",
-          code: "IND",
-          currency: "₹",
-        },
+        country: india,
       },
       {
         id: 148,
@@ -1735,12 +1407,7 @@ export const allCourseList = [
         price: 29990,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 1,
-          name: "South Africa",
-          code: "SA",
-          currency: "R",
-        },
+        country: SA,
       },
       {
         id: 175,
@@ -1749,12 +1416,7 @@ export const allCourseList = [
         price: 815900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 3,
-          name: "Nigeria",
-          code: "NG",
-          currency: "₦",
-        },
+        country: Nigeria,
       },
       {
         id: 202,
@@ -1763,12 +1425,7 @@ export const allCourseList = [
         price: 241900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 4,
-          name: "Kenya",
-          code: "KY",
-          currency: "KSh",
-        },
+        country: kenya,
       },
       {
         id: 220,
@@ -1777,12 +1434,7 @@ export const allCourseList = [
         price: 1990,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: {
-          id: 5,
-          name: "USA",
-          code: "USD",
-          currency: "$",
-        },
+        country: USA,
       },
     ],
   },
