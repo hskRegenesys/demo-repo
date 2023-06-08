@@ -18,7 +18,7 @@ export const SA = {
   code: "SA",
   currency: "R",
 };
-export const india = {
+export const India = {
   id: 2,
   name: "India",
   code: "IND",
