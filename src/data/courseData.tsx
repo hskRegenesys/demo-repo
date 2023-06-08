@@ -1,4 +1,4 @@
-import { Nigeria, SA, USA, india, kenya } from "@/components/config/constant";
+import { Nigeria, SA, USA, India, kenya } from "@/components/config/constant";
 
 export const allCourseList = [
   {
@@ -58,7 +58,7 @@ export const allCourseList = [
         price: 68499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 148,
@@ -155,7 +155,7 @@ export const allCourseList = [
         price: 74499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 155,
@@ -243,7 +243,7 @@ export const allCourseList = [
         price: 62499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 160,
@@ -341,7 +341,7 @@ export const allCourseList = [
         price: 61989,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 191,
@@ -598,7 +598,7 @@ export const allCourseList = [
         price: 64499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 161,
@@ -695,7 +695,7 @@ export const allCourseList = [
         price: 57999,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 162,
@@ -783,7 +783,7 @@ export const allCourseList = [
         price: 49699,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 165,
@@ -871,7 +871,7 @@ export const allCourseList = [
         price: 37399,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 165,
@@ -968,7 +968,7 @@ export const allCourseList = [
         price: 67499,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 191,
@@ -1047,7 +1047,7 @@ export const allCourseList = [
         price: 49699,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 165,
@@ -1094,7 +1094,7 @@ export const allCourseList = [
         price: 37399,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 141,
@@ -1204,7 +1204,7 @@ export const allCourseList = [
         price: 58900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 148,
@@ -1301,7 +1301,7 @@ export const allCourseList = [
         price: 118900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 148,
@@ -1398,7 +1398,7 @@ export const allCourseList = [
         price: 178900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 148,

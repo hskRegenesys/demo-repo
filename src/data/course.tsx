@@ -1723,7 +1723,7 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
+        "Exposure to fundamental AI concepts and techniques enhancing skills, this programme lays a solid foundation in AI and its practical applications.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -1733,9 +1733,9 @@ export const courseData = {
       desc3:
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
-      subTitle4: "Tools usage",
+      subTitle4: " Approach",
       desc4:
-        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
+        "Take an approach that exposes fundamental AI concepts and techniques, building a strong foundation in AI and its practical applications. Enhance your skills through hands-on learning and gain a solid understanding of the core principles of AI.",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
@@ -1999,7 +1999,7 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
+        "Exposure to key topics of AI and ML fundamentals, artificial neural networks, and deploying AI models in production. Participants will explore the practical aspects of implementing AI models in real-world scenarios.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -2009,9 +2009,9 @@ export const courseData = {
       desc3:
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
-      subTitle4: "Tools usage",
+      subTitle4: "Approach",
       desc4:
-        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
+        "Adopt an approach that focuses on key topics of AI and ML fundamentals, artificial neural networks, and the deployment of AI models in real-world scenarios. Gain practical exposure to implementing AI models and develop the skills needed to apply AI techniques effectively.",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
@@ -2295,7 +2295,7 @@ export const courseData = {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
+        "Exposure to advanced AI skills and applications. This cutting-edge program empowers professionals to learn various aspects of AI. Through a combination of theoretical knowledge and practical projects, participants gain exposure to innovative AI technologies, enabling them to innovate and solve complex problems.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -2305,9 +2305,9 @@ export const courseData = {
       desc3:
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
-      subTitle4: "Tools usage",
+      subTitle4: "Approach",
       desc4:
-        "Gain a broad spectrum of knowledge on how to use the tools ranging from pandas, Numpy and many more",
+        "Embrace an approach that emphasizes advanced AI skills and applications. Dive deep into various aspects of AI, combining theoretical knowledge with hands-on projects. Explore cutting-edge AI technologies, allowing you to innovate and tackle complex problems using advanced AI techniques.",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
