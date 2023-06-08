@@ -2078,7 +2078,7 @@ export const allCourseList = [
         price: 178900,
         valid_from: "2022-12-09T06:58:52.504Z",
         valid_to: "2022-12-09T06:58:52.504Z",
-        country: india,
+        country: India,
       },
       {
         id: 148,
