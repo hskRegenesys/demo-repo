@@ -5784,4 +5784,20 @@ export const brochureDetails: any = {
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
+
+  AIIP: {
+    name: "artificial_intelligence.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  AIIPF: {
+    name: "artificial_intelligence.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  AIAAPP: {
+    name: "artificial_intelligence.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
 };
