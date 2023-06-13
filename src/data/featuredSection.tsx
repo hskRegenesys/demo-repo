@@ -1,7 +1,8 @@
 const featuredSection = {
   image: "/assets/images/resource/banner-bg.webp",
-  title: "Upgrade Your Career with Digital Regenesys",
-  text: "We are committed to providing our customers with exceptional service while offering our employees the best training. There are many variations of passages of lorem ipsum is simply free text available in the market, but the majority have suffered time.",
+  title: "Elevate Your Career with",
+  subtitle: "Digital Regenesys",
+  subsubtitle: "One of the leading Ed-tech from Silicon Valley",
   features: [
     {
       id: 1,

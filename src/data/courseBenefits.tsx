@@ -80,27 +80,25 @@ export const courseBenefits = {
   ],
 };
 
-
-
 export const courseBenefitsMobile = {
   tabsContents: [
     {
       id: "1",
-      title: "Career Support",   
+      title: "Career Support",
       text1:
         "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
       text2:
         "Elevate your LinkedIn game with a comprehensive profile building session",
-        lists: [
-          "Self-contained, state-of-the-art time clock",
-          "Scalability of up to 500 employees per time clock",
-          "The ability to connect up to 32 time clocks",
-          "Employee self-enrollment",   
-        ],
+      lists: [
+        "Self-contained, state-of-the-art time clock",
+        "Scalability of up to 500 employees per time clock",
+        "The ability to connect up to 32 time clocks",
+        "Employee self-enrollment",
+      ],
     },
     {
       id: "2",
-      title: "Doubt Resolution",     
+      title: "Doubt Resolution",
       text1:
         "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       text2:
