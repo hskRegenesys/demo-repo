@@ -11,23 +11,24 @@ const HomeSkillDescription = ({
         <div className="inner clearfix">
           <div className="sec-title animated fadeInLeft text-center">
             <h2 className="small-heading color-black">
-              Revolutionise your career with {" "}
-              <br /> future-ready skills
+              Revolutionise your career with <br /> future-ready skills
             </h2>
           </div>
           <p className="para-text">
-            Learn the next-gen digital skills with India’s leading EdTech
-            platform introduced by Regenesys Business School, an international
-            business school with campuses in Johannesburg, Mumbai, and Lagos.
-            Digital Regenesys is here to provide career transforming,
-            skill-enhancing, and upgrading online courses in many digital
-            fields. The self-paced online courses offered by Digital Regenesys
-            are in sync with the demands of almost every industry and their
-            digital and technological needs. The instructor-led training gives
-            students an advantage in getting placed within top MNCs and
-            organisations. Expose yourself to content within our certificate
-            courses taught by a highly experienced and world-recognised faculty.
-            Come and be a part of the digital revolution.
+            Embark on a next-generation digital skills journey with silicon
+            valley's cutting-edge Ed-Tech. Introducing Digital Regenesys, the
+            renowned EdTech platform by Regenesys Business School, an
+            international business school with campuses in Johannesburg, Mumbai,
+            and Lagos. Experience career-transforming, skill-enhancing, and
+            cutting-edge online courses across various digital domains. Our
+            online courses are meticulously designed to align with the evolving
+            digital and technological requirements of diverse industries. Gain a
+            competitive edge through instructor-led training, increasing your
+            chances of securing prestigious positions in top MNCs and
+            organizations. Immerse yourself in the comprehensive content of our
+            certificate courses, delivered by a highly experienced and globally
+            recognized faculty. Join us now and become a vital part of the
+            digital revolution.
           </p>
         </div>
       </div>

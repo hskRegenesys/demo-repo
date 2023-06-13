@@ -337,7 +337,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -666,7 +666,7 @@ export const courseData = {
   //       "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
   //     certifiedTitle3: "Benefits",
   //     certifiedText3:
-  //       "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+  //       "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
   //     admissionText:
   //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
   //     termsConditions: "*Terms & Conditions",
@@ -1044,7 +1044,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1384,7 +1384,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1678,7 +1678,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1955,7 +1955,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -2251,7 +2251,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -2560,7 +2560,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -2851,7 +2851,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -3145,7 +3145,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -3420,7 +3420,7 @@ export const courseData = {
   //       "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
   //     certifiedTitle3: "Benefits",
   //     certifiedText3:
-  //       "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+  //       "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
   //     admissionText:
   //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
   //     termsConditions: "*Terms & Conditions",
@@ -3726,7 +3726,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -4040,7 +4040,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -4349,7 +4349,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -4812,7 +4812,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -5121,7 +5121,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -5682,7 +5682,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",

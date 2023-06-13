@@ -6142,7 +6142,22 @@ featured-section .right-col .sec-title h2 {
   font-family: "Raleway-semibold";
   max-width: 100%;
 }
+.featured-section .right-col .inner h1.title-home strong {
+  display: block;
+  font-size: 35px;
+}
 
+.featured-section .right-col .inner h1.title-home span {
+  display: block;
+  font-size: 47px;
+  font-family: "Raleway-semibold";
+}
+.featured-section .right-col .inner h1.title-home p {
+  font-size: 18px;
+}
+.extra-space-footer {
+  margin-top: 50px;
+}
 .featured-section__about-two {
   background-color: #fff;
   background-image: none;
@@ -10065,6 +10080,9 @@ featured-section .right-col .sec-title h2 {
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: var(--thm-black);
+}
+.contact-infos.address {
+  line-height: 27px;
 }
 
 .contact-infos .row {
