@@ -76,18 +76,18 @@ const teamSection = {
     },
     {
       id: 13,
-      name: "Artificial Intelligence Introductory Programme",
-      href: "/all-courses/artificial-intelligence/artificial-intelligence-introductory-programme",
+      name: "ai introductory",
+      href: "/all-courses/artificial-intelligence/ai-introductory",
     },
     {
       id: 14,
-      name: "Artificial Intelligence Intermediary Programme for Professionals",
-      href: "/all-courses/artificial-intelligence/artificial-intelligence-intermediary-programme",
+      name: "Ai Intermediary",
+      href: "/all-courses/artificial-intelligence/ai-intermediary",
     },
     {
       id: 15,
-      name: "Artificial Intelligence Advanced Applied Programme for Professionals",
-      href: "/all-courses/artificial-intelligence/artificial-intelligence-advanced-applied-programme",
+      name: "Ai Advanced Applied",
+      href: "/all-courses/artificial-intelligence/ai-advanced-applied",
     },
   ],
 };

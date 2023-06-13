@@ -392,6 +392,9 @@
   .discover-block .inner-box {
     padding: 10px;
   }
+  .main-footer .column {
+    text-align: center;
+  }
   .main-header .header-upper {
     top: 0px;
   }
@@ -1147,6 +1150,7 @@
     font-size: 36px;
     line-height: 1.15em;
   }
+
   .trusted-section .featured-block-two,
   .agency-section .featured-block-two {
     padding-left: 0;
