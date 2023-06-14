@@ -7,10 +7,12 @@ import { IPostTypes, bannerImages } from "./dataTypes";
 import Link from "next/link";
 import RightSidePanel from "./RightSidePanel";
 import ApplyNow from "./ApplyNow";
+import BreadCrumb from "./BreadCrumb";
+import Schemas from "src/schemas";
+import { Constants } from "src/schemas/data";
 
 const BlogContainer = ({ slug }: { slug: string }) => {
   const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
-  const randomIndex = Math.floor(Math.random() * bannerImages.length);
 
   const getPost = async () => {
     const response = await wpService.allPosts({ slug: slug });
@@ -22,28 +24,52 @@ const BlogContainer = ({ slug }: { slug: string }) => {
   }, [slug]);
 
   return (
-    <div style={{ paddingTop: "85px" }}>
-      <div className="">
-        <div
-          className="w-100 d-grid blog-container-bg-image"
-          style={{
-            height: "500px",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "contain",
-            backgroundImage: `url(/assets/images/background/${bannerImages[randomIndex]})`,
-          }}
-        >
+    <>
+      <Schemas type={Constants.article} data={postResponse} />
+      <div style={{ paddingTop: "85px" }}>
+        <div>
           <div
-            className="d-none d-lg-block align-self-center pe-5 col-3"
-            style={{ justifySelf: "end" }}
+            className="d-lg-grid w-100 d-none blog-container-bg-image"
+            style={{
+              height: "500px",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "100% auto",
+              backgroundImage: `url(${postResponse[0]?.yoast_head_json.og_image[0].url})`,
+            }}
           >
-            <ApplyNow yellowBtn isBlack />
+            <div
+              className="d-none d-lg-block align-self-center pe-5 col-3"
+              style={{ justifySelf: "end" }}
+            >
+              <ApplyNow yellowBtn isBlack />
+            </div>
           </div>
         </div>
       </div>
       <div className="py-5">
-        <div className="container-fluid px-5">
+        <div className="container-fluid px-5 ">
+          {postResponse?.length && (
+            <div className="link-title d-flex justify-content-left mb-3">
+              <div className="p-2 bg-light text-dark rounded-left">
+                Author : {postResponse[0]?.yoast_head_json?.author}
+              </div>
+              <div className="p-2 bg-light text-dark">
+                Published Date :
+                {new Date(
+                  postResponse[0]?.yoast_head_json?.article_published_time
+                ).toLocaleDateString()}
+              </div>
+              <div className="p-2 bg-light text-dark rounded-right">
+                Publisher :{postResponse[0]?.yoast_head_json?.og_site_name}
+              </div>
+            </div>
+          )}
+          <BreadCrumb
+            title={slug?.toString().replaceAll("-", " ")}
+            parent="Blog"
+            parentHref="/blog"
+          />
           <Link href={`/blog/`} passHref>
             <p
               role="button"
@@ -59,10 +85,11 @@ const BlogContainer = ({ slug }: { slug: string }) => {
                 postResponse?.map((item) => (
                   <div key={item.id}>
                     {item?.title && (
-                      <h4
+                      <h1
                         dangerouslySetInnerHTML={{
                           __html: item?.title?.rendered,
                         }}
+                        className="blog-h1"
                       />
                     )}
                     {item?.content && (
@@ -85,9 +112,10 @@ const BlogContainer = ({ slug }: { slug: string }) => {
             </div>
           </div>
         </div>
+
+        <NewsLetter />
       </div>
-      <NewsLetter />
-    </div>
+    </>
   );
 };
 

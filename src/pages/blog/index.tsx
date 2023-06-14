@@ -19,7 +19,6 @@ const Blogs = () => {
       search: value,
     });
     setSearchData(response);
-    console.log("response", response);
   };
 
   return (

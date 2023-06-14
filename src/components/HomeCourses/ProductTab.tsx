@@ -8,6 +8,7 @@ import {
   digitalMarkrtingCode,
   allCoursesId,
   programBaseUrl,
+  artificialIntelligenceCode,
 } from "../config/constant";
 import { batchInfo, urlInfo } from "../config/helper";
 import _ from "lodash";
@@ -47,7 +48,11 @@ const ProductTab = ({ courses = [], current }: any) => {
   }
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode) {
+    if (
+      code === dataScienceCode ||
+      code === digitalMarkrtingCode ||
+      code === artificialIntelligenceCode
+    ) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(courses, (item) => item?.id === parent_id);
@@ -78,7 +83,9 @@ const ProductTab = ({ courses = [], current }: any) => {
     const courseOrder: any = _.filter(
       filterCourse,
       (item) =>
-        item.code !== dataScienceCode && item.code !== digitalMarkrtingCode
+        item.code !== dataScienceCode &&
+        item.code !== digitalMarkrtingCode &&
+        item.code !== artificialIntelligenceCode
     );
     setFilterCourses(courseOrder);
   };

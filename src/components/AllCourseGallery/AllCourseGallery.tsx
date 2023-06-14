@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import {
+  artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
@@ -59,7 +60,11 @@ const AllCourseGallery = () => {
   }, [checkFilterData]);
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode) {
+    if (
+      code === dataScienceCode ||
+      code === digitalMarkrtingCode ||
+      code === artificialIntelligenceCode
+    ) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(
@@ -102,7 +107,7 @@ const AllCourseGallery = () => {
         item?.mode_id === 1 &&
         item?.isAddon === false
     );
-    const checkCourseList = ["DSCI", "DM", "PM", "CSC", "DTC"];
+    const checkCourseList = ["DSCI", "DM", "PM", "CSC", "DTC", "AI"];
 
     const result: any = [];
 

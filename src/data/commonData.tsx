@@ -25,8 +25,8 @@ const Data = {
       "basic-digital-marketing-course":
         "Digital Marketing Fundamentals Course Online | Digital Regenesys",
       "advanced-digital-marketing":
-        "Advanced Digital Marketing Course Online | Digital Regenesys",
-      "advanced-digital-marketing-course":
+        "Advance Digital Marketing Course Online | Digital Regenesys",
+      "advance-digital-marketing-course":
         "Advance Digital Marketing Strategies Course Online | Digital Regenesys",
       "applied-digital-marketing":
         "Applied Digital Marketing Course Online | Digital Regenesys",
@@ -45,6 +45,10 @@ const Data = {
       createMyWealth:
         "Investment, Trading, Personal Finance Course | Digital Regenesys",
       blog: "Digital Regenesys Blog: Insights, Tips, & Advice for Digital Success",
+      "artificial-intelligence": "artificial-intelligence",
+      "ai-introductory": "ai-introductory",
+      "ai-intermediary": "ai-intermediary",
+      "ai-advanced-applied": "ai-advanced-applied",
     },
     keywords: {
       home: `
@@ -150,14 +154,14 @@ const Data = {
       "digital-marketing-fundamentals":
         "digital marketing, digital marketing course, online digital marketing course, digital marketing certification, digital marketing training, digital marketing for beginners, digital marketing for business, digital marketing for startups, digital marketing for small businesses, digital marketing fundamental course, digital marketing fundamental course details, digital marketing fundamental course durations, digital marketing fundamental course scope, digital marketing fundamental course fees",
       "advanced-digital-marketing": `
-        Advanced Digital Marketing, 
-        Advanced Digital Marketing Course, 
-        advanced digital marketing course syllabus, 
-        advanced digital marketing courses online, 
+        Advance Digital Marketing, 
+        Advance Digital Marketing Course, 
+        advance digital marketing course syllabus, 
+        advance digital marketing courses online, 
         advance digital marketing course book pdf, 
-        advanced digital marketing course pdf, 
-        advanced digital marketing courses london, 
-        advanced online courses in digital marketing
+        advance digital marketing course pdf, 
+        advance digital marketing courses london, 
+        advance online courses in digital marketing
       `,
       "applied-digital-marketing": `
         applied Digital Marketing Course, 
@@ -168,7 +172,7 @@ const Data = {
         best applied Digital Marketing Course, 
         applied Digital Marketing Course online
         `,
-      "advanced-digital-marketing-course":
+      "advance-digital-marketing-course":
         "digital marketing, digital marketing course, online digital marketing course, digital marketing certification, digital marketing training, digital marketing for beginners, digital marketing for business, digital marketing for startups, digital marketing for small businesses, Advance Digital Marketing Strategies course, Advance Digital Marketing Strategies course details, Advance Digital Marketing Strategies course durations, Advance Digital Marketing Strategies course scope, Advance Digital Marketing Strategies course fees",
       "project-management": `
         project management courses online, 
@@ -224,6 +228,10 @@ const Data = {
       blog: `
       data science course blog, data analyst, data scientist, machine learning, artificial intelligence, big data, predictive analytics, business intelligence, data visualization, data mining, statistics, digital marketing, marketing, advertising, social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, lead generation, customer relationship management (CRM), marketing automation, project management, project manager, project planning, project execution, project control, project risk management, project communication, project team management, project budget management, project quality management, cyber security, information security, information assurance, computer security, network security, data security, application security, operational security, physical security, compliance, design thinking, human-centered design, innovation, creativity, problem solving, ideation, prototyping, testing, implementation
       `,
+      "artificial-intelligence": "artificial-intelligence",
+      "ai-introductory": "ai-introductory",
+      "ai-intermediary": "ai-intermediary",
+      "ai-advanced-applied": "ai-advanced-applied",
     },
     description: {
       home: "Upskill yourself with Digital Regensys online courses for digital-age skills to become future-ready for the dynamic workplace in the disruptive digital age.",
@@ -255,10 +263,10 @@ const Data = {
       "digital-marketing-fundamentals":
         "Learn the fundamentals of digital marketing with our online course. Gain the skills you need to launch or grow your business online. Enrol today!",
       "advanced-digital-marketing":
-        "The advanced digital marketing course offered by Digital Regenesys equips students with advanced knowledge of digital marketing domains and hands-on projects.",
+        "The advance digital marketing course offered by Digital Regenesys equips students with advanced knowledge of digital marketing domains and hands-on projects.",
       "applied-digital-marketing":
         "The applied digital marketing course offered by Digital Regenesys equips students with real-world applications of Digital Marketing taught by industry experts. ",
-      "advanced-digital-marketing-course":
+      "advance-digital-marketing-course":
         "Advance your digital marketing career with our online course. Learn from industry experts and develop the skills you need to create and execute successful digital marketing strategies.",
       "project-management":
         "Study a Project Management course with Digital Regenesys to acquire the know-how on managing projects successfully. Enquire now.",
@@ -279,6 +287,10 @@ const Data = {
       blog: `
      Discover the Digital Regenesys Blog - unlock digital transformation's power. Get insights, guidance, and success stories to stay ahead in the digital era.
       `,
+      "artificial-intelligence": "artificial-intelligence",
+      "ai-introductory": "ai-introductory",
+      "ai-intermediary": "ai-intermediary",
+      "ai-advanced-applied": "ai-advanced-applied",
     },
     canonicalUrlData: {
       home: "/",
@@ -297,8 +309,8 @@ const Data = {
         "/all-courses/digital-marketing/advanced-digital-marketing",
       "applied-digital-marketing":
         "/all-courses/digital-marketing/applied-digital-marketing",
-      "advanced-digital-marketing-course":
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      "advance-digital-marketing-course":
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
       "project-management": "/all-courses/project-management",
 
       "data-science": "/all-courses/data-science",
@@ -308,6 +320,10 @@ const Data = {
       "applied-data-science": "/all-courses/data-science/applied-data-science",
       "design-thinking": "/all-courses/design-thinking",
       blog: "/blog ",
+      "artificial-intelligence": "/artificial-intelligence",
+      "ai-introductory": "/ai-introductory",
+      "ai-intermediary": "/ai-intermediary",
+      "ai-advanced-applied": "/ai-advanced-applied",
     },
   },
 };

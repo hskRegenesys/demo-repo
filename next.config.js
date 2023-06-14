@@ -76,25 +76,31 @@ const redirectURL = () => {
     {
       source: "/programs/digital-marketing-course/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
+      permanent: true,
+    },
+    {
+      source: "/programs/digital-marketing-course/advance-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/all-courses/digital-marketing/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/applied-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/all-courses/digital-marketing/applied-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+        "/all-courses/digital-marketing/advance-digital-marketing-course ",
       permanent: true,
     },
     {
@@ -272,13 +278,56 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source:
+        "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
+      permanent: true,
+    },
+    {
       source: "/all-course/digital-marketing/advanced-digital-marketing",
-      destination: "/all-courses/digital-marketing/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
       permanent: true,
     },
     {
       source: "/all-course/digital-marketing/applied-digital-marketing",
       destination: "/all-courses/digital-marketing/applied-digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/all-course",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/course",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/[course]",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/[course]/[id]",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/blog/category/[slug]",
+      destination: "/blog",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-main",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/data-science-main",
+      destination: "/all-courses/data-science",
       permanent: true,
     },
   ];
@@ -314,7 +363,7 @@ const createReWrites = () => {
     // },
     {
       source: "/all-courses/digital-marketing/advanced-digital-marketing",
-      destination: "/all-courses/advanced-digital-marketing/26",
+      destination: "/all-courses/advance-digital-marketing-course/26",
     },
     // {
     //   source: "/all-courses/digital-marketing/applied-digital-marketing",
@@ -325,9 +374,8 @@ const createReWrites = () => {
       destination: "/all-courses/digital-marketing-fundamentals/101",
     },
     {
-      source:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
-      destination: "/all-courses/advanced-digital-marketing-course/102",
+      source: "/all-courses/digital-marketing/advance-digital-marketing-course",
+      destination: "/all-courses/advance-digital-marketing-course/102",
     },
     {
       source: "/all-courses/cyber-security-fundamentals-course",
@@ -344,6 +392,18 @@ const createReWrites = () => {
     {
       source: "/all-courses/cyber-security",
       destination: "/all-courses/cyber-security/106",
+    },
+    {
+      source: "/all-courses/artificial-intelligence/ai-introductory",
+      destination: "/all-courses/ai-introductory/401",
+    },
+    {
+      source: "/all-courses/artificial-intelligence/ai-intermediary",
+      destination: "/all-courses/ai-intermediary/402",
+    },
+    {
+      source: "/all-courses/artificial-intelligence/ai-advanced-applied",
+      destination: "/all-courses/ai-advanced-applied/403",
     },
   ];
   return paths;

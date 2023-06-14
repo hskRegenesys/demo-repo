@@ -28,7 +28,7 @@ const AllPageStickyData: IAllPageStickyDataType = {
 
   "digital-marketing-fundamentals":
     "Grasp the Fundamentals of Digital Marketing for Career Advancement",
-  "advanced-digital-marketing-course":
+  "advance-digital-marketing-course":
     "Grasp the Fundamentals of Digital Marketing for Career Advancement",
   "cyber-security-fundamentals-course":
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
@@ -36,6 +36,14 @@ const AllPageStickyData: IAllPageStickyDataType = {
     "Master the art of problem-solving and take your career to new heights with the Design Thinking Course",
   "cyber-security-course":
     "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
+  "artificial-intelligence":
+    "Unlock the future with our game-changing Artificial Intelligence course",
+  "ai-introductory":
+    " Acquire the skills to innovate with AI with the help of Digital Regenesys’ online AI course",
+  "ai-intermediary":
+    "Transform your career and impact the future with the online AI course from Digital Regenesys.",
+  "ai-advanced-applied":
+    "Get a significant rise in your job profile with Digital Regenesys’ online AI course",
 };
 
 export default AllPageStickyData;
