@@ -76,17 +76,17 @@ const teamSection = {
     },
     {
       id: 13,
-      name: "ai introductory",
+      name: "aI introductory",
       href: "/all-courses/artificial-intelligence/ai-introductory",
     },
     {
       id: 14,
-      name: "Ai Intermediary",
+      name: "AI Intermediary",
       href: "/all-courses/artificial-intelligence/ai-intermediary",
     },
     {
       id: 15,
-      name: "Ai Advanced Applied",
+      name: "AI Advanced Applied",
       href: "/all-courses/artificial-intelligence/ai-advanced-applied",
     },
   ],
