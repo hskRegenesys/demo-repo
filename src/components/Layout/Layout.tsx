@@ -19,7 +19,6 @@ const Layout = (props: any) => {
 
     return () => clearTimeout(timeoutId);
   }, []);
-
   const metaData: any = Data;
   const title = metaData?.metaInfo?.title?.[pageTitle]
     ? metaData?.metaInfo?.title?.[pageTitle]
