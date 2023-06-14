@@ -296,7 +296,7 @@ const Data = {
      Discover the Digital Regenesys Blog - unlock digital transformation's power. Get insights, guidance, and success stories to stay ahead in the digital era.
       `,
       "artificial-intelligence":
-        "Cyber Security Course. Looking to enhance your cyber security skills? Enrol in our top-rated online cyber security courses for beginners and professionals.Enrol now!",
+        "Learn Artificial Intelligence with our online course at Digital Regenesys. Get practical skills & advance your career in AI. Enrol now for comprehensive AI training.",
       "ai-introductory":
         "Get a comprehensive introduction to Artificial Intelligence with Digital Regenesys. Boost your knowledge & skills in AI. Enrol today for our AI introductory course.",
       "ai-intermediary":
@@ -332,10 +332,10 @@ const Data = {
       "applied-data-science": "/all-courses/data-science/applied-data-science",
       "design-thinking": "/all-courses/design-thinking",
       blog: "/blog ",
-      "artificial-intelligence": "/artificial-intelligence",
-      "ai-introductory": "/ai-introductory",
-      "ai-intermediary": "/ai-intermediary",
-      "ai-advanced-applied": "/ai-advanced-applied",
+      "artificial-intelligence": "/all-courses/artificial-intelligence",
+      "ai-introductory": "/all-courses/artificial-intelligence/ai-introductory",
+      "ai-intermediary": "/all-courses/artificial-intelligence/ai-intermediary",
+      "ai-advanced-applied": "/all-courses/artificial-intelligence/ai-advanced-applied",
     },
   },
 };
