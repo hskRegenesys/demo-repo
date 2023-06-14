@@ -45,6 +45,10 @@ const Data = {
       createMyWealth:
         "Investment, Trading, Personal Finance Course | Digital Regenesys",
       blog: "Digital Regenesys Blog: Insights, Tips, & Advice for Digital Success",
+      "artificial-intelligence": "artificial-intelligence",
+      "ai-introductory": "ai-introductory",
+      "ai-intermediary": "ai-intermediary",
+      "ai-advanced-applied": "ai-advanced-applied",
     },
     keywords: {
       home: `
@@ -224,6 +228,10 @@ const Data = {
       blog: `
       data science course blog, data analyst, data scientist, machine learning, artificial intelligence, big data, predictive analytics, business intelligence, data visualization, data mining, statistics, digital marketing, marketing, advertising, social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, lead generation, customer relationship management (CRM), marketing automation, project management, project manager, project planning, project execution, project control, project risk management, project communication, project team management, project budget management, project quality management, cyber security, information security, information assurance, computer security, network security, data security, application security, operational security, physical security, compliance, design thinking, human-centered design, innovation, creativity, problem solving, ideation, prototyping, testing, implementation
       `,
+      "artificial-intelligence": "artificial-intelligence",
+      "ai-introductory": "ai-introductory",
+      "ai-intermediary": "ai-intermediary",
+      "ai-advanced-applied": "ai-advanced-applied",
     },
     description: {
       home: "Upskill yourself with Digital Regensys online courses for digital-age skills to become future-ready for the dynamic workplace in the disruptive digital age.",
@@ -279,6 +287,10 @@ const Data = {
       blog: `
      Discover the Digital Regenesys Blog - unlock digital transformation's power. Get insights, guidance, and success stories to stay ahead in the digital era.
       `,
+      "artificial-intelligence": "artificial-intelligence",
+      "ai-introductory": "ai-introductory",
+      "ai-intermediary": "ai-intermediary",
+      "ai-advanced-applied": "ai-advanced-applied",
     },
     canonicalUrlData: {
       home: "/",
@@ -308,6 +320,10 @@ const Data = {
       "applied-data-science": "/all-courses/data-science/applied-data-science",
       "design-thinking": "/all-courses/design-thinking",
       blog: "/blog ",
+      "artificial-intelligence": "/artificial-intelligence",
+      "ai-introductory": "/ai-introductory",
+      "ai-intermediary": "/ai-intermediary",
+      "ai-advanced-applied": "/ai-advanced-applied",
     },
   },
 };
