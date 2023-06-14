@@ -372,6 +372,7 @@ export const allCourseList = [
       },
     ],
   },
+
   {
     id: 30,
     name: "Coding",
