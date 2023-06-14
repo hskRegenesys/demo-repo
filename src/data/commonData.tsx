@@ -45,10 +45,14 @@ const Data = {
       createMyWealth:
         "Investment, Trading, Personal Finance Course | Digital Regenesys",
       blog: "Digital Regenesys Blog: Insights, Tips, & Advice for Digital Success",
-      "artificial-intelligence": "artificial-intelligence",
-      "ai-introductory": "ai-introductory",
-      "ai-intermediary": "ai-intermediary",
-      "ai-advanced-applied": "ai-advanced-applied",
+      "artificial-intelligence":
+        "Artificial Intelligence Course Online | Digital Regenesys",
+      "ai-introductory":
+        "Artificial Intelligence Introduction Course | Digital Regenesys",
+      "ai-intermediary":
+        "Artificial Intelligence Intermediate Course | Digital Regenesys",
+      "ai-advanced-applied":
+        "Advanced Applied Artificial Intelligence Course | Digital Regenesys",
     },
     keywords: {
       home: `
@@ -228,10 +232,14 @@ const Data = {
       blog: `
       data science course blog, data analyst, data scientist, machine learning, artificial intelligence, big data, predictive analytics, business intelligence, data visualization, data mining, statistics, digital marketing, marketing, advertising, social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, lead generation, customer relationship management (CRM), marketing automation, project management, project manager, project planning, project execution, project control, project risk management, project communication, project team management, project budget management, project quality management, cyber security, information security, information assurance, computer security, network security, data security, application security, operational security, physical security, compliance, design thinking, human-centered design, innovation, creativity, problem solving, ideation, prototyping, testing, implementation
       `,
-      "artificial-intelligence": "artificial-intelligence",
-      "ai-introductory": "ai-introductory",
-      "ai-intermediary": "ai-intermediary",
-      "ai-advanced-applied": "ai-advanced-applied",
+      "artificial-intelligence":
+        "AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
+      "ai-introductory":
+        "AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
+      "ai-intermediary":
+        " AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
+      "ai-advanced-applied":
+        "AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
     },
     description: {
       home: "Upskill yourself with Digital Regensys online courses for digital-age skills to become future-ready for the dynamic workplace in the disruptive digital age.",
@@ -287,10 +295,14 @@ const Data = {
       blog: `
      Discover the Digital Regenesys Blog - unlock digital transformation's power. Get insights, guidance, and success stories to stay ahead in the digital era.
       `,
-      "artificial-intelligence": "artificial-intelligence",
-      "ai-introductory": "ai-introductory",
-      "ai-intermediary": "ai-intermediary",
-      "ai-advanced-applied": "ai-advanced-applied",
+      "artificial-intelligence":
+        "Learn Artificial Intelligence with our online course at Digital Regenesys. Get practical skills & advance your career in AI. Enrol now for comprehensive AI training.",
+      "ai-introductory":
+        "Get a comprehensive introduction to Artificial Intelligence with Digital Regenesys. Boost your knowledge & skills in AI. Enrol today for our AI introductory course.",
+      "ai-intermediary":
+        "Advance your AI skills with our online course on Intermediary Artificial Intelligence from Digital Regenesys. Learn advanced techniques and applications. Enrol now.",
+      "ai-advanced-applied":
+        "Take your AI expertise to the next level with Digital Regenesys' Advanced Applied Artificial Intelligence course. Master cutting-edge AI techniques. Enrol today.",
     },
     canonicalUrlData: {
       home: "/",
@@ -320,10 +332,10 @@ const Data = {
       "applied-data-science": "/all-courses/data-science/applied-data-science",
       "design-thinking": "/all-courses/design-thinking",
       blog: "/blog ",
-      "artificial-intelligence": "/artificial-intelligence",
-      "ai-introductory": "/ai-introductory",
-      "ai-intermediary": "/ai-intermediary",
-      "ai-advanced-applied": "/ai-advanced-applied",
+      "artificial-intelligence": "/all-courses/artificial-intelligence",
+      "ai-introductory": "/all-courses/artificial-intelligence/ai-introductory",
+      "ai-intermediary": "/all-courses/artificial-intelligence/ai-intermediary",
+      "ai-advanced-applied": "/all-courses/artificial-intelligence/ai-advanced-applied",
     },
   },
 };
