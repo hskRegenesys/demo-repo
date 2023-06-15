@@ -94,6 +94,18 @@ const MyApp = ({ Component, pageProps }: any) => {
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-232125756-1"
       />
+
+      <Script
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+              `,
+        }}
+      />
+      {/* <!-- Google tag (gtag.js) --> Ramesh END */}
       <Script
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
@@ -102,7 +114,6 @@ const MyApp = ({ Component, pageProps }: any) => {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-873313553');
-            gtag('config', 'UA-232125756-1');
             gtag('config', 'AW-10930930903');
               `,
         }}
