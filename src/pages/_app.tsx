@@ -88,6 +88,12 @@ const MyApp = ({ Component, pageProps }: any) => {
         strategy="beforeInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=AW-873313553"
       />
+      {/* <!-- Google tag (gtag.js) --> Ramesh  */}
+      <Script
+        strategy="beforeInteractive"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-232125756-1"
+      />
       <Script
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
