@@ -33,12 +33,12 @@ export const mainFooter = {
   address5:
     "Proxima Building, \n Unit 1101 11th Floor, \n Plot 19,Sector 30A, Vashi \n Navi Mumbai, India, 400705",
 
-  phone: "+27 (11) 669 5000",
+  phone: "",
   phone2: "",
   phone3: "+234 (1) 453 0959",
   phone4: "",
   phone5: "+91 1800 212 9950",
-  web: "www.regenesys.net",
+  web: "",
   weblink: "https://www.regenesys.net/",
 
   web2: "",
