@@ -90,18 +90,17 @@ const MyApp = ({ Component, pageProps }: any) => {
       />
       {/* <!-- Google tag (gtag.js) --> Ramesh  */}
       <Script
-        strategy="beforeInteractive"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-232125756-1"
       />
 
       <Script
-        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+          gtag('config', 'UA-232125756-1');
               `,
         }}
       />
