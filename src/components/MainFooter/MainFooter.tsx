@@ -107,7 +107,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </Col>
                         <Col sm="12">
                           {/* <h6>Contact Details</h6> */}
-                          <ul>
+                          {/* <ul>
                             <li>
                               <span className="icon flaticon-call"></span>
                               <a href={`tel:${phone.split(" ").join("")}`}>
@@ -120,7 +120,7 @@ const MainFooter = ({ normalPadding = true }) => {
                                 {web}
                               </a>
                             </li>
-                          </ul>
+                          </ul> */}
                         </Col>
                       </Row>
                     </div>
@@ -138,7 +138,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </Col>
                         <Col sm="12">
                           {/* <h6>Contact Details</h6> */}
-                          <ul>
+                          {/* <ul>
                             <li>
                               <span className="icon flaticon-call"></span>
                               <a href={`tel:${phone3.split(" ").join("")}`}>
@@ -151,7 +151,7 @@ const MainFooter = ({ normalPadding = true }) => {
                                 {web3}
                               </a>
                             </li>
-                          </ul>
+                          </ul> */}
                         </Col>
                       </Row>
                     </div>
@@ -181,7 +181,7 @@ const MainFooter = ({ normalPadding = true }) => {
                         </Col>
                         <Col sm="12">
                           {/* <h6>Contact Details</h6> */}
-                          <ul>
+                          {/* <ul>
                             <li>
                               <span className="icon flaticon-call"></span>
                               <a href={`tel:${phone.split(" ").join("")}`}>
@@ -194,7 +194,7 @@ const MainFooter = ({ normalPadding = true }) => {
                                 {web5}
                               </a>
                             </li>
-                          </ul>
+                          </ul> */}
                         </Col>
                       </Row>
                     </div>
