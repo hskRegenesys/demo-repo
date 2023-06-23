@@ -42,7 +42,7 @@ export const digitalMarketingMain = [
 export const digitalMarketingText = {
   title: "Digital Marketing",
   pagedesc:
-    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in three levels; basic, advanced and applied. Learn these aspects of Digital Marketing and its real-world use.",
+    "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
 
