@@ -48,7 +48,6 @@ import StickyBar from "@/components/StickyFooter/Sticky";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import { allCourseList } from "@/data/courseData";
 import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
-import { title } from "process";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
