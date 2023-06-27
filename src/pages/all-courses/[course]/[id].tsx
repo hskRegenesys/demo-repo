@@ -47,6 +47,7 @@ import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import { allCourseList } from "@/data/courseData";
+import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -107,6 +108,7 @@ const DigitalMarketing = (props: any) => {
           parentToParentName()
         )}`}
       />
+
       {courseDetails && (
         <>
           <CourseDetails
@@ -116,6 +118,9 @@ const DigitalMarketing = (props: any) => {
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
           <ToolsCovered courseDetails={courseDetails} />
+          {courseDetails?.courseCertificate && (
+            <CourseCertificate courseDetails={courseDetails} />
+          )}
           <FeatureSeven courseDetails={courseDetails} />
           <VideoOne courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
