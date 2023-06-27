@@ -119,7 +119,9 @@ const DigitalMarketing = (props: any) => {
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
           <ToolsCovered courseDetails={courseDetails} />
-          <CourseCertificate courseDetails={courseDetails} />
+          {courseDetails?.courseCertificate && (
+            <CourseCertificate courseDetails={courseDetails} />
+          )}
           <FeatureSeven courseDetails={courseDetails} />
           <VideoOne courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
