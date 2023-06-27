@@ -735,6 +735,11 @@ export const courseData = {
       "ds/tools_covered11.webp",
       "ds/tools_covered12.webp",
     ],
+    // courseCertificate: {
+    //   title: "Masterful Certification in Digital Marketing Fundamentals",
+    //   subTitle:
+    //     " Unleash Your Digital Marketing Potential with Digital Regenesys’s Digital Marketing course.",
+    // },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",

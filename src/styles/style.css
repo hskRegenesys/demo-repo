@@ -273,6 +273,9 @@ p {
   .page-wrapper.boxed-wrapper {
     max-width: 95%;
   }
+  .modal-modify .closeBtn {
+    position: absolute !important;
+  }
 }
 
 .auto-container {
@@ -20588,6 +20591,64 @@ h2.highlight {
   color: #ffe55b;
   animation: dot-stretching-after 2s infinite ease-in;
   right: -14px;
+}
+/* certificate css */
+.certificate-row {
+  background-color: #c3e9d7;
+  padding: 10px 0;
+  margin: 50px 0;
+  position: relative;
+}
+.certificate-row h2 {
+  background-color: #2ba594;
+  padding: 10px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  border-radius: 0 10px 10px 0;
+  margin-top: 5%;
+}
+.certificate-content strong {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.certificate-content ul {
+  margin: 15px 0;
+  margin-left: -4px;
+}
+.certificate-content ul li {
+  display: inline-block;
+  width: 50%;
+}
+
+.certificate-content span {
+  display: block;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.certificate-sample {
+  position: relative;
+}
+.certificate-bg {
+  position: absolute;
+  right: 0px;
+}
+
+.certificate-image {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(15%, 24%);
+}
+.certificate-image a {
+  display: block;
+  text-align: center;
+  color: #000;
+}
+.certificate-content {
+  padding-left: 5%;
 }
 
 @keyframes dot-stretching {
