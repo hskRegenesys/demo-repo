@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Modal } from "react-bootstrap";
 import ZoomInOutlinedIcon from "@mui/icons-material/ZoomInOutlined";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { Carousel } from "antd";
 const CourseCertificate = ({ courseDetails }) => {
   const {
     certificateTitle,
@@ -49,14 +51,30 @@ const CourseCertificate = ({ courseDetails }) => {
         <div className="col-lg-6">
           <div className="certificate-sample">
             <div className="certificate-image">
-              <Image
-                src={`/assets/images/background/${CertificateImage}`}
-                layout="intrinsic"
-                width="550"
-                height="394"
-                alt="DR certificate"
-              />
-
+              <Carousel
+                autoplaySpeed={2000}
+                slidesToShow={1}
+                slidesToScroll={1}
+                dots={false}
+                autoplay={true}
+                arrows={true}
+                infinite
+                nextArrow={<ChevronRight fontSize="large" />}
+                prevArrow={<ChevronLeft fontSize="large" />}
+                swipeToSlide={true}
+              >
+                {CertificateImage?.map((image) => (
+                  <figure className="image-box">
+                    <Image
+                      src={`/assets/images/background/${image}`}
+                      layout="intrinsic"
+                      width="550"
+                      height="394"
+                      alt="DR certificate"
+                    />
+                  </figure>
+                ))}
+              </Carousel>
               <a href="javascript:void(0)" onClick={toggleModal}>
                 <ZoomInOutlinedIcon /> Click to zoom
               </a>

@@ -786,7 +786,7 @@ export const courseData = {
         "Data Science Manager ",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -1191,7 +1191,7 @@ export const courseData = {
         "Chief Data Officer (CDO)",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -1557,7 +1557,7 @@ export const courseData = {
         "Financial Analyst",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -1875,7 +1875,7 @@ export const courseData = {
         "AI Product Support",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -2188,7 +2188,7 @@ export const courseData = {
         "AI Consultant",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -2512,7 +2512,7 @@ export const courseData = {
         "AI Entrepreneur",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -3704,7 +3704,7 @@ export const courseData = {
         "Data Science Manager ",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -4037,7 +4037,7 @@ export const courseData = {
         "Content Marketing Manager",
         "Digital Analytics Manager",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -5136,7 +5136,7 @@ export const courseData = {
         "Strategic Design Consultant",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: ["DR-Sample_certificate.jpg"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -5483,7 +5483,10 @@ export const courseData = {
         "Cyber Security Manager",
         "And many more",
       ],
-      CertificateImage: "DR-Sample_certificate.jpg",
+      CertificateImage: [
+        "DR-Sample_certificate.jpg",
+        "DR-Sample_certificate.jpg",
+      ],
     },
     featureSeven: {
       title: "Meet our staff",
