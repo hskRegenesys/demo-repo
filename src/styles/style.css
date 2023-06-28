@@ -20616,11 +20616,21 @@ h2.highlight {
 }
 .certificate-content ul {
   margin: 15px 0;
+  position: relative;
   margin-left: -4px;
 }
 .certificate-content ul li {
   display: inline-block;
   width: 50%;
+  position: relative;
+  padding-left: 30px;
+  vertical-align: top;
+  line-height: 22px;
+}
+.certificate-content ul li svg {
+  position: absolute;
+  left: 0px;
+ 
 }
 
 .certificate-content span {

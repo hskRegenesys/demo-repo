@@ -861,6 +861,7 @@
   .certificate-content ul li {
     width: 100%;
     display: block;
+    margin: 8px 0;
   }
   .certificate-bg {
     position: relative;
@@ -870,7 +871,7 @@
     position: absolute;
     z-index: 1;
     top: auto;
-    transform: translate(-6%, 24%);
+    transform: translate(0%, 24%);
     padding: 5%;
   }
   .certificate-image a {
