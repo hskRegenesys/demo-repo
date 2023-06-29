@@ -77,12 +77,12 @@ const CourseCertificate = ({ courseDetails }) => {
           <div className="certificate-sample">
             <div className="certificate-image">
               <Carousel
-                autoplaySpeed={2000}
+                autoplaySpeed={3000}
                 slidesToShow={1}
                 slidesToScroll={1}
                 dots={false}
                 autoplay={true}
-                arrows={true}
+                arrows={false}
                 infinite
                 prevArrow={<ChevronLeft fontSize="large" />}
                 nextArrow={<ChevronRight fontSize="large" />}
