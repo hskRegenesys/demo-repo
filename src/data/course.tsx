@@ -1,4 +1,5 @@
 import { leadSource, sourceCampaign } from "@/components/config/constant";
+import { Certificate } from "crypto";
 
 export const digitalMarketingMain = [
   {
@@ -62,8 +63,6 @@ export const artificialIntelligenceCourse = {
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
 export const courseData = {
-  //Advance-Digital-Marketing
-
   //Project Management
   PM: {
     processOne: [
@@ -111,6 +110,34 @@ export const courseData = {
       "pm/project-management-tools3.webp",
       "pm/project-management-tools4.webp",
     ],
+    courseCertificate: {
+      certificateTitle:
+        "Leading with Excellence: Project Management Certificate Course",
+      certificateSubTitle:
+        "Earn a Project Management Certificate from Digital Regenesys & Navigate the Project Management Landscape",
+      certificateSubSubTitle:
+        "With our Project Management programme, you will gain a solid foundation in project management principles to stay ahead in the competition by working on projects, simulations, and cases.        ",
+      certificateListTitle:
+        "With Project Management Certificate, you will get: ",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Comprehensive Project Management Knowledge",
+        "Project Management Tools and Techniques",
+        "Project Scope and Quality Management",
+      ],
+      certificateListPara:
+        " Our Advance Digital Marketing Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+      certificateRolesList: [
+        "Project Manager",
+        "Project Coordinator",
+        "Event Project Manager",
+        "Consulting Project Manager",
+        "And many more",
+      ],
+      CertificateImage: ["PM_certificate.webp"],
+      imageName: "PM_certificate",
+    },
 
     featureSeven: {
       title: "Meet our staff",
@@ -735,11 +762,33 @@ export const courseData = {
       "ds/tools_covered11.webp",
       "ds/tools_covered12.webp",
     ],
-    // courseCertificate: {
-    //   title: "Masterful Certification in Digital Marketing Fundamentals",
-    //   subTitle:
-    //     " Unleash Your Digital Marketing Potential with Digital Regenesys’s Digital Marketing course.",
-    // },
+    courseCertificate: {
+      certificateTitle:
+        "Unleashing Data Science Potential: Foundational Certificate Course",
+      certificateSubTitle:
+        "Earn a Basic Data Science Certificate from Digital Regenesys and Embark on a Data Adventure ",
+      certificateSubSubTitle:
+        "With our Basic Data Science programme, the knowledge and skills you gain working on projects, simulations, and case studies will set you ahead in the competition.        ",
+      certificateListTitle:
+        "With Basic Data Science Certificate, you will get: ",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Practical skills ",
+        "In-depth knowledge of concepts and techniques",
+        "Basic Data Science Skills",
+      ],
+      certificateListPara:
+        " Our Basic Data Science Certificate will open doors to various roles for you, whether you are a fresher, a graduate or an experienced working professional. Our Digital Marketing Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+      certificateRolesList: [
+        "Data Analyst",
+        "Data Scientist",
+        "Data Visualisation Specialist",
+        "Data Science Manager ",
+        "And many more",
+      ],
+      CertificateImage: ["BDSCI_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -1118,6 +1167,32 @@ export const courseData = {
       "ds/tools_covered11.webp",
       "ds/tools_covered12.webp",
     ],
+    courseCertificate: {
+      certificateTitle: "Mastering Data Science: Advanced Certificate Course",
+      certificateSubTitle:
+        "Earn an Advanced Data Science Certificate from Digital Regenesys & Master the art of Data Science ",
+      certificateSubSubTitle:
+        "With our Advanced Data Science programme, the knowledge and skills you gain working on projects, simulations, and case studies will set you ahead in the competition.",
+      certificateListTitle:
+        "With Advanced Data Science Certificate, you will get:",
+
+      certificateSkillList: [
+        "International Recognition  ",
+        "Advanced-Data Science Expertise",
+        "Advanced Analytics Skills",
+        "Knowledge of Industry-Relevant Tools and Technologies",
+      ],
+      certificateListPara:
+        " Our Advanced Data Science Certificate will open doors to various roles for you, whether you are a fresher, a graduate or an experienced working professional.",
+      certificateRolesList: [
+        "Data Consultant",
+        "Machine Learning Engineer",
+        "Predictive Analytics Manager ",
+        "Chief Data Officer (CDO)",
+        "And many more",
+      ],
+      CertificateImage: ["ADDSCI_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -1457,6 +1532,33 @@ export const courseData = {
       "ds/tools_covered11.webp",
       "ds/tools_covered12.webp",
     ],
+    courseCertificate: {
+      certificateTitle:
+        "Bridging Theory and Practice: Applied Data Science Certificate Course",
+      certificateSubTitle:
+        "Earn an Applied Data Science Certificate from Digital Regenesys & Excel in Real-World Insights ",
+      certificateSubSubTitle:
+        "With our Applied Data Science programme, the knowledge and skills you gain working on projects, simulations, and case studies will set you ahead in the competition.",
+      certificateListTitle:
+        "With Applied Data Science Certificate, you will get:  ",
+
+      certificateSkillList: [
+        "International Recognition ",
+        "Practical Data Science Skills",
+        "Project-Based Experience",
+        "Data Visualisation Proficiency",
+      ],
+      certificateListPara:
+        " Our Applied Data Science Certificate will open doors to various roles for you, whether you are a fresher, a graduate or an experienced working professional.",
+      certificateRolesList: [
+        "Business Intelligence Analyst",
+        "Marketing Analyst ",
+        "Operations Analyst",
+        "Financial Analyst",
+        "And many more",
+      ],
+      CertificateImage: ["APDSCI_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -1749,6 +1851,32 @@ export const courseData = {
     // courseTools: [
 
     // ],
+    courseCertificate: {
+      certificateTitle:
+        "Embarking on the AI Journey: Introductory Certificate Course",
+      certificateSubTitle:
+        "Earn an AI Introductory Certificate from Digital Regenesys & Empower Your Potential with AI",
+      certificateSubSubTitle:
+        "With our AI Introductory programme, you will gain valuable insights and foundational knowledge in artificial intelligence to stay ahead.",
+      certificateListTitle: "With AI Introductory Certificate, you will get: ",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Foundational AI Knowledge",
+        "Insight into AI Applications",
+        "Introduction to AI Tools and Technologies ",
+      ],
+      certificateListPara:
+        " Our AI Introductory Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
+      certificateRolesList: [
+        "AI Assistant",
+        "Junior AI Developer",
+        "AI Sales Support",
+        "AI Product Support",
+        "And many more",
+      ],
+      CertificateImage: ["AIIP_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -2036,6 +2164,32 @@ export const courseData = {
     //   "ds/tools_covered11.webp",
     //   "ds/tools_covered12.webp",
     // ],
+    courseCertificate: {
+      certificateTitle:
+        "Mastering AI Techniques: Intermediary Certificate Course",
+      certificateSubTitle:
+        "Earn an AI Intermediary Certificate from Digital Regenesys & Elevate Your AI Expertise",
+      certificateSubSubTitle:
+        "With our AI Intermediary programme, you can dive deeper into advanced AI concepts to stay ahead in the competition by working on projects, simulations, and cases.",
+      certificateListTitle: "With AI Intermediary Certificate, you will get:",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Advanced AI Concepts",
+        "Advanced AI Tools and Frameworks",
+        "Ethical AI Considerations",
+      ],
+      certificateListPara:
+        " Our AI Intermediary  Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+      certificateRolesList: [
+        "Deep Learning Engineer",
+        "Data Scientist (AI Focus)",
+        "Research Scientist (AI)",
+        "AI Consultant",
+        "And many more",
+      ],
+      CertificateImage: ["AIIPF_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -2332,6 +2486,34 @@ export const courseData = {
     //   "ds/tools_covered11.webp",
     //   "ds/tools_covered12.webp",
     // ],
+
+    courseCertificate: {
+      certificateTitle:
+        "Transforming Industries with Advanced AI: Applied Certificate Course",
+      certificateSubTitle:
+        "Earn an AI Advanced Applied Certificate from Digital Regenesys & Harness the Power of AI ",
+      certificateSubSubTitle:
+        "With our AI Advanced Applied programme, you will gain advanced knowledge and practical skills in applying artificial intelligence to real-world scenarios.",
+      certificateListTitle:
+        "With AI Advanced Applied Certificate, you will get:",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Advanced AI Skills",
+        "Optimisation and Performance Tuning",
+        "Advanced AI Tools and Frameworks",
+      ],
+      certificateListPara:
+        " Our AI Advanced Applied Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
+      certificateRolesList: [
+        "AI Specialist in Specific Industries",
+        "AI Solution Architect",
+        "AI Project Manager",
+        "AI Entrepreneur",
+        "And many more",
+      ],
+      CertificateImage: ["AIAAPP_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -3496,6 +3678,34 @@ export const courseData = {
       "dm/digital_marketing_tools15.webp",
       "dm/digital_marketing_tools16.webp",
     ],
+
+    courseCertificate: {
+      certificateTitle:
+        "Digital Marketing Essentials: Foundational Certificate Course",
+      certificateSubTitle:
+        "Earn a Digital Marketing Fundamentals Certificate from Digital Regenesys & Chart Your Digital Success ",
+      certificateSubSubTitle:
+        "With our Digital Marketing Fundamentals programme, gain the skills and knowledge to stay ahead in the competition by working on projects, simulations, and cases.",
+      certificateListTitle:
+        "With Digital Marketing Fundamentals Certificate, you will get:",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Industry-Relevant Insights",
+        "Targeted Audience Reach",
+        "Brand Building",
+      ],
+      certificateListPara:
+        " Our Digital Marketing Fundamentals Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+      certificateRolesList: [
+        "Social Media Manager",
+        "Content Marketer",
+        "Search Engine Optimisation (SEO) Specialist",
+        "Data Science Manager ",
+        "And many more",
+      ],
+      CertificateImage: ["BDMC_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -3803,6 +4013,32 @@ export const courseData = {
       "dm/digital_marketing_tools15.webp",
       "dm/digital_marketing_tools16.webp",
     ],
+    courseCertificate: {
+      certificateTitle:
+        "Unleashing Digital Marketing Power: Advance Strategies Certificate Course",
+      certificateSubTitle:
+        "Earn an Advance Digital Marketing Certificate from Digital Regenesys & Revolutionise your Digital Marketing Skills       ",
+      certificateSubSubTitle:
+        "With our Advance Digital Marketing programme, you will gain an in-depth understanding and learn advanced tactics to stay ahead in the competition by working on projects, simulations, and cases.        ",
+      certificateListTitle:
+        "With Advance Digital Marketing Certificate, you will get:",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Cutting-edge Strategies",
+        "Strategic Decision Making",
+        "Networking Opportunities",
+      ],
+      certificateListPara:
+        " Our Advance Digital Marketing Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
+      certificateRolesList: [
+        "SEO Specialist",
+        "PPC Specialist",
+        "Content Marketing Manager",
+        "Digital Analytics Manager",
+      ],
+      CertificateImage: ["AVDMC_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -4876,7 +5112,32 @@ export const courseData = {
     //   "pm/project-management-tools3.webp",
     //   "pm/project-management-tools4.webp",
     // ],
+    courseCertificate: {
+      certificateTitle:
+        "Driving Innovation through Design Thinking: Certificate Course",
+      certificateSubTitle:
+        "Earn a Design Thinking Certificate from Digital Regenesys & Transform Ideas into Solutions",
+      certificateSubSubTitle:
+        "With our Design Thinking programme, you will gain a mindset of design thinking to stay ahead in the competition by working on projects, simulations, and cases.        ",
+      certificateListTitle: "With Design Thinking Certificate, you will get:",
 
+      certificateSkillList: [
+        "International Recognition",
+        "Human-Centred Mindset",
+        "Empathy and User Research",
+        "Strategic Thinking and Decision-Making",
+      ],
+      certificateListPara:
+        " Our Design Thinking Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
+      certificateRolesList: [
+        "Design Thinking Consultant",
+        "Innovation Manager",
+        "User Experience (UX) Designer",
+        "Strategic Design Consultant",
+        "And many more",
+      ],
+      CertificateImage: ["DTC_certificate.webp"],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -5197,6 +5458,36 @@ export const courseData = {
     //   "cs/cybersecurity-tools-14.png",
     //   "cs/cybersecurity-tools-15.png",
     // ],
+
+    courseCertificate: {
+      certificateTitle:
+        "Building Strong Cyber Defenses: Fundamental & Defence Toolbox Certificate Course",
+      certificateSubTitle:
+        "Earn a Cyber Security Certificate from Digital Regenesys & Stay Ahead of Cyber Threats",
+      certificateSubSubTitle:
+        "With our Cyber Security programme, you will gain a deep understanding of cyber security principles & concepts to stay ahead by working on projects, simulations, and cases.        ",
+      certificateListTitle: "With Cyber Security Certificate, you will get:",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Cyber Security Governance and Compliance",
+        "Cyber Risk Management",
+        "Ethical Hacking and Penetration Testing",
+      ],
+      certificateListPara:
+        " Our Cyber Security Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+      certificateRolesList: [
+        "Security Consultant",
+        "Security Operations Center (SOC) Analyst",
+        "Security Architect        ",
+        "Cyber Security Manager",
+        "And many more",
+      ],
+      CertificateImage: [
+        "CSC_certificate_fundamentals.webp",
+        "CSC_certificate_toolbox.webp",
+      ],
+    },
     featureSeven: {
       title: "Meet our staff",
       desc: "Revolutionise your career with future-ready skills",

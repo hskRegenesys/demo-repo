@@ -20616,11 +20616,21 @@ h2.highlight {
 }
 .certificate-content ul {
   margin: 15px 0;
+  position: relative;
   margin-left: -4px;
 }
 .certificate-content ul li {
   display: inline-block;
   width: 50%;
+  position: relative;
+  padding-left: 30px;
+  vertical-align: top;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.certificate-content ul li svg {
+  position: absolute;
+  left: 0px;
 }
 
 .certificate-content span {
@@ -20634,18 +20644,44 @@ h2.highlight {
 .certificate-bg {
   position: absolute;
   right: 0px;
+  top: 0px;
 }
 
 .certificate-image {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 50%;
-  transform: translate(15%, 24%);
+  transform: translate(10%, 15%);
+}
+.certificate-image .slick-next,
+.certificate-image .slick-prev {
+  color: #289665;
+  font-size: unset;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #289665;
+  border-radius: 100%;
+}
+
+.certificate-image .slick-prev {
+  margin-left: -30px;
+}
+
+.certificate-image .slick-next {
+  right: 18%;
+}
+.certificate-image .slick-next:focus,
+.certificate-image .slick-next:hover,
+.certificate-image .slick-prev:focus,
+.certificate-image .slick-prev:hover {
+  color: unset;
 }
 .certificate-image a {
   display: block;
   text-align: center;
   color: #000;
+}
+.modal-modify .closeBtn {
+  position: absolute;
 }
 .certificate-content {
   padding-left: 5%;
