@@ -111,7 +111,8 @@ export const courseData = {
       "pm/project-management-tools4.webp",
     ],
     courseCertificate: {
-      certificateTitle: "Masterful Certification in Project Management",
+      certificateTitle:
+        "Leading with Excellence: Project Management Certificate Course",
       certificateSubTitle:
         "Earn a Project Management Certificate from Digital Regenesys & Navigate the Project Management Landscape",
       certificateSubSubTitle:
@@ -762,7 +763,8 @@ export const courseData = {
       "ds/tools_covered12.webp",
     ],
     courseCertificate: {
-      certificateTitle: "Masterful Certification in Basic Data Science",
+      certificateTitle:
+        "Unleashing Data Science Potential: Foundational Certificate Course",
       certificateSubTitle:
         "Earn a Basic Data Science Certificate from Digital Regenesys and Embark on a Data Adventure ",
       certificateSubSubTitle:
@@ -1166,7 +1168,7 @@ export const courseData = {
       "ds/tools_covered12.webp",
     ],
     courseCertificate: {
-      certificateTitle: "Masterful Certification in Advanced Data Science",
+      certificateTitle: "Mastering Data Science: Advanced Certificate Course",
       certificateSubTitle:
         "Earn an Advanced Data Science Certificate from Digital Regenesys & Master the art of Data Science ",
       certificateSubSubTitle:
@@ -1531,7 +1533,8 @@ export const courseData = {
       "ds/tools_covered12.webp",
     ],
     courseCertificate: {
-      certificateTitle: "Masterful Certification in Applied Data Science",
+      certificateTitle:
+        "Bridging Theory and Practice: Applied Data Science Certificate Course",
       certificateSubTitle:
         "Earn an Applied Data Science Certificate from Digital Regenesys & Excel in Real-World Insights ",
       certificateSubSubTitle:
@@ -1850,7 +1853,7 @@ export const courseData = {
     // ],
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Artificial Intelligence Introductory Programme",
+        "Embarking on the AI Journey: Introductory Certificate Course",
       certificateSubTitle:
         "Earn an AI Introductory Certificate from Digital Regenesys & Empower Your Potential with AI",
       certificateSubSubTitle:
@@ -2163,7 +2166,7 @@ export const courseData = {
     // ],
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Artificial Intelligence Intermediary Programme",
+        "Mastering AI Techniques: Intermediary Certificate Course",
       certificateSubTitle:
         "Earn an AI Intermediary Certificate from Digital Regenesys & Elevate Your AI Expertise",
       certificateSubSubTitle:
@@ -2486,7 +2489,7 @@ export const courseData = {
 
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Artificial Intelligence Advanced Applied Programme",
+        "Transforming Industries with Advanced AI: Applied Certificate Course",
       certificateSubTitle:
         "Earn an AI Advanced Applied Certificate from Digital Regenesys & Harness the Power of AI ",
       certificateSubSubTitle:
@@ -3678,7 +3681,7 @@ export const courseData = {
 
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+        "Digital Marketing Essentials: Foundational Certificate Course",
       certificateSubTitle:
         "Earn a Digital Marketing Fundamentals Certificate from Digital Regenesys & Chart Your Digital Success ",
       certificateSubSubTitle:
@@ -4012,7 +4015,7 @@ export const courseData = {
     ],
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Advance Digital Marketing Strategies",
+        "Unleashing Digital Marketing Power: Advance Strategies Certificate Course",
       certificateSubTitle:
         "Earn an Advance Digital Marketing Certificate from Digital Regenesys & Revolutionise your Digital Marketing Skills       ",
       certificateSubSubTitle:
@@ -5110,7 +5113,8 @@ export const courseData = {
     //   "pm/project-management-tools4.webp",
     // ],
     courseCertificate: {
-      certificateTitle: "Masterful Certification in Design Thinking",
+      certificateTitle:
+        "Driving Innovation through Design Thinking: Certificate Course",
       certificateSubTitle:
         "Earn a Design Thinking Certificate from Digital Regenesys & Transform Ideas into Solutions",
       certificateSubSubTitle:
@@ -5456,7 +5460,8 @@ export const courseData = {
     // ],
 
     courseCertificate: {
-      certificateTitle: "Masterful Certification in Cybersecurity",
+      certificateTitle:
+        "Building Strong Cyber Defenses: Fundamental & Defence Toolbox Certificate Course",
       certificateSubTitle:
         "Earn a Cyber Security Certificate from Digital Regenesys & Stay Ahead of Cyber Threats",
       certificateSubSubTitle:

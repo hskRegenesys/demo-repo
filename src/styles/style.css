@@ -20626,6 +20626,7 @@ h2.highlight {
   padding-left: 30px;
   vertical-align: top;
   line-height: 22px;
+  margin-bottom: 10px;
 }
 .certificate-content ul li svg {
   position: absolute;
@@ -20651,24 +20652,28 @@ h2.highlight {
   z-index: 1;
   transform: translate(10%, 15%);
 }
-.certificate-image .slick-next,.certificate-image .slick-prev {
+.certificate-image .slick-next,
+.certificate-image .slick-prev {
   color: #289665;
   font-size: unset;
   width: 30px;
   height: 30px;
   border: 2px solid #289665;
-  border-radius: 100%
+  border-radius: 100%;
 }
 
 .certificate-image .slick-prev {
-  margin-left: -30px
+  margin-left: -30px;
 }
 
 .certificate-image .slick-next {
   right: 18%;
 }
-.certificate-image .slick-next:focus,.certificate-image .slick-next:hover,.certificate-image .slick-prev:focus,.certificate-image .slick-prev:hover {
-  color: unset
+.certificate-image .slick-next:focus,
+.certificate-image .slick-next:hover,
+.certificate-image .slick-prev:focus,
+.certificate-image .slick-prev:hover {
+  color: unset;
 }
 .certificate-image a {
   display: block;
