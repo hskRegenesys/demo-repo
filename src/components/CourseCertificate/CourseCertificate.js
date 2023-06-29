@@ -17,8 +17,33 @@ const CourseCertificate = ({ courseDetails }) => {
     CertificateImage,
   } = courseDetails?.courseCertificate;
   const [showImage, setShowImage] = useState(false);
-  const toggleModal = () => {
+  const [imageName, setImageName] = useState(false);
+  const toggleModal = (imageName) => {
+    setImageName(imageName);
     setShowImage(!showImage);
+  };
+  const CertificateModal = () => {
+    return (
+      <div className="modal-modify">
+        <Modal show={showImage} onHide={toggleModal} centered>
+          <button
+            onClick={toggleModal}
+            type="button"
+            className="btn-close"
+            aria-label="Close"
+          ></button>
+          <Modal.Body>
+            <img
+              src={`/assets/images/certificate/${imageName}`}
+              alt="Certificate Image"
+              className="img-fluid"
+            />
+
+            <div className="closeBtn"></div>
+          </Modal.Body>
+        </Modal>
+      </div>
+    );
   };
   return (
     <div className="certificate-row">
@@ -59,45 +84,33 @@ const CourseCertificate = ({ courseDetails }) => {
                 autoplay={true}
                 arrows={true}
                 infinite
-                nextArrow={<ChevronRight fontSize="large" />}
                 prevArrow={<ChevronLeft fontSize="large" />}
+                nextArrow={<ChevronRight fontSize="large" />}
                 swipeToSlide={true}
               >
                 {CertificateImage?.map((image) => (
-                  <figure className="image-box">
-                    <Image
-                      src={`/assets/images/background/${image}`}
-                      layout="intrinsic"
-                      width="550"
-                      height="394"
-                      alt="DR certificate"
-                    />
-                  </figure>
+                  <>
+                    <figure className="image-box">
+                      <Image
+                        src={`/assets/images/certificate/${image}`}
+                        layout="intrinsic"
+                        width="550"
+                        height="394"
+                        alt="DR certificate"
+                        name={CertificateImage?.imageName}
+                      />
+                    </figure>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={() => toggleModal(image)}
+                    >
+                      <ZoomInOutlinedIcon /> Click to zoom
+                    </a>
+                  </>
                 ))}
               </Carousel>
-              <a href="javascript:void(0)" onClick={toggleModal}>
-                <ZoomInOutlinedIcon /> Click to zoom
-              </a>
             </div>
-            <div className="modal-modify">
-              <Modal show={showImage} onHide={toggleModal} centered>
-                <Modal.Body>
-                  <img
-                    src="/assets/images/background/DR-Sample_certificate.jpg"
-                    alt="Certificate Image"
-                    className="img-fluid"
-                  />
-                  <div className="closeBtn">
-                    <button
-                      onClick={toggleModal}
-                      type="button"
-                      className="btn-close"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                </Modal.Body>
-              </Modal>
-            </div>
+
             <div className="certificate-bg">
               <Image
                 src="/assets/images/background/shape-certificate.png"
@@ -111,6 +124,7 @@ const CourseCertificate = ({ courseDetails }) => {
           </div>
         </div>
       </div>
+      <CertificateModal />
     </div>
   );
 };

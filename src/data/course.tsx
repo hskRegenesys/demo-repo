@@ -111,8 +111,7 @@ export const courseData = {
       "pm/project-management-tools4.webp",
     ],
     courseCertificate: {
-      certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+      certificateTitle: "Masterful Certification in Project Management",
       certificateSubTitle:
         "Earn a Project Management Certificate from Digital Regenesys & Navigate the Project Management Landscape",
       certificateSubSubTitle:
@@ -135,7 +134,8 @@ export const courseData = {
         "Consulting Project Manager",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["PM_certificate.webp"],
+      imageName: "PM_certificate",
     },
 
     featureSeven: {
@@ -762,8 +762,7 @@ export const courseData = {
       "ds/tools_covered12.webp",
     ],
     courseCertificate: {
-      certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+      certificateTitle: "Masterful Certification in Basic Data Science",
       certificateSubTitle:
         "Earn a Basic Data Science Certificate from Digital Regenesys and Embark on a Data Adventure ",
       certificateSubSubTitle:
@@ -786,7 +785,7 @@ export const courseData = {
         "Data Science Manager ",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["BDSCI_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -1167,8 +1166,7 @@ export const courseData = {
       "ds/tools_covered12.webp",
     ],
     courseCertificate: {
-      certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+      certificateTitle: "Masterful Certification in Advanced Data Science",
       certificateSubTitle:
         "Earn an Advanced Data Science Certificate from Digital Regenesys & Master the art of Data Science ",
       certificateSubSubTitle:
@@ -1191,7 +1189,7 @@ export const courseData = {
         "Chief Data Officer (CDO)",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["ADDSCI_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -1533,8 +1531,7 @@ export const courseData = {
       "ds/tools_covered12.webp",
     ],
     courseCertificate: {
-      certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+      certificateTitle: "Masterful Certification in Applied Data Science",
       certificateSubTitle:
         "Earn an Applied Data Science Certificate from Digital Regenesys & Excel in Real-World Insights ",
       certificateSubSubTitle:
@@ -1557,7 +1554,7 @@ export const courseData = {
         "Financial Analyst",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["APDSCI_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -1853,7 +1850,7 @@ export const courseData = {
     // ],
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+        "Masterful Certification in Artificial Intelligence Introductory Programme",
       certificateSubTitle:
         "Earn an AI Introductory Certificate from Digital Regenesys & Empower Your Potential with AI",
       certificateSubSubTitle:
@@ -1875,7 +1872,7 @@ export const courseData = {
         "AI Product Support",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["AIIP_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -2166,7 +2163,7 @@ export const courseData = {
     // ],
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+        "Masterful Certification in Artificial Intelligence Intermediary Programme",
       certificateSubTitle:
         "Earn an AI Intermediary Certificate from Digital Regenesys & Elevate Your AI Expertise",
       certificateSubSubTitle:
@@ -2188,7 +2185,7 @@ export const courseData = {
         "AI Consultant",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["AIIPF_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -2489,7 +2486,7 @@ export const courseData = {
 
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+        "Masterful Certification in Artificial Intelligence Advanced Applied Programme",
       certificateSubTitle:
         "Earn an AI Advanced Applied Certificate from Digital Regenesys & Harness the Power of AI ",
       certificateSubSubTitle:
@@ -2512,7 +2509,7 @@ export const courseData = {
         "AI Entrepreneur",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["AIAAPP_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -3704,7 +3701,7 @@ export const courseData = {
         "Data Science Manager ",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["BDMC_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -4015,7 +4012,7 @@ export const courseData = {
     ],
     courseCertificate: {
       certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+        "Masterful Certification in Advance Digital Marketing Strategies",
       certificateSubTitle:
         "Earn an Advance Digital Marketing Certificate from Digital Regenesys & Revolutionise your Digital Marketing Skills       ",
       certificateSubSubTitle:
@@ -4037,7 +4034,7 @@ export const courseData = {
         "Content Marketing Manager",
         "Digital Analytics Manager",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["AVDMC_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -5113,8 +5110,7 @@ export const courseData = {
     //   "pm/project-management-tools4.webp",
     // ],
     courseCertificate: {
-      certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+      certificateTitle: "Masterful Certification in Design Thinking",
       certificateSubTitle:
         "Earn a Design Thinking Certificate from Digital Regenesys & Transform Ideas into Solutions",
       certificateSubSubTitle:
@@ -5136,7 +5132,7 @@ export const courseData = {
         "Strategic Design Consultant",
         "And many more",
       ],
-      CertificateImage: ["DR-Sample_certificate.jpg"],
+      CertificateImage: ["DTC_certificate.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -5460,8 +5456,7 @@ export const courseData = {
     // ],
 
     courseCertificate: {
-      certificateTitle:
-        "Masterful Certification in Digital Marketing Fundamentals",
+      certificateTitle: "Masterful Certification in Cybersecurity",
       certificateSubTitle:
         "Earn a Cyber Security Certificate from Digital Regenesys & Stay Ahead of Cyber Threats",
       certificateSubSubTitle:
@@ -5484,8 +5479,8 @@ export const courseData = {
         "And many more",
       ],
       CertificateImage: [
-        "DR-Sample_certificate.jpg",
-        "DR-Sample_certificate.jpg",
+        "CSC_certificate_fundamentals.webp",
+        "CSC_certificate_toolbox.webp",
       ],
     },
     featureSeven: {
