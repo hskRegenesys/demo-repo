@@ -845,6 +845,7 @@
   .closeBtn button {
     border-radius: 2px;
   }
+
   .sticky-form .inline-button-position {
     display: flex !important;
     justify-content: space-around !important;
@@ -861,16 +862,29 @@
   .certificate-content ul li {
     width: 100%;
     display: block;
+    margin: 8px 0;
   }
   .certificate-bg {
-    position: relative;
     transform: scale(-1);
+    left: 0px;
+    right: auto;
+  }
+  .certificate-image .slick-next,
+  .certificate-image .slick-prev {
+    width: 30px;
+    height: 30px;
+  }
+  .certificate-image .slick-prev {
+    margin-left: 12px;
+    z-index: 2;
+  }
+  .certificate-image .slick-next {
+    right: -11px;
   }
   .certificate-image {
-    position: absolute;
     z-index: 1;
     top: auto;
-    transform: translate(-6%, 24%);
+    transform: translate(0%, 19%);
     padding: 5%;
   }
   .certificate-image a {
