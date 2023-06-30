@@ -130,9 +130,9 @@ export const courseData = {
         " Our Advance Digital Marketing Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
       certificateRolesList: [
         "Project Manager",
-        "Project Coordinator",
+        "Consulting Project Manager ",
         "Event Project Manager",
-        "Consulting Project Manager and many more",
+        "Project Coordinator and many more",
       ],
       CertificateImage: ["PM_certificate.webp"],
       imageName: "PM_certificate",
@@ -781,9 +781,9 @@ export const courseData = {
         " Our Basic Data Science Certificate will open doors to various roles for you, whether you are a fresher, a graduate or an experienced working professional.",
       certificateRolesList: [
         "Data Analyst",
-        "Data Scientist",
+        "Data Science Manager ",
         "Data Visualisation Specialist",
-        "Data Science Manager and many more ",
+        "Data Scientist and many more ",
       ],
       CertificateImage: ["BDSCI_certificate.webp"],
     },
@@ -1183,10 +1183,10 @@ export const courseData = {
       certificateListPara:
         " Our Advanced Data Science Certificate will open doors to various roles for you, whether you are a fresher, a graduate or an experienced working professional.",
       certificateRolesList: [
-        "Data Consultant",
+        "Chief Data Officer (CDO)",
         "Machine Learning Engineer",
         "Predictive Analytics Manager ",
-        "Chief Data Officer (CDO) and many more",
+        "Data Consultant and many more",
       ],
       CertificateImage: ["ADDSCI_certificate.webp"],
     },
@@ -1865,10 +1865,10 @@ export const courseData = {
       certificateListPara:
         " Our AI Introductory Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
       certificateRolesList: [
-        "AI Assistant",
+        "AI Product Support ",
         "Junior AI Developer",
         "AI Sales Support",
-        "AI Product Support and many more",
+        "AI Assistant and many more",
       ],
       CertificateImage: ["AIIP_certificate.webp"],
     },
@@ -3692,9 +3692,9 @@ export const courseData = {
         " Our Digital Marketing Fundamentals Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
       certificateRolesList: [
         "Social Media Manager",
-        "Content Marketer",
+        "Marketing Automation Specialist",
         "Search Engine Optimisation (SEO) Specialist",
-        "Marketing Automation Specialist and many more",
+        "Content Marketer and many more",
       ],
       CertificateImage: ["BDMC_certificate.webp"],
     },
@@ -4025,9 +4025,9 @@ export const courseData = {
         " Our Advance Digital Marketing Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
       certificateRolesList: [
         "SEO Specialist",
-        "PPC Specialist",
+        "Digital Analytics Manager ",
         "Content Marketing Manager",
-        "Digital Analytics Manager and many more",
+        "PPC Specialist and many more",
       ],
       CertificateImage: ["AVDMC_certificate.webp"],
     },
@@ -5123,9 +5123,9 @@ export const courseData = {
         " Our Design Thinking Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
       certificateRolesList: [
         "Design Thinking Consultant",
-        "Innovation Manager",
+        "Strategic Design Consultant ",
         "User Experience (UX) Designer",
-        "Strategic Design Consultant and many more",
+        "Innovation Manager and many more",
       ],
       CertificateImage: ["DTC_certificate.webp"],
     },
@@ -5470,8 +5470,8 @@ export const courseData = {
       certificateRolesList: [
         "Security Consultant",
         "Security Operations Center (SOC) Analyst",
-        "Security Architect        ",
-        "Cyber Security Manager and many more",
+        "Cyber Security Manager ",
+        "Security Architect and many more",
       ],
       CertificateImage: [
         "CSC_certificate_fundamentals.webp",
