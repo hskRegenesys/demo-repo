@@ -6011,6 +6011,14 @@ tns-controls-tools {
   justify-content: center;
   align-items: center;
 }
+.sticky-form-header .inline-button-position span {
+  padding: 5px 10px;
+}
+.sticky-form-header .inline-button-position {
+  transform: translate(0px, 5px);
+
+}
+
 .tabs-box {
   position: relative;
 }
@@ -20324,7 +20332,8 @@ h2.highlight {
 }
 .sticky-form-header .btn-close {
   position: absolute;
-  top: 34%;
+    top: 50%;
+    transform: translate(-12%, -50%);
 }
 
 .sticky-form-header .contact-section {
@@ -20343,8 +20352,8 @@ h2.highlight {
   justify-content: center;
   gap: 16px;
   border-bottom: 2px solid #ccc;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 7px;
+  padding-top: 7px;
   align-items: center;
 }
 .sticky-form-header .contact-section .form-box {
@@ -20384,7 +20393,7 @@ h2.highlight {
   z-index: 10;
   position: relative;
   width: 100%;
-  background-color: #c3c3c3;
+  background-color: #ffe55b;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
