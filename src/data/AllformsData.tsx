@@ -66,6 +66,28 @@ const Data = {
       value: "Higher Certificate",
     },
   ],
+  allCourses: [
+    {
+      option: "Project Management",
+      value: "Project Management",
+    },
+    {
+      option: "Cyber Security",
+      value: "Cyber Security",
+    },
+    {
+      option: "Data Science",
+      value: "Data Science",
+    },
+    {
+      option: "Digital Marketing",
+      value: "Digital Marketing",
+    },
+    {
+      option: "Artificial Intelligence",
+      value: "Artificial Intelligence",
+    },
+  ],
 };
 
 export default Data;
