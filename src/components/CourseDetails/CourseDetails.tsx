@@ -36,14 +36,28 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                         src={`/assets/images/update-01-10-2021/${image}`}
                         alt=""
                       /> */}
-                      <Image
-                        priority={true}
-                        src={`/assets/images/update-01-10-2021/${image}`}
-                        layout="intrinsic"
-                        width="500"
-                        height="596"
-                        alt=""
-                      />
+                      <iframe
+                        width="330"
+                        height="360"
+                        src={youtubeUrl}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      ></iframe>
+                      <div className="btn-customize-programme-wise">
+                        <strong className="text-white text-center d-block">
+                          Enrol Now & Get a 15% Discount
+                        </strong>
+                        <a
+                          className="theme-btn btn-style-two"
+                          onClick={() => {
+                            setShow(!show);
+                            setTitle("Enquire now");
+                          }}
+                        >
+                          <i className="btn-curve"></i>
+                          <span className="btn-title">Enrol Now</span>
+                        </a>
+                      </div>
                     </div>
                   </Col>
 
