@@ -6016,7 +6016,6 @@ tns-controls-tools {
 }
 .sticky-form-header .inline-button-position {
   transform: translate(0px, 5px);
-
 }
 
 .tabs-box {
@@ -20192,12 +20191,13 @@ h2.highlight {
 /* sticky css */
 
 .stickyRow {
-  background: #ffe55b;
+  background: #c3ead8;
   padding: 10px 0;
   position: fixed;
   bottom: 0px;
   width: 100%;
   z-index: 111;
+  border-top: 1px solid #bdbdbd;
 }
 .inlineSticky {
   display: flex;
@@ -20332,8 +20332,8 @@ h2.highlight {
 }
 .sticky-form-header .btn-close {
   position: absolute;
-    top: 50%;
-    transform: translate(-12%, -50%);
+  top: 50%;
+  transform: translate(-12%, -50%);
 }
 
 .sticky-form-header .contact-section {
