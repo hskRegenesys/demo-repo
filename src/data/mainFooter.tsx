@@ -28,7 +28,7 @@ export const mainFooter = {
   address3:
     "8th Floor,  \n Churchgate Tower 2  \n PC 31 Victoria Island, \n  Nigeria",
   address4:
-    "8th Floor,  \n Delta Corner Tower,\n Chiromo Road, 07th Floor, \n Westlands, Nairobi, 00800",
+    " Delta Corner Tower,\n Chiromo Road, 07th Floor, \n   Westlands, \n Nairobi, 00800",
 
   address5:
     "Proxima Building, \n Unit 1101 11th Floor, \n Plot 19,Sector 30A, Vashi \n Navi Mumbai, India, 400705",

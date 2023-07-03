@@ -36,13 +36,15 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                         src={`/assets/images/update-01-10-2021/${image}`}
                         alt=""
                       /> */}
-                      <iframe
-                        width="330"
-                        height="360"
-                        src={youtubeUrl}
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      ></iframe>
+                      <div className="iframe-border">
+                        <iframe
+                          width="320"
+                          height="330"
+                          src={youtubeUrl}
+                          title="YouTube video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        ></iframe>
+                      </div>
                       <div className="btn-customize-programme-wise">
                         <strong className="text-white text-center d-block">
                           Enrol Now & Get a 15% Discount
@@ -123,13 +125,15 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                     height="596"
                     alt=""
                   /> */}
-                  <iframe
-                    width="440"
-                    height="440"
-                    src={youtubeUrl}
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  ></iframe>
+                  <div className="iframe-border">
+                    <iframe
+                      width="440"
+                      height="440"
+                      src={youtubeUrl}
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    ></iframe>
+                  </div>
 
                   <div className="btn-customize-programme-wise">
                     <strong className="text-white text-center d-block">
