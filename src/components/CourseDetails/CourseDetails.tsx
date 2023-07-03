@@ -124,8 +124,8 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                     alt=""
                   /> */}
                   <iframe
-                    width="420"
-                    height="420"
+                    width="440"
+                    height="440"
                     src={youtubeUrl}
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

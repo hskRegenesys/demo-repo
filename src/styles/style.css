@@ -19902,13 +19902,6 @@ button[disabled] {
   .mobile-pricing-section .product-details__buttons .theme-btn {
     width: 100%;
   }
-  .btn-customize-programme-wise a {
-    margin-bottom: 0px;
-  }
-  .btn-customize-programme-wise strong {
-    font-size: 22px;
-  }
-  
 
   /* .page-banner .inner-container {
     padding: 87px 0px 45px !important;
@@ -20312,6 +20305,10 @@ h2.highlight {
     width: 50px;
     height: 50px;
   }
+  .btn-customize-programme-wise strong {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 
 /* card buttons style */
@@ -20319,7 +20316,14 @@ h2.highlight {
   display: flex;
   margin-top: 15px;
 }
-
+.process-one__image .animated .fadeInLeft iframe {
+  color: green;
+  text-align: center;
+  border-width: 20px;
+  border-style: inset;
+  border-color: #c3ead8;
+  border-radius: 5px;
+}
 .inline-button .btn-style-two {
   margin: 0 5px;
   background-color: #1fa393;
@@ -20566,7 +20570,12 @@ h2.highlight {
     margin-bottom: 0 !important;
   }
 }
-
+.btn-customize-programme-wise a {
+  margin-bottom: 0px;
+}
+.btn-customize-programme-wise strong {
+  font-size: 22px;
+}
 /* .loaderBG {
   position: fixed;
   left: 0px;
