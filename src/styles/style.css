@@ -18206,7 +18206,7 @@ h2.curve-right:after {
   border-radius: 8px;
   margin-bottom: 0;
   background-color: #1fa393;
-  padding: 100px;
+  padding: 45px;
   border-radius: 10px;
 }
 
@@ -19902,6 +19902,14 @@ button[disabled] {
   .mobile-pricing-section .product-details__buttons .theme-btn {
     width: 100%;
   }
+  .btn-customize-programme-wise a {
+    margin-bottom: 0px;
+  }
+  .btn-customize-programme-wise strong {
+    font-size: 22px;
+  }
+  
+
   /* .page-banner .inner-container {
     padding: 87px 0px 45px !important;
   } */
@@ -20107,6 +20115,15 @@ button[disabled] {
   }
 }
 
+.btn-customize-programme-wise .btn-style-two {
+  background-color: #ffe55b !important;
+  color: #000;
+  border: 1px solid #ffe55b;
+}
+
+.btn-customize-programme-wise .product-details__buttons {
+  margin-bottom: 0px !important;
+}
 .testimonials-five .auto-container,
 .map-section .auto-container,
 .services-section-three .auto-container {
