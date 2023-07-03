@@ -68,7 +68,9 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/HAGUVAwXdIU?rel=0&autoplay=1",
         title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
@@ -710,6 +712,8 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/OQ41-2-0LDI?rel=0&autoplay=1",
         title: "Certification Programme in Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
         lists: [
@@ -1114,7 +1118,8 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/OQ41-2-0LDI?rel=0&autoplay=1",
         title: "Certification Programme in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
@@ -1478,7 +1483,8 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/OQ41-2-0LDI?rel=0&autoplay=1",
         title: "Certification Programme in Applied Data Science",
         text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
@@ -1799,7 +1805,8 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/DNAaJtfPybE?rel=0&autoplay=1",
         title:
           "Certification in Artificial Intelligence Introductory Programme",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Introductory Programme' and unlock the
@@ -2101,7 +2108,9 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/DNAaJtfPybE?rel=0&autoplay=1",
         title:
           "Certification in Artificial Intelligence Intermediary Programme",
         text: `In the dynamic digital landscape, harnessing the power of Artificial Intelligence (AI) is crucial for staying ahead. Join
@@ -2422,7 +2431,9 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/DNAaJtfPybE?rel=0&autoplay=1",
         title:
           "Certification in Artificial Intelligence Advanced Applied Programme",
         text: `Unleash your potential with our 'AI Advanced Applied Programme.' Skyrocket your career by mastering advanced AI
@@ -3616,7 +3627,10 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/AGuMxbFb_Qw?rel=0&autoplay=1",
+
         title: "Certification Programme in Digital Marketing Fundamentals",
         text: "Upskill yourself with a course in Digital Marketing Fundamentals, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
@@ -3949,7 +3963,10 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/AGuMxbFb_Qw?rel=0&autoplay=1",
+
         title:
           "Certification Programme in Advance Digital Marketing Strategies",
         text: "Upskill yourself with a course in Advance Digital Marketing Strategies, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in one of the most sought-after fields.",
@@ -5060,7 +5077,9 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/3Hlu1p_eGX0?rel=0&autoplay=1",
         title: "Certification Programme in Design Thinking",
         text: "Upskill yourself with a course in Design thinking. It is an innovative problem-solving approach used by leading organizations worldwide. Learn this valuable skill through our Design Thinking course and unleash your creativity to solve complex problems. Enroll yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
@@ -5393,7 +5412,10 @@ export const courseData = {
     processOne: [
       {
         id: 1,
-        image: "yellow-bg-details-bg-1.webp",
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/5LiXudRvsWU?rel=0&autoplay=1",
+
         title: "Certification Programme in Cybersecurity",
         text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with Cyber Security Fundamentals course. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",
         lists: [
