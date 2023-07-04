@@ -830,10 +830,12 @@
     margin: 0 auto;
     display: table;
   }
-  .sticky-form-header .closeBtn {
+  .sticky-form-header .btn-close {
     position: absolute;
-    right: 28%;
-    bottom: 44%;
+    bottom: 5%;
+    transform: translate(-12%, -50%);
+    right: 21%;
+    top: auto;
   }
   .sticky-form-header .inline-button {
     justify-content: center;

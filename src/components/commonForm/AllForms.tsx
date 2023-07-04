@@ -167,8 +167,8 @@ export default function LandingForm(contactform: any) {
                     <PhoneInput
                       international
                       countryCallingCodeEditable={false}
-                      // defaultCountry={geoLocationData?.country_code}
-                      defaultCountry="ZA"
+                      defaultCountry={geoLocationData?.country_code}
+                      // defaultCountry="ZA"
                       placeholder="Select Country Code*"
                       onChange={(e) => {
                         setValue("Phone", e);

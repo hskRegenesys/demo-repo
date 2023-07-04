@@ -6011,6 +6011,13 @@ tns-controls-tools {
   justify-content: center;
   align-items: center;
 }
+.sticky-form-header .inline-button-position span {
+  padding: 5px 10px;
+}
+.sticky-form-header .inline-button-position {
+  transform: translate(0px, 5px);
+}
+
 .tabs-box {
   position: relative;
 }
@@ -18199,7 +18206,7 @@ h2.curve-right:after {
   border-radius: 8px;
   margin-bottom: 0;
   background-color: #1fa393;
-  padding: 100px;
+  padding: 45px;
   border-radius: 10px;
 }
 
@@ -19056,7 +19063,7 @@ input.PhoneInputInput {
 
   .process-one__content,
   .process-one__image {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
   }
 
@@ -19895,6 +19902,7 @@ button[disabled] {
   .mobile-pricing-section .product-details__buttons .theme-btn {
     width: 100%;
   }
+
   /* .page-banner .inner-container {
     padding: 87px 0px 45px !important;
   } */
@@ -20100,6 +20108,15 @@ button[disabled] {
   }
 }
 
+.btn-customize-programme-wise .btn-style-two {
+  background-color: #ffe55b !important;
+  color: #000;
+  border: 1px solid #ffe55b;
+}
+
+.btn-customize-programme-wise .product-details__buttons {
+  margin-bottom: 0px !important;
+}
 .testimonials-five .auto-container,
 .map-section .auto-container,
 .services-section-three .auto-container {
@@ -20184,12 +20201,13 @@ h2.highlight {
 /* sticky css */
 
 .stickyRow {
-  background: #ffe55b;
+  background: #c3ead8;
   padding: 10px 0;
   position: fixed;
   bottom: 0px;
   width: 100%;
   z-index: 111;
+  border-top: 1px solid #bdbdbd;
 }
 .inlineSticky {
   display: flex;
@@ -20287,6 +20305,10 @@ h2.highlight {
     width: 50px;
     height: 50px;
   }
+  .btn-customize-programme-wise strong {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 
 /* card buttons style */
@@ -20324,7 +20346,8 @@ h2.highlight {
 }
 .sticky-form-header .btn-close {
   position: absolute;
-  top: 34%;
+  top: 50%;
+  transform: translate(-12%, -50%);
 }
 
 .sticky-form-header .contact-section {
@@ -20343,8 +20366,8 @@ h2.highlight {
   justify-content: center;
   gap: 16px;
   border-bottom: 2px solid #ccc;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 7px;
+  padding-top: 7px;
   align-items: center;
 }
 .sticky-form-header .contact-section .form-box {
@@ -20384,7 +20407,7 @@ h2.highlight {
   z-index: 10;
   position: relative;
   width: 100%;
-  background-color: #c3c3c3;
+  background-color: #ffe55b;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -20540,7 +20563,12 @@ h2.highlight {
     margin-bottom: 0 !important;
   }
 }
-
+.btn-customize-programme-wise a {
+  margin-bottom: 0px;
+}
+.btn-customize-programme-wise strong {
+  font-size: 22px;
+}
 /* .loaderBG {
   position: fixed;
   left: 0px;
@@ -20798,4 +20826,12 @@ h2.highlight {
 .horizontal-slider .slick-prev:focus,
 .horizontal-slider .slick-next:focus {
   color: unset;
+}
+.iframe-border {
+  color: green;
+  text-align: center;
+  border-width: 20px;
+  border-style: inset;
+  border-color: #c3ead8;
+  border-radius: 5px;
 }

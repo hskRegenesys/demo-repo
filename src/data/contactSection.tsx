@@ -5,14 +5,14 @@ export const contactSection = {
       type: "text",
       placeholder: "Your First name",
       required: true,
-      label: "First Name"
+      label: "First Name",
     },
     {
       name: "lastname",
       type: "text",
       placeholder: "Your Last name",
       required: true,
-      label: "Last Name"
+      label: "Last Name",
     },
     {
       name: "email",
@@ -39,7 +39,6 @@ export const contactSection = {
     },
   ],
 
-
   title: "Offices near you",
   contacts: [
     {
@@ -59,7 +58,7 @@ export const contactSection = {
     {
       id: 3,
       name: "New york",
-      address: "8th Broklyn New York",
+      address: "Broklyn New York",
       email: "needhelp@linoor.com",
       phone: "666 888 000",
     },

@@ -158,10 +158,10 @@ const ApplyNow = (props: any) => {
               Course you are looking for *
             </option>
 
-            {courses.map((val: any) => {
+            {Data.allCourses.map((item: any) => {
               return (
-                <option key={val.id} value={val.name}>
-                  {val.name}
+                <option key={item.value} value={item.value}>
+                  {item.value}
                 </option>
               );
             })}

@@ -16,7 +16,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
     <section className="process-one">
       <div className="FluidSection">
         {courseDetails?.processOne?.map(
-          ({ id, image, title, text, lists }: any) => (
+          ({ id, image, youtubeUrl, title, text, lists }: any) => (
             <Row key={id}>
               <Col md={7} className="tablet-fix">
                 <div className="process-one__content">
@@ -36,14 +36,30 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                         src={`/assets/images/update-01-10-2021/${image}`}
                         alt=""
                       /> */}
-                      <Image
-                        priority={true}
-                        src={`/assets/images/update-01-10-2021/${image}`}
-                        layout="intrinsic"
-                        width="500"
-                        height="596"
-                        alt=""
-                      />
+                      <div className="iframe-border">
+                        <iframe
+                          width="320"
+                          height="330"
+                          src={youtubeUrl}
+                          title="YouTube video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        ></iframe>
+                      </div>
+                      <div className="btn-customize-programme-wise">
+                        <strong className="text-white text-center d-block">
+                          Enrol Now & Get a 15% Discount
+                        </strong>
+                        <a
+                          className="theme-btn btn-style-two"
+                          onClick={() => {
+                            setShow(!show);
+                            setTitle("Enquire now");
+                          }}
+                        >
+                          <i className="btn-curve"></i>
+                          <span className="btn-title">Enrol Now</span>
+                        </a>
+                      </div>
                     </div>
                   </Col>
 
@@ -101,14 +117,41 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                     src={`/assets/images/update-01-10-2021/${image}`}
                     alt=""
                   /> */}
-                  <Image
+                  {/* <Image
                     priority={true}
                     src={`/assets/images/update-01-10-2021/${image}`}
                     layout="intrinsic"
                     width="500"
                     height="596"
                     alt=""
-                  />
+                  /> */}
+                  <div className="iframe-border">
+                    <iframe
+                      width="440"
+                      height="440"
+                      src={youtubeUrl}
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    ></iframe>
+                  </div>
+
+                  <div className="btn-customize-programme-wise">
+                    <strong className="text-white text-center d-block">
+                      Enrol Now & Get a 15% Discount
+                    </strong>
+                    <div className="product-details__buttons mobile-product-buttons d-block text-center">
+                      <a
+                        className="theme-btn btn-style-two"
+                        onClick={() => {
+                          setShow(!show);
+                          setTitle("Enquire now");
+                        }}
+                      >
+                        <i className="btn-curve"></i>
+                        <span className="btn-title">Enrol Now</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </Col>
             </Row>
