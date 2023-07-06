@@ -25,10 +25,10 @@ import Loader from "@/components/Loader/Loader";
 import { allCourseList } from "@/data/courseData";
 import { trace } from "console";
 import { Modal } from "react-bootstrap";
+import ImageModalPopup from "@/components/Modal/ImageModalPopup";
 
 const Home2 = () => {
   const [show, setShow] = useState(true);
-
   // const [courseData, setcourseData] = useState([]);
   // const getData = async () => {
   //   let courseListResponse = await courseService.allCourses();
@@ -70,7 +70,7 @@ const Home2 = () => {
       <MainFooter normalPadding={false} />
       <StickyBar />
       <Modal show={show}>
-        <ModalPopup bgImage="Sample-Banner-01.jpeg" setShows={setShow} />
+        <ImageModalPopup bgImage="Pop-up_bg.webp" setShows={setShow} />
       </Modal>
     </Layout>
   );
