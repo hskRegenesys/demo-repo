@@ -18815,7 +18815,7 @@ h6.designation {
 }
 
 .modal-content {
-  padding: 20px;
+  padding: 5px;
 }
 
 .popup-form input,
@@ -18825,7 +18825,36 @@ h6.designation {
   border: 2px solid #000;
   border-radius: 12px;
 }
+.modal-pop-style-modify {
+  z-index: 11;
+}
+.modal-pop-style-modify {
+  background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.modal-pop-style-modify label {
+  color: #fff;
+  display: none;
+}
+.modal-pop-style-modify input,
+.modal-pop-style-modify select {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 46px !important;
+}
+.modal-pop-style-modify .PhoneInputCountry {
+  margin-top: 19px;
+}
 
+.modal-pop-style-modify small {
+  line-height: normal;
+  display: block;
+  text-align: center;
+  margin-top: 11px;
+  font-size: 13px;
+}
 @media (min-width: 1200px) {
   .modal.show .modal-dialog {
     min-width: 850px;
@@ -18833,7 +18862,7 @@ h6.designation {
 }
 
 .popup-form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .mr-2 {
@@ -20834,4 +20863,5 @@ h2.highlight {
   border-style: inset;
   border-color: #c3ead8;
   border-radius: 5px;
+  line-height: 12px;
 }

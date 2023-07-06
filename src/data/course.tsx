@@ -372,6 +372,7 @@ export const courseData = {
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
+    modalImage: "Pop-up_bg.webp",
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -1109,7 +1110,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -1475,7 +1476,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "ADSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -1796,7 +1797,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "APSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -2100,7 +2101,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -2423,7 +2424,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -2761,7 +2762,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "BDSCI-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -3052,7 +3053,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "BDM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -3346,7 +3347,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "ADM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -3957,7 +3958,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "BDM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -4300,7 +4301,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
-
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "ADM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -4609,6 +4610,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "CS-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -5072,6 +5074,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "CS-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -5408,6 +5411,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -6001,6 +6005,7 @@ export const courseData = {
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
+    modalImage: "Pop-up_bg.webp",
     stickyText:
       "CS-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
