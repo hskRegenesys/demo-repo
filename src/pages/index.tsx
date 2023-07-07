@@ -15,6 +15,7 @@ import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
+import ModalPopup from "@/components/Modal/ModalPopup";
 import { courseService } from "src/services";
 import _ from "lodash";
 import Schemas from "../schemas";
@@ -22,8 +23,12 @@ import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import Loader from "@/components/Loader/Loader";
 import { allCourseList } from "@/data/courseData";
+import { trace } from "console";
+import { Modal } from "react-bootstrap";
+import ImageModalPopup from "@/components/Modal/ImageModalPopup";
 
 const Home2 = () => {
+  const [show, setShow] = useState(true);
   // const [courseData, setcourseData] = useState([]);
   // const getData = async () => {
   //   let courseListResponse = await courseService.allCourses();
@@ -46,7 +51,9 @@ const Home2 = () => {
   return (
     <Layout pageTitle="home">
       <Schemas type={Constants.home} />
+
       <Style />
+
       <HeaderOne pageTitle="home" />
       <MobileMenu />
       <SearchPopup />
@@ -62,6 +69,9 @@ const Home2 = () => {
       <CallToSection />
       <MainFooter normalPadding={false} />
       <StickyBar />
+      <Modal show={show}>
+        <ImageModalPopup bgImage="Pop-up_bg.webp" setShows={setShow} />
+      </Modal>
     </Layout>
   );
 };

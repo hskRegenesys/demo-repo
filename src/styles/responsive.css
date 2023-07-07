@@ -395,6 +395,9 @@
   .main-footer .column {
     text-align: center;
   }
+  .modal-pop-style-modify label {
+    color: #000;
+  }
   .main-header .header-upper {
     top: 0px;
   }

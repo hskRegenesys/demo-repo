@@ -12,8 +12,11 @@ import { downloadFromBlob } from "@/components/config/helper";
 
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
+import Image from "next/image";
 
 function ModalPopup(props: any) {
+  console.log("props", props);
+  const bgImage = props.bgImage ?? "Pop-up_bg.webp";
   const router = useRouter();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +36,7 @@ function ModalPopup(props: any) {
       const response = await fetch("https://geolocation-db.com/json/");
       const result = await response.json();
       setGeoLocationData(result);
+
       return result;
     } catch (error) {
       console.log("error", error);
@@ -45,18 +49,20 @@ function ModalPopup(props: any) {
 
   const hookForm: any = useForm();
 
-  const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
+  const { utm_source, utm_medium, utm_campaign, utm_content, id } =
+    router.query;
 
   const {
     formState: { errors },
     reset,
     trigger,
+    watch,
     setValue,
     setError,
     register,
     handleSubmit,
   } = hookForm;
-
+  const programmeOfInterest = watch("Programme_Of_Interest");
   const onSubmit = async (data: any) => {
     sebtnDisable(true);
     const current = new Date();
@@ -93,12 +99,15 @@ function ModalPopup(props: any) {
   if (allCourseList.length) {
     courses = _.filter(
       allCourseList,
-      (item: any) =>
-        item?.parent_id === null &&
-        item?.isAddon === false &&
-        item?.mode_id === 1
+      (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }
+  useEffect(() => {
+    if (id) {
+      const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
+      setValue("Programme_Of_Interest", filterData?.name);
+    }
+  }, [id]);
   return (
     <>
       <Modal.Header closeButton onClick={(e) => props.setShows(false)}>
@@ -121,189 +130,265 @@ function ModalPopup(props: any) {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="row">
-              <div className="col-md-6">
-                <div className="form-group">
-                  <label>Full Name*</label>
-                  <input
-                    className={`${errors?.Name && "invalid"}`}
-                    placeholder="Full Name*"
-                    {...register("Name", {
-                      required: "Full Name is Required",
-                      pattern: {
-                        value: /^[a-zA-Z_ ]+$/,
-                        message: "Invalid User Name",
-                      },
-                    })}
-                    onKeyUp={() => {
-                      trigger("Name");
-                    }}
-                  />
-                  {errors?.Name && (
-                    <small className="text-danger">
-                      {errors?.Name?.message}
-                    </small>
-                  )}
-                </div>
-              </div>
-              <div className="col-md-6">
-                <label>Email*</label>
-                <div className="form-group">
-                  <input
-                    className={`${errors?.Email && "invalid"}`}
-                    placeholder="Email*"
-                    {...register("Email", {
-                      required: "Email is Required",
-                      pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: "Invalid email address",
-                      },
-                    })}
-                    onKeyUp={() => {
-                      trigger("Email");
-                    }}
-                  />
-                  {errors?.Email && (
-                    <small className="text-danger">
-                      {errors?.Email?.message}
-                    </small>
-                  )}
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group position-relative">
-                  <label>Phone</label>
-                  <input
-                    type="hidden"
-                    {...register("Phone", {
-                      maxLength: {
-                        value: 16,
-                        message: "Cannot Exceed 10 digits",
-                      },
-                      minLength: {
-                        value: 12,
-                        message: "Valid phone number Required",
-                      },
-                      required: "Phone is Required",
-                    })}
-                  />
-                  <PhoneInput
-                    international
-                    countryCallingCodeEditable={false}
-                    defaultCountry={geoLocationData?.country_code}
-                    // defaultCountry="ZA"
-                    placeholder="Select Country Code*"
-                    onChange={(e) => {
-                      setValue("Phone", e);
-                    }}
-                    className={`${errors?.Phone && "invalid"}`}
-                  />
-                  {errors?.Phone && (
-                    <small className="text-danger">
-                      {errors?.Phone?.message}
-                    </small>
-                  )}
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group">
-                  <label>City*</label>
-                  <input
-                    type="text"
-                    placeholder="Enter City"
-                    className={`${errors?.City && "invalid"}`}
-                    {...register("City", {
-                      required: "City is Required",
-                      pattern: {
-                        value: /^[a-zA-Z_ ]+$/,
-                        message: "Invalid City Name",
-                      },
-                    })}
-                    onKeyUp={() => {
-                      trigger("City");
-                    }}
-                  />
-                  {errors?.City && (
-                    <small className="text-danger">
-                      {errors?.City?.message}
-                    </small>
-                  )}
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group">
-                  <label>Course you are looking for*</label>
-                  <select
-                    className={`select-course form-select${
-                      errors?.Programme_Of_Interest &&
-                      " focus:border-red-500 focus:ring-red-500 border-red-500"
-                    }`}
-                    {...register("Programme_Of_Interest", {
-                      required: "Course is required",
-                    })}
-                  >
-                    <option value="" disabled selected>
-                      Course you are looking for *
-                    </option>
-
-                    {courses.map((val: any) => {
-                      return (
-                        <option key={val.id} value={val.name}>
-                          {val.name}
+              <div className="col-lg-12">
+                <div className="row">
+                  {/* <strong>Book a Free Counseling Session</strong> */}
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <label>Full Name*</label>
+                      <input
+                        className={`${errors?.Name && "invalid"}`}
+                        placeholder="Full Name*"
+                        {...register("Name", {
+                          required: "Full Name is Required",
+                          pattern: {
+                            value: /^[a-zA-Z_ ]+$/,
+                            message: "Invalid User Name",
+                          },
+                        })}
+                        onKeyUp={() => {
+                          trigger("Name");
+                        }}
+                      />
+                      {errors?.Name && (
+                        <small className="text-danger">
+                          {errors?.Name?.message}
+                        </small>
+                      )}
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <label>Email*</label>
+                    <div className="form-group">
+                      <input
+                        className={`${errors?.Email && "invalid"}`}
+                        placeholder="Email*"
+                        {...register("Email", {
+                          required: "Email is Required",
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Invalid email address",
+                          },
+                        })}
+                        onKeyUp={() => {
+                          trigger("Email");
+                        }}
+                      />
+                      {errors?.Email && (
+                        <small className="text-danger">
+                          {errors?.Email?.message}
+                        </small>
+                      )}
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-group position-relative">
+                      <label>Phone</label>
+                      <input
+                        type="hidden"
+                        {...register("Phone", {
+                          maxLength: {
+                            value: 16,
+                            message: "Cannot Exceed 10 digits",
+                          },
+                          minLength: {
+                            value: 12,
+                            message: "Valid phone number Required",
+                          },
+                          required: "Phone is Required",
+                        })}
+                      />
+                      <PhoneInput
+                        international
+                        countryCallingCodeEditable={false}
+                        defaultCountry={geoLocationData?.country_code}
+                        // defaultCountry="ZA"
+                        placeholder="Select Country Code*"
+                        onChange={(e) => {
+                          setValue("Phone", e);
+                        }}
+                        className={`${errors?.Phone && "invalid"}`}
+                      />
+                      {errors?.Phone && (
+                        <small className="text-danger">
+                          {errors?.Phone?.message}
+                        </small>
+                      )}
+                    </div>
+                  </div>
+                  <div className="col-md-12 d-none">
+                    <div className="form-group">
+                      <label>City*</label>
+                      <input
+                        type="text"
+                        placeholder="Enter City"
+                        className={`${errors?.City && "invalid"}`}
+                        {...register("City", {
+                          required: "City is Required",
+                          pattern: {
+                            value: /^[a-zA-Z_ ]+$/,
+                            message: "Invalid City Name",
+                          },
+                        })}
+                        onKeyUp={() => {
+                          trigger("City");
+                        }}
+                      />
+                      {errors?.City && (
+                        <small className="text-danger">
+                          {errors?.City?.message}
+                        </small>
+                      )}
+                    </div>
+                  </div>
+                  <div className="col-md-6 ">
+                    <div className="form-group">
+                      <label>Course you are looking for*</label>
+                      <select
+                        disabled={!!id}
+                        value={programmeOfInterest}
+                        className={`select-course form-select${
+                          errors?.Programme_Of_Interest &&
+                          " focus:border-red-500 focus:ring-red-500 border-red-500"
+                        }`}
+                        {...register("Programme_Of_Interest", {
+                          required: "Course is required",
+                        })}
+                      >
+                        <option value="" disabled selected>
+                          Course you are looking for *
                         </option>
-                      );
-                    })}
-                  </select>
-                  {errors?.Programme_Of_Interest && (
-                    <small className="text-danger">
-                      {errors?.Programme_Of_Interest?.message}
-                    </small>
-                  )}
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group">
-                  <label>Select Highest Qualification</label>
-                  <select
-                    className={`select-course form-select${
-                      errors?.highest_qualification &&
-                      " focus:border-red-500 focus:ring-red-500 border-red-500"
-                    }`}
-                    {...register("highest_qualification", {
-                      required: "Qualification is required",
-                    })}
-                  >
-                    <option value="">Highest Qualification</option>
-                    {Data.qualification.map((item) => (
-                      <option value={item.value}>{item.option}</option>
-                    ))}
-                  </select>
-                  {errors?.highest_qualification && (
-                    <small className="text-danger">
-                      {errors?.highest_qualification?.message}
-                    </small>
-                  )}
-                </div>
-              </div>
-            </div>
 
-            <div className="d-flex mt-3 justify-content-center align-items-center">
-              <button
+                        {courses.map((val: any) => {
+                          return (
+                            <option key={val.id} value={val.name}>
+                              {val.name}
+                            </option>
+                          );
+                        })}
+                      </select>
+                      {errors?.Programme_Of_Interest && (
+                        <small className="text-danger">
+                          {errors?.Programme_Of_Interest?.message}
+                        </small>
+                      )}
+                    </div>
+                  </div>
+                  <div className="col-md-6 d-none">
+                    {!!id ? (
+                      <div className="form-group">
+                        <label>Course you are looking for*</label>
+                        <select
+                          disabled={!!id}
+                          value={programmeOfInterest}
+                          className={`select-course form-select${
+                            errors?.Programme_Of_Interest &&
+                            " focus:border-red-500 focus:ring-red-500 border-red-500"
+                          }`}
+                          {...register("Programme_Of_Interest", {
+                            required: "Course is required",
+                          })}
+                        >
+                          <option value="" disabled selected>
+                            Course you are looking for *
+                          </option>
+
+                          {courses.map((val: any) => {
+                            return (
+                              <option key={val.id} value={val.name}>
+                                {val.name}
+                              </option>
+                            );
+                          })}
+                        </select>
+                        {errors?.Programme_Of_Interest && (
+                          <small className="text-danger">
+                            {errors?.Programme_Of_Interest?.message}
+                          </small>
+                        )}
+                      </div>
+                    ) : (
+                      <div className="form-group">
+                        <label>Select Country *</label>
+                        <select
+                          disabled={!!id}
+                          value={programmeOfInterest}
+                          className={`select-course form-select${
+                            errors?.Programme_Of_Interest &&
+                            " focus:border-red-500 focus:ring-red-500 border-red-500"
+                          }`}
+                          {...register("Programme_Of_Interest", {
+                            required: "Course is required",
+                          })}
+                        >
+                          <option value="" disabled selected>
+                            Course you are looking for *
+                          </option>
+
+                          {courses.map((val: any) => {
+                            return (
+                              <option key={val.id} value={val.name}>
+                                {val.name}
+                              </option>
+                            );
+                          })}
+                        </select>
+                        {errors?.Programme_Of_Interest && (
+                          <small className="text-danger">
+                            {errors?.Programme_Of_Interest?.message}
+                          </small>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                  <div className="col-md-12 d-none">
+                    <div className="form-group">
+                      <label>Select Highest Qualification</label>
+                      <select
+                        className={`select-course form-select${
+                          errors?.highest_qualification &&
+                          " focus:border-red-500 focus:ring-red-500 border-red-500"
+                        }`}
+                        {...register("highest_qualification", {
+                          required: "Qualification is required",
+                        })}
+                      >
+                        <option value="">Highest Qualification</option>
+                        {Data.qualification.map((item) => (
+                          <option value={item.value}>{item.option}</option>
+                        ))}
+                      </select>
+                      {errors?.highest_qualification && (
+                        <small className="text-danger">
+                          {errors?.highest_qualification?.message}
+                        </small>
+                      )}
+                    </div>
+                  </div>
+                  <div className="d-flex mt-3 justify-content-center align-items-center">
+                    {/* <button
                 className="theme-btn btn-style-two mr-2"
                 onClick={(e) => props.setShows(false)}
               >
                 <i className="btn-curve"></i>
                 <span className="btn-title">Cancel</span>
-              </button>
+              </button> */}
 
-              <button
-                type="submit"
-                className="theme-btn btn-style-two"
-                onClick={handleShow}
-                disabled={btnDisable}
-              >
-                <i className="btn-curve"></i>
-                <span className="btn-title">Submit</span>
-              </button>
+                    <button
+                      type="submit"
+                      className="theme-btn btn-style-two"
+                      onClick={handleShow}
+                      disabled={btnDisable}
+                    >
+                      <i className="btn-curve"></i>
+                      <span className="btn-title">Submit</span>
+                    </button>
+                  </div>
+                  {/* <small>
+                    By submitting this form, you agree to our Privacy Policy.
+                  </small> */}
+                </div>
+              </div>
             </div>
           </form>
         )}
