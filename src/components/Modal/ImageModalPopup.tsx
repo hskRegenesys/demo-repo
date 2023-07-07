@@ -47,15 +47,6 @@ function ImageModalPopup(props: any) {
     getCountryCode();
   }, []);
 
-  useEffect(() => {
-    const hasVisitedBefore = localStorage.getItem("hasVisited");
-    if (!hasVisitedBefore) {
-      // First-time visit, show the popup
-      setShow(true);
-      localStorage.setItem("hasVisited", "true");
-    }
-  }, []);
-
   const hookForm: any = useForm();
 
   const { utm_source, utm_medium, utm_campaign, utm_content, id } =
@@ -152,8 +143,8 @@ function ImageModalPopup(props: any) {
                     }`}
                     alt="discount banner"
                     layout="fill"
-                    width="900"
-                    height="600"
+                    width="800"
+                    height="500"
                     objectFit="cover"
                   />
                 </div>

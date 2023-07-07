@@ -109,12 +109,7 @@ function ModalPopup(props: any) {
   }, [id]);
   return (
     <>
-      <Modal.Header
-        closeButton
-        onClick={(e) => props.setShows(false)}
-        data-backdrop="static"
-        data-keyboard="true"
-      >
+      <Modal.Header closeButton onClick={(e) => props.setShows(false)}>
         <Modal.Title>
           {props.title ? props.title : "Request a call"}
         </Modal.Title>
