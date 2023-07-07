@@ -15,7 +15,6 @@ import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
 
 function ModalPopup(props: any) {
-  console.log("props", props);
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
   const router = useRouter();
 

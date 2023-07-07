@@ -15,7 +15,6 @@ import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
 
 function ImageModalPopup(props: any) {
-  console.log("props", props);
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
   const router = useRouter();
 
@@ -43,6 +42,7 @@ function ImageModalPopup(props: any) {
       return error;
     }
   };
+
   useEffect(() => {
     getCountryCode();
   }, []);
@@ -88,6 +88,7 @@ function ImageModalPopup(props: any) {
       props.setShows(false);
       downloadFromBlob(response?.data, props?.brochureName?.name) == false;
     }
+
     if (props?.title !== "Download Brochure") {
       props.setShows(false);
       props.thankYouShow(true);
@@ -109,11 +110,15 @@ function ImageModalPopup(props: any) {
     }
   }, [id]);
   return (
-    <>
-      <Modal.Header closeButton onClick={(e) => props.setShows(false)}>
-        <Modal.Title>
+    <div className="image-modal-style">
+      <Modal.Header
+        className="modal_close_modify"
+        closeButton
+        onClick={(e) => props.setShows(false)}
+      >
+        {/* <Modal.Title>
           {props.title ? props.title : "Request a call"}
-        </Modal.Title>
+        </Modal.Title> */}
       </Modal.Header>
 
       <Modal.Body>
@@ -130,7 +135,7 @@ function ImageModalPopup(props: any) {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="row">
-              <div className="col-lg-8 py-2">
+              <div className="col-lg-8">
                 <div className="d-none d-lg-block">
                   <Image
                     src={`/assets/images/background/${
@@ -147,7 +152,12 @@ function ImageModalPopup(props: any) {
               <div className="col-lg-4">
                 <div className="row">
                   <div className="modal-pop-style-modify">
-                    <strong>Book a Free Counseling Session</strong>
+                    <strong className="d-none d-lg-block">
+                      Book a Free Counseling Session
+                    </strong>
+                    <h5 className="d-block d-lg-none">
+                      Enrol Now & Get a 15% Discount
+                    </h5>
                     <div className="col-md-12">
                       <div className="form-group">
                         <label>Full Name*</label>
@@ -341,7 +351,7 @@ function ImageModalPopup(props: any) {
           </form>
         )}
       </Modal.Body>
-    </>
+    </div>
   );
 }
 
