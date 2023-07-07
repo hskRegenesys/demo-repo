@@ -18829,9 +18829,9 @@ h6.designation {
   z-index: 11;
 }
 .modal-pop-style-modify {
-  background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+  background-color: #c3ead8;
+  padding: 26px;
+  border-radius: 10px;
 }
 .modal-pop-style-modify label {
   color: #fff;
@@ -18843,6 +18843,10 @@ h6.designation {
   border: 1px solid #000;
   border-radius: 10px;
   height: 46px !important;
+  background: rgba(255, 255, 255, 0.5);
+}
+.select-course {
+  background: rgba(255, 255, 255, 0.5);
 }
 .modal-pop-style-modify .PhoneInputCountry {
   margin-top: 19px;
@@ -18857,7 +18861,8 @@ h6.designation {
 }
 @media (min-width: 1200px) {
   .modal.show .modal-dialog {
-    min-width: 850px;
+    min-width: 60%;
+    top: 15%;
   }
 }
 
@@ -20283,6 +20288,13 @@ h2.highlight {
     line-height: normal;
     display: inline-block;
   }
+  .modal-pop-style-modify h5 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .modal {
+    padding: 20px;
+  }
   .stickyRow .inlineSticky .closeBtn {
     position: absolute;
     bottom: 24px;
@@ -20864,4 +20876,20 @@ h2.highlight {
   border-color: #c3ead8;
   border-radius: 5px;
   line-height: 12px;
+}
+.modal_close_modify {
+  position: absolute;
+  z-index: 999;
+  right: -16px;
+  background-color: #c3ead8;
+  padding: 5px;
+  width: 30px;
+  height: 26px;
+  border-radius: 10px;
+  top: -12px;
+}
+.modal_close_modify button {
+  padding: 0px !important;
+  position: absolute;
+  left: 29%;
 }

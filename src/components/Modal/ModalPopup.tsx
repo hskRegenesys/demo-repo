@@ -15,7 +15,6 @@ import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
 
 function ModalPopup(props: any) {
-  console.log("props", props);
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
   const router = useRouter();
 
@@ -110,7 +109,12 @@ function ModalPopup(props: any) {
   }, [id]);
   return (
     <>
-      <Modal.Header closeButton onClick={(e) => props.setShows(false)}>
+      <Modal.Header
+        closeButton
+        onClick={(e) => props.setShows(false)}
+        data-backdrop="static"
+        data-keyboard="true"
+      >
         <Modal.Title>
           {props.title ? props.title : "Request a call"}
         </Modal.Title>
