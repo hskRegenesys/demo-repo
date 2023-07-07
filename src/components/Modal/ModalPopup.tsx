@@ -95,12 +95,22 @@ function ModalPopup(props: any) {
 
   let courses: any = [];
 
+  // if (allCourseList.length) {
+  //   courses = _.filter(
+  //     allCourseList,
+  //     (item: any) => item?.isAddon === false && item?.mode_id === 1
+  //   );
+  // }
   if (allCourseList.length) {
     courses = _.filter(
       allCourseList,
-      (item: any) => item?.isAddon === false && item?.mode_id === 1
+      (item: any) =>
+        item?.parent_id === null &&
+        item?.isAddon === false &&
+        item?.mode_id === 1
     );
   }
+
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
@@ -215,7 +225,7 @@ function ModalPopup(props: any) {
                       )}
                     </div>
                   </div>
-                  <div className="col-md-12 d-none">
+                  <div className="col-md-6">
                     <div className="form-group">
                       <label>City*</label>
                       <input
@@ -244,7 +254,7 @@ function ModalPopup(props: any) {
                     <div className="form-group">
                       <label>Course you are looking for*</label>
                       <select
-                        disabled={!!id}
+                        // disabled={!!id}
                         value={programmeOfInterest}
                         className={`select-course form-select${
                           errors?.Programme_Of_Interest &&
@@ -273,7 +283,7 @@ function ModalPopup(props: any) {
                       )}
                     </div>
                   </div>
-                  <div className="col-md-6 d-none">
+                  {/* <div className="col-md-6 d-none">
                     {!!id ? (
                       <div className="form-group">
                         <label>Course you are looking for*</label>
@@ -339,8 +349,8 @@ function ModalPopup(props: any) {
                         )}
                       </div>
                     )}
-                  </div>
-                  <div className="col-md-12 d-none">
+                  </div> */}
+                  <div className="col-md-6">
                     <div className="form-group">
                       <label>Select Highest Qualification</label>
                       <select

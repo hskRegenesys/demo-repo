@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useRef } from "react";
 import Modal from "react-bootstrap/Modal";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -96,6 +96,7 @@ function ImageModalPopup(props: any) {
   };
 
   let courses: any = [];
+  // console.log("allCourseList", allCourseList);
 
   if (allCourseList.length) {
     courses = _.filter(
@@ -103,6 +104,7 @@ function ImageModalPopup(props: any) {
       (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }
+  console.log("courses", courses);
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
@@ -241,7 +243,7 @@ function ImageModalPopup(props: any) {
                         )}
                       </div>
                     </div>
-                    <div className="col-md-12 d-none">
+                    {/* <div className="col-md-12 d-none">
                       <div className="form-group">
                         <label>City*</label>
                         <input
@@ -265,7 +267,7 @@ function ImageModalPopup(props: any) {
                           </small>
                         )}
                       </div>
-                    </div>
+                    </div> */}
                     <div className="col-md-12 ">
                       <div className="form-group">
                         <label>Course you are looking for*</label>
@@ -298,7 +300,7 @@ function ImageModalPopup(props: any) {
                         )}
                       </div>
                     </div>
-                    <div className="col-md-12 d-none">
+                    {/* <div className="col-md-12 d-none">
                       <div className="form-group">
                         <label>Select Highest Qualification</label>
                         <select
@@ -321,7 +323,7 @@ function ImageModalPopup(props: any) {
                           </small>
                         )}
                       </div>
-                    </div>
+                    </div> */}
                     <div className="d-flex mt-3 justify-content-center align-items-center">
                       {/* <button
                 className="theme-btn btn-style-two mr-2"
