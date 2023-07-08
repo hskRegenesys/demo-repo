@@ -29,7 +29,8 @@ import ImageModalPopup from "@/components/Modal/ImageModalPopup";
 
 const Home2 = () => {
   const [show, setShow] = useState(true);
-  // const [courseData, setcourseData] = useState([]);
+
+  const [isOpen, setIsOpen] = useState(false);
   // const getData = async () => {
   //   let courseListResponse = await courseService.allCourses();
   //   setcourseData(courseListResponse);
@@ -69,7 +70,7 @@ const Home2 = () => {
       <CallToSection />
       <MainFooter normalPadding={false} />
       <StickyBar />
-      <Modal show={show}>
+      <Modal show={show} autoFocus={true}>
         <ImageModalPopup bgImage="Pop-up_bg.webp" setShows={setShow} />
       </Modal>
     </Layout>
