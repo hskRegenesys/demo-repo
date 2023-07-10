@@ -22,7 +22,7 @@ import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
 const ToolsCovered = dynamic(
   () => import("@/components/ToolsCovered/ToolsCovered")
 );
-import React from "react";
+import React, { useState } from "react";
 
 const CourseCurriculum = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculum")
@@ -48,6 +48,8 @@ import StickyBar from "@/components/StickyFooter/Sticky";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import { allCourseList } from "@/data/courseData";
 import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
+import { Modal } from "react-bootstrap";
+import ModalPopup from "@/components/Modal/ModalPopup";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -55,6 +57,7 @@ const CourseCurriculumTwo = dynamic(
 
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
+  const [show, setShow] = useState(false);
 
   const courseId: any = router?.query?.id;
 
@@ -91,7 +94,10 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
-
+  console.log(
+    "courseDetails courseDetails.modalImage",
+    courseDetails.modalImage
+  );
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />

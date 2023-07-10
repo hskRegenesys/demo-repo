@@ -42,7 +42,6 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                           height="330"
                           src={youtubeUrl}
                           title="YouTube video player"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         ></iframe>
                       </div>
                       <div className="btn-customize-programme-wise">
