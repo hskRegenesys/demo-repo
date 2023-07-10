@@ -26,9 +26,11 @@ import { allCourseList } from "@/data/courseData";
 import { trace } from "console";
 import { Modal } from "react-bootstrap";
 import ImageModalPopup from "@/components/Modal/ImageModalPopup";
+import ThankYouPopup from "@/components/Modal/ThankYouPopup";
 
 const Home2 = () => {
   const [show, setShow] = useState(true);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
 
   const [isOpen, setIsOpen] = useState(false);
   // const getData = async () => {
@@ -70,8 +72,15 @@ const Home2 = () => {
       <CallToSection />
       <MainFooter normalPadding={false} />
       <StickyBar />
-      <Modal show={show} autoFocus={true}>
-        <ImageModalPopup bgImage="Pop-up_bg.webp" setShows={setShow} />
+      <Modal show={show} onHide={() => setShow(false)}>
+        <ImageModalPopup
+          bgImage="Pop-up_bg.webp"
+          setShows={setShow}
+          thankYouShow={setThankYouShow}
+        />
+      </Modal>
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
     </Layout>
   );

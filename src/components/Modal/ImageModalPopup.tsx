@@ -88,15 +88,13 @@ function ImageModalPopup(props: any) {
       props.setShows(false);
       downloadFromBlob(response?.data, props?.brochureName?.name) == false;
     }
-
     if (props?.title !== "Download Brochure") {
       props.setShows(false);
-      props.thankYouShow(true);
+      !!props.thankYouShow && props.thankYouShow(true);
     }
   };
 
   let courses: any = [];
-  // console.log("allCourseList", allCourseList);
 
   if (allCourseList.length) {
     courses = _.filter(
@@ -104,7 +102,7 @@ function ImageModalPopup(props: any) {
       (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }
-  console.log("courses", courses);
+
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
@@ -118,9 +116,7 @@ function ImageModalPopup(props: any) {
         closeButton
         onClick={(e) => props.setShows(false)}
       >
-        {/* <Modal.Title>
-          {props.title ? props.title : "Request a call"}
-        </Modal.Title> */}
+        <Modal.Title>{props.title ? props.title : ""}</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
