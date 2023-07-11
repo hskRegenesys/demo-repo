@@ -99,7 +99,10 @@ function ImageModalPopup(props: any) {
   if (allCourseList.length) {
     courses = _.filter(
       allCourseList,
-      (item: any) => item?.isAddon === false && item?.mode_id === 1
+      (item: any) =>
+        item?.parent_id === null &&
+        item?.isAddon === false &&
+        item?.mode_id === 1
     );
   }
 

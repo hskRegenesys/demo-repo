@@ -15,32 +15,21 @@ import PopularTopics from "@/components/PopularTopics/PopularTopics";
 import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
 import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
-import ModalPopup from "@/components/Modal/ModalPopup";
-import { courseService } from "src/services";
+
 import _ from "lodash";
 import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
-import Loader from "@/components/Loader/Loader";
+
 import { allCourseList } from "@/data/courseData";
-import { trace } from "console";
+
 import { Modal } from "react-bootstrap";
 import ImageModalPopup from "@/components/Modal/ImageModalPopup";
 import ThankYouPopup from "@/components/Modal/ThankYouPopup";
 
 const Home2 = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
-
-  const [isOpen, setIsOpen] = useState(false);
-  // const getData = async () => {
-  //   let courseListResponse = await courseService.allCourses();
-  //   setcourseData(courseListResponse);
-  // };
-
-  // useEffect(() => {
-  //   getData();
-  // }, []);
 
   let courses: any = [];
 
@@ -50,6 +39,14 @@ const Home2 = () => {
       (item: any) => item?.isAddon === false && item?.mode_id === 1
     );
   }
+
+  useEffect(() => {
+    const timeoutModal = setTimeout(() => {
+      setShow(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutModal);
+  }, []);
 
   return (
     <Layout pageTitle="home">
