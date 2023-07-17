@@ -20398,11 +20398,12 @@ h2.highlight {
   margin-bottom: 0px;
 }
 .google-map h4 {
-  font-size: 25px;
+  font-size: 21px;
   font-family: Raleway-semibold;
 }
 .google-map p {
   text-align: justify;
+  font-size: 14px;
 }
 
 .map-marker-row-sa {
