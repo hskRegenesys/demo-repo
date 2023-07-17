@@ -20282,75 +20282,7 @@ h2.highlight {
 .styckySpace {
   margin-top: 80px;
 }
-@media (max-width: 767.98px) {
-  .inlineSticky span {
-    font-size: 14px;
-    line-height: normal;
-    display: inline-block;
-  }
-  .modal-pop-style-modify h5 {
-    font-size: 22px;
-    text-align: center;
-  }
-  .modal {
-    padding: 20px;
-  }
-  .stickyRow .inlineSticky .closeBtn {
-    position: absolute;
-    bottom: 24px;
-    left: -20px;
-    top: auto;
-  }
-  .inlineSticky strong {
-    font-size: 17px;
-    line-height: 19px;
-    display: block;
-    padding-bottom: 16px;
-    padding-top: 14px;
-    text-align: center;
-  }
-  .styckySpace {
-    margin-top: 145px;
-  }
-  .inlineSticky {
-    display: block;
-  }
-  .inlineSticky button {
-    padding: 7px 16px;
 
-    font-size: 13px;
-    width: 117px;
-  }
-  .sticky-footer-buttons {
-    display: inline-flex;
-    width: 100%;
-    padding-bottom: 8px;
-    justify-content: center;
-  }
-  .sticky-footer-buttons .btn-style-two .btn-title {
-    padding: 10px 15px;
-    font-size: 16px;
-  }
-
-  .inlineSticky button {
-    font-size: 12px;
-    padding: 10px 0;
-    display: block;
-    text-align: center;
-    margin-top: 11px;
-    line-height: normal;
-  }
-  .chat {
-    right: 15px;
-    bottom: 122px;
-    width: 50px;
-    height: 50px;
-  }
-  .btn-customize-programme-wise strong {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-}
 
 /* card buttons style */
 .inline-button {
@@ -20450,6 +20382,143 @@ h2.highlight {
   width: 100%;
   background-color: #ffe55b;
 }
+/*map */
+.google-map {
+  position: relative;
+  
+}
+
+.map-image img {
+  width: 100%;
+}
+.google-map h3 {
+  font-size: 34px;
+  color: #1FA393;
+  font-family: Raleway-semibold;
+  margin-bottom: 0px;
+}
+.google-map h4 {
+  font-size: 21px;
+  font-family: Raleway-semibold;
+}
+.google-map p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.map-marker-row-sa {
+  position: absolute;
+  bottom: 21%;
+  top: auto;
+  left: 43%;
+  transform: translate(50%, 50%);
+  right: auto;
+}
+.map-marker-sa {
+  position: relative;
+}
+.map-marker-row-ke {
+  position: absolute;
+  bottom: 36%;
+  top: auto;
+  left: 53%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
+}
+.map-marker-ke {
+  position: relative;
+}
+.map-marker-row-in {
+  position: absolute;
+  bottom: 39%;
+  top: auto;
+  left: 65%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
+}
+.map-marker-in {
+  position: relative;
+}
+.map-marker-row-ng {
+  position: absolute;
+  bottom: 37%;
+  top: auto;
+  left: 40%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
+}
+.map-marker-ng {
+  position: relative;
+}
+.map-marker-row-usa {
+  position: absolute;
+    bottom: 52%;
+    top: auto;
+    left: 8%;
+    transform: translate(50%, 50%);
+    right: auto;
+    z-index: 0;
+}
+.map-marker-usa {
+  position: relative;
+}
+
+.google-map-image {
+  position: relative;
+  width: 750px;
+   
+   
+}
+.campus-details {
+  padding-left: 10px;
+}
+.map-marker-text {
+  display: block;
+  line-height: normal;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.map-marker-text p {
+  margin-bottom: 0px;
+  line-height: normal;
+}
+.hover-details {
+  background-color: #c3ead8;
+  padding: 15px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  border-radius: 10px;
+  text-align: left;
+  line-height: normal;
+  visibility: hidden;
+  position: absolute;
+  z-index: 999;
+  top: 64px;
+  left: 0px;
+}
+.map-marker-text:hover + .hover-details {
+  visibility: visible;
+}
+.hover-details h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.hover-details p {
+  text-align: left;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .process-one .process-one__image__column .process-one__image {
@@ -20602,6 +20671,92 @@ h2.highlight {
   }
   .features-section-two .left-col {
     margin-bottom: 0 !important;
+  }
+}
+@media(max-width:991.98px){
+  .map-image {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+  }
+  .overflow-map{
+    overflow: auto;
+  }
+  .map-marker-row-sa {
+    bottom: 21%;
+    left: 41%;
+   
+}
+}
+@media (max-width: 767.98px) {
+  .inlineSticky span {
+    font-size: 14px;
+    line-height: normal;
+    display: inline-block;
+  }
+  .modal-pop-style-modify h5 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .modal {
+    padding: 20px;
+  }
+  .stickyRow .inlineSticky .closeBtn {
+    position: absolute;
+    bottom: 24px;
+    left: -20px;
+    top: auto;
+  }
+  .inlineSticky strong {
+    font-size: 17px;
+    line-height: 19px;
+    display: block;
+    padding-bottom: 16px;
+    padding-top: 14px;
+    text-align: center;
+  }
+  .styckySpace {
+    margin-top: 145px;
+  }
+  .inlineSticky {
+    display: block;
+  }
+  .inlineSticky button {
+    padding: 7px 16px;
+
+    font-size: 13px;
+    width: 117px;
+  }
+  .sticky-footer-buttons {
+    display: inline-flex;
+    width: 100%;
+    padding-bottom: 8px;
+    justify-content: center;
+  }
+  .sticky-footer-buttons .btn-style-two .btn-title {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .inlineSticky button {
+    font-size: 12px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+    line-height: normal;
+  }
+  .chat {
+    right: 15px;
+    bottom: 122px;
+    width: 50px;
+    height: 50px;
+  }
+  .btn-customize-programme-wise strong {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 .btn-customize-programme-wise a {

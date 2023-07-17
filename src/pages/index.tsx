@@ -26,6 +26,7 @@ import { allCourseList } from "@/data/courseData";
 import { Modal } from "react-bootstrap";
 import ImageModalPopup from "@/components/Modal/ImageModalPopup";
 import ThankYouPopup from "@/components/Modal/ThankYouPopup";
+import GoogleMap from "@/components/GoogleMap/GoogleMap";
 
 const Home2 = () => {
   const [show, setShow] = useState(false);
@@ -61,6 +62,7 @@ const Home2 = () => {
       <StudentPlacement />
       <HomeSkillDescription />
       <TrendingSection />
+      <GoogleMap />
       <HomeCourses courses={courses} />
       <ExperienceSection />
       <WhyChooseUs />
