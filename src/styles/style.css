@@ -20413,6 +20413,7 @@ h2.highlight {
   left: 43%;
   transform: translate(50%, 50%);
   right: auto;
+  z-index: 9;
 }
 .map-marker-sa {
   position: relative;
@@ -20499,12 +20500,18 @@ h2.highlight {
   visibility: hidden;
   position: absolute;
   z-index: 999;
-  top: 64px;
+  top: -176px;
   left: 0px;
+}
+.map-marker-row-in .hover-details{
+  top: -156px;
+  left: 0px;
+
 }
 .map-marker-text:hover + .hover-details {
   visibility: visible;
 }
+
 .hover-details h6 {
   font-size: 15px;
   font-weight: 600;
