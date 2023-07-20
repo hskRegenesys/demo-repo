@@ -20690,11 +20690,33 @@ h2.highlight {
   }
   .overflow-map{
     overflow: auto;
+    height: 100%;
+    padding-top: 76px;
   }
   .map-marker-row-sa {
-    bottom: 21%;
-    left: 41%;
+    bottom: 18%;
+    left: 37%;
    
+}
+.map-marker-row-ke{
+  bottom: 37%;
+  left: 51%;
+}
+.map-marker-row-in{
+  bottom: 38%;
+  left: 63%;
+}
+.map-marker-row-ng{
+  bottom: 37%;
+  left: 36%;
+}
+.map-marker-row-usa{
+  left: 6%;
+  bottom: 50%;
+}
+.google-map-image {
+  position: relative;
+  width: 450px;
 }
 }
 @media (max-width: 767.98px) {
