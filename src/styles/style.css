@@ -20283,7 +20283,6 @@ h2.highlight {
   margin-top: 80px;
 }
 
-
 /* card buttons style */
 .inline-button {
   display: flex;
@@ -20385,7 +20384,6 @@ h2.highlight {
 /*map */
 .google-map {
   position: relative;
-  
 }
 
 .map-image img {
@@ -20393,7 +20391,7 @@ h2.highlight {
 }
 .google-map h3 {
   font-size: 34px;
-  color: #1FA393;
+  color: #1fa393;
   font-family: Raleway-semibold;
   margin-bottom: 0px;
 }
@@ -20456,12 +20454,12 @@ h2.highlight {
 }
 .map-marker-row-usa {
   position: absolute;
-    bottom: 52%;
-    top: auto;
-    left: 8%;
-    transform: translate(50%, 50%);
-    right: auto;
-    z-index: 0;
+  bottom: 52%;
+  top: auto;
+  left: 8%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
 }
 .map-marker-usa {
   position: relative;
@@ -20470,8 +20468,6 @@ h2.highlight {
 .google-map-image {
   position: relative;
   width: 750px;
-   
-   
 }
 .campus-details {
   padding-left: 10px;
@@ -20484,7 +20480,7 @@ h2.highlight {
 }
 .map-marker-text p {
   margin-bottom: 0px;
-  line-height: normal;
+  line-height: 10px;
 }
 .hover-details {
   background-color: #c3ead8;
@@ -20503,10 +20499,9 @@ h2.highlight {
   top: -176px;
   left: 0px;
 }
-.map-marker-row-in .hover-details{
+.map-marker-row-in .hover-details {
   top: -156px;
   left: 0px;
-
 }
 .map-marker-text:hover + .hover-details {
   visibility: visible;
@@ -20524,8 +20519,6 @@ h2.highlight {
   margin-bottom: 0px;
   font-size: 12px;
 }
-
-
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .process-one .process-one__image__column .process-one__image {
@@ -20680,44 +20673,97 @@ h2.highlight {
     margin-bottom: 0 !important;
   }
 }
-@media(max-width:991.98px){
+@media (max-width: 991.98px) {
   .map-image {
     width: 100%;
     min-width: 100%;
     height: 100%;
     overflow: auto;
-    
+    transform: scale(1.2);
   }
-  .overflow-map{
-    overflow: auto;
-    height: 100%;
-    padding-top: 76px;
+  .map-marker-text p {
+    font-size: 12px;
+  }
+
+  .google-map-image {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 23px auto;
+  }
+  .map-marker-text img {
+    width: 12px !important;
   }
   .map-marker-row-sa {
-    bottom: 18%;
+    bottom: 16%;
+    left: 38%;
+  }
+  .map-marker-row-usa {
+    bottom: 52%;
+    left: 2%;
+  }
+  .map-marker-row-ng {
+    bottom: 40%;
+
     left: 37%;
-   
-}
-.map-marker-row-ke{
-  bottom: 37%;
-  left: 51%;
-}
-.map-marker-row-in{
-  bottom: 38%;
-  left: 63%;
-}
-.map-marker-row-ng{
-  bottom: 37%;
-  left: 36%;
-}
-.map-marker-row-usa{
-  left: 6%;
-  bottom: 50%;
-}
-.google-map-image {
-  position: relative;
-  width: 450px;
-}
+  }
+  .map-marker-row-ke {
+    bottom: 33%;
+
+    left: 51%;
+  }
+  .map-marker-row-in {
+    bottom: 41%;
+
+    left: 67%;
+  }
+  .map-marker-row-usa .hover-details {
+    top: -92px;
+    left: -36px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-sa .hover-details {
+    top: -104px;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ng .hover-details {
+    top: -113px;
+    left: -92px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ke .hover-details {
+    top: -132px;
+    left: -131px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-in .hover-details {
+    top: -118px;
+    left: -169px;
+    padding: 5px;
+    width: 250px;
+  }
+  .campus-image img {
+    width: 130px !important;
+  }
+  .hover-details h6 {
+    line-height: normal;
+  }
+  .hover-details p {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .map-marker-text img {
+    width: 15px !important;
+  }
+  .map-marker-text {
+    line-height: 0px;
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 767.98px) {
   .inlineSticky span {
@@ -20786,6 +20832,129 @@ h2.highlight {
   .btn-customize-programme-wise strong {
     font-size: 18px;
     margin-bottom: 10px;
+  }
+  .google-map-image {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .map-marker-text img {
+    width: 12px !important;
+  }
+
+  .map-marker-row-sa {
+    bottom: 18%;
+    left: 32%;
+  }
+  .map-marker-row-usa {
+    bottom: 60%;
+    left: -10px;
+  }
+  .map-marker-row-ng {
+    bottom: 41%;
+    left: 31%;
+  }
+  .map-marker-row-ke {
+    bottom: 34%;
+    left: 47%;
+  }
+  .map-marker-row-in {
+    bottom: 46%;
+    left: 64%;
+  }
+  .map-marker-row-usa .hover-details {
+    top: -92px;
+    left: -36px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-sa .hover-details {
+    top: -104px;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ng .hover-details {
+    top: -113px;
+    left: -92px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ke .hover-details {
+    top: -132px;
+    left: -131px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-in .hover-details {
+    top: -118px;
+    left: -169px;
+    padding: 5px;
+    width: 250px;
+  }
+  .campus-image img {
+    width: 130px !important;
+  }
+  .hover-details h6 {
+    line-height: normal;
+  }
+  .hover-details p {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .google-map-image {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .map-marker-text img {
+    width: 12px !important;
+  }
+  
+  .map-marker-row-usa .hover-details {
+    top: -92px;
+    left: -36px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-sa .hover-details {
+    top: -104px;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ng .hover-details {
+    top: -113px;
+    left: -92px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ke .hover-details {
+    top: -132px;
+    left: -131px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-in .hover-details {
+    top: -118px;
+    left: -169px;
+    padding: 5px;
+    width: 250px;
+  }
+  .campus-image img {
+    width: 130px !important;
+  }
+  .hover-details h6 {
+    line-height: normal;
+  }
+  .hover-details p {
+    font-size: 12px;
+    line-height: normal;
   }
 }
 .btn-customize-programme-wise a {
