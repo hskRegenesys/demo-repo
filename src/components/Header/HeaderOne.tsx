@@ -176,7 +176,7 @@ const HeaderOne = ({
         });
       }
       const categorySubItem: any = [];
-      if (allCategories.length > 0 && item.id === 3 && item.name === "Blog") {
+      if (allCategories?.length > 0 && item.id === 3 && item.name === "Blog") {
         categorySubItem.push({
           id: 1,
           name: "Blog Categories",
