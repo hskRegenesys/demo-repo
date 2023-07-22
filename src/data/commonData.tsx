@@ -305,11 +305,11 @@ const Data = {
         "Take your AI expertise to the next level with Digital Regenesys' Advanced Applied Artificial Intelligence course. Master cutting-edge AI techniques. Enrol today.",
     },
     canonicalUrlData: {
-      home: "/",
+      home: "",
       about: "/about",
       allCourse: "/all-courses",
       contact: "/contact",
-      privacyPolicy: "/privacy-policy/",
+      privacyPolicy: "/privacy-policy",
       termsCondition: "/terms-and-conditions",
       "cyber-security": "/all-courses/cyber-security",
       "digital-marketing": "/all-courses/digital-marketing",
@@ -335,7 +335,8 @@ const Data = {
       "artificial-intelligence": "/all-courses/artificial-intelligence",
       "ai-introductory": "/all-courses/artificial-intelligence/ai-introductory",
       "ai-intermediary": "/all-courses/artificial-intelligence/ai-intermediary",
-      "ai-advanced-applied": "/all-courses/artificial-intelligence/ai-advanced-applied",
+      "ai-advanced-applied":
+        "/all-courses/artificial-intelligence/ai-advanced-applied",
     },
   },
 };
