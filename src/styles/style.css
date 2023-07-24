@@ -5207,6 +5207,7 @@ tns-controls-tools {
 .main-footer .logo-widget {
   position: relative;
   padding: 70px;
+  padding-bottom: 50px;
 }
 
 .main-footer .logo-widget h5 {
@@ -5247,6 +5248,10 @@ tns-controls-tools {
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+}
+.column-space {
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .main-footer .links-widget ul li a:before {
@@ -19637,6 +19642,10 @@ button[disabled] {
     font-size: 16px;
     font-family: "Raleway-semibold" !important;
   }
+  .column-space {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   .reasonsMobile .accordion-item:first-child .accordion-button,
   .reasonsMobile .accordion-item:nth-child(2) .accordion-button,
@@ -20389,6 +20398,7 @@ h2.highlight {
 .map-image img {
   width: 100%;
 }
+
 .google-map h3 {
   font-size: 34px;
   color: #1fa393;
@@ -20423,7 +20433,7 @@ h2.highlight {
   left: 53%;
   transform: translate(50%, 50%);
   right: auto;
-  z-index: 0;
+  z-index: 2;
 }
 .map-marker-ke {
   position: relative;
@@ -20435,7 +20445,7 @@ h2.highlight {
   left: 65%;
   transform: translate(50%, 50%);
   right: auto;
-  z-index: 0;
+  z-index: 5;
 }
 .map-marker-in {
   position: relative;
@@ -20447,9 +20457,21 @@ h2.highlight {
   left: 40%;
   transform: translate(50%, 50%);
   right: auto;
-  z-index: 0;
+  z-index: 4;
 }
 .map-marker-ng {
+  position: relative;
+}
+.map-marker-row-kro {
+  position: absolute;
+  bottom: 58%;
+  top: auto;
+  left: 44%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
+}
+.map-marker-kro {
   position: relative;
 }
 .map-marker-row-usa {
@@ -20459,7 +20481,7 @@ h2.highlight {
   left: 8%;
   transform: translate(50%, 50%);
   right: auto;
-  z-index: 0;
+  z-index: 2;
 }
 .map-marker-usa {
   position: relative;
@@ -20499,10 +20521,14 @@ h2.highlight {
   top: -176px;
   left: 0px;
 }
-.map-marker-row-in .hover-details {
+.hover-details img {
+  border: none;
+  max-width: 120px !important;
+}
+/* .map-marker-row-in .hover-details {
   top: -156px;
   left: 0px;
-}
+} */
 .map-marker-text:hover + .hover-details {
   visibility: visible;
 }
@@ -20764,6 +20790,10 @@ h2.highlight {
     line-height: 0px;
     margin-bottom: 0px;
   }
+  .campus-image img {
+    width: 100%;
+    max-width: 80px !important;
+  }
 }
 @media (max-width: 767.98px) {
   .inlineSticky span {
@@ -20863,6 +20893,10 @@ h2.highlight {
     bottom: 46%;
     left: 64%;
   }
+  .map-marker-row-kro {
+    bottom: 62%;
+    left: 39%;
+  }
   .map-marker-row-usa .hover-details {
     top: -92px;
     left: -36px;
@@ -20893,6 +20927,12 @@ h2.highlight {
     padding: 5px;
     width: 250px;
   }
+  .map-marker-row-kro .hover-details {
+    top: -113px;
+    left: -92px;
+    padding: 5px;
+    width: 250px;
+  }
   .campus-image img {
     width: 130px !important;
   }
@@ -20915,10 +20955,10 @@ h2.highlight {
   .map-marker-text img {
     width: 12px !important;
   }
-  
+
   .map-marker-row-usa .hover-details {
-    top: -92px;
-    left: -36px;
+    top: -104px;
+    left: -18px;
     padding: 5px;
     width: 250px;
   }

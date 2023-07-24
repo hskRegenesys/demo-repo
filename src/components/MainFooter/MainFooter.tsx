@@ -4,37 +4,7 @@ import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import TextSplit from "../Reuseable/TextSplit";
 
-const {
-  year,
-  author,
-  logo,
-  text,
-  socials,
-  links,
-  address,
-  address3,
-  address4,
-  address5,
-  address2,
-  phone,
-  phone2,
-  phone3,
-  phone4,
-  phone5,
-  web,
-  weblink,
-  web2,
-  web2link,
-  web3,
-  web4,
-  web5,
-  web3link,
-  web4link,
-  web5link,
-
-  email,
-  textBottom,
-} = mainFooter;
+const { year, text, socials, addressDetails, links } = mainFooter;
 
 const MainFooter = ({ normalPadding = true }) => {
   const handleSubmit = (e: any) => {
@@ -82,124 +52,20 @@ const MainFooter = ({ normalPadding = true }) => {
                 <h6>{text}</h6>
               </div>
               <div className="widget-content row">
-                <Col xl={3} lg={6} md={4} sm={12} xxl={3} className="column">
-                  <div className="footer-widget info-widget">
-                    <div className="widget-content">
-                      <Row className="contact-info">
-                        <Col sm="12" className="address">
-                          <h6>USA Head Office</h6>
-                          <span className="icon flaticon-pin-1"></span>{" "}
-                          <TextSplit text={address2} />
-                        </Col>
-                      </Row>
-                    </div>
-                  </div>
-                  <div className="extra-space-footer"></div>
-                </Col>
-                <Col xl={3} lg={6} md={4} sm={12} xxl={3} className="column">
-                  <div className="footer-widget info-widget">
-                    <div className="widget-content address">
-                      <Row className="contact-info">
-                        <Col sm="12" className="address">
-                          <h6>South Africa Corporate Office</h6>
-                          <span className="icon flaticon-pin-1"></span>{" "}
-                          <TextSplit text={address} />
-                        </Col>
-                        <Col sm="12">
-                          {/* <h6>Contact Details</h6> */}
-                          {/* <ul>
-                            <li>
-                              <span className="icon flaticon-call"></span>
-                              <a href={`tel:${phone.split(" ").join("")}`}>
-                                {phone}
-                              </a>
-                            </li>
-                            <li>
-                              <span className="icon flaticon-link"></span>
-                              <a href={`${weblink}`} target="_blank">
-                                {web}
-                              </a>
-                            </li>
-                          </ul> */}
-                        </Col>
-                      </Row>
-                    </div>
-                  </div>
-                </Col>
-
-                <Col xl={3} lg={6} md={4} sm={12} xxl={3} className="column">
-                  <div className="footer-widget info-widget">
-                    <div className="widget-content">
-                      <Row className="contact-info">
-                        <Col sm="12" className="address">
-                          <h6>Nigeria Corporate Office</h6>
-                          <span className="icon flaticon-pin-1"></span>{" "}
-                          <TextSplit text={address3} />
-                        </Col>
-                        <Col sm="12">
-                          {/* <h6>Contact Details</h6> */}
-                          {/* <ul>
-                            <li>
-                              <span className="icon flaticon-call"></span>
-                              <a href={`tel:${phone3.split(" ").join("")}`}>
-                                {phone3}
-                              </a>
-                            </li>
-                            <li>
-                              <span className="icon flaticon-link "></span>
-                              <a href={`${web3link}`} target="_blank">
-                                {web3}
-                              </a>
-                            </li>
-                          </ul> */}
-                        </Col>
-                      </Row>
-                    </div>
-                  </div>
-                </Col>
-                <Col xl={3} lg={6} md={4} sm={12} xxl={3} className="column">
-                  <div className="footer-widget info-widget">
-                    <div className="widget-content">
-                      <Row className="contact-info">
-                        <Col sm="12" className="address">
-                          <h6>Kenya Corporate Office</h6>
-                          <span className="icon flaticon-pin-1"></span>{" "}
-                          <TextSplit text={address4} />
-                        </Col>
-                      </Row>
-                    </div>
-                  </div>
-                </Col>
-                <Col xl={3} lg={6} md={4} sm={12} xxl={3} className="column">
-                  <div className="footer-widget info-widget">
-                    <div className="widget-content address">
-                      <Row className="contact-info">
-                        <Col sm="12" className="address">
-                          <h6>India Corporate Office</h6>
-                          <span className="icon flaticon-pin-1"></span>{" "}
-                          <TextSplit text={address5} />
-                        </Col>
-                        <Col sm="12">
-                          {/* <h6>Contact Details</h6> */}
-                          {/* <ul>
-                            <li>
-                              <span className="icon flaticon-call"></span>
-                              <a href={`tel:${phone.split(" ").join("")}`}>
-                                {phone5}
-                              </a>
-                            </li>
-                            <li>
-                              <span className="icon flaticon-link"></span>
-                              <a href={`${web5link}`} target="_blank">
-                                {web5}
-                              </a>
-                            </li>
-                          </ul> */}
-                        </Col>
-                      </Row>
-                    </div>
-                  </div>
-                </Col>
+                {addressDetails?.map(({ addressTitle, fullAddress }) => (
+                  <Col
+                    xl={3}
+                    lg={6}
+                    md={4}
+                    sm={12}
+                    xxl={3}
+                    className="column-space"
+                  >
+                    <h6>{addressTitle}</h6>
+                    <span className="icon flaticon-pin-1"></span>
+                    <TextSplit text={fullAddress} />
+                  </Col>
+                ))}
               </div>
             </div>
           </Col>
