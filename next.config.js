@@ -46,6 +46,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/all-courses/data-science/advance-data-science",
+      destination: "/all-courses/data-science/advanced-data-science",
+      permanent: true,
+    },
+    {
       source: "/programs/data-science/applied-data-science",
       destination: "/all-courses/data-science/applied-data-science",
       permanent: true,
