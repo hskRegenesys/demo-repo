@@ -37,7 +37,7 @@ const GoogleMapData = {
     },
     KROMapDetails: {
       countryName: "Croatia",
-      campusImage: "/assets/images/background/campusImageUSA.webp",
+      campusImage: "/assets/images/background/campusImageCroatia.webp",
       corporateOfficeName: "Croatia Corporate Office",
       address: " sv. Bartula 131, 23000 Kozino, Zadar, Croatia",
     },
