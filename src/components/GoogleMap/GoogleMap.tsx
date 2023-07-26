@@ -204,6 +204,41 @@ const GoogleMap = () => {
                     </div>
                   </div>
                 </div>
+                <div className="map-marker-row-kro">
+                  <div className="map-marker-kro text-center">
+                    <div className="map-marker-text">
+                      <Image
+                        src={locationPin}
+                        layout="intrinsic"
+                        width="20"
+                        height="32"
+                        alt=""
+                      />
+                      <p>{countryMapDetails?.KROMapDetails?.countryName}</p>
+                    </div>
+                    <div className="hover-details">
+                      <div className="campus-image">
+                        <Image
+                          src={countryMapDetails?.KROMapDetails?.campusImage}
+                          layout="intrinsic"
+                          width="280"
+                          height="300"
+                          objectFit="cover"
+                          alt=""
+                        />
+                      </div>
+                      <div className="campus-details">
+                        <h6>
+                          {
+                            countryMapDetails?.KROMapDetails
+                              ?.corporateOfficeName
+                          }
+                        </h6>
+                        <p>{countryMapDetails?.KROMapDetails?.address}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

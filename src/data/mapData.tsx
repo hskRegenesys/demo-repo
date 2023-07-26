@@ -35,6 +35,12 @@ const GoogleMapData = {
       corporateOfficeName: "USA Head Office",
       address: "548 Market St. #243271, San Francisco, California 94104-5401",
     },
+    KROMapDetails: {
+      countryName: "Croatia",
+      campusImage: "/assets/images/background/campusImageCroatia.webp",
+      corporateOfficeName: "Croatia Corporate Office",
+      address: " sv. Bartula 131, 23000 Kozino, Zadar, Croatia",
+    },
   },
 };
 
