@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { canonicalConstants } from "@/components/config/constant";
 import Data from "@/data/commonData";
 import { useRouter } from "next/router";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Layout = (props: any) => {
   const Router = useRouter();
@@ -60,8 +61,12 @@ const Layout = (props: any) => {
       </Head>
 
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
-      <a id="chat" className="chat d-inline-block fadeIn animated">
-        <i className="chat-icon"></i>
+      <a
+        id="chat"
+        href="https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
+        className="chat d-inline-block fadeIn animated"
+      >
+        <WhatsAppIcon />
       </a>
       <main
         id="wrapper"
