@@ -61,13 +61,13 @@ const Layout = (props: any) => {
       </Head>
 
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
-      <a
+      {/* <a
         id="chat"
         href="https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
         className="chat d-inline-block fadeIn animated"
       >
         <WhatsAppIcon />
-      </a>
+      </a> */}
       <main
         id="wrapper"
         style={{ opacity: loading ? 0 : 1 }}
