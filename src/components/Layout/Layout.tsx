@@ -58,6 +58,11 @@ const Layout = (props: any) => {
           name="google-site-verification"
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
+        <link
+          rel="alternate"
+          href="https://www.digitalregenesys.com/"
+          hrefLang="x-default"
+        />
       </Head>
 
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />

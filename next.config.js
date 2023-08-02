@@ -149,6 +149,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/index",
+      destination: "https://www.digitalregenesys.com",
+      permanent: true,
+    },
+    {
       source: "/search",
       destination: "https://www.digitalregenesys.com",
       permanent: true,
@@ -263,6 +268,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/courses/advanced-data-science",
+      destination: "/all-courses/data-science/basic-data-science",
+      permanent: true,
+    },
+    {
       source: "/all-course/data-science/advanced-data-science",
       destination: "/all-courses/data-science/advanced-data-science",
       permanent: true,
@@ -354,6 +364,7 @@ const createReWrites = () => {
       source: "/all-courses/data-science/basic-data-science",
       destination: "/all-courses/basic-data-science/11",
     },
+
     {
       source: "/all-courses/data-science/advanced-data-science",
       destination: "/all-courses/advanced-data-science/18",

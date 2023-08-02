@@ -94,10 +94,10 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
-  console.log(
-    "courseDetails courseDetails.modalImage",
-    courseDetails.modalImage
-  );
+  // console.log(
+  //   "courseDetails courseDetails.modalImage",
+  //   courseDetails.modalImage
+  // );
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
