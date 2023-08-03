@@ -60,8 +60,8 @@ const Layout = (props: any) => {
         />
         <link
           rel="alternate"
-          href="https://www.digitalregenesys.com/"
           hrefLang="x-default"
+          href="https://www.digitalregenesys.com/"
         />
       </Head>
 
