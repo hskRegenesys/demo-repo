@@ -61,7 +61,7 @@ const Layout = (props: any) => {
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://www.digitalregenesys.com/"
+          href="https://uat-new.digitalregenesys.com"
         />
       </Head>
 
