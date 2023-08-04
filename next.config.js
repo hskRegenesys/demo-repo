@@ -135,27 +135,32 @@ const redirectURL = () => {
     },
     {
       source: "/login",
-      destination: "https://www.digitalregenesys.com",
+      destination: "/",
       permanent: true,
     },
     {
       source: "/register",
-      destination: "https://www.digitalregenesys.com",
+      destination: "/",
       permanent: true,
     },
     {
       source: "/home",
-      destination: "https://www.digitalregenesys.com",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/home-2",
+      destination: "/",
       permanent: true,
     },
     {
       source: "/index",
-      destination: "https://www.digitalregenesys.com",
+      destination: "/",
       permanent: true,
     },
     {
       source: "/search",
-      destination: "https://www.digitalregenesys.com",
+      destination: "/",
       permanent: true,
     },
 
@@ -267,11 +272,597 @@ const redirectURL = () => {
       destination: "/all-courses/data-science/basic-data-science",
       permanent: true,
     },
+    //redirections from altaf start
     {
       source: "/courses/advanced-data-science",
       destination: "/all-courses/data-science/basic-data-science",
       permanent: true,
     },
+    {
+      source: "/termsCondition",
+      destination: "/terms-and-conditions",
+      permanent: true,
+    },
+    {
+      source: "/all-course/[course]",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/edforall",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/self-paced-projectmanagement",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/all-course/[course]/[id]",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/refundPolicy",
+      destination: "/privacy-policy",
+      permanent: true,
+    },
+    {
+      source: "/programs/investment-trading-personal-finance",
+      destination: "/",
+      permanent: true,
+    },
+    // {
+    //   source: "/study-dr-programmes",
+    //   destination: "https://www.digitalregenesys.com/lp",
+    //   permanent: true,
+    // },
+
+    {
+      source: "/product/introduction-to-project-management-2/",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/user-account",
+      destination: "https://mydigital.regenesys.net/login/index.php",
+      permanent: true,
+    },
+    {
+      source: "/programs/digitalMarketingCourse/basicDigitalMarketing",
+      destination:
+        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-digitalmarketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-digitalmarketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/programs/dataScience",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/projectManagement",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/terms-conditions",
+      destination: "/terms-and-conditions",
+      permanent: true,
+    },
+    {
+      source: "/landing",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-digital-marketing/",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-datascience",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/how-to-use-my-images",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/license",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/photos",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/study-digital-marketing-sa",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/programs/digital-marketing/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/ai-introductory",
+      destination: "/all-courses/artificial-intelligence/ai-introductory",
+      permanent: true,
+    },
+    {
+      source: "/ai-intermediary",
+      destination: "/all-courses/artificial-intelligence/ai-intermediary",
+      permanent: true,
+    },
+    {
+      source: "/ai-advanced-applied",
+      destination: "/all-courses/artificial-intelligence/ai-advanced-applied",
+      permanent: true,
+    },
+    {
+      source: "/author/frankb/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/courses/artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-artificial-intelligence/",
+      destination: "/all-courses/artificial-intelligence/ai-advanced-applied",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-coding",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/programs/data-science/advance-data-science/",
+      destination: "/all-courses/data-science/advanced-data-science",
+      permanent: true,
+    },
+    {
+      source: "/thankyou-a2z-datascience/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/programs/data-science/advance-data-science",
+      destination: "/all-courses/data-science/advanced-data-science",
+      permanent: true,
+    },
+    {
+      source: "/add-to-cart-by-id/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/privacyPolicy",
+      destination: "/privacy-policy",
+      permanent: true,
+    },
+    {
+      source: "/eb_category/self-pacedintroductorycourses/page/2/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-digitalmarketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/eb_category/masterclasses",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-coding/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/popup-form",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/wp-content/uploads/2022/02/Cybersecurity-Brochure.pdf",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/fusion_tb_category/content/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/shop/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-project-management/",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/eb-courses/",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/courses/digital-marketing/",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-coding/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    // {
+    //   source: "/product-category/technology/?product_orderby=price",
+    //   destination: "/",
+    //   permanent: true,
+    // },
+    {
+      source: "/courses/professional-business-writing-skills/",
+      destination: "/",
+      permanent: true,
+    },
+    // {
+    //   source: "/product-category/business/?product_count=36",
+    //   destination: "/",
+    //   permanent: true,
+    // },
+    {
+      source: "/sample-page/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-cybersecurity-2/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-cybersecurity-2",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-cybersecurity-2",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-cybersecurity-2",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-cybersecurity-2/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/product/cybersecurity-2",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/product/cybersecurity-2/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/product/cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-cybersecurity/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses/digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/programs/dataScience/appliedDataScience",
+      destination: "/all-courses/data-science/applied-data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-project-management-2/feed",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-project-management-2/feed/",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management/feed/",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-projectmanagement/",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/thankyou-a2z-project-management",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/courses/project-management/feed",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/all-course/project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/programs/digitalMarketingCourse/appliedDigitalMarketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-digital-marketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-digital-marketing/",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing/",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-data-science/",
+      destination: "/all-courses/data-science/advanced-data-science",
+      permanent: true,
+    },
+    {
+      source: "/about-us-2/",
+      destination: "/about",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-digitalmarketing/",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence/ai-advanced-applied",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-machinelearning",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-machinelearning/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-cybersecurity-2/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-projectmanagement/",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/all-course/cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses/data-science/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/product/advanced-data-science-2/",
+      destination: "/all-courses/data-science/advanced-data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-cybersecurity/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/product/introduction-to-cybersecurity/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/product/advanced-data-science-2",
+      destination: "/all-courses/data-science/advanced-data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses/machine-learning",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses/machine-learning/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/self-paced-datascience/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-cybersecurity/",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-datascience/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/investment-trading-personal-finance",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/a2z-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/a2z-project-management/",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/all-course//cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/all-course//project-management",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/a2z-datascience-ind/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/programs/digitalMarketingCourse/advancedDigitalMarketing",
+      destination:
+        "/all-courses/digital-marketing/advance-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/programs/digitalMarketingCourse",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-finance-for-non-financial-managers/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/study-dr-",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/programs/dataScience/[course]",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/new-2016-accessories/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/newsletter/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/home-2",
+      destination: "/",
+      permanent: true,
+    },
+
+    //redirections from altaf end
     {
       source: "/all-course/data-science/advanced-data-science",
       destination: "/all-courses/data-science/advanced-data-science",
