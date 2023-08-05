@@ -16,6 +16,7 @@ import Image from "next/image";
 
 function ModalPopup(props: any) {
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
+  const submitTitle = props.submitTitle ?? "Submit";
   const router = useRouter();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -89,7 +90,12 @@ function ModalPopup(props: any) {
     }
     if (props?.title !== "Download Brochure") {
       props.setShows(false);
-      props.thankYouShow(true);
+
+      props.isWhatsapp
+        ? router.push(
+            "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
+          )
+        : props.thankYouShow(true);
     }
   };
 
@@ -390,7 +396,7 @@ function ModalPopup(props: any) {
                       disabled={btnDisable}
                     >
                       <i className="btn-curve"></i>
-                      <span className="btn-title">Submit</span>
+                      <span className="btn-title">{submitTitle}</span>
                     </button>
                   </div>
                   {/* <small>

@@ -648,6 +648,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/programs/projectManagement",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
       source: "/thankyou-a2z-project-management",
       destination: "/",
       permanent: true,
@@ -727,6 +732,11 @@ const redirectURL = () => {
     },
     {
       source: "/all-course/cybersecurity",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses/cybersecurity/",
       destination: "/all-courses/cyber-security",
       permanent: true,
     },
