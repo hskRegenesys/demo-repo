@@ -152,7 +152,7 @@ export default function LandingForm(contactform: any) {
                     <label>Phone*</label>
                     <input
                       type="hidden"
-                      {...register("Phone*", {
+                      {...register("Phone", {
                         maxLength: {
                           value: 16,
                           message: "Cannot Exceed 10 digits",

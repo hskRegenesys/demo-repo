@@ -94,7 +94,7 @@ const ApplyNow = (props: any) => {
         <div className="form-group mt-2 position-relative">
           <input
             type="hidden"
-            {...register("Phone*", {
+            {...register("Phone", {
               maxLength: {
                 value: 16,
                 message: "Cannot Exceed 10 digits",
