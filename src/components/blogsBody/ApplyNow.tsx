@@ -126,7 +126,7 @@ const ApplyNow = (props: any) => {
         <div className="form-group mt-2">
           <input
             type="text"
-            placeholder="Enter City"
+            placeholder="Enter City*"
             className={`form-control ${errors?.City && "invalid"}`}
             {...register("City", {
               required: "City is Required",
