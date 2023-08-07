@@ -140,7 +140,7 @@ export default function StickyForm(contactform: any) {
                     <div className="form-group position-relative">
                       <input
                         type="hidden"
-                        {...register("Phone", {
+                        {...register("Phone*", {
                           maxLength: {
                             value: 16,
                             message: "Cannot Exceed 10 digits",

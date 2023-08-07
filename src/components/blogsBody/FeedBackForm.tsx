@@ -68,7 +68,7 @@ const FeedBackForm = () => {
                 <div className="form-group mt-3 position-relative">
                   <input
                     type="hidden"
-                    {...register("Phone", {
+                    {...register("Phone*", {
                       maxLength: {
                         value: 16,
                         message: "Cannot Exceed 10 digits",
