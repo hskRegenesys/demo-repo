@@ -275,7 +275,7 @@ export default function LandingForm(contactform: any) {
                         required: "Qualification is required",
                       })}
                     >
-                      <option value="">Highest Qualification</option>
+                      <option value="">Highest Qualification*</option>
                       {Data.qualification.map((item) => (
                         <option value={item.value}>{item.option}</option>
                       ))}

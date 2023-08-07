@@ -183,7 +183,7 @@ const ApplyNow = (props: any) => {
               required: "Qualification is required",
             })}
           >
-            <option value="">Highest Qualification</option>
+            <option value="">Highest Qualification*</option>
             {Data.qualification.map((item) => (
               <option key={item.value} value={item.value}>
                 {item.option}
