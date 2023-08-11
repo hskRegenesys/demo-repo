@@ -52,9 +52,7 @@ const Home2 = () => {
   return (
     <Layout pageTitle="home">
       <Schemas type={Constants.home} />
-
       <Style />
-
       <HeaderOne pageTitle="home" />
       <MobileMenu />
       <SearchPopup />
@@ -71,6 +69,7 @@ const Home2 = () => {
       <CallToSection />
       <MainFooter normalPadding={false} />
       <StickyBar />
+      <div id="tawk_5825dfc218d9f16af02abeea"></div>;
       <Modal show={show} onHide={() => setShow(false)}>
         <ImageModalPopup
           bgImage="Pop-up_bg.webp"
