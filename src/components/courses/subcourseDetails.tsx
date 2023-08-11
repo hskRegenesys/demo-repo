@@ -219,7 +219,10 @@ const SubCourseDetails = ({ page }: any) => {
                         </div>
                       </div>
                       <Modal show={show}>
-                        <ModalPopup />
+                        <ModalPopup
+                          setShows={setShow}
+                          thankYouShow={setThankYouShow}
+                        />
                       </Modal>
                       <Modal show={thankYouShow}>
                         <ThankYouPopup setShows={setThankYouShow} />
