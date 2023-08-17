@@ -19562,7 +19562,7 @@ button[disabled] {
 .chat {
   position: fixed;
   right: 30px;
-  bottom: 100px;
+  bottom: 120px;
   width: 50px;
   height: 50px;
   color: #fff;
@@ -20835,7 +20835,7 @@ h2.highlight {
   }
   .sticky-footer-buttons {
     display: inline-flex;
-    width: 100%;
+    width: 92%;
     padding-bottom: 8px;
     justify-content: center;
   }
