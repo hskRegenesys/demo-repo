@@ -7,8 +7,12 @@ import { canonicalConstants } from "@/components/config/constant";
 import Data from "@/data/commonData";
 import { useRouter } from "next/router";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import CancelIcon from "@mui/icons-material/Cancel";
+import ModalPopup from "../Modal/ModalPopup";
+import { Modal } from "react-bootstrap";
 
 const Layout = (props: any) => {
+  const [show, setShow] = useState(false);
   const Router = useRouter();
   const { children, pageTitle, preloader, mainClass, preloaderClass } = props;
   const [loading, setLoading] = useState(true);
@@ -58,15 +62,30 @@ const Layout = (props: any) => {
           name="google-site-verification"
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://uat-new.digitalregenesys.com"
+        />
       </Head>
 
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
+
+      <div className={`whatsapp-form-modify ${show ? "d-block" : "d-none"}`}>
+        <ModalPopup
+          setShows={setShow}
+          submitTitle="WhatsApp Chat"
+          isWhatsapp
+          title="Initiate a Chat"
+        />
+      </div>
+
       {/* <a
         id="chat"
-        href="https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
+        onClick={() => setShow(!show)}
         className="chat d-inline-block fadeIn animated"
       >
-        <WhatsAppIcon />
+        {show ? <CancelIcon /> : <WhatsAppIcon />}
       </a> */}
       <main
         id="wrapper"

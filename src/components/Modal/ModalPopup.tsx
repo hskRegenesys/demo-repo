@@ -16,6 +16,7 @@ import Image from "next/image";
 
 function ModalPopup(props: any) {
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
+  const submitTitle = props.submitTitle ?? "Submit";
   const router = useRouter();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -89,7 +90,12 @@ function ModalPopup(props: any) {
     }
     if (props?.title !== "Download Brochure") {
       props.setShows(false);
-      props.thankYouShow(true);
+
+      props.isWhatsapp
+        ? router.push(
+            "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
+          )
+        : props.thankYouShow(true);
     }
   };
 
@@ -192,7 +198,7 @@ function ModalPopup(props: any) {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group position-relative">
-                      <label>Phone</label>
+                      <label>Phone*</label>
                       <input
                         type="hidden"
                         {...register("Phone", {
@@ -230,7 +236,7 @@ function ModalPopup(props: any) {
                       <label>City*</label>
                       <input
                         type="text"
-                        placeholder="Enter City"
+                        placeholder="Enter City*"
                         className={`${errors?.City && "invalid"}`}
                         {...register("City", {
                           required: "City is Required",
@@ -352,7 +358,7 @@ function ModalPopup(props: any) {
                   </div> */}
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label>Select Highest Qualification</label>
+                      <label>Select Highest Qualification*</label>
                       <select
                         className={`select-course form-select${
                           errors?.highest_qualification &&
@@ -362,7 +368,7 @@ function ModalPopup(props: any) {
                           required: "Qualification is required",
                         })}
                       >
-                        <option value="">Highest Qualification</option>
+                        <option value="">Highest Qualification*</option>
                         {Data.qualification.map((item) => (
                           <option value={item.value}>{item.option}</option>
                         ))}
@@ -390,7 +396,7 @@ function ModalPopup(props: any) {
                       disabled={btnDisable}
                     >
                       <i className="btn-curve"></i>
-                      <span className="btn-title">Submit</span>
+                      <span className="btn-title">{submitTitle}</span>
                     </button>
                   </div>
                   {/* <small>

@@ -126,7 +126,7 @@ const ApplyNow = (props: any) => {
         <div className="form-group mt-2">
           <input
             type="text"
-            placeholder="Enter City"
+            placeholder="Enter City*"
             className={`form-control ${errors?.City && "invalid"}`}
             {...register("City", {
               required: "City is Required",
@@ -183,7 +183,7 @@ const ApplyNow = (props: any) => {
               required: "Qualification is required",
             })}
           >
-            <option value="">Highest Qualification</option>
+            <option value="">Highest Qualification*</option>
             {Data.qualification.map((item) => (
               <option key={item.value} value={item.value}>
                 {item.option}

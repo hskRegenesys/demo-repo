@@ -19561,22 +19561,22 @@ button[disabled] {
 
 .chat {
   position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 49px;
-    border-radius: 50%;
-    text-align: center;
-    z-index: 100;
-    cursor: pointer;
-    background: #1fa393;
-    display: none;
-    transition: all 300ms ease;
-    box-shadow: 3px 3px 0 0 #ffe55b;
-    transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  right: 30px;
+  bottom: 120px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 49px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  background: #1fa393;
+  display: none;
+  transition: all 300ms ease;
+  box-shadow: 3px 3px 0 0 #ffe55b;
+  transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .chat:hover {
@@ -20835,7 +20835,7 @@ h2.highlight {
   }
   .sticky-footer-buttons {
     display: inline-flex;
-    width: 100%;
+    width: 92%;
     padding-bottom: 8px;
     justify-content: center;
   }
@@ -21284,4 +21284,52 @@ h2.highlight {
   padding: 0px !important;
   position: absolute;
   left: 29%;
+}
+
+/* whatsappform */
+.whatsapp-form-modify {
+  width: 100%;
+  max-width: 280px;
+  position: fixed;
+  bottom: 70px;
+  right: 88px;
+  z-index: 99;
+  background-color: #c3ead8;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.whatsapp-form-modify label {
+  display: none;
+}
+.whatsapp-form-modify .select-course {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 13px;
+}
+.whatsapp-form-modify .col-md-6 {
+  width: 100% !important;
+}
+.whatsapp-form-modify .popup-form input,
+.whatsapp-form-modify .popup-form textarea {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 13px;
+}
+.whatsapp-form-modify .PhoneInputCountry {
+  margin-top: 16px;
+}
+.whatsapp-form-modify .btn-style-two {
+  background: #1fa393;
+}
+.whatsapp-form-modify .modal-title {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 8px;
 }

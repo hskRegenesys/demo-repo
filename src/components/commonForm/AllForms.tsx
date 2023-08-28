@@ -149,7 +149,7 @@ export default function LandingForm(contactform: any) {
               <div className="row mb-4">
                 <div className="col-md-6">
                   <div className="form-group position-relative">
-                    <label>Phone</label>
+                    <label>Phone*</label>
                     <input
                       type="hidden"
                       {...register("Phone", {
@@ -187,7 +187,7 @@ export default function LandingForm(contactform: any) {
                     <label>City*</label>
                     <input
                       type="text"
-                      placeholder="Enter City"
+                      placeholder="Enter City*"
                       className={`${errors?.City && "invalid"}`}
                       {...register("City", {
                         required: "City is Required",
@@ -265,7 +265,7 @@ export default function LandingForm(contactform: any) {
             </div> */}
                 <div className="col-md-6">
                   <div className="form-group">
-                    <label>Select Highest Qualification</label>
+                    <label>Select Highest Qualification*</label>
                     <select
                       className={`select-course form-select{
                     errors.gender &&
@@ -275,7 +275,7 @@ export default function LandingForm(contactform: any) {
                         required: "Qualification is required",
                       })}
                     >
-                      <option value="">Highest Qualification</option>
+                      <option value="">Highest Qualification*</option>
                       {Data.qualification.map((item) => (
                         <option value={item.value}>{item.option}</option>
                       ))}
