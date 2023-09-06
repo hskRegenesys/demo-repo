@@ -80,13 +80,13 @@ const Layout = (props: any) => {
         />
       </div>
 
-      <a
+      {/* <a
         id="chat"
         onClick={() => setShow(!show)}
         className="chat d-inline-block fadeIn animated"
       >
         {show ? <CancelIcon /> : <WhatsAppIcon />}
-      </a>
+      </a> */}
       <main
         id="wrapper"
         style={{ opacity: loading ? 0 : 1 }}
