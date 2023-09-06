@@ -157,7 +157,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         />
       </noscript>
 
-      {/* <Script
+      <Script
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
@@ -172,7 +172,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           })();
               `,
         }}
-      /> */}
+      />
 
       {/* Google Tag Script End */}
     </ContextProvider>
