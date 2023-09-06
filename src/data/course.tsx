@@ -806,7 +806,7 @@ export const courseData = {
         },
         {
           id: 2,
-          image: "dr_nilay.webp",
+          image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
@@ -931,7 +931,7 @@ export const courseData = {
           },
           {
             id: 7,
-            title: "MongoDB (DBMS",
+            title: "MongoDB (DBMS)",
             lists: [
               "MongoDB installation",
               "MongoDB compass app",
@@ -1210,7 +1210,7 @@ export const courseData = {
         },
         {
           id: 2,
-          image: "dr_nilay.webp",
+          image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
@@ -1299,7 +1299,7 @@ export const courseData = {
           },
           {
             id: 5,
-            title: "Time Series Analysis And Forecasting",
+            title: "Computer Vision",
             lists: [
               "1 Project on computer vision",
               "Image basics & processing",
@@ -1316,11 +1316,6 @@ export const courseData = {
               "Pandas for time series analysis",
               "- Statistical Models for Time Series Forecasting",
               "- Deep Learning LSTM model for Time Series Forecasting",
-              "Unsupervised learning II – Association rule learning",
-              "Apriori",
-              "Eclat",
-              "Data science application in sales",
-              "Customer churn and market basket analysis",
             ],
           },
         ],
@@ -1576,7 +1571,7 @@ export const courseData = {
         },
         {
           id: 2,
-          image: "dr_nilay.webp",
+          image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
@@ -1895,7 +1890,7 @@ export const courseData = {
         },
         {
           id: 2,
-          image: "dr_nilay.webp",
+          image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
@@ -2209,7 +2204,7 @@ export const courseData = {
         },
         {
           id: 2,
-          image: "dr_nilay.webp",
+          image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
@@ -2534,7 +2529,7 @@ export const courseData = {
         },
         {
           id: 2,
-          image: "dr_nilay.webp",
+          image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
           text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
