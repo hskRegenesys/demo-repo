@@ -11,6 +11,7 @@ class LeadService {
     ["Design Thinking", "Design Thinking"],
     ["Artificial Intelligence", "Artificial Intelligence"],
   ]);
+
   drLeadRecordTypeId = "0127Q000000NDbXQAW";
   constructor(private leadServer: any, private salesforceServer: any) {
     this.leadServer = leadServer;
@@ -19,6 +20,7 @@ class LeadService {
 
   async saveLead(params: any) {
     let result: any = [];
+
     try {
       //Save leads on Salesforce
       let salesforceParam = { ...params };
