@@ -46,7 +46,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                       </div>
                       <div className="btn-customize-programme-wise">
                         <strong className="text-white text-center d-block">
-                          Enrol Now & Get a 15% Discount
+                          Enrol Now & Get a 20% Discount
                         </strong>
                         <a
                           className="theme-btn btn-style-two"
@@ -136,7 +136,7 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
 
                   <div className="btn-customize-programme-wise">
                     <strong className="text-white text-center d-block">
-                      Enrol Now & Get a 15% Discount
+                      Enrol Now & Get a 20% Discount
                     </strong>
                     <div className="product-details__buttons mobile-product-buttons d-block text-center">
                       <a
