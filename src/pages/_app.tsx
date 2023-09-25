@@ -22,7 +22,7 @@ import Schemas from "src/schemas";
 const MyApp = ({ Component, pageProps }: any) => {
   return (
     <ContextProvider>
-      <div id="tawk_5825dfc218d9f16af02abeea"></div>
+      {/* <div id="tawk_5825dfc218d9f16af02abeea"></div> */}
       <Component {...pageProps} />
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
@@ -157,7 +157,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         />
       </noscript>
 
-      <Script
+      {/* <Script
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
@@ -172,7 +172,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           })();
               `,
         }}
-      />
+      /> */}
 
       {/* Google Tag Script End */}
     </ContextProvider>
