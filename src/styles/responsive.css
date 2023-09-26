@@ -917,6 +917,16 @@
   .banner-carousel .slide-item .shape-5 {
     display: none;
   }
+  .video-testimonials .sponsors-outer {
+    padding: 0px;
+    padding-top: 10px;
+  }
+  .sponsors-carousel-video {
+    padding: 40px 5px;
+  }
+  .sponsors-carousel-video iframe {
+    width: 100%;
+  }
   .sticky-form-header .inline-button .btn-style-two span {
     font-size: 15px;
   }
