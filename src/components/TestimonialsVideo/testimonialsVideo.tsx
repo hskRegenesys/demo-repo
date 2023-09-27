@@ -13,7 +13,7 @@ const settings = {
   nav: false,
   mouseDrag: true,
   items: 1,
-  autoplay: true,
+  autoplay: false,
   autoHeight: true,
   controls: true,
   controlsContainer: ".tns-controls-tools",
