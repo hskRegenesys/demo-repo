@@ -27,6 +27,8 @@ import { Modal } from "react-bootstrap";
 import ImageModalPopup from "@/components/Modal/ImageModalPopup";
 import ThankYouPopup from "@/components/Modal/ThankYouPopup";
 import GoogleMap from "@/components/GoogleMap/GoogleMap";
+import TestimonialsVideo from "@/components/TestimonialsVideo/testimonialsVideo";
+import videoTestimonialData from "@/data/videoTestimonial";
 
 const Home2 = () => {
   const [show, setShow] = useState(false);
@@ -66,6 +68,7 @@ const Home2 = () => {
       <WhyChooseUs />
       <PopularTopics />
       <TestimonialsStudent />
+      <TestimonialsVideo videoDetails={videoTestimonialData} />
       <CallToSection />
       <MainFooter normalPadding={false} />
       <StickyBar />
