@@ -20729,6 +20729,9 @@ h2.highlight {
   .map-marker-text p {
     font-size: 12px;
   }
+  .stickyRow {
+    display: none;
+  }
 
   .google-map-image {
     position: relative;
@@ -20842,7 +20845,7 @@ h2.highlight {
     text-align: center;
   }
   .styckySpace {
-    margin-top: 145px;
+    margin-top: 0px;
   }
   .inlineSticky {
     display: block;
