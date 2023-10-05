@@ -7346,9 +7346,10 @@ featured-section .right-col .sec-title h2 {
   border-radius: 5px;
 }
 .sponsors-carousel-video iframe {
-  border-radius: 30px;
+  width: 100%;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .testimonials-five__carousel .tns-controls button:hover,
