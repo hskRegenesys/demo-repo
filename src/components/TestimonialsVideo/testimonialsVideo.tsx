@@ -8,31 +8,32 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 });
 
 const settings = {
-  loop: false,
+  loop: true,
   lazyload: false,
   nav: false,
   mouseDrag: true,
-  items: 1,
+  items: 2,
   autoplay: false,
   autoHeight: true,
   controls: true,
   controlsContainer: ".tns-controls-tools",
-  gutter: 0,
+  rewind: false,
+  edgePadding: 10,
   autoplayButton: false,
   autoplayButtonOutput: false,
+  gutter: 50,
+
   responsive: {
     600: {
       items: 1,
-      gutter: 30,
     },
     768: {
       items: 2,
-      gutter: 30,
     },
 
     1200: {
       items: 2,
-      gutter: 30,
+      gutter: 70,
     },
   },
 };
@@ -57,7 +58,7 @@ const TestimonialsVideo = ({ videoDetails }: any) => {
                       <div
                         ref={listRef}
                         key={index}
-                        className="slide-item text-center"
+                        className="slide-item text-left pr-4"
                       >
                         <figure className="video-box-video-testimonial">
                           <iframe
