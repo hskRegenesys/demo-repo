@@ -7191,8 +7191,8 @@ featured-section .right-col .sec-title h2 {
 @media (min-width: 992px) {
   .testimonials-five {
     padding-top: 50px;
-    padding-bottom: 55px;
-    /* margin-bottom: -252px; */
+    padding-bottom: 160px;
+    margin-bottom: -252px;
   }
 }
 
@@ -7338,11 +7338,11 @@ featured-section .right-col .sec-title h2 {
 } */
 .sponsors-carousel-video {
   background-color: #ffe55b;
-  margin-bottom: -143px;
-  padding: 112px 30px;
+  /*margin-bottom: -143px; */
+  padding: 20px 30px;
   padding-left: 30px;
   padding-right: 50px;
-  padding-top: 50px;
+  padding-top: 30px;
   border-radius: 5px;
 }
 .sponsors-carousel-video iframe {

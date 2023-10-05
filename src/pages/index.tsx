@@ -62,13 +62,14 @@ const Home2 = () => {
       <StudentPlacement />
       <HomeSkillDescription />
       <TrendingSection />
+      <TestimonialsVideo videoDetails={videoTestimonialData} />
       <GoogleMap />
       <HomeCourses courses={courses} />
       <ExperienceSection />
       <WhyChooseUs />
       <PopularTopics />
       <TestimonialsStudent />
-      <TestimonialsVideo videoDetails={videoTestimonialData} />
+
       <CallToSection />
       <MainFooter normalPadding={false} />
       <StickyBar />
