@@ -30,6 +30,7 @@ const settings = {
   autoplay: true,
   loop: false,
   gutter: 30,
+  rewind: true,
   nav: false,
   controls: true,
   autoplayButtonOutput: false,
