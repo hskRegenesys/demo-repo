@@ -15,6 +15,21 @@ const videoTestimonialData = {
     {
       url: "https://www.youtube.com/embed/CezBY2t_r3I?si=8wbgOGiGbPbi-or7&rel=0",
     },
+    {
+      url: "https://www.youtube.com/embed/GRHdCKAyPWA?si=T8SVs70NoowFSax5&rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/PHZ5tSbHNLA?si=CbdjYoFf50n-QxfT&rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/stdQQ27vPO0?si=S0K_DnkR-VMB-tRH&rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/QU5uTR7QbfU?si=V0iH3I9kHB3F6_2X&rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/lW4vEYs7u-o?si=dSVGVQtXCfI_mn7V&rel=0",
+    },
   ],
 };
 

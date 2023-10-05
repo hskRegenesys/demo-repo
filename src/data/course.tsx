@@ -70,7 +70,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/IQ0FsNVDAmk?autoplay=1&loop=1&playlist=IQ0FsNVDAmk",
+          "https://www.youtube.com/embed/UX2ruOws5GU?autoplay=1&loop=1&playlist=UX2ruOws5GU",
         title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
@@ -714,7 +714,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/fyMdTWL-ytE?autoplay=1&loop=1&playlist=fyMdTWL-ytE",
+          "https://www.youtube.com/embed/flKq_GzDV1U?autoplay=1&loop=1&playlist=flKq_GzDV1U",
 
         title: "Certification Programme in Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
@@ -1121,7 +1121,7 @@ export const courseData = {
       {
         id: 1,
         youtubeUrl:
-          "https://www.youtube.com/embed/fyMdTWL-ytE?autoplay=1&loop=1&playlist=fyMdTWL-ytE",
+          "https://www.youtube.com/embed/flKq_GzDV1U?autoplay=1&loop=1&playlist=flKq_GzDV1U",
         title: "Certification Programme in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
@@ -1481,7 +1481,7 @@ export const courseData = {
       {
         id: 1,
         youtubeUrl:
-          "https://www.youtube.com/embed/fyMdTWL-ytE?autoplay=1&loop=1&playlist=fyMdTWL-ytE",
+          "https://www.youtube.com/embed/flKq_GzDV1U?autoplay=1&loop=1&playlist=flKq_GzDV1U",
         title: "Certification Programme in Applied Data Science",
         text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
@@ -1804,7 +1804,7 @@ export const courseData = {
         id: 1,
 
         youtubeUrl:
-          "https://www.youtube.com/embed/Jf_vhFpghFs?autoplay=1&loop=1&playlist=Jf_vhFpghFs",
+          "https://www.youtube.com/embed/VkkW0McT5iQ?autoplay=1&loop=1&playlist=VkkW0McT5iQ",
         title:
           "Certification in Artificial Intelligence Introductory Programme",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Introductory Programme' and unlock the
@@ -2108,7 +2108,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/Jf_vhFpghFs?autoplay=1&loop=1&playlist=Jf_vhFpghFs",
+          "https://www.youtube.com/embed/VkkW0McT5iQ?autoplay=1&loop=1&playlist=VkkW0McT5iQ",
         title:
           "Certification in Artificial Intelligence Intermediary Programme",
         text: `In the dynamic digital landscape, harnessing the power of Artificial Intelligence (AI) is crucial for staying ahead. Join
@@ -2431,7 +2431,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/Jf_vhFpghFs?autoplay=1&loop=1&playlist=Jf_vhFpghFs",
+          "https://www.youtube.com/embed/VkkW0McT5iQ?autoplay=1&loop=1&playlist=VkkW0McT5iQ",
         title:
           "Certification in Artificial Intelligence Advanced Applied Programme",
         text: `Unleash your potential with our 'AI Advanced Applied Programme.' Skyrocket your career by mastering advanced AI
@@ -3627,7 +3627,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/oswdwVFxYyk?autoplay=1&loop=1&playlist=oswdwVFxYyk",
+          "https://www.youtube.com/embed/IET741F4nBA?autoplay=1&loop=1&playlist=IET741F4nBA",
 
         title: "Certification Programme in Digital Marketing Fundamentals",
         text: "Upskill yourself with a course in Digital Marketing Fundamentals, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in one of the most sought-after fields.",
@@ -3963,7 +3963,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/oswdwVFxYyk?autoplay=1&loop=1&playlist=oswdwVFxYyk",
+          "https://www.youtube.com/embed/IET741F4nBA?autoplay=1&loop=1&playlist=IET741F4nBA",
 
         title:
           "Certification Programme in Advance Digital Marketing Strategies",
@@ -5416,7 +5416,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/LIPa9buztno?autoplay=1&loop=1&playlist=LIPa9buztno",
+          "https://www.youtube.com/embed/yfWhZy2r71c?autoplay=1&loop=1&playlist=yfWhZy2r71c",
 
         title: "Certification Programme in Cybersecurity",
         text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with Cyber Security Fundamentals course. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",
