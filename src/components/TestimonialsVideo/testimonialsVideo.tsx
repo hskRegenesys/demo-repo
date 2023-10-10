@@ -24,16 +24,14 @@ const settings = {
   gutter: 50,
 
   responsive: {
-    600: {
-      items: 1,
-    },
-    768: {
-      items: 2,
-    },
-
-    1200: {
+    992: {
       items: 2,
       gutter: 70,
+    },
+
+    320: {
+      gutter: 10,
+      items: 1,
     },
   },
 };
