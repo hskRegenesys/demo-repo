@@ -54,7 +54,6 @@ export default function LandingForm(contactform: any) {
     }
     handleShow();
     // router.push("/thankYou");
-
     const result = leadService.saveLead(data);
   };
 
@@ -184,34 +183,6 @@ export default function LandingForm(contactform: any) {
                 </div>
                 <div className="col-md-6">
                   <div className="form-group">
-                    <label>City*</label>
-                    <input
-                      type="text"
-                      placeholder="Enter City*"
-                      className={`${errors?.City && "invalid"}`}
-                      {...register("City", {
-                        required: "City is Required",
-                        pattern: {
-                          value: /^[a-zA-Z_ ]+$/,
-                          message: "Invalid City Name",
-                        },
-                      })}
-                      onKeyUp={() => {
-                        trigger("City");
-                      }}
-                    />
-                    {errors?.City && (
-                      <small className="text-danger">
-                        {errors?.City?.message}
-                      </small>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              <div className="row mb-4">
-                <div className="col-md-6">
-                  <div className="form-group">
                     <label>Course you are looking for*</label>
                     <select
                       className={`select-course form-select{
@@ -242,6 +213,34 @@ export default function LandingForm(contactform: any) {
                   </div>
                 </div>
                 {/* <div className="col-md-6">
+                  <div className="form-group">
+                    <label>City*</label>
+                    <input
+                      type="text"
+                      placeholder="Enter City*"
+                      className={`${errors?.City && "invalid"}`}
+                      {...register("City", {
+                        required: "City is Required",
+                        pattern: {
+                          value: /^[a-zA-Z_ ]+$/,
+                          message: "Invalid City Name",
+                        },
+                      })}
+                      onKeyUp={() => {
+                        trigger("City");
+                      }}
+                    />
+                    {errors?.City && (
+                      <small className="text-danger">
+                        {errors?.City?.message}
+                      </small>
+                    )}
+                  </div>
+                </div> */}
+              </div>
+
+              {/* <div className="row mb-4">
+                <div className="col-md-6">
               <div className="form-group">
                 <label>Interested Topic*</label>
                 <input
@@ -262,7 +261,7 @@ export default function LandingForm(contactform: any) {
                   <small className="text-danger">{errors.topic.message}</small>
                 )}
               </div>
-            </div> */}
+            </div>
                 <div className="col-md-6">
                   <div className="form-group">
                     <label>Select Highest Qualification*</label>
@@ -287,7 +286,7 @@ export default function LandingForm(contactform: any) {
                     )}
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="row text-center">
                 <button
