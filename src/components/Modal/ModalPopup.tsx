@@ -63,6 +63,7 @@ function ModalPopup(props: any) {
     handleSubmit,
   } = hookForm;
   const programmeOfInterest = watch("Programme_Of_Interest");
+
   const onSubmit = async (data: any) => {
     sebtnDisable(true);
     const current = new Date();
@@ -120,7 +121,9 @@ function ModalPopup(props: any) {
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
-      setValue("Programme_Of_Interest", filterData?.name);
+      !!filterData?.parentCourse
+        ? setValue("Programme_Of_Interest", filterData?.parentCourse?.name)
+        : setValue("Programme_Of_Interest", filterData?.name);
     }
   }, [id]);
   return (
@@ -231,7 +234,7 @@ function ModalPopup(props: any) {
                       )}
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  {/* <div className="col-md-6">
                     <div className="form-group">
                       <label>City*</label>
                       <input
@@ -255,7 +258,7 @@ function ModalPopup(props: any) {
                         </small>
                       )}
                     </div>
-                  </div>
+                  </div> */}
                   <div className="col-md-6 ">
                     <div className="form-group">
                       <label>Course you are looking for*</label>
@@ -356,7 +359,7 @@ function ModalPopup(props: any) {
                       </div>
                     )}
                   </div> */}
-                  <div className="col-md-6">
+                  {/* <div className="col-md-6">
                     <div className="form-group">
                       <label>Select Highest Qualification*</label>
                       <select
@@ -379,7 +382,7 @@ function ModalPopup(props: any) {
                         </small>
                       )}
                     </div>
-                  </div>
+                  </div> */}
                   <div className="d-flex mt-3 justify-content-center align-items-center">
                     {/* <button
                 className="theme-btn btn-style-two mr-2"

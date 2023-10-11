@@ -4941,6 +4941,8 @@ tns-controls-tools {
   background-color: #fff;
   border-radius: 19px;
   padding: 5px 30px;
+  justify-content: center;
+  display: flex;
 }
 
 .sponsors-outer .image-box img {
@@ -6159,16 +6161,16 @@ featured-section .right-col .sec-title h2 {
 }
 .featured-section .right-col .inner h1.title-home strong {
   display: block;
-  font-size: 35px;
+  font-size: 29px;
 }
 
 .featured-section .right-col .inner h1.title-home span {
   display: block;
-  font-size: 47px;
+  font-size: 39px;
   font-family: "Raleway-semibold";
 }
 .featured-section .right-col .inner h1.title-home p {
-  font-size: 18px;
+  font-size: 15px;
 }
 .extra-space-footer {
   margin-top: 50px;
@@ -19183,10 +19185,6 @@ input.PhoneInputInput {
     font-family: Raleway-bold;
   }
 
-  .funfact-six {
-    display: none;
-  }
-
   .partner-one {
     padding-bottom: 30px;
     padding-top: 30px;
@@ -19839,6 +19837,10 @@ button[disabled] {
     margin-top: 64px;
     width: 100%;
     display: block !important;
+    margin-bottom: 30px;
+  }
+  .page-banner .page-nav {
+    padding-top: 22px;
   }
 
   .contact-section .btn-style-two {
@@ -20091,11 +20093,11 @@ button[disabled] {
     color: #fff;
   }
 
-  .yellow-half-bg {
+  /* .yellow-half-bg {
     width: 100%;
     bottom: unset;
     top: 600px;
-  }
+  } */
 
   .revolutionise-text {
     z-index: 3;
