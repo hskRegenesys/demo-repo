@@ -1,5 +1,5 @@
 const trendingSection = {
-  title: "Our Trending Programmes",
+  title: "Our Trending Courses",
   description: "Revolutionize your career with future-ready skills",
   details: [
     {
