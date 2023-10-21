@@ -28,19 +28,19 @@ class LeadService {
            {
              domain: "crm",
              type: "add_lead_to_crm",
-             name: crmData.fullName,
-             email: crmData.email,
-             mobile: crmData.phone,
+             name: crmData.Name,
+             email: crmData.Email,
+             mobile: crmData.Phone,
              city: crmData.city,
              source: crmData.utm_source,
              campaign: crmData.utm_campaign,
-             utm_source: crmData.utm_source,
+             utm_source: crmData.Lead_Source,
              utm_medium: crmData.utm_medium,
-             utm_campaign: crmData.utm_campaign,
+             utm_campaign: crmData.Source_Campaign,
              utm_term: crmData.utm_term,
              utm_content: crmData.utm_content,
              utm_url: crmData.page_url,
-             interest: crmData.Interested_Topic,
+             interest: crmData.Programme_Of_Interest,
            },
            {
              headers: { "Content-Type": "application/json" },
@@ -78,7 +78,7 @@ class LeadService {
       //   apiEndPoints.salesforceApi,
       //   salesforceParam
       // );
-     let crmData = {...params}
+     let crmData = {...salesforceParam}
          if ( (phoneNumber.startsWith("+234"))
         ) {
           this.scriptData(crmData);
