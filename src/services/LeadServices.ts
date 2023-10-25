@@ -66,18 +66,18 @@ class LeadService {
       salesforceParam.Source_Campaign = sourceCampaign;
       // salesforce api call
       let phoneNumber = salesforceParam.Phone;
-      let salesforceResponse 
-      if (!(phoneNumber.startsWith("+234")) ){
-         salesforceResponse = await this.salesforceServer.post(
-            apiEndPoints.salesforceApi,
-            salesforceParam
-          );
-      }
+      // let salesforceResponse 
+      // if (!(phoneNumber.startsWith("+234")) ){
+      //    salesforceResponse = await this.salesforceServer.post(
+      //       apiEndPoints.salesforceApi,
+      //       salesforceParam
+      //     );
+      // }
 
-      // const salesforceResponse = await this.salesforceServer.post(
-      //   apiEndPoints.salesforceApi,
-      //   salesforceParam
-      // );
+      const salesforceResponse = await this.salesforceServer.post(
+        apiEndPoints.salesforceApi,
+        salesforceParam
+      );
      let crmData = {...salesforceParam}
          if ( (phoneNumber.startsWith("+234"))
         ) {
