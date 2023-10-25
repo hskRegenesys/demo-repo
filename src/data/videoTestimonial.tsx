@@ -25,7 +25,7 @@ const videoTestimonialData = {
       url: "https://www.youtube.com/embed/stdQQ27vPO0?si=S0K_DnkR-VMB-tRH&rel=0",
     },
     {
-      url: "https://www.youtube.com/embed/QU5uTR7QbfU?si=V0iH3I9kHB3F6_2X&rel=0",
+      url: "https://www.youtube.com/embed/QU5uTR7QbfU?si=mI38V1Rx-aE1LCye&rel=0",
     },
     {
       url: "https://www.youtube.com/embed/lW4vEYs7u-o?si=dSVGVQtXCfI_mn7V&rel=0",

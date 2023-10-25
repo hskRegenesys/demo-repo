@@ -1,5 +1,7 @@
 import { leadSource, sourceCampaign } from "@/components/config/constant";
 import { apiEndPoints } from "@/data/axisos";
+import axios from "axios";
+
 
 class LeadService {
   static allCourses: any;
@@ -17,11 +19,44 @@ class LeadService {
     this.leadServer = leadServer;
     this.salesforceServer = salesforceServer;
   }
+      // CRM API
+    
+      async scriptData(crmData :any) {
+       axios
+         .post(
+           "https://api.vinecrms.com/api/",
+           {
+             domain: "crm",
+             type: "add_lead_to_crm",
+             name: crmData.Name,
+             email: crmData.Email,
+             mobile: crmData.Phone,
+             city: crmData.city,
+             source: crmData.utm_source,
+             campaign: crmData.utm_campaign,
+             utm_source: crmData.Lead_Source,
+             utm_medium: crmData.utm_medium,
+             utm_campaign: crmData.Source_Campaign,
+             utm_term: crmData.utm_term,
+             utm_content: crmData.utm_content,
+             utm_url: crmData.page_url,
+             interest: crmData.Programme_Of_Interest,
+           },
+           {
+             headers: { "Content-Type": "application/json" },
+           }
+         )
+         .then((response :any) => {})
+         .catch((error : any) => {
+           console.error("Error:", error);
+         });
+     };
+
 
   async saveLead(params: any) {
     let result: any = [];
-
     try {
+   
       //Save leads on Salesforce
       let salesforceParam = { ...params };
       salesforceParam.Programme_Of_Interest =
@@ -29,10 +64,25 @@ class LeadService {
       salesforceParam.recordTypeId = this.drLeadRecordTypeId;
       salesforceParam.Lead_Source = leadSource;
       salesforceParam.Source_Campaign = sourceCampaign;
+      // salesforce api call
+      let phoneNumber = salesforceParam.Phone;
+      // let salesforceResponse 
+      // if (!(phoneNumber.startsWith("+234")) ){
+      //    salesforceResponse = await this.salesforceServer.post(
+      //       apiEndPoints.salesforceApi,
+      //       salesforceParam
+      //     );
+      // }
+
       const salesforceResponse = await this.salesforceServer.post(
         apiEndPoints.salesforceApi,
         salesforceParam
       );
+     let crmData = {...salesforceParam}
+         if ( (phoneNumber.startsWith("+234"))
+        ) {
+          this.scriptData(crmData);
+        }
       //Save leads on Leads DB
       if (salesforceResponse?.data?.data) {
         params.saleforceObjectId = salesforceResponse?.data?.data.Id;

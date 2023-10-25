@@ -918,13 +918,51 @@
     display: none;
   }
   .video-testimonials .sponsors-outer {
-    padding: 20px;
+    padding: 10px 0px;
   }
   .sponsors-carousel-video {
-    padding: 40px 5px;
+    padding: 10px 0px;
+  }
+  .funfact-six__text {
+    width: 200px;
+    font-size: 19px;
+    line-height: normal;
+  }
+  .yellow-half-bg {
+    display: none;
+  }
+  .featured-section {
+    height: auto;
+    max-height: 100%;
+  }
+  .sec-title {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .funfact-six {
+    padding-top: 20px;
+  }
+  .funfact-six__item {
+    margin: 10px auto;
+    display: table;
+  }
+  .featured-section .left-col {
+    margin: 0 auto;
+    display: table;
+  }
+  .funfact-six__count {
+    margin-top: 0px;
   }
   .sponsors-carousel-video iframe {
     width: 100%;
+  }
+  .sponsors-carousel-video .tns-controls-tools .tns-prev {
+    background-color: #1fa393;
+    color: #fff;
+  }
+  .sponsors-carousel-video .tns-controls-tools .tns-next {
+    background-color: #1fa393 !important;
+    color: #fff !important;
   }
   .sticky-form-header .inline-button .btn-style-two span {
     font-size: 15px;
