@@ -3,48 +3,49 @@ interface IAllPageStickyDataType {
 }
 const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-security":
-    "Discover Your Cyber Potential with Digital Regenesys. Unlock a discount of 20%. Limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+  home: "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "digital-marketing":
-    "Unleash your Digital Marketing Potential and Get a 40% Discount Now. Limited Slots Left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "basic-digital-marketing":
-    "Grasp the Fundamentals of Digital Marketing for Career Advancement",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "advanced-digital-marketing":
-    "Become an Expert in Digital Marketing and Drive Your Organization's Success",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "applied-digital-marketing":
-    "Apply Digital Marketing Strategies to Boost Your Career and Company ROI",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "project-management":
-    "Develop skills for career growth in Project Management & Get a 20% discount. Limited Seats Left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "all-courses":
-    "Unleash your inner innovator: Enrol in our AI course & get a 20% discount. Limited seats left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "data-science":
-    "Upskill your Data Science knowledge and Save Big with a 20% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "basic-data-science":
-    "Unlock the Power of Data with Data Science Fundamentals with a 20% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "advanced-data-science":
-    "Improve Your Analytical Abilities Using Advanced Data Science with a 20% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "applied-data-science":
-    "Apply Data Science to Real-World Problems and Advance Your Career with a 20% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "cyber-defense-toolbox-course":
-    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
 
   "digital-marketing-fundamentals":
-    "Grasp the Fundamentals of Digital Marketing for Career Advancement with a 40% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "advance-digital-marketing-course":
-    "Grasp the Fundamentals of Digital Marketing for Career Advancement with a 40% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "cyber-security-fundamentals-course":
-    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "design-thinking":
-    "Uncover New Horizons in Design Thinking with Digital Regenesys & Get 15% Discount. Limited Seats Left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "cyber-security-course":
-    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "artificial-intelligence":
-    "Unlock the future with our game-changing Artificial Intelligence course with a 20% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "ai-introductory":
-    " Acquire the skills to innovate with AI with the help of Digital Regenesys’ online AI course with a 20% discount. Hurry, limited slots left!",
+    " Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "ai-intermediary":
-    "Transform your career and impact the future with the online AI course from Digital Regenesys with a 20% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
   "ai-advanced-applied":
-    "Get a significant rise in your job profile with Digital Regenesys’ online AI course with a 20% discount. Hurry, limited slots left!",
+    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
 };
 
 export default AllPageStickyData;
