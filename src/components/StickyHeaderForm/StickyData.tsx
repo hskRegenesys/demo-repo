@@ -22,7 +22,7 @@ const StickyData = (props: any) => {
     <div>
       {isShown && (
         <div className="sticky-form-header">
-          {router.pathname.includes("all-courses") && (
+          {AllPageStickText && (
             <>
               {!isHide ? (
                 <div className="sticky-form">
