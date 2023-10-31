@@ -8,7 +8,6 @@ export default function CountDownSeatsAvailable(props) {
     available_seats: availableSeats,
     course: "dr_website",
   });
-console.log("available",availableSeats)
  
 
      // get seats available data
