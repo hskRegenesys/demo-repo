@@ -313,6 +313,7 @@ figure {
   text-align: center !important;
 }
 
+
 .yellow-btn {
   background-color: #ffde59;
 }
@@ -6019,12 +6020,55 @@ tns-controls-tools {
   align-items: center;
 }
 .sticky-form-header .inline-button-position span {
-  padding: 5px 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  
 }
 .sticky-form-header .inline-button-position {
   transform: translate(0px, 5px);
 }
-
+.Stacky-btn{
+  text-align: center;
+  max-width: 160px;  
+  padding: 0px 35px;
+  border-radius: 4px;
+border: 1px solid #FDE047;
+background: #FDE047;
+box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
+}
+.Stacky-btn span {
+  color: var(--light-text-primary, #131718);
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; 
+letter-spacing: 0.12px;
+}
+@media  (max-width: 720px) {
+  .Stacky-btn{
+    width: 121px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    
+  }
+  .Stacky-btn span {
+  font-size: 10px;
+  }
+}
+@keyframes blink {
+  0% {
+    color: #FF0000 !important; 
+  }
+  50% {
+    color: #0000FF !important; 
+  }
+  100% {
+    color: #FF0000 !important;
+  }
+}
 .tabs-box {
   position: relative;
 }
@@ -6140,7 +6184,7 @@ tns-controls-tools {
 ***/
 .featured-section {
   position: relative;
-  padding: 200px 0px 90px;
+  padding: 160px 0px 90px;
   background-color: #c3ead8;
   max-height: 886px;
 }
@@ -6161,17 +6205,43 @@ featured-section .right-col .sec-title h2 {
 }
 .featured-section .right-col .inner h1.title-home strong {
   display: block;
-  font-size: 29px;
+  color: var(--light-text-primary, #131718);
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.12px;
 }
 
 .featured-section .right-col .inner h1.title-home span {
   display: block;
-  font-size: 39px;
   font-family: "Raleway-semibold";
+  color: var(--light-text-primary, #131718);
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; 
+letter-spacing: -0.8px;
+margin: 10px 0px;
 }
 .featured-section .right-col .inner h1.title-home p {
   font-size: 15px;
 }
+
+@media (max-width: 768px) {
+  .featured-section .right-col .inner h1.title-home strong {
+    font-size: 14px;
+
+  }
+  .featured-section .right-col .inner h1.title-home span {
+    font-size: 34px;
+
+  }
+  .featured-section .right-col .inner h1.title-home p {
+    font-size: 12px;
+  }
+}
+
 .extra-space-footer {
   margin-top: 50px;
 }
@@ -16130,14 +16200,16 @@ h2.curve-right:after {
 
 /* Funfact six */
 .funfact-six {
-  padding-top: 40px;
-  padding-bottom: 50px;
+ text-align: center;
+  border-radius: 20px;
+  padding: 10px 0px 10px 25px;
+  border: 3px solid var(--light-text-green, #008554);
 }
 
 @media (min-width: 992px) {
   .funfact-six {
-    padding-top: 40px;
-    padding-bottom: 50px;
+    /* padding-top: 40px;
+    padding-bottom: 50px; */
   }
 }
 
@@ -16190,23 +16262,17 @@ h2.curve-right:after {
   line-height: 1;
   margin-top: 25px;
   margin-bottom: 12px;
-  display: flex;
   align-items: center;
 }
 
 .funfact-six__count .image-box {
-  color: #fff;
+ 
   font-size: 26px;
   line-height: 1;
   margin-top: 5px;
   margin-right: 10px;
   display: flex;
   align-items: center;
-  background-color: #1fa393;
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
-  box-shadow: 4px 4px 0 0 #ffe55b;
   justify-content: center;
 }
 
@@ -16220,12 +16286,15 @@ h2.curve-right:after {
 }
 
 .funfact-six__text {
-  margin: 0;
+  color: var(--light-text-primary, #131718);
+  text-align: center;
   font-size: 14px;
-  font-weight: bold;
-  color: #000;
-  line-height: 18px;
-  width: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; 
+  letter-spacing: 0.12px;
+  margin-top: 3px;
+
 }
 
 /* Project six */
@@ -19231,7 +19300,7 @@ input.PhoneInputInput {
   }
 
   .testimonials-five h2 {
-    text-align: left !important;
+    text-align: center !important;
     padding: 10px 30px;
   }
 
@@ -20402,15 +20471,19 @@ h2.highlight {
   height: 45px;
 }
 .sticky-contant span {
-  font-weight: bold;
-  font-size: 20px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+  letter-spacing: 0.12px;
 }
 
 .sticky-form-header {
   z-index: 10;
   position: relative;
   width: 100%;
-  background-color: #ffe55b;
+  background-color: #008554;
 }
 /*map */
 .google-map {
@@ -21383,7 +21456,6 @@ h2.highlight {
 .count-text {
   height: inherit;
   border-radius: 0.375rem;
-  border: 2px solid black !important;
   color: #000;
   text-align: center;
   font-feature-settings: "ss03" on, "liga" off;

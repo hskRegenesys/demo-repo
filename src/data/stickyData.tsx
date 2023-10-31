@@ -4,7 +4,8 @@ interface IAllPageStickyDataType {
 const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-security":
     "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
-  home: "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+  home: "on All Courses! Enrol now, limited to the first 100 Enrolments",
+
 
   "digital-marketing":
     "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
