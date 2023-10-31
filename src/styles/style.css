@@ -21359,3 +21359,49 @@ h2.highlight {
   font-size: 22px;
   margin-bottom: 8px;
 }
+/* -------------------------------countdown css ----------------------------------------- */
+.count-card {
+  position: relative;
+  min-width: 40px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none !important;
+  background: linear-gradient(180deg, #40ffaf 0.12%, #0be770 114.84%);
+}
+.line {
+  position: absolute;
+  width: 100%;
+
+  border-bottom: 1px solid black;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.count-text {
+  height: inherit;
+  border-radius: 0.375rem;
+  border: 2px solid black !important;
+  color: #000;
+  text-align: center;
+  font-feature-settings: "ss03" on, "liga" off;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 30.25px */
+  letter-spacing: -0.55px;
+}
+.bold-heading {
+  color: var(--light-neutral-neutral-900, #2b3340);
+  text-align: center;
+  font-feature-settings: "ss03" on, "liga" off;
+  font-family: Exo 2;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.156px;
+}

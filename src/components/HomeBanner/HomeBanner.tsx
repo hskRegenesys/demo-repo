@@ -1,10 +1,12 @@
 import featuredSection from "@/data/featuredSection";
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { Col, Row } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Image from "next/image";
+import CountDownSeatsAvailable from "../../components/CountDownSeatsAvailable/CountDownSeatsAvailable"
+
 
 const { image, title, subtitle, subsubtitle, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
@@ -26,6 +28,14 @@ const HomeBanner = ({ className = "" }) => {
                     <strong>{title}</strong>
                     <span>{subtitle}</span> <p>{subsubtitle}</p>
                   </h1>
+                  <div>
+                    <div className="d-flex gap-5 align-items-center ">
+                      <h5 className="bold-heading m-0">Seat's Left</h5>
+                      <div className={"d-flex gap-2"}>
+                          <CountDownSeatsAvailable />
+                      </div>
+                    </div>
+                  </div>
                   <FunFactSix />
                 </div>
               </div>
