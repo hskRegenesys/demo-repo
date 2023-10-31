@@ -29,7 +29,7 @@ const HomeBanner = ({ className = "" }) => {
                     <span>{subtitle}</span> <p>{subsubtitle}</p>
                   </h1>
                   <div>
-                    <div className="d-flex gap-5 align-items-center ">
+                    <div  className="d-flex gap-5 align-items-center " style={{ margin: "40px 0px" }}>
                       <h5 className="bold-heading m-0">Seat's Left</h5>
                       <div className={"d-flex gap-2"}>
                           <CountDownSeatsAvailable />

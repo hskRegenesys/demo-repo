@@ -12,12 +12,12 @@ const FunFactSix = () => {
             <Col key={id} sm={12} md={6} lg={4} className="pl-0">
               <div className="funfact-six__item">              
                 <div className="funfact-six__count count-box">             
-                <div className="image-box">
+                
                 <Image src={image} alt="" />
-              </div>
+            
 
 
-                  <div className="count-text text-start">
+                  <div className="count-text ">
                     <VisibilityCountUp count={count}/><span>+</span>
                     
                     <p className="funfact-six__text">{text}</p>
