@@ -7,7 +7,7 @@ const StickyBar = (props: any) => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const handleClick = () => {
     setIsShown((current) => !current);
@@ -20,8 +20,9 @@ const StickyBar = (props: any) => {
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 2000) {
         setShowButton(true);
+        setIsShown(true);
       } else {
         setShowButton(false);
       }
