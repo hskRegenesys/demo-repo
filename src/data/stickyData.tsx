@@ -3,51 +3,51 @@ interface IAllPageStickyDataType {
 }
 const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-security":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
-  home: "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
+  home: "Black Friday Discount On All Courses!, limited to the first 100 Seats",
 
 
   "digital-marketing":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "basic-digital-marketing":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "advanced-digital-marketing":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "applied-digital-marketing":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "project-management":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "all-courses":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "data-science":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "basic-data-science":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "advanced-data-science":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "applied-data-science":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "cyber-defense-toolbox-course":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
 
   "digital-marketing-fundamentals":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "advance-digital-marketing-course":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "cyber-security-fundamentals-course":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "design-thinking":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "cyber-security-course":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "artificial-intelligence":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "ai-introductory":
-    " Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    " Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "ai-intermediary":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
   "ai-advanced-applied":
-    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+    "Black Friday Discount On All Courses!, limited to the first 100 Seats",
 };
 
 export default AllPageStickyData;
