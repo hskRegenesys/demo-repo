@@ -189,7 +189,9 @@
   }
 
   .featured-section .right-col {
-    margin-top: 0;
+    margin-top: 28px;
+    margin-bottom: 44px;
+
   }
   .gallery-section-two .sec-title h2 {
     max-width: 100%;
@@ -811,7 +813,7 @@
     font-size: 30px;
   }
   .sticky-contant span {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     line-height: normal;
     display: block;

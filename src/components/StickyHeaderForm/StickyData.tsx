@@ -36,7 +36,7 @@ const StickyData = (props: any) => {
                   <div style={{ display: 'flex', textAlign:'left' }}>
 
                   <span
-                      
+                      className="persent-offer"
                       style={{
                         ...blinkingStyle,
                         animationName: "blinkKeyframes",
