@@ -157,7 +157,7 @@ function ImageModalPopup(props: any) {
                       Book a Free Counseling Session
                     </strong>
                     <h5 className="d-block d-lg-none">
-                      Enrol Now & Get a 20% Discount
+                      Enrol Now & Get a 30% Discount
                     </h5>
                     <div className="col-md-12">
                       <div className="form-group">
