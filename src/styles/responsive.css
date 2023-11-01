@@ -189,7 +189,9 @@
   }
 
   .featured-section .right-col {
-    margin-top: 0;
+    margin-top: 28px;
+    margin-bottom: 44px;
+
   }
   .gallery-section-two .sec-title h2 {
     max-width: 100%;
@@ -811,11 +813,11 @@
     font-size: 30px;
   }
   .sticky-contant span {
+    font-size: 12px;
     font-weight: 700;
     line-height: normal;
     display: block;
     margin-bottom: 5px;
-    text-align: center;
   }
   .sticky-form-header .contact-section {
     padding: 20px !important;
@@ -825,7 +827,7 @@
     display: block;
   }
   .sticky-form {
-    display: block;
+    display: flex;
     padding-bottom: 12px;
     border-bottom: none;
     padding-top: 5px;

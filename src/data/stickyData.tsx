@@ -3,50 +3,51 @@ interface IAllPageStickyDataType {
 }
 const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-security":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
-  home: "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+  home: "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
+
 
   "digital-marketing":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "basic-digital-marketing":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "advanced-digital-marketing":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "applied-digital-marketing":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "project-management":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "all-courses":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "data-science":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "basic-data-science":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "advanced-data-science":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "applied-data-science":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "cyber-defense-toolbox-course":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
 
   "digital-marketing-fundamentals":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "advance-digital-marketing-course":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "cyber-security-fundamentals-course":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "design-thinking":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "cyber-security-course":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "artificial-intelligence":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "ai-introductory":
-    " Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    " Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "ai-intermediary":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
   "ai-advanced-applied":
-    "Enrol in the Current Fee with Up To 20% Off Before the Fee Goes Up on Nov 1st!",
+    "Off On All Courses! Enrol now, limited to the first 100 Enrolments",
 };
 
 export default AllPageStickyData;

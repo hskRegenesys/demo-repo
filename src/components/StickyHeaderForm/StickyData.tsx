@@ -4,6 +4,7 @@ import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import AllPageStickyData from "@/data/stickyData";
 import { useRouter } from "next/router";
+
 const StickyData = (props: any) => {
   const handleShow = () => setShow(true);
   const [isShown, setIsShown] = useState(true);
@@ -18,6 +19,11 @@ const StickyData = (props: any) => {
 
   const AllPageStickText = AllPageStickyData[props.pageTitle];
 
+  const blinkingStyle = {
+    animation: "blink 1s infinite",
+    
+  };
+
   return (
     <div>
       {isShown && (
@@ -27,22 +33,37 @@ const StickyData = (props: any) => {
               {!isHide ? (
                 <div className="sticky-form">
                   <div className="sticky-contant">
-                    <span> {AllPageStickText}</span>
+                  <div style={{ display: 'flex', textAlign:'left' }}>
+
+                  <span
+                      className="persent-offer"
+                      style={{
+                        ...blinkingStyle,
+                        animationName: "blinkKeyframes",
+                        animationDuration: "2s",
+                        fontSize: '20px',
+                        fontWeight: '900',
+                        margin : '0px 10px'
+                        
+                      }}
+                    >
+                      30%
+                    </span>
+                <span> {AllPageStickText}</span></div>
                   </div>
-                  <div className="link-box inline-button-position">
-                    <a className="theme-btn btn-style-two" onClick={handleShow}>
-                      <i className="btn-curve"></i>
-                      <span className="btn-title">Enquire Now</span>
-                    </a>
+                  <div className="Stacky-btn" onClick={handleShow}>
+                      <span className="" >
+                        Enquire Now
+                      </span>
                   </div>
-                  <div className="closeBtn">
+                  {/* <div className="closeBtn">
                     <button
                       onClick={handleClick}
                       type="button"
                       className="btn-close"
                       aria-label="Close"
                     ></button>
-                  </div>
+                  </div> */}
                 </div>
               ) : null}
             </>
@@ -55,6 +76,21 @@ const StickyData = (props: any) => {
       <Modal show={thankYouShow}>
         <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
+      <style>
+        {`
+          @keyframes blinkKeyframes {
+            0% {
+              color: yellow;
+            }
+            50% {
+              color: black;
+            }
+            100% {
+              color: green;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

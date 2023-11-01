@@ -1,8 +1,8 @@
 const featuredSection = {
-  image: "/assets/images/resource/banner-bg.webp",
-  title: "Elevate Your Career with",
-  subtitle: "Digital Regenesys",
-  subsubtitle: "One of the leading Ed-tech from Silicon Valley",
+  image: "/assets/images/resource/DR-Website-Baneer.webp",
+  title: "Digital Regenesys Black Friday! ",
+  subtitle: "30% Discount on All Courses",
+  subsubtitle: "But Hurry, it's only for the first 100 Enrolments",
   features: [
     {
       id: 1,
