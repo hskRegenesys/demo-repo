@@ -6222,23 +6222,26 @@ font-style: normal;
 font-weight: 700;
 line-height: 130%; 
 letter-spacing: -0.8px;
-margin: 10px 0px;
+margin: 20px 0px;
 }
 .featured-section .right-col .inner h1.title-home p {
-  font-size: 15px;
+  font-size: 21px;
 }
 
 @media (max-width: 768px) {
   .featured-section .right-col .inner h1.title-home strong {
-    font-size: 14px;
+    font-size: 16px;
 
   }
   .featured-section .right-col .inner h1.title-home span {
     font-size: 34px;
+    width: 300px;
+    margin: 20px auto;
+
 
   }
   .featured-section .right-col .inner h1.title-home p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -21476,4 +21479,26 @@ h2.highlight {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.156px;
+  margin: 14px 14px 14px 0;
+
+}
+.seats-count{
+  display: flex;
+  text-align: center;
+}
+@media (max-width: 560px){
+  .seats-count{
+    text-align: center;
+    margin: 40px 38px !important;
+  }
+  .bold-heading {  
+    font-size: 18px;
+  }
+  .count-text {
+    font-size: 26px;
+  }
+  .count-card {
+    min-width: 30px;
+    height: 40px;
+     }
 }
