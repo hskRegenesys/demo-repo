@@ -813,11 +813,11 @@
     font-size: 30px;
   }
   .sticky-contant span {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     line-height: normal;
     display: block;
-    margin-bottom: 5px;
+   
   }
   .sticky-form-header .contact-section {
     padding: 20px !important;
