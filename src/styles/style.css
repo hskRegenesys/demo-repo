@@ -6049,26 +6049,16 @@ letter-spacing: 0.12px;
 }
 @media  (max-width: 720px) {
   .Stacky-btn{
-    width: 121px;
-    padding: 0px 10px;
-    margin: 0px 5px;
+    width: 138px;
+    padding: 0px 5px;
+    margin-right: 5px;
     
   }
   .Stacky-btn span {
-  font-size: 10px;
+    font-size: 11px;
   }
 }
-@keyframes blink {
-  0% {
-    color: #FF0000 !important; 
-  }
-  50% {
-    color: #0000FF !important; 
-  }
-  100% {
-    color: #FF0000 !important;
-  }
-}
+
 .tabs-box {
   position: relative;
 }

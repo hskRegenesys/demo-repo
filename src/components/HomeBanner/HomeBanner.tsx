@@ -30,7 +30,7 @@ const HomeBanner = ({ className = "" }) => {
                   </h1>
                   <div>
                     <div  className="seats-count" style={{ margin: "40px 0px" }}>
-                      <h5 className="bold-heading">Seat Left</h5>
+                      <h5 className="bold-heading">Seats Left</h5>
                       <div className={"d-flex gap-2"}>
                           <CountDownSeatsAvailable />
                       </div>

@@ -82,11 +82,8 @@ const StickyData = (props: any) => {
             0% {
               color: yellow;
             }
-            50% {
-              color: black;
-            }
-            100% {
-              color: green;
+                       100% {
+              color: white;
             }
           }
         `}
