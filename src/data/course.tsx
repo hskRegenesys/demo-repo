@@ -6009,35 +6009,35 @@ export const courseData = {
 export const brochureDetails: any = {
   //Project Management
   PM: {
-    name: "ProjectManagementBrochure23.pdf",
+    name: "project-management-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
 
   //Cybersecurity
   CS: {
-    name: "CompleteCybersecuritySolution-Brochure23.pdf",
+    name: "cybersecurity-complete-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
 
   //Basic Data Science
   BDSCI: {
-    name: "PrintDataScienceBasicBrochure23.pdf",
+    name: "basic-datascience-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
 
   //Advance Data Science
   ADDSCI: {
-    name: "PrintDataScienceAdvancedBrochure23.pdf",
+    name: "advance-datascience-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
 
   //Applied Data Science
   APDSCI: {
-    name: "PrintDataScienceAppliedBrochure23.pdf",
+    name: "applied-datascience-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -6064,7 +6064,7 @@ export const brochureDetails: any = {
 
   //"Cybersecurity Fundamentals"
   CSFC: {
-    name: "CompleteCybersecuritySolution-Brochure23.pdf",
+    name: "cybersecurity-complete-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -6097,17 +6097,17 @@ export const brochureDetails: any = {
   },
 
   AIIP: {
-    name: "artificial_intelligence.pdf",
+    name: "ai-introductory-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
   AIIPF: {
-    name: "artificial_intelligence.pdf",
+    name: "ai-intermediary-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
   AIAAPP: {
-    name: "artificial_intelligence.pdf",
+    name: "ai-advanced-brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
