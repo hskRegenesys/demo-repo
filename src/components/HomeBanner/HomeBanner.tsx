@@ -16,6 +16,36 @@ const HomeBanner = ({ className = "" }) => {
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
 
+  // -----Animation text --------
+  const [displayText, setDisplayText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const text = "First 100 Enrolments";
+  const speed = 200;
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (currentIndex < text.length) {
+        setDisplayText((prevText) => prevText + text[currentIndex]);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      } else {
+        clearInterval(timer);
+        setTimeout(() => {
+          setShowCursor(false);
+          setCurrentIndex(0);
+          setDisplayText("");
+          setShowCursor(true);
+        }, speed * 3); 
+      }
+    }, speed);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [text, speed, currentIndex]);
+// -----------------------------------------
+ 
+
   return (
     <>
       <section className={`featured-section ${className}`}>
@@ -26,7 +56,11 @@ const HomeBanner = ({ className = "" }) => {
                 <div className="sec-title">
                   <h1 className="title-home">
                     <strong>{title}</strong>
-                    <span>{subtitle}</span> <p>{subsubtitle}</p>
+                    <span>{subtitle}</span> 
+                    <div style={{ display: 'flex' }}>
+                      <p >{subsubtitle}</p>
+                      <p className="animi-text">{displayText} {showCursor && "|"}</p>
+                    </div>
                   </h1>
                   <div>
                     <div  className="seats-count" style={{ margin: "40px 0px" }}>
