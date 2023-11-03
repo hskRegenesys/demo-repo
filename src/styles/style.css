@@ -6216,6 +6216,11 @@ margin: 20px 0px;
 }
 .featured-section .right-col .inner h1.title-home p {
   font-size: 21px;
+  margin-right: 5px;
+}
+.animi-text{
+font-size: 24px !important;
+line-height: 35px !important;
 }
 
 @media (max-width: 768px) {
@@ -6231,7 +6236,14 @@ margin: 20px 0px;
 
   }
   .featured-section .right-col .inner h1.title-home p {
-    font-size: 14px;
+    font-size: 13px;
+    margin-right: 5px;
+
+  }
+  .animi-text{
+    font-size: 16px !important;
+    line-height: 19px !important;
+
   }
 }
 
@@ -21436,6 +21448,21 @@ h2.highlight {
   width: 100%;
   border: none !important;
   background: linear-gradient(180deg, #40ffaf 0.12%, #0be770 114.84%);
+  animation: blink 2s linear infinite;
+
+}
+@keyframes blink {
+  0% { 
+    opacity: 0; 
+} 
+
+50% { 
+    opacity: 0.7; 
+} 
+
+100% { 
+    opacity: 0; 
+} 
 }
 .line {
   position: absolute;
@@ -21479,7 +21506,7 @@ h2.highlight {
 @media (max-width: 560px){
   .seats-count{
     text-align: center;
-    margin: 40px 38px !important;
+    margin: 20px 38px !important;
   }
   .bold-heading {  
     font-size: 18px;
