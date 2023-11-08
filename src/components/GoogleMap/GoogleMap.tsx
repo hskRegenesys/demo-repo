@@ -22,7 +22,7 @@ const GoogleMap = () => {
               growth by providing learners with access to high-quality,
               cutting-edge education. Whether it's in the field of technology,
               business, or creative disciplines, Digital Regenesys offers
-              comprehensive programs that cater to diverse learning needs.
+              comprehensive Courses that cater to diverse learning needs.
               Through our global presence, we strive to empower learners from
               different regions to thrive in their respective professional
               landscapes, contribute to innovation, and shape the future of
