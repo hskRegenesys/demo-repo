@@ -313,7 +313,6 @@ figure {
   text-align: center !important;
 }
 
-
 .yellow-btn {
   background-color: #ffde59;
 }
@@ -6025,34 +6024,32 @@ tns-controls-tools {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  
 }
 .sticky-form-header .inline-button-position {
   transform: translate(0px, 5px);
 }
-.Stacky-btn{
+.Stacky-btn {
   text-align: center;
-  max-width: 160px;  
+  max-width: 160px;
   padding: 0px 35px;
   border-radius: 4px;
-border: 1px solid #FDE047;
-background: #FDE047;
-box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
+  border: 1px solid #fde047;
+  background: #fde047;
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
 }
 .Stacky-btn span {
   color: var(--light-text-primary, #131718);
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: 16px; 
-letter-spacing: 0.12px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.12px;
 }
-@media  (max-width: 720px) {
-  .Stacky-btn{
+@media (max-width: 720px) {
+  .Stacky-btn {
     width: 138px;
     padding: 0px 5px;
     margin-right: 5px;
-    
   }
   .Stacky-btn span {
     font-size: 11px;
@@ -6196,54 +6193,49 @@ featured-section .right-col .sec-title h2 {
 .featured-section .right-col .inner h1.title-home strong {
   display: block;
   color: var(--light-text-primary, #131718);
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.12px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
 }
 
 .featured-section .right-col .inner h1.title-home span {
   display: block;
   font-family: "Raleway-semibold";
   color: var(--light-text-primary, #131718);
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 130%; 
-letter-spacing: -0.8px;
-margin: 20px 0px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin: 20px 0px;
 }
 .featured-section .right-col .inner h1.title-home p {
   font-size: 21px;
   margin-right: 5px;
 }
-.animi-text{
-font-size: 24px !important;
-line-height: 35px !important;
+.animi-text {
+  font-size: 24px !important;
+  line-height: 35px !important;
 }
 
 @media (max-width: 768px) {
   .featured-section .right-col .inner h1.title-home strong {
     font-size: 16px;
-
   }
   .featured-section .right-col .inner h1.title-home span {
     font-size: 34px;
     width: 300px;
     margin: 20px auto;
-
-
   }
   .featured-section .right-col .inner h1.title-home p {
     font-size: 13px;
     margin-right: 5px;
-
   }
-  .animi-text{
+  .animi-text {
     font-size: 16px !important;
     line-height: 19px !important;
-
   }
 }
 
@@ -16205,7 +16197,7 @@ h2.curve-right:after {
 
 /* Funfact six */
 .funfact-six {
- text-align: center;
+  text-align: center;
   border-radius: 20px;
   padding: 10px 0px 10px 25px;
   border: 3px solid var(--light-text-green, #008554);
@@ -16271,7 +16263,6 @@ h2.curve-right:after {
 }
 
 .funfact-six__count .image-box {
- 
   font-size: 26px;
   line-height: 1;
   margin-top: 5px;
@@ -16296,10 +16287,9 @@ h2.curve-right:after {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; 
+  line-height: 20px;
   letter-spacing: 0.12px;
   margin-top: 3px;
-
 }
 
 /* Project six */
@@ -19190,7 +19180,17 @@ input.PhoneInputInput {
 .tns-controls9 button {
   box-shadow: 3px 3px 0 0 #1fa393;
 }
-
+.what-they-say-video {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #008554;
+  padding: 15px;
+}
+.what-they-say-video iframe {
+  width: 100%;
+}
 @media only screen and (max-width: 479px) {
   .we-work-section .sec-title h2 {
     max-width: 100%;
@@ -20476,11 +20476,11 @@ h2.highlight {
   height: 45px;
 }
 .sticky-contant span {
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; 
+  line-height: 24px;
   letter-spacing: 0.12px;
 }
 
@@ -21449,20 +21449,19 @@ h2.highlight {
   border: none !important;
   background: linear-gradient(180deg, #40ffaf 0.12%, #0be770 114.84%);
   animation: blink 2s linear infinite;
-
 }
 @keyframes blink {
-  0% { 
-    opacity: 0; 
-} 
+  0% {
+    opacity: 0;
+  }
 
-50% { 
-    opacity: 0.7; 
-} 
+  50% {
+    opacity: 0.7;
+  }
 
-100% { 
-    opacity: 0; 
-} 
+  100% {
+    opacity: 0;
+  }
 }
 .line {
   position: absolute;
@@ -21497,18 +21496,17 @@ h2.highlight {
   line-height: normal;
   letter-spacing: 0.156px;
   margin: 14px 14px 14px 0;
-
 }
-.seats-count{
+.seats-count {
   display: flex;
   text-align: center;
 }
-@media (max-width: 560px){
-  .seats-count{
+@media (max-width: 560px) {
+  .seats-count {
     text-align: center;
     margin: 20px 38px !important;
   }
-  .bold-heading {  
+  .bold-heading {
     font-size: 18px;
   }
   .count-text {
@@ -21517,5 +21515,5 @@ h2.highlight {
   .count-card {
     min-width: 30px;
     height: 40px;
-     }
+  }
 }
