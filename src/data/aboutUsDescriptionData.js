@@ -92,7 +92,7 @@ export const aboutUsDescriptionData = {
 };
 
 export const allCourse = {
-  title: "Get Certified, Get Ahead with Our Programs",
+  title: "Get Certified, Get Ahead with Our Courses",
   pagedesc: "Revolutionise your career with future-ready skills",
   highlight: "Know who we are",
   text1:
