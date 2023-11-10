@@ -50,6 +50,8 @@ import { allCourseList } from "@/data/courseData";
 import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
 import { Modal } from "react-bootstrap";
 import ModalPopup from "@/components/Modal/ModalPopup";
+import WhayTheySay from "@/components/whatTheySay/whatTheySay";
+import videoTestimonialData from "@/data/videoTestimonial";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -129,7 +131,9 @@ const DigitalMarketing = (props: any) => {
           )}
           <FeatureSeven courseDetails={courseDetails} />
           <VideoOne courseDetails={courseDetails} />
+          <WhayTheySay courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
+
           {CourseCurriculumTwo && (
             <CourseCurriculumTwo courseDetails={courseDetails} />
           )}
