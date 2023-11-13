@@ -76,7 +76,7 @@ const Home2 = () => {
       {/* <div id="tawk_5825dfc218d9f16af02abeea"></div>; */}
       <Modal show={show} onHide={() => setShow(false)}>
         <ImageModalPopup
-          bgImage="DR-popup-47.webp"
+          bgImage="home-popup-banner.webp"
           setShows={setShow}
           thankYouShow={setThankYouShow}
         />
