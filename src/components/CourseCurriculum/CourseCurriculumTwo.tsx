@@ -13,7 +13,8 @@ const Faqs = (props: any) => {
   return (
     <Col lg={12} md={12} sm={12} className="faq-block curriculum">
       <h2 className="text-center">
-        <i className="arrow-sign-right"></i>Cybersecurity Defence Toolsbox
+        <i className="arrow-sign-right"></i>Cybersecurity Defence <br></br> Tool
+        box
       </h2>
       <ul className="accordion-box clearfix">
         {faqs?.map((item: any) => {
