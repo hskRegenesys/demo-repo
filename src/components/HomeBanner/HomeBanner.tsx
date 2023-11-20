@@ -1,12 +1,11 @@
 import featuredSection from "@/data/featuredSection";
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Image from "next/image";
-import CountDownSeatsAvailable from "../../components/CountDownSeatsAvailable/CountDownSeatsAvailable"
-
+import CountDownSeatsAvailable from "../../components/CountDownSeatsAvailable/CountDownSeatsAvailable";
 
 const { image, title, subtitle, subsubtitle, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
@@ -20,7 +19,7 @@ const HomeBanner = ({ className = "" }) => {
   const [displayText, setDisplayText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const text = "First 100 Enrolments";
+  const text = "Limited Time Only";
   const speed = 200;
 
   useEffect(() => {
@@ -35,7 +34,7 @@ const HomeBanner = ({ className = "" }) => {
           setCurrentIndex(0);
           setDisplayText("");
           setShowCursor(true);
-        }, speed * 3); 
+        }, speed * 3);
       }
     }, speed);
 
@@ -43,8 +42,7 @@ const HomeBanner = ({ className = "" }) => {
       clearInterval(timer);
     };
   }, [text, speed, currentIndex]);
-// -----------------------------------------
- 
+  // -----------------------------------------
 
   return (
     <>
@@ -56,17 +54,19 @@ const HomeBanner = ({ className = "" }) => {
                 <div className="sec-title">
                   <h1 className="title-home">
                     <strong>{title}</strong>
-                    <span>{subtitle}</span> 
-                    <div style={{ display: 'flex' }}>
-                      <p >{subsubtitle}</p>
-                      <p className="animi-text">{displayText} {showCursor && "|"}</p>
+                    <span>{subtitle}</span>
+                    <div style={{ display: "flex" }}>
+                      <p>{subsubtitle}</p>
+                      <p className="animi-text">
+                        {displayText} {showCursor && "|"}
+                      </p>
                     </div>
                   </h1>
                   <div>
-                    <div  className="seats-count" style={{ margin: "40px 0px" }}>
+                    <div className="seats-count" style={{ margin: "40px 0px" }}>
                       <h5 className="bold-heading">Seats Left</h5>
                       <div className={"d-flex gap-2"}>
-                          <CountDownSeatsAvailable />
+                        <CountDownSeatsAvailable />
                       </div>
                     </div>
                   </div>
