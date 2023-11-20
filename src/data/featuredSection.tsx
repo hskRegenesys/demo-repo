@@ -1,5 +1,5 @@
 const featuredSection = {
-  image: "/assets/images/resource/home-Banner.webp",
+  image: "/assets/images/resource/Limited-Time-Offer-banner.webp",
   title: "Digital Regenesys Black Friday! ",
   subtitle: "30% Discount on All Courses",
   subsubtitle: "But Hurry, Offer Valid for",
