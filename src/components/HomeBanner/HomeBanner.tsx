@@ -62,14 +62,14 @@ const HomeBanner = ({ className = "" }) => {
                       </p>
                     </div>
                   </h1>
-                  <div>
+                  {/* <div>
                     <div className="seats-count" style={{ margin: "40px 0px" }}>
                       <h5 className="bold-heading">Seats Left</h5>
                       <div className={"d-flex gap-2"}>
                         <CountDownSeatsAvailable />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <FunFactSix />
                 </div>
               </div>
