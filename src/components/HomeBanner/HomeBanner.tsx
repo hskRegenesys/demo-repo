@@ -19,7 +19,7 @@ const HomeBanner = ({ className = "" }) => {
   const [displayText, setDisplayText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const text = "Limited Time Only";
+  const text = " Last 3 Days to Avail";
   const speed = 200;
 
   useEffect(() => {
