@@ -153,7 +153,7 @@ function ImageModalPopup(props: any) {
                 <div className="row">
                   <div className="modal-pop-style-modify">
                     <strong className="d-none d-lg-block">
-                      Book a Free Counseling Session
+                      Request a Call
                     </strong>
                     <h5 className="d-block d-lg-none">
                       Enrol Now & Get a 30% Discount

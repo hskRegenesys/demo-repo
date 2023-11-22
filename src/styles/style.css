@@ -18890,7 +18890,7 @@ h6.designation {
   background-color: #c3ead8 !important;
   background-image: url(/assets/images/background/our-mission-1.webp);
   background-size: 80%;
-  
+
   background-position: bottom right;
   background-repeat: no-repeat;
   box-shadow: 8px 8px 0 0 #ffe55b;
@@ -18925,6 +18925,8 @@ h6.designation {
   background-color: #c3ead8;
   padding: 26px;
   border-radius: 10px;
+  text-align: center;
+  margin-left: -67px;
 }
 .modal-pop-style-modify label {
   color: #fff;
