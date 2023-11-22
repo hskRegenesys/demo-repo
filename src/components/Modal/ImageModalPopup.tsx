@@ -146,7 +146,6 @@ function ImageModalPopup(props: any) {
                     layout="fill"
                     width="800"
                     height="500"
-                    objectFit="cover"
                   />
                 </div>
               </div>
