@@ -191,7 +191,6 @@
   .featured-section .right-col {
     margin-top: 28px;
     margin-bottom: 44px;
-
   }
   .gallery-section-two .sec-title h2 {
     max-width: 100%;
@@ -396,6 +395,9 @@
   }
   .main-footer .column {
     text-align: center;
+  }
+  .modal-pop-style-modify {
+    margin-left: 0px !important;
   }
   .modal-pop-style-modify label {
     color: #000;
@@ -817,7 +819,6 @@
     font-weight: 700;
     line-height: normal;
     display: block;
-   
   }
   .sticky-form-header .contact-section {
     padding: 20px !important;
