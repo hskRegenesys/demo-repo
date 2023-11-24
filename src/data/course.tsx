@@ -70,7 +70,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/QQkcztXJDVw?autoplay=1&loop=1&playlist=QQkcztXJDVw",
+          "https://www.youtube.com/embed/9OXHP5KFIT8?autoplay=1&loop=1&playlist=9OXHP5KFIT8",
         title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
@@ -714,7 +714,7 @@ export const courseData = {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/TusvuEe9V8g?autoplay=1&loop=1&playlist=TusvuEe9V8g",
+          "https://www.youtube.com/embed/BGA8p67fckM?autoplay=1&loop=1&playlist=BGA8p67fckM",
 
         title: "Certification Programme in Basic Data Science",
         text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
@@ -1126,7 +1126,7 @@ export const courseData = {
       {
         id: 1,
         youtubeUrl:
-          "https://www.youtube.com/embed/TusvuEe9V8g?autoplay=1&loop=1&playlist=TusvuEe9V8g",
+          "https://www.youtube.com/embed/BGA8p67fckM?autoplay=1&loop=1&playlist=BGA8p67fckM",
         title: "Certification Programme in Advanced Data Science",
         text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
         lists: [
@@ -1491,7 +1491,7 @@ export const courseData = {
       {
         id: 1,
         youtubeUrl:
-          "https://www.youtube.com/embed/TusvuEe9V8g?autoplay=1&loop=1&playlist=TusvuEe9V8g",
+          "https://www.youtube.com/embed/BGA8p67fckM?autoplay=1&loop=1&playlist=BGA8p67fckM",
         title: "Certification Programme in Applied Data Science",
         text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
         lists: [
@@ -1819,7 +1819,7 @@ export const courseData = {
         id: 1,
 
         youtubeUrl:
-          "https://www.youtube.com/embed/XYGsHUhMXuQ?autoplay=1&loop=1&playlist=XYGsHUhMXuQ",
+          "https://www.youtube.com/embed/y1UVl_O0OBE?autoplay=1&loop=1&playlist=y1UVl_O0OBE",
         title:
           "Certification in Artificial Intelligence Introductory Programme",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Introductory Programme' and unlock the
@@ -2123,7 +2123,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/XYGsHUhMXuQ?autoplay=1&loop=1&playlist=XYGsHUhMXuQ",
+          "https://www.youtube.com/embed/y1UVl_O0OBE?autoplay=1&loop=1&playlist=y1UVl_O0OBE",
         title:
           "Certification in Artificial Intelligence Intermediary Programme",
         text: `In the dynamic digital landscape, harnessing the power of Artificial Intelligence (AI) is crucial for staying ahead. Join
@@ -2446,7 +2446,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/XYGsHUhMXuQ?autoplay=1&loop=1&playlist=XYGsHUhMXuQ",
+          "https://www.youtube.com/embed/y1UVl_O0OBE?autoplay=1&loop=1&playlist=y1UVl_O0OBE",
         title:
           "Certification in Artificial Intelligence Advanced Applied Programme",
         text: `Unleash your potential with our 'AI Advanced Applied Programme.' Skyrocket your career by mastering advanced AI
@@ -5431,7 +5431,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/Zn8swvBnT3M?autoplay=1&loop=1&playlist=Zn8swvBnT3M",
+          "https://www.youtube.com/embed/IbBdw9bShcE?autoplay=1&loop=1&playlist=IbBdw9bShcE",
 
         title: "Certification Programme in Cybersecurity",
         text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with Cyber Security Fundamentals course. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",

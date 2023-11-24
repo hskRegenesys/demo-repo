@@ -9,7 +9,7 @@ export const funFactSix = [
     id: 2,
     image: "assets/images/icons/Study.svg",
     count: 10000,
-    text: "Students Enrolled",
+    text: "Student Enroled",
   },
   {
     id: 3,
