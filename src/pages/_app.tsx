@@ -13,6 +13,9 @@ import "react-circular-progressbar/dist/styles.css";
 import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
 
+import { apiEndPoints } from "@/data/axisos";
+import axios from "axios";
+
 // extra css
 import "@/styles/style.css";
 import "@/styles/hover.css";
@@ -20,9 +23,10 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
+  const salesforceResponse = process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL;
   return (
     <ContextProvider>
-      {/* <div id="tawk_5825dfc218d9f16af02abeea"></div> */}
+      <div id="tawk_5825dfc218d9f16af02abeea"></div>
       <Component {...pageProps} />
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
@@ -184,7 +188,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/*End Google Tag Manager (noscript) */}
 
-      {/* <Script
+      <Script
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
@@ -199,7 +203,71 @@ const MyApp = ({ Component, pageProps }: any) => {
           })();
               `,
         }}
-      /> */}
+      />
+
+      <Script
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6513f6520f2b18434fdad936/1hbavkcmj';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+      window.Tawk_API = window.Tawk_API || {};
+      window.Tawk_API.onPrechatSubmit = function(data){
+        console.log("data",data);
+        const salesForceUrl = '${salesforceResponse}';
+        console.log("salesForceUrl", salesforceResponse);
+        const salesForceData = {
+          recordTypeId:"0127Q000000NDbcQAG",
+          Interested_Topic:"",
+          Qualification:"",
+          utm_parameters:"",
+          Mode_of_Study:"",
+          Verified_Mobile_No:"",
+        };   
+        data.forEach(item => {
+          const labelMapping = {
+              "Name": "Name",
+              "Email": "Email",
+              "Mobile No": "Phone",
+              "Programme of Interest": "Programme_Of_Interest"
+          };
+          const propertyName = labelMapping[item.label] || item.label; 
+          salesForceData[propertyName] = item.answer;
+      });
+        try {
+          fetch(salesForceUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(salesForceData),
+          })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(responseData => {
+              console.log('Data submitted successfully:', responseData);
+            })
+            .catch(error => {
+              console.error('Error submitting data:', error);
+            });
+        } catch (error) {
+          console.error('Error in fetch operation:', error);
+        }
+      };
+    `,
+        }}
+      />
 
       {/* Google Tag Script End */}
     </ContextProvider>
