@@ -2,7 +2,6 @@ import { leadSource, sourceCampaign } from "@/components/config/constant";
 import { apiEndPoints } from "@/data/axisos";
 import axios from "axios";
 
-
 class LeadService {
   static allCourses: any;
   salesforceProgramOfIngterest = new Map([
@@ -19,44 +18,43 @@ class LeadService {
     this.leadServer = leadServer;
     this.salesforceServer = salesforceServer;
   }
-      // CRM API
-    
-      async scriptData(crmData :any) {
-       axios
-         .post(
-           "https://api.vinecrms.com/api/",
-           {
-             domain: "crm",
-             type: "add_lead_to_crm",
-             name: crmData.Name,
-             email: crmData.Email,
-             mobile: crmData.Phone,
-             city: crmData.city,
-             source: crmData.utm_source,
-             campaign: crmData.utm_campaign,
-             utm_source: crmData.Lead_Source,
-             utm_medium: crmData.utm_medium,
-             utm_campaign: crmData.Source_Campaign,
-             utm_term: crmData.utm_term,
-             utm_content: crmData.utm_content,
-             utm_url: crmData.page_url,
-             interest: crmData.Programme_Of_Interest,
-           },
-           {
-             headers: { "Content-Type": "application/json" },
-           }
-         )
-         .then((response :any) => {})
-         .catch((error : any) => {
-           console.error("Error:", error);
-         });
-     };
+  // CRM API
 
+  async scriptData(crmData: any) {
+    axios
+      .post(
+        "https://api.vinecrms.com/api/",
+        {
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: crmData.Name,
+          email: crmData.Email,
+          mobile: crmData.Phone,
+          city: crmData.city,
+          source: crmData.utm_source,
+          campaign: crmData.utm_campaign,
+          utm_source: crmData.Lead_Source,
+          utm_medium: crmData.utm_medium,
+          utm_campaign: crmData.Source_Campaign,
+          utm_term: crmData.utm_term,
+          utm_content: crmData.utm_content,
+          utm_url: crmData.page_url,
+          country: "NIGERIA",
+          interest: crmData.Programme_Of_Interest,
+        },
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      )
+      .then((response: any) => {})
+      .catch((error: any) => {
+        console.error("Error:", error);
+      });
+  }
 
   async saveLead(params: any) {
     let result: any = [];
     try {
-   
       //Save leads on Salesforce
       let salesforceParam = { ...params };
       salesforceParam.Programme_Of_Interest =
@@ -66,7 +64,7 @@ class LeadService {
       salesforceParam.Source_Campaign = sourceCampaign;
       // salesforce api call
       let phoneNumber = salesforceParam.Phone;
-      // let salesforceResponse 
+      // let salesforceResponse
       // if (!(phoneNumber.startsWith("+234")) ){
       //    salesforceResponse = await this.salesforceServer.post(
       //       apiEndPoints.salesforceApi,
@@ -74,21 +72,31 @@ class LeadService {
       //     );
       // }
 
-      const salesforceResponse = await this.salesforceServer.post(
-        apiEndPoints.salesforceApi,
-        salesforceParam
-      );
-     let crmData = {...salesforceParam}
-         if ( (phoneNumber.startsWith("+234"))
-        ) {
-          this.scriptData(crmData);
+      // const salesforceResponse = await this.salesforceServer.post(
+      //   apiEndPoints.salesforceApi,
+      //   salesforceParam
+      // );
+      if (!phoneNumber.startsWith("+234")) {
+        const salesforceResponse = await this.salesforceServer.post(
+          apiEndPoints.salesforceApi,
+          salesforceParam
+        );
+        if (salesforceResponse?.data?.data) {
+          params.saleforceObjectId = salesforceResponse?.data?.data.Id;
+          params.saleforceObjectStatus =
+            salesforceResponse?.data?.data.ResultCode;
         }
-      //Save leads on Leads DB
-      if (salesforceResponse?.data?.data) {
-        params.saleforceObjectId = salesforceResponse?.data?.data.Id;
-        params.saleforceObjectStatus =
-          salesforceResponse?.data?.data.ResultCode;
       }
+      let crmData = { ...salesforceParam };
+      if (phoneNumber.startsWith("+234")) {
+        this.scriptData(crmData);
+      }
+      //Save leads on Leads DB
+      // if (salesforceResponse?.data?.data) {
+      //   params.saleforceObjectId = salesforceResponse?.data?.data.Id;
+      //   params.saleforceObjectStatus =
+      //     salesforceResponse?.data?.data.ResultCode;
+      // }
       params.Interested_Topic = params.Programme_Of_Interest;
       params.Qualification = params.highest_qualification;
     } catch (err: any) {
