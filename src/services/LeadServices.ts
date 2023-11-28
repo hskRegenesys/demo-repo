@@ -84,7 +84,7 @@ class LeadService {
       //   apiEndPoints.salesforceApi,
       //   salesforceParam
       // );
-      if (!phoneNumber.startsWith("+234")) {
+      if (!(phoneNumber.startsWith("+234") || phoneNumber.startsWith("+256"))) {
         const salesforceResponse = await this.salesforceServer.post(
           apiEndPoints.salesforceApi,
           salesforceParam
