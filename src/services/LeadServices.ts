@@ -21,7 +21,6 @@ class LeadService {
   // CRM API
 
   async scriptData(crmData: any) {
-    console.log("crmData", crmData);
     const crmCountryCode = crmData.Phone?.startsWith("+234")
       ? "NIGERIA"
       : crmData.Phone?.startsWith("+254")
