@@ -21,7 +21,14 @@ class LeadService {
   // CRM API
 
   async scriptData(crmData: any) {
-    axios
+    const crmCountryCode = crmData.Phone?.startsWith("+234")
+      ? "NIGERIA"
+      : crmData.Phone?.startsWith("+254")
+      ? "KENYA"
+      : crmData.Phone?.startsWith("+256")
+      ? "UGANDA"
+      : "TANZANIA";
+    await axios
       .post(
         "https://api.vinecrms.com/api/",
         {
@@ -39,7 +46,7 @@ class LeadService {
           utm_term: crmData.utm_term,
           utm_content: crmData.utm_content,
           utm_url: crmData.page_url,
-          country: "NIGERIA",
+          country: crmCountryCode,
           interest: crmData.Programme_Of_Interest,
         },
         {
@@ -76,7 +83,7 @@ class LeadService {
       //   apiEndPoints.salesforceApi,
       //   salesforceParam
       // );
-      if (!phoneNumber.startsWith("+234")) {
+      if (!(phoneNumber.startsWith("+234") || phoneNumber.startsWith("+256"))) {
         const salesforceResponse = await this.salesforceServer.post(
           apiEndPoints.salesforceApi,
           salesforceParam
@@ -88,7 +95,12 @@ class LeadService {
         }
       }
       let crmData = { ...salesforceParam };
-      if (phoneNumber.startsWith("+234")) {
+      if (
+        phoneNumber.startsWith("+234")
+        // ||
+        // phoneNumber.startsWith("+254") ||
+        // phoneNumber.startsWith("+256")
+      ) {
         this.scriptData(crmData);
       }
       //Save leads on Leads DB
