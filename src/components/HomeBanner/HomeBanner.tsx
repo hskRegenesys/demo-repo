@@ -19,7 +19,7 @@ const HomeBanner = ({ className = "" }) => {
   const [displayText, setDisplayText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const text = " Last 3 Days to Avail";
+  const text = " Last 2 Days to Avail";
   const speed = 200;
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const HomeBanner = ({ className = "" }) => {
                   <h1 className="title-home">
                     <strong>{title}</strong>
                     <span>{subtitle}</span>
-                    <div style={{ display: "flex" }}>
+                    <div style={{ display: "flex" , justifyContent:"center"}}>
                       <p>{subsubtitle}</p>
                       <p className="animi-text">
                         {displayText} {showCursor && "|"}
