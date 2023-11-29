@@ -6198,6 +6198,7 @@ featured-section .right-col .sec-title h2 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
+  text-align: center;
 }
 
 .featured-section .right-col .inner h1.title-home span {
