@@ -815,10 +815,11 @@
     font-size: 30px;
   }
   .sticky-contant span {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     line-height: normal;
     display: block;
+    margin-left: 15px;
   }
   .sticky-form-header .contact-section {
     padding: 20px !important;

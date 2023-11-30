@@ -2,46 +2,38 @@ interface IAllPageStickyDataType {
   [key: string]: string;
 }
 const AllPageStickyData: IAllPageStickyDataType = {
-  "cyber-security": " Black Friday Discount On All Courses! Last Day to Avail",
-  home: " Black Friday Discount On All Courses! Last Day to Avail",
+  "cyber-security": " Upskill yourself with Digital Regenesy's Courses",
+  home: " Upskill yourself with Digital Regenesy's Courses",
 
-  "digital-marketing":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+  "digital-marketing": " Upskill yourself with Digital Regenesy's Courses",
   "basic-digital-marketing":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
   "advanced-digital-marketing":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
   "applied-digital-marketing":
-    " Black Friday Discount On All Courses! Last Day to Avail",
-  "project-management":
-    " Black Friday Discount On All Courses! Last Day to Avail",
-  "all-courses": " Black Friday Discount On All Courses! Last Day to Avail",
-  "data-science": " Black Friday Discount On All Courses! Last Day to Avail",
-  "basic-data-science":
-    " Black Friday Discount On All Courses! Last Day to Avail",
-  "advanced-data-science":
-    " Black Friday Discount On All Courses! Last Day to Avail",
-  "applied-data-science":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
+  "project-management": " Upskill yourself with Digital Regenesy's Courses",
+  "all-courses": " Upskill yourself with Digital Regenesy's Courses",
+  "data-science": " Upskill yourself with Digital Regenesy's Courses",
+  "basic-data-science": " Upskill yourself with Digital Regenesy's Courses",
+  "advanced-data-science": " Upskill yourself with Digital Regenesy's Courses",
+  "applied-data-science": " Upskill yourself with Digital Regenesy's Courses",
   "cyber-defense-toolbox-course":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
 
   "digital-marketing-fundamentals":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
   "advance-digital-marketing-course":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
   "cyber-security-fundamentals-course":
-    " Black Friday Discount On All Courses! Last Day to Avail",
-  "design-thinking": " Black Friday Discount On All Courses! Last Day to Avail",
-  "cyber-security-course":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
+  "design-thinking": " Upskill yourself with Digital Regenesy's Courses",
+  "cyber-security-course": " Upskill yourself with Digital Regenesy's Courses",
   "artificial-intelligence":
-    " Black Friday Discount On All Courses! Last Day to Avail",
-  "ai-introductory":
-    "  Black Friday Discount On All Courses! Last Day to Avail",
-  "ai-intermediary": " Black Friday Discount On All Courses! Last Day to Avail",
-  "ai-advanced-applied":
-    " Black Friday Discount On All Courses! Last Day to Avail",
+    " Upskill yourself with Digital Regenesy's Courses",
+  "ai-introductory": "  Upskill yourself with Digital Regenesy's Courses",
+  "ai-intermediary": " Upskill yourself with Digital Regenesy's Courses",
+  "ai-advanced-applied": " Upskill yourself with Digital Regenesy's Courses",
 };
 
 export default AllPageStickyData;

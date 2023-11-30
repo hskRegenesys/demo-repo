@@ -45,9 +45,9 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                         ></iframe>
                       </div>
                       <div className="btn-customize-programme-wise">
-                        <strong className="text-white text-center d-block">
+                        {/* <strong className="text-white text-center d-block">
                           Enrol Now & Get a 30% Discount
-                        </strong>
+                        </strong> */}
                         <a
                           className="theme-btn btn-style-two"
                           onClick={() => {
@@ -135,9 +135,9 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
                   </div>
 
                   <div className="btn-customize-programme-wise">
-                    <strong className="text-white text-center d-block">
+                    {/* <strong className="text-white text-center d-block">
                       Enrol Now & Get a 30% Discount
-                    </strong>
+                    </strong> */}
                     <div className="product-details__buttons mobile-product-buttons d-block text-center">
                       <a
                         className="theme-btn btn-style-two"

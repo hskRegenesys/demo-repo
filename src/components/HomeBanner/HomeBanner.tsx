@@ -19,7 +19,7 @@ const HomeBanner = ({ className = "" }) => {
   const [displayText, setDisplayText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const text = " Last Day to Avail";
+  const text = "Providing World Class Upskilling Course";
   const speed = 200;
 
   useEffect(() => {
