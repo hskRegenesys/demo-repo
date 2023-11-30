@@ -155,9 +155,7 @@ function ImageModalPopup(props: any) {
                     <strong className="d-none d-lg-block">
                       Request a Call
                     </strong>
-                    <h5 className="d-block d-lg-none">
-                      Enrol Now & Get a 30% Discount
-                    </h5>
+                    <h5 className="d-block d-lg-none">Enrol Now</h5>
                     <div className="col-md-12">
                       <div className="form-group">
                         <label>Full Name*</label>

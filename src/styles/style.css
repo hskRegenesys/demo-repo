@@ -6205,7 +6205,7 @@ featured-section .right-col .sec-title h2 {
   display: block;
   font-family: "Raleway-semibold";
   color: var(--light-text-primary, #131718);
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -18927,7 +18927,7 @@ h6.designation {
   padding: 26px;
   border-radius: 10px;
   text-align: center;
-  margin-left: -67px;
+  margin-left: -8px;
 }
 .modal-pop-style-modify label {
   color: #fff;
