@@ -20,44 +20,44 @@ class LeadService {
   }
   // CRM API
 
-  // async scriptData(crmData: any) {
-  //   const crmCountryCode = crmData.Phone?.startsWith("+234")
-  //     ? "NIGERIA"
-  //     : crmData.Phone?.startsWith("+254")
-  //     ? "KENYA"
-  //     : crmData.Phone?.startsWith("+256")
-  //     ? "UGANDA"
-  //     : "TANZANIA";
-  //   await axios
-  //     .post(
-  //       "https://api.vinecrms.com/api/",
-  //       {
-  //         domain: "crm",
-  //         type: "add_lead_to_crm",
-  //         name: crmData.Name,
-  //         email: crmData.Email,
-  //         mobile: crmData.Phone,
-  //         city: crmData.city,
-  //         source: crmData.utm_source,
-  //         campaign: crmData.utm_campaign,
-  //         utm_source: crmData.Lead_Source,
-  //         utm_medium: crmData.utm_medium,
-  //         utm_campaign: crmData.Source_Campaign,
-  //         utm_term: crmData.utm_term,
-  //         utm_content: crmData.utm_content,
-  //         utm_url: crmData.page_url,
-  //         country: crmCountryCode,
-  //         interest: crmData.Programme_Of_Interest,
-  //       },
-  //       {
-  //         headers: { "Content-Type": "application/json" },
-  //       }
-  //     )
-  //     .then((response: any) => {})
-  //     .catch((error: any) => {
-  //       console.error("Error:", error);
-  //     });
-  // }
+  async scriptData(crmData: any) {
+    const crmCountryCode = crmData.Phone?.startsWith("+234")
+      ? "NIGERIA"
+      : crmData.Phone?.startsWith("+254")
+      ? "KENYA"
+      : crmData.Phone?.startsWith("+256")
+      ? "UGANDA"
+      : "TANZANIA";
+    await axios
+      .post(
+        "https://api.vinecrms.com/api/",
+        {
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: crmData.Name,
+          email: crmData.Email,
+          mobile: crmData.Phone,
+          city: crmData.city,
+          source: crmData.utm_source,
+          campaign: crmData.utm_campaign,
+          utm_source: crmData.Lead_Source,
+          utm_medium: crmData.utm_medium,
+          utm_campaign: crmData.Source_Campaign,
+          utm_term: crmData.utm_term,
+          utm_content: crmData.utm_content,
+          utm_url: crmData.page_url,
+          country: crmCountryCode,
+          interest: crmData.Programme_Of_Interest,
+        },
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      )
+      .then((response: any) => {})
+      .catch((error: any) => {
+        console.error("Error:", error);
+      });
+  }
 
   async saveLead(params: any) {
     let result: any = [];
@@ -96,12 +96,11 @@ class LeadService {
       }
       let crmData = { ...salesforceParam };
       if (
-        phoneNumber.startsWith("+234")
-        // ||
-        // phoneNumber.startsWith("+254") ||
-        // phoneNumber.startsWith("+256")
+        phoneNumber.startsWith("+234") ||
+        phoneNumber.startsWith("+254") ||
+        phoneNumber.startsWith("+256")
       ) {
-        // this.scriptData(crmData);
+        this.scriptData(crmData);
       }
       //Save leads on Leads DB
       // if (salesforceResponse?.data?.data) {
