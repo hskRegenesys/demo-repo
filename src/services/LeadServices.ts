@@ -83,7 +83,13 @@ class LeadService {
       //   apiEndPoints.salesforceApi,
       //   salesforceParam
       // );
-      if (!(phoneNumber.startsWith("+234") || phoneNumber.startsWith("+256"))) {
+      if (
+        !(
+          phoneNumber.startsWith("+234") ||
+          phoneNumber.startsWith("+254") ||
+          phoneNumber.startsWith("+256")
+        )
+      ) {
         const salesforceResponse = await this.salesforceServer.post(
           apiEndPoints.salesforceApi,
           salesforceParam
@@ -96,10 +102,9 @@ class LeadService {
       }
       let crmData = { ...salesforceParam };
       if (
-        phoneNumber.startsWith("+234")
-        // ||
-        // phoneNumber.startsWith("+254") ||
-        // phoneNumber.startsWith("+256")
+        phoneNumber.startsWith("+234") ||
+        phoneNumber.startsWith("+254") ||
+        phoneNumber.startsWith("+256")
       ) {
         this.scriptData(crmData);
       }

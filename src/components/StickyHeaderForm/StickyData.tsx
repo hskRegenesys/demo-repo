@@ -21,7 +21,6 @@ const StickyData = (props: any) => {
 
   const blinkingStyle = {
     animation: "blink 1s infinite",
-    
   };
 
   return (
@@ -33,9 +32,8 @@ const StickyData = (props: any) => {
               {!isHide ? (
                 <div className="sticky-form">
                   <div className="sticky-contant">
-                  <div style={{ display: 'flex', textAlign:'left' }}>
-
-                  <span
+                    <div style={{ display: "flex", textAlign: "left" }}>
+                      {/* <span
                       className="persent-offer"
                       style={{
                         ...blinkingStyle,
@@ -48,13 +46,12 @@ const StickyData = (props: any) => {
                       }}
                     >
                       30%
-                    </span>
-                <span> {AllPageStickText}</span></div>
+                    </span> */}
+                      <span> {AllPageStickText}</span>
+                    </div>
                   </div>
                   <div className="Stacky-btn" onClick={handleShow}>
-                      <span className="" >
-                        Enquire Now
-                      </span>
+                    <span className="">Enquire Now</span>
                   </div>
                   {/* <div className="closeBtn">
                     <button
