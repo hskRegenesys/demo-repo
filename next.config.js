@@ -871,6 +871,11 @@ const redirectURL = () => {
       destination: "/",
       permanent: true,
     },
+    {
+      source: "/new-home",
+      destination: "/home-new",
+      permanent: true,
+    },
 
     //redirections from altaf end
     {

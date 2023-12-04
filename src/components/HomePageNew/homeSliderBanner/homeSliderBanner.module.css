@@ -1,0 +1,35 @@
+/* homeSliderBanner.module.css */
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling custom pagination dots */
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-dot.active {
+  background-color: white;
+}
