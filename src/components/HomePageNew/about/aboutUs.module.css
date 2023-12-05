@@ -49,13 +49,20 @@
 
 .aboutParagraph {
   color: var(--neutral-80, #616364);
-  /* font-family: Montserrat; */
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.12px;
-  margin-bottom: 0px;
+  max-height: 168px;
+  overflow: visible;
+}
+
+.viewMoreButton,
+.viewLessButton {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 8px;
 }
 
 .cardsContainer {
@@ -93,19 +100,121 @@
 }
 
 .startLearningButton {
+  position: relative;
+  margin: 64px auto;
   text-align: center;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 12px 20px;
+  border-radius: 7.68px;
+  font-family: Montserrat;
+  border: 1px solid var(--light-text-surface-primary-green, #008554);
+  background: var(--light-text-surface-primary-green, #008554);
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
   color: #fff;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   max-width: 280px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+.hedingMobile {
+  display: none;
 }
 
 .startLearningButton:hover {
-  background-color: #0056b3;
+  color: var(--primary-primary-charcoal, #131718);
+  background-color: #ffffff;
+  border: 1px solid var(--primary-primary-charcoal, #131718);
+}
+
+.viewMoreButton,
+.viewLessButton {
+  color: #008554;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+/* Mobile Styles */
+
+@media only screen and (max-width: 920px) {
+  .aboutUsLeft {
+    flex: 1;
+    width: 100%;
+    display: contents;
+  }
+
+  .aboutUsImage {
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .hedingDesktop {
+    display: none;
+  }
+
+  .hedingMobile {
+    display: block;
+    text-align: center;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+  }
+
+  .aboutUsRight {
+    margin-left: 0;
+  }
+
+  .aboutTitle {
+    font-size: 16px; /* Adjust size for mobile */
+  }
+
+  .aboutHeading {
+    font-size: 24px; /* Adjust size for mobile */
+  }
+
+  .aboutParagraph {
+    font-size: 14px;
+    overflow: visible;
+    max-height: 300px;
+    margin-bottom: 0px;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 16px);
+  }
+  .cardText {
+    font-size: 14px;
+  }
+
+  .startLearningButton {
+    max-width: none;
+  }
+  .cardImg {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+  }
+  .startLearningButton {
+    margin: 40px auto;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .aboutUsContainer {
+    margin: 60px 20px;
+  }
 }
