@@ -40,14 +40,16 @@ class LeadService {
           city: crmData.city,
           source: crmData.utm_source,
           campaign: crmData.utm_campaign,
-          utm_source: crmData.Lead_Source,
+          utm_source: crmData.utm_source,
           utm_medium: crmData.utm_medium,
-          utm_campaign: crmData.Source_Campaign,
+          utm_campaign: crmData.utm_campaign,
           utm_term: crmData.utm_term,
           utm_content: crmData.utm_content,
           utm_url: crmData.page_url,
           country: crmCountryCode,
           interest: crmData.Programme_Of_Interest,
+          Source_Campaign: sourceCampaign,
+          Lead_Source: leadSource,
         },
         {
           headers: { "Content-Type": "application/json" },
@@ -83,6 +85,7 @@ class LeadService {
       //   apiEndPoints.salesforceApi,
       //   salesforceParam
       // );
+
       if (
         !(
           phoneNumber.startsWith("+234") ||
@@ -101,6 +104,7 @@ class LeadService {
         }
       }
       let crmData = { ...salesforceParam };
+
       if (
         phoneNumber.startsWith("+234") ||
         phoneNumber.startsWith("+254") ||
