@@ -1,5 +1,3 @@
-// AboutUs.js
-
 import React, { useState, useEffect } from "react";
 import NewHomeData from "../../../data/newHomeData";
 import Styles from "./aboutUs.module.css";
@@ -8,24 +6,32 @@ const AboutUs = () => {
   const { aboutUsImg, aboutTitle, aboutHeading, aboutParagraph, cards } =
     NewHomeData.AboutUsData;
 
-  const [windowWidth, setWindowWidth] = useState(null);
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [showFullParagraph, setShowFullParagraph] = useState(false);
   const [needsTruncation, setNeedsTruncation] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      if (typeof window !== "undefined") {
+        setWindowWidth(window.innerWidth);
+      }
     };
 
-    // Initial window width
-    setWindowWidth(window.innerWidth);
+    // Initial window width (only on the client side)
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth);
+    }
 
-    // Event listener for window resize
-    window.addEventListener("resize", handleResize);
+    // Event listener for window resize (only on the client side)
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+    }
 
-    // Clean up the event listener on component unmount
+    // Clean up the event listener on component unmount (only on the client side)
     return () => {
-      window.removeEventListener("resize", handleResize);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
     };
   }, []);
 

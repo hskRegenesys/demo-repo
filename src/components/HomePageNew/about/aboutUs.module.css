@@ -202,14 +202,12 @@
 
   .startLearningButton {
     max-width: none;
+    margin: 40px auto;
   }
   .cardImg {
     width: 32px;
     height: 32px;
     margin-bottom: 12px;
-  }
-  .startLearningButton {
-    margin: 40px auto;
   }
 }
 

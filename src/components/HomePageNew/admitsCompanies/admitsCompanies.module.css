@@ -1,0 +1,110 @@
+/* admitsCompanies.module.css */
+
+.admitsCompaniesContainer {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.admitsTop {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admitsHeading {
+  color: #008554;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.12px;
+  margin-bottom: 12px;
+}
+
+.admitsTitleBig {
+  color: #2b3340;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: -0.8px;
+  margin-bottom: 56px;
+}
+
+.admitsCardsContainer {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 64px;
+}
+
+.admitsCard {
+  padding: 25px 16px;
+  text-align: center;
+  border: 1px solid #e3e8ee;
+  border-radius: 8px;
+  max-width: 140px;
+  margin: 0 10px;
+}
+
+.admitsCard img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.enrollNowContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.enrollNowButton {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 7.68px;
+  font-family: Montserrat;
+  border: 1px solid var(--light-text-surface-primary-green, #008554);
+  background: var(--light-text-surface-primary-green, #008554);
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 280px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+.enrollNowButton:hover {
+  color: var(--primary-primary-charcoal, #131718);
+  background-color: #ffffff;
+  border: 1px solid var(--primary-primary-charcoal, #131718);
+}
+
+.enrollIcon {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 920px) {
+  .admitsHeading {
+    font-size: 14px;
+  }
+
+  .admitsTitleBig {
+    font-size: 24px;
+  }
+  .admitsCard {
+    padding: 20px 12px;
+    max-width: 112px;
+    margin: 0 10px;
+  }
+  .enrollNowButton {
+    margin: 0px 20px;
+    max-width: none;
+  }
+}

@@ -6,6 +6,7 @@ import Layout from "@/components/Layout/Layout";
 import UspSection from "@/components/HomePageNew/uspSection/UspSection";
 import FeaturedCourses from "@/components/HomePageNew/featuredCourses/FeaturedCourses";
 import AboutUs from "@/components/HomePageNew/about/AboutUs";
+import AdmitsCompanies from "@/components/HomePageNew/admitsCompanies/AdmitsCompanies";
 
 const HomeNew = () => {
   return (
@@ -15,6 +16,7 @@ const HomeNew = () => {
       <UspSection />
       <FeaturedCourses />
       <AboutUs />
+      <AdmitsCompanies />
     </Layout>
   );
 };
