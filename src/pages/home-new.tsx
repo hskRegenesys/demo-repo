@@ -5,6 +5,7 @@ import HomeSliderBanner from "@/components/HomePageNew/homeSliderBanner/HomeSlid
 import Layout from "@/components/Layout/Layout";
 import UspSection from "@/components/HomePageNew/uspSection/UspSection";
 import FeaturedCourses from "@/components/HomePageNew/featuredCourses/FeaturedCourses";
+import AboutUs from "@/components/HomePageNew/about/AboutUs";
 
 const HomeNew = () => {
   return (
@@ -13,6 +14,7 @@ const HomeNew = () => {
       <HomeSliderBanner />
       <UspSection />
       <FeaturedCourses />
+      <AboutUs />
     </Layout>
   );
 };
