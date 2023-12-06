@@ -1,0 +1,177 @@
+/* connectContainer.module.css */
+.connectContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 68px 104px;
+  background-color: #1f2b37;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.rightSection {
+  flex: 1;
+  margin-left: 20px;
+  padding: 24px;
+  background-color: #ffffff;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.heading {
+  color: #bbf7d0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: var(--White, #fff);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin-bottom: 54px;
+}
+
+.textList {
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  gap: 84px;
+  display: inline-grid;
+  border-left-style: dotted;
+  border-left-color: rgb(255, 255, 255);
+  padding-left: 20px;
+}
+
+.textList li {
+  color: var(--light-text-white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+}
+
+.applyNowHeading {
+  color: var(--primary-primary-charcoal, #131718);
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.connectContainer input,
+.connectContainer select {
+  margin-bottom: 10px;
+  color: #858c9a;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  padding: 12px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 1px solid var(--border-border-dark, #ced1d9);
+  background: var(--light-text-white, #fff);
+}
+
+.connectContainer button {
+  padding: 10px;
+  border-radius: 10px;
+  background: #008554;
+
+  /* Button_Green */
+  box-shadow: 0px 2px 8px -2px rgba(0, 187, 118, 0.5),
+    0px -2px 1px 0px rgba(55, 65, 81, 0.15) inset;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+}
+
+.connectContainer button:hover {
+  background-color: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
+  color: #131718;
+}
+.icon {
+  position: relative;
+  left: -34px;
+  justify-content: center;
+  gap: 84px;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 920px) {
+  .connectContainer {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .rightSection {
+    margin-left: 0;
+    margin-top: 20px; /* Add spacing between the sections */
+    max-width: none; /* Remove max-width for better responsiveness */
+  }
+
+  .textList {
+    padding-left: 0;
+    text-align: left; /* Center the text on smaller screens */
+    gap: 30px; /* Adjust the gap between items */
+  }
+  .heading {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+/* Media Query for even smaller screens */
+@media only screen and (max-width: 760px) {
+  .connectContainer {
+    padding: 20px;
+  }
+
+  .icon {
+    position: relative;
+    left: -24px;
+  }
+
+  .rightSection {
+    padding: 16px; /* Adjust padding for smaller screens */
+  }
+
+  .textList {
+    gap: 10px; /* Further reduce the gap between items */
+  }
+}

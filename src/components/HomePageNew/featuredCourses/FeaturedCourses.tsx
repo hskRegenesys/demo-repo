@@ -22,18 +22,24 @@ const FeaturedCourses = () => {
       </div>
       <div className={Styles.cardContainer}>
         <Swiper
+          className={Styles.swiperStyleFC}
+          spaceBetween={25}
           slidesPerView={3}
-          pagination={{
-            clickable: true,
-          }}
+          pagination={{ clickable: true }}
           breakpoints={{
-            // when window width is >= 1050px
-            1050: {
+            0: {
+              slidesPerView: 1,
+            },
+            865: {
+              slidesPerView: 2,
+            },
+            1200: {
               slidesPerView: 3,
             },
-            // when window width is >= 760px
+            1700: {
+              slidesPerView: 3,
+            },
           }}
-          className="mySwiper"
         >
           {NewHomeData.FeaturedCoursesData.cards.map((card, index) => (
             <SwiperSlide key={index}>

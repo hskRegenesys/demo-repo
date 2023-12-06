@@ -8,6 +8,10 @@ import FeaturedCourses from "@/components/HomePageNew/featuredCourses/FeaturedCo
 import AboutUs from "@/components/HomePageNew/about/AboutUs";
 import AdmitsCompanies from "@/components/HomePageNew/admitsCompanies/AdmitsCompanies";
 import StudentReview from "@/components/HomePageNew/studentReview/StudentReview";
+import LearnersBenefit from "@/components/HomePageNew/learnersBenefit/LearnersBenefit";
+import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectContainer";
+import StudentYoutubeVideos from "@/components/HomePageNew/studentYoutubeVideos/StudentYoutubeVideos";
+import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 
 const HomeNew = () => {
   return (
@@ -19,6 +23,10 @@ const HomeNew = () => {
       <AboutUs />
       <AdmitsCompanies />
       <StudentReview />
+      <LearnersBenefit />
+      <ConnectContainer />
+      <StudentYoutubeVideos />
+      <BlogSection />
     </Layout>
   );
 };

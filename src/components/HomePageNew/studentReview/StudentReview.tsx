@@ -22,9 +22,24 @@ const StudentReview = () => {
       </div>
       <div className={Styles.studentReviewCardContainer}>
         <Swiper
-          spaceBetween={10}
+          className={Styles.swiperStyle}
+          spaceBetween={25}
           slidesPerView={3}
           pagination={{ clickable: true }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.3,
+            },
+            865: {
+              slidesPerView: 2,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+            1700: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {StudentReviewCard.map((card, index) => {
             const starRating = card.StudentReviewStar; // Assuming this property exists
