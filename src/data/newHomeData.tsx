@@ -283,150 +283,120 @@ const NewHomeData = {
     ],
   },
   faqData: {
-    arrowIcon: "./arrow_seemoreBF.svg",
+    arrowIcon: "./assets/images/HomeNew/arrow_drop_down.svg",
     HeadingDesktop: "Frequently Asked Questions",
     HeadingMobile: "FAQ",
-    faq: {
-      datascience: {
-        title: "Data Science",
-        questions: [
-          {
-            question:
-              "What exclusive discounts are available during Regenesys Black Friday Offer 2023?",
-            answer:
-              "This Black Friday, Regenesys is offering a flat 30% discount on all programmes. You can save a lot of money on many different programmes that offer excellent education.",
-          },
-          {
-            question: "How long is the Black Friday offer valid?",
-            answer:
-              "The Black Friday offer at Regenesys is available for only 100 enrolments. It is available for the whole month of November. For more details, visit our website or ask our admissions team.",
-          },
-          {
-            question: "Can I apply the 30% discount to multiple programmes?",
-            answer:
-              "Absolutely! The 30% discount is applicable to multiple programmes. If you enjoy business, finance, or leadership programmes, you can save money on different educational paths.",
-          },
-          {
-            question:
-              "Are online programmes included in the Black Friday discount?",
-            answer:
-              "Yes, the Black Friday discount is applicable to both on-campus and online courses. No matter where you are or how you like to learn, you can get a big discount on our programmes.",
-          },
-        ],
-      },
-      digitalmarketing: {
-        title: "Digital Marketing",
 
-        questions: [
-          {
-            question:
-              "What exclusive discounts are available during Regenesys Black Friday Offer 2023?",
-            answer:
-              "This Black Friday, Regenesys is offering a flat 30% discount on all programmes. You can save a lot of money on many different programmes that offer excellent education.",
-          },
-          {
-            question: "How long is the Black Friday offer valid?",
-            answer:
-              "The Black Friday offer at Regenesys is available for only 100 enrolments. It is available for the whole month of November. For more details, visit our website or ask our admissions team.",
-          },
-          {
-            question: "Can I apply the 30% discount to multiple programmes?",
-            answer:
-              "Absolutely! The 30% discount is applicable to multiple programmes. If you enjoy business, finance, or leadership programmes, you can save money on different educational paths.",
-          },
-          {
-            question:
-              "Are online programmes included in the Black Friday discount?",
-            answer:
-              "Yes, the Black Friday discount is applicable to both on-campus and online courses. No matter where you are or how you like to learn, you can get a big discount on our programmes.",
-          },
-        ],
+    DigitalMarketing: [
+      {
+        question: "What is digital marketing?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
       },
-      ai: {
-        title: "Artificial Intelligence",
-
-        questions: [
-          {
-            question:
-              "What exclusive discounts are available during Regenesys Black Friday Offer 2023?",
-            answer:
-              "This Black Friday, Regenesys is offering a flat 30% discount on all programmes. You can save a lot of money on many different programmes that offer excellent education.",
-          },
-          {
-            question: "How long is the Black Friday offer valid?",
-            answer:
-              "The Black Friday offer at Regenesys is available for only 100 enrolments. It is available for the whole month of November. For more details, visit our website or ask our admissions team.",
-          },
-          {
-            question: "Can I apply the 30% discount to multiple programmes?",
-            answer:
-              "Absolutely! The 30% discount is applicable to multiple programmes. If you enjoy business, finance, or leadership programmes, you can save money on different educational paths.",
-          },
-          {
-            question:
-              "Are online programmes included in the Black Friday discount?",
-            answer:
-              "Yes, the Black Friday discount is applicable to both on-campus and online courses. No matter where you are or how you like to learn, you can get a big discount on our programmes.",
-          },
-        ],
+      {
+        question: "How important is social media in digital marketing?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
       },
-      projectmanagement: {
-        title: "Project Management",
-
-        questions: [
-          {
-            question:
-              "What exclusive discounts are available during Regenesys Black Friday Offer 2023?",
-            answer:
-              "This Black Friday, Regenesys is offering a flat 30% discount on all programmes. You can save a lot of money on many different programmes that offer excellent education.",
-          },
-          {
-            question: "How long is the Black Friday offer valid?",
-            answer:
-              "The Black Friday offer at Regenesys is available for only 100 enrolments. It is available for the whole month of November. For more details, visit our website or ask our admissions team.",
-          },
-          {
-            question: "Can I apply the 30% discount to multiple programmes?",
-            answer:
-              "Absolutely! The 30% discount is applicable to multiple programmes. If you enjoy business, finance, or leadership programmes, you can save money on different educational paths.",
-          },
-          {
-            question:
-              "Are online programmes included in the Black Friday discount?",
-            answer:
-              "Yes, the Black Friday discount is applicable to both on-campus and online courses. No matter where you are or how you like to learn, you can get a big discount on our programmes.",
-          },
-        ],
+      {
+        question: "What is DataScience?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
       },
-      cybersecurity: {
-        title: "Cyber Security",
-
-        questions: [
-          {
-            question:
-              "What exclusive discounts are available during Regenesys Black Friday Offer 2023?",
-            answer:
-              "This Black Friday, Regenesys is offering a flat 30% discount on all programmes. You can save a lot of money on many different programmes that offer excellent education.",
-          },
-          {
-            question: "How long is the Black Friday offer valid?",
-            answer:
-              "The Black Friday offer at Regenesys is available for only 100 enrolments. It is available for the whole month of November. For more details, visit our website or ask our admissions team.",
-          },
-          {
-            question: "Can I apply the 30% discount to multiple programmes?",
-            answer:
-              "Absolutely! The 30% discount is applicable to multiple programmes. If you enjoy business, finance, or leadership programmes, you can save money on different educational paths.",
-          },
-          {
-            question:
-              "Are online programmes included in the Black Friday discount?",
-            answer:
-              "Yes, the Black Friday discount is applicable to both on-campus and online courses. No matter where you are or how you like to learn, you can get a big discount on our programmes.",
-          },
-        ],
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
       },
-    },
+    ],
+    DataScience: [
+      {
+        question: "What is DataScience?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+      {
+        question: "What is DataScience?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+    ],
+    ArtificialIntelligence: [
+      {
+        question: "What is ArtificialIntelligence?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+      {
+        question: "What is DataScience?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+    ],
+    ProjectManagement: [
+      {
+        question: "What is ProjectManagement?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+      {
+        question: "What is DataScience?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+    ],
+    CyberSecurity: [
+      {
+        question: "What is CyberSecurity?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+      {
+        question: "What is DataScience?",
+        answer:
+          "Digital marketing involves promoting products or services using digital technologies.",
+      },
+      {
+        question: "How important is social media in DataScience?",
+        answer:
+          "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+      },
+    ],
   },
 };
 

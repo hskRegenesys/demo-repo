@@ -12,6 +12,7 @@ import LearnersBenefit from "@/components/HomePageNew/learnersBenefit/LearnersBe
 import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectContainer";
 import StudentYoutubeVideos from "@/components/HomePageNew/studentYoutubeVideos/StudentYoutubeVideos";
 import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
+import Faq from "@/components/HomePageNew/faq/Faq";
 
 const HomeNew = () => {
   return (
@@ -27,6 +28,7 @@ const HomeNew = () => {
       <ConnectContainer />
       <StudentYoutubeVideos />
       <BlogSection />
+      <Faq />
     </Layout>
   );
 };
