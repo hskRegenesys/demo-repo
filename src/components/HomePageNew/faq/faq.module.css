@@ -14,7 +14,7 @@
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
 }
-.mobileOnly {
+.faqMobile {
   display: none;
 }
 
@@ -99,23 +99,7 @@
 }
 
 /* Responsive layout for smaller screens */
-@media (max-width: 1000px) {
-  .faqSection {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .section1,
-  .section2 {
-    width: 100%;
-  }
-  .desktopOnly {
-    display: none;
-  }
-  .mobileOnly {
-    display: block;
-  }
-}
 .card {
   padding: 22px;
 }
@@ -158,4 +142,135 @@
   transition: transform 0.3s ease;
 }
 
-/* ... (remaining styles) */
+@media (max-width: 1000px) {
+  .faqSection {
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 16px;
+  }
+
+  .faqDesktop {
+    display: none;
+  }
+
+  .faqMobile {
+    display: block;
+  }
+  .topcontentMobile {
+    color: var(--primary-primary-charcoal, #131718);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+  }
+
+  .section1Mobile {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .section1Mobile ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .section1Mobile li {
+    cursor: pointer;
+    padding: 20px;
+    color: #2b3340;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    position: relative;
+    border-bottom: 1px solid #e3e8ee;
+  }
+  .questionContainerMobile {
+    display: flex;
+  }
+  .answerMobile {
+    color: #697386;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.12px;
+    border-radius: 8px;
+    border: 1px solid #008554;
+    background: #fff;
+    padding: 12px;
+  }
+  .dropdownListMobile {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .dropdownItem {
+    padding: 10px;
+    color: #2b3340;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  .dropdownItem h3 {
+    color: #2b3340;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.12px;
+  }
+
+  .arrowIconMobileHeding {
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+    transform: rotate(-90deg);
+    margin-right: 16px;
+  }
+
+  .hedingMobileTextSelected {
+    margin-left: 20px;
+  }
+
+  .selectedHedingIcon {
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  .selectedarrowMobilequstion {
+    transform: rotate(180deg);
+  }
+
+  .selectedQuestionMobile {
+    border-bottom: 1px solid #e3e8ee;
+    background: #f0fdf4;
+  }
+
+  .arrowIconMobilequstion {
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+  }
+
+  .dropdownItem .arrowIconMobile {
+    transform: rotate(180deg);
+  }
+}

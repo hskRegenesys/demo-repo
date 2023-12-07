@@ -13,6 +13,7 @@ import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectC
 import StudentYoutubeVideos from "@/components/HomePageNew/studentYoutubeVideos/StudentYoutubeVideos";
 import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 import Faq from "@/components/HomePageNew/faq/Faq";
+import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 
 const HomeNew = () => {
   return (
@@ -29,6 +30,7 @@ const HomeNew = () => {
       <StudentYoutubeVideos />
       <BlogSection />
       <Faq />
+      <FooterDR />
     </Layout>
   );
 };
