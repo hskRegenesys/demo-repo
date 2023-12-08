@@ -14,11 +14,16 @@ import StudentYoutubeVideos from "@/components/HomePageNew/studentYoutubeVideos/
 import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
+import OurCourses from "@/components/HomePageNew/ourCourses/OurCourses";
+import NewHomeData from "@/data/newHomeData";
 
 const HomeNew = () => {
   return (
     <Layout pageTitle="new-home">
-      <HeaderOne pageTitle="home" />
+      <FeaturedCourses />
+
+      <OurCourses data={NewHomeData} />
+      {/* <HeaderOne pageTitle="home" />
       <HomeSliderBanner />
       <UspSection />
       <FeaturedCourses />
@@ -30,7 +35,7 @@ const HomeNew = () => {
       <StudentYoutubeVideos />
       <BlogSection />
       <Faq />
-      <FooterDR />
+      <FooterDR /> */}
     </Layout>
   );
 };

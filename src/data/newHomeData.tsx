@@ -398,6 +398,89 @@ const NewHomeData = {
       },
     ],
   },
+  OurCoursesData: {
+    DropdownarrowIcon: "./assets/images/HomeNew/arrow_drop_down.svg",
+    OurCoursesTitle: "All Courses",
+    OurCoursesHeading: "Explore Our Courses",
+    cardTimeIcon: "/assets/images/HomeNew/clock-green.svg",
+    cardStudentsIcon: "/assets/images/HomeNew/user-tick.svg",
+    cardBookIcon: "/assets/images/HomeNew/book.svg",
+    cardStudentEnrollmentText: "Students Enrolled",
+    cardToolsText: "Covered",
+
+    Courses: {
+      DataScience: [
+        {
+          cardProgram: "Basic Data Science",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "32,000+",
+          cardTool: "30 Tools",
+        },
+        {
+          cardProgram: "Advanced Data Science",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "45,000+",
+          cardTool: "45 Tools",
+        },
+        {
+          cardProgram: "Application Data Science",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "33,000+",
+          cardTool: "30 Tools",
+        },
+      ],
+      ProjectManagement: [
+        {
+          cardProgram: "Project Management",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "32,000+",
+          cardTool: "30 Tools",
+        },
+      ],
+      DigitalMarketing: [
+        {
+          cardProgram: "Digital Marketing Fundamental",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "32,000+",
+          cardTool: "30 Tools",
+        },
+        {
+          cardProgram: "Advanced Digital Marketing Course",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "45,000+",
+          cardTool: "45 Tools",
+        },
+      ],
+      CyberSecurity: [
+        {
+          cardProgram: "Cyber Security",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "32,000+",
+          cardTool: "30 Tools",
+        },
+      ],
+      ArtificialIntelligence: [
+        {
+          cardProgram: "Artificial Intelligence Introduction",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "32,000+",
+          cardTool: "30 Tools",
+        },
+        {
+          cardProgram: "Artificial Intelligence Intermediate",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "45,000+",
+          cardTool: "45 Tools",
+        },
+        {
+          cardProgram: "Artificial Intelligence Advance",
+          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardCount: "33,000+",
+          cardTool: "30 Tools",
+        },
+      ],
+    },
+  },
 };
 
 export default NewHomeData;
