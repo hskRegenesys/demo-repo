@@ -28,7 +28,7 @@ const StudentReview = () => {
           pagination={{ clickable: true }}
           breakpoints={{
             0: {
-              slidesPerView: 1.3,
+              slidesPerView: 1,
             },
             865: {
               slidesPerView: 2,

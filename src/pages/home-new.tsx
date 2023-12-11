@@ -20,22 +20,20 @@ import NewHomeData from "@/data/newHomeData";
 const HomeNew = () => {
   return (
     <Layout pageTitle="new-home">
-      <FeaturedCourses />
-
-      <OurCourses data={NewHomeData} />
-      {/* <HeaderOne pageTitle="home" />
+      <HeaderOne pageTitle="home" />
       <HomeSliderBanner />
       <UspSection />
       <FeaturedCourses />
       <AboutUs />
       <AdmitsCompanies />
       <StudentReview />
+      <OurCourses data={NewHomeData} />
       <LearnersBenefit />
       <ConnectContainer />
       <StudentYoutubeVideos />
       <BlogSection />
       <Faq />
-      <FooterDR /> */}
+      <FooterDR />
     </Layout>
   );
 };

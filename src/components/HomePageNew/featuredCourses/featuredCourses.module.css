@@ -3,7 +3,6 @@
 .featuredCoursesContainer {
   /* display: flex; */
   padding: 72px 108px 0px 108px;
-  margin-bottom: 120px;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%);
@@ -42,10 +41,10 @@
 
 .card {
   overflow: hidden;
-  margin: 0 10px;
   text-align: left;
   display: flex;
-  width: 386.667px;
+  margin: 0 auto;
+  max-width: 360px;
   padding: 24px 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -206,28 +205,86 @@
 
 /* swiper style */
 
-.swiperStyleFC {
-  --swiper-pagination-color: var(--swiper-theme-color);
+.swiperStyle {
+  --swiper-pagination-color: #008554;
   --swiper-pagination-bullet-size: 8px;
   --swiper-pagination-bullet-width: 8px;
   --swiper-pagination-bullet-height: 8px;
-  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-color: #008554;
   --swiper-pagination-bullet-inactive-opacity: 0.2;
   --swiper-pagination-bullet-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 4px;
   --swiper-pagination-bullet-vertical-gap: 120px;
 }
-.swiperStyleFC {
-  --add-bottom: 80px;
-  padding-bottom: var(--add-bottom);
+.swiperStyle {
+  --add-bottom: 74px !important;
+  padding-bottom: var(--add-bottom) !important;
   align-items: center;
 }
-.swiperStyleFC [class^="swiper-button-"] {
+.swiperStyle [class^="swiper-button-"] {
   top: calc(50% - var(--add-bottom) / 2);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 720px) {
+  .swiperStyle {
+    --add-bottom: 54px !important;
+    padding-bottom: var(--add-bottom) !important;
+    align-items: center;
+  }
+  .featuredCoursesContainer {
+    padding: 72px 16px 0px 16px;
+  }
+  .rocketImg {
+    display: none;
+  }
   .cardContainer {
-    padding: 72px 30px 0px 30px;
+    gap: 30px;
+  }
+  .smallHeading {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .bigHeading {
+    font-size: 24px;
+    padding: 0px 20px;
+    margin-bottom: 32px;
+  }
+  .cardHeading {
+    font-size: 20px;
+  }
+  .cardStarContainer {
+    padding: 7px 13px;
+  }
+  .cardStarText {
+    font-size: 12px;
+  }
+  .cardStarIcon {
+    width: 16px;
+    height: 16px;
+  }
+  .normalText,
+  .boldText {
+    font-size: 14px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .card .enrollNowButton {
+    display: none;
+  }
+  .card .learnMoreButton {
+    width: 100%;
+    color: var(--primary-primary-white, #fff);
+    border: 0.837px solid #008554;
+    background: #008554;
+    transition: background-color 0.8s;
+    box-shadow: 0px 0.803px 1.607px 0px rgba(16, 24, 40, 0.05);
+  }
+  .card .learnMoreButton:hover {
+    color: var(--primary-primary-charcoal, #131718);
+    background-color: #ffffff00;
+    border: 1px solid var(--primary-primary-charcoal, #131718);
   }
 }

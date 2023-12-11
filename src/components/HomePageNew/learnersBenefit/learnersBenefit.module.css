@@ -161,11 +161,24 @@
   }
 }
 @media (max-width: 920px) {
+  .LearnersBenefitContainer {
+    margin: 20px 16px;
+  }
   .Card {
     display: block;
     background: #ecfaef;
   }
   .LeftSide {
     border-radius: 21px;
+  }
+  .heding {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 24px;
+    padding: 0px 18px;
+    margin-bottom: 0px;
   }
 }

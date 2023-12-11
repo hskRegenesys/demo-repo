@@ -16,7 +16,7 @@ const AdmitsCompanies = () => {
       delay: 0,
       disableOnInteraction: false,
     },
-    slidesPerView: "auto",
+    slidesPerView: "auto" as const,
     speed: 5000,
     grabCursor: true,
     mousewheelControl: true,

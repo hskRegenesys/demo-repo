@@ -3,6 +3,7 @@
 .admitsCompaniesContainer {
   max-width: 100%;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .admitsTop {
@@ -97,11 +98,15 @@
 
   .admitsTitleBig {
     font-size: 24px;
+    margin-bottom: 32px;
   }
   .admitsCard {
     padding: 20px 12px;
     max-width: 112px;
     margin: 0 10px;
+  }
+  .admitsCardsContainer {
+    margin-bottom: 40px;
   }
   .enrollNowButton {
     margin: 0px 20px;

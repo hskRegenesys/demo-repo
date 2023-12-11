@@ -1,6 +1,6 @@
 .usp-section-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: white;
   padding: 20px;

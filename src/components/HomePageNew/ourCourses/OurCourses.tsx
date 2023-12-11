@@ -78,102 +78,104 @@ const OurCourses: React.FC<OurCoursesProps> = ({ data }) => {
   return (
     <div className={Styles.ourCoursesContainer}>
       {/* Head Section */}
-      <div className={Styles.ourCoursesDesktop}>
-        <div className={Styles.headSection}>
-          <h2 className={Styles.smallTitle}>
-            {data.OurCoursesData.OurCoursesTitle}
-          </h2>
-          <h1 className={Styles.bigTitle}>
-            {data.OurCoursesData.OurCoursesHeading}
-          </h1>
+      <div className={Styles.headSection}>
+        <h2 className={Styles.smallTitle}>
+          {data.OurCoursesData.OurCoursesTitle}
+        </h2>
+        <h1 className={Styles.bigTitle}>
+          {data.OurCoursesData.OurCoursesHeading}
+        </h1>
+      </div>
+      {/* Desktop view content */}
+      <div className={Styles.OurCoursesDesktop}>
+        {/* Top Section */}
+        <div className={Styles.topSection}>
+          {Object.keys(data.OurCoursesData.Courses).map((category) => (
+            <div
+              key={category}
+              className={`${Styles.categoryBox} ${
+                selectedCategory === category ? Styles.selected : ""
+              }`}
+              onClick={() => handleCategorySelect(category)}
+            >
+              {category}
+            </div>
+          ))}
         </div>
 
-        {/* Desktop view content */}
-        <div className={Styles.OurCoursesDesktop}>
-          {/* Top Section */}
-          <div className={Styles.topSection}>
-            {Object.keys(data.OurCoursesData.Courses).map((category) => (
-              <div
-                key={category}
-                className={`${Styles.categoryBox} ${
-                  selectedCategory === category ? Styles.selected : ""
-                }`}
-                onClick={() => handleCategorySelect(category)}
-              >
-                {category}
-              </div>
-            ))}
-          </div>
+        {/* Down Section */}
+        <div className={Styles.downSection}>
+          {selectedCategory &&
+            data.OurCoursesData.Courses[selectedCategory].map(
+              (card: CardData, index: number) => (
+                <div key={index} className={Styles.card}>
+                  <div className={Styles.cardHeading}>{card.cardProgram}</div>
 
-          {/* Down Section */}
-          <div className={Styles.downSection}>
-            {selectedCategory &&
-              data.OurCoursesData.Courses[selectedCategory].map(
-                (card: CardData, index: number) => (
-                  <div key={index} className={Styles.card}>
-                    <div className={Styles.cardHeading}>{card.cardProgram}</div>
-
-                    <div className={Styles.imgCardContainer}>
-                      <div className={Styles.cardStarContainer}>
-                        <img
-                          src={data.OurCoursesData.cardTimeIcon}
-                          alt="cardStar"
-                          className={Styles.cardStarIcon}
-                        />
-                        <span className={Styles.cardStarText}>4.6 Ratings</span>
-                      </div>
+                  <div className={Styles.imgCardContainer}>
+                    <div className={Styles.cardStarContainer}>
                       <img
-                        src={card.cardImg}
-                        alt={card.cardProgram}
-                        className={Styles.cardImage}
+                        src={data.OurCoursesData.cardTimeIcon}
+                        alt="cardStar"
+                        className={Styles.cardStarIcon}
                       />
+                      <span className={Styles.cardStarText}>4.6 Ratings</span>
                     </div>
-                    <div className={Styles.textContainer}>
-                      <div className={Styles.line2}>
-                        <div className={Styles.icon}>
-                          <img
-                            src={data.OurCoursesData.cardStudentsIcon}
-                            alt="icon"
-                            className={Styles.cardIcon}
-                          />
-                        </div>
-                        <div className={Styles.boldText}>{card.cardCount}</div>
-                        <div className={Styles.normalText}>
-                          {data.OurCoursesData.cardStudentEnrollmentText}
-                        </div>
+                    <img
+                      src={card.cardImg}
+                      alt={card.cardProgram}
+                      className={Styles.cardImage}
+                    />
+                  </div>
+                  <div className={Styles.textContainer}>
+                    <div className={Styles.line2}>
+                      <div className={Styles.icon}>
+                        <img
+                          src={data.OurCoursesData.cardStudentsIcon}
+                          alt="icon"
+                          className={Styles.cardIcon}
+                        />
                       </div>
-                      <div className={Styles.line3}>
-                        <div className={Styles.icon}>
-                          <img
-                            src={data.OurCoursesData.cardBookIcon}
-                            alt="icon"
-                            className={Styles.cardIcon}
-                          />
-                        </div>
-                        <div className={Styles.boldText}>{card.cardTool}</div>
-                        <div className={Styles.normalText}>
-                          {data.OurCoursesData.cardToolsText}
-                        </div>
+                      <div className={Styles.boldText}>{card.cardCount}</div>
+                      <div className={Styles.normalText}>
+                        {data.OurCoursesData.cardStudentEnrollmentText}
                       </div>
                     </div>
-                    <div className={Styles.buttonContainer}>
-                      <button className={Styles.learnMoreButton}>
-                        Learn More
-                      </button>
-                      <button className={Styles.enrollNowButton}>
-                        Enroll Now
-                      </button>
+                    <div className={Styles.line3}>
+                      <div className={Styles.icon}>
+                        <img
+                          src={data.OurCoursesData.cardBookIcon}
+                          alt="icon"
+                          className={Styles.cardIcon}
+                        />
+                      </div>
+                      <div className={Styles.boldText}>{card.cardTool}</div>
+                      <div className={Styles.normalText}>
+                        {data.OurCoursesData.cardToolsText}
+                      </div>
                     </div>
                   </div>
-                )
-              )}
-          </div>
+                  <div className={Styles.buttonContainer}>
+                    <button className={Styles.learnMoreButton}>
+                      Learn More
+                    </button>
+                    <button className={Styles.enrollNowButton}>
+                      Enroll Now
+                    </button>
+                  </div>
+                </div>
+              )
+            )}
         </div>
       </div>
       {/* Render mobile or desktop view based on screen size */}
       <div className={Styles.OurCoursesMobile}>
         {Object.keys(data.OurCoursesData.Courses).map((category) => (
-          <div key={category} className={Styles.mobileDropdown}>
+          <div
+            key={category}
+            className={`${Styles.mobileDropdown} ${
+              selectedCategory === category ? Styles.selectedmobileDropdown : ""
+            }`}
+          >
             <div
               className={`${Styles.mobileDropdownHeader} ${
                 selectedCategory === category ? Styles.selectedHeding : ""
