@@ -40,6 +40,7 @@ const LearnersBenefit = () => {
           className={Styles.swiperStyleFC}
           slidesPerView={1}
           pagination={{ clickable: true }}
+          spaceBetween={20}
           //   loop={true}
           //   speed={12000}
           //   autoplay={{

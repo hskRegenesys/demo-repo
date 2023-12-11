@@ -90,7 +90,6 @@
   border-radius: 12px;
   border: 1px solid #008554;
   background: #f1fdf4;
-  margin: 0 auto;
   box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
 }
 
@@ -274,6 +273,9 @@
   .OurCoursesMobile {
     display: block;
     justify-content: center;
+  }
+  .card {
+    margin: 0 auto;
   }
 
   .smallTitle {

@@ -136,7 +136,6 @@ const FaqMobile: React.FC<{
                 }`}
               >
                 <span
-                  onClick={() => toggleDropdown(heading)}
                   className={`${Styles.hedingMobileText} ${
                     openHeadingDropdown === heading
                       ? Styles.hedingMobileTextSelected
