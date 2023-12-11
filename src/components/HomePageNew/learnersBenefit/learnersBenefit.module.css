@@ -169,7 +169,29 @@
     background: #ecfaef;
   }
   .LeftSide {
+    padding: 0px;
+  }
+  .CardImg {
+    display: flex;
+    margin: 0 auto;
+    padding: 24px 0px;
+    width: 119px;
+  }
+  .LeftSide {
     border-radius: 21px;
+  }
+  .RightSide {
+    padding: 0px 16px 24px 16px;
+  }
+  .CardTitle {
+    text-align: center;
+  }
+  .list {
+    font-size: 14px;
+    text-align: left;
+  }
+  .tickimg {
+    margin-top: 5px;
   }
   .heding {
     font-size: 16px;

@@ -20,7 +20,7 @@ import NewHomeData from "@/data/newHomeData";
 const HomeNew = () => {
   return (
     <Layout pageTitle="new-home">
-      <HeaderOne pageTitle="home" />
+      {/* <HeaderOne pageTitle="home" /> */}
       <HomeSliderBanner />
       <UspSection />
       <FeaturedCourses />

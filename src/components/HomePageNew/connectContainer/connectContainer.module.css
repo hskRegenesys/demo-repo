@@ -128,6 +128,9 @@
   justify-content: center;
   gap: 84px;
 }
+.icontext {
+  display: flex;
+}
 
 /* Media Query for smaller screens */
 @media only screen and (max-width: 920px) {
@@ -137,6 +140,8 @@
   }
 
   .rightSection {
+    width: 100%;
+
     margin-left: 0;
     margin-top: 20px; /* Add spacing between the sections */
     max-width: none; /* Remove max-width for better responsiveness */
@@ -153,25 +158,34 @@
 
   .title {
     font-size: 20px;
+    margin-bottom: 32px;
+  }
+  .textList {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .textList {
+    gap: 52px;
+  }
+
+  .icon {
+    position: relative;
+    left: -35px;
   }
 }
 
 /* Media Query for even smaller screens */
 @media only screen and (max-width: 760px) {
   .connectContainer {
-    padding: 20px;
+    padding: 32px 16px;
   }
 
   .icon {
     position: relative;
-    left: -24px;
+    left: -35px;
   }
 
-  .rightSection {
-    padding: 16px; /* Adjust padding for smaller screens */
-  }
-
-  .textList {
-    gap: 10px; /* Further reduce the gap between items */
+  .leftSection {
+    padding: 16px;
   }
 }

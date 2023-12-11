@@ -91,12 +91,12 @@ const FooterDR = () => {
 
             <FooterContent4 />
           </div>
-          <div className={styles.footerText}>
-            <p>Copyright © 2020. LogoIpsum. All rights reserved.</p>
-            <div className={styles.footerTextInside}>
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Privacy Policy</a>
-            </div>
+        </div>
+        <div className={styles.footerTextDesktop}>
+          <p>Copyright © 2020. LogoIpsum. All rights reserved.</p>
+          <div className={styles.footerTextInside}>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
           </div>
         </div>
       </div>

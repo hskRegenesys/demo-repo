@@ -49,7 +49,7 @@ const FaqDesktop: React.FC<{
           <h2>{selectedHeading}</h2>
           {Array.isArray(faqData[selectedHeading]) ? (
             <ul>
-              {faqData[selectedHeading].map(
+              {(faqData[selectedHeading] as FAQDataItem[]).map(
                 (faq: FAQDataItem, index: number) => (
                   <li
                     key={index}
@@ -136,6 +136,7 @@ const FaqMobile: React.FC<{
                 }`}
               >
                 <span
+                  onClick={() => toggleDropdown(heading)}
                   className={`${Styles.hedingMobileText} ${
                     openHeadingDropdown === heading
                       ? Styles.hedingMobileTextSelected
@@ -155,33 +156,38 @@ const FaqMobile: React.FC<{
                 />
                 {openHeadingDropdown === heading && (
                   <ul className={Styles.dropdownListMobile}>
-                    {faqData[heading].map((faq: FAQDataItem, index: number) => (
-                      <li
-                        key={index}
-                        className={`${Styles.dropdownItem} ${
-                          selectedQuestion === index
-                            ? Styles.selectedQuestionMobile
-                            : ""
-                        }`}
-                        onClick={() => toggleAnswer(index, heading)}
-                      >
-                        <div className={Styles.questionContainerMobile}>
-                          <h3>{faq.question}</h3>
-                          <img
-                            src={arrowIcon}
-                            alt="iconFaq"
-                            className={`${Styles.arrowIconMobilequstion} ${
+                    {Array.isArray(faqData[heading]) &&
+                      (faqData[heading] as FAQDataItem[]).map(
+                        (faq: FAQDataItem, index: number) => (
+                          <li
+                            key={index}
+                            className={`${Styles.dropdownItem} ${
                               selectedQuestion === index
-                                ? Styles.selectedarrowMobilequstion
+                                ? Styles.selectedQuestionMobile
                                 : ""
                             }`}
-                          />
-                        </div>
-                        {selectedQuestion === index && (
-                          <p className={Styles.answerMobile}>{faq.answer}</p>
-                        )}
-                      </li>
-                    ))}
+                            onClick={() => toggleAnswer(index, heading)}
+                          >
+                            <div className={Styles.questionContainerMobile}>
+                              <h3>{faq.question}</h3>
+                              <img
+                                src={arrowIcon}
+                                alt="iconFaq"
+                                className={`${Styles.arrowIconMobilequstion} ${
+                                  selectedQuestion === index
+                                    ? Styles.selectedarrowMobilequstion
+                                    : ""
+                                }`}
+                              />
+                            </div>
+                            {selectedQuestion === index && (
+                              <p className={Styles.answerMobile}>
+                                {faq.answer}
+                              </p>
+                            )}
+                          </li>
+                        )
+                      )}
                   </ul>
                 )}
               </li>

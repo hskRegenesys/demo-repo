@@ -144,7 +144,11 @@
 .footerSectionMobile {
   display: none;
 }
-
+.footerTextDesktop {
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+}
 /* Media query for mobile view */
 @media only screen and (max-width: 800px) {
   .footerSection {

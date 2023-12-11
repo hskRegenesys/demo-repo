@@ -48,10 +48,27 @@
 .swiperStyle [class^="swiper-button-"] {
   top: calc(50% - var(--add-bottom) / 2);
 }
+.iframe {
+  width: 560px;
+  height: 315px;
+}
 
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
   .container {
-    margin: 100px 30px;
+    margin: 44px 16px 60px 16px;
+  }
+  .title {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+  .videoContainer {
+    max-width: 328px;
+    margin: 0 auto;
+  }
+  .iframe {
+    width: 328px;
+    height: 352px;
+    border-radius: 12px;
   }
 }

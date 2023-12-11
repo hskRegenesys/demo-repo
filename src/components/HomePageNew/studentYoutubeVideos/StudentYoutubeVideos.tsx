@@ -28,8 +28,6 @@ const StudentYoutubeVideos = () => {
         >
           <SwiperSlide>
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/ygZIi5tRC40"
               title="Video 1"
               frameBorder="0"

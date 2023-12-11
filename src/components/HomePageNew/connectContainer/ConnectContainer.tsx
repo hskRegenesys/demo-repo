@@ -20,14 +20,15 @@ const ConnectContainer = () => {
         <div className={styles.title}>{connectContainerTittle}</div>
         <ul className={styles.textList}>
           {connectContainerText.map((text, index) => (
-            <li key={index}>
+            <div key={index} className={styles.icontext}>
               <img
                 src={index === 0 ? icon1 : index === 1 ? icon2 : icon3}
                 alt={`Icon ${index + 1}`}
                 className={styles.icon}
               />
-              {text}
-            </li>
+
+              <li>{text}</li>
+            </div>
           ))}
         </ul>
       </div>
