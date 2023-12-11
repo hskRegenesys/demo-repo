@@ -19,17 +19,30 @@ const ConnectContainer = () => {
         <div className={styles.heading}>{connectContainerHeader}</div>
         <div className={styles.title}>{connectContainerTittle}</div>
         <ul className={styles.textList}>
-          {connectContainerText.map((text, index) => (
-            <div key={index} className={styles.icontext}>
-              <img
-                src={index === 0 ? icon1 : index === 1 ? icon2 : icon3}
-                alt={`Icon ${index + 1}`}
-                className={styles.icon}
-              />
+          <div className={styles.iconContainer}>
+            {connectContainerText.map((text, index) => (
+              <div key={index} className={styles.icontext}>
+                <img
+                  src={index === 0 ? icon1 : index === 1 ? icon2 : icon3}
+                  alt={`Icon ${index + 1}`}
+                  className={styles.icon}
+                />
 
-              <li>{text}</li>
-            </div>
-          ))}
+                {index < connectContainerText.length - 1 && (
+                  <div className={styles.dottedLine}></div>
+                )}
+                <br></br>
+                <br></br>
+              </div>
+            ))}
+          </div>
+          <div className={styles.textContainer}>
+            {connectContainerText.map((text, index) => (
+              <div key={index} className={styles.textcontent}>
+                <li>{text}</li>
+              </div>
+            ))}
+          </div>
         </ul>
       </div>
       <div className={styles.rightSection}>

@@ -46,10 +46,10 @@
   list-style: none;
   padding: 0;
   justify-content: center;
-  gap: 84px;
-  display: inline-grid;
-  border-left-style: dotted;
-  border-left-color: rgb(255, 255, 255);
+  /* gap: 84px; */
+  display: flex;
+  /* border-left-style: dotted; */
+  /* border-left-color: rgb(255, 255, 255); */
   padding-left: 20px;
 }
 
@@ -58,11 +58,17 @@
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
+  bottom: 10px;
+  position: relative;
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
 }
-
+.textContainer {
+  display: grid;
+  justify-content: space-between;
+  gap: 10px;
+}
 .applyNowHeading {
   color: var(--primary-primary-charcoal, #131718);
   font-family: Montserrat;
@@ -124,12 +130,30 @@
 }
 .icon {
   position: relative;
-  left: -34px;
-  justify-content: center;
-  gap: 84px;
-}
-.icontext {
   display: flex;
+  left: -34px;
+  justify-content: space-between;
+  gap: 84px;
+  left: -11px;
+  bottom: 10px;
+}
+
+/* connectContainer.module.css */
+
+.icontext {
+  position: relative;
+}
+
+.dottedLine {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  height: 100%;
+  height: inherit;
+  border-left: 2px dotted lightgrey;
 }
 
 /* Media Query for smaller screens */
@@ -148,9 +172,11 @@
   }
 
   .textList {
-    padding-left: 0;
+    display: flex;
     text-align: left; /* Center the text on smaller screens */
-    gap: 30px; /* Adjust the gap between items */
+    gap: 0px;
+    font-size: 14px;
+    padding-left: 20px;
   }
   .heading {
     font-size: 14px;
@@ -160,18 +186,6 @@
     font-size: 20px;
     margin-bottom: 32px;
   }
-  .textList {
-    font-size: 14px;
-    padding-left: 20px;
-  }
-  .textList {
-    gap: 52px;
-  }
-
-  .icon {
-    position: relative;
-    left: -35px;
-  }
 }
 
 /* Media Query for even smaller screens */
@@ -180,12 +194,13 @@
     padding: 32px 16px;
   }
 
-  .icon {
-    position: relative;
-    left: -35px;
-  }
-
   .leftSection {
     padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .icon {
+    width: 50px;
   }
 }
