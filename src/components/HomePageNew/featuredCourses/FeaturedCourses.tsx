@@ -1,10 +1,88 @@
-import React from "react";
 import NewHomeData from "../../../data/newHomeData";
 import Styles from "./featuredCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
+import React, { useState, useEffect, useContext, useRef } from "react";
+import useActive from "@/hooks/useActive";
+
+import _ from "lodash";
+import { useRouter } from "next/router";
+import { urlInfo } from "../../config/helper";
+
+import {
+  artificialIntelligenceCode,
+  dataScienceCode,
+  digitalMarkrtingCode,
+  programBaseUrl,
+} from "../../config/constant";
+
+import { allCourseList } from "@/data/courseData";
+
+interface Card {
+  cardProgram: string;
+  code: any;
+  id: string;
+  parentId: string;
+  cardImg: string;
+  cardWeek: string;
+  cardCount: string;
+  cardTool: string;
+}
+
 const FeaturedCourses = () => {
+  const router = useRouter();
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const handleShow = () => setShow(true);
+
+  function redirectCard(name: any, code: any, id: any, parent_id: any) {
+    if (
+      code === dataScienceCode ||
+      code === digitalMarkrtingCode ||
+      code === artificialIntelligenceCode
+    ) {
+      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
+    } else {
+      const courseDetails = _.find(
+        allCourseList,
+        (item) => item?.id === parent_id
+      );
+      courseDetails
+        ? router.push(
+            `/${programBaseUrl}/${urlInfo(courseDetails?.name)}/${urlInfo(
+              name
+            )}`
+          )
+        : router.push(`/${programBaseUrl}/${urlInfo(name)}`);
+    }
+  }
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, [allCourseList]);
+
+  let CourseCard: any = [];
+
+  if (allCourseList?.length) {
+    allCourseList?.forEach(function (val: any) {
+      if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
+        CourseCard.push(val);
+      }
+    });
+  }
+
+  const listRef = useRef(null);
+  const ref = useActive("#testimonials");
+  function getWeeksDiff(start_date: any, end_date: any) {
+    const msInWeek = 1000 * 60 * 60 * 24 * 7;
+    return Math.round(
+      Math.ceil(new Date(end_date).getTime() - new Date(start_date).getTime()) /
+        msInWeek
+    );
+  }
   return (
     <div className={Styles.featuredCoursesContainer}>
       <h2 className={Styles.smallHeading}>
@@ -106,7 +184,19 @@ const FeaturedCourses = () => {
                   </div>
                 </div>
                 <div className={Styles.buttonContainer}>
-                  <button className={Styles.learnMoreButton}>Learn More</button>
+                  <button
+                    className={Styles.learnMoreButton}
+                    onClick={() =>
+                      redirectCard(
+                        card.cardProgram,
+                        card.code,
+                        card.id,
+                        card.parentId
+                      )
+                    }
+                  >
+                    Learn More
+                  </button>
                   <button className={Styles.enrollNowButton}>Enroll Now</button>
                 </div>
               </div>

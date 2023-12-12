@@ -48,6 +48,9 @@ const NewHomeData = {
     cardStarIcon: "./assets/images/HomeNew/star.svg",
     cards: [
       {
+        code: "PM",
+        id: 1,
+        parentId: null,
         cardProgram: "Project Management",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardWeek: "10 Weeks",
@@ -55,6 +58,10 @@ const NewHomeData = {
         cardTool: "30 Tools",
       },
       {
+        code: "DSCI",
+        id: 2,
+        parentId: null,
+
         cardProgram: "Data Science",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardWeek: "15 Weeks",
@@ -62,6 +69,10 @@ const NewHomeData = {
         cardTool: "45 Tools",
       },
       {
+        code: "CSC",
+        id: 3,
+        parentId: null,
+
         cardProgram: "Cyber Security",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardWeek: "12 Weeks",
@@ -69,6 +80,10 @@ const NewHomeData = {
         cardTool: "30 Tools",
       },
       {
+        code: "AI",
+        id: 4,
+        parentId: null,
+
         cardProgram: "Artificial Intelligence",
         cardImg: "./assets/images/HomeNew/CardImg.webp",
         cardWeek: "10 Weeks",
@@ -76,6 +91,10 @@ const NewHomeData = {
         cardTool: "30 Tools",
       },
       {
+        code: "DM",
+        id: 5,
+        parentId: null,
+
         cardProgram: "Digital Marketing",
         cardImg: "./assets/images/HomeNew/CardImg.webp",
         cardWeek: "10 Weeks",
@@ -423,18 +442,33 @@ const NewHomeData = {
     Courses: {
       DataScience: [
         {
+          id: 1.1,
+          name: "Basic Data Science",
+          code: "BDSCI",
+          description: "Basic Data Science",
+          parentId: 1,
           cardProgram: "Basic Data Science",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
         },
         {
+          id: 1.2,
+          name: "Advanced Data Science",
+          code: "ADDSCI",
+          description: "Advanced Data Science",
+          parentId: 1,
           cardProgram: "Advanced Data Science",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "45,000+",
           cardTool: "45 Tools",
         },
         {
+          id: 1.3,
+          name: "Applied Data Science",
+          code: "APDSCI",
+          description: "Applied Data Science",
+          parentId: 1,
           cardProgram: "Application Data Science",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "33,000+",
@@ -443,20 +477,36 @@ const NewHomeData = {
       ],
       ProjectManagement: [
         {
+          id: 2,
+          name: "Project Management",
+          code: "PM",
+          description: "Project Management",
+          parentId: null,
           cardProgram: "Project Management",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
+          cardWeek: "12 Weeks",
         },
       ],
       DigitalMarketing: [
         {
+          id: 3.1,
+          name: "Digital Marketing Fundamentals",
+          code: "BDMC",
+          description: "Digital Marketing Fundamentals",
+          parentId: 3,
           cardProgram: "Digital Marketing Fundamental",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
         },
         {
+          id: 3.2,
+          name: "Advance Digital Marketing Course",
+          code: "AVDMC",
+          description: "Advance Digital Marketing Course",
+          parentId: 3,
           cardProgram: "Advanced Digital Marketing Course",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "45,000+",
@@ -465,6 +515,11 @@ const NewHomeData = {
       ],
       CyberSecurity: [
         {
+          id: 4,
+          name: "Cybersecurity",
+          code: "SPCSY",
+          description: "Cybersecurity",
+          parentId: null,
           cardProgram: "Cyber Security",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
@@ -473,18 +528,33 @@ const NewHomeData = {
       ],
       ArtificialIntelligence: [
         {
+          id: 5.1,
+          name: "AI Introductory",
+          code: "AIIP",
+          description: "AI Introductory",
+          parentId: 5,
           cardProgram: "Artificial Intelligence Introduction",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
         },
         {
+          id: 5.2,
+          name: "AI Intermediary",
+          code: "AIIPF",
+          description: "AI Intermediary",
+          parentId: 5,
           cardProgram: "Artificial Intelligence Intermediate",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "45,000+",
           cardTool: "45 Tools",
         },
         {
+          id: 5.3,
+          name: "AI Advanced Applied",
+          code: "AIAAPP",
+          description: "AI Advanced Applied",
+          parentId: 5,
           cardProgram: "Artificial Intelligence Advance",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "33,000+",

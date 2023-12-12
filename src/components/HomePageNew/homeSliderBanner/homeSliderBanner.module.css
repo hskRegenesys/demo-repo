@@ -98,9 +98,13 @@
   border: 1px solid rgb(0, 0, 0);
   color: #131718;
 }
+.desktopSlide {
+  margin-top: 130px;
+}
 @media (max-width: 760px) {
   .mobileSlide {
     display: block;
+    margin-top: 130px;
   }
   .desktopSlide {
     display: none;
