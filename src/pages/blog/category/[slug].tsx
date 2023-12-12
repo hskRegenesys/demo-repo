@@ -26,7 +26,7 @@ const PostsByCategory = () => {
               `,
         }}
       />
-      <Layout pageTitle="Blogs">
+      <Layout pageTitle="blog">
         <Style />
         <HeaderOne variant="blog" />
         <MobileMenu />
