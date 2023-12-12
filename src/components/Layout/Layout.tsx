@@ -14,6 +14,7 @@ import { Modal } from "react-bootstrap";
 const Layout = (props: any) => {
   const [show, setShow] = useState(false);
   const Router = useRouter();
+  console.log("Router", Router);
   const { children, pageTitle, preloader, mainClass, preloaderClass } = props;
   const [loading, setLoading] = useState(true);
 
@@ -33,13 +34,9 @@ const Layout = (props: any) => {
     : metaData?.metaInfo?.description?.["home"];
   const keywords = metaData?.metaInfo?.keywords?.[pageTitle];
 
-  let canonicalBaseUrl =
-    "https://www.digitalregenesys.com" +
-    metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+  let canonicalBaseUrl = "https://www.digitalregenesys.com" + pageTitle;
   if (process.env.ENV_NAME !== "PRODUCTION") {
-    canonicalBaseUrl =
-      "https://uat-new.digitalregenesys.com" +
-      metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+    canonicalBaseUrl = "https://uat-new.digitalregenesys.com" + pageTitle;
   }
 
   return (
