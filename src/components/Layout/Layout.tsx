@@ -34,11 +34,16 @@ const Layout = (props: any) => {
     : metaData?.metaInfo?.description?.["home"];
   const keywords = metaData?.metaInfo?.keywords?.[pageTitle];
 
-  let canonicalBaseUrl = "https://www.digitalregenesys.com" + pageTitle;
+  let canonicalBaseUrl =
+    "https://www.digitalregenesys.com" +
+    metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
   if (process.env.ENV_NAME !== "PRODUCTION") {
-    canonicalBaseUrl = "https://uat-new.digitalregenesys.com" + pageTitle;
+    canonicalBaseUrl =
+      "https://uat-new.digitalregenesys.com" +
+      metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
   }
-
+  console.log("canonicalBaseUrl", canonicalBaseUrl);
+  console.log("pageTitle", pageTitle);
   return (
     <>
       <Head>
