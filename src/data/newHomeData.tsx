@@ -50,6 +50,7 @@ const NewHomeData = {
       {
         code: "PM",
         id: 1,
+        name: "Project Management",
         parentId: null,
         cardProgram: "Project Management",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
@@ -61,7 +62,7 @@ const NewHomeData = {
         code: "DSCI",
         id: 2,
         parentId: null,
-
+        name: "Data Science",
         cardProgram: "Data Science",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardWeek: "15 Weeks",
@@ -72,6 +73,7 @@ const NewHomeData = {
         code: "CSC",
         id: 3,
         parentId: null,
+        name: "Cyber Security",
 
         cardProgram: "Cyber Security",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
@@ -83,6 +85,7 @@ const NewHomeData = {
         code: "AI",
         id: 4,
         parentId: null,
+        name: "Artificial Intelligence",
 
         cardProgram: "Artificial Intelligence",
         cardImg: "./assets/images/HomeNew/CardImg.webp",
@@ -94,6 +97,7 @@ const NewHomeData = {
         code: "DM",
         id: 5,
         parentId: null,
+        name: "Digital Marketing",
 
         cardProgram: "Digital Marketing",
         cardImg: "./assets/images/HomeNew/CardImg.webp",
