@@ -42,8 +42,6 @@ const Layout = (props: any) => {
       "https://uat-new.digitalregenesys.com" +
       metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
   }
-  console.log("canonicalBaseUrl", canonicalBaseUrl);
-  console.log("pageTitle", pageTitle);
   return (
     <>
       <Head>
