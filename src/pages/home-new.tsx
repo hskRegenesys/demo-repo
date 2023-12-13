@@ -1,5 +1,5 @@
 // HomeNew.js
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeaderOne from "@/components/Header/HeaderOne";
 import HomeSliderBanner from "@/components/HomePageNew/homeSliderBanner/HomeSliderBanner";
 import Layout from "@/components/Layout/Layout";
@@ -16,15 +16,52 @@ import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import OurCourses from "@/components/HomePageNew/ourCourses/OurCourses";
 import NewHomeData from "@/data/newHomeData";
+import RequestForm from "@/components/HomePageNew/requestForm/RequestForm";
+import ThankYouPopup from "@/components/Modal/ThankYouPopup";
+import { allCourseList } from "@/data/courseData";
+import { Modal } from "react-bootstrap";
+import _ from "lodash";
+import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 
 const HomeNew = () => {
+  const [show, setShow] = useState(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleEnrollButtonClick = () => {
+    setIsPopupVisible(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupVisible(false);
+  };
+
+  let courses: any = [];
+
+  if (allCourseList?.length) {
+    courses = _.filter(
+      allCourseList,
+      (item: any) => item?.isAddon === false && item?.mode_id === 1
+    );
+  }
+
+  useEffect(() => {
+    const timeoutModal = setTimeout(() => {
+      setShow(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutModal);
+  }, []);
   return (
     <Layout pageTitle="new-home">
+      {isPopupVisible && (
+        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+      )}
       <HeaderOne pageTitle="home" />
       <HomeSliderBanner />
       <UspSection />
       <FeaturedCourses />
-      <AboutUs />
+      <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <AdmitsCompanies />
       <StudentReview />
       <OurCourses data={NewHomeData} />
@@ -34,6 +71,9 @@ const HomeNew = () => {
       <BlogSection />
       <Faq />
       <FooterDR />
+      {/* <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
+      </Modal> */}
     </Layout>
   );
 };

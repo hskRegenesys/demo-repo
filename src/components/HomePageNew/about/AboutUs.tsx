@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import NewHomeData from "../../../data/newHomeData";
 import Styles from "./aboutUs.module.css";
+import PopupForm from "../popupForm/PopupForm";
 
-const AboutUs = () => {
+interface AboutUsProps {
+  handleEnrollButtonClick: () => void;
+}
+
+const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
   const { aboutUsImg, aboutTitle, aboutHeading, aboutParagraph, cards } =
     NewHomeData.AboutUsData;
 
@@ -17,17 +22,14 @@ const AboutUs = () => {
       }
     };
 
-    // Initial window width (only on the client side)
     if (typeof window !== "undefined") {
       setWindowWidth(window.innerWidth);
     }
 
-    // Event listener for window resize (only on the client side)
     if (typeof window !== "undefined") {
       window.addEventListener("resize", handleResize);
     }
 
-    // Clean up the event listener on component unmount (only on the client side)
     return () => {
       if (typeof window !== "undefined") {
         window.removeEventListener("resize", handleResize);
@@ -36,7 +38,6 @@ const AboutUs = () => {
   }, []);
 
   useEffect(() => {
-    // Check if paragraph needs truncation
     const truncatedParagraph =
       windowWidth && windowWidth > 920
         ? aboutParagraph.slice(0, 520)
@@ -115,7 +116,12 @@ const AboutUs = () => {
         ))}
       </div>
 
-      <div className={Styles.startLearningButton}>Start Learning</div>
+      <div
+        className={Styles.startLearningButton}
+        onClick={handleEnrollButtonClick}
+      >
+        Start Learning
+      </div>
     </div>
   );
 };

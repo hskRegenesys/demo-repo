@@ -2,6 +2,7 @@
 import React from "react";
 import NewHomeData from "../../../data/newHomeData";
 import styles from "./connectContainer.module.css";
+import RequestForm from "../requestForm/RequestForm";
 
 const ConnectContainer = () => {
   const {
@@ -46,45 +47,7 @@ const ConnectContainer = () => {
         </ul>
       </div>
       <div className={styles.rightSection}>
-        <div className={styles.applyNowHeading}>Apply Now</div>
-        <form className={styles.form}>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            placeholder="Name"
-          />
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Email"
-          />
-
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            required
-            placeholder="Phone Number"
-          />
-
-          <select
-            id="program"
-            name="program"
-            placeholder="Select Program"
-            required
-          >
-            <option value="program1">Program 1</option>
-            <option value="program2">Program 2</option>
-            {/* Add more options as needed */}
-          </select>
-
-          <button type="submit">Submit</button>
-        </form>
+        <RequestForm />
       </div>
     </div>
   );
