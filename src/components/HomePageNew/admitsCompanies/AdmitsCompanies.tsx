@@ -1,11 +1,16 @@
-// AdmitsCompanies.js
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Styles from "./admitsCompanies.module.css";
 import NewHomeData from "../../../data/newHomeData";
 
-const AdmitsCompanies = () => {
+interface AdmitsCompaniesProps {
+  handleEnrollButtonClick: React.MouseEventHandler<HTMLDivElement>;
+}
+
+const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
+  handleEnrollButtonClick,
+}) => {
   const { AdmitsHeading, AdmitsTitle, buttenIcon, AdmitsCards } =
     NewHomeData.AdmiteCompaniesData;
 
@@ -39,7 +44,10 @@ const AdmitsCompanies = () => {
         </Swiper>
       </div>
       <div className={Styles.enrollNowContainer}>
-        <div className={Styles.enrollNowButton}>
+        <div
+          className={Styles.enrollNowButton}
+          onClick={handleEnrollButtonClick}
+        >
           Enroll Now
           <img
             src={buttenIcon}

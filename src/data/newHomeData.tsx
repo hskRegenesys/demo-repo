@@ -1,11 +1,11 @@
 const NewHomeData = {
   sliderDataDesktop: [
     {
-      imageUrl: "/assets/images/HomeNew/Path_.webp",
+      imageUrl: "/assets/images/HomeNew/Hero-Banner.webp",
       title: "Slide 1",
     },
     { imageUrl: "/assets/images/HomeNew/Hero-Banner.webp", title: "Slide 2" },
-    { imageUrl: "/assets/images/HomeNew/Path_.webp", title: "Slide 3" },
+    { imageUrl: "/assets/images/HomeNew/Hero-Banner.webp", title: "Slide 3" },
     // Add more slides as needed
   ],
   sliderDataMobile: [

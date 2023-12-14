@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import NewHomeData from "../../../data/newHomeData";
+import RequestForm from "../requestForm/RequestForm";
 
 // Install Swiper modules
 SwiperCore.use([Pagination, Autoplay]);
@@ -57,46 +58,7 @@ const HomeSliderBanner = () => {
         </Swiper>
         <div className={Styles.formcointent}>
           <div className={Styles.formContainer}>
-            <form className={Styles.form}>
-              <div className={Styles.applyNowHeading}>Apply Now</div>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Name"
-              />
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Email"
-              />
-
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                required
-                placeholder="Phone Number"
-              />
-
-              <select
-                id="program"
-                name="program"
-                placeholder="Select Program"
-                required
-              >
-                <option value="program1">Program 1</option>
-                <option value="program2">Program 2</option>
-                {/* Add more options as needed */}
-              </select>
-
-              <button type="submit">Submit</button>
-            </form>
+            <RequestForm />
           </div>
         </div>
       </div>

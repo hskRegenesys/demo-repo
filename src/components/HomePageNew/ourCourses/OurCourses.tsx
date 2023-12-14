@@ -54,7 +54,14 @@ interface OurCoursesProps {
   data: NewHomeData;
 }
 
-const OurCourses: React.FC<OurCoursesProps> = ({ data }) => {
+interface OurCoursesProps {
+  handleEnrollButtonClick: () => void;
+}
+
+const OurCourses: React.FC<OurCoursesProps> = ({
+  data,
+  handleEnrollButtonClick,
+}) => {
   const [selectedCategory, setSelectedCategory] = useState<
     string | undefined
   >();
@@ -239,7 +246,10 @@ const OurCourses: React.FC<OurCoursesProps> = ({ data }) => {
                     >
                       Learn More
                     </button>
-                    <button className={Styles.enrollNowButton}>
+                    <button
+                      onClick={handleEnrollButtonClick}
+                      className={Styles.enrollNowButton}
+                    >
                       Enroll Now
                     </button>
                   </div>
@@ -360,10 +370,23 @@ const OurCourses: React.FC<OurCoursesProps> = ({ data }) => {
                           </div>
                         </div>
                         <div className={Styles.buttonContainer}>
-                          <button className={Styles.learnMoreButton}>
+                          <button
+                            className={Styles.learnMoreButton}
+                            onClick={() =>
+                              redirectCard(
+                                card.cardProgram,
+                                card.code,
+                                card.id,
+                                card.parentId
+                              )
+                            }
+                          >
                             Learn More
                           </button>
-                          <button className={Styles.enrollNowButton}>
+                          <button
+                            onClick={handleEnrollButtonClick}
+                            className={Styles.enrollNowButton}
+                          >
                             Enroll Now
                           </button>
                         </div>

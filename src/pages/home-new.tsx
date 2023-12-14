@@ -22,6 +22,7 @@ import { allCourseList } from "@/data/courseData";
 import { Modal } from "react-bootstrap";
 import _ from "lodash";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import MobileMenu from "@/components/Header/MobileMenu";
 
 const HomeNew = () => {
   const [show, setShow] = useState(false);
@@ -58,19 +59,23 @@ const HomeNew = () => {
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
       <HeaderOne pageTitle="home" />
+      <MobileMenu />
       <HomeSliderBanner />
       <UspSection />
-      <FeaturedCourses />
+      <FeaturedCourses handleEnrollButtonClick={handleEnrollButtonClick} />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
-      <AdmitsCompanies />
+      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
-      <OurCourses data={NewHomeData} />
+      <OurCourses
+        data={NewHomeData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
       <LearnersBenefit />
       <ConnectContainer />
       <StudentYoutubeVideos />
       <BlogSection />
       <Faq />
-      <FooterDR />
+      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
       {/* <Modal show={thankYouShow}>
         <ThankYouPopup setShows={setThankYouShow} />
       </Modal> */}

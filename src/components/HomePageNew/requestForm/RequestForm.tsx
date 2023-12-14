@@ -116,15 +116,7 @@ function RequestForm(props: any) {
   }, [id]);
   return (
     <div className={Styles.RequestFormStyle}>
-      {isLoading ? (
-        // <div className="d-flex justify-content-center w-100">
-        //   <div className="spinner-border" role="status">
-        //     <span className="sr-only" />
-        //   </div>
-        // </div>
-
-        <Loader />
-      ) : submitted ? ( // If form is submitted, show "Thank you" message
+      {submitted ? ( // If form is submitted, show "Thank you" message
         <div className={Styles.thankYouMessage}>
           <p>Thank you for applying! We will get back to you.</p>
         </div>

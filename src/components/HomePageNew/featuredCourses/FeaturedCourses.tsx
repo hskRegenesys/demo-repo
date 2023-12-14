@@ -30,7 +30,13 @@ interface Card {
   cardTool: string;
 }
 
-const FeaturedCourses = () => {
+interface FeaturedCoursesProps {
+  handleEnrollButtonClick: () => void;
+}
+
+const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
+  handleEnrollButtonClick,
+}) => {
   const router = useRouter();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -197,7 +203,12 @@ const FeaturedCourses = () => {
                   >
                     Learn More
                   </button>
-                  <button className={Styles.enrollNowButton}>Enroll Now</button>
+                  <button
+                    onClick={handleEnrollButtonClick}
+                    className={Styles.enrollNowButton}
+                  >
+                    Enroll Now
+                  </button>
                 </div>
               </div>
             </SwiperSlide>
