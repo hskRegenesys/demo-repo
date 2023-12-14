@@ -26,7 +26,6 @@ import MobileMenu from "@/components/Header/MobileMenu";
 
 const HomeNew = () => {
   const [show, setShow] = useState(false);
-  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const handleEnrollButtonClick = () => {
@@ -46,6 +45,11 @@ const HomeNew = () => {
     );
   }
 
+  const onFormSubmit = () => {
+    // Replace this with your actual form submission logic
+    console.log("Form submitted!");
+  };
+
   useEffect(() => {
     const timeoutModal = setTimeout(() => {
       setShow(true);
@@ -60,7 +64,7 @@ const HomeNew = () => {
       )}
       <HeaderOne pageTitle="home" />
       <MobileMenu />
-      <HomeSliderBanner />
+      <HomeSliderBanner onFormSubmit={onFormSubmit} />
       <UspSection />
       <FeaturedCourses handleEnrollButtonClick={handleEnrollButtonClick} />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
@@ -71,14 +75,11 @@ const HomeNew = () => {
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <LearnersBenefit />
-      <ConnectContainer />
+      <ConnectContainer onFormSubmit={onFormSubmit} />
       <StudentYoutubeVideos />
       <BlogSection />
       <Faq />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-      {/* <Modal show={thankYouShow}>
-        <ThankYouPopup setShows={setThankYouShow} />
-      </Modal> */}
     </Layout>
   );
 };

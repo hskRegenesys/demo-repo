@@ -10,7 +10,13 @@ import RequestForm from "../requestForm/RequestForm";
 // Install Swiper modules
 SwiperCore.use([Pagination, Autoplay]);
 
-const HomeSliderBanner = () => {
+interface HomeSliderBannerProps {
+  onFormSubmit: () => void;
+}
+
+const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
+  onFormSubmit,
+}) => {
   const { sliderDataDesktop, sliderDataMobile } = NewHomeData;
   const secondsPerSlide = 3;
 
@@ -58,7 +64,7 @@ const HomeSliderBanner = () => {
         </Swiper>
         <div className={Styles.formcointent}>
           <div className={Styles.formContainer}>
-            <RequestForm />
+            <RequestForm onFormSubmit={onFormSubmit} />
           </div>
         </div>
       </div>

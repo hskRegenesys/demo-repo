@@ -79,6 +79,8 @@
   .Popup {
     border-radius: 0px;
     height: auto;
+    top: 0;
+    transition: top 5.5s ease-in-out;
   }
 
   .Popup.visible {

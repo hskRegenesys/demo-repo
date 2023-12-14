@@ -1,10 +1,15 @@
-// ConnectContainer.js
 import React from "react";
 import NewHomeData from "../../../data/newHomeData";
 import styles from "./connectContainer.module.css";
 import RequestForm from "../requestForm/RequestForm";
 
-const ConnectContainer = () => {
+interface ConnectContainerProps {
+  onFormSubmit: () => void;
+}
+
+const ConnectContainer: React.FC<ConnectContainerProps> = ({
+  onFormSubmit,
+}) => {
   const {
     connectContainerHeader,
     connectContainerTittle,
@@ -47,7 +52,7 @@ const ConnectContainer = () => {
         </ul>
       </div>
       <div className={styles.rightSection}>
-        <RequestForm />
+        <RequestForm onFormSubmit={onFormSubmit} />
       </div>
     </div>
   );

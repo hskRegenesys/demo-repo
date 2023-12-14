@@ -12,16 +12,18 @@ const PopupDS: React.FC<PopupDSProps> = ({ isVisible, onClose }) => {
 
   const closePopup = () => {
     setIsPopupVisible(false);
-    onClose(); // Call the provided onClose callback
+    onClose();
+  };
+
+  const handleFormSubmit = () => {
+    closePopup(); // Close the popup when the form is submitted
   };
 
   useEffect(() => {
     if (isVisible) {
       setIsPopupVisible(true);
-      // document.body.style.overflow = "hidden";
     } else {
       setIsPopupVisible(false);
-      // document.body.style.overflow = "";
     }
   }, [isVisible]);
 
@@ -59,7 +61,7 @@ const PopupDS: React.FC<PopupDSProps> = ({ isVisible, onClose }) => {
               </div>
               <div className={Styles.TextContainer}>
                 <div className={Styles.Form}>
-                  <RequestForm />
+                  <RequestForm onFormSubmit={handleFormSubmit} />
                 </div>
               </div>
             </div>
