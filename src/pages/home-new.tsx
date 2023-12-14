@@ -1,4 +1,3 @@
-// HomeNew.js
 import React, { useState, useEffect } from "react";
 import HeaderOne from "@/components/Header/HeaderOne";
 import HomeSliderBanner from "@/components/HomePageNew/homeSliderBanner/HomeSliderBanner";
@@ -16,16 +15,11 @@ import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import OurCourses from "@/components/HomePageNew/ourCourses/OurCourses";
 import NewHomeData from "@/data/newHomeData";
-import RequestForm from "@/components/HomePageNew/requestForm/RequestForm";
-import ThankYouPopup from "@/components/Modal/ThankYouPopup";
-import { allCourseList } from "@/data/courseData";
-import { Modal } from "react-bootstrap";
 import _ from "lodash";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
 
 const HomeNew = () => {
-  const [show, setShow] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const handleEnrollButtonClick = () => {
@@ -36,27 +30,14 @@ const HomeNew = () => {
     setIsPopupVisible(false);
   };
 
-  let courses: any = [];
-
-  if (allCourseList?.length) {
-    courses = _.filter(
-      allCourseList,
-      (item: any) => item?.isAddon === false && item?.mode_id === 1
-    );
-  }
-
-  const onFormSubmit = () => {
-    // Replace this with your actual form submission logic
-    console.log("Form submitted!");
-  };
-
   useEffect(() => {
     const timeoutModal = setTimeout(() => {
-      setShow(true);
+      setIsPopupVisible(true);
     }, 4000);
 
     return () => clearTimeout(timeoutModal);
   }, []);
+
   return (
     <Layout pageTitle="new-home">
       {isPopupVisible && (
@@ -64,7 +45,7 @@ const HomeNew = () => {
       )}
       <HeaderOne pageTitle="home" />
       <MobileMenu />
-      <HomeSliderBanner onFormSubmit={onFormSubmit} />
+      <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
       <FeaturedCourses handleEnrollButtonClick={handleEnrollButtonClick} />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
@@ -75,7 +56,7 @@ const HomeNew = () => {
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <LearnersBenefit />
-      <ConnectContainer onFormSubmit={onFormSubmit} />
+      <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
       <BlogSection />
       <Faq />

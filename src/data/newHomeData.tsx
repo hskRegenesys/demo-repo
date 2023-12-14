@@ -13,7 +13,10 @@ const NewHomeData = {
       imageUrl: "/assets/images/HomeNew/Hero Banner - Mobile.webp",
       title: "Slide 1",
     },
-    { imageUrl: "/assets/images/HomeNew/Path.webp", title: "Slide 2" },
+    {
+      imageUrl: "/assets/images/HomeNew/Hero Banner - Mobile.webp",
+      title: "Slide 2",
+    },
     {
       imageUrl: "/assets/images/HomeNew/Hero Banner - Mobile.webp",
       title: "Slide 3",

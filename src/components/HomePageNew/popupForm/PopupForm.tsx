@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import Styles from "./popupForm.module.css";
 import RequestForm from "../requestForm/RequestForm";
 
-interface PopupDSProps {
+interface PopupFormProps {
   isVisible: boolean;
   onClose: () => void;
 }
 
-const PopupDS: React.FC<PopupDSProps> = ({ isVisible, onClose }) => {
+const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const closePopup = () => {
@@ -72,4 +72,4 @@ const PopupDS: React.FC<PopupDSProps> = ({ isVisible, onClose }) => {
   );
 };
 
-export default PopupDS;
+export default PopupForm;
