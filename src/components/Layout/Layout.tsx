@@ -13,10 +13,19 @@ import { Modal } from "react-bootstrap";
 
 const Layout = (props: any) => {
   const [show, setShow] = useState(false);
-  const Router = useRouter();
-  console.log("Router", Router);
-  const { children, pageTitle, preloader, mainClass, preloaderClass } = props;
+  const { asPath, pathname } = useRouter();
+  const {
+    children,
+    pageTitle,
+    preloader,
+    mainClass,
+    preloaderClass,
+    categoryList,
+    blogList,
+  } = props;
   const [loading, setLoading] = useState(true);
+  const [clonicalData, setClonicalData] = useState("");
+  const [slugUrlData, setSlugUrlData] = useState("");
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -26,29 +35,70 @@ const Layout = (props: any) => {
     return () => clearTimeout(timeoutId);
   }, []);
   const metaData: any = Data;
-  const title = metaData?.metaInfo?.title?.[pageTitle]
-    ? metaData?.metaInfo?.title?.[pageTitle]
-    : metaData?.metaInfo?.title?.["home"];
-  const description = metaData?.metaInfo?.description?.[pageTitle]
-    ? metaData?.metaInfo?.description?.[pageTitle]
-    : metaData?.metaInfo?.description?.["home"];
-  const keywords = metaData?.metaInfo?.keywords?.[pageTitle];
 
-  let canonicalBaseUrl =
-    "https://www.digitalregenesys.com" +
-    metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
-  if (process.env.ENV_NAME !== "PRODUCTION") {
-    canonicalBaseUrl =
-      "https://uat-new.digitalregenesys.com" +
-      metaData?.metaInfo?.canonicalUrlData?.[pageTitle];
+  const title =
+    pageTitle === "blog"
+      ? blogList?.[0]?.yoast_head_json?.og_title
+      : pageTitle === "category"
+      ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_title
+      : metaData?.metaInfo?.title?.[pageTitle]
+      ? metaData?.metaInfo?.title?.[pageTitle]
+      : metaData?.metaInfo?.title?.["home"];
+  const description =
+    pageTitle === "blog"
+      ? blogList?.[0]?.yoast_head_json?.og_description
+      : pageTitle === "category"
+      ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_description
+      : metaData?.metaInfo?.description?.[pageTitle]
+      ? metaData?.metaInfo?.description?.[pageTitle]
+      : metaData?.metaInfo?.description?.["home"];
+  const keywords =
+    pageTitle === "blog"
+      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugUrlData]
+      : pageTitle === "category"
+      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugUrlData]
+      : metaData?.metaInfo?.keywords?.[pageTitle]
+      ? metaData?.metaInfo?.keywords?.[pageTitle]
+      : metaData?.metaInfo?.keywords?.["home"];
+
+  function fetchAsPath() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(asPath);
+      });
+    });
   }
+  async function setCanonicalBaseUrl() {
+    try {
+      const asPath: any = await fetchAsPath();
+
+      let canonicalBaseUrl = "https://www.digitalregenesys.com" + asPath;
+
+      if (process.env.ENV_NAME !== "PRODUCTION") {
+        canonicalBaseUrl = "https://uat-new.digitalregenesys.com" + asPath;
+      }
+      const regex = /\/([^\/]+)\/?$/;
+      const match = asPath.match(regex);
+      let slugUrl = "";
+      if (match) {
+        slugUrl = match[1];
+      }
+      setSlugUrlData(slugUrl);
+      setClonicalData(canonicalBaseUrl);
+    } catch (error) {}
+  }
+  useEffect(() => {
+    setCanonicalBaseUrl();
+  }, [asPath]);
   return (
     <>
       <Head>
         <title>{title}</title>
-        <link rel="canonical" href={canonicalBaseUrl} />
-        <meta name="description" content={description} />
-        <meta name="keywords" content={keywords} />
+        {clonicalData && <link rel="canonical" href={clonicalData} />}
+
+        {description && <meta name="description" content={description} />}
+
+        {keywords && <meta name="keywords" content={keywords} />}
 
         {process.env.ENV_NAME === "PRODUCTION" && (
           <meta name="robots" content="index, follow" />
