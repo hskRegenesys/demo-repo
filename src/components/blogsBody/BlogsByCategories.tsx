@@ -10,7 +10,7 @@ import { Spinner } from "react-bootstrap";
 import PostContainer from "./PostContainer";
 import BreadCrumb from "./BreadCrumb";
 
-const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
+const BlogsByCategories = ({ categorySlug ,setCategoryList }: { categorySlug: string,setCategoryList:(value:any)=>void }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>("");
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
@@ -47,6 +47,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
     if (apiResponse.length > 0) {
       setIsLoading(false);
       setPostList(apiResponse);
+      setCategoryList(apiResponse)
     }
   };
 
