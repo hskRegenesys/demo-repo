@@ -11,14 +11,13 @@ import BreadCrumb from "./BreadCrumb";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
 
-const BlogContainer = ({ slug }: { slug: string }) => {
+const BlogContainer = ({ slug,setBlogList }: { slug: string ,setBlogList:(value:any)=>void }) => {
   const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
-
   const getPost = async () => {
     const response = await wpService.allPosts({ slug: slug });
     !!response && setPostResponse(response);
+    !!response && setBlogList(response)
   };
-
   useEffect(() => {
     getPost();
   }, [slug]);
@@ -35,7 +34,7 @@ const BlogContainer = ({ slug }: { slug: string }) => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "100% auto",
-              backgroundImage: `url(${postResponse[0]?.yoast_head_json.og_image[0].url})`,
+              backgroundImage: `url(${postResponse[0]?.yoast_head_json?.og_image[0]?.url})`,
             }}
           >
             <div

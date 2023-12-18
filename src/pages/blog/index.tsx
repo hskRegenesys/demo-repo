@@ -35,7 +35,7 @@ const Blogs = () => {
               `,
         }}
       />
-      <Layout pageTitle="blog">
+      <Layout pageTitle="Blog">
         <Style />
         <HeaderOne variant="blog" />
         <MobileMenu />

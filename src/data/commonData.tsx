@@ -44,7 +44,7 @@ const Data = {
       thankYou: "Thank You",
       createMyWealth:
         "Investment, Trading, Personal Finance Course | Digital Regenesys",
-      blog: "Digital Regenesys Blog: Insights, Tips, & Advice for Digital Success",
+      Blog: "Digital Regenesys Blog: Insights, Tips, & Advice for Digital Success",
       "artificial-intelligence":
         "Artificial Intelligence Course Online | Digital Regenesys",
       "ai-introductory":
@@ -229,7 +229,7 @@ const Data = {
       createMyWealth:
         "investing course, trading course, finance course, investment courses, investment courses in south africa, finance courses in south africa, distance learning finance courses, trading course in south africa",
 
-      blog: `
+      Blog: `
       data science course blog, data analyst, data scientist, machine learning, artificial intelligence, big data, predictive analytics, business intelligence, data visualization, data mining, statistics, digital marketing, marketing, advertising, social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, lead generation, customer relationship management (CRM), marketing automation, project management, project manager, project planning, project execution, project control, project risk management, project communication, project team management, project budget management, project quality management, cyber security, information security, information assurance, computer security, network security, data security, application security, operational security, physical security, compliance, design thinking, human-centered design, innovation, creativity, problem solving, ideation, prototyping, testing, implementation
       `,
       "artificial-intelligence":
@@ -292,7 +292,7 @@ const Data = {
       createMyWealth:
         "Digital Regenesys offers an all in one trading course, investment course, and finance course. Enrol for the Investment, Trading & Personal Finance course. Enquire now.",
 
-      blog: `
+      Blog: `
      Discover the Digital Regenesys Blog - unlock digital transformation's power. Get insights, guidance, and success stories to stay ahead in the digital era.
       `,
       "artificial-intelligence":
@@ -331,7 +331,7 @@ const Data = {
         "/all-courses/data-science/advanced-data-science",
       "applied-data-science": "/all-courses/data-science/applied-data-science",
       "design-thinking": "/all-courses/design-thinking",
-      blog: "/blog ",
+      Blog: "/blog ",
       "artificial-intelligence": "/all-courses/artificial-intelligence",
       "ai-introductory": "/all-courses/artificial-intelligence/ai-introductory",
       "ai-intermediary": "/all-courses/artificial-intelligence/ai-intermediary",

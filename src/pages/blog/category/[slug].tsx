@@ -8,11 +8,12 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import BlogsByCategories from "@/components/blogsBody/BlogsByCategories";
 import Script from "next/script";
+import { useState } from "react";
 
 const PostsByCategory = () => {
   const router = useRouter();
   const { slug } = router.query;
-
+const [categoryList,setCategoryList]=useState<any>([])
   return (
     <>
       <Script
@@ -26,12 +27,12 @@ const PostsByCategory = () => {
               `,
         }}
       />
-      <Layout pageTitle="blog">
+      <Layout pageTitle="category" categoryList={categoryList}>
         <Style />
         <HeaderOne variant="blog" />
         <MobileMenu />
         <SearchPopup />
-        {slug && <BlogsByCategories categorySlug={slug.toString()} />}
+        {slug && <BlogsByCategories categorySlug={slug.toString()} setCategoryList={setCategoryList} />}
         <MainFooter />
         <StickyBar />
       </Layout>
