@@ -34,6 +34,11 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
+    {
+      source: "/programsnew",
+      destination: "/all-courses-new",
+      permanent: true,
+    },
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -869,6 +874,11 @@ const redirectURL = () => {
     {
       source: "/home-2",
       destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/new-home",
+      destination: "/home-new",
       permanent: true,
     },
 
