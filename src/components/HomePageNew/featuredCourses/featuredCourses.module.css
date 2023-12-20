@@ -5,7 +5,6 @@
   padding: 72px 108px 0px 108px;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .smallHeading {
@@ -200,7 +199,7 @@
   left: 0;
   position: absolute;
   width: 100%;
-  top: 15%;
+  margin-top: 8%;
 }
 
 /* swiper style */
@@ -271,21 +270,5 @@
   .icon {
     width: 20px;
     height: 20px;
-  }
-  .card .enrollNowButton {
-    display: none;
-  }
-  .card .learnMoreButton {
-    width: 100%;
-    color: var(--primary-primary-white, #fff);
-    border: 0.837px solid #008554;
-    background: #008554;
-    transition: background-color 0.8s;
-    box-shadow: 0px 0.803px 1.607px 0px rgba(16, 24, 40, 0.05);
-  }
-  .card .learnMoreButton:hover {
-    color: var(--primary-primary-charcoal, #131718);
-    background-color: #ffffff00;
-    border: 1px solid var(--primary-primary-charcoal, #131718);
   }
 }

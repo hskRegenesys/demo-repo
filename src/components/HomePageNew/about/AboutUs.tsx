@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NewHomeData from "../../../data/newHomeData";
 import Styles from "./aboutUs.module.css";
-import PopupForm from "../popupForm/PopupForm";
 
 interface AboutUsProps {
   handleEnrollButtonClick: () => void;

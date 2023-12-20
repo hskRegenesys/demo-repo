@@ -32,10 +32,12 @@ interface Card {
 
 interface FeaturedCoursesProps {
   handleEnrollButtonClick: () => void;
+  style?: React.CSSProperties; // Add style prop
 }
 
 const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
   handleEnrollButtonClick,
+  style,
 }) => {
   const router = useRouter();
 
@@ -90,7 +92,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
     );
   }
   return (
-    <div className={Styles.featuredCoursesContainer}>
+    <div className={Styles.featuredCoursesContainer} style={style}>
       <h2 className={Styles.smallHeading}>
         {NewHomeData.FeaturedCoursesData.FeaturedCoursesHeading}
       </h2>

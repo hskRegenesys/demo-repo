@@ -570,6 +570,58 @@ const NewHomeData = {
       ],
     },
   },
+  whyChooseDRData: {
+    whyChooseDRHeading: "Smart Features",
+    whyChooseDRTitle: "Why choose Digital Regenesys?",
+    whyChooseDRButtonText: "Enroll Now",
+    whyChooseDRCard: [
+      {
+        cardImg: "./assets/images/HomeNew/Live Call.svg",
+        cardText: "Live Classes",
+      },
+      {
+        cardImg: "./assets/images/HomeNew/Award.svg",
+        cardText: "Live Classes",
+      },
+      {
+        cardImg: "./assets/images/HomeNew/Counselling.svg",
+        cardText: "Live Classes",
+      },
+      {
+        cardImg: "./assets/images/HomeNew/Experts.svg",
+        cardText: "Live Classes",
+      },
+    ],
+  },
+
+  CertificationDRData: {
+    CertificationDRHeding: "Certification",
+    CertificationDRTitle: "About Digital Regenesys Certificate",
+    CertificationDRparagarap:
+      "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and becoming the source for the next generation of digital technologies, products, and services by promoting, enhancing core competencies, and capacity building.",
+    CertificationDRTickImg: "./assets/images/HomeNew/Check.svg",
+    CertificationDRButtenText: "Start Learning",
+    CertificationDRlistheding: "Key Achievements",
+    CertificationDRlistText: [
+      "Freedom of teaching",
+      "Get teaching certification",
+      "Get teaching certification",
+      "Freedom of teaching",
+      "Get teaching certification",
+      "Get teaching certification",
+    ],
+    CertificationDRImage: "./assets/images/HomeNew/certificate.png",
+    CertificationDRImageText:
+      "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+  },
+  allCoursesPageBannerData: {
+    DesktopBannerImg: "./assets/images/HomeNew/All-Courses-Banner-Web.png",
+    MobileBannerImg: "./assets/images/HomeNew/All-Courses-Banner-Mobile.png",
+    HeadingText: "Your Path to a Successful Bright Career!",
+    ParagraphText:
+      "Regenesys online programming courses offer you training on a variety of courses, such as Data Science, Artificial Intelligence, and more. The courses are for all skill levels, and you can choose to learn any or all courses as per your wish. In these courses, you will have free access to the entire course material, which you can refer to at any time. So, without wasting time, enrol in one of these courses today and give a kick-start to your successful career.",
+    ButtonText: "Enrol Now!",
+  },
 };
 
 export default NewHomeData;

@@ -1,0 +1,237 @@
+/* CertificationDR.module.css */
+
+.certification {
+  margin: 108px 100px;
+}
+
+.certificationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 0;
+}
+
+.leftSection {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.leftSection h2 {
+  color: #008554;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 4px;
+}
+
+.leftSection h3 {
+  color: #2b3340;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+
+.leftSection p {
+  color: var(--Neutral-80, #616364);
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 28px;
+}
+
+.certificationList {
+  margin-top: 20px;
+}
+
+.certificationList h4 {
+  color: var(--Light-Text-Primary, #2b3340);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+.certificationListItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.certificationListItem span {
+  color: var(--Primary-Primary---Dark-Grey, #6a767c);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+.checkImage {
+  width: 24px;
+}
+
+.certificationListText {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.rightSection {
+  flex: 1;
+  text-align: center;
+  max-width: 468px;
+}
+
+.CertificationDRImage {
+  max-width: 468px;
+}
+
+.rightSection p {
+  color: var(--Light-Text-Secondary, #697386);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.12px;
+  margin-top: 20px;
+}
+
+.enrollButton {
+  position: relative;
+  margin: 64px auto;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 7.68px;
+  font-family: Montserrat;
+  border: 1px solid var(--light-text-surface-primary-green, #008554);
+  background: var(--light-text-surface-primary-green, #008554);
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 280px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+.enrollButton:hover {
+  color: var(--primary-primary-charcoal, #131718);
+  background-color: #ffffff;
+  border: 1px solid var(--primary-primary-charcoal, #131718);
+}
+
+.topsecionmobile {
+  display: none;
+}
+
+/* Media Queries */
+
+/* Media Queries */
+
+@media only screen and (max-width: 920px) {
+  .certification {
+    margin: 44px 16px;
+  }
+  .certificationContainer {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .leftSection {
+    margin-right: 0;
+  }
+  .leftSection p {
+    font-size: 14px;
+  }
+
+  .rightSection {
+    max-width: none;
+    margin-top: 20px;
+    order: -1;
+  }
+
+  .rightSection p {
+    font-size: 9px;
+    margin: 10px 0px 22px;
+  }
+  .certificationList {
+    padding: 0px 16px;
+  }
+  .certificationListText {
+    grid-template-columns: 1fr;
+  }
+  .certificationListItem span {
+    font-size: 14px;
+  }
+  .checkImage {
+    width: 20px;
+  }
+  .topsecionDesktop {
+    display: none;
+  }
+  .topsecionmobile h2 {
+    color: var(--Primary-Primary---Green, #008554);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.12px;
+    margin-bottom: 8px;
+  }
+  .topsecionmobile h3 {
+    color: var(--Primary-Primary---Charcoal, #131718);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.029px;
+    margin-bottom: 0px;
+  }
+
+  .topsecionmobile {
+    display: block;
+  }
+  .certificationList h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .enrollButton {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.viewMore {
+  color: #008554;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+.img {
+  width: 15px;
+  margin-left: 5px;
+}
