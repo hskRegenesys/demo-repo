@@ -4,7 +4,6 @@ import Link from "next/link";
 import { getOneRandom } from "src/utils/common";
 
 const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
-  console.log("titlePost", post?.title?.rendered);
   return (
     <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
       <Link href={`/blog/${post?.slug}`} passHref>
