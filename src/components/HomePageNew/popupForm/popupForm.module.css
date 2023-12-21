@@ -1,0 +1,110 @@
+.PopupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Popup {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: top 0.8s ease-in-out;
+}
+
+.Popup.visible {
+  top: 10%;
+}
+
+.Form {
+  margin: 20px 10px;
+}
+
+.CloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.Content {
+  display: flex;
+}
+
+.ImageContainer {
+  flex: 1;
+}
+
+.WebImage {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.MobileImage {
+  display: none;
+}
+
+.TextContainer {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .PopupContainer {
+    align-items: normal;
+    display: grid;
+    justify-content: normal;
+  }
+
+  .Popup {
+    border-radius: 0px;
+    height: auto;
+    top: 0;
+    transition: top 5.5s ease-in-out;
+  }
+
+  .Popup.visible {
+    top: 0;
+    height: 100%;
+  }
+
+  .Content {
+    display: block;
+  }
+
+  .WebImage {
+    display: none;
+  }
+
+  .TextContainer {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-bottom: 25px;
+  }
+
+  .MobileImage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -2,19 +2,18 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import context from "./context";
 
-const ContextProvider = ({ children }:any) => {
+const ContextProvider = ({ children }: any) => {
   const [menuStatus, setMenuStatus] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
   const [currentActive, setCurrentActive] = useState("#home");
 
   const { pathname } = useRouter();
 
-  const toggleMenu = (value:any) => {
+  const toggleMenu = (value: any) => {
     setMenuStatus((preMenuStatus) =>
       typeof value === "boolean" ? value : !preMenuStatus
     );
   };
-
   const toggleSearch = () => {
     setOpenSearch((preSearch) => !preSearch);
   };
