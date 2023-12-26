@@ -17,6 +17,8 @@ import { useRouter } from "next/router";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
+import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
+import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -33,19 +35,22 @@ const Course = (props: any) => {
   return (
     <Layout pageTitle={props?.course}>
       <Style />
-      <HeaderOne pageTitle={props?.course} />
-      <MobileMenu />
+      {/* <HeaderOne pageTitle={props?.course} />
+      <MobileMenu /> */}
       <SearchPopup />
       <Schemas
         type={Constants.course}
         data={{ name: pageName, description: pageName }}
       />
+
       <PageBanner
         title={pageName}
         page={pageName}
         parent="All courses"
         parentHref="/all-courses"
       />
+      <ExploreTheCourses page={router?.query?.course?.toString()} />
+      {/* <CareersTransformed page={router?.query?.course?.toString()} /> */}
       <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />
       <PartnerOne />

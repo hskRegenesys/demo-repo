@@ -18,6 +18,7 @@ import NewHomeData from "@/data/newHomeData";
 import _ from "lodash";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
+import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);

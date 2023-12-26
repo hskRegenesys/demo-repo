@@ -104,8 +104,8 @@ const DigitalMarketing = (props: any) => {
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      <HeaderOne pageTitle={props.course} />
-      <MobileMenu />
+      {/* <HeaderOne pageTitle={props.course} />
+      <MobileMenu /> */}
       <SearchPopup />
       <PageBanner
         title={router?.query?.course?.toString().replace("-", " ")}

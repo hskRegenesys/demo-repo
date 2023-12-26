@@ -1,0 +1,414 @@
+/* Same CSS styles as ExploreDS.module.css with necessary modifications */
+
+.appContainer {
+  padding: 0px 108px 0px 108px;
+  font-family: Montserrat;
+  background-color: #fff;
+}
+
+.headerSection {
+  text-align: center;
+  padding: 20px;
+}
+
+.mainContent {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.sidePanel {
+  position: sticky;
+  flex: 1 0 25%;
+  top: 0;
+}
+.sidePanelInside {
+  position: sticky;
+  top: 0;
+  height: 200px;
+  padding-top: 25px;
+}
+
+.smallHeading {
+  color: var(--primary-primary-green, #008554);
+  text-align: center;
+  font-family: Montserrat;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.024px;
+  margin-bottom: 16px;
+}
+
+.bigHeading {
+  font-family: Montserrat;
+
+  color: var(--primary-primary-charcoal, #131718);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin-bottom: 56px;
+}
+
+.sidePanel p {
+  cursor: pointer;
+  color: #697386;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  transition: color 0.3s;
+  font-family: Montserrat;
+}
+
+.sidePanel p.active {
+  color: #008554;
+}
+
+.contentPanel {
+  position: relative;
+  height: 100%;
+  right: 0;
+  flex: 1 0 43%;
+  position: relative;
+}
+
+.contentPanel.scrolled {
+  overflow-y: scroll;
+}
+
+.contentPanel h3 {
+  color: var(--Primary-Primary---Charcoal, #131718);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 40px;
+}
+
+.content {
+  padding: 0px 0px 120px 80px;
+  border-left: 1px solid #008554;
+  position: relative;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #008554;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: 0%;
+  transform: translateY(-50%);
+}
+
+.content.scrolled::before {
+  background-color: green;
+}
+
+.content.scrolled::after {
+  background-color: #fff;
+}
+
+/* content1 */
+
+.content1 p {
+  color: var(--yocket-com-pale-sky, #697386);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-top: 20px;
+  /* max-width: 792px; */
+}
+.content1img {
+  border-radius: 20px;
+}
+.content1 ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.content1 li {
+  min-width: 185px;
+  margin: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #e3e8ee;
+  background: linear-gradient(180deg, #f0fdf4 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
+}
+.content1 li p {
+  margin: 0px;
+}
+
+.content1 li img {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* content2 */
+
+.content2 ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.content2 li {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--Primary-Primary---Light-Grey, #dde1e3);
+  background: var(--Primary-Primary---White, #fff);
+  box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
+}
+
+/* content3 */
+
+/* .cardContainer {
+} */
+.cardContainer ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+.card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: var(--Light-Text-White, #fff);
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+  min-width: 246px;
+  padding-bottom: 12px;
+}
+.bgcolor {
+  background-color: #008554;
+  padding: 50px;
+  margin-bottom: 52px;
+}
+
+.card img {
+  position: absolute;
+  top: 22%;
+  left: 34%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.facultyName {
+  color: var(--Light-Text-Primary, #2b3340);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.019px;
+  margin-bottom: 4px;
+}
+
+.courseName {
+  color: var(--Light-Text-Green, #008554);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.12px;
+  margin-bottom: 20px;
+}
+.card span {
+  color: var(--Light-Text-Primary, #2b3340);
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+.tutors {
+  color: var(--Light-Text-Green, #008554);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+/* content4 */
+
+/* Content4 Component Styles */
+
+.cardContainer4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.card4 {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  border: 0.5px solid var(--Border-Border---Light, #e3e8ee);
+  background: linear-gradient(180deg, #f0fdf4 0%, #fff 50.17%);
+  box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
+  max-width: 382px;
+  width: 100%;
+}
+
+.card4:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.frameImage {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 40px;
+  height: 44px;
+}
+
+.courseNameContent4 {
+  text-align: left;
+  color: var(--Primary-Primary---Charcoal, #131718);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.019px;
+  margin-bottom: 12px;
+}
+
+.price {
+  color: var(--Light-Text-Green, #008554);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.034px;
+  /* border-bottom: dotted 2px #022169; */
+  border-bottom: 1px dotted var(--Border-Border---Dark, #ced1d9);
+  margin-bottom: 12px;
+}
+
+.tickListContainer {
+  margin-top: 10px;
+}
+
+.tickIcon {
+  width: 20px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+  margin-right: 5px;
+}
+
+.tickListContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tickListContainer li {
+  color: #697386;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  margin-bottom: 15px;
+}
+
+.buttonsContainer {
+  margin-top: 15px;
+  display: flex;
+  gap: 16px;
+}
+
+.learnMoreButton {
+  border-radius: 7.68px;
+  border: 1px solid var(--light-divider-borders-dark, #ced1d9);
+  color: var(--Light-Text-Primary, #2b3340);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  background-color: var(--Primary-Primary---White, #fff);
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.applyNowButton {
+  border-radius: 7.68px;
+  border: 1px solid var(--Primary-Primary---Charcoal, #131718);
+  background: var(--Primary-Primary---Charcoal, #131718);
+  color: var(--Primary-Primary---White, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cardContainer4 {
+    flex-direction: column;
+  }
+}
