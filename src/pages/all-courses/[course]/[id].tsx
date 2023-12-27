@@ -53,6 +53,7 @@ import ModalPopup from "@/components/Modal/ModalPopup";
 import WhayTheySay from "@/components/whatTheySay/whatTheySay";
 import videoTestimonialData from "@/data/videoTestimonial";
 import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
+import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -122,6 +123,8 @@ const DigitalMarketing = (props: any) => {
             brochureName={brochureName}
           /> */}
           <ExploreTheCourses page={router?.query?.course?.toString()} />
+          <CareersTransformed />
+
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
           <ToolsCovered courseDetails={courseDetails} />

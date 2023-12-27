@@ -49,7 +49,7 @@ const Course = (props: any) => {
         parentHref="/all-courses"
       />
       <ExploreTheCourses page={router?.query?.course?.toString()} />
-      <CareersTransformed page={router?.query?.course?.toString()} />
+      <CareersTransformed />
       {/* //working */}
       <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />

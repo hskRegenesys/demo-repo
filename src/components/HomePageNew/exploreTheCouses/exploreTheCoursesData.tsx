@@ -4,10 +4,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of Digital Marketing with Us!",
     bigHeading: "Let’s Dive More Into Digital Marketing",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "Course Overview", contentId: "content1" },
+      { text: "", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content1: {
@@ -115,10 +116,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of digitalMarketingFundamentals with Us!",
     bigHeading: "Let’s Dive More Into digitalMarketingFundamentals",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -236,10 +238,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of digitalMarketingAdvanced with Us!",
     bigHeading: "Let’s Dive More Into digitalMarketingAdvanced",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -357,10 +360,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of dataScience with Us!",
     bigHeading: "Let’s Dive More Into dataScience",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "Course Overview", contentId: "content1" },
+      { text: "", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content1: {
@@ -466,10 +470,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of basicDataScience with Us!",
     bigHeading: "Let’s Dive More Into basicDataScience",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -588,10 +593,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of advancedDataScience with Us!",
     bigHeading: "Let’s Dive More Into advancedDataScience",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -709,10 +715,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of appliedDataScience with Us!",
     bigHeading: "Let’s Dive More Into appliedDataScience",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -830,11 +837,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of cyberSecurity with Us!",
     bigHeading: "Let’s Dive More Into cyberSecurity",
     sideHeadings: [
-      "Course Overview",
-      "Course Curriculum",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "Course Overview", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content1: {
@@ -977,10 +984,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of artificialIntelligence with Us!",
     bigHeading: "Let’s Dive More Into artificialIntelligence",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "Course Overview", contentId: "content1" },
+      { text: "", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content1: {
@@ -1088,10 +1096,11 @@ const exploreTheCoursesData = {
       "Explore the World of artificialIntelligenceIntroductory with Us!",
     bigHeading: "Let’s Dive More Into artificialIntelligenceIntroductory",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -1210,10 +1219,11 @@ const exploreTheCoursesData = {
       "Explore the World of artificialIntelligenceIntermediary with Us!",
     bigHeading: "Let’s Dive More Into artificialIntelligenceIntermediary",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -1332,10 +1342,11 @@ const exploreTheCoursesData = {
       "Explore the World of artificialIntelligenceAdvancedApplied with Us!",
     bigHeading: "Let’s Dive More Into artificialIntelligenceAdvancedApplied",
     sideHeadings: [
-      "Course Overview",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content2: {
@@ -1453,11 +1464,11 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of productManagementwith Us!",
     bigHeading: "Let’s Dive More Into productManagement",
     sideHeadings: [
-      "Course Overview",
-      "Course Curriculum",
-      "Tools Used in this Course",
-      "World Class Faculty",
-      "Pricing Across the Courses",
+      { text: "Course Overview", contentId: "content1" },
+      { text: "Course Curriculum", contentId: "content2" },
+      { text: "Tools Used in this Course", contentId: "content3" },
+      { text: "World Class Faculty", contentId: "content4" },
+      { text: "Pricing Across the Courses", contentId: "content5" },
     ],
     sideContents: {
       content1: {

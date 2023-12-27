@@ -3,10 +3,6 @@ import Styles from "./careersTransformed.module.css";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import {
-  dataScienceMainCourse,
-  digitalMarketingMainCourse,
-} from "../../config/constant";
 import careersTransformedData from "./careersTransformedData";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
@@ -38,27 +34,8 @@ interface MainCourseData {
   swiperCardContainer: SwiperCardData[];
 }
 
-interface CareersTransformedProps {
-  page?: string;
-}
-
-const CareersTransformed: React.FC<CareersTransformedProps> = ({ page }) => {
-  let mainCourseData: MainCourseData | undefined;
-
-  switch (page) {
-    case dataScienceMainCourse:
-      mainCourseData = careersTransformedData.dataScience;
-      break;
-    case digitalMarketingMainCourse:
-      mainCourseData = careersTransformedData.digitalMarketing;
-      break;
-    default:
-      mainCourseData = careersTransformedData.artificialintelligence;
-  }
-
-  if (!mainCourseData) {
-    return null;
-  }
+const CareersTransformed: React.FC = () => {
+  const mainCourseData: MainCourseData = careersTransformedData;
 
   const {
     heading,

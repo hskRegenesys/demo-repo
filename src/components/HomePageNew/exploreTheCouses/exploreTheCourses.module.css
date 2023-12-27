@@ -20,7 +20,7 @@
 
 .sidePanel {
   position: sticky;
-  flex: 1 0 25%;
+  flex: 1 0;
   top: 0;
 }
 .sidePanelInside {
@@ -75,7 +75,7 @@
   position: relative;
   height: 100%;
   right: 0;
-  flex: 1 0 43%;
+  flex: 1 0;
   position: relative;
 }
 

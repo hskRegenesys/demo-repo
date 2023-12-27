@@ -14,7 +14,7 @@ interface Props {
 interface MainCourseData {
   smallHeading: string;
   bigHeading: string;
-  sideHeadings: string[];
+  sideHeadings: { text: string; contentId: string }[];
   sideContents: {
     content1?: {
       contentHeading: string;
@@ -61,7 +61,39 @@ interface MainCourseData {
 
 const ExploreTheCourses: React.FC<Props> = ({ page }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [activeContent, setActiveContent] = useState(0);
+  const [activeContent, setActiveContent] = useState<string | null>(
+    page === "digital-marketing"
+      ? exploreTheCoursesData.digitalMarketing.sideHeadings[0].contentId
+      : page === "digital-marketing-fundamentals"
+      ? exploreTheCoursesData.digitalMarketing.sideHeadings[1].contentId
+      : page === "advance-digital-marketing-course"
+      ? exploreTheCoursesData.digitalMarketingAdvanced.sideHeadings[1].contentId
+      : page === "cyber-security"
+      ? exploreTheCoursesData.cyberSecurity.sideHeadings[0].contentId
+      : page === "project-management"
+      ? exploreTheCoursesData.productManagement.sideHeadings[0].contentId
+      : page === "artificial-intelligence"
+      ? exploreTheCoursesData.artificialIntelligence.sideHeadings[0].contentId
+      : page === "ai-introductory"
+      ? exploreTheCoursesData.artificialIntelligenceIntroductory.sideHeadings[1]
+          .contentId
+      : page === "ai-intermediary"
+      ? exploreTheCoursesData.artificialIntelligenceIntermediary.sideHeadings[1]
+          .contentId
+      : page === "ai-advanced-applied"
+      ? exploreTheCoursesData.artificialIntelligenceAdvancedApplied
+          .sideHeadings[1].contentId
+      : page === "data-science"
+      ? exploreTheCoursesData.dataScience.sideHeadings[0].contentId
+      : page === "basic-data-science"
+      ? exploreTheCoursesData.basicDataScience.sideHeadings[1].contentId
+      : page === "advanced-data-science"
+      ? exploreTheCoursesData.advancedDataScience.sideHeadings[1].contentId
+      : page === "applied-data-science"
+      ? exploreTheCoursesData.appliedDataScience.sideHeadings[1].contentId
+      : null
+  );
+
   const contentRefs: React.RefObject<HTMLDivElement>[] = [
     useRef(null),
     useRef(null),
@@ -82,9 +114,14 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
     };
   }, []);
 
-  const handleSidePanelClick = (index: number) => {
-    setActiveContent(index);
-    contentRefs[index].current?.scrollIntoView({ behavior: "smooth" });
+  const handleSidePanelClick = (contentId: string) => {
+    const index = sideHeadings.findIndex(
+      (item) => item.contentId === contentId
+    );
+    if (index !== -1) {
+      setActiveContent(contentId);
+      contentRefs[index].current?.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   let mainCourseData: MainCourseData | undefined;
@@ -100,7 +137,7 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
     mainCourseData = exploreTheCoursesData.appliedDataScience;
   }
 
-  // --------------digital-marketing-------------
+  // // --------------digital-marketing-------------
   else if (page === "digital-marketing") {
     mainCourseData = exploreTheCoursesData.digitalMarketing;
   } else if (page === "digital-marketing-fundamentals") {
@@ -109,15 +146,15 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
     mainCourseData = exploreTheCoursesData.digitalMarketingAdvanced;
   }
 
-  // ---------------cyber-security---------------
+  // // ---------------cyber-security---------------
   else if (page === "cyber-security") {
     mainCourseData = exploreTheCoursesData.cyberSecurity;
   }
-  // -----------------project-management---------------
+  // // -----------------project-management---------------
   else if (page === "project-management") {
     mainCourseData = exploreTheCoursesData.productManagement;
   }
-  // ----------------artificial-intelligence-----------------
+  // // ----------------artificial-intelligence-----------------
   else if (page === "artificial-intelligence") {
     mainCourseData = exploreTheCoursesData.artificialIntelligence;
   } else if (page === "ai-introductory") {
@@ -149,15 +186,15 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
       <div className={styles.mainContent}>
         <div className={styles.sidePanel}>
           <div className={styles.sidePanelInside}>
-            {sideHeadings.map((heading, index) => (
+            {sideHeadings.map((heading) => (
               <p
-                key={index}
+                key={heading.contentId}
                 className={`${styles.sidePanelItem} ${
-                  activeContent === index ? styles.active : ""
+                  activeContent === heading.contentId ? styles.active : ""
                 }`}
-                onClick={() => handleSidePanelClick(index)}
+                onClick={() => handleSidePanelClick(heading.contentId)}
               >
-                {heading}
+                {heading.text}
               </p>
             ))}
           </div>
