@@ -3,12 +3,58 @@ import Styles from "./careersTransformed.module.css";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import {
+  dataScienceMainCourse,
+  digitalMarketingMainCourse,
+} from "../../config/constant";
 import careersTransformedData from "./careersTransformedData";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-const CareersTransformed = ({ page }) => {
-  const mainCourseData = careersTransformedData[page];
+interface FourCardData {
+  card1: { percentage: string; text: string };
+  card2: { rating: number; ratingImg: string; text: string };
+  card3: { rating: number; ratingImg: string; text: string };
+  card4: { text: string; percentage: string };
+}
+
+interface SwiperCardData {
+  profileImg: string;
+  name: string;
+  role: string;
+  experienceText: string;
+  riseImg: string;
+  firstRole: string;
+  secondRole: string;
+  companyFirstRoleImg: string;
+  companySecondRoleImg: string;
+  playImg: string;
+}
+
+interface MainCourseData {
+  heading: string;
+  subheading: string;
+  "four-card": FourCardData;
+  swiperCardContainer: SwiperCardData[];
+}
+
+interface CareersTransformedProps {
+  page?: string;
+}
+
+const CareersTransformed: React.FC<CareersTransformedProps> = ({ page }) => {
+  let mainCourseData: MainCourseData | undefined;
+
+  switch (page) {
+    case dataScienceMainCourse:
+      mainCourseData = careersTransformedData.dataScience;
+      break;
+    case digitalMarketingMainCourse:
+      mainCourseData = careersTransformedData.digitalMarketing;
+      break;
+    default:
+      mainCourseData = careersTransformedData.artificialintelligence;
+  }
 
   if (!mainCourseData) {
     return null;
@@ -17,14 +63,17 @@ const CareersTransformed = ({ page }) => {
   const {
     heading,
     subheading,
-    "three-card": { card1, card2, card3 },
+    "four-card": { card1, card2, card3, card4 },
     swiperCardContainer,
   } = mainCourseData;
 
   const swiperSettings = {
-    navigation: true,
     pagination: { clickable: true },
-    autoplay: { delay: 2000 },
+    spaceBetween: 25,
+    autoplay: {
+      delay: 5000,
+      speed: 5000,
+    },
   };
 
   return (
@@ -35,52 +84,47 @@ const CareersTransformed = ({ page }) => {
       </div>
 
       <div className={Styles.cardsContainer}>
-        <div className={Styles.card1}>
-          <div className={Styles.cardTop}>
-            <p className={Styles.cardtext1}>{card1.percentage}</p>
+        {[card1, card2, card3, card4].map((card, index) => (
+          <div key={index} className={Styles.card}>
+            <div className={Styles.cardTop}>
+              {"percentage" in card && (
+                <p className={Styles.cardtext1}>{card.percentage}</p>
+              )}
+              {"rating" in card && (
+                <>
+                  <p className={Styles.cardtext1}>{card.rating}</p>
+                  {card.ratingImg && (
+                    <img
+                      className={Styles.ratingImg}
+                      src={card.ratingImg}
+                      alt="Rating"
+                    />
+                  )}
+                </>
+              )}
+            </div>
+            <div className={Styles.cardBottom}>
+              <p className={Styles.cardText}>{card.text}</p>
+            </div>
           </div>
-          <div className={Styles.cardBottom}>
-            <p className={Styles.cardText}>{card1.text}</p>
-          </div>
-        </div>
-
-        <div className={Styles.card2}>
-          <div className={Styles.cardTop}>
-            <p className={Styles.cardtext1}>{card2.rating}</p>
-            <img
-              className={Styles.ratingImg}
-              src={card2.ratingImg}
-              alt="Rating"
-            />
-          </div>
-          <div className={Styles.cardBottom}>
-            <p className={Styles.cardText}>{card2.text}</p>
-          </div>
-        </div>
-
-        <div className={Styles.card3}>
-          <div className={Styles.cardTop}>
-            <p className={Styles.cardtext1}>{card3.count}</p>
-          </div>
-          <div className={Styles.cardBottom}>
-            <p className={Styles.cardText}>{card3.text}</p>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className={Styles.swiperContainer}>
-        <Swiper {...swiperSettings}>
+        <Swiper className={Styles.swiperStyle} {...swiperSettings}>
           {swiperCardContainer.map((swiperCard, index) => (
             <SwiperSlide key={index} className={Styles.swiperCard}>
               <div className={Styles.topSection}>
-                <img
-                  className={Styles.profileImg}
-                  src={swiperCard.profileImg}
-                  alt="Profile"
-                />
-                <div className={Styles.nameRole}>
-                  <h4 className={Styles.name}>{swiperCard.name}</h4>
-                  <p className={Styles.role}>{swiperCard.role}</p>
+                <div className={Styles.profile}>
+                  <img
+                    className={Styles.profileImg}
+                    src={swiperCard.profileImg}
+                    alt="Profile"
+                  />
+                  <div className={Styles.nameRole}>
+                    <h4 className={Styles.name}>{swiperCard.name}</h4>
+                    <p className={Styles.role}>{swiperCard.role}</p>
+                  </div>
                 </div>
                 <div className={Styles.smallCard}>
                   <div className={Styles.smallCardIndide}>
@@ -92,6 +136,13 @@ const CareersTransformed = ({ page }) => {
                     <h2>50%</h2>
                   </div>
                   <p className={Styles.increment}>Increment in salary</p>
+                </div>
+                <div className={Styles.playVideo}>
+                  <div className={Styles.Vidio}>
+                    <img src={swiperCard.playImg} alt="Rise" />
+                  </div>
+
+                  <span>Hear My Story</span>
                 </div>
               </div>
               <div className={Styles.contentSection}>
@@ -110,7 +161,7 @@ const CareersTransformed = ({ page }) => {
                 </div>
                 <img
                   className={Styles.arrowImg}
-                  src="/lp/images/DS-new-page/Arrow.webp"
+                  src="/assets/images/HomeNew/Arrow.webp"
                   alt="Arrow"
                 />
                 <div className={Styles.roleCard2}>

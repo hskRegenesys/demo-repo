@@ -52,6 +52,7 @@ import { Modal } from "react-bootstrap";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import WhayTheySay from "@/components/whatTheySay/whatTheySay";
 import videoTestimonialData from "@/data/videoTestimonial";
+import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -96,10 +97,7 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
-  // console.log(
-  //   "courseDetails courseDetails.modalImage",
-  //   courseDetails.modalImage
-  // );
+
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
@@ -119,10 +117,11 @@ const DigitalMarketing = (props: any) => {
 
       {courseDetails && (
         <>
-          <CourseDetails
+          {/* <CourseDetails
             courseDetails={courseDetails}
             brochureName={brochureName}
-          />
+          /> */}
+          <ExploreTheCourses page={router?.query?.course?.toString()} />
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
           <ToolsCovered courseDetails={courseDetails} />

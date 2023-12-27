@@ -1,51 +1,290 @@
-const careersTransformedDataDS = {
-  datascience: {
+const careersTransformedData = {
+  frame1: "",
+  frame2: "",
+  dataScience: {
     heading: "Over 500 Careers Transformed",
     subheading:
       "Learn more about successful career transitions in this program",
-    "three-card": {
+    "four-card": {
       card1: {
         percentage: "57%",
         text: "Average Salary Hike",
       },
       card2: {
         rating: 4.7,
-        ratingImg: "/lp/images/DS-new-page/rating-star.webp",
+        ratingImg: "/assets/images/HomeNew/rating-star.webp",
         text: "Customer Rating",
       },
       card3: {
-        count: 500,
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rise.webp",
+        text: "Customer Rating",
+      },
+      card4: {
+        percentage: "57%",
         text: "Career Transitions",
       },
     },
     swiperCardContainer: [
       {
-        profileImg: "/lp/images/DS-new-page/profile.webp",
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
         name: "Aravinth Rajasekar",
         role: "Research Scientist",
         experienceText:
           "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
-        riseImg: "/lp/images/DS-new-page/rise.webp",
+        riseImg: "/assets/images/HomeNew/rise.webp",
         firstRole: "Data Scientist",
         secondRole: "Research Scientist",
-        companyFirstRoleImg: "/lp/images/DS-new-page/google.webp",
-        companySecondRoleImg: "/lp/images/DS-new-page/hcl.webp",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
       },
       // Repeat the above structure for additional swiper cards
     ],
   },
   cybersecurity: {
-    // Data for the cybersecurity section
+    heading: "Over 500 Careers Transformed",
+    subheading:
+      "Learn more about successful career transitions in this program",
+    "four-card": {
+      card1: {
+        percentage: "57%",
+        text: "Average Salary Hike",
+      },
+      card2: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rating-star.webp",
+        text: "Customer Rating",
+      },
+      card3: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rise.webp",
+        text: "Customer Rating",
+      },
+      card4: {
+        percentage: "57%",
+        text: "Career Transitions",
+      },
+    },
+    swiperCardContainer: [
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      // Repeat the above structure for additional swiper cards
+    ],
   },
-  digitalmarketing: {
-    // Data for the digital marketing section
+  digitalMarketing: {
+    heading: "Over 500 Careers Transformed",
+    subheading:
+      "Learn more about successful career transitions in this program",
+    "four-card": {
+      card1: {
+        percentage: "57%",
+        text: "Average Salary Hike",
+      },
+      card2: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rating-star.webp",
+        text: "Customer Rating",
+      },
+      card3: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rise.webp",
+        text: "Customer Rating",
+      },
+      card4: {
+        percentage: "57%",
+        text: "Career Transitions",
+      },
+    },
+    swiperCardContainer: [
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      // Repeat the above structure for additional swiper cards
+    ],
   },
   artificialintelligence: {
-    // Data for the artificial intelligence section
+    heading: "Over 500 Careers Transformed",
+    subheading:
+      "Learn more about successful career transitions in this program",
+    "four-card": {
+      card1: {
+        percentage: "57%",
+        text: "Average Salary Hike",
+      },
+      card2: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rating-star.webp",
+        text: "Customer Rating",
+      },
+      card3: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rise.webp",
+        text: "Customer Rating",
+      },
+      card4: {
+        percentage: "57%",
+        text: "Career Transitions",
+      },
+    },
+    swiperCardContainer: [
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      // Repeat the above structure for additional swiper cards
+    ],
   },
   productmanagement: {
-    // Data for the product management section
+    heading: "Over 500 Careers Transformed",
+    subheading:
+      "Learn more about successful career transitions in this program",
+    "four-card": {
+      card1: {
+        percentage: "57%",
+        text: "Average Salary Hike",
+      },
+      card2: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rating-star.webp",
+        text: "Customer Rating",
+      },
+      card3: {
+        rating: 4.7,
+        ratingImg: "/assets/images/HomeNew/rise.webp",
+        text: "Customer Rating",
+      },
+      card4: {
+        percentage: "57%",
+        text: "Career Transitions",
+      },
+    },
+    swiperCardContainer: [
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+      {
+        playImg: "/assets/images/HomeNew/Polygon.svg",
+        profileImg: "/assets/images/HomeNew/profile.webp",
+        name: "Aravinth Rajasekar",
+        role: "Research Scientist",
+        experienceText:
+          "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        riseImg: "/assets/images/HomeNew/rise.webp",
+        firstRole: "Data Scientist",
+        secondRole: "Research Scientist",
+        companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+        companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      },
+
+      // Repeat the above structure for additional swiper cards
+    ],
   },
 };
 
-export default careersTransformedDataDS;
+export default careersTransformedData;

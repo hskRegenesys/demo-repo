@@ -42,7 +42,6 @@ const Course = (props: any) => {
         type={Constants.course}
         data={{ name: pageName, description: pageName }}
       />
-
       <PageBanner
         title={pageName}
         page={pageName}
@@ -50,7 +49,8 @@ const Course = (props: any) => {
         parentHref="/all-courses"
       />
       <ExploreTheCourses page={router?.query?.course?.toString()} />
-      {/* <CareersTransformed page={router?.query?.course?.toString()} /> */}
+      <CareersTransformed page={router?.query?.course?.toString()} />
+      {/* //working */}
       <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />
       <PartnerOne />
