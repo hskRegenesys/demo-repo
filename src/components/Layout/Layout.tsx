@@ -23,6 +23,7 @@ const Layout = (props: any) => {
     categoryList,
     blogList,
   } = props;
+
   const [loading, setLoading] = useState(true);
   const [clonicalData, setClonicalData] = useState("");
   const [slugUrlData, setSlugUrlData] = useState("");
@@ -112,9 +113,10 @@ const Layout = (props: any) => {
           name="google-site-verification"
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
+
         <link
           rel="alternate"
-          hrefLang="x-default"
+          // hrefLang="x-default"
           href="https://uat-new.digitalregenesys.com"
         />
       </Head>
