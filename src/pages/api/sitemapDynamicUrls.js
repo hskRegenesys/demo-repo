@@ -21,8 +21,8 @@ export default async (_req, res) => {
         xmlObject.urlset.url.push({
           loc: [`https://www.digitalregenesys.com/blog/${entry.slug}`], 
           lastmod: [entry.date],
-          changefreq:['daily'],
-          priority:['0.90'] 
+          changefreq:['Daily'],
+          priority:['0.80'] 
         });
       }
     }
