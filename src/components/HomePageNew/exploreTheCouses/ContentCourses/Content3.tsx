@@ -1,6 +1,8 @@
 // Content3.js
 import React from "react";
 import styles from "../exploreTheCourses.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 
 interface FacultyCard {
   facultyImg: string;
@@ -22,21 +24,41 @@ const Content3: React.FC<Content3Props> = ({
 }) => {
   return (
     <div className={`${styles.content3} ${styles.content}`}>
+      <h3>{contentHeading}</h3>
       <div className={styles.cardContainer}>
-        <h3>{contentHeading}</h3>
-        <ul>
+        <Swiper
+          className={styles.swiperStyle}
+          slidesPerView={3}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            530: {
+              slidesPerView: 2,
+            },
+            790: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
+        >
           {facultyCard.map((faculty, index) => (
-            <li key={index} className={styles.card}>
-              <div className={styles.bgcolor}> </div>
-              <img src={faculty.facultyImg} alt={`Faculty ${index + 1}`} />
-              <p className={styles.facultyName}>{faculty.facultyName}</p>
-              <p className={styles.courseName}>{faculty.courseName}</p>
-              <span>{faculty.yearsOfExperience}</span>
-            </li>
+            <SwiperSlide key={index}>
+              <div className={styles.card}>
+                <div className={styles.bgcolor}> </div>
+                <img src={faculty.facultyImg} alt={`Faculty ${index + 1}`} />
+                <p className={styles.facultyName}>{faculty.facultyName}</p>
+                <p className={styles.courseName}>{faculty.courseName}</p>
+                <span>{faculty.yearsOfExperience}</span>
+              </div>
+            </SwiperSlide>
           ))}
-        </ul>
-        <p className={styles.tutors}>{tutors}</p>
+        </Swiper>
       </div>
+      <p className={styles.tutors}>{tutors}</p>
     </div>
   );
 };

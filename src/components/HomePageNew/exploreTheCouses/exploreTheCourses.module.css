@@ -2,7 +2,6 @@
 
 .appContainer {
   padding: 0px 108px 0px 108px;
-  font-family: Montserrat;
   background-color: #fff;
 }
 
@@ -20,8 +19,9 @@
 
 .sidePanel {
   position: sticky;
-  flex: 1 0;
+  flex: 1 0 25%;
   top: 0;
+  display: flex;
 }
 .sidePanelInside {
   position: sticky;
@@ -74,8 +74,8 @@
 .contentPanel {
   position: relative;
   height: 100%;
-  right: 0;
-  flex: 1 0;
+  width: 100%;
+  flex: 1 0 43%;
   position: relative;
 }
 
@@ -134,6 +134,44 @@
   background-color: #fff;
 }
 
+@media only screen and (max-width: 1100px) {
+  .sidePanel {
+    display: none;
+  }
+  .contentPanel {
+    padding: 0px;
+    border-left: none;
+  }
+  .smallHeading {
+    font-size: 14px;
+    margin: 0;
+  }
+  .bigHeading {
+    font-size: 24px;
+    margin: 8px 18px;
+  }
+  .headerSection {
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+  .content {
+    padding: 0px;
+    border-left: none;
+  }
+  .content::before {
+    display: none;
+  }
+
+  .content::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1270px) {
+  .appContainer {
+    padding: 0px 16px;
+  }
+}
+
 /* content1 */
 
 .content1 p {
@@ -179,11 +217,39 @@
   align-items: center;
 }
 
+/* Existing styles remain unchanged */
+
+/* Add media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .content1 {
+    text-align: center; /* Center-align the content in mobile view */
+  }
+  .content1 p {
+    font-size: 14px;
+  }
+  .content1img {
+    width: 100%; /* Make the image fill the container width */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  }
+
+  .content1 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .content1 li {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
 /* content2 */
 
 .content2 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -193,30 +259,51 @@
   border: 1px solid var(--Primary-Primary---Light-Grey, #dde1e3);
   background: var(--Primary-Primary---White, #fff);
   box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
+  display: flex;
+  justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .content2 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .content2 li {
+    margin-bottom: 16px;
+  }
+}
 /* content3 */
 
-/* .cardContainer {
-} */
+.content3 {
+  max-width: 869px;
+  width: 100%;
+}
 .cardContainer ul {
   display: flex;
   justify-content: space-between;
   gap: 16px;
   align-items: center;
+  width: 100%;
 }
+
 .card {
   position: relative;
   border: 1px solid #ccc;
   border-radius: 12px;
   background: var(--Light-Text-White, #fff);
   border-radius: 8px;
-  margin: 10px;
   text-align: center;
   overflow: hidden;
+  max-width: 246px;
   min-width: 246px;
+  width: 100%;
   padding-bottom: 12px;
+  margin: 0 auto;
 }
+
 .bgcolor {
   background-color: #008554;
   padding: 50px;
@@ -240,7 +327,8 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   letter-spacing: 0.019px;
   margin-bottom: 4px;
 }
@@ -252,10 +340,12 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
+  /* 133.333% */
   letter-spacing: 0.12px;
   margin-bottom: 20px;
 }
+
 .card span {
   color: var(--Light-Text-Primary, #2b3340);
   text-align: center;
@@ -267,6 +357,7 @@
   line-height: 20px;
   letter-spacing: 0.12px;
 }
+
 .tutors {
   color: var(--Light-Text-Green, #008554);
   text-align: right;
@@ -278,13 +369,26 @@
   letter-spacing: 0.12px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .cardContainer ul {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    /* max-width: calc(50% - 20px); */
+  }
+}
+
 /* content4 */
 
 /* Content4 Component Styles */
-
+.content4 {
+  max-width: 869px;
+  width: 100%;
+}
 .cardContainer4 {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
 }
@@ -299,7 +403,7 @@
   background: linear-gradient(180deg, #f0fdf4 0%, #fff 50.17%);
   box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
   max-width: 382px;
-  width: 100%;
+  margin: 0 auto;
 }
 
 .card4:hover {
@@ -501,9 +605,65 @@
   margin-right: 8px;
 }
 
+@media (max-width: 768px) {
+  .weekContainer {
+    padding: 12px;
+    margin-bottom: 40px;
+  }
+
+  .weekCard {
+    padding: 8px;
+  }
+
+  .weekPoint {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .weekPoint span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .weekHeader span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .weekHeader img {
+    width: 20px;
+  }
+
+  .active .weekHeader img {
+    width: 20px;
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .cardContainer4 {
     flex-direction: column;
   }
+}
+
+/* swiper style */
+
+.swiperStyle {
+  --swiper-pagination-color: #008554;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #008554;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 120px;
+}
+.swiperStyle {
+  --add-bottom: 64px !important;
+  padding-bottom: var(--add-bottom) !important;
+  align-items: center;
+}
+.swiperStyle [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
 }
