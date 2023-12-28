@@ -10,7 +10,7 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
 }) => (
   <div className={styles.footerContent1}>
     <div className={styles.footerLogo}>
-      <img src="./assets/images/HomeNew/DR_Logo.svg" alt="LogoIpsum" />
+      <img src="/assets/images/HomeNew/DR_Logo.svg" alt="LogoIpsum" />
     </div>
     <div className={styles.footerTextheader}>
       <p>Ready to get started</p>
@@ -92,7 +92,7 @@ const FooterContent4: React.FC = () => (
           >
             {" "}
             <img
-              src="./assets/images/HomeNew/facebook-icon.svg"
+              src="/assets/images/HomeNew/facebook-icon.svg"
               alt="Facebook"
             />
             <span>Facebook</span>
@@ -101,7 +101,7 @@ const FooterContent4: React.FC = () => (
         <div>
           <a target="_blank" href="https://twitter.com/RegenesysB">
             {" "}
-            <img src="./assets/images/HomeNew/twiter-icon.svg" alt="Twitter" />
+            <img src="/assets/images/HomeNew/twiter-icon.svg" alt="Twitter" />
             <span>Twitter</span>
           </a>
         </div>
@@ -111,7 +111,7 @@ const FooterContent4: React.FC = () => (
             href="https://www.instagram.com/regenesysbusinessschool/"
           >
             {" "}
-            <img src="./assets/images/HomeNew/insta-icon.svg" alt="Instagram" />
+            <img src="/assets/images/HomeNew/insta-icon.svg" alt="Instagram" />
             <span>Instagram</span>
           </a>
         </div>

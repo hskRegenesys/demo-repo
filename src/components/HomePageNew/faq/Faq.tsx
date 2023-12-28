@@ -1,7 +1,7 @@
 // Faq.js
 import React, { useState } from "react";
 import Styles from "./faq.module.css";
-import NewHomeData from "../../../data/newHomeData";
+import faqDatas from "./faqData";
 
 type FAQDataItem = {
   question: string;
@@ -211,7 +211,7 @@ const Faq: React.FC = () => {
     arrowIcon,
     HeadingMobile,
     HeadingDesktop,
-  } = NewHomeData.faqData;
+  } = faqDatas;
 
   const faqData: FAQData = {
     DigitalMarketing,

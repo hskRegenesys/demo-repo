@@ -1,5 +1,5 @@
 import React from "react";
-import NewHomeData from "../../../data/newHomeData";
+import BlogSectionData from "./blogSecionData";
 import Styles from "./blogSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -8,7 +8,7 @@ const BlogSection = () => {
   return (
     <div className={Styles.blogSectionContainer}>
       <h2 className={Styles.blogSectionTitle}>
-        {NewHomeData.BlogSectionData.BlogSectionTitle}
+        {BlogSectionData.BlogSectionTitle}
       </h2>
 
       <div className={Styles.blogCardsContainer}>
@@ -29,7 +29,7 @@ const BlogSection = () => {
             },
           }}
         >
-          {NewHomeData.BlogSectionData.cards.map((card, index) => (
+          {BlogSectionData.cards.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
                 <img
@@ -47,7 +47,7 @@ const BlogSection = () => {
                       <span className={Styles.arrowIcon}>
                         {" "}
                         <img
-                          src="./assets/images/HomeNew/Readmore.svg"
+                          src="/assets/images/HomeNew/Readmore.svg"
                           alt="cardStar"
                           className={Styles.img}
                         />

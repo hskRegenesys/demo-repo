@@ -130,18 +130,18 @@
 /* faq.module.css */
 /* ... (previous styles) */
 
-.selectedarrow {
+/* .section2 li.selectedarrow .arrowIcon {
   transform: rotate(180deg);
-}
-
-.section2 li.selectedarrow .arrowIcon {
-  transform: rotate(180deg);
-}
+} */
 
 .arrowIcon {
   transition: transform 0.3s ease;
+  transform: rotate(180deg);
 }
-
+.selectedarrow {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
 @media (max-width: 1000px) {
   .faqSection {
     flex-direction: column;
@@ -241,7 +241,7 @@
     transition: transform 0.3s ease;
     position: absolute;
     right: 0;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     margin-right: 16px;
   }
 
@@ -253,11 +253,18 @@
     transition: transform 0.3s ease;
     position: absolute;
     left: 0;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
+  }
+  .arrowIconMobilequstion {
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+    position: absolute;
+    right: 10px;
   }
 
   .selectedarrowMobilequstion {
-    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+    transform: rotate(0deg);
   }
 
   .selectedQuestionMobile {
@@ -265,13 +272,7 @@
     background: #f0fdf4;
   }
 
-  .arrowIconMobilequstion {
-    transition: transform 0.3s ease;
-    position: absolute;
-    right: 0;
-  }
-
   .dropdownItem .arrowIconMobile {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
 }
