@@ -42,16 +42,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: calc((100% - 48px) / 3);
+  width: 100%;
   margin-right: 24px;
   padding: 20px 16px;
   border-radius: 12px;
   border-radius: 12px;
   background: #f0fdf4;
-}
-
-.card:last-child {
-  margin-right: 0;
 }
 
 .cardTop {
@@ -106,6 +102,7 @@
   margin-top: 20px;
   max-width: 1080px;
   margin: 44px auto;
+  padding: 16px;
 }
 
 .swiperCard {
@@ -334,27 +331,18 @@
   .container {
     padding: 40px 16px;
   }
-  .card3 {
-    display: none;
-  }
+
   .cardsContainer {
-    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
   }
 
-  .card1 {
-    width: 100%;
-    padding: 12px;
-    gap: 0px;
-    grid-gap: 0px;
+  .card {
+    width: calc((50% - 12px)); /* Two cards per row with spacing in between */
+    margin-right: 0; /* No margin on the right for the last card in each row */
+    margin-bottom: 24px; /* Adjust margin as needed */
   }
-  .card2 {
-    width: 100%;
-    padding: 12px;
-    margin-right: 0px;
-    gap: 0px;
-    grid-gap: 0px;
-  }
-
   .swiperCard {
     padding: 20px; /* Adjust padding as needed */
     text-align: center;
@@ -364,6 +352,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    gap: 24px;
   }
 
   .nameRole {
@@ -436,5 +425,11 @@
     margin-right: 8px;
     width: 20px;
     height: 20px;
+  }
+  .profile {
+    display: block;
+  }
+  .playVideo {
+    display: none;
   }
 }

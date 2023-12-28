@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
@@ -22,7 +21,7 @@ import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
 const ToolsCovered = dynamic(
   () => import("@/components/ToolsCovered/ToolsCovered")
 );
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const CourseCurriculum = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculum")
@@ -54,6 +53,11 @@ import WhayTheySay from "@/components/whatTheySay/whatTheySay";
 import videoTestimonialData from "@/data/videoTestimonial";
 import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
 import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
+import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
+import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
+import Faq from "@/components/HomePageNew/faq/Faq";
+import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -62,6 +66,7 @@ const CourseCurriculumTwo = dynamic(
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
   const [show, setShow] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const courseId: any = router?.query?.id;
 
@@ -99,12 +104,30 @@ const DigitalMarketing = (props: any) => {
   };
   parentToParentName();
 
+  const handleEnrollButtonClick = () => {
+    setIsPopupVisible(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupVisible(false);
+  };
+
+  useEffect(() => {
+    const timeoutModal = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutModal);
+  }, []);
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
+      {isPopupVisible && (
+        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+      )}
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      {/* <HeaderOne pageTitle={props.course} />
-      <MobileMenu /> */}
+      <HeaderOne pageTitle={props.course} />
+      <MobileMenu />
       <SearchPopup />
       <PageBanner
         title={router?.query?.course?.toString().replace("-", " ")}
@@ -118,13 +141,19 @@ const DigitalMarketing = (props: any) => {
 
       {courseDetails && (
         <>
+          {/* /////////new///////// */}
+
+          <ExploreTheCourses page={router?.query?.course?.toString()} />
+          <CareersTransformed />
+          <CertificationDR
+            handleEnrollButtonClick={handleEnrollButtonClick}
+            page={router?.query?.course?.toString()}
+          />
+
           {/* <CourseDetails
             courseDetails={courseDetails}
             brochureName={brochureName}
-          /> */}
-          <ExploreTheCourses page={router?.query?.course?.toString()} />
-          <CareersTransformed />
-
+          />
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
           <ToolsCovered courseDetails={courseDetails} />
@@ -142,11 +171,14 @@ const DigitalMarketing = (props: any) => {
           <FeesDetails courseDetails={courseDetails} courseId={courseId} />
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
-          <CallToSection />
+          <CallToSection /> */}
         </>
       )}
-      <MainFooter />
-      <StickyBar />
+      {/* <MainFooter />
+      <StickyBar /> */}
+      <BlogSection />
+      <Faq />
+      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );
 };

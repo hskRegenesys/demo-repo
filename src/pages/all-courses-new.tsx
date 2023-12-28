@@ -65,92 +65,17 @@ const AllCoursesNew = () => {
           data={NewHomeData}
           handleEnrollButtonClick={handleEnrollButtonClick}
         />
-        <CertificationDR handleEnrollButtonClick={handleEnrollButtonClick} />
+        <CertificationDR
+          page="all-courses-new"
+          handleEnrollButtonClick={handleEnrollButtonClick}
+        />
         <StudentReview />
 
         <Faq />
         <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-      </Layout>{" "}
-      {/* <HeaderOne pageTitle="home" />
-      <MobileMenu />
-      {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-      )}
-      <AllCoursesPageBanner handleEnrollButtonClick={handleEnrollButtonClick} />
-      <WhyChooseDR handleEnrollButtonClick={handleEnrollButtonClick} />
-      <FeaturedCourses
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        style={{
-          background: "none",
-        }}
-      />
-
-      <OurCourses
-        data={NewHomeData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <CertificationDR handleEnrollButtonClick={handleEnrollButtonClick} />
-      <StudentReview />
-      <Faq />
-      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} /> */}
+      </Layout>
     </>
   );
 };
 
 export default AllCoursesNew;
-
-// const HomeNew = () => {
-//   const [isPopupVisible, setIsPopupVisible] = useState(false);
-
-//   const handleEnrollButtonClick = () => {
-//     setIsPopupVisible(true);
-//   };
-
-//   const handlePopupClose = () => {
-//     setIsPopupVisible(false);
-//   };
-
-//   useEffect(() => {
-//     const timeoutModal = setTimeout(() => {
-//       setIsPopupVisible(true);
-//     }, 4000);
-
-//     return () => clearTimeout(timeoutModal);
-//   }, []);
-
-//   return (
-//     <Layout pageTitle="new-home">
-//       {isPopupVisible && (
-//         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-//       )}
-//       {/* <HeaderOne pageTitle="home" /> */}
-//       <HeaderOne />
-
-//       <MobileMenu />
-//       <HomeSliderBanner onFormSubmit={() => {}} />
-//       <UspSection />
-//       <FeaturedCourses
-//         handleEnrollButtonClick={handleEnrollButtonClick}
-//         style={{
-//           background:
-//             "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
-//         }}
-//       />
-//       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
-//       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
-//       <StudentReview />
-//       <OurCourses
-//         data={NewHomeData}
-//         handleEnrollButtonClick={handleEnrollButtonClick}
-//       />
-//       <LearnersBenefit />
-//       <ConnectContainer onFormSubmit={() => {}} />
-//       <StudentYoutubeVideos />
-//       <BlogSection />
-//       <Faq />
-//       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-//     </Layout>
-//   );
-// };
-
-// export default HomeNew;
