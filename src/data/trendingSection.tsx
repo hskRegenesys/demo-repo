@@ -35,17 +35,17 @@ const trendingSection = {
         "Capstone projects ",
       ],
     },
-    {
-      id: 4,
-      image: "7.webp",
-      name: "Digitial Marketing",
-      tagline: [
-        "Live Class ",
-        "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
-      ],
-    },
+    // {
+    //   id: 4,
+    //   image: "7.webp",
+    //   name: "Digitial Marketing",
+    //   tagline: [
+    //     "Live Class ",
+    //     "8 Weeks ",
+    //     "International certification ",
+    //     "Capstone projects ",
+    //   ],
+    // },
     {
       id: 5,
       image: "7.webp",
@@ -90,17 +90,17 @@ const trendingSection = {
         "Capstone projects ",
       ],
     },
-    {
-      id: 9,
-      image: "7.webp",
-      name: "Digitial Marketing",
-      tagline: [
-        "Live Class ",
-        "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
-      ],
-    },
+    // {
+    //   id: 9,
+    //   image: "7.webp",
+    //   name: "Digitial Marketing",
+    //   tagline: [
+    //     "Live Class ",
+    //     "8 Weeks ",
+    //     "International certification ",
+    //     "Capstone projects ",
+    //   ],
+    // },
     {
       id: 10,
       image: "7.webp",

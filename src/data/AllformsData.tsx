@@ -79,10 +79,10 @@ const Data = {
       option: "Data Science",
       value: "Data Science",
     },
-    {
-      option: "Digital Marketing",
-      value: "Digital Marketing",
-    },
+    // {
+    //   option: "Digital Marketing",
+    //   value: "Digital Marketing",
+    // },
     {
       option: "Artificial Intelligence",
       value: "Artificial Intelligence",
