@@ -942,6 +942,21 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/all-courses/digital-marketing",
+      destination: "/all-courses",
+      permanent: false,
+    },
+    {
+      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      destination: "/all-courses",
+      permanent: false,
+    },
+    {
+      source: "/all-courses/digital-marketing/advance-digital-marketing-course",
+      destination: "/all-courses",
+      permanent: false,
+    },
+    {
       source: "/blog/category/[slug]",
       destination: "/blog",
       permanent: true,

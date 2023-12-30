@@ -39,9 +39,9 @@ const FooterContent2: React.FC = () => (
         <a href="https://www.digitalregenesys.com/all-courses/cyber-security">
           <li>Cybersecurity</li>
         </a>
-        <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
+        {/* <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
           <li>Digital Marketing</li>
-        </a>
+        </a> */}
         <a href="https://www.digitalregenesys.com/all-courses/artificial-intelligence">
           <li>Artificial Intelligence</li>
         </a>

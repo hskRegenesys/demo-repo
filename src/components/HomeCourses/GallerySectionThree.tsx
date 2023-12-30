@@ -18,8 +18,7 @@ const GallerySectionThree = () => {
             <Col key={id} sm={12} md={6} lg={4}>
               <div className="gallery-item-three">
                 <Image
-                  src={`/assets/images/update-1-12-2020/projects/${image}`
-                  }
+                  src={`/assets/images/update-1-12-2020/projects/${image}`}
                   alt=""
                 />
                 <div className="gallery-item-three__content">
