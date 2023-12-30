@@ -64,11 +64,11 @@ const teamSection = {
       name: "Applied Data Science",
       href: "/all-courses/data-science/applied-data-science",
     },
-    {
-      id: 11,
-      name: "Design Thinking",
-      href: "/all-courses/design-thinking",
-    },
+    // {
+    //   id: 11,
+    //   name: "Design Thinking",
+    //   href: "/all-courses/design-thinking",
+    // },
     {
       id: 12,
       name: "Artificial Intelligence",

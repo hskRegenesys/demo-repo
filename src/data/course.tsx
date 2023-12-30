@@ -2,42 +2,42 @@ import { leadSource, sourceCampaign } from "@/components/config/constant";
 import { Certificate } from "crypto";
 
 export const digitalMarketingMain = [
-  {
-    id: 1,
-    image: "7.webp",
-    name: "Basic Digital Marketing",
-    tagline: [
-      "Live Class ",
-      "8 Weeks ",
-      "International Certification ",
-      "Capstone Projects ",
-    ],
-    batch: "New Batch - 8th October, 2022",
-  },
-  {
-    id: 2,
-    image: "7.webp",
-    name: "Advance Digital Markering",
-    tagline: [
-      "Live Class ",
-      "8 Weeks ",
-      "International certification ",
-      "Capstone projects ",
-    ],
-    batch: "New Batch - 8th October, 2022",
-  },
-  {
-    id: 3,
-    image: "7.webp",
-    name: "Applied Digital Marketing",
-    tagline: [
-      "Live Class ",
-      "8 Weeks ",
-      "International certification ",
-      "Capstone projects ",
-    ],
-    batch: "New Batch - 8th October, 2022",
-  },
+  // {
+  //   id: 1,
+  //   image: "7.webp",
+  //   name: "Basic Digital Marketing",
+  //   tagline: [
+  //     "Live Class ",
+  //     "8 Weeks ",
+  //     "International Certification ",
+  //     "Capstone Projects ",
+  //   ],
+  //   batch: "New Batch - 8th October, 2022",
+  // },
+  // {
+  //   id: 2,
+  //   image: "7.webp",
+  //   name: "Advance Digital Markering",
+  //   tagline: [
+  //     "Live Class ",
+  //     "8 Weeks ",
+  //     "International certification ",
+  //     "Capstone projects ",
+  //   ],
+  //   batch: "New Batch - 8th October, 2022",
+  // },
+  // {
+  //   id: 3,
+  //   image: "7.webp",
+  //   name: "Applied Digital Marketing",
+  //   tagline: [
+  //     "Live Class ",
+  //     "8 Weeks ",
+  //     "International certification ",
+  //     "Capstone projects ",
+  //   ],
+  //   batch: "New Batch - 8th October, 2022",
+  // },
 ];
 
 export const digitalMarketingText = {
