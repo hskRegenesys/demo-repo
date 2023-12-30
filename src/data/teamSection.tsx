@@ -24,21 +24,21 @@ const socials = [
 const teamSection = {
   title: "Popular topics",
   teams: [
-    {
-      id: 9,
-      name: "Basic Digital Marketing Course",
-      href: "/all-courses/digital-marketing/basic-digital-marketing-course",
-    },
-    {
-      id: 10,
-      name: "Advance Digital Marketing Course",
-      href: "/all-courses/digital-marketing/advance-digital-marketing-course",
-    },
-    {
-      id: 11,
-      name: "Applied Digital Marketing",
-      href: "/all-courses/digital-marketing/applied-digital-marketing",
-    },
+    // {
+    //   id: 9,
+    //   name: "Basic Digital Marketing Course",
+    //   href: "/all-courses/digital-marketing/basic-digital-marketing-course",
+    // },
+    // {
+    //   id: 10,
+    //   name: "Advance Digital Marketing Course",
+    //   href: "/all-courses/digital-marketing/advance-digital-marketing-course",
+    // },
+    // {
+    //   id: 11,
+    //   name: "Applied Digital Marketing",
+    //   href: "/all-courses/digital-marketing/applied-digital-marketing",
+    // },
     {
       id: 2,
       name: "Project Management",
