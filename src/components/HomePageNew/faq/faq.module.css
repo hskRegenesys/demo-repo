@@ -1,0 +1,277 @@
+/* faq.module.css */
+.faqSection {
+  display: flex;
+  margin: 80px 108px;
+  border-top: 1px solid #e3e8ee;
+}
+.topcontent {
+  color: var(--yocket-com-ebony-clay, #2b3340);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: -0.8px;
+}
+.faqMobile {
+  display: none;
+}
+
+.section1 {
+  width: 30%;
+  padding: 52px 0px;
+  border-right: 1px solid #e3e8ee;
+}
+
+.section1 ul {
+  list-style: none;
+}
+
+.section1 li {
+  cursor: pointer;
+  padding: 20px;
+  color: #2b3340;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+.section1 li:hover {
+  border-radius: 8px 0px 0px 8px;
+  border-right: 3px solid #008554;
+  background: #f0fdf4;
+  box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
+}
+
+.section2 {
+  width: 100%;
+  padding: 40px 24px 32px 24px;
+}
+
+.section2 h2 {
+  color: #2b3340;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-left: 52px;
+  margin-bottom: 40px;
+}
+
+.section2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section2 li {
+  padding-left: 52px;
+  border-bottom: 1px solid #e3e8ee;
+  /* Add any additional styling for li in section2 if needed */
+}
+
+.section2 h3 {
+  color: #2b3340;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.024px;
+  margin-bottom: 0px;
+}
+
+.section2 p {
+  color: #697386;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+/* Responsive layout for smaller screens */
+
+.card {
+  padding: 22px;
+}
+
+.selectedHeding {
+  border-radius: 8px 0px 0px 8px;
+  border-right: 3px solid #008554;
+  background: #f0fdf4;
+  box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
+}
+
+.selectedQuestion {
+  background: #f0fdf4;
+}
+
+.selectedQuestion:hover .card {
+  background: #f0fdf4;
+  /* Add any additional styles for the card on hover here */
+}
+
+.questionContainer {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+}
+
+/* faq.module.css */
+/* ... (previous styles) */
+
+.selectedarrow {
+  transform: rotate(180deg);
+}
+
+.section2 li.selectedarrow .arrowIcon {
+  transform: rotate(180deg);
+}
+
+.arrowIcon {
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+  .faqSection {
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 16px;
+  }
+
+  .faqDesktop {
+    display: none;
+  }
+
+  .faqMobile {
+    display: block;
+  }
+  .topcontentMobile {
+    color: var(--primary-primary-charcoal, #131718);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    margin-bottom: 0px;
+  }
+
+  .section1Mobile {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .section1Mobile ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .section1Mobile li {
+    cursor: pointer;
+    padding: 20px;
+    color: #2b3340;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    position: relative;
+    border-bottom: 1px solid #e3e8ee;
+  }
+  .questionContainerMobile {
+    display: flex;
+  }
+  .answerMobile {
+    color: #697386;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.12px;
+    border-radius: 8px;
+    border: 1px solid #008554;
+    background: #fff;
+    padding: 12px;
+  }
+  .dropdownListMobile {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .dropdownItem {
+    padding: 10px;
+    color: #2b3340;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  .dropdownItem h3 {
+    color: #2b3340;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.12px;
+  }
+
+  .arrowIconMobileHeding {
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+    transform: rotate(-90deg);
+    margin-right: 16px;
+  }
+
+  .hedingMobileTextSelected {
+    margin-left: 20px;
+  }
+
+  .selectedHedingIcon {
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  .selectedarrowMobilequstion {
+    transform: rotate(180deg);
+  }
+
+  .selectedQuestionMobile {
+    border-bottom: 1px solid #e3e8ee;
+    background: #f0fdf4;
+  }
+
+  .arrowIconMobilequstion {
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+  }
+
+  .dropdownItem .arrowIconMobile {
+    transform: rotate(180deg);
+  }
+}

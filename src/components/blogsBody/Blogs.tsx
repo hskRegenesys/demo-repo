@@ -20,6 +20,26 @@ const Blogs = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+const sitemapData =postList?.flatMap(item=>item.posts)
+  const xmlOperation = async (sitemapData: any) => {
+    if (!(sitemapData.length > 0)) return;
+
+    try {
+      await fetch("/api/sitemapDynamicUrls", {
+        method: "POST",
+        body: JSON.stringify({ sitemapData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    xmlOperation(sitemapData);
+  }, [sitemapData]);
+  
   const postByCategory = async (
     response: Array<{
       [key: string]: number | string;

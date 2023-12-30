@@ -526,19 +526,19 @@ export const allCourseList = [
     courseMode: { id: 1, name: "Live", description: "Live" },
     batches: [],
   },
-  {
-    id: 24,
-    name: "Digital Marketing",
-    code: "DM",
-    description: "Digital Marketing",
-    parent_id: null,
-    mode_id: 1,
-    isAddon: false,
-    durationInWeeks: 20,
-    parentCourse: null,
-    courseMode: { id: 1, name: "Live", description: "Live" },
-    batches: [],
-  },
+  // {
+  //   id: 24,
+  //   name: "Digital Marketing",
+  //   code: "DM",
+  //   description: "Digital Marketing",
+  //   parent_id: null,
+  //   mode_id: 1,
+  //   isAddon: false,
+  //   durationInWeeks: 20,
+  //   parentCourse: null,
+  //   courseMode: { id: 1, name: "Live", description: "Live" },
+  //   batches: [],
+  // },
 
   // custom courses
 

@@ -34,6 +34,11 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
+    {
+      source: "/programsnew",
+      destination: "/all-courses-new",
+      permanent: true,
+    },
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -871,6 +876,11 @@ const redirectURL = () => {
       destination: "/",
       permanent: true,
     },
+    {
+      source: "/new-home",
+      destination: "/home-new",
+      permanent: true,
+    },
 
     //redirections from altaf end
     {
@@ -930,6 +940,21 @@ const redirectURL = () => {
       source: "/all-courses/[course]/[id]",
       destination: "/all-courses",
       permanent: true,
+    },
+    {
+      source: "/all-courses/digital-marketing",
+      destination: "/all-courses",
+      permanent: false,
+    },
+    {
+      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      destination: "/all-courses",
+      permanent: false,
+    },
+    {
+      source: "/all-courses/digital-marketing/advance-digital-marketing-course",
+      destination: "/all-courses",
+      permanent: false,
     },
     {
       source: "/blog/category/[slug]",
