@@ -944,7 +944,6 @@ const redirectURL = () => {
     {
       source: "/all-courses/digital-marketing",
       destination: "/all-courses",
-      basePath: false,
       permanent: false,
     },
     {
