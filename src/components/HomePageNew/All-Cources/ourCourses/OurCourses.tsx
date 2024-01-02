@@ -1,20 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
 import Styles from "./ourCourses.module.css";
-import NewHomeData from "../../../data/newHomeData";
+import AllCourcesCardData from "../AllCourcesCardData";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import useActive from "@/hooks/useActive";
 
 import _ from "lodash";
 import { useRouter } from "next/router";
-import { urlInfo } from "../../config/helper";
+import { urlInfo } from "../../../config/helper";
 
 import {
   artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
-} from "../../config/constant";
+} from "../../../config/constant";
 
 import { allCourseList } from "@/data/courseData";
 
@@ -46,12 +47,12 @@ interface OurCoursesData {
   DropdownarrowIcon: string;
 }
 
-interface NewHomeData {
+interface AllCourcesCardData {
   OurCoursesData: OurCoursesData;
 }
 
 interface OurCoursesProps {
-  data: NewHomeData;
+  data: AllCourcesCardData;
 }
 
 interface OurCoursesProps {

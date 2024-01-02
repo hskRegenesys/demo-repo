@@ -3,17 +3,18 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Styles from "./RelatedCourses.module.css";
-import RelatedCoursesData from "./RelatedCoursesData";
 import _ from "lodash";
 import { useRouter } from "next/router";
-import { urlInfo } from "../../config/helper";
+import { urlInfo } from "../../../config/helper";
 import {
   artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
-} from "../../config/constant";
+} from "../../../config/constant";
 import { allCourseList } from "@/data/courseData";
+
+import AllCourcesCardData from "../AllCourcesCardData";
 
 interface RelatedCoursesProps {
   handleEnrollButtonClick: () => void;
@@ -49,11 +50,11 @@ const RelatedCourses: React.FC<RelatedCoursesProps> = ({
   // Filter courses based on the selected page
   const coursesData =
     page === "data-science"
-      ? RelatedCoursesData.Courses.DataScience
+      ? AllCourcesCardData.Courses.DataScience.SubCources
       : page === "digital-marketing"
-      ? RelatedCoursesData.Courses.DigitalMarketing
+      ? AllCourcesCardData.Courses.DigitalMarketing.SubCources
       : page === "artificial-intelligence"
-      ? RelatedCoursesData.Courses.ArtificialIntelligence
+      ? AllCourcesCardData.Courses.ArtificialIntelligence.SubCources
       : null;
 
   // Return null if no courses found
@@ -68,10 +69,10 @@ const RelatedCourses: React.FC<RelatedCoursesProps> = ({
     <div className={Styles.RelatedCourses}>
       <div className={Styles.headSection}>
         <h2 className={Styles.smallTitle}>
-          {RelatedCoursesData.OurCoursesTitle}
+          {AllCourcesCardData.OurCoursesTitle}
         </h2>
         <h1 className={Styles.bigTitle}>
-          {RelatedCoursesData.OurCoursesHeading}
+          {AllCourcesCardData.OurCoursesHeading}
         </h1>
       </div>
       <div className={Styles.RelatedCoursesCardContainer}>
@@ -94,7 +95,7 @@ const RelatedCourses: React.FC<RelatedCoursesProps> = ({
                 <div className={Styles.imgCardContainer}>
                   <div className={Styles.cardStarContainer}>
                     <img
-                      src={RelatedCoursesData.cardTimeIcon}
+                      src={AllCourcesCardData.cardTimeIcon}
                       alt="cardStar"
                       className={Styles.cardStarIcon}
                     />
@@ -111,27 +112,27 @@ const RelatedCourses: React.FC<RelatedCoursesProps> = ({
                   <div className={Styles.line2}>
                     <div className={Styles.icon}>
                       <img
-                        src={RelatedCoursesData.cardStudentsIcon}
+                        src={AllCourcesCardData.cardStudentsIcon}
                         alt="icon"
                         className={Styles.cardIcon}
                       />
                     </div>
                     <div className={Styles.boldText}>{card.cardCount}</div>
                     <div className={Styles.normalText}>
-                      {RelatedCoursesData.cardStudentEnrollmentText}
+                      {AllCourcesCardData.cardStudentEnrollmentText}
                     </div>
                   </div>
                   <div className={Styles.line3}>
                     <div className={Styles.icon}>
                       <img
-                        src={RelatedCoursesData.cardBookIcon}
+                        src={AllCourcesCardData.cardBookIcon}
                         alt="icon"
                         className={Styles.cardIcon}
                       />
                     </div>
                     <div className={Styles.boldText}>{card.cardTool}</div>
                     <div className={Styles.normalText}>
-                      {RelatedCoursesData.cardToolsText}
+                      {AllCourcesCardData.cardToolsText}
                     </div>
                   </div>
                 </div>

@@ -19,11 +19,12 @@ import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
 import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
-import RelatedCourses from "@/components/HomePageNew/Related Courses/RelatedCourses";
+import RelatedCourses from "@/components/HomePageNew/All-Cources/Related Courses/RelatedCourses";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
+import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -75,6 +76,10 @@ const Course = (props: any) => {
       />
       <ExploreTheCourses page={router?.query?.course?.toString()} />
       <CareersTransformed />
+      <CertificationDR
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        page={router?.query?.course?.toString()}
+      />
       <RelatedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         page={router?.query?.course?.toString()}

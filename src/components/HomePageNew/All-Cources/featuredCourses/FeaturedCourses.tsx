@@ -1,21 +1,19 @@
-import NewHomeData from "../../../data/newHomeData";
+import React, { useState, useEffect, useContext, useRef } from "react";
+import AllCourcesCardData from "../AllCourcesCardData";
 import Styles from "./featuredCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
-import React, { useState, useEffect, useContext, useRef } from "react";
 import useActive from "@/hooks/useActive";
-
 import _ from "lodash";
 import { useRouter } from "next/router";
-import { urlInfo } from "../../config/helper";
+import { urlInfo } from "../../../config/helper";
 
 import {
   artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
-} from "../../config/constant";
+} from "../../../config/constant";
 
 import { allCourseList } from "@/data/courseData";
 
@@ -91,13 +89,33 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         msInWeek
     );
   }
+
+  let parentCourses: any = [];
+
+  if (AllCourcesCardData?.Courses) {
+    const coursesData = AllCourcesCardData.Courses as {
+      [key: string]: {
+        parentCource?: any;
+      };
+    };
+
+    // Loop through each category in Courses
+    Object.keys(coursesData).forEach((category) => {
+      const categoryData = coursesData[category];
+
+      // Check if the category has a parentCource
+      if (categoryData.parentCource) {
+        parentCourses.push(categoryData.parentCource);
+      }
+    });
+  }
   return (
     <div className={Styles.featuredCoursesContainer} style={style}>
       <h2 className={Styles.smallHeading}>
-        {NewHomeData.FeaturedCoursesData.FeaturedCoursesHeading}
+        {AllCourcesCardData.FeaturedCoursesHeading}
       </h2>
       <h1 className={Styles.bigHeading}>
-        {NewHomeData.FeaturedCoursesData.FeaturedCoursesSubHeading}
+        {AllCourcesCardData.FeaturedCoursesSubHeading}
       </h1>
       <div>
         <img
@@ -127,22 +145,24 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
             },
           }}
         >
-          {NewHomeData.FeaturedCoursesData.cards.map((card, index) => (
+          {parentCourses.map((parentCourse: any, index: number) => (
             <SwiperSlide key={index}>
               <div className={Styles.card}>
-                <div className={Styles.cardHeading}>{card.cardProgram}</div>
+                <div className={Styles.cardHeading}>
+                  {parentCourse.cardProgram}
+                </div>
                 <div className={Styles.imgCardContainer}>
                   <div className={Styles.cardStarContainer}>
                     <img
-                      src={NewHomeData.FeaturedCoursesData.cardStarIcon}
+                      src={AllCourcesCardData.cardStarIcon}
                       alt="cardStar"
                       className={Styles.cardStarIcon}
                     />
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
                   </div>
                   <img
-                    src={card.cardImg}
-                    alt={card.cardProgram}
+                    src={parentCourse.cardImg}
+                    alt={parentCourse.cardProgram}
                     className={Styles.cardImage}
                   />
                 </div>
@@ -150,44 +170,47 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                   <div className={Styles.line1}>
                     <div className={Styles.icon}>
                       <img
-                        src={NewHomeData.FeaturedCoursesData.cardTimeIcon}
+                        src={AllCourcesCardData.cardTimeIcon}
                         alt="icon"
                         className={Styles.cardIcon}
                       />
                     </div>
-                    <div className={Styles.boldText}>{card.cardWeek}</div>
+                    <div className={Styles.boldText}>
+                      {parentCourse.cardWeek}
+                    </div>
                     <div className={Styles.normalText}>
-                      {NewHomeData.FeaturedCoursesData.cardProgramText}
+                      {AllCourcesCardData.cardProgramText}
                     </div>
                   </div>
                   <div className={Styles.line2}>
                     <div className={Styles.icon}>
                       <img
-                        src={NewHomeData.FeaturedCoursesData.cardStudentsIcon}
+                        src={AllCourcesCardData.cardStudentsIcon}
                         alt="icon"
                         className={Styles.cardIcon}
                       />
                     </div>
 
-                    <div className={Styles.boldText}>{card.cardCount}</div>
+                    <div className={Styles.boldText}>
+                      {parentCourse.cardCount}
+                    </div>
                     <div className={Styles.normalText}>
-                      {
-                        NewHomeData.FeaturedCoursesData
-                          .cardStudentEnrollmentText
-                      }
+                      {AllCourcesCardData.cardStudentEnrollmentText}
                     </div>
                   </div>
                   <div className={Styles.line3}>
                     <div className={Styles.icon}>
                       <img
-                        src={NewHomeData.FeaturedCoursesData.cardBookIcon}
+                        src={AllCourcesCardData.cardBookIcon}
                         alt="icon"
                         className={Styles.cardIcon}
                       />
                     </div>
-                    <div className={Styles.boldText}>{card.cardTool}</div>
+                    <div className={Styles.boldText}>
+                      {parentCourse.cardTool}
+                    </div>
                     <div className={Styles.normalText}>
-                      {NewHomeData.FeaturedCoursesData.cardToolsText}
+                      {AllCourcesCardData.cardToolsText}
                     </div>
                   </div>
                 </div>
@@ -196,10 +219,10 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     className={Styles.learnMoreButton}
                     onClick={() =>
                       redirectCard(
-                        card.cardProgram,
-                        card.code,
-                        card.id,
-                        card.parentId
+                        parentCourse.cardProgram,
+                        parentCourse.code,
+                        parentCourse.id,
+                        parentCourse.parentId
                       )
                     }
                   >

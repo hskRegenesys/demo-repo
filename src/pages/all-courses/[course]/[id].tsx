@@ -150,7 +150,7 @@ const DigitalMarketing = (props: any) => {
             page={router?.query?.course?.toString()}
           />
 
-          {/* <CourseDetails
+          <CourseDetails
             courseDetails={courseDetails}
             brochureName={brochureName}
           />
@@ -171,7 +171,7 @@ const DigitalMarketing = (props: any) => {
           <FeesDetails courseDetails={courseDetails} courseId={courseId} />
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
-          <CallToSection /> */}
+          <CallToSection />
         </>
       )}
       {/* <MainFooter />

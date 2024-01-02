@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import WhyChooseDR from "@/components/HomePageNew/whychooseDR/WhyChooseDR";
-import FeaturedCourses from "@/components/HomePageNew/featuredCourses/FeaturedCourses";
-import OurCourses from "@/components/HomePageNew/ourCourses/OurCourses";
+import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import NewHomeData from "@/data/newHomeData";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
@@ -22,6 +21,7 @@ import AdmitsCompanies from "@/components/HomePageNew/admitsCompanies/AdmitsComp
 import LearnersBenefit from "@/components/HomePageNew/learnersBenefit/LearnersBenefit";
 import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectContainer";
 import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
+import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
