@@ -461,6 +461,18 @@ const exploreTheCoursesData = {
               "International Certification",
             ],
           },
+          {
+            courseName: "Digital Marketing",
+            price: "$999",
+            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
+            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
         ],
       },
     },

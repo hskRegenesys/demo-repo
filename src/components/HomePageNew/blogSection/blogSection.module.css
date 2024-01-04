@@ -7,7 +7,7 @@
 .blogSectionTitle {
   color: var(--yocket-com-ebony-clay, #2b3340);
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -44,7 +44,7 @@
 
 .blogQuestion {
   color: var(--light-text-primary, #2b3340);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -76,7 +76,7 @@
 .knowMoreLink {
   text-decoration: none;
   color: #008554;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;

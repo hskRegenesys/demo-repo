@@ -58,6 +58,7 @@ import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
+import BannerWithVideo from "@/components/HomePageNew/Banner/BannerWithVideo/BannerWithVideo";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -126,10 +127,12 @@ const DigitalMarketing = (props: any) => {
       )}
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      <HeaderOne pageTitle={props.course} />
+      {/* <HeaderOne /> */}
+      {/* <HeaderOne pageTitle={props.course} /> */}
+
       <MobileMenu />
       <SearchPopup />
-      <PageBanner
+      {/* <PageBanner
         title={router?.query?.course?.toString().replace("-", " ")}
         parent="All courses"
         parentHref="/all-courses"
@@ -137,7 +140,8 @@ const DigitalMarketing = (props: any) => {
         parentToParentHref={`/${programBaseUrl}/${urlInfo(
           parentToParentName()
         )}`}
-      />
+      /> */}
+      <BannerWithVideo page={router?.query?.course?.toString()} />
 
       {courseDetails && (
         <>
@@ -150,7 +154,7 @@ const DigitalMarketing = (props: any) => {
             page={router?.query?.course?.toString()}
           />
 
-          <CourseDetails
+          {/* <CourseDetails
             courseDetails={courseDetails}
             brochureName={brochureName}
           />
@@ -171,7 +175,7 @@ const DigitalMarketing = (props: any) => {
           <FeesDetails courseDetails={courseDetails} courseId={courseId} />
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
-          <CallToSection />
+          <CallToSection /> */}
         </>
       )}
       {/* <MainFooter />

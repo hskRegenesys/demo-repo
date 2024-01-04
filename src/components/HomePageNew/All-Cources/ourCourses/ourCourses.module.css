@@ -12,7 +12,7 @@
 .smallTitle {
   color: #008554;
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -23,7 +23,7 @@
 .bigTitle {
   color: #2b3340;
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -62,7 +62,7 @@
   border: 1.25px solid #008554;
   background: #dcfce7;
   color: #008554;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -95,7 +95,7 @@
 
 .cardHeading {
   color: var(--light-text-primary, #2b3340);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -161,7 +161,7 @@
 
 .boldText {
   color: #2b3340;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -298,7 +298,7 @@
     align-self: stretch;
     background: #f2f4f7;
     color: var(--primary-primary-dark-grey, #6a767c);
-    font-family: Montserrat;
+    font-family: Montserrat-Bold;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;

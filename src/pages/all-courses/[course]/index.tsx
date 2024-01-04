@@ -25,6 +25,7 @@ import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
+import BannerComponent from "@/components/HomePageNew/Banner/BannerwithImg/BannerwithImg";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -61,7 +62,8 @@ const Course = (props: any) => {
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
       <Style />
-      <HeaderOne pageTitle={props?.course} />
+
+      {/* <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
       <SearchPopup />
       <Schemas
@@ -73,7 +75,9 @@ const Course = (props: any) => {
         page={pageName}
         parent="All courses"
         parentHref="/all-courses"
-      />
+      /> */}
+      <HeaderOne />
+      <BannerComponent page={router?.query?.course?.toString()} />
       <ExploreTheCourses page={router?.query?.course?.toString()} />
       <CareersTransformed />
       <CertificationDR

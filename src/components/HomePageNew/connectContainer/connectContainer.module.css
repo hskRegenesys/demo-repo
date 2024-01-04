@@ -22,7 +22,7 @@
 
 .heading {
   color: #bbf7d0;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -33,7 +33,7 @@
 
 .title {
   color: var(--White, #fff);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;

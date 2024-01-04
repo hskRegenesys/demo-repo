@@ -3,6 +3,7 @@
 .appContainer {
   padding: 0px 108px 0px 108px;
   background-color: #fff;
+  margin-top: 100px;
 }
 
 .headerSection {
@@ -18,11 +19,9 @@
 }
 
 .sidePanel {
-  position: sticky;
   flex: 1 0 25%;
-  top: 0;
-  display: flex;
 }
+
 .sidePanelInside {
   position: sticky;
   top: 0;
@@ -30,11 +29,18 @@
   padding-top: 25px;
 }
 
+.contentPanel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  flex: 1 0 43%;
+  position: relative;
+}
+
 .smallHeading {
   color: var(--primary-primary-green, #008554);
   text-align: center;
-  font-family: Montserrat;
-
+  font-family: Montserrat-Bold;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -44,8 +50,7 @@
 }
 
 .bigHeading {
-  font-family: Montserrat;
-
+  font-family: Montserrat-Bold;
   color: var(--primary-primary-charcoal, #131718);
   font-size: 40px;
   font-style: normal;
@@ -65,27 +70,16 @@
   letter-spacing: 0.12px;
   transition: color 0.3s;
   font-family: Montserrat;
+  font-family: Montserrat-Bold;
 }
 
 .sidePanel p.active {
   color: #008554;
 }
 
-.contentPanel {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  flex: 1 0 43%;
-  position: relative;
-}
-
-.contentPanel.scrolled {
-  overflow-y: scroll;
-}
-
 .contentPanel h3 {
   color: var(--Primary-Primary---Charcoal, #131718);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -323,7 +317,7 @@
 .facultyName {
   color: var(--Light-Text-Primary, #2b3340);
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -336,7 +330,7 @@
 .courseName {
   color: var(--Light-Text-Green, #008554);
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -373,10 +367,6 @@
 @media screen and (max-width: 768px) {
   .cardContainer ul {
     flex-wrap: wrap;
-  }
-
-  .card {
-    /* max-width: calc(50% - 20px); */
   }
 }
 
@@ -432,7 +422,7 @@
 
 .price {
   color: var(--Light-Text-Green, #008554);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -567,7 +557,7 @@
 
 .weekHeader span {
   color: var(--Light-Text-Primary, #2b3340);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
