@@ -59,6 +59,7 @@ import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import BannerWithVideo from "@/components/HomePageNew/Banner/BannerWithVideo/BannerWithVideo";
+import BreadcrumbsDR from "@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -127,12 +128,12 @@ const DigitalMarketing = (props: any) => {
       )}
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      {/* <HeaderOne /> */}
+      <HeaderOne />
       {/* <HeaderOne pageTitle={props.course} /> */}
 
       <MobileMenu />
       <SearchPopup />
-      {/* <PageBanner
+      <BreadcrumbsDR
         title={router?.query?.course?.toString().replace("-", " ")}
         parent="All courses"
         parentHref="/all-courses"
@@ -140,7 +141,7 @@ const DigitalMarketing = (props: any) => {
         parentToParentHref={`/${programBaseUrl}/${urlInfo(
           parentToParentName()
         )}`}
-      /> */}
+      />
       <BannerWithVideo page={router?.query?.course?.toString()} />
 
       {courseDetails && (

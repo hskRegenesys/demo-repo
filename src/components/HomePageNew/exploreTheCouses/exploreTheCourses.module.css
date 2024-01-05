@@ -19,9 +19,11 @@
 }
 
 .sidePanel {
+  position: sticky;
   flex: 1 0 25%;
+  top: 0;
+  display: flex;
 }
-
 .sidePanelInside {
   position: sticky;
   top: 0;
@@ -29,18 +31,11 @@
   padding-top: 25px;
 }
 
-.contentPanel {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  flex: 1 0 43%;
-  position: relative;
-}
-
 .smallHeading {
   color: var(--primary-primary-green, #008554);
   text-align: center;
   font-family: Montserrat-Bold;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -51,6 +46,7 @@
 
 .bigHeading {
   font-family: Montserrat-Bold;
+
   color: var(--primary-primary-charcoal, #131718);
   font-size: 40px;
   font-style: normal;
@@ -69,12 +65,23 @@
   line-height: 24px;
   letter-spacing: 0.12px;
   transition: color 0.3s;
-  font-family: Montserrat;
   font-family: Montserrat-Bold;
 }
 
 .sidePanel p.active {
   color: #008554;
+}
+
+.contentPanel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  flex: 1 0 43%;
+  position: relative;
+}
+
+.contentPanel.scrolled {
+  overflow-y: scroll;
 }
 
 .contentPanel h3 {
@@ -355,7 +362,7 @@
 .tutors {
   color: var(--Light-Text-Green, #008554);
   text-align: right;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -411,7 +418,7 @@
 .courseNameContent4 {
   text-align: left;
   color: var(--Primary-Primary---Charcoal, #131718);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -470,7 +477,7 @@
   border-radius: 7.68px;
   border: 1px solid var(--light-divider-borders-dark, #ced1d9);
   color: var(--Light-Text-Primary, #2b3340);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -488,7 +495,7 @@
   border: 1px solid var(--Primary-Primary---Charcoal, #131718);
   background: var(--Primary-Primary---Charcoal, #131718);
   color: var(--Primary-Primary---White, #fff);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;

@@ -26,9 +26,10 @@ import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
 import BannerComponent from "@/components/HomePageNew/Banner/BannerwithImg/BannerwithImg";
+import { Breadcrumbs } from "@mui/material";
 
-const PageBanner = dynamic(
-  () => import("@/components/BannerSection/PageBanner")
+const BreadcrumbsDR = dynamic(
+  () => import("@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR")
 );
 const SubCourseDetails = dynamic(
   () => import("@/components/courses/subcourseDetails")
@@ -62,21 +63,21 @@ const Course = (props: any) => {
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
       <Style />
-
       {/* <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
       <SearchPopup />
       <Schemas
         type={Constants.course}
         data={{ name: pageName, description: pageName }}
-      />
-      <PageBanner
+      /> */}
+
+      <HeaderOne />
+      <BreadcrumbsDR
         title={pageName}
         page={pageName}
         parent="All courses"
         parentHref="/all-courses"
-      /> */}
-      <HeaderOne />
+      />
       <BannerComponent page={router?.query?.course?.toString()} />
       <ExploreTheCourses page={router?.query?.course?.toString()} />
       <CareersTransformed />

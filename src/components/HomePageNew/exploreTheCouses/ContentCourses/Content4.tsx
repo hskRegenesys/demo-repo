@@ -71,7 +71,7 @@ const Content4: React.FC<Content4Props> = ({ contentHeading, pricingCard }) => {
               </div>
               {/* Buttons */}
               <div className={styles.buttonsContainer}>
-                <button className={styles.learnMoreButton}>Learn More</button>
+                {/* <button className={styles.learnMoreButton} >Learn More</button> */}
                 <button className={styles.applyNowButton}>Apply Now</button>
               </div>
             </div>

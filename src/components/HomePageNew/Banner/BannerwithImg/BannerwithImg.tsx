@@ -12,16 +12,12 @@ interface BannerComponentProps {
 
 type BannerCourseData = {
   BannerImgDesktop: string;
-  BannerImgMobile: string;
-  coursePage: string;
-  contentDesktop: string;
-  contentMobile: string;
-  tickIcon: string;
-  points: string[];
-  introVideoLink?: string;
+  coursePageName: string;
+  topSectionPoint1: string;
+  topSectionPoint2: string;
+  contentText: string;
   bannerVideoLink?: string;
   BrochureIcon?: string;
-  PlayVidio?: string;
 };
 
 interface BannerDataMap {
@@ -45,9 +41,6 @@ const BannerComponent: React.FC<BannerComponentProps> = ({ page }) => {
   }
 
   // If specific properties not available, try the page directly
-  if (!bannerAllData) {
-    bannerAllData = BannerData[page];
-  }
 
   // If still not available, return null
   if (!bannerAllData) {
@@ -55,71 +48,48 @@ const BannerComponent: React.FC<BannerComponentProps> = ({ page }) => {
   }
 
   const {
-    coursePage,
-    contentDesktop,
-    contentMobile,
-    points,
-    introVideoLink,
+    coursePageName,
+    contentText,
+    topSectionPoint1,
+    topSectionPoint2,
     BrochureIcon,
-    tickIcon,
   } = bannerAllData;
 
   return (
-    <div className={styles.bannerContainer}>
-      <div className={styles.bannerImg}>
-        <img
-          src={bannerAllData.BannerImgDesktop}
-          alt="Desktop Banner"
-          className={styles.bannerImageDesktop}
-        />
-        <img
-          src={bannerAllData.BannerImgMobile}
-          alt="Mobile Banner"
-          className={styles.bannerImageMobile}
-        />
-      </div>
-      <div className={styles.contents}>
-        <div className={styles.contentSection}>
-          <h1>{coursePage}</h1>
-          <div className={styles.contentDesktop}>{contentDesktop}</div>
-          <div className={styles.contentMobile}>{contentMobile}</div>
-          <div className={styles.points}>
-            {points.map((point, index) => (
-              <div key={index} className={styles.pointsRow}>
-                <img src={tickIcon} alt="tick" className={styles.tickIcon} />
-                <p>{point}</p>
-              </div>
-            ))}
+    <div className={styles.bannerSection}>
+      <div className={styles.bannerContainer}>
+        <div className={styles.imageSection}>
+          <div className={styles.imageCard}>
+            <img
+              src={bannerAllData.BannerImgDesktop}
+              alt={`Banner for ${coursePageName}`}
+            />
           </div>
-          <div className={styles.buttonsContainer}>
-            <button className={styles.enrollButton}>Enroll Now</button>
-            <button className={styles.BrochureBtn}>
-              <img
-                src={BrochureIcon}
-                alt="Brochure"
-                className={styles.brochureIcon}
-              />
-              Brochure
-            </button>
-            {introVideoLink && (
-              <a
-                href={introVideoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.watchVideoButton}
-              >
-                <div className={styles.playVideo}>
-                  <div className={styles.Vidio}>
-                    <img src={bannerAllData.PlayVidio} alt="playVideo" />
-                  </div>
-                  <span>Hear My Story</span>
-                </div>
-              </a>
-            )}
+        </div>
+        <div className={styles.contentSection}>
+          <div className={styles.card}>
+            <div className={styles.topSection}>
+              <span className={styles.point1}>{topSectionPoint1}</span>
+              <span className={styles.point2}>{topSectionPoint2}</span>
+            </div>
+            <h2 className={styles.courseHeading}>
+              Certification Programme in <span>{coursePageName}</span>
+            </h2>
+            <p className={styles.contentText}>{contentText}</p>
+            <div className={styles.buttonsContainer}>
+              <div className={styles.brochureBtn}>
+                <img
+                  className={styles.brochureIcon}
+                  src={BrochureIcon}
+                  alt="Brochure Icon"
+                />
+                Brochure
+              </div>
+              <div className={styles.enrollButton}>Enroll Now!</div>
+            </div>
           </div>
         </div>
       </div>
-      <div className={styles.videoSection}></div>
     </div>
   );
 };
