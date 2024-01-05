@@ -69,7 +69,6 @@
 .point1,
 .point2 {
   display: flex;
-  height: 32px;
   padding: 8px 20px;
   justify-content: center;
   align-items: center;
@@ -168,4 +167,87 @@
   color: #fff;
   box-shadow: 0px 2px 8px -2px rgba(0, 187, 118, 0.5),
     0px -2px 1px 0px rgba(55, 65, 81, 0.15) inset;
+}
+
+@media screen and (max-width: 900px) {
+  /* Adjust the max-width value based on your design needs */
+
+  .bannerContainer {
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+  .imageSection {
+    width: 100%;
+    border-radius: 12px;
+  }
+  .imageCard {
+    margin: 0px 16px;
+    max-width: none;
+    height: auto;
+    background: #ebebeb;
+    width: 100%;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%); /* Start from left of the container */
+    }
+    to {
+      transform: translateY(0); /* Move to the original position */
+    }
+  }
+  .contentSection {
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: 100%;
+    margin-top: -10%;
+    border-radius: 12px;
+    padding: 20px 16px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .topSection {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .point1,
+  .point2 {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .courseHeading {
+    font-size: 20px;
+  }
+
+  .contentText {
+    font-size: 14px;
+  }
+
+  .buttonsContainer {
+    display: block;
+  }
+
+  .brochureIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .brochureBtn {
+    color: var(--Light-Text-Primary, #2b3340);
+    border-radius: 10px;
+    border: 1px solid var(--light-divider-borders-green, #008554);
+    background: var(--Light-Surface-Success, #f0fdf4);
+    margin-bottom: 24px;
+  }
+  .enrollButton {
+    border-radius: 10px;
+    background: #008554;
+    color: #fff;
+    box-shadow: 0px 2px 8px -2px rgba(0, 187, 118, 0.5),
+      0px -2px 1px 0px rgba(55, 65, 81, 0.15) inset;
+  }
 }

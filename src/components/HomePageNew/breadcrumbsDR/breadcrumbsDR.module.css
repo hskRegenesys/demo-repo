@@ -66,3 +66,36 @@
   align-items: center;
   margin-right: 5px;
 }
+
+/* Existing styles above this line */
+
+@media screen and (max-width: 590px) {
+  .BreadcrumbsDR {
+    padding: 10px 0;
+    margin-top: 60px;
+  }
+  .breadCrumbHome {
+    flex-wrap: wrap;
+  }
+  /* .breadCrumbHome li {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 80px; } */
+
+  .breadCrumbHome li a {
+    font-size: 12px;
+  }
+
+  .arrowIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .active {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+/* Existing styles below this line */
