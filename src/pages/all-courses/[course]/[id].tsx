@@ -123,7 +123,7 @@ const DigitalMarketing = (props: any) => {
     return () => clearTimeout(timeoutModal);
   }, []);
   return (
-    <Layout pageTitle={props.course} courseId={courseId}>
+    <>
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
@@ -186,7 +186,7 @@ const DigitalMarketing = (props: any) => {
       <BlogSection />
       <Faq />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-    </Layout>
+    </>
   );
 };
 

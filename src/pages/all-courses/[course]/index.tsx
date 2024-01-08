@@ -59,7 +59,7 @@ const Course = (props: any) => {
     return () => clearTimeout(timeoutModal);
   }, []);
   return (
-    <Layout pageTitle={props?.course}>
+    <>
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
@@ -72,7 +72,7 @@ const Course = (props: any) => {
         data={{ name: pageName, description: pageName }}
       /> */}
 
-      {/* <HeaderOne /> */}
+      <HeaderOne />
       <BreadcrumbsDR
         title={pageName}
         page={pageName}
@@ -103,7 +103,7 @@ const Course = (props: any) => {
       <CallToSection />
       <MainFooter />
       <StickyBar /> */}
-    </Layout>
+    </>
   );
 };
 export async function getServerSideProps(context: any) {

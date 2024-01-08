@@ -35,26 +35,25 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({ page }) => {
 
   if (page === "basic-data-science") {
     bannerAllData = BannerData?.basicDataScience;
+  } else if (page === "advanced-data-science") {
+    bannerAllData = BannerData?.advancedDataScience;
+  } else if (page === "applied-data-science") {
+    bannerAllData = BannerData?.appliedDataScience;
+  } else if (page === "digital-marketing-fundamentals") {
+    bannerAllData = BannerData?.digitalMarketingFundamentals;
+  } else if (page === "advance-digital-marketing-course") {
+    bannerAllData = BannerData?.digitalMarketingAdvanced;
+  } else if (page === "cyber-security") {
+    bannerAllData = BannerData?.cyberSecurity;
+  } else if (page === "project-management") {
+    bannerAllData = BannerData?.projectManagement;
+  } else if (page === "ai-introductory") {
+    bannerAllData = BannerData?.artificialIntelligenceIntroductory;
+  } else if (page === "ai-intermediary") {
+    bannerAllData = BannerData?.artificialIntelligenceIntermediary;
+  } else if (page === "ai-advanced-applied") {
+    bannerAllData = BannerData?.artificialIntelligenceAdvancedApplied;
   }
-  // } else if (page === "advanced-data-science") {
-  //   bannerAllData = BannerData?.advancedDataScience;
-  // } else if (page === "applied-data-science") {
-  //   bannerAllData = BannerData?.appliedDataScience;
-  // } else if (page === "digital-marketing-fundamentals") {
-  //   bannerAllData = BannerData?.digitalMarketingFundamentals;
-  // } else if (page === "advance-digital-marketing-course") {
-  //   bannerAllData = BannerData?.digitalMarketingAdvanced;
-  // } else if (page === "cyber-security") {
-  //   bannerAllData = BannerData?.cyberSecurity;
-  // } else if (page === "project-management") {
-  //   bannerAllData = BannerData?.projectManagement;
-  // } else if (page === "ai-introductory") {
-  //   bannerAllData = BannerData?.artificialIntelligenceIntroductory;
-  // } else if (page === "ai-intermediary") {
-  //   bannerAllData = BannerData?.artificialIntelligenceIntermediary;
-  // } else if (page === "ai-advanced-applied") {
-  //   bannerAllData = BannerData?.artificialIntelligenceAdvancedApplied;
-  // }
 
   // If specific properties not available, try the page directly
   // if (!bannerAllData) {
