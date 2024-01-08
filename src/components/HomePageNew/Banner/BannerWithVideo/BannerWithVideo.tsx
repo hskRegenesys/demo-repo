@@ -18,6 +18,7 @@ type BannerCourseData = {
   contentText: string;
   bannerVideoLink?: string;
   BrochureIcon?: string;
+  vidoPlayIcon?: string;
 };
 
 interface BannerDataMap {
@@ -71,6 +72,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({ page }) => {
     topSectionPoint1,
     topSectionPoint2,
     BrochureIcon,
+    vidoPlayIcon,
   } = bannerAllData;
 
   return (
@@ -99,12 +101,32 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({ page }) => {
             </div>
           </div>
         </div>
+
         <div className={styles.imageSection}>
           <div className={styles.imageCard}>
             <img
+              className={styles.imageBanner}
               src={bannerAllData.BannerImgDesktop}
               alt={`Banner for ${coursePageName}`}
             />
+            <div className={styles.playIconContainer}>
+              <div className="video-main">
+                <div className="promo-video">
+                  <div className={styles.wavesBlock}>
+                    <div className={`${styles.waves} ${styles.wave1}`}></div>
+                    <div className={`${styles.waves} ${styles.wave2}`}></div>
+                    <div className={`${styles.waves} ${styles.wave3}`}></div>
+                  </div>
+                </div>
+                <div className={styles.playIconStyle}>
+                  <img
+                    src={vidoPlayIcon}
+                    className={styles.playIcon}
+                    alt="play Icon"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

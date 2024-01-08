@@ -60,6 +60,7 @@ import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import BannerWithVideo from "@/components/HomePageNew/Banner/BannerWithVideo/BannerWithVideo";
 import BreadcrumbsDR from "@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR";
+import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -143,6 +144,7 @@ const DigitalMarketing = (props: any) => {
         )}`}
       />
       <BannerWithVideo page={router?.query?.course?.toString()} />
+      <CourseBenefitsCard page={router?.query?.course?.toString()} />
 
       {courseDetails && (
         <>

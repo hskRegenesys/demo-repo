@@ -27,6 +27,7 @@ import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
 import BannerComponent from "@/components/HomePageNew/Banner/BannerwithImg/BannerwithImg";
 import { Breadcrumbs } from "@mui/material";
+import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
 
 const BreadcrumbsDR = dynamic(
   () => import("@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR")
@@ -71,7 +72,7 @@ const Course = (props: any) => {
         data={{ name: pageName, description: pageName }}
       /> */}
 
-      <HeaderOne />
+      {/* <HeaderOne /> */}
       <BreadcrumbsDR
         title={pageName}
         page={pageName}
@@ -79,6 +80,7 @@ const Course = (props: any) => {
         parentHref="/all-courses"
       />
       <BannerComponent page={router?.query?.course?.toString()} />
+      <CourseBenefitsCard page={router?.query?.course?.toString()} />
       <ExploreTheCourses page={router?.query?.course?.toString()} />
       <CareersTransformed />
       <CertificationDR
