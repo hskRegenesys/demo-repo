@@ -1,7 +1,7 @@
 /* CertificationDR.module.css */
 
 .certification {
-  margin: 108px 100px;
+  margin: 100px 108px 0px 108px;
 }
 
 .certificationContainer {
@@ -113,11 +113,12 @@
 
 .enrollButton {
   position: relative;
-  margin: 64px auto;
+  margin: 0 auto;
+  margin-top: 64px;
   text-align: center;
   padding: 12px 20px;
   border-radius: 7.68px;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   border: 1px solid var(--light-text-surface-primary-green, #008554);
   background: var(--light-text-surface-primary-green, #008554);
   box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);

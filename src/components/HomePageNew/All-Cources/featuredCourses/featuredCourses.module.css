@@ -90,7 +90,7 @@
 
 .cardStarText {
   color: #008554;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -139,7 +139,7 @@
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-top: 10px;
@@ -158,7 +158,7 @@
 .card .learnMoreButton {
   width: 100%;
   color: var(--primary-primary-charcoal, #131718);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -173,7 +173,7 @@
 .card .enrollNowButton {
   width: 100%;
   color: var(--primary-primary-white, #fff);
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -232,7 +232,7 @@
   }
   .featuredCoursesContainer {
     padding: 0px 16px 0px 16px;
-    background: none;
+    background: none !important;
   }
   .rocketImg {
     display: none;

@@ -19,6 +19,24 @@ const BlogSectionData = {
       blogText:
         "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
     },
+    {
+      blogImg: "/assets/images/HomeNew/blog.png",
+      blogQuestion: "Exploring Scientific Discoveries",
+      blogText:
+        "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+    },
+    {
+      blogImg: "/assets/images/HomeNew/blog.png",
+      blogQuestion: "Exploring Scientific Discoveries",
+      blogText:
+        "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+    },
+    {
+      blogImg: "/assets/images/HomeNew/blog.png",
+      blogQuestion: "Exploring Scientific Discoveries",
+      blogText:
+        "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+    },
   ],
 };
 

@@ -3,7 +3,7 @@
 .cardContainer {
   flex-direction: column;
   align-items: center;
-  margin: 100px 108px;
+  margin: 100px 108px 0px 108px;
 }
 .Title {
   color: #008554;
@@ -14,6 +14,7 @@
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
+  margin-bottom: 12px;
 }
 .heading {
   color: #2b3340;
@@ -24,6 +25,7 @@
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
+  margin-bottom: 52px;
 }
 .studentReviewCardContainer {
   display: flex;
@@ -76,16 +78,17 @@
 
 .textContent h3 {
   color: #2b3340;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
+  margin-bottom: 8px;
 }
 .textContent2 {
   color: #2b3340;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -129,7 +132,7 @@
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
   .cardContainer {
-    margin: 60px 16px;
+    margin: 52px 16px 0px 16px;
   }
   .Title {
     font-size: 14px;

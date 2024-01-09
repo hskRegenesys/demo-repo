@@ -1,5 +1,5 @@
 import React from "react";
-import NewHomeData from "../../../data/newHomeData";
+import StudentReviewData from "./StudentReviewData";
 import Styles from "./StudentReview.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -12,7 +12,7 @@ const StudentReview = () => {
     HalfStarImg,
     FullGrayStarImg,
     StudentReviewCard,
-  } = NewHomeData.StudentReviewData;
+  } = StudentReviewData;
 
   return (
     <div className={Styles.cardContainer}>

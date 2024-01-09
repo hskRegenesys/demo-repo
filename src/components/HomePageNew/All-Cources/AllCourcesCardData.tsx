@@ -10,11 +10,6 @@ const AllCourcesCardData = {
   cardToolsText: "Covered",
   cardStarIcon: "/assets/images/HomeNew/star.svg",
 
-  // OurCourses
-  DropdownarrowIcon: "./assets/images/HomeNew/arrow_drop_down.svg",
-  OurCoursesTitle: "All Courses",
-  OurCoursesHeading: "Explore Our Courses",
-
   Courses: {
     DataScience: {
       parentCource: {

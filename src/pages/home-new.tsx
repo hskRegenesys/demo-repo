@@ -44,7 +44,9 @@ const HomeNew = () => {
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
-      <HeaderOne pageTitle="home" />
+      <HeaderOne />
+
+      {/* <HeaderOne pageTitle="home" /> */}
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />

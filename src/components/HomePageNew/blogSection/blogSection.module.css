@@ -1,7 +1,7 @@
 /* blogSection.module.css */
 
 .blogSectionContainer {
-  margin: 100px 108px;
+  margin: 100px 108px 0px 108px;
 }
 
 .blogSectionTitle {
@@ -13,6 +13,7 @@
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
+  margin-bottom: 56px;
 }
 
 .blogCardsContainer {
@@ -118,6 +119,7 @@
   }
   .blogSectionTitle {
     font-size: 24px;
+    margin-bottom: 32px;
   }
   .blogCard {
     margin: 0 auto;

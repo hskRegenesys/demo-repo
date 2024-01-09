@@ -2,11 +2,11 @@
 
 .LearnersBenefitContainer {
   text-align: center;
+  margin-top: 100px;
   /* Add additional styling for the container if needed */
 }
 
 .TopSection {
-  margin-top: 50px;
   text-align: center;
   /* Adjust the top margin as needed */
 }
@@ -144,7 +144,7 @@
   --swiper-pagination-bullet-vertical-gap: 120px;
 }
 .swiperStyleFC {
-  --add-bottom: 80px;
+  --add-bottom: 50px;
   padding-bottom: var(--add-bottom);
   align-items: center;
 }

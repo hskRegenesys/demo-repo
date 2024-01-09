@@ -57,8 +57,7 @@ const AllCoursesNew = () => {
         <FeaturedCourses
           handleEnrollButtonClick={handleEnrollButtonClick}
           style={{
-            background:
-              "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
+            background: "none",
           }}
         />
         <OurCourses

@@ -5,6 +5,7 @@
   align-items: center;
   padding: 68px 104px;
   background-color: #1f2b37;
+  margin-top: 62px;
 }
 
 .leftSection {
@@ -56,7 +57,7 @@
   font-style: normal;
   bottom: 10px;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
 }
@@ -108,6 +109,7 @@
   .connectContainer {
     flex-direction: column;
     padding: 40px;
+    margin-top: 44px;
   }
 
   .rightSection {

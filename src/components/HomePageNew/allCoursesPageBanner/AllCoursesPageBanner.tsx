@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./allCoursesPageBanner.module.css";
-import NewHomeData from "../../../data/newHomeData";
+import allCoursesPageBannerData from "./allCoursesPageBannerData";
 
 interface AllCoursesPageBannerProps {
   handleEnrollButtonClick: () => void;
@@ -13,9 +13,10 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
     DesktopBannerImg,
     MobileBannerImg,
     HeadingText,
-    ParagraphText,
+    ParagraphTextDesktop,
     ButtonText,
-  } = NewHomeData.allCoursesPageBannerData;
+    ParagraphTextMobile,
+  } = allCoursesPageBannerData;
 
   return (
     <div className={Styles.bannerContainer}>
@@ -32,7 +33,9 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
 
       <div className={Styles.bannerTextContainer}>
         <h1 className={Styles.headingText}>{HeadingText}</h1>
-        <p className={Styles.paragraphText}>{ParagraphText}</p>
+        <p className={Styles.paragraphText1}>{ParagraphTextDesktop}</p>
+        <p className={Styles.paragraphText2}>{ParagraphTextMobile}</p>
+
         <button className={Styles.button} onClick={handleEnrollButtonClick}>
           {ButtonText}
         </button>

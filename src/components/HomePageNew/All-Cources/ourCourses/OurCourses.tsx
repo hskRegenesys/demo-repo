@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import Styles from "./ourCourses.module.css";
-import AllCourcesCardData from "../AllCourcesCardData";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";

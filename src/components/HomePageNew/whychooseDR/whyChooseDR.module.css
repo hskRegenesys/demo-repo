@@ -1,6 +1,6 @@
 /* Common styles for both mobile and desktop */
 .WhyChooseDRContainer {
-  margin: 108px 72px 100px 108px;
+  margin: 72px 108px 0px 108px;
 }
 .topSection {
   text-align: center;
@@ -53,7 +53,7 @@
 .cardText {
   color: #2b3340;
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -63,11 +63,12 @@
 
 .startLearningButton {
   position: relative;
-  margin: 64px auto;
+  margin: 0px auto;
+  margin-top: 64px;
   text-align: center;
   padding: 12px 20px;
   border-radius: 7.68px;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   border: 1px solid var(--light-text-surface-primary-green, #008554);
   background: var(--light-text-surface-primary-green, #008554);
   box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);

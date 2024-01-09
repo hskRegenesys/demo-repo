@@ -41,17 +41,20 @@
 }
 
 .desktopSlide {
-  margin-top: 130px;
+  margin-top: 80px;
 }
 @media (max-width: 760px) {
   .mobileSlide {
     display: block;
-    margin-top: 130px;
+    margin-top: 80px;
   }
   .desktopSlide {
     display: none;
   }
   .img {
     width: 100%;
+  }
+  .formContainer {
+    text-align: center;
   }
 }

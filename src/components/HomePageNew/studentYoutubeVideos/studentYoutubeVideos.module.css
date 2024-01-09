@@ -41,7 +41,7 @@
   --swiper-pagination-bullet-vertical-gap: 120px;
 }
 .swiperStyle {
-  --add-bottom: 80px;
+  --add-bottom: 50px;
   padding-bottom: var(--add-bottom);
   align-items: center;
 }

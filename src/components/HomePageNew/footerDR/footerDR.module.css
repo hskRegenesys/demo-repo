@@ -12,6 +12,7 @@
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.12px;
   margin-bottom: 12px;
+  font-family: Montserrat;
 }
 
 .footerContainer a {
@@ -22,6 +23,7 @@
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.12px;
   margin-bottom: 12px;
+  font-family: Montserrat;
 }
 
 .footerSection {
@@ -89,7 +91,7 @@
 
 .strong {
   color: #1bb179;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -148,6 +150,13 @@
   display: flex;
   justify-content: space-between;
   gap: auto;
+}
+.footerTextDesktop p {
+  font-family: Montserrat;
+  color: #fff;
+}
+.footerContent4 span {
+  font-family: Montserrat;
 }
 /* Media query for mobile view */
 @media only screen and (max-width: 800px) {
