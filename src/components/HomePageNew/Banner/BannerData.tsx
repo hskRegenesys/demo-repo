@@ -8,7 +8,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
   },
@@ -19,7 +19,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -31,7 +31,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -43,7 +43,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -58,7 +58,7 @@ const BannerData = {
     vidoPlayIcon: "",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
   },
@@ -69,7 +69,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -81,7 +81,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -94,7 +94,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -107,7 +107,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -122,7 +122,7 @@ const BannerData = {
     vidoPlayIcon: "",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
   },
@@ -133,7 +133,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -146,7 +146,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
@@ -158,7 +158,7 @@ const BannerData = {
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
-    introVideoLink:
+    youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",

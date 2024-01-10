@@ -69,7 +69,7 @@
   line-height: normal;
   letter-spacing: 0.12px;
   margin-bottom: 0px;
-  font-family: Montserrat !important;
+  font-family: Montserrat-Bold;
 }
 .cardText {
   color: #6a767c;
@@ -102,7 +102,6 @@
   margin-top: 20px;
   max-width: 1080px;
   margin: 44px auto;
-  padding: 16px;
 }
 
 .swiperCard {
@@ -165,7 +164,7 @@
   font-weight: 700;
   letter-spacing: 0.12px;
   font-size: 24px;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
 }
 
 .smallCard {
@@ -216,7 +215,7 @@
   color: var(--primary-primary-charcoal, #131718);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   font-family: Montserrat;
@@ -250,7 +249,7 @@
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-bottom: 10px;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
 }
 
 .companyImg {
@@ -347,7 +346,9 @@
     padding: 20px; /* Adjust padding as needed */
     text-align: center;
   }
-
+  .swiperContainer {
+    margin: 0px;
+  }
   .topSection {
     flex-direction: column;
     align-items: center;
@@ -357,10 +358,6 @@
 
   .nameRole {
     margin-right: 0;
-  }
-
-  .smallCard {
-    margin-top: 20px; /* Adjust margin as needed */
   }
 
   .downSection {
@@ -407,6 +404,7 @@
   }
   .experienceText {
     font-size: 14px;
+    margin-bottom: 0px;
   }
   .roleText {
     font-size: 14px;

@@ -74,6 +74,18 @@ const exploreTheCoursesData = {
             courseName: "Digital Marketing",
             yearsOfExperience: "12+ Years of Experience",
           },
+          {
+            facultyImg: "/assets/images/HomeNew/faculty-img/faculty-1.png",
+            facultyName: "Tutor Name",
+            courseName: "Digital Marketing",
+            yearsOfExperience: "12+ Years of Experience",
+          },
+          {
+            facultyImg: "/assets/images/HomeNew/faculty-img/faculty-1.png",
+            facultyName: "Tutor Name",
+            courseName: "Digital Marketing",
+            yearsOfExperience: "12+ Years of Experience",
+          },
           // Additional faculty members as needed
         ],
       },

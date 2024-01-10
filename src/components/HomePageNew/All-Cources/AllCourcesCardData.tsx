@@ -10,6 +10,9 @@ const AllCourcesCardData = {
   cardToolsText: "Covered",
   cardStarIcon: "/assets/images/HomeNew/star.svg",
 
+  RelatedCoursesHeding: "Discover Trend's Top Courses in Demand",
+  RelatedCoursesTitle: "Related Courses",
+
   Courses: {
     DataScience: {
       parentCource: {

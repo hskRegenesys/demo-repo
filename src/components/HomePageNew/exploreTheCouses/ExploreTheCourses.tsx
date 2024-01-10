@@ -124,6 +124,10 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
     }
   };
 
+  const handleMouseOver = (index: number, contentId: string) => {
+    setActiveContent(contentId);
+  };
+
   let mainCourseData: MainCourseData | undefined;
 
   // --------data-science---------
@@ -199,28 +203,45 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
             ))}
           </div>
         </div>
+
         <div className={styles.contentPanel}>
           {/* Render Content 1 */}
           {content1 && (
-            <div ref={contentRefs[0]}>
+            <div
+              ref={contentRefs[0]}
+              onMouseOver={() => handleMouseOver(0, sideHeadings[0].contentId)}
+            >
               <Content1 {...content1} />
             </div>
           )}
+          {/* Render Content 5 */}
           {content5 && (
-            <div ref={contentRefs[1]}>
+            <div
+              ref={contentRefs[1]}
+              onMouseOver={() => handleMouseOver(1, sideHeadings[1].contentId)}
+            >
               <Content5 {...content5} />
             </div>
           )}
           {/* Render Content 2 */}
-          <div ref={contentRefs[2]}>
+          <div
+            ref={contentRefs[2]}
+            onMouseOver={() => handleMouseOver(2, sideHeadings[2].contentId)}
+          >
             <Content2 {...content2} />
           </div>
           {/* Render Content 3 */}
-          <div ref={contentRefs[3]}>
+          <div
+            ref={contentRefs[3]}
+            onMouseOver={() => handleMouseOver(3, sideHeadings[3].contentId)}
+          >
             <Content3 {...content3} />
           </div>
           {/* Render Content 4 */}
-          <div ref={contentRefs[4]}>
+          <div
+            ref={contentRefs[4]}
+            onMouseOver={() => handleMouseOver(4, sideHeadings[4].contentId)}
+          >
             <Content4 {...content4} />
           </div>
         </div>

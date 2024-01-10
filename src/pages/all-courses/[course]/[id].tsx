@@ -61,6 +61,7 @@ import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
 import BannerWithVideo from "@/components/HomePageNew/Banner/BannerWithVideo/BannerWithVideo";
 import BreadcrumbsDR from "@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR";
 import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
+import YoutubeVidioPopup from "@/components/HomePageNew/YoutubeVidioPopup/YoutubeVidioPopup";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -70,6 +71,8 @@ const DigitalMarketing = (props: any) => {
   const router = useRouter();
   const [show, setShow] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
+  const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
 
   const courseId: any = router?.query?.id;
 
@@ -122,11 +125,30 @@ const DigitalMarketing = (props: any) => {
 
     return () => clearTimeout(timeoutModal);
   }, []);
+
+  const YoutubePopupButtonClick = (videoLink: string) => {
+    setIsisYoutubePopup(true);
+    setYoutubeVideoLink(videoLink);
+  };
+
+  const handleYoutubePopupClose = () => {
+    setIsisYoutubePopup(false);
+  };
+
   return (
     <>
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
+
+      {isYoutubePopup && (
+        <YoutubeVidioPopup
+          isVisibleVidio={isYoutubePopup}
+          youtubeVideoLink={youtubeVideoLink}
+          onClose={handleYoutubePopupClose}
+        />
+      )}
+
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
       <HeaderOne />
@@ -143,7 +165,12 @@ const DigitalMarketing = (props: any) => {
           parentToParentName()
         )}`}
       />
-      <BannerWithVideo page={router?.query?.course?.toString()} />
+      <BannerWithVideo
+        page={router?.query?.course?.toString()}
+        handleEnrollButtonClick={(videoLink) =>
+          YoutubePopupButtonClick(videoLink)
+        }
+      />
       <CourseBenefitsCard page={router?.query?.course?.toString()} />
 
       {courseDetails && (

@@ -8,6 +8,7 @@ interface Point {
 
 interface BannerComponentProps {
   page: string | undefined;
+  handleEnrollButtonClick: (videoLink: string) => void;
 }
 
 type BannerCourseData = {
@@ -19,13 +20,17 @@ type BannerCourseData = {
   bannerVideoLink?: string;
   BrochureIcon?: string;
   vidoPlayIcon?: string;
+  youtubeVideoLink: string;
 };
 
 interface BannerDataMap {
   [key: string]: BannerCourseData;
 }
 
-const BannerWithVideo: React.FC<BannerComponentProps> = ({ page }) => {
+const BannerWithVideo: React.FC<BannerComponentProps> = ({
+  page,
+  handleEnrollButtonClick,
+}) => {
   if (!page) {
     return null;
   }
@@ -72,6 +77,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({ page }) => {
     topSectionPoint2,
     BrochureIcon,
     vidoPlayIcon,
+    youtubeVideoLink,
   } = bannerAllData;
 
   return (
@@ -108,7 +114,13 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({ page }) => {
               src={bannerAllData.BannerImgDesktop}
               alt={`Banner for ${coursePageName}`}
             />
-            <div className={styles.playIconContainer}>
+            <div
+              className={styles.playIconContainer}
+              onClick={() =>
+                bannerAllData &&
+                handleEnrollButtonClick(bannerAllData.youtubeVideoLink)
+              }
+            >
               <div className="video-main">
                 <div className="promo-video">
                   <div className={styles.wavesBlock}>

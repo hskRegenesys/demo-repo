@@ -69,10 +69,10 @@ const RelatedCourses: React.FC<RelatedCoursesProps> = ({
     <div className={Styles.RelatedCourses}>
       <div className={Styles.headSection}>
         <h2 className={Styles.smallTitle}>
-          {AllCourcesCardData.OurCoursesTitle}
+          {AllCourcesCardData.RelatedCoursesTitle}
         </h2>
         <h1 className={Styles.bigTitle}>
-          {AllCourcesCardData.OurCoursesHeading}
+          {AllCourcesCardData.RelatedCoursesHeding}
         </h1>
       </div>
       <div className={Styles.RelatedCoursesCardContainer}>
