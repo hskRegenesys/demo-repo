@@ -85,12 +85,15 @@ const Layout = (props: any) => {
         slugUrl = match[1];
       }
       setSlugUrlData(slugUrl);
-      setClonicalData(canonicalBaseUrl);
+      if (!canonicalBaseUrl.includes("slug")) {
+        setClonicalData(canonicalBaseUrl);
+      }
     } catch (error) {}
   }
   useEffect(() => {
     setCanonicalBaseUrl();
   }, [asPath]);
+
   return (
     <>
       <Head>
