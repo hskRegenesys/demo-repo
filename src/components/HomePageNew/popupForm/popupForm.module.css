@@ -25,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  transition: top 0.8s ease-in-out;
+  transition: top 1s ease-in-out;
 }
 
 .Popup.visible {
@@ -80,7 +80,7 @@
     border-radius: 0px;
     height: auto;
     top: 0;
-    transition: top 5.5s ease-in-out;
+    transition: top 3s ease-in-out;
   }
 
   .Popup.visible {

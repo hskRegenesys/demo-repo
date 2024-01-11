@@ -8,7 +8,8 @@ interface Point {
 
 interface BannerComponentProps {
   page: string | undefined;
-  handleEnrollButtonClick: (videoLink: string) => void;
+  handleEnrollButtonVidio: (videoLink: string) => void;
+  handleEnrollButtonClick: () => void;
 }
 
 type BannerCourseData = {
@@ -29,6 +30,7 @@ interface BannerDataMap {
 
 const BannerWithVideo: React.FC<BannerComponentProps> = ({
   page,
+  handleEnrollButtonVidio,
   handleEnrollButtonClick,
 }) => {
   if (!page) {
@@ -102,7 +104,12 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 />
                 Brochure
               </div>
-              <div className={styles.enrollButton}>Enroll Now!</div>
+              <div
+                className={styles.enrollButton}
+                onClick={handleEnrollButtonClick}
+              >
+                Enroll Now!
+              </div>
             </div>
           </div>
         </div>
@@ -118,7 +125,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               className={styles.playIconContainer}
               onClick={() =>
                 bannerAllData &&
-                handleEnrollButtonClick(bannerAllData.youtubeVideoLink)
+                handleEnrollButtonVidio(bannerAllData.youtubeVideoLink)
               }
             >
               <div className="video-main">

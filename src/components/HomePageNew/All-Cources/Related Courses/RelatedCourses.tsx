@@ -63,7 +63,6 @@ const RelatedCourses: React.FC<RelatedCoursesProps> = ({
   }
 
   const numberOfSlides = coursesData.length;
-  console.log(numberOfSlides);
 
   return (
     <div className={Styles.RelatedCourses}>

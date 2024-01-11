@@ -167,18 +167,29 @@ const DigitalMarketing = (props: any) => {
       />
       <BannerWithVideo
         page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={(videoLink) =>
+        handleEnrollButtonVidio={(videoLink) =>
           YoutubePopupButtonClick(videoLink)
         }
+        handleEnrollButtonClick={handleEnrollButtonClick}
       />
-      <CourseBenefitsCard page={router?.query?.course?.toString()} />
+      <CourseBenefitsCard
+        page={router?.query?.course?.toString()}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
 
       {courseDetails && (
         <>
           {/* /////////new///////// */}
 
-          <ExploreTheCourses page={router?.query?.course?.toString()} />
-          <CareersTransformed />
+          <ExploreTheCourses
+            page={router?.query?.course?.toString()}
+            handleEnrollButtonClick={handleEnrollButtonClick}
+          />
+          <CareersTransformed
+            handleEnrollButtonVidio={(videoLink) =>
+              YoutubePopupButtonClick(videoLink)
+            }
+          />
           <CertificationDR
             handleEnrollButtonClick={handleEnrollButtonClick}
             page={router?.query?.course?.toString()}

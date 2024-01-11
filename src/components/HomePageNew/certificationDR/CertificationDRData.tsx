@@ -166,7 +166,7 @@ const CertificationDRData = {
   },
 
   artificialIntelligenceIntroductory: {
-    title: "Digital Regenesys artificialIntelligenceIntroductory Certificate",
+    title: "Digital Regenesys artificial Intelligence Introductory Certificate",
     heading: "Certification",
     paragraph:
       "Digital Regenesys aims to foster an innovative ecosystem in new-age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
@@ -187,7 +187,7 @@ const CertificationDRData = {
   },
 
   artificialIntelligenceIntermediary: {
-    title: "Digital Regenesys artificialIntelligenceIntermediary Certificate",
+    title: "Digital Regenesys artificial Intelligence Intermediary Certificate",
     heading: "Certification",
     paragraph:
       "Digital Regenesys aims to foster an innovative ecosystem in new-age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
@@ -208,8 +208,7 @@ const CertificationDRData = {
   },
 
   artificialIntelligenceAdvancedApplied: {
-    title:
-      "Digital Regenesys artificialIntelligenceAdvancedApplied Certificate",
+    title: "Digital Regenesys artificial Intelligence Applied Certificate",
     heading: "Certification",
     paragraph:
       "Digital Regenesys aims to foster an innovative ecosystem in new-age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",

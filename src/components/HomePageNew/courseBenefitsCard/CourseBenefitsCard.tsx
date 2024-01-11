@@ -16,9 +16,13 @@ interface MainCourseBenefitsData {
 
 interface Props {
   page?: string;
+  handleEnrollButtonClick: () => void;
 }
 
-const CourseBenefitsCard: React.FC<Props> = ({ page }) => {
+const CourseBenefitsCard: React.FC<Props> = ({
+  page,
+  handleEnrollButtonClick,
+}) => {
   if (page === undefined) {
     return null;
   }
@@ -98,7 +102,12 @@ const CourseBenefitsCard: React.FC<Props> = ({ page }) => {
           </div>
         ))}
       </div>
-      <button className={styles.enrollNowButton}>Enroll Now</button>
+      <button
+        className={styles.enrollNowButton}
+        onClick={handleEnrollButtonClick}
+      >
+        Enroll Now
+      </button>
     </div>
   );
 };

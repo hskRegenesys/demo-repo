@@ -22,9 +22,15 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
   useEffect(() => {
     if (isVisible) {
       setIsPopupVisible(true);
+      document.body.style.overflow = "hidden"; // Prevent scrolling on the body
     } else {
       setIsPopupVisible(false);
+      document.body.style.overflow = ""; // Restore scrolling on the body
     }
+
+    return () => {
+      document.body.style.overflow = ""; // Ensure scrolling is restored on unmount
+    };
   }, [isVisible]);
 
   return (

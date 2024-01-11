@@ -25,6 +25,17 @@ const AllCourcesCardData = {
         cardWeek: "15 Weeks",
         cardCount: "45,000+",
         cardTool: "45 Tools",
+        pricingCard: [
+          {
+            price: "$999",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
+        ],
       },
 
       SubCources: [
@@ -37,7 +48,18 @@ const AllCourcesCardData = {
           cardProgram: "Basic Data Science",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
-          cardTool: "30 Tools",
+          cardTool: "45 Tools",
+          pricingCard: [
+            {
+              price: "$999",
+              list: [
+                "10 Weeks",
+                "Live Classes",
+                "Capstone Projects",
+                "International Certification",
+              ],
+            },
+          ],
         },
         {
           id: 1.2,
@@ -59,7 +81,18 @@ const AllCourcesCardData = {
           cardProgram: "Applied Data Science",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "33,000+",
-          cardTool: "30 Tools",
+          cardTool: "45 Tools",
+          pricingCard: [
+            {
+              price: "$999",
+              list: [
+                "10 Weeks",
+                "Live Classes",
+                "Capstone Projects",
+                "International Certification",
+              ],
+            },
+          ],
         },
       ],
     },
@@ -73,7 +106,18 @@ const AllCourcesCardData = {
         cardProgram: "Project Management",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardCount: "32,000+",
-        cardTool: "30 Tools",
+        cardTool: "45 Tools",
+        pricingCard: [
+          {
+            price: "$999",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
+        ],
         cardWeek: "12 Weeks",
       },
     },
@@ -87,7 +131,18 @@ const AllCourcesCardData = {
         cardImg: "./assets/images/HomeNew/CardImg.webp",
         cardWeek: "10 Weeks",
         cardCount: "32,000+",
-        cardTool: "30 Tools",
+        cardTool: "45 Tools",
+        pricingCard: [
+          {
+            price: "$999",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
+        ],
       },
       SubCources: [
         {
@@ -99,7 +154,18 @@ const AllCourcesCardData = {
           cardProgram: "Digital Marketing Fundamental",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
-          cardTool: "30 Tools",
+          cardTool: "45 Tools",
+          pricingCard: [
+            {
+              price: "$999",
+              list: [
+                "10 Weeks",
+                "Live Classes",
+                "Capstone Projects",
+                "International Certification",
+              ],
+            },
+          ],
         },
         {
           id: 3.2,
@@ -124,7 +190,18 @@ const AllCourcesCardData = {
         cardProgram: "Cyber Security",
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardCount: "32,000+",
-        cardTool: "30 Tools",
+        cardTool: "45 Tools",
+        pricingCard: [
+          {
+            price: "$999",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
+        ],
       },
     },
     ArtificialIntelligence: {
@@ -137,7 +214,18 @@ const AllCourcesCardData = {
         cardImg: "./assets/images/HomeNew/CardImg.webp",
         cardWeek: "10 Weeks",
         cardCount: "32,000+",
-        cardTool: "30 Tools",
+        cardTool: "45 Tools",
+        pricingCard: [
+          {
+            price: "$999",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
+        ],
       },
       SubCources: [
         {
@@ -149,7 +237,18 @@ const AllCourcesCardData = {
           cardProgram: "Artificial Intelligence Introduction",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
-          cardTool: "30 Tools",
+          cardTool: "45 Tools",
+          pricingCard: [
+            {
+              price: "$999",
+              list: [
+                "10 Weeks",
+                "Live Classes",
+                "Capstone Projects",
+                "International Certification",
+              ],
+            },
+          ],
         },
         {
           id: 5.2,
@@ -171,7 +270,18 @@ const AllCourcesCardData = {
           cardProgram: "Artificial Intelligence Advance",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "33,000+",
-          cardTool: "30 Tools",
+          cardTool: "45 Tools",
+          pricingCard: [
+            {
+              price: "$999",
+              list: [
+                "10 Weeks",
+                "Live Classes",
+                "Capstone Projects",
+                "International Certification",
+              ],
+            },
+          ],
         },
       ],
     },

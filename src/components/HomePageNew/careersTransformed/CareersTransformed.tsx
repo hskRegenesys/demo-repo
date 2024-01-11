@@ -25,6 +25,10 @@ interface SwiperCardData {
   companyFirstRoleImg: string;
   companySecondRoleImg: string;
   playImg: string;
+  StudentVidio: string;
+}
+interface CareersTransformedProps {
+  handleEnrollButtonVidio: (videoLink: string) => void;
 }
 
 interface MainCourseData {
@@ -34,7 +38,9 @@ interface MainCourseData {
   swiperCardContainer: SwiperCardData[];
 }
 
-const CareersTransformed: React.FC = () => {
+const CareersTransformed: React.FC<CareersTransformedProps> = ({
+  handleEnrollButtonVidio,
+}) => {
   const mainCourseData: MainCourseData = careersTransformedData;
 
   const {
@@ -114,7 +120,12 @@ const CareersTransformed: React.FC = () => {
                   </div>
                   <p className={Styles.increment}>Increment in salary</p>
                 </div>
-                <div className={Styles.playVideo}>
+                <div
+                  className={Styles.playVideo}
+                  onClick={() =>
+                    handleEnrollButtonVidio(swiperCard.StudentVidio)
+                  }
+                >
                   <div className={Styles.Vidio}>
                     <img src={swiperCard.playImg} alt="Rise" />
                   </div>

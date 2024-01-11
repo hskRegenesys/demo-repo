@@ -8,6 +8,7 @@ interface Point {
 
 interface BannerComponentProps {
   page: string | undefined;
+  handleEnrollButtonClick: () => void;
 }
 
 type BannerCourseData = {
@@ -24,7 +25,10 @@ interface BannerDataMap {
   [key: string]: BannerCourseData;
 }
 
-const BannerComponent: React.FC<BannerComponentProps> = ({ page }) => {
+const BannerComponent: React.FC<BannerComponentProps> = ({
+  page,
+  handleEnrollButtonClick,
+}) => {
   if (!page) {
     return null;
   }
@@ -85,7 +89,12 @@ const BannerComponent: React.FC<BannerComponentProps> = ({ page }) => {
                 />
                 Brochure
               </div>
-              <div className={styles.enrollButton}>Enroll Now!</div>
+              <div
+                className={styles.enrollButton}
+                onClick={handleEnrollButtonClick}
+              >
+                Enroll Now!
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
-// YoutubeVidioPopup.tsx
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Styles from "./YoutubeVidioPopup.module.css";
 
 interface YoutubeVidioPopupProps {
@@ -13,46 +12,50 @@ const YoutubeVidioPopup: React.FC<YoutubeVidioPopupProps> = ({
   onClose,
   youtubeVideoLink,
 }) => {
-  const [isYoutubePopupVisible, setIsYoutubePopupVisible] = useState(false);
+  const popupRef = useRef<HTMLDivElement>(null);
 
   const closePopup = () => {
-    setIsYoutubePopupVisible(false);
     onClose();
   };
 
+  const handleOutsideClick = (e: MouseEvent) => {
+    if (popupRef.current && !popupRef.current.contains(e.target as Node)) {
+      onClose();
+    }
+  };
+
   useEffect(() => {
-    setIsYoutubePopupVisible(isVisibleVidio);
+    if (isVisibleVidio) {
+      document.body.style.overflow = "hidden"; // Prevent scrolling on the body
+      document.addEventListener("mousedown", handleOutsideClick);
+    } else {
+      document.body.style.overflow = ""; // Restore scrolling on the body
+      document.removeEventListener("mousedown", handleOutsideClick);
+    }
+
+    return () => {
+      document.body.style.overflow = ""; // Ensure scrolling is restored on unmount
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
   }, [isVisibleVidio]);
 
   return (
     <>
       {isVisibleVidio && (
         <div
-          className={`${Styles.PopupContainer} ${
-            isYoutubePopupVisible ? Styles.visible : ""
-          }`}
+          className={`${Styles.PopupContainer} ${Styles.visible}`}
           style={{
-            backgroundColor: isYoutubePopupVisible
-              ? "rgba(0, 0, 0, 0.5)"
-              : "white",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
           }}
         >
-          <div
-            className={`${Styles.Popup} ${
-              isYoutubePopupVisible ? Styles.visible : ""
-            }`}
-          >
-            <span className={Styles.CloseButton} onClick={closePopup}>
-              &times;
-            </span>
+          <div className={`${Styles.Popup} ${Styles.visible}`} ref={popupRef}>
             <div className={Styles.videoPopup}>
               <span className={Styles.CloseButton} onClick={closePopup}>
                 &times;
               </span>
               <iframe
-                title="YouTube Video Popup"
-                width="700"
-                height="420"
+                className={Styles.iFrame}
+                allow="autoplay; encrypted-media"
                 src={youtubeVideoLink}
               ></iframe>
             </div>

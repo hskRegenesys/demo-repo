@@ -36,6 +36,8 @@ const careersTransformedData = {
       secondRole: "Research Scientist",
       companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
       companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      StudentVidio:
+        "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
     },
     {
       playImg: "/assets/images/HomeNew/Polygon.svg",
@@ -49,6 +51,8 @@ const careersTransformedData = {
       secondRole: "Research Scientist",
       companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
       companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      StudentVidio:
+        "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
     },
     {
       playImg: "/assets/images/HomeNew/Polygon.svg",
@@ -62,6 +66,8 @@ const careersTransformedData = {
       secondRole: "Research Scientist",
       companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
       companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      StudentVidio:
+        "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
     },
     // Repeat the above structure for additional swiper cards
   ],

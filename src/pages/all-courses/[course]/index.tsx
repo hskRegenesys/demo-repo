@@ -28,6 +28,7 @@ import CertificationDR from "@/components/HomePageNew/certificationDR/Certificat
 import BannerComponent from "@/components/HomePageNew/Banner/BannerwithImg/BannerwithImg";
 import { Breadcrumbs } from "@mui/material";
 import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
+import YoutubeVidioPopup from "@/components/HomePageNew/YoutubeVidioPopup/YoutubeVidioPopup";
 
 const BreadcrumbsDR = dynamic(
   () => import("@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR")
@@ -42,6 +43,8 @@ const Course = (props: any) => {
   const pageName = router?.query?.course?.toString().replace("-", " ");
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
+  const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -58,10 +61,27 @@ const Course = (props: any) => {
 
     return () => clearTimeout(timeoutModal);
   }, []);
+
+  const YoutubePopupButtonClick = (videoLink: string) => {
+    setIsisYoutubePopup(true);
+    setYoutubeVideoLink(videoLink);
+  };
+
+  const handleYoutubePopupClose = () => {
+    setIsisYoutubePopup(false);
+  };
+
   return (
     <>
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+      )}
+      {isYoutubePopup && (
+        <YoutubeVidioPopup
+          isVisibleVidio={isYoutubePopup}
+          youtubeVideoLink={youtubeVideoLink}
+          onClose={handleYoutubePopupClose}
+        />
       )}
       <Style />
       {/* <HeaderOne pageTitle={props?.course} />
@@ -79,10 +99,23 @@ const Course = (props: any) => {
         parent="All courses"
         parentHref="/all-courses"
       />
-      <BannerComponent page={router?.query?.course?.toString()} />
-      <CourseBenefitsCard page={router?.query?.course?.toString()} />
-      <ExploreTheCourses page={router?.query?.course?.toString()} />
-      <CareersTransformed />
+      <BannerComponent
+        page={router?.query?.course?.toString()}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <CourseBenefitsCard
+        page={router?.query?.course?.toString()}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <ExploreTheCourses
+        page={router?.query?.course?.toString()}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <CareersTransformed
+        handleEnrollButtonVidio={(videoLink) =>
+          YoutubePopupButtonClick(videoLink)
+        }
+      />
       <CertificationDR
         handleEnrollButtonClick={handleEnrollButtonClick}
         page={router?.query?.course?.toString()}
