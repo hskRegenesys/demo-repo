@@ -6,6 +6,7 @@ const GoogleMapData = {
     SAMapDetails: {
       countryName: "South Africa",
       campusImage: "/assets/images/background/campusImageSA.webp",
+
       corporateOfficeName: "South Africa Corporate Office",
       address: "165 West Street, Sandton, Johannesburg South Africa, 2031",
     },
@@ -40,6 +41,20 @@ const GoogleMapData = {
       campusImage: "/assets/images/background/campusImageCroatia.webp",
       corporateOfficeName: "Croatia Corporate Office",
       address: " sv. Bartula 131, 23000 Kozino, Zadar, Croatia",
+    },
+    TZMapDetails: {
+      countryName: "Tanzania",
+      campusImage: "/assets/images/background/campusImageCroatia.webp",
+      corporateOfficeName: "Tanzania Corporate Office",
+      address:
+        " 102, First Floor, Regus, Acacia Estates Offices, Plot No. 84, Kinondoni Rd, Dar es Salaam 14110",
+    },
+    UGMapDetails: {
+      countryName: "Uganda",
+      campusImage: "/assets/images/background/campusImageCroatia.webp",
+      corporateOfficeName: "Uganda Corporate Office",
+      address:
+        " Regus, 4th floor The Acacia Mall, 14-18 Cooper Road, Off Acacia Ave, Kampala, Uganda",
     },
   },
 };
