@@ -20543,6 +20543,11 @@ h2.highlight {
 .map-marker-sa {
   position: relative;
 }
+.map-marker-row-sa.hover-details {
+  position: absolute;
+  left: 34%;
+  border-bottom: 0%;
+}
 .map-marker-row-ke {
   position: absolute;
   bottom: 36%;
@@ -20591,6 +20596,31 @@ h2.highlight {
 .map-marker-kro {
   position: relative;
 }
+
+.map-marker-row-tz {
+  position: absolute;
+  bottom: 31%;
+  top: auto;
+  left: 45%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
+}
+.map-marker-tz {
+  position: relative;
+}
+.map-marker-row-ug {
+  position: absolute;
+  bottom: 45%;
+  top: auto;
+  left: 45%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
+}
+.map-marker-tz {
+  position: relative;
+}
 .map-marker-row-usa {
   position: absolute;
   bottom: 52%;
@@ -20635,17 +20665,30 @@ h2.highlight {
   visibility: hidden;
   position: absolute;
   z-index: 999;
-  top: -176px;
+  top: -156px;
   left: 0px;
 }
 .hover-details img {
   border: none;
   max-width: 120px !important;
 }
-/* .map-marker-row-in .hover-details {
-  top: -156px;
+.map-marker-row-in .hover-details {
+  top: -135px !important;
   left: 0px;
-} */
+}
+.map-marker-row-sa .hover-details {
+  top: -106px !important;
+  left: 0px;
+}
+.map-marker-row-tz .hover-details {
+  top: -106px !important;
+  left: 0px;
+  z-index: 10;
+}
+.map-marker-row-ng .hover-details {
+  top: -106px !important;
+  left: 0px;
+}
 .map-marker-text:hover + .hover-details {
   visibility: visible;
 }
@@ -20870,7 +20913,7 @@ h2.highlight {
     width: 250px;
   }
   .map-marker-row-sa .hover-details {
-    top: -104px;
+    top: -64px;
     left: -102px;
     padding: 5px;
     width: 250px;
@@ -21048,6 +21091,18 @@ h2.highlight {
     width: 250px;
   }
   .map-marker-row-kro .hover-details {
+    top: -113px;
+    left: -92px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-tz .hover-details {
+    top: -113px;
+    left: -92px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ug .hover-details {
     top: -113px;
     left: -92px;
     padding: 5px;
