@@ -20548,6 +20548,11 @@ h2.highlight {
 .map-marker-sa {
   position: relative;
 }
+.map-marker-row-sa.hover-details {
+  position: absolute;
+  left: 34%;
+  border-bottom: 0%;
+}
 .map-marker-row-ke {
   position: absolute;
   bottom: 36%;
@@ -20596,6 +20601,31 @@ h2.highlight {
 .map-marker-kro {
   position: relative;
 }
+
+.map-marker-row-tz {
+  position: absolute;
+  bottom: 31%;
+  top: auto;
+  left: 45%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 5;
+}
+.map-marker-tz {
+  position: relative;
+}
+.map-marker-row-ug {
+  position: absolute;
+  bottom: 45%;
+  top: auto;
+  left: 45%;
+  transform: translate(50%, 50%);
+  right: auto;
+  z-index: 0;
+}
+.map-marker-tz {
+  position: relative;
+}
 .map-marker-row-usa {
   position: absolute;
   bottom: 52%;
@@ -20640,17 +20670,51 @@ h2.highlight {
   visibility: hidden;
   position: absolute;
   z-index: 999;
-  top: -176px;
+  top: -156px;
   left: 0px;
 }
 .hover-details img {
   border: none;
   max-width: 120px !important;
 }
-/* .map-marker-row-in .hover-details {
-  top: -156px;
+.map-marker-row-in .hover-details {
+  top: -135px !important;
   left: 0px;
-} */
+  z-index: 0;
+}
+.map-marker-row-sa .hover-details {
+  top: -106px !important;
+  left: 0px;
+}
+.map-marker-row-tz .hover-details {
+  top: -106px !important;
+  left: 0px;
+  z-index: 10;
+}
+.map-marker-row-ug .hover-details {
+  top: -106px !important;
+  left: 0px;
+  z-index: 10;
+}
+.map-marker-row-kro .hover-details {
+  top: -106px !important;
+  left: 0px;
+  z-index: 10;
+}
+.map-marker-row-usa .hover-details {
+  top: -106px !important;
+  left: 0px;
+  z-index: 10;
+}
+.map-marker-row-ke .hover-details {
+  top: -125px !important;
+  left: 0px;
+  z-index: 15;
+}
+.map-marker-row-ng .hover-details {
+  top: -106px !important;
+  left: 0px;
+}
 .map-marker-text:hover + .hover-details {
   visibility: visible;
 }
@@ -20830,7 +20894,7 @@ h2.highlight {
     transform: scale(1.2);
   }
   .map-marker-text p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .stickyRow {
     display: none;
@@ -20875,7 +20939,7 @@ h2.highlight {
     width: 250px;
   }
   .map-marker-row-sa .hover-details {
-    top: -104px;
+    top: -64px;
     left: -102px;
     padding: 5px;
     width: 250px;
@@ -20991,7 +21055,7 @@ h2.highlight {
   .google-map-image {
     position: relative;
     width: 100%;
-    max-width: 320px;
+
     margin: 0 auto;
   }
   .map-marker-text img {
@@ -20999,65 +21063,93 @@ h2.highlight {
   }
 
   .map-marker-row-sa {
-    bottom: 18%;
-    left: 32%;
-  }
-  .map-marker-row-usa {
-    bottom: 60%;
-    left: -10px;
-  }
-  .map-marker-row-ng {
-    bottom: 41%;
-    left: 31%;
+    bottom: 15%;
+    left: 40%;
   }
   .map-marker-row-ke {
     bottom: 34%;
-    left: 47%;
+    left: 52%;
   }
   .map-marker-row-in {
-    bottom: 46%;
-    left: 64%;
+    bottom: 41%;
+    left: 68%;
+  }
+  .map-marker-row-ng {
+    bottom: 38%;
+    left: 36%;
+  }
+  .map-marker-row-usa {
+    bottom: 57%;
+    left: -5px;
   }
   .map-marker-row-kro {
     bottom: 62%;
     left: 39%;
   }
+  .map-marker-row-tz {
+    position: absolute;
+    bottom: 28%;
+    top: auto;
+    left: 43%;
+    transform: translate(50%, 50%);
+    right: auto;
+    z-index: 5;
+  }
   .map-marker-row-usa .hover-details {
-    top: -92px;
-    left: -36px;
+    top: -86px !important;
+    left: -18px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-sa .hover-details {
-    top: -104px;
+    top: -74px !important;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ug .hover-details {
+    top: -74px !important;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-tz .hover-details {
+    top: -74px !important;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-kro .hover-details {
+    top: -74px !important;
     left: -102px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-ng .hover-details {
-    top: -113px;
+    top: -74px !important;
     left: -92px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-ke .hover-details {
-    top: -132px;
+    top: -74px !important;
     left: -131px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-in .hover-details {
-    top: -118px;
-    left: -169px;
+    top: -74px !important;
+    left: -190px;
     padding: 5px;
     width: 250px;
   }
-  .map-marker-row-kro .hover-details {
-    top: -113px;
-    left: -92px;
-    padding: 5px;
-    width: 250px;
+  .map-marker-row-ug {
+    position: absolute;
+    bottom: 45%;
+    top: auto;
+    left: 45%;
   }
+
   .campus-image img {
     width: 130px !important;
   }
@@ -21071,43 +21163,66 @@ h2.highlight {
 }
 
 @media (max-width: 499.98px) {
+  .overflow-map {
+    overflow: auto;
+    padding: 15px;
+    width: 500px;
+  }
   .google-map-image {
     position: relative;
     width: 100%;
-    max-width: 320px;
     margin: 0 auto;
+    max-width: 100%;
   }
   .map-marker-text img {
     width: 12px !important;
   }
 
   .map-marker-row-usa .hover-details {
-    top: -104px;
+    top: -86px !important;
     left: -18px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-sa .hover-details {
-    top: -104px;
+    top: -74px !important;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-ug .hover-details {
+    top: -74px !important;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-tz .hover-details {
+    top: -74px !important;
+    left: -102px;
+    padding: 5px;
+    width: 250px;
+  }
+  .map-marker-row-kro .hover-details {
+    top: -74px !important;
     left: -102px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-ng .hover-details {
-    top: -113px;
+    top: -74px !important;
     left: -92px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-ke .hover-details {
-    top: -132px;
+    top: -74px !important;
     left: -131px;
     padding: 5px;
     width: 250px;
   }
   .map-marker-row-in .hover-details {
-    top: -118px;
-    left: -169px;
+    top: -74px !important;
+    left: -190px;
     padding: 5px;
     width: 250px;
   }

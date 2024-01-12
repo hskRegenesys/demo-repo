@@ -79,6 +79,16 @@ export const mainFooter = {
       fullAddress:
         "Proxima Building, \n Unit 1101 11th Floor, \n Plot 19,Sector 30A, Vashi \n Navi Mumbai, India, 400705",
     },
+    {
+      addressTitle: "Tanzania Corporate Office",
+      fullAddress:
+        "102, First Floor, Regus, \n Acacia Estates Offices, \n Plot No. 84  Kinondoni Rd,\n Dar es Salaam 14110",
+    },
+    {
+      addressTitle: "Uganda Corporate Office",
+      fullAddress:
+        "Regus, 4th floor \n The Acacia Mall  14-18 \n Cooper Road,  Off Acacia Ave,\n Kampala, Uganda",
+    },
   ],
   socials: [
     {
