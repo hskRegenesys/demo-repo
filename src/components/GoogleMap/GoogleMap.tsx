@@ -48,14 +48,14 @@ const GoogleMap = () => {
                       <Image
                         src={locationPin}
                         layout="intrinsic"
-                        width="20"
-                        height="32"
+                        width="15"
+                        height="24"
                         alt=""
                       />
                       <p>{countryMapDetails?.SAMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      <div className="campus-image">
+                      {/* <div className="campus-image">
                         <Image
                           src={countryMapDetails?.SAMapDetails?.campusImage}
                           layout="intrinsic"
@@ -64,7 +64,7 @@ const GoogleMap = () => {
                           objectFit="cover"
                           alt=""
                         />
-                      </div>
+                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.SAMapDetails?.corporateOfficeName}
@@ -80,14 +80,14 @@ const GoogleMap = () => {
                       <Image
                         src={locationPin}
                         layout="intrinsic"
-                        width="20"
-                        height="32"
+                        width="15"
+                        height="24"
                         alt=""
                       />
                       <p>{countryMapDetails?.KEMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      <div className="campus-image">
+                      {/* <div className="campus-image">
                         <Image
                           src={countryMapDetails?.KEMapDetails?.campusImage}
                           layout="intrinsic"
@@ -96,7 +96,7 @@ const GoogleMap = () => {
                           objectFit="cover"
                           alt=""
                         />
-                      </div>
+                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.KEMapDetails?.corporateOfficeName}
@@ -112,14 +112,14 @@ const GoogleMap = () => {
                       <Image
                         src={locationPin}
                         layout="intrinsic"
-                        width="20"
-                        height="32"
+                        width="15"
+                        height="24"
                         alt=""
                       />
                       <p>{countryMapDetails?.INMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      <div className="campus-image">
+                      {/* <div className="campus-image">
                         <Image
                           src={countryMapDetails?.INMapDetails?.campusImage}
                           layout="intrinsic"
@@ -128,7 +128,7 @@ const GoogleMap = () => {
                           objectFit="cover"
                           alt=""
                         />
-                      </div>
+                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.INMapDetails?.corporateOfficeName}
@@ -144,14 +144,14 @@ const GoogleMap = () => {
                       <Image
                         src={locationPin}
                         layout="intrinsic"
-                        width="20"
-                        height="32"
+                        width="15"
+                        height="24"
                         alt=""
                       />
                       <p>{countryMapDetails?.NGMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      <div className="campus-image">
+                      {/* <div className="campus-image">
                         <Image
                           src={countryMapDetails?.NGMapDetails?.campusImage}
                           layout="intrinsic"
@@ -160,7 +160,7 @@ const GoogleMap = () => {
                           objectFit="cover"
                           alt=""
                         />
-                      </div>
+                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.NGMapDetails?.corporateOfficeName}
@@ -176,14 +176,14 @@ const GoogleMap = () => {
                       <Image
                         src={locationPin}
                         layout="intrinsic"
-                        width="20"
-                        height="32"
+                        width="15"
+                        height="24"
                         alt=""
                       />
                       <p>{countryMapDetails?.USAMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      <div className="campus-image">
+                      {/* <div className="campus-image">
                         <Image
                           src={countryMapDetails?.USAMapDetails?.campusImage}
                           layout="intrinsic"
@@ -192,7 +192,7 @@ const GoogleMap = () => {
                           objectFit="cover"
                           alt=""
                         />
-                      </div>
+                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {
@@ -211,14 +211,14 @@ const GoogleMap = () => {
                       <Image
                         src={locationPin}
                         layout="intrinsic"
-                        width="20"
-                        height="32"
+                        width="15"
+                        height="24"
                         alt=""
                       />
                       <p>{countryMapDetails?.KROMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      <div className="campus-image">
+                      {/* <div className="campus-image">
                         <Image
                           src={countryMapDetails?.KROMapDetails?.campusImage}
                           layout="intrinsic"
@@ -227,7 +227,7 @@ const GoogleMap = () => {
                           objectFit="cover"
                           alt=""
                         />
-                      </div>
+                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {
@@ -236,6 +236,71 @@ const GoogleMap = () => {
                           }
                         </h6>
                         <p>{countryMapDetails?.KROMapDetails?.address}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="map-marker-row-tz">
+                  <div className="map-marker-kro text-center">
+                    <div className="map-marker-text">
+                      <Image
+                        src={locationPin}
+                        layout="intrinsic"
+                        width="15"
+                        height="24"
+                        alt=""
+                      />
+                      <p>{countryMapDetails?.TZMapDetails?.countryName}</p>
+                    </div>
+                    <div className="hover-details">
+                      {/* <div className="campus-image">
+                        <Image
+                          src={countryMapDetails?.TZMapDetails?.campusImage}
+                          layout="intrinsic"
+                          width="280"
+                          height="300"
+                          objectFit="cover"
+                          alt=""
+                        />
+                      </div> */}
+                      <div className="campus-details">
+                        <h6>
+                          {countryMapDetails?.TZMapDetails?.corporateOfficeName}
+                        </h6>
+                        <p>{countryMapDetails?.TZMapDetails?.address}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="map-marker-row-ug">
+                  <div className="map-marker-kro text-center">
+                    <div className="map-marker-text">
+                      <Image
+                        src={locationPin}
+                        layout="intrinsic"
+                        width="15"
+                        height="24"
+                        alt=""
+                      />
+                      <p>{countryMapDetails?.UGMapDetails?.countryName}</p>
+                    </div>
+                    <div className="hover-details">
+                      {/* <div className="campus-image">
+                        <Image
+                          src={countryMapDetails?.TZMapDetails?.campusImage}
+                          layout="intrinsic"
+                          width="280"
+                          height="300"
+                          objectFit="cover"
+                          alt=""
+                        />
+                      </div> */}
+                      <div className="campus-details">
+                        <h6>
+                          {countryMapDetails?.UGMapDetails?.corporateOfficeName}
+                        </h6>
+                        <p>{countryMapDetails?.UGMapDetails?.address}</p>
                       </div>
                     </div>
                   </div>
