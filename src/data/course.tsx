@@ -377,6 +377,320 @@ export const courseData = {
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
+  SE: {
+    processOne: [
+      {
+        id: 1,
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+        title: "Certification Programme in Software Engineering",
+        text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
+        lists: [
+          "10 Weeks Course",
+          "Live Sessions",
+          "Career Counselling",
+          "Guaranteed Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Revolutionise your career with future-ready skills",
+      text1:
+        "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1: "Get exposure to Yammer, Excel, Discord, and Slack",
+
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
+
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+
+      subTitle4: "Tools usage",
+      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    courseTools: [
+      "pm/project-management-tools1.webp",
+      "pm/project-management-tools2.webp",
+      "pm/project-management-tools3.webp",
+      "pm/project-management-tools4.webp",
+    ],
+    courseCertificate: {
+      certificateTitle:
+        "Leading with Excellence: Project Management Certificate Course",
+      certificateSubTitle:
+        "Earn a Project Management Certificate from Digital Regenesys & Navigate the Project Management Landscape",
+      certificateSubSubTitle:
+        "With our Project Management programme, you will gain a solid foundation in project management principles to stay ahead in the competition by working on projects, simulations, and cases.        ",
+      certificateListTitle:
+        "With Project Management Certificate, you will get: ",
+
+      certificateSkillList: [
+        "International Recognition",
+        "Comprehensive Project Management Knowledge",
+        "Project Management Tools and Techniques",
+        "Project Scope and Quality Management",
+      ],
+      certificateListPara:
+        " Our Advance Digital Marketing Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+      certificateRolesList: [
+        "Project Manager",
+        "Consulting Project Manager ",
+        "Event Project Manager",
+        "Project Coordinator and many more",
+      ],
+      CertificateImage: ["PM_certificate.webp"],
+      imageName: "PM_certificate",
+    },
+
+    featureSeven: {
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
+      features: [
+        {
+          id: 1,
+          image: "Dennis-Laxton.webp",
+          title: "Dr. Dennis Laxton ",
+          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
+          designation: "Academic Team Leader and Senior Lecturer",
+        },
+        {
+          id: 2,
+          image: "James_forson.webp",
+          title: "James Forson",
+          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
+          designation: "BSocSc (Hons)",
+        },
+      ],
+    },
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Week 1",
+            lists: ["Introduction to Project Management", "Project Profiling"],
+          },
+          {
+            id: 2,
+            title: "Week 2",
+            lists: ["Developing Team Capabilities"],
+          },
+          {
+            id: 3,
+            title: "Week 3",
+            lists: ["Planning and Managing"],
+          },
+          {
+            id: 4,
+            title: "Week 4",
+            lists: ["Time Management"],
+          },
+          {
+            id: 5,
+            title: "Week 5",
+            lists: ["Monitoring and Reporting", "Quality Management"],
+          },
+          {
+            id: 6,
+            title: "Week 6",
+            lists: ["Project Closure"],
+          },
+          {
+            id: 7,
+            title: "Week 7",
+            lists: ["Change Management", "Disaster Management"],
+          },
+          {
+            id: 8,
+            title: "Week 8",
+            lists: [
+              "International Project Management",
+              "Software for Project Management - (Microsoft Project Plan- MPP)",
+            ],
+          },
+          {
+            id: 9,
+            title: "Week 9",
+            lists: ["Design Thinking"],
+          },
+          {
+            id: 10,
+            title: "Week 10",
+            lists: ["Contracts and Agreement", "Industry Expert Session"],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    faqsSection: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "How This Course Will Help Me In My Career?",
+            text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
+          },
+          {
+            id: 2,
+            title: "Will Digital Regenesys Offer Me Job Assistance?",
+            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+          },
+          {
+            id: 3,
+            title: "What Are The Modes Of Payment Available For Me?",
+            text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+          },
+          {
+            id: 4,
+            title:
+              "For How Long Will I Be Able To Access The Content After My Course Completion?",
+            text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+          },
+          {
+            id: 5,
+            title: "Is This A Certified Course?",
+            text: "Yes, all the courses are certified by the Regenesys Business School.",
+          },
+          {
+            id: 6,
+            title:
+              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+          },
+          {
+            id: 7,
+            title:
+              "How Will I Get Access To The Assignments And Learning Content?",
+            text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+          },
+          {
+            id: 8,
+            title: "What If The Course Timings Don't Match My Work Timings?",
+            text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
+          ],
+        },
+
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Project Management certificate",
+      certifiedText1:
+        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
+      certifiedTitle2: "Share Your Achievement",
+
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    modalImage: "Pop-up_bg.webp",
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+    stickyText:
+      "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
+
   //Cybersecurity
   // CS: {
   //   processOne: [
