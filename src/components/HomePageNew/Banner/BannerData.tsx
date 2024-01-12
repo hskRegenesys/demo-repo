@@ -38,7 +38,7 @@ const BannerData = {
   },
   appliedDataScience: {
     BannerImgDesktop: "/assets/images/HomeNew/BannersImg/Banner-Example.png",
-    coursePageName: "DataScience",
+    coursePageName: "Applied DataScience",
     topSectionPoint1: "BESTSELLER",
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:

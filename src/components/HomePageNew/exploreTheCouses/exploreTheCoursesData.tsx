@@ -5,10 +5,11 @@ const exploreTheCoursesData = {
     bigHeading: "Let’s Dive More Into Digital Marketing",
     sideHeadings: [
       { text: "Course Overview", contentId: "content1" },
+
       { text: "", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Levels To Choose From", contentId: "content5" },
     ],
     sideContents: {
       content1: {
@@ -90,24 +91,11 @@ const exploreTheCoursesData = {
         ],
       },
       content4: {
-        contentHeading: "Pricing Across the Courses",
+        contentHeading: "Levels To Choose From",
 
-        pricingCard: [
+        LevelCard: [
           {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
+            courseName: "Basic",
             tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
             frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
             list: [
@@ -117,8 +105,17 @@ const exploreTheCoursesData = {
               "International Certification",
             ],
           },
-
-          // Additional pricing options as needed
+          {
+            courseName: "Advance",
+            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
+            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
         ],
       },
     },
@@ -128,13 +125,37 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of digitalMarketingFundamentals with Us!",
     bigHeading: "Let’s Dive More Into digitalMarketingFundamentals",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -177,36 +198,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -239,6 +231,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },
@@ -250,13 +272,38 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of digitalMarketingAdvanced with Us!",
     bigHeading: "Let’s Dive More Into digitalMarketingAdvanced",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -299,36 +346,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -361,6 +379,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },
@@ -376,7 +424,7 @@ const exploreTheCoursesData = {
       { text: "", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Levels To Choose From", contentId: "content5" },
     ],
     sideContents: {
       content1: {
@@ -446,24 +494,11 @@ const exploreTheCoursesData = {
         ],
       },
       content4: {
-        contentHeading: "Pricing Across the Courses",
+        contentHeading: "Levels To Choose From",
 
-        pricingCard: [
+        LevelCard: [
           {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
+            courseName: "Basic",
             tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
             frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
             list: [
@@ -474,8 +509,18 @@ const exploreTheCoursesData = {
             ],
           },
           {
-            courseName: "Digital Marketing",
-            price: "$999",
+            courseName: "Intermedate",
+            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
+            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
+          {
+            courseName: "Advance",
             tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
             frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
             list: [
@@ -494,13 +539,38 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of basicDataScience with Us!",
     bigHeading: "Let’s Dive More Into basicDataScience",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -543,36 +613,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -605,6 +646,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },
@@ -617,13 +688,38 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of advancedDataScience with Us!",
     bigHeading: "Let’s Dive More Into advancedDataScience",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -666,36 +762,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -728,6 +795,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },
@@ -739,13 +836,38 @@ const exploreTheCoursesData = {
     smallHeading: "Explore the World of appliedDataScience with Us!",
     bigHeading: "Let’s Dive More Into appliedDataScience",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -788,36 +910,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -850,6 +943,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },
@@ -862,10 +985,11 @@ const exploreTheCoursesData = {
     bigHeading: "Let’s Dive More Into cyberSecurity",
     sideHeadings: [
       { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
       content1: {
@@ -934,48 +1058,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          // Additional pricing options as needed
-        ],
-      },
+
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -1011,6 +1094,36 @@ const exploreTheCoursesData = {
           },
         ],
       },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+        ],
+      },
     },
   },
 
@@ -1020,10 +1133,11 @@ const exploreTheCoursesData = {
     bigHeading: "Let’s Dive More Into artificialIntelligence",
     sideHeadings: [
       { text: "Course Overview", contentId: "content1" },
+
       { text: "", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Levels To Choose From", contentId: "content5" },
     ],
     sideContents: {
       content1: {
@@ -1093,14 +1207,13 @@ const exploreTheCoursesData = {
         ],
       },
       content4: {
-        contentHeading: "Pricing Across the Courses",
+        contentHeading: "Levels To Choose From",
 
-        pricingCard: [
+        LevelCard: [
           {
-            courseName: "Digital Marketing",
+            courseName: "Basic",
             tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
             frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
             list: [
               "10 Weeks",
               "Live Classes",
@@ -1109,8 +1222,18 @@ const exploreTheCoursesData = {
             ],
           },
           {
-            courseName: "Digital Marketing",
-            price: "$999",
+            courseName: "Intermedate",
+            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
+            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
+            list: [
+              "10 Weeks",
+              "Live Classes",
+              "Capstone Projects",
+              "International Certification",
+            ],
+          },
+          {
+            courseName: "Advance",
             tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
             frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
             list: [
@@ -1131,13 +1254,38 @@ const exploreTheCoursesData = {
       "Explore the World of artificialIntelligenceIntroductory with Us!",
     bigHeading: "Let’s Dive More Into artificialIntelligenceIntroductory",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -1180,36 +1328,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -1242,6 +1361,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },
@@ -1254,13 +1403,38 @@ const exploreTheCoursesData = {
       "Explore the World of artificialIntelligenceIntermediary with Us!",
     bigHeading: "Let’s Dive More Into artificialIntelligenceIntermediary",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -1303,36 +1477,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -1365,6 +1510,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },
@@ -1377,13 +1552,37 @@ const exploreTheCoursesData = {
       "Explore the World of artificialIntelligenceAdvancedApplied with Us!",
     bigHeading: "Let’s Dive More Into artificialIntelligenceAdvancedApplied",
     sideHeadings: [
-      { text: "", contentId: "content1" },
+      { text: "Course Overview", contentId: "content1" },
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
+      content1: {
+        contentHeading: "Course Overview",
+        contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+        contentText:
+          "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+        contentCard: [
+          {
+            icon: "/assets/images/HomeNew/Live Call.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Award.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Counselling.svg",
+            text: "Live Classes",
+          },
+          {
+            icon: "/assets/images/HomeNew/Experts.svg",
+            text: "Live Classes",
+          },
+        ],
+      },
       content2: {
         contentHeading: "Tools Covered in this Course",
         cardTools: [
@@ -1426,36 +1625,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Pricing Across the Courses",
 
-        pricingCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            price: "$999",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
@@ -1491,6 +1661,36 @@ const exploreTheCoursesData = {
           },
         ],
       },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+        ],
+      },
     },
   },
 
@@ -1500,10 +1700,11 @@ const exploreTheCoursesData = {
     bigHeading: "Let’s Dive More Into productManagement",
     sideHeadings: [
       { text: "Course Overview", contentId: "content1" },
+
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
-      { text: "Pricing Across the Courses", contentId: "content5" },
+      { text: "Pricing Across the Countries", contentId: "content6" },
     ],
     sideContents: {
       content1: {
@@ -1573,14 +1774,13 @@ const exploreTheCoursesData = {
         ],
       },
       content4: {
-        contentHeading: "Pricing Across the Courses",
+        contentHeading: "Levels To Choose From",
 
-        pricingCard: [
+        LevelCard: [
           {
             courseName: "Digital Marketing",
             tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
             frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            price: "$999",
             list: [
               "10 Weeks",
               "Live Classes",
@@ -1590,7 +1790,6 @@ const exploreTheCoursesData = {
           },
           {
             courseName: "Digital Marketing",
-            price: "$999",
             tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
             frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
             list: [
@@ -1645,6 +1844,36 @@ const exploreTheCoursesData = {
               "Security policies and procedures",
               "Security policies and procedures",
             ],
+          },
+        ],
+      },
+      content6: {
+        ContentHeding: "Pricing Across the Countries",
+        PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+        durationIcon: "/assets/images/HomeNew/timer.svg",
+        EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+        contraryPricingCard: [
+          {
+            contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+            contaryName: "SouthAfrica",
+            price: "R 2500",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/kenya.svg",
+
+            contaryName: "Kenya",
+            price: "N 10000",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
+          },
+          {
+            contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+            contaryName: "Nigeria",
+            price: "150000 KES",
+            duration: "6 Months",
+            Enrollment: "2L+ Enrolled",
           },
         ],
       },

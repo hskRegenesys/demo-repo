@@ -6,6 +6,7 @@ import Content2 from "./ContentCourses/Content2";
 import Content3 from "./ContentCourses/Content3";
 import Content4 from "./ContentCourses/Content4";
 import Content5 from "./ContentCourses/Content5";
+import Content6 from "./ContentCourses/Content6";
 
 interface Props {
   page?: string;
@@ -16,7 +17,7 @@ interface MainCourseData {
   bigHeading: string;
   sideHeadings: { text: string; contentId: string }[];
   sideContents: {
-    content1?: {
+    content1: {
       contentHeading: string;
       contentImg: string;
       contentText: string;
@@ -36,12 +37,11 @@ interface MainCourseData {
         yearsOfExperience: string;
       }[];
     };
-    content4: {
+    content4?: {
       contentHeading: string;
-      pricingCard: {
+      LevelCard: {
         courseName: string;
         frameImg: string;
-        price: string;
         tickIcon: string;
         list: string[];
       }[];
@@ -56,45 +56,65 @@ interface MainCourseData {
         weekPoints: string[];
       }[];
     };
+    content6?: {
+      ContentHeding: string;
+      PriceIcon: string;
+      durationIcon: string;
+      EnrollmentIcon: string;
+      contraryPricingCard: {
+        contaryName: string;
+        price: string;
+        duration: string;
+        Enrollment: string;
+        contaryFlag: string;
+      }[];
+    };
   };
 }
 
 const ExploreTheCourses: React.FC<Props> = ({ page }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [activeContent, setActiveContent] = useState<string | null>(
-    page === "digital-marketing"
-      ? exploreTheCoursesData.digitalMarketing.sideHeadings[0].contentId
-      : page === "digital-marketing-fundamentals"
-      ? exploreTheCoursesData.digitalMarketing.sideHeadings[1].contentId
-      : page === "advance-digital-marketing-course"
-      ? exploreTheCoursesData.digitalMarketingAdvanced.sideHeadings[1].contentId
-      : page === "cyber-security"
-      ? exploreTheCoursesData.cyberSecurity.sideHeadings[0].contentId
-      : page === "project-management"
-      ? exploreTheCoursesData.productManagement.sideHeadings[0].contentId
-      : page === "artificial-intelligence"
-      ? exploreTheCoursesData.artificialIntelligence.sideHeadings[0].contentId
-      : page === "ai-introductory"
-      ? exploreTheCoursesData.artificialIntelligenceIntroductory.sideHeadings[1]
-          .contentId
-      : page === "ai-intermediary"
-      ? exploreTheCoursesData.artificialIntelligenceIntermediary.sideHeadings[1]
-          .contentId
-      : page === "ai-advanced-applied"
-      ? exploreTheCoursesData.artificialIntelligenceAdvancedApplied
-          .sideHeadings[1].contentId
-      : page === "data-science"
-      ? exploreTheCoursesData.dataScience.sideHeadings[0].contentId
-      : page === "basic-data-science"
-      ? exploreTheCoursesData.basicDataScience.sideHeadings[1].contentId
-      : page === "advanced-data-science"
-      ? exploreTheCoursesData.advancedDataScience.sideHeadings[1].contentId
-      : page === "applied-data-science"
-      ? exploreTheCoursesData.appliedDataScience.sideHeadings[1].contentId
-      : null
-  );
+  const [activeContent, setActiveContent] = useState<string | null>(() => {
+    if (page === "digital-marketing") {
+      return exploreTheCoursesData.digitalMarketing.sideHeadings[0].contentId;
+    } else if (page === "digital-marketing-fundamentals") {
+      return exploreTheCoursesData.digitalMarketingFundamentals.sideHeadings[0]
+        .contentId;
+    } else if (page === "advance-digital-marketing-course") {
+      return exploreTheCoursesData.digitalMarketingAdvanced.sideHeadings[0]
+        .contentId;
+    } else if (page === "cyber-security") {
+      return exploreTheCoursesData.cyberSecurity.sideHeadings[0].contentId;
+    } else if (page === "project-management") {
+      return exploreTheCoursesData.productManagement.sideHeadings[0].contentId;
+    } else if (page === "artificial-intelligence") {
+      return exploreTheCoursesData.artificialIntelligence.sideHeadings[0]
+        .contentId;
+    } else if (page === "ai-introductory") {
+      return exploreTheCoursesData.artificialIntelligenceIntroductory
+        .sideHeadings[0].contentId;
+    } else if (page === "ai-intermediary") {
+      return exploreTheCoursesData.artificialIntelligenceIntermediary
+        .sideHeadings[0].contentId;
+    } else if (page === "ai-advanced-applied") {
+      return exploreTheCoursesData.artificialIntelligenceAdvancedApplied
+        .sideHeadings[0].contentId;
+    } else if (page === "data-science") {
+      return exploreTheCoursesData.dataScience.sideHeadings[0].contentId;
+    } else if (page === "basic-data-science") {
+      return exploreTheCoursesData.basicDataScience.sideHeadings[0].contentId;
+    } else if (page === "advanced-data-science") {
+      return exploreTheCoursesData.advancedDataScience.sideHeadings[0]
+        .contentId;
+    } else if (page === "applied-data-science") {
+      return exploreTheCoursesData.appliedDataScience.sideHeadings[0].contentId;
+    } else {
+      return null;
+    }
+  });
 
   const contentRefs: React.RefObject<HTMLDivElement>[] = [
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -120,7 +140,12 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
     );
     if (index !== -1) {
       setActiveContent(contentId);
-      contentRefs[index].current?.scrollIntoView({ behavior: "smooth" });
+      const targetElement = contentRefs[index].current;
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+        targetElement.style.paddingTop = "100px";
+      }
     }
   };
 
@@ -177,7 +202,14 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
     smallHeading,
     bigHeading,
     sideHeadings,
-    sideContents: { content1, content2, content3, content4, content5 },
+    sideContents: {
+      content1,
+      content2,
+      content3,
+      content4,
+      content5,
+      content6,
+    },
   } = mainCourseData;
   return (
     <div
@@ -206,17 +238,16 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
 
         <div className={styles.contentPanel}>
           {/* Render Content 1 */}
-          {content1 && (
-            <div
-              ref={contentRefs[0]}
-              onMouseOver={() => handleMouseOver(0, sideHeadings[0].contentId)}
-            >
-              <Content1 {...content1} />
-            </div>
-          )}
+          <div
+            ref={contentRefs[0]}
+            onMouseOver={() => handleMouseOver(0, sideHeadings[0].contentId)}
+          >
+            <Content1 {...content1} />
+          </div>
           {/* Render Content 5 */}
           {content5 && (
             <div
+              className={styles.contentspace}
               ref={contentRefs[1]}
               onMouseOver={() => handleMouseOver(1, sideHeadings[1].contentId)}
             >
@@ -225,6 +256,7 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
           )}
           {/* Render Content 2 */}
           <div
+            className={styles.contentspace}
             ref={contentRefs[2]}
             onMouseOver={() => handleMouseOver(2, sideHeadings[2].contentId)}
           >
@@ -232,18 +264,32 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
           </div>
           {/* Render Content 3 */}
           <div
+            className={styles.contentspace}
             ref={contentRefs[3]}
             onMouseOver={() => handleMouseOver(3, sideHeadings[3].contentId)}
           >
             <Content3 {...content3} />
           </div>
           {/* Render Content 4 */}
-          <div
-            ref={contentRefs[4]}
-            onMouseOver={() => handleMouseOver(4, sideHeadings[4].contentId)}
-          >
-            <Content4 {...content4} />
-          </div>
+
+          {content4 && (
+            <div
+              className={styles.contentspace}
+              ref={contentRefs[4]}
+              onMouseOver={() => handleMouseOver(4, sideHeadings[4].contentId)}
+            >
+              <Content4 {...content4} />
+            </div>
+          )}
+          {content6 && (
+            <div
+              className={styles.contentspace}
+              ref={contentRefs[5]}
+              onMouseOver={() => handleMouseOver(5, sideHeadings[5].contentId)}
+            >
+              <Content6 {...content6} />
+            </div>
+          )}
         </div>
       </div>
     </div>

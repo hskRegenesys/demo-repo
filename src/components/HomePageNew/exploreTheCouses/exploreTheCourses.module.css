@@ -83,7 +83,9 @@
 .contentPanel.scrolled {
   overflow-y: scroll;
 }
-
+.contentspace {
+  border-left: 1px solid #008554;
+}
 .contentPanel h3 {
   color: var(--Primary-Primary---Charcoal, #131718);
   font-family: Montserrat-Bold;
@@ -97,7 +99,6 @@
 
 .content {
   padding: 0px 0px 120px 80px;
-  border-left: 1px solid #008554;
   position: relative;
 }
 .content::before {
@@ -169,6 +170,9 @@
   .content::after {
     display: none;
   }
+  .contentspace {
+    border-left: none;
+  }
 }
 @media only screen and (max-width: 1270px) {
   .appContainer {
@@ -178,6 +182,9 @@
 }
 
 /* content1 */
+.content1 {
+  border-left: 1px solid #008554;
+}
 
 .content1 p {
   color: var(--yocket-com-pale-sky, #697386);
@@ -237,6 +244,7 @@
 /* Add media query for screens with a maximum width of 768px (adjust as needed) */
 @media (max-width: 768px) {
   .content1 {
+    border-left: none;
   }
   .content1 p {
     font-size: 14px;
@@ -434,14 +442,15 @@
 
 .courseNameContent4 {
   text-align: left;
-  color: var(--Primary-Primary---Charcoal, #131718);
+  color: var(--Light-Text-Primary, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.019px;
-  margin-bottom: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px dotted #ccc;
 }
 
 .price {
@@ -492,25 +501,8 @@
 
 .learnMoreButton {
   border-radius: 7.68px;
-  border: 1px solid var(--light-divider-borders-dark, #ced1d9);
-  color: var(--Light-Text-Primary, #2b3340);
-  font-family: Montserrat-Bold;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.12px;
-  background-color: var(--Primary-Primary---White, #fff);
-  padding: 12px 20px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.applyNowButton {
-  border-radius: 7.68px;
-  border: 1px solid var(--Primary-Primary---Charcoal, #131718);
-  background: var(--Primary-Primary---Charcoal, #131718);
+  border: 1px solid var(--Light-Text-Primary, #2b3340);
+  background: var(--Light-Text-Primary, #2b3340);
   color: var(--Primary-Primary---White, #fff);
   font-family: Montserrat-Bold;
   font-size: 16px;
@@ -660,6 +652,124 @@
   }
 }
 
+/* // Content6 component */
+
+.ContarycardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 65px;
+}
+.Contarycard {
+  padding: 0px 20px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid var(--primary-primary-green, #008554);
+  background: linear-gradient(180deg, #f0fdf4 0%, #fff 50.17%);
+}
+.ContarycardContainer h4 {
+  color: var(--Light-Text-Primary, #2b3340);
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.019px;
+  margin-bottom: 10px;
+}
+.cardImgContainer {
+  height: 40px;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: -15px;
+}
+
+.cardImg {
+  width: 48px;
+  height: 48px;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.ContarycardContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  color: var(--Light-Text-Primary, #2b3340);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.019px;
+}
+
+.iconContent {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+.rate {
+  color: #131718;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.026px;
+  font-family: Montserrat-Bold;
+}
+
+.SpanText {
+  color: var(--Primary-Primary---Charcoal, #131718);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.68px;
+  font-family: Montserrat-Bold;
+  border-radius: 7.68px;
+  border: 1px solid var(--primary-primary-charcoal, #131718);
+  background: var(--primary-primary-charcoal, #131718);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-top: 12px;
+}
+
+@media only screen and (max-width: 870px) {
+  .ContarycardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .Contarycard {
+    margin-bottom: 20px;
+  }
+}
 /* swiper style */
 
 .swiperStyle {
