@@ -385,10 +385,10 @@ export const courseData = {
         youtubeUrl:
           "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
         title: "Certification Programme in Software Engineering",
-        text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
+        text: "Discover the Key to Success and Shape your Future with the best Software Engineering course for college students, freshers, and professionals. Learn the stages of software development, principles and practices of designing software systems from our highly experienced academic staff.",
         lists: [
-          "10 Weeks Course",
-          "Live Sessions",
+          "22 Weeks course ",
+          "Live Session",
           "Career Counselling",
           "Guaranteed Certification",
         ],
@@ -397,23 +397,23 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
+        "Master the art of building top-notch software, focusing on design, security, and maintenance. Learn how to analyse, develop, execute, and maintain software systems in the real world from our highly experienced faculty.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1: "Get exposure to Yammer, Excel, Discord, and Slack",
+      desc1: "Get exposure to Jenkins, GitLab CI, or GitHub Actions. Slack, Teams, and Jira.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch.",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
@@ -427,35 +427,35 @@ export const courseData = {
     ],
     courseCertificate: {
       certificateTitle:
-        "Leading with Excellence: Project Management Certificate Course",
+        "Leading with Excellence: Software Engineering Certificate Course",
       certificateSubTitle:
         "Earn a Project Management Certificate from Digital Regenesys & Navigate the Project Management Landscape",
       certificateSubSubTitle:
-        "With our Project Management programme, you will gain a solid foundation in project management principles to stay ahead in the competition by working on projects, simulations, and cases.        ",
+        "With our Software Engineering course,  individuals will gain the necessary knowledge, expertise, and recognition to excel in this domain. By investing in our course, individuals can enhance their career prospects, stay updated with industry best practices,, and demonstrate their commitment to excellence in this domain.",
       certificateListTitle:
-        "With Project Management Certificate, you will get: ",
+        "With the Software Engineering Course, you will get: ",
 
       certificateSkillList: [
         "International Recognition",
-        "Comprehensive Project Management Knowledge",
-        "Project Management Tools and Techniques",
-        "Project Scope and Quality Management",
+        "Software Development Process",
+        "Data Structures and Algorithms",
+        "Software Development Tools and Techniques",
       ],
       certificateListPara:
-        " Our Advance Digital Marketing Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+        " Our software engineering course opens the door to a wide range of exciting and dynamic career opportunities in software development and information technology.",
       certificateRolesList: [
-        "Project Manager",
-        "Consulting Project Manager ",
-        "Event Project Manager",
-        "Project Coordinator and many more",
+        "Software Developer",
+        "Mobile App Developer ",
+        "Software Architect",
+        "Machine Learning Engineer",
       ],
       CertificateImage: ["PM_certificate.webp"],
       imageName: "PM_certificate",
     },
 
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet our faculty",
+      // desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
@@ -485,61 +485,63 @@ export const courseData = {
     CourseCurriculum: [
       {
         id: 1,
-        courseCurriculumTitle: "Course curriculum",
+        courseCurriculumTitle: "Course Curriculum",
         faqs: [
           {
             id: 1,
-            title: "Week 1",
-            lists: ["Introduction to Project Management", "Project Profiling"],
+            title: "Programming Fundamentals",
+            lists: ["Overview of Software Engineering", "Software Development Life Cycle (SDLC)","Roles and Responsibilities in Software Engineering"],
           },
           {
             id: 2,
-            title: "Week 2",
-            lists: ["Developing Team Capabilities"],
+            title: "Programming Fundamentals",
+            lists: ["Introduction to Programming","Data Structures and Algorithms","Object-Oriented Programming (OOP)"],
           },
           {
             id: 3,
-            title: "Week 3",
-            lists: ["Planning and Managing"],
+            title: "Software Design and Architecture",
+            lists: ["System Design","Software Architecture"],
           },
           {
             id: 4,
-            title: "Week 4",
-            lists: ["Time Management"],
+            title: "Database Management Systems",
+            lists: ["Database fundamentals","SQL and Database Design"],
           },
           {
             id: 5,
-            title: "Week 5",
-            lists: ["Monitoring and Reporting", "Quality Management"],
+            title: "Software Development Tools and Environments",
+            lists: ["Integrated Development Environments (IDEs)", "Version Control Systems (e.g., Git)","Continuous Integration and Deployment (CI/CD)",],
           },
           {
             id: 6,
-            title: "Week 6",
-            lists: ["Project Closure"],
+            title: "Software Testing and Quality Assurance",
+            lists: ["Types of Testing","Test Automation"],
           },
           {
             id: 7,
-            title: "Week 7",
-            lists: ["Change Management", "Disaster Management"],
+            title: "Project Management and Collaboration",
+            lists: ["Project Planning and Scheduling", "Collaboration Tools"],
           },
+
           {
             id: 8,
-            title: "Week 8",
+            title: "Emerging Technologies and Trends",
             lists: [
-              "International Project Management",
-              "Software for Project Management - (Microsoft Project Plan- MPP)",
+              "Cloud Computing",
+              "Artificial Intelligence and Machine Learning",
+              "DevOps practices"
             ],
           },
-          {
-            id: 9,
-            title: "Week 9",
-            lists: ["Design Thinking"],
-          },
-          {
-            id: 10,
-            title: "Week 10",
-            lists: ["Contracts and Agreement", "Industry Expert Session"],
-          },
+          // {
+          //   id: 9,
+          //   title: "Week 9",
+          //   lists: ["Design Thinking"],
+          // },
+          // {
+          //   id: 10,
+          //   title: "Week 10",
+          //   lists: ["Contracts and Agreement", "Industry Expert Session"],
+          // },
         ],
         defaultCurrent: 1,
       },
@@ -550,47 +552,47 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "How This Course Will Help Me In My Career?",
-            text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
+            title: "What is a software engineering course?",
+            text: "A software engineering course is a structured programme of study that provides individuals with the knowledge and skills to design, develop, test, and maintain software systems. It covers various topics, including programming languages, software development methodologies, and tools used in the field.",
           },
           {
             id: 2,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+            title: "What are the key topics covered in a software engineering course?",
+            text: "Topics typically include programming languages, software development life cycle, data structures and algorithms, software design and architecture, quality assurance, project management, and emerging technologies.",
           },
           {
             id: 3,
-            title: "What Are The Modes Of Payment Available For Me?",
-            text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+            title: "How long does a software engineering course typically last?",
+            text: " The duration of a software engineering course is 22 weeks.",
           },
           {
             id: 4,
             title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
-            text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+              "What are the career prospects after completing a software engineering course?",
+            text: "Career prospects include roles such as software developer, full-stack developer, front-end developer, back-end developer, mobile app developer, DevOps engineer, data scientist, machine learning engineer, and more.",
           },
           {
             id: 5,
-            title: "Is This A Certified Course?",
-            text: "Yes, all the courses are certified by the Regenesys Business School.",
+            title: "How can a software engineering course benefit my career?",
+            text: "A software engineering course provides the skills and knowledge needed for a career in software development, opening doors to diverse and rewarding opportunities in the technology industry. It enhances problem-solving abilities and prepares individuals for roles in high-demand fields.",
           },
-          {
-            id: 6,
-            title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
-          },
-          {
-            id: 7,
-            title:
-              "How Will I Get Access To The Assignments And Learning Content?",
-            text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
-          },
-          {
-            id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
-            text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
-          },
+          // {
+          //   id: 6,
+          //   title:
+          //     "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+          //   text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+          // },
+          // {
+          //   id: 7,
+          //   title:
+          //     "How Will I Get Access To The Assignments And Learning Content?",
+          //   text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+          // },
+          // {
+          //   id: 8,
+          //   title: "What If The Course Timings Don't Match My Work Timings?",
+          //   text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+          // },
         ],
         defaultCurrent: 1,
       },
@@ -622,9 +624,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "100% Career Counselling",
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+            "100% Career counselling",
+            "Get yourself interview-ready with proper training, industry expert interactions, and resume-building tools.",
+            "Elevate your LinkedIn game with a comprehensive profile-building session.",
           ],
         },
         {
@@ -633,8 +635,8 @@ export const courseData = {
 
           lists: [
             "Solve all your queries with one-on-one interaction during the lectures",
-            "Ask questions, get answers and complete support from the faculty",
-            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+            "Ask questions, get answers and get complete support from the faculty",
+            "Enhance the learning experience offered by our highly experienced and achieved faculties.",
           ],
         },
         {
@@ -653,9 +655,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be a part of a community of 10,000+ Learners.",
+            "Connect with the Industry experts who will help guide you through your career after course completion.",
+            "Talk, share, connect, learn, and grow with other students in your batch.",
           ],
         },
       ],
@@ -666,19 +668,19 @@ export const courseData = {
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fee Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Project Management certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
+        "Earn a prestigious Software Engineering Certificate online & boost your tech career! Get certified today! Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now!",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
-        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements to your friends and colleagues",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the most significant online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",

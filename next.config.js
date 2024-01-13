@@ -982,7 +982,7 @@ const createReWrites = () => {
       destination: "/all-courses/project-management/28",
     },
     {
-      source: "/all-courses/software-engineering",
+      source: "/all-courses/software-engineering-course",
       destination: "/all-courses/software-engineering/129",
     },
     // {
