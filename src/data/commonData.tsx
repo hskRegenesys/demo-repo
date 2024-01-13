@@ -32,6 +32,8 @@ const Data = {
         "Applied Digital Marketing Course Online | Digital Regenesys",
       "project-management":
         "Project Management Course Online | Digital Regenesys",
+        "software-engineering-course":
+        "Software Engineering Online Course | Digital Regenesys",
       "design-thinking": "Design Thinking Course Online | Digital Regnesys",
       "data-science":
         "Data Science: Data Science Course Online | Digital Regenesys",
@@ -190,6 +192,17 @@ const Data = {
         online project management degree courses, 
         project management basics an official pmi online course review
       `,
+      "software-engineering-course": `
+      software engineering,
+      software engineering course,
+      what is software engineering,
+      where to study software engineering in South Africa,
+      software engineering in south africa,
+      software engineering jobs in South Africa,
+      software engineering courses South Africa,
+      software engineering online course,
+      software engineering subjects,
+    `,
       "design-thinking":
         "design thinking, design thinking course, design thinking course duration, design thinking course fees, online design thinking course, design thinking certification, design thinking boot camp, design thinking training, design thinking for beginners, design thinking for business, design thinking for innovation, design thinking for problem solving",
       "data-science": `
@@ -278,7 +291,9 @@ const Data = {
         "Advance your digital marketing career with our online course. Learn from industry experts and develop the skills you need to create and execute successful digital marketing strategies.",
       "project-management":
         "Study a Project Management course with Digital Regenesys to acquire the know-how on managing projects successfully. Enquire now.",
-      "design-thinking":
+        "software-engineering-course":
+        "Software Engineering Course - Master coding skills and advance your career with our comprehensive online programme. Enrol now for transformative learning!",
+        "design-thinking":
         "Unlock your creative potential with our Design Thinking Course Online. Discover innovative problem-solving techniques at Digital Regnesys. Enrol now!",
       "data-science":
         "Data Science, advance your career in a Data Science course with Digital Regenesys. We offer a Data Science course to help you achieve your career goals.",
