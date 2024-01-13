@@ -429,7 +429,7 @@ export const courseData = {
       certificateTitle:
         "Leading with Excellence: Software Engineering Certificate Course",
       certificateSubTitle:
-        "Earn a Project Management Certificate from Digital Regenesys & Navigate the Project Management Landscape",
+        "Earn a Software Engineering Certificate from Digital Regenesys & Navigate the Software Engineering Landscape",
       certificateSubSubTitle:
         "With our Software Engineering course,  individuals will gain the necessary knowledge, expertise, and recognition to excel in this domain. By investing in our course, individuals can enhance their career prospects, stay updated with industry best practices,, and demonstrate their commitment to excellence in this domain.",
       certificateListTitle:
@@ -671,7 +671,7 @@ export const courseData = {
       title: "Fee Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Project Management certificate",
+      certifiedTitle1: "Earn Your Software Engineering certificate",
       certifiedText1:
         "Earn a prestigious Software Engineering Certificate online & boost your tech career! Get certified today! Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now!",
       certifiedTitle2: "Share Your Achievement",
