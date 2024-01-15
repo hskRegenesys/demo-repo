@@ -29,7 +29,7 @@ yarn-error.log*
 .env*.local
 .env
 
-# public/robots.txt
-#public/blog/robots.txt
+public/robots.txt
+public/blog/robots.txt
 # vercel
 .vercel
