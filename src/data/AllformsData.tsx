@@ -72,6 +72,10 @@ const Data = {
       value: "Project Management",
     },
     {
+      option: "Software Engineering",
+      value: "Software Engineering",
+    },
+    {
       option: "Cyber Security",
       value: "Cyber Security",
     },
