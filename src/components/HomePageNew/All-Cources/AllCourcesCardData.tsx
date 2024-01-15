@@ -13,14 +13,6 @@ const AllCourcesCardData = {
   RelatedCoursesHeding: "Discover Trend's Top Courses in Demand",
   RelatedCoursesTitle: "Related Courses",
 
-  OurCoursesTitle: "All Courses",
-  OurCoursesHeading: "Explore Our Courses",
-  // cardTimeIcon: "/assets/images/HomeNew/clock-green.svg",
-  // cardStudentsIcon: "/assets/images/HomeNew/user-tick.svg",
-  // cardBookIcon: "/assets/images/HomeNew/book.svg",
-  // cardStudentEnrollmentText: "Students Enrolled",
-  // cardToolsText: "Covered",
-
   Courses: {
     DataScience: {
       parentCource: {
@@ -204,7 +196,7 @@ const AllCourcesCardData = {
       parentCource: {
         id: 6,
         name: "Software Engineering",
-        code: "SPCSY",
+        code: "SE",
         description: "Software Engineering",
         parentId: null,
         cardProgram: "Software Engineering Course",

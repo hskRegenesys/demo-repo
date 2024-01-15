@@ -22,6 +22,7 @@ import LearnersBenefit from "@/components/HomePageNew/learnersBenefit/LearnersBe
 import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectContainer";
 import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
+import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -61,7 +62,7 @@ const AllCoursesNew = () => {
           }}
         />
         <OurCourses
-          data={NewHomeData}
+          data={NewOurCoursesData}
           handleEnrollButtonClick={handleEnrollButtonClick}
         />
         <CertificationDR

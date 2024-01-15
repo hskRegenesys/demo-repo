@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from "react";
 import Styles from "./whyChooseDR.module.css";
-import NewHomeData from "../../../data/newHomeData";
+import whyChooseDRData from "./WhyChooseDRData";
 
 interface WhyChooseDRProps {
   handleEnrollButtonClick: MouseEventHandler<HTMLDivElement>;
@@ -14,7 +14,7 @@ const WhyChooseDR: React.FC<WhyChooseDRProps> = ({
     whyChooseDRTitle,
     whyChooseDRCard,
     whyChooseDRButtonText,
-  } = NewHomeData.whyChooseDRData;
+  } = whyChooseDRData;
 
   return (
     <div className={Styles.WhyChooseDRContainer}>

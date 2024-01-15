@@ -19,6 +19,7 @@ import MobileMenu from "@/components/Header/MobileMenu";
 import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
 import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
+import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -61,7 +62,7 @@ const HomeNew = () => {
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
       <OurCourses
-        data={NewHomeData}
+        data={NewOurCoursesData}
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <LearnersBenefit />

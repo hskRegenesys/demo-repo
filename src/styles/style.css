@@ -627,7 +627,7 @@ img {
   left: 0;
   top: 0px;
   width: 100%;
-  background: none;
+  background: #E5FFED;  
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1;
   transition: all 300ms ease;

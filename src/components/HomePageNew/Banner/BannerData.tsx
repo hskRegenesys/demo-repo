@@ -165,7 +165,7 @@ const BannerData = {
   },
   softwareEngineering: {
     BannerImgDesktop: "/assets/images/HomeNew/BannersImg/Banner-Example.png",
-    coursePageName: "SoftwareEngineering",
+    coursePageName: "Software Engineering Course",
     topSectionPoint1: "BESTSELLER",
     topSectionPoint2: "Live Sessions by Industry Experts",
     contentText:

@@ -1791,36 +1791,7 @@ const exploreTheCoursesData = {
           // Additional faculty members as needed
         ],
       },
-      content4: {
-        contentHeading: "Levels To Choose From",
 
-        LevelCard: [
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-          {
-            courseName: "Digital Marketing",
-            tickIcon: "/assets/images/HomeNew/faculty-img/Check.svg",
-            frameImg: "/assets/images/HomeNew/faculty-img/Check.svg",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-
-          // Additional pricing options as needed
-        ],
-      },
       content5: {
         contentHeading: "Course Curriculum",
         durationIcon: "/assets/images/HomeNew/clock-green.svg",
