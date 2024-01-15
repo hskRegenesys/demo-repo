@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://www.digitalregenesys.com/blog/sitemap.xml
+Sitemap: https://www.digitalregenesys.com/sitemap.xml
