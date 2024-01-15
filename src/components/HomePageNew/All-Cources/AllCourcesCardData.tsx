@@ -25,17 +25,6 @@ const AllCourcesCardData = {
         cardWeek: "15 Weeks",
         cardCount: "45,000+",
         cardTool: "45 Tools",
-        pricingCard: [
-          {
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
       },
 
       SubCources: [
@@ -49,17 +38,6 @@ const AllCourcesCardData = {
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "45 Tools",
-          pricingCard: [
-            {
-              price: "$999",
-              list: [
-                "10 Weeks",
-                "Live Classes",
-                "Capstone Projects",
-                "International Certification",
-              ],
-            },
-          ],
         },
         {
           id: 1.2,
@@ -107,79 +85,48 @@ const AllCourcesCardData = {
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardCount: "32,000+",
         cardTool: "45 Tools",
-        pricingCard: [
-          {
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
         cardWeek: "12 Weeks",
       },
     },
-    DigitalMarketing: {
-      parentCource: {
-        code: "DM",
-        id: 3,
-        parentId: null,
-        name: "Digital Marketing",
-        cardProgram: "Digital Marketing",
-        cardImg: "./assets/images/HomeNew/CardImg.webp",
-        cardWeek: "10 Weeks",
-        cardCount: "32,000+",
-        cardTool: "45 Tools",
-        pricingCard: [
-          {
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
-      },
-      SubCources: [
-        {
-          id: 3.1,
-          name: "Digital Marketing Fundamentals",
-          code: "BDMC",
-          description: "Digital Marketing Fundamentals",
-          parentId: 3,
-          cardProgram: "Digital Marketing Fundamental",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
-          cardCount: "32,000+",
-          cardTool: "45 Tools",
-          pricingCard: [
-            {
-              price: "$999",
-              list: [
-                "10 Weeks",
-                "Live Classes",
-                "Capstone Projects",
-                "International Certification",
-              ],
-            },
-          ],
-        },
-        {
-          id: 3.2,
-          name: "Advance Digital Marketing Course",
-          code: "AVDMC",
-          description: "Advance Digital Marketing Course",
-          parentId: 3,
-          cardProgram: "Advanced Digital Marketing Course",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
-          cardCount: "45,000+",
-          cardTool: "45 Tools",
-        },
-      ],
-    },
+    // DigitalMarketing: {
+    //   parentCource: {
+    //     code: "DM",
+    //     id: 3,
+    //     parentId: null,
+    //     name: "Digital Marketing",
+    //     cardProgram: "Digital Marketing",
+    //     cardImg: "./assets/images/HomeNew/CardImg.webp",
+    //     cardWeek: "10 Weeks",
+    //     cardCount: "32,000+",
+    //     cardTool: "45 Tools",
+    //   },
+    //   SubCources: [
+    //     {
+    //       id: 3.1,
+    //       name: "Digital Marketing Fundamentals",
+    //       code: "BDMC",
+    //       description: "Digital Marketing Fundamentals",
+    //       parentId: 3,
+    //       cardProgram: "Digital Marketing Fundamental",
+    //       cardImg: "/assets/images/HomeNew/CardImg.webp",
+    //       cardCount: "32,000+",
+    //       cardTool: "45 Tools",
+    //       cardWeek: "12 Weeks",
+    //     },
+    //     {
+    //       id: 3.2,
+    //       name: "Advance Digital Marketing Course",
+    //       code: "AVDMC",
+    //       description: "Advance Digital Marketing Course",
+    //       parentId: 3,
+    //       cardProgram: "Advanced Digital Marketing Course",
+    //       cardImg: "/assets/images/HomeNew/CardImg.webp",
+    //       cardCount: "45,000+",
+    //       cardTool: "45 Tools",
+    //       cardWeek: "12 Weeks",
+    //     },
+    //   ],
+    // },
     CyberSecurity: {
       parentCource: {
         id: 4,
@@ -191,17 +138,7 @@ const AllCourcesCardData = {
         cardImg: "/assets/images/HomeNew/CardImg.webp",
         cardCount: "32,000+",
         cardTool: "45 Tools",
-        pricingCard: [
-          {
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
+        cardWeek: "12 Weeks",
       },
     },
     ArtificialIntelligence: {
@@ -215,17 +152,6 @@ const AllCourcesCardData = {
         cardWeek: "10 Weeks",
         cardCount: "32,000+",
         cardTool: "45 Tools",
-        pricingCard: [
-          {
-            price: "$999",
-            list: [
-              "10 Weeks",
-              "Live Classes",
-              "Capstone Projects",
-              "International Certification",
-            ],
-          },
-        ],
       },
       SubCources: [
         {
@@ -238,17 +164,7 @@ const AllCourcesCardData = {
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "45 Tools",
-          pricingCard: [
-            {
-              price: "$999",
-              list: [
-                "10 Weeks",
-                "Live Classes",
-                "Capstone Projects",
-                "International Certification",
-              ],
-            },
-          ],
+          cardWeek: "12 Weeks",
         },
         {
           id: 5.2,
@@ -260,6 +176,7 @@ const AllCourcesCardData = {
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "45,000+",
           cardTool: "45 Tools",
+          cardWeek: "12 Weeks",
         },
         {
           id: 5.3,
@@ -271,19 +188,23 @@ const AllCourcesCardData = {
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "33,000+",
           cardTool: "45 Tools",
-          pricingCard: [
-            {
-              price: "$999",
-              list: [
-                "10 Weeks",
-                "Live Classes",
-                "Capstone Projects",
-                "International Certification",
-              ],
-            },
-          ],
+          cardWeek: "12 Weeks",
         },
       ],
+    },
+    SoftwareEngineering: {
+      parentCource: {
+        id: 6,
+        name: "Software Engineering",
+        code: "SPCSY",
+        description: "Software Engineering",
+        parentId: null,
+        cardProgram: "Software Engineering Course",
+        cardImg: "/assets/images/HomeNew/CardImg.webp",
+        cardCount: "32,000+",
+        cardTool: "45 Tools",
+        cardWeek: "12 Weeks",
+      },
     },
   },
 };

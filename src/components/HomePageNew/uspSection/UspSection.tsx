@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import NewHomeData from "../../../data/newHomeData";
+import UspSectionData from "./UspSectionData";
 import Styles from "./uspSection.module.css";
 
 const UspSection = () => {
-  const { part1, part2, part3 } = NewHomeData.UspSectionData;
+  const { part1, part2, part3 } = UspSectionData;
 
   const [count, setCount] = useState("0");
 

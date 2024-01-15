@@ -163,5 +163,17 @@ const BannerData = {
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
   },
+  softwareEngineering: {
+    BannerImgDesktop: "/assets/images/HomeNew/BannersImg/Banner-Example.png",
+    coursePageName: "SoftwareEngineering",
+    topSectionPoint1: "BESTSELLER",
+    topSectionPoint2: "Live Sessions by Industry Experts",
+    contentText:
+      "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
+    youtubeVideoLink:
+      "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+    BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
+    vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
+  },
 };
 export default BannerData;

@@ -60,6 +60,8 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
     bannerAllData = BannerData?.artificialIntelligenceIntermediary;
   } else if (page === "ai-advanced-applied") {
     bannerAllData = BannerData?.artificialIntelligenceAdvancedApplied;
+  } else if (page === "software-engineering") {
+    bannerAllData = BannerData?.softwareEngineering;
   }
 
   // If specific properties not available, try the page directly

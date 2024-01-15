@@ -4,7 +4,7 @@ import Styles from "./homeSliderBanner.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-import NewHomeData from "../../../data/newHomeData";
+import homeSliderBannerData from "./homeSliderBannerData";
 import RequestForm from "../requestForm/RequestForm";
 
 // Install Swiper modules
@@ -17,7 +17,7 @@ interface HomeSliderBannerProps {
 const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   onFormSubmit,
 }) => {
-  const { sliderDataDesktop, sliderDataMobile } = NewHomeData;
+  const { sliderDataDesktop, sliderDataMobile } = homeSliderBannerData;
   const secondsPerSlide = 3;
 
   return (

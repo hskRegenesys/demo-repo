@@ -337,6 +337,32 @@ const CourseBenefitsCardData = {
       },
     ],
   },
+  softwareEngineering: {
+    courcename: "Software Engineering",
+    Heding: "What our learners have achieved",
+    Card: [
+      {
+        cardIcon: "/assets/images/HomeNew/money-tick.svg",
+        text1: "50%",
+        text2: "Avg. Salary Hike",
+      },
+      {
+        cardIcon: "/assets/images/HomeNew/brifecase-tick.svg",
+        text1: "1000+",
+        text2: "Career Transitions",
+      },
+      {
+        cardIcon: "/assets/images/HomeNew/medal.svg",
+        text1: "80%",
+        text2: "Outcome Acheieved",
+      },
+      {
+        cardIcon: "/assets/images/HomeNew/people.svg",
+        text1: "300+",
+        text2: "Hiring Partners",
+      },
+    ],
+  },
 };
 
 export default CourseBenefitsCardData;

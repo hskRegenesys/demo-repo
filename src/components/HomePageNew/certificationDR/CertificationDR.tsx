@@ -62,6 +62,8 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
       CertificationDRData.artificialIntelligenceAdvancedApplied;
   } else if (page === "all-courses-new") {
     certificationData = CertificationDRData.AllCourcesPage;
+  } else if (page === "software-engineering") {
+    certificationData = CertificationDRData.softwareEngineering;
   }
 
   if (!certificationData) {

@@ -21,14 +21,12 @@ import { allCourseList } from "@/data/courseData";
 interface CardData {
   code: any;
   id: number;
-  parentId: number | null; // Allow null for parentId
+  parentId: number | null;
   cardProgram: string;
   cardImg: string;
   cardCount: string;
   cardTool: string;
 }
-
-// ...
 
 interface CourseData {
   [key: string]: CardData[];

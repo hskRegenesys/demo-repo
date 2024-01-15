@@ -1,7 +1,7 @@
 // LearnersBenefit.js
 
 import React from "react";
-import NewHomeData from "../../../data/newHomeData";
+import LearnersBenefitData from "./LearnersBenefitData";
 import Styles from "./learnersBenefit.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -14,7 +14,7 @@ const LearnersBenefit = () => {
     LearnersBenefitTickIcon,
     LearnersBenefitFrame1,
     LearnersBenefitFrame2,
-  } = NewHomeData.LearnersBenefit;
+  } = LearnersBenefitData;
 
   return (
     <div className={Styles.LearnersBenefitContainer}>

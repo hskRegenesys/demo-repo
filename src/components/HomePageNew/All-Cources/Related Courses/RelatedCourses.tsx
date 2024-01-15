@@ -51,9 +51,9 @@ const RelatedCourses: React.FC<RelatedCoursesProps> = ({
   const coursesData =
     page === "data-science"
       ? AllCourcesCardData.Courses.DataScience.SubCources
-      : page === "digital-marketing"
-      ? AllCourcesCardData.Courses.DigitalMarketing.SubCources
-      : page === "artificial-intelligence"
+      : // : page === "digital-marketing"
+      // ? AllCourcesCardData.Courses.DigitalMarketing.SubCources
+      page === "artificial-intelligence"
       ? AllCourcesCardData.Courses.ArtificialIntelligence.SubCources
       : null;
 

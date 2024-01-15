@@ -1,7 +1,7 @@
 import React from "react";
-import NewHomeData from "../../../data/newHomeData";
 import styles from "./connectContainer.module.css";
 import RequestForm from "../requestForm/RequestForm";
+import connectContainerData from "./ConnnectContainerData";
 
 interface ConnectContainerProps {
   onFormSubmit: () => void;
@@ -17,7 +17,7 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
     icon1,
     icon2,
     icon3,
-  } = NewHomeData.connectContainerData;
+  } = connectContainerData;
 
   return (
     <div className={styles.connectContainer}>

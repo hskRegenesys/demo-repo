@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import NewHomeData from "../../../data/newHomeData";
+import AboutUsData from "./AboutUsData";
 import Styles from "./aboutUs.module.css";
 
 interface AboutUsProps {
@@ -8,7 +8,7 @@ interface AboutUsProps {
 
 const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
   const { aboutUsImg, aboutTitle, aboutHeading, aboutParagraph, cards } =
-    NewHomeData.AboutUsData;
+    AboutUsData;
 
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [showFullParagraph, setShowFullParagraph] = useState(false);

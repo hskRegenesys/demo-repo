@@ -110,8 +110,9 @@ const ExploreTheCourses: React.FC<Props> = ({
     } else if (page === "advanced-data-science") {
       return exploreTheCoursesData.advancedDataScience.sideHeadings[0]
         .contentId;
-    } else if (page === "applied-data-science") {
-      return exploreTheCoursesData.appliedDataScience.sideHeadings[0].contentId;
+    } else if (page === "software-engineering") {
+      return exploreTheCoursesData.softwareEngineering.sideHeadings[0]
+        .contentId;
     } else {
       return null;
     }
@@ -197,6 +198,8 @@ const ExploreTheCourses: React.FC<Props> = ({
   } else if (page === "ai-advanced-applied") {
     mainCourseData =
       exploreTheCoursesData.artificialIntelligenceAdvancedApplied;
+  } else if (page === "software-engineering") {
+    mainCourseData = exploreTheCoursesData.softwareEngineering;
   }
   if (!mainCourseData) {
     return null;

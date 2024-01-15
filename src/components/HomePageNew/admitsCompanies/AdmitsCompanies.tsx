@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Styles from "./admitsCompanies.module.css";
-import NewHomeData from "../../../data/newHomeData";
+import AdmiteCompaniesData from "./AdmiteCompaniesData";
 
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: React.MouseEventHandler<HTMLDivElement>;
@@ -12,7 +12,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   handleEnrollButtonClick,
 }) => {
   const { AdmitsHeading, AdmitsTitle, buttenIcon, AdmitsCards } =
-    NewHomeData.AdmiteCompaniesData;
+    AdmiteCompaniesData;
 
   const swiperSettings = {
     freeModeMomentum: false,

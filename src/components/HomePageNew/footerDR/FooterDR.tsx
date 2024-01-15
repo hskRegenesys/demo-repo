@@ -48,6 +48,9 @@ const FooterContent2: React.FC = () => (
         <a href="https://www.digitalregenesys.com/all-courses/project-management">
           <li>Project Management</li>
         </a>
+        <a href="https://www.digitalregenesys.com/all-courses/project-management">
+          <li>Software Engineering</li>
+        </a>
       </ul>
     </div>
   </div>
