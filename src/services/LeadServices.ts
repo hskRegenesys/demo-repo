@@ -9,7 +9,7 @@ class LeadService {
     ["Data Science", "Data Science"],
     ["Digital Marketing", "Digital Marketing"],
     ["Project Management", "Project Management"],
-    ["Software Engineering", "Software Engineering"],
+    // ["Software Engineering", "Software Engineering"],
     ["Design Thinking", "Design Thinking"],
     ["Artificial Intelligence", "Artificial Intelligence"],
   ]);
