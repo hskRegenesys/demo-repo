@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "../exploreTheCourses.module.css";
 
 interface Content6Props {
+  handleEnrollButtonClick: () => void;
   ContentHeding: string;
   PriceIcon: string;
   durationIcon: string;
@@ -21,6 +22,7 @@ const Content6: React.FC<Content6Props> = ({
   durationIcon,
   EnrollmentIcon,
   contraryPricingCard,
+  handleEnrollButtonClick,
 }) => {
   return (
     <div className={`${Styles.content6} ${Styles.content}`}>
@@ -63,7 +65,9 @@ const Content6: React.FC<Content6Props> = ({
                 <span className={Styles.SpanText}>{card.Enrollment}</span>
               </div>
             </div>
-            <button className={Styles.button}>Apply Now</button>
+            <button className={Styles.button} onClick={handleEnrollButtonClick}>
+              Apply Now
+            </button>
           </div>
         ))}
       </div>

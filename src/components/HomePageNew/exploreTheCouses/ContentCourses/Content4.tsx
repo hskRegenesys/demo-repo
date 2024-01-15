@@ -44,10 +44,10 @@ const Content4: React.FC<Content4Props> = ({ contentHeading, LevelCard }) => {
                 ))}
               </ul>
             </div>
-            {/* Buttons */}
+            {/* Buttons
             <div className={styles.buttonsContainer}>
               <button className={styles.learnMoreButton}>Learn More</button>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

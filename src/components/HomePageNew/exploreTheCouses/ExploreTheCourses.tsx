@@ -10,6 +10,7 @@ import Content6 from "./ContentCourses/Content6";
 
 interface Props {
   page?: string;
+  handleEnrollButtonClick: () => void;
 }
 
 interface MainCourseData {
@@ -72,7 +73,10 @@ interface MainCourseData {
   };
 }
 
-const ExploreTheCourses: React.FC<Props> = ({ page }) => {
+const ExploreTheCourses: React.FC<Props> = ({
+  page,
+  handleEnrollButtonClick,
+}) => {
   const [scrolled, setScrolled] = useState(false);
   const [activeContent, setActiveContent] = useState<string | null>(() => {
     if (page === "digital-marketing") {
@@ -287,7 +291,10 @@ const ExploreTheCourses: React.FC<Props> = ({ page }) => {
               ref={contentRefs[5]}
               onMouseOver={() => handleMouseOver(5, sideHeadings[5].contentId)}
             >
-              <Content6 {...content6} />
+              <Content6
+                {...content6}
+                handleEnrollButtonClick={handleEnrollButtonClick}
+              />
             </div>
           )}
         </div>
