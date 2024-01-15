@@ -60,7 +60,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
     bannerAllData = BannerData?.artificialIntelligenceIntermediary;
   } else if (page === "ai-advanced-applied") {
     bannerAllData = BannerData?.artificialIntelligenceAdvancedApplied;
-  } else if (page === "software-engineering") {
+  } else if (page === "software-engineering-course") {
     bannerAllData = BannerData?.softwareEngineering;
   }
 
@@ -73,6 +73,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
   if (!bannerAllData) {
     return null;
   }
+  console.log(page);
 
   const {
     coursePageName,
@@ -81,7 +82,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
     topSectionPoint2,
     BrochureIcon,
     vidoPlayIcon,
-    youtubeVideoLink,
   } = bannerAllData;
 
   return (

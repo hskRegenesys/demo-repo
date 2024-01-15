@@ -73,7 +73,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
       mainCourseBenefitsData =
         CourseBenefitsCardData.artificialIntelligenceAdvancedApplied;
       break;
-    case "software-engineering":
+    case "software-engineering-course":
       mainCourseBenefitsData = CourseBenefitsCardData.softwareEngineering;
       break;
     default:
