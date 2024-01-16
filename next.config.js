@@ -952,6 +952,12 @@ const redirectURL = () => {
       permanent: false,
     },
     {
+      source: "/all-courses/cyber-security/1000",
+      destination: "/all-courses/cyber-security",
+      permanent: false,
+    },
+
+    {
       source: "/all-courses/digital-marketing/advance-digital-marketing-course",
       destination: "/all-courses",
       permanent: false,
@@ -959,6 +965,11 @@ const redirectURL = () => {
     {
       source: "/blog/category/[slug]",
       destination: "/blog",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/design-thinking",
+      destination: "/all-courses",
       permanent: true,
     },
     {
@@ -981,10 +992,10 @@ const createReWrites = () => {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
-    // {
-    //   source: "/all-courses/software-engineering-course",
-    //   destination: "/all-courses/software-engineering/229",
-    // },
+    {
+      source: "/all-courses/software-engineering-course",
+      destination: "/all-courses/software-engineering/229",
+    },
     // {
     //   source: "/all-courses/cyber-security",
     //   destination: "/all-courses/cyber-security/29",
