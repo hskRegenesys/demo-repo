@@ -17,7 +17,7 @@ import Image from "next/image";
 function ImageModalPopup(props: any) {
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
   const router = useRouter();
-
+  const url = router?.asPath;
   const [isLoading, setIsLoading] = useState(true);
   const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
@@ -96,13 +96,25 @@ function ImageModalPopup(props: any) {
 
   let courses: any = [];
 
+  // if (allCourseList.length) {
+  //   courses = _.filter(
+  //     allCourseList,
+  //     (item: any) =>
+  //       item?.parent_id === null &&
+  //       item?.isAddon === false &&
+  //       item?.mode_id === 1
+  //   );
+  // }
   if (allCourseList.length) {
     courses = _.filter(
       allCourseList,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 1
+        item?.mode_id === 1 &&
+        (url === "/all-courses/software-engineering-course"
+          ? item?.id === 229
+          : item?.id !== 229)
     );
   }
 
