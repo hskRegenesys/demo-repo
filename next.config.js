@@ -992,10 +992,10 @@ const createReWrites = () => {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
-    {
-      source: "/all-courses/software-engineering-course",
-      destination: "/all-courses/software-engineering/229",
-    },
+    // {
+    //   source: "/all-courses/software-engineering-course",
+    //   destination: "/all-courses/software-engineering/229",
+    // },
     // {
     //   source: "/all-courses/cyber-security",
     //   destination: "/all-courses/cyber-security/29",
