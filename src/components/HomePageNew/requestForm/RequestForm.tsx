@@ -13,6 +13,7 @@ import Styles from "./requestForm.module.css";
 
 function RequestForm(props: any) {
   const router = useRouter();
+  const url = router?.asPath;
 
   const [isLoading, setIsLoading] = useState(true);
   const [geoLocationData, setGeoLocationData] = useState<any>({});
@@ -100,16 +101,27 @@ function RequestForm(props: any) {
 
   let courses: any = [];
 
+  // if (allCourseList.length) {
+  //   courses = _.filter(
+  //     allCourseList,
+  //     (item: any) =>
+  //       item?.parent_id === null &&
+  //       item?.isAddon === false &&
+  //       item?.mode_id === 1
+  //   );
+  // }
   if (allCourseList.length) {
     courses = _.filter(
       allCourseList,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 1
+        item?.mode_id === 1 &&
+        (url === "/all-courses/software-engineering-course"
+          ? item?.id === 229
+          : item?.id !== 229)
     );
   }
-
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);

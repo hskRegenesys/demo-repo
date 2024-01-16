@@ -9,10 +9,12 @@ import { leadService } from "src/services";
 import Modal from "react-bootstrap/Modal";
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
+import { useRouter } from "next/router";
 
 export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
-
+  const router = useRouter();
+  const url = router?.asPath;
   const [isLoading, setIsLoading] = useState(true);
   const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
@@ -63,16 +65,27 @@ export default function LandingForm(contactform: any) {
 
   let courses: any = [];
 
+  // if (allCourseList.length) {
+  //   courses = _.filter(
+  //     allCourseList,
+  //     (item: any) =>
+  //       item?.parent_id === null &&
+  //       item?.isAddon === false &&
+  //       item?.mode_id === 1
+  //   );
+  // }
   if (allCourseList.length) {
     courses = _.filter(
       allCourseList,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 1
+        item?.mode_id === 1 &&
+        (url === "/all-courses/software-engineering-course"
+          ? item?.id === 229
+          : item?.id !== 229)
     );
   }
-
   const {
     formState: { errors },
     reset,

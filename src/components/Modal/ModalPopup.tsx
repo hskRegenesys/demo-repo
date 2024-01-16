@@ -18,7 +18,7 @@ function ModalPopup(props: any) {
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
   const submitTitle = props.submitTitle ?? "Submit";
   const router = useRouter();
-
+  const url = router?.asPath;
   const [isLoading, setIsLoading] = useState(true);
   const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
@@ -67,7 +67,7 @@ function ModalPopup(props: any) {
   const onSubmit = async (data: any) => {
     sebtnDisable(true);
     const current = new Date();
-    data.page_url = window.location.href;
+    data.page_url = window?.location?.href;
     data.utm_parameters = window.location.href;
     if (utm_source) data.utm_source = utm_source;
     if (utm_medium) data.utm_medium = utm_medium;
@@ -108,13 +108,25 @@ function ModalPopup(props: any) {
   //     (item: any) => item?.isAddon === false && item?.mode_id === 1
   //   );
   // }
+  // if (allCourseList.length) {
+  //   courses = _.filter(
+  //     allCourseList,
+  //     (item: any) =>
+  //       item?.parent_id === null &&
+  //       item?.isAddon === false &&
+  //       item?.mode_id === 1
+  //   );
+  // }
   if (allCourseList.length) {
     courses = _.filter(
       allCourseList,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 1
+        item?.mode_id === 1 &&
+        (url === "/all-courses/software-engineering-course"
+          ? item?.id === 229
+          : item?.id !== 229)
     );
   }
 
@@ -276,7 +288,6 @@ function ModalPopup(props: any) {
                         <option value="" disabled selected>
                           Course you are looking for *
                         </option>
-
                         {courses.map((val: any) => {
                           return (
                             <option key={val.id} value={val.name}>
