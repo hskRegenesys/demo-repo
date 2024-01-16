@@ -127,18 +127,6 @@ const ExploreTheCourses: React.FC<Props> = ({
     useRef(null),
   ];
 
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    setScrolled(scrollTop > 0);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const handleSidePanelClick = (contentId: string) => {
     const index = sideHeadings.findIndex(
       (item) => item.contentId === contentId
@@ -148,16 +136,51 @@ const ExploreTheCourses: React.FC<Props> = ({
       const targetElement = contentRefs[index].current;
 
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-        targetElement.style.paddingTop = "100px";
+        const targetTop = targetElement.getBoundingClientRect().top;
+
+        window.scrollTo({
+          top: window.scrollY + targetTop - 100,
+          behavior: "smooth",
+        });
       }
     }
   };
 
-  const handleMouseOver = (index: number, contentId: string) => {
-    setActiveContent(contentId);
-  };
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6,
+    };
 
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Get the contentId from the data attribute
+          const contentId = entry.target.getAttribute("data-content-id");
+          if (contentId) {
+            setActiveContent(contentId);
+          }
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    // Attach the observer to each content element
+    contentRefs.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => {
+      // Disconnect the observer when the component unmounts
+      observer.disconnect();
+    };
+  }, [contentRefs]);
+
+  // ... (unchanged code)
   let mainCourseData: MainCourseData | undefined;
 
   // --------data-science---------
@@ -218,6 +241,7 @@ const ExploreTheCourses: React.FC<Props> = ({
       content6,
     },
   } = mainCourseData;
+
   return (
     <div
       className={`${styles.appContainer} ${scrolled ? styles.scrolled : ""}`}
@@ -245,10 +269,7 @@ const ExploreTheCourses: React.FC<Props> = ({
 
         <div className={styles.contentPanel}>
           {/* Render Content 1 */}
-          <div
-            ref={contentRefs[0]}
-            onMouseOver={() => handleMouseOver(0, sideHeadings[0].contentId)}
-          >
+          <div ref={contentRefs[0]} data-content-id={sideHeadings[0].contentId}>
             <Content1 {...content1} />
           </div>
           {/* Render Content 5 */}
@@ -256,7 +277,7 @@ const ExploreTheCourses: React.FC<Props> = ({
             <div
               className={styles.contentspace}
               ref={contentRefs[1]}
-              onMouseOver={() => handleMouseOver(1, sideHeadings[1].contentId)}
+              data-content-id={sideHeadings[1].contentId}
             >
               <Content5 {...content5} />
             </div>
@@ -265,7 +286,7 @@ const ExploreTheCourses: React.FC<Props> = ({
           <div
             className={styles.contentspace}
             ref={contentRefs[2]}
-            onMouseOver={() => handleMouseOver(2, sideHeadings[2].contentId)}
+            data-content-id={sideHeadings[2].contentId}
           >
             <Content2 {...content2} />
           </div>
@@ -273,7 +294,7 @@ const ExploreTheCourses: React.FC<Props> = ({
           <div
             className={styles.contentspace}
             ref={contentRefs[3]}
-            onMouseOver={() => handleMouseOver(3, sideHeadings[3].contentId)}
+            data-content-id={sideHeadings[3].contentId}
           >
             <Content3 {...content3} />
           </div>
@@ -283,7 +304,7 @@ const ExploreTheCourses: React.FC<Props> = ({
             <div
               className={styles.contentspace}
               ref={contentRefs[4]}
-              onMouseOver={() => handleMouseOver(4, sideHeadings[4].contentId)}
+              data-content-id={sideHeadings[4].contentId}
             >
               <Content4 {...content4} />
             </div>
@@ -292,7 +313,7 @@ const ExploreTheCourses: React.FC<Props> = ({
             <div
               className={styles.contentspace}
               ref={contentRefs[5]}
-              onMouseOver={() => handleMouseOver(5, sideHeadings[5].contentId)}
+              data-content-id={sideHeadings[5].contentId}
             >
               <Content6
                 {...content6}
