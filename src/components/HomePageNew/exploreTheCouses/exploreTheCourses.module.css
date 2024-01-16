@@ -105,7 +105,7 @@
   content: "";
   position: absolute;
   left: -10px;
-  top: 0%;
+  top: 10px;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
@@ -124,7 +124,7 @@
   border-radius: 50%;
   position: absolute;
   left: -5px;
-  top: 0%;
+  top: 10px;
   transform: translateY(-50%);
 }
 
@@ -381,19 +381,6 @@
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
-}
-
-.tutors {
-  color: var(--Light-Text-Green, #008554);
-  text-align: right;
-  font-family: Montserrat-Bold;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.12px;
-  margin-bottom: 0;
-  margin-top: -41px;
 }
 
 /* Media Queries */

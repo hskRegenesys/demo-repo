@@ -22,7 +22,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
       disableOnInteraction: false,
     },
     slidesPerView: "auto" as const,
-    speed: 5000,
+    speed: 1000,
     grabCursor: true,
     mousewheelControl: true,
     keyboardControl: true,

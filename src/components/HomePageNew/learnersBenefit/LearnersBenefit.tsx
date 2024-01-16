@@ -41,11 +41,11 @@ const LearnersBenefit = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           spaceBetween={20}
-          //   loop={true}
-          //   speed={12000}
-          //   autoplay={{
-          //     delay: 1,
-          //   }}
+          loop={true}
+          speed={2000}
+          autoplay={{
+            delay: 8000,
+          }}
         >
           {card.map((item, index) => (
             <SwiperSlide key={index}>

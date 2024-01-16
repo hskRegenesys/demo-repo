@@ -58,7 +58,6 @@ const Content3: React.FC<Content3Props> = ({
           ))}
         </Swiper>
       </div>
-      <p className={styles.tutors}>{tutors}</p>
     </div>
   );
 };

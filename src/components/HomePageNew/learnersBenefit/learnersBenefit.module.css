@@ -46,6 +46,7 @@
   max-width: 980px;
   border-radius: 20px;
   border: 1px solid #008554;
+  background-color: #fff;
   margin: 20px auto; /* Adjust the margin as needed */
 }
 
@@ -56,7 +57,6 @@
   border-bottom-right-radius: 110px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-
   background: #ecfaef;
   box-shadow: 0px 2px 4px 0px rgba(3, 120, 71, 0.15) inset;
 }
