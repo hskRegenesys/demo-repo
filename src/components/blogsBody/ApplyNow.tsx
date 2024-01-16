@@ -4,11 +4,13 @@ import { courseService } from "src/services";
 import PhoneInput from "react-phone-number-input";
 import Data from "@/data/AllformsData";
 import _ from "lodash";
+import { useRouter } from "next/router";
 
 const ApplyNow = (props: any) => {
   const hookForm: any = useForm();
   const [courseData, setcourseData] = useState([]);
-
+  const router = useRouter();
+  const url = router?.asPath;
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
@@ -24,16 +26,27 @@ const ApplyNow = (props: any) => {
 
   let courses: any = [];
 
+  // if (courseData.length) {
+  //   courses = _.filter(
+  //     courseData,
+  //     (item: any) =>
+  //       item?.parent_id === null &&
+  //       item?.isAddon === false &&
+  //       item?.mode_id === 1
+  //   );
+  // }
   if (courseData.length) {
     courses = _.filter(
       courseData,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 1
+        item?.mode_id === 1 &&
+        (url === "/all-courses/software-engineering-course"
+        ? item?.id === 229
+        : item?.id !== 229)
     );
   }
-
   const {
     formState: { errors },
     trigger,
