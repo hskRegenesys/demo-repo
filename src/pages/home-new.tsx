@@ -52,7 +52,6 @@ const HomeNew = () => {
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
-      <OurLocation />
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
@@ -61,6 +60,7 @@ const HomeNew = () => {
         }}
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+      <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
       <OurCourses

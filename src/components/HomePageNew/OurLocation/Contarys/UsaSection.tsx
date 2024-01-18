@@ -4,9 +4,9 @@ import OurLocationData from "../OurLocationData";
 import Styles from "../OurLocation.module.css";
 
 interface UsaSectionProps {
-  isHovered: boolean;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
+  isHovered?: boolean;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
 const UsaSection: React.FC<UsaSectionProps> = ({

@@ -5,52 +5,52 @@ import OurLocationData from "../OurLocationData";
 
 import Styles from "../OurLocation.module.css";
 
-interface IndiaSectionProps {
+interface SouthAfricaSectionProps {
   isHovered?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
 }
 
-const IndiaSection: React.FC<IndiaSectionProps> = ({
+const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
   isHovered,
   onMouseEnter,
   onMouseLeave,
 }) => (
-  <div className={`${Styles.IndiaSection} `}>
+  <div className={`${Styles.SouthAfricaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.IndiaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.SouthAfricaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
       >
         <img
-          src={OurLocationData.India.countryFlagImg}
+          src={OurLocationData.SouthAfrica.countryFlagImg}
           className={Styles.contaryFlag}
           alt="Country Flag"
         />
         <div
-          className={`${Styles.IndiacontaryAdressCard} ${Styles.contaryAdress}`}
+          className={`${Styles.SouthAfricacontaryAdressCard} ${Styles.contaryAdress}`}
         >
-          <span>{OurLocationData.India.countryDescription}</span>
-          <h5>{OurLocationData.India.countryAddress}</h5>
+          <span>{OurLocationData.SouthAfrica.countryDescription}</span>
+          <h5>{OurLocationData.SouthAfrica.countryAddress}</h5>
         </div>
       </div>
     )}
     {!isHovered && (
       <div
-        className={`${Styles.IndiaContaryLocation} ${Styles.contaryLocation}`}
+        className={`${Styles.SouthAfricaContaryLocation} ${Styles.contaryLocation}`}
       >
         <img
-          src={OurLocationData.India.locationPinImage}
+          src={OurLocationData.SouthAfrica.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
           alt="Location Pin"
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         />
         <span className={Styles.contaryname}>
-          {OurLocationData.India.countryName}
+          {OurLocationData.SouthAfrica.countryName}
         </span>
       </div>
     )}
   </div>
 );
 
-export default IndiaSection;
+export default SouthAfricaSection;

@@ -1,11 +1,15 @@
 // OurLocation.tsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import OurLocationData from "./OurLocationData";
 import Styles from "./OurLocation.module.css";
 import UsaSection from "./Contarys/UsaSection";
 import KenyaSection from "./Contarys/KenyaSecion";
 import IndiaSection from "./Contarys/IndiaSecion";
 import UgandaSection from "./Contarys/UgandaSection";
+import SouthAfricaSection from "./Contarys/SouthAfrica";
+import CroatiaSection from "./Contarys/CroatiaSection";
+import NigeriaSection from "./Contarys/NigeriaSection";
+import TanzaniaSection from "./Contarys/TanzaniaSection";
 
 const OurLocation: React.FC = () => {
   const {
@@ -93,12 +97,120 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
   };
 
+  const handleSouthAfricaMouseEnter = () => {
+    setIndiaHovered(false);
+    setUsaHovered(false);
+    setKenyaHovered(false);
+    setSouthAfricaHovered(true);
+    setCroatiaHovered(false);
+    setUgandaHovered(false);
+    setNigeriaHovered(false);
+    setTanzaniaHovered(false);
+  };
+
+  const handleSouthAfricaMouseLeave = () => {
+    setSouthAfricaHovered(false);
+  };
+
+  const handleCroatiaMouseEnter = () => {
+    setIndiaHovered(false);
+    setUsaHovered(false);
+    setKenyaHovered(false);
+    setSouthAfricaHovered(false);
+    setCroatiaHovered(true);
+    setUgandaHovered(false);
+    setNigeriaHovered(false);
+    setTanzaniaHovered(false);
+  };
+
+  const handleCroatiaMouseLeave = () => {
+    setCroatiaHovered(false);
+  };
+
+  const handleNigeriaMouseEnter = () => {
+    setIndiaHovered(false);
+    setUsaHovered(false);
+    setKenyaHovered(false);
+    setSouthAfricaHovered(false);
+    setCroatiaHovered(false);
+    setUgandaHovered(false);
+    setNigeriaHovered(true);
+    setTanzaniaHovered(false);
+  };
+
+  const handleNigeriaMouseLeave = () => {
+    setNigeriaHovered(false);
+  };
+  const handleTanzaniaMouseEnter = () => {
+    setIndiaHovered(false);
+    setUsaHovered(false);
+    setKenyaHovered(false);
+    setSouthAfricaHovered(false);
+    setCroatiaHovered(false);
+    setUgandaHovered(false);
+    setNigeriaHovered(false);
+    setTanzaniaHovered(true);
+  };
+
+  const handleTanzaniaMouseLeave = () => {
+    setTanzaniaHovered(false);
+  };
+
+  const [isExpanded, setExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 700);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Listen for window resize events
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const maxChars = isMobile ? 200 : 850;
+  const truncatedText = paraText.slice(0, maxChars);
+
+  const toggleView = () => {
+    setExpanded(!isExpanded);
+  };
+
+  const shouldRenderViewMore = !isExpanded && paraText.length > maxChars;
+
   return (
     <div className={Styles.locationContainer}>
-      <div className={Styles.leftSection}>
+      <div className={Styles.TopSectionMobile}>
         <h2>{smallHeading}</h2>
         <h1>{bigHeading}</h1>
-        <p>{paraText}</p>
+      </div>
+
+      <div className={Styles.leftSection}>
+        <div className={Styles.TopSectionDesktap}>
+          <h2>{smallHeading}</h2>
+          <h1>{bigHeading}</h1>
+        </div>
+
+        <p>
+          {isExpanded ? paraText : `${truncatedText}`}
+          {shouldRenderViewMore && (
+            <span className={Styles.viewMore} onClick={toggleView}>
+              ...View More
+            </span>
+          )}
+          {isExpanded && (
+            <span className={Styles.viewMore} onClick={toggleView}>
+              View Less
+            </span>
+          )}
+        </p>
       </div>
       <div className={Styles.rightSection}>
         <div className={Styles.locationPin}>
@@ -123,19 +235,13 @@ const OurLocation: React.FC = () => {
               onMouseLeave={handleIndiaMouseLeave}
             />
           </div>
-          <div className={Styles.southAfricaLocation}>
-            {/* <SouthAfricaSection
-              isHovered={isSouthAfricaHovered}
-              onMouseEnter={() => setSouthAfricaHovered(true)}
-              onMouseLeave={() => setSouthAfricaHovered(false)}
-            /> */}
-          </div>
+
           <div className={Styles.croatiaLocation}>
-            {/* <CroatiaSection
+            <CroatiaSection
               isHovered={isCroatiaHovered}
-              onMouseEnter={() => setCroatiaHovered(true)}
-              onMouseLeave={() => setCroatiaHovered(false)}
-            /> */}
+              onMouseEnter={handleCroatiaMouseEnter}
+              onMouseLeave={handleCroatiaMouseLeave}
+            />
           </div>
           <div className={Styles.ugandaLocation}>
             <UgandaSection
@@ -145,21 +251,29 @@ const OurLocation: React.FC = () => {
             />
           </div>
           <div className={Styles.nigeriaLocation}>
-            {/* <NigeriaSection
+            <NigeriaSection
               isHovered={isNigeriaHovered}
-              onMouseEnter={() => setNigeriaHovered(true)}
-              onMouseLeave={() => setNigeriaHovered(false)}
-            /> */}
+              onMouseEnter={handleNigeriaMouseEnter}
+              onMouseLeave={handleNigeriaMouseLeave}
+            />
           </div>
           <div className={Styles.tanzaniaLocation}>
-            {/* <TanzaniaSection
+            <TanzaniaSection
               isHovered={isTanzaniaHovered}
-              onMouseEnter={() => setTanzaniaHovered(true)}
-              onMouseLeave={() => setTanzaniaHovered(false)}
-            /> */}
+              onMouseEnter={handleTanzaniaMouseEnter}
+              onMouseLeave={handleTanzaniaMouseLeave}
+            />
+          </div>
+          <div className={Styles.southAfricaLocation}>
+            <SouthAfricaSection
+              isHovered={isSouthAfricaHovered}
+              onMouseEnter={handleSouthAfricaMouseEnter}
+              onMouseLeave={handleSouthAfricaMouseLeave}
+            />
           </div>
           {/* Add more sections for other countries */}
         </div>
+
         <div className={Styles.WorldImgContainer}>
           <img src={countryImage} className={Styles.WorldImg} alt="World Map" />
         </div>

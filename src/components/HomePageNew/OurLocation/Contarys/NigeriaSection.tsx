@@ -1,48 +1,48 @@
-// UgandaSection.tsx
+// KenyaSection.tsx
 
 import React from "react";
 import OurLocationData from "../OurLocationData";
 
 import Styles from "../OurLocation.module.css";
 
-interface UgandaSectionProps {
+interface NigeriaSectionProps {
   isHovered?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
 }
 
-const UgandaSection: React.FC<UgandaSectionProps> = ({
+const NigeriaSection: React.FC<NigeriaSectionProps> = ({
   isHovered,
   onMouseEnter,
   onMouseLeave,
 }) => (
-  <div className={`${Styles.UgandaSection} `}>
+  <div className={`${Styles.NigeriaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.UgandaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.NigeriaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
       >
         <img
-          src={OurLocationData.Uganda.countryFlagImg}
+          src={OurLocationData.Nigeria.countryFlagImg}
           className={Styles.contaryFlag}
           alt="Country Flag"
         />
         <div
-          className={`${Styles.UgandacontaryAdressCard} ${Styles.contaryAdress}`}
+          className={`${Styles.NigeriacontaryAdressCard} ${Styles.contaryAdress}`}
         >
-          <span>{OurLocationData.Uganda.countryDescription}</span>
-          <h5>{OurLocationData.Uganda.countryAddress}</h5>
+          <span>{OurLocationData.Nigeria.countryDescription}</span>
+          <h5>{OurLocationData.Nigeria.countryAddress}</h5>
         </div>
       </div>
     )}
     {!isHovered && (
       <div
-        className={`${Styles.UgandaContaryLocation} ${Styles.contaryLocation}`}
+        className={`${Styles.NigeriaContaryLocation} ${Styles.contaryLocation}`}
       >
         <span className={Styles.contaryname}>
-          {OurLocationData.Uganda.countryName}
+          {OurLocationData.Nigeria.countryName}
         </span>
         <img
-          src={OurLocationData.Uganda.locationPinImage}
+          src={OurLocationData.Nigeria.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
           alt="Location Pin"
           onMouseEnter={onMouseEnter}
@@ -53,4 +53,4 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
   </div>
 );
 
-export default UgandaSection;
+export default NigeriaSection;

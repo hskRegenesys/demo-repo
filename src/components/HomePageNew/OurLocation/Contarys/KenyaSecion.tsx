@@ -6,9 +6,9 @@ import OurLocationData from "../OurLocationData";
 import Styles from "../OurLocation.module.css";
 
 interface KenyaSectionProps {
-  isHovered: boolean;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
+  isHovered?: boolean;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
 const KenyaSection: React.FC<KenyaSectionProps> = ({

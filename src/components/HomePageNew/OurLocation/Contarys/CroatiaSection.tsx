@@ -5,52 +5,52 @@ import OurLocationData from "../OurLocationData";
 
 import Styles from "../OurLocation.module.css";
 
-interface IndiaSectionProps {
+interface CroatiaSectionProps {
   isHovered?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
 }
 
-const IndiaSection: React.FC<IndiaSectionProps> = ({
+const CroatiaSection: React.FC<CroatiaSectionProps> = ({
   isHovered,
   onMouseEnter,
   onMouseLeave,
 }) => (
-  <div className={`${Styles.IndiaSection} `}>
+  <div className={`${Styles.CroatiaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.IndiaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.CroatiaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
       >
         <img
-          src={OurLocationData.India.countryFlagImg}
+          src={OurLocationData.Croatia.countryFlagImg}
           className={Styles.contaryFlag}
           alt="Country Flag"
         />
         <div
-          className={`${Styles.IndiacontaryAdressCard} ${Styles.contaryAdress}`}
+          className={`${Styles.CroatiacontaryAdressCard} ${Styles.contaryAdress}`}
         >
-          <span>{OurLocationData.India.countryDescription}</span>
-          <h5>{OurLocationData.India.countryAddress}</h5>
+          <span>{OurLocationData.Croatia.countryDescription}</span>
+          <h5>{OurLocationData.Croatia.countryAddress}</h5>
         </div>
       </div>
     )}
     {!isHovered && (
       <div
-        className={`${Styles.IndiaContaryLocation} ${Styles.contaryLocation}`}
+        className={`${Styles.CroatiaContaryLocation} ${Styles.contaryLocation}`}
       >
         <img
-          src={OurLocationData.India.locationPinImage}
+          src={OurLocationData.Croatia.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
           alt="Location Pin"
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         />
         <span className={Styles.contaryname}>
-          {OurLocationData.India.countryName}
+          {OurLocationData.Croatia.countryName}
         </span>
       </div>
     )}
   </div>
 );
 
-export default IndiaSection;
+export default CroatiaSection;
