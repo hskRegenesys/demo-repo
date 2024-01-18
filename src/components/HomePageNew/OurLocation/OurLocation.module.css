@@ -1,0 +1,133 @@
+.leftSection h2 {
+  color: var(--Light-Text-Green, #008554);
+  font-feature-settings: "ss03" on, "liga" off;
+  font-family: Montserrat-Bold;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+.leftSection h1 {
+  color: var(--Light-Text-Primary, #2b3340);
+  font-feature-settings: "ss03" on, "liga" off;
+  font-family: Montserrat-Bold;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+}
+
+.leftSection p {
+  color: var(--Neutral-80, #616364);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+/* OurLocation.module.css */
+.locationContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-top: 100px;
+  margin: 100px 108px 0px 108px;
+  align-items: center;
+  gap: 16px;
+}
+
+.leftSection {
+  width: 52%;
+}
+
+.rightSection {
+  width: 48%;
+}
+
+.WorldImg {
+  width: 100%;
+  min-width: 600px;
+}
+
+.ContaryShowHoverDetails {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.contaryAdress {
+  background-color: #2b3340;
+  padding: 8px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 139px;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.contaryAdress span {
+  color: var(--Light-Text-White, #fff);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.contaryAdress h5 {
+  color: var(--Light-Text-White, #fff);
+  font-family: Montserrat;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.locationPin {
+  position: relative;
+}
+
+.usaLocation,
+.KenyaLocation,
+.IndiaLocation,
+.ugandaLocation {
+  position: absolute;
+  z-index: 1;
+}
+
+.usaLocation {
+  top: -21px;
+  left: 30px;
+}
+.KenyaLocation {
+  top: 80px;
+  left: 300px;
+}
+.IndiaLocation {
+  top: 55px;
+  left: 365px;
+}
+.ugandaLocation {
+  top: 44px;
+  left: 253px;
+}
+
+.PinLocatioName {
+  position: absolute;
+  top: 60px;
+}
+
+.contaryLocation {
+  position: absolute;
+  top: 53px;
+  left: 18px;
+  z-index: 3;
+  display: flex;
+}

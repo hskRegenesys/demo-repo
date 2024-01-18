@@ -20,6 +20,7 @@ import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/Explore
 import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
+import OurLocation from "@/components/HomePageNew/OurLocation/OurLocation";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -51,6 +52,7 @@ const HomeNew = () => {
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
+      <OurLocation />
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{

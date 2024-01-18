@@ -998,6 +998,7 @@ const exploreTheCoursesData = {
       { text: "Course Curriculum", contentId: "content2" },
       { text: "Tools Used in this Course", contentId: "content3" },
       { text: "World Class Faculty", contentId: "content4" },
+      { text: "", contentId: "content5" },
 
       { text: "Pricing Across the Countries", contentId: "content6" },
     ],
