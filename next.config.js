@@ -997,6 +997,15 @@ const createReWrites = () => {
     //   source: "/all-courses/software-engineering-course",
     //   destination: "/all-courses/software-engineering/229",
     // },
+    {
+      source: "/all-courses/data-science",
+      destination: "/all-courses/data-science",
+    },
+    {
+      source: "/all-courses/artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence",
+
+    },
     // {
     //   source: "/all-courses/cyber-security",
     //   destination: "/all-courses/cyber-security/29",
@@ -1062,6 +1071,10 @@ const createReWrites = () => {
     {
       source: "/all-courses/artificial-intelligence/ai-advanced-applied",
       destination: "/all-courses/ai-advanced-applied/403",
+    },
+    {
+      source: '/:path*',
+      destination: '/404',
     },
   ];
   return paths;
