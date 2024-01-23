@@ -23,7 +23,7 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
-  const salesforceResponse = process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL;
+  const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
   console.log("salesforceResponse", salesforceResponse);
   return (
     <ContextProvider>
@@ -223,7 +223,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         console.log("data",data);
         const salesForceUrl = '${salesforceResponse}';
-        console.log("salesForceUrl", salesforceResponse);
+        console.log("salesForceUrlinfunction", salesforceResponse);
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
           Interested_Topic:"",
