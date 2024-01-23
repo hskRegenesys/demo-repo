@@ -226,8 +226,8 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.log("salesForceUrlinfunction", salesforceResponse);
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
-          Interested_Topic:"",
-          Qualification:"",
+          interestedTopic:"",
+          highestQualification:"",
           utm_parameters:"",
           Mode_of_Study:"",
           Verified_Mobile_No:"",
