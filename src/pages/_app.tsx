@@ -24,6 +24,7 @@ import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const salesforceResponse = process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL;
+  console.log("salesforceResponse", salesforceResponse);
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
