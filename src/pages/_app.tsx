@@ -220,10 +220,10 @@ const MyApp = ({ Component, pageProps }: any) => {
         s0.parentNode.insertBefore(s1,s0);
       })();
       window.Tawk_API = window.Tawk_API || {};
-      window.Tawk_API.onPrechatSubmit = async function(data){
+      window.Tawk_API.onPrechatSubmit = function(data){
         console.log("data",data);
-        const salesForceUrl = '${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce';
-        console.log("salesForceUrlinfunction", salesforceResponse);
+        const salesForceUrl = '${salesforceResponse}/salesforce';
+        console.log("salesForceUrlinfunction", salesForceUrl);
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
           interestedTopic:"",
@@ -242,24 +242,25 @@ const MyApp = ({ Component, pageProps }: any) => {
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
       });
-        try {
-          const response = await fetch(salesForceUrl, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(salesForceData),
-          })
-            .then(response => {
-              if (!response.ok) {
-                throw new Error('Network response was not ok');
-              }
-            })
-            const responseData = await response.json();
-            console.log('Salesforce response:', responseData);
-          } catch (error) {
-            console.error('Error submitting data to Salesforce:', error);
-          }
+      fetch(salesForceUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(salesForceData),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(responseData => {
+        console.log('Salesforce response:', responseData);
+    })
+    .catch(error => {
+        console.error('Error submitting data to Salesforce:', error);
+    });
       };
     `,
         }}
