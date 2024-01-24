@@ -220,9 +220,9 @@ const MyApp = ({ Component, pageProps }: any) => {
         s0.parentNode.insertBefore(s1,s0);
       })();
       window.Tawk_API = window.Tawk_API || {};
-      window.Tawk_API.onPrechatSubmit = function(data){
+      window.Tawk_API.onPrechatSubmit = async function(data){
         console.log("data",data);
-        const salesForceUrl = '${salesforceResponse}';
+        const salesForceUrl = '${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce';
         console.log("salesForceUrlinfunction", salesforceResponse);
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
@@ -243,7 +243,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
       });
         try {
-          fetch(salesForceUrl, {
+          const response = await fetch(salesForceUrl, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -254,17 +254,12 @@ const MyApp = ({ Component, pageProps }: any) => {
               if (!response.ok) {
                 throw new Error('Network response was not ok');
               }
-              return response.json();
             })
-            .then(responseData => {
-              console.log('Data submitted successfully:', responseData);
-            })
-            .catch(error => {
-              console.error('Error submitting data:', error);
-            });
-        } catch (error) {
-          console.error('Error in fetch operation:', error);
-        }
+            const responseData = await response.json();
+            console.log('Salesforce response:', responseData);
+          } catch (error) {
+            console.error('Error submitting data to Salesforce:', error);
+          }
       };
     `,
         }}
