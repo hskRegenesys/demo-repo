@@ -24,7 +24,6 @@ import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
-  console.log("salesforceResponse", salesforceResponse);
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -153,7 +152,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-          
+
           `,
         }}
       />
@@ -221,23 +220,18 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        console.log("data",data);
         const salesForceUrl = '${salesforceResponse}';
-        console.log("salesForceUrlinfunction", salesForceUrl);
         const salesForceData = {
-          recordTypeId:"0127Q000000NDbcQAG",
-          interestedTopic:"",
-          highestQualification:"",
-          utm_parameters:"",
-          Mode_of_Study:"",
-          Verified_Mobile_No:"",
+          utm_source: "DR website chat ",
+          utm_medium: "DR Website",
+          utm_campaign: "DR Website",
         };   
         data.forEach(item => {
           const labelMapping = {
               "Name": "Name",
               "Email": "Email",
-              "Mobile No": "Phone",
-              "Programme of Interest": "Programme_Of_Interest"
+              "Mobile Number": "Phone",
+              "Course you are looking for": "Programme_Of_Interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
