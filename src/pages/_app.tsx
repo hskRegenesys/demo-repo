@@ -239,7 +239,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               "Name": "Name",
               "Email": "Email",
               "Mobile Number": "Phone",
-              "Course you are looking for": "Programme_Of_Interest"
+              "Course you are looking for": "Interested_Topic"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
