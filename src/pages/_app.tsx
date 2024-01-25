@@ -222,7 +222,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         const salesForceUrl = '${salesforceResponse}';
         const salesForceData = {
-          recordTypeId:"",
+          recordTypeId:"0127Q000000NDbcQAG",
           interestedTopic:"",
           highestQualification:"",
           utm_parameters:"",
