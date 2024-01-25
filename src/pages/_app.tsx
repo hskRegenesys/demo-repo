@@ -231,6 +231,8 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"
         };   
         data.forEach(item => {
           const labelMapping = {
