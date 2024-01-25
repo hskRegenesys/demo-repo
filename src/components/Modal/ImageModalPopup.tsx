@@ -22,10 +22,10 @@ function ImageModalPopup(props: any) {
   const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
   const [show, setShow] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState<any>("");
   const [btnDisable, sebtnDisable] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
     setCountryData(countryData);
@@ -124,6 +124,28 @@ function ImageModalPopup(props: any) {
       setValue("Programme_Of_Interest", filterData?.name);
     }
   }, [id]);
+  // Phone validation limit
+  let regexValidation = /^(\+?\d{1,3}-?)\d{10}$/;
+  let minMaxValue = 13;
+  if (
+    geoLocationData?.country_code === "NG" ||
+    phoneNumber?.startsWith("+234")
+  ) {
+    minMaxValue = 14;
+    regexValidation = /^(\+?\d{1,3}-?)\d{10}$/;
+  } else if (
+    geoLocationData?.country_code === "KE" ||
+    phoneNumber?.startsWith("+254")
+  ) {
+    minMaxValue = 13;
+    regexValidation = /^(\+?\d{1,3}-?)\d{9}$/;
+  } else if (
+    geoLocationData?.country_code === "ZA" ||
+    phoneNumber?.startsWith("+27")
+  ) {
+    minMaxValue = 12;
+    regexValidation = /^(\+?\d{1,3}-?)\d{9}$/;
+  }
   return (
     <div className="image-modal-style">
       <Modal.Header
@@ -223,12 +245,16 @@ function ImageModalPopup(props: any) {
                           type="hidden"
                           {...register("Phone", {
                             maxLength: {
-                              value: 16,
-                              message: "Cannot Exceed 10 digits",
+                              value: minMaxValue,
+                              message: "Can not Exceed 10 digits",
                             },
                             minLength: {
-                              value: 12,
+                              value: minMaxValue,
                               message: "Valid phone number Required",
+                            },
+                            pattern: {
+                              value: regexValidation,
+                              message: "Invalid phone number format",
                             },
                             required: "Phone is Required",
                           })}
@@ -241,6 +267,7 @@ function ImageModalPopup(props: any) {
                           placeholder="Select Country Code*"
                           onChange={(e) => {
                             setValue("Phone", e);
+                            setPhoneNumber(e);
                           }}
                           className={`${errors?.Phone && "invalid"}`}
                         />
