@@ -256,6 +256,17 @@ function RequestForm(props: any) {
               </div>
             </div>
           </div>
+          <div>
+            <div className="text-center">
+              {(programmeOfInterest === "Digital Marketing" ||
+                programmeOfInterest === "Design Thinking") && (
+                <small className="text-black">
+                  *Learn collaboratively! Course begins with 15. Apply as a
+                  group of 15 or more.
+                </small>
+              )}
+            </div>
+          </div>
           <div className={Styles.buttenContainer}>
             <button
               type="submit"

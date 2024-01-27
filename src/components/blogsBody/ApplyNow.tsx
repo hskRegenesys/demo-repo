@@ -43,8 +43,8 @@ const ApplyNow = (props: any) => {
         item?.isAddon === false &&
         item?.mode_id === 1 &&
         (url === "/all-courses/software-engineering-course"
-        ? item?.id === 229
-        : item?.id !== 229)
+          ? item?.id === 229
+          : item?.id !== 229)
     );
   }
   const {
@@ -53,7 +53,10 @@ const ApplyNow = (props: any) => {
     setValue,
     register,
     handleSubmit,
+    watch,
   } = hookForm;
+  const selectedCourse = watch("Programme_Of_Interest");
+
   return (
     <div
       className={`text-center p-3 rounded ${
@@ -209,7 +212,15 @@ const ApplyNow = (props: any) => {
             </small>
           )}
         </div>
-
+        <div className="text-center">
+          {(selectedCourse === "Digital Marketing" ||
+            selectedCourse === "Design Thinking") && (
+            <small className="text-black">
+              *Learn collaboratively! Course begins with 15. Apply as a group of
+              15 or more.
+            </small>
+          )}
+        </div>
         <div className=" text-center">
           <button
             style={{
