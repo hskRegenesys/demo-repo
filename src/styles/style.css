@@ -11206,23 +11206,26 @@ featured-section .right-col .sec-title h2 {
 .mainMegaMenu {
   display: flex;
   position: absolute;
-  left: -400px;
-  top: -20px;
-  width: 900px;
+  left: -756px;
+  top: -0px;
+  width: 1345px;
+  justify-content: space-evenly;
+  gap: 100px;
+  background-color: #fff;
+  padding: 40px 108px;
 }
 .mainMegaMenu div {
-  background-color: #fff;
   width: 33%;
   padding: 20px;
 }
-.mainMegaMenu .dropdown li {
-  display: none;
-}
-.mainMegaMenu .dropdown li:hover .mainMegaMenu .dropdown ul .dropdown li{
-  display: block;
-}
+
 .mainMegaMenu h2 {
   font-size: 18px;
+  text-align: left;
+  font-weight: 700;
+}
+.mainMegaMenu li {
+  margin-bottom: 0;
 }
 .degreeCoursesData {
   display: flex;
@@ -11230,7 +11233,13 @@ featured-section .right-col .sec-title h2 {
   flex-direction: column;
 }
 .degreeCoursesData a {
-  padding: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .mainMegaMenu {
+    width: 900px;
+  }
 }
 .megamenuCourses {
   display: inline-block;
