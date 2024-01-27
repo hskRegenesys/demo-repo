@@ -3678,279 +3678,279 @@ export const courseData = {
       "ADM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   //"Applied Digital Marketing"
-  // APDM: {
-  //   processOne: [
-  //     {
-  //       id: 1,
-  //       image: "yellow-bg-details-bg-1.webp",
-  //       title: "Certification Programme in Applied Digital Marketing",
-  //       text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
-  //       lists: [
-  //         "4 Weeks Course",
-  //         "Live Sessions",
-  //         "Career Counselling",
-  //         "Guaranteed Certification",
-  //       ],
-  //     },
-  //   ],
-  //   productDescription: {
-  //     title: "Revolutionise your career with future-ready skills",
-  //     text1:
-  //       "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
-  //   },
-  //   joinReasons: {
-  //     title: "Reasons To Join This Course",
-  //     subTitle1: "Exposure",
-  //     desc1:
-  //       "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
+  APDM: {
+    processOne: [
+      {
+        id: 1,
+        image: "yellow-bg-details-bg-1.webp",
+        title: "Certification Programme in Applied Digital Marketing",
+        text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        lists: [
+          "4 Weeks Course",
+          "Live Sessions",
+          "Career Counselling",
+          "Guaranteed Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Revolutionise your career with future-ready skills",
+      text1:
+        "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1:
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
 
-  //     subTitle2: "Best-in-class instructors",
-  //     desc2:
-  //       "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
-  //     subTitle3: "Live sessions",
-  //     desc3:
-  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
-  //     subTitle4: "Tools usage",
-  //     desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-  //     bg1: "/assets/images/background/reason-bg1-1.webp",
-  //     bg2: "/assets/images/background/reason-bg2-1.webp",
-  //     bg3: "/assets/images/background/reason-bg3-1.webp",
-  //     bg4: "/assets/images/background/reason-bg4-1.webp",
-  //   },
-  //   courseTools: [
-  //     "dm/digital_marketing_tools1.webp",
-  //     "dm/digital_marketing_tools2.webp",
-  //     "dm/digital_marketing_tools3.webp",
-  //     "dm/digital_marketing_tools4.webp",
-  //     "dm/digital_marketing_tools5.webp",
-  //     "dm/digital_marketing_tools6.webp",
-  //     "dm/digital_marketing_tools7.webp",
-  //     "dm/digital_marketing_tools8.webp",
-  //     "dm/digital_marketing_tools9.webp",
-  //     "dm/digital_marketing_tools10.webp",
-  //     "dm/digital_marketing_tools11.webp",
-  //     "dm/digital_marketing_tools12.webp",
-  //     "dm/digital_marketing_tools13.webp",
-  //     "dm/digital_marketing_tools14.webp",
-  //     "dm/digital_marketing_tools15.webp",
-  //     "dm/digital_marketing_tools16.webp",
-  //   ],
-  //   featureSeven: {
-  //     title: "Meet our staff",
-  //     desc: "Revolutionise your career with future-ready skills",
-  //     features: [
-  //       {
-  //         id: 1,
-  //         image: "bhupendra_mishra.webp",
-  //         title: "Bhupendra Mishra",
-  //         text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
-  //         designation: "Senior Lecturer",
-  //       },
-  //       {
-  //         id: 2,
-  //         image: "faculty_deepika_sharma.webp",
-  //         title: "Dr. Deepika Sharma",
-  //         text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
-  //         designation: "Senior Lecturer",
-  //       },
-  //     ],
-  //   },
-  //   CourseCurriculum: [
-  //     {
-  //       id: 1,
-  //       courseCurriculumTitle: "Course curriculum",
-  //       faqs: [
-  //         {
-  //           id: 1,
-  //           title: "UX Digital Approach",
-  //           lists: ["Brand Experience & User"],
-  //         },
-  //         {
-  //           id: 2,
-  //           title: "Influencer Marketing",
-  //           lists: ["Importance of Influencer Marketing"],
-  //         },
-  //         {
-  //           id: 3,
-  //           title: "Chatbots",
-  //           lists: ["Introduction to Chatbots"],
-  //         },
-  //         {
-  //           id: 4,
-  //           title: "OTT Marketing",
-  //           lists: ["Leveraging Video Advertising"],
-  //         },
-  //         {
-  //           id: 5,
-  //           title: "Podcast",
-  //           lists: ["Importance of Podcast marketing"],
-  //         },
-  //         {
-  //           id: 6,
-  //           title: "Behavioral Digital Marketing",
-  //           lists: ["Online Consumer Behavior"],
-  //         },
-  //       ],
-  //       defaultCurrent: 1,
-  //     },
-  //   ],
-  //   videoOne: {
-  //     image: "/assets/images/background/full-video-bg.webp",
-  //     videoId: "y2Eqx6ys1hQ",
-  //     title: "Linoor is trusted by millions of customers",
-  //     text1:
-  //       "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
-  //     text2:
-  //       "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
-  //   },
-  //   faqsSection: [
-  //     {
-  //       id: 1,
-  //       faqs: [
-  //         {
-  //           id: 1,
-  //           title:
-  //             "Do I Need To Have Prior Digital Marketing Knowledge Or Experience To Learn This Course?",
-  //           text: "No, this course does not demand you to have technical understanding about Digital Marketing. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
-  //         },
-  //         {
-  //           id: 2,
-  //           title: "What Are The Modes Of Payment Available For Me?",
-  //           text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
-  //         },
-  //         {
-  //           id: 3,
-  //           title: "Will Digital Regenesys Offer Me Job Assistance?",
-  //           text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
-  //         },
-  //         {
-  //           id: 4,
-  //           title:
-  //             "For How Long Will I Be Able To Access The Content After My Course Completion?",
-  //           text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
-  //         },
-  //         {
-  //           id: 5,
-  //           title: "Is This A Certified Course?",
-  //           text: "Yes, all the courses are certified by the Regenesys Business School.",
-  //         },
-  //         {
-  //           id: 6,
-  //           title:
-  //             "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-  //           text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
-  //         },
-  //         {
-  //           id: 7,
-  //           title:
-  //             "How Will I Get Access To The Assignments And Learning Content?",
-  //           text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
-  //         },
-  //         {
-  //           id: 8,
-  //           title: "What If The Course Timings Don't Match My Work Timings?",
-  //           text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
-  //         },
-  //       ],
-  //       defaultCurrent: 1,
-  //     },
-  //   ],
-  //   courseBenefits: {
-  //     title: "Benefits",
-  //     desc: "",
-  //     tabBtns: [
-  //       {
-  //         id: "tab-1",
-  //         title: "Career Support",
-  //       },
-  //       {
-  //         id: "tab-2",
-  //         title: "Doubt Resolution",
-  //       },
-  //       {
-  //         id: "tab-3",
-  //         title: "Learning Support",
-  //       },
-  //       {
-  //         id: "tab-4",
-  //         title: "Networking",
-  //       },
-  //     ],
-  //     tabsContents: [
-  //       {
-  //         id: "tab-1",
-  //         image: "featured-image-14.jpg",
+      subTitle4: "Tools usage",
+      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    courseTools: [
+      "dm/digital_marketing_tools1.webp",
+      "dm/digital_marketing_tools2.webp",
+      "dm/digital_marketing_tools3.webp",
+      "dm/digital_marketing_tools4.webp",
+      "dm/digital_marketing_tools5.webp",
+      "dm/digital_marketing_tools6.webp",
+      "dm/digital_marketing_tools7.webp",
+      "dm/digital_marketing_tools8.webp",
+      "dm/digital_marketing_tools9.webp",
+      "dm/digital_marketing_tools10.webp",
+      "dm/digital_marketing_tools11.webp",
+      "dm/digital_marketing_tools12.webp",
+      "dm/digital_marketing_tools13.webp",
+      "dm/digital_marketing_tools14.webp",
+      "dm/digital_marketing_tools15.webp",
+      "dm/digital_marketing_tools16.webp",
+    ],
+    featureSeven: {
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
+      features: [
+        {
+          id: 1,
+          image: "bhupendra_mishra.webp",
+          title: "Bhupendra Mishra",
+          text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 2,
+          image: "faculty_deepika_sharma.webp",
+          title: "Dr. Deepika Sharma",
+          text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
+          designation: "Senior Lecturer",
+        },
+      ],
+    },
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "UX Digital Approach",
+            lists: ["Brand Experience & User"],
+          },
+          {
+            id: 2,
+            title: "Influencer Marketing",
+            lists: ["Importance of Influencer Marketing"],
+          },
+          {
+            id: 3,
+            title: "Chatbots",
+            lists: ["Introduction to Chatbots"],
+          },
+          {
+            id: 4,
+            title: "OTT Marketing",
+            lists: ["Leveraging Video Advertising"],
+          },
+          {
+            id: 5,
+            title: "Podcast",
+            lists: ["Importance of Podcast marketing"],
+          },
+          {
+            id: 6,
+            title: "Behavioral Digital Marketing",
+            lists: ["Online Consumer Behavior"],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+    faqsSection: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title:
+              "Do I Need To Have Prior Digital Marketing Knowledge Or Experience To Learn This Course?",
+            text: "No, this course does not demand you to have technical understanding about Digital Marketing. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
+          },
+          {
+            id: 2,
+            title: "What Are The Modes Of Payment Available For Me?",
+            text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+          },
+          {
+            id: 3,
+            title: "Will Digital Regenesys Offer Me Job Assistance?",
+            text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+          },
+          {
+            id: 4,
+            title:
+              "For How Long Will I Be Able To Access The Content After My Course Completion?",
+            text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+          },
+          {
+            id: 5,
+            title: "Is This A Certified Course?",
+            text: "Yes, all the courses are certified by the Regenesys Business School.",
+          },
+          {
+            id: 6,
+            title:
+              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+          },
+          {
+            id: 7,
+            title:
+              "How Will I Get Access To The Assignments And Learning Content?",
+            text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+          },
+          {
+            id: 8,
+            title: "What If The Course Timings Don't Match My Work Timings?",
+            text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "100% Career Counselling",
-  //           "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-  //           "Elevate your LinkedIn game with a comprehensive profile building session",
-  //         ],
-  //       },
-  //       {
-  //         id: "tab-2",
-  //         image: "featured-image-14.jpg",
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "Solve all your queries with one-on-one interaction during the lectures",
-  //           "Ask questions, get answers and complete support from the faculty",
-  //           "Enhanced learning experience offered by our highly experienced and achieved faculties",
-  //         ],
-  //       },
-  //       {
-  //         id: "tab-3",
-  //         image: "featured-image-14.jpg",
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "Get unlimited learning access for 1 year to the learning management system",
-  //           "Receive proper guidance as per your special requirements from our faculties",
-  //           "Access the recorded lectures in case you miss a session",
-  //         ],
-  //       },
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
+          ],
+        },
 
-  //       {
-  //         id: "tab-4",
-  //         image: "featured-image-14.jpg",
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-  //           "Connect with the Industry experts who will help you guide through your career after course completion",
-  //           "Talk, share, connect, learn and grow along with other students in your batch",
-  //         ],
-  //       },
-  //     ],
-  //   },
-  //   productDetails: {
-  //     flagsa: "/assets/images/icons/flag_sa.webp",
-  //     flagnig: "/assets/images/icons/flag_nigeria.webp",
-  //     flagus: "/assets/images/icons/flag_us.webp",
-  //     flagind: "/assets/images/icons/flag_india.webp",
-  //     flagken: "/assets/images/icons/flag_kenya.webp",
-  //     title: "Fees structure & Certification",
-  //     subTitle: "Get Certified",
-  //     price: 64499,
-  //     certifiedTitle1: "Earn your Digital Marketing certificate.",
-  //     certifiedText1:
-  //       "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Digital Marketing Career.",
-  //     certifiedTitle2: "Share Your Achievement",
+          lists: [
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn your Digital Marketing certificate.",
+      certifiedText1:
+        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Digital Marketing Career.",
+      certifiedTitle2: "Share Your Achievement",
 
-  //     certifiedText2:
-  //       "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
-  //     certifiedTitle3: "Benefits",
-  //     certifiedText3:
-  //       "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
-  //     admissionText:
-  //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
-  //     termsConditions: "*Terms & Conditions",
-  //     CsFundamentals: "Total Admission Fee",
-  //     CsDefenceToolbox: "Cybersecurity Defence Toolbox",
-  //   },
-  //   zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
-  //   stickyText:
-  //     "APDM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-  // },
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv40r/",
+    stickyText:
+      "APDM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
   //"Basic Digital Marketing Course"
   BDMC: {
     processOne: [

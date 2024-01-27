@@ -29,16 +29,16 @@ const teamSection = {
     //   name: "Basic Digital Marketing Course",
     //   href: "/all-courses/digital-marketing/basic-digital-marketing-course",
     // },
-    // {
-    //   id: 10,
-    //   name: "Advance Digital Marketing Course",
-    //   href: "/all-courses/digital-marketing/advance-digital-marketing-course",
-    // },
-    // {
-    //   id: 11,
-    //   name: "Applied Digital Marketing",
-    //   href: "/all-courses/digital-marketing/applied-digital-marketing",
-    // },
+    {
+      id: 10,
+      name: "Advance Digital Marketing Course",
+      href: "/all-courses/digital-marketing/advance-digital-marketing-course",
+    },
+    {
+      id: 11,
+      name: "Applied Digital Marketing",
+      href: "/all-courses/digital-marketing/applied-digital-marketing",
+    },
     {
       id: 2,
       name: "Project Management",
@@ -64,11 +64,11 @@ const teamSection = {
       name: "Applied Data Science",
       href: "/all-courses/data-science/applied-data-science",
     },
-    // {
-    //   id: 11,
-    //   name: "Design Thinking",
-    //   href: "/all-courses/design-thinking",
-    // },
+    {
+      id: 11,
+      name: "Design Thinking",
+      href: "/all-courses/design-thinking",
+    },
     {
       id: 12,
       name: "Artificial Intelligence",

@@ -99,7 +99,7 @@ const HeaderOne = ({
     );
 
     //const course = ["DSCI", "DM", "PM", "CSC", "DTC", "AI"];
-    const course = ["DSCI", "PM", "CSC", "DTC", "AI"];
+    const course = ["DSCI", "PM", "DM", "CSC", "DTC", "DT", "AI"];
     const coursesSubItem: any = [];
     course.forEach((courseCode) => {
       if (filterData?.length) {
