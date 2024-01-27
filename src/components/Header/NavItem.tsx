@@ -134,29 +134,34 @@ const NavItem = (props: any) => {
       </Link>
 
       {subNavItems?.length > 0 && (
-        <ul
-          style={{
-            display: !menuStatus || active ? "inline-block" : "none",
-          }}
-        >
-          <div className="row">
-            <div className="col-md-4">
+        <ul>
+          <div className="mainMegaMenu">
+            <div className="megamenuCourses">
               {subNavItems?.map((subItem: any) => (
                 <SubItem className="block" key={subItem.id} subItem={subItem} />
               ))}
             </div>
-            <div className="col-md-4">
-              <div className="degreeCoursesData">
-                {degreeProgrammesData?.map((item) => {
-                  return (
-                    <>
-                      <Link href={item.courseUrl}>{item.courseName}</Link>
-                    </>
-                  );
-                })}
-              </div>
+
+            <div className="degreeCoursesData">
+              <h2>Training Programmes</h2>
+              {degreeProgrammesData?.map((item) => {
+                return (
+                  <>
+                    <Link href={item.courseUrl}>{item.courseName}</Link>
+                  </>
+                );
+              })}
             </div>
-            <div className="col-md-4">sjbvhjws</div>
+            <div className="degreeCoursesData">
+              <h2>Training Programmes</h2>
+              {degreeProgrammesData?.map((item) => {
+                return (
+                  <>
+                    <Link href={item.courseUrl}>{item.courseName}</Link>
+                  </>
+                );
+              })}
+            </div>
           </div>
         </ul>
       )}
