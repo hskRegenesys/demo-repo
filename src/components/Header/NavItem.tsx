@@ -65,6 +65,7 @@ const NavItem = (props: any) => {
   const { menuStatus, toggleMenu, currentActive } = contextRoot;
   const { name, href, subNavItems = [] } = navItem;
   const subHref = subNavItems?.map((item: any) => item.href);
+
   const current = !onePage
     ? pathname === href || subHref.includes(pathname)
     : currentActive === href;
@@ -73,6 +74,45 @@ const NavItem = (props: any) => {
     e.preventDefault();
     setActive((preActive) => !preActive);
   };
+  //degree programmes
+  const degreeProgrammesData = [
+    {
+      courseName: "MBA",
+      courseUrl: "https://www.regenesys.net/master-of-business-administration",
+    },
+    {
+      courseName: "BPM",
+      courseUrl: "https://www.regenesys.net/master-of-business-administration",
+    },
+    {
+      courseName: "DBM",
+      courseUrl: "",
+    },
+    {
+      courseName: "NDPA",
+      courseUrl: "",
+    },
+    {
+      courseName: "PDBM",
+      courseUrl: "",
+    },
+    {
+      courseName: "HCPM",
+      courseUrl: "",
+    },
+    {
+      courseName: "BBA",
+      courseUrl: "",
+    },
+    {
+      courseName: "BBAB",
+      courseUrl: "",
+    },
+    {
+      courseName: "BBAR",
+      courseUrl: "",
+    },
+  ];
 
   return (
     <li className={`dropdown${current ? " current" : ""}`}>
@@ -96,12 +136,28 @@ const NavItem = (props: any) => {
       {subNavItems?.length > 0 && (
         <ul
           style={{
-            display: !menuStatus || active ? "block" : "none",
+            display: !menuStatus || active ? "inline-block" : "none",
           }}
         >
-          {subNavItems?.map((subItem: any) => (
-            <SubItem key={subItem.id} subItem={subItem} />
-          ))}
+          <div className="row">
+            <div className="col-md-4">
+              {subNavItems?.map((subItem: any) => (
+                <SubItem className="block" key={subItem.id} subItem={subItem} />
+              ))}
+            </div>
+            <div className="col-md-4">
+              <div className="degreeCoursesData">
+                {degreeProgrammesData?.map((item) => {
+                  return (
+                    <>
+                      <Link href={item.courseUrl}>{item.courseName}</Link>
+                    </>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="col-md-4">sjbvhjws</div>
+          </div>
         </ul>
       )}
     </li>
