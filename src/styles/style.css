@@ -11112,8 +11112,8 @@ featured-section .right-col .sec-title h2 {
 
 .mobile-nav__container {
   padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 50px;
+  padding-right: 30px;
+  padding-top: 25px;
 }
 
 .mobile-nav__container ul {
@@ -11136,7 +11136,8 @@ featured-section .right-col .sec-title h2 {
 
 .mobile-nav__container li.dropdown {
   position: relative;
-  padding: 15px 0;
+  padding: 5px 0;
+  text-align: left;
 }
 
 .mobile-nav__container li.dropdown > a {
@@ -11147,7 +11148,8 @@ featured-section .right-col .sec-title h2 {
   padding-right: 25px;
   vertical-align: middle;
   font-family: "Raleway-bold";
-  font-size: 24px;
+  font-size: 16px;
+  line-height: normal;
 }
 
 .mobile-nav__container li > a > span {
@@ -11199,9 +11201,40 @@ featured-section .right-col .sec-title h2 {
 }
 
 .mobile-nav__container li + li {
-  margin-top: 10px;
+  margin-top: 0px;
 }
-
+.mainMegaMenu {
+  display: flex;
+  position: absolute;
+  left: -400px;
+  top: -20px;
+  width: 900px;
+}
+.mainMegaMenu div {
+  background-color: #fff;
+  width: 33%;
+  padding: 20px;
+}
+.mainMegaMenu .dropdown li {
+  display: none;
+}
+.mainMegaMenu .dropdown li:hover .mainMegaMenu .dropdown ul .dropdown li{
+  display: block;
+}
+.mainMegaMenu h2 {
+  font-size: 18px;
+}
+.degreeCoursesData {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+}
+.degreeCoursesData a {
+  padding: 20px;
+}
+.megamenuCourses {
+  display: inline-block;
+}
 .mobile-nav__container li a {
   color: #000000;
   font-size: 20px;
@@ -11358,7 +11391,7 @@ featured-section .right-col .sec-title h2 {
   .side-menu__top,
   .side-menu__content,
   .mobile-nav__container {
-    padding-left: 25px;
+    padding-left: 5px;
     padding-right: 25px;
   }
 
@@ -20341,17 +20374,16 @@ h2.highlight {
 
 .mobile-nav__container li.dropdown ul li a {
   color: #000000;
-  font-size: 20px !important;
+  font-size: 16px !important;
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: normal;
   font-weight: 500;
   display: flex;
   transition: all 500ms ease;
   font-family: "Raleway", sans-serif;
   position: relative;
-  justify-content: center;
-  padding: 10px;
-  font-size: 26px;
+  justify-content: left;
+  padding: 5px;
 }
 
 /* sticky css */
@@ -21582,14 +21614,7 @@ h2.highlight {
   background: linear-gradient(180deg, #40ffaf 0.12%, #0be770 114.84%);
   animation: blink 2s linear infinite;
 }
-.degreeCoursesData {
-  display: flex;
-  width: 200px;
-  flex-direction: column;
-}
-.degreeCoursesData a {
-  padding: 20px;
-}
+
 @keyframes blink {
   0% {
     opacity: 0;
