@@ -333,6 +333,13 @@ function ImageModalPopup(props: any) {
                             {errors?.Programme_Of_Interest?.message}
                           </small>
                         )}
+                        {(programmeOfInterest === "Digital Marketing" ||
+                          programmeOfInterest === "Design Thinking") && (
+                          <small className="text-black">
+                            *Learn collaboratively! Course begins with 15. Apply
+                            as a group of 15 or more.
+                          </small>
+                        )}
                       </div>
                     </div>
                     {/* <div className="col-md-12 d-none">

@@ -394,6 +394,15 @@ function ModalPopup(props: any) {
                       )}
                     </div>
                   </div> */}
+                      <div className="text-center">
+                      {(programmeOfInterest === "Digital Marketing" ||
+                        programmeOfInterest === "Design Thinking") && (
+                        <small className="text-black">
+                          *Learn collaboratively! Course begins with 15. Apply
+                          as a group of 15 or more.
+                        </small>
+                      )}
+                    </div>
                   <div className="d-flex mt-3 justify-content-center align-items-center">
                     {/* <button
                 className="theme-btn btn-style-two mr-2"
@@ -402,7 +411,7 @@ function ModalPopup(props: any) {
                 <i className="btn-curve"></i>
                 <span className="btn-title">Cancel</span>
               </button> */}
-
+                
                     <button
                       type="submit"
                       className="theme-btn btn-style-two"
