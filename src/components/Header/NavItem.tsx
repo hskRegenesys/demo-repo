@@ -250,9 +250,10 @@ const NavItem = (props: any) => {
                                   key={item.id}
                                   className={`dropdown`}
                                   style={{
-                                    listStyle: "block",
-                                    listStyleType: "circle",
+                                    listStyle: "none",
+                                    listStyleType: "disc",
                                     marginLeft: "30px",
+                                    color:"#697386 "
                                   }}
                                 >
                                   <a
