@@ -850,7 +850,7 @@ img {
 }
 
 .main-menu .navigation a:hover {
-  color: #1fa393;
+  color: #1fa393 !important;
 }
 
 .main-menu .navigation li > a {
@@ -11199,6 +11199,13 @@ featured-section .right-col .sec-title h2 {
   transform: rotate(-90deg);
   color: var(--thm-black);
 }
+.inlineDegreeCourse {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+.inlineDegreeCourse a {
+  width: 50%;
+}
 
 .mobile-nav__container li + li {
   margin-top: 0px;
@@ -11206,17 +11213,26 @@ featured-section .right-col .sec-title h2 {
 .mainMegaMenu {
   display: flex;
   position: absolute;
-  left: -756px;
-  top: -0px;
-  width: 1345px;
+  left: -80px;
+  top: 0px;
+  width: 100vw;
   justify-content: space-evenly;
-  gap: 100px;
-  background-color: #fff;
-  padding: 40px 108px;
+  grid-gap: 50px;
+  gap: 50px;
+  background-color: #f5fdf8;
+  padding: 7% 5%;
+  transform: translate(-50%, 0px);
+}
+.mainMegaMenu a {
+  color: #697386 !important;
+  font-size: 16px;
+  font-weight: 500;
 }
 .mainMegaMenu div {
   width: 33%;
   padding: 20px;
+  text-align: left;
+  background-color: #f5fdf8;
 }
 
 .mainMegaMenu h2 {
@@ -11231,8 +11247,20 @@ featured-section .right-col .sec-title h2 {
   display: flex;
   width: 200px;
   flex-direction: column;
+  border-left: 1px solid #E3E8EE;
+  border-right: 1px solid #E3E8EE;
 }
 .degreeCoursesData a {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.trainingProgrammeData {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+}
+.trainingProgrammeData a {
   margin-bottom: 10px;
   text-align: left;
 }
