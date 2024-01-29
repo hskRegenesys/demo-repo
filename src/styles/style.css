@@ -11244,6 +11244,37 @@ featured-section .right-col .sec-title h2 {
   padding-top: 10px;
   margin-bottom: 0;
 }
+
+.mobile-nav-new {
+}
+.mobile-nav-item-new a {
+  color: #697386 !important;
+}
+.mobile-nav-item-new {
+  padding: 20px;
+  color: var(--Light-Text-Secondary, #697386);
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+.drop-down-li {
+  display: flex;
+  padding: 8px 16px 8px 34px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.drop-down-subNavItem {
+  display: flex;
+  padding: 8px 16px 8px 52px;
+  flex-direction: column;
+  gap: 12px;
+  align-self: stretch;
+}
+
 .degreeCoursesData {
   display: flex;
   width: 200px;
@@ -11269,7 +11300,92 @@ featured-section .right-col .sec-title h2 {
   .mainMegaMenu {
     width: 900px;
   }
+  .inlineDegreeCourse {
+    display: grid;
+    grid-template-columns: 100px 100px;
+  }
+  .inlineDegreeCourse a {
+    width: 50%;
+  }
+  .degreeCoursesData {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin-left: 46px;
+    border-left: none;
+    border-right: none;
+  }
+  .degreeCoursesData a {
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--Light-Text-Secondary, #697386);
+
+    /* Body/Body - Tertiary */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+  }
+  .drop-down-3 {
+    margin-left: 46px;
+  }
+  .drop-down-3 a {
+    margin-bottom: 15px;
+    color: var(--Light-Text-Secondary, #697386);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+  }
+
+  .mobile-sub-nav-item-new {
+    display: flex;
+    padding: 8px 0px 8px 25px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+  }
+  .mobile-sub-nav-item-new a {
+    color: var(--Light-Text-Secondary, #697386);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+  }
+  .login-mobile {
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+    width: 83%;
+  }
+  .login-mobile-link {
+    width: 100%;
+    height: 43px;
+    display: inline-block;
+
+    border-top: 1px solid var(--light-divider-borders-green, #008554);
+    background: var(--Light-Surface-Success, #f0fdf4);
+  }
+
+  .btn-title-Mobile {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Light-Text-Green, #008554);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.12px;
+  }
 }
+
 .megamenuCourses {
   display: inline-block;
 }

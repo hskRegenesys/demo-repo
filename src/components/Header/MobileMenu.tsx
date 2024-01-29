@@ -50,36 +50,37 @@ const MobileMenu = ({ onePage = false }) => {
             </a>
           </div>
 
-          <nav className="mobile-nav__container">
+          <nav className="mobile-nav-new">
             <div
               className="collapse navbar-collapse show clearfix"
               id="navbarSupportedContent"
             >
-              <ul className="navigation clearfix">
+              {/* <ul className="navigation clearfix">
                 {newNavItems?.map((navItem) => (
                   <NavItem navItem={navItem} key={navItem.id} mobile />
                 ))}
-              </ul>
+              </ul> */}
+              <div>
+                <NavItem />
+              </div>
             </div>
           </nav>
-          <div className="side-menu__content">
-            <div className="link-box mt-5">
-              <Link href="https://mydigital.regenesys.net/login/index.php">
-                <a target="_blank" className="theme-btn btn-style-four w100">
-                  <i className="btn-curve"></i>
-                  <span className="btn-title">Login</span>
-                </a>
-              </Link>
-              {/* request url */}
+          <div className="login-mobile">
+            <Link href="https://mydigital.regenesys.net/login/index.php">
+              <a target="_blank" className="login-mobile-link">
+                {/* <i className="btn-curve"></i> */}
+                <span className="btn-title-Mobile">Login</span>
+              </a>
+            </Link>
+            {/* request url */}
 
-              <a
+            {/* <a
                 className="theme-btn btn-style-two w100 mt-5"
                 onClick={handleShow}
               >
                 <i className="btn-curve"></i>
                 <span className="btn-title">Request a call</span>
-              </a>
-            </div>
+              </a> */}
           </div>
         </div>
       </div>
