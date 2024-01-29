@@ -1,7 +1,7 @@
 // NavItemWithSubItem.tsx
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
 
@@ -33,8 +33,17 @@ const NavItem = (props: any) => {
     setActiveSubItem(null);
   };
 
-  const isMobileView = typeof window !== "undefined" && window.innerWidth < 920;
+  // const isMobileView = typeof window !== "undefined" && window.innerWidth < 920;
+  const [isMobileView, setIsMobileView] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 920);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);   
   // Degree programmes data
   const degreeProgrammesData = [
     {
