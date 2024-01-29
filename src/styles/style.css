@@ -1002,7 +1002,7 @@ img {
   position: absolute;
   left: 100%;
   top: 0;
-  width: 220px;
+  width: 350px;
   z-index: 100;
   display: none;
   background: #ffffff;
@@ -11216,6 +11216,7 @@ featured-section .right-col .sec-title h2 {
   left: -80px;
   top: 0px;
   width: 100vw;
+  height: 100vh;
   justify-content: space-evenly;
   grid-gap: 50px;
   gap: 50px;
@@ -11230,7 +11231,7 @@ featured-section .right-col .sec-title h2 {
 }
 .mainMegaMenu div {
   width: 33%;
-  padding: 0px 20px;
+  padding: 20px;
   text-align: left;
   background-color: #f5fdf8;
 }
@@ -11241,7 +11242,6 @@ featured-section .right-col .sec-title h2 {
   font-weight: 700;
 }
 .mainMegaMenu li {
-  padding-top: 10px;
   margin-bottom: 0;
 }
 
