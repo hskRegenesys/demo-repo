@@ -6,6 +6,7 @@ import { Image } from "react-bootstrap";
 import Link from "next/link";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
+import ImageLogin from "next/image";
 
 const { icon, navItems, navItemsTwo } = headerData;
 
@@ -69,7 +70,21 @@ const MobileMenu = ({ onePage = false }) => {
             <Link href="https://mydigital.regenesys.net/login/index.php">
               <a target="_blank" className="login-mobile-link">
                 {/* <i className="btn-curve"></i> */}
-                <span className="btn-title-Mobile">Login</span>
+                <span
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    padding: "10px 20px",
+                  }}
+                >
+                  <ImageLogin
+                    layout="intrinsic"
+                    width="24"
+                    height="24"
+                    src={"/assets/images/icons/icon_login.svg"}
+                  />
+                  <span className="btn-title-Mobile m-2">Login</span>
+                </span>
               </a>
             </Link>
             {/* request url */}
