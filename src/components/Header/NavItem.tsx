@@ -157,18 +157,20 @@ const NavItem = (props: any) => {
           {name}
           {subNavItems?.length > 0 && (
             <div
-              onMouseEnter={() => handleHover(subNavItems[0].name)}
               className={`dropdown-btn${
-                activeSubItem === subNavItems[0].name ? " open" : ""
+                activeSubItem === subNavItems.name ? " open" : ""
               }`}
             >
-              <span className="fa fa-angle-right"></span>
+              <span
+                className="fa fa-angle-right"
+                onMouseEnter={() => handleHover(subNavItems.name)}
+              ></span>
             </div>
           )}
         </a>
       </Link>
       {subNavItems?.length > 0 && (
-        <ul onMouseEnter={() => handleHover(subNavItems[0].name)}>
+        <ul>
           {subNavItems.map((subItem: any) => (
             <>
               {subItem.name === "Blog Categories" ? (
@@ -177,7 +179,6 @@ const NavItem = (props: any) => {
                   className={`${subItem.subItems?.length ? "dropdown" : ""} ${
                     pathname === subItem.href ? "current" : ""
                   }`}
-                  onMouseEnter={() => handleHover(subItem.name)}
                 >
                   <a href={subItem.href}>{subItem.name}</a>
 
@@ -190,22 +191,21 @@ const NavItem = (props: any) => {
                     }}
                   >
                     {subItem.subItems?.map((item: any) => (
-                      <li
-                        key={item.id}
-                        style={{ listStyleType: "circle", marginLeft: "30px" }}
-                      >
+                      <li key={item.id} style={{ marginLeft: "30px" }}>
                         <a
                           href={item.href}
                           style={{ fontSize: "14px", fontWeight: "400" }}
                         >
-                          {item.name }
+                          {item.name}
                         </a>
                       </li>
                     ))}
                   </ul>
                 </li>
               ) : (
-                <ul onMouseEnter={() => handleHover(subNavItems[0]?.name)}>
+                <ul
+                //  onMouseEnter={() => handleHover(subNavItems?.name)}
+                >
                   <div className="mainMegaMenu">
                     <div className="megamenuCourses">
                       <h2>Certificate Courses</h2>
@@ -216,13 +216,15 @@ const NavItem = (props: any) => {
                           className={`${
                             subItem.subItems?.length ? "dropdown" : ""
                           } ${pathname === subItem.href ? "current" : ""}`}
-                          onMouseEnter={() => handleHover(subItem.name)}
                         >
                           <a href={subItem.href}>
                             {subItem.name} {subItem.isNew && <span>new</span>}
                             {!!subItem.subItems?.length && (
                               <div>
-                                <span className="fa fa-angle-right"></span>
+                                <span
+                                  className="fa fa-angle-down"
+                                  onMouseEnter={() => handleHover(subItem.name)}
+                                ></span>
                               </div>
                             )}
                           </a>

@@ -11230,7 +11230,7 @@ featured-section .right-col .sec-title h2 {
 }
 .mainMegaMenu div {
   width: 33%;
-  padding: 20px;
+  padding: 0px 20px;
   text-align: left;
   background-color: #f5fdf8;
 }
@@ -11241,14 +11241,15 @@ featured-section .right-col .sec-title h2 {
   font-weight: 700;
 }
 .mainMegaMenu li {
+  padding-top: 10px;
   margin-bottom: 0;
 }
 .degreeCoursesData {
   display: flex;
   width: 200px;
   flex-direction: column;
-  border-left: 1px solid #E3E8EE;
-  border-right: 1px solid #E3E8EE;
+  border-left: 1px solid #e3e8ee;
+  border-right: 1px solid #e3e8ee;
 }
 .degreeCoursesData a {
   margin-bottom: 10px;
