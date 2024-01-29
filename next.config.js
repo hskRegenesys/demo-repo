@@ -1075,10 +1075,10 @@ const createReWrites = () => {
       source: "/all-courses/artificial-intelligence/ai-advanced-applied",
       destination: "/all-courses/ai-advanced-applied/403",
     },
-    {
-      source: "/:path*",
-      destination: "/404",
-    },
+    // {
+    //   source: '/:path*',
+    //   destination: '/404',
+    // },
   ];
   return paths;
 };
