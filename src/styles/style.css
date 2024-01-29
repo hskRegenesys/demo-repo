@@ -11068,7 +11068,7 @@ featured-section .right-col .sec-title h2 {
   max-width: 520px;
   height: 100%;
   overflow-y: auto;
-  background-color: #ffffff;
+  background-color: #F2F4F7;
   z-index: 999999;
   padding: 40px 0;
   padding-top: 20px;
@@ -11251,7 +11251,7 @@ featured-section .right-col .sec-title h2 {
   color: #697386 !important;
 }
 .mobile-nav-item-new {
-  padding: 20px;
+  padding: 10px 20px;
   color: var(--Light-Text-Secondary, #697386);
   font-family: Montserrat-Bold;
   font-size: 14px;

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
+import Image from "next/image";
 
 const { icon, navItems, navItemsTwo } = headerData;
 
@@ -41,9 +42,9 @@ const NavItem = (props: any) => {
       setIsMobileView(window.innerWidth < 920);
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);   
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // Degree programmes data
   const degreeProgrammesData = [
     {
@@ -198,147 +199,168 @@ const NavItem = (props: any) => {
   const toggleCoursesDropdown3 = () => {
     setShowCoursesDropdown3(!showCoursesDropdown3);
   };
+  const mobileIcons = [
+    "/assets/images/icons/icon_Home.png",
+    "/assets/images/icons/Icon_courses.png",
+    "/assets/images/icons/icon_about.png",
+    "/assets/images/icons/icon_blog.png",
+    "/assets/images/icons/icon_contact.png",
+  ];
   return (
     <>
       {isMobileView ? (
         <div>
           <ul className="mobile-nav-new">
-            {newNavItems.map((navItem: any) => (
-              <li
-                key={navItem.id}
-                className={`mobile-nav-item-new ${
-                  activeDropdown === navItem.name ? "active" : ""
-                }`}
-              >
-                <Link href={navItem.href}>
-                  <a
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    {navItem.name}
-                    {navItem.subNavItems && navItem.subNavItems.length > 0 && (
-                      <span
-                        className="fa fa-angle-right"
-                        onClick={() => handleDropdownClick(navItem.name)}
-                      ></span>
-                    )}
-                  </a>
-                </Link>
-                {activeDropdown === navItem.name && (
-                  <div className="drop-down-1">
-                    <ul>
-                      <li
-                        className="drop-down-li"
-                        onClick={toggleCoursesDropdown1}
-                      >
-                        Course Overview
-                        <span className="fa fa-angle-right"></span>
-                      </li>
-                      {showCoursesDropdown1 && (
-                        <div>
-                          {navItem.subNavItems &&
-                            navItem.subNavItems.length > 0 && (
-                              <ul className="drop-down-container-new">
-                                {navItem.subNavItems.map((subNavItem: any) => (
-                                  <li
-                                    key={subNavItem.id}
-                                    className="drop-down-subNavItem"
-                                  >
-                                    <a
-                                      style={{
-                                        display: "flex",
-                                        justifyContent: "space-between",
-                                      }}
-                                    >
-                                      <Link href={subNavItem.href}>
-                                        {subNavItem.name}
-                                      </Link>
+            {newNavItems.map((navItem: any, id: any) => (
+              <>
+                <li
+                  key={navItem.id}
+                  className={`mobile-nav-item-new ${
+                    activeDropdown === navItem.name ? "active" : ""
+                  }`}
+                >
+                  <Link href={navItem.href}>
+                    <a
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image
+                        layout="intrinsic"
+                        width="24"
+                        height="24"
+                        src={mobileIcons[id]}
+                      />
+                      <span className="m-2">{navItem.name}</span>
+                      {navItem.subNavItems &&
+                        navItem.subNavItems.length > 0 && (
+                          <span
+                            className="fa fa-angle-right me-2"
+                            onClick={() => handleDropdownClick(navItem.name)}
+                          ></span>
+                        )}
+                    </a>
+                  </Link>
+                  {activeDropdown === navItem.name && (
+                    <div className="drop-down-1">
+                      <ul>
+                        <li
+                          className="drop-down-li"
+                          onClick={toggleCoursesDropdown1}
+                        >
+                          Certificate Courses
+                          <span className="fa fa-angle-right"></span>
+                        </li>
+                        {showCoursesDropdown1 && (
+                          <div>
+                            {navItem.subNavItems &&
+                              navItem.subNavItems.length > 0 && (
+                                <ul className="drop-down-container-new">
+                                  {navItem.subNavItems.map(
+                                    (subNavItem: any) => (
+                                      <li
+                                        key={subNavItem.id}
+                                        className="drop-down-subNavItem"
+                                      >
+                                        <a
+                                          style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                          }}
+                                        >
+                                          <Link href={subNavItem.href}>
+                                            {subNavItem.name}
+                                          </Link>
 
-                                      {subNavItem.subItems &&
-                                        subNavItem.subItems.length > 0 && (
-                                          <span
-                                            className="fa fa-angle-right"
-                                            onClick={() =>
-                                              handleSubDropdownClick(
-                                                subNavItem.name
-                                              )
-                                            }
-                                          ></span>
-                                        )}
-                                    </a>
-                                    {activeSubDropdown === subNavItem.name &&
-                                      subNavItem.subItems &&
-                                      subNavItem.subItems.length > 0 && (
-                                        <ul className="mobile-sub-nav-new">
-                                          {subNavItem.subItems.map(
-                                            (subSubItem: any) => (
-                                              <li
-                                                key={subSubItem.id}
-                                                className="mobile-sub-nav-item-new"
-                                              >
-                                                <Link href={subSubItem.href}>
-                                                  <a>{subSubItem.name}</a>
-                                                </Link>
-                                              </li>
-                                            )
+                                          {subNavItem.subItems &&
+                                            subNavItem.subItems.length > 0 && (
+                                              <span
+                                                className="fa fa-angle-right"
+                                                onClick={() =>
+                                                  handleSubDropdownClick(
+                                                    subNavItem.name
+                                                  )
+                                                }
+                                              ></span>
+                                            )}
+                                        </a>
+                                        {activeSubDropdown ===
+                                          subNavItem.name &&
+                                          subNavItem.subItems &&
+                                          subNavItem.subItems.length > 0 && (
+                                            <ul className="mobile-sub-nav-new">
+                                              {subNavItem.subItems.map(
+                                                (subSubItem: any) => (
+                                                  <li
+                                                    key={subSubItem.id}
+                                                    className="mobile-sub-nav-item-new"
+                                                  >
+                                                    <Link
+                                                      href={subSubItem.href}
+                                                    >
+                                                      <a>{subSubItem.name}</a>
+                                                    </Link>
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
                                           )}
-                                        </ul>
-                                      )}
-                                  </li>
+                                      </li>
+                                    )
+                                  )}
+                                </ul>
+                              )}
+                          </div>
+                        )}
+                      </ul>
+                      <ul>
+                        <li
+                          className="drop-down-li"
+                          onClick={toggleCoursesDropdown2}
+                        >
+                          Degree Programs{" "}
+                          <span className="fa fa-angle-right"></span>
+                        </li>
+                        {showCoursesDropdown2 && (
+                          <div className="drop-down-2">
+                            <div className="degreeCoursesData">
+                              <div className="inlineDegreeCourse">
+                                {degreeProgrammesData?.map((item) => (
+                                  <Link
+                                    key={item.courseName}
+                                    href={item.courseUrl}
+                                  >
+                                    {item.courseName}
+                                  </Link>
                                 ))}
-                              </ul>
-                            )}
-                        </div>
-                      )}
-                    </ul>
-                    <ul>
-                      <li
-                        className="drop-down-li"
-                        onClick={toggleCoursesDropdown2}
-                      >
-                        Degree Programs{" "}
-                        <span className="fa fa-angle-right"></span>
-                      </li>
-                      {showCoursesDropdown2 && (
-                        <div className="drop-down-2">
-                          <div className="degreeCoursesData">
-                            <div className="inlineDegreeCourse">
-                              {degreeProgrammesData?.map((item) => (
-                                <Link
-                                  key={item.courseName}
-                                  href={item.courseUrl}
-                                >
-                                  {item.courseName}
-                                </Link>
-                              ))}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      )}
-                    </ul>
-                    <ul>
-                      <li
-                        className="drop-down-li"
-                        onClick={toggleCoursesDropdown3}
-                      >
-                        Trending Programs{" "}
-                        <span className="fa fa-angle-right"></span>
-                      </li>
-                      {showCoursesDropdown3 && (
-                        <div className="drop-down-3">
-                          {trainingProgrammesData?.map((item) => (
-                            <Link key={item.courseName} href={item.courseUrl}>
-                              {item.courseName}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </ul>
-                  </div>
-                )}
-              </li>
+                        )}
+                      </ul>
+                      <ul>
+                        <li
+                          className="drop-down-li"
+                          onClick={toggleCoursesDropdown3}
+                        >
+                          Training Programmes{" "}
+                          <span className="fa fa-angle-right"></span>
+                        </li>
+                        {showCoursesDropdown3 && (
+                          <div className="drop-down-3">
+                            {trainingProgrammesData?.map((item) => (
+                              <Link key={item.courseName} href={item.courseUrl}>
+                                {item.courseName}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </ul>
+                    </div>
+                  )}
+                </li>
+              </>
             ))}
           </ul>
         </div>
@@ -407,7 +429,7 @@ const NavItem = (props: any) => {
                       </ul>
                     </li>
                   ) : (
-                    <ul onMouseEnter={() => handleHover(subNavItems[0]?.name)}>
+                    <ul onMouseEnter={() => handleHover(subNavItems?.name)}>
                       <div className="mainMegaMenu">
                         <div className="megamenuCourses">
                           <h2>Certificate Courses</h2>
@@ -455,9 +477,10 @@ const NavItem = (props: any) => {
                                       key={item.id}
                                       className={`dropdown`}
                                       style={{
-                                        listStyle: "block",
-                                        listStyleType: "circle",
+                                        listStyle: "none",
+                                        listStyleType: "disc",
                                         marginLeft: "30px",
+                                        color: "#697386 ",
                                       }}
                                     >
                                       <a
