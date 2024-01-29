@@ -941,26 +941,26 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    {
-      source: "/all-courses/digital-marketing",
-      destination: "/all-courses",
-      permanent: false,
-    },
-    {
-      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
-      destination: "/all-courses",
-      permanent: false,
-    },
-    {
-      source: "/all-courses/digital-marketing/advance-digital-marketing-course",
-      destination: "/all-courses",
-      permanent: false,
-    },
-    {
-      source: "/all-courses/design-thinking",
-      destination: "/all-courses",
-      permanent: false,
-    },
+    // {
+    //   source: "/all-courses/digital-marketing",
+    //   destination: "/all-courses",
+    //   permanent: false,
+    // },
+    // {
+    //   source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
+    //   destination: "/all-courses",
+    //   permanent: false,
+    // },
+    // {
+    //   source: "/all-courses/digital-marketing/advance-digital-marketing-course",
+    //   destination: "/all-courses",
+    //   permanent: false,
+    // },
+    // {
+    //   source: "/all-courses/design-thinking",
+    //   destination: "/all-courses",
+    //   permanent: false,
+    // },
     {
       source: "/all-courses/cyber-security/1000",
       destination: "/all-courses/cyber-security",
@@ -1008,7 +1008,6 @@ const createReWrites = () => {
     {
       source: "/all-courses/artificial-intelligence",
       destination: "/all-courses/artificial-intelligence",
-
     },
     // {
     //   source: "/all-courses/cyber-security",

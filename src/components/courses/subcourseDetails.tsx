@@ -83,7 +83,7 @@ const SubCourseDetails = ({ page }: any) => {
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
       code === dataScienceCode ||
-      // code === digitalMarkrtingCode ||
+      code === digitalMarkrtingCode ||
       code === artificialIntelligenceCode
     ) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);

@@ -850,7 +850,7 @@ img {
 }
 
 .main-menu .navigation a:hover {
-  color: #1fa393;
+  color: #1fa393 !important;
 }
 
 .main-menu .navigation li > a {
@@ -1002,7 +1002,7 @@ img {
   position: absolute;
   left: 100%;
   top: 0;
-  width: 220px;
+  width: 350px;
   z-index: 100;
   display: none;
   background: #ffffff;
@@ -11068,7 +11068,7 @@ featured-section .right-col .sec-title h2 {
   max-width: 520px;
   height: 100%;
   overflow-y: auto;
-  background-color: #ffffff;
+  background-color: #F2F4F7;
   z-index: 999999;
   padding: 40px 0;
   padding-top: 20px;
@@ -11112,8 +11112,8 @@ featured-section .right-col .sec-title h2 {
 
 .mobile-nav__container {
   padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 50px;
+  padding-right: 30px;
+  padding-top: 25px;
 }
 
 .mobile-nav__container ul {
@@ -11136,7 +11136,8 @@ featured-section .right-col .sec-title h2 {
 
 .mobile-nav__container li.dropdown {
   position: relative;
-  padding: 15px 0;
+  padding: 5px 0;
+  text-align: left;
 }
 
 .mobile-nav__container li.dropdown > a {
@@ -11147,7 +11148,8 @@ featured-section .right-col .sec-title h2 {
   padding-right: 25px;
   vertical-align: middle;
   font-family: "Raleway-bold";
-  font-size: 24px;
+  font-size: 16px;
+  line-height: normal;
 }
 
 .mobile-nav__container li > a > span {
@@ -11197,11 +11199,196 @@ featured-section .right-col .sec-title h2 {
   transform: rotate(-90deg);
   color: var(--thm-black);
 }
-
-.mobile-nav__container li + li {
-  margin-top: 10px;
+.inlineDegreeCourse {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+.inlineDegreeCourse a {
+  width: 50%;
 }
 
+.mobile-nav__container li + li {
+  margin-top: 0px;
+}
+.mainMegaMenu {
+  display: flex;
+  position: absolute;
+  left: -80px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  grid-gap: 50px;
+  gap: 50px;
+  background-color: #f5fdf8;
+  padding: 7% 5%;
+  transform: translate(-50%, 0px);
+}
+.mainMegaMenu a {
+  color: #697386 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+.mainMegaMenu div {
+  width: 33%;
+  padding: 20px;
+  text-align: left;
+  background-color: #f5fdf8;
+}
+
+.mainMegaMenu h2 {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 700;
+}
+.mainMegaMenu li {
+  margin-bottom: 0;
+}
+
+.mobile-nav-new {
+}
+.mobile-nav-item-new a {
+  color: #697386 !important;
+}
+.mobile-nav-item-new {
+  padding: 10px 20px;
+  color: var(--Light-Text-Secondary, #697386);
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+.drop-down-li {
+  display: flex;
+  padding: 8px 16px 8px 34px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.drop-down-subNavItem {
+  display: flex;
+  padding: 8px 16px 8px 52px;
+  flex-direction: column;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.degreeCoursesData {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  border-left: 1px solid #e3e8ee;
+  border-right: 1px solid #e3e8ee;
+}
+.degreeCoursesData a {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.trainingProgrammeData {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+}
+.trainingProgrammeData a {
+  margin-bottom: 10px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .mainMegaMenu {
+    width: 900px;
+  }
+  .inlineDegreeCourse {
+    display: grid;
+    grid-template-columns: 100px 100px;
+  }
+  .inlineDegreeCourse a {
+    width: 50%;
+  }
+  .degreeCoursesData {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin-left: 46px;
+    border-left: none;
+    border-right: none;
+  }
+  .degreeCoursesData a {
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--Light-Text-Secondary, #697386);
+
+    /* Body/Body - Tertiary */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+  }
+  .drop-down-3 {
+    margin-left: 46px;
+  }
+  .drop-down-3 a {
+    margin-bottom: 15px;
+    color: var(--Light-Text-Secondary, #697386);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+  }
+
+  .mobile-sub-nav-item-new {
+    display: flex;
+    padding: 8px 0px 8px 25px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+  }
+  .mobile-sub-nav-item-new a {
+    color: var(--Light-Text-Secondary, #697386);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+  }
+  .login-mobile {
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+    width: 83%;
+  }
+  .login-mobile-link {
+    width: 100%;
+    height: 43px;
+    display: inline-block;
+
+    border-top: 1px solid var(--light-divider-borders-green, #008554);
+    background: var(--Light-Surface-Success, #f0fdf4);
+  }
+
+  .btn-title-Mobile {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Light-Text-Green, #008554);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.12px;
+  }
+}
+
+.megamenuCourses {
+  display: inline-block;
+}
 .mobile-nav__container li a {
   color: #000000;
   font-size: 20px;
@@ -11358,7 +11545,7 @@ featured-section .right-col .sec-title h2 {
   .side-menu__top,
   .side-menu__content,
   .mobile-nav__container {
-    padding-left: 25px;
+    padding-left: 5px;
     padding-right: 25px;
   }
 
@@ -20341,17 +20528,16 @@ h2.highlight {
 
 .mobile-nav__container li.dropdown ul li a {
   color: #000000;
-  font-size: 20px !important;
+  font-size: 16px !important;
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: normal;
   font-weight: 500;
   display: flex;
   transition: all 500ms ease;
   font-family: "Raleway", sans-serif;
   position: relative;
-  justify-content: center;
-  padding: 10px;
-  font-size: 26px;
+  justify-content: left;
+  padding: 5px;
 }
 
 /* sticky css */
@@ -21582,6 +21768,7 @@ h2.highlight {
   background: linear-gradient(180deg, #40ffaf 0.12%, #0be770 114.84%);
   animation: blink 2s linear infinite;
 }
+
 @keyframes blink {
   0% {
     opacity: 0;
