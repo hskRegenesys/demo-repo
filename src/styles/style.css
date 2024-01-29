@@ -1002,7 +1002,7 @@ img {
   position: absolute;
   left: 100%;
   top: 0;
-  width: 220px;
+  width: 350px;
   z-index: 100;
   display: none;
   background: #ffffff;
@@ -11216,6 +11216,7 @@ featured-section .right-col .sec-title h2 {
   left: -80px;
   top: 0px;
   width: 100vw;
+  height: 100vh;
   justify-content: space-evenly;
   grid-gap: 50px;
   gap: 50px;
@@ -11247,8 +11248,8 @@ featured-section .right-col .sec-title h2 {
   display: flex;
   width: 200px;
   flex-direction: column;
-  border-left: 1px solid #E3E8EE;
-  border-right: 1px solid #E3E8EE;
+  border-left: 1px solid #e3e8ee;
+  border-right: 1px solid #e3e8ee;
 }
 .degreeCoursesData a {
   margin-bottom: 10px;
