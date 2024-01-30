@@ -11075,11 +11075,11 @@ featured-section .right-col .sec-title h2 {
 
 @media (max-width: 575px) {
   .side-menu__block-inner {
-    max-width: 480px;
+    width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .side-menu__block-inner {
     max-width: 400px;
   }
@@ -11089,7 +11089,7 @@ featured-section .right-col .sec-title h2 {
   .side-menu__block-inner {
     max-width: 300px;
   }
-}
+} */
 
 .side-menu__block-inner .mCustomScrollBox {
   width: 100%;
@@ -11245,6 +11245,7 @@ featured-section .right-col .sec-title h2 {
 }
 
 .mobile-nav-new {
+  padding-bottom: 20px;
 }
 
 .new-log-in-butten {
@@ -11399,7 +11400,7 @@ featured-section .right-col .sec-title h2 {
     letter-spacing: 0.12px;
   }
   .login-mobile {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     z-index: 9999;
     width: 100%;
@@ -11409,7 +11410,6 @@ featured-section .right-col .sec-title h2 {
     width: 100%;
     height: 43px;
     display: inline-block;
-
     border-top: 1px solid var(--light-divider-borders-green, #008554);
   }
 
