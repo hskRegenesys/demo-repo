@@ -66,36 +66,38 @@ const MobileMenu = ({ onePage = false }) => {
               </div>
             </div>
           </nav>
-          <div className="login-mobile">
-            <Link href="https://mydigital.regenesys.net/login/index.php">
-              <a target="_blank" className="login-mobile-link">
-                {/* <i className="btn-curve"></i> */}
-                <span
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    padding: "10px 20px",
-                  }}
-                >
-                  <ImageLogin
-                    layout="intrinsic"
-                    width="24"
-                    height="24"
-                    src={"/assets/images/icons/icon_login.svg"}
-                  />
-                  <span className="btn-title-Mobile m-2">Login</span>
-                </span>
-              </a>
-            </Link>
-            {/* request url */}
+          <div>
+            <div className="login-mobile">
+              <Link href="https://mydigital.regenesys.net/login/index.php">
+                <a target="_blank" className="login-mobile-link">
+                  {/* <i className="btn-curve"></i> */}
+                  <span
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      padding: "10px 20px",
+                    }}
+                  >
+                    <ImageLogin
+                      layout="intrinsic"
+                      width="24"
+                      height="24"
+                      src={"/assets/images/icons/icon_login.svg"}
+                    />
+                    <span className="btn-title-Mobile m-2">Login</span>
+                  </span>
+                </a>
+              </Link>
+              {/* request url */}
 
-            {/* <a
+              {/* <a
                 className="theme-btn btn-style-two w100 mt-5"
                 onClick={handleShow}
               >
                 <i className="btn-curve"></i>
                 <span className="btn-title">Request a call</span>
               </a> */}
+            </div>
           </div>
         </div>
       </div>
