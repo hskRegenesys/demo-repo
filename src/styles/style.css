@@ -11275,8 +11275,13 @@ featured-section .right-col .sec-title h2 {
 .mobile-nav-item-new a {
   color: #697386 !important;
 }
-.mobile-nav-item-new {
+.mobile-nav-item-new a:hover {
+  color: #008554 !important;
+}
+.nav-link {
   padding: 10px 20px;
+}
+.mobile-nav-item-new {
   color: var(--Light-Text-Secondary, #697386);
   font-family: Montserrat-Bold;
   font-size: 14px;
@@ -11285,13 +11290,16 @@ featured-section .right-col .sec-title h2 {
   line-height: 20px;
   letter-spacing: 0.12px;
 }
+
+.nav-link:hover {
+  border-left: 5px solid #008554;
+}
+
 .drop-down-li {
   display: flex;
   padding: 8px 16px 8px 34px;
-  justify-content: space-between;
   align-items: center;
   align-self: stretch;
-  list-style: disc !important;
 }
 
 .drop-down-subNavItem {
@@ -11301,7 +11309,12 @@ featured-section .right-col .sec-title h2 {
   gap: 12px;
   align-self: stretch;
 }
-
+.drop-down-subNavItem:hover {
+color: #008554 ;
+}
+.colorActiveGreen {
+  color: #008554;
+}
 .degreeCoursesData {
   display: flex;
   width: 200px;

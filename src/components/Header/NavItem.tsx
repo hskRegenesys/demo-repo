@@ -189,13 +189,19 @@ const NavItem = (props: any) => {
 
   const toggleCoursesDropdown1 = () => {
     setShowCoursesDropdown1(!showCoursesDropdown1);
+    setShowCoursesDropdown2(false);
+    setShowCoursesDropdown3(false);
   };
   const toggleCoursesDropdown2 = () => {
     setShowCoursesDropdown2(!showCoursesDropdown2);
+    setShowCoursesDropdown1(false);
+    setShowCoursesDropdown3(false);
   };
 
   const toggleCoursesDropdown3 = () => {
     setShowCoursesDropdown3(!showCoursesDropdown3);
+    setShowCoursesDropdown2(false);
+    setShowCoursesDropdown1(false);
   };
   const mobileIcons = [
     "/assets/images/icons/icon_Home.png",
@@ -230,6 +236,7 @@ const NavItem = (props: any) => {
                 >
                   <Link href={navItem.href}>
                     <a
+                      className="nav-link"
                       style={{
                         display: "flex",
                         alignItems: "center",
@@ -241,14 +248,22 @@ const NavItem = (props: any) => {
                         height="24"
                         src={mobileIcons[id]}
                       />
-                      <span className="m-2">{navItem.name}</span>
+                      <span
+                        className="m-2 "
+                        style={{
+                          color:
+                            activeDropdown === navItem.name ? "#008554" : "",
+                        }}
+                      >
+                        {navItem.name}
+                      </span>
                       {navItem.subNavItems &&
                         navItem.subNavItems.length > 0 && (
                           <span
                             className="fa fa-angle-right me-2"
                             onClick={() => handleDropdownClick(navItem.name)}
                             style={{
-                              marginLeft: "100px",
+                              marginLeft: "122px",
                             }}
                           ></span>
                         )}
@@ -262,11 +277,31 @@ const NavItem = (props: any) => {
                             listStyle: "block",
                             listStyleType: "disc !important",
                           }}
-                          className="drop-down-li"
+                          className={
+                            activeDropdown === navItem.name &&
+                            showCoursesDropdown1
+                              ? "drop-down-li colorActiveGreen"
+                              : "drop-down-li"
+                          }
                           onClick={toggleCoursesDropdown1}
                         >
-                          Certificate Courses
-                          <span className="fa fa-angle-right"></span>
+                          <span
+                            className="fa fa-circle"
+                            style={{
+                              fontSize: "8px",
+                              paddingRight: "10px",
+                            }}
+                          ></span>
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "space-between",
+                              gap: "59px",
+                            }}
+                          >
+                            Certificate Courses
+                            <span className="fa fa-angle-right"></span>
+                          </div>
                         </li>
                         {showCoursesDropdown1 && (
                           <div>
@@ -285,9 +320,18 @@ const NavItem = (props: any) => {
                                             justifyContent: "space-between",
                                           }}
                                         >
-                                          <Link href={subNavItem.href}>
-                                            {subNavItem.name}
-                                          </Link>
+                                          <div>
+                                            <span
+                                              className="fa fa-circle"
+                                              style={{
+                                                fontSize: "6px",
+                                                paddingRight: "10px",
+                                              }}
+                                            ></span>
+                                            <Link href={subNavItem.href}>
+                                              {subNavItem.name}
+                                            </Link>
+                                          </div>
 
                                           {subNavItem.subItems &&
                                             subNavItem.subItems.length > 0 && (
@@ -312,11 +356,24 @@ const NavItem = (props: any) => {
                                                     key={subSubItem.id}
                                                     className="mobile-sub-nav-item-new"
                                                   >
-                                                    <Link
-                                                      href={subSubItem.href}
+                                                    <div
+                                                      style={{
+                                                        display: "flex",
+                                                      }}
                                                     >
-                                                      <a>{subSubItem.name}</a>
-                                                    </Link>
+                                                      <span
+                                                        className="fa fa-circle"
+                                                        style={{
+                                                          fontSize: "4px",
+                                                          paddingRight: "10px",
+                                                        }}
+                                                      ></span>
+                                                      <Link
+                                                        href={subSubItem.href}
+                                                      >
+                                                        <a>{subSubItem.name}</a>
+                                                      </Link>
+                                                    </div>
                                                   </li>
                                                 )
                                               )}
@@ -332,11 +389,31 @@ const NavItem = (props: any) => {
                       </ul>
                       <ul>
                         <li
-                          className="drop-down-li"
+                          className={
+                            activeDropdown === navItem.name &&
+                            showCoursesDropdown2
+                              ? "drop-down-li colorActiveGreen"
+                              : "drop-down-li"
+                          }
                           onClick={toggleCoursesDropdown2}
                         >
-                          Accreditated Programmes{" "}
-                          <span className="fa fa-angle-right"></span>
+                          <span
+                            className="fa fa-circle"
+                            style={{
+                              fontSize: "8px",
+                              paddingRight: "10px",
+                            }}
+                          ></span>
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "space-between",
+                              gap: "11px",
+                            }}
+                          >
+                            Accreditated Programmes{" "}
+                            <span className="fa fa-angle-right"></span>
+                          </div>
                         </li>
                         {showCoursesDropdown2 && (
                           <div className="drop-down-2">
@@ -357,11 +434,31 @@ const NavItem = (props: any) => {
                       </ul>
                       <ul>
                         <li
-                          className="drop-down-li"
+                          className={
+                            activeDropdown === navItem.name &&
+                            showCoursesDropdown3
+                              ? "drop-down-li colorActiveGreen"
+                              : "drop-down-li"
+                          }
                           onClick={toggleCoursesDropdown3}
                         >
-                          Training Programmes{" "}
-                          <span className="fa fa-angle-right"></span>
+                          <span
+                            className="fa fa-circle"
+                            style={{
+                              fontSize: "8px",
+                              paddingRight: "10px",
+                            }}
+                          ></span>
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "space-between",
+                              gap: "44px",
+                            }}
+                          >
+                            Training Programmes{" "}
+                            <span className="fa fa-angle-right"></span>
+                          </div>
                         </li>
                         {showCoursesDropdown3 && (
                           <div className="drop-down-3">
@@ -528,7 +625,7 @@ const NavItem = (props: any) => {
                           ))}
                         </div>
                         <div className="degreeCoursesData">
-                          <h2>Degree Programmes</h2>
+                          <h2> Accreditated Programmes</h2>
                           <div className="inlineDegreeCourse">
                             {degreeProgrammesData?.map((item) => (
                               <Link key={item.courseName} href={item.courseUrl}>
