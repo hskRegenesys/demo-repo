@@ -238,6 +238,9 @@ const NavItem = (props: any) => {
                           <span
                             className="fa fa-angle-right me-2"
                             onClick={() => handleDropdownClick(navItem.name)}
+                            style={{
+                              marginLeft: "150px",
+                            }}
                           ></span>
                         )}
                     </a>
@@ -446,9 +449,7 @@ const NavItem = (props: any) => {
                                 {subItem.name}{" "}
                                 {subItem.isNew && <span>new</span>}
                                 {!!subItem.subItems?.length && (
-                                  <div>
-                                    <span className="fa fa-angle-down"></span>
-                                  </div>
+                                  <span className="fa fa-angle-down"></span>
                                 )}
                               </a>
 
@@ -480,6 +481,7 @@ const NavItem = (props: any) => {
                                         listStyle: "none",
                                         listStyleType: "disc",
                                         marginLeft: "30px",
+                                        marginBottom: "5px",
                                         color: "#697386 ",
                                       }}
                                     >
