@@ -131,7 +131,7 @@ const HeaderOne = ({
       }
     });
     const data = navItems?.map((item: any) => {
-      if (item.id === 4 && item.name === "Courses") {
+      if (item.id === 4 && item.name === "All Courses") {
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
@@ -156,7 +156,7 @@ const HeaderOne = ({
     });
 
     const data2 = blogsNavItem?.map((item: any) => {
-      if (item.id === 4 && item.name === "Courses") {
+      if (item.id === 4 && item.name === "All Courses") {
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
