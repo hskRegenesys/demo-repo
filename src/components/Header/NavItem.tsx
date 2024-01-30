@@ -110,7 +110,7 @@ const NavItem = (props: any) => {
         "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
     },
     {
-      courseName: "HCBM",
+      courseName: "HCBMB",
       courseUrl:
         "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
     },
@@ -318,6 +318,8 @@ const NavItem = (props: any) => {
                                           style={{
                                             display: "flex",
                                             justifyContent: "space-between",
+                                            width: "100%",
+                                            maxWidth: "230px",
                                           }}
                                         >
                                           <div>
