@@ -866,7 +866,6 @@ img {
 }
 
 .main-menu .navigation li > a > span {
-  background-color: var(--thm-base);
   color: #000;
   font-size: 13px;
   text-transform: uppercase;
@@ -11068,7 +11067,7 @@ featured-section .right-col .sec-title h2 {
   max-width: 520px;
   height: 100%;
   overflow-y: auto;
-  background-color: #F2F4F7;
+  background-color: #f2f4f7;
   z-index: 999999;
   padding: 40px 0;
   padding-top: 20px;
@@ -11242,7 +11241,7 @@ featured-section .right-col .sec-title h2 {
   font-weight: 700;
 }
 .mainMegaMenu li {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .mobile-nav-new {
@@ -11363,6 +11362,7 @@ featured-section .right-col .sec-title h2 {
     bottom: 0px;
     z-index: 9999;
     width: 83%;
+    background: var(--Light-Surface-Success, #f0fdf4);
   }
   .login-mobile-link {
     width: 100%;
@@ -11370,7 +11370,6 @@ featured-section .right-col .sec-title h2 {
     display: inline-block;
 
     border-top: 1px solid var(--light-divider-borders-green, #008554);
-    /* background: var(--Light-Surface-Success, #f0fdf4); */
   }
 
   .btn-title-Mobile {
