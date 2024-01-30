@@ -313,8 +313,8 @@ const HeaderOne = ({
               <div className="other-links clearfix">
                 <div className="link-box">
                   <Link href="https://mydigital.regenesys.net/login/index.php">
-                    <a className="theme-btn btn-style-two">
-                      <i className="btn-curve"></i>
+                    <a className="new-log-in-butten">
+                      {/* <i className="btn-curve"></i> */}
                       <span className="btn-title">Login</span>
                     </a>
                   </Link>

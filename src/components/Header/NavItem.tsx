@@ -110,7 +110,7 @@ const NavItem = (props: any) => {
         "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
     },
     {
-      courseName: "HCBCM",
+      courseName: "HCBM",
       courseUrl:
         "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
     },
@@ -134,7 +134,6 @@ const NavItem = (props: any) => {
       courseUrl:
         "https://corporateeducation.regenesys.net/international-leadership-development-programme/",
     },
-    // ... (other degree programs)
     {
       courseName: "Leadership Development",
       courseUrl:
@@ -188,7 +187,6 @@ const NavItem = (props: any) => {
 
   const [showCoursesDropdown3, setShowCoursesDropdown3] = useState(false);
 
-  // Toggle the visibility of the courses dropdown
   const toggleCoursesDropdown1 = () => {
     setShowCoursesDropdown1(!showCoursesDropdown1);
   };
@@ -206,6 +204,17 @@ const NavItem = (props: any) => {
     "/assets/images/icons/icon_blog.png",
     "/assets/images/icons/icon_contact.png",
   ];
+
+  const [isIconActive, setIsIconActive] = useState(false);
+
+  const handleHoverIcon = () => {
+    setIsIconActive(true);
+  };
+
+  const handleLeaveIcon = () => {
+    setIsIconActive(false);
+  };
+
   return (
     <>
       {isMobileView ? (
@@ -239,7 +248,7 @@ const NavItem = (props: any) => {
                             className="fa fa-angle-right me-2"
                             onClick={() => handleDropdownClick(navItem.name)}
                             style={{
-                              marginLeft: "150px",
+                              marginLeft: "100px",
                             }}
                           ></span>
                         )}
@@ -249,6 +258,10 @@ const NavItem = (props: any) => {
                     <div className="drop-down-1">
                       <ul>
                         <li
+                          style={{
+                            listStyle: "block",
+                            listStyleType: "disc !important",
+                          }}
                           className="drop-down-li"
                           onClick={toggleCoursesDropdown1}
                         >
@@ -322,7 +335,7 @@ const NavItem = (props: any) => {
                           className="drop-down-li"
                           onClick={toggleCoursesDropdown2}
                         >
-                          Degree Programs{" "}
+                          Accreditated Programmes{" "}
                           <span className="fa fa-angle-right"></span>
                         </li>
                         {showCoursesDropdown2 && (
@@ -443,13 +456,26 @@ const NavItem = (props: any) => {
                               className={`${
                                 subItem.subItems?.length ? "dropdown" : ""
                               } ${pathname === subItem.href ? "current" : ""}`}
-                              onMouseEnter={() => handleHover(subItem.name)}
+                              onMouseEnter={() => {
+                                handleHoverIcon();
+                                handleHover(subItem.name);
+                              }}
+                              onMouseLeave={() => {
+                                handleLeaveIcon();
+                                handleLeave();
+                              }}
                             >
                               <a href={subItem.href}>
                                 {subItem.name}{" "}
                                 {subItem.isNew && <span>new</span>}
                                 {!!subItem.subItems?.length && (
-                                  <span className="fa fa-angle-down"></span>
+                                  <span
+                                    className={`fa ${
+                                      isIconActive
+                                        ? "fa-angle-up"
+                                        : "fa-angle-down"
+                                    }`}
+                                  ></span>
                                 )}
                               </a>
 
