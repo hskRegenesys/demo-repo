@@ -48,7 +48,7 @@ const navItems = [
 
   {
     id: 4,
-    name: "Courses",
+    name: "All Courses",
     href: "/all-courses",
     subNavItems: [
       { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
@@ -88,7 +88,7 @@ export const blogsNavItem = [
   },
   {
     id: 4,
-    name: "Courses",
+    name: "All Courses",
     href: "/all-courses",
     subNavItems: [
       { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
