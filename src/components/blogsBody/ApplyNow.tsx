@@ -216,7 +216,7 @@ const ApplyNow = (props: any) => {
           {(selectedCourse === "Digital Marketing" ||
             selectedCourse === "Design Thinking") && (
             <small className="text-black">
-              *Learn collaboratively! Apply with 15 people to begin the course.
+              *Learn collaboratively! Apply with 15 people to begin the course
             </small>
           )}
         </div>
