@@ -48,85 +48,106 @@ const NavItem = (props: any) => {
   // Degree programmes data
   const degreeProgrammesData = [
     {
-      courseName: "MBA",
-      courseUrl: "https://www.regenesys.net/master-of-business-administration",
-    },
-    // ... (other degree programs)
-    {
-      courseName: "DBM",
-      courseUrl: "https://www.regenesys.net/doctor-of-business-management",
+      courseName: "Business",
+      courseUrl: "https://www.regenesys.net/all-programmes/business",
     },
     {
-      courseName: "PDBM",
-      courseUrl:
-        "https://www.regenesys.net/postgraduate-diploma-in-business-management",
+      courseName: "Public Management",
+      courseUrl: "https://www.regenesys.net/all-programmes/public-management",
     },
     {
-      courseName: "BBA",
-      courseUrl:
-        "https://www.regenesys.net/bachelor-of-business-administration",
+      courseName: "Finance      ",
+      courseUrl: "https://www.regenesys.net/all-programmes/finance      ",
     },
     {
-      courseName: "BBAR",
-      courseUrl:
-        "https://www.regenesys.net/bachelor-of-business-administration-in-retail",
+      courseName: "Technology      ",
+      courseUrl: "https://www.regenesys.net/all-programmes/technology",
     },
     {
-      courseName: "HCBM",
-      courseUrl:
-        "https://www.regenesys.net/higher-certificate-in-business-management",
+      courseName: "Law      ",
+      courseUrl: "https://www.law.regenesys.net/      ",
     },
-    {
-      courseName: "HCBRM",
-      courseUrl:
-        "https://www.regenesys.net/higher-certificate-in-business-management-in-retail",
-    },
-    {
-      courseName: "MPM",
-      courseUrl: "https://www.regenesys.net/master-of-public-management",
-    },
-    {
-      courseName: "PDPM",
-      courseUrl:
-        "https://www.regenesys.net/postgraduate-diploma-in-public-management",
-    },
-    {
-      courseName: "BPM",
-      courseUrl: "https://www.regenesys.net/bachelor-of-public-management",
-    },
-    {
-      courseName: "NDPA",
-      courseUrl:
-        "https://www.regenesys.net/national-diploma-in-public-administration",
-    },
-    {
-      courseName: "HCPM",
-      courseUrl:
-        "https://www.regenesys.net/higher-certificate-in-public-management",
-    },
-    {
-      courseName: "BBAB",
-      courseUrl:
-        "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
-    },
-    {
-      courseName: "HCBMB",
-      courseUrl:
-        "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
-    },
-    {
-      courseName: "BCOMPT",
-      courseUrl: "https://www.regenesys.net/bachelor-of-accounting-science",
-    },
-    {
-      courseName: "BSCS",
-      courseUrl:
-        "https://www.regenesys.net/bachelor-of-science-in-computer-science",
-    },
-    {
-      courseName: "LLB",
-      courseUrl: "https://www.law.regenesys.net/",
-    },
+
+    // {
+    //   courseName: "MBA",
+    //   courseUrl: "https://www.regenesys.net/master-of-business-administration",
+    // },
+    // // ... (other degree programs)
+    // {
+    //   courseName: "DBM",
+    //   courseUrl: "https://www.regenesys.net/doctor-of-business-management",
+    // },
+    // {
+    //   courseName: "PDBM",
+    //   courseUrl:
+    //     "https://www.regenesys.net/postgraduate-diploma-in-business-management",
+    // },
+    // {
+    //   courseName: "BBA",
+    //   courseUrl:
+    //     "https://www.regenesys.net/bachelor-of-business-administration",
+    // },
+    // {
+    //   courseName: "BBAR",
+    //   courseUrl:
+    //     "https://www.regenesys.net/bachelor-of-business-administration-in-retail",
+    // },
+    // {
+    //   courseName: "HCBM",
+    //   courseUrl:
+    //     "https://www.regenesys.net/higher-certificate-in-business-management",
+    // },
+    // {
+    //   courseName: "HCBRM",
+    //   courseUrl:
+    //     "https://www.regenesys.net/higher-certificate-in-business-management-in-retail",
+    // },
+    // {
+    //   courseName: "MPM",
+    //   courseUrl: "https://www.regenesys.net/master-of-public-management",
+    // },
+    // {
+    //   courseName: "PDPM",
+    //   courseUrl:
+    //     "https://www.regenesys.net/postgraduate-diploma-in-public-management",
+    // },
+    // {
+    //   courseName: "BPM",
+    //   courseUrl: "https://www.regenesys.net/bachelor-of-public-management",
+    // },
+    // {
+    //   courseName: "NDPA",
+    //   courseUrl:
+    //     "https://www.regenesys.net/national-diploma-in-public-administration",
+    // },
+    // {
+    //   courseName: "HCPM",
+    //   courseUrl:
+    //     "https://www.regenesys.net/higher-certificate-in-public-management",
+    // },
+    // {
+    //   courseName: "BBAB",
+    //   courseUrl:
+    //     "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
+    // },
+    // {
+    //   courseName: "HCBMB",
+    //   courseUrl:
+    //     "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
+    // },
+    // {
+    //   courseName: "BCOMPT",
+    //   courseUrl: "https://www.regenesys.net/bachelor-of-accounting-science",
+    // },
+    // {
+    //   courseName: "BSCS",
+    //   courseUrl:
+    //     "https://www.regenesys.net/bachelor-of-science-in-computer-science",
+    // },
+    // {
+    //   courseName: "LLB",
+    //   courseUrl: "https://www.law.regenesys.net/",
+    // },
   ];
   const trainingProgrammesData = [
     {
@@ -297,6 +318,7 @@ const NavItem = (props: any) => {
                               display: "flex",
                               justifyContent: "space-between",
                               gap: "59px",
+                              fontSize: "14px",
                             }}
                           >
                             Certificate Courses
@@ -411,6 +433,7 @@ const NavItem = (props: any) => {
                               display: "flex",
                               justifyContent: "space-between",
                               gap: "11px",
+                              fontSize: "14px",
                             }}
                           >
                             Accreditated Programmes{" "}
@@ -420,16 +443,30 @@ const NavItem = (props: any) => {
                         {showCoursesDropdown2 && (
                           <div className="drop-down-2">
                             <div className="degreeCoursesData">
-                              <div className="inlineDegreeCourse">
-                                {degreeProgrammesData?.map((item) => (
+                              {degreeProgrammesData?.map((item) => (
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    padding: "8px 0px",
+                                    fontSize: "12px",
+                                  }}
+                                >
+                                  <span
+                                    className="fa fa-circle"
+                                    style={{
+                                      fontSize: "6px",
+                                      paddingRight: "10px",
+                                    }}
+                                  ></span>
                                   <Link
                                     key={item.courseName}
                                     href={item.courseUrl}
                                   >
                                     {item.courseName}
                                   </Link>
-                                ))}
-                              </div>
+                                </div>
+                              ))}
                             </div>
                           </div>
                         )}
@@ -456,6 +493,7 @@ const NavItem = (props: any) => {
                               display: "flex",
                               justifyContent: "space-between",
                               gap: "44px",
+                              fontSize: "14px",
                             }}
                           >
                             Training Programmes{" "}
@@ -465,9 +503,28 @@ const NavItem = (props: any) => {
                         {showCoursesDropdown3 && (
                           <div className="drop-down-3">
                             {trainingProgrammesData?.map((item) => (
-                              <Link key={item.courseName} href={item.courseUrl}>
-                                {item.courseName}
-                              </Link>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  padding: "8px 0px",
+                                  fontSize: "12px",
+                                }}
+                              >
+                                <span
+                                  className="fa fa-circle"
+                                  style={{
+                                    fontSize: "6px",
+                                    paddingRight: "10px",
+                                  }}
+                                ></span>
+                                <Link
+                                  key={item.courseName}
+                                  href={item.courseUrl}
+                                >
+                                  {item.courseName}
+                                </Link>
+                              </div>
                             ))}
                           </div>
                         )}
@@ -628,13 +685,11 @@ const NavItem = (props: any) => {
                         </div>
                         <div className="degreeCoursesData">
                           <h2> Accreditated Programmes</h2>
-                          <div className="inlineDegreeCourse">
-                            {degreeProgrammesData?.map((item) => (
-                              <Link key={item.courseName} href={item.courseUrl}>
-                                {item.courseName}
-                              </Link>
-                            ))}
-                          </div>
+                          {degreeProgrammesData?.map((item) => (
+                            <Link key={item.courseName} href={item.courseUrl}>
+                              {item.courseName}
+                            </Link>
+                          ))}
                         </div>
                         <div className="trainingProgrammeData">
                           <h2>Training Programmes</h2>

@@ -336,8 +336,8 @@ function ImageModalPopup(props: any) {
                         {(programmeOfInterest === "Digital Marketing" ||
                           programmeOfInterest === "Design Thinking") && (
                           <small className="text-black">
-                            *Learn collaboratively! Course begins with 15. Apply
-                            as a group of 15 or more.
+                            *Learn collaboratively! Apply with 15 people to
+                            begin the course. .
                           </small>
                         )}
                       </div>

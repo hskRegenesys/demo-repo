@@ -11199,8 +11199,8 @@ featured-section .right-col .sec-title h2 {
   color: var(--thm-black);
 }
 .inlineDegreeCourse {
-  display: grid;
-  grid-template-columns: 200px 200px;
+  display: flex;
+  flex-direction: column;
 }
 .inlineDegreeCourse a {
   width: 50%;
@@ -11285,7 +11285,7 @@ featured-section .right-col .sec-title h2 {
 .mobile-nav-item-new {
   color: var(--Light-Text-Secondary, #697386);
   font-family: Montserrat-Bold;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
@@ -11308,6 +11308,7 @@ featured-section .right-col .sec-title h2 {
   padding: 8px 16px 8px 52px;
   flex-direction: column;
   gap: 12px;
+  font-size: 12px;
   align-self: stretch;
 }
 .drop-down-subNavItem:hover {
@@ -11324,7 +11325,6 @@ featured-section .right-col .sec-title h2 {
   border-right: 1px solid #e3e8ee;
 }
 .degreeCoursesData a {
-  margin-bottom: 10px;
   text-align: left;
 }
 
@@ -11342,8 +11342,8 @@ featured-section .right-col .sec-title h2 {
     width: 900px;
   }
   .inlineDegreeCourse {
-    display: grid;
-    grid-template-columns: 100px 100px;
+    display: flex;
+    flex-direction: column;
   }
   .inlineDegreeCourse a {
     width: 50%;
@@ -11357,13 +11357,10 @@ featured-section .right-col .sec-title h2 {
     border-right: none;
   }
   .degreeCoursesData a {
-    margin-bottom: 10px;
     text-align: left;
     color: var(--Light-Text-Secondary, #697386);
-    font-family: Montserrat;
-    font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 16px;
     letter-spacing: 0.12px;
   }
@@ -11373,12 +11370,9 @@ featured-section .right-col .sec-title h2 {
     flex-direction: column;
   }
   .drop-down-3 a {
-    margin-bottom: 15px;
     color: var(--Light-Text-Secondary, #697386);
-    font-family: Montserrat;
-    font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 16px;
     letter-spacing: 0.12px;
   }
