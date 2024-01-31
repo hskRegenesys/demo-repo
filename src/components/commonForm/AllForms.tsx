@@ -220,7 +220,7 @@ export default function LandingForm(contactform: any) {
                       })}
                     </select>
                     {errors.Programme_Of_Interest && (
-                           <small className="text-danger">
+                      <small className="text-danger">
                         {errors.Programme_Of_Interest.message}
                       </small>
                     )}
@@ -305,8 +305,8 @@ export default function LandingForm(contactform: any) {
                 {(selectedCourse === "Digital Marketing" ||
                   selectedCourse === "Design Thinking") && (
                   <small className="text-black">
-                    *Learn collaboratively! Course begins with 15. Apply as a
-                    group of 15 or more.
+                    *Learn collaboratively! Apply with 15 people to begin the
+                    course.
                   </small>
                 )}
               </div>
