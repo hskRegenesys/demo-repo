@@ -306,7 +306,7 @@ export default function LandingForm(contactform: any) {
                   selectedCourse === "Design Thinking") && (
                   <small className="text-black">
                     *Learn collaboratively! Apply with 15 people to begin the
-                    course.
+                    course
                   </small>
                 )}
               </div>

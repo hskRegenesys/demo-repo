@@ -399,7 +399,7 @@ function ModalPopup(props: any) {
                       programmeOfInterest === "Design Thinking") && (
                       <small className="text-black">
                         *Learn collaboratively! Apply with 15 people to begin
-                        the course.
+                        the course
                       </small>
                     )}
                   </div>

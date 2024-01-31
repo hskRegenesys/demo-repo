@@ -262,7 +262,7 @@ function RequestForm(props: any) {
                 programmeOfInterest === "Design Thinking") && (
                 <small className="text-black">
                   *Learn collaboratively! Apply with 15 people to begin the
-                  course.
+                  course
                 </small>
               )}
             </div>
