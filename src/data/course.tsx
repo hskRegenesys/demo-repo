@@ -377,321 +377,413 @@ export const courseData = {
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
-  // SE: {
-  //   processOne: [
-  //     {
-  //       id: 1,
-  //       // image: "yellow-bg-details-bg-1.webp",
-  //       youtubeUrl:
-  //         "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
-  //       title: "Certification Programme in Software Engineering",
-  //       text: "Discover the Key to Success and Shape your Future with the best Software Engineering course for college students, freshers, and professionals. Learn the stages of software development, principles and practices of designing software systems from our highly experienced academic staff.",
-  //       lists: [
-  //         "22 Weeks course ",
-  //         "Live Session",
-  //         "Career Counselling",
-  //         "Guaranteed Certification",
-  //       ],
-  //     },
-  //   ],
-  //   productDescription: {
-  //     title: "Revolutionise your career with future-ready skills",
-  //     text1:
-  //       "Master the art of building top-notch software, focusing on design, security, and maintenance. Learn how to analyse, develop, execute, and maintain software systems in the real world from our highly experienced faculty.",
-  //   },
-  //   joinReasons: {
-  //     title: "Reasons To Join This Course",
-  //     subTitle1: "Exposure",
-  //     desc1: "Get exposure to Jenkins, GitLab CI, or GitHub Actions. Slack, Teams, and Jira.",
+  SE: {
+    processOne: [
+      {
+        id: 1,
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+        title: "Certification Programme in Software Development",
+        text: "Discover the Key to Success and Shape your Future with the best Software Development course for college students, freshers, and professionals. Learn the stages of software development, principles and practices of designing software systems from our highly experienced academic staff. ",
+        lists: [
+          "22 Weeks course ",
+          "Live Sessions ",
+          "Career Counselling",
+          "Guaranteed Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Revolutionise your career with future-ready skills",
+      text1:
+        "Master the art of building top-notch software, focusing on design, security, and maintenance. Learn how to analyse, develop, execute, and maintain software systems in the real world from our highly experienced faculty.",
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1:
+        "Get exposure to Jenkins, GitLab CI, or GitHub Actions. Slack, Teams, and Jira.",
 
-  //     subTitle2: "Best-in-class instructors",
-  //     desc2:
-  //       "Learn from the best-in-class instructors who will help you with every technological concept from scratch.",
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch.",
 
-  //     subTitle3: "Live sessions",
-  //     desc3:
-  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.",
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
 
-  //     subTitle4: "Tools usage",
-  //     desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
-  //     bg1: "/assets/images/background/reason-bg1-1.webp",
-  //     bg2: "/assets/images/background/reason-bg2-1.webp",
-  //     bg3: "/assets/images/background/reason-bg3-1.webp",
-  //     bg4: "/assets/images/background/reason-bg4-1.webp",
-  //   },
-  //   courseTools: [
-  //     "pm/project-management-tools1.webp",
-  //     "pm/project-management-tools2.webp",
-  //     "pm/project-management-tools3.webp",
-  //     "pm/project-management-tools4.webp",
-  //   ],
-  //   courseCertificate: {
-  //     certificateTitle:
-  //       "Leading with Excellence: Software Engineering Certificate Course",
-  //     certificateSubTitle:
-  //       "Earn a Software Engineering Certificate from Digital Regenesys & Navigate the Software Engineering Landscape",
-  //     certificateSubSubTitle:
-  //       "With our Software Engineering course,  individuals will gain the necessary knowledge, expertise, and recognition to excel in this domain. By investing in our course, individuals can enhance their career prospects, stay updated with industry best practices,, and demonstrate their commitment to excellence in this domain.",
-  //     certificateListTitle:
-  //       "With the Software Engineering Course, you will get: ",
+      subTitle4: "Tools usage",
+      desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    courseTools: [
+      "sd/jira.svg",
+      "sd/jink.svg",
+      "sd/teams.svg",
+      "sd/slack.svg",
+      "sd/gitlab.svg",
+    ],
+    courseCertificate: {
+      certificateTitle:
+        "Leading with Excellence: Software Development  Certificate Course",
+      certificateSubTitle:
+        "Earn a Software Development Certificate from Digital Regenesys & Navigate the Software Development Landscape",
+      certificateSubSubTitle:
+        "With our Software Development course,  individuals will gain the necessary knowledge, expertise, and recognition to excel in this domain. By investing in our course, individuals can enhance their career prospects, stay updated with industry best practices, and demonstrate their commitment to excellence in this domain.",
+      certificateListTitle:
+        "With the Software Development  Course, you will get:        ",
 
-  //     certificateSkillList: [
-  //       "International Recognition",
-  //       "Software Development Process",
-  //       "Data Structures and Algorithms",
-  //       "Software Development Tools and Techniques",
-  //     ],
-  //     certificateListPara:
-  //       " Our software engineering course opens the door to a wide range of exciting and dynamic career opportunities in software development and information technology.",
-  //     certificateRolesList: [
-  //       "Software Developer",
-  //       "Mobile App Developer ",
-  //       "Software Architect",
-  //       "Machine Learning Engineer",
-  //     ],
-  //     CertificateImage: ["PM_certificate.webp"],
-  //     imageName: "PM_certificate",
-  //   },
+      certificateSkillList: [
+        "International Recognition",
+        "Software Development Process",
+        "Data Structures and Algorithms",
+        "Software Development Tools and Techniques",
+      ],
+      certificateListPara:
+        " Our Software Development course opens the door to a wide range of exciting and dynamic career opportunities in software development and information technology.        ",
+      certificateRolesList: [
+        "Software Developer",
+        "Mobile App Developer ",
+        "Software Architect",
+        "Machine Learning Engineer",
+      ],
+      CertificateImage: ["SD_certificate.webp"],
+      imageName: "SD_certificate",
+    },
 
-  //   featureSeven: {
-  //     title: "Meet our faculty",
-  //     // desc: "Revolutionise your career with future-ready skills",
-  //     features: [
-  //       {
-  //         id: 1,
-  //         image: "Dennis-Laxton.webp",
-  //         title: "Dr. Dennis Laxton ",
-  //         text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
-  //         designation: "Academic Team Leader and Senior Lecturer",
-  //       },
-  //       {
-  //         id: 2,
-  //         image: "James_forson.webp",
-  //         title: "James Forson",
-  //         text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
-  //         designation: "BSocSc (Hons)",
-  //       },
-  //     ],
-  //   },
-  //   videoOne: {
-  //     image: "/assets/images/background/full-video-bg.webp",
-  //     videoId: "y2Eqx6ys1hQ",
-  //     title: "Linoor is trusted by millions of customers",
-  //     text1:
-  //       "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
-  //     text2:
-  //       "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
-  //   },
-  //   CourseCurriculum: [
-  //     {
-  //       id: 1,
-  //       courseCurriculumTitle: "Course Curriculum",
-  //       faqs: [
-  //         {
-  //           id: 1,
-  //           title: "Programming Fundamentals",
-  //           lists: ["Overview of Software Engineering", "Software Development Life Cycle (SDLC)","Roles and Responsibilities in Software Engineering"],
-  //         },
-  //         {
-  //           id: 2,
-  //           title: "Programming Fundamentals",
-  //           lists: ["Introduction to Programming","Data Structures and Algorithms","Object-Oriented Programming (OOP)"],
-  //         },
-  //         {
-  //           id: 3,
-  //           title: "Software Design and Architecture",
-  //           lists: ["System Design","Software Architecture"],
-  //         },
-  //         {
-  //           id: 4,
-  //           title: "Database Management Systems",
-  //           lists: ["Database fundamentals","SQL and Database Design"],
-  //         },
-  //         {
-  //           id: 5,
-  //           title: "Software Development Tools and Environments",
-  //           lists: ["Integrated Development Environments (IDEs)", "Version Control Systems (e.g., Git)","Continuous Integration and Deployment (CI/CD)",],
-  //         },
-  //         {
-  //           id: 6,
-  //           title: "Software Testing and Quality Assurance",
-  //           lists: ["Types of Testing","Test Automation"],
-  //         },
-  //         {
-  //           id: 7,
-  //           title: "Project Management and Collaboration",
-  //           lists: ["Project Planning and Scheduling", "Collaboration Tools"],
-  //         },
+    featureSeven: {
+      title: "Meet our faculty",
+      // desc: "Revolutionise your career with future-ready skills",
+      features: [
+        {
+          id: 1,
+          image: "Dennis-Laxton.webp",
+          title: "Dr. Dennis Laxton ",
+          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
+          designation: "Academic Team Leader and Senior Lecturer",
+        },
+        {
+          id: 2,
+          image: "James_forson.webp",
+          title: "James Forson",
+          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
+          designation: "BSocSc (Hons)",
+        },
+      ],
+    },
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course Curriculum",
+        faqs: [
+          {
+            id: 1,
+            title:
+              "Introduction to Software Development: Overview of Software Development ",
+            lists: ["Definition and scope", "Importance in the industry"],
+          },
+          {
+            id: 2,
+            title: "Software Development Life Cycle (SDLC)            ",
+            lists: [
+              "Waterfall model",
+              "Agile methodologies",
+              "Iterative and incremental development              ",
+            ],
+          },
+          {
+            id: 3,
+            title: "Roles and Responsibilities in Software Development",
+            lists: [
+              " Project manager",
+              " Software architect",
+              " Developer",
+              " Tester              ",
+              "  Quality assurance",
+              " Business Analyst",
+            ],
+          },
+          {
+            id: 4,
+            title: "Programming Fundamentals: Introduction to Programming",
+            lists: [
+              "Programming languages overview",
+              "Basic syntax and concepts",
+            ],
+          },
+          {
+            id: 5,
+            title: "Data Structures and Algorithms",
+            lists: [
+              "Arrays, linked lists, stacks, queues",
+              "Sorting and searching algorithms",
+              "Trees and graphs",
+            ],
+          },
+          {
+            id: 6,
+            title: "Object-Oriented Programming (OOP)            ",
+            lists: [
+              "Principles of OOP",
+              "Design patterns",
+              "Design patterns",
+              " Python",
+            ],
+          },
+          {
+            id: 7,
+            title: "Software Design and Architecture : System Design",
+            lists: ["Architectural design", "Component-level design"],
+          },
 
-  //         {
-  //           id: 8,
-  //           title: "Emerging Technologies and Trends",
-  //           lists: [
-  //             "Cloud Computing",
-  //             "Artificial Intelligence and Machine Learning",
-  //             "DevOps practices"
-  //           ],
-  //         },
-  //         // {
-  //         //   id: 9,
-  //         //   title: "Week 9",
-  //         //   lists: ["Design Thinking"],
-  //         // },
-  //         // {
-  //         //   id: 10,
-  //         //   title: "Week 10",
-  //         //   lists: ["Contracts and Agreement", "Industry Expert Session"],
-  //         // },
-  //       ],
-  //       defaultCurrent: 1,
-  //     },
-  //   ],
-  //   faqsSection: [
-  //     {
-  //       id: 1,
-  //       faqs: [
-  //         {
-  //           id: 1,
-  //           title: "What is a software engineering course?",
-  //           text: "A software engineering course is a structured programme of study that provides individuals with the knowledge and skills to design, develop, test, and maintain software systems. It covers various topics, including programming languages, software development methodologies, and tools used in the field.",
-  //         },
-  //         {
-  //           id: 2,
-  //           title: "What are the key topics covered in a software engineering course?",
-  //           text: "Topics typically include programming languages, software development life cycle, data structures and algorithms, software design and architecture, quality assurance, project management, and emerging technologies.",
-  //         },
-  //         {
-  //           id: 3,
-  //           title: "How long does a software engineering course typically last?",
-  //           text: " The duration of a software engineering course is 22 weeks.",
-  //         },
-  //         {
-  //           id: 4,
-  //           title:
-  //             "What are the career prospects after completing a software engineering course?",
-  //           text: "Career prospects include roles such as software developer, full-stack developer, front-end developer, back-end developer, mobile app developer, DevOps engineer, data scientist, machine learning engineer, and more.",
-  //         },
-  //         {
-  //           id: 5,
-  //           title: "How can a software engineering course benefit my career?",
-  //           text: "A software engineering course provides the skills and knowledge needed for a career in software development, opening doors to diverse and rewarding opportunities in the technology industry. It enhances problem-solving abilities and prepares individuals for roles in high-demand fields.",
-  //         },
-  //         // {
-  //         //   id: 6,
-  //         //   title:
-  //         //     "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-  //         //   text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
-  //         // },
-  //         // {
-  //         //   id: 7,
-  //         //   title:
-  //         //     "How Will I Get Access To The Assignments And Learning Content?",
-  //         //   text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
-  //         // },
-  //         // {
-  //         //   id: 8,
-  //         //   title: "What If The Course Timings Don't Match My Work Timings?",
-  //         //   text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
-  //         // },
-  //       ],
-  //       defaultCurrent: 1,
-  //     },
-  //   ],
-  //   courseBenefits: {
-  //     title: "Benefits",
-  //     desc: "",
-  //     tabBtns: [
-  //       {
-  //         id: "tab-1",
-  //         title: "Career Support",
-  //       },
-  //       {
-  //         id: "tab-2",
-  //         title: "Doubt Resolution",
-  //       },
-  //       {
-  //         id: "tab-3",
-  //         title: "Learning Support",
-  //       },
-  //       {
-  //         id: "tab-4",
-  //         title: "Networking",
-  //       },
-  //     ],
-  //     tabsContents: [
-  //       {
-  //         id: "tab-1",
-  //         image: "featured-image-14.jpg",
+          {
+            id: 8,
+            title: " Software Architecture",
+            lists: [
+              "Architectural styles (e.g., MVC, Microservices) ",
+              "Design patterns for architecture",
+            ],
+          },
+          {
+            id: 9,
+            title: " Software Architecture",
+            lists: [
+              "Architectural styles (e.g., MVC, Microservices) ",
+              "Design patterns for architecture",
+            ],
+          },
+          {
+            id: 10,
+            title: " Database Management Systems: Database fundamentals",
+            lists: [" Relational databases", "NoSQL databases"],
+          },
+          {
+            id: 11,
+            title: " SQL and Database Design",
+            lists: [" Query language basics", "Normalisation "],
+          },
+          {
+            id: 12,
+            title: " Software Development Tools and Environments",
+            lists: [
+              " Integrated Development Environments (IDEs)",
+              "Version Control Systems (e.g., Git)",
+              "Continuous Integration and Deployment (CI/CD)",
+            ],
+          },
+          {
+            id: 13,
+            title: " Types of Testing",
+            lists: [
+              " Unit testing",
+              "Integration testing   ",
+              "System testing",
+              "User acceptance testing",
+            ],
+          },
+          {
+            id: 14,
+            title: " Test Automation",
+            lists: [
+              " Automated testing tools",
+              "Test-driven development (TDD)",
+            ],
+          },
+          {
+            id: 15,
+            title:
+              " Project Management and Collaboration: Project Planning and Scheduling",
+            lists: [
+              " Gantt charts",
+              "Agile project management",
+              "System testing",
+              "User acceptance testing",
+            ],
+          },
+          {
+            id: 16,
+            title: " Project Management and Collaboration: Collaboration Tools",
+            lists: [
+              " Communication tools (e.g., Slack, Teams)",
+              "Project tracking tools (e.g., Jira)",
+              "System testing",
+              "User acceptance testing",
+            ],
+          },
+          {
+            id: 17,
+            title: " Emerging Technologies and Trends",
+            lists: [
+              " Cloud Computing",
+              "Artificial Intelligence and Machine Learning",
+              "DevOps practices.",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    faqsSection: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "What is a Software Development course?            ",
+            text: "A Software Development course is a structured programme of study that provides individuals with the knowledge and skills to design, develop, test, and maintain software systems. It covers various topics, including programming languages, software development methodologies, and tools used in the field.",
+          },
+          {
+            id: 2,
+            title:
+              "What are the key topics covered in a Software Development course?",
+            text: "Topics typically include programming languages, software development life cycle, data structures and algorithms, software design and architecture, quality assurance, project management, and emerging technologies.",
+          },
+          {
+            id: 3,
+            title:
+              "How long does a Software Development course typically last?",
+            text: " The duration of a Software Development course is 22 weeks.",
+          },
+          {
+            id: 4,
+            title:
+              "What are the career prospects after completing a Software Development course?              ",
+            text: "Career prospects include roles such as software developer, full-stack developer, front-end developer, back-end developer, mobile app developer, DevOps engineer, data engineer, web developer, and more.",
+          },
+          {
+            id: 5,
+            title: "How can a Software Development course benefit my career?",
+            text: "A Software Development course provides the skills and knowledge needed for a career in software development, opening doors to diverse and rewarding opportunities in the technology industry. It enhances problem-solving abilities and prepares individuals for roles in high-demand fields.            ",
+          },
+          // {
+          //   id: 6,
+          //   title:
+          //     "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+          //   text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+          // },
+          // {
+          //   id: 7,
+          //   title:
+          //     "How Will I Get Access To The Assignments And Learning Content?",
+          //   text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+          // },
+          // {
+          //   id: 8,
+          //   title: "What If The Course Timings Don't Match My Work Timings?",
+          //   text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+          // },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "100% Career counselling",
-  //           "Get yourself interview-ready with proper training, industry expert interactions, and resume-building tools.",
-  //           "Elevate your LinkedIn game with a comprehensive profile-building session.",
-  //         ],
-  //       },
-  //       {
-  //         id: "tab-2",
-  //         image: "featured-image-14.jpg",
+          lists: [
+            "100% Career counselling",
+            "Get yourself interview-ready with proper training, industry-expert interactions, and resume-building tools.            ",
+            "Elevate your LinkedIn game with a comprehensive profile-building session.",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "Solve all your queries with one-on-one interaction during the lectures",
-  //           "Ask questions, get answers and get complete support from the faculty",
-  //           "Enhance the learning experience offered by our highly experienced and achieved faculties.",
-  //         ],
-  //       },
-  //       {
-  //         id: "tab-3",
-  //         image: "featured-image-14.jpg",
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and get complete support from the faculty",
+            "Enhance the learning experience offered by our highly experienced and achieved faculties.            ",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "Get unlimited learning access for 1 year to the learning management system",
-  //           "Receive proper guidance as per your special requirements from our faculties",
-  //           "Access the recorded lectures in case you miss a session",
-  //         ],
-  //       },
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
+          ],
+        },
 
-  //       {
-  //         id: "tab-4",
-  //         image: "featured-image-14.jpg",
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
 
-  //         lists: [
-  //           "Be a part of a community of 10,000+ Learners.",
-  //           "Connect with the Industry experts who will help guide you through your career after course completion.",
-  //           "Talk, share, connect, learn, and grow with other students in your batch.",
-  //         ],
-  //       },
-  //     ],
-  //   },
-  //   productDetails: {
-  //     flagsa: "/assets/images/icons/flag_sa.webp",
-  //     flagnig: "/assets/images/icons/flag_nigeria.webp",
-  //     flagus: "/assets/images/icons/flag_us.webp",
-  //     flagind: "/assets/images/icons/flag_india.webp",
-  //     flagken: "/assets/images/icons/flag_kenya.webp",
-  //     title: "Fee Structure & Certification",
-  //     subTitle: "Get Certified",
-  //     price: 64499,
-  //     certifiedTitle1: "Earn Your Software Engineering certificate",
-  //     certifiedText1:
-  //       "Earn a prestigious Software Engineering Certificate online & boost your tech career! Get certified today! Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now!",
-  //     certifiedTitle2: "Share Your Achievement",
+          lists: [
+            "Be part of a community of 10,000+ Learners.",
+            "Connect with the Industry experts who will help guide you through your career after course completion.            ",
+            "Talk, share, connect, learn, and grow with other students in your batch.",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fee Structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Software Engineering certificate",
+      certifiedText1:
+        "Earn a prestigious Software Development  Certificate online & boost your tech career! Get certified today! Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now!        ",
+      certifiedTitle2: "Share Your Achievement",
 
-  //     certifiedText2:
-  //       "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements to your friends and colleagues",
-  //     certifiedTitle3: "Benefits",
-  //     certifiedText3:
-  //       "Embrace a world of possibilities with the most significant online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
-  //     admissionText:
-  //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
-  //     termsConditions: "*Terms & Conditions",
-  //     CsFundamentals: "Total Admission Fee",
-  //     CsDefenceToolbox: "Cybersecurity Defence Toolbox",
-  //   },
-  //   modalImage: "Pop-up_bg.webp",
-  //   zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
-  //   stickyText:
-  //     "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-  // },
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements to your friends and colleagues.",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "Embrace a world of possibilities with the most significant online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    modalImage: "Pop-up_bg.webp",
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+    stickyText:
+      "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
 
   //Cybersecurity
   // CS: {
