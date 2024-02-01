@@ -9,7 +9,7 @@ class LeadService {
     ["Data Science", "Data Science"],
     ["Digital Marketing", "Digital Marketing"],
     ["Project Management", "Project Management"],
-    // ["Software Engineering", "Software Engineering"],
+    ["software development", "software development"],
     ["Design Thinking", "Design Thinking"],
     ["Artificial Intelligence", "Artificial Intelligence"],
   ]);
@@ -67,8 +67,10 @@ class LeadService {
     try {
       //Save leads on Salesforce
       let salesforceParam = { ...params };
+      console.log("salesforceParam", salesforceParam);
       salesforceParam.Programme_Of_Interest =
         this.salesforceProgramOfIngterest.get(params.Programme_Of_Interest);
+      console.log("salesforceParam", salesforceParam.Programme_Of_Interest);
       salesforceParam.recordTypeId = this.drLeadRecordTypeId;
       salesforceParam.Lead_Source = leadSource;
       salesforceParam.Source_Campaign = sourceCampaign;

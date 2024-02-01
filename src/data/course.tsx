@@ -763,7 +763,7 @@ export const courseData = {
       title: "Fee Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Software Engineering certificate",
+      certifiedTitle1: "Earn Your Software Development certificate",
       certifiedText1:
         "Earn a prestigious Software Development  Certificate online & boost your tech career! Get certified today! Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now!        ",
       certifiedTitle2: "Share Your Achievement",
