@@ -117,7 +117,7 @@ function RequestForm(props: any) {
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1 &&
-        (url === "/all-courses/software-engineering-course"
+        (url === "/all-courses/software-development-course"
           ? item?.id === 229
           : item?.id !== 229)
     );
