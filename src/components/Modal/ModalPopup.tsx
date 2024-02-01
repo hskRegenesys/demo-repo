@@ -65,6 +65,7 @@ function ModalPopup(props: any) {
   const programmeOfInterest = watch("Programme_Of_Interest");
 
   const onSubmit = async (data: any) => {
+    console.log("data", data);
     sebtnDisable(true);
     const current = new Date();
     data.page_url = window?.location?.href;
