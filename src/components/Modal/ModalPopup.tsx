@@ -134,9 +134,9 @@ function ModalPopup(props: any) {
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
-      !!filterData?.parentCourse
-        ? setValue("Programme_Of_Interest", filterData?.parentCourse?.name)
-        : setValue("Programme_Of_Interest", filterData?.name);
+      // !!filterData?.parentCourse
+      //   ? setValue("Programme_Of_Interest", filterData?.parentCourse?.name)
+      //   : setValue("Programme_Of_Interest", filterData?.name);
     }
   }, [id]);
   return (
