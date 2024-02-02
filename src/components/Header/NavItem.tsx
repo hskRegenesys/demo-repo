@@ -45,110 +45,7 @@ const NavItem = (props: any) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  // Degree programmes data
-  const degreeProgrammesData = [
-    {
-      courseName: "Business",
-      courseUrl: "https://www.regenesys.net/all-programmes/business",
-    },
-    {
-      courseName: "Public Management",
-      courseUrl: "https://www.regenesys.net/all-programmes/public-management",
-    },
-    {
-      courseName: "Finance      ",
-      courseUrl: "https://www.regenesys.net/all-programmes/finance      ",
-    },
-    {
-      courseName: "Technology      ",
-      courseUrl: "https://www.regenesys.net/all-programmes/technology",
-    },
-    {
-      courseName: "Law      ",
-      courseUrl: "https://www.law.regenesys.net/      ",
-    },
 
-    // {
-    //   courseName: "MBA",
-    //   courseUrl: "https://www.regenesys.net/master-of-business-administration",
-    // },
-    // // ... (other degree programs)
-    // {
-    //   courseName: "DBM",
-    //   courseUrl: "https://www.regenesys.net/doctor-of-business-management",
-    // },
-    // {
-    //   courseName: "PDBM",
-    //   courseUrl:
-    //     "https://www.regenesys.net/postgraduate-diploma-in-business-management",
-    // },
-    // {
-    //   courseName: "BBA",
-    //   courseUrl:
-    //     "https://www.regenesys.net/bachelor-of-business-administration",
-    // },
-    // {
-    //   courseName: "BBAR",
-    //   courseUrl:
-    //     "https://www.regenesys.net/bachelor-of-business-administration-in-retail",
-    // },
-    // {
-    //   courseName: "HCBM",
-    //   courseUrl:
-    //     "https://www.regenesys.net/higher-certificate-in-business-management",
-    // },
-    // {
-    //   courseName: "HCBRM",
-    //   courseUrl:
-    //     "https://www.regenesys.net/higher-certificate-in-business-management-in-retail",
-    // },
-    // {
-    //   courseName: "MPM",
-    //   courseUrl: "https://www.regenesys.net/master-of-public-management",
-    // },
-    // {
-    //   courseName: "PDPM",
-    //   courseUrl:
-    //     "https://www.regenesys.net/postgraduate-diploma-in-public-management",
-    // },
-    // {
-    //   courseName: "BPM",
-    //   courseUrl: "https://www.regenesys.net/bachelor-of-public-management",
-    // },
-    // {
-    //   courseName: "NDPA",
-    //   courseUrl:
-    //     "https://www.regenesys.net/national-diploma-in-public-administration",
-    // },
-    // {
-    //   courseName: "HCPM",
-    //   courseUrl:
-    //     "https://www.regenesys.net/higher-certificate-in-public-management",
-    // },
-    // {
-    //   courseName: "BBAB",
-    //   courseUrl:
-    //     "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
-    // },
-    // {
-    //   courseName: "HCBMB",
-    //   courseUrl:
-    //     "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
-    // },
-    // {
-    //   courseName: "BCOMPT",
-    //   courseUrl: "https://www.regenesys.net/bachelor-of-accounting-science",
-    // },
-    // {
-    //   courseName: "BSCS",
-    //   courseUrl:
-    //     "https://www.regenesys.net/bachelor-of-science-in-computer-science",
-    // },
-    // {
-    //   courseName: "LLB",
-    //   courseUrl: "https://www.law.regenesys.net/",
-    // },
-  ];
   const trainingProgrammesData = [
     {
       courseName: "International Leadership Development",
@@ -240,6 +137,130 @@ const NavItem = (props: any) => {
 
   const handleLeaveIcon = () => {
     setIsIconActive(false);
+  };
+
+  const [selectedProgram, setSelectedProgram] = useState<string | null>(null);
+
+  const degreeProgrammesData = [
+    {
+      courseName: "Business Management",
+      courseUrl: "https://www.regenesys.net/all-programmes/business",
+      subDegreePrograms: [
+        {
+          subCourseName: "MBA",
+          subCourseUrl:
+            "https://www.regenesys.net/master-of-business-administration",
+        },
+        {
+          subCourseName: "DBM",
+          subCourseUrl:
+            "https://www.regenesys.net/doctor-of-business-management",
+        },
+        {
+          subCourseName: "PDBM",
+          subCourseUrl:
+            "https://www.regenesys.net/postgraduate-diploma-in-business-management",
+        },
+        {
+          subCourseName: "BBA",
+          subCourseUrl:
+            "https://www.regenesys.net/bachelor-of-business-administration",
+        },
+        {
+          subCourseName: "BBAR",
+          subCourseUrl:
+            "https://www.regenesys.net/bachelor-of-business-administration-in-retail",
+        },
+        {
+          subCourseName: "HCBM",
+          subCourseUrl:
+            "https://www.regenesys.net/higher-certificate-in-business-management",
+        },
+        {
+          subCourseName: "HCBRM",
+          subCourseUrl:
+            "https://www.regenesys.net/higher-certificate-in-business-management-in-retail",
+        },
+      ],
+    },
+    {
+      courseName: "Public Management",
+      courseUrl: "https://www.regenesys.net/all-programmes/public-management",
+      subDegreePrograms: [
+        {
+          subCourseName: "MPM",
+          subCourseUrl: "https://www.regenesys.net/master-of-public-management",
+        },
+        {
+          subCourseName: "PDPM",
+          subCourseUrl:
+            "https://www.regenesys.net/postgraduate-diploma-in-public-management",
+        },
+        {
+          subCourseName: "BPM",
+          subCourseUrl:
+            "https://www.regenesys.net/bachelor-of-public-management",
+        },
+        {
+          subCourseName: "NDPA",
+          subCourseUrl:
+            "https://www.regenesys.net/national-diploma-in-public-administration",
+        },
+        {
+          subCourseName: "HCPM",
+          subCourseUrl:
+            "https://www.regenesys.net/higher-certificate-in-public-management",
+        },
+      ],
+    },
+    {
+      courseName: "Finance",
+      courseUrl: "https://www.regenesys.net/all-programmes/finance",
+      subDegreePrograms: [
+        {
+          subCourseName: "BBAB",
+          subCourseUrl:
+            "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
+        },
+        {
+          subCourseName: "HCBCM",
+          subCourseUrl:
+            "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
+        },
+        {
+          subCourseName: "BCOMPT",
+          subCourseUrl:
+            "https://www.regenesys.net/bachelor-of-accounting-science",
+        },
+      ],
+    },
+    {
+      courseName: "Technology",
+      courseUrl: "https://www.regenesys.net/all-programmes/technology",
+      subDegreePrograms: [
+        {
+          subCourseName: "BSCS",
+          subCourseUrl:
+            "https://www.regenesys.net/bachelor-of-science-in-computer-science",
+        },
+      ],
+    },
+    {
+      courseName: "Law",
+      courseUrl: "https://www.law.regenesys.net/",
+      subDegreePrograms: [
+        {
+          subCourseName: "LLB",
+          subCourseUrl: "https://www.law.regenesys.net/",
+        },
+      ],
+    },
+  ];
+
+  const handleDropdownToggle = (programName: string) => {
+    setSelectedProgram((prevSelectedProgram) =>
+      prevSelectedProgram === programName ? null : programName
+    );
   };
 
   return (
@@ -436,37 +457,80 @@ const NavItem = (props: any) => {
                               fontSize: "14px",
                             }}
                           >
-                            Accreditated Programmes{" "}
+                            Accreditated Programmes
                             <span className="fa fa-angle-right"></span>
                           </div>
                         </li>
                         {showCoursesDropdown2 && (
                           <div className="drop-down-2">
                             <div className="degreeCoursesData">
-                              {degreeProgrammesData?.map((item) => (
-                                <div
-                                  style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    padding: "8px 0px",
-                                    fontSize: "12px",
-                                  }}
-                                >
-                                  <span
-                                    className="fa fa-circle"
-                                    style={{
-                                      fontSize: "6px",
-                                      paddingRight: "10px",
-                                    }}
-                                  ></span>
-                                  <Link
-                                    key={item.courseName}
-                                    href={item.courseUrl}
+                              <ul>
+                                {degreeProgrammesData.map((program, index) => (
+                                  <li
+                                    style={{ padding: "10px 0px" }}
+                                    key={index}
+                                    onClick={() =>
+                                      handleDropdownToggle(program.courseName)
+                                    }
                                   >
-                                    {item.courseName}
-                                  </Link>
-                                </div>
-                              ))}
+                                    <a
+                                      style={{
+                                        display: "flex",
+                                        justifyContent: "space-between",
+                                        fontSize: "12px",
+                                      }}
+                                    >
+                                      <div style={{ display: "flex" }}>
+                                        <span
+                                          className="fa fa-circle"
+                                          style={{
+                                            fontSize: "7px",
+                                            paddingRight: "10px",
+                                          }}
+                                        ></span>
+                                        <Link
+                                          key={index}
+                                          href={program.courseUrl}
+                                        >
+                                          {program.courseName}
+                                        </Link>
+                                      </div>
+                                      <span className="fa fa-angle-down"></span>
+                                    </a>
+                                    {selectedProgram === program.courseName && (
+                                      <strong className="inlineDegreeCourse">
+                                        {program.subDegreePrograms.map(
+                                          (subProgram, subIndex) => (
+                                            <span key={subIndex}>
+                                              <div
+                                                style={{
+                                                  display: "flex",
+                                                  alignItems: "center",
+                                                  paddingBottom: "10px",
+                                                }}
+                                              >
+                                                <span
+                                                  className="fa fa-circle"
+                                                  style={{
+                                                    fontSize: "6px",
+                                                    paddingRight: "10px",
+                                                  }}
+                                                ></span>
+                                                <Link
+                                                  key={subIndex}
+                                                  href={subProgram.subCourseUrl}
+                                                >
+                                                  {subProgram.subCourseName}
+                                                </Link>
+                                              </div>
+                                            </span>
+                                          )
+                                        )}
+                                      </strong>
+                                    )}
+                                  </li>
+                                ))}
+                              </ul>
                             </div>
                           </div>
                         )}
@@ -685,11 +749,45 @@ const NavItem = (props: any) => {
                         </div>
                         <div className="degreeCoursesData">
                           <h2> Accreditated Programmes</h2>
-                          {degreeProgrammesData?.map((item) => (
-                            <Link key={item.courseName} href={item.courseUrl}>
-                              {item.courseName}
-                            </Link>
-                          ))}
+                          <ul>
+                            {degreeProgrammesData.map((program, index) => (
+                              <li
+                                key={index}
+                                onClick={() =>
+                                  handleDropdownToggle(program.courseName)
+                                }
+                              >
+                                <a
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  <Link key={index} href={program.courseUrl}>
+                                    {program.courseName}
+                                  </Link>
+                                  <span className="fa fa-angle-down"></span>
+                                </a>
+                                {selectedProgram === program.courseName && (
+                                  <strong className="inlineDegreeCourse">
+                                    {program.subDegreePrograms.map(
+                                      (subProgram, subIndex) => (
+                                        <span key={subIndex}>
+                                          <Link
+                                            key={subIndex}
+                                            href={subProgram.subCourseUrl}
+                                          >
+                                            {subProgram.subCourseName}
+                                          </Link>
+                                        </span>
+                                      )
+                                    )}
+                                  </strong>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                         <div className="trainingProgrammeData">
                           <h2>Training Programmes</h2>

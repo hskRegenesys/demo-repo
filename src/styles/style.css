@@ -11328,6 +11328,14 @@ featured-section .right-col .sec-title h2 {
   text-align: left;
 }
 
+.inlineDegreeCourse {
+  display: grid;
+  grid-template-columns: 160px 160px;
+  margin-top: 10px;
+}
+
+
+
 .trainingProgrammeData {
   display: flex;
   width: 200px;
@@ -11344,6 +11352,9 @@ featured-section .right-col .sec-title h2 {
   .inlineDegreeCourse {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
+    margin-left: 27px;
+    
   }
   .inlineDegreeCourse a {
     width: 50%;
@@ -11355,6 +11366,7 @@ featured-section .right-col .sec-title h2 {
     margin-left: 80px;
     border-left: none;
     border-right: none;
+    margin-top: 10px;
   }
   .degreeCoursesData a {
     text-align: left;
