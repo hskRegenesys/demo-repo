@@ -3629,59 +3629,59 @@ export const courseData = {
     },
 
     CourseCurriculum: [
-      {
-        id: 1,
-        courseCurriculumTitle: "Course curriculum",
-        faqs: [
-          {
-            id: 1,
-            title: "Module 01",
-            lists: [
-              "AI-Powered Applications for Natural Language Processing (NLP)",
-              "Analyze, interpret, and generate human language text efficiently using AI ",
-              "Develop powerful applications for Natural Language Processing",
-            ],
-          },
-          {
-            id: 2,
-            title: "Module 02",
-            lists: [
-              "Enhancing Visual Content with Computer Vision Techniques",
-              "Enhance visual content using computer vision",
-              "Tackle challenges in the field of computer vision",
-            ],
-          },
-          {
-            id: 3,
-            title: "Module 03",
-            lists: [
-              "Leveraging Cloud Computing Services for AI Applications",
-              "Leverage cloud platforms for deploying, managing, and optimising AI applications",
-              "Gain insights into best practices for deploying AI models",
-              "Utilise cloud platforms to accelerate the management of AI-driven solutions",
-            ],
-          },
-          {
-            id: 4,
-            title: "Module 04",
-            lists: [
-              "Unleashing Insights from Big Data through Analytics",
-              "learn about the big data ecosystem, Spark RDD and Dataframe, Spark SQL, and ETL pipeline",
-              "Explore challenges associated with massive datasets and acquire skills in data acquisition, cleaning, integration, and preprocessing",
-            ],
-          },
-          {
-            id: 5,
-            title: "Module 05",
-            lists: [
-              "Streamlining AI Development with ML Ops.",
-              "Enhance the efficiency and scalability of AI model development and deployment",
-              "Gain a comprehensive understanding of the ML Ops principles, tools, and practices",
-            ],
-          },
-        ],
-        defaultCurrent: 1,
-      },
+      // {
+      //   id: 1,
+      //   courseCurriculumTitle: "Course curriculum",
+      //   faqs: [
+      //     {
+      //       id: 1,
+      //       title: "Module 01",
+      //       lists: [
+      //         "AI-Powered Applications for Natural Language Processing (NLP)",
+      //         "Analyze, interpret, and generate human language text efficiently using AI ",
+      //         "Develop powerful applications for Natural Language Processing",
+      //       ],
+      //     },
+      //     {
+      //       id: 2,
+      //       title: "Module 02",
+      //       lists: [
+      //         "Enhancing Visual Content with Computer Vision Techniques",
+      //         "Enhance visual content using computer vision",
+      //         "Tackle challenges in the field of computer vision",
+      //       ],
+      //     },
+      //     {
+      //       id: 3,
+      //       title: "Module 03",
+      //       lists: [
+      //         "Leveraging Cloud Computing Services for AI Applications",
+      //         "Leverage cloud platforms for deploying, managing, and optimising AI applications",
+      //         "Gain insights into best practices for deploying AI models",
+      //         "Utilise cloud platforms to accelerate the management of AI-driven solutions",
+      //       ],
+      //     },
+      //     {
+      //       id: 4,
+      //       title: "Module 04",
+      //       lists: [
+      //         "Unleashing Insights from Big Data through Analytics",
+      //         "learn about the big data ecosystem, Spark RDD and Dataframe, Spark SQL, and ETL pipeline",
+      //         "Explore challenges associated with massive datasets and acquire skills in data acquisition, cleaning, integration, and preprocessing",
+      //       ],
+      //     },
+      //     {
+      //       id: 5,
+      //       title: "Module 05",
+      //       lists: [
+      //         "Streamlining AI Development with ML Ops.",
+      //         "Enhance the efficiency and scalability of AI model development and deployment",
+      //         "Gain a comprehensive understanding of the ML Ops principles, tools, and practices",
+      //       ],
+      //     },
+      //   ],
+      //   defaultCurrent: 1,
+      // },
     ],
     // faqsSection: [
     //   {
@@ -4775,43 +4775,43 @@ export const courseData = {
       ],
     },
     CourseCurriculum: [
-      {
-        id: 1,
-        courseCurriculumTitle: "Course curriculum",
-        faqs: [
-          {
-            id: 1,
-            title: "UX Digital Approach",
-            lists: ["Brand Experience & User"],
-          },
-          {
-            id: 2,
-            title: "Influencer Marketing",
-            lists: ["Importance of Influencer Marketing"],
-          },
-          {
-            id: 3,
-            title: "Chatbots",
-            lists: ["Introduction to Chatbots"],
-          },
-          {
-            id: 4,
-            title: "OTT Marketing",
-            lists: ["Leveraging Video Advertising"],
-          },
-          {
-            id: 5,
-            title: "Podcast",
-            lists: ["Importance of Podcast marketing"],
-          },
-          {
-            id: 6,
-            title: "Behavioral Digital Marketing",
-            lists: ["Online Consumer Behavior"],
-          },
-        ],
-        defaultCurrent: 1,
-      },
+      // {
+      //   id: 1,
+      //   courseCurriculumTitle: "Course curriculum",
+      //   faqs: [
+      //     {
+      //       id: 1,
+      //       title: "UX Digital Approach",
+      //       lists: ["Brand Experience & User"],
+      //     },
+      //     {
+      //       id: 2,
+      //       title: "Influencer Marketing",
+      //       lists: ["Importance of Influencer Marketing"],
+      //     },
+      //     {
+      //       id: 3,
+      //       title: "Chatbots",
+      //       lists: ["Introduction to Chatbots"],
+      //     },
+      //     {
+      //       id: 4,
+      //       title: "OTT Marketing",
+      //       lists: ["Leveraging Video Advertising"],
+      //     },
+      //     {
+      //       id: 5,
+      //       title: "Podcast",
+      //       lists: ["Importance of Podcast marketing"],
+      //     },
+      //     {
+      //       id: 6,
+      //       title: "Behavioral Digital Marketing",
+      //       lists: ["Online Consumer Behavior"],
+      //     },
+      //   ],
+      //   defaultCurrent: 1,
+      // },
     ],
     videoOne: {
       image: "/assets/images/background/full-video-bg.webp",
