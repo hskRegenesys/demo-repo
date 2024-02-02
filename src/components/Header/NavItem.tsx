@@ -457,7 +457,7 @@ const NavItem = (props: any) => {
                               fontSize: "14px",
                             }}
                           >
-                            Accreditated Programmes
+                            Academic Programmes
                             <span className="fa fa-angle-right"></span>
                           </div>
                         </li>
@@ -748,7 +748,7 @@ const NavItem = (props: any) => {
                           ))}
                         </div>
                         <div className="degreeCoursesData">
-                          <h2> Accreditated Programmes</h2>
+                          <h2> Academic Programmes</h2>
                           <ul>
                             {degreeProgrammesData.map((program, index) => (
                               <li
