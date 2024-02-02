@@ -385,7 +385,7 @@ export const courseData = {
         youtubeUrl:
           "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
         title: "Certification Programme in Software Development",
-        text: "Discover the Key to Success and Shape your Future with the best Software Development course for college students, freshers, and professionals. Learn the stages of software development, principles and practices of designing software systems from our highly experienced academic staff. ",
+        text: "Gain the skill set necessary to excel in the rapidly evolving tech industry. Deepen your understanding of programming languages, software architecture, and development tools with our best Software Development course. Gain hands-on experience as you work on real-world projects. This course is designed for aspiring software developers, career switchers and individuals interested in emerging technologies. ",
         lists: [
           "22 Weeks course ",
           "Live Sessions ",
@@ -431,11 +431,10 @@ export const courseData = {
       certificateTitle:
         "Leading with Excellence: Software Development  Certificate Course",
       certificateSubTitle:
-        "Earn a Software Development Certificate from Digital Regenesys & Navigate the Software Development Landscape",
-      certificateSubSubTitle:
         "With our Software Development course,  individuals will gain the necessary knowledge, expertise, and recognition to excel in this domain. By investing in our course, individuals can enhance their career prospects, stay updated with industry best practices, and demonstrate their commitment to excellence in this domain.",
+      certificateSubSubTitle: "",
       certificateListTitle:
-        "With the Software Development  Course, you will get:        ",
+        "With the Software Development  Course, you will get: ",
 
       certificateSkillList: [
         "International Recognition",
@@ -444,12 +443,12 @@ export const courseData = {
         "Software Development Tools and Techniques",
       ],
       certificateListPara:
-        " Our Software Development course opens the door to a wide range of exciting and dynamic career opportunities in software development and information technology.        ",
+        " Our Software Development course opens the door to a wide range of exciting and dynamic career opportunities in software development and information technology.",
       certificateRolesList: [
-        "Software Developer",
-        "Mobile App Developer ",
-        "Software Architect",
-        "Machine Learning Engineer",
+        "Application Developer",
+        "Java Developer",
+        "Front-End Developer  ",
+        "Full-Stack Developer",
       ],
       CertificateImage: ["SD_certificate.webp"],
       imageName: "SD_certificate",
@@ -491,9 +490,11 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title:
-              "Introduction to Software Development: Overview of Software Development ",
-            lists: ["Definition and scope", "Importance in the industry"],
+            title: "Introduction to Software Development ",
+            lists: [
+              "Overview of Software Development ",
+              "Software Development Life Cycle (SDLC)",
+            ],
           },
           {
             id: 2,
@@ -550,14 +551,6 @@ export const courseData = {
           },
 
           {
-            id: 8,
-            title: " Software Architecture",
-            lists: [
-              "Architectural styles (e.g., MVC, Microservices) ",
-              "Design patterns for architecture",
-            ],
-          },
-          {
             id: 9,
             title: " Software Architecture",
             lists: [
@@ -586,13 +579,8 @@ export const courseData = {
           },
           {
             id: 13,
-            title: " Types of Testing",
-            lists: [
-              " Unit testing",
-              "Integration testing   ",
-              "System testing",
-              "User acceptance testing",
-            ],
+            title: " Software Testing and Quality Assurance",
+            lists: [" Types of Testing", "Test Automation"],
           },
           {
             id: 14,
@@ -649,7 +637,7 @@ export const courseData = {
             id: 2,
             title:
               "What are the key topics covered in a Software Development course?",
-            text: "Topics typically include programming languages, software development life cycle, data structures and algorithms, software design and architecture, quality assurance, project management, and emerging technologies.",
+            text: "Topics typically include programming languages, software development life cycle, data structures and algorithms, software design and architecture, quality assurance, project management, and emerging technologies.            ",
           },
           {
             id: 3,
@@ -660,13 +648,14 @@ export const courseData = {
           {
             id: 4,
             title:
-              "What are the career prospects after completing a Software Development course?              ",
+              "What are the career prospects after completing a Software Development course?",
             text: "Career prospects include roles such as software developer, full-stack developer, front-end developer, back-end developer, mobile app developer, DevOps engineer, data engineer, web developer, and more.",
           },
           {
             id: 5,
-            title: "How can a Software Development course benefit my career?",
-            text: "A Software Development course provides the skills and knowledge needed for a career in software development, opening doors to diverse and rewarding opportunities in the technology industry. It enhances problem-solving abilities and prepares individuals for roles in high-demand fields.            ",
+            title:
+              "How can a Software Development course benefit my career?            ",
+            text: "A Software Development course provides the skills and knowledge needed for a career in software development, opening doors to diverse and rewarding opportunities in the technology industry. It enhances problem-solving abilities and prepares individuals for roles in high-demand fields.",
           },
           // {
           //   id: 6,
@@ -728,7 +717,7 @@ export const courseData = {
           lists: [
             "Solve all your queries with one-on-one interaction during the lectures",
             "Ask questions, get answers and get complete support from the faculty",
-            "Enhance the learning experience offered by our highly experienced and achieved faculties.            ",
+            "Enhance the learning experience offered by our highly experienced and achieved faculties.",
           ],
         },
         {
@@ -748,7 +737,7 @@ export const courseData = {
 
           lists: [
             "Be part of a community of 10,000+ Learners.",
-            "Connect with the Industry experts who will help guide you through your career after course completion.            ",
+            "Connect with Industry experts who will help guide you through your career after course completion.",
             "Talk, share, connect, learn, and grow with other students in your batch.",
           ],
         },
@@ -763,16 +752,17 @@ export const courseData = {
       title: "Fee Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Software Development certificate",
+      certifiedTitle1:
+        "Earn a prestigious Software Development  Certificate online & boost your tech career!",
       certifiedText1:
-        "Earn a prestigious Software Development  Certificate online & boost your tech career! Get certified today! Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now!        ",
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now! ",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements to your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the most significant online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
+        "Embrace a world of possibilities with the most significant online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.        ",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
