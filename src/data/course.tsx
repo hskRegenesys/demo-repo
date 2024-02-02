@@ -3507,8 +3507,7 @@ export const courseData = {
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
           "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
-        title:
-          "Certification in Artificial Intelligence Advanced Applied Programme",
+        title: "Certificate Course in Artificial Intelligence ",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves deep into the concepts and techniques of AI. Whether you're an aspiring student or a professional seeking to enhance your skills, this course will help you gain theoretical knowledge and practical experience to innovate and solve complex problems. Step into the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery
         `,
         lists: [
