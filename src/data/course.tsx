@@ -3507,8 +3507,7 @@ export const courseData = {
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
           "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
-        title:
-          "Certification in Artificial Intelligence Advanced Applied Programme",
+        title: "Certificate Course in Artificial Intelligence ",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves deep into the concepts and techniques of AI. Whether you're an aspiring student or a professional seeking to enhance your skills, this course will help you gain theoretical knowledge and practical experience to innovate and solve complex problems. Step into the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery
         `,
         lists: [
@@ -4695,26 +4694,26 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
-        title: "Certification Programme in Applied Digital Marketing",
-        text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        title: "Certificate Course in Digital Marketing ",
+        text: "Upskill yourself with a course in Digital Marketing designed especially for anyone interested in the Digital Marketing field or wants to enhance their skills in the domain. Learn the real-world application of Digital Marketing taught by industry experts. Enrol yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
-          "4 Weeks Course",
-          "Live Sessions",
-          "Career Counselling",
-          "Guaranteed Certification",
+          "20 Weeks Course    ",
+          "Live Sessions ",
+          "Career Counseling    ",
+          "Guaranteed Certification ",
         ],
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future-ready skills",
+      title: "Revolutionise Your Career With Future-Ready Skills",
       text1:
-        "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Digital Regenesys' Digital Marketing course is a comprehensive online training course that covers strategies and techniques for building and executing successful digital marketing campaigns. Participants will learn cutting-edge topics such as marketing automation, advanced analytics, influencer marketing, and digital branding. The course is designed for marketing professionals looking to enhance their skills and knowledge in the digital marketing space and stay ahead of the curve.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp",
+        "Get exposure to Built With, Google Ads, Yoast, VidIQ, Google Analytics, Canva, Socialblade, HypeAuditor, Wpforms, impact, klear, and Mailchimp ",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -4725,7 +4724,8 @@ export const courseData = {
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      desc4:
+        " Gain a broad spectrum of knowledge on how to use the tools      ",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
@@ -4750,22 +4750,22 @@ export const courseData = {
       "dm/digital_marketing_tools16.webp",
     ],
     featureSeven: {
-      title: "Meet our staff",
+      title: "Meet Our Staff",
       desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
           image: "bhupendra_mishra.webp",
-          title: "Bhupendra Mishra",
-          text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.",
-          designation: "Senior Lecturer",
+          title: "Bhupendra Mishra          ",
+          text: "Bhupendra Mishra has key skills in SEO, Google Ads, Digital Marketing, Google Analytics, Facebook Marketing, etc. Bhupendra Mishra holds an MBA degree in International Business from the Devi Ahilya University of Indore and is pursuing his Ph.D. from ITM University, Raipur.          ",
+          designation: "Senior Lecturer          ",
         },
         {
           id: 2,
           image: "faculty_deepika_sharma.webp",
-          title: "Dr. Deepika Sharma",
-          text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing, and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
-          designation: "Senior Lecturer",
+          title: "Dr. Deepika Sharma          ",
+          text: "Dr. Deepika Sharma is a Ph.D. holder in Business Management. She has also obtained an MBA in Finance & Marketing and B.E. in Electronics & Telecommunication. She has worked as a software engineer at Patni Computer Systems Ltd.",
+          designation: "Senior Lecturer          ",
         },
       ],
     },
@@ -4879,11 +4879,11 @@ export const courseData = {
         },
         {
           id: "tab-2",
-          title: "Doubt Resolution",
+          title: "Doubt Resolution          ",
         },
         {
           id: "tab-3",
-          title: "Learning Support",
+          title: "Learning Support          ",
         },
         {
           id: "tab-4",
@@ -4896,9 +4896,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "100% Career Counselling",
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+            "100% Career counselling",
+            "Get yourself interview-ready with proper training, industry-expert interactions, and resume-building tools.",
+            "Elevate your LinkedIn game with a comprehensive profile-building session.",
           ],
         },
         {
@@ -4907,8 +4907,8 @@ export const courseData = {
 
           lists: [
             "Solve all your queries with one-on-one interaction during the lectures",
-            "Ask questions, get answers and complete support from the faculty",
-            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+            "Ask questions, get answers and get complete support from the faculty",
+            "Enhance the learning experience offered by our highly experienced and achieved faculty.",
           ],
         },
         {
@@ -4927,9 +4927,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be part of a community of 10,000+ Learners.",
+            "Connect with Industry experts who will help guide you through your career after course completion.",
+            "Talk, share, connect, learn, and grow with other students in your batch.",
           ],
         },
       ],
@@ -4940,21 +4940,21 @@ export const courseData = {
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
-      subTitle: "Get Certified",
+      title: "Fee Structure & Certification      ",
+      subTitle: "Get Certified      ",
       price: 64499,
-      certifiedTitle1: "Earn your Digital Marketing certificate.",
+      certifiedTitle1: "Earn your Digital Marketing Certificate.      ",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Digital Marketing Career.",
-      certifiedTitle2: "Share Your Achievement",
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and climb the path of success towards your Digital Marketing Career.",
+      certifiedTitle2: "Share Your Achievement      ",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
