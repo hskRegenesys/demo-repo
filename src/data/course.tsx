@@ -780,37 +780,38 @@ export const courseData = {
         id: 1,
         youtubeUrl:
           "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
-        title: "Certification Programme in Applied Data Science",
-        text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
+        title: "Certificate Course in Data Science",
+        text: "Discover your potential with a Data Science course designed for people looking to upskill themselves or learn the skills for success in the Data Science field. Learn the real-world application of Data Science taught by industry experts. Enrol in this course and build a career in the most sought-after field. Take the first step towards a successful future!",
         lists: [
-          "10 Weeks",
-          "Live Classes",
-          "Capstone Projects",
-          "International Certification",
+          "30 Weeks Course",
+          "Live Sessions",
+          "Career Counseling",
+          "Guaranteed Certification",
         ],
       },
     ],
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
+        "Revolutionise your career with Digital Regenesys’s  'Data Science Course.' Unlock the limitless potential of Data Science, understanding its concepts and techniques. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.        ",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques",
+        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch. ",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+      desc4:
+        "Gain a broad spectrum of knowledge on how to use the tools.      ",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
@@ -832,26 +833,25 @@ export const courseData = {
     ],
     courseCertificate: {
       certificateTitle:
-        "Bridging Theory and Practice: Applied Data Science Certificate Course",
+        "Bridging Theory and Practice: with Internationally Certified Data Science Course        ",
       certificateSubTitle:
-        "Earn an Applied Data Science Certificate from Digital Regenesys & Excel in Real-World Insights ",
+        "Earn a Data Science Certificate from Digital Regenesys & Excel in Real-World Insights",
       certificateSubSubTitle:
-        "With our Applied Data Science programme, the knowledge and skills you gain working on projects, simulations, and case studies will set you ahead in the competition.",
-      certificateListTitle:
-        "With Applied Data Science Certificate, you will get:  ",
+        "With our Data Science course, the knowledge and skills you gain working on projects, simulations, and case studies will set you ahead in the competition.",
+      certificateListTitle: "With Data Science Certificate, you will get:",
 
       certificateSkillList: [
-        "International Recognition ",
+        "International Recognition",
         "Practical Data Science Skills",
         "Project-Based Experience",
-        "Data Visualisation Proficiency",
+        " Data Visualisation Proficiency",
       ],
       certificateListPara:
-        " Our Applied Data Science Certificate will open doors to various roles for you, whether you are a fresher, a graduate or an experienced working professional.",
+        " Our Data Science Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
       certificateRolesList: [
         "Business Intelligence Analyst",
-        "Marketing Analyst ",
-        "Operations Analyst",
+        "Marketing Analyst",
+        "Operations Analyst ",
         "Financial Analyst and many more",
       ],
       CertificateImage: ["APDSCI_certificate.webp"],
@@ -864,14 +864,14 @@ export const courseData = {
           id: 1,
           image: "Samidha_Photo.webp",
           title: "Samidha Kurle",
-          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai. Samidha Kurle excels in Procedural Programming, Web design, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
           image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
-          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, a Master's in Computer Application, and a B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
@@ -1032,8 +1032,8 @@ export const courseData = {
 
           lists: [
             "100% Career Counselling",
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+            "Get yourself interview-ready with proper training, industry-expert interactions, and resume-building tools.            ",
+            "Elevate your LinkedIn game with a comprehensive profile-building session.",
           ],
         },
         {
@@ -1042,8 +1042,8 @@ export const courseData = {
 
           lists: [
             "Solve all your queries with one-on-one interaction during the lectures",
-            "Ask questions, get answers and complete support from the faculty",
-            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+            "Ask questions, get answers and get complete support from the faculty",
+            "Enhance the learning experience offered by our highly experienced and achieved faculty.",
           ],
         },
         {
@@ -1062,9 +1062,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be part of a community of 10,000+ Learners.",
+            "Connect with Industry experts who will help guide you through your career after course completion.            ",
+            "Talk, share, connect, learn, and grow with other students in your batch.",
           ],
         },
       ],
@@ -1078,18 +1078,18 @@ export const courseData = {
       title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Data Science certificate",
+      certifiedTitle1: "Earn your Data Science Certificate.",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Data Science Career.        ",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.        ",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -3509,42 +3509,37 @@ export const courseData = {
           "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
         title:
           "Certification in Artificial Intelligence Advanced Applied Programme",
-        text: `Unleash your potential with our 'AI Advanced Applied Programme.' Skyrocket your career by mastering advanced AI
-        skills and applications. Become an AI trailblazer in your field with this cutting-edge course. Delve into NLP, computer
-        vision, cloud computing, big data analytics, and ML Ops. Gain theoretical knowledge and practical experience to
-        innovate and solve complex problems. Elevate your career with the power of AI.
+        text: `Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves deep into the concepts and techniques of AI. Whether you're an aspiring student or a professional seeking to enhance your skills, this course will help you gain theoretical knowledge and practical experience to innovate and solve complex problems. Step into the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery
         `,
         lists: [
-          "15 Weeks Course",
+          "37 Weeks Course",
           "Live Sessions",
-          "Capstone Projects",
-          "International Certification",
+          "Career Counseling",
+          "Guaranteed Certification ",
         ],
       },
     ],
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
-      text1: `Revolutionize your career with our 'AI Advanced Applied Programme.' Gain advanced AI skills and become an AI
-        trailblazer. Delve into NLP, computer vision, cloud computing, big data analytics, and ML Ops. Acquire the skills to
-        innovate and solve complex problems with AI.`,
+      text1: `Revolutionise your career with Digital Regenesys’s  'Artificial Intelligence Course.' Unlock the limitless potential of AI, understanding its concepts and techniques. Gain AI skills and become an AI trailblazer. Delve into NLP, computer vision, cloud computing, big data analytics, and ML Ops. Acquire the skills to innovate and solve complex problems with AI.`,
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Exposure to advanced AI skills and applications. This cutting-edge program empowers professionals to learn various aspects of AI. Through a combination of theoretical knowledge and practical projects, participants gain exposure to innovative AI technologies, enabling them to innovate and solve complex problems.",
+        "Exposure to AI skills and applications. This cutting-edge course empowers professionals to learn various aspects of AI. Through a combination of theoretical knowledge and practical projects, participants gain exposure to innovative AI technologies, enabling them to innovate and solve complex problems.        ",
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn from the best-in-class instructors who will help you with every technological concept from foundation phase in this course through to the applied and advanced programmes.",
+        "Learn from the best-in-class instructors who will help you with every technological concept throughout this course.",
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
 
       subTitle4: "Approach",
       desc4:
-        "Embrace an approach that emphasizes advanced AI skills and applications. Dive deep into various aspects of AI, combining theoretical knowledge with hands-on projects. Explore cutting-edge AI technologies, allowing you to innovate and tackle complex problems using advanced AI techniques.",
+        "Embrace an approach that emphasises AI skills and applications. Dive deep into various aspects of AI, combining theoretical knowledge with hands-on projects. Explore cutting-edge AI technologies, allowing you to innovate and tackle complex problems using AI techniques.",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
@@ -3567,27 +3562,27 @@ export const courseData = {
 
     courseCertificate: {
       certificateTitle:
-        "Transforming Industries with Advanced AI: Applied Certificate Course",
+        "Transforming Industries with Internationally Certified AI Course",
       certificateSubTitle:
-        "Earn an AI Advanced Applied Certificate from Digital Regenesys & Harness the Power of AI ",
+        "Earn an Artificial Intelligence Certificate from Digital Regenesys & Harness the Power of AI",
       certificateSubSubTitle:
-        "With our AI Advanced Applied programme, you will gain advanced knowledge and practical skills in applying artificial intelligence to real-world scenarios.",
+        "With our Artificial Intelligence course, you will gain knowledge and practical skills in applying artificial intelligence to real-world scenarios.",
       certificateListTitle:
-        "With AI Advanced Applied Certificate, you will get:",
+        "With Artificial Intelligence Certificate, you will get:",
 
       certificateSkillList: [
         "International Recognition",
-        "Advanced AI Skills",
+        "AI Skills ",
         "Optimisation and Performance Tuning",
-        "Advanced AI Tools and Frameworks",
+        "AI Tools and Frameworks",
       ],
       certificateListPara:
-        " Our AI Advanced Applied Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.        ",
+        " Our AI Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
       certificateRolesList: [
-        "AI Specialist in Specific Industries",
-        "AI Solution Architect",
+        "AI Specialist in Specific Industries ",
+        "AI Product Support ",
         "AI Project Manager",
-        "AI Entrepreneur and many more",
+        "  AI Entrepreneur, and many more",
       ],
       CertificateImage: ["AIAAPP_certificate.webp"],
     },
@@ -3599,14 +3594,14 @@ export const courseData = {
           id: 1,
           image: "Samidha_Photo.webp",
           title: "Samidha Kurle",
-          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai.  Samidha Kurle excels in Procedural Programming, Web Designing, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai. Samidha Kurle excels in Procedural Programming, Web design, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering",
           designation: "Senior Lecturer",
         },
         {
           id: 2,
           image: "dr_nilay_profile.webp",
           title: "Dr. Nilay Karade ",
-          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, Master's in Computer Application, and B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, a Master's in Computer Application, and a B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
           designation: "Senior Lecturer",
         },
         {
@@ -3769,8 +3764,8 @@ export const courseData = {
 
           lists: [
             "100% Career Counselling",
-            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
-            "Elevate your LinkedIn game with a comprehensive profile building session",
+            "Get yourself interview-ready with proper training, industry-expert interactions, and resume-building tools.",
+            "Elevate your LinkedIn game with a comprehensive profile-building session.",
           ],
         },
         {
@@ -3779,8 +3774,8 @@ export const courseData = {
 
           lists: [
             "Solve all your queries with one-on-one interaction during the lectures",
-            "Ask questions, get answers and complete support from the faculty",
-            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+            "Ask questions, get answers and get complete support from the faculty",
+            "Enhance the learning experience offered by our highly experienced and achieved faculty.",
           ],
         },
         {
@@ -3799,9 +3794,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be part of a community of 10,000+ Learners.",
+            "Connect with Industry experts who will help guide you through your career after course completion.            ",
+            "Talk, share, connect, learn, and grow with other students in your batch.",
           ],
         },
       ],
@@ -3815,18 +3810,18 @@ export const courseData = {
       title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Data Science certificate",
+      certifiedTitle1: "Earn your Artificial Intelligence Certificate.",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Data Science Career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your AI Career. ",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.        ",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
