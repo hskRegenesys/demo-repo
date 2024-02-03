@@ -107,7 +107,16 @@ const AllCourseGallery = () => {
         item?.mode_id === 1 &&
         item?.isAddon === false
     );
-    const checkCourseList = ["DSCI", "PM", "DM", "CSC", "DTC", "DT", "AI"];
+    const checkCourseList = [
+      "DSCI",
+      "DSN",
+      "PM",
+      "DM",
+      "CSC",
+      "DTC",
+      "DT",
+      "AI",
+    ];
 
     const result: any = [];
 

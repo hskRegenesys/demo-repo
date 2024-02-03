@@ -3822,7 +3822,7 @@ export const courseData = {
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
-      CsFundamentals: "Total Admission Fee",
+      CsFundamentals: "",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
@@ -4694,6 +4694,9 @@ export const courseData = {
       {
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+
         title: "Certificate Course in Digital Marketing ",
         text: "Upskill yourself with a course in Digital Marketing designed especially for anyone interested in the Digital Marketing field or wants to enhance their skills in the domain. Learn the real-world application of Digital Marketing taught by industry experts. Enrol yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
@@ -4810,7 +4813,9 @@ export const courseData = {
     ],
     videoOne: {
       image: "/assets/images/background/full-video-bg.webp",
-      videoId: "y2Eqx6ys1hQ",
+
+      videoId:
+        "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=y2Eqx6ys1hQ",
       title: "Linoor is trusted by millions of customers",
       text1:
         "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
