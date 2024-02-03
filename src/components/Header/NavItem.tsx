@@ -456,7 +456,7 @@ const NavItem = (props: any) => {
                             style={{
                               display: "flex",
                               justifyContent: "space-between",
-                              gap: "11px",
+                              gap: "30px",
                               fontSize: "14px",
                             }}
                           >
@@ -470,6 +470,11 @@ const NavItem = (props: any) => {
                               <ul>
                                 {degreeProgrammesData.map((program, index) => (
                                   <li
+                                    className={
+                                      selectedProgram === program.courseName
+                                        ? "active"
+                                        : ""
+                                    }
                                     style={{ padding: "10px 0px" }}
                                     key={index}
                                     onClick={() =>
@@ -741,7 +746,7 @@ const NavItem = (props: any) => {
                                           fontWeight: "400",
                                         }}
                                       >
-                                        {item.name}{" "}
+                                        {item.name}
                                         {item.isNew && <span>new</span>}
                                       </a>
                                     </li>
@@ -759,6 +764,11 @@ const NavItem = (props: any) => {
                                 onClick={() =>
                                   handleDropdownToggle(program.courseName)
                                 }
+                                className={
+                                  selectedProgram === program.courseName
+                                    ? "colorActiveGreen"
+                                    : ""
+                                }
                               >
                                 <a
                                   style={{
@@ -773,20 +783,33 @@ const NavItem = (props: any) => {
                                   <span className="fa fa-angle-down"></span>
                                 </a>
                                 {selectedProgram === program.courseName && (
-                                  <strong className="inlineDegreeCourse">
+                                  <ul className="inlineDegreeCourse">
                                     {program.subDegreePrograms.map(
                                       (subProgram, subIndex) => (
-                                        <span key={subIndex}>
+                                        <li
+                                          key={subIndex}
+                                          style={{
+                                            listStyle: "none",
+                                            listStyleType: "disc",
+                                          }}
+                                          className="DegreeProgram-li"
+                                        >
                                           <Link
                                             key={subIndex}
                                             href={subProgram.subCourseUrl}
                                           >
-                                            {subProgram.subCourseName}
+                                            <strong
+                                              style={{
+                                                fontSize: "12px",
+                                              }}
+                                            >
+                                              {subProgram.subCourseName}
+                                            </strong>
                                           </Link>
-                                        </span>
+                                        </li>
                                       )
                                     )}
-                                  </strong>
+                                  </ul>
                                 )}
                               </li>
                             ))}

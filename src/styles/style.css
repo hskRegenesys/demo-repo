@@ -11201,9 +11201,18 @@ featured-section .right-col .sec-title h2 {
 .inlineDegreeCourse {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 .inlineDegreeCourse a {
   width: 50%;
+}
+
+.DegreeProgram-li {
+  color: #686a6f;
+}
+
+.DegreeProgram-li:hover {
+  color: #008554;
 }
 
 .mobile-nav__container li + li {
@@ -11278,6 +11287,7 @@ featured-section .right-col .sec-title h2 {
 }
 .mobile-nav-item-new a:hover {
   color: #008554 !important;
+  font-weight: 700;
 }
 .nav-link {
   padding: 10px 20px;
@@ -11334,8 +11344,6 @@ featured-section .right-col .sec-title h2 {
   margin-top: 10px;
 }
 
-
-
 .trainingProgrammeData {
   display: flex;
   width: 200px;
@@ -11354,7 +11362,6 @@ featured-section .right-col .sec-title h2 {
     flex-direction: column;
     font-size: 12px;
     margin-left: 27px;
-    
   }
   .inlineDegreeCourse a {
     width: 50%;
@@ -20518,11 +20525,18 @@ span.page-head {
   position: relative;
   font-weight: 400;
   margin: 0 0 20px;
+  padding-right: 32px;
   background: none;
   line-height: 1.25em;
   font-family: var(--thm-font);
   color: var(--thm-black);
   display: inline-block;
+}
+@media only screen and (max-width: 599px) {
+  .page-head {
+    font-size: 2.2rem !important;
+    padding-right: 0px !important;
+  }
 }
 .font-capitalized {
   text-transform: capitalize;

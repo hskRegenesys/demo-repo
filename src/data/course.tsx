@@ -833,7 +833,7 @@ export const courseData = {
     ],
     courseCertificate: {
       certificateTitle:
-        "Bridging Theory and Practice: with Internationally Certified Data Science Course        ",
+        "Bridging Theory and Practice with Internationally Certified Data Science Course        ",
       certificateSubTitle:
         "Earn a Data Science Certificate from Digital Regenesys & Excel in Real-World Insights",
       certificateSubSubTitle:
@@ -972,12 +972,12 @@ export const courseData = {
               "For How Long Will I Be Able To Access The Content After My Course Completion?",
             text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
           },
-          {
-            id: 5,
-            title:
-              "What Is The Difference Between Basic, Applied And Advanced Data Science Course?",
-            text: "The three stages of the Data Science Course such as Basic, Advance and Applied are bifurcated for the people who are willing to expand their knowledge to become a Data Science expert. After learning the Basics of Data Science, you can choose to elect any or both the modules of Advance and Applied.",
-          },
+          // {
+          //   id: 5,
+          //   title:
+          //     "What Is The Difference Between Basic, Applied And Advanced Data Science Course?",
+          //   text: "The three stages of the Data Science Course such as Basic, Advance and Applied are bifurcated for the people who are willing to expand their knowledge to become a Data Science expert. After learning the Basics of Data Science, you can choose to elect any or both the modules of Advance and Applied.",
+          // },
           {
             id: 6,
             title: "Is This A Certified Course?",
