@@ -226,7 +226,7 @@ const NavItem = (props: any) => {
             "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
         },
         {
-          subCourseName: "HCBCM",
+          subCourseName: "HCBMB",
           subCourseUrl:
             "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
         },
