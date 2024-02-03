@@ -35,7 +35,10 @@ const NavItem = (props: any) => {
   };
 
   // const isMobileView = typeof window !== "undefined" && window.innerWidth < 920;
-  const [isMobileView, setIsMobileView] = useState(false);
+  //const [isMobileView, setIsMobileView] = useState(false);
+  const [isMobileView, setIsMobileView] = useState<boolean | undefined>(
+    undefined
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -265,7 +268,7 @@ const NavItem = (props: any) => {
 
   return (
     <>
-      {isMobileView ? (
+      {isMobileView === true ? (
         <div>
           <ul className="mobile-nav-new">
             {newNavItems.map((navItem: any, id: any) => (
@@ -600,7 +603,7 @@ const NavItem = (props: any) => {
             ))}
           </ul>
         </div>
-      ) : (
+      ) : isMobileView === false ? (
         <li
           className={`dropdown${current ? " current" : ""}`}
           onMouseLeave={handleLeave}
@@ -805,7 +808,7 @@ const NavItem = (props: any) => {
             </ul>
           )}
         </li>
-      )}
+      ) : null}
     </>
   );
 };
