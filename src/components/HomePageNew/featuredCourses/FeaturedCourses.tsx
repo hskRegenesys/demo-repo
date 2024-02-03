@@ -207,7 +207,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     onClick={handleEnrollButtonClick}
                     className={Styles.enrollNowButton}
                   >
-                    Enroll Now
+                    Enrol Now
                   </button>
                 </div>
               </div>
