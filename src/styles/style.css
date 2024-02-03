@@ -20525,11 +20525,18 @@ span.page-head {
   position: relative;
   font-weight: 400;
   margin: 0 0 20px;
+  padding-right: 32px;
   background: none;
   line-height: 1.25em;
   font-family: var(--thm-font);
   color: var(--thm-black);
   display: inline-block;
+}
+@media only screen and (max-width: 599px) {
+  .page-head {
+    font-size: 2.2rem !important;
+    padding-right: 0px !important;
+  }
 }
 .font-capitalized {
   text-transform: capitalize;
