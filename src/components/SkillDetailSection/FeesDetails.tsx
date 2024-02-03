@@ -211,7 +211,8 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
               </div>
 
               <h2 className="product-details__price">
-                {`${priceDetails?.country?.currency} ${priceDetails?.price} `}
+                {priceDetails?.price &&
+                  `${priceDetails?.country?.currency} ${priceDetails?.price} `}
                 {priceDetails?.country_id === indiaCountryId && (
                   <span>+ GST</span>
                 )}

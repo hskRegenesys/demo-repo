@@ -110,83 +110,79 @@ const ProductTab = ({ courses = [], current }: any) => {
               parent_id,
             }: any) => (
               <>
-                {!(code === "BDMC" || code === "AVDMC") && (
-                  <div ref={listRef} className="gallery-item tab-item" key={id}>
-                    <div
-                      className="inner-box"
-                      // onClick={() => redirectCard(name, code, id, parent_id)}
-                    >
-                      <figure className="image">
-                        <Image
-                          priority={true}
-                          src={`/assets/images/gallery/${code}.webp`}
-                          layout="responsive"
-                          width="274"
-                          height="182"
-                          alt=""
-                        />
-                      </figure>
-                      <a
-                        onClick={() => redirectCard(name, code, id, parent_id)}
-                        className="lightbox-image overlay-box"
-                        data-fancybox="gallery"
-                      ></a>
-                      <div className="cap-box">
-                        <div className="cap-inner">
-                          <div className="title">
-                            <h5
-                              onClick={() =>
-                                redirectCard(name, code, id, parent_id)
-                              }
-                            >
-                              {name}
-                            </h5>
-                          </div>
+                <div ref={listRef} className="gallery-item tab-item" key={id}>
+                  <div
+                    className="inner-box"
+                    // onClick={() => redirectCard(name, code, id, parent_id)}
+                  >
+                    <figure className="image">
+                      <Image
+                        priority={true}
+                        src={`/assets/images/gallery/${code}.webp`}
+                        layout="responsive"
+                        width="274"
+                        height="182"
+                        alt=""
+                      />
+                    </figure>
+                    <a
+                      onClick={() => redirectCard(name, code, id, parent_id)}
+                      className="lightbox-image overlay-box"
+                      data-fancybox="gallery"
+                    ></a>
+                    <div className="cap-box">
+                      <div className="cap-inner">
+                        <div className="title">
+                          <h5
+                            onClick={() =>
+                              redirectCard(name, code, id, parent_id)
+                            }
+                          >
+                            {name}
+                          </h5>
+                        </div>
 
-                          <div className="cat">
-                            <ul className="about-seven__list list-unstyled">
-                              <li>{courseMode.name} Classes</li>
-                              <li>{durationInWeeks} Weeks</li>
-                              <li>Internation Certification </li>
-                              <li>Capstone Projects </li>
-                            </ul>
-                          </div>
-                          <div className="batch">
-                            {batchInfo(batches)?.description}
-                          </div>
+                        <div className="cat">
+                          <ul className="about-seven__list list-unstyled">
+                            <li>{courseMode.name} Classes</li>
+                            <li>{durationInWeeks} Weeks</li>
+                            <li>Internation Certification </li>
+                            <li>Capstone Projects </li>
+                          </ul>
+                        </div>
+                        <div className="batch">
+                          {batchInfo(batches)?.description}
                         </div>
                       </div>
-                      <div className="link-box inline-button">
-                        <a
-                          className="theme-btn btn-style-two"
-                          onClick={() =>
-                            redirectCard(name, code, id, parent_id)
-                          }
-                        >
-                          <i className="btn-curve"></i>
-                          <span className="btn-title">Learn More</span>
-                        </a>
-
-                        <a
-                          className="theme-btn btn-style-two"
-                          onClick={handleShow}
-                        >
-                          <i className="btn-curve"></i>
-                          <span className="btn-title">Enquire Now</span>
-                        </a>
-                      </div>
                     </div>
-                    <Modal show={show}>
-                      <ModalPopup
-                        setShows={setShow}
-                        thankYouShow={setThankYouShow}
-                      />
-                    </Modal>
-                    <Modal show={thankYouShow}>
-                      <ThankYouPopup setShows={setThankYouShow} />
-                    </Modal>
+                    <div className="link-box inline-button">
+                      <a
+                        className="theme-btn btn-style-two"
+                        onClick={() => redirectCard(name, code, id, parent_id)}
+                      >
+                        <i className="btn-curve"></i>
+                        <span className="btn-title">Learn More</span>
+                      </a>
+
+                      <a
+                        className="theme-btn btn-style-two"
+                        onClick={handleShow}
+                      >
+                        <i className="btn-curve"></i>
+                        <span className="btn-title">Enquire Now</span>
+                      </a>
+                    </div>
                   </div>
-                )}
+                  <Modal show={show}>
+                    <ModalPopup
+                      setShows={setShow}
+                      thankYouShow={setThankYouShow}
+                    />
+                  </Modal>
+                  <Modal show={thankYouShow}>
+                    <ThankYouPopup setShows={setThankYouShow} />
+                  </Modal>
+                </div>
               </>
             )
           )}

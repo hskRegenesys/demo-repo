@@ -889,38 +889,53 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/all-course/data-science/applied-data-science",
-      destination: "/all-courses/data-science/applied-data-science",
-      permanent: true,
+      source: "/all-courses/data-science/basic-data-science",
+      destination: "/all-courses/data-science",
+      permanent: false,
     },
+    {
+      source: "/all-courses/data-science/advanced-data-science",
+      destination: "/all-courses/data-science",
+      permanent: false,
+    },
+    {
+      source: "/all-course/data-science/applied-data-science",
+      destination: "/all-courses/data-science",
+      permanent: false,
+    },
+    // {
+    //   source: "/all-course/data-science/applied-data-science",
+    //   destination: "/all-courses/data-science/applied-data-science",
+    //   permanent: true,
+    // },
     {
       source: "/all-course/project-management",
       destination: "/all-courses/project-management",
       permanent: true,
     },
-    {
-      source: "/all-course/digital-marketing/basic-digital-marketing",
-      destination: "/all-courses/digital-marketing/basic-digital-marketing",
-      permanent: true,
-    },
-    {
-      source:
-        "/all-courses/digital-marketing/advanced-digital-marketing-course",
-      destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
-      permanent: true,
-    },
-    {
-      source: "/all-course/digital-marketing/advanced-digital-marketing",
-      destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
-      permanent: true,
-    },
-    {
-      source: "/all-course/digital-marketing/applied-digital-marketing",
-      destination: "/all-courses/digital-marketing/applied-digital-marketing",
-      permanent: true,
-    },
+    // {
+    //   source: "/all-course/digital-marketing/basic-digital-marketing",
+    //   destination: "/all-courses/digital-marketing/basic-digital-marketing",
+    //   permanent: true,
+    // },
+    // {
+    //   source:
+    //     "/all-courses/digital-marketing/advanced-digital-marketing-course",
+    //   destination:
+    //     "/all-courses/digital-marketing/advance-digital-marketing-course",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-course/digital-marketing/advanced-digital-marketing",
+    //   destination:
+    //     "/all-courses/digital-marketing/advance-digital-marketing-course",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-course/digital-marketing/applied-digital-marketing",
+    //   destination: "/all-courses/digital-marketing/applied-digital-marketing",
+    //   permanent: true,
+    // },
     {
       source: "/all-course",
       destination: "/all-courses",
@@ -941,26 +956,48 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    {
-      source: "/all-courses/digital-marketing",
-      destination: "/all-courses",
-      permanent: false,
-    },
+    // {
+    //   source: "/all-courses/digital-marketing",
+    //   destination: "/all-courses",
+    //   permanent: false,
+    // },
     {
       source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
-      destination: "/all-courses",
+      destination: "/all-courses/digital-marketing",
       permanent: false,
     },
     {
       source: "/all-courses/digital-marketing/advance-digital-marketing-course",
-      destination: "/all-courses",
+      destination: "/all-courses/digital-marketing",
+      permanent: false,
+    },
+
+    {
+      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
+      destination: "/all-courses/digital-marketing",
       permanent: false,
     },
     {
-      source: "/all-courses/design-thinking",
-      destination: "/all-courses",
+      source: "/all-courses/artificial-intelligence/ai-introductory",
+      destination: "/all-courses/artificial-intelligence/",
       permanent: false,
     },
+    {
+      source: "/all-courses/artificial-intelligence/ai-intermediary",
+      destination: "/all-courses/artificial-intelligence/",
+      permanent: false,
+    },
+    {
+      source: "/all-courses/artificial-intelligence/ai-advanced-applied",
+      destination: "/all-courses/artificial-intelligence/",
+      permanent: false,
+    },
+
+    // {
+    //   source: "/all-courses/design-thinking",
+    //   destination: "/all-courses",
+    //   permanent: false,
+    // },
     {
       source: "/all-courses/cyber-security/1000",
       destination: "/all-courses/cyber-security",
@@ -979,7 +1016,7 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/data-science-main",
+      source: "/data-science",
       destination: "/all-courses/data-science",
       permanent: true,
     },
@@ -994,9 +1031,29 @@ const createReWrites = () => {
       destination: "/all-courses/project-management/28",
     },
     // {
-    //   source: "/all-courses/software-engineering-course",
-    //   destination: "/all-courses/software-engineering/229",
+    //   source: "/all-courses/software-development-course",
+    //   destination: "/all-courses/software-development/229",
     // },
+    {
+      source: "/all-courses/data-science",
+      destination: "/all-courses/data-science/701",
+    },
+    {
+      source: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing/702",
+    },
+    {
+      source: "/all-courses/artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence/703",
+    },
+    // {
+    //   source: "/all-courses/digital-marketing",
+    //   destination: "/all-courses/digital-marketing",
+    // },
+    {
+      source: "/all-courses/artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence",
+    },
     // {
     //   source: "/all-courses/cyber-security",
     //   destination: "/all-courses/cyber-security/29",
@@ -1015,18 +1072,18 @@ const createReWrites = () => {
       source: "/all-courses/data-science/applied-data-science",
       destination: "/all-courses/applied-data-science/23",
     },
-    // {
-    //   source: "/all-courses/digital-marketing/basic-digital-marketing",
-    //   destination: "/all-courses/basic-digital-marketing/25",
-    // },
+    {
+      source: "/all-courses/digital-marketing/basic-digital-marketing",
+      destination: "/all-courses/basic-digital-marketing/25",
+    },
     {
       source: "/all-courses/digital-marketing/advanced-digital-marketing",
       destination: "/all-courses/advance-digital-marketing-course/26",
     },
-    // {
-    //   source: "/all-courses/digital-marketing/applied-digital-marketing",
-    //   destination: "/all-courses/applied-digital-marketing/27",
-    // },
+    {
+      source: "/all-courses/digital-marketing/applied-digital-marketing",
+      destination: "/all-courses/applied-digital-marketing/27",
+    },
     {
       source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
       destination: "/all-courses/digital-marketing-fundamentals/101",
@@ -1047,6 +1104,7 @@ const createReWrites = () => {
       source: "/all-courses/design-thinking",
       destination: "/all-courses/design-thinking/105",
     },
+
     {
       source: "/all-courses/cyber-security",
       destination: "/all-courses/cyber-security/106",
@@ -1063,6 +1121,10 @@ const createReWrites = () => {
       source: "/all-courses/artificial-intelligence/ai-advanced-applied",
       destination: "/all-courses/ai-advanced-applied/403",
     },
+    // {
+    //   source: '/:path*',
+    //   destination: '/404',
+    // },
   ];
   return paths;
 };

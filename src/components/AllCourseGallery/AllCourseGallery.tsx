@@ -107,7 +107,16 @@ const AllCourseGallery = () => {
         item?.mode_id === 1 &&
         item?.isAddon === false
     );
-    const checkCourseList = ["DSCI", "PM", "CSC", "DTC", "AI"];
+    const checkCourseList = [
+      "DSCI",
+      "DSN",
+      "PM",
+      "DM",
+      "CSC",
+      "DTC",
+      "DT",
+      "AI",
+    ];
 
     const result: any = [];
 
@@ -222,65 +231,35 @@ const AllCourseGallery = () => {
                         parent_id,
                       }: any) => (
                         <>
-                          {!(code === "BDMC" || code === "AVDMC") && (
-                            <Col
-                              ref={listRef}
-                              key={id}
-                              lg={4}
-                              md={6}
-                              className="gallery-item"
+                          <Col
+                            ref={listRef}
+                            key={id}
+                            lg={4}
+                            md={6}
+                            className="gallery-item"
+                          >
+                            <div
+                              className="inner-box"
+                              // onClick={() => redirectCard(name, code, id, parent_id)}
                             >
-                              <div
-                                className="inner-box"
-                                // onClick={() => redirectCard(name, code, id, parent_id)}
-                              >
-                                <figure className="image">
-                                  <Image
-                                    src={`/assets/images/gallery/${code}.webp`}
-                                    alt=""
-                                  />
-                                </figure>
-                                <a
-                                  onClick={() =>
-                                    redirectCard(name, code, id, parent_id)
-                                  }
-                                  className="lightbox-image overlay-box"
-                                  data-fancybox="gallery"
-                                ></a>
-                                <div className="cap-box">
-                                  <div className="cap-inner">
-                                    <div className="title">
-                                      <h5>
-                                        <a
-                                          onClick={() =>
-                                            redirectCard(
-                                              name,
-                                              code,
-                                              id,
-                                              parent_id
-                                            )
-                                          }
-                                        >
-                                          {name}
-                                        </a>
-                                      </h5>
-                                    </div>
-
-                                    <div className="cat">
-                                      <ul className="about-seven__list list-unstyled">
-                                        <li>{courseMode.name} classes</li>
-                                        <li>{durationInWeeks} Weeks</li>
-                                        <li>International certification </li>
-                                        <li>Capstone projects </li>
-                                      </ul>
-                                    </div>
-
-                                    <div className="batch">
-                                      {batchInfo(batches)?.description}
-                                    </div>
-                                    <div className="link-box inline-button">
+                              <figure className="image">
+                                <Image
+                                  src={`/assets/images/gallery/${code}.webp`}
+                                  alt=""
+                                />
+                              </figure>
+                              <a
+                                onClick={() =>
+                                  redirectCard(name, code, id, parent_id)
+                                }
+                                className="lightbox-image overlay-box"
+                                data-fancybox="gallery"
+                              ></a>
+                              <div className="cap-box">
+                                <div className="cap-inner">
+                                  <div className="title">
+                                    <h5>
                                       <a
-                                        className="theme-btn btn-style-two"
                                         onClick={() =>
                                           redirectCard(
                                             name,
@@ -290,26 +269,49 @@ const AllCourseGallery = () => {
                                           )
                                         }
                                       >
-                                        <i className="btn-curve"></i>
-                                        <span className="btn-title">
-                                          Learn More
-                                        </span>
+                                        {name}
                                       </a>
-                                      <a
-                                        className="theme-btn btn-style-two"
-                                        onClick={handleShow}
-                                      >
-                                        <i className="btn-curve"></i>
-                                        <span className="btn-title">
-                                          Enquire Now
-                                        </span>
-                                      </a>
-                                    </div>
+                                    </h5>
+                                  </div>
+
+                                  <div className="cat">
+                                    <ul className="about-seven__list list-unstyled">
+                                      <li>{courseMode.name} classes</li>
+                                      <li>{durationInWeeks} Weeks</li>
+                                      <li>International certification </li>
+                                      <li>Capstone projects </li>
+                                    </ul>
+                                  </div>
+
+                                  <div className="batch">
+                                    {batchInfo(batches)?.description}
+                                  </div>
+                                  <div className="link-box inline-button">
+                                    <a
+                                      className="theme-btn btn-style-two"
+                                      onClick={() =>
+                                        redirectCard(name, code, id, parent_id)
+                                      }
+                                    >
+                                      <i className="btn-curve"></i>
+                                      <span className="btn-title">
+                                        Learn More
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="theme-btn btn-style-two"
+                                      onClick={handleShow}
+                                    >
+                                      <i className="btn-curve"></i>
+                                      <span className="btn-title">
+                                        Enquire Now
+                                      </span>
+                                    </a>
                                   </div>
                                 </div>
                               </div>
-                            </Col>
-                          )}
+                            </div>
+                          </Col>
                         </>
                       )
                     )}

@@ -117,7 +117,7 @@ function RequestForm(props: any) {
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1 &&
-        (url === "/all-courses/software-engineering-course"
+        (url === "/all-courses/software-development-course"
           ? item?.id === 229
           : item?.id !== 229)
     );
@@ -254,6 +254,17 @@ function RequestForm(props: any) {
                   </small>
                 )}
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="text-center">
+              {(programmeOfInterest === "Digital Marketing" ||
+                programmeOfInterest === "Design Thinking") && (
+                <small className="text-black">
+                  *Learn collaboratively! Apply with 15 people to begin the
+                  course
+                </small>
+              )}
             </div>
           </div>
           <div className={Styles.buttenContainer}>

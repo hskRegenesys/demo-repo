@@ -99,7 +99,18 @@ const HeaderOne = ({
     );
 
     //const course = ["DSCI", "DM", "PM", "CSC", "DTC", "AI"];
-    const course = ["DSCI", "PM", "CSC", "DTC", "AI"];
+    const course = [
+      "DSCI",
+      "PM",
+      "DSN",
+      "DM",
+      "DMN",
+      "CSC",
+      "DTC",
+      "DT",
+      "AI",
+      "AIN",
+    ];
     const coursesSubItem: any = [];
     course.forEach((courseCode) => {
       if (filterData?.length) {
@@ -131,7 +142,7 @@ const HeaderOne = ({
       }
     });
     const data = navItems?.map((item: any) => {
-      if (item.id === 4 && item.name === "Courses") {
+      if (item.id === 4 && item.name === "All Courses") {
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
@@ -156,7 +167,7 @@ const HeaderOne = ({
     });
 
     const data2 = blogsNavItem?.map((item: any) => {
-      if (item.id === 4 && item.name === "Courses") {
+      if (item.id === 4 && item.name === "All Courses") {
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
@@ -313,8 +324,8 @@ const HeaderOne = ({
               <div className="other-links clearfix">
                 <div className="link-box">
                   <Link href="https://mydigital.regenesys.net/login/index.php">
-                    <a className="theme-btn btn-style-two">
-                      <i className="btn-curve"></i>
+                    <a className="new-log-in-butten">
+                      {/* <i className="btn-curve"></i> */}
                       <span className="btn-title">Login</span>
                     </a>
                   </Link>
