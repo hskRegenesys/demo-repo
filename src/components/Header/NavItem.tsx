@@ -746,7 +746,7 @@ const NavItem = (props: any) => {
                                           fontWeight: "400",
                                         }}
                                       >
-                                        {item.name}{" "}
+                                        {item.name}
                                         {item.isNew && <span>new</span>}
                                       </a>
                                     </li>
