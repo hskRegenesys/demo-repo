@@ -180,7 +180,7 @@ const NavItem = (props: any) => {
             "https://www.regenesys.net/higher-certificate-in-business-management",
         },
         {
-          subCourseName: "HCBRM",
+          subCourseName: "HCBMR",
           subCourseUrl:
             "https://www.regenesys.net/higher-certificate-in-business-management-in-retail",
         },
