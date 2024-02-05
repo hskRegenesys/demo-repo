@@ -798,13 +798,13 @@ const NavItem = (props: any) => {
                                             key={subIndex}
                                             href={subProgram.subCourseUrl}
                                           >
-                                            <strong
+                                            <a
                                               style={{
                                                 fontSize: "12px",
                                               }}
                                             >
                                               {subProgram.subCourseName}
-                                            </strong>
+                                            </a>
                                           </Link>
                                         </li>
                                       )
