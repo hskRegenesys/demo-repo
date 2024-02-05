@@ -7396,6 +7396,16 @@ export const brochureDetails: any = {
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
+  DSN: {
+    name: "DSNBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  AIN: {
+    name: "AINBrochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
   //Digital Marketing Strategies
   AVDMC: {
     name: "AdvanceDigitalMarketingStrategiesBrochure23.pdf",

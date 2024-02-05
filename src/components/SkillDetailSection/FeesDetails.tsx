@@ -329,7 +329,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                 onClick={() => setShow(!show)}
               >
                 <i className="btn-curve"></i>
-                <span className="btn-title">Enroll Now</span>
+                <span className="btn-title">Enrol Now</span>
               </a>
             </div>
           </Col>

@@ -226,7 +226,7 @@ const NavItem = (props: any) => {
             "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
         },
         {
-          subCourseName: "HCBCM",
+          subCourseName: "HCBMB",
           subCourseUrl:
             "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
         },
@@ -506,7 +506,7 @@ const NavItem = (props: any) => {
                                       <span className="fa fa-angle-down"></span>
                                     </a>
                                     {selectedProgram === program.courseName && (
-                                      <strong className="inlineDegreeCourse">
+                                      <a className="inlineDegreeCourse">
                                         {program.subDegreePrograms.map(
                                           (subProgram, subIndex) => (
                                             <span key={subIndex}>
@@ -534,7 +534,7 @@ const NavItem = (props: any) => {
                                             </span>
                                           )
                                         )}
-                                      </strong>
+                                      </a>
                                     )}
                                   </li>
                                 ))}
