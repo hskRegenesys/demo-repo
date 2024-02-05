@@ -7397,12 +7397,12 @@ export const brochureDetails: any = {
     sourceCampaign: sourceCampaign,
   },
   DSN: {
-    name: "DSN.pdf",
+    name: "DSNBrochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
   AIN: {
-    name: "AIN.pdf",
+    name: "AINBrochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },

@@ -501,7 +501,7 @@ const NavItem = (props: any) => {
                                       <span className="fa fa-angle-down"></span>
                                     </a>
                                     {selectedProgram === program.courseName && (
-                                      <strong className="inlineDegreeCourse">
+                                      <a className="inlineDegreeCourse">
                                         {program.subDegreePrograms.map(
                                           (subProgram, subIndex) => (
                                             <span key={subIndex}>
@@ -529,7 +529,7 @@ const NavItem = (props: any) => {
                                             </span>
                                           )
                                         )}
-                                      </strong>
+                                      </a>
                                     )}
                                   </li>
                                 ))}
