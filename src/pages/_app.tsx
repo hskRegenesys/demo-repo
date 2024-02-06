@@ -34,7 +34,6 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Pixel code script start */}
       <Script
-        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           !function(f,b,e,v,n,t,s)
@@ -50,7 +49,9 @@ const MyApp = ({ Component, pageProps }: any) => {
               `,
         }}
       />
+
       {/* Pixel code script end */}
+
       {/* GTM code start */}
       <Script
         strategy="beforeInteractive"
@@ -158,14 +159,24 @@ const MyApp = ({ Component, pageProps }: any) => {
       />
 
       {/* linked end */}
-      <noscript>
+      {/* <noscript>
         <iframe
           src="https://www.facebook.com/tr?id=613242390822464&ev=PageView&noscript=1"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
+      </noscript> */}
+
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none", visibility: "hidden" }}
+          src="https://www.facebook.com/tr?id=613242390822464&ev=PageView&noscript=1"
+        />
       </noscript>
+
       <noscript>
         <img
           height="0"
