@@ -6824,7 +6824,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/3Hlu1p_eGX0?autoplay=1&loop=1&playlist=3Hlu1p_eGX0",
+          "https://www.youtube.com/embed/OfyDsBKZXic?autoplay=1&loop=1&playlist=OfyDsBKZXic",
 
         title: "Certification Programme in Design Thinking",
         text: "Upskill yourself with a course in Design thinking. It is an innovative problem-solving approach used by leading organizations worldwide. Learn this valuable skill through our Design Thinking course and unleash your creativity to solve complex problems. Enroll yourself in this course and build a career in one of the most sought-after fields.",
