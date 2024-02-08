@@ -81,7 +81,7 @@ export default function LandingForm(contactform: any) {
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1 &&
-        (url === "/all-courses/software-engineering-course"
+        (url === "/all-courses/software-development-course"
           ? item?.id === 229
           : item?.id !== 229)
     );
@@ -94,8 +94,9 @@ export default function LandingForm(contactform: any) {
     setError,
     register,
     handleSubmit,
+    watch,
   } = hookForm;
-
+  const selectedCourse = watch("Programme_Of_Interest");
   return (
     <>
       <div className="contact-section ">
@@ -300,7 +301,15 @@ export default function LandingForm(contactform: any) {
                   </div>
                 </div>
               </div> */}
-
+              <div className="text-center">
+                {(selectedCourse === "Digital Marketing" ||
+                  selectedCourse === "Design Thinking") && (
+                  <small className="text-black">
+                    *Learn collaboratively! Apply with 15 people to begin the
+                    course
+                  </small>
+                )}
+              </div>
               <div className="row text-center">
                 <button
                   className="theme-btn btn-style-two mt-5"

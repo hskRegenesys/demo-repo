@@ -65,6 +65,7 @@ function ModalPopup(props: any) {
   const programmeOfInterest = watch("Programme_Of_Interest");
 
   const onSubmit = async (data: any) => {
+    console.log("data", data);
     sebtnDisable(true);
     const current = new Date();
     data.page_url = window?.location?.href;
@@ -124,7 +125,7 @@ function ModalPopup(props: any) {
         item?.parent_id === null &&
         item?.isAddon === false &&
         item?.mode_id === 1 &&
-        (url === "/all-courses/software-engineering-course"
+        (url === "/all-courses/software-development-course"
           ? item?.id === 229
           : item?.id !== 229)
     );
@@ -133,9 +134,9 @@ function ModalPopup(props: any) {
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
-      !!filterData?.parentCourse
-        ? setValue("Programme_Of_Interest", filterData?.parentCourse?.name)
-        : setValue("Programme_Of_Interest", filterData?.name);
+      // !!filterData?.parentCourse
+      //   ? setValue("Programme_Of_Interest", filterData?.parentCourse?.name)
+      //   : setValue("Programme_Of_Interest", filterData?.name);
     }
   }, [id]);
   return (
@@ -394,6 +395,15 @@ function ModalPopup(props: any) {
                       )}
                     </div>
                   </div> */}
+                  <div className="text-center">
+                    {(programmeOfInterest === "Digital Marketing" ||
+                      programmeOfInterest === "Design Thinking") && (
+                      <small className="text-black">
+                        *Learn collaboratively! Apply with 15 people to begin
+                        the course
+                      </small>
+                    )}
+                  </div>
                   <div className="d-flex mt-3 justify-content-center align-items-center">
                     {/* <button
                 className="theme-btn btn-style-two mr-2"

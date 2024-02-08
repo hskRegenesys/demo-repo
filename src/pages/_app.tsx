@@ -23,7 +23,7 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
-  const salesforceResponse = process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL;
+  const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -34,7 +34,6 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Pixel code script start */}
       <Script
-        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           !function(f,b,e,v,n,t,s)
@@ -50,7 +49,9 @@ const MyApp = ({ Component, pageProps }: any) => {
               `,
         }}
       />
+
       {/* Pixel code script end */}
+
       {/* GTM code start */}
       <Script
         strategy="beforeInteractive"
@@ -152,20 +153,30 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-          
+
           `,
         }}
       />
 
       {/* linked end */}
-      <noscript>
+      {/* <noscript>
         <iframe
           src="https://www.facebook.com/tr?id=613242390822464&ev=PageView&noscript=1"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
+      </noscript> */}
+
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none", visibility: "hidden" }}
+          src="https://www.facebook.com/tr?id=613242390822464&ev=PageView&noscript=1"
+        />
       </noscript>
+
       <noscript>
         <img
           height="0"
@@ -220,50 +231,49 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        console.log("data",data);
         const salesForceUrl = '${salesforceResponse}';
-        console.log("salesForceUrl", salesforceResponse);
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
-          Interested_Topic:"",
-          Qualification:"",
+          interestedTopic:"",
+          highestQualification:"",
           utm_parameters:"",
           Mode_of_Study:"",
           Verified_Mobile_No:"",
+          utm_source: "DR website chat ",
+          utm_medium: "DR Website",
+          utm_campaign: "DR Website",
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"
         };   
         data.forEach(item => {
           const labelMapping = {
               "Name": "Name",
               "Email": "Email",
-              "Mobile No": "Phone",
-              "Programme of Interest": "Programme_Of_Interest"
+              "Mobile Number": "Phone",
+              "Course you are looking for": "Interested_Topic"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
       });
-        try {
-          fetch(salesForceUrl, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(salesForceData),
-          })
-            .then(response => {
-              if (!response.ok) {
-                throw new Error('Network response was not ok');
-              }
-              return response.json();
-            })
-            .then(responseData => {
-              console.log('Data submitted successfully:', responseData);
-            })
-            .catch(error => {
-              console.error('Error submitting data:', error);
-            });
-        } catch (error) {
-          console.error('Error in fetch operation:', error);
+      fetch(salesForceUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(salesForceData),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
+        return response.json();
+    })
+    .then(responseData => {
+        console.log('Salesforce response:', responseData);
+    })
+    .catch(error => {
+        console.error('Error submitting data to Salesforce:', error);
+    });
       };
     `,
         }}

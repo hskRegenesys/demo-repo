@@ -48,7 +48,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           className={Styles.enrollNowButton}
           onClick={handleEnrollButtonClick}
         >
-          Enroll Now
+          Enrol Now
           <img
             src={buttenIcon}
             alt="Enroll Icon"
