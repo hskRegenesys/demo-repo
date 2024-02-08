@@ -34,6 +34,8 @@ const Data = {
         "Project Management Course Online | Digital Regenesys",
       "software-development":
         "Software Development  Online Course | Digital Regenesys",
+      "full-stack-development":
+        "full stack development  Online Course | Digital Regenesys",
       "design-thinking": "Design Thinking Course Online | Digital Regnesys",
       "data-science":
         "Data Science: Data Science Course Online | Digital Regenesys",
@@ -147,7 +149,8 @@ const Data = {
         career in digital marketing,
         digital marketing degree
       `,
-
+      "full-stack-development":
+        "full stack development  Online Course | Digital Regenesys",
       "basic-digital-marketing": `
         Basic Digital Marketing Course, 
         Basic Digital Marketing Course details, 
@@ -273,6 +276,8 @@ Software Development  subjects,
       search: "Search - DR Website",
       register: "Register",
       login: "Login",
+      "full-stack-development":
+        "full stack development  Online Course | Digital Regenesys",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
       "cyber-security":
@@ -353,6 +358,7 @@ Software Development  subjects,
       "ai-advanced-applied":
         "/all-courses/artificial-intelligence/ai-advanced-applied",
       "software-development": "software-development-course",
+      "full-stack-development": "full-stack-development",
     },
   },
 };

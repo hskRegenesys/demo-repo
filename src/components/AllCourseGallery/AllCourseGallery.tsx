@@ -112,10 +112,12 @@ const AllCourseGallery = () => {
       "DSN",
       "PM",
       "DM",
+      "DMN",
       "CSC",
       "DTC",
       "DT",
       "AI",
+      "AIN",
     ];
 
     const result: any = [];
