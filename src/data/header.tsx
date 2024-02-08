@@ -96,6 +96,15 @@ export const blogsNavItem = [
     ],
   },
   {
+    id: 7,
+    name: "All Courses New",
+    href: "/all-courses-new",
+    // subNavItems: [
+    //   { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
+    //   { id: 6, name: "Data Science", href: "/data-science-main" },
+    // ],
+  },
+  {
     id: 5,
     name: "About",
     href: "/about",

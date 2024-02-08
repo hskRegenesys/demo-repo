@@ -127,7 +127,10 @@ function ModalPopup(props: any) {
         item?.mode_id === 1 &&
         (url === "/all-courses/software-development-course"
           ? item?.id === 229
-          : item?.id !== 229)
+          : item?.id !== 229) &&
+        (url === "/all-courses/full-stack-development"
+          ? item?.id === 230
+          : item?.id !== 230)
     );
   }
 

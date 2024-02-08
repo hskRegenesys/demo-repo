@@ -149,6 +149,12 @@ export const mainFooter = {
       href: "/all-courses",
       title: "Our Courses",
     },
+
+    {
+      id: 8,
+      href: "/all-courses-new",
+      title: "Our Courses New",
+    },
   ],
   ...footer,
   newses: [
