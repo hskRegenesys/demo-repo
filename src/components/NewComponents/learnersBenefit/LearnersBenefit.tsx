@@ -1,7 +1,7 @@
 // LearnersBenefit.js
 
 import React from "react";
-import LearnersBenefitData from "./LearnersBenefitData";
+import LearnersBenefitData from "../../../data/newComponentData/commonComponentData/LearnersBenefitData";
 import Styles from "./learnersBenefit.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";

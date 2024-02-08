@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import UspSectionData from "./UspSectionData";
+import UspSectionData from "../../../data/newComponentData/commonComponentData/UspSectionData";
 import Styles from "./uspSection.module.css";
 
 const UspSection = () => {

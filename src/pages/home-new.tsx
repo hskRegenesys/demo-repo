@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import HeaderOne from "@/components/Header/HeaderOne";
-import HomeSliderBanner from "@/components/HomePageNew/homeSliderBanner/HomeSliderBanner";
+import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import Layout from "@/components/Layout/Layout";
-import UspSection from "@/components/HomePageNew/uspSection/UspSection";
-import AboutUs from "@/components/HomePageNew/about/AboutUs";
-import AdmitsCompanies from "@/components/HomePageNew/admitsCompanies/AdmitsCompanies";
-import StudentReview from "@/components/HomePageNew/studentReview/StudentReview";
-import LearnersBenefit from "@/components/HomePageNew/learnersBenefit/LearnersBenefit";
-import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectContainer";
-import StudentYoutubeVideos from "@/components/HomePageNew/studentYoutubeVideos/StudentYoutubeVideos";
-import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
+import UspSection from "@/components/NewComponents/uspSection/UspSection";
+import AboutUs from "@/components/NewComponents/about/AboutUs";
+import AdmitsCompanies from "@/components/NewComponents/admitsCompanies/AdmitsCompanies";
+import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
+import LearnersBenefit from "@/components/NewComponents/learnersBenefit/LearnersBenefit";
+import ConnectContainer from "@/components/NewComponents/connectContainer/ConnectContainer";
+import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
+import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/HomePageNew/faq/Faq";
-import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
+import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import NewHomeData from "@/data/newHomeData";
 import _ from "lodash";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
@@ -21,6 +21,7 @@ import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCours
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 import OurLocation from "@/components/HomePageNew/OurLocation/OurLocation";
+import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -63,14 +64,14 @@ const HomeNew = () => {
       <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
-      <OurCourses
+      {/* <OurCourses
         data={NewOurCoursesData}
         handleEnrollButtonClick={handleEnrollButtonClick}
-      />
+      /> */}
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-      <BlogSection />
+      <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
       <Faq />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>

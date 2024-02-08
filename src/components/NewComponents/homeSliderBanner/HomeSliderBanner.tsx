@@ -4,8 +4,8 @@ import Styles from "./homeSliderBanner.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-import homeSliderBannerData from "./homeSliderBannerData";
-import RequestForm from "../requestForm/RequestForm";
+import homeSliderBannerData from "../../../data/newComponentData/commonComponentData/homeSliderBannerData";
+import RequestForm from "../../HomePageNew/requestForm/RequestForm";
 
 // Install Swiper modules
 SwiperCore.use([Pagination, Autoplay]);

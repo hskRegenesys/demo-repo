@@ -57,7 +57,7 @@ const StudentYoutubeVideos = () => {
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              className={Styles.iframe} // Changed to lowercase "iframe" for consistency
+              className={Styles.iframe}
             ></iframe>
           </SwiperSlide>
         </Swiper>

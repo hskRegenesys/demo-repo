@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from "react";
 import Styles from "./whyChooseDR.module.css";
-import whyChooseDRData from "./WhyChooseDRData";
+import whyChooseDRData from "../../../data/newComponentData/commonComponentData/WhyChooseDRData";
 
 interface WhyChooseDRProps {
   handleEnrollButtonClick: MouseEventHandler<HTMLDivElement>;

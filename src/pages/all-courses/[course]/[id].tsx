@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
@@ -21,7 +22,7 @@ import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
 const ToolsCovered = dynamic(
   () => import("@/components/ToolsCovered/ToolsCovered")
 );
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const CourseCurriculum = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculum")
@@ -51,17 +52,6 @@ import { Modal } from "react-bootstrap";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import WhayTheySay from "@/components/whatTheySay/whatTheySay";
 import videoTestimonialData from "@/data/videoTestimonial";
-import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
-import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
-import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
-import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
-import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
-import Faq from "@/components/HomePageNew/faq/Faq";
-import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
-import BannerWithVideo from "@/components/HomePageNew/Banner/BannerWithVideo/BannerWithVideo";
-import BreadcrumbsDR from "@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR";
-import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
-import YoutubeVidioPopup from "@/components/HomePageNew/YoutubeVidioPopup/YoutubeVidioPopup";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -70,9 +60,6 @@ const CourseCurriculumTwo = dynamic(
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
   const [show, setShow] = useState(false);
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
-  const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
 
   const courseId: any = router?.query?.id;
 
@@ -109,93 +96,30 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
-
-  const handleEnrollButtonClick = () => {
-    setIsPopupVisible(true);
-  };
-
-  const handlePopupClose = () => {
-    setIsPopupVisible(false);
-  };
-
-  useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 4000);
-
-    return () => clearTimeout(timeoutModal);
-  }, []);
-
-  const YoutubePopupButtonClick = (videoLink: string) => {
-    setIsisYoutubePopup(true);
-    setYoutubeVideoLink(videoLink);
-  };
-
-  const handleYoutubePopupClose = () => {
-    setIsisYoutubePopup(false);
-  };
-
+  // console.log(
+  //   "courseDetails courseDetails.modalImage",
+  //   courseDetails.modalImage
+  // );
   return (
-    <>
-      {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-      )}
-
-      {isYoutubePopup && (
-        <YoutubeVidioPopup
-          isVisibleVidio={isYoutubePopup}
-          youtubeVideoLink={youtubeVideoLink}
-          onClose={handleYoutubePopupClose}
-        />
-      )}
-
+    <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      <HeaderOne />
-      {/* <HeaderOne pageTitle={props.course} /> */}
-
+      <HeaderOne pageTitle={props.course} />
       <MobileMenu />
       <SearchPopup />
-      <BreadcrumbsDR
+      <PageBanner
         title={router?.query?.course?.toString().replace("-", " ")}
-        parent="All courses"
-        parentHref="/all-courses"
+        parent="All courses new"
+        parentHref="/all-courses-new"
         parentToParent={parentToParentName()}
         parentToParentHref={`/${programBaseUrl}/${urlInfo(
           parentToParentName()
         )}`}
       />
-      <BannerWithVideo
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonVidio={(videoLink) =>
-          YoutubePopupButtonClick(videoLink)
-        }
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <CourseBenefitsCard
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
 
       {courseDetails && (
         <>
-          {/* /////////new///////// */}
-
-          <ExploreTheCourses
-            page={router?.query?.course?.toString()}
-            handleEnrollButtonClick={handleEnrollButtonClick}
-          />
-          <CareersTransformed
-            handleEnrollButtonVidio={(videoLink) =>
-              YoutubePopupButtonClick(videoLink)
-            }
-          />
-          <CertificationDR
-            handleEnrollButtonClick={handleEnrollButtonClick}
-            page={router?.query?.course?.toString()}
-          />
-
-          {/* <CourseDetails
+          <CourseDetails
             courseDetails={courseDetails}
             brochureName={brochureName}
           />
@@ -218,15 +142,12 @@ const DigitalMarketing = (props: any) => {
           )}
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
-          <CallToSection /> */}
+          <CallToSection />
         </>
       )}
-      {/* <MainFooter />
-      <StickyBar /> */}
-      <BlogSection />
-      <Faq />
-      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-    </>
+      <MainFooter />
+      <StickyBar />
+    </Layout>
   );
 };
 

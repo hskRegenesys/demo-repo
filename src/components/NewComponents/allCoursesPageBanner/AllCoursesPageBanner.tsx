@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./allCoursesPageBanner.module.css";
-import allCoursesPageBannerData from "./allCoursesPageBannerData";
+import allCoursesPageBannerData from "../../../data/newComponentData/commonComponentData/allCoursesPageBannerData";
 
 interface AllCoursesPageBannerProps {
   handleEnrollButtonClick: () => void;

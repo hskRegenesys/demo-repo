@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Styles from "./admitsCompanies.module.css";
-import AdmiteCompaniesData from "./AdmiteCompaniesData";
+import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
 
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: React.MouseEventHandler<HTMLDivElement>;

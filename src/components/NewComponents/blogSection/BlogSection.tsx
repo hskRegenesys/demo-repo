@@ -1,15 +1,27 @@
 import React from "react";
-import BlogSectionData from "./blogSecionData";
 import Styles from "./blogSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
-const BlogSection = () => {
+interface CardData {
+  blogImg: string;
+  blogQuestion: string;
+  blogText: string;
+}
+
+interface BlogSectionData {
+  BlogSectionTitle: string;
+  cards: CardData[];
+}
+
+interface BlogSectionProps {
+  data: BlogSectionData;
+}
+
+const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
   return (
     <div className={Styles.blogSectionContainer}>
-      <h2 className={Styles.blogSectionTitle}>
-        {BlogSectionData.BlogSectionTitle}
-      </h2>
+      <h2 className={Styles.blogSectionTitle}>{data.BlogSectionTitle}</h2>
 
       <div className={Styles.blogCardsContainer}>
         <Swiper
@@ -29,7 +41,7 @@ const BlogSection = () => {
             },
           }}
         >
-          {BlogSectionData.cards.map((card, index) => (
+          {data.cards.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
                 <img

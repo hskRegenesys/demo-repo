@@ -8,7 +8,7 @@ import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import CourseText from "@/components/courses/coursesText";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
@@ -17,21 +17,9 @@ import { useRouter } from "next/router";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
-import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
-import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
-import RelatedCourses from "@/components/HomePageNew/All-Cources/Related Courses/RelatedCourses";
-import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
-import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
-import Faq from "@/components/HomePageNew/faq/Faq";
-import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
-import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
-import BannerComponent from "@/components/HomePageNew/Banner/BannerwithImg/BannerwithImg";
-import { Breadcrumbs } from "@mui/material";
-import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
-import YoutubeVidioPopup from "@/components/HomePageNew/YoutubeVidioPopup/YoutubeVidioPopup";
 
-const BreadcrumbsDR = dynamic(
-  () => import("@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR")
+const PageBanner = dynamic(
+  () => import("@/components/BannerSection/PageBanner")
 );
 const SubCourseDetails = dynamic(
   () => import("@/components/courses/subcourseDetails")
@@ -42,101 +30,31 @@ const Course = (props: any) => {
 
   const pageName = router?.query?.course?.toString().replace("-", " ");
 
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
-  const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
-
-  const handleEnrollButtonClick = () => {
-    setIsPopupVisible(true);
-  };
-
-  const handlePopupClose = () => {
-    setIsPopupVisible(false);
-  };
-
-  useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 4000);
-
-    return () => clearTimeout(timeoutModal);
-  }, []);
-
-  const YoutubePopupButtonClick = (videoLink: string) => {
-    setIsisYoutubePopup(true);
-    setYoutubeVideoLink(videoLink);
-  };
-
-  const handleYoutubePopupClose = () => {
-    setIsisYoutubePopup(false);
-  };
-
   return (
-    <>
-      {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-      )}
-      {isYoutubePopup && (
-        <YoutubeVidioPopup
-          isVisibleVidio={isYoutubePopup}
-          youtubeVideoLink={youtubeVideoLink}
-          onClose={handleYoutubePopupClose}
-        />
-      )}
+    <Layout pageTitle={props?.course}>
       <Style />
-      {/* <HeaderOne pageTitle={props?.course} />
+      <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
       <SearchPopup />
       <Schemas
         type={Constants.course}
         data={{ name: pageName, description: pageName }}
-      /> */}
-
-      <HeaderOne />
-      <BreadcrumbsDR
+      />
+      <PageBanner
         title={pageName}
         page={pageName}
-        parent="All courses"
-        parentHref="/all-courses"
+        parent="All courses new"
+        parentHref="/all-courses-new"
       />
-      <BannerComponent
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <CourseBenefitsCard
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <ExploreTheCourses
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <CareersTransformed
-        handleEnrollButtonVidio={(videoLink) =>
-          YoutubePopupButtonClick(videoLink)
-        }
-      />
-      <CertificationDR
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        page={router?.query?.course?.toString()}
-      />
-      <RelatedCourses
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        page={router?.query?.course?.toString()}
-      />
-      <BlogSection />
-      <Faq />
-      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-      {/* //working */}
-      {/* <CourseText page={router?.query?.course?.toString()} />
+      <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />
       <PartnerOne />
       <VideoOne />
       <PopularTopics />
       <CallToSection />
       <MainFooter />
-      <StickyBar /> */}
-    </>
+      <StickyBar />
+    </Layout>
   );
 };
 export async function getServerSideProps(context: any) {

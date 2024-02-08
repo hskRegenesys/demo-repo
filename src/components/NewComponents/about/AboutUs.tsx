@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AboutUsData from "./AboutUsData";
+import AboutUsData from "../../../data/newComponentData/commonComponentData/AboutUsData";
 import Styles from "./aboutUs.module.css";
 
 interface AboutUsProps {

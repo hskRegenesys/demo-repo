@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./connectContainer.module.css";
-import RequestForm from "../requestForm/RequestForm";
-import connectContainerData from "./ConnnectContainerData";
+import RequestForm from "../../HomePageNew/requestForm/RequestForm";
+import connectContainerData from "../../../data/newComponentData/commonComponentData/ConnnectContainerData";
 
 interface ConnectContainerProps {
   onFormSubmit: () => void;

@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from "react";
-import WhyChooseDR from "@/components/HomePageNew/whychooseDR/WhyChooseDR";
+import WhyChooseDR from "@/components/NewComponents/whychooseDR/WhyChooseDR";
 import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import NewHomeData from "@/data/newHomeData";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
-import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
+import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import Faq from "@/components/HomePageNew/faq/Faq";
-import StudentReview from "@/components/HomePageNew/studentReview/StudentReview";
+import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
 import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
 import MobileMenu from "@/components/Header/MobileMenu";
 import HeaderOne from "@/components/Header/HeaderOne";
-import AllCoursesPageBanner from "@/components/HomePageNew/allCoursesPageBanner/AllCoursesPageBanner";
-import StudentYoutubeVideos from "@/components/HomePageNew/studentYoutubeVideos/StudentYoutubeVideos";
+import AllCoursesPageBanner from "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner";
+import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
 
 import _ from "lodash";
-import HomeSliderBanner from "@/components/HomePageNew/homeSliderBanner/HomeSliderBanner";
+import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import Layout from "@/components/Layout/Layout";
-import UspSection from "@/components/HomePageNew/uspSection/UspSection";
-import AboutUs from "@/components/HomePageNew/about/AboutUs";
-import AdmitsCompanies from "@/components/HomePageNew/admitsCompanies/AdmitsCompanies";
-import LearnersBenefit from "@/components/HomePageNew/learnersBenefit/LearnersBenefit";
-import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectContainer";
-import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
+import UspSection from "@/components/NewComponents/uspSection/UspSection";
+import AboutUs from "@/components/NewComponents/about/AboutUs";
+import AdmitsCompanies from "@/components/NewComponents/admitsCompanies/AdmitsCompanies";
+import LearnersBenefit from "@/components/NewComponents/learnersBenefit/LearnersBenefit";
+import ConnectContainer from "@/components/NewComponents/connectContainer/ConnectContainer";
+import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 
@@ -49,7 +49,6 @@ const AllCoursesNew = () => {
           <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
         )}
         <HeaderOne />
-
         <MobileMenu />
         <AllCoursesPageBanner
           handleEnrollButtonClick={handleEnrollButtonClick}
@@ -61,10 +60,10 @@ const AllCoursesNew = () => {
             background: "none",
           }}
         />
-        <OurCourses
+        {/* <OurCourses
           data={NewOurCoursesData}
           handleEnrollButtonClick={handleEnrollButtonClick}
-        />
+        /> */}
         <CertificationDR
           page="all-courses-new"
           handleEnrollButtonClick={handleEnrollButtonClick}
