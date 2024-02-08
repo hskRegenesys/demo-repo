@@ -1113,6 +1113,10 @@ const createReWrites = () => {
       source: "/all-courses/design-thinking",
       destination: "/all-courses/design-thinking/105",
     },
+    {
+      source: "/all-courses-new/design-thinking-new",
+      destination: "/all-courses-new/design-thinking-new/1055",
+    },
 
     {
       source: "/all-courses/cyber-security",
