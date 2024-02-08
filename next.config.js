@@ -1020,6 +1020,11 @@ const redirectURL = () => {
       destination: "/all-courses/data-science",
       permanent: true,
     },
+    {
+      source: "/all-courses/software-development-course",
+      destination: "/all-courses",
+      permanent: true,
+    },
   ];
   return path;
 };
@@ -1034,6 +1039,10 @@ const createReWrites = () => {
     //   source: "/all-courses/software-development-course",
     //   destination: "/all-courses/software-development/229",
     // },
+    {
+      source: "/all-courses/full-stack-development",
+      destination: "/all-courses/full-stack-development/230",
+    },
     {
       source: "/all-courses/data-science",
       destination: "/all-courses/data-science/701",
