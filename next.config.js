@@ -34,11 +34,11 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    {
-      source: "/programsnew",
-      destination: "/all-courses-new",
-      permanent: true,
-    },
+    // {
+    //   source: "/programsnew",
+    //   destination: "/all-courses-new",
+    //   permanent: true,
+    // },
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -1039,10 +1039,10 @@ const createReWrites = () => {
     //   source: "/all-courses/software-development-course",
     //   destination: "/all-courses/software-development/229",
     // },
-    {
-      source: "/all-courses/full-stack-development",
-      destination: "/all-courses/full-stack-development/230",
-    },
+    // {
+    //   source: "/all-courses/full-stack-web-and-software-development",
+    //   destination: "/all-courses/full-stack-web-and-software-development/230",
+    // },
     {
       source: "/all-courses/data-science",
       destination: "/all-courses/data-science/701",
@@ -1136,30 +1136,30 @@ const createReWrites = () => {
     // },
 
     // --------------------new pages---------------------
-    {
-      source: "/all-courses-new/design-thinking-new",
-      destination: "/all-courses-new/design-thinking-new/1055",
-    },
-    {
-      source: "/all-courses-new/project-management-new",
-      destination: "/all-courses-new/project-management-new/28",
-    },
-    {
-      source: "/all-courses-new/data-science-new",
-      destination: "/all-courses-new/data-science-new/701",
-    },
+    // {
+    //   source: "/all-courses-new/design-thinking-new",
+    //   destination: "/all-courses-new/design-thinking-new/105",
+    // },
+    // {
+    //   source: "/all-courses-new/project-management-new",
+    //   destination: "/all-courses-new/project-management-new/28",
+    // },
+    // {
+    //   source: "/all-courses-new/data-science-new",
+    //   destination: "/all-courses-new/data-science-new/701",
+    // },
     {
       source: "/all-courses-new/digital-marketing-new",
       destination: "/all-courses-new/digital-marketing-new/702",
     },
-    {
-      source: "/all-courses-new/cyber-security-new",
-      destination: "/all-courses-new/cyber-security-new/106",
-    },
-    {
-      source: "/all-courses-new/artificial-intelligence-new",
-      destination: "/all-courses-new/artificial-intelligence-new/703",
-    },
+    // {
+    //   source: "/all-courses-new/cyber-security-new",
+    //   destination: "/all-courses-new/cyber-security-new/106",
+    // },
+    // {
+    //   source: "/all-courses-new/artificial-intelligence-new",
+    //   destination: "/all-courses-new/artificial-intelligence-new/703",
+    // },
   ];
   return paths;
 };

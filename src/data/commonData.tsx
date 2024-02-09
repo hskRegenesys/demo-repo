@@ -34,8 +34,8 @@ const Data = {
         "Project Management Course Online | Digital Regenesys",
       "software-development":
         "Software Development  Online Course | Digital Regenesys",
-      "full-stack-development":
-        "full stack development  Online Course | Digital Regenesys",
+      "full-stack-web-and-software-development":
+        "Full Stack Web & Software Development Course | Digital Regenesys",
       "design-thinking": "Design Thinking Course Online | Digital Regnesys",
       "data-science":
         "Data Science: Data Science Course Online | Digital Regenesys",
@@ -149,8 +149,9 @@ const Data = {
         career in digital marketing,
         digital marketing degree
       `,
-      "full-stack-development":
-        "full stack development  Online Course | Digital Regenesys",
+      "full-stack-web-and-software-development": `
+        full stack web development, full stack software development, full stack web and software development course, what is full stack development, full stack software development course, full stack web development course, full stack web developer, full stack development certificate
+        `,
       "basic-digital-marketing": `
         Basic Digital Marketing Course, 
         Basic Digital Marketing Course details, 
@@ -276,8 +277,8 @@ Software Development  subjects,
       search: "Search - DR Website",
       register: "Register",
       login: "Login",
-      "full-stack-development":
-        "full stack development  Online Course | Digital Regenesys",
+      "full-stack-web-and-software-development":
+        "Learn Full Stack Web & Software Development Course and earn your full stack development certificate. Choose the best full stack developer course for your career growth.        ",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
       "cyber-security":
@@ -358,7 +359,8 @@ Software Development  subjects,
       "ai-advanced-applied":
         "/all-courses/artificial-intelligence/ai-advanced-applied",
       "software-development": "software-development-course",
-      "full-stack-development": "full-stack-development",
+      "full-stack-web-and-software-development":
+        "full-stack-web-and-software-development",
     },
   },
 };
