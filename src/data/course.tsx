@@ -782,7 +782,7 @@ export const courseData = {
         youtubeUrl:
           "https://www.youtube.com/embed/t-tnGObE7zM?autoplay=1&loop=1&playlist=t-tnGObE7zM",
         title: "Certificate Course in Full Stack Web & Software Development",
-        text: "Elevate your skill set through our comprehensive Full Stack Web & Software Development course. Master the front-end and back-end technologies, including HTML, CSS, JavaScript, Python, and more. Gain hands-on experience in creating dynamic web applications and understand how to deploy them effectively. Enhance your coding abilities and boost your career prospects with our intensive Full Stack Web & Software Development course.",
+        text: "Elevate your skill set through our comprehensive Full Stack Web & Software Development course. Master the front-end and back-end technologies, including HTML, CSS, JavaScript and more. Gain hands-on experience in creating dynamic web applications and understand how to deploy them effectively. Enhance your coding abilities and boost your career prospects with our intensive Full Stack Web & Software Development course.",
         lists: [
           "40 Weeks Course ",
           " Live Sessions",
@@ -799,7 +799,7 @@ export const courseData = {
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1: "Get exposure to HTML, CSS, Linux and JavaScript.",
+      desc1: "Get exposure to HTML, CSS, JavaScript and MongoDB.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -838,13 +838,13 @@ Participate in hands-on projects to build practical skills and develop a strong 
 
       `,
       certificateListTitle:
-        "With our Full Stack Web & Software Development Certificate Course, you will gain: ",
+        "With our Full Stack Web & Software Development Certificate Course, you will gain:        ",
 
       certificateSkillList: [
-        "Version Control",
-        "Advanced JavaScript and testing.",
-        "Introduction to React",
-        "Interactive Websites and Accessibility",
+        "Proficiency in Front-End Development",
+        "Proficiency in Back-End Development",
+        "Advanced JavaScript Concepts and Testing Methodologies",
+        "Develop practical skills through hands-on project        ",
       ],
       certificateListPara:
         " Our Full Stack Web & Software Development Certificate Course will open doors to various roles for you, whether you are a fresher, a college student, a working professional or an Entrepreneur.        ",
