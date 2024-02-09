@@ -780,7 +780,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+          "https://www.youtube.com/embed/t-tnGObE7zM?autoplay=1&loop=1&playlist=t-tnGObE7zM",
         title: "Certificate Course in Full Stack Web & Software Development",
         text: "Elevate your skill set through our comprehensive Full Stack Web & Software Development course. Master the front-end and back-end technologies, including HTML, CSS, JavaScript, Python, and more. Gain hands-on experience in creating dynamic web applications and understand how to deploy them effectively. Enhance your coding abilities and boost your career prospects with our intensive Full Stack Web & Software Development course.",
         lists: [
@@ -822,6 +822,10 @@ export const courseData = {
       "sd/expressJs.svg",
       "sd/gitlabNew.svg",
       "sd/Node.js_logo.svg",
+      "sd/css.svg",
+      "sd/html.svg",
+      "sd/js.svg",
+      "sd/MongoDB_Logo.svg",
     ],
     courseCertificate: {
       certificateTitle:
@@ -852,27 +856,34 @@ Participate in hands-on projects to build practical skills and develop a strong 
         "Full-Stack Developer",
         " Software Engineers",
       ],
-      CertificateImage: ["SD_certificate.webp"],
-      imageName: "SD_certificate",
+      CertificateImage: ["FSD_certificate.webp"],
+      imageName: "FSD_certificate",
     },
 
     featureSeven: {
-      title: "Meet our faculty",
-      // desc: "Revolutionise your career with future-ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
-          image: "Dennis-Laxton.webp",
-          title: "Dr. Dennis Laxton ",
-          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
-          designation: "Academic Team Leader and Senior Lecturer",
+          image: "Samidha_Photo.webp",
+          title: "Samidha Kurle",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai. Samidha Kurle excels in Procedural Programming, Web design, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "James_forson.webp",
-          title: "James Forson",
-          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
-          designation: "BSocSc (Hons)",
+          image: "dr_nilay_profile.webp",
+          title: "Dr. Nilay Karade ",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, a Master's in Computer Application, and a B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 3,
+          image: "dr_shilpa_joshi.webp",
+          title: "Dr. Shilpa Joshi ",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          designation: "Senior Lecturer",
         },
       ],
     },
@@ -976,16 +987,16 @@ Participate in hands-on projects to build practical skills and develop a strong 
             ],
           },
 
-          {
-            id: 11,
-            title: " Web Security",
-            lists: [
-              "Intermediate concepts in web security.",
-              "Prevention techniques for common threats",
-              "Data security using SSL/HTTPS, TLS, and Firewall Rules in Linux",
-              "Mitigating common web application attacks.",
-            ],
-          },
+          // {
+          //   id: 11,
+          //   title: " Web Security",
+          //   lists: [
+          //     "Intermediate concepts in web security.",
+          //     "Prevention techniques for common threats",
+          //     "Data security using SSL/HTTPS, TLS, and Firewall Rules in Linux",
+          //     "Mitigating common web application attacks.",
+          //   ],
+          // },
 
           {
             id: 12,
@@ -8161,6 +8172,12 @@ export const brochureDetails: any = {
   //Cybersecurity
   CS: {
     name: "cybersecurity-complete-brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  FSD: {
+    name: "Full_Stack_Development_Brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
