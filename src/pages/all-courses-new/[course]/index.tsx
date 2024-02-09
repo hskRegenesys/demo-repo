@@ -17,21 +17,21 @@ import { useRouter } from "next/router";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
-import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
-import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
+import CareersTransformed from "@/components/NewComponents/careersTransformed/CareersTransformed";
+import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
 import RelatedCourses from "@/components/HomePageNew/All-Cources/Related Courses/RelatedCourses";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
-import Faq from "@/components/HomePageNew/faq/Faq";
+import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
+import CertificationDR from "@/components/NewComponents/certificationDR/CertificationDR";
 import BannerComponent from "@/components/HomePageNew/Banner/BannerwithImg/BannerwithImg";
 import { Breadcrumbs } from "@mui/material";
-import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
-import YoutubeVidioPopup from "@/components/HomePageNew/YoutubeVidioPopup/YoutubeVidioPopup";
+import CourseBenefitsCard from "@/components/NewComponents/courseBenefitsCard/CourseBenefitsCard";
+import YoutubeVidioPopup from "@/components/NewComponents/YoutubeVidioPopup/YoutubeVidioPopup";
 
 const BreadcrumbsDR = dynamic(
-  () => import("@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR")
+  () => import("@/components/NewComponents/breadcrumbsDR/breadcrumbsDR")
 );
 const SubCourseDetails = dynamic(
   () => import("@/components/courses/subcourseDetails")
@@ -94,7 +94,6 @@ const Course = (props: any) => {
         parent="All courses"
         parentHref="/all-courses"
       />
-      <h1>guna</h1>
       {/* <BannerComponent
         page={router?.query?.course?.toString()}
         handleEnrollButtonClick={handleEnrollButtonClick}

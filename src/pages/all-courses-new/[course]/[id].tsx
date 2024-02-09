@@ -1,114 +1,143 @@
+// DigitalMarketing.tsx
 import dynamic from "next/dynamic";
-import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import HeaderOne from "@/components/Header/HeaderOne";
-import MobileMenu from "@/components/Header/MobileMenu";
-import Layout from "@/components/Layout/Layout";
-import MainFooter from "@/components/MainFooter/MainFooter";
-import Style from "@/components/Reuseable/Style";
-import SearchPopup from "@/components/SearchPopup/SearchPopup";
-
-const FaqsSection = dynamic(
-  () => import("@/components/FaqsSection/FaqsSection")
-);
-const CourseDetails = dynamic(
-  () => import("@/components/CourseDetails/CourseDetails")
-);
-import VideoOne from "@/components/VideoSection/VideoOne";
-import SkillDetailSection from "@/components/SkillDetailSection/SkillDetailSection";
-import FeesDetails from "@/components/SkillDetailSection/FeesDetails";
-import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
-
-const ToolsCovered = dynamic(
-  () => import("@/components/ToolsCovered/ToolsCovered")
-);
-import React, { useState, useEffect } from "react";
-
-const CourseCurriculum = dynamic(
-  () => import("@/components/CourseCurriculum/CourseCurriculum")
-);
-
-const JoinReasons = dynamic(
-  () => import("@/components/JoinReasons/JoinReasons")
-);
-
-const FeatureSeven = dynamic(
-  () => import("@/components/FeaturesSection/FeatureSeven")
-);
-
 import { useRouter } from "next/router";
-import { brochureDetails, courseData } from "@/data/course";
+import { useState, useEffect } from "react";
 import _ from "lodash";
+import { brochureDetails, courseData } from "@/data/course";
 import { urlInfo } from "@/components/config/helper";
 import { programBaseUrl } from "@/components/config/constant";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
-
-import StickyBar from "@/components/StickyFooter/Sticky";
-import PageBanner from "@/components/BannerSection/PageBanner";
-import { allCourseList } from "@/data/courseData";
-import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
-import { Modal } from "react-bootstrap";
-import ModalPopup from "@/components/Modal/ModalPopup";
-import WhayTheySay from "@/components/whatTheySay/whatTheySay";
-import videoTestimonialData from "@/data/videoTestimonial";
-import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
-import CareersTransformed from "@/components/HomePageNew/careersTransformed/CareersTransformed";
-import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import YoutubeVidioPopup from "@/components/NewComponents/YoutubeVidioPopup/YoutubeVidioPopup";
+import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
+import BannerWithVideo from "@/components/NewComponents/BannerWithVideo/BannerWithVideo";
+import BreadcrumbsDR from "@/components/NewComponents/breadcrumbsDR/breadcrumbsDR";
+import { Style } from "@mui/icons-material";
+import MobileMenu from "@/components/Header/MobileMenu";
+import HeaderOne from "@/components/Header/HeaderOne";
+import SearchPopup from "@/components/SearchPopup/SearchPopup";
+import CourseBenefitsCard from "@/components/NewComponents/courseBenefitsCard/CourseBenefitsCard";
+import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
+import CareersTransformed from "@/components/NewComponents/careersTransformed/CareersTransformed";
+import CertificationDR from "@/components/NewComponents/certificationDR/CertificationDR";
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
-import Faq from "@/components/HomePageNew/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import BannerWithVideo from "@/components/HomePageNew/Banner/BannerWithVideo/BannerWithVideo";
-import BreadcrumbsDR from "@/components/HomePageNew/breadcrumbsDR/breadcrumbsDR";
-import CourseBenefitsCard from "@/components/HomePageNew/courseBenefitsCard/CourseBenefitsCard";
-import YoutubeVidioPopup from "@/components/HomePageNew/YoutubeVidioPopup/YoutubeVidioPopup";
+import Faq from "@/components/NewComponents/faq/Faq";
 
-const CourseCurriculumTwo = dynamic(
-  () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
-);
+// Define the type for the dynamic data
+type MainCoursesDynimicData = {
+  BannerWithVideoData: {
+    BannerImgDesktop: string;
+    coursePageName: string;
+    topSectionPoint1: string;
+    topSectionPoint2: string;
+    contentText: string;
+    youtubeVideoLink: string;
+    BrochureIcon: string;
+    vidoPlayIcon: string;
+  };
+  CourseBenefitsCardData: {
+    courcename: string;
+    Heding: string;
+    Card: CardData[];
+  };
+  ExploreTheCoursesData: {
+    smallHeading: string;
+    bigHeading: string;
+    sideHeadings: { text: string; contentId: string }[];
+    sideContents: {
+      content1: {
+        contentHeading: string;
+        contentImg: string;
+        contentText: string;
+        contentCard: { icon: string; text: string }[];
+      };
+      content2: {
+        contentHeading: string;
+        cardTools: { img: string }[];
+      };
+      content3: {
+        contentHeading: string;
+        tutors: string;
+        facultyCard: {
+          facultyImg: string;
+          facultyName: string;
+          courseName: string;
+          yearsOfExperience: string;
+        }[];
+      };
+      content4?: {
+        contentHeading: string;
+        LevelCard: {
+          courseName: string;
+          frameImg: string;
+          tickIcon: string;
+          list: string[];
+        }[];
+      };
+      content5?: {
+        contentHeading: string;
+        durationIcon: string;
+        tickIcon: string;
+        dropDown: string;
+        curriculumContainer: {
+          weekHeading: string;
+          weekPoints: string[];
+        }[];
+      };
+      content6?: {
+        ContentHeding: string;
+        PriceIcon: string;
+        durationIcon: string;
+        EnrollmentIcon: string;
+        contraryPricingCard: {
+          contaryName: string;
+          price: string;
+          duration: string;
+          Enrollment: string;
+          contaryFlag: string;
+        }[];
+      };
+    };
+  };
+  CertificationDRData: {
+    heading: string;
+    title: string;
+    paragraph: string;
+    achievementsHeading: string;
+    achievementsText: string[];
+    tickImage: string;
+    image: string;
+    imageText: string;
+    buttonText: string;
+  };
+  BlogSectionData: {
+    BlogSectionTitle: string;
+    cards: CardDataBlog[];
+  };
+  Faqsection: {};
+};
+interface CardDataBlog {
+  blogImg: string;
+  blogQuestion: string;
+  blogText: string;
+}
+
+interface CardData {
+  cardIcon: string;
+  text1: string;
+  text2: string;
+}
 
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
-  const [show, setShow] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
   const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
 
   const courseId: any = router?.query?.id;
-
-  const coursePriceDetails = _.filter(
-    allCourseList,
-    (item) => item.id === parseInt(courseId)
-  );
-
-  const parentCourse = _.filter(
-    allCourseList,
-    (item) => item.parent_id === null
-  );
-
-  const allContent: any = courseData;
-  const code = coursePriceDetails[0]?.code;
-  const courseDetails: any = allContent[code];
-
-  const brochureName: any = brochureDetails[code];
-
-  const filterData = _.find(
-    parentCourse,
-    (item) =>
-      item?.parent_id === null &&
-      item?.mode_id === 1 &&
-      item?.isAddon === false &&
-      item?.id === coursePriceDetails[0]?.parent_id
-  );
-
-  const parentToParentName = () => {
-    let result = "";
-    if (filterData?.name) {
-      result = filterData?.name;
-    }
-    return result;
-  };
-  parentToParentName();
+  const allCourseList: any = []; // Dummy data, replace with actual course list
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -135,12 +164,49 @@ const DigitalMarketing = (props: any) => {
     setIsisYoutubePopup(false);
   };
 
+  const page = router?.query?.course?.toString();
+
+  let MainCourseData: MainCoursesDynimicData | undefined;
+
+  if (page === "data-science-new") {
+    MainCourseData = MainCoursesDynimicData.DataScience;
+  } else if (page === "digital-marketing-new") {
+    MainCourseData = MainCoursesDynimicData.DigitalMarketing;
+  }
+
+  if (!MainCourseData) {
+    return null;
+  }
+
+  const filterData = _.find(
+    allCourseList,
+    (item: any) =>
+      item?.parent_id === null &&
+      item?.mode_id === 1 &&
+      item?.isAddon === false &&
+      item?.id === parseInt(courseId)
+  );
+
+  const parentToParentName = () => {
+    let result = "";
+    if (filterData?.name) {
+      result = filterData?.name;
+    }
+    return result;
+  };
+  const {
+    BannerWithVideoData,
+    CourseBenefitsCardData,
+    ExploreTheCoursesData,
+    CertificationDRData,
+    BlogSectionData,
+    Faqsection,
+  } = MainCourseData;
   return (
     <>
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
-
       {isYoutubePopup && (
         <YoutubeVidioPopup
           isVisibleVidio={isYoutubePopup}
@@ -148,11 +214,9 @@ const DigitalMarketing = (props: any) => {
           onClose={handleYoutubePopupClose}
         />
       )}
-
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      <HeaderOne pageTitle={props.course} />
-
+      <HeaderOne />
       <MobileMenu />
       <SearchPopup />
       <BreadcrumbsDR
@@ -164,42 +228,35 @@ const DigitalMarketing = (props: any) => {
           parentToParentName()
         )}`}
       />
-      {/* <BannerWithVideo
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonVidio={(videoLink) =>
+      <BannerWithVideo
+        data={BannerWithVideoData}
+        handleEnrollButtonVidio={(videoLink: string) =>
           YoutubePopupButtonClick(videoLink)
         }
         handleEnrollButtonClick={handleEnrollButtonClick}
-      /> */}
-      {/* <CourseBenefitsCard
-        page={router?.query?.course?.toString()}
+      />
+      <CourseBenefitsCard
+        data={CourseBenefitsCardData}
         handleEnrollButtonClick={handleEnrollButtonClick}
-      /> */}
+      />
 
-      {/* {courseDetails && (
-        <>
+      <ExploreTheCourses
+        data={ExploreTheCoursesData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <CareersTransformed
+        handleEnrollButtonVidio={(videoLink) =>
+          YoutubePopupButtonClick(videoLink)
+        }
+      />
+      <CertificationDR
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        data={CertificationDRData}
+      />
 
-          <ExploreTheCourses
-            page={router?.query?.course?.toString()}
-            handleEnrollButtonClick={handleEnrollButtonClick}
-          />
-          <CareersTransformed
-            handleEnrollButtonVidio={(videoLink) =>
-              YoutubePopupButtonClick(videoLink)
-            }
-          />
-          <CertificationDR
-            handleEnrollButtonClick={handleEnrollButtonClick}
-            page={router?.query?.course?.toString()}
-          />
-
-        
-        </>
-      )} */}
-
-      {/* <BlogSection /> */}
-      {/* <Faq /> */}
-      {/* <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} /> */}
+      <BlogSection data={BlogSectionData} />
+      <Faq />
+      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </>
   );
 };
@@ -208,4 +265,5 @@ export async function getServerSideProps(context: any) {
   const { id, course } = context.query;
   return { props: { course } };
 }
+
 export default DigitalMarketing;

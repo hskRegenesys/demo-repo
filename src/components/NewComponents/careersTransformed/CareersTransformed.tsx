@@ -3,7 +3,7 @@ import Styles from "./careersTransformed.module.css";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import careersTransformedData from "./careersTransformedData";
+import careersTransformedData from "../../../data/newComponentData/commonComponentData/careersTransformedData";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 

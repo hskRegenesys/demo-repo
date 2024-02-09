@@ -10,13 +10,13 @@ import LearnersBenefit from "@/components/NewComponents/learnersBenefit/Learners
 import ConnectContainer from "@/components/NewComponents/connectContainer/ConnectContainer";
 import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
-import Faq from "@/components/HomePageNew/faq/Faq";
+import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import NewHomeData from "@/data/newHomeData";
 import _ from "lodash";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
-import ExploreTheCourses from "@/components/HomePageNew/exploreTheCouses/ExploreTheCourses";
+import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
 import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";

@@ -4,9 +4,9 @@ import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCours
 import NewHomeData from "@/data/newHomeData";
 import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import Faq from "@/components/HomePageNew/faq/Faq";
+import Faq from "@/components/NewComponents/faq/Faq";
 import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
-import CertificationDR from "@/components/HomePageNew/certificationDR/CertificationDR";
+import CertificationDR from "@/components/NewComponents/certificationDR/CertificationDR";
 import MobileMenu from "@/components/Header/MobileMenu";
 import HeaderOne from "@/components/Header/HeaderOne";
 import AllCoursesPageBanner from "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner";
@@ -23,6 +23,7 @@ import ConnectContainer from "@/components/NewComponents/connectContainer/Connec
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
+import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -65,7 +66,7 @@ const AllCoursesNew = () => {
           handleEnrollButtonClick={handleEnrollButtonClick}
         /> */}
         <CertificationDR
-          page="all-courses-new"
+          data={AllCoursesDynamicData.CertificationDRData}
           handleEnrollButtonClick={handleEnrollButtonClick}
         />
         <StudentReview />
