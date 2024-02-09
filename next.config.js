@@ -1039,10 +1039,10 @@ const createReWrites = () => {
     //   source: "/all-courses/software-development-course",
     //   destination: "/all-courses/software-development/229",
     // },
-    // {
-    //   source: "/all-courses/full-stack-web-and-software-development",
-    //   destination: "/all-courses/full-stack-web-and-software-development/230",
-    // },
+    {
+      source: "/all-courses/full-stack-web-and-software-development",
+      destination: "/all-courses/full-stack-web-and-software-development/230",
+    },
     {
       source: "/all-courses/data-science",
       destination: "/all-courses/data-science/701",
