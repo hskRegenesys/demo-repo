@@ -150,11 +150,11 @@ export const mainFooter = {
       title: "Our Courses",
     },
 
-    {
-      id: 8,
-      href: "/all-courses-new",
-      title: "Our Courses New",
-    },
+    // {
+    //   id: 8,
+    //   href: "/all-courses-new",
+    //   title: "Our Courses New",
+    // },
   ],
   ...footer,
   newses: [

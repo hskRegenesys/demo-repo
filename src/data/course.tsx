@@ -781,26 +781,25 @@ export const courseData = {
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
           "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
-        title: "Certification Programme in full stack development",
-        text: "Gain the skill set necessary to excel in the rapidly evolving tech industry. Deepen your understanding of programming languages, software architecture, and development tools with our best Software Development course. Gain hands-on experience as you work on real-world projects. This course is designed for aspiring software developers, career switchers and individuals interested in emerging technologies. ",
+        title: "Certificate Course in Full Stack Web & Software Development",
+        text: "Elevate your skill set through our comprehensive Full Stack Web & Software Development course. Master the front-end and back-end technologies, including HTML, CSS, JavaScript, Python, and more. Gain hands-on experience in creating dynamic web applications and understand how to deploy them effectively. Enhance your coding abilities and boost your career prospects with our intensive Full Stack Web & Software Development course.",
         lists: [
-          "22 Weeks course ",
-          "Live Sessions ",
+          "40 Weeks Course ",
+          " Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
         ],
       },
     ],
     productDescription: {
-      title: "Revolutionise your career with future-ready skills",
+      title: "Revolutionise Your Path to Success with Future-Ready Skills",
       text1:
-        "Master the art of building top-notch software, focusing on design, security, and maintenance. Learn how to analyse, develop, execute, and maintain software systems in the real world from our highly experienced faculty.",
+        "Advance your skill set through the best Full Stack Web & Software Development course. Discover how to develop dynamic and responsive web applications with our highly qualified faculty.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1:
-        "Get exposure to Jenkins, GitLab CI, or GitHub Actions. Slack, Teams, and Jira.",
+      desc1: "Get exposure to HTML, CSS, Linux and JavaScript.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -811,41 +810,47 @@ export const courseData = {
         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
 
       subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
+      desc4:
+        "Gain a broad spectrum of knowledge on how to use the tools.      ",
       bg1: "/assets/images/background/reason-bg1-1.webp",
       bg2: "/assets/images/background/reason-bg2-1.webp",
       bg3: "/assets/images/background/reason-bg3-1.webp",
       bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
-      "sd/jira.svg",
-      "sd/jink.svg",
-      "sd/teams.svg",
-      "sd/slack.svg",
-      "sd/gitlab.svg",
+      "sd/chatGpt.svg",
+      "sd/expressJs.svg",
+      "sd/gitlabNew.svg",
+      "sd/Node.js_logo.svg",
     ],
     courseCertificate: {
       certificateTitle:
-        "Leading with Excellence: Software Development  Certificate Course",
+        "Master In-Demand Developer Skills: Full Stack Web & Software Development Certificate Course",
       certificateSubTitle:
-        "With our Software Development course,  individuals will gain the necessary knowledge, expertise, and recognition to excel in this domain. By investing in our course, individuals can enhance their career prospects, stay updated with industry best practices, and demonstrate their commitment to excellence in this domain.",
-      certificateSubSubTitle: "",
+        "Earn a Full Stack Web & Software Development Certificate from Digital Regenesys and Create Your Path to Full Stack Mastery.",
+      certificateSubSubTitle: `
+      Digital Regenesys's Professional Certificate Course in Full Stack Web & Software Development provides comprehensive front-end and back-end web development training.
+Participate in hands-on projects to build practical skills and develop a strong portfolio
+
+      `,
       certificateListTitle:
-        "With the Software Development  Course, you will get: ",
+        "With our Full Stack Web & Software Development Certificate Course, you will gain: ",
 
       certificateSkillList: [
-        "International Recognition",
-        "Software Development Process",
-        "Data Structures and Algorithms",
-        "Software Development Tools and Techniques",
+        "Version Control",
+        "Advanced JavaScript and testing.",
+        "Introduction to React",
+        "Interactive Websites and Accessibility",
       ],
       certificateListPara:
-        " Our Software Development course opens the door to a wide range of exciting and dynamic career opportunities in software development and information technology.",
+        " Our Full Stack Web & Software Development Certificate Course will open doors to various roles for you, whether you are a fresher, a college student, a working professional or an Entrepreneur.        ",
       certificateRolesList: [
-        "Application Developer",
-        "Java Developer",
-        "Front-End Developer  ",
+        "Web Developer",
+        "UI/UX Developer",
+        "Front-End Developer",
+        "Back-End Developer",
         "Full-Stack Developer",
+        " Software Engineers",
       ],
       CertificateImage: ["SD_certificate.webp"],
       imageName: "SD_certificate",
@@ -887,64 +892,65 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "Introduction to Software Development ",
+            title: "Front-End Development",
             lists: [
-              "Overview of Software Development ",
-              "Software Development Life Cycle (SDLC)",
+              "HTML structure building.",
+              "CSS styling and customisation.",
+              "Local website development using text editors and Chrome DevTools.",
+              "Deployment using GitHub Pages and command line.",
+              "Advanced CSS topics for improved styling.",
+              "Responsive web design with CSS grid, flexbox, and media queries.",
+              "Introduction to JavaScript syntax and basic programmes.",
+              "Intermediate JavaScript programmes using arrays, loops, objects, and iterators.",
             ],
           },
           {
             id: 2,
-            title: "Software Development Life Cycle (SDLC)            ",
-            lists: [
-              "Waterfall model",
-              "Agile methodologies",
-              "Iterative and incremental development              ",
-            ],
+            title: "Version Control ",
+            lists: ["Git and GitHub for version control"],
           },
           {
             id: 3,
-            title: "Roles and Responsibilities in Software Development",
+            title: "Interactive Websites and Accessibility            ",
             lists: [
-              " Project manager",
-              " Software architect",
-              " Developer",
-              " Tester              ",
-              "  Quality assurance",
-              " Business Analyst",
+              " Implementing JavaScript for interactivity.",
+              " Best accessibility practices for inclusive websites.",
             ],
           },
           {
             id: 4,
-            title: "Programming Fundamentals: Introduction to Programming",
+            title: "Advanced JavaScript and Testing",
             lists: [
-              "Programming languages overview",
-              "Basic syntax and concepts",
+              "Advanced JavaScript concepts: classes, modules, error handling.              ",
+              "JavaScript testing methodologies (TDD) using Mocha and Chai.",
+              "Asynchronous JavaScript and HTTP requests              ",
             ],
           },
           {
             id: 5,
-            title: "Data Structures and Algorithms",
+            title: "Introduction to React",
             lists: [
-              "Arrays, linked lists, stacks, queues",
-              "Sorting and searching algorithms",
-              "Trees and graphs",
+              "Introduction to React library.",
+              "Props, state, hooks, and testing with Jest and Enzyme.",
+              "Managing states with Redux.",
             ],
           },
           {
             id: 6,
-            title: "Object-Oriented Programming (OOP)            ",
+            title: "Collaboration with Git and GitHub",
             lists: [
-              "Principles of OOP",
-              "Design patterns",
-              "Design patterns",
-              " Python",
+              "Collaboration techniques: forking, branching, merging conflicts, pull requests.",
             ],
           },
           {
             id: 7,
-            title: "Software Design and Architecture : System Design",
-            lists: ["Architectural design", "Component-level design"],
+            title: "Back-End Development",
+            lists: [
+              "Introduction to back-end development and server programming.",
+              " Building a back-end with Express.js.",
+              "User authentication and authorisation.",
+              "TDD techniques for full-stack web applications.",
+            ],
           },
 
           {
