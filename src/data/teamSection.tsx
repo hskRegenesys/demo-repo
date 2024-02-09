@@ -31,14 +31,14 @@ const teamSection = {
     // },
     {
       id: 10,
-      name: "Advance Digital Marketing Course",
-      href: "/all-courses/digital-marketing/advance-digital-marketing-course",
+      name: "Digital Marketing",
+      href: "/all-courses/digital-marketing",
     },
-    {
-      id: 11,
-      name: "Applied Digital Marketing",
-      href: "/all-courses/digital-marketing/applied-digital-marketing",
-    },
+    // {
+    //   id: 11,
+    //   name: "Applied Digital Marketing",
+    //   href: "/all-courses/digital-marketing/applied-digital-marketing",
+    // },
     {
       id: 2,
       name: "Project Management",
@@ -51,19 +51,19 @@ const teamSection = {
     },
     {
       id: 6,
-      name: "Basic Data Science",
-      href: "/all-courses/data-science/basic-data-science",
+      name: "Data Science",
+      href: "/all-courses/data-science",
     },
-    {
-      id: 7,
-      name: "Advance Data Science",
-      href: "/all-courses/data-science/advance-data-science",
-    },
-    {
-      id: 8,
-      name: "Applied Data Science",
-      href: "/all-courses/data-science/applied-data-science",
-    },
+    // {
+    //   id: 7,
+    //   name: "Advance Data Science",
+    //   href: "/all-courses/data-science/advance-data-science",
+    // },
+    // {
+    //   id: 8,
+    //   name: "Applied Data Science",
+    //   href: "/all-courses/data-science/applied-data-science",
+    // },
     {
       id: 11,
       name: "Design Thinking",
@@ -74,21 +74,21 @@ const teamSection = {
       name: "Artificial Intelligence",
       href: "/all-courses/artificial-intelligence",
     },
-    {
-      id: 13,
-      name: "aI introductory",
-      href: "/all-courses/artificial-intelligence/ai-introductory",
-    },
-    {
-      id: 14,
-      name: "AI Intermediary",
-      href: "/all-courses/artificial-intelligence/ai-intermediary",
-    },
-    {
-      id: 15,
-      name: "AI Advanced Applied",
-      href: "/all-courses/artificial-intelligence/ai-advanced-applied",
-    },
+    // {
+    //   id: 13,
+    //   name: "aI introductory",
+    //   href: "/all-courses/artificial-intelligence/ai-introductory",
+    // },
+    // {
+    //   id: 14,
+    //   name: "AI Intermediary",
+    //   href: "/all-courses/artificial-intelligence/ai-intermediary",
+    // },
+    // {
+    //   id: 15,
+    //   name: "AI Advanced Applied",
+    //   href: "/all-courses/artificial-intelligence/ai-advanced-applied",
+    // },
   ],
 };
 
