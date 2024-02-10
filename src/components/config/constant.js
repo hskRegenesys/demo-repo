@@ -10,6 +10,8 @@ export const southAfricaCountryId = 1;
 export const nigeriaCountryId = 3;
 export const kenyaCountryId = 4;
 export const ukCountryId = 5;
+export const ugCountryId = 6;
+export const tzCountryId = 7;
 export const programBaseUrl = "all-courses";
 export const leadSource = "DR Website";
 export const sourceCampaign = "DR Website";
@@ -49,4 +51,18 @@ export const USA = {
   name: "USA",
   code: "USD",
   currency: "$",
+};
+
+export const Uganda = {
+  id: 5,
+  name: "Uganda",
+  code: "UG",
+  currency: "UGX",
+};
+
+export const Tanzania = {
+  id: 5,
+  name: "Tanzania",
+  code: "TZ",
+  currency: "TSh",
 };
