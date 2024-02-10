@@ -20,7 +20,7 @@ import StickyBar from "@/components/StickyFooter/Sticky";
 import CareersTransformed from "@/components/NewComponents/careersTransformed/CareersTransformed";
 import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
 import RelatedCourses from "@/components/HomePageNew/All-Cources/Related Courses/RelatedCourses";
-import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
@@ -73,7 +73,7 @@ const Course = (props: any) => {
 
   return (
     <>
-      {isPopupVisible && (
+      {/* {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
       {isYoutubePopup && (
@@ -82,18 +82,18 @@ const Course = (props: any) => {
           youtubeVideoLink={youtubeVideoLink}
           onClose={handleYoutubePopupClose}
         />
-      )}
-      <Style />
+      )} */}
+      {/* <Style /> */}
       {/* <HeaderOne pageTitle={props?.course} />
        */}
 
-      <HeaderOne />
+      {/* <HeaderOne />
       <BreadcrumbsDR
         title={pageName}
         page={pageName}
         parent="All courses"
         parentHref="/all-courses"
-      />
+      /> */}
       {/* <BannerComponent
         page={router?.query?.course?.toString()}
         handleEnrollButtonClick={handleEnrollButtonClick}

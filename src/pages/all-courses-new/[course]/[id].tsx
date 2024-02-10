@@ -8,7 +8,7 @@ import { urlInfo } from "@/components/config/helper";
 import { programBaseUrl } from "@/components/config/constant";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
-import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import YoutubeVidioPopup from "@/components/NewComponents/YoutubeVidioPopup/YoutubeVidioPopup";
 import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
 import BannerWithVideo from "@/components/NewComponents/BannerWithVideo/BannerWithVideo";
@@ -168,11 +168,13 @@ const DigitalMarketing = (props: any) => {
 
   let MainCourseData: MainCoursesDynimicData | undefined;
 
-  if (page === "data-science-new") {
+  if (page === "digital-marketing-new") {
     MainCourseData = MainCoursesDynimicData.DataScience;
-  } else if (page === "digital-marketing-new") {
-    MainCourseData = MainCoursesDynimicData.DigitalMarketing;
   }
+
+  // else if (page === "data-science-new") {
+  //   MainCourseData = MainCoursesDynimicData.DigitalMarketing;
+  // }
 
   if (!MainCourseData) {
     return null;
@@ -221,8 +223,8 @@ const DigitalMarketing = (props: any) => {
       <SearchPopup />
       <BreadcrumbsDR
         title={router?.query?.course?.toString().replace("-", " ")}
-        parent="All courses"
-        parentHref="/all-courses"
+        parent="All-Courses-New"
+        parentHref="/all-courses-new"
         parentToParent={parentToParentName()}
         parentToParentHref={`/${programBaseUrl}/${urlInfo(
           parentToParentName()

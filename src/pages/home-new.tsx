@@ -14,7 +14,7 @@ import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import NewHomeData from "@/data/newHomeData";
 import _ from "lodash";
-import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
 import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
 import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";

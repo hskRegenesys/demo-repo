@@ -260,7 +260,7 @@ function RequestForm(props: any) {
             </div>
           </div>
           <div>
-            <div className="text-center">
+            {/* <div className="text-center">
               {(programmeOfInterest === "Digital Marketing" ||
                 programmeOfInterest === "Design Thinking") && (
                 <small className="text-black">
@@ -268,7 +268,7 @@ function RequestForm(props: any) {
                   course
                 </small>
               )}
-            </div>
+            </div> */}
           </div>
           <div className={Styles.buttenContainer}>
             <button

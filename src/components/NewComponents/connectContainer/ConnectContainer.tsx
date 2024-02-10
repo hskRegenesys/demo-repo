@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./connectContainer.module.css";
-import RequestForm from "../../HomePageNew/requestForm/RequestForm";
+import RequestForm from "../requestForm/RequestForm";
 import connectContainerData from "../../../data/newComponentData/commonComponentData/ConnnectContainerData";
 
 interface ConnectContainerProps {

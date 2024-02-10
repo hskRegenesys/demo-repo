@@ -43,8 +43,8 @@ const Course = (props: any) => {
       <PageBanner
         title={pageName}
         page={pageName}
-        parent="All courses new"
-        parentHref="/all-courses-new"
+        parent="All courses"
+        parentHref="/all-courses"
       />
       <CourseText page={router?.query?.course?.toString()} />
       <SubCourseDetails page={router?.query?.course?.toString()} />

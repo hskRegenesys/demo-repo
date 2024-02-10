@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import WhyChooseDR from "@/components/NewComponents/whychooseDR/WhyChooseDR";
 import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import NewHomeData from "@/data/newHomeData";
-import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import Faq from "@/components/NewComponents/faq/Faq";
 import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
