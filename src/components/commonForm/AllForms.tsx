@@ -83,10 +83,7 @@ export default function LandingForm(contactform: any) {
         item?.mode_id === 1 &&
         (url === "/all-courses/software-development-course"
           ? item?.id === 229
-          : item?.id !== 229) &&
-        (url === "/all-courses/full-stack-web-and-software-development"
-          ? item?.id === 230
-          : item?.id !== 230)
+          : item?.id !== 229)
     );
   }
   const {
@@ -100,6 +97,8 @@ export default function LandingForm(contactform: any) {
     watch,
   } = hookForm;
   const selectedCourse = watch("Programme_Of_Interest");
+
+  console.log("courses", courses);
   return (
     <>
       <div className="contact-section ">

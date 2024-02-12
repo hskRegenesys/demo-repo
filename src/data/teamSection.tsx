@@ -89,6 +89,11 @@ const teamSection = {
     //   name: "AI Advanced Applied",
     //   href: "/all-courses/artificial-intelligence/ai-advanced-applied",
     // },
+    {
+      id: 16,
+      name: "Full Stack Development",
+      href: "/all-courses/full-stack-development",
+    },
   ],
 };
 

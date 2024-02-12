@@ -15,6 +15,7 @@ const AllPageStickyData: IAllPageStickyDataType = {
   "project-management": " Upskill yourself with Digital Regenesy's Courses",
   "all-courses": " Upskill yourself with Digital Regenesy's Courses",
   "data-science": " Upskill yourself with Digital Regenesy's Courses",
+  "full-stack-development": " Upskill yourself with full-stack-development",
   "basic-data-science": " Upskill yourself with Digital Regenesy's Courses",
   "advanced-data-science": " Upskill yourself with Digital Regenesy's Courses",
   "applied-data-science": " Upskill yourself with Digital Regenesy's Courses",
