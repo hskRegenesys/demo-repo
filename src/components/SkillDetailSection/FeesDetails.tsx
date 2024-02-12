@@ -15,6 +15,8 @@ import {
   ukCountryId,
   kenyaCountryId,
   southAfricaCountryId,
+  ugCountryId,
+  tzCountryId,
 } from "../config/constant";
 import { allCourseList } from "@/data/courseData";
 import _ from "lodash";
@@ -26,6 +28,8 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
     flagind,
     flagus,
     flagken,
+    flagUg,
+    flagTZ,
     title,
     price,
     certifiedText1,
@@ -197,6 +201,28 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                                 priority={true}
                                 src={flagken}
                                 alt="Kenya"
+                                layout="intrinsic"
+                                width="100"
+                                height="69"
+                              />
+                            )}
+                            {item.country_id === ugCountryId && (
+                              // <Image src={flagken} alt="Kenya" />
+                              <Image
+                                priority={true}
+                                src={flagUg}
+                                alt="Uganda"
+                                layout="intrinsic"
+                                width="100"
+                                height="69"
+                              />
+                            )}
+                            {item.country_id === tzCountryId && (
+                              // <Image src={flagken} alt="Kenya" />
+                              <Image
+                                priority={true}
+                                src={flagTZ}
+                                alt="Tanzania"
                                 layout="intrinsic"
                                 width="100"
                                 height="69"

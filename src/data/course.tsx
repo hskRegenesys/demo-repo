@@ -780,9 +780,9 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+          "https://www.youtube.com/embed/t-tnGObE7zM?autoplay=1&loop=1&playlist=t-tnGObE7zM",
         title: "Certificate Course in Full Stack Web & Software Development",
-        text: "Elevate your skill set through our comprehensive Full Stack Web & Software Development course. Master the front-end and back-end technologies, including HTML, CSS, JavaScript, Python, and more. Gain hands-on experience in creating dynamic web applications and understand how to deploy them effectively. Enhance your coding abilities and boost your career prospects with our intensive Full Stack Web & Software Development course.",
+        text: "Elevate your skill set through our comprehensive Full Stack Web & Software Development course. Master the front-end and back-end technologies, including HTML, CSS, JavaScript and more. Gain hands-on experience in creating dynamic web applications and understand how to deploy them effectively. Enhance your coding abilities and boost your career prospects with our intensive Full Stack Web & Software Development course.",
         lists: [
           "40 Weeks Course ",
           " Live Sessions",
@@ -799,7 +799,7 @@ export const courseData = {
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1: "Get exposure to HTML, CSS, Linux and JavaScript.",
+      desc1: "Get exposure to HTML, CSS, JavaScript and MongoDB.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -822,6 +822,10 @@ export const courseData = {
       "sd/expressJs.svg",
       "sd/gitlabNew.svg",
       "sd/Node.js_logo.svg",
+      "sd/css.svg",
+      "sd/html.svg",
+      "sd/js.svg",
+      "sd/MongoDB_Logo.svg",
     ],
     courseCertificate: {
       certificateTitle:
@@ -834,13 +838,13 @@ Participate in hands-on projects to build practical skills and develop a strong 
 
       `,
       certificateListTitle:
-        "With our Full Stack Web & Software Development Certificate Course, you will gain: ",
+        "With our Full Stack Web & Software Development Certificate Course, you will gain:        ",
 
       certificateSkillList: [
-        "Version Control",
-        "Advanced JavaScript and testing.",
-        "Introduction to React",
-        "Interactive Websites and Accessibility",
+        "Proficiency in Front-End Development",
+        "Proficiency in Back-End Development",
+        "Advanced JavaScript Concepts and Testing Methodologies",
+        "Develop practical skills through hands-on project        ",
       ],
       certificateListPara:
         " Our Full Stack Web & Software Development Certificate Course will open doors to various roles for you, whether you are a fresher, a college student, a working professional or an Entrepreneur.        ",
@@ -852,27 +856,34 @@ Participate in hands-on projects to build practical skills and develop a strong 
         "Full-Stack Developer",
         " Software Engineers",
       ],
-      CertificateImage: ["SD_certificate.webp"],
-      imageName: "SD_certificate",
+      CertificateImage: ["FSD_certificate.webp"],
+      imageName: "FSD_certificate",
     },
 
     featureSeven: {
-      title: "Meet our faculty",
-      // desc: "Revolutionise your career with future-ready skills",
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
       features: [
         {
           id: 1,
-          image: "Dennis-Laxton.webp",
-          title: "Dr. Dennis Laxton ",
-          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
-          designation: "Academic Team Leader and Senior Lecturer",
+          image: "Samidha_Photo.webp",
+          title: "Samidha Kurle",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai. Samidha Kurle excels in Procedural Programming, Web design, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "James_forson.webp",
-          title: "James Forson",
-          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
-          designation: "BSocSc (Hons)",
+          image: "dr_nilay_profile.webp",
+          title: "Dr. Nilay Karade ",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, a Master's in Computer Application, and a B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 3,
+          image: "dr_shilpa_joshi.webp",
+          title: "Dr. Shilpa Joshi ",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          designation: "Senior Lecturer",
         },
       ],
     },
@@ -955,72 +966,64 @@ Participate in hands-on projects to build practical skills and develop a strong 
 
           {
             id: 9,
-            title: " Software Architecture",
+            title: " Databases",
             lists: [
-              "Architectural styles (e.g., MVC, Microservices) ",
-              "Design patterns for architecture",
+              "Basics of databases and their role.",
+              "Crafting sophisticated queries for MongoDB.",
+              "Designing databases for MongoDB.",
+              "Advanced MongoDB techniques for optimal performance.",
+              "Adding a MongoDB database to web applications.",
+              "API development using Swagger and OpenAPI.",
+              "Portfolio project: E-Commerce App (REST API).",
             ],
           },
+
           {
             id: 10,
-            title: " Database Management Systems: Database fundamentals",
-            lists: [" Relational databases", "NoSQL databases"],
+            title: " Connecting Front-End to Back-End",
+            lists: [
+              "Integrating front-end and back-end for full-stack applications",
+              "Deployment using Render.",
+            ],
           },
-          {
-            id: 11,
-            title: " SQL and Database Design",
-            lists: [" Query language basics", "Normalisation "],
-          },
+
+          // {
+          //   id: 11,
+          //   title: " Web Security",
+          //   lists: [
+          //     "Intermediate concepts in web security.",
+          //     "Prevention techniques for common threats",
+          //     "Data security using SSL/HTTPS, TLS, and Firewall Rules in Linux",
+          //     "Mitigating common web application attacks.",
+          //   ],
+          // },
+
           {
             id: 12,
-            title: " Software Development Tools and Environments",
+            title: " Web Security",
             lists: [
-              " Integrated Development Environments (IDEs)",
-              "Version Control Systems (e.g., Git)",
-              "Continuous Integration and Deployment (CI/CD)",
+              "Intermediate concepts in web security.",
+              "Prevention techniques for common threats",
+              "Data security using SSL/HTTPS, TLS, and Firewall Rules in Linux",
+              "Mitigating common web application attacks.",
             ],
           },
+
           {
             id: 13,
-            title: " Software Testing and Quality Assurance",
-            lists: [" Types of Testing", "Test Automation"],
+            title: " Operating Systems and DevOps",
+            lists: [
+              "Fundamentals of operating systems.",
+              "DevOps fundamentals - culture, practices, tools.",
+            ],
           },
+
           {
             id: 14,
-            title: " Test Automation",
+            title: " Full-Stack E-Commerce Experience",
             lists: [
-              " Automated testing tools",
-              "Test-driven development (TDD)",
-            ],
-          },
-          {
-            id: 15,
-            title:
-              " Project Management and Collaboration: Project Planning and Scheduling",
-            lists: [
-              " Gantt charts",
-              "Agile project management",
-              "System testing",
-              "User acceptance testing",
-            ],
-          },
-          {
-            id: 16,
-            title: " Project Management and Collaboration: Collaboration Tools",
-            lists: [
-              " Communication tools (e.g., Slack, Teams)",
-              "Project tracking tools (e.g., Jira)",
-              "System testing",
-              "User acceptance testing",
-            ],
-          },
-          {
-            id: 17,
-            title: " Emerging Technologies and Trends",
-            lists: [
-              " Cloud Computing",
-              "Artificial Intelligence and Machine Learning",
-              "DevOps practices.",
+              "Expanding E-Commerce REST API with a React client app",
+              "Creating a MERN (MongoDB, Express.js, React, Node.js) full-stack E-Commerce experience.",
             ],
           },
         ],
@@ -1033,50 +1036,112 @@ Participate in hands-on projects to build practical skills and develop a strong 
         faqs: [
           {
             id: 1,
-            title: "What is a Software Development course?            ",
-            text: "A Software Development course is a structured programme of study that provides individuals with the knowledge and skills to design, develop, test, and maintain software systems. It covers various topics, including programming languages, software development methodologies, and tools used in the field.",
+            title:
+              "Why Should I Pursue Full Stack Web & Software Development Course?",
+            text: `
+            The Full Stack Web & Software Development course is a comprehensive journey through modern web development's essential technologies and practices. Pursuing Full Stack Web & Software Development Course helps in:
+- Acquiring the necessary skills and knowledge to build and maintain web applications for clients.
+- Exploring the fundamentals and building a solid foundation in front-end and back-end technologies.
+- Upskill or reskill in full stack web development to advance your career or take on new challenges within your current organisation.
+
+            `,
           },
           {
             id: 2,
             title:
-              "What are the key topics covered in a Software Development course?",
-            text: "Topics typically include programming languages, software development life cycle, data structures and algorithms, software design and architecture, quality assurance, project management, and emerging technologies.            ",
+              "What to Expect from a Full Stack Web & Software Development Course?",
+            text: `
+            Pursuing Full Stack Web & Software Development Course delivers:
+- A comprehensive understanding of programming languages, databases, server management and version control. 
+- Increase proficiency in front-end and back-end technologies, making them versatile and in-demand in the job market. 
+
+            `,
           },
           {
             id: 3,
             title:
-              "How long does a Software Development course typically last?",
-            text: " The duration of a Software Development course is 22 weeks.",
+              "What are the outcomes of the Full Stack Web & Software Development Course?              ",
+            text: " Completing Full Stack Web & Software Development course equips students with the skills to build dynamic and responsive websites and applications.",
           },
           {
             id: 4,
-            title:
-              "What are the career prospects after completing a Software Development course?",
-            text: "Career prospects include roles such as software developer, full-stack developer, front-end developer, back-end developer, mobile app developer, DevOps engineer, data engineer, web developer, and more.",
+            title: "What is Full Stack Web & Software Development?",
+            text: "Full stack development refers to the comprehensive skill set of a developer proficient in both front-end and back-end technologies. Software development refers to computer science activities used to create, design, deploy, support and test software.            ",
           },
           {
             id: 5,
             title:
-              "How can a Software Development course benefit my career?            ",
-            text: "A Software Development course provides the skills and knowledge needed for a career in software development, opening doors to diverse and rewarding opportunities in the technology industry. It enhances problem-solving abilities and prepares individuals for roles in high-demand fields.",
+              "What is the significance of the Full Stack Web & Software Development course in today's digital landscape?              ",
+            text: "In today's dynamic digital landscape, full-stack development has expanded to encapsulate an entire website development process and its applications.            ",
           },
-          // {
-          //   id: 6,
-          //   title:
-          //     "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-          //   text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
-          // },
-          // {
-          //   id: 7,
-          //   title:
-          //     "How Will I Get Access To The Assignments And Learning Content?",
-          //   text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
-          // },
-          // {
-          //   id: 8,
-          //   title: "What If The Course Timings Don't Match My Work Timings?",
-          //   text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
-          // },
+          {
+            id: 6,
+            title:
+              "What are the Benefits of Enroling in a Digital Regenesys Full Stack Web & Software Development Course?",
+            text: "By enroling in a Digital Regenesys Full Stack Web & Software Development Course, participants gain practical knowledge and hands-on experience that can be directly applied to real-world scenarios. Additionally, completing a Full Stack Web & Software Development course can enhance career prospects and open doors to a wide range of job opportunities in the rapidly growing field of full stack web development and its applications.",
+          },
+          {
+            id: 7,
+            title:
+              "What are the crucial skills required for a Full Stack Web & Software Development career?",
+            text: "The broad skill set required for Full Stack Web & Software Development are HTML, JavaScript, Responsive Web Design, CSS Preprocessors, Web Performance Optimisation, Cascading Style Sheets, testing and Debugging, Problem-Solving, UI/UX Principles and more.            ",
+          },
+          {
+            id: 8,
+            title: "What is the role of full-stack development professionals?",
+            text: "Individuals who have completed a Full Stack Web & Software Development course are well-prepared to take on various roles in the tech industry, such as full stack web developer, software engineer, or systems analyst. These professionals can work independently or collaboratively in a team setting, ensuring the successful delivery of high-quality projects within set deadlines.",
+          },
+          {
+            id: 9,
+            title:
+              "Is Full Stack Web & Software Development a promising career?",
+            text: "Yes. Full Stack Web & Software Development presents a promising career opportunity due to its high demand in the tech industry. A full-stack developer is a jack-of-all-trades in web development, capable of bringing a project from concept to completion single-handedly.",
+          },
+          {
+            id: 10,
+            title:
+              "How does the Digital Regenesys Full Stack Web & Software Development certificate course contribute to compliance and regulatory knowledge?              ",
+            text: `
+            
+            The Digital Regenesys Full Stack Web & Software Development certificate course often includes compliance requirements and regulatory frameworks, helping individuals understand and adhere to industry-specific security standards. With the increasing number of website applications today, having a solid understanding of the entire web application development process is more important than ever. 
+Digital Regenesys Full Stack Web & Software Development certificate course delivers comprehensive training on integrating front-end and back-end components, deploying applications, and implementing security measures to protect against common threats.
+
+            `,
+          },
+
+          {
+            id: 11,
+            title:
+              "What will I learn in the Digital Regenesys Full Stack Web & Software Development certificate course?              ",
+            text: `
+            
+            The Digital Regenesys Full Stack Web & Software Development certificate course provides a comprehensive understanding of essential technologies and practices of modern web development. This course will teach you the key concepts, strategies, and techniques to create dynamic and responsive web applications.
+Along with the valuable knowledge, you will also earn a recognised certification that can boost your career prospects. 
+If you are passionate about starting your own full-stack web development business and want to tackle diverse challenges in Full Stack Web & Software Development. In that case, pursuing Digital Regenesys’s Full Stack Web & Software Development certification course is the best choice!
+
+
+            `,
+          },
+          {
+            id: 12,
+            title:
+              "Why pursue a Full Stack Web & Software Development certification course?",
+            text: `
+            
+            Pursuing a Full Stack Web & Software Development certification course can be a strategic and rewarding decision for several reasons, given the increasing importance of Full Stack Web & Software Development in today's dynamic digital landscape.
+          Full Stack Web & Software Development professionals are at the forefront of the web development process. Completing a Full Stack Web & Software Development course positions individuals to enter a field with ample job opportunities. 
+          Some top motivations to pursue a Full Stack Web & Software Development certification course are:
+
+          Open doors to new career opportunities and increase earning potential. 
+          Save time and money by learning all aspects of web development in one programme. 
+          Gain a competitive edge by completing a Full Stack Web & Software Development certification course.
+          Stay updated in the rapidly evolving technology field by mastering the full-stack web & software development process.
+          Enhance your skill set and job prospects with comprehensive training in both front-end and back-end technologies. 
+
+
+
+            `,
+          },
         ],
         defaultCurrent: 1,
       },
@@ -1108,9 +1173,9 @@ Participate in hands-on projects to build practical skills and develop a strong 
           image: "featured-image-14.jpg",
 
           lists: [
-            "100% Career counselling",
-            "Get yourself interview-ready with proper training, industry-expert interactions, and resume-building tools.            ",
-            "Elevate your LinkedIn game with a comprehensive profile-building session.",
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile-building session",
           ],
         },
         {
@@ -1152,20 +1217,22 @@ Participate in hands-on projects to build practical skills and develop a strong 
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
+      flagUg: "/assets/images/icons/flag_uganda.webp",
+      flagTZ: "/assets/images/icons/flag_Tanzania.webp",
       title: "Fee Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1:
-        "Earn a prestigious Software Development  Certificate online & boost your tech career!",
+        "Earn Your Full Stack Web & Software Development Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and code your future now! ",
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and climb the path of success towards your full-stack web development projects.        ",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements to your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the most significant online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.        ",
+        "Embrace a world of possibilities with the most prominent online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more. ",
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -8105,6 +8172,12 @@ export const brochureDetails: any = {
   //Cybersecurity
   CS: {
     name: "cybersecurity-complete-brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+
+  FSD: {
+    name: "Full_Stack_Development_Brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },

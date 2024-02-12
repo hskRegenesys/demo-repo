@@ -1044,6 +1044,10 @@ const createReWrites = () => {
     //   destination: "/all-courses/full-stack-web-and-software-development/230",
     // },
     {
+      source: "/all-courses/full-stack-development",
+      destination: "/all-courses/full-stack-development/230",
+    },
+    {
       source: "/all-courses/data-science",
       destination: "/all-courses/data-science/701",
     },
