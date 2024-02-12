@@ -110,6 +110,7 @@ const HeaderOne = ({
       "DT",
       "AI",
       "AIN",
+      "FSD",
     ];
     const coursesSubItem: any = [];
     course.forEach((courseCode) => {

@@ -472,9 +472,9 @@ export const allCourseList = [
   // },
   {
     id: 230,
-    name: "full stack development",
+    name: "Full Stack Development",
     code: "FSD",
-    description: "full stack development",
+    description: "Full Stack Development",
     parent_id: null,
     mode_id: 1,
     isAddon: false,
