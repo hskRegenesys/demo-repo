@@ -71,7 +71,7 @@ const AllCoursesNew = () => {
         />
         <StudentReview />
 
-        <Faq />
+        <Faq data={AllCoursesDynamicData.faqSections} />
         <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
       </Layout>
     </>

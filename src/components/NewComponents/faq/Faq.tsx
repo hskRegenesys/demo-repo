@@ -1,25 +1,21 @@
-// Faq.js
 import React, { useState } from "react";
 import Styles from "./faq.module.css";
-import faqDatas from "./faqData";
 
-type FAQDataItem = {
-  question: string;
-  answer: string;
-};
-
-type FAQData = {
-  [key: string]: FAQDataItem[] | string;
-};
-
-// Desktop Component
-const FaqDesktop: React.FC<{
-  faqData: FAQData;
-  arrowIcon: string;
+interface FAQData {
   HeadingDesktop: string;
-}> = ({ faqData, arrowIcon, HeadingDesktop }) => {
-  const [selectedHeading, setSelectedHeading] =
-    useState<keyof FAQData>("DigitalMarketing");
+  HeadingMobile: string;
+
+  sections: {
+    heading: string;
+    faqs: { question: string; answer: string }[];
+  }[];
+  arrowIcon: string;
+}
+
+const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
+  const [selectedHeading, setSelectedHeading] = useState<string | null>(
+    data.sections.length > 0 ? data.sections[0].heading : null
+  );
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
 
   const toggleAnswer = (index: number) => {
@@ -28,29 +24,32 @@ const FaqDesktop: React.FC<{
 
   return (
     <div className={Styles.faqDesktop}>
-      <h2 className={`${Styles.topcontent}`}>{HeadingDesktop}</h2>
+      <h2 className={`${Styles.topcontent}`}>{data.HeadingDesktop}</h2>
       <div className={Styles.faqSection}>
         <div className={Styles.section1}>
           <ul>
-            {Object.keys(faqData).map((heading) => (
+            {data.sections.map((section, index) => (
               <li
-                key={heading}
-                onClick={() => setSelectedHeading(heading as keyof FAQData)}
+                key={index}
+                onClick={() => setSelectedHeading(section.heading)}
                 className={`${Styles.heading} ${
-                  selectedHeading === heading ? Styles.selectedHeding : ""
+                  selectedHeading === section.heading
+                    ? Styles.selectedHeding
+                    : ""
                 }`}
               >
-                {heading}
+                {section.heading}
               </li>
             ))}
           </ul>
         </div>
         <div className={Styles.section2}>
-          <h2>{selectedHeading}</h2>
-          {Array.isArray(faqData[selectedHeading]) ? (
+          {selectedHeading && <h2>{selectedHeading}</h2>}
+          {selectedHeading && (
             <ul>
-              {(faqData[selectedHeading] as FAQDataItem[]).map(
-                (faq: FAQDataItem, index: number) => (
+              {data.sections
+                .find((section) => section.heading === selectedHeading)
+                ?.faqs.map((faq, index) => (
                   <li
                     key={index}
                     className={`${Styles.card} ${
@@ -67,7 +66,7 @@ const FaqDesktop: React.FC<{
                     >
                       <h3>{faq.question}</h3>
                       <img
-                        src={arrowIcon}
+                        src={data.arrowIcon}
                         alt="iconFaq"
                         className={`${Styles.arrowIcon} ${
                           selectedQuestion === index ? Styles.selectedarrow : ""
@@ -76,11 +75,8 @@ const FaqDesktop: React.FC<{
                     </div>
                     {selectedQuestion === index && <p>{faq.answer}</p>}
                   </li>
-                )
-              )}
+                ))}
             </ul>
-          ) : (
-            <p>{faqData[selectedHeading] as string}</p>
           )}
         </div>
       </div>
@@ -88,14 +84,7 @@ const FaqDesktop: React.FC<{
   );
 };
 
-// Mobile Component
-// ... (imports and other code)
-
-const FaqMobile: React.FC<{
-  faqData: FAQData;
-  arrowIcon: string;
-  HeadingMobile: string;
-}> = ({ faqData, arrowIcon, HeadingMobile }) => {
+const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
   const [openHeadingDropdown, setOpenHeadingDropdown] = useState<string | null>(
     null
@@ -118,75 +107,69 @@ const FaqMobile: React.FC<{
     // Close questions dropdown when clicking on a heading
     setOpenQuestionDropdown(null);
   };
-
   return (
     <div className={Styles.faqMobile}>
-      <h2 className={`${Styles.topcontentMobile}`}>{HeadingMobile}</h2>
+      <h2 className={`${Styles.topcontentMobile}`}>{data.HeadingMobile}</h2>
       <div className={Styles.faqSectionMobile}>
         <div className={Styles.section1Mobile}>
           <ul>
-            {Object.keys(faqData).map((heading) => (
+            {data.sections.map((section, index) => (
               <li
-                key={heading}
-                onClick={() => toggleDropdown(heading)}
+                key={index}
+                onClick={() => toggleDropdown(section.heading)}
                 className={`${Styles.headingMobile} ${
-                  openHeadingDropdown === heading
+                  openHeadingDropdown === section.heading
                     ? Styles.selectedHedingMobile
                     : ""
                 }`}
               >
                 <span
                   className={`${Styles.hedingMobileText} ${
-                    openHeadingDropdown === heading
+                    openHeadingDropdown === section.heading
                       ? Styles.hedingMobileTextSelected
                       : ""
                   }`}
                 >
-                  {heading}
+                  {section.heading}
                 </span>
                 <img
-                  src={arrowIcon}
+                  src={data.arrowIcon}
                   alt="iconFaq"
                   className={`${Styles.arrowIconMobileHeding} ${
-                    openHeadingDropdown === heading
+                    openHeadingDropdown === section.heading
                       ? Styles.selectedHedingIcon
                       : ""
                   }`}
                 />
-                {openHeadingDropdown === heading && (
+                {openHeadingDropdown === section.heading && (
                   <ul className={Styles.dropdownListMobile}>
-                    {Array.isArray(faqData[heading]) &&
-                      (faqData[heading] as FAQDataItem[]).map(
-                        (faq: FAQDataItem, index: number) => (
-                          <li
-                            key={index}
-                            className={`${Styles.dropdownItem} ${
+                    {section.faqs.map((faq, index) => (
+                      <li
+                        key={index}
+                        className={`${Styles.dropdownItem} ${
+                          selectedQuestion === index
+                            ? Styles.selectedQuestionMobile
+                            : ""
+                        }`}
+                        onClick={() => toggleAnswer(index, section.heading)}
+                      >
+                        <div className={Styles.questionContainerMobile}>
+                          <h3>{faq.question}</h3>
+                          <img
+                            src={data.arrowIcon}
+                            alt="iconFaq"
+                            className={`${Styles.arrowIconMobilequstion} ${
                               selectedQuestion === index
-                                ? Styles.selectedQuestionMobile
+                                ? Styles.selectedarrowMobilequstion
                                 : ""
                             }`}
-                            onClick={() => toggleAnswer(index, heading)}
-                          >
-                            <div className={Styles.questionContainerMobile}>
-                              <h3>{faq.question}</h3>
-                              <img
-                                src={arrowIcon}
-                                alt="iconFaq"
-                                className={`${Styles.arrowIconMobilequstion} ${
-                                  selectedQuestion === index
-                                    ? Styles.selectedarrowMobilequstion
-                                    : ""
-                                }`}
-                              />
-                            </div>
-                            {selectedQuestion === index && (
-                              <p className={Styles.answerMobile}>
-                                {faq.answer}
-                              </p>
-                            )}
-                          </li>
-                        )
-                      )}
+                          />
+                        </div>
+                        {selectedQuestion === index && (
+                          <p className={Styles.answerMobile}>{faq.answer}</p>
+                        )}
+                      </li>
+                    ))}
                   </ul>
                 )}
               </li>
@@ -198,41 +181,15 @@ const FaqMobile: React.FC<{
   );
 };
 
-// ... (other components and code)
-
 // Combined Component
-const Faq: React.FC = () => {
-  const {
-    DigitalMarketing,
-    DataScience,
-    ArtificialIntelligence,
-    ProjectManagement,
-    CyberSecurity,
-    arrowIcon,
-    HeadingMobile,
-    HeadingDesktop,
-  } = faqDatas;
-
-  const faqData: FAQData = {
-    DigitalMarketing,
-    DataScience,
-    ArtificialIntelligence,
-    ProjectManagement,
-    CyberSecurity,
-  };
-
+const Faq: React.FC<{ data: FAQData }> = ({ data }) => {
   return (
     <div className={Styles.faqContainer}>
-      <FaqDesktop
-        faqData={faqData}
-        arrowIcon={arrowIcon}
-        HeadingDesktop={HeadingDesktop}
-      />
-      <FaqMobile
-        faqData={faqData}
-        arrowIcon={arrowIcon}
-        HeadingMobile={HeadingMobile}
-      />
+      {/* Render the desktop FAQ component */}
+      <FaqDesktop data={data} />
+      <FaqMobile data={data} />
+
+      {/* Mobile FAQ component can be added here */}
     </div>
   );
 };

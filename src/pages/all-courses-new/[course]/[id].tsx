@@ -26,7 +26,7 @@ import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import Faq from "@/components/NewComponents/faq/Faq";
 
 // Define the type for the dynamic data
-type MainCoursesDynimicData = {
+interface MainCoursesDynimicData {
   BannerWithVideoData: {
     BannerImgDesktop: string;
     coursePageName: string;
@@ -38,8 +38,8 @@ type MainCoursesDynimicData = {
     vidoPlayIcon: string;
   };
   CourseBenefitsCardData: {
-    courcename: string;
-    Heding: string;
+    courcename: string; // Corrected property name
+    Heding: string; // Corrected property name
     Card: CardData[];
   };
   ExploreTheCoursesData: {
@@ -116,8 +116,26 @@ type MainCoursesDynimicData = {
     BlogSectionTitle: string;
     cards: CardDataBlog[];
   };
-  Faqsection: {};
-};
+  faqSections: {
+    // Adjusted property name
+    arrowIcon: string;
+    HeadingDesktop: string;
+    HeadingMobile: string;
+    sections: FaqSectionItem[];
+  };
+}
+
+// Define FaqSectionItem and FaqItem interfaces
+interface FaqSectionItem {
+  heading: string;
+  faqs: FaqItem[];
+}
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 interface CardDataBlog {
   blogImg: string;
   blogQuestion: string;
@@ -169,7 +187,7 @@ const DigitalMarketing = (props: any) => {
   let MainCourseData: MainCoursesDynimicData | undefined;
 
   if (page === "digital-marketing-new") {
-    MainCourseData = MainCoursesDynimicData.DataScience;
+    MainCourseData = MainCoursesDynimicData.DigitalMarketing;
   }
 
   // else if (page === "data-science-new") {
@@ -202,7 +220,7 @@ const DigitalMarketing = (props: any) => {
     ExploreTheCoursesData,
     CertificationDRData,
     BlogSectionData,
-    Faqsection,
+    faqSections,
   } = MainCourseData;
   return (
     <>
@@ -257,7 +275,7 @@ const DigitalMarketing = (props: any) => {
       />
 
       <BlogSection data={BlogSectionData} />
-      <Faq />
+      <Faq data={faqSections} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </>
   );
