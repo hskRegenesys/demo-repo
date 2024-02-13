@@ -71,7 +71,7 @@ class LeadService {
       console.log("salesforceParam", salesforceParam);
       salesforceParam.Programme_Of_Interest =
         this.salesforceProgramOfIngterest.get(params.Programme_Of_Interest);
-      console.log("salesforceParam", salesforceParam.Programme_Of_Interest);
+      // console.log("salesforceParam", salesforceParam.Programme_Of_Interest);
       salesforceParam.recordTypeId = this.drLeadRecordTypeId;
       salesforceParam.Lead_Source = leadSource;
       salesforceParam.Source_Campaign = sourceCampaign;
@@ -93,7 +93,7 @@ class LeadService {
       if (
         !(
           phoneNumber.startsWith("+234") ||
-          // phoneNumber.startsWith("+254") ||
+          phoneNumber.startsWith("+255") ||
           phoneNumber.startsWith("+256")
         )
       ) {
