@@ -93,7 +93,7 @@ class LeadService {
       if (
         !(
           phoneNumber.startsWith("+234") ||
-          // phoneNumber.startsWith("+254") ||
+          phoneNumber.startsWith("+255") ||
           phoneNumber.startsWith("+256")
         )
       ) {
