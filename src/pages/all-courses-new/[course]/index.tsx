@@ -73,55 +73,7 @@ const Course = (props: any) => {
 
   return (
     <>
-      {/* {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-      )}
-      {isYoutubePopup && (
-        <YoutubeVidioPopup
-          isVisibleVidio={isYoutubePopup}
-          youtubeVideoLink={youtubeVideoLink}
-          onClose={handleYoutubePopupClose}
-        />
-      )} */}
-      {/* <Style /> */}
-      {/* <HeaderOne pageTitle={props?.course} />
-       */}
-
-      {/* <HeaderOne />
-      <BreadcrumbsDR
-        title={pageName}
-        page={pageName}
-        parent="All courses"
-        parentHref="/all-courses"
-      /> */}
-      {/* <BannerComponent
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <CourseBenefitsCard
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <ExploreTheCourses
-        page={router?.query?.course?.toString()}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <CareersTransformed
-        handleEnrollButtonVidio={(videoLink) =>
-          YoutubePopupButtonClick(videoLink)
-        }
-      />
-      <CertificationDR
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        page={router?.query?.course?.toString()}
-      />
-      <RelatedCourses
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        page={router?.query?.course?.toString()}
-      />
-      <BlogSection />
-      <Faq />
-      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} /> */}
+      <h1>guna</h1>
     </>
   );
 };

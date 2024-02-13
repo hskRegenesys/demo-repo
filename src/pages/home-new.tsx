@@ -20,7 +20,7 @@ import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/Explo
 import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
-import OurLocation from "@/components/HomePageNew/OurLocation/OurLocation";
+import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
 import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
 
 const HomeNew = () => {

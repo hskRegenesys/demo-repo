@@ -84,7 +84,7 @@ const HomeDynamicData = {
         heading: "Heding 2",
         faqs: [
           {
-            question: "What is DataScience?",
+            question: "What is DataScience all?",
             answer:
               "Digital marketing involves promoting products or services using digital technologies.",
           },
