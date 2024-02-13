@@ -118,6 +118,7 @@ const AllCourseGallery = () => {
       "DT",
       "AI",
       "AIN",
+      "FSD",
     ];
 
     const result: any = [];
