@@ -15,7 +15,7 @@ import {
 } from "../../config/constant";
 
 import { allCourseList } from "@/data/courseData";
-import AllCourcesCardData from "@/data/newComponentData/commonComponentData/AllCourcesCardData";
+import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 
 interface Card {
   cardProgram: string;

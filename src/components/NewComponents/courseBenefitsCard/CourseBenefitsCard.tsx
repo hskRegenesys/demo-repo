@@ -1,5 +1,4 @@
 import React from "react";
-import CourseBenefitsCardData from "./CourseBenefitsCardData";
 import styles from "./CourseBenefitsCard.module.css";
 
 interface CardData {

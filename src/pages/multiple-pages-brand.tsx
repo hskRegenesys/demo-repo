@@ -34,7 +34,7 @@ import { programBaseUrl } from "@/components/config/constant";
 import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
 import { Style } from "@mui/icons-material";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
-import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/allCoursesSlider";
+import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
 
 const BrandHome = () => {
   const router = useRouter();
