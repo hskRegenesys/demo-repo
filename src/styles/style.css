@@ -11242,6 +11242,7 @@ featured-section .right-col .sec-title h2 {
   padding: 20px;
   text-align: left;
   background-color: #f5fdf8;
+  position: relative;
 }
 
 .mainMegaMenu h2 {
@@ -11256,7 +11257,24 @@ featured-section .right-col .sec-title h2 {
 .mobile-nav-new {
   padding-bottom: 20px;
 }
-
+.drop-down-1 {
+  position: relative;
+}
+.newAnimation {
+  padding: 0px !important;
+  border-radius: 4px !important;
+  background: linear-gradient(180deg, #008554 0%, #02bf79 100%);
+  color: #fff !important;
+  font-size: 10px !important;
+  width: 41px !important;
+  height: 17px;
+  position: absolute !important;
+  left: 203px;
+  top: 51px !important;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
 .new-log-in-butten {
   position: relative;
   display: inline-block;
@@ -12558,6 +12576,21 @@ featured-section .right-col .sec-title h2 {
   }
 }
 
+@media (max-width: 991px) {
+  .newAnimation {
+    padding: 1px 5px !important;
+    border-radius: 4px !important;
+    background: linear-gradient(180deg, #008554 0%, #02bf79 100%);
+    color: #fff !important;
+    font-size: 10px !important;
+    width: 30px !important;
+    height: auto;
+    position: absolute !important;
+    left: 200px;
+    top: 30px !important;
+    line-height: normal;
+  }
+}
 @media (min-width: 1200px) {
   .portfolio-details-info .row {
     margin-bottom: 60px;
@@ -19201,9 +19234,10 @@ h6.designation {
   margin-top: 11px;
   font-size: 13px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 767px) {
   .modal.show .modal-dialog {
-    min-width: 60%;
+    width: 100%;
+    max-width: 800px;
     top: 15%;
   }
 }
