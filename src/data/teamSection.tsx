@@ -40,9 +40,19 @@ const teamSection = {
     //   href: "/all-courses/digital-marketing/applied-digital-marketing",
     // },
     {
-      id: 2,
-      name: "Project Management",
-      href: "/all-courses/project-management",
+      id: 16,
+      name: "Full Stack Development",
+      href: "/all-courses/full-stack-development",
+    },
+    {
+      id: 6,
+      name: "Data Science",
+      href: "/all-courses/data-science",
+    },
+    {
+      id: 12,
+      name: "Artificial Intelligence",
+      href: "/all-courses/artificial-intelligence",
     },
     {
       id: 12,
@@ -50,10 +60,11 @@ const teamSection = {
       href: "/all-courses/cyber-security",
     },
     {
-      id: 6,
-      name: "Data Science",
-      href: "/all-courses/data-science",
+      id: 2,
+      name: "Project Management",
+      href: "/all-courses/project-management",
     },
+
     // {
     //   id: 7,
     //   name: "Advance Data Science",
@@ -69,11 +80,7 @@ const teamSection = {
     //   name: "Design Thinking",
     //   href: "/all-courses/design-thinking",
     // },
-    {
-      id: 12,
-      name: "Artificial Intelligence",
-      href: "/all-courses/artificial-intelligence",
-    },
+
     // {
     //   id: 13,
     //   name: "aI introductory",
@@ -89,11 +96,6 @@ const teamSection = {
     //   name: "AI Advanced Applied",
     //   href: "/all-courses/artificial-intelligence/ai-advanced-applied",
     // },
-    {
-      id: 16,
-      name: "Full Stack Development",
-      href: "/all-courses/full-stack-development",
-    },
   ],
 };
 

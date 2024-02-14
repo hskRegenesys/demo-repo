@@ -368,6 +368,9 @@ const NavItem = (props: any) => {
                                             maxWidth: "230px",
                                           }}
                                         >
+                                          <span className="newAnimation">
+                                            New
+                                          </span>
                                           <div>
                                             <span
                                               className="fa fa-circle"
@@ -376,6 +379,7 @@ const NavItem = (props: any) => {
                                                 paddingRight: "10px",
                                               }}
                                             ></span>
+
                                             <Link href={subNavItem.href}>
                                               {subNavItem.name}
                                             </Link>
@@ -568,7 +572,7 @@ const NavItem = (props: any) => {
                               fontSize: "14px",
                             }}
                           >
-                            Training Programmes{" "}
+                            Training Programmes
                             <span className="fa fa-angle-right"></span>
                           </div>
                         </li>
@@ -642,6 +646,7 @@ const NavItem = (props: any) => {
             <ul onMouseEnter={() => handleHover(subNavItems[0].name)}>
               {subNavItems.map((subItem: any) => (
                 <>
+                  {console.log("subItem", subItem)}
                   {subItem.name === "Blog Categories" ? (
                     <li
                       key={subItem.id}
@@ -694,17 +699,22 @@ const NavItem = (props: any) => {
                               }}
                             >
                               <a href={subItem.href}>
-                                {subItem.name}{" "}
-                                {subItem.isNew && <span>new</span>}
-                                {!!subItem.subItems?.length && (
-                                  <span
-                                    className={`fa ${
-                                      isIconActive
-                                        ? "fa-angle-up"
-                                        : "fa-angle-down"
-                                    }`}
-                                  ></span>
+                                {subItem.name}
+
+                                {subItem.name === "Full Stack Development" ? (
+                                  <span className="newAnimation">New</span>
+                                ) : (
+                                  !!subItem.subItems?.length && (
+                                    <span
+                                      className={`fa ${
+                                        isIconActive
+                                          ? "fa-angle-up"
+                                          : "fa-angle-down"
+                                      }`}
+                                    ></span>
+                                  )
                                 )}
+                                {/* {subItem.isNew && <span>new</span>} */}
                               </a>
 
                               <ul
