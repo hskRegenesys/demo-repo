@@ -100,17 +100,29 @@ const HeaderOne = ({
 
     //const course = ["DSCI", "DM", "PM", "CSC", "DTC", "AI"];
     const course = [
+      // "FSD",
+      // "DSN",
+      // "DSCI",
+      // "AIN",
+      // "CSC",
+      // "PM",
+      // "DM",
+      // "DMN",
+      // "DTC",
+      // "DT",
+      // "AI",
+
       "DSCI",
-      "PM",
+      "FSD",
       "DSN",
+      "AIN",
+      "CSC",
+      "PM",
       "DM",
       "DMN",
-      "CSC",
       "DTC",
       "DT",
       "AI",
-      "AIN",
-      "FSD",
     ];
     const coursesSubItem: any = [];
     course.forEach((courseCode) => {
