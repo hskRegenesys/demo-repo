@@ -1117,10 +1117,6 @@ const createReWrites = () => {
       source: "/all-courses/design-thinking",
       destination: "/all-courses/design-thinking/105",
     },
-    // {
-    //   source: "/all-courses-new/design-thinking-new",
-    //   destination: "/all-courses-new/design-thinking-new/1055",
-    // },
 
     {
       source: "/all-courses/cyber-security",
@@ -1138,10 +1134,26 @@ const createReWrites = () => {
       source: "/all-courses/artificial-intelligence/ai-advanced-applied",
       destination: "/all-courses/ai-advanced-applied/403",
     },
-    // {
-    //   source: '/:path*',
-    //   destination: '/404',
-    // },
+
+    // --------------------new pages---------------------
+    {
+      source: "/all-courses-new/digital-marketing-new",
+      destination: "/all-courses-new/digital-marketing-new/702",
+    },
+    // -------------------------multiple-pages---------------------------------
+    {
+      source: "/multiple-pages-brand",
+      destination: "/multiple-pages-brand",
+    },
+
+    {
+      source: "/digital-marketing-1",
+      destination: "/all-courses-multiple/digital-marketing-1",
+    },
+    {
+      source: "/:path*",
+      destination: "/404",
+    },
   ];
   return paths;
 };

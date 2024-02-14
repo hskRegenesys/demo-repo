@@ -1,23 +1,27 @@
 import React, { useState, useEffect } from "react";
 import HeaderOne from "@/components/Header/HeaderOne";
-import HomeSliderBanner from "@/components/HomePageNew/homeSliderBanner/HomeSliderBanner";
+import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import Layout from "@/components/Layout/Layout";
-import UspSection from "@/components/HomePageNew/uspSection/UspSection";
-import FeaturedCourses from "@/components/HomePageNew/featuredCourses/FeaturedCourses";
-import AboutUs from "@/components/HomePageNew/about/AboutUs";
-import AdmitsCompanies from "@/components/HomePageNew/admitsCompanies/AdmitsCompanies";
-import StudentReview from "@/components/HomePageNew/studentReview/StudentReview";
-import LearnersBenefit from "@/components/HomePageNew/learnersBenefit/LearnersBenefit";
-import ConnectContainer from "@/components/HomePageNew/connectContainer/ConnectContainer";
-import StudentYoutubeVideos from "@/components/HomePageNew/studentYoutubeVideos/StudentYoutubeVideos";
-import BlogSection from "@/components/HomePageNew/blogSection/BlogSection";
-import Faq from "@/components/HomePageNew/faq/Faq";
-import FooterDR from "@/components/HomePageNew/footerDR/FooterDR";
-import OurCourses from "@/components/HomePageNew/ourCourses/OurCourses";
+import UspSection from "@/components/NewComponents/uspSection/UspSection";
+import AboutUs from "@/components/NewComponents/about/AboutUs";
+import AdmitsCompanies from "@/components/NewComponents/admitsCompanies/AdmitsCompanies";
+import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
+import LearnersBenefit from "@/components/NewComponents/learnersBenefit/LearnersBenefit";
+import ConnectContainer from "@/components/NewComponents/connectContainer/ConnectContainer";
+import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
+import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
+import Faq from "@/components/NewComponents/faq/Faq";
+import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import NewHomeData from "@/data/newHomeData";
 import _ from "lodash";
-import PopupForm from "@/components/HomePageNew/popupForm/PopupForm";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
+import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
+import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
+import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
+import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
+import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
+import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -43,23 +47,32 @@ const HomeNew = () => {
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
-      <HeaderOne pageTitle="home" />
+      <HeaderOne />
+
+      {/* <HeaderOne pageTitle="home" /> */}
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
-      <FeaturedCourses handleEnrollButtonClick={handleEnrollButtonClick} />
+      <FeaturedCourses
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background:
+            "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
+        }}
+      />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+      <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
-      <OurCourses
-        data={NewHomeData}
+      {/* <OurCourses
+        data={NewOurCoursesData}
         handleEnrollButtonClick={handleEnrollButtonClick}
-      />
+      /> */}
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-      <BlogSection />
-      <Faq />
+      <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
+      <Faq data={HomeDynamicData.faqSections} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

@@ -1,0 +1,90 @@
+/* requestForm.module.css */
+
+.formContainer {
+  width: 100%;
+}
+
+.Title {
+  color: #2b3340;
+  font-feature-settings: "ss03" on, "liga" off;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.12px;
+  text-align: center;
+}
+
+.formContentInput {
+  margin: 20px 0px;
+}
+
+.inputLabelContainer {
+  /* Add styles for the input label container */
+  margin-bottom: 20px;
+}
+
+.inputForm {
+  /* Add styles for the common input field */
+  width: 100%;
+  padding: 12px 16px;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-border-dark, #ced1d9);
+  background: var(--primary-primary-white, #fff);
+  color: #858c9a;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.12px;
+  max-height: 46px;
+}
+
+.smallText {
+  font-size: 12px;
+  margin-left: 10px;
+  font-family: Montserrat;
+  color: #a51f1f;
+  font-weight: 100;
+}
+
+.formGroupPositionRelative {
+  position: relative;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.FormButton {
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #008554;
+  box-shadow: 0px 2px 8px -2px rgba(0, 187, 118, 0.5),
+    0px -2px 1px 0px rgba(55, 65, 81, 0.15) inset;
+}
+
+.FormButtonText {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+}
+.formFooterText {
+  font-size: 12px;
+  font-family: Montserrat;
+  color: #858c9a;
+  margin-top: 10px;
+}

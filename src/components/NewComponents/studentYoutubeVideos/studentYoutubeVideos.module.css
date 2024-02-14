@@ -1,0 +1,75 @@
+.container {
+  text-align: center;
+  margin: 64px 108px;
+}
+
+.title {
+  color: var(--yocket-com-ebony-clay, #2b3340);
+  font-family: Montserrat-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin-bottom: 56px;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 315px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.swiperStyle {
+  --swiper-pagination-color: #008554;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #008554;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 120px;
+}
+.swiperStyle {
+  --add-bottom: 50px;
+  padding-bottom: var(--add-bottom);
+  align-items: center;
+}
+.swiperStyle [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
+}
+.iframe {
+  width: 560px;
+  height: 315px;
+  border-radius: 20px;
+}
+
+/* Media Query for screens with a maximum width of 768 pixels */
+@media (max-width: 920px) {
+  .container {
+    margin: 44px 16px 60px 16px;
+  }
+  .title {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+  .videoContainer {
+    max-width: 328px;
+    margin: 0 auto;
+  }
+  .iframe {
+    width: 328px;
+    height: 352px;
+    border-radius: 12px;
+  }
+}
