@@ -1,19 +1,19 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-import AllCourcesCardData from "../AllCourcesCardData";
+import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 import Styles from "./featuredCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import useActive from "@/hooks/useActive";
 import _ from "lodash";
 import { useRouter } from "next/router";
-import { urlInfo } from "../../../config/helper";
+import { urlInfo } from "../../config/helper";
 
 import {
   artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
-} from "../../../config/constant";
+} from "../../config/constant";
 
 import { allCourseList } from "@/data/courseData";
 

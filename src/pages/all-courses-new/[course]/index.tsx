@@ -25,7 +25,7 @@ import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import CertificationDR from "@/components/NewComponents/certificationDR/CertificationDR";
-import BannerComponent from "@/components/HomePageNew/Banner/BannerwithImg/BannerwithImg";
+import BannerComponent from "@/components/NewComponents/BannerwithImg/BannerwithImg";
 import { Breadcrumbs } from "@mui/material";
 import CourseBenefitsCard from "@/components/NewComponents/courseBenefitsCard/CourseBenefitsCard";
 import YoutubeVidioPopup from "@/components/NewComponents/YoutubeVidioPopup/YoutubeVidioPopup";

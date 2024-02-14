@@ -1140,6 +1140,11 @@ const createReWrites = () => {
       source: "/all-courses-new/digital-marketing-new",
       destination: "/all-courses-new/digital-marketing-new/702",
     },
+    // -------------------------multiple-pages---------------------------------
+    {
+      source: "/multiple-pages-brand",
+      destination: "/multiple-pages-brand",
+    },
     {
       source: "/:path*",
       destination: "/404",

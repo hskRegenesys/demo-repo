@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./BannerwithImg.module.css";
-import BannerData from "../BannerData";
 
 interface Point {
   text: string;
 }
 
 interface BannerComponentProps {
-  page: string | undefined;
+  data: BannerCourseData; // This is missing in the original code
   handleEnrollButtonClick: () => void;
 }
 
@@ -21,43 +20,17 @@ type BannerCourseData = {
   BrochureIcon?: string;
 };
 
-interface BannerDataMap {
-  [key: string]: BannerCourseData;
-}
-
 const BannerComponent: React.FC<BannerComponentProps> = ({
-  page,
   handleEnrollButtonClick,
+  data,
 }) => {
-  if (!page) {
-    return null;
-  }
-
-  // Check specific properties first
-  let bannerAllData: BannerCourseData | undefined;
-
-  if (page === "data-science") {
-    bannerAllData = BannerData?.DataScience;
-  } else if (page === "digital-marketing") {
-    bannerAllData = BannerData?.digitalMarketing;
-  } else if (page === "artificial-intelligence") {
-    bannerAllData = BannerData?.artificialIntelligence;
-  }
-
-  // If specific properties not available, try the page directly
-
-  // If still not available, return null
-  if (!bannerAllData) {
-    return null;
-  }
-
   const {
     coursePageName,
     contentText,
     topSectionPoint1,
     topSectionPoint2,
     BrochureIcon,
-  } = bannerAllData;
+  } = data;
 
   return (
     <div className={styles.bannerSection}>
@@ -65,7 +38,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
         <div className={styles.imageSection}>
           <div className={styles.imageCard}>
             <img
-              src={bannerAllData.BannerImgDesktop}
+              src={data.BannerImgDesktop}
               alt={`Banner for ${coursePageName}`}
             />
           </div>
@@ -84,7 +57,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
               <div className={styles.brochureBtn}>
                 <img
                   className={styles.brochureIcon}
-                  src={BrochureIcon}
+                  src={BrochureIcon || ""}
                   alt="Brochure Icon"
                 />
                 Brochure

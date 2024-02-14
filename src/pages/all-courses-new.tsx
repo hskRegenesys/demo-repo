@@ -21,7 +21,7 @@ import AdmitsCompanies from "@/components/NewComponents/admitsCompanies/AdmitsCo
 import LearnersBenefit from "@/components/NewComponents/learnersBenefit/LearnersBenefit";
 import ConnectContainer from "@/components/NewComponents/connectContainer/ConnectContainer";
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
-import FeaturedCourses from "@/components/HomePageNew/All-Cources/featuredCourses/FeaturedCourses";
+import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 

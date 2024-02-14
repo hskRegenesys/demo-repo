@@ -14,7 +14,7 @@ import {
 } from "../../../config/constant";
 import { allCourseList } from "@/data/courseData";
 
-import AllCourcesCardData from "../AllCourcesCardData";
+import AllCourcesCardData from "../../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 
 interface RelatedCoursesProps {
   handleEnrollButtonClick: () => void;

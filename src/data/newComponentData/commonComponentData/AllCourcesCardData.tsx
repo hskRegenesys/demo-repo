@@ -13,6 +13,9 @@ const AllCourcesCardData = {
   RelatedCoursesHeding: "Discover Trend's Top Courses in Demand",
   RelatedCoursesTitle: "Related Courses",
 
+  allCoursesSliderHeading: "All Courses",
+  allCoursesSliderSubHeading: "Explore Our Courses",
+
   Courses: {
     DataScience: {
       parentCource: {

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+
 import HeaderOne from "@/components/Header/HeaderOne";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import Layout from "@/components/Layout/Layout";
@@ -22,9 +24,23 @@ import FeaturedCourses from "@/components/NewComponents/featuredCourses/Featured
 import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
 import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
+import ToolCoveredCard from "@/components/NewComponents/ToolsCovered/ToolsCovered";
+import BannerWithImg from "@/components/NewComponents/BannerwithImg/BannerwithImg";
+import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
+import { allCourseList } from "@/data/courseData";
+import BreadcrumbsDR from "@/components/NewComponents/breadcrumbsDR/breadcrumbsDR";
+import { urlInfo } from "@/components/config/helper";
+import { programBaseUrl } from "@/components/config/constant";
+import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
+import { Style } from "@mui/icons-material";
+import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
+import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/allCoursesSlider";
 
-const HomeNew = () => {
+const BrandHome = () => {
+  const router = useRouter();
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const courseId: any = router?.query?.id;
+  const allCourseList: any = []; // Dummy data, replace with actual course list
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -42,40 +58,74 @@ const HomeNew = () => {
     return () => clearTimeout(timeoutModal);
   }, []);
 
+  const filterData = _.find(
+    allCourseList,
+    (item: any) =>
+      item?.parent_id === null &&
+      item?.mode_id === 1 &&
+      item?.isAddon === false &&
+      item?.id === parseInt(courseId)
+  );
+
+  const parentToParentName = () => {
+    let result = "";
+    if (filterData?.name) {
+      result = filterData?.name;
+    }
+    return result;
+  };
+
   return (
     <Layout pageTitle="new-home">
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
+      <Style />
+
       <HeaderOne />
 
-      {/* <HeaderOne pageTitle="home" /> */}
       <MobileMenu />
-      <HomeSliderBanner onFormSubmit={() => {}} />
-      <UspSection />
+      <BreadcrumbsDR
+        title={router?.query?.course?.toString().replace("-", " ")}
+        // parent="All-Courses-New"
+        // parentHref="/all-courses-new"
+        parentToParent={parentToParentName()}
+        parentToParentHref={`/${programBaseUrl}/${urlInfo(
+          parentToParentName()
+        )}`}
+      />
+      <BannerWithImg
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        data={MultiplePagesBrandData.BannerWithImg}
+      />
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
-          background:
-            "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
+          background: "none",
+        }}
+      />
+      <AllCoursesSlider
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
         }}
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+      <ToolCoveredCard data={ToolsCoveredData} />
       <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
-      {/* <OurCourses
-        data={NewOurCoursesData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      /> */}
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-      <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
-      <Faq data={HomeDynamicData.faqSections} />
+      <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
+      <LearnersSupport
+        data={MultiplePagesBrandData.LearnersSupportSectionData}
+      />
+      <Faq data={MultiplePagesBrandData.faqSections} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );
 };
 
-export default HomeNew;
+export default BrandHome;
