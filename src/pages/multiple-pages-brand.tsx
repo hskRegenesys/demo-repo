@@ -35,6 +35,9 @@ import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsC
 import { Style } from "@mui/icons-material";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
 import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
+import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
+import PageBanner from "@/components/BannerSection/PageBanner";
+import TalentedComponent from "@/components/NewComponents/talentedComponent/TalentedComponent";
 
 const BrandHome = () => {
   const router = useRouter();
@@ -81,19 +84,9 @@ const BrandHome = () => {
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
       <Style />
-
       <HeaderOne />
-
       <MobileMenu />
-      <BreadcrumbsDR
-        title={router?.query?.course?.toString().replace("-", " ")}
-        // parent="All-Courses-New"
-        // parentHref="/all-courses-new"
-        parentToParent={parentToParentName()}
-        parentToParentHref={`/${programBaseUrl}/${urlInfo(
-          parentToParentName()
-        )}`}
-      />
+      <BreadcrumbsDR title="Brand-page" page="Multiple Pages Brand" />
       <BannerWithImg
         handleEnrollButtonClick={handleEnrollButtonClick}
         data={MultiplePagesBrandData.BannerWithImg}
@@ -112,6 +105,7 @@ const BrandHome = () => {
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
+      <TalentedComponent />
       <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
@@ -123,6 +117,7 @@ const BrandHome = () => {
         data={MultiplePagesBrandData.LearnersSupportSectionData}
       />
       <Faq data={MultiplePagesBrandData.faqSections} />
+      <ReadMoreDropDown data={MultiplePagesBrandData.ReadMoreBrandHome} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

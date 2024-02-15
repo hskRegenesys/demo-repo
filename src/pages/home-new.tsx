@@ -12,16 +12,13 @@ import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideo
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import NewHomeData from "@/data/newHomeData";
 import _ from "lodash";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
-import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
-import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
-import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
 import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
+import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -43,36 +40,43 @@ const HomeNew = () => {
   }, []);
 
   return (
-    <>
-      <Layout pageTitle="new-home">
-        {isPopupVisible && (
-          <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-        )}
-        <HeaderOne />
+    <Layout pageTitle="new-home">
+      {isPopupVisible && (
+        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+      )}
+      <HeaderOne />
 
-        <MobileMenu />
-        <HomeSliderBanner onFormSubmit={() => {}} />
-        <UspSection />
-        <FeaturedCourses
-          handleEnrollButtonClick={handleEnrollButtonClick}
-          style={{
-            background:
-              "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
-          }}
-        />
-        <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
-        <OurLocation />
-        <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
-        <StudentReview />
-
-        <LearnersBenefit />
-        <ConnectContainer onFormSubmit={() => {}} />
-        <StudentYoutubeVideos />
-        <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
-        <Faq data={HomeDynamicData.faqSections} />
-        <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-      </Layout>
-    </>
+      <MobileMenu />
+      <HomeSliderBanner onFormSubmit={() => {}} />
+      <UspSection />
+      <FeaturedCourses
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background:
+            "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
+        }}
+      />
+      <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+      <OurLocation />
+      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+      <StudentReview />
+      {/* <OurCourses
+        data={NewOurCoursesData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      /> */}
+      <AllCoursesSlider
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+      />
+      <LearnersBenefit />
+      <ConnectContainer onFormSubmit={() => {}} />
+      <StudentYoutubeVideos />
+      <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
+      <Faq data={HomeDynamicData.faqSections} />
+      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
+    </Layout>
   );
 };
 

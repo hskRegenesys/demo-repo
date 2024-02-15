@@ -38,11 +38,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
   style,
 }) => {
   const router = useRouter();
-
   const [isLoading, setIsLoading] = useState(true);
-  const [show, setShow] = useState(false);
-  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
-  const handleShow = () => setShow(true);
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
@@ -70,18 +66,9 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
     setIsLoading(false);
   }, [allCourseList]);
 
-  let CourseCard: any = [];
-
-  if (allCourseList?.length) {
-    allCourseList?.forEach(function (val: any) {
-      if (val.parent_id === null && val.isAddon == false && val.mode_id === 1) {
-        CourseCard.push(val);
-      }
-    });
-  }
-
   const listRef = useRef(null);
   const ref = useActive("#testimonials");
+
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
     return Math.round(
@@ -90,25 +77,18 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
     );
   }
 
-  let parentCourses: any = [];
+  const coursesToInclude = [
+    "DataScience",
+    "ProjectManagement",
+    "CyberSecurity",
+  ];
+  const filteredParentCourses = coursesToInclude
+    .map(
+      (courseName) =>
+        (AllCourcesCardData.Courses as any)[courseName]?.parentCource
+    )
+    .filter((course) => course); // filter out undefined values
 
-  if (AllCourcesCardData?.Courses) {
-    const coursesData = AllCourcesCardData.Courses as {
-      [key: string]: {
-        parentCource?: any;
-      };
-    };
-
-    // Loop through each category in Courses
-    Object.keys(coursesData).forEach((category) => {
-      const categoryData = coursesData[category];
-
-      // Check if the category has a parentCource
-      if (categoryData.parentCource) {
-        parentCourses.push(categoryData.parentCource);
-      }
-    });
-  }
   return (
     <div className={Styles.featuredCoursesContainer} style={style}>
       <h2 className={Styles.smallHeading}>
@@ -145,7 +125,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
             },
           }}
         >
-          {parentCourses.map((parentCourse: any, index: number) => (
+          {filteredParentCourses.map((parentCourse: any, index: number) => (
             <SwiperSlide key={index}>
               <div className={Styles.card}>
                 <div className={Styles.cardHeading}>

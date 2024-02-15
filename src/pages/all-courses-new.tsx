@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import WhyChooseDR from "@/components/NewComponents/whychooseDR/WhyChooseDR";
-import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
-import NewHomeData from "@/data/newHomeData";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import Faq from "@/components/NewComponents/faq/Faq";
@@ -10,20 +8,11 @@ import CertificationDR from "@/components/NewComponents/certificationDR/Certific
 import MobileMenu from "@/components/Header/MobileMenu";
 import HeaderOne from "@/components/Header/HeaderOne";
 import AllCoursesPageBanner from "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner";
-import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
-
 import _ from "lodash";
-import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import Layout from "@/components/Layout/Layout";
-import UspSection from "@/components/NewComponents/uspSection/UspSection";
-import AboutUs from "@/components/NewComponents/about/AboutUs";
-import AdmitsCompanies from "@/components/NewComponents/admitsCompanies/AdmitsCompanies";
-import LearnersBenefit from "@/components/NewComponents/learnersBenefit/LearnersBenefit";
-import ConnectContainer from "@/components/NewComponents/connectContainer/ConnectContainer";
-import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
-import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
+import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -44,37 +33,38 @@ const AllCoursesNew = () => {
     return () => clearTimeout(timeoutModal);
   }, []);
   return (
-    <>
-      <Layout>
-        {isPopupVisible && (
-          <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-        )}
-        <HeaderOne />
-        <MobileMenu />
-        <AllCoursesPageBanner
-          handleEnrollButtonClick={handleEnrollButtonClick}
-        />
-        <WhyChooseDR handleEnrollButtonClick={handleEnrollButtonClick} />
-        <FeaturedCourses
-          handleEnrollButtonClick={handleEnrollButtonClick}
-          style={{
-            background: "none",
-          }}
-        />
-        {/* <OurCourses
+    <Layout>
+      {isPopupVisible && (
+        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+      )}
+      <HeaderOne />
+      <MobileMenu />
+      <AllCoursesPageBanner handleEnrollButtonClick={handleEnrollButtonClick} />
+      <WhyChooseDR handleEnrollButtonClick={handleEnrollButtonClick} />
+      <FeaturedCourses
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+      />
+      <AllCoursesSlider
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+      />
+      {/* <OurCourses
           data={NewOurCoursesData}
           handleEnrollButtonClick={handleEnrollButtonClick}
         /> */}
-        <CertificationDR
-          data={AllCoursesDynamicData.CertificationDRData}
-          handleEnrollButtonClick={handleEnrollButtonClick}
-        />
-        <StudentReview />
-
-        <Faq data={AllCoursesDynamicData.faqSections} />
-        <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-      </Layout>
-    </>
+      <CertificationDR
+        data={AllCoursesDynamicData.CertificationDRData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <StudentReview />
+      <Faq data={AllCoursesDynamicData.faqSections} />
+      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
+    </Layout>
   );
 };
 
