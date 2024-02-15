@@ -35,11 +35,16 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/programsnew",
-      destination: "/all-courses-new",
+      source: "/all-courses-new",
+      destination: "/404",
       permanent: true,
     },
 
+    {
+      source: "/multiple-pages-brand",
+      destination: "/404",
+      permanent: true,
+    },
     {
       source: "/programs/data-science/basic-data-science",
       destination: "/all-courses/data-science/basic-data-science",
@@ -877,8 +882,8 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/new-home",
-      destination: "/home-new",
+      source: "/home-new",
+      destination: "/404",
       permanent: true,
     },
 
@@ -1140,21 +1145,16 @@ const createReWrites = () => {
     },
 
     // --------------------new pages---------------------
-    {
-      source: "/all-courses-new/digital-marketing-new",
-      destination: "/all-courses-new/digital-marketing-new/702",
-    },
-    // -------------------------multiple-pages-brand---------------------------------
-    {
-      source: "/multiple-pages-brand",
-      destination: "/multiple-pages-brand",
-    },
+    // {
+    //   source: "/all-courses-new/digital-marketing-new",
+    //   destination: "/all-courses-new/digital-marketing-new/702",
+    // },
     // -------------------------multiple-pages-course---------------------------------
 
-    {
-      source: "/digital-marketing-1",
-      destination: "/all-courses-multiple/digital-marketing-1",
-    },
+    // {
+    //   source: "/digital-marketing-1",
+    //   destination: "/all-courses-multiple/digital-marketing-1",
+    // },
     {
       source: "/:path*",
       destination: "/404",
