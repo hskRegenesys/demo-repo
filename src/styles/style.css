@@ -11257,6 +11257,7 @@ featured-section .right-col .sec-title h2 {
 }
 .mainMegaMenu li {
   margin-bottom: 15px;
+  position: relative;
 }
 
 .mobile-nav-new {
@@ -11267,18 +11268,18 @@ featured-section .right-col .sec-title h2 {
 }
 .newAnimation {
   padding: 0px !important;
-  border-radius: 4px !important;
-  background: linear-gradient(180deg, #008554 0%, #02bf79 100%);
-  color: #fff !important;
-  font-size: 10px !important;
-  width: 41px !important;
-  height: 17px;
-  position: absolute !important;
-  left: 203px;
-  top: 51px !important;
-  font-style: italic;
-  font-weight: 700;
-  line-height: normal;
+    border-radius: 4px !important;
+    background: linear-gradient(180deg, #008554 0%, #02bf79 100%);
+    color: #fff !important;
+    font-size: 10px !important;
+    width: 41px !important;
+    height: 16px;
+    position: absolute !important;
+    left: 172px;
+    top: -10px !important;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
 }
 .new-log-in-butten {
   position: relative;

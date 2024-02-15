@@ -701,7 +701,9 @@ const NavItem = (props: any) => {
                               <a href={subItem.href}>
                                 {subItem.name}
 
-                                {subItem.name === "Full Stack Development" ? (
+                                {subItem.name === "Full Stack Development" ||
+                                subItem.name ===
+                                  "Data and Business Analytics" ? (
                                   <span className="newAnimation">New</span>
                                 ) : (
                                   !!subItem.subItems?.length && (

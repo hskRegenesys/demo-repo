@@ -44,7 +44,7 @@ const ApplyNow = (props: any) => {
         item?.mode_id === 1 &&
         (url === "/all-courses/software-development-course"
           ? item?.id === 229
-          : item?.id !== 229) 
+          : item?.id !== 229)
     );
   }
   const {

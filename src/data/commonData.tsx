@@ -36,6 +36,8 @@ const Data = {
         "Software Development  Online Course | Digital Regenesys",
       "full-stack-development":
         "Full Stack Web & Software Development Course | Digital Regenesys",
+      "data-and-business-analytics":
+        "Data and Business Analytics No-Code Course | Digital Regenesys",
       "design-thinking": "Design Thinking Course Online | Digital Regnesys",
       "data-science":
         "Data Science: Data Science Course Online | Digital Regenesys",
@@ -122,6 +124,8 @@ const Data = {
         "All academic and accredited Courses are subject to academic rules, regulations and applicable domestic legislation as published and revised from time-to-time.",
       search: "Search - DR Website",
       register: "Register",
+      "data-and-business-analytics":
+        "data and business analytics, data and business analytics no-code course, data science in business analytics, data science in business analytics no code course, data science, business analytics, no code course, digital Regenesys",
       login: "Login",
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
@@ -265,7 +269,8 @@ Software Development  subjects,
 
       allCourse:
         "Unlock your career potential with our professional courses. Expert instruction and flexible learning options to help you achieve your goals. Enroll now!",
-
+      "data-and-business-analytics":
+        "Data and Business Analytics No-Code Course: Unlock the power of data with Digital Regenesys. Dive into Data Science in Business Analytics without coding. Enrol Now!        ",
       contact:
         "Contact Digital Regenesys at info.digital@regenesys.net for all enqueries relating to our online courses such as Cybersecurity and Digital Marketing. Enquire now.",
       privacyPolicy:
@@ -360,6 +365,7 @@ Software Development  subjects,
         "/all-courses/artificial-intelligence/ai-advanced-applied",
       "software-development": "software-development-course",
       "full-stack-development": "full-stack-development",
+      "data-and-business-analytics": "data-and-business-analytics",
     },
   },
 };
