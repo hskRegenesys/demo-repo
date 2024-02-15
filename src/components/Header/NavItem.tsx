@@ -368,9 +368,18 @@ const NavItem = (props: any) => {
                                             maxWidth: "230px",
                                           }}
                                         >
-                                          <span className="newAnimation">
+                                          {/* <span className="newAnimation blink-soft">
                                             New
-                                          </span>
+                                          </span> */}
+
+                                          {subNavItem.name ===
+                                            "Full Stack Development" ||
+                                          subNavItem.name ===
+                                            "Data and Business Analytics" ? (
+                                            <span className="newAnimation blink-soft">
+                                              New
+                                            </span>
+                                          ) : null}
                                           <div>
                                             <span
                                               className="fa fa-circle"
@@ -646,7 +655,6 @@ const NavItem = (props: any) => {
             <ul onMouseEnter={() => handleHover(subNavItems[0].name)}>
               {subNavItems.map((subItem: any) => (
                 <>
-                  {console.log("subItem", subItem)}
                   {subItem.name === "Blog Categories" ? (
                     <li
                       key={subItem.id}
@@ -704,7 +712,9 @@ const NavItem = (props: any) => {
                                 {subItem.name === "Full Stack Development" ||
                                 subItem.name ===
                                   "Data and Business Analytics" ? (
-                                  <span className="newAnimation">New</span>
+                                  <span className="newAnimation blink-soft">
+                                    New
+                                  </span>
                                 ) : (
                                   !!subItem.subItems?.length && (
                                     <span

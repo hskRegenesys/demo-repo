@@ -11225,17 +11225,19 @@ featured-section .right-col .sec-title h2 {
 }
 .mainMegaMenu {
   display: flex;
-  position: absolute;
-  left: -74px;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
-  justify-content: space-evenly;
-  grid-gap: 50px;
-  gap: 50px;
-  background-color: #f5fdf8;
-  padding: 7% 5%;
-  transform: translate(-50%, 0px);
+    position: absolute;
+    left: -74px;
+    top: 0px;
+    width: 100vw;
+    height: 480px;
+    justify-content: space-evenly;
+    grid-gap: 50px;
+    grid-gap: 50px;
+    gap: 50px;
+    background-color: #f5fdf8;
+    padding: 7% 5%;
+    transform: translate(-50%, 0px);
+    border-bottom: 1px solid #ddd;
 }
 .mainMegaMenu a {
   color: #697386 !important;
@@ -11266,6 +11268,8 @@ featured-section .right-col .sec-title h2 {
 .drop-down-1 {
   position: relative;
 }
+
+
 .newAnimation {
   padding: 0px !important;
     border-radius: 4px !important;
@@ -11280,6 +11284,14 @@ featured-section .right-col .sec-title h2 {
     font-style: italic;
     font-weight: 700;
     line-height: normal;
+}
+.blink-soft {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 .new-log-in-butten {
   position: relative;
@@ -11344,6 +11356,7 @@ featured-section .right-col .sec-title h2 {
   gap: 12px;
   font-size: 12px;
   align-self: stretch;
+  position: relative;
 }
 .drop-down-subNavItem:hover {
   color: #008554;
@@ -12592,8 +12605,8 @@ featured-section .right-col .sec-title h2 {
     width: 30px !important;
     height: auto;
     position: absolute !important;
-    left: 200px;
-    top: 30px !important;
+    left: 209px;
+    top: 0px !important;
     line-height: normal;
   }
 }
