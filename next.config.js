@@ -34,11 +34,11 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    // {
-    //   source: "/programsnew",
-    //   destination: "/all-courses-new",
-    //   permanent: true,
-    // },
+    {
+      source: "/programsnew",
+      destination: "/all-courses-new",
+      permanent: true,
+    },
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -1140,11 +1140,12 @@ const createReWrites = () => {
       source: "/all-courses-new/digital-marketing-new",
       destination: "/all-courses-new/digital-marketing-new/702",
     },
-    // -------------------------multiple-pages---------------------------------
+    // -------------------------multiple-pages-brand---------------------------------
     {
       source: "/multiple-pages-brand",
       destination: "/multiple-pages-brand",
     },
+    // -------------------------multiple-pages-course---------------------------------
 
     {
       source: "/digital-marketing-1",

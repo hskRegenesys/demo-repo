@@ -24,6 +24,8 @@ import { urlInfo } from "@/components/config/helper";
 import { programBaseUrl } from "@/components/config/constant";
 import { Constants } from "src/schemas/data";
 import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
+import DataSeparatorPages from "src/pages/DataSeparatorPages/DataSeparatorPages";
+import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
 
 interface MainCoursesDynimicData {
   BannerWithVideoData: {
@@ -183,15 +185,7 @@ const Course = (props: any) => {
 
   const page = router?.query?.course?.toString();
 
-  let MainCourseData: MainCoursesDynimicData | undefined;
-
-  if (page === "digital-marketing-1") {
-    MainCourseData = MainCoursesDynimicData.DigitalMarketing;
-  }
-
-  // else if (page === "data-science-new") {
-  //   MainCourseData = MainCoursesDynimicData.DigitalMarketing;
-  // }
+  const MainCourseData = DataSeparatorPages(page);
 
   if (!MainCourseData) {
     return null;
@@ -220,6 +214,7 @@ const Course = (props: any) => {
     CertificationDRData,
     BlogSectionData,
     faqSections,
+    multiplePagesDatas,
   } = MainCourseData;
   return (
     <>
@@ -275,6 +270,7 @@ const Course = (props: any) => {
 
       <BlogSection data={BlogSectionData} />
       <Faq data={faqSections} />
+      <ReadMoreDropDown data={multiplePagesDatas} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </>
   );
