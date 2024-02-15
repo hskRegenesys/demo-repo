@@ -373,9 +373,7 @@ const NavItem = (props: any) => {
                                           </span> */}
 
                                           {subNavItem.name ===
-                                            "Full Stack Development" ||
-                                          subNavItem.name ===
-                                            "Data and Business Analytics" ? (
+                                          "Full Stack Development" ? (
                                             <span className="newAnimation blink-soft">
                                               New
                                             </span>
@@ -709,9 +707,7 @@ const NavItem = (props: any) => {
                               <a href={subItem.href}>
                                 {subItem.name}
 
-                                {subItem.name === "Full Stack Development" ||
-                                subItem.name ===
-                                  "Data and Business Analytics" ? (
+                                {subItem.name === "Full Stack Development" ? (
                                   <span className="newAnimation blink-soft">
                                     New
                                   </span>

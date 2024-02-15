@@ -43,38 +43,36 @@ const HomeNew = () => {
   }, []);
 
   return (
-    <Layout pageTitle="new-home">
-      {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
-      )}
-      <HeaderOne />
+    <>
+      <Layout pageTitle="new-home">
+        {isPopupVisible && (
+          <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+        )}
+        <HeaderOne />
 
-      {/* <HeaderOne pageTitle="home" /> */}
-      <MobileMenu />
-      <HomeSliderBanner onFormSubmit={() => {}} />
-      <UspSection />
-      <FeaturedCourses
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        style={{
-          background:
-            "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
-        }}
-      />
-      <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
-      <OurLocation />
-      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
-      <StudentReview />
-      {/* <OurCourses
-        data={NewOurCoursesData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      /> */}
-      <LearnersBenefit />
-      <ConnectContainer onFormSubmit={() => {}} />
-      <StudentYoutubeVideos />
-      <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
-      <Faq data={HomeDynamicData.faqSections} />
-      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
-    </Layout>
+        <MobileMenu />
+        <HomeSliderBanner onFormSubmit={() => {}} />
+        <UspSection />
+        <FeaturedCourses
+          handleEnrollButtonClick={handleEnrollButtonClick}
+          style={{
+            background:
+              "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
+          }}
+        />
+        <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+        <OurLocation />
+        <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+        <StudentReview />
+
+        <LearnersBenefit />
+        <ConnectContainer onFormSubmit={() => {}} />
+        <StudentYoutubeVideos />
+        <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
+        <Faq data={HomeDynamicData.faqSections} />
+        <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
+      </Layout>
+    </>
   );
 };
 
