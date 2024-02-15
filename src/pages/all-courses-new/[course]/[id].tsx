@@ -24,6 +24,7 @@ import CertificationDR from "@/components/NewComponents/certificationDR/Certific
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import Faq from "@/components/NewComponents/faq/Faq";
+import DataSeparatorPages from "src/pages/DataSeparatorPages/DataSeparatorPages";
 
 // Define the type for the dynamic data
 interface MainCoursesDynimicData {
@@ -184,15 +185,7 @@ const DigitalMarketing = (props: any) => {
 
   const page = router?.query?.course?.toString();
 
-  let MainCourseData: MainCoursesDynimicData | undefined;
-
-  if (page === "digital-marketing-new") {
-    MainCourseData = MainCoursesDynimicData.DigitalMarketing;
-  }
-
-  // else if (page === "data-science-new") {
-  //   MainCourseData = MainCoursesDynimicData.DigitalMarketing;
-  // }
+  const MainCourseData = DataSeparatorPages(page);
 
   if (!MainCourseData) {
     return null;
