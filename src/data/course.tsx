@@ -377,6 +377,326 @@ export const courseData = {
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
+  DBA: {
+    processOne: [
+      {
+        id: 1,
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+        title: `Certification Programme in Data and Business Analytics- "No Code Course"`,
+        text: `
+        A Data and Business Analytics course is a “NO Code Course” typically designed to teach learners how to leverage data to make informed business decisions without coding knowledge. These courses are designed to provide individuals with the skills and knowledge needed to analyse large datasets, extract meaningful insights, and apply those insights to support business strategies. A Data and Business Analytics - "No Code course can empower individuals with valuable skills, contribute to organisational success, and position participants as assets in the competitive job market.
+        `,
+        lists: [
+          "19 Week Course",
+          "Live Sessions",
+          "Career Counselling",
+          "Guaranteed Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Revolutionise your career with future-ready skills",
+      text1:
+        "Maximising Business Success with Data and Business Analytics. Learn how to leverage data to make informed business decisions without coding knowledge.        ",
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1: `
+      Get exposure to Power BI, Rows.AI, ChatGPT, Predictive Analytics, Prescriptive Analytics, and MIS.
+
+      `,
+
+      subTitle2: "Best-in-class instructors",
+      desc2: `
+        Learn from the best-in-class instructors who will help you with every concept from scratch
+        `,
+
+      subTitle3: "Live sessions",
+      desc3: `
+        Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.
+        `,
+
+      subTitle4: "Tools usage",
+      desc4: `
+      Gain a broad spectrum of knowledge on how to use the tools.
+      `,
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    courseTools: [
+      "pm/project-management-tools1.webp",
+      "pm/project-management-tools2.webp",
+      "pm/project-management-tools3.webp",
+      "pm/project-management-tools4.webp",
+    ],
+    courseCertificate: {
+      certificateTitle:
+        "Leading with Excellence: Data and Business Analytics Certificate Course",
+      certificateSubTitle:
+        "Earn a Data and Business Analytics Certificate from Digital Regenesys & Navigate the  Business Analytics Landscape. No coding knowledge is required.        ",
+      certificateSubSubTitle:
+        "With our Data and Business Analytics Certificate, you will gain a solid foundation in essential data analysis and interpretation skills for strategic decision-making. This No Code” course covers data visualisation, predictive analytics, and business intelligence tools. Participants will learn to effectively gather,  analyse, and present data to drive business growth and innovation.        ",
+      certificateListTitle:
+        "With the Data and Business Analytics Certificate, you will get:",
+
+      certificateSkillList: [
+        "Data Analytics",
+        "Statistical Analysis",
+        "Predictive Analytics",
+        "Prescriptive Analytics",
+      ],
+      certificateListPara:
+        " Our Data and Business Analytics “No Code” course can open up various career opportunities across various industries. Here are some prominent career opportunities available to individuals who have completed a Data and Business Analytics course:",
+      certificateRolesList: [
+        "Data Analyst",
+        "Reporting Analyst",
+        "Business Analyst ",
+        "Data Visualisation Specialist",
+      ],
+      CertificateImage: ["DBA_certificate.webp"],
+      imageName: "PM_certificate",
+    },
+
+    featureSeven: {
+      title: "Meet our staff",
+      desc: "Revolutionise your career with future-ready skills",
+      features: [
+        {
+          id: 1,
+          image: "Dennis-Laxton.webp",
+          title: "Dr. Dennis Laxton ",
+          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
+          designation: "Academic Team Leader and Senior Lecturer",
+        },
+        {
+          id: 2,
+          image: "James_forson.webp",
+          title: "James Forson",
+          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
+          designation: "BSocSc (Hons)",
+        },
+      ],
+    },
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Level 1: Foundations of Data Science in Business Analytics",
+            lists: [
+              "Introduction to Data Science",
+              "Foundations of Business Analytics",
+              "Report Building With No-code Tool",
+              "Analysing Trends and Patterns",
+              "PowerBI Basics",
+            ],
+          },
+
+          {
+            id: 2,
+            title: "Level 2: Advanced Data Science in Business Analytics",
+            lists: [
+              "Data Visualisation with Story Boarding",
+              "Advanced PowerBI Features",
+              "Advanced-Data Analysis",
+              "Predictive Analytics",
+              "Prescriptive Analytics",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    faqsSection: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "Who should take this Data and Business Analytics Course?",
+            text: "This Data and Business Analytics Course is ideal for professionals seeking to enhance their analytical skills, including marketers, business analysts, and data scientists. Become a Data Scientist or Business Analyst with coding knowledge!",
+          },
+          {
+            id: 2,
+            title:
+              "What is the total duration of this Data and Business Analytics?",
+            text: `The total duration of the Data and Business Analytics "No Code Course" is 76 hours or 19 weeks.`,
+          },
+          {
+            id: 3,
+            title: "Why Pursue a Data and Business Analytics Course?",
+            text: `Data and business analytics are crucial in today's corporate landscape. Understanding and leveraging data insights can give companies a competitive edge and drive informed decision-making. Data and Business Analytics "No Code Course" can be pursued by individuals without coding knowledge.`,
+          },
+          {
+            id: 4,
+            title: "What is the Role of Business Analytics?",
+            text: `
+            Business analytics involves statistical analysis and predictive modelling to gain insights from data. Businesses can extract valuable information from large datasets through advanced analytics tools to improve decision-making processes. By harnessing the power of business analytics, companies can uncover hidden patterns, correlations, and trends that can drive strategic decision-making
+            `,
+          },
+          {
+            id: 5,
+            title: "What is a Data and Business Analytics Course?",
+            text: `
+            Data and Business Analytics "No Code Course" involve analysing data to derive insights to drive business decisions. By utilising various statistical techniques and predictive modelling, organisations can uncover trends, patterns, and correlations within their data to optimise their strategies and operations. This process enables businesses to make informed decisions and gain a competitive edge in today's data-driven market landscape.
+            `,
+          },
+          {
+            id: 6,
+            title:
+              "Why Choose Digital Regenesys's Data and Business Analytics Course?",
+            text: `
+            Digital Regenesys's Data and Business Analytics "No Code Course" stands out for its comprehensive curriculum covering advanced analytical techniques and tools like Power BI, Rows.AI, ChatGPT and MIS. This course offers hands-on experience with real-world datasets taught by industry experts, providing practical skills that are highly sought after in today's data-driven business landscape
+            `,
+          },
+          {
+            id: 7,
+            title:
+              "What Career Opportunities are available with the Data and Business Analytics Course?",
+            text: "Professionals with data and business analytics expertise are in high demand across various industries. Pursuing this course can open new career opportunities or enhance existing career paths. Some prominent career opportunities include Data Analyst, Business Analyst, Reporting Analyst, Data Visualisation specialist, MIS Analyst (Management Information Systems) and more.",
+          },
+          {
+            id: 8,
+            title: `How does Data and Business Analytics "No Code Course" help in career Advancement?`,
+            text: "Acquiring data analytics skills can lead to career advancement. Professionals with expertise in this field are often considered for leadership roles and are sought after in various industries.",
+          },
+          {
+            id: 9,
+            title: `Is Data and Business Analytics "No Code Course" a promising career?`,
+            text: `A Data and Business Analytics "No Code Course" can open up various career opportunities across various industries. As organisations increasingly rely on data to make informed decisions, professionals with data and business analytics expertise are in high demand.`,
+          },
+          {
+            id: 10,
+            title: `What are the outcomes of the Digital Regenesys Data and Business Analytics "No Code" certification?`,
+            text: `By enroling in this Digital Regenesys Data and Business Analytics "No Code" certification course, individuals can expect to gain a competitive edge in the job market and accelerate their career growth in the field of data analytics. Become a Data Analyst or Business Analyst with No coding knowledge required!`,
+          },
+          {
+            id: 11,
+            title:
+              "Is Coding required for the Data and Business Analytics course?",
+            text: " No. Coding knowledge is optional for pursuing this course as it is a Data and Business Analytics - No Coding course. Thus, no coding knowledge is required.",
+          },
+          {
+            id: 12,
+            title:
+              "What factors do you consider when choosing a Data and Business Analytics certification course?",
+            text: " Choosing the right data and business analytics course can significantly impact your career trajectory. Remember to consider the course's curriculum relevance, the institution's credibility, flexibility, and networking opportunities. By focusing on these key aspects, you'll be well-equipped to select a course that enhances your existing skills and opens doors to new career opportunities. Improving your education is a step towards future-proofing your career in this rapidly evolving field.",
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview ready with proper training, industry expert interactions, resume building tools",
+            "Elevate your LinkedIn game with a comprehensive profile building session",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures",
+            "Ask questions, get answers and complete support from the faculty",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system",
+            "Receive proper guidance as per your special requirements from our faculties",
+            "Access the recorded lectures in case you miss a session",
+          ],
+        },
+
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
+            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Talk, share, connect, learn and grow along with other students in your batch",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Data and Business Analytics certificate",
+      certifiedText1:
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform and climb the path of success towards your Data Analyst or Business Analyst career.        ",
+      certifiedTitle2: "Share Your Achievement",
+
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.        ",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    modalImage: "Pop-up_bg.webp",
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+    stickyText:
+      "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
   // SE: {
   //   processOne: [
   //     {
@@ -8165,6 +8485,11 @@ export const brochureDetails: any = {
   //Project Management
   PM: {
     name: "project-management-brochure.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  DBA: {
+    name: "DBA_Brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
