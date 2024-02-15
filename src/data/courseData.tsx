@@ -406,7 +406,7 @@ export const allCourseList = [
     parent_id: null,
     mode_id: 1,
     isAddon: false,
-    durationInWeeks: 10,
+    durationInWeeks: 19,
     parentCourse: null,
     courseMode: { id: 1, name: "Live", description: "Live" },
     batches: [
@@ -439,15 +439,15 @@ export const allCourseList = [
       },
     ],
     coursePrices: [
-      // {
-      //   id: 137,
-      //   course_id: 28,
-      //   country_id: 2,
-      //   price: 61989,
-      //   valid_from: "2022-12-09T06:58:52.504Z",
-      //   valid_to: "2022-12-09T06:58:52.504Z",
-      //   country: India,
-      // },
+      {
+        id: 137,
+        course_id: 28,
+        country_id: 2,
+        price: 142998,
+        valid_from: "2022-12-09T06:58:52.504Z",
+        valid_to: "2022-12-09T06:58:52.504Z",
+        country: India,
+      },
       {
         id: 164,
         course_id: 28,
@@ -458,15 +458,15 @@ export const allCourseList = [
         country: SA,
       },
 
-      // {
-      //   id: 236,
-      //   course_id: 28,
-      //   country_id: 5,
-      //   price: 649,
-      //   valid_from: "2022-12-09T06:58:52.504Z",
-      //   valid_to: "2022-12-09T06:58:52.504Z",
-      //   country: USA,
-      // },
+      {
+        id: 236,
+        course_id: 28,
+        country_id: 5,
+        price: 1418,
+        valid_from: "2022-12-09T06:58:52.504Z",
+        valid_to: "2022-12-09T06:58:52.504Z",
+        country: USA,
+      },
       // {
       //   id: 191,
       //   course_id: 28,
