@@ -92,6 +92,17 @@
   color: var(--Light-Text-Green, #008554);
 }
 
+.pointInside {
+  color: var(--Light-Text-Green, #020202);
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  margin-left: 5px;
+  letter-spacing: 0.12px;
+}
+
 .courseHeading {
   color: var(--Light-Text-Primary, #2b3340);
   font-feature-settings: "ss03" on, "liga" off;
@@ -171,7 +182,9 @@
 
 @media screen and (max-width: 900px) {
   /* Adjust the max-width value based on your design needs */
-
+  .pointInside {
+    font-size: 10px;
+  }
   .bannerContainer {
     flex-direction: column;
     margin: 0px 20px;
