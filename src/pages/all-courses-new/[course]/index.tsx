@@ -73,7 +73,7 @@ const Course = (props: any) => {
 
   return (
     <>
-      <h1>guna</h1>
+      <h1></h1>
     </>
   );
 };
