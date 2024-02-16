@@ -34,17 +34,23 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
+    // {
+    //   source: "/all-courses-new",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
     {
-      source: "/all-courses-new",
-      destination: "/404",
+      source: "/programsnew",
+      destination: "/all-courses-new",
       permanent: true,
     },
+    // {
+    //   source: "/multiple-pages-brand",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
+    // {
 
-    {
-      source: "/multiple-pages-brand",
-      destination: "/404",
-      permanent: true,
-    },
     {
       source: "/programs/data-science/basic-data-science",
       destination: "/all-courses/data-science/basic-data-science",
@@ -882,30 +888,31 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/home-new",
-      destination: "/404",
+      source: "/new-home",
+      destination: "/home-new",
       permanent: true,
     },
-    {
-      source: "/all-courses-new/design-thinking-new",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-new/digital-marketing-new",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-new/digital-marketing-1",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-new/digital-marketing-1",
-      destination: "/404",
-      permanent: true,
-    },
+
+    // {
+    //   source: "/all-courses-new/design-thinking-new",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-new/digital-marketing-new",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-new/digital-marketing-1",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-new/digital-marketing-1",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
 
     //redirections from altaf end
     {
@@ -1165,16 +1172,20 @@ const createReWrites = () => {
     },
 
     // --------------------new pages---------------------
-    // {
-    //   source: "/all-courses-new/digital-marketing-new",
-    //   destination: "/all-courses-new/digital-marketing-new/702",
-    // },
+    {
+      source: "/all-courses-new/digital-marketing-new",
+      destination: "/all-courses-new/digital-marketing-new/702",
+    },
     // -------------------------multiple-pages-course---------------------------------
 
-    // {
-    //   source: "/digital-marketing-1",
-    //   destination: "/all-courses-multiple/digital-marketing-1",
-    // },
+    {
+      source: "/multiple-pages-brand",
+      destination: "/multiple-pages-brand",
+    },
+    {
+      source: "/digital-marketing-1",
+      destination: "/all-courses-multiple/digital-marketing-1",
+    },
     // {
     //   source: "/:path*",
     //   destination: "/404",
