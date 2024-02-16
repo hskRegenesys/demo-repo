@@ -71,11 +71,7 @@ const Course = (props: any) => {
     setIsisYoutubePopup(false);
   };
 
-  return (
-    <>
-      <h1></h1>
-    </>
-  );
+  return <></>;
 };
 export async function getServerSideProps(context: any) {
   const { id, course } = context.query;
