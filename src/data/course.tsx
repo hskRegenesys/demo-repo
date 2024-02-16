@@ -383,13 +383,13 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
-        title: `Certification Programme in Data and Business Analytics- "No Code Course"`,
+          "https://www.youtube.com/embed/NG1wmJ0Dic4?autoplay=1&loop=1&playlist=NG1wmJ0Dic4",
+        title: `Certification Programme in Data and Business Analytics- No Code Course`,
         text: `
-        A Data and Business Analytics course is a “NO Code Course” typically designed to teach learners how to leverage data to make informed business decisions without coding knowledge. These courses are designed to provide individuals with the skills and knowledge needed to analyse large datasets, extract meaningful insights, and apply those insights to support business strategies. A Data and Business Analytics - "No Code course can empower individuals with valuable skills, contribute to organisational success, and position participants as assets in the competitive job market.
+        A Data and Business Analytics course is a No Code Course typically designed to teach learners how to leverage data to make informed business decisions without coding knowledge. These courses are designed to provide individuals with the skills and knowledge needed to analyse large datasets, extract meaningful insights, and apply those insights to support business strategies. A Data and Business Analytics - No Code course can empower individuals with valuable skills, contribute to organisational success, and position participants as assets in the competitive job market.
         `,
         lists: [
-          "19 Week Course",
+          "19 weeks Course",
           "Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
@@ -429,10 +429,11 @@ export const courseData = {
       bg4: "/assets/images/background/reason-bg4-1.webp",
     },
     courseTools: [
-      "pm/project-management-tools1.webp",
-      "pm/project-management-tools2.webp",
-      "pm/project-management-tools3.webp",
-      "pm/project-management-tools4.webp",
+      "DBA/DSA_power-bi.png",
+      "DBA/DSA_chatGpt.png",
+      "DBA/DSA_predictive.png",
+      "DBA/DSA_rows-ai.png",
+      "DBA/DSA_mis.png",
     ],
     courseCertificate: {
       certificateTitle:
@@ -468,17 +469,24 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "Dennis-Laxton.webp",
-          title: "Dr. Dennis Laxton ",
-          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
-          designation: "Academic Team Leader and Senior Lecturer",
+          image: "Samidha_Photo.webp",
+          title: "Samidha Kurle",
+          text: "Samidha Kurle has over 10 years of teaching experience. She has worked as an assistant professor at Atharva College of Engineering, Mumbai. Samidha Kurle excels in Procedural Programming, Web design, Database Design, etc. She is currently pursuing her Ph.D. in Computer Engineering.",
+          designation: "Senior Lecturer",
         },
         {
           id: 2,
-          image: "James_forson.webp",
-          title: "James Forson",
-          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
-          designation: "BSocSc (Hons)",
+          image: "dr_nilay_profile.webp",
+          title: "Dr. Nilay Karade ",
+          text: "Dr. Nilay Karade has over 11 years of experience in Machine Learning. He holds a Ph.D. in Computer Science, a Master's in Computer Application, and a B.Sc. in Computer Science, Math, and Physics from RTM Nagpur University.",
+          designation: "Senior Lecturer",
+        },
+        {
+          id: 3,
+          image: "dr_shilpa_joshi.webp",
+          title: "Dr. Shilpa Joshi ",
+          text: "A highly regarded scholar, facilitator, and the Head of Academics, Dr. Shilpa has done achieved great milestones in her teaching career of over two decades. She has trained and taught more than 2000 students who are now placed in several different global MNCs and are recognised as leaders in the corporate world.",
+          designation: "Senior Lecturer",
         },
       ],
     },
@@ -536,12 +544,12 @@ export const courseData = {
             id: 2,
             title:
               "What is the total duration of this Data and Business Analytics?",
-            text: `The total duration of the Data and Business Analytics "No Code Course" is 76 hours or 19 weeks.`,
+            text: `The total duration of the Data and Business Analytics No Code Course is 76 hours or 19 weeks.`,
           },
           {
             id: 3,
             title: "Why Pursue a Data and Business Analytics Course?",
-            text: `Data and business analytics are crucial in today's corporate landscape. Understanding and leveraging data insights can give companies a competitive edge and drive informed decision-making. Data and Business Analytics "No Code Course" can be pursued by individuals without coding knowledge.`,
+            text: `Data and business analytics are crucial in today's corporate landscape. Understanding and leveraging data insights can give companies a competitive edge and drive informed decision-making. Data and Business Analytics No Code Course can be pursued by individuals without coding knowledge.`,
           },
           {
             id: 4,
@@ -554,7 +562,7 @@ export const courseData = {
             id: 5,
             title: "What is a Data and Business Analytics Course?",
             text: `
-            Data and Business Analytics "No Code Course" involve analysing data to derive insights to drive business decisions. By utilising various statistical techniques and predictive modelling, organisations can uncover trends, patterns, and correlations within their data to optimise their strategies and operations. This process enables businesses to make informed decisions and gain a competitive edge in today's data-driven market landscape.
+            Data and Business Analytics No Code Course involve analysing data to derive insights to drive business decisions. By utilising various statistical techniques and predictive modelling, organisations can uncover trends, patterns, and correlations within their data to optimise their strategies and operations. This process enables businesses to make informed decisions and gain a competitive edge in today's data-driven market landscape.
             `,
           },
           {
@@ -562,7 +570,7 @@ export const courseData = {
             title:
               "Why Choose Digital Regenesys's Data and Business Analytics Course?",
             text: `
-            Digital Regenesys's Data and Business Analytics "No Code Course" stands out for its comprehensive curriculum covering advanced analytical techniques and tools like Power BI, Rows.AI, ChatGPT and MIS. This course offers hands-on experience with real-world datasets taught by industry experts, providing practical skills that are highly sought after in today's data-driven business landscape
+            Digital Regenesys's Data and Business Analytics No Code Course stands out for its comprehensive curriculum covering advanced analytical techniques and tools like Power BI, Rows.AI, ChatGPT and MIS. This course offers hands-on experience with real-world datasets taught by industry experts, providing practical skills that are highly sought after in today's data-driven business landscape
             `,
           },
           {
@@ -573,13 +581,13 @@ export const courseData = {
           },
           {
             id: 8,
-            title: `How does Data and Business Analytics "No Code Course" help in career Advancement?`,
+            title: `How does Data and Business Analytics No Code Course help in career Advancement?`,
             text: "Acquiring data analytics skills can lead to career advancement. Professionals with expertise in this field are often considered for leadership roles and are sought after in various industries.",
           },
           {
             id: 9,
-            title: `Is Data and Business Analytics "No Code Course" a promising career?`,
-            text: `A Data and Business Analytics "No Code Course" can open up various career opportunities across various industries. As organisations increasingly rely on data to make informed decisions, professionals with data and business analytics expertise are in high demand.`,
+            title: `Is Data and Business Analytics No Code Course a promising career?`,
+            text: `A Data and Business Analytics No Code Course can open up various career opportunities across various industries. As organisations increasingly rely on data to make informed decisions, professionals with data and business analytics expertise are in high demand.`,
           },
           {
             id: 10,
