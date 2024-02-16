@@ -46,11 +46,14 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
         <div className={styles.contentSection}>
           <div className={styles.card}>
             <div className={styles.topSection}>
-              <span className={styles.point1}>{topSectionPoint1}</span>
-              <span className={styles.point2}>{topSectionPoint2}</span>
+              {/* <span className={styles.point1}>{topSectionPoint1}</span> */}
+              <span className={styles.point2}>
+                {topSectionPoint1}{" "}
+                <span className={styles.pointInside}>{topSectionPoint2}</span>
+              </span>
             </div>
             <h2 className={styles.courseHeading}>
-              Certification Programme in <span>{coursePageName}</span>
+              Your Gateway to Success Starts with <span>{coursePageName}</span>
             </h2>
             <p className={styles.contentText}>{contentText}</p>
             <div className={styles.buttonsContainer}>

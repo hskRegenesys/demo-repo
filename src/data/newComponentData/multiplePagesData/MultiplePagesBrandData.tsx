@@ -1,10 +1,9 @@
 const MultiplePagesBrandData = {
   BannerWithImg: {
-    BannerImgDesktop:
-      "/assets/images/HomeNew/BannersImg/DigitalMarketingCourceBanner.png",
-    coursePageName: "DataScience",
-    topSectionPoint1: "BESTSELLER",
-    topSectionPoint2: "Live Sessions by Industry Experts",
+    BannerImgDesktop: "/assets/images/HomeNew/BannersImg/Brand-Banner.png",
+    coursePageName: "Digital Regenesys! ",
+    topSectionPoint1: "Supercharge Your Career with ",
+    topSectionPoint2: "Digital Regenesys",
     contentText:
       "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
     youtubeVideoLink:
@@ -16,19 +15,19 @@ const MultiplePagesBrandData = {
     LsHeding: "Talk to our experts. We’re available 24/7",
     cards: [
       {
-        LsImg: "/assets/images/HomeNew/blog.png",
+        LsImg: "/assets/images/HomeNew/LearnersSupport-1.png",
         LsQuestion: "Discuss with a career advisor",
         LsText: "Not sure? Talk to an expert",
         ButtenText: "Talk Now",
       },
       {
-        LsImg: "/assets/images/HomeNew/blog.png",
+        LsImg: "/assets/images/HomeNew/LearnersSupport-2.png",
         LsQuestion: "Download Brochure",
         LsText: "Get Complete Details",
         ButtenText: "Download",
       },
       {
-        LsImg: "/assets/images/HomeNew/blog.png",
+        LsImg: "/assets/images/HomeNew/LearnersSupport-3.png",
         LsQuestion: "Eligibility",
         LsText: "Know Your Eligibility",
         ButtenText: " Check Eligibility",
@@ -82,8 +81,18 @@ const MultiplePagesBrandData = {
     HeadingMobile: "FAQ",
     sections: [
       {
-        heading: "Heding 1",
+        heading: "DataScience",
         faqs: [
+          {
+            question: "What is DataScience?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
           {
             question: "What is DataScience?",
             answer:
@@ -107,10 +116,10 @@ const MultiplePagesBrandData = {
         ],
       },
       {
-        heading: "Heding 2",
+        heading: "ProjectManagement",
         faqs: [
           {
-            question: "What is DataScience?",
+            question: "What is ProjectManagement?",
             answer:
               "Digital marketing involves promoting products or services using digital technologies.",
           },
@@ -132,10 +141,10 @@ const MultiplePagesBrandData = {
         ],
       },
       {
-        heading: "Heding 3",
+        heading: "Digital Marketing",
         faqs: [
           {
-            question: "What is DataScience?",
+            question: "What is Digital Marketing?",
             answer:
               "Digital marketing involves promoting products or services using digital technologies.",
           },
@@ -157,10 +166,110 @@ const MultiplePagesBrandData = {
         ],
       },
       {
-        heading: "Heding 4",
+        heading: "CyberSecurity",
         faqs: [
           {
+            question: "What is CyberSecurity?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+          {
             question: "What is DataScience?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+        ],
+      },
+      {
+        heading: "ArtificialIntelligence",
+        faqs: [
+          {
+            question: "What is ArtificialIntelligence?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+          {
+            question: "What is DataScience?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+        ],
+      },
+      {
+        heading: "FullStackDevelopment",
+        faqs: [
+          {
+            question: "What is FullStackDevelopment?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+          {
+            question: "What is DataScience?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+        ],
+      },
+      {
+        heading: "DesignThinking",
+        faqs: [
+          {
+            question: "What is CyberSecurity?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+          {
+            question: "What is DataScience?",
+            answer:
+              "Digital marketing involves promoting products or services using digital technologies.",
+          },
+          {
+            question: "How important is social media in DataScience?",
+            answer:
+              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+          },
+        ],
+      },
+      {
+        heading: "DataAndBusinessAnalytics",
+        faqs: [
+          {
+            question: "What is CyberSecurity?",
             answer:
               "Digital marketing involves promoting products or services using digital technologies.",
           },
