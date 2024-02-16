@@ -384,7 +384,7 @@ export const courseData = {
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
           "https://www.youtube.com/embed/NG1wmJ0Dic4?autoplay=1&loop=1&playlist=NG1wmJ0Dic4",
-        title: `Certification Programme in Data and Business Analytics- No Code Course`,
+        title: `Certification Course in Data and Business Analytics- No Code`,
         text: `
         A Data and Business Analytics course is a No Code Course typically designed to teach learners how to leverage data to make informed business decisions without coding knowledge. These courses are designed to provide individuals with the skills and knowledge needed to analyse large datasets, extract meaningful insights, and apply those insights to support business strategies. A Data and Business Analytics - No Code course can empower individuals with valuable skills, contribute to organisational success, and position participants as assets in the competitive job market.
         `,
@@ -1889,7 +1889,7 @@ If you are passionate about starting your own full-stack web development busines
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.        ",
       termsConditions: "*Terms & Conditions",
-      CsFundamentals: "",
+      CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
@@ -4620,7 +4620,7 @@ If you are passionate about starting your own full-stack web development busines
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
-      CsFundamentals: "",
+      CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besj7mp/",
@@ -8479,7 +8479,7 @@ If you are passionate about starting your own full-stack web development busines
       admissionText:
         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
-      CsFundamentals: "Cybersecurity Fundamentals",
+      CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
     },
     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/bxz53nd/",
