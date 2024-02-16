@@ -13,6 +13,7 @@ class LeadService {
     ["Design Thinking", "Design Thinking"],
     ["Artificial Intelligence", "Artificial Intelligence"],
     ["Full Stack Development", "Full Stack Development"],
+    ["Data and Business Analytics", "Data and Business Analytics"],
   ]);
 
   drLeadRecordTypeId = "0127Q000000NDbXQAW";

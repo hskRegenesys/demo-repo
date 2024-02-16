@@ -1,0 +1,206 @@
+/* learnersBenefit.module.css */
+
+.LearnersBenefitContainer {
+  text-align: center;
+  margin-top: 100px;
+  /* Add additional styling for the container if needed */
+}
+
+.TopSection {
+  text-align: center;
+  /* Adjust the top margin as needed */
+}
+
+.heding {
+  color: #008554;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.12px;
+}
+
+.title {
+  color: #2b3340;
+  font-family: Montserrat-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+}
+
+.CardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.Card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 980px;
+  border-radius: 20px;
+  border: 1px solid #008554;
+  background-color: #fff;
+  margin: 20px auto; /* Adjust the margin as needed */
+}
+
+.LeftSide {
+  position: relative;
+  padding: 20px 117px 20px 90px;
+  border-top-right-radius: 110px;
+  border-bottom-right-radius: 110px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #ecfaef;
+  box-shadow: 0px 2px 4px 0px rgba(3, 120, 71, 0.15) inset;
+}
+
+.CardImg {
+  width: 184px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Add additional styling for the image if needed */
+}
+
+.RightSide {
+  padding: 36px 40px;
+}
+
+.CardTitle {
+  color: #008554;
+  text-align: left;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.12px;
+  margin-bottom: 24px;
+}
+
+.Card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Card li {
+  display: flex;
+  margin-bottom: 16px;
+  /* Add additional styling for each list item if needed */
+}
+
+.tickimg {
+  margin-right: 8px; /* Adjust the margin as needed */
+  width: 20px;
+  height: 20px;
+}
+
+.list {
+  color: #2b3340;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 0px;
+}
+
+.frame {
+  position: relative;
+}
+.frame1 {
+  position: absolute;
+  right: 40px;
+  width: 100px;
+  top: 60px;
+}
+
+.frame2 {
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  width: 100px;
+}
+
+/* swiper style */
+
+.swiperStyleFC {
+  --swiper-pagination-color: #008554;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #008554;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 120px;
+}
+.swiperStyleFC {
+  --add-bottom: 50px;
+  padding-bottom: var(--add-bottom);
+  align-items: center;
+}
+.swiperStyleFC [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
+}
+
+@media (max-width: 1200px) {
+  .frame {
+    display: none;
+  }
+  .LearnersBenefitContainer {
+    margin: 20px 30px;
+  }
+}
+@media (max-width: 920px) {
+  .LearnersBenefitContainer {
+    margin: 20px 16px;
+  }
+  .Card {
+    display: block;
+    background: #ecfaef;
+  }
+  .LeftSide {
+    padding: 0px;
+  }
+  .CardImg {
+    display: flex;
+    margin: 0 auto;
+    padding: 24px 0px;
+    width: 119px;
+  }
+  .LeftSide {
+    border-radius: 21px;
+  }
+  .RightSide {
+    padding: 0px 16px 24px 16px;
+  }
+  .CardTitle {
+    text-align: center;
+  }
+  .list {
+    font-size: 14px;
+    text-align: left;
+  }
+  .tickimg {
+    margin-top: 5px;
+  }
+  .heding {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 24px;
+    padding: 0px 18px;
+    margin-bottom: 0px;
+  }
+}

@@ -1,49 +1,71 @@
-import dynamic from "next/dynamic";
-
-// import PageBanner from "@/components/BannerSection/PageBanner";
-import HeaderOne from "@/components/Header/HeaderOne";
+import React, { useEffect, useState } from "react";
+import WhyChooseDR from "@/components/NewComponents/whychooseDR/WhyChooseDR";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
+import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
+import Faq from "@/components/NewComponents/faq/Faq";
+import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
+import CertificationDR from "@/components/NewComponents/certificationDR/CertificationDR";
 import MobileMenu from "@/components/Header/MobileMenu";
+import HeaderOne from "@/components/Header/HeaderOne";
+import AllCoursesPageBanner from "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner";
+import _ from "lodash";
 import Layout from "@/components/Layout/Layout";
-import MainFooter from "@/components/MainFooter/MainFooter";
-import Style from "@/components/Reuseable/Style";
-import SearchPopup from "@/components/SearchPopup/SearchPopup";
-// import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import AllCourseText from "@/components/StudentPlacement/AllCourseText";
-import React from "react";
-// import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
-import VideoOne from "@/components/VideoSection/VideoOne";
-import PopularTopics from "@/components/PopularTopics/PopularTopics";
-import AllCourseGallery from "@/components/AllCourseGallery/AllCourseGallery";
-import CourseCurriculum from "@/components/CourseCurriculum/CourseCurriculum";
+import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
+import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
+import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
 
-const PageBanner = dynamic(
-  () => import("@/components/BannerSection/PageBanner")
-);
-const CallToSection = dynamic(
-  () => import("@/components/HomeSkillDescription/CallToSection")
-);
-const PartnerOne = dynamic(
-  () => import("@/components/ExperienceSection/ExperienceSection")
-);
-import StickyBar from "@/components/StickyFooter/Sticky";
-const allCourse = () => {
+const AllCoursesNew = () => {
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleEnrollButtonClick = () => {
+    setIsPopupVisible(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupVisible(false);
+  };
+
+  useEffect(() => {
+    const timeoutModal = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutModal);
+  }, []);
   return (
-    <Layout pageTitle="allCourse">
-      <Style />
-      <HeaderOne pageTitle="all-courses" />
+    <Layout>
+      {isPopupVisible && (
+        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+      )}
+      <HeaderOne />
       <MobileMenu />
-      <SearchPopup />
-      <PageBanner title="Products" page="All courses" />
-      <AllCourseText />
-      <AllCourseGallery />
-      <PartnerOne />
-      <VideoOne />
-      <PopularTopics />
-      <CallToSection />
-      <MainFooter />
-      <StickyBar />
+      <AllCoursesPageBanner handleEnrollButtonClick={handleEnrollButtonClick} />
+      <WhyChooseDR handleEnrollButtonClick={handleEnrollButtonClick} />
+      <FeaturedCourses
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+      />
+      <AllCoursesSlider
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+      />
+      {/* <OurCourses
+          data={NewOurCoursesData}
+          handleEnrollButtonClick={handleEnrollButtonClick}
+        /> */}
+      <CertificationDR
+        data={AllCoursesDynamicData.CertificationDRData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <StudentReview />
+      <Faq data={AllCoursesDynamicData.faqSections} />
+      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );
 };
 
-export default allCourse;
+export default AllCoursesNew;

@@ -1,0 +1,441 @@
+/* careersTransformed.module.css */
+
+.container {
+  background: radial-gradient(100% 100% at 50% 0%, #024a1e 0%, #012610 100%);
+  padding: 56px 0px 10px;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+}
+
+.heading {
+  color: #fff;
+  font-size: 40px;
+  font-family: Montserrat-Bold !important;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+}
+
+.subheading {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Montserrat-Bold !important;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 30px;
+}
+
+/* careersTransformedDS.module.css */
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; /* Centering the cards */
+  padding: 0 24px; /* Margin on the left and right */
+  max-width: 990px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-right: 24px;
+  padding: 20px 16px;
+  border-radius: 12px;
+  border-radius: 12px;
+  background: #f0fdf4;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBottom {
+  margin-top: 10px;
+}
+
+.cardtext1 {
+  color: var(--primary-primary-charcoal, #131718);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 0px;
+  font-family: Montserrat-Bold;
+}
+.cardText {
+  color: #6a767c;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 0px;
+  font-family: Montserrat !important;
+}
+
+.logo {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  width: 44px;
+  height: 53.565px;
+}
+
+.ratingImg {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+}
+
+.swiperContainer {
+  position: relative;
+  margin-top: 20px;
+  max-width: 1080px;
+  margin: 44px auto;
+}
+
+.swiperCard {
+  padding: 40px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  background: #fff;
+}
+
+/* careersTransformedDS.module.css */
+
+.customDot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.customDot.slick-active {
+  background-color: #000000;
+  width: 12px;
+  height: 12px;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+  gap: 52px;
+}
+.profile {
+  display: flex;
+}
+
+.profileImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.nameRole {
+  margin-right: 58px;
+}
+.nameRole p {
+  margin-bottom: 0px;
+  color: var(--primary-primary-dark-grey, #6a767c);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  font-family: Montserrat;
+}
+.nameRole h4 {
+  margin-bottom: 6px;
+  color: var(--primary-primary-charcoal, #131718);
+  font-weight: 700;
+  letter-spacing: 0.12px;
+  font-size: 24px;
+  font-family: Montserrat-Bold;
+}
+
+.smallCard {
+  display: flex;
+  text-align: center;
+  padding: 8px 10px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: #dcfce7;
+  box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
+}
+.smallCardIndide {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.smallCardIndide h2 {
+  color: var(--primary-primary-charcoal, #131718);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  font-family: Montserrat-Bold;
+  margin-bottom: 0;
+}
+.riseImg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.increment {
+  color: var(--secondary-1, #1f2b37);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  margin-bottom: 0px;
+  font-family: Montserrat;
+}
+
+.contentSection {
+  margin-bottom: 40px;
+}
+
+.experienceText {
+  color: var(--primary-primary-charcoal, #131718);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  font-family: Montserrat;
+}
+
+.downSection {
+  display: flex;
+  align-items: center;
+}
+
+.arrowImg {
+  width: 114px;
+  height: 18px;
+  margin: 0 10px;
+}
+
+.roleCard1 {
+  text-align: center;
+  margin-right: 20px;
+}
+.roleCard2 {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.roleText {
+  color: var(--secondary-1, #1f2b37);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 10px;
+  font-family: Montserrat-Bold;
+}
+
+.companyImg {
+  width: 96px;
+  /* height: 44px; */
+}
+
+/* Frame at the top left */
+.frame1 {
+  position: absolute;
+  width: 190px;
+  height: 80px;
+  bottom: 44px;
+  left: 0;
+}
+
+/* Frame at the top right */
+.frame2 {
+  position: absolute;
+  width: 190px;
+  height: 80px;
+  top: 44px;
+  right: 0;
+}
+.playVideo {
+  border-radius: 60px;
+  background: var(--Light-Green-Green-700, #008744);
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Glass border */
+  transition: transform 0.2s ease-in-out; /* Transition for hover effect */
+}
+
+.playVideo:hover {
+  transform: scale(1.05); /* Scale up a little on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+}
+
+.Vidio {
+  border-radius: 50%;
+  margin: 0px 4px;
+  background: var(--Light-Text-White, #fff);
+
+  padding: 4px 13px;
+}
+.playVideo img {
+  width: 18px;
+  height: auto;
+}
+.playVideo span {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  padding: 14px 32px 14px 16px;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.019px;
+}
+
+/* swiper style */
+
+.swiperStyle {
+  --swiper-pagination-color: #dcfce7;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #ced1d9;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 120px;
+}
+.swiperStyle {
+  --add-bottom: 64px !important;
+  padding-bottom: var(--add-bottom) !important;
+  align-items: center;
+}
+.swiperStyle [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
+}
+
+/* Original styles for three cards */
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 40px 16px;
+  }
+
+  .cardsContainer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .card {
+    width: calc((50% - 12px)); /* Two cards per row with spacing in between */
+    margin-right: 0; /* No margin on the right for the last card in each row */
+    margin-bottom: 24px; /* Adjust margin as needed */
+  }
+  .swiperCard {
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+  }
+  .swiperContainer {
+    margin: 0px;
+  }
+  .topSection {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 24px;
+  }
+
+  .nameRole {
+    margin-right: 0;
+  }
+
+  .downSection {
+    align-items: center;
+  }
+
+  .roleCard1,
+  .roleCard2 {
+    margin: 10px 0;
+  }
+  .frame1,
+  .frame2 {
+    display: none;
+  }
+  .profileImg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+  .heading {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .subheading {
+    display: none;
+  }
+  .cardtext1 {
+    font-size: 20px;
+  }
+  .cardText {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .swiperCard {
+    padding: 20;
+  }
+  .nameRole p {
+    font-size: 12px;
+  }
+  .nameRole h4 {
+    font-size: 16px;
+  }
+  .experienceText {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .roleText {
+    font-size: 14px;
+  }
+  .companyImg {
+    width: 72px;
+  }
+  .smallCardIndide h2 {
+    font-size: 16px;
+    margin: 0px;
+  }
+  .increment {
+    font-size: 14px;
+  }
+  .riseImg {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+  .profile {
+    display: block;
+  }
+  .playVideo {
+    display: none;
+  }
+}

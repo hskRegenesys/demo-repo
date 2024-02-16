@@ -1,0 +1,101 @@
+/* breadcrumbsDR.module.css */
+
+.BreadcrumbsDR {
+  background: #e5ffed;
+  padding: 15px 0;
+  margin-top: 44px;
+}
+
+.BreadcrumbsInner {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.autoContainer {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagePath {
+  font-size: 16px;
+}
+
+.breadCrumbHome {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadCrumbHome li a {
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--Light-Text-Secondary, #697386);
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.fontCapitalized {
+  text-transform: capitalize;
+}
+
+.active {
+  font-weight: bold;
+  color: var(--Light-Text-Green, #008554);
+  /* Body/Body - Secondary Bold */
+  font-family: Montserrat;
+  font-size: 14px; /* Set the color of the active path to green */
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+/* Existing styles above this line */
+
+@media screen and (max-width: 590px) {
+  .BreadcrumbsDR {
+    padding: 10px 0;
+    margin-top: 60px;
+  }
+  .breadCrumbHome {
+    flex-wrap: wrap;
+  }
+  /* .breadCrumbHome li {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 80px; } */
+
+  .breadCrumbHome li a {
+    font-size: 12px;
+  }
+
+  .arrowIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .active {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+/* Existing styles below this line */

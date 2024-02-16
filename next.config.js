@@ -34,12 +34,17 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    // {
-    //   source: "/programsnew",
-    //   destination: "/all-courses-new",
-    //   permanent: true,
-    // },
+    {
+      source: "/all-courses-new",
+      destination: "/404",
+      permanent: true,
+    },
 
+    {
+      source: "/multiple-pages-brand",
+      destination: "/404",
+      permanent: true,
+    },
     {
       source: "/programs/data-science/basic-data-science",
       destination: "/all-courses/data-science/basic-data-science",
@@ -877,8 +882,8 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/new-home",
-      destination: "/home-new",
+      source: "/home-new",
+      destination: "/404",
       permanent: true,
     },
 
@@ -1035,6 +1040,10 @@ const createReWrites = () => {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
+    {
+      source: "/all-courses/data-and-business-analytics",
+      destination: "/all-courses/data-and-business-analytics/30",
+    },
     // {
     //   source: "/all-courses/software-development-course",
     //   destination: "/all-courses/software-development/229",
@@ -1117,10 +1126,6 @@ const createReWrites = () => {
       source: "/all-courses/design-thinking",
       destination: "/all-courses/design-thinking/105",
     },
-    // {
-    //   source: "/all-courses-new/design-thinking-new",
-    //   destination: "/all-courses-new/design-thinking-new/1055",
-    // },
 
     {
       source: "/all-courses/cyber-security",
@@ -1138,10 +1143,22 @@ const createReWrites = () => {
       source: "/all-courses/artificial-intelligence/ai-advanced-applied",
       destination: "/all-courses/ai-advanced-applied/403",
     },
+
+    // --------------------new pages---------------------
     // {
-    //   source: '/:path*',
-    //   destination: '/404',
+    //   source: "/all-courses-new/digital-marketing-new",
+    //   destination: "/all-courses-new/digital-marketing-new/702",
     // },
+    // -------------------------multiple-pages-course---------------------------------
+
+    // {
+    //   source: "/digital-marketing-1",
+    //   destination: "/all-courses-multiple/digital-marketing-1",
+    // },
+    {
+      source: "/:path*",
+      destination: "/404",
+    },
   ];
   return paths;
 };

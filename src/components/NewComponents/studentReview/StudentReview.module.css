@@ -1,0 +1,188 @@
+/* StudentReview.module.css */
+
+.cardContainer {
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 108px 0px 108px;
+}
+.Title {
+  color: #008554;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.12px;
+  margin-bottom: 12px;
+}
+.heading {
+  color: #2b3340;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: -0.8px;
+  margin-bottom: 52px;
+}
+.studentReviewCardContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.studentReviewCard {
+  max-width: 380px;
+  padding: 40px 20px;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #008554;
+  background: linear-gradient(180deg, #f0fdf4 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.studentReviewSideTag {
+  position: absolute;
+  top: 4px;
+  right: -19px;
+  width: 158px;
+  height: 80px;
+}
+
+.studentReviewCardImg {
+  width: 88px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
+
+.starRating {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.starRating img {
+  width: 23px;
+  height: auto;
+  margin: 0 2px;
+}
+
+.textContent {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.textContent h3 {
+  color: #2b3340;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 8px;
+}
+.textContent2 {
+  color: #2b3340;
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.textContent3 {
+  color: #697386;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 0;
+}
+
+/* swiper style */
+
+.swiperStyle {
+  --swiper-pagination-color: #008554;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #008554;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 120px;
+}
+.swiperStyle {
+  --add-bottom: 64px !important;
+  padding-bottom: var(--add-bottom) !important;
+  align-items: center;
+}
+.swiperStyle [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
+}
+
+/* Media Query for screens with a maximum width of 768 pixels */
+@media (max-width: 920px) {
+  .cardContainer {
+    margin: 52px 16px 0px 16px;
+  }
+  .Title {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .studentReviewCard {
+    max-width: 296px;
+    padding: 36px 20px;
+  }
+  .heading {
+    font-size: 24px;
+    margin-bottom: 32px;
+    padding: 0px 18px;
+  }
+  .studentReviewSideTag {
+    top: 8px;
+    right: -15px;
+    width: 120px;
+    height: 60px;
+  }
+  .studentReviewCardImg {
+    width: 60px;
+  }
+  .starRating img {
+    width: 16px;
+    height: auto;
+    margin: 0 2px;
+  }
+  .textContent {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .textContent h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+  .textContent2 {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .textContent3 {
+    color: #697386;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    margin-bottom: 0;
+  }
+}
