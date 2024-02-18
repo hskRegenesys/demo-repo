@@ -34,11 +34,6 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    {
-      source: "/all-courses-new",
-      destination: "/404",
-      permanent: true,
-    },
 
     {
       source: "/multiple-pages-brand",
@@ -887,6 +882,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/all-courses-new",
+      destination: "/404",
+      permanent: true,
+    },
+    {
       source: "/all-courses-new/design-thinking-new",
       destination: "/404",
       permanent: true,
@@ -901,8 +901,14 @@ const redirectURL = () => {
       destination: "/404",
       permanent: true,
     },
+
     {
-      source: "/all-courses-new/digital-marketing-1",
+      source: "/all-courses-multiple/digital-marketing-1",
+      destination: "/404",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-1",
       destination: "/404",
       permanent: true,
     },
