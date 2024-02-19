@@ -10,7 +10,13 @@ import { Spinner } from "react-bootstrap";
 import PostContainer from "./PostContainer";
 import BreadCrumb from "./BreadCrumb";
 
-const BlogsByCategories = ({ categorySlug ,setCategoryList }: { categorySlug: string,setCategoryList:(value:any)=>void }) => {
+const BlogsByCategories = ({
+  categorySlug,
+  setCategoryList,
+}: {
+  categorySlug: string;
+  setCategoryList: (value: any) => void;
+}) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>("");
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
@@ -36,6 +42,7 @@ const BlogsByCategories = ({ categorySlug ,setCategoryList }: { categorySlug: st
           setCategory(category.name),
           {
             category: category.name,
+            yoast_head_json: category.yoast_head_json,
             posts: await wpService.allPosts({
               per_page: 12,
               categories: category.id,
@@ -47,7 +54,7 @@ const BlogsByCategories = ({ categorySlug ,setCategoryList }: { categorySlug: st
     if (apiResponse.length > 0) {
       setIsLoading(false);
       setPostList(apiResponse);
-      setCategoryList(apiResponse)
+      setCategoryList(apiResponse);
     }
   };
 
