@@ -1,7 +1,10 @@
 /* Same CSS styles as ExploreDS.module.css with necessary modifications */
 
 .appContainer {
-  padding: 0px 108px 0px 108px;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
   background-color: #fff;
   margin-top: 100px;
 }

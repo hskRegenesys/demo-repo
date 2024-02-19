@@ -40,6 +40,9 @@ const TalentedComponent: React.FC = () => {
                 1250: {
                   slidesPerView: 2.5,
                 },
+                1450: {
+                  slidesPerView: 3.5,
+                },
               }}
             >
               {facultyCard.map((faculty, index) => (

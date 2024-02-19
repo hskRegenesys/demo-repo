@@ -3,7 +3,10 @@
 .courseBenefitsCardContainer {
   display: flex;
   flex-direction: column;
-  margin: 88px 108px 0px 108px;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
 }
 
 .courseBenefitsCardContainer h2 {

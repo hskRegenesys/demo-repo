@@ -12,7 +12,9 @@
 .bannerContainer {
   position: relative;
   display: flex;
-  margin: 0px 108px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1224px;
   align-items: center;
 }
 

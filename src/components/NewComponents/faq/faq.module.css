@@ -19,7 +19,10 @@
   display: none;
 }
 .faqDesktop {
-  margin: 80px 108px 0px 108px;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
 }
 
 .section1 {
