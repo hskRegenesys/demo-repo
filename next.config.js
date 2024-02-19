@@ -29,27 +29,27 @@ const redirectURL = () => {
       destination: "/all-courses/data-science",
       permanent: true,
     },
-    {
-      source: "/programs",
-      destination: "/all-courses",
-      permanent: true,
-    },
     // {
-    //   source: "/all-courses-new",
-    //   destination: "/404",
+    //   source: "/programs",
+    //   destination: "/all-courses",
     //   permanent: true,
     // },
     {
-      source: "/programsnew",
-      destination: "/all-courses-new",
+      source: "/all-courses-new",
+      destination: "/404",
       permanent: true,
     },
+
+    // {
+    //   source: "/programsnew",
+    //   destination: "/all-courses-new",
+    //   permanent: true,
+    // },
     // {
     //   source: "/multiple-pages-brand",
     //   destination: "/404",
     //   permanent: true,
     // },
-    // {
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -888,8 +888,8 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/new-home",
-      destination: "/home-new",
+      source: "/home-new",
+      destination: "/404",
       permanent: true,
     },
 
@@ -1172,10 +1172,10 @@ const createReWrites = () => {
     },
 
     // --------------------new pages---------------------
-    {
-      source: "/all-courses-new/digital-marketing-new",
-      destination: "/all-courses-new/digital-marketing-new/702",
-    },
+    // {
+    //   source: "/all-courses-new/digital-marketing-new",
+    //   destination: "/all-courses-new/digital-marketing-new/702",
+    // },
     // -------------------------multiple-pages-course---------------------------------
 
     {
