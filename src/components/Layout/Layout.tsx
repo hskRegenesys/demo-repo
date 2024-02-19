@@ -41,7 +41,8 @@ const Layout = (props: any) => {
     pageTitle === "blog"
       ? blogList?.[0]?.yoast_head_json?.og_title
       : pageTitle === "category"
-      ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_title
+      ? // ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_title
+        categoryList?.[0]?.yoast_head_json?.og_title
       : metaData?.metaInfo?.title?.[pageTitle]
       ? metaData?.metaInfo?.title?.[pageTitle]
       : metaData?.metaInfo?.title?.["home"];
@@ -49,8 +50,9 @@ const Layout = (props: any) => {
     pageTitle === "blog"
       ? blogList?.[0]?.yoast_head_json?.og_description
       : pageTitle === "category"
-      ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_description
-      : metaData?.metaInfo?.description?.[pageTitle]
+      ? categoryList?.[0]?.yoast_head_json?.og_description
+      : // categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_description
+      metaData?.metaInfo?.description?.[pageTitle]
       ? metaData?.metaInfo?.description?.[pageTitle]
       : metaData?.metaInfo?.description?.["home"];
   const keywords =
