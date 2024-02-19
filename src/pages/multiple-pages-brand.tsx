@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-
 import HeaderOne from "@/components/Header/HeaderOne";
-import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import Layout from "@/components/Layout/Layout";
-import UspSection from "@/components/NewComponents/uspSection/UspSection";
 import AboutUs from "@/components/NewComponents/about/AboutUs";
 import AdmitsCompanies from "@/components/NewComponents/admitsCompanies/AdmitsCompanies";
 import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
@@ -14,36 +11,27 @@ import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideo
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import NewHomeData from "@/data/newHomeData";
 import _ from "lodash";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
-import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
-import OurCourses from "@/components/HomePageNew/All-Cources/ourCourses/OurCourses";
 import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
-import NewOurCoursesData from "@/components/HomePageNew/All-Cources/ourCourses/OurCoursesData";
 import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
-import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
 import ToolCoveredCard from "@/components/NewComponents/ToolsCovered/ToolsCovered";
 import BannerWithImg from "@/components/NewComponents/BannerwithImg/BannerwithImg";
 import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
-import { allCourseList } from "@/data/courseData";
 import BreadcrumbsDR from "@/components/NewComponents/breadcrumbsDR/breadcrumbsDR";
-import { urlInfo } from "@/components/config/helper";
-import { programBaseUrl } from "@/components/config/constant";
 import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
-import { Style } from "@mui/icons-material";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
 import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
 import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
-import PageBanner from "@/components/BannerSection/PageBanner";
 import TalentedComponent from "@/components/NewComponents/talentedComponent/TalentedComponent";
+import { Style } from "@mui/icons-material";
 
 const BrandHome = () => {
   const router = useRouter();
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const courseId: any = router?.query?.id;
-  const allCourseList: any = []; // Dummy data, replace with actual course list
+  const allCourseList: any = [];
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -79,7 +67,7 @@ const BrandHome = () => {
   };
 
   return (
-    <Layout pageTitle="new-home">
+    <Layout pageTitle="">
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}

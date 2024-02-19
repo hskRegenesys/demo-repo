@@ -1,9 +1,10 @@
 /* StudentReview.module.css */
 
 .cardContainer {
-  flex-direction: column;
-  align-items: center;
-  margin: 100px 108px 0px 108px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1224px;
+  padding-top: 100px;
 }
 .Title {
   color: #008554;
