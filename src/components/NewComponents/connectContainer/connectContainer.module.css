@@ -113,8 +113,11 @@
 @media only screen and (max-width: 920px) {
   .connectContainer {
     flex-direction: column;
-    padding: 40px;
     margin-top: 44px;
+  }
+  .containerContact {
+    padding: 0px;
+    flex-direction: column;
   }
 
   .rightSection {

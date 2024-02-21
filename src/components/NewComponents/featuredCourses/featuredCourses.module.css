@@ -219,7 +219,7 @@
   --swiper-pagination-bullet-vertical-gap: 120px;
 }
 .swiperStyle {
-  --add-bottom: 74px !important;
+  /* --add-bottom: 74px !important; */
   padding-bottom: var(--add-bottom) !important;
   align-items: center;
 }
@@ -234,7 +234,7 @@
     align-items: center;
   }
   .featuredCoursesContainer {
-    padding: 0px 16px 0px 16px;
+    padding: 40px 16px 0px 16px;
     background: none !important;
   }
   .rocketImg {
@@ -273,5 +273,10 @@
   .icon {
     width: 20px;
     height: 20px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .rocketImg {
+    display: none;
   }
 }

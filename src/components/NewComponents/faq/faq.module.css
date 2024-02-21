@@ -157,6 +157,7 @@
 
   .faqMobile {
     display: block;
+    margin-top: 40px;
   }
   .topcontentMobile {
     color: var(--primary-primary-charcoal, #131718);

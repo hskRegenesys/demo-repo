@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import Styles from "./AllCoursesSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import useActive from "@/hooks/useActive";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import { urlInfo } from "../../config/helper";
+
+SwiperCore.use([Pagination, Autoplay]);
 
 import {
   artificialIntelligenceCode,

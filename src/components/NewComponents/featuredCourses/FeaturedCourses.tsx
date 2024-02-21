@@ -2,6 +2,9 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 import Styles from "./featuredCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import useActive from "@/hooks/useActive";
 import _ from "lodash";
@@ -16,6 +19,7 @@ import {
 } from "../../config/constant";
 
 import { allCourseList } from "@/data/courseData";
+SwiperCore.use([Pagination, Autoplay]);
 
 interface Card {
   cardProgram: string;
