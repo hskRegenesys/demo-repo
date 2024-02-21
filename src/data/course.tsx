@@ -8492,12 +8492,12 @@ If you are passionate about starting your own full-stack web development busines
 export const brochureDetails: any = {
   //Project Management
   PM: {
-    name: "project-management-brochure.pdf",
+    name: "project-management-brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
   DBA: {
-    name: "DBA_Brochure.pdf",
+    name: "DBA_Brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -8510,7 +8510,7 @@ export const brochureDetails: any = {
   },
 
   FSD: {
-    name: "Full_Stack_Development_Brochure_compressed.pdf",
+    name: "Full_Stack_Development_Brochure_compressed_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -8548,7 +8548,7 @@ export const brochureDetails: any = {
     sourceCampaign: sourceCampaign,
   },
   AIN: {
-    name: "AINBrochure.pdf",
+    name: "AINBrochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -8582,7 +8582,7 @@ export const brochureDetails: any = {
 
   //Cybersecurity Defence Toolbox
   CDTC: {
-    name: "CompleteCybersecuritySolution-Brochure23.pdf",
+    name: "cybersecurity-complete-brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
@@ -8595,7 +8595,7 @@ export const brochureDetails: any = {
 
   // Certification Programme in Cybersecurity
   CSC: {
-    name: "CompleteCybersecuritySolution-Brochure23.pdf",
+    name: "cybersecurity-complete-brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
