@@ -190,7 +190,6 @@
   }
   .bannerContainer {
     flex-direction: column;
-    margin: 0px 20px;
   }
   .imageSection {
     width: 100%;
@@ -202,6 +201,7 @@
     height: auto;
     background: #ebebeb;
     width: 100%;
+    border-radius: 20px;
   }
   @keyframes slideIn {
     from {

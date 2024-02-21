@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 1224px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 52px;
 }
 
 .aboutUs {
@@ -207,7 +207,8 @@
 
   .startLearningButton {
     max-width: none;
-    margin: 40px auto;
+    margin: 0px auto;
+    margin-top: 40px;
   }
   .cardImg {
     width: 32px;
@@ -218,6 +219,6 @@
 
 @media only screen and (max-width: 1230px) {
   .aboutUsContainer {
-    margin: 52px 16px;
+    padding: 40px 20px 0px 20px;
   }
 }

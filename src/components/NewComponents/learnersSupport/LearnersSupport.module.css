@@ -24,9 +24,9 @@
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 130%; /* 52px */
-  letter-spacing: -0.8px;
+  letter-spacing: 1px;
   margin-bottom: 56px;
 }
 
@@ -134,11 +134,16 @@
 
 @media (max-width: 920px) {
   .LsSectionContainer {
-    margin: 32px 16px;
+    padding: 0px 20px;
+    margin-top: 40px;
   }
   .LsSectionTitle {
-    font-size: 24px;
-    margin-bottom: 32px;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .LsSectionHeding {
+    font-size: 12px;
+    margin-bottom: 20px;
   }
   .LsCard {
     margin: 0 auto;

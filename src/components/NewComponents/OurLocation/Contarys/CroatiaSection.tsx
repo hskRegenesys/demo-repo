@@ -19,7 +19,9 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
   <div className={`${Styles.CroatiaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.CroatiaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.CroatiaContaryShowHoverDetails} ${
+          Styles.ContaryShowHoverDetails
+        } ${isHovered ? Styles.active : ""}`}
       >
         <img
           src={OurLocationData.Croatia.countryFlagImg}
@@ -27,7 +29,9 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
           alt="Country Flag"
         />
         <div
-          className={`${Styles.CroatiacontaryAdressCard} ${Styles.contaryAdress}`}
+          className={`${Styles.CroatiacontaryAdressCard} ${
+            Styles.contaryAdress
+          } ${isHovered ? Styles.active : ""}`}
         >
           <span>{OurLocationData.Croatia.countryDescription}</span>
           <h5>{OurLocationData.Croatia.countryAddress}</h5>

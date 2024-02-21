@@ -435,18 +435,18 @@ const MainCoursesDynimicData = {
         content2: {
           contentHeading: "Tools Covered in this Course",
           cardTools: [
-            {
-              img: "/assets/images/HomeNew/tool/ds-logo-jupyter.webp",
-            },
-            {
-              img: "/assets/images/HomeNew/tool/ds-logo-pandas.webp",
-            },
-            {
-              img: "/assets/images/HomeNew/tool/ds-logo-tableau.webp",
-            },
-            {
-              img: "/assets/images/HomeNew/tool/ds-logo-tensorflow.webp",
-            },
+            { img: "/assets/images/HomeNew/tool/DS/DS-1.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-2.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-3.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-4.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-5.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-6.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-7.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-8.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-9.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-10.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-11.webp" },
+            { img: "/assets/images/HomeNew/tool/DS/DS-12.webp" },
           ],
         },
         content3: {
@@ -454,24 +454,26 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg: "/assets/images/HomeNew/faculty-img/faculty-1.png",
+              facultyImg:
+                "/assets/images/HomeNew/faculty-img/dr_nilay_profile.webp",
               facultyName: "Tutor Name",
               courseName: "Digital Marketing",
               yearsOfExperience: "12+ Years of Experience",
             },
             {
-              facultyImg: "/assets/images/HomeNew/faculty-img/faculty-1.png",
+              facultyImg:
+                "/assets/images/HomeNew/faculty-img/dr_shilpa_joshi.webp",
               facultyName: "Tutor Name",
               courseName: "Digital Marketing",
               yearsOfExperience: "12+ Years of Experience",
             },
             {
-              facultyImg: "/assets/images/HomeNew/faculty-img/faculty-1.png",
+              facultyImg:
+                "/assets/images/HomeNew/faculty-img/Samidha_Photo.webp",
               facultyName: "Tutor Name",
               courseName: "DataScience",
               yearsOfExperience: "12+ Years of Experience",
             },
-            // Additional faculty members as needed
           ],
         },
 

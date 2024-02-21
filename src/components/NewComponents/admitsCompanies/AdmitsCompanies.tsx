@@ -1,12 +1,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Styles from "./admitsCompanies.module.css";
 import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
 
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: React.MouseEventHandler<HTMLDivElement>;
 }
+SwiperCore.use([Pagination, Autoplay]);
 
 const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   handleEnrollButtonClick,
@@ -18,7 +21,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
     freeModeMomentum: false,
     loop: true,
     autoplay: {
-      delay: 0,
+      delay: 1000,
       disableOnInteraction: false,
     },
     slidesPerView: "auto" as const,
