@@ -274,8 +274,10 @@
 
 .content2 ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 16px;
+  max-width: 869px;
+  width: 100%;
 }
 
 .content2 li {
@@ -286,12 +288,13 @@
   box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
   display: flex;
   justify-content: center;
+  margin-left: 10px;
 }
 
 @media (max-width: 767px) {
   .content2 ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     gap: 16px;
     justify-content: center;
   }

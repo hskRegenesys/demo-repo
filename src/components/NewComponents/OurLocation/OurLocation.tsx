@@ -10,6 +10,7 @@ import SouthAfricaSection from "./Contarys/SouthAfrica";
 import CroatiaSection from "./Contarys/CroatiaSection";
 import NigeriaSection from "./Contarys/NigeriaSection";
 import TanzaniaSection from "./Contarys/TanzaniaSection";
+import _debounce from "lodash/debounce";
 
 const OurLocation: React.FC = () => {
   const {
@@ -36,8 +37,9 @@ const OurLocation: React.FC = () => {
   const [isUgandaHovered, setUgandaHovered] = useState(false);
   const [isNigeriaHovered, setNigeriaHovered] = useState(false);
   const [isTanzaniaHovered, setTanzaniaHovered] = useState(false);
+  let usaHoverTimeout: NodeJS.Timeout;
 
-  const handleUsaMouseEnter = () => {
+  const handleUsaMouseEnter = _debounce(() => {
     setUsaHovered(true);
     setKenyaHovered(false);
     setIndiaHovered(false);
@@ -46,13 +48,12 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  };
-
+  }, 200);
   const handleUsaMouseLeave = () => {
     setUsaHovered(false);
   };
 
-  const handleKenyaMouseEnter = () => {
+  const handleKenyaMouseEnter = _debounce(() => {
     setKenyaHovered(true);
     setUsaHovered(false);
     setIndiaHovered(false);
@@ -61,13 +62,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  };
+  }, 200);
 
   const handleKenyaMouseLeave = () => {
     setKenyaHovered(false);
   };
 
-  const handleIndiaMouseEnter = () => {
+  const handleIndiaMouseEnter = _debounce(() => {
     setIndiaHovered(true);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -76,13 +77,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  };
+  }, 200);
 
   const handleIndiaMouseLeave = () => {
     setIndiaHovered(false);
   };
 
-  const handleUgandaMouseEnter = () => {
+  const handleUgandaMouseEnter = _debounce(() => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -91,13 +92,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(true);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  };
+  }, 200);
 
   const handleUgandaMouseLeave = () => {
     setUgandaHovered(false);
   };
 
-  const handleSouthAfricaMouseEnter = () => {
+  const handleSouthAfricaMouseEnter = _debounce(() => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -106,13 +107,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  };
+  }, 200);
 
   const handleSouthAfricaMouseLeave = () => {
     setSouthAfricaHovered(false);
   };
 
-  const handleCroatiaMouseEnter = () => {
+  const handleCroatiaMouseEnter = _debounce(() => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -121,13 +122,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  };
+  }, 200);
 
   const handleCroatiaMouseLeave = () => {
     setCroatiaHovered(false);
   };
 
-  const handleNigeriaMouseEnter = () => {
+  const handleNigeriaMouseEnter = _debounce(() => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -136,12 +137,12 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(true);
     setTanzaniaHovered(false);
-  };
+  }, 200);
 
   const handleNigeriaMouseLeave = () => {
     setNigeriaHovered(false);
   };
-  const handleTanzaniaMouseEnter = () => {
+  const handleTanzaniaMouseEnter = _debounce(() => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -150,7 +151,7 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(true);
-  };
+  }, 200);
 
   const handleTanzaniaMouseLeave = () => {
     setTanzaniaHovered(false);
@@ -221,13 +222,7 @@ const OurLocation: React.FC = () => {
               onMouseLeave={handleUsaMouseLeave}
             />
           </div>
-          <div className={Styles.KenyaLocation}>
-            <KenyaSection
-              isHovered={isKenyaHovered}
-              onMouseEnter={handleKenyaMouseEnter}
-              onMouseLeave={handleKenyaMouseLeave}
-            />
-          </div>
+
           <div className={Styles.IndiaLocation}>
             <IndiaSection
               isHovered={isIndiaHovered}
@@ -255,6 +250,14 @@ const OurLocation: React.FC = () => {
               isHovered={isNigeriaHovered}
               onMouseEnter={handleNigeriaMouseEnter}
               onMouseLeave={handleNigeriaMouseLeave}
+            />
+          </div>
+
+          <div className={Styles.KenyaLocation}>
+            <KenyaSection
+              isHovered={isKenyaHovered}
+              onMouseEnter={handleKenyaMouseEnter}
+              onMouseLeave={handleKenyaMouseLeave}
             />
           </div>
           <div className={Styles.tanzaniaLocation}>

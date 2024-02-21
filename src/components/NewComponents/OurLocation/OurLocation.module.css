@@ -60,6 +60,11 @@
   display: flex;
   position: relative;
   z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+.ContaryShowHoverDetails.active {
+  opacity: 5;
 }
 .contaryLocation {
   position: relative;
@@ -132,8 +137,8 @@
   left: 181px;
 }
 .southAfricaLocation {
-  top: 135px;
-  left: 279px;
+  top: 142px;
+  left: 128px;
 }
 .croatiaLocation {
   top: 12px;
@@ -146,7 +151,7 @@
 
 .nigeriaLocation {
   top: 74px;
-  left: 233px;
+  left: 85px;
 }
 
 .PinLocatioName {
@@ -163,10 +168,10 @@
 }
 .SouthAfricaContaryLocation {
   flex-direction: column;
-  left: -26px;
+  left: 131px;
 }
 .NigeriaContaryLocation {
-  left: -30px;
+  left: 100px;
 }
 
 .contaryname {
@@ -289,7 +294,9 @@
   .southAfricaLocation {
     top: 56px;
     left: 174px;
+    transition: opacity 0.9s ease-in-out;
   }
+
   .croatiaLocation {
     top: -9px;
     left: 141px;

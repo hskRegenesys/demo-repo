@@ -19,19 +19,21 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
   <div className={`${Styles.SouthAfricaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.SouthAfricaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.SouthAfricaContaryShowHoverDetails}  ${
+          Styles.ContaryShowHoverDetails
+        } ${isHovered ? Styles.active : ""}`}
       >
-        <img
-          src={OurLocationData.SouthAfrica.countryFlagImg}
-          className={Styles.contaryFlag}
-          alt="Country Flag"
-        />
         <div
           className={`${Styles.SouthAfricacontaryAdressCard} ${Styles.contaryAdress}`}
         >
           <span>{OurLocationData.SouthAfrica.countryDescription}</span>
           <h5>{OurLocationData.SouthAfrica.countryAddress}</h5>
         </div>
+        <img
+          src={OurLocationData.SouthAfrica.countryFlagImg}
+          className={Styles.contaryFlag}
+          alt="Country Flag"
+        />
       </div>
     )}
     {!isHovered && (

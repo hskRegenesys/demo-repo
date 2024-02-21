@@ -18,7 +18,9 @@ const UsaSection: React.FC<UsaSectionProps> = ({
     <div className={`${Styles.UsaSection} ${isHovered ? Styles.hidden : ""}`}>
       {isHovered && (
         <div
-          className={`${Styles.USAContaryShowHoverDetails} ${Styles.ContaryShowHoverDetails}`}
+          className={`${Styles.USAContaryShowHoverDetails} ${
+            Styles.ContaryShowHoverDetails
+          } ${isHovered ? Styles.active : ""}`}
         >
           <img
             src={OurLocationData.USA.countryFlagImg}
