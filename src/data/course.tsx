@@ -384,7 +384,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+          "https://www.youtube.com/embed/-OVmXDAHn6A?autoplay=1&loop=1&playlist=-OVmXDAHn6A",
         title: "Certification Course in Management Development",
         text: "Management Development course offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
         lists: [
@@ -8873,11 +8873,11 @@ export const brochureDetails: any = {
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
-  MD: {
-    name: "project-management-brochure_compressed.pdf",
-    leadSource: leadSource,
-    sourceCampaign: sourceCampaign,
-  },
+  // MD: {
+  //   name: "project-management-brochure_compressed.pdf",
+  //   leadSource: leadSource,
+  //   sourceCampaign: sourceCampaign,
+  // },
   DBA: {
     name: "DBA_Brochure_compressed.pdf",
     leadSource: leadSource,
