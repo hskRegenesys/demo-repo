@@ -377,6 +377,383 @@ export const courseData = {
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
+
+  MD: {
+    processOne: [
+      {
+        id: 1,
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+        title: "Certification Course in Management Development",
+        text: "Management Development course offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
+        lists: [
+          "40 Weeks Course",
+          "Live Sessions",
+          "Career Counselling",
+          "Guaranteed Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title:
+        "Enhance Your Career with Our Top-Rated Management Development Course",
+      text1:
+        "Elevate your skill set with the best Management Development course for professionals. Learn how to apply the skills of Management Development in the real world from our highly experienced academic staff.        ",
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1:
+        "Get exposure to ChatGPT, Gemini, HeyGen, Krea.ai and Clipchamp.      ",
+
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every technological concept from scratch.",
+
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.",
+
+      subTitle4: "Tools usage",
+      desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    courseTools: [
+      "md/DBA-tool-2.svg",
+      "md/Clipchamp.svg",
+      "md/Gemini.svg",
+      "md/Hey-Gen.svg",
+      "md/KREA.svg",
+    ],
+    courseCertificate: {
+      certificateTitle:
+        "Excel in Management Development with Our Leading Certificate Course.",
+      certificateSubTitle:
+        "Earn a Management Development Certificate from Digital Regenesys & Understand market dynamics and identify economic, political, and social opportunities.        ",
+      certificateSubSubTitle:
+        "With our Management Development course, you will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
+      certificateListTitle:
+        "With a Management Development Certificate, you will get:",
+
+      certificateSkillList: [
+        "Market Dynamics",
+        "Interpersonal skills        ",
+        "Agile methodologies",
+        "Project Management Fundamentals",
+      ],
+      certificateListPara:
+        " Our specialised Management Development Certificate will open doors to various roles for you, whether you are a graduate manager or an experienced professional.",
+      certificateRolesList: [
+        "Project Manager",
+        "Operations Manager",
+        "Innovation Manager ",
+        "Business Development Manager",
+      ],
+      CertificateImage: ["PM_certificate.webp"],
+      imageName: "PM_certificate",
+    },
+
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "The Business Environment",
+            lists: [
+              "Understanding the business landscape",
+              "Economic, political, and social factors influencing business",
+              "Market analysis and identification of opportunities",
+            ],
+          },
+          {
+            id: 2,
+            title: "Managing the Art of Innovation",
+            lists: [
+              "Cultivating a culture of innovation",
+              "Strategies for fostering creativity and idea generation",
+              "Design Thinking for Managers",
+              "Implementing innovation",
+            ],
+          },
+          {
+            id: 3,
+            title: "Entrepreneurship and Intrapreneurship",
+            lists: [
+              "Identifying and evaluating business opportunities",
+              "Creating a culture of intrapreneurship within organisations",
+              "Support systems for entrepreneurs",
+            ],
+          },
+          {
+            id: 4,
+            title: "Emerging Technologies for Managers",
+            lists: [
+              "Introduction to disruptive technologies (e.g., AI, blockchain, IoT) ",
+              "Incorporating technology trends into business strategies",
+              "Managing digital transformation",
+            ],
+          },
+          {
+            id: 5,
+            title: "Operational Effectiveness",
+            lists: [
+              "Process optimisation and efficiency improvement techniques",
+              "Supply chain management and logistics ",
+              "Lean and Six Sigma principles for operational excellence",
+            ],
+          },
+          {
+            id: 6,
+            title: "Effective Project Execution",
+            lists: [
+              "Project management fundamentals",
+              "Agile methodologies for managing projects in dynamic environments",
+              "Overcoming common challenges in project execution",
+            ],
+          },
+          {
+            id: 7,
+            title: "Business Finance for Managers",
+            lists: [
+              "Financial analysis and decision-making",
+              "Budgeting and forecasting techniques",
+              "Financial risk management",
+            ],
+          },
+          {
+            id: 8,
+            title: "People and Performance Management",
+            lists: [
+              "Leadership and motivation strategies",
+              "Talent acquisition and retention ",
+              "Performance evaluation and feedback mechanisms",
+            ],
+          },
+          {
+            id: 9,
+            title: "Marketing for Managers",
+            lists: [
+              "Market research and consumer behaviour analysis",
+              "Branding and product/service positioning strategies",
+              "Digital marketing and social media",
+            ],
+          },
+          {
+            id: 10,
+            title: "Essential Communication Tools",
+            lists: [
+              "Effective communication techniques",
+              "Interpersonal skills and conflict resolution",
+              "Cross-cultural communication",
+            ],
+          },
+          {
+            id: 11,
+            title: "ESG for Managers",
+            lists: [
+              "Understanding environmental, social, and governance (ESG) principles",
+              "Integrating sustainability practices into business operations",
+              "Corporate social responsibility (CSR) initiatives.            ",
+            ],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    faqsSection: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "What is a Management Development Course?            ",
+            text: "A management development course is structured to enhance the knowledge and skills of individuals in leadership positions. These courses cover communication, decision-making, conflict resolution, and strategic planning. Participants can sharpen their leadership abilities and become more effective managers by enroling in a management development course.",
+          },
+          {
+            id: 2,
+            title: "Why Should I Pursue a Management Development Course?",
+            text: "A management development course can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Enroling in a management development course allows participants to gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a management development course can help you unleash your full potential and achieve your career goals.            ",
+          },
+          {
+            id: 3,
+            title: "What to Expect from a Management Development Course?",
+            text: "Individuals can enhance their leadership skills and careers by pursuing a management development course. This comprehensive course provides practical strategies for effective team management, conflict resolution, and decision-making. Participating in this course will give individuals the tools and techniques necessary to lead confidently and achieve their professional goals. Enrol in the digital Regenesys Management Development Course, elevate your managerial abilities and drive success within your organisation. Enrol now and take your leadership to the next level.",
+          },
+          {
+            id: 4,
+            title:
+              "What is the significance of the Management Development Course in today's digital landscape?",
+            text: "A management development course can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Participating in a management development course can gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a management development course can help you unleash your full potential and achieve your career goals",
+          },
+          {
+            id: 5,
+            title:
+              "What are the Benefits of Enroling in a Digital Regenesys Management Development Course?            ",
+            text: "Enroling in a Digital Regenesys management development course can benefit individuals looking to advance their careers. These courses allow participants to learn new skills, gain valuable insights from industry experts, and network with other professionals in their field. Additionally, management development courses can help individuals build confidence in their leadership abilities and prepare them for future challenges in the workplace.",
+          },
+          {
+            id: 6,
+            title:
+              "What are the outcomes of the Management Development Course?",
+            text: `
+            Some of the outcomes of the Management Development Course include:
+.Understanding market dynamics and identifying economic, political, and social opportunities.
+.Foster a culture of innovation and implement effective strategies for idea generation and implementation.
+.Evaluate business opportunities, foster intrapreneurship, and utilise support systems for entrepreneurial ventures.
+.Master project management fundamentals, Agile methodologies, and risk mitigation strategies for successful project delivery.
+.Enhance communication techniques, interpersonal skills, and cross-cultural communication abilities for effective collaboration.
+
+            `,
+          },
+          {
+            id: 7,
+            title:
+              "What are the crucial skills required for a Management Development career?",
+            text: "The crucial skills required for a Management Development career include- leadership skills, communication skills, decision-making skills, and team-building skills.",
+          },
+          {
+            id: 8,
+            title:
+              "What are the tools covered in the Digital Regenesys Management Development certificate course?",
+            text: "ChatGPT, Gemini, HeyGen, Krea.ai, and Clipchamp are the tools covered in the Digital Regenesys Management Development certificate course.",
+          },
+          {
+            id: 9,
+            title:
+              "Is Management Development a promising career?              ",
+            text: "Yes. Management Development is a promising career. According to the survey, a management development course can boost performance by 22%. Pursuing a Digital Regenesys Management Development Course is not just about learning; it is about evolving and excelling in ways that can genuinely reshape your professional outlook. Enrol in the Digital Regenesys Management Development Course, explore the vibrant world of management development, and discover your full potential!",
+          },
+          {
+            id: 10,
+            title:
+              "How does the Digital Regenesys Management Development certificate course contribute to advancing management capabilities?",
+            text: "The Digital Regenesys Management Development Course offers comprehensive training in critical areas of management, including leadership, strategic planning, and organisational development. Participants gain valuable skills and knowledge to enhance their careers and drive business growth. The course is designed for professionals seeking to advance their management capabilities and stay ahead in today's competitive business landscape. With a focus on practical application and real-world case studies, this course equips learners with the tools they need to succeed in a dynamic digital environment.",
+          },
+          {
+            id: 11,
+            title:
+              "What will I learn in the Digital Regenesys Management Development certificate course?              ",
+            text: "In today's competitive business landscape, investing in management development courses is crucial for enhancing leadership skills and driving organisational success. Whether you are a new manager looking to build a strong foundation or a seasoned leader aiming to sharpen your abilities, enroling in a Digital Regenesys Management Development certificate course can provide you with the essential tools and strategies needed to excel in your role.             ",
+          },
+          {
+            id: 12,
+            title: "Why pursue a Management Development certification course?",
+            text: "A management development course is designed to help individuals grow and excel in their leadership roles. Whether you are a seasoned manager looking to sharpen your skills or an aspiring leader hoping to gain the necessary knowledge, these courses offer many benefits",
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview-ready with proper training, industry expert interactions and resume-building tools",
+            " Elevate your LinkedIn game with a comprehensive profile-building session.",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures.            ",
+            "Ask questions, get answers and complete support from the faculty.",
+            "Enhanced learning experience offered by our highly experienced and achieved faculties.",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system.",
+            "Receive proper guidance as per your special requirements from our faculties.",
+            " Access the recorded lectures in case you miss a session.            ",
+          ],
+        },
+
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
+
+          lists: [
+            "Be part of a community of 10,000+ Learners.",
+            "Connect with the Industry experts who will help you guide you through your career after course completion.",
+            "Talk, share, connect, learn and grow along with other students in your batch.",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Management Development Certificate",
+      certifiedText1:
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Management Development Career.",
+      certifiedTitle2: "Share Your Achievement",
+
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.        ",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+    },
+    modalImage: "Pop-up_bg.webp",
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+    stickyText:
+      "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
   DBA: {
     processOne: [
       {
@@ -8492,6 +8869,11 @@ If you are passionate about starting your own full-stack web development busines
 export const brochureDetails: any = {
   //Project Management
   PM: {
+    name: "project-management-brochure_compressed.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  MD: {
     name: "project-management-brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
