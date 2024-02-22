@@ -453,8 +453,8 @@ export const courseData = {
         "Innovation Manager ",
         "Business Development Manager",
       ],
-      CertificateImage: ["PM_certificate.webp"],
-      imageName: "PM_certificate",
+      CertificateImage: ["MD_certificate.webp"],
+      imageName: "MD_certificate",
     },
 
     videoOne: {
