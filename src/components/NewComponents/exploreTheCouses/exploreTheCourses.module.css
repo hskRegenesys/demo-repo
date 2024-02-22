@@ -203,6 +203,7 @@
 }
 .content1img {
   border-radius: 20px;
+  width: 100%;
 }
 .content1 ul {
   display: flex;

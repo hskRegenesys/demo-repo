@@ -6,7 +6,7 @@ const AllCourcesCardData = {
   cardStudentsIcon: "/assets/images/HomeNew/user-tick.svg",
   cardBookIcon: "/assets/images/HomeNew/book.svg",
   cardProgramText: "Programmes",
-  cardStudentEnrollmentText: "Students Enrolled",
+  cardStudentEnrollmentText: " Students Enroled  ",
   cardToolsText: "Covered",
   cardStarIcon: "/assets/images/HomeNew/star.svg",
 

@@ -1,6 +1,6 @@
 const AdmiteCompaniesData = {
-  AdmitsHeading: "Top Regenesys’s Admits",
-  AdmitsTitle: "Our Students Land Only The Best",
+  AdmitsHeading: "Digital Regenesys Alumni ",
+  AdmitsTitle: "We have alumni working in top companies.",
   buttenIcon: "./assets/images/HomeNew/DoubleArrowWhite.svg",
   AdmitsCards: [
     {

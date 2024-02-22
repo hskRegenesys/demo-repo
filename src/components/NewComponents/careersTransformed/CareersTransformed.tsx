@@ -66,7 +66,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
         <p className={Styles.subheading}>{subheading}</p>
       </div>
 
-      <div className={Styles.cardsContainer}>
+      {/* <div className={Styles.cardsContainer}>
         {[card1, card2, card3, card4].map((card, index) => (
           <div key={index} className={Styles.card}>
             <div className={Styles.cardTop}>
@@ -91,7 +91,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={Styles.swiperContainer}>
         <Swiper className={Styles.swiperStyle} {...swiperSettings}>
@@ -109,7 +109,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                     <p className={Styles.role}>{swiperCard.role}</p>
                   </div>
                 </div>
-                <div className={Styles.smallCard}>
+                {/* <div className={Styles.smallCard}>
                   <div className={Styles.smallCardIndide}>
                     <img
                       className={Styles.riseImg}
@@ -131,14 +131,14 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                   </div>
 
                   <span>Hear My Story</span>
-                </div>
+                </div> */}
               </div>
               <div className={Styles.contentSection}>
                 <p className={Styles.experienceText}>
                   {swiperCard.experienceText}
                 </p>
               </div>
-              <div className={Styles.downSection}>
+              {/* <div className={Styles.downSection}>
                 <div className={Styles.roleCard1}>
                   <p className={Styles.roleText}>{swiperCard.firstRole}</p>
                   <img
@@ -160,7 +160,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                     alt="Company"
                   />
                 </div>
-              </div>
+              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>

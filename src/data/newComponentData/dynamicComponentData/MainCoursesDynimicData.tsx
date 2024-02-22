@@ -378,9 +378,9 @@ const MainCoursesDynimicData = {
       topSectionPoint1: "BESTSELLER",
       topSectionPoint2: "Live Sessions by Industry Experts",
       contentText:
-        "In this modern-day digital world, there are various methods and platforms through which the current marketing ecosystem operates. This course is offered in two categories; Digital Marketing Fundamentals & Advance Digital Marketing Course. Learn these aspects of Digital Marketing and its real-world use.",
+        "The Certification Course in Data Science provides a comprehensive curriculum, including concepts in data analysis, machine learning, and statistical modelling. Students will gain practical skills in programming languages such as Python and R and experience working with large datasets. The course equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification validating their expertise in data science.",
       youtubeVideoLink:
-        "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+        "https://www.youtube.com/embed/YyMjAyMjAyNA?autoplay=1&loop=1&playlist=YyMjAyMjAyNA",
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
       UspSectionData: {
@@ -401,34 +401,29 @@ const MainCoursesDynimicData = {
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Data Science",
+      courcename: "Data Science Course Outcomes",
       Heding: "What our learners have achieved",
       Card: [
         {
           cardIcon: "/assets/images/HomeNew/money-tick.svg",
-          text1: "50%",
-          text2: "Avg. Salary Hike",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
         },
         {
           cardIcon: "/assets/images/HomeNew/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Career Transitions",
+          text2: " Career Opportunities",
         },
         {
           cardIcon: "/assets/images/HomeNew/medal.svg",
-          text1: "80%",
-          text2: "Outcome Acheieved",
-        },
-        {
-          cardIcon: "/assets/images/HomeNew/people.svg",
-          text1: "300+",
-          text2: "Hiring Partners",
+          text1: "150+",
+          text2: "Countries Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
       smallHeading: "Explore the World of Data Science with Us!",
-      bigHeading: "Let’s Dive More Into Data Science",
+      bigHeading: "Everything You Need To Know About Data Science Course",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
 
@@ -442,9 +437,9 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+          contentImg: "/assets/images/HomeNew/Courses-Card/DS-card.png",
           contentText:
-            "Digital Regenesys’ Data Science Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
+            "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
           contentCard: [
             {
               icon: "/assets/images/HomeNew/Live Call.svg",
@@ -452,15 +447,15 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/HomeNew/Award.svg",
-              text: "Live Classes",
+              text: "International Certificate",
             },
             {
               icon: "/assets/images/HomeNew/Counselling.svg",
-              text: "Live Classes",
+              text: "Industry Expert Faculty",
             },
             {
               icon: "/assets/images/HomeNew/Experts.svg",
-              text: "Live Classes",
+              text: "Career Counselling",
             },
           ],
         },
@@ -488,23 +483,23 @@ const MainCoursesDynimicData = {
             {
               facultyImg:
                 "/assets/images/HomeNew/faculty-img/dr_nilay_profile.webp",
-              facultyName: "Tutor Name",
-              courseName: "Digital Marketing",
-              yearsOfExperience: "12+ Years of Experience",
+              facultyName: "Dr. Nilay Karade",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "11+ Years of Experience",
             },
             {
               facultyImg:
                 "/assets/images/HomeNew/faculty-img/dr_shilpa_joshi.webp",
-              facultyName: "Tutor Name",
-              courseName: "Digital Marketing",
-              yearsOfExperience: "12+ Years of Experience",
+              facultyName: "Dr. Shilpa Joshi",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "+ Years of Experience",
             },
             {
               facultyImg:
                 "/assets/images/HomeNew/faculty-img/Samidha_Photo.webp",
-              facultyName: "Tutor Name",
-              courseName: "DataScience",
-              yearsOfExperience: "12+ Years of Experience",
+              facultyName: "Samidha Kurle",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ Years of Experience",
             },
           ],
         },
@@ -553,44 +548,44 @@ const MainCoursesDynimicData = {
             {
               contaryFlag: "/assets/images/HomeNew/south-africa.svg",
               contaryName: "SouthAfrica",
-              price: "R 2500",
-              duration: "6 Months",
-              Enrollment: "2L+ Enrolled",
+              price: "R45,344",
+              duration: "30 weeks",
+              Enrollment: "10T Enroled ",
             },
             {
               contaryFlag: "/assets/images/HomeNew/kenya.svg",
 
-              contaryName: "Kenya",
-              price: "N 10000",
-              duration: "6 Months",
-              Enrollment: "2L+ Enrolled",
+              contaryName: "India",
+              price: "₹ 242,694",
+              duration: "30 weeks",
+              Enrollment: "10T Enroled ",
             },
             {
               contaryFlag: "/assets/images/HomeNew/nigeria.svg",
-              contaryName: "Nigeria",
-              price: "150000 KES",
-              duration: "6 Months",
-              Enrollment: "2L+ Enrolled",
+              contaryName: "USA",
+              price: "$ 2414",
+              duration: "30 weeks",
+              Enrollment: "10T Enroled ",
             },
           ],
         },
       },
     },
     CertificationDRData: {
-      title: "Digital Regenesys Data Science Certificate",
+      title: "About Digital Regenesys Data Science Certificate",
       heading: "Certification",
       paragraph:
-        "Digital Regenesys aims to foster an innovative ecosystem in new-age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
+        "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AL, ML, Drones, Robots, and data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products and services by promoting, enhancing core competencies, capacity building.",
       tickImage: "/assets/images/HomeNew/Check.svg",
-      buttonText: "Start Learning",
+      buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
-        "Freedom of teaching",
-        "Get teaching certification",
-        "Get teaching certification",
-        "Freedom of teaching",
-        "Get teaching certification",
-        "Get teaching certification",
+        "Deep Learning",
+        "Machine Learning",
+        "Data Visualisation",
+        "Data Preparation",
+        "Statistical Analytics",
+        "Database Structure & Algorithms",
       ],
       image: "/assets/images/HomeNew/certificate/DS-certificate.webp",
       imageText:
@@ -639,106 +634,115 @@ const MainCoursesDynimicData = {
     },
     faqSections: {
       arrowIcon: "/assets/images/HomeNew/arrow_drop_down.svg",
-      HeadingDesktop: "Frequently Asked Questions",
+      HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
         {
-          heading: "DataScience",
+          heading: "Data Science Courses",
           faqs: [
             {
-              question: "What is DataScience?",
+              question: "What is Data Science?",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
+                "Data science is an in-demand skill in many industries, including finance, transportation, education, manufacturing, human resources, and banking.",
             },
             {
-              question: "How important is social media in DataScience?",
+              question: "What is a Data Science Course?",
               answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                "Data Science Course is a multidisciplinary field designed to teach individuals the technical skills and knowledge required to analyse and interpret complex data sets using statistical methods and machine learning algorithms. ",
             },
             {
-              question: "What is DataScience?",
+              question: "Is data science still in demand in 2024?",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
-            },
-            {
-              question: "How important is social media in DataScience?",
-              answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                "Data science is a high-demand field and skill set, and nearly every industry uses data science in one way or another.",
             },
           ],
         },
         {
-          heading: "Heding 2",
+          heading: "Eligibility and Enrolment",
           faqs: [
             {
-              question: "What is DataScience?",
+              question: "Who can pursue a Data Science Course?",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
+                "Anyone can pursue data science; no prior knowledge or experience is needed to start learning.",
             },
             {
-              question: "How important is social media in DataScience?",
+              question:
+                "How do I enroll and register for the Digital Regenesys Data Science Course?",
               answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                "To enroll in the Digital Regenesys online course, follow these steps:\n1. Visit the official website @ https://www.digitalregenesys.com/\n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enroll Now' button. \n Complete the registration form with all the required details. \n Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ",
             },
             {
-              question: "What is DataScience?",
+              question:
+                "Are there any age restrictions to pursue a Data Science Course?",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
-            },
-            {
-              question: "How important is social media in DataScience?",
-              answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                "There are typically no age restrictions to pursue a Data Science Course. These courses are designed to accommodate learners of all ages, from high school students to working professionals looking to enhance their skills later in their careers.",
             },
           ],
         },
         {
-          heading: "Heding 3",
+          heading: "Tools Covered",
           faqs: [
             {
-              question: "What is DataScience?",
+              question: "Why is an algorithm a valuable tool in Data science?",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
+                "Data science uses algorithms to understand raw data and focuses on prediction.",
             },
             {
-              question: "How important is social media in DataScience?",
+              question: "Which tool is most widely used in Data science?",
               answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                "TensorFlow is the most widely accepted data science tool and is popular because of its Machine Learning (ML) and Deep Learning (DL) libraries.",
             },
             {
-              question: "What is DataScience?",
+              question:
+                "What tools are covered in the Digital Regenesys’s Data Science course? ",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
-            },
-            {
-              question: "How important is social media in DataScience?",
-              answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                "Tools used in the Digital Regenesys Data Science course are  Excel, Python, Keras, MATLAB, Pandas, Scikit-learn, Scipy, Tableau, NumPy, Seaborn, Jupyter Notebook, TensorFlow, Apache Spark.",
             },
           ],
         },
         {
-          heading: "Heding 5",
+          heading: "Duration and Accessibility",
           faqs: [
             {
-              question: "What is DataScience?",
+              question:
+                "How Long Does It Take to Complete a Data Science Course?",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
+                "The total duration of the Digital Regenesys Data Science Course is 30 weeks.",
             },
             {
-              question: "How important is social media in DataScience?",
+              question:
+                "Can I take a self-paced Data Science course, or do they have fixed schedules?",
               answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                "Some Data Science courses are self-paced, allowing learners to progress through the material at their speed. Others follow a fixed schedule with set start and end dates.",
             },
             {
-              question: "What is DataScience?",
+              question:
+                "Can Individuals from non-technical domains take this data science course? ",
               answer:
-                "Digital marketing involves promoting products or services using digital technologies.",
+                "Absolutely. Individuals from non-technical domains can take this Data Science Course. It might be difficult for individuals from non-technical domains, but it can be possible with dedication, concentration, motivation and self-learning; anyone can thrive in a Data Science profession.",
+            },
+          ],
+        },
+        {
+          heading: "Data Science Online Certification Courses ",
+          faqs: [
+            {
+              question:
+                "What is the benefit of enroling in an online Data Science Certification Course?",
+              answer:
+                "  Data Science online courses offer a convenient and flexible way to enhance your knowledge or learn new data science skills",
             },
             {
-              question: "How important is social media in DataScience?",
+              question:
+                "Are there practical applications and projects in online Data Science Courses?",
               answer:
-                "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+                " Digital Regenesys online Data Science Certification Course includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+            },
+            {
+              question:
+                "What Career Opportunities are Available After Completing an online Data Science Certification? ",
+              answer:
+                "Completing Data Science online courses can open doors to various career opportunities, including roles such as Data Scientist,  Data Engineer, Machine Learning Engineer, Data Analyst, Business Intelligence Analyst, and more.",
             },
           ],
         },

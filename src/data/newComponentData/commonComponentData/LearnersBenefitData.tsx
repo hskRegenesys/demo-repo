@@ -1,6 +1,6 @@
 const LearnersBenefitData = {
-  LearnersBenefitHeding: "Learners Benefit",
-  LearnersBenefitTitle: "See what our learners can get",
+  LearnersBenefitHeding: "Learners' Benefits",
+  LearnersBenefitTitle: "See What Our Learners Can Get",
   LearnersBenefitFrame1: "./assets/images/HomeNew/Frame 1.svg",
   LearnersBenefitFrame2: "./assets/images/HomeNew/Frame2.svg",
   LearnersBenefitTickIcon: "./assets/images/HomeNew/VectorTick.svg",

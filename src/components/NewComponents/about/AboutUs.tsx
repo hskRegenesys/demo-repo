@@ -119,7 +119,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
         className={Styles.startLearningButton}
         onClick={handleEnrollButtonClick}
       >
-        Start Learning
+        Enrol Now
       </div>
     </div>
   );
