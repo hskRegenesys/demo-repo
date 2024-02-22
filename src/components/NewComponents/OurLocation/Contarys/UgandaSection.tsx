@@ -1,7 +1,7 @@
 // UgandaSection.tsx
 
 import React from "react";
-import OurLocationData from "../OurLocationData";
+import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 
 import Styles from "../OurLocation.module.css";
 

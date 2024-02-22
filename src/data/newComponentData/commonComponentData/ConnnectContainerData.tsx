@@ -1,5 +1,5 @@
 const connectContainerData = {
-  connectContainerHeader: "Connect with Our Expert Team",
+  connectContainerHeader: "Connect With our Expert Team",
   connectContainerTittle:
     "Connect with us now for a Support experience like no other!",
   icon1: "./assets/images/HomeNew/checkVectorWhiteIcon.svg",

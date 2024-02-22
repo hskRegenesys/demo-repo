@@ -1,6 +1,6 @@
 const StudentReviewData = {
   StudentReviewTitle: "Student Reviews",
-  StudentReviewHeading: "What our learners say about us.",
+  StudentReviewHeading: "What Our Learners Say About Us.",
   FullStarImg: "./assets/images/HomeNew/Full Star.svg",
   HalfStarImg: "./assets/images/HomeNew/Half Star.svg",
   FullGrayStarImg: "./assets/images/HomeNew/No star.svg",

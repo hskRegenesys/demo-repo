@@ -1,6 +1,6 @@
 const TalentedComponentData = {
-  title: "Our Tutors",
-  heading: "See Our Talented Faculties",
+  title: "Meet our Faculty",
+  heading: "See Our Talented Faculty",
   buttonText: "Start Learning Today!",
   facultyCard: [
     {

@@ -1,6 +1,6 @@
 // OurLocation.tsx
 import React, { useState, useEffect } from "react";
-import OurLocationData from "./OurLocationData";
+import OurLocationData from "../../../data/newComponentData/commonComponentData/OurLocationData";
 import Styles from "./OurLocation.module.css";
 import UsaSection from "./Contarys/UsaSection";
 import KenyaSection from "./Contarys/KenyaSecion";
