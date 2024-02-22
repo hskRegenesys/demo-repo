@@ -11,6 +11,22 @@ const MainCoursesDynimicData = {
         "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
+      UspSectionData: {
+        part1: {
+          card1text: "USA, South Africa, Nigeria, Kenya & India",
+          iconImage1: "/assets/images/HomeNew/Location.svg",
+        },
+        part2: {
+          card2text: "Students Enrolled",
+          enrollmentCount: "10000+",
+          iconImage2: "/assets/images/HomeNew/Users.svg",
+          duration: "3000",
+        },
+        part3: {
+          card3text: "Enhances Upskilling Courses",
+          iconImage3: "/assets/images/HomeNew/Learn.svg",
+        },
+      },
     },
     CourseBenefitsCardData: {
       courcename: "Digital Marketing",
@@ -202,7 +218,7 @@ const MainCoursesDynimicData = {
         "Get teaching certification",
         "Get teaching certification",
       ],
-      image: "/assets/images/HomeNew/certificate.png",
+      image: "/assets/images/HomeNew/certificate/DM-certificate.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -367,6 +383,22 @@ const MainCoursesDynimicData = {
         "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
+      UspSectionData: {
+        part1: {
+          card1text: "USA, South Africa, Nigeria, Kenya & India",
+          iconImage1: "/assets/images/HomeNew/Location.svg",
+        },
+        part2: {
+          card2text: "Students Enrolled",
+          enrollmentCount: "10000+",
+          iconImage2: "/assets/images/HomeNew/Users.svg",
+          duration: "3000",
+        },
+        part3: {
+          card3text: "Enhances Upskilling Courses",
+          iconImage3: "/assets/images/HomeNew/Learn.svg",
+        },
+      },
     },
     CourseBenefitsCardData: {
       courcename: "Data Science",
@@ -560,7 +592,7 @@ const MainCoursesDynimicData = {
         "Get teaching certification",
         "Get teaching certification",
       ],
-      image: "/assets/images/HomeNew/certificate.png",
+      image: "/assets/images/HomeNew/certificate/DS-certificate.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },

@@ -9,6 +9,22 @@ const MultiplePagesBrandData = {
     youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
+    UspSectionData: {
+      part1: {
+        card1text: "USA, South Africa, Nigeria, Kenya & India",
+        iconImage1: "/assets/images/HomeNew/Location.svg",
+      },
+      part2: {
+        card2text: "Students Enrolled",
+        enrollmentCount: "10000+",
+        iconImage2: "/assets/images/HomeNew/Users.svg",
+        duration: "3000",
+      },
+      part3: {
+        card3text: "Enhances Upskilling Courses",
+        iconImage3: "/assets/images/HomeNew/Learn.svg",
+      },
+    },
   },
   LearnersSupportSectionData: {
     LsSectionTitle: "Digital Regenesys Learners Support",

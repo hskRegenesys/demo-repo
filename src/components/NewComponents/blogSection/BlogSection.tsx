@@ -2,6 +2,9 @@ import React from "react";
 import Styles from "./blogSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
+
+SwiperCore.use([Pagination, Autoplay]);
 
 interface CardData {
   blogImg: string;

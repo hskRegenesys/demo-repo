@@ -1,7 +1,6 @@
 /* Same CSS styles as ExploreDS.module.css with necessary modifications */
 
 .appContainer {
-  padding-top: 100px;
   width: 100%;
   max-width: 1224px;
   margin: 0 auto;
@@ -81,6 +80,8 @@
   flex: 1 0 43%;
   position: relative;
   padding-top: 100px;
+  margin: 0 auto;
+  max-width: 869px;
 }
 
 .contentPanel.scrolled {
@@ -209,7 +210,7 @@
   gap: 16px;
 }
 .content1 li {
-  min-width: 185px;
+  max-width: 185px;
   margin: 0px;
 
   text-align: center;
