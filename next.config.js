@@ -1210,6 +1210,10 @@ const createReWrites = () => {
       source: "/multiple-pages-brand",
       destination: "/multiple-pages-brand",
     },
+    // {
+    //   source: "/online-courses",
+    //   destination: "/multiple-pages-courses",
+    // },
 
     // {
     //   source: "/:path*",

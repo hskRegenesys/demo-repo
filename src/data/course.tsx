@@ -8357,10 +8357,7 @@ If you are passionate about starting your own full-stack web development busines
         "Cyber Security Manager ",
         "Security Architect and many more",
       ],
-      CertificateImage: [
-        "CSC_certificate_fundamentals.webp",
-        "CSC_certificate_toolbox.webp",
-      ],
+      CertificateImage: ["CSC_certificate_fundamentals.webp"],
     },
     featureSeven: {
       title: "Meet our staff",

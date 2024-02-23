@@ -136,14 +136,14 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                   {parentCourse.cardProgram}
                 </div>
                 <div className={Styles.imgCardContainer}>
-                  <div className={Styles.cardStarContainer}>
+                  {/* <div className={Styles.cardStarContainer}>
                     <img
                       src={AllCourcesCardData.cardStarIcon}
                       alt="cardStar"
                       className={Styles.cardStarIcon}
                     />
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
-                  </div>
+                  </div> */}
                   <img
                     src={parentCourse.cardImg}
                     alt={parentCourse.cardProgram}
@@ -182,21 +182,23 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                       {AllCourcesCardData.cardStudentEnrollmentText}
                     </div>
                   </div>
-                  <div className={Styles.line3}>
-                    <div className={Styles.icon}>
-                      <img
-                        src={AllCourcesCardData.cardBookIcon}
-                        alt="icon"
-                        className={Styles.cardIcon}
-                      />
+                  {parentCourse.cardTool ? (
+                    <div className={Styles.line3}>
+                      <div className={Styles.icon}>
+                        <img
+                          src={AllCourcesCardData.cardBookIcon}
+                          alt="icon"
+                          className={Styles.cardIcon}
+                        />
+                      </div>
+                      <div className={Styles.boldText}>
+                        {parentCourse.cardTool}
+                      </div>
+                      <div className={Styles.normalText}>
+                        {AllCourcesCardData.cardToolsText}
+                      </div>
                     </div>
-                    <div className={Styles.boldText}>
-                      {parentCourse.cardTool}
-                    </div>
-                    <div className={Styles.normalText}>
-                      {AllCourcesCardData.cardToolsText}
-                    </div>
-                  </div>
+                  ) : null}
                 </div>
                 <div className={Styles.buttonContainer}>
                   <button

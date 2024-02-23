@@ -10,7 +10,6 @@ import SouthAfricaSection from "./Contarys/SouthAfrica";
 import CroatiaSection from "./Contarys/CroatiaSection";
 import NigeriaSection from "./Contarys/NigeriaSection";
 import TanzaniaSection from "./Contarys/TanzaniaSection";
-import _debounce from "lodash/debounce";
 
 const OurLocation: React.FC = () => {
   const {
@@ -39,7 +38,7 @@ const OurLocation: React.FC = () => {
   const [isTanzaniaHovered, setTanzaniaHovered] = useState(false);
   let usaHoverTimeout: NodeJS.Timeout;
 
-  const handleUsaMouseEnter = _debounce(() => {
+  const handleUsaMouseEnter = () => {
     setUsaHovered(true);
     setKenyaHovered(false);
     setIndiaHovered(false);
@@ -48,12 +47,12 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  }, 200);
+  };
   const handleUsaMouseLeave = () => {
     setUsaHovered(false);
   };
 
-  const handleKenyaMouseEnter = _debounce(() => {
+  const handleKenyaMouseEnter = () => {
     setKenyaHovered(true);
     setUsaHovered(false);
     setIndiaHovered(false);
@@ -62,13 +61,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  }, 200);
+  };
 
   const handleKenyaMouseLeave = () => {
     setKenyaHovered(false);
   };
 
-  const handleIndiaMouseEnter = _debounce(() => {
+  const handleIndiaMouseEnter = () => {
     setIndiaHovered(true);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -77,13 +76,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  }, 200);
+  };
 
   const handleIndiaMouseLeave = () => {
     setIndiaHovered(false);
   };
 
-  const handleUgandaMouseEnter = _debounce(() => {
+  const handleUgandaMouseEnter = () => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -92,13 +91,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(true);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  }, 200);
+  };
 
   const handleUgandaMouseLeave = () => {
     setUgandaHovered(false);
   };
 
-  const handleSouthAfricaMouseEnter = _debounce(() => {
+  const handleSouthAfricaMouseEnter = () => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -107,13 +106,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  }, 200);
+  };
 
   const handleSouthAfricaMouseLeave = () => {
     setSouthAfricaHovered(false);
   };
 
-  const handleCroatiaMouseEnter = _debounce(() => {
+  const handleCroatiaMouseEnter = () => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -122,13 +121,13 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
-  }, 200);
+  };
 
   const handleCroatiaMouseLeave = () => {
     setCroatiaHovered(false);
   };
 
-  const handleNigeriaMouseEnter = _debounce(() => {
+  const handleNigeriaMouseEnter = () => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -137,12 +136,12 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(true);
     setTanzaniaHovered(false);
-  }, 200);
+  };
 
   const handleNigeriaMouseLeave = () => {
     setNigeriaHovered(false);
   };
-  const handleTanzaniaMouseEnter = _debounce(() => {
+  const handleTanzaniaMouseEnter = () => {
     setIndiaHovered(false);
     setUsaHovered(false);
     setKenyaHovered(false);
@@ -151,7 +150,7 @@ const OurLocation: React.FC = () => {
     setUgandaHovered(false);
     setNigeriaHovered(false);
     setTanzaniaHovered(true);
-  }, 200);
+  };
 
   const handleTanzaniaMouseLeave = () => {
     setTanzaniaHovered(false);

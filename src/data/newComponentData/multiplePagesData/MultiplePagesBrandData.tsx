@@ -54,40 +54,38 @@ const MultiplePagesBrandData = {
     BlogSectionTitle: "For Your Research & Information",
     cards: [
       {
-        blogImg: "/assets/images/HomeNew/blog.png",
-        blogQuestion: "Understanding IELTS",
+        blogImg: "/assets/images/HomeNew/blog/brand-blog-1.webp",
+        blogQuestion: "What Are the Benefits of Taking Online Courses?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-taking-online-courses",
         blogText:
-          "The International English Language Testing System, or IELTS, is an exam designed for students who wish to study abroad...",
+          "In the ever-evolving landscape of education, online courses have transformed the traditional learning paradigm, offering many advantages to learners worldwide. These digital educational experiences,",
       },
       {
-        blogImg: "/assets/images/HomeNew/blog.png",
-        blogQuestion: "Research Strategies for Students",
+        blogImg: "/assets/images/HomeNew/blog/brand-blog-2.webp",
+        blogQuestion:
+          "Where Do You Find The Best Online Courses With Certificates?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/where-do-you-find-the-best-online-courses-with-certificates",
         blogText:
-          "Effective research is crucial for academic success. Learn valuable strategies and tips to enhance your research skills as a student...",
+          "In the era of online education, the quest for the best courses, accompanied by valuable certificates, has become a vital pursuit",
       },
       {
-        blogImg: "/assets/images/HomeNew/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
+        blogImg: "/assets/images/HomeNew/blog/brand-blog-3.webp",
+        blogQuestion:
+          "How Do You Choose The Right Online IT Course For Your Career?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/why-online-courses-are-ideal-for-working-professionals",
         blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+          "In the ever-evolving landscape of Information Technology (IT), choosing the right online course for your career is a pivotal decision to shape your professional trajectory. As technology advances,",
       },
       {
-        blogImg: "/assets/images/HomeNew/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
+        blogImg: "/assets/images/HomeNew/blog/brand-blog-4.webp",
+        blogQuestion: "Why Online Courses Are Ideal For Working Professionals?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/how-do-you-choose-the-right-online-it-course-for-your-career",
         blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-      },
-      {
-        blogImg: "/assets/images/HomeNew/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
-        blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-      },
-      {
-        blogImg: "/assets/images/HomeNew/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
-        blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+          "In the rapidly evolving education landscape, online courses have emerged as a transformat...",
       },
     ],
   },
@@ -206,7 +204,7 @@ const MultiplePagesBrandData = {
     ],
   },
   ReadMoreBrandHome: {
-    heading: "Elevate your career with Digital marakating",
+    heading: "Elevate your career with Digital Regenesys",
     readmore: [
       {
         pheading: "What is an Online Course?",

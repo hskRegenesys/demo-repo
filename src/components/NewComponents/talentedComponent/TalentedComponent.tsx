@@ -7,8 +7,12 @@ import styles from "./TalentedComponent.module.css";
 import TalentedComponentData from "../../../data/newComponentData/commonComponentData/TalentedComponentData";
 
 SwiperCore.use([Navigation, Pagination]);
-
-const TalentedComponent: React.FC = () => {
+interface TalentedComponentProp {
+  handleEnrollButtonClick: () => void;
+}
+const TalentedComponent: React.FC<TalentedComponentProp> = ({
+  handleEnrollButtonClick,
+}) => {
   const { title, heading, buttonText, facultyCard } = TalentedComponentData;
   const swiperRef = useRef<any>(null);
   const [paginationText, setPaginationText] = useState<any>(false);
@@ -45,7 +49,9 @@ const TalentedComponent: React.FC = () => {
       <div className={styles.leftSection}>
         <h1>{title}</h1>
         <p>{heading}</p>
-        <button className={styles.btnStart}>{buttonText}</button>
+        <button className={styles.btnStart} onClick={handleEnrollButtonClick}>
+          {buttonText}
+        </button>
       </div>
 
       <div className={styles.rightSection}>
@@ -90,7 +96,8 @@ const TalentedComponent: React.FC = () => {
                     />
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
                     <p className={styles.courseName}>{faculty.courseName}</p>
-                    <span>{faculty.yearsOfExperience}</span>
+
+                    <span>{faculty?.yearsOfExperience}</span>
                   </div>
                 </SwiperSlide>
               ))}

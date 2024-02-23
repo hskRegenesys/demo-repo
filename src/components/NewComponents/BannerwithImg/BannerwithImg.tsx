@@ -119,20 +119,23 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
             </div>
 
             <div className={styles.buttonsContainer}>
-              <div className={styles.brochureBtn}>
+              <a
+                className={styles.brochureBtn}
+                onClick={handleEnrollButtonClick}
+              >
                 <img
                   className={styles.brochureIcon}
                   src={BrochureIcon || ""}
                   alt="Brochure Icon"
                 />
                 Brochure
-              </div>
-              <div
+              </a>
+              <a
                 className={styles.enrollButton}
                 onClick={handleEnrollButtonClick}
               >
-                Enroll Now!
-              </div>
+                Enrol Now!
+              </a>
             </div>
           </div>
         </div>

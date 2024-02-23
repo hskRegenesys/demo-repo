@@ -44,7 +44,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
         className={styles.enrollNowButton}
         onClick={handleEnrollButtonClick}
       >
-        Enroll Now
+        Enrol Now
       </button>
     </div>
   );

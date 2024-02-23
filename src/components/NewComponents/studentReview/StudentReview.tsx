@@ -73,7 +73,7 @@ const StudentReview = () => {
                 <div className={Styles.studentReviewCard}>
                   <img
                     className={Styles.studentReviewSideTag}
-                    src={card.StudentReviewSideTag}
+                    src="\assets\images\HomeNew\Logo-DR-side.png"
                     alt="Side Tag"
                   />
                   <img
@@ -81,7 +81,7 @@ const StudentReview = () => {
                     src={card.StudentReviewCardImg}
                     alt="Student Review"
                   />
-                  <div className={Styles.starRating}>{stars}</div>
+                  {/* <div className={Styles.starRating}>{stars}</div> */}
                   <div className={Styles.textContent}>
                     <h3 className={Styles.textContent1}>
                       {card.StudentReviewName}

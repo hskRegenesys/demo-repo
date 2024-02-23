@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
+import { Modal } from "react-bootstrap";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import { useRouter } from "next/router";
 
 interface Point {
   data: BannerCourseData; // This is missing in the original code
@@ -55,7 +58,11 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
     UspSectionData: { part1, part2, part3 },
   } = data;
 
+  const router = useRouter();
   const [count, setCount] = useState("0");
+  const [show, setShow] = useState<boolean>(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const [title, setTitle] = useState("");
 
   useEffect(() => {
     let start = 0;
@@ -114,20 +121,23 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
             </div>
 
             <div className={styles.buttonsContainer}>
-              <div className={styles.brochureBtn}>
+              <a
+                className={styles.brochureBtn}
+                onClick={handleEnrollButtonClick}
+              >
                 <img
                   className={styles.brochureIcon}
                   src={BrochureIcon}
                   alt="Brochure Icon"
                 />
                 Brochure
-              </div>
-              <div
+              </a>
+              <a
                 className={styles.enrollButton}
                 onClick={handleEnrollButtonClick}
               >
-                Enroll Now!
-              </div>
+                Enrol Now!
+              </a>
             </div>
           </div>
         </div>
