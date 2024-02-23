@@ -10,6 +10,7 @@ interface CardData {
   blogImg: string;
   blogQuestion: string;
   blogText: string;
+  blogLink: string;
 }
 
 interface BlogSectionData {
@@ -57,7 +58,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   <h3 className={Styles.blogQuestion}>{card.blogQuestion}</h3>
                   <p className={Styles.blogText}>{card.blogText}</p>
                   <div className={Styles.knowMore}>
-                    <a href="#" className={Styles.knowMoreLink}>
+                    <a href={card.blogLink} className={Styles.knowMoreLink}>
                       Know More{" "}
                       <span className={Styles.arrowIcon}>
                         {" "}

@@ -140,6 +140,11 @@ const DataSeparatorPages = (page: string | undefined): any | undefined => {
       ...MainCoursesDynimicData.DataScience,
       multiplePagesDatas: MultiplePagesCoursesData[page],
     };
+  } else if (page === "data-science-course") {
+    return {
+      ...MainCoursesDynimicData.DataScience,
+      multiplePagesDatas: MultiplePagesCoursesData[page],
+    };
   }
 
   return undefined;

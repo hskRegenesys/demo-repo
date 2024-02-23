@@ -41,11 +41,11 @@
 }
 
 .admitsCard {
-  padding: 25px 16px;
+  padding: 10px 16px;
   text-align: center;
   border: 1px solid #e3e8ee;
   border-radius: 8px;
-  max-width: 140px;
+  max-width: 160px;
   margin: 0 10px;
 }
 

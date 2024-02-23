@@ -29,7 +29,7 @@ const FooterContent2: React.FC = () => (
     <div className={styles.footerContent2}>
       <p>
         <a href="https://www.digitalregenesys.com/all-courses">
-          <strong className={styles.strong}>Courses</strong>
+          <strong className={styles.strong}>All Courses</strong>
         </a>
       </p>
       <ul>
@@ -48,8 +48,20 @@ const FooterContent2: React.FC = () => (
         <a href="https://www.digitalregenesys.com/all-courses/project-management">
           <li>Project Management</li>
         </a>
-        <a href="https://www.digitalregenesys.com/all-courses/project-management">
-          <li>Software Engineering</li>
+        <a href="https://www.digitalregenesys.com/all-courses/full-stack-development">
+          <li>Full Stack Development</li>
+        </a>
+        <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
+          <li>Digital Marketing</li>
+        </a>
+        <a href="https://www.digitalregenesys.com/all-courses/design-thinking">
+          <li>Design Thinking</li>
+        </a>
+        <a href="https://www.digitalregenesys.com/all-courses/data-and-business-analytics">
+          <li>Data and Business Analytics</li>
+        </a>
+        <a href="https://www.digitalregenesys.com/all-courses/management-development">
+          <li>Management Development</li>
         </a>
       </ul>
     </div>
@@ -67,14 +79,11 @@ const FooterContent3: React.FC = () => (
           <li>Our Story</li>{" "}
         </a>
 
-        <li>Benefits</li>
-        <li>Our Tutors</li>
         <a href="https://www.digitalregenesys.com/blog">
           <li>Blogs</li>
         </a>
-        <li>FAQ's</li>
         <a href="https://www.digitalregenesys.com/contact">
-          <li>Contacts</li>
+          <li>Contact</li>
         </a>
       </ul>
     </div>
@@ -89,10 +98,7 @@ const FooterContent4: React.FC = () => (
       </p>
       <div className={styles.socialIcons}>
         <div>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/RegenesysBusinessSchool"
-          >
+          <a target="_blank" href="https://www.facebook.com/digitalregenesys">
             {" "}
             <img
               src="/assets/images/HomeNew/facebook-icon.svg"
@@ -102,16 +108,19 @@ const FooterContent4: React.FC = () => (
           </a>
         </div>
         <div>
-          <a target="_blank" href="https://twitter.com/RegenesysB">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
+          >
             {" "}
-            <img src="/assets/images/HomeNew/twiter-icon.svg" alt="Twitter" />
-            <span>Twitter</span>
+            <img src="/assets/images/HomeNew/youtube-icon.png" alt="Youtube" />
+            <span>Youtube</span>
           </a>
         </div>
         <div>
           <a
             target="_blank"
-            href="https://www.instagram.com/regenesysbusinessschool/"
+            href="https://www.instagram.com/digital_regenesys/"
           >
             {" "}
             <img src="/assets/images/HomeNew/insta-icon.svg" alt="Instagram" />
@@ -156,13 +165,12 @@ const FooterDR: React.FC<FooterDRProps> = ({ handleEnrollButtonClick }) => (
     </div>
     <div className={styles.footerSectionMobile}>
       <div className={styles.footerSection}>
-        <div className={styles.content1}>
-          <FooterContent3 />
-
-          <FooterContent2 />
-        </div>
         <div className={styles.content2}>
+          <FooterContent3 />
           <FooterContent4 />
+        </div>
+        <div className={styles.content1}>
+          <FooterContent2 />{" "}
           <FooterContent1 handleEnrollButtonClick={handleEnrollButtonClick} />
         </div>
         <div className={styles.footerText}>

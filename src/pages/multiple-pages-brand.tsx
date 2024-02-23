@@ -93,7 +93,7 @@ const BrandHome = () => {
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
-      <TalentedComponent />
+      <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
       <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
       <StudentReview />
@@ -103,6 +103,7 @@ const BrandHome = () => {
       <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
       <LearnersSupport
         data={MultiplePagesBrandData.LearnersSupportSectionData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <Faq data={MultiplePagesBrandData.faqSections} />
       <ReadMoreDropDown data={MultiplePagesBrandData.ReadMoreBrandHome} />

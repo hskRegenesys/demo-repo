@@ -1,7 +1,11 @@
 /* careersTransformed.module.css */
 
 .container {
-  background: radial-gradient(100% 100% at 50% 0%, #024a1e 0%, #012610 100%);
+  background: radial-gradient(
+    52.99% 52.99% at 50% 47.01%,
+    #36ba82 0%,
+    #275035 100%
+  );
   padding: 56px 0px 10px;
   position: relative;
 }
@@ -130,24 +134,26 @@
 }
 
 .topSection {
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  margin-bottom: 44px;
+  margin-bottom: 25px;
   gap: 52px;
 }
 .profile {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profileImg {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .nameRole {
-  margin-right: 58px;
+  /* margin-right: 58px; */
 }
 .nameRole p {
   margin-bottom: 0px;
@@ -157,6 +163,7 @@
   line-height: 24px;
   letter-spacing: 0.12px;
   font-family: Montserrat;
+  text-align: center;
 }
 .nameRole h4 {
   margin-bottom: 6px;

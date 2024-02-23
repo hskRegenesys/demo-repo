@@ -274,5 +274,168 @@ const MultiplePagesCoursesData = {
       },
     ],
   },
+  "data-science-course": {
+    heading: "Elevate your career with Data Science Courses",
+    readmore: [
+      {
+        pheading: "What is a Data Science Certification Course? ",
+        paragraphs: [
+          "A Data Science Certification is a specialised course that equips individuals with the requisite skills and knowledge to excel in data science.  ",
+          "The Data Science certification course comprises various topics, including statistics, machine learning, data analysis, and data visualisation. ",
+          "Pursuing a Data Science certification course teaches learners to use various tools and programming languages like Python, R, and SQL to manipulate and extract insights from large datasets. ",
+          "Upon completion of this course, learners are awarded a certification that validates their proficiency in data science and enhances their career opportunities in this high-demand field.",
+        ],
+      },
+      {
+        pheading: "Why Pursue a Data Science Certification Course?",
+        paragraphs: [
+          "Pursuing a Data Science certification course can significantly enhance career opportunities in the rapidly evolving tech industry. With the increasing demand for data-driven insights, professionals with Data Science skills are highly sought after by employers. ",
+          "Earning a certification in Data Science demonstrates expertise in analysing complex data sets and deriving valuable business insights. This credential can open doors to higher-paying positions and provide a competitive edge in the job market. Additionally, mastering Data Science techniques can empower individuals to tackle real-world challenges and drive organisational innovation.",
+        ],
+      },
+      {
+        pheading:
+          "What is a Digital Regenesys Data Science Certification Course?",
+        paragraphs: [
+          "Digital Regenesys offers a Data Science Certification Course that provides learners with the knowledge and skills to excel in real-world insights. ",
+          "The course is facilitated by industry experts and includes topics such as machine learning, data visualisation, probability and statistics, and big data technologies. The course is designed for individuals interested in learning data science; no prior knowledge or experience is required to enrol. ",
+          "Digital Regenesys Data Science course is delivered online, allowing learners to learn at their own pace and on their schedule. Upon completion of the course, learners earn an international certification in data science. ",
+          "Digital Regenesys is Silicon Valley's Leading Ed-Tech platform that offers a wide array of upskilling courses designed to empower learners with access to high-quality, cutting-edge education. The platform operates globally, including a strong presence in the USA, South Africa, Nigeria, Kenya, India, and Uganda",
+          "Digital Regenesys courses are career-transforming, skill-enhancing, and cutting-edge online courses across various digital domains. Some of these online certificate courses available include",
+          "",
+
+          "1. Data Science.",
+          "2. Project Management",
+          "3. Cyber Security",
+          "4. Artificial Intelligence",
+          "5. Digital Marketing",
+          "6. Design Thinking",
+          "7. Full Stack Development",
+          "8. Data and Business Analytics.",
+        ],
+      },
+      {
+        pheading:
+          "What are the Benefits of Pursuing a Digital Regenesys Data Science Certification Course?",
+        paragraphs: [
+          "Digital Regenesys Data Science Certification Course is designed to provide individuals with the technical skills and knowledge required to analyse and interpret complex data sets using statistical methods and machine learning algorithms. ",
+          "Pursuing the Digital Regenesys Data Science Certification Course will help learners learn how to extract insights and make data-driven decisions by applying programming languages like Python and R and tools like SQL and Tableau. ",
+          "The course curriculum typically includes data wrangling, visualisation, predictive modelling, and ethics. Upon completing a data science course, graduates are equipped to pursue careers in various industries as data scientists, analysts, or researchers.",
+          "Digital Regenesys Data Science Certification Course stands out due to its comprehensive curriculum, practical hands-on approach, and expert instructors. Offering a blend of theoretical knowledge and real-world application, this course equips students with the skills and insights needed to excel in the competitive field of data science. With a focus on cutting-edge technologies and industry-relevant projects, participants can gain a competitive edge and enhance their career prospects in the fast-growing data science sector.",
+          "",
+          "Some of the top benefits of pursuing the Digital Regenesys Data Science Certification Course include:",
+          "",
+          "1.Enjoy flexible online learning, allowing you to study at your own pace. ",
+          "2.Gain practical skills in data analysis, machine learning, and Python programming. ",
+          "3.Access expert-led training and real-world projects to enhance your portfolio. ",
+          "4.Benefit from career support services to help secure job opportunities in data science. ",
+          "",
+          "Enrol now at Digital Regenesys’s online courses and acquire the next-gen digital skills with career-transforming and skill-enhancing in many digital fields.",
+          "",
+          "Join today to kickstart your data science career!",
+        ],
+      },
+      {
+        pheading:
+          "What are the Job Prospects after completing a Data Science Course?",
+        paragraphs: [
+          "Completing a data science course can lead to job opportunities in a rapidly growing field. Some common job titles for data science professionals include:",
+          "",
+          "1. Statistician",
+          "2. Data Analyst",
+          "3. Data Scientist",
+          "4. Data Engineer",
+          "5. Data Architect",
+          "6. Machine Learning Engineer",
+          "7. Business Intelligence Analyst and more.",
+          "",
+          "These job profiles are integral to making crucial business decisions and are in high demand across various industries, including finance, healthcare, technology, and marketing.To be competitive in the job market, it is beneficial to have a solid educational background, with a bachelor's degree in data science, computer science, mathematics, statistics, or a related field being a good starting point",
+          "Therefore, upon successful completion, the Digital Regenesys Data Science course can lead to various job opportunities in a rapidly growing field. A solid educational background, experience, and communication skills can help professionals succeed in data science careers.",
+        ],
+      },
+      {
+        pheading: "What are the most In-Demand Skills for Data Science Jobs?",
+        paragraphs: [
+          "The most in-demand skills for data science jobs include a combination of technical and non-technical abilities. These skills are highly sought after in the field of data science:",
+        ],
+      },
+      {
+        pheading: "Technical Skills:",
+        paragraphs: [],
+      },
+      {
+        pheading: "Python and R: ",
+        paragraphs: [
+          "These are popular programming languages used for data analysis and machine learning.",
+        ],
+      },
+
+      {
+        pheading: "SQL:",
+        paragraphs: [
+          "Proficiency in SQL is essential for managing and analysing large datasets.",
+        ],
+      },
+      {
+        pheading: "Machine Learning: ",
+        paragraphs: [
+          "Understanding machine learning concepts and algorithms is crucial for building predictive models and making data-driven decisions.",
+        ],
+      },
+
+      {
+        pheading: "Data Visualization Tools: ",
+        paragraphs: [
+          "Skills in data visualization tools such as Tableau, Matplotlib, or Seaborn are essential for communicating insights from data.",
+        ],
+      },
+
+      {
+        pheading: "Probability and Statistics: ",
+        paragraphs: [
+          "A strong foundation in probability and statistics is necessary for making inferences from data and building statistical models.",
+        ],
+      },
+
+      {
+        pheading: "Big Data Technologies (e.g., Hadoop, NoSQL): ",
+        paragraphs: [
+          "Knowledge of big data technologies is valuable for handling and analyzing large volumes of data.",
+        ],
+      },
+
+      {
+        pheading: "Non-Technical Skills:",
+        paragraphs: [],
+      },
+      {
+        pheading: "Business Acumen: ",
+        paragraphs: [
+          "Understanding the business context and domain-specific knowledge is essential for deriving meaningful insights from data.",
+        ],
+      },
+
+      {
+        pheading: "Communication Skills: ",
+        paragraphs: [
+          "Data scientists need to communicate their findings to both technical and non-technical stakeholders effectively.",
+        ],
+      },
+
+      {
+        pheading: "Curiosity and Problem-Solving: ",
+        paragraphs: [
+          "A curious mindset and solid problem-solving abilities are essential for identifying and solving data-related challenges.",
+        ],
+      },
+
+      {
+        pheading: "",
+        paragraphs: [
+          "Due to the increasing demand for data scientists across various industries, these skills are highly sought after. It is crucial for individuals aspiring to enter the field of data science to develop a well-rounded skill set that encompasses both technical and non-technical competencies.",
+        ],
+      },
+    ],
+  },
 };
 export default MultiplePagesCoursesData;

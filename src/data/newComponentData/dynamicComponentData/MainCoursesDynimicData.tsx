@@ -380,7 +380,7 @@ const MainCoursesDynimicData = {
       contentText:
         "The Certification Course in Data Science provides a comprehensive curriculum, including concepts in data analysis, machine learning, and statistical modelling. Students will gain practical skills in programming languages such as Python and R and experience working with large datasets. The course equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification validating their expertise in data science.",
       youtubeVideoLink:
-        "https://www.youtube.com/embed/YyMjAyMjAyNA?autoplay=1&loop=1&playlist=YyMjAyMjAyNA",
+        "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
       UspSectionData: {
@@ -427,7 +427,7 @@ const MainCoursesDynimicData = {
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
 
-        { text: "Course Curriculum", contentId: "content2" },
+        { text: "", contentId: "content2" },
         { text: "Tools Used in this Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
@@ -550,7 +550,7 @@ const MainCoursesDynimicData = {
               contaryName: "SouthAfrica",
               price: "R45,344",
               duration: "30 weeks",
-              Enrollment: "10T Enroled ",
+              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/HomeNew/kenya.svg",
@@ -558,14 +558,14 @@ const MainCoursesDynimicData = {
               contaryName: "India",
               price: "₹ 242,694",
               duration: "30 weeks",
-              Enrollment: "10T Enroled ",
+              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/HomeNew/nigeria.svg",
               contaryName: "USA",
               price: "$ 2414",
               duration: "30 weeks",
-              Enrollment: "10T Enroled ",
+              Enrollment: "10,000+ Enroled ",
             },
           ],
         },
@@ -595,40 +595,38 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg: "/assets/images/HomeNew/blog.png",
-          blogQuestion: "Datascience IELTS",
+          blogImg: "/assets/images/HomeNew/blog/ds-blog-1.webp",
+          blogQuestion:
+            "What Are The Key Features Of A Data Science Course Suitable For Beginners?",
           blogText:
-            "The International English Language Testing System, or IELTS, is an exam designed for students who wish to study abroad...",
+            "Data has become a vital component of innovation and development in the current digital era.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog.png",
-          blogQuestion: "Research Strategies for Students",
+          blogImg: "/assets/images/HomeNew/blog/ds-blog-2.webp",
+          blogQuestion: "What is the Data Science Course Salary?",
           blogText:
-            "Effective research is crucial for academic success. Learn valuable strategies and tips to enhance your research skills as a student...",
+            "Data science has emerged as a dynamic and high-demand field, blending statistical analysis, ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog.png",
-          blogQuestion: "Exploring Scientific Discoveries",
+          blogImg: "/assets/images/HomeNew/blog/ds-blog-3.webp",
+          blogQuestion:
+            "What makes data science courses suitable for beginners?",
           blogText:
-            "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+            "In today’s data-driven world, the field of data science has emerged as a cornerstone of",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog.png",
-          blogQuestion: "Exploring Scientific Discoveries",
+          blogImg: "/assets/images/HomeNew/blog/ds-blog-4.webp",
+          blogQuestion: "What Are The Advantages Of A Data Science Course?",
           blogText:
-            "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-        },
-        {
-          blogImg: "/assets/images/HomeNew/blog.png",
-          blogQuestion: "Exploring Scientific Discoveries",
-          blogText:
-            "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-        },
-        {
-          blogImg: "/assets/images/HomeNew/blog.png",
-          blogQuestion: "Exploring Scientific Discoveries",
-          blogText:
-            "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+            "In the era of big data, where information flows ceaselessly from diverse sources, the role of  ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-are-the-advantages-of-a-data-science-course",
         },
       ],
     },

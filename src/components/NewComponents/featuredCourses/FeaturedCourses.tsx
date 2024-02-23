@@ -136,14 +136,14 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                   {parentCourse.cardProgram}
                 </div>
                 <div className={Styles.imgCardContainer}>
-                  <div className={Styles.cardStarContainer}>
+                  {/* <div className={Styles.cardStarContainer}>
                     <img
                       src={AllCourcesCardData.cardStarIcon}
                       alt="cardStar"
                       className={Styles.cardStarIcon}
                     />
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
-                  </div>
+                  </div> */}
                   <img
                     src={parentCourse.cardImg}
                     alt={parentCourse.cardProgram}

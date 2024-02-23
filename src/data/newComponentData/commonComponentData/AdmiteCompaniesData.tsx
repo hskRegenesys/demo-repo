@@ -4,46 +4,22 @@ const AdmiteCompaniesData = {
   buttenIcon: "./assets/images/HomeNew/DoubleArrowWhite.svg",
   AdmitsCards: [
     {
-      AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+      AdmitsImage: "./assets/images/clients/1.webp",
     },
     {
-      AdmitsImage: "./assets/images/HomeNew/Google.svg",
+      AdmitsImage: "./assets/images/clients/2.webp",
     },
     {
-      AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+      AdmitsImage: "./assets/images/clients/3.webp",
     },
     {
-      AdmitsImage: "./assets/images/HomeNew/Google.svg",
+      AdmitsImage: "./assets/images/clients/4.webp",
     },
     {
-      AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+      AdmitsImage: "./assets/images/clients/5.webp",
     },
     {
-      AdmitsImage: "./assets/images/HomeNew/Google.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/HCL.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/Google.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/HCL.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/Google.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/HCL.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/Google.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/HCL.svg",
-    },
-    {
-      AdmitsImage: "./assets/images/HomeNew/Google.svg",
+      AdmitsImage: "./assets/images/clients/6.webp",
     },
   ],
 };

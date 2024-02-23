@@ -19,17 +19,8 @@ const LearnersBenefitData = {
       LearnersBenefitCardTitle: "Personalized Guidance with 24*7 Support",
       LearnersBenefittext: [
         "Dedicated Learning Managers",
-        "Learn with fun Hands-on Exercises & Assignments",
-        "Participate in Hackathons & Group Activities",
-      ],
-    },
-    {
-      LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img3.svg",
-      LearnersBenefitCardTitle: "World Class Learning",
-      LearnersBenefittext: [
-        "Learn from the World's Best Faculty & Industry Experts",
-        "Learn with fun Hands-on Exercises & Assignments",
-        "Participate in Hackathons & Group Activities",
+        "24*7 learning Support",
+        "Network with Peers & Interact with Industry Leaders",
       ],
     },
   ],
