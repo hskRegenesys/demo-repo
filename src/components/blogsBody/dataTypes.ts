@@ -70,8 +70,6 @@ export const carousalProps = [
   },
 ];
 
-export const categogyTitle = [];
-
 export const bannerImages = [
   "Project-Management.webp",
   "digital-marketing.webp",

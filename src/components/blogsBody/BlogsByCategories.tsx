@@ -19,7 +19,7 @@ const BlogsByCategories = ({
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>("");
-  console.log("category", category);
+
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ slug: categorySlug });
