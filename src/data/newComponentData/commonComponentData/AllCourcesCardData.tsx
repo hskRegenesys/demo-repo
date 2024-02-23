@@ -5,7 +5,7 @@ const AllCourcesCardData = {
   cardTimeIcon: "/assets/images/HomeNew/clock.svg",
   cardStudentsIcon: "/assets/images/HomeNew/user-tick.svg",
   cardBookIcon: "/assets/images/HomeNew/book.svg",
-  cardProgramText: "Programmes",
+  cardProgramText: "Course",
   cardStudentEnrollmentText: " Students Enroled  ",
   cardToolsText: "Covered",
   cardStarIcon: "/assets/images/HomeNew/star.svg",
@@ -154,7 +154,6 @@ const AllCourcesCardData = {
         cardImg: "./assets/images/HomeNew/Courses-Card/AI-card.png",
         cardWeek: "37 Weeks",
         cardCount: "10,000+",
-        cardTool: "Tools",
       },
       SubCources: [
         {
@@ -166,7 +165,6 @@ const AllCourcesCardData = {
           cardProgram: "Artificial Intelligence Introduction",
           cardImg: "/assets/images/HomeNew/CardImg.webp",
           cardCount: "32,000+",
-          cardTool: "45 Tools",
           cardWeek: "12 Weeks",
         },
         {

@@ -274,7 +274,7 @@ const MultiplePagesCoursesData = {
       },
     ],
   },
-  "data-science-course": {
+  "online-courses": {
     heading: "Elevate your career with Data Science Courses",
     readmore: [
       {

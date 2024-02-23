@@ -73,7 +73,7 @@ const HomeNew = () => {
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-      <BlogSection data={HomeDynamicData.BlogSectionDataHome} />
+      {/* <BlogSection data={HomeDynamicData.BlogSectionDataHome} /> */}
       <Faq data={HomeDynamicData.faqSections} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>

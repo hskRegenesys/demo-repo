@@ -96,7 +96,8 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                     />
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
                     <p className={styles.courseName}>{faculty.courseName}</p>
-                    <span>{faculty.yearsOfExperience}</span>
+
+                    <span>{faculty?.yearsOfExperience}</span>
                   </div>
                 </SwiperSlide>
               ))}

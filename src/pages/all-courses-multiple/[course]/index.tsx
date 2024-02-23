@@ -275,9 +275,9 @@ const Course = (props: any) => {
     </>
   );
 };
-export async function getServerSideProps(context: any) {
-  const { id, course } = context.query;
+// export async function getServerSideProps(context: any) {
+//   const { id, course } = context.query;
 
-  return { props: { course } };
-}
+//   return { props: { course } };
+// }
 export default Course;

@@ -203,21 +203,23 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                       {AllCourcesCardData.cardStudentEnrollmentText}
                     </div>
                   </div>
-                  <div className={Styles.line3}>
-                    <div className={Styles.icon}>
-                      <img
-                        src={AllCourcesCardData.cardBookIcon}
-                        alt="icon"
-                        className={Styles.cardIcon}
-                      />
+                  {parentCourse.cardTool ? (
+                    <div className={Styles.line3}>
+                      <div className={Styles.icon}>
+                        <img
+                          src={AllCourcesCardData.cardBookIcon}
+                          alt="icon"
+                          className={Styles.cardIcon}
+                        />
+                      </div>
+                      <div className={Styles.boldText}>
+                        {parentCourse.cardTool}
+                      </div>
+                      <div className={Styles.normalText}>
+                        {AllCourcesCardData.cardToolsText}
+                      </div>
                     </div>
-                    <div className={Styles.boldText}>
-                      {parentCourse.cardTool}
-                    </div>
-                    <div className={Styles.normalText}>
-                      {AllCourcesCardData.cardToolsText}
-                    </div>
-                  </div>
+                  ) : null}
                 </div>
                 <div className={Styles.buttonContainer}>
                   <button
