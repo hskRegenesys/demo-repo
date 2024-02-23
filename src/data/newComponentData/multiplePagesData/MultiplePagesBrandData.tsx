@@ -204,7 +204,7 @@ const MultiplePagesBrandData = {
     ],
   },
   ReadMoreBrandHome: {
-    heading: "Elevate your career with Digital marakating",
+    heading: "Elevate your career with Digital Regenesys",
     readmore: [
       {
         pheading: "What is an Online Course?",

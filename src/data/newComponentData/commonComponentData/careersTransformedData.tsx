@@ -43,7 +43,7 @@ const careersTransformedData = {
       playImg: "/assets/images/HomeNew/Polygon.svg",
       profileImg: "/assets/images/HomeNew/students/Testimonial-2.webp",
       name: "Thibedi Grandy Mmatli",
-      role: "Cybersecurity",
+      role: "Cyber security",
       experienceText:
         "The best part about the Cybersecurity course that I took at Digital Regenesys is that my lecturer helped me greatly by solving my doubts during and outside the class as well. Vijal Mam was very helpful and she made sure that each and every student in the class understood the course properly.",
       riseImg: "/assets/images/HomeNew/rise.webp",

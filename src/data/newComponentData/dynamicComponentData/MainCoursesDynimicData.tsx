@@ -70,7 +70,7 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg: "/assets/images/HomeNew/DM-CourceImg.png",
+          contentImg: "/assets/images/HomeNew/DS-explore.png",
           contentText:
             "Digital Regenesys’ Digital Marketing Course is designed to provide a comprehensive understanding of the digital landscape. Learn the latest strategies for online marketing, social media, and analytics.",
           contentCard: [
@@ -437,7 +437,7 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg: "/assets/images/HomeNew/Courses-Card/DS-card.png",
+          contentImg: "/assets/images/HomeNew/DS-explore.png",
           contentText:
             "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
           contentCard: [
@@ -492,7 +492,7 @@ const MainCoursesDynimicData = {
                 "/assets/images/HomeNew/faculty-img/dr_shilpa_joshi.webp",
               facultyName: "Dr. Shilpa Joshi",
               courseName: "Senior Lecturer",
-              yearsOfExperience: "+ Years of Experience",
+              yearsOfExperience: "20+ Years of Experience",
             },
             {
               facultyImg:

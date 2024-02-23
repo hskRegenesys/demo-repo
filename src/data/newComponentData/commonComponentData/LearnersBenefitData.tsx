@@ -6,7 +6,7 @@ const LearnersBenefitData = {
   LearnersBenefitTickIcon: "./assets/images/HomeNew/VectorTick.svg",
   card: [
     {
-      LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img1.svg",
+      LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img3.svg",
       LearnersBenefitCardTitle: "World Class Learning",
       LearnersBenefittext: [
         "Learn from the World's Best Faculty & Industry Experts",
@@ -15,7 +15,7 @@ const LearnersBenefitData = {
       ],
     },
     {
-      LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img2.svg",
+      LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img1.svg",
       LearnersBenefitCardTitle: "Personalized Guidance with 24*7 Support",
       LearnersBenefittext: [
         "Dedicated Learning Managers",
