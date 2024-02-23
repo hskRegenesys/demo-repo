@@ -19,6 +19,7 @@ const BlogsByCategories = ({
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>("");
+  console.log("category", category);
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ slug: categorySlug });
@@ -66,7 +67,7 @@ const BlogsByCategories = ({
             <p className="h5 p-0">Category</p>
           </div>
           <div>
-            <h1 className="h3 p-0">{category}</h1>
+            <p className="h3 p-0">{category}</p>
           </div>
         </div>
       </div>
@@ -87,6 +88,7 @@ const BlogsByCategories = ({
         </Link>
         <div className="row">
           <div className="col-12 col-lg-9">
+            <h1 className="h5 p-0 m-0 fw-bold mt-3">{category} Blog</h1>
             {postList.length > 0 &&
               postList?.map((values) => {
                 return isLoading ? (
@@ -95,12 +97,12 @@ const BlogsByCategories = ({
                   </div>
                 ) : values?.posts?.length > 0 ? (
                   <div key={values?.category} className="py-3">
-                    <h2
+                    {/* <h2
                       className="h6 p-0 m-0 fw-bold"
                       dangerouslySetInnerHTML={{
                         __html: values?.category.toString(),
                       }}
-                    />
+                    /> */}
                     {values?.posts?.length > 0 ? (
                       <div className="row py-3">
                         {values?.posts?.map((item) => (
