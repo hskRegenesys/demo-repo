@@ -66,7 +66,7 @@ const BlogsByCategories = ({
             <p className="h5 p-0">Category</p>
           </div>
           <div>
-            <p className="h3 p-0">{category}</p>
+            <h1 className="h3 p-0">{category}</h1>
           </div>
         </div>
       </div>
