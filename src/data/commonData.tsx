@@ -47,6 +47,13 @@ const Data = {
         "Applied Data Science Course Online | Digital Regenesys",
       "basic-data-science":
         "Basic Data Science Course Online | Digital Regenesys",
+
+      // ------------------multiple-pages-meta-title------------------------
+      "online-courses":
+        "Online Courses: Learn Anytime, Anywhere | Digital Regenesys",
+      "data-science-course":
+        "Data Science Course: Master Analytical Skills | Digital Regenesys",
+
       thankYou: "Thank You",
       createMyWealth:
         "Investment, Trading, Personal Finance Course | Digital Regenesys",
@@ -248,6 +255,10 @@ Software Development  subjects,
       applied data science with python specialization, applied statistics vs data science, applied data science with python, applied data science with python specialization review, applied data science, applied data science course, what is applied data science
       `,
       "basic-data-science": "basic data science, basic data science course",
+      "online-courses":
+        "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
+      "data-science-course": `data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses`,
+
       thankYou: "Thank You",
       createMyWealth:
         "investing course, trading course, finance course, investment courses, investment courses in south africa, finance courses in south africa, distance learning finance courses, trading course in south africa",
@@ -320,6 +331,11 @@ Software Development  subjects,
         "Applied Data Science course will help you build a successful career as a Data Scientist with in-demand skills such as data analytics, machine learning, AI, and more.",
       "basic-data-science":
         "Basic Data Science course will help you build a successful career as a Data Scientist with in-demand skills such as data analytics, machine learning, AI, and more.",
+      "online-courses":
+        "Explore a variety of online courses to enhance your skills. Start learning at your own pace today. Join Digital Regenesys now to ignite your career!",
+      "data-science-course":
+        "Explore our comprehensive data science course. Master analytical skills and propel your career in data science. Join Digital Regenesys now to ignite your career!",
+
       thankYou: "Thank You",
       createMyWealth:
         "Digital Regenesys offers an all in one trading course, investment course, and finance course. Enrol for the Investment, Trading & Personal Finance course. Enquire now.",
@@ -363,6 +379,9 @@ Software Development  subjects,
         "/all-courses/data-science/advanced-data-science",
       "applied-data-science": "/all-courses/data-science/applied-data-science",
       "design-thinking": "/all-courses/design-thinking",
+      "online-courses": "/online-courses",
+      "data-science-course": "/data-science-course",
+
       Blog: "/blog ",
       "artificial-intelligence": "/all-courses/artificial-intelligence",
       "ai-introductory": "/all-courses/artificial-intelligence/ai-introductory",

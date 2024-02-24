@@ -46,11 +46,6 @@ const redirectURL = () => {
     //   destination: "/all-courses-new",
     //   permanent: true,
     // },
-    // {
-    //   source: "/multiple-pages-brand",
-    //   destination: "/404",
-    //   permanent: true,
-    // },
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -1058,19 +1053,17 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
+
+    // -------------------------multiple-pages-start---------------------------------
+
     {
-      source: "/all-courses-multiple",
-      destination: "/404",
+      source: "/all-courses-multiple/data-science-course",
+      destination: "/data-science-course",
       permanent: true,
     },
     {
-      source: "/all-courses-multiple/digital-marketing-1",
-      destination: "/digital-marketing-1",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-multiple/data-science-1",
-      destination: "/data-science-1",
+      source: "/all-courses-brand/online-courses",
+      destination: "/online-courses",
       permanent: true,
     },
   ];
@@ -1079,14 +1072,19 @@ const redirectURL = () => {
 
 const createReWrites = () => {
   const paths = [
+    // -------------------------multiple-pages-start---------------------------------
+
     {
-      source: "/digital-marketing-1",
-      destination: "/all-courses-multiple/digital-marketing-1",
+      source: "/data-science-course",
+      destination: "/all-courses-multiple/data-science-course",
     },
     {
-      source: "/data-science-1",
-      destination: "/all-courses-multiple/data-science-1",
+      source: "/online-courses",
+      destination: "/all-courses-brand/online-courses",
     },
+
+    // -------------------------multiple-pages-end---------------------------------
+
     {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
@@ -1203,16 +1201,6 @@ const createReWrites = () => {
     // {
     //   source: "/all-courses-new/digital-marketing-new",
     //   destination: "/all-courses-new/digital-marketing-new/702",
-    // },
-    // -------------------------multiple-pages-course---------------------------------
-
-    {
-      source: "/multiple-pages-brand",
-      destination: "/multiple-pages-brand",
-    },
-    // {
-    //   source: "/online-courses",
-    //   destination: "/multiple-pages-courses",
     // },
 
     // {
