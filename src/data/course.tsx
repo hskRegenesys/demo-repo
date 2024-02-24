@@ -136,8 +136,8 @@ export const courseData = {
         "Event Project Manager",
         "Project Coordinator and many more",
       ],
-      CertificateImage: ["PM_certificate.webp"],
-      imageName: "PM_certificate",
+      CertificateImage: ["PM_certificates.webp"],
+      imageName: "PM_certificates",
     },
 
     featureSeven: {
@@ -453,7 +453,7 @@ export const courseData = {
   //         "Innovation Manager ",
   //         "Business Development Manager",
   //       ],
-  //       CertificateImage: ["MD_certificate.webp"],
+  //       CertificateImage: ["MD_certificates.webp"],
   //       imageName: "MD_certificate",
   //     },
 
@@ -836,8 +836,8 @@ export const courseData = {
         "Business Analyst ",
         "Data Visualisation Specialist",
       ],
-      CertificateImage: ["DBA_certificate.webp"],
-      imageName: "PM_certificate",
+      CertificateImage: ["DBA_certificates.webp"],
+      imageName: "PM_certificates",
     },
 
     featureSeven: {
@@ -1561,7 +1561,7 @@ Participate in hands-on projects to build practical skills and develop a strong 
         "Full-Stack Developer",
         " Software Engineers",
       ],
-      CertificateImage: ["FSD_certificate.webp"],
+      CertificateImage: ["FSD_certificates.webp"],
       imageName: "FSD_certificate",
     },
 
@@ -2029,7 +2029,7 @@ If you are passionate about starting your own full-stack web development busines
         "Operations Analyst ",
         "Financial Analyst and many more",
       ],
-      CertificateImage: ["APDSCI_certificate.webp"],
+      CertificateImage: ["DSN_certificates.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -4758,7 +4758,7 @@ If you are passionate about starting your own full-stack web development busines
         "AI Project Manager",
         "  AI Entrepreneur, and many more",
       ],
-      CertificateImage: ["AIAAPP_certificate.webp"],
+      CertificateImage: ["AIN_certificates.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -5927,6 +5927,33 @@ If you are passionate about starting your own full-stack web development busines
       "dm/digital_marketing_tools15.webp",
       "dm/digital_marketing_tools16.webp",
     ],
+    courseCertificate: {
+      certificateTitle:
+        "Leading with Excellence: Data and Business Analytics Certificate Course",
+      certificateSubTitle:
+        "Earn a Data and Business Analytics Certificate from Digital Regenesys & Navigate the  Business Analytics Landscape. No coding knowledge is required.        ",
+      certificateSubSubTitle:
+        "With our Data and Business Analytics Certificate, you will gain a solid foundation in essential data analysis and interpretation skills for strategic decision-making. This No Code” course covers data visualisation, predictive analytics, and business intelligence tools. Participants will learn to effectively gather,  analyse, and present data to drive business growth and innovation.        ",
+      certificateListTitle:
+        "With the Data and Business Analytics Certificate, you will get:",
+
+      certificateSkillList: [
+        "Data Analytics",
+        "Statistical Analysis",
+        "Predictive Analytics",
+        "Prescriptive Analytics",
+      ],
+      certificateListPara:
+        " Our Data and Business Analytics “No Code” course can open up various career opportunities across various industries. Here are some prominent career opportunities available to individuals who have completed a Data and Business Analytics course:",
+      certificateRolesList: [
+        "Data Analyst",
+        "Reporting Analyst",
+        "Business Analyst ",
+        "Data Visualisation Specialist",
+      ],
+      CertificateImage: ["DMN_certificates.webp"],
+      imageName: "PM_certificate",
+    },
     featureSeven: {
       title: "Meet Our Staff",
       desc: "Revolutionise your career with future-ready skills",
@@ -7670,7 +7697,7 @@ If you are passionate about starting your own full-stack web development busines
         "User Experience (UX) Designer",
         "Innovation Manager and many more",
       ],
-      CertificateImage: ["DTC_certificate.webp"],
+      CertificateImage: ["DTC_certificates.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
@@ -8357,7 +8384,7 @@ If you are passionate about starting your own full-stack web development busines
         "Cyber Security Manager ",
         "Security Architect and many more",
       ],
-      CertificateImage: ["CSC_certificate_fundamentals.webp"],
+      CertificateImage: ["CSC_certificates.webp"],
     },
     featureSeven: {
       title: "Meet our staff",
