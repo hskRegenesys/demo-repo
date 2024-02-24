@@ -46,11 +46,11 @@ const redirectURL = () => {
     //   destination: "/all-courses-new",
     //   permanent: true,
     // },
-    // {
-    //   source: "/multiple-pages-brand",
-    //   destination: "/404",
-    //   permanent: true,
-    // },
+    {
+      source: "/multiple-pages-brand",
+      destination: "/404",
+      permanent: true,
+    },
 
     {
       source: "/programs/data-science/basic-data-science",
