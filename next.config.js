@@ -29,15 +29,9 @@ const redirectURL = () => {
       destination: "/all-courses/data-science",
       permanent: true,
     },
-
-    // {
-    //   source: "/programs",
-    //   destination: "/all-courses",
-    //   permanent: true,
-    // },
     {
-      source: "/all-courses-new",
-      destination: "/404",
+      source: "/programs",
+      destination: "/all-courses",
       permanent: true,
     },
 
