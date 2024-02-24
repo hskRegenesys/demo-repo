@@ -1065,28 +1065,38 @@ const redirectURL = () => {
     },
     {
       source: "/all-courses-multiple/digital-marketing-1",
-      destination: "/digital-marketing-1",
+      destination: "/404",
       permanent: true,
     },
     {
       source: "/all-courses-multiple/data-science-1",
-      destination: "/data-science-1",
+      destination: "/404",
       permanent: true,
     },
+    // {
+    //   source: "/all-courses-multiple/digital-marketing-1",
+    //   destination: "/digital-marketing-1",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-multiple/data-science-1",
+    //   destination: "/data-science-1",
+    //   permanent: true,
+    // },
   ];
   return path;
 };
 
 const createReWrites = () => {
   const paths = [
-    {
-      source: "/digital-marketing-1",
-      destination: "/all-courses-multiple/digital-marketing-1",
-    },
-    {
-      source: "/data-science-1",
-      destination: "/all-courses-multiple/data-science-1",
-    },
+    // {
+    //   source: "/digital-marketing-1",
+    //   destination: "/all-courses-multiple/digital-marketing-1",
+    // },
+    // {
+    //   source: "/data-science-1",
+    //   destination: "/all-courses-multiple/data-science-1",
+    // },
     {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
@@ -1206,10 +1216,10 @@ const createReWrites = () => {
     // },
     // -------------------------multiple-pages-course---------------------------------
 
-    {
-      source: "/multiple-pages-brand",
-      destination: "/multiple-pages-brand",
-    },
+    // {
+    //   source: "/multiple-pages-brand",
+    //   destination: "/multiple-pages-brand",
+    // },
     // {
     //   source: "/online-courses",
     //   destination: "/multiple-pages-courses",
