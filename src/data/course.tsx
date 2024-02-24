@@ -5927,33 +5927,33 @@ If you are passionate about starting your own full-stack web development busines
       "dm/digital_marketing_tools15.webp",
       "dm/digital_marketing_tools16.webp",
     ],
-    courseCertificate: {
-      certificateTitle:
-        "Leading with Excellence: Data and Business Analytics Certificate Course",
-      certificateSubTitle:
-        "Earn a Data and Business Analytics Certificate from Digital Regenesys & Navigate the  Business Analytics Landscape. No coding knowledge is required.        ",
-      certificateSubSubTitle:
-        "With our Data and Business Analytics Certificate, you will gain a solid foundation in essential data analysis and interpretation skills for strategic decision-making. This No Code” course covers data visualisation, predictive analytics, and business intelligence tools. Participants will learn to effectively gather,  analyse, and present data to drive business growth and innovation.        ",
-      certificateListTitle:
-        "With the Data and Business Analytics Certificate, you will get:",
+    // courseCertificate: {
+    //   certificateTitle:
+    //     "Leading with Excellence: Data and Business Analytics Certificate Course",
+    //   certificateSubTitle:
+    //     "Earn a Data and Business Analytics Certificate from Digital Regenesys & Navigate the  Business Analytics Landscape. No coding knowledge is required.        ",
+    //   certificateSubSubTitle:
+    //     "With our Data and Business Analytics Certificate, you will gain a solid foundation in essential data analysis and interpretation skills for strategic decision-making. This No Code” course covers data visualisation, predictive analytics, and business intelligence tools. Participants will learn to effectively gather,  analyse, and present data to drive business growth and innovation.        ",
+    //   certificateListTitle:
+    //     "With the Data and Business Analytics Certificate, you will get:",
 
-      certificateSkillList: [
-        "Data Analytics",
-        "Statistical Analysis",
-        "Predictive Analytics",
-        "Prescriptive Analytics",
-      ],
-      certificateListPara:
-        " Our Data and Business Analytics “No Code” course can open up various career opportunities across various industries. Here are some prominent career opportunities available to individuals who have completed a Data and Business Analytics course:",
-      certificateRolesList: [
-        "Data Analyst",
-        "Reporting Analyst",
-        "Business Analyst ",
-        "Data Visualisation Specialist",
-      ],
-      CertificateImage: ["DMN_certificates.webp"],
-      imageName: "PM_certificate",
-    },
+    //   certificateSkillList: [
+    //     "Data Analytics",
+    //     "Statistical Analysis",
+    //     "Predictive Analytics",
+    //     "Prescriptive Analytics",
+    //   ],
+    //   certificateListPara:
+    //     " Our Data and Business Analytics “No Code” course can open up various career opportunities across various industries. Here are some prominent career opportunities available to individuals who have completed a Data and Business Analytics course:",
+    //   certificateRolesList: [
+    //     "Data Analyst",
+    //     "Reporting Analyst",
+    //     "Business Analyst ",
+    //     "Data Visualisation Specialist",
+    //   ],
+    //   CertificateImage: ["DMN_certificates.webp"],
+    //   imageName: "PM_certificate",
+    // },
     featureSeven: {
       title: "Meet Our Staff",
       desc: "Revolutionise your career with future-ready skills",
