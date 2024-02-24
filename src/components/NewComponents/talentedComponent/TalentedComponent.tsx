@@ -47,8 +47,8 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   return (
     <div className={styles.talentedComponent}>
       <div className={styles.leftSection}>
-        <h1>{title}</h1>
-        <p>{heading}</p>
+        <h2>{title}</h2>
+        <h3>{heading}</h3>
         <button className={styles.btnStart} onClick={handleEnrollButtonClick}>
           {buttonText}
         </button>

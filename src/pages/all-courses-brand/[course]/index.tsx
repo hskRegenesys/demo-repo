@@ -60,7 +60,7 @@ const SubCourseDetails = dynamic(
 const Course = (props: any) => {
   const router = useRouter();
 
-  const pageName = router?.query?.course?.toString().replace("-", " ");
+  const pageName = router?.query?.course?.toString().replace(/-/g, " ");
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
@@ -135,15 +135,7 @@ const Course = (props: any) => {
         type={Constants.course}
         data={{ name: pageName, description: pageName }}
       />
-      <BreadcrumbsDR
-        title={router?.query?.course?.toString().replace("-", " ")}
-        // parent="All-Courses-New"
-        // parentHref="/all-courses-new"
-        parentToParent={parentToParentName()}
-        parentToParentHref={`/${programBaseUrl}/${urlInfo(
-          parentToParentName()
-        )}`}
-      />{" "}
+      <BreadcrumbsDR title={pageName} page={pageName} />
       <BannerWithImg
         handleEnrollButtonClick={handleEnrollButtonClick}
         data={MultiplePagesBrandData.BannerWithImg}

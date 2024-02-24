@@ -84,14 +84,14 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
           <div className={styles.card}>
             <div className={styles.topSection}>
               {/* <span className={styles.point1}>{topSectionPoint1}</span> */}
-              <span className={styles.point2}>
+              <h2 className={styles.point2}>
                 {topSectionPoint1}{" "}
                 <span className={styles.pointInside}>{topSectionPoint2}</span>
-              </span>
+              </h2>
             </div>
-            <h2 className={styles.courseHeading}>
+            <h3 className={styles.courseHeading}>
               Your Gateway to Success Starts with <span>{coursePageName}</span>
-            </h2>
+            </h3>
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles["usp-section-container"]}>

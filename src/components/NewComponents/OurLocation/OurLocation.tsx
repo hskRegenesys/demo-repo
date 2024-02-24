@@ -189,13 +189,13 @@ const OurLocation: React.FC = () => {
     <div className={Styles.locationContainer}>
       <div className={Styles.TopSectionMobile}>
         <h2>{smallHeading}</h2>
-        <h1>{bigHeading}</h1>
+        <h3>{bigHeading}</h3>
       </div>
 
       <div className={Styles.leftSection}>
         <div className={Styles.TopSectionDesktap}>
           <h2>{smallHeading}</h2>
-          <h1>{bigHeading}</h1>
+          <h3>{bigHeading}</h3>
         </div>
 
         <p>

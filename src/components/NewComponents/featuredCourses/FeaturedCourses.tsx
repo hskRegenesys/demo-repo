@@ -95,12 +95,12 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
 
   return (
     <div className={Styles.featuredCoursesContainer} style={style}>
-      <h2 className={Styles.smallHeading}>
+      <h3 className={Styles.smallHeading}>
         {AllCourcesCardData.FeaturedCoursesHeading}
-      </h2>
-      <h1 className={Styles.bigHeading}>
+      </h3>
+      <h2 className={Styles.bigHeading}>
         {AllCourcesCardData.FeaturedCoursesSubHeading}
-      </h1>
+      </h2>
       <div>
         <img
           src="/assets/images/HomeNew/Rocket BG.svg"

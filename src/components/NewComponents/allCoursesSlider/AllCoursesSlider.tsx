@@ -116,12 +116,12 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   }
   return (
     <div className={Styles.allCoursesSliderContainer} style={style}>
-      <h2 className={Styles.smallHeading}>
+      <h3 className={Styles.smallHeading}>
         {AllCourcesCardData.allCoursesSliderHeading}
-      </h2>
-      <h1 className={Styles.bigHeading}>
+      </h3>
+      <h2 className={Styles.bigHeading}>
         {AllCourcesCardData.allCoursesSliderSubHeading}
-      </h1>
+      </h2>
       <div>
         <img
           src="/assets/images/HomeNew/Rocket BG.svg"

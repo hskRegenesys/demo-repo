@@ -1057,25 +1057,107 @@ const redirectURL = () => {
     // -------------------------multiple-pages-start---------------------------------
 
     {
+      source: "/all-courses-brand/online-courses",
+      destination: "/online-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/online-course",
+      destination: "/online-course",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/courses-online",
+      destination: "/courses-online",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/online-coding-courses",
+      destination: "/online-coding-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/online-courses-with-certificates",
+      destination: "/online-courses-with-certificates",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/online-certification-courses",
+      destination: "/online-certification-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/coding-courses-online",
+      destination: "/coding-courses-online",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/IT-courses-online",
+      destination: "/IT-courses-online",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/online-certificate-courses",
+      destination: "/online-certificate-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-brand/online-courses-for-adults",
+      destination: "/online-courses-for-adults",
+      permanent: true,
+    },
+    // -------------------------multiple-pages-courses---------------------------------
+    ///==================DS======================
+    {
       source: "/all-courses-multiple/data-science-course",
       destination: "/data-science-course",
       permanent: true,
     },
     {
-      source: "/all-courses-brand/online-courses",
-      destination: "/online-courses",
+      source: "/all-courses-multiple/data-science-courses",
+      destination: "/data-science-courses",
       permanent: true,
     },
-    // {
-    //   source: "/all-courses-multiple/digital-marketing-1",
-    //   destination: "/digital-marketing-1",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/all-courses-multiple/data-science-1",
-    //   destination: "/data-science-1",
-    //   permanent: true,
-    // },
+    {
+      source: "/all-courses-multiple/courses-in-data-science",
+      destination: "/courses-in-data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/course-for-data-science",
+      destination: "/course-for-data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/data-science-online-courses",
+      destination: "/data-science-online-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/data-science-course-online",
+      destination: "/data-science-course-online",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/courses-data-science",
+      destination: "/courses-data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/online-data-science-courses",
+      destination: "/online-data-science-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/best-data-science-courses",
+      destination: "/best-data-science-courses",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/a-crash-course-in-data-science",
+      destination: "/a-crash-course-in-data-science",
+      permanent: true,
+    },
   ];
   return path;
 };
@@ -1084,15 +1166,89 @@ const createReWrites = () => {
   const paths = [
     // -------------------------multiple-pages-start---------------------------------
 
+    // ------------brand-------------
+    {
+      source: "/online-courses",
+      destination: "/all-courses-brand/online-courses",
+    },
+    {
+      source: "/online-course",
+      destination: "/all-courses-brand/online-course",
+    },
+    {
+      source: "/courses-online",
+      destination: "/all-courses-brand/courses-online",
+    },
+    {
+      source: "/online-coding-courses",
+      destination: "/all-courses-brand/online-coding-courses",
+    },
+    {
+      source: "/online-courses-with-certificates",
+      destination: "/all-courses-brand/online-courses-with-certificates",
+    },
+    {
+      source: "/online-certification-courses",
+      destination: "/all-courses-brand/online-certification-courses",
+    },
+    {
+      source: "/coding-courses-online",
+      destination: "/all-courses-brand/coding-courses-online",
+    },
+    {
+      source: "/IT-courses-online",
+      destination: "/all-courses-brand/IT-courses-online",
+    },
+    {
+      source: "/online-certificate-courses",
+      destination: "/all-courses-brand/online-certificate-courses",
+    },
+    {
+      source: "/online-courses-for-adults",
+      destination: "/all-courses-brand/online-courses-for-adults",
+    },
+    // -------------------------multiple-pages-courses---------------------------------
+    ///==================DS======================
     {
       source: "/data-science-course",
       destination: "/all-courses-multiple/data-science-course",
     },
     {
-      source: "/online-courses",
-      destination: "/all-courses-brand/online-courses",
+      source: "/data-science-courses",
+      destination: "/all-courses-multiple/data-science-courses",
     },
-
+    {
+      source: "/courses-in-data-science",
+      destination: "/all-courses-multiple/courses-in-data-science",
+    },
+    {
+      source: "/course-for-data-science",
+      destination: "/all-courses-multiple/course-for-data-science",
+    },
+    {
+      source: "/data-science-online-courses",
+      destination: "/all-courses-multiple/data-science-online-courses",
+    },
+    {
+      source: "/data-science-course-online",
+      destination: "/all-courses-multiple/data-science-course-online",
+    },
+    {
+      source: "/courses-data-science",
+      destination: "/all-courses-multiple/courses-data-science",
+    },
+    {
+      source: "/online-data-science-courses",
+      destination: "/all-courses-multiple/online-data-science-courses",
+    },
+    {
+      source: "/best-data-science-courses",
+      destination: "/all-courses-multiple/best-data-science-courses",
+    },
+    {
+      source: "/a-crash-course-in-data-science",
+      destination: "/all-courses-multiple/a-crash-course-in-data-science",
+    },
     // -------------------------multiple-pages-end---------------------------------
 
     {

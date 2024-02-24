@@ -28,7 +28,7 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
   return (
     <div className={Styles.LsSectionContainer}>
       <h2 className={Styles.LsSectionTitle}>{data.LsSectionTitle}</h2>
-      <h2 className={Styles.LsSectionHeding}>{data.LsHeding}</h2>
+      <h3 className={Styles.LsSectionHeding}>{data.LsHeding}</h3>
 
       <div className={Styles.LsCardsContainer}>
         <Swiper
