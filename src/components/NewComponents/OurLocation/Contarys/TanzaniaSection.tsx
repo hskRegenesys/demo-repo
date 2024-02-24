@@ -1,5 +1,5 @@
 import React from "react";
-import OurLocationData from "../OurLocationData";
+import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 
 import Styles from "../OurLocation.module.css";
 
@@ -17,7 +17,9 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
   <div className={`${Styles.TanzaniaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.TanzaniaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.TanzaniaContaryShowHoverDetails}  ${
+          Styles.ContaryShowHoverDetails
+        } ${isHovered ? Styles.active : ""}`}
       >
         <img
           src={OurLocationData.Tanzania.countryFlagImg}

@@ -52,7 +52,9 @@ const Content3: React.FC<Content3Props> = ({
                 <img src={faculty.facultyImg} alt={`Faculty ${index + 1}`} />
                 <p className={styles.facultyName}>{faculty.facultyName}</p>
                 <p className={styles.courseName}>{faculty.courseName}</p>
-                <span>{faculty.yearsOfExperience}</span>
+                {faculty.yearsOfExperience ? (
+                  <span>{faculty.yearsOfExperience}</span>
+                ) : null}
               </div>
             </SwiperSlide>
           ))}

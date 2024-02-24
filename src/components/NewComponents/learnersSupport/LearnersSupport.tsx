@@ -18,9 +18,13 @@ interface LearnersSupportSectionData {
 
 interface LearnersSupportSectionProps {
   data: LearnersSupportSectionData;
+  handleEnrollButtonClick: () => void;
 }
 
-const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({ data }) => {
+const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
+  data,
+  handleEnrollButtonClick,
+}) => {
   return (
     <div className={Styles.LsSectionContainer}>
       <h2 className={Styles.LsSectionTitle}>{data.LsSectionTitle}</h2>
@@ -54,7 +58,10 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({ data }) => {
                   <p className={Styles.LsText}>{card.LsText}</p>
                 </div>
                 <div className={Styles.buttonsContainer}>
-                  <button className={Styles.learnMoreButton}>
+                  <button
+                    className={Styles.learnMoreButton}
+                    onClick={handleEnrollButtonClick}
+                  >
                     {card.ButtenText}{" "}
                   </button>
                 </div>

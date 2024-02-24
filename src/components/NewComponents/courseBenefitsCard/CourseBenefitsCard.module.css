@@ -3,7 +3,10 @@
 .courseBenefitsCardContainer {
   display: flex;
   flex-direction: column;
-  margin: 88px 108px 0px 108px;
+  padding-top: 80px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
 }
 
 .courseBenefitsCardContainer h2 {
@@ -102,7 +105,8 @@
 
 @media screen and (max-width: 768px) {
   .courseBenefitsCardContainer {
-    margin: 40px 16px 0pc 16px;
+    padding: 0px 20px;
+    margin-top: 40px;
   }
   .cardsContainer {
     display: grid;

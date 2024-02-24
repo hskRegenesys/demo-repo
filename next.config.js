@@ -35,11 +35,17 @@ const redirectURL = () => {
       permanent: true,
     },
 
+    // {
+    //   source: "/programsnew",
+    //   destination: "/all-courses-new",
+    //   permanent: true,
+    // },
     {
       source: "/multiple-pages-brand",
       destination: "/404",
       permanent: true,
     },
+
     {
       source: "/programs/data-science/basic-data-science",
       destination: "/all-courses/data-science/basic-data-science",
@@ -1056,16 +1062,53 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
+    {
+      source: "/all-courses-multiple",
+      destination: "/404",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/digital-marketing-1",
+      destination: "/404",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-multiple/data-science-1",
+      destination: "/404",
+      permanent: true,
+    },
+    // {
+    //   source: "/all-courses-multiple/digital-marketing-1",
+    //   destination: "/digital-marketing-1",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-multiple/data-science-1",
+    //   destination: "/data-science-1",
+    //   permanent: true,
+    // },
   ];
   return path;
 };
 
 const createReWrites = () => {
   const paths = [
+    // {
+    //   source: "/digital-marketing-1",
+    //   destination: "/all-courses-multiple/digital-marketing-1",
+    // },
+    // {
+    //   source: "/data-science-1",
+    //   destination: "/all-courses-multiple/data-science-1",
+    // },
     {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
+    // {
+    //   source: "/all-courses/management-development",
+    //   destination: "/all-courses/management-development/48",
+    // },
     {
       source: "/all-courses/data-and-business-analytics",
       destination: "/all-courses/data-and-business-analytics/30",
@@ -1178,9 +1221,14 @@ const createReWrites = () => {
     // -------------------------multiple-pages-course---------------------------------
 
     // {
-    //   source: "/digital-marketing-1",
-    //   destination: "/all-courses-multiple/digital-marketing-1",
+    //   source: "/multiple-pages-brand",
+    //   destination: "/multiple-pages-brand",
     // },
+    // {
+    //   source: "/online-courses",
+    //   destination: "/multiple-pages-courses",
+    // },
+
     // {
     //   source: "/:path*",
     //   destination: "/404",

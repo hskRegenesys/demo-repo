@@ -1,7 +1,10 @@
 /* LsSection.module.css */
 
 .LsSectionContainer {
-  margin: 100px 108px 0px 108px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .LsSectionTitle {
@@ -21,9 +24,9 @@
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 130%; /* 52px */
-  letter-spacing: -0.8px;
+  letter-spacing: 1px;
   margin-bottom: 56px;
 }
 
@@ -86,26 +89,6 @@
 
 /* swiper style */
 
-.swiperStyle {
-  --swiper-pagination-color: #008554;
-  --swiper-pagination-bullet-size: 8px;
-  --swiper-pagination-bullet-width: 8px;
-  --swiper-pagination-bullet-height: 8px;
-  --swiper-pagination-bullet-inactive-color: #008554;
-  --swiper-pagination-bullet-inactive-opacity: 0.2;
-  --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-pagination-bullet-vertical-gap: 120px;
-}
-.swiperStyle {
-  --add-bottom: 80px;
-  padding-bottom: var(--add-bottom);
-  align-items: center;
-}
-.swiperStyle [class^="swiper-button-"] {
-  top: calc(50% - var(--add-bottom) / 2);
-}
-
 .buttonsContainer {
   margin-top: 24px;
   display: flex;
@@ -131,13 +114,37 @@
 
 @media (max-width: 920px) {
   .LsSectionContainer {
-    margin: 32px 16px;
+    padding: 0px 20px;
+    margin-top: 40px;
   }
   .LsSectionTitle {
-    font-size: 24px;
-    margin-bottom: 32px;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .LsSectionHeding {
+    font-size: 12px;
+    margin-bottom: 20px;
   }
   .LsCard {
     margin: 0 auto;
+  }
+  .swiperStyle {
+    --swiper-pagination-color: #008554;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #008554;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 120px;
+  }
+  .swiperStyle {
+    --add-bottom: 80px;
+    padding-bottom: var(--add-bottom);
+    align-items: center;
+  }
+  .swiperStyle [class^="swiper-button-"] {
+    top: calc(50% - var(--add-bottom) / 2);
   }
 }

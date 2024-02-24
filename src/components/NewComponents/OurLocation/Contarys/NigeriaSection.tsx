@@ -1,7 +1,7 @@
 // KenyaSection.tsx
 
 import React from "react";
-import OurLocationData from "../OurLocationData";
+import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 
 import Styles from "../OurLocation.module.css";
 
@@ -19,19 +19,21 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
   <div className={`${Styles.NigeriaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.NigeriaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.NigeriaContaryShowHoverDetails} ${
+          Styles.ContaryShowHoverDetails
+        } ${isHovered ? Styles.active : ""}`}
       >
-        <img
-          src={OurLocationData.Nigeria.countryFlagImg}
-          className={Styles.contaryFlag}
-          alt="Country Flag"
-        />
         <div
           className={`${Styles.NigeriacontaryAdressCard} ${Styles.contaryAdress}`}
         >
           <span>{OurLocationData.Nigeria.countryDescription}</span>
           <h5>{OurLocationData.Nigeria.countryAddress}</h5>
         </div>
+        <img
+          src={OurLocationData.Nigeria.countryFlagImg}
+          className={Styles.contaryFlag}
+          alt="Country Flag"
+        />
       </div>
     )}
     {!isHovered && (

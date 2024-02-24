@@ -1,7 +1,7 @@
 // KenyaSection.tsx
 
 import React from "react";
-import OurLocationData from "../OurLocationData";
+import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 
 import Styles from "../OurLocation.module.css";
 
@@ -19,7 +19,9 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
   <div className={`${Styles.IndiaSection} `}>
     {isHovered && (
       <div
-        className={`${Styles.IndiaContaryShowHoverDetails}  ${Styles.ContaryShowHoverDetails}`}
+        className={`${Styles.IndiaContaryShowHoverDetails} ${
+          Styles.ContaryShowHoverDetails
+        } ${isHovered ? Styles.active : ""}`}
       >
         <img
           src={OurLocationData.India.countryFlagImg}

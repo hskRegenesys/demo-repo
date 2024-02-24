@@ -1,6 +1,6 @@
 // OurLocation.tsx
 import React, { useState, useEffect } from "react";
-import OurLocationData from "./OurLocationData";
+import OurLocationData from "../../../data/newComponentData/commonComponentData/OurLocationData";
 import Styles from "./OurLocation.module.css";
 import UsaSection from "./Contarys/UsaSection";
 import KenyaSection from "./Contarys/KenyaSecion";
@@ -36,6 +36,7 @@ const OurLocation: React.FC = () => {
   const [isUgandaHovered, setUgandaHovered] = useState(false);
   const [isNigeriaHovered, setNigeriaHovered] = useState(false);
   const [isTanzaniaHovered, setTanzaniaHovered] = useState(false);
+  let usaHoverTimeout: NodeJS.Timeout;
 
   const handleUsaMouseEnter = () => {
     setUsaHovered(true);
@@ -47,7 +48,6 @@ const OurLocation: React.FC = () => {
     setNigeriaHovered(false);
     setTanzaniaHovered(false);
   };
-
   const handleUsaMouseLeave = () => {
     setUsaHovered(false);
   };
@@ -221,13 +221,7 @@ const OurLocation: React.FC = () => {
               onMouseLeave={handleUsaMouseLeave}
             />
           </div>
-          <div className={Styles.KenyaLocation}>
-            <KenyaSection
-              isHovered={isKenyaHovered}
-              onMouseEnter={handleKenyaMouseEnter}
-              onMouseLeave={handleKenyaMouseLeave}
-            />
-          </div>
+
           <div className={Styles.IndiaLocation}>
             <IndiaSection
               isHovered={isIndiaHovered}
@@ -255,6 +249,14 @@ const OurLocation: React.FC = () => {
               isHovered={isNigeriaHovered}
               onMouseEnter={handleNigeriaMouseEnter}
               onMouseLeave={handleNigeriaMouseLeave}
+            />
+          </div>
+
+          <div className={Styles.KenyaLocation}>
+            <KenyaSection
+              isHovered={isKenyaHovered}
+              onMouseEnter={handleKenyaMouseEnter}
+              onMouseLeave={handleKenyaMouseLeave}
             />
           </div>
           <div className={Styles.tanzaniaLocation}>

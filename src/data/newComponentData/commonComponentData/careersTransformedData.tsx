@@ -26,11 +26,11 @@ const careersTransformedData = {
   swiperCardContainer: [
     {
       playImg: "/assets/images/HomeNew/Polygon.svg",
-      profileImg: "/assets/images/HomeNew/profile.webp",
-      name: "Aravinth Rajasekar",
-      role: "Research Scientist",
+      profileImg: "/assets/images/HomeNew/students/Testimonial-1.webp",
+      name: "Effiong Udo Inyang",
+      role: "Data science",
       experienceText:
-        "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enroll for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
       riseImg: "/assets/images/HomeNew/rise.webp",
       firstRole: "Data Scientist",
       secondRole: "Research Scientist",
@@ -41,11 +41,11 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/HomeNew/Polygon.svg",
-      profileImg: "/assets/images/HomeNew/profile.webp",
-      name: "Aravinth Rajasekar",
-      role: "Research Scientist",
+      profileImg: "/assets/images/HomeNew/students/Testimonial-2.webp",
+      name: "Thibedi Grandy Mmatli",
+      role: "Cyber security",
       experienceText:
-        "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        "The best part about the Cybersecurity course that I took at Digital Regenesys is that my lecturer helped me greatly by solving my doubts during and outside the class as well. Vijal Mam was very helpful and she made sure that each and every student in the class understood the course properly.",
       riseImg: "/assets/images/HomeNew/rise.webp",
       firstRole: "Data Scientist",
       secondRole: "Research Scientist",
@@ -56,11 +56,11 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/HomeNew/Polygon.svg",
-      profileImg: "/assets/images/HomeNew/profile.webp",
-      name: "Aravinth Rajasekar",
-      role: "Research Scientist",
+      profileImg: "/assets/images/HomeNew/students/Testimonial-3.webp",
+      name: "Akshay Patil",
+      role: "Machine Learning",
       experienceText:
-        "Experience the dynamic learning environment of our live classes, where you can engage with expert instructors and peers in real-time and take your skills to the next level.",
+        "After completing my course in Machine Learning, I registered myself for Data Science that was taught by Dr. Laika and I have to say both my instructors were very helpful and went beyond their ways to teach me. They also helped me create a professional LinkedIn profile. I am glad that I chose Digital Regenesys for my learning courses.",
       riseImg: "/assets/images/HomeNew/rise.webp",
       firstRole: "Data Scientist",
       secondRole: "Research Scientist",
@@ -69,7 +69,36 @@ const careersTransformedData = {
       StudentVidio:
         "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
     },
-    // Repeat the above structure for additional swiper cards
+    {
+      playImg: "/assets/images/HomeNew/Polygon.svg",
+      profileImg: "/assets/images/HomeNew/students/Testimonial-4.webp",
+      name: "Dhiraj Gaikwad",
+      role: "Artificial Intelligence",
+      experienceText:
+        "I heard about the Artificial Intelligence course from Digital Regenesys, as a colleague of mine did it from there. I took the admission and I must say that I got my promotion because of Digital Regenesys. The overall procedure from talking to the counselors to ending the course, it helped me learn a lot and upskill myself the way I wanted.",
+      riseImg: "/assets/images/HomeNew/rise.webp",
+      firstRole: "Data Scientist",
+      secondRole: "Research Scientist",
+      companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+      companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      StudentVidio:
+        "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
+    },
+    {
+      playImg: "/assets/images/HomeNew/Polygon.svg",
+      profileImg: "/assets/images/HomeNew/students/Testimonial-5.webp",
+      name: "Akshay Patil",
+      role: "Machine Learning",
+      experienceText:
+        "After completing my course in Machine Learning, I registered myself for Data Science that was taught by Dr. Laika and I have to say both my instructors were very helpful and went beyond their ways to teach me. They also helped me create a professional LinkedIn profile. I am glad that I chose Digital Regenesys for my learning courses.",
+      riseImg: "/assets/images/HomeNew/rise.webp",
+      firstRole: "Data Scientist",
+      secondRole: "Research Scientist",
+      companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+      companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+      StudentVidio:
+        "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
+    },
   ],
 };
 

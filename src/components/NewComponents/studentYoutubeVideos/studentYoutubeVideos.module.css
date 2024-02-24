@@ -1,6 +1,8 @@
 .container {
   text-align: center;
-  margin: 64px 108px;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .title {
@@ -57,7 +59,8 @@
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
   .container {
-    margin: 44px 16px 60px 16px;
+    margin: 44px 16px 0px 16px;
+    padding-top: 0px;
   }
   .title {
     margin-bottom: 32px;

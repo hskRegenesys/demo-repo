@@ -2,9 +2,12 @@
 
 .allCoursesSliderContainer {
   /* display: flex; */
-  padding: 72px 108px 0px 108px;
+  padding-top: 88px;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1224px;
+  width: 100%;
 }
 
 .smallHeading {
@@ -44,7 +47,7 @@
   display: flex;
   margin: 0 auto;
   height: 100%;
-  max-width: 360px;
+  max-width: 386px;
   padding: 24px 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -232,7 +235,7 @@
     align-items: center;
   }
   .allCoursesSliderContainer {
-    padding: 0px 16px 0px 16px;
+    padding: 40px 16px 0px 16px;
     background: none !important;
   }
   .rocketImg {
@@ -271,5 +274,11 @@
   .icon {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .rocketImg {
+    display: none;
   }
 }

@@ -1,7 +1,10 @@
 /* blogSection.module.css */
 
 .blogSectionContainer {
-  margin: 100px 108px 0px 108px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .blogSectionTitle {
@@ -116,7 +119,8 @@
 
 @media (max-width: 920px) {
   .blogSectionContainer {
-    margin: 32px 16px;
+    padding: 0px 20px;
+    margin-top: 40px;
   }
   .blogSectionTitle {
     font-size: 24px;

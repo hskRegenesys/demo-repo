@@ -1,9 +1,10 @@
 /* StudentReview.module.css */
 
 .cardContainer {
-  flex-direction: column;
-  align-items: center;
-  margin: 100px 108px 0px 108px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1224px;
+  padding-top: 100px;
 }
 .Title {
   color: #008554;
@@ -39,6 +40,7 @@
   margin: 0 auto;
   align-items: center;
   position: relative;
+  height: 100%;
   border-radius: 20px;
   border: 1px solid #008554;
   background: linear-gradient(180deg, #f0fdf4 0%, rgba(255, 255, 255, 0) 100%);
@@ -46,10 +48,10 @@
 
 .studentReviewSideTag {
   position: absolute;
-  top: 4px;
-  right: -19px;
-  width: 158px;
-  height: 80px;
+  top: 0px;
+  right: 0px;
+  width: 102px;
+  height: 106px;
 }
 
 .studentReviewCardImg {
@@ -132,7 +134,8 @@
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
   .cardContainer {
-    margin: 52px 16px 0px 16px;
+    margin-top: 40px;
+    padding: 0px;
   }
   .Title {
     font-size: 14px;
@@ -141,6 +144,7 @@
   .studentReviewCard {
     max-width: 296px;
     padding: 36px 20px;
+    width: 100%;
   }
   .heading {
     font-size: 24px;
@@ -148,10 +152,10 @@
     padding: 0px 18px;
   }
   .studentReviewSideTag {
-    top: 8px;
-    right: -15px;
-    width: 120px;
-    height: 60px;
+    top: 0px;
+    right: 0px;
+    width: 78px;
+    height: 78px;
   }
   .studentReviewCardImg {
     width: 60px;

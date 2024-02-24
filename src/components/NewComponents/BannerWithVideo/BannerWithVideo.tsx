@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
+import { Modal } from "react-bootstrap";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import { useRouter } from "next/router";
 
 interface Point {
+  data: BannerCourseData; // This is missing in the original code
   text: string;
 }
 
@@ -21,6 +25,22 @@ type BannerCourseData = {
   BrochureIcon?: string;
   vidoPlayIcon?: string;
   youtubeVideoLink: string;
+  UspSectionData: {
+    part1: {
+      card1text: string;
+      iconImage1: string;
+    };
+    part2: {
+      card2text: string;
+      enrollmentCount: string;
+      iconImage2: string;
+      duration: string;
+    };
+    part3: {
+      card3text: string;
+      iconImage3: string;
+    };
+  };
 };
 
 const BannerWithVideo: React.FC<BannerComponentProps> = ({
@@ -35,7 +55,32 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
     topSectionPoint2,
     BrochureIcon,
     vidoPlayIcon,
+    UspSectionData: { part1, part2, part3 },
   } = data;
+
+  const router = useRouter();
+  const [count, setCount] = useState("0");
+  const [show, setShow] = useState<boolean>(false);
+  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const [title, setTitle] = useState("");
+
+  useEffect(() => {
+    let start = 0;
+    const end = parseInt(part2.enrollmentCount.substring(0, 3));
+
+    if (start === end) return;
+
+    // Fix the duration to 2000 milliseconds (2 seconds)
+    let incrementTime = 2000 / end;
+
+    let timer = setInterval(() => {
+      start += 1;
+      setCount(String(start) + part2.enrollmentCount.substring(3));
+      if (start === end) clearInterval(timer);
+    }, incrementTime);
+
+    return () => clearInterval(timer);
+  }, [part2.enrollmentCount]);
 
   return (
     <div className={styles.bannerSection}>
@@ -50,21 +95,49 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               Certification Programme in <span>{coursePageName}</span>
             </h2>
             <p className={styles.contentText}>{contentText}</p>
+
+            <div className={styles["usp-section-container"]}>
+              <div className={styles["usp-card"]}>
+                <img src={part1.iconImage1} alt="Icon 1" />
+                <p className={styles["card-text"]}>{part1.card1text}</p>
+              </div>
+              <div
+                className={`${styles["usp-card"]} ${styles["enrollment-card"]}`}
+              >
+                <img src={part2.iconImage2} alt="Icon 2" />
+                <div className={styles["enrollment-container"]}>
+                  <p className={styles["enrollment-count"]}>
+                    {count}{" "}
+                    <span className={styles["card-text"]}>
+                      {part2.card2text}
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className={styles["usp-card"]}>
+                <img src={part3.iconImage3} alt="Icon 3" />
+                <p className={styles["card-text"]}>{part3.card3text}</p>
+              </div>
+            </div>
+
             <div className={styles.buttonsContainer}>
-              <div className={styles.brochureBtn}>
+              <a
+                className={styles.brochureBtn}
+                onClick={handleEnrollButtonClick}
+              >
                 <img
                   className={styles.brochureIcon}
                   src={BrochureIcon}
                   alt="Brochure Icon"
                 />
                 Brochure
-              </div>
-              <div
+              </a>
+              <a
                 className={styles.enrollButton}
                 onClick={handleEnrollButtonClick}
               >
-                Enroll Now!
-              </div>
+                Enrol Now!
+              </a>
             </div>
           </div>
         </div>
@@ -78,9 +151,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
             />
             <div
               className={styles.playIconContainer}
-              onClick={() =>
-                data && handleEnrollButtonVidio(data.youtubeVideoLink)
-              }
+              onClick={() => handleEnrollButtonVidio(data.youtubeVideoLink)}
             >
               <div className="video-main">
                 <div className="promo-video">

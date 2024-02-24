@@ -44,6 +44,11 @@ const teamSection = {
       name: "Full Stack Development",
       href: "/all-courses/full-stack-development",
     },
+    // {
+    //   id: 18,
+    //   name: "Management Development",
+    //   href: "/all-courses/management-development",
+    // },
     {
       id: 17,
       name: "Data and Business Analytics",

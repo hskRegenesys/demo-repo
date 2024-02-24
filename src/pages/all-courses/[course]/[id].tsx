@@ -129,7 +129,10 @@ const DigitalMarketing = (props: any) => {
           {courseDetails?.courseCertificate && (
             <CourseCertificate courseDetails={courseDetails} />
           )}
-          <FeatureSeven courseDetails={courseDetails} />
+          {courseDetails?.featureSeven && (
+            <FeatureSeven courseDetails={courseDetails} />
+          )}
+
           <VideoOne courseDetails={courseDetails} />
           <WhayTheySay courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
