@@ -8967,7 +8967,12 @@ export const brochureDetails: any = {
   },
 
   DTC: {
-    name: "DesignThinkingCourseDevelopmentBrochure23.pdf",
+    name: "DesignThinkingCourseDevelopmentBrochure_compressed.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  DMN: {
+    name: "digigitalMarketingBrochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },

@@ -1066,6 +1066,16 @@ const redirectURL = () => {
       destination: "/online-courses",
       permanent: true,
     },
+    // {
+    //   source: "/all-courses-multiple/digital-marketing-1",
+    //   destination: "/digital-marketing-1",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-multiple/data-science-1",
+    //   destination: "/data-science-1",
+    //   permanent: true,
+    // },
   ];
   return path;
 };
