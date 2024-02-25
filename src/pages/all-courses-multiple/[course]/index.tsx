@@ -232,9 +232,11 @@ const Course = (props: any) => {
     multiplePagesDatas,
   } = MainCourseData;
 
-  console.log("page:", pageName);
   return (
-    <Layout pageTitle={props?.course}>
+    <Layout
+      style={{ overflow: "visible !importent" }}
+      pageTitle={props?.course}
+    >
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}

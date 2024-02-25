@@ -1,7 +1,7 @@
-import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
 import MultiplePagesCoursesData from "@/data/newComponentData/multiplePagesData/MultiplePagesCoursesData";
+import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
 
-interface MainCoursesDynimicData {
+interface MainCoursesDynamicData {
   BannerWithVideoData: {
     BannerImgDesktop: string;
     coursePageName: string;
@@ -10,12 +10,12 @@ interface MainCoursesDynimicData {
     contentText: string;
     youtubeVideoLink: string;
     BrochureIcon: string;
-    vidoPlayIcon: string;
+    videoPlayIcon: string;
   };
   CourseBenefitsCardData: {
-    courcename: string;
-    Heding: string;
-    Card: CardData[];
+    courseName: string;
+    heading: string;
+    card: CardData[];
   };
   ExploreTheCoursesData: {
     smallHeading: string;
@@ -44,7 +44,7 @@ interface MainCoursesDynimicData {
       };
       content4?: {
         contentHeading: string;
-        LevelCard: {
+        levelCard: {
           courseName: string;
           frameImg: string;
           tickIcon: string;
@@ -62,16 +62,16 @@ interface MainCoursesDynimicData {
         }[];
       };
       content6?: {
-        ContentHeding: string;
-        PriceIcon: string;
+        contentHeading: string;
+        priceIcon: string;
         durationIcon: string;
-        EnrollmentIcon: string;
+        enrollmentIcon: string;
         contraryPricingCard: {
-          contaryName: string;
+          contraryName: string;
           price: string;
           duration: string;
-          Enrollment: string;
-          contaryFlag: string;
+          enrollment: string;
+          contraryFlag: string;
         }[];
       };
     };
@@ -88,13 +88,13 @@ interface MainCoursesDynimicData {
     buttonText: string;
   };
   BlogSectionData: {
-    BlogSectionTitle: string;
+    blogSectionTitle: string;
     cards: CardDataBlog[];
   };
   faqSections: {
     arrowIcon: string;
-    HeadingDesktop: string;
-    HeadingMobile: string;
+    headingDesktop: string;
+    headingMobile: string;
     sections: FaqSectionItem[];
   };
 }
@@ -121,56 +121,44 @@ interface CardData {
   text1: string;
   text2: string;
 }
-const isDataSciencePage = (page: string): boolean => {
-  const dataScienceKeywords = [
-    "data-science-course",
-    "data-science-courses",
-    "courses-in-data-science",
-    "course-for-data-science",
-    "data-science-online-courses",
-    "data-science-course-online",
-    "courses-data-science",
-    "online-data-science-courses",
-    "best-data-science-courses",
-    "a-crash-course-in-data-science",
-  ];
-
-  return dataScienceKeywords.some((keyword) => page.includes(keyword));
-};
-
-const isBrandPage = (page: string): boolean => {
-  const brandPageKeywords = [
-    "online-courses",
-    "online-course",
-    "courses-online",
-    "online-coding-courses",
-    "online-courses-with-certificates",
-    "online-certification-courses",
-    "coding-courses-online",
-    "IT-courses-online",
-    "online-certificate-courses",
-    "online-courses-for-adults",
-  ];
-
-  return brandPageKeywords.some((keyword) => page.includes(keyword));
-};
 
 const DataSeparatorPages = (page: string | undefined): any | undefined => {
   if (!page) return undefined;
 
-  if (isBrandPage(page)) {
-    return {
-      multiplePagesDatas: (MultiplePagesCoursesData as any)[page],
-    };
-  }
-
-  if (isDataSciencePage(page)) {
+  if (
+    page === "data-science-course" ||
+    page === "data-science-courses" ||
+    page === "courses-in-data-science" ||
+    page === "course-for-data-science" ||
+    page === "data-science-online-courses" ||
+    page === "data-science-course-online" ||
+    page === "courses-data-science" ||
+    page === "online-data-science-courses" ||
+    page === "best-data-science-courses" ||
+    page === "a-crash-course-in-data-science"
+  ) {
     return {
       ...MainCoursesDynimicData.DataScience,
-      multiplePagesDatas: (MultiplePagesCoursesData as any)[page],
+      multiplePagesDatas: MultiplePagesCoursesData[page],
+    };
+  } else if (
+    page === "online-courses" ||
+    page === "online-course" ||
+    page === "courses-online" ||
+    page === "online-coding-courses" ||
+    page === "online-courses-with-certificates" ||
+    page === "online-certification-courses" ||
+    page === "coding-courses-online" ||
+    page === "IT-courses-online" ||
+    page === "online-certificate-courses" ||
+    page === "online-courses-for-adults"
+  ) {
+    return {
+      multiplePagesDatas: MultiplePagesCoursesData[page],
     };
   }
 
   return undefined;
 };
+
 export default DataSeparatorPages;
