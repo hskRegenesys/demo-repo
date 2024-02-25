@@ -121,33 +121,56 @@ interface CardData {
   text1: string;
   text2: string;
 }
+const isDataSciencePage = (page: string): boolean => {
+  const dataScienceKeywords = [
+    "data-science-course",
+    "data-science-courses",
+    "courses-in-data-science",
+    "course-for-data-science",
+    "data-science-online-courses",
+    "data-science-course-online",
+    "courses-data-science",
+    "online-data-science-courses",
+    "best-data-science-courses",
+    "a-crash-course-in-data-science",
+  ];
+
+  return dataScienceKeywords.some((keyword) => page.includes(keyword));
+};
+
+const isBrandPage = (page: string): boolean => {
+  const brandPageKeywords = [
+    "online-courses",
+    "online-course",
+    "courses-online",
+    "online-coding-courses",
+    "online-courses-with-certificates",
+    "online-certification-courses",
+    "coding-courses-online",
+    "IT-courses-online",
+    "online-certificate-courses",
+    "online-courses-for-adults",
+  ];
+
+  return brandPageKeywords.some((keyword) => page.includes(keyword));
+};
 
 const DataSeparatorPages = (page: string | undefined): any | undefined => {
   if (!page) return undefined;
 
-  // ------------------main-courses------------------
-  if (page === "digital-marketing-new")
-    return MainCoursesDynimicData.DigitalMarketing;
+  if (isBrandPage(page)) {
+    return {
+      multiplePagesDatas: (MultiplePagesCoursesData as any)[page],
+    };
+  }
 
-  // ------------------multiple-pages-course------------------
-  if (page === "digital-marketing-1") {
-    return {
-      ...MainCoursesDynimicData.DigitalMarketing,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (page === "data-science-1") {
+  if (isDataSciencePage(page)) {
     return {
       ...MainCoursesDynimicData.DataScience,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (page === "online-courses") {
-    return {
-      ...MainCoursesDynimicData.DataScience,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
+      multiplePagesDatas: (MultiplePagesCoursesData as any)[page],
     };
   }
 
   return undefined;
 };
-
 export default DataSeparatorPages;

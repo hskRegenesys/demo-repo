@@ -17,8 +17,8 @@ const StudentReview = () => {
   return (
     <div className={Styles.cardContainer}>
       <div className={Styles.topSecion}>
-        <h2 className={Styles.Title}>{StudentReviewTitle}</h2>
-        <h3 className={Styles.heading}>{StudentReviewHeading}</h3>
+        <h3 className={Styles.Title}>{StudentReviewTitle}</h3>
+        <h2 className={Styles.heading}>{StudentReviewHeading}</h2>
       </div>
       <div className={Styles.studentReviewCardContainer}>
         <Swiper
