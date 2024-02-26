@@ -58,9 +58,9 @@ const LearnersBenefit = () => {
                   />
                 </div>
                 <div className={Styles.RightSide}>
-                  <h3 className={Styles.CardTitle}>
+                  <h2 className={Styles.CardTitle}>
                     {item.LearnersBenefitCardTitle}
-                  </h3>
+                  </h2>
                   <ul>
                     {item.LearnersBenefittext.map((text, i) => (
                       <li key={i}>

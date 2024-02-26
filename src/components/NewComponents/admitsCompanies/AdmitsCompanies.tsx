@@ -34,7 +34,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   return (
     <div className={Styles.admitsCompaniesContainer}>
       <div className={Styles.admitsTop}>
-        <h3 className={Styles.admitsHeading}>{AdmitsHeading}</h3>
+        <h2 className={Styles.admitsHeading}>{AdmitsHeading}</h2>
         <h2 className={Styles.admitsTitleBig}>{AdmitsTitle}</h2>
       </div>
       <div className={Styles.admitsCardsContainer}>

@@ -8,6 +8,7 @@ interface Point {
 interface BannerComponentProps {
   data: BannerCourseData; // This is missing in the original code
   handleEnrollButtonClick: () => void;
+  pageName: any;
 }
 
 type BannerCourseData = {
@@ -39,6 +40,7 @@ type BannerCourseData = {
 const BannerComponent: React.FC<BannerComponentProps> = ({
   handleEnrollButtonClick,
   data,
+  pageName,
 }) => {
   const {
     coursePageName,
@@ -89,9 +91,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
                 <span className={styles.pointInside}>{topSectionPoint2}</span>
               </h2>
             </div>
-            <h3 className={styles.courseHeading}>
-              Your Gateway to Success Starts with <span>{coursePageName}</span>
-            </h3>
+            <h1 className={styles.courseHeading}>{pageName}</h1>
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles["usp-section-container"]}>

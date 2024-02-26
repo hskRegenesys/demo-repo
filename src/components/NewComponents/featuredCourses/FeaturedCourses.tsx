@@ -95,9 +95,9 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
 
   return (
     <div className={Styles.featuredCoursesContainer} style={style}>
-      <h3 className={Styles.smallHeading}>
+      <h2 className={Styles.smallHeading}>
         {AllCourcesCardData.FeaturedCoursesHeading}
-      </h3>
+      </h2>
       <h2 className={Styles.bigHeading}>
         {AllCourcesCardData.FeaturedCoursesSubHeading}
       </h2>

@@ -116,9 +116,9 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   }
   return (
     <div className={Styles.allCoursesSliderContainer} style={style}>
-      <h3 className={Styles.smallHeading}>
+      <h2 className={Styles.smallHeading}>
         {AllCourcesCardData.allCoursesSliderHeading}
-      </h3>
+      </h2>
       <h2 className={Styles.bigHeading}>
         {AllCourcesCardData.allCoursesSliderSubHeading}
       </h2>

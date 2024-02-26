@@ -60,7 +60,10 @@ const SubCourseDetails = dynamic(
 const Course = (props: any) => {
   const router = useRouter();
 
-  const pageName = router?.query?.course?.toString().replace(/-/g, " ");
+  const pageName = router?.query?.course
+    ?.toString()
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (match) => match.toUpperCase());
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
@@ -129,6 +132,16 @@ const Course = (props: any) => {
 
   return (
     <Layout pageTitle={props?.course}>
+      {isPopupVisible && (
+        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+      )}
+      {isYoutubePopup && (
+        <YoutubeVidioPopup
+          isVisibleVidio={isYoutubePopup}
+          youtubeVideoLink={youtubeVideoLink}
+          onClose={handleYoutubePopupClose}
+        />
+      )}
       <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
       <Schemas
@@ -139,6 +152,7 @@ const Course = (props: any) => {
       <BannerWithImg
         handleEnrollButtonClick={handleEnrollButtonClick}
         data={MultiplePagesBrandData.BannerWithImg}
+        pageName={pageName}
       />
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}

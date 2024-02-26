@@ -165,7 +165,10 @@ interface CardData {
 const Course = (props: any) => {
   const router = useRouter();
 
-  const pageName = router?.query?.course?.toString().replace(/-/g, " ");
+  const pageName = router?.query?.course
+    ?.toString()
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (match) => match.toUpperCase());
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
@@ -236,6 +239,7 @@ const Course = (props: any) => {
     <Layout
       style={{ overflow: "visible !importent" }}
       pageTitle={props?.course}
+      context="multiple-page"
     >
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
@@ -262,6 +266,7 @@ const Course = (props: any) => {
           YoutubePopupButtonClick(videoLink)
         }
         handleEnrollButtonClick={handleEnrollButtonClick}
+        pageName={pageName}
       />
       <CourseBenefitsCard
         data={CourseBenefitsCardData}

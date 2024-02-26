@@ -56,7 +56,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
 
                 <div className={Styles.blogContent}>
                   <h3 className={Styles.blogQuestion}>{card.blogQuestion}</h3>
-                  <p className={Styles.blogText}>{card.blogText}</p>
+                  <h2 className={Styles.blogText}>{card.blogText}</h2>
                   <div className={Styles.knowMore}>
                     <a href={card.blogLink} className={Styles.knowMoreLink}>
                       Know More{" "}

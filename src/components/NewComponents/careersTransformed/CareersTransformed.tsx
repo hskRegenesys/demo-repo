@@ -63,7 +63,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
     <div className={Styles.container}>
       <div className={Styles.header}>
         <h2 className={Styles.heading}>{heading}</h2>
-        <p className={Styles.subheading}>{subheading}</p>
+        <h2 className={Styles.subheading}>{subheading}</h2>
       </div>
 
       {/* <div className={Styles.cardsContainer}>

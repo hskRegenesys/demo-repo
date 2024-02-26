@@ -21,7 +21,7 @@
     2,
     1fr
   ); /* Create two columns with equal width */
-  gap: 10px; /* Adjust the gap between items as needed */
+  gap: 0px; /* Adjust the gap between items as needed */
 }
 
 .footerContainer a {
@@ -185,7 +185,10 @@
   .footerContainer {
     padding: 24px;
   }
-
+  .footerTextheader h2 {
+    padding-right: 0px;
+    text-align: center;
+  }
   .footerLogo img {
     display: none;
   }
