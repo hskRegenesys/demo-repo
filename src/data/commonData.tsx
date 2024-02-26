@@ -85,6 +85,18 @@ const Data = {
         "Online Certificate Courses: Validate Your Expertise | Digital Regenesys",
       "online-courses-for-adults":
         "Online Courses for Adults: Lifelong Learning Made Easy | Digital Regenesys",
+      "best-online-courses":
+        "Best Online Courses: Top-Quality Learning Experience | Digital Regenesys",
+      "online-it-courses":
+        "Online IT Courses: Enhance Your Tech Skills | Digital Regenesys",
+      "online-certificate-course":
+        "Online Certificate Course: Validate Your Proficiency | Digital Regenesys",
+      "online-courses-certificates":
+        "Online Courses Certificates: Recognized Skill Validation | Digital Regenesys",
+      "online-training-courses":
+        "Online Training Courses: Personal and Professional Growth | Digital Regenesys",
+      "certificate-courses-online":
+        "Certificate Courses Online: Boost Your Skill Set | Digital Regenesys",
 
       //-----------------multiple-pages-coures-meta-tittle-------------------
       ///===============================DS============================
@@ -108,6 +120,22 @@ const Data = {
         "Best Data Science Courses: Top-Quality Learning Experience | Digital Regenesys",
       "a-crash-course-in-data-science":
         "A Crash Course in Data Science: Quick Learning Path | Digital Regenesys",
+      "data-science-courses-online":
+        "Data Science Courses Online: Master Data Analysis | Digital Regenesys",
+      "python-data-science-course":
+        "Python Data Science Course: Harness Programming Power | Digital Regenesys",
+
+      "best-online-data-science-courses":
+        "Best Online Data Science Courses: Optimize Your Learning | Digital Regenesys",
+
+      "data-science-certification-course":
+        "Data Science Certification Course: Validate Your Expertise | Digital Regenesys",
+
+      "online-course-in-data-science":
+        "Online Course in Data Science: Flexible Learning Journey | Digital Regenesys",
+
+      "online-data-science-course":
+        "Online Data Science Course: Flexible Learning Path | Digital Regenesys",
     },
     keywords: {
       home: `
@@ -336,6 +364,18 @@ Software Development  subjects,
         "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
       "online-courses-for-adults":
         "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
+      "best-online-courses":
+        "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
+      "online-it-courses":
+        "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
+      "online-certificate-course":
+        "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
+      "online-courses-certificates":
+        "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
+      "online-training-courses":
+        "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
+      "certificate-courses-online":
+        "online courses, online course, courses online, online coding courses, online courses with certificates, online certification courses, coding courses online, IT courses online, online certificate courses , online courses for adults, best online courses, online it courses, online certificate course, online courses certificates, online training courses, certificate courses online",
       //  -------------multiplepages brand--------------------
       "data-science-course":
         "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
@@ -356,6 +396,22 @@ Software Development  subjects,
       "best-data-science-courses":
         "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
       "a-crash-course-in-data-science":
+        "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+      "data-science-courses-online":
+        "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+      "python-data-science-course":
+        "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+
+      "best-online-data-science-courses":
+        "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+
+      "data-science-certification-course":
+        "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+
+      "online-course-in-data-science":
+        "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+
+      "online-data-science-course":
         "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
     },
 
@@ -449,7 +505,18 @@ Software Development  subjects,
         "Earn industry-recognized certificates. Explore our diverse online courses and validate your expertise. Join Digital Regenesys now to ignite your career!",
       "online-courses-for-adults":
         "Embrace lifelong learning with our online courses for adults. Expand your knowledge and skills on your terms. Join Digital Regenesys now to ignite your career!",
-
+      "best-online-courses":
+        "Discover top-quality online courses. Elevate your knowledge with the best courses available online. Join Digital Regenesys now to ignite your career!",
+      "online-it-courses":
+        "Upgrade your tech skills with our online IT courses. Stay competitive in the ever-evolving IT landscape. Join Digital Regenesys now to ignite your career!",
+      "online-certificate-course":
+        "Validate your proficiency with a certificate. Explore our online courses and enhance your career prospects. Join Digital Regenesys now to ignite your career!",
+      "online-courses-certificates":
+        "Enroll in courses with certificates. Get recognized validation for your skills with our online courses. Join Digital Regenesys now to ignite your career!",
+      "online-training-courses":
+        "Invest in your personal and professional growth. Explore our online training courses for comprehensive learning. Join Digital Regenesys now to ignite your career!",
+      "certificate-courses-online":
+        "Boost your skill set with our certificate courses online. Choose from a variety of courses for personal and professional development. Join Digital Regenesys now to ignite your career!",
       //  -------------multiplepages courses--------------------
 
       "data-science-course":
@@ -472,6 +539,22 @@ Software Development  subjects,
         "Elevate your data science expertise. Discover top-quality courses to enhance your skills and knowledge. Join Digital Regenesys now to ignite your career!",
       "a-crash-course-in-data-science":
         "Quick and comprehensive learning path. Dive into data science with our crash course for a fast-track learning experience. Join Digital Regenesys now to ignite your career!",
+      "data-science-courses-online":
+        "Master data analysis with our online courses. Explore diverse modules and gain practical data science skills. Join Digital Regenesys now to ignite your career!",
+      "python-data-science-course":
+        "Harness the power of Python in data science. Enroll in our course to master programming for data analysis. Join Digital Regenesys now to ignite your career!",
+
+      "best-online-data-science-courses":
+        "Optimize your learning experience with the best online data science courses. Elevate your data skills. Join Digital Regenesys now to ignite your career!",
+
+      "data-science-certification-course":
+        "Validate your data science expertise with a certification course. Boost your career with recognized credentials. Join Digital Regenesys now to ignite your career!",
+
+      "online-course-in-data-science":
+        "Embark on a flexible learning journey in data science. Enroll in our online course for comprehensive skill development. Join Digital Regenesys now to ignite your career!",
+
+      "online-data-science-course":
+        "Flexible learning for data science enthusiasts. Enroll in our online course to master data science skills. Join Digital Regenesys now to ignite your career!",
     },
     canonicalUrlData: {
       home: "",
@@ -523,6 +606,12 @@ Software Development  subjects,
       "IT-courses-online": "/IT-courses-online",
       "online-certificate-courses": "/online-certificate-courses",
       "online-courses-for-adults": "/online-courses-for-adults",
+      "best-online-courses": "/best-online-courses",
+      "online-it-courses": "/online-it-courses",
+      "online-certificate-course": "/online-certificate-course",
+      "online-courses-certificates": "/online-courses-certificates",
+      "online-training-courses": "/online-training-courses",
+      "certificate-courses-online": "/certificate-courses-online",
 
       //  -------------multiplepages courses--------------------
       "data-science-course": "/data-science-course",
@@ -535,6 +624,12 @@ Software Development  subjects,
       "online-data-science-courses": "/online-data-science-courses",
       "best-data-science-courses": "/best-data-science-courses",
       "a-crash-course-in-data-science": "/a-crash-course-in-data-science",
+      "data-science-courses-online": "/data-science-courses-online",
+      "python-data-science-course": "/python-data-science-course",
+      "best-online-data-science-courses": "/best-online-data-science-courses",
+      "data-science-certification-course": "/data-science-certification-course",
+      "online-course-in-data-science": "/online-course-in-data-science",
+      "online-data-science-course": "/online-data-science-course",
     },
   },
 };

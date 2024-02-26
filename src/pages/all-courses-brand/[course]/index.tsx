@@ -120,15 +120,7 @@ const Course = (props: any) => {
     }
     return result;
   };
-  const {
-    BannerWithVideoData,
-    CourseBenefitsCardData,
-    ExploreTheCoursesData,
-    CertificationDRData,
-    BlogSectionData,
-    faqSections,
-    multiplePagesDatas,
-  } = MainCourseData;
+  const { multiplePagesDatas } = MainCourseData;
 
   return (
     <Layout pageTitle={props?.course}>

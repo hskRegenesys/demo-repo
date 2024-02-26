@@ -388,6 +388,65 @@ const MultiplePagesCoursesData = {
     ],
   },
 
+  "best-online-courses": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "online-it-courses": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "online-certificate-course": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "online-courses-certificates": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "online-training-courses": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "certificate-courses-online": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
   //-----------------courses------------------------
 
   //-------------------------DS----------------------
@@ -631,6 +690,65 @@ const MultiplePagesCoursesData = {
     readmore: [
       {
         pheading: " ",
+        paragraphs: [""],
+      },
+    ],
+  },
+  "data-science-courses-online": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "python-data-science-course": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "best-online-data-science-courses": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "data-science-certification-course": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "online-course-in-data-science": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
+        paragraphs: [""],
+      },
+    ],
+  },
+
+  "online-data-science-course": {
+    heading: "",
+    readmore: [
+      {
+        pheading: "",
         paragraphs: [""],
       },
     ],
