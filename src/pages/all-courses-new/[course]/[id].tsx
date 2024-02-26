@@ -174,6 +174,11 @@ const DigitalMarketing = (props: any) => {
     return () => clearTimeout(timeoutModal);
   }, []);
 
+  const pageName = router?.query?.course
+    ?.toString()
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (match) => match.toUpperCase());
+
   const YoutubePopupButtonClick = (videoLink: string) => {
     setIsisYoutubePopup(true);
     setYoutubeVideoLink(videoLink);
@@ -247,6 +252,7 @@ const DigitalMarketing = (props: any) => {
           YoutubePopupButtonClick(videoLink)
         }
         handleEnrollButtonClick={handleEnrollButtonClick}
+        pageName={pageName}
       />
       <CourseBenefitsCard
         data={CourseBenefitsCardData}
