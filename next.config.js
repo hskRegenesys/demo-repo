@@ -1150,10 +1150,10 @@ const createReWrites = () => {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
-    {
-      source: "/all-courses/management-development",
-      destination: "/all-courses/management-development/48",
-    },
+    // {
+    //   source: "/all-courses/management-development",
+    //   destination: "/all-courses/management-development/48",
+    // },
     {
       source: "/all-courses/data-and-business-analytics",
       destination: "/all-courses/data-and-business-analytics/30",
