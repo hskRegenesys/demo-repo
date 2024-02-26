@@ -22,8 +22,6 @@ const RecommendedPost = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(getOneRandom(bannerImages));
-
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
       <Spinner animation="border" />

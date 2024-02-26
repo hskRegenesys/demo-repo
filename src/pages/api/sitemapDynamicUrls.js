@@ -11,7 +11,7 @@ export default async (_req, res) => {
       date: post.date,
     }));
 
-    const xmlFilePath = join(process.cwd(), "public", "/blog/sitemap.xml");
+    const xmlFilePath = join(process.cwd(), "public", "/sitemap.xml");
     const xmlFileContents = await readFile(xmlFilePath, "utf-8");
     let xmlObject = await parseXml(xmlFileContents);
 
