@@ -67,8 +67,8 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
         </div>
         <div className={Styles.aboutUsRight}>
           <div className={Styles.hedingDesktop}>
-            <div className={Styles.aboutTitle}>{aboutTitle}</div>
-            <div className={Styles.aboutHeading}>{aboutHeading}</div>
+            <h2 className={Styles.aboutTitle}>{aboutTitle}</h2>
+            <h2 className={Styles.aboutHeading}>{aboutHeading}</h2>
           </div>
           <p className={Styles.aboutParagraph}>
             {showFullParagraph

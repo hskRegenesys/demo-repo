@@ -19,7 +19,7 @@
   margin-right: 20px;
 }
 
-.leftSection h2 {
+.heding {
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 18px;
@@ -30,7 +30,7 @@
   margin-bottom: 4px;
 }
 
-.leftSection h3 {
+.subHeding {
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 32px;
@@ -191,7 +191,7 @@
   .topSectionDesktop {
     display: none;
   }
-  .topSectionMobile h2 {
+  .hedingmobile {
     color: var(--Primary-Primary---Green, #008554);
     text-align: center;
     font-family: Montserrat-Bold;
@@ -202,12 +202,13 @@
     letter-spacing: 0.12px;
     margin-bottom: 8px;
   }
-  .topSectionMobile h3 {
+  .subHedingmobile {
     color: var(--Primary-Primary---Charcoal, #131718);
     text-align: center;
     font-family: Montserrat-Bold;
     font-size: 24px;
     font-style: normal;
+    text-align: center;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.029px;

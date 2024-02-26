@@ -25,7 +25,7 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
     <div className={styles.Readmore}>
       <div className={styles.ReadmoreSection}>
         <div className={styles.headingRow}>
-          <div className={styles.banner}>{data.heading}</div>
+          <h2 className={styles.banner}>{data.heading}</h2>
           {!isOpen && (
             <button onClick={toggleReadMore} className={styles.readmoreButton}>
               Read More

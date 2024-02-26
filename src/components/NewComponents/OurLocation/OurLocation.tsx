@@ -188,14 +188,14 @@ const OurLocation: React.FC = () => {
   return (
     <div className={Styles.locationContainer}>
       <div className={Styles.TopSectionMobile}>
-        <h2>{smallHeading}</h2>
-        <h3>{bigHeading}</h3>
+        <h2 className={Styles.heading}>{smallHeading}</h2>
+        <h2 className={Styles.subheading}>{bigHeading}</h2>
       </div>
 
       <div className={Styles.leftSection}>
         <div className={Styles.TopSectionDesktap}>
-          <h2>{smallHeading}</h2>
-          <h3>{bigHeading}</h3>
+          <h2 className={Styles.heading}>{smallHeading}</h2>
+          <h2 className={Styles.subheading}>{bigHeading}</h2>
         </div>
 
         <p>

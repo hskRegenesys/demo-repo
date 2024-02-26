@@ -121,7 +121,6 @@
 }
 
 .courseHeading {
-  color: var(--Light-Text-Primary, #2b3340);
   font-feature-settings: "ss03" on, "liga" off;
   font-family: Montserrat-Bold;
   font-size: 40px;
@@ -130,8 +129,6 @@
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
   margin-bottom: 12px;
-}
-.courseHeading span {
   font-family: Montserrat-Bold;
   background: linear-gradient(
     115deg,

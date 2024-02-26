@@ -22,6 +22,7 @@ const Layout = (props: any) => {
     preloaderClass,
     categoryList,
     blogList,
+    context,
   } = props;
 
   const [loading, setLoading] = useState(true);
@@ -147,7 +148,11 @@ const Layout = (props: any) => {
       <main
         id="wrapper"
         style={{ opacity: loading ? 0 : 1 }}
-        className={`page-wrapper ${mainClass}`}
+        className={` ${mainClass} ${
+          context === "multiple-page"
+            ? ["page-wrapper-multiple"]
+            : ["page-wrapper"]
+        }`}
       >
         {children}
       </main>

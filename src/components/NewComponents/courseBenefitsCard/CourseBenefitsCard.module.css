@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-.courseBenefitsCardContainer h2 {
+.Heding {
   color: #008554;
   text-align: center;
   font-family: Montserrat-Bold;
@@ -20,7 +20,7 @@
   letter-spacing: 0.12px;
   margin-bottom: 16px;
 }
-.courseBenefitsCardContainer h3 {
+.subHeding {
   color: #2b3340;
   text-align: center;
   font-family: Montserrat-Bold;
