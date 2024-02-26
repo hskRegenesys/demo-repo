@@ -101,7 +101,7 @@ const SubCourseDetails = ({ page }: any) => {
         : router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     }
   }
-  console.log("courseData", courseData);
+
   useEffect(() => {
     getData();
   }, [page]);
