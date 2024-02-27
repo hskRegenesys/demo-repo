@@ -121,6 +121,8 @@ const Course = (props: any) => {
     return result;
   };
   const { multiplePagesDatas } = MainCourseData;
+  const isPageDataAvailable =
+    multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
   return (
     <Layout pageTitle={props?.course}>
@@ -173,7 +175,7 @@ const Course = (props: any) => {
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <Faq data={MultiplePagesBrandData.faqSections} />
-      <ReadMoreDropDown data={multiplePagesDatas} />
+      {isPageDataAvailable && <ReadMoreDropDown data={multiplePagesDatas} />}
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );
