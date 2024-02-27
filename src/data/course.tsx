@@ -385,8 +385,8 @@ export const courseData = {
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
           "https://www.youtube.com/embed/-OVmXDAHn6A?autoplay=1&loop=1&playlist=-OVmXDAHn6A",
-        title: "Certification Course in Management Development",
-        text: "Management Development course offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
+        title: "Management Development Programme",
+        text: "Management Development Programme offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
         lists: [
           "40 Weeks Course",
           "Live Sessions",
@@ -397,9 +397,9 @@ export const courseData = {
     ],
     productDescription: {
       title:
-        "Enhance Your Career with Our Top-Rated Management Development Course",
+        "Enhance Your Career with Our Top-Rated Management Development Programme",
       text1:
-        "Elevate your skill set with the best Management Development course for professionals. Learn how to apply the skills of Management Development in the real world from our highly experienced academic staff.        ",
+        "Elevate your skill set with the best Management Development Programme for professionals. Learn how to apply the skills of Management Development in the real world from our highly experienced academic staff.        ",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -409,7 +409,7 @@ export const courseData = {
 
       subTitle2: "Best-in-class instructors",
       desc2:
-        "Learn from the best-in-class instructors who will help you with every technological concept from scratch.",
+        "Learn from the best-in-class instructors who will help you with every concept from scratch.",
 
       subTitle3: "Live sessions",
       desc3:
@@ -431,27 +431,27 @@ export const courseData = {
     ],
     courseCertificate: {
       certificateTitle:
-        "Excel in Management Development with Our Leading Certificate Course.",
+        "Excel in Management Development with Our Leading Certificate Programme.",
       certificateSubTitle:
-        "Earn a Management Development Certificate from Digital Regenesys & Understand market dynamics and identify economic, political, and social opportunities.        ",
+        "Earn a Management Development Certificate from Digital Regenesys & Understand market dynamics and identify economic, political, and social risks.",
       certificateSubSubTitle:
-        "With our Management Development course, you will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
+        "With our Management Development Programme, you will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
       certificateListTitle:
         "With a Management Development Certificate, you will get:",
 
       certificateSkillList: [
         "Market Dynamics",
         "Interpersonal skills        ",
-        "Agile methodologies",
+        "Skills to Lead Teams    ",
         "Project Management Fundamentals",
       ],
       certificateListPara:
         " Our specialised Management Development Certificate will open doors to various roles for you, whether you are a graduate manager or an experienced professional.",
       certificateRolesList: [
         "Project Manager",
-        "Operations Manager",
+        "Strategy Consultant",
         "Innovation Manager ",
-        "Business Development Manager",
+        "Sustainability Manager",
       ],
       CertificateImage: ["MD_certificates.webp"],
       imageName: "MD_certificate",
@@ -581,42 +581,37 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "What is a Management Development Course?            ",
-            text: "A management development course is structured to enhance the knowledge and skills of individuals in leadership positions. These courses cover communication, decision-making, conflict resolution, and strategic planning. Participants can sharpen their leadership abilities and become more effective managers by enroling in a management development course.",
+            title: "What is a Management Development Programme?            ",
+            text: "A Management Development Programme is structured to enhance the knowledge and skills of individuals in leadership positions. These courses cover communication, decision-making, conflict resolution, and strategic planning. Participants can sharpen their leadership abilities and become more effective managers by enroling in a Management Development Programme.",
           },
           {
             id: 2,
-            title: "Why Should I Pursue a Management Development Course?",
-            text: "A management development course can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Enroling in a management development course allows participants to gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a management development course can help you unleash your full potential and achieve your career goals.            ",
+            title: "Why Should I Pursue a Management Development Programme?",
+            text: "A management development programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Enroling in a Management Development Programme allows participants to gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a Management Development Programme can help you unleash your full potential and achieve your career goals.            ",
           },
           {
             id: 3,
-            title: "What to Expect from a Management Development Course?",
-            text: "Individuals can enhance their leadership skills and careers by pursuing a management development course. This comprehensive course provides practical strategies for effective team management, conflict resolution, and decision-making. Participating in this course will give individuals the tools and techniques necessary to lead confidently and achieve their professional goals. Enrol in the digital Regenesys Management Development Course, elevate your managerial abilities and drive success within your organisation. Enrol now and take your leadership to the next level.",
+            title: "What to Expect from a Management Development Programme?",
+            text: "Individuals can enhance their leadership skills and careers by pursuing a management development programme. This comprehensive course provides practical strategies for effective team management, conflict resolution, and decision-making. Participating in this course will give individuals the tools and techniques necessary to lead confidently and achieve their professional goals. Enrol in the digital Regenesys Management Development Programme, elevate your managerial abilities and drive success within your organisation. Enrol now and take your leadership to the next level.",
           },
           {
             id: 4,
             title:
-              "What is the significance of the Management Development Course in today's digital landscape?",
-            text: "A management development course can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Participating in a management development course can gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a management development course can help you unleash your full potential and achieve your career goals",
+              "What is the significance of the Management Development Programme in today's digital landscape?",
+            text: "A management development programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Participating in a management development programme can gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a management development programme can help you unleash your full potential and achieve your career goals",
           },
           {
             id: 5,
             title:
-              "What are the Benefits of Enroling in a Digital Regenesys Management Development Course?            ",
-            text: "Enroling in a Digital Regenesys management development course can benefit individuals looking to advance their careers. These courses allow participants to learn new skills, gain valuable insights from industry experts, and network with other professionals in their field. Additionally, management development courses can help individuals build confidence in their leadership abilities and prepare them for future challenges in the workplace.",
+              "What are the Benefits of Enroling in a Digital Regenesys Management Development Programme?            ",
+            text: "Enroling in a Digital Regenesys Management Development Programme can benefit individuals looking to advance their careers. These courses allow participants to learn new skills, gain valuable insights from industry experts, and network with other professionals in their field. Additionally, management development programmes can help individuals build confidence in their leadership abilities and prepare them for future challenges in the workplace.",
           },
           {
             id: 6,
             title:
-              "What are the outcomes of the Management Development Course?",
+              "What are the outcomes of the Management Development Programme?",
             text: `
-              Some of the outcomes of the Management Development Course include:
-  .Understanding market dynamics and identifying economic, political, and social opportunities.
-  .Foster a culture of innovation and implement effective strategies for idea generation and implementation.
-  .Evaluate business opportunities, foster intrapreneurship, and utilise support systems for entrepreneurial ventures.
-  .Master project management fundamentals, Agile methodologies, and risk mitigation strategies for successful project delivery.
-  .Enhance communication techniques, interpersonal skills, and cross-cultural communication abilities for effective collaboration.
+            Some of the outcomes of the Management Development Programme include: .Understanding market dynamics and identifying economic, political, and social risks. .Foster a culture of innovation and implement effective strategies for idea generation and implementation. .Evaluate business opportunities, foster intrapreneurship, and utilise support systems for entrepreneurial ventures. .Master project management fundamentals, Agile methodologies, and risk mitigation strategies for successful project delivery. .Enhance communication techniques, interpersonal skills, and cross-cultural communication abilities for effective collaboration.
 
               `,
           },
@@ -629,31 +624,32 @@ export const courseData = {
           {
             id: 8,
             title:
-              "What are the tools covered in the Digital Regenesys Management Development certificate course?",
-            text: "ChatGPT, Gemini, HeyGen, Krea.ai, and Clipchamp are the tools covered in the Digital Regenesys Management Development certificate course.",
+              "What are the tools covered in the Digital Regenesys Management Development certificate programme?",
+            text: "ChatGPT, Gemini, HeyGen, Krea.ai, and Clipchamp are the tools covered in the Digital Regenesys Management Development certificate Programme.",
           },
           {
             id: 9,
             title:
-              "Is Management Development a promising career?              ",
-            text: "Yes. Management Development is a promising career. According to the survey, a management development course can boost performance by 22%. Pursuing a Digital Regenesys Management Development Course is not just about learning; it is about evolving and excelling in ways that can genuinely reshape your professional outlook. Enrol in the Digital Regenesys Management Development Course, explore the vibrant world of management development, and discover your full potential!",
+              "What career opportunities are available after completing the Management Development Programme?               ",
+            text: "Some career opportunities available after completing the Management Development programme are business development manager, innovation manager, operations manager, project manager, financial analyst/manager, marketing manager, strategy consultant, human resources manager, and sustainability manager.",
           },
           {
             id: 10,
             title:
-              "How does the Digital Regenesys Management Development certificate course contribute to advancing management capabilities?",
-            text: "The Digital Regenesys Management Development Course offers comprehensive training in critical areas of management, including leadership, strategic planning, and organisational development. Participants gain valuable skills and knowledge to enhance their careers and drive business growth. The course is designed for professionals seeking to advance their management capabilities and stay ahead in today's competitive business landscape. With a focus on practical application and real-world case studies, this course equips learners with the tools they need to succeed in a dynamic digital environment.",
+              "How does the Digital Regenesys Management Development certificate programme contribute to advancing management capabilities?",
+            text: "The Digital Regenesys Management Development Programme offers comprehensive training in critical areas of management, including leadership, strategic planning, and organisational development. Participants gain valuable skills and knowledge to enhance their careers and drive business growth. The course is designed for professionals seeking to advance their management capabilities and stay ahead in today's competitive business landscape. With a focus on practical application and real-world case studies, this course equips learners with the tools they need to succeed in a dynamic digital environment.",
           },
           {
             id: 11,
             title:
-              "What will I learn in the Digital Regenesys Management Development certificate course?              ",
-            text: "In today's competitive business landscape, investing in management development courses is crucial for enhancing leadership skills and driving organisational success. Whether you are a new manager looking to build a strong foundation or a seasoned leader aiming to sharpen your abilities, enroling in a Digital Regenesys Management Development certificate course can provide you with the essential tools and strategies needed to excel in your role.             ",
+              "What will I learn in the Digital Regenesys Management Development certificate programme?              ",
+            text: "In today's competitive business landscape, investing in management development programmes is crucial for enhancing leadership skills and driving organisational success. Whether you are a new manager looking to build a strong foundation or a seasoned leader aiming to sharpen your abilities, enroling in a Digital Regenesys Management Development certificate course can provide you with the essential tools and strategies needed to excel in your role.             ",
           },
           {
             id: 12,
-            title: "Why pursue a Management Development certification course?",
-            text: "A management development course is designed to help individuals grow and excel in their leadership roles. Whether you are a seasoned manager looking to sharpen your skills or an aspiring leader hoping to gain the necessary knowledge, these courses offer many benefits",
+            title:
+              "Why pursue a Management Development  certificate programme?",
+            text: "A management development programme is designed to help individuals grow and excel in their leadership roles. Whether you are a seasoned manager looking to sharpen your skills or an aspiring leader hoping to gain the necessary knowledge, these courses offer many benefits",
           },
         ],
         defaultCurrent: 1,
