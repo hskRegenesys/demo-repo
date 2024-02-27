@@ -263,190 +263,34 @@ const MultiplePagesCoursesData = {
       },
     ],
   },
-  "online-course": {
-    heading: "Elevate your career with Digital Regenesys online",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
-  "courses-online": {
-    heading: "Elevate your career with Digital Regenesys",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "online-course": {},
+  "courses-online": {},
 
-  "online-coding-courses": {
-    heading: "Elevate your career with Digital Regenesys",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "online-coding-courses": {},
 
-  "online-courses-with-certificates": {
-    heading: "Elevate your career with Digital Regenesys",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "online-courses-with-certificates": {},
 
-  "online-certification-courses": {
-    heading: "Elevate your career with Digital Regenesys",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "online-certification-courses": {},
 
-  "coding-courses-online": {
-    heading: "Elevate your career with Digital Regenesys",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "coding-courses-online": {},
 
-  "IT-courses-online": {
-    heading: "Elevate your career with Digital Regenesys IT",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "IT-courses-online": {},
 
-  "online-certificate-courses": {
-    heading: "Elevate your career with Digital Regenesys",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "online-certificate-courses": {},
 
-  "online-courses-for-adults": {
-    heading: "Elevate your career with Digital Regenesys",
-    readmore: [
-      {
-        pheading: "What is an Online Course?",
-        paragraphs: [
-          "An online course is a digital educational course delivered over the Internet, allowing students to access learning materials, lectures, and assignments remotely. ",
-          "The online courses are typically self-paced, enabling individuals to study conveniently. ",
-          "Students can interact with instructors and peers through online forums and virtual classrooms, facilitating collaborative learning experiences. Assessments and feedback are often provided electronically, ensuring efficient communication and evaluation.",
-        ],
-      },
-    ],
-  },
+  "online-courses-for-adults": {},
 
-  "best-online-courses": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "best-online-courses": {},
 
-  "online-it-courses": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "online-it-courses": {},
 
-  "online-certificate-course": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "online-certificate-course": {},
 
-  "online-courses-certificates": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "online-courses-certificates": {},
 
-  "online-training-courses": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "online-training-courses": {},
 
-  "certificate-courses-online": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "certificate-courses-online": {},
   //-----------------courses------------------------
 
   //-------------------------DS----------------------
@@ -613,145 +457,25 @@ const MultiplePagesCoursesData = {
       },
     ],
   },
-  "data-science-courses": {
-    heading: "data-science-courses",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "courses-in-data-science": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "course-for-data-science": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "data-science-online-courses": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "data-science-course-online": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "courses-data-science": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "online-data-science-courses": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "best-data-science-courses": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "a-crash-course-in-data-science": {
-    heading: "",
-    readmore: [
-      {
-        pheading: " ",
-        paragraphs: [""],
-      },
-    ],
-  },
-  "data-science-courses-online": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "data-science-courses": {},
+  "courses-in-data-science": {},
+  "course-for-data-science": {},
+  "data-science-online-courses": {},
+  "data-science-course-online": {},
+  "courses-data-science": {},
+  "online-data-science-courses": {},
+  "best-data-science-courses": {},
+  "a-crash-course-in-data-science": {},
+  "data-science-courses-online": {},
 
-  "python-data-science-course": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "python-data-science-course": {},
 
-  "best-online-data-science-courses": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "best-online-data-science-courses": {},
 
-  "data-science-certification-course": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "data-science-certification-course": {},
 
-  "online-course-in-data-science": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "online-course-in-data-science": {},
 
-  "online-data-science-course": {
-    heading: "",
-    readmore: [
-      {
-        pheading: "",
-        paragraphs: [""],
-      },
-    ],
-  },
+  "online-data-science-course": {},
 };
 export default MultiplePagesCoursesData;

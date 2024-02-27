@@ -235,6 +235,9 @@ const Course = (props: any) => {
     multiplePagesDatas,
   } = MainCourseData;
 
+  const isPageDataAvailable =
+    multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
+
   return (
     <Layout
       style={{ overflow: "visible !importent" }}
@@ -287,7 +290,7 @@ const Course = (props: any) => {
       />
       <BlogSection data={BlogSectionData} />
       <Faq data={faqSections} />
-      <ReadMoreDropDown data={multiplePagesDatas} />
+      {isPageDataAvailable && <ReadMoreDropDown data={multiplePagesDatas} />}
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );
