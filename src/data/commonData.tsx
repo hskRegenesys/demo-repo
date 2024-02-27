@@ -68,33 +68,33 @@ const Data = {
       "online-courses":
         "Online Courses: Learn Anytime, Anywhere | Digital Regenesys",
       "online-course":
-        "Online Course: Flexible Learning for Your Goals | Digital Regenesys",
+        "Online Course: Flexible Learning Goals | Digital Regenesys",
       "courses-online":
         "Courses Online: Diverse Learning Opportunities | Digital Regenesys",
       "online-coding-courses":
         "Online Coding Courses: Master Programming Skills | Digital Regenesys",
       "online-courses-with-certificates":
-        "Online Courses with Certificates: Validate Your Skills | Digital Regenesys",
+        "Online Courses with Certificates | Digital Regenesys",
       "online-certification-courses":
-        "Online Certification Courses: Elevate Your Credentials | Digital Regenesys",
+        "Online Certification Courses: Elevate Skills | Digital Regenesys",
       "coding-courses-online":
-        "Coding Courses Online: Dive Into Programming Excellence | Digital Regenesys",
+        "Coding Courses Online: Programming Excellence | Digital Regenesys",
       "IT-courses-online":
         "IT Courses Online: Learn the Latest Technologies | Digital Regenesys",
       "online-certificate-courses":
         "Online Certificate Courses: Validate Your Expertise | Digital Regenesys",
       "online-courses-for-adults":
-        "Online Courses for Adults: Lifelong Learning Made Easy | Digital Regenesys",
+        "Online Courses for Adults: Learning Made Easy | Digital Regenesys",
       "best-online-courses":
-        "Best Online Courses: Top-Quality Learning Experience | Digital Regenesys",
+        "Best Online Courses: Top-Quality Learning | Digital Regenesys",
       "online-it-courses":
         "Online IT Courses: Enhance Your Tech Skills | Digital Regenesys",
       "online-certificate-course":
-        "Online Certificate Course: Validate Your Proficiency | Digital Regenesys",
+        "Online Certificate Course: Validate Proficiency | Digital Regenesys",
       "online-courses-certificates":
-        "Online Courses Certificates: Recognized Skill Validation | Digital Regenesys",
+        "Online Courses Certificates: Master Your Skills | Digital Regenesys",
       "online-training-courses":
-        "Online Training Courses: Personal and Professional Growth | Digital Regenesys",
+        "Online Training Courses: Boost Your Growth | Digital Regenesys",
       "certificate-courses-online":
         "Certificate Courses Online: Boost Your Skill Set | Digital Regenesys",
 
@@ -109,33 +109,29 @@ const Data = {
       "course-for-data-science":
         "Course for Data Science: Transform Your Career | Digital Regenesys",
       "data-science-online-courses":
-        "Data Science Online Courses: Flexible Learning Options | Digital Regenesys",
+        "Data Science Online Courses: Flexible Learning | Digital Regenesys",
       "data-science-course-online":
         "Data Science Course Online: Learn Anytime, Anywhere | Digital Regenesys",
       "courses-data-science":
         "Courses Data Science: Explore Specializations | Digital Regenesys",
       "online-data-science-courses":
-        "Online Data Science Courses: Transform Your Data Skills | Digital Regenesys",
+        "Online Data Science Courses: Transform Data Skills | Digital Regenesys",
       "best-data-science-courses":
-        "Best Data Science Courses: Top-Quality Learning Experience | Digital Regenesys",
+        "Best Data Science Courses: Top-Quality Learning | Digital Regenesys",
       "a-crash-course-in-data-science":
         "A Crash Course in Data Science: Quick Learning Path | Digital Regenesys",
       "data-science-courses-online":
         "Data Science Courses Online: Master Data Analysis | Digital Regenesys",
       "python-data-science-course":
         "Python Data Science Course: Harness Programming Power | Digital Regenesys",
-
       "best-online-data-science-courses":
-        "Best Online Data Science Courses: Optimize Your Learning | Digital Regenesys",
-
+        "Best Online Data Science Courses: Optimize Learning | Digital Regenesys",
       "data-science-certification-course":
-        "Data Science Certification Course: Validate Your Expertise | Digital Regenesys",
-
+        "Data Science Certification Course | Digital Regenesys",
       "online-course-in-data-science":
-        "Online Course in Data Science: Flexible Learning Journey | Digital Regenesys",
-
+        "Online Course in Data Science: Master Your Skill | Digital Regenesys",
       "online-data-science-course":
-        "Online Data Science Course: Flexible Learning Path | Digital Regenesys",
+        "Online Data Science Course: Flexible Learning | Digital Regenesys",
     },
     keywords: {
       home: `
@@ -486,75 +482,71 @@ Software Development  subjects,
 
       //  -------------multiplepages brand--------------------
       "online-courses":
-        "Explore a variety of online courses to enhance your skills. Start learning at your own pace today. Join Digital Regenesys now to ignite your career!",
+        "Online Courses: Explore a variety of online courses to enhance your skills. Start learning at your own pace today. Join Digital Regenesys now!",
       "online-course":
-        "Choose an online course tailored to your interests. Enjoy the convenience of flexible learning from anywhere. Join Digital Regenesys now to ignite your career!",
+        "Online Course: Choose an online course tailored to your interests. Enjoy the convenience of flexible learning from anywhere. Join Digital Regenesys now!",
       "courses-online":
-        "Discover a wide range of online courses. Elevate your knowledge and skills with our diverse learning options. Join Digital Regenesys now to ignite your career!",
+        "Courses Online: Discover a wide range of online courses. Elevate your knowledge and skills with our diverse learning options. Join Digital Regenesys now!",
       "online-coding-courses":
-        "Unlock the world of programming with our online coding courses. Learn, code, and excel in your coding journey. Join Digital Regenesys now to ignite your career!",
+        "Online Coding Courses: Unlock the world of programming with our online coding courses. Learn, code, and excel in your coding journey. Join Digital Regenesys now!",
       "online-courses-with-certificates":
-        "Enroll in courses with certification. Showcase your achievements with recognized certificates upon completion. Join Digital Regenesys now to ignite your career!",
+        "Online Courses With Certificates: Enroll in courses with certification. Showcase your achievements with recognized certificates upon completion. Join now!",
       "online-certification-courses":
-        "Advance your career with our certified online courses. Gain expertise and earn valuable certifications. Join Digital Regenesys now to ignite your career!",
+        "Online Certification Courses: Advance your career with our certified online courses. Gain expertise and earn valuable certifications. Join Digital Regenesys now!",
       "coding-courses-online":
-        "Master coding with our online courses. Explore programming languages and enhance your coding skills. Join Digital Regenesys now to ignite your career!",
+        "Coding Courses Online: Master coding with our online courses. Explore programming languages and enhance your coding skills. Join Digital Regenesys now!",
       "IT-courses-online":
-        "Stay ahead in the tech world. Enroll in our online IT courses to master the latest technologies and innovations. Join Digital Regenesys now to ignite your career!",
+        "IT Courses Online: Stay ahead in the tech world. Enroll in our online IT courses to master the latest technologies and innovations. Join Digital Regenesys now!",
       "online-certificate-courses":
-        "Earn industry-recognized certificates. Explore our diverse online courses and validate your expertise. Join Digital Regenesys now to ignite your career!",
+        "Online Certificate Courses: Earn industry-recognized certificates. Explore our diverse online courses and validate your expertise. Join Digital Regenesys now!",
       "online-courses-for-adults":
-        "Embrace lifelong learning with our online courses for adults. Expand your knowledge and skills on your terms. Join Digital Regenesys now to ignite your career!",
+        "Online Courses For Adults: Embrace lifelong learning with our online courses for adults. Expand your knowledge and skills on your terms. Join Digital Regenesys now!",
       "best-online-courses":
-        "Discover top-quality online courses. Elevate your knowledge with the best courses available online. Join Digital Regenesys now to ignite your career!",
+        "Best Online Courses: Discover top-quality online courses. Elevate your knowledge with the best courses available online. Join Digital Regenesys now!",
       "online-it-courses":
-        "Upgrade your tech skills with our online IT courses. Stay competitive in the ever-evolving IT landscape. Join Digital Regenesys now to ignite your career!",
+        "Online IT Courses: Upgrade your tech skills with our online IT courses. Stay competitive in the ever-evolving IT landscape. Join Digital Regenesys now!",
       "online-certificate-course":
-        "Validate your proficiency with a certificate. Explore our online courses and enhance your career prospects. Join Digital Regenesys now to ignite your career!",
+        "Online Certificate Course: Validate your proficiency with a certificate. Explore our online courses and enhance your career prospects. Join Digital Regenesys now!",
       "online-courses-certificates":
-        "Enroll in courses with certificates. Get recognized validation for your skills with our online courses. Join Digital Regenesys now to ignite your career!",
+        "Online Courses Certificates: Enroll in courses with certificates. Get recognized validation for your skills with our online courses. Join Digital Regenesys now!",
       "online-training-courses":
-        "Invest in your personal and professional growth. Explore our online training courses for comprehensive learning. Join Digital Regenesys now to ignite your career!",
+        "Online Training Courses: Invest in your personal and professional growth. Explore our online training courses for comprehensive learning. Join Digital Regenesys now!",
       "certificate-courses-online":
-        "Boost your skill set with our certificate courses online. Choose from a variety of courses for personal and professional development. Join Digital Regenesys now to ignite your career!",
+        "Certificate Courses Online: Boost your skill set with our certificate courses online. Choose from a variety of courses for personal & professional development. Join now!",
       //  -------------multiplepages courses--------------------
 
       "data-science-course":
-        "Explore our comprehensive data science course. Master analytical skills and propel your career in data science. Join Digital Regenesys now to ignite your career!",
+        "Data Science Course: Explore our comprehensive data science course. Master analytical skills and propel your career in data science. Join Digital Regenesys now!",
       "data-science-courses":
-        "Discover diverse learning paths in data science. Choose from a variety of courses to enhance your data skills. Join Digital Regenesys now to ignite your career!",
+        "Data Science Courses: Discover diverse learning paths in data science. Choose from a variety of courses to enhance your data skills. Join Digital Regenesys now!",
       "courses-in-data-science":
-        "Immerse yourself in advanced learning. Discover a variety of courses in data science for skill enhancement. Join Digital Regenesys now to ignite your career!",
+        "Courses In Data Science: Immerse yourself in advanced learning. Discover a variety of courses in data science for skill enhancement. Join Digital Regenesys now!",
       "course-for-data-science":
-        "Transform your career with our specialized data science course. Gain in-depth knowledge and practical skills. Join Digital Regenesys now to ignite your career!",
+        "Course For Data Science: Transform your career with our specialized data science course. Gain in-depth knowledge and practical skills. Join Digital Regenesys now!",
       "data-science-online-courses":
-        "Enhance your data science skills with flexible online courses. Learn from industry experts at your own pace. Join Digital Regenesys now to ignite your career!",
+        "Data Science Online Courses: Enhance your data science skills with flexible online courses. Learn from industry experts at your own pace. Join Digital Regenesys now!",
       "data-science-course-online":
-        "Enroll in our online data science course. Learn at your own pace and advance your career in data science. Join Digital Regenesys now to ignite your career!",
+        "Data Science Course Online: Enroll in our online data science course. Learn at your own pace and advance your career in data science. Join Digital Regenesys now!",
       "courses-data-science":
-        "Explore specializations in data science. Choose from a variety of courses to tailor your learning journey. Join Digital Regenesys now to ignite your career!",
+        "Courses Data Science: Explore specializations in data science. Choose from a variety of courses to tailor your learning journey. Join Digital Regenesys now!",
       "online-data-science-courses":
-        "Transform your data skills with our online courses. Master data science concepts and stay ahead in your career. Join Digital Regenesys now to ignite your career!",
+        "Online Data Science Courses: Transform your data skills with our online courses. Master data science concepts and stay ahead in your career. Join Digital Regenesys now!",
       "best-data-science-courses":
-        "Elevate your data science expertise. Discover top-quality courses to enhance your skills and knowledge. Join Digital Regenesys now to ignite your career!",
+        "Best Data Science Courses: Elevate your data science expertise. Discover top-quality courses to enhance your skills and knowledge. Join Digital Regenesys now!",
       "a-crash-course-in-data-science":
-        "Quick and comprehensive learning path. Dive into data science with our crash course for a fast-track learning experience. Join Digital Regenesys now to ignite your career!",
+        "A Crash Course In Data Science: Quick and comprehensive learning path. Dive into data science with our crash course for a fast-track learning experience. Join Now!",
       "data-science-courses-online":
-        "Master data analysis with our online courses. Explore diverse modules and gain practical data science skills. Join Digital Regenesys now to ignite your career!",
+        "Data Science Courses Online: Master data analysis with our online courses. Explore diverse modules and gain practical data science skills. Join Digital Regenesys now!",
       "python-data-science-course":
-        "Harness the power of Python in data science. Enroll in our course to master programming for data analysis. Join Digital Regenesys now to ignite your career!",
-
+        "Python Data Science Course: Harness the power of Python in data science. Enroll in our course to master programming for data analysis. Join Digital Regenesys now!",
       "best-online-data-science-courses":
-        "Optimize your learning experience with the best online data science courses. Elevate your data skills. Join Digital Regenesys now to ignite your career!",
-
+        "Best Online Data Science Courses: Optimize your learning experience with the best online data science courses. Elevate your data skills. Join Digital Regenesys now!",
       "data-science-certification-course":
-        "Validate your data science expertise with a certification course. Boost your career with recognized credentials. Join Digital Regenesys now to ignite your career!",
-
+        "Data Science Certification Course: Validate your data science expertise with a certification course. Boost your career with recognized credentials. Join Now!",
       "online-course-in-data-science":
-        "Embark on a flexible learning journey in data science. Enroll in our online course for comprehensive skill development. Join Digital Regenesys now to ignite your career!",
-
+        "Online Course In Data Science: Embark on a flexible learning journey in data science. Enroll in our online course for comprehensive skill development. Join now!",
       "online-data-science-course":
-        "Flexible learning for data science enthusiasts. Enroll in our online course to master data science skills. Join Digital Regenesys now to ignite your career!",
+        "Online Data Science Course: Flexible learning for data science enthusiasts. Enroll in our online course to master data science skills. Join Digital Regenesys now!",
     },
     canonicalUrlData: {
       home: "",
