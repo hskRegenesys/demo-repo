@@ -10,7 +10,7 @@
   margin-bottom: 8px;
 }
 
-.TopSectionDesktap h1 {
+.TopSectionDesktap h3 {
   color: var(--Light-Text-Primary, #2b3340);
   font-feature-settings: "ss03" on, "liga" off;
   font-family: Montserrat-Bold;
@@ -227,7 +227,7 @@
     flex-direction: column;
     order: -1;
   }
-  .TopSectionMobile h2 {
+  .heading {
     color: var(--Primary-Primary---Green, #008554);
     text-align: center;
     font-family: Montserrat-Bold;
@@ -239,7 +239,7 @@
     margin-bottom: 8px;
   }
 
-  .TopSectionMobile h1 {
+  .subheading {
     color: var(--Primary-Primary---Charcoal, #131718);
     text-align: center;
     text-align: center;

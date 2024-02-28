@@ -65,14 +65,14 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
   return (
     <div className={Styles.certification}>
       <div className={Styles.topSectionMobile}>
-        <h2>{heading}</h2>
-        <h3>{title}</h3>
+        <h2 className={Styles.hedingmobile}>{heading}</h2>
+        <h2 className={Styles.subHedingmobile}>{title}</h2>
       </div>
       <div className={Styles.certificationContainer}>
         <div className={Styles.leftSection}>
           <div className={Styles.topSectionDesktop}>
-            <h2>{heading}</h2>
-            <h3>{title}</h3>
+            <h2 className={Styles.heding}>{heading}</h2>
+            <h2 className={Styles.subHeding}>{title}</h2>
           </div>
           <p>
             {isExpanded ? paragraph : `${truncatedText}`}

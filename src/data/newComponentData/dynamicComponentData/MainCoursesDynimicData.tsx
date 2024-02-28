@@ -553,7 +553,7 @@ const MainCoursesDynimicData = {
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/kenya.svg",
+              contaryFlag: "/assets/images/HomeNew/India.svg",
 
               contaryName: "India",
               price: "₹ 242,694",
@@ -561,7 +561,7 @@ const MainCoursesDynimicData = {
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/nigeria.svg",
+              contaryFlag: "/assets/images/HomeNew/USA.svg",
               contaryName: "USA",
               price: "$ 2414",
               duration: "30 weeks",

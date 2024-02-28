@@ -98,9 +98,9 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
       <h2 className={Styles.smallHeading}>
         {AllCourcesCardData.FeaturedCoursesHeading}
       </h2>
-      <h1 className={Styles.bigHeading}>
+      <h2 className={Styles.bigHeading}>
         {AllCourcesCardData.FeaturedCoursesSubHeading}
-      </h1>
+      </h2>
       <div>
         <img
           src="/assets/images/HomeNew/Rocket BG.svg"

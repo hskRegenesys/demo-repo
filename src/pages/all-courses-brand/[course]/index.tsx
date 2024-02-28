@@ -34,6 +34,21 @@ import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
+import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
+import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
+import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
+import AboutUs from "@/components/NewComponents/about/AboutUs";
+import ToolCoveredCard from "@/components/NewComponents/ToolsCovered/ToolsCovered";
+import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
+import TalentedComponent from "@/components/NewComponents/talentedComponent/TalentedComponent";
+import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
+import AdmitsCompanies from "@/components/NewComponents/admitsCompanies/AdmitsCompanies";
+import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
+import LearnersBenefit from "@/components/NewComponents/learnersBenefit/LearnersBenefit";
+import ConnectContainer from "@/components/NewComponents/connectContainer/ConnectContainer";
+import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
+import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
+import BannerWithImg from "@/components/NewComponents/BannerwithImg/BannerwithImg";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -41,127 +56,7 @@ const PageBanner = dynamic(
 const SubCourseDetails = dynamic(
   () => import("@/components/courses/subcourseDetails")
 );
-interface MainCoursesDynimicData {
-  BannerWithVideoData: {
-    BannerImgDesktop: string;
-    coursePageName: string;
-    topSectionPoint1: string;
-    topSectionPoint2: string;
-    contentText: string;
-    youtubeVideoLink: string;
-    BrochureIcon: string;
-    vidoPlayIcon: string;
-  };
-  CourseBenefitsCardData: {
-    courcename: string; // Corrected property name
-    Heding: string; // Corrected property name
-    Card: CardData[];
-  };
-  ExploreTheCoursesData: {
-    smallHeading: string;
-    bigHeading: string;
-    sideHeadings: { text: string; contentId: string }[];
-    sideContents: {
-      content1: {
-        contentHeading: string;
-        contentImg: string;
-        contentText: string;
-        contentCard: { icon: string; text: string }[];
-      };
-      content2: {
-        contentHeading: string;
-        cardTools: { img: string }[];
-      };
-      content3: {
-        contentHeading: string;
-        tutors: string;
-        facultyCard: {
-          facultyImg: string;
-          facultyName: string;
-          courseName: string;
-          yearsOfExperience: string;
-        }[];
-      };
-      content4?: {
-        contentHeading: string;
-        LevelCard: {
-          courseName: string;
-          frameImg: string;
-          tickIcon: string;
-          list: string[];
-        }[];
-      };
-      content5?: {
-        contentHeading: string;
-        durationIcon: string;
-        tickIcon: string;
-        dropDown: string;
-        curriculumContainer: {
-          weekHeading: string;
-          weekPoints: string[];
-        }[];
-      };
-      content6?: {
-        ContentHeding: string;
-        PriceIcon: string;
-        durationIcon: string;
-        EnrollmentIcon: string;
-        contraryPricingCard: {
-          contaryName: string;
-          price: string;
-          duration: string;
-          Enrollment: string;
-          contaryFlag: string;
-        }[];
-      };
-    };
-  };
-  CertificationDRData: {
-    heading: string;
-    title: string;
-    paragraph: string;
-    achievementsHeading: string;
-    achievementsText: string[];
-    tickImage: string;
-    image: string;
-    imageText: string;
-    buttonText: string;
-  };
-  BlogSectionData: {
-    BlogSectionTitle: string;
-    cards: CardDataBlog[];
-  };
-  faqSections: {
-    // Adjusted property name
-    arrowIcon: string;
-    HeadingDesktop: string;
-    HeadingMobile: string;
-    sections: FaqSectionItem[];
-  };
-}
 
-// Define FaqSectionItem and FaqItem interfaces
-interface FaqSectionItem {
-  heading: string;
-  faqs: FaqItem[];
-}
-
-interface FaqItem {
-  question: string;
-  answer: string;
-}
-
-interface CardDataBlog {
-  blogImg: string;
-  blogQuestion: string;
-  blogText: string;
-}
-
-interface CardData {
-  cardIcon: string;
-  text1: string;
-  text2: string;
-}
 const Course = (props: any) => {
   const router = useRouter();
 
@@ -225,25 +120,12 @@ const Course = (props: any) => {
     }
     return result;
   };
-  const {
-    BannerWithVideoData,
-    CourseBenefitsCardData,
-    ExploreTheCoursesData,
-    CertificationDRData,
-    BlogSectionData,
-    faqSections,
-    multiplePagesDatas,
-  } = MainCourseData;
-
+  const { multiplePagesDatas } = MainCourseData;
   const isPageDataAvailable =
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
   return (
-    <Layout
-      style={{ overflow: "visible !importent" }}
-      pageTitle={props?.course}
-      context="multiple-page"
-    >
+    <Layout pageTitle={props?.course}>
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}
@@ -254,42 +136,45 @@ const Course = (props: any) => {
           onClose={handleYoutubePopupClose}
         />
       )}
-      <Style />
       <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
-      <SearchPopup />
       <Schemas
         type={Constants.course}
         data={{ name: pageName, description: pageName }}
       />
       <BreadcrumbsDR title={pageName} page={pageName} />
-      <BannerWithVideo
-        data={BannerWithVideoData}
-        handleEnrollButtonVidio={(videoLink: string) =>
-          YoutubePopupButtonClick(videoLink)
-        }
+      <BannerWithImg
         handleEnrollButtonClick={handleEnrollButtonClick}
+        data={MultiplePagesBrandData.BannerWithImg}
         pageName={pageName}
       />
-      <CourseBenefitsCard
-        data={CourseBenefitsCardData}
+      <FeaturedCourses
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+      />
+      <AllCoursesSlider
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+      />
+      <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+      <ToolCoveredCard data={ToolsCoveredData} />
+      <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
+      <OurLocation />
+      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+      <StudentReview />
+      <LearnersBenefit />
+      <ConnectContainer onFormSubmit={() => {}} />
+      <StudentYoutubeVideos />
+      <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
+      <LearnersSupport
+        data={MultiplePagesBrandData.LearnersSupportSectionData}
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
-      <ExploreTheCourses
-        data={ExploreTheCoursesData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
-      <CareersTransformed
-        handleEnrollButtonVidio={(videoLink) =>
-          YoutubePopupButtonClick(videoLink)
-        }
-      />
-      <CertificationDR
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        data={CertificationDRData}
-      />
-      <BlogSection data={BlogSectionData} />
-      <Faq data={faqSections} />
+      <Faq data={MultiplePagesBrandData.faqSections} />
       {isPageDataAvailable && <ReadMoreDropDown data={multiplePagesDatas} />}
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>

@@ -1,148 +1,50 @@
-import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
 import MultiplePagesCoursesData from "@/data/newComponentData/multiplePagesData/MultiplePagesCoursesData";
-
-interface MainCoursesDynimicData {
-  BannerWithVideoData: {
-    BannerImgDesktop: string;
-    coursePageName: string;
-    topSectionPoint1: string;
-    topSectionPoint2: string;
-    contentText: string;
-    youtubeVideoLink: string;
-    BrochureIcon: string;
-    vidoPlayIcon: string;
-  };
-  CourseBenefitsCardData: {
-    courcename: string;
-    Heding: string;
-    Card: CardData[];
-  };
-  ExploreTheCoursesData: {
-    smallHeading: string;
-    bigHeading: string;
-    sideHeadings: { text: string; contentId: string }[];
-    sideContents: {
-      content1: {
-        contentHeading: string;
-        contentImg: string;
-        contentText: string;
-        contentCard: { icon: string; text: string }[];
-      };
-      content2: {
-        contentHeading: string;
-        cardTools: { img: string }[];
-      };
-      content3: {
-        contentHeading: string;
-        tutors: string;
-        facultyCard: {
-          facultyImg: string;
-          facultyName: string;
-          courseName: string;
-          yearsOfExperience: string;
-        }[];
-      };
-      content4?: {
-        contentHeading: string;
-        LevelCard: {
-          courseName: string;
-          frameImg: string;
-          tickIcon: string;
-          list: string[];
-        }[];
-      };
-      content5?: {
-        contentHeading: string;
-        durationIcon: string;
-        tickIcon: string;
-        dropDown: string;
-        curriculumContainer: {
-          weekHeading: string;
-          weekPoints: string[];
-        }[];
-      };
-      content6?: {
-        ContentHeding: string;
-        PriceIcon: string;
-        durationIcon: string;
-        EnrollmentIcon: string;
-        contraryPricingCard: {
-          contaryName: string;
-          price: string;
-          duration: string;
-          Enrollment: string;
-          contaryFlag: string;
-        }[];
-      };
-    };
-  };
-  CertificationDRData: {
-    heading: string;
-    title: string;
-    paragraph: string;
-    achievementsHeading: string;
-    achievementsText: string[];
-    tickImage: string;
-    image: string;
-    imageText: string;
-    buttonText: string;
-  };
-  BlogSectionData: {
-    BlogSectionTitle: string;
-    cards: CardDataBlog[];
-  };
-  faqSections: {
-    arrowIcon: string;
-    HeadingDesktop: string;
-    HeadingMobile: string;
-    sections: FaqSectionItem[];
-  };
-}
-
-// Define FaqSectionItem and FaqItem interfaces
-interface FaqSectionItem {
-  heading: string;
-  faqs: FaqItem[];
-}
-
-interface FaqItem {
-  question: string;
-  answer: string;
-}
-
-interface CardDataBlog {
-  blogImg: string;
-  blogQuestion: string;
-  blogText: string;
-}
-
-interface CardData {
-  cardIcon: string;
-  text1: string;
-  text2: string;
-}
+import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
 
 const DataSeparatorPages = (page: string | undefined): any | undefined => {
   if (!page) return undefined;
 
-  // ------------------main-courses------------------
-  if (page === "digital-marketing-new")
-    return MainCoursesDynimicData.DigitalMarketing;
-
-  // ------------------multiple-pages-course------------------
-  if (page === "digital-marketing-1") {
-    return {
-      ...MainCoursesDynimicData.DigitalMarketing,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (page === "data-science-1") {
+  if (
+    page === "data-science-course" ||
+    page === "data-science-courses" ||
+    page === "courses-in-data-science" ||
+    page === "course-for-data-science" ||
+    page === "data-science-online-courses" ||
+    page === "data-science-course-online" ||
+    page === "courses-data-science" ||
+    page === "online-data-science-courses" ||
+    page === "best-data-science-courses" ||
+    page === "a-crash-course-in-data-science" ||
+    page === "data-science-courses-online" ||
+    page === "python-data-science-course" ||
+    page === "best-online-data-science-courses" ||
+    page === "data-science-certification-course" ||
+    page === "online-course-in-data-science" ||
+    page === "online-data-science-course"
+  ) {
     return {
       ...MainCoursesDynimicData.DataScience,
       multiplePagesDatas: MultiplePagesCoursesData[page],
     };
-  } else if (page === "online-courses") {
+  } else if (
+    page === "online-courses" ||
+    page === "online-course" ||
+    page === "courses-online" ||
+    page === "online-coding-courses" ||
+    page === "online-courses-with-certificates" ||
+    page === "online-certification-courses" ||
+    page === "coding-courses-online" ||
+    page === "IT-courses-online" ||
+    page === "online-certificate-courses" ||
+    page === "online-courses-for-adults" ||
+    page === "best-online-courses" ||
+    page === "online-it-courses" ||
+    page === "online-certificate-course" ||
+    page === "online-courses-certificates" ||
+    page === "online-training-courses" ||
+    page === "certificate-courses-online"
+  ) {
     return {
-      ...MainCoursesDynimicData.DataScience,
       multiplePagesDatas: MultiplePagesCoursesData[page],
     };
   }

@@ -98,7 +98,6 @@ export default function LandingForm(contactform: any) {
   } = hookForm;
   const selectedCourse = watch("Programme_Of_Interest");
 
-  console.log("courses", courses);
   return (
     <>
       <div className="contact-section ">

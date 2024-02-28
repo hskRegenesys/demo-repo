@@ -162,7 +162,7 @@ const ExploreTheCourses: React.FC<Props> = ({
     >
       <div className={styles.headerSection}>
         <h2 className={styles.smallHeading}>{smallHeading}</h2>
-        <h1 className={styles.bigHeading}>{bigHeading}</h1>
+        <h2 className={styles.bigHeading}>{bigHeading}</h2>
       </div>
       <div className={styles.mainContent}>
         <div className={styles.sidePanel}>

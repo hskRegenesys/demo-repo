@@ -19,7 +19,7 @@ const LearnersBenefit = () => {
   return (
     <div className={Styles.LearnersBenefitContainer}>
       <div className={Styles.TopSection}>
-        <h1 className={Styles.heding}>{LearnersBenefitHeding}</h1>
+        <h3 className={Styles.heding}>{LearnersBenefitHeding}</h3>
         <h2 className={Styles.title}>{LearnersBenefitTitle}</h2>
       </div>
       {/* Positioning for frame1 and frame2 */}
@@ -58,9 +58,9 @@ const LearnersBenefit = () => {
                   />
                 </div>
                 <div className={Styles.RightSide}>
-                  <h3 className={Styles.CardTitle}>
+                  <h2 className={Styles.CardTitle}>
                     {item.LearnersBenefitCardTitle}
-                  </h3>
+                  </h2>
                   <ul>
                     {item.LearnersBenefittext.map((text, i) => (
                       <li key={i}>

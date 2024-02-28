@@ -12,7 +12,8 @@ interface Point {
 interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;
   handleEnrollButtonClick: () => void;
-  data: BannerCourseData; // Corrected type
+  data: BannerCourseData;
+  pageName: any;
 }
 
 type BannerCourseData = {
@@ -47,6 +48,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
   handleEnrollButtonVidio,
   handleEnrollButtonClick,
   data,
+  pageName,
 }) => {
   const {
     coursePageName,
@@ -91,9 +93,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <span className={styles.point1}>{topSectionPoint1}</span>
               <span className={styles.point2}>{topSectionPoint2}</span>
             </div>
-            <h2 className={styles.courseHeading}>
-              Certification Programme in <span>{coursePageName}</span>
-            </h2>
+            <h1 className={styles.courseHeading}>{pageName}</h1>
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles["usp-section-container"]}>

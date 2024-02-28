@@ -11,7 +11,7 @@
   width: 40%;
 }
 
-.leftSection h1 {
+.heding {
   color: var(--Light-Text-Green, #008554);
 
   font-size: 20px;
@@ -21,7 +21,7 @@
   font-family: Montserrat-Bold;
   margin-bottom: 12px;
 }
-.leftSection p {
+.subheding {
   font-family: Montserrat-Bold;
   font-size: 40px;
   line-height: 52px;
@@ -192,11 +192,11 @@
     width: 100%;
   }
 
-  .leftSection h1 {
+  .heding {
     font-size: 14px;
     margin-bottom: 8px;
   }
-  .leftSection p {
+  .subheding {
     font-size: 24px;
     margin-bottom: 0px;
     line-height: 30px;

@@ -13,7 +13,7 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
       <img src="/assets/images/HomeNew/DR_Logo.svg" alt="LogoIpsum" />
     </div>
     <div className={styles.footerTextheader}>
-      <p>Ready to get started</p>
+      <h2>Ready to get started</h2>
       <button
         className={styles.getStartedButton}
         onClick={handleEnrollButtonClick}

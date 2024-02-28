@@ -34,8 +34,8 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   return (
     <div className={Styles.admitsCompaniesContainer}>
       <div className={Styles.admitsTop}>
-        <div className={Styles.admitsHeading}>{AdmitsHeading}</div>
-        <div className={Styles.admitsTitleBig}>{AdmitsTitle}</div>
+        <h2 className={Styles.admitsHeading}>{AdmitsHeading}</h2>
+        <h2 className={Styles.admitsTitleBig}>{AdmitsTitle}</h2>
       </div>
       <div className={Styles.admitsCardsContainer}>
         <Swiper {...swiperSettings}>

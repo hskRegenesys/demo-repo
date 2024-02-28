@@ -29,9 +29,15 @@ const redirectURL = () => {
       destination: "/all-courses/data-science",
       permanent: true,
     },
+
+    // {
+    //   source: "/programs",
+    //   destination: "/all-courses",
+    //   permanent: true,
+    // },
     {
-      source: "/programs",
-      destination: "/all-courses",
+      source: "/all-courses-new",
+      destination: "/404",
       permanent: true,
     },
 
@@ -40,11 +46,6 @@ const redirectURL = () => {
     //   destination: "/all-courses-new",
     //   permanent: true,
     // },
-    {
-      source: "/multiple-pages-brand",
-      destination: "/404",
-      permanent: true,
-    },
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -887,37 +888,27 @@ const redirectURL = () => {
       destination: "/404",
       permanent: true,
     },
-    {
-      source: "/all-courses-new",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-new/design-thinking-new",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-new/digital-marketing-new",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-new/digital-marketing-1",
-      destination: "/404",
-      permanent: true,
-    },
 
-    {
-      source: "/all-courses-multiple/digital-marketing-1",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/digital-marketing-1",
-      destination: "/404",
-      permanent: true,
-    },
+    // {
+    //   source: "/all-courses-new/design-thinking-new",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-new/digital-marketing-new",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-new/digital-marketing-1",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
+    // {
+    //   source: "/all-courses-new/digital-marketing-1",
+    //   destination: "/404",
+    //   permanent: true,
+    // },
 
     //redirections from altaf end
     {
@@ -1062,53 +1053,156 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    {
-      source: "/all-courses-multiple",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-multiple/digital-marketing-1",
-      destination: "/404",
-      permanent: true,
-    },
-    {
-      source: "/all-courses-multiple/data-science-1",
-      destination: "/404",
-      permanent: true,
-    },
-    // {
-    //   source: "/all-courses-multiple/digital-marketing-1",
-    //   destination: "/digital-marketing-1",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/all-courses-multiple/data-science-1",
-    //   destination: "/data-science-1",
-    //   permanent: true,
-    // },
   ];
   return path;
 };
 
 const createReWrites = () => {
   const paths = [
-    // {
-    //   source: "/digital-marketing-1",
-    //   destination: "/all-courses-multiple/digital-marketing-1",
-    // },
-    // {
-    //   source: "/data-science-1",
-    //   destination: "/all-courses-multiple/data-science-1",
-    // },
+    // -------------------------multiple-pages-start---------------------------------
+
+    // ------------brand-------------
+    {
+      source: "/online-courses",
+      destination: "/all-courses-brand/online-courses",
+    },
+    {
+      source: "/online-course",
+      destination: "/all-courses-brand/online-course",
+    },
+    {
+      source: "/courses-online",
+      destination: "/all-courses-brand/courses-online",
+    },
+    {
+      source: "/online-coding-courses",
+      destination: "/all-courses-brand/online-coding-courses",
+    },
+    {
+      source: "/online-courses-with-certificates",
+      destination: "/all-courses-brand/online-courses-with-certificates",
+    },
+    {
+      source: "/online-certification-courses",
+      destination: "/all-courses-brand/online-certification-courses",
+    },
+    {
+      source: "/coding-courses-online",
+      destination: "/all-courses-brand/coding-courses-online",
+    },
+    {
+      source: "/IT-courses-online",
+      destination: "/all-courses-brand/IT-courses-online",
+    },
+    {
+      source: "/online-certificate-courses",
+      destination: "/all-courses-brand/online-certificate-courses",
+    },
+    {
+      source: "/online-courses-for-adults",
+      destination: "/all-courses-brand/online-courses-for-adults",
+    },
+    {
+      source: "/best-online-courses",
+      destination: "/all-courses-brand/best-online-courses",
+    },
+    {
+      source: "/online-it-courses",
+      destination: "/all-courses-brand/online-it-courses",
+    },
+    {
+      source: "/online-certificate-course",
+      destination: "/all-courses-brand/online-certificate-course",
+    },
+    {
+      source: "/online-courses-certificates",
+      destination: "/all-courses-brand/online-courses-certificates",
+    },
+    {
+      source: "/online-training-courses",
+      destination: "/all-courses-brand/online-training-courses",
+    },
+    {
+      source: "/certificate-courses-online",
+      destination: "/all-courses-brand/certificate-courses-online",
+    },
+    // -------------------------multiple-pages-courses---------------------------------
+    ///==================DS======================
+    {
+      source: "/data-science-course",
+      destination: "/all-courses-multiple/data-science-course",
+    },
+    {
+      source: "/data-science-courses",
+      destination: "/all-courses-multiple/data-science-courses",
+    },
+    {
+      source: "/courses-in-data-science",
+      destination: "/all-courses-multiple/courses-in-data-science",
+    },
+    {
+      source: "/course-for-data-science",
+      destination: "/all-courses-multiple/course-for-data-science",
+    },
+    {
+      source: "/data-science-online-courses",
+      destination: "/all-courses-multiple/data-science-online-courses",
+    },
+    {
+      source: "/data-science-course-online",
+      destination: "/all-courses-multiple/data-science-course-online",
+    },
+    {
+      source: "/courses-data-science",
+      destination: "/all-courses-multiple/courses-data-science",
+    },
+    {
+      source: "/online-data-science-courses",
+      destination: "/all-courses-multiple/online-data-science-courses",
+    },
+    {
+      source: "/best-data-science-courses",
+      destination: "/all-courses-multiple/best-data-science-courses",
+    },
+    {
+      source: "/a-crash-course-in-data-science",
+      destination: "/all-courses-multiple/a-crash-course-in-data-science",
+    },
+    {
+      source: "/data-science-courses-online",
+      destination: "/all-courses-multiple/data-science-courses-online",
+    },
+    {
+      source: "/python-data-science-course",
+      destination: "/all-courses-multiple/python-data-science-course",
+    },
+    {
+      source: "/best-online-data-science-courses",
+      destination: "/all-courses-multiple/best-online-data-science-courses",
+    },
+    {
+      source: "/data-science-certification-course",
+      destination: "/all-courses-multiple/data-science-certification-course",
+    },
+    {
+      source: "/online-course-in-data-science",
+      destination: "/all-courses-multiple/online-course-in-data-science",
+    },
+    {
+      source: "/online-data-science-course",
+      destination: "/all-courses-multiple/online-data-science-course",
+    },
+
+    // -------------------------multiple-pages-end---------------------------------
+
     {
       source: "/all-courses/project-management",
       destination: "/all-courses/project-management/28",
     },
-    // {
-    //   source: "/all-courses/management-development",
-    //   destination: "/all-courses/management-development/48",
-    // },
+    {
+      source: "/all-courses/management-development",
+      destination: "/all-courses/management-development/48",
+    },
     {
       source: "/all-courses/data-and-business-analytics",
       destination: "/all-courses/data-and-business-analytics/30",
@@ -1217,16 +1311,6 @@ const createReWrites = () => {
     // {
     //   source: "/all-courses-new/digital-marketing-new",
     //   destination: "/all-courses-new/digital-marketing-new/702",
-    // },
-    // -------------------------multiple-pages-course---------------------------------
-
-    // {
-    //   source: "/multiple-pages-brand",
-    //   destination: "/multiple-pages-brand",
-    // },
-    // {
-    //   source: "/online-courses",
-    //   destination: "/multiple-pages-courses",
     // },
 
     // {
