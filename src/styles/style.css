@@ -18791,10 +18791,10 @@ h6.desc {
 
 .all-course-section .content-box .sign-arrow img {
   position: absolute;
-  right: 64px !important;
-  width: 118px;
-  height: auto;
-  left: unset;
+    right: -11px !important;
+    width: 110px;
+    height: auto;
+    left: auto;
 }
 
 .title-width {
@@ -18929,7 +18929,7 @@ p.highlight {
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 768px;
+  min-height: 650px;
 }
 
 .who-we-are {
@@ -19312,14 +19312,14 @@ input.PhoneInputInput {
 
 .process-one__content .sec-title h1 i {
   background-image: url(/assets/images/background/sign-arrow.png);
-  background-size: 120px 120px;
-  position: absolute;
-  z-index: 9;
-  width: 120px;
-  height: 120px;
-  right: -72px;
-  top: 22px;
-  background-repeat: no-repeat;
+    background-size: 120px 120px;
+    position: absolute;
+    z-index: 9;
+    width: 120px;
+    height: 110px;
+    right: -107px;
+    top: 12px;
+    background-repeat: no-repeat;
 }
 
 .we-work-section .sec-title h2 {
@@ -20302,6 +20302,7 @@ button[disabled] {
     height: auto;
     left: unset;
     top: 7px;
+    display: none;
   }
 
   .all-course-section .content-box .btn-style-two {
