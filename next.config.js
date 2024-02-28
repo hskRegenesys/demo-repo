@@ -35,6 +35,7 @@ const redirectURL = () => {
     //   destination: "/all-courses",
     //   permanent: true,
     // },
+   
 
     // {
     //   source: "/programsnew",

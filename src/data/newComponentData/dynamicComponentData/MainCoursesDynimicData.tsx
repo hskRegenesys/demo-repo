@@ -13,7 +13,7 @@ const MainCoursesDynimicData = {
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
       UspSectionData: {
         part1: {
-          card1text: "USA, South Africa, Nigeria, Kenya & India",
+          card1text: "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
           iconImage1: "/assets/images/HomeNew/Location.svg",
         },
         part2: {
@@ -385,7 +385,7 @@ const MainCoursesDynimicData = {
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
       UspSectionData: {
         part1: {
-          card1text: "USA, South Africa, Nigeria, Kenya & India",
+          card1text: "UUSA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
           iconImage1: "/assets/images/HomeNew/Location.svg",
         },
         part2: {
@@ -416,7 +416,7 @@ const MainCoursesDynimicData = {
         },
         {
           cardIcon: "/assets/images/HomeNew/medal.svg",
-          text1: "150+",
+          text1: "190+",
           text2: "Countries Global Exposure",
         },
       ],
