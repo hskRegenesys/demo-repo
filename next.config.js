@@ -1086,11 +1086,11 @@ const redirectURL = () => {
     },
     {
       source: "/password-reset",
-      destination: "https://mydigital.regenesys.net/login/index.php",
+      destination: "https://mydigital.regenesys.net/login/forgot_password.php",
       permanent: true,
     },
     {
-      source: "/project-management/1000",
+      source: "/programs/project-management/1000",
       destination: "/all-courses/project-management",
       permanent: true,
     },
