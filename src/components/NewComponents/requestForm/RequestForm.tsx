@@ -20,6 +20,7 @@ function RequestForm(props: any) {
   const [countryData, setCountryData] = useState<any>({});
   const [btnDisable, setBtnDisable] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState<any>("");
 
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
@@ -129,6 +130,29 @@ function RequestForm(props: any) {
     }
   }, [id]);
 
+
+  let regexValidation = /^(\+?\d{1,3}-?)\d{10}$/;
+  let minMaxValue = 13;
+  if (
+    geoLocationData?.country_code === "NG" ||
+    phoneNumber?.startsWith("+234")
+  ) {
+    minMaxValue = 14;
+    regexValidation = /^(\+?\d{1,3}-?)\d{10}$/;
+  } else if (
+    geoLocationData?.country_code === "KE" ||
+    phoneNumber?.startsWith("+254")
+  ) {
+    minMaxValue = 13;
+    regexValidation = /^(\+?\d{1,3}-?)\d{9}$/;
+  } else if (
+    geoLocationData?.country_code === "ZA" ||
+    phoneNumber?.startsWith("+27")
+  ) {
+    minMaxValue = 12;
+    regexValidation = /^(\+?\d{1,3}-?)\d{9}$/;
+  }
+
   return (
     <div className={Styles.RequestFormStyle}>
       <ToastContainer />
@@ -187,17 +211,22 @@ function RequestForm(props: any) {
             </div>
             <div className={Styles.inputLabelContainer}>
               <div className={Styles.formGroupPositionRelative}>
+               
                 <input
                   className={Styles.inputForm}
                   type="hidden"
                   {...register("Phone", {
                     maxLength: {
-                      value: 16,
-                      message: "Cannot Exceed 10 digits",
+                      value: minMaxValue,
+                      message: "Can not Exceed 10 digits",
                     },
                     minLength: {
-                      value: 12,
+                      value: minMaxValue,
                       message: "Valid phone number Required",
+                    },
+                    pattern: {
+                      value: regexValidation,
+                      message: "Invalid phone number format",
                     },
                     required: "Phone is Required",
                   })}
@@ -210,6 +239,8 @@ function RequestForm(props: any) {
                   value={watch("Phone")}
                   onChange={(e) => {
                     setValue("Phone", e);
+                    setPhoneNumber(e);
+
                   }}
                   onBlur={() => {
                     trigger("Phone");
@@ -253,19 +284,18 @@ function RequestForm(props: any) {
                     {errors?.Programme_Of_Interest?.message}
                   </small>
                 )}
-              </div>
-            </div>
-          </div>
-          <div>
-            {/* <div className="text-center">
-              {(programmeOfInterest === "Digital Marketing" ||
+                   {(programmeOfInterest === "Digital Marketing" ||
                 programmeOfInterest === "Design Thinking") && (
                 <small className="text-black">
                   *Learn collaboratively! Apply with 15 people to begin the
                   course
                 </small>
               )}
-            </div> */}
+              </div>
+            </div>
+          </div>
+          <div>
+           
           </div>
           <div className={Styles.buttenContainer}>
             <button
