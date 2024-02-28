@@ -35,11 +35,6 @@ const redirectURL = () => {
     //   destination: "/all-courses",
     //   permanent: true,
     // },
-    {
-      source: "/all-courses-new",
-      destination: "/404",
-      permanent: true,
-    },
 
     // {
     //   source: "/programsnew",
@@ -1053,6 +1048,130 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
+    //-------------------------new redirections---------------------------------
+    {
+      source: "/all-course/digital-marketing/applied-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/all-course/digital-marketing/basic-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/all-course/digital-marketing/advanced-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/all-courses-new",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/undefined",
+      destination: "/home",
+      permanent: true,
+    },
+    {
+      source: "/data-science-main",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/programs/createMyWealth",
+      destination: "/home",
+      permanent: true,
+    },
+    {
+      source: "/password-reset",
+      destination: "https://mydigital.regenesys.net/login/index.php",
+      permanent: true,
+    },
+    {
+      source: "/project-management/1000",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/programs/data-science/1000",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+
+    {
+      source: "/contact/1000",
+      destination: "/contact",
+      permanent: true,
+    },
+    {
+      source: "/terms-and-condition/1000",
+      destination: "/terms-and-conditions",
+      permanent: true,
+    },
+    {
+      source: "/about/1000",
+      destination: "/about",
+      permanent: true,
+    },
+    {
+      source: "/advanced-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/Digital",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/courses/data-science",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/programs/data-science/",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses/project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/programs/[course]",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/programs/cyber-",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/fac-led-projectmanagement",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/courses/advanced-coding-2",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/data-science/applied-data-science",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/study-data-science-ng",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+
+    //-------------------------new redirections end---------------------------------
   ];
   return path;
 };
