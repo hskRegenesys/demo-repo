@@ -11,7 +11,7 @@ const MultiplePagesBrandData = {
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     UspSectionData: {
       part1: {
-        card1text: "USA, South Africa, Nigeria, Kenya & India",
+        card1text: "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
         iconImage1: "/assets/images/HomeNew/Location.svg",
       },
       part2: {
