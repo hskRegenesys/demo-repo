@@ -29,6 +29,8 @@ class LeadService {
       ? "NIGERIA"
       : crmData.Phone?.startsWith("+254")
       ? "KENYA"
+      : crmData.Phone?.startsWith("+27")
+      ? "SOUTH AFRICA"
       : crmData.Phone?.startsWith("+256")
       ? "UGANDA"
       : "TANZANIA";
@@ -113,6 +115,7 @@ class LeadService {
 
       if (
         phoneNumber.startsWith("+234") ||
+        phoneNumber.startsWith("+27") ||
         phoneNumber.startsWith("+254") ||
         phoneNumber.startsWith("+256")
       ) {
