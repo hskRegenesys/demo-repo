@@ -50,6 +50,15 @@
   color: #a51f1f;
   font-weight: 100;
 }
+.tost{
+    background: rgb(252, 252, 252);
+    color: #515151;
+    font-size: 20px;
+    font-family: Montserrat !important;
+
+
+  }
+
 
 .formGroupPositionRelative {
   position: relative;

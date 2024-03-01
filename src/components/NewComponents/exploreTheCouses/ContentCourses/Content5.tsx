@@ -8,7 +8,7 @@ interface Content5Props {
   dropDown: string;
   curriculumContainer: {
     weekHeading: string;
-    weekPoints: string[];
+    weekPoints: string[] | { [key: string]: string[] };
   }[];
 }
 
@@ -19,7 +19,7 @@ const Content5: React.FC<Content5Props> = ({
   dropDown,
   curriculumContainer,
 }) => {
-  const [activeWeekIndex, setActiveWeekIndex] = useState<number | null>(0);
+  const [activeWeekIndex, setActiveWeekIndex] = useState<number | null>(null);
 
   const handleWeekClick = (index: number) => {
     setActiveWeekIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -47,12 +47,34 @@ const Content5: React.FC<Content5Props> = ({
             </div>
             {index === activeWeekIndex && (
               <div className={styles.dropdown}>
-                {week.weekPoints.map((value, pointIndex) => (
-                  <div key={pointIndex} className={styles.weekPoint}>
-                    <img src={tickIcon} alt="Tick Icon" />
-                    <span>{value}</span>
-                  </div>
-                ))}
+                {Array.isArray(week.weekPoints) ? (
+                  <ul>
+                    {week.weekPoints.map((value, pointIndex) => (
+                      <li key={pointIndex} className={styles.weekPoint}>
+                        <img src={tickIcon} alt="Tick Icon" />
+                        <span>{value}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <ul>
+                    {Object.entries(week.weekPoints).map(
+                      ([key, value], pointIndex) => (
+                        <div key={key} style={{ marginBottom: "20px" }}>
+                          <h6 className={styles.sideHeding}>{key}</h6>
+                          <ul>
+                            {value.map((item: string, index: number) => (
+                              <li key={index} className={styles.weekPoint}>
+                                <img src={tickIcon} alt="Tick Icon" />
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )
+                    )}
+                  </ul>
+                )}
               </div>
             )}
           </div>

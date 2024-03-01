@@ -92,14 +92,14 @@ function RequestForm(props: any) {
     if (props?.title !== "Download Brochure") {
       setSubmitted(true);
       toast.success("Thank you for applying! We will get back to you.", {
-        position: toast.POSITION.TOP_CENTER,
+        position: toast.POSITION.TOP_RIGHT,
         autoClose: 3000,
+        className:Styles.tost 
       });
-      props.onFormSubmit(); // Execute the callback function
-      reset(); // Reset the form state
+      props.onFormSubmit(); 
+      reset()
     }
   };
-
   let courses: any = [];
 
   // if (allCourseList.length) {
@@ -155,7 +155,8 @@ function RequestForm(props: any) {
 
   return (
     <div className={Styles.RequestFormStyle}>
-      <ToastContainer />
+      <ToastContainer      
+ />
 
       <form className={Styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
         <div className={Styles.FormCard}>

@@ -1,0 +1,107 @@
+/* SideMap.module.css */
+
+.Sidemap {
+  margin-top: 78px;
+  background: linear-gradient(
+    180deg,
+    #e5ffed 0%,
+    rgba(231, 254, 238, 0.53) 59.4%,
+    rgba(252, 252, 252, 0) 100%
+  );
+}
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1224px;
+}
+.containerCard h1 {
+  font-family: Montserrat-Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.11px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.container {
+  display: flex;
+  gap: 52px;
+  position: relative;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  padding: 40px 0px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 4px 0px #3741511a;
+}
+
+.sidebar div {
+  cursor: pointer;
+  padding: 16px 20px;
+  transition: background-color 0.3s ease;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.11999999731779099px;
+  text-align: left;
+}
+
+.sidebar div.active {
+  background-color: #f0fdf4;
+  font-family: Montserrat-Bold;
+  border-right: 3px solid #008554;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #008554;
+}
+
+.card div {
+  margin-bottom: 12px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.content a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.Sidemap h1 {
+  font-size: 16px;
+}

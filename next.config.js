@@ -884,6 +884,12 @@ const redirectURL = () => {
       permanent: true,
     },
 
+    {
+      source: "/sidemap",
+      destination: "/404",
+      permanent: true,
+    },
+
     // {
     //   source: "/all-courses-new/design-thinking-new",
     //   destination: "/404",
