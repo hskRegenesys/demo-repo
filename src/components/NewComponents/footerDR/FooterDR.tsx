@@ -13,7 +13,7 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
       <img src="/assets/images/HomeNew/DR_Logo.svg" alt="LogoIpsum" />
     </div>
     <div className={styles.footerTextheader}>
-      <h2>Ready to get started</h2>
+      {/* <h2>Ready to get started</h2> */}
       <button
         className={styles.getStartedButton}
         onClick={handleEnrollButtonClick}
@@ -152,7 +152,9 @@ const FooterDR: React.FC<FooterDRProps> = ({ handleEnrollButtonClick }) => (
         </div>
       </div>
       <div className={styles.footerTextDesktop}>
-        <p>Copyright © 2020. LogoIpsum. All rights reserved.</p>
+        <p>
+          Copyright © 2024 | Digital Regenesys (Pvt) Ltd | All Rights Reserved
+        </p>
         <div className={styles.footerTextInside}>
           <a href="https://www.digitalregenesys.com/terms-and-conditions">
             Terms & Conditions
@@ -170,12 +172,13 @@ const FooterDR: React.FC<FooterDRProps> = ({ handleEnrollButtonClick }) => (
           <FooterContent4 />
         </div>
         <div className={styles.content1}>
-          <FooterContent2 />{" "}
-          <FooterContent1 handleEnrollButtonClick={handleEnrollButtonClick} />
+          <FooterContent2 />
+          {/* <FooterContent1 handleEnrollButtonClick={handleEnrollButtonClick} /> */}
         </div>
         <div className={styles.footerText}>
           <p>
-            Copyright © 2020. LogoIpsum. All rights reserved.|
+            Copyright © 2024 | Digital Regenesys (Pvt) Ltd | All Rights Reserved
+            |
             <a href="https://www.digitalregenesys.com/terms-and-conditions">
               Terms & Conditions
             </a>

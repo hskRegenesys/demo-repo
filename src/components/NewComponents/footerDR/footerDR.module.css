@@ -95,6 +95,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  min-width: 260px;
 }
 
 .strong {
@@ -174,7 +175,7 @@
   }
   .footerSection {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
   .footerSectionMobile {
     display: block;
