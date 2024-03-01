@@ -546,6 +546,7 @@
 }
 .active .weekHeader {
   padding-bottom: 16px;
+  margin-bottom: 16px;
   border-bottom: 1px solid var(--light-divider-borders-dark, #ced1d9);
 }
 .weekPoint {
@@ -563,6 +564,17 @@
 .weekPoint img {
   width: 20px;
   margin-right: 10px;
+}
+
+.sideHeding {
+  color: var(--Light-Text-Primary, #2b3340);
+  font-family: Montserrat-semiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  margin-bottom: 16px;
 }
 
 .textIcon {

@@ -885,7 +885,7 @@ const redirectURL = () => {
     },
 
     {
-      source: "/side-map",
+      source: "/sidemap",
       destination: "/404",
       permanent: true,
     },

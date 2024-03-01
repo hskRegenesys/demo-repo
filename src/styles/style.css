@@ -61,6 +61,11 @@
   src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
   font-style: normal;
 }
+@font-face {
+  font-family: "Montserrat-semiBold";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -69,6 +74,7 @@
   --thm-font: "Raleway", sans-serif;
   --thm-b-font: "Raleway-semibold", sans-serif;
   --thm-b-font-m: "Montserrat-Bold";
+  --thm-S-font-m: "Montserrat-semiBold";
   --thm-font-m: "Montserrat"
   --thm-base: #c3ead8;
   --thm-base-rgb: 255, 170, 23;
