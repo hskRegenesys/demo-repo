@@ -851,7 +851,7 @@ img {
 .main-menu .navigation a {
   color: #000000;
   font-family: Raleway-medium;
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 
 .main-menu .navigation a:hover {

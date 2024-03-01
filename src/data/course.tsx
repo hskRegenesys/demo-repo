@@ -8894,7 +8894,7 @@ export const brochureDetails: any = {
     sourceCampaign: sourceCampaign,
   },
   MD: {
-    name: "project-management-brochure_compressed.pdf",
+    name: "MDPM_Brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
