@@ -168,7 +168,7 @@ const Course = (props: any) => {
   const pageName = router?.query?.course
     ?.toString()
     .replace(/-/g, " ")
-    .replace(/\b\w/g, (match: string) => match.toUpperCase())
+    .replace(/\b\w/g, (match: string) => match.toUpperCase());
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
@@ -239,11 +239,7 @@ const Course = (props: any) => {
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
   return (
-    <Layout
-      style={{ overflow: "visible !importent" }}
-      pageTitle={props?.course}
-      context="multiple-page"
-    >
+    <Layout pageTitle={props?.course} context="multiple-page">
       {isPopupVisible && (
         <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
       )}

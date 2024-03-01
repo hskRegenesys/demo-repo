@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import HomeBanner from "@/components/HomeBanner/HomeBanner";
 import HomeCourses from "@/components/HomeCourses/HomeCourses";
 import HeaderOne from "@/components/Header/HeaderOne";
@@ -29,6 +29,9 @@ import ThankYouPopup from "@/components/Modal/ThankYouPopup";
 import GoogleMap from "@/components/GoogleMap/GoogleMap";
 import TestimonialsVideo from "@/components/TestimonialsVideo/testimonialsVideo";
 import videoTestimonialData from "@/data/videoTestimonial";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home2 = () => {
   const [show, setShow] = useState(false);
@@ -51,6 +54,38 @@ const Home2 = () => {
     return () => clearTimeout(timeoutModal);
   }, []);
 
+  const handlePopupClose = () => {
+    setIsPopupVisible(false);
+  };
+
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const experienceSectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Check if the target element is at least 50% visible
+          if (entry.intersectionRatio >= 0.5) {
+            setIsPopupVisible(true);
+            observer.disconnect();
+          }
+        }
+      },
+      { rootMargin: "0px", threshold: 0.5 } // Adjust threshold as needed
+    );
+
+    if (experienceSectionRef.current) {
+      observer.observe(experienceSectionRef.current);
+    }
+
+    return () => {
+      if (experienceSectionRef.current) {
+        observer.unobserve(experienceSectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <Layout pageTitle="home">
       <Schemas type={Constants.home} />
@@ -65,7 +100,9 @@ const Home2 = () => {
       <TestimonialsVideo videoDetails={videoTestimonialData} />
       <GoogleMap />
       <HomeCourses courses={courses} />
+      {/* <ExperienceSection forwardedRef={experienceSectionRef} /> */}
       <ExperienceSection />
+
       <WhyChooseUs />
       <PopularTopics />
       <TestimonialsStudent />
@@ -75,15 +112,16 @@ const Home2 = () => {
       <StickyBar />
       {/* <div id="tawk_5825dfc218d9f16af02abeea"></div>; */}
       <Modal show={show} onHide={() => setShow(false)}>
-        <ImageModalPopup
-          bgImage="DR-website-popup-1.webp"
-          setShows={setShow}
-          thankYouShow={setThankYouShow}
-        />
+        <ImageModalPopup bgImage="DR-website-popup-1.webp" setShows={setShow} />
       </Modal>
+
+      {/* {isPopupVisible && (
+        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose}   />
+      )} */}
       <Modal show={thankYouShow}>
         <ThankYouPopup setShows={setThankYouShow} />
       </Modal>
+      <ToastContainer />
     </Layout>
   );
 };

@@ -1,11 +1,18 @@
 import { partnerOne } from "@/data/partnerSection";
-import React from "react";
+import React, { forwardRef, Ref, HTMLAttributes } from "react";
 import { Col, Row } from "react-bootstrap";
 import ExperienceSectionMobile from "./ExperienceSectionMobile";
 import Image from "next/image";
 
+// interface ExperienceSectionProps extends HTMLAttributes<HTMLElement> {
+//   forwardedRef: Ref<HTMLElement>;
+// }
+
+// const ExperienceSection = forwardRef((props: ExperienceSectionProps, ref) => {
+
 const ExperienceSection = () => {
   return (
+    // <section className="partner-one" ref={props.forwardedRef}>
     <section className="partner-one">
       <div className="auto-container">
         <div className="sec-title">
@@ -45,6 +52,7 @@ const ExperienceSection = () => {
       </div>
     </section>
   );
+  // });
 };
 
 export default ExperienceSection;
