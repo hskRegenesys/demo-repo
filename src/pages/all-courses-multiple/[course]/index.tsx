@@ -34,6 +34,7 @@ import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -241,7 +242,11 @@ const Course = (props: any) => {
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
       {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+        <PopupForm
+          isVisible={isPopupVisible}
+          onClose={handlePopupClose}
+          popupData={PopupData.all}
+        />
       )}
       {isYoutubePopup && (
         <YoutubeVidioPopup

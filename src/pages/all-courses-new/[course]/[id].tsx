@@ -25,6 +25,7 @@ import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import Faq from "@/components/NewComponents/faq/Faq";
 import DataSeparatorPages from "src/pages/DataSeparatorPages/DataSeparatorPages";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 // Define the type for the dynamic data
 interface MainCoursesDynimicData {
@@ -223,7 +224,11 @@ const DigitalMarketing = (props: any) => {
   return (
     <>
       {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+        <PopupForm
+          isVisible={isPopupVisible}
+          onClose={handlePopupClose}
+          popupData={PopupData.all}
+        />
       )}
       {isYoutubePopup && (
         <YoutubeVidioPopup
