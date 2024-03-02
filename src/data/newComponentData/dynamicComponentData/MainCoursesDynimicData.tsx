@@ -46,7 +46,7 @@ const MainCoursesDynimicData = {
         {
           cardIcon: "/assets/images/HomeNew/medal.svg",
           text1: "190+",
-          text2: "Countries Global Exposure",
+          text2: "Countries Exposure",
         },
       ],
     },
@@ -179,7 +179,11 @@ const MainCoursesDynimicData = {
               weekHeading: "Basic Data Science",
               weekPoints: {
                 "General Modules": ["Python Programming", "MySQL (DBMS)"],
-                "Complimentary Modules": ["Math for Data Science", "Excel"],
+                "Complimentary Modules": [
+                  "Math for Data Science",
+                  "Excel",
+                  "ChatGPT Helping Data Scientists Big on their Day-To-Day Life",
+                ],
                 "Add-on Modules": ["R-Programming Language", "MongoDB (DBMS)"],
                 "Business Intelligence Tools": ["Power-BI", "Tableau"],
               },

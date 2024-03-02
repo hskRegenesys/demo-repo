@@ -13,6 +13,7 @@ import Layout from "@/components/Layout/Layout";
 import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
 import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -35,7 +36,11 @@ const AllCoursesNew = () => {
   return (
     <Layout>
       {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+        <PopupForm
+          isVisible={isPopupVisible}
+          onClose={handlePopupClose}
+          popupData={PopupData.all}
+        />
       )}
       <HeaderOne />
       <MobileMenu />

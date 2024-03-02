@@ -4,10 +4,18 @@ import RequestForm from "../requestForm/RequestForm";
 
 interface PopupFormProps {
   isVisible: boolean;
+  popupData: {
+    PopupDesktop: string;
+    PopupMobile: string;
+  };
   onClose: () => void;
 }
 
-const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
+const PopupForm: React.FC<PopupFormProps> = ({
+  isVisible,
+  onClose,
+  popupData,
+}) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const closePopup = () => {
@@ -55,12 +63,12 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
             <div className={Styles.Content}>
               <div className={Styles.ImageContainer}>
                 <img
-                  src="/assets/images/HomeNew/Web - Modal.png"
+                  src={popupData.PopupDesktop}
                   alt="Popup Image"
                   className={Styles.WebImage}
                 />
                 <img
-                  src="/assets/images/HomeNew/Mobile - Modal.png"
+                  src={popupData.PopupMobile}
                   alt="Popup Image"
                   className={Styles.MobileImage}
                 />
