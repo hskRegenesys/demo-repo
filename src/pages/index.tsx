@@ -56,26 +56,26 @@ const Home2 = () => {
     return () => clearTimeout(timeoutModal);
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const experienceSection = document.getElementById("experience-section");
-      if (experienceSection) {
-        const { top } = experienceSection.getBoundingClientRect();
-        if (top < window.innerHeight * 0.5) {
-          setIsPopupVisible(true);
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const experienceSection = document.getElementById("experience-section");
+  //     if (experienceSection) {
+  //       const { top } = experienceSection.getBoundingClientRect();
+  //       if (top < window.innerHeight * 0.5) {
+  //         setIsPopupVisible(true);
+  //         window.removeEventListener("scroll", handleScroll);
+  //       }
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
-  const handlePopupClose = () => {
-    setIsPopupVisible(false);
-  };
+  // const handlePopupClose = () => {
+  //   setIsPopupVisible(false);
+  // };
 
   return (
     <Layout pageTitle="home">
@@ -91,9 +91,8 @@ const Home2 = () => {
       <TestimonialsVideo videoDetails={videoTestimonialData} />
       <GoogleMap />
       <HomeCourses courses={courses} />
-      <div id="experience-section"></div>
+      {/* <div id="experience-section"></div> */}
       <ExperienceSection />
-      {/* <ExperienceSection /> */}
 
       <WhyChooseUs />
       <PopularTopics />
@@ -103,21 +102,21 @@ const Home2 = () => {
       <MainFooter normalPadding={false} />
       <StickyBar />
       {/* <div id="tawk_5825dfc218d9f16af02abeea"></div>; */}
-      {/* <Modal show={show} onHide={() => setShow(false)}>
+      <Modal show={show} onHide={() => setShow(false)}>
         <ImageModalPopup bgImage="DR-website-popup-1.webp" setShows={setShow} />
-      </Modal> */}
+      </Modal>
 
-      {isPopupVisible && (
+      {/* {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
           popupData={PopupData.homePage}
         />
-      )}
-      {/*       
-      // <Modal show={thankYouShow}>
-      //   <ThankYouPopup setShows={setThankYouShow} />
-      // </Modal> */}
+      )} */}
+
+      <Modal show={thankYouShow}>
+        <ThankYouPopup setShows={setThankYouShow} />
+      </Modal>
       <ToastContainer />
     </Layout>
   );

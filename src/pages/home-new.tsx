@@ -19,6 +19,7 @@ import FeaturedCourses from "@/components/NewComponents/featuredCourses/Featured
 import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
 import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
 import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -42,7 +43,11 @@ const HomeNew = () => {
   return (
     <Layout pageTitle="new-home">
       {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+        <PopupForm
+          isVisible={isPopupVisible}
+          onClose={handlePopupClose}
+          popupData={PopupData.all}
+        />
       )}
       <HeaderOne />
 
