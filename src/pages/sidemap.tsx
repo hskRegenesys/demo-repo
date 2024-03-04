@@ -12,12 +12,37 @@ import _ from "lodash";
 
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import SidemapComponent from "@/components/NewComponents/sidemap/SideMap";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const Sidemap = () => {
-  const handleEnrollButtonClick = () => {};
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleEnrollButtonClick = () => {
+    setIsPopupVisible(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupVisible(false);
+  };
+
+  useEffect(() => {
+    const timeoutModal = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutModal);
+  }, []);
 
   return (
     <Layout pageTitle="home" context="multiple-page">
+      {isPopupVisible && (
+        <PopupForm
+          isVisible={isPopupVisible}
+          onClose={handlePopupClose}
+          popupData={PopupData.all}
+        />
+      )}
       <Style />
       <HeaderOne />
       <MobileMenu />

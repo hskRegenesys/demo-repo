@@ -238,6 +238,9 @@
     padding: 40px 16px 0px 16px;
     background: none !important;
   }
+  .card {
+    max-width: 328px;
+  }
   .rocketImg {
     display: none;
   }

@@ -94,10 +94,10 @@ function RequestForm(props: any) {
       toast.success("Thank you for applying! We will get back to you.", {
         position: toast.POSITION.TOP_RIGHT,
         autoClose: 3000,
-        className:Styles.tost 
+        className: Styles.tost,
       });
-      props.onFormSubmit(); 
-      reset()
+      props.onFormSubmit();
+      reset();
     }
   };
   let courses: any = [];
@@ -130,7 +130,6 @@ function RequestForm(props: any) {
     }
   }, [id]);
 
-
   let regexValidation = /^(\+?\d{1,3}-?)\d{10}$/;
   let minMaxValue = 13;
   if (
@@ -155,8 +154,7 @@ function RequestForm(props: any) {
 
   return (
     <div className={Styles.RequestFormStyle}>
-      <ToastContainer      
- />
+      <ToastContainer />
 
       <form className={Styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
         <div className={Styles.FormCard}>
@@ -212,7 +210,6 @@ function RequestForm(props: any) {
             </div>
             <div className={Styles.inputLabelContainer}>
               <div className={Styles.formGroupPositionRelative}>
-               
                 <input
                   className={Styles.inputForm}
                   type="hidden"
@@ -241,7 +238,6 @@ function RequestForm(props: any) {
                   onChange={(e) => {
                     setValue("Phone", e);
                     setPhoneNumber(e);
-
                   }}
                   onBlur={() => {
                     trigger("Phone");
@@ -285,19 +281,17 @@ function RequestForm(props: any) {
                     {errors?.Programme_Of_Interest?.message}
                   </small>
                 )}
-                   {(programmeOfInterest === "Digital Marketing" ||
-                programmeOfInterest === "Design Thinking") && (
-                <small className="text-black">
-                  *Learn collaboratively! Apply with 15 people to begin the
-                  course
-                </small>
-              )}
+                {(programmeOfInterest === "Digital Marketing" ||
+                  programmeOfInterest === "Design Thinking") && (
+                  <small className="text-black">
+                    *Learn collaboratively! Apply with 15 people to begin the
+                    course
+                  </small>
+                )}
               </div>
             </div>
           </div>
-          <div>
-           
-          </div>
+          <div></div>
           <div className={Styles.buttenContainer}>
             <button
               type="submit"
@@ -309,7 +303,11 @@ function RequestForm(props: any) {
             </button>
           </div>
           <small className={Styles.formFooterText}>
-            By submitting this form, you agree to our Privacy Policy.
+            By submitting this form, you agree to our
+            <a href="https://www.digitalregenesys.com/privacy-policy">
+              Privacy Policy
+            </a>
+            .
           </small>
         </div>
       </form>

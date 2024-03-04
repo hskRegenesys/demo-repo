@@ -178,13 +178,12 @@ const FooterDR: React.FC<FooterDRProps> = ({ handleEnrollButtonClick }) => (
         <div className={styles.footerText}>
           <p>
             Copyright © 2024 | Digital Regenesys (Pvt) Ltd | All Rights Reserved
-            |
             <a href="https://www.digitalregenesys.com/terms-and-conditions">
-              Terms & Conditions
+              | Terms & Conditions
             </a>
             |
             <a href="https://www.digitalregenesys.com/privacy-policy">
-              Privacy Policy
+              Privacy Policy.
             </a>
           </p>
         </div>

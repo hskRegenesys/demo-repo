@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Sidemapdata from "./SideMapData";
 import Styles from "./SideMap.module.css";
 
@@ -18,17 +18,29 @@ const Sidebar: React.FC<SidebarProps> = ({
   activeTitle,
   onItemClick,
 }) => {
+  const [addPadding, setAddPadding] = useState(false);
+  const sidebarContainerRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className={Styles.sidebar}>
-      {titles.map((title: string) => (
-        <div
-          key={title}
-          onClick={() => onItemClick(title)}
-          className={title === activeTitle ? Styles.active : ""}
-        >
-          {title}
-        </div>
-      ))}
+    <div
+      ref={sidebarContainerRef}
+      className={`${Styles.sidebarContainer} ${
+        addPadding ? Styles.addPadding : ""
+      }`}
+    >
+      <h1>Digital Regenesys Sitemap</h1>
+
+      <div className={Styles.sidebar}>
+        {titles.map((title: string) => (
+          <div
+            key={title}
+            onClick={() => onItemClick(title)}
+            className={title === activeTitle ? Styles.active : ""}
+          >
+            {title}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -46,7 +58,9 @@ const Content: React.FC<ContentProps> = ({ data, selectedTitle }) => {
           <div key={key} className={Styles.card}>
             <h2 className={Styles.titleHeading}>{Sidemapdata[key].Heading}</h2>
             {Sidemapdata[key].items.map((item, index) => (
-              <div key={index}>{item.title}</div>
+              <a href={item.link}>
+                <div key={index}>{item.title}</div>
+              </a>
             ))}
           </div>
         ))
@@ -54,7 +68,9 @@ const Content: React.FC<ContentProps> = ({ data, selectedTitle }) => {
         <div className={Styles.card}>
           <h2 className={Styles.titleHeading}>{selectedTitle}</h2>
           {data.map((item, index) => (
-            <div key={index}>{item.title}</div>
+            <a href={item.link}>
+              <div key={index}>{item.title}</div>
+            </a>
           ))}
         </div>
       )}
@@ -127,7 +143,7 @@ const SidemapComponent: React.FC = () => {
                 className={Styles.ListMobile}
                 onClick={() => onItemClick(title)}
               >
-                {item.title}
+                <a href={item.link}>{item.title}</a>
               </li>
             ))}
           </ul>
@@ -140,7 +156,6 @@ const SidemapComponent: React.FC = () => {
     <div className={Styles.Sidemap}>
       <div className={Styles.SidemapDesktop}>
         <div className={Styles.containerCard}>
-          <h1>Digital Regenesys Sitemap</h1>
           <div className={Styles.container}>
             <Sidebar
               titles={["All pages", ...allTitles]}

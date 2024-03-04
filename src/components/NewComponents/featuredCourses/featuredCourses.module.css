@@ -243,6 +243,9 @@
   .cardContainer {
     gap: 30px;
   }
+  .card {
+    max-width: 328px;
+  }
   .smallHeading {
     font-size: 14px;
     margin-bottom: 8px;
