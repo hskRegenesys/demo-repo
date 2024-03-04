@@ -84,21 +84,21 @@ const careersTransformedData = {
       StudentVidio:
         "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
     },
-    {
-      playImg: "/assets/images/HomeNew/Polygon.svg",
-      profileImg: "/assets/images/HomeNew/students/Testimonial-5.webp",
-      name: "Akshay Patil",
-      role: "Machine Learning",
-      experienceText:
-        "After completing my course in Machine Learning, I registered myself for Data Science that was taught by Dr. Laika and I have to say both my instructors were very helpful and went beyond their ways to teach me. They also helped me create a professional LinkedIn profile. I am glad that I chose Digital Regenesys for my learning courses.",
-      riseImg: "/assets/images/HomeNew/rise.webp",
-      firstRole: "Data Scientist",
-      secondRole: "Research Scientist",
-      companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
-      companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
-      StudentVidio:
-        "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
-    },
+    // {
+    //   playImg: "/assets/images/HomeNew/Polygon.svg",
+    //   profileImg: "/assets/images/HomeNew/students/Testimonial-5.webp",
+    //   name: "Akshay Patil",
+    //   role: "Machine Learning",
+    //   experienceText:
+    //     "After completing my course in Machine Learning, I registered myself for Data Science that was taught by Dr. Laika and I have to say both my instructors were very helpful and went beyond their ways to teach me. They also helped me create a professional LinkedIn profile. I am glad that I chose Digital Regenesys for my learning courses.",
+    //   riseImg: "/assets/images/HomeNew/rise.webp",
+    //   firstRole: "Data Scientist",
+    //   secondRole: "Research Scientist",
+    //   companyFirstRoleImg: "/assets/images/HomeNew/google.webp",
+    //   companySecondRoleImg: "/assets/images/HomeNew/hcl.webp",
+    //   StudentVidio:
+    //     "https://www.youtube.com/embed/pxKOmOX5muU?autoplay=1&loop=1&playlist=pxKOmOX5muU",
+    // },
   ],
 };
 

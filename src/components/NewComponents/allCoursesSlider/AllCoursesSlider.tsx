@@ -135,6 +135,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
           spaceBetween={25}
           slidesPerView={3}
           pagination={{ clickable: true }}
+          slidesPerGroup={3}
           breakpoints={{
             0: {
               slidesPerView: 1,

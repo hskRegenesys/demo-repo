@@ -49,7 +49,7 @@ interface Props {
         dropDown: string;
         curriculumContainer: {
           weekHeading: string;
-          weekPoints: string[];
+          weekPoints: string[] | { [key: string]: string[] };
         }[];
       };
       content6?: {
@@ -187,7 +187,7 @@ const ExploreTheCourses: React.FC<Props> = ({
             <Content1 {...content1} />
           </div>
           {/* Render Content 5 */}
-          {/* {content5 && (
+          {content5 && (
             <div
               className={styles.contentspace}
               ref={contentRefs[1]}
@@ -195,7 +195,7 @@ const ExploreTheCourses: React.FC<Props> = ({
             >
               <Content5 {...content5} />
             </div>
-          )} */}
+          )}
           {/* Render Content 2 */}
           <div
             className={styles.contentspace}

@@ -34,6 +34,7 @@ import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -168,7 +169,7 @@ const Course = (props: any) => {
   const pageName = router?.query?.course
     ?.toString()
     .replace(/-/g, " ")
-    .replace(/\b\w/g, (match: string) => match.toUpperCase())
+    .replace(/\b\w/g, (match: string) => match.toUpperCase());
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
@@ -239,13 +240,13 @@ const Course = (props: any) => {
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
   return (
-    <Layout
-      style={{ overflow: "visible !importent" }}
-      pageTitle={props?.course}
-      context="multiple-page"
-    >
+    <Layout pageTitle={props?.course} context="multiple-page">
       {isPopupVisible && (
-        <PopupForm isVisible={isPopupVisible} onClose={handlePopupClose} />
+        <PopupForm
+          isVisible={isPopupVisible}
+          onClose={handlePopupClose}
+          popupData={PopupData.all}
+        />
       )}
       {isYoutubePopup && (
         <YoutubeVidioPopup

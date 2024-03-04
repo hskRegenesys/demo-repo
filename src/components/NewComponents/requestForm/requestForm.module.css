@@ -13,7 +13,8 @@
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
-  text-align: center;
+  text-align: center !important;
+  display: block;
 }
 
 .formContentInput {
@@ -49,6 +50,19 @@
   font-family: Montserrat;
   color: #a51f1f;
   font-weight: 100;
+}
+.tost {
+  background: rgb(252, 252, 252);
+  color: #515151;
+  font-size: 20px;
+  font-family: Montserrat !important;
+}
+.formFooterText a {
+  margin-left: 2px;
+  color: #008554;
+}
+.formFooterText a:hover {
+  text-decoration: underline;
 }
 
 .formGroupPositionRelative {

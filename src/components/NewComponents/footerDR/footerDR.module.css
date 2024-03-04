@@ -4,6 +4,7 @@
   color: white;
   padding: 40px 108px;
 }
+
 .footerContainer li {
   color: #fff;
   font-size: 14px;
@@ -13,6 +14,10 @@
   letter-spacing: 0.12px;
   margin-bottom: 12px;
   font-family: Montserrat;
+}
+.footerContainer li:hover {
+  color: #01ad6e;
+  font-weight: 600;
 }
 .footerContent2 ul {
   list-style: none;
@@ -96,8 +101,12 @@
   font-weight: 700;
   line-height: 24px;
   min-width: 260px;
+  transition: background-color 0.8s;
 }
-
+.getStartedButton:hover {
+  color: var(--primary-primary-charcoal, #131718);
+  background-color: #ffffff;
+}
 .strong {
   color: #1bb179;
   font-family: Montserrat-Bold;
@@ -134,17 +143,22 @@
   width: 100%;
 }
 
-.footerText a {
+.footerText a,
+.footerTextInside a {
   color: #fff;
   text-decoration: none;
 }
 
-.footerText a:hover {
+.footerText a:hover,
+.footerTextInside a:hover {
   text-decoration: underline;
+  color: #1bb179;
+  font-weight: 600;
 }
 
 .footerText p {
   margin: 5px 0;
+  font-family: Montserrat;
 }
 .footerTextInside {
   display: flex;

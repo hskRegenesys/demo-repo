@@ -61,6 +61,11 @@
   src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
   font-style: normal;
 }
+@font-face {
+  font-family: "Montserrat-semiBold";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -69,6 +74,7 @@
   --thm-font: "Raleway", sans-serif;
   --thm-b-font: "Raleway-semibold", sans-serif;
   --thm-b-font-m: "Montserrat-Bold";
+  --thm-S-font-m: "Montserrat-semiBold";
   --thm-font-m: "Montserrat"
   --thm-base: #c3ead8;
   --thm-base-rgb: 255, 170, 23;
@@ -1072,21 +1078,19 @@ img {
 }
 
 .main-menu .navigation > li.dropdown:hover > ul {
-  visibility: visible;
-  opacity: 1;
+  display: block;
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
+  -webkit-transition: all 00ms ease;
+  transition: all 00ms ease;
+  -moz-transition: all 00ms ease;
+  -webkit-transition: all 100ms ease-in-out;
+  -ms-transition: all 00ms ease;
+  -o-transition: all 00ms ease;
 }
 
 .main-menu .navigation li > ul > li.dropdown:hover > ul {
-  visibility: visible;
-  opacity: 1;
+  display: block;
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
   -webkit-transition: all 300ms ease;
@@ -1145,8 +1149,7 @@ img {
 ***/
 .sticky-header {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -11238,6 +11241,7 @@ featured-section .right-col .sec-title h2 {
     padding: 7% 5%;
     transform: translate(-50%, 0px);
     border-bottom: 1px solid #ddd;
+    transition: all 0.3s;
 }
 .mainMegaMenu a {
   color: #697386 !important;

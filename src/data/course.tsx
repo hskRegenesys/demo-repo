@@ -176,60 +176,111 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "Week 1",
-            lists: ["Introduction to Project Management", "Project Profiling"],
-          },
-          {
-            id: 2,
-            title: "Week 2",
-            lists: ["Developing Team Capabilities"],
-          },
-          {
-            id: 3,
-            title: "Week 3",
-            lists: ["Planning and Managing"],
-          },
-          {
-            id: 4,
-            title: "Week 4",
-            lists: ["Time Management"],
-          },
-          {
-            id: 5,
-            title: "Week 5",
-            lists: ["Monitoring and Reporting", "Quality Management"],
-          },
-          {
-            id: 6,
-            title: "Week 6",
-            lists: ["Project Closure"],
-          },
-          {
-            id: 7,
-            title: "Week 7",
-            lists: ["Change Management", "Disaster Management"],
-          },
-          {
-            id: 8,
-            title: "Week 8",
+            title: "Project Management: Fundamental Skills for Managers",
             lists: [
+              "Introduction to Project Management",
+              "Project Profiling",
+              "Developing Team Capabilities",
+              "Planning and Managing",
+              "Time Management",
+              "Monitoring and Reporting",
+              "Quality Management",
+              "Project Closure",
+              "Change Management",
+              "Disaster Management",
               "International Project Management",
               "Software for Project Management - (Microsoft Project Plan- MPP)",
+              "Design Thinking: Problem Solving",
+              "Contracts and Agreements",
+              "Industry Expert",
             ],
           },
           {
-            id: 9,
-            title: "Week 9",
-            lists: ["Design Thinking"],
-          },
-          {
-            id: 10,
-            title: "Week 10",
-            lists: ["Contracts and Agreement", "Industry Expert Session"],
+            id: 2,
+            title:
+              "International Project Management: Global Strategy for Managers",
+            lists: [
+              "Introduction- Organizational Project Management",
+              "Program Management – Improving Business Results",
+              "Portfolio Management – A Framework For Governance",
+              "The Project Management Office",
+              "Introduction to Strategy",
+              "Strategy Formation and Implementation",
+              "Internal Environment Analysis: Resources And Capabilities",
+              "International Management",
+              "International Managers Leadership",
+              "Formulating International Strategies",
+              "The Entrepreneurial Ecosystem For Project Manager",
+              "Improving Operational Management",
+              "Procurement and Supply Chain Management",
+              "International Human Resource Management",
+              "Digital Transformation Integrating Technology with Business",
+              "Software for Project Management - (Jira)",
+            ],
           },
         ],
-        defaultCurrent: 1,
       },
+
+      // {
+      //   id: 1,
+      //   courseCurriculumTitle: "Course curriculum",
+      //   faqs: [
+      //     {
+      //       id: 1,
+      //       title: "Week 1",
+      //       lists: ["Introduction to Project Management", "Project Profiling"],
+      //     },
+      //     {
+      //       id: 2,
+      //       title: "Week 2",
+      //       lists: ["Developing Team Capabilities"],
+      //     },
+      //     {
+      //       id: 3,
+      //       title: "Week 3",
+      //       lists: ["Planning and Managing"],
+      //     },
+      //     {
+      //       id: 4,
+      //       title: "Week 4",
+      //       lists: ["Time Management"],
+      //     },
+      //     {
+      //       id: 5,
+      //       title: "Week 5",
+      //       lists: ["Monitoring and Reporting", "Quality Management"],
+      //     },
+      //     {
+      //       id: 6,
+      //       title: "Week 6",
+      //       lists: ["Project Closure"],
+      //     },
+      //     {
+      //       id: 7,
+      //       title: "Week 7",
+      //       lists: ["Change Management", "Disaster Management"],
+      //     },
+      //     {
+      //       id: 8,
+      //       title: "Week 8",
+      //       lists: [
+      //         "International Project Management",
+      //         "Software for Project Management - (Microsoft Project Plan- MPP)",
+      //       ],
+      //     },
+      //     {
+      //       id: 9,
+      //       title: "Week 9",
+      //       lists: ["Design Thinking"],
+      //     },
+      //     {
+      //       id: 10,
+      //       title: "Week 10",
+      //       lists: ["Contracts and Agreement", "Industry Expert Session"],
+      //     },
+      //   ],
+      //   defaultCurrent: 1,
+      // },
     ],
     faqsSection: [
       {
@@ -2055,54 +2106,99 @@ If you are passionate about starting your own full-stack web development busines
       ],
     },
     CourseCurriculum: [
-      // {
-      //   id: 1,
-      //   courseCurriculumTitle: "Course curriculum",
-      //   faqs: [
-      //     {
-      //       id: 1,
-      //       title: "AWS Cloud Computing",
-      //       lists: [
-      //         "Identity and access management",
-      //         "AWS CLI",
-      //         "EC2 - Elastic computer cloud",
-      //         "S3 Cloud object storage",
-      //         "Databases and analytics",
-      //         "ECS, lambda, batch",
-      //         "Cloud integrations and monitoring",
-      //         "ML in AWS - SageMaker overview",
-      //         "Speech and vision API",
-      //       ],
-      //     },
-      //     {
-      //       id: 2,
-      //       title: "Big Data Analytics With PySpark",
-      //       lists: [
-      //         "Spark RDD & dataframe",
-      //         "Spark SQL",
-      //         "Spark NLP",
-      //         "Spark ML",
-      //         "Spark streaming",
-      //         "Spark with Kafka",
-      //       ],
-      //     },
-      //     {
-      //       id: 3,
-      //       title: "ML Ops",
-      //       lists: [
-      //         "Auto ML with pyCaret",
-      //         "Docker",
-      //         "ML flow",
-      //         "GIT & GITHUB",
-      //         "ML model deployment",
-      //         "ML model monitoring",
-      //         "ML model retraining",
-      //       ],
-      //     },
-      //   ],
-      //   defaultCurrent: 1,
-      // },
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Basic Data Science",
+            lists: {
+              "General Modules": ["Python Programming", "MySQL (DBMS)"],
+              "Complimentary Modules": [
+                "Math for Data Science",
+                "Excel",
+                "ChatGPT Helping Data Scientists Big on their Day-To-Day Life",
+              ],
+              "Add-on Modules": ["R-Programming Language", "MongoDB (DBMS)"],
+              "Business Intelligence Tools": ["Power-BI", "Tableau"],
+            },
+          },
+          {
+            id: 2,
+            title: "Advanced Data Science",
+            lists: {
+              "General Modules": [
+                "Machine Learning & Artificial Intelligence",
+                "Deep Learning",
+                "Web development with Flask, Streamlit",
+              ],
+              "Add-on Modules": [
+                "Natural Language Processing",
+                "Computer Vision",
+                "Time Series Analysis and Forecasting",
+              ],
+            },
+          },
+          {
+            id: 3,
+            title: "Applied Data Science",
+            lists: {
+              "": ["AWS Cloud Computing", "Big Data - PySpark+Kafka", "ML Ops"],
+            },
+          },
+        ],
+        defaultCurrent: 1,
+      },
     ],
+    // {
+    //   id: 1,
+    //   courseCurriculumTitle: "Course curriculum",
+    //   faqs: [
+    //     {
+    //       id: 1,
+    //       title: "AWS Cloud Computing",
+    //       lists: [
+    //         "Identity and access management",
+    //         "AWS CLI",
+    //         "EC2 - Elastic computer cloud",
+    //         "S3 Cloud object storage",
+    //         "Databases and analytics",
+    //         "ECS, lambda, batch",
+    //         "Cloud integrations and monitoring",
+    //         "ML in AWS - SageMaker overview",
+    //         "Speech and vision API",
+    //       ],
+    //     },
+    //     {
+    //       id: 2,
+    //       title: "Big Data Analytics With PySpark",
+    //       lists: [
+    //         "Spark RDD & dataframe",
+    //         "Spark SQL",
+    //         "Spark NLP",
+    //         "Spark ML",
+    //         "Spark streaming",
+    //         "Spark with Kafka",
+    //       ],
+    //     },
+    //     {
+    //       id: 3,
+    //       title: "ML Ops",
+    //       lists: [
+    //         "Auto ML with pyCaret",
+    //         "Docker",
+    //         "ML flow",
+    //         "GIT & GITHUB",
+    //         "ML model deployment",
+    //         "ML model monitoring",
+    //         "ML model retraining",
+    //       ],
+    //     },
+    //   ],
+    //   defaultCurrent: 1,
+    // },
+    // ],
     videos: [
       {
         url: "https://www.youtube.com/embed/OvK1rGac6rQ?si=hHP2NAy_jWHvvCqg&rel=0",
@@ -4794,6 +4890,40 @@ If you are passionate about starting your own full-stack web development busines
     },
 
     CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Artificial Intelligence Introductory",
+            lists: [
+              "Python Programming for Artificial Intelligence",
+              "Introduction to Data Analysis & Data Visualisation",
+            ],
+          },
+          {
+            id: 2,
+            title: "Artificial Intelligence Intermediary",
+            lists: [
+              "Artificial Intelligence and Machine Learning",
+              "Artificial Neural Networks",
+              "Deploying AI models in Production",
+            ],
+          },
+          {
+            id: 3,
+            title: "Artificial Intelligence Advanced Applied",
+            lists: [
+              "AI-Powered Applications for Natural Language Processing (NLP)",
+              "Enhancing Visual Content with Computer Vision Techniques",
+              "Leveraging Cloud Computing Services for AI Applications",
+              "Unleashing Insights from Big Data through Analytics",
+              "Streamlining AI Development with ML Ops",
+            ],
+          },
+        ],
+      },
       // {
       //   id: 1,
       //   courseCurriculumTitle: "Course curriculum",
@@ -5970,7 +6100,52 @@ If you are passionate about starting your own full-stack web development busines
         },
       ],
     },
+
     CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Digital Marketing Fundamentals",
+            lists: {
+              "General Modules": [
+                "Introduction to Marketing & Behavioural Digital Marketing",
+                "Search Engine Optimization",
+                "Content Creation & Marketing/UX Digital Approach",
+                "Social Media Marketing/Influencer Marketing",
+              ],
+              "Complimentary Modules": [
+                "Pogo Sticking",
+                "Whatsapp Marketing",
+                "Meme & Topical Marketing",
+                "Marketing Psychology",
+              ],
+            },
+          },
+          {
+            id: 2,
+            title: "Advance Digital Marketing Strategies",
+            lists: {
+              "General Modules": [
+                "Programmatic Advertising & Paid Media Marketing, Importance of Analytics",
+                "Importance of IMC (Media Planning & Media Buying & OTT Marketing)",
+                "Online after sales (Reputation) Management",
+                "E-Commerce Marketing & Email Marketing & Chatbots",
+                "Affiliate Marketing & Mobile Marketing & Podcast",
+              ],
+              "Complimentary Modules": [
+                "Funnel Marketing",
+                "Marktech & Adtech",
+                "Koo app & Inshort app",
+                "Metaverse",
+              ],
+            },
+          },
+        ],
+        defaultCurrent: 1,
+      },
       // {
       //   id: 1,
       //   courseCurriculumTitle: "Course curriculum",

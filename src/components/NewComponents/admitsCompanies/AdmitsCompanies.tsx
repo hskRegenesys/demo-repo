@@ -18,17 +18,12 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
     AdmiteCompaniesData;
 
   const swiperSettings = {
-    freeModeMomentum: false,
     loop: true,
     autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
+      delay: 2000,
     },
     slidesPerView: "auto" as const,
     speed: 1000,
-    grabCursor: true,
-    mousewheelControl: true,
-    keyboardControl: true,
   };
 
   return (
