@@ -31,17 +31,25 @@
   gap: 52px;
   position: relative;
 }
+.sidebarContainer {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+}
 
 .sidebar {
   background-color: #ffffff;
   padding: 40px 0px;
   position: sticky;
   top: 0;
-  width: 100%;
-  max-width: 320px;
-  height: 100%;
+
   border-radius: 12px;
   box-shadow: 0px 2px 4px 0px #3741511a;
+}
+.addPadding {
+  padding-top: 100px;
 }
 
 .sidebar div {
@@ -93,6 +101,13 @@
   line-height: 20px;
   letter-spacing: 0.1px;
   text-align: left;
+  text-decoration: none;
+}
+.card a {
+  text-decoration: none !important;
+}
+.card div:hover {
+  color: #008554;
 }
 
 .content a {
@@ -152,7 +167,6 @@
     border-radius: 8px;
   }
   .ListMobile {
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -160,7 +174,10 @@
     text-align: left;
     color: #374151;
   }
-
+  .ListMobile a {
+    font-family: Montserrat;
+    color: #374151;
+  }
   .DropdownHeaderactive {
     background-color: #f2f4f7;
     border-radius: 8px;
