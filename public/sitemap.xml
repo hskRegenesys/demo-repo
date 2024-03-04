@@ -16,7 +16,10 @@
     <loc>https://www.digitalregenesys.com/all-courses/full-stack-development</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</p  <url>
+     <priority>0.9</priority>
+   
+  </url>
+  <url>
     <loc>https://www.digitalregenesys.com/all-courses/data-and-business-analytics</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>daily</changefreq>
@@ -167,7 +170,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-<url>
+  <url>
     <loc>https://www.digitalregenesys.com/online-course-in-data-science</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>daily</changefreq>
