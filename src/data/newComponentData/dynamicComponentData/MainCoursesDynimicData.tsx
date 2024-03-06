@@ -14,7 +14,7 @@ const MainCoursesDynimicData = {
       UspSectionData: {
         part1: {
           card1text:
-            "UUSA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
+            "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
           iconImage1: "/assets/images/HomeNew/Location.svg",
         },
         part2: {
