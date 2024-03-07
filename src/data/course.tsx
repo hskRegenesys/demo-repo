@@ -197,8 +197,7 @@ export const courseData = {
           },
           {
             id: 2,
-            title:
-              "International Project Management: Global Strategy for Managers",
+            title: "Advance Project Management: Global Strategy for Managers",
             lists: [
               "Introduction- Organizational Project Management",
               "Program Management – Improving Business Results",
