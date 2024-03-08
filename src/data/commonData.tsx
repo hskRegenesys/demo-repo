@@ -60,7 +60,7 @@ const Data = {
         "Artificial Intelligence Intermediate Course | Digital Regenesys",
       "ai-advanced-applied":
         "Advanced Applied Artificial Intelligence Course | Digital Regenesys",
-      "management-development":
+      "management-advancement":
         "Management Development Course Online | Digital Regenesys",
 
       // ------------------multiple-brand-meta-title------------------------
@@ -335,7 +335,7 @@ Software Development  subjects,
         " AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
       "ai-advanced-applied":
         "AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
-      "management-development":
+      "management-advancement":
         "management development course, management development course online, management development course career opportunities, leadership and management development, management development certification course, digital regenesys",
 
       //  -------------multiplepages brand--------------------
@@ -415,7 +415,7 @@ Software Development  subjects,
       home: "Upskill yourself with Digital Regensys online courses for digital-age skills to become future-ready for the dynamic workplace in the disruptive digital age.",
       about:
         "At Digital Regenesys, we provide top-notch education to empower all students for success in the 5th Industrial Revolution and beyond. Discover our digital courses now.",
-      "management-development":
+      "management-advancement":
         "With Management Development Course online at Digital Regenesys, explore career-enhancing opportunities and gain leadership skills & certification. Enroll Now!",
       allCourse:
         "Unlock your career potential with our professional courses. Expert instruction and flexible learning options to help you achieve your goals. Enroll now!",
@@ -585,7 +585,7 @@ Software Development  subjects,
       "software-development": "software-development-course",
       "full-stack-development": "full-stack-development",
       "data-and-business-analytics": "data-and-business-analytics",
-      "management-development": "all-courses/management-development",
+      "management-advancement": "all-courses/management-advancement",
       //  -------------multiplepages brand--------------------
 
       "online-courses": "/online-courses",

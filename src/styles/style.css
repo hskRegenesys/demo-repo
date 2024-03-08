@@ -11324,6 +11324,7 @@ featured-section .right-col .sec-title h2 {
 }
 .mobile-nav-item-new a {
   color: #697386 !important;
+
 }
 .mobile-nav-item-new a:hover {
   color: #008554 !important;
@@ -11409,12 +11410,15 @@ featured-section .right-col .sec-title h2 {
   }
   .degreeCoursesData {
     display: flex;
-    width: 200px;
+    width: 100%;
     flex-direction: column;
     margin-left: 80px;
     border-left: none;
     border-right: none;
     margin-top: 10px;
+  }
+  .drop-down-li {
+    padding: 10px 16px 10px 34px;
   }
   .degreeCoursesData a {
     text-align: left;
@@ -11472,7 +11476,7 @@ featured-section .right-col .sec-title h2 {
     text-decoration: none;
     color: var(--Light-Text-Green, #008554);
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 142.857% */
@@ -12605,11 +12609,11 @@ featured-section .right-col .sec-title h2 {
     border-radius: 4px !important;
     background: linear-gradient(180deg, #008554 0%, #02bf79 100%);
     color: #fff !important;
-    font-size: 10px !important;
-    width: 30px !important;
+    font-size: 15px !important;
+    width: 44px !important;
     height: auto;
     position: absolute !important;
-    left: 209px;
+    left: 327px;
     top: 0px !important;
     line-height: normal;
   }
@@ -21193,6 +21197,22 @@ h2.highlight {
     overflow: auto;
     transform: scale(1.2);
   }
+  .mobile-nav-item-new a {
+    font-size: 18px;
+    
+  }
+  .drop-down-li div{
+    font-size: 18px !important;
+  }
+  .drop-down-li div a {
+    font-size: 18px !important;
+  }
+  .mobile-nav-item-new span .fa-angle-right {
+    font-size: 22px;
+  }
+  .drop-down-container-new li a {
+    max-width: 100% !important;
+  }
   .map-marker-text p {
     font-size: 11px;
   }
@@ -21209,6 +21229,7 @@ h2.highlight {
   .map-marker-text img {
     width: 12px !important;
   }
+
   .map-marker-row-sa {
     bottom: 16%;
     left: 38%;
