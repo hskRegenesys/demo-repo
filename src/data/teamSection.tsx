@@ -44,11 +44,11 @@ const teamSection = {
       name: "Full Stack Development",
       href: "/all-courses/full-stack-development",
     },
-    {
-      id: 18,
-      name: "Management Advancement",
-      href: "/all-courses/management-advancement",
-    },
+    // {
+    //   id: 18,
+    //   name: "Management Advancement",
+    //   href: "/all-courses/management-advancement",
+    // },
     {
       id: 17,
       name: "Data and Business Analytics",
