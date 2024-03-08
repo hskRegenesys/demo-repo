@@ -31,12 +31,7 @@
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://www.digitalregenesys.com/blog/category/management-development</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
+  
   <url>
     <loc>https://www.digitalregenesys.com/blog/category/data-science</loc>
     <lastmod>2024-01-15</lastmod>
@@ -500,24 +495,9 @@
     <changefreq>Daily</changefreq>
     <priority>0.90</priority>
   </url>
-  <url>
-    <loc>https://www.digitalregenesys.com/blog/which-tools-are-covered-in-a-management-development-programme-mdp</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>Daily</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://www.digitalregenesys.com/blog/what-career-opportunities-open-up-after-completing-a-management-development-programme</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>Daily</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://www.digitalregenesys.com/blog/what-is-a-management-development-programme</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>Daily</changefreq>
-    <priority>0.90</priority>
-  </url>
+
+  
+ 
   <url>
     <loc>https://www.digitalregenesys.com/blog/how-does-the-duration-of-a-data-science-course-correlate-with-its-intensity</loc>
     <lastmod>2024-01-15</lastmod>
