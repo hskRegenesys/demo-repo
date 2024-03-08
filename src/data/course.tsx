@@ -434,9 +434,9 @@ export const courseData = {
   //       id: 1,
   //       // image: "yellow-bg-details-bg-1.webp",
   //       youtubeUrl:
-  //         "https://www.youtube.com/embed/-OVmXDAHn6A?autoplay=1&loop=1&playlist=-OVmXDAHn6A",
-  //       title: "Management Development Programme",
-  //       text: "Management Development Programme offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
+  //         "https://www.youtube.com/embed/_Yfdbh_ktAU?autoplay=1&loop=1&playlist=_Yfdbh_ktAU",
+  //       title: "Management Advancement Programme",
+  //       text: "Management Advancement Programme offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
   //       lists: [
   //         "40 Weeks Course",
   //         "Live Sessions",
@@ -447,9 +447,9 @@ export const courseData = {
   //   ],
   //   productDescription: {
   //     title:
-  //       "Enhance Your Career with Our Top-Rated Management Development Programme",
+  //       "Enhance Your Career with Our Top-Rated Management Advancement Programme",
   //     text1:
-  //       "Elevate your skill set with the best Management Development Programme for professionals. Learn how to apply the skills of Management Development in the real world from our highly experienced academic staff.        ",
+  //       "Elevate your skill set with the best Management Advancement Programme for professionals. Learn how to apply the skills of Management Advancement in the real world from our highly experienced academic staff.        ",
   //   },
   //   joinReasons: {
   //     title: "Reasons To Join This Course",
@@ -481,13 +481,13 @@ export const courseData = {
   //   ],
   //   courseCertificate: {
   //     certificateTitle:
-  //       "Excel in Management Development with Our Leading Certificate Programme.",
+  //       "Excel in Management Advancement with Our Leading Certificate Programme.",
   //     certificateSubTitle:
-  //       "Earn a Management Development Certificate from Digital Regenesys & Understand market dynamics and identify economic, political, and social risks.",
+  //       "Earn a Management Advancement Certificate from Digital Regenesys & Understand market dynamics and identify economic, political, and social risks.",
   //     certificateSubSubTitle:
-  //       "With our Management Development Programme, you will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
+  //       "With our Management Advancement Programme, you will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
   //     certificateListTitle:
-  //       "With a Management Development Certificate, you will get:",
+  //       "With a Management Advancement Certificate, you will get:",
 
   //     certificateSkillList: [
   //       "Market Dynamics",
@@ -496,15 +496,15 @@ export const courseData = {
   //       "Project Management Fundamentals",
   //     ],
   //     certificateListPara:
-  //       " Our specialised Management Development Certificate will open doors to various roles for you, whether you are a graduate manager or an experienced professional.",
+  //       " Our specialised Management Advancement Certificate will open doors to various roles for you, whether you are a graduate manager or an experienced professional.",
   //     certificateRolesList: [
   //       "Project Manager",
   //       "Strategy Consultant",
   //       "Innovation Manager ",
   //       "Sustainability Manager",
   //     ],
-  //     CertificateImage: ["MD_certificates.webp"],
-  //     imageName: "MD_certificate",
+  //     CertificateImage: ["MA_certificates.webp"],
+  //     imageName: "MA_certificates",
   //   },
 
   //   videoOne: {
@@ -631,75 +631,75 @@ export const courseData = {
   //       faqs: [
   //         {
   //           id: 1,
-  //           title: "What is a Management Development Programme?            ",
-  //           text: "A Management Development Programme is structured to enhance the knowledge and skills of individuals in leadership positions. These courses cover communication, decision-making, conflict resolution, and strategic planning. Participants can sharpen their leadership abilities and become more effective managers by enroling in a Management Development Programme.",
+  //           title: "What is a Management Advancement Programme?            ",
+  //           text: "A Management Advancement Programme is structured to enhance the knowledge and skills of individuals in leadership positions. These courses cover communication, decision-making, conflict resolution, and strategic planning. Participants can sharpen their leadership abilities and become more effective managers by enroling in a Management Advancement Programme.",
   //         },
   //         {
   //           id: 2,
-  //           title: "Why Should I Pursue a Management Development Programme?",
-  //           text: "A management development programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Enroling in a Management Development Programme allows participants to gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a Management Development Programme can help you unleash your full potential and achieve your career goals.            ",
+  //           title: "Why Should I Pursue a Management Advancement Programme?",
+  //           text: "A Management Advancement programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Enroling in a Management Advancement Programme allows participants to gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a Management Advancement Programme can help you unleash your full potential and achieve your career goals.            ",
   //         },
   //         {
   //           id: 3,
-  //           title: "What to Expect from a Management Development Programme?",
-  //           text: "Individuals can enhance their leadership skills and careers by pursuing a management development programme. This comprehensive course provides practical strategies for effective team management, conflict resolution, and decision-making. Participating in this course will give individuals the tools and techniques necessary to lead confidently and achieve their professional goals. Enrol in the digital Regenesys Management Development Programme, elevate your managerial abilities and drive success within your organisation. Enrol now and take your leadership to the next level.",
+  //           title: "What to Expect from a Management Advancement Programme?",
+  //           text: "Individuals can enhance their leadership skills and careers by pursuing a Management Advancement programme. This comprehensive course provides practical strategies for effective team management, conflict resolution, and decision-making. Participating in this course will give individuals the tools and techniques necessary to lead confidently and achieve their professional goals. Enrol in the digital Regenesys Management Advancement Programme, elevate your managerial abilities and drive success within your organisation. Enrol now and take your leadership to the next level.",
   //         },
   //         {
   //           id: 4,
   //           title:
-  //             "What is the significance of the Management Development Programme in today's digital landscape?",
-  //           text: "A management development programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Participating in a management development programme can gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a management development programme can help you unleash your full potential and achieve your career goals",
+  //             "What is the significance of the Management Advancement Programme in today's digital landscape?",
+  //           text: "A Management Advancement programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Participating in a Management Advancement programme can gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a Management Advancement programme can help you unleash your full potential and achieve your career goals",
   //         },
   //         {
   //           id: 5,
   //           title:
-  //             "What are the Benefits of Enroling in a Digital Regenesys Management Development Programme?            ",
-  //           text: "Enroling in a Digital Regenesys Management Development Programme can benefit individuals looking to advance their careers. These courses allow participants to learn new skills, gain valuable insights from industry experts, and network with other professionals in their field. Additionally, management development programmes can help individuals build confidence in their leadership abilities and prepare them for future challenges in the workplace.",
+  //             "What are the Benefits of Enroling in a Digital Regenesys Management Advancement Programme?            ",
+  //           text: "Enroling in a Digital Regenesys Management Advancement Programme can benefit individuals looking to advance their careers. These courses allow participants to learn new skills, gain valuable insights from industry experts, and network with other professionals in their field. Additionally, Management Advancement programmes can help individuals build confidence in their leadership abilities and prepare them for future challenges in the workplace.",
   //         },
   //         {
   //           id: 6,
   //           title:
-  //             "What are the outcomes of the Management Development Programme?",
+  //             "What are the outcomes of the Management Advancement Programme?",
   //           text: `
-  //           Some of the outcomes of the Management Development Programme include: .Understanding market dynamics and identifying economic, political, and social risks. .Foster a culture of innovation and implement effective strategies for idea generation and implementation. .Evaluate business opportunities, foster intrapreneurship, and utilise support systems for entrepreneurial ventures. .Master project management fundamentals, Agile methodologies, and risk mitigation strategies for successful project delivery. .Enhance communication techniques, interpersonal skills, and cross-cultural communication abilities for effective collaboration.
+  //           Some of the outcomes of the Management Advancement Programme include: .Understanding market dynamics and identifying economic, political, and social risks. .Foster a culture of innovation and implement effective strategies for idea generation and implementation. .Evaluate business opportunities, foster intrapreneurship, and utilise support systems for entrepreneurial ventures. .Master project management fundamentals, Agile methodologies, and risk mitigation strategies for successful project delivery. .Enhance communication techniques, interpersonal skills, and cross-cultural communication abilities for effective collaboration.
 
   //             `,
   //         },
   //         {
   //           id: 7,
   //           title:
-  //             "What are the crucial skills required for a Management Development career?",
-  //           text: "The crucial skills required for a Management Development career include- leadership skills, communication skills, decision-making skills, and team-building skills.",
+  //             "What are the crucial skills required for a Management Advancement career?",
+  //           text: "The crucial skills required for a Management Advancement career include- leadership skills, communication skills, decision-making skills, and team-building skills.",
   //         },
   //         {
   //           id: 8,
   //           title:
-  //             "What are the tools covered in the Digital Regenesys Management Development certificate programme?",
-  //           text: "ChatGPT, Gemini, HeyGen, Krea.ai, and Clipchamp are the tools covered in the Digital Regenesys Management Development certificate Programme.",
+  //             "What are the tools covered in the Digital Regenesys Management Advancement certificate programme?",
+  //           text: "ChatGPT, Gemini, HeyGen, Krea.ai, and Clipchamp are the tools covered in the Digital Regenesys Management Advancement certificate Programme.",
   //         },
   //         {
   //           id: 9,
   //           title:
-  //             "What career opportunities are available after completing the Management Development Programme?               ",
-  //           text: "Some career opportunities available after completing the Management Development programme are business development manager, innovation manager, operations manager, project manager, financial analyst/manager, marketing manager, strategy consultant, human resources manager, and sustainability manager.",
+  //             "What career opportunities are available after completing the Management Advancement Programme?               ",
+  //           text: "Some career opportunities available after completing the Management Advancement programme are business development manager, innovation manager, operations manager, project manager, financial analyst/manager, marketing manager, strategy consultant, human resources manager, and sustainability manager.",
   //         },
   //         {
   //           id: 10,
   //           title:
-  //             "How does the Digital Regenesys Management Development certificate programme contribute to advancing management capabilities?",
-  //           text: "The Digital Regenesys Management Development Programme offers comprehensive training in critical areas of management, including leadership, strategic planning, and organisational development. Participants gain valuable skills and knowledge to enhance their careers and drive business growth. The course is designed for professionals seeking to advance their management capabilities and stay ahead in today's competitive business landscape. With a focus on practical application and real-world case studies, this course equips learners with the tools they need to succeed in a dynamic digital environment.",
+  //             "How does the Digital Regenesys Management Advancement certificate programme contribute to advancing management capabilities?",
+  //           text: "The Digital Regenesys Management Advancement Programme offers comprehensive training in critical areas of management, including leadership, strategic planning, and organisational development. Participants gain valuable skills and knowledge to enhance their careers and drive business growth. The course is designed for professionals seeking to advance their management capabilities and stay ahead in today's competitive business landscape. With a focus on practical application and real-world case studies, this course equips learners with the tools they need to succeed in a dynamic digital environment.",
   //         },
   //         {
   //           id: 11,
   //           title:
-  //             "What will I learn in the Digital Regenesys Management Development certificate programme?              ",
-  //           text: "In today's competitive business landscape, investing in management development programmes is crucial for enhancing leadership skills and driving organisational success. Whether you are a new manager looking to build a strong foundation or a seasoned leader aiming to sharpen your abilities, enroling in a Digital Regenesys Management Development certificate course can provide you with the essential tools and strategies needed to excel in your role.             ",
+  //             "What will I learn in the Digital Regenesys Management Advancement certificate programme?              ",
+  //           text: "In today's competitive business landscape, investing in Management Advancement programmes is crucial for enhancing leadership skills and driving organisational success. Whether you are a new manager looking to build a strong foundation or a seasoned leader aiming to sharpen your abilities, enroling in a Digital Regenesys Management Advancement certificate course can provide you with the essential tools and strategies needed to excel in your role.             ",
   //         },
   //         {
   //           id: 12,
   //           title:
-  //             "Why pursue a Management Development  certificate programme?",
-  //           text: "A management development programme is designed to help individuals grow and excel in their leadership roles. Whether you are a seasoned manager looking to sharpen your skills or an aspiring leader hoping to gain the necessary knowledge, these courses offer many benefits",
+  //             "Why pursue a Management Advancement  certificate programme?",
+  //           text: "A Management Advancement programme is designed to help individuals grow and excel in their leadership roles. Whether you are a seasoned manager looking to sharpen your skills or an aspiring leader hoping to gain the necessary knowledge, these courses offer many benefits",
   //         },
   //       ],
   //       defaultCurrent: 1,
@@ -779,9 +779,9 @@ export const courseData = {
   //     title: "Fees structure & Certification",
   //     subTitle: "Get Certified",
   //     price: 64499,
-  //     certifiedTitle1: "Earn Your Management Development Certificate",
+  //     certifiedTitle1: "Earn Your Management Advancement Certificate",
   //     certifiedText1:
-  //       "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Management Development Career.",
+  //       "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Management Advancement Career.",
   //     certifiedTitle2: "Share Your Achievement",
 
   //     certifiedText2:
@@ -9068,7 +9068,7 @@ export const brochureDetails: any = {
     sourceCampaign: sourceCampaign,
   },
   MD: {
-    name: "MDPM_Brochure_compressed.pdf",
+    name: "MD_Brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },

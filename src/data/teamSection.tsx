@@ -46,8 +46,8 @@ const teamSection = {
     },
     // {
     //   id: 18,
-    //   name: "Management Development",
-    //   href: "/all-courses/management-development",
+    //   name: "Management Advancement",
+    //   href: "/all-courses/management-advancement",
     // },
     {
       id: 17,

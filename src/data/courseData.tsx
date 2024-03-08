@@ -400,9 +400,9 @@ export const allCourseList = [
   },
   // {
   //   id: 48,
-  //   name: "Management Development",
+  //   name: "Management Advancement",
   //   code: "MD",
-  //   description: "Management Development",
+  //   description: "Management Advancement",
   //   parent_id: null,
   //   mode_id: 1,
   //   isAddon: false,

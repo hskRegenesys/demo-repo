@@ -14,7 +14,7 @@ class LeadService {
     ["Artificial Intelligence", "Artificial Intelligence"],
     ["Full Stack Development", "Full Stack Development"],
     ["Data and Business Analytics", "Data and Business Analytics"],
-    ["Management Development", "Management Development"],
+    ["Management Advancement", "Management Advancement"],
   ]);
 
   drLeadRecordTypeId = "0127Q000000NDbXQAW";
