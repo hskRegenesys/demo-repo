@@ -120,11 +120,11 @@ const Layout = (props: any) => {
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
 
-        <link
+        {/* <link
           rel="alternate"
-          // hrefLang="x-default"
+           hrefLang="x-default"
           href="https://uat-new.digitalregenesys.com"
-        />
+        /> */}
       </Head>
 
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
