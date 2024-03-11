@@ -7,8 +7,14 @@ interface AboutUsProps {
 }
 
 const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
-  const { aboutUsImg, aboutTitle, aboutHeading, aboutParagraph, cards } =
-    AboutUsData;
+  const {
+    aboutUsImg,
+    aboutTitle,
+    aboutHeading,
+    aboutParagraph,
+    cards,
+    aboutUsImgAlt,
+  } = AboutUsData;
 
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [showFullParagraph, setShowFullParagraph] = useState(false);
@@ -61,7 +67,8 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
         <div className={Styles.aboutUsLeft}>
           <img
             src={aboutUsImg}
-            alt="About Us"
+            alt={aboutUsImgAlt}
+            title={aboutUsImgAlt}
             className={Styles.aboutUsImage}
           />
         </div>

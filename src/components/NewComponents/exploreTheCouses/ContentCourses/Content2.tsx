@@ -6,7 +6,7 @@ import "swiper/swiper-bundle.css";
 
 interface Content2Props {
   contentHeading: string;
-  cardTools: { img: string }[];
+  cardTools: { img: string; alt: string }[];
 }
 
 const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
@@ -43,8 +43,8 @@ const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
               <SwiperSlide key={index}>
                 <li key={index} className={styles.horizontalCard}>
                   <img
-                    src={tool.img}
-                    alt={`Tool ${index + 1}`}
+                    src={`/assets/images/clients/${tool.img}`}
+                    alt={tool.alt}
                     className={styles.toolImage}
                   />
                 </li>

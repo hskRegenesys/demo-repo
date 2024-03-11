@@ -26,7 +26,8 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
         <img
           src={OurLocationData.Kenya.countryFlagImg}
           className={Styles.contaryFlag}
-          alt="Country Flag"
+          alt={OurLocationData.Kenya.countryName}
+          title={OurLocationData.Kenya.countryName}
         />
         <div
           className={`${Styles.KenyacontaryAdressCard} ${Styles.contaryAdress} `}
@@ -43,7 +44,8 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
         <img
           src={OurLocationData.Kenya.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
-          alt="Location Pin"
+          alt={OurLocationData.Kenya.countryName}
+          title={OurLocationData.Kenya.countryName}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         />

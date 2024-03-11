@@ -1,5 +1,6 @@
 const AboutUsData = {
-  aboutUsImg: "./assets/images/HomeNew/About Us.svg",
+  aboutUsImg: "./assets/images/HomeNew/AboutUs.svg",
+  aboutUsImgAlt: "About Us - Digital Regenesys",
   aboutTitle: "About Us",
   aboutHeading: "Unique Benefits That Set Us Apart from the Rest!",
   aboutParagraph:

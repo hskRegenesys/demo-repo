@@ -32,6 +32,7 @@ interface MainCoursesDynimicData {
   BannerWithVideoData: {
     BannerImgDesktop: string;
     coursePageName: string;
+    BannerImgAlt: string;
     topSectionPoint1: string;
     topSectionPoint2: string;
     contentText: string;

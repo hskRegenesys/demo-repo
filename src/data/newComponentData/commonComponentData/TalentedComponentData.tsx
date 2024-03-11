@@ -5,13 +5,13 @@ const TalentedComponentData = {
   facultyCard: [
     {
       facultyImg: "/assets/images/HomeNew/faculty-img/dr_nilay_profile.webp",
-      facultyName: "Dr. Nilay Karade",
+      facultyName: "Dr.Nilay Karade",
       courseName: "Senior Lecturer",
       yearsOfExperience: "11+ years",
     },
     {
       facultyImg: "/assets/images/HomeNew/faculty-img/dr_shilpa_joshi.webp",
-      facultyName: "Dr. Shilpa Joshi",
+      facultyName: "Dr.Shilpa Joshi",
       courseName: "Senior Lecturer",
       yearsOfExperience: "20+ years",
     },
@@ -29,25 +29,25 @@ const TalentedComponentData = {
     },
     {
       facultyImg: "/assets/images/HomeNew/faculty-img/Dennis-Laxton.webp",
-      facultyName: "Dr. Dennis Laxton",
+      facultyName: "Dr.Dennis Laxton",
       courseName: "Senior Lecturer",
     },
     {
       facultyImg:
         "/assets/images/HomeNew/faculty-img/Dr-Saquib-Ahmad-Khan2.webp",
-      facultyName: "Dr. Saquib Ahmad Khan",
+      facultyName: "Dr.Saquib Ahmad Khan",
       courseName: "Senior Lecturer",
       yearsOfExperience: "10+ years",
     },
     {
       facultyImg:
         "/assets/images/HomeNew/faculty-img/faculty_deepika_sharma.webp",
-      facultyName: "Dr. Deepika Sharma",
+      facultyName: "Dr.Deepika Sharma",
       courseName: "Senior Lecturer",
     },
     {
       facultyImg: "/assets/images/HomeNew/faculty-img/Shaista-Fatima.webp",
-      facultyName: "Dr. Shaista Fatima",
+      facultyName: "Dr.Shaista Fatima",
       courseName: "Senior Lecturer",
       yearsOfExperience: "10+ years",
     },

@@ -32,7 +32,8 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
         <img
           src={OurLocationData.SouthAfrica.countryFlagImg}
           className={Styles.contaryFlag}
-          alt="Country Flag"
+          alt={OurLocationData.SouthAfrica.countryName}
+          title={OurLocationData.SouthAfrica.countryName}
         />
       </div>
     )}
@@ -43,7 +44,8 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
         <img
           src={OurLocationData.SouthAfrica.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
-          alt="Location Pin"
+          alt={OurLocationData.SouthAfrica.countryName}
+          title={OurLocationData.SouthAfrica.countryName}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         />

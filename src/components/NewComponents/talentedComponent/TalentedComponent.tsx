@@ -92,7 +92,8 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                     <div className={styles.bgcolor}></div>
                     <img
                       src={faculty.facultyImg}
-                      alt={`Faculty ${index + 1}`}
+                      alt={faculty.facultyName}
+                      title={faculty.facultyName}
                     />
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
                     <p className={styles.courseName}>{faculty.courseName}</p>
