@@ -28,6 +28,7 @@ interface Card {
   id: string;
   parentId: string;
   cardImg: string;
+  ImgAlt: string;
   cardWeek: string;
   cardCount: string;
   cardTool: string;
@@ -168,7 +169,8 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   </div> */}
                   <img
                     src={parentCourse.cardImg}
-                    alt={parentCourse.cardProgram}
+                    alt={parentCourse.ImgAlt}
+                    title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
                   />
                 </div>

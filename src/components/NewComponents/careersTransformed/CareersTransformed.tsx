@@ -102,7 +102,8 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                   <img
                     className={Styles.profileImg}
                     src={swiperCard.profileImg}
-                    alt="Profile"
+                    alt={swiperCard.name}
+                    title={swiperCard.name}
                   />
                   <div className={Styles.nameRole}>
                     <h4 className={Styles.name}>{swiperCard.name}</h4>

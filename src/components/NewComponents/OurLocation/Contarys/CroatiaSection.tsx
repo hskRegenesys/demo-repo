@@ -26,7 +26,8 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
         <img
           src={OurLocationData.Croatia.countryFlagImg}
           className={Styles.contaryFlag}
-          alt="Country Flag"
+          alt={OurLocationData.Croatia.countryName}
+          title={OurLocationData.Croatia.countryName}
         />
         <div
           className={`${Styles.CroatiacontaryAdressCard} ${
@@ -45,7 +46,8 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
         <img
           src={OurLocationData.Croatia.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
-          alt="Location Pin"
+          alt={OurLocationData.Croatia.countryName}
+          title={OurLocationData.Croatia.countryName}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         />

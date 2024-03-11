@@ -21,7 +21,7 @@ interface Props {
       };
       content2: {
         contentHeading: string;
-        cardTools: { img: string }[];
+        cardTools: { img: string; alt: string }[];
       };
       content3: {
         contentHeading: string;

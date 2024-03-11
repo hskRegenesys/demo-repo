@@ -35,6 +35,7 @@ const Content6: React.FC<Content6Props> = ({
               <img
                 src={card.contaryFlag}
                 alt={card.contaryName}
+                title={card.contaryName}
                 className={Styles.cardImg}
               />
             </div>

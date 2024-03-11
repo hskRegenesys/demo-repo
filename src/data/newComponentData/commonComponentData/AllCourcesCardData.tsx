@@ -25,6 +25,8 @@ const AllCourcesCardData = {
         name: "Data Science",
         cardProgram: "Data Science",
         cardImg: "/assets/images/HomeNew/Courses-Card/DS-card.png",
+        ImgAlt: "Data Science - Digital Regenesys",
+
         cardWeek: "30 Weeks",
         cardCount: "10,000+",
         cardTool: "15+ Tools",
@@ -86,6 +88,8 @@ const AllCourcesCardData = {
         parentId: null,
         cardProgram: "Project Management",
         cardImg: "/assets/images/HomeNew/Courses-Card/PM-card.png",
+        ImgAlt: "Project Management - Digital Regenesys",
+
         cardCount: "10,000+",
         cardTool: "5+ Tools",
         cardWeek: "10 Weeks",
@@ -99,6 +103,8 @@ const AllCourcesCardData = {
         name: "Digital Marketing",
         cardProgram: "Digital Marketing",
         cardImg: "./assets/images/HomeNew/Courses-Card/DM-card.png",
+        ImgAlt: "Digital Marketing - Digital Regenesys",
+
         cardWeek: "20 Weeks",
         cardCount: "10,000+",
         cardTool: "45+ Tools",
@@ -139,6 +145,8 @@ const AllCourcesCardData = {
         parentId: null,
         cardProgram: "Cyber Security",
         cardImg: "/assets/images/HomeNew/Courses-Card/CS-card.png",
+        ImgAlt: "Cyber Security - Digital Regenesys",
+
         cardCount: "10,000+",
         cardTool: "14+ Tools",
         cardWeek: "13 Weeks",
@@ -152,6 +160,8 @@ const AllCourcesCardData = {
         name: "Artificial Intelligence",
         cardProgram: "Artificial Intelligence",
         cardImg: "./assets/images/HomeNew/Courses-Card/AI-card.png",
+        ImgAlt: "Artificial Intelligence - Digital Regenesys",
+
         cardWeek: "37 Weeks",
         cardCount: "10,000+",
       },
@@ -202,6 +212,8 @@ const AllCourcesCardData = {
         parentId: null,
         cardProgram: "Full Stack Development",
         cardImg: "/assets/images/HomeNew/Courses-Card/FS-card.png",
+        ImgAlt: "Full Stack Development - Digital Regenesys",
+
         cardCount: "10,000+",
         cardTool: "8+ Tools",
         cardWeek: "40 Weeks",
@@ -216,6 +228,8 @@ const AllCourcesCardData = {
         parentId: null,
         cardProgram: "Data And Business Analytics",
         cardImg: "/assets/images/HomeNew/Courses-Card/DBA-card.png",
+        ImgAlt: "Data And Business Analytics - Digital Regenesys",
+
         cardCount: "10,000+",
         cardTool: "5+ Tools",
         cardWeek: "19 Weeks",
@@ -230,6 +244,8 @@ const AllCourcesCardData = {
         parentId: null,
         cardProgram: "Design Thinking",
         cardImg: "/assets/images/HomeNew/Courses-Card/DT-card.png",
+        ImgAlt: "Design Thinking - Digital Regenesys",
+
         cardCount: "10,000+",
         cardTool: "Tools",
         cardWeek: "8 Weeks",
