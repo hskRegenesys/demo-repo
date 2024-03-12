@@ -19,6 +19,7 @@ const Data = {
       "cyber-security": "Cyber Security Course Online | Digital Regenesys",
       "digital-marketing":
         "Digital Marketing Course Online | Digital Regenesys",
+
       "digital-marketing-fundamentals":
         "Digital Marketing Fundamentals Course Online | Digital Regenesys",
 
@@ -132,6 +133,10 @@ const Data = {
         "Online Course in Data Science: Master Your Skill | Digital Regenesys",
       "online-data-science-course":
         "Online Data Science Course: Flexible Learning | Digital Regenesys",
+
+      ///===============================DM============================
+      "what-is-digital-marketing":
+        "What is Digital Marketing? Understand the Basics | Digital Regenesys",
     },
     keywords: {
       home: `
@@ -409,6 +414,10 @@ Software Development  subjects,
 
       "online-data-science-course":
         "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+
+      ///===============================DM============================
+      "what-is-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
     },
 
     description: {
@@ -514,7 +523,7 @@ Software Development  subjects,
       "certificate-courses-online":
         "Certificate Courses Online: Boost your skill set with our certificate courses online. Choose from a variety of courses for personal & professional development. Join now!",
       //  -------------multiplepages courses--------------------
-
+      ///===============================Ds============================
       "data-science-course":
         "Data Science Course: Explore our comprehensive data science course. Master analytical skills and propel your career in data science. Join Digital Regenesys now!",
       "data-science-courses":
@@ -547,6 +556,9 @@ Software Development  subjects,
         "Online Course In Data Science: Embark on a flexible learning journey in data science. Enroll in our online course for comprehensive skill development. Join now!",
       "online-data-science-course":
         "Online Data Science Course: Flexible learning for data science enthusiasts. Enroll in our online course to master data science skills. Join Digital Regenesys now!",
+      ///===============================DM============================
+      "what-is-digital-marketing":
+        "What is Digital Marketing: Curious about digital marketing? Learn what it entails, its importance, and how it can revolutionize your business. Get started today.",
     },
     canonicalUrlData: {
       home: "",
@@ -606,6 +618,7 @@ Software Development  subjects,
       "certificate-courses-online": "/certificate-courses-online",
 
       //  -------------multiplepages courses--------------------
+      ///===============================DS============================
       "data-science-course": "/data-science-course",
       "data-science-courses": "/data-science-courses",
       "courses-in-data-science": "/courses-in-data-science",
@@ -622,6 +635,8 @@ Software Development  subjects,
       "data-science-certification-course": "/data-science-certification-course",
       "online-course-in-data-science": "/online-course-in-data-science",
       "online-data-science-course": "/online-data-science-course",
+      ///===============================DM============================
+      "what-is-digital-marketing": "/what-is-digital-marketing",
     },
   },
 };

@@ -334,6 +334,7 @@
   height: 100%;
   width: 100%;
   box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
+  min-height: 262px;
 
   padding-bottom: 12px;
   margin: 0 auto;

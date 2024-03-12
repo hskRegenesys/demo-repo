@@ -23,6 +23,10 @@ interface BlogSectionProps {
 }
 
 const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
+  if (!data || !data.cards || data.cards.length === 0) {
+    // Return null if data is not provided or cards array is empty
+    return null;
+  }
   return (
     <div className={Styles.blogSectionContainer}>
       <h2 className={Styles.blogSectionTitle}>{data.BlogSectionTitle}</h2>
