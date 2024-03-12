@@ -24,6 +24,7 @@ interface CardData {
   parentId: number | null;
   cardProgram: string;
   cardImg: string;
+  ImgAlt: string;
   cardCount: string;
   cardTool: string;
 }
@@ -198,7 +199,8 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                     </div>
                     <img
                       src={card.cardImg}
-                      alt={card.cardProgram}
+                      alt={card.ImgAlt}
+                      title={card.ImgAlt}
                       className={Styles.cardImage}
                     />
                   </div>
@@ -331,7 +333,8 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                           </div>
                           <img
                             src={card.cardImg}
-                            alt={card.cardProgram}
+                            alt={card.ImgAlt}
+                            title={card.ImgAlt}
                             className={Styles.cardImage}
                           />
                         </div>

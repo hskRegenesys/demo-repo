@@ -26,7 +26,8 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
         <img
           src={OurLocationData.India.countryFlagImg}
           className={Styles.contaryFlag}
-          alt="Country Flag"
+          alt={OurLocationData.India.countryName}
+          title={OurLocationData.India.countryName}
         />
         <div
           className={`${Styles.IndiacontaryAdressCard} ${Styles.contaryAdress}`}
@@ -43,7 +44,8 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
         <img
           src={OurLocationData.India.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
-          alt="Location Pin"
+          alt={OurLocationData.India.countryName}
+          title={OurLocationData.India.countryName}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         />

@@ -26,7 +26,8 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
         <img
           src={OurLocationData.Uganda.countryFlagImg}
           className={Styles.contaryFlag}
-          alt="Country Flag"
+          alt={OurLocationData.Uganda.countryName}
+          title={OurLocationData.Uganda.countryName}
         />
         <div
           className={`${Styles.UgandacontaryAdressCard} ${Styles.contaryAdress}`}
@@ -46,7 +47,8 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
         <img
           src={OurLocationData.Uganda.locationPinImage}
           className={`${Styles.locationpin} ${isHovered ? Styles.hovered : ""}`}
-          alt="Location Pin"
+          alt={OurLocationData.Uganda.countryName}
+          title={OurLocationData.Uganda.countryName}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         />

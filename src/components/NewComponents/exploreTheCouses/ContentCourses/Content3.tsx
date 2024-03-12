@@ -49,7 +49,11 @@ const Content3: React.FC<Content3Props> = ({
             <SwiperSlide key={index}>
               <div className={styles.card}>
                 <div className={styles.bgcolor}> </div>
-                <img src={faculty.facultyImg} alt={`Faculty ${index + 1}`} />
+                <img
+                  src={faculty.facultyImg}
+                  alt={faculty.facultyName}
+                  title={faculty.facultyName}
+                />
                 <p className={styles.facultyName}>{faculty.facultyName}</p>
                 <p className={styles.courseName}>{faculty.courseName}</p>
                 {faculty.yearsOfExperience ? (

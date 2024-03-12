@@ -85,7 +85,7 @@
   padding: 8px;
   border-radius: 12px;
   width: 100%;
-  max-width: 145px;
+  max-width: 200px;
   height: 100%;
   margin-top: -50px;
 }
@@ -143,8 +143,8 @@
   left: 181px;
 }
 .southAfricaLocation {
-  top: 142px;
-  left: 128px;
+  top: 139px;
+  left: 75px;
 }
 .croatiaLocation {
   top: 12px;
@@ -157,7 +157,7 @@
 
 .nigeriaLocation {
   top: 74px;
-  left: 85px;
+  left: 34px;
 }
 
 .PinLocatioName {
@@ -174,10 +174,10 @@
 }
 .SouthAfricaContaryLocation {
   flex-direction: column;
-  left: 131px;
+  left: 182px;
 }
 .NigeriaContaryLocation {
-  left: 100px;
+  left: 167px;
 }
 
 .contaryname {

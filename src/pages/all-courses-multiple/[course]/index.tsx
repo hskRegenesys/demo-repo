@@ -45,6 +45,7 @@ const SubCourseDetails = dynamic(
 interface MainCoursesDynimicData {
   BannerWithVideoData: {
     BannerImgDesktop: string;
+    BannerImgAlt: string;
     coursePageName: string;
     topSectionPoint1: string;
     topSectionPoint2: string;

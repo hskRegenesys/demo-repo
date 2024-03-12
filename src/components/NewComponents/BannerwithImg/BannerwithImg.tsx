@@ -19,6 +19,7 @@ type BannerCourseData = {
   contentText: string;
   bannerVideoLink?: string;
   BrochureIcon?: string;
+  BannerImgAlt: string;
   UspSectionData: {
     part1: {
       card1text: string;
@@ -44,6 +45,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
 }) => {
   const {
     coursePageName,
+    BannerImgAlt,
     contentText,
     topSectionPoint1,
     topSectionPoint2,
@@ -78,7 +80,8 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
           <div className={styles.imageCard}>
             <img
               src={data.BannerImgDesktop}
-              alt={`Banner for ${coursePageName}`}
+              alt={data.BannerImgAlt}
+              title={data.BannerImgAlt}
             />
           </div>
         </div>

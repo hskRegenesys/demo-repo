@@ -4,7 +4,7 @@ import Styles from "./ToolsCovered.module.css";
 interface ToolCoveredData {
   heading: string;
   title: string;
-  images: string[];
+  images: { img: string; alt: string }[]; // Corrected type for images
 }
 
 interface ToolCoveredCardProps {
@@ -20,7 +20,11 @@ const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
         <div className={Styles.imagesContainer}>
           {data.images.map((image, index) => (
             <div key={index} className={Styles.imageCard}>
-              <img src={image} alt={`Image ${index}`} />
+              <img
+                src={`/assets/images/clients/${image.img}`}
+                alt={image.alt}
+                title={image.alt}
+              />
             </div>
           ))}
         </div>

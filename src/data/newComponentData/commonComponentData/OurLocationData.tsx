@@ -9,13 +9,15 @@ const OurLocationData = {
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/usa.svg",
     countryDescription: "USA Head Office",
     locationPinImage: "/assets/images/HomeNew/ContaryImg/Location Pin.svg",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryAddress:
+      "548 Market St. #243271, San Francisco, California 94104-5401",
   },
   Kenya: {
     countryName: "Kenya",
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/ky.svg",
-    countryDescription: "Kenya Office",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryDescription: "Kenya Corporate Office",
+    countryAddress:
+      "Delta Corner Tower, Chiromo Road, 07th Floor, Westlands, Nairobi, 00800",
     locationPinImage: "/assets/images/HomeNew/ContaryImg/Location Pin.svg",
   },
   Nigeria: {
@@ -23,43 +25,47 @@ const OurLocationData = {
 
     countryName: "Nigeria",
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/ni.svg",
-    countryDescription: "Nigeria  Office",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryDescription: "Nigeria Corporate Office",
+    countryAddress:
+      "8th Floor, Churchgate Tower 2 PC 31 Victoria Island, Nigeria",
   },
   Tanzania: {
     locationPinImage: "/assets/images/HomeNew/ContaryImg/Location Pin.svg",
     countryName: "Tanzania",
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/ta.svg",
-    countryDescription: "Tanzania  Office",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryDescription: "Tanzania Corporate Office",
+    countryAddress:
+      " 102, First Floor, Regus, Acacia Estates Offices, Plot No. 84, Kinondoni Rd, Dar es Salaam 14110",
   },
   SouthAfrica: {
     locationPinImage: "/assets/images/HomeNew/ContaryImg/Location Pin.svg",
     countryName: "South Africa",
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/sa.svg",
-    countryDescription: "South Africa  Office",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryDescription: "South Africa Corporate Office",
+    countryAddress: "165 West Street, Sandton, Johannesburg South Africa, 2031",
   },
   India: {
     locationPinImage: "/assets/images/HomeNew/ContaryImg/Location Pin.svg",
     countryName: "India",
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/in.svg",
-    countryDescription: "India  Office",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryDescription: "India Corporate Office",
+    countryAddress:
+      "Proxima Building, Unit 1101 11th Floor, Plot 19,Sector 30A, Vashi Navi Mumbai, India, 400705",
   },
   Uganda: {
     locationPinImage: "/assets/images/HomeNew/ContaryImg/Location Pin.svg",
     countryName: "Uganda",
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/ua.svg",
-    countryDescription: "Uganda  Office",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryDescription: "Uganda Corporate Office",
+    countryAddress:
+      " Regus, 4th floor The Acacia Mall, 14-18 Cooper Road, Off Acacia Ave, Kampala, Uganda",
   },
   Croatia: {
     locationPinImage: "/assets/images/HomeNew/ContaryImg/Location Pin.svg",
     countryName: "Croatia",
     countryFlagImg: "/assets/images/HomeNew/ContaryImg/cr.svg",
-    countryDescription: "Croatia Office",
-    countryAddress: "165 West St, Sandown, Sandton, 2031, South Africa",
+    countryDescription: "Croatia Corporate Office",
+    countryAddress: "sv. Bartula 131, 23000 Kozino, Zadar, Croatia",
   },
 };
 export default OurLocationData;

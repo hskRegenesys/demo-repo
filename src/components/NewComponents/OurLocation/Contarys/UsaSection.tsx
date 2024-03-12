@@ -25,7 +25,8 @@ const UsaSection: React.FC<UsaSectionProps> = ({
           <img
             src={OurLocationData.USA.countryFlagImg}
             className={Styles.contaryFlag}
-            alt="Country Flag"
+            alt={OurLocationData.USA.countryName}
+            title={OurLocationData.USA.countryName}
           />
           <div
             className={`${Styles.USAcontaryAdressCard} ${Styles.contaryAdress}`}
@@ -42,7 +43,8 @@ const UsaSection: React.FC<UsaSectionProps> = ({
           <img
             src={OurLocationData.USA.locationPinImage}
             className={Styles.locationpin}
-            alt="Location Pin"
+            alt={OurLocationData.USA.countryName}
+            title={OurLocationData.USA.countryName}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           />
