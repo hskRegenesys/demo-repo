@@ -19,7 +19,7 @@ const Content5: React.FC<Content5Props> = ({
   dropDown,
   curriculumContainer,
 }) => {
-  const [activeWeekIndex, setActiveWeekIndex] = useState<number | null>(null);
+  const [activeWeekIndex, setActiveWeekIndex] = useState<number | null>(0);
 
   const handleWeekClick = (index: number) => {
     setActiveWeekIndex((prevIndex) => (prevIndex === index ? null : index));

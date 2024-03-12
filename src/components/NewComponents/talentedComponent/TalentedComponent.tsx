@@ -4,16 +4,24 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
 import styles from "./TalentedComponent.module.css";
-import TalentedComponentData from "../../../data/newComponentData/commonComponentData/TalentedComponentData";
+import TalentedComponentData from "../../../data/newComponentData/commonComponentData/FacultyData";
+import FacultyData from "../../../data/newComponentData/commonComponentData/FacultyData";
 
 SwiperCore.use([Navigation, Pagination]);
 interface TalentedComponentProp {
   handleEnrollButtonClick: () => void;
 }
+
+interface Faculty {
+  facultyImg: string;
+  facultyName: string;
+  courseName: string;
+  yearsOfExperience?: string;
+}
 const TalentedComponent: React.FC<TalentedComponentProp> = ({
   handleEnrollButtonClick,
 }) => {
-  const { title, heading, buttonText, facultyCard } = TalentedComponentData;
+  const data: Faculty[] = Object.values(FacultyData);
   const swiperRef = useRef<any>(null);
   const [paginationText, setPaginationText] = useState<any>(false);
 
@@ -47,10 +55,10 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   return (
     <div className={styles.talentedComponent}>
       <div className={styles.leftSection}>
-        <h2 className={styles.heding}>{title}</h2>
-        <h2 className={styles.subheding}>{heading}</h2>
+        <h2 className={styles.heding}>Meet our Faculty</h2>
+        <h2 className={styles.subheding}>See Our Talented Faculty</h2>
         <button className={styles.btnStart} onClick={handleEnrollButtonClick}>
-          {buttonText}
+          Start Learning Today!
         </button>
       </div>
 
@@ -86,7 +94,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                 },
               }}
             >
-              {facultyCard.map((faculty, index) => (
+              {data.map((faculty: Faculty, index: number) => (
                 <SwiperSlide key={index}>
                   <div className={styles.card}>
                     <div className={styles.bgcolor}></div>
