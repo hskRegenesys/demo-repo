@@ -19,13 +19,13 @@
 }
 
 .imageSection {
-  width: 50%;
   overflow: hidden;
   display: flex;
+  height: 100%;
   align-items: center;
   border-radius: 0px 40px 40px 0px;
   position: absolute;
-  right: 0;
+  right: 10px;
   z-index: 1;
   animation: slideIn 2s ease-out;
 }
@@ -76,7 +76,7 @@
 .contentSection {
   width: 100%;
   height: 100%;
-  max-width: 680px;
+  max-width: 744px;
   display: flex;
   padding: 52px 56px 56px 56px;
   align-items: center;
@@ -360,10 +360,22 @@
   margin-bottom: 40px;
 }
 
-.usp-card {
+.usp-card-1,
+.usp-card-2,
+.usp-card-3 {
   text-align: center;
   width: 100%;
-  max-width: 176px;
+}
+
+.usp-card-2 {
+  max-width: 130px;
+}
+
+.usp-card-3 {
+  max-width: 140px;
+}
+.usp-card-1 {
+  max-width: 240px;
 }
 
 .enrollment-count {

@@ -98,12 +98,12 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles["usp-section-container"]}>
-              <div className={styles["usp-card"]}>
+              <div className={styles["usp-card-1"]}>
                 <img src={part1.iconImage1} alt="Icon 1" />
                 <p className={styles["card-text"]}>{part1.card1text}</p>
               </div>
               <div
-                className={`${styles["usp-card"]} ${styles["enrollment-card"]}`}
+                className={`${styles["usp-card-2"]} ${styles["enrollment-card"]}`}
               >
                 <img src={part2.iconImage2} alt="Icon 2" />
                 <div className={styles["enrollment-container"]}>
@@ -115,7 +115,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
                   </p>
                 </div>
               </div>
-              <div className={styles["usp-card"]}>
+              <div className={styles["usp-card-3"]}>
                 <img src={part3.iconImage3} alt="Icon 3" />
                 <p className={styles["card-text"]}>{part3.card3text}</p>
               </div>
