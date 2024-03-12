@@ -72,7 +72,7 @@ class LeadService {
     try {
       //Save leads on Salesforce
       let salesforceParam = { ...params };
-      console.log("salesforceParam", salesforceParam);
+
       salesforceParam.Programme_Of_Interest =
         this.salesforceProgramOfIngterest.get(params.Programme_Of_Interest);
       // console.log("salesforceParam", salesforceParam.Programme_Of_Interest);
@@ -93,24 +93,24 @@ class LeadService {
       //   apiEndPoints.salesforceApi,
       //   salesforceParam
       // );
-
-      if (
-        !(
-          phoneNumber.startsWith("+234") ||
-          phoneNumber.startsWith("+255") ||
-          phoneNumber.startsWith("+256")
-        )
-      ) {
-        const salesforceResponse = await this.salesforceServer.post(
-          apiEndPoints.salesforceApi,
-          salesforceParam
-        );
-        if (salesforceResponse?.data?.data) {
-          params.saleforceObjectId = salesforceResponse?.data?.data.Id;
-          params.saleforceObjectStatus =
-            salesforceResponse?.data?.data.ResultCode;
-        }
-      }
+      //*******salesforce restriction ***********
+      // if (
+      //   !(
+      //     phoneNumber.startsWith("+234") ||
+      //     phoneNumber.startsWith("+255") ||
+      //     phoneNumber.startsWith("+256")
+      //   )
+      // ) {
+      //   const salesforceResponse = await this.salesforceServer.post(
+      //     apiEndPoints.salesforceApi,
+      //     salesforceParam
+      //   );
+      //   if (salesforceResponse?.data?.data) {
+      //     params.saleforceObjectId = salesforceResponse?.data?.data.Id;
+      //     params.saleforceObjectStatus =
+      //       salesforceResponse?.data?.data.ResultCode;
+      //   }
+      // }
       let crmData = { ...salesforceParam };
 
       if (
