@@ -117,7 +117,8 @@ class LeadService {
         phoneNumber.startsWith("+234") ||
         phoneNumber.startsWith("+27") ||
         phoneNumber.startsWith("+254") ||
-        phoneNumber.startsWith("+256")
+        phoneNumber.startsWith("+256") ||
+        phoneNumber.startsWith("+255")
       ) {
         this.scriptData(crmData);
       }
