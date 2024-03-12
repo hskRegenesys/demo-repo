@@ -115,6 +115,11 @@ const DataSeparatorPages = (page: string | undefined): any | undefined => {
       ...MainCoursesDynimicData.DigitalMarketing,
       multiplePagesDatas: MultiplePagesCoursesData[page],
     };
+  } else if (page === "project-management-courses") {
+    return {
+      ...MainCoursesDynimicData.ProjectManagement,
+      multiplePagesDatas: MultiplePagesCoursesData[page],
+    };
   }
 
   return undefined;

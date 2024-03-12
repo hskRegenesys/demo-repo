@@ -544,5 +544,9 @@ const MultiplePagesCoursesData = {
   "future-of-digital-marketing": {},
   "importance-of-digital-marketing": {},
   "why-is-digital-marketing-important": {},
+
+  // =====================PM==========================
+
+  "project-management-courses": {},
 };
 export default MultiplePagesCoursesData;

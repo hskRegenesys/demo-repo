@@ -841,6 +841,426 @@ const MainCoursesDynimicData = {
       ],
     },
   },
+  ProjectManagement: {
+    BannerWithVideoData: {
+      BannerImgDesktop: "/assets/images/HomeNew/BannersImg/PM-Banner.webp",
+      coursePageName: "Project Management",
+      topSectionPoint1: "BESTSELLER",
+      topSectionPoint2: "Live Sessions by Industry Experts",
+      contentText:
+        "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements. It involves planning, executing, controlling, and closing the work of a team to achieve specific goals within a specified time frame. As businesses evolve, the need for effective project management becomes increasingly crucial for success.",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+      BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
+      vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
+      UspSectionData: {
+        part1: {
+          card1text:
+            "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
+          iconImage1: "/assets/images/HomeNew/Location.svg",
+        },
+        part2: {
+          card2text: "Students Enrolled",
+          enrollmentCount: "10000+",
+          iconImage2: "/assets/images/HomeNew/Users.svg",
+          duration: "3000",
+        },
+        part3: {
+          card3text: "Enhances Upskilling Courses",
+          iconImage3: "/assets/images/HomeNew/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Digital Marketing Course Outcomes",
+      Heding: "What our learners have achieved",
+      Card: [
+        {
+          cardIcon: "/assets/images/HomeNew/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
+        },
+        {
+          cardIcon: "/assets/images/HomeNew/brifecase-tick.svg",
+          text1: "1000+",
+          text2: " Career Opportunities",
+        },
+        {
+          cardIcon: "/assets/images/HomeNew/medal.svg",
+          text1: "190+",
+          text2: "Countries Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore the World of Project Management with us!",
+      bigHeading:
+        "Everything You Need To Know About Project Management Course.",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "World Class Faculty", contentId: "content4" },
+        { text: "", contentId: "content5" },
+
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg: "/assets/images/HomeNew/BannersImg/PM-explore.webp",
+          contentText:
+            "Enhance your skills and boost your career prospects with the Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course.",
+          contentCard: [
+            {
+              icon: "/assets/images/HomeNew/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "/assets/images/HomeNew/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "/assets/images/HomeNew/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "/assets/images/HomeNew/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+        content2: {
+          contentHeading: "Tools Covered in this Course",
+          cardTools: [
+            { img: "pm/project-management-tools1.webp", alt: "" },
+            { img: "pm/project-management-tools2.webp", alt: "" },
+            { img: "pm/project-management-tools3.webp", alt: "" },
+            { img: "pm/project-management-tools4.webp", alt: "" },
+          ],
+        },
+        content3: {
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg:
+                "/assets/images/HomeNew/faculty-img/Dennis-Laxton.webp",
+              facultyName: "Dr.Dennis Laxton",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "",
+            },
+            {
+              facultyImg:
+                "/assets/images/HomeNew/faculty-img/James_forson.webp",
+              facultyName: "James Forson",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "",
+            },
+          ],
+        },
+
+        // content5: {
+        //   contentHeading: "Course Curriculum",
+        //   durationIcon: "/assets/images/HomeNew/clock-green.svg",
+        //   tickIcon: "/assets/images/HomeNew/Check.svg",
+        //   dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
+        //   curriculumContainer: [
+        //     {
+        //       weekHeading: "Week1",
+        //       weekPoints: [
+        //         "Cyber security fundamentals",
+        //         "Security policies and procedures",
+        //         "Security policies and procedures",
+        //         "Security policies and procedures",
+        //       ],
+        //     },
+        //     {
+        //       weekHeading: "Week2",
+        //       weekPoints: [
+        //         "Cyber security fundamentals",
+        //         "Security policies and procedures",
+        //         "Security policies and procedures",
+        //         "Security policies and procedures",
+        //       ],
+        //     },
+        //     {
+        //       weekHeading: "Week3",
+        //       weekPoints: [
+        //         "Cyber security fundamentals",
+        //         "Security policies and procedures",
+        //         "Security policies and procedures",
+        //         "Security policies and procedures",
+        //       ],
+        //     },
+        //   ],
+        // },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "/assets/images/HomeNew/clock-green.svg",
+          tickIcon: "/assets/images/HomeNew/Check.svg",
+          dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading:
+                "Project Management: Fundamental Skills for Managers",
+              weekPoints: {
+                "": [
+                  "Introduction to Project Management",
+                  "Project Profiling",
+                  "Developing Team Capabilities",
+                  "Planning and Managing",
+                  "Time Management",
+                  "Monitoring and Reporting",
+                  "Quality Management",
+                  "Project Closure",
+                  "Change Management",
+                  "Disaster Management",
+                  "International Project Management",
+                  "Software for Project Management - (Microsoft Project Plan- MPP)",
+                  "Design Thinking: Problem Solving",
+                  "Contracts and Agreements",
+                  "Industry Expert",
+                ],
+              },
+            },
+            {
+              weekHeading:
+                "Advance Project Management: Global Strategy for Managers",
+              weekPoints: {
+                "": [
+                  "Introduction- Organizational Project Management",
+                  "Program Management – Improving Business Results",
+                  "Portfolio Management – A Framework For Governance",
+                  "The Project Management Office",
+                  "Introduction to Strategy",
+                  "Strategy Formation and Implementation",
+                  "Internal Environment Analysis: Resources And Capabilities",
+                  "International Management",
+                  "International Managers Leadership",
+                  "Formulating International Strategies",
+                  "The Entrepreneurial Ecosystem For Project Manager",
+                  "Improving Operational Management",
+                  "Procurement and Supply Chain Management",
+                  "International Human Resource Management",
+                  "Digital Transformation Integrating Technology with Business",
+                  "Software for Project Management - (Jira)",
+                ],
+              },
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
+          durationIcon: "/assets/images/HomeNew/timer.svg",
+          EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+              contaryName: "SouthAfrica",
+              price: "R 25,198 ",
+              duration: "10 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+            {
+              contaryFlag: "/assets/images/HomeNew/India.svg",
+
+              contaryName: "India",
+              price: "₹ 128,978 ",
+              duration: "10 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+            {
+              contaryFlag: "/assets/images/HomeNew/USA.svg",
+              contaryName: "USA",
+              price: "$ 1,418",
+              duration: "10 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title: "About Digital Regenesys Project Management Certificate",
+      heading: "Certification",
+      paragraph:
+        "The Digital Regenesys Project Management Certificate equips professionals with essential skills to excel in project management. This online project management course covers key concepts, tools, and techniques for successful project planning, execution, and monitoring. Participants will learn effective communication strategies, risk management principles, and agile methodologies to enhance project outcomes. The certificate course is designed for individuals seeking to advance their project management careers in a digital environment.",
+      tickImage: "/assets/images/HomeNew/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        " Project Lifecycle",
+        "Effective Project Planning",
+        "Project Monitoring and Control ",
+        "Application of Project Management Software",
+        "Project Closure and Evaluation",
+        "Comprehensive Project Management Knowledge",
+      ],
+      image: "/assets/images/HomeNew/certificate/PM-certificate.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    // BlogSectionData: {
+    //   BlogSectionTitle: "For Your Research & Information",
+    //   cards: [
+    //     {
+    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-1.webp",
+    //       blogQuestion:
+    //         "What Are The Key Features Of A Data Science Course Suitable For Beginners?",
+    //       blogText:
+    //         "Data has become a vital component of innovation and development in the current digital era.",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
+    //     },
+    //     {
+    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-2.webp",
+    //       blogQuestion: "What is the Data Science Course Salary?",
+    //       blogText:
+    //         "Data science has emerged as a dynamic and high-demand field, blending statistical analysis, ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
+    //     },
+    //     {
+    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-3.webp",
+    //       blogQuestion:
+    //         "What makes data science courses suitable for beginners?",
+    //       blogText:
+    //         "In today’s data-driven world, the field of data science has emerged as a cornerstone of",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
+    //     },
+    //     {
+    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-4.webp",
+    //       blogQuestion: "What Are The Advantages Of A Data Science Course?",
+    //       blogText:
+    //         "In the era of big data, where information flows ceaselessly from diverse sources, the role of  ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/what-are-the-advantages-of-a-data-science-course",
+    //     },
+    //   ],
+    // },
+    faqSections: {
+      arrowIcon: "/assets/images/HomeNew/arrow_drop_down.svg",
+      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Project Management Course",
+          faqs: [
+            {
+              question: "What is a Project Management Course?",
+              answer:
+                "A Project Management Course is a structured programme designed to equip individuals with the knowledge and skills necessary to plan, execute, and oversee projects effectively. Enrol in Digital Regenesys's Project Management Course to master essential skills and strategies for successful project planning, execution, and delivery.",
+            },
+            {
+              question: "What are the Benefits of a Project Management Course?",
+              answer:
+                "By enrolling in Digital Regenesys’s project management course, individuals can gain a comprehensive understanding of project management methodologies, best practices, and tools. This knowledge equips them to lead and execute projects, ensuring successful outcomes effectively. Additionally, a project management course provides opportunities for networking, skill enhancement, and career advancement.",
+            },
+            {
+              question:
+                "What skills will I gain from a project management course?",
+              answer:
+                "The project management course develops skills in planning, risk management, communication, team leadership, and the ability to navigate complex projects successfully.",
+            },
+          ],
+        },
+        {
+          heading: "Eligibility and Enrolment",
+          faqs: [
+            {
+              question:
+                "Is the project management course only for those in the IT or construction industries?",
+              answer:
+                "No, project management is applicable across industries, including healthcare, finance, marketing, and more. The principles are universal and adaptable to various sectors.",
+            },
+            {
+              question:
+                "How do I enrol and register for the Digital Regenesys Project Management Course?",
+              answer:
+                "To enrol in the Digital Regenesys online course, follow these steps: Visit the official website @ https://www.digitalregenesys.com/ Navigate to the course page. Select the required course. Click the 'Enrol Now' button. Complete the registration form with all the required details. Submit the form and proceed to make the payment for the course. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+            },
+            {
+              question:
+                "Can project management certification lead to salary advancements?",
+              answer:
+                "Yes, earning a project management certification is often linked to increased earning potential. Employers recognise the value of certified professionals and may offer higher salaries or promotions based on their demonstrated expertise.",
+            },
+          ],
+        },
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question: "What is Excel in Project Management Course?",
+              answer:
+                "Excel is a tool that is widely used in project management courses.",
+            },
+            {
+              question:
+                "Which tool is the most widely used tool in the Project Management Course?",
+              answer:
+                "Excel is the most widely used in the Project Management Course. In the Project Management Course, the Excel tool is mainly used to create project plans and timelines to track budgets and milestones. The Excel tool also helps project managers stay organised and on track throughout the entire project lifecycle.",
+            },
+            {
+              question:
+                "What tools are covered in Digital Regenesys’s Project Management Course?",
+              answer:
+                "Tools used in the Digital Regenesys Project Management Course are: Excel, Slack, Yammer and Discord.",
+            },
+          ],
+        },
+        {
+          heading: "Duration and Accessibility",
+          faqs: [
+            {
+              question:
+                "How Long Does It Take to Complete a Project Management Course?",
+              answer:
+                "The total duration of the Digital Regenesys Project Management Course is 10 weeks.",
+            },
+            {
+              question:
+                "Can I pursue a Project Management course alongside a full-time job?",
+              answer:
+                "Yes. Digital Regenesys’s Project Management course offers online or flexible scheduling options to accommodate individuals working full-time.",
+            },
+            {
+              question: "How to become an effective project manager?",
+              answer:
+                "To become an effective project manager, it is essential to have a strong foundation in the principles and techniques of project management. Develop skills required for career growth in project management at Digital Regenesys.",
+            },
+          ],
+        },
+        {
+          heading: "Project Management Online Certification Course",
+          faqs: [
+            {
+              question:
+                "Can the project management certification course boost confidence in handling challenging projects?",
+              answer:
+                "Absolutely. Certified professionals gain the confidence to tackle complex projects with a structured approach. The acquired knowledge and methodologies empower them to address challenges systematically and achieve successful outcomes.",
+            },
+            {
+              question:
+                "How does the project management certification course stay relevant in a rapidly changing business landscape?",
+              answer:
+                "Certification bodies regularly update their course to align with industry trends and best practices. This ensures that certified professionals have the latest knowledge and tools needed to navigate evolving business environments.",
+            },
+            {
+              question:
+                "How does the project management certification course contribute to personal and professional growth?",
+              answer:
+                "The project management certification course fosters skill development in areas such as leadership, problem-solving, and communication. It also provides exposure to diverse projects and industries, contributing to continuous learning.",
+            },
+          ],
+        },
+      ],
+    },
+  },
 };
 
 export default MainCoursesDynimicData;
