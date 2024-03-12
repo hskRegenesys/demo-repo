@@ -111,10 +111,6 @@ const Course = (props: any) => {
 
   const isPageDataAvailable =
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
-  if (BlogSectionData === 0) {
-    // Return null if data is not provided or cards array is empty
-    return null;
-  }
 
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
