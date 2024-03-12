@@ -303,12 +303,14 @@
   .content2 ul {
     /* display: grid;
     grid-template-columns: repeat(2, 1fr); */
+    display: flex;
     gap: 16px;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .content2 li {
     margin-bottom: 16px;
+    max-width: 154px;
   }
 }
 /* content3 */
@@ -744,7 +746,7 @@
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.026px;
-  font-family: Montserrat-Bold;
+  font-family: Montserrat-semiBold;
 }
 
 .SpanText {
@@ -785,8 +787,13 @@
   .Contarycard {
     margin-bottom: 20px;
   }
+
+  .swiperStyle {
+    --add-bottom: 64px !important;
+    padding-bottom: var(--add-bottom) !important;
+    align-items: center;
+  }
 }
-/* swiper style */
 
 .swiperStyle {
   --swiper-pagination-color: #008554;
@@ -800,8 +807,6 @@
   --swiper-pagination-bullet-vertical-gap: 120px;
 }
 .swiperStyle {
-  --add-bottom: 64px !important;
-  padding-bottom: var(--add-bottom) !important;
   align-items: center;
 }
 .swiperStyle [class^="swiper-button-"] {

@@ -6,7 +6,7 @@ const MultiplePagesBrandData = {
     topSectionPoint1: "Supercharge Your Career with ",
     topSectionPoint2: "Digital Regenesys",
     contentText:
-      "Discover the comprehensive array of Digital Regenesys online courses designed to equip learners with essential skills in today's competitive digital landscape. With a focus on practical knowledge and industry relevance, these courses offer flexible learning schedules and expert-led instruction to help you succeed in your career goals. These courses provide a holistic learning experience to enhance your professional capabilities and drive growth in your field. Enrol today and take your digital skills to the next level with Digital Regenesys online courses.",
+      "Discover the comprehensive array of Digital Regenesys online courses designed to equip learners with essential skills in today's competitive digital landscape. Online courses provide a holistic learning experience enhance professional capabilities, and drive growth in your field. Enrol and take your digital skills to the next level with Digital Regenesys online courses.",
     youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",

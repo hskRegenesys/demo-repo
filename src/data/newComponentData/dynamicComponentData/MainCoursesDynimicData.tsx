@@ -6,7 +6,7 @@ const MainCoursesDynimicData = {
       topSectionPoint1: "BESTSELLER",
       topSectionPoint2: "Live Sessions by Industry Experts",
       contentText:
-        "The Certification Course in Data Science provides a comprehensive curriculum, including concepts in data analysis, machine learning, and statistical modelling. Students will gain practical skills in programming languages such as Python and R and experience working with large datasets. The course equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification validating their expertise in data science.",
+        "The Data Science Certification Course provides a comprehensive curriculum and equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification, gain practical programming language skills such as Python and R, and experience working with large datasets. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
@@ -529,7 +529,7 @@ const MainCoursesDynimicData = {
             { img: "dm/digital_marketing_tools13.webp", alt: "" },
             { img: "dm/digital_marketing_tools14.webp", alt: "" },
             { img: "dm/digital_marketing_tools15.webp", alt: "" },
-            { img: "dm/digital_marketing_tools16.webp", alt: "" },
+            // { img: "dm/digital_marketing_tools16.webp", alt: "" },
           ],
         },
         content3: {
@@ -642,7 +642,7 @@ const MainCoursesDynimicData = {
               contaryFlag: "/assets/images/HomeNew/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 24,488 ",
-              duration: "30 weeks",
+              duration: "20 weeks",
               Enrollment: "10,000+ Enroled ",
             },
             {
@@ -650,14 +650,14 @@ const MainCoursesDynimicData = {
 
               contaryName: "India",
               price: "₹ 122,498",
-              duration: "30 weeks",
+              duration: "20 weeks",
               Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/HomeNew/USA.svg",
               contaryName: "USA",
               price: "$ 1,238",
-              duration: "30 weeks",
+              duration: "20 weeks",
               Enrollment: "10,000+ Enroled ",
             },
           ],
