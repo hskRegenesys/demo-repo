@@ -1574,6 +1574,13 @@ const createReWrites = () => {
     //   destination: "/all-courses-multiple/why-is-digital-marketing-important",
     // },
 
+    ///==================PM======================
+
+    {
+      source: "/project-management-courses",
+      destination: "/all-courses-multiple/project-management-courses",
+    },
+
     // -------------------------multiple-pages-end---------------------------------
 
     {
