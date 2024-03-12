@@ -15,7 +15,8 @@ import PopularTopics from "@/components/PopularTopics/PopularTopics";
 // import SubCourseDetails from "@/components/courses/subcourseDetails";
 import { useRouter } from "next/router";
 import _ from "lodash";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
@@ -114,6 +115,8 @@ const Course = (props: any) => {
 
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
+      <ToastContainer />
+
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
