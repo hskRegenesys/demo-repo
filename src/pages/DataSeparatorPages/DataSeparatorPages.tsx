@@ -47,6 +47,79 @@ const DataSeparatorPages = (page: string | undefined): any | undefined => {
     return {
       multiplePagesDatas: MultiplePagesCoursesData[page],
     };
+  } else if (
+    page === "digital-marketing" ||
+    page === "what-is-digital-marketing" ||
+    page === "digital-marketing-jobs" ||
+    page === "digital-marketing-salary" ||
+    page === "digital-marketer" ||
+    page === "digital-marketing-course" ||
+    page === "digital-marketing-strategy" ||
+    page === "digital-marketing-certificate" ||
+    page === "google-digital-marketing-certification" ||
+    page === "digital-marketing-courses" ||
+    page === "digital-marketing-near-me" ||
+    page === "digital-marketing-specialist" ||
+    page === "digital-marketing-certification" ||
+    page === "digital-marketing-degree" ||
+    page === "digital-marketing-tools" ||
+    page === "digital-marketing-training" ||
+    page === "digital-marketing-certificates" ||
+    page === "digital-marketing-institute" ||
+    page === "digital-marketing-strategies" ||
+    page === "digital-marketing-course-online" ||
+    page === "digital-marketing-definition" ||
+    page === "digital-marketing-examples" ||
+    page === "digital-marketing-meaning" ||
+    page === "digital-marketing-trends" ||
+    page === "learn-digital-marketing" ||
+    page === "types-of-digital-marketing" ||
+    page === "digital-marketer-salary" ||
+    page === "digital-marketing-classes" ||
+    page === "digital-marketing-online-courses" ||
+    page === "online-digital-marketing-courses" ||
+    page === "what-is-a-digital-marketer" ||
+    page === "digital-marketing-courses-online" ||
+    page === "google-digital-marketing-course" ||
+    page === "how-to-become-a-digital-marketer" ||
+    page === "how-to-do-digital-marketing" ||
+    page === "how-to-start-digital-marketing" ||
+    page === "online-digital-marketing" ||
+    page === "digital-marketing-blogs" ||
+    page === "digital-marketing-careers" ||
+    page === "digital-marketing-certificate-online" ||
+    page === "digital-marketing-certifications" ||
+    page === "fundamentals-of-digital-marketing" ||
+    page === "online-digital-marketing-course" ||
+    page === "what-does-a-digital-marketer-do" ||
+    page === "what's-digital-marketing" ||
+    page === "best-digital-marketing-services" ||
+    page === "certificate-in-digital-marketing" ||
+    page === "digital-marketing-platforms" ||
+    page === "digital-marketing-tips" ||
+    page === "masters-in-digital-marketing" ||
+    page === "what-is-a-digital-marketing" ||
+    page === "best-digital-marketing-courses" ||
+    page === "definition-of-digital-marketing" ||
+    page === "digital-marketing-degree-online" ||
+    page === "digital-marketing-degrees" ||
+    page === "digital-marketing-experts" ||
+    page === "digital-marketing-online" ||
+    page === "examples-of-digital-marketing" ||
+    page === "how-to-learn-digital-marketing" ||
+    page === "future-of-digital-marketing" ||
+    page === "importance-of-digital-marketing" ||
+    page === "why-is-digital-marketing-important"
+  ) {
+    return {
+      ...MainCoursesDynimicData.DigitalMarketing,
+      multiplePagesDatas: MultiplePagesCoursesData[page],
+    };
+  } else if (page === "project-management-courses") {
+    return {
+      ...MainCoursesDynimicData.ProjectManagement,
+      multiplePagesDatas: MultiplePagesCoursesData[page],
+    };
   }
 
   return undefined;

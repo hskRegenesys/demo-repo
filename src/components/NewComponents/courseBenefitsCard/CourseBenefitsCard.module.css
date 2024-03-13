@@ -33,12 +33,13 @@
 }
 .cardsContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 16px;
 }
 
 .card {
-  width: 45%; /* Adjust based on your design */
+  width: 30%; /* Adjust based on your design */
   padding: 24px 10px;
   border-radius: 12px;
   border: 1px solid var(--light-divider-borders-light, #e3e8ee);
@@ -109,9 +110,10 @@
     margin-top: 40px;
   }
   .cardsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+  .enrollNowButton {
+    margin-top: 40px;
   }
   .courseBenefitsCardContainer h2 {
     font-size: 14px;
@@ -126,6 +128,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 152px;
     height: 100%;
     justify-content: center;
     gap: 10px;
@@ -143,6 +146,6 @@
     font-size: 20px;
   }
   .cardText2 {
-    font-size: 12px;
+    font-size: 11px;
   }
 }

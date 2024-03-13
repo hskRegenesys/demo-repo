@@ -19,6 +19,7 @@ const Data = {
       "cyber-security": "Cyber Security Course Online | Digital Regenesys",
       "digital-marketing":
         "Digital Marketing Course Online | Digital Regenesys",
+
       "digital-marketing-fundamentals":
         "Digital Marketing Fundamentals Course Online | Digital Regenesys",
 
@@ -62,6 +63,9 @@ const Data = {
         "Advanced Applied Artificial Intelligence Course | Digital Regenesys",
       "management-advancement":
         "Management Advancement Course Online | Digital Regenesys",
+
+      "product-management":
+        " Product Management Course Online | Digital Regenesys",
 
       // ------------------multiple-brand-meta-title------------------------
 
@@ -132,6 +136,10 @@ const Data = {
         "Online Course in Data Science: Master Your Skill | Digital Regenesys",
       "online-data-science-course":
         "Online Data Science Course: Flexible Learning | Digital Regenesys",
+
+      ///===============================DM============================
+      "what-is-digital-marketing":
+        "What is Digital Marketing? Understand the Basics | Digital Regenesys",
     },
     keywords: {
       home: `
@@ -275,14 +283,14 @@ const Data = {
       `,
       "software-development": `
       software Development, 
-software Development course,
-what is Software Development, 
-where to study Software Development  in South Africa,
-Software Development  in South Africa,
-Software Development  jobs in South Africa,
-Software Development Courses South Africa,
-Software Development  online course,
-Software Development  subjects,
+      software Development course,
+      what is Software Development, 
+      where to study Software Development  in South Africa,
+      Software Development  in South Africa,
+      Software Development  jobs in South Africa,
+      Software Development Courses South Africa,
+      Software Development  online course,
+      Software Development  subjects,
     `,
       "design-thinking":
         "design thinking, design thinking course, design thinking course duration, design thinking course fees, online design thinking course, design thinking certification, design thinking boot camp, design thinking training, design thinking for beginners, design thinking for business, design thinking for innovation, design thinking for problem solving",
@@ -337,7 +345,16 @@ Software Development  subjects,
         "AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
       "management-advancement":
         "Management Advancement course, Management Advancement course online, Management Advancement course career opportunities, leadership and Management Advancement, Management Advancement certification course, digital regenesys",
-
+      "product-management": `
+        product management courses,
+        product management course,
+        best product management courses,
+        product management courses online,
+        online product management courses,
+        product management online courses,
+        product management course online,
+        product management certification courses
+        `,
       //  -------------multiplepages brand--------------------
 
       "online-courses":
@@ -409,6 +426,10 @@ Software Development  subjects,
 
       "online-data-science-course":
         "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
+
+      ///===============================DM============================
+      "what-is-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
     },
 
     description: {
@@ -417,6 +438,8 @@ Software Development  subjects,
         "At Digital Regenesys, we provide top-notch education to empower all students for success in the 5th Industrial Revolution and beyond. Discover our digital courses now.",
       "management-advancement":
         "With Management Advancement Course online at Digital Regenesys, explore career-enhancing opportunities and gain leadership skills & certification. Enroll Now!",
+      "product-management":
+        "Best product management courses online. Find the best product management certification courses to enhance your skills and advance your career. Enrol today!        ",
       allCourse:
         "Unlock your career potential with our professional courses. Expert instruction and flexible learning options to help you achieve your goals. Enroll now!",
       "data-and-business-analytics":
@@ -514,7 +537,7 @@ Software Development  subjects,
       "certificate-courses-online":
         "Certificate Courses Online: Boost your skill set with our certificate courses online. Choose from a variety of courses for personal & professional development. Join now!",
       //  -------------multiplepages courses--------------------
-
+      ///===============================Ds============================
       "data-science-course":
         "Data Science Course: Explore our comprehensive data science course. Master analytical skills and propel your career in data science. Join Digital Regenesys now!",
       "data-science-courses":
@@ -547,6 +570,9 @@ Software Development  subjects,
         "Online Course In Data Science: Embark on a flexible learning journey in data science. Enroll in our online course for comprehensive skill development. Join now!",
       "online-data-science-course":
         "Online Data Science Course: Flexible learning for data science enthusiasts. Enroll in our online course to master data science skills. Join Digital Regenesys now!",
+      ///===============================DM============================
+      "what-is-digital-marketing":
+        "What is Digital Marketing: Curious about digital marketing? Learn what it entails, its importance, and how it can revolutionize your business. Get started today.",
     },
     canonicalUrlData: {
       home: "",
@@ -586,6 +612,7 @@ Software Development  subjects,
       "full-stack-development": "full-stack-development",
       "data-and-business-analytics": "data-and-business-analytics",
       "management-advancement": "all-courses/management-advancement",
+      "product-management": "all-courses/product-management",
       //  -------------multiplepages brand--------------------
 
       "online-courses": "/online-courses",
@@ -606,6 +633,7 @@ Software Development  subjects,
       "certificate-courses-online": "/certificate-courses-online",
 
       //  -------------multiplepages courses--------------------
+      ///===============================DS============================
       "data-science-course": "/data-science-course",
       "data-science-courses": "/data-science-courses",
       "courses-in-data-science": "/courses-in-data-science",
@@ -622,6 +650,8 @@ Software Development  subjects,
       "data-science-certification-course": "/data-science-certification-course",
       "online-course-in-data-science": "/online-course-in-data-science",
       "online-data-science-course": "/online-data-science-course",
+      ///===============================DM============================
+      "what-is-digital-marketing": "/what-is-digital-marketing",
     },
   },
 };

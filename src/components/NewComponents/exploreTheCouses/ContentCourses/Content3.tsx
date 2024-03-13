@@ -22,11 +22,14 @@ const Content3: React.FC<Content3Props> = ({
   tutors,
   facultyCard,
 }) => {
+  const addBottomValue = facultyCard.length <= 4 ? "0px" : "60px";
+
   return (
     <div className={`${styles.content3} ${styles.content}`}>
       <h3>{contentHeading}</h3>
       <div className={styles.cardContainer}>
         <Swiper
+          style={{ paddingBottom: addBottomValue }}
           className={styles.swiperStyle}
           slidesPerView={3}
           pagination={{ clickable: true }}

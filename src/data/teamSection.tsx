@@ -49,6 +49,11 @@ const teamSection = {
     //   name: "Management Advancement",
     //   href: "/all-courses/management-advancement",
     // },
+    // {
+    //   id: 19,
+    //   name: "product management",
+    //   href: "/all-courses/product-management",
+    // },
     {
       id: 17,
       name: "Data and Business Analytics",

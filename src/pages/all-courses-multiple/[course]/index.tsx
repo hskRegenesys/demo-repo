@@ -15,7 +15,8 @@ import PopularTopics from "@/components/PopularTopics/PopularTopics";
 // import SubCourseDetails from "@/components/courses/subcourseDetails";
 import { useRouter } from "next/router";
 import _ from "lodash";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
@@ -36,134 +37,6 @@ import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDo
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
-const PageBanner = dynamic(
-  () => import("@/components/BannerSection/PageBanner")
-);
-const SubCourseDetails = dynamic(
-  () => import("@/components/courses/subcourseDetails")
-);
-interface MainCoursesDynimicData {
-  BannerWithVideoData: {
-    BannerImgDesktop: string;
-    BannerImgAlt: string;
-    coursePageName: string;
-    topSectionPoint1: string;
-    topSectionPoint2: string;
-    contentText: string;
-    youtubeVideoLink: string;
-    BrochureIcon: string;
-    vidoPlayIcon: string;
-  };
-  CourseBenefitsCardData: {
-    courcename: string; // Corrected property name
-    Heding: string; // Corrected property name
-    Card: CardData[];
-  };
-  ExploreTheCoursesData: {
-    smallHeading: string;
-    bigHeading: string;
-    sideHeadings: { text: string; contentId: string }[];
-    sideContents: {
-      content1: {
-        contentHeading: string;
-        contentImg: string;
-        contentText: string;
-        contentCard: { icon: string; text: string }[];
-      };
-      content2: {
-        contentHeading: string;
-        cardTools: { img: string }[];
-      };
-      content3: {
-        contentHeading: string;
-        tutors: string;
-        facultyCard: {
-          facultyImg: string;
-          facultyName: string;
-          courseName: string;
-          yearsOfExperience: string;
-        }[];
-      };
-      content4?: {
-        contentHeading: string;
-        LevelCard: {
-          courseName: string;
-          frameImg: string;
-          tickIcon: string;
-          list: string[];
-        }[];
-      };
-      content5?: {
-        contentHeading: string;
-        durationIcon: string;
-        tickIcon: string;
-        dropDown: string;
-        curriculumContainer: {
-          weekHeading: string;
-          weekPoints: string[];
-        }[];
-      };
-      content6?: {
-        ContentHeding: string;
-        PriceIcon: string;
-        durationIcon: string;
-        EnrollmentIcon: string;
-        contraryPricingCard: {
-          contaryName: string;
-          price: string;
-          duration: string;
-          Enrollment: string;
-          contaryFlag: string;
-        }[];
-      };
-    };
-  };
-  CertificationDRData: {
-    heading: string;
-    title: string;
-    paragraph: string;
-    achievementsHeading: string;
-    achievementsText: string[];
-    tickImage: string;
-    image: string;
-    imageText: string;
-    buttonText: string;
-  };
-  BlogSectionData: {
-    BlogSectionTitle: string;
-    cards: CardDataBlog[];
-  };
-  faqSections: {
-    // Adjusted property name
-    arrowIcon: string;
-    HeadingDesktop: string;
-    HeadingMobile: string;
-    sections: FaqSectionItem[];
-  };
-}
-
-// Define FaqSectionItem and FaqItem interfaces
-interface FaqSectionItem {
-  heading: string;
-  faqs: FaqItem[];
-}
-
-interface FaqItem {
-  question: string;
-  answer: string;
-}
-
-interface CardDataBlog {
-  blogImg: string;
-  blogQuestion: string;
-  blogText: string;
-}
-
-interface CardData {
-  cardIcon: string;
-  text1: string;
-  text2: string;
-}
 const Course = (props: any) => {
   const router = useRouter();
 
@@ -242,6 +115,8 @@ const Course = (props: any) => {
 
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
+      <ToastContainer />
+
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}

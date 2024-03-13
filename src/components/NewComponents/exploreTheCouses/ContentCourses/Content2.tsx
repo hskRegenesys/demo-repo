@@ -1,4 +1,3 @@
-// Content2.js
 import React from "react";
 import styles from "../exploreTheCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,11 +9,14 @@ interface Content2Props {
 }
 
 const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
+  const addBottomValue = cardTools.length <= 4 ? "0px" : "60px";
+
   return (
     <div className={`${styles.content2} ${styles.content}`}>
       <h3>{contentHeading}</h3>
       <ul className={styles.horizontalCardContainer}>
         <Swiper
+          style={{ paddingBottom: addBottomValue }}
           className={styles.swiperStyle}
           slidesPerView={4}
           slidesPerGroup={4}

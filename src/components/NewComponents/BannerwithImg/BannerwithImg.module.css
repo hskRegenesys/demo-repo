@@ -52,6 +52,7 @@
   right: 0;
   width: 100%;
   max-width: 680px;
+  height: 100%;
   display: flex;
   padding: 52px 56px 56px 56px;
   align-items: center;
@@ -269,10 +270,22 @@
   margin-bottom: 40px;
 }
 
-.usp-card {
+.usp-card-1,
+.usp-card-2,
+.usp-card-3 {
   text-align: center;
   width: 100%;
-  max-width: 176px;
+}
+
+.usp-card-2 {
+  max-width: 130px;
+}
+
+.usp-card-3 {
+  max-width: 140px;
+}
+.usp-card-1 {
+  max-width: 240px;
 }
 
 .enrollment-count {

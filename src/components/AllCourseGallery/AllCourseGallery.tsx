@@ -109,6 +109,7 @@ const AllCourseGallery = () => {
     );
     const checkCourseList = [
       "DSCI",
+      // "PDM",
       "FSD",
       //"MD",
       "DBA",
