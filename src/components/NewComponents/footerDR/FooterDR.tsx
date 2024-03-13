@@ -60,12 +60,12 @@ const FooterContent2: React.FC = () => (
         <a href="https://www.digitalregenesys.com/all-courses/data-and-business-analytics">
           <li>Data and Business Analytics</li>
         </a>
-        <a href="https://www.digitalregenesys.com/all-courses/management-advancement">
+        {/* <a href="https://www.digitalregenesys.com/all-courses/management-advancement">
           <li>Management Advancement</li>
         </a>
         <a href="https://www.digitalregenesys.com/all-courses/product-management">
           <li>product management</li>
-        </a>
+        </a> */}
       </ul>
     </div>
   </div>
