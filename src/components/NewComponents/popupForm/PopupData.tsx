@@ -1,7 +1,7 @@
 const PopupData = {
   homePage: {
-    PopupDesktop: "/assets/images/HomeNew/popup/DS-home-popup-desktop.png",
-    PopupMobile: "/assets/images/HomeNew/popup/DS-home-popup-mobile.png",
+    PopupDesktop: "/assets/images/HomeNew/popup/popUp_image.jpg",
+    PopupMobile: "/assets/images/HomeNew/popup/popUp_image.jpg",
   },
   all: {
     PopupDesktop: "/assets/images/HomeNew/WebModal.png",
