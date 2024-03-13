@@ -64,6 +64,9 @@ const Data = {
       "management-advancement":
         "Management Advancement Course Online | Digital Regenesys",
 
+      "product-management":
+        " Product Management Course Online | Digital Regenesys",
+
       // ------------------multiple-brand-meta-title------------------------
 
       "online-courses":
@@ -280,14 +283,14 @@ const Data = {
       `,
       "software-development": `
       software Development, 
-software Development course,
-what is Software Development, 
-where to study Software Development  in South Africa,
-Software Development  in South Africa,
-Software Development  jobs in South Africa,
-Software Development Courses South Africa,
-Software Development  online course,
-Software Development  subjects,
+      software Development course,
+      what is Software Development, 
+      where to study Software Development  in South Africa,
+      Software Development  in South Africa,
+      Software Development  jobs in South Africa,
+      Software Development Courses South Africa,
+      Software Development  online course,
+      Software Development  subjects,
     `,
       "design-thinking":
         "design thinking, design thinking course, design thinking course duration, design thinking course fees, online design thinking course, design thinking certification, design thinking boot camp, design thinking training, design thinking for beginners, design thinking for business, design thinking for innovation, design thinking for problem solving",
@@ -342,7 +345,16 @@ Software Development  subjects,
         "AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
       "management-advancement":
         "Management Advancement course, Management Advancement course online, Management Advancement course career opportunities, leadership and Management Advancement, Management Advancement certification course, digital regenesys",
-
+      "product-management": `
+        product management courses,
+        product management course,
+        best product management courses,
+        product management courses online,
+        online product management courses,
+        product management online courses,
+        product management course online,
+        product management certification courses
+        `,
       //  -------------multiplepages brand--------------------
 
       "online-courses":
@@ -426,6 +438,8 @@ Software Development  subjects,
         "At Digital Regenesys, we provide top-notch education to empower all students for success in the 5th Industrial Revolution and beyond. Discover our digital courses now.",
       "management-advancement":
         "With Management Advancement Course online at Digital Regenesys, explore career-enhancing opportunities and gain leadership skills & certification. Enroll Now!",
+      "product-management":
+        "Best product management courses online. Find the best product management certification courses to enhance your skills and advance your career. Enrol today!        ",
       allCourse:
         "Unlock your career potential with our professional courses. Expert instruction and flexible learning options to help you achieve your goals. Enroll now!",
       "data-and-business-analytics":
@@ -598,6 +612,7 @@ Software Development  subjects,
       "full-stack-development": "full-stack-development",
       "data-and-business-analytics": "data-and-business-analytics",
       "management-advancement": "all-courses/management-advancement",
+      "product-management": "all-courses/product-management",
       //  -------------multiplepages brand--------------------
 
       "online-courses": "/online-courses",
