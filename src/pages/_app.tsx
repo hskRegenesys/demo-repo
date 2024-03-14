@@ -23,7 +23,8 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
-  const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
+  //const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
+  const vineCrmTawk = `https://api.vinecrms.com/api/`;
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -231,7 +232,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        const salesForceUrl = '${salesforceResponse}';
+        const salesForceUrl = '${vineCrmTawk}';
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
           interestedTopic:"",
