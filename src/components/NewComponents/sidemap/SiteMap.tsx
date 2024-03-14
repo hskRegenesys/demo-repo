@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Styles from "./SideMap.module.css";
-import Sidemapdata from "./SideMapData";
+import Styles from "./SiteMap.module.css";
+import Sitemapdata from "./SideMapData";
 
 interface MenuItem {
   title: string;
@@ -28,7 +28,7 @@ interface ContentProps {
   contentDataSelect: SidemapItem[] | SidemapItem;
 }
 
-const SidemapComponent: React.FC = () => {
+const SitemapComponent: React.FC = () => {
   const [activeHeading, setActiveHeading] =
     useState<string>("Digital Regenesys");
   const [activeItems, setActiveItems] = useState<SidemapItem[] | SidemapItem>(
@@ -38,7 +38,7 @@ const SidemapComponent: React.FC = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
-    setSidebarData(Sidemapdata);
+    setSidebarData(Sitemapdata);
   }, []);
 
   useEffect(() => {
@@ -77,7 +77,7 @@ const SidemapComponent: React.FC = () => {
       </div>
       <div className={Styles.SidemapMobile}>
         <h2>Digital Regenesys Sitemap</h2>
-        {Object.keys(Sidemapdata).map((title, index) => (
+        {Object.keys(Sitemapdata).map((title, index) => (
           <MobileDropdown
             key={index}
             title={title}
@@ -213,4 +213,4 @@ const MobileDropdown: React.FC<{
   );
 };
 
-export default SidemapComponent;
+export default SitemapComponent;
