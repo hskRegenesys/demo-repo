@@ -3,28 +3,28 @@ const MultiplePagesBrandData = {
     BannerImgDesktop: "/assets/images/HomeNew/BannersImg/Brand-Banner.png",
     BannerImgAlt: "Digital Regenesys online courses - Digital Regenesys",
     coursePageName: "Digital Regenesys! ",
-    topSectionPoint1: "Supercharge Your Career with ",
-    topSectionPoint2: "Digital Regenesys",
+    BestSaleText: "Supercharge Your Career with ",
+    topTextMessage: "Digital Regenesys",
     contentText:
       "Discover the comprehensive array of Digital Regenesys online courses designed to equip learners with essential skills in today's competitive digital landscape. Online courses provide a holistic learning experience enhance professional capabilities, and drive growth in your field. Enrol and take your digital skills to the next level with Digital Regenesys online courses.",
     youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
     BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
     UspSectionData: {
-      part1: {
-        card1text:
-          "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
-        iconImage1: "/assets/images/HomeNew/Location.svg",
+      uspLocationCard: {
+        uspLocationText:
+          "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+        usplocationIcon: "/assets/images/HomeNew/Location.svg",
       },
-      part2: {
-        card2text: "Students Enrolled",
-        enrollmentCount: "10000+",
-        iconImage2: "/assets/images/HomeNew/Users.svg",
+      uspEnrollmentCard: {
+        uspEnrollmentText: "Students Enrolled",
+        uspEnrollmentCount: "10000+",
+        StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
         duration: "3000",
       },
-      part3: {
-        card3text: "Enhances Upskilling Courses",
-        iconImage3: "/assets/images/HomeNew/Learn.svg",
+      uspUpskillCard: {
+        uspUpskillText: "Enhances Upskilling Courses",
+        uspBookIcon: "/assets/images/HomeNew/Learn.svg",
       },
     },
   },

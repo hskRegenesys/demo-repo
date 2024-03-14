@@ -3,8 +3,8 @@ const MainCoursesDynimicData = {
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/HomeNew/BannersImg/DS-Banner.png",
       coursePageName: "Data Science",
-      topSectionPoint1: "BESTSELLER",
-      topSectionPoint2: "Live Sessions by Industry Experts",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
       contentText:
         "The Data Science Certification Course provides a comprehensive curriculum and equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification, gain practical programming language skills such as Python and R, and experience working with large datasets. ",
       youtubeVideoLink:
@@ -12,20 +12,20 @@ const MainCoursesDynimicData = {
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
       UspSectionData: {
-        part1: {
-          card1text:
-            "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
-          iconImage1: "/assets/images/HomeNew/Location.svg",
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/HomeNew/Location.svg",
         },
-        part2: {
-          card2text: "Students Enrolled",
-          enrollmentCount: "10000+",
-          iconImage2: "/assets/images/HomeNew/Users.svg",
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
           duration: "3000",
         },
-        part3: {
-          card3text: "Enhances Upskilling Courses",
-          iconImage3: "/assets/images/HomeNew/Learn.svg",
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/HomeNew/Learn.svg",
         },
       },
     },
@@ -427,8 +427,8 @@ const MainCoursesDynimicData = {
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/HomeNew/BannersImg/DM-Banner.webp",
       coursePageName: "Digital Marketing",
-      topSectionPoint1: "BESTSELLER",
-      topSectionPoint2: "Live Sessions by Industry Experts",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
       contentText:
         "Digital Marketing is a comprehensive course to enhance your skills and stay ahead in the competitive online landscape. Gain practical knowledge in SEO, social media marketing, and paid advertising strategies. With hands-on experience and expert guidance,  master the latest trends and techniques in digital marketing. ",
       youtubeVideoLink:
@@ -436,20 +436,20 @@ const MainCoursesDynimicData = {
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
       UspSectionData: {
-        part1: {
-          card1text:
-            "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
-          iconImage1: "/assets/images/HomeNew/Location.svg",
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/HomeNew/Location.svg",
         },
-        part2: {
-          card2text: "Students Enrolled",
-          enrollmentCount: "10000+",
-          iconImage2: "/assets/images/HomeNew/Users.svg",
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
           duration: "3000",
         },
-        part3: {
-          card3text: "Enhances Upskilling Courses",
-          iconImage3: "/assets/images/HomeNew/Learn.svg",
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/HomeNew/Learn.svg",
         },
       },
     },
@@ -845,8 +845,8 @@ const MainCoursesDynimicData = {
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/HomeNew/BannersImg/PM-Banner.webp",
       coursePageName: "Project Management",
-      topSectionPoint1: "BESTSELLER",
-      topSectionPoint2: "Live Sessions by Industry Experts",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
       contentText:
         "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements. It involves planning, executing, controlling, and closing the work of a team to achieve specific goals within a specified time frame. As businesses evolve, the need for effective project management becomes increasingly crucial for success.",
       youtubeVideoLink:
@@ -854,20 +854,20 @@ const MainCoursesDynimicData = {
       BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
       vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
       UspSectionData: {
-        part1: {
-          card1text:
-            "USA, South Africa, Nigeria, Kenya, Uganda and Tanzania & India",
-          iconImage1: "/assets/images/HomeNew/Location.svg",
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/HomeNew/Location.svg",
         },
-        part2: {
-          card2text: "Students Enrolled",
-          enrollmentCount: "10000+",
-          iconImage2: "/assets/images/HomeNew/Users.svg",
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
           duration: "3000",
         },
-        part3: {
-          card3text: "Enhances Upskilling Courses",
-          iconImage3: "/assets/images/HomeNew/Learn.svg",
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/HomeNew/Learn.svg",
         },
       },
     },

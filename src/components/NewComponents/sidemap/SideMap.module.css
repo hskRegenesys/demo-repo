@@ -129,18 +129,30 @@
   background-color: #b1b1b195;
 }
 
-.card {
+.cardArray,
+.cardObject {
   padding: 15px;
   border-radius: 8px;
   width: 100%;
-  max-width: 254px;
   box-sizing: border-box;
 }
+.cardArray {
+  max-width: 254px;
+}
 
-.card ul {
+.cardObject {
+  max-width: 100%;
+}
+
+.cardObject ul {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+}
+
+.cardArray ul li,
+.cardObject ul li {
+  flex: 1 1 30%;
+  height: 100px;
   height: 100%;
   max-height: calc(100vh - 1px);
 }

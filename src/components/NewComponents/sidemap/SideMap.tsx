@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "./SideMap.module.css";
 import Sidemapdata from "./SideMapData";
 
@@ -14,8 +14,7 @@ interface SidemapItem {
 
 interface SidemapData {
   [key: string]: {
-    SideHeading: string;
-    content: SidemapItem[];
+    content: SidemapItem[] | SidemapItem;
   };
 }
 
@@ -26,15 +25,17 @@ interface SidebarProps {
 }
 
 interface ContentProps {
-  contentDataSelect: SidemapItem[];
+  contentDataSelect: SidemapItem[] | SidemapItem;
 }
 
 const SidemapComponent: React.FC = () => {
   const [activeHeading, setActiveHeading] =
     useState<string>("Digital Regenesys");
-  const [activeItems, setActiveItems] = useState<SidemapItem[]>([]);
+  const [activeItems, setActiveItems] = useState<SidemapItem[] | SidemapItem>(
+    []
+  );
   const [sidebarData, setSidebarData] = useState<SidemapData | null>(null);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null); // State to track open dropdown
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     setSidebarData(Sidemapdata);
@@ -60,8 +61,6 @@ const SidemapComponent: React.FC = () => {
     }
   };
 
-  const allTitles = Object.keys(Sidemapdata);
-
   return (
     <div className={Styles.Sidemap}>
       <div className={Styles.SidemapDesktop}>
@@ -78,8 +77,7 @@ const SidemapComponent: React.FC = () => {
       </div>
       <div className={Styles.SidemapMobile}>
         <h2>Digital Regenesys Sitemap</h2>
-
-        {allTitles.map((title, index) => (
+        {Object.keys(Sidemapdata).map((title, index) => (
           <MobileDropdown
             key={index}
             title={title}
@@ -100,35 +98,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   activeHeading,
   onItemClick,
 }) => {
-  const [addPadding, setAddPadding] = useState(false);
-  const sidebarContainerRef = useRef<HTMLDivElement>(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (sidebarContainerRef.current) {
-  //       const rect = sidebarContainerRef.current.getBoundingClientRect();
-  //       if (rect.top <= 50) {
-  //         setAddPadding(true);
-  //       } else {
-  //         setAddPadding(false);
-  //       }
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   return (
-    <div
-      ref={sidebarContainerRef}
-      className={`${Styles.sidebarContainer} ${
-        addPadding ? Styles.addPadding : ""
-      }`}
-    >
+    <div className={Styles.sidebarContainer}>
       <h1>Digital Regenesys Sitemap</h1>
       <div className={Styles.sidebar}>
         {headings.map((heading: string) => (
@@ -148,12 +119,27 @@ const Sidebar: React.FC<SidebarProps> = ({
 const Content: React.FC<ContentProps> = ({ contentDataSelect }) => {
   return (
     <div className={Styles.content}>
-      {contentDataSelect.map((item, index) => (
-        <div key={index} className={Styles.card}>
-          <h3>{item.Heading}</h3>
+      {Array.isArray(contentDataSelect) ? (
+        contentDataSelect.map((item, index) => (
+          <div key={index} className={Styles.cardArray}>
+            <h3>{item.Heading}</h3>
+            <div>
+              <ul>
+                {item.items.map((menuItem, innerIndex) => (
+                  <li key={innerIndex}>
+                    <a href={menuItem.link}>{menuItem.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))
+      ) : (
+        <div className={Styles.cardObject}>
+          <h3>{contentDataSelect.Heading}</h3>
           <div>
             <ul>
-              {item.items.map((menuItem, innerIndex) => (
+              {contentDataSelect.items.map((menuItem, innerIndex) => (
                 <li key={innerIndex}>
                   <a href={menuItem.link}>{menuItem.title}</a>
                 </li>
@@ -161,14 +147,14 @@ const Content: React.FC<ContentProps> = ({ contentDataSelect }) => {
             </ul>
           </div>
         </div>
-      ))}
+      )}
     </div>
   );
 };
 
 const MobileDropdown: React.FC<{
   title: string;
-  contentDataSelect: SidemapItem[]; // Changed prop name to match the expected name
+  contentDataSelect: SidemapItem[] | SidemapItem; // Accepts either array or single item
   isOpen: boolean;
   onItemClick: (title: string) => void;
 }> = ({ title, contentDataSelect, isOpen, onItemClick }) => {
@@ -176,9 +162,13 @@ const MobileDropdown: React.FC<{
     if (!isOpen) {
       onItemClick(title);
     } else {
-      onItemClick(""); // Close dropdown when already open
+      onItemClick("");
     }
   };
+
+  const dataArray = Array.isArray(contentDataSelect)
+    ? contentDataSelect
+    : [contentDataSelect];
 
   return (
     <div className={Styles.DropdownContainer}>
@@ -189,7 +179,6 @@ const MobileDropdown: React.FC<{
         onClick={toggleDropdown}
       >
         <div className={Styles.DropdownHeader}>{title}</div>
-
         <span
           className={` ${isOpen ? "fa fa-angle-up" : "fa fa-angle-down"}`}
           style={{ fontSize: "20px" }}
@@ -197,20 +186,27 @@ const MobileDropdown: React.FC<{
       </div>
       {isOpen && (
         <div className={Styles.DropdownList}>
-          {contentDataSelect.map((item, index) => (
-            <div key={index}>
-              <h3>{item.Heading}</h3>
-              <div>
-                <ul>
-                  {item.items.map((menuItem, innerIndex) => (
-                    <li key={innerIndex} className={Styles.ListMobile}>
-                      <a href={menuItem.link}>{menuItem.title}</a>
-                    </li>
-                  ))}
-                </ul>
+          {dataArray.map(
+            (
+              item,
+              index // Mapping over dataArray
+            ) => (
+              <div key={index}>
+                <h3>{item.Heading}</h3>
+                <div>
+                  <ul>
+                    {item.items.map(
+                      (menuItem: MenuItem, innerIndex: number) => (
+                        <li key={innerIndex} className={Styles.ListMobile}>
+                          <a href={menuItem.link}>{menuItem.title}</a>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       )}
     </div>
