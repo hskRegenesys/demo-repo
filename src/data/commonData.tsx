@@ -138,8 +138,129 @@ const Data = {
         "Online Data Science Course: Flexible Learning | Digital Regenesys",
 
       ///===============================DM============================
+      // "digital-marketing": "Digital Marketing: Drive Your Business Forward | Digital Regenesys",
       "what-is-digital-marketing":
         "What is Digital Marketing? Understand the Basics | Digital Regenesys",
+      "digital-marketing-jobs":
+        "Digital Marketing Jobs: Explore Opportunities | Digital Regenesys",
+      "digital-marketing-salary":
+        "Digital Marketing Salary: Lucrative Career Option | Digital Regenesys",
+      "digital-marketer":
+        "Digital Marketer: Master of Online Engagement | Digital Regenesys",
+      "digital-marketing-course":
+        "Digital Marketing Course: Enhance Your Skills | Digital Regenesys",
+      "digital-marketing-strategy":
+        "Digital Marketing Strategy: Blueprint for Success | Digital Regenesys",
+      "digital-marketing-certificate":
+        "Digital Marketing Certificate: Validate Expertise | Digital Regenesys",
+      "google-digital-marketing-certification":
+        "Google Digital Marketing Certification | Digital Regenesys",
+      "digital-marketing-courses":
+        "Digital Marketing Courses: Choose Your Path | Digital Regenesys",
+      "digital-marketing-near-me":
+        "Digital Marketing Near Me: Find Local Experts | Digital Regenesys",
+      "digital-marketing-specialist":
+        "Digital Marketing Specialist: Drive Success | Digital Regenesys",
+      "digital-marketing-certification":
+        "Digital Marketing Certification with Digital Regenesys",
+      "digital-marketing-degree":
+        "Digital Marketing Degree: Ignite Your Career | Digital Regenesys",
+      "digital-marketing-tools":
+        "Digital Marketing Tools: Amplify Your Strategy | Digital Regenesys",
+      "digital-marketing-training":
+        "Digital Marketing Training: Master the Essentials | Digital Regenesys",
+      "digital-marketing-certificates":
+        "Digital Marketing Certificates | Digital Regenesys",
+      "digital-marketing-institute":
+        "Digital Marketing Institute: Your Path to Success | Digital Regenesys",
+      "digital-marketing-strategies":
+        "Digital Marketing Strategies: Boost Your Business | Digital Regenesys",
+      "digital-marketing-course-online":
+        "Digital Marketing Course Online: Learn Anywhere | Digital Regenesys",
+      "digital-marketing-definition":
+        "Digital Marketing Definition: Understand the Basics | Digital Regenesys",
+      "digital-marketing-examples":
+        "Digital Marketing Examples: Inspire Your Campaigns | Digital Regenesys",
+      "digital-marketing-meaning":
+        "Digital Marketing Meaning: Unveiling Significance | Digital Regenesys",
+      "digital-marketing-trends":
+        "Digital Marketing Trends: Stay Ahead of the Curve | Digital Regenesys",
+      "learn-digital-marketing":
+        "Learn Digital Marketing: Master Your Skills | Digital Regenesys",
+      "types-of-digital-marketing":
+        "Types of Digital Marketing: Exploring Strategies | Digital Regenesys",
+      "digital-marketer-salary":
+        "Digital Marketer Salary: Compensation Insights | Digital Regenesys",
+      "digital-marketing-classes":
+        "Digital Marketing Classes: Enhance Your Skills | Digital Regenesys",
+      "digital-marketing-online-courses":
+        "Digital Marketing Online Courses: Flexible Learning | Digital Regenesys",
+      "online-digital-marketing-courses":
+        "Online Digital Marketing Courses: Learn Anytime | Digital Regenesys",
+      "what-is-a-digital-marketer":
+        "What is a Digital Marketer?: Understanding the Role | Digital Regenesys",
+      "digital-marketing-courses-online":
+        "Digital Marketing Courses Online | Digital Regenesys",
+      "google-digital-marketing-course":
+        "Google Digital Marketing Course: Get Certified | Digital Regenesys",
+      "how-to-become-a-digital-marketer":
+        "How to Become a Digital Marketer: Guidance | Digital Regenesys",
+      "how-to-do-digital-marketing":
+        "How to Do Digital Marketing: Master the Basics | Digital Regenesys",
+      "how-to-start-digital-marketing":
+        "How to Start Digital Marketing: Beginner's Guide | Digital Regenesys",
+      "online-digital-marketing":
+        "Online Digital Marketing: Reach Your Audience | Digital Regenesys",
+      "digital-marketing-blogs":
+        "Digital Marketing Blogs: Stay Informed | Digital Regenesys",
+      "digital-marketing-careers":
+        "Digital Marketing Careers: Explore Opportunities | Digital Regenesys",
+      "digital-marketing-certificate-online":
+        "Digital Marketing Certificate Online: Earn Credential | Digital Regenesys",
+      "digital-marketing-certifications":
+        "Digital Marketing Certifications: Validate Expertise | Digital Regenesys",
+      "fundamentals-of-digital-marketing":
+        "Fundamentals of Digital Marketing: Essential Guide | Digital Regenesys",
+      "online-digital-marketing-course":
+        "Online Digital Marketing Course: Learn Anywhere | Digital Regenesys",
+      "what-does-a-digital-marketer-do":
+        "What Does a Digital Marketer Do? | Digital Regenesys",
+      "what's-digital-marketing":
+        "What's Digital Marketing?: Explained | Digital Regenesys",
+      "best-digital-marketing-services":
+        "Best Digital Marketing Services: Grow Business | Digital Regenesys",
+      "certificate-in-digital-marketing":
+        "Certificate in Digital Marketing: Enhance Skills | Digital Regenesys",
+      "digital-marketing-platforms":
+        "Digital Marketing Platforms: Amplify Your Reach | Digital Regenesys",
+      "digital-marketing-tips":
+        "Digital Marketing Tips: Enhance Your Strategy | Digital Regenesys",
+      "masters-in-digital-marketing":
+        "Masters in Digital Marketing: Advance Your Career | Digital Regenesys",
+      "what-is-a-digital-marketing":
+        "What is a Digital Marketing?: Unveiling Concept | Digital Regenesys",
+      "best-digital-marketing-courses":
+        "Best Digital Marketing Courses: Top Picks | Digital Regenesys",
+      "definition-of-digital-marketing":
+        "Definition of Digital Marketing: Explained | Digital Regenesys",
+      "digital-marketing-degree-online":
+        "Digital Marketing Degree Online: Flexible Learning | Digital Regenesys",
+      "digital-marketing-degrees":
+        "Digital Marketing Degrees: Advance Your Career | Digital Regenesys",
+      "digital-marketing-experts":
+        "Digital Marketing Experts: Industry Leaders | Digital Regenesys",
+      "digital-marketing-online":
+        "Digital Marketing Online: Learn Anywhere, Anytime | Digital Regenesys",
+      "examples-of-digital-marketing":
+        "Examples of Digital Marketing: Inspire Strategy | Digital Regenesys",
+      "how-to-learn-digital-marketing":
+        "How to Learn Digital Marketing: Expert Tips | Digital Regenesys",
+      "future-of-digital-marketing":
+        "Future of Digital Marketing: Trends & Insights | Digital Regenesys",
+      "importance-of-digital-marketing":
+        "Importance of Digital Marketing: Drive Business | Digital Regenesys",
+      "why-is-digital-marketing-important":
+        "Why is Digital Marketing Important?: Key Insights | Digital Regenesys",
     },
     keywords: {
       home: `
@@ -428,7 +549,128 @@ const Data = {
         "data science course, data science courses, courses in data science, course for data science, data science online courses, data science course online, courses data science, online data science courses, best data science courses, python data science course, best online data science courses",
 
       ///===============================DM============================
+      // "digital-marketing": "",
       "what-is-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-jobs":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-salary":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketer":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-course":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-strategy":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-certificate":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "google-digital-marketing-certification":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-courses":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-near-me":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-specialist":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-certification":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-degree":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-tools":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-training":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-certificates":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-institute":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-strategies":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-course-online":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-definition":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-examples":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-meaning":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-trends":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "learn-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "types-of-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketer-salary":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-classes":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-online-courses":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "online-digital-marketing-courses":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "what-is-a-digital-marketer":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-courses-online":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "google-digital-marketing-course":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "how-to-become-a-digital-marketer":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "how-to-do-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "how-to-start-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "online-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-blogs":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-careers":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-certificate-online":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-certifications":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "fundamentals-of-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "online-digital-marketing-course":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "what-does-a-digital-marketer-do":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "what's-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "best-digital-marketing-services":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "certificate-in-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-platforms":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-tips":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "masters-in-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "what-is-a-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "best-digital-marketing-courses":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "definition-of-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-degree-online":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-degrees":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-experts":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "digital-marketing-online":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "examples-of-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "how-to-learn-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "future-of-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "importance-of-digital-marketing":
+        "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+      "why-is-digital-marketing-important":
         "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
     },
 
@@ -571,8 +813,130 @@ const Data = {
       "online-data-science-course":
         "Online Data Science Course: Flexible learning for data science enthusiasts. Enroll in our online course to master data science skills. Join Digital Regenesys now!",
       ///===============================DM============================
+      // "digital-marketing":
+      //   "Digital Marketing: Discover the power of digital marketing and propel your business to new heights. Learn about strategies, tools, and tactics to boost online presence.",
       "what-is-digital-marketing":
         "What is Digital Marketing: Curious about digital marketing? Learn what it entails, its importance, and how it can revolutionize your business. Get started today.",
+      "digital-marketing-jobs":
+        "Digital Marketing Jobs: Browse through exciting digital marketing job opportunities. Find your dream role in the dynamic world of digital marketing. Apply now!",
+      "digital-marketing-salary":
+        "Digital Marketing Salary: Unlock the earning potential of a career in digital marketing. Discover competitive salaries & lucrative opportunities in this thriving industry.",
+      "digital-marketer":
+        "Digital Marketer: Become a digital marketing expert and excel in online engagement. Join the ranks of skilled digital marketers and make an impact in the digital realm.",
+      "digital-marketing-course":
+        "Digital Marketing Course: Elevate your digital marketing skills with our comprehensive course. Gain practical knowledge & hands-on experience. Enroll now.",
+      "digital-marketing-strategy":
+        "Digital Marketing Strategy: Craft a winning digital marketing strategy for your business. Learn proven tactics & techniques to drive growth & achieve your goals.",
+      "digital-marketing-certificate":
+        "Digital Marketing Certificate: Earn a digital marketing certificate to validate your expertise. Stand out in the competitive job market & showcase your skills. Get certified.",
+      "google-digital-marketing-certification":
+        "Google Digital Marketing Certification: Get certified by Google in digital marketing. Enhance your credibility & get new career opportunities with Google's certification.",
+      "digital-marketing-courses":
+        "Digital Marketing Courses: Explore a variety of digital marketing courses tailored to your needs. From beginner to advanced levels, find the perfect course to boost your career.",
+      "digital-marketing-near-me":
+        "Digital Marketing Near Me: Discover top-rated digital marketing services near you. Connect with local experts to boost your online presence and grow your business.",
+      "digital-marketing-specialist":
+        "Digital Marketing Specialist: Become a digital marketing specialist to elevate your brand. Leverage expertise in SEO, PPC, and social media to achieve business goals.",
+      "digital-marketing-certification":
+        "Digital Marketing Certification: Earn a digital marketing certification to validate your skills. Boost your career prospects & stand out in the competitive job market.",
+      "digital-marketing-degree":
+        "Digital Marketing Degree: Pursue a digital marketing degree and unlock endless career opportunities. Gain in-depth knowledge and hands-on experience in digital marketing.",
+      "digital-marketing-tools":
+        "Digital Marketing Tools: Explore essential digital marketing tools to amplify your strategy. From analytics to automation, discover the tools that streamline your marketing efforts.",
+      "digital-marketing-training":
+        "Digital Marketing Training: Master the essentials of digital marketing with expert training. Gain practical skills & knowledge to excel in today's competitive landscape.",
+      "digital-marketing-certificates":
+        "Digital Marketing Certificates: Earn digital marketing certificates to enhance your credentials. Validate your expertise in the dynamic field of digital marketing. Join Now!",
+      "digital-marketing-institute":
+        "Digital Marketing Institute: Join a leading digital marketing institute and chart your path to success. Gain industry-relevant skills, certifications to thrive in the digital world.",
+      "digital-marketing-strategies":
+        "Digital Marketing Strategies: Discover effective digital marketing strategies to elevate your business. From SEO to social media, unlock tactics for online success.",
+      "digital-marketing-course-online":
+        "Digital Marketing Course Online: Enroll in our online digital marketing course. Gain essential skills and knowledge from industry experts. Start learning today!",
+      "digital-marketing-definition":
+        "Digital Marketing Definition: What is digital marketing? Explore its definition, importance, and impact on modern businesses. Get acquainted with digital marketing essentials.",
+      "digital-marketing-examples":
+        "Digital Marketing Examples: Explore inspiring digital marketing examples. Learn from successful campaigns and apply strategies to enhance your brand's online presence.",
+      "digital-marketing-meaning":
+        "Digital Marketing Meaning: Dive into the meaning of digital marketing. Discover its significance in today's digital landscape and its role in driving business growth.",
+      "digital-marketing-trends":
+        "Digital Marketing Trends: Stay updated on the latest digital marketing trends. Explore emerging technologies and strategies to stay ahead in the competitive market.",
+      "learn-digital-marketing":
+        "Learn Digital Marketing: Start your journey to mastering digital marketing. Access comprehensive resources and courses to become proficient in digital marketing.",
+      "types-of-digital-marketing":
+        "Types of Digital Marketing: Explore different types of digital marketing strategies. From SEO to email marketing, discover tactics to reach your target audience effectively.",
+      "digital-marketer-salary":
+        "Digital Marketer Salary: Discover the average digital marketer salary. Gain insights into compensation trends and opportunities in the digital marketing field.",
+      "digital-marketing-classes":
+        "Digital Marketing Classes: Join interactive digital marketing classes to enhance your skills. Learn from industry experts and gain practical knowledge to excel in digital marketing.",
+      "digital-marketing-online-courses":
+        "Digital Marketing Online Courses: Enroll in our flexible digital marketing online courses. Access high-quality content and expert guidance to advance your digital marketing career.",
+      "online-digital-marketing-courses":
+        "Online Digital Marketing Courses: Access our comprehensive online digital marketing courses. Learn essential skills and strategies to excel in the digital marketing landscape.",
+      "what-is-a-digital-marketer":
+        "What is a Digital Marketer: Unveil the role of a digital marketer. Explore responsibilities, skills, and career opportunities in this dynamic field.",
+      "digital-marketing-courses-online":
+        "Digital Marketing Courses Online: Advance your career with our online digital marketing courses. Gain practical skills and certifications to succeed in the digital marketing industry.",
+      "google-digital-marketing-course":
+        "Google Digital Marketing Course: Get certified with Google's digital marketing course. Learn from industry experts and gain recognition with Google's prestigious certification.",
+      "how-to-become-a-digital-marketer":
+        "How to Become a Digital Marketer: Learn how to become a digital marketer with our comprehensive guide. Discover essential skills, education paths, and career opportunities.",
+      "how-to-do-digital-marketing":
+        "How to Do Digital Marketing: Master the basics of digital marketing with our step-by-step guide. Learn essential strategies and tactics to kickstart your digital marketing journey.",
+      "how-to-start-digital-marketing":
+        "How to Start Digital Marketing: Ready to start your digital marketing journey? Explore our beginner's guide and learn how to launch successful digital marketing campaigns.",
+      "online-digital-marketing":
+        "Online Digital Marketing: Explore the power of online digital marketing. Reach your target audience effectively with strategic online marketing tactics. Start Now!",
+      "digital-marketing-blogs":
+        "Digital Marketing Blogs: Stay informed with the latest digital marketing trends and insights. Explore our informative blogs covering SEO, social media, and more.",
+      "digital-marketing-careers":
+        "Digital Marketing Careers: Explore exciting digital marketing career opportunities. Learn about roles, skills, and industry trends to kickstart your career in digital marketing.",
+      "digital-marketing-certificate-online":
+        "Digital Marketing Certificate Online: Earn your digital marketing certificate online. Enhance your skills and advance your career with our flexible online certification program. Enroll now!",
+      "digital-marketing-certifications":
+        "Digital Marketing Certifications: Validate your expertise with digital marketing certifications. Stand out in the competitive job market and advance your career in digital marketing.",
+      "fundamentals-of-digital-marketing":
+        "Fundamentals of Digital Marketing: Master the fundamentals of digital marketing with our essential guide. Learn key concepts to build a strong foundation in digital marketing.",
+      "online-digital-marketing-course":
+        "Online Digital Marketing Course: Enroll in our online digital marketing course. Learn essential skills and strategies from industry experts. Start advancing your digital marketing career today!",
+      "what-does-a-digital-marketer-do":
+        "What Does a Digital Marketer Do: Discover the roles and responsibilities of a digital marketer. Explore key skills, tasks, and career paths in the dynamic field of digital marketing.",
+      "what's-digital-marketing":
+        "What's Digital Marketing: Curious about digital marketing? Get it explained. Explore the core concepts, strategies, and importance of digital marketing in today's digital landscape.",
+      "best-digital-marketing-services":
+        "Best Digital Marketing Services: Grow your business with the best digital marketing services. From SEO to social media, discover effective strategies to boost your online presence.",
+      "certificate-in-digital-marketing":
+        "Certificate in Digital Marketing: Enhance your skills with a certificate in digital marketing. Gain practical knowledge and industry-recognized credentials to excel in digital marketing.",
+      "digital-marketing-platforms":
+        "Digital Marketing Platforms: Amplify your reach with digital marketing platforms. Explore tools and technologies to optimize your marketing campaigns and maximize your impact.",
+      "digital-marketing-tips":
+        "Digital Marketing Tips: Enhance your digital marketing strategy with our expert tips. Learn best practices, tactics, and techniques to achieve success in digital marketing.",
+      "masters-in-digital-marketing":
+        "Masters in Digital Marketing: Advance your career with a master's in digital marketing. Gain advanced skills and knowledge to lead successful digital marketing campaigns.",
+      "what-is-a-digital-marketing":
+        "What is a Digital Marketing: Unveil the concept of digital marketing. Explore its definition, scope, and significance in today's digital age.",
+      "best-digital-marketing-courses":
+        "Best Digital Marketing Courses: Discover the best digital marketing courses handpicked for you. From beginner to advanced levels, find the perfect course.",
+      "definition-of-digital-marketing":
+        "Definition of Digital Marketing: Explore the definition of digital marketing and its core concepts. Understand its significance in today's digital landscape.",
+      "digital-marketing-degree-online":
+        "Digital Marketing Degree Online: Pursue your digital marketing degree online. Access flexible learning options & gain industry-relevant skills to excel in the digital marketing field.",
+      "digital-marketing-degrees":
+        "Digital Marketing Degrees: Advance your career with digital marketing degrees. Gain specialized knowledge and credentials to unlock new opportunities in the digital marketing industry.",
+      "digital-marketing-experts":
+        "Digital Marketing Experts: Learn from industry leaders & digital marketing experts. Gain insights, tips & strategies to excel in the ever-evolving world of digital marketing.",
+      "digital-marketing-online":
+        "Digital Marketing Online: Access digital marketing education online. Learn essential skills and strategies to succeed in the digital marketing landscape from your home.",
+      "examples-of-digital-marketing":
+        "Examples of Digital Marketing: Get inspired by real-life examples of digital marketing campaigns. Learn from successful strategies & apply to elevate your digital marketing efforts.",
+      "how-to-learn-digital-marketing":
+        "How to Learn Digital Marketing: Discover expert tips on how to learn digital marketing effectively. From online courses explore various learning methods to master digital marketing.",
+      "future-of-digital-marketing":
+        "Future of Digital Marketing: Stay ahead of the curve with insights into the future of digital marketing. Explore emerging trends & strategies shaping the future of online marketing.",
+      "importance-of-digital-marketing":
+        "Importance of Digital Marketing: Understand the importance of digital marketing in today's competitive landscape. Discover how digital marketing can drive business growth. Enrol Now!",
+      "why-is-digital-marketing-important":
+        "Why is Digital Marketing Important: Gain key insights into why digital marketing is important for businesses. Explore its impact on brand visibility & customer engagement.",
     },
     canonicalUrlData: {
       home: "",
@@ -651,7 +1015,72 @@ const Data = {
       "online-course-in-data-science": "/online-course-in-data-science",
       "online-data-science-course": "/online-data-science-course",
       ///===============================DM============================
+
+      // "digital-marketing": "/digital-marketing",
       "what-is-digital-marketing": "/what-is-digital-marketing",
+      "digital-marketing-jobs": "/digital-marketing-jobs",
+      "digital-marketing-salary": "/digital-marketing-salary",
+      "digital-marketer": "/digital-marketer",
+      "digital-marketing-course": "/digital-marketing-course",
+      "digital-marketing-strategy": "/digital-marketing-strategy",
+      "digital-marketing-certificate": "/digital-marketing-certificate",
+      "google-digital-marketing-certification":
+        "/google-digital-marketing-certification",
+      "digital-marketing-courses": "/digital-marketing-courses",
+      "digital-marketing-near-me": "/digital-marketing-near-me",
+      "digital-marketing-specialist": "/digital-marketing-specialist",
+      "digital-marketing-certification": "/digital-marketing-certification",
+      "digital-marketing-degree": "/digital-marketing-degree",
+      "digital-marketing-tools": "/digital-marketing-tools",
+      "digital-marketing-training": "/digital-marketing-training",
+      "digital-marketing-certificates": "/digital-marketing-certificates",
+      "digital-marketing-institute": "/digital-marketing-institute",
+      "digital-marketing-strategies": "/digital-marketing-strategies",
+      "digital-marketing-course-online": "/digital-marketing-course-online",
+      "digital-marketing-definition": "/digital-marketing-definition",
+      "digital-marketing-examples": "/digital-marketing-examples",
+      "digital-marketing-meaning": "/digital-marketing-meaning",
+      "digital-marketing-trends": "/digital-marketing-trends",
+      "learn-digital-marketing": "/learn-digital-marketing",
+      "types-of-digital-marketing": "/types-of-digital-marketing",
+      "digital-marketer-salary": "/digital-marketer-salary",
+      "digital-marketing-classes": "/digital-marketing-classes",
+      "digital-marketing-online-courses": "/digital-marketing-online-courses",
+      "online-digital-marketing-courses": "/online-digital-marketing-courses",
+      "what-is-a-digital-marketer": "/what-is-a-digital-marketer",
+      "digital-marketing-courses-online": "/digital-marketing-courses-online",
+      "google-digital-marketing-course": "/google-digital-marketing-course",
+      "how-to-become-a-digital-marketer": "/how-to-become-a-digital-marketer",
+      "how-to-do-digital-marketing": "/how-to-do-digital-marketing",
+      "how-to-start-digital-marketing": "/how-to-start-digital-marketing",
+      "online-digital-marketing": "/online-digital-marketing",
+      "digital-marketing-blogs": "/digital-marketing-blogs",
+      "digital-marketing-careers": "/digital-marketing-careers",
+      "digital-marketing-certificate-online":
+        "/digital-marketing-certificate-online",
+      "digital-marketing-certifications": "/digital-marketing-certifications",
+      "fundamentals-of-digital-marketing": "/fundamentals-of-digital-marketing",
+      "online-digital-marketing-course": "/online-digital-marketing-course",
+      "what-does-a-digital-marketer-do": "/what-does-a-digital-marketer-do",
+      "what's-digital-marketing": "/what's-digital-marketing",
+      "best-digital-marketing-services": "/best-digital-marketing-services",
+      "certificate-in-digital-marketing": "/certificate-in-digital-marketing",
+      "digital-marketing-platforms": "/digital-marketing-platforms",
+      "digital-marketing-tips": "/digital-marketing-tips",
+      "masters-in-digital-marketing": "/masters-in-digital-marketing",
+      "what-is-a-digital-marketing": "/what-is-a-digital-marketing",
+      "best-digital-marketing-courses": "/best-digital-marketing-courses",
+      "definition-of-digital-marketing": "/definition-of-digital-marketing",
+      "digital-marketing-degree-online": "/digital-marketing-degree-online",
+      "digital-marketing-degrees": "/digital-marketing-degrees",
+      "digital-marketing-experts": "/digital-marketing-experts",
+      "digital-marketing-online": "/digital-marketing-online",
+      "examples-of-digital-marketing": "/examples-of-digital-marketing",
+      "how-to-learn-digital-marketing": "/how-to-learn-digital-marketing",
+      "future-of-digital-marketing": "/future-of-digital-marketing",
+      "importance-of-digital-marketing": "/importance-of-digital-marketing",
+      "why-is-digital-marketing-important":
+        "/why-is-digital-marketing-important",
     },
   },
 };

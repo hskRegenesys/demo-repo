@@ -27,12 +27,22 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
     // Return null if data is not provided or cards array is empty
     return null;
   }
+
+  const addBottomValue = data.cards.length <= 3 ? "0px" : "60px";
+  let paddingTopValue = "60px"; // Default value
+
+  // Check if window is defined (i.e., if we're on the client-side)
+  if (typeof window !== "undefined") {
+    // Access window.innerWidth only on the client-side
+    paddingTopValue = window.innerWidth <= 760 ? addBottomValue : "60px";
+  }
   return (
     <div className={Styles.blogSectionContainer}>
       <h2 className={Styles.blogSectionTitle}>{data.BlogSectionTitle}</h2>
 
       <div className={Styles.blogCardsContainer}>
         <Swiper
+          style={{ paddingBottom: paddingTopValue }}
           className={Styles.swiperStyle}
           spaceBetween={30}
           slidesPerView={3}
@@ -44,7 +54,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             720: {
               slidesPerView: 2,
             },
-            920: {
+            1260: {
               slidesPerView: 3,
             },
           }}
@@ -59,8 +69,10 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                 />
 
                 <div className={Styles.blogContent}>
-                  <h3 className={Styles.blogQuestion}>{card.blogQuestion}</h3>
-                  <h2 className={Styles.blogText}>{card.blogText}</h2>
+                  <div>
+                    <h3 className={Styles.blogQuestion}>{card.blogQuestion}</h3>
+                    <h2 className={Styles.blogText}>{card.blogText}</h2>
+                  </div>
                   <div className={Styles.knowMore}>
                     <a href={card.blogLink} className={Styles.knowMoreLink}>
                       Know More{" "}

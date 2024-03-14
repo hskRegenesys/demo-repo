@@ -684,45 +684,36 @@ const MainCoursesDynimicData = {
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
-    // BlogSectionData: {
-    //   BlogSectionTitle: "For Your Research & Information",
-    //   cards: [
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-1.webp",
-    //       blogQuestion:
-    //         "What Are The Key Features Of A Data Science Course Suitable For Beginners?",
-    //       blogText:
-    //         "Data has become a vital component of innovation and development in the current digital era.",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-2.webp",
-    //       blogQuestion: "What is the Data Science Course Salary?",
-    //       blogText:
-    //         "Data science has emerged as a dynamic and high-demand field, blending statistical analysis, ",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
-    //     },
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-3.webp",
-    //       blogQuestion:
-    //         "What makes data science courses suitable for beginners?",
-    //       blogText:
-    //         "In today’s data-driven world, the field of data science has emerged as a cornerstone of",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-4.webp",
-    //       blogQuestion: "What Are The Advantages Of A Data Science Course?",
-    //       blogText:
-    //         "In the era of big data, where information flows ceaselessly from diverse sources, the role of  ",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-advantages-of-a-data-science-course",
-    //     },
-    //   ],
-    // },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg: "/assets/images/HomeNew/blog/dm-blog-1.webp",
+          blogQuestion: "What is a digital marketing course?",
+          blogText:
+            "Are you looking to advance your skills in the fast-paced digital marketing world, and to take your career to the next level? ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-is-a-digital-marketing-course",
+        },
+        {
+          blogImg: "/assets/images/HomeNew/blog/dm-blog-2.webp",
+          blogQuestion:
+            "Where Do You Find The Best Digital Marketing Courses For Beginners?",
+          blogText:
+            "In the dynamic landscape of the digital era, where online presence is paramount, understanding the intricacies of digital marketing has become a valuable skill.  ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/the-best-digital-marketing-courses-for-beginners",
+        },
+        {
+          blogImg: "/assets/images/HomeNew/blog/dm-blog-3.webp",
+          blogQuestion: "Upskill and Upgrade in Your Career Journey",
+          blogText:
+            "In today’s fast-paced and ever-changing job market, staying on top of your industry’s latest trends and skills is essential. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/upskill-and-upgrade-in-your-career-journey",
+        },
+      ],
+    },
     faqSections: {
       arrowIcon: "/assets/images/HomeNew/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
@@ -734,7 +725,7 @@ const MainCoursesDynimicData = {
             {
               question: "What is Digital Marketing?",
               answer:
-                "Digital marketing refers to the application of digital channels, platforms, and technologies to promote and advertise products, services, or brands to a target audience.",
+                "In today’s fast-paced and ever-changing job market, staying on top of your industry’s latest trends and skills is essential. Upskilling and career upgrades have become crucial tools for unlocking your full potential and achieving career success. ",
             },
             {
               question: "What is the goal of Digital Marketing?",
