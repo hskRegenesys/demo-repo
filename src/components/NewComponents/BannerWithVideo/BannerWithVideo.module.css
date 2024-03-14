@@ -93,8 +93,8 @@
   gap: 16px;
   margin-bottom: 24px;
 }
-.point1,
-.point2 {
+.topTextBestsale,
+.topTextMessage {
   display: flex;
   height: 32px;
   padding: 8px 20px;
@@ -111,11 +111,11 @@
   line-height: 20px;
   letter-spacing: 0.12px;
 }
-.point1 {
+.topTextBestsale {
   background: var(--Light-Text-Green, #008554);
   color: var(--Light-Text-White, #fff);
 }
-.point2 {
+.topTextMessage {
   background: var(--Light-Surface-Success, #f0fdf4);
   color: var(--Light-Text-Green, #008554);
 }
@@ -313,10 +313,11 @@
   .topSection {
     gap: 8px;
   }
-  .point1,
-  .point2 {
+  .topTextBestsale,
+  .topTextMessage {
     padding: 4px 8px;
     font-size: 10px;
+    height: 20px;
   }
 
   .courseHeading {
@@ -352,7 +353,7 @@
   }
 }
 
-.usp-section-container {
+.uspSectionContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -360,25 +361,25 @@
   margin-bottom: 40px;
 }
 
-.usp-card-1,
-.usp-card-2,
-.usp-card-3 {
+.uspCardCountry,
+.uspCardCount,
+.uspCardUpskill {
   text-align: center;
   width: 100%;
 }
 
-.usp-card-2 {
+.uspCardCount {
   max-width: 130px;
 }
 
-.usp-card-3 {
+.uspCardUpskill {
   max-width: 140px;
 }
-.usp-card-1 {
+.uspCardCountry {
   max-width: 240px;
 }
 
-.enrollment-count {
+.uspEnrollmentCount {
   color: #008554;
   text-align: center;
   font-family: Montserrat-Bold;
@@ -390,7 +391,7 @@
   margin-right: 5px;
   margin-bottom: 0px;
 }
-.enrollment-container {
+.enrollmentContainer {
   display: flex;
   align-items: center;
 }
@@ -400,7 +401,7 @@
   margin-bottom: 12px;
 }
 
-.card-text {
+.CardText {
   color: #2b3340;
   text-align: center;
   font-size: 14px;
@@ -412,7 +413,7 @@
   margin-bottom: 0px;
 }
 @media (max-width: 920px) {
-  .usp-section-container {
+  .uspSectionContainer {
     display: none;
   }
 }

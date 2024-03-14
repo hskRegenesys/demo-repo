@@ -11,9 +11,9 @@ import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import _ from "lodash";
 
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import SidemapComponent from "@/components/NewComponents/sidemap/SideMap";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
+import SitemapComponent from "@/components/NewComponents/sidemap/SiteMap";
 
 const Sidemap = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -25,14 +25,6 @@ const Sidemap = () => {
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
-
-  useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 4000);
-
-    return () => clearTimeout(timeoutModal);
-  }, []);
 
   return (
     <Layout pageTitle="home" context="multiple-page">
@@ -47,7 +39,7 @@ const Sidemap = () => {
       <HeaderOne />
       <MobileMenu />
       <SearchPopup />
-      <SidemapComponent />
+      <SitemapComponent />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

@@ -14,26 +14,26 @@ interface BannerComponentProps {
 type BannerCourseData = {
   BannerImgDesktop: string;
   coursePageName: string;
-  topSectionPoint1: string;
-  topSectionPoint2: string;
+  BestSaleText: string;
+  topTextMessage: string;
   contentText: string;
   bannerVideoLink?: string;
   BrochureIcon?: string;
   BannerImgAlt: string;
   UspSectionData: {
-    part1: {
-      card1text: string;
-      iconImage1: string;
+    uspLocationCard: {
+      uspLocationText: string;
+      usplocationIcon: string;
     };
-    part2: {
-      card2text: string;
-      enrollmentCount: string;
-      iconImage2: string;
+    uspEnrollmentCard: {
+      uspEnrollmentText: string;
+      uspEnrollmentCount: string;
+      StudentEnrolIcon: string;
       duration: string;
     };
-    part3: {
-      card3text: string;
-      iconImage3: string;
+    uspUpskillCard: {
+      uspUpskillText: string;
+      uspBookIcon: string;
     };
   };
 };
@@ -47,17 +47,17 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
     coursePageName,
     BannerImgAlt,
     contentText,
-    topSectionPoint1,
-    topSectionPoint2,
+    BestSaleText,
+    topTextMessage,
     BrochureIcon,
-    UspSectionData: { part1, part2, part3 },
+    UspSectionData: { uspLocationCard, uspEnrollmentCard, uspUpskillCard },
   } = data;
 
   const [count, setCount] = useState("0");
 
   useEffect(() => {
     let start = 0;
-    const end = parseInt(part2.enrollmentCount.substring(0, 3));
+    const end = parseInt(uspEnrollmentCard.uspEnrollmentCount.substring(0, 3));
 
     if (start === end) return;
 
@@ -66,12 +66,14 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
 
     let timer = setInterval(() => {
       start += 1;
-      setCount(String(start) + part2.enrollmentCount.substring(3));
+      setCount(
+        String(start) + uspEnrollmentCard.uspEnrollmentCount.substring(3)
+      );
       if (start === end) clearInterval(timer);
     }, incrementTime);
 
     return () => clearInterval(timer);
-  }, [part2.enrollmentCount]);
+  }, [uspEnrollmentCard.uspEnrollmentCount]);
 
   return (
     <div className={styles.bannerSection}>
@@ -88,36 +90,40 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
         <div className={styles.contentSection}>
           <div className={styles.card}>
             <div className={styles.topSection}>
-              {/* <span className={styles.point1}>{topSectionPoint1}</span> */}
-              <h2 className={styles.point2}>
-                {topSectionPoint1}{" "}
-                <span className={styles.pointInside}>{topSectionPoint2}</span>
+              {/* <span className={styles.topTextBestsale}>{BestSaleText}</span> */}
+              <h2 className={styles.topTextMessage}>
+                {BestSaleText}{" "}
+                <span className={styles.pointInside}>{topTextMessage}</span>
               </h2>
             </div>
             <h1 className={styles.courseHeading}>{pageName}</h1>
             <p className={styles.contentText}>{contentText}</p>
 
-            <div className={styles["usp-section-container"]}>
-              <div className={styles["usp-card-1"]}>
-                <img src={part1.iconImage1} alt="Icon 1" />
-                <p className={styles["card-text"]}>{part1.card1text}</p>
+            <div className={styles.uspSectionContainer}>
+              <div className={styles.uspCardCountry}>
+                <img src={uspLocationCard.usplocationIcon} alt="Icon 1" />
+                <p className={styles.CardText}>
+                  {uspLocationCard.uspLocationText}
+                </p>
               </div>
               <div
-                className={`${styles["usp-card-2"]} ${styles["enrollment-card"]}`}
+                className={`${styles.uspCardCount} ${styles.enrollmentCard}`}
               >
-                <img src={part2.iconImage2} alt="Icon 2" />
-                <div className={styles["enrollment-container"]}>
-                  <p className={styles["enrollment-count"]}>
-                    {count}{" "}
-                    <span className={styles["card-text"]}>
-                      {part2.card2text}
+                <img src={uspEnrollmentCard.StudentEnrolIcon} alt="Icon 2" />
+                <div className={styles.enrollmentContainer}>
+                  <p className={styles.uspEnrollmentCount}>
+                    {count}
+                    <span className={styles.CardText}>
+                      {uspEnrollmentCard.uspEnrollmentText}
                     </span>
                   </p>
                 </div>
               </div>
-              <div className={styles["usp-card-3"]}>
-                <img src={part3.iconImage3} alt="Icon 3" />
-                <p className={styles["card-text"]}>{part3.card3text}</p>
+              <div className={styles.uspCardUpskill}>
+                <img src={uspUpskillCard.uspBookIcon} alt="Icon 3" />
+                <p className={styles.CardText}>
+                  {uspUpskillCard.uspUpskillText}
+                </p>
               </div>
             </div>
 

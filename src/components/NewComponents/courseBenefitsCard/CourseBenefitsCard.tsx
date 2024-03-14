@@ -23,7 +23,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
 
   return (
     <div className={styles.courseBenefitsCardContainer}>
-      <h2 className={styles.Heding}>{courcename} Career Outcomes</h2>
+      <h2 className={styles.Heding}>{courcename}</h2>
       <h2 className={styles.subHeding}>{Heding}</h2>
       <div className={styles.cardsContainer}>
         {Card.map((card, index) => (
