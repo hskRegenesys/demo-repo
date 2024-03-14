@@ -111,7 +111,7 @@ const AllCourseGallery = () => {
       "DSCI",
       // "PDM",
       "FSD",
-      //"MD",
+      "MD",
       "DBA",
       "DSN",
       "AIN",
