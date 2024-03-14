@@ -26,14 +26,6 @@ const Sidemap = () => {
     setIsPopupVisible(false);
   };
 
-  useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 4000);
-
-    return () => clearTimeout(timeoutModal);
-  }, []);
-
   return (
     <Layout pageTitle="home" context="multiple-page">
       {isPopupVisible && (

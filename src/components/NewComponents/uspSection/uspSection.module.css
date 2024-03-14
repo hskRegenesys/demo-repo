@@ -1,20 +1,21 @@
-.usp-section-container {
+.uspSectionContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: white;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
-.usp-card {
+.uspCard {
   text-align: center;
   padding: 24px;
 }
 
-.enrollment-count {
+.uspEnrollmentCount {
   color: #008554;
   text-align: center;
   font-family: Montserrat-Bold;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
@@ -22,7 +23,7 @@
   margin-right: 5px;
   margin-bottom: 0px;
 }
-.enrollment-container {
+.enrollmentContainer {
   display: flex;
   align-items: center;
 }
@@ -32,10 +33,10 @@
   margin-bottom: 12px;
 }
 
-.card-text {
+.CardText {
   color: #2b3340;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
@@ -43,17 +44,8 @@
   font-family: Montserrat !important;
   margin-bottom: 0px;
 }
-@media (max-width: 947px) {
-  /* .enrollment-container {
-    display: block;
-    align-items: center;
-  } */
-  .usp-section-container {
+@media (max-width: 920px) {
+  .uspSectionContainer {
     display: none;
   }
 }
-/* @media (max-width: 768px) {
-  .usp-section-container {
-    display: none;
-  }
-} */
