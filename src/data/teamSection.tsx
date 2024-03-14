@@ -44,11 +44,11 @@ const teamSection = {
       name: "Full Stack Development",
       href: "/all-courses/full-stack-development",
     },
-    // {
-    //   id: 18,
-    //   name: "Management Advancement",
-    //   href: "/all-courses/management-advancement",
-    // },
+    {
+      id: 18,
+      name: "Management Advancement",
+      href: "/all-courses/management-advancement",
+    },
     // {
     //   id: 19,
     //   name: "product management",
