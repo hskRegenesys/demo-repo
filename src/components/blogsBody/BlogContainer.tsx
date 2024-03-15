@@ -3,7 +3,7 @@ import { LeftOutlined } from "@ant-design/icons";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
 import { wpService } from "src/services";
-import { IPostTypes, bannerImages } from "./dataTypes";
+import { IPostTypes } from "./dataTypes";
 import Link from "next/link";
 import RightSidePanel from "./RightSidePanel";
 import ApplyNow from "./ApplyNow";
@@ -81,8 +81,8 @@ const BlogContainer = ({
               role="button"
               className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
             >
-              {/* <LeftOutlined className="pe-2" /> */}
-              <LeftOutlined />
+              <LeftOutlined className="pe-2" />
+              {/* <LeftOutlined /> */}
               Back to list
             </p>
           </Link>
