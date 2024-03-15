@@ -434,7 +434,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/_Yfdbh_ktAU?autoplay=1&loop=1&playlist=_Yfdbh_ktAU",
+          "https://www.youtube.com/embed/FKksF9fkf5w?autoplay=1&loop=1&playlist=FKksF9fkf5w",
         title: "Management Advancement Programme",
         text: "Management Advancement Programme offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
         lists: [
