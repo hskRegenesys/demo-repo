@@ -1392,38 +1392,38 @@ const createReWrites = () => {
       source: "/digital-marketing-certificates",
       destination: "/all-courses-multiple/digital-marketing-certificates",
     },
-    // {
-    //   source: "/digital-marketing-institute",
-    //   destination: "/all-courses-multiple/digital-marketing-institute",
-    // },
-    // {
-    //   source: "/digital-marketing-strategies",
-    //   destination: "/all-courses-multiple/digital-marketing-strategies",
-    // },
-    // {
-    //   source: "/digital-marketing-course-online",
-    //   destination: "/all-courses-multiple/digital-marketing-course-online",
-    // },
-    // {
-    //   source: "/digital-marketing-definition",
-    //   destination: "/all-courses-multiple/digital-marketing-definition",
-    // },
-    // {
-    //   source: "/digital-marketing-examples",
-    //   destination: "/all-courses-multiple/digital-marketing-examples",
-    // },
-    // {
-    //   source: "/digital-marketing-meaning",
-    //   destination: "/all-courses-multiple/digital-marketing-meaning",
-    // },
-    // {
-    //   source: "/digital-marketing-trends",
-    //   destination: "/all-courses-multiple/digital-marketing-trends",
-    // },
-    // {
-    //   source: "/learn-digital-marketing",
-    //   destination: "/all-courses-multiple/learn-digital-marketing",
-    // },
+    {
+      source: "/digital-marketing-institute",
+      destination: "/all-courses-multiple/digital-marketing-institute",
+    },
+    {
+      source: "/digital-marketing-strategies",
+      destination: "/all-courses-multiple/digital-marketing-strategies",
+    },
+    {
+      source: "/digital-marketing-course-online",
+      destination: "/all-courses-multiple/digital-marketing-course-online",
+    },
+    {
+      source: "/digital-marketing-definition",
+      destination: "/all-courses-multiple/digital-marketing-definition",
+    },
+    {
+      source: "/digital-marketing-examples",
+      destination: "/all-courses-multiple/digital-marketing-examples",
+    },
+    {
+      source: "/digital-marketing-meaning",
+      destination: "/all-courses-multiple/digital-marketing-meaning",
+    },
+    {
+      source: "/digital-marketing-trends",
+      destination: "/all-courses-multiple/digital-marketing-trends",
+    },
+    {
+      source: "/learn-digital-marketing",
+      destination: "/all-courses-multiple/learn-digital-marketing",
+    },
     // {
     //   source: "/types-of-digital-marketing",
     //   destination: "/all-courses-multiple/types-of-digital-marketing",
@@ -1587,10 +1587,10 @@ const createReWrites = () => {
       destination: "/all-courses/project-management/28",
     },
 
-    // {
-    //   source: "/all-courses/management-advancement",
-    //   destination: "/all-courses/management-advancement/48",
-    // },
+    {
+      source: "/all-courses/management-advancement",
+      destination: "/all-courses/management-advancement/48",
+    },
     // {
     //   source: "/all-courses/product-management",
     //   destination: "/all-courses/product-management/49",
