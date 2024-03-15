@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// @ts-ignore
 import { LeftOutlined } from "@ant-design/icons";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
@@ -81,8 +82,11 @@ const BlogContainer = ({
               role="button"
               className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
             >
-              <LeftOutlined className="pe-2" />
-              {/* <LeftOutlined /> */}
+              <LeftOutlined
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+                className="pe-2"
+              />
               Back to list
             </p>
           </Link>
