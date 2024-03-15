@@ -40,13 +40,22 @@ const SearchBlog = ({ query }: { query: string }) => {
 
       <div className="container-fluid px-5">
         <Link href={`/blog/`} passHref>
-          <p
-            role="button"
-            className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
-          >
-            {/* <LeftOutlined className="pe-2" /> */}
-            Back to list
-          </p>
+          <div style={{ display: "flex" }}>
+            <span
+              className="fa fa-angle-left"
+              style={{
+                fontSize: "18px",
+                paddingRight: "10px",
+              }}
+            ></span>
+            <p
+              role="button"
+              className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
+            >
+              {/* <LeftOutlined className="pe-2" /> */}
+              Back to list
+            </p>
+          </div>
         </Link>
         <div className="row">
           <div className="col-12 col-lg-9">
