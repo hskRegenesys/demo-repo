@@ -883,16 +883,16 @@ const redirectURL = () => {
       destination: "/404",
       permanent: true,
     },
-    {
-      source: "/sitemap",
-      destination: "/404",
-      permanent: true,
-    },
     // {
-    //   source: "/site-map",
-    //   destination: "/sitemap",
+    //   source: "/sitemap",
+    //   destination: "/404",
     //   permanent: true,
     // },
+    {
+      source: "/site-map",
+      destination: "/sitemap",
+      permanent: true,
+    },
 
     // {
     //   source: "/all-courses-new/design-thinking-new",
