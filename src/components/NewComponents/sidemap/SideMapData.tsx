@@ -310,7 +310,7 @@ const Sidemapdata: Sidemapdata = {
     },
   },
 
-  "Digital Marakating": {
+  "Digital Maraketing": {
     SideHeading: "Digital Marketing",
     content: {
       Heading: "Digital Marketing",
