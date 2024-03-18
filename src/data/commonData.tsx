@@ -1082,6 +1082,29 @@ const Data = {
       "why-is-digital-marketing-important":
         "/why-is-digital-marketing-important",
     },
+    ogImg: {
+      home: "https://digitalregenesys.com/assets/images/background/DR-Website.png",
+      "cyber-security":
+        "https://www.digitalregenesys.com/assets/images/gallery/CSC.webp",
+      "digital-marketing":
+        "https://www.digitalregenesys.com/assets/images/gallery/DM.webp",
+      "project-management":
+        "https://www.digitalregenesys.com/assets/images/gallery/PM.webp",
+      "full-stack-development":
+        "https://www.digitalregenesys.com/assets/images/gallery/FSD.webp",
+      "data-and-business-analytics":
+        "https://www.digitalregenesys.com/assets/images/gallery/DBA.webp",
+      "design-thinking":
+        "https://www.digitalregenesys.com/assets/images/gallery/DTC.webp",
+      "data-science":
+        "https://www.digitalregenesys.com/assets/images/gallery/DSN.webp",
+      "artificial-intelligence":
+        "https://www.digitalregenesys.com/assets/images/gallery/AIN.webp",
+      "management-advancement":
+        "https://www.digitalregenesys.com/assets/images/gallery/MD.webp",
+      "product-management":
+        "https://www.digitalregenesys.com/assets/images/gallery/PDM.webp",
+    },
   },
 };
 
