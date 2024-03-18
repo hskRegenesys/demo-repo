@@ -132,20 +132,15 @@ const Layout = (props: any) => {
         {clonicalData && <meta property="og:url" content={clonicalData} />}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
-        {description && (
-          <meta property="og:description" content={description} />
-        )}
-        {ogImg && <meta property="og:image" content={ogImg} />}
-
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={ogImg} />
         {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content="app" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="digitalregenesys.com" />
-        {clonicalData && <meta property="twitter:url" content={clonicalData} />}
+        <meta property="twitter:url" content={clonicalData} />
         <meta name="twitter:title" content={title} />
-        {description && (
-          <meta name="twitter:description" content={description} />
-        )}
-        {ogImg && <meta name="twitter:image" content={ogImg} />}
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImg} />
 
         {/* <link
           rel="alternate"
