@@ -1020,7 +1020,6 @@
     <changefreq>Daily</changefreq>
     <priority>0.80</priority>
   </url>
- 
   <url>
     <loc>https://www.digitalregenesys.com/blog/why-is-a-data-science-short-course-a-practical-choice-for-skill-development</loc>
     <lastmod>2024-01-15</lastmod>
@@ -1029,6 +1028,12 @@
   </url>
   <url>
     <loc>https://www.digitalregenesys.com/blog/how-can-a-data-science-course-benefit-someone-with-no-prior-experience</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/why-is-the-placement-aspect-significant-in-the-context-of-a-data-science-course</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>Daily</changefreq>
     <priority>0.80</priority>
