@@ -412,38 +412,38 @@ const Sidemapdata: Sidemapdata = {
           link: "https://www.digitalregenesys.com/learn-digital-marketing",
         },
 
-        // {
-        //   title: "Types of Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/types-of-digital-marketing",
-        // },
-        // {
-        //   title: "Digital Marketer Salary",
-        //   link: "https://www.digitalregenesys.com/digital-marketer-salary",
-        // },
-        // {
-        //   title: "Digital Marketing Classes",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-classes",
-        // },
-        // {
-        //   title: "Digital Marketing Online Courses",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-online-courses",
-        // },
-        // {
-        //   title: "Online Digital Marketing Courses",
-        //   link: "https://www.digitalregenesys.com/online-digital-marketing-courses",
-        // },
-        // {
-        //   title: "What is a Digital Marketer",
-        //   link: "https://www.digitalregenesys.com/what-is-a-digital-marketer",
-        // },
-        // {
-        //   title: "Digital Marketing Courses Online",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-courses-online",
-        // },
-        // {
-        //   title: "Google Digital Marketing Course",
-        //   link: "https://www.digitalregenesys.com/google-digital-marketing-course",
-        // },
+        {
+          title: "Types of Digital Marketing",
+          link: "https://www.digitalregenesys.com/types-of-digital-marketing",
+        },
+        {
+          title: "Digital Marketer Salary",
+          link: "https://www.digitalregenesys.com/digital-marketer-salary",
+        },
+        {
+          title: "Digital Marketing Classes",
+          link: "https://www.digitalregenesys.com/digital-marketing-classes",
+        },
+        {
+          title: "Digital Marketing Online Courses",
+          link: "https://www.digitalregenesys.com/digital-marketing-online-courses",
+        },
+        {
+          title: "Online Digital Marketing Courses",
+          link: "https://www.digitalregenesys.com/online-digital-marketing-courses",
+        },
+        {
+          title: "What is a Digital Marketer",
+          link: "https://www.digitalregenesys.com/what-is-a-digital-marketer",
+        },
+        {
+          title: "Digital Marketing Courses Online",
+          link: "https://www.digitalregenesys.com/digital-marketing-courses-online",
+        },
+        {
+          title: "Google Digital Marketing Course",
+          link: "https://www.digitalregenesys.com/google-digital-marketing-course",
+        },
         // {
         //   title: "How to Become a Digital Marketer",
         //   link: "https://www.digitalregenesys.com/how-to-become-a-digital-marketer",

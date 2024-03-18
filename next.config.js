@@ -1575,10 +1575,10 @@ const createReWrites = () => {
 
     ///==================PM======================
 
-    {
-      source: "/project-management-courses",
-      destination: "/all-courses-multiple/project-management-courses",
-    },
+    // {
+    //   source: "/project-management-courses",
+    //   destination: "/all-courses-multiple/project-management-courses",
+    // },
 
     // -------------------------multiple-pages-end---------------------------------
 

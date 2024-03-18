@@ -26,7 +26,7 @@ const Layout = (props: any) => {
   } = props;
 
   const [loading, setLoading] = useState(true);
-  const [clonicalData, setClonicalData] = useState("");
+  const [canonicalData, setCanonicalData] = useState("");
   const [slugUrlData, setSlugUrlData] = useState("");
 
   useEffect(() => {
@@ -98,7 +98,7 @@ const Layout = (props: any) => {
       }
       setSlugUrlData(slugUrl);
       if (!canonicalBaseUrl.includes("slug")) {
-        setClonicalData(canonicalBaseUrl);
+        setCanonicalData(canonicalBaseUrl);
       }
     } catch (error) {}
   }
@@ -110,7 +110,7 @@ const Layout = (props: any) => {
     <>
       <Head>
         <title>{title}</title>
-        {clonicalData && <link rel="canonical" href={clonicalData} />}
+        {canonicalData && <link rel="canonical" href={canonicalData} />}
 
         {description && <meta name="description" content={description} />}
 
@@ -129,18 +129,18 @@ const Layout = (props: any) => {
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
         {/* <!-- Facebook Meta Tags --> */}
-        {clonicalData && <meta property="og:url" content={clonicalData} />}
+        {/* {canonicalData && <meta property="og:url" content={canonicalData} />}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={ogImg} />
+        <meta property="og:image" content={ogImg} /> */}
         {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="digitalregenesys.com" />
-        <meta property="twitter:url" content={clonicalData} />
+        <meta property="twitter:url" content={canonicalData} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={ogImg} />
+        <meta name="twitter:image" content={ogImg} /> */}
 
         {/* <link
           rel="alternate"
