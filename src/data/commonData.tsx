@@ -1083,7 +1083,7 @@ const Data = {
         "/why-is-digital-marketing-important",
     },
     ogImg: {
-      home: "https://www.digitalregenesys.com/assets/images/background/DR-Website.png",
+      home: "https://uat.digitalregenesys.com/assets/images/background/DR-Website.png",
 
       "cyber-security":
         "https://www.digitalregenesys.com/assets/images/gallery/CSC.webp",
