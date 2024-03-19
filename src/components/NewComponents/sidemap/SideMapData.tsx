@@ -444,38 +444,38 @@ const Sidemapdata: Sidemapdata = {
           title: "Google Digital Marketing Course",
           link: "https://www.digitalregenesys.com/google-digital-marketing-course",
         },
-        // {
-        //   title: "How to Become a Digital Marketer",
-        //   link: "https://www.digitalregenesys.com/how-to-become-a-digital-marketer",
-        // },
-        // {
-        //   title: "How to Do Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/how-to-do-digital-marketing",
-        // },
-        // {
-        //   title: "How to Start Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/how-to-start-digital-marketing",
-        // },
-        // {
-        //   title: "Online Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/online-digital-marketing",
-        // },
-        // {
-        //   title: "Digital Marketing Blogs",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-blogs",
-        // },
-        // {
-        //   title: "Digital Marketing Careers",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-careers",
-        // },
-        // {
-        //   title: "Digital Marketing Certificate Online",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-certificate-online",
-        // },
-        // {
-        //   title: "Digital Marketing Certifications",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-certifications",
-        // },
+        {
+          title: "How to Become a Digital Marketer",
+          link: "https://www.digitalregenesys.com/how-to-become-a-digital-marketer",
+        },
+        {
+          title: "How to Do Digital Marketing",
+          link: "https://www.digitalregenesys.com/how-to-do-digital-marketing",
+        },
+        {
+          title: "How to Start Digital Marketing",
+          link: "https://www.digitalregenesys.com/how-to-start-digital-marketing",
+        },
+        {
+          title: "Online Digital Marketing",
+          link: "https://www.digitalregenesys.com/online-digital-marketing",
+        },
+        {
+          title: "Digital Marketing Blogs",
+          link: "https://www.digitalregenesys.com/digital-marketing-blogs",
+        },
+        {
+          title: "Digital Marketing Careers",
+          link: "https://www.digitalregenesys.com/digital-marketing-careers",
+        },
+        {
+          title: "Digital Marketing Certificate Online",
+          link: "https://www.digitalregenesys.com/digital-marketing-certificate-online",
+        },
+        {
+          title: "Digital Marketing Certifications",
+          link: "https://www.digitalregenesys.com/digital-marketing-certifications",
+        },
         // {
         //   title: "Fundamentals of Digital Marketing",
         //   link: "https://www.digitalregenesys.com/fundamentals-of-digital-marketing",

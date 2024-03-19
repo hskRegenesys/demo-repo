@@ -1456,38 +1456,38 @@ const createReWrites = () => {
       source: "/google-digital-marketing-course",
       destination: "/all-courses-multiple/google-digital-marketing-course",
     },
-    // {
-    //   source: "/how-to-become-a-digital-marketer",
-    //   destination: "/all-courses-multiple/how-to-become-a-digital-marketer",
-    // },
-    // {
-    //   source: "/how-to-do-digital-marketing",
-    //   destination: "/all-courses-multiple/how-to-do-digital-marketing",
-    // },
-    // {
-    //   source: "/how-to-start-digital-marketing",
-    //   destination: "/all-courses-multiple/how-to-start-digital-marketing",
-    // },
-    // {
-    //   source: "/online-digital-marketing",
-    //   destination: "/all-courses-multiple/online-digital-marketing",
-    // },
-    // {
-    //   source: "/digital-marketing-blogs",
-    //   destination: "/all-courses-multiple/digital-marketing-blogs",
-    // },
-    // {
-    //   source: "/digital-marketing-careers",
-    //   destination: "/all-courses-multiple/digital-marketing-careers",
-    // },
-    // {
-    //   source: "/digital-marketing-certificate-online",
-    //   destination: "/all-courses-multiple/digital-marketing-certificate-online",
-    // },
-    // {
-    //   source: "/digital-marketing-certifications",
-    //   destination: "/all-courses-multiple/digital-marketing-certifications",
-    // },
+    {
+      source: "/how-to-become-a-digital-marketer",
+      destination: "/all-courses-multiple/how-to-become-a-digital-marketer",
+    },
+    {
+      source: "/how-to-do-digital-marketing",
+      destination: "/all-courses-multiple/how-to-do-digital-marketing",
+    },
+    {
+      source: "/how-to-start-digital-marketing",
+      destination: "/all-courses-multiple/how-to-start-digital-marketing",
+    },
+    {
+      source: "/online-digital-marketing",
+      destination: "/all-courses-multiple/online-digital-marketing",
+    },
+    {
+      source: "/digital-marketing-blogs",
+      destination: "/all-courses-multiple/digital-marketing-blogs",
+    },
+    {
+      source: "/digital-marketing-careers",
+      destination: "/all-courses-multiple/digital-marketing-careers",
+    },
+    {
+      source: "/digital-marketing-certificate-online",
+      destination: "/all-courses-multiple/digital-marketing-certificate-online",
+    },
+    {
+      source: "/digital-marketing-certifications",
+      destination: "/all-courses-multiple/digital-marketing-certifications",
+    },
     // {
     //   source: "/fundamentals-of-digital-marketing",
     //   destination: "/all-courses-multiple/fundamentals-of-digital-marketing",
