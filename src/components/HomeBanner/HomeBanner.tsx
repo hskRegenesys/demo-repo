@@ -1,18 +1,48 @@
 import featuredSection from "@/data/featuredSection";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Image from "next/image";
+import CountDownSeatsAvailable from "../../components/CountDownSeatsAvailable/CountDownSeatsAvailable";
 
-const { image, title, subtitle, subsubtitle, text, features } = featuredSection;
+const { image, title, subtitle, subsubtitle, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
 
 const HomeBanner = ({ className = "" }) => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
+
+  // -----Animation text --------
+  const [displayText, setDisplayText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const text = "Providing World Class Upskilling Course";
+  const speed = 200;
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (currentIndex < text.length) {
+        setDisplayText((prevText) => prevText + text[currentIndex]);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      } else {
+        clearInterval(timer);
+        setTimeout(() => {
+          setShowCursor(false);
+          setCurrentIndex(0);
+          setDisplayText("");
+          setShowCursor(true);
+        }, speed * 3);
+      }
+    }, speed);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [text, speed, currentIndex]);
+  // -----------------------------------------
 
   return (
     <>
@@ -24,8 +54,22 @@ const HomeBanner = ({ className = "" }) => {
                 <div className="sec-title">
                   <h1 className="title-home">
                     <strong>{title}</strong>
-                    <span>{subtitle}</span> <p>{subsubtitle}</p>
+                    <span>{subtitle}</span>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                      <p>{subsubtitle}</p>
+                      <p className="animi-text">
+                        {displayText} {showCursor && "|"}
+                      </p>
+                    </div>
                   </h1>
+                  {/* <div>
+                    <div className="seats-count" style={{ margin: "40px 0px" }}>
+                      <h5 className="bold-heading">Seats Left</h5>
+                      <div className={"d-flex gap-2"}>
+                        <CountDownSeatsAvailable />
+                      </div>
+                    </div>
+                  </div> */}
                   <FunFactSix />
                 </div>
               </div>
@@ -63,18 +107,20 @@ const HomeBanner = ({ className = "" }) => {
               </h2>
             </div>
             <p className="para-text">
-              Learn the next-gen digital skills with India’s leading EdTech
-              platform introduced by Regenesys Business School, an international
-              business school with campuses in Johannesburg, Mumbai, and Lagos.
-              Digital Regenesys is here to provide career transforming,
-              skill-enhancing, and upgrading online courses in many digital
-              fields. The self-paced online courses offered by Digital Regenesys
-              are in sync with the demands of almost every industry and their
-              digital and technological needs. The instructor-led training gives
-              students an advantage in getting placed within top MNCs and
-              organisations. Expose yourself to content within our certificate
-              courses taught by a highly experienced and world-recognised
-              faculty. Come and be a part of the digital revolution.
+              Embark on a next-generation digital skills journey with silicon
+              valley's cutting-edge Ed-Tech. Introducing Digital Regenesys, the
+              renowned EdTech platform by Regenesys Business School, an
+              international business school with campuses in Johannesburg,
+              Mumbai, and Lagos. Experience career-transforming,
+              skill-enhancing, and cutting-edge online courses across various
+              digital domains. Our online courses are meticulously designed to
+              align with the evolving digital and technological requirements of
+              diverse industries. Gain a competitive edge through instructor-led
+              training, increasing your chances of securing prestigious
+              positions in top MNCs and organizations. Immerse yourself in the
+              comprehensive content of our certificate courses, delivered by a
+              highly experienced and globally recognized faculty. Join us now
+              and become a vital part of the digital revolution.
             </p>
           </Row>
 

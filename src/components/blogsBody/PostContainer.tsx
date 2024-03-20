@@ -6,7 +6,7 @@ import { getOneRandom } from "src/utils/common";
 const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
   return (
     <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
-      <Link href={`/blogs/${post?.slug}`} passHref>
+      <Link href={`/blog/${post?.slug}`} passHref>
         <div className="blog-grid-column">
           <div
             className="w-100 rounded position-relative overflow-hidden"
@@ -40,10 +40,12 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
               className="blog-grid-title m-0 py-1"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              title={post?.yoast_head_json?.og_title}
-            >
-              {post?.yoast_head_json?.og_title}
-            </p>
+              title={post?.title?.rendered}
+              dangerouslySetInnerHTML={{
+                __html: post?.title?.rendered,
+              }}
+            />
+
             <p className="blog-grid-desc py-1 m-0 w-100">
               <small>{post?.yoast_head_json?.og_description}</small>
             </p>

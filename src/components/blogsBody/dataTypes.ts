@@ -1,15 +1,7 @@
 export interface IPostListTypes {
   slug?: string;
   category: string | number;
-  posts: Array<{
-    id: number;
-    slug: string;
-    yoast_head_json: {
-      og_image: Array<{ [key: string]: string | number }>;
-      og_title: string;
-      og_description: string;
-    };
-  }>;
+  posts: Array<IPostTypes>;
 }
 
 export interface IPostTypes {
@@ -19,8 +11,11 @@ export interface IPostTypes {
     og_image: Array<{ [key: string]: string | number }>;
     og_title: string;
     og_description: string;
+    author: string;
+    og_site_name: string;
+    article_published_time: string;
   };
-  title?: { rendered: string };
+  title: { rendered: string };
   content?: { rendered: string };
 }
 
@@ -33,7 +28,9 @@ export interface IPostContainerTypes {
   restPost?: boolean;
 }
 interface IImage {
-  image: string;
+  desktopImage: string;
+  mobileImage: string;
+  link: string;
   label?: string;
   caption?: string;
 }
@@ -52,16 +49,24 @@ export const postToShow: IPostToShow = {
 
 export const carousalProps = [
   {
-    image: "digital-marketing.webp",
+    desktopImage: "blog-home-Cyber-Security.webp",
+    link: "/all-courses/cyber-security",
+    mobileImage: "blog-home-Cyber-Security-responsive.webp",
   },
   {
-    image: "data-science.webp",
+    desktopImage: "blog-home-Data-Science.webp",
+    link: "/all-courses/data-science",
+    mobileImage: "blog-home-Data-Science-Responsive.webp",
   },
   {
-    image: "Project-Management.webp",
+    desktopImage: "blog-home-Design-Thinking.webp",
+    link: "/all-courses/design-thinking",
+    mobileImage: "blog-home-desig-thinking-responsive.webp",
   },
   {
-    image: "cyber-security.jpg",
+    desktopImage: "blog-home-Digital-Marketing.webp",
+    link: "/all-courses/digital-marketing",
+    mobileImage: "blog-home-Digital-Marketing-responsive.webp",
   },
 ];
 

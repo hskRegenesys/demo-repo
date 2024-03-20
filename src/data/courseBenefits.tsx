@@ -1,6 +1,6 @@
 export const courseBenefits = {
   title: "Benefits",
-  desc: "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+  desc: "With India's largest online higher education company, get 360 degree career support, mentorship from industry experts, networking opportunities, and more.",
   tabBtns: [
     {
       id: "tab-1",

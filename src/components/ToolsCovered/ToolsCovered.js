@@ -1,4 +1,3 @@
-import courseTools from "@/data/courseTools";
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
 import Image from "next/image";

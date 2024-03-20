@@ -48,7 +48,7 @@ const navItems = [
 
   {
     id: 4,
-    name: "Courses",
+    name: "All Courses",
     href: "/all-courses",
     subNavItems: [
       { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
@@ -61,6 +61,12 @@ const navItems = [
     href: "/about",
   },
   {
+    id: 3,
+    name: "Blog",
+    href: "/blog",
+  },
+
+  {
     id: 8,
     name: "Contact",
     href: "/contact",
@@ -68,11 +74,11 @@ const navItems = [
 ];
 
 export const blogsNavItem = [
-  { id: 1, name: "Home", href: "/blogs" },
+  { id: 1, name: "Home", href: "/blog" },
   {
     id: 3,
     name: "Blog",
-    href: "/blogs",
+    href: "/blog",
     subNavItems: [],
   },
   {
@@ -82,13 +88,22 @@ export const blogsNavItem = [
   },
   {
     id: 4,
-    name: "Courses",
+    name: "All Courses",
     href: "/all-courses",
     subNavItems: [
       { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
       { id: 6, name: "Data Science", href: "/data-science-main" },
     ],
   },
+  // {
+  //   id: 7,
+  //   name: "All Courses New",
+  //   href: "/all-courses-new",
+  //   subNavItems: [
+  //     { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
+  //     { id: 6, name: "Data Science", href: "/data-science-main" },
+  //   ],
+  // },
   {
     id: 5,
     name: "About",

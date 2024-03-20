@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import {
+  artificialIntelligenceCode,
   dataScienceCode,
   digitalMarkrtingCode,
   programBaseUrl,
@@ -59,7 +60,11 @@ const AllCourseGallery = () => {
   }, [checkFilterData]);
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode) {
+    if (
+      code === dataScienceCode ||
+      code === digitalMarkrtingCode ||
+      code === artificialIntelligenceCode
+    ) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(
@@ -102,7 +107,22 @@ const AllCourseGallery = () => {
         item?.mode_id === 1 &&
         item?.isAddon === false
     );
-    const checkCourseList = ["DSCI", "DM", "PM", "CSC", "DTC"];
+    const checkCourseList = [
+      "DSCI",
+      // "PDM",
+      "FSD",
+      "MD",
+      "DBA",
+      "DSN",
+      "AIN",
+      "CSC",
+      "PM",
+      "DM",
+      "DMN",
+      "DTC",
+      "DT",
+      "AI",
+    ];
 
     const result: any = [];
 
@@ -205,90 +225,103 @@ const AllCourseGallery = () => {
                 <Loader />
               ) : (
                 <Row>
-                  {courseData?.map(
-                    ({
-                      id,
-                      name,
-                      courseMode,
-                      batches,
-                      code,
-                      durationInWeeks,
-                      parent_id,
-                    }: any) => (
-                      <Col
-                        ref={listRef}
-                        key={id}
-                        lg={4}
-                        md={6}
-                        className="gallery-item"
-                      >
-                        <div
-                          className="inner-box"
-                          // onClick={() => redirectCard(name, code, id, parent_id)}
-                        >
-                          <figure className="image">
-                            <Image
-                              src={`/assets/images/gallery/${code}.webp`}
-                              alt=""
-                            />
-                          </figure>
-                          <a
-                            onClick={() =>
-                              redirectCard(name, code, id, parent_id)
-                            }
-                            className="lightbox-image overlay-box"
-                            data-fancybox="gallery"
-                          ></a>
-                          <div className="cap-box">
-                            <div className="cap-inner">
-                              <div className="title">
-                                <h5>
-                                  <a
-                                    onClick={() =>
-                                      redirectCard(name, code, id, parent_id)
-                                    }
-                                  >
-                                    {name}
-                                  </a>
-                                </h5>
-                              </div>
+                  <>
+                    {courseData?.map(
+                      ({
+                        id,
+                        name,
+                        courseMode,
+                        batches,
+                        code,
+                        durationInWeeks,
+                        parent_id,
+                      }: any) => (
+                        <>
+                          <Col
+                            ref={listRef}
+                            key={id}
+                            lg={4}
+                            md={6}
+                            className="gallery-item"
+                          >
+                            <div
+                              className="inner-box"
+                              // onClick={() => redirectCard(name, code, id, parent_id)}
+                            >
+                              <figure className="image">
+                                <Image
+                                  src={`/assets/images/gallery/${code}.webp`}
+                                  alt=""
+                                />
+                              </figure>
+                              <a
+                                onClick={() =>
+                                  redirectCard(name, code, id, parent_id)
+                                }
+                                className="lightbox-image overlay-box"
+                                data-fancybox="gallery"
+                              ></a>
+                              <div className="cap-box">
+                                <div className="cap-inner">
+                                  <div className="title">
+                                    <h5>
+                                      <a
+                                        onClick={() =>
+                                          redirectCard(
+                                            name,
+                                            code,
+                                            id,
+                                            parent_id
+                                          )
+                                        }
+                                      >
+                                        {name}
+                                      </a>
+                                    </h5>
+                                  </div>
 
-                              <div className="cat">
-                                <ul className="about-seven__list list-unstyled">
-                                  <li>{courseMode.name} classes</li>
-                                  <li>{durationInWeeks} Weeks</li>
-                                  <li>International certification </li>
-                                  <li>Capstone projects </li>
-                                </ul>
-                              </div>
+                                  <div className="cat">
+                                    <ul className="about-seven__list list-unstyled">
+                                      <li>{courseMode.name} classes</li>
+                                      <li>{durationInWeeks} Weeks</li>
+                                      <li>International certification </li>
+                                      <li>Capstone projects </li>
+                                    </ul>
+                                  </div>
 
-                              <div className="batch">
-                                {batchInfo(batches)?.description}
-                              </div>
-                              <div className="link-box inline-button">
-                                <a
-                                  className="theme-btn btn-style-two"
-                                  onClick={() =>
-                                    redirectCard(name, code, id, parent_id)
-                                  }
-                                >
-                                  <i className="btn-curve"></i>
-                                  <span className="btn-title">Learn More</span>
-                                </a>
-                                <a
-                                  className="theme-btn btn-style-two"
-                                  onClick={handleShow}
-                                >
-                                  <i className="btn-curve"></i>
-                                  <span className="btn-title">Enquire Now</span>
-                                </a>
+                                  <div className="batch">
+                                    {batchInfo(batches)?.description}
+                                  </div>
+                                  <div className="link-box inline-button">
+                                    <a
+                                      className="theme-btn btn-style-two"
+                                      onClick={() =>
+                                        redirectCard(name, code, id, parent_id)
+                                      }
+                                    >
+                                      <i className="btn-curve"></i>
+                                      <span className="btn-title">
+                                        Learn More
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="theme-btn btn-style-two"
+                                      onClick={handleShow}
+                                    >
+                                      <i className="btn-curve"></i>
+                                      <span className="btn-title">
+                                        Enquire Now
+                                      </span>
+                                    </a>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </Col>
-                    )
-                  )}
+                          </Col>
+                        </>
+                      )
+                    )}
+                  </>
 
                   <div className="tns-controls5 desktop-hide text-center">
                     <button className="tns-prev">

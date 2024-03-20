@@ -8,10 +8,18 @@ import { LeftOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
 import PostContainer from "./PostContainer";
+import BreadCrumb from "./BreadCrumb";
 
-const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
+const BlogsByCategories = ({
+  categorySlug,
+  setCategoryList,
+}: {
+  categorySlug: string;
+  setCategoryList: (value: any) => void;
+}) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>("");
+
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ slug: categorySlug });
@@ -35,6 +43,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
           setCategory(category.name),
           {
             category: category.name,
+            yoast_head_json: category.yoast_head_json,
             posts: await wpService.allPosts({
               per_page: 12,
               categories: category.id,
@@ -46,6 +55,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
     if (apiResponse.length > 0) {
       setIsLoading(false);
       setPostList(apiResponse);
+      setCategoryList(apiResponse);
     }
   };
 
@@ -62,7 +72,12 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
         </div>
       </div>
       <div className="container-fluid p-5">
-        <Link href={`/blogs/`} passHref>
+        <BreadCrumb
+          title={`Category - ${categorySlug?.toString().replaceAll("-", " ")}`}
+          parent="Blog"
+          parentHref="/blog"
+        />
+        <Link href={`/blog/`} passHref>
           <p
             role="button"
             className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
@@ -73,6 +88,7 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
         </Link>
         <div className="row">
           <div className="col-12 col-lg-9">
+            <h1 className="h5 p-0 m-0 fw-bold mt-3">{category} Blog</h1>
             {postList.length > 0 &&
               postList?.map((values) => {
                 return isLoading ? (
@@ -81,12 +97,12 @@ const BlogsByCategories = ({ categorySlug }: { categorySlug: string }) => {
                   </div>
                 ) : values?.posts?.length > 0 ? (
                   <div key={values?.category} className="py-3">
-                    <p
-                      className="h6 p-0 m-0"
+                    {/* <h2
+                      className="h6 p-0 m-0 fw-bold"
                       dangerouslySetInnerHTML={{
                         __html: values?.category.toString(),
                       }}
-                    />
+                    /> */}
                     {values?.posts?.length > 0 ? (
                       <div className="row py-3">
                         {values?.posts?.map((item) => (

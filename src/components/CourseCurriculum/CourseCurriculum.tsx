@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
-const Faqs = (props: any) => {
-  let { allFaqs } = props;
+const Faqs = ({ allFaqs }: any) => {
   const { faqs, defaultCurrent } = allFaqs;
   const [current, setCurrent] = useState(defaultCurrent);
 
@@ -18,8 +17,7 @@ const Faqs = (props: any) => {
       </h2>
       <ul className="accordion-box clearfix">
         {faqs?.map((item: any) => {
-          let { id, title, firstPara, secondPara, boldText, lists, lastPara } =
-            item;
+          const { id, title, lists } = item;
           return (
             <li
               key={id}
@@ -31,7 +29,6 @@ const Faqs = (props: any) => {
                 onClick={() => handleClick(id)}
                 className={`acc-btn${current === id ? " active" : ""}`}
               >
-                {/* <span className="count">{id}.</span> */}
                 {title}
               </div>
               <div
@@ -41,18 +38,39 @@ const Faqs = (props: any) => {
               >
                 <div className="content">
                   <div className="text">
-                    {firstPara && <span>{firstPara}</span>}
-                    {secondPara && <span>{secondPara}</span>}
-                    {boldText && <strong>{boldText}</strong>}
-                    {lists?.map((text: string, i: number) => (
-                      <ul key={`${text}-${i}`}>
-                        <li>
-                          <i className="fa fa-check" aria-hidden="true"></i>
-                          {text}
-                        </li>
+                    {Array.isArray(lists) ? (
+                      <ul>
+                        {lists.map((item: string, index: number) => (
+                          <li key={index}>
+                            {" "}
+                            <i className="fa fa-check" aria-hidden="true"></i>
+                            {item}
+                          </li>
+                        ))}
                       </ul>
-                    ))}
-                    {lastPara && <span>{lastPara}</span>}
+                    ) : (
+                      <ul>
+                        {Object.keys(lists).map((key: string) => (
+                          <div key={key}>
+                            <h6 style={{ fontSize: "18px", fontWeight: "700" }}>
+                              {key}
+                            </h6>
+                            <ul>
+                              {lists[key].map((item: string, index: number) => (
+                                <li key={index}>
+                                  {" "}
+                                  <i
+                                    className="fa fa-check"
+                                    aria-hidden="true"
+                                  ></i>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               </div>

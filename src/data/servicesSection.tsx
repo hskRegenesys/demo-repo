@@ -59,13 +59,13 @@ export const serviceSectionThree = [
     id: 3,
     icon: "fa fa-users",
     title: "Industry Experts",
-    desc: "Learn from the best in the business! Our education programs are taught by industry experts, ensuring you gain insights and skills from the top leaders in the field.",
+    desc: "Learn from the best in the business! Our education Courses are taught by industry experts, ensuring you gain insights and skills from the top leaders in the field.",
   },
   {
     id: 4,
     icon: "far fa-file-alt",
     title: "Digital Regenesys Certification",
-    desc: "Certify your skills and knowledge with our industry-recognized certification programs, designed to validate your expertise and open doors to new opportunities.",
+    desc: "Certify your skills and knowledge with our industry-recognized certification Courses, designed to validate your expertise and open doors to new opportunities.",
   },
 ];
 

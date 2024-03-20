@@ -7,7 +7,13 @@ import _ from "lodash";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import {
+  artificialIntelligenceCode,
+  artificialIntelligenceMainID,
   dataScienceCode,
+  dataScienceMainCourse,
+  dataScienceMainID,
+  digitalMarketingMainCourse,
+  digitalMarketingMainID,
   digitalMarkrtingCode,
   programBaseUrl,
 } from "../config/constant";
@@ -52,24 +58,34 @@ const SubCourseDetails = ({ page }: any) => {
     allCourseList ? setIsLoading(false) : setIsLoading(true);
     const courses = _.filter(allCourseList, (item: any) => item?.mode_id === 1);
     setCourseData(courses);
-    if (page === "data-science") {
+    if (page === dataScienceMainCourse) {
       const subCourse = _.filter(
         allCourseList,
-        (item) => item.parent_id === 10
+        (item) => item.parent_id === dataScienceMainID
       );
 
+      setSubCourse(subCourse);
+    } else if (page === digitalMarketingMainCourse) {
+      const subCourse = _.filter(
+        allCourseList,
+        (item) => item.parent_id === digitalMarketingMainID
+      );
       setSubCourse(subCourse);
     } else {
       const subCourse = _.filter(
         allCourseList,
-        (item) => item.parent_id === 24
+        (item) => item.parent_id === artificialIntelligenceMainID
       );
       setSubCourse(subCourse);
     }
   };
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
-    if (code === dataScienceCode || code === digitalMarkrtingCode) {
+    if (
+      code === dataScienceCode ||
+      code === digitalMarkrtingCode ||
+      code === artificialIntelligenceCode
+    ) {
       router.push(`/${programBaseUrl}/${urlInfo(name)}`);
     } else {
       const courseDetails = _.find(
@@ -146,11 +162,11 @@ const SubCourseDetails = ({ page }: any) => {
                             />
                           </figure>
                           <a
+                            className="lightbox-image overlay-box"
+                            data-fancybox="gallery"
                             onClick={() =>
                               redirectCard(name, code, id, parent_id)
                             }
-                            className="lightbox-image overlay-box"
-                            data-fancybox="gallery"
                           ></a>
                           <div className="cap-box">
                             <div className="cap-inner">

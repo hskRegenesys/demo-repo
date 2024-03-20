@@ -1,0 +1,151 @@
+/* CourseBenefitsCard.module.css */
+
+.courseBenefitsCardContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.Heding {
+  color: #008554;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 16px;
+}
+.subHeding {
+  color: #2b3340;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin-bottom: 52px;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.card {
+  width: 30%; /* Adjust based on your design */
+  padding: 24px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--light-divider-borders-light, #e3e8ee);
+  background: var(--Light-Surface-Success, #f0fdf4);
+  box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cardIcon {
+  width: 64px;
+  height: 64px;
+}
+
+.cardText {
+  text-align: left;
+}
+.cardText1 {
+  color: var(--Heading, #2d2d2d);
+  font-family: Montserrat-Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 4px;
+}
+.cardText2 {
+  color: var(--Light-Text-Secondary, #697386);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.019px;
+  margin-bottom: 0px;
+}
+
+.enrollNowButton {
+  border-radius: 10px;
+  background: #008554;
+  box-shadow: 0px 2px 8px -2px rgba(0, 187, 118, 0.5),
+    0px -2px 1px 0px rgba(55, 65, 81, 0.15) inset;
+  display: flex;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  margin-top: 60px;
+  justify-content: center;
+  padding: 12px 16px;
+  color: #fff;
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+
+/* Media Query for Responsive Design */
+
+/* Media Query for Responsive Design */
+
+@media screen and (max-width: 768px) {
+  .courseBenefitsCardContainer {
+    padding: 0px 20px;
+    margin-top: 40px;
+  }
+  .cardsContainer {
+    align-items: center;
+  }
+  .enrollNowButton {
+    margin-top: 40px;
+  }
+  .courseBenefitsCardContainer h2 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .courseBenefitsCardContainer h3 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 152px;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cardIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardText {
+    text-align: center;
+  }
+  .cardText1 {
+    font-size: 20px;
+  }
+  .cardText2 {
+    font-size: 11px;
+  }
+}

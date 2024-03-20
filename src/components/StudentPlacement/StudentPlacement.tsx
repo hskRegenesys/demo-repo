@@ -45,7 +45,7 @@ const StudentPlacement = ({ className = "" }) => {
       <div className="sponsors-outer">
         <div className="FluidSection">
           <div className="sec-title animated fadeInLeft text-center">
-            <h2 className="small-heading">Our Students Have Been Placed at</h2>
+            <h2 className="small-heading">Our Alumni are working at</h2>
           </div>
           <div className="sponsors-carousel">
             <TinySlider options={{ ...settings, container: `.my-slider-15` }}>

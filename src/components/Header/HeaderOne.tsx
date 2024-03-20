@@ -78,8 +78,8 @@ const HeaderOne = ({
   }
 
   const onSearch = (value: string) => {
-    router.pathname !== "/blogs/search" && setIsSearching(true);
-    router.push(`/blogs/search?q=${value}`);
+    router.pathname !== "/blog/search" && setIsSearching(true);
+    router.push(`/blog/search?q=${value}`);
   };
 
   const allCourses = async () => {
@@ -98,7 +98,36 @@ const HeaderOne = ({
         item?.isAddon === false
     );
 
-    const course = ["DSCI", "DM", "PM", "CSC", "DTC"];
+    //const course = ["DSCI", "DM", "PM", "CSC", "DTC", "AI"];
+    const course = [
+      // "FSD",
+      // "DSN",
+      // "DSCI",
+      // "AIN",
+      // "CSC",
+      // "PM",
+      // "DM",
+      // "DMN",
+      // "DTC",
+      // "DT",
+      // "AI",
+
+      "DSCI",
+      //"PDM",
+      "FSD",
+      "MD",
+      "DBA",
+
+      "DSN",
+      "AIN",
+      "CSC",
+      "PM",
+      "DM",
+      "DMN",
+      "DTC",
+      "DT",
+      "AI",
+    ];
     const coursesSubItem: any = [];
     course.forEach((courseCode) => {
       if (filterData?.length) {
@@ -130,7 +159,7 @@ const HeaderOne = ({
       }
     });
     const data = navItems?.map((item: any) => {
-      if (item.id === 4 && item.name === "Courses") {
+      if (item.id === 4 && item.name === "All Courses") {
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
@@ -155,7 +184,7 @@ const HeaderOne = ({
     });
 
     const data2 = blogsNavItem?.map((item: any) => {
-      if (item.id === 4 && item.name === "Courses") {
+      if (item.id === 4 && item.name === "All Courses") {
         item.subNavItems = coursesSubItem;
         item.subNavItems?.map((data: any) => {
           const filterData = _.filter(
@@ -176,11 +205,11 @@ const HeaderOne = ({
         });
       }
       const categorySubItem: any = [];
-      if (allCategories.length > 0 && item.id === 3 && item.name === "Blog") {
+      if (allCategories?.length > 0 && item.id === 3 && item.name === "Blog") {
         categorySubItem.push({
           id: 1,
           name: "Blog Categories",
-          href: "/blogs",
+          href: "/blog",
           subItems: [],
         });
         item.subNavItems = categorySubItem;
@@ -189,7 +218,7 @@ const HeaderOne = ({
             return {
               id: categories?.id,
               name: categories?.name,
-              href: `/blogs/category/${categories?.slug}`,
+              href: `/blog/category/${categories?.slug}`,
             };
           });
           if (subCategories) {
@@ -312,8 +341,8 @@ const HeaderOne = ({
               <div className="other-links clearfix">
                 <div className="link-box">
                   <Link href="https://mydigital.regenesys.net/login/index.php">
-                    <a className="theme-btn btn-style-two">
-                      <i className="btn-curve"></i>
+                    <a className="new-log-in-butten">
+                      {/* <i className="btn-curve"></i> */}
                       <span className="btn-title">Login</span>
                     </a>
                   </Link>
