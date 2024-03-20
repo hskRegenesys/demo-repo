@@ -1488,38 +1488,38 @@ const createReWrites = () => {
       source: "/digital-marketing-certifications",
       destination: "/all-courses-multiple/digital-marketing-certifications",
     },
-    // {
-    //   source: "/fundamentals-of-digital-marketing",
-    //   destination: "/all-courses-multiple/fundamentals-of-digital-marketing",
-    // },
-    // {
-    //   source: "/online-digital-marketing-course",
-    //   destination: "/all-courses-multiple/online-digital-marketing-course",
-    // },
-    // {
-    //   source: "/what-does-a-digital-marketer-do",
-    //   destination: "/all-courses-multiple/what-does-a-digital-marketer-do",
-    // },
-    // {
-    //   source: "/what's-digital-marketing",
-    //   destination: "/all-courses-multiple/what's-digital-marketing",
-    // },
-    // {
-    //   source: "/best-digital-marketing-services",
-    //   destination: "/all-courses-multiple/best-digital-marketing-services",
-    // },
-    // {
-    //   source: "/certificate-in-digital-marketing",
-    //   destination: "/all-courses-multiple/certificate-in-digital-marketing",
-    // },
-    // {
-    //   source: "/digital-marketing-platforms",
-    //   destination: "/all-courses-multiple/digital-marketing-platforms",
-    // },
-    // {
-    //   source: "/digital-marketing-tips",
-    //   destination: "/all-courses-multiple/digital-marketing-tips",
-    // },
+    {
+      source: "/fundamentals-of-digital-marketing",
+      destination: "/all-courses-multiple/fundamentals-of-digital-marketing",
+    },
+    {
+      source: "/online-digital-marketing-course",
+      destination: "/all-courses-multiple/online-digital-marketing-course",
+    },
+    {
+      source: "/what-does-a-digital-marketer-do",
+      destination: "/all-courses-multiple/what-does-a-digital-marketer-do",
+    },
+    {
+      source: "/what's-digital-marketing",
+      destination: "/all-courses-multiple/what's-digital-marketing",
+    },
+    {
+      source: "/best-digital-marketing-services",
+      destination: "/all-courses-multiple/best-digital-marketing-services",
+    },
+    {
+      source: "/certificate-in-digital-marketing",
+      destination: "/all-courses-multiple/certificate-in-digital-marketing",
+    },
+    {
+      source: "/digital-marketing-platforms",
+      destination: "/all-courses-multiple/digital-marketing-platforms",
+    },
+    {
+      source: "/digital-marketing-tips",
+      destination: "/all-courses-multiple/digital-marketing-tips",
+    },
     // {
     //   source: "/masters-in-digital-marketing",
     //   destination: "/all-courses-multiple/masters-in-digital-marketing",
@@ -1591,10 +1591,10 @@ const createReWrites = () => {
       source: "/all-courses/management-advancement",
       destination: "/all-courses/management-advancement/48",
     },
-    {
-      source: "/all-courses/product-management",
-      destination: "/all-courses/product-management/49",
-    },
+    // {
+    //   source: "/all-courses/product-management",
+    //   destination: "/all-courses/product-management/49",
+    // },
     {
       source: "/all-courses/data-and-business-analytics",
       destination: "/all-courses/data-and-business-analytics/30",

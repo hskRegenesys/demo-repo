@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Styles from "./SiteMap.module.css";
-import Sitemapdata from "./SideMapData";
+import Sitemapdata from "./SiteMapData";
 
 interface MenuItem {
   title: string;
