@@ -26,7 +26,7 @@ const Layout = (props: any) => {
   } = props;
 
   const [loading, setLoading] = useState(true);
-  const [clonicalData, setClonicalData] = useState("");
+  const [canonicalData, setCanonicalData] = useState("");
   const [slugUrlData, setSlugUrlData] = useState("");
 
   useEffect(() => {
@@ -65,6 +65,15 @@ const Layout = (props: any) => {
       ? metaData?.metaInfo?.keywords?.[pageTitle]
       : metaData?.metaInfo?.keywords?.["home"];
 
+  const ogImg =
+    pageTitle === "blog"
+      ? blogList?.[0]?.yoast_head_json?.og_image[0]?.url
+      : pageTitle === "category"
+      ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_image[0]?.url
+      : metaData?.metaInfo?.ogImg?.[pageTitle]
+      ? metaData?.metaInfo?.ogImg?.[pageTitle]
+      : metaData?.metaInfo?.ogImg?.["home"];
+
   function fetchAsPath() {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -89,7 +98,7 @@ const Layout = (props: any) => {
       }
       setSlugUrlData(slugUrl);
       if (!canonicalBaseUrl.includes("slug")) {
-        setClonicalData(canonicalBaseUrl);
+        setCanonicalData(canonicalBaseUrl);
       }
     } catch (error) {}
   }
@@ -101,7 +110,7 @@ const Layout = (props: any) => {
     <>
       <Head>
         <title>{title}</title>
-        {clonicalData && <link rel="canonical" href={clonicalData} />}
+        {canonicalData && <link rel="canonical" href={canonicalData} />}
 
         {description && <meta name="description" content={description} />}
 
@@ -119,6 +128,25 @@ const Layout = (props: any) => {
           name="google-site-verification"
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
+        {/* <!-- Facebook Meta Tags --> */}
+        {canonicalData && <meta property="og:url" content={canonicalData} />}
+        <meta property="og:type" content="website" />
+        {title && <meta property="og:title" content={title} />}
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+        {ogImg && <meta property="og:image" content={ogImg} />}
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="digitalregenesys.com" />
+        {canonicalData && (
+          <meta property="twitter:url" content={canonicalData} />
+        )}
+        {title && <meta name="twitter:title" content={title} />}
+        {description && (
+          <meta name="twitter:description" content={description} />
+        )}
+        {ogImg && <meta name="twitter:image" content={ogImg} />}
 
         {/* <link
           rel="alternate"

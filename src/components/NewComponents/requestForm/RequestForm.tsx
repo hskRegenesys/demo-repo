@@ -92,7 +92,7 @@ function RequestForm(props: any) {
     if (props?.title !== "Download Brochure") {
       setSubmitted(true);
       toast.success("Thank you for applying! We will get back to you.", {
-        position: toast.POSITION.TOP_RIGHT,
+        position: "top-right",
         autoClose: 3000,
         className: Styles.tost,
       });

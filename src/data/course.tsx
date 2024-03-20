@@ -434,7 +434,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/_Yfdbh_ktAU?autoplay=1&loop=1&playlist=_Yfdbh_ktAU",
+          "https://www.youtube.com/embed/FKksF9fkf5w?autoplay=1&loop=1&playlist=FKksF9fkf5w",
         title: "Management Advancement Programme",
         text: "Management Advancement Programme offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. This course equips professionals with essential skills and knowledge to advance in their careers. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
         lists: [
@@ -800,282 +800,283 @@ export const courseData = {
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
-  //   PDM: {
-  //     processOne: [
-  //       {
-  //         id: 1,
-  //         // image: "yellow-bg-details-bg-1.webp",
-  //         youtubeUrl:
-  //           "https://www.youtube.com/embed/_Yfdbh_ktAU?autoplay=1&loop=1&playlist=_Yfdbh_ktAU",
-  //         title: "Product Management Course",
-  //         text: `
-  //         Product Management course offers a thorough curriculum aimed at empowering professionals with the necessary skills and expertise to excel and focus on Product Lifecycle Management. It encompasses all stages of the product lifecycle, ranging from initial concept generation and customer analysis to product creation, release, and continuous improvement.
-  // Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to succeed as Product Managers.
+  PDM: {
+    processOne: [
+      {
+        id: 1,
+        // image: "yellow-bg-details-bg-1.webp",
+        youtubeUrl:
+          "https://www.youtube.com/embed/53hvNdE2HPo?autoplay=1&loop=1&playlist=53hvNdE2HPo",
+        title: "Product Management Course",
+        text: `
+          Product Management course offers a thorough curriculum aimed at empowering professionals with the necessary skills and expertise to excel and focus on Product Lifecycle Management. It encompasses all stages of the product lifecycle, ranging from initial concept generation and customer analysis to product creation, release, and continuous improvement.
+  Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to succeed as Product Managers.
 
-  //         `,
-  //         lists: [
-  //           "24 Weeks Course",
-  //           "Live Sessions",
-  //           "Career Counselling",
-  //           "Guaranteed Certification",
-  //         ],
-  //       },
-  //     ],
-  //     productDescription: {
-  //       title: "Empower Your Career with Our Top-Rated Product Management Course",
-  //       text1: `
-  //       Elevate your skill set with the best Product Management course for professionals. Learn the skills of Product Lifecycle Management in the real world from our highly experienced academic staff.
+          `,
+        lists: [
+          "24 Weeks Course",
+          "Live Sessions",
+          "Career Counselling",
+          "Guaranteed Certification",
+        ],
+      },
+    ],
+    productDescription: {
+      title: "Empower Your Career with Our Top-Rated Product Management Course",
+      text1: `
+        Elevate your skill set with the best Product Management course for professionals. Learn the skills of Product Lifecycle Management in the real world from our highly experienced academic staff.
 
-  //         `,
-  //     },
-  //     joinReasons: {
-  //       title: "Reasons To Join This Course",
-  //       subTitle1: "Exposure",
-  //       desc1: "Get exposure to Aha!, Figma, JIRA and more. ",
+          `,
+    },
+    joinReasons: {
+      title: "Reasons To Join This Course",
+      subTitle1: "Exposure",
+      desc1: "Get exposure to Aha!, Figma, JIRA and more. ",
 
-  //       subTitle2: "Best-in-class instructors",
-  //       desc2:
-  //         "Learn from the best-in-class instructors who will help you with every concept from scratch.        ",
+      subTitle2: "Best-in-class instructors",
+      desc2:
+        "Learn from the best-in-class instructors who will help you with every concept from scratch.        ",
 
-  //       subTitle3: "Live sessions",
-  //       desc3:
-  //         "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.",
+      subTitle3: "Live sessions",
+      desc3:
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.",
 
-  //       subTitle4: "Tools usage",
-  //       desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
-  //       bg1: "/assets/images/background/reason-bg1-1.webp",
-  //       bg2: "/assets/images/background/reason-bg2-1.webp",
-  //       bg3: "/assets/images/background/reason-bg3-1.webp",
-  //       bg4: "/assets/images/background/reason-bg4-1.webp",
-  //     },
-  //     courseTools: [
-  //       "md/DBA-tool-2.svg",
-  //       "md/Clipchamp.svg",
-  //       "md/Gemini.svg",
-  //       "md/Hey-Gen.svg",
-  //       "md/KREA.svg",
-  //     ],
-  //     courseCertificate: {
-  //       certificateTitle:
-  //         "Succeed in Product Management with Our Leading Certificate Course.",
-  //       certificateSubTitle:
-  //         "Earn a Product Management Certificate from Digital Regenesys & Understand various product development strategies.         ",
-  //       certificateSubSubTitle:
-  //         "Our Product Management course will equip you with the skills and knowledge required to succeed as product managers.",
-  //       certificateListTitle:
-  //         "With a Product Management Certificate, you will get:",
+      subTitle4: "Tools usage",
+      desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
+      bg1: "/assets/images/background/reason-bg1-1.webp",
+      bg2: "/assets/images/background/reason-bg2-1.webp",
+      bg3: "/assets/images/background/reason-bg3-1.webp",
+      bg4: "/assets/images/background/reason-bg4-1.webp",
+    },
+    courseTools: [
+      "pdm/PDM-tool-1.webp",
+      "pdm/PDM-tool-2.webp",
+      "pdm/PDM-tool-3.webp",
+      "pdm/PDM-tool-4.webp",
+      "pdm/PDM-tool-5.webp",
+      "pdm/PDM-tool-6.webp",
+    ],
+    courseCertificate: {
+      certificateTitle:
+        "Succeed in Product Management with Our Leading Certificate Course.",
+      certificateSubTitle:
+        "Earn a Product Management Certificate from Digital Regenesys & Understand various product development strategies.         ",
+      certificateSubSubTitle:
+        "Our Product Management course will equip you with the skills and knowledge required to succeed as product managers.",
+      certificateListTitle:
+        "With a Product Management Certificate, you will get:",
 
-  //       certificateSkillList: [
-  //         "Holistic and End-to-End Curriculum ",
-  //         "Industry-Aligned and Future-Ready",
-  //         "Hands-on and Project-Based Learning ",
-  //         "Experienced Faculty and Industry Experts",
-  //       ],
-  //       certificateListPara:
-  //         " Our specialised Product Management Certificate will open doors to various roles for you, whether you are a Marketing Manager, Product Owner, Category or Brand Manager. ",
-  //       certificateRolesList: [
-  //         // "Project Manager",
-  //         // "Strategy Consultant",
-  //         // "Innovation Manager ",
-  //         // "Sustainability Manager",
-  //       ],
-  //       CertificateImage: ["MA_certificates.webp"],
-  //       imageName: "MA_certificates",
-  //     },
+      certificateSkillList: [
+        "Holistic and End-to-End Curriculum ",
+        "Industry-Aligned and Future-Ready",
+        "Hands-on and Project-Based Learning ",
+        "Experienced Faculty and Industry Experts",
+      ],
+      certificateListPara:
+        " Our specialised Product Management Certificate will open doors to various roles for you, whether you are a Marketing Manager, Product Owner, Category or Brand Manager. ",
+      certificateRolesList: [
+        "Associate Product Manager",
+        "Assistant Product Manager",
+        "Product Manager",
+        "Senior Product Manager",
+      ],
+      CertificateImage: ["PDM_certificates.webp"],
+      imageName: "PDM_certificates",
+    },
 
-  //     videoOne: {
-  //       image: "/assets/images/background/full-video-bg.webp",
-  //       videoId: "y2Eqx6ys1hQ",
-  //       title: "Linoor is trusted by millions of customers",
-  //       text1:
-  //         "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
-  //       text2:
-  //         "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
-  //     },
-  //     CourseCurriculum: [
-  //       {
-  //         id: 1,
-  //         courseCurriculumTitle: "Course curriculum",
-  //         faqs: [
-  //           {
-  //             id: 1,
-  //             title: "Product Strategy",
-  //             lists: [
-  //               "Introduction to Product Management",
-  //               " Customer Insights for Product Innovation",
-  //               "Analyzing Product Opportunities",
-  //               "Business Model Design",
-  //               " Financial Analysis",
-  //               "Product Planning and Roadmapping",
-  //               "Taking Product to Market",
-  //               "Managing Product Evolution and Growth",
-  //             ],
-  //           },
-  //           {
-  //             id: 2,
-  //             title: "Product Execution",
-  //             lists: [
-  //               "Product Discovery and Requirements Definition",
-  //               "UI/UX Design",
-  //               "Product Prototyping",
-  //               "Agile Product Development",
-  //               "Business Communication for Product Managers",
-  //             ],
-  //           },
-  //           {
-  //             id: 3,
-  //             title: "Tech For PMs",
-  //             lists: ["Analytics, AI and ML              ", "Tech For PMs"],
-  //           },
-  //         ],
-  //         defaultCurrent: 1,
-  //       },
-  //     ],
-  //     faqsSection: [
-  //       {
-  //         id: 1,
-  //         faqs: [
-  //           {
-  //             id: 1,
-  //             title: "What is Product Management?",
-  //             text: "Product Management involves overseeing a product's development, marketing, and management throughout its lifecycle, from ideation to launch and beyond. Product managers are responsible for understanding customer needs, defining product features, and collaborating with cross-functional teams to deliver successful products.",
-  //           },
-  //           {
-  //             id: 2,
-  //             title: "What are the key responsibilities of a product manager?",
-  //             text: "Product managers are responsible for a range of tasks. Some of these include conducting user research, gathering feedback, translating customer needs into detailed requirements, evaluating market trends & competition, assessing product-market fit for new opportunities, exploring business model frameworks and aligning product strategy with business objectives, along with many more key responsibilities.",
-  //           },
-  //           {
-  //             id: 3,
-  //             title:
-  //               "What role does user research play in product management, and how is it addressed in a product management course?            ",
-  //             text: "User research is crucial for understanding customer needs and preferences, gathering feedback, and shaping product development decisions. In a product management course, participants learn methodologies and techniques for conducting effective user research, analysing data, and translating insights into actionable requirements to ensure products meet customer expectations.",
-  //           },
-  //           {
-  //             id: 4,
-  //             title:
-  //               "How does a product management course online help in evaluating market trends and assessing product-market fit?",
-  //             text: "Product management courses cover strategies for evaluating market trends, analysing competition, and assessing product-market fit. Participants learn how to identify market opportunities, validate product ideas, and refine product strategies to address customer needs and stay competitive in the market.",
-  //           },
-  //           {
-  //             id: 5,
-  //             title:
-  //               "What tools are covered in Digital Regenesys’s Product Management Course?",
-  //             text: "The tools that are covered in Digital Regenesys’s Product Management Course are - Aha!,  Figma, Balsamiq, JIRA, ChatGpt and Mixpanel.            ",
-  //           },
-  //           {
-  //             id: 6,
-  //             title:
-  //               "Will I receive any certification from Digital Regenesys after completing the Product Management course?",
-  //             text: `
-  //             Yes, you will receive an internationally recognised certification from Digital Regenesys after completing the Product Management course online.
+    videoOne: {
+      image: "/assets/images/background/full-video-bg.webp",
+      videoId: "y2Eqx6ys1hQ",
+      title: "Linoor is trusted by millions of customers",
+      text1:
+        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+      text2:
+        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+    },
+    CourseCurriculum: [
+      {
+        id: 1,
+        courseCurriculumTitle: "Course curriculum",
+        faqs: [
+          {
+            id: 1,
+            title: "Product Strategy",
+            lists: [
+              "Introduction to Product Management",
+              " Customer Insights for Product Innovation",
+              "Analyzing Product Opportunities",
+              "Business Model Design",
+              " Financial Analysis",
+              "Product Planning and Roadmapping",
+              "Taking Product to Market",
+              "Managing Product Evolution and Growth",
+            ],
+          },
+          {
+            id: 2,
+            title: "Product Execution",
+            lists: [
+              "Product Discovery and Requirements Definition",
+              "UI/UX Design",
+              "Product Prototyping",
+              "Agile Product Development",
+              "Business Communication for Product Managers",
+            ],
+          },
+          {
+            id: 3,
+            title: "Tech For PMs",
+            lists: ["Analytics, AI and ML              ", "Tech For PMs"],
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    faqsSection: [
+      {
+        id: 1,
+        faqs: [
+          {
+            id: 1,
+            title: "What is Product Management?",
+            text: "Product Management involves overseeing a product's development, marketing, and management throughout its lifecycle, from ideation to launch and beyond. Product managers are responsible for understanding customer needs, defining product features, and collaborating with cross-functional teams to deliver successful products.",
+          },
+          {
+            id: 2,
+            title: "What are the key responsibilities of a product manager?",
+            text: "Product managers are responsible for a range of tasks. Some of these include conducting user research, gathering feedback, translating customer needs into detailed requirements, evaluating market trends & competition, assessing product-market fit for new opportunities, exploring business model frameworks and aligning product strategy with business objectives, along with many more key responsibilities.",
+          },
+          {
+            id: 3,
+            title:
+              "What role does user research play in product management, and how is it addressed in a product management course?            ",
+            text: "User research is crucial for understanding customer needs and preferences, gathering feedback, and shaping product development decisions. In a product management course, participants learn methodologies and techniques for conducting effective user research, analysing data, and translating insights into actionable requirements to ensure products meet customer expectations.",
+          },
+          {
+            id: 4,
+            title:
+              "How does a product management course online help in evaluating market trends and assessing product-market fit?",
+            text: "Product management courses cover strategies for evaluating market trends, analysing competition, and assessing product-market fit. Participants learn how to identify market opportunities, validate product ideas, and refine product strategies to address customer needs and stay competitive in the market.",
+          },
+          {
+            id: 5,
+            title:
+              "What tools are covered in Digital Regenesys’s Product Management Course?",
+            text: "The tools that are covered in Digital Regenesys’s Product Management Course are - Aha!,  Figma, Balsamiq, JIRA, ChatGpt and Mixpanel.            ",
+          },
+          {
+            id: 6,
+            title:
+              "Will I receive any certification from Digital Regenesys after completing the Product Management course?",
+            text: `
+              Yes, you will receive an internationally recognised certification from Digital Regenesys after completing the Product Management course online.
 
-  //               `,
-  //           },
-  //           {
-  //             id: 7,
-  //             title: "Why should I consider a career in product management?",
-  //             text: "Considering a career in product management offers a unique and rewarding opportunity to be at the forefront of innovation and customer-centric product development. As a product manager, you'll play a pivotal role in shaping the direction of products or services from inception to market launch and beyond. This role allows you to work cross-functionally with diverse teams, including engineering, marketing, sales, and design, fostering collaboration and continuous learning. Moreover, product management provides a dynamic environment where you can leverage your strategic thinking, problem-solving skills, and creativity to address complex challenges and drive business growth. ",
-  //           },
-  //         ],
-  //         defaultCurrent: 1,
-  //       },
-  //     ],
-  //     courseBenefits: {
-  //       title: "Benefits",
-  //       desc: "",
-  //       tabBtns: [
-  //         {
-  //           id: "tab-1",
-  //           title: "Career Support",
-  //         },
-  //         {
-  //           id: "tab-2",
-  //           title: "Doubt Resolution",
-  //         },
-  //         {
-  //           id: "tab-3",
-  //           title: "Learning Support",
-  //         },
-  //         {
-  //           id: "tab-4",
-  //           title: "Networking",
-  //         },
-  //       ],
-  //       tabsContents: [
-  //         {
-  //           id: "tab-1",
-  //           image: "featured-image-14.jpg",
+                `,
+          },
+          {
+            id: 7,
+            title: "Why should I consider a career in product management?",
+            text: "Considering a career in product management offers a unique and rewarding opportunity to be at the forefront of innovation and customer-centric product development. As a product manager, you'll play a pivotal role in shaping the direction of products or services from inception to market launch and beyond. This role allows you to work cross-functionally with diverse teams, including engineering, marketing, sales, and design, fostering collaboration and continuous learning. Moreover, product management provides a dynamic environment where you can leverage your strategic thinking, problem-solving skills, and creativity to address complex challenges and drive business growth. ",
+          },
+        ],
+        defaultCurrent: 1,
+      },
+    ],
+    courseBenefits: {
+      title: "Benefits",
+      desc: "",
+      tabBtns: [
+        {
+          id: "tab-1",
+          title: "Career Support",
+        },
+        {
+          id: "tab-2",
+          title: "Doubt Resolution",
+        },
+        {
+          id: "tab-3",
+          title: "Learning Support",
+        },
+        {
+          id: "tab-4",
+          title: "Networking",
+        },
+      ],
+      tabsContents: [
+        {
+          id: "tab-1",
+          image: "featured-image-14.jpg",
 
-  //           lists: [
-  //             "100% Career Counselling",
-  //             "Get yourself interview-ready with proper training, industry expert interactions and resume-building tools",
-  //             " Elevate your LinkedIn game with a comprehensive profile-building session",
-  //           ],
-  //         },
-  //         {
-  //           id: "tab-2",
-  //           image: "featured-image-14.jpg",
+          lists: [
+            "100% Career Counselling",
+            "Get yourself interview-ready with proper training, industry expert interactions and resume-building tools",
+            " Elevate your LinkedIn game with a comprehensive profile-building session",
+          ],
+        },
+        {
+          id: "tab-2",
+          image: "featured-image-14.jpg",
 
-  //           lists: [
-  //             "Solve all your queries with one-on-one interaction during the lectures.",
-  //             "Ask questions, get answers and complete support from the faculty.            ",
-  //             " Enhanced learning experience offered by our highly experienced and achieved faculties.",
-  //           ],
-  //         },
-  //         {
-  //           id: "tab-3",
-  //           image: "featured-image-14.jpg",
+          lists: [
+            "Solve all your queries with one-on-one interaction during the lectures.",
+            "Ask questions, get answers and complete support from the faculty.            ",
+            " Enhanced learning experience offered by our highly experienced and achieved faculties.",
+          ],
+        },
+        {
+          id: "tab-3",
+          image: "featured-image-14.jpg",
 
-  //           lists: [
-  //             "Get unlimited learning access for 1 year to the learning management system.            ",
-  //             "Receive proper guidance as per your special requirements from our faculties.",
-  //             " Access the recorded lectures in case you miss a session.            ",
-  //           ],
-  //         },
+          lists: [
+            "Get unlimited learning access for 1 year to the learning management system.            ",
+            "Receive proper guidance as per your special requirements from our faculties.",
+            " Access the recorded lectures in case you miss a session.            ",
+          ],
+        },
 
-  //         {
-  //           id: "tab-4",
-  //           image: "featured-image-14.jpg",
+        {
+          id: "tab-4",
+          image: "featured-image-14.jpg",
 
-  //           lists: [
-  //             "Be part of a community of 10,000+ Learners.",
-  //             "Connect with the Industry experts who will help you guide you through your career after course completion. ",
-  //             "Talk, share, connect, learn and grow along with other students in your batch.",
-  //           ],
-  //         },
-  //       ],
-  //     },
-  //     productDetails: {
-  //       flagsa: "/assets/images/icons/flag_sa.webp",
-  //       flagnig: "/assets/images/icons/flag_nigeria.webp",
-  //       flagus: "/assets/images/icons/flag_us.webp",
-  //       flagind: "/assets/images/icons/flag_india.webp",
-  //       flagken: "/assets/images/icons/flag_kenya.webp",
-  //       title: "Fees structure & Certification",
-  //       subTitle: "Get Certified",
-  //       price: 64499,
-  //       certifiedTitle1: "Earn Your Product Management Certificate",
-  //       certifiedText1:
-  //         "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Product Management Career.",
-  //       certifiedTitle2: "Share Your Achievement",
+          lists: [
+            "Be part of a community of 10,000+ Learners.",
+            "Connect with the Industry experts who will help you guide you through your career after course completion. ",
+            "Talk, share, connect, learn and grow along with other students in your batch.",
+          ],
+        },
+      ],
+    },
+    productDetails: {
+      flagsa: "/assets/images/icons/flag_sa.webp",
+      flagnig: "/assets/images/icons/flag_nigeria.webp",
+      flagus: "/assets/images/icons/flag_us.webp",
+      flagind: "/assets/images/icons/flag_india.webp",
+      flagken: "/assets/images/icons/flag_kenya.webp",
+      title: "Fees structure & Certification",
+      subTitle: "Get Certified",
+      price: 64499,
+      certifiedTitle1: "Earn Your Product Management Certificate",
+      certifiedText1:
+        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Product Management Career.",
+      certifiedTitle2: "Share Your Achievement",
 
-  //       certifiedText2:
-  //         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.        ",
-  //       certifiedTitle3: "Benefits",
-  //       certifiedText3:
-  //         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
-  //       admissionText:
-  //         "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
-  //       termsConditions: "*Terms & Conditions",
-  //       CsFundamentals: "Total Admission Fee",
-  //       CsDefenceToolbox: "",
-  //     },
-  //     modalImage: "Pop-up_bg.webp",
-  //     zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
-  //     stickyText:
-  //       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-  //   },
+      certifiedText2:
+        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.        ",
+      certifiedTitle3: "Benefits",
+      certifiedText3:
+        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+      admissionText:
+        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+      termsConditions: "*Terms & Conditions",
+      CsFundamentals: "Total Admission Fee",
+      CsDefenceToolbox: "",
+    },
+    modalImage: "Pop-up_bg.webp",
+    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+    stickyText:
+      "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  },
   DBA: {
     processOne: [
       {
@@ -9340,6 +9341,11 @@ export const brochureDetails: any = {
   //Project Management
   PM: {
     name: "project-management-brochure_compressed.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  PDM: {
+    name: "Product-Management-Brochure.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },

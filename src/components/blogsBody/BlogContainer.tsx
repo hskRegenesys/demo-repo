@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// @ts-ignore
 import { LeftOutlined } from "@ant-design/icons";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
@@ -77,14 +78,22 @@ const BlogContainer = ({
             parentHref="/blog"
           />
           <Link href={`/blog/`} passHref>
-            <p
-              role="button"
-              className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
-            >
-              <LeftOutlined className="pe-2" />
-              {/* <LeftOutlined /> */}
-              Back to list
-            </p>
+            <div style={{ display: "flex" }}>
+              <span
+                className="fa fa-angle-left"
+                style={{
+                  fontSize: "18px",
+                  paddingRight: "10px",
+                }}
+              ></span>
+              <p
+                role="button"
+                className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
+              >
+                {/* <LeftOutlined className="pe-2" /> */}
+                Back to list
+              </p>
+            </div>
           </Link>
           <div className="row py-3">
             <div className="col-12 col-lg-9">
