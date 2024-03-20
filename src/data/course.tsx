@@ -806,7 +806,7 @@ export const courseData = {
   //       id: 1,
   //       // image: "yellow-bg-details-bg-1.webp",
   //       youtubeUrl:
-  //         "https://www.youtube.com/embed/_Yfdbh_ktAU?autoplay=1&loop=1&playlist=_Yfdbh_ktAU",
+  //         "https://www.youtube.com/embed/53hvNdE2HPo?autoplay=1&loop=1&playlist=53hvNdE2HPo",
   //       title: "Product Management Course",
   //       text: `
   //         Product Management course offers a thorough curriculum aimed at empowering professionals with the necessary skills and expertise to excel and focus on Product Lifecycle Management. It encompasses all stages of the product lifecycle, ranging from initial concept generation and customer analysis to product creation, release, and continuous improvement.
@@ -875,10 +875,10 @@ export const courseData = {
   //     certificateListPara:
   //       " Our specialised Product Management Certificate will open doors to various roles for you, whether you are a Marketing Manager, Product Owner, Category or Brand Manager. ",
   //     certificateRolesList: [
-  //       // "Project Manager",
-  //       // "Strategy Consultant",
-  //       // "Innovation Manager ",
-  //       // "Sustainability Manager",
+  //       "Associate Product Manager",
+  //       "Assistant Product Manager",
+  //       "Product Manager",
+  //       "Senior Product Manager",
   //     ],
   //     CertificateImage: ["PDM_certificates.webp"],
   //     imageName: "PDM_certificates",

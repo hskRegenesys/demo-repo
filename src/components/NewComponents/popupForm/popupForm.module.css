@@ -54,6 +54,7 @@
 
 .Content {
   display: flex;
+  width: 100%;
 }
 
 .ImageContainer {

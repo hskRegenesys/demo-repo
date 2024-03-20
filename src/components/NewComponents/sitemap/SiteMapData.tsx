@@ -476,38 +476,38 @@ const Sidemapdata: Sidemapdata = {
           title: "Digital Marketing Certifications",
           link: "https://www.digitalregenesys.com/digital-marketing-certifications",
         },
-        // {
-        //   title: "Fundamentals of Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/fundamentals-of-digital-marketing",
-        // },
-        // {
-        //   title: "Online Digital Marketing Course",
-        //   link: "https://www.digitalregenesys.com/online-digital-marketing-course",
-        // },
-        // {
-        //   title: "What Does a Digital Marketer Do",
-        //   link: "https://www.digitalregenesys.com/what-does-a-digital-marketer-do",
-        // },
-        // {
-        //   title: "What's Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/what's-digital-marketing",
-        // },
-        // {
-        //   title: "Best Digital Marketing Services",
-        //   link: "https://www.digitalregenesys.com/best-digital-marketing-services",
-        // },
-        // {
-        //   title: "Certificate in Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/certificate-in-digital-marketing",
-        // },
-        // {
-        //   title: "Digital Marketing Platforms",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-platforms",
-        // },
-        // {
-        //   title: "Digital Marketing Tips",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-tips",
-        // },
+        {
+          title: "Fundamentals of Digital Marketing",
+          link: "https://www.digitalregenesys.com/fundamentals-of-digital-marketing",
+        },
+        {
+          title: "Online Digital Marketing Course",
+          link: "https://www.digitalregenesys.com/online-digital-marketing-course",
+        },
+        {
+          title: "What Does a Digital Marketer Do",
+          link: "https://www.digitalregenesys.com/what-does-a-digital-marketer-do",
+        },
+        {
+          title: "What's Digital Marketing",
+          link: "https://www.digitalregenesys.com/what's-digital-marketing",
+        },
+        {
+          title: "Best Digital Marketing Services",
+          link: "https://www.digitalregenesys.com/best-digital-marketing-services",
+        },
+        {
+          title: "Certificate in Digital Marketing",
+          link: "https://www.digitalregenesys.com/certificate-in-digital-marketing",
+        },
+        {
+          title: "Digital Marketing Platforms",
+          link: "https://www.digitalregenesys.com/digital-marketing-platforms",
+        },
+        {
+          title: "Digital Marketing Tips",
+          link: "https://www.digitalregenesys.com/digital-marketing-tips",
+        },
         // {
         //   title: "Masters in Digital Marketing",
         //   link: "https://www.digitalregenesys.com/masters-in-digital-marketing",

@@ -355,7 +355,7 @@ export const allCourseList = [
   //       id: 236,
   //       course_id: 28,
   //       country_id: 5,
-  //       price: "1075",
+  //       price: "1,075",
   //       valid_from: "2022-12-09T06:58:52.504Z",
   //       valid_to: "2022-12-09T06:58:52.504Z",
   //       country: USA,

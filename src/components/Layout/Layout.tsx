@@ -129,18 +129,24 @@ const Layout = (props: any) => {
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
         {/* <!-- Facebook Meta Tags --> */}
-        {/* {canonicalData && <meta property="og:url" content={canonicalData} />}
+        {canonicalData && <meta property="og:url" content={canonicalData} />}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={ogImg} /> */}
+        {title && <meta property="og:title" content={title} />}
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+        {ogImg && <meta property="og:image" content={ogImg} />}
         {/* <!-- Twitter Meta Tags --> */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="digitalregenesys.com" />
-        <meta property="twitter:url" content={canonicalData} />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={ogImg} /> */}
+        {canonicalData && (
+          <meta property="twitter:url" content={canonicalData} />
+        )}
+        {title && <meta name="twitter:title" content={title} />}
+        {description && (
+          <meta name="twitter:description" content={description} />
+        )}
+        {ogImg && <meta name="twitter:image" content={ogImg} />}
 
         {/* <link
           rel="alternate"
