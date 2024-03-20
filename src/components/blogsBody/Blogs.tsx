@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
-import { shuffleArray } from "src/utils/common";
 import { Spinner } from "react-bootstrap";
 import PostCarousel from "./PostCarousel";
 
@@ -21,13 +20,31 @@ const Blogs = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+const sitemapData =postList?.flatMap(item=>item.posts)
+  const xmlOperation = async (sitemapData: any) => {
+    if (!(sitemapData.length > 0)) return;
+
+    try {
+      await fetch("/api/sitemapDynamicUrls", {
+        method: "POST",
+        body: JSON.stringify({ sitemapData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    xmlOperation(sitemapData);
+  }, [sitemapData]);
+  
   const postByCategory = async (
     response: Array<{
       [key: string]: number | string;
     }>
   ) => {
-    shuffleArray(response);
-
     const apiResponse = await Promise.all(
       response?.slice(0, 12).map(async (category) => ({
         category: category.name,
@@ -56,15 +73,15 @@ const Blogs = () => {
             return values?.posts?.length > 0 ? (
               <div key={values?.category} className="py-3">
                 <div className="d-flex justify-content-between align-items-center">
-                  <p
-                    className="h6 p-0 m-0"
+                  <h2
+                    className="h6 p-0 m-0 fw-bold"
                     dangerouslySetInnerHTML={{
                       __html: values?.category.toString(),
                     }}
                   />
 
                   <div>
-                    <Link href={`/blogs/category/${values?.slug}`} passHref>
+                    <Link href={`/blog/category/${values?.slug}`} passHref>
                       <a>
                         <b
                           role="button"

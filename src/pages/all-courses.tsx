@@ -30,7 +30,7 @@ const allCourse = () => {
   return (
     <Layout pageTitle="allCourse">
       <Style />
-      <HeaderOne pageTitle="allCourse" />
+      <HeaderOne pageTitle="all-courses" />
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="Products" page="All courses" />

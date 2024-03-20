@@ -1,0 +1,163 @@
+/* connectContainer.module.css */
+.connectContainer {
+  background-color: #1f2b37;
+  margin-top: 62px;
+}
+.containerContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 68px 0px;
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.rightSection {
+  flex: 1;
+  margin-left: 20px;
+  padding: 24px;
+  background-color: #ffffff;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.heading {
+  color: #bbf7d0;
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: var(--White, #fff);
+  font-family: Montserrat-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin-bottom: 54px;
+}
+
+.textList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  padding-left: 20px;
+}
+
+.textList li {
+  color: var(--light-text-white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+}
+.textContainer {
+  display: grid;
+  justify-content: space-between;
+  gap: 10px;
+}
+.applyNowHeading {
+  color: var(--primary-primary-charcoal, #131718);
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  left: -34px;
+  justify-content: space-between;
+  gap: 84px;
+  left: -11px;
+  bottom: 10px;
+}
+
+.icontext {
+  position: relative;
+}
+
+.dottedLine {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  height: 100%;
+  height: inherit;
+  border-left: 2px dotted lightgrey;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 920px) {
+  .connectContainer {
+    flex-direction: column;
+    margin-top: 44px;
+  }
+  .containerContact {
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  .rightSection {
+    width: 100%;
+
+    margin-left: 0;
+    margin-top: 20px; /* Add spacing between the sections */
+    max-width: none; /* Remove max-width for better responsiveness */
+  }
+
+  .textList {
+    display: flex;
+    text-align: left; /* Center the text on smaller screens */
+    gap: 0px;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .heading {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Media Query for even smaller screens */
+@media only screen and (max-width: 760px) {
+  .connectContainer {
+    padding: 32px 16px;
+  }
+
+  .leftSection {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .icon {
+    width: 50px;
+  }
+}

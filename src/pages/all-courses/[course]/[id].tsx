@@ -22,7 +22,7 @@ import CourseBenefits from "@/components/CourseBenefits/CourseBenefits";
 const ToolsCovered = dynamic(
   () => import("@/components/ToolsCovered/ToolsCovered")
 );
-import React from "react";
+import React, { useState } from "react";
 
 const CourseCurriculum = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculum")
@@ -47,6 +47,11 @@ import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import { allCourseList } from "@/data/courseData";
+import CourseCertificate from "@/components/CourseCertificate/CourseCertificate";
+import { Modal } from "react-bootstrap";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import WhayTheySay from "@/components/whatTheySay/whatTheySay";
+import videoTestimonialData from "@/data/videoTestimonial";
 
 const CourseCurriculumTwo = dynamic(
   () => import("@/components/CourseCurriculum/CourseCurriculumTwo")
@@ -54,6 +59,7 @@ const CourseCurriculumTwo = dynamic(
 
 const DigitalMarketing = (props: any) => {
   const router = useRouter();
+  const [show, setShow] = useState(false);
 
   const courseId: any = router?.query?.id;
 
@@ -90,7 +96,10 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   parentToParentName();
-
+  // console.log(
+  //   "courseDetails courseDetails.modalImage",
+  //   courseDetails.modalImage
+  // );
   return (
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
@@ -107,6 +116,7 @@ const DigitalMarketing = (props: any) => {
           parentToParentName()
         )}`}
       />
+
       {courseDetails && (
         <>
           <CourseDetails
@@ -116,13 +126,23 @@ const DigitalMarketing = (props: any) => {
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
           <ToolsCovered courseDetails={courseDetails} />
-          <FeatureSeven courseDetails={courseDetails} />
+          {courseDetails?.courseCertificate && (
+            <CourseCertificate courseDetails={courseDetails} />
+          )}
+          {courseDetails?.featureSeven && (
+            <FeatureSeven courseDetails={courseDetails} />
+          )}
+
           <VideoOne courseDetails={courseDetails} />
+          <WhayTheySay courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
+
           {CourseCurriculumTwo && (
             <CourseCurriculumTwo courseDetails={courseDetails} />
           )}
-          <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+          {courseDetails?.productDetails && (
+            <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+          )}
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
           <CallToSection />

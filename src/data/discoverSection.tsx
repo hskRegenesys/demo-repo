@@ -4,7 +4,7 @@ const discoverSection = {
     {
       id: 1,
       image: "contact-location.webp",
-      title: "Location",
+      title: "Head Office Address",
       href: "https://www.google.com/maps/place/548+Market+St,+San+Francisco,+CA+94104,+USA/@37.790069,-122.400744,16z/data=!4m6!3m5!1s0x808581942ecaf9e3:0x163a8f17c7ba01ee!8m2!3d37.7900688!4d-122.4007436!16s%2Fg%2F11t276pg_5?hl=en",
       buttonText: "Open in Google Map",
       text: "548 Market St. #243271, \n  San Francisco,\n California 94104-5401",

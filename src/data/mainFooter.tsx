@@ -21,24 +21,13 @@ export const mainFooter = {
   about3:
     "We’ve grown our business on a set of \n three building blocks. Enjoy the \n people you work.",
   text: "Unlock the power of learning with our cutting-edge online courses, designed to inspire, engage, and transform the way you learn and grow!",
-  address:
-    "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
-  address2:
-    "548 Market \n St. #243271,\n San Francisco,\n California 94104-5401",
-  address3:
-    "8th Floor,  \n Churchgate Tower 2  \n PC 31 Victoria Island, \n  Nigeria",
-  address4:
-    "8th Floor,  \n Delta Corner Tower,\n Chiromo Road, 07th Floor, \n Westlands, Nairobi, 00800",
 
-  address5:
-    "Proxima Building, \n Unit 1101 11th Floor, \n Plot 19,Sector 30A, Vashi \n Navi Mumbai, India, 400705",
-
-  phone: "+27 (11) 669 5000",
+  phone: "",
   phone2: "",
   phone3: "+234 (1) 453 0959",
   phone4: "",
   phone5: "+91 1800 212 9950",
-  web: "www.regenesys.net",
+  web: "",
   weblink: "https://www.regenesys.net/",
 
   web2: "",
@@ -58,6 +47,49 @@ export const mainFooter = {
     "Sign up for our latest news & articles. We won’t give you spam mails.",
   subscribeText:
     "Register and get notified about the news & updates before it gets too late.",
+
+  addressDetails: [
+    {
+      addressTitle: "USA Head Office",
+      fullAddress:
+        "548 Market \n St. #243271,\n San Francisco,\n California 94104-5401",
+    },
+    {
+      addressTitle: "South Africa Corporate Office",
+      fullAddress:
+        "165 West Street, \n Sandton, \n  Johannesburg \n South Africa, 2031",
+    },
+    {
+      addressTitle: "Nigeria Corporate Office",
+      fullAddress:
+        "8th Floor,  \n Churchgate Tower 2  \n PC 31 Victoria Island, \n  Nigeria",
+    },
+    {
+      addressTitle: "Kenya Corporate Office",
+      fullAddress:
+        "Delta Corner Tower,\n Chiromo Road, 07th Floor, \n   Westlands, \n Nairobi, 00800",
+    },
+
+    {
+      addressTitle: "Croatia Corporate Office",
+      fullAddress: "sv. Bartula 131,\n 23000 Kozino, \n Zadar, Croatia",
+    },
+    {
+      addressTitle: "India Corporate Office",
+      fullAddress:
+        "Proxima Building, \n Unit 1101 11th Floor, \n Plot 19,Sector 30A, Vashi \n Navi Mumbai, India, 400705",
+    },
+    {
+      addressTitle: "Tanzania Corporate Office",
+      fullAddress:
+        "102, First Floor, Regus, \n Acacia Estates Offices, \n Plot No. 84  Kinondoni Rd,\n Dar es Salaam 14110",
+    },
+    {
+      addressTitle: "Uganda Corporate Office",
+      fullAddress:
+        "Regus, 4th floor \n The Acacia Mall  14-18 \n Cooper Road,  Off Acacia Ave,\n Kampala, Uganda",
+    },
+  ],
   socials: [
     {
       id: 1,
@@ -94,6 +126,13 @@ export const mainFooter = {
       href: "/contact",
       title: "Contact us",
     },
+
+    {
+      id: 6,
+      href: "/blog",
+      title: "Blog",
+    },
+
     {
       id: 4,
       href: "/about",
@@ -110,6 +149,12 @@ export const mainFooter = {
       href: "/all-courses",
       title: "Our Courses",
     },
+
+    // {
+    //   id: 8,
+    //   href: "/all-courses-new",
+    //   title: "Our Courses New",
+    // },
   ],
   ...footer,
   newses: [

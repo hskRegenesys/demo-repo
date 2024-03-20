@@ -1,0 +1,226 @@
+/* footerDR.module.css */
+.footerContainer {
+  background-color: #333;
+  color: white;
+  padding: 40px 108px;
+}
+
+.footerContainer li {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.12px;
+  margin-bottom: 12px;
+  font-family: Montserrat;
+}
+.footerContainer li:hover {
+  color: #01ad6e;
+  font-weight: 600;
+}
+.footerContent2 ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Create two columns with equal width */
+  gap: 0px; /* Adjust the gap between items as needed */
+}
+
+.footerContainer a {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.12px;
+  margin-bottom: 12px;
+  font-family: Montserrat;
+}
+
+.footerSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footerContent2,
+.footerContent3 {
+  margin-right: 20px;
+}
+
+.content1 {
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+  max-width: 673px;
+  width: 100%;
+}
+
+.footerLogo img {
+  width: 174.693px;
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+.footerTextheader {
+  color: #fff;
+  display: inline-block;
+}
+.footerTextheader h2 {
+  color: #fff;
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  padding-right: 95px;
+}
+
+.getStartedButton {
+  width: 100%;
+  padding: 12px 20px;
+  max-width: 260px;
+  border-radius: 8px;
+  border: 1px solid var(--light-text-surface-primary-green, #008554);
+  background: var(--light-text-surface-primary-green, #008554);
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
+  color: var(--primary-primary-white, #fff);
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  min-width: 260px;
+  transition: background-color 0.8s;
+}
+.getStartedButton:hover {
+  color: var(--primary-primary-charcoal, #131718);
+  background-color: #ffffff;
+}
+.strong {
+  color: #1bb179;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.12px;
+  margin-bottom: 20px;
+}
+
+.footerContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerContent li {
+  margin-bottom: 5px;
+}
+
+.socialIcons {
+  width: 100%;
+}
+
+.socialIcons img {
+  width: 14px;
+  margin-right: 10px;
+}
+
+.footerText {
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+  width: 100%;
+}
+
+.footerText a,
+.footerTextInside a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerText a:hover,
+.footerTextInside a:hover {
+  text-decoration: underline;
+  color: #1bb179;
+  font-weight: 600;
+}
+
+.footerText p {
+  margin: 5px 0;
+  font-family: Montserrat;
+}
+.footerTextInside {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footerSectionMobile {
+  display: none;
+}
+.footerTextDesktop {
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+}
+.footerTextDesktop p {
+  font-family: Montserrat;
+  color: #fff;
+}
+.footerContent4 span {
+  font-family: Montserrat;
+}
+/* Media query for mobile view */
+@media only screen and (max-width: 800px) {
+  .footerContent2 ul {
+    list-style: none;
+    display: block;
+  }
+  .footerSection {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .footerSectionMobile {
+    display: block;
+  }
+  .footerSectionDesktop {
+    display: none;
+  }
+  .footerContainer {
+    padding: 24px;
+  }
+  .footerTextheader h2 {
+    padding-right: 0px;
+    text-align: center;
+  }
+  .footerLogo img {
+    display: none;
+  }
+  .footerContent2,
+  .footerContent3,
+  .footerContent4,
+  .footerContent1 {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add margin-bottom for spacing between rows */
+  }
+
+  .footerLogo img {
+    margin-bottom: 20px;
+  }
+
+  .footerTextheader p {
+    padding-right: 0;
+    text-align: center;
+  }
+}

@@ -22,8 +22,6 @@ const RecommendedPost = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(getOneRandom(bannerImages));
-
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
       <Spinner animation="border" />
@@ -47,7 +45,7 @@ const RecommendedPost = () => {
           vertical
         >
           {postList?.map((values) => (
-            <Link key={values.id} href={`/blogs/${values?.slug}`} passHref>
+            <Link key={values.id} href={`/blog/${values?.slug}`} passHref>
               <div className="m-2 w-100 rounded btn" role="button">
                 <div className="row align-items-center">
                   <div

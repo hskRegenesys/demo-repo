@@ -1,0 +1,51 @@
+.uspSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.uspCard {
+  text-align: center;
+  padding: 24px;
+}
+
+.uspEnrollmentCount {
+  color: #008554;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+.enrollmentContainer {
+  display: flex;
+  align-items: center;
+}
+.usp-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.CardText {
+  color: #2b3340;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  font-family: Montserrat !important;
+  margin-bottom: 0px;
+}
+@media (max-width: 920px) {
+  .uspSectionContainer {
+    display: none;
+  }
+}

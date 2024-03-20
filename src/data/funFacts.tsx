@@ -1,21 +1,21 @@
 export const funFactSix = [
   {
     id: 1,
-    image: "assets/images/icons/globe.svg",
+    image: "assets/images/icons/Location.svg",
     count: 0,
-    text: "USA, South Africa, Nigeria, Kenya & India",
+    text: "USA, South Africa, Nigeria,Uganda, Kenya & India",
   },
   {
     id: 2,
-    image: "assets/images/icons/students.png",
+    image: "assets/images/icons/Study.svg",
     count: 10000,
-    text: "Students",
+    text: "Student Enroled",
   },
   {
     id: 3,
-    image: "assets/images/icons/growth.svg",
+    image: "assets/images/icons/Users.svg",
     count: 0,
-    text: "Upskilling Courses",
+    text: "Enhances Upskilling Courses",
   },
 ];
 

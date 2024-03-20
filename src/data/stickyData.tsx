@@ -2,40 +2,40 @@ interface IAllPageStickyDataType {
   [key: string]: string;
 }
 const AllPageStickyData: IAllPageStickyDataType = {
-  "cyber-security":
-    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
-  "digital-marketing":
-    "Grasp the Fundamentals of Digital Marketing for Career Advancement",
+  "cyber-security": " Upskill yourself with Digital Regenesy's Courses",
+  home: " From Front to Back, Master Every Stack with our Full Stack Development Course",
+
+  "digital-marketing": " Upskill yourself with Digital Regenesy's Courses",
   "basic-digital-marketing":
-    "Grasp the Fundamentals of Digital Marketing for Career Advancement",
+    " Upskill yourself with Digital Regenesy's Courses",
   "advanced-digital-marketing":
-    "Become an Expert in Digital Marketing and Drive Your Organization's Success",
+    " Upskill yourself with Digital Regenesy's Courses",
   "applied-digital-marketing":
-    "Apply Digital Marketing Strategies to Boost Your Career and Company ROI",
-  "project-management":
-    "Lead Successful Projects and Teams with Expertise in Project Management",
-
-  "data-science":
-    "Boost your career with a Data Science Course. Contact now for Free Counselling!",
-  "basic-data-science":
-    "Unlock the Power of Data with Data Science Fundamentals",
-  "advanced-data-science":
-    "Improve Your Analytical Abilities Using Advanced Data Science",
-  "applied-data-science":
-    "Apply Data Science to Real-World Problems and Advance Your Career",
+    " Upskill yourself with Digital Regenesy's Courses",
+  "project-management": " Upskill yourself with Digital Regenesy's Courses",
+  "all-courses": " Upskill yourself with Digital Regenesy's Courses",
+  "data-science": " Upskill yourself with Digital Regenesy's Courses",
+  "full-stack-development":
+    " From Front to Back, Master Every Stack with our Full Stack Development Course",
+  "basic-data-science": " Upskill yourself with Digital Regenesy's Courses",
+  "advanced-data-science": " Upskill yourself with Digital Regenesy's Courses",
+  "applied-data-science": " Upskill yourself with Digital Regenesy's Courses",
   "cyber-defense-toolbox-course":
-    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
+    " Upskill yourself with Digital Regenesy's Courses",
 
-  "basic-digital-marketing-course":
-    "Grasp the Fundamentals of Digital Marketing for Career Advancement",
-  "advanced-digital-marketing-course":
-    "Grasp the Fundamentals of Digital Marketing for Career Advancement",
+  "digital-marketing-fundamentals":
+    " Upskill yourself with Digital Regenesy's Courses",
+  "advance-digital-marketing-course":
+    " Upskill yourself with Digital Regenesy's Courses",
   "cyber-security-fundamentals-course":
-    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
-  "design-thinking":
-    "Master the art of problem-solving and take your career to new heights with the Design Thinking Course",
-  "cyber-security-course":
-    "Guard Your Organization Against Cyberthreats and Launch Your Cybersecurity Career",
+    " Upskill yourself with Digital Regenesy's Courses",
+  "design-thinking": " Upskill yourself with Digital Regenesy's Courses",
+  "cyber-security-course": " Upskill yourself with Digital Regenesy's Courses",
+  "artificial-intelligence":
+    " Upskill yourself with Digital Regenesy's Courses",
+  "ai-introductory": "  Upskill yourself with Digital Regenesy's Courses",
+  "ai-intermediary": " Upskill yourself with Digital Regenesy's Courses",
+  "ai-advanced-applied": " Upskill yourself with Digital Regenesy's Courses",
 };
 
 export default AllPageStickyData;

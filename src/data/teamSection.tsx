@@ -24,51 +24,93 @@ const socials = [
 const teamSection = {
   title: "Popular topics",
   teams: [
+    // {
+    //   id: 9,
+    //   name: "Basic Digital Marketing Course",
+    //   href: "/all-courses/digital-marketing/basic-digital-marketing-course",
+    // },
+    // {
+    //   id: 10,
+    //   name: "Digital Marketing",
+    //   href: "/all-courses/digital-marketing",
+    // },
+    // {
+    //   id: 11,
+    //   name: "Applied Digital Marketing",
+    //   href: "/all-courses/digital-marketing/applied-digital-marketing",
+    // },
     {
-      id: 9,
-      name: "Basic Digital Marketing Course",
-      href: "/all-courses/digital-marketing/basic-digital-marketing-course",
+      id: 16,
+      name: "Full Stack Development",
+      href: "/all-courses/full-stack-development",
     },
     {
-      id: 10,
-      name: "Advanced Digital Marketing Course",
-      href: "/all-courses/digital-marketing/advanced-digital-marketing-course",
+      id: 18,
+      name: "Management Advancement",
+      href: "/all-courses/management-advancement",
     },
     {
-      id: 11,
-      name: "Applied Digital Marketing",
-      href: "/all-courses/digital-marketing/applied-digital-marketing",
+      id: 19,
+      name: "product management",
+      href: "/all-courses/product-management",
+    },
+    {
+      id: 17,
+      name: "Data and Business Analytics",
+      href: "/all-courses/data-and-business-analytics",
+    },
+    {
+      id: 6,
+      name: "Data Science",
+      href: "/all-courses/data-science",
+    },
+    {
+      id: 12,
+      name: "Artificial Intelligence",
+      href: "/all-courses/artificial-intelligence",
+    },
+    {
+      id: 12,
+      name: "Cyber Security",
+      href: "/all-courses/cyber-security",
     },
     {
       id: 2,
       name: "Project Management",
       href: "/all-courses/project-management",
     },
-    {
-      id: 12,
-      name: "Cyber Security Course",
-      href: "/all-courses/cyber-security-course",
-    },
-    {
-      id: 6,
-      name: "Basic Data Science",
-      href: "/all-courses/data-science/basic-data-science",
-    },
-    {
-      id: 7,
-      name: "Advanced Data Science",
-      href: "/all-courses/data-science/advanced-data-science",
-    },
-    {
-      id: 8,
-      name: "Applied Data Science",
-      href: "/all-courses/data-science/applied-data-science",
-    },
-    {
-      id: 11,
-      name: "Design Thinking",
-      href: "/all-courses/design-thinking",
-    },
+
+    // {
+    //   id: 7,
+    //   name: "Advance Data Science",
+    //   href: "/all-courses/data-science/advance-data-science",
+    // },
+    // {
+    //   id: 8,
+    //   name: "Applied Data Science",
+    //   href: "/all-courses/data-science/applied-data-science",
+    // },
+    // {
+    //   id: 11,
+    //   name: "Design Thinking",
+    //   href: "/all-courses/design-thinking",
+    // },
+
+    // {
+    //   id: 13,
+    //   name: "aI introductory",
+    //   href: "/all-courses/artificial-intelligence/ai-introductory",
+    // },
+    // {
+    //   id: 14,
+    //   name: "AI Intermediary",
+    //   href: "/all-courses/artificial-intelligence/ai-intermediary",
+    // },
+    // {
+    //   id: 15,
+    //   name: "AI Advanced Applied",
+    //   href: "/all-courses/artificial-intelligence/ai-advanced-applied",
+    // },
   ],
 };
 

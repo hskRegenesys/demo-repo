@@ -4,11 +4,13 @@ import { courseService } from "src/services";
 import PhoneInput from "react-phone-number-input";
 import Data from "@/data/AllformsData";
 import _ from "lodash";
+import { useRouter } from "next/router";
 
 const ApplyNow = (props: any) => {
   const hookForm: any = useForm();
   const [courseData, setcourseData] = useState([]);
-
+  const router = useRouter();
+  const url = router?.asPath;
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
@@ -24,23 +26,37 @@ const ApplyNow = (props: any) => {
 
   let courses: any = [];
 
+  // if (courseData.length) {
+  //   courses = _.filter(
+  //     courseData,
+  //     (item: any) =>
+  //       item?.parent_id === null &&
+  //       item?.isAddon === false &&
+  //       item?.mode_id === 1
+  //   );
+  // }
   if (courseData.length) {
     courses = _.filter(
       courseData,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 1
+        item?.mode_id === 1 &&
+        (url === "/all-courses/software-development-course"
+          ? item?.id === 229
+          : item?.id !== 229)
     );
   }
-
   const {
     formState: { errors },
     trigger,
     setValue,
     register,
     handleSubmit,
+    watch,
   } = hookForm;
+  const selectedCourse = watch("Programme_Of_Interest");
+
   return (
     <div
       className={`text-center p-3 rounded ${
@@ -126,7 +142,7 @@ const ApplyNow = (props: any) => {
         <div className="form-group mt-2">
           <input
             type="text"
-            placeholder="Enter City"
+            placeholder="Enter City*"
             className={`form-control ${errors?.City && "invalid"}`}
             {...register("City", {
               required: "City is Required",
@@ -158,10 +174,10 @@ const ApplyNow = (props: any) => {
               Course you are looking for *
             </option>
 
-            {courses.map((val: any) => {
+            {Data.allCourses.map((item: any) => {
               return (
-                <option key={val.id} value={val.name}>
-                  {val.name}
+                <option key={item.value} value={item.value}>
+                  {item.value}
                 </option>
               );
             })}
@@ -183,7 +199,7 @@ const ApplyNow = (props: any) => {
               required: "Qualification is required",
             })}
           >
-            <option value="">Highest Qualification</option>
+            <option value="">Highest Qualification*</option>
             {Data.qualification.map((item) => (
               <option key={item.value} value={item.value}>
                 {item.option}
@@ -196,7 +212,14 @@ const ApplyNow = (props: any) => {
             </small>
           )}
         </div>
-
+        <div className="text-center">
+          {(selectedCourse === "Digital Marketing" ||
+            selectedCourse === "Design Thinking") && (
+            <small className="text-black">
+              *Learn collaboratively! Apply with 15 people to begin the course
+            </small>
+          )}
+        </div>
         <div className=" text-center">
           <button
             style={{

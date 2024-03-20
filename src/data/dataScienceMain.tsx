@@ -14,7 +14,7 @@ export const dataScienceMain = [
   {
     id: 2,
     image: "7.webp",
-    name: "Advanced Data Science",
+    name: "Advance Data Science",
     tagline: [
       "Live Class ",
       "8 Weeks ",

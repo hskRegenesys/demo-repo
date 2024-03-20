@@ -1,0 +1,150 @@
+/* LsSection.module.css */
+
+.LsSectionContainer {
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.LsSectionTitle {
+  color: var(--yocket-com-ebony-clay, #2b3340);
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: -0.8px;
+  margin-bottom: 16px;
+}
+.LsSectionHeding {
+  color: var(--yocket-com-ebony-clay, #697386);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 52px */
+  letter-spacing: 1px;
+  margin-bottom: 56px;
+}
+
+.LsCardsContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  /* Add your container styles for cards */
+}
+
+.LsCard {
+  max-width: 386px;
+  height: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #e3e8ee;
+  background: linear-gradient(180deg, #f6fff8 100%, #f0fdf4 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
+}
+
+.LsImage {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  margin-bottom: 20px;
+}
+
+.LsQuestion {
+  color: var(--light-text-primary, #2b3340);
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.LsText {
+  color: var(--light-text-secondary, #6a767c);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: center;
+}
+
+/* swiper style */
+
+.buttonsContainer {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.learnMoreButton {
+  border-radius: 7.68px;
+  border: 1px solid var(--Light-Text-Primary, #2b3340);
+  background: var(--Light-Text-Primary, #008554);
+  color: var(--Primary-Primary---White, #fff);
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.12px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  .LsSectionContainer {
+    padding: 0px 20px;
+    margin-top: 40px;
+  }
+  .LsSectionTitle {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .LsSectionHeding {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .LsCard {
+    margin: 0 auto;
+  }
+  .swiperStyle {
+    --swiper-pagination-color: #008554;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #008554;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 120px;
+  }
+  .swiperStyle {
+    --add-bottom: 80px;
+    padding-bottom: var(--add-bottom);
+    align-items: center;
+  }
+  .swiperStyle [class^="swiper-button-"] {
+    top: calc(50% - var(--add-bottom) / 2);
+  }
+}

@@ -1,0 +1,123 @@
+/* Styling for BFReadmore.js */
+.Readmore {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-family: Montserrat;
+  background: var(--light-text-surface-primary-green-light, #f0fdf4);
+  box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
+}
+.ReadmoreSection {
+  max-width: 1224px;
+
+  padding: 22px 0px;
+  margin: 0 auto;
+}
+.headingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  color: var(--light-text-primary, #131718);
+  text-align: center;
+  font-feature-settings: "ss03" on, "liga" off;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 0;
+}
+
+.readmoreButton {
+  width: 210px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: Montserrat-Bold;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 7.68px;
+  border: 1px solid var(--light-text-green, #008554);
+  background: var(--light-text-green, #008554);
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
+  color: var(--light-text-white, #fff);
+}
+
+.paragraph {
+  text-align: left;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin: 20px 0px;
+}
+
+.paragraph h2 {
+  font-size: 21px;
+  padding: 10px 0px;
+  font-weight: 600;
+  font-family: Montserrat-Bold;
+}
+
+.paragraph p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0000009c;
+  font-family: Montserrat;
+}
+
+.closeButton {
+  width: 210px;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 7.68px;
+  border: 1px solid var(--light-text-green, #008554);
+  background: var(--light-text-green, #008554);
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
+  margin-top: 20px;
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  color: var(--light-text-white, #fff);
+}
+
+@media (max-width: 940px) {
+  .ReadmoreSection {
+    padding: 12px 20px;
+  }
+  .banner {
+    font-size: 14px;
+    text-align: left;
+  }
+  .readmoreButton {
+    padding: 0px;
+    font-size: 12px;
+  }
+  .readmoreButton {
+    padding: 0px;
+    font-size: 12px;
+  }
+  .readmoreButton img {
+    width: 10px;
+  }
+
+  .paragraph p {
+    font-size: 14px;
+  }
+  .paragraph h2 {
+    font-size: 16px;
+  }
+  .closeButton {
+    padding: 0px;
+    font-size: 12px;
+  }
+}

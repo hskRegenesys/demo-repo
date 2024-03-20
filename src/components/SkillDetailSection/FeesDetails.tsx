@@ -15,6 +15,8 @@ import {
   ukCountryId,
   kenyaCountryId,
   southAfricaCountryId,
+  ugCountryId,
+  tzCountryId,
 } from "../config/constant";
 import { allCourseList } from "@/data/courseData";
 import _ from "lodash";
@@ -26,6 +28,8 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
     flagind,
     flagus,
     flagken,
+    flagUg,
+    flagTZ,
     title,
     price,
     certifiedText1,
@@ -202,6 +206,28 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                                 height="69"
                               />
                             )}
+                            {item.country_id === ugCountryId && (
+                              // <Image src={flagken} alt="Kenya" />
+                              <Image
+                                priority={true}
+                                src={flagUg}
+                                alt="Uganda"
+                                layout="intrinsic"
+                                width="100"
+                                height="69"
+                              />
+                            )}
+                            {item.country_id === tzCountryId && (
+                              // <Image src={flagken} alt="Kenya" />
+                              <Image
+                                priority={true}
+                                src={flagTZ}
+                                alt="Tanzania"
+                                layout="intrinsic"
+                                width="100"
+                                height="69"
+                              />
+                            )}
                           </div>
                         </a>
                       </>
@@ -211,7 +237,8 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
               </div>
 
               <h2 className="product-details__price">
-                {`${priceDetails?.country?.currency} ${priceDetails?.price} `}
+                {priceDetails?.price &&
+                  `${priceDetails?.country?.currency} ${priceDetails?.price} `}
                 {priceDetails?.country_id === indiaCountryId && (
                   <span>+ GST</span>
                 )}
@@ -243,7 +270,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                                     : ""
                                 }
                               >
-                                {/* {item.country_id === southAfricaCountryId && (
+                                {item.country_id === southAfricaCountryId && (
                                   // <Image src={flagsa} alt="South Africa" />
                                   <Image
                                     priority={true}
@@ -253,7 +280,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                                     height="69"
                                     alt="South Africa"
                                   />
-                                )} */}
+                                )}
                                 {item.country_id === indiaCountryId && (
                                   // <Image src={flagind} alt="India" />
                                   <Image
@@ -328,7 +355,7 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
                 onClick={() => setShow(!show)}
               >
                 <i className="btn-curve"></i>
-                <span className="btn-title">Enroll Now</span>
+                <span className="btn-title">Enrol Now</span>
               </a>
             </div>
           </Col>

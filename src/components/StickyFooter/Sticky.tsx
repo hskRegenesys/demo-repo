@@ -1,7 +1,4 @@
-import Link from "next/link";
 import React, { useState, useEffect } from "react";
-// import styles from "components/stickyFooter/Sticky.module.css";
-// import Data from "./data";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
@@ -10,11 +7,8 @@ const StickyBar = (props: any) => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  //   const stickyData = Data[props.data];
+  const [isShown, setIsShown] = useState(false);
   const [showButton, setShowButton] = useState(false);
-
-  const [isShown, setIsShown] = useState(true);
-
   const handleClick = () => {
     setIsShown((current) => !current);
   };
@@ -26,8 +20,9 @@ const StickyBar = (props: any) => {
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 2000) {
         setShowButton(true);
+        setIsShown(true);
       } else {
         setShowButton(false);
       }
