@@ -27,7 +27,7 @@ const Sidemapdata: Sidemapdata = {
           },
           {
             title: "About Us",
-            link: "https://www.digitalregenesys.com/about", // Add appropriate links for About Us, Privacy Policy, Contact Us, Terms & Conditions
+            link: "https://www.digitalregenesys.com/about",
           },
           {
             title: "Privacy Policy",
@@ -508,58 +508,58 @@ const Sidemapdata: Sidemapdata = {
           title: "Digital Marketing Tips",
           link: "https://www.digitalregenesys.com/digital-marketing-tips",
         },
-        // {
-        //   title: "Masters in Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/masters-in-digital-marketing",
-        // },
-        // {
-        //   title: "What is a Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/what-is-a-digital-marketing",
-        // },
-        // {
-        //   title: "Best Digital Marketing Courses",
-        //   link: "https://www.digitalregenesys.com/best-digital-marketing-courses",
-        // },
-        // {
-        //   title: "Definition of Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/definition-of-digital-marketing",
-        // },
-        // {
-        //   title: "Digital Marketing Degree Online",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-degree-online",
-        // },
-        // {
-        //   title: "Digital Marketing Degrees",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-degrees",
-        // },
-        // {
-        //   title: "Digital Marketing Experts",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-experts",
-        // },
-        // {
-        //   title: "Digital Marketing Online",
-        //   link: "https://www.digitalregenesys.com/digital-marketing-online",
-        // },
-        // {
-        //   title: "Examples of Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/examples-of-digital-marketing",
-        // },
-        // {
-        //   title: "How to Learn Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/how-to-learn-digital-marketing",
-        // },
-        // {
-        //   title: "Future of Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/future-of-digital-marketing",
-        // },
-        // {
-        //   title: "Importance of Digital Marketing",
-        //   link: "https://www.digitalregenesys.com/importance-of-digital-marketing",
-        // },
-        // {
-        //   title: "Why is Digital Marketing Important",
-        //   link: "https://www.digitalregenesys.com/why-is-digital-marketing-important",
-        // },
+        {
+          title: "Masters in Digital Marketing",
+          link: "https://www.digitalregenesys.com/masters-in-digital-marketing",
+        },
+        {
+          title: "What is a Digital Marketing",
+          link: "https://www.digitalregenesys.com/what-is-a-digital-marketing",
+        },
+        {
+          title: "Best Digital Marketing Courses",
+          link: "https://www.digitalregenesys.com/best-digital-marketing-courses",
+        },
+        {
+          title: "Definition of Digital Marketing",
+          link: "https://www.digitalregenesys.com/definition-of-digital-marketing",
+        },
+        {
+          title: "Digital Marketing Degree Online",
+          link: "https://www.digitalregenesys.com/digital-marketing-degree-online",
+        },
+        {
+          title: "Digital Marketing Degrees",
+          link: "https://www.digitalregenesys.com/digital-marketing-degrees",
+        },
+        {
+          title: "Digital Marketing Experts",
+          link: "https://www.digitalregenesys.com/digital-marketing-experts",
+        },
+        {
+          title: "Digital Marketing Online",
+          link: "https://www.digitalregenesys.com/digital-marketing-online",
+        },
+        {
+          title: "Examples of Digital Marketing",
+          link: "https://www.digitalregenesys.com/examples-of-digital-marketing",
+        },
+        {
+          title: "How to Learn Digital Marketing",
+          link: "https://www.digitalregenesys.com/how-to-learn-digital-marketing",
+        },
+        {
+          title: "Future of Digital Marketing",
+          link: "https://www.digitalregenesys.com/future-of-digital-marketing",
+        },
+        {
+          title: "Importance of Digital Marketing",
+          link: "https://www.digitalregenesys.com/importance-of-digital-marketing",
+        },
+        {
+          title: "Why is Digital Marketing Important",
+          link: "https://www.digitalregenesys.com/why-is-digital-marketing-important",
+        },
       ],
     },
   },

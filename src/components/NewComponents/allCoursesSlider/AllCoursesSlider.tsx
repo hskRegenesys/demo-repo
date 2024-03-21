@@ -125,7 +125,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
       </h2>
       <div>
         <img
-          src="/assets/images/HomeNew/Rocket BG.svg"
+          src="/assets/images/new-component-assets/Rocket BG.svg"
           alt="rocket"
           className={Styles.rocketImg}
         />
