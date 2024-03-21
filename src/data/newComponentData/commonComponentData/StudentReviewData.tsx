@@ -7,7 +7,7 @@ const StudentReviewData = {
   StudentReviewCard: [
     {
       StudentReviewCardImg:
-        "assets/images/new-component-assets/students/Testimonial-1.webp",
+        "assets/images/new-component-assets/students/Effiong-Udo-Inyang.webp",
       StudentReviewName: "Effiong Udo Inyang",
       StudentReviewRole: "Data science",
       StudentReviewStar: 5,
@@ -17,7 +17,7 @@ const StudentReviewData = {
     },
     {
       StudentReviewCardImg:
-        "assets/images/new-component-assets/students/Testimonial-2.webp",
+        "assets/images/new-component-assets/students/Thibedi-Grandy-Mmatli.webp",
       StudentReviewName: "Thibedi Grandy Mmatli",
       StudentReviewRole: "Cybersecurity",
       StudentReviewStar: 4,
