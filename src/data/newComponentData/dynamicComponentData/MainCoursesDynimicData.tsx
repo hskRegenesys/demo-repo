@@ -1095,7 +1095,7 @@ const MainCoursesDynimicData = {
           blogQuestion:
             "What Are The Benefits Of Enroling In Project Management Courses For Caree..",
           blogText:
-            "n the ever-evolving professional development landscape, Project Management courses have emerged as instrumental pathways for individuals seeking to enhance their skills and propel their careers to new heights.",
+            "the ever-evolving professional development landscape, Project Management courses have emerged as instrumental pathways for individuals seeking to enhance their skills and propel their careers to new heights.",
           blogLink:
             "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-enroling-in-project-management-courses-for-career-growth",
         },
@@ -1445,49 +1445,48 @@ const MainCoursesDynimicData = {
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
-    // BlogSectionData: {
-    //   BlogSectionTitle: "For Your Research & Information",
-    //   cards: [
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-1.webp",
-    //       blogQuestion: "What Is A Project Management Course?",
-    //       blogText:
-    //         "Project management is a highly demanding domain that requires a great deal of expertise and experience. However, it is also a promising career path, offering opportunities for advancement and personal growth. ",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-2.webp",
-    //       blogQuestion:
-    //         "What Are The Benefits Of Enroling In Project Management Courses For Caree..",
-    //       blogText:
-    //         "n the ever-evolving professional development landscape, Project Management courses have emerged as instrumental pathways for individuals seeking to enhance their skills and propel their careers to new heights.",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
-    //     },
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-3.webp",
-    //       blogQuestion: "Is Project Management A Good Career Option For You?",
-    //       blogText:
-    //         "Are you a natural-born leader who loves to organise and motivate teams towards achieving goals? Do you thrive in fast-paced environments where every day brings new challenges?",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-4.webp",
-    //       blogQuestion:
-    //         "How Can Project Management Courses Enhance Your Leadership Skills?",
-    //       blogText:
-    //         "Project management courses are ideal for individuals who are willing to learn to develop and enhance leadership skills, equipping individuals with the tools and knowledge necessary to guide teams and deliver successful project outcomes.",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-advantages-of-a-data-science-course",
-    //     },
-    //   ],
-    // },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-1.webp",
+          blogQuestion: "Why Invest In An Artificial Intelligence Course?",
+          blogText:
+            "In an era of technological prowess, Artificial Intelligence (AI) is a transformative force, reshaping industries and redefining innovation possibilities. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/why-invest-in-an-artificial-intelligence-course",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-2.webp",
+          blogQuestion: "Jobs of the Future: Artificial Intelligence",
+          blogText:
+            "Artificial intelligence (AI) is no longer a distant concept from science fiction movies; it is quickly becoming a daily reality. From voice assistants like Siri and Alexa to self-driving cars and smart home devices, AI technology transforms how we live and work. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/jobs-of-the-future-artificial-intelligence",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-3.webp",
+          blogQuestion:
+            "The Impact Of AI On The Job Market And The Future Of Work",
+          blogText:
+            "Navigating the AI Revolution: How it’s Reshaping the Job Market and the Future of..",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/the-impact-of-ai-on-the-job-market-and-the-future-of-work",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-4.webp",
+          blogQuestion: "Upskill And Upgrade With Artificial Intelligence",
+          blogText:
+            "Staying ahead of the curve is crucial in today’s rapidly evolving world. With technology advancing at an unprecedented pace, it’s becoming increasingly essential to upskill and upgrade our knowledge and skills. And one of the most promising and transformative technologies of our time is Artificial Intelligence (AI).",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/upskill-and-upgrade-with-artificial-intelligenceartificial-intelligence",
+        },
+      ],
+    },
     faqSections: {
       arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
@@ -1875,49 +1874,50 @@ const MainCoursesDynimicData = {
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
-    // BlogSectionData: {
-    //   BlogSectionTitle: "For Your Research & Information",
-    //   cards: [
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-1.webp",
-    //       blogQuestion: "What Is A Project Management Course?",
-    //       blogText:
-    //         "Project management is a highly demanding domain that requires a great deal of expertise and experience. However, it is also a promising career path, offering opportunities for advancement and personal growth. ",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-2.webp",
-    //       blogQuestion:
-    //         "What Are The Benefits Of Enroling In Project Management Courses For Caree..",
-    //       blogText:
-    //         "n the ever-evolving professional development landscape, Project Management courses have emerged as instrumental pathways for individuals seeking to enhance their skills and propel their careers to new heights.",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
-    //     },
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-3.webp",
-    //       blogQuestion: "Is Project Management A Good Career Option For You?",
-    //       blogText:
-    //         "Are you a natural-born leader who loves to organise and motivate teams towards achieving goals? Do you thrive in fast-paced environments where every day brings new challenges?",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-4.webp",
-    //       blogQuestion:
-    //         "How Can Project Management Courses Enhance Your Leadership Skills?",
-    //       blogText:
-    //         "Project management courses are ideal for individuals who are willing to learn to develop and enhance leadership skills, equipping individuals with the tools and knowledge necessary to guide teams and deliver successful project outcomes.",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-advantages-of-a-data-science-course",
-    //     },
-    //   ],
-    // },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-1.webp",
+          blogQuestion: "Which Is The Best Cyber Security Course?",
+          blogText:
+            "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/which-is-the-best-cyber-security-course",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-2.webp",
+          blogQuestion:
+            "Why Are Cyber Security Courses a Smart Investment for the Future",
+          blogText:
+            "In an era where the digital landscape permeates every facet of our lives, safeguarding sensitive information and digital assets has become paramount. Cyber Security, as the vanguard against many digital threats, is a linchpin in ensuring data integrity, confidentiality, and availability. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/why-are-cyber-security-courses-a-smart-investment-for-the-future",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-3.webp",
+          blogQuestion:
+            "What qualifications do I need to study cyber security?",
+          blogText:
+            "Organisations with networks plugged into the internet (and let’s face it, that’s practically all of them) expose themselves to business disruption, financial loss, reputational ruin, and litigation if they neglect their cyber security measures.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-qualifications-do-i-need-to-study-cyber-security",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-4.webp",
+          blogQuestion:
+            "Why Enrol In A Cyber Security Course For A Promising Career?",
+          blogText:
+            "In a rapidly evolving landscape of the digital age, where technological advancements bring unprecedented opportunities, they also usher in new challenges in the form of cyber threats and security breaches. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/why-enrol-in-a-cyber-security-course-for-a-promising-career",
+        },
+      ],
+    },
     faqSections: {
       arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
