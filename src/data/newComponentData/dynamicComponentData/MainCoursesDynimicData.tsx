@@ -276,7 +276,7 @@ const MainCoursesDynimicData = {
       cards: [
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-1.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-beginners.webp",
           blogQuestion:
             "What Are The Key Features Of A Data Science Course Suitable For Beginners?",
           blogText:
@@ -286,7 +286,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-2.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-salary.webp",
           blogQuestion: "What is the Data Science Course Salary?",
           blogText:
             "Data science has emerged as a dynamic and high-demand field, blending statistical analysis, ",
@@ -295,7 +295,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-3.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-suitable-for-beginners.webp",
           blogQuestion:
             "What makes data science courses suitable for beginners?",
           blogText:
@@ -305,7 +305,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-4.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-advantages.webp",
           blogQuestion: "What Are The Advantages Of A Data Science Course?",
           blogText:
             "In the era of big data, where information flows ceaselessly from diverse sources, the role of  ",
@@ -701,7 +701,7 @@ const MainCoursesDynimicData = {
       cards: [
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-1.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-digital-marketing-course.webp",
           blogQuestion: "What is a digital marketing course?",
           blogText:
             "Are you looking to advance your skills in the fast-paced digital marketing world, and to take your career to the next level? ",
@@ -710,7 +710,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-2.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-beginners.webp",
           blogQuestion:
             "Where Do You Find The Best Digital Marketing Courses For Beginners?",
           blogText:
@@ -720,7 +720,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-3.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-career-journey.webp",
           blogQuestion: "Upskill and Upgrade in Your Career Journey",
           blogText:
             "In today’s fast-paced and ever-changing job market, staying on top of your industry’s latest trends and skills is essential. ",
@@ -1082,7 +1082,7 @@ const MainCoursesDynimicData = {
       cards: [
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-1.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-product-management.webp",
           blogQuestion: "What Is A Project Management Course?",
           blogText:
             "Project management is a highly demanding domain that requires a great deal of expertise and experience. However, it is also a promising career path, offering opportunities for advancement and personal growth. ",
@@ -1091,7 +1091,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-2.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-career.webp",
           blogQuestion:
             "What Are The Benefits Of Enroling In Project Management Courses For Caree..",
           blogText:
@@ -1101,7 +1101,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-3.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-good-career-option.webp",
           blogQuestion: "Is Project Management A Good Career Option For You?",
           blogText:
             "Are you a natural-born leader who loves to organise and motivate teams towards achieving goals? Do you thrive in fast-paced environments where every day brings new challenges?",
@@ -1110,7 +1110,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-4.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-leadership.webp",
           blogQuestion:
             "How Can Project Management Courses Enhance Your Leadership Skills?",
           blogText:
@@ -1249,7 +1249,7 @@ const MainCoursesDynimicData = {
       contentText:
         "Artificial Intelligence (AI) is an innovative and rapidly evolving field that seeks to replicate human intelligence in machines. It encompasses various techniques that enable machines to perform tasks that typically require human intelligence. Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. ",
       youtubeVideoLink:
-        "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+        "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
       BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
       vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
       UspSectionData: {
@@ -1450,7 +1450,7 @@ const MainCoursesDynimicData = {
       cards: [
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-1.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-course.webp",
           blogQuestion: "Why Invest In An Artificial Intelligence Course?",
           blogText:
             "In an era of technological prowess, Artificial Intelligence (AI) is a transformative force, reshaping industries and redefining innovation possibilities. ",
@@ -1459,7 +1459,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-2.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-future.webp",
           blogQuestion: "Jobs of the Future: Artificial Intelligence",
           blogText:
             "Artificial intelligence (AI) is no longer a distant concept from science fiction movies; it is quickly becoming a daily reality. From voice assistants like Siri and Alexa to self-driving cars and smart home devices, AI technology transforms how we live and work. ",
@@ -1468,7 +1468,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-3.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-job-market.webp",
           blogQuestion:
             "The Impact Of AI On The Job Market And The Future Of Work",
           blogText:
@@ -1478,7 +1478,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-4.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-upskill.webp",
           blogQuestion: "Upskill And Upgrade With Artificial Intelligence",
           blogText:
             "Staying ahead of the curve is crucial in today’s rapidly evolving world. With technology advancing at an unprecedented pace, it’s becoming increasingly essential to upskill and upgrade our knowledge and skills. And one of the most promising and transformative technologies of our time is Artificial Intelligence (AI).",
@@ -1513,28 +1513,6 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        {
-          heading: "Eligibility and Enrolment",
-          faqs: [
-            {
-              question: "Who can pursue an Artificial Intelligence course?",
-              answer:
-                "Any professionals, computer science graduates, engineering, data science professionals,  business professionals, or individuals interested in gaining expertise in AI technologies can pursue an Artificial Intelligence course.",
-            },
-            {
-              question:
-                "Do I need a background in programming to enrol in an AI course?",
-              answer:
-                "While some AI course may assume basic programming knowledge. Digital Regenesys AI course curriculum includes an introductory course catering to individuals with minimal programming experience, providing necessary foundational skills.",
-            },
-            {
-              question:
-                "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
-              answer:
-                'To enrol in Digital Regenesys’s Artificial Intelligence Course, visit the official website @ https://www.digitalregenesys.com/, navigate to the course page, select the required course, click the "Enrol Now" button, complete the registration form with all the required details, submit the form and proceed to make the payment for the course. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
-            },
-          ],
-        },
         {
           heading: "Eligibility and Enrolment",
           faqs: [
@@ -1636,7 +1614,7 @@ const MainCoursesDynimicData = {
       contentText:
         "A  Cyber Security course is a specialised fundamental course that equips individuals with the knowledge and skills to protect computer systems, networks, and sensitive data from cyber threats. The domain of cyber security is crucial in today's digital age as organisations and individuals face increasingly sophisticated cyber attacks. Get Ahead with our Cyber Security Course!",
       youtubeVideoLink:
-        "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+        "https://www.youtube.com/embed/S5RDj33518g?autoplay=1&loop=1&playlist=S5RDj33518g",
       BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
       vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
       UspSectionData: {
@@ -1879,7 +1857,7 @@ const MainCoursesDynimicData = {
       cards: [
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-1.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-course.webp",
           blogQuestion: "Which Is The Best Cyber Security Course?",
           blogText:
             "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
@@ -1888,7 +1866,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-2.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-future.webp",
           blogQuestion:
             "Why Are Cyber Security Courses a Smart Investment for the Future",
           blogText:
@@ -1898,7 +1876,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-3.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-qualifications.webp",
           blogQuestion:
             "What qualifications do I need to study cyber security?",
           blogText:
@@ -1908,7 +1886,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-4.webp",
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-promising.webp",
           blogQuestion:
             "Why Enrol In A Cyber Security Course For A Promising Career?",
           blogText:
