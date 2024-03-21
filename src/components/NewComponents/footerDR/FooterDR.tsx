@@ -10,7 +10,10 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
 }) => (
   <div className={styles.footerContent1}>
     <div className={styles.footerLogo}>
-      <img src="/assets/images/HomeNew/DR_Logo.svg" alt="LogoIpsum" />
+      <img
+        src="/assets/images/new-component-assets/DR_Logo.svg"
+        alt="LogoIpsum"
+      />
     </div>
     <div className={styles.footerTextheader}>
       {/* <h2>Ready to get started</h2> */}
@@ -104,7 +107,7 @@ const FooterContent4: React.FC = () => (
           <a target="_blank" href="https://www.facebook.com/digitalregenesys">
             {" "}
             <img
-              src="/assets/images/HomeNew/facebook-icon.svg"
+              src="/assets/images/new-component-assets/facebook-icon.svg"
               alt="Facebook"
             />
             <span>Facebook</span>
@@ -116,7 +119,10 @@ const FooterContent4: React.FC = () => (
             href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
           >
             {" "}
-            <img src="/assets/images/HomeNew/youtube-icon.png" alt="Youtube" />
+            <img
+              src="/assets/images/new-component-assets/youtube-icon.png"
+              alt="Youtube"
+            />
             <span>Youtube</span>
           </a>
         </div>
@@ -126,7 +132,10 @@ const FooterContent4: React.FC = () => (
             href="https://www.instagram.com/digital_regenesys/"
           >
             {" "}
-            <img src="/assets/images/HomeNew/insta-icon.svg" alt="Instagram" />
+            <img
+              src="/assets/images/new-component-assets/insta-icon.svg"
+              alt="Instagram"
+            />
             <span>Instagram</span>
           </a>
         </div>

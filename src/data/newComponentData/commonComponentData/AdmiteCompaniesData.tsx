@@ -1,7 +1,7 @@
 const AdmiteCompaniesData = {
   AdmitsHeading: "Digital Regenesys Alumni ",
   AdmitsTitle: "We have alumni working in top companies.",
-  buttenIcon: "./assets/images/HomeNew/DoubleArrowWhite.svg",
+  buttenIcon: "./assets/images/new-component-assets/DoubleArrowWhite.svg",
   AdmitsCards: [
     {
       AdmitsImage: "./assets/images/clients/1.webp",

@@ -1520,65 +1520,75 @@ const createReWrites = () => {
       source: "/digital-marketing-tips",
       destination: "/all-courses-multiple/digital-marketing-tips",
     },
-    // {
-    //   source: "/masters-in-digital-marketing",
-    //   destination: "/all-courses-multiple/masters-in-digital-marketing",
-    // },
-    // {
-    //   source: "/what-is-a-digital-marketing",
-    //   destination: "/all-courses-multiple/what-is-a-digital-marketing",
-    // },
-    // {
-    //   source: "/best-digital-marketing-courses",
-    //   destination: "/all-courses-multiple/best-digital-marketing-courses",
-    // },
-    // {
-    //   source: "/definition-of-digital-marketing",
-    //   destination: "/all-courses-multiple/definition-of-digital-marketing",
-    // },
-    // {
-    //   source: "/digital-marketing-degree-online",
-    //   destination: "/all-courses-multiple/digital-marketing-degree-online",
-    // },
-    // {
-    //   source: "/digital-marketing-degrees",
-    //   destination: "/all-courses-multiple/digital-marketing-degrees",
-    // },
-    // {
-    //   source: "/digital-marketing-experts",
-    //   destination: "/all-courses-multiple/digital-marketing-experts",
-    // },
-    // {
-    //   source: "/digital-marketing-online",
-    //   destination: "/all-courses-multiple/digital-marketing-online",
-    // },
-    // {
-    //   source: "/examples-of-digital-marketing",
-    //   destination: "/all-courses-multiple/examples-of-digital-marketing",
-    // },
-    // {
-    //   source: "/how-to-learn-digital-marketing",
-    //   destination: "/all-courses-multiple/how-to-learn-digital-marketing",
-    // },
-    // {
-    //   source: "/future-of-digital-marketing",
-    //   destination: "/all-courses-multiple/future-of-digital-marketing",
-    // },
-    // {
-    //   source: "/importance-of-digital-marketing",
-    //   destination: "/all-courses-multiple/importance-of-digital-marketing",
-    // },
-    // {
-    //   source: "/why-is-digital-marketing-important",
-    //   destination: "/all-courses-multiple/why-is-digital-marketing-important",
-    // },
+    {
+      source: "/masters-in-digital-marketing",
+      destination: "/all-courses-multiple/masters-in-digital-marketing",
+    },
+    {
+      source: "/what-is-a-digital-marketing",
+      destination: "/all-courses-multiple/what-is-a-digital-marketing",
+    },
+    {
+      source: "/best-digital-marketing-courses",
+      destination: "/all-courses-multiple/best-digital-marketing-courses",
+    },
+    {
+      source: "/definition-of-digital-marketing",
+      destination: "/all-courses-multiple/definition-of-digital-marketing",
+    },
+    {
+      source: "/digital-marketing-degree-online",
+      destination: "/all-courses-multiple/digital-marketing-degree-online",
+    },
+    {
+      source: "/digital-marketing-degrees",
+      destination: "/all-courses-multiple/digital-marketing-degrees",
+    },
+    {
+      source: "/digital-marketing-experts",
+      destination: "/all-courses-multiple/digital-marketing-experts",
+    },
+    {
+      source: "/digital-marketing-online",
+      destination: "/all-courses-multiple/digital-marketing-online",
+    },
+    {
+      source: "/examples-of-digital-marketing",
+      destination: "/all-courses-multiple/examples-of-digital-marketing",
+    },
+    {
+      source: "/how-to-learn-digital-marketing",
+      destination: "/all-courses-multiple/how-to-learn-digital-marketing",
+    },
+    {
+      source: "/future-of-digital-marketing",
+      destination: "/all-courses-multiple/future-of-digital-marketing",
+    },
+    {
+      source: "/importance-of-digital-marketing",
+      destination: "/all-courses-multiple/importance-of-digital-marketing",
+    },
+    {
+      source: "/why-is-digital-marketing-important",
+      destination: "/all-courses-multiple/why-is-digital-marketing-important",
+    },
 
     ///==================PM======================
 
-    // {
-    //   source: "/project-management-courses",
-    //   destination: "/all-courses-multiple/project-management-courses",
-    // },
+    {
+      source: "/project-management-courses",
+      destination: "/all-courses-multiple/project-management-courses",
+    },
+    ///=========================CS===========================
+    {
+      source: "/cyber-security-course",
+      destination: "/all-courses-multiple/cyber-security-course",
+    },
+    ///=========================AI===========================
+    {
+      source: "/artificial-intelligence-course",
+      destination: "/all-courses-multiple/artificial-intelligence-course",
+    },
 
     // -------------------------multiple-pages-end---------------------------------
 

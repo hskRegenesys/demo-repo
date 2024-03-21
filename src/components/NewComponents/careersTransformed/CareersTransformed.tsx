@@ -150,7 +150,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                 </div>
                 <img
                   className={Styles.arrowImg}
-                  src="/assets/images/HomeNew/Arrow.webp"
+                  src="/assets/images/new-component-assets/Arrow.webp"
                   alt="Arrow"
                 />
                 <div className={Styles.roleCard2}>

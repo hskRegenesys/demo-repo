@@ -4,19 +4,19 @@ const whyChooseDRData = {
   whyChooseDRButtonText: "Enroll Now",
   whyChooseDRCard: [
     {
-      cardImg: "./assets/images/HomeNew/Live Call.svg",
+      cardImg: "./assets/images/new-component-assets/Live Call.svg",
       cardText: "Live Classes",
     },
     {
-      cardImg: "./assets/images/HomeNew/Award.svg",
+      cardImg: "./assets/images/new-component-assets/Award.svg",
       cardText: "Live Classes",
     },
     {
-      cardImg: "./assets/images/HomeNew/Counselling.svg",
+      cardImg: "./assets/images/new-component-assets/Counselling.svg",
       cardText: "Live Classes",
     },
     {
-      cardImg: "./assets/images/HomeNew/Experts.svg",
+      cardImg: "./assets/images/new-component-assets/Experts.svg",
       cardText: "Live Classes",
     },
   ],

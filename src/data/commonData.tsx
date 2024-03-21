@@ -261,6 +261,16 @@ const Data = {
         "Importance of Digital Marketing: Drive Business | Digital Regenesys",
       "why-is-digital-marketing-important":
         "Why is Digital Marketing Important?: Key Insights | Digital Regenesys",
+
+      // ====================PM=========================
+      "project-management-courses":
+        "Project Management Courses: Develop Skills | Digital Regenesys",
+      // ====================CS=========================
+      "cyber-security-course":
+        "Cyber Security Course: Master Digital Defense | Digital Regenesys",
+      // ====================AI=========================
+      "artificial-intelligence-course":
+        "Artificial Intelligence Course: Master AI | Digital Regenesys",
     },
     keywords: {
       home: `
@@ -672,6 +682,16 @@ const Data = {
         "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
       "why-is-digital-marketing-important":
         "digital marketing, digital marketing course, digital marketing certificate, digital marketing training, what is digital marketing, digital marketing course online, digital marketing definition, online digital marketing courses, digital marketing jobs, digital marketing salary, digital regenesys",
+
+      // ====================PM=========================
+      "project-management-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      // ====================CS=========================
+      "cyber-security-course":
+        "cyber security course, cyber security courses, cyber security courses online, online cyber security courses, cyber security online courses, courses for cyber security, cyber security courses for beginners, online course for cyber security, courses in cyber security, cyber security courses near me",
+      // ====================AI=========================
+      "artificial-intelligence-course":
+        "artificial intelligence course, artificial general intelligence course, artificial intelligence courses, artificial intelligence online course, course on artificial intelligence, artificial intelligence course online, best artificial intelligence course, machine learning and artificial intelligence courses, online artificial intelligence courses, artificial intelligence course free, artificial intelligence course syllabus, artificial intelligence training courses",
     },
 
     description: {
@@ -937,7 +957,18 @@ const Data = {
         "Importance of Digital Marketing: Understand the importance of digital marketing in today's competitive landscape. Discover how digital marketing can drive business growth. Enrol Now!",
       "why-is-digital-marketing-important":
         "Why is Digital Marketing Important: Gain key insights into why digital marketing is important for businesses. Explore its impact on brand visibility & customer engagement.",
+      // ====================PM=========================
+      "project-management-courses":
+        "Project Management Courses: Explore our project management courses to develop leadership skills. Advance your career with comprehensive training. Join Now!",
+      // ====================CS=========================
+      // ====================CS=========================
+      "cyber-security-course":
+        "Cyber Security Course: Enroll in our cyber security course to master digital defense strategies. Enhance your skills and protect against cyber threats. Join Now!",
+      // ====================AI=========================
+      "artificial-intelligence-course":
+        "Artificial Intelligence Course: Enroll in our comprehensive artificial intelligence course. Master AI concepts and advance your skills in machine learning.",
     },
+
     canonicalUrlData: {
       home: "",
       about: "/about",
@@ -1081,6 +1112,13 @@ const Data = {
       "importance-of-digital-marketing": "/importance-of-digital-marketing",
       "why-is-digital-marketing-important":
         "/why-is-digital-marketing-important",
+
+      // ====================PM=========================
+      "project-management-courses": "/project-management-courses",
+      // ====================CS=========================
+      "cyber-security-course": "/cyber-security-course",
+      // ====================AI=========================
+      "artificial-intelligence-course": "/artificial-intelligence-course",
     },
     ogImg: {
       home: "https://digitalregenesys.com/assets/images/background/DR-Website.png",

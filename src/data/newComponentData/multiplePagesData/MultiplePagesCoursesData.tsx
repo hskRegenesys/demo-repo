@@ -546,7 +546,422 @@ const MultiplePagesCoursesData = {
   "why-is-digital-marketing-important": {},
 
   // =====================PM==========================
+  "project-management-courses": {
+    heading: "Elevate your career with Project Management Courses",
+    readmore: [
+      {
+        pheading: "What is Project Management?",
+        paragraphs: [
+          "Project management is crucial in ensuring that projects are completed successfully and efficiently. It involves using various tools and techniques to manage tasks, resources, and stakeholders and ensure that the project is completed within the stipulated time, budget, and scope.",
+          "Effective project management requires technical skills, such as scheduling, budgeting, and risk management, as well as soft skills, such as communication, leadership, and team management.",
+          "A good project manager must balance these skills to ensure the project's success while managing stakeholders' and team members' expectations.",
+        ],
+      },
+      {
+        pheading: "What is a Digital Regenesys Project Management Course?",
+        paragraphs: [
+          "Digital Regenesys Project Management course is designed to provide students with a comprehensive understanding of the principles and practices of project management, including planning, scheduling, risk management, quality management, and communication.",
+          "Digital Regenesys Project Management is a 22-week course that provides a solid foundation in project management principles to stay ahead of the competition by working on projects, simulations, and cases.",
+          "Therefore, the Digital Regenesys Project Management course is an excellent investment for individuals who want to develop their skills and advance their careers in a project management role.",
+          "Click here to learn more about the Digital Regenesys Project Management course.",
+        ],
+      },
+      {
+        pheading:
+          "What are the Roles and Responsibilities of a Project Manager Professionals?",
+        paragraphs: [
+          "A project manager's roles and responsibilities are critical to any project's success. Project manager professionals lead the team and ensure the project is completed within the given timeframe, budget, and scope.",
+        ],
+      },
+      {
+        pheading: "Project Planning:",
+        paragraphs: [
+          "One key responsibility of a project manager is developing a comprehensive project plan that outlines the project's objectives, deliverables, timelines, and budget. This plan serves as a roadmap for the project team and helps ensure that everyone is working towards the same goal.",
+        ],
+      },
+      {
+        pheading: "Team Management:",
+        paragraphs: [
+          "Another essential responsibility of a project manager is to manage the project team. This involves assigning tasks, setting deadlines, and monitoring progress to keep the project on track. They also need to ensure that team members work effectively together and quickly resolve any issues or conflicts.",
+        ],
+      },
+      {
+        pheading: "Communication Skills:",
+        paragraphs: [
+          "Effective communication is also crucial for a project manager. They must communicate with stakeholders, team members, and anyone involved in the project to keep everyone informed of progress and any changes to the project plan.",
+        ],
+      },
+      {
+        pheading: "Adaptability and Flexibility:",
+        paragraphs: [
+          "A project manager needs to be able to adapt quickly to changing circumstances. Projects rarely go exactly according to plan, and a good project manager needs to be able to adjust the plan and make decisions quickly to keep the project on track.",
+          "Overall, a project manager's current roles and responsibilities are complex, challenging, and extremely rewarding. A good project manager can make the difference between a project's success and failure.",
+        ],
+      },
+      {
+        pheading: "Why is Project Management Important?",
+        paragraphs: [
+          "Project management is a critical aspect of any organisation, whether small or large. It is a structured approach to planning, organising, and managing resources to achieve specific goals and objectives.",
+          "Without proper project management, projects can quickly become chaotic and disorganised, leading to missed deadlines, cost overruns, and poor-quality work.",
+          "With project management, you can effectively manage a project's scope, schedule, budget, and resources, ensuring that it is completed on time, within budget, and to the desired quality. It involves various skills, such as communication, leadership, problem-solving, and risk management, which are essential for successful projects.",
+          "Moreover, project management enables you to identify potential risks and issues early in the project lifecycle, allowing you to take corrective action to mitigate or eliminate them. This helps avoid costly mistakes, delays, and rework and ensures that the project meets stakeholders' expectations.",
+        ],
+      },
+      {
+        pheading:
+          "Project management is crucial because it helps organisations to:",
+        paragraphs: [
+          "Achieve their goals and objectives",
+          "Deliver projects on time, within budget, and to the desired quality",
+          "Identify and mitigate risks and issues",
+          "Improve communication and collaboration",
+          "Enhance team performance and productivity",
+          "Ensure stakeholder satisfaction and engagement.",
+        ],
+      },
+      {
+        pheading: "What are the Five Phases Of Project Management?",
+        paragraphs: [
+          "The five different phases of project management: initiating, planning, executing, monitoring and controlling, and closing",
+          "As a beginner in project management, it is crucial to understand the five phases of project management: initiating, planning, executing, monitoring and controlling, and closing. These phases are critical to ensure your project is completed on time.",
+        ],
+      },
+      {
+        pheading: "Initiating",
+        paragraphs: [
+          "Initiating is the first phase of project management, during which the project is defined, its purpose established, and the project team identified. The project manager identifies the stakeholders and understands their expectations and needs. The project manager also identifies the risks associated with the project.",
+        ],
+      },
+      {
+        pheading: "Planning",
+        paragraphs: [
+          "Planning is the second phase of project management, during which the project manager creates a plan to complete the project. The plan includes the project scope, budget, timeline, and needed resources. The project manager also identifies the project deliverables and creates a work breakdown structure.",
+        ],
+      },
+      {
+        pheading: "Executing",
+        paragraphs: [
+          "Executing is the third phase of project management, where the project plan is executed. The project manager assigns tasks to team members and monitors the project's progress. The project manager also communicates with stakeholders and manages risks associated with the project.",
+        ],
+      },
+      {
+        pheading: "Monitoring and Controlling",
+        paragraphs: [
+          "Monitoring and controlling is the fourth phase of project management. In this phase, the project manager monitors the progress of the project and ensures that it is on track. The project manager also identifies any issues that might arise and takes corrective actions to keep the project on track.",
+        ],
+      },
+      {
+        pheading: "Closing",
+        paragraphs: [
+          "Closing is the final phase of project management, during which the project is completed and the project manager obtains stakeholder approval. The project manager also conducts a post-project review to identify lessons learned and best practices that can be applied to future projects.",
+          "Understanding the five phases of project management is essential for any beginner. By following these phases, you can ensure that your project is completed successfully and on time.",
+        ],
+      },
 
-  "project-management-courses": {},
+      {
+        pheading:
+          "What skills are essential to become a successful project management professional?",
+        paragraphs: [
+          "To be successful in project management, several vital skills are essential. These vital skills include:",
+        ],
+      },
+      {
+        pheading: "Communication:",
+        paragraphs: [
+          "Project managers must be able to communicate effectively with all stakeholders, including team members, clients, and senior management.",
+        ],
+      },
+      {
+        pheading: "Leadership:",
+        paragraphs: [
+          "Project managers must be able to provide leadership and guidance to their team members while fostering a collaborative and supportive work environment.",
+        ],
+      },
+      {
+        pheading: "Time Management:",
+        paragraphs: [
+          "Project managers must be able to manage their time effectively to ensure that projects are completed on time and within budget.",
+        ],
+      },
+      {
+        pheading: "Problem-solving:",
+        paragraphs: [
+          "Project managers must be able to identify problems and develop creative solutions to overcome them.",
+        ],
+      },
+      {
+        pheading: "Risk Management:",
+        paragraphs: [
+          "Project managers must be able to identify potential risks and develop strategies to mitigate them.",
+        ],
+      },
+      {
+        pheading:
+          "How can Pursuing a Digital Regenesys Project Management Course Advance an Individual's Career?",
+        paragraphs: [
+          "Studying project management can be an excellent way to advance an individual career.",
+          "Digital Regenesys's Project management skills are becoming increasingly valuable in today's competitive job market as employers seek individuals who can manage projects effectively.",
+          "By studying Digital Regenesys's project management, individuals will gain valuable skills, including planning, organisation, leadership, and communication, all of which are transferable to many different industries and roles.",
+          "With Digital Regenesys's project management skills, individuals can become valuable assets to any organisation, particularly if they demonstrate their ability to manage complex projects and deliver results. This can help individuals progress quickly up the career ladder, with opportunities to take on more senior roles that offer greater responsibility, autonomy, and remuneration.",
+          "Along with career advancement, the Digital Regenesys project management course also helps individuals develop their skills in other domains, such as problem-solving, decision-making, and strategic planning. These skills can be applied to many different situations, both in and outside of work.",
+          "Hence, pursuing a Digital Regenesys project management course can be a wise investment in your career and personal development. Whether you want to progress in your current role, change careers, or start your own business, project management skills can help you achieve your goals and reach your full potential.",
+          "Enrol now in the Digital Regenesys project management course, elevate your skill set and learn how to apply Project Management skills in the real world from our highly experienced academic staff.",
+        ],
+      },
+      {
+        pheading: "Enrol Now!",
+        paragraphs: [""],
+      },
+    ],
+  },
+  // ==========================CS===========================
+  "cyber-security-course": {
+    heading: "Elevate your career with Cyber Security Courses",
+    readmore: [
+      {
+        pheading: "What is a Cyber Security Course?",
+        paragraphs: [
+          "Cyber Security is an educational course designed to equip individuals with the knowledge and skills to protect computer systems, networks, and data from cyber threats.",
+          "These courses typically cover cryptography, network security, ethical hacking, and risk management. Students learn to identify vulnerabilities, mitigate risks, and respond effectively to security incidents.",
+          "By completing a Cyber Security Course, individuals can enhance their career prospects and contribute to safeguarding organisations against cyber attacks.",
+        ],
+      },
+      {
+        pheading: "What is Digital Regenesys Cyber Security Course?",
+        paragraphs: [
+          "Digital Regenesys Cyber Security Course offers comprehensive training in various aspects of Cyber Security, including network security, ethical hacking, and digital forensics.",
+          "The Digital Regenesys Cyber Security course comprises the latest trends and technologies in the field, equipping students with the knowledge and skills needed to protect organisations from cyber threats.",
+          "Through a combination of theoretical concepts and practical exercises, participants learn how to identify vulnerabilities, mitigate risks, and respond to security incidents effectively.",
+          "By the end of the course, students are prepared to pursue careers as cybersecurity professionals in a rapidly evolving digital landscape.",
+          "Enrol in the Digital Regenesys Cyber Security Course and equip yourself with the future-ready skills to elevate your career to new heights.",
+        ],
+      },
+      {
+        pheading: "Enrol Now!",
+        paragraphs: [""],
+      },
+      {
+        pheading: "What are the Demands of a Cyber Security Job?",
+        paragraphs: [
+          "Cyber Security jobs have become increasingly demanding in recent years. In many cases, Cyber Security professionals are required to work long hours, often logging in remotely or staying up late to monitor systems and respond to potential threats. This is because Cyber Security is a field that operates 24/7 and often requires immediate attention to mitigate potential risks and vulnerabilities.",
+          "Cyber Security jobs can also be very stressful. Professionals in this field protect sensitive information and systems from hackers, cybercriminals, and malicious actors. The consequences of a breach or data loss can be severe, and the pressure to prevent these incidents can be overwhelming.",
+          "Moreover, the constantly evolving nature of Cyber Security threats means that professionals must stay updated on the latest technologies and trends to remain effective. Training and education require significant time and effort, which can add to the job's demands.",
+          "Despite these challenges, many individuals find Cyber Security to be a rewarding and engaging field. The opportunity to protect critical infrastructure and sensitive information is a noble cause, and the constantly evolving nature of the field ensures that no two days are ever the same.",
+          "Several websites offer step-by-step instructions on how to secure your computer, as well as tutorials on how to connect your data and protect yourself from cyber-attacks. You can also find resources on different types of malware and other malicious programmes and how to protect yourself.",
+          "If you want a more comprehensive learning experience, the Digital Regenesys online Cyber Security course can help you acquire the skills and knowledge to identify, prevent, and respond to cyber threats.",
+          "Digital Regenesys' Cyber Security course is an online course that provides a comprehensive understanding of Cyber Security principles, policies, and practices.",
+          "Click here to explore more information about the Digital Regenesys online Cyber Security course.",
+        ],
+      },
+      {
+        pheading:
+          "What is the Importance of Hands-on Experience in Cyber Security Course?",
+        paragraphs: [
+          "When it comes to learning Cyber Security, hands-on experience is vital. While theoretical knowledge is essential, more is needed to prepare you for real-world scenarios.",
+          "Cyber Security threats are constantly evolving, and it is essential to have a practical understanding of how to detect and respond to them. Hands-on experience can be gained through various means, such as internships, apprenticeships, and even volunteering in the field. Individuals can also participate in online capture-the-flag competitions or practice on virtual machines to simulate real-life situations.",
+          "Having hands-on experience allows you to apply theoretical knowledge in a practical setting. It helps you develop critical thinking skills, learn to work under pressure, and improve your problem-solving abilities. It also allows you to network and learn from experienced professionals in the industry.",
+          "While many online resources are available for learning Cyber Security, they cannot replace the value of hands-on experience. It is essential to seek opportunities to gain practical experience to supplement your theoretical knowledge and prepare yourself for a successful career in Cyber Security.",
+        ],
+      },
+      {
+        pheading: "How can We Accelerate the Learning Curve in Cyber Security?",
+        paragraphs: [
+          "Cyber Security is a complex and ever-evolving field, so setting realistic expectations regarding your learning curve is essential. However, there are a few tips for accelerating your progress and gaining a solid foundation in the field:",
+          "Top tips for accelerating your learning curve:",
+        ],
+      },
+      {
+        pheading: "Immerse yourself in the world of Cyber Security.",
+        paragraphs: [
+          "Attend conferences, participate in online forums, and discuss with experts in the field. This will give you a better understanding of the industry and the challenges that professionals face daily.",
+        ],
+      },
+      {
+        pheading: "Take advantage of online learning resources.",
+        paragraphs: [
+          "There are plenty of free and paid online courses and tutorials on Cyber Security. Enrolling in a Digital Regensys online Cyber Security course lets you learn at your own pace and comprehensively understand the subject. It is your gateway to the world of Cyber Security fundamentals.",
+        ],
+      },
+      {
+        pheading: "Seek mentorship",
+        paragraphs: [
+          "Finding an experienced mentor in the field can be invaluable. A mentor can guide you in your learning journey, provide feedback on your work, and help you understand the practical applications of Cyber Security.",
+        ],
+      },
+      {
+        pheading: "Practice, Practice, Practice",
+        paragraphs: [
+          "Cyber Security is a hands-on field. You can gain confidence and experience in real-world scenarios by practising your skills, making you a valuable asset to any organisation.",
+        ],
+      },
+      {
+        pheading: "Read, Read and Read",
+        paragraphs: [
+          "Reading books, blogs, and articles on Cyber Security can give you the knowledge you need to excel in the field. Keep up to date with the latest trends, threats, and solutions.",
+          "Remember that learning Cyber Security is a continuous process; there is always more to learn. Committing to these tips can accelerate your learning curve and advance in the field.",
+        ],
+      },
+      {
+        pheading: "Can We Learn Cyber Security Online?",
+        paragraphs: [
+          "The answer is a resounding yes!",
+          "With the right resources and dedication, anyone can learn the basics of Cyber Security and network security fundamentals without spending a dime. All it takes is some dedication and the willingness to learn. With the right resources, anyone can become a Cyber Security expert.",
+          "The world of Cyber Security is rapidly evolving. As technology continues to advance, so do the threats posed by technology. Cybercriminals are becoming increasingly sophisticated, and the need for Cyber Security professionals is growing. Fortunately, numerous online resources are available to provide free or low-cost training in Cyber Security.",
+          "Online training courses are the best place to start if you are interested in learning Cyber Security. From introductory courses to more advanced topics, Digital Regenesys online Cyber Security courses are a great way to familiarise yourself with the basics of Cyber Security. These courses are usually self-paced and can be taken at your own pace.",
+          "Another excellent resource for learning Cyber Security online for free is blogs. Many blogs focus specifically on Cyber Security topics such as malware, phishing, and vulnerabilities. These blogs are written by experts in the field and offer up-to-date information on the latest Cyber Security news. Many of these blogs also provide detailed tutorials and guides to help you understand specific topics in greater depth.",
+          "For more hands-on learning, numerous open-source projects are available online. These projects range from basic tutorials to more in-depth security tools and services.",
+          "Hence, you can learn Cyber Security online.",
+          "Whether you are looking for an introductory course or a detailed hands-on project, the Digital Regenesys online Cyber Security course is ideal.",
+          "Enrol in the Digital Regenesys online Cyber Security course and start a career in Cyber Security or enhance their existing skills by gaining a deep understanding of Cyber Security principles & concepts.",
+          "Click here to explore the Digital Regenesys online Cyber Security course in more detail.",
+        ],
+      },
+    ],
+  },
+  //=============================AI============================
+  "artificial-intelligence-course": {
+    heading: "Elevate your career with Artificial Intelligence Courses",
+    readmore: [
+      {
+        pheading: "What is Artificial Intelligence?",
+        paragraphs: [
+          "Artificial Intelligence (AI) is an innovative and rapidly evolving field that seeks to replicate human intelligence in machines. It encompasses various techniques that enable machines to perform tasks that typically require human intelligence, such as problem-solving, learning, perception, and decision-making.",
+          "AI systems are designed to analyse vast amounts of data, recognise patterns, and make predictions or recommendations based on the information provided. Machine Learning, a subset of AI, enables computers to learn from experience and improve their performance over time without explicit programming.",
+          "Artificial Intelligence (AI) is integrated into various applications and industries, including healthcare, finance, transportation, and entertainment, revolutionising how we live and work. With ongoing advancements, AI can significantly impact society and reshape the future.",
+        ],
+      },
+      {
+        pheading:
+          "What is the Digital Regenesys Artificial Intelligence Course?",
+        paragraphs: [
+          "Digital Regenesys Artificial Intelligence Course is a comprehensive online program designed to equip students with the knowledge and skills needed to excel in artificial intelligence.",
+          "The Digital Regenesys Artificial Intelligence course includes various topics, including:",
+        ],
+      },
+      {
+        pheading: "Artificial Intelligence Introductory",
+        paragraphs: [
+          "Python Programming for Artificial Intelligence",
+          "Introduction to Data Analysis & Data Visualisation",
+        ],
+      },
+      {
+        pheading: "Artificial Intelligence Intermediary",
+        paragraphs: [
+          "Artificial Neural Networks",
+          "Deploying AI models in Production",
+          "Artificial Intelligence and Machine Learning",
+        ],
+      },
+      {
+        pheading: "Artificial Intelligence Advanced Applied",
+        paragraphs: [
+          "Streamlining AI Development with ML Ops",
+          "Unleashing Insights from Big Data through Analytics",
+          "Leveraging Cloud Computing Services for AI Applications",
+          "Enhancing Visual Content with Computer Vision Techniques",
+          "AI-Powered Applications for Natural Language Processing (NLP)",
+        ],
+      },
+      {
+        pheading:
+          "What Programming Languages are Commonly used in Artificial Intelligence Courses?",
+        paragraphs: [
+          "In Artificial Intelligence (AI) courses, commonly used programming languages include Python, Java, and C++.",
+        ],
+      },
+      {
+        pheading: "Python",
+        paragraphs: [
+          "Python is favoured for its simplicity and readability, making it a top choice for beginners.",
+        ],
+      },
+      {
+        pheading: "Java",
+        paragraphs: [
+          "Java's robustness and platform independence make it suitable for developing complex AI applications.",
+        ],
+      },
+      {
+        pheading: "C++",
+        paragraphs: [
+          "C++ is preferred for its performance and efficiency, particularly in resource-intensive AI projects.",
+        ],
+      },
+      {
+        pheading:
+          "What Key Skills and Qualifications Impact AI Engineer Salaries in South Africa?",
+        paragraphs: [
+          "When it comes to AI engineer salaries in South Africa, key skills and qualifications can significantly impact the earning potential of professionals in this field. These skills and qualifications are in high demand due to the rapidly growing field of artificial intelligence and machine learning.",
+          "First and foremost, a strong foundation in computer science is essential. AI engineers need a deep understanding of algorithms, data structures, and programming languages such as Python, Java, or C++. These technical skills are the building blocks of their work and are valued by employers.",
+          "Additionally, expertise in machine learning and deep learning frameworks like TensorFlow, PyTorch, or Keras is highly sought after. The ability to develop and implement complex machine learning models and algorithms is crucial in solving real-world problems and driving innovation in AI.",
+          "Furthermore, knowledge of statistics and mathematics is vital for AI engineers. Proficiency in probability theory, linear algebra, and calculus is necessary to understand the mathematical principles underlying machine learning algorithms and optimise their performance.",
+          "In terms of qualifications, a bachelor's or master's degree in computer science, artificial intelligence, or a related field is typically required. However, advanced degrees like a Ph.D. can significantly enhance earning potential, particularly in research-focused roles or academia.",
+          "Moreover, industry certifications and practical experience can also impact AI engineer salaries. Certifications from reputable organisations like Google, Microsoft, or IBM demonstrate proficiency in specific AI technologies and can give professionals a competitive edge in the job market.",
+          "Lastly, AI engineering roles highly value soft skills such as problem-solving, critical thinking, and communication. The ability to collaborate effectively, present findings to stakeholders, and explain complex concepts to non-technical audiences can positively influence career growth and earning potential.",
+          "Hence, AI engineer salaries in South Africa are influenced by a combination of technical skills, qualifications, certifications, and practical experience. By acquiring and continuously developing these key attributes, professionals can position themselves for lucrative opportunities in the dynamic and rapidly evolving field of artificial intelligence.",
+        ],
+      },
+      {
+        pheading:
+          "What are the benefits of pursuing a Digital Regenesys Artificial Intelligence Course?",
+        paragraphs: [
+          "By pursuing the Digital Regenesys Artificial Intelligence Course, you can gain advanced knowledge and skills in AI, positioning yourself for lucrative career opportunities in this rapidly growing field.",
+          "The Digital Regenesys Artificial Intelligence course provides practical insights and hands-on experience with cutting-edge AI technologies, enhancing your problem-solving abilities and analytical thinking. Additionally, you will have the chance to collaborate with industry experts and build a solid professional network, increasing your job prospects and earning potential. In conclusion, enrolling in this course can give you a competitive edge and set you on a path towards a successful career in Artificial Intelligence.",
+        ],
+      },
+      {
+        pheading:
+          "How to Upskill and Upgrade with Artificial Intelligence (AI)?",
+        paragraphs: [
+          "Artificial Intelligence(AI) is a fascinating and rapidly evolving field of computer science that aims to create intelligent machines capable of mimicking human behaviour and cognitive abilities. At its core, AI involves the development of algorithms and systems that enable computers to process and understand vast amounts of data, learn from it, and make decisions or take actions based on that knowledge.",
+          "Upskilling in Artificial Intelligence (AI) can benefit you both personally and professionally. Here are some top tips to consider for upskilling in Artificial Intelligence (AI) :",
+        ],
+      },
+      {
+        pheading: "Learn the Basics:",
+        paragraphs: [
+          "Start by familiarising yourself with the fundamental concepts of AI, such as machine learning, neural networks, and natural language processing. Numerous online resources, courses, and tutorials are available that can help you grasp the basics.",
+        ],
+      },
+      {
+        pheading: "Gain Hands-on Experience:",
+        paragraphs: [
+          "Theory alone is not enough. To truly upskill in AI, you need practical experience. Consider working on AI projects, participating in hackathons, or joining AI communities to collaborate with like-minded individuals and learn from industry experts.",
+        ],
+      },
+      {
+        pheading: "Continuously Learn and Adapt:",
+        paragraphs: [
+          "AI is rapidly evolving, and staying updated with the latest advancements is crucial. Keep exploring new AI technologies, research papers, and industry trends to stay ahead.",
+        ],
+      },
+      {
+        pheading: "Network and Collaborate:",
+        paragraphs: [
+          "Building a solid professional network in the AI community can provide invaluable opportunities for learning, collaboration, and career advancement. Attend AI conferences, join online forums, and connect with professionals in the field to expand your network.",
+        ],
+      },
+      {
+        pheading:
+          "For more tips on upskilling in Artificial Intelligence (AI), stay tuned with Digital Regenesys.",
+        paragraphs: [],
+      },
+      {
+        pheading:
+          "How can individuals learn to use Artificial Intelligence tools effectively?",
+        paragraphs: [
+          "Individuals can effectively learn to use Artificial Intelligence tools by actively seeking training resources such as online tutorials, courses, and workshops.",
+          "Engaging in hands-on practice and experimentation with AI tools is crucial for gaining practical skills. Leveraging forums and community platforms to ask questions and share knowledge can also accelerate learning.",
+          "Staying updated on the latest trends and advancements in AI technology is essential to continuously improving proficiency. Collaborating with peers on AI projects can provide valuable insight and foster a collaborative learning environment.",
+          "Enrol in the Digital Regenesys Artificial Intelligence course and gain knowledge and practical skills in applying artificial intelligence to real-world scenarios.",
+        ],
+      },
+      {
+        pheading: "Enrol Now!",
+        paragraphs: [],
+      },
+    ],
+  },
 };
 export default MultiplePagesCoursesData;

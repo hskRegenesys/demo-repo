@@ -1,7 +1,8 @@
 const MainCoursesDynimicData = {
   DataScience: {
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/HomeNew/BannersImg/DS-Banner.png",
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/DS/DS-Banner.webp",
       coursePageName: "Data Science",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -9,23 +10,23 @@ const MainCoursesDynimicData = {
         "The Data Science Certification Course provides a comprehensive curriculum and equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification, gain practical programming language skills such as Python and R, and experience working with large datasets. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
-      BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
-      vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/HomeNew/Location.svg",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/HomeNew/Learn.svg",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
         },
       },
     },
@@ -34,17 +35,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/HomeNew/money-tick.svg",
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/HomeNew/brifecase-tick.svg",
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/HomeNew/medal.svg",
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -66,24 +67,25 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg: "/assets/images/HomeNew/BannersImg/DS-explore.png",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/DS-explore.webp",
           contentText:
             "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
           contentCard: [
             {
-              icon: "/assets/images/HomeNew/Live Call.svg",
+              icon: "/assets/images/new-component-assets/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/HomeNew/Award.svg",
+              icon: "/assets/images/new-component-assets/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/HomeNew/Counselling.svg",
+              icon: "/assets/images/new-component-assets/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/HomeNew/Experts.svg",
+              icon: "/assets/images/new-component-assets/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -111,21 +113,21 @@ const MainCoursesDynimicData = {
           facultyCard: [
             {
               facultyImg:
-                "/assets/images/HomeNew/faculty-img/dr_nilay_profile.webp",
+                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
               facultyName: "Dr. Nilay Karade",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ Years of Experience",
             },
             {
               facultyImg:
-                "/assets/images/HomeNew/faculty-img/dr_shilpa_joshi.webp",
+                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
               facultyName: "Dr. Shilpa Joshi",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ Years of Experience",
             },
             {
               facultyImg:
-                "/assets/images/HomeNew/faculty-img/Samidha_Photo.webp",
+                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ Years of Experience",
@@ -135,9 +137,9 @@ const MainCoursesDynimicData = {
 
         // content5: {
         //   contentHeading: "Course Curriculum",
-        //   durationIcon: "/assets/images/HomeNew/clock-green.svg",
-        //   tickIcon: "/assets/images/HomeNew/Check.svg",
-        //   dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
+        //   durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+        //   tickIcon: "/assets/images/new-component-assets/Check.svg",
+        //   dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
         //   curriculumContainer: [
         //     {
         //       weekHeading: "Week1",
@@ -171,9 +173,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/HomeNew/clock-green.svg",
-          tickIcon: "/assets/images/HomeNew/Check.svg",
-          dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Basic Data Science",
@@ -217,19 +219,20 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
-          durationIcon: "/assets/images/HomeNew/timer.svg",
-          EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R45,344",
               duration: "30 weeks",
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/India.svg",
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
 
               contaryName: "India",
               price: "₹ 242,694",
@@ -237,7 +240,7 @@ const MainCoursesDynimicData = {
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/USA.svg",
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 2414",
               duration: "30 weeks",
@@ -252,7 +255,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AL, ML, Drones, Robots, and data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products and services by promoting, enhancing core competencies, capacity building.",
-      tickImage: "/assets/images/HomeNew/Check.svg",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -263,7 +266,8 @@ const MainCoursesDynimicData = {
         "Statistical Analytics",
         "Database Structure & Algorithms",
       ],
-      image: "/assets/images/HomeNew/certificate/DS-certificate.webp",
+      image:
+        "/assets/images/new-component-assets/certificate/DS-certificate.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -271,7 +275,8 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg: "/assets/images/HomeNew/blog/ds-blog-1.webp",
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-beginners.webp",
           blogQuestion:
             "What Are The Key Features Of A Data Science Course Suitable For Beginners?",
           blogText:
@@ -280,7 +285,8 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog/ds-blog-2.webp",
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-salary.webp",
           blogQuestion: "What is the Data Science Course Salary?",
           blogText:
             "Data science has emerged as a dynamic and high-demand field, blending statistical analysis, ",
@@ -288,7 +294,8 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog/ds-blog-3.webp",
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-suitable-for-beginners.webp",
           blogQuestion:
             "What makes data science courses suitable for beginners?",
           blogText:
@@ -297,7 +304,8 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog/ds-blog-4.webp",
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-advantages.webp",
           blogQuestion: "What Are The Advantages Of A Data Science Course?",
           blogText:
             "In the era of big data, where information flows ceaselessly from diverse sources, the role of  ",
@@ -307,7 +315,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/HomeNew/arrow_drop_down.svg",
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -425,7 +433,8 @@ const MainCoursesDynimicData = {
   },
   DigitalMarketing: {
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/HomeNew/BannersImg/DM-Banner.webp",
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/DM/DM-Banner.webp",
       coursePageName: "Digital Marketing",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -433,23 +442,23 @@ const MainCoursesDynimicData = {
         "Digital Marketing is a comprehensive course to enhance your skills and stay ahead in the competitive online landscape. Gain practical knowledge in SEO, social media marketing, and paid advertising strategies. With hands-on experience and expert guidance,  master the latest trends and techniques in digital marketing. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/mouJDO4peOk?autoplay=1&loop=1&playlist=mouJDO4peOk",
-      BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
-      vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/HomeNew/Location.svg",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/HomeNew/Learn.svg",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
         },
       },
     },
@@ -458,17 +467,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/HomeNew/money-tick.svg",
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/HomeNew/brifecase-tick.svg",
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/HomeNew/medal.svg",
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -489,24 +498,25 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg: "/assets/images/HomeNew/BannersImg/DM-explore.webp",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DM/DM-explore.webp",
           contentText:
             "Digital Marketing is a comprehensive course that delivers the latest strategies and techniques in online marketing. Acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Stay competitive in the ever-evolving digital marketing landscape by joining our course today.",
           contentCard: [
             {
-              icon: "/assets/images/HomeNew/Live Call.svg",
+              icon: "/assets/images/new-component-assets/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/HomeNew/Award.svg",
+              icon: "/assets/images/new-component-assets/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/HomeNew/Counselling.svg",
+              icon: "/assets/images/new-component-assets/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/HomeNew/Experts.svg",
+              icon: "/assets/images/new-component-assets/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -538,14 +548,14 @@ const MainCoursesDynimicData = {
           facultyCard: [
             {
               facultyImg:
-                "/assets/images/HomeNew/faculty-img/bhupendra_mishra.webp",
+                "/assets/images/new-component-assets/faculty-img/bhupendra_mishra.webp",
               facultyName: "Bhupendra Mishra",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ years of Experience",
             },
             {
               facultyImg:
-                "/assets/images/HomeNew/faculty-img/faculty_deepika_sharma.webp",
+                "/assets/images/new-component-assets/faculty-img/faculty_deepika_sharma.webp",
               facultyName: "Dr.Deepika Sharma",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
@@ -555,9 +565,9 @@ const MainCoursesDynimicData = {
 
         // content5: {
         //   contentHeading: "Course Curriculum",
-        //   durationIcon: "/assets/images/HomeNew/clock-green.svg",
-        //   tickIcon: "/assets/images/HomeNew/Check.svg",
-        //   dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
+        //   durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+        //   tickIcon: "/assets/images/new-component-assets/Check.svg",
+        //   dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
         //   curriculumContainer: [
         //     {
         //       weekHeading: "Week1",
@@ -591,9 +601,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/HomeNew/clock-green.svg",
-          tickIcon: "/assets/images/HomeNew/Check.svg",
-          dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Digital Marketing Fundamentals",
@@ -634,19 +644,20 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
-          durationIcon: "/assets/images/HomeNew/timer.svg",
-          EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 24,488 ",
               duration: "20 weeks",
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/India.svg",
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
 
               contaryName: "India",
               price: "₹ 122,498",
@@ -654,7 +665,7 @@ const MainCoursesDynimicData = {
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/USA.svg",
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 1,238",
               duration: "20 weeks",
@@ -669,7 +680,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Enhance online marketing skills and boost your career prospects with the Digital Marketing Certificate Course. Learn advanced strategies in SEO, content marketing, social media, and more from industry experts. Enrol now, accelerate your professional growth and stand out in the competitive digital marketing field with our comprehensive certification course. Sign up now to stay ahead in the evolving digital landscape.",
-      tickImage: "/assets/images/HomeNew/Check.svg",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -680,7 +691,8 @@ const MainCoursesDynimicData = {
         "Content Marketing Excellence",
         " Expertise in Various Digital Channels",
       ],
-      image: "/assets/images/HomeNew/certificate/DM-certificate.webp",
+      image:
+        "/assets/images/new-component-assets/certificate/DM-certificate.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -688,7 +700,8 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg: "/assets/images/HomeNew/blog/dm-blog-1.webp",
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-digital-marketing-course.webp",
           blogQuestion: "What is a digital marketing course?",
           blogText:
             "Are you looking to advance your skills in the fast-paced digital marketing world, and to take your career to the next level? ",
@@ -696,7 +709,8 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-is-a-digital-marketing-course",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog/dm-blog-2.webp",
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-beginners.webp",
           blogQuestion:
             "Where Do You Find The Best Digital Marketing Courses For Beginners?",
           blogText:
@@ -705,7 +719,8 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/the-best-digital-marketing-courses-for-beginners",
         },
         {
-          blogImg: "/assets/images/HomeNew/blog/dm-blog-3.webp",
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-career-journey.webp",
           blogQuestion: "Upskill and Upgrade in Your Career Journey",
           blogText:
             "In today’s fast-paced and ever-changing job market, staying on top of your industry’s latest trends and skills is essential. ",
@@ -715,7 +730,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/HomeNew/arrow_drop_down.svg",
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -834,7 +849,8 @@ const MainCoursesDynimicData = {
   },
   ProjectManagement: {
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/HomeNew/BannersImg/PM-Banner.webp",
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/PM/PM-Banner.webp",
       coursePageName: "Project Management",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -842,23 +858,23 @@ const MainCoursesDynimicData = {
         "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements. It involves planning, executing, controlling, and closing the work of a team to achieve specific goals within a specified time frame. As businesses evolve, the need for effective project management becomes increasingly crucial for success.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
-      BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
-      vidoPlayIcon: "/assets/images/HomeNew/Polygon.svg",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/HomeNew/Location.svg",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/HomeNew/Learn.svg",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
         },
       },
     },
@@ -867,17 +883,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/HomeNew/money-tick.svg",
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/HomeNew/brifecase-tick.svg",
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/HomeNew/medal.svg",
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -899,24 +915,25 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg: "/assets/images/HomeNew/BannersImg/PM-explore.webp",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/PM-explore.webp",
           contentText:
             "Enhance your skills and boost your career prospects with the Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course.",
           contentCard: [
             {
-              icon: "/assets/images/HomeNew/Live Call.svg",
+              icon: "/assets/images/new-component-assets/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/HomeNew/Award.svg",
+              icon: "/assets/images/new-component-assets/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/HomeNew/Counselling.svg",
+              icon: "/assets/images/new-component-assets/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/HomeNew/Experts.svg",
+              icon: "/assets/images/new-component-assets/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -936,14 +953,14 @@ const MainCoursesDynimicData = {
           facultyCard: [
             {
               facultyImg:
-                "/assets/images/HomeNew/faculty-img/Dennis-Laxton.webp",
+                "/assets/images/new-component-assets/faculty-img/Dennis-Laxton.webp",
               facultyName: "Dr.Dennis Laxton",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
             {
               facultyImg:
-                "/assets/images/HomeNew/faculty-img/James_forson.webp",
+                "/assets/images/new-component-assets/faculty-img/James_forson.webp",
               facultyName: "James Forson",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
@@ -951,47 +968,11 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        // content5: {
-        //   contentHeading: "Course Curriculum",
-        //   durationIcon: "/assets/images/HomeNew/clock-green.svg",
-        //   tickIcon: "/assets/images/HomeNew/Check.svg",
-        //   dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
-        //   curriculumContainer: [
-        //     {
-        //       weekHeading: "Week1",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //     {
-        //       weekHeading: "Week2",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //     {
-        //       weekHeading: "Week3",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //   ],
-        // },
-
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/HomeNew/clock-green.svg",
-          tickIcon: "/assets/images/HomeNew/Check.svg",
-          dropDown: "/assets/images/HomeNew/arrow_drop_down.svg",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading:
@@ -1044,19 +1025,20 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/HomeNew/dollar-circle.svg",
-          durationIcon: "/assets/images/HomeNew/timer.svg",
-          EnrollmentIcon: "/assets/images/HomeNew/teacher.svg",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag: "/assets/images/HomeNew/south-africa.svg",
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 25,198 ",
               duration: "10 weeks",
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/India.svg",
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
 
               contaryName: "India",
               price: "₹ 128,978 ",
@@ -1064,7 +1046,7 @@ const MainCoursesDynimicData = {
               Enrollment: "10,000+ Enroled ",
             },
             {
-              contaryFlag: "/assets/images/HomeNew/USA.svg",
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 1,418",
               duration: "10 weeks",
@@ -1079,7 +1061,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "The Digital Regenesys Project Management Certificate equips professionals with essential skills to excel in project management. This online project management course covers key concepts, tools, and techniques for successful project planning, execution, and monitoring. Participants will learn effective communication strategies, risk management principles, and agile methodologies to enhance project outcomes. The certificate course is designed for individuals seeking to advance their project management careers in a digital environment.",
-      tickImage: "/assets/images/HomeNew/Check.svg",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -1090,51 +1072,56 @@ const MainCoursesDynimicData = {
         "Project Closure and Evaluation",
         "Comprehensive Project Management Knowledge",
       ],
-      image: "/assets/images/HomeNew/certificate/PM-certificate.webp",
+      image:
+        "/assets/images/new-component-assets/certificate/PM-certificate.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
-    // BlogSectionData: {
-    //   BlogSectionTitle: "For Your Research & Information",
-    //   cards: [
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-1.webp",
-    //       blogQuestion:
-    //         "What Are The Key Features Of A Data Science Course Suitable For Beginners?",
-    //       blogText:
-    //         "Data has become a vital component of innovation and development in the current digital era.",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-2.webp",
-    //       blogQuestion: "What is the Data Science Course Salary?",
-    //       blogText:
-    //         "Data science has emerged as a dynamic and high-demand field, blending statistical analysis, ",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
-    //     },
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-3.webp",
-    //       blogQuestion:
-    //         "What makes data science courses suitable for beginners?",
-    //       blogText:
-    //         "In today’s data-driven world, the field of data science has emerged as a cornerstone of",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
-    //     },
-    //     {
-    //       blogImg: "/assets/images/HomeNew/blog/ds-blog-4.webp",
-    //       blogQuestion: "What Are The Advantages Of A Data Science Course?",
-    //       blogText:
-    //         "In the era of big data, where information flows ceaselessly from diverse sources, the role of  ",
-    //       blogLink:
-    //         "https://www.digitalregenesys.com/blog/what-are-the-advantages-of-a-data-science-course",
-    //     },
-    //   ],
-    // },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-product-management.webp",
+          blogQuestion: "What Is A Project Management Course?",
+          blogText:
+            "Project management is a highly demanding domain that requires a great deal of expertise and experience. However, it is also a promising career path, offering opportunities for advancement and personal growth. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-is-a-project-management-course",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-career.webp",
+          blogQuestion:
+            "What Are The Benefits Of Enroling In Project Management Courses For Caree..",
+          blogText:
+            "the ever-evolving professional development landscape, Project Management courses have emerged as instrumental pathways for individuals seeking to enhance their skills and propel their careers to new heights.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-enroling-in-project-management-courses-for-career-growth",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-good-career-option.webp",
+          blogQuestion: "Is Project Management A Good Career Option For You?",
+          blogText:
+            "Are you a natural-born leader who loves to organise and motivate teams towards achieving goals? Do you thrive in fast-paced environments where every day brings new challenges?",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/is-project-management-a-good-career-option-for-you",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-leadership.webp",
+          blogQuestion:
+            "How Can Project Management Courses Enhance Your Leadership Skills?",
+          blogText:
+            "Project management courses are ideal for individuals who are willing to learn to develop and enhance leadership skills, equipping individuals with the tools and knowledge necessary to guide teams and deliver successful project outcomes.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/how-can-project-management-courses-enhance-your-leadership-skills",
+        },
+      ],
+    },
     faqSections: {
-      arrowIcon: "/assets/images/HomeNew/arrow_drop_down.svg",
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -1246,6 +1233,782 @@ const MainCoursesDynimicData = {
                 "How does the project management certification course contribute to personal and professional growth?",
               answer:
                 "The project management certification course fosters skill development in areas such as leadership, problem-solving, and communication. It also provides exposure to diverse projects and industries, contributing to continuous learning.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  ArtificialIntelligence: {
+    BannerWithVideoData: {
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/AI/AI-Banner.webp",
+      coursePageName: "Artificial Intelligence",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
+      contentText:
+        "Artificial Intelligence (AI) is an innovative and rapidly evolving field that seeks to replicate human intelligence in machines. It encompasses various techniques that enable machines to perform tasks that typically require human intelligence. Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. ",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      UspSectionData: {
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+        },
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          duration: "3000",
+        },
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Artificial Intelligence Course Outcomes",
+      Heding: "What our learners have achieved",
+      Card: [
+        {
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          text1: "1000+",
+          text2: " Career Opportunities",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          text1: "190+",
+          text2: "Countries Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore the World of Artificial Intelligence with us!",
+      bigHeading:
+        "Everything You Need To Know About Artificial Intelligence Course",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "", contentId: "content3" },
+        { text: "World Class Faculty", contentId: "content4" },
+        { text: "", contentId: "content5" },
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/AI-explore.webp",
+          contentText:
+            "The Digital Regenesys Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
+          contentCard: [
+            {
+              icon: "/assets/images/new-component-assets/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+
+        content3: {
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+              facultyName: "Samidha Kurle",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ years",
+            },
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+              facultyName: "Dr.Nilay Karade",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "11+ years",
+            },
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+              facultyName: "Dr.Shilpa Joshi",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "20+ years",
+            },
+          ],
+        },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading: "Artificial Intelligence Introductory",
+              weekPoints: [
+                "Python Programming for Artificial Intelligence",
+                "Introduction to Data Analysis & Data Visualisation",
+              ],
+            },
+            {
+              weekHeading: "Artificial Intelligence Intermediary",
+              weekPoints: [
+                "Artificial Intelligence and Machine Learning",
+                "Artificial Neural Networks",
+                "Deploying AI models in Production",
+              ],
+            },
+            {
+              weekHeading: "Artificial Intelligence Advanced Applied",
+              weekPoints: [
+                "AI-Powered Applications for Natural Language Processing (NLP)",
+                "Enhancing Visual Content with Computer Vision Techniques",
+                "Leveraging Cloud Computing Services for AI Applications",
+                "Unleashing Insights from Big Data through Analytics",
+                "Streamlining AI Development with ML Ops",
+              ],
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
+              contaryName: "SouthAfrica",
+              price: "R 37,947",
+              duration: "10 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
+
+              contaryName: "India",
+              price: "₹ 181,497",
+              duration: "10 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryName: "USA",
+              price: "$ 2,137",
+              duration: "10 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title: "About Digital Regenesys Artificial Intelligence Certificate",
+      heading: "Certification",
+      paragraph:
+        "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        " Deep Learning.  ",
+        "Problem-solving with AI.",
+        "Emerging Trends in AI.  ",
+        "Natural Language Processing.",
+        " Machine Learning Fundamentals.",
+        "Introduction to Artificial Intelligence.",
+      ],
+      image:
+        "/assets/images/new-component-assets/certificate/AI-certificate.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-course.webp",
+          blogQuestion: "Why Invest In An Artificial Intelligence Course?",
+          blogText:
+            "In an era of technological prowess, Artificial Intelligence (AI) is a transformative force, reshaping industries and redefining innovation possibilities. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/why-invest-in-an-artificial-intelligence-course",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-future.webp",
+          blogQuestion: "Jobs of the Future: Artificial Intelligence",
+          blogText:
+            "Artificial intelligence (AI) is no longer a distant concept from science fiction movies; it is quickly becoming a daily reality. From voice assistants like Siri and Alexa to self-driving cars and smart home devices, AI technology transforms how we live and work. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/jobs-of-the-future-artificial-intelligence",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-job-market.webp",
+          blogQuestion:
+            "The Impact Of AI On The Job Market And The Future Of Work",
+          blogText:
+            "Navigating the AI Revolution: How it’s Reshaping the Job Market and the Future of..",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/the-impact-of-ai-on-the-job-market-and-the-future-of-work",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-upskill.webp",
+          blogQuestion: "Upskill And Upgrade With Artificial Intelligence",
+          blogText:
+            "Staying ahead of the curve is crucial in today’s rapidly evolving world. With technology advancing at an unprecedented pace, it’s becoming increasingly essential to upskill and upgrade our knowledge and skills. And one of the most promising and transformative technologies of our time is Artificial Intelligence (AI).",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/upskill-and-upgrade-with-artificial-intelligenceartificial-intelligence",
+        },
+      ],
+    },
+    faqSections: {
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
+      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Artificial Intelligence Course",
+          faqs: [
+            {
+              question: "What is Artificial Intelligence?",
+              answer:
+                "Artificial Intelligence (AI) refers to developing computer systems that can perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and understanding natural language.",
+            },
+            {
+              question: "Why should I take an Artificial Intelligence course?",
+              answer:
+                "An Artificial Intelligence (AI) course equips individuals with the knowledge and skills needed to understand, develop, and apply AI technologies. It is valuable for careers in AI research, development, and implementation.",
+            },
+            {
+              question: "What will I learn in an AI course?",
+              answer:
+                "Artificial Intelligence (AI) course cover various topics, including Introduction to Data Analysis & Data Visualisation, Python Programming for Artificial Intelligence, Artificial Neural Networks, Artificial Intelligence and Machine Learning and more.",
+            },
+          ],
+        },
+
+        {
+          heading: "Eligibility and Enrolment",
+          faqs: [
+            {
+              question: "Who can pursue an Artificial Intelligence course?",
+              answer:
+                "Any professionals, computer science graduates, engineering, data science professionals,  business professionals, or individuals interested in gaining expertise in AI technologies can pursue an Artificial Intelligence course.",
+            },
+            {
+              question:
+                "Do I need a background in programming to enrol in an AI course?",
+              answer:
+                "While some AI course may assume basic programming knowledge. Digital Regenesys AI course curriculum includes an introductory course catering to individuals with minimal programming experience, providing necessary foundational skills.",
+            },
+            {
+              question:
+                "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
+              answer:
+                'To enrol in Digital Regenesys’s Artificial Intelligence Course, visit the official website @ https://www.digitalregenesys.com/, navigate to the course page, select the required course, click the "Enrol Now" button, complete the registration form with all the required details, submit the form and proceed to make the payment for the course. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+            },
+          ],
+        },
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question: "What are Artificial Intelligence tools?",
+              answer:
+                "Artificial Intelligence tools are software applications or frameworks that facilitate AI model development, implementation, and deployment. AI tools provide functionalities for tasks such as machine learning, natural language processing, computer vision, and more.",
+            },
+            {
+              question: "Why use AI tools in development?",
+              answer:
+                "AI tools streamline development by offering pre-built algorithms, libraries, and frameworks, saving developers time and effort. They provide a standardised environment for building and deploying AI applications.",
+            },
+            {
+              question:
+                "What programming languages are commonly used with AI tools?",
+              answer:
+                "Python is widely used with many AI tools and libraries due to its simplicity and extensive support for AI-related tasks. However, some tools also support R, Java, and more languages.",
+            },
+          ],
+        },
+        {
+          heading: "Duration and Accessibility",
+          faqs: [
+            {
+              question:
+                "How long does it take to complete the Digital Regenesys Artificial Intelligence course?",
+              answer:
+                "The total duration of the Digital Regenesys Artificial Intelligence Course is 37 Weeks.",
+            },
+            {
+              question:
+                "Are there prerequisites for enrolling in the Digital Regenesys Artificial Intelligence course?",
+              answer:
+                "There are no specific prerequisites for enrolling in the Digital Regenesys Artificial Intelligence course. But, individuals with a mathematics, programming, and statistics background are often beneficial.",
+            },
+            {
+              question:
+                "Can organizations enroll teams in AI courses to upskill?",
+              answer:
+                "Yes. Digital Regenesys offer corporate training or customized AI courses to upskill teams and organizations in AI technologies.",
+            },
+          ],
+        },
+        {
+          heading: "Artificial Intelligence Online Certification Course",
+          faqs: [
+            {
+              question: "Are Artificial Intelligence courses available online?",
+              answer:
+                "Yes, the Digital Regenesys Artificial Intelligence course is available online, allowing learners to study at their own pace and from anywhere with an internet connection.",
+            },
+            {
+              question:
+                "Can I get a certification upon completing an online Artificial Intelligence course?",
+              answer:
+                "Yes, Digital Regenesys provide certificates upon completing an online Artificial Intelligence course.",
+            },
+            {
+              question:
+                "Can Digital Regenesys online Artificial Intelligence course lead to career development?",
+              answer:
+                "Yes. Upon successfully completing the Digital Regenesys online Artificial Intelligence course, individuals can pave the way for a career in AI research, development, data science, machine learning, or related fields.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  CyberSecurity: {
+    BannerWithVideoData: {
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/CS/CS-Banner.webp",
+      coursePageName: "Cyber Security",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
+      contentText:
+        "A  Cyber Security course is a specialised fundamental course that equips individuals with the knowledge and skills to protect computer systems, networks, and sensitive data from cyber threats. The domain of cyber security is crucial in today's digital age as organisations and individuals face increasingly sophisticated cyber attacks. Get Ahead with our Cyber Security Course!",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/S5RDj33518g?autoplay=1&loop=1&playlist=S5RDj33518g",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      UspSectionData: {
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+        },
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          duration: "3000",
+        },
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Cyber Security Course Outcomes",
+      Heding: "What our learners have achieved",
+      Card: [
+        {
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          text1: "1000+",
+          text2: " Career Opportunities",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          text1: "190+",
+          text2: "Countries Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore the World of Cyber Security with us!",
+      bigHeading: "Everything You Need To Know About Cyber Security Course.",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "", contentId: "content3" },
+        { text: "World Class Faculty", contentId: "content4" },
+        { text: "", contentId: "content5" },
+
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/CS-explore.webp",
+          contentText:
+            "A  Cyber Security course comprises various aspects of cyber security, including network security, information security, cryptography, and ethical hacking. Students learn how to identify vulnerabilities in systems, mitigate security risks, and respond to security incidents effectively. Upon completion of the course, learners are prepared to pursue careers as cyber security analysts, consultants, or administrators in both the private and public sectors.",
+          contentCard: [
+            {
+              icon: "/assets/images/new-component-assets/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+
+        content3: {
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/Dr-Saquib-Ahmad-Khan2.webp",
+              facultyName: "Dr.Saquib Ahmad Khan",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ years",
+            },
+          ],
+        },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading: "Week1",
+              weekPoints: [
+                "Cyber security fundamentals",
+                "Security policies and procedures",
+                "Cyber security mitigation methods",
+                "CIA triad",
+              ],
+            },
+            {
+              weekHeading: "Week2",
+              weekPoints: [
+                "Enterprise Architecture",
+                "Organisational security policy and components",
+                "Internet & networking basics",
+                "Introduction to secured architecture",
+                "Wireless networks",
+                "Network security controls",
+                "Cloud Virtualisation",
+                "BYOD and IOT security testing",
+              ],
+            },
+            {
+              weekHeading: "Week3",
+              weekPoints: [
+                "Information system governance and risk assessment",
+                "Introduction to information security",
+                "Governance risk",
+                "Management information security programmes",
+                "Network security and spoofing",
+              ],
+            },
+            {
+              weekHeading: "Week4",
+              weekPoints: [
+                "Developing an incident management and response system",
+                "Digital forensics business",
+                "Continuity and disaster recovery",
+                "Wi-Fi network security",
+                "Web security",
+                "OS fundamentals and security",
+              ],
+            },
+            {
+              weekHeading: "Week5",
+              weekPoints: [
+                "Cryptography and Encryption",
+                "Cryptanalysis",
+                "Malware Analysis, Memory Forensics",
+                "Cyber Forensic",
+                "Application Security",
+              ],
+            },
+            {
+              weekHeading: "Week6",
+              weekPoints: [
+                "Introduction to application security",
+                "Web-based applications and associated vulnerabilities",
+                "Cookies and tracking",
+                "Data and database security",
+                "Phishing and other attacks on identity",
+                "Regulation, compliance, and risk management",
+              ],
+            },
+            {
+              weekHeading: "Week7",
+              weekPoints: [
+                "Introduction to Ethical Hacking",
+                "Overview of information security, threats, attack vectors, and ethical hacking concepts",
+                "Information security controls",
+                "Penetration testing concepts and information security laws and standards",
+                "Footprinting and Reconnaissance",
+              ],
+            },
+            {
+              weekHeading: "Week8",
+              weekPoints: [
+                "Session by industry experts",
+                "Session on work readiness skills",
+              ],
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
+              contaryName: "SouthAfrica",
+              price: "R 19,379 ",
+              duration: "13 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
+
+              contaryName: "India",
+              price: "₹ 87,098",
+              duration: "13 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryName: "USA",
+              price: "$ 1,128",
+              duration: "13 weeks",
+              Enrollment: "10,000+ Enroled ",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title: "About Digital Regenesys Cyber Security Certificate",
+      heading: "Certification",
+      paragraph:
+        "Digital Regenesys aims to equip individuals with the knowledge and skills needed to address the challenges in cyber security. It covers network security, information security, ethical hacking, risk management, and cyber security governance. The cyber security course may align with industry standards and best practices, making it relevant and recognised in cyber security.",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        "Ethical Hacking ",
+        "Cloud security",
+        "Blockchain security",
+        "Risk assessment and mitigation",
+        "Information security controls  ",
+        "Network security",
+      ],
+      image:
+        "/assets/images/new-component-assets/certificate/CS-certificate.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-course.webp",
+          blogQuestion: "Which Is The Best Cyber Security Course?",
+          blogText:
+            "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/which-is-the-best-cyber-security-course",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-future.webp",
+          blogQuestion:
+            "Why Are Cyber Security Courses a Smart Investment for the Future",
+          blogText:
+            "In an era where the digital landscape permeates every facet of our lives, safeguarding sensitive information and digital assets has become paramount. Cyber Security, as the vanguard against many digital threats, is a linchpin in ensuring data integrity, confidentiality, and availability. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/why-are-cyber-security-courses-a-smart-investment-for-the-future",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-qualifications.webp",
+          blogQuestion:
+            "What qualifications do I need to study cyber security?",
+          blogText:
+            "Organisations with networks plugged into the internet (and let’s face it, that’s practically all of them) expose themselves to business disruption, financial loss, reputational ruin, and litigation if they neglect their cyber security measures.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-qualifications-do-i-need-to-study-cyber-security",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-promising.webp",
+          blogQuestion:
+            "Why Enrol In A Cyber Security Course For A Promising Career?",
+          blogText:
+            "In a rapidly evolving landscape of the digital age, where technological advancements bring unprecedented opportunities, they also usher in new challenges in the form of cyber threats and security breaches. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/why-enrol-in-a-cyber-security-course-for-a-promising-career",
+        },
+      ],
+    },
+    faqSections: {
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
+      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Cyber Security Course",
+          faqs: [
+            {
+              question: "What is a Cyber Security Course?",
+              answer:
+                "Cyber security is an educational course that provides instruction and training on topics related to securing computer systems, networks, and data from cyber threats.",
+            },
+            {
+              question:
+                "Can these cyber security tools prevent all types of cyber-attacks?",
+              answer:
+                "Cyber Security tools are essential, but no tool can guarantee absolute protection. A layered approach combining multiple tools, regular updates, user education, and proactive monitoring is crucial for comprehensive cybersecurity.",
+            },
+            {
+              question:
+                "What is the difference between a degree programme and a certification course in Cyber Security?",
+              answer:
+                "Cyber Security degree programmes offer a more extensive theoretical education. These include a bachelor's or master's degree in Cyber Security. Certification course in Cyber Security focus on specific skills and often have a practical, hands-on approach.",
+            },
+          ],
+        },
+        {
+          heading: "Eligibility and Enrolment",
+          faqs: [
+            {
+              question: "Who should take a Cyber Security course?",
+              answer:
+                "The Cyber Security course is suitable for individuals interested in pursuing careers in cybersecurity, IT professionals, system administrators, network engineers, and anyone looking to enhance their knowledge of protecting digital assets.",
+            },
+            {
+              question:
+                "Is a background in IT necessary for taking a Cyber Security course?",
+              answer:
+                "While a background in IT is beneficial, Cyber Security courses cater to individuals with varying experience levels. Introductory courses are available for beginners, and advanced courses are suitable for experienced IT professionals.",
+            },
+            {
+              question:
+                "How do I enrol and register for the Digital Regenesys Cyber Security Course?",
+              answer:
+                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps: Visit the official website @ https://www.digitalregenesys.com/ Navigate to the course page. Select the required course. Click the "Enrol Now" button. Complete the registration form with all the required details. Submit the form and proceed to make the payment for the course. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+            },
+          ],
+        },
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question:
+                "What tools are covered in Digital Regenesys’s Cyber Security Course?",
+              answer:
+                "Tools used in the Digital Regenesys Cyber Security Course are: VeraCrypt, Tor, Nmap, Splunk, Wazuh – SIEM, OWASP, Nikto, KeePass, Email Forensics, Aircrack-NG, inSSIDer, Wireshark, Burpsuite and John The Ripper",
+            },
+            {
+              question: "Why are Cyber Security tools important?",
+              answer:
+                "Cyber Security tools are crucial for safeguarding digital assets against various cyber threats, including malware, phishing attacks, and unauthorized access. They help organizations maintain their information's confidentiality, integrity, and availability.",
+            },
+            {
+              question:
+                "Can individuals use Cyber Security tools to protect their personal devices?",
+              answer:
+                "Yes, individuals can use various cyber security tools, such as antivirus software, firewalls, and virtual private networks (VPNs), to enhance the security of their personal devices and online activities.",
+            },
+          ],
+        },
+        {
+          heading: "Duration and Accessibility",
+          faqs: [
+            {
+              question:
+                "How Long Does It Take to Complete a Cyber Security Course?",
+              answer:
+                "The total duration of the Digital Regenesys Cyber Security Course is 13 Weeks (8 Weeks + 5 Weeks) course.",
+            },
+            {
+              question:
+                "Can I take a self-paced Cyber Security Course, or do they have fixed schedules?",
+              answer:
+                "Some Cyber Security Course is self-paced, allowing learners to progress through the material quickly. Others follow a fixed schedule with set start and end dates.",
+            },
+            {
+              question:
+                "How can I make the most of the duration of a Cyber Security course?",
+              answer:
+                "To maximize the learning experience, stay engaged in class discussions, participate in hands-on labs, and seek additional resources for deeper understanding. Networking with peers and industry professionals can also enhance the learning journey.",
+            },
+          ],
+        },
+        {
+          heading: "Cyber Security Online Certification Course",
+          faqs: [
+            {
+              question: "Can a Cyber Security course be taken online?",
+              answer:
+                "Yes, the Digital Regenesys Cyber Security course is available online, allowing learners to study independently and from anywhere with an internet connection.",
+            },
+            {
+              question:
+                "What are the key topics covered in the Cyber Security Online Certification Course?",
+              answer:
+                "Topics typically include network security, cryptography, ethical hacking, incident response, malware analysis, risk management, and compliance with cyber security regulations.",
+            },
+            {
+              question:
+                "Does an online Cyber Security Online Certification Course cover emerging threats and technologies?",
+              answer:
+                "Yes. Digital Regenesys’s Cyber Security Online Certification Course strive to stay current with the latest cyber security trends, emerging threats, and technologies to ensure students are well-prepared for the evolving landscape.",
             },
           ],
         },
