@@ -27,7 +27,7 @@ const StudentReviewData = {
     },
     {
       StudentReviewCardImg:
-        "assets/images/new-component-assets/students/Testimonial-3.webp",
+        "assets/images/new-component-assets/students/Akshay-Patil.webp",
       StudentReviewName: "Akshay Patil",
       StudentReviewRole: "Machine Learning",
       StudentReviewStar: 3.5,
@@ -37,7 +37,7 @@ const StudentReviewData = {
     },
     {
       StudentReviewCardImg:
-        "assets/images/new-component-assets/students/Testimonial-4.webp",
+        "assets/images/new-component-assets/students/DhirajGaikwad.webp",
       StudentReviewName: "Dhiraj Gaikwad",
       StudentReviewRole: "Artificial Intelligence",
       StudentReviewStar: 3.5,
@@ -46,7 +46,7 @@ const StudentReviewData = {
       StudentReviewSideTag: "./assets/images/new-component-assets/Hike Tag.svg",
     },
     // {
-    //   StudentReviewCardImg: "assets/images/new-component-assets/students/Testimonial-5.webp",
+    //   StudentReviewCardImg: "assets/images/new-component-assets/students/ADamilareEmmanuel.webp",
     //   StudentReviewName: "ADamilare Emmanuel",
     //   StudentReviewRole: "Machine Learning",
     //   StudentReviewStar: 3.5,
