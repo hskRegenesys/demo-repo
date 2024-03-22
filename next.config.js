@@ -1575,20 +1575,20 @@ const createReWrites = () => {
 
     ///==================PM======================
 
-    {
-      source: "/project-management-courses",
-      destination: "/all-courses-multiple/project-management-courses",
-    },
+    // {
+    //   source: "/project-management-courses",
+    //   destination: "/all-courses-multiple/project-management-courses",
+    // },
     ///=========================CS===========================
-    {
-      source: "/cyber-security-course",
-      destination: "/all-courses-multiple/cyber-security-course",
-    },
+    // {
+    //   source: "/cyber-security-course",
+    //   destination: "/all-courses-multiple/cyber-security-course",
+    // },
     ///=========================AI===========================
-    {
-      source: "/artificial-intelligence-course",
-      destination: "/all-courses-multiple/artificial-intelligence-course",
-    },
+    // {
+    //   source: "/artificial-intelligence-course",
+    //   destination: "/all-courses-multiple/artificial-intelligence-course",
+    // },
 
     // -------------------------multiple-pages-end---------------------------------
 
@@ -1601,10 +1601,10 @@ const createReWrites = () => {
       source: "/all-courses/management-advancement",
       destination: "/all-courses/management-advancement/48",
     },
-    {
-      source: "/all-courses/product-management",
-      destination: "/all-courses/product-management/49",
-    },
+    // {
+    //   source: "/all-courses/product-management",
+    //   destination: "/all-courses/product-management/49",
+    // },
     {
       source: "/all-courses/data-and-business-analytics",
       destination: "/all-courses/data-and-business-analytics/30",
