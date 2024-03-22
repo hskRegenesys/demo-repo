@@ -23,7 +23,7 @@ const Content4: React.FC<Content4Props> = ({ contentHeading, LevelCard }) => {
           <div className={styles.card4} key={index}>
             {/* Frame Image in the top-left corner */}
             <img
-              src="/assets/images/HomeNew/Group 2.svg"
+              src="/assets/images/new-component-assets/Group 2.svg"
               alt="Frame"
               className={styles.frameImage}
             />
@@ -35,7 +35,7 @@ const Content4: React.FC<Content4Props> = ({ contentHeading, LevelCard }) => {
                 {pricing.list.map((item, subIndex) => (
                   <li key={subIndex}>
                     <img
-                      src="/assets/images/HomeNew/Check.svg"
+                      src="/assets/images/new-component-assets/Check.svg"
                       alt="Tick Icon"
                       className={styles.tickIcon}
                     />

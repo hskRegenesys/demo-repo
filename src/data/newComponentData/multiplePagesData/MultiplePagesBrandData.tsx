@@ -1,30 +1,31 @@
 const MultiplePagesBrandData = {
   BannerWithImg: {
-    BannerImgDesktop: "/assets/images/HomeNew/BannersImg/Brand-Banner.png",
+    BannerImgDesktop:
+      "/assets/images/new-component-assets/BrandPage/Brand-Banner.webp",
     BannerImgAlt: "Digital Regenesys online courses - Digital Regenesys",
-    coursePageName: "Digital Regenesys! ",
+    coursePageName: "Digital Regenesys!",
     BestSaleText: "Supercharge Your Career with ",
     topTextMessage: "Digital Regenesys",
     contentText:
       "Discover the comprehensive array of Digital Regenesys online courses designed to equip learners with essential skills in today's competitive digital landscape. Online courses provide a holistic learning experience enhance professional capabilities, and drive growth in your field. Enrol and take your digital skills to the next level with Digital Regenesys online courses.",
     youtubeVideoLink:
       "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
-    BrochureIcon: "/assets/images/HomeNew/Brochure.svg",
+    BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
     UspSectionData: {
       uspLocationCard: {
         uspLocationText:
           "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-        usplocationIcon: "/assets/images/HomeNew/Location.svg",
+        usplocationIcon: "/assets/images/new-component-assets/Location.svg",
       },
       uspEnrollmentCard: {
         uspEnrollmentText: "Students Enrolled",
         uspEnrollmentCount: "10000+",
-        StudentEnrolIcon: "/assets/images/HomeNew/Users.svg",
+        StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
         duration: "3000",
       },
       uspUpskillCard: {
         uspUpskillText: "Enhances Upskilling Courses",
-        uspBookIcon: "/assets/images/HomeNew/Learn.svg",
+        uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
       },
     },
   },
@@ -33,19 +34,19 @@ const MultiplePagesBrandData = {
     LsHeding: "Talk to our experts. We’re available 24/7",
     cards: [
       {
-        LsImg: "/assets/images/HomeNew/LearnersSupport-1.png",
+        LsImg: "/assets/images/new-component-assets/LearnersSupport-1.png",
         LsQuestion: "Discuss with a career advisor",
         LsText: "Not sure? Talk to an expert",
         ButtenText: "Talk Now",
       },
       {
-        LsImg: "/assets/images/HomeNew/LearnersSupport-2.png",
+        LsImg: "/assets/images/new-component-assets/LearnersSupport-2.png",
         LsQuestion: "Download Brochure",
         LsText: "Get Complete Details",
         ButtenText: "Download",
       },
       {
-        LsImg: "/assets/images/HomeNew/LearnersSupport-3.png",
+        LsImg: "/assets/images/new-component-assets/LearnersSupport-3.png",
         LsQuestion: "Eligibility",
         LsText: "Know Your Eligibility",
         ButtenText: " Check Eligibility",
@@ -56,7 +57,8 @@ const MultiplePagesBrandData = {
     BlogSectionTitle: "For Your Research & Information",
     cards: [
       {
-        blogImg: "/assets/images/HomeNew/blog/brand-blog-1.webp",
+        blogImg:
+          "/assets/images/new-component-assets/BrandPage/brand-blog-online-course.webp",
         blogQuestion: "What Are the Benefits of Taking Online Courses?",
         blogLink:
           "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-taking-online-courses",
@@ -64,7 +66,8 @@ const MultiplePagesBrandData = {
           "In the ever-evolving landscape of education, online courses have transformed the traditional learning paradigm, offering many advantages to learners worldwide. These digital educational experiences,",
       },
       {
-        blogImg: "/assets/images/HomeNew/blog/brand-blog-2.webp",
+        blogImg:
+          "/assets/images/new-component-assets/BrandPage/brand-blog-certificates.webp",
         blogQuestion:
           "Where Do You Find The Best Online Courses With Certificates?",
         blogLink:
@@ -73,7 +76,8 @@ const MultiplePagesBrandData = {
           "In the era of online education, the quest for the best courses, accompanied by valuable certificates, has become a vital pursuit",
       },
       {
-        blogImg: "/assets/images/HomeNew/blog/brand-blog-3.webp",
+        blogImg:
+          "/assets/images/new-component-assets/BrandPage/brand-blog-it-courses.webp",
         blogQuestion:
           "How Do You Choose The Right Online IT Course For Your Career?",
         blogLink:
@@ -82,7 +86,8 @@ const MultiplePagesBrandData = {
           "In the ever-evolving landscape of Information Technology (IT), choosing the right online course for your career is a pivotal decision to shape your professional trajectory. As technology advances,",
       },
       {
-        blogImg: "/assets/images/HomeNew/blog/brand-blog-4.webp",
+        blogImg:
+          "/assets/images/new-component-assets/BrandPage/brand-blog-working-professionals.webp",
         blogQuestion: "Why Online Courses Are Ideal For Working Professionals?",
         blogLink:
           "https://www.digitalregenesys.com/blog/how-do-you-choose-the-right-online-it-course-for-your-career",
@@ -92,7 +97,7 @@ const MultiplePagesBrandData = {
     ],
   },
   faqSections: {
-    arrowIcon: "/assets/images/HomeNew/arrow_drop_down.svg",
+    arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
     HeadingDesktop: "Frequently Asked Questions",
     HeadingMobile: "FAQ",
     sections: [

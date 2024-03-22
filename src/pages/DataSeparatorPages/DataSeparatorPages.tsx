@@ -120,6 +120,16 @@ const DataSeparatorPages = (page: string | undefined): any | undefined => {
       ...MainCoursesDynimicData.ProjectManagement,
       multiplePagesDatas: MultiplePagesCoursesData[page],
     };
+  } else if (page === "cyber-security-course") {
+    return {
+      ...MainCoursesDynimicData.CyberSecurity,
+      multiplePagesDatas: MultiplePagesCoursesData[page],
+    };
+  } else if (page === "artificial-intelligence-course") {
+    return {
+      ...MainCoursesDynimicData.ArtificialIntelligence,
+      multiplePagesDatas: MultiplePagesCoursesData[page],
+    };
   }
 
   return undefined;
