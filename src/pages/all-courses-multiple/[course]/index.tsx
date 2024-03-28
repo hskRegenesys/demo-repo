@@ -132,7 +132,7 @@ const Course = (props: any) => {
         />
       )}
       <Style />
-      <HeaderOne pageTitle={props?.course} />
+      <HeaderOne />
       <MobileMenu />
       <SearchPopup />
       <Schemas

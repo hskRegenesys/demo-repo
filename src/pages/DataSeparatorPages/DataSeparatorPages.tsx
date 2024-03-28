@@ -1,135 +1,185 @@
 import MultiplePagesCoursesData from "@/data/newComponentData/multiplePagesData/MultiplePagesCoursesData";
 import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
 
+const pageMappings = [
+  {
+    pages: [
+      "data-science-course",
+      "data-science-courses",
+      "courses-in-data-science",
+      "course-for-data-science",
+      "data-science-online-courses",
+      "data-science-course-online",
+      "courses-data-science",
+      "online-data-science-courses",
+      "best-data-science-courses",
+      "a-crash-course-in-data-science",
+      "data-science-courses-online",
+      "python-data-science-course",
+      "best-online-data-science-courses",
+      "data-science-certification-course",
+      "online-course-in-data-science",
+      "online-data-science-course",
+    ],
+    data: MainCoursesDynimicData.DataScience,
+  },
+  {
+    pages: [
+      "online-courses",
+      "online-course",
+      "courses-online",
+      "online-coding-courses",
+      "online-courses-with-certificates",
+      "online-certification-courses",
+      "coding-courses-online",
+      "IT-courses-online",
+      "online-certificate-courses",
+      "online-courses-for-adults",
+      "best-online-courses",
+      "online-it-courses",
+      "online-certificate-course",
+      "online-courses-certificates",
+      "online-training-courses",
+      "certificate-courses-online",
+    ],
+    data: undefined,
+  },
+  {
+    pages: [
+      "digital-marketing",
+      "what-is-digital-marketing",
+      "digital-marketing-jobs",
+      "digital-marketing-salary",
+      "digital-marketer",
+      "digital-marketing-course",
+      "digital-marketing-strategy",
+      "digital-marketing-certificate",
+      "google-digital-marketing-certification",
+      "digital-marketing-courses",
+      "digital-marketing-near-me",
+      "digital-marketing-specialist",
+      "digital-marketing-certification",
+      "digital-marketing-degree",
+      "digital-marketing-tools",
+      "digital-marketing-training",
+      "digital-marketing-certificates",
+      "digital-marketing-institute",
+      "digital-marketing-strategies",
+      "digital-marketing-course-online",
+      "digital-marketing-definition",
+      "digital-marketing-examples",
+      "digital-marketing-meaning",
+      "digital-marketing-trends",
+      "learn-digital-marketing",
+      "types-of-digital-marketing",
+      "digital-marketer-salary",
+      "digital-marketing-classes",
+      "digital-marketing-online-courses",
+      "online-digital-marketing-courses",
+      "what-is-a-digital-marketer",
+      "digital-marketing-courses-online",
+      "google-digital-marketing-course",
+      "how-to-become-a-digital-marketer",
+      "how-to-do-digital-marketing",
+      "how-to-start-digital-marketing",
+      "online-digital-marketing",
+      "digital-marketing-blogs",
+      "digital-marketing-careers",
+      "digital-marketing-certificate-online",
+      "digital-marketing-certifications",
+      "fundamentals-of-digital-marketing",
+      "online-digital-marketing-course",
+      "what-does-a-digital-marketer-do",
+      "what's-digital-marketing",
+      "best-digital-marketing-services",
+      "certificate-in-digital-marketing",
+      "digital-marketing-platforms",
+      "digital-marketing-tips",
+      "masters-in-digital-marketing",
+      "what-is-a-digital-marketing",
+      "best-digital-marketing-courses",
+      "definition-of-digital-marketing",
+      "digital-marketing-degree-online",
+      "digital-marketing-degrees",
+      "digital-marketing-experts",
+      "digital-marketing-online",
+      "examples-of-digital-marketing",
+      "how-to-learn-digital-marketing",
+      "future-of-digital-marketing",
+      "importance-of-digital-marketing",
+      "why-is-digital-marketing-important",
+    ],
+    data: MainCoursesDynimicData.DigitalMarketing,
+  },
+  {
+    pages: [
+      "project-management-courses",
+      "project-management-course",
+      "project-management-courses-online",
+      "project-manager-course",
+      "online-project-management-courses",
+      "project-managment-courses",
+      "what-skills-can-you-get-from-managing-it-projects-course",
+      "courses-in-project-management",
+      "online-course-for-project-management",
+      "online-course-in-project-management",
+      "project-management-online-course",
+      "project-manager-courses",
+      "project-managing-courses",
+      "project-management-certification-courses",
+      "project-management-course-online",
+      "project-management-online-courses",
+      "project-management-training-courses",
+      "agile-project-management-course",
+      "construction-project-management-courses",
+      "best-project-management-courses",
+      "online-courses-project-management",
+      "online-project-management-course",
+      "project-manager-courses-online",
+      "project-managment-course",
+      "course-in-project-management",
+      "project-management-courses-for-beginners",
+      "project-management-on-line-courses",
+    ],
+
+    data: MainCoursesDynimicData.ProjectManagement,
+  },
+  {
+    pages: ["cyber-security-course"],
+    data: MainCoursesDynimicData.CyberSecurity,
+  },
+  {
+    pages: ["artificial-intelligence-course"],
+    data: MainCoursesDynimicData.ArtificialIntelligence,
+  },
+  {
+    pages: ["design-thinking"],
+    data: MainCoursesDynimicData.DesignThinking,
+  },
+  {
+    pages: ["full-stack-developer"],
+    data: MainCoursesDynimicData.FullStackDeveloper,
+  },
+  {
+    pages: ["data-analysis"],
+    data: MainCoursesDynimicData.DataAndBusinessAnalytics,
+  },
+  {
+    pages: ["mdp"],
+    data: MainCoursesDynimicData.ManagementAdvancement,
+  },
+];
+
 const DataSeparatorPages = (page: string | undefined): any | undefined => {
   if (!page) return undefined;
 
-  if (
-    page === "data-science-course" ||
-    page === "data-science-courses" ||
-    page === "courses-in-data-science" ||
-    page === "course-for-data-science" ||
-    page === "data-science-online-courses" ||
-    page === "data-science-course-online" ||
-    page === "courses-data-science" ||
-    page === "online-data-science-courses" ||
-    page === "best-data-science-courses" ||
-    page === "a-crash-course-in-data-science" ||
-    page === "data-science-courses-online" ||
-    page === "python-data-science-course" ||
-    page === "best-online-data-science-courses" ||
-    page === "data-science-certification-course" ||
-    page === "online-course-in-data-science" ||
-    page === "online-data-science-course"
-  ) {
-    return {
-      ...MainCoursesDynimicData.DataScience,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (
-    page === "online-courses" ||
-    page === "online-course" ||
-    page === "courses-online" ||
-    page === "online-coding-courses" ||
-    page === "online-courses-with-certificates" ||
-    page === "online-certification-courses" ||
-    page === "coding-courses-online" ||
-    page === "IT-courses-online" ||
-    page === "online-certificate-courses" ||
-    page === "online-courses-for-adults" ||
-    page === "best-online-courses" ||
-    page === "online-it-courses" ||
-    page === "online-certificate-course" ||
-    page === "online-courses-certificates" ||
-    page === "online-training-courses" ||
-    page === "certificate-courses-online"
-  ) {
-    return {
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (
-    page === "digital-marketing" ||
-    page === "what-is-digital-marketing" ||
-    page === "digital-marketing-jobs" ||
-    page === "digital-marketing-salary" ||
-    page === "digital-marketer" ||
-    page === "digital-marketing-course" ||
-    page === "digital-marketing-strategy" ||
-    page === "digital-marketing-certificate" ||
-    page === "google-digital-marketing-certification" ||
-    page === "digital-marketing-courses" ||
-    page === "digital-marketing-near-me" ||
-    page === "digital-marketing-specialist" ||
-    page === "digital-marketing-certification" ||
-    page === "digital-marketing-degree" ||
-    page === "digital-marketing-tools" ||
-    page === "digital-marketing-training" ||
-    page === "digital-marketing-certificates" ||
-    page === "digital-marketing-institute" ||
-    page === "digital-marketing-strategies" ||
-    page === "digital-marketing-course-online" ||
-    page === "digital-marketing-definition" ||
-    page === "digital-marketing-examples" ||
-    page === "digital-marketing-meaning" ||
-    page === "digital-marketing-trends" ||
-    page === "learn-digital-marketing" ||
-    page === "types-of-digital-marketing" ||
-    page === "digital-marketer-salary" ||
-    page === "digital-marketing-classes" ||
-    page === "digital-marketing-online-courses" ||
-    page === "online-digital-marketing-courses" ||
-    page === "what-is-a-digital-marketer" ||
-    page === "digital-marketing-courses-online" ||
-    page === "google-digital-marketing-course" ||
-    page === "how-to-become-a-digital-marketer" ||
-    page === "how-to-do-digital-marketing" ||
-    page === "how-to-start-digital-marketing" ||
-    page === "online-digital-marketing" ||
-    page === "digital-marketing-blogs" ||
-    page === "digital-marketing-careers" ||
-    page === "digital-marketing-certificate-online" ||
-    page === "digital-marketing-certifications" ||
-    page === "fundamentals-of-digital-marketing" ||
-    page === "online-digital-marketing-course" ||
-    page === "what-does-a-digital-marketer-do" ||
-    page === "what's-digital-marketing" ||
-    page === "best-digital-marketing-services" ||
-    page === "certificate-in-digital-marketing" ||
-    page === "digital-marketing-platforms" ||
-    page === "digital-marketing-tips" ||
-    page === "masters-in-digital-marketing" ||
-    page === "what-is-a-digital-marketing" ||
-    page === "best-digital-marketing-courses" ||
-    page === "definition-of-digital-marketing" ||
-    page === "digital-marketing-degree-online" ||
-    page === "digital-marketing-degrees" ||
-    page === "digital-marketing-experts" ||
-    page === "digital-marketing-online" ||
-    page === "examples-of-digital-marketing" ||
-    page === "how-to-learn-digital-marketing" ||
-    page === "future-of-digital-marketing" ||
-    page === "importance-of-digital-marketing" ||
-    page === "why-is-digital-marketing-important"
-  ) {
-    return {
-      ...MainCoursesDynimicData.DigitalMarketing,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (page === "project-management-courses") {
-    return {
-      ...MainCoursesDynimicData.ProjectManagement,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (page === "cyber-security-course") {
-    return {
-      ...MainCoursesDynimicData.CyberSecurity,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
-  } else if (page === "artificial-intelligence-course") {
-    return {
-      ...MainCoursesDynimicData.ArtificialIntelligence,
-      multiplePagesDatas: MultiplePagesCoursesData[page],
-    };
+  for (const mapping of pageMappings) {
+    if (mapping.pages.includes(page)) {
+      return {
+        ...mapping.data,
+        multiplePagesDatas: MultiplePagesCoursesData[page],
+      };
+    }
   }
 
   return undefined;

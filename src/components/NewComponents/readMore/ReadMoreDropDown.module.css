@@ -72,6 +72,10 @@
   color: #0000009c;
   font-family: Montserrat;
 }
+.closeButtonContainer {
+  display: flex;
+  justify-content: end;
+}
 
 .closeButton {
   width: 210px;

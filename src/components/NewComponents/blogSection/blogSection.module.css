@@ -67,6 +67,10 @@
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   margin-bottom: 2px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .blogText {
