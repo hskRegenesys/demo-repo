@@ -19,7 +19,7 @@
   display: none;
 }
 .faqDesktop {
-  padding-top: 100px;
+  padding-top: 80px;
   width: 100%;
   max-width: 1224px;
   margin: 0 auto;
@@ -231,6 +231,8 @@
     margin-bottom: 5px;
   }
   .dropdownItem h3 {
+    width: 100%;
+    max-width: 226px;
     color: #2b3340;
     font-family: Montserrat-semiBold;
     font-size: 14px;
@@ -263,7 +265,7 @@
     transition: transform 0.3s ease;
     transform: rotate(180deg);
     position: absolute;
-    right: -8px;
+    right: 5px;
   }
 
   .selectedarrowMobilequstion {

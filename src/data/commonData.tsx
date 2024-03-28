@@ -265,6 +265,58 @@ const Data = {
       // ====================PM=========================
       "project-management-courses":
         "Project Management Courses: Develop Skills | Digital Regenesys",
+      "project-management-course":
+        "Project Management Course: Master the Art | Digital Regenesys",
+      "project-management-courses-online":
+        "Project Management Courses Online | Digital Regenesys",
+      "project-manager-course":
+        "Project Manager Course: Leadership & Efficiency | Digital Regenesys",
+      "online-project-management-courses":
+        "Online Project Management Courses | Digital Regenesys",
+      "project-managment-courses":
+        "Project Management Courses: Master Skills | Digital Regenesys",
+      "what-skills-can-you-get-from-managing-it-projects-course":
+        "Managing IT Projects Course: Develop Skills | Digital Regenesys",
+      "courses-in-project-management":
+        "Courses in Project Management: Tailor Learning | Digital Regenesys",
+      "online-course-for-project-management":
+        "Online Course for Project Management | Digital Regenesys",
+      "online-course-in-project-management":
+        "Online Course in Project Management | Digital Regenesys",
+      "project-management-online-course":
+        "Project Management Online Course: Master Skills | Digital Regenesys",
+      "project-manager-courses":
+        "Project Manager Courses: Leadership Excellence | Digital Regenesys",
+      "project-managing-courses":
+        "Project Managing Courses: Practical Training | Digital Regenesys",
+      "project-management-certification-courses":
+        "Project Management Certification Courses | Digital Regenesys",
+      "project-management-course-online":
+        "Project Management Course Online | Digital Regenesys",
+      "project-management-online-courses":
+        "Project Management Online Courses | Digital Regenesys",
+      "project-management-training-courses":
+        "Project Management Training Courses | Digital Regenesys",
+      "agile-project-management-course":
+        "Agile Project Management Course: Master Skills | Digital Regenesys",
+      "construction-project-management-courses":
+        "Construction Project Management Courses | Digital Regenesys",
+      "best-project-management-courses":
+        "Best Project Management Courses: Top Learning | Digital Regenesys",
+      "online-courses-project-management":
+        "Online Courses Project Management: Best Learning | Digital Regenesys",
+      "online-project-management-course":
+        "Online Project Management Course: Learn Anytime | Digital Regenesys",
+      "project-manager-courses-online":
+        "Project Manager Courses Online: Leadership Excellence | Digital Regenesys",
+      "project-managment-course":
+        "Project Management Course: Comprehensive Training | Digital Regenesys",
+      "course-in-project-management":
+        "Course in Project Management: Master Skills | Digital Regenesys",
+      "project-management-courses-for-beginners":
+        "Project Management Courses for Beginners | Digital Regenesys",
+      "project-management-on-line-courses":
+        "Project Management Online Courses | Digital Regenesys",
       // ====================CS=========================
       "cyber-security-course":
         "Cyber Security Course: Master Digital Defense | Digital Regenesys",
@@ -686,6 +738,59 @@ const Data = {
       // ====================PM=========================
       "project-management-courses":
         "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-course":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-courses-online":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-manager-course":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "online-project-management-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-managment-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "what-skills-can-you-get-from-managing-it-projects-course":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "courses-in-project-management":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "online-course-for-project-management":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "online-course-in-project-management":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-online-course":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-manager-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-managing-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-certification-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-course-online":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-online-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-training-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "agile-project-management-course":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "construction-project-management-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "best-project-management-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "online-courses-project-management":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "online-project-management-course":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-manager-courses-online":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-managment-course":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "course-in-project-management":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-courses-for-beginners":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+      "project-management-on-line-courses":
+        "project management courses, project management courses online, online project management courses, project management online course, project management course online, project management online courses, project management training courses, best project management courses, online courses project management, course in project management, project management courses for beginners",
+
       // ====================CS=========================
       "cyber-security-course":
         "cyber security course, cyber security courses, cyber security courses online, online cyber security courses, cyber security online courses, courses for cyber security, cyber security courses for beginners, online course for cyber security, courses in cyber security, cyber security courses near me",
@@ -960,7 +1065,58 @@ const Data = {
       // ====================PM=========================
       "project-management-courses":
         "Project Management Courses: Explore our project management courses to develop leadership skills. Advance your career with comprehensive training. Join Now!",
-      // ====================CS=========================
+      "project-management-course":
+        "Project Management Course: Master the art of planning with our project management course. Gain practical skills for successful project delivery. Join Now!",
+      "project-management-courses-online":
+        "Project Management Courses Online: Enhance your skills with flexible online learning paths in project management. Explore and enroll in our courses today. Join Now!",
+      "project-manager-course":
+        "Project Manager Course: Elevate your leadership and efficiency with our project manager course. Learn essential skills for effective project management. Join Now!",
+      "online-project-management-courses":
+        "Online Project Management Courses: Learn project management online at your own pace. Explore our comprehensive courses for effective project planning and execution. Join Now!",
+      "project-managment-courses":
+        "Project Management Courses: Gain comprehensive training in project management. Explore our courses to excel as a project manager. Join Now!",
+      "what-skills-can-you-get-from-managing-it-projects-course":
+        "What Skills Can You Get From Managing It Projects Course: Explore the skills you can gain from our IT projects management course. Develop in-demand skills for IT project success.",
+      "courses-in-project-management":
+        "Courses In Project Management: Tailor your learning with a variety of courses in project management. Choose the right course to enhance your project skills. Join Now!",
+      "online-course-for-project-management":
+        "Online Course For Project Management: Convenient online learning for project management. Enroll in our course to enhance your project management skills. Join Now!",
+      "online-course-in-project-management":
+        "Online Course In Project Management: Explore a flexible learning path in project management. Enroll in our online course for comprehensive skill development. Join Now!",
+      "project-management-online-course":
+        "Project Management Online Course: Master project planning with our online course. Develop the skills needed for successful project management. Join Now!",
+      "project-manager-courses":
+        "Project Manager Courses: Elevate your leadership skills with our project manager courses. Develop the expertise for effective project management. Join Now!",
+      "project-managing-courses":
+        "Project Managing Courses: Practical training for effective project management. Explore our courses to enhance your project managing skills. Join Now!",
+      "project-management-certification-courses":
+        "Project Management Certification Courses: Validate your project management skills with certification courses. Boost your career with recognized credentials. Join Now!",
+      "project-management-course-online":
+        "Project Management Course Online: Convenient online learning for project management. Enroll in our course to enhance your project management skills. Join Now!",
+      "project-management-online-courses":
+        "Project Management Online Courses: Advance your career with our online courses. Master project management skills for successful project delivery. Join Now!",
+      "project-management-training-courses":
+        "Project Management Training Courses: Gain practical knowledge with our project management training courses. Excel as a project manager with our expert-led training. Join Now!",
+      "agile-project-management-course":
+        "Agile Project Management Course: Master Agile practices with our project management course. Learn to lead projects with flexibility and efficiency. Join Now!",
+      "construction-project-management-courses":
+        "Construction Project Management Courses: Specialized training for construction project management. Explore our courses to excel in the construction industry. Join Now!",
+      "best-project-management-courses":
+        "Best Project Management Courses: Discover top-quality learning with the best project management courses. Elevate your project management skills. Join Now!",
+      "online-courses-project-management":
+        "Online Courses Project Management: Convenient online learning for project management. Explore our courses to enhance your project management skills. Join Now!",
+      "online-project-management-course":
+        "Online Project Management Course: Learn project management online at your own pace. Explore our comprehensive courses for effective project planning and execution. Join Now!",
+      "project-manager-courses-online":
+        "Project Manager Courses Online: Elevate your leadership skills with our online project manager courses. Develop the expertise for effective project management. Join Now!",
+      "project-managment-course":
+        "Project Management Course: Gain comprehensive training in project management. Explore our courses to excel as a project manager. Join Digital regenesys Now!",
+      "course-in-project-management":
+        "Course In Project Management: Enroll in our comprehensive course in project management. Develop essential skills for successful project planning and execution. Join Now!",
+      "project-management-courses-for-beginners":
+        "Project Management Courses For Beginners: Start your project management journey with our beginner-friendly courses. Gain the skills for successful project management. Join Now!",
+      "project-management-on-line-courses":
+        "Project Management On Line Courses: Master project planning with our online courses. Develop the skills needed for successful project management. Join Now!",
       // ====================CS=========================
       "cyber-security-course":
         "Cyber Security Course: Enroll in our cyber security course to master digital defense strategies. Enhance your skills and protect against cyber threats. Join Now!",
@@ -1115,6 +1271,40 @@ const Data = {
 
       // ====================PM=========================
       "project-management-courses": "/project-management-courses",
+      "project-management-course": "/project-management-course",
+      "project-management-courses-online": "/project-management-courses-online",
+      "project-manager-course": "/project-manager-course",
+      "online-project-management-courses": "/online-project-management-courses",
+      "project-managment-courses": "/project-managment-courses",
+      "what-skills-can-you-get-from-managing-it-projects-course":
+        "/what-skills-can-you-get-from-managing-it-projects-course",
+      "courses-in-project-management": "/courses-in-project-management",
+      "online-course-for-project-management":
+        "/online-course-for-project-management",
+      "online-course-in-project-management":
+        "/online-course-in-project-management",
+      "project-management-online-course": "/project-management-online-course",
+      "project-manager-courses": "/project-manager-courses",
+      "project-managing-courses": "/project-managing-courses",
+      "project-management-certification-courses":
+        "/project-management-certification-courses",
+      "project-management-course-online": "/project-management-course-online",
+      "project-management-online-courses": "/project-management-online-courses",
+      "project-management-training-courses":
+        "/project-management-training-courses",
+      "agile-project-management-course": "/agile-project-management-course",
+      "construction-project-management-courses":
+        "/construction-project-management-courses",
+      "best-project-management-courses": "/best-project-management-courses",
+      "online-courses-project-management": "/online-courses-project-management",
+      "online-project-management-course": "/online-project-management-course",
+      "project-manager-courses-online": "/project-manager-courses-online",
+      "project-managment-course": "/project-managment-course",
+      "course-in-project-management": "/course-in-project-management",
+      "project-management-courses-for-beginners":
+        "/project-management-courses-for-beginners",
+      "project-management-on-line-courses":
+        "/project-management-on-line-courses",
       // ====================CS=========================
       "cyber-security-course": "/cyber-security-course",
       // ====================AI=========================

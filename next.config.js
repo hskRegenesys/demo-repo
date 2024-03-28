@@ -1575,9 +1575,117 @@ const createReWrites = () => {
 
     ///==================PM======================
 
+    {
+      source: "/project-management-courses",
+      destination: "/all-courses-multiple/project-management-courses",
+    },
+    {
+      source: "/project-management-course",
+      destination: "/all-courses-multiple/project-management-course",
+    },
+    {
+      source: "/project-management-courses-online",
+      destination: "/all-courses-multiple/project-management-courses-online",
+    },
+    {
+      source: "/project-manager-course",
+      destination: "/all-courses-multiple/project-manager-course",
+    },
+    {
+      source: "/online-project-management-courses",
+      destination: "/all-courses-multiple/online-project-management-courses",
+    },
+    {
+      source: "/project-managment-courses",
+      destination: "/all-courses-multiple/project-managment-courses",
+    },
+    {
+      source: "/what-skills-can-you-get-from-managing-it-projects-course",
+      destination:
+        "/all-courses-multiple/what-skills-can-you-get-from-managing-it-projects-course",
+    },
+    {
+      source: "/courses-in-project-management",
+      destination: "/all-courses-multiple/courses-in-project-management",
+    },
+    {
+      source: "/online-course-for-project-management",
+      destination: "/all-courses-multiple/online-course-for-project-management",
+    },
+    {
+      source: "/online-course-in-project-management",
+      destination: "/all-courses-multiple/online-course-in-project-management",
+    },
+    {
+      source: "/project-management-online-course",
+      destination: "/all-courses-multiple/project-management-online-course",
+    },
+    {
+      source: "/project-manager-courses",
+      destination: "/all-courses-multiple/project-manager-courses",
+    },
+    {
+      source: "/project-managing-courses",
+      destination: "/all-courses-multiple/project-managing-courses",
+    },
+    {
+      source: "/project-management-certification-courses",
+      destination:
+        "/all-courses-multiple/project-management-certification-courses",
+    },
+    {
+      source: "/project-management-course-online",
+      destination: "/all-courses-multiple/project-management-course-online",
+    },
+    {
+      source: "/project-management-online-courses",
+      destination: "/all-courses-multiple/project-management-online-courses",
+    },
     // {
-    //   source: "/project-management-courses",
-    //   destination: "/all-courses-multiple/project-management-courses",
+    //   source: "/project-management-training-courses",
+    //   destination: "/all-courses-multiple/project-management-training-courses",
+    // },
+    // {
+    //   source: "/agile-project-management-course",
+    //   destination: "/all-courses-multiple/agile-project-management-course",
+    // },
+    // {
+    //   source: "/construction-project-management-courses",
+    //   destination:
+    //     "/all-courses-multiple/construction-project-management-courses",
+    // },
+    // {
+    //   source: "/best-project-management-courses",
+    //   destination: "/all-courses-multiple/best-project-management-courses",
+    // },
+    // {
+    //   source: "/online-courses-project-management",
+    //   destination: "/all-courses-multiple/online-courses-project-management",
+    // },
+    // {
+    //   source: "/online-project-management-course",
+    //   destination: "/all-courses-multiple/online-project-management-course",
+    // },
+    // {
+    //   source: "/project-manager-courses-online",
+    //   destination: "/all-courses-multiple/project-manager-courses-online",
+    // },
+    // {
+    //   source: "/project-managment-course",
+    //   destination: "/all-courses-multiple/project-managment-course",
+    // },
+    // {
+    //   source: "/course-in-project-management",
+    //   destination: "/all-courses-multiple/course-in-project-management",
+    // },
+    // {
+    //   source: "/project-management-courses-for-beginners",
+    //   destination:
+    //     "/all-courses-multiple/project-management-courses-for-beginners",
+    // },
+    // {
+    //   source: "/project-management-on-line-courses",
+    //   destination: "/all-courses-multiple/project-management-on-line-courses",
     // },
     ///=========================CS===========================
     // {
@@ -1588,6 +1696,27 @@ const createReWrites = () => {
     // {
     //   source: "/artificial-intelligence-course",
     //   destination: "/all-courses-multiple/artificial-intelligence-course",
+    // },
+
+    ///=========================DT===========================
+    // {
+    //   source: "/design-thinking",
+    //   destination: "/all-courses-multiple/design-thinking",
+    // },
+    ///=========================FSD===========================
+    // {
+    //   source: "/full-stack-developer",
+    //   destination: "/all-courses-multiple/full-stack-developer",
+    // },
+    ///=========================DBA===========================
+    // {
+    //   source: "/data-analysis",
+    //   destination: "/all-courses-multiple/data-analysis",
+    // },
+    ///=========================MAP===========================
+    // {
+    //   source: "/mdp",
+    //   destination: "/all-courses-multiple/mdp",
     // },
 
     // -------------------------multiple-pages-end---------------------------------

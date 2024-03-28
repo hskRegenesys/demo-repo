@@ -38,11 +38,6 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
               </span>
             </button>
           )}
-          {isOpen && (
-            <button onClick={closeDropdown} className={styles.closeButton}>
-              Close
-            </button>
-          )}
         </div>
         {isOpen && (
           <div className={styles.paragraph}>
@@ -58,6 +53,13 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
               ))}
           </div>
         )}
+        <div className={styles.closeButtonContainer}>
+          {isOpen && (
+            <button onClick={closeDropdown} className={styles.closeButton}>
+              Close
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

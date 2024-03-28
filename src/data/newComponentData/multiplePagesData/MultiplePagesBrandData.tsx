@@ -156,7 +156,7 @@ const MultiplePagesBrandData = {
             question:
               "How do I enrol and register for the Digital Regenesys online course?",
             answer:
-              'To enrol in the Digital Regenesys online course, follow these steps: 1. Visit the official website @ https://www.digitalregenesys.com/  2. Navigate to the course page.  3. Select the required course 4. Click on the "Enrol Now" button 5. Complete the registration form with all the required details. 6. Submit the form and proceed to make the payment for the course. 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+              'To enrol in the Digital Regenesys online course, follow these steps: \n \n 1. Visit the official website @ https://www.digitalregenesys.com/  \n  2. Navigate to the course page.  \n   3. Select the required course  \n  4. Click on the "Enrol Now" button  \n  5. Complete the registration form with all the required details.  \n  6. Submit the form and proceed to make the payment for the course.  \n  7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
           },
           {
             question:

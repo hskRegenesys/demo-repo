@@ -11,7 +11,6 @@ interface Content6Props {
     contaryName: string;
     price: string;
     duration: string;
-    Enrollment: string;
     contaryFlag: string;
   }[];
 }
@@ -63,7 +62,7 @@ const Content6: React.FC<Content6Props> = ({
                   alt="Enrollment Icon"
                   className={Styles.iconContent}
                 />
-                <span className={Styles.SpanText}>{card.Enrollment}</span>
+                <span className={Styles.SpanText}>10,000+ Enroled</span>
               </div>
             </div>
             <button className={Styles.button} onClick={handleEnrollButtonClick}>
