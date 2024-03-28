@@ -229,7 +229,6 @@ const MainCoursesDynimicData = {
               contaryName: "SouthAfrica",
               price: "R45,344",
               duration: "30 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/India.svg",
@@ -237,14 +236,12 @@ const MainCoursesDynimicData = {
               contaryName: "India",
               price: "₹ 242,694",
               duration: "30 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 2414",
               duration: "30 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
           ],
         },
@@ -266,8 +263,7 @@ const MainCoursesDynimicData = {
         "Statistical Analytics",
         "Database Structure & Algorithms",
       ],
-      image:
-        "/assets/images/new-component-assets/certificate/DS-certificate.webp",
+      image: "/assets/images/certificate/DSN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -351,7 +347,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enroll and register for the Digital Regenesys Data Science Course?",
               answer:
-                "To enroll in the Digital Regenesys online course, follow these steps:\n1. Visit the official website @ https://www.digitalregenesys.com/\n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enroll Now' button. \n Complete the registration form with all the required details. \n Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ",
+                "To enroll in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ https://www.digitalregenesys.com/ \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the 'Enroll Now' button. \n  Complete the registration form with all the required details. \n  Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ",
             },
             {
               question:
@@ -654,7 +650,6 @@ const MainCoursesDynimicData = {
               contaryName: "SouthAfrica",
               price: "R 24,488 ",
               duration: "20 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/India.svg",
@@ -662,14 +657,12 @@ const MainCoursesDynimicData = {
               contaryName: "India",
               price: "₹ 122,498",
               duration: "20 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 1,238",
               duration: "20 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
           ],
         },
@@ -691,8 +684,7 @@ const MainCoursesDynimicData = {
         "Content Marketing Excellence",
         " Expertise in Various Digital Channels",
       ],
-      image:
-        "/assets/images/new-component-assets/certificate/DM-certificate.webp",
+      image: "/assets/images/certificate/DMN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -766,7 +758,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enroll and register for the Digital Regenesys Digital Marketing Course?",
               answer:
-                "To enroll in the Digital Regenesys online course, follow these steps:\n\nVisit the official website @ https://www.digitalregenesys.com/\n\nNavigate to the course page.\n\nSelect the required course.\n\nClick the 'Enroll Now' button.\n\nComplete the registration form with all the required details.\n\nSubmit the form and proceed to make the payment for the course.\n\nUpon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enroll in the Digital Regenesys online course, follow these steps:\n\n Visit the official website @ https://www.digitalregenesys.com/\n\nNavigate to the course page.\n\nSelect the required course.\n\nClick the 'Enroll Now' button.\n\nComplete the registration form with all the required details.\n\nSubmit the form and proceed to make the payment for the course.\n\nUpon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
 
             {
@@ -879,7 +871,7 @@ const MainCoursesDynimicData = {
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Digital Marketing Course Outcomes",
+      courcename: "Project Management Course Outcomes",
       Heding: "What our learners have achieved",
       Card: [
         {
@@ -1035,7 +1027,6 @@ const MainCoursesDynimicData = {
               contaryName: "SouthAfrica",
               price: "R 25,198 ",
               duration: "10 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/India.svg",
@@ -1043,14 +1034,12 @@ const MainCoursesDynimicData = {
               contaryName: "India",
               price: "₹ 128,978 ",
               duration: "10 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 1,418",
               duration: "10 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
           ],
         },
@@ -1072,8 +1061,7 @@ const MainCoursesDynimicData = {
         "Project Closure and Evaluation",
         "Comprehensive Project Management Knowledge",
       ],
-      image:
-        "/assets/images/new-component-assets/certificate/PM-certificate.webp",
+      image: "/assets/images/certificate/PM_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1159,7 +1147,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Project Management Course?",
               answer:
-                "To enrol in the Digital Regenesys online course, follow these steps: Visit the official website @ https://www.digitalregenesys.com/ Navigate to the course page. Select the required course. Click the 'Enrol Now' button. Complete the registration form with all the required details. Submit the form and proceed to make the payment for the course. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys online course, follow these steps: \n \n Visit the official website @ https://www.digitalregenesys.com/ Navigate to the course page. \n Select the required course. Click the 'Enrol Now' button. \n  Complete the registration form with all the required details. \n  Submit the form and proceed to make the payment for the course. \n  Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
             {
               question:
@@ -1403,7 +1391,6 @@ const MainCoursesDynimicData = {
               contaryName: "SouthAfrica",
               price: "R 37,947",
               duration: "10 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/India.svg",
@@ -1411,14 +1398,12 @@ const MainCoursesDynimicData = {
               contaryName: "India",
               price: "₹ 181,497",
               duration: "10 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 2,137",
               duration: "10 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
           ],
         },
@@ -1441,7 +1426,7 @@ const MainCoursesDynimicData = {
         "Introduction to Artificial Intelligence.",
       ],
       image:
-        "/assets/images/new-component-assets/certificate/AI-certificate.webp",
+        "/assets/images/certificate/certificate/DSN_certificates.webpAI-certificate.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1531,7 +1516,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
               answer:
-                'To enrol in Digital Regenesys’s Artificial Intelligence Course, visit the official website @ https://www.digitalregenesys.com/, navigate to the course page, select the required course, click the "Enrol Now" button, complete the registration form with all the required details, submit the form and proceed to make the payment for the course. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in Digital Regenesys’s Artificial Intelligence Course, \n\n visit the official website @ https://www.digitalregenesys.com/,\n navigate to the course page, select the required course,\n click the "Enrol Now" button,\n complete the registration form with all the required details,\n submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
             },
           ],
         },
@@ -1810,7 +1795,6 @@ const MainCoursesDynimicData = {
               contaryName: "SouthAfrica",
               price: "R 19,379 ",
               duration: "13 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/India.svg",
@@ -1818,14 +1802,12 @@ const MainCoursesDynimicData = {
               contaryName: "India",
               price: "₹ 87,098",
               duration: "13 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
             {
               contaryFlag: "/assets/images/new-component-assets/USA.svg",
               contaryName: "USA",
               price: "$ 1,128",
               duration: "13 weeks",
-              Enrollment: "10,000+ Enroled ",
             },
           ],
         },
@@ -1847,8 +1829,7 @@ const MainCoursesDynimicData = {
         "Information security controls  ",
         "Network security",
       ],
-      image:
-        "/assets/images/new-component-assets/certificate/CS-certificate.webp",
+      image: "/assets/images/certificate/certificate/CS_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1941,7 +1922,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Cyber Security Course?",
               answer:
-                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps: Visit the official website @ https://www.digitalregenesys.com/ Navigate to the course page. Select the required course. Click the "Enrol Now" button. Complete the registration form with all the required details. Submit the form and proceed to make the payment for the course. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps:\n \n Visit the official website @ https://www.digitalregenesys.com/ \n Navigate to the course page.\n Select the required course. \n Click the "Enrol Now" button.\n  Complete the registration form with all the required details. \n Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
             },
           ],
         },
@@ -2009,6 +1990,1703 @@ const MainCoursesDynimicData = {
                 "Does an online Cyber Security Online Certification Course cover emerging threats and technologies?",
               answer:
                 "Yes. Digital Regenesys’s Cyber Security Online Certification Course strive to stay current with the latest cyber security trends, emerging threats, and technologies to ensure students are well-prepared for the evolving landscape.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+
+  DesignThinking: {
+    BannerWithVideoData: {
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/DT/DT-Banner.webp",
+      coursePageName: "Design Thinking",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
+      contentText:
+        "Design thinking is a human-centred problem-solving process that involves empathy, creativity, and iteration. It is about putting the requirements at the forefront and developing innovative solutions to meet those needs. While designers have been using this approach for years, its principles can be applied by anyone who wants to solve complex problems and drive innovation.",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/OfyDsBKZXic?autoplay=1&loop=1&playlist=OfyDsBKZXic",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      UspSectionData: {
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+        },
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          duration: "3000",
+        },
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Design Thinking Course Outcomes",
+      Heding: "What our learners have achieved",
+      Card: [
+        {
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          text1: "1000+",
+          text2: " Career Opportunities",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          text1: "190+",
+          text2: "Countries Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore the World of Design Thinking with us!",
+      bigHeading: "Everything You Need To Know About Design Thinking Course",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "", contentId: "content3" },
+        { text: "World Class Faculty", contentId: "content4" },
+        { text: "", contentId: "content5" },
+
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DT/DT-explore.webp",
+          contentText:
+            "A design thinking course is an educational programme that teaches the principles and techniques of design thinking. It is designed to help individuals develop problem-solving abilities, enhance creativity, and foster a human-centred approach to innovation. These courses typically combine theory and practice, allowing participants to learn by doing. Design thinking is a powerful tool that can be applied in various domains. ",
+          contentCard: [
+            {
+              icon: "/assets/images/new-component-assets/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+
+        content3: {
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/Dennis-Laxton.webp",
+              facultyName: "Dr.Dennis Laxton",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "",
+            },
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/Shaista-Fatima.webp",
+              facultyName: "Dr.Shaista Fatima",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ years",
+            },
+          ],
+        },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading: "Introduction to Design Thinking",
+              weekPoints: [
+                "Identifying Critical Problems",
+                "Design Thinking Foundations",
+              ],
+            },
+            {
+              weekHeading: "Innovation and Design Thinking",
+              weekPoints: [
+                "What is Innovation",
+                "Types of Innovation",
+                "Human-Centered Innovation",
+              ],
+            },
+            {
+              weekHeading: "Design Thinking Mindset",
+              weekPoints: [
+                "Elements of Design Thinking mindset",
+                "Need for Design thinking mindset",
+                "Applying Design Thinking Mindset to real-world problems",
+                "Applying Lean thinking into Design Thinking",
+              ],
+            },
+            {
+              weekHeading: "Design Thinking for Creative Problem Solving",
+              weekPoints: [
+                "Design challenges & preliminaries",
+                "An Introduction to the five-stage process of Design Thinking",
+                "Identifying situations where learners can apply such frameworks in their industry",
+                "Apply Design thinking framework to real-world challenges",
+                "Implementation timeline",
+                "Considerations for resource allocation",
+              ],
+            },
+            {
+              weekHeading: "Establishing Design Thinking in organisation",
+              weekPoints: [
+                "Scaling up",
+                "Design Thinking & Organisational culture",
+              ],
+            },
+            {
+              weekHeading:
+                "Digital Transformation: Integrating Design Thinking and Technology",
+              weekPoints: [
+                "Introduction to Digital Transformation",
+                "Design Thinking as a Strategy for Digital Transformation",
+              ],
+            },
+            {
+              weekHeading: "User Experience Research and Design Thinking",
+              weekPoints: [
+                "Introduction to User-Centered Design Thinking",
+                "Techniques for Conducting User Experience Research",
+                "Integrating User Experience Research into the Design Thinking Process",
+                "Analyzing User Experience Research Data to Inform Design Decisions",
+                "Prototyping and Iterating Designs Based on User Experience Research",
+                "Evaluating the Impact of User Experience Research on Design Thinking Outcomes",
+                "Overcoming Challenges and Obstacles in Integrating User Experience Research and Design Thinking",
+              ],
+            },
+            {
+              weekHeading:
+                "Design Thinking for Data Science: User Needs and Data Insights",
+              weekPoints: [
+                "Part 1: Introduction to Data Science",
+                "Part 2: Applying Design Thinking Principles to Data Science",
+                "Part 3: Case Studies and Practical Applications",
+                "Target Audience",
+              ],
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
+              contaryName: "SouthAfrica",
+              price: "R 13,499",
+              duration: "8 weeks",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
+
+              contaryName: "India",
+              price: "₹ 67,499",
+              duration: "8 weeks",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryName: "USA",
+              price: "$ 589",
+              duration: "8 weeks",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title: "About Digital Regenesys Design Thinking Certificate",
+      heading: "Certification",
+      paragraph:
+        "The Digital Regenesys Design Thinking Course offers a comprehensive curriculum designed to enhance participants' understanding and application of design thinking principles. This intensive course equips students with practical tools and techniques to solve complex problems creatively. Through a series of hands-on projects and case studies, individuals will develop critical thinking skills and learn how to approach challenges from a user-centric perspective. ",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        "Creative Ideation.",
+        "Innovation Mindset.",
+        "Problem-solving skills.",
+        "Cultivation of a Design Mindset.",
+        "ITools and Techniques Proficiency.",
+        "Empathy and User-Centric Thinking.",
+      ],
+      image: "/assets/images/certificate/DTC_certificates.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DT/What-is-Design-Thinking.webp",
+          blogQuestion: "What is Design Thinking?",
+          blogText:
+            " Design thinking is a principle established on designers’ workflows for mapping design stages. Design thinking aims to give all professionals a standardised invention process to produce innovative solutions to design-related problems.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-is-design-thinking",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DT/What-Are-The-Objectives-Of-The-Design-Thinking-Course.webp",
+          blogQuestion:
+            "What Are The Objectives Of The Design Thinking Course?",
+          blogText:
+            "Design thinking is a powerful approach that has revolutionised how we solve problems and create innovative solutions. This human-centred methodology has gained recognition across industries, from technology to healthcare, as a game-changer in innovation. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/objectives-of-design-thinking-course",
+        },
+
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DT/Career-Scope-for-Design-Thinking.webp",
+          blogQuestion: "Career Scope for Design Thinking",
+          blogText:
+            "Design thinking is a problem-solving strategy that involves creativity, collaboration and empathy. It is a powerful tool for creation and has been embraced by many industries and organisations worldwide.  ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/career-scope-for-design-thinking",
+        },
+      ],
+    },
+    faqSections: {
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
+      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Design Thinking Courses",
+          faqs: [
+            {
+              question: "What is Design Thinking?",
+              answer:
+                "Design Thinking is a problem-solving approach that emphasizes empathy, collaboration, and user-centric solutions. It involves understanding users' needs, ideating creative solutions, prototyping, and testing iteratively.",
+            },
+            {
+              question: "Who should take a Design Thinking course?",
+              answer:
+                "Design Thinking courses suit individuals across various professions, including designers, entrepreneurs, business leaders, educators, and anyone interested in enhancing their problem-solving and innovation skills.",
+            },
+            {
+              question: "What will I learn in a Design Thinking course?",
+              answer:
+                "Participants will learn the principles, methods, and mindset of Design Thinking, including empathizing with users, ideation, prototyping, and testing. The course may cover real-world applications and case studies.",
+            },
+          ],
+        },
+        {
+          heading: "Eligibility and Enrollment",
+          faqs: [
+            {
+              question: "Is a Design Thinking course only for designers?",
+              answer:
+                "No, Design Thinking is applicable to individuals from diverse backgrounds. The course is designed to benefit professionals and enthusiasts across industries who want to enhance their creative problem-solving skills.",
+            },
+            {
+              question:
+                "Are there any prerequisites for enrolling in the Digital Regenesys Design Thinking course?",
+              answer:
+                "Digital Regenesys Design Thinking courses do not have strict prerequisites. They are often designed to accommodate individuals with varying experience levels and backgrounds.",
+            },
+            {
+              question:
+                "How do I enroll and register for the Digital Regenesys Design Thinking Course?",
+              answer:
+                "To enroll in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ https://www.digitalregenesys.com/  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enroll Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+            },
+          ],
+        },
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question: "What are Design Thinking tools?",
+              answer:
+                "Design Thinking tools are resources, methods, and frameworks used to facilitate the different stages of the Design Thinking process. They aid in ideation, prototyping, and testing solutions.",
+            },
+            {
+              question:
+                "Why are tools important in the Design Thinking process?",
+              answer:
+                "Tools help teams structure and facilitate the Design Thinking process, making it more effective and collaborative. They provide a framework for ideation, prototyping, and testing ideas.",
+            },
+            {
+              question: "Are Design Thinking tools only for designers?",
+              answer:
+                "No, Design Thinking tools are for anyone involved in problem-solving and innovation. They can be used by designers, business professionals, educators, and individuals from various fields.",
+            },
+          ],
+        },
+        {
+          heading: "Duration and Accessibility",
+          faqs: [
+            {
+              question:
+                "How long does completing an Online Design Thinking course at Digital Regenesys take?",
+              answer:
+                "The duration of Digital Regenesys Design Thinking courses is 8 weeks.",
+            },
+            {
+              question:
+                "Can I apply Design Thinking in my professional field after taking the course?",
+              answer:
+                "Yes, Design Thinking courses aim to equip participants with skills that can be applied across various industries. The principles learned are transferable to diverse professional contexts.",
+            },
+            {
+              question:
+                "Will I receive a certificate upon completing the Digital Regenesys Design Thinking course?",
+              answer:
+                "Yes, upon successful completion of Digital Regenesys Design Thinking courses, you earn an International Design Thinking certificate.",
+            },
+          ],
+        },
+        {
+          heading: "Design Thinking Online Certification Course",
+          faqs: [
+            {
+              question: "Can I take a Design Thinking course online?",
+              answer:
+                "Yes, Digital Regenesys Design Thinking courses are available online, allowing participants to learn at their own pace and from anywhere with an internet connection.",
+            },
+            {
+              question:
+                "What are the benefits of enrolling in an online Design Thinking course?",
+              answer:
+                "Enrolling in an online Design Thinking course enhances problem-solving skills, fosters creativity, encourages collaboration, and promotes a user-centric mindset. Digital Regenesys online Design Thinking course is valuable for driving innovation in both personal and professional settings.",
+            },
+            {
+              question:
+                "Are there hands-on projects in an Online Design Thinking course at Digital Regenesys?",
+              answer:
+                "Yes, Digital Regenesys Design Thinking courses include Capstone projects where participants apply the principles learned to solve real-world problems. This practical experience is integral to the learning process.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  FullStackDeveloper: {
+    BannerWithVideoData: {
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/FSD/FSD-Banner.webp",
+      coursePageName: "Full Stack Developer",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
+      contentText:
+        "The Full Stack Web & Software Development course provides a comprehensive curriculum, including concepts in front-end development, back-end development databases and operating systems. Students will gain practical skills in front-end and back-end technologies.The course equips participants with the tools and techniques to work on full stack development concepts.",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/t-tnGObE7zM??autoplay=1&loop=1&playlist=t-tnGObE7zM?",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      UspSectionData: {
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+        },
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          duration: "3000",
+        },
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Full Stack Web & Software Development Course Outcomes",
+      Heding: "What our learners have achieved",
+      Card: [
+        {
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          text1: "1000+",
+          text2: " Career Opportunities",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          text1: "190+",
+          text2: "Countries Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore the World of Full Stack Development With Us!",
+      bigHeading:
+        "Everything You Need To Know About  Full Stack Development Course",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "Tools Covered in this Course", contentId: "content3" },
+        { text: "World Class Faculty", contentId: "content4" },
+        { text: "", contentId: "content5" },
+
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/FSD/FSD-explore.webp",
+          contentText:
+            "Digital Regenesys’ full stack web & software development course is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on front end and back end on the web and extract insights from it by using HTML, JavaScrit, GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB. Acquire",
+          contentCard: [
+            {
+              icon: "/assets/images/new-component-assets/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+        content2: {
+          contentHeading: "Tools Covered in this Course",
+          cardTools: [
+            { img: "sd/chatGpt.svg", alt: "" },
+            { img: "sd/expressJs.svg", alt: "" },
+            { img: "sd/gitlabNew.svg", alt: "" },
+            { img: "sd/Node.js_logo.svg", alt: "" },
+            { img: "sd/css.svg", alt: "" },
+            { img: "sd/html.svg", alt: "" },
+            { img: "sd/js.svg", alt: "" },
+            { img: "sd/MongoDB_Logo.svg", alt: "" },
+          ],
+        },
+
+        content3: {
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+              facultyName: "Samidha Kurle",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ years",
+            },
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+              facultyName: "Dr.Nilay Karade",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "11+ years",
+            },
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+              facultyName: "Dr.Shilpa Joshi",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "20+ years",
+            },
+          ],
+        },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading: "Front-End Development",
+              weekPoints: [
+                "HTML structure building.",
+                "CSS styling and customisation.",
+                "Local website development using text editors and Chrome DevTools.",
+                "Deployment using GitHub Pages and command line.",
+                "Advanced CSS topics for improved styling.",
+                "Responsive web design with CSS grid, flexbox, and media queries.",
+                "Introduction to JavaScript syntax and basic programmes.",
+                "Intermediate JavaScript programmes using arrays, loops, objects, and iterators.",
+              ],
+            },
+            {
+              weekHeading: "Version Control",
+              weekPoints: ["Git and GitHub for version control"],
+            },
+            {
+              weekHeading: "Interactive Websites and Accessibility",
+              weekPoints: [
+                "Implementing JavaScript for interactivity.",
+                "Best accessibility practices for inclusive websites.",
+              ],
+            },
+            {
+              weekHeading: "Advanced JavaScript and Testing",
+              weekPoints: [
+                "Advanced JavaScript concepts: classes, modules, error handling.",
+                "JavaScript testing methodologies (TDD) using Mocha and Chai.",
+                "Asynchronous JavaScript and HTTP requests",
+              ],
+            },
+            {
+              weekHeading: "Introduction to React",
+              weekPoints: [
+                "Introduction to React library.",
+                "Props, state, hooks, and testing with Jest and Enzyme.",
+                "Managing states with Redux.",
+              ],
+            },
+            {
+              weekHeading: "Collaboration with Git and GitHub",
+              weekPoints: [
+                "Collaboration techniques: forking, branching, merging conflicts, pull requests.",
+              ],
+            },
+            {
+              weekHeading: "Back-End Development",
+              weekPoints: [
+                "Introduction to back-end development and server programming.",
+                "Building a back-end with Express.js.",
+                "User authentication and authorisation.",
+                "TDD techniques for full-stack web applications.",
+              ],
+            },
+            {
+              weekHeading: "Databases",
+              weekPoints: [
+                "Basics of databases and their role.",
+                "Crafting sophisticated queries for MongoDB.",
+                "Designing databases for MongoDB.",
+                "Advanced MongoDB techniques for optimal performance.",
+                "Adding a MongoDB database to web applications.",
+                "API development using Swagger and OpenAPI.",
+                "Portfolio project: E-Commerce App (REST API).",
+              ],
+            },
+            {
+              weekHeading: "Connecting Front-End to Back-End",
+              weekPoints: [
+                "Integrating front-end and back-end for full-stack applications.",
+                "Deployment using Render.",
+              ],
+            },
+            {
+              weekHeading: "Web Security",
+              weekPoints: [
+                "Intermediate concepts in web security.",
+                "Prevention techniques for common threats.",
+                "Data security using SSL/HTTPS, TLS, and Firewall Rules in Linux.",
+                "Mitigating common web application attacks.",
+              ],
+            },
+            {
+              weekHeading: "Operating Systems and DevOps",
+              weekPoints: [
+                "Fundamentals of operating systems.",
+                "DevOps fundamentals - culture, practices, tools.",
+              ],
+            },
+            {
+              weekHeading: "Full-Stack E-Commerce Experience",
+              weekPoints: [
+                "Expanding E-Commerce REST API with a React client app.",
+                "Creating a MERN (MongoDB, Express.js, React, Node.js) full-stack E-Commerce experience.",
+              ],
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
+              contaryName: "SouthAfrica",
+              price: "R 29,500",
+              duration: "6 Months",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
+
+              contaryName: "India",
+              price: "₹ 130,000",
+              duration: "6 Months",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryName: "USA",
+              price: "$ 1,586",
+              duration: "6 Months",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title:
+        "About Digital Regenesys Full Stack Web & Software Development Certificate",
+      heading: "Certification",
+      paragraph:
+        "Digital Regenesys aims to deliver a comprehensive journey through the fundamental technologies and best practices essential to modern web development in its Full Stack Web & Software Development course. By immersing learners in hands-on projects and real-world simulations, the programme equips them with practical experience, empowering them to confidently navigate challenges within the realm of Full Stack Web & Software Development upon completion.",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        "Front-End Development",
+        "Advanced JavaScript",
+        "Databases",
+        "Back- End Development",
+        "Version Control",
+        "Operating Sytems and DevOps",
+      ],
+      image: "/assets/images/certificate/FSD_certificates.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/FSD/What-is-a-Full-Stack-Development-Course.webp",
+          blogQuestion: "What is a Full Stack Development Course?",
+          blogText:
+            "In the realm of software development, there exists a multifaceted approach known as full stack development. It’s a methodology where developers have expertise in both front-end and back-end technologies, allowing them to handle various aspects of web application development. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-is-a-full-stack-development-course",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/FSD/Can-I-learn-full-stack-web-development-online.webp",
+          blogQuestion: "Can I learn full stack web development online?",
+          blogText:
+            "The demand for skilled web developers continues to rise in today’s digital age. With businesses expanding their online presence and new startups emerging every day, there’s never been a better time to dive into the world of full stack web development. But can you really learn full stack web development online? The short answer is yes, and in this article, we’ll explore how you can embark on this journey from the comfort of your own home.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/can-i-learn-full-stack-web-development-online",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/FSD/Which-career-opportunities-are-available-for-a-full-stack-developer.webp",
+          blogQuestion:
+            "Which career opportunities are available for a full stack developer?",
+          blogText:
+            "In the fast-evolving landscape of technology, full stack developers have emerged as versatile professionals capable of handling both front-end and back-end development. Their skill set spans a wide range of technologies and languages, making them indispensable in today’s competitive job market. ",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/which-career-opportunities-are-available-for-a-full-stack-developer",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/FSD/Which-Software-Job-has-the-highest-salary.webp",
+          blogQuestion: "Which Software Job has the highest salary?",
+          blogText:
+            "In today’s digital era, software development has become a cornerstone of technological advancement, with full stack development emerging as a versatile and sought-after skill set. Full stack developers possess expertise in both front-end and back-end technologies, making them invaluable assets in the tech industry.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/which-software-job-has-the-highest-salary",
+        },
+      ],
+    },
+    faqSections: {
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
+      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Full Stack Web & Software Development Course",
+          faqs: [
+            {
+              question: "What is full stack software development?",
+              answer:
+                "Full stack software development involves building both the front-end (user interface) and back-end (server-side logic) of a web application, along with managing databases and operating systems. It encompasses the entire development process from start to finish.",
+            },
+            {
+              question: "What technologies will be covered in the course?",
+              answer:
+                "This course covers a wide range of technologies, including but not limited to HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Git, and various other tools and libraries commonly used in full-stack web development.",
+            },
+            {
+              question: "How is the course structured?",
+              answer:
+                "The course is divided into modules, each focusing on specific aspects of full-stack web development. It includes lectures, hands-on exercises, coding assignments, and projects to reinforce learning and practical application of concepts.",
+            },
+          ],
+        },
+        {
+          heading: "Eligibility and Enrolment",
+          faqs: [
+            {
+              question:
+                "Who is eligible to enrol in the Full Stack Web & Software Development course?",
+              answer:
+                "Any individual with a passion for programming and a basic understanding of computer science concepts can enrol. Prior experience with programming languages like HTML, CSS, and JavaScript is advantageous but not mandatory.",
+            },
+            {
+              question:
+                "Are there any prerequisites for enrolment in terms of software or hardware requirements?",
+              answer:
+                "Students are required to have access to a computer or laptop with a stable internet connection before enrolling for the Full Stack Web & Software Development course at Digital Regenesys.",
+            },
+            {
+              question:
+                "How can I enrol in the Full Stack Web & Software Development course at Digital Regenesys?",
+              answer:
+                "You can enrol by visiting the Digital Regenesys website and navigating to the course page. Follow the instructions for registration and payment to complete the enrolment process.",
+            },
+          ],
+        },
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question:
+                "Which programming languages are covered in the course?",
+              answer:
+                "The course covers languages such as HTML, CSS, and JavaScript along with more depending on the curriculum.",
+            },
+            {
+              question:
+                "Is version control covered in the curriculum of Digital Regenesys’s full stack web & software development course?",
+              answer:
+                "Yes, students will learn version control using tools like Git and GitHub to manage their code effectively.",
+            },
+            {
+              question:
+                "What tools are covered in Digital Regenesys’s full stack web & software development course?",
+              answer:
+                "Tools used in the Digital Regenesys full stack web & software development course are HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Git and GitHub and Chat GPT.",
+            },
+          ],
+        },
+        {
+          heading: "Duration and Accessibility",
+          faqs: [
+            {
+              question:
+                "What is the duration of the Full Stack Web & Software Development course offered by Digital Regenesys?",
+              answer:
+                "The total duration of the Digital Regenesys Full Stack Web & Software Development Course is 40 weeks.",
+            },
+            {
+              question:
+                "Is full-stack web development course accessible online or on-site?",
+              answer:
+                "Digital Regenesys offers the Full Stack Web & Software Development course online, providing flexibility for students to study from anywhere and anytime.",
+            },
+            {
+              question: "Can I access course materials and lectures remotely?",
+              answer:
+                "Yes, Digital Regenesys provides remote access to course materials, lectures, and resources through their online learning platform. Students can access these materials from anywhere with an internet connection.",
+            },
+          ],
+        },
+        {
+          heading: "Full Stack Online Certification Courses",
+          faqs: [
+            {
+              question:
+                "What is the benefit of enrolling in an online Full Stack Software Development Certification Course?",
+              answer:
+                "Full Stack Web Development Certification Course online offer a convenient and flexible way to enhance your knowledge or learn new skills.",
+            },
+            {
+              question:
+                "Are there practical applications and projects in online Full Stack Development Courses?",
+              answer:
+                "Digital Regenesys’s Online Full Stack Web & Software Development  Course includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+            },
+            {
+              question:
+                "What career opportunities are available after completing an online full stack web development course?",
+              answer:
+                "Completing Full Stack Web Development online courses can open doors to various career opportunities, including roles such as Full Stack Developer, Front-End Developer, Back-End Developer, Web Developer, Software Engineer, UI/UX Developer and Consultant.",
+            },
+          ],
+        },
+        {
+          heading: "Full Stack Developer",
+          faqs: [
+            {
+              question: "What is a full stack developer?",
+              answer:
+                "A full stack developer is proficient in both front-end and back-end web development, handling client-side and server-side programming, databases, and server management.",
+            },
+            {
+              question: "What is the full stack developer salary?",
+              answer:
+                "Full-stack developer salary vary based on various factors such as location, experience, and skills.",
+            },
+            {
+              question:
+                "What full stack developer jobs are available in the job market?",
+              answer:
+                "Full stack developer jobs consist of roles such as web developer, software engineer, app developer, or systems analyst. They're sought after in various industries like tech, finance, healthcare, and e-commerce",
+            },
+            {
+              question: "What skills does a full stack web developer need?",
+              answer:
+                "A full stack web developer requires knowledge of HTML, CSS, and JavaScript for the front end, and languages like Python, Ruby, and PHP for the back end. Familiarity with databases, version control systems, and server management is also essential.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  DataAndBusinessAnalytics: {
+    BannerWithVideoData: {
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/DBA/DBA-Banner.webp",
+      coursePageName: "Data And Business Analytics",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
+      contentText:
+        "Digital Regenesys's Data and Business Analytics No-Code course is designed to meet the needs of professionals and students seeking a comprehensive understanding of data science and data visualisation without the need for coding expertise. This innovative course introduces participants to key concepts and tools essential for effective data analysis and reporting. ",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/NG1wmJ0Dic4?autoplay=1&loop=1&playlist=NG1wmJ0Dic4",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      UspSectionData: {
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+        },
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          duration: "3000",
+        },
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Data and Business Analytics Course Outcomes",
+      Heding: "What our learners have achieved",
+      Card: [
+        {
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          text1: "1000+",
+          text2: " Career Opportunities",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          text1: "190+",
+          text2: "Countries Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore the World of Data and Business Analytics With Us!",
+      bigHeading:
+        "Everything You Need To Know About Data and Business AnalyticsCourse",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "World Class Faculty", contentId: "content4" },
+        { text: "", contentId: "content5" },
+
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DBA/DBA-explore.webp",
+          contentText:
+            "Digital Regenesys’ Data and Business Analytics course is a 19-week course that offers a no-code approach to data and business analytics, covering essential concepts and tools for effective analysis and reporting. It emphasises the role of Management Information Systems (MIS) in leveraging data insights for decision-making. Participants will learn advanced techniques, focusing on storytelling through data visualisation and gaining expertise in predictive and prescriptive analytics. By the end of the course, participants will be equipped with the skills needed to tackle challenges in the dynamic field of business analytics.",
+          contentCard: [
+            {
+              icon: "/assets/images/new-component-assets/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+        content2: {
+          contentHeading: "Tools Covered in this Course",
+          cardTools: [
+            { img: "DBA/DSA_power-bi.png", alt: "" },
+            { img: "DBA/DSA_chatGpt.png", alt: "" },
+            { img: "sd/gitlabNew.svg", alt: "" },
+            { img: "DBA/DSA_predictive.png", alt: "" },
+            { img: "DBA/DSA_rows-ai.png", alt: "" },
+            { img: "DBA/DSA_mis.png", alt: "" },
+          ],
+        },
+
+        content3: {
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+              facultyName: "Samidha Kurle",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ years",
+            },
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+              facultyName: "Dr.Nilay Karade",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "11+ years",
+            },
+            {
+              facultyImg:
+                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+              facultyName: "Dr.Shilpa Joshi",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "20+ years",
+            },
+          ],
+        },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading:
+                "Level 1: Foundations of Data Science in Business Analytics",
+              weekPoints: [
+                "Introduction to Data Science",
+                "Foundations of Business Analytics",
+                "Management Information Systems (MIS)",
+                "Report Building With No-code Tool",
+                "Analysing Trends and Patterns",
+                "PowerBI Basics",
+              ],
+            },
+            {
+              weekHeading:
+                "Level 2: Advanced Data Science in Business Analytics",
+              weekPoints: [
+                "Data Visualisation with Story Boarding",
+                "Advanced PowerBI Features",
+                "Advanced-Data Analysis",
+                "Predictive Analytics",
+                "Prescriptive Analytics",
+              ],
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
+              contaryName: "SouthAfrica",
+              price: "R 26,498",
+              duration: "6 Months",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
+
+              contaryName: "India",
+              price: "₹ 142,998",
+              duration: "6 Months",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryName: "USA",
+              price: "$ 1,418",
+              duration: "6 Months",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title: "About Digital Regenesys Data and Business Analytics Certificate",
+      heading: "Certification",
+      paragraph:
+        "Digital Regenesys aims to equip participants with essential concepts and tools crucial for proficient data analysis and reporting in its course on Data and Business Analytics. Progressing to an advanced stage, participants delve into advanced techniques, honing skills in data visualisation for impactful storytelling and gaining expertise in predictive and prescriptive analytics. By focusing on skill elevation, this course aims to prepare participants to effectively navigate the dynamic landscape of business analytics and tackle upcoming challenges with confidence.",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        "Management Information Systems (MIS)",
+        " Predictive Analytics",
+        "Prescriptive Analytics ",
+        "Tools for Data Analysis",
+        "Data Visualisation",
+        "Advanced techniques",
+      ],
+      image: "/assets/images/certificate/DBA_certificates.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    BlogSectionData: {
+      BlogSectionTitle: "For Your Research & Information",
+      cards: [
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DBA/What-is-Data-and-Business-Analytics-A-No-Code-Approach.webp",
+          blogQuestion:
+            "What is Data and Business Analytics: A No-Code Approach?",
+          blogText:
+            "In today’s data-driven world, businesses across industries are constantly seeking ways to leverage data to gain valuable insights, make informed decisions, and drive growth",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-is-data-and-business-analytics-a-no-code-approach",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DBA/Which-Tools-Are-Covered-in-Data-and-Business-Analytics-Courses.webp",
+          blogQuestion:
+            "Which Tools Are Covered in Data and Business Analytics Courses?",
+          blogText:
+            "In today’s data-driven world, businesses are increasingly relying on data analytics to gain insights, make informed decisions, and stay competitive. As a result, the demand for professionals skilled in data and business analytics has surged.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/which-tools-are-covered-in-data-and-business-analytics-courses",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DBA/What-Are-the-Current-Salary-Trends-in-Data-and-Business-Analytics.webp",
+          blogQuestion:
+            "What Are the Current Salary Trends in Data and Business Analytics?",
+          blogText:
+            "In today’s fast-paced digital landscape, data has become the lifeblood of businesses across industries. From e-commerce giants to small startups, organisations are leveraging data to make informed decisions, drive growth, and gain a competitive edge.",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-are-the-current-salary-trends-in-data-and-business-analytics",
+        },
+        {
+          blogImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/DBA/What-Career-Paths-Exist-in-Data-and-Business-Analytics.webp",
+          blogQuestion:
+            "What Career Paths Exist in Data and Business Analytics?",
+          blogText:
+            "In today’s data-driven world, the demand for professionals with data and business analytics skills is on the rise. From interpreting consumer behaviour to business optimisation",
+          blogLink:
+            "https://www.digitalregenesys.com/blog/what-career-paths-exist-in-data-and-business-analytics",
+        },
+      ],
+    },
+    faqSections: {
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
+      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Data and Business Analytics Course",
+          faqs: [
+            {
+              question: "What is Data and Business Analytics?",
+              answer:
+                "Data and Business Analytics is a field that involves the exploration, analysis, and interpretation of data to make informed business decisions. It encompasses various techniques and tools to extract insights from data and apply them to improve business performance.",
+            },
+            {
+              question:
+                "What are the key components of a Data and Business Analytics course?",
+              answer:
+                "A Data and Business Analytics course typically covers topics such as data visualisation, statistical analysis, predictive modelling, machine learning, data mining, business intelligence tools, and data-driven decision-making.",
+            },
+            {
+              question:
+                "How does Data and Business Analytics course contribute to business decision-making?",
+              answer:
+                "Data analysis and business analytics provide businesses with valuable insights derived from data analysis, which inform decision-making processes across various functions such as marketing, finance, operations, and strategic planning. By leveraging data-driven insights, businesses can make informed decisions that lead to improved performance and competitive advantage.",
+            },
+          ],
+        },
+        {
+          heading: "Eligibility and Enrolment",
+          faqs: [
+            {
+              question:
+                "Is work experience required to enrol in the Data and Business Analytics course?",
+              answer:
+                "The course is open to individuals from diverse backgrounds, including students, professionals, and entrepreneurs, who are interested in gaining knowledge and skills in data analysis and business analytics but do not like coding. There are no specific prerequisites in terms of educational qualifications, making it accessible to a wide range of learners.",
+            },
+            {
+              question:
+                "Do I need prior experience in analytics or programming to enrol in this course?",
+              answer:
+                "No, this course is designed for beginners and does not require any prior experience in analytics or programming. It is a no-code course, meaning that you will learn analytics techniques without the need for programming skills.",
+            },
+            {
+              question:
+                "Can I enrol in the course if I am currently employed full-time?",
+              answer:
+                "Yes, the course is suitable for working professionals who wish to enhance their skills in data and business analytics. Since the course is self-paced, you can study during your free time, making it convenient to balance with your work commitments.",
+            },
+          ],
+        },
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question:
+                "What tools are covered in the Data and Business Analytics course?",
+              answer:
+                "The course covers a variety of no-code tools, Power-BI, Rows.AI, ChatGPT, Predictive Analytics, Prescriptive Analytics and MIS.",
+            },
+            {
+              question: "Can I access course materials and tools remotely?",
+              answer:
+                "Yes, all course materials and tools are accessible online, allowing students to learn and practice from anywhere with an internet connection.",
+            },
+            {
+              question:
+                "Is prior experience with any specific tool required before taking this course?",
+              answer:
+                "No prior experience with any specific tool is required. This course is designed for beginners and covers the fundamentals of using various no-code analytics tools effectively.",
+            },
+          ],
+        },
+        {
+          heading: "Duration and Accessibility",
+          faqs: [
+            {
+              question:
+                "What is the typical duration of the Data and Business Analytics course at Digital Regenesys?",
+              answer:
+                "The Data and Business Analytics course at Digital Regenesys typically spans a duration of 19 weeks and is designed to provide comprehensive learning to students.",
+            },
+            {
+              question:
+                "Are there any prerequisites or specific technical skills required to enrol in the Data and Business Analytics course?",
+              answer:
+                "No, Digital Regenesys' Data and Business Analytics course is designed for individuals from diverse backgrounds, including those without technical experience. The course is accessible to beginners and does not require any coding knowledge.",
+            },
+            {
+              question:
+                "Are there any time constraints for accessing course materials?",
+              answer:
+                "No, there are no time constraints. Once enrolled, participants have continuous access to the course materials. This allows for flexibility in learning, enabling students to study at any time that suits their schedule.",
+            },
+          ],
+        },
+        {
+          heading: "Data and Business Analytics Online Certification Courses",
+          faqs: [
+            {
+              question:
+                "What is the benefit of enrolling in an online Data and Business Analytics Certification Course?",
+              answer:
+                "Data and Business Analytics Certification Course online offers a convenient and flexible way to enhance your knowledge or learn new skills.",
+            },
+            {
+              question:
+                "Are there practical applications and projects in online Data and Business Analytics Courses?",
+              answer:
+                "Digital Regenesys’s Online Data and Business Analytics Course includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+            },
+            {
+              question:
+                "What career opportunities are available after completing an online Data and Business Analytics course?",
+              answer:
+                "Completing Data and Business Analytics online courses can open doors to various career opportunities, including roles such as Data Analyst, Business Analyst, MIS Analyst (Management Information Systems), Reporting Analyst, PowerBI Developer, Quality Assurance Analyst and many more.",
+            },
+          ],
+        },
+        {
+          heading: "Data and Business Analytic Curriculum",
+          faqs: [
+            {
+              question: "What is Business Analytics?",
+              answer:
+                "Business Analytics is the practice of using data, statistical analysis, and quantitative methods to drive informed decision-making and improve business performance across various areas such as operations, marketing, finance, and strategy.",
+            },
+            {
+              question:
+                "What topics are covered in the Data and Business Analytics course curriculum?",
+              answer:
+                "Topics covered in the curriculum of the Data and Business Analytics course on a basic level include- Introduction to Data Science, Foundations of Business Analytics, Report Building With No-code Tool, Analysing Trends and Patterns, and PowerBI Basics. On an advanced level, topics include- Data Visualisation with storyboarding, Advanced PowerBI Features, Advanced-Data Analysis, Predictive Analytics and Prescriptive Analytics.",
+            },
+            {
+              question:
+                "Does the Data and Business Analytics course curriculum at Digital Regenesys include Data analysis?",
+              answer:
+                "Yes, Data and Business Analytics course at Digital Regenesys has data analysis in its curriculum.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  ManagementAdvancement: {
+    BannerWithVideoData: {
+      BannerImgDesktop:
+        "/assets/images/new-component-assets/Courses-Page-Img/MD/MD-Banner.webp",
+      coursePageName: "Management Advancement",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
+      contentText:
+        "Digital Regenesys's Management Development Programme(MDP) is your gateway to a comprehensive curriculum spanning strategic management, innovation, operational excellence, finance, marketing, and leadership. Gain practical insights and skills to confidently navigate complex business environments, drive innovation, optimise operations, and lead teams effectively. ",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/FKksF9fkf5w?autoplay=1&loop=1&playlist=FKksF9fkf5w",
+      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
+      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      UspSectionData: {
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
+          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+        },
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          duration: "3000",
+        },
+        uspUpskillCard: {
+          uspUpskillText: "Enhances Upskilling Courses",
+          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Management Development Programme Outcomes",
+      Heding: "What our learners have achieved",
+      Card: [
+        {
+          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certificate",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          text1: "1000+",
+          text2: " Career Opportunities",
+        },
+        {
+          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          text1: "190+",
+          text2: "Countries Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore the World of Management Development With Us!",
+      bigHeading:
+        "Everything You Need To Know About Management Development Programme",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "Tools Covered in this Course", contentId: "content3" },
+        { text: "", contentId: "content4" },
+        { text: "", contentId: "content5" },
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg:
+            "/assets/images/new-component-assets/Courses-Page-Img/MD/MD-explore.webp",
+          contentText:
+            "Digital Regenesys’ Management Development Programme (MDP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management development.",
+          contentCard: [
+            {
+              icon: "/assets/images/new-component-assets/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "/assets/images/new-component-assets/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+        content2: {
+          contentHeading: "Tools Covered in this Course",
+          cardTools: [
+            { img: "DBA/DSA_chatGpt.png", alt: "" },
+            { img: "md/Clipchamp.svg", alt: "" },
+            { img: "md/Gemini.svg", alt: "" },
+            { img: "md/Hey-Gen.svg", alt: "" },
+            { img: "md/KREA.svg", alt: "" },
+          ],
+        },
+
+        // content3: {
+        //   contentHeading: "World Class Faculty",
+        //   tutors: "50+ Tutors",
+        //   facultyCard: [
+        //     {
+        //       facultyImg:
+        //         "/assets/images/new-component-assets/faculty-img/Dr-Saquib-Ahmad-Khan2.webp",
+        //       facultyName: "Dr.Saquib Ahmad Khan",
+        //       courseName: "Senior Lecturer",
+        //       yearsOfExperience: "10+ years",
+        //     },
+        //   ],
+        // },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
+          tickIcon: "/assets/images/new-component-assets/Check.svg",
+          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading: "The Business Environment",
+              weekPoints: [
+                "Understanding the business landscape",
+                "Economic, political, and social factors influencing business",
+                "Market analysis and identification of opportunities",
+              ],
+            },
+            {
+              weekHeading: "Managing the Art of Innovation",
+              weekPoints: [
+                "Cultivating a culture of innovation",
+                "Strategies for fostering creativity and idea generation",
+                "Design Thinking for Managers",
+                "Implementing innovation",
+              ],
+            },
+            {
+              weekHeading: "Entrepreneurship and Intrapreneurship",
+              weekPoints: [
+                "Identifying and evaluating business opportunities",
+                "Creating a culture of intrapreneurship within organisations",
+                "Support systems for entrepreneurs",
+              ],
+            },
+            {
+              weekHeading: "Emerging Technologies for Managers",
+              weekPoints: [
+                "Introduction to disruptive technologies (e.g., AI, blockchain, IoT)",
+                "Incorporating technology trends into business strategies",
+                "Managing digital transformation",
+              ],
+            },
+            {
+              weekHeading: "Operational Effectiveness",
+              weekPoints: [
+                "Process optimisation and efficiency improvement techniques",
+                "Supply chain management and logistics",
+                "Lean and Six Sigma principles for operational excellence",
+              ],
+            },
+            {
+              weekHeading: "Effective Project Execution",
+              weekPoints: [
+                "Project management fundamentals",
+                "Agile methodologies for managing projects in dynamic environments",
+                "Overcoming common challenges in project execution",
+              ],
+            },
+            {
+              weekHeading: "Business Finance for Managers",
+              weekPoints: [
+                "Financial analysis and decision-making",
+                "Budgeting and forecasting techniques",
+                "Financial risk management",
+              ],
+            },
+            {
+              weekHeading: "People and Performance Management",
+              weekPoints: [
+                "Leadership and motivation strategies",
+                "Talent acquisition and retention",
+                "Performance evaluation and feedback mechanisms",
+              ],
+            },
+            {
+              weekHeading: "Marketing for Managers",
+              weekPoints: [
+                "Market research and consumer behaviour analysis",
+                "Branding and product/service positioning strategies",
+                "Digital marketing and social media",
+              ],
+            },
+            {
+              weekHeading: "Essential Communication Tools",
+              weekPoints: [
+                "Effective communication techniques",
+                "Interpersonal skills and conflict resolution",
+                "Cross-cultural communication",
+              ],
+            },
+            {
+              weekHeading: "ESG for Managers",
+              weekPoints: [
+                "Understanding environmental, social, and governance (ESG) principles",
+                "Integrating sustainability practices into business operations",
+                "Corporate social responsibility (CSR) initiatives.",
+              ],
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
+          durationIcon: "/assets/images/new-component-assets/timer.svg",
+          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag:
+                "/assets/images/new-component-assets/south-africa.svg",
+              contaryName: "SouthAfrica",
+              price: "R 35,000",
+              duration: "40 Weeks",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/India.svg",
+
+              contaryName: "India",
+              price: "₹ 150,000",
+              duration: "40 Weeks",
+            },
+            {
+              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryName: "USA",
+              price: "$1,920",
+              duration: "40 Weeks",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title:
+        "About Digital Regenesys Management Development Certificate Programme",
+      heading: "Certification",
+      paragraph:
+        "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Development certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
+      tickImage: "/assets/images/new-component-assets/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        "Effective communication techniques ",
+        "Design Thinking for Managers",
+        "Introduction to Disruptive Technologies ",
+        "Project management fundamentals",
+        "Financial risk management",
+        "Interpersonal skills",
+      ],
+      image: "/assets/images/certificate/MD_certificates.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    // BlogSectionData: {
+    //   BlogSectionTitle: "For Your Research & Information",
+    //   cards: [
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-course.webp",
+    //       blogQuestion: "Which Is The Best Cyber Security Course?",
+    //       blogText:
+    //         "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/which-is-the-best-cyber-security-course",
+    //     },
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-future.webp",
+    //       blogQuestion:
+    //         "Why Are Cyber Security Courses a Smart Investment for the Future",
+    //       blogText:
+    //         "In an era where the digital landscape permeates every facet of our lives, safeguarding sensitive information and digital assets has become paramount. Cyber Security, as the vanguard against many digital threats, is a linchpin in ensuring data integrity, confidentiality, and availability. ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/why-are-cyber-security-courses-a-smart-investment-for-the-future",
+    //     },
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-qualifications.webp",
+    //       blogQuestion:
+    //         "What qualifications do I need to study cyber security?",
+    //       blogText:
+    //         "Organisations with networks plugged into the internet (and let’s face it, that’s practically all of them) expose themselves to business disruption, financial loss, reputational ruin, and litigation if they neglect their cyber security measures.",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/what-qualifications-do-i-need-to-study-cyber-security",
+    //     },
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-promising.webp",
+    //       blogQuestion:
+    //         "Why Enrol In A Cyber Security Course For A Promising Career?",
+    //       blogText:
+    //         "In a rapidly evolving landscape of the digital age, where technological advancements bring unprecedented opportunities, they also usher in new challenges in the form of cyber threats and security breaches. ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/why-enrol-in-a-cyber-security-course-for-a-promising-career",
+    //     },
+    //   ],
+    // },
+    faqSections: {
+      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
+      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Management Development Programme",
+          faqs: [
+            {
+              question:
+                "What is the focus of Digital Regenesys's Management Development Programme (MDP)?",
+              answer:
+                "The programme focuses on developing comprehensive skills in strategic management, innovation, operational excellence, finance, marketing, and leadership.",
+            },
+            {
+              question:
+                "How does Digital Regenesys's Management Development Programme help participants navigate complex business environments?",
+              answer:
+                "The programme provides practical insights and skills to understand market dynamics, identify economic, political, and social risks, and foster a culture of innovation for effective adaptation to changing business landscapes.",
+            },
+            {
+              question:
+                "How does Digital Regenesys's Management Development certificate programme address digital transformation in businesses?",
+              answer:
+                "The programme incorporates disruptive technologies into business strategies and provides leadership skills to lead digital transformation initiatives effectively.",
+            },
+          ],
+        },
+        {
+          heading: "Eligibility and Enrolment",
+          faqs: [
+            {
+              question:
+                "Who is eligible to enrol in Digital Regenesys's Management Development Programme (MDP)?",
+              answer:
+                "The Management Development Programme is open to professionals from various industries and backgrounds who seek to enhance their management skills and advance their careers. There are no specific prerequisites, but participants are typically mid-career professionals or individuals with some managerial experience.",
+            },
+            {
+              question:
+                "How can I enrol in Digital Regenesys's management certificate programme?",
+              answer:
+                "To enrol in the Management Development Programme, you can visit the Digital Regenesys website and navigate to the program's page.",
+            },
+            {
+              question:
+                "Is there an application process to enrol for the Management Development Programme?",
+              answer:
+                "Yes, interested individuals are required to complete an online application form to enrol in the Management Development Programme.",
+            },
+          ],
+        },
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question:
+                "What tools are covered in Digital Regenesys's Management Development Programme?",
+              answer:
+                "The course covers a variety of tools like ChatGPT, Gemini, HeyGen, Krea.ai and Clipchamp.",
+            },
+            {
+              question: "Can I access course materials and tools remotely?",
+              answer:
+                "Yes, all course materials and tools are accessible online, allowing students to learn and practice from anywhere with an internet connection.",
+            },
+            {
+              question: "Are there hands-on sessions with tools used?",
+              answer:
+                "Yes, the programme integrates practical sessions where you'll engage with innovation tools to foster creativity and implement effective strategies for idea generation.",
+            },
+          ],
+        },
+        {
+          heading: "Duration and Accessibility",
+          faqs: [
+            {
+              question:
+                "How long is the Management Development Programme at Digital Regenesys?",
+              answer:
+                "The Management Development Programme at Digital Regenesys is a duration of 40 weeks course, designed to provide comprehensive learning to students.",
+            },
+            {
+              question:
+                "Can I access course materials and resources after completing the Management Development Programme?",
+              answer:
+                "Yes, participants have continued access to course materials and resources for 1 year even after completing the Management Development Programme. This ensures ongoing learning and the ability to revisit key concepts and insights as needed in their professional endeavours.",
+            },
+            {
+              question:
+                "Are there any time constraints for accessing course materials?",
+              answer:
+                "No, there are no time constraints. Once enrolled, participants have continuous access to the course materials. This allows for flexibility in learning, enabling students to study at any time that suits their schedule.",
+            },
+          ],
+        },
+        {
+          heading: "Management Development Online Certification Course",
+          faqs: [
+            {
+              question:
+                "What is the benefit of enrolling in an online Management Development Certification Programme?",
+              answer:
+                "The Management Development certificate programme online offers a convenient and flexible way to enhance your knowledge or learn new skills.",
+            },
+            {
+              question:
+                "Are there practical applications and projects in online Management Development Programmes?",
+              answer:
+                "Digital Regenesys’s Online management development programme includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+            },
+            {
+              question:
+                "What career opportunities are available after completing an online Management Development Programme?",
+              answer:
+                "Completing Management Development Programme (MDP) online courses can open doors to various career opportunities, including roles such as Business Development Manager, Innovation Manager, Operations Manager, Project Manager, Financial Analyst/Manager, Marketing Manager, Strategy Consultant, Human Resources Manager and Sustainability Manager.",
             },
           ],
         },

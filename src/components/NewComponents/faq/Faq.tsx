@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Styles from "./faq.module.css";
+import TextSplit from "@/components/Reuseable/TextSplit";
 
 interface FAQData {
   HeadingDesktop: string;
@@ -73,7 +74,11 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                         }`}
                       />
                     </div>
-                    {selectedQuestion === index && <p>{faq.answer}</p>}
+                    {selectedQuestion === index && (
+                      <p>
+                        <TextSplit text={faq.answer} />
+                      </p>
+                    )}
                   </li>
                 ))}
             </ul>
@@ -166,7 +171,9 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                           />
                         </div>
                         {selectedQuestion === index && (
-                          <p className={Styles.answerMobile}>{faq.answer}</p>
+                          <p className={Styles.answerMobile}>
+                            <TextSplit text={faq.answer} />
+                          </p>
                         )}
                       </li>
                     ))}

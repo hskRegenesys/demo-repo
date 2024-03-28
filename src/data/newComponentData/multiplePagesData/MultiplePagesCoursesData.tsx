@@ -1,6 +1,17 @@
 // =================read more data================
+type PageData = {
+  heading?: string;
+  readmore?: {
+    pheading?: string;
+    paragraphs?: string[];
+  }[];
+};
 
-const MultiplePagesCoursesData = {
+type MultiplePagesData = {
+  [key: string]: PageData;
+};
+
+const MultiplePagesCoursesData: MultiplePagesData = {
   //--------------------- Brand---------------------
   "online-courses": {
     heading: "Elevate your career with Digital Regenesys",
@@ -714,6 +725,32 @@ const MultiplePagesCoursesData = {
       },
     ],
   },
+  "project-management-course": {},
+  "project-management-courses-online": {},
+  "project-manager-course": {},
+  "online-project-management-courses": {},
+  "project-managment-courses": {},
+  "what-skills-can-you-get-from-managing-it-projects-course": {},
+  "courses-in-project-management": {},
+  "online-course-for-project-management": {},
+  "online-course-in-project-management": {},
+  "project-management-online-course": {},
+  "project-manager-courses": {},
+  "project-managing-courses": {},
+  "project-management-certification-courses": {},
+  "project-management-course-online": {},
+  "project-management-online-courses": {},
+  "project-management-training-courses": {},
+  "agile-project-management-course": {},
+  "construction-project-management-courses": {},
+  "best-project-management-courses": {},
+  "online-courses-project-management": {},
+  "online-project-management-course": {},
+  "project-manager-courses-online": {},
+  "project-managment-course": {},
+  "course-in-project-management": {},
+  "project-management-courses-for-beginners": {},
+  "project-management-on-line-courses": {},
   // ==========================CS===========================
   "cyber-security-course": {
     heading: "Elevate your career with Cyber Security Courses",
@@ -963,5 +1000,15 @@ const MultiplePagesCoursesData = {
       },
     ],
   },
+  //========================DT=================================
+  "design-thinking": {},
+  //========================FSD=================================
+  "full-stack-developer": {},
+
+  //========================DBA=================================
+  "data-analysis": {},
+
+  //========================MDP=================================
+  mdp: {},
 };
 export default MultiplePagesCoursesData;

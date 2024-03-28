@@ -563,6 +563,122 @@ const Sidemapdata: Sidemapdata = {
       ],
     },
   },
+  "Project Management": {
+    SideHeading: "Project Management",
+    content: {
+      Heading: "Project Management",
+      items: [
+        {
+          title: "Project Management Courses",
+          link: "https://www.digitalregenesys.com/project-management-courses",
+        },
+        {
+          title: "Project Management Course",
+          link: "https://www.digitalregenesys.com/project-management-course",
+        },
+        {
+          title: "Project Management Courses Online",
+          link: "https://www.digitalregenesys.com/project-management-courses-online",
+        },
+        {
+          title: "Project Manager Course",
+          link: "https://www.digitalregenesys.com/project-manager-course",
+        },
+        {
+          title: "Online Project Management Courses",
+          link: "https://www.digitalregenesys.com/online-project-management-courses",
+        },
+        {
+          title: "Project Management Courses",
+          link: "https://www.digitalregenesys.com/project-managment-courses",
+        },
+        {
+          title: "What Skills Can You Get From Managing It Projects Course",
+          link: "https://www.digitalregenesys.com/what-skills-can-you-get-from-managing-it-projects-course",
+        },
+        {
+          title: "Courses In Project Management",
+          link: "https://www.digitalregenesys.com/courses-in-project-management",
+        },
+        {
+          title: "Online Course For Project Management",
+          link: "https://www.digitalregenesys.com/online-course-for-project-management",
+        },
+        {
+          title: "Online Course In Project Management",
+          link: "https://www.digitalregenesys.com/online-course-in-project-management",
+        },
+        {
+          title: "Project Management Online Course",
+          link: "https://www.digitalregenesys.com/project-management-online-course",
+        },
+        {
+          title: "Project Manager Courses",
+          link: "https://www.digitalregenesys.com/project-manager-courses",
+        },
+        {
+          title: "Project Managing Courses",
+          link: "https://www.digitalregenesys.com/project-managing-courses",
+        },
+        {
+          title: "Project Management Certification Courses",
+          link: "https://www.digitalregenesys.com/project-management-certification-courses",
+        },
+        {
+          title: "Project Management Course Online",
+          link: "https://www.digitalregenesys.com/project-management-course-online",
+        },
+        {
+          title: "Project Management Online Courses",
+          link: "https://www.digitalregenesys.com/project-management-online-courses",
+        },
+        // {
+        //   title: "Project Management Training Courses",
+        //   link: "https://www.digitalregenesys.com/project-management-training-courses",
+        // },
+        // {
+        //   title: "Agile Project Management Course",
+        //   link: "https://www.digitalregenesys.com/agile-project-management-course",
+        // },
+        // {
+        //   title: "Construction Project Management Courses",
+        //   link: "https://www.digitalregenesys.com/construction-project-management-courses",
+        // },
+        // {
+        //   title: "Best Project Management Courses",
+        //   link: "https://www.digitalregenesys.com/best-project-management-courses",
+        // },
+        // {
+        //   title: "Online Courses Project Management",
+        //   link: "https://www.digitalregenesys.com/online-courses-project-management",
+        // },
+        // {
+        //   title: "Online Project Management Course",
+        //   link: "https://www.digitalregenesys.com/online-project-management-course",
+        // },
+        // {
+        //   title: "Project Manager Courses Online",
+        //   link: "https://www.digitalregenesys.com/project-manager-courses-online",
+        // },
+        // {
+        //   title: "Project Management Course",
+        //   link: "https://www.digitalregenesys.com/project-managment-course",
+        // },
+        // {
+        //   title: "Course In Project Management",
+        //   link: "https://www.digitalregenesys.com/course-in-project-management",
+        // },
+        // {
+        //   title: "Project Management Courses For Beginners",
+        //   link: "https://www.digitalregenesys.com/project-management-courses-for-beginners",
+        // },
+        // {
+        //   title: "Project Management On Line Courses",
+        //   link: "https://www.digitalregenesys.com/project-management-on-line-courses",
+        // },
+      ],
+    },
+  },
 };
 
 export default Sidemapdata;
