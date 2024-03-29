@@ -47,7 +47,12 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
                   <h2>{item.pheading}</h2>
                   {item.paragraphs &&
                     item.paragraphs.map((paragraph, pIndex) => (
-                      <p key={pIndex}>{` ${paragraph}`}</p>
+                      <p
+                        key={pIndex}
+                        dangerouslySetInnerHTML={{
+                          __html: paragraph,
+                        }}
+                      ></p>
                     ))}
                 </div>
               ))}

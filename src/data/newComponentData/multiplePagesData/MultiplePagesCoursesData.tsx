@@ -263,7 +263,7 @@ const MultiplePagesCoursesData: MultiplePagesData = {
         pheading:
           " To access the class materials in online courses, follow these steps:",
         paragraphs: [
-          "Log in to the official website @ https://www.digitalregenesys.com/ using the credentials provided upon enrolment. ",
+          "Log in to the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> using the credentials provided upon enrolment. ",
           "Once logged in, navigate to the designated course section where the materials are stored. ",
           "Click on the corresponding module or lesson to view and download the required materials, including lecture notes, presentations, readings, and assignments. ",
         ],

@@ -632,50 +632,202 @@ const Sidemapdata: Sidemapdata = {
           title: "Project Management Online Courses",
           link: "https://www.digitalregenesys.com/project-management-online-courses",
         },
-        // {
-        //   title: "Project Management Training Courses",
-        //   link: "https://www.digitalregenesys.com/project-management-training-courses",
-        // },
-        // {
-        //   title: "Agile Project Management Course",
-        //   link: "https://www.digitalregenesys.com/agile-project-management-course",
-        // },
-        // {
-        //   title: "Construction Project Management Courses",
-        //   link: "https://www.digitalregenesys.com/construction-project-management-courses",
-        // },
-        // {
-        //   title: "Best Project Management Courses",
-        //   link: "https://www.digitalregenesys.com/best-project-management-courses",
-        // },
-        // {
-        //   title: "Online Courses Project Management",
-        //   link: "https://www.digitalregenesys.com/online-courses-project-management",
-        // },
-        // {
-        //   title: "Online Project Management Course",
-        //   link: "https://www.digitalregenesys.com/online-project-management-course",
-        // },
-        // {
-        //   title: "Project Manager Courses Online",
-        //   link: "https://www.digitalregenesys.com/project-manager-courses-online",
-        // },
-        // {
-        //   title: "Project Management Course",
-        //   link: "https://www.digitalregenesys.com/project-managment-course",
-        // },
-        // {
-        //   title: "Course In Project Management",
-        //   link: "https://www.digitalregenesys.com/course-in-project-management",
-        // },
-        // {
-        //   title: "Project Management Courses For Beginners",
-        //   link: "https://www.digitalregenesys.com/project-management-courses-for-beginners",
-        // },
-        // {
-        //   title: "Project Management On Line Courses",
-        //   link: "https://www.digitalregenesys.com/project-management-on-line-courses",
-        // },
+        {
+          title: "Project Management Training Courses",
+          link: "https://www.digitalregenesys.com/project-management-training-courses",
+        },
+        {
+          title: "Agile Project Management Course",
+          link: "https://www.digitalregenesys.com/agile-project-management-course",
+        },
+        {
+          title: "Construction Project Management Courses",
+          link: "https://www.digitalregenesys.com/construction-project-management-courses",
+        },
+        {
+          title: "Best Project Management Courses",
+          link: "https://www.digitalregenesys.com/best-project-management-courses",
+        },
+        {
+          title: "Online Courses Project Management",
+          link: "https://www.digitalregenesys.com/online-courses-project-management",
+        },
+        {
+          title: "Online Project Management Course",
+          link: "https://www.digitalregenesys.com/online-project-management-course",
+        },
+        {
+          title: "Project Manager Courses Online",
+          link: "https://www.digitalregenesys.com/project-manager-courses-online",
+        },
+        {
+          title: "Project Management Course",
+          link: "https://www.digitalregenesys.com/project-managment-course",
+        },
+        {
+          title: "Course In Project Management",
+          link: "https://www.digitalregenesys.com/course-in-project-management",
+        },
+        {
+          title: "Project Management Courses For Beginners",
+          link: "https://www.digitalregenesys.com/project-management-courses-for-beginners",
+        },
+        {
+          title: "Project Management On Line Courses",
+          link: "https://www.digitalregenesys.com/project-management-on-line-courses",
+        },
+      ],
+    },
+  },
+  "Cyber Security": {
+    SideHeading: "Cyber Security",
+    content: {
+      Heading: "Cyber Security",
+      items: [
+        {
+          title: "Cyber Security Course",
+          link: "https://www.digitalregenesys.com/cyber-security-course",
+        },
+        {
+          title: "Cyber Security Courses",
+          link: "https://www.digitalregenesys.com/cyber-security-courses",
+        },
+        {
+          title: "Online Cyber Security Courses",
+          link: "https://www.digitalregenesys.com/cyber-security-courses-online",
+        },
+        {
+          title: "Online Cyber Security Course",
+          link: "https://www.digitalregenesys.com/cyber-security-course-online",
+        },
+        {
+          title: "Online Cyber Security Courses",
+          link: "https://www.digitalregenesys.com/online-cyber-security-courses",
+        },
+        {
+          title: "Cyber Security Online Courses",
+          link: "https://www.digitalregenesys.com/cyber-security-online-courses",
+        },
+        {
+          title: "Courses for Cyber Security",
+          link: "https://www.digitalregenesys.com/courses-for-cyber-security",
+        },
+        {
+          title: "Courses Cyber Security",
+          link: "https://www.digitalregenesys.com/courses-cyber-security",
+        },
+        {
+          title: "Cyber Security Training Courses",
+          link: "https://www.digitalregenesys.com/cyber-security-training-courses",
+        },
+        {
+          title: "Cyber Security Courses for Beginners",
+          link: "https://www.digitalregenesys.com/cyber-security-courses-for-beginners",
+        },
+        {
+          title: "Online Course for Cyber Security",
+          link: "https://www.digitalregenesys.com/online-course-for-cyber-security",
+        },
+        {
+          title: "Courses in Cyber Security",
+          link: "https://www.digitalregenesys.com/courses-in-cyber-security",
+        },
+        {
+          title: "Cyber Security Courses Near Me",
+          link: "https://www.digitalregenesys.com/cyber-security-courses-near-me",
+        },
+        {
+          title: "Cyber Security Online Course",
+          link: "https://www.digitalregenesys.com/cyber-security-online-course",
+        },
+        {
+          title: "Best Cyber Security Courses",
+          link: "https://www.digitalregenesys.com/best-cyber-security-courses",
+        },
+        {
+          title: "Cyber Security Courses Offered",
+          link: "https://www.digitalregenesys.com/cyber-security-courses-offered",
+        },
+        {
+          title: "Government Funded Cyber Security Courses",
+          link: "https://www.digitalregenesys.com/government-funded-cyber-security-courses",
+        },
+        {
+          title: "Online Courses for Cyber Security",
+          link: "https://www.digitalregenesys.com/online-courses-for-cyber-security",
+        },
+      ],
+    },
+  },
+  "Artificial Intelligence": {
+    SideHeading: "Artificial Intelligence",
+    content: {
+      Heading: "Artificial Intelligence",
+      items: [
+        {
+          title: "Artificial Intelligence Course",
+          link: "https://www.digitalregenesys.com/artificial-intelligence-course",
+        },
+        {
+          title: "Artificial General Intelligence Course",
+          link: "https://www.digitalregenesys.com/artificial-general-intelligence-course",
+        },
+        {
+          title: "Artificial Intelligence Courses",
+          link: "https://www.digitalregenesys.com/artificial-intelligence-courses",
+        },
+        {
+          title: "Artificial Intelligence Online Course",
+          link: "https://www.digitalregenesys.com/artificial-intelligence-online-course",
+        },
+        {
+          title: "Course on Artificial Intelligence",
+          link: "https://www.digitalregenesys.com/course-on-artificial-intelligence",
+        },
+        {
+          title: "Courses on Artificial Intelligence",
+          link: "https://www.digitalregenesys.com/courses-on-artificial-intelligence",
+        },
+        {
+          title: "Course Artificial Intelligence",
+          link: "https://www.digitalregenesys.com/course-artificial-intelligence",
+        },
+        {
+          title: "Artificial Intelligence Course Online",
+          link: "https://www.digitalregenesys.com/artificial-intelligence-course-online",
+        },
+        {
+          title: "Best Artificial Intelligence Course",
+          link: "https://www.digitalregenesys.com/best-artificial-intelligence-course",
+        },
+        {
+          title: "Machine Learning and Artificial Intelligence Courses",
+          link: "https://www.digitalregenesys.com/machine-learning-and-artificial-intelligence-courses",
+        },
+        {
+          title: "Online Artificial Intelligence Courses",
+          link: "https://www.digitalregenesys.com/online-artificial-intelligence-courses",
+        },
+        {
+          title: "Artificial Intelligence Course Free",
+          link: "https://www.digitalregenesys.com/artificial-intelligence-course-free",
+        },
+        {
+          title: "Artificial Intelligence Course Syllabus",
+          link: "https://www.digitalregenesys.com/artificial-intelligence-course-syllabus",
+        },
+        {
+          title: "Artificial Intelligence Training Courses",
+          link: "https://www.digitalregenesys.com/artificial-intelligence-training-courses",
+        },
+        {
+          title: "Online Artificial Intelligence Course",
+          link: "https://www.digitalregenesys.com/online-artificial-intelligence-course",
+        },
+        {
+          title: "Online Course Artificial Intelligence",
+          link: "https://www.digitalregenesys.com/online-course-artificial-intelligence",
+        },
       ],
     },
   },

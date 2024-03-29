@@ -98,6 +98,12 @@
   margin-bottom: 0px;
 }
 
+.section2 p a {
+  color: #697386;
+  text-decoration: underline;
+  font-family: Montserrat-semiBold;
+}
+
 /* Responsive layout for smaller screens */
 
 .card {
@@ -210,6 +216,12 @@
     border: 1px solid #008554;
     background: #fff;
     padding: 12px;
+  }
+
+  .answerMobile a {
+    font-family: Montserrat;
+    text-decoration: underline;
+    color: #697386;
   }
   .dropdownListMobile {
     list-style: none;
