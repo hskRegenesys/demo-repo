@@ -574,7 +574,7 @@ const MultiplePagesCoursesData: MultiplePagesData = {
           "Digital Regenesys Project Management course is designed to provide students with a comprehensive understanding of the principles and practices of project management, including planning, scheduling, risk management, quality management, and communication.",
           "Digital Regenesys Project Management is a 22-week course that provides a solid foundation in project management principles to stay ahead of the competition by working on projects, simulations, and cases.",
           "Therefore, the Digital Regenesys Project Management course is an excellent investment for individuals who want to develop their skills and advance their careers in a project management role.",
-          "Click here to learn more about the Digital Regenesys Project Management course.",
+          "Click <a href='https://www.digitalregenesys.com/all-courses/project-management'>here</a> to learn more about the Digital Regenesys Project Management course.",
         ],
       },
       {
@@ -622,12 +622,12 @@ const MultiplePagesCoursesData: MultiplePagesData = {
         pheading:
           "Project management is crucial because it helps organisations to:",
         paragraphs: [
-          "Achieve their goals and objectives",
-          "Deliver projects on time, within budget, and to the desired quality",
-          "Identify and mitigate risks and issues",
-          "Improve communication and collaboration",
-          "Enhance team performance and productivity",
-          "Ensure stakeholder satisfaction and engagement.",
+          "• Achieve their goals and objectives",
+          "• Deliver projects on time, within budget, and to the desired quality",
+          "• Identify and mitigate risks and issues",
+          "• Improve communication and collaboration",
+          "• Enhance team performance and productivity",
+          "• Ensure stakeholder satisfaction and engagement.",
         ],
       },
       {
@@ -787,7 +787,7 @@ const MultiplePagesCoursesData: MultiplePagesData = {
           "Several websites offer step-by-step instructions on how to secure your computer, as well as tutorials on how to connect your data and protect yourself from cyber-attacks. You can also find resources on different types of malware and other malicious programmes and how to protect yourself.",
           "If you want a more comprehensive learning experience, the Digital Regenesys online Cyber Security course can help you acquire the skills and knowledge to identify, prevent, and respond to cyber threats.",
           "Digital Regenesys' Cyber Security course is an online course that provides a comprehensive understanding of Cyber Security principles, policies, and practices.",
-          "Click here to explore more information about the Digital Regenesys online Cyber Security course.",
+          "Click <a href='https://www.digitalregenesys.com/all-courses/cyber-security'>here</a> to explore more information about the Digital Regenesys online Cyber Security course.",
         ],
       },
       {
@@ -850,7 +850,7 @@ const MultiplePagesCoursesData: MultiplePagesData = {
           "Hence, you can learn Cyber Security online.",
           "Whether you are looking for an introductory course or a detailed hands-on project, the Digital Regenesys online Cyber Security course is ideal.",
           "Enrol in the Digital Regenesys online Cyber Security course and start a career in Cyber Security or enhance their existing skills by gaining a deep understanding of Cyber Security principles & concepts.",
-          "Click here to explore the Digital Regenesys online Cyber Security course in more detail.",
+          "Click <a href='https://www.digitalregenesys.com/all-courses/cyber-security'>here</a> to explore the Digital Regenesys online Cyber Security course in more detail.",
         ],
       },
     ],
