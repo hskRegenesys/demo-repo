@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 import Image from "next/image";
 
-const ProcessOne = ({ courseDetails, brochureName }: any) => {
+const ProcessOne = ({ courseDetails, courseCode }: any) => {
   const router = useRouter();
   const [show, setShow] = useState<boolean>(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
@@ -163,8 +163,9 @@ const ProcessOne = ({ courseDetails, brochureName }: any) => {
           thankYouShow={setThankYouShow}
           title={title}
           query={router?.query}
-          brochureName={brochureName}
+          // brochureName={brochureName}
           courseDetails={courseDetails}
+          courseCode={courseCode}
         />
       </Modal>
       <Modal show={thankYouShow}>

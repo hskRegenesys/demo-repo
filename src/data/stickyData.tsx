@@ -30,7 +30,7 @@ const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-security-fundamentals-course":
     " Upskill yourself with Digital Regenesy's Courses",
   "design-thinking": " Upskill yourself with Digital Regenesy's Courses",
-  "cyber-security-course": " Upskill yourself with Digital Regenesy's Courses",
+  // "cyber-security-course": " Upskill yourself with Digital Regenesy's Courses",
   "artificial-intelligence":
     " Upskill yourself with Digital Regenesy's Courses",
   "ai-introductory": "  Upskill yourself with Digital Regenesy's Courses",

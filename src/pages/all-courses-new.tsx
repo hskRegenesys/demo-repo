@@ -14,6 +14,9 @@ import FeaturedCourses from "@/components/NewComponents/featuredCourses/Featured
 import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
+import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
+import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
+import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -67,7 +70,12 @@ const AllCoursesNew = () => {
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <StudentReview />
-      <Faq data={AllCoursesDynamicData.faqSections} />
+      <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
+      <LearnersSupport
+        data={MultiplePagesBrandData.LearnersSupportSectionData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <Faq data={MultiplePagesBrandData.faqSections} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

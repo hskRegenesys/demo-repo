@@ -1,53 +1,53 @@
 const NewHomeData = {
   // sliderDataDesktop: [
   //   {
-  //     imageUrl: "/assets/images/HomeNew/Hero-Banner.webp",
+  //     imageUrl: "/assets/images/new-component-assets/Hero-Banner.webp",
   //     title: "Slide 1",
   //   },
-  //   { imageUrl: "/assets/images/HomeNew/Hero-Banner.webp", title: "Slide 2" },
-  //   { imageUrl: "/assets/images/HomeNew/Hero-Banner.webp", title: "Slide 3" },
+  //   { imageUrl: "/assets/images/new-component-assets/Hero-Banner.webp", title: "Slide 2" },
+  //   { imageUrl: "/assets/images/new-component-assets/Hero-Banner.webp", title: "Slide 3" },
   //   // Add more slides as needed
   // ],
   // sliderDataMobile: [
   //   {
-  //     imageUrl: "/assets/images/HomeNew/Hero Banner - Mobile.webp",
+  //     imageUrl: "/assets/images/new-component-assets/Hero Banner - Mobile.webp",
   //     title: "Slide 1",
   //   },
   //   {
-  //     imageUrl: "/assets/images/HomeNew/Hero Banner - Mobile.webp",
+  //     imageUrl: "/assets/images/new-component-assets/Hero Banner - Mobile.webp",
   //     title: "Slide 2",
   //   },
   //   {
-  //     imageUrl: "/assets/images/HomeNew/Hero Banner - Mobile.webp",
+  //     imageUrl: "/assets/images/new-component-assets/Hero Banner - Mobile.webp",
   //     title: "Slide 3",
   //   },
   // ],
   // UspSectionData: {
   //   part1: {
   //     card1text: "USA, South Africa, Nigeria, Kenya & India",
-  //     iconImage1: "/assets/images/HomeNew/Location.svg",
+  //     iconImage1: "/assets/images/new-component-assets/Location.svg",
   //   },
   //   part2: {
   //     card2text: "Students Enrolled",
   //     enrollmentCount: "10000+",
-  //     iconImage2: "/assets/images/HomeNew/Users.svg",
+  //     iconImage2: "/assets/images/new-component-assets/Users.svg",
   //     duration: "3000",
   //   },
   //   part3: {
   //     card3text: "Enhances Upskilling Courses",
-  //     iconImage3: "/assets/images/HomeNew/Learn.svg",
+  //     iconImage3: "/assets/images/new-component-assets/Learn.svg",
   //   },
   // },
   // FeaturedCoursesData: {
   //   FeaturedCoursesHeading: "Featured Courses",
   //   FeaturedCoursesSubHeading: "See what you can learn with us!",
-  //   cardTimeIcon: "/assets/images/HomeNew/clock.svg",
-  //   cardStudentsIcon: "/assets/images/HomeNew/user-tick.svg",
-  //   cardBookIcon: "/assets/images/HomeNew/book.svg",
+  //   cardTimeIcon: "/assets/images/new-component-assets/clock.svg",
+  //   cardStudentsIcon: "/assets/images/new-component-assets/user-tick.svg",
+  //   cardBookIcon: "/assets/images/new-component-assets/book.svg",
   //   cardProgramText: "Programmes",
   //   cardStudentEnrollmentText: "Students Enrolled",
   //   cardToolsText: "Covered",
-  //   cardStarIcon: "./assets/images/HomeNew/star.svg",
+  //   cardStarIcon: "./assets/images/new-component-assets/star.svg",
   //   cards: [
   //     {
   //       code: "PM",
@@ -55,7 +55,7 @@ const NewHomeData = {
   //       name: "Project Management",
   //       parentId: null,
   //       cardProgram: "Project Management",
-  //       cardImg: "/assets/images/HomeNew/CardImg.webp",
+  //       cardImg: "/assets/images/new-component-assets/CardImg.webp",
   //       cardWeek: "10 Weeks",
   //       cardCount: "32,000+",
   //       cardTool: "30 Tools",
@@ -66,7 +66,7 @@ const NewHomeData = {
   //       parentId: null,
   //       name: "Data Science",
   //       cardProgram: "Data Science",
-  //       cardImg: "/assets/images/HomeNew/CardImg.webp",
+  //       cardImg: "/assets/images/new-component-assets/CardImg.webp",
   //       cardWeek: "15 Weeks",
   //       cardCount: "45,000+",
   //       cardTool: "45 Tools",
@@ -78,7 +78,7 @@ const NewHomeData = {
   //       name: "Cyber Security",
 
   //       cardProgram: "Cyber Security",
-  //       cardImg: "/assets/images/HomeNew/CardImg.webp",
+  //       cardImg: "/assets/images/new-component-assets/CardImg.webp",
   //       cardWeek: "12 Weeks",
   //       cardCount: "33,000+",
   //       cardTool: "30 Tools",
@@ -90,7 +90,7 @@ const NewHomeData = {
   //       name: "Artificial Intelligence",
 
   //       cardProgram: "Artificial Intelligence",
-  //       cardImg: "./assets/images/HomeNew/CardImg.webp",
+  //       cardImg: "./assets/images/new-component-assets/CardImg.webp",
   //       cardWeek: "10 Weeks",
   //       cardCount: "32,000+",
   //       cardTool: "30 Tools",
@@ -102,7 +102,7 @@ const NewHomeData = {
   //       name: "Digital Marketing",
 
   //       cardProgram: "Digital Marketing",
-  //       cardImg: "./assets/images/HomeNew/CardImg.webp",
+  //       cardImg: "./assets/images/new-component-assets/CardImg.webp",
   //       cardWeek: "10 Weeks",
   //       cardCount: "32,000+",
   //       cardTool: "30 Tools",
@@ -110,26 +110,26 @@ const NewHomeData = {
   //   ],
   // },
   // AboutUsData: {
-  //   aboutUsImg: "./assets/images/HomeNew/About Us.svg",
+  //   aboutUsImg: "./assets/images/new-component-assets/About Us.svg",
   //   aboutTitle: "About Us",
   //   aboutHeading: "Our Advantage Over the Others!",
   //   aboutParagraph:
   //     "Embark on a next-generation digital skills journey with Silicon Valley's cutting-edge Ed-Tech. Introducing Digital Regenesys, the renowned EdTech platform by Regenesys Business School, an international business school with campuses in Johannesburg, Mumbai, and Lagos. Experience career-transforming, skill-enhancing, and cutting-edge online courses across various digital domains. Our online courses are meticulously designed to align with the evolving digital and technological requirements of diverse industries.",
   //   cards: [
   //     {
-  //       cardImg: "./assets/images/HomeNew/Live Call.svg",
+  //       cardImg: "./assets/images/new-component-assets/Live Call.svg",
   //       cardText: "Live Classes",
   //     },
   //     {
-  //       cardImg: "./assets/images/HomeNew/Award.svg",
+  //       cardImg: "./assets/images/new-component-assets/Award.svg",
   //       cardText: "Live Classes",
   //     },
   //     {
-  //       cardImg: "./assets/images/HomeNew/Counselling.svg",
+  //       cardImg: "./assets/images/new-component-assets/Counselling.svg",
   //       cardText: "Live Classes",
   //     },
   //     {
-  //       cardImg: "./assets/images/HomeNew/Experts.svg",
+  //       cardImg: "./assets/images/new-component-assets/Experts.svg",
   //       cardText: "Live Classes",
   //     },
   //   ],
@@ -137,49 +137,49 @@ const NewHomeData = {
   // AdmiteCompaniesData: {
   //   AdmitsHeading: "Top Regenesys’s Admits",
   //   AdmitsTitle: "Our Students Land Only The Best",
-  //   buttenIcon: "./assets/images/HomeNew/DoubleArrowWhite.svg",
+  //   buttenIcon: "./assets/images/new-component-assets/DoubleArrowWhite.svg",
   //   AdmitsCards: [
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/HCL.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/Google.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/Google.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/HCL.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/Google.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/Google.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/HCL.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/Google.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/Google.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/HCL.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/Google.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/Google.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/HCL.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/Google.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/Google.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/HCL.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/Google.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/Google.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/HCL.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/HCL.svg",
   //     },
   //     {
-  //       AdmitsImage: "./assets/images/HomeNew/Google.svg",
+  //       AdmitsImage: "./assets/images/new-component-assets/Google.svg",
   //     },
   //   ],
   // },
@@ -187,66 +187,66 @@ const NewHomeData = {
   // StudentReviewData: {
   //   StudentReviewTitle: "Student Reviews",
   //   StudentReviewHeading: "What our learners say about us.",
-  //   FullStarImg: "./assets/images/HomeNew/Full Star.svg",
-  //   HalfStarImg: "./assets/images/HomeNew/Half Star.svg",
-  //   FullGrayStarImg: "./assets/images/HomeNew/No star.svg",
+  //   FullStarImg: "./assets/images/new-component-assets/Full Star.svg",
+  //   HalfStarImg: "./assets/images/new-component-assets/Half Star.svg",
+  //   FullGrayStarImg: "./assets/images/new-component-assets/No star.svg",
   //   StudentReviewCard: [
   //     {
-  //       StudentReviewCardImg: "./assets/images/HomeNew/Profile1.png",
+  //       StudentReviewCardImg: "./assets/images/new-component-assets/Profile1.png",
   //       StudentReviewName: "Greg Stuart",
   //       StudentReviewRole: "Project Manager",
   //       StudentReviewStar: 5,
   //       StudentReviewContent:
   //         "Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.",
-  //       StudentReviewSideTag: "./assets/images/HomeNew/Hike Tag.svg",
+  //       StudentReviewSideTag: "./assets/images/new-component-assets/Hike Tag.svg",
   //     },
   //     {
-  //       StudentReviewCardImg: "./assets/images/HomeNew/Profile2.png",
+  //       StudentReviewCardImg: "./assets/images/new-component-assets/Profile2.png",
   //       StudentReviewName: "Greg Stuart",
   //       StudentReviewRole: "Project Manager",
   //       StudentReviewStar: 4,
   //       StudentReviewContent:
   //         "Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.",
-  //       StudentReviewSideTag: "./assets/images/HomeNew/Hike Tag.svg",
+  //       StudentReviewSideTag: "./assets/images/new-component-assets/Hike Tag.svg",
   //     },
   //     {
-  //       StudentReviewCardImg: "./assets/images/HomeNew/Profile3.png",
+  //       StudentReviewCardImg: "./assets/images/new-component-assets/Profile3.png",
   //       StudentReviewName: "Greg Stuart",
   //       StudentReviewRole: "Project Manager",
   //       StudentReviewStar: 3.5,
   //       StudentReviewContent:
   //         "Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.",
-  //       StudentReviewSideTag: "./assets/images/HomeNew/Hike Tag.svg",
+  //       StudentReviewSideTag: "./assets/images/new-component-assets/Hike Tag.svg",
   //     },
   //     {
-  //       StudentReviewCardImg: "./assets/images/HomeNew/Profile3.png",
+  //       StudentReviewCardImg: "./assets/images/new-component-assets/Profile3.png",
   //       StudentReviewName: "Greg Stuart",
   //       StudentReviewRole: "Project Manager",
   //       StudentReviewStar: 3.5,
   //       StudentReviewContent:
   //         "Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.",
-  //       StudentReviewSideTag: "./assets/images/HomeNew/Hike Tag.svg",
+  //       StudentReviewSideTag: "./assets/images/new-component-assets/Hike Tag.svg",
   //     },
   //     {
-  //       StudentReviewCardImg: "./assets/images/HomeNew/Profile3.png",
+  //       StudentReviewCardImg: "./assets/images/new-component-assets/Profile3.png",
   //       StudentReviewName: "Greg Stuart",
   //       StudentReviewRole: "Project Manager",
   //       StudentReviewStar: 3.5,
   //       StudentReviewContent:
   //         "Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.",
-  //       StudentReviewSideTag: "./assets/images/HomeNew/Hike Tag.svg",
+  //       StudentReviewSideTag: "./assets/images/new-component-assets/Hike Tag.svg",
   //     },
   //   ],
   // },
   // LearnersBenefit: {
   //   LearnersBenefitHeding: "Learners Benefit",
   //   LearnersBenefitTitle: "See what our learners can get",
-  //   LearnersBenefitFrame1: "./assets/images/HomeNew/Frame 1.svg",
-  //   LearnersBenefitFrame2: "./assets/images/HomeNew/Frame2.svg",
-  //   LearnersBenefitTickIcon: "./assets/images/HomeNew/VectorTick.svg",
+  //   LearnersBenefitFrame1: "./assets/images/new-component-assets/Frame 1.svg",
+  //   LearnersBenefitFrame2: "./assets/images/new-component-assets/Frame2.svg",
+  //   LearnersBenefitTickIcon: "./assets/images/new-component-assets/VectorTick.svg",
   //   card: [
   //     {
-  //       LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img1.svg",
+  //       LearnersBenefitCardImg: "./assets/images/new-component-assets/Lb-card-img1.svg",
   //       LearnersBenefitCardTitle: "World Class Learning",
   //       LearnersBenefittext: [
   //         "Learn from the World's Best Faculty & Industry Experts",
@@ -255,7 +255,7 @@ const NewHomeData = {
   //       ],
   //     },
   //     {
-  //       LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img2.svg",
+  //       LearnersBenefitCardImg: "./assets/images/new-component-assets/Lb-card-img2.svg",
   //       LearnersBenefitCardTitle: "Personalized Guidance with 24*7 Support",
   //       LearnersBenefittext: [
   //         "Dedicated Learning Managers",
@@ -264,7 +264,7 @@ const NewHomeData = {
   //       ],
   //     },
   //     {
-  //       LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img3.svg",
+  //       LearnersBenefitCardImg: "./assets/images/new-component-assets/Lb-card-img3.svg",
   //       LearnersBenefitCardTitle: "World Class Learning",
   //       LearnersBenefittext: [
   //         "Learn from the World's Best Faculty & Industry Experts",
@@ -278,9 +278,9 @@ const NewHomeData = {
   //   connectContainerHeader: "Connect with Our Expert Team",
   //   connectContainerTittle:
   //     "Connect with us now for a Support experience like no other!",
-  //   icon1: "./assets/images/HomeNew/checkVectorWhiteIcon.svg",
-  //   icon2: "./assets/images/HomeNew/WhiteFilledStarIcon.svg",
-  //   icon3: "./assets/images/HomeNew/DiscountIcon.svg",
+  //   icon1: "./assets/images/new-component-assets/checkVectorWhiteIcon.svg",
+  //   icon2: "./assets/images/new-component-assets/WhiteFilledStarIcon.svg",
+  //   icon3: "./assets/images/new-component-assets/DiscountIcon.svg",
   //   connectContainerText: [
   //     "Fill your information once",
   //     "Discuss your profile with us!",
@@ -300,19 +300,19 @@ const NewHomeData = {
   //   BlogSectionTitle: "For Your Research & Information",
   //   cards: [
   //     {
-  //       blogImg: "./assets/images/HomeNew/blog.png",
+  //       blogImg: "./assets/images/new-component-assets/blog.png",
   //       blogQuestion: "Understanding IELTS",
   //       blogText:
   //         "The International English Language Testing System, or IELTS, is an exam designed for students who wish to study abroad...",
   //     },
   //     {
-  //       blogImg: "./assets/images/HomeNew/blog.png",
+  //       blogImg: "./assets/images/new-component-assets/blog.png",
   //       blogQuestion: "Research Strategies for Students",
   //       blogText:
   //         "Effective research is crucial for academic success. Learn valuable strategies and tips to enhance your research skills as a student...",
   //     },
   //     {
-  //       blogImg: "./assets/images/HomeNew/blog.png",
+  //       blogImg: "./assets/images/new-component-assets/blog.png",
   //       blogQuestion: "Exploring Scientific Discoveries",
   //       blogText:
   //         "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
@@ -320,7 +320,7 @@ const NewHomeData = {
   //   ],
   // },
   // faqData: {
-  //   arrowIcon: "./assets/images/HomeNew/arrow_drop_down.svg",
+  //   arrowIcon: "./assets/images/new-component-assets/arrow_drop_down.svg",
   //   HeadingDesktop: "Frequently Asked Questions",
   //   HeadingMobile: "FAQ",
 
@@ -436,12 +436,13 @@ const NewHomeData = {
   //   ],
   // },
   OurCoursesData: {
-    DropdownarrowIcon: "./assets/images/HomeNew/arrow_drop_down.svg",
+    DropdownarrowIcon:
+      "./assets/images/new-component-assets/arrow_drop_down.svg",
     OurCoursesTitle: "All Courses",
     OurCoursesHeading: "Explore Our Courses",
-    cardTimeIcon: "/assets/images/HomeNew/clock-green.svg",
-    cardStudentsIcon: "/assets/images/HomeNew/user-tick.svg",
-    cardBookIcon: "/assets/images/HomeNew/book.svg",
+    cardTimeIcon: "/assets/images/new-component-assets/clock-green.svg",
+    cardStudentsIcon: "/assets/images/new-component-assets/user-tick.svg",
+    cardBookIcon: "/assets/images/new-component-assets/book.svg",
     cardStudentEnrollmentText: "Students Enrolled",
     cardToolsText: "Covered",
 
@@ -454,7 +455,7 @@ const NewHomeData = {
           description: "Basic Data Science",
           parentId: 1,
           cardProgram: "Basic Data Science",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
         },
@@ -465,7 +466,7 @@ const NewHomeData = {
           description: "Advanced Data Science",
           parentId: 1,
           cardProgram: "Advanced Data Science",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "45,000+",
           cardTool: "45 Tools",
         },
@@ -476,7 +477,7 @@ const NewHomeData = {
           description: "Applied Data Science",
           parentId: 1,
           cardProgram: "Application Data Science",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "33,000+",
           cardTool: "30 Tools",
         },
@@ -489,7 +490,7 @@ const NewHomeData = {
           description: "Project Management",
           parentId: null,
           cardProgram: "Project Management",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
           cardWeek: "12 Weeks",
@@ -503,7 +504,7 @@ const NewHomeData = {
           description: "Digital Marketing Fundamentals",
           parentId: 3,
           cardProgram: "Digital Marketing Fundamental",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
         },
@@ -514,7 +515,7 @@ const NewHomeData = {
           description: "Advance Digital Marketing Course",
           parentId: 3,
           cardProgram: "Advanced Digital Marketing Course",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "45,000+",
           cardTool: "45 Tools",
         },
@@ -527,7 +528,7 @@ const NewHomeData = {
           description: "Cybersecurity",
           parentId: null,
           cardProgram: "Cyber Security",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
         },
@@ -540,7 +541,7 @@ const NewHomeData = {
           description: "AI Introductory",
           parentId: 5,
           cardProgram: "Artificial Intelligence Introduction",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "32,000+",
           cardTool: "30 Tools",
         },
@@ -551,7 +552,7 @@ const NewHomeData = {
           description: "AI Intermediary",
           parentId: 5,
           cardProgram: "Artificial Intelligence Intermediate",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "45,000+",
           cardTool: "45 Tools",
         },
@@ -562,7 +563,7 @@ const NewHomeData = {
           description: "AI Advanced Applied",
           parentId: 5,
           cardProgram: "Artificial Intelligence Advance",
-          cardImg: "/assets/images/HomeNew/CardImg.webp",
+          cardImg: "/assets/images/new-component-assets/CardImg.webp",
           cardCount: "33,000+",
           cardTool: "30 Tools",
         },
@@ -575,19 +576,19 @@ const NewHomeData = {
   //   whyChooseDRButtonText: "Enroll Now",
   //   whyChooseDRCard: [
   //     {
-  //       cardImg: "./assets/images/HomeNew/Live Call.svg",
+  //       cardImg: "./assets/images/new-component-assets/Live Call.svg",
   //       cardText: "Live Classes",
   //     },
   //     {
-  //       cardImg: "./assets/images/HomeNew/Award.svg",
+  //       cardImg: "./assets/images/new-component-assets/Award.svg",
   //       cardText: "Live Classes",
   //     },
   //     {
-  //       cardImg: "./assets/images/HomeNew/Counselling.svg",
+  //       cardImg: "./assets/images/new-component-assets/Counselling.svg",
   //       cardText: "Live Classes",
   //     },
   //     {
-  //       cardImg: "./assets/images/HomeNew/Experts.svg",
+  //       cardImg: "./assets/images/new-component-assets/Experts.svg",
   //       cardText: "Live Classes",
   //     },
   //   ],
@@ -598,7 +599,7 @@ const NewHomeData = {
   //     CertificationDRTitle: "About Digital Regenesys Certificate",
   //     CertificationDRparagarap:
   //       "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and becoming the source for the next generation of digital technologies, products, and services by promoting, enhancing core competencies, and capacity building.",
-  //     CertificationDRTickImg: "./assets/images/HomeNew/Check.svg",
+  //     CertificationDRTickImg: "./assets/images/new-component-assets/Check.svg",
   //     CertificationDRButtenText: "Start Learning",
   //     CertificationDRlistheding: "Key Achievements",
   //     CertificationDRlistText: [
@@ -609,13 +610,13 @@ const NewHomeData = {
   //       "Get teaching certification",
   //       "Get teaching certification",
   //     ],
-  //     CertificationDRImage: "./assets/images/HomeNew/certificate.png",
+  //     CertificationDRImage: "./assets/images/new-component-assets/certificate.png",
   //     CertificationDRImageText:
   //       "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
   //   },
   // allCoursesPageBannerData: {
-  //   DesktopBannerImg: "./assets/images/HomeNew/All-Courses-Banner-Web.png",
-  //   MobileBannerImg: "./assets/images/HomeNew/All-Courses-Banner-Mobile.png",
+  //   DesktopBannerImg: "./assets/images/new-component-assets/All-Courses-Banner-Web.png",
+  //   MobileBannerImg: "./assets/images/new-component-assets/All-Courses-Banner-Mobile.png",
   //   HeadingText: "Your Path to a Successful Bright Career!",
   //   ParagraphText:
   //     "Regenesys online programming courses offer you training on a variety of courses, such as Data Science, Artificial Intelligence, and more. The courses are for all skill levels, and you can choose to learn any or all courses as per your wish. In these courses, you will have free access to the entire course material, which you can refer to at any time. So, without wasting time, enrol in one of these courses today and give a kick-start to your successful career.",

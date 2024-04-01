@@ -73,7 +73,7 @@ const StudentReview = () => {
                 <div className={Styles.studentReviewCard}>
                   <img
                     className={Styles.studentReviewSideTag}
-                    src="\assets\images\HomeNew\Logo-DR-side.png"
+                    src="\assets\images\new-component-assets\Logo-DR-side.png"
                     alt="Side Tag"
                   />
                   <img

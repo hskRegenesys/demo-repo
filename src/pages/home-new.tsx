@@ -20,6 +20,11 @@ import OurLocation from "@/components/NewComponents/OurLocation/OurLocation";
 import HomeDynamicData from "@/data/newComponentData/dynamicComponentData/HomeDynamicData";
 import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
+import ToolCoveredCard from "@/components/NewComponents/ToolsCovered/ToolsCovered";
+import TalentedComponent from "@/components/NewComponents/talentedComponent/TalentedComponent";
+import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
+import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
+import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -54,6 +59,7 @@ const HomeNew = () => {
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
+
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
@@ -61,25 +67,27 @@ const HomeNew = () => {
             "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
         }}
       />
-      <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
-      <OurLocation />
-      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
-      <StudentReview />
-      {/* <OurCourses
-        data={NewOurCoursesData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      /> */}
       <AllCoursesSlider
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
       />
+      <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+      <ToolCoveredCard data={ToolsCoveredData} />
+      <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
+      <OurLocation />
+      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+      <StudentReview />
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-      {/* <BlogSection data={HomeDynamicData.BlogSectionDataHome} /> */}
-      <Faq data={HomeDynamicData.faqSections} />
+      <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
+      <LearnersSupport
+        data={MultiplePagesBrandData.LearnersSupportSectionData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      <Faq data={MultiplePagesBrandData.faqSections} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

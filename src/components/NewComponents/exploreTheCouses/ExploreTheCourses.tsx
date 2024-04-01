@@ -19,11 +19,11 @@ interface Props {
         contentText: string;
         contentCard: { icon: string; text: string }[];
       };
-      content2: {
+      content2?: {
         contentHeading: string;
         cardTools: { img: string; alt: string }[];
       };
-      content3: {
+      content3?: {
         contentHeading: string;
         tutors: string;
         facultyCard: {
@@ -61,7 +61,6 @@ interface Props {
           contaryName: string;
           price: string;
           duration: string;
-          Enrollment: string;
           contaryFlag: string;
         }[];
       };
@@ -197,21 +196,27 @@ const ExploreTheCourses: React.FC<Props> = ({
             </div>
           )}
           {/* Render Content 2 */}
-          <div
-            className={styles.contentspace}
-            ref={contentRefs[2]}
-            data-content-id={sideHeadings[2].contentId}
-          >
-            <Content2 {...content2} />
-          </div>
+          {content2 && (
+            <div
+              className={styles.contentspace}
+              ref={contentRefs[2]}
+              data-content-id={sideHeadings[2].contentId}
+            >
+              <Content2 {...content2} />
+            </div>
+          )}
+
           {/* Render Content 3 */}
-          <div
-            className={styles.contentspace}
-            ref={contentRefs[3]}
-            data-content-id={sideHeadings[3].contentId}
-          >
-            <Content3 {...content3} />
-          </div>
+          {content3 && (
+            <div
+              className={styles.contentspace}
+              ref={contentRefs[3]}
+              data-content-id={sideHeadings[3].contentId}
+            >
+              <Content3 {...content3} />
+            </div>
+          )}
+
           {/* Render Content 4 */}
 
           {content4 && (
