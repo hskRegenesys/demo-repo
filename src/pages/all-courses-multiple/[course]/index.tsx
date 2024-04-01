@@ -60,13 +60,13 @@ const Course = (props: any) => {
     setIsPopupVisible(false);
   };
 
-  useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 4000);
+  // useEffect(() => {
+  //   const timeoutModal = setTimeout(() => {
+  //     setIsPopupVisible(true);
+  //   }, 4000);
 
-    return () => clearTimeout(timeoutModal);
-  }, []);
+  //   return () => clearTimeout(timeoutModal);
+  // }, []);
 
   const YoutubePopupButtonClick = (videoLink: string) => {
     setIsisYoutubePopup(true);
@@ -117,14 +117,14 @@ const Course = (props: any) => {
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
       <ToastContainer />
-
+      {/* 
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
           popupData={PopupData.all}
         />
-      )}
+      )} */}
       {isYoutubePopup && (
         <YoutubeVidioPopup
           isVisibleVidio={isYoutubePopup}
@@ -152,11 +152,13 @@ const Course = (props: any) => {
       />
       <CourseBenefitsCard
         data={CourseBenefitsCardData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
+        CourseCode={CourseCode}
+        popupData={PopupData.all}
       />
       <ExploreTheCourses
         data={ExploreTheCoursesData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
+        CourseCode={CourseCode}
+        popupData={PopupData.all}
       />
       <CareersTransformed
         handleEnrollButtonVidio={(videoLink) =>

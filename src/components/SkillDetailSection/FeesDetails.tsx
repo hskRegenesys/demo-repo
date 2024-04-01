@@ -21,7 +21,7 @@ import {
 import { allCourseList } from "@/data/courseData";
 import _ from "lodash";
 
-const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
+const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
   const {
     flagsa,
     flagnig,
@@ -362,7 +362,11 @@ const ProductDetailsPage = ({ courseDetails, courseId }: any) => {
         </Row>
       </div>
       <Modal show={show}>
-        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+        <ModalPopup
+          setShows={setShow}
+          courseCode={courseCode}
+          thankYouShow={setThankYouShow}
+        />
       </Modal>
       <Modal show={thankYouShow}>
         <ThankYouPopup setShows={setThankYouShow} />

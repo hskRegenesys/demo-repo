@@ -142,15 +142,19 @@ const DigitalMarketing = (props: any) => {
             <CourseCurriculumTwo courseDetails={courseDetails} />
           )}
           {courseDetails?.productDetails && (
-            <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+            <FeesDetails
+              courseDetails={courseDetails}
+              courseCode={code}
+              courseId={courseId}
+            />
           )}
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
-          <CallToSection />
+          <CallToSection courseCode={code} />
         </>
       )}
       <MainFooter />
-      <StickyBar />
+      <StickyBar courseCode={code} />
     </Layout>
   );
 };
