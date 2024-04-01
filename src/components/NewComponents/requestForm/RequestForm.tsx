@@ -92,7 +92,7 @@ function RequestForm(props: any) {
       const response = await courseService.downloadBrochure(brochureName?.name);
       setSubmitted(true);
       toast.success(`Check the ${selectedCourse.name} Course Brochure!`, {
-        position: toast.POSITION.TOP_RIGHT,
+        position: "top-right",
         autoClose: 3000,
         className: Styles.tost,
       });
@@ -109,7 +109,7 @@ function RequestForm(props: any) {
       toast.success(
         `Thank you for applying ${selectedCourse.name}course! We will get back to you.`,
         {
-          position: toast.POSITION.TOP_RIGHT,
+          position: "top-right",
           autoClose: 3000,
           className: Styles.tost,
         }
