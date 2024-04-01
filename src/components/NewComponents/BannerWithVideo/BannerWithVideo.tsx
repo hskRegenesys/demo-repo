@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
-import { Modal } from "react-bootstrap";
-import ModalPopup from "@/components/Modal/ModalPopup";
-import { useRouter } from "next/router";
-
-interface Point {
-  data: BannerCourseData; // This is missing in the original code
-  text: string;
-}
+import PopupForm from "../popupForm/PopupForm";
 
 interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;
-  handleEnrollButtonClick: () => void;
   data: BannerCourseData;
   pageName: any;
+  popupData: any;
+  CourseCode: string;
 }
 
 type BannerCourseData = {
@@ -46,9 +40,10 @@ type BannerCourseData = {
 
 const BannerWithVideo: React.FC<BannerComponentProps> = ({
   handleEnrollButtonVidio,
-  handleEnrollButtonClick,
   data,
   pageName,
+  popupData,
+  CourseCode,
 }) => {
   const {
     coursePageName,
@@ -60,11 +55,17 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
     UspSectionData: { uspLocationCard, uspEnrollmentCard, uspUpskillCard },
   } = data;
 
-  const router = useRouter();
   const [count, setCount] = useState("0");
-  const [show, setShow] = useState<boolean>(false);
-  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [title, setTitle] = useState("");
+
+  const handleEnrollButtonClick = () => {
+    setIsPopupVisible(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupVisible(false);
+  };
 
   useEffect(() => {
     let start = 0;
@@ -72,7 +73,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
     if (start === end) return;
 
-    // Fix the duration to 2000 milliseconds (2 seconds)
     let incrementTime = 2000 / end;
 
     let timer = setInterval(() => {
@@ -129,7 +129,10 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
             <div className={styles.buttonsContainer}>
               <a
                 className={styles.brochureBtn}
-                onClick={handleEnrollButtonClick}
+                onClick={() => {
+                  handleEnrollButtonClick();
+                  setTitle("Download Brochure");
+                }}
               >
                 <img
                   className={styles.brochureIcon}
@@ -140,7 +143,10 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               </a>
               <a
                 className={styles.enrollButton}
-                onClick={handleEnrollButtonClick}
+                onClick={() => {
+                  handleEnrollButtonClick();
+                  setTitle(" Enrol Now!");
+                }}
               >
                 Enrol Now!
               </a>
@@ -179,6 +185,13 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
           </div>
         </div>
       </div>
+      <PopupForm
+        isVisible={isPopupVisible}
+        onClose={handlePopupClose}
+        popupData={popupData}
+        title={title}
+        CourseCode={CourseCode}
+      />
     </div>
   );
 };

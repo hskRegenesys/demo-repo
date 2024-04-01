@@ -101,6 +101,7 @@ const Course = (props: any) => {
     return result;
   };
   const {
+    CourseCode,
     BannerWithVideoData,
     CourseBenefitsCardData,
     ExploreTheCoursesData,
@@ -145,8 +146,9 @@ const Course = (props: any) => {
         handleEnrollButtonVidio={(videoLink: string) =>
           YoutubePopupButtonClick(videoLink)
         }
-        handleEnrollButtonClick={handleEnrollButtonClick}
+        CourseCode={CourseCode}
         pageName={pageName}
+        popupData={PopupData.all}
       />
       <CourseBenefitsCard
         data={CourseBenefitsCardData}
