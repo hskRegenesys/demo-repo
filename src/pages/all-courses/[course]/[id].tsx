@@ -77,7 +77,7 @@ const DigitalMarketing = (props: any) => {
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
 
-  const brochureName: any = brochureDetails[code];
+  // const brochureName: any = brochureDetails[code];
 
   const filterData = _.find(
     parentCourse,
@@ -121,7 +121,8 @@ const DigitalMarketing = (props: any) => {
         <>
           <CourseDetails
             courseDetails={courseDetails}
-            brochureName={brochureName}
+            // brochureName={brochureName}
+            courseCode={code}
           />
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
