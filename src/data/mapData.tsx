@@ -15,7 +15,7 @@ const GoogleMapData = {
       campusImage: "/assets/images/background/campusImageKE.webp",
       corporateOfficeName: "Kenya Corporate Office",
       address:
-        "Delta Corner Tower, Chiromo Road, 07th Floor, Westlands, Nairobi, 00800",
+        "1203, 12th Floor,GTC Office Tower Intersection of Waiyaki Way, Chiromo Ln, Nairobi, Kenya",
     },
     INMapDetails: {
       countryName: "India",
