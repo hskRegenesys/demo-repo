@@ -232,8 +232,8 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        const salesForceUrl = '${vineCrmTawk}';
-        const salesForceData = {
+        const vineCrmUrl = '${vineCrmTawk}';
+        const vineCrmData = {
           recordTypeId:"0127Q000000NDbcQAG",
           interestedTopic:"",
           highestQualification:"",
@@ -245,6 +245,8 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
+
+          
         };   
         data.forEach(item => {
           const labelMapping = {
@@ -254,14 +256,15 @@ const MyApp = ({ Component, pageProps }: any) => {
               "Course you are looking for": "Interested_Topic"
           };
           const propertyName = labelMapping[item.label] || item.label; 
-          salesForceData[propertyName] = item.answer;
+          vineCrmData[propertyName] = item.answer;
       });
-      fetch(salesForceUrl, {
+      console.log("vineCrmData",vineCrmData)
+      fetch(vineCrmUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(salesForceData),
+        body: JSON.stringify(vineCrmData),
     })
     .then(response => {
         if (!response.ok) {
