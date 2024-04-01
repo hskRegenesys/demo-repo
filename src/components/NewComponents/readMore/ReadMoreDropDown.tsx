@@ -32,15 +32,10 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
               <span>
                 <img
                   onClick={toggleReadMore}
-                  src="./assets/images/HomeNew/DoubleArrowWhite.svg"
+                  src="./assets/images/new-component-assets/DoubleArrowWhite.svg"
                   alt="Arrow"
                 />
               </span>
-            </button>
-          )}
-          {isOpen && (
-            <button onClick={closeDropdown} className={styles.closeButton}>
-              Close
             </button>
           )}
         </div>
@@ -52,12 +47,24 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
                   <h2>{item.pheading}</h2>
                   {item.paragraphs &&
                     item.paragraphs.map((paragraph, pIndex) => (
-                      <p key={pIndex}>{` ${paragraph}`}</p>
+                      <p
+                        key={pIndex}
+                        dangerouslySetInnerHTML={{
+                          __html: paragraph,
+                        }}
+                      ></p>
                     ))}
                 </div>
               ))}
           </div>
         )}
+        <div className={styles.closeButtonContainer}>
+          {isOpen && (
+            <button onClick={closeDropdown} className={styles.closeButton}>
+              Close
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

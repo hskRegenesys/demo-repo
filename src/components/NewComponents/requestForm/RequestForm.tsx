@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
 import { allCourseList } from "@/data/courseData";
 import Styles from "./requestForm.module.css";
+import { brochureDetails } from "@/data/course";
 
 function RequestForm(props: any) {
   const router = useRouter();
@@ -79,29 +80,53 @@ function RequestForm(props: any) {
       data.date = date;
     }
 
+    // Get the selected course's code
+    const selectedCourse = courses.find(
+      (course: any) => course.name === data.Programme_Of_Interest
+    );
+    const brochureName: any = brochureDetails[selectedCourse.code];
+
     const result = await leadService.saveLead(data);
 
     if (result?.data && props?.title === "Download Brochure") {
-      const response = await courseService.downloadBrochure(
-        props?.brochureName?.name
-      );
-      props.setShows(false);
-      downloadFromBlob(response?.data, props?.brochureName?.name) === false;
-    }
-
-    if (props?.title !== "Download Brochure") {
+      const response = await courseService.downloadBrochure(brochureName?.name);
       setSubmitted(true);
-      toast.success("Thank you for applying! We will get back to you.", {
-        position: "top-right",
+      toast.success(`Check the ${selectedCourse.name} Course Brochure!`, {
+        position: toast.POSITION.TOP_RIGHT,
         autoClose: 3000,
         className: Styles.tost,
       });
       props.onFormSubmit();
       reset();
+      downloadFromBlob(response?.data, brochureName?.name) == false;
+    }
+    if (props?.title !== "Download Brochure") {
+      props.isWhatsapp
+        ? router.push(
+            "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
+          )
+        : setSubmitted(true);
+      toast.success(
+        `Thank you for applying ${selectedCourse.name}course! We will get back to you.`,
+        {
+          position: toast.POSITION.TOP_RIGHT,
+          autoClose: 3000,
+          className: Styles.tost,
+        }
+      );
+      props.onFormSubmit();
+      reset();
     }
   };
+
   let courses: any = [];
 
+  // if (allCourseList.length) {
+  //   courses = _.filter(
+  //     allCourseList,
+  //     (item: any) => item?.isAddon === false && item?.mode_id === 1
+  //   );
+  // }
   // if (allCourseList.length) {
   //   courses = _.filter(
   //     allCourseList,
@@ -123,42 +148,25 @@ function RequestForm(props: any) {
           : item?.id !== 229)
     );
   }
+
   useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
-      setValue("Programme_Of_Interest", filterData?.name);
+      // !!filterData?.parentCourse
+      //   ? setValue("Programme_Of_Interest", filterData?.parentCourse?.name)
+      //   : setValue("Programme_Of_Interest", filterData?.name);
     }
   }, [id]);
-
-  let regexValidation = /^(\+?\d{1,3}-?)\d{10}$/;
-  let minMaxValue = 13;
-  if (
-    geoLocationData?.country_code === "NG" ||
-    phoneNumber?.startsWith("+234")
-  ) {
-    minMaxValue = 14;
-    regexValidation = /^(\+?\d{1,3}-?)\d{10}$/;
-  } else if (
-    geoLocationData?.country_code === "KE" ||
-    phoneNumber?.startsWith("+254")
-  ) {
-    minMaxValue = 13;
-    regexValidation = /^(\+?\d{1,3}-?)\d{9}$/;
-  } else if (
-    geoLocationData?.country_code === "ZA" ||
-    phoneNumber?.startsWith("+27")
-  ) {
-    minMaxValue = 12;
-    regexValidation = /^(\+?\d{1,3}-?)\d{9}$/;
-  }
-
   return (
     <div className={Styles.RequestFormStyle}>
       <ToastContainer />
 
       <form className={Styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
         <div className={Styles.FormCard}>
-          <strong className={Styles.Title}>Request a Call</strong>
+          <strong className={Styles.Title}>
+            {" "}
+            {props.title ? props.title : "Request a call"}
+          </strong>
           <div className={Styles.formContentInput}>
             <div className={Styles.formContent}>
               <div className={Styles.inputLabelContainer}>
@@ -215,16 +223,12 @@ function RequestForm(props: any) {
                   type="hidden"
                   {...register("Phone", {
                     maxLength: {
-                      value: minMaxValue,
-                      message: "Can not Exceed 10 digits",
+                      value: 16,
+                      message: "Cannot Exceed 10 digits",
                     },
                     minLength: {
-                      value: minMaxValue,
+                      value: 12,
                       message: "Valid phone number Required",
-                    },
-                    pattern: {
-                      value: regexValidation,
-                      message: "Invalid phone number format",
                     },
                     required: "Phone is Required",
                   })}
@@ -271,7 +275,11 @@ function RequestForm(props: any) {
                   </option>
 
                   {courses.map((val: any) => (
-                    <option key={val.id} value={val.name}>
+                    <option
+                      key={val.id}
+                      value={val.name}
+                      selected={val.code === props.CourseCode}
+                    >
                       {val.name}
                     </option>
                   ))}

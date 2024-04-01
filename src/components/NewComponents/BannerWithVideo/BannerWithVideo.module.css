@@ -254,15 +254,16 @@
 
 @media screen and (max-width: 768px) {
   .bannerContainer {
-    flex-direction: column-reverse; /* Stack items vertically for smaller screens and reverse their order */
+    flex-direction: column-reverse;
     padding: 0px 20px;
   }
 
   .imageSection {
     width: 100%;
-    border-radius: 0; /* Adjust border-radius as needed */
-    position: relative; /* Reset position */
-    z-index: 1; /* Set a higher z-index to place it behind the content section */
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    right: 0px;
   }
 
   .imageCard {

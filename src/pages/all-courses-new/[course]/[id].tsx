@@ -179,7 +179,7 @@ const DigitalMarketing = (props: any) => {
   const pageName = router?.query?.course
     ?.toString()
     .replace(/-/g, " ")
-    .replace(/\b\w/g, (match) => match.toUpperCase());
+    .replace(/\b\w/g, (match: string) => match.toUpperCase());
 
   const YoutubePopupButtonClick = (videoLink: string) => {
     setIsisYoutubePopup(true);
@@ -215,6 +215,7 @@ const DigitalMarketing = (props: any) => {
     return result;
   };
   const {
+    CourseCode,
     BannerWithVideoData,
     CourseBenefitsCardData,
     ExploreTheCoursesData,
@@ -257,8 +258,9 @@ const DigitalMarketing = (props: any) => {
         handleEnrollButtonVidio={(videoLink: string) =>
           YoutubePopupButtonClick(videoLink)
         }
-        handleEnrollButtonClick={handleEnrollButtonClick}
         pageName={pageName}
+        CourseCode={CourseCode}
+        popupData={PopupData.all}
       />
       <CourseBenefitsCard
         data={CourseBenefitsCardData}

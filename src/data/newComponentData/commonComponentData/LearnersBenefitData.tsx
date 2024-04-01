@@ -1,12 +1,14 @@
 const LearnersBenefitData = {
   LearnersBenefitHeding: "Learners' Benefits",
   LearnersBenefitTitle: "See What Our Learners Can Get",
-  LearnersBenefitFrame1: "./assets/images/HomeNew/Frame 1.svg",
-  LearnersBenefitFrame2: "./assets/images/HomeNew/Frame2.svg",
-  LearnersBenefitTickIcon: "./assets/images/HomeNew/VectorTick.svg",
+  LearnersBenefitFrame1: "./assets/images/new-component-assets/Frame 1.svg",
+  LearnersBenefitFrame2: "./assets/images/new-component-assets/Frame2.svg",
+  LearnersBenefitTickIcon:
+    "./assets/images/new-component-assets/VectorTick.svg",
   card: [
     {
-      LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img3.svg",
+      LearnersBenefitCardImg:
+        "./assets/images/new-component-assets/Lb-card-img3.svg",
       LearnersBenefitCardTitle: "World Class Learning",
       LearnersBenefittext: [
         "Learn from the World's Best Faculty & Industry Experts",
@@ -15,7 +17,8 @@ const LearnersBenefitData = {
       ],
     },
     {
-      LearnersBenefitCardImg: "./assets/images/HomeNew/Lb-card-img1.svg",
+      LearnersBenefitCardImg:
+        "./assets/images/new-component-assets/Lb-card-img1.svg",
       LearnersBenefitCardTitle: "Personalized Guidance with 24*7 Support",
       LearnersBenefittext: [
         "Dedicated Learning Managers",
