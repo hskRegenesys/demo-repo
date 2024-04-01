@@ -693,12 +693,16 @@ const Sidemapdata: Sidemapdata = {
           link: "https://www.digitalregenesys.com/cyber-security-courses",
         },
         {
-          title: "Online Cyber Security Courses",
+          title: "Cyber Security Courses Online",
           link: "https://www.digitalregenesys.com/cyber-security-courses-online",
         },
         {
-          title: "Online Cyber Security Course",
+          title: "Cyber Security Course Online",
           link: "https://www.digitalregenesys.com/cyber-security-course-online",
+        },
+        {
+          title: "Online Cyber Security Course",
+          link: "https://www.digitalregenesys.com/online-cyber-security-course",
         },
         {
           title: "Online Cyber Security Courses",

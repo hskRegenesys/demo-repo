@@ -1425,8 +1425,7 @@ const MainCoursesDynimicData = {
         " Machine Learning Fundamentals.",
         "Introduction to Artificial Intelligence.",
       ],
-      image:
-        "/assets/images/certificate/certificate/DSN_certificates.webpAI-certificate.webp",
+      image: "/assets/images/certificate/AIN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
