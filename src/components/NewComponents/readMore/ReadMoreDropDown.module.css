@@ -72,6 +72,13 @@
   color: #0000009c;
   font-family: Montserrat;
 }
+.paragraph p a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0000009c;
+  text-decoration: underline;
+  font-family: Montserrat-semiBold;
+}
 .closeButtonContainer {
   display: flex;
   justify-content: end;

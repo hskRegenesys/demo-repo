@@ -75,9 +75,11 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                       />
                     </div>
                     {selectedQuestion === index && (
-                      <p>
-                        <TextSplit text={faq.answer} />
-                      </p>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: faq.answer.replace(/\n/g, "<br> "),
+                        }}
+                      ></p>
                     )}
                   </li>
                 ))}
@@ -171,9 +173,12 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                           />
                         </div>
                         {selectedQuestion === index && (
-                          <p className={Styles.answerMobile}>
-                            <TextSplit text={faq.answer} />
-                          </p>
+                          <p
+                            className={Styles.answerMobile}
+                            dangerouslySetInnerHTML={{
+                              __html: faq.answer.replace(/\n/g, "<br><br>"),
+                            }}
+                          ></p>
                         )}
                       </li>
                     ))}
