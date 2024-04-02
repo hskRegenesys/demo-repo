@@ -67,7 +67,7 @@ export const mainFooter = {
     {
       addressTitle: "Kenya Corporate Office",
       fullAddress:
-        "Delta Corner Tower,\n Chiromo Road, 07th Floor, \n   Westlands, \n Nairobi, 00800",
+        "1203, 12th Floor,\n GTC Office Tower Intersection of Waiyaki Way, \n   Chiromo Ln, \n Nairobi, Kenya",
     },
 
     {
