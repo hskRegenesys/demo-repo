@@ -91,14 +91,10 @@ function RequestForm(props: any) {
     if (result?.data && props?.title === "Download Brochure") {
       const response = await courseService.downloadBrochure(brochureName?.name);
       setSubmitted(true);
-      toast.success(
-        `${selectedCourse.name} Course Brochure Download Successfully!`,
-        {
-          position: toast.POSITION.TOP_RIGHT,
-          autoClose: 3000,
-          className: Styles.tost,
-        }
-      );
+      toast.success("Thank you for applying! We will get back to you.", {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 3000,
+      });
       props.onFormSubmit();
       reset();
       downloadFromBlob(response?.data, brochureName?.name) == false;
@@ -109,14 +105,11 @@ function RequestForm(props: any) {
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : setSubmitted(true);
-      toast.success(
-        `Thank you for applying ${selectedCourse.name} course! We will get back to you.`,
-        {
-          position: toast.POSITION.TOP_RIGHT,
-          autoClose: 3000,
-          className: Styles.tost,
-        }
-      );
+      toast.success(`Thank you for applying! We will get back to you.`, {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 3000,
+        className: Styles.tost,
+      });
       props.onFormSubmit();
       reset();
     }
