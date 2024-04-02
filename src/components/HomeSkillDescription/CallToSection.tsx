@@ -10,7 +10,7 @@ const CallToSection = ({
 }: {
   className?: string;
   container?: boolean;
-  courseCode: any;
+  courseCode?: any;
 }) => {
   const [show, setShow] = useState<boolean>(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);

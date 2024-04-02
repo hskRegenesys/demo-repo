@@ -6,7 +6,6 @@ import Content3 from "./ContentCourses/Content3";
 import Content4 from "./ContentCourses/Content4";
 import Content5 from "./ContentCourses/Content5";
 import Content6 from "./ContentCourses/Content6";
-import PopupForm from "../popupForm/PopupForm";
 
 interface Props {
   data: {
@@ -67,28 +66,18 @@ interface Props {
       };
     };
   };
-  CourseCode: string;
-  popupData: any;
+
+  handleEnrollButtonClick: (title?: string) => void;
 }
 
 interface MainCourseData {}
 
 const ExploreTheCourses: React.FC<Props> = ({
   data,
-  CourseCode,
-  popupData,
+  handleEnrollButtonClick,
 }) => {
   const [scrolled, setScrolled] = useState(false);
   const [activeContent, setActiveContent] = useState<string | null>();
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-
-  const handleEnrollButtonClick = () => {
-    setIsPopupVisible(true);
-  };
-
-  const handlePopupClose = () => {
-    setIsPopupVisible(false);
-  };
 
   const contentRefs: React.RefObject<HTMLDivElement>[] = [
     useRef(null),
@@ -170,12 +159,6 @@ const ExploreTheCourses: React.FC<Props> = ({
     <div
       className={`${styles.appContainer} ${scrolled ? styles.scrolled : ""}`}
     >
-      <PopupForm
-        isVisible={isPopupVisible}
-        onClose={handlePopupClose}
-        popupData={popupData}
-        CourseCode={CourseCode}
-      />
       <div className={styles.headerSection}>
         <h2 className={styles.smallHeading}>{smallHeading}</h2>
         <h2 className={styles.bigHeading}>{bigHeading}</h2>

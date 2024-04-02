@@ -1,9 +1,9 @@
 // CertificationDR.js
-import React, { useState, useEffect, useRef, MouseEventHandler } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Styles from "./CertificationDR.module.css";
 
 interface CertificationDRProps {
-  handleEnrollButtonClick: MouseEventHandler<HTMLDivElement>;
+  handleEnrollButtonClick: (title?: string) => void;
   data: {
     heading: string;
     title: string;
@@ -109,7 +109,10 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
           <p>{imageText}</p>
         </div>
       </div>
-      <div className={Styles.enrollButton} onClick={handleEnrollButtonClick}>
+      <div
+        className={Styles.enrollButton}
+        onClick={() => handleEnrollButtonClick("Enroll Now!")}
+      >
         {buttonText}
       </div>
     </div>

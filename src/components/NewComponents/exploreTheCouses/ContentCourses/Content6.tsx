@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "../exploreTheCourses.module.css";
 
 interface Content6Props {
-  handleEnrollButtonClick: () => void;
+  handleEnrollButtonClick: (title?: string) => void;
   ContentHeding: string;
   PriceIcon: string;
   durationIcon: string;
@@ -65,7 +65,12 @@ const Content6: React.FC<Content6Props> = ({
                 <span className={Styles.SpanText}>10,000+ Enroled</span>
               </div>
             </div>
-            <button className={Styles.button} onClick={handleEnrollButtonClick}>
+            <button
+              className={Styles.button}
+              onClick={() => {
+                handleEnrollButtonClick("Enrol Now!");
+              }}
+            >
               Apply Now
             </button>
           </div>

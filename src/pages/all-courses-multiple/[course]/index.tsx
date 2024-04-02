@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-// import PageBanner from "@/components/BannerSection/PageBanner";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
@@ -12,7 +11,6 @@ import React, { useEffect, useState } from "react";
 import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
 import VideoOne from "@/components/VideoSection/VideoOne";
 import PopularTopics from "@/components/PopularTopics/PopularTopics";
-// import SubCourseDetails from "@/components/courses/subcourseDetails";
 import { useRouter } from "next/router";
 import _ from "lodash";
 import { ToastContainer, toast } from "react-toastify";
@@ -48,25 +46,19 @@ const Course = (props: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
   const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
+  const [bannerTitle, setBannerTitle] = useState("");
 
   const courseId: any = router?.query?.id;
   const allCourseList: any = [];
 
-  const handleEnrollButtonClick = () => {
+  const handleEnrollButtonClick = (title?: string) => {
     setIsPopupVisible(true);
+    setBannerTitle(title ?? "");
   };
 
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
-
-  // useEffect(() => {
-  //   const timeoutModal = setTimeout(() => {
-  //     setIsPopupVisible(true);
-  //   }, 4000);
-
-  //   return () => clearTimeout(timeoutModal);
-  // }, []);
 
   const YoutubePopupButtonClick = (videoLink: string) => {
     setIsisYoutubePopup(true);
@@ -84,22 +76,7 @@ const Course = (props: any) => {
   if (!MainCourseData) {
     return null;
   }
-  const filterData = _.find(
-    allCourseList,
-    (item: any) =>
-      item?.parent_id === null &&
-      item?.mode_id === 1 &&
-      item?.isAddon === false &&
-      item?.id === parseInt(courseId)
-  );
 
-  const parentToParentName = () => {
-    let result = "";
-    if (filterData?.name) {
-      result = filterData?.name;
-    }
-    return result;
-  };
   const {
     CourseCode,
     BannerWithVideoData,
@@ -117,14 +94,16 @@ const Course = (props: any) => {
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
       <ToastContainer />
-      {/* 
+
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
           popupData={PopupData.all}
+          CourseCode={CourseCode}
+          title={bannerTitle}
         />
-      )} */}
+      )}
       {isYoutubePopup && (
         <YoutubeVidioPopup
           isVisibleVidio={isYoutubePopup}
@@ -143,22 +122,19 @@ const Course = (props: any) => {
       <BreadcrumbsDR title={pageName} page={pageName} />
       <BannerWithVideo
         data={BannerWithVideoData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
         handleEnrollButtonVidio={(videoLink: string) =>
           YoutubePopupButtonClick(videoLink)
         }
-        CourseCode={CourseCode}
         pageName={pageName}
-        popupData={PopupData.all}
       />
       <CourseBenefitsCard
         data={CourseBenefitsCardData}
-        CourseCode={CourseCode}
-        popupData={PopupData.all}
+        handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <ExploreTheCourses
         data={ExploreTheCoursesData}
-        CourseCode={CourseCode}
-        popupData={PopupData.all}
+        handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <CareersTransformed
         handleEnrollButtonVidio={(videoLink) =>
