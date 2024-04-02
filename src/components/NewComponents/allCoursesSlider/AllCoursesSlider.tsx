@@ -32,10 +32,11 @@ interface Card {
   cardWeek: string;
   cardCount: string;
   cardTool: string;
+  CourseNameCode: string;
 }
 
 interface allCoursesSliderProps {
-  handleEnrollButtonClick: () => void;
+  handleEnrollButtonClick: (code?: string) => void;
   style?: React.CSSProperties; // Add style prop
 }
 
@@ -239,7 +240,9 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     Learn More
                   </button>
                   <button
-                    onClick={handleEnrollButtonClick}
+                    onClick={() => {
+                      handleEnrollButtonClick(parentCourse.CourseNameCode);
+                    }}
                     className={Styles.enrollNowButton}
                   >
                     Enrol Now

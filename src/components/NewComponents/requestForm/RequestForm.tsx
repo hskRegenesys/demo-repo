@@ -92,7 +92,7 @@ function RequestForm(props: any) {
       const response = await courseService.downloadBrochure(brochureName?.name);
       setSubmitted(true);
       toast.success(
-        `${selectedCourse.name} Course Brochure Download sucesfuly!`,
+        `${selectedCourse.name} Course Brochure Download Successfully!`,
         {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 3000,
@@ -294,7 +294,7 @@ function RequestForm(props: any) {
                 )}
                 {(programmeOfInterest === "Digital Marketing" ||
                   programmeOfInterest === "Design Thinking") && (
-                  <small className="text-black">
+                  <small className={Styles.formFooterText}>
                     *Learn collaboratively! Apply with 15 people to begin the
                     course
                   </small>

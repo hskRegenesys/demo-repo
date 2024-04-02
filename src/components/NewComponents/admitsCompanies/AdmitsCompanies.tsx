@@ -7,7 +7,7 @@ import Styles from "./admitsCompanies.module.css";
 import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
 
 interface AdmitsCompaniesProps {
-  handleEnrollButtonClick: React.MouseEventHandler<HTMLDivElement>;
+  handleEnrollButtonClick: () => void;
 }
 SwiperCore.use([Pagination, Autoplay]);
 
