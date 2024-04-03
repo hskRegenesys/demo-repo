@@ -12,7 +12,7 @@ interface Props {
     Heding: string;
     Card: CardData[];
   };
-  handleEnrollButtonClick: () => void;
+  handleEnrollButtonClick: (title?: string) => void;
 }
 
 const CourseBenefitsCard: React.FC<Props> = ({
@@ -42,7 +42,9 @@ const CourseBenefitsCard: React.FC<Props> = ({
       </div>
       <button
         className={styles.enrollNowButton}
-        onClick={handleEnrollButtonClick}
+        onClick={() => {
+          handleEnrollButtonClick("Enrol Now!");
+        }}
       >
         Enrol Now
       </button>

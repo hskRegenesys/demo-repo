@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
-import { Modal } from "react-bootstrap";
-import ModalPopup from "@/components/Modal/ModalPopup";
-import { useRouter } from "next/router";
-
-interface Point {
-  data: BannerCourseData; // This is missing in the original code
-  text: string;
-}
+import PopupForm from "../popupForm/PopupForm";
 
 interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;
-  handleEnrollButtonClick: () => void;
   data: BannerCourseData;
   pageName: any;
+  handleEnrollButtonClick: (title?: string) => void;
 }
 
 type BannerCourseData = {
@@ -60,10 +53,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
     UspSectionData: { uspLocationCard, uspEnrollmentCard, uspUpskillCard },
   } = data;
 
-  const router = useRouter();
   const [count, setCount] = useState("0");
-  const [show, setShow] = useState<boolean>(false);
-  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const [title, setTitle] = useState("");
 
   useEffect(() => {
@@ -72,7 +62,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
     if (start === end) return;
 
-    // Fix the duration to 2000 milliseconds (2 seconds)
     let incrementTime = 2000 / end;
 
     let timer = setInterval(() => {
@@ -129,7 +118,9 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
             <div className={styles.buttonsContainer}>
               <a
                 className={styles.brochureBtn}
-                onClick={handleEnrollButtonClick}
+                onClick={() => {
+                  handleEnrollButtonClick("Download Brochure");
+                }}
               >
                 <img
                   className={styles.brochureIcon}
@@ -140,7 +131,9 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               </a>
               <a
                 className={styles.enrollButton}
-                onClick={handleEnrollButtonClick}
+                onClick={() => {
+                  handleEnrollButtonClick("Enrol Now!");
+                }}
               >
                 Enrol Now!
               </a>

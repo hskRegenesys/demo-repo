@@ -77,7 +77,7 @@ const DigitalMarketing = (props: any) => {
   const code = coursePriceDetails[0]?.code;
   const courseDetails: any = allContent[code];
 
-  const brochureName: any = brochureDetails[code];
+  // const brochureName: any = brochureDetails[code];
 
   const filterData = _.find(
     parentCourse,
@@ -121,7 +121,8 @@ const DigitalMarketing = (props: any) => {
         <>
           <CourseDetails
             courseDetails={courseDetails}
-            brochureName={brochureName}
+            // brochureName={brochureName}
+            courseCode={code}
           />
           <SkillDetailSection courseDetails={courseDetails} />
           <JoinReasons courseDetails={courseDetails} />
@@ -141,15 +142,19 @@ const DigitalMarketing = (props: any) => {
             <CourseCurriculumTwo courseDetails={courseDetails} />
           )}
           {courseDetails?.productDetails && (
-            <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+            <FeesDetails
+              courseDetails={courseDetails}
+              courseCode={code}
+              courseId={courseId}
+            />
           )}
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
-          <CallToSection />
+          <CallToSection courseCode={code} />
         </>
       )}
       <MainFooter />
-      <StickyBar />
+      <StickyBar courseCode={code} />
     </Layout>
   );
 };

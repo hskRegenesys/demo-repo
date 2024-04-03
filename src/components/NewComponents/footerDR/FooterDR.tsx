@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./footerDR.module.css";
 
 interface FooterContent1Props {
-  handleEnrollButtonClick: () => void;
+  handleEnrollButtonClick: (title?: string) => void;
 }
 
 const FooterContent1: React.FC<FooterContent1Props> = ({
@@ -19,7 +19,9 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
       {/* <h2>Ready to get started</h2> */}
       <button
         className={styles.getStartedButton}
-        onClick={handleEnrollButtonClick}
+        onClick={() => {
+          handleEnrollButtonClick("Enrol Now!");
+        }}
       >
         Get Started
       </button>
