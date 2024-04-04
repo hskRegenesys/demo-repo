@@ -68,7 +68,11 @@ const StickyData = (props: any) => {
         </div>
       )}
       <Modal show={show}>
-        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+        <ModalPopup
+          setShows={setShow}
+          thankYouShow={setThankYouShow}
+          courseCode={props.courseCode}
+        />
       </Modal>
       <Modal show={thankYouShow}>
         <ThankYouPopup setShows={setThankYouShow} />

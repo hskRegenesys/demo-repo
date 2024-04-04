@@ -104,7 +104,7 @@ const DigitalMarketing = (props: any) => {
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      <HeaderOne pageTitle={props.course} />
+      <HeaderOne pageTitle={props.course} courseCode={code} />
       <MobileMenu />
       <SearchPopup />
       <PageBanner
