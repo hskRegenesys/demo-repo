@@ -49,6 +49,7 @@ const TrendingSection = () => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
+  const [courseCode, setcourseCode] = useState("");
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
@@ -186,7 +187,10 @@ const TrendingSection = () => {
 
                           <a
                             className="theme-btn btn-style-two"
-                            onClick={handleShow}
+                            onClick={() => {
+                              handleShow();
+                              setcourseCode(code);
+                            }}
                           >
                             <i className="btn-curve"></i>
                             <span className="btn-title">Enquire Now</span>
@@ -197,6 +201,7 @@ const TrendingSection = () => {
                         <ModalPopup
                           setShows={setShow}
                           thankYouShow={setThankYouShow}
+                          courseCode={courseCode}
                         />
                       </Modal>
                       <Modal show={thankYouShow}>

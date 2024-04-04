@@ -69,12 +69,14 @@ const Course = (props: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
   const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
+  const [courseCode, setCourseCode] = useState("");
 
   const courseId: any = router?.query?.id;
   const allCourseList: any = [];
 
-  const handleEnrollButtonClick = () => {
+  const handleEnrollButtonClick = (code?: string) => {
     setIsPopupVisible(true);
+    setCourseCode(code ?? "");
   };
 
   const handlePopupClose = () => {
@@ -132,6 +134,7 @@ const Course = (props: any) => {
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
           popupData={PopupData.all}
+          CourseCode={courseCode}
         />
       )}
       {isYoutubePopup && (

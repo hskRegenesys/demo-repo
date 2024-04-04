@@ -1,5 +1,6 @@
 const MainCoursesDynimicData = {
   DataScience: {
+    CourseCode: "DSN",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/DS/DS-Banner.webp",
@@ -428,6 +429,7 @@ const MainCoursesDynimicData = {
     },
   },
   DigitalMarketing: {
+    CourseCode: "DMN",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/DM/DM-Banner.webp",
@@ -840,6 +842,8 @@ const MainCoursesDynimicData = {
     },
   },
   ProjectManagement: {
+    CourseCode: "PM",
+
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/PM/PM-Banner.webp",
@@ -1228,6 +1232,7 @@ const MainCoursesDynimicData = {
     },
   },
   ArtificialIntelligence: {
+    CourseCode: "AIN",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/AI/AI-Banner.webp",
@@ -1589,6 +1594,7 @@ const MainCoursesDynimicData = {
     },
   },
   CyberSecurity: {
+    CourseCode: "CSC",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/CS/CS-Banner.webp",
@@ -1995,8 +2001,8 @@ const MainCoursesDynimicData = {
       ],
     },
   },
-
   DesignThinking: {
+    CourseCode: "DTC",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/DT/DT-Banner.webp",
@@ -2389,6 +2395,7 @@ const MainCoursesDynimicData = {
     },
   },
   FullStackDeveloper: {
+    CourseCode: "FSD",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/FSD/FSD-Banner.webp",
@@ -2865,6 +2872,7 @@ const MainCoursesDynimicData = {
     },
   },
   DataAndBusinessAnalytics: {
+    CourseCode: "DBA",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/DBA/DBA-Banner.webp",
@@ -3265,6 +3273,8 @@ const MainCoursesDynimicData = {
     },
   },
   ManagementAdvancement: {
+    CourseCode: "MD",
+
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/MD/MD-Banner.webp",

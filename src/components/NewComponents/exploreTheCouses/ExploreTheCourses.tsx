@@ -67,7 +67,7 @@ interface Props {
     };
   };
 
-  handleEnrollButtonClick: () => void;
+  handleEnrollButtonClick: (title?: string) => void;
 }
 
 interface MainCourseData {}

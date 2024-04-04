@@ -13,6 +13,7 @@ import { downloadFromBlob } from "@/components/config/helper";
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
+import { brochureDetails, courseData } from "@/data/course";
 
 function ModalPopup(props: any) {
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
@@ -80,14 +81,18 @@ function ModalPopup(props: any) {
       data.date = date;
     }
 
+    // Get the selected course's code
+    const selectedCourse = courses.find(
+      (course: any) => course.name === data.Programme_Of_Interest
+    );
+    const brochureName: any = brochureDetails[selectedCourse.code];
+
     const result = await leadService.saveLead(data);
 
     if (result?.data && props?.title === "Download Brochure") {
-      const response = await courseService.downloadBrochure(
-        props?.brochureName?.name
-      );
+      const response = await courseService.downloadBrochure(brochureName?.name);
       props.setShows(false);
-      downloadFromBlob(response?.data, props?.brochureName?.name) == false;
+      downloadFromBlob(response?.data, brochureName?.name) == false;
     }
     if (props?.title !== "Download Brochure") {
       props.setShows(false);
@@ -290,7 +295,11 @@ function ModalPopup(props: any) {
                         </option>
                         {courses.map((val: any) => {
                           return (
-                            <option key={val.id} value={val.name}>
+                            <option
+                              key={val.id}
+                              value={val.name}
+                              selected={val.code === props.courseCode}
+                            >
                               {val.name}
                             </option>
                           );

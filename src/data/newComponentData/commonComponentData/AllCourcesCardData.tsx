@@ -30,6 +30,7 @@ const AllCourcesCardData = {
         cardWeek: "30 Weeks",
         cardCount: "10,000+",
         cardTool: "15+ Tools",
+        CourseNameCode: "DSN",
       },
 
       SubCources: [
@@ -93,6 +94,7 @@ const AllCourcesCardData = {
         cardCount: "10,000+",
         cardTool: "5+ Tools",
         cardWeek: "10 Weeks",
+        CourseNameCode: "PM",
       },
     },
     DigitalMarketing: {
@@ -109,6 +111,7 @@ const AllCourcesCardData = {
         cardWeek: "20 Weeks",
         cardCount: "10,000+",
         cardTool: "45+ Tools",
+        CourseNameCode: "DMN",
       },
       SubCources: [
         {
@@ -151,6 +154,7 @@ const AllCourcesCardData = {
         cardCount: "10,000+",
         cardTool: "14+ Tools",
         cardWeek: "13 Weeks",
+        CourseNameCode: "CSC",
       },
     },
     ArtificialIntelligence: {
@@ -166,6 +170,7 @@ const AllCourcesCardData = {
 
         cardWeek: "37 Weeks",
         cardCount: "10,000+",
+        CourseNameCode: "AIN",
       },
       SubCources: [
         {
@@ -219,6 +224,7 @@ const AllCourcesCardData = {
         cardCount: "10,000+",
         cardTool: "8+ Tools",
         cardWeek: "40 Weeks",
+        CourseNameCode: "FSD",
       },
     },
     DataAndBusinessAnalytics: {
@@ -236,6 +242,7 @@ const AllCourcesCardData = {
         cardCount: "10,000+",
         cardTool: "5+ Tools",
         cardWeek: "19 Weeks",
+        CourseNameCode: "DBA",
       },
     },
     DesignThinking: {
@@ -252,6 +259,7 @@ const AllCourcesCardData = {
         cardCount: "10,000+",
         cardTool: "Tools",
         cardWeek: "8 Weeks",
+        CourseNameCode: "DTC",
       },
     },
   },

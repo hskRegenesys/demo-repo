@@ -4,6 +4,8 @@ import RequestForm from "../requestForm/RequestForm";
 
 interface PopupFormProps {
   isVisible: boolean;
+  title?: string;
+  CourseCode?: string;
   popupData: {
     PopupDesktop: string;
     PopupMobile: string;
@@ -15,6 +17,8 @@ const PopupForm: React.FC<PopupFormProps> = ({
   isVisible,
   onClose,
   popupData,
+  title,
+  CourseCode,
 }) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
@@ -75,7 +79,11 @@ const PopupForm: React.FC<PopupFormProps> = ({
               </div>
               <div className={Styles.TextContainer}>
                 <div className={Styles.Form}>
-                  <RequestForm onFormSubmit={handleFormSubmit} />
+                  <RequestForm
+                    CourseCode={CourseCode}
+                    onFormSubmit={handleFormSubmit}
+                    title={title}
+                  />
                 </div>
               </div>
             </div>

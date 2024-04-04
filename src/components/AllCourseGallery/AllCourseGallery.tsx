@@ -34,6 +34,7 @@ const AllCourseGallery = () => {
   const [checkCourseData, setCheckCourseData] = useState<any>([]);
   const [checkFilterData, setCheckFilterData] = useState<any>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [courseCode, setcourseCode] = useState("");
 
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
@@ -306,7 +307,10 @@ const AllCourseGallery = () => {
                                     </a>
                                     <a
                                       className="theme-btn btn-style-two"
-                                      onClick={handleShow}
+                                      onClick={() => {
+                                        handleShow();
+                                        setcourseCode(code);
+                                      }}
                                     >
                                       <i className="btn-curve"></i>
                                       <span className="btn-title">
@@ -343,7 +347,11 @@ const AllCourseGallery = () => {
             </Col>
           </Row>
           <Modal show={show}>
-            <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+            <ModalPopup
+              setShows={setShow}
+              courseCode={courseCode}
+              thankYouShow={setThankYouShow}
+            />
           </Modal>
           <Modal show={thankYouShow}>
             <ThankYouPopup setShows={setThankYouShow} />

@@ -33,7 +33,11 @@ const StickyBar = (props: any) => {
     <div>
       <div>
         <Modal show={show}>
-          <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+          <ModalPopup
+            setShows={setShow}
+            courseCode={props.courseCode}
+            thankYouShow={setThankYouShow}
+          />
         </Modal>
         <Modal show={thankYouShow}>
           <ThankYouPopup setShows={setThankYouShow} />

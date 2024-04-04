@@ -31,11 +31,12 @@ interface Card {
   cardWeek: string;
   cardCount: string;
   cardTool: string;
+  CourseNameCode: string;
 }
 
 interface FeaturedCoursesProps {
-  handleEnrollButtonClick: () => void;
-  style?: React.CSSProperties; // Add style prop
+  handleEnrollButtonClick: (code?: string) => void;
+  style?: React.CSSProperties;
 }
 
 const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
@@ -217,7 +218,9 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     Learn More
                   </button>
                   <button
-                    onClick={handleEnrollButtonClick}
+                    onClick={() => {
+                      handleEnrollButtonClick(parentCourse.CourseNameCode);
+                    }}
                     className={Styles.enrollNowButton}
                   >
                     Enrol Now

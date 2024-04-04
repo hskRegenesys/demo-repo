@@ -3,8 +3,16 @@ import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
 
-const CallToSection = ({ className = "", container = true }) => {
-  const [show, setShow] = useState(false);
+const CallToSection = ({
+  className = "",
+  container = true,
+  courseCode,
+}: {
+  className?: string;
+  container?: boolean;
+  courseCode?: any;
+}) => {
+  const [show, setShow] = useState<boolean>(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
 
@@ -33,7 +41,11 @@ const CallToSection = ({ className = "", container = true }) => {
       </section>
 
       <Modal show={show}>
-        <ModalPopup setShows={setShow} thankYouShow={setThankYouShow} />
+        <ModalPopup
+          setShows={setShow}
+          courseCode={courseCode}
+          thankYouShow={setThankYouShow}
+        />
       </Modal>
       <Modal show={thankYouShow}>
         <ThankYouPopup setShows={setThankYouShow} />
