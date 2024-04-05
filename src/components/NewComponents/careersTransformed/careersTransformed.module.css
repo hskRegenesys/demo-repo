@@ -17,17 +17,18 @@
 .heading {
   color: #fff;
   font-size: 40px;
-  font-family: Montserrat-Bold !important;
+  font-family: Montserrat-Bold;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
+  margin-bottom: 8px;
 }
 
 .subheading {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  font-family: Montserrat-Bold !important;
+  font-family: Montserrat-semiBold;
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-bottom: 30px;
@@ -216,7 +217,7 @@
 }
 
 .experienceText {
-  color: var(--primary-primary-charcoal, #131718);
+  color: #6a767c;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -336,13 +337,28 @@
 .swiperStyle [class^="swiper-button-"] {
   top: calc(50% - var(--add-bottom) / 2);
 }
-
-/* Original styles for three cards */
+.ctFrame {
+  position: relative;
+}
+.ctFrameUp {
+  position: absolute;
+  top: -92px;
+  width: 190px;
+}
+.ctFrameDown {
+  position: absolute;
+  right: 0;
+  width: 190px;
+}
+@media only screen and (max-width: 1225px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .container {
     padding: 40px 16px;
   }
-
   .cardsContainer {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -440,6 +456,9 @@
     display: block;
   }
   .playVideo {
+    display: none;
+  }
+  .ctFrame {
     display: none;
   }
 }
