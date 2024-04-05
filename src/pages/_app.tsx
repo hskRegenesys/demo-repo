@@ -235,7 +235,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         const vineCrmUrl = '${vineCrmTawk}';
         const vineCrmData = {
           recordTypeId:"0127Q000000NDbcQAG",
-          interestedTopic:"",
+          interest:"",
           highestQualification:"",
           utm_parameters:"",
           Mode_of_Study:"",
@@ -246,14 +246,13 @@ const MyApp = ({ Component, pageProps }: any) => {
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
 
-          
         };   
         data.forEach(item => {
           const labelMapping = {
-              "Name": "Name",
-              "Email": "Email",
-              "Mobile Number": "Phone",
-              "Course you are looking for": "Interested_Topic"
+              "Name": "name",
+              "Email": "email",
+              "Mobile": "mobile",
+              "Course you are looking for": "interest "
           };
           const propertyName = labelMapping[item.label] || item.label; 
           vineCrmData[propertyName] = item.answer;
@@ -273,10 +272,10 @@ const MyApp = ({ Component, pageProps }: any) => {
         return response.json();
     })
     .then(responseData => {
-        console.log('Salesforce response:', responseData);
+        console.log('vineCrm response:', responseData);
     })
     .catch(error => {
-        console.error('Error submitting data to Salesforce:', error);
+        console.error('Error submitting data to vineCrm:', error);
     });
       };
     `,

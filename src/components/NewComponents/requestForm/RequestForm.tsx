@@ -307,7 +307,7 @@ function RequestForm(props: any) {
             </button>
           </div>
           <small className={Styles.formFooterText}>
-            By submitting this form, you agree to our
+            By submitting this form, <br /> you agree to our
             <a href="https://www.digitalregenesys.com/privacy-policy">
               Privacy Policy
             </a>
