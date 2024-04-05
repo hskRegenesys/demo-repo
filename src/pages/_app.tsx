@@ -246,14 +246,13 @@ const MyApp = ({ Component, pageProps }: any) => {
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
 
-          
         };   
         data.forEach(item => {
           const labelMapping = {
-              "name": "name",
-              "email": "email",
-              "mobile": "mobile",
-              "Course you are looking for": "interest              "
+              "Name": "name",
+              "Email": "email",
+              "Mobile": "mobile",
+              "Course you are looking for": "interest "
           };
           const propertyName = labelMapping[item.label] || item.label; 
           vineCrmData[propertyName] = item.answer;
