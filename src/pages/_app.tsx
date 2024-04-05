@@ -235,6 +235,10 @@ const MyApp = ({ Component, pageProps }: any) => {
         const vineCrmUrl = '${vineCrmTawk}';
         const vineCrmData = {
           recordTypeId:"0127Q000000NDbcQAG",
+
+          "Name": "name",
+          "Email": "email",
+          "Mobile": "mobile",
           interest:"",
           highestQualification:"",
           utm_parameters:"",
