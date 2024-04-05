@@ -102,6 +102,11 @@
   max-width: 468px;
 }
 
+.rightSection img {
+  box-shadow: 0px 2px 4px 0px #3741511a;
+  border: 0.5px solid #e3e8ee;
+}
+
 .rightSection p {
   color: var(--Light-Text-Secondary, #697386);
   text-align: center;

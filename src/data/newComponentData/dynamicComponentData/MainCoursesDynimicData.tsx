@@ -1,6 +1,6 @@
 const MainCoursesDynimicData = {
   DataScience: {
-    CourseCode: "DNS",
+    CourseCode: "DSN",
     BannerWithVideoData: {
       BannerImgDesktop:
         "/assets/images/new-component-assets/Courses-Page-Img/DS/DS-Banner.webp",

@@ -91,10 +91,9 @@ function RequestForm(props: any) {
     if (result?.data && props?.title === "Download Brochure") {
       const response = await courseService.downloadBrochure(brochureName?.name);
       setSubmitted(true);
-      toast.success(`Check the ${selectedCourse.name} Course Brochure!`, {
+      toast.success("Thank you for applying! We will get back to you.", {
         position: "top-right",
         autoClose: 3000,
-        className: Styles.tost,
       });
       props.onFormSubmit();
       reset();
@@ -106,14 +105,11 @@ function RequestForm(props: any) {
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : setSubmitted(true);
-      toast.success(
-        `Thank you for applying ${selectedCourse.name}course! We will get back to you.`,
-        {
-          position: "top-right",
-          autoClose: 3000,
-          className: Styles.tost,
-        }
-      );
+      toast.success(`Thank you for applying! We will get back to you.`, {
+        position: "top-right",
+        autoClose: 3000,
+        className: Styles.tost,
+      });
       props.onFormSubmit();
       reset();
     }
@@ -291,7 +287,7 @@ function RequestForm(props: any) {
                 )}
                 {(programmeOfInterest === "Digital Marketing" ||
                   programmeOfInterest === "Design Thinking") && (
-                  <small className="text-black">
+                  <small className={Styles.formFooterText}>
                     *Learn collaboratively! Apply with 15 people to begin the
                     course
                   </small>
@@ -311,7 +307,7 @@ function RequestForm(props: any) {
             </button>
           </div>
           <small className={Styles.formFooterText}>
-            By submitting this form, you agree to our
+            By submitting this form, <br /> you agree to our
             <a href="https://www.digitalregenesys.com/privacy-policy">
               Privacy Policy
             </a>

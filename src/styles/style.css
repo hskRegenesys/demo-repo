@@ -21955,3 +21955,12 @@ h2.highlight {
     height: 40px;
   }
 }
+
+.Toastify__toast-body {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Toastify__toast-body > div:last-child{
+  font-family: Montserrat-semiBold !important;
+}

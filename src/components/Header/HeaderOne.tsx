@@ -46,6 +46,7 @@ const HeaderOne = ({
   links = true,
   rightMenu = false,
   pageTitle = "",
+  courseCode = "",
 }) => {
   const { scrollTop } = useScroll(120);
   const [show, setShow] = useState(false);
@@ -114,7 +115,7 @@ const HeaderOne = ({
       "MD",
 
       "DSCI",
-      // "PDM",
+      "PDM",
       "FSD",
       "DBA",
 
@@ -262,7 +263,9 @@ const HeaderOne = ({
         </div>
       )}
       <div className="header-upper">
-        {pageTitle !== "allCourse" && <StickyData pageTitle={pageTitle} />}
+        {pageTitle !== "allCourse" && (
+          <StickyData pageTitle={pageTitle} courseCode={courseCode} />
+        )}
 
         <div className="auto-container d-flex clearfix">
           <div className="logo-box">
