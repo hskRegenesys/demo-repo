@@ -6,8 +6,7 @@ interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;
   data: BannerCourseData;
   pageName: any;
-  popupData: any;
-  CourseCode: string;
+  handleEnrollButtonClick: (title?: string) => void;
 }
 
 type BannerCourseData = {
@@ -40,10 +39,9 @@ type BannerCourseData = {
 
 const BannerWithVideo: React.FC<BannerComponentProps> = ({
   handleEnrollButtonVidio,
+  handleEnrollButtonClick,
   data,
   pageName,
-  popupData,
-  CourseCode,
 }) => {
   const {
     coursePageName,
@@ -56,16 +54,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
   } = data;
 
   const [count, setCount] = useState("0");
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [title, setTitle] = useState("");
-
-  const handleEnrollButtonClick = () => {
-    setIsPopupVisible(true);
-  };
-
-  const handlePopupClose = () => {
-    setIsPopupVisible(false);
-  };
 
   useEffect(() => {
     let start = 0;
@@ -130,8 +119,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <a
                 className={styles.brochureBtn}
                 onClick={() => {
-                  handleEnrollButtonClick();
-                  setTitle("Download Brochure");
+                  handleEnrollButtonClick("Download Brochure");
                 }}
               >
                 <img
@@ -144,8 +132,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <a
                 className={styles.enrollButton}
                 onClick={() => {
-                  handleEnrollButtonClick();
-                  setTitle(" Enrol Now!");
+                  handleEnrollButtonClick("Enrol Now!");
                 }}
               >
                 Enrol Now!
@@ -185,13 +172,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
           </div>
         </div>
       </div>
-      <PopupForm
-        isVisible={isPopupVisible}
-        onClose={handlePopupClose}
-        popupData={popupData}
-        title={title}
-        CourseCode={CourseCode}
-      />
     </div>
   );
 };

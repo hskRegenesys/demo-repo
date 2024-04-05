@@ -18,7 +18,7 @@ const OurLocationData = {
     countryFlagImg: "/assets/images/new-component-assets/ContaryImg/ky.svg",
     countryDescription: "Kenya Corporate Office",
     countryAddress:
-      "Delta Corner Tower, Chiromo Road, 07th Floor, Westlands, Nairobi, 00800",
+      "1203, 12th Floor,GTC Office Tower Intersection of Waiyaki Way, Chiromo Ln, Nairobi, Kenya",
     locationPinImage:
       "/assets/images/new-component-assets/ContaryImg/Location Pin.svg",
   },

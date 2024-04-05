@@ -104,7 +104,7 @@ const DigitalMarketing = (props: any) => {
     <Layout pageTitle={props.course} courseId={courseId}>
       <Schemas type={Constants.course} data={filterData ? filterData : {}} />
       <Style />
-      <HeaderOne pageTitle={props.course} />
+      <HeaderOne pageTitle={props.course} courseCode={code} />
       <MobileMenu />
       <SearchPopup />
       <PageBanner
@@ -142,15 +142,19 @@ const DigitalMarketing = (props: any) => {
             <CourseCurriculumTwo courseDetails={courseDetails} />
           )}
           {courseDetails?.productDetails && (
-            <FeesDetails courseDetails={courseDetails} courseId={courseId} />
+            <FeesDetails
+              courseDetails={courseDetails}
+              courseCode={code}
+              courseId={courseId}
+            />
           )}
           <CourseBenefits courseDetails={courseDetails} />
           <FaqsSection courseDetails={courseDetails} />
-          <CallToSection />
+          <CallToSection courseCode={code} />
         </>
       )}
       <MainFooter />
-      <StickyBar />
+      <StickyBar courseCode={code} />
     </Layout>
   );
 };

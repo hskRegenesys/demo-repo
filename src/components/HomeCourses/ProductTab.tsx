@@ -38,6 +38,7 @@ const ProductTab = ({ courses = [], current }: any) => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
+  const [courseCode, setcourseCode] = useState("");
 
   function getWeeksDiff(start_date: any, end_date: any) {
     const msInWeek = 1000 * 60 * 60 * 24 * 7;
@@ -166,7 +167,10 @@ const ProductTab = ({ courses = [], current }: any) => {
 
                       <a
                         className="theme-btn btn-style-two"
-                        onClick={handleShow}
+                        onClick={() => {
+                          handleShow();
+                          setcourseCode(code);
+                        }}
                       >
                         <i className="btn-curve"></i>
                         <span className="btn-title">Enquire Now</span>
@@ -177,6 +181,7 @@ const ProductTab = ({ courses = [], current }: any) => {
                     <ModalPopup
                       setShows={setShow}
                       thankYouShow={setThankYouShow}
+                      courseCode={courseCode}
                     />
                   </Modal>
                   <Modal show={thankYouShow}>

@@ -91,24 +91,23 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .topTextBestsale,
 .topTextMessage {
   display: flex;
   height: 32px;
-  padding: 8px 20px;
+  padding: 10px 8px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   opacity: 0.8;
   box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
   text-align: center;
-  font-family: Montserrat-Bold;
+  font-family: Montserrat-semiBold;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px;
   letter-spacing: 0.12px;
 }
 .topTextBestsale {
@@ -128,7 +127,7 @@
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-family: Montserrat-Bold;
   background: linear-gradient(
     115deg,
@@ -149,13 +148,13 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .buttonsContainer {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
   width: 100%;
 }
 
@@ -172,7 +171,7 @@
   align-items: center;
   gap: 16px;
   align-self: stretch;
-  font-family: Montserrat-Bold;
+  font-family: Montserrat-semiBold;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -250,116 +249,12 @@
   }
 }
 
-/* Existing styles above this line */
-
-@media screen and (max-width: 768px) {
-  .bannerContainer {
-    flex-direction: column-reverse;
-    padding: 0px 20px;
-  }
-
-  .imageSection {
-    width: 100%;
-    border-radius: 0;
-    position: relative;
-    z-index: 1;
-    right: 0px;
-  }
-
-  .imageCard {
-    margin: 0px 16px;
-    max-width: none;
-    height: auto;
-    background: #ebebeb;
-    width: 100%;
-    border-radius: 20px;
-  }
-  .contentSection {
-    position: relative;
-    top: 0;
-    width: 100%;
-    max-width: none;
-    height: 10%;
-    padding: 24px 16px;
-    margin-top: -10%; /* Overlap the content section on top of the image section */
-    border-radius: 20px; /* Adjust border-radius as needed */
-    z-index: 2; /* Set a lower z-index to place it above the image section */
-  }
-  .playIconContainer {
-    top: 45%;
-    left: 50%;
-  }
-  .playIconStyle {
-    border-radius: 50%;
-    background: var(--Light-Text-White, #fff);
-    padding: 13px 18px;
-  }
-
-  .playIcon {
-    width: 25px;
-    height: auto;
-  }
-
-  @keyframes slideIn {
-    from {
-      transform: translateY(100%); /* Start from left of the container */
-    }
-    to {
-      transform: translateY(0); /* Move to the original position */
-    }
-  }
-}
-
-@media screen and (max-width: 590px) {
-  .topSection {
-    gap: 8px;
-  }
-  .topTextBestsale,
-  .topTextMessage {
-    padding: 4px 8px;
-    font-size: 10px;
-    height: 20px;
-  }
-
-  .courseHeading {
-    font-size: 20px;
-  }
-
-  .contentText {
-    font-size: 14px;
-  }
-
-  .buttonsContainer {
-    display: block;
-  }
-
-  .brochureIcon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .brochureBtn {
-    color: var(--Light-Text-Primary, #2b3340);
-    border-radius: 10px;
-    border: 1px solid var(--light-divider-borders-green, #008554);
-    background: var(--Light-Surface-Success, #f0fdf4);
-    margin-bottom: 24px;
-  }
-  .enrollButton {
-    border-radius: 10px;
-    background: #008554;
-    color: #fff;
-    box-shadow: 0px 2px 8px -2px rgba(0, 187, 118, 0.5),
-      0px -2px 1px 0px rgba(55, 65, 81, 0.15) inset;
-  }
-}
-
 .uspSectionContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .uspCardCountry,
@@ -410,11 +305,133 @@
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
-  font-family: Montserrat !important;
+  font-family: Montserrat;
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1250px) {
+  .bannerContainer {
+    padding: 0px 20px;
+  }
 }
 @media (max-width: 920px) {
   .uspSectionContainer {
     display: none;
+  }
+  .bannerContainer {
+    flex-direction: column-reverse;
+    padding: 0px 16px;
+  }
+
+  .imageSection {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    right: 0px;
+  }
+
+  .imageCard {
+    margin: 0px 16px;
+    max-width: none;
+    height: auto;
+    background: #ebebeb;
+    width: 100%;
+    border-radius: 72px;
+  }
+  .contentSection {
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    height: 10%;
+    padding: 24px 16px;
+    margin-top: -10%; /* Overlap the content section on top of the image section */
+    border-radius: 20px; /* Adjust border-radius as needed */
+    z-index: 2; /* Set a lower z-index to place it above the image section */
+  }
+  .playIconContainer {
+    top: 45%;
+    left: 50%;
+  }
+  .playIconStyle {
+    border-radius: 50%;
+    background: var(--Light-Text-White, #fff);
+    padding: 13px 18px;
+  }
+
+  .playIcon {
+    width: 25px;
+    height: auto;
+  }
+  .imageBanner {
+    height: 400px;
+    border-radius: 20px;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%); /* Start from left of the container */
+    }
+    to {
+      transform: translateY(0); /* Move to the original position */
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .topSection {
+    gap: 8px;
+  }
+  .topTextBestsale,
+  .topTextMessage {
+    padding: 4px 8px;
+    font-size: 10px;
+    height: 20px;
+  }
+
+  .courseHeading {
+    font-size: 20px;
+  }
+
+  .contentText {
+    font-size: 14px;
+    margin-bottom: 44px;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .brochureIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .brochureBtn {
+    color: var(--Light-Text-Primary, #2b3340);
+    border-radius: 10px;
+    border: 1px solid var(--light-divider-borders-green, #008554);
+    background: var(--Light-Surface-Success, #f0fdf4);
+  }
+  .enrollButton {
+    order: -1;
+    border-radius: 10px;
+    background: #008554;
+    color: #fff;
+    box-shadow: 0px 2px 8px -2px rgba(0, 187, 118, 0.5),
+      0px -2px 1px 0px rgba(55, 65, 81, 0.15) inset;
+  }
+  .imageBanner {
+    height: 300px;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .imageBanner {
+    height: 200px;
+    border-radius: 20px;
   }
 }

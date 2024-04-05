@@ -2,7 +2,7 @@
 
 .BreadcrumbsDR {
   background: #e5ffed;
-  padding: 15px 0;
+  padding: 16px 0px 32px 0px;
   margin-top: 70px;
 }
 
@@ -14,7 +14,6 @@
 
 .autoContainer {
   width: 100%;
-  padding: 0 15px;
   box-sizing: border-box;
 }
 
@@ -37,10 +36,11 @@
 
 .breadCrumbHome li a {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 8px;
   color: var(--Light-Text-Secondary, #697386);
   font-family: Montserrat;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .fontCapitalized {
@@ -50,9 +50,9 @@
 .active {
   font-weight: bold;
   color: var(--Light-Text-Green, #008554);
-  /* Body/Body - Secondary Bold */
   font-family: Montserrat;
-  font-size: 14px; /* Set the color of the active path to green */
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .arrowIcon {
@@ -67,21 +67,20 @@
   margin-right: 5px;
 }
 
-/* Existing styles above this line */
+@media screen and (max-width: 1250px) {
+  .autoContainer {
+    padding: 0px 20px;
+  }
+}
 
 @media screen and (max-width: 590px) {
   .BreadcrumbsDR {
-    padding: 10px 0;
-    margin-top: 45px;
+    padding: 20px 0px 24px 0px;
+    margin-top: 78px;
   }
   .breadCrumbHome {
     flex-wrap: wrap;
   }
-  /* .breadCrumbHome li {
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    max-width: 80px; } */
 
   .breadCrumbHome li a {
     font-size: 12px;
@@ -97,5 +96,3 @@
     font-weight: bold;
   }
 }
-
-/* Existing styles below this line */

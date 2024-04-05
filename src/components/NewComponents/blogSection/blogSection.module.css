@@ -124,8 +124,6 @@
   --swiper-pagination-bullet-vertical-gap: 120px;
 }
 .swiperStyle {
-  --add-bottom: 80px;
-  padding-bottom: var(--add-bottom);
   align-items: center;
 }
 .swiperStyle [class^="swiper-button-"] {
@@ -136,6 +134,11 @@
   .blogSectionContainer {
     margin-top: 40px;
     padding: 0px 100px;
+  }
+  .swiperStyle {
+    --add-bottom: 60px;
+    padding-bottom: var(--add-bottom) !important;
+    align-items: center;
   }
 }
 
@@ -150,10 +153,5 @@
   }
   .blogCard {
     margin: 0 auto;
-  }
-  .swiperStyle {
-    --add-bottom: 80px;
-    padding-bottom: var(--add-bottom);
-    align-items: center;
   }
 }
