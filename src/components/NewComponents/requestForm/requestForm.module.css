@@ -101,6 +101,8 @@
   font-family: Montserrat;
   color: #858c9a;
   margin-top: 13px;
-  display: inline-block;
   line-height: 18px;
+  margin: 18px auto;
+  display: table;
+  text-align: center;
 }
