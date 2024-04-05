@@ -235,7 +235,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         const vineCrmUrl = '${vineCrmTawk}';
         const vineCrmData = {
           recordTypeId:"0127Q000000NDbcQAG",
-          Programme_Of_Interest:"",
+          interest:"",
           highestQualification:"",
           utm_parameters:"",
           Mode_of_Study:"",
@@ -250,10 +250,10 @@ const MyApp = ({ Component, pageProps }: any) => {
         };   
         data.forEach(item => {
           const labelMapping = {
-              "Name": "name",
-              "Email": "email",
-              "Mobile Number": "mobile",
-              "Course you are looking for": "Programme_Of_Interest"
+              "name": "name",
+              "email": "email",
+              "mobile": "mobile",
+              "Course you are looking for": "interest              "
           };
           const propertyName = labelMapping[item.label] || item.label; 
           vineCrmData[propertyName] = item.answer;
