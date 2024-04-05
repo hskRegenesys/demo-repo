@@ -29,7 +29,7 @@
 .sidePanelInside {
   position: sticky;
   top: 0;
-  height: 200px;
+  height: 455px;
   padding-top: 100px;
 }
 
@@ -37,7 +37,6 @@
   color: var(--primary-primary-green, #008554);
   text-align: center;
   font-family: Montserrat-Bold;
-
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -60,13 +59,14 @@
 .sidePanel p {
   cursor: pointer;
   color: #697386;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
   transition: color 0.3s;
   font-family: Montserrat-Bold;
+  margin-bottom: 28px;
 }
 
 .sidePanel p.active {
@@ -144,7 +144,7 @@
   min-width: 860px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1225px) {
   .sidePanel {
     display: none;
   }
@@ -153,7 +153,8 @@
     border-left: none;
   }
   .contentPanel h3 {
-    margin-bottom: 28px;
+    margin-bottom: 16px;
+    font-size: 20px;
   }
   .smallHeading {
     font-size: 14px;
@@ -185,7 +186,11 @@
     width: 100%;
     min-width: 0px;
   }
+  .content1 {
+    border-left: none !important;
+  }
 }
+
 @media only screen and (max-width: 1270px) {
   .appContainer {
     padding: 0px 16px;
@@ -254,11 +259,6 @@
   align-items: center;
 }
 
-@media (max-width: 1100px) {
-  .content1 {
-    border-left: none;
-  }
-}
 @media (max-width: 768px) {
   .content1 p {
     font-size: 14px;
@@ -291,8 +291,7 @@
   box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
   display: flex;
   justify-content: center;
-  margin-left: 10px;
-  height: 114px;
+  height: 100px;
   width: 100%;
   max-width: 180px;
 }
@@ -334,12 +333,10 @@
   text-align: center;
   overflow: hidden;
   max-width: 246px;
-  min-width: 246px;
   height: 100%;
   width: 100%;
   box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
   min-height: 262px;
-
   padding-bottom: 12px;
   margin: 0 auto;
 }
@@ -369,7 +366,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  /* 150% */
   letter-spacing: 0.019px;
   margin-bottom: 4px;
 }
@@ -382,7 +378,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  /* 133.333% */
   letter-spacing: 0.12px;
   margin-bottom: 20px;
 }
@@ -399,16 +394,23 @@
   letter-spacing: 0.12px;
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
   .cardContainer ul {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 530px) {
+  .card {
+    max-width: 328px;
+  }
+  .card img {
+    max-width: 328px;
+    left: 38%;
+  }
+}
 
 /* content4 */
 
-/* Content4 Component Styles */
 .content4 {
   max-width: 869px;
   width: 100%;
@@ -787,7 +789,7 @@
   }
 
   .swiperStyle {
-    --add-bottom: 64px !important;
+    --add-bottom: 60px !important;
     padding-bottom: var(--add-bottom) !important;
     align-items: center;
   }

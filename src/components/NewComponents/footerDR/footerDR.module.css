@@ -189,7 +189,8 @@
   }
   .footerSection {
     flex-direction: column;
-    /* align-items: center; */
+    gap: 36px;
+    margin-bottom: 0px;
   }
   .footerSectionMobile {
     display: block;
@@ -212,7 +213,6 @@
   .footerContent4,
   .footerContent1 {
     margin-right: 0;
-    margin-bottom: 20px; /* Add margin-bottom for spacing between rows */
   }
 
   .footerLogo img {
@@ -222,5 +222,10 @@
   .footerTextheader p {
     padding-right: 0;
     text-align: center;
+  }
+  .footerText p {
+    font-size: 12px;
+    border-top: 1px solid #ced1d9;
+    padding-top: 10px;
   }
 }

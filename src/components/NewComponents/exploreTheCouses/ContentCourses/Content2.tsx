@@ -23,36 +23,30 @@ const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
           pagination={{ clickable: true }}
           breakpoints={{
             0: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-            },
-            359: {
               slidesPerView: 2,
               slidesPerGroup: 2,
             },
-            790: {
+            480: {
               slidesPerView: 3,
               slidesPerGroup: 3,
             },
-            1200: {
+            720: {
               slidesPerView: 4,
               slidesPerGroup: 4,
             },
           }}
         >
-          <div>
-            {cardTools.map((tool, index) => (
-              <SwiperSlide key={index}>
-                <li key={index} className={styles.horizontalCard}>
-                  <img
-                    src={`/assets/images/clients/${tool.img}`}
-                    alt={tool.alt}
-                    className={styles.toolImage}
-                  />
-                </li>
-              </SwiperSlide>
-            ))}
-          </div>
+          {cardTools.map((tool, index) => (
+            <SwiperSlide key={index}>
+              <li key={index} className={styles.horizontalCard}>
+                <img
+                  src={`/assets/images/clients/${tool.img}`}
+                  alt={tool.alt}
+                  className={styles.toolImage}
+                />
+              </li>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </ul>
     </div>

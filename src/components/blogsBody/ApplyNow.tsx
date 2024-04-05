@@ -62,7 +62,7 @@ const ApplyNow = (props: any) => {
   return (
     <div
       className={`text-center p-3 rounded ${
-        props.isBlack ? " bg-light-black" : " bg-light-green"
+        props.isBlack ? " bg-light-green" : " bg-light-green"
       }`}
     >
       {/* <h6 style={{ color: `${props.isBlack ? "yellow" : "black"}` }}>
