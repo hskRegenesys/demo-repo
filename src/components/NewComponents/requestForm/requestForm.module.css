@@ -97,8 +97,10 @@
   letter-spacing: 0.12px;
 }
 .formFooterText {
-  font-size: 10px;
+  font-size: 14px;
   font-family: Montserrat;
   color: #858c9a;
-  margin-top: 10px;
+  margin-top: 13px;
+  display: inline-block;
+  line-height: 18px;
 }
