@@ -61,6 +61,12 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
 
   return (
     <div className={Styles.container}>
+      <div className={Styles.ctFrame}>
+        <img
+          src="/assets/images/new-component-assets/ct-frame-down.webp"
+          className={Styles.ctFrameDown}
+        />
+      </div>
       <div className={Styles.header}>
         <h2 className={Styles.heading}>{heading}</h2>
         <h2 className={Styles.subheading}>{subheading}</h2>
@@ -165,6 +171,13 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      <div className={Styles.ctFrame}>
+        <img
+          src="/assets/images/new-component-assets/ct-frame-up.webp"
+          className={Styles.ctFrameUp}
+        />
       </div>
     </div>
   );
