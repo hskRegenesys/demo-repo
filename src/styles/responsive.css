@@ -1454,7 +1454,8 @@
   }
 
   .page-banner .bread-crumb li:before {
-    display: none;
+    right: -22px;
+    margin: 5px 10px 0 5px;
   }
 
   .page-banner .bread-crumb li {
