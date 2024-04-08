@@ -477,7 +477,7 @@ export const allCourseList = [
     parent_id: null,
     mode_id: 1,
     isAddon: false,
-    durationInWeeks: 40,
+    durationInWeeks: 24,
     parentCourse: null,
     courseMode: { id: 1, name: "Live", description: "Live" },
     batches: [

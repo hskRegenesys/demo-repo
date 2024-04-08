@@ -438,7 +438,7 @@ export const courseData = {
           "Certification Programme in Operations & Supply Chain Management",
         text: "Embark on a transformative journey with our Operations & Supply Chain Management programme, designed to equip you with cutting-edge skills in process optimisation, strategic supply chain design, and the latest Industry 4.0 innovations, fostering operational excellence for the visionary professional.",
         lists: [
-          "X Weeks Course",
+          "24 Weeks Course",
           "14 modules",
           "Live classes",
           "International certification",
