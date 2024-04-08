@@ -232,14 +232,10 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        const vineCrmUrl = '${vineCrmTawk}';
-        const vineCrmData = {
+        const salesForceUrl = '${vineCrmTawk}';
+        const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
-
-          "Name": "name",
-          "Email": "email",
-          "Mobile": "mobile",
-          interest:"",
+          interestedTopic:"",
           highestQualification:"",
           utm_parameters:"",
           Mode_of_Study:"",
@@ -249,25 +245,24 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-
         };   
         data.forEach(item => {
           const labelMapping = {
-              "Name": "name",
-              "Email": "email",
-              "Mobile": "mobile",
-              "Course you are looking for": "interest "
+              "Name": "Name",
+              "Email": "Email",
+              "Mobile Number": "Phone",
+              "Course you are looking for": "Interested_Topic"
           };
           const propertyName = labelMapping[item.label] || item.label; 
-          vineCrmData[propertyName] = item.answer;
+          salesForceData[propertyName] = item.answer;
       });
       console.log("vineCrmData",vineCrmData)
-      fetch(vineCrmUrl, {
+      fetch(salesForceUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(vineCrmData),
+        body: JSON.stringify(salesForceData),
     })
     .then(response => {
         if (!response.ok) {
@@ -276,10 +271,10 @@ const MyApp = ({ Component, pageProps }: any) => {
         return response.json();
     })
     .then(responseData => {
-        console.log('vineCrm response:', responseData);
+        console.log('Salesforce response:', responseData);
     })
     .catch(error => {
-        console.error('Error submitting data to vineCrm:', error);
+        console.error('Error submitting data to Salesforce:', error);
     });
       };
     `,
