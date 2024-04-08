@@ -31,20 +31,22 @@ const CourseBenefitsMobile = () => {
               }}
               ref={listRef}
             >
-              {courseBenefitsMobile.tabsContents?.map(({ id, title, lists }) => (
-                <div ref={listRef} className="gallery-item" key={id}>
-                  <div className="partner-one__card">
-                    <div className="careers-one__content mobile_course_benefits">
-                      <h3 className="careers-one__title">{title}</h3>
-                      <ul>
-                        {lists?.map((text, i) => (
-                          <li key={i}> {text}</li>
-                        ))}
-                      </ul>
+              {courseBenefitsMobile.tabsContents?.map(
+                ({ id, title, lists }) => (
+                  <div ref={listRef} className="gallery-item" key={id}>
+                    <div className="partner-one__card">
+                      <div className="careers-one__content mobile_course_benefits">
+                        <h3 className="careers-one__title">{title}</h3>
+                        <ul>
+                          {lists?.map((text, i) => (
+                            <li key={i}> {text}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                )
+              )}
             </TinySlider>
 
             <div className="tns-controls5 text-center">
