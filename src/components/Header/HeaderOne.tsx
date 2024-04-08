@@ -112,13 +112,11 @@ const HeaderOne = ({
       // "DTC",
       // "DT",
       // "AI",
+      "PDM",
       "MD",
-
       "DSCI",
-      // "PDM",
       "FSD",
       "DBA",
-
       "DSN",
       "AIN",
       "CSC",

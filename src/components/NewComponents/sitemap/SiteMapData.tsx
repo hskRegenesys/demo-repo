@@ -82,6 +82,11 @@ const Sidemapdata: Sidemapdata = {
             title: "Management Advancement",
             link: "https://www.digitalregenesys.com/all-courses/management-advancement",
           },
+
+          {
+            title: "Product Management",
+            link: "https://www.digitalregenesys.com/all-courses/product-management",
+          },
         ],
       },
       {
