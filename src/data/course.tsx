@@ -470,12 +470,7 @@ export const courseData = {
       bg3: "/assets/images/background/reason-bg3-1.webp",
       bg4: "/assets/images/background/reason-bg4-1.webp",
     },
-    courseTools: [
-      "pm/project-management-tools1.webp",
-      "pm/project-management-tools2.webp",
-      "pm/project-management-tools3.webp",
-      "pm/project-management-tools4.webp",
-    ],
+    courseTools: ["OSCM/ChatGPT.png", "OSCM/Gemini.jpg"],
     courseCertificate: {
       certificateTitle:
         "Leading with Excellence: Operations and supply chain management Certificate Course",
@@ -506,8 +501,8 @@ export const courseData = {
         "Demand Forecasting Analyst",
         "Inventory Control Analyst",
       ],
-      CertificateImage: ["PM_certificates.webp"],
-      imageName: "PM_certificates",
+      CertificateImage: ["OSCM_certificates.webp"],
+      imageName: "OSCM_certificates",
     },
 
     featureSeven: {
@@ -516,14 +511,14 @@ export const courseData = {
       features: [
         {
           id: 1,
-          image: "Dennis-Laxton.webp",
+          image: "Suvarana-Deshpande.jpeg",
           title: "Dr. Dennis Laxton ",
           text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
           designation: "Academic Team Leader and Senior Lecturer",
         },
         {
           id: 2,
-          image: "James_forson.webp",
+          image: "Yatin-Karnik.jpg",
           title: "James Forson",
           text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
           designation: "BSocSc (Hons)",
@@ -868,10 +863,13 @@ export const courseData = {
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
+      flagUg: "/assets/images/icons/flag_uganda.webp",
+      flagTZ: "/assets/images/icons/flag_Tanzania.webp",
       title: "Fees structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Project Management certificate",
+      certifiedTitle1:
+        "Earn Your Operations and Supply Chain Management certificate",
       certifiedText1:
         "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
       certifiedTitle2: "Share Your Achievement",
@@ -9815,6 +9813,11 @@ export const brochureDetails: any = {
   },
   MD: {
     name: "MD_Brochure_compressed.pdf",
+    leadSource: leadSource,
+    sourceCampaign: sourceCampaign,
+  },
+  OSCM: {
+    name: "OSCM_Brochure_compressed.pdf",
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
