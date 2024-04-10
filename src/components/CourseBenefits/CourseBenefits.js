@@ -7,8 +7,6 @@ import CourseBenefitsMobile from "@/components/CourseBenefitsMobile/CourseBenefi
 
 const CourseBenefits = ({ courseDetails }) => {
   const { title, tabBtns, tabsContents, desc } = courseDetails?.courseBenefits;
-
-  console.log("courseDetails", courseDetails);
   const [current, setCurrent] = useState("tab-1");
 
   return (
