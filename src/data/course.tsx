@@ -453,7 +453,7 @@ export const courseData = {
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
-      desc1: "Get exposure to Yammer, Excel, Discord, and Slack",
+      desc1: "Get exposure to ChatGPT and Gemini",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -472,23 +472,28 @@ export const courseData = {
     },
     courseTools: ["OSCM/ChatGPT.png", "OSCM/Gemini.jpg"],
     courseCertificate: {
-      certificateTitle:
-        "Leading with Excellence: Operations and supply chain management Certificate Course",
-      certificateSubTitle:
-        "Earn a Operations and supply chain management Certificate from Digital Regenesys & Navigate the Operations and supply chain management Landscape",
-      certificateSubSubTitle:
-        "With our Operations and supply chain management programme, you will gain a solid foundation in project management principles to stay ahead in the competition by working on projects, simulations, and cases.        ",
-      certificateListTitle:
-        "With Operations and supply chain management Certificate, you will get: ",
+      certificateTitle: "",
+      certificateSubTitle: "",
+      certificateSubTitleSpace: "Certificate Programme Modules",
+      certificateSubSubTitle: "",
+      certificateListTitle: "",
 
       certificateSkillList: [
-        "International Recognition",
-        "Comprehensive Project Management Knowledge",
-        "Project Management Tools and Techniques",
-        "Project Scope and Quality Management",
+        "Introduction",
+        "Quantitative Techniques for OM/ SCM",
+        "Operations Strategy",
+        "Process Structure",
+        "Quality Management",
+        "Planning & Scheduling",
+        "Inventory Management",
+        "Lean Management",
+        "Designing Supply Chain",
+        "Forecasting Demand",
+        "Supplier Relationship Management",
+        "Analytics in Operations & Supply Chaint",
+        "Emerging Trend",
       ],
-      certificateListPara:
-        " Our Operations and supply chain management Certificate will open doors to various roles for you, whether you are a fresher, graduate or experienced professional.",
+      certificateListPara: `Career Opportunities:`,
       certificateRolesList: [
         "Operations Manager",
         "Supply Chain Manager ",
@@ -512,8 +517,10 @@ export const courseData = {
         {
           id: 1,
           image: "Suvarana-Deshpande.jpeg",
-          title: "Dr. Dennis Laxton ",
-          text: "Dennis Laxton has obtained NHD Industrial Engineering from Wits, B. Industrial Engineering from Unisa, MBA (ICT) from CSU, and DBA from UKZN. He has worked as a motor vehicle technician, class motor mechanic, service advisor, and a technical assistant as well.",
+          title: "Dr. Suvarna M. Deshpande",
+          text: `Dr. Suvarna M. Deshpande is a seasoned professional in the Indian Pharmaceutical Industry, with extensive experience from grassroots to senior management roles. With qualifications including a B. Pharm, MBA, and PhD in
+
+          Marketing Management, she brings profound expertise to her roles. Dr. Suvarna has worked with renowned pharmaceutical companies and holds executive certificates in Strategic Brand Management and Digital Marketing. Passionate about education, she has served in various capacities in prestigious institutions and is a visiting faculty at management institutes in Pune. As a corporate trainer, Dr. Suvarna designs customized programmes using interactive methods such as management games and case studies. With her extensive experience and dedication to teaching, Dr. Suvarna M. Deshpande is a valuable asset in both academia and industry.`,
           designation: "Academic Team Leader and Senior Lecturer",
         },
         {
@@ -543,7 +550,7 @@ export const courseData = {
             id: 1,
             title: "MODULE 1: Introduction",
             lists: [
-              "Understand the basics of operations and supply chain management, including cycle time, throughput and work-in - process",
+              "Understand the basics of operations and supply chain management, including cycle time, throughput and work-in-process",
             ],
           },
           {
