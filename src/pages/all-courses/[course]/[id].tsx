@@ -27,19 +27,16 @@ import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const Course = (props: any) => {
   const router = useRouter();
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
+  const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
+  const [bannerTitle, setBannerTitle] = useState("");
+  const page = router?.query?.course?.toString();
 
   const pageName = router?.query?.course
     ?.toString()
     .replace(/-/g, " ")
     .replace(/\b\w/g, (match: string) => match.toUpperCase());
-
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
-  const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
-  const [bannerTitle, setBannerTitle] = useState("");
-
-  const courseId: any = router?.query?.id;
-  const allCourseList: any = [];
 
   const handleEnrollButtonClick = (title?: string) => {
     setIsPopupVisible(true);
@@ -58,8 +55,6 @@ const Course = (props: any) => {
   const handleYoutubePopupClose = () => {
     setIsisYoutubePopup(false);
   };
-
-  const page = router?.query?.course?.toString();
 
   const MainCourseData = DataSeparatorPages(page);
 
