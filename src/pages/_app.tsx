@@ -234,17 +234,20 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         const salesForceUrl = '${vineCrmTawk}';
         const salesForceData = {
-          recordTypeId:"0127Q000000NDbcQAG",
-          interestedTopic:"",
-          highestQualification:"",
-          utm_parameters:"",
-          Mode_of_Study:"",
-          Verified_Mobile_No:"",
+          name: "",
+          email: "",
+          mobile: "",
+          city: "",
+          source: "",
+          campaign: "",
+          utm_term: "",
+          utm_content: "",
+          utm_url: "",
+          interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
-          utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
-          Lead_Source:"DR website chat"
+          Lead_Source: "DR website chat",
         };   
         data.forEach(item => {
           const labelMapping = {
