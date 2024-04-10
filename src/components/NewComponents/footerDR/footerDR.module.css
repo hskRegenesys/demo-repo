@@ -22,11 +22,8 @@
 .footerContent2 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(
-    2,
-    1fr
-  ); /* Create two columns with equal width */
-  gap: 0px; /* Adjust the gap between items as needed */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .footerContainer a {
@@ -36,7 +33,6 @@
   font-weight: 500;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.12px;
-  margin-bottom: 12px;
   font-family: Montserrat;
 }
 

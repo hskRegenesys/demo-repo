@@ -4,6 +4,7 @@ export const productDetails = {
   flagus: "/assets/images/icons/flag_us.webp",
   flagind: "/assets/images/icons/flag_india.webp",
   flagken: "/assets/images/icons/flag_kenya.webp",
+
   title: "Fees structure & Certfication",
   subTitle: "Get Certified",
   price: 64499,

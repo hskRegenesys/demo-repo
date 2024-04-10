@@ -36,6 +36,11 @@ const AllPageStickyData: IAllPageStickyDataType = {
   "ai-introductory": "  Upskill yourself with Digital Regenesy's Courses",
   "ai-intermediary": " Upskill yourself with Digital Regenesy's Courses",
   "ai-advanced-applied": " Upskill yourself with Digital Regenesy's Courses",
+
+  "management-advancement": "Upskill yourself with Digital Regenesy's Courses",
+  "data-and-business-analytics":
+    "Upskill yourself with Digital Regenesy's Courses",
+  "product-management": "Upskill yourself with Digital Regenesy's Courses",
 };
 
 export default AllPageStickyData;
