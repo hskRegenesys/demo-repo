@@ -15,6 +15,10 @@ class LeadService {
     ["Full Stack Development", "Full Stack Development"],
     ["Data and Business Analytics", "Data and Business Analytics"],
     ["Management Advancement", "Management Advancement"],
+    [
+      "Operations and Supply Chain Management",
+      "Operations and Supply Chain Management",
+    ],
   ]);
 
   drLeadRecordTypeId = "0127Q000000NDbXQAW";

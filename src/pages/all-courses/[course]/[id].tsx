@@ -138,7 +138,7 @@ const DigitalMarketing = (props: any) => {
           <WhayTheySay courseDetails={courseDetails} />
           <CourseCurriculum courseDetails={courseDetails} />
 
-          {CourseCurriculumTwo && (
+          {courseDetails?.CourseCurriculumTwo && (
             <CourseCurriculumTwo courseDetails={courseDetails} />
           )}
           {courseDetails?.productDetails && (
