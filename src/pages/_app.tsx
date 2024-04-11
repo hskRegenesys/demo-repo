@@ -98,7 +98,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-          
+         
           `,
         }}
       />
@@ -154,7 +154,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-
+ 
           `,
         }}
       />
@@ -234,27 +234,26 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         const salesForceUrl = '${vineCrmTawk}';
         const salesForceData = {
-          domain: "crm",
-          type: "add_lead_to_crm",
-          name: "",
-          email: "",
-          mobile: "",
+          recordTypeId:"0127Q000000NDbcQAG",
+          interestedTopic:"",
+          highestQualification:"",
+          utm_parameters:"",
+          Mode_of_Study:"",
+          Verified_Mobile_No:"",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-          interest: "",
-          
-        };   
+        };  
         data.forEach(item => {
           const labelMapping = {
-              "Name": name,
-              "Email": email,
-              "Mobile Number": mobile,
-              "Course you are looking for": interest
+              "Name": "Name",
+              "Email": "Email",
+              "Mobile Number": "Phone",
+              "Course you are looking for": "Interested_Topic"
           };
-          const propertyName = labelMapping[item.label] || item.label; 
+          const propertyName = labelMapping[item.label] || item.label;
           salesForceData[propertyName] = item.answer;
       });
       console.log("vineCrmData",vineCrmData)
