@@ -25,6 +25,7 @@ import Schemas from "src/schemas";
 const MyApp = ({ Component, pageProps }: any) => {
   //const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
   const vineCrmTawk = `https://api.vinecrms.com/api/`;
+  console.log("vineCrmTawk", vineCrmTawk);
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -233,25 +234,29 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
         const salesForceUrl = '${vineCrmTawk}';
+        console.log("salesForceUrl",salesForceUrl)
         const salesForceData = {
-          recordTypeId:"0127Q000000NDbcQAG",
-          interestedTopic:"",
-          highestQualification:"",
-          utm_parameters:"",
-          Mode_of_Study:"",
-          Verified_Mobile_No:"",
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          mobile: "",
+          interest: "",
+          Source_Campaign: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
         };  
+        console.log("salesForceData",salesForceData)
         data.forEach(item => {
+          console.log("item",item)
           const labelMapping = {
-              "Name": "Name",
-              "Email": "Email",
-              "Mobile Number": "Phone",
-              "Course you are looking for": "Interested_Topic"
+              "Name": name,
+              "Email": email,
+              "Mobile Number": mobile,
+              "Course you are looking for": interest
           };
           const propertyName = labelMapping[item.label] || item.label;
           salesForceData[propertyName] = item.answer;
