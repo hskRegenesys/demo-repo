@@ -113,7 +113,7 @@ const HeaderOne = ({
       // "DT",
       // "AI",
       "PDM",
-      // "OSCM",
+      "OSCM",
       "MD",
       "DSCI",
 
