@@ -25,7 +25,6 @@ import Schemas from "src/schemas";
 const MyApp = ({ Component, pageProps }: any) => {
   //const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
   const vineCrmTawk = `https://api.vinecrms.com/api/`;
-  console.log("vineCrmTawk", vineCrmTawk);
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -99,7 +98,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-          
+         
           `,
         }}
       />
@@ -155,7 +154,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-
+ 
           `,
         }}
       />
@@ -234,60 +233,51 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
         const salesForceUrl = '${vineCrmTawk}';
-        console.log("salesForceUrl", salesForceUrl);
-
         const salesForceData = {
-          domain: "crm",
-          type: "add_lead_to_crm",
-          name: "",
-          email: "",
-          mobile: "",
-          city: "",
-          utm_source: "DR website chat",
+          recordTypeId:"0127Q000000NDbcQAG",
+          interestedTopic:"",
+          highestQualification:"",
+          utm_parameters:"",
+          Mode_of_Study:"",
+          Verified_Mobile_No:"",
+          utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
-          Source_Campaign: "DR Website",
-          Lead_Source: "DR website chat",
-          utm_term: crmData.utm_term,
-          utm_content: crmData.utm_content,
-          country: crmCountryCode,
-          interest: ""
-        };
-        console.log("salesForceData", salesForceData);
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"
+        };  
 
+        console.log("salesForceData",salesForceData)
         data.forEach(item => {
-          console.log("item", item);
           const labelMapping = {
-            "Name": "name",
-            "Email": "email",
-            "Mobile Number": "mobile",
-            "Course you are looking for": "interest"
+              "Name": "Name",
+              "Email": "Email",
+              "Mobile Number": "Phone",
+              "Course you are looking for": "Interested_Topic"
           };
           const propertyName = labelMapping[item.label] || item.label;
           salesForceData[propertyName] = item.answer;
-        });
-
-       
-
-        fetch(salesForceUrl, {
-          method: 'POST',
-          headers: {
+      });
+      console.log("vineCrmData",vineCrmData)
+      fetch(salesForceUrl, {
+        method: 'POST',
+        headers: {
             'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(salesForceData),
-        })
-        .then(response => {
-          if (!response.ok) {
+        },
+        body: JSON.stringify(salesForceData),
+    })
+    .then(response => {
+        if (!response.ok) {
             throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then(responseData => {
-          console.log('Vine CRM response:', responseData);
-        })
-        .catch(error => {
-          console.error('Error submitting data to Vine CRM:', error);
-        });
+        }
+        return response.json();
+    })
+    .then(responseData => {
+        console.log('Salesforce response:', responseData);
+    })
+    .catch(error => {
+        console.error('Error submitting data to Salesforce:', error);
+    });
       };
     `,
         }}
