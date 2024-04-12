@@ -201,7 +201,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/*End Google Tag Manager (noscript) */}
 
-      <Script
+      {/* <Script
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
@@ -216,7 +216,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           })();
               `,
         }}
-      />
+      /> */}
 
       <Script
         strategy="lazyOnload"
@@ -236,26 +236,45 @@ const MyApp = ({ Component, pageProps }: any) => {
         const salesForceUrl = '${vineCrmTawk}';
         console.log("salesForceUrl",salesForceUrl)
         const salesForceData = {
-          recordTypeId:"0127Q000000NDbcQAG",
-          interestedTopic:"",
-          highestQualification:"",
-          utm_parameters:"",
-          Mode_of_Study:"",
-          Verified_Mobile_No:"",
+          // recordTypeId:"0127Q000000NDbcQAG",
+          // interestedTopic:"",
+          // highestQualification:"",
+          // utm_parameters:"",
+          // Mode_of_Study:"",
+          // Verified_Mobile_No:"",
+          // utm_source: "DR website chat ",
+          // utm_medium: "DR Website",
+          // utm_campaign: "DR Website",
+          // Source_Campaign:"DR Website",
+          // Lead_Source:"DR website chat"
+
+
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          mobile: "",
+          city: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
+          utm_term: crmData.utm_term,
+          utm_content: crmData.utm_content,
+          country: crmCountryCode,
+          interest: "",
+          
+          
         };   
         console.log("salesForceData", salesForceData)
         data.forEach(item => {
           console.log("item",item)
           const labelMapping = {
-              "Name": "Name",
-              "Email": "Email",
-              "Mobile Number": "Mobile",
-              "Course you are looking for": "interestedTopic"
+              "Name": "name",
+              "Email": "email",
+              "Mobile Number": "mobile",
+              "Course you are looking for": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
