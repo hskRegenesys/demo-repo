@@ -70,7 +70,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+          "https://www.youtube.com/embed/o0kKs3BPc_o?autoplay=1&loop=1&playlist=o0kKs3BPc_o",
         title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
@@ -521,15 +521,15 @@ export const courseData = {
           text: `Dr. Suvarna M. Deshpande is a seasoned professional in the Indian Pharmaceutical Industry, with extensive experience from grassroots to senior management roles. With qualifications including a B. Pharm, MBA, and PhD in
 
           Marketing Management, she brings profound expertise to her roles. Dr. Suvarna has worked with renowned pharmaceutical companies and holds executive certificates in Strategic Brand Management and Digital Marketing. Passionate about education, she has served in various capacities in prestigious institutions and is a visiting faculty at management institutes in Pune. As a corporate trainer, Dr. Suvarna designs customized programmes using interactive methods such as management games and case studies. With her extensive experience and dedication to teaching, Dr. Suvarna M. Deshpande is a valuable asset in both academia and industry.`,
-          designation: "Academic Team Leader and Senior Lecturer",
+          designation: "Industry Operations Expert and Seasoned Educator",
         },
-        {
-          id: 2,
-          image: "Yatin-Karnik.jpg",
-          title: "James Forson",
-          text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
-          designation: "BSocSc (Hons)",
-        },
+        // {
+        //   id: 2,
+        //   image: "Yatin-Karnik.jpg",
+        //   title: "James Forson",
+        //   text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
+        //   designation: "BSocSc (Hons)",
+        // },
       ],
     },
     videoOne: {
@@ -748,57 +748,57 @@ export const courseData = {
       //   defaultCurrent: 1,
       // },
     ],
-    faqsSection: [
-      {
-        id: 1,
-        faqs: [
-          {
-            id: 1,
-            title: "How This Course Will Help Me In My Career?",
-            text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
-          },
-          {
-            id: 2,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
-          },
-          {
-            id: 3,
-            title: "What Are The Modes Of Payment Available For Me?",
-            text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
-          },
-          {
-            id: 4,
-            title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
-            text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
-          },
-          {
-            id: 5,
-            title: "Is This A Certified Course?",
-            text: "Yes, all the courses are certified by the Regenesys Business School.",
-          },
-          {
-            id: 6,
-            title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
-          },
-          {
-            id: 7,
-            title:
-              "How Will I Get Access To The Assignments And Learning Content?",
-            text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
-          },
-          {
-            id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
-            text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
-          },
-        ],
-        defaultCurrent: 1,
-      },
-    ],
+    // faqsSection: [
+    //   {
+    //     id: 1,
+    //     faqs: [
+    //       {
+    //         id: 1,
+    //         title: "How This Course Will Help Me In My Career?",
+    //         text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
+    //       },
+    //       {
+    //         id: 2,
+    //         title: "Will Digital Regenesys Offer Me Job Assistance?",
+    //         text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+    //       },
+    //       {
+    //         id: 3,
+    //         title: "What Are The Modes Of Payment Available For Me?",
+    //         text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+    //       },
+    //       {
+    //         id: 4,
+    //         title:
+    //           "For How Long Will I Be Able To Access The Content After My Course Completion?",
+    //         text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+    //       },
+    //       {
+    //         id: 5,
+    //         title: "Is This A Certified Course?",
+    //         text: "Yes, all the courses are certified by the Regenesys Business School.",
+    //       },
+    //       {
+    //         id: 6,
+    //         title:
+    //           "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+    //         text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+    //       },
+    //       {
+    //         id: 7,
+    //         title:
+    //           "How Will I Get Access To The Assignments And Learning Content?",
+    //         text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+    //       },
+    //       {
+    //         id: 8,
+    //         title: "What If The Course Timings Don't Match My Work Timings?",
+    //         text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+    //       },
+    //     ],
+    //     defaultCurrent: 1,
+    //   },
+    // ],
     courseBenefits: {
       title: "Benefits",
       desc: "",
@@ -2746,7 +2746,7 @@ If you are passionate about starting your own full-stack web development busines
       {
         id: 1,
         youtubeUrl:
-          "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
+          "https://www.youtube.com/embed/WAxlaL2nYD8?autoplay=1&loop=1&playlist=WAxlaL2nYD8",
         title: "Certificate Course in Data Science",
         text: "Discover your potential with a Data Science course designed for people looking to upskill themselves or learn the skills for success in the Data Science field. Learn the real-world application of Data Science taught by industry experts. Enrol in this course and build a career in the most sought-after field. Take the first step towards a successful future!",
         lists: [
@@ -4554,7 +4554,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
 
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title:
           "Certification in Artificial Intelligence Introductory Programme",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Introductory Programme' and unlock the
@@ -9219,7 +9219,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/S5RDj33518g?autoplay=1&loop=1&playlist=S5RDj33518g",
+          "https://www.youtube.com/embed/up8EdCMPl60?autoplay=1&loop=1&playlist=up8EdCMPl60",
 
         title: "Certification Programme in Cybersecurity",
         text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with Cyber Security Fundamentals course. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",
