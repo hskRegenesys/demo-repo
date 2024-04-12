@@ -98,7 +98,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-          
+         
           `,
         }}
       />
@@ -154,7 +154,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-
+ 
           `,
         }}
       />
@@ -245,15 +245,18 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-        };   
+        };  
+
+        console.log("salesForceData",salesForceData)
         data.forEach(item => {
+          console.log("item",item)
           const labelMapping = {
               "Name": "Name",
               "Email": "Email",
               "Mobile Number": "Phone",
               "Course you are looking for": "Interested_Topic"
           };
-          const propertyName = labelMapping[item.label] || item.label; 
+          const propertyName = labelMapping[item.label] || item.label;
           salesForceData[propertyName] = item.answer;
       });
       console.log("vineCrmData",vineCrmData)

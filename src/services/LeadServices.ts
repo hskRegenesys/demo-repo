@@ -9,6 +9,7 @@ class LeadService {
     ["Data Science", "Data Science"],
     ["Digital Marketing", "Digital Marketing"],
     ["Project Management", "Project Management"],
+    ["Product Management", "Product Management"],
     // ["software development", "software development"],
     ["Design Thinking", "Design Thinking"],
     ["Artificial Intelligence", "Artificial Intelligence"],
@@ -38,6 +39,8 @@ class LeadService {
       : crmData.Phone?.startsWith("+256")
       ? "UGANDA"
       : "TANZANIA";
+
+    console.log("crmData", crmData);
     await axios
       .post(
         "https://api.vinecrms.com/api/",

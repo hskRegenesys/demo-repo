@@ -11,7 +11,7 @@
   width: 40%;
 }
 
-.heding {
+.heading {
   color: var(--Light-Text-Green, #008554);
 
   font-size: 20px;
@@ -21,7 +21,7 @@
   font-family: Montserrat-Bold;
   margin-bottom: 12px;
 }
-.subheding {
+.subheading {
   font-family: Montserrat-Bold;
   font-size: 40px;
   line-height: 52px;
@@ -178,6 +178,13 @@
   font-weight: 600;
 }
 
+/* .nextButton {
+  right: -3px;
+} */
+.prevButton {
+  left: -20px;
+}
+
 @media (max-width: 920px) {
   .talentedComponent {
     display: block;
@@ -192,11 +199,11 @@
     width: 100%;
   }
 
-  .heding {
+  .heading {
     font-size: 14px;
     margin-bottom: 8px;
   }
-  .subheding {
+  .subheading {
     font-size: 24px;
     margin-bottom: 0px;
     line-height: 30px;
@@ -220,7 +227,7 @@
   }
   .nextButton,
   .prevButton {
-    display: none;
+    display: none !important;
   }
   .swiperStyle {
     --swiper-pagination-color: #008554;
