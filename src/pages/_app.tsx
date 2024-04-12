@@ -247,7 +247,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           Lead_Source:"DR website chat"
         };  
 
-        console.log("salesForceData",salesForceData)
+        
         data.forEach(item => {
           console.log("item",item)
           const labelMapping = {
@@ -260,6 +260,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
       });
       console.log("vineCrmData",vineCrmData)
+      console.log("salesForceData",salesForceData)
       fetch(salesForceUrl, {
         method: 'POST',
         headers: {
