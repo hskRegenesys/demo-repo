@@ -14,6 +14,7 @@ const CourseCertificate = ({ courseDetails }) => {
     certificateListTitle,
     certificateSkillList,
     certificateRolesList,
+    certificateSubTitleSpace,
     CertificateImage,
   } = courseDetails?.courseCertificate;
   const [showImage, setShowImage] = useState(false);
@@ -49,9 +50,12 @@ const CourseCertificate = ({ courseDetails }) => {
     <div className="certificate-row">
       <div className="row">
         <div className="col-lg-6">
-          <h2>{certificateTitle}</h2>
+          {certificateTitle && <h2>{certificateTitle}</h2>}
           <div className="certificate-content">
             <strong>{certificateSubTitle}</strong>
+            {certificateSubTitleSpace && (
+              <strong className="mt-4">{certificateSubTitleSpace}</strong>
+            )}
             <span>{certificateSubSubTitle}</span>
             <span>{certificateListTitle}</span>
             <ul>
@@ -62,7 +66,7 @@ const CourseCertificate = ({ courseDetails }) => {
                 </li>
               ))}
             </ul>
-            <span>{certificateListPara}</span>
+            <strong>{certificateListPara}</strong>
             <ul>
               {certificateRolesList?.map((item) => (
                 <li>

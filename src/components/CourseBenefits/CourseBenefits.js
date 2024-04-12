@@ -70,7 +70,7 @@ const CourseBenefits = ({ courseDetails }) => {
               <h2>{title}</h2>
             </div>
             <p>{desc}</p>
-            <CourseBenefitsMobile />
+            <CourseBenefitsMobile courseBenefitsData={courseDetails} />
           </Col>
         </Row>
       </div>
