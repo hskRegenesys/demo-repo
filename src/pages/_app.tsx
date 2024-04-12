@@ -25,7 +25,6 @@ import Schemas from "src/schemas";
 const MyApp = ({ Component, pageProps }: any) => {
   //const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
   const vineCrmTawk = `https://api.vinecrms.com/api/`;
-  console.log("vineCrmTawk", vineCrmTawk);
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -99,7 +98,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-          
+         
           `,
         }}
       />
@@ -155,7 +154,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-
+ 
           `,
         }}
       />
@@ -234,7 +233,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
         const salesForceUrl = '${vineCrmTawk}';
-        console.log("salesForceUrl",salesForceUrl)
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
           interestedTopic:"",
@@ -247,17 +245,18 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-        };   
-        console.log("salesForceData", salesForceData)
+        };  
+
+        console.log("salesForceData",salesForceData)
         data.forEach(item => {
           console.log("item",item)
           const labelMapping = {
               "Name": "Name",
               "Email": "Email",
-              "Mobile Number": "Mobile",
-              "Course you are looking for": "interestedTopic"
+              "Mobile Number": "Phone",
+              "Course you are looking for": "Interested_Topic"
           };
-          const propertyName = labelMapping[item.label] || item.label; 
+          const propertyName = labelMapping[item.label] || item.label;
           salesForceData[propertyName] = item.answer;
       });
       console.log("vineCrmData",vineCrmData)
