@@ -247,20 +247,20 @@ const MyApp = ({ Component, pageProps }: any) => {
           Lead_Source:"DR website chat"
         };  
 
-        
+        console.log("salesForceData",salesForceData)
         data.forEach(item => {
           console.log("item",item)
           const labelMapping = {
-              "Name": "Name",
-              "Email": "Email",
-              "Mobile Number": "Phone",
-              "Course you are looking for": "Interested_Topic"
+              "Name": "name",
+              "Email": "email",
+              "Mobile Number": "mobile",
+              "Course you are looking for": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label;
           salesForceData[propertyName] = item.answer;
       });
-      console.log("vineCrmData",vineCrmData)
-      console.log("salesForceData",salesForceData)
+      
+      console.log("salesForceData2",salesForceData)
       fetch(salesForceUrl, {
         method: 'POST',
         headers: {
