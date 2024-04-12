@@ -253,6 +253,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: crmCountryCode,
           interest: ""
         };
+        console.log("salesForceData", salesForceData);
 
         data.forEach(item => {
           console.log("item", item);
@@ -266,7 +267,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
         });
 
-        console.log("salesForceData", salesForceData);
+       
 
         fetch(salesForceUrl, {
           method: 'POST',
