@@ -249,6 +249,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
         console.log("salesForceData",salesForceData)
         data.forEach(item => {
+          console.log("item",item)
           const labelMapping = {
               "Name": "Name",
               "Email": "Email",
