@@ -11262,7 +11262,7 @@ featured-section .right-col .sec-title h2 {
   font-weight: 700;
 }
 .mainMegaMenu li {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   position: relative;
 }
 
@@ -21539,6 +21539,7 @@ h2.highlight {
 }
 .btn-customize-programme-wise a {
   margin-bottom: 0px;
+  margin-top: 16px;
 }
 .btn-customize-programme-wise strong {
   font-size: 22px;

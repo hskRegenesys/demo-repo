@@ -17,6 +17,7 @@ import { useRouter } from "next/router";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
+import NotFound from "src/pages/404";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -32,7 +33,7 @@ const Course = (props: any) => {
 
   return (
     <Layout pageTitle={props?.course}>
-      <Style />
+      {/* <Style />
       <HeaderOne pageTitle={props?.course} />
       <MobileMenu />
       <SearchPopup />
@@ -53,7 +54,8 @@ const Course = (props: any) => {
       <PopularTopics />
       <CallToSection />
       <MainFooter />
-      <StickyBar />
+      <StickyBar /> */}
+      <NotFound />
     </Layout>
   );
 };

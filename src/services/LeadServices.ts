@@ -9,12 +9,17 @@ class LeadService {
     ["Data Science", "Data Science"],
     ["Digital Marketing", "Digital Marketing"],
     ["Project Management", "Project Management"],
+    ["Product Management", "Product Management"],
     // ["software development", "software development"],
     ["Design Thinking", "Design Thinking"],
     ["Artificial Intelligence", "Artificial Intelligence"],
     ["Full Stack Development", "Full Stack Development"],
     ["Data and Business Analytics", "Data and Business Analytics"],
     ["Management Advancement", "Management Advancement"],
+    [
+      "Operations and Supply Chain Management",
+      "Operations and Supply Chain Management",
+    ],
   ]);
 
   drLeadRecordTypeId = "0127Q000000NDbXQAW";

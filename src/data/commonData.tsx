@@ -46,6 +46,9 @@ const Data = {
       "digital-marketing-fundamentals":
         "Digital Marketing Fundamentals Course Online | Digital Regenesys",
 
+      "operations-and-supply-chain-management":
+        "Operations & Supply Chain Management Course Online |Digital Regenesys",
+
       "basic-digital-marketing-course":
         "Digital Marketing Fundamentals Course Online | Digital Regenesys",
       "advanced-digital-marketing":
@@ -674,6 +677,10 @@ const Data = {
       "full-stack-development": `
         full stack web development, full stack software development, full stack web and software development course, what is full stack development, full stack software development course, full stack web development course, full stack web developer, full stack development certificate
         `,
+
+      "operations-and-supply-chain-management":
+        "operations and supply chain management, operations management course, supply chain management course, supply chain management, operations management processes and supply chains, supply chain management online course, online supply chain management courses, operations management short courses in south africa , operations management online course,  operations management courses online , bachelor of commerce in supply chain and operations management, best online courses for supply chain management, supply chain management certification courses online        ",
+
       "basic-digital-marketing": `
         Basic Digital Marketing Course, 
         Basic Digital Marketing Course details, 
@@ -1048,6 +1055,10 @@ const Data = {
         "At Digital Regenesys, we provide top-notch education to empower all students for success in the 5th Industrial Revolution and beyond. Discover our digital courses now.",
       "management-advancement":
         "With Management Advancement Course online at Digital Regenesys, explore career-enhancing opportunities and gain leadership skills & certification. Enroll Now!",
+
+      "operations-and-supply-chain-management":
+        "Operations & Supply Chain Management Course online at Digital Regenesys offers industry-relevant skills for success. Unlock your potential today.        ",
+
       "product-management":
         "Best product management courses online. Find the best product management certification courses to enhance your skills and advance your career. Enrol today!        ",
       allCourse:
@@ -1607,6 +1618,10 @@ const Data = {
         "/all-courses/digital-marketing/basic-digital-marketing",
       "digital-marketing-fundamentals":
         "/all-courses/digital-marketing/digital-marketing-fundamentals",
+
+      "operations-and-supply-chain-management":
+        "/all-courses/operations-and-supply-chain-management",
+
       "advanced-digital-marketing":
         "/all-courses/digital-marketing/advanced-digital-marketing",
       "applied-digital-marketing":

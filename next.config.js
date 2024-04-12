@@ -1197,6 +1197,10 @@ const createReWrites = () => {
       source: "/all-courses/management-advancement",
       destination: "/all-courses/management-advancement/48",
     },
+    // {
+    //   source: "/all-courses/operations-and-supply-chain-management",
+    //   destination: "/all-courses/operations-and-supply-chain-management/281",
+    // },
     {
       source: "/all-courses/product-management",
       destination: "/all-courses/product-management/49",
