@@ -1,13 +1,13 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
 import styles from "./TalentedComponent.module.css";
-import TalentedComponentData from "../../../data/newComponentData/commonComponentData/FacultyData";
 import FacultyData from "../../../data/newComponentData/commonComponentData/FacultyData";
 
 SwiperCore.use([Navigation, Pagination]);
+
 interface TalentedComponentProp {
   handleEnrollButtonClick: () => void;
 }
@@ -18,12 +18,13 @@ interface Faculty {
   courseName: string;
   yearsOfExperience?: string;
 }
+
 const TalentedComponent: React.FC<TalentedComponentProp> = ({
   handleEnrollButtonClick,
 }) => {
   const data: Faculty[] = Object.values(FacultyData);
-  const swiperRef = useRef<any>(null);
   const [paginationText, setPaginationText] = useState<any>(false);
+  const swiperRef = useRef<any>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,6 +39,33 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  useEffect(() => {
+    const swiper = swiperRef.current?.swiper;
+
+    if (swiper) {
+      const arrow = document.getElementsByClassName(
+        "swiper-button-prev"
+      )[0] as HTMLElement;
+      arrow.style.display = "none";
+
+      swiper.on("slideChange", () => {
+        const realIndex = swiper.realIndex;
+        if (realIndex === 0) {
+          console.log(`real index:${realIndex} - hide arrow`);
+          arrow.style.display = "none";
+        } else {
+          console.log(`real index:${realIndex} - show arrow`);
+          arrow.style.display = "block";
+        }
+      });
+
+      // Clean up function
+      return () => {
+        swiper.destroy(true, true);
+      };
+    }
   }, []);
 
   const handleNextSlide = () => {
@@ -55,8 +83,8 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   return (
     <div className={styles.talentedComponent}>
       <div className={styles.leftSection}>
-        <h2 className={styles.heding}>Meet our Faculty</h2>
-        <h2 className={styles.subheding}>See Our Talented Faculty</h2>
+        <h2 className={styles.heading}>Meet our Faculty</h2>
+        <h2 className={styles.subheading}>See Our Talented Faculty</h2>
         <button className={styles.btnStart} onClick={handleEnrollButtonClick}>
           Start Learning Today!
         </button>
@@ -66,9 +94,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
         <div className={styles.cardContainer}>
           <div className={styles.swiperNavigation}>
             <Swiper
-              ref={(instance) => {
-                if (instance) swiperRef.current = instance as any;
-              }}
+              ref={swiperRef}
               className={styles.swiperStyle}
               slidesPerView={3}
               navigation={{
@@ -77,21 +103,11 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
               }}
               pagination={paginationText}
               breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                },
-                560: {
-                  slidesPerView: 1,
-                },
-                1190: {
-                  slidesPerView: 2,
-                },
-                1250: {
-                  slidesPerView: 2.5,
-                },
-                1920: {
-                  slidesPerView: 3.5,
-                },
+                0: { slidesPerView: 1 },
+                560: { slidesPerView: 1 },
+                1190: { slidesPerView: 2 },
+                1250: { slidesPerView: 2.5 },
+                1920: { slidesPerView: 3.5 },
               }}
             >
               {data.map((faculty: Faculty, index: number) => (
@@ -105,7 +121,6 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                     />
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
                     <p className={styles.courseName}>{faculty.courseName}</p>
-
                     <span>{faculty?.yearsOfExperience}</span>
                   </div>
                 </SwiperSlide>

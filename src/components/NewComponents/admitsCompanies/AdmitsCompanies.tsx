@@ -19,11 +19,19 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
 
   const swiperSettings = {
     loop: true,
-    autoplay: {
-      delay: 2000,
-    },
     slidesPerView: "auto" as const,
+    autoplay: {
+      enabled: true,
+      delay: 0,
+      pauseOnMouseEnter: false,
+      disableOnInteraction: true,
+    },
+    centeredSlides: true,
+    navigation: false,
+    noSwipingClass: "swiper-slide",
+    spaceBetween: 15,
     speed: 1000,
+    rewind: true,
   };
 
   return (

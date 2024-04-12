@@ -70,11 +70,6 @@ const AllCoursesNew = () => {
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <StudentReview />
-      <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
-      <LearnersSupport
-        data={MultiplePagesBrandData.LearnersSupportSectionData}
-        handleEnrollButtonClick={handleEnrollButtonClick}
-      />
       <Faq data={MultiplePagesBrandData.faqSections} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>

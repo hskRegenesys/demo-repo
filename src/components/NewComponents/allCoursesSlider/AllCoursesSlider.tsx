@@ -124,13 +124,13 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
       <h2 className={Styles.bigHeading}>
         {AllCourcesCardData.allCoursesSliderSubHeading}
       </h2>
-      <div>
+      {/* <div>
         <img
           src="/assets/images/new-component-assets/Rocket BG.svg"
           alt="rocket"
           className={Styles.rocketImg}
         />
-      </div>
+      </div> */}
       <div className={Styles.cardContainer}>
         <Swiper
           className={Styles.swiperStyle}
