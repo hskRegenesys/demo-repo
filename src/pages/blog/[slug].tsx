@@ -10,9 +10,14 @@ import BlogContainer from "@/components/blogsBody/BlogContainer";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const Post = () => {
+interface PostsByCategoryProps {
+  slug: string;
+  resolvedUrl: string;
+}
+
+const Post: React.FC<PostsByCategoryProps> = ({ slug, resolvedUrl }) => {
   const router = useRouter();
-  const { slug } = router.query;
+  // const { slug } = router.query;
   const [blogList, setBlogList] = useState<any>([]);
 
   // const xmlOperation = async (sitemapData: any) => {
@@ -34,7 +39,7 @@ const Post = () => {
   //   xmlOperation(blogList);
   // }, [blogList]);
   return (
-    <Layout pageTitle="blog" blogList={blogList}>
+    <Layout pageTitle="blog" blogList={blogList} slug={resolvedUrl}>
       <Style />
       <HeaderOne variant="blog" />
       <MobileMenu />
@@ -46,6 +51,18 @@ const Post = () => {
       <StickyBar />
     </Layout>
   );
+};
+
+export const getServerSideProps = async (context) => {
+  const { slug } = context.params;
+  const { resolvedUrl } = context;
+
+  return {
+    props: {
+      slug,
+      resolvedUrl,
+    },
+  };
 };
 
 export default Post;

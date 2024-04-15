@@ -10,10 +10,19 @@ import BlogsByCategories from "@/components/blogsBody/BlogsByCategories";
 import Script from "next/script";
 import { useState } from "react";
 
-const PostsByCategory = () => {
+interface PostsByCategoryProps {
+  slug: string;
+  resolvedUrl: string;
+}
+
+const PostsByCategory: React.FC<PostsByCategoryProps> = ({
+  slug,
+  resolvedUrl,
+}) => {
   const router = useRouter();
-  const { slug } = router.query;
-const [categoryList,setCategoryList]=useState<any>([])
+  // const { slug } = router.query;
+  const [categoryList, setCategoryList] = useState<any>([]);
+
   return (
     <>
       <Script
@@ -27,12 +36,21 @@ const [categoryList,setCategoryList]=useState<any>([])
               `,
         }}
       />
-      <Layout pageTitle="category" categoryList={categoryList}>
+      <Layout
+        pageTitle="category"
+        categoryList={categoryList}
+        slug={resolvedUrl}
+      >
         <Style />
         <HeaderOne variant="blog" />
         <MobileMenu />
         <SearchPopup />
-        {slug && <BlogsByCategories categorySlug={slug.toString()} setCategoryList={setCategoryList} />}
+        {slug && (
+          <BlogsByCategories
+            categorySlug={slug.toString()}
+            setCategoryList={setCategoryList}
+          />
+        )}
         <MainFooter />
         <StickyBar />
       </Layout>
@@ -48,4 +66,15 @@ const [categoryList,setCategoryList]=useState<any>([])
   );
 };
 
+export const getServerSideProps = async (context) => {
+  const { slug } = context.params;
+  const { resolvedUrl } = context;
+
+  return {
+    props: {
+      slug,
+      resolvedUrl,
+    },
+  };
+};
 export default PostsByCategory;
