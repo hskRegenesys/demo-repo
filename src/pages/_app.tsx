@@ -236,19 +236,15 @@ const MyApp = ({ Component, pageProps }: any) => {
         const salesForceUrl = '${salesForceUrl}';
         console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
+
           recordTypeId:"0127Q000000NDbcQAG",
-          
           Interested_Topic:"",
           Qualification:"",
-          
           utm_parameters:"",
           Mode_of_Study:"",
           Verified_Mobile_No:"",
-          utm_source: "DR website chat ",
-          utm_medium: "DR Website",
-          utm_campaign: "DR Website",
-          Source_Campaign:"DR Website",
-          Lead_Source:"DR website chat"
+
+          
 
         };   
         data.forEach(item => {
