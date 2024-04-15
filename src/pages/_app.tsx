@@ -244,16 +244,12 @@ const MyApp = ({ Component, pageProps }: any) => {
           city: "",
           country: "South",
           interest: "",
-          source: "",
-          campaign: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-          utm_term: "",
-          utm_content: "",
-          utm_url: "",
+          
         };   
         data.forEach(item => {
           console.log("item",item)
