@@ -53,7 +53,7 @@ const Post: React.FC<PostsByCategoryProps> = ({ slug, resolvedUrl }) => {
   );
 };
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps = async (context: any) => {
   const { slug } = context.params;
   const { resolvedUrl } = context;
 
