@@ -23,7 +23,7 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
-  const salesForceUrl = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
+  const salesForceUrl = `https://api.vinecrms.com/api/`;
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
   return (
     <ContextProvider>
@@ -236,19 +236,33 @@ const MyApp = ({ Component, pageProps }: any) => {
         const salesForceUrl = '${salesForceUrl}';
         console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
-          recordTypeId:"0127Q000000NDbcQAG",
-          Programme_Of_Interest:"",
-          utm_parameters:"",
-          Mode_of_Study:"",
-          Verified_Mobile_No:"",
+
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          mobile: "",
+          city: "",
+          country: "",
+          interest: "",
+          source: "",
+          campaign: "",
+          utm_source: "",
+          utm_medium: "",
+          utm_campaign: "",
+          utm_term: "",
+          utm_content: "",
+          utm_url: "",
+          Source_Campaign: "",
+          Lead_Source: "",
         };   
         data.forEach(item => {
           console.log("item",item)
           const labelMapping = {
-              "Name": "Name",
-              "Email": "Email",
-              "Mobile No": "Phone",
-              "Programme of Interest": "Programme_Of_Interest"
+              "Name": "name",
+              "Email": "email",
+              "Mobile No": "mobile",
+              "Programme of Interest": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
