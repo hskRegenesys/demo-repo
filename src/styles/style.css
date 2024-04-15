@@ -3910,6 +3910,10 @@ tns-controls-tools {
   display: block;
 }
 
+.accordion-box .block .content .text  a{
+ color: #0000EE ;
+ text-decoration: underline;
+}
 /***
 
 ====================================================================
