@@ -242,7 +242,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           email: "",
           mobile: "",
           city: "",
-          country: "South",
+          country: "South Africa",
           interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
