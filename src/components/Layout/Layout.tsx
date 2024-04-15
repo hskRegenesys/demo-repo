@@ -2,7 +2,7 @@ import Preloader from "@/components/Preloader/Preloader";
 import useScroll from "@/hooks/useScroll";
 import Head from "next/head";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { canonicalConstants } from "@/components/config/constant";
 import Data from "@/data/commonData";
 import { useRouter } from "next/router";
@@ -13,7 +13,8 @@ import { Modal } from "react-bootstrap";
 
 const Layout = (props: any) => {
   const [show, setShow] = useState(false);
-  const { asPath, pathname } = useRouter();
+  const { asPath } = useRouter();
+
   const {
     children,
     pageTitle,
@@ -23,6 +24,7 @@ const Layout = (props: any) => {
     categoryList,
     blogList,
     context,
+    slug,
   } = props;
 
   const [loading, setLoading] = useState(true);
@@ -36,6 +38,7 @@ const Layout = (props: any) => {
 
     return () => clearTimeout(timeoutId);
   }, []);
+
   const metaData: any = Data;
 
   const title =
@@ -74,6 +77,20 @@ const Layout = (props: any) => {
       ? metaData?.metaInfo?.ogImg?.[pageTitle]
       : metaData?.metaInfo?.ogImg?.["home"];
 
+  const canonicalBaseUrl = (() => {
+    const isProduction = process.env.ENV_NAME === "PRODUCTION";
+    return isProduction
+      ? `https://www.digitalregenesys.com${slug ? `${slug}` : asPath}`
+      : `https://uat-new.digitalregenesys.com${slug ? `${slug}` : asPath}`;
+  })();
+
+  useEffect(() => {
+    const linkElement = document.getElementById("dynamic-url");
+    if (linkElement) {
+      linkElement.setAttribute("href", canonicalBaseUrl);
+    }
+  }, [canonicalBaseUrl]);
+
   function fetchAsPath() {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -85,10 +102,10 @@ const Layout = (props: any) => {
     try {
       const asPath: any = await fetchAsPath();
 
-      let canonicalBaseUrl = "https://www.digitalregenesys.com" + asPath;
+      let canonicalUrl = "https://www.digitalregenesys.com" + asPath;
 
       if (process.env.ENV_NAME !== "PRODUCTION") {
-        canonicalBaseUrl = "https://uat-new.digitalregenesys.com" + asPath;
+        canonicalUrl = "https://uat-new.digitalregenesys.com" + asPath;
       }
       const regex = /\/([^\/]+)\/?$/;
       const match = asPath.match(regex);
@@ -97,8 +114,8 @@ const Layout = (props: any) => {
         slugUrl = match[1];
       }
       setSlugUrlData(slugUrl);
-      if (!canonicalBaseUrl.includes("slug")) {
-        setCanonicalData(canonicalBaseUrl);
+      if (!canonicalUrl.includes("slug")) {
+        setCanonicalData(canonicalUrl);
       }
     } catch (error) {}
   }
@@ -110,12 +127,13 @@ const Layout = (props: any) => {
     <>
       <Head>
         <title>{title}</title>
-        {canonicalData && <link rel="canonical" href={canonicalData} />}
+
+        {canonicalBaseUrl && (
+          <link rel="canonical" href={canonicalBaseUrl} id="dynamic-url" />
+        )}
 
         {description && <meta name="description" content={description} />}
-
         {keywords && <meta name="keywords" content={keywords} />}
-
         {process.env.ENV_NAME === "PRODUCTION" && (
           <meta name="robots" content="index, follow" />
         )}
@@ -129,7 +147,9 @@ const Layout = (props: any) => {
           content="w06PzLIca_7IZncYeLM5ZmYMOa8tuE0Kj_QdmpZ1Fr0"
         />
         {/* <!-- Facebook Meta Tags --> */}
-        {canonicalData && <meta property="og:url" content={canonicalData} />}
+        {canonicalBaseUrl && (
+          <meta property="og:url" content={canonicalBaseUrl} />
+        )}
         <meta property="og:type" content="website" />
         {title && <meta property="og:title" content={title} />}
         {description && (
@@ -139,15 +159,14 @@ const Layout = (props: any) => {
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="digitalregenesys.com" />
-        {canonicalData && (
-          <meta property="twitter:url" content={canonicalData} />
+        {canonicalBaseUrl && (
+          <meta property="twitter:url" content={canonicalBaseUrl} />
         )}
         {title && <meta name="twitter:title" content={title} />}
         {description && (
           <meta name="twitter:description" content={description} />
         )}
         {ogImg && <meta name="twitter:image" content={ogImg} />}
-
         {/* <link
           rel="alternate"
            hrefLang="x-default"
