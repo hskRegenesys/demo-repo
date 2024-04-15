@@ -236,16 +236,11 @@ const MyApp = ({ Component, pageProps }: any) => {
         const salesForceUrl = '${salesForceUrl}';
         console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
-
           recordTypeId:"0127Q000000NDbcQAG",
-          Interested_Topic:"",
-          Qualification:"",
+          Programme_Of_Interest:"",
           utm_parameters:"",
           Mode_of_Study:"",
           Verified_Mobile_No:"",
-
-          
-
         };   
         data.forEach(item => {
           console.log("item",item)
