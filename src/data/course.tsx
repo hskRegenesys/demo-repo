@@ -4858,7 +4858,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title:
           "Certification in Artificial Intelligence Intermediary Programme",
         text: `In the dynamic digital landscape, harnessing the power of Artificial Intelligence (AI) is crucial for staying ahead. Join
@@ -5181,7 +5181,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title:
           "Certification in Artificial Intelligence Advanced Applied Programme",
         text: `Unleash your potential with our 'AI Advanced Applied Programme.' Skyrocket your career by mastering advanced AI
@@ -5518,7 +5518,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title: "Certificate Course in Artificial Intelligence ",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves deep into the concepts and techniques of AI. Whether you're an aspiring student or a professional seeking to enhance your skills, this course will help you gain theoretical knowledge and practical experience to innovate and solve complex problems. Step into the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery
         `,
