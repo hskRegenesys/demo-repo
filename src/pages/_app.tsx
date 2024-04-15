@@ -236,25 +236,24 @@ const MyApp = ({ Component, pageProps }: any) => {
         const salesForceUrl = '${salesForceUrl}';
         console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
-
           domain: "crm",
           type: "add_lead_to_crm",
           name: "",
           email: "",
           mobile: "",
           city: "",
-          country: "",
+          country: "South",
           interest: "",
           source: "",
           campaign: "",
-          utm_source: "",
-          utm_medium: "",
-          utm_campaign: "",
+          utm_source: "DR website chat ",
+          utm_medium: "DR Website",
+          utm_campaign: "DR Website",
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"
           utm_term: "",
           utm_content: "",
           utm_url: "",
-          Source_Campaign: "",
-          Lead_Source: "",
         };   
         data.forEach(item => {
           console.log("item",item)
