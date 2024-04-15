@@ -225,7 +225,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
         s1.async=true;
-        s1.src='https://embed.tawk.to/64d7316f94cf5d49dc69f045/1h7k9i7u2';
+        s1.src='https://embed.tawk.to/6513f6520f2b18434fdad936/1hbavkcmj';
         s1.charset='UTF-8';
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
@@ -237,8 +237,10 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
           recordTypeId:"0127Q000000NDbcQAG",
-          interestedTopic:"",
-          highestQualification:"",
+          
+          Interested_Topic:"",
+          Qualification:"",
+          
           utm_parameters:"",
           Mode_of_Study:"",
           Verified_Mobile_No:"",
@@ -247,6 +249,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
+
         };   
         data.forEach(item => {
           console.log("item",item)
