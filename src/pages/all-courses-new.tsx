@@ -17,6 +17,7 @@ import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
 import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
+import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -69,8 +70,9 @@ const AllCoursesNew = () => {
         data={AllCoursesDynamicData.CertificationDRData}
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
-      <StudentReview />
+      <StudentReview handleEnrollButtonClick={handleEnrollButtonClick} />
       <Faq data={MultiplePagesBrandData.faqSections} />
+      <ReadMoreDropDown data={AllCoursesDynamicData.ReadMore} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

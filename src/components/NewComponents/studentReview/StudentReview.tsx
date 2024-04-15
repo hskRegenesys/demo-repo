@@ -4,7 +4,11 @@ import Styles from "./StudentReview.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
-const StudentReview = () => {
+interface StudentReviewProps {
+  handleEnrollButtonClick: () => void;
+}
+
+const StudentReview = ({ handleEnrollButtonClick }: StudentReviewProps) => {
   const {
     StudentReviewTitle,
     StudentReviewHeading,
@@ -16,8 +20,8 @@ const StudentReview = () => {
 
   return (
     <div className={Styles.cardContainer}>
-      <div className={Styles.topSecion}>
-        <h3 className={Styles.Title}>{StudentReviewTitle}</h3>
+      <div className={Styles.topSection}>
+        <h3 className={Styles.title}>{StudentReviewTitle}</h3>
         <h2 className={Styles.heading}>{StudentReviewHeading}</h2>
       </div>
       <div className={Styles.studentReviewCardContainer}>
@@ -27,25 +31,16 @@ const StudentReview = () => {
           slidesPerView={3}
           pagination={{ clickable: true }}
           breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            865: {
-              slidesPerView: 2,
-            },
-            1200: {
-              slidesPerView: 3,
-            },
-            1700: {
-              slidesPerView: 3,
-            },
+            0: { slidesPerView: 1 },
+            865: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+            1700: { slidesPerView: 3 },
           }}
         >
           {StudentReviewCard.map((card, index) => {
             const starRating = card.StudentReviewStar; // Assuming this property exists
             const fullStars = Math.floor(starRating);
             const hasHalfStar = starRating % 1 !== 0;
-
             const stars = [];
 
             for (let i = 0; i < fullStars; i++) {
@@ -98,6 +93,12 @@ const StudentReview = () => {
             );
           })}
         </Swiper>
+      </div>
+      <div
+        className={Styles.studentReviewButton}
+        onClick={handleEnrollButtonClick}
+      >
+        Enroll Now
       </div>
     </div>
   );
