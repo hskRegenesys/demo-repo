@@ -240,8 +240,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           type: "add_lead_to_crm",
           name: "",
           email: "",
-          mobile: "",
-          Phone:"",
           city: "",
           country: "South Africa",
           interest: "",
