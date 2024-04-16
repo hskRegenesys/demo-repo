@@ -1,7 +1,8 @@
 import { getQuoteTwo } from "@/data/getQuote";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import mixpanel from "mixpanel-browser";
 
 const { title, text, address, email, phone, inputs } = getQuoteTwo;
 
@@ -11,7 +12,29 @@ const GetQuoteTwo = ({ className = "" }) => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data:any) => console.log(data);
+  const [formInteraction, setFormInteraction] = useState(false);
+
+  const onSubmit = (data: any) => {
+    mixpanel.track("submit-quote-form", { submit_value: true });
+  };
+
+  useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
 
   return (
     <section className={`get-quote-two ${className}`}>
@@ -50,7 +73,11 @@ const GetQuoteTwo = ({ className = "" }) => {
             <div className="inner">
               <div className="form-box">
                 <div className="default-form">
-                  <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
+                  <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    id="contact-form"
+                    onBlur={handleFormBlur}
+                  >
                     <Row className="clearfix">
                       {inputs?.map(({ name, type, placeholder }) => (
                         <Col
