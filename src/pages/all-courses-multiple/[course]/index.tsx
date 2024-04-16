@@ -91,6 +91,19 @@ const Course = (props: any) => {
   const isPageDataAvailable =
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
+  useEffect(() => {
+    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+    if (!popupDisplayed) {
+      // Popup hasn't been displayed before
+      const timeoutModal = setTimeout(() => {
+        setIsPopupVisible(true);
+        sessionStorage.setItem("popupDisplayed", "true");
+      }, 5000);
+
+      return () => clearTimeout(timeoutModal);
+    }
+  }, []);
+
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
       <ToastContainer />

@@ -12,7 +12,6 @@ import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideo
 import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import _ from "lodash";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import MobileMenu from "@/components/Header/MobileMenu";
 import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
@@ -38,11 +37,16 @@ const HomeNew = () => {
   };
 
   useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 4000);
+    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+    if (!popupDisplayed) {
+      // Popup hasn't been displayed before
+      const timeoutModal = setTimeout(() => {
+        setIsPopupVisible(true);
+        sessionStorage.setItem("popupDisplayed", "true");
+      }, 5000);
 
-    return () => clearTimeout(timeoutModal);
+      return () => clearTimeout(timeoutModal);
+    }
   }, []);
 
   return (
