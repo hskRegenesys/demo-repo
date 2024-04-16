@@ -241,6 +241,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           name: "",
           email: "",
           mobile: "",
+          Phone:"",
           city: "",
           country: "South Africa",
           interest: "",
@@ -256,7 +257,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           const labelMapping = {
               "Name": "name",
               "Email": "email",
-              "Phone": "Phone",
+              "Phone": "mobile",
               "Programme of Interest": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
