@@ -23,7 +23,7 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
-  const salesForceUrl = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
+  const salesForceUrl = `https://api.vinecrms.com/api/`;
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
   return (
     <ContextProvider>
@@ -225,7 +225,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
         s1.async=true;
-        s1.src='https://embed.tawk.to/6513f6520f2b18434fdad936/1hbavkcmj';
+        s1.src='https://embed.tawk.to/64d7316f94cf5d49dc69f045/1h7k9i7u2';
         s1.charset='UTF-8';
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
@@ -236,28 +236,28 @@ const MyApp = ({ Component, pageProps }: any) => {
         const salesForceUrl = '${salesForceUrl}';
         console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
-          recordTypeId:"0127Q000000NDbcQAG",
-          
-          Interested_Topic:"",
-          Qualification:"",
-          
-          utm_parameters:"",
-          Mode_of_Study:"",
-          Verified_Mobile_No:"",
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          mobile: "",
+          city: "",
+          country: "South Africa",
+          interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-
+          
         };   
         data.forEach(item => {
           console.log("item",item)
           const labelMapping = {
-              "Name": "Name",
-              "Email": "Email",
-              "Mobile No": "Phone",
-              "Programme of Interest": "Programme_Of_Interest"
+              "Name": "name",
+              "Email": "email",
+              "mobile": "Phone",
+              "Programme of Interest": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;

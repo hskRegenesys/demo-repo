@@ -1637,17 +1637,17 @@ const Data = {
       "applied-data-science": "/all-courses/data-science/applied-data-science",
       "design-thinking": "/all-courses/design-thinking",
 
-      Blog: "/blog ",
+      Blog: "/blog",
       "artificial-intelligence": "/all-courses/artificial-intelligence",
       "ai-introductory": "/all-courses/artificial-intelligence/ai-introductory",
       "ai-intermediary": "/all-courses/artificial-intelligence/ai-intermediary",
       "ai-advanced-applied":
         "/all-courses/artificial-intelligence/ai-advanced-applied",
-      "software-development": "software-development-course",
-      "full-stack-development": "full-stack-development",
-      "data-and-business-analytics": "data-and-business-analytics",
-      "management-advancement": "all-courses/management-advancement",
-      "product-management": "all-courses/product-management",
+      "software-development": "/software-development-course",
+      "full-stack-development": "/full-stack-development",
+      "data-and-business-analytics": "/data-and-business-analytics",
+      "management-advancement": "/all-courses/management-advancement",
+      "product-management": "/all-courses/product-management",
       //  -------------multiplepages brand--------------------
 
       "online-courses": "/online-courses",
