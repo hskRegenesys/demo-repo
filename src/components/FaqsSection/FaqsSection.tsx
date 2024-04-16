@@ -38,7 +38,12 @@ const Faqs = (props: any) => {
                 }`}
               >
                 <div className="content">
-                  <div className="text">{text}</div>
+                  <div
+                    className="text"
+                    dangerouslySetInnerHTML={{
+                      __html: text.replace(/\n/g, "<br> "),
+                    }}
+                  ></div>
                 </div>
               </div>
             </li>

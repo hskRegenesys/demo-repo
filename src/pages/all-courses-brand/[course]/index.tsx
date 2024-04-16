@@ -173,7 +173,7 @@ const Course = (props: any) => {
       <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
       <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
-      <StudentReview />
+      <StudentReview handleEnrollButtonClick={handleEnrollButtonClick} />
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
