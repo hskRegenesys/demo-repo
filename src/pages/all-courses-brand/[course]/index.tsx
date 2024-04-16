@@ -83,14 +83,6 @@ const Course = (props: any) => {
     setIsPopupVisible(false);
   };
 
-  useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 4000);
-
-    return () => clearTimeout(timeoutModal);
-  }, []);
-
   const YoutubePopupButtonClick = (videoLink: string) => {
     setIsisYoutubePopup(true);
     setYoutubeVideoLink(videoLink);
@@ -127,6 +119,17 @@ const Course = (props: any) => {
   const isPageDataAvailable =
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
+  useEffect(() => {
+    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+    if (!popupDisplayed) {
+      const timeoutModal = setTimeout(() => {
+        setIsPopupVisible(true);
+        sessionStorage.setItem("popupDisplayed", "true");
+      }, 5000);
+
+      return () => clearTimeout(timeoutModal);
+    }
+  }, []);
   return (
     <Layout pageTitle={props?.course}>
       {isPopupVisible && (

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
-import PopupForm from "../popupForm/PopupForm";
 
 interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;

@@ -3,7 +3,7 @@ import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import _ from "lodash";
 import { ToastContainer, toast } from "react-toastify";
@@ -55,6 +55,18 @@ const Course = (props: any) => {
   const handleYoutubePopupClose = () => {
     setIsisYoutubePopup(false);
   };
+  useEffect(() => {
+    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+    if (!popupDisplayed) {
+      // Popup hasn't been displayed before
+      const timeoutModal = setTimeout(() => {
+        setIsPopupVisible(true);
+        sessionStorage.setItem("popupDisplayed", "true");
+      }, 5000);
+
+      return () => clearTimeout(timeoutModal);
+    }
+  }, []);
 
   const MainCourseData = DataSeparatorPages(page);
 
