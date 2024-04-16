@@ -256,6 +256,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               "Name": "name",
               "Email": "email",
               "Phone": "mobile",
+              "Mobile No": "mobile",
               "Programme of Interest": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
