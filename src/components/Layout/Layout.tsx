@@ -10,6 +10,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ModalPopup from "../Modal/ModalPopup";
 import { Modal } from "react-bootstrap";
+import mixpanel from "mixpanel-browser";
 
 const Layout = (props: any) => {
   const [show, setShow] = useState(false);
@@ -122,6 +123,65 @@ const Layout = (props: any) => {
   useEffect(() => {
     setCanonicalBaseUrl();
   }, [asPath]);
+
+  // Mixpanel Integration
+  const captureSessionEnd = () => {
+    mixpanel.track("Session End");
+  };
+  useEffect(() => {
+    mixpanel.init("54f723cb0066c4c06a2102ffdbefe23b", {
+      // debug: true,
+      track_pageview: true,
+      persistence: "localStorage",
+    });
+    mixpanel.track("Session Start");
+    mixpanel.track("page_view");
+
+    window.addEventListener("beforeunload", captureSessionEnd);
+    return () => {
+      window.removeEventListener("beforeunload", captureSessionEnd);
+    };
+  }, []);
+
+  // Scroll depth mix-panel
+  const trackScrollDepth = () => {
+    let maxScrollDepth = 0;
+    let isScrollTriggered = false;
+
+    const calculateScrollDepth = () => {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPosition = window.scrollY;
+
+      const currentScrollDepth = scrollPosition / totalHeight;
+
+      if (currentScrollDepth > maxScrollDepth) {
+        maxScrollDepth = currentScrollDepth;
+      }
+
+      isScrollTriggered = true;
+    };
+
+    window.addEventListener("scroll", calculateScrollDepth);
+
+    const trackWhenLeave = () => {
+      if (isScrollTriggered) {
+        const scrollPercentage = maxScrollDepth * 100;
+        mixpanel.track("Page-Scrolled", {
+          depth: `${scrollPercentage.toFixed(2)}%`,
+        });
+      }
+    };
+
+    window.addEventListener("beforeunload", trackWhenLeave);
+
+    return () => {
+      window.removeEventListener("scroll", calculateScrollDepth);
+      window.removeEventListener("beforeunload", trackWhenLeave);
+    };
+  };
+  useEffect(() => {
+    trackScrollDepth();
+  }, []);
 
   return (
     <>

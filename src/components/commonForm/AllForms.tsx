@@ -10,6 +10,7 @@ import Modal from "react-bootstrap/Modal";
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
 import { useRouter } from "next/router";
+import mixpanel from "mixpanel-browser";
 
 export default function LandingForm(contactform: any) {
   const hookForm: any = useForm();
@@ -19,6 +20,7 @@ export default function LandingForm(contactform: any) {
   const [geoLocationData, setGeoLocationData] = useState<any>({});
   const [countryData, setCountryData] = useState<any>({});
   const [btnDisable, sebtnDisable] = useState(false);
+  const [formInteraction, setFormInteraction] = useState(false);
 
   const [show, setShow] = useState(false);
 
@@ -55,6 +57,7 @@ export default function LandingForm(contactform: any) {
       data.date = date;
     }
     handleShow();
+    mixpanel.track("submit-contact-form", { submit_value: true });
     // router.push("/thankYou");
     const result = leadService.saveLead(data);
   };
@@ -98,6 +101,23 @@ export default function LandingForm(contactform: any) {
   } = hookForm;
   const selectedCourse = watch("Programme_Of_Interest");
 
+  useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
   return (
     <>
       <div className="contact-section ">
@@ -108,6 +128,7 @@ export default function LandingForm(contactform: any) {
             <form
               className="form-box text-start"
               onSubmit={handleSubmit(onSubmit)}
+              onBlur={handleFormBlur}
             >
               <div className="row mb-4">
                 <div className="col-md-6">
@@ -123,8 +144,13 @@ export default function LandingForm(contactform: any) {
                           message: "Invalid User Name",
                         },
                       })}
-                      onKeyUp={() => {
+                      onKeyUp={(e) => {
                         trigger("Name");
+                        mixpanel.track("Name Changed", {
+                          InputName: "name",
+                          Filled: (e.target as HTMLInputElement).value !== "",
+                          newValue: (e.target as HTMLInputElement).value,
+                        });
                       }}
                     />
                     {errors?.Name && (
@@ -147,8 +173,13 @@ export default function LandingForm(contactform: any) {
                           message: "Invalid email address",
                         },
                       })}
-                      onKeyUp={() => {
+                      onKeyUp={(e) => {
                         trigger("Email");
+                        mixpanel.track("Email Changed", {
+                          InputName: "Email",
+                          Filled: (e.target as HTMLInputElement)?.value !== "",
+                          newValue: (e.target as HTMLInputElement)?.value,
+                        });
                       }}
                     />
                     {errors.Email && (
@@ -186,6 +217,11 @@ export default function LandingForm(contactform: any) {
                       placeholder="Select Country Code*"
                       onChange={(e) => {
                         setValue("Phone", e);
+                        mixpanel.track("Phone Changed", {
+                          InputName: "Phone",
+                          Filled: e !== "",
+                          newValue: e,
+                        });
                       }}
                       className={`${errors.Phone && "invalid"}`}
                     />

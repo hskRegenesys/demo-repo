@@ -11,6 +11,7 @@ import { downloadFromBlob } from "@/components/config/helper";
 import { allCourseList } from "@/data/courseData";
 import Styles from "./requestForm.module.css";
 import { brochureDetails } from "@/data/course";
+import mixpanel from "mixpanel-browser";
 
 function RequestForm(props: any) {
   const router = useRouter();
@@ -22,6 +23,7 @@ function RequestForm(props: any) {
   const [btnDisable, setBtnDisable] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState<any>("");
+  const [formInteraction, setFormInteraction] = useState(false);
 
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
@@ -98,6 +100,9 @@ function RequestForm(props: any) {
       props.onFormSubmit();
       reset();
       downloadFromBlob(response?.data, brochureName?.name) == false;
+      if (response?.status === 200) {
+        mixpanel.track("submit-brochure-form", { submit_value: true });
+      }
     }
     if (props?.title !== "Download Brochure") {
       props.isWhatsapp
@@ -110,6 +115,7 @@ function RequestForm(props: any) {
         autoClose: 3000,
         className: Styles.tost,
       });
+      mixpanel.track("submit-counselling-form", { submit_value: true });
       props.onFormSubmit();
       reset();
     }
@@ -153,11 +159,34 @@ function RequestForm(props: any) {
       //   : setValue("Programme_Of_Interest", filterData?.name);
     }
   }, [id]);
+
+  useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
+
   return (
     <div className={Styles.RequestFormStyle}>
       <ToastContainer />
 
-      <form className={Styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className={Styles.formContainer}
+        onSubmit={handleSubmit(onSubmit)}
+        onBlur={handleFormBlur}
+      >
         <div className={Styles.FormCard}>
           <strong className={Styles.Title}>
             {" "}
@@ -176,8 +205,13 @@ function RequestForm(props: any) {
                       message: "Invalid User Name",
                     },
                   })}
-                  onKeyUp={() => {
+                  onKeyUp={(e) => {
                     trigger("Name");
+                    mixpanel.track("Name Changed", {
+                      InputName: "name",
+                      Filled: (e.target as HTMLInputElement)?.value !== "",
+                      newValue: (e.target as HTMLInputElement)?.value,
+                    });
                   }}
                 />
                 {errors?.Name && (
@@ -201,8 +235,13 @@ function RequestForm(props: any) {
                       message: "Invalid email address",
                     },
                   })}
-                  onKeyUp={() => {
+                  onKeyUp={(e) => {
                     trigger("Email");
+                    mixpanel.track("Email Changed", {
+                      InputName: "Email",
+                      Filled: (e.target as HTMLInputElement)?.value !== "",
+                      newValue: (e.target as HTMLInputElement)?.value,
+                    });
                   }}
                 />
                 {errors?.Email && (
@@ -238,6 +277,11 @@ function RequestForm(props: any) {
                   onChange={(e) => {
                     setValue("Phone", e);
                     setPhoneNumber(e);
+                    mixpanel.track("Phone Changed", {
+                      InputName: "Phone",
+                      Filled: e !== "",
+                      newValue: e,
+                    });
                   }}
                   onBlur={() => {
                     trigger("Phone");
