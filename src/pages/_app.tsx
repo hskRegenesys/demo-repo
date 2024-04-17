@@ -23,9 +23,8 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
-  //const salesforceResponse = `${process.env.NEXT_PUBLIC_SALESFORCE_API_BASE_URL}/salesforce`;
-  const vineCrmTawk = `https://api.vinecrms.com/api/`;
-  console.log("vineCrmTawk", vineCrmTawk);
+  const salesForceUrl = `https://api.vinecrms.com/api/`;
+  //const vineCrmTawk = `https://api.vinecrms.com/api/`;
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -33,7 +32,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
       <Schemas type={Constants.localbusiness} />
-
       {/* Pixel code script start */}
       <Script
         dangerouslySetInnerHTML={{
@@ -99,7 +97,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-          
+         
           `,
         }}
       />
@@ -155,7 +153,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           b.type = "text/javascript";b.async = true;
           b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
           s.parentNode.insertBefore(b, s);})(window.lintrk);
-
+ 
           `,
         }}
       />
@@ -201,7 +199,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/*End Google Tag Manager (noscript) */}
 
-      <Script
+      {/* <Script
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
@@ -216,7 +214,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           })();
               `,
         }}
-      />
+      /> */}
 
       <Script
         strategy="lazyOnload"
@@ -226,60 +224,65 @@ const MyApp = ({ Component, pageProps }: any) => {
       (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
         s1.async=true;
-        s1.src='https://embed.tawk.to/6513f6520f2b18434fdad936/1hbavkcmj';
+        s1.src='https://embed.tawk.to/64d7316f94cf5d49dc69f045/1h7k9i7u2';
         s1.charset='UTF-8';
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        const salesForceUrl = '${vineCrmTawk}';
-        console.log("salesForceUrl",salesForceUrl)
+        console.log("data",data);
+        const salesForceUrl = '${salesForceUrl}';
+        console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
-          recordTypeId:"0127Q000000NDbcQAG",
-          interestedTopic:"",
-          highestQualification:"",
-          utm_parameters:"",
-          Mode_of_Study:"",
-          Verified_Mobile_No:"",
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          city: "",
+          country: "South Africa",
+          interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
+          
         };   
-        console.log("salesForceData", salesForceData)
         data.forEach(item => {
           console.log("item",item)
           const labelMapping = {
-              "Name": "Name",
-              "Email": "Email",
-              "Mobile Number": "Mobile",
-              "Course you are looking for": "interestedTopic"
+              "Name": "name",
+              "Email": "email",
+              "Mobile Number": "mobile",
+              "Course you are looking for": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
       });
-      console.log("vineCrmData",vineCrmData)
-      fetch(salesForceUrl, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(salesForceData),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+        try {
+          fetch(salesForceUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(salesForceData),
+          })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(responseData => {
+              console.log('Data submitted successfully:', responseData);
+            })
+            .catch(error => {
+              console.error('Error submitting data:', error);
+            });
+        } catch (error) {
+          console.error('Error in fetch operation:', error);
         }
-        return response.json();
-    })
-    .then(responseData => {
-        console.log('Salesforce response:', responseData);
-    })
-    .catch(error => {
-        console.error('Error submitting data to Salesforce:', error);
-    });
       };
     `,
         }}

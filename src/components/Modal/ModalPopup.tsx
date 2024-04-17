@@ -9,6 +9,7 @@ import Data from "@/data/AllformsData";
 import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
+import mixpanel from "mixpanel-browser";
 
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
@@ -25,6 +26,8 @@ function ModalPopup(props: any) {
   const [countryData, setCountryData] = useState<any>({});
   const [show, setShow] = useState(false);
   const [btnDisable, sebtnDisable] = useState(false);
+  const [formInteraction, setFormInteraction] = useState(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -93,15 +96,18 @@ function ModalPopup(props: any) {
       const response = await courseService.downloadBrochure(brochureName?.name);
       props.setShows(false);
       downloadFromBlob(response?.data, brochureName?.name) == false;
+      if (response?.status === 200) {
+        mixpanel.track("submit-brochure-form", { submit_value: true });
+      }
     }
     if (props?.title !== "Download Brochure") {
       props.setShows(false);
-
       props.isWhatsapp
         ? router.push(
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : props.thankYouShow(true);
+      mixpanel.track("submit-counselling-form", { submit_value: true });
     }
   };
 
@@ -136,6 +142,24 @@ function ModalPopup(props: any) {
   }
 
   useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
+
+  useEffect(() => {
     if (id) {
       const filterData = _.find(allCourseList, (item: any) => item?.id === +id);
       // !!filterData?.parentCourse
@@ -163,6 +187,7 @@ function ModalPopup(props: any) {
           <form
             className="form-box text-start popup-form"
             onSubmit={handleSubmit(onSubmit)}
+            onBlur={handleFormBlur}
           >
             <div className="row">
               <div className="col-lg-12">
@@ -181,8 +206,14 @@ function ModalPopup(props: any) {
                             message: "Invalid User Name",
                           },
                         })}
-                        onKeyUp={() => {
+                        onKeyUp={(e) => {
                           trigger("Name");
+                          mixpanel.track("Name Changed", {
+                            InputName: "name",
+                            Filled:
+                              (e.target as HTMLInputElement)?.value !== "",
+                            newValue: (e.target as HTMLInputElement)?.value,
+                          });
                         }}
                       />
                       {errors?.Name && (
@@ -205,8 +236,14 @@ function ModalPopup(props: any) {
                             message: "Invalid email address",
                           },
                         })}
-                        onKeyUp={() => {
+                        onKeyUp={(e) => {
                           trigger("Email");
+                          mixpanel.track("Email Changed", {
+                            InputName: "Email",
+                            Filled:
+                              (e.target as HTMLInputElement)?.value !== "",
+                            newValue: (e.target as HTMLInputElement)?.value,
+                          });
                         }}
                       />
                       {errors?.Email && (
@@ -241,6 +278,11 @@ function ModalPopup(props: any) {
                         placeholder="Select Country Code*"
                         onChange={(e) => {
                           setValue("Phone", e);
+                          mixpanel.track("Phone Changed", {
+                            InputName: "Phone",
+                            Filled: e !== "",
+                            newValue: e,
+                          });
                         }}
                         className={`${errors?.Phone && "invalid"}`}
                       />

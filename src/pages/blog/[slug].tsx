@@ -9,11 +9,23 @@ import StickyBar from "@/components/StickyFooter/Sticky";
 import BlogContainer from "@/components/blogsBody/BlogContainer";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { wpService } from "src/services";
+import { IPostTypes } from "@/components/blogsBody/dataTypes";
 
-const Post = () => {
+interface PostsByCategoryProps {
+  slug: string;
+  resolvedUrl: string;
+  postResponse: Array<IPostTypes>;
+}
+
+const Post: React.FC<PostsByCategoryProps> = ({
+  slug,
+  resolvedUrl,
+  postResponse,
+}) => {
   const router = useRouter();
-  const { slug } = router.query;
-  const [blogList, setBlogList] = useState<any>([]);
+  // const { slug } = router.query;
+  const [blogList, setBlogList] = useState<any>(postResponse);
 
   // const xmlOperation = async (sitemapData: any) => {
   //   if (!(sitemapData.length > 0)) return;
@@ -34,18 +46,42 @@ const Post = () => {
   //   xmlOperation(blogList);
   // }, [blogList]);
   return (
-    <Layout pageTitle="blog" blogList={blogList}>
+    <Layout
+      pageTitle="blog"
+      blogList={blogList}
+      slug={resolvedUrl}
+      slugCourse={slug}
+    >
       <Style />
       <HeaderOne variant="blog" />
       <MobileMenu />
       <SearchPopup />
       {slug && (
-        <BlogContainer slug={slug.toString()} setBlogList={setBlogList} />
+        <BlogContainer
+          slug={slug.toString()}
+          setBlogList={setBlogList}
+          postResponse={postResponse}
+        />
       )}
       <MainFooter />
       <StickyBar />
     </Layout>
   );
+};
+
+export const getServerSideProps = async (context: any) => {
+  const { slug } = context.params;
+  const { resolvedUrl } = context;
+
+  const response = await wpService.allPosts({ slug });
+
+  return {
+    props: {
+      slug,
+      resolvedUrl,
+      postResponse: response,
+    },
+  };
 };
 
 export default Post;

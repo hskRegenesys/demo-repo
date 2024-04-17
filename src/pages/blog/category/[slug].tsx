@@ -8,12 +8,43 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import BlogsByCategories from "@/components/blogsBody/BlogsByCategories";
 import Script from "next/script";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { wpService } from "src/services";
+import { IPostListTypes } from "@/components/blogsBody/dataTypes";
 
-const PostsByCategory = () => {
+interface PostsByCategoryProps {
+  slug: string;
+  resolvedUrl: string;
+  initialCategory: string | number;
+  initialPostList: Array<IPostListTypes>;
+}
+
+interface CategoryType {
+  name: string;
+  yoast_head_json: object;
+  id: number | string;
+}
+
+const PostsByCategory: React.FC<PostsByCategoryProps> = ({
+  slug,
+  resolvedUrl,
+  initialCategory,
+  initialPostList,
+}) => {
   const router = useRouter();
-  const { slug } = router.query;
-const [categoryList,setCategoryList]=useState<any>([])
+  // const { slug } = router.query;
+  const [categoryList, setCategoryList] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [category, setCategory] = useState<string | number>(initialCategory);
+  const [postList, setPostList] =
+    useState<Array<IPostListTypes>>(initialPostList);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, [postList]);
+
   return (
     <>
       <Script
@@ -27,12 +58,25 @@ const [categoryList,setCategoryList]=useState<any>([])
               `,
         }}
       />
-      <Layout pageTitle="category" categoryList={categoryList}>
+      <Layout
+        pageTitle="category"
+        categoryList={postList}
+        slug={resolvedUrl}
+        slugCourse={slug}
+      >
         <Style />
         <HeaderOne variant="blog" />
         <MobileMenu />
         <SearchPopup />
-        {slug && <BlogsByCategories categorySlug={slug.toString()} setCategoryList={setCategoryList} />}
+        {slug && (
+          <BlogsByCategories
+            categorySlug={slug?.toString()}
+            setCategoryList={setCategoryList}
+            category={category}
+            postList={postList}
+            isLoading={isLoading}
+          />
+        )}
         <MainFooter />
         <StickyBar />
       </Layout>
@@ -48,4 +92,35 @@ const [categoryList,setCategoryList]=useState<any>([])
   );
 };
 
+export const getServerSideProps = async (context: any) => {
+  const { slug } = context.params;
+  const { resolvedUrl } = context;
+
+  const response = await wpService.allCategories({ slug: slug });
+  let initialCategory = "";
+  let initialPostList = [];
+
+  if (response?.length > 0) {
+    initialCategory = response[0].name;
+    initialPostList = await Promise.all(
+      response.map(async (category: CategoryType) => ({
+        category: category.name,
+        yoast_head_json: category.yoast_head_json,
+        posts: await wpService.allPosts({
+          per_page: 12,
+          categories: category.id,
+        }),
+      }))
+    );
+  }
+
+  return {
+    props: {
+      slug,
+      resolvedUrl,
+      initialCategory,
+      initialPostList,
+    },
+  };
+};
 export default PostsByCategory;

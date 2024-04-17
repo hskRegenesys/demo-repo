@@ -70,7 +70,7 @@ export const courseData = {
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
+          "https://www.youtube.com/embed/o0kKs3BPc_o?autoplay=1&loop=1&playlist=o0kKs3BPc_o",
         title: "Certification Programme in Project Management",
         text: "Elevate your skill-set with the best Project Management course for college students, freshers, and professionals. Learn how to apply the skills of Project Management in the real world from our highly experienced academic staff.",
         lists: [
@@ -448,7 +448,7 @@ export const courseData = {
   //   productDescription: {
   //     title: "Certification Programme in Operations & Supply Chain Management",
   //     text1:
-  //       "Embark on a transformative journey with our Operations & Supply Chain Management programme, designed to equip you with cutting-edge skills in process optimisation, strategic supply chain design, and the latest Industry 4.0 innovations, fostering operational excellence for the visionary professional.",
+  //       "Master the art of Operations & Supply Chain Management through a comprehensive curriculum emphasizing core concepts, strategic planning, and cutting-edge Industry 4.0 insights. Our programme shapes versatile professionals adept in quality management frameworks, analytics applications, and flexible delivery modes, ensuring alignment with operational excellence standards.",
   //   },
   //   joinReasons: {
   //     title: "Reasons To Join This Course",
@@ -521,15 +521,15 @@ export const courseData = {
   //         text: `Dr. Suvarna M. Deshpande is a seasoned professional in the Indian Pharmaceutical Industry, with extensive experience from grassroots to senior management roles. With qualifications including a B. Pharm, MBA, and PhD in
 
   //         Marketing Management, she brings profound expertise to her roles. Dr. Suvarna has worked with renowned pharmaceutical companies and holds executive certificates in Strategic Brand Management and Digital Marketing. Passionate about education, she has served in various capacities in prestigious institutions and is a visiting faculty at management institutes in Pune. As a corporate trainer, Dr. Suvarna designs customized programmes using interactive methods such as management games and case studies. With her extensive experience and dedication to teaching, Dr. Suvarna M. Deshpande is a valuable asset in both academia and industry.`,
-  //         designation: "Academic Team Leader and Senior Lecturer",
+  //         designation: "Industry Operations Expert and Seasoned Educator",
   //       },
-  //       {
-  //         id: 2,
-  //         image: "Yatin-Karnik.jpg",
-  //         title: "James Forson",
-  //         text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
-  //         designation: "BSocSc (Hons)",
-  //       },
+  //       // {
+  //       //   id: 2,
+  //       //   image: "Yatin-Karnik.jpg",
+  //       //   title: "James Forson",
+  //       //   text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
+  //       //   designation: "BSocSc (Hons)",
+  //       // },
   //     ],
   //   },
   //   videoOne: {
@@ -548,14 +548,14 @@ export const courseData = {
   //       faqs: [
   //         {
   //           id: 1,
-  //           title: "MODULE 1: Introduction",
+  //           title: "Introduction",
   //           lists: [
   //             "Understand the basics of operations and supply chain management, including cycle time, throughput and work-in-process",
   //           ],
   //         },
   //         {
   //           id: 2,
-  //           title: "MODULE 2: Introduction to Statistics",
+  //           title: "Introduction to Statistics",
   //           lists: [
   //             `
   //             Acquire skills in statistics, mathematical programming, queuing theory, and simulation for operational decision-making.
@@ -564,7 +564,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 3,
-  //           title: "MODULE 3: Operations Strategy",
+  //           title: "Operations Strategy",
   //           lists: [
   //             `
   //             Learn how operations strategy aligns with business strategy and contributes to organizational goals.
@@ -574,7 +574,7 @@ export const courseData = {
 
   //         {
   //           id: 4,
-  //           title: "MODULE 4: Process Structure",
+  //           title: "Process Structure",
   //           lists: [
   //             `
   //             Analyze and improve process structures in services and manufacturing for enhanced performance.
@@ -583,7 +583,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 5,
-  //           title: "MODULE 5: Quality Management",
+  //           title: "Quality Management",
   //           lists: [
   //             `
   //             Master total quality management, Six Sigma, statistical
@@ -593,7 +593,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 6,
-  //           title: "MODULE 6: Planning & Scheduling",
+  //           title: "Planning & Scheduling",
   //           lists: [
   //             `
   //             Develop skills in scheduling, resource planning, and material
@@ -603,7 +603,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 7,
-  //           title: "MODULE 7: Inventory Management",
+  //           title: "MInventory Management",
   //           lists: [
   //             `
   //             Learn inventory types, economic order quantity, and
@@ -613,7 +613,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 8,
-  //           title: "MODULE 8: Lean Management",
+  //           title: "Lean Management",
   //           lists: [
   //             `
   //             Design lean systems, understanding the Toyota Production
@@ -624,7 +624,7 @@ export const courseData = {
 
   //         {
   //           id: 9,
-  //           title: "MODULE 9: Designing Supply Chain",
+  //           title: "Designing Supply Chain",
   //           lists: [
   //             `
   //             Design effective supply chains for services and
@@ -635,7 +635,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 10,
-  //           title: "MODULE 10: Forecasting Demand",
+  //           title: "Forecasting Demand",
   //           lists: [
   //             `
   //             Understand and control demand variability using forecasting
@@ -646,7 +646,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 11,
-  //           title: "MODULE 11: Supplier Relationship Management",
+  //           title: "Supplier Relationship Management",
   //           lists: [
   //             `
   //             Learn strategic sourcing, supplier partnership management, supply chain contracts, and procurement analytics.
@@ -655,7 +655,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 12,
-  //           title: "MODULE 12: Logistics Management",
+  //           title: "Logistics Management",
   //           lists: [
   //             `
   //             Understand the factors in location decisions, network design,
@@ -666,7 +666,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 13,
-  //           title: "MODULE 13: Analytics in Operations & Supply Chain",
+  //           title: "Analytics in Operations & Supply Chain",
   //           lists: [
   //             `
   //             Apply optimization and modeling for prescriptive analytics in
@@ -676,7 +676,7 @@ export const courseData = {
   //         },
   //         {
   //           id: 14,
-  //           title: "MODULE 14: Emerging Trends in Operations & Supply Chain",
+  //           title: "Emerging Trends in Operations & Supply Chain",
   //           lists: [
   //             `
   //             Explore sustainable, socially responsible operations and the
@@ -754,46 +754,86 @@ export const courseData = {
   //       faqs: [
   //         {
   //           id: 1,
-  //           title: "How This Course Will Help Me In My Career?",
-  //           text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
+
+  //           title:
+  //             "What is a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "A Certification Programme in Operations and Supply Chain Management is a comprehensive and specialised programme focusing on developing skills and knowledge in operations management, logistics, supply chain optimisation, inventory management, procurement, and distribution.",
   //         },
   //         {
   //           id: 2,
-  //           title: "Will Digital Regenesys Offer Me Job Assistance?",
-  //           text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+
+  //           title:
+  //             "What are the key components of a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "The key components typically include modules on Operations Strategy, Designing Supply Chains, Logistics Management, Forecasting Demand, Operations Strategy, Supplier Relationship Management, Analytics in Operations and Supply Chain, Emerging Trends in Operations and Supply Chain, and Lean Management.\n\nClick <a href='https://www.digitalregenesys.com/all-courses/operations-and-supply-chain-management'>here</a> to learn more about the key components of a Certification Programme in Operations & Supply Chain Management.",
   //         },
   //         {
   //           id: 3,
-  //           title: "What Are The Modes Of Payment Available For Me?",
-  //           text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
+
+  //           title:
+  //             "What practical skills can I expect to develop in a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Participants can expect to develop practical skills such as supply chain optimisation, inventory management techniques, procurement strategies, logistics planning, demand forecasting methods, process improvement, project management, and supply chain analytics using tools and software.",
   //         },
   //         {
   //           id: 4,
-  //           title:
-  //             "For How Long Will I Be Able To Access The Content After My Course Completion?",
-  //           text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
+
+  //           title: "Who is this Certification Programme suitable for?",
+  //           text: "The Certification Programme in Operations & Supply Chain Management is suitable for individuals interested in pursuing careers in operations management, supply chain management, logistics, procurement, inventory control, and related fields. It also benefits professionals seeking to enhance their skills and knowledge.",
   //         },
   //         {
   //           id: 5,
-  //           title: "Is This A Certified Course?",
-  //           text: "Yes, all the courses are certified by the Regenesys Business School.",
+
+  //           title:
+  //             "How do I enrol and register for the Digital Regenesys Certification Programme in Operations & Supply Chain Management?",
+  //           text: "To enrol in the Digital Regenesys Certification Programme in Operations & Supply Chain Management, follow these steps:\n • Visit the official website @ <a href='https://www.digitalregenesys.com/'> https://www.digitalregenesys.com</a> \n • Navigate to the course page. \n • Select the required course.\n • Click the \"Enrol Now\" button.\n • Fill out the registration form with all the required information.\n • Submit the form and proceed to make the payment for the course.\n • Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
   //         },
   //         {
   //           id: 6,
+
   //           title:
-  //             "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-  //           text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+  //             "Are there any age restrictions for pursuing a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "There are typically no age restrictions to pursue a Digital Regenesys Certification Programme in Operations & Supply Chain Management. This Certification Programme is designed to accommodate learners of all ages, from high school students to working professionals looking to enhance their skills later in their careers.",
   //         },
   //         {
   //           id: 7,
+
   //           title:
-  //             "How Will I Get Access To The Assignments And Learning Content?",
-  //           text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+  //             "How Long Does It Take to Complete Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
+  //           text: "The total duration of the Digital Regenesys Digital Regenesys's Certification Programme in Operations & Supply Chain Management is 24 Weeks Course.",
   //         },
   //         {
   //           id: 8,
-  //           title: "What If The Course Timings Don't Match My Work Timings?",
-  //           text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
+
+  //           title:
+  //             "Are there any prerequisites to pursue Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
+  //           text: "No. There are no such prerequisites or Master's degrees required to pursue this certification programme. Individuals with graduation degrees across any stream and a basic understanding of business concepts, mathematics, and computer skills are required.",
+  //         },
+  //         {
+  //           id: 9,
+
+  //           title:
+  //             "Can Individuals from the Science domain take this Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Absolutely. Individuals from Science domains can take this Certification Programme in Operations & Supply Chain Management. The core modules include basic Statistics and Mathematics, which might be difficult for individuals from the Science domain. However, with dedication, concentration, motivation, and self-learning, anyone can thrive in the Operations & Supply Chain Management profession.",
+  //         },
+  //         {
+  //           id: 10,
+
+  //           title:
+  //             "What tools are covered in Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Tools used in the Digital Regenesys Certification Programme in Operations & Supply Chain Management are:\nChatGPT and Gemini.",
+  //         },
+  //         {
+  //           id: 11,
+
+  //           title:
+  //             "Do industry professionals and employers recognise the Certification Programme?",
+  //           text: "Yes, the Certification Programme in Operations & Supply Chain Management is recognised by industry professionals and employers as it provides specialised training and skills that are directly applicable to operations, logistics, and supply chain management roles.",
+  //         },
+  //         {
+  //           id: 12,
+
+  //           title:
+  //             "What are the career opportunities after completing the Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Individuals with the Certification Programme in Operations & Supply Chain Management can pursue various career opportunities such as operations manager, supply chain analyst, logistics Manager, procurement specialist, Inventory Control Analyst, distribution manager, supply chain consultant, and operations planner in manufacturing, retail, logistics, healthcare, and other industries.",
   //         },
   //       ],
   //       defaultCurrent: 1,
@@ -2746,7 +2786,7 @@ If you are passionate about starting your own full-stack web development busines
       {
         id: 1,
         youtubeUrl:
-          "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
+          "https://www.youtube.com/embed/WAxlaL2nYD8?autoplay=1&loop=1&playlist=WAxlaL2nYD8",
         title: "Certificate Course in Data Science",
         text: "Discover your potential with a Data Science course designed for people looking to upskill themselves or learn the skills for success in the Data Science field. Learn the real-world application of Data Science taught by industry experts. Enrol in this course and build a career in the most sought-after field. Take the first step towards a successful future!",
         lists: [
@@ -4554,7 +4594,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
 
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title:
           "Certification in Artificial Intelligence Introductory Programme",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Introductory Programme' and unlock the
@@ -4858,7 +4898,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title:
           "Certification in Artificial Intelligence Intermediary Programme",
         text: `In the dynamic digital landscape, harnessing the power of Artificial Intelligence (AI) is crucial for staying ahead. Join
@@ -5181,7 +5221,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title:
           "Certification in Artificial Intelligence Advanced Applied Programme",
         text: `Unleash your potential with our 'AI Advanced Applied Programme.' Skyrocket your career by mastering advanced AI
@@ -5518,7 +5558,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
+          "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title: "Certificate Course in Artificial Intelligence ",
         text: `Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves deep into the concepts and techniques of AI. Whether you're an aspiring student or a professional seeking to enhance your skills, this course will help you gain theoretical knowledge and practical experience to innovate and solve complex problems. Step into the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery
         `,
@@ -9219,7 +9259,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         // image: "yellow-bg-details-bg-1.webp",
         youtubeUrl:
-          "https://www.youtube.com/embed/S5RDj33518g?autoplay=1&loop=1&playlist=S5RDj33518g",
+          "https://www.youtube.com/embed/up8EdCMPl60?autoplay=1&loop=1&playlist=up8EdCMPl60",
 
         title: "Certification Programme in Cybersecurity",
         text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with Cyber Security Fundamentals course. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",

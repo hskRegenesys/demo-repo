@@ -39,6 +39,8 @@ class LeadService {
       : crmData.Phone?.startsWith("+256")
       ? "UGANDA"
       : "TANZANIA";
+
+    console.log("crmData", crmData);
     await axios
       .post(
         "https://api.vinecrms.com/api/",
