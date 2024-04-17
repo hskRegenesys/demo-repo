@@ -32,7 +32,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
       <Schemas type={Constants.localbusiness} />
-      {process.env.ENV_NAME !== "PRODUCTION" && (
+      {process.env.ENV_NAME == "PRODUCTION" && (
         <Script
           type="text/javascript"
           dangerouslySetInnerHTML={{
