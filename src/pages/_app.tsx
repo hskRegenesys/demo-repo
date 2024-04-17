@@ -32,7 +32,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
       <Schemas type={Constants.localbusiness} />
-
       {/* Pixel code script start */}
       <Script
         dangerouslySetInnerHTML={{
@@ -240,7 +239,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           type: "add_lead_to_crm",
           name: "",
           email: "",
-          mobile: "",
           city: "",
           country: "South Africa",
           interest: "",
@@ -256,8 +254,8 @@ const MyApp = ({ Component, pageProps }: any) => {
           const labelMapping = {
               "Name": "name",
               "Email": "email",
-              "Mobile No": "mobile",
-              "Programme of Interest": "interest"
+              "Mobile Number": "mobile",
+              "Course you are looking for": "interest"
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
