@@ -15,19 +15,21 @@ import { Constants } from "src/schemas/data";
 const BlogContainer = ({
   slug,
   setBlogList,
+  postResponse,
 }: {
   slug: string;
   setBlogList: (value: any) => void;
+  postResponse: Array<IPostTypes>;
 }) => {
-  const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
-  const getPost = async () => {
-    const response = await wpService.allPosts({ slug: slug });
-    !!response && setPostResponse(response);
-    !!response && setBlogList(response);
-  };
-  useEffect(() => {
-    getPost();
-  }, [slug]);
+  // const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
+  // const getPost = async () => {
+  //   const response = await wpService.allPosts({ slug: slug });
+  //   !!response && setPostResponse(response);
+  //   !!response && setBlogList(response);
+  // };
+  // useEffect(() => {
+  //   getPost();
+  // }, [slug]);
 
   return (
     <>
