@@ -26,6 +26,7 @@ const Layout = (props: any) => {
     blogList,
     context,
     slug,
+    slugCourse,
   } = props;
 
   const [loading, setLoading] = useState(true);
@@ -62,9 +63,11 @@ const Layout = (props: any) => {
       : metaData?.metaInfo?.description?.["home"];
   const keywords =
     pageTitle === "blog"
-      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugUrlData]
+      ? metaData?.metaInfo?.keywords?.[
+          pageTitle[0]?.toUpperCase() + pageTitle.substring(1)
+        ]?.[slugCourse]
       : pageTitle === "category"
-      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugUrlData]
+      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugCourse]
       : metaData?.metaInfo?.keywords?.[pageTitle]
       ? metaData?.metaInfo?.keywords?.[pageTitle]
       : metaData?.metaInfo?.keywords?.["home"];
