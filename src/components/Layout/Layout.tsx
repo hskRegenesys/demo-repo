@@ -11,7 +11,6 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import ModalPopup from "../Modal/ModalPopup";
 import { Modal } from "react-bootstrap";
 import mixpanel from "mixpanel-browser";
-import Script from "next/script";
 
 const Layout = (props: any) => {
   const [show, setShow] = useState(false);
@@ -190,16 +189,14 @@ const Layout = (props: any) => {
   return (
     <>
       <Head>
-        {process.env.ENV_NAME == "PRODUCTION" && (
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html: `
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
           (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lxj4wy0m9f");
               `,
-            }}
-          />
-        )}
+          }}
+        />
         <title>{title}</title>
         {canonicalBaseUrl && (
           <link rel="canonical" href={canonicalBaseUrl} id="dynamic-url" />
