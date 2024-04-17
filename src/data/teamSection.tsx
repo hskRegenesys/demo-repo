@@ -54,11 +54,11 @@ const teamSection = {
       name: "product management",
       href: "/all-courses/product-management",
     },
-    // {
-    //   id: 20,
-    //   name: "Operations and supply chain management",
-    //   href: "/all-courses/operations-and-supply-chain-management",
-    // },
+    {
+      id: 20,
+      name: "Operations and supply chain management",
+      href: "/all-courses/operations-and-supply-chain-management",
+    },
     {
       id: 17,
       name: "Data and Business Analytics",
