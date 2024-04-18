@@ -25,7 +25,7 @@ const TrendingSection = dynamic(
   () => import("@/components/TrendingSection/TrendingSection")
 );
 const TestimonialsStudent = dynamic(
-  () => import("@/components/PopularTopics/PopularTopics")
+  () => import("@/components/TestimonialsStudent/TestimonialsStudent")
 );
 const PopularTopics = dynamic(
   () => import("@/components/PopularTopics/PopularTopics")
