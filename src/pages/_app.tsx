@@ -289,12 +289,13 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
         console.log("salesForceUrl onOfflineSubmit", salesForceUrl);
-        const salesForceData = {
+        const salesForceNewData = {
           domain: "crm",
           type: "add_lead_to_crm",
           name: "",
           email: "",
           city: "",
+          mobile:"",
           country: "South Africa",
           interest: "",
           utm_source: "DR website chat ",
@@ -304,31 +305,35 @@ const MyApp = ({ Component, pageProps }: any) => {
           Lead_Source:"DR website chat"  
         };   
         
-        // Mapping of Tawk data labels to Salesforce data properties
-        const labelMapping = {
-            "Name": "name",
-            "Email": "email",
-            "Mobile Number": "mobile",
-            "Course you are looking for": "interest"
-        };
-    console.log("labelMapping", labelMapping)
-        // Iterate through each item in the data array and map to salesForceData
-        for (const item of data) {
-          console.log("itemmm", item)
-            const propertyName = labelMapping[item.label];
-            if (propertyName) {
-                salesForceData[propertyName] = item.answer;
-            }
-        }
+        data.questions.forEach(question => {
+          console.log("question", question);
+          
+          switch (question.label) {
+              case "Name":
+                  salesForceNewData.name = question.answer;
+                  break;
+              case "Email":
+                  salesForceNewData.email = question.answer;
+                  break;
+              case "Mobile Number":
+                  salesForceNewData.mobile = question.answer;
+                  break;
+              case "Course you are looking for":
+                  salesForceNewData.interest = question.answer;
+                  break;
+              default:
+                  console.log("question", question.label);
+          }
+      });
     
-        console.log("Salesforce data to be submitted:", salesForceData);
+        console.log("Salesforce data to be submitted:", salesForceNewData);
        
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json', 
         },
-        body: JSON.stringify(salesForceData),
+        body: JSON.stringify(salesForceNewData),
     })
     .then(response => {
        
