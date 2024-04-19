@@ -289,58 +289,40 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
         console.log("salesForceUrl onOfflineSubmit", salesForceUrl);
-
-
-        let name = "";
-    let email = "";
-    let mobile = "";
-    let interest = "";
-
-    // Mapping of Tawk data labels to variables for easier extraction.
-    const labelMapping = {
-        "Name": "name",
-        "Email": "email",
-        "Mobile Number": "mobile",
-        "Course you are looking for": "interest"
-    };
-
-    // Loop through each item in the data array.
-    data.forEach(item => {
-        if (item.label === 'Name') {
-            name = item.answer;
-        } else if (item.label === 'Email') {
-            email = item.answer;
-        } else if (item.label === 'Mobile Number') {
-            mobile = item.answer;
-        } else if (item.label === 'Course you are looking for') {
-            interest = item.answer;
-        }
-    });
-
-    console.log("Extracted values:");
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Mobile Number:", mobile);
-    console.log("Course you are looking for (Interest):", interest);
-
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
-          name,
-        email,
-        mobile,
+          name: "",
+          email: "",
           city: "",
           country: "South Africa",
-          interest,
+          interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
-          Lead_Source:"DR website chat"
+          Lead_Source:"DR website chat"  
         };   
         
+        // Mapping of Tawk data labels to Salesforce data properties
+        const labelMapping = {
+            "Name": "name",
+            "Email": "email",
+            "Mobile Number": "mobile",
+            "Course you are looking for": "interest"
+        };
+    console.log("labelMapping", labelMapping)
+        // Iterate through each item in the data array and map to salesForceData
+        for (const item of data) {
+          console.log("itemmm", item)
+            const propertyName = labelMapping[item.label];
+            if (propertyName) {
+                salesForceData[propertyName] = item.answer;
+            }
+        }
+    
+        console.log("Salesforce data to be submitted:", salesForceData);
        
-
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
