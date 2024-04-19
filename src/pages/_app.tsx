@@ -322,29 +322,26 @@ const MyApp = ({ Component, pageProps }: any) => {
                   console.log("question", question);
           }
       });
-      try {
-        fetch(salesForceUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(salesForceNewData),
-        })
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();
-          })
-          .then(responseData => {
-            console.log('Data submitted successfully:', responseData);
-          })
-          .catch(error => {
-            console.error('Error submitting data:', error);
-          });
-      } catch (error) {
-        console.error('Error in fetch operation:', error);
-      }
+    
+      fetch(salesForceUrl, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify(salesForceNewData),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); 
+    })
+    .then(responseData => {
+        console.log('Data submitted successfully:', responseData);
+    })
+    .catch(error => {
+        console.error('Error submitting data:', error);
+    });
       };
     `,
         }}
