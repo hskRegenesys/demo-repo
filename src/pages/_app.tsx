@@ -302,8 +302,8 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-          
         };   
+        console.log("Data 2 onOfflineSubmit checking", data)
         data.forEach(item => {
           console.log("item onOfflineSubmit",item)
           const labelMapping = {
@@ -315,29 +315,27 @@ const MyApp = ({ Component, pageProps }: any) => {
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
       });
-        try {
-          fetch(salesForceUrl, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(salesForceData),
-          })
-            .then(response => {
-              if (!response.ok) {
-                throw new Error('Network response was not ok');
-              }
-              return response.json();
-            })
-            .then(responseData => {
-              console.log('Data submitted successfully:', responseData);
-            })
-            .catch(error => {
-              console.error('Error submitting data:', error);
-            });
-        } catch (error) {
-          console.error('Error in fetch operation:', error);
+      fetch(salesForceUrl, {
+        method: 'POST', // Use POST method for sending data.
+        headers: {
+            'Content-Type': 'application/json', // Send data as JSON.
+        },
+        body: JSON.stringify(salesForceData), // Convert the data to a JSON string.
+    })
+    .then(response => {
+        // Check if the response status is ok.
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
+        return response.json(); // Convert the response to JSON.
+    })
+    .then(responseData => {
+        console.log('Data submitted successfully:', responseData);
+    })
+    .catch(error => {
+        // Log any errors that occurred during the fetch.
+        console.error('Error submitting data:', error);
+    });
       };
 
     `,
