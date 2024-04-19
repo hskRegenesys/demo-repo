@@ -304,23 +304,18 @@ const MyApp = ({ Component, pageProps }: any) => {
           Lead_Source:"DR website chat"
         };   
         
-        const labelMapping = {
-          "Name": "name",
-          "Email": "email",
-          "Mobile Number": "mobile",
-          "Course you are looking for": "interest"
-        };
-      
         console.log("Data 2 onOfflineSubmit checking", data)
-
-        for (let i = 0; i < data?.length; i++) {
-          const item = data[i];
-          console.log("Item onOfflineSubmit:", item);
-          const propertyName = labelMapping[item.label] || item.label;
-          if (propertyName in salesForceData) {
-              salesForceData[propertyName] = item.answer;
-          }
-      }
+        data.forEach(item => {
+          console.log("item filee",item)
+          const labelMapping = {
+              "Name": "name",
+              "Email": "email",
+              "Mobile Number": "mobile",
+              "Course you are looking for": "interest"
+          };
+          const propertyName = labelMapping[item.label] || item.label; 
+          salesForceData[propertyName] = item.answer;
+      });
       console.log("Sales-force-data", salesForceData)
 
       fetch(salesForceUrl, {
