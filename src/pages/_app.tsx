@@ -221,7 +221,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         dangerouslySetInnerHTML={{
           __html: `
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      console.log("workinggg)
       (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
         s1.async=true;
@@ -230,7 +229,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
       })();
-      console.log("sales force", '${salesForceUrl}')
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
         console.log("data",data);
