@@ -216,12 +216,11 @@ const MyApp = ({ Component, pageProps }: any) => {
         }}
       /> */}
 
-      {/* <Script
+      <Script
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-   
       (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
         s1.async=true;
@@ -285,151 +284,62 @@ const MyApp = ({ Component, pageProps }: any) => {
           console.error('Error in fetch operation:', error);
         }
       };
-    `,
-        }}
-      /> */}
 
-      <Script
-        strategy="lazyOnload"
-        dangerouslySetInnerHTML={{
-          __html: `
-        var Tawk_API = Tawk_API || {};
-        var Tawk_LoadStart = new Date();
-   
-        (function() {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/64d7316f94cf5d49dc69f045/1h7k9i7u2';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
+      window.Tawk_API.onOfflineSubmit = function(data){
+        console.log("data onOfflineSubmit",data);
+        const salesForceUrl = '${salesForceUrl}';
+        console.log("salesForceUrl onOfflineSubmit", salesForceUrl);
+        const salesForceData = {
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          city: "",
+          country: "South Africa",
+          interest: "",
+          utm_source: "DR website chat ",
+          utm_medium: "DR Website",
+          utm_campaign: "DR Website",
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"
+          
+        };   
+        data.forEach(item => {
+          console.log("item onOfflineSubmit",item)
+          const labelMapping = {
+              "Name": "name",
+              "Email": "email",
+              "Mobile Number": "mobile",
+              "Course you are looking for": "interest"
+          };
+          const propertyName = labelMapping[item.label] || item.label; 
+          salesForceData[propertyName] = item.answer;
+      });
+        try {
+          fetch(salesForceUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(salesForceData),
+          })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(responseData => {
+              console.log('Data submitted successfully:', responseData);
+            })
+            .catch(error => {
+              console.error('Error submitting data:', error);
+            });
+        } catch (error) {
+          console.error('Error in fetch operation:', error);
+        }
+      };
 
-        window.Tawk_API = window.Tawk_API || {};
-        window.Tawk_API.onLoad = function() {
-            // Retrieve the widget status (online or offline)
-            const pageStatus = window.Tawk_API.getStatus();
-
-            if (pageStatus === 'online') {
-                console.log("Online submit triggered");
-
-                // Define the onPrechatSubmit event handler for online submissions
-                window.Tawk_API.onPrechatSubmit = function(data) {
-                    const salesForceUrl = '${salesForceUrl}';
-                    
-                    // Define the data structure to send to Salesforce
-                    const salesForceData = {
-                        domain: "crm",
-                        type: "add_lead_to_crm",
-                        name: "",
-                        email: "",
-                        city: "",
-                        country: "South Africa",
-                        interest: "",
-                        utm_source: "DR website chat",
-                        utm_medium: "DR Website",
-                        utm_campaign: "DR Website",
-                        Source_Campaign: "DR Website",
-                        Lead_Source: "DR website chat"
-                    };
-
-                    data.forEach(item => {
-                        console.log("Item onPrechatSubmit:", item);
-                        const labelMapping = {
-                            "Name": "name",
-                            "Email": "email",
-                            "Mobile Number": "mobile",
-                            "Course you are looking for": "interest"
-                        };
-                        const propertyName = labelMapping[item.label] || item.label; 
-                        salesForceData[propertyName] = item.answer;
-                    });
-
-                    try {
-                        fetch(salesForceUrl, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify(salesForceData),
-                        })
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error('Network response was not ok');
-                            }
-                            return response.json();
-                        })
-                        .then(responseData => {
-                            console.log('Data submitted successfully:', responseData);
-                        })
-                        .catch(error => {
-                            console.error('Error submitting data:', error);
-                        });
-                    } catch (error) {
-                        console.error('Error in fetch operation:', error);
-                    }
-                };
-            } else {
-                console.log("Offline submit triggered");
-
-                window.Tawk_API.onOfflineSubmit = function(data) {
-                    const salesForceUrl = '${salesForceUrl}';
-                    
-                    // Define the data structure to send to Salesforce
-                    const salesForceData = {
-                        domain: "crm",
-                        type: "add_lead_to_crm",
-                        name: "",
-                        email: "",
-                        city: "",
-                        country: "South Africa",
-                        interest: "",
-                        utm_source: "DR website chat",
-                        utm_medium: "DR Website",
-                        utm_campaign: "DR Website",
-                        Source_Campaign: "DR Website",
-                        Lead_Source: "DR website chat"
-                    };
-
-                    data.forEach(item => {
-                        console.log("Item onOfflineSubmit:", item);
-                        const labelMapping = {
-                            "Name": "name",
-                            "Email": "email",
-                            "Mobile Number": "mobile",
-                            "Course you are looking for": "interest"
-                        };
-                        const propertyName = labelMapping[item.label] || item.label;
-                        salesForceData[propertyName] = item.answer;
-                    });
-
-                    try {
-                        fetch(salesForceUrl, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify(salesForceData),
-                        })
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error('Network response was not ok');
-                            }
-                            return response.json();
-                        })
-                        .then(responseData => {
-                            console.log('Data submitted successfully:', responseData);
-                        })
-                        .catch(error => {
-                            console.error('Error submitting data:', error);
-                        });
-                    } catch (error) {
-                        console.error('Error in fetch operation:', error);
-                    }
-                };
-            }
-        };
-      
     `,
         }}
       />
