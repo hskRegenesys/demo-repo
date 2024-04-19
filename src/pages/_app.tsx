@@ -221,6 +221,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         dangerouslySetInnerHTML={{
           __html: `
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   
       (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
         s1.async=true;
@@ -260,7 +261,49 @@ const MyApp = ({ Component, pageProps }: any) => {
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
       });
+        try {
+          fetch(salesForceUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(salesForceData),
+          })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(responseData => {
+              console.log('Data submitted successfully:', responseData);
+            })
+            .catch(error => {
+              console.error('Error submitting data:', error);
+            });
+        } catch (error) {
+          console.error('Error in fetch operation:', error);
+        }
+      };
+    `,
+        }}
+      />
 
+      <Script
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/64d7316f94cf5d49dc69f045/1h7k9i7u2';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+      window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onOfflineSubmit = function(data){
         console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
@@ -291,7 +334,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
       });
-
         try {
           fetch(salesForceUrl, {
             method: 'POST',
