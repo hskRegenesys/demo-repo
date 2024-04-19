@@ -303,16 +303,23 @@ const MyApp = ({ Component, pageProps }: any) => {
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
         };   
+        
+        const labelMapping = {
+          "Name": "name",
+          "Email": "email",
+          "Mobile Number": "mobile",
+          "Course you are looking for": "interest"
+        };
+      
         console.log("Data 2 onOfflineSubmit checking", data)
+
         for (let i = 0; i < data?.length; i++) {
           const item = data[i];
           console.log("Item onOfflineSubmit:", item);
-  
-          // Find the appropriate property name based on the label.
           const propertyName = labelMapping[item.label] || item.label;
-  
-          // Update the Salesforce data object with the item's answer.
-          salesForceData[propertyName] = item.answer;
+          if (propertyName in salesForceData) {
+              salesForceData[propertyName] = item.answer;
+          }
       }
       console.log("Sales-force-data", salesForceData)
 
