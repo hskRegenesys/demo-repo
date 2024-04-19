@@ -288,7 +288,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onOfflineSubmit = function(data){
         console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
-        console.log("salesForceUrl onOfflineSubmit", salesForceUrl);
         const salesForceNewData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -306,8 +305,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         };   
         
         data.questions.forEach(question => {
-          console.log("question", question);
-          
           switch (question.label) {
               case "Name":
                   salesForceNewData.name = question.answer;
@@ -322,33 +319,33 @@ const MyApp = ({ Component, pageProps }: any) => {
                   salesForceNewData.interest = question.answer;
                   break;
               default:
-                  console.log("question", question.label);
+                  console.log("question", question);
           }
       });
     
-        console.log("Salesforce data to be submitted:", salesForceNewData);
-       
-      fetch(salesForceUrl, {
-        method: 'POST', 
-        headers: {
-            'Content-Type': 'application/json', 
-        },
-        body: JSON.stringify(salesForceNewData),
-    })
-    .then(response => {
-       
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json(); 
-    })
-    .then(responseData => {
-        console.log('Data submitted successfully:', responseData);
-    })
-    .catch(error => {
-        // Log any errors that occurred during the fetch.
-        console.error('Error submitting data:', error);
-    });
+      try {
+        fetch(salesForceUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(salesForceNewData),
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(responseData => {
+            console.log('Data submitted successfully:', responseData);
+          })
+          .catch(error => {
+            console.error('Error submitting data:', error);
+          });
+      } catch (error) {
+        console.error('Error in fetch operation:', error);
+      }
       };
 
     `,
