@@ -304,30 +304,31 @@ const MyApp = ({ Component, pageProps }: any) => {
           Lead_Source:"DR website chat"
         };   
         console.log("Data 2 onOfflineSubmit checking", data)
-        data.forEach(item => {
-          console.log("item onOfflineSubmit",item)
-          const labelMapping = {
-              "Name": "name",
-              "Email": "email",
-              "Mobile Number": "mobile",
-              "Course you are looking for": "interest"
-          };
-          const propertyName = labelMapping[item.label] || item.label; 
+        for (let i = 0; i < data?.length; i++) {
+          const item = data[i];
+          console.log("Item onOfflineSubmit:", item);
+  
+          // Find the appropriate property name based on the label.
+          const propertyName = labelMapping[item.label] || item.label;
+  
+          // Update the Salesforce data object with the item's answer.
           salesForceData[propertyName] = item.answer;
-      });
+      }
+      console.log("Sales-force-data", salesForceData)
+
       fetch(salesForceUrl, {
-        method: 'POST', // Use POST method for sending data.
+        method: 'POST', 
         headers: {
-            'Content-Type': 'application/json', // Send data as JSON.
+            'Content-Type': 'application/json', 
         },
-        body: JSON.stringify(salesForceData), // Convert the data to a JSON string.
+        body: JSON.stringify(salesForceData),
     })
     .then(response => {
-        // Check if the response status is ok.
+       
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        return response.json(); // Convert the response to JSON.
+        return response.json(); 
     })
     .then(responseData => {
         console.log('Data submitted successfully:', responseData);
