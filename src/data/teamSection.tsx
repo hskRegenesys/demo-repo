@@ -22,7 +22,7 @@ const socials = [
 ];
 
 const teamSection = {
-  title: "Popular topics",
+  title: "Popular Topics",
   teams: [
     // {
     //   id: 9,

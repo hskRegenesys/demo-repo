@@ -332,9 +332,9 @@ function ModalPopup(props: any) {
                           required: "Course is required",
                         })}
                       >
-                        <option value="" disabled selected>
+                        {/* <option value="" disabled selected>
                           Course you are looking for *
-                        </option>
+                        </option> */}
                         {courses.map((val: any) => {
                           return (
                             <option

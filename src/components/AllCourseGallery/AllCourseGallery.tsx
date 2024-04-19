@@ -284,10 +284,10 @@ const AllCourseGallery = () => {
 
                                   <div className="cat">
                                     <ul className="about-seven__list list-unstyled">
-                                      <li>{courseMode.name} classes</li>
+                                      <li>{courseMode.name} Classes</li>
                                       <li>{durationInWeeks} Weeks</li>
-                                      <li>International certification </li>
-                                      <li>Capstone projects </li>
+                                      <li>International Certification </li>
+                                      <li>Capstone Projects </li>
                                     </ul>
                                   </div>
 

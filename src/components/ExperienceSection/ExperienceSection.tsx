@@ -10,7 +10,7 @@ const ExperienceSection = () => {
       <div className="auto-container">
         <div className="sec-title">
           <h2 className="title-width-2">
-            An immersive experience by Digital Regenesys
+            An Immersive Experience by Digital Regenesys
           </h2>
           <h6 className="desc">We are here to build your career</h6>
         </div>

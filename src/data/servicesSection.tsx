@@ -52,7 +52,7 @@ export const serviceSectionThree = [
   {
     id: 2,
     icon: "fa fa-user-check",
-    title: "Ph.d. Faculty",
+    title: "PhD Faculty",
     desc: "Highly trained experts having PhDs in their respective fields possess the skills and knowledge to provide top-quality education.",
   },
   {
@@ -65,7 +65,7 @@ export const serviceSectionThree = [
     id: 4,
     icon: "far fa-file-alt",
     title: "Digital Regenesys Certification",
-    desc: "Certify your skills and knowledge with our industry-recognized certification Courses, designed to validate your expertise and open doors to new opportunities.",
+    desc: "Certify your skills and knowledge with our industry-recognised certification Courses, designed to validate your expertise and open doors to new opportunities.",
   },
 ];
 
