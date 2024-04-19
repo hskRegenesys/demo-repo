@@ -260,6 +260,38 @@ const MyApp = ({ Component, pageProps }: any) => {
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
       });
+
+      window.Tawk_API.onOfflineSubmit = function(data){
+        console.log("data onOfflineSubmit",data);
+        const salesForceUrl = '${salesForceUrl}';
+        console.log("salesForceUrl onOfflineSubmit", salesForceUrl);
+        const salesForceData = {
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          city: "",
+          country: "South Africa",
+          interest: "",
+          utm_source: "DR website chat ",
+          utm_medium: "DR Website",
+          utm_campaign: "DR Website",
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"
+          
+        };   
+        data.forEach(item => {
+          console.log("item onOfflineSubmit",item)
+          const labelMapping = {
+              "Name": "name",
+              "Email": "email",
+              "Mobile Number": "mobile",
+              "Course you are looking for": "interest"
+          };
+          const propertyName = labelMapping[item.label] || item.label; 
+          salesForceData[propertyName] = item.answer;
+      });
+
         try {
           fetch(salesForceUrl, {
             method: 'POST',
