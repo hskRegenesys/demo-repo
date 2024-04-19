@@ -322,7 +322,6 @@ const MyApp = ({ Component, pageProps }: any) => {
                   console.log("question", question);
           }
       });
-    
       try {
         fetch(salesForceUrl, {
           method: 'POST',
@@ -347,7 +346,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.error('Error in fetch operation:', error);
       }
       };
-
     `,
         }}
       />
