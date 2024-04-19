@@ -117,7 +117,7 @@ const HomeBanner = ({ className = "" }) => {
               align with the evolving digital and technological requirements of
               diverse industries. Gain a competitive edge through instructor-led
               training, increasing your chances of securing prestigious
-              positions in top MNCs and organizations. Immerse yourself in the
+              positions in top MNCs and organisations. Immerse yourself in the
               comprehensive content of our certificate courses, delivered by a
               highly experienced and globally recognized faculty. Join us now
               and become a vital part of the digital revolution.

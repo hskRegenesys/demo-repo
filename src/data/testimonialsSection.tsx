@@ -34,7 +34,7 @@ const testimonialsSection = {
       image: "author-2.jpg",
       name: "Effiong Udo Inyang",
       // designation: "Director",
-      text: "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enroll for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
+      text: "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enrol for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
     },
   ],
 };
@@ -284,7 +284,7 @@ export const testimonialsFive = {
       id: 4,
       image: "/assets/images/students/effiong-Udo-Inyang.webp",
       name: "Effiong Udo Inyang",
-      text: "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enroll for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
+      text: "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enrol for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
     },
     {
       id: 5,
