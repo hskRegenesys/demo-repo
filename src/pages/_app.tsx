@@ -216,7 +216,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         }}
       /> */}
 
-      <Script
+      {/* <Script
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
@@ -287,7 +287,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       };
     `,
         }}
-      />
+      /> */}
 
       <Script
         strategy="lazyOnload"
@@ -304,10 +304,66 @@ const MyApp = ({ Component, pageProps }: any) => {
         s0.parentNode.insertBefore(s1,s0);
       })();
       window.Tawk_API = window.Tawk_API || {};
-      window.Tawk_API.onOfflineSubmit = function(data){
-        console.log("data onOfflineSubmit",data);
+      window.Tawk_API.onLoad = function(){
+        const pageStatus = window.Tawk_API.getStatus();
+        if(pageStatus === 'online'){
+          console.log("online submit trigger)
+          window.Tawk_API.onPrechatSubmit = function(data){
+            const salesForceUrl = '${salesForceUrl}';
+            const salesForceData = {
+              domain: "crm",
+              type: "add_lead_to_crm",
+              name: "",
+              email: "",
+              city: "",
+              country: "South Africa",
+              interest: "",
+              utm_source: "DR website chat ",
+              utm_medium: "DR Website",
+              utm_campaign: "DR Website",
+              Source_Campaign:"DR Website",
+              Lead_Source:"DR website chat"
+              
+            };   
+            data.forEach(item => {
+              console.log("item onPrechatSubmit",item)
+              const labelMapping = {
+                  "Name": "name",
+                  "Email": "email",
+                  "Mobile Number": "mobile",
+                  "Course you are looking for": "interest"
+              };
+              const propertyName = labelMapping[item.label] || item.label; 
+              salesForceData[propertyName] = item.answer;
+          });
+            try {
+              fetch(salesForceUrl, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(salesForceData),
+              })
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.json();
+                })
+                .then(responseData => {
+                  console.log('Data submitted successfully:', responseData);
+                })
+                .catch(error => {
+                  console.error('Error submitting data:', error);
+                });
+            } catch (error) {
+              console.error('Error in fetch operation:', error);
+            }
+          };
+        } else {
+           console.log("offline submit trigger)
+        window.Tawk_API.onOfflineSubmit = function(data){
         const salesForceUrl = '${salesForceUrl}';
-        console.log("salesForceUrl onOfflineSubmit", salesForceUrl);
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -358,6 +414,8 @@ const MyApp = ({ Component, pageProps }: any) => {
           console.error('Error in fetch operation:', error);
         }
       };
+    }
+    }
     `,
         }}
       />
