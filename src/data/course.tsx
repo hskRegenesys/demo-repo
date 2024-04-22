@@ -899,7 +899,7 @@ export const courseData = {
           lists: [
             "Be a part of a community of 200,000+ corporate professionals comprising of highly achieved alumni",
             "Connect with the Industry experts who will guide you through your career after course completion",
-            "Talk, share, connect, learn, and grow along with your batchmates",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -6987,12 +6987,12 @@ If you are passionate about starting your own full-stack web development busines
           {
             id: 1,
             title:
-              "Do I Need To Have Prior Digital Marketing Knowledge Or Experience To Learn This Course?",
+              "Do I need to have prior digital marketing knowledge or experience to enrol this course?",
             text: "No, this course does not demand you to have technical understanding about Digital Marketing. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
           },
           {
             id: 2,
-            title: "What Are The Modes Of Payment Available For Me?",
+            title: "What are the modes of payment available for me?",
             text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
           },
           // {
@@ -7003,29 +7003,29 @@ If you are passionate about starting your own full-stack web development busines
           {
             id: 4,
             title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
+              "For how long will I be able to access the content after my course completion?",
             text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
           },
           {
             id: 5,
-            title: "Is This A Certified Course?",
+            title: "Is this a certified course?",
             text: "Yes, all the courses are certified by the Regenesys Business School.",
           },
           {
             id: 6,
             title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+              "What does it mean by designed by Ph.D. & conducted by experts?",
             text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
           },
           {
             id: 7,
             title:
-              "How Will I Get Access To The Assignments And Learning Content?",
+              "How will I get access to the assignments and learning content?",
             text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
           },
           {
             id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
+            title: "What if the course timings don't match my work timings?",
             text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
           },
         ],
@@ -8895,7 +8895,7 @@ If you are passionate about starting your own full-stack web development busines
       title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Project Management certificate",
+      certifiedTitle1: "Earn Your Design Thinking certificate",
       certifiedText1:
         "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Design Thinking career.",
       certifiedTitle2: "Share Your Achievement",
