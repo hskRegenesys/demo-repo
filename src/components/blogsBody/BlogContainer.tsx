@@ -33,7 +33,7 @@ const BlogContainer = ({
 
   return (
     <>
-      <Schemas type={Constants.article} data={postResponse} />
+      <Schemas type={Constants?.article} data={postResponse} />
       <div style={{ paddingTop: "85px" }}>
         <div>
           <div
@@ -67,7 +67,7 @@ const BlogContainer = ({
                 Published Date :
                 {new Date(
                   postResponse[0]?.yoast_head_json?.article_published_time
-                ).toLocaleDateString()}
+                )?.toLocaleDateString()}
               </div>
               <div className="p-2 bg-light text-dark rounded-right">
                 Publisher :{postResponse[0]?.yoast_head_json?.og_site_name}
@@ -75,7 +75,7 @@ const BlogContainer = ({
             </div>
           )}
           <BreadCrumb
-            title={slug?.toString().replaceAll("-", " ")}
+            title={slug?.toString()?.replaceAll("-", " ")}
             parent="Blog"
             parentHref="/blog"
           />
