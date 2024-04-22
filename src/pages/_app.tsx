@@ -240,7 +240,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           name: "",
           email: "",
           city: "",
-          country: "South Africa",
+          country: "",
           interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
@@ -264,26 +264,21 @@ const MyApp = ({ Component, pageProps }: any) => {
             const countryCode = item?.answer?.substring(0, 6);
     
             switch (countryCode) {
-                case "+234":
-                    salesForceData.country = "NIGERIA";
-                    salesForceData.city = "CityNameForNigeria";
-                    break;
-                case "+254":
-                    salesForceData.country = "KENYA";
-                    salesForceData.city = "CityNameForKenya";
-                    break;
-                case "+27":
-                    salesForceData.country = "SOUTH AFRICA";
-                    salesForceData.city = "CityNameForSouthAfrica";
-                    break;
-                case "+256":
-                    salesForceData.country = "UGANDA";
-                    salesForceData.city = "CityNameForUganda";
-                    break;
-                default:
-                    salesForceData.country = "TANZANIA";
-                    salesForceData.city = "CityNameForTanzania";
-            }
+              case "+234":
+                  salesForceNewData.country = "Nigeria";
+                  break;
+              case "+254":
+                  salesForceNewData.country = "Kenya";
+                  break;
+              case "+27":
+                  salesForceNewData.country = "South Africa";
+                  break;
+              case "+256":
+                  salesForceNewData.country = "Uganda";
+                  break;
+              default:
+                  salesForceNewData.country = "Tanzania";
+          }
         }
 
       });
