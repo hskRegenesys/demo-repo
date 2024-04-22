@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
 import mixpanel from "mixpanel-browser";
+import validator from "validator";
 
 import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
@@ -26,6 +27,7 @@ function ImageModalPopup(props: any) {
   const [phoneNumber, setPhoneNumber] = useState<any>("");
   const [btnDisable, sebtnDisable] = useState(false);
   const [formInteraction, setFormInteraction] = useState(false);
+  const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -67,6 +69,9 @@ function ImageModalPopup(props: any) {
   } = hookForm;
   const programmeOfInterest = watch("Programme_Of_Interest");
   const onSubmit = async (data: any) => {
+    if (phoneNumberError) {
+      return;
+    }
     sebtnDisable(true);
     const current = new Date();
     data.page_url = window.location.href;
@@ -305,19 +310,30 @@ function ImageModalPopup(props: any) {
                           // defaultCountry="ZA"
                           placeholder="Select Country Code*"
                           onChange={(e) => {
-                            setValue("Phone", e);
-                            setPhoneNumber(e);
-                            mixpanel.track("Phone Changed", {
-                              InputName: "Phone",
-                              Filled: e !== "",
-                              newValue: e,
-                            });
+                            const phoneNumber = e ? e.toString() : "";
+                            const isValid =
+                              validator.isMobilePhone(phoneNumber);
+                            if (isValid) {
+                              setValue("Phone", phoneNumber);
+                              setPhoneNumber(phoneNumber);
+                              mixpanel.track("Phone Changed", {
+                                InputName: "Phone",
+                                Filled: phoneNumber !== "",
+                                newValue: phoneNumber,
+                              });
+                              setPhoneNumberError("");
+                            } else {
+                              setPhoneNumberError(
+                                "Valid phone number Required"
+                              );
+                            }
                           }}
-                          className={`${errors?.Phone && "invalid"}`}
+                          className={`${phoneNumberError && "invalid"}`}
                         />
-                        {errors?.Phone && (
+
+                        {phoneNumberError && (
                           <small className="text-danger">
-                            {errors?.Phone?.message}
+                            {phoneNumberError}
                           </small>
                         )}
                       </div>
