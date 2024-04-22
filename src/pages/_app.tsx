@@ -287,6 +287,8 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       window.Tawk_API.onOfflineSubmit = function(data){
         console.log("data onOfflineSubmit",data);
+        
+
         const salesForceUrl = '${salesForceUrl}';
         const salesForceNewData = {
           domain: "crm",
@@ -295,7 +297,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           email: "",
           city: "",
           mobile:"",
-          country: "South Africa",
+          country: "",
           interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
@@ -314,6 +316,25 @@ const MyApp = ({ Component, pageProps }: any) => {
                   break;
               case "Mobile Number":
                   salesForceNewData.mobile = question.answer;
+
+                  // Determine country and city based on country code
+                  const countryCode = question.answer.substring(0, 4);
+                  switch (countryCode) {
+                      case "+234":
+                          salesForceNewData.country = "Nigeria";
+                          break;
+                      case "+254":
+                          salesForceNewData.country = "Kenya";
+                          break;
+                      case "+27":
+                          salesForceNewData.country = "South Africa";
+                          break;
+                      case "+256":
+                          salesForceNewData.country = "Uganda";
+                          break;
+                      default:
+                          salesForceNewData.country = "Tanzania";
+                  }
                   break;
               case "Course you are looking for":
                   salesForceNewData.interest = question.answer;
