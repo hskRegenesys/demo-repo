@@ -261,23 +261,23 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
 
           if (item.label === "Mobile Number") {
-            const countryCode = item?.answer?.substring(0, 6);
-    
+            const countryCode = item?.answer?.substring(0, 4);
+
             switch (countryCode) {
               case "+234":
-                  salesForceNewData.country = "Nigeria";
+                salesForceData.country = "Nigeria";
                   break;
               case "+254":
-                  salesForceNewData.country = "Kenya";
+                salesForceData.country = "Kenya";
                   break;
-              case "+27":
-                  salesForceNewData.country = "South Africa";
+              case "+255":
+                salesForceData.country = "Tanzania";
                   break;
               case "+256":
-                  salesForceNewData.country = "Uganda";
+                salesForceData.country = "Uganda";
                   break;
               default:
-                  salesForceNewData.country = "Tanzania";
+                salesForceData.country = "South Africa";
           }
         }
 
@@ -340,7 +340,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                   salesForceNewData.mobile = question.answer;
 
                   // Determine country and city based on country code
-                  const countryCode = question?.answer?.substring(0, 6);
+                  const countryCode = question?.answer?.substring(0, 4);
                   switch (countryCode) {
                       case "+234":
                           salesForceNewData.country = "Nigeria";
@@ -348,14 +348,14 @@ const MyApp = ({ Component, pageProps }: any) => {
                       case "+254":
                           salesForceNewData.country = "Kenya";
                           break;
-                      case "+27":
-                          salesForceNewData.country = "South Africa";
+                      case "+255":
+                          salesForceNewData.country = "Tanzania";
                           break;
                       case "+256":
                           salesForceNewData.country = "Uganda";
                           break;
                       default:
-                          salesForceNewData.country = "Tanzania";
+                          salesForceNewData.country = "South Africa";
                   }
                   break;
               case "Course you are looking for":
