@@ -427,516 +427,516 @@ export const courseData = {
     stickyText:
       "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
-  OSCM: {
-    processOne: [
-      {
-        id: 1,
-        // image: "yellow-bg-details-bg-1.webp",
-        youtubeUrl:
-          "https://www.youtube.com/embed/iXRqSOxcjEM?autoplay=1&loop=1&playlist=iXRqSOxcjEM",
-        title:
-          "Certification Programme in Operations & Supply Chain Management",
-        text: "Embark on a transformative journey with our Operations & Supply Chain Management programme, designed to equip you with cutting-edge skills in process optimisation, strategic supply chain design, and the latest Industry 4.0 innovations, fostering operational excellence for the visionary professional.",
-        lists: [
-          "24 Weeks Course",
-          "14 modules",
-          "Live classes",
-          "International certification",
-        ],
-      },
-    ],
-    productDescription: {
-      title: "Certification Programme in Operations & Supply Chain Management",
-      text1:
-        "Master the art of Operations & Supply Chain Management through a comprehensive curriculum emphasizing core concepts, strategic planning, and cutting-edge Industry 4.0 insights. Our programme shapes versatile professionals adept in quality management frameworks, analytics applications, and flexible delivery modes, ensuring alignment with operational excellence standards.",
-    },
-    joinReasons: {
-      title: "Reasons To Join This Course",
-      subTitle1: "Exposure",
-      desc1: "Get exposure to ChatGPT and Gemini",
+  // OSCM: {
+  //   processOne: [
+  //     {
+  //       id: 1,
+  //       // image: "yellow-bg-details-bg-1.webp",
+  //       youtubeUrl:
+  //         "https://www.youtube.com/embed/iXRqSOxcjEM?autoplay=1&loop=1&playlist=iXRqSOxcjEM",
+  //       title:
+  //         "Certification Programme in Operations & Supply Chain Management",
+  //       text: "Embark on a transformative journey with our Operations & Supply Chain Management programme, designed to equip you with cutting-edge skills in process optimisation, strategic supply chain design, and the latest Industry 4.0 innovations, fostering operational excellence for the visionary professional.",
+  //       lists: [
+  //         "24 Weeks Course",
+  //         "14 modules",
+  //         "Live classes",
+  //         "International certification",
+  //       ],
+  //     },
+  //   ],
+  //   productDescription: {
+  //     title: "Certification Programme in Operations & Supply Chain Management",
+  //     text1:
+  //       "Master the art of Operations & Supply Chain Management through a comprehensive curriculum emphasizing core concepts, strategic planning, and cutting-edge Industry 4.0 insights. Our programme shapes versatile professionals adept in quality management frameworks, analytics applications, and flexible delivery modes, ensuring alignment with operational excellence standards.",
+  //   },
+  //   joinReasons: {
+  //     title: "Reasons To Join This Course",
+  //     subTitle1: "Exposure",
+  //     desc1: "Get exposure to ChatGPT and Gemini",
 
-      subTitle2: "Best-in-class instructors",
-      desc2:
-        "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
+  //     subTitle2: "Best-in-class instructors",
+  //     desc2:
+  //       "Learn from the best-in-class instructors who will help you with every technological concept from scratch",
 
-      subTitle3: "Live sessions",
-      desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
+  //     subTitle3: "Live sessions",
+  //     desc3:
+  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
-      subTitle4: "Tools usage",
-      desc4: "Gain a broad spectrum of knowledge on how to use the tools",
-      bg1: "/assets/images/background/reason-bg1-1.webp",
-      bg2: "/assets/images/background/reason-bg2-1.webp",
-      bg3: "/assets/images/background/reason-bg3-1.webp",
-      bg4: "/assets/images/background/reason-bg4-1.webp",
-    },
-    courseTools: ["OSCM/ChatGPT.png", "OSCM/Gemini.jpg"],
-    courseCertificate: {
-      certificateTitle: "",
-      certificateSubTitle: "",
-      certificateSubTitleSpace: "Certificate Programme Modules",
-      certificateSubSubTitle: "",
-      certificateListTitle: "",
+  //     subTitle4: "Tools usage",
+  //     desc4: "Gain a broad spectrum of knowledge on how to use the tools",
+  //     bg1: "/assets/images/background/reason-bg1-1.webp",
+  //     bg2: "/assets/images/background/reason-bg2-1.webp",
+  //     bg3: "/assets/images/background/reason-bg3-1.webp",
+  //     bg4: "/assets/images/background/reason-bg4-1.webp",
+  //   },
+  //   courseTools: ["OSCM/ChatGPT.png", "OSCM/Gemini.jpg"],
+  //   courseCertificate: {
+  //     certificateTitle: "",
+  //     certificateSubTitle: "",
+  //     certificateSubTitleSpace: "Certificate Programme Modules",
+  //     certificateSubSubTitle: "",
+  //     certificateListTitle: "",
 
-      certificateSkillList: [
-        "Introduction",
-        "Quantitative Techniques for OM/ SCM",
-        "Operations Strategy",
-        "Process Structure",
-        "Quality Management",
-        "Planning & Scheduling",
-        "Inventory Management",
-        "Lean Management",
-        "Designing Supply Chain",
-        "Forecasting Demand",
-        "Supplier Relationship Management",
-        "Analytics in Operations & Supply Chaint",
-        "Emerging Trend",
-      ],
-      certificateListPara: `Career Opportunities:`,
-      certificateRolesList: [
-        "Operations Manager",
-        "Supply Chain Manager ",
-        "Logistics Manager",
-        "Procurement Manager",
-        "Materials Manager",
-        "Production Planning Manage",
-        "Quality Assurance Manager",
-        "Supply Chain Analyst",
-        "Demand Forecasting Analyst",
-        "Inventory Control Analyst",
-      ],
-      CertificateImage: ["OSCM_certificates.webp"],
-      imageName: "OSCM_certificates",
-    },
+  //     certificateSkillList: [
+  //       "Introduction",
+  //       "Quantitative Techniques for OM/ SCM",
+  //       "Operations Strategy",
+  //       "Process Structure",
+  //       "Quality Management",
+  //       "Planning & Scheduling",
+  //       "Inventory Management",
+  //       "Lean Management",
+  //       "Designing Supply Chain",
+  //       "Forecasting Demand",
+  //       "Supplier Relationship Management",
+  //       "Analytics in Operations & Supply Chaint",
+  //       "Emerging Trend",
+  //     ],
+  //     certificateListPara: `Career Opportunities:`,
+  //     certificateRolesList: [
+  //       "Operations Manager",
+  //       "Supply Chain Manager ",
+  //       "Logistics Manager",
+  //       "Procurement Manager",
+  //       "Materials Manager",
+  //       "Production Planning Manage",
+  //       "Quality Assurance Manager",
+  //       "Supply Chain Analyst",
+  //       "Demand Forecasting Analyst",
+  //       "Inventory Control Analyst",
+  //     ],
+  //     CertificateImage: ["OSCM_certificates.webp"],
+  //     imageName: "OSCM_certificates",
+  //   },
 
-    featureSeven: {
-      title: "Meet the faculty",
-      desc: "Learn from the experienced subject and industry experts",
-      features: [
-        {
-          id: 1,
-          image: "Suvarana-Deshpande.jpeg",
-          title: "Dr. Suvarna M. Deshpande",
-          text: `Dr. Suvarna M. Deshpande is a seasoned professional in the Indian Pharmaceutical Industry, with extensive experience from grassroots to senior management roles. With qualifications including a B. Pharm, MBA, and PhD in
+  //   featureSeven: {
+  //     title: "Meet the faculty",
+  //     desc: "Learn from the experienced subject and industry experts",
+  //     features: [
+  //       {
+  //         id: 1,
+  //         image: "Suvarana-Deshpande.jpeg",
+  //         title: "Dr. Suvarna M. Deshpande",
+  //         text: `Dr. Suvarna M. Deshpande is a seasoned professional in the Indian Pharmaceutical Industry, with extensive experience from grassroots to senior management roles. With qualifications including a B. Pharm, MBA, and PhD in
 
-          Marketing Management, she brings profound expertise to her roles. Dr. Suvarna has worked with renowned pharmaceutical companies and holds executive certificates in Strategic Brand Management and Digital Marketing. Passionate about education, she has served in various capacities in prestigious institutions and is a visiting faculty at management institutes in Pune. As a corporate trainer, Dr. Suvarna designs customized programmes using interactive methods such as management games and case studies. With her extensive experience and dedication to teaching, Dr. Suvarna M. Deshpande is a valuable asset in both academia and industry.`,
-          designation: "Industry Operations Expert and Seasoned Educator",
-        },
-        // {
-        //   id: 2,
-        //   image: "Yatin-Karnik.jpg",
-        //   title: "James Forson",
-        //   text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
-        //   designation: "BSocSc (Hons)",
-        // },
-      ],
-    },
-    videoOne: {
-      image: "/assets/images/background/full-video-bg.webp",
-      videoId: "y2Eqx6ys1hQ",
-      title: "Linoor is trusted by millions of customers",
-      text1:
-        "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
-      text2:
-        "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
-    },
-    CourseCurriculum: [
-      {
-        id: 1,
-        courseCurriculumTitle: "Course curriculum",
-        faqs: [
-          {
-            id: 1,
-            title: "Introduction",
-            lists: [
-              "Understand the basics of operations and supply chain management, including cycle time, throughput and work-in-process",
-            ],
-          },
-          {
-            id: 2,
-            title: "Introduction to Statistics",
-            lists: [
-              `
-              Acquire skills in statistics, mathematical programming, queuing theory, and simulation for operational decision-making.
-              `,
-            ],
-          },
-          {
-            id: 3,
-            title: "Operations Strategy",
-            lists: [
-              `
-              Learn how operations strategy aligns with business strategy and contributes to organizational goals.
-              `,
-            ],
-          },
+  //         Marketing Management, she brings profound expertise to her roles. Dr. Suvarna has worked with renowned pharmaceutical companies and holds executive certificates in Strategic Brand Management and Digital Marketing. Passionate about education, she has served in various capacities in prestigious institutions and is a visiting faculty at management institutes in Pune. As a corporate trainer, Dr. Suvarna designs customized programmes using interactive methods such as management games and case studies. With her extensive experience and dedication to teaching, Dr. Suvarna M. Deshpande is a valuable asset in both academia and industry.`,
+  //         designation: "Industry Operations Expert and Seasoned Educator",
+  //       },
+  //       // {
+  //       //   id: 2,
+  //       //   image: "Yatin-Karnik.jpg",
+  //       //   title: "James Forson",
+  //       //   text: "James Forson is known for his excellent work in Project Management. James has pursued  BSocSc (Hons) from UCT and MBA from UCT.",
+  //       //   designation: "BSocSc (Hons)",
+  //       // },
+  //     ],
+  //   },
+  //   videoOne: {
+  //     image: "/assets/images/background/full-video-bg.webp",
+  //     videoId: "y2Eqx6ys1hQ",
+  //     title: "Linoor is trusted by millions of customers",
+  //     text1:
+  //       "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.",
+  //     text2:
+  //       "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet.",
+  //   },
+  //   CourseCurriculum: [
+  //     {
+  //       id: 1,
+  //       courseCurriculumTitle: "Course curriculum",
+  //       faqs: [
+  //         {
+  //           id: 1,
+  //           title: "Introduction",
+  //           lists: [
+  //             "Understand the basics of operations and supply chain management, including cycle time, throughput and work-in-process",
+  //           ],
+  //         },
+  //         {
+  //           id: 2,
+  //           title: "Introduction to Statistics",
+  //           lists: [
+  //             `
+  //             Acquire skills in statistics, mathematical programming, queuing theory, and simulation for operational decision-making.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 3,
+  //           title: "Operations Strategy",
+  //           lists: [
+  //             `
+  //             Learn how operations strategy aligns with business strategy and contributes to organizational goals.
+  //             `,
+  //           ],
+  //         },
 
-          {
-            id: 4,
-            title: "Process Structure",
-            lists: [
-              `
-              Analyze and improve process structures in services and manufacturing for enhanced performance.
-              `,
-            ],
-          },
-          {
-            id: 5,
-            title: "Quality Management",
-            lists: [
-              `
-              Master total quality management, Six Sigma, statistical
-              process control, and process capability to enhance quality.
-              `,
-            ],
-          },
-          {
-            id: 6,
-            title: "Planning & Scheduling",
-            lists: [
-              `
-              Develop skills in scheduling, resource planning, and material
-              requirements planning.
-              `,
-            ],
-          },
-          {
-            id: 7,
-            title: "MInventory Management",
-            lists: [
-              `
-              Learn inventory types, economic order quantity, and
-              inventory control systems for effective management.
-              `,
-            ],
-          },
-          {
-            id: 8,
-            title: "Lean Management",
-            lists: [
-              `
-              Design lean systems, understanding the Toyota Production
-              System and lean process considerations.
-              `,
-            ],
-          },
+  //         {
+  //           id: 4,
+  //           title: "Process Structure",
+  //           lists: [
+  //             `
+  //             Analyze and improve process structures in services and manufacturing for enhanced performance.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 5,
+  //           title: "Quality Management",
+  //           lists: [
+  //             `
+  //             Master total quality management, Six Sigma, statistical
+  //             process control, and process capability to enhance quality.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 6,
+  //           title: "Planning & Scheduling",
+  //           lists: [
+  //             `
+  //             Develop skills in scheduling, resource planning, and material
+  //             requirements planning.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 7,
+  //           title: "MInventory Management",
+  //           lists: [
+  //             `
+  //             Learn inventory types, economic order quantity, and
+  //             inventory control systems for effective management.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 8,
+  //           title: "Lean Management",
+  //           lists: [
+  //             `
+  //             Design lean systems, understanding the Toyota Production
+  //             System and lean process considerations.
+  //             `,
+  //           ],
+  //         },
 
-          {
-            id: 9,
-            title: "Designing Supply Chain",
-            lists: [
-              `
-              Design effective supply chains for services and
-              manufacturing, measuring performance financially and
-              through inventory.
-              `,
-            ],
-          },
-          {
-            id: 10,
-            title: "Forecasting Demand",
-            lists: [
-              `
-              Understand and control demand variability using forecasting
+  //         {
+  //           id: 9,
+  //           title: "Designing Supply Chain",
+  //           lists: [
+  //             `
+  //             Design effective supply chains for services and
+  //             manufacturing, measuring performance financially and
+  //             through inventory.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 10,
+  //           title: "Forecasting Demand",
+  //           lists: [
+  //             `
+  //             Understand and control demand variability using forecasting
 
-            models and monitoring the bullwhip effect.
-              `,
-            ],
-          },
-          {
-            id: 11,
-            title: "Supplier Relationship Management",
-            lists: [
-              `
-              Learn strategic sourcing, supplier partnership management, supply chain contracts, and procurement analytics.
-              `,
-            ],
-          },
-          {
-            id: 12,
-            title: "Logistics Management",
-            lists: [
-              `
-              Understand the factors in location decisions, network design,
+  //           models and monitoring the bullwhip effect.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 11,
+  //           title: "Supplier Relationship Management",
+  //           lists: [
+  //             `
+  //             Learn strategic sourcing, supplier partnership management, supply chain contracts, and procurement analytics.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 12,
+  //           title: "Logistics Management",
+  //           lists: [
+  //             `
+  //             Understand the factors in location decisions, network design,
 
-            and the management of warehousing and logistics.
-              `,
-            ],
-          },
-          {
-            id: 13,
-            title: "Analytics in Operations & Supply Chain",
-            lists: [
-              `
-              Apply optimization and modeling for prescriptive analytics in
-              operations and supply chain management.
-              `,
-            ],
-          },
-          {
-            id: 14,
-            title: "Emerging Trends in Operations & Supply Chain",
-            lists: [
-              `
-              Explore sustainable, socially responsible operations and the
-              impact of Industry 4.0 on supply chain management.
-              `,
-            ],
-          },
-        ],
-      },
+  //           and the management of warehousing and logistics.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 13,
+  //           title: "Analytics in Operations & Supply Chain",
+  //           lists: [
+  //             `
+  //             Apply optimization and modeling for prescriptive analytics in
+  //             operations and supply chain management.
+  //             `,
+  //           ],
+  //         },
+  //         {
+  //           id: 14,
+  //           title: "Emerging Trends in Operations & Supply Chain",
+  //           lists: [
+  //             `
+  //             Explore sustainable, socially responsible operations and the
+  //             impact of Industry 4.0 on supply chain management.
+  //             `,
+  //           ],
+  //         },
+  //       ],
+  //     },
 
-      // {
-      //   id: 1,
-      //   courseCurriculumTitle: "Course curriculum",
-      //   faqs: [
-      //     {
-      //       id: 1,
-      //       title: "Week 1",
-      //       lists: ["Introduction to Project Management", "Project Profiling"],
-      //     },
-      //     {
-      //       id: 2,
-      //       title: "Week 2",
-      //       lists: ["Developing Team Capabilities"],
-      //     },
-      //     {
-      //       id: 3,
-      //       title: "Week 3",
-      //       lists: ["Planning and Managing"],
-      //     },
-      //     {
-      //       id: 4,
-      //       title: "Week 4",
-      //       lists: ["Time Management"],
-      //     },
-      //     {
-      //       id: 5,
-      //       title: "Week 5",
-      //       lists: ["Monitoring and Reporting", "Quality Management"],
-      //     },
-      //     {
-      //       id: 6,
-      //       title: "Week 6",
-      //       lists: ["Project Closure"],
-      //     },
-      //     {
-      //       id: 7,
-      //       title: "Week 7",
-      //       lists: ["Change Management", "Disaster Management"],
-      //     },
-      //     {
-      //       id: 8,
-      //       title: "Week 8",
-      //       lists: [
-      //         "International Project Management",
-      //         "Software for Project Management - (Microsoft Project Plan- MPP)",
-      //       ],
-      //     },
-      //     {
-      //       id: 9,
-      //       title: "Week 9",
-      //       lists: ["Design Thinking"],
-      //     },
-      //     {
-      //       id: 10,
-      //       title: "Week 10",
-      //       lists: ["Contracts and Agreement", "Industry Expert Session"],
-      //     },
-      //   ],
-      //   defaultCurrent: 1,
-      // },
-    ],
-    faqsSection: [
-      {
-        id: 1,
-        faqs: [
-          {
-            id: 1,
+  //     // {
+  //     //   id: 1,
+  //     //   courseCurriculumTitle: "Course curriculum",
+  //     //   faqs: [
+  //     //     {
+  //     //       id: 1,
+  //     //       title: "Week 1",
+  //     //       lists: ["Introduction to Project Management", "Project Profiling"],
+  //     //     },
+  //     //     {
+  //     //       id: 2,
+  //     //       title: "Week 2",
+  //     //       lists: ["Developing Team Capabilities"],
+  //     //     },
+  //     //     {
+  //     //       id: 3,
+  //     //       title: "Week 3",
+  //     //       lists: ["Planning and Managing"],
+  //     //     },
+  //     //     {
+  //     //       id: 4,
+  //     //       title: "Week 4",
+  //     //       lists: ["Time Management"],
+  //     //     },
+  //     //     {
+  //     //       id: 5,
+  //     //       title: "Week 5",
+  //     //       lists: ["Monitoring and Reporting", "Quality Management"],
+  //     //     },
+  //     //     {
+  //     //       id: 6,
+  //     //       title: "Week 6",
+  //     //       lists: ["Project Closure"],
+  //     //     },
+  //     //     {
+  //     //       id: 7,
+  //     //       title: "Week 7",
+  //     //       lists: ["Change Management", "Disaster Management"],
+  //     //     },
+  //     //     {
+  //     //       id: 8,
+  //     //       title: "Week 8",
+  //     //       lists: [
+  //     //         "International Project Management",
+  //     //         "Software for Project Management - (Microsoft Project Plan- MPP)",
+  //     //       ],
+  //     //     },
+  //     //     {
+  //     //       id: 9,
+  //     //       title: "Week 9",
+  //     //       lists: ["Design Thinking"],
+  //     //     },
+  //     //     {
+  //     //       id: 10,
+  //     //       title: "Week 10",
+  //     //       lists: ["Contracts and Agreement", "Industry Expert Session"],
+  //     //     },
+  //     //   ],
+  //     //   defaultCurrent: 1,
+  //     // },
+  //   ],
+  //   faqsSection: [
+  //     {
+  //       id: 1,
+  //       faqs: [
+  //         {
+  //           id: 1,
 
-            title:
-              "What is a Certification Programme in Operations & Supply Chain Management?",
-            text: "A Certification Programme in Operations and Supply Chain Management is a comprehensive and specialised programme focusing on developing skills and knowledge in operations management, logistics, supply chain optimisation, inventory management, procurement, and distribution.",
-          },
-          {
-            id: 2,
+  //           title:
+  //             "What is a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "A Certification Programme in Operations and Supply Chain Management is a comprehensive and specialised programme focusing on developing skills and knowledge in operations management, logistics, supply chain optimisation, inventory management, procurement, and distribution.",
+  //         },
+  //         {
+  //           id: 2,
 
-            title:
-              "What are the key components of a Certification Programme in Operations & Supply Chain Management?",
-            text: "The key components typically include modules on Operations Strategy, Designing Supply Chains, Logistics Management, Forecasting Demand, Operations Strategy, Supplier Relationship Management, Analytics in Operations and Supply Chain, Emerging Trends in Operations and Supply Chain, and Lean Management.\n\nClick <a href='https://www.digitalregenesys.com/all-courses/operations-and-supply-chain-management'>here</a> to learn more about the key components of a Certification Programme in Operations & Supply Chain Management.",
-          },
-          {
-            id: 3,
+  //           title:
+  //             "What are the key components of a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "The key components typically include modules on Operations Strategy, Designing Supply Chains, Logistics Management, Forecasting Demand, Operations Strategy, Supplier Relationship Management, Analytics in Operations and Supply Chain, Emerging Trends in Operations and Supply Chain, and Lean Management.\n\nClick <a href='https://www.digitalregenesys.com/all-courses/operations-and-supply-chain-management'>here</a> to learn more about the key components of a Certification Programme in Operations & Supply Chain Management.",
+  //         },
+  //         {
+  //           id: 3,
 
-            title:
-              "What practical skills can I expect to develop in a Certification Programme in Operations & Supply Chain Management?",
-            text: "Participants can expect to develop practical skills such as supply chain optimisation, inventory management techniques, procurement strategies, logistics planning, demand forecasting methods, process improvement, project management, and supply chain analytics using tools and software.",
-          },
-          {
-            id: 4,
+  //           title:
+  //             "What practical skills can I expect to develop in a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Participants can expect to develop practical skills such as supply chain optimisation, inventory management techniques, procurement strategies, logistics planning, demand forecasting methods, process improvement, project management, and supply chain analytics using tools and software.",
+  //         },
+  //         {
+  //           id: 4,
 
-            title: "Who is this Certification Programme suitable for?",
-            text: "The Certification Programme in Operations & Supply Chain Management is suitable for individuals interested in pursuing careers in operations management, supply chain management, logistics, procurement, inventory control, and related fields. It also benefits professionals seeking to enhance their skills and knowledge.",
-          },
-          {
-            id: 5,
+  //           title: "Who is this Certification Programme suitable for?",
+  //           text: "The Certification Programme in Operations & Supply Chain Management is suitable for individuals interested in pursuing careers in operations management, supply chain management, logistics, procurement, inventory control, and related fields. It also benefits professionals seeking to enhance their skills and knowledge.",
+  //         },
+  //         {
+  //           id: 5,
 
-            title:
-              "How do I enrol and register for the Digital Regenesys Certification Programme in Operations & Supply Chain Management?",
-            text: "To enrol in the Digital Regenesys Certification Programme in Operations & Supply Chain Management, follow these steps:\n • Visit the official website @ <a href='https://www.digitalregenesys.com/'> https://www.digitalregenesys.com</a> \n • Navigate to the course page. \n • Select the required course.\n • Click the \"Enrol   Now\" button.\n • Fill out the registration form with all the required information.\n • Submit the form and proceed to make the payment for the course.\n • Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
-          },
-          {
-            id: 6,
+  //           title:
+  //             "How do I enrol and register for the Digital Regenesys Certification Programme in Operations & Supply Chain Management?",
+  //           text: "To enrol in the Digital Regenesys Certification Programme in Operations & Supply Chain Management, follow these steps:\n • Visit the official website @ <a href='https://www.digitalregenesys.com/'> https://www.digitalregenesys.com</a> \n • Navigate to the course page. \n • Select the required course.\n • Click the \"Enrol   Now\" button.\n • Fill out the registration form with all the required information.\n • Submit the form and proceed to make the payment for the course.\n • Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+  //         },
+  //         {
+  //           id: 6,
 
-            title:
-              "Are there any age restrictions for pursuing a Certification Programme in Operations & Supply Chain Management?",
-            text: "There are typically no age restrictions to pursue a Digital Regenesys Certification Programme in Operations & Supply Chain Management. This Certification Programme is designed to accommodate learners of all ages, from high school students to working professionals looking to enhance their skills later in their careers.",
-          },
-          {
-            id: 7,
+  //           title:
+  //             "Are there any age restrictions for pursuing a Certification Programme in Operations & Supply Chain Management?",
+  //           text: "There are typically no age restrictions to pursue a Digital Regenesys Certification Programme in Operations & Supply Chain Management. This Certification Programme is designed to accommodate learners of all ages, from high school students to working professionals looking to enhance their skills later in their careers.",
+  //         },
+  //         {
+  //           id: 7,
 
-            title:
-              "How Long Does It Take to Complete Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
-            text: "The total duration of the Digital Regenesys Digital Regenesys's Certification Programme in Operations & Supply Chain Management is 24 Weeks Course.",
-          },
-          {
-            id: 8,
+  //           title:
+  //             "How Long Does It Take to Complete Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
+  //           text: "The total duration of the Digital Regenesys Digital Regenesys's Certification Programme in Operations & Supply Chain Management is 24 Weeks Course.",
+  //         },
+  //         {
+  //           id: 8,
 
-            title:
-              "Are there any prerequisites to pursue Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
-            text: "No. There are no such prerequisites or Master's degrees required to pursue this certification programme. Individuals with graduation degrees across any stream and a basic understanding of business concepts, mathematics, and computer skills are required.",
-          },
-          {
-            id: 9,
+  //           title:
+  //             "Are there any prerequisites to pursue Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
+  //           text: "No. There are no such prerequisites or Master's degrees required to pursue this certification programme. Individuals with graduation degrees across any stream and a basic understanding of business concepts, mathematics, and computer skills are required.",
+  //         },
+  //         {
+  //           id: 9,
 
-            title:
-              "Can Individuals from the Science domain take this Certification Programme in Operations & Supply Chain Management?",
-            text: "Absolutely. Individuals from Science domains can take this Certification Programme in Operations & Supply Chain Management. The core modules include basic Statistics and Mathematics, which might be difficult for individuals from the Science domain. However, with dedication, concentration, motivation, and self-learning, anyone can thrive in the Operations & Supply Chain Management profession.",
-          },
-          {
-            id: 10,
+  //           title:
+  //             "Can Individuals from the Science domain take this Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Absolutely. Individuals from Science domains can take this Certification Programme in Operations & Supply Chain Management. The core modules include basic Statistics and Mathematics, which might be difficult for individuals from the Science domain. However, with dedication, concentration, motivation, and self-learning, anyone can thrive in the Operations & Supply Chain Management profession.",
+  //         },
+  //         {
+  //           id: 10,
 
-            title:
-              "What tools are covered in Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
-            text: "Tools used in the Digital Regenesys Certification Programme in Operations & Supply Chain Management are:\nChatGPT and Gemini.",
-          },
-          {
-            id: 11,
+  //           title:
+  //             "What tools are covered in Digital Regenesys's Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Tools used in the Digital Regenesys Certification Programme in Operations & Supply Chain Management are:\nChatGPT and Gemini.",
+  //         },
+  //         {
+  //           id: 11,
 
-            title:
-              "Do industry professionals and employers recognise the Certification Programme?",
-            text: "Yes, the Certification Programme in Operations & Supply Chain Management is recognised by industry professionals and employers as it provides specialised training and skills that are directly applicable to operations, logistics, and supply chain management roles.",
-          },
-          {
-            id: 12,
+  //           title:
+  //             "Do industry professionals and employers recognise the Certification Programme?",
+  //           text: "Yes, the Certification Programme in Operations & Supply Chain Management is recognised by industry professionals and employers as it provides specialised training and skills that are directly applicable to operations, logistics, and supply chain management roles.",
+  //         },
+  //         {
+  //           id: 12,
 
-            title:
-              "What are the career opportunities after completing the Certification Programme in Operations & Supply Chain Management?",
-            text: "Individuals with the Certification Programme in Operations & Supply Chain Management can pursue various career opportunities such as operations manager, supply chain analyst, logistics Manager, procurement specialist, Inventory Control Analyst, distribution manager, supply chain consultant, and operations planner in manufacturing, retail, logistics, healthcare, and other industries.",
-          },
-        ],
-        defaultCurrent: 1,
-      },
-    ],
-    courseBenefits: {
-      title: "Benefits",
-      desc: "",
-      tabBtns: [
-        {
-          id: "tab-1",
-          title: "Career Support",
-        },
-        {
-          id: "tab-2",
-          title: "Doubt Resolution",
-        },
-        {
-          id: "tab-3",
-          title: "Learning Support",
-        },
-        {
-          id: "tab-4",
-          title: "Networking",
-        },
-      ],
-      tabsContents: [
-        {
-          id: "tab-1",
-          image: "featured-image-14.jpg",
+  //           title:
+  //             "What are the career opportunities after completing the Certification Programme in Operations & Supply Chain Management?",
+  //           text: "Individuals with the Certification Programme in Operations & Supply Chain Management can pursue various career opportunities such as operations manager, supply chain analyst, logistics Manager, procurement specialist, Inventory Control Analyst, distribution manager, supply chain consultant, and operations planner in manufacturing, retail, logistics, healthcare, and other industries.",
+  //         },
+  //       ],
+  //       defaultCurrent: 1,
+  //     },
+  //   ],
+  //   courseBenefits: {
+  //     title: "Benefits",
+  //     desc: "",
+  //     tabBtns: [
+  //       {
+  //         id: "tab-1",
+  //         title: "Career Support",
+  //       },
+  //       {
+  //         id: "tab-2",
+  //         title: "Doubt Resolution",
+  //       },
+  //       {
+  //         id: "tab-3",
+  //         title: "Learning Support",
+  //       },
+  //       {
+  //         id: "tab-4",
+  //         title: "Networking",
+  //       },
+  //     ],
+  //     tabsContents: [
+  //       {
+  //         id: "tab-1",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "100% Career Counselling",
-            "Get interview ready with proper training, industry expert interactions and resume building tools",
-            "Elevate your LinkedIn presence with a comprehensive profile building session",
-          ],
-        },
-        {
-          id: "tab-2",
-          image: "featured-image-14.jpg",
+  //         lists: [
+  //           "100% Career Counselling",
+  //           "Get interview ready with proper training, industry expert interactions and resume building tools",
+  //           "Elevate your LinkedIn presence with a comprehensive profile building session",
+  //         ],
+  //       },
+  //       {
+  //         id: "tab-2",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "Solve all your queries with one-on-one interaction during the lectures",
-            "Ask questions, get answers and complete support from the faculty",
-            "Enhanced learning support by our highly experienced and expert faculties",
-          ],
-        },
-        {
-          id: "tab-3",
-          image: "featured-image-14.jpg",
+  //         lists: [
+  //           "Solve all your queries with one-on-one interaction during the lectures",
+  //           "Ask questions, get answers and complete support from the faculty",
+  //           "Enhanced learning support by our highly experienced and expert faculties",
+  //         ],
+  //       },
+  //       {
+  //         id: "tab-3",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "Get unlimited learning access to the learning management system for 1 year",
-            "Receive proper guidance as per your specific requirements from our faculties",
-            "Access the recorded lectures in case you miss a session",
-          ],
-        },
+  //         lists: [
+  //           "Get unlimited learning access to the learning management system for 1 year",
+  //           "Receive proper guidance as per your specific requirements from our faculties",
+  //           "Access the recorded lectures in case you miss a session",
+  //         ],
+  //       },
 
-        {
-          id: "tab-4",
-          image: "featured-image-14.jpg",
+  //       {
+  //         id: "tab-4",
+  //         image: "featured-image-14.jpg",
 
-          lists: [
-            "Be a part of a community of 200,000+ corporate professionals comprising of highly achieved alumni",
-            "Connect with the Industry experts who will guide you through your career after course completion",
-            "Network, learn and grow with other students in your batch.",
-          ],
-        },
-      ],
-    },
-    productDetails: {
-      flagsa: "/assets/images/icons/flag_sa.webp",
-      flagnig: "/assets/images/icons/flag_nigeria.webp",
-      flagus: "/assets/images/icons/flag_us.webp",
-      flagind: "/assets/images/icons/flag_india.webp",
-      flagken: "/assets/images/icons/flag_kenya.webp",
-      flagUg: "/assets/images/icons/flag_uganda.webp",
-      flagTZ: "/assets/images/icons/flag_Tanzania.webp",
-      title: "Fees Structure & Certification",
-      subTitle: "Get Certified",
-      price: 64499,
-      certifiedTitle1:
-        "Earn Your Operations and Supply Chain Management certificate",
-      certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
-      certifiedTitle2: "Share Your Achievement",
+  //         lists: [
+  //           "Be a part of a community of 200,000+ corporate professionals comprising of highly achieved alumni",
+  //           "Connect with the Industry experts who will guide you through your career after course completion",
+  //           "Network, learn and grow with other students in your batch.",
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   productDetails: {
+  //     flagsa: "/assets/images/icons/flag_sa.webp",
+  //     flagnig: "/assets/images/icons/flag_nigeria.webp",
+  //     flagus: "/assets/images/icons/flag_us.webp",
+  //     flagind: "/assets/images/icons/flag_india.webp",
+  //     flagken: "/assets/images/icons/flag_kenya.webp",
+  //     flagUg: "/assets/images/icons/flag_uganda.webp",
+  //     flagTZ: "/assets/images/icons/flag_Tanzania.webp",
+  //     title: "Fees Structure & Certification",
+  //     subTitle: "Get Certified",
+  //     price: 64499,
+  //     certifiedTitle1:
+  //       "Earn Your Operations and Supply Chain Management certificate",
+  //     certifiedText1:
+  //       "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
+  //     certifiedTitle2: "Share Your Achievement",
 
-      certifiedText2:
-        "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
-      certifiedTitle3: "Benefits",
-      certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
-      admissionText:
-        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
-      termsConditions: "*Terms & Conditions",
-      CsFundamentals: "Total Admission Fee",
-      CsDefenceToolbox: "Cybersecurity Defence Toolbox",
-    },
-    modalImage: "Pop-up_bg.webp",
-    zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
-    stickyText:
-      "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-  },
+  //     certifiedText2:
+  //       "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
+  //     certifiedTitle3: "Benefits",
+  //     certifiedText3:
+  //       "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+  //     admissionText:
+  //       "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
+  //     termsConditions: "*Terms & Conditions",
+  //     CsFundamentals: "Total Admission Fee",
+  //     CsDefenceToolbox: "Cybersecurity Defence Toolbox",
+  //   },
+  //   modalImage: "Pop-up_bg.webp",
+  //   zapUrl: "https://hooks.zapier.com/hooks/catch/2583450/besv3zg/",
+  //   stickyText:
+  //     "PM-Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  // },
   MD: {
     processOne: [
       {

@@ -6228,6 +6228,7 @@ featured-section .right-col .sec-title h2 {
   line-height: 130%;
   letter-spacing: -0.8px;
   margin: 20px 0px;
+  text-align: center;
 }
 .featured-section .right-col .inner h1.title-home p {
   font-size: 21px;
