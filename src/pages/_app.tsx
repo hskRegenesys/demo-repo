@@ -259,6 +259,33 @@ const MyApp = ({ Component, pageProps }: any) => {
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
+
+          if (item.label === "Mobile Number") {
+            const countryCode = item?.answer?.substring(0, 6);
+    
+            switch (countryCode) {
+                case "+234":
+                    salesForceData.country = "NIGERIA";
+                    salesForceData.city = "CityNameForNigeria";
+                    break;
+                case "+254":
+                    salesForceData.country = "KENYA";
+                    salesForceData.city = "CityNameForKenya";
+                    break;
+                case "+27":
+                    salesForceData.country = "SOUTH AFRICA";
+                    salesForceData.city = "CityNameForSouthAfrica";
+                    break;
+                case "+256":
+                    salesForceData.country = "UGANDA";
+                    salesForceData.city = "CityNameForUganda";
+                    break;
+                default:
+                    salesForceData.country = "TANZANIA";
+                    salesForceData.city = "CityNameForTanzania";
+            }
+        }
+
       });
         try {
           fetch(salesForceUrl, {
@@ -318,7 +345,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                   salesForceNewData.mobile = question.answer;
 
                   // Determine country and city based on country code
-                  const countryCode = question.answer.substring(0, 4);
+                  const countryCode = question?.answer?.substring(0, 6);
                   switch (countryCode) {
                       case "+234":
                           salesForceNewData.country = "Nigeria";
