@@ -351,26 +351,31 @@ const MyApp = ({ Component, pageProps }: any) => {
               case "Email":
                   salesForceNewData.email = question.answer;
                   break;
-              case "Mobile Number":
-                  salesForceNewData.mobile =  question.answer;
-                  const countryCode = question?.answer?.substring(0, 4);
-                  switch (countryCode) {
-                      case "+234":
-                          salesForceNewData.country = "Nigeria";
-                          break;
-                      case "+254":
-                          salesForceNewData.country = "Kenya";
-                          break;
-                      case "+255":
-                          salesForceNewData.country = "Tanzania";
-                          break;
-                      case "+256":
-                          salesForceNewData.country = "Uganda";
-                          break;
-                      default:
-                          salesForceNewData.country = "South Africa";
-                  }
-                  break;
+                  case "Mobile Number":
+                    salesForceNewData.mobile = question.answer;
+                    if (!question?.answer?.includes("+")) {
+                        salesForceNewData.mobile = "+27 " + question.answer;
+                        salesForceNewData.country = "South Africa";
+                    } else {
+                        const countryCode = question.answer.substring(0, 4);
+                        switch (countryCode) {
+                            case "+234":
+                                salesForceNewData.country = "Nigeria";
+                                break;
+                            case "+254":
+                                salesForceNewData.country = "Kenya";
+                                break;
+                            case "+255":
+                                salesForceNewData.country = "Tanzania";
+                                break;
+                            case "+256":
+                                salesForceNewData.country = "Uganda";
+                                break;
+                            default:
+                                salesForceNewData.country = "South Africa";
+                        }
+                    }
+                    break;
               case "Course you are looking for":
                   salesForceNewData.interest = question.answer;
                   break;
