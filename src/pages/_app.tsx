@@ -352,11 +352,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                   salesForceNewData.email = question.answer;
                   break;
               case "Mobile Number":
-                if(question?.answer?.startWith("+")){
-                  salesForceNewData.mobile = question.answer;
-                } else {
-                  salesForceNewData.mobile = '+27' + question.answer
-                }
+                  salesForceNewData.mobile =  question.answer;
                   const countryCode = question?.answer?.substring(0, 4);
                   switch (countryCode) {
                       case "+234":
