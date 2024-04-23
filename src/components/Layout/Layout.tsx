@@ -76,7 +76,7 @@ const Layout = (props: any) => {
     pageTitle === "blog"
       ? blogList?.[0]?.yoast_head_json?.og_image[0]?.url
       : // : pageTitle === "category"
-      // ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_image?.[1]?.url
+      // ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_image?.[0]?.url
       metaData?.metaInfo?.ogImg?.[pageTitle]
       ? metaData?.metaInfo?.ogImg?.[pageTitle]
       : metaData?.metaInfo?.ogImg?.["home"];
