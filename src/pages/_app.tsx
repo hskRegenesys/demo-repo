@@ -327,8 +327,12 @@ const MyApp = ({ Component, pageProps }: any) => {
             .then((response) => response.json())
             .then((ipData) => {
                 const ipAddress = ipData.ip;
-                console.log("Ip dataaaa", ipData);
-                console.log("Ip ipAddress", ipAddress);
+                fetch('https://ipapi.co/ipAddress/json/')
+                                .then((response) => response.json())
+                                .then((locationData) => {
+                                    console.log("locationData", locationData);
+                                })
+                                .catch((error) => console.error("Error fetching IP location:", error));
             })
             .catch((error) => console.error("Error fetching IP address:", error));
         
