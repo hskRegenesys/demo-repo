@@ -5,7 +5,7 @@ import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
-
+import validator from "validator";
 import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
@@ -27,6 +27,7 @@ function ModalPopup(props: any) {
   const [show, setShow] = useState(false);
   const [btnDisable, sebtnDisable] = useState(false);
   const [formInteraction, setFormInteraction] = useState(false);
+  const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -69,6 +70,9 @@ function ModalPopup(props: any) {
   const programmeOfInterest = watch("Programme_Of_Interest");
 
   const onSubmit = async (data: any) => {
+    if (phoneNumberError) {
+      return;
+    }
     sebtnDisable(true);
     const current = new Date();
     data.page_url = window?.location?.href;
@@ -259,14 +263,6 @@ function ModalPopup(props: any) {
                       <input
                         type="hidden"
                         {...register("Phone", {
-                          maxLength: {
-                            value: 16,
-                            message: "Cannot Exceed 10 digits",
-                          },
-                          minLength: {
-                            value: 12,
-                            message: "Valid phone number Required",
-                          },
                           required: "Phone is Required",
                         })}
                       />
@@ -277,18 +273,25 @@ function ModalPopup(props: any) {
                         // defaultCountry="ZA"
                         placeholder="Select Country Code*"
                         onChange={(e) => {
-                          setValue("Phone", e);
-                          mixpanel.track("Phone Changed", {
-                            InputName: "Phone",
-                            Filled: e !== "",
-                            newValue: e,
-                          });
+                          const phoneNumber = e ? e.toString() : "";
+                          const isValid = validator.isMobilePhone(phoneNumber);
+                          if (isValid) {
+                            setValue("Phone", e);
+                            mixpanel.track("Phone Changed", {
+                              InputName: "Phone",
+                              Filled: e !== "",
+                              newValue: e,
+                            });
+                            setPhoneNumberError("");
+                          } else {
+                            setPhoneNumberError("Valid phone number Required");
+                          }
                         }}
-                        className={`${errors?.Phone && "invalid"}`}
+                        className={`${phoneNumberError && "invalid"}`}
                       />
-                      {errors?.Phone && (
+                      {phoneNumberError && (
                         <small className="text-danger">
-                          {errors?.Phone?.message}
+                          {phoneNumberError}
                         </small>
                       )}
                     </div>
@@ -332,9 +335,9 @@ function ModalPopup(props: any) {
                           required: "Course is required",
                         })}
                       >
-                        <option value="" disabled selected>
+                        {/* <option value="" disabled selected>
                           Course you are looking for *
-                        </option>
+                        </option> */}
                         {courses.map((val: any) => {
                           return (
                             <option

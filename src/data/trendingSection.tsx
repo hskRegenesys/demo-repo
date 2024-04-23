@@ -7,10 +7,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Project Management",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification",
+        "Capstone Projects ",
       ],
     },
     {
@@ -18,10 +18,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Data Science",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -29,10 +29,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Cybersecurity",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -40,10 +40,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Digitial Marketing",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -51,10 +51,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Investment, Trading & Personal Finance",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -62,10 +62,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Project Management",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -73,10 +73,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Data Science",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -84,10 +84,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Cybersecurity",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -95,10 +95,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Digitial Marketing",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
     {
@@ -106,10 +106,10 @@ const trendingSection = {
       image: "7.webp",
       name: "Investment, Trading & Personal Finance",
       tagline: [
-        "Live Class ",
+        "Live Classes ",
         "8 Weeks ",
-        "International certification ",
-        "Capstone projects ",
+        "International Certification ",
+        "Capstone Projects ",
       ],
     },
   ],

@@ -50,7 +50,7 @@ export const digitalMarketingText = {
 export const dataScienceCourse = {
   title: "Data Science",
   pagedesc:
-    "Upskill yourself with a course in Data Science. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields.",
+    "Upskill yourself with a course in Data Science. Learn the real-world application of Data Science taught by industry experts. Enrol   yourself in this course and build a career in the one of the most sought after fields.",
   imagearrow: "/assets/images/background/sign-arrow.png",
 };
 export const artificialIntelligenceCourse = {
@@ -97,7 +97,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -141,8 +141,8 @@ export const courseData = {
     },
 
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -287,45 +287,45 @@ export const courseData = {
         faqs: [
           {
             id: 1,
-            title: "How This Course Will Help Me In My Career?",
+            title: "How this course will help me In my career?",
             text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
           },
-          {
-            id: 2,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
-          },
+          // {
+          //   id: 2,
+          //   title: "Will Digital Regenesys Offer Me Job Assistance?",
+          //   text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+          // },
           {
             id: 3,
-            title: "What Are The Modes Of Payment Available For Me?",
+            title: "What are the modes of payment available for me?",
             text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
           },
           {
             id: 4,
             title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
+              "For how long will I be able to access the content after my course completion?",
             text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
           },
           {
             id: 5,
-            title: "Is This A Certified Course?",
+            title: "Is this a certified course?",
             text: "Yes, all the courses are certified by the Regenesys Business School.",
           },
           {
             id: 6,
             title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+              "What does it mean by designed by Ph.D. & conducted by experts?",
             text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
           },
           {
             id: 7,
             title:
-              "How Will I Get Access To The Assignments And Learning Content?",
+              "How will I get access to the assignments and learning content?",
             text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
           },
           {
             id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
+            title: "What if the course timings don't match my work timings?",
             text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
           },
         ],
@@ -390,9 +390,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -403,12 +403,12 @@ export const courseData = {
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Project Management certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Project Management career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -417,7 +417,7 @@ export const courseData = {
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -958,7 +958,7 @@ export const courseData = {
       title:
         "Enhance Your Career with Our Top-Rated Management Advancement Programme",
       text1:
-        "Elevate your skill set with the best Management Advancement Programme for professionals. Learn how to apply the skills of Management Advancement in the real world from our highly experienced academic staff.        ",
+        "Elevate your skill set with the best Management Advancement Programme for professionals. Learn how to apply the skills of Management Advancement in the real world from our highly experienced academic faculty.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -972,7 +972,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions. ",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
@@ -992,7 +992,7 @@ export const courseData = {
       certificateTitle:
         "Excel in Management Advancement with Our Leading Certificate Programme.",
       certificateSubTitle:
-        "Earn a Management Advancement Certificate from Digital Regenesys & Understand market dynamics and identify economic, political, and social risks.",
+        "Earn a Management Advancement Certificate from Digital Regenesys.Understand market dynamics, identify economic, political and social risks.",
       certificateSubSubTitle:
         "With our Management Advancement Programme, you will gain practical insights and skills to navigate complex business environments, drive innovation, optimise operations, and lead teams effectively.",
       certificateListTitle:
@@ -1145,13 +1145,13 @@ export const courseData = {
           },
           {
             id: 2,
-            title: "Why Should I Pursue a Management Advancement Programme?",
-            text: "A Management Advancement programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Enroling in a Management Advancement Programme allows participants to gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a Management Advancement Programme can help you unleash your full potential and achieve your career goals.            ",
+            title: "Why should I pursue a Management Advancement Programme?",
+            text: "A Management Advancement programme can be a valuable investment for individuals looking to enhance their leadership skills and advance their careers. Enrol  ing in a Management Advancement Programme allows participants to gain new knowledge, build confidence, and expand their professional network. Whether you are a seasoned manager or just starting in a leadership role, a Management Advancement Programme can help you unleash your full potential and achieve your career goals.            ",
           },
           {
             id: 3,
-            title: "What to Expect from a Management Advancement Programme?",
-            text: "Individuals can enhance their leadership skills and careers by pursuing a Management Advancement programme. This comprehensive course provides practical strategies for effective team management, conflict resolution, and decision-making. Participating in this course will give individuals the tools and techniques necessary to lead confidently and achieve their professional goals. Enrol in the digital Regenesys Management Advancement Programme, elevate your managerial abilities and drive success within your organisation. Enrol now and take your leadership to the next level.",
+            title: "What to expect from a Management Advancement Programme?",
+            text: "Individuals can enhance their leadership skills and careers by pursuing a Management Advancement programme. This comprehensive course provides practical strategies for effective team management, conflict resolution, and decision-making. Participating in this course will give individuals the tools and techniques necessary to lead confidently and achieve their professional goals. Enrol   in the digital Regenesys Management Advancement Programme, elevate your managerial abilities and drive success within your organisation. Enrol   now and take your leadership to the next level.",
           },
           {
             id: 4,
@@ -1162,15 +1162,15 @@ export const courseData = {
           {
             id: 5,
             title:
-              "What are the Benefits of Enroling in a Digital Regenesys Management Advancement Programme?            ",
-            text: "Enroling in a Digital Regenesys Management Advancement Programme can benefit individuals looking to advance their careers. These courses allow participants to learn new skills, gain valuable insights from industry experts, and network with other professionals in their field. Additionally, Management Advancement programmes can help individuals build confidence in their leadership abilities and prepare them for future challenges in the workplace.",
+              "What are the benefits of enroling in a Digital Regenesys Management Advancement Programme?            ",
+            text: "Enrol  ing in a Digital Regenesys Management Advancement Programme can benefit individuals looking to advance their careers. These courses allow participants to learn new skills, gain valuable insights from industry experts, and network with other professionals in their field. Additionally, Management Advancement programmes can help individuals build confidence in their leadership abilities and prepare them for future challenges in the workplace.",
           },
           {
             id: 6,
             title:
               "What are the outcomes of the Management Advancement Programme?",
             text: `
-            Some of the outcomes of the Management Advancement Programme include: .Understanding market dynamics and identifying economic, political, and social risks. .Foster a culture of innovation and implement effective strategies for idea generation and implementation. .Evaluate business opportunities, foster intrapreneurship, and utilise support systems for entrepreneurial ventures. .Master project management fundamentals, Agile methodologies, and risk mitigation strategies for successful project delivery. .Enhance communication techniques, interpersonal skills, and cross-cultural communication abilities for effective collaboration.
+            Some of the outcomes of the Management Advancement Programme include understanding market dynamics and identifying economic, political, and social risks. It also fosters a culture of innovation and implements effective strategies for idea generation and implementation. Evaluate business opportunities, foster intrapreneurship, and utilise support systems for entrepreneurial ventures. Master project management fundamentals, agile methodologies and risk mitigation strategies for successful project delivery. Enhance communication techniques, interpersonal skills and cross-cultural communication abilities for effective collaboration.
 
               `,
           },
@@ -1272,9 +1272,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be part of a community of 10,000+ Learners.",
-            "Connect with the Industry experts who will help you guide you through your career after course completion.",
-            "Talk, share, connect, learn and grow along with other students in your batch.",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion.",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -1285,12 +1285,12 @@ export const courseData = {
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Management Advancement Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Management Advancement Career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Management Advancement career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -1299,7 +1299,7 @@ export const courseData = {
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -1348,7 +1348,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions. ",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
@@ -1549,9 +1549,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be part of a community of 10,000+ Learners.",
+            "Be a part of a community of 10,000+ learners",
             "Connect with the Industry experts who will help you guide you through your career after course completion. ",
-            "Talk, share, connect, learn and grow along with other students in your batch.",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -1562,12 +1562,12 @@ export const courseData = {
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Product Management Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Product Management Career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Product Management career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -1576,7 +1576,7 @@ export const courseData = {
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "",
@@ -1608,7 +1608,7 @@ export const courseData = {
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Maximising Business Success with Data and Business Analytics. Learn how to leverage data to make informed business decisions without coding knowledge.        ",
+        "Maximise business success with Data and Business Analytics.  Learn how to leverage data to make informed business decisions without coding knowledge.        ",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -1625,7 +1625,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3: `
-        Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.
+        Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions. 
         `,
 
       subTitle4: "Tools usage",
@@ -1673,8 +1673,8 @@ export const courseData = {
     },
 
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -1757,12 +1757,12 @@ export const courseData = {
           },
           {
             id: 3,
-            title: "Why Pursue a Data and Business Analytics Course?",
+            title: "Why pursue a Data and Business Analytics Course?",
             text: `Data and business analytics are crucial in today's corporate landscape. Understanding and leveraging data insights can give companies a competitive edge and drive informed decision-making. Data and Business Analytics No Code Course can be pursued by individuals without coding knowledge.`,
           },
           {
             id: 4,
-            title: "What is the Role of Business Analytics?",
+            title: "What is the role of Business Analytics?",
             text: `
             Business analytics involves statistical analysis and predictive modelling to gain insights from data. Businesses can extract valuable information from large datasets through advanced analytics tools to improve decision-making processes. By harnessing the power of business analytics, companies can uncover hidden patterns, correlations, and trends that can drive strategic decision-making
             `,
@@ -1777,7 +1777,7 @@ export const courseData = {
           {
             id: 6,
             title:
-              "Why Choose Digital Regenesys's Data and Business Analytics Course?",
+              "Why choose Digital Regenesys's Data and Business Analytics Course?",
             text: `
             Digital Regenesys's Data and Business Analytics No Code Course stands out for its comprehensive curriculum covering advanced analytical techniques and tools like Power BI, Rows.AI, ChatGPT and MIS. This course offers hands-on experience with real-world datasets taught by industry experts, providing practical skills that are highly sought after in today's data-driven business landscape
             `,
@@ -1785,17 +1785,18 @@ export const courseData = {
           {
             id: 7,
             title:
-              "What Career Opportunities are available with the Data and Business Analytics Course?",
+              "What career opportunities are available with the Data and Business Analytics Course?",
             text: "Professionals with data and business analytics expertise are in high demand across various industries. Pursuing this course can open new career opportunities or enhance existing career paths. Some prominent career opportunities include Data Analyst, Business Analyst, Reporting Analyst, Data Visualisation specialist, MIS Analyst (Management Information Systems) and more.",
           },
           {
             id: 8,
-            title: `How does Data and Business Analytics No Code Course help in career Advancement?`,
+            title: `How does Data and Business Analytics No Code Course help in career advancement?`,
             text: "Acquiring data analytics skills can lead to career advancement. Professionals with expertise in this field are often considered for leadership roles and are sought after in various industries.",
           },
           {
             id: 9,
-            title: `Is Data and Business Analytics No Code Course a promising career?`,
+            title: `Does Data and Business Analytics Course lead to a promising career?
+            `,
             text: `A Data and Business Analytics No Code Course can open up various career opportunities across various industries. As organisations increasingly rely on data to make informed decisions, professionals with data and business analytics expertise are in high demand.`,
           },
           {
@@ -1806,7 +1807,7 @@ export const courseData = {
           {
             id: 11,
             title:
-              "Is Coding required for the Data and Business Analytics course?",
+              "Is coding required for the Data and Business Analytics Course?",
             text: " No. Coding knowledge is optional for pursuing this course as it is a Data and Business Analytics - No Coding course. Thus, no coding knowledge is required.",
           },
           {
@@ -1877,9 +1878,9 @@ export const courseData = {
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion.",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -1890,12 +1891,12 @@ export const courseData = {
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Data and Business Analytics certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform and climb the path of success towards your Data Analyst or Business Analyst career.        ",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Data Analyst or Business Analyst career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -1932,7 +1933,7 @@ export const courseData = {
   //     },
   //   ],
   //   productDescription: {
-  //     title: "Revolutionise your career with future-ready skills",
+  //     title: "Learn from the experienced subject and industry experts",
   //     text1:
   //       "Master the art of building top-notch software, focusing on design, security, and maintenance. Learn how to analyse, develop, execute, and maintain software systems in the real world from our highly experienced faculty.",
   //   },
@@ -1948,7 +1949,7 @@ export const courseData = {
 
   //     subTitle3: "Live sessions",
   //     desc3:
-  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
+  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.         ",
 
   //     subTitle4: "Tools usage",
   //     desc4: "Gain a broad spectrum of knowledge on how to use the tools.",
@@ -1993,7 +1994,7 @@ export const courseData = {
 
   //   featureSeven: {
   //     title: "Meet our faculty",
-  //     // desc: "Revolutionise your career with future-ready skills",
+  //     // desc: "Learn from the experienced subject and industry experts",
   //     features: [
   //       {
   //         id: 1,
@@ -2273,9 +2274,9 @@ export const courseData = {
   //         image: "featured-image-14.jpg",
 
   //         lists: [
-  //           "Be part of a community of 10,000+ Learners.",
+  //           "Be a part of a community of 10,000+ learners",
   //           "Connect with Industry experts who will help guide you through your career after course completion.",
-  //           "Talk, share, connect, learn, and grow with other students in your batch.",
+  //           "Network, learn and grow with other students in your batch.",
   //         ],
   //       },
   //     ],
@@ -2301,7 +2302,7 @@ export const courseData = {
   //     certifiedText3:
   //       "Embrace a world of possibilities with the most significant online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.        ",
   //     admissionText:
-  //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+  //       "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
   //     termsConditions: "*Terms & Conditions",
   //     CsFundamentals: "Total Admission Fee",
   //     CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -2344,7 +2345,7 @@ export const courseData = {
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.         ",
 
       subTitle4: "Tools usage",
       desc4:
@@ -2398,8 +2399,8 @@ Participate in hands-on projects to build practical skills and develop a strong 
     },
 
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -2574,7 +2575,7 @@ Participate in hands-on projects to build practical skills and develop a strong 
           {
             id: 1,
             title:
-              "Why Should I Pursue Full Stack Web & Software Development Course?",
+              "Why should I pursue Full Stack Web & Software Development Course?",
             text: `
             The Full Stack Web & Software Development course is a comprehensive journey through modern web development's essential technologies and practices. Pursuing Full Stack Web & Software Development Course helps in:
 - Acquiring the necessary skills and knowledge to build and maintain web applications for clients.
@@ -2586,7 +2587,7 @@ Participate in hands-on projects to build practical skills and develop a strong 
           {
             id: 2,
             title:
-              "What to Expect from a Full Stack Web & Software Development Course?",
+              "What to expect from a Full Stack Web & Software Development Course?",
             text: `
             Pursuing Full Stack Web & Software Development Course delivers:
 - A comprehensive understanding of programming languages, databases, server management and version control. 
@@ -2614,7 +2615,7 @@ Participate in hands-on projects to build practical skills and develop a strong 
           {
             id: 6,
             title:
-              "What are the Benefits of Enroling in a Digital Regenesys Full Stack Web & Software Development Course?",
+              "What are the Benefits of Enrol  ing in a Digital Regenesys Full Stack Web & Software Development Course?",
             text: "By enroling in a Digital Regenesys Full Stack Web & Software Development Course, participants gain practical knowledge and hands-on experience that can be directly applied to real-world scenarios. Additionally, completing a Full Stack Web & Software Development course can enhance career prospects and open doors to a wide range of job opportunities in the rapidly growing field of full stack web development and its applications.",
           },
           {
@@ -2741,9 +2742,9 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be part of a community of 10,000+ Learners.",
-            "Connect with Industry experts who will help guide you through your career after course completion.",
-            "Talk, share, connect, learn, and grow with other students in your batch.",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion.",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -2762,7 +2763,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedTitle1:
         "Earn Your Full Stack Web & Software Development Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and climb the path of success towards your full-stack web development projects.        ",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your full-stack web development career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -2771,7 +2772,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the most prominent online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more. ",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -2788,7 +2789,7 @@ If you are passionate about starting your own full-stack web development busines
         youtubeUrl:
           "https://www.youtube.com/embed/WAxlaL2nYD8?autoplay=1&loop=1&playlist=WAxlaL2nYD8",
         title: "Certificate Course in Data Science",
-        text: "Discover your potential with a Data Science course designed for people looking to upskill themselves or learn the skills for success in the Data Science field. Learn the real-world application of Data Science taught by industry experts. Enrol in this course and build a career in the most sought-after field. Take the first step towards a successful future!",
+        text: "Discover your potential with a Data Science course designed for people looking to upskill themselves or learn the skills for success in the Data Science field. Learn the real-world application of Data Science taught by industry experts. Enrol   in this course and build a career in the most sought-after field. Take the first step towards a successful future!",
         lists: [
           "30 Weeks Course",
           "Live Sessions",
@@ -2800,13 +2801,13 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Revolutionise your career with Digital Regenesys’s  'Data Science Course.' Unlock the limitless potential of Data Science, understanding its concepts and techniques. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.        ",
+        "Revolutionise your career with Digital Regenesys’s Data Science Course. Unlock the limitless potential of data science, understanding its concepts and techniques. Gain data science skills and delve into Databases and Analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Get exposure to Pandas, Matplotlib, NumPy, seaborn, scikitlearn, statsmodel, MySQL, Python, and other techniques.",
+        "Get exposure to Pandas, Matplotlib, NumPy, Seaborn, Scikitlearn, Keras, Tableau, Jupyter, and other techniques.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -2814,7 +2815,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.         ",
 
       subTitle4: "Tools usage",
       desc4:
@@ -2864,8 +2865,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["DSN_certificates.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -3005,23 +3006,23 @@ If you are passionate about starting your own full-stack web development busines
           {
             id: 1,
             title:
-              "Do I Need To Have Prior Experience Or Understanding Of Data Science To Learn This Course?",
+              "Do I need to have prior experience or understanding of Data Science to learn this course?",
             text: "No, this course does not demand you to have technical understanding about Data Science. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
           },
           {
             id: 2,
-            title: "What Are The Modes Of Payment Available For Me?",
+            title: "What are the payment modes available to me?",
             text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
           },
-          {
-            id: 3,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
-          },
+          // {
+          //   id: 3,
+          //   title: "Will Digital Regenesys Offer Me Job Assistance?",
+          //   text: "Apart from preparing you with Cutting-edge and enhanced data science knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+          // },
           {
             id: 4,
             title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
+              "How long will I be able to access the content after my course completion?",
             text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
           },
           // {
@@ -3032,24 +3033,23 @@ If you are passionate about starting your own full-stack web development busines
           // },
           {
             id: 6,
-            title: "Is This A Certified Course?",
-            text: "Yes, all the courses are certified by the Regenesys Business School.",
+            title: "Is this a certified course?",
+            text: "Yes, all the courses at Digital Regenesys are Internationally Certified.",
           },
           {
             id: 7,
-            title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+            title: "What does designed by Ph.D. & conducted by experts mean?",
+            text: "The data science course at Digital Regenesys has been extensively designed, researched, and innovated by the group of our expert team of recognised Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the industry experts of the particular field.",
           },
           {
             id: 8,
             title:
-              "How Will I Get Access To The Assignments And Learning Content?",
-            text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
+              "How will I get access to the assignments and learning content?",
+            text: "Once you have successfully registered yourself for our data science course, you will receive access to our learning portal, where you will find all the course material, assignments, and quizzes.",
           },
           {
             id: 9,
-            title: "What If The Course Timings Don't Match My Work Timings?",
+            title: "What if the course timings don't match my work timings?",
             text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
           },
         ],
@@ -3114,9 +3114,9 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be part of a community of 10,000+ Learners.",
-            "Connect with Industry experts who will help guide you through your career after course completion.            ",
-            "Talk, share, connect, learn, and grow with other students in your batch.",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion.            ",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -3127,12 +3127,12 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Certification",
+      title: " Fee Structure and Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn your Data Science Certificate.",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your Data Science Career.        ",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Data Science career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -3169,7 +3169,7 @@ If you are passionate about starting your own full-stack web development busines
   //     },
   //   ],
   //   productDescription: {
-  //     title: "Revolutionise your career with future-ready skills",
+  //     title: "Learn from the experienced subject and industry experts",
   //     text1:
   //       "Upskill yourself with a course in Cybersecurity Programme, which has high demand to improve business outcomes and unprecedented global demand and career opportunities.",
   //   },
@@ -3185,7 +3185,7 @@ If you are passionate about starting your own full-stack web development busines
 
   //     subTitle3: "Live sessions",
   //     desc3:
-  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
   //     subTitle4: "Tools usage",
   //     desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -3212,8 +3212,8 @@ If you are passionate about starting your own full-stack web development busines
   //   //   "cs/cybersecurity-tools-15.png",
   //   // ],
   //   featureSeven: {
-  //     title: "Meet our staff",
-  //     desc: "Revolutionise your career with future-ready skills",
+  //     title: "Meet the faculty",
+  //     desc: "Learn from the experienced subject and industry experts",
   //     features: [
   //       {
   //         id: 1,
@@ -3458,7 +3458,7 @@ If you are passionate about starting your own full-stack web development busines
   //     flagus: "/assets/images/icons/flag_us.webp",
   //     flagind: "/assets/images/icons/flag_india.webp",
   //     flagken: "/assets/images/icons/flag_kenya.webp",
-  //     title: "Fees structure & Certification",
+  //     title: "Fees Structure & Certification",
   //     subTitle: "Get Certified",
   //     price: 64499,
   //     certifiedTitle1: "Earn Your Cybersecurity certificate",
@@ -3472,7 +3472,7 @@ If you are passionate about starting your own full-stack web development busines
   //     certifiedText3:
   //       "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
   //     admissionText:
-  //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+  //       "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
   //     termsConditions: "*Terms & Conditions",
   //     CsFundamentals: "Total Admission Fee",
   //     CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -3492,7 +3492,7 @@ If you are passionate about starting your own full-stack web development busines
           "https://www.youtube.com/embed/XQ_FNaPaghs-?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
 
         title: "Certification Programme in Basic Data Science",
-        text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
+        text: "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol   yourself in this course and build a career in the one of the most sought after fields",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -3504,7 +3504,7 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought after fields",
+        "Upskill yourself with a course in Basic Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol   yourself in this course and build a career in the one of the most sought after fields",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -3518,7 +3518,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4:
@@ -3569,8 +3569,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["BDSCI_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -3870,7 +3870,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Data Science certificate",
@@ -3884,7 +3884,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -3903,7 +3903,7 @@ If you are passionate about starting your own full-stack web development busines
         youtubeUrl:
           "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
         title: "Certification Programme in Advanced Data Science",
-        text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
+        text: "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enrol  in this course and build a career in the most sought after industry right now",
         lists: [
           "10 Weeks",
           "Live Classes",
@@ -3915,7 +3915,7 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enroll in this course and build a career in the most sought after industry right now",
+        "Upskill yourself with a course in Advanced Data Science designed especially for college students and freshers. Learn the real-world application of Advanced Data Science taught by industry experts. Enrol  in this course and build a career in the most sought after industry right now",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -3929,7 +3929,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -3978,8 +3978,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["ADDSCI_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -4236,7 +4236,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Data Science certificate",
@@ -4250,7 +4250,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -4268,7 +4268,7 @@ If you are passionate about starting your own full-stack web development busines
         youtubeUrl:
           "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
         title: "Certification Programme in Applied Data Science",
-        text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
+        text: "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol  yourself in this course and build a career in the most sought after job field",
         lists: [
           "10 Weeks",
           "Live Classes",
@@ -4280,7 +4280,7 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enroll yourself in this course and build a career in the most sought after job field",
+        "Upskill yourself with a course in Applied Data Science designed especially for college students and freshers. Learn the real-world application of Data Science taught by industry experts. Enrol yourself in this course and build a career in the most sought after job field",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -4294,7 +4294,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -4344,8 +4344,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["APDSCI_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -4562,7 +4562,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Data Science certificate",
@@ -4576,7 +4576,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -4629,7 +4629,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: " Approach",
       desc4:
@@ -4668,8 +4668,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["AIIP_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -4866,7 +4866,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Data Science certificate",
@@ -4880,7 +4880,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -4932,7 +4932,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Approach",
       desc4:
@@ -4982,8 +4982,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["AIIPF_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -5189,7 +5189,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Data Science certificate",
@@ -5203,7 +5203,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -5255,7 +5255,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Approach",
       desc4:
@@ -5307,8 +5307,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["AIAAPP_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -5527,7 +5527,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Data Science certificate",
@@ -5541,7 +5541,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -5560,7 +5560,7 @@ If you are passionate about starting your own full-stack web development busines
         youtubeUrl:
           "https://www.youtube.com/embed/fpjrHwloVGw?autoplay=1&loop=1&playlist=fpjrHwloVGw",
         title: "Certificate Course in Artificial Intelligence ",
-        text: `Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves deep into the concepts and techniques of AI. Whether you're an aspiring student or a professional seeking to enhance your skills, this course will help you gain theoretical knowledge and practical experience to innovate and solve complex problems. Step into the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery
+        text: `Embark on a transformative journey with our Artificial Intelligence Course and unlock the boundless potential of the future. Immerse yourself in this meticulously designed, cutting-edge course that delves deep into the concepts and techniques of AI. Whether you're an aspiring student or a professional seeking to enhance your skills, this course will help you gain theoretical knowledge and practical experience to innovate and solve complex problems. Step into the realm of AI and embrace a future of endless possibilities. Join us today and embark on the path to AI mastery. 
         `,
         lists: [
           "37 Weeks Course",
@@ -5572,7 +5572,7 @@ If you are passionate about starting your own full-stack web development busines
     ],
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
-      text1: `Revolutionise your career with Digital Regenesys’s  'Artificial Intelligence Course.' Unlock the limitless potential of AI, understanding its concepts and techniques. Gain AI skills and become an AI trailblazer. Delve into NLP, computer vision, cloud computing, big data analytics, and ML Ops. Acquire the skills to innovate and solve complex problems with AI.`,
+      text1: `Revolutionise your career with Digital Regenesys’s  Artificial Intelligence Course. Unlock the limitless potential of AI, understanding its concepts and techniques. Gain AI skills and become an AI trailblazer. Delve into NLP, computer vision, cloud computing, big data analytics, and ML Ops. Acquire the skills to innovate and solve complex problems with AI.`,
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -5586,7 +5586,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions.        ",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.         ",
 
       subTitle4: "Approach",
       desc4:
@@ -5638,8 +5638,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["AIN_certificates.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -5693,7 +5693,7 @@ If you are passionate about starting your own full-stack web development busines
             lists: [
               "Artificial Intelligence and Machine Learning",
               "Artificial Neural Networks",
-              "Deploying AI models in Production",
+              "Deploying AI models in production",
             ],
           },
           {
@@ -5879,9 +5879,9 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be part of a community of 10,000+ Learners.",
-            "Connect with Industry experts who will help guide you through your career after course completion.            ",
-            "Talk, share, connect, learn, and grow with other students in your batch.",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -5892,12 +5892,12 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Certification",
+      title: "Fee Structure and Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn your Artificial Intelligence Certificate.",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Upskill yourself and climb the path of success towards your AI Career. ",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your AI career. ",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -5923,7 +5923,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Basic Digital Marketing",
-        text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -5935,7 +5935,7 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Basic Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought-after fields.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -5949,7 +5949,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -5977,8 +5977,8 @@ If you are passionate about starting your own full-stack web development busines
       "dm/digital_marketing_tools16.webp",
     ],
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -6171,7 +6171,7 @@ If you are passionate about starting your own full-stack web development busines
           lists: [
             "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
             "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -6182,7 +6182,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn your Digital Marketing certificate.",
@@ -6196,7 +6196,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -6213,7 +6213,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Advance Digital Marketing",
-        text: "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -6225,7 +6225,7 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Advance Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol  yourself in this course and build a career in the one of the most sought-after fields.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -6239,7 +6239,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -6267,8 +6267,8 @@ If you are passionate about starting your own full-stack web development busines
       "dm/digital_marketing_tools16.webp",
     ],
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -6476,7 +6476,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn your Digital Marketing certificate.",
@@ -6490,7 +6490,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -6507,7 +6507,7 @@ If you are passionate about starting your own full-stack web development busines
         id: 1,
         image: "yellow-bg-details-bg-1.webp",
         title: "Certification Programme in Applied Digital Marketing",
-        text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol  yourself in this course and build a career in the one of the most sought-after fields.",
         lists: [
           "4 Weeks Course",
           "Live Sessions",
@@ -6519,7 +6519,7 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in the one of the most sought-after fields.",
+        "Upskill yourself with a course in Applied Digital Marketing, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol  yourself in this course and build a career in the one of the most sought-after fields.",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -6533,7 +6533,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -6561,8 +6561,8 @@ If you are passionate about starting your own full-stack web development busines
       "dm/digital_marketing_tools16.webp",
     ],
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -6751,7 +6751,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn your Digital Marketing certificate.",
@@ -6765,7 +6765,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -6784,7 +6784,7 @@ If you are passionate about starting your own full-stack web development busines
           "https://www.youtube.com/embed/mouJDO4peOk?autoplay=1&loop=1&playlist=mouJDO4peOk",
 
         title: "Certificate Course in Digital Marketing ",
-        text: "Upskill yourself with a course in Digital Marketing designed especially for anyone interested in the Digital Marketing field or wants to enhance their skills in the domain. Learn the real-world application of Digital Marketing taught by industry experts. Enrol yourself in this course and build a career in one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Digital Marketing designed especially for anyone interested in the Digital Marketing field or wants to enhance their skills in the domain. Learn the real-world application of Digital Marketing taught by industry experts. Enrol   yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
           "20 Weeks Course    ",
           "Live Sessions ",
@@ -6794,7 +6794,7 @@ If you are passionate about starting your own full-stack web development busines
       },
     ],
     productDescription: {
-      title: "Revolutionise Your Career With Future-Ready Skills",
+      title: "Revolutionise your career with future-ready skills",
       text1:
         "Digital Regenesys' Digital Marketing course is a comprehensive online training course that covers strategies and techniques for building and executing successful digital marketing campaigns. Participants will learn cutting-edge topics such as marketing automation, advanced analytics, influencer marketing, and digital branding. The course is designed for marketing professionals looking to enhance their skills and knowledge in the digital marketing space and stay ahead of the curve.",
     },
@@ -6810,7 +6810,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4:
@@ -6866,8 +6866,8 @@ If you are passionate about starting your own full-stack web development busines
     //   imageName: "PM_certificate",
     // },
     featureSeven: {
-      title: "Meet Our Staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -6987,45 +6987,45 @@ If you are passionate about starting your own full-stack web development busines
           {
             id: 1,
             title:
-              "Do I Need To Have Prior Digital Marketing Knowledge Or Experience To Learn This Course?",
+              "Do I need to have prior digital marketing knowledge or experience to enrol this course?",
             text: "No, this course does not demand you to have technical understanding about Digital Marketing. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
           },
           {
             id: 2,
-            title: "What Are The Modes Of Payment Available For Me?",
+            title: "What are the modes of payment available for me?",
             text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
           },
-          {
-            id: 3,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
-          },
+          // {
+          //   id: 3,
+          //   title: "Will Digital Regenesys Offer Me Job Assistance?",
+          //   text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+          // },
           {
             id: 4,
             title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
+              "For how long will I be able to access the content after my course completion?",
             text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
           },
           {
             id: 5,
-            title: "Is This A Certified Course?",
+            title: "Is this a certified course?",
             text: "Yes, all the courses are certified by the Regenesys Business School.",
           },
           {
             id: 6,
             title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+              "What does it mean by designed by Ph.D. & conducted by experts?",
             text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
           },
           {
             id: 7,
             title:
-              "How Will I Get Access To The Assignments And Learning Content?",
+              "How will I get access to the assignments and learning content?",
             text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
           },
           {
             id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
+            title: "What if the course timings don't match my work timings?",
             text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
           },
         ],
@@ -7090,9 +7090,9 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be part of a community of 10,000+ Learners.",
-            "Connect with Industry experts who will help guide you through your career after course completion.",
-            "Talk, share, connect, learn, and grow with other students in your batch.",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion.",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -7103,12 +7103,12 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Certification      ",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified      ",
       price: 64499,
       certifiedTitle1: "Earn your Digital Marketing Certificate.      ",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading Ed-Tech platform. Elevate your career and climb the path of success towards your Digital Marketing Career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Elevate your career and climb the path of success towards your Digital Marketing career.",
       certifiedTitle2: "Share Your Achievement      ",
 
       certifiedText2:
@@ -7136,7 +7136,7 @@ If you are passionate about starting your own full-stack web development busines
           "https://www.youtube.com/embed/mouJDO4peOk?autoplay=1&loop=1&playlist=mouJDO4peOk",
 
         title: "Certification Programme in Digital Marketing Fundamentals",
-        text: "Upskill yourself with a course in Digital Marketing Fundamentals, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Digital Marketing Fundamentals, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol  yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -7162,7 +7162,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -7217,8 +7217,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["BDMC_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -7318,7 +7318,7 @@ If you are passionate about starting your own full-stack web development busines
           {
             id: 1,
             title:
-              "Do I Need To Have Prior Digital Marketing Knowledge Or Experience To Learn This Course?",
+              "Do I Need To Have Prior Digital Marketing Knowledge Or Experience To enrol  This Course?",
             text: "No, this course does not demand you to have technical understanding about Digital Marketing. The minimum requirement to learn this course is to have a 10th/Matric education passing certificate.",
           },
           {
@@ -7326,11 +7326,11 @@ If you are passionate about starting your own full-stack web development busines
             title: "What Are The Modes Of Payment Available For Me?",
             text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
           },
-          {
-            id: 3,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
-          },
+          // {
+          //   id: 3,
+          //   title: "Will Digital Regenesys Offer Me Job Assistance?",
+          //   text: "Apart from preparing you with Cutting-edge and enhanced Coding knowledge, we will get you Job-ready for positions under entry and executive levels such as web developer, database administrator, computer analyst, computer programmer, business intelligence analyst and more such with a complete LinkedIn profile building session.",
+          // },
           {
             id: 4,
             title:
@@ -7344,24 +7344,24 @@ If you are passionate about starting your own full-stack web development busines
           },
           {
             id: 6,
-            title: "Is This A Certified Course?",
+            title: "Is this a certified course?",
             text: "Yes, all the courses are certified by the Regenesys Business School.",
           },
           {
             id: 7,
             title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
+              "What does it mean by designed by Ph.D. & conducted by experts?",
             text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
           },
           {
             id: 8,
             title:
-              "How Will I Get Access To The Assignments And Learning Content?",
+              "How will I get access to the assignments and learning content?",
             text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
           },
           {
             id: 9,
-            title: "What If The Course Timings Don't Match My Work Timings?",
+            title: "What if the course timings don't match my work timings?",
             text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
           },
         ],
@@ -7439,7 +7439,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn your Digital Marketing certificate.",
@@ -7453,7 +7453,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -7473,7 +7473,7 @@ If you are passionate about starting your own full-stack web development busines
 
         title:
           "Certification Programme in Advance Digital Marketing Strategies",
-        text: "Upskill yourself with a course in Advance Digital Marketing Strategies, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enroll yourself in this course and build a career in one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Advance Digital Marketing Strategies, designed especially for college students and freshers. Learn the real-world application of Digital Marketing taught by industry experts. Enrol  yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
           "10 Weeks Course",
           "Live Sessions",
@@ -7499,7 +7499,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -7553,8 +7553,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["AVDMC_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -7782,7 +7782,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn your Digital Marketing certificate.",
@@ -7796,7 +7796,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -7839,7 +7839,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -7850,8 +7850,8 @@ If you are passionate about starting your own full-stack web development busines
     },
 
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -8078,9 +8078,9 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion            ",
+            "Network, learn and grow with other students in your batch",
           ],
         },
       ],
@@ -8091,7 +8091,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Cybersecurity certificate",
@@ -8105,7 +8105,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -8147,7 +8147,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -8174,8 +8174,8 @@ If you are passionate about starting your own full-stack web development busines
     //   "cs/cybersecurity-tools-15.png",
     // ],
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -8555,7 +8555,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Cybersecurity certificate",
@@ -8569,7 +8569,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -8588,9 +8588,9 @@ If you are passionate about starting your own full-stack web development busines
           "https://www.youtube.com/embed/OfyDsBKZXic?autoplay=1&loop=1&playlist=OfyDsBKZXic",
 
         title: "Certification Programme in Design Thinking",
-        text: "Upskill yourself with a course in Design thinking. It is an innovative problem-solving approach used by leading organizations worldwide. Learn this valuable skill through our Design Thinking course and unleash your creativity to solve complex problems. Enroll yourself in this course and build a career in one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Design thinking. It is an innovative problem-solving approach used by leading organisations worldwide. Learn this valuable skill through our Design Thinking course and unleash your creativity to solve complex problems. Enrol   yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
-          "08 Weeks Course",
+          "8 Weeks Course",
           "Live Sessions",
           "Career Counselling",
           "Guaranteed Certification",
@@ -8600,13 +8600,13 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Digital Regenesys' Design Thinking course is an online training program that teaches participants the principles of design thinking, a creative problem-solving approach used by leading organizations worldwide. Participants will learn how to apply design thinking to real-world challenges and develop innovative solutions. The course is ideal for professionals looking to enhance their problem-solving and innovation skills. Enroll now and transform your mindset!",
+        "Digital Regenesys' Design Thinking course is an online training program that teaches participants the principles of design thinking, a creative problem-solving approach used by leading organisations worldwide. Participants will learn how to apply design thinking to real-world challenges and develop innovative solutions. The course is ideal for professionals looking to enhance their problem-solving and innovation skills. Enrol   now and transform your mindset!",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Exposure to a proven problem-solving approach empowers you to think creatively, develop user-centric solutions, and drive innovation in your organizations.",
+        "Exposure to a proven problem-solving approach empowers you to think creatively, develop user-centric solutions, and drive innovation in your organisations.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -8614,7 +8614,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Approach",
       desc4:
@@ -8656,8 +8656,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["DTC_certificates.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -8730,7 +8730,7 @@ If you are passionate about starting your own full-stack web development busines
           },
           {
             id: 5,
-            title: "Establishing Design Thinking in organization",
+            title: "Establishing Design Thinking in organisations",
             lists: ["Scaling up", "Design Thinking & Organizational culture"],
           },
           {
@@ -8879,9 +8879,9 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -8892,12 +8892,12 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Project Management certificate",
+      certifiedTitle1: "Earn Your Design Thinking certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school   based in South Africa, and climb the path of success towards your Project Management career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Design Thinking career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
@@ -8906,7 +8906,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -8925,7 +8925,7 @@ If you are passionate about starting your own full-stack web development busines
           "https://www.youtube.com/embed/LXpuEr0GPfY?autoplay=1&loop=1&playlist=LXpuEr0GPfY",
 
         title: "Certification Programme in Design Thinking New",
-        text: "Upskill yourself with a course in Design thinking. It is an innovative problem-solving approach used by leading organizations worldwide. Learn this valuable skill through our Design Thinking course and unleash your creativity to solve complex problems. Enroll yourself in this course and build a career in one of the most sought-after fields.",
+        text: "Upskill yourself with a course in Design thinking. It is an innovative problem-solving approach used by leading organisations worldwide. Learn this valuable skill through our Design Thinking course and unleash your creativity to solve complex problems. Enrol   yourself in this course and build a career in one of the most sought-after fields.",
         lists: [
           "08 Weeks Course",
           "Live Sessions",
@@ -8937,13 +8937,13 @@ If you are passionate about starting your own full-stack web development busines
     productDescription: {
       title: "Revolutionise your career with future-ready skills",
       text1:
-        "Digital Regenesys' Design Thinking course is an online training program that teaches participants the principles of design thinking, a creative problem-solving approach used by leading organizations worldwide. Participants will learn how to apply design thinking to real-world challenges and develop innovative solutions. The course is ideal for professionals looking to enhance their problem-solving and innovation skills. Enroll now and transform your mindset!",
+        "Digital Regenesys' Design Thinking course is an online training program that teaches participants the principles of design thinking, a creative problem-solving approach used by leading organisations worldwide. Participants will learn how to apply design thinking to real-world challenges and develop innovative solutions. The course is ideal for professionals looking to enhance their problem-solving and innovation skills. Enrol  now and transform your mindset!",
     },
     joinReasons: {
       title: "Reasons To Join This Course",
       subTitle1: "Exposure",
       desc1:
-        "Exposure to a proven problem-solving approach empowers you to think creatively, develop user-centric solutions, and drive innovation in your organizations.",
+        "Exposure to a proven problem-solving approach empowers you to think creatively, develop user-centric solutions, and drive innovation in your organisations.",
 
       subTitle2: "Best-in-class instructors",
       desc2:
@@ -8951,7 +8951,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Approach",
       desc4:
@@ -8993,8 +8993,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["DTC_certificate.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -9067,7 +9067,7 @@ If you are passionate about starting your own full-stack web development busines
           },
           {
             id: 5,
-            title: "Establishing Design Thinking in organization",
+            title: "Establishing Design Thinking in organisations",
             lists: ["Scaling up", "Design Thinking & Organizational culture"],
           },
           {
@@ -9229,7 +9229,7 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Project Management certificate",
@@ -9243,7 +9243,7 @@ If you are passionate about starting your own full-stack web development busines
       certifiedText3:
         "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",
@@ -9262,7 +9262,7 @@ If you are passionate about starting your own full-stack web development busines
           "https://www.youtube.com/embed/up8EdCMPl60?autoplay=1&loop=1&playlist=up8EdCMPl60",
 
         title: "Certification Programme in Cybersecurity",
-        text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with Cyber Security Fundamentals course. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",
+        text: "In today's digital age, cybersecurity is more important than ever. Equip and upskill yourself with the knowledge to improve business outcomes and unprecedented global demand and career opportunities with a Cybersecurity course. This course is designed for individuals who want to build a solid foundation and master the tools and techniques for robust cybersecurity defence.",
         lists: [
           "13 Weeks (8 Weeks + 5 Weeks)",
           "Live Sessions",
@@ -9276,7 +9276,7 @@ If you are passionate about starting your own full-stack web development busines
       text1: `
         Digital Regenesys' Cybersecurity course is an online course that provides a comprehensive understanding of cybersecurity principles, policies, and practices. The course is designed to equip participants with the skills and knowledge needed to identify, prevent, and respond to cyber threats. Key topics covered include threat intelligence, risk management, network security, and cryptography. Participants can expect to develop practical skills through hands-on exercises and real-world scenarios. The course is ideal for anyone looking to start a career in cybersecurity or enhance their existing skills.
         `,
-      textPara2: `Digital Regenesys' Cybersecurity course is an online course that provides a comprehensive understanding of cybersecurity principles, policies, and practices. This course is your gateway to the world of cybersecurity fundamentals. In this comprehensive course, you will gain a solid understanding of the key concepts, strategies, and techniques needed to protect digital systems and data from cyber threats. From exploring the fundamentals of information security to network security, secure systems and applications, and access control, you will build a strong foundation in cybersecurity. Additionally, we offer an add-on Defense Toolbox course of five weeks, where you can further enhance your skills through hands-on exercises and real-world scenarios. The course is ideal for anyone looking to start a career in cybersecurity or enhance their existing skills.`,
+      textPara2: ``,
     },
     joinReasons: {
       title: "Reasons To Join This Course",
@@ -9290,7 +9290,7 @@ If you are passionate about starting your own full-stack web development busines
 
       subTitle3: "Live sessions",
       desc3:
-        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
+        "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
 
       subTitle4: "Tools usage",
       desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -9319,7 +9319,7 @@ If you are passionate about starting your own full-stack web development busines
 
     courseCertificate: {
       certificateTitle:
-        "Building Strong Cyber Defenses: Fundamental & Defence Toolbox Certificate Course",
+        "Building Strong Cyber Defences: Fundamental & Defence Toolbox Certificate Course",
       certificateSubTitle:
         "Earn a Cyber Security Certificate from Digital Regenesys & Stay Ahead of Cyber Threats",
       certificateSubSubTitle:
@@ -9343,8 +9343,8 @@ If you are passionate about starting your own full-stack web development busines
       CertificateImage: ["CSC_certificates.webp"],
     },
     featureSeven: {
-      title: "Meet our staff",
-      desc: "Revolutionise your career with future-ready skills",
+      title: "Meet the faculty",
+      desc: "Learn from the experienced subject and industry experts",
       features: [
         {
           id: 1,
@@ -9704,45 +9704,44 @@ If you are passionate about starting your own full-stack web development busines
         faqs: [
           {
             id: 1,
-            title: "How This Course Will Help Me In My Career?",
-            text: "This course is ideal for the ones who are willing to learn how to manage projects in private, public and even non-profit sectors. The ourse covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to the financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
+            title: "How will this course help me in my career? ",
+            text: "This course is ideal for those who are willing to learn how to manage projects in private, public and even non-profit sectors. The course covers the entire project management cycle, including feasibility, planning, implementation, monitoring and evaluation. This course is relevant to financial services, IT, engineering, manufacturing, government, health, education, construction, agriculture, transport, media and entertainment, retail, energy, safety and security.",
           },
-          {
-            id: 2,
-            title: "Will Digital Regenesys Offer Me Job Assistance?",
-            text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
-          },
+          // {
+          //   id: 2,
+          //   title: "Will Digital Regenesys Offer Me Job Assistance?",
+          //   text: "Apart from preparing you with Cutting-edge and enhanced technology of Project Management, we will get you job-ready for positions under entry-level and executive positions of a project manager, senior project manager, program manager, business change manager, organizational change manager, delivery manager, PMO manager and much more with a complete LinkedIn profile building session.",
+          // },
           {
             id: 3,
-            title: "What Are The Modes Of Payment Available For Me?",
+            title: "What are the modes of payment available for me?",
             text: "You can pay the full fee amount from our website; you can also avail minimum per month payment plan through our EdForAll initiative.",
           },
           {
             id: 4,
             title:
-              "For How Long Will I Be Able To Access The Content After My Course Completion?",
+              "For how long will I be able to access the content after my course completion?",
             text: "At Digital Regenesys, we give you an unlimited 1 year of content access from the start date of your course. The course shall be updated with new and exciting content time to time for you to expand your knowledge further more.",
           },
           {
             id: 5,
-            title: "Is This A Certified Course?",
-            text: "Yes, all the courses are certified by the Regenesys Business School.",
+            title: "Is this a certified course?",
+            text: "Yes, all the courses at Digital Regenesys are certified.",
           },
           {
             id: 6,
-            title:
-              "What Does It Mean By Designed By Ph.D. & Conducted By Experts?",
-            text: "The courses have been extensively designed, researched, and innovated by the group of our expert team of recognized Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
+            title: "What does designed by Ph.D. & conducted by experts mean?",
+            text: "The Cybersecurity course at Digital Regenesys has been extensively designed, researched, and innovated by the group of our expert team of recognised Ph.D. Doctorates. Once the course is curated by them, the courses are then delivered by the Industry Experts of the particular field.",
           },
           {
             id: 7,
             title:
-              "How Will I Get Access To The Assignments And Learning Content?",
+              "How will I get access to the assignments and learning content?",
             text: "Once you are successfully registered yourself for our courses, you will receive access to our learning portal where you will find all the course material, assignments, and quizzes.",
           },
           {
             id: 8,
-            title: "What If The Course Timings Don't Match My Work Timings?",
+            title: "What if the course timings don't match my work timings?",
             text: "We offer you the comfort to watch the recordings of the classes that you have missed on the learning portal.",
           },
         ],
@@ -9807,9 +9806,9 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
-            "Talk, share, connect, learn and grow along with other students in your batch",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion",
+            "Network, learn and grow with other students in your batch.",
           ],
         },
       ],
@@ -9820,21 +9819,21 @@ If you are passionate about starting your own full-stack web development busines
       flagus: "/assets/images/icons/flag_us.webp",
       flagind: "/assets/images/icons/flag_india.webp",
       flagken: "/assets/images/icons/flag_kenya.webp",
-      title: "Fees structure & Certification",
+      title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
       certifiedTitle1: "Earn Your Cybersecurity certificate",
       certifiedText1:
-        "Get certified by Regenesys Business School, an international school based in South Africa, and climb the path of success towards your Cybersecurity career.",
+        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Cybersecurity career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA. Unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities and much more.",
       admissionText:
-        "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
+        "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
       CsFundamentals: "Total Admission Fee",
       CsDefenceToolbox: "Cybersecurity Defence Toolbox",

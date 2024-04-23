@@ -109,7 +109,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                 {title}
                 <i className="arrow-sign-right"></i>
               </h2>
-              <h5 className="product-details__subtitle mt-3">{subTitle}</h5>
+              {/* <h5 className="product-details__subtitle mt-3">{subTitle}</h5> */}
             </div>
           </Col>
 

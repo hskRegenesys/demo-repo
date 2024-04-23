@@ -3,7 +3,7 @@ export const partnerOne = [
     id: 1,
     image: "shape1.png",
     title: "One-on-one session",
-    text: "Maximize your learning potential with our personalized one-on-one sessions, tailored to your unique needs and learning style, and unlock your full potential.",
+    text: "Maximise your learning potential with our Personalised one-on-one sessions, tailored to your unique needs and learning style, and unlock your full potential.",
   },
   {
     id: 2,
