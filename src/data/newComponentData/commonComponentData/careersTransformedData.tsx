@@ -31,7 +31,7 @@ const careersTransformedData = {
       name: "Effiong Udo Inyang",
       role: "Data science",
       experienceText:
-        "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enroll for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
+        "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enrol for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
       riseImg: "/assets/images/new-component-assets/rise.webp",
       firstRole: "Data Scientist",
       secondRole: "Research Scientist",

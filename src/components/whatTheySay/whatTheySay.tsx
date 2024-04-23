@@ -16,7 +16,7 @@ const WhayTheySay = ({ courseDetails }: any) => {
       {courseDetails?.videos && (
         <section className={`sponsors-section tools-covered`}>
           <div className="video-testimonials">
-            <h2 className="head-tools-covered">What They Say</h2>
+            <h2 className="head-tools-covered">Hear it from the experts</h2>
             <div className="what-say-sponsors-outer">
               <div className="container">
                 <div className="what-they-say-video">

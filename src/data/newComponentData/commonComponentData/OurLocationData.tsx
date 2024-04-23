@@ -2,7 +2,7 @@ const OurLocationData = {
   smallHeading: "Corporate Presence",
   bigHeading: "Innovative. Transformative. Trailblazing.",
   paraText:
-    "Digital Regenesys is a leading ed-tech platform that offers a wide array of upskilling courses designed to empower individuals and organisations with the latest industry-relevant skills. With its headquarters in Silicon Valley, the world's technological hub, Digital Regenesys operates globally, with a strong presence in the United States, South Africa, Nigeria, Kenya, India, Croatia, and beyond. Our mission is to bridge the skills gap and drive economic growth by providing learners with access to high-quality, cutting-edge education. Whether in technology, business, or creative disciplines, Digital Regenesys offers comprehensive courses that cater to diverse learning needs.",
+    "Digital Regenesys is a leading ed-tech platform that offers a wide array of upskilling courses designed to empower individuals and organisations with the latest industry-relevant skills. The world's technological hub, Digital Regenesys operates globally, Digital Regenesys operates globally, with a strong presence in the United States, South Africa, Nigeria, Kenya, India, Croatia, and beyond. Our mission is to bridge the skills gap and drive economic growth by providing learners with access to high-quality, cutting-edge education. Whether in technology, business, or creative disciplines, Digital Regenesys offers comprehensive courses that cater to diverse learning needs.",
   countryImage: "/assets/images/new-component-assets/ContaryImg/World Map.png",
   USA: {
     countryName: "USA",

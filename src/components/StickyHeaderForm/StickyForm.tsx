@@ -8,6 +8,7 @@ import Data from "@/data/AllformsData";
 import { leadService } from "src/services";
 import Modal from "react-bootstrap/Modal";
 import mixpanel from "mixpanel-browser";
+import validator from "validator";
 
 export default function StickyForm(contactform: any) {
   const hookForm: any = useForm();
@@ -18,6 +19,7 @@ export default function StickyForm(contactform: any) {
   const [btnDisable, sebtnDisable] = useState(false);
   const [isShown, setIsShown] = useState(true);
   const [formInteraction, setFormInteraction] = useState(false);
+  const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
   const [show, setShow] = useState(false);
 
@@ -34,6 +36,9 @@ export default function StickyForm(contactform: any) {
   };
 
   const onSubmit = (data: any) => {
+    if (phoneNumberError) {
+      return;
+    }
     sebtnDisable(true);
     const current = new Date();
     data.page_url = window.location.href;
@@ -176,14 +181,6 @@ export default function StickyForm(contactform: any) {
                       <input
                         type="hidden"
                         {...register("Phone", {
-                          maxLength: {
-                            value: 16,
-                            message: "Cannot Exceed 10 digits",
-                          },
-                          minLength: {
-                            value: 12,
-                            message: "Valid phone number Required",
-                          },
                           required: "Phone is Required",
                         })}
                       />
@@ -194,18 +191,25 @@ export default function StickyForm(contactform: any) {
                         defaultCountry="ZA"
                         placeholder="Select Country Code*"
                         onChange={(e) => {
-                          setValue("Phone", e);
-                          mixpanel.track("Phone Changed", {
-                            InputName: "Phone",
-                            Filled: e !== "",
-                            newValue: e,
-                          });
+                          const phoneNumber = e ? e.toString() : "";
+                          const isValid = validator.isMobilePhone(phoneNumber);
+                          if (isValid) {
+                            setValue("Phone", e);
+                            mixpanel.track("Phone Changed", {
+                              InputName: "Phone",
+                              Filled: e !== "",
+                              newValue: e,
+                            });
+                            setPhoneNumberError("");
+                          } else {
+                            setPhoneNumberError("Valid phone number Required");
+                          }
                         }}
-                        className={`${errors.Phone && "invalid"}`}
+                        className={`${phoneNumberError && "invalid"}`}
                       />
-                      {errors.Phone && (
+                      {phoneNumberError && (
                         <small className="text-danger">
-                          {errors.Phone.message}
+                          {phoneNumberError}
                         </small>
                       )}
                     </div>

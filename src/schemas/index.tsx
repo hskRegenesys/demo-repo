@@ -15,7 +15,7 @@ const Schemas = ({ type, data }: props) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(Template[type](data)),
         }}
-      />
+      ></script>
     </Head>
   );
 };

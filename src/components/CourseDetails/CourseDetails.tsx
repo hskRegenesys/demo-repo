@@ -82,7 +82,7 @@ const ProcessOne = ({ courseDetails, courseCode }: any) => {
                       }}
                     >
                       <i className="btn-curve"></i>
-                      <span className="btn-title">Enquire now</span>
+                      <span className="btn-title">Enquire Now</span>
                     </a>
 
                     <a

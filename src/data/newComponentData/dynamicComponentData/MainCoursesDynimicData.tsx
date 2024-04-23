@@ -1562,9 +1562,9 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Can organizations enroll teams in AI courses to upskill?",
+                "Can organisations enroll teams in AI courses to upskill?",
               answer:
-                "Yes. Digital Regenesys offer corporate training or customized AI courses to upskill teams and organizations in AI technologies.",
+                "Yes. Digital Regenesys offer corporate training or customized AI courses to upskill teams and organisations in AI technologies.",
             },
           ],
         },
@@ -1943,7 +1943,7 @@ const MainCoursesDynimicData = {
             {
               question: "Why are Cyber Security tools important?",
               answer:
-                "Cyber Security tools are crucial for safeguarding digital assets against various cyber threats, including malware, phishing attacks, and unauthorized access. They help organizations maintain their information's confidentiality, integrity, and availability.",
+                "Cyber Security tools are crucial for safeguarding digital assets against various cyber threats, including malware, phishing attacks, and unauthorized access. They help organisations maintain their information's confidentiality, integrity, and availability.",
             },
             {
               question:

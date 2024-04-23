@@ -233,14 +233,13 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         console.log("data",data);
         const salesForceUrl = '${salesForceUrl}';
-        console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
           name: "",
           email: "",
           city: "",
-          country: "South Africa",
+          country: "",
           interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
@@ -250,7 +249,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           
         };   
         data.forEach(item => {
-          console.log("item",item)
           const labelMapping = {
               "Name": "name",
               "Email": "email",
@@ -259,7 +257,41 @@ const MyApp = ({ Component, pageProps }: any) => {
           };
           const propertyName = labelMapping[item.label] || item.label; 
           salesForceData[propertyName] = item.answer;
+
+          if (item.label === "Mobile Number") {
+            const countryCode = item?.answer?.substring(0, 4);
+            switch (countryCode) {
+              case "+234":
+                salesForceData.country = "Nigeria";
+                  break;
+              case "+254":
+                salesForceData.country = "Kenya";
+                  break;
+              case "+255":
+                salesForceData.country = "Tanzania";
+                  break;
+              case "+256":
+                salesForceData.country = "Uganda";
+                  break;
+              default:
+                salesForceData.country = "South Africa";
+          }
+        }
+
       });
+
+      data.forEach(item => {
+        if (item.label === "Mobile Number") {
+            const countryCode = item?.answer?.startsWith("+");
+            if (!countryCode) {
+                const digitsOnly = item.answer.substring(0, 9)); 
+                const southAfricanCode = "+27"; 
+                salesForceData.country = "South Africa";
+                salesForceData.mobile = southAfricanCode + digitsOnly; 
+            }
+        }
+    });
+
         try {
           fetch(salesForceUrl, {
             method: 'POST',
@@ -283,6 +315,110 @@ const MyApp = ({ Component, pageProps }: any) => {
         } catch (error) {
           console.error('Error in fetch operation:', error);
         }
+      };
+
+      window.Tawk_API.onOfflineSubmit = function(data){
+        console.log("data onOfflineSubmit",data);
+        const salesForceUrl = '${salesForceUrl}';
+        const salesForceNewData = {
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          city: "",
+          mobile:"",
+          country: "",
+          interest: "",
+          utm_source: "DR website chat ",
+          utm_medium: "DR Website",
+          utm_campaign: "DR Website",
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"  
+        };   
+
+        fetch("https://api.ipify.org?format=json")
+            .then((response) => response.json())
+            .then((ipData) => {
+                const ipAddress = ipData.ip;
+                fetch('https://ipapi.co/'+ ipAddress +'/json/')
+                                .then((response) => response.json())
+                                .then((locationData) => {
+                                    console.log("locationData", locationData);
+                                })
+                                .catch((error) => console.error("Error fetching IP location:", error));
+            })
+            .catch((error) => console.error("Error fetching IP address:", error));
+
+            fetch('https://geolocation-db.com/json/')
+            .then((response) => response.json())
+            .then((apiData) => {
+                console.log("apiData", apiData);
+            })
+            .catch((error) => console.error("Error fetching IP location:", error));
+        
+        data.questions.forEach(question => {
+          switch (question.label) {
+              case "Name":
+                  salesForceNewData.name = question.answer;
+                  break;
+              case "Email":
+                  salesForceNewData.email = question.answer;
+                  break;
+              case "Mobile Number":
+                  
+                  const hasCountryCode = question.answer.startsWith("+");
+                  if (!hasCountryCode) {
+                      salesForceNewData.mobile = "+27"+ question.answer.substring(0, 9);
+                      salesForceNewData.country = "South Africa";
+                  } else {
+                      salesForceNewData.mobile =  question.answer;
+                      const countryCode = question.answer.substring(0, 4);
+                      switch (countryCode) {
+                          case "+234":
+                              salesForceNewData.country = "Nigeria";
+                              break;
+                          case "+254":
+                              salesForceNewData.country = "Kenya";
+                              break;
+                          case "+255":
+                              salesForceNewData.country = "Tanzania";
+                              break;
+                          case "+256":
+                              salesForceNewData.country = "Uganda";
+                              break;
+                          default:
+                              // Default country code if not found
+                              salesForceNewData.country = "South Africa";
+                      }
+                  }
+                  break;
+              case "Course you are looking for":
+                  salesForceNewData.interest = question.answer;
+                  break;
+              default:
+                  console.log("question", question);
+          }
+      });
+    
+      fetch(salesForceUrl, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify(salesForceNewData),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); 
+    })
+    .then(responseData => {
+        console.log('Data submitted successfully:', responseData);
+    })
+    .catch(error => {
+        console.error('Error submitting data:', error);
+    });
       };
     `,
         }}
