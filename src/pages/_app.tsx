@@ -355,7 +355,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                   
                   const hasCountryCode = question.answer.startsWith("+");
                   if (!hasCountryCode) {
-                      salesForceNewData.mobile = "+27 " + question.answer;
+                      salesForceNewData.mobile = "+27"+question?.answer?.match(/\d{1,9}/)[0];
                       salesForceNewData.country = "South Africa";
                   } else {
                       salesForceNewData.mobile =  question.answer;
