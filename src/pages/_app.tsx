@@ -327,7 +327,7 @@ const MyApp = ({ Component, pageProps }: any) => {
             .then((response) => response.json())
             .then((ipData) => {
                 const ipAddress = ipData.ip;
-                fetch('https://ipapi.co/ipAddress/json/')
+                fetch('https://ipapi.co/'+ ipAddress +'/json/')
                                 .then((response) => response.json())
                                 .then((locationData) => {
                                     console.log("locationData", locationData);
