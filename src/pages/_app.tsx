@@ -354,7 +354,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                   case "Mobile Number":
                     salesForceNewData.mobile = question.answer;
                     if (!question?.answer?.includes("+")) {
-                        salesForceNewData.mobile = "+27 " + question.answer;
+                        salesForceNewData.mobile = "+27"+question.answer;
                         salesForceNewData.country = "South Africa";
                     } else {
                         const countryCode = question.answer.substring(0, 4);
