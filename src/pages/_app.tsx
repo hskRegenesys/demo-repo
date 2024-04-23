@@ -335,6 +335,13 @@ const MyApp = ({ Component, pageProps }: any) => {
                                 .catch((error) => console.error("Error fetching IP location:", error));
             })
             .catch((error) => console.error("Error fetching IP address:", error));
+
+            fetch('https://geolocation-db.com/json/')
+            .then((response) => response.json())
+            .then((apiData) => {
+                console.log("apiData", apiData);
+            })
+            .catch((error) => console.error("Error fetching IP location:", error));
         
         data.questions.forEach(question => {
           switch (question.label) {
@@ -345,7 +352,11 @@ const MyApp = ({ Component, pageProps }: any) => {
                   salesForceNewData.email = question.answer;
                   break;
               case "Mobile Number":
+                if(question?.answer?.startWith("+")){
                   salesForceNewData.mobile = question.answer;
+                } else {
+                  salesForceNewData.mobile = '+27' + question.answer
+                }
                   const countryCode = question?.answer?.substring(0, 4);
                   switch (countryCode) {
                       case "+234":
