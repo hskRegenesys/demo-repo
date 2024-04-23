@@ -322,6 +322,15 @@ const MyApp = ({ Component, pageProps }: any) => {
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"  
         };   
+
+        fetch("https://api.ipify.org?format=json")
+            .then((response) => response.json())
+            .then((ipData) => {
+                const ipAddress = ipData.ip;
+                console.log("Ip dataaaa", ipData);
+                console.log("Ip ipAddress", ipAddress);
+            })
+            .catch((error) => console.error("Error fetching IP address:", error));
         
         data.questions.forEach(question => {
           switch (question.label) {
@@ -333,8 +342,6 @@ const MyApp = ({ Component, pageProps }: any) => {
                   break;
               case "Mobile Number":
                   salesForceNewData.mobile = question.answer;
-
-                  if(question?.answer?.startsWith("+")){
                   const countryCode = question?.answer?.substring(0, 4);
                   switch (countryCode) {
                       case "+234":
@@ -351,17 +358,6 @@ const MyApp = ({ Component, pageProps }: any) => {
                           break;
                       default:
                           salesForceNewData.country = "South Africa";
-                  }
-                  } else {
-                   console.log("else code working)
-                    fetch("https://api.ipify.org?format=json")
-                        .then((response) => response.json())
-                        .then((ipData) => {
-                            const ipAddress = ipData.ip;
-                            console.log("Ip dataaaa, ipData)
-                        })
-                        .catch((error) => console.error("Error fetching IP address:", error));
-                  
                   }
                   break;
               case "Course you are looking for":
