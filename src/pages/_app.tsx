@@ -238,6 +238,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           type: "add_lead_to_crm",
           name: "",
           email: "",
+          mobile:"",
           city: "",
           country: "",
           interest: "",
@@ -259,12 +260,11 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
 
           if (item.label === "Mobile Number") {
-                  const hasCountryCode = item.answer.startsWith("+");
+                  const hasCountryCode = item?.answer?.startsWith("+");
                   if (!hasCountryCode) {
-                    salesForceData.mobile = "+27"+ item.answer.substring(0, 9);
+                    salesForceData.mobile = "+27"+ item?.answer?.substring(0, 9);
                     salesForceData.country = "South Africa";
                   } else {
-                    salesForceData.mobile =  item.answer;
                       const countryCode = item?.answer?.substring(0, 4);
                       switch (countryCode) {
                         case "+234":
