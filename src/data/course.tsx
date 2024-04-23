@@ -461,7 +461,7 @@ export const courseData = {
 
   //     subTitle3: "Live sessions",
   //     desc3:
-  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during one-on-one interactions.",
+  //       "Attend live sessions hosted by experienced subject and industry experts who will clear all your doubts during the one-on-one interactions",
 
   //     subTitle4: "Tools usage",
   //     desc4: "Gain a broad spectrum of knowledge on how to use the tools",
@@ -511,8 +511,8 @@ export const courseData = {
   //   },
 
   //   featureSeven: {
-  //     title: "Meet the faculty",
-  //     desc: "Learn from the experienced subject and industry experts",
+  //     title: "Meet our staff",
+  //     desc: "Revolutionise your career with future-ready skills",
   //     features: [
   //       {
   //         id: 1,
@@ -784,7 +784,7 @@ export const courseData = {
 
   //           title:
   //             "How do I enrol and register for the Digital Regenesys Certification Programme in Operations & Supply Chain Management?",
-  //           text: "To enrol in the Digital Regenesys Certification Programme in Operations & Supply Chain Management, follow these steps:\n • Visit the official website @ <a href='https://www.digitalregenesys.com/'> https://www.digitalregenesys.com</a> \n • Navigate to the course page. \n • Select the required course.\n • Click the \"Enrol   Now\" button.\n • Fill out the registration form with all the required information.\n • Submit the form and proceed to make the payment for the course.\n • Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+  //           text: "To enrol in the Digital Regenesys Certification Programme in Operations & Supply Chain Management, follow these steps:\n • Visit the official website @ <a href='https://www.digitalregenesys.com/'> https://www.digitalregenesys.com</a> \n • Navigate to the course page. \n • Select the required course.\n • Click the \"Enrol Now\" button.\n • Fill out the registration form with all the required information.\n • Submit the form and proceed to make the payment for the course.\n • Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
   //         },
   //         {
   //           id: 6,
@@ -899,7 +899,7 @@ export const courseData = {
   //         lists: [
   //           "Be a part of a community of 200,000+ corporate professionals comprising of highly achieved alumni",
   //           "Connect with the Industry experts who will guide you through your career after course completion",
-  //           "Network, learn and grow with other students in your batch.",
+  //           "Talk, share, connect, learn, and grow along with your batchmates",
   //         ],
   //       },
   //     ],
@@ -912,7 +912,7 @@ export const courseData = {
   //     flagken: "/assets/images/icons/flag_kenya.webp",
   //     flagUg: "/assets/images/icons/flag_uganda.webp",
   //     flagTZ: "/assets/images/icons/flag_Tanzania.webp",
-  //     title: "Fees Structure & Certification",
+  //     title: "Fees structure & Certification",
   //     subTitle: "Get Certified",
   //     price: 64499,
   //     certifiedTitle1:
@@ -927,7 +927,7 @@ export const courseData = {
   //     certifiedText3:
   //       "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
   //     admissionText:
-  //       "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
+  //       "Admissions are closed once the requisite number of participants enroll for the upcoming cohort. Apply early to secure your seat.",
   //     termsConditions: "*Terms & Conditions",
   //     CsFundamentals: "Total Admission Fee",
   //     CsDefenceToolbox: "Cybersecurity Defence Toolbox",
