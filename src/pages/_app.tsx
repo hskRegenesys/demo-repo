@@ -239,7 +239,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           name: "",
           email: "",
           city: "",
-          mobile:"",
           country: "",
           interest: "",
           utm_source: "DR website chat ",
@@ -260,12 +259,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
 
           if (item.label === "Mobile Number") {
-            const hasCountryCode = item?.answer?.startsWith("+");
-            if (!hasCountryCode) {
-              salesForceData.mobile = "+27"+ item?.answer?.substring(0, 9);
-              salesForceData.country = "South Africa";
-            } else {
-              salesForceData.mobile =  item?.answer;
             const countryCode = item?.answer?.substring(0, 4);
             switch (countryCode) {
               case "+234":
@@ -283,7 +276,6 @@ const MyApp = ({ Component, pageProps }: any) => {
               default:
                 salesForceData.country = "South Africa";
           }
-        }
         }
       });
 
