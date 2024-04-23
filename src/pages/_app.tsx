@@ -238,7 +238,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           type: "add_lead_to_crm",
           name: "",
           email: "",
-          mobile:"",
           city: "",
           country: "",
           interest: "",
@@ -260,34 +259,39 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
 
           if (item.label === "Mobile Number") {
-            const hasCountryCode = item?.answer?.startsWith("+");
-            if (!hasCountryCode) {
-                salesForceData.mobile = "+27"+ item?.answer?.substring(0, 9);
+            const countryCode = item?.answer?.substring(0, 4);
+            switch (countryCode) {
+              case "+234":
+                salesForceData.country = "Nigeria";
+                  break;
+              case "+254":
+                salesForceData.country = "Kenya";
+                  break;
+              case "+255":
+                salesForceData.country = "Tanzania";
+                  break;
+              case "+256":
+                salesForceData.country = "Uganda";
+                  break;
+              default:
                 salesForceData.country = "South Africa";
-            } else {
-               salesForceData.mobile =  question.answer;
-                const countryCode = item?.answer?.substring(0, 4);
-                // Determine country based on country code
-                switch (countryCode) {
-                    case "+234":
-                        salesForceData.country = "Nigeria";
-                        break;
-                    case "+254":
-                        salesForceData.country = "Kenya";
-                        break;
-                    case "+255":
-                        salesForceData.country = "Tanzania";
-                        break;
-                    case "+256":
-                        salesForceData.country = "Uganda";
-                        break;
-                    default:
-                        // Default country code if not found
-                        salesForceData.country = "South Africa";
-                }
+          }
+        }
+
+      });
+
+      data.forEach(item => {
+        if (item.label === "Mobile Number") {
+            const countryCode = item?.answer?.startsWith("+");
+            if (!countryCode) {
+                const digitsOnly = item.answer.substring(0, 9)); 
+                const southAfricanCode = "+27"; 
+                salesForceData.country = "South Africa";
+                salesForceData.mobile = southAfricanCode + digitsOnly; 
             }
         }
-      });
+    });
+
         try {
           fetch(salesForceUrl, {
             method: 'POST',
