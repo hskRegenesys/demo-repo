@@ -8879,8 +8879,8 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion",
             "Network, learn and grow with other students in your batch.",
           ],
         },
@@ -9806,8 +9806,8 @@ If you are passionate about starting your own full-stack web development busines
           image: "featured-image-14.jpg",
 
           lists: [
-            "Be a part of an extended community of corporate professionals comprising of more than 200,000 highly achieved alumni",
-            "Connect with the Industry experts who will help you guide through your career after course completion",
+            "Be a part of a community of 10,000+ learners",
+            "Connect with industry experts who will guide you through your career after course completion",
             "Network, learn and grow with other students in your batch.",
           ],
         },
