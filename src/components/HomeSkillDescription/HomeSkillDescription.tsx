@@ -16,20 +16,19 @@ const HomeSkillDescription = ({
             </h2>
           </div>
           <p className="para-text">
-            Embark on a next-generation digital skills journey with Silicon
-            Valley's cutting-edge Ed-Tech. Introducing Digital Regenesys, the
-            renowned EdTech platform by Regenesys Business School, an
-            international business school with campuses in Johannesburg, Mumbai,
-            and Lagos. Experience career-transforming, skill-enhancing, and
-            cutting-edge online courses across various digital domains. Our
-            online courses are meticulously designed to align with the evolving
-            digital and technological requirements of diverse industries. Gain a
-            competitive edge through instructor-led training, increasing your
-            chances of securing prestigious positions in top MNCs and
-            organisations. Immerse yourself in the comprehensive content of our
-            certificate courses, delivered by a highly experienced and globally
-            recognised faculty. Join us now and become a vital part of the
-            digital revolution.
+            Embark on a next-generation digital skills journey. Digital
+            Regenesys, the renowned EdTech platform by Regenesys Business
+            School, an international business school with campuses in
+            Johannesburg, Mumbai, and Lagos. Experience career-transforming,
+            skill-enhancing, and cutting-edge online courses across various
+            digital domains. Our online courses are meticulously designed to
+            align with the evolving digital and technological requirements of
+            diverse industries. Gain a competitive edge through instructor-led
+            training, increasing your chances of securing prestigious positions
+            in top MNCs and organisations. Immerse yourself in the comprehensive
+            content of our certificate courses, delivered by a highly
+            experienced and globally recognised faculty. Join us now and become
+            a vital part of the digital revolution.
           </p>
         </div>
       </div>
