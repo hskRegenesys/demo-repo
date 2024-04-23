@@ -260,32 +260,33 @@ const MyApp = ({ Component, pageProps }: any) => {
           salesForceData[propertyName] = item.answer;
 
           if (item.label === "Mobile Number") {
-                  const hasCountryCode = item?.answer?.startsWith("+");
-                  if (!hasCountryCode) {
-                    salesForceData.mobile = "+27"+ item?.answer?.substring(0, 9);
-                    salesForceData.country = "South Africa";
-                  } else {
-                      const countryCode = item?.answer?.substring(0, 4);
-                      switch (countryCode) {
-                        case "+234":
-                          salesForceData.country = "Nigeria";
-                            break;
-                        case "+254":
-                          salesForceData.country = "Kenya";
-                            break;
-                        case "+255":
-                          salesForceData.country = "Tanzania";
-                            break;
-                        case "+256":
-                          salesForceData.country = "Uganda";
-                            break;
-                        default:
-                          salesForceData.country = "South Africa";
-                    
-                      }
-                  }
+            const hasCountryCode = item?.answer?.startsWith("+");
+            if (!hasCountryCode) {
+                salesForceData.mobile = "+27"+ item?.answer?.substring(0, 9);
+                salesForceData.country = "South Africa";
+            } else {
+               salesForceData.mobile =  question.answer;
+                const countryCode = item?.answer?.substring(0, 4);
+                // Determine country based on country code
+                switch (countryCode) {
+                    case "+234":
+                        salesForceData.country = "Nigeria";
+                        break;
+                    case "+254":
+                        salesForceData.country = "Kenya";
+                        break;
+                    case "+255":
+                        salesForceData.country = "Tanzania";
+                        break;
+                    case "+256":
+                        salesForceData.country = "Uganda";
+                        break;
+                    default:
+                        // Default country code if not found
+                        salesForceData.country = "South Africa";
                 }
-
+            }
+        }
       });
         try {
           fetch(salesForceUrl, {
