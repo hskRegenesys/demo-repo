@@ -351,6 +351,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                           break;
                       default:
                           salesForceNewData.country = "South Africa";
+                  }
                   } else {
                    console.log("else code working)
                     fetch("https://api.ipify.org?format=json")
@@ -360,7 +361,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                             console.log("Ip dataaaa, ipData)
                         })
                         .catch((error) => console.error("Error fetching IP address:", error));
-                  }
+                  
                   }
                   break;
               case "Course you are looking for":
