@@ -107,11 +107,10 @@ const HomeBanner = ({ className = "" }) => {
               </h2>
             </div>
             <p className="para-text">
-              Embark on a next-generation digital skills journey with silicon
-              valley's cutting-edge Ed-Tech. Introducing Digital Regenesys, the
-              renowned EdTech platform by Regenesys Business School, an
-              international business school with campuses in Johannesburg,
-              Mumbai, and Lagos. Experience career-transforming,
+              Embark on a next-generation digital skills journey. Digital
+              Regenesys, the renowned EdTech platform by Regenesys Business
+              School, an international business school with campuses in
+              Johannesburg, Mumbai, and Lagos. Experience career-transforming,
               skill-enhancing, and cutting-edge online courses across various
               digital domains. Our online courses are meticulously designed to
               align with the evolving digital and technological requirements of
