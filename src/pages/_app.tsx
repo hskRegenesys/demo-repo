@@ -233,7 +233,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         console.log("data",data);
         const salesForceUrl = '${salesForceUrl}';
-        console.log("salesForceUrl", salesForceUrl);
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -250,7 +249,6 @@ const MyApp = ({ Component, pageProps }: any) => {
           
         };   
         data.forEach(item => {
-          console.log("item",item)
           const labelMapping = {
               "Name": "name",
               "Email": "email",
@@ -262,7 +260,6 @@ const MyApp = ({ Component, pageProps }: any) => {
 
           if (item.label === "Mobile Number") {
             const countryCode = item?.answer?.substring(0, 4);
-
             switch (countryCode) {
               case "+234":
                 salesForceData.country = "Nigeria";
@@ -309,8 +306,6 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       window.Tawk_API.onOfflineSubmit = function(data){
         console.log("data onOfflineSubmit",data);
-        
-
         const salesForceUrl = '${salesForceUrl}';
         const salesForceNewData = {
           domain: "crm",
@@ -339,7 +334,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               case "Mobile Number":
                   salesForceNewData.mobile = question.answer;
 
-                  // Determine country and city based on country code
+                  if(question?.answer?.startsWith("+")){
                   const countryCode = question?.answer?.substring(0, 4);
                   switch (countryCode) {
                       case "+234":
@@ -356,6 +351,16 @@ const MyApp = ({ Component, pageProps }: any) => {
                           break;
                       default:
                           salesForceNewData.country = "South Africa";
+                  } else {
+                   console.log("else code working)
+                    fetch("https://api.ipify.org?format=json")
+                        .then((response) => response.json())
+                        .then((ipData) => {
+                            const ipAddress = ipData.ip;
+                            console.log("Ip dataaaa, ipData)
+                        })
+                        .catch((error) => console.error("Error fetching IP address:", error));
+                  }
                   }
                   break;
               case "Course you are looking for":
