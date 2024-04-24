@@ -2,7 +2,7 @@ import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
 import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router";
 // import { Image } from "react-bootstrap";
 import Image from "next/image";
@@ -83,158 +83,165 @@ const HeaderOne = ({
     router.push(`/blog/search?q=${value}`);
   };
 
-  const allCourses = async () => {
-    // const allData = await courseService.allCourses();
-    allCourseList ? setIsLoading(false) : setIsLoading(true);
+  const allCourses = useMemo(
+    () => async () => {
+      allCourseList ? setIsLoading(false) : setIsLoading(true);
 
-    const allCategories = await wpService.allCategories({ per_page: 100 });
-    allCategories ? setIsLoading(false) : setIsLoading(true);
+      const allCategories = await wpService.allCategories({ per_page: 100 });
+      allCategories ? setIsLoading(false) : setIsLoading(true);
 
-    const filterData = _.filter(
-      allCourseList,
+      const filterData = _.filter(
+        allCourseList,
+        (item) =>
+          item?.parent_id === null &&
+          item?.mode_id === 1 &&
+          item?.isAddon === false
+      );
 
-      (item) =>
-        item?.parent_id === null &&
-        item?.mode_id === 1 &&
-        item?.isAddon === false
-    );
-
-    //const course = ["DSCI", "DM", "PM", "CSC", "DTC", "AI"];
-    const course = [
-      // "FSD",
-      // "DSN",
-      // "DSCI",
-      // "AIN",
-      // "CSC",
-      // "PM",
-      // "DM",
-      // "DMN",
-      // "DTC",
-      // "DT",
-      // "AI",
-      "PDM",
-      // "OSCM",
-      "MD",
-      "DSCI",
-
-      "FSD",
-      "DBA",
-      "DSN",
-      "AIN",
-      "CSC",
-      "PM",
-      "DM",
-      "DMN",
-      "DTC",
-      "DT",
-      "AI",
-    ];
-    const coursesSubItem: any = [];
-    course.forEach((courseCode) => {
-      if (filterData?.length) {
-        filterData?.forEach((item) => {
-          if (item.code === courseCode) {
-            if (
-              _.find(allCourseList, (course) => course.parent_id === item.id)
-            ) {
-              coursesSubItem?.push({
-                id: item?.id,
-                name: item?.name,
-                href: `/${programBaseUrl}/${urlInfo(item?.name)}`,
-              });
-            } else {
-              const courseName = _.find(
-                filterData,
-                (courseItem) => courseItem.id === item?.parent_id
-              );
-              coursesSubItem?.push({
-                id: item?.id,
-                name: item?.name,
-                href: `/${programBaseUrl}${urlInfo(courseName?.name)}/${urlInfo(
-                  item?.name
-                )}`,
-              });
+      const course = [
+        "PDM",
+        "MD",
+        "DSCI",
+        "FSD",
+        "DBA",
+        "DSN",
+        "AIN",
+        "CSC",
+        "PM",
+        "DM",
+        "DMN",
+        "DTC",
+        "DT",
+        "AI",
+      ];
+      const coursesSubItem: any = [];
+      course.forEach((courseCode) => {
+        if (filterData?.length) {
+          filterData?.forEach((item) => {
+            if (item.code === courseCode) {
+              if (
+                _.find(allCourseList, (course) => course.parent_id === item.id)
+              ) {
+                coursesSubItem?.push({
+                  id: item?.id,
+                  name: item?.name,
+                  href: `/${programBaseUrl}/${urlInfo(item?.name)}`,
+                });
+              } else {
+                const courseName = _.find(
+                  filterData,
+                  (courseItem) => courseItem.id === item?.parent_id
+                );
+                coursesSubItem?.push({
+                  id: item?.id,
+                  name: item?.name,
+                  href: `/${programBaseUrl}${urlInfo(
+                    courseName?.name
+                  )}/${urlInfo(item?.name)}`,
+                });
+              }
             }
-          }
-        });
-      }
-    });
-    const data = navItems?.map((item: any) => {
-      if (item.id === 4 && item.name === "All Courses") {
-        item.subNavItems = coursesSubItem;
-        item.subNavItems?.map((data: any) => {
-          const filterData = _.filter(
-            allCourseList,
-            (item) => item?.parent_id === data?.id
-          ).map((subCourse) => {
-            return {
-              id: subCourse?.id,
-              name: subCourse?.name,
-              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
-                subCourse?.name
-              )}`,
-            };
           });
-          if (filterData) {
-            data.subItems = filterData;
-          }
-        });
-      }
-
-      return item;
-    });
-
-    const data2 = blogsNavItem?.map((item: any) => {
-      if (item.id === 4 && item.name === "All Courses") {
-        item.subNavItems = coursesSubItem;
-        item.subNavItems?.map((data: any) => {
-          const filterData = _.filter(
-            allCourseList,
-            (item) => item?.parent_id === data?.id
-          ).map((subCourse) => {
-            return {
-              id: subCourse?.id,
-              name: subCourse?.name,
-              href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
-                subCourse?.name
-              )}`,
-            };
+        }
+      });
+      const data = navItems?.map((item: any) => {
+        if (item.id === 4 && item.name === "All Courses") {
+          item.subNavItems = coursesSubItem;
+          item.subNavItems?.map((data: any) => {
+            const filterData = _.filter(
+              allCourseList,
+              (item) => item?.parent_id === data?.id
+            ).map((subCourse) => {
+              return {
+                id: subCourse?.id,
+                name: subCourse?.name,
+                href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
+                  subCourse?.name
+                )}`,
+              };
+            });
+            if (filterData) {
+              data.subItems = filterData;
+            }
           });
-          if (filterData) {
-            data.subItems = filterData;
-          }
-        });
-      }
-      const categorySubItem: any = [];
-      if (allCategories?.length > 0 && item.id === 3 && item.name === "Blog") {
-        categorySubItem.push({
-          id: 1,
-          name: "Blog Categories",
-          href: "/blog",
-          subItems: [],
-        });
-        item.subNavItems = categorySubItem;
-        item.subNavItems?.map((data: any) => {
-          const subCategories = allCategories.map((categories: any) => {
-            return {
-              id: categories?.id,
-              name: categories?.name,
-              href: `/blog/category/${categories?.slug}`,
-            };
-          });
-          if (subCategories) {
-            data.subItems = subCategories;
-          }
-        });
-      }
-      return item;
-    });
+        }
 
-    variant === "blog" ? setNav(data2) : setNav(data);
-  };
-  useEffect(() => {
+        return item;
+      });
+
+      const data2 = blogsNavItem?.map((item: any) => {
+        if (item.id === 4 && item.name === "All Courses") {
+          item.subNavItems = coursesSubItem;
+          item.subNavItems?.map((data: any) => {
+            const filterData = _.filter(
+              allCourseList,
+              (item) => item?.parent_id === data?.id
+            ).map((subCourse) => {
+              return {
+                id: subCourse?.id,
+                name: subCourse?.name,
+                href: `/${programBaseUrl}/${urlInfo(data?.name)}/${urlInfo(
+                  subCourse?.name
+                )}`,
+              };
+            });
+            if (filterData) {
+              data.subItems = filterData;
+            }
+          });
+        }
+        const categorySubItem: any = [];
+        if (
+          allCategories?.length > 0 &&
+          item.id === 3 &&
+          item.name === "Blog"
+        ) {
+          categorySubItem.push({
+            id: 1,
+            name: "Blog Categories",
+            href: "/blog",
+            subItems: [],
+          });
+          item.subNavItems = categorySubItem;
+          item.subNavItems?.map((data: any) => {
+            const subCategories = allCategories.map((categories: any) => {
+              return {
+                id: categories?.id,
+                name: categories?.name,
+                href: `/blog/category/${categories?.slug}`,
+              };
+            });
+            if (subCategories) {
+              data.subItems = subCategories;
+            }
+          });
+        }
+        return item;
+      });
+
+      variant === "blog" ? setNav(data2) : setNav(data);
+    },
+    [
+      allCourseList,
+      wpService,
+      programBaseUrl,
+      urlInfo,
+      navItems,
+      blogsNavItem,
+      variant,
+      setNav,
+      setIsLoading,
+    ]
+  );
+
+  const memoizedAllCourses = useCallback(() => {
     allCourses();
-  }, []);
+  }, [allCourses]);
+
+  useEffect(() => {
+    memoizedAllCourses();
+  }, [memoizedAllCourses]);
+
   const [scroll, setScroll] = useState(false);
   const checkScroll = () => {
     if (window.scrollY > 38) {
