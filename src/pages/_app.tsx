@@ -249,33 +249,44 @@ const MyApp = ({ Component, pageProps }: any) => {
           
         };   
         data.forEach(item => {
-          const labelMapping = {
-              "Name": "name",
-              "Email": "email",
-              "Mobile Number": "mobile",
-              "Course you are looking for": "interest"
-          };
-          const propertyName = labelMapping[item.label] || item.label; 
-          salesForceData[propertyName] = item.answer;
-
-          if (item.label === "Mobile Number") {
-            const countryCode = item?.answer?.substring(0, 4);
-            switch (countryCode) {
-              case "+234":
-                salesForceData.country = "Nigeria";
-                  break;
-              case "+254":
-                salesForceData.country = "Kenya";
-                  break;
-              case "+255":
-                salesForceData.country = "Tanzania";
-                  break;
-              case "+256":
-                salesForceData.country = "Uganda";
-                  break;
-              default:
-                salesForceData.country = "South Africa";
-          }
+          switch (item.label) {
+            case "Name":
+              salesForceData.name = item.answer;
+                break;
+            case "Email":
+              salesForceData.email = item.answer;
+                break;
+            case "Mobile Number":     
+                const hasCountryCode = item.answer.startsWith("+");
+                if (!hasCountryCode) {
+                  salesForceData.mobile = "+27"+ item.answer.substring(0, 9);
+                  salesForceData.country = "South Africa";
+                } else {
+                  salesForceData.mobile =  item.answer;
+                    const countryCode = item.answer.substring(0, 4);
+                    switch (countryCode) {
+                        case "+234":
+                          salesForceData.country = "Nigeria";
+                            break;
+                        case "+254":
+                          salesForceData.country = "Kenya";
+                            break;
+                        case "+255":
+                          salesForceData.country = "Tanzania";
+                            break;
+                        case "+256":
+                          salesForceData.country = "Uganda";
+                            break;
+                        default:
+                          salesForceData.country = "South Africa";
+                    }
+                }
+                break;
+            case "Course you are looking for":
+              salesForceData.interest = item.answer;
+                break;
+            default:
+                console.log("item", item);
         }
       });
 
