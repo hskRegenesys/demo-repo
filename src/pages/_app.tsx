@@ -249,48 +249,46 @@ const MyApp = ({ Component, pageProps }: any) => {
           
         };   
         data.forEach(item => {
-          const labelMapping = {
-              "Name": "name",
-              "Email": "email",
-              "Mobile Number": "mobile",
-              "Course you are looking for": "interest"
-          };
-          const propertyName = labelMapping[item.label] || item.label; 
-          salesForceData[propertyName] = item.answer;
-
-          if (item.label === "Mobile Number") {
-            const countryCode = item?.answer?.substring(0, 4);
-            switch (countryCode) {
-              case "+234":
-                salesForceData.country = "Nigeria";
-                  break;
-              case "+254":
-                salesForceData.country = "Kenya";
-                  break;
-              case "+255":
-                salesForceData.country = "Tanzania";
-                  break;
-              case "+256":
-                salesForceData.country = "Uganda";
-                  break;
-              default:
-                salesForceData.country = "South Africa";
-          }
+          switch (item.label) {
+            case "Name":
+              salesForceData.name = item.answer;
+                break;
+            case "Email":
+              salesForceData.email = item.answer;
+                break;
+            case "Mobile Number":     
+                const hasCountryCode = item.answer.startsWith("+");
+                if (!hasCountryCode) {
+                  salesForceData.mobile = "+27"+ item.answer.substring(0, 9);
+                  salesForceData.country = "South Africa";
+                } else {
+                  salesForceData.mobile =  item.answer;
+                    const countryCode = item.answer.substring(0, 4);
+                    switch (countryCode) {
+                        case "+234":
+                          salesForceData.country = "Nigeria";
+                            break;
+                        case "+254":
+                          salesForceData.country = "Kenya";
+                            break;
+                        case "+255":
+                          salesForceData.country = "Tanzania";
+                            break;
+                        case "+256":
+                          salesForceData.country = "Uganda";
+                            break;
+                        default:
+                          salesForceData.country = "South Africa";
+                    }
+                }
+                break;
+            case "Course you are looking for":
+              salesForceData.interest = item.answer;
+                break;
+            default:
+                console.log("item", item);
         }
-
       });
-
-      data.forEach(item => {
-        if (item.label === "Mobile Number") {
-            const countryCode = item?.answer?.startsWith("+");
-            if (!countryCode) {
-                const digitsOnly = item.answer.substring(0, 9)); 
-                const southAfricanCode = "+27"; 
-                salesForceData.country = "South Africa";
-                salesForceData.mobile = southAfricanCode + digitsOnly; 
-            }
-        }
-    });
 
         try {
           fetch(salesForceUrl, {
@@ -335,27 +333,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"  
         };   
-
-        fetch("https://api.ipify.org?format=json")
-            .then((response) => response.json())
-            .then((ipData) => {
-                const ipAddress = ipData.ip;
-                fetch('https://ipapi.co/'+ ipAddress +'/json/')
-                                .then((response) => response.json())
-                                .then((locationData) => {
-                                    console.log("locationData", locationData);
-                                })
-                                .catch((error) => console.error("Error fetching IP location:", error));
-            })
-            .catch((error) => console.error("Error fetching IP address:", error));
-
-            fetch('https://geolocation-db.com/json/')
-            .then((response) => response.json())
-            .then((apiData) => {
-                console.log("apiData", apiData);
-            })
-            .catch((error) => console.error("Error fetching IP location:", error));
-        
+ 
         data.questions.forEach(question => {
           switch (question.label) {
               case "Name":
@@ -364,8 +342,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               case "Email":
                   salesForceNewData.email = question.answer;
                   break;
-              case "Mobile Number":
-                  
+              case "Mobile Number":     
                   const hasCountryCode = question.answer.startsWith("+");
                   if (!hasCountryCode) {
                       salesForceNewData.mobile = "+27"+ question.answer.substring(0, 9);
@@ -387,7 +364,6 @@ const MyApp = ({ Component, pageProps }: any) => {
                               salesForceNewData.country = "Uganda";
                               break;
                           default:
-                              // Default country code if not found
                               salesForceNewData.country = "South Africa";
                       }
                   }
