@@ -249,7 +249,7 @@ export default function LandingForm(contactform: any) {
                       })}
                     >
                       <option value="" disabled selected>
-                        Course you are looking for *
+                        Select course *
                       </option>
 
                       {courses.map((val: any) => {
