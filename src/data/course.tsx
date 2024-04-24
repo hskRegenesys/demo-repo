@@ -2615,7 +2615,7 @@ Participate in hands-on projects to build practical skills and develop a strong 
           {
             id: 6,
             title:
-              "What are the Benefits of Enrol  ing in a Digital Regenesys Full Stack Web & Software Development Course?",
+              "What are the Benefits of Enroling in a Digital Regenesys Full Stack Web & Software Development Course?",
             text: "By enroling in a Digital Regenesys Full Stack Web & Software Development Course, participants gain practical knowledge and hands-on experience that can be directly applied to real-world scenarios. Additionally, completing a Full Stack Web & Software Development course can enhance career prospects and open doors to a wide range of job opportunities in the rapidly growing field of full stack web development and its applications.",
           },
           {
