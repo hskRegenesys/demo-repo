@@ -79,7 +79,6 @@ class LeadService {
     try {
       //Save leads on Salesforce
       let salesforceParam = { ...params };
-      console.log("salesforceoarans", salesforceParam);
 
       salesforceParam.Programme_Of_Interest =
         this.salesforceProgramOfIngterest.get(params.Programme_Of_Interest);
@@ -142,7 +141,6 @@ class LeadService {
       result = err?.response;
       console.log("Error while getting student details ", err.message);
     }
-
     try {
       const response = await this.leadServer.post(apiEndPoints.leadApi, params);
       result = response?.data;
