@@ -235,6 +235,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         console.log("data",data);
         const salesForceUrl = '${salesForceUrl}';
+        const leadForceUrl = '${leadsGenerateUrl}';
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -249,6 +250,23 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
+        };   
+
+        const getCurrentDateNew = () => {
+          const current = new Date();
+          const date = current.getDate() + '/' + (current.getMonth() + 1) + '/' + current.getFullYear();
+          return date;
+           };
+
+        const leadsData = {
+          Email: "",
+          Interested_Topic:"",
+          Name: "",
+          Phone:"", 
+          Programme_Of_Interest: "",
+          date:getCurrentDateNew(), 
+          page_url:window?.location?.href,
+          utm_parameters:window?.location?.href ,
         };   
 
         function getCountryCode(countryName) {
@@ -266,15 +284,17 @@ const MyApp = ({ Component, pageProps }: any) => {
               default:
                   return "+27";
           }
-      }
+        }
 
         data.forEach(item => {
           switch (item.label) {
             case "Name":
               salesForceData.name = item.answer;
+              leadsData.Name = item.answer;
                 break;
             case "Email":
               salesForceData.email = item.answer;
+              leadsData.Email = item.answer;
                 break;
             case "Country":
               if(item?.answer === "Others"){
@@ -287,17 +307,21 @@ const MyApp = ({ Component, pageProps }: any) => {
             if (!item?.answer?.startsWith("+")) {
               const countryCode = getCountryCode(salesForceData?.country);
               salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+              leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
              } else {
               salesForceData.mobile = item.answer;
+              leadsData.Phone = question.answer;
               }
             break;
             case "Course you are looking for":
               salesForceData.interest = item.answer;
+              leadsData.Interested_Topic = item.answer;
+              leadsData.Programme_Of_Interest = item.answer;
             break;
             default:
             console.log("item", item);
         }
-      });
+        });
 
         try {
           fetch(salesForceUrl, {
@@ -315,6 +339,7 @@ const MyApp = ({ Component, pageProps }: any) => {
             })
             .then(responseData => {
               console.log('Data submitted successfully:', responseData);
+              generateNewLead()
             })
             .catch(error => {
               console.error('Error submitting data:', error);
@@ -322,13 +347,34 @@ const MyApp = ({ Component, pageProps }: any) => {
         } catch (error) {
           console.error('Error in fetch operation:', error);
         }
+
+        const generateNewLead=()=>{
+          fetch(leadForceUrl, {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json', 
+            },
+            body: JSON.stringify(leadsData),
+          })
+         .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+           return response.json(); 
+         })
+         .then(responseData => {
+            console.log('Lead Generated successfully:', responseData);
+         })
+         .catch(error => {
+            console.error('Error submitting data:', error);
+         });
+         }
       };
 
       window.Tawk_API.onOfflineSubmit = function(data){
         console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
-
         const salesForceNewData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -361,8 +407,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           page_url:window?.location?.href,
           utm_parameters:window?.location?.href ,
         };   
-
- 
+        
         function getCountryCode(countryName) {
           switch (countryName) {
               case "Nigeria":
@@ -416,9 +461,6 @@ const MyApp = ({ Component, pageProps }: any) => {
               console.log("question", question);
           }
         });
-
-
-
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
@@ -440,31 +482,27 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.error('Error submitting data:', error);
     });
 
-    
-    const generateLead=()=>{
-      console.log("checking egenarteeeee")
+     const generateLead=()=>{
       fetch(leadForceUrl, {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json', 
         },
         body: JSON.stringify(leadsNewData),
-     })
-    .then(response => {
+      })
+     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        return response.json(); 
-    })
-    .then(responseData => {
+       return response.json(); 
+     })
+     .then(responseData => {
         console.log('Lead Generated successfully:', responseData);
-       
-    })
-    .catch(error => {
+     })
+     .catch(error => {
         console.error('Error submitting data:', error);
-    });
-
-    }
+     });
+     }
       };
     `,
         }}
