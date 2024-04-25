@@ -94,6 +94,7 @@ function ModalPopup(props: any) {
     );
     const brochureName: any = brochureDetails[selectedCourse.code];
 
+    console.log("data-----", data);
     const result = await leadService.saveLead(data);
 
     if (result?.data && props?.title === "Download Brochure") {

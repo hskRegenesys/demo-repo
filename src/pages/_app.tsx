@@ -341,6 +341,24 @@ const MyApp = ({ Component, pageProps }: any) => {
           Lead_Source:"DR website chat"  
         };   
  
+        const getCurrentDate = () => {
+          const current = new Date();
+          const date = current.getDate() + '/' + (current.getMonth() + 1) + '/' + current.getFullYear();
+          return date;
+      };
+
+        const leadsNewData = {
+          Email: "",
+          Interested_Topic:"",
+          Name: "",
+          Phone:"", 
+          Programme_Of_Interest: "",
+          date:getCurrentDate(), 
+          page_url:window?.location?.href,
+          utm_parameters:window?.location?.href ,
+        };   
+
+ 
         function getCountryCode(countryName) {
           switch (countryName) {
               case "Nigeria":
@@ -362,9 +380,11 @@ const MyApp = ({ Component, pageProps }: any) => {
           switch (question.label) {
               case "Name":
                   salesForceNewData.name = question.answer;
+                  leadsNewData.Name = question.answer;
                   break;
               case "Email":
                   salesForceNewData.email = question.answer;
+                  leadsNewData.Email = question.answer;
                   break;
               case "Country":
                 if(question?.answer === "Others"){
@@ -383,12 +403,14 @@ const MyApp = ({ Component, pageProps }: any) => {
               break;    
               case "Course you are looking for":
                 salesForceNewData.interest = question.answer;
+                leadsNewData.Interested_Topic = question.answer;
+                leadsNewData.Programme_Of_Interest = question.answer;
                 break; 
               default:
               console.log("question", question);
           }
       });
-      
+
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
@@ -408,6 +430,8 @@ const MyApp = ({ Component, pageProps }: any) => {
     .catch(error => {
         console.error('Error submitting data:', error);
     });
+
+    console.log("leadsData",leadsNewData)
       };
     `,
         }}
