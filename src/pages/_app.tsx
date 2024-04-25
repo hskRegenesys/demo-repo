@@ -397,8 +397,10 @@ const MyApp = ({ Component, pageProps }: any) => {
                 if (!question?.answer?.startsWith("+")) {
                  const countryCode = getCountryCode(salesForceNewData?.country);
                  salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+                 leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
              } else {
                  salesForceNewData.mobile = question.answer;
+                 leadsNewData.Phone = question.answer;
              }
               break;    
               case "Course you are looking for":
@@ -431,7 +433,8 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.error('Error submitting data:', error);
     });
 
-    console.log("leadsData",leadsNewData)
+    const result = leadService.saveLead(leadsNewData);
+    console.log("result---", result)
       };
     `,
         }}
