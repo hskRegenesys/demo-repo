@@ -388,8 +388,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               console.log("question", question);
           }
       });
-      const result = leadService.saveLead(salesForceNewData);
-      console.log("result----", result)
+      
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
