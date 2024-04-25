@@ -334,6 +334,21 @@ const MyApp = ({ Component, pageProps }: any) => {
           Lead_Source:"DR website chat"  
         };   
  
+        function getCountryCode(countryName) {
+          switch (countryName.toLowerCase()) {
+              case "nigeria":
+                  return "+234";
+              case "kenya":
+                  return "+254";
+              case "tanzania":
+                  return "+255";
+              case "uganda":
+                  return "+256";
+              default:
+                  return "+27"; // Default country code for South Africa
+          }
+      }
+
         data.questions.forEach(question => {
           switch (question.label) {
               case "Name":
@@ -343,30 +358,12 @@ const MyApp = ({ Component, pageProps }: any) => {
                   salesForceNewData.email = question.answer;
                   break;
               case "Mobile Number":     
-                  const hasCountryCode = question.answer.startsWith("+");
-                  if (!hasCountryCode) {
-                      salesForceNewData.mobile = "+27"+ question.answer.substring(0, 9);
-                      salesForceNewData.country = "South Africa";
-                  } else {
-                      salesForceNewData.mobile =  question.answer;
-                      const countryCode = question.answer.substring(0, 4);
-                      switch (countryCode) {
-                          case "+234":
-                              salesForceNewData.country = "Nigeria";
-                              break;
-                          case "+254":
-                              salesForceNewData.country = "Kenya";
-                              break;
-                          case "+255":
-                              salesForceNewData.country = "Tanzania";
-                              break;
-                          case "+256":
-                              salesForceNewData.country = "Uganda";
-                              break;
-                          default:
-                              salesForceNewData.country = "South Africa";
-                      }
-                  }
+                   if (!question?.answer?.startsWith("+")) {
+                const countryCode = getCountryCode(salesForceNewData?.country);
+                salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+            } else {
+                salesForceNewData.mobile = question.answer;
+            }
                   break;
               case "Course you are looking for":
                   salesForceNewData.interest = question.answer;
