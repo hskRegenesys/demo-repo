@@ -259,6 +259,8 @@ const MyApp = ({ Component, pageProps }: any) => {
                   return "+255";
               case "Uganda":
                   return "+256";
+              case "Others":
+              return "+27";      
               default:
                   return "+27";
           }
@@ -273,7 +275,11 @@ const MyApp = ({ Component, pageProps }: any) => {
               salesForceData.email = item.answer;
                 break;
             case "Country":
-            salesForceData.country = item.answer;
+              if(item?.answer === "Others"){
+                salesForceData.country = "South Africa";
+              } else {
+                salesForceData.country = item.answer;
+              }
             break;
             case "Mobile Number":     
             if (!item?.answer?.startsWith("+")) {
@@ -345,6 +351,8 @@ const MyApp = ({ Component, pageProps }: any) => {
                   return "+255";
               case "Uganda":
                   return "+256";
+              case "Others":
+              return "+27";    
               default:
                   return "+27";
           }
@@ -359,7 +367,11 @@ const MyApp = ({ Component, pageProps }: any) => {
                   salesForceNewData.email = question.answer;
                   break;
               case "Country":
-                salesForceNewData.country = question.answer;
+                if(question?.answer === "Others"){
+                  salesForceNewData.country = "South Africa";
+                } else {
+                  salesForceNewData.country = question.answer;
+                }
               break;
               case "Mobile Number":     
                 if (!question?.answer?.startsWith("+")) {
