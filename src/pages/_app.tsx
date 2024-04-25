@@ -368,6 +368,9 @@ const MyApp = ({ Component, pageProps }: any) => {
               case "Course you are looking for":
                   salesForceNewData.interest = question.answer;
                   break;
+                  case "Country":
+                    salesForceNewData.country = question.answer;
+                    break;
               default:
                   console.log("question", question);
           }
