@@ -17,9 +17,8 @@ const HomeSkillDescription = ({
           </div>
           <p className="para-text">
             Embark on a next-generation digital skills journey. Digital
-            Regenesys, the renowned EdTech platform by Regenesys Business
-            School, an international business school with campuses in
-            Johannesburg, Mumbai, and Lagos. Experience career-transforming,
+            Regenesys, the renowned online educational platform by Regenesys,
+            one of Africa’s leading schools. Experience career-transforming,
             skill-enhancing, and cutting-edge online courses across various
             digital domains. Our online courses are meticulously designed to
             align with the evolving digital and technological requirements of
