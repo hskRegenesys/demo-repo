@@ -24,6 +24,8 @@ import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const salesForceUrl = `https://api.vinecrms.com/api/`;
+  const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
+
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
   return (
     <ContextProvider>
@@ -325,6 +327,8 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onOfflineSubmit = function(data){
         console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
+        const leadForceUrl = '${leadsGenerateUrl}';
+
         const salesForceNewData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -345,7 +349,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           const current = new Date();
           const date = current.getDate() + '/' + (current.getMonth() + 1) + '/' + current.getFullYear();
           return date;
-      };
+           };
 
         const leadsNewData = {
           Email: "",
@@ -374,7 +378,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               default:
                   return "+27";
           }
-      }
+         }
 
         data.questions.forEach(question => {
           switch (question.label) {
@@ -411,7 +415,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               default:
               console.log("question", question);
           }
-      });
+        });
 
 
 
@@ -421,7 +425,7 @@ const MyApp = ({ Component, pageProps }: any) => {
             'Content-Type': 'application/json', 
         },
         body: JSON.stringify(salesForceNewData),
-    })
+     })
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -430,17 +434,37 @@ const MyApp = ({ Component, pageProps }: any) => {
     })
     .then(responseData => {
         console.log('Data submitted successfully:', responseData);
-        console.log("leadsdsss22222")
-        const result = leadService.saveLead(leadsNewData);
-        console.log("result---", result)
+        generateLead()
     })
     .catch(error => {
         console.error('Error submitting data:', error);
     });
 
-    console.log("leadsdsss",leadService)
-    const result = leadService.saveLead(leadsNewData);
-    console.log("result---", result)
+    
+    const generateLead=()=>{
+      console.log("checking egenarteeeee")
+      fetch(leadForceUrl, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify(leadsNewData),
+     })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); 
+    })
+    .then(responseData => {
+        console.log('Lead Generated successfully:', responseData);
+       
+    })
+    .catch(error => {
+        console.error('Error submitting data:', error);
+    });
+
+    }
       };
     `,
         }}
