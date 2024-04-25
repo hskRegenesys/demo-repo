@@ -240,14 +240,30 @@ const MyApp = ({ Component, pageProps }: any) => {
           email: "",
           city: "",
           country: "",
+          mobile:"",
           interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-          
         };   
+
+        function getCountryCode(countryName) {
+          switch (countryName) {
+              case "Nigeria":
+                  return "+234";
+              case "Kenya":
+                  return "+254";
+              case "Tanzania":
+                  return "+255";
+              case "Uganda":
+                  return "+256";
+              default:
+                  return "+27";
+          }
+      }
+
         data.forEach(item => {
           switch (item.label) {
             case "Name":
@@ -256,37 +272,22 @@ const MyApp = ({ Component, pageProps }: any) => {
             case "Email":
               salesForceData.email = item.answer;
                 break;
+            case "Country":
+            salesForceData.country = item.answer;
+            break;
             case "Mobile Number":     
-                const hasCountryCode = item.answer.startsWith("+");
-                if (!hasCountryCode) {
-                  salesForceData.mobile = "+27"+ item.answer.substring(0, 9);
-                  salesForceData.country = "South Africa";
-                } else {
-                  salesForceData.mobile =  item.answer;
-                    const countryCode = item.answer.substring(0, 4);
-                    switch (countryCode) {
-                        case "+234":
-                          salesForceData.country = "Nigeria";
-                            break;
-                        case "+254":
-                          salesForceData.country = "Kenya";
-                            break;
-                        case "+255":
-                          salesForceData.country = "Tanzania";
-                            break;
-                        case "+256":
-                          salesForceData.country = "Uganda";
-                            break;
-                        default:
-                          salesForceData.country = "South Africa";
-                    }
-                }
-                break;
+            if (!item?.answer?.startsWith("+")) {
+              const countryCode = getCountryCode(salesForceData?.country);
+              salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+             } else {
+              salesForceData.mobile = item.answer;
+              }
+            break;
             case "Course you are looking for":
               salesForceData.interest = item.answer;
-                break;
+            break;
             default:
-                console.log("item", item);
+            console.log("item", item);
         }
       });
 
@@ -324,8 +325,8 @@ const MyApp = ({ Component, pageProps }: any) => {
           name: "",
           email: "",
           city: "",
-          mobile:"",
           country: "",
+          mobile:"",
           interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
@@ -335,7 +336,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         };   
  
         function getCountryCode(countryName) {
-          console.log("Countryname", countryName)
           switch (countryName) {
               case "Nigeria":
                   return "+234";
@@ -351,7 +351,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       }
 
         data.questions.forEach(question => {
-          console.log("questionnn", question)
           switch (question.label) {
               case "Name":
                   salesForceNewData.name = question.answer;
@@ -359,24 +358,22 @@ const MyApp = ({ Component, pageProps }: any) => {
               case "Email":
                   salesForceNewData.email = question.answer;
                   break;
-            
-              case "Course you are looking for":
-                  salesForceNewData.interest = question.answer;
-                  break;
               case "Country":
                 salesForceNewData.country = question.answer;
               break;
-                case "Mobile Number":     
+              case "Mobile Number":     
                 if (!question?.answer?.startsWith("+")) {
-               console.log("salesForceNewData",salesForceNewData?.country)
                  const countryCode = getCountryCode(salesForceNewData?.country);
                  salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
              } else {
                  salesForceNewData.mobile = question.answer;
              }
-                   break;     
+              break;    
+              case "Course you are looking for":
+                salesForceNewData.interest = question.answer;
+                break; 
               default:
-                  console.log("question", question);
+              console.log("question", question);
           }
       });
     
