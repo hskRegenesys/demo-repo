@@ -335,17 +335,18 @@ const MyApp = ({ Component, pageProps }: any) => {
         };   
  
         function getCountryCode(countryName) {
-          switch (countryName.toLowerCase()) {
-              case "nigeria":
+          console.log("Countryname", countryName)
+          switch (countryName) {
+              case "Nigeria":
                   return "+234";
-              case "kenya":
+              case "Kenya":
                   return "+254";
-              case "tanzania":
+              case "Tanzania":
                   return "+255";
-              case "uganda":
+              case "Uganda":
                   return "+256";
               default:
-                  return "+27"; // Default country code for South Africa
+                  return "+27";
           }
       }
 
@@ -359,6 +360,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                   break;
               case "Mobile Number":     
                    if (!question?.answer?.startsWith("+")) {
+                    console.log("salesForceNewData",salesForceNewData?.country)
                 const countryCode = getCountryCode(salesForceNewData?.country);
                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
             } else {
