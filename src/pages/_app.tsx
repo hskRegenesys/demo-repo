@@ -351,6 +351,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       }
 
         data.questions.forEach(question => {
+          console.log("questionnn", question)
           switch (question.label) {
               case "Name":
                   salesForceNewData.name = question.answer;
@@ -358,21 +359,22 @@ const MyApp = ({ Component, pageProps }: any) => {
               case "Email":
                   salesForceNewData.email = question.answer;
                   break;
-              case "Mobile Number":     
-                   if (!question?.answer?.startsWith("+")) {
-                    console.log("salesForceNewData",salesForceNewData?.country)
-                const countryCode = getCountryCode(salesForceNewData?.country);
-                salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
-            } else {
-                salesForceNewData.mobile = question.answer;
-            }
-                  break;
+            
               case "Course you are looking for":
                   salesForceNewData.interest = question.answer;
                   break;
-                  case "Country":
-                    salesForceNewData.country = question.answer;
-                    break;
+              case "Country":
+                salesForceNewData.country = question.answer;
+              break;
+                case "Mobile Number":     
+                if (!question?.answer?.startsWith("+")) {
+               console.log("salesForceNewData",salesForceNewData?.country)
+                 const countryCode = getCountryCode(salesForceNewData?.country);
+                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+             } else {
+                 salesForceNewData.mobile = question.answer;
+             }
+                   break;     
               default:
                   console.log("question", question);
           }
