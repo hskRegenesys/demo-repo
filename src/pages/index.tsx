@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-
 // import HomeBanner from "@/components/HomeBanner/HomeBanner";
 // import HomeCourses from "@/components/HomeCourses/HomeCourses";
 import HeaderOne from "@/components/Header/HeaderOne";
@@ -57,9 +56,9 @@ import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
 // import { allCourseList } from "@/data/courseData";
-import { Modal } from "react-bootstrap";
-import ImageModalPopup from "@/components/Modal/ImageModalPopup";
-import ThankYouPopup from "@/components/Modal/ThankYouPopup";
+
+// import ImageModalPopup from "@/components/Modal/ImageModalPopup";
+// import ThankYouPopup from "@/components/Modal/ThankYouPopup";
 import GoogleMap from "@/components/GoogleMap/GoogleMap";
 import TestimonialsVideo from "@/components/TestimonialsVideo/testimonialsVideo";
 // import videoTestimonialData from "@/data/videoTestimonial";
