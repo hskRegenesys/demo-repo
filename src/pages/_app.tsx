@@ -12,7 +12,7 @@ import "react-circular-progressbar/dist/styles.css";
 // import "react-modal-video/css/modal-video.min.css";
 import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
-
+import { leadService } from "src/services";
 import { apiEndPoints } from "@/data/axisos";
 import axios from "axios";
 
@@ -388,7 +388,8 @@ const MyApp = ({ Component, pageProps }: any) => {
               console.log("question", question);
           }
       });
-    
+      const result = leadService.saveLead(salesForceNewData);
+      console.log("result----", result)
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
