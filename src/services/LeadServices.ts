@@ -79,6 +79,7 @@ class LeadService {
     try {
       //Save leads on Salesforce
       let salesforceParam = { ...params };
+      console.log("salesforceoarans", salesforceParam);
 
       salesforceParam.Programme_Of_Interest =
         this.salesforceProgramOfIngterest.get(params.Programme_Of_Interest);

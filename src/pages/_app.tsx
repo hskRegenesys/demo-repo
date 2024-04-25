@@ -413,6 +413,8 @@ const MyApp = ({ Component, pageProps }: any) => {
           }
       });
 
+
+
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
@@ -428,11 +430,15 @@ const MyApp = ({ Component, pageProps }: any) => {
     })
     .then(responseData => {
         console.log('Data submitted successfully:', responseData);
+        console.log("leadsdsss22222")
+        const result = leadService.saveLead(leadsNewData);
+        console.log("result---", result)
     })
     .catch(error => {
         console.error('Error submitting data:', error);
     });
 
+    console.log("leadsdsss",leadService)
     const result = leadService.saveLead(leadsNewData);
     console.log("result---", result)
       };
