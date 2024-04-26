@@ -165,9 +165,9 @@ export const aboutMeOne = {
   title: "Dr Marko Saravanja",
   subtitle: "Executive Chairperson / Regenesys Group",
   highlight: "Shifting The Focus to The New Digital World",
-  text: "I am delighted to welcome you to Digital Regenesys, the ed-tech platform from Silicon Valley. The ongoing digital revolution demands a new breed of professionals to succeed in the new digital world, where new technologies have sparked rapid innovation.",
+  text: "I am delighted to welcome you to Digital Regenesys, a leading online educational platform. The ongoing digital revolution demands a new breed of professionals to succeed in the new digital world, where new technologies have sparked rapid innovation.",
   text2:
-    "To give you a competitive advantage, we have developed cutting-edge digital technology courses in the areas of information technology and management. Our courses, facilitated by leading experts, entrepreneurs, and academics from top local and international institutions, harness the transformative power of Silicon Valley's ed-tech innovation. Get inspired and energised to transform your career with courses grounded in the realities of the new digital world.",
+    "To give you a competitive advantage, we have developed cutting-edge digital technology courses in the areas of information technology and management. Our courses, facilitated by leading experts, entrepreneurs, and academics from top local and international institutions, harness the transformative power of online innovation. Get inspired and energised to transform your career with courses grounded in the realities of the new digital world.",
   text3: "I wish you success on your journey towards greatness.",
   // socials: [
   //   {
