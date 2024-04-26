@@ -10,11 +10,13 @@ import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
 import mixpanel from "mixpanel-browser";
+import dynamic from "next/dynamic";
 
-import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
 import { brochureDetails, courseData } from "@/data/course";
+// import Loader from "../Loader/Loader";
+const Loader = dynamic(() => import("../Loader/Loader"));
 
 function ModalPopup(props: any) {
   const bgImage = props.bgImage ?? "Pop-up_bg.webp";
