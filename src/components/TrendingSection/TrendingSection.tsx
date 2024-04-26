@@ -8,8 +8,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { batchInfo, urlInfo } from "../config/helper";
 import Modal from "react-bootstrap/Modal";
-// import ModalPopup from "@/components/Modal/ModalPopup";
-// import ThankYouPopup from "../Modal/ThankYouPopup";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 import {
   artificialIntelligenceCode,
   dataScienceCode,
@@ -19,8 +19,6 @@ import {
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });
-const ModalPopup = dynamic(() => import("@/components/Modal/ModalPopup"));
-const ThankYouPopup = dynamic(() => import("../Modal/ThankYouPopup"));
 
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";

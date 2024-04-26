@@ -20,13 +20,13 @@ import _ from "lodash";
 import Schemas from "../schemas";
 import { Constants } from "src/schemas/data";
 import StickyBar from "@/components/StickyFooter/Sticky";
-// import { allCourseList } from "@/data/courseData";
+import { allCourseList } from "@/data/courseData";
 
 // import ImageModalPopup from "@/components/Modal/ImageModalPopup";
 // import ThankYouPopup from "@/components/Modal/ThankYouPopup";
 import GoogleMap from "@/components/GoogleMap/GoogleMap";
 import TestimonialsVideo from "@/components/TestimonialsVideo/testimonialsVideo";
-// import videoTestimonialData from "@/data/videoTestimonial";
+import videoTestimonialData from "@/data/videoTestimonial";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -67,23 +67,23 @@ const HomeCourses = dynamic(
   () => import("@/components/HomeCourses/HomeCourses")
 );
 
-const Home2 = ({ initialCourses, initialVideoTestimonialData }: any) => {
+const Home2 = () => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [courses, setCourses] = useState(initialCourses);
-  const [videoTestimonialData, setVideoTestimonialData] = useState(
-    initialVideoTestimonialData
-  );
+  // const [courses, setCourses] = useState(initialCourses);
+  // const [videoTestimonialData, setVideoTestimonialData] = useState(
+  //   initialVideoTestimonialData
+  // );
 
-  // let courses: any = [];
+  let courses: any = [];
 
-  // if (allCourseList?.length) {
-  //   courses = _.filter(
-  //     allCourseList,
-  //     (item: any) => item?.isAddon === false && item?.mode_id === 1
-  //   );
-  // }
+  if (allCourseList?.length) {
+    courses = _.filter(
+      allCourseList,
+      (item: any) => item?.isAddon === false && item?.mode_id === 1
+    );
+  }
 
   useEffect(() => {
     const timeoutModal = setTimeout(() => {
@@ -159,35 +159,35 @@ const Home2 = ({ initialCourses, initialVideoTestimonialData }: any) => {
   );
 };
 
-export async function getStaticProps() {
-  try {
-    const { allCourseList } = await import("@/data/courseData");
-    const { default: videoTestimonialData } = await import(
-      "@/data/videoTestimonial"
-    );
+// export async function getStaticProps() {
+//   try {
+//     const { allCourseList } = await import("@/data/courseData");
+//     const { default: videoTestimonialData } = await import(
+//       "@/data/videoTestimonial"
+//     );
 
-    let initialCourses: any = [];
+//     let initialCourses: any = [];
 
-    if (allCourseList?.length) {
-      initialCourses = _.filter(
-        allCourseList,
-        (item: any) => item?.isAddon === false && item?.mode_id === 1
-      );
-    }
-    return {
-      props: {
-        initialCourses,
-        initialVideoTestimonialData: videoTestimonialData,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        initialCourses: [],
-        initialVideoTestimonialData: [],
-      },
-    };
-  }
-}
+//     if (allCourseList?.length) {
+//       initialCourses = _.filter(
+//         allCourseList,
+//         (item: any) => item?.isAddon === false && item?.mode_id === 1
+//       );
+//     }
+//     return {
+//       props: {
+//         initialCourses,
+//         initialVideoTestimonialData: videoTestimonialData,
+//       },
+//     };
+//   } catch (error) {
+//     return {
+//       props: {
+//         initialCourses: [],
+//         initialVideoTestimonialData: [],
+//       },
+//     };
+//   }
+// }
 
 export default Home2;

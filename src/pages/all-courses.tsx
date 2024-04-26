@@ -48,8 +48,7 @@ const PartnerOne = dynamic(
 // import StickyBar from "@/components/StickyFooter/Sticky";
 const StickyBar = dynamic(() => import("@/components/StickyFooter/Sticky"));
 const AllCourseGallery = dynamic(
-  () => import("@/components/AllCourseGallery/AllCourseGallery"),
-  { loading: () => <p>Loading...</p> }
+  () => import("@/components/AllCourseGallery/AllCourseGallery")
 );
 const allCourse = () => {
   const [showComponent, setShowComponent] = useState(false);

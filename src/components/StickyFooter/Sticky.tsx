@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
-import dynamic from "next/dynamic";
-// import ModalPopup from "@/components/Modal/ModalPopup";
-// import ThankYouPopup from "../Modal/ThankYouPopup";
-const ModalPopup = dynamic(() => import("@/components/Modal/ModalPopup"));
-const ThankYouPopup = dynamic(() => import("../Modal/ThankYouPopup"));
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 
 const StickyBar = (props: any) => {
   const [isStickyDismissed, setIsStickyDismissed] = useState<boolean>(false);

@@ -2,13 +2,11 @@ import NavItem from "@/components/Header/NavItem";
 import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
 import { Image } from "react-bootstrap";
 import Link from "next/link";
 import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
 import ImageLogin from "next/image";
-// import ModalPopup from "@/components/Modal/ModalPopup";
-const ModalPopup = dynamic(() => import("@/components/Modal/ModalPopup"));
 
 const { icon, navItems, navItemsTwo } = headerData;
 

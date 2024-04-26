@@ -1,6 +1,6 @@
 import sponsors from "@/data/courseTools";
 import dynamic from "next/dynamic";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
