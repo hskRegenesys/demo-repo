@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Styles from "./popupForm.module.css";
-import RequestForm from "../requestForm/RequestForm";
+import dynamic from "next/dynamic";
+// import RequestForm from "../requestForm/RequestForm";
+const RequestForm = dynamic(() => import("../requestForm/RequestForm"));
 
 interface PopupFormProps {
   isVisible: boolean;

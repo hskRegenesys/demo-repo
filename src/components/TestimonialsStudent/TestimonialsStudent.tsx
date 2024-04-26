@@ -1,7 +1,9 @@
 import { testimonialsFive } from "@/data/testimonialsSection";
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
-import SingleTestimonialFive from "./SingleTestimonialFive";
+// import SingleTestimonialFive from "./SingleTestimonialFive";
+
+const SingleTestimonialFive = dynamic(() => import("./SingleTestimonialFive"));
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
 });

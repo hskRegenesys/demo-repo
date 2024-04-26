@@ -1,8 +1,10 @@
 import { mainFooter } from "@/data/mainFooter";
 import Link from "next/link";
 import React from "react";
+import dynamic from "next/dynamic";
 import { Col, Image, Row } from "react-bootstrap";
-import TextSplit from "../Reuseable/TextSplit";
+// import TextSplit from "../Reuseable/TextSplit";
+const TextSplit = dynamic(() => import("../Reuseable/TextSplit"));
 
 const { year, text, socials, addressDetails, links } = mainFooter;
 

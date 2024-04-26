@@ -16,6 +16,21 @@ import Style from "@/components/Reuseable/Style";
 // import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
 // import TrendingSection from "@/components/TrendingSection/TrendingSection";
 // import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
+import _ from "lodash";
+import Schemas from "../schemas";
+import { Constants } from "src/schemas/data";
+import StickyBar from "@/components/StickyFooter/Sticky";
+// import { allCourseList } from "@/data/courseData";
+
+// import ImageModalPopup from "@/components/Modal/ImageModalPopup";
+// import ThankYouPopup from "@/components/Modal/ThankYouPopup";
+import GoogleMap from "@/components/GoogleMap/GoogleMap";
+import TestimonialsVideo from "@/components/TestimonialsVideo/testimonialsVideo";
+// import videoTestimonialData from "@/data/videoTestimonial";
+import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const ExperienceSection = dynamic(
   () => import("@/components/ExperienceSection/ExperienceSection")
@@ -51,21 +66,6 @@ const HomeBanner = dynamic(() => import("@/components/HomeBanner/HomeBanner"));
 const HomeCourses = dynamic(
   () => import("@/components/HomeCourses/HomeCourses")
 );
-import _ from "lodash";
-import Schemas from "../schemas";
-import { Constants } from "src/schemas/data";
-import StickyBar from "@/components/StickyFooter/Sticky";
-// import { allCourseList } from "@/data/courseData";
-
-// import ImageModalPopup from "@/components/Modal/ImageModalPopup";
-// import ThankYouPopup from "@/components/Modal/ThankYouPopup";
-import GoogleMap from "@/components/GoogleMap/GoogleMap";
-import TestimonialsVideo from "@/components/TestimonialsVideo/testimonialsVideo";
-// import videoTestimonialData from "@/data/videoTestimonial";
-import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const Home2 = ({ initialCourses, initialVideoTestimonialData }: any) => {
   const [show, setShow] = useState(false);

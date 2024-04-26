@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import ModalPopup from "@/components/Modal/ModalPopup";
-import ThankYouPopup from "../Modal/ThankYouPopup";
+import dynamic from "next/dynamic";
+// import ModalPopup from "@/components/Modal/ModalPopup";
+// import ThankYouPopup from "../Modal/ThankYouPopup";
+const ModalPopup = dynamic(() => import("@/components/Modal/ModalPopup"));
+const ThankYouPopup = dynamic(() => import("../Modal/ThankYouPopup"));
 
 const CallToSection = ({
   className = "",
