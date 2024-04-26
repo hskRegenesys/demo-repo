@@ -406,16 +406,16 @@ export const courseData = {
       title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Project Management certificate",
+      certifiedTitle1: "Earn Your Project Management Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Project Management career.",
+        "Get certified by Digital Regenesys, a leading online educational platform. Upskill yourself and climb the path of success towards your Project Management career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1290,14 +1290,14 @@ export const courseData = {
       price: 64499,
       certifiedTitle1: "Earn Your Management Advancement Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Management Advancement career.",
+        "Get certified by Digital Regenesys, a leading online educational platform. Upskill yourself and climb the path of success towards your Management Advancement career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.        ",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1574,7 +1574,7 @@ export const courseData = {
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.        ",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -1650,7 +1650,7 @@ export const courseData = {
       certificateSubTitle:
         "Earn a Data and Business Analytics Certificate from Digital Regenesys & Navigate the  Business Analytics Landscape. No coding knowledge is required.        ",
       certificateSubSubTitle:
-        "With our Data and Business Analytics Certificate, you will gain a solid foundation in essential data analysis and interpretation skills for strategic decision-making. This No Code” course covers data visualisation, predictive analytics, and business intelligence tools. Participants will learn to effectively gather,  analyse, and present data to drive business growth and innovation.        ",
+        "With our Data and Business Analytics Certificate, you will gain a solid foundation in essential data analysis and interpretation skills for strategic decision-making. This No Code course covers data visualisation, predictive analytics, and business intelligence tools. Participants will learn to effectively gather,  analyse, and present data to drive business growth and innovation.        ",
       certificateListTitle:
         "With the Data and Business Analytics Certificate, you will get:",
 
@@ -1894,16 +1894,16 @@ export const courseData = {
       title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Data and Business Analytics certificate",
+      certifiedTitle1: "Earn Your Data and Business Analytics Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Data Analyst or Business Analyst career.",
+        "Get certified by Digital Regenesys, a leading online educational platform. Upskill yourself and climb the path of success towards your Data Analyst or Business Analyst career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.        ",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.        ",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -2763,14 +2763,14 @@ If you are passionate about starting your own full-stack web development busines
       certifiedTitle1:
         "Earn Your Full Stack Web & Software Development Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your full-stack web development career.",
+        "Get certified by Digital Regenesys, a leading educational platform. Upskill yourself and climb the path of success towards your full-stack web development career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements to your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the most prominent online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more. ",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more. ",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -3132,14 +3132,14 @@ If you are passionate about starting your own full-stack web development busines
       price: 64499,
       certifiedTitle1: "Earn your Data Science Certificate.",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Data Science career.",
+        "Get certified by Digital Regenesys, a leading online educational platform.  Upskill yourself and climb the path of success towards your Data Science career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.        ",
       termsConditions: "*Terms & Conditions",
@@ -5897,14 +5897,14 @@ If you are passionate about starting your own full-stack web development busines
       price: 64499,
       certifiedTitle1: "Earn your Artificial Intelligence Certificate.",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your AI career. ",
+        "Get certified by Digital Regenesys,  a leading online educational platform. Upskill yourself and climb the path of success towards your AI career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.        ",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.        ",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -7108,14 +7108,14 @@ If you are passionate about starting your own full-stack web development busines
       price: 64499,
       certifiedTitle1: "Earn your Digital Marketing Certificate.      ",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Elevate your career and climb the path of success towards your Digital Marketing career.",
+        "Get certified by Digital Regenesys, a leading online educational platform. Elevate your career and climb the path of success towards your Digital Marketing career.",
       certifiedTitle2: "Share Your Achievement      ",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -8895,16 +8895,16 @@ If you are passionate about starting your own full-stack web development busines
       title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Design Thinking certificate",
+      certifiedTitle1: "Earn Your Design Thinking Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Design Thinking career.",
+        "Get certified by Digital Regenesys, a leading online educational platform. Upskill yourself and climb the path of success towards your Design Thinking career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education company from Silicon Valley, USA, and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and much more.",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
@@ -9822,16 +9822,16 @@ If you are passionate about starting your own full-stack web development busines
       title: "Fees Structure & Certification",
       subTitle: "Get Certified",
       price: 64499,
-      certifiedTitle1: "Earn Your Cybersecurity certificate",
+      certifiedTitle1: "Earn Your Cybersecurity Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Cybersecurity career.",
+        "Get certified by Digital Regenesys,  a leading online educational platform. Upskill yourself and climb the path of success towards your Cybersecurity career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
         "Share your certificate on LinkedIn, Twitter, and Facebook, and boast your achievements in front of your friends and colleagues.",
       certifiedTitle3: "Benefits",
       certifiedText3:
-        "Embrace a world of possibilities with the largest online higher education platform from Silicon Valley, USA. Unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities and much more.",
+        "Embrace a world of possibilities with the most prominent online higher education platform and unlock a comprehensive range of benefits, including 360-degree career support, mentorship from industry experts, networking opportunities, and more.",
       admissionText:
         "Admissions are closed once the requisite number of participants enrol for the upcoming cohort. Apply early to secure your seat.",
       termsConditions: "*Terms & Conditions",
