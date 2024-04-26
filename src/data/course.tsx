@@ -1567,7 +1567,7 @@ export const courseData = {
       price: 64499,
       certifiedTitle1: "Earn Your Product Management Certificate",
       certifiedText1:
-        "Get certified by Digital Regenesys, Silicon Valley's leading ed-tech platform. Upskill yourself and climb the path of success towards your Product Management career.",
+        "Get certified by Digital Regenesys, a leading online educational platform. Upskill yourself and climb the path of success towards your Product Management career.",
       certifiedTitle2: "Share Your Achievement",
 
       certifiedText2:
