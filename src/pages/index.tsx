@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 // import HomeBanner from "@/components/HomeBanner/HomeBanner";
 // import HomeCourses from "@/components/HomeCourses/HomeCourses";
 import HeaderOne from "@/components/Header/HeaderOne";
-// import MobileMenu from "@/components/Header/MobileMenu";
+import MobileMenu from "@/components/Header/MobileMenu";
 // import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 // import HomeSkillDescription from "@/components/HomeSkillDescription/HomeSkillDescription";
 // import Layout from "@/components/Layout/Layout";
@@ -61,7 +61,7 @@ const HomeSkillDescription = dynamic(
 const CallToSection = dynamic(
   () => import("@/components/HomeSkillDescription/CallToSection")
 );
-const MobileMenu = dynamic(() => import("@/components/Header/MobileMenu"));
+// const MobileMenu = dynamic(() => import("@/components/Header/MobileMenu"));
 const HomeBanner = dynamic(() => import("@/components/HomeBanner/HomeBanner"));
 const HomeCourses = dynamic(
   () => import("@/components/HomeCourses/HomeCourses")

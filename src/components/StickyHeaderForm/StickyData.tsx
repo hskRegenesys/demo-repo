@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import ModalPopup from "@/components/Modal/ModalPopup";
-import ThankYouPopup from "../Modal/ThankYouPopup";
+// import ModalPopup from "@/components/Modal/ModalPopup";
+// import ThankYouPopup from "../Modal/ThankYouPopup";
 import AllPageStickyData from "@/data/stickyData";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+const ModalPopup = dynamic(() => import("@/components/Modal/ModalPopup"));
+const ThankYouPopup = dynamic(() => import("../Modal/ThankYouPopup"));
 
 const StickyData = (props: any) => {
   const handleShow = () => setShow(true);
