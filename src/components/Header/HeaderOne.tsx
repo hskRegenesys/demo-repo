@@ -3,7 +3,6 @@ import headerData from "@/data/header";
 import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 // import { Image } from "react-bootstrap";
 import Image from "next/image";
@@ -15,15 +14,12 @@ import { urlInfo } from "../config/helper";
 import { url } from "inspector";
 import StickyForm from "../StickyHeaderForm/StickyForm";
 import Modal from "react-bootstrap/Modal";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 import Loader from "../Loader/Loader";
+import StickyData from "../StickyHeaderForm/StickyData";
 import { Input, Space } from "antd";
 import { allCourseList } from "@/data/courseData";
-// import ThankYouPopup from "../Modal/ThankYouPopup";
-// import StickyData from "../StickyHeaderForm/StickyData";
-// import ModalPopup from "@/components/Modal/ModalPopup";
-const ModalPopup = dynamic(() => import("@/components/Modal/ModalPopup"));
-const StickyData = dynamic(() => import("../StickyHeaderForm/StickyData"));
-const ThankYouPopup = dynamic(() => import("../Modal/ThankYouPopup"));
 
 const { Search } = Input;
 const {

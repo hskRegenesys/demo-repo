@@ -1,12 +1,8 @@
 import { partnerOne } from "@/data/partnerSection";
 import React, { forwardRef, Ref, HTMLAttributes } from "react";
 import { Col, Row } from "react-bootstrap";
-// import ExperienceSectionMobile from "./ExperienceSectionMobile";
+import ExperienceSectionMobile from "./ExperienceSectionMobile";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-const ExperienceSectionMobile = dynamic(
-  () => import("./ExperienceSectionMobile")
-);
 
 const ExperienceSection = () => {
   return (

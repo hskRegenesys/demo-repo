@@ -2,17 +2,13 @@ import featuredSection from "@/data/featuredSection";
 import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
-// import ModalPopup from "@/components/Modal/ModalPopup";
-// import FunFactSix from "@/components/FunFacts/FunFactSix";
-// import ThankYouPopup from "../Modal/ThankYouPopup";
-// import CountDownSeatsAvailable from "../../components/CountDownSeatsAvailable/CountDownSeatsAvailable";
+import ModalPopup from "@/components/Modal/ModalPopup";
+import ThankYouPopup from "../Modal/ThankYouPopup";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-const FunFactSix = dynamic(() => import("@/components/FunFacts/FunFactSix"));
-const ModalPopup = dynamic(() => import("@/components/Modal/ModalPopup"));
-const ThankYouPopup = dynamic(() => import("../Modal/ThankYouPopup"));
+import CountDownSeatsAvailable from "../../components/CountDownSeatsAvailable/CountDownSeatsAvailable";
 
 const { image, title, subtitle, subsubtitle, features } = featuredSection;
+import FunFactSix from "@/components/FunFacts/FunFactSix";
 
 const HomeBanner = ({ className = "" }) => {
   const [show, setShow] = useState(false);
@@ -47,16 +43,6 @@ const HomeBanner = ({ className = "" }) => {
     };
   }, [text, speed, currentIndex]);
   // -----------------------------------------
-
-  useEffect(() => {
-    const startTime = performance.now();
-
-    // Your component logic here
-
-    const endTime = performance.now();
-    const duration = endTime - startTime;
-    console.log(`MyComponent took ${duration} ms to load`);
-  }, []);
 
   return (
     <>

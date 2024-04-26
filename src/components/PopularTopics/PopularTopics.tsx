@@ -1,8 +1,7 @@
 import teamSection from "@/data/teamSection";
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
-// import SingleTeam from "./SingleTeam";
-const SingleTeam = dynamic(() => import("./SingleTeam"));
+import SingleTeam from "./SingleTeam";
 
 const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
   ssr: false,
