@@ -39,7 +39,7 @@ const OurLocationData = {
     countryFlagImg: "/assets/images/new-component-assets/ContaryImg/ta.svg",
     countryDescription: "Tanzania Corporate Office",
     countryAddress:
-      " 102, First Floor, Regus, Acacia Estates Offices, Plot No. 84, Kinondoni Rd, Dar es Salaam 14110",
+      "G11 Ground Floor, Kwik Spaces, 1040 Haile Selassie Road, Masaki Dar es Salaam, 16572",
   },
   SouthAfrica: {
     locationPinImage:
@@ -64,8 +64,7 @@ const OurLocationData = {
     countryName: "Uganda",
     countryFlagImg: "/assets/images/new-component-assets/ContaryImg/ua.svg",
     countryDescription: "Uganda Corporate Office",
-    countryAddress:
-      " Regus, 4th floor The Acacia Mall, 14-18 Cooper Road, Off Acacia Ave, Kampala, Uganda",
+    countryAddress: "Lotis Towers, 6th floor, 16 Mackinnon Rd, Kampala, Uganda",
   },
   Croatia: {
     locationPinImage:
