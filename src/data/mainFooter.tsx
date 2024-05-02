@@ -82,12 +82,12 @@ export const mainFooter = {
     {
       addressTitle: "Tanzania Corporate Office",
       fullAddress:
-        "102, First Floor, Regus, \n Acacia Estates Offices, \n Plot No. 84  Kinondoni Rd,\n Dar es Salaam 14110",
+        "G11 Ground Floor, \n Kwik Spaces, \n 1040 Haile Selassie Road, \n Masaki Dar es Salaam, 16572",
     },
     {
       addressTitle: "Uganda Corporate Office",
       fullAddress:
-        "Regus, 4th floor \n The Acacia Mall  14-18 \n Cooper Road,  Off Acacia Ave,\n Kampala, Uganda",
+        "Lotis Towers, 6th floor, \n 16 Mackinnon Rd, \n Kampala, Uganda",
     },
   ],
   socials: [
