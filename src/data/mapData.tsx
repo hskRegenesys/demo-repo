@@ -47,14 +47,13 @@ const GoogleMapData = {
       campusImage: "/assets/images/background/campusImageCroatia.webp",
       corporateOfficeName: "Tanzania Corporate Office",
       address:
-        " 102, First Floor, Regus, Acacia Estates Offices, Plot No. 84, Kinondoni Rd, Dar es Salaam 14110",
+        "G11 Ground Floor, Kwik Spaces, 1040 Haile Selassie Road, Masaki Dar es Salaam, 16572",
     },
     UGMapDetails: {
       countryName: "Uganda",
       campusImage: "/assets/images/background/campusImageCroatia.webp",
       corporateOfficeName: "Uganda Corporate Office",
-      address:
-        " Regus, 4th floor The Acacia Mall, 14-18 Cooper Road, Off Acacia Ave, Kampala, Uganda",
+      address: "Lotis Towers, 6th floor, 16 Mackinnon Rd, Kampala, Uganda",
     },
   },
 };
