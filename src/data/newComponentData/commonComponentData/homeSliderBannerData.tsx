@@ -15,7 +15,6 @@ const homeSliderBannerData = {
         "/assets/images/new-component-assets/Home-page/Home-Banner-desktop-slider-one.webp",
       title: "Slide 3",
     },
-    // Add more slides as needed
   ],
   sliderDataMobile: [
     {
@@ -33,7 +32,6 @@ const homeSliderBannerData = {
         "/assets/images/new-component-assets/Home-page/Home-Banner-mobile-slider-one.webp",
       title: "Slide 3",
     },
-    // Add more slides as needed
   ],
 };
 export default homeSliderBannerData;
