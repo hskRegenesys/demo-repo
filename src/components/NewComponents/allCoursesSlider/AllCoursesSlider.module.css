@@ -187,7 +187,7 @@
   border: 0.837px solid #008554;
   background: #008554;
   transition: background-color 0.8s;
-  box-shadow: 0px 0.803px 1.607px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0px 0.803px 1.607px 0px #008554;
 }
 .card .enrollNowButton:hover {
   color: var(--primary-primary-charcoal, #131718);
