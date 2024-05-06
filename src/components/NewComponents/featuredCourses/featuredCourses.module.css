@@ -235,6 +235,8 @@
   }
   .featuredCoursesContainer {
     padding: 40px 16px 0px 16px;
+  }
+  .featuredCourses {
     background: none !important;
   }
   .rocketImg {

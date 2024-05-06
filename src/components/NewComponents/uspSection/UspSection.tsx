@@ -6,6 +6,7 @@ const UspSection = () => {
   const { uspLocationCard, uspEnrollmentCard, uspUpskillCard } = UspSectionData;
 
   const [count, setCount] = useState("0");
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     let start = 0;
@@ -27,6 +28,21 @@ const UspSection = () => {
     return () => clearInterval(timer);
   }, [uspEnrollmentCard.uspEnrollmentCount]);
 
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 560);
+    };
+
+    // Initial check
+    checkIsMobile();
+
+    // Listen for resize events
+    window.addEventListener("resize", checkIsMobile);
+
+    // Clean up the listener on component unmount
+    return () => window.removeEventListener("resize", checkIsMobile);
+  }, []);
+
   return (
     <div className={styles.uspSectionContainer}>
       <div className={styles.uspCard}>
@@ -39,7 +55,9 @@ const UspSection = () => {
           <p className={styles.uspEnrollmentCount}>
             {count}
             <span className={styles.CardText}>
-              {uspEnrollmentCard.uspEnrollmentText}
+              {isMobile
+                ? ` ${uspEnrollmentCard.uspEnrollmentTextMobile}`
+                : `${uspEnrollmentCard.uspEnrollmentText}`}
             </span>
           </p>
         </div>
