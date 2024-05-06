@@ -5,6 +5,8 @@ import "react-phone-number-input/style.css";
 import { useForm } from "react-hook-form";
 import _ from "lodash";
 import Data from "@/data/AllformsData";
+import mixpanel from "mixpanel-browser";
+import validator from "validator";
 
 import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
@@ -24,6 +26,9 @@ function ImageModalPopup(props: any) {
   const [show, setShow] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState<any>("");
   const [btnDisable, sebtnDisable] = useState(false);
+  const [formInteraction, setFormInteraction] = useState(false);
+  const [phoneNumberError, setPhoneNumberError] = useState<string>("");
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const getCountryCode = async () => {
@@ -64,6 +69,9 @@ function ImageModalPopup(props: any) {
   } = hookForm;
   const programmeOfInterest = watch("Programme_Of_Interest");
   const onSubmit = async (data: any) => {
+    if (phoneNumberError) {
+      return;
+    }
     sebtnDisable(true);
     const current = new Date();
     data.page_url = window.location.href;
@@ -86,11 +94,15 @@ function ImageModalPopup(props: any) {
         props?.brochureName?.name
       );
       props.setShows(false);
+      if (response?.status === 200) {
+        mixpanel.track("submit-brochure-form", { submit_value: true });
+      }
       downloadFromBlob(response?.data, props?.brochureName?.name) == false;
     }
     if (props?.title !== "Download Brochure") {
       props.setShows(false);
       !!props.thankYouShow && props.thankYouShow(true);
+      mixpanel.track("submit-counselling-form", { submit_value: true });
     }
   };
 
@@ -146,6 +158,25 @@ function ImageModalPopup(props: any) {
     minMaxValue = 12;
     regexValidation = /^(\+?\d{1,3}-?)\d{9}$/;
   }
+
+  useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
+
   return (
     <div className="image-modal-style">
       <Modal.Header
@@ -168,6 +199,7 @@ function ImageModalPopup(props: any) {
           <form
             className="form-box text-start popup-form"
             onSubmit={handleSubmit(onSubmit)}
+            onBlur={handleFormBlur}
           >
             <div className="row">
               <div className="col-lg-8">
@@ -203,8 +235,14 @@ function ImageModalPopup(props: any) {
                               message: "Invalid User Name",
                             },
                           })}
-                          onKeyUp={() => {
+                          onKeyUp={(e) => {
                             trigger("Name");
+                            mixpanel.track("Name Changed", {
+                              InputName: "name",
+                              Filled:
+                                (e.target as HTMLInputElement)?.value !== "",
+                              newValue: (e.target as HTMLInputElement)?.value,
+                            });
                           }}
                         />
                         {errors?.Name && (
@@ -227,8 +265,14 @@ function ImageModalPopup(props: any) {
                               message: "Invalid email address",
                             },
                           })}
-                          onKeyUp={() => {
+                          onKeyUp={(e) => {
                             trigger("Email");
+                            mixpanel.track("Email Changed", {
+                              InputName: "Email",
+                              Filled:
+                                (e.target as HTMLInputElement)?.value !== "",
+                              newValue: (e.target as HTMLInputElement)?.value,
+                            });
                           }}
                         />
                         {errors?.Email && (
@@ -266,14 +310,30 @@ function ImageModalPopup(props: any) {
                           // defaultCountry="ZA"
                           placeholder="Select Country Code*"
                           onChange={(e) => {
-                            setValue("Phone", e);
-                            setPhoneNumber(e);
+                            const phoneNumber = e ? e.toString() : "";
+                            const isValid =
+                              validator.isMobilePhone(phoneNumber);
+                            if (isValid) {
+                              setValue("Phone", phoneNumber);
+                              setPhoneNumber(phoneNumber);
+                              mixpanel.track("Phone Changed", {
+                                InputName: "Phone",
+                                Filled: phoneNumber !== "",
+                                newValue: phoneNumber,
+                              });
+                              setPhoneNumberError("");
+                            } else {
+                              setPhoneNumberError(
+                                "Valid phone number Required"
+                              );
+                            }
                           }}
-                          className={`${errors?.Phone && "invalid"}`}
+                          className={`${phoneNumberError && "invalid"}`}
                         />
-                        {errors?.Phone && (
+
+                        {phoneNumberError && (
                           <small className="text-danger">
-                            {errors?.Phone?.message}
+                            {phoneNumberError}
                           </small>
                         )}
                       </div>

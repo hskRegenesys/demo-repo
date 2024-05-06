@@ -1,7 +1,8 @@
 import { Checkbox } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
 import PhoneInput from "react-phone-number-input";
+import mixpanel from "mixpanel-browser";
 
 const NewsLetter = () => {
   const [formState, setFormState] = useState({
@@ -9,9 +10,30 @@ const NewsLetter = () => {
     phone: "",
     email: "",
   });
+  const [formInteraction, setFormInteraction] = useState(false);
+
   const onChange = (name: string, value: string) => {
     setFormState((prevState) => ({ ...prevState, [name]: value }));
   };
+
+  useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
+
   return (
     <div>
       <div
@@ -27,7 +49,7 @@ const NewsLetter = () => {
             Get notified about the latest career insights, study tips & offers
             at DIGITAL REGENYSYS
           </p>
-          <form>
+          <form onBlur={handleFormBlur}>
             <div className="d-flex align-items-center justify-content-center">
               <div className="d-sm-flex w-100 flex-sm-wrap align-items-center justify-content-sm-evenly">
                 <div className="form-group mt-3">

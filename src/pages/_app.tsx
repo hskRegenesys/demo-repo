@@ -12,7 +12,7 @@ import "react-circular-progressbar/dist/styles.css";
 // import "react-modal-video/css/modal-video.min.css";
 import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
-
+import { leadService } from "src/services";
 import { apiEndPoints } from "@/data/axisos";
 import axios from "axios";
 
@@ -24,6 +24,8 @@ import Schemas from "src/schemas";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const salesForceUrl = `https://api.vinecrms.com/api/`;
+  const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
+
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
   return (
     <ContextProvider>
@@ -32,7 +34,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
       <Schemas type={Constants.localbusiness} />
-
       {/* Pixel code script start */}
       <Script
         dangerouslySetInnerHTML={{
@@ -234,34 +235,94 @@ const MyApp = ({ Component, pageProps }: any) => {
       window.Tawk_API.onPrechatSubmit = function(data){
         console.log("data",data);
         const salesForceUrl = '${salesForceUrl}';
-        console.log("salesForceUrl", salesForceUrl);
+        const leadForceUrl = '${leadsGenerateUrl}';
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
           name: "",
           email: "",
-          mobile: "",
           city: "",
-          country: "South Africa",
+          country: "",
+          mobile:"",
           interest: "",
           utm_source: "DR website chat ",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
           Lead_Source:"DR website chat"
-          
         };   
+
+        const getCurrentDateNew = () => {
+          const current = new Date();
+          const date = current.getDate() + '/' + (current.getMonth() + 1) + '/' + current.getFullYear();
+          return date;
+           };
+
+        const leadsData = {
+          Email: "",
+          Interested_Topic:"",
+          Name: "",
+          Phone:"", 
+          Programme_Of_Interest: "",
+          date:getCurrentDateNew(), 
+          page_url:window?.location?.href,
+          utm_parameters:window?.location?.href ,
+        };   
+
+        function getCountryCode(countryName) {
+          switch (countryName) {
+              case "Nigeria":
+                  return "+234";
+              case "Kenya":
+                  return "+254";
+              case "Tanzania":
+                  return "+255";
+              case "Uganda":
+                  return "+256";
+              case "Others":
+              return "+27";      
+              default:
+                  return "+27";
+          }
+        }
+
         data.forEach(item => {
-          console.log("item",item)
-          const labelMapping = {
-              "Name": "name",
-              "Email": "email",
-              "mobile": "Phone",
-              "Programme of Interest": "interest"
-          };
-          const propertyName = labelMapping[item.label] || item.label; 
-          salesForceData[propertyName] = item.answer;
-      });
+          switch (item.label) {
+            case "Name":
+              salesForceData.name = item.answer;
+              leadsData.Name = item.answer;
+                break;
+            case "Email":
+              salesForceData.email = item.answer;
+              leadsData.Email = item.answer;
+                break;
+            case "Country":
+              if(item?.answer === "Others"){
+                salesForceData.country = "South Africa";
+              } else {
+                salesForceData.country = item.answer;
+              }
+            break;
+            case "Mobile Number":     
+            if (!item?.answer?.startsWith("+")) {
+              const countryCode = getCountryCode(salesForceData?.country);
+              salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+              leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
+             } else {
+              salesForceData.mobile = item.answer;
+              leadsData.Phone = question.answer;
+              }
+            break;
+            case "Course you are looking for":
+              salesForceData.interest = item.answer;
+              leadsData.Interested_Topic = item.answer;
+              leadsData.Programme_Of_Interest = item.answer;
+            break;
+            default:
+            console.log("item", item);
+        }
+        });
+
         try {
           fetch(salesForceUrl, {
             method: 'POST',
@@ -278,6 +339,7 @@ const MyApp = ({ Component, pageProps }: any) => {
             })
             .then(responseData => {
               console.log('Data submitted successfully:', responseData);
+              generateNewLead()
             })
             .catch(error => {
               console.error('Error submitting data:', error);
@@ -285,6 +347,162 @@ const MyApp = ({ Component, pageProps }: any) => {
         } catch (error) {
           console.error('Error in fetch operation:', error);
         }
+
+        const generateNewLead=()=>{
+          fetch(leadForceUrl, {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json', 
+            },
+            body: JSON.stringify(leadsData),
+          })
+         .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+           return response.json(); 
+         })
+         .then(responseData => {
+            console.log('Lead Generated successfully:', responseData);
+         })
+         .catch(error => {
+            console.error('Error submitting data:', error);
+         });
+         }
+      };
+
+      window.Tawk_API.onOfflineSubmit = function(data){
+        console.log("data onOfflineSubmit",data);
+        const salesForceUrl = '${salesForceUrl}';
+        const leadForceUrl = '${leadsGenerateUrl}';
+        const salesForceNewData = {
+          domain: "crm",
+          type: "add_lead_to_crm",
+          name: "",
+          email: "",
+          city: "",
+          country: "",
+          mobile:"",
+          interest: "",
+          utm_source: "DR website chat ",
+          utm_medium: "DR Website",
+          utm_campaign: "DR Website",
+          Source_Campaign:"DR Website",
+          Lead_Source:"DR website chat"  
+        };   
+ 
+        const getCurrentDate = () => {
+          const current = new Date();
+          const date = current.getDate() + '/' + (current.getMonth() + 1) + '/' + current.getFullYear();
+          return date;
+           };
+
+        const leadsNewData = {
+          Email: "",
+          Interested_Topic:"",
+          Name: "",
+          Phone:"", 
+          Programme_Of_Interest: "",
+          date:getCurrentDate(), 
+          page_url:window?.location?.href,
+          utm_parameters:window?.location?.href ,
+        };   
+        
+        function getCountryCode(countryName) {
+          switch (countryName) {
+              case "Nigeria":
+                  return "+234";
+              case "Kenya":
+                  return "+254";
+              case "Tanzania":
+                  return "+255";
+              case "Uganda":
+                  return "+256";
+              case "Others":
+              return "+27";    
+              default:
+                  return "+27";
+          }
+         }
+
+        data.questions.forEach(question => {
+          switch (question.label) {
+              case "Name":
+                  salesForceNewData.name = question.answer;
+                  leadsNewData.Name = question.answer;
+                  break;
+              case "Email":
+                  salesForceNewData.email = question.answer;
+                  leadsNewData.Email = question.answer;
+                  break;
+              case "Country":
+                if(question?.answer === "Others"){
+                  salesForceNewData.country = "South Africa";
+                } else {
+                  salesForceNewData.country = question.answer;
+                }
+              break;
+              case "Mobile Number":     
+                if (!question?.answer?.startsWith("+")) {
+                 const countryCode = getCountryCode(salesForceNewData?.country);
+                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+                 leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
+             } else {
+                 salesForceNewData.mobile = question.answer;
+                 leadsNewData.Phone = question.answer;
+             }
+              break;    
+              case "Course you are looking for":
+                salesForceNewData.interest = question.answer;
+                leadsNewData.Interested_Topic = question.answer;
+                leadsNewData.Programme_Of_Interest = question.answer;
+                break; 
+              default:
+              console.log("question", question);
+          }
+        });
+      fetch(salesForceUrl, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify(salesForceNewData),
+     })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); 
+    })
+    .then(responseData => {
+        console.log('Data submitted successfully:', responseData);
+        generateLead()
+    })
+    .catch(error => {
+        console.error('Error submitting data:', error);
+    });
+
+     const generateLead=()=>{
+      fetch(leadForceUrl, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify(leadsNewData),
+      })
+     .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+       return response.json(); 
+     })
+     .then(responseData => {
+        console.log('Lead Generated successfully:', responseData);
+     })
+     .catch(error => {
+        console.error('Error submitting data:', error);
+     });
+     }
       };
     `,
         }}

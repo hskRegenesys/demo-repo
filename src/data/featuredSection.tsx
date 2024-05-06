@@ -1,7 +1,7 @@
 const featuredSection = {
   image: "/assets/images/resource/DR-website-banner.webp",
-  title: "Join Digital Regenesys",
-  subtitle: "Silicon Valley's Leading Ed-Tech",
+  title: "Upskill your career",
+  subtitle: "Join Digital Regenesys",
   subsubtitle: "",
   features: [
     {
