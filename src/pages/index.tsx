@@ -24,6 +24,8 @@ import TalentedComponent from "@/components/NewComponents/talentedComponent/Tale
 import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
 import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
+import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
+import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 
 const HomeNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -92,6 +94,8 @@ const HomeNew = () => {
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <Faq data={MultiplePagesBrandData.faqSections} />
+      <ReadMoreDropDown data={AllCoursesDynamicData.ReadMore} />
+
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );
