@@ -4,6 +4,7 @@ import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import validator from "validator";
 import _ from "lodash";
 import { countryCodeService, courseService, leadService } from "src/services";
 import { useRouter } from "next/router";
@@ -11,6 +12,7 @@ import { downloadFromBlob } from "@/components/config/helper";
 import { allCourseList } from "@/data/courseData";
 import Styles from "./requestForm.module.css";
 import { brochureDetails } from "@/data/course";
+import mixpanel from "mixpanel-browser";
 
 function RequestForm(props: any) {
   const router = useRouter();
@@ -22,6 +24,8 @@ function RequestForm(props: any) {
   const [btnDisable, setBtnDisable] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState<any>("");
+  const [formInteraction, setFormInteraction] = useState(false);
+  const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
@@ -65,6 +69,10 @@ function RequestForm(props: any) {
   const onSubmit = async (data: any, e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (phoneNumberError) {
+      return;
+    }
+
     setBtnDisable(true);
     const current = new Date();
     data.page_url = window.location.href;
@@ -98,6 +106,9 @@ function RequestForm(props: any) {
       props.onFormSubmit();
       reset();
       downloadFromBlob(response?.data, brochureName?.name) == false;
+      if (response?.status === 200) {
+        mixpanel.track("submit-brochure-form", { submit_value: true });
+      }
     }
     if (props?.title !== "Download Brochure") {
       props.isWhatsapp
@@ -110,13 +121,13 @@ function RequestForm(props: any) {
         autoClose: 3000,
         className: Styles.tost,
       });
+      mixpanel.track("submit-counselling-form", { submit_value: true });
       props.onFormSubmit();
       reset();
     }
   };
 
   let courses: any = [];
-
   // if (allCourseList.length) {
   //   courses = _.filter(
   //     allCourseList,
@@ -153,11 +164,34 @@ function RequestForm(props: any) {
       //   : setValue("Programme_Of_Interest", filterData?.name);
     }
   }, [id]);
+
+  useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
+
   return (
     <div className={Styles.RequestFormStyle}>
       <ToastContainer />
 
-      <form className={Styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className={Styles.formContainer}
+        onSubmit={handleSubmit(onSubmit)}
+        onBlur={handleFormBlur}
+      >
         <div className={Styles.FormCard}>
           <strong className={Styles.Title}>
             {" "}
@@ -176,8 +210,13 @@ function RequestForm(props: any) {
                       message: "Invalid User Name",
                     },
                   })}
-                  onKeyUp={() => {
+                  onKeyUp={(e) => {
                     trigger("Name");
+                    mixpanel.track("Name Changed", {
+                      InputName: "name",
+                      Filled: (e.target as HTMLInputElement)?.value !== "",
+                      newValue: (e.target as HTMLInputElement)?.value,
+                    });
                   }}
                 />
                 {errors?.Name && (
@@ -201,8 +240,13 @@ function RequestForm(props: any) {
                       message: "Invalid email address",
                     },
                   })}
-                  onKeyUp={() => {
+                  onKeyUp={(e) => {
                     trigger("Email");
+                    mixpanel.track("Email Changed", {
+                      InputName: "Email",
+                      Filled: (e.target as HTMLInputElement)?.value !== "",
+                      newValue: (e.target as HTMLInputElement)?.value,
+                    });
                   }}
                 />
                 {errors?.Email && (
@@ -218,14 +262,6 @@ function RequestForm(props: any) {
                   className={Styles.inputForm}
                   type="hidden"
                   {...register("Phone", {
-                    maxLength: {
-                      value: 16,
-                      message: "Cannot Exceed 10 digits",
-                    },
-                    minLength: {
-                      value: 12,
-                      message: "Valid phone number Required",
-                    },
                     required: "Phone is Required",
                   })}
                 />
@@ -236,21 +272,31 @@ function RequestForm(props: any) {
                   placeholder="Select Country Code*"
                   value={watch("Phone")}
                   onChange={(e) => {
-                    setValue("Phone", e);
-                    setPhoneNumber(e);
+                    const phoneNumber = e ? e.toString() : "";
+                    const isValid = validator.isMobilePhone(phoneNumber);
+                    if (isValid) {
+                      setValue("Phone", phoneNumber);
+                      setPhoneNumber(phoneNumber);
+                      mixpanel.track("Phone Changed", {
+                        InputName: "Phone",
+                        Filled: phoneNumber !== "",
+                        newValue: phoneNumber,
+                      });
+                      setPhoneNumberError("");
+                    } else {
+                      setPhoneNumberError("Valid phone number Required");
+                    }
                   }}
                   onBlur={() => {
                     trigger("Phone");
                   }}
-                  className={`inputForm ${errors?.Phone && "invalid"} ${
+                  className={`inputForm ${phoneNumberError && "invalid"} ${
                     Styles.inputForm
                   }`}
                 />
 
-                {errors?.Phone && (
-                  <small className={Styles.smallText}>
-                    {errors?.Phone?.message}
-                  </small>
+                {phoneNumberError && (
+                  <small className={Styles.smallText}>{phoneNumberError}</small>
                 )}
               </div>
             </div>

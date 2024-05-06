@@ -141,7 +141,6 @@ class LeadService {
       result = err?.response;
       console.log("Error while getting student details ", err.message);
     }
-
     try {
       const response = await this.leadServer.post(apiEndPoints.leadApi, params);
       result = response?.data;

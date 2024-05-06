@@ -10,6 +10,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ModalPopup from "../Modal/ModalPopup";
 import { Modal } from "react-bootstrap";
+import mixpanel from "mixpanel-browser";
 
 const Layout = (props: any) => {
   const [show, setShow] = useState(false);
@@ -25,6 +26,7 @@ const Layout = (props: any) => {
     blogList,
     context,
     slug,
+    slugCourse,
   } = props;
 
   const [loading, setLoading] = useState(true);
@@ -61,9 +63,11 @@ const Layout = (props: any) => {
       : metaData?.metaInfo?.description?.["home"];
   const keywords =
     pageTitle === "blog"
-      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugUrlData]
+      ? metaData?.metaInfo?.keywords?.[
+          pageTitle[0]?.toUpperCase() + pageTitle.substring(1)
+        ]?.[slugCourse]
       : pageTitle === "category"
-      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugUrlData]
+      ? metaData?.metaInfo?.keywords?.[pageTitle]?.[slugCourse]
       : metaData?.metaInfo?.keywords?.[pageTitle]
       ? metaData?.metaInfo?.keywords?.[pageTitle]
       : metaData?.metaInfo?.keywords?.["home"];
@@ -71,9 +75,9 @@ const Layout = (props: any) => {
   const ogImg =
     pageTitle === "blog"
       ? blogList?.[0]?.yoast_head_json?.og_image[0]?.url
-      : pageTitle === "category"
-      ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_image[0]?.url
-      : metaData?.metaInfo?.ogImg?.[pageTitle]
+      : // : pageTitle === "category"
+      // ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_image?.[1]?.url
+      metaData?.metaInfo?.ogImg?.[pageTitle]
       ? metaData?.metaInfo?.ogImg?.[pageTitle]
       : metaData?.metaInfo?.ogImg?.["home"];
 
@@ -123,11 +127,77 @@ const Layout = (props: any) => {
     setCanonicalBaseUrl();
   }, [asPath]);
 
+  // Mixpanel Integration
+  const captureSessionEnd = () => {
+    mixpanel.track("Session End");
+  };
+  useEffect(() => {
+    mixpanel.init("54f723cb0066c4c06a2102ffdbefe23b", {
+      // debug: true,
+      track_pageview: true,
+      persistence: "localStorage",
+    });
+    mixpanel.track("Session Start");
+    mixpanel.track("page_view");
+
+    window.addEventListener("beforeunload", captureSessionEnd);
+    return () => {
+      window.removeEventListener("beforeunload", captureSessionEnd);
+    };
+  }, []);
+
+  // Scroll depth mix-panel
+  const trackScrollDepth = () => {
+    let maxScrollDepth = 0;
+    let isScrollTriggered = false;
+
+    const calculateScrollDepth = () => {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPosition = window.scrollY;
+
+      const currentScrollDepth = scrollPosition / totalHeight;
+
+      if (currentScrollDepth > maxScrollDepth) {
+        maxScrollDepth = currentScrollDepth;
+      }
+
+      isScrollTriggered = true;
+    };
+
+    window.addEventListener("scroll", calculateScrollDepth);
+
+    const trackWhenLeave = () => {
+      if (isScrollTriggered) {
+        const scrollPercentage = maxScrollDepth * 100;
+        mixpanel.track("Page-Scrolled", {
+          depth: `${scrollPercentage.toFixed(2)}%`,
+        });
+      }
+    };
+
+    window.addEventListener("beforeunload", trackWhenLeave);
+
+    return () => {
+      window.removeEventListener("scroll", calculateScrollDepth);
+      window.removeEventListener("beforeunload", trackWhenLeave);
+    };
+  };
+  useEffect(() => {
+    trackScrollDepth();
+  }, []);
+
   return (
     <>
       <Head>
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lxj4wy0m9f");
+              `,
+          }}
+        />
         <title>{title}</title>
-
         {canonicalBaseUrl && (
           <link rel="canonical" href={canonicalBaseUrl} id="dynamic-url" />
         )}

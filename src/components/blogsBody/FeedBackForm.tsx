@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import StarIcon from "@mui/icons-material/Star";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
+import mixpanel from "mixpanel-browser";
 
 const FeedBackForm = () => {
   const {
@@ -11,7 +12,30 @@ const FeedBackForm = () => {
     register,
     handleSubmit,
   }: any = useForm();
-  const onSubmit = (data: any) => {};
+  const [formInteraction, setFormInteraction] = useState(false);
+
+  const onSubmit = (data: any) => {
+    mixpanel.track("submit-feedback-form", { submit_value: true });
+  };
+
+  useEffect(() => {
+    const beforeUnload = () => {
+      if (formInteraction) {
+        mixpanel.track("partial_submitted");
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", beforeUnload);
+    };
+  }, [formInteraction]);
+
+  const handleFormBlur = () => {
+    setFormInteraction(true);
+    mixpanel.track("partial_submitted");
+  };
+
   return (
     <>
       <div
@@ -29,7 +53,7 @@ const FeedBackForm = () => {
             <StarIcon color="warning" />
             <StarIcon color="warning" />
           </p>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)} onBlur={handleFormBlur}>
             <div className="row">
               <div className="col-12">
                 <div className="form-group mt-3">
