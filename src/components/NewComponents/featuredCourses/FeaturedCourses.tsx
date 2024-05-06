@@ -96,7 +96,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
     .filter((course) => course); // filter out undefined values
 
   return (
-    <div style={style}>
+    <div style={style} className={Styles.featuredCourses}>
       <div className={Styles.featuredCoursesContainer}>
         <h2 className={Styles.smallHeading}>
           {AllCourcesCardData.FeaturedCoursesHeading}

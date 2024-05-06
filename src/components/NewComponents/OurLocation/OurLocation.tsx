@@ -195,7 +195,7 @@ const OurLocation: React.FC = () => {
       <div className={Styles.leftSection}>
         <div className={Styles.TopSectionDesktap}>
           <h2 className={Styles.heading}>{smallHeading}</h2>
-          <h2 className={Styles.subheading}>{bigHeading}</h2>
+          <h3 className={Styles.subheading}>{bigHeading}</h3>
         </div>
 
         <p>

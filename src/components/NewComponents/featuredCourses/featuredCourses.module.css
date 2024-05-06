@@ -171,6 +171,7 @@
   border-radius: 8px;
   transition: background-color 0.8s;
   border: 1px solid var(--primary-primary-charcoal, #131718);
+  background-color: transparent;
 }
 
 .card .enrollNowButton {
@@ -235,6 +236,8 @@
   }
   .featuredCoursesContainer {
     padding: 40px 16px 0px 16px;
+  }
+  .featuredCourses {
     background: none !important;
   }
   .rocketImg {
@@ -278,8 +281,8 @@
     height: 20px;
   }
 }
-@media screen and (min-width: 1441px) {
+/* @media screen and (min-width: 1441px) {
   .rocketImg {
     display: none;
   }
-}
+} */
