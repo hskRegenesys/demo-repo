@@ -267,7 +267,7 @@ const HeaderOne = ({
           <StickyData pageTitle={pageTitle} courseCode={courseCode} />
         )}
 
-        <div className="auto-container d-flex clearfix">
+        <div className="auto-container d-flex clearfix new-container-style">
           <div className="logo-box">
             <div className="logo">
               <Link href="/">
