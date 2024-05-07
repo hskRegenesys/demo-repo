@@ -1,5 +1,6 @@
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
+import dynamic from "next/dynamic";
 import Layout from "@/components/Layout/Layout";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
@@ -10,20 +11,45 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
-import DataSeparatorPages from "src/pages/DataSeparatorPages/DataSeparatorPages";
-import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
-import YoutubeVidioPopup from "@/components/NewComponents/YoutubeVidioPopup/YoutubeVidioPopup";
-import BreadcrumbsDR from "@/components/NewComponents/breadcrumbsDR/breadcrumbsDR";
-import BannerWithVideo from "@/components/NewComponents/BannerWithVideo/BannerWithVideo";
-import CourseBenefitsCard from "@/components/NewComponents/courseBenefitsCard/CourseBenefitsCard";
-import ExploreTheCourses from "@/components/NewComponents/exploreTheCouses/ExploreTheCourses";
-import CareersTransformed from "@/components/NewComponents/careersTransformed/CareersTransformed";
-import CertificationDR from "@/components/NewComponents/certificationDR/CertificationDR";
-import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
-import Faq from "@/components/NewComponents/faq/Faq";
-import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
-import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
+import DataSeparatorPages from "src/pages/DataSeparatorPages/DataSeparatorPages";
+
+const PopupForm = dynamic(
+  () => import("@/components/NewComponents/popupForm/PopupForm")
+);
+const YoutubeVidioPopup = dynamic(
+  () => import("@/components/NewComponents/YoutubeVidioPopup/YoutubeVidioPopup")
+);
+const BreadcrumbsDR = dynamic(
+  () => import("@/components/NewComponents/breadcrumbsDR/breadcrumbsDR")
+);
+const BannerWithVideo = dynamic(
+  () => import("@/components/NewComponents/BannerWithVideo/BannerWithVideo")
+);
+const CourseBenefitsCard = dynamic(
+  () =>
+    import("@/components/NewComponents/courseBenefitsCard/CourseBenefitsCard")
+);
+const ExploreTheCourses = dynamic(
+  () => import("@/components/NewComponents/exploreTheCouses/ExploreTheCourses")
+);
+const CareersTransformed = dynamic(
+  () =>
+    import("@/components/NewComponents/careersTransformed/CareersTransformed")
+);
+const CertificationDR = dynamic(
+  () => import("@/components/NewComponents/certificationDR/CertificationDR")
+);
+const BlogSection = dynamic(
+  () => import("@/components/NewComponents/blogSection/BlogSection")
+);
+const Faq = dynamic(() => import("@/components/NewComponents/faq/Faq"));
+const ReadMoreDropDown = dynamic(
+  () => import("@/components/NewComponents/readMore/ReadMoreDropDown")
+);
+const FooterDR = dynamic(
+  () => import("@/components/NewComponents/footerDR/FooterDR")
+);
 
 const Course = (props: any) => {
   const router = useRouter();
