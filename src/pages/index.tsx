@@ -55,9 +55,7 @@ const OurLocation = dynamic(
 const AllCoursesSlider = dynamic(
   () => import("@/components/NewComponents/allCoursesSlider/AllCoursesSlider")
 );
-// const PopupData = dynamic(
-//   () => import("@/components/NewComponents/popupForm/PopupData")
-// );
+
 const ToolCoveredCard = dynamic(
   () => import("@/components/NewComponents/ToolsCovered/ToolsCovered")
 );
