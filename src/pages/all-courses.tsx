@@ -1,23 +1,44 @@
 import React, { useEffect, useState } from "react";
-import WhyChooseDR from "@/components/NewComponents/whychooseDR/WhyChooseDR";
-import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
-import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import Faq from "@/components/NewComponents/faq/Faq";
-import StudentReview from "@/components/NewComponents/studentReview/StudentReview";
-import CertificationDR from "@/components/NewComponents/certificationDR/CertificationDR";
-import MobileMenu from "@/components/Header/MobileMenu";
-import HeaderOne from "@/components/Header/HeaderOne";
-import AllCoursesPageBanner from "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner";
 import _ from "lodash";
-import Layout from "@/components/Layout/Layout";
-import FeaturedCourses from "@/components/NewComponents/featuredCourses/FeaturedCourses";
-import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
-import AllCoursesSlider from "@/components/NewComponents/allCoursesSlider/AllCoursesSlider";
+import dynamic from "next/dynamic";
+import HeaderOne from "@/components/Header/HeaderOne";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
-import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
-import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
+import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
-import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
+
+const WhyChooseDR = dynamic(
+  () => import("@/components/NewComponents/whychooseDR/WhyChooseDR")
+);
+const PopupForm = dynamic(
+  () => import("@/components/NewComponents/popupForm/PopupForm")
+);
+const FooterDR = dynamic(
+  () => import("@/components/NewComponents/footerDR/FooterDR")
+);
+const Faq = dynamic(() => import("@/components/NewComponents/faq/Faq"));
+const StudentReview = dynamic(
+  () => import("@/components/NewComponents/studentReview/StudentReview")
+);
+const CertificationDR = dynamic(
+  () => import("@/components/NewComponents/certificationDR/CertificationDR")
+);
+const MobileMenu = dynamic(() => import("@/components/Header/MobileMenu"));
+const AllCoursesPageBanner = dynamic(
+  () =>
+    import(
+      "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner"
+    )
+);
+const Layout = dynamic(() => import("@/components/Layout/Layout"));
+const FeaturedCourses = dynamic(
+  () => import("@/components/NewComponents/featuredCourses/FeaturedCourses")
+);
+const AllCoursesSlider = dynamic(
+  () => import("@/components/NewComponents/allCoursesSlider/AllCoursesSlider")
+);
+const ReadMoreDropDown = dynamic(
+  () => import("@/components/NewComponents/readMore/ReadMoreDropDown")
+);
 
 const AllCoursesNew = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);

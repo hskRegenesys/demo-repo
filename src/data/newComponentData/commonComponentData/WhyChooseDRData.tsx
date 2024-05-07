@@ -9,15 +9,15 @@ const whyChooseDRData = {
     },
     {
       cardImg: "./assets/images/new-component-assets/Award.svg",
-      cardText: "Live Classes",
+      cardText: "International Certificate",
     },
     {
       cardImg: "./assets/images/new-component-assets/Counselling.svg",
-      cardText: "Live Classes",
+      cardText: "Industry Expert Faculty",
     },
     {
       cardImg: "./assets/images/new-component-assets/Experts.svg",
-      cardText: "Live Classes",
+      cardText: "Career Counseling",
     },
   ],
 };
