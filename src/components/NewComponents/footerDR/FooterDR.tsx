@@ -71,6 +71,9 @@ const FooterContent2: React.FC = () => (
         {/* <a href="https://www.digitalregenesys.com//all-courses/operations-and-supply-chain-management">
           <li>Operations and supply chain management</li>
         </a> */}
+        <a href="https://www.digitalregenesys.com/all-courses/product-management">
+          <li> Product Management</li>
+        </a>
       </ul>
     </div>
   </div>

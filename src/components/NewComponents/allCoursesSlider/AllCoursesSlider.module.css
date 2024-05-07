@@ -171,6 +171,7 @@
   border-radius: 8px;
   transition: background-color 0.8s;
   border: 1px solid var(--primary-primary-charcoal, #131718);
+  background-color: transparent;
 }
 
 .card .enrollNowButton {
