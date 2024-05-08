@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import homeSliderBannerData from "../../../data/newComponentData/commonComponentData/homeSliderBannerData";
 import RequestForm from "../requestForm/RequestForm";
+import Image from "next/image";
 
 // Install Swiper modules
 SwiperCore.use([Pagination, Autoplay]);
@@ -33,10 +34,13 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
         >
           {sliderDataDesktop.map((slide, index) => (
             <SwiperSlide key={index}>
-              <img
+              <Image
                 className={Styles.img}
                 src={slide.imageUrl}
                 alt={slide.title}
+                width={1440}
+                height={550}
+                sizes="(max-width: 400px) 100vw,(max-width: 768px) 75vw, (max-width: 1200px) 60vw,(max-width: 1500px) 10vw,(max-width: 2100px) 30vw, 33vw"
               />
             </SwiperSlide>
           ))}
@@ -54,10 +58,13 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
         >
           {sliderDataMobile.map((slide, index) => (
             <SwiperSlide key={index}>
-              <img
+              <Image
                 src={slide.imageUrl}
                 className={Styles.img}
                 alt={slide.title}
+                width={360}
+                height={506}
+                sizes="(max-width: 400px) 100vw,(max-width: 768px) 75vw)"
               />
             </SwiperSlide>
           ))}

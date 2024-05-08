@@ -79,8 +79,8 @@
   margin-bottom: 52px;
 }
 
-.card img {
-  position: absolute;
+.cardImg {
+  position: absolute !important;
   top: 12%;
   left: 32%;
   width: 110px;

@@ -5,7 +5,7 @@ import LearnersBenefitData from "../../../data/newComponentData/commonComponentD
 import Styles from "./learnersBenefit.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
+import Image from "next/image";
 const LearnersBenefit = () => {
   const {
     LearnersBenefitHeding,
@@ -24,16 +24,22 @@ const LearnersBenefit = () => {
       </div>
       {/* Positioning for frame1 and frame2 */}
       <div className={Styles.frame}>
-        <img
-          className={Styles.frame1}
-          src={LearnersBenefitFrame2}
-          alt="Tick Icon"
-        />{" "}
-        <img
-          className={Styles.frame2}
-          src={LearnersBenefitFrame1}
-          alt="Tick Icon"
-        />{" "}
+        <div className={Styles.frame1}>
+          <Image
+            src={LearnersBenefitFrame2}
+            alt="Tick Icon"
+            width={122}
+            height={179}
+          />
+        </div>
+        <div className={Styles.frame2}>
+          <Image
+            src={LearnersBenefitFrame1}
+            alt="Tick Icon"
+            width={122}
+            height={179}
+          />
+        </div>
       </div>
       <div className={Styles.CardContainer}>
         <Swiper
@@ -51,11 +57,14 @@ const LearnersBenefit = () => {
             <SwiperSlide key={index}>
               <div className={Styles.Card} key={index}>
                 <div className={Styles.LeftSide}>
-                  <img
-                    className={Styles.CardImg}
-                    src={item.LearnersBenefitCardImg}
-                    alt="Card Image"
-                  />
+                  <div className={Styles.CardImg}>
+                    <Image
+                      src={item.LearnersBenefitCardImg}
+                      alt="Card Image"
+                      width={180}
+                      height={180}
+                    />
+                  </div>
                 </div>
                 <div className={Styles.RightSide}>
                   <h2 className={Styles.CardTitle}>
@@ -64,11 +73,15 @@ const LearnersBenefit = () => {
                   <ul>
                     {item.LearnersBenefittext.map((text, i) => (
                       <li key={i}>
-                        <img
-                          className={Styles.tickimg}
-                          src={LearnersBenefitTickIcon}
-                          alt="Tick Icon"
-                        />
+                        <div className={Styles.tickimg}>
+                          <Image
+                            className={Styles.tickimg}
+                            src={LearnersBenefitTickIcon}
+                            alt="Tick Icon"
+                            width={20}
+                            height={20}
+                          />
+                        </div>
                         <p className={Styles.list}>{text}</p>
                       </li>
                     ))}

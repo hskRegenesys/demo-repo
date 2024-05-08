@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./connectContainer.module.css";
 import RequestForm from "../requestForm/RequestForm";
 import connectContainerData from "../../../data/newComponentData/commonComponentData/ConnnectContainerData";
-
+import Image from "next/image";
 interface ConnectContainerProps {
   onFormSubmit: () => void;
 }
@@ -29,11 +29,14 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
             <div className={styles.iconContainer}>
               {connectContainerText.map((text, index) => (
                 <div key={index} className={styles.icontext}>
-                  <img
-                    src={index === 0 ? icon1 : index === 1 ? icon2 : icon3}
-                    alt={`Icon ${index + 1}`}
-                    className={styles.icon}
-                  />
+                  <div className={styles.icon}>
+                    <Image
+                      src={index === 0 ? icon1 : index === 1 ? icon2 : icon3}
+                      alt={`Icon ${index + 1}`}
+                      width={20}
+                      height={20}
+                    />
+                  </div>
 
                   {index < connectContainerText.length - 1 && (
                     <div className={styles.dottedLine}></div>

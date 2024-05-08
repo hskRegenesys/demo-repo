@@ -89,7 +89,7 @@
 }
 
 .knowMore {
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   /* Add your "Know More" container styles */
 }
 
@@ -100,14 +100,16 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   letter-spacing: 0.12px;
-  /* Add your "Know More" link styles */
 }
 
 .arrowIcon {
-  margin-left: 5px;
-  /* Add your arrow icon styles */
+  margin-left: 2px;
+}
+
+.img {
+  margin-top: 5px !important;
 }
 
 /* swiper style */

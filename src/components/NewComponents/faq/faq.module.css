@@ -260,6 +260,7 @@
     right: 0;
     transform: rotate(90deg);
     margin-right: 16px;
+    top: 18px;
   }
 
   .hedingMobileTextSelected {
@@ -270,7 +271,9 @@
   .selectedHedingIcon {
     transition: transform 0.3s ease;
     position: absolute;
-    left: 0;
+    left: 16px;
+    right: auto;
+    top: 20px;
     transform: rotate(-90deg);
   }
   .arrowIconMobilequstion {

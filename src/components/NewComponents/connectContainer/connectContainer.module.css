@@ -86,10 +86,9 @@
 .icon {
   position: relative;
   display: flex;
-  left: -34px;
   justify-content: space-between;
   gap: 84px;
-  left: -11px;
+  left: -9px;
   bottom: 10px;
   z-index: 1000;
 }

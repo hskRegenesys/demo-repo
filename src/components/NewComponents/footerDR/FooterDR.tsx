@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footerDR.module.css";
+import Image from "next/image";
 
 interface FooterContent1Props {
   handleEnrollButtonClick: (title?: string) => void;
@@ -10,9 +11,11 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
 }) => (
   <div className={styles.footerContent1}>
     <div className={styles.footerLogo}>
-      <img
+      <Image
         src="/assets/images/new-component-assets/DR_Logo.svg"
         alt="LogoIpsum"
+        width={174}
+        height={60}
       />
     </div>
     <div className={styles.footerTextheader}>
@@ -111,10 +114,14 @@ const FooterContent4: React.FC = () => (
         <div>
           <a target="_blank" href="https://www.facebook.com/digitalregenesys">
             {" "}
-            <img
-              src="/assets/images/new-component-assets/facebook-icon.svg"
-              alt="Facebook"
-            />
+            <span className={styles.Icons}>
+              <Image
+                src="/assets/images/new-component-assets/facebook-icon.svg"
+                alt="Facebook"
+                width={14}
+                height={14}
+              />
+            </span>
             <span>Facebook</span>
           </a>
         </div>
@@ -123,11 +130,15 @@ const FooterContent4: React.FC = () => (
             target="_blank"
             href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
           >
-            {" "}
-            <img
-              src="/assets/images/new-component-assets/youtube-icon.png"
-              alt="Youtube"
-            />
+            <span className={styles.Icons}>
+              <Image
+                src="/assets/images/new-component-assets/youtube-icon.png"
+                alt="Youtube"
+                width={14}
+                height={14}
+              />
+            </span>
+
             <span>Youtube</span>
           </a>
         </div>
@@ -136,11 +147,15 @@ const FooterContent4: React.FC = () => (
             target="_blank"
             href="https://www.instagram.com/digital_regenesys/"
           >
-            {" "}
-            <img
-              src="/assets/images/new-component-assets/insta-icon.svg"
-              alt="Instagram"
-            />
+            <span className={styles.Icons}>
+              <Image
+                src="/assets/images/new-component-assets/insta-icon.svg"
+                alt="Instagram"
+                width={14}
+                height={14}
+              />{" "}
+            </span>
+
             <span>Instagram</span>
           </a>
         </div>

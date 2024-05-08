@@ -10,7 +10,7 @@ import useActive from "@/hooks/useActive";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import { urlInfo } from "../../config/helper";
-
+import Image from "next/image";
 import {
   artificialIntelligenceCode,
   dataScienceCode,
@@ -104,11 +104,13 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         <h2 className={Styles.bigHeading}>
           {AllCourcesCardData.FeaturedCoursesSubHeading}
         </h2>
-        <div>
-          <img
+        <div className={Styles.rocketImg}>
+          <Image
             src="/assets/images/new-component-assets/Rocket BG.svg"
             alt="rocket"
-            className={Styles.rocketImg}
+            width={1440}
+            height={550}
+            layout="responsive"
           />
         </div>
         <div className={Styles.cardContainer}>
@@ -147,20 +149,24 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     />
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
                   </div> */}
-                    <img
+                    <Image
                       src={parentCourse.cardImg}
                       alt={parentCourse.ImgAlt}
                       title={parentCourse.ImgAlt}
                       className={Styles.cardImage}
+                      width={346}
+                      height={220}
                     />
                   </div>
                   <div className={Styles.textContainer}>
                     <div className={Styles.line1}>
                       <div className={Styles.icon}>
-                        <img
+                        <Image
                           src={AllCourcesCardData.cardTimeIcon}
                           alt="icon"
                           className={Styles.cardIcon}
+                          width={24}
+                          height={24}
                         />
                       </div>
                       <div className={Styles.boldText}>
@@ -172,10 +178,12 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     </div>
                     <div className={Styles.line2}>
                       <div className={Styles.icon}>
-                        <img
+                        <Image
                           src={AllCourcesCardData.cardStudentsIcon}
                           alt="icon"
                           className={Styles.cardIcon}
+                          width={24}
+                          height={24}
                         />
                       </div>
 
@@ -189,10 +197,12 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     {parentCourse.cardTool ? (
                       <div className={Styles.line3}>
                         <div className={Styles.icon}>
-                          <img
+                          <Image
                             src={AllCourcesCardData.cardBookIcon}
                             alt="icon"
                             className={Styles.cardIcon}
+                            width={24}
+                            height={24}
                           />
                         </div>
                         <div className={Styles.boldText}>

@@ -50,6 +50,7 @@
   right: 10px;
   font-size: 40px;
   cursor: pointer;
+  z-index: 999;
 }
 
 .Content {

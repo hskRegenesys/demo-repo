@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Styles from "./faq.module.css";
-import TextSplit from "@/components/Reuseable/TextSplit";
-
+import Image from "next/image";
 interface FAQData {
   HeadingDesktop: string;
   HeadingMobile: string;
@@ -66,12 +65,14 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                       onClick={() => toggleAnswer(index)}
                     >
                       <h3>{faq.question}</h3>
-                      <img
+                      <Image
                         src={data.arrowIcon}
                         alt="iconFaq"
                         className={`${Styles.arrowIcon} ${
                           selectedQuestion === index ? Styles.selectedarrow : ""
                         }`}
+                        width={20}
+                        height={20}
                       />
                     </div>
                     {selectedQuestion === index && (
@@ -139,15 +140,20 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                 >
                   {section.heading}
                 </span>
-                <img
-                  src={data.arrowIcon}
-                  alt="iconFaq"
+                <div
                   className={`${Styles.arrowIconMobileHeding} ${
                     openHeadingDropdown === section.heading
                       ? Styles.selectedHedingIcon
                       : ""
                   }`}
-                />
+                >
+                  <Image
+                    src={data.arrowIcon}
+                    alt="iconFaq"
+                    width={20}
+                    height={20}
+                  />
+                </div>
                 {openHeadingDropdown === section.heading && (
                   <ul className={Styles.dropdownListMobile}>
                     {section.faqs.map((faq, index) => (
@@ -162,15 +168,20 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                       >
                         <div className={Styles.questionContainerMobile}>
                           <h3>{faq.question}</h3>
-                          <img
-                            src={data.arrowIcon}
-                            alt="iconFaq"
+                          <div
                             className={`${Styles.arrowIconMobilequstion} ${
                               selectedQuestion === index
                                 ? Styles.selectedarrowMobilequstion
                                 : ""
                             }`}
-                          />
+                          >
+                            <Image
+                              src={data.arrowIcon}
+                              alt="iconFaq"
+                              width={20}
+                              height={20}
+                            />
+                          </div>
                         </div>
                         {selectedQuestion === index && (
                           <p

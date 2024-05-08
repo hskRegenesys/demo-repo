@@ -1,7 +1,7 @@
 const UspSectionData = {
   uspLocationCard: {
-    uspLocationText: "International Certificate",
-    usplocationIcon: "./assets/images/new-component-assets/Award.svg",
+    uspLocationText: "International Certification",
+    usplocationIcon: "/assets/images/new-component-assets/Award.svg",
   },
   uspEnrollmentCard: {
     uspEnrollmentText: "Students Enrolled",
@@ -11,8 +11,8 @@ const UspSectionData = {
     duration: "3000",
   },
   uspUpskillCard: {
-    uspUpskillText: "Live Classes",
-    uspBookIcon: "./assets/images/new-component-assets/Live Call.svg",
+    uspUpskillText: "Live Sessions",
+    uspBookIcon: "/assets/images/new-component-assets/Live Call.svg",
   },
 };
 export default UspSectionData;

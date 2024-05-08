@@ -1,8 +1,8 @@
 const allCoursesPageBannerData = {
   DesktopBannerImg:
-    "./assets/images/new-component-assets/All-Courses-Banner-Web.png",
+    "/assets/images/new-component-assets/All-Courses-Banner-Web.png",
   MobileBannerImg:
-    "./assets/images/new-component-assets/All-Courses-Banner-Mobile.png",
+    "/assets/images/new-component-assets/All-Courses-Banner-Mobile.png",
   HeadingText: "Your Path to a Successful Bright Career!",
   ParagraphTextMobile:
     "Regenesys online programming courses offer you training on a variety of courses, such as Data Science, Artificial Intelligence,and more.",
