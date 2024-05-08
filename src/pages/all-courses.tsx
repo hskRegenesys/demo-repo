@@ -40,8 +40,10 @@ const ReadMoreDropDown = dynamic(
   () => import("@/components/NewComponents/readMore/ReadMoreDropDown")
 );
 
-const AllCoursesNew = () => {
+const AllCoursesNew = ({ initialCourses, intitialCoursesCardData }: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [courses, setCourses] = useState(initialCourses);
+  const [allCourseData, setAllCoursesData] = useState(intitialCoursesCardData);
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -81,12 +83,16 @@ const AllCoursesNew = () => {
         style={{
           background: "none",
         }}
+        allCourseList={courses}
+        AllCourcesCardData={allCourseData}
       />
       <AllCoursesSlider
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
+        allCourseList={courses}
+        AllCourcesCardData={allCourseData}
       />
       {/* <OurCourses
           data={NewOurCoursesData}
@@ -103,6 +109,28 @@ const AllCoursesNew = () => {
     </Layout>
   );
 };
+
+export async function getStaticProps() {
+  try {
+    const { allCourseList } = await import("@/data/courseData");
+    const { default: AllCourcesCardData } = await import(
+      "@/data/newComponentData/commonComponentData/AllCourcesCardData"
+    );
+    return {
+      props: {
+        initialCourses: allCourseList,
+        intitialCoursesCardData: AllCourcesCardData,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        initialCourses: [],
+        intitialCoursesCardData: [],
+      },
+    };
+  }
+}
 
 export default AllCoursesNew;
 

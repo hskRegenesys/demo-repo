@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
+// import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 import Styles from "./featuredCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -18,7 +18,7 @@ import {
   programBaseUrl,
 } from "../../config/constant";
 
-import { allCourseList } from "@/data/courseData";
+// import { allCourseList } from "@/data/courseData";
 SwiperCore.use([Pagination, Autoplay]);
 
 interface Card {
@@ -37,11 +37,15 @@ interface Card {
 interface FeaturedCoursesProps {
   handleEnrollButtonClick: (code?: string) => void;
   style?: React.CSSProperties;
+  allCourseList: any;
+  AllCourcesCardData: any;
 }
 
 const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
   handleEnrollButtonClick,
   style,
+  allCourseList,
+  AllCourcesCardData,
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);

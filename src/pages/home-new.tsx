@@ -66,7 +66,7 @@ const HomeNew = () => {
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
 
-      <FeaturedCourses
+      {/* <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background:
@@ -78,7 +78,7 @@ const HomeNew = () => {
         style={{
           background: "none",
         }}
-      />
+      /> */}
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
       <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
