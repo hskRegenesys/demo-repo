@@ -6,6 +6,7 @@ import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsC
 import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
 import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
+import _ from "lodash";
 
 const HomeSliderBanner = dynamic(
   () => import("@/components/NewComponents/homeSliderBanner/HomeSliderBanner")
@@ -69,8 +70,10 @@ const ReadMoreDropDown = dynamic(
   () => import("@/components/NewComponents/readMore/ReadMoreDropDown")
 );
 
-const HomeNew = () => {
+const HomeNew = ({ initialCourses, intitialCoursesCardData }: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [courses, setCourses] = useState(initialCourses);
+  const [allCourseData, setAllCoursesData] = useState(intitialCoursesCardData);
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -114,12 +117,16 @@ const HomeNew = () => {
           background:
             "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
         }}
+        allCourseList={courses}
+        AllCourcesCardData={allCourseData}
       />
       <AllCoursesSlider
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
+        allCourseList={courses}
+        AllCourcesCardData={allCourseData}
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
@@ -142,6 +149,33 @@ const HomeNew = () => {
     </Layout>
   );
 };
+
+export async function getStaticProps() {
+  try {
+    const { allCourseList } = await import("@/data/courseData");
+    const { default: videoTestimonialData } = await import(
+      "@/data/videoTestimonial"
+    );
+    const { default: AllCourcesCardData } = await import(
+      "@/data/newComponentData/commonComponentData/AllCourcesCardData"
+    );
+
+    return {
+      props: {
+        initialCourses: allCourseList,
+        initialVideoTestimonialData: videoTestimonialData,
+        intitialCoursesCardData: AllCourcesCardData,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        initialCourses: [],
+        initialVideoTestimonialData: [],
+      },
+    };
+  }
+}
 
 export default HomeNew;
 

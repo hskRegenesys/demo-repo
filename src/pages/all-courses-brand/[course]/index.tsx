@@ -70,6 +70,10 @@ const Course = (props: any) => {
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
   const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
   const [courseCode, setCourseCode] = useState("");
+  const [courses, setCourses] = useState(props?.initialCourses);
+  const [allCourseData, setAllCoursesData] = useState(
+    props?.intitialCoursesCardData
+  );
 
   const courseId: any = router?.query?.id;
   const allCourseList: any = [];
@@ -164,12 +168,16 @@ const Course = (props: any) => {
         style={{
           background: "none",
         }}
+        allCourseList={courses}
+        AllCourcesCardData={allCourseData}
       />
       <AllCoursesSlider
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
+        allCourseList={courses}
+        AllCourcesCardData={allCourseData}
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
@@ -192,8 +200,31 @@ const Course = (props: any) => {
   );
 };
 export async function getServerSideProps(context: any) {
-  const { id, course } = context.query;
+  try {
+    const { id, course } = context.query;
+    const { allCourseList } = await import("@/data/courseData");
+    const { default: videoTestimonialData } = await import(
+      "@/data/videoTestimonial"
+    );
+    const { default: AllCourcesCardData } = await import(
+      "@/data/newComponentData/commonComponentData/AllCourcesCardData"
+    );
 
-  return { props: { course } };
+    return {
+      props: {
+        course,
+        initialCourses: allCourseList,
+        initialVideoTestimonialData: videoTestimonialData,
+        intitialCoursesCardData: AllCourcesCardData,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        initialCourses: [],
+        initialVideoTestimonialData: [],
+      },
+    };
+  }
 }
 export default Course;

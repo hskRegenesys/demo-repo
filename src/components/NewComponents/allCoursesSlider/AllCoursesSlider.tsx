@@ -19,8 +19,8 @@ import {
   programBaseUrl,
 } from "../../config/constant";
 
-import { allCourseList } from "@/data/courseData";
-import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
+// import { allCourseList } from "@/data/courseData";
+// import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 
 interface Card {
   cardProgram: string;
@@ -38,11 +38,15 @@ interface Card {
 interface allCoursesSliderProps {
   handleEnrollButtonClick: (code?: string) => void;
   style?: React.CSSProperties; // Add style prop
+  allCourseList: any;
+  AllCourcesCardData: any;
 }
 
 const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   handleEnrollButtonClick,
   style,
+  allCourseList,
+  AllCourcesCardData,
 }) => {
   const router = useRouter();
 

@@ -36,11 +36,11 @@ const redirectURL = () => {
     //   permanent: true,
     // },
 
-    {
-      source: "/programsnew",
-      destination: "/all-courses-new",
-      permanent: true,
-    },
+    // {
+    //   source: "/programsnew",
+    //   destination: "/all-courses-new",
+    //   permanent: true,
+    // },
 
     {
       source: "/programs/data-science/basic-data-science",
@@ -878,11 +878,11 @@ const redirectURL = () => {
       destination: "/",
       permanent: true,
     },
-    {
-      source: "/new-home",
-      destination: "/home-new",
-      permanent: true,
-    },
+    // {
+    //   source: "/new-home",
+    //   destination: "/home-new",
+    //   permanent: true,
+    // },
     // {
     //   source: "/sitemap",
     //   destination: "/404",
