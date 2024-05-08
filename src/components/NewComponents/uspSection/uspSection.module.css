@@ -56,12 +56,10 @@
   } */
 
   .uspCard img {
-    width: 24px;
+    width: 24px !important;
   }
   .CardText {
     font-size: 12px;
-  }
-  .uspCard {
   }
 }
 @media (max-width: 520px) {

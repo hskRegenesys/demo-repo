@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import UspSectionData from "../../../data/newComponentData/commonComponentData/UspSectionData";
 import styles from "./uspSection.module.css";
+import Image from "next/image";
 
 const UspSection = () => {
   const { uspLocationCard, uspEnrollmentCard, uspUpskillCard } = UspSectionData;
@@ -46,11 +47,21 @@ const UspSection = () => {
   return (
     <div className={styles.uspSectionContainer}>
       <div className={styles.uspCard}>
-        <img src={uspLocationCard.usplocationIcon} alt="Icon 1" />
+        <Image
+          src={uspLocationCard.usplocationIcon}
+          alt="Icon 1"
+          width={40}
+          height={40}
+        />
         <p className={styles.CardText}>{uspLocationCard.uspLocationText}</p>
       </div>
       <div className={`${styles.uspCard} ${styles.enrollmentCard}`}>
-        <img src={uspEnrollmentCard.StudentEnrolIcon} alt="Icon 2" />
+        <Image
+          src={uspEnrollmentCard.StudentEnrolIcon}
+          alt="Icon 2"
+          width={40}
+          height={40}
+        />
         <div className={styles.enrollmentContainer}>
           <p className={styles.uspEnrollmentCount}>
             {count}
@@ -63,7 +74,12 @@ const UspSection = () => {
         </div>
       </div>
       <div className={styles.uspCard}>
-        <img src={uspUpskillCard.uspBookIcon} alt="Icon 3" />
+        <Image
+          src={uspUpskillCard.uspBookIcon}
+          alt="Icon 3"
+          width={40}
+          height={40}
+        />
         <p className={styles.CardText}>{uspUpskillCard.uspUpskillText}</p>
       </div>
     </div>

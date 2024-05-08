@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Styles from "./popupForm.module.css";
 import RequestForm from "../requestForm/RequestForm";
+import Image from "next/image";
 
 interface PopupFormProps {
   isVisible: boolean;
@@ -66,16 +67,22 @@ const PopupForm: React.FC<PopupFormProps> = ({
             </span>
             <div className={Styles.Content}>
               <div className={Styles.ImageContainer}>
-                <img
-                  src={popupData.PopupDesktop}
-                  alt="Popup Image"
-                  className={Styles.WebImage}
-                />
-                <img
-                  src={popupData.PopupMobile}
-                  alt="Popup Image"
-                  className={Styles.MobileImage}
-                />
+                <div className={Styles.WebImage}>
+                  <Image
+                    src={popupData.PopupDesktop}
+                    alt="Popup Image"
+                    width={388}
+                    height={500}
+                  />
+                </div>
+                <div className={Styles.MobileImage}>
+                  <Image
+                    src={popupData.PopupMobile}
+                    alt="Popup Image"
+                    width={360}
+                    height={210}
+                  />
+                </div>
               </div>
               <div className={Styles.TextContainer}>
                 <div className={Styles.Form}>

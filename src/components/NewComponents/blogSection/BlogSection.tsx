@@ -3,7 +3,7 @@ import Styles from "./blogSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-
+import Image from "next/image";
 SwiperCore.use([Pagination, Autoplay]);
 
 interface CardData {
@@ -56,10 +56,12 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
           {data.cards.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
-                <img
+                <Image
                   src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
+                  width={360}
+                  height={190}
                 />
 
                 <div className={Styles.blogContent}>
@@ -69,13 +71,14 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   </div>
                   <div className={Styles.knowMore}>
                     <a href={card.blogLink} className={Styles.knowMoreLink}>
-                      Know More{" "}
+                      Know More
                       <span className={Styles.arrowIcon}>
-                        {" "}
-                        <img
+                        <Image
                           src="/assets/images/new-component-assets/Readmore.svg"
                           alt="cardStar"
                           className={Styles.img}
+                          width={12}
+                          height={12}
                         />
                       </span>
                     </a>

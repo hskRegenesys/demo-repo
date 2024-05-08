@@ -61,9 +61,7 @@
   width: 100%;
 }
 
-.footerLogo img {
-  width: 174.693px;
-  height: 60px;
+.footerLogo {
   margin-bottom: 40px;
 }
 
@@ -127,9 +125,8 @@
   width: 100%;
 }
 
-.socialIcons img {
-  width: 14px;
-  margin-right: 10px;
+.Icons {
+  margin-right: 5px !important;
 }
 
 .footerText {
@@ -201,7 +198,7 @@
     padding-right: 0px;
     text-align: center;
   }
-  .footerLogo img {
+  .footerLogo {
     display: none;
   }
   .footerContent2,
@@ -209,10 +206,6 @@
   .footerContent4,
   .footerContent1 {
     margin-right: 0;
-  }
-
-  .footerLogo img {
-    margin-bottom: 20px;
   }
 
   .footerTextheader p {

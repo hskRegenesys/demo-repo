@@ -45,14 +45,10 @@
   text-align: center;
   border: 1px solid #e3e8ee;
   border-radius: 8px;
-  max-width: 160px;
+  max-width: 140px;
   margin: 0 10px;
-}
-
-.admitsCard img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .enrollNowContainer {
@@ -62,9 +58,11 @@
 }
 
 .enrollNowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin: 0 auto;
-  text-align: center;
   padding: 12px 20px;
   border-radius: 7.68px;
   font-family: Montserrat-Bold;

@@ -3,6 +3,7 @@ import StudentReviewData from "../../../data/newComponentData/commonComponentDat
 import Styles from "./StudentReview.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import Image from "next/image";
 
 interface StudentReviewProps {
   handleEnrollButtonClick: () => void;
@@ -66,16 +67,22 @@ const StudentReview = ({ handleEnrollButtonClick }: StudentReviewProps) => {
             return (
               <SwiperSlide key={index}>
                 <div className={Styles.studentReviewCard}>
-                  <img
-                    className={Styles.studentReviewSideTag}
-                    src="\assets\images\new-component-assets\Logo-DR-side.png"
-                    alt="Side Tag"
-                  />
-                  <img
-                    className={Styles.studentReviewCardImg}
-                    src={card.StudentReviewCardImg}
-                    alt="Student Review"
-                  />
+                  <div className={Styles.studentReviewSideTag}>
+                    <Image
+                      src="/assets/images/new-component-assets/Logo-DR-side.png"
+                      alt="Side Tag"
+                      width={102}
+                      height={106}
+                    />
+                  </div>
+                  <div className={Styles.studentReviewCardImg}>
+                    <Image
+                      src={card.StudentReviewCardImg}
+                      alt="Student Review"
+                      width={88}
+                      height={88}
+                    />
+                  </div>
                   {/* <div className={Styles.starRating}>{stars}</div> */}
                   <div className={Styles.textContent}>
                     <h3 className={Styles.textContent1}>

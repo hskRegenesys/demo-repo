@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AboutUsData from "../../../data/newComponentData/commonComponentData/AboutUsData";
 import Styles from "./aboutUs.module.css";
-
+import Image from "next/image";
 interface AboutUsProps {
   handleEnrollButtonClick: () => void;
 }
@@ -65,11 +65,13 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
 
       <div className={Styles.aboutUs}>
         <div className={Styles.aboutUsLeft}>
-          <img
+          <Image
             src={aboutUsImg}
             alt={aboutUsImgAlt}
             title={aboutUsImgAlt}
             className={Styles.aboutUsImage}
+            width={480}
+            height={320}
           />
         </div>
         <div className={Styles.aboutUsRight}>
@@ -112,11 +114,14 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
       <div className={Styles.cardsContainer}>
         {cards.map((card, index) => (
           <div key={index} className={Styles.card}>
-            <img
-              src={card.cardImg}
-              alt={`Card ${index + 1}`}
-              className={Styles.cardImg}
-            />
+            <div className={Styles.cardImg}>
+              <Image
+                src={card.cardImg}
+                alt={`Card ${index + 1}`}
+                width={52}
+                height={52}
+              />
+            </div>
             <div className={Styles.cardText}>{card.cardText}</div>
           </div>
         ))}

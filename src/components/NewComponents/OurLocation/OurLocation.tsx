@@ -10,6 +10,7 @@ import SouthAfricaSection from "./Contarys/SouthAfrica";
 import CroatiaSection from "./Contarys/CroatiaSection";
 import NigeriaSection from "./Contarys/NigeriaSection";
 import TanzaniaSection from "./Contarys/TanzaniaSection";
+import Image from "next/image";
 
 const OurLocation: React.FC = () => {
   const {
@@ -276,8 +277,8 @@ const OurLocation: React.FC = () => {
           {/* Add more sections for other countries */}
         </div>
 
-        <div className={Styles.WorldImgContainer}>
-          <img src={countryImage} className={Styles.WorldImg} alt="World Map" />
+        <div className={Styles.WorldImg}>
+          <Image src={countryImage} alt="World Map" width={620} height={300} />
         </div>
       </div>
     </div>

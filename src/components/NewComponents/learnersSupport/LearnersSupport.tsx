@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./LearnersSupport.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
+import Image from "next/image";
 interface CardData {
   LsImg: string;
   LsQuestion: string;
@@ -51,7 +51,9 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
           {data.cards.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.LsCard}>
-                <img src={card.LsImg} alt="Ls" className={Styles.LsImage} />
+                <div className={Styles.LsImage}>
+                  <Image src={card.LsImg} alt="Ls" width={360} height={160} />
+                </div>
 
                 <div className={Styles.LsContent}>
                   <h3 className={Styles.LsQuestion}>{card.LsQuestion}</h3>
@@ -62,7 +64,7 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
                     className={Styles.learnMoreButton}
                     onClick={handleEnrollButtonClick}
                   >
-                    {card.ButtenText}{" "}
+                    {card.ButtenText}
                   </button>
                 </div>
               </div>

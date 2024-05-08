@@ -5,6 +5,7 @@ import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
 import styles from "./TalentedComponent.module.css";
 import FacultyData from "../../../data/newComponentData/commonComponentData/FacultyData";
+import Image from "next/image";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -32,7 +33,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
       setPaginationText(isMobile ? { clickable: true } : false);
     };
 
-    handleResize(); // Initial call to set paginationText based on window width
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 
@@ -114,11 +115,15 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                 <SwiperSlide key={index}>
                   <div className={styles.card}>
                     <div className={styles.bgcolor}></div>
-                    <img
-                      src={faculty.facultyImg}
-                      alt={faculty.facultyName}
-                      title={faculty.facultyName}
-                    />
+                    <div className={styles.cardImg}>
+                      <Image
+                        src={faculty.facultyImg}
+                        alt={faculty.facultyName}
+                        title={faculty.facultyName}
+                        width={110}
+                        height={110}
+                      />
+                    </div>
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
                     <p className={styles.courseName}>{faculty.courseName}</p>
                     <span>{faculty?.yearsOfExperience}</span>

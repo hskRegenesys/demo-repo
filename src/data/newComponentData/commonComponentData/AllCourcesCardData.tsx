@@ -104,8 +104,7 @@ const AllCourcesCardData = {
         parentId: null,
         name: "Digital Marketing",
         cardProgram: "Digital Marketing",
-        cardImg:
-          "./assets/images/new-component-assets/Courses-Card/DM-card.png",
+        cardImg: "/assets/images/new-component-assets/Courses-Card/DM-card.png",
         ImgAlt: "Digital Marketing - Digital Regenesys",
 
         cardWeek: "20 Weeks",
@@ -164,8 +163,7 @@ const AllCourcesCardData = {
         parentId: null,
         name: "Artificial Intelligence",
         cardProgram: "Artificial Intelligence",
-        cardImg:
-          "./assets/images/new-component-assets/Courses-Card/AI-card.png",
+        cardImg: "/assets/images/new-component-assets/Courses-Card/AI-card.png",
         ImgAlt: "Artificial Intelligence - Digital Regenesys",
 
         cardWeek: "37 Weeks",

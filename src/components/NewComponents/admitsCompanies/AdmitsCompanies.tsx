@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Styles from "./admitsCompanies.module.css";
 import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
-
+import Image from "next/image";
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: () => void;
 }
@@ -44,7 +44,12 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
         <Swiper {...swiperSettings}>
           {AdmitsCards.map((card, index) => (
             <SwiperSlide key={index} className={Styles.admitsCard}>
-              <img src={card.AdmitsImage} alt={`admitImg ${index}`} />
+              <Image
+                src={card.AdmitsImage}
+                alt={`admitImg ${index}`}
+                width={100}
+                height={60}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -55,11 +60,9 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           onClick={handleEnrollButtonClick}
         >
           Enrol Now
-          <img
-            src={buttenIcon}
-            alt="Enroll Icon"
-            className={Styles.enrollIcon}
-          />
+          <div className={Styles.enrollIcon}>
+            <Image src={buttenIcon} alt="Enroll Icon" width={16} height={16} />
+          </div>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import useActive from "@/hooks/useActive";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import { urlInfo } from "../../config/helper";
+import Image from "next/image";
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -129,7 +130,9 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
         {AllCourcesCardData.allCoursesSliderSubHeading}
       </h2>
       {/* <div>
-        <img
+        <Image
+
+
           src="/assets/images/new-component-assets/Rocket BG.svg"
           alt="rocket"
           className={Styles.rocketImg}
@@ -165,27 +168,33 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                 </div>
                 <div className={Styles.imgCardContainer}>
                   {/* <div className={Styles.cardStarContainer}>
-                    <img
+                    <Image
+
+
                       src={AllCourcesCardData.cardStarIcon}
                       alt="cardStar"
                       className={Styles.cardStarIcon}
                     />
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
                   </div> */}
-                  <img
+                  <Image
                     src={parentCourse.cardImg}
                     alt={parentCourse.ImgAlt}
                     title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
+                    width={346}
+                    height={220}
                   />
                 </div>
                 <div className={Styles.textContainer}>
                   <div className={Styles.line1}>
                     <div className={Styles.icon}>
-                      <img
+                      <Image
                         src={AllCourcesCardData.cardTimeIcon}
                         alt="icon"
                         className={Styles.cardIcon}
+                        width={24}
+                        height={24}
                       />
                     </div>
                     <div className={Styles.boldText}>
@@ -197,10 +206,12 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   </div>
                   <div className={Styles.line2}>
                     <div className={Styles.icon}>
-                      <img
+                      <Image
                         src={AllCourcesCardData.cardStudentsIcon}
                         alt="icon"
                         className={Styles.cardIcon}
+                        width={24}
+                        height={24}
                       />
                     </div>
 
@@ -214,10 +225,12 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   {parentCourse.cardTool ? (
                     <div className={Styles.line3}>
                       <div className={Styles.icon}>
-                        <img
+                        <Image
                           src={AllCourcesCardData.cardBookIcon}
                           alt="icon"
                           className={Styles.cardIcon}
+                          width={24}
+                          height={24}
                         />
                       </div>
                       <div className={Styles.boldText}>
