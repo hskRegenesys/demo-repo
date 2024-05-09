@@ -62,11 +62,11 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className={Styles.formcointent}>
+        {/* <div className={Styles.formcointent}>
           <div className={Styles.formContainer}>
             <RequestForm onFormSubmit={onFormSubmit} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
