@@ -84,7 +84,7 @@ const HomeNew = () => {
       <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
       <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
-      <StudentReview handleEnrollButtonClick={handleEnrollButtonClick} />
+      {/* <StudentReview handleEnrollButtonClick={handleEnrollButtonClick} /> */}
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
