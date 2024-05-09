@@ -122,6 +122,11 @@ export const mainFooter = {
       title: "Privacy Policy",
     },
     {
+      id: 7,
+      href: "/refund-policy",
+      title: "Refund Policy",
+    },
+    {
       id: 3,
       href: "/contact",
       title: "Contact us",

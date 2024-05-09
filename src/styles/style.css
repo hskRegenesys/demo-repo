@@ -19404,6 +19404,7 @@ input.PhoneInputInput {
 
 .privacy-policy {
   margin-bottom: 100px;
+  position: relative;
 }
 
 .privacy-policy ul {
