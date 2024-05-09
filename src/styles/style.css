@@ -19403,7 +19403,7 @@ input.PhoneInputInput {
 }
 
 .privacy-policy {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -19468,7 +19468,7 @@ input.PhoneInputInput {
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 850px;
+  min-height: 740px;
 }
 
 .tns-controls1 {
@@ -20601,6 +20601,10 @@ span.page-head {
   .page-head {
     font-size: 2.2rem !important;
     padding-right: 0px !important;
+  }
+  .privacy-policy {
+    margin-bottom: 0px;
+    
   }
 }
 .font-capitalized {
