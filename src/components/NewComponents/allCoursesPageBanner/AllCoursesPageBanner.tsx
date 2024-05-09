@@ -1,15 +1,13 @@
 import React from "react";
 import Styles from "./allCoursesPageBanner.module.css";
-// import allCoursesPageBannerData from "../../../data/newComponentData/commonComponentData/allCoursesPageBannerData";
+import allCoursesPageBannerData from "../../../data/newComponentData/commonComponentData/allCoursesPageBannerData";
 import Image from "next/image";
 interface AllCoursesPageBannerProps {
   handleEnrollButtonClick: () => void;
-  allCoursesPageBannerData: any;
 }
 
 const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
   handleEnrollButtonClick,
-  allCoursesPageBannerData,
 }) => {
   const {
     DesktopBannerImg,

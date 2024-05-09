@@ -3,9 +3,7 @@ import _ from "lodash";
 import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
-// import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 
-// import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
 const WhyChooseDR = dynamic(
   () => import("@/components/NewComponents/whychooseDR/WhyChooseDR")
 );
@@ -43,17 +41,11 @@ const ReadMoreDropDown = dynamic(
 const AllCoursesNew = ({
   initialCourses,
   intitialCoursesCardData,
-  initialAllCoursePageBannerData,
   initialStudentReviewData,
   initialAllCoursesDynamicData,
   initialMultiplePagesBrandData,
 }: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [courses, setCourses] = useState(initialCourses);
-  const [allCourseData, setAllCoursesData] = useState(intitialCoursesCardData);
-  const [allCourseBanner, setAllCoursesBanner] = useState(
-    initialAllCoursePageBannerData
-  );
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -86,26 +78,23 @@ const AllCoursesNew = ({
       )}
       <HeaderOne />
       <MobileMenu />
-      <AllCoursesPageBanner
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        allCoursesPageBannerData={allCourseBanner}
-      />
+      <AllCoursesPageBanner handleEnrollButtonClick={handleEnrollButtonClick} />
       <WhyChooseDR handleEnrollButtonClick={handleEnrollButtonClick} />
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
-        allCourseList={courses}
-        AllCourcesCardData={allCourseData}
+        allCourseList={initialCourses}
+        AllCourcesCardData={intitialCoursesCardData}
       />
       <AllCoursesSlider
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
-        allCourseList={courses}
-        AllCourcesCardData={allCourseData}
+        allCourseList={initialCourses}
+        AllCourcesCardData={intitialCoursesCardData}
       />
       {/* <OurCourses
           data={NewOurCoursesData}
@@ -132,9 +121,7 @@ export async function getStaticProps() {
     const { default: AllCourcesCardData } = await import(
       "@/data/newComponentData/commonComponentData/AllCourcesCardData"
     );
-    const { default: allCoursesPageBannerData } = await import(
-      "@/data/newComponentData/commonComponentData/allCoursesPageBannerData"
-    );
+
     const { default: StudentReviewData } = await import(
       "@/data/newComponentData/commonComponentData/StudentReviewData"
     );
@@ -148,7 +135,6 @@ export async function getStaticProps() {
       props: {
         initialCourses: allCourseList,
         intitialCoursesCardData: AllCourcesCardData,
-        initialAllCoursePageBannerData: allCoursesPageBannerData,
         initialStudentReviewData: StudentReviewData,
         initialAllCoursesDynamicData: AllCoursesDynamicData,
         initialMultiplePagesBrandData: MultiplePagesBrandData,
