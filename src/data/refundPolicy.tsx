@@ -1,18 +1,37 @@
 export const refundPolicy = {
-  title1: "A. Claim for Refund",
-  paragraph1:
-    "To claim refund, kindly drop an email on: info.digital@regenesys.net Online course refund .” We attempt to process and complete refund requests within 7 working days from the time of receiving the refund request, however, in case there is any delay in refund beyond the above-mentioned period, then you may notify us through email. The refund process may include a feedback call to you and validation of key information that may be required by us to process the refund request.",
+  heading: "Refund Policy ",
+  titleIntro: "Introduction:",
+  titleIntroParaph:
+    "This refund policy outlines the terms and conditions for refunds for students enrolled in programs at Digital Regenesys. The policy aims to provide clarity and transparency regarding refund procedures in the event of program withdrawal.    ",
 
-  title2: "B. One-time Payment",
-  list1: "Self-paced Courses: Non refundable",
+  titleAdmissionFee: "Admin Fee",
+  titleAdmissionFeeParaph:
+    "Upon enrolment in any program at Digital Regenesys, students are required to pay a non-refundable administrative fee of R 5,00, N 25,000, KSH 2,500, UGX 65,000, TZN 50,000 (included in the price of the programme). This fee covers administrative costs and is applicable regardless of program completion.",
+
+  titleRefundStructure: "Refund Structure",
+
+  list1:
+    "Cancellation Before Program Start Date: If a student cancels before the program's start date, they will receive a refund of 100% of the program fee, minus the admin fee. (R 500, N 25,000,KSH 2,500,UGX 65,000,TZN 50,000)  ",
   list2:
-    "Facilitator led Courses: We provide 90% refund if the request is raised within 5 days of the course start date. No refund requests shall be entertained after 5 working days from the course start date.",
+    "Start Date or Within the First Week: For withdrawals on the program's start date or within the first week, students will be eligible for a refund of R 1,000, N 50,000, KSH 5,000, UGX 130,000, TZN 100,000 of the remaining program fee, after deducting the admin fee.",
+  details: [
+    {
+      item: "Cancellation Before Program Start Date: If a student cancels before the program's start date, they will receive a refund of 100% of the program fee, minus the admin fee. (R 500, N 25,000, KSH 2,500, UGX 65,000, TZN 50,000)",
+    },
+    {
+      item: "Start Date or Within the First Week: For withdrawals on the program's start date or within the first week, students will be eligible for a refund of R 1,000, N 50,000, KSH 5,000, UGX 130,000, TZN 100,000 of the remaining program fee, after deducting the admin fee.",
+    },
+    {
+      item: "Week 2: Withdrawals between the end of the first week and the end of the second week will result in a refund of balance paid amount after deducting  R 1500, N 75,000, KSG 7,500, UGX 195,000, TZN 150,000      ",
+    },
+    {
+      item: "Week 3: Withdrawals between the end of the second week and the end of the third week will result in a refund of balance paid amount after deducting of R 2,000, N 100,000, KSH 10,000, UGX 260,000, TZN 200,000",
+    },
+  ],
 
-  title3: "C. EMI Payment",
+  paragraph1:
+    "No Refunds After Week 3: After the third week of the program, no refunds will be issued. ",
 
-  list3: "Self-paced Courses: Non refundable",
-  list4:
-    "Facilitator led Courses: We provide 80% refund if the request is raised within 5 days of the course start date. No refund requests shall be entertained after 5 working days from the course start date.",
   paragraph2:
-    "We reserve the right to change any fees at any time at our sole discretion and any change, update, or modification in the fee shall become effective immediately upon the same being posted/uploaded or notified on our website https://digitalregenesys.com.",
+    "Policy Revision: This refund policy is subject to periodic review and may be revised based on regulatory requirements and internal considerations.",
 };
