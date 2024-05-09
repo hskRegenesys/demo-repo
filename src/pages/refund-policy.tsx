@@ -37,7 +37,7 @@ const Terms = () => {
       <HeaderOne pageTitle="refundPolicy" />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="RefundPolicy" />
+      <PageBanner title="Refund Policy" />
       <RefundPolicy />
       <CallToSection />
       <MainFooter normalPadding={false} />
