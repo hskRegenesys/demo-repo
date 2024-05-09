@@ -26,7 +26,7 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
           alt="Banner"
           width={1440}
           height={580}
-          sizes="(max-width: 400px) 100vw,(max-width: 768px) 75vw, (max-width: 1200px) 60vw,(max-width: 1500px) 10vw,(max-width: 2100px) 30vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>{" "}
       <div className={Styles.bannerImageMobile}>
@@ -35,7 +35,8 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
           alt="Banner"
           width={360}
           height={524}
-          sizes="(max-width: 400px) 100vw,(max-width: 768px) 75vw, "
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          quality={100}
         />
       </div>
       <div className={Styles.bannerTextContainer}>
