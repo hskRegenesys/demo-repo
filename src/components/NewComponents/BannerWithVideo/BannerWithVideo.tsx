@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
-
+import Image from "next/image";
 interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;
   data: BannerCourseData;
@@ -15,7 +15,7 @@ type BannerCourseData = {
   topTextMessage: string;
   contentText: string;
   bannerVideoLink?: string;
-  BrochureIcon?: string;
+  BrochureIcon: string;
   vidoPlayIcon?: string;
   youtubeVideoLink: string;
   UspSectionData: {
@@ -88,7 +88,12 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
             <div className={styles.uspSectionContainer}>
               <div className={styles.uspCardCountry}>
-                <img src={uspLocationCard.usplocationIcon} alt="Icon 1" />
+                <Image
+                  src={uspLocationCard.usplocationIcon}
+                  alt="Icon 1"
+                  width={40}
+                  height={40}
+                />
                 <p className={styles.CardText}>
                   {uspLocationCard.uspLocationText}
                 </p>
@@ -96,7 +101,12 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <div
                 className={`${styles.uspCardCount} ${styles.enrollmentCard}`}
               >
-                <img src={uspEnrollmentCard.StudentEnrolIcon} alt="Icon 2" />
+                <Image
+                  src={uspEnrollmentCard.StudentEnrolIcon}
+                  alt="Icon 2"
+                  width={40}
+                  height={40}
+                />
                 <div className={styles.enrollmentContainer}>
                   <p className={styles.uspEnrollmentCount}>
                     {count}{" "}
@@ -107,7 +117,12 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 </div>
               </div>
               <div className={styles.uspCardUpskill}>
-                <img src={uspUpskillCard.uspBookIcon} alt="Icon 3" />
+                <Image
+                  src={uspUpskillCard.uspBookIcon}
+                  alt="Icon 3"
+                  width={40}
+                  height={40}
+                />
                 <p className={styles.CardText}>
                   {uspUpskillCard.uspUpskillText}
                 </p>
@@ -121,10 +136,12 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                   handleEnrollButtonClick("Download Brochure");
                 }}
               >
-                <img
+                <Image
                   className={styles.brochureIcon}
                   src={BrochureIcon}
                   alt="Brochure Icon"
+                  width={24}
+                  height={24}
                 />
                 Brochure
               </a>

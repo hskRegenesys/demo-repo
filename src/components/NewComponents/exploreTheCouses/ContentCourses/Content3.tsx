@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../exploreTheCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
+import Image from "next/image";
 interface FacultyCard {
   facultyImg: string;
   facultyName: string;
@@ -52,11 +52,15 @@ const Content3: React.FC<Content3Props> = ({
             <SwiperSlide key={index}>
               <div className={styles.card}>
                 <div className={styles.bgcolor}> </div>
-                <img
-                  src={faculty.facultyImg}
-                  alt={faculty.facultyName}
-                  title={faculty.facultyName}
-                />
+                <div className={styles.CardImg}>
+                  <Image
+                    src={faculty.facultyImg}
+                    alt={faculty.facultyName}
+                    title={faculty.facultyName}
+                    width={88}
+                    height={88}
+                  />
+                </div>
                 <p className={styles.facultyName}>{faculty.facultyName}</p>
                 <p className={styles.courseName}>{faculty.courseName}</p>
                 {faculty.yearsOfExperience ? (
