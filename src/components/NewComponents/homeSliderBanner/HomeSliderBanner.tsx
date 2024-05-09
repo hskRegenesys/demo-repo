@@ -40,9 +40,13 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
                 alt={slide.title}
                 width={1440}
                 height={503}
-                priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={100}
+                unoptimized
+                priority
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center"
               />
             </SwiperSlide>
           ))}
@@ -66,9 +70,13 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
                 alt={slide.title}
                 width={360}
                 height={506}
-                priority={true}
+                priority
+                unoptimized
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={100}
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center"
               />
             </SwiperSlide>
           ))}
