@@ -65,18 +65,18 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
           {sliderDataMobile.map((slide, index) => (
             <SwiperSlide key={index}>
               <Image
-                src={slide.imageUrl}
                 className={Styles.img}
+                src={slide.imageUrl}
                 alt={slide.title}
                 width={360}
                 height={506}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                // quality={100}
-                // layout="responsive"
-                // priority
-                // unoptimized
-                // objectFit="cover"
-                // objectPosition="center"
+                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={100}
+                unoptimized
+                priority
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center"
               />
             </SwiperSlide>
           ))}
