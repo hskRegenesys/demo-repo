@@ -58,17 +58,6 @@
   box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
   position: relative;
 }
-.card::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  top: 0;
-  height: 80%;
-  border-left: 1px solid transparent;
-  border-image: linear-gradient(180deg, #008554 0%, rgba(0, 133, 84, 0) 100%);
-  border-image-slice: 1;
-}
 .card::before {
   content: "";
   position: absolute;
@@ -78,7 +67,18 @@
   height: 80%;
   border-right: 1px solid transparent;
   border-image: linear-gradient(180deg, #008554 0%, rgba(0, 133, 84, 0) 100%);
-  border-image-slice: 1;
+  border-image-slice: 1 !important;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  top: 0;
+  height: 80%;
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(180deg, #008554 0%, rgba(0, 133, 84, 0) 100%);
+  border-image-slice: 1 !important;
 }
 
 .cardHeading {
