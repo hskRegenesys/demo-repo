@@ -11,6 +11,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 interface TalentedComponentProp {
   handleEnrollButtonClick: () => void;
+  FacultyData: any;
 }
 
 interface Faculty {
@@ -22,6 +23,7 @@ interface Faculty {
 
 const TalentedComponent: React.FC<TalentedComponentProp> = ({
   handleEnrollButtonClick,
+  FacultyData,
 }) => {
   const data: Faculty[] = Object.values(FacultyData);
   const [paginationText, setPaginationText] = useState<any>(false);

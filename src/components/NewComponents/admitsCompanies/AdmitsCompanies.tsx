@@ -4,15 +4,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Styles from "./admitsCompanies.module.css";
-import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
+// import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
 import Image from "next/image";
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: () => void;
+  AdmiteCompaniesData: any;
 }
 SwiperCore.use([Pagination, Autoplay]);
 
 const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   handleEnrollButtonClick,
+  AdmiteCompaniesData,
 }) => {
   const { AdmitsHeading, AdmitsTitle, buttenIcon, AdmitsCards } =
     AdmiteCompaniesData;
@@ -42,7 +44,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
       </div>
       <div className={Styles.admitsCardsContainer}>
         <Swiper {...swiperSettings}>
-          {AdmitsCards.map((card, index) => (
+          {AdmitsCards.map((card: any, index: any) => (
             <SwiperSlide key={index} className={Styles.admitsCard}>
               <Image
                 src={card.AdmitsImage}

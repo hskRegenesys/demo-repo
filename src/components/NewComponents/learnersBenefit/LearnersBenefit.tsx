@@ -1,12 +1,12 @@
 // LearnersBenefit.js
 
 import React from "react";
-import LearnersBenefitData from "../../../data/newComponentData/commonComponentData/LearnersBenefitData";
+// import LearnersBenefitData from "../../../data/newComponentData/commonComponentData/LearnersBenefitData";
 import Styles from "./learnersBenefit.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
-const LearnersBenefit = () => {
+const LearnersBenefit = ({ LearnersBenefitData }: any) => {
   const {
     LearnersBenefitHeding,
     LearnersBenefitTitle,
@@ -53,7 +53,7 @@ const LearnersBenefit = () => {
             delay: 8000,
           }}
         >
-          {card.map((item, index) => (
+          {card.map((item: any, index: any) => (
             <SwiperSlide key={index}>
               <div className={Styles.Card} key={index}>
                 <div className={Styles.LeftSide}>
@@ -71,7 +71,7 @@ const LearnersBenefit = () => {
                     {item.LearnersBenefitCardTitle}
                   </h2>
                   <ul>
-                    {item.LearnersBenefittext.map((text, i) => (
+                    {item.LearnersBenefittext.map((text: any, i: any) => (
                       <li key={i}>
                         <div className={Styles.tickimg}>
                           <Image
