@@ -71,7 +71,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
                 width={360}
                 height={506}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                quality={100}
+                // quality={100}
                 // layout="responsive"
                 // priority
                 // unoptimized
