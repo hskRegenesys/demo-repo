@@ -3,14 +3,16 @@ import { refundPolicy } from "@/data/refundPolicy";
 import { Col, Row } from "react-bootstrap";
 
 const {
-  title1,
-  paragraph1,
-  title2,
+  heading,
+  titleIntro,
+  titleIntroParaph,
+  titleAdmissionFee,
+  titleAdmissionFeeParaph,
+  titleRefundStructure,
   list1,
   list2,
-  title3,
-  list3,
-  list4,
+  paragraph1,
+  details,
   paragraph2,
 } = refundPolicy;
 
@@ -21,33 +23,25 @@ const RefundPolicy = () => {
         <Row>
           <Col md={12} lg={12}>
             <div className=" p-0 privacy-policy">
-              <h1 className="page-head">Refund Policy</h1>
-              <h6>{title1}</h6>
+              <h1 className="page-head">{heading}</h1>
+              <h6>{titleIntro}</h6>
+              <p>{titleIntroParaph}</p>
+
+              <h6>{titleAdmissionFee}</h6>
+              <p>{titleAdmissionFeeParaph}</p>
+
+              <h6>{titleRefundStructure}</h6>
+              <ul>
+                {details.map((item) => {
+                  return (
+                    <li>
+                      <i className="far fa-check-circle"></i>
+                      {item.item}
+                    </li>
+                  );
+                })}
+              </ul>
               <p>{paragraph1}</p>
-
-              <h6>{title2}</h6>
-
-              <ul>
-                <li>
-                  <i className="far fa-check-circle"></i>
-                  {list1}
-                </li>
-                <li>
-                  <i className="far fa-check-circle"></i>
-                  {list2}
-                </li>
-              </ul>
-              <h6>{title3}</h6>
-              <ul>
-                <li>
-                  <i className="far fa-check-circle"></i>
-                  {list3}
-                </li>
-                <li>
-                  <i className="far fa-check-circle"></i>
-                  {list4}
-                </li>
-              </ul>
               <p>{paragraph2}</p>
             </div>
           </Col>
