@@ -4,6 +4,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import careersTransformedData from "../../../data/newComponentData/commonComponentData/careersTransformedData";
+import Image from "next/image";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -62,10 +63,13 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
   return (
     <div className={Styles.container}>
       <div className={Styles.ctFrame}>
-        <img
-          src="/assets/images/new-component-assets/ct-frame-down.webp"
-          className={Styles.ctFrameDown}
-        />
+        <div className={Styles.ctFrameDown}>
+          <Image
+            src="/assets/images/new-component-assets/ct-frame-down.webp"
+            width={198}
+            height={80}
+          />
+        </div>
       </div>
       <div className={Styles.header}>
         <h2 className={Styles.heading}>{heading}</h2>
@@ -105,12 +109,15 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
             <SwiperSlide key={index} className={Styles.swiperCard}>
               <div className={Styles.topSection}>
                 <div className={Styles.profile}>
-                  <img
-                    className={Styles.profileImg}
-                    src={swiperCard.profileImg}
-                    alt={swiperCard.name}
-                    title={swiperCard.name}
-                  />
+                  <div className={Styles.profileImg}>
+                    <Image
+                      src={swiperCard.profileImg}
+                      alt={swiperCard.name}
+                      title={swiperCard.name}
+                      width={80}
+                      height={80}
+                    />
+                  </div>
                   <div className={Styles.nameRole}>
                     <h4 className={Styles.name}>{swiperCard.name}</h4>
                     <p className={Styles.role}>{swiperCard.role}</p>
@@ -174,10 +181,13 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
       </div>
 
       <div className={Styles.ctFrame}>
-        <img
-          src="/assets/images/new-component-assets/ct-frame-up.webp"
-          className={Styles.ctFrameUp}
-        />
+        <div className={Styles.ctFrameUp}>
+          <Image
+            src="/assets/images/new-component-assets/ct-frame-up.webp"
+            width={198}
+            height={80}
+          />
+        </div>
       </div>
     </div>
   );

@@ -64,7 +64,9 @@ const Content3: React.FC<Content3Props> = ({
                 <p className={styles.facultyName}>{faculty.facultyName}</p>
                 <p className={styles.courseName}>{faculty.courseName}</p>
                 {faculty.yearsOfExperience ? (
-                  <span>{faculty.yearsOfExperience}</span>
+                  <p className={styles.yearsOfExperience}>
+                    <span>{faculty.yearsOfExperience} </span>Years of Experience{" "}
+                  </p>
                 ) : null}
               </div>
             </SwiperSlide>

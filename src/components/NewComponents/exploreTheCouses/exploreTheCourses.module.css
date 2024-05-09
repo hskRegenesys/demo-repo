@@ -379,10 +379,9 @@
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.12px;
-  margin-bottom: 20px;
 }
 
-.card span {
+.yearsOfExperience {
   color: var(--Light-Text-Secondary, #697386);
   text-align: center;
   margin-bottom: 20px;
@@ -392,6 +391,13 @@
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
+  border-top: 1px dotted #e3e8ee;
+  margin: 0px 20px;
+  padding-top: 10px;
+}
+.yearsOfExperience span {
+  font-family: Montserrat-Bold;
+  color: #2b3340;
 }
 
 @media screen and (max-width: 768px) {
@@ -567,10 +573,7 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
-}
-.weekPoint img {
-  width: 20px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .sideHeding {
