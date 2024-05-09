@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../exploreTheCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
+import Image from "next/image";
 interface Content2Props {
   contentHeading: string;
   cardTools: { img: string; alt: string }[];
@@ -39,10 +39,12 @@ const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
           {cardTools.map((tool, index) => (
             <SwiperSlide key={index}>
               <li key={index} className={styles.horizontalCard}>
-                <img
+                <Image
                   src={`/assets/images/clients/${tool.img}`}
                   alt={tool.alt}
                   className={styles.toolImage}
+                  width={144}
+                  height={82}
                 />
               </li>
             </SwiperSlide>

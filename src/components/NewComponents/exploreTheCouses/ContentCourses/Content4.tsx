@@ -1,7 +1,7 @@
 // Content4.js
 import React from "react";
 import styles from "../exploreTheCourses.module.css";
-
+import Image from "next/image";
 interface LevelCard {
   courseName: string;
   frameImg: string;
@@ -22,11 +22,14 @@ const Content4: React.FC<Content4Props> = ({ contentHeading, LevelCard }) => {
         {LevelCard.map((pricing, index) => (
           <div className={styles.card4} key={index}>
             {/* Frame Image in the top-left corner */}
-            <img
+            <Image
               src="/assets/images/new-component-assets/Group 2.svg"
               alt="Frame"
               className={styles.frameImage}
+              width={48}
+              height={48}
             />
+
             {/* Course Name in the top */}
             <p className={styles.courseNameContent4}>{pricing.courseName}</p>
             {/* Tick Icon and List */}
@@ -34,10 +37,12 @@ const Content4: React.FC<Content4Props> = ({ contentHeading, LevelCard }) => {
               <ul>
                 {pricing.list.map((item, subIndex) => (
                   <li key={subIndex}>
-                    <img
+                    <Image
                       src="/assets/images/new-component-assets/Check.svg"
                       alt="Tick Icon"
                       className={styles.tickIcon}
+                      width={24}
+                      height={24}
                     />
                     {item}
                   </li>

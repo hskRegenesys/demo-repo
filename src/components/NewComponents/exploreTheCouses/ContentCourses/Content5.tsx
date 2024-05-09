@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../exploreTheCourses.module.css";
-
+import Image from "next/image";
 interface Content5Props {
   contentHeading: string;
   durationIcon: string;
@@ -40,10 +40,20 @@ const Content5: React.FC<Content5Props> = ({
           >
             <div className={styles.weekHeader}>
               <div className={styles.textIcon}>
-                <img src={durationIcon} alt="Duration Icon" />
+                <Image
+                  src={durationIcon}
+                  alt="Duration Icon"
+                  width={24}
+                  height={24}
+                />
                 <span>{week.weekHeading}</span>
               </div>
-              <img src={dropDown} alt="DropDown Icon" />
+              <Image
+                src={dropDown}
+                alt="DropDown Icon"
+                width={24}
+                height={24}
+              />
             </div>
             {index === activeWeekIndex && (
               <div className={styles.dropdown}>
@@ -51,7 +61,12 @@ const Content5: React.FC<Content5Props> = ({
                   <ul>
                     {week.weekPoints.map((value, pointIndex) => (
                       <li key={pointIndex} className={styles.weekPoint}>
-                        <img src={tickIcon} alt="Tick Icon" />
+                        <Image
+                          src={tickIcon}
+                          alt="Tick Icon"
+                          width={20}
+                          height={20}
+                        />
                         <span>{value}</span>
                       </li>
                     ))}

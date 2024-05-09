@@ -4,28 +4,28 @@ const FacultyData = {
       "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
     facultyName: "Dr.Nilay Karade",
     courseName: "Senior Lecturer",
-    yearsOfExperience: "11+ years",
+    yearsOfExperience: "11+",
   },
   "Dr.Shilpa Joshi": {
     facultyImg:
       "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
     facultyName: "Dr.Shilpa Joshi",
     courseName: "Senior Lecturer",
-    yearsOfExperience: "20+ years",
+    yearsOfExperience: "20+",
   },
   "Samidha Kurle": {
     facultyImg:
       "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
     facultyName: "Samidha Kurle",
     courseName: "Senior Lecturer",
-    yearsOfExperience: "10+ years",
+    yearsOfExperience: "10+",
   },
   "Bhupendra Mishra": {
     facultyImg:
       "/assets/images/new-component-assets/faculty-img/bhupendra_mishra.webp",
     facultyName: "Bhupendra Mishra",
     courseName: "Senior Lecturer",
-    yearsOfExperience: "10+ years",
+    yearsOfExperience: "10+",
   },
   "Dr.Dennis Laxton": {
     facultyImg:
@@ -39,7 +39,7 @@ const FacultyData = {
       "/assets/images/new-component-assets/faculty-img/Dr-Saquib-Ahmad-Khan2.webp",
     facultyName: "Dr.Saquib Ahmad Khan",
     courseName: "Senior Lecturer",
-    yearsOfExperience: "10+ years",
+    yearsOfExperience: "10+",
   },
   "Dr.Deepika Sharma": {
     facultyImg:
@@ -53,7 +53,7 @@ const FacultyData = {
       "/assets/images/new-component-assets/faculty-img/Shaista-Fatima.webp",
     facultyName: "Dr.Shaista Fatima",
     courseName: "Senior Lecturer",
-    yearsOfExperience: "10+ years",
+    yearsOfExperience: "10+",
   },
   "James Forson": {
     facultyImg:

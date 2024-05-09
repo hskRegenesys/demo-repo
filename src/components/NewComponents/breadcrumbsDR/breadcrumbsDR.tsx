@@ -5,6 +5,7 @@ import React from "react";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
 import Styles from "./breadcrumbsDR.module.css";
+import Image from "next/image";
 
 const BreadcrumbsDR = ({
   title = "",
@@ -64,10 +65,12 @@ const BreadcrumbsDR = ({
                 {parentToParent && (
                   <>
                     <li className={Styles.separator}>
-                      <img
+                      <Image
                         className={Styles.arrowIcon}
                         src="/assets/images/new-component-assets/arrowGray.svg"
                         alt="Arrow Icon"
+                        width={10}
+                        height={10}
                       />
                     </li>
                     <li className={Styles.fontCapitalized}>

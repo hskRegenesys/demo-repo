@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "../exploreTheCourses.module.css";
-
+import Image from "next/image";
 interface Content6Props {
   handleEnrollButtonClick: (title?: string) => void;
   ContentHeding: string;
@@ -31,37 +31,51 @@ const Content6: React.FC<Content6Props> = ({
         {contraryPricingCard?.map((card, index) => (
           <div key={index} className={Styles.Contarycard}>
             <div className={Styles.cardImgContainer}>
-              <img
-                src={card.contaryFlag}
-                alt={card.contaryName}
-                title={card.contaryName}
-                className={Styles.cardImg}
-              />
+              <div className={Styles.cardImg}>
+                <Image
+                  src={card.contaryFlag}
+                  alt={card.contaryName}
+                  title={card.contaryName}
+                  width={48}
+                  height={48}
+                />
+              </div>
             </div>
             <h4>{card.contaryName}</h4>
             <div className={Styles.ContarycardContent}>
               <div className={Styles.line}>
-                <img
-                  src={PriceIcon}
-                  alt="Rate Icon"
-                  className={Styles.iconContent}
-                />
+                <div className={Styles.iconContent}>
+                  <Image
+                    src={PriceIcon}
+                    alt="Rate Icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
                 <span className={Styles.rate}>{card.price}</span>
               </div>
               <div className={Styles.line}>
-                <img
-                  src={durationIcon}
-                  alt="Duration Icon"
-                  className={Styles.iconContent}
-                />
+                <div className={Styles.iconContent}>
+                  <Image
+                    src={durationIcon}
+                    alt="Duration Icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+
                 <span className={Styles.SpanText}>{card.duration}</span>
               </div>
-              <div className={Styles.line6}>
-                <img
-                  src={EnrollmentIcon}
-                  alt="Enrollment Icon"
-                  className={Styles.iconContent}
-                />
+              <div className={Styles.line}>
+                <div className={Styles.iconContent}>
+                  <Image
+                    src={EnrollmentIcon}
+                    alt="Enrollment Icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+
                 <span className={Styles.SpanText}>10,000+ Enroled</span>
               </div>
             </div>

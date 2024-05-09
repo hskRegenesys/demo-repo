@@ -39,8 +39,10 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
                 src={slide.imageUrl}
                 alt={slide.title}
                 width={1440}
-                height={550}
-                sizes="(max-width: 400px) 100vw,(max-width: 768px) 75vw, (max-width: 1200px) 60vw,(max-width: 1500px) 10vw,(max-width: 2100px) 30vw, 33vw"
+                height={503}
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={100}
               />
             </SwiperSlide>
           ))}
@@ -64,7 +66,9 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
                 alt={slide.title}
                 width={360}
                 height={506}
-                sizes="(max-width: 400px) 100vw,(max-width: 768px) 75vw)"
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={100}
               />
             </SwiperSlide>
           ))}
