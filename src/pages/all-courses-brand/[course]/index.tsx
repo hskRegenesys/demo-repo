@@ -181,14 +181,22 @@ const Course = (props: any) => {
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
-      <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
+      <TalentedComponent
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        FacultyData={props?.initialFacultyData}
+      />
       <OurLocation />
-      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+      <AdmitsCompanies
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        AdmiteCompaniesData={props?.initialAdmiteCompaniesData}
+      />
       <StudentReview
         handleEnrollButtonClick={handleEnrollButtonClick}
         StudentReviewData={props?.initialStudentReviewData}
       />
-      <LearnersBenefit />
+      <LearnersBenefit
+        LearnersBenefitData={props?.initialLearnersBenefitData}
+      />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
       <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
@@ -215,6 +223,16 @@ export async function getServerSideProps(context: any) {
     const { default: StudentReviewData } = await import(
       "@/data/newComponentData/commonComponentData/StudentReviewData"
     );
+    const { default: AdmiteCompaniesData } = await import(
+      "@/data/newComponentData/commonComponentData/AdmiteCompaniesData"
+    );
+    const { default: LearnersBenefitData } = await import(
+      "@/data/newComponentData/commonComponentData/LearnersBenefitData"
+    );
+
+    const { default: FacultyData } = await import(
+      "@/data/newComponentData/commonComponentData/FacultyData"
+    );
 
     return {
       props: {
@@ -223,6 +241,9 @@ export async function getServerSideProps(context: any) {
         initialVideoTestimonialData: videoTestimonialData,
         intitialCoursesCardData: AllCourcesCardData,
         initialStudentReviewData: StudentReviewData,
+        initialAdmiteCompaniesData: AdmiteCompaniesData,
+        initialLearnersBenefitData: LearnersBenefitData,
+        initialFacultyData: FacultyData,
       },
     };
   } catch (error) {
@@ -232,6 +253,9 @@ export async function getServerSideProps(context: any) {
         initialVideoTestimonialData: [],
         initialStudentReviewData: [],
         intitialCoursesCardData: [],
+        initialAdmiteCompaniesData: [],
+        initialLearnersBenefitData: [],
+        initialFacultyData: [],
       },
     };
   }

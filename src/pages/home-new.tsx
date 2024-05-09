@@ -81,11 +81,11 @@ const HomeNew = () => {
       /> */}
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
-      <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
+      {/* <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} /> */}
       <OurLocation />
-      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+      {/* <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} /> */}
       {/* <StudentReview handleEnrollButtonClick={handleEnrollButtonClick} /> */}
-      <LearnersBenefit />
+      {/* <LearnersBenefit /> */}
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
       <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />

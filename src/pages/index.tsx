@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import Layout from "@/components/Layout/Layout";
-import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
-import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
-import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
+// import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
+// import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
+// import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import _ from "lodash";
 
@@ -74,10 +74,14 @@ const HomeNew = ({
   initialCourses,
   intitialCoursesCardData,
   initialStudentReviewData,
+  initialMultiplePagesBrandData,
+  initialAllCoursesDynamicData,
+  initialToolsCoveredData,
+  initialAdmiteCompaniesData,
+  initialLearnersBenefitData,
+  initialFacultyData,
 }: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [courses, setCourses] = useState(initialCourses);
-  const [allCourseData, setAllCoursesData] = useState(intitialCoursesCardData);
 
   const handleEnrollButtonClick = () => {
     setIsPopupVisible(true);
@@ -121,36 +125,42 @@ const HomeNew = ({
           background:
             "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
         }}
-        allCourseList={courses}
-        AllCourcesCardData={allCourseData}
+        allCourseList={initialCourses}
+        AllCourcesCardData={intitialCoursesCardData}
       />
       <AllCoursesSlider
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
-        allCourseList={courses}
-        AllCourcesCardData={allCourseData}
+        allCourseList={initialCourses}
+        AllCourcesCardData={intitialCoursesCardData}
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
-      <ToolCoveredCard data={ToolsCoveredData} />
-      <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
+      <ToolCoveredCard data={initialToolsCoveredData} />
+      <TalentedComponent
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        FacultyData={initialFacultyData}
+      />
       <OurLocation />
-      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+      <AdmitsCompanies
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        AdmiteCompaniesData={initialAdmiteCompaniesData}
+      />
       <StudentReview
         handleEnrollButtonClick={handleEnrollButtonClick}
         StudentReviewData={initialStudentReviewData}
       />
-      <LearnersBenefit />
+      <LearnersBenefit LearnersBenefitData={initialLearnersBenefitData} />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-      <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
+      <BlogSection data={initialMultiplePagesBrandData?.BlogSectionDataHome} />
       <LearnersSupport
-        data={MultiplePagesBrandData.LearnersSupportSectionData}
+        data={initialMultiplePagesBrandData?.LearnersSupportSectionData}
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
-      <Faq data={MultiplePagesBrandData.faqSections} />
-      <ReadMoreDropDown data={AllCoursesDynamicData.ReadMore} />
+      <Faq data={initialMultiplePagesBrandData?.faqSections} />
+      <ReadMoreDropDown data={initialAllCoursesDynamicData?.ReadMore} />
 
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
@@ -169,6 +179,26 @@ export async function getStaticProps() {
     const { default: StudentReviewData } = await import(
       "@/data/newComponentData/commonComponentData/StudentReviewData"
     );
+    const { default: MultiplePagesBrandData } = await import(
+      "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData"
+    );
+    const { default: AllCoursesDynamicData } = await import(
+      "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData"
+    );
+    const { default: ToolsCoveredData } = await import(
+      "@/data/newComponentData/commonComponentData/ToolsCoveredData"
+    );
+    const { default: AdmiteCompaniesData } = await import(
+      "@/data/newComponentData/commonComponentData/AdmiteCompaniesData"
+    );
+
+    const { default: LearnersBenefitData } = await import(
+      "@/data/newComponentData/commonComponentData/LearnersBenefitData"
+    );
+
+    const { default: FacultyData } = await import(
+      "@/data/newComponentData/commonComponentData/FacultyData"
+    );
 
     return {
       props: {
@@ -176,6 +206,12 @@ export async function getStaticProps() {
         initialVideoTestimonialData: videoTestimonialData,
         intitialCoursesCardData: AllCourcesCardData,
         initialStudentReviewData: StudentReviewData,
+        initialMultiplePagesBrandData: MultiplePagesBrandData,
+        initialAllCoursesDynamicData: AllCoursesDynamicData,
+        initialToolsCoveredData: ToolsCoveredData,
+        initialAdmiteCompaniesData: AdmiteCompaniesData,
+        initialLearnersBenefitData: LearnersBenefitData,
+        initialFacultyData: FacultyData,
       },
     };
   } catch (error) {
@@ -185,6 +221,12 @@ export async function getStaticProps() {
         initialVideoTestimonialData: [],
         initialAllCoursePageBannerData: [],
         initialStudentReviewData: [],
+        initialMultiplePagesBrandData: [],
+        initialAllCoursesDynamicData: [],
+        initialToolsCoveredData: [],
+        initialAdmiteCompaniesData: [],
+        initialLearnersBenefitData: [],
+        initialFacultyData: [],
       },
     };
   }
