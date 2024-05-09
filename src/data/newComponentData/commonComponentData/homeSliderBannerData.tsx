@@ -19,17 +19,17 @@ const homeSliderBannerData = {
   sliderDataMobile: [
     {
       imageUrl:
-        "/assets/images/new-component-assets/Home-page/Home-Banner-mobile-slider-one.png",
+        "/assets/images/new-component-assets/Home-page/Home-Banner-Mobile-slider-one.png",
       title: "Slide 1",
     },
     {
       imageUrl:
-        "/assets/images/new-component-assets/Home-page/Home-Banner-mobile-slider-one.png",
+        "/assets/images/new-component-assets/Home-page/Home-Banner-Mobile-slider-one.png",
       title: "Slide 2",
     },
     {
       imageUrl:
-        "/assets/images/new-component-assets/Home-page/Home-Banner-mobile-slider-one.png",
+        "/assets/images/new-component-assets/Home-page/Home-Banner-Mobile-slider-one.png",
       title: "Slide 3",
     },
   ],
