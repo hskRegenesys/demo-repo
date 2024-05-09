@@ -19468,7 +19468,7 @@ input.PhoneInputInput {
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 850px;
+  min-height: 740px;
 }
 
 .tns-controls1 {
@@ -20604,7 +20604,7 @@ span.page-head {
   }
   .privacy-policy {
     margin-bottom: 0px;
-    position: relative;
+    
   }
 }
 .font-capitalized {
