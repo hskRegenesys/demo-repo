@@ -1,5 +1,5 @@
 import React from "react";
-import StudentReviewData from "../../../data/newComponentData/commonComponentData/StudentReviewData";
+// import StudentReviewData from "../../../data/newComponentData/commonComponentData/StudentReviewData";
 import Styles from "./StudentReview.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -7,9 +7,13 @@ import Image from "next/image";
 
 interface StudentReviewProps {
   handleEnrollButtonClick: () => void;
+  StudentReviewData: any;
 }
 
-const StudentReview = ({ handleEnrollButtonClick }: StudentReviewProps) => {
+const StudentReview = ({
+  handleEnrollButtonClick,
+  StudentReviewData,
+}: StudentReviewProps) => {
   const {
     StudentReviewTitle,
     StudentReviewHeading,
@@ -38,7 +42,7 @@ const StudentReview = ({ handleEnrollButtonClick }: StudentReviewProps) => {
             1700: { slidesPerView: 3 },
           }}
         >
-          {StudentReviewCard.map((card, index) => {
+          {StudentReviewCard.map((card: any, index: number) => {
             const starRating = card.StudentReviewStar; // Assuming this property exists
             const fullStars = Math.floor(starRating);
             const hasHalfStar = starRating % 1 !== 0;

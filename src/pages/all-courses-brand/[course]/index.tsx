@@ -184,7 +184,10 @@ const Course = (props: any) => {
       <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
       <OurLocation />
       <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
-      <StudentReview handleEnrollButtonClick={handleEnrollButtonClick} />
+      <StudentReview
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        StudentReviewData={props?.initialStudentReviewData}
+      />
       <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
@@ -209,6 +212,9 @@ export async function getServerSideProps(context: any) {
     const { default: AllCourcesCardData } = await import(
       "@/data/newComponentData/commonComponentData/AllCourcesCardData"
     );
+    const { default: StudentReviewData } = await import(
+      "@/data/newComponentData/commonComponentData/StudentReviewData"
+    );
 
     return {
       props: {
@@ -216,6 +222,7 @@ export async function getServerSideProps(context: any) {
         initialCourses: allCourseList,
         initialVideoTestimonialData: videoTestimonialData,
         intitialCoursesCardData: AllCourcesCardData,
+        initialStudentReviewData: StudentReviewData,
       },
     };
   } catch (error) {
@@ -223,6 +230,8 @@ export async function getServerSideProps(context: any) {
       props: {
         initialCourses: [],
         initialVideoTestimonialData: [],
+        initialStudentReviewData: [],
+        intitialCoursesCardData: [],
       },
     };
   }
