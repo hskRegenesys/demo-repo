@@ -23,8 +23,6 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
 
   const imageUrl = `${process.env.awsImage_url}`;
 
-  console.log("page-url", imageUrl);
-
   return (
     <div>
       <div className={Styles.desktopSlide}>
