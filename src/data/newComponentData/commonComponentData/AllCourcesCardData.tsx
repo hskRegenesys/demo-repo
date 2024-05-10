@@ -24,7 +24,7 @@ const AllCourcesCardData = {
         parentId: null,
         name: "Data Science",
         cardProgram: "Data Science",
-        cardImg: "/assets/images/new-component-assets/Courses-Card/DS-card.png",
+        cardImg: "Images/DS-card.png",
         ImgAlt: "Data Science - Digital Regenesys",
 
         cardWeek: "30 Weeks",
@@ -88,7 +88,7 @@ const AllCourcesCardData = {
         description: "Project Management",
         parentId: null,
         cardProgram: "Project Management",
-        cardImg: "/assets/images/new-component-assets/Courses-Card/PM-card.png",
+        cardImg: "Images/PM-card.png",
         ImgAlt: "Project Management - Digital Regenesys",
 
         cardCount: "10,000+",
@@ -104,7 +104,7 @@ const AllCourcesCardData = {
         parentId: null,
         name: "Digital Marketing",
         cardProgram: "Digital Marketing",
-        cardImg: "/assets/images/new-component-assets/Courses-Card/DM-card.png",
+        cardImg: "Images/DM-card.png",
         ImgAlt: "Digital Marketing - Digital Regenesys",
 
         cardWeek: "20 Weeks",
@@ -147,7 +147,7 @@ const AllCourcesCardData = {
         description: "Cybersecurity",
         parentId: null,
         cardProgram: "Cyber Security",
-        cardImg: "/assets/images/new-component-assets/Courses-Card/CS-card.png",
+        cardImg: "Images/CS-card.png",
         ImgAlt: "Cyber Security - Digital Regenesys",
 
         cardCount: "10,000+",
@@ -163,7 +163,7 @@ const AllCourcesCardData = {
         parentId: null,
         name: "Artificial Intelligence",
         cardProgram: "Artificial Intelligence",
-        cardImg: "/assets/images/new-component-assets/Courses-Card/AI-card.png",
+        cardImg: "Images/AI-card.png",
         ImgAlt: "Artificial Intelligence - Digital Regenesys",
 
         cardWeek: "37 Weeks",
@@ -216,7 +216,7 @@ const AllCourcesCardData = {
         description: "Full Stack Development",
         parentId: null,
         cardProgram: "Full Stack Development",
-        cardImg: "/assets/images/new-component-assets/Courses-Card/FS-card.png",
+        cardImg: "Images/FS-card.png",
         ImgAlt: "Full Stack Development - Digital Regenesys",
 
         cardCount: "10,000+",
@@ -233,8 +233,7 @@ const AllCourcesCardData = {
         description: "Data And Business Analytics",
         parentId: null,
         cardProgram: "Data And Business Analytics",
-        cardImg:
-          "/assets/images/new-component-assets/Courses-Card/DBA-card.png",
+        cardImg: "Images/DBA-card.png",
         ImgAlt: "Data And Business Analytics - Digital Regenesys",
 
         cardCount: "10,000+",
@@ -251,7 +250,7 @@ const AllCourcesCardData = {
         description: "Design Thinking",
         parentId: null,
         cardProgram: "Design Thinking",
-        cardImg: "/assets/images/new-component-assets/Courses-Card/DT-card.png",
+        cardImg: "Images/DT-card.png",
         ImgAlt: "Design Thinking - Digital Regenesys",
 
         cardCount: "10,000+",

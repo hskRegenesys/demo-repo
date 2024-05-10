@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const UspSection = () => {
   const { uspLocationCard, uspEnrollmentCard, uspUpskillCard } = UspSectionData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const [count, setCount] = useState("0");
   const [isMobile, setIsMobile] = useState(false);
@@ -48,7 +49,8 @@ const UspSection = () => {
     <div className={styles.uspSectionContainer}>
       <div className={styles.uspCard}>
         <Image
-          src={uspLocationCard.usplocationIcon}
+          // src={uspLocationCard.usplocationIcon}
+          src={`${imageUrl}${uspLocationCard.usplocationIcon}`}
           alt="Icon 1"
           width={40}
           height={40}
@@ -57,7 +59,8 @@ const UspSection = () => {
       </div>
       <div className={`${styles.uspCard} ${styles.enrollmentCard}`}>
         <Image
-          src={uspEnrollmentCard.StudentEnrolIcon}
+          // src={uspEnrollmentCard.StudentEnrolIcon}
+          src={`${imageUrl}${uspEnrollmentCard.StudentEnrolIcon}`}
           alt="Icon 2"
           width={40}
           height={40}
@@ -75,7 +78,8 @@ const UspSection = () => {
       </div>
       <div className={styles.uspCard}>
         <Image
-          src={uspUpskillCard.uspBookIcon}
+          // src={uspUpskillCard.uspBookIcon}
+          src={`${imageUrl}${uspUpskillCard.uspBookIcon}`}
           alt="Icon 3"
           width={40}
           height={40}

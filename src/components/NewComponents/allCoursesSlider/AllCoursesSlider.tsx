@@ -55,6 +55,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
@@ -178,7 +179,8 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
                   </div> */}
                   <Image
-                    src={parentCourse.cardImg}
+                    // src={parentCourse.cardImg}
+                    src={`${imageUrl}${parentCourse.cardImg}`}
                     alt={parentCourse.ImgAlt}
                     title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
