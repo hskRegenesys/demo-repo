@@ -33,8 +33,9 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
           layout="responsive"
           objectFit="cover"
           objectPosition="center"
+          loading="eager"
         />
-      </div>{" "}
+      </div>
       <div className={Styles.bannerImageMobile}>
         <Image
           src={MobileBannerImg}
@@ -48,6 +49,7 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
           layout="responsive"
           objectFit="cover"
           objectPosition="center"
+          loading="eager"
         />
       </div>
       <div className={Styles.bannerTextContainer}>

@@ -184,6 +184,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     className={Styles.cardImage}
                     width={346}
                     height={220}
+                    loading="eager"
                   />
                 </div>
                 <div className={Styles.textContainer}>
@@ -195,6 +196,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                         className={Styles.cardIcon}
                         width={24}
                         height={24}
+                        loading="eager"
                       />
                     </div>
                     <div className={Styles.boldText}>
@@ -212,6 +214,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                         className={Styles.cardIcon}
                         width={24}
                         height={24}
+                        loading="eager"
                       />
                     </div>
 
@@ -231,6 +234,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
+                          loading="eager"
                         />
                       </div>
                       <div className={Styles.boldText}>
