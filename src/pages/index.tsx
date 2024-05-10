@@ -7,10 +7,11 @@ import Layout from "@/components/Layout/Layout";
 // import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import _ from "lodash";
+import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 
-const HomeSliderBanner = dynamic(
-  () => import("@/components/NewComponents/homeSliderBanner/HomeSliderBanner")
-);
+// const HomeSliderBanner = dynamic(
+//   () => import("@/components/NewComponents/homeSliderBanner/HomeSliderBanner")
+// );
 
 const UspSection = dynamic(
   () => import("@/components/NewComponents/uspSection/UspSection")
@@ -114,7 +115,6 @@ const HomeNew = ({
         />
       )}
       <HeaderOne />
-
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />

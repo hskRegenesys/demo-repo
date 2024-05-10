@@ -52,7 +52,13 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
             <SwiperSlide key={index}>
               <div key={index} className={Styles.LsCard}>
                 <div className={Styles.LsImage}>
-                  <Image src={card.LsImg} alt="Ls" width={360} height={160} />
+                  <Image
+                    src={card.LsImg}
+                    alt="Ls"
+                    width={360}
+                    height={160}
+                    loading="eager"
+                  />
                 </div>
 
                 <div className={Styles.LsContent}>

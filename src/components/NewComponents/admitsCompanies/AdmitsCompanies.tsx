@@ -51,6 +51,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
                 alt={`admitImg ${index}`}
                 width={100}
                 height={60}
+                loading="eager"
               />
             </SwiperSlide>
           ))}
