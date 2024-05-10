@@ -15,6 +15,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
     LearnersBenefitFrame1,
     LearnersBenefitFrame2,
   } = LearnersBenefitData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={Styles.LearnersBenefitContainer}>
@@ -26,7 +27,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
       <div className={Styles.frame}>
         <div className={Styles.frame1}>
           <Image
-            src={LearnersBenefitFrame2}
+            src={`${imageUrl}${LearnersBenefitFrame2}`}
             alt="Tick Icon"
             width={122}
             height={179}
@@ -34,7 +35,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
         </div>
         <div className={Styles.frame2}>
           <Image
-            src={LearnersBenefitFrame1}
+            src={`${imageUrl}${LearnersBenefitFrame1}`}
             alt="Tick Icon"
             width={122}
             height={179}
@@ -59,7 +60,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                 <div className={Styles.LeftSide}>
                   <div className={Styles.CardImg}>
                     <Image
-                      src={item.LearnersBenefitCardImg}
+                      src={`${imageUrl}${item.LearnersBenefitCardImg}`}
                       alt="Card Image"
                       width={180}
                       height={180}
@@ -76,7 +77,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                         <div className={Styles.tickimg}>
                           <Image
                             className={Styles.tickimg}
-                            src={LearnersBenefitTickIcon}
+                            src={`${imageUrl}${LearnersBenefitTickIcon}`}
                             alt="Tick Icon"
                             width={20}
                             height={20}

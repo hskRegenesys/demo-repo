@@ -18,6 +18,7 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
     icon2,
     icon3,
   } = connectContainerData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={styles.connectContainer}>
@@ -31,7 +32,13 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
                 <div key={index} className={styles.icontext}>
                   <div className={styles.icon}>
                     <Image
-                      src={index === 0 ? icon1 : index === 1 ? icon2 : icon3}
+                      src={
+                        index === 0
+                          ? `${imageUrl}${icon1}`
+                          : index === 1
+                          ? `${imageUrl}${icon2}`
+                          : `${imageUrl}${icon3}`
+                      }
                       alt={`Icon ${index + 1}`}
                       width={20}
                       height={20}
