@@ -19,7 +19,11 @@ const nextConfig = {
     awsImage_url: process.env.AWS_BUCKET_URL_UAT,
   },
   images: {
-    domains: ["www.regenesys.net", "blog-api.digitalregenesys.com"],
+    domains: [
+      "www.regenesys.net",
+      "blog-api.digitalregenesys.com",
+      "s3-inf-uat-dr-website.s3.amazonaws.com",
+    ],
   },
 };
 

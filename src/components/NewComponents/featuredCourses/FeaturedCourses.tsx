@@ -49,6 +49,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
@@ -110,7 +111,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         </h2>
         <div className={Styles.rocketImg}>
           <Image
-            src="/assets/images/new-component-assets/Rocket BG.svg"
+            src={`${imageUrl}Images/Rocket-frame.svg`}
             alt="rocket"
             width={1440}
             height={550}
@@ -155,7 +156,8 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
                   </div> */}
                     <Image
-                      src={parentCourse.cardImg}
+                      // src={parentCourse.cardImg}
+                      src={`${imageUrl}${parentCourse.cardImg}`}
                       alt={parentCourse.ImgAlt}
                       title={parentCourse.ImgAlt}
                       className={Styles.cardImage}

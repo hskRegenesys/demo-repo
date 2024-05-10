@@ -2,16 +2,10 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import Layout from "@/components/Layout/Layout";
-// import ToolsCoveredData from "@/data/newComponentData/commonComponentData/ToolsCoveredData";
-// import MultiplePagesBrandData from "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData";
-// import AllCoursesDynamicData from "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData";
+
 import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import _ from "lodash";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
-
-// const HomeSliderBanner = dynamic(
-//   () => import("@/components/NewComponents/homeSliderBanner/HomeSliderBanner")
-// );
 
 const UspSection = dynamic(
   () => import("@/components/NewComponents/uspSection/UspSection")
