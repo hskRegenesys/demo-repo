@@ -19,6 +19,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [showFullParagraph, setShowFullParagraph] = useState(false);
   const [needsTruncation, setNeedsTruncation] = useState(false);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   useEffect(() => {
     const handleResize = () => {
@@ -66,7 +67,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
       <div className={Styles.aboutUs}>
         <div className={Styles.aboutUsLeft}>
           <Image
-            src={aboutUsImg}
+            src={`${imageUrl}${aboutUsImg}`}
             alt={aboutUsImgAlt}
             title={aboutUsImgAlt}
             className={Styles.aboutUsImage}
@@ -116,7 +117,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
           <div key={index} className={Styles.card}>
             <div className={Styles.cardImg}>
               <Image
-                src={card.cardImg}
+                src={`${imageUrl}${card.cardImg}`}
                 alt={`Card ${index + 1}`}
                 width={52}
                 height={52}
