@@ -21,6 +21,8 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   const { sliderDataDesktop, sliderDataMobile } = homeSliderBannerData;
   const secondsPerSlide = 3;
 
+  const imageUrl = `${process.env.awsImage_url}`;
+
   return (
     <div>
       <div className={Styles.desktopSlide}>
@@ -36,7 +38,8 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             <SwiperSlide key={index}>
               <Image
                 className={Styles.img}
-                src={slide.imageUrl}
+                // src={slide.imageUrl}
+                src={`${imageUrl}${slide.imageUrl}`}
                 alt={slide.title}
                 width={1440}
                 height={503}
@@ -67,7 +70,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             <SwiperSlide key={index}>
               <Image
                 className={Styles.img}
-                src={slide.imageUrl}
+                src={`${imageUrl}${slide.imageUrl}`}
                 alt={slide.title}
                 width={360}
                 height={506}

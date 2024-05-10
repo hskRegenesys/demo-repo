@@ -16,6 +16,7 @@ const nextConfig = {
   },
   env: {
     ENV_NAME: process.env.ENV_NAME,
+    awsImage_url: process.env.AWS_BUCKET_URL_UAT,
   },
   images: {
     domains: ["www.regenesys.net", "blog-api.digitalregenesys.com"],
