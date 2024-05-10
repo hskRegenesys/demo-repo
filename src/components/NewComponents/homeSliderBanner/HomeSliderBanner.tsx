@@ -47,6 +47,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
+                loading="eager"
               />
             </SwiperSlide>
           ))}
@@ -77,6 +78,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
+                loading="eager"
               />
             </SwiperSlide>
           ))}

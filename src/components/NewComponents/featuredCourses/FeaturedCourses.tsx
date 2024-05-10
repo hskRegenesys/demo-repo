@@ -115,6 +115,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
             width={1440}
             height={550}
             layout="responsive"
+            loading="eager"
           />
         </div>
         <div className={Styles.cardContainer}>
@@ -160,6 +161,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                       className={Styles.cardImage}
                       width={346}
                       height={220}
+                      loading="eager"
                     />
                   </div>
                   <div className={Styles.textContainer}>
@@ -171,6 +173,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
+                          loading="eager"
                         />
                       </div>
                       <div className={Styles.boldText}>
@@ -188,6 +191,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
+                          loading="eager"
                         />
                       </div>
 
@@ -207,6 +211,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                             className={Styles.cardIcon}
                             width={24}
                             height={24}
+                            loading="eager"
                           />
                         </div>
                         <div className={Styles.boldText}>
