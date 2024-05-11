@@ -15,6 +15,7 @@ const WhyChooseDR: React.FC<WhyChooseDRProps> = ({
     whyChooseDRCard,
     whyChooseDRButtonText,
   } = whyChooseDRData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={Styles.WhyChooseDRContainer}>
@@ -27,7 +28,8 @@ const WhyChooseDR: React.FC<WhyChooseDRProps> = ({
           <div key={index} className={Styles.card}>
             <div className={Styles.cardImg}>
               <Image
-                src={card.cardImg}
+                // src={card.cardImg}
+                src={`${imageUrl}${card.cardImg}`}
                 alt={`Card ${index + 1}`}
                 width={52}
                 height={52}

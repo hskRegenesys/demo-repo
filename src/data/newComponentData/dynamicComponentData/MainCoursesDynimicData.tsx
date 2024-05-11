@@ -253,7 +253,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AL, ML, Drones, Robots, and data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products and services by promoting, enhancing core competencies, capacity building.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -264,7 +264,7 @@ const MainCoursesDynimicData = {
         "Statistical Analytics",
         "Database Structure & Algorithms",
       ],
-      image: "/assets/images/certificate/DSN_certificates.webp",
+      image: "Images/Certificate/DSN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -423,8 +423,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/DS-Popup-Desktop.png",
+      PopupMobile: "Images/Popup/DS-Popup-Mobile.png",
     },
   },
   DigitalMarketing: {
@@ -674,7 +674,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Enhance online marketing skills and boost your career prospects with the Digital Marketing Certificate Course. Learn advanced strategies in SEO, content marketing, social media, and more from industry experts. Enrol now, accelerate your professional growth and stand out in the competitive digital marketing field with our comprehensive certification course. Sign up now to stay ahead in the evolving digital landscape.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -685,7 +685,7 @@ const MainCoursesDynimicData = {
         "Content Marketing Excellence",
         " Expertise in Various Digital Channels",
       ],
-      image: "/assets/images/certificate/DMN_certificates.webp",
+      image: "Images/Certificate/DMN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1053,7 +1053,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "The Digital Regenesys Project Management Certificate equips professionals with essential skills to excel in project management. This online project management course covers key concepts, tools, and techniques for successful project planning, execution, and monitoring. Participants will learn effective communication strategies, risk management principles, and agile methodologies to enhance project outcomes. The certificate course is designed for individuals seeking to advance their project management careers in a digital environment.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -1064,7 +1064,7 @@ const MainCoursesDynimicData = {
         "Project Closure and Evaluation",
         "Comprehensive Project Management Knowledge",
       ],
-      image: "/assets/images/certificate/PM_certificates.webp",
+      image: "Images/Certificate/PM_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1417,7 +1417,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -1428,7 +1428,7 @@ const MainCoursesDynimicData = {
         " Machine Learning Fundamentals.",
         "Introduction to Artificial Intelligence.",
       ],
-      image: "/assets/images/certificate/AIN_certificates.webp",
+      image: "Images/Certificate/AIN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1820,7 +1820,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to equip individuals with the knowledge and skills needed to address the challenges in cyber security. It covers network security, information security, ethical hacking, risk management, and cyber security governance. The cyber security course may align with industry standards and best practices, making it relevant and recognised in cyber security.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -1831,7 +1831,7 @@ const MainCoursesDynimicData = {
         "Information security controls  ",
         "Network security",
       ],
-      image: "/assets/images/certificate/CSC_certificates.webp",
+      image: "Images/Certificate/CSC_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -2225,7 +2225,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "The Digital Regenesys Design Thinking Course offers a comprehensive curriculum designed to enhance participants' understanding and application of design thinking principles. This intensive course equips students with practical tools and techniques to solve complex problems creatively. Through a series of hands-on projects and case studies, individuals will develop critical thinking skills and learn how to approach challenges from a user-centric perspective. ",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -2236,7 +2236,7 @@ const MainCoursesDynimicData = {
         "ITools and Techniques Proficiency.",
         "Empathy and User-Centric Thinking.",
       ],
-      image: "/assets/images/certificate/DTC_certificates.webp",
+      image: "Images/Certificate/DTC_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -2666,7 +2666,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to deliver a comprehensive journey through the fundamental technologies and best practices essential to modern web development in its Full Stack Web & Software Development course. By immersing learners in hands-on projects and real-world simulations, the programme equips them with practical experience, empowering them to confidently navigate challenges within the realm of Full Stack Web & Software Development upon completion.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -2677,7 +2677,7 @@ const MainCoursesDynimicData = {
         "Version Control",
         "Operating Sytems and DevOps",
       ],
-      image: "/assets/images/certificate/FSD_certificates.webp",
+      image: "Images/Certificate/FSD_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -3067,7 +3067,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with essential concepts and tools crucial for proficient data analysis and reporting in its course on Data and Business Analytics. Progressing to an advanced stage, participants delve into advanced techniques, honing skills in data visualisation for impactful storytelling and gaining expertise in predictive and prescriptive analytics. By focusing on skill elevation, this course aims to prepare participants to effectively navigate the dynamic landscape of business analytics and tackle upcoming challenges with confidence.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -3078,7 +3078,7 @@ const MainCoursesDynimicData = {
         "Data Visualisation",
         "Advanced techniques",
       ],
-      image: "/assets/images/certificate/DBA_certificates.webp",
+      image: "Images/Certificate/DBA_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -3523,7 +3523,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Development certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -3534,7 +3534,7 @@ const MainCoursesDynimicData = {
         "Financial risk management",
         "Interpersonal skills",
       ],
-      image: "/assets/images/certificate/MD_certificates.webp",
+      image: "Images/Certificate/MD_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
