@@ -1,7 +1,6 @@
 const MultiplePagesBrandData = {
   BannerWithImg: {
-    BannerImgDesktop:
-      "/assets/images/new-component-assets/BrandPage/Brand-Banner.webp",
+    BannerImgDesktop: "Images/Blog/Brand-Banner.webp",
     BannerImgAlt: "Digital Regenesys online courses - Digital Regenesys",
     coursePageName: "Digital Regenesys!",
     BestSaleText: "Supercharge Your Career with ",
@@ -57,8 +56,7 @@ const MultiplePagesBrandData = {
     BlogSectionTitle: "For Your Research & Information",
     cards: [
       {
-        blogImg:
-          "/assets/images/new-component-assets/BrandPage/brand-blog-online-course.webp",
+        blogImg: "Images/Blog/brand-blog-online-course.webp",
         blogQuestion: "What Are the Benefits of Taking Online Courses?",
         blogLink:
           "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-taking-online-courses",
@@ -66,8 +64,7 @@ const MultiplePagesBrandData = {
           "In the ever-evolving landscape of education, online courses have transformed the traditional learning paradigm, offering many advantages to learners worldwide. These digital educational experiences,",
       },
       {
-        blogImg:
-          "/assets/images/new-component-assets/BrandPage/brand-blog-certificates.webp",
+        blogImg: "Images/Blog/brand-blog-certificates.webp",
         blogQuestion:
           "Where Do You Find The Best Online Courses With Certificates?",
         blogLink:
@@ -76,8 +73,7 @@ const MultiplePagesBrandData = {
           "In the era of online education, the quest for the best courses, accompanied by valuable certificates, has become a vital pursuit",
       },
       {
-        blogImg:
-          "/assets/images/new-component-assets/BrandPage/brand-blog-it-courses.webp",
+        blogImg: "Images/Blog/brand-blog-it-courses.webp",
         blogQuestion:
           "How Do You Choose The Right Online IT Course For Your Career?",
         blogLink:
@@ -86,8 +82,7 @@ const MultiplePagesBrandData = {
           "In the ever-evolving landscape of Information Technology (IT), choosing the right online course for your career is a pivotal decision to shape your professional trajectory. As technology advances,",
       },
       {
-        blogImg:
-          "/assets/images/new-component-assets/BrandPage/brand-blog-working-professionals.webp",
+        blogImg: "Images/Blog/brand-blog-working-professionals.webp",
         blogQuestion: "Why Online Courses Are Ideal For Working Professionals?",
         blogLink:
           "https://www.digitalregenesys.com/blog/how-do-you-choose-the-right-online-it-course-for-your-career",

@@ -29,6 +29,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
   }
 
   const addBottomValue = data.cards.length <= 3 ? "0px" : "60px";
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={Styles.blogSectionContainer}>
@@ -57,7 +58,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
                 <Image
-                  src={card.blogImg}
+                  src={`${imageUrl}${card.blogImg}`}
+                  // src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
                   width={360}
@@ -74,7 +76,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                       Know More
                       <span className={Styles.arrowIcon}>
                         <Image
-                          src="/assets/images/new-component-assets/Readmore.svg"
+                          src={`${imageUrl}Icons/Readmore.svg`}
+                          // src="/assets/images/new-component-assets/Readmore.svg"
                           alt="cardStar"
                           className={Styles.img}
                           width={12}
