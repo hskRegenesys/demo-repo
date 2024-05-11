@@ -1,25 +1,25 @@
 const AdmiteCompaniesData = {
   AdmitsHeading: "Digital Regenesys Alumni ",
   AdmitsTitle: "We have alumni working in top companies.",
-  buttenIcon: "/assets/images/new-component-assets/DoubleArrowWhite.svg",
+  buttenIcon: "Icons/DoubleArrowWhite.svg",
   AdmitsCards: [
     {
-      AdmitsImage: "/assets/images/clients/1.webp",
+      AdmitsImage: "Images/Alumni/wipro.png",
     },
     {
-      AdmitsImage: "/assets/images/clients/2.webp",
+      AdmitsImage: "Images/Alumni/tridhya.png",
     },
     {
-      AdmitsImage: "/assets/images/clients/3.webp",
+      AdmitsImage: "Images/Alumni/security-software-solution.png",
     },
     {
-      AdmitsImage: "/assets/images/clients/4.webp",
+      AdmitsImage: "Images/Alumni/sankey-solution.png",
     },
     {
-      AdmitsImage: "/assets/images/clients/5.webp",
+      AdmitsImage: "Images/Alumni/route-mobile.png",
     },
     {
-      AdmitsImage: "/assets/images/clients/6.webp",
+      AdmitsImage: "Images/Alumni/q-tech.png",
     },
   ],
 };

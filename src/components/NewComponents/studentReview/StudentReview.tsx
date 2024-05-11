@@ -22,6 +22,7 @@ const StudentReview = ({
     FullGrayStarImg,
     StudentReviewCard,
   } = StudentReviewData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={Styles.cardContainer}>
