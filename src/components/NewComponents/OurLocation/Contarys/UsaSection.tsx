@@ -2,6 +2,7 @@
 import React from "react";
 import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 import Styles from "../OurLocation.module.css";
+import Image from "next/image";
 
 interface UsaSectionProps {
   isHovered?: boolean;
@@ -14,6 +15,8 @@ const UsaSection: React.FC<UsaSectionProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
+  const imageUrl = `${process.env.awsImage_url}`;
+
   return (
     <div className={`${Styles.UsaSection} ${isHovered ? Styles.hidden : ""}`}>
       {isHovered && (
@@ -22,11 +25,15 @@ const UsaSection: React.FC<UsaSectionProps> = ({
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
         >
-          <img
-            src={OurLocationData.USA.countryFlagImg}
+          <Image
+            src={`${imageUrl}${OurLocationData.USA.countryFlagImg}`}
+            // src={OurLocationData.USA.countryFlagImg}
             className={Styles.contaryFlag}
             alt={OurLocationData.USA.countryName}
             title={OurLocationData.USA.countryName}
+            width={50}
+            height={82}
+            loading="eager"
           />
           <div
             className={`${Styles.USAcontaryAdressCard} ${Styles.contaryAdress}`}
@@ -40,13 +47,16 @@ const UsaSection: React.FC<UsaSectionProps> = ({
         <div
           className={`${Styles.USAContaryLocation} ${Styles.contaryLocation}`}
         >
-          <img
-            src={OurLocationData.USA.locationPinImage}
+          <Image
+            src={`${imageUrl}${OurLocationData.locationPinImage}`}
+            // src={OurLocationData.locationPinImage}
             className={Styles.locationpin}
             alt={OurLocationData.USA.countryName}
             title={OurLocationData.USA.countryName}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            width={14}
+            height={20}
           />
           <span className={Styles.contaryname}>
             {OurLocationData.USA.countryName}

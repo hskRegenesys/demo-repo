@@ -28,6 +28,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   const data: Faculty[] = Object.values(FacultyData);
   const [paginationText, setPaginationText] = useState<any>(false);
   const swiperRef = useRef<any>(null);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   useEffect(() => {
     const handleResize = () => {
@@ -119,7 +120,8 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                     <div className={styles.bgcolor}></div>
                     <div className={styles.cardImg}>
                       <Image
-                        src={faculty.facultyImg}
+                        src={`${imageUrl}${faculty.facultyImg}`}
+                        // src={faculty.facultyImg}
                         alt={faculty.facultyName}
                         title={faculty.facultyName}
                         width={110}

@@ -1,63 +1,54 @@
 const FacultyData = {
   "Dr.Nilay Karade": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+    facultyImg: "Images/Faculty/dr_nilay_profile.webp",
     facultyName: "Dr.Nilay Karade",
     courseName: "Senior Lecturer",
     yearsOfExperience: "11+",
   },
   "Dr.Shilpa Joshi": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+    facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
     facultyName: "Dr.Shilpa Joshi",
     courseName: "Senior Lecturer",
     yearsOfExperience: "20+",
   },
   "Samidha Kurle": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+    facultyImg: "Images/Faculty/Samidha_Photo.webp",
     facultyName: "Samidha Kurle",
     courseName: "Senior Lecturer",
     yearsOfExperience: "10+",
   },
   "Bhupendra Mishra": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/bhupendra_mishra.webp",
+    facultyImg: "Images/Faculty/bhupendra_mishra.webp",
     facultyName: "Bhupendra Mishra",
     courseName: "Senior Lecturer",
     yearsOfExperience: "10+",
   },
   "Dr.Dennis Laxton": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/Dennis-Laxton.webp",
+    facultyImg: "Images/Faculty/Dennis-Laxton.webp",
     facultyName: "Dr.Dennis Laxton",
     courseName: "Senior Lecturer",
     yearsOfExperience: "",
   },
   "Dr.Saquib Ahmad Khan": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/Dr-Saquib-Ahmad-Khan2.webp",
+    facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
     facultyName: "Dr.Saquib Ahmad Khan",
     courseName: "Senior Lecturer",
     yearsOfExperience: "10+",
   },
   "Dr.Deepika Sharma": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/faculty_deepika_sharma.webp",
+    facultyImg: "Images/Faculty/faculty_deepika_sharma.webp",
     facultyName: "Dr.Deepika Sharma",
     courseName: "Senior Lecturer",
     yearsOfExperience: "",
   },
   "Dr.Shaista Fatima": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/Shaista-Fatima.webp",
+    facultyImg: "Images/Faculty/Shaista-Fatima.webp",
     facultyName: "Dr.Shaista Fatima",
     courseName: "Senior Lecturer",
     yearsOfExperience: "10+",
   },
   "James Forson": {
-    facultyImg:
-      "/assets/images/new-component-assets/faculty-img/James_forson.webp",
+    facultyImg: "Images/Faculty/James_forson.webp",
     facultyName: "James Forson",
     courseName: "Senior Lecturer",
     yearsOfExperience: "",
