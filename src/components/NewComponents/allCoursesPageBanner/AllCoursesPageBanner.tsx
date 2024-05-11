@@ -17,12 +17,14 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
     ButtonText,
     ParagraphTextMobile,
   } = allCoursesPageBannerData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={Styles.bannerContainer}>
       <div className={Styles.bannerImageDesktop}>
         <Image
-          src={DesktopBannerImg}
+          src={`${imageUrl}${DesktopBannerImg}`}
+          // src={DesktopBannerImg}
           alt="Banner"
           width={1440}
           height={580}
@@ -38,7 +40,8 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
       </div>
       <div className={Styles.bannerImageMobile}>
         <Image
-          src={MobileBannerImg}
+          src={`${imageUrl}${MobileBannerImg}`}
+          // src={MobileBannerImg}
           alt="Banner"
           width={360}
           height={524}

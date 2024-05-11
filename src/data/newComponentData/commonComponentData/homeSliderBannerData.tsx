@@ -1,15 +1,15 @@
 const homeSliderBannerData = {
   sliderDataDesktop: [
     {
-      imageUrl: "Images/Banner/Home-Banner-desktop-slider-one.png",
+      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-one.png",
       title: "Slide 1",
     },
     {
-      imageUrl: "Images/Banner/Home-Banner-desktop-slider-one.png",
+      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-one.png",
       title: "Slide 2",
     },
     {
-      imageUrl: "Images/Banner/Home-Banner-desktop-slider-one.png",
+      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-one.png",
       title: "Slide 3",
     },
   ],
