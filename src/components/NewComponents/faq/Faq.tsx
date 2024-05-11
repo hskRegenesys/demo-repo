@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import Styles from "./faq.module.css";
 import Image from "next/image";
 interface FAQData {
-  HeadingDesktop: string;
-  HeadingMobile: string;
-
   sections: {
     heading: string;
     faqs: { question: string; answer: string }[];
   }[];
-  arrowIcon: string;
 }
 
 const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
@@ -17,6 +13,7 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
     data.sections.length > 0 ? data.sections[0].heading : null
   );
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const toggleAnswer = (index: number) => {
     setSelectedQuestion(selectedQuestion === index ? null : index);
@@ -24,7 +21,7 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
 
   return (
     <div className={Styles.faqDesktop}>
-      <h2 className={`${Styles.topcontent}`}>{data.HeadingDesktop}</h2>
+      <h2 className={`${Styles.topcontent}`}>Frequently Asked Questions</h2>
       <div className={Styles.faqSection}>
         <div className={Styles.section1}>
           <ul>
@@ -66,7 +63,8 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                     >
                       <h3>{faq.question}</h3>
                       <Image
-                        src={data.arrowIcon}
+                        // src={data.arrowIcon}
+                        src={`${imageUrl}Icons/arrow_drop_down.svg`}
                         alt="iconFaq"
                         className={`${Styles.arrowIcon} ${
                           selectedQuestion === index ? Styles.selectedarrow : ""
@@ -100,6 +98,7 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
   const [openQuestionDropdown, setOpenQuestionDropdown] = useState<
     string | null
   >(null);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const toggleAnswer = (index: number, heading: string) => {
     setSelectedQuestion(selectedQuestion === index ? null : index);
@@ -117,7 +116,7 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
   };
   return (
     <div className={Styles.faqMobile}>
-      <h2 className={`${Styles.topcontentMobile}`}>{data.HeadingMobile}</h2>
+      <h2 className={`${Styles.topcontentMobile}`}>FAQ</h2>
       <div className={Styles.faqSectionMobile}>
         <div className={Styles.section1Mobile}>
           <ul>
@@ -148,7 +147,7 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                   }`}
                 >
                   <Image
-                    src={data.arrowIcon}
+                    src={`${imageUrl}Icons/arrow_drop_down.svg`}
                     alt="iconFaq"
                     width={20}
                     height={20}
@@ -176,7 +175,7 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                             }`}
                           >
                             <Image
-                              src={data.arrowIcon}
+                              src={`${imageUrl}Icons/arrow_drop_down.svg`}
                               alt="iconFaq"
                               width={20}
                               height={20}

@@ -92,9 +92,6 @@ const MultiplePagesBrandData = {
     ],
   },
   faqSections: {
-    arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
-    HeadingDesktop: "Frequently Asked Questions",
-    HeadingMobile: "FAQ",
     sections: [
       {
         heading: "Online Courses",

@@ -308,7 +308,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -717,7 +716,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -1102,7 +1100,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -1462,7 +1459,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -1864,7 +1860,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -2258,7 +2253,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -2704,7 +2698,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -3107,7 +3100,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -3559,7 +3551,6 @@ const MainCoursesDynimicData = {
     //   ],
     // },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [

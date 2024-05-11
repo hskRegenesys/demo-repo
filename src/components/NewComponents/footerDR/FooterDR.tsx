@@ -8,29 +8,34 @@ interface FooterContent1Props {
 
 const FooterContent1: React.FC<FooterContent1Props> = ({
   handleEnrollButtonClick,
-}) => (
-  <div className={styles.footerContent1}>
-    <div className={styles.footerLogo}>
-      <Image
-        src="/assets/images/new-component-assets/DR_Logo.svg"
-        alt="LogoIpsum"
-        width={174}
-        height={60}
-      />
+}) => {
+  const imageUrl = `${process.env.awsImage_url}`;
+
+  return (
+    <div className={styles.footerContent1}>
+      <div className={styles.footerLogo}>
+        <Image
+          src={`${imageUrl}Images/DR_Logo.svg`}
+          // src="/assets/images/new-component-assets/DR_Logo.svg"
+          alt="LogoIpsum"
+          width={174}
+          height={60}
+        />
+      </div>
+      <div className={styles.footerTextheader}>
+        {/* <h2>Ready to get started</h2> */}
+        <button
+          className={styles.getStartedButton}
+          onClick={() => {
+            handleEnrollButtonClick("Enrol Now!");
+          }}
+        >
+          Get Started
+        </button>
+      </div>
     </div>
-    <div className={styles.footerTextheader}>
-      {/* <h2>Ready to get started</h2> */}
-      <button
-        className={styles.getStartedButton}
-        onClick={() => {
-          handleEnrollButtonClick("Enrol Now!");
-        }}
-      >
-        Get Started
-      </button>
-    </div>
-  </div>
-);
+  );
+};
 
 const FooterContent2: React.FC = () => (
   <div className={styles.footerContent2}>
@@ -104,66 +109,72 @@ const FooterContent3: React.FC = () => (
   </div>
 );
 
-const FooterContent4: React.FC = () => (
-  <div className={styles.footerContent4}>
+const FooterContent4: React.FC = () => {
+  const imageUrl = `${process.env.awsImage_url}`;
+
+  return (
     <div className={styles.footerContent4}>
-      <p>
-        <strong className={styles.strong}>Follow Us</strong>
-      </p>
-      <div className={styles.socialIcons}>
-        <div>
-          <a target="_blank" href="https://www.facebook.com/digitalregenesys">
-            {" "}
-            <span className={styles.Icons}>
-              <Image
-                src="/assets/images/new-component-assets/facebook-icon.svg"
-                alt="Facebook"
-                width={14}
-                height={14}
-              />
-            </span>
-            <span>Facebook</span>
-          </a>
-        </div>
-        <div>
-          <a
-            target="_blank"
-            href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
-          >
-            <span className={styles.Icons}>
-              <Image
-                src="/assets/images/new-component-assets/youtube-icon.png"
-                alt="Youtube"
-                width={14}
-                height={14}
-              />
-            </span>
+      <div className={styles.footerContent4}>
+        <p>
+          <strong className={styles.strong}>Follow Us</strong>
+        </p>
+        <div className={styles.socialIcons}>
+          <div>
+            <a target="_blank" href="https://www.facebook.com/digitalregenesys">
+              {" "}
+              <span className={styles.Icons}>
+                <Image
+                  src={`${imageUrl}Icons/facebook-icon.svg`}
+                  // src="/assets/images/new-component-assets/facebook-icon.svg"
+                  alt="Facebook"
+                  width={14}
+                  height={14}
+                />
+              </span>
+              <span>Facebook</span>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
+            >
+              <span className={styles.Icons}>
+                <Image
+                  src={`${imageUrl}Icons/youtube-icon.svg`}
+                  // src="/assets/images/new-component-assets/youtube-icon.png"
+                  alt="Youtube"
+                  width={14}
+                  height={14}
+                />
+              </span>
 
-            <span>Youtube</span>
-          </a>
-        </div>
-        <div>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/digital_regenesys/"
-          >
-            <span className={styles.Icons}>
-              <Image
-                src="/assets/images/new-component-assets/insta-icon.svg"
-                alt="Instagram"
-                width={14}
-                height={14}
-              />{" "}
-            </span>
+              <span>Youtube</span>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/digital_regenesys/"
+            >
+              <span className={styles.Icons}>
+                <Image
+                  src={`${imageUrl}Icons/insta-icon.svg`}
+                  // src="/assets/images/new-component-assets/insta-icon.svg"
+                  alt="Instagram"
+                  width={14}
+                  height={14}
+                />{" "}
+              </span>
 
-            <span>Instagram</span>
-          </a>
+              <span>Instagram</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
-
+  );
+};
 interface FooterDRProps {
   handleEnrollButtonClick: () => void;
 }

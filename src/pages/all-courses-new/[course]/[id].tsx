@@ -120,10 +120,6 @@ interface MainCoursesDynimicData {
     cards: CardDataBlog[];
   };
   faqSections: {
-    // Adjusted property name
-    arrowIcon: string;
-    HeadingDesktop: string;
-    HeadingMobile: string;
     sections: FaqSectionItem[];
   };
 }

@@ -12,6 +12,7 @@ interface ReadMoreData {
 
 const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const toggleReadMore = () => {
     setIsOpen(!isOpen);
@@ -32,7 +33,8 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
               <span style={{ margin: "auto 0", display: "flex" }}>
                 <Image
                   onClick={toggleReadMore}
-                  src="/assets/images/new-component-assets/DoubleArrowWhite.svg"
+                  // src="/assets/images/new-component-assets/DoubleArrowWhite.svg"
+                  src={`${imageUrl}Icons/DoubleArrowWhite.svg`}
                   alt="Arrow"
                   width={20}
                   height={20}
