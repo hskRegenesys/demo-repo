@@ -264,7 +264,6 @@ export default HomeNew;
 // import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
-// import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 // const ExperienceSection = dynamic(
 //   () => import("@/components/ExperienceSection/ExperienceSection")

@@ -49,7 +49,6 @@ import ConnectContainer from "@/components/NewComponents/connectContainer/Connec
 import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
 import BannerWithImg from "@/components/NewComponents/BannerwithImg/BannerwithImg";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")

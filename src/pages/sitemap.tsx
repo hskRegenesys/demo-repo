@@ -12,7 +12,6 @@ import _ from "lodash";
 
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import SitemapComponent from "@/components/NewComponents/sitemap/SiteMap";
 
 const Sidemap = () => {
