@@ -25,6 +25,8 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
   data,
   handleEnrollButtonClick,
 }) => {
+  const imageUrl = `${process.env.awsImage_url}`;
+
   return (
     <div className={Styles.LsSectionContainer}>
       <h2 className={Styles.LsSectionTitle}>{data.LsSectionTitle}</h2>
@@ -53,7 +55,8 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
               <div key={index} className={Styles.LsCard}>
                 <div className={Styles.LsImage}>
                   <Image
-                    src={card.LsImg}
+                    // src={card.LsImg}
+                    src={`${imageUrl}${card.LsImg}`}
                     alt="Ls"
                     width={360}
                     height={160}

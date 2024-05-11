@@ -33,19 +33,19 @@ const MultiplePagesBrandData = {
     LsHeding: "Talk to our experts. We’re available 24/7",
     cards: [
       {
-        LsImg: "/assets/images/new-component-assets/LearnersSupport-1.png",
+        LsImg: "Images/LearnersSupport-one.png",
         LsQuestion: "Discuss with a career advisor",
         LsText: "Not sure? Talk to an expert",
         ButtenText: "Talk Now",
       },
       {
-        LsImg: "/assets/images/new-component-assets/LearnersSupport-2.png",
+        LsImg: "Images/LearnersSupport-two.png",
         LsQuestion: "Download Brochure",
         LsText: "Get Complete Details",
         ButtenText: "Download",
       },
       {
-        LsImg: "/assets/images/new-component-assets/LearnersSupport-3.png",
+        LsImg: "Images/LearnersSupport-three.png",
         LsQuestion: "Eligibility",
         LsText: "Know Your Eligibility",
         ButtenText: " Check Eligibility",
