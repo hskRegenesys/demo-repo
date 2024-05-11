@@ -25,6 +25,10 @@ const Sidemap = () => {
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
+  const PopupData = {
+    PopupDesktop: "/assets/images/new-component-assets/WebModal.png",
+    PopupMobile: "/assets/images/new-component-assets/MobileModal.png",
+  };
 
   return (
     <Layout pageTitle="home" context="multiple-page">
@@ -32,7 +36,7 @@ const Sidemap = () => {
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.all}
+          popupData={PopupData}
         />
       )}
       <Style />

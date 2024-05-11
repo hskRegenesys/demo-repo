@@ -67,13 +67,17 @@ const AllCoursesNew = ({
       return () => clearTimeout(timeoutModal);
     }
   }, []);
+  const PopupData = {
+    PopupDesktop: "/assets/images/new-component-assets/WebModal.png",
+    PopupMobile: "/assets/images/new-component-assets/MobileModal.png",
+  };
   return (
     <Layout>
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.all}
+          popupData={PopupData}
         />
       )}
       <HeaderOne />

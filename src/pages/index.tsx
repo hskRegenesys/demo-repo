@@ -99,13 +99,20 @@ const HomeNew = ({
     }
   }, []);
 
+  const PopupData = {
+    PopupDesktop:
+      "/assets/images/new-component-assets/popup/Popup-Home-Banner-Desktop.webp",
+    PopupMobile:
+      "/assets/images/new-component-assets/popup/Popup-Home-Banner-Mobile.webp",
+  };
+
   return (
     <Layout pageTitle="new-home">
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.all}
+          popupData={PopupData}
         />
       )}
       <HeaderOne />

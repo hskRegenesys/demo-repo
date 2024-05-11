@@ -103,6 +103,10 @@ const Course = (props: any) => {
       return () => clearTimeout(timeoutModal);
     }
   }, []);
+  const PopupData = {
+    PopupDesktop: "/assets/images/new-component-assets/WebModal.png",
+    PopupMobile: "/assets/images/new-component-assets/MobileModal.png",
+  };
 
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
@@ -112,7 +116,7 @@ const Course = (props: any) => {
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.all}
+          popupData={PopupData}
           CourseCode={CourseCode}
           title={bannerTitle}
         />
