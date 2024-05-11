@@ -422,6 +422,10 @@ const MainCoursesDynimicData = {
         },
       ],
     },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+    },
   },
   DigitalMarketing: {
     CourseCode: "DMN",
@@ -831,6 +835,10 @@ const MainCoursesDynimicData = {
         },
       ],
     },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+    },
   },
   ProjectManagement: {
     CourseCode: "PM",
@@ -1216,6 +1224,10 @@ const MainCoursesDynimicData = {
         },
       ],
     },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+    },
   },
   ArtificialIntelligence: {
     CourseCode: "AIN",
@@ -1572,6 +1584,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   CyberSecurity: {
@@ -1976,6 +1992,10 @@ const MainCoursesDynimicData = {
         },
       ],
     },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+    },
   },
   DesignThinking: {
     CourseCode: "DTC",
@@ -2365,6 +2385,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   FullStackDeveloper: {
@@ -2840,6 +2864,10 @@ const MainCoursesDynimicData = {
         },
       ],
     },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+    },
   },
   DataAndBusinessAnalytics: {
     CourseCode: "DBA",
@@ -3239,6 +3267,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   ManagementAdvancement: {
@@ -3668,6 +3700,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
 };

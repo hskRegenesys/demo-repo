@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import _ from "lodash";
 import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const WhyChooseDR = dynamic(
   () => import("@/components/NewComponents/whychooseDR/WhyChooseDR")
@@ -68,8 +67,8 @@ const AllCoursesNew = ({
     }
   }, []);
   const PopupData = {
-    PopupDesktop: "/assets/images/new-component-assets/WebModal.png",
-    PopupMobile: "/assets/images/new-component-assets/MobileModal.png",
+    PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+    PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
   };
   return (
     <Layout>

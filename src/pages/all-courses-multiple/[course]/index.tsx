@@ -33,7 +33,6 @@ import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const Course = (props: any) => {
   const router = useRouter();
@@ -85,6 +84,7 @@ const Course = (props: any) => {
     CertificationDRData,
     BlogSectionData,
     faqSections,
+    PopupData,
     multiplePagesDatas,
   } = MainCourseData;
 
@@ -103,10 +103,6 @@ const Course = (props: any) => {
       return () => clearTimeout(timeoutModal);
     }
   }, []);
-  const PopupData = {
-    PopupDesktop: "/assets/images/new-component-assets/WebModal.png",
-    PopupMobile: "/assets/images/new-component-assets/MobileModal.png",
-  };
 
   return (
     <Layout pageTitle={props?.course} context="multiple-page">

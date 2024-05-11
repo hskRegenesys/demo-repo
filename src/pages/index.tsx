@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import Layout from "@/components/Layout/Layout";
 
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import _ from "lodash";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 
@@ -100,10 +99,8 @@ const HomeNew = ({
   }, []);
 
   const PopupData = {
-    PopupDesktop:
-      "/assets/images/new-component-assets/popup/Popup-Home-Banner-Desktop.webp",
-    PopupMobile:
-      "/assets/images/new-component-assets/popup/Popup-Home-Banner-Mobile.webp",
+    PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+    PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
   };
 
   return (
