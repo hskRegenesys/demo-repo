@@ -2,9 +2,9 @@ const AllCourcesCardData = {
   // Featured Courses
   FeaturedCoursesHeading: "Featured Courses",
   FeaturedCoursesSubHeading: "See what you can learn with us!",
-  cardTimeIcon: "/assets/images/new-component-assets/clock.svg",
-  cardStudentsIcon: "/assets/images/new-component-assets/user-tick.svg",
-  cardBookIcon: "/assets/images/new-component-assets/book.svg",
+  cardTimeIcon: "Icons/clock.svg",
+  cardStudentsIcon: "Icons/user-tick.svg",
+  cardBookIcon: "Icons/book.svg",
   cardProgramText: "Course",
   cardStudentEnrollmentText: " Students Enroled  ",
   cardToolsText: "Covered",
