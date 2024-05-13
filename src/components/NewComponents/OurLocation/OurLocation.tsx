@@ -37,31 +37,38 @@ const OurLocation: React.FC = () => {
   const [isUgandaHovered, setUgandaHovered] = useState(false);
   const [isNigeriaHovered, setNigeriaHovered] = useState(false);
   const [isTanzaniaHovered, setTanzaniaHovered] = useState(false);
+  const [isExpanded, setExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const imageUrl = `${process.env.awsImage_url}`;
   let usaHoverTimeout: NodeJS.Timeout;
 
   const handleUsaMouseEnter = () => {
-    setUsaHovered(true);
-    setKenyaHovered(false);
-    setIndiaHovered(false);
-    setSouthAfricaHovered(false);
-    setCroatiaHovered(false);
-    setUgandaHovered(false);
-    setNigeriaHovered(false);
-    setTanzaniaHovered(false);
+    if (!isMobile) {
+      setUsaHovered(true);
+      setKenyaHovered(false);
+      setIndiaHovered(false);
+      setSouthAfricaHovered(false);
+      setCroatiaHovered(false);
+      setUgandaHovered(false);
+      setNigeriaHovered(false);
+      setTanzaniaHovered(false);
+    }
   };
   const handleUsaMouseLeave = () => {
     setUsaHovered(false);
   };
 
   const handleKenyaMouseEnter = () => {
-    setKenyaHovered(true);
-    setUsaHovered(false);
-    setIndiaHovered(false);
-    setSouthAfricaHovered(false);
-    setCroatiaHovered(false);
-    setUgandaHovered(false);
-    setNigeriaHovered(false);
-    setTanzaniaHovered(false);
+    if (!isMobile) {
+      setKenyaHovered(true);
+      setUsaHovered(false);
+      setIndiaHovered(false);
+      setSouthAfricaHovered(false);
+      setCroatiaHovered(false);
+      setUgandaHovered(false);
+      setNigeriaHovered(false);
+      setTanzaniaHovered(false);
+    }
   };
 
   const handleKenyaMouseLeave = () => {
@@ -69,14 +76,16 @@ const OurLocation: React.FC = () => {
   };
 
   const handleIndiaMouseEnter = () => {
-    setIndiaHovered(true);
-    setUsaHovered(false);
-    setKenyaHovered(false);
-    setSouthAfricaHovered(false);
-    setCroatiaHovered(false);
-    setUgandaHovered(false);
-    setNigeriaHovered(false);
-    setTanzaniaHovered(false);
+    if (!isMobile) {
+      setIndiaHovered(true);
+      setUsaHovered(false);
+      setKenyaHovered(false);
+      setSouthAfricaHovered(false);
+      setCroatiaHovered(false);
+      setUgandaHovered(false);
+      setNigeriaHovered(false);
+      setTanzaniaHovered(false);
+    }
   };
 
   const handleIndiaMouseLeave = () => {
@@ -84,14 +93,16 @@ const OurLocation: React.FC = () => {
   };
 
   const handleUgandaMouseEnter = () => {
-    setIndiaHovered(false);
-    setUsaHovered(false);
-    setKenyaHovered(false);
-    setSouthAfricaHovered(false);
-    setCroatiaHovered(false);
-    setUgandaHovered(true);
-    setNigeriaHovered(false);
-    setTanzaniaHovered(false);
+    if (!isMobile) {
+      setIndiaHovered(false);
+      setUsaHovered(false);
+      setKenyaHovered(false);
+      setSouthAfricaHovered(false);
+      setCroatiaHovered(false);
+      setUgandaHovered(true);
+      setNigeriaHovered(false);
+      setTanzaniaHovered(false);
+    }
   };
 
   const handleUgandaMouseLeave = () => {
@@ -99,14 +110,16 @@ const OurLocation: React.FC = () => {
   };
 
   const handleSouthAfricaMouseEnter = () => {
-    setIndiaHovered(false);
-    setUsaHovered(false);
-    setKenyaHovered(false);
-    setSouthAfricaHovered(true);
-    setCroatiaHovered(false);
-    setUgandaHovered(false);
-    setNigeriaHovered(false);
-    setTanzaniaHovered(false);
+    if (!isMobile) {
+      setIndiaHovered(false);
+      setUsaHovered(false);
+      setKenyaHovered(false);
+      setSouthAfricaHovered(true);
+      setCroatiaHovered(false);
+      setUgandaHovered(false);
+      setNigeriaHovered(false);
+      setTanzaniaHovered(false);
+    }
   };
 
   const handleSouthAfricaMouseLeave = () => {
@@ -114,14 +127,16 @@ const OurLocation: React.FC = () => {
   };
 
   const handleCroatiaMouseEnter = () => {
-    setIndiaHovered(false);
-    setUsaHovered(false);
-    setKenyaHovered(false);
-    setSouthAfricaHovered(false);
-    setCroatiaHovered(true);
-    setUgandaHovered(false);
-    setNigeriaHovered(false);
-    setTanzaniaHovered(false);
+    if (!isMobile) {
+      setIndiaHovered(false);
+      setUsaHovered(false);
+      setKenyaHovered(false);
+      setSouthAfricaHovered(false);
+      setCroatiaHovered(true);
+      setUgandaHovered(false);
+      setNigeriaHovered(false);
+      setTanzaniaHovered(false);
+    }
   };
 
   const handleCroatiaMouseLeave = () => {
@@ -129,37 +144,37 @@ const OurLocation: React.FC = () => {
   };
 
   const handleNigeriaMouseEnter = () => {
-    setIndiaHovered(false);
-    setUsaHovered(false);
-    setKenyaHovered(false);
-    setSouthAfricaHovered(false);
-    setCroatiaHovered(false);
-    setUgandaHovered(false);
-    setNigeriaHovered(true);
-    setTanzaniaHovered(false);
+    if (!isMobile) {
+      setNigeriaHovered(true);
+      setIndiaHovered(false);
+      setUsaHovered(false);
+      setKenyaHovered(false);
+      setSouthAfricaHovered(false);
+      setCroatiaHovered(false);
+      setUgandaHovered(false);
+      setTanzaniaHovered(false);
+    }
   };
 
   const handleNigeriaMouseLeave = () => {
     setNigeriaHovered(false);
   };
   const handleTanzaniaMouseEnter = () => {
-    setIndiaHovered(false);
-    setUsaHovered(false);
-    setKenyaHovered(false);
-    setSouthAfricaHovered(false);
-    setCroatiaHovered(false);
-    setUgandaHovered(false);
-    setNigeriaHovered(false);
-    setTanzaniaHovered(true);
+    if (!isMobile) {
+      setIndiaHovered(false);
+      setUsaHovered(false);
+      setKenyaHovered(false);
+      setSouthAfricaHovered(false);
+      setCroatiaHovered(false);
+      setUgandaHovered(false);
+      setNigeriaHovered(false);
+      setTanzaniaHovered(true);
+    }
   };
 
   const handleTanzaniaMouseLeave = () => {
     setTanzaniaHovered(false);
   };
-
-  const [isExpanded, setExpanded] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const imageUrl = `${process.env.awsImage_url}`;
 
   useEffect(() => {
     const handleResize = () => {

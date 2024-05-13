@@ -46,6 +46,9 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
         <div
           className={`${Styles.TanzaniaContaryLocation} ${Styles.contaryLocation}`}
         >
+          <span className={Styles.contaryname}>
+            {OurLocationData.Tanzania.countryName}
+          </span>
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
             className={`${Styles.locationpin} ${
@@ -58,9 +61,6 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
             width={14}
             height={20}
           />
-          <span className={Styles.contaryname}>
-            {OurLocationData.Tanzania.countryName}
-          </span>
         </div>
       )}
     </div>
