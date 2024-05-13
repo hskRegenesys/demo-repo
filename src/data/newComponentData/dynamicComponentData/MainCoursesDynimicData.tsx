@@ -2,8 +2,7 @@ const MainCoursesDynimicData = {
   DataScience: {
     CourseCode: "DSN",
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/DS/DS-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DS-Banner.webp",
       coursePageName: "Data Science",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -11,23 +10,23 @@ const MainCoursesDynimicData = {
         "The Data Science Certification Course provides a comprehensive curriculum and equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification, gain practical programming language skills such as Python and R, and experience working with large datasets. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -430,8 +429,7 @@ const MainCoursesDynimicData = {
   DigitalMarketing: {
     CourseCode: "DMN",
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/DM/DM-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DM-Banner.webp",
       coursePageName: "Digital Marketing",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -439,23 +437,23 @@ const MainCoursesDynimicData = {
         "Digital Marketing is a comprehensive course to enhance your skills and stay ahead in the competitive online landscape. Gain practical knowledge in SEO, social media marketing, and paid advertising strategies. With hands-on experience and expert guidance,  master the latest trends and techniques in digital marketing. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/mouJDO4peOk?autoplay=1&loop=1&playlist=mouJDO4peOk",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -844,8 +842,7 @@ const MainCoursesDynimicData = {
     CourseCode: "PM",
 
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/PM/PM-Banner.webp",
+      BannerImgDesktop: "Images/Banner/PM-Banner.webp",
       coursePageName: "Project Management",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -853,23 +850,23 @@ const MainCoursesDynimicData = {
         "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements. It involves planning, executing, controlling, and closing the work of a team to achieve specific goals within a specified time frame. As businesses evolve, the need for effective project management becomes increasingly crucial for success.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -1232,8 +1229,7 @@ const MainCoursesDynimicData = {
   ArtificialIntelligence: {
     CourseCode: "AIN",
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/AI/AI-Banner.webp",
+      BannerImgDesktop: "Images/Banner/AI-Banner.webp",
       coursePageName: "Artificial Intelligence",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -1241,23 +1237,23 @@ const MainCoursesDynimicData = {
         "Artificial Intelligence (AI) is an innovative and rapidly evolving field that seeks to replicate human intelligence in machines. It encompasses various techniques that enable machines to perform tasks that typically require human intelligence. Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/LS_pz_4zcpE?autoplay=1&loop=1&playlist=LS_pz_4zcpE",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -1593,8 +1589,7 @@ const MainCoursesDynimicData = {
   CyberSecurity: {
     CourseCode: "CSC",
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/CS/CS-Banner.webp",
+      BannerImgDesktop: "Images/Banner/CS-Banner.webp",
       coursePageName: "Cyber Security",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -1602,23 +1597,23 @@ const MainCoursesDynimicData = {
         "A  Cyber Security course is a specialised fundamental course that equips individuals with the knowledge and skills to protect computer systems, networks, and sensitive data from cyber threats. The domain of cyber security is crucial in today's digital age as organisations and individuals face increasingly sophisticated cyber attacks. Get Ahead with our Cyber Security Course!",
       youtubeVideoLink:
         "https://www.youtube.com/embed/S5RDj33518g?autoplay=1&loop=1&playlist=S5RDj33518g",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -2000,8 +1995,7 @@ const MainCoursesDynimicData = {
   DesignThinking: {
     CourseCode: "DTC",
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/DT/DT-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DT-Banner.webp",
       coursePageName: "Design Thinking",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -2009,23 +2003,23 @@ const MainCoursesDynimicData = {
         "Design thinking is a human-centred problem-solving process that involves empathy, creativity, and iteration. It is about putting the requirements at the forefront and developing innovative solutions to meet those needs. While designers have been using this approach for years, its principles can be applied by anyone who wants to solve complex problems and drive innovation.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/OfyDsBKZXic?autoplay=1&loop=1&playlist=OfyDsBKZXic",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -2394,8 +2388,7 @@ const MainCoursesDynimicData = {
   FullStackDeveloper: {
     CourseCode: "FSD",
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/FSD/FSD-Banner.webp",
+      BannerImgDesktop: "Images/Banner/FSD-Banner.webp",
       coursePageName: "Full Stack Developer",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -2403,23 +2396,23 @@ const MainCoursesDynimicData = {
         "The Full Stack Web & Software Development course provides a comprehensive curriculum, including concepts in front-end development, back-end development databases and operating systems. Students will gain practical skills in front-end and back-end technologies.The course equips participants with the tools and techniques to work on full stack development concepts.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/t-tnGObE7zM??autoplay=1&loop=1&playlist=t-tnGObE7zM?",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -2872,8 +2865,7 @@ const MainCoursesDynimicData = {
   DataAndBusinessAnalytics: {
     CourseCode: "DBA",
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/DBA/DBA-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DBA-Banner.webp",
       coursePageName: "Data And Business Analytics",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -2881,23 +2873,23 @@ const MainCoursesDynimicData = {
         "Digital Regenesys's Data and Business Analytics No-Code course is designed to meet the needs of professionals and students seeking a comprehensive understanding of data science and data visualisation without the need for coding expertise. This innovative course introduces participants to key concepts and tools essential for effective data analysis and reporting. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/NG1wmJ0Dic4?autoplay=1&loop=1&playlist=NG1wmJ0Dic4",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
@@ -3277,8 +3269,7 @@ const MainCoursesDynimicData = {
     CourseCode: "MD",
 
     BannerWithVideoData: {
-      BannerImgDesktop:
-        "/assets/images/new-component-assets/Courses-Page-Img/MD/MD-Banner.webp",
+      BannerImgDesktop: "Images/Banner/MD-Banner.webp",
       coursePageName: "Management Advancement",
       BestSaleText: "BESTSELLER",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -3286,23 +3277,23 @@ const MainCoursesDynimicData = {
         "Digital Regenesys's Management Development Programme(MDP) is your gateway to a comprehensive curriculum spanning strategic management, innovation, operational excellence, finance, marketing, and leadership. Gain practical insights and skills to confidently navigate complex business environments, drive innovation, optimise operations, and lead teams effectively. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/FKksF9fkf5w?autoplay=1&loop=1&playlist=FKksF9fkf5w",
-      BrochureIcon: "/assets/images/new-component-assets/Brochure.svg",
-      vidoPlayIcon: "/assets/images/new-component-assets/Polygon.svg",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
       UspSectionData: {
         uspLocationCard: {
           uspLocationText:
             "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India",
-          usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+          usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
-          StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
+          StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
           uspUpskillText: "Enhances Upskilling Courses",
-          uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+          uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
