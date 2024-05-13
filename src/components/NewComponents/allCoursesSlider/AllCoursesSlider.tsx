@@ -193,7 +193,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   <div className={Styles.line1}>
                     <div className={Styles.icon}>
                       <Image
-                        src={AllCourcesCardData.cardTimeIcon}
+                        src={`${imageUrl}${AllCourcesCardData.cardTimeIcon}`}
                         alt="icon"
                         className={Styles.cardIcon}
                         width={24}
@@ -211,7 +211,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   <div className={Styles.line2}>
                     <div className={Styles.icon}>
                       <Image
-                        src={AllCourcesCardData.cardStudentsIcon}
+                        src={`${imageUrl}${AllCourcesCardData.cardStudentsIcon}`}
                         alt="icon"
                         className={Styles.cardIcon}
                         width={24}
@@ -231,7 +231,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     <div className={Styles.line3}>
                       <div className={Styles.icon}>
                         <Image
-                          src={AllCourcesCardData.cardBookIcon}
+                          src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
                           alt="icon"
                           className={Styles.cardIcon}
                           width={24}
