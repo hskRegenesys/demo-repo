@@ -44,7 +44,7 @@
 }
 .swiperStyle {
   --add-bottom: 50px;
-  padding-bottom: var(--add-bottom);
+  padding-bottom: var(--add-bottom) !important;
   align-items: center;
 }
 .swiperStyle [class^="swiper-button-"] {
