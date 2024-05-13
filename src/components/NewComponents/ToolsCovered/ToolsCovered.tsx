@@ -4,7 +4,7 @@ import Image from "next/image";
 interface ToolCoveredData {
   heading: string;
   title: string;
-  images: { img: string; alt: string }[]; // Corrected type for images
+  images: { img: string; alt: string }[];
 }
 
 interface ToolCoveredCardProps {

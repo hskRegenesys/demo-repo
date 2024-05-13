@@ -10,6 +10,7 @@ interface Content2Props {
 
 const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
   const addBottomValue = cardTools.length <= 4 ? "0px" : "60px";
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={`${styles.content2} ${styles.content}`}>
@@ -40,7 +41,8 @@ const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
             <SwiperSlide key={index}>
               <li key={index} className={styles.horizontalCard}>
                 <Image
-                  src={`/assets/images/clients/${tool.img}`}
+                  src={`${imageUrl}Images/Tools/${tool.img}`}
+                  // src={`/assets/images/clients/${tool.img}`}
                   alt={tool.alt}
                   className={styles.toolImage}
                   width={144}
