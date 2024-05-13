@@ -24,6 +24,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
 }) => {
   const { courcename, Heding, Card } = data;
   const addBottomValue = Card.length <= 3 ? "0px" : "60px";
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={styles.courseBenefitsCardContainer}>
@@ -53,7 +54,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
             <SwiperSlide key={index}>
               <div key={index} className={styles.card}>
                 <Image
-                  src={card.cardIcon}
+                  src={`${imageUrl}${card.cardIcon}`}
                   alt="Card Icon"
                   className={styles.cardIcon}
                   width={64}
