@@ -152,12 +152,6 @@
   top: calc(50% - var(--add-bottom) / 2);
 }
 
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 10px !important;
-  left: 0;
-  width: 100%;
-}
-
 @media (max-width: 1200px) {
   .frame {
     display: none;
