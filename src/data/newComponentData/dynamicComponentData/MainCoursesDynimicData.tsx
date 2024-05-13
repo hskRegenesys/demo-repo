@@ -35,17 +35,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -462,17 +462,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -875,17 +875,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -1262,17 +1262,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -1622,17 +1622,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -2028,17 +2028,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -2421,17 +2421,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -2898,17 +2898,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
           text2: " Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
@@ -3302,17 +3302,17 @@ const MainCoursesDynimicData = {
       Heding: "What our learners have achieved",
       Card: [
         {
-          cardIcon: "/assets/images/new-component-assets/money-tick.svg",
+          cardIcon: "Icons/money-tick.svg",
           text1: "100%",
           text2: "Guaranteed Certificate",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/brifecase-tick.svg",
+          cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Career Opportunities",
         },
         {
-          cardIcon: "/assets/images/new-component-assets/medal.svg",
+          cardIcon: "Icons/medal.svg",
           text1: "190+",
           text2: "Countries Exposure",
         },
