@@ -48,7 +48,7 @@ const StudentYoutubeVideos = () => {
               className={Styles.iframe} // Changed to lowercase "iframe" for consistency
             ></iframe>
           </SwiperSlide>
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <iframe
               width="560"
               height="315"
@@ -59,7 +59,7 @@ const StudentYoutubeVideos = () => {
               allowFullScreen
               className={Styles.iframe}
             ></iframe>
-          </SwiperSlide> */}
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
