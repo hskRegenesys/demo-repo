@@ -20,6 +20,7 @@ const Content5: React.FC<Content5Props> = ({
   curriculumContainer,
 }) => {
   const [activeWeekIndex, setActiveWeekIndex] = useState<number | null>(0);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const handleWeekClick = (index: number) => {
     setActiveWeekIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -41,7 +42,8 @@ const Content5: React.FC<Content5Props> = ({
             <div className={styles.weekHeader}>
               <div className={styles.textIcon}>
                 <Image
-                  src={durationIcon}
+                  src={`${imageUrl}${durationIcon}`}
+                  // src={durationIcon}
                   alt="Duration Icon"
                   width={24}
                   height={24}
@@ -49,7 +51,8 @@ const Content5: React.FC<Content5Props> = ({
                 <span>{week.weekHeading}</span>
               </div>
               <Image
-                src={dropDown}
+                src={`${imageUrl}${dropDown}`}
+                // src={dropDown}
                 alt="DropDown Icon"
                 width={24}
                 height={24}
@@ -62,7 +65,8 @@ const Content5: React.FC<Content5Props> = ({
                     {week.weekPoints.map((value, pointIndex) => (
                       <li key={pointIndex} className={styles.weekPoint}>
                         <Image
-                          src={tickIcon}
+                          src={`${imageUrl}${tickIcon}`}
+                          // src={tickIcon}
                           alt="Tick Icon"
                           width={20}
                           height={20}
@@ -80,7 +84,13 @@ const Content5: React.FC<Content5Props> = ({
                           <ul>
                             {value.map((item: string, index: number) => (
                               <li key={index} className={styles.weekPoint}>
-                                <img src={tickIcon} alt="Tick Icon" />
+                                <Image
+                                  src={`${imageUrl}${tickIcon}`}
+                                  // src={tickIcon}
+                                  alt="Tick Icon"
+                                  width={20}
+                                  height={20}
+                                />
                                 <span>{item}</span>
                               </li>
                             ))}

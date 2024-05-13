@@ -4,7 +4,7 @@ import Image from "next/image";
 interface ToolCoveredData {
   heading: string;
   title: string;
-  images: { img: string; alt: string }[]; // Corrected type for images
+  images: { img: string; alt: string }[];
 }
 
 interface ToolCoveredCardProps {
@@ -12,6 +12,8 @@ interface ToolCoveredCardProps {
 }
 
 const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
+  const imageUrl = `${process.env.awsImage_url}`;
+
   return (
     <div className={Styles.toolCard}>
       <div className={Styles.bigCard}>
@@ -21,7 +23,8 @@ const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
           {data.images.map((image, index) => (
             <div key={index} className={Styles.imageCard}>
               <Image
-                src={`/assets/images/clients/${image.img}`}
+                src={`${imageUrl}Images/Tools/${image.img}`}
+                // src={`/assets/images/clients/${image.img}`}
                 alt={image.alt}
                 title={image.alt}
                 width={148}

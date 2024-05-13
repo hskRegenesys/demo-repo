@@ -56,36 +56,34 @@ const MainCoursesDynimicData = {
       bigHeading: "Everything You Need To Know About Data Science Course",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
-
         { text: "Course Curriculum", contentId: "content2" },
         { text: "Tools Used in this Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
-
         { text: "Pricing Across the Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/DS-explore.webp",
+          contentImg: "Images/Banner/DS-explore.webp",
           contentText:
             "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
+
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -93,18 +91,18 @@ const MainCoursesDynimicData = {
         content2: {
           contentHeading: "Tools Covered in this Course",
           cardTools: [
-            { img: "ds/tools_covered1.webp", alt: "" },
-            { img: "ds/tools_covered2.webp", alt: "" },
-            { img: "ds/tools_covered3.webp", alt: "" },
-            { img: "ds/tools_covered4.webp", alt: "" },
-            { img: "ds/tools_covered5.webp", alt: "" },
-            { img: "ds/tools_covered6.webp", alt: "" },
-            { img: "ds/tools_covered7.webp", alt: "" },
-            { img: "ds/tools_covered8.webp", alt: "" },
-            { img: "ds/tools_covered9.webp", alt: "" },
-            { img: "ds/tools_covered10.webp", alt: "" },
-            { img: "ds/tools_covered11.webp", alt: "" },
-            { img: "ds/tools_covered12.webp", alt: "" },
+            { img: "DS/tools_covered3.png", alt: "" },
+            { img: "DS/tools_covered4.png", alt: "" },
+            { img: "DS/tools_covered1.png", alt: "" },
+            { img: "DS/tools_covered5.png", alt: "" },
+            { img: "DS/tools_covered6.png", alt: "" },
+            { img: "DS/tools_covered7.png", alt: "" },
+            { img: "DS/tools_covered2.png", alt: "" },
+            { img: "DS/tools_covered8.png", alt: "" },
+            { img: "DS/tools_covered9.png", alt: "" },
+            { img: "DS/tools_covered10.png", alt: "" },
+            { img: "DS/tools_covered11.png", alt: "" },
+            { img: "DS/tools_covered12.png", alt: "" },
           ],
         },
         content3: {
@@ -112,22 +110,19 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr. Nilay Karade",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr. Shilpa Joshi",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+              facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
@@ -137,9 +132,9 @@ const MainCoursesDynimicData = {
 
         // content5: {
         //   contentHeading: "Course Curriculum",
-        //   durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-        //   tickIcon: "/assets/images/new-component-assets/Check.svg",
-        //   dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+        //   durationIcon: "Icons/clock-green.svg",
+        //   tickIcon: "Icons/Check.svg",
+        //   dropDown: "Icons/arrow_drop_down.svg",
         //   curriculumContainer: [
         //     {
         //       weekHeading: "Week1",
@@ -173,9 +168,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Basic Data Science",
@@ -219,26 +214,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R45,344",
               duration: "30 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 242,694",
               duration: "30 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 2414",
               duration: "30 weeks",
@@ -493,25 +487,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DM/DM-explore.webp",
+          contentImg: "Images/Banner/DM-explore.webp",
           contentText:
             "Digital Marketing is a comprehensive course that delivers the latest strategies and techniques in online marketing. Acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Stay competitive in the ever-evolving digital marketing landscape by joining our course today.",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -519,22 +512,22 @@ const MainCoursesDynimicData = {
         content2: {
           contentHeading: "Tools Covered in this Course",
           cardTools: [
-            { img: "dm/digital_marketing_tools1.webp", alt: "" },
-            { img: "dm/digital_marketing_tools2.webp", alt: "" },
-            { img: "dm/digital_marketing_tools3.webp", alt: "" },
-            { img: "dm/digital_marketing_tools4.webp", alt: "" },
-            { img: "dm/digital_marketing_tools5.webp", alt: "" },
-            { img: "dm/digital_marketing_tools6.webp", alt: "" },
-            { img: "dm/digital_marketing_tools7.webp", alt: "" },
-            { img: "dm/digital_marketing_tools8.webp", alt: "" },
-            { img: "dm/digital_marketing_tools9.webp", alt: "" },
-            { img: "dm/digital_marketing_tools10.webp", alt: "" },
-            { img: "dm/digital_marketing_tools11.webp", alt: "" },
-            { img: "dm/digital_marketing_tools12.webp", alt: "" },
-            { img: "dm/digital_marketing_tools13.webp", alt: "" },
-            { img: "dm/digital_marketing_tools14.webp", alt: "" },
-            { img: "dm/digital_marketing_tools15.webp", alt: "" },
-            // { img: "dm/digital_marketing_tools16.webp", alt: "" },
+            { img: "DM/digital_marketing_tools1.png", alt: "" },
+            { img: "DM/digital_marketing_tools2.png", alt: "" },
+            { img: "DM/digital_marketing_tools3.png", alt: "" },
+            { img: "DM/digital_marketing_tools4.png", alt: "" },
+            { img: "DM/digital_marketing_tools5.png", alt: "" },
+            { img: "DM/digital_marketing_tools6.png", alt: "" },
+            { img: "DM/digital_marketing_tools7.png", alt: "" },
+            { img: "DM/digital_marketing_tools8.png", alt: "" },
+            { img: "DM/digital_marketing_tools9.png", alt: "" },
+            { img: "DM/digital_marketing_tools10.png", alt: "" },
+            { img: "DM/digital_marketing_tools11.png", alt: "" },
+            { img: "DM/digital_marketing_tools12.png", alt: "" },
+            { img: "DM/digital_marketing_tools13.png", alt: "" },
+            { img: "DM/digital_marketing_tools14.png", alt: "" },
+            { img: "DM/digital_marketing_tools15.png", alt: "" },
+            // { img: "DM/digital_marketing_tools16.png", alt: "" },
           ],
         },
         content3: {
@@ -542,15 +535,13 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/bhupendra_mishra.webp",
+              facultyImg: "Images/Faculty/bhupendra_mishra.webp",
               facultyName: "Bhupendra Mishra",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/faculty_deepika_sharma.webp",
+              facultyImg: "Images/Faculty/faculty_deepika_sharma.webp",
               facultyName: "Dr.Deepika Sharma",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
@@ -560,9 +551,9 @@ const MainCoursesDynimicData = {
 
         // content5: {
         //   contentHeading: "Course Curriculum",
-        //   durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-        //   tickIcon: "/assets/images/new-component-assets/Check.svg",
-        //   dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+        //   durationIcon: "Icons/clock-green.svg",
+        //   tickIcon: "Icons/Check.svg",
+        //   dropDown: "Icons/arrow_drop_down.svg",
         //   curriculumContainer: [
         //     {
         //       weekHeading: "Week1",
@@ -596,9 +587,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Digital Marketing Fundamentals",
@@ -639,26 +630,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 24,488 ",
               duration: "20 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 122,498",
               duration: "20 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 1,238",
               duration: "20 weeks",
@@ -907,25 +897,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/PM-explore.webp",
+          contentImg: "Images/Banner/PM-explore.webp",
           contentText:
             "Enhance your skills and boost your career prospects with the Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course.",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -933,10 +922,10 @@ const MainCoursesDynimicData = {
         content2: {
           contentHeading: "Tools Covered in this Course",
           cardTools: [
-            { img: "pm/project-management-tools1.webp", alt: "" },
-            { img: "pm/project-management-tools2.webp", alt: "" },
-            { img: "pm/project-management-tools3.webp", alt: "" },
-            { img: "pm/project-management-tools4.webp", alt: "" },
+            { img: "PM/project-management-tools1.png", alt: "" },
+            { img: "PM/project-management-tools2.png", alt: "" },
+            { img: "PM/project-management-tools3.png", alt: "" },
+            { img: "PM/project-management-tools4.png", alt: "" },
           ],
         },
         content3: {
@@ -944,15 +933,13 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Dennis-Laxton.webp",
+              facultyImg: "Images/Faculty/Dennis-Laxton.webp",
               facultyName: "Dr.Dennis Laxton",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/James_forson.webp",
+              facultyImg: "Images/Faculty/James_forson.webp",
               facultyName: "James Forson",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
@@ -962,9 +949,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading:
@@ -1017,26 +1004,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 25,198 ",
               duration: "10 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 128,978 ",
               duration: "10 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 1,418",
               duration: "10 weeks",
@@ -1293,25 +1279,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/AI-explore.webp",
+          contentImg: "Images/Banner/AI-explore.webp",
           contentText:
             "The Digital Regenesys Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -1322,22 +1307,19 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+              facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr.Nilay Karade",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr.Shilpa Joshi",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
@@ -1347,9 +1329,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Artificial Intelligence Introductory",
@@ -1380,26 +1362,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 37,947",
               duration: "10 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 181,497",
               duration: "10 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 2,137",
               duration: "10 weeks",
@@ -1653,25 +1634,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/CS-explore.webp",
+          contentImg: "Images/Banner/CS-explore.webp",
           contentText:
             "A  Cyber Security course comprises various aspects of cyber security, including network security, information security, cryptography, and ethical hacking. Students learn how to identify vulnerabilities in systems, mitigate security risks, and respond to security incidents effectively. Upon completion of the course, learners are prepared to pursue careers as cyber security analysts, consultants, or administrators in both the private and public sectors.",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -1682,8 +1662,7 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Dr-Saquib-Ahmad-Khan2.webp",
+              facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
               facultyName: "Dr.Saquib Ahmad Khan",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
@@ -1693,9 +1672,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Week1",
@@ -1782,26 +1761,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 19,379 ",
               duration: "13 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 87,098",
               duration: "13 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 1,128",
               duration: "13 weeks",
@@ -2059,25 +2037,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DT/DT-explore.webp",
+          contentImg: "Images/Banner/DT-explore.webp",
           contentText:
             "A design thinking course is an educational programme that teaches the principles and techniques of design thinking. It is designed to help individuals develop problem-solving abilities, enhance creativity, and foster a human-centred approach to innovation. These courses typically combine theory and practice, allowing participants to learn by doing. Design thinking is a powerful tool that can be applied in various domains. ",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -2088,15 +2065,13 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Dennis-Laxton.webp",
+              facultyImg: "Images/Faculty/Dennis-Laxton.webp",
               facultyName: "Dr.Dennis Laxton",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Shaista-Fatima.webp",
+              facultyImg: "Images/Faculty/Shaista-Fatima.webp",
               facultyName: "Dr.Shaista Fatima",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
@@ -2106,9 +2081,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Introduction to Design Thinking",
@@ -2186,26 +2161,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 13,499",
               duration: "8 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 67,499",
               duration: "8 weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 589",
               duration: "8 weeks",
@@ -2453,25 +2427,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/FSD/FSD-explore.webp",
+          contentImg: "Images/Banner/FSD-explore.webp",
           contentText:
             "Digital Regenesys’ full stack web & software development course is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on front end and back end on the web and extract insights from it by using HTML, JavaScrit, GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB. Acquire",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -2479,14 +2452,14 @@ const MainCoursesDynimicData = {
         content2: {
           contentHeading: "Tools Covered in this Course",
           cardTools: [
-            { img: "sd/chatGpt.svg", alt: "" },
-            { img: "sd/expressJs.svg", alt: "" },
-            { img: "sd/gitlabNew.svg", alt: "" },
-            { img: "sd/Node.js_logo.svg", alt: "" },
-            { img: "sd/css.svg", alt: "" },
-            { img: "sd/html.svg", alt: "" },
-            { img: "sd/js.svg", alt: "" },
-            { img: "sd/MongoDB_Logo.svg", alt: "" },
+            { img: "FDS/chatGpt.svg", alt: "" },
+            { img: "FDS/expressJs.svg", alt: "" },
+            { img: "FDS/gitlabNew.svg", alt: "" },
+            { img: "FDS/Node.js_logo.svg", alt: "" },
+            { img: "FDS/css.svg", alt: "" },
+            { img: "FDS/html.svg", alt: "" },
+            { img: "FDS/js.svg", alt: "" },
+            { img: "FDS/MongoDB_Logo.svg", alt: "" },
           ],
         },
 
@@ -2495,22 +2468,19 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+              facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr.Nilay Karade",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr.Shilpa Joshi",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
@@ -2520,9 +2490,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "Front-End Development",
@@ -2625,26 +2595,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 29,500",
               duration: "6 Months",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 130,000",
               duration: "6 Months",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 1,586",
               duration: "6 Months",
@@ -2930,25 +2899,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DBA/DBA-explore.webp",
+          contentImg: "Images/Banner/DBA-explore.webp",
           contentText:
             "Digital Regenesys’ Data and Business Analytics course is a 19-week course that offers a no-code approach to data and business analytics, covering essential concepts and tools for effective analysis and reporting. It emphasises the role of Management Information Systems (MIS) in leveraging data insights for decision-making. Participants will learn advanced techniques, focusing on storytelling through data visualisation and gaining expertise in predictive and prescriptive analytics. By the end of the course, participants will be equipped with the skills needed to tackle challenges in the dynamic field of business analytics.",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -2958,7 +2926,7 @@ const MainCoursesDynimicData = {
           cardTools: [
             { img: "DBA/DSA_power-bi.png", alt: "" },
             { img: "DBA/DSA_chatGpt.png", alt: "" },
-            { img: "sd/gitlabNew.svg", alt: "" },
+            { img: "DBA/gitlabNew.svg", alt: "" },
             { img: "DBA/DSA_predictive.png", alt: "" },
             { img: "DBA/DSA_rows-ai.png", alt: "" },
             { img: "DBA/DSA_mis.png", alt: "" },
@@ -2970,22 +2938,19 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/Samidha_Photo.webp",
+              facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_nilay_profile.webp",
+              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr.Nilay Karade",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
-              facultyImg:
-                "/assets/images/new-component-assets/faculty-img/dr_shilpa_joshi.webp",
+              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr.Shilpa Joshi",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
@@ -2995,9 +2960,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading:
@@ -3026,26 +2991,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 26,498",
               duration: "6 Months",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 142,998",
               duration: "6 Months",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 1,418",
               duration: "6 Months",
@@ -3333,25 +3297,24 @@ const MainCoursesDynimicData = {
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
-          contentImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/MD/MD-explore.webp",
+          contentImg: "Images/Banner/MD-explore.webp",
           contentText:
             "Digital Regenesys’ Management Development Programme (MDP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management development.",
           contentCard: [
             {
-              icon: "/assets/images/new-component-assets/Live Call.svg",
+              icon: "Icons/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/new-component-assets/Award.svg",
+              icon: "Icons/Award.svg",
               text: "International Certificate",
             },
             {
-              icon: "/assets/images/new-component-assets/Counselling.svg",
+              icon: "Icons/Counselling.svg",
               text: "Industry Expert Faculty",
             },
             {
-              icon: "/assets/images/new-component-assets/Experts.svg",
+              icon: "Icons/Experts.svg",
               text: "Career Counselling",
             },
           ],
@@ -3359,11 +3322,11 @@ const MainCoursesDynimicData = {
         content2: {
           contentHeading: "Tools Covered in this Course",
           cardTools: [
-            { img: "DBA/DSA_chatGpt.png", alt: "" },
-            { img: "md/Clipchamp.svg", alt: "" },
-            { img: "md/Gemini.svg", alt: "" },
-            { img: "md/Hey-Gen.svg", alt: "" },
-            { img: "md/KREA.svg", alt: "" },
+            { img: "MD/DSA_chatGpt.png", alt: "" },
+            { img: "MD/Clipchamp.svg", alt: "" },
+            { img: "MD/Gemini.svg", alt: "" },
+            { img: "MD/Hey-Gen.svg", alt: "" },
+            { img: "MD/KREA.svg", alt: "" },
           ],
         },
 
@@ -3373,7 +3336,7 @@ const MainCoursesDynimicData = {
         //   facultyCard: [
         //     {
         //       facultyImg:
-        //         "/assets/images/new-component-assets/faculty-img/Dr-Saquib-Ahmad-Khan2.webp",
+        //         "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
         //       facultyName: "Dr.Saquib Ahmad Khan",
         //       courseName: "Senior Lecturer",
         //       yearsOfExperience: "10+ ",
@@ -3383,9 +3346,9 @@ const MainCoursesDynimicData = {
 
         content5: {
           contentHeading: "Course Curriculum",
-          durationIcon: "/assets/images/new-component-assets/clock-green.svg",
-          tickIcon: "/assets/images/new-component-assets/Check.svg",
-          dropDown: "/assets/images/new-component-assets/arrow_drop_down.svg",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
           curriculumContainer: [
             {
               weekHeading: "The Business Environment",
@@ -3480,26 +3443,25 @@ const MainCoursesDynimicData = {
         },
         content6: {
           ContentHeding: "Pricing Across the Countries",
-          PriceIcon: "/assets/images/new-component-assets/dollar-circle.svg",
-          durationIcon: "/assets/images/new-component-assets/timer.svg",
-          EnrollmentIcon: "/assets/images/new-component-assets/teacher.svg",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
           contraryPricingCard: [
             {
-              contaryFlag:
-                "/assets/images/new-component-assets/south-africa.svg",
+              contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 35,000",
               duration: "40 Weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/India.svg",
+              contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
               price: "₹ 150,000",
               duration: "40 Weeks",
             },
             {
-              contaryFlag: "/assets/images/new-component-assets/USA.svg",
+              contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$1,920",
               duration: "40 Weeks",
