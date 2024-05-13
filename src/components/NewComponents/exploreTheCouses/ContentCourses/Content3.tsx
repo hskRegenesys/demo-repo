@@ -23,6 +23,7 @@ const Content3: React.FC<Content3Props> = ({
   facultyCard,
 }) => {
   const addBottomValue = facultyCard.length <= 4 ? "0px" : "60px";
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={`${styles.content3} ${styles.content}`}>
@@ -54,7 +55,8 @@ const Content3: React.FC<Content3Props> = ({
                 <div className={styles.bgcolor}> </div>
                 <div className={styles.CardImg}>
                   <Image
-                    src={faculty.facultyImg}
+                    src={`${imageUrl}${faculty.facultyImg}`}
+                    // src={faculty.facultyImg}
                     alt={faculty.facultyName}
                     title={faculty.facultyName}
                     width={88}

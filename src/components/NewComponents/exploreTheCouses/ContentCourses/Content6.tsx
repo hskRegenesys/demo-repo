@@ -23,6 +23,8 @@ const Content6: React.FC<Content6Props> = ({
   contraryPricingCard,
   handleEnrollButtonClick,
 }) => {
+  const imageUrl = `${process.env.awsImage_url}`;
+
   return (
     <div className={`${Styles.content6} ${Styles.content}`}>
       <h3>{ContentHeding}</h3>
@@ -33,7 +35,8 @@ const Content6: React.FC<Content6Props> = ({
             <div className={Styles.cardImgContainer}>
               <div className={Styles.cardImg}>
                 <Image
-                  src={card.contaryFlag}
+                  src={`${imageUrl}${card.contaryFlag}`}
+                  // src={card.contaryFlag}
                   alt={card.contaryName}
                   title={card.contaryName}
                   width={48}
@@ -46,7 +49,8 @@ const Content6: React.FC<Content6Props> = ({
               <div className={Styles.line}>
                 <div className={Styles.iconContent}>
                   <Image
-                    src={PriceIcon}
+                    src={`${imageUrl}${PriceIcon}`}
+                    // src={PriceIcon}
                     alt="Rate Icon"
                     width={24}
                     height={24}
@@ -57,7 +61,8 @@ const Content6: React.FC<Content6Props> = ({
               <div className={Styles.line}>
                 <div className={Styles.iconContent}>
                   <Image
-                    src={durationIcon}
+                    src={`${imageUrl}${durationIcon}`}
+                    // src={durationIcon}
                     alt="Duration Icon"
                     width={24}
                     height={24}
@@ -69,7 +74,8 @@ const Content6: React.FC<Content6Props> = ({
               <div className={Styles.line}>
                 <div className={Styles.iconContent}>
                   <Image
-                    src={EnrollmentIcon}
+                    src={`${imageUrl}${EnrollmentIcon}`}
+                    // src={EnrollmentIcon}
                     alt="Enrollment Icon"
                     width={24}
                     height={24}

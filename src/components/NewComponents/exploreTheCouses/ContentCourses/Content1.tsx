@@ -16,12 +16,15 @@ const Content1: React.FC<Content1Props> = ({
   contentText,
   contentCard,
 }) => {
+  const imageUrl = `${process.env.awsImage_url}`;
+
   return (
     <div className={`${styles.content1} ${styles.content}`}>
       <h3>{contentHeading}</h3>
       <Image
         className={styles.content1img}
-        src={contentImg}
+        src={`${imageUrl}${contentImg}`}
+        // src={contentImg}
         alt="Content 1"
         width={790}
         height={400}
@@ -31,7 +34,8 @@ const Content1: React.FC<Content1Props> = ({
         {contentCard.map((card, index) => (
           <li key={index}>
             <Image
-              src={card.icon}
+              src={`${imageUrl}${card.icon}`}
+              // src={card.icon}
               alt={`card ${index + 1}`}
               width={32}
               height={32}
