@@ -12,7 +12,6 @@ import _ from "lodash";
 
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
 import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import SitemapComponent from "@/components/NewComponents/sitemap/SiteMap";
 
 const Sidemap = () => {
@@ -25,6 +24,10 @@ const Sidemap = () => {
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
+  const PopupData = {
+    PopupDesktop: "/assets/images/new-component-assets/WebModal.png",
+    PopupMobile: "/assets/images/new-component-assets/MobileModal.png",
+  };
 
   return (
     <Layout pageTitle="home" context="multiple-page">
@@ -32,7 +35,7 @@ const Sidemap = () => {
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.all}
+          popupData={PopupData}
         />
       )}
       <Style />

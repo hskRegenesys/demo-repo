@@ -11,7 +11,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import DataSeparatorPages from "src/pages/DataSeparatorPages/DataSeparatorPages";
 
 const PopupForm = dynamic(
@@ -108,6 +107,7 @@ const Course = (props: any) => {
     CertificationDRData,
     BlogSectionData,
     faqSections,
+    PopupData,
     multiplePagesDatas,
   } = MainCourseData;
 
@@ -126,7 +126,7 @@ const Course = (props: any) => {
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.all}
+          popupData={PopupData}
           CourseCode={CourseCode}
           title={bannerTitle}
         />

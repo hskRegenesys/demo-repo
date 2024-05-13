@@ -3,37 +3,37 @@ const HomeDynamicData = {
     BlogSectionTitle: "For Your Research & Information",
     cards: [
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
+        blogImg: "Images/Blog/blog.png",
         blogQuestion: "Understanding IELTS",
         blogText:
           "The International English Language Testing System, or IELTS, is an exam designed for students who wish to study abroad...",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
+        blogImg: "Images/Blog/blog.png",
         blogQuestion: "Research Strategies for Students",
         blogText:
           "Effective research is crucial for academic success. Learn valuable strategies and tips to enhance your research skills as a student...",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
+        blogImg: "Images/Blog/blog.png",
         blogQuestion: "Exploring Scientific Discoveries",
         blogText:
           "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
+        blogImg: "Images/Blog/blog.png",
         blogQuestion: "Exploring Scientific Discoveries",
         blogText:
           "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
+        blogImg: "Images/Blog/blog.png",
         blogQuestion: "Exploring Scientific Discoveries",
         blogText:
           "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
+        blogImg: "Images/Blog/blog.png",
         blogQuestion: "Exploring Scientific Discoveries",
         blogText:
           "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
@@ -41,9 +41,6 @@ const HomeDynamicData = {
     ],
   },
   faqSections: {
-    arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
-    HeadingDesktop: "Frequently Asked Questions",
-    HeadingMobile: "FAQ",
     sections: [
       {
         heading: "Heding 1",

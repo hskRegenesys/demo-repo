@@ -18,6 +18,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
 }) => {
   const { AdmitsHeading, AdmitsTitle, buttenIcon, AdmitsCards } =
     AdmiteCompaniesData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const swiperSettings = {
     loop: true,
@@ -47,7 +48,8 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           {AdmitsCards.map((card: any, index: any) => (
             <SwiperSlide key={index} className={Styles.admitsCard}>
               <Image
-                src={card.AdmitsImage}
+                src={`${imageUrl}${card.AdmitsImage}`}
+                // src={card.AdmitsImage}
                 alt={`admitImg ${index}`}
                 width={100}
                 height={60}
@@ -64,7 +66,13 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
         >
           Enrol Now
           <div className={Styles.enrollIcon}>
-            <Image src={buttenIcon} alt="Enroll Icon" width={16} height={16} />
+            <Image
+              // src={buttenIcon}
+              src={`${imageUrl}${buttenIcon}`}
+              alt="Enroll Icon"
+              width={16}
+              height={16}
+            />
           </div>
         </div>
       </div>

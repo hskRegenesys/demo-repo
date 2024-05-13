@@ -253,7 +253,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AL, ML, Drones, Robots, and data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products and services by promoting, enhancing core competencies, capacity building.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -264,7 +264,7 @@ const MainCoursesDynimicData = {
         "Statistical Analytics",
         "Database Structure & Algorithms",
       ],
-      image: "/assets/images/certificate/DSN_certificates.webp",
+      image: "Images/Certificate/DSN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -272,8 +272,7 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-beginners.webp",
+          blogImg: "Images/Blog/ds-blog-beginners.webp",
           blogQuestion:
             "What Are The Key Features Of A Data Science Course Suitable For Beginners?",
           blogText:
@@ -282,8 +281,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-are-the-key-features-of-a-data-science-course-suitable-for-beginners",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-salary.webp",
+          blogImg: "Images/Blog/ds-blog-salary.webp",
           blogQuestion: "What is the Data Science Course Salary?",
           blogText:
             "Data science has emerged as a dynamic and high-demand field, blending statistical analysis, ",
@@ -291,8 +289,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-is-the-data-science-course-sala",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-suitable-for-beginners.webp",
+          blogImg: "Images/Blog/ds-blog-suitable-for-beginners.webp",
           blogQuestion:
             "What makes data science courses suitable for beginners?",
           blogText:
@@ -301,8 +298,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-makes-a-data-science-courses-suitable-for-beginners",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DS/ds-blog-advantages.webp",
+          blogImg: "Images/Blog/ds-blog-advantages.webp",
           blogQuestion: "What Are The Advantages Of A Data Science Course?",
           blogText:
             "In the era of big data, where information flows ceaselessly from diverse sources, the role of  ",
@@ -312,7 +308,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -426,6 +421,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/DS-Popup-Desktop.png",
+      PopupMobile: "Images/Popup/DS-Popup-Mobile.png",
     },
   },
   DigitalMarketing: {
@@ -675,7 +674,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Enhance online marketing skills and boost your career prospects with the Digital Marketing Certificate Course. Learn advanced strategies in SEO, content marketing, social media, and more from industry experts. Enrol now, accelerate your professional growth and stand out in the competitive digital marketing field with our comprehensive certification course. Sign up now to stay ahead in the evolving digital landscape.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -686,7 +685,7 @@ const MainCoursesDynimicData = {
         "Content Marketing Excellence",
         " Expertise in Various Digital Channels",
       ],
-      image: "/assets/images/certificate/DMN_certificates.webp",
+      image: "Images/Certificate/DMN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -694,8 +693,7 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-digital-marketing-course.webp",
+          blogImg: "Images/Blog/dm-blog-digital-marketing-course.webp",
           blogQuestion: "What is a digital marketing course?",
           blogText:
             "Are you looking to advance your skills in the fast-paced digital marketing world, and to take your career to the next level? ",
@@ -703,8 +701,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-is-a-digital-marketing-course",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-beginners.webp",
+          blogImg: "Images/Blog/dm-blog-beginners.webp",
           blogQuestion:
             "Where Do You Find The Best Digital Marketing Courses For Beginners?",
           blogText:
@@ -713,8 +710,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/the-best-digital-marketing-courses-for-beginners",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DM/dm-blog-career-journey.webp",
+          blogImg: "Images/Blog/dm-blog-career-journey.webp",
           blogQuestion: "Upskill and Upgrade in Your Career Journey",
           blogText:
             "In today’s fast-paced and ever-changing job market, staying on top of your industry’s latest trends and skills is essential. ",
@@ -724,7 +720,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -839,6 +834,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   ProjectManagement: {
@@ -1054,7 +1053,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "The Digital Regenesys Project Management Certificate equips professionals with essential skills to excel in project management. This online project management course covers key concepts, tools, and techniques for successful project planning, execution, and monitoring. Participants will learn effective communication strategies, risk management principles, and agile methodologies to enhance project outcomes. The certificate course is designed for individuals seeking to advance their project management careers in a digital environment.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -1065,7 +1064,7 @@ const MainCoursesDynimicData = {
         "Project Closure and Evaluation",
         "Comprehensive Project Management Knowledge",
       ],
-      image: "/assets/images/certificate/PM_certificates.webp",
+      image: "Images/Certificate/PM_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1073,8 +1072,7 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-product-management.webp",
+          blogImg: "Images/Blog/pm-blog-product-management.webp",
           blogQuestion: "What Is A Project Management Course?",
           blogText:
             "Project management is a highly demanding domain that requires a great deal of expertise and experience. However, it is also a promising career path, offering opportunities for advancement and personal growth. ",
@@ -1082,8 +1080,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-is-a-project-management-course",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-career.webp",
+          blogImg: "Images/Blog/pm-blog-career.webp",
           blogQuestion:
             "What Are The Benefits Of Enroling In Project Management Courses For Caree..",
           blogText:
@@ -1092,8 +1089,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-enroling-in-project-management-courses-for-career-growth",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-good-career-option.webp",
+          blogImg: "Images/Blog/pm-blog-good-career-option.webp",
           blogQuestion: "Is Project Management A Good Career Option For You?",
           blogText:
             "Are you a natural-born leader who loves to organise and motivate teams towards achieving goals? Do you thrive in fast-paced environments where every day brings new challenges?",
@@ -1101,8 +1097,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/is-project-management-a-good-career-option-for-you",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/PM/pm-blog-leadership.webp",
+          blogImg: "Images/Blog/PM/pm-blog-leadership.webp",
           blogQuestion:
             "How Can Project Management Courses Enhance Your Leadership Skills?",
           blogText:
@@ -1113,7 +1108,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -1229,6 +1223,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   ArtificialIntelligence: {
@@ -1419,7 +1417,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -1430,7 +1428,7 @@ const MainCoursesDynimicData = {
         " Machine Learning Fundamentals.",
         "Introduction to Artificial Intelligence.",
       ],
-      image: "/assets/images/certificate/AIN_certificates.webp",
+      image: "Images/Certificate/AIN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1438,8 +1436,7 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-course.webp",
+          blogImg: "Images/Blog/ai-blog-course.webp",
           blogQuestion: "Why Invest In An Artificial Intelligence Course?",
           blogText:
             "In an era of technological prowess, Artificial Intelligence (AI) is a transformative force, reshaping industries and redefining innovation possibilities. ",
@@ -1447,8 +1444,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/why-invest-in-an-artificial-intelligence-course",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-future.webp",
+          blogImg: "Images/Blog/ai-blog-future.webp",
           blogQuestion: "Jobs of the Future: Artificial Intelligence",
           blogText:
             "Artificial intelligence (AI) is no longer a distant concept from science fiction movies; it is quickly becoming a daily reality. From voice assistants like Siri and Alexa to self-driving cars and smart home devices, AI technology transforms how we live and work. ",
@@ -1456,8 +1452,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/jobs-of-the-future-artificial-intelligence",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-job-market.webp",
+          blogImg: "Images/Blog/ai-blog-job-market.webp",
           blogQuestion:
             "The Impact Of AI On The Job Market And The Future Of Work",
           blogText:
@@ -1466,8 +1461,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/the-impact-of-ai-on-the-job-market-and-the-future-of-work",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/AI/ai-blog-upskill.webp",
+          blogImg: "Images/Blog/ai-blog-upskill.webp",
           blogQuestion: "Upskill And Upgrade With Artificial Intelligence",
           blogText:
             "Staying ahead of the curve is crucial in today’s rapidly evolving world. With technology advancing at an unprecedented pace, it’s becoming increasingly essential to upskill and upgrade our knowledge and skills. And one of the most promising and transformative technologies of our time is Artificial Intelligence (AI).",
@@ -1477,7 +1471,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -1591,6 +1584,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   CyberSecurity: {
@@ -1823,7 +1820,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to equip individuals with the knowledge and skills needed to address the challenges in cyber security. It covers network security, information security, ethical hacking, risk management, and cyber security governance. The cyber security course may align with industry standards and best practices, making it relevant and recognised in cyber security.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -1834,7 +1831,7 @@ const MainCoursesDynimicData = {
         "Information security controls  ",
         "Network security",
       ],
-      image: "/assets/images/certificate/CSC_certificates.webp",
+      image: "Images/Certificate/CSC_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1842,8 +1839,7 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-course.webp",
+          blogImg: "Images/Blog/cs-blog-course.webp",
           blogQuestion: "Which Is The Best Cyber Security Course?",
           blogText:
             "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
@@ -1851,8 +1847,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/which-is-the-best-cyber-security-course",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-future.webp",
+          blogImg: "Images/Blog/cs-blog-future.webp",
           blogQuestion:
             "Why Are Cyber Security Courses a Smart Investment for the Future",
           blogText:
@@ -1861,8 +1856,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/why-are-cyber-security-courses-a-smart-investment-for-the-future",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-qualifications.webp",
+          blogImg: "Images/Blog/cs-blog-qualifications.webp",
           blogQuestion:
             "What qualifications do I need to study cyber security?",
           blogText:
@@ -1871,8 +1865,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/what-qualifications-do-i-need-to-study-cyber-security",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-promising.webp",
+          blogImg: "Images/Blog/cs-blog-promising.webp",
           blogQuestion:
             "Why Enrol In A Cyber Security Course For A Promising Career?",
           blogText:
@@ -1883,7 +1876,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -1999,6 +1991,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   DesignThinking: {
@@ -2229,7 +2225,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "The Digital Regenesys Design Thinking Course offers a comprehensive curriculum designed to enhance participants' understanding and application of design thinking principles. This intensive course equips students with practical tools and techniques to solve complex problems creatively. Through a series of hands-on projects and case studies, individuals will develop critical thinking skills and learn how to approach challenges from a user-centric perspective. ",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -2240,7 +2236,7 @@ const MainCoursesDynimicData = {
         "ITools and Techniques Proficiency.",
         "Empathy and User-Centric Thinking.",
       ],
-      image: "/assets/images/certificate/DTC_certificates.webp",
+      image: "Images/Certificate/DTC_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -2248,8 +2244,7 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DT/What-is-Design-Thinking.webp",
+          blogImg: "Images/Blog/What-is-Design-Thinking.webp",
           blogQuestion: "What is Design Thinking?",
           blogText:
             " Design thinking is a principle established on designers’ workflows for mapping design stages. Design thinking aims to give all professionals a standardised invention process to produce innovative solutions to design-related problems.",
@@ -2258,7 +2253,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DT/What-Are-The-Objectives-Of-The-Design-Thinking-Course.webp",
+            "Images/Blog/What-Are-The-Objectives-Of-The-Design-Thinking-Course.webp",
           blogQuestion:
             "What Are The Objectives Of The Design Thinking Course?",
           blogText:
@@ -2268,8 +2263,7 @@ const MainCoursesDynimicData = {
         },
 
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DT/Career-Scope-for-Design-Thinking.webp",
+          blogImg: "Images/Blog/Career-Scope-for-Design-Thinking.webp",
           blogQuestion: "Career Scope for Design Thinking",
           blogText:
             "Design thinking is a problem-solving strategy that involves creativity, collaboration and empathy. It is a powerful tool for creation and has been embraced by many industries and organisations worldwide.  ",
@@ -2279,7 +2273,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -2392,6 +2385,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   FullStackDeveloper: {
@@ -2669,7 +2666,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to deliver a comprehensive journey through the fundamental technologies and best practices essential to modern web development in its Full Stack Web & Software Development course. By immersing learners in hands-on projects and real-world simulations, the programme equips them with practical experience, empowering them to confidently navigate challenges within the realm of Full Stack Web & Software Development upon completion.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -2680,7 +2677,7 @@ const MainCoursesDynimicData = {
         "Version Control",
         "Operating Sytems and DevOps",
       ],
-      image: "/assets/images/certificate/FSD_certificates.webp",
+      image: "Images/Certificate/FSD_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -2688,8 +2685,7 @@ const MainCoursesDynimicData = {
       BlogSectionTitle: "For Your Research & Information",
       cards: [
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/FSD/What-is-a-Full-Stack-Development-Course.webp",
+          blogImg: "Images/Blog/What-is-a-Full-Stack-Development-Course.webp",
           blogQuestion: "What is a Full Stack Development Course?",
           blogText:
             "In the realm of software development, there exists a multifaceted approach known as full stack development. It’s a methodology where developers have expertise in both front-end and back-end technologies, allowing them to handle various aspects of web application development. ",
@@ -2698,7 +2694,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/FSD/Can-I-learn-full-stack-web-development-online.webp",
+            "Images/Blog/Can-I-learn-full-stack-web-development-online.webp",
           blogQuestion: "Can I learn full stack web development online?",
           blogText:
             "The demand for skilled web developers continues to rise in today’s digital age. With businesses expanding their online presence and new startups emerging every day, there’s never been a better time to dive into the world of full stack web development. But can you really learn full stack web development online? The short answer is yes, and in this article, we’ll explore how you can embark on this journey from the comfort of your own home.",
@@ -2707,7 +2703,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/FSD/Which-career-opportunities-are-available-for-a-full-stack-developer.webp",
+            "Images/Blog/Which-career-opportunities-are-available-for-a-full-stack-developer.webp",
           blogQuestion:
             "Which career opportunities are available for a full stack developer?",
           blogText:
@@ -2716,8 +2712,7 @@ const MainCoursesDynimicData = {
             "https://www.digitalregenesys.com/blog/which-career-opportunities-are-available-for-a-full-stack-developer",
         },
         {
-          blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/FSD/Which-Software-Job-has-the-highest-salary.webp",
+          blogImg: "Images/Blog/Which-Software-Job-has-the-highest-salary.webp",
           blogQuestion: "Which Software Job has the highest salary?",
           blogText:
             "In today’s digital era, software development has become a cornerstone of technological advancement, with full stack development emerging as a versatile and sought-after skill set. Full stack developers possess expertise in both front-end and back-end technologies, making them invaluable assets in the tech industry.",
@@ -2727,7 +2722,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -2869,6 +2863,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   DataAndBusinessAnalytics: {
@@ -3069,7 +3067,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with essential concepts and tools crucial for proficient data analysis and reporting in its course on Data and Business Analytics. Progressing to an advanced stage, participants delve into advanced techniques, honing skills in data visualisation for impactful storytelling and gaining expertise in predictive and prescriptive analytics. By focusing on skill elevation, this course aims to prepare participants to effectively navigate the dynamic landscape of business analytics and tackle upcoming challenges with confidence.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -3080,7 +3078,7 @@ const MainCoursesDynimicData = {
         "Data Visualisation",
         "Advanced techniques",
       ],
-      image: "/assets/images/certificate/DBA_certificates.webp",
+      image: "Images/Certificate/DBA_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -3089,7 +3087,7 @@ const MainCoursesDynimicData = {
       cards: [
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DBA/What-is-Data-and-Business-Analytics-A-No-Code-Approach.webp",
+            "Images/Blog/What-is-Data-and-Business-Analytics-A-No-Code-Approach.webp",
           blogQuestion:
             "What is Data and Business Analytics: A No-Code Approach?",
           blogText:
@@ -3099,7 +3097,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DBA/Which-Tools-Are-Covered-in-Data-and-Business-Analytics-Courses.webp",
+            "Images/Blog/Which-Tools-Are-Covered-in-Data-and-Business-Analytics-Courses.webp",
           blogQuestion:
             "Which Tools Are Covered in Data and Business Analytics Courses?",
           blogText:
@@ -3109,7 +3107,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DBA/What-Are-the-Current-Salary-Trends-in-Data-and-Business-Analytics.webp",
+            "Images/Blog/What-Are-the-Current-Salary-Trends-in-Data-and-Business-Analytics.webp",
           blogQuestion:
             "What Are the Current Salary Trends in Data and Business Analytics?",
           blogText:
@@ -3119,7 +3117,7 @@ const MainCoursesDynimicData = {
         },
         {
           blogImg:
-            "/assets/images/new-component-assets/Courses-Page-Img/DBA/What-Career-Paths-Exist-in-Data-and-Business-Analytics.webp",
+            "Images/Blog/What-Career-Paths-Exist-in-Data-and-Business-Analytics.webp",
           blogQuestion:
             "What Career Paths Exist in Data and Business Analytics?",
           blogText:
@@ -3130,7 +3128,6 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -3270,6 +3267,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
   ManagementAdvancement: {
@@ -3522,7 +3523,7 @@ const MainCoursesDynimicData = {
       heading: "Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Development certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
-      tickImage: "/assets/images/new-component-assets/Check.svg",
+      tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Achievements",
       achievementsText: [
@@ -3533,7 +3534,7 @@ const MainCoursesDynimicData = {
         "Financial risk management",
         "Interpersonal skills",
       ],
-      image: "/assets/images/certificate/MD_certificates.webp",
+      image: "Images/Certificate/MD_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -3582,7 +3583,6 @@ const MainCoursesDynimicData = {
     //   ],
     // },
     faqSections: {
-      arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
       HeadingDesktop: "Frequently Asked Questions. ",
       HeadingMobile: "FAQ",
       sections: [
@@ -3700,6 +3700,10 @@ const MainCoursesDynimicData = {
           ],
         },
       ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
 };

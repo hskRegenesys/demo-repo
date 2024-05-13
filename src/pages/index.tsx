@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import Layout from "@/components/Layout/Layout";
 
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
 import _ from "lodash";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 
@@ -99,13 +98,18 @@ const HomeNew = ({
     }
   }, []);
 
+  const PopupData = {
+    PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+    PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+  };
+
   return (
     <Layout pageTitle="new-home">
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.all}
+          popupData={PopupData}
         />
       )}
       <HeaderOne />
@@ -260,7 +264,6 @@ export default HomeNew;
 // import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
-// import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 // const ExperienceSection = dynamic(
 //   () => import("@/components/ExperienceSection/ExperienceSection")
