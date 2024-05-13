@@ -43,6 +43,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
   handleEnrollButtonVidio,
 }) => {
   const mainCourseData: MainCourseData = careersTransformedData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const {
     heading,
@@ -65,7 +66,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
       <div className={Styles.ctFrame}>
         <div className={Styles.ctFrameDown}>
           <Image
-            src="/assets/images/new-component-assets/ct-frame-down.webp"
+            src={`${imageUrl}Images/ct-frame-down.webp`}
             width={198}
             height={80}
           />
@@ -111,7 +112,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                 <div className={Styles.profile}>
                   <div className={Styles.profileImg}>
                     <Image
-                      src={swiperCard.profileImg}
+                      src={`${imageUrl}${swiperCard.profileImg}`}
                       alt={swiperCard.name}
                       title={swiperCard.name}
                       width={80}
@@ -183,7 +184,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
       <div className={Styles.ctFrame}>
         <div className={Styles.ctFrameUp}>
           <Image
-            src="/assets/images/new-component-assets/ct-frame-up.webp"
+            src={`${imageUrl}Images/ct-frame-up.webp`}
             width={198}
             height={80}
           />
