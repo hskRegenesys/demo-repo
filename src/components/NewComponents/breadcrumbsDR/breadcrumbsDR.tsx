@@ -35,6 +35,7 @@ const BreadcrumbsDR = ({
       href: parentToParentHref,
     });
   }
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <section className={Styles.BreadcrumbsDR}>
@@ -51,10 +52,13 @@ const BreadcrumbsDR = ({
                 {parent && (
                   <>
                     <li className={Styles.separator}>
-                      <img
+                      <Image
                         className={Styles.arrowIcon}
-                        src="/assets/images/new-component-assets/arrowGray.svg"
+                        src={`${imageUrl}Icons/arrowGray.svg`}
+                        // src="/assets/images/new-component-assets/arrowGray.svg"
                         alt="Arrow Icon"
+                        width={16}
+                        height={16}
                       />
                     </li>
                     <li>
@@ -67,10 +71,11 @@ const BreadcrumbsDR = ({
                     <li className={Styles.separator}>
                       <Image
                         className={Styles.arrowIcon}
-                        src="/assets/images/new-component-assets/arrowGray.svg"
+                        src={`${imageUrl}Icons/arrowGray.svg`}
+                        // src="/assets/images/new-component-assets/arrowGray.svg"
                         alt="Arrow Icon"
-                        width={10}
-                        height={10}
+                        width={16}
+                        height={16}
                       />
                     </li>
                     <li className={Styles.fontCapitalized}>
@@ -79,10 +84,13 @@ const BreadcrumbsDR = ({
                   </>
                 )}
                 <li className={Styles.separator}>
-                  <img
+                  <Image
                     className={Styles.arrowIcon}
-                    src="/assets/images/new-component-assets/arrowGray.svg"
+                    src={`${imageUrl}Icons/arrowGray.svg`}
+                    // src="/assets/images/new-component-assets/arrowGray.svg"
                     alt="Arrow Icon"
+                    width={16}
+                    height={16}
                   />
                 </li>
                 <li className={`${Styles.fontCapitalized} ${Styles.active}`}>
