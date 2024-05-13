@@ -61,7 +61,7 @@
   position: relative;
   z-index: 9999;
   opacity: 0;
-  animation: fadeIn 1.5s ease forwards; /* Use CSS animation to fade in */
+  animation: fadeIn 0.3s ease forwards; /* Use CSS animation to fade in */
 }
 
 @keyframes fadeIn {
@@ -72,6 +72,28 @@
     opacity: 1;
   }
 }
+
+.TanzaniaSection .ContaryShowHoverDetails {
+  top: -10px !important;
+  left: 67px !important;
+}
+.IndiaSection .ContaryShowHoverDetails {
+  top: 18px !important;
+  left: 20px !important;
+}
+.UsaSection .ContaryShowHoverDetails {
+  top: -10px !important;
+  left: 0px !important;
+}
+.CroatiaSection .ContaryShowHoverDetails {
+  top: -10px !important;
+  left: 0px !important;
+}
+.KenyaSection .ContaryShowHoverDetails {
+  top: -10px !important;
+  left: 0px !important;
+}
+
 .contaryLocation {
   position: relative;
   top: 53px;
@@ -127,19 +149,19 @@
 }
 
 .usaLocation {
-  top: -21px;
-  left: 30px;
+  top: -14px;
+  left: 35px;
 }
 .KenyaLocation {
-  top: 80px;
-  left: 300px;
+  top: 91px;
+  left: 303px;
 }
 .IndiaLocation {
   top: 55px;
-  left: 365px;
+  left: 351px;
 }
 .ugandaLocation {
-  top: 52px;
+  top: 60px;
   left: 270px;
 }
 .southAfricaLocation {
@@ -147,22 +169,27 @@
   left: 75px;
 }
 .croatiaLocation {
-  top: 12px;
-  left: 250px;
+  top: 16px;
+  left: 268px;
 }
 .tanzaniaLocation {
-  top: 108px;
-  left: 276px;
+  top: 110px;
+  left: 204px;
 }
 
 .nigeriaLocation {
-  top: 46px;
-  left: 26px;
+  top: 53px;
+  left: 24px;
 }
 
 .PinLocatioName {
   position: absolute;
   top: 60px;
+}
+
+.IndiaContaryLocation {
+  flex-direction: column;
+  left: 20px;
 }
 
 .UgandaContaryShowHoverDetails {
@@ -178,6 +205,10 @@
 }
 .NigeriaContaryLocation {
   left: 167px;
+}
+.USAContaryLocation .contaryname {
+  position: relative;
+  top: 17px;
 }
 
 .contaryname {
@@ -274,9 +305,11 @@
   }
   .contaryname {
     font-size: 7px;
+    text-align: center;
+    white-space: nowrap;
   }
   .contaryLocation img {
-    width: 7px;
+    width: 10px !important;
   }
   .ContaryShowHoverDetails {
     display: none;
@@ -287,11 +320,11 @@
   }
   .KenyaLocation {
     top: 25px;
-    left: 155px;
+    left: 150px;
   }
   .IndiaLocation {
-    top: 10px;
-    left: 193px;
+    top: -3px;
+    left: 168px;
   }
   .ugandaLocation {
     top: 4px;
@@ -304,7 +337,7 @@
   }
 
   .croatiaLocation {
-    top: -9px;
+    top: -17px;
     left: 141px;
   }
   .tanzaniaLocation {
@@ -320,6 +353,20 @@
     left: -28px;
   }
   .SouthAfricaContaryLocation {
-    left: -28px;
+    left: -35px;
+  }
+
+  .TanzaniaContaryLocation {
+    left: -27px !important;
+  }
+  .usaLocation,
+  .KenyaLocation,
+  .IndiaLocation,
+  .ugandaLocation,
+  .southAfricaLocation,
+  .croatiaLocation,
+  .tanzaniaLocation,
+  .nigeriaLocation {
+    width: 51px !important;
   }
 }
