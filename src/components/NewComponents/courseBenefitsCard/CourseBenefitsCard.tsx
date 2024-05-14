@@ -61,7 +61,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
                   height={64}
                 />
                 <div className={styles.cardText}>
-                  <p className={styles.cardText1}>{card.text1}</p>
+                  {/* <p className={styles.cardText1}>{card.text1}</p> */}
                   <p className={styles.cardText2}>{card.text2}</p>
                 </div>
               </div>
