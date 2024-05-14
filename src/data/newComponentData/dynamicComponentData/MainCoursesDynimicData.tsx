@@ -60,7 +60,7 @@ const MainCoursesDynimicData = {
         { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -89,7 +89,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DS/tools_covered3.png", alt: "" },
             { img: "DS/tools_covered4.png", alt: "" },
@@ -339,7 +339,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Data Science Course?",
               answer:
-                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n  Complete the registration form with all the required details. \n  Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ',
             },
             {
               question:
@@ -485,7 +485,7 @@ const MainCoursesDynimicData = {
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -749,7 +749,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Digital Marketing Course?",
               answer:
-                "To enrol in the Digital Regenesys online course, follow these steps:\n\n Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n Navigate to the course page.\n Select the required course.\n Click the 'Enrol Now' button.\n Complete the registration form with all the required details.\n Submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys online course, follow these steps:\n\n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enrol Now' button.\n5. Complete the registration form with all the required details.\n6. Submit the form and proceed to make the payment for the course.\n7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
 
             {
@@ -897,7 +897,7 @@ const MainCoursesDynimicData = {
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -925,7 +925,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered In This Course ",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "PM/project-management-tools1.png", alt: "" },
             { img: "PM/project-management-tools2.png", alt: "" },
@@ -1500,7 +1500,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
               answer:
-                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>.\n Navigate to the course page and select the required course.\n Click the "Enrol Now" button.\n Complete the registration form with all the required details.\n Submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n 1. Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>.\n 2. Navigate to the course page and select the required course.\n 3. Click the "Enrol Now" button.\n 4. Complete the registration form with all the required details.\n 5. Submit the form and proceed to make the payment for the course.\n 6. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
             },
           ],
         },
@@ -1542,7 +1542,7 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Can organisations enroll teams in AI courses to upskill?",
+                "Can organisations enrol teams in AI courses to upskill?",
               answer:
                 "Yes. Digital Regenesys offer corporate training or customized AI courses to upskill teams and organisations in AI technologies.",
             },
@@ -1903,7 +1903,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Cyber Security Course?",
               answer:
-                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps:\n \n Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n Navigate to the course page.\n Select the required course. \n Click the "Enrol Now" button.\n  Complete the registration form with all the required details. \n Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button.\n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
             },
           ],
         },
@@ -2254,7 +2254,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -2295,7 +2295,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Design Thinking Course?",
               answer:
-                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enroll Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enrol Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
           ],
         },
@@ -2376,11 +2376,11 @@ const MainCoursesDynimicData = {
     CourseCode: "FSD",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/FSD-Banner.webp",
-      coursePageName: "Full Stack Developer",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Full Stack Development",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "The Full Stack Web & Software Development course provides a comprehensive curriculum, including concepts in front-end development, back-end development databases and operating systems. Students will gain practical skills in front-end and back-end technologies.The course equips participants with the tools and techniques to work on full stack development concepts.",
+        "The Full Stack Web & Software Development course provides a comprehensive curriculum, including concepts in front-end development, back-end development, databases and operating systems. Learners will gain practical skills to understand and perform front-end and back-end technologies. The course equips participants with the tools and techniques to work on full stack development concepts.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/t-tnGObE7zM??autoplay=1&loop=1&playlist=t-tnGObE7zM?",
       BrochureIcon: "Icons/Brochure.svg",
@@ -2392,57 +2392,56 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Full Stack Web & Software Development Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Full Stack Web & Software Development Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Full Stack Development With Us!",
-      bigHeading:
-        "Everything You Need To Know About  Full Stack Development Course",
+      smallHeading: "Explore the world of Full Stack Development With Us",
+      bigHeading: "Everything You Need to Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/FSD-explore.webp",
           contentText:
-            "Digital Regenesys’ full stack web & software development course is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on front end and back end on the web and extract insights from it by using HTML, JavaScrit, GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB. Acquire",
+            "Digital Regenesys’s Full Stack Web & Software Development is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on the front end and back end of the web and extract insights from them by using HTML, JavaScrit, and GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB.",
           contentCard: [
             {
               icon: "Icons/Live Call.svg",
@@ -2463,7 +2462,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "FDS/chatGpt.svg", alt: "" },
             { img: "FDS/expressJs.svg", alt: "" },
@@ -2483,21 +2482,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
-              facultyEducation: "",
+              facultyEducation: "Ph.D. in Computer Engineering",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-              facultyName: "Dr.Nilay Karade",
-              facultyEducation: "",
+              facultyName: "Dr. Nilay Karade",
+              facultyEducation: "Ph.D. in Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr.Shilpa Joshi",
-              facultyEducation: "",
+              facultyName: "Dr. Shilpa Joshi",
+              facultyEducation: "Head of Academics",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -2513,98 +2512,98 @@ const MainCoursesDynimicData = {
             {
               weekHeading: "Front-End Development",
               weekPoints: [
-                "HTML structure building.",
-                "CSS styling and customisation.",
-                "Local website development using text editors and Chrome DevTools.",
-                "Deployment using GitHub Pages and command line.",
-                "Advanced CSS topics for improved styling.",
-                "Responsive web design with CSS grid, flexbox, and media queries.",
-                "Introduction to JavaScript syntax and basic programmes.",
-                "Intermediate JavaScript programmes using arrays, loops, objects, and iterators.",
+                "Html Structure Building.",
+                "CSS Styling And Customisation.",
+                "Local Website Development Using Text Editors And Chrome Devtools.",
+                "Deployment Using Github Pages And Command Line.",
+                "Advanced CSS Topics For Improved Styling.",
+                "Responsive Web Design With CSS Grid, Flexbox, And Media Queries.",
+                "Introduction To Javascript Syntax And Basic Programmes.",
+                "Intermediate Javascript Programmes Using Arrays, Loops, Objects, And Iterators.",
               ],
             },
             {
               weekHeading: "Version Control",
-              weekPoints: ["Git and GitHub for version control"],
+              weekPoints: ["Git And GitHub For Version Control"],
             },
             {
               weekHeading: "Interactive Websites and Accessibility",
               weekPoints: [
-                "Implementing JavaScript for interactivity.",
-                "Best accessibility practices for inclusive websites.",
+                "Implementing Javascript For Interactivity.",
+                "Best Accessibility Practices For Inclusive Websites.",
               ],
             },
             {
               weekHeading: "Advanced JavaScript and Testing",
               weekPoints: [
-                "Advanced JavaScript concepts: classes, modules, error handling.",
-                "JavaScript testing methodologies (TDD) using Mocha and Chai.",
-                "Asynchronous JavaScript and HTTP requests",
+                "Advanced Javascript Concepts: Classes, Modules, Error Handling.",
+                "Javascript Testing Methodologies (TDD) Using Mocha And Chai.",
+                "Asynchronous Javascript And HTTP Requests",
               ],
             },
             {
               weekHeading: "Introduction to React",
               weekPoints: [
-                "Introduction to React library.",
-                "Props, state, hooks, and testing with Jest and Enzyme.",
-                "Managing states with Redux.",
+                "Introduction To React Library.",
+                "Props, State, Hooks, And Testing With Jest And Enzyme.",
+                "Managing States With Redux.",
               ],
             },
             {
               weekHeading: "Collaboration with Git and GitHub",
               weekPoints: [
-                "Collaboration techniques: forking, branching, merging conflicts, pull requests.",
+                "Collaboration Techniques: Forking, Branching, Merging Conflicts, Pull Requests.",
               ],
             },
             {
               weekHeading: "Back-End Development",
               weekPoints: [
-                "Introduction to back-end development and server programming.",
-                "Building a back-end with Express.js.",
-                "User authentication and authorisation.",
-                "TDD techniques for full-stack web applications.",
+                "Introduction To Back-End Development And Server Programming.",
+                "Building A Back-End With Express.js.",
+                "User Authentication And Authorisation.",
+                "TDD Techniques For Full-Stack Web Applications.",
               ],
             },
             {
               weekHeading: "Databases",
               weekPoints: [
-                "Basics of databases and their role.",
-                "Crafting sophisticated queries for MongoDB.",
-                "Designing databases for MongoDB.",
-                "Advanced MongoDB techniques for optimal performance.",
-                "Adding a MongoDB database to web applications.",
-                "API development using Swagger and OpenAPI.",
-                "Portfolio project: E-Commerce App (REST API).",
+                "Basics Of Databases And Their Role.",
+                "Crafting Sophisticated Queries For MongoDB.",
+                "Designing Databases For MongoDB.",
+                "Advanced MongoDB Techniques For Optimal Performance.",
+                "Adding A MongoDB Database To Web Applications.",
+                "API Development Using Swagger And OpenAPI.",
+                "Portfolio Project: E-Commerce App (REST API).",
               ],
             },
             {
               weekHeading: "Connecting Front-End to Back-End",
               weekPoints: [
-                "Integrating front-end and back-end for full-stack applications.",
-                "Deployment using Render.",
+                "Integrating Front-End And Back-End For Full-Stack Applications.",
+                "Deployment Using Render.",
               ],
             },
             {
               weekHeading: "Web Security",
               weekPoints: [
-                "Intermediate concepts in web security.",
-                "Prevention techniques for common threats.",
-                "Data security using SSL/HTTPS, TLS, and Firewall Rules in Linux.",
-                "Mitigating common web application attacks.",
+                "Intermediate Concepts In Web Security.",
+                "Prevention Techniques For Common Threats.",
+                "Data Security Using SSL/HTTPS, TLS, And Firewall Rules In Linux.",
+                "Mitigating Common Web Application Attacks.",
               ],
             },
             {
               weekHeading: "Operating Systems and DevOps",
               weekPoints: [
-                "Fundamentals of operating systems.",
-                "DevOps fundamentals - culture, practices, tools.",
+                "Fundamentals Of Operating Systems.",
+                "DevOps Fundamentals - Culture, Practices, Tools",
               ],
             },
             {
               weekHeading: "Full-Stack E-Commerce Experience",
               weekPoints: [
-                "Expanding E-Commerce REST API with a React client app.",
-                "Creating a MERN (MongoDB, Express.js, React, Node.js) full-stack E-Commerce experience.",
+                "Expanding E-Commerce REST API With A React Client App.",
+                "Creating A MERN (MongoDB, Express.Js, React, Node.Js) Full-Stack E-Commerce Experience.",
               ],
             },
           ],
@@ -2617,33 +2616,32 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
+              contaryName: "South Africa",
               price: "R 29,500",
-              duration: "6 Months",
+              duration: "40 Weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 130,000",
-              duration: "6 Months",
+              price: "₹ 130,000 + GST",
+              duration: "40 Weeks",
             },
             {
               contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 1,586",
-              duration: "6 Months",
+              duration: "40 Weeks",
             },
           ],
         },
       },
     },
     CertificationDRData: {
-      title:
-        "About Digital Regenesys Full Stack Web & Software Development Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Full Stack Web & Software Development Certification",
       paragraph:
-        "Digital Regenesys aims to deliver a comprehensive journey through the fundamental technologies and best practices essential to modern web development in its Full Stack Web & Software Development course. By immersing learners in hands-on projects and real-world simulations, the programme equips them with practical experience, empowering them to confidently navigate challenges within the realm of Full Stack Web & Software Development upon completion.",
+        "Digital Regenesys’s Full Stack Web & Software Development course is designed to provide a thorough exploration of fundamental technologies and best practices in modern web development.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
@@ -2700,26 +2698,26 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
           heading: "Full Stack Web & Software Development Course",
           faqs: [
             {
-              question: "What is full stack software development?",
+              question: "What is Full Stack Software Development?",
               answer:
-                "Full stack software development involves building both the front-end (user interface) and back-end (server-side logic) of a web application, along with managing databases and operating systems. It encompasses the entire development process from start to finish.",
+                "Full Stack Software Development involves building both the front-end (user interface) and back-end (server-side logic) of a web application, along with managing databases and operating systems. It encompasses the entire development process from start to finish.",
             },
             {
               question: "What technologies will be covered in the course?",
               answer:
-                "This course covers a wide range of technologies, including but not limited to HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Git, and various other tools and libraries commonly used in full-stack web development.",
+                "This course covers a wide range of technologies, including HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Git, and various other tools and libraries commonly used in full-stack web development.",
             },
             {
               question: "How is the course structured?",
               answer:
-                "The course is divided into modules, each focusing on specific aspects of full-stack web development. It includes lectures, hands-on exercises, coding assignments, and projects to reinforce learning and practical application of concepts.",
+                "The course is divided into modules, each focusing on specific aspects of Full Stack Web Development. It includes lectures, hands-on exercises, coding assignments, and projects to reinforce learning and practical application of concepts.",
             },
           ],
         },
@@ -2736,7 +2734,7 @@ const MainCoursesDynimicData = {
               question:
                 "Are there any prerequisites for enrolment in terms of software or hardware requirements?",
               answer:
-                "Students are required to have access to a computer or laptop with a stable internet connection before enrolling for the Full Stack Web & Software Development course at Digital Regenesys.",
+                "Students are required to have access to a computer or laptop with a stable internet connection before enroling for the Full Stack Web & Software Development course at Digital Regenesys.",
             },
             {
               question:
@@ -2757,15 +2755,15 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Is version control covered in the curriculum of Digital Regenesys’s full stack web & software development course?",
+                "Is version control covered in the curriculum of Digital Regenesys’s Full Stack Web & Software Development course?",
               answer:
                 "Yes, students will learn version control using tools like Git and GitHub to manage their code effectively.",
             },
             {
               question:
-                "What tools are covered in Digital Regenesys’s full stack web & software development course?",
+                "What tools are covered in Digital Regenesys’s Full Stack Web & Software Development course?",
               answer:
-                "Tools used in the Digital Regenesys full stack web & software development course are HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Git and GitHub and Chat GPT.",
+                "The tools used in Digital Regenesys’s  Full Stack Web & Software Development course are HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Git, GitHub, and Chat GPT.",
             },
           ],
         },
@@ -2776,11 +2774,11 @@ const MainCoursesDynimicData = {
               question:
                 "What is the duration of the Full Stack Web & Software Development course offered by Digital Regenesys?",
               answer:
-                "The total duration of the Digital Regenesys Full Stack Web & Software Development Course is 40 weeks.",
+                "The total duration of the Digital Regenesys’s Full Stack Web & Software Development Course is 40 weeks.",
             },
             {
               question:
-                "Is full-stack web development course accessible online or on-site?",
+                "Is the Full Stack Web & Software Development course accessible online or on-site?",
               answer:
                 "Digital Regenesys offers the Full Stack Web & Software Development course online, providing flexibility for students to study from anywhere and anytime.",
             },
@@ -2796,19 +2794,19 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "What is the benefit of enrolling in an online Full Stack Software Development Certification Course?",
+                "What is the benefit of enroling in an online Full Stack Software Development Certification Course?",
               answer:
-                "Full Stack Web Development Certification Course online offer a convenient and flexible way to enhance your knowledge or learn new skills.",
+                "Full Stack Software Development Certification Course online offer a convenient and flexible way to enhance your knowledge or learn new skills.",
             },
             {
               question:
                 "Are there practical applications and projects in online Full Stack Development Courses?",
               answer:
-                "Digital Regenesys’s Online Full Stack Web & Software Development  Course includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+                "Digital Regenesys’s Online Full Stack Web & Software Development Course includes capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
             },
             {
               question:
-                "What career opportunities are available after completing an online full stack web development course?",
+                "What career opportunities are available after completing an online  Full Stack Web Development course?",
               answer:
                 "Completing Full Stack Web Development online courses can open doors to various career opportunities, including roles such as Full Stack Developer, Front-End Developer, Back-End Developer, Web Developer, Software Engineer, UI/UX Developer and Consultant.",
             },
@@ -2818,25 +2816,25 @@ const MainCoursesDynimicData = {
           heading: "Full Stack Developer",
           faqs: [
             {
-              question: "What is a full stack developer?",
+              question: "What is a Full Stack Developer?",
               answer:
-                "A full stack developer is proficient in both front-end and back-end web development, handling client-side and server-side programming, databases, and server management.",
+                "A Full Stack Developer is proficient in both front-end and back-end web development, handling client-side and server-side programming, databases, and server management.",
             },
             {
-              question: "What is the full stack developer salary?",
+              question: "What is the Full Stack Developer's salary?",
               answer:
-                "Full-stack developer salary vary based on various factors such as location, experience, and skills.",
+                "Full Stack Developer salary varies based on various factors such as location, experience, and skills.",
             },
             {
               question:
-                "What full stack developer jobs are available in the job market?",
+                "What Full Stack Developer jobs are available in the job market?",
               answer:
-                "Full stack developer jobs consist of roles such as web developer, software engineer, app developer, or systems analyst. They're sought after in various industries like tech, finance, healthcare, and e-commerce",
+                "Full Stack Developer jobs consist of roles such as web developer, software engineer, app developer, or systems analyst. They're sought after in various industries like tech, finance, healthcare, and e-commerce.",
             },
             {
-              question: "What skills does a full stack web developer need?",
+              question: "What skills does a Full Stack Web Developer need?",
               answer:
-                "A full stack web developer requires knowledge of HTML, CSS, and JavaScript for the front end, and languages like Python, Ruby, and PHP for the back end. Familiarity with databases, version control systems, and server management is also essential.",
+                "A Full Stack Web Developer requires knowledge of HTML, CSS, and JavaScript for the front-end and languages like Python, Ruby, and PHP for the back-end. Familiarity with databases, version control systems, and server management is also essential.",
             },
           ],
         },
@@ -2909,7 +2907,7 @@ const MainCoursesDynimicData = {
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -3338,7 +3336,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "MD/DSA_chatGpt.png", alt: "" },
             { img: "MD/Clipchamp.svg", alt: "" },
@@ -3735,10 +3733,10 @@ const MainCoursesDynimicData = {
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "", contentId: "content4" },
         { text: "", contentId: "content5" },
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -3766,7 +3764,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "PDM/PDM-tool-1.webp", alt: "" },
             { img: "PDM/PDM-tool-2.webp", alt: "" },
