@@ -1500,7 +1500,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
               answer:
-                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>\n Navigate to the course page and select the required course.\n Click the "Enrol Now" button.\n Complete the registration form with all the required details.\n Submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>.\n Navigate to the course page and select the required course.\n Click the "Enrol Now" button.\n Complete the registration form with all the required details.\n Submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
             },
           ],
         },
@@ -3253,11 +3253,11 @@ const MainCoursesDynimicData = {
 
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/MD-Banner.webp",
-      coursePageName: "Management Advancement",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Management Advancement",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "Digital Regenesys's Management Development Programme(MDP) is your gateway to a comprehensive curriculum spanning strategic management, innovation, operational excellence, finance, marketing, and leadership. Gain practical insights and skills to confidently navigate complex business environments, drive innovation, optimise operations, and lead teams effectively. ",
+        "Digital Regenesys's Management Advancement Programme (MAP) is your gateway to a comprehensive curriculum spanning strategic management, innovation, operational excellence, finance, marketing, and leadership. Gain practical insights and skills to confidently navigate complex business environments, drive innovation, optimise operations, and lead teams effectively. ",
       youtubeVideoLink:
         "https://www.youtube.com/embed/FKksF9fkf5w?autoplay=1&loop=1&playlist=FKksF9fkf5w",
       BrochureIcon: "Icons/Brochure.svg",
@@ -3269,56 +3269,56 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Management Development Programme Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Management Advancement Programme Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Management Development With Us!",
-      bigHeading:
-        "Everything You Need To Know About Management Development Programme",
+      smallHeading:
+        "Explore The World Of Management Advancement Programme With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "", contentId: "content4" },
         { text: "", contentId: "content5" },
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/MD-explore.webp",
           contentText:
-            "Digital Regenesys’ Management Development Programme (MDP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management development.",
+            "Digital Regenesys’ Management Advancement Programme (MAP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management advancement.",
           contentCard: [
             {
               icon: "Icons/Live Call.svg",
@@ -3469,7 +3469,7 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
+              contaryName: "South Africa",
               price: "R 35,000",
               duration: "40 Weeks",
             },
@@ -3477,13 +3477,13 @@ const MainCoursesDynimicData = {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 150,000",
+              price: "₹ 150,000 + GST",
               duration: "40 Weeks",
             },
             {
               contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
-              price: "$1,920",
+              price: "$ 1,920",
               duration: "40 Weeks",
             },
           ],
@@ -3491,11 +3491,10 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title:
-        "About Digital Regenesys Management Development Certificate Programme",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Management Advancement Certification",
       paragraph:
-        "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Development certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
+        "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Advancement certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
       achievementsHeading: "Key Takeaways",
@@ -3556,27 +3555,27 @@ const MainCoursesDynimicData = {
     //   ],
     // },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
-          heading: "Management Development Programme",
+          heading: "Management Advancement Programme",
           faqs: [
             {
               question:
-                "What is the focus of Digital Regenesys's Management Development Programme (MDP)?",
+                "What is the focus of Digital Regenesys's Management Advancement Programme (MAP)?",
               answer:
                 "The programme focuses on developing comprehensive skills in strategic management, innovation, operational excellence, finance, marketing, and leadership.",
             },
             {
               question:
-                "How does Digital Regenesys's Management Development Programme help participants navigate complex business environments?",
+                "How does Digital Regenesys's Management Advancement Programme help participants navigate complex business environments?",
               answer:
                 "The programme provides practical insights and skills to understand market dynamics, identify economic, political, and social risks, and foster a culture of innovation for effective adaptation to changing business landscapes.",
             },
             {
               question:
-                "How does Digital Regenesys's Management Development certificate programme address digital transformation in businesses?",
+                "How does Digital Regenesys's Management Advancement certificate programme address digital transformation in businesses?",
               answer:
                 "The programme incorporates disruptive technologies into business strategies and provides leadership skills to lead digital transformation initiatives effectively.",
             },
@@ -3587,21 +3586,21 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "Who is eligible to enrol in Digital Regenesys's Management Development Programme (MDP)?",
+                "Who is eligible to enrol in Digital Regenesys's Management Advancement Programme (MDP)?",
               answer:
-                "The Management Development Programme is open to professionals from various industries and backgrounds who seek to enhance their management skills and advance their careers. There are no specific prerequisites, but participants are typically mid-career professionals or individuals with some managerial experience.",
+                "The Management Advancement Programme is open to professionals from various industries and backgrounds who seek to enhance their management skills and advance their careers. There are no specific prerequisites, but participants are typically mid-career professionals or individuals with some managerial experience.",
             },
             {
               question:
                 "How can I enrol in Digital Regenesys's management certificate programme?",
               answer:
-                "To enrol in the Management Development Programme, you can visit the Digital Regenesys website and navigate to the program's page.",
+                "To enrol in the Management Advancement Programme, you can visit the Digital Regenesys website and navigate to the program's page.",
             },
             {
               question:
-                "Is there an application process to enrol for the Management Development Programme?",
+                "Is there an application process to enrol for the Management Advancement Programme?",
               answer:
-                "Yes, interested individuals are required to complete an online application form to enrol in the Management Development Programme.",
+                "Yes, interested individuals are required to complete an online application form to enrol in the Management Advancement Programme.",
             },
           ],
         },
@@ -3610,7 +3609,7 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "What tools are covered in Digital Regenesys's Management Development Programme?",
+                "What tools are covered in Digital Regenesys's Management Advancement Programme?",
               answer:
                 "The course covers a variety of tools like ChatGPT, Gemini, HeyGen, Krea.ai and Clipchamp.",
             },
@@ -3631,15 +3630,15 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "How long is the Management Development Programme at Digital Regenesys?",
+                "How long is the Management Advancement Programme at Digital Regenesys?",
               answer:
-                "The Management Development Programme at Digital Regenesys is a duration of 40 weeks course, designed to provide comprehensive learning to students.",
+                "The Management Advancement Programme at Digital Regenesys is a duration of 40 weeks course, designed to provide comprehensive learning to students.",
             },
             {
               question:
-                "Can I access course materials and resources after completing the Management Development Programme?",
+                "Can I access course materials and resources after completing the Management Advancement Programme?",
               answer:
-                "Yes, participants have continued access to course materials and resources for 1 year even after completing the Management Development Programme. This ensures ongoing learning and the ability to revisit key concepts and insights as needed in their professional endeavours.",
+                "Yes, participants have continued access to course materials and resources for 1 year even after completing the Management Advancement Programme. This ensures ongoing learning and the ability to revisit key concepts and insights as needed in their professional endeavours.",
             },
             {
               question:
@@ -3650,25 +3649,25 @@ const MainCoursesDynimicData = {
           ],
         },
         {
-          heading: "Management Development Online Certification Course",
+          heading: "Management Advancement Online Certification Course",
           faqs: [
             {
               question:
-                "What is the benefit of enrolling in an online Management Development Certification Programme?",
+                "What is the benefit of enrolling in an online Management Advancement Certification Programme?",
               answer:
-                "The Management Development certificate programme online offers a convenient and flexible way to enhance your knowledge or learn new skills.",
+                "The Management Advancement certificate programme online offers a convenient and flexible way to enhance your knowledge or learn new skills.",
             },
             {
               question:
-                "Are there practical applications and projects in online Management Development Programmes?",
+                "Are there practical applications and projects in online Management Advancement Programmes?",
               answer:
-                "Digital Regenesys’s Online management development programme includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+                "Digital Regenesys’s Online Management Advancement programme includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
             },
             {
               question:
-                "What career opportunities are available after completing an online Management Development Programme?",
+                "What career opportunities are available after completing an online Management Advancement Programme?",
               answer:
-                "Completing Management Development Programme (MDP) online courses can open doors to various career opportunities, including roles such as Business Development Manager, Innovation Manager, Operations Manager, Project Manager, Financial Analyst/Manager, Marketing Manager, Strategy Consultant, Human Resources Manager and Sustainability Manager.",
+                "Completing Management Advancement Programme (MAP) online courses can open doors to various career opportunities, including roles such as Business Development Manager, Innovation Manager, Operations Manager, Project Manager, Financial Analyst/Manager, Marketing Manager, Strategy Consultant, Human Resources Manager and Sustainability Manager.",
             },
           ],
         },
