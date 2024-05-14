@@ -112,18 +112,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr. Nilay Karade",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr. Shilpa Joshi",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
@@ -216,7 +219,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -424,9 +427,9 @@ const MainCoursesDynimicData = {
     CourseCode: "DMN",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/DM-Banner.webp",
-      coursePageName: "Digital Marketing",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Digital Marketing",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
         "Digital Marketing is a comprehensive course to enhance your skills and stay ahead in the competitive online landscape. Gain practical knowledge in SEO, social media marketing, and paid advertising strategies. With hands-on experience and expert guidance,  master the latest trends and techniques in digital marketing. ",
       youtubeVideoLink:
@@ -440,41 +443,41 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Digital Marketing Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Digital Marketing Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Trends Knowledge",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Digital Marketing with us!",
-      bigHeading: "Everything You Need To Know About Digital Marketing Course",
+      smallHeading: "Explore The World Of Digital Marketing With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
@@ -510,7 +513,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DM/digital_marketing_tools1.png", alt: "" },
             { img: "DM/digital_marketing_tools2.png", alt: "" },
@@ -537,14 +540,16 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/bhupendra_mishra.webp",
               facultyName: "Bhupendra Mishra",
+              facultyEducation: "MBA in International Business",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/faculty_deepika_sharma.webp",
-              facultyName: "Dr.Deepika Sharma",
+              facultyName: "Dr. Deepika Sharma",
+              facultyEducation: "Ph.D. in Business Management",
               courseName: "Senior Lecturer",
-              yearsOfExperience: "",
+              yearsOfExperience: "10+ ",
             },
           ],
         },
@@ -596,7 +601,7 @@ const MainCoursesDynimicData = {
               weekPoints: {
                 "General Modules": [
                   "Introduction to Marketing & Behavioural Digital Marketing",
-                  "Search Engine Optimization",
+                  "Search Engine Optimisation",
                   "Content Creation & Marketing/UX Digital Approach",
                   "Social Media Marketing/Influencer Marketing",
                 ],
@@ -613,15 +618,15 @@ const MainCoursesDynimicData = {
               weekPoints: {
                 "": [
                   "Programmatic Advertising & Paid Media Marketing, Importance of Analytics",
-                  "Importance of IMC (Media Planning & Media Buying & OTT Marketing)",
-                  "Online after sales (Reputation) Management",
+                  "Importance Of IMC (Media Planning & Media Buying & OTT Marketing)",
+                  "Online After Sales (Reputation) Management",
                   "E-Commerce Marketing & Email Marketing & Chatbots",
                   "Affiliate Marketing & Mobile Marketing & Podcast",
                 ],
                 "Complimentary Modules": [
                   "Funnel Marketing",
                   "Marktech & Adtech",
-                  "Koo app & Inshort app",
+                  "Koo App & Inshort App",
                   "Metaverse",
                 ],
               },
@@ -629,22 +634,23 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
+
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
-              price: "R 24,488 ",
-              duration: "20 weeks",
+              price: "R 24,488",
+              duration: "20 Weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 122,498",
+              price: "₹ 122,498 + GST",
               duration: "20 weeks",
             },
             {
@@ -658,17 +664,17 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Digital Marketing Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Digital Marketing Certification",
       paragraph:
         "Enhance online marketing skills and boost your career prospects with the Digital Marketing Certificate Course. Learn advanced strategies in SEO, content marketing, social media, and more from industry experts. Enrol now, accelerate your professional growth and stand out in the competitive digital marketing field with our comprehensive certification course. Sign up now to stay ahead in the evolving digital landscape.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      buttonText: "Enrol Now",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Effective Email Marketing",
         "Data Analysis and Analytics ",
-        "Search Engine Optimization (SEO) ",
+        "Search Engine Optimisation (SEO)",
         "Social Media Management",
         "Content Marketing Excellence",
         " Expertise in Various Digital Channels",
@@ -678,7 +684,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/dm-blog-digital-marketing-course.webp",
@@ -708,7 +714,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -717,40 +723,40 @@ const MainCoursesDynimicData = {
             {
               question: "What is Digital Marketing?",
               answer:
-                "In today’s fast-paced and ever-changing job market, staying on top of your industry’s latest trends and skills is essential. Upskilling and career upgrades have become crucial tools for unlocking your full potential and achieving career success. ",
+                "Digital marketing refers to the use of online channels, platforms, and technologies to promote products or services, engage with audiences, and drive business growth. It encompasses various tactics such as social media marketing, search engine optimisation (SEO), content marketing, email marketing, and more. ",
             },
             {
               question: "What is the goal of Digital Marketing?",
               answer:
-                "Digital marketing aims to increase brand visibility, drive website traffic, and generate leads or sales. By leveraging digital tools and analytics, businesses can better understand consumer behavior and optimize their marketing efforts for improved results.",
+                "Digital marketing aims to increase brand visibility, drive website traffic, and generate leads or sales. By leveraging digital tools and analytics, businesses can better understand consumer behaviour and optimise their marketing efforts for improved results.",
             },
             {
               question: "What is a Digital Marketing Course?",
               answer:
-                "Digital Marketing is a comprehensive course used to learn the latest strategies and techniques in online marketing. Acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Stay competitive in the ever-evolving digital marketing landscape by joining our course today.",
+                "Digital Marketing is a comprehensive course that teaches the latest strategies and techniques in online marketing. It also guides you on how to acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Join our course today to stay competitive in the ever-evolving digital marketing landscape.",
             },
           ],
         },
         {
-          heading: "Eligibility and Enrollment",
+          heading: "Eligibility and Enrolment",
           faqs: [
             {
               question: "Who can pursue a Digital Marketing Course?",
               answer:
-                "Digital marketing is one of the fastest-growing industries in the world. Digital marketing course is suitable for those passionate about digital trends and wanting to learn strategies for expanding their online presence. By enrolling in Digital Regenesys's Digital marketing course, participants can acquire in-demand skills to propel their careers forward in today's digital landscape.",
+                "Digital marketing is one of the fastest-growing industries in the world. A digital marketing course is suitable for those passionate about digital trends and who want to learn strategies for expanding their online presence. By enroling in Digital Regenesys's Digital marketing course, participants can acquire in-demand skills to propel their careers forward in today's digital landscape.",
             },
             {
               question:
-                "How do I enroll and register for the Digital Regenesys Digital Marketing Course?",
+                "How do I enrol and register for the Digital Regenesys Digital Marketing Course?",
               answer:
-                "To enroll in the Digital Regenesys online course, follow these steps:\n\n Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n Navigate to the course page.\n Select the required course.\n Click the 'Enroll Now' button.\n Complete the registration form with all the required details.\n Submit the form and proceed to make the payment for the course.\nUpon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys online course, follow these steps:\n\n Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n Navigate to the course page.\n Select the required course.\n Click the 'Enrol Now' button.\n Complete the registration form with all the required details.\n Submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
 
             {
               question:
                 "Are there any age restrictions to pursue a Digital Marketing Course?",
               answer:
-                "There are typically no age restrictions to pursue a Digital Marketing Course. The Digital Marketing course is designed to accommodate learners of all ages, from high school students to working professionals looking to enhance their skills later in their careers.",
+                "There are typically no age restrictions to pursue a Digital Marketing Course. The Digital Marketing course is designed to accommodate learners of all ages, from high school students to working professionals looking to enhance their skills for their careers.",
             },
           ],
         },
@@ -760,7 +766,7 @@ const MainCoursesDynimicData = {
             {
               question: "What is SEO in digital marketing?",
               answer:
-                "SEO - Search Engine Optimization is a digital marketing tool widely used to optimize website content, blogs, or web pages. This digital marketing tool helps to improve the page's visibility and ranking in search engine results pages (SERPs).",
+                "SEO - Search Engine Optimization is a digital marketing tool widely used to optimise website content, blogs, or web pages. This digital marketing tool helps to improve the page's visibility and ranking in search engine results pages (SERPs).",
             },
             {
               question: "Which tool is most widely used in Digital Marketing?",
@@ -780,9 +786,9 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "How Long Does It Take to Complete a Digital Marketing Course?",
+                "How long does it take to complete a Digital Marketing Course?",
               answer:
-                "The total duration of the Digital Regenesys Digital Marketing Course is a 20-week course.",
+                "The total duration of the Digital Regenesys Digital Marketing Course is 20 weeks.",
             },
             {
               question:
@@ -792,7 +798,7 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "What Qualifications Do I Need To Study a Digital Marketing Course?",
+                "What qualifications do I need to study a Digital Marketing Course?",
               answer:
                 "There are no such eligibility criteria or Master's degree required to pursue this course. Individuals with graduation degrees across any stream and a basic understanding of business and marketing are preferred to pursue this course.",
             },
@@ -805,7 +811,7 @@ const MainCoursesDynimicData = {
               question:
                 "Is the Digital Marketing online certification course valuable for beginners?",
               answer:
-                "Yes, an online certification course in digital marketing can be valuable for beginners. They provide a tangible credential, indicating that an individual has acquired certain knowledge and skills in digital marketing.",
+                "Yes, an online certification course in digital marketing can be valuable for beginners as it provides a tangible credential, indicating that an individual has acquired certain knowledge and skills in digital marketing.",
             },
             {
               question:
@@ -817,7 +823,7 @@ const MainCoursesDynimicData = {
               question:
                 "How can Digital Regenesys's Digital Marketing certification course benefit entrepreneurs and small business owners?",
               answer:
-                "Digital Regenesys's Digital Marketing certification course empowers entrepreneurs and small business owners to enhance their online presence, understand customer behavior, and implement effective digital marketing strategies to grow their businesses.",
+                "Digital Regenesys's Digital Marketing certification course empowers entrepreneurs and small business owners to enhance their online presence, understand customer behaviour, and implement effective digital marketing strategies to grow their businesses.",
             },
           ],
         },
@@ -935,12 +941,14 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Dennis-Laxton.webp",
               facultyName: "Dr.Dennis Laxton",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
             {
               facultyImg: "Images/Faculty/James_forson.webp",
               facultyName: "James Forson",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
@@ -1006,7 +1014,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -1309,18 +1317,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr.Nilay Karade",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr.Shilpa Joshi",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -1364,7 +1375,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -1664,6 +1675,7 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
               facultyName: "Dr.Saquib Ahmad Khan",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
@@ -1763,7 +1775,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -2067,12 +2079,14 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Dennis-Laxton.webp",
               facultyName: "Dr.Dennis Laxton",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
             {
               facultyImg: "Images/Faculty/Shaista-Fatima.webp",
               facultyName: "Dr.Shaista Fatima",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
@@ -2163,7 +2177,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -2470,18 +2484,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr.Nilay Karade",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr.Shilpa Joshi",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -2597,7 +2614,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -2940,18 +2957,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr.Nilay Karade",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr.Shilpa Joshi",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -2993,7 +3013,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -3338,6 +3358,7 @@ const MainCoursesDynimicData = {
         //       facultyImg:
         //         "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
         //       facultyName: "Dr.Saquib Ahmad Khan",
+        // facultyEducation: "",
         //       courseName: "Senior Lecturer",
         //       yearsOfExperience: "10+ ",
         //     },
@@ -3445,7 +3466,7 @@ const MainCoursesDynimicData = {
           ContentHeding: "Pricing Across the Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
-          EnrollmentIcon: "Icons/teacher.svg",
+          EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
@@ -3767,6 +3788,7 @@ const MainCoursesDynimicData = {
         //       facultyImg:
         //         "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
         //       facultyName: "Dr.Saquib Ahmad Khan",
+        // facultyEducation: "",
         //       courseName: "Senior Lecturer",
         //       yearsOfExperience: "10+ ",
         //     },

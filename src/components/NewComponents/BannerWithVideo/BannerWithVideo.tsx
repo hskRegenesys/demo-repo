@@ -84,7 +84,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <span className={styles.topTextBestsale}>{BestSaleText}</span>
               <span className={styles.topTextMessage}>{topTextMessage}</span>
             </div>
-            <h1 className={styles.courseHeading}>{pageName}</h1>
+            <h1 className={styles.courseHeading}>{coursePageName}</h1>
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles.uspSectionContainer}>
@@ -132,6 +132,14 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
             <div className={styles.buttonsContainer}>
               <a
+                className={styles.enrollButton}
+                onClick={() => {
+                  handleEnrollButtonClick("Enrol Now!");
+                }}
+              >
+                Enrol Now
+              </a>
+              <a
                 className={styles.brochureBtn}
                 onClick={() => {
                   handleEnrollButtonClick("Download Brochure");
@@ -144,15 +152,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                   width={24}
                   height={24}
                 />
-                Brochure
-              </a>
-              <a
-                className={styles.enrollButton}
-                onClick={() => {
-                  handleEnrollButtonClick("Enrol Now!");
-                }}
-              >
-                Enrol Now!
+                Download Brochure
               </a>
             </div>
           </div>

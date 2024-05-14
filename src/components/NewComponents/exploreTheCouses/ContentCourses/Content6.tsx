@@ -82,7 +82,7 @@ const Content6: React.FC<Content6Props> = ({
                   />
                 </div>
 
-                <span className={Styles.SpanText}>10,000+ Enroled</span>
+                <span className={Styles.SpanText}>Online Mode</span>
               </div>
             </div>
             <button
