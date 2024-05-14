@@ -1223,7 +1223,7 @@ const MainCoursesDynimicData = {
     CourseCode: "AIN",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/AI-Banner.webp",
-      coursePageName: "Artificial Intelligence",
+      coursePageName: "Certification Course in Artificial Intelligence",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
