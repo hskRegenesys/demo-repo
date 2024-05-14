@@ -339,7 +339,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Data Science Course?",
               answer:
-                'To enroll in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enroll Now" button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ',
+                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ',
             },
             {
               question:
@@ -1542,7 +1542,7 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Can organisations enroll teams in AI courses to upskill?",
+                "Can organisations enrol teams in AI courses to upskill?",
               answer:
                 "Yes. Digital Regenesys offer corporate training or customized AI courses to upskill teams and organisations in AI technologies.",
             },
@@ -2254,7 +2254,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -2295,7 +2295,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Design Thinking Course?",
               answer:
-                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enroll Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enrol Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
           ],
         },
