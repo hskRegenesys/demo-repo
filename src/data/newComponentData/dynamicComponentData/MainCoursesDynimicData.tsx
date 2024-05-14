@@ -216,7 +216,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -1281,7 +1281,7 @@ const MainCoursesDynimicData = {
         { text: "", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -1371,7 +1371,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -1639,7 +1639,7 @@ const MainCoursesDynimicData = {
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -1771,7 +1771,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -2043,7 +2043,7 @@ const MainCoursesDynimicData = {
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -2609,7 +2609,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -3006,7 +3006,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -3459,7 +3459,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -3827,7 +3827,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/teacher.svg",
