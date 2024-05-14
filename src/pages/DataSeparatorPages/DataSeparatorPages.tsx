@@ -306,6 +306,10 @@ const pageMappings = [
     ],
     data: MainCoursesDynimicData.ManagementAdvancement,
   },
+  {
+    pages: ["product-management"],
+    data: MainCoursesDynimicData.ProductManagement,
+  },
 ];
 
 const DataSeparatorPages = (page: string | undefined): any | undefined => {

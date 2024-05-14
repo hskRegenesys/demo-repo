@@ -3659,6 +3659,374 @@ const MainCoursesDynimicData = {
       PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
     },
   },
+  ProductManagement: {
+    CourseCode: "PDM",
+    BannerWithVideoData: {
+      BannerImgDesktop: "Images/Banner/PDM-Banner.png",
+      coursePageName: "Certification Course in Product Management",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
+      contentText:
+        "Digital Regenesys’s Product Management is a 24-week course that will teach you all the aspects of Product Management and provide you with an opportunity to upscale your career. ",
+      youtubeVideoLink:
+        "https://www.youtube.com/embed/53hvNdE2HPo?autoplay=1&loop=1&playlist=53hvNdE2HPo",
+      BrochureIcon: "Icons/Brochure.svg",
+      vidoPlayIcon: "Icons/Polygon.svg",
+      UspSectionData: {
+        uspLocationCard: {
+          uspLocationText:
+            "USA, South Africa, Nigeria, Kenya, Uganda, Tanzania & India ",
+          usplocationIcon: "Icons/Location.svg",
+        },
+        uspEnrollmentCard: {
+          uspEnrollmentText: "Students Enroled",
+          uspEnrollmentCount: "10000+",
+          StudentEnrolIcon: "Icons/Users.svg",
+          duration: "3000",
+        },
+        uspUpskillCard: {
+          uspUpskillText: "Internationally Recognised",
+          uspBookIcon: "Icons/Learn.svg",
+        },
+      },
+    },
+    CourseBenefitsCardData: {
+      courcename: "Project Management Course Result",
+      Heding: "What Our Learners Have Achieved ",
+      Card: [
+        {
+          cardIcon: "Icons/money-tick.svg",
+          text1: "100%",
+          text2: "Guaranteed Certification ",
+        },
+        {
+          cardIcon: "Icons/brifecase-tick.svg",
+          text1: "1000+",
+          text2: "Latest Knowledge On the Course",
+        },
+        {
+          cardIcon: "Icons/medal.svg",
+          text1: "190+",
+          text2: "Global Exposure",
+        },
+      ],
+    },
+    ExploreTheCoursesData: {
+      smallHeading: "Explore The World Of Product Management With Us",
+      bigHeading: "Everything You Need To Know",
+      sideHeadings: [
+        { text: "Course Overview", contentId: "content1" },
+        { text: "Course Curriculum", contentId: "content2" },
+        { text: "Tools Covered in this Course", contentId: "content3" },
+        { text: "", contentId: "content4" },
+        { text: "", contentId: "content5" },
+        { text: "Pricing Across the Countries", contentId: "content6" },
+      ],
+      sideContents: {
+        content1: {
+          contentHeading: "Course Overview",
+          contentImg: "Images/Banner/PDM-explore.png",
+          contentText:
+            "Enhance your skills and boost your career prospects with the Product Management Course. Our course offers a thorough curriculum to empower professionals with the necessary skills and expertise to excel and focus on Product Lifecycle Management. It encompasses all product lifecycle stages, from initial concept generation and customer analysis to product creation, release, and continuous improvement. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to succeed as Product Managers.",
+          contentCard: [
+            {
+              icon: "Icons/Live Call.svg",
+              text: "Live Classes",
+            },
+            {
+              icon: "Icons/Award.svg",
+              text: "International Certificate",
+            },
+            {
+              icon: "Icons/Counselling.svg",
+              text: "Industry Expert Faculty",
+            },
+            {
+              icon: "Icons/Experts.svg",
+              text: "Career Counselling",
+            },
+          ],
+        },
+        content2: {
+          contentHeading: "Tools Covered in this Course",
+          cardTools: [
+            { img: "PDM/PDM-tool-1.webp", alt: "" },
+            { img: "PDM/PDM-tool-2.webp", alt: "" },
+            { img: "PDM/PDM-tool-3.webp", alt: "" },
+            { img: "PDM/PDM-tool-4.webp", alt: "" },
+            { img: "PDM/PDM-tool-5.webp", alt: "" },
+            { img: "PDM/PDM-tool-6.webp", alt: "" },
+          ],
+        },
+
+        // content3: {
+        //   contentHeading: "World Class Faculty",
+        //   tutors: "50+ Tutors",
+        //   facultyCard: [
+        //     {
+        //       facultyImg:
+        //         "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
+        //       facultyName: "Dr.Saquib Ahmad Khan",
+        //       courseName: "Senior Lecturer",
+        //       yearsOfExperience: "10+ ",
+        //     },
+        //   ],
+        // },
+
+        content5: {
+          contentHeading: "Course Curriculum",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
+
+          curriculumContainer: [
+            {
+              weekHeading: "Product Strategy",
+              weekPoints: [
+                "Introduction to Product Management",
+                "Customer Insights for Product Innovation",
+                "Analyzing Product Opportunities",
+                "Business Model Design",
+                "Financial Analysis",
+                "Product Planning and Roadmapping",
+                "Taking Product to Market",
+                "Managing Product Evolution and Growth",
+              ],
+            },
+            {
+              weekHeading: "Product Execution",
+              weekPoints: [
+                "Product Discovery and Requirements Definition",
+                "UI/UX Design",
+                "Product Prototyping",
+                "Agile Product Development",
+                "Business Communication for Product Managers",
+              ],
+            },
+            {
+              weekHeading: "Tech For PMs",
+              weekPoints: ["Analytics, AI, and ML", "Tech For PMs"],
+            },
+          ],
+        },
+        content6: {
+          ContentHeding: "Pricing Across the Countries",
+          PriceIcon: "Icons/dollar-circle.svg",
+          durationIcon: "Icons/timer.svg",
+          EnrollmentIcon: "Icons/teacher.svg",
+          contraryPricingCard: [
+            {
+              contaryFlag: "Icons/south-africa.svg",
+              contaryName: "South Africa",
+              price: "R 19,999",
+              duration: "24 Weeks",
+            },
+            {
+              contaryFlag: "Icons/India.svg",
+
+              contaryName: "India",
+              price: "₹ 89,000 + GST",
+              duration: "24 Weeks",
+            },
+            {
+              contaryFlag: "Icons/USA.svg",
+              contaryName: "USA",
+              price: "$ 1,075 ",
+              duration: "24 Weeks",
+            },
+          ],
+        },
+      },
+    },
+    CertificationDRData: {
+      title: "Product Management Certification",
+      heading: "Get Certified With Us ",
+      paragraph:
+        "The Digital Regenesys’s Product Management Certificate equips professionals with essential skills to excel in product management.  It serves as a validation of proficiency and expertise in product management. It can be used by learners to demonstrate that they have successfully completed the training and acquired the necessary skills and knowledge to excel in product management roles. ",
+      tickImage: "Icons/Check.svg",
+      buttonText: "Enrol Now!",
+      achievementsHeading: "Key Achievements",
+      achievementsText: [
+        "Agile Development",
+        "Financial Analysis",
+        "Prototyping",
+        "Growth Management",
+        "Roadmapping",
+        "Opportunity Analysis",
+      ],
+      image: "Images/Certificate/PDM_certificates.webp",
+      imageText:
+        "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
+    },
+    // BlogSectionData: {
+    //   BlogSectionTitle: "Read Our Blogs For More Insights",
+    //   cards: [
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-course.webp",
+    //       blogQuestion: "Which Is The Best Cyber Security Course?",
+    //       blogText:
+    //         "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/which-is-the-best-cyber-security-course",
+    //     },
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-future.webp",
+    //       blogQuestion:
+    //         "Why Are Cyber Security Courses a Smart Investment for the Future",
+    //       blogText:
+    //         "In an era where the digital landscape permeates every facet of our lives, safeguarding sensitive information and digital assets has become paramount. Cyber Security, as the vanguard against many digital threats, is a linchpin in ensuring data integrity, confidentiality, and availability. ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/why-are-cyber-security-courses-a-smart-investment-for-the-future",
+    //     },
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-qualifications.webp",
+    //       blogQuestion:
+    //         "What qualifications do I need to study cyber security?",
+    //       blogText:
+    //         "Organisations with networks plugged into the internet (and let’s face it, that’s practically all of them) expose themselves to business disruption, financial loss, reputational ruin, and litigation if they neglect their cyber security measures.",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/what-qualifications-do-i-need-to-study-cyber-security",
+    //     },
+    //     {
+    //       blogImg:
+    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-promising.webp",
+    //       blogQuestion:
+    //         "Why Enrol In A Cyber Security Course For A Promising Career?",
+    //       blogText:
+    //         "In a rapidly evolving landscape of the digital age, where technological advancements bring unprecedented opportunities, they also usher in new challenges in the form of cyber threats and security breaches. ",
+    //       blogLink:
+    //         "https://www.digitalregenesys.com/blog/why-enrol-in-a-cyber-security-course-for-a-promising-career",
+    //     },
+    //   ],
+    // },
+    faqSections: {
+      HeadingDesktop: "Frequently Asked Questions ",
+      HeadingMobile: "FAQ",
+      sections: [
+        {
+          heading: "Product Management Course",
+          faqs: [
+            {
+              question: "What is Product Management?",
+              answer:
+                "Product management is a strategic role that involves overseeing the development and launch of a product, from conception to delivery. It involves market research, product development, marketing strategy, and customer feedback analysis.",
+            },
+            {
+              question: "Who is this course designed for?",
+              answer:
+                "This course is designed for aspiring product managers, current product managers looking to enhance their skills, entrepreneurs, and anyone interested in learning about the product development lifecycle.",
+            },
+            {
+              question: "What will I learn in this product management course?",
+              answer:
+                "In this course, you will learn Product Strategy, Product Execution, and Tech For PMs.",
+            },
+          ],
+        },
+
+        {
+          heading: "Eligibility & Enrolment",
+          faqs: [
+            {
+              question:
+                "Who is eligible to enrol in the Product Management course?",
+              answer:
+                "Generally, individuals with a background in business, technology, engineering, or related fields are eligible. However, many courses accept a wide range of backgrounds, including those with non-technical or non-business backgrounds.",
+            },
+            {
+              question:
+                "What are the typical prerequisites for enrolling in a Product Management course?",
+              answer:
+                "Prerequisites vary depending on the course provider. However, common prerequisites may include basic knowledge of software development processes, familiarity with Agile methodologies, and a fundamental understanding of business concepts.",
+            },
+            {
+              question: "Is there an age limit for enrolling in the course?",
+              answer:
+                "Generally, there is no age limit for enrolling in a Product Management course. You should be eligible to apply as long as you meet the educational and/or experience requirements.",
+            },
+          ],
+        },
+
+        {
+          heading: "Tools Covered",
+          faqs: [
+            {
+              question:
+                "What tools will be covered in the product management course?",
+              answer:
+                "The course typically covers a range of tools commonly used in product management, including Aha!, Figma, Jira, Mixpanel, Balsamiq, and Chat GPT.",
+            },
+            {
+              question:
+                "How will the product management course help me master these tools?",
+              answer:
+                "The product management course will provide hands-on experience through practical exercises and capstone projects. You'll have the opportunity to apply these tools to solve product management challenges under the guidance of experienced instructors.",
+            },
+            {
+              question:
+                "Are the tools covered in the course industry standard?",
+              answer:
+                "Yes, product managers across various sectors widely use the tools selected for the course. Mastering these tools will give you a competitive edge in the job market and enhance your effectiveness as a product manager.",
+            },
+          ],
+        },
+
+        {
+          heading: "Duration & Accessibility",
+          faqs: [
+            {
+              question:
+                "What is the duration of the Product Management Course at Digital Regenesys?",
+              answer:
+                "The duration of our product management course is 24 weeks.",
+            },
+            {
+              question: "Can I access course materials and lectures online?",
+              answer:
+                "Yes, our course is completely online, and materials and lectures are also easily accessible online through our learning management system (LMS). This allows you to study at your own pace and convenience from anywhere with an internet connection.",
+            },
+            {
+              question:
+                "How long do I have access to the course materials after completing the course?",
+              answer:
+                "You will have access to the course materials for 1 year after completing the course, allowing you to review and revisit concepts as needed to reinforce your learning.",
+            },
+          ],
+        },
+
+        {
+          heading: "Product Management Online Certification Course",
+          faqs: [
+            {
+              question:
+                "Who can benefit from taking an online Product Management course?",
+              answer:
+                "Product Management Training is designed for professionals seeking to excel in the field of Product Management, from concept to market launch. The following professionals can benefit from attending this course.",
+            },
+            {
+              question:
+                "What are the advantages of taking an online Product Management course?",
+              answer:
+                "Online courses offer flexibility, allowing students to learn at their own pace and schedule. They often provide access to industry experts, practical exercises, real-world case studies, and networking opportunities. Additionally, online courses are accessible from anywhere with an internet connection.",
+            },
+            {
+              question:
+                "Is there any interaction with instructors or classmates in an online product management course at Digital Regenesys?",
+              answer:
+                "Online Product Management course offers opportunities for interaction with instructors and fellow students through discussion forums, live Q&A sessions, group projects, and networking events. These interactions can enhance the learning experience and provide valuable insights.",
+            },
+          ],
+        },
+      ],
+    },
+    PopupData: {
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+    },
+  },
 };
 
 export default MainCoursesDynimicData;
