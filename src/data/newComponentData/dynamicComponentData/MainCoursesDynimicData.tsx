@@ -250,7 +250,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AL, ML, Drones, Robots, and data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products and services by promoting, enhancing core competencies, capacity building.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Data-ML Integration",
@@ -1044,7 +1044,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "The Digital Regenesys Project Management Certificate equips professionals with essential skills to excel in project management. This online project management course covers key concepts, tools, and techniques for successful project planning, execution, and monitoring. Participants will learn effective communication strategies, risk management principles, and agile methodologies to enhance project outcomes. The certificate course is designed for individuals seeking to advance their project management careers in a digital environment.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         " Project Lifecycle",
@@ -1405,7 +1405,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         " Deep Learning.  ",
@@ -1581,11 +1581,11 @@ const MainCoursesDynimicData = {
     CourseCode: "CSC",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/CS-Banner.webp",
-      coursePageName: "Cyber Security",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Cybersecurity ",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "A  Cyber Security course is a specialised fundamental course that equips individuals with the knowledge and skills to protect computer systems, networks, and sensitive data from cyber threats. The domain of cyber security is crucial in today's digital age as organisations and individuals face increasingly sophisticated cyber attacks. Get Ahead with our Cyber Security Course!",
+        "Cyber Security is a specialised fundamental course that equips individuals with the knowledge and skills to protect computer systems, networks, and sensitive data from cyber threats. Cyber security is crucial in today's digital age as organisations and individuals face increasingly sophisticated cyber attacks. Now get ahead of time with our Cyber Security Course.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/S5RDj33518g?autoplay=1&loop=1&playlist=S5RDj33518g",
       BrochureIcon: "Icons/Brochure.svg",
@@ -1597,41 +1597,41 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised ",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Cyber Security Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Cyber Security Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Cyber Security with us!",
-      bigHeading: "Everything You Need To Know About Cyber Security Course.",
+      smallHeading: "Explore The World Of Cyber Security With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
@@ -1674,7 +1674,7 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
               facultyName: "Dr.Saquib Ahmad Khan",
-              facultyEducation: "",
+              facultyEducation: "PhD Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
@@ -1778,15 +1778,15 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
-              price: "R 19,379 ",
+              contaryName: "South Africa",
+              price: "R 19,379",
               duration: "13 weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 87,098",
+              price: "₹ 87,098 + GST",
               duration: "13 weeks",
             },
             {
@@ -1800,20 +1800,20 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Cyber Security Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Cyber Security Certification",
       paragraph:
         "Digital Regenesys aims to equip individuals with the knowledge and skills needed to address the challenges in cyber security. It covers network security, information security, ethical hacking, risk management, and cyber security governance. The cyber security course may align with industry standards and best practices, making it relevant and recognised in cyber security.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
-        "Ethical Hacking ",
-        "Cloud security",
-        "Blockchain security",
-        "Risk assessment and mitigation",
-        "Information security controls  ",
-        "Network security",
+        "Network Security",
+        "Ethical Hacking",
+        "Blockchain Security",
+        "Cloud Security",
+        "Risk Assessment and Mitigation",
+        "Vulnerability Analysis",
       ],
       image: "Images/Certificate/CSC_certificates.webp",
       imageText:
@@ -1860,7 +1860,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -2207,7 +2207,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "The Digital Regenesys Design Thinking Course offers a comprehensive curriculum designed to enhance participants' understanding and application of design thinking principles. This intensive course equips students with practical tools and techniques to solve complex problems creatively. Through a series of hands-on projects and case studies, individuals will develop critical thinking skills and learn how to approach challenges from a user-centric perspective. ",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Creative Ideation",
@@ -2645,7 +2645,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "Digital Regenesys aims to deliver a comprehensive journey through the fundamental technologies and best practices essential to modern web development in its Full Stack Web & Software Development course. By immersing learners in hands-on projects and real-world simulations, the programme equips them with practical experience, empowering them to confidently navigate challenges within the realm of Full Stack Web & Software Development upon completion.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Front-End Development",
@@ -3043,7 +3043,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "Digital Regenesys aims to equip participants with essential concepts and tools crucial for proficient data analysis and reporting in its course on Data and Business Analytics. Progressing to an advanced stage, participants delve into advanced techniques, honing skills in data visualisation for impactful storytelling and gaining expertise in predictive and prescriptive analytics. By focusing on skill elevation, this course aims to prepare participants to effectively navigate the dynamic landscape of business analytics and tackle upcoming challenges with confidence.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Management Information Systems (MIS)",
@@ -3497,7 +3497,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Development certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Effective communication techniques ",
@@ -3865,7 +3865,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "The Digital Regenesys’s Product Management Certificate equips professionals with essential skills to excel in product management.  It serves as a validation of proficiency and expertise in product management. It can be used by learners to demonstrate that they have successfully completed the training and acquired the necessary skills and knowledge to excel in product management roles. ",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Agile Development",
