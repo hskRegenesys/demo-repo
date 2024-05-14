@@ -34,16 +34,6 @@
   margin-bottom: 8px;
 }
 
-.subheading {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Montserrat-semiBold;
-  line-height: 24px;
-  letter-spacing: 0.12px;
-  margin-bottom: 30px;
-}
-
 /* careersTransformedDS.module.css */
 
 .cardsContainer {
@@ -120,7 +110,7 @@
 }
 
 .swiperCard {
-  padding: 40px 48px;
+  padding: 40px 28px;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 16px;

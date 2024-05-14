@@ -373,9 +373,9 @@
   color: var(--Light-Text-Primary, #008554);
   text-align: center;
   font-family: Montserrat-Bold;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.019px;
   margin-bottom: 4px;

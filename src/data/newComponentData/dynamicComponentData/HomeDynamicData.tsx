@@ -1,6 +1,6 @@
 const HomeDynamicData = {
   BlogSectionDataHome: {
-    BlogSectionTitle: "For Your Research & Information",
+    BlogSectionTitle: "Read Our Blogs For More Insights",
     cards: [
       {
         blogImg: "Images/Blog/blog.png",
