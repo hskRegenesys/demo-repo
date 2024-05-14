@@ -251,7 +251,7 @@ const MainCoursesDynimicData = {
         "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AL, ML, Drones, Robots, and data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products and services by promoting, enhancing core competencies, capacity building.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Deep Learning",
         "Machine Learning",
@@ -265,7 +265,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/ds-blog-beginners.webp",
@@ -304,7 +304,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -1039,13 +1039,13 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Project Management Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us      ",
+      heading: "Project Management Certification",
       paragraph:
         "The Digital Regenesys Project Management Certificate equips professionals with essential skills to excel in project management. This online project management course covers key concepts, tools, and techniques for successful project planning, execution, and monitoring. Participants will learn effective communication strategies, risk management principles, and agile methodologies to enhance project outcomes. The certificate course is designed for individuals seeking to advance their project management careers in a digital environment.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         " Project Lifecycle",
         "Effective Project Planning",
@@ -1059,7 +1059,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/pm-blog-product-management.webp",
@@ -1098,7 +1098,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -1110,15 +1110,15 @@ const MainCoursesDynimicData = {
                 "A Project Management Course is a structured programme designed to equip individuals with the knowledge and skills necessary to plan, execute, and oversee projects effectively. Enrol in Digital Regenesys's Project Management Course to master essential skills and strategies for successful project planning, execution, and delivery.",
             },
             {
-              question: "What are the Benefits of a Project Management Course?",
+              question: "What are the benefits of a Project Management Course?",
               answer:
-                "By enrolling in Digital Regenesys’s project management course, individuals can gain a comprehensive understanding of project management methodologies, best practices, and tools. This knowledge equips them to lead and execute projects, ensuring successful outcomes effectively. Additionally, a project management course provides opportunities for networking, skill enhancement, and career advancement.",
+                "By enroling  in Digital Regenesys’s project management course, individuals can gain a comprehensive understanding of project management methodologies, best practices, and tools. This knowledge equips them to lead and execute projects, ensuring successful outcomes effectively. Additionally, a project management course provides opportunities for networking, skill enhancement, and career advancement.",
             },
             {
               question:
-                "What skills will I gain from a project management course?",
+                "What skills will I gain from a Project Management Course?",
               answer:
-                "The project management course develops skills in planning, risk management, communication, team leadership, and the ability to navigate complex projects successfully.",
+                "The Project Management Course develops skills in planning, risk management, communication, team leadership, and the ability to navigate complex projects successfully.",
             },
           ],
         },
@@ -1127,21 +1127,21 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "Is the project management course only for those in the IT or construction industries?",
+                "Is the Project Management Course only for those in the IT or construction industries?",
               answer:
-                "No, project management is applicable across industries, including healthcare, finance, marketing, and more. The principles are universal and adaptable to various sectors.",
+                "No, Project Management is applicable across industries, including healthcare, finance, marketing, and more. The principles are universal and adaptable to various sectors.",
             },
             {
               question:
-                "How do I enrol and register for the Digital Regenesys Project Management Course?",
+                "How do I enrol and register for the Digital Regenesys’s Project Management Course?",
               answer:
-                "To enrol in the Digital Regenesys online course, follow these steps: \n \n Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n Select the required course. Click the 'Enrol Now' button. \n  Complete the registration form with all the required details. \n  Submit the form and proceed to make the payment for the course. \n  Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
             {
               question:
-                "Can project management certification lead to salary advancements?",
+                "Can Project Management certification lead to salary advancements?",
               answer:
-                "Yes, earning a project management certification is often linked to increased earning potential. Employers recognise the value of certified professionals and may offer higher salaries or promotions based on their demonstrated expertise.",
+                "Yes, earning a Project Management certification is often linked to increased earning potential. Employers recognise the value of certified professionals and may offer higher salaries or promotions based on their demonstrated expertise.",
             },
           ],
         },
@@ -1151,7 +1151,7 @@ const MainCoursesDynimicData = {
             {
               question: "What is Excel in Project Management Course?",
               answer:
-                "Excel is a tool that is widely used in project management courses.",
+                "Excel is a tool that is widely used in Project Management Courses.",
             },
             {
               question:
@@ -1163,7 +1163,7 @@ const MainCoursesDynimicData = {
               question:
                 "What tools are covered in Digital Regenesys’s Project Management Course?",
               answer:
-                "Tools used in the Digital Regenesys Project Management Course are: Excel, Slack, Yammer and Discord.",
+                "Tools used in the Digital Regenesys’s  Project Management Course are: Excel, Slack, Yammer and Discord.",
             },
           ],
         },
@@ -1172,7 +1172,7 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "How Long Does It Take to Complete a Project Management Course?",
+                "How long does it take to complete a Project Management Course?",
               answer:
                 "The total duration of the Digital Regenesys Project Management Course is 10 weeks.",
             },
@@ -1185,7 +1185,7 @@ const MainCoursesDynimicData = {
             {
               question: "How to become an effective project manager?",
               answer:
-                "To become an effective project manager, it is essential to have a strong foundation in the principles and techniques of project management. Develop skills required for career growth in project management at Digital Regenesys.",
+                "To become an effective project manager, it is essential to have a strong foundation in the principles and techniques of project management. Develop skills required for career growth in Project Management at Digital Regenesys.",
             },
           ],
         },
@@ -1194,21 +1194,21 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "Can the project management certification course boost confidence in handling challenging projects?",
+                "Can the Project Management Certification Course boost confidence in handling challenging projects?",
               answer:
                 "Absolutely. Certified professionals gain the confidence to tackle complex projects with a structured approach. The acquired knowledge and methodologies empower them to address challenges systematically and achieve successful outcomes.",
             },
             {
               question:
-                "How does the project management certification course stay relevant in a rapidly changing business landscape?",
+                "How does the Project Management Certification Course stay relevant in a rapidly changing business landscape?",
               answer:
                 "Certification bodies regularly update their course to align with industry trends and best practices. This ensures that certified professionals have the latest knowledge and tools needed to navigate evolving business environments.",
             },
             {
               question:
-                "How does the project management certification course contribute to personal and professional growth?",
+                "How does the Project Management Certification Course contribute to personal and professional growth?",
               answer:
-                "The project management certification course fosters skill development in areas such as leadership, problem-solving, and communication. It also provides exposure to diverse projects and industries, contributing to continuous learning.",
+                "The Project Management Certification Course fosters skill development in areas such as leadership, problem-solving, and communication. It also provides exposure to diverse projects and industries, contributing to continuous learning.",
             },
           ],
         },
@@ -1406,7 +1406,7 @@ const MainCoursesDynimicData = {
         "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         " Deep Learning.  ",
         "Problem-solving with AI.",
@@ -1420,7 +1420,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/ai-blog-course.webp",
@@ -1458,7 +1458,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -1806,7 +1806,7 @@ const MainCoursesDynimicData = {
         "Digital Regenesys aims to equip individuals with the knowledge and skills needed to address the challenges in cyber security. It covers network security, information security, ethical hacking, risk management, and cyber security governance. The cyber security course may align with industry standards and best practices, making it relevant and recognised in cyber security.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Ethical Hacking ",
         "Cloud security",
@@ -1820,7 +1820,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/cs-blog-course.webp",
@@ -1860,7 +1860,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -2208,7 +2208,7 @@ const MainCoursesDynimicData = {
         "The Digital Regenesys Design Thinking Course offers a comprehensive curriculum designed to enhance participants' understanding and application of design thinking principles. This intensive course equips students with practical tools and techniques to solve complex problems creatively. Through a series of hands-on projects and case studies, individuals will develop critical thinking skills and learn how to approach challenges from a user-centric perspective. ",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Creative Ideation.",
         "Innovation Mindset.",
@@ -2222,7 +2222,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/What-is-Design-Thinking.webp",
@@ -2254,7 +2254,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -2646,7 +2646,7 @@ const MainCoursesDynimicData = {
         "Digital Regenesys aims to deliver a comprehensive journey through the fundamental technologies and best practices essential to modern web development in its Full Stack Web & Software Development course. By immersing learners in hands-on projects and real-world simulations, the programme equips them with practical experience, empowering them to confidently navigate challenges within the realm of Full Stack Web & Software Development upon completion.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Front-End Development",
         "Advanced JavaScript",
@@ -2660,7 +2660,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/What-is-a-Full-Stack-Development-Course.webp",
@@ -2700,7 +2700,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -3044,7 +3044,7 @@ const MainCoursesDynimicData = {
         "Digital Regenesys aims to equip participants with essential concepts and tools crucial for proficient data analysis and reporting in its course on Data and Business Analytics. Progressing to an advanced stage, participants delve into advanced techniques, honing skills in data visualisation for impactful storytelling and gaining expertise in predictive and prescriptive analytics. By focusing on skill elevation, this course aims to prepare participants to effectively navigate the dynamic landscape of business analytics and tackle upcoming challenges with confidence.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Management Information Systems (MIS)",
         " Predictive Analytics",
@@ -3058,7 +3058,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg:
@@ -3103,7 +3103,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -3498,7 +3498,7 @@ const MainCoursesDynimicData = {
         "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Development certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Effective communication techniques ",
         "Design Thinking for Managers",
@@ -3512,7 +3512,7 @@ const MainCoursesDynimicData = {
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     // BlogSectionData: {
-    //   BlogSectionTitle: "For Your Research & Information",
+    //   BlogSectionTitle: "Read Our Blogs For More Insights",
     //   cards: [
     //     {
     //       blogImg:
@@ -3556,7 +3556,7 @@ const MainCoursesDynimicData = {
     //   ],
     // },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -3866,7 +3866,7 @@ const MainCoursesDynimicData = {
         "The Digital Regenesys’s Product Management Certificate equips professionals with essential skills to excel in product management.  It serves as a validation of proficiency and expertise in product management. It can be used by learners to demonstrate that they have successfully completed the training and acquired the necessary skills and knowledge to excel in product management roles. ",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Agile Development",
         "Financial Analysis",

@@ -53,7 +53,7 @@ const MultiplePagesBrandData = {
     ],
   },
   BlogSectionDataHome: {
-    BlogSectionTitle: "For Your Research & Information",
+    BlogSectionTitle: "Read Our Blogs For More Insights",
     cards: [
       {
         blogImg: "Images/Blog/brand-blog-online-course.webp",
