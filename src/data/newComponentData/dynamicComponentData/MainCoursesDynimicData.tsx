@@ -3,11 +3,11 @@ const MainCoursesDynimicData = {
     CourseCode: "DSN",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/DS-Banner.webp",
-      coursePageName: "Data Science",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: " Certification Course in Data Science",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "The Data Science Certification Course provides a comprehensive curriculum and equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, graduates will receive a recognised certification, gain practical programming language skills such as Python and R, and experience working with large datasets. ",
+        "The Data Science Certification Course provides a comprehensive curriculum and equips participants with the tools and techniques to extract data insights and make informed business decisions. Upon completion, learners will receive an internationally recognised certification, gain practical programming language skills such as Python and R, and experience working with large datasets.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/XQ_FNaPaghs?autoplay=1&loop=1&playlist=XQ_FNaPaghs",
       BrochureIcon: "Icons/Brochure.svg",
@@ -19,13 +19,13 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
@@ -37,27 +37,27 @@ const MainCoursesDynimicData = {
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification ",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: " Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Data Science with Us!",
-      bigHeading: "Everything You Need To Know About Data Science Course",
+      smallHeading: "Explore The World Of Data Science With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
         { text: "Pricing Across the Countries", contentId: "content6" },
@@ -112,21 +112,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr. Nilay Karade",
-              facultyEducation: "",
+              facultyEducation: "Ph.D. in Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
               facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "",
+              facultyEducation: "Head of Academics",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
-              facultyEducation: "",
+              facultyEducation: "Ph.D. in Computer Engineering",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
@@ -223,7 +223,7 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
+              contaryName: "South Africa",
               price: "R45,344",
               duration: "30 weeks",
             },
@@ -231,7 +231,7 @@ const MainCoursesDynimicData = {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 242,694",
+              price: "₹ 242,694 + GST",
               duration: "30 weeks",
             },
             {
@@ -245,20 +245,20 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Data Science Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Data Science Certification",
       paragraph:
         "Digital Regenesys aims to enable an innovative ecosystem in new age technologies like AL, ML, Drones, Robots, and data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products and services by promoting, enhancing core competencies, capacity building.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
-        "Deep Learning",
-        "Machine Learning",
-        "Data Visualisation",
-        "Data Preparation",
-        "Statistical Analytics",
+        "Data-ML Integration",
+        "New-age Technologies",
         "Database Structure & Algorithms",
+        "Statistical Analytics",
+        "Data Visualisation",
+        "Advanced-Data Analysis",
       ],
       image: "Images/Certificate/DSN_certificates.webp",
       imageText:
@@ -304,7 +304,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -313,7 +313,7 @@ const MainCoursesDynimicData = {
             {
               question: "What is Data Science?",
               answer:
-                "Data science is an in-demand skill in many industries, including finance, transportation, education, manufacturing, human resources, and banking.",
+                "Data science is a demanding skill in several industries, including finance, transportation, education, manufacturing, human resources, and banking.",
             },
             {
               question: "What is a Data Science Course?",
@@ -337,9 +337,9 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "How do I enroll and register for the Digital Regenesys Data Science Course?",
+                "How do I enrol and register for the Digital Regenesys Data Science Course?",
               answer:
-                'To enroll in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enroll Now" button. \n  Complete the registration form with all the required details. \n  Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ',
+                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n  Complete the registration form with all the required details. \n  Submit the form and proceed to make the payment for the course. \n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
             },
             {
               question:
@@ -481,7 +481,7 @@ const MainCoursesDynimicData = {
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
@@ -1044,7 +1044,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "The Digital Regenesys Project Management Certificate equips professionals with essential skills to excel in project management. This online project management course covers key concepts, tools, and techniques for successful project planning, execution, and monitoring. Participants will learn effective communication strategies, risk management principles, and agile methodologies to enhance project outcomes. The certificate course is designed for individuals seeking to advance their project management careers in a digital environment.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         " Project Lifecycle",
@@ -1223,9 +1223,9 @@ const MainCoursesDynimicData = {
     CourseCode: "AIN",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/AI-Banner.webp",
-      coursePageName: "Certification Course in Artificial Intelligence",
-      BestSaleText: "In Demand",
-      topTextMessage: "Live Sessions By Industry Expert",
+      coursePageName: "Artificial Intelligence",
+      BestSaleText: "BESTSELLER",
+      topTextMessage: "Live Sessions by Industry Experts",
       contentText:
         "Artificial Intelligence (AI) is an innovative and rapidly evolving field that seeks to replicate human intelligence in machines. It encompasses various techniques that enable machines to perform tasks that typically require human intelligence. Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. ",
       youtubeVideoLink:
@@ -1239,48 +1239,49 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enroled",
+          uspEnrollmentText: "Students Enrolled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Enhances Upskilling Courses",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Artificial Intelligence Course Result",
-      Heding: "What Our Learners Have Achieved",
+      courcename: "Artificial Intelligence Course Outcomes",
+      Heding: "What our learners have achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Guaranteed Certificate",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: " Career Opportunities",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Countries Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Artificial Intelligence With Us",
-      bigHeading: "Everything You Need to Know",
+      smallHeading: "Explore the World of Artificial Intelligence with us!",
+      bigHeading:
+        "Everything You Need To Know About Artificial Intelligence Course",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
         { text: "", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
+        { text: "Pricing Across the Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -1315,21 +1316,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
-              facultyEducation: "Ph.D. in Computer Engineering",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-              facultyName: "Dr. Nilay Karade",
-              facultyEducation: "Ph.D. in Computer Science",
+              facultyName: "Dr.Nilay Karade",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "Head of Academics",
+              facultyName: "Dr.Shilpa Joshi",
+              facultyEducation: "",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -1354,7 +1355,7 @@ const MainCoursesDynimicData = {
               weekPoints: [
                 "Artificial Intelligence and Machine Learning",
                 "Artificial Neural Networks",
-                "Deploying AI Models in Productions",
+                "Deploying AI models in Production",
               ],
             },
             {
@@ -1377,42 +1378,42 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "South Africa",
-              price: "R 37, 947",
-              duration: "37 Weeks",
+              contaryName: "SouthAfrica",
+              price: "R 37,947",
+              duration: "10 weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 181, 497 + GST",
-              duration: "37 Weeks",
+              price: "₹ 181,497",
+              duration: "10 weeks",
             },
             {
               contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 2,137",
-              duration: "37 Weeks",
+              duration: "10 weeks",
             },
           ],
         },
       },
     },
     CertificationDRData: {
-      title: "Get Certified With Us",
-      heading: "Artificial Intelligence Certification",
+      title: "About Digital Regenesys Artificial Intelligence Certificate",
+      heading: "Certification",
       paragraph:
-        "The Digital Regenesys’s Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, learners will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
+        "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
-        "Deep Learning",
-        "Problem-Solving with AI",
-        "Emerging Trends in AI",
-        "Natural Language Processing",
-        "Machine Learning Fundamentals",
-        "Introduction to Artificial Intelligence",
+        " Deep Learning.  ",
+        "Problem-solving with AI.",
+        "Emerging Trends in AI.  ",
+        "Natural Language Processing.",
+        " Machine Learning Fundamentals.",
+        "Introduction to Artificial Intelligence.",
       ],
       image: "Images/Certificate/AIN_certificates.webp",
       imageText:
@@ -1457,7 +1458,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions",
+      HeadingDesktop: "Frequently Asked Questions ",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -1474,10 +1475,9 @@ const MainCoursesDynimicData = {
                 "An Artificial Intelligence (AI) course equips individuals with the knowledge and skills needed to understand, develop, and apply AI technologies. It is valuable for careers in AI research, development, and implementation.",
             },
             {
-              question:
-                "What will I learn in an Artificial Intelligence course?",
+              question: "What will I learn in an AI course?",
               answer:
-                "The Artificial Intelligence (AI) course covers various topics, including Introduction to Data Analysis & Data Visualisation, Python Programming for Artificial Intelligence, Artificial Neural Networks, Artificial Intelligence and Machine Learning and more.",
+                "Artificial Intelligence (AI) course cover various topics, including Introduction to Data Analysis & Data Visualisation, Python Programming for Artificial Intelligence, Artificial Neural Networks, Artificial Intelligence and Machine Learning and more.",
             },
           ],
         },
@@ -1492,9 +1492,9 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Do I need a background in programming to enrol in an Artificial Intelligence course?",
+                "Do I need a background in programming to enrol in an AI course?",
               answer:
-                "While some Artificial Intelligence courses may assume basic programming knowledge, Digital Regenesys’s Artificial Intelligence course curriculum includes an introductory course catering to individuals with minimal programming experience, providing necessary foundational skills.",
+                "While some AI course may assume basic programming knowledge. Digital Regenesys AI course curriculum includes an introductory course catering to individuals with minimal programming experience, providing necessary foundational skills.",
             },
             {
               question:
@@ -1532,19 +1532,19 @@ const MainCoursesDynimicData = {
               question:
                 "How long does it take to complete the Digital Regenesys Artificial Intelligence course?",
               answer:
-                "The total duration of the Digital Regenesys Artificial Intelligence course is 37 weeks.",
+                "The total duration of the Digital Regenesys Artificial Intelligence Course is 37 Weeks.",
             },
             {
               question:
-                "Are there prerequisites for enroling in the Digital Regenesys Artificial Intelligence course?",
+                "Are there prerequisites for enrolling in the Digital Regenesys Artificial Intelligence course?",
               answer:
-                "There are no specific prerequisites for enroling in the Digital Regenesys Artificial Intelligence course. But, individuals with a mathematics, programming, and statistics background are often beneficial.",
+                "There are no specific prerequisites for enrolling in the Digital Regenesys Artificial Intelligence course. But, individuals with a mathematics, programming, and statistics background are often beneficial.",
             },
             {
               question:
-                "Can organisations enrol teams in Artificial Intelligence courses to upskill?",
+                "Can organisations enroll teams in AI courses to upskill?",
               answer:
-                "Yes. Digital Regenesys offer corporate training or customised Artificial Intelligence courses to upskill teams and organisations in AI technologies.",
+                "Yes. Digital Regenesys offer corporate training or customized AI courses to upskill teams and organisations in AI technologies.",
             },
           ],
         },
@@ -1554,7 +1554,7 @@ const MainCoursesDynimicData = {
             {
               question: "Are Artificial Intelligence courses available online?",
               answer:
-                "Yes, Digital Regenesys’s Artificial Intelligence course is available online, allowing learners to study at their own pace and from anywhere with an internet connection.",
+                "Yes, the Digital Regenesys Artificial Intelligence course is available online, allowing learners to study at their own pace and from anywhere with an internet connection.",
             },
             {
               question:
@@ -1581,11 +1581,11 @@ const MainCoursesDynimicData = {
     CourseCode: "CSC",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/CS-Banner.webp",
-      coursePageName: "Cyber Security",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Cybersecurity",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "A  Cyber Security course is a specialised fundamental course that equips individuals with the knowledge and skills to protect computer systems, networks, and sensitive data from cyber threats. The domain of cyber security is crucial in today's digital age as organisations and individuals face increasingly sophisticated cyber attacks. Get Ahead with our Cyber Security Course!",
+        "Cyber Security is a specialised fundamental course that equips individuals with the knowledge and skills to protect computer systems, networks, and sensitive data from cyber threats. Cyber security is crucial in today's digital age as organisations and individuals face increasingly sophisticated cyber attacks. Now get ahead of time with our Cyber Security Course.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/S5RDj33518g?autoplay=1&loop=1&playlist=S5RDj33518g",
       BrochureIcon: "Icons/Brochure.svg",
@@ -1597,41 +1597,41 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised ",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Cyber Security Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Cyber Security Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Cyber Security with us!",
-      bigHeading: "Everything You Need To Know About Cyber Security Course.",
+      smallHeading: "Explore The World Of Cyber Security With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
@@ -1674,7 +1674,7 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
               facultyName: "Dr.Saquib Ahmad Khan",
-              facultyEducation: "",
+              facultyEducation: "PhD Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
@@ -1778,15 +1778,15 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
-              price: "R 19,379 ",
+              contaryName: "South Africa",
+              price: "R 19,379",
               duration: "13 weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 87,098",
+              price: "₹ 87,098 + GST",
               duration: "13 weeks",
             },
             {
@@ -1800,20 +1800,20 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Cyber Security Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Cyber Security Certification",
       paragraph:
         "Digital Regenesys aims to equip individuals with the knowledge and skills needed to address the challenges in cyber security. It covers network security, information security, ethical hacking, risk management, and cyber security governance. The cyber security course may align with industry standards and best practices, making it relevant and recognised in cyber security.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
-        "Ethical Hacking ",
-        "Cloud security",
-        "Blockchain security",
-        "Risk assessment and mitigation",
-        "Information security controls  ",
-        "Network security",
+        "Network Security",
+        "Ethical Hacking",
+        "Blockchain Security",
+        "Cloud Security",
+        "Risk Assessment and Mitigation",
+        "Vulnerability Analysis",
       ],
       image: "Images/Certificate/CSC_certificates.webp",
       imageText:
@@ -1860,7 +1860,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -2207,7 +2207,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "The Digital Regenesys Design Thinking Course offers a comprehensive curriculum designed to enhance participants' understanding and application of design thinking principles. This intensive course equips students with practical tools and techniques to solve complex problems creatively. Through a series of hands-on projects and case studies, individuals will develop critical thinking skills and learn how to approach challenges from a user-centric perspective. ",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Creative Ideation",
@@ -2645,7 +2645,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "Digital Regenesys aims to deliver a comprehensive journey through the fundamental technologies and best practices essential to modern web development in its Full Stack Web & Software Development course. By immersing learners in hands-on projects and real-world simulations, the programme equips them with practical experience, empowering them to confidently navigate challenges within the realm of Full Stack Web & Software Development upon completion.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Front-End Development",
@@ -2851,8 +2851,8 @@ const MainCoursesDynimicData = {
     CourseCode: "DBA",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/DBA-Banner.webp",
-      coursePageName: "Data And Business Analytics",
-      BestSaleText: "BESTSELLER",
+      coursePageName: "Certification Course in Data and Business Analytics.",
+      BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
       contentText:
         "Digital Regenesys's Data and Business Analytics No-Code course is designed to meet the needs of professionals and students seeking a comprehensive understanding of data science and data visualisation without the need for coding expertise. This innovative course introduces participants to key concepts and tools essential for effective data analysis and reporting. ",
@@ -2867,46 +2867,45 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Data and Business Analytics Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Data and Business Analytics Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Data and Business Analytics With Us!",
-      bigHeading:
-        "Everything You Need To Know About Data and Business AnalyticsCourse",
+      smallHeading: "Explore The World Of Data And Business Analytics With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
@@ -2938,7 +2937,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DBA/DSA_power-bi.png", alt: "" },
             { img: "DBA/DSA_chatGpt.png", alt: "" },
@@ -2956,21 +2955,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
-              facultyEducation: "",
+              facultyEducation: "Ph.D. in Computer Engineering ",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-              facultyName: "Dr.Nilay Karade",
-              facultyEducation: "",
+              facultyName: "Dr. Nilay Karade",
+              facultyEducation: "Ph.D. in Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr.Shilpa Joshi",
-              facultyEducation: "",
+              facultyName: "Dr. Shilpa Joshi",
+              facultyEducation: "Head of Academics",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -3016,7 +3015,7 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
+              contaryName: "South Africa",
               price: "R 26,498",
               duration: "6 Months",
             },
@@ -3024,7 +3023,7 @@ const MainCoursesDynimicData = {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 142,998",
+              price: "₹ 142,998 + GST",
               duration: "6 Months",
             },
             {
@@ -3038,12 +3037,12 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Data and Business Analytics Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us ",
+      heading: "Data and Business Analytics Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with essential concepts and tools crucial for proficient data analysis and reporting in its course on Data and Business Analytics. Progressing to an advanced stage, participants delve into advanced techniques, honing skills in data visualisation for impactful storytelling and gaining expertise in predictive and prescriptive analytics. By focusing on skill elevation, this course aims to prepare participants to effectively navigate the dynamic landscape of business analytics and tackle upcoming challenges with confidence.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Management Information Systems (MIS)",
@@ -3201,7 +3200,7 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "What is the benefit of enrolling in an online Data and Business Analytics Certification Course?",
+                "What is the benefit of enroling in an online Data and Business Analytics certification course?",
               answer:
                 "Data and Business Analytics Certification Course online offers a convenient and flexible way to enhance your knowledge or learn new skills.",
             },
@@ -3220,7 +3219,7 @@ const MainCoursesDynimicData = {
           ],
         },
         {
-          heading: "Data and Business Analytic Curriculum",
+          heading: "Data and Business Analytics Curriculum",
           faqs: [
             {
               question: "What is Business Analytics?",
@@ -3496,7 +3495,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Advancement certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Effective communication techniques ",
@@ -3864,7 +3863,7 @@ const MainCoursesDynimicData = {
       paragraph:
         "The Digital Regenesys’s Product Management Certificate equips professionals with essential skills to excel in product management.  It serves as a validation of proficiency and expertise in product management. It can be used by learners to demonstrate that they have successfully completed the training and acquired the necessary skills and knowledge to excel in product management roles. ",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
+      buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
         "Agile Development",
