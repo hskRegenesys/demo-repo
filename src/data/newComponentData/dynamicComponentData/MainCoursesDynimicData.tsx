@@ -1986,9 +1986,9 @@ const MainCoursesDynimicData = {
     CourseCode: "DTC",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/DT-Banner.webp",
-      coursePageName: "Design Thinking",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Design Thinking",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
         "Design thinking is a human-centred problem-solving process that involves empathy, creativity, and iteration. It is about putting the requirements at the forefront and developing innovative solutions to meet those needs. While designers have been using this approach for years, its principles can be applied by anyone who wants to solve complex problems and drive innovation.",
       youtubeVideoLink:
@@ -2002,41 +2002,41 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Design Thinking Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Design Thinking Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Design Thinking with us!",
-      bigHeading: "Everything You Need To Know About Design Thinking Course",
+      smallHeading: "Explore The World Of Design Thinking With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
@@ -2051,7 +2051,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DT-explore.webp",
           contentText:
-            "A design thinking course is an educational programme that teaches the principles and techniques of design thinking. It is designed to help individuals develop problem-solving abilities, enhance creativity, and foster a human-centred approach to innovation. These courses typically combine theory and practice, allowing participants to learn by doing. Design thinking is a powerful tool that can be applied in various domains. ",
+            "Our Design Thinking course is designed to provide participants with the tools, techniques, and mindset to approach problem-solving in a human-centred, creative, and iterative manner. Through a combination of lectures, hands-on exercises, and real-world projects, participants will learn to empathise with users, define problems, ideate innovative solutions, prototype designs, and test them with users to gather feedback for continuous improvement.",
           contentCard: [
             {
               icon: "Icons/Live Call.svg",
@@ -2078,16 +2078,16 @@ const MainCoursesDynimicData = {
           facultyCard: [
             {
               facultyImg: "Images/Faculty/Dennis-Laxton.webp",
-              facultyName: "Dr.Dennis Laxton",
-              facultyEducation: "",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "",
+              facultyName: "Dr. Dennis Laxton",
+              facultyEducation: "NHD Industrial Engineering",
+              courseName: "Academic Team Leader and Senior Lecturer",
+              yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/Shaista-Fatima.webp",
-              facultyName: "Dr.Shaista Fatima",
-              facultyEducation: "",
-              courseName: "Senior Lecturer",
+              facultyName: "Dr. Shaista Fatima",
+              facultyEducation: "UGC-NET for Lectureship Accreditation",
+              courseName: "PhD. Management",
               yearsOfExperience: "10+ ",
             },
           ],
@@ -2117,28 +2117,28 @@ const MainCoursesDynimicData = {
             {
               weekHeading: "Design Thinking Mindset",
               weekPoints: [
-                "Elements of Design Thinking mindset",
-                "Need for Design thinking mindset",
-                "Applying Design Thinking Mindset to real-world problems",
-                "Applying Lean thinking into Design Thinking",
+                "Elements of Design Thinking Mindset",
+                "Need for Design Thinking Mindset",
+                "Applying Design Thinking Mindset to Real-World Problems",
+                "Applying Lean Thinking into Design Thinking",
               ],
             },
             {
               weekHeading: "Design Thinking for Creative Problem Solving",
               weekPoints: [
-                "Design challenges & preliminaries",
-                "An Introduction to the five-stage process of Design Thinking",
-                "Identifying situations where learners can apply such frameworks in their industry",
-                "Apply Design thinking framework to real-world challenges",
-                "Implementation timeline",
-                "Considerations for resource allocation",
+                "Design Challenges & Preliminaries",
+                "An Introduction To The Five-Stage Process Of Design Thinking",
+                "Identifying Situations Where Learners Can Apply Such Frameworks In Their Industry",
+                "Apply Design Thinking Framework To Real-World Challenges",
+                "Implementation Timeline",
+                "Considerations For Resource Allocation",
               ],
             },
             {
               weekHeading: "Establishing Design Thinking in organisation",
               weekPoints: [
-                "Scaling up",
-                "Design Thinking & Organisational culture",
+                "Scaling Up",
+                "Design Thinking & Organisational Culture",
               ],
             },
             {
@@ -2155,7 +2155,7 @@ const MainCoursesDynimicData = {
                 "Introduction to User-Centered Design Thinking",
                 "Techniques for Conducting User Experience Research",
                 "Integrating User Experience Research into the Design Thinking Process",
-                "Analyzing User Experience Research Data to Inform Design Decisions",
+                "Analysing User Experience Research Data to Inform Design Decisions",
                 "Prototyping and Iterating Designs Based on User Experience Research",
                 "Evaluating the Impact of User Experience Research on Design Thinking Outcomes",
                 "Overcoming Challenges and Obstacles in Integrating User Experience Research and Design Thinking",
@@ -2174,7 +2174,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -2183,47 +2183,47 @@ const MainCoursesDynimicData = {
               contaryFlag: "Icons/south-africa.svg",
               contaryName: "SouthAfrica",
               price: "R 13,499",
-              duration: "8 weeks",
+              duration: "8 Weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 67,499",
-              duration: "8 weeks",
+              price: "₹ 67,499 + GST",
+              duration: "8 Weeks",
             },
             {
               contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 589",
-              duration: "8 weeks",
+              duration: "8 Weeks",
             },
           ],
         },
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Design Thinking Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Design Thinking Certification",
       paragraph:
         "The Digital Regenesys Design Thinking Course offers a comprehensive curriculum designed to enhance participants' understanding and application of design thinking principles. This intensive course equips students with practical tools and techniques to solve complex problems creatively. Through a series of hands-on projects and case studies, individuals will develop critical thinking skills and learn how to approach challenges from a user-centric perspective. ",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      buttonText: "Enrol Now",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
-        "Creative Ideation.",
-        "Innovation Mindset.",
-        "Problem-solving skills.",
-        "Cultivation of a Design Mindset.",
-        "ITools and Techniques Proficiency.",
-        "Empathy and User-Centric Thinking.",
+        "Creative Ideation",
+        "Innovation Mindset",
+        "Problem-solving skills",
+        "Cultivation of a Design Mindset",
+        "Tools and Technical Proficiency",
+        "Empathy and User-Centric Thinking",
       ],
       image: "Images/Certificate/DTC_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/What-is-Design-Thinking.webp",
@@ -2255,7 +2255,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -2264,7 +2264,7 @@ const MainCoursesDynimicData = {
             {
               question: "What is Design Thinking?",
               answer:
-                "Design Thinking is a problem-solving approach that emphasizes empathy, collaboration, and user-centric solutions. It involves understanding users' needs, ideating creative solutions, prototyping, and testing iteratively.",
+                "Design Thinking is a problem-solving approach that emphasises empathy, collaboration, and user-centric solutions. It involves understanding users' needs, ideating creative solutions, prototyping, and testing iteratively.",
             },
             {
               question: "Who should take a Design Thinking course?",
@@ -2274,12 +2274,12 @@ const MainCoursesDynimicData = {
             {
               question: "What will I learn in a Design Thinking course?",
               answer:
-                "Participants will learn the principles, methods, and mindset of Design Thinking, including empathizing with users, ideation, prototyping, and testing. The course may cover real-world applications and case studies.",
+                "Participants will learn the principles, methods, and mindset of Design Thinking, including emphasises with users, ideation, prototyping, and testing. The course may cover real-world applications and case studies.",
             },
           ],
         },
         {
-          heading: "Eligibility and Enrollment",
+          heading: "Eligibility and Enrolment",
           faqs: [
             {
               question: "Is a Design Thinking course only for designers?",
@@ -2288,15 +2288,15 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Are there any prerequisites for enrolling in the Digital Regenesys Design Thinking course?",
+                "Are there any prerequisites for enroling in the Digital Regenesys Design Thinking course?",
               answer:
                 "Digital Regenesys Design Thinking courses do not have strict prerequisites. They are often designed to accommodate individuals with varying experience levels and backgrounds.",
             },
             {
               question:
-                "How do I enroll and register for the Digital Regenesys Design Thinking Course?",
+                "How do I enrol and register for the Digital Regenesys Design Thinking Course?",
               answer:
-                "To enroll in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enroll Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enroll Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
             },
           ],
         },
@@ -2354,13 +2354,13 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "What are the benefits of enrolling in an online Design Thinking course?",
+                "What are the benefits of enroling in an online Design Thinking course?",
               answer:
-                "Enrolling in an online Design Thinking course enhances problem-solving skills, fosters creativity, encourages collaboration, and promotes a user-centric mindset. Digital Regenesys online Design Thinking course is valuable for driving innovation in both personal and professional settings.",
+                "Enroling in an online Design Thinking course enhances problem-solving skills, fosters creativity, encourages collaboration, and promotes a user-centric mindset. Digital Regenesys online Design Thinking course is valuable for driving innovation in both personal and professional settings.",
             },
             {
               question:
-                "Are there hands-on projects in an Online Design Thinking course at Digital Regenesys?",
+                "Does the Online Design Thinking Course at Digital Regenesys offer projects providing hands-on experience?",
               answer:
                 "Yes, Digital Regenesys Design Thinking courses include Capstone projects where participants apply the principles learned to solve real-world problems. This practical experience is integral to the learning process.",
             },
