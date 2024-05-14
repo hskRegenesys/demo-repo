@@ -70,7 +70,7 @@ const Content3: React.FC<Content3Props> = ({
                     {faculty.facultyEducation}
                   </p>
                 )}
-                <p className={styles.courseName}>{faculty.courseName}</p>
+                {/* <p className={styles.courseName}>{faculty.courseName}</p> */}
                 {faculty.yearsOfExperience ? (
                   <p className={styles.yearsOfExperience}>
                     <span>{faculty.yearsOfExperience} </span>Years of Experience{" "}

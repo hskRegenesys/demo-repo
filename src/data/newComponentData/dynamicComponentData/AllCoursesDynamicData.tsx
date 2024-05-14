@@ -6,7 +6,7 @@ const AllCoursesDynamicData = {
       "Digital Regenesys aims to foster an innovative ecosystem in new-age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
     tickImage: "Icons/Check.svg",
     buttonText: "Start Learning",
-    achievementsHeading: "Key Achievements",
+    achievementsHeading: "Key Takeaways",
     achievementsText: [
       "Freedom of teaching",
       "Get teaching certification",
