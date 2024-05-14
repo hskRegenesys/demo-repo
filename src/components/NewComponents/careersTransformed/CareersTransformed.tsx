@@ -35,6 +35,7 @@ interface CareersTransformedProps {
 interface MainCourseData {
   heading: string;
   subheading: string;
+  secondHeading: string;
   "four-card": FourCardData;
   swiperCardContainer: SwiperCardData[];
 }
@@ -47,6 +48,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
 
   const {
     heading,
+    secondHeading,
     subheading,
     "four-card": { card1, card2, card3, card4 },
     swiperCardContainer,
@@ -74,6 +76,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
       </div>
       <div className={Styles.header}>
         <h2 className={Styles.heading}>{heading}</h2>
+        <h2 className={Styles.secondHeading}>{secondHeading}</h2>
         <h2 className={Styles.subheading}>{subheading}</h2>
       </div>
 

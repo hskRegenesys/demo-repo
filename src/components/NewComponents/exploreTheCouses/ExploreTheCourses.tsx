@@ -29,6 +29,7 @@ interface Props {
         facultyCard: {
           facultyImg: string;
           facultyName: string;
+          facultyEducation: string;
           courseName: string;
           yearsOfExperience: string;
         }[];

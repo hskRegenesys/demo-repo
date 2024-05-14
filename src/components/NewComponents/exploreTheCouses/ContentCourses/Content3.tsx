@@ -7,6 +7,7 @@ import Image from "next/image";
 interface FacultyCard {
   facultyImg: string;
   facultyName: string;
+  facultyEducation: string;
   courseName: string;
   yearsOfExperience: string;
 }
@@ -64,6 +65,11 @@ const Content3: React.FC<Content3Props> = ({
                   />
                 </div>
                 <p className={styles.facultyName}>{faculty.facultyName}</p>
+                {faculty?.facultyEducation && (
+                  <p className={styles.facultyEducation}>
+                    {faculty.facultyEducation}
+                  </p>
+                )}
                 <p className={styles.courseName}>{faculty.courseName}</p>
                 {faculty.yearsOfExperience ? (
                   <p className={styles.yearsOfExperience}>
