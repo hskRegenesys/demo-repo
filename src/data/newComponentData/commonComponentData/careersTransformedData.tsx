@@ -3,7 +3,6 @@ const careersTransformedData = {
   frame2: "",
   heading: "Success Reviews",
   secondHeading: "Over 10,000+ Learners",
-  subheading: "Know About Our Learner’s Journey From Them",
   "four-card": {
     card1: {
       percentage: "57%",

@@ -839,9 +839,9 @@ const MainCoursesDynimicData = {
 
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/PM-Banner.webp",
-      coursePageName: "Project Management",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Project Management",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
         "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements. It involves planning, executing, controlling, and closing the work of a team to achieve specific goals within a specified time frame. As businesses evolve, the need for effective project management becomes increasingly crucial for success.",
       youtubeVideoLink:
@@ -855,20 +855,20 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "International Certification",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Project Management Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Project Management Course Result ",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
@@ -888,13 +888,12 @@ const MainCoursesDynimicData = {
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Project Management with us!",
-      bigHeading:
-        "Everything You Need To Know About Project Management Course.",
+      smallHeading: "Explore the World of Project Management With Us",
+      bigHeading: "Everything You Need to Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
@@ -905,7 +904,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/PM-explore.webp",
           contentText:
-            "Enhance your skills and boost your career prospects with the Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course.",
+            "Enhance your skills and boost your career prospects with Digital Regenesys’s Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course. ",
           contentCard: [
             {
               icon: "Icons/Live Call.svg",
@@ -926,7 +925,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course ",
           cardTools: [
             { img: "PM/project-management-tools1.png", alt: "" },
             { img: "PM/project-management-tools2.png", alt: "" },
@@ -940,15 +939,15 @@ const MainCoursesDynimicData = {
           facultyCard: [
             {
               facultyImg: "Images/Faculty/Dennis-Laxton.webp",
-              facultyName: "Dr.Dennis Laxton",
-              facultyEducation: "",
+              facultyName: "Dr. Dennis Laxton",
+              facultyEducation: "Academic Team Leader and Senior Lecturer",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
             {
               facultyImg: "Images/Faculty/James_forson.webp",
               facultyName: "James Forson",
-              facultyEducation: "",
+              facultyEducation: "BSocSc (Hons)",
               courseName: "Senior Lecturer",
               yearsOfExperience: "",
             },
@@ -989,17 +988,17 @@ const MainCoursesDynimicData = {
                 "Advance Project Management: Global Strategy for Managers",
               weekPoints: {
                 "": [
-                  "Introduction- Organizational Project Management",
-                  "Program Management – Improving Business Results",
+                  "Introduction - Organisational Project Management",
+                  "Programme Management - Improving Business Results",
                   "Portfolio Management – A Framework For Governance",
-                  "The Project Management Office",
+                  "Project Management Office",
                   "Introduction to Strategy",
                   "Strategy Formation and Implementation",
                   "Internal Environment Analysis: Resources And Capabilities",
                   "International Management",
                   "International Managers Leadership",
                   "Formulating International Strategies",
-                  "The Entrepreneurial Ecosystem For Project Manager",
+                  "Entrepreneurial Ecosystem For Project Manager",
                   "Improving Operational Management",
                   "Procurement and Supply Chain Management",
                   "International Human Resource Management",
@@ -1011,29 +1010,29 @@ const MainCoursesDynimicData = {
           ],
         },
         content6: {
-          ContentHeding: "Pricing Across the Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
-              price: "R 25,198 ",
-              duration: "10 weeks",
+              contaryName: "South Africa",
+              price: "R 25,198",
+              duration: "22 Weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 128,978 ",
-              duration: "10 weeks",
+              price: "₹ 128,978 + GST",
+              duration: "22 Weeks",
             },
             {
               contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 1,418",
-              duration: "10 weeks",
+              duration: "22 Weeks",
             },
           ],
         },
