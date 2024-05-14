@@ -57,7 +57,7 @@ const MainCoursesDynimicData = {
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
         { text: "Pricing Across the Countries", contentId: "content6" },
@@ -481,7 +481,7 @@ const MainCoursesDynimicData = {
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
@@ -1581,7 +1581,7 @@ const MainCoursesDynimicData = {
     CourseCode: "CSC",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/CS-Banner.webp",
-      coursePageName: "Certification Course in Cybersecurity ",
+      coursePageName: "Certification Course in Cybersecurity",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
@@ -2851,8 +2851,8 @@ const MainCoursesDynimicData = {
     CourseCode: "DBA",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/DBA-Banner.webp",
-      coursePageName: "Data And Business Analytics",
-      BestSaleText: "BESTSELLER",
+      coursePageName: "Certification Course in Data and Business Analytics.",
+      BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
       contentText:
         "Digital Regenesys's Data and Business Analytics No-Code course is designed to meet the needs of professionals and students seeking a comprehensive understanding of data science and data visualisation without the need for coding expertise. This innovative course introduces participants to key concepts and tools essential for effective data analysis and reporting. ",
@@ -2867,46 +2867,45 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Data and Business Analytics Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Data and Business Analytics Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Data and Business Analytics With Us!",
-      bigHeading:
-        "Everything You Need To Know About Data and Business AnalyticsCourse",
+      smallHeading: "Explore The World Of Data And Business Analytics With Us",
+      bigHeading: "Everything You Need To Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Used in this Course", contentId: "content3" },
+        { text: "Tools Covered In This Course", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
 
@@ -2938,7 +2937,7 @@ const MainCoursesDynimicData = {
           ],
         },
         content2: {
-          contentHeading: "Tools Covered in this Course",
+          contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DBA/DSA_power-bi.png", alt: "" },
             { img: "DBA/DSA_chatGpt.png", alt: "" },
@@ -2956,21 +2955,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
-              facultyEducation: "",
+              facultyEducation: "Ph.D. in Computer Engineering ",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-              facultyName: "Dr.Nilay Karade",
-              facultyEducation: "",
+              facultyName: "Dr. Nilay Karade",
+              facultyEducation: "Ph.D. in Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr.Shilpa Joshi",
-              facultyEducation: "",
+              facultyName: "Dr. Shilpa Joshi",
+              facultyEducation: "Head of Academics",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -3016,7 +3015,7 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
+              contaryName: "South Africa",
               price: "R 26,498",
               duration: "6 Months",
             },
@@ -3024,7 +3023,7 @@ const MainCoursesDynimicData = {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 142,998",
+              price: "₹ 142,998 + GST",
               duration: "6 Months",
             },
             {
@@ -3038,8 +3037,8 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Data and Business Analytics Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us ",
+      heading: "Data and Business Analytics Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with essential concepts and tools crucial for proficient data analysis and reporting in its course on Data and Business Analytics. Progressing to an advanced stage, participants delve into advanced techniques, honing skills in data visualisation for impactful storytelling and gaining expertise in predictive and prescriptive analytics. By focusing on skill elevation, this course aims to prepare participants to effectively navigate the dynamic landscape of business analytics and tackle upcoming challenges with confidence.",
       tickImage: "Icons/Check.svg",
@@ -3201,7 +3200,7 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "What is the benefit of enrolling in an online Data and Business Analytics Certification Course?",
+                "What is the benefit of enroling in an online Data and Business Analytics certification course?",
               answer:
                 "Data and Business Analytics Certification Course online offers a convenient and flexible way to enhance your knowledge or learn new skills.",
             },
@@ -3220,7 +3219,7 @@ const MainCoursesDynimicData = {
           ],
         },
         {
-          heading: "Data and Business Analytic Curriculum",
+          heading: "Data and Business Analytics Curriculum",
           faqs: [
             {
               question: "What is Business Analytics?",
