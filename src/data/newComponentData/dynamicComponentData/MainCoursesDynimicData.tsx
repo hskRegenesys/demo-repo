@@ -1224,9 +1224,9 @@ const MainCoursesDynimicData = {
     CourseCode: "AIN",
     BannerWithVideoData: {
       BannerImgDesktop: "Images/Banner/AI-Banner.webp",
-      coursePageName: "Artificial Intelligence",
-      BestSaleText: "BESTSELLER",
-      topTextMessage: "Live Sessions by Industry Experts",
+      coursePageName: "Certification Course in Artificial Intelligence",
+      BestSaleText: "In Demand",
+      topTextMessage: "Live Sessions By Industry Expert",
       contentText:
         "Artificial Intelligence (AI) is an innovative and rapidly evolving field that seeks to replicate human intelligence in machines. It encompasses various techniques that enable machines to perform tasks that typically require human intelligence. Embark on a transformative journey with our 'Artificial Intelligence Course' and unlock the boundless potential of the future. ",
       youtubeVideoLink:
@@ -1240,49 +1240,48 @@ const MainCoursesDynimicData = {
           usplocationIcon: "Icons/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enrolled",
+          uspEnrollmentText: "Students Enroled",
           uspEnrollmentCount: "10000+",
           StudentEnrolIcon: "Icons/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Enhances Upskilling Courses",
+          uspUpskillText: "Internationally Recognised",
           uspBookIcon: "Icons/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Artificial Intelligence Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Artificial Intelligence Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Guaranteed Certification",
         },
         {
           cardIcon: "Icons/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Latest Knowledge On the Course",
         },
         {
           cardIcon: "Icons/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Global Exposure",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the World of Artificial Intelligence with us!",
-      bigHeading:
-        "Everything You Need To Know About Artificial Intelligence Course",
+      smallHeading: "Explore the World of Artificial Intelligence With Us",
+      bigHeading: "Everything You Need to Know",
       sideHeadings: [
         { text: "Course Overview", contentId: "content1" },
         { text: "Course Curriculum", contentId: "content2" },
         { text: "", contentId: "content3" },
         { text: "World Class Faculty", contentId: "content4" },
         { text: "", contentId: "content5" },
-        { text: "Pricing Across the Countries", contentId: "content6" },
+        { text: "Pricing Across The Countries", contentId: "content6" },
       ],
       sideContents: {
         content1: {
@@ -1317,21 +1316,21 @@ const MainCoursesDynimicData = {
             {
               facultyImg: "Images/Faculty/Samidha_Photo.webp",
               facultyName: "Samidha Kurle",
-              facultyEducation: "",
+              facultyEducation: "Ph.D. in Computer Engineering",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-              facultyName: "Dr.Nilay Karade",
-              facultyEducation: "",
+              facultyName: "Dr. Nilay Karade",
+              facultyEducation: "Ph.D. in Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr.Shilpa Joshi",
-              facultyEducation: "",
+              facultyName: "Dr. Shilpa Joshi",
+              facultyEducation: "Head of Academics",
               courseName: "Senior Lecturer",
               yearsOfExperience: "20+ ",
             },
@@ -1356,7 +1355,7 @@ const MainCoursesDynimicData = {
               weekPoints: [
                 "Artificial Intelligence and Machine Learning",
                 "Artificial Neural Networks",
-                "Deploying AI models in Production",
+                "Deploying AI Models in Productions",
               ],
             },
             {
@@ -1379,49 +1378,49 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "Icons/south-africa.svg",
-              contaryName: "SouthAfrica",
-              price: "R 37,947",
-              duration: "10 weeks",
+              contaryName: "South Africa",
+              price: "R 37, 947",
+              duration: "37 Weeks",
             },
             {
               contaryFlag: "Icons/India.svg",
 
               contaryName: "India",
-              price: "₹ 181,497",
-              duration: "10 weeks",
+              price: "₹ 181, 497 + GST",
+              duration: "37 Weeks",
             },
             {
               contaryFlag: "Icons/USA.svg",
               contaryName: "USA",
               price: "$ 2,137",
-              duration: "10 weeks",
+              duration: "37 Weeks",
             },
           ],
         },
       },
     },
     CertificationDRData: {
-      title: "About Digital Regenesys Artificial Intelligence Certificate",
-      heading: "Certification",
+      title: "Get Certified With Us",
+      heading: "Artificial Intelligence Certification",
       paragraph:
-        "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
+        "The Digital Regenesys’s Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, learners will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
       tickImage: "Icons/Check.svg",
-      buttonText: "Enrol Now!",
-      achievementsHeading: "Key Achievements",
+      buttonText: "Enrol Now",
+      achievementsHeading: "Key Takeaways",
       achievementsText: [
-        " Deep Learning.  ",
-        "Problem-solving with AI.",
-        "Emerging Trends in AI.  ",
-        "Natural Language Processing.",
-        " Machine Learning Fundamentals.",
-        "Introduction to Artificial Intelligence.",
+        "Deep Learning",
+        "Problem-Solving with AI",
+        "Emerging Trends in AI",
+        "Natural Language Processing",
+        "Machine Learning Fundamentals",
+        "Introduction to Artificial Intelligence",
       ],
       image: "Images/Certificate/AIN_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
     BlogSectionData: {
-      BlogSectionTitle: "For Your Research & Information",
+      BlogSectionTitle: "Read Our Blogs For More Insights",
       cards: [
         {
           blogImg: "Images/Blog/ai-blog-course.webp",
@@ -1459,7 +1458,7 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions. ",
+      HeadingDesktop: "Frequently Asked Questions",
       HeadingMobile: "FAQ",
       sections: [
         {
@@ -1476,9 +1475,10 @@ const MainCoursesDynimicData = {
                 "An Artificial Intelligence (AI) course equips individuals with the knowledge and skills needed to understand, develop, and apply AI technologies. It is valuable for careers in AI research, development, and implementation.",
             },
             {
-              question: "What will I learn in an AI course?",
+              question:
+                "What will I learn in an Artificial Intelligence course?",
               answer:
-                "Artificial Intelligence (AI) course cover various topics, including Introduction to Data Analysis & Data Visualisation, Python Programming for Artificial Intelligence, Artificial Neural Networks, Artificial Intelligence and Machine Learning and more.",
+                "The Artificial Intelligence (AI) course covers various topics, including Introduction to Data Analysis & Data Visualisation, Python Programming for Artificial Intelligence, Artificial Neural Networks, Artificial Intelligence and Machine Learning and more.",
             },
           ],
         },
@@ -1493,15 +1493,15 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Do I need a background in programming to enrol in an AI course?",
+                "Do I need a background in programming to enrol in an Artificial Intelligence course?",
               answer:
-                "While some AI course may assume basic programming knowledge. Digital Regenesys AI course curriculum includes an introductory course catering to individuals with minimal programming experience, providing necessary foundational skills.",
+                "While some Artificial Intelligence courses may assume basic programming knowledge, Digital Regenesys’s Artificial Intelligence course curriculum includes an introductory course catering to individuals with minimal programming experience, providing necessary foundational skills.",
             },
             {
               question:
                 "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
               answer:
-                'To enrol in Digital Regenesys’s Artificial Intelligence Course, \n\n visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>,\n navigate to the course page, select the required course,\n click the "Enrol Now" button,\n complete the registration form with all the required details,\n submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>\n Navigate to the course page and select the required course.\n Click the "Enrol Now" button.\n Complete the registration form with all the required details.\n Submit the form and proceed to make the payment for the course.\n Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
             },
           ],
         },
@@ -1533,19 +1533,19 @@ const MainCoursesDynimicData = {
               question:
                 "How long does it take to complete the Digital Regenesys Artificial Intelligence course?",
               answer:
-                "The total duration of the Digital Regenesys Artificial Intelligence Course is 37 Weeks.",
+                "The total duration of the Digital Regenesys Artificial Intelligence course is 37 weeks.",
             },
             {
               question:
-                "Are there prerequisites for enrolling in the Digital Regenesys Artificial Intelligence course?",
+                "Are there prerequisites for enroling in the Digital Regenesys Artificial Intelligence course?",
               answer:
-                "There are no specific prerequisites for enrolling in the Digital Regenesys Artificial Intelligence course. But, individuals with a mathematics, programming, and statistics background are often beneficial.",
+                "There are no specific prerequisites for enroling in the Digital Regenesys Artificial Intelligence course. But, individuals with a mathematics, programming, and statistics background are often beneficial.",
             },
             {
               question:
-                "Can organisations enroll teams in AI courses to upskill?",
+                "Can organisations enrol teams in Artificial Intelligence courses to upskill?",
               answer:
-                "Yes. Digital Regenesys offer corporate training or customized AI courses to upskill teams and organisations in AI technologies.",
+                "Yes. Digital Regenesys offer corporate training or customised Artificial Intelligence courses to upskill teams and organisations in AI technologies.",
             },
           ],
         },
@@ -1555,7 +1555,7 @@ const MainCoursesDynimicData = {
             {
               question: "Are Artificial Intelligence courses available online?",
               answer:
-                "Yes, the Digital Regenesys Artificial Intelligence course is available online, allowing learners to study at their own pace and from anywhere with an internet connection.",
+                "Yes, Digital Regenesys’s Artificial Intelligence course is available online, allowing learners to study at their own pace and from anywhere with an internet connection.",
             },
             {
               question:
