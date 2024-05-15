@@ -19,7 +19,7 @@ const StudentReview = ({
   const imageUrl = `${process.env.awsImage_url}`;
 
   return (
-    <div className={Styles.cardContainer}>
+    <div className={Styles.reviewCardContainer}>
       <div className={Styles.topSection}>
         <h3 className={Styles.title}>{StudentReviewTitle}</h3>
         <h2 className={Styles.heading}>{StudentReviewHeading}</h2>
@@ -37,7 +37,7 @@ const StudentReview = ({
             1700: { slidesPerView: 3 },
           }}
         >
-          {StudentReviewCard.map((card: any, index: number) => {
+          {StudentReviewCard.map((item: any, index: number) => {
             // const starRating = card.StudentReviewStar; // Assuming this property exists
             // const fullStars = Math.floor(starRating);
             // const hasHalfStar = starRating % 1 !== 0;
@@ -79,7 +79,7 @@ const StudentReview = ({
                   </div>
                   <div className={Styles.studentReviewCardImg}>
                     <Image
-                      src={`${imageUrl}${card.StudentReviewCardImg}`}
+                      src={`${imageUrl}${item.StudentReviewCardImg}`}
                       // src={card.StudentReviewCardImg}
                       alt="Student Review"
                       width={88}
@@ -89,13 +89,13 @@ const StudentReview = ({
                   {/* <div className={Styles.starRating}>{stars}</div> */}
                   <div className={Styles.textContent}>
                     <h3 className={Styles.textContent1}>
-                      {card.StudentReviewName}
+                      {item.StudentReviewName}
                     </h3>
                     <p className={Styles.textContent2}>
-                      {card.StudentReviewRole}
+                      {item.StudentReviewRole}
                     </p>
                     <p className={Styles.textContent3}>
-                      {card.StudentReviewContent}
+                      {item.StudentReviewContent}
                     </p>
                   </div>
                 </div>

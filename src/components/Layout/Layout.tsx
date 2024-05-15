@@ -1,15 +1,11 @@
 import Preloader from "@/components/Preloader/Preloader";
-import useScroll from "@/hooks/useScroll";
 import Head from "next/head";
-
-import React, { useEffect, useLayoutEffect, useState } from "react";
-import { canonicalConstants } from "@/components/config/constant";
+import React, { useEffect, useState } from "react";
 import Data from "@/data/commonData";
 import { useRouter } from "next/router";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ModalPopup from "../Modal/ModalPopup";
-import { Modal } from "react-bootstrap";
 import mixpanel from "mixpanel-browser";
 
 const Layout = (props: any) => {

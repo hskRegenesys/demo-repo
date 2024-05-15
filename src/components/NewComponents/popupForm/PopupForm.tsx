@@ -30,20 +30,20 @@ const PopupForm: React.FC<PopupFormProps> = ({
   };
 
   const handleFormSubmit = () => {
-    closePopup(); // Close the popup when the form is submitted
+    closePopup();
   };
 
   useEffect(() => {
     if (isVisible) {
       setIsPopupVisible(true);
-      document.body.style.overflow = "hidden"; // Prevent scrolling on the body
+      document.body.style.overflow = "hidden";
     } else {
       setIsPopupVisible(false);
-      document.body.style.overflow = ""; // Restore scrolling on the body
+      document.body.style.overflow = "";
     }
 
     return () => {
-      document.body.style.overflow = ""; // Ensure scrolling is restored on unmount
+      document.body.style.overflow = "";
     };
   }, [isVisible]);
 

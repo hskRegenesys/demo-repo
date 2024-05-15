@@ -12,7 +12,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
     aboutTitle,
     aboutHeading,
     aboutParagraph,
-    cards,
+    aboutUsCardsData,
     aboutUsImgAlt,
   } = AboutUsData;
 
@@ -112,18 +112,18 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
         </div>
       </div>
 
-      <div className={Styles.cardsContainer}>
-        {cards.map((card, index) => (
-          <div key={index} className={Styles.card}>
-            <div className={Styles.cardImg}>
+      <div className={Styles.aboutusCardsContainer}>
+        {aboutUsCardsData.map((item, index) => (
+          <div key={index} className={Styles.aboutusCard}>
+            <div className={Styles.aboutusCardImg}>
               <Image
-                src={`${imageUrl}${card.cardImg}`}
+                src={`${imageUrl}${item.image}`}
                 alt={`Card ${index + 1}`}
                 width={52}
                 height={52}
               />
             </div>
-            <div className={Styles.cardText}>{card.cardText}</div>
+            <div className={Styles.aboutusCardText}>{item.title}</div>
           </div>
         ))}
       </div>

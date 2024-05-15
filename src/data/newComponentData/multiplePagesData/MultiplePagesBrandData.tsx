@@ -31,30 +31,30 @@ const MultiplePagesBrandData = {
   LearnersSupportSectionData: {
     LsSectionTitle: "Digital Regenesys Learners Support",
     LsHeding: "Talk to our experts. We’re available 24/7",
-    cards: [
+    LearnersSupportCards: [
       {
         LsImg: "Images/LearnersSupport-one.png",
         LsQuestion: "Discuss with a career advisor",
         LsText: "Not sure? Talk to an expert",
-        ButtenText: "Talk Now",
+        LsButtonText: "Talk Now",
       },
       {
         LsImg: "Images/LearnersSupport-two.png",
         LsQuestion: "Download Brochure",
         LsText: "Get Complete Details",
-        ButtenText: "Download",
+        LsButtonText: "Download",
       },
       {
         LsImg: "Images/LearnersSupport-three.png",
         LsQuestion: "Eligibility",
         LsText: "Know Your Eligibility",
-        ButtenText: " Check Eligibility",
+        LsButtonText: " Check Eligibility",
       },
     ],
   },
   BlogSectionDataHome: {
     BlogSectionTitle: "Read Our Blogs For More Insights",
-    cards: [
+    BlogSectionCards: [
       {
         blogImg: "Images/Blog/brand-blog-online-course.webp",
         blogQuestion: "What Are the Benefits of Taking Online Courses?",

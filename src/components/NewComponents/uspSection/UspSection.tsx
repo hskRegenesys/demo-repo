@@ -16,7 +16,6 @@ const UspSection = () => {
 
     if (start === end) return;
 
-    // Fix the duration to 2000 milliseconds (2 seconds)
     let incrementTime = 2000 / end;
 
     let timer = setInterval(() => {
@@ -35,13 +34,10 @@ const UspSection = () => {
       setIsMobile(window.innerWidth <= 560);
     };
 
-    // Initial check
     checkIsMobile();
 
-    // Listen for resize events
     window.addEventListener("resize", checkIsMobile);
 
-    // Clean up the listener on component unmount
     return () => window.removeEventListener("resize", checkIsMobile);
   }, []);
 

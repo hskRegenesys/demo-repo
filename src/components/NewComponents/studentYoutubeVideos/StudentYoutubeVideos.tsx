@@ -5,7 +5,7 @@ import "swiper/swiper-bundle.css";
 
 const StudentYoutubeVideos = () => {
   return (
-    <div className={Styles.container}>
+    <div className={Styles.studentYoutubeContainer}>
       <h2 className={Styles.title}>
         Watch our students share their experiences.{" "}
       </h2>
@@ -33,7 +33,7 @@ const StudentYoutubeVideos = () => {
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              className={Styles.iframe} // Changed to lowercase "iframe" for consistency
+              className={Styles.iframe}
             ></iframe>
           </SwiperSlide>
           <SwiperSlide>
@@ -45,7 +45,7 @@ const StudentYoutubeVideos = () => {
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              className={Styles.iframe} // Changed to lowercase "iframe" for consistency
+              className={Styles.iframe}
             ></iframe>
           </SwiperSlide>
           {/* <SwiperSlide>

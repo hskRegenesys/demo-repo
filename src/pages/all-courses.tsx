@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import _ from "lodash";
 import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
+import Layout from "@/components/Layout/Layout";
+import AllCoursesPageBanner from "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner";
 
 const WhyChooseDR = dynamic(
   () => import("@/components/NewComponents/whychooseDR/WhyChooseDR")
@@ -20,13 +22,7 @@ const CertificationDR = dynamic(
   () => import("@/components/NewComponents/certificationDR/CertificationDR")
 );
 const MobileMenu = dynamic(() => import("@/components/Header/MobileMenu"));
-const AllCoursesPageBanner = dynamic(
-  () =>
-    import(
-      "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner"
-    )
-);
-const Layout = dynamic(() => import("@/components/Layout/Layout"));
+
 const FeaturedCourses = dynamic(
   () => import("@/components/NewComponents/featuredCourses/FeaturedCourses")
 );

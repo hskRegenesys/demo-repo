@@ -6,7 +6,7 @@ import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
 SwiperCore.use([Pagination, Autoplay]);
 
-interface CardData {
+interface BlogSectionCardData {
   blogImg: string;
   blogQuestion: string;
   blogText: string;
@@ -15,7 +15,7 @@ interface CardData {
 
 interface BlogSectionData {
   BlogSectionTitle: string;
-  cards: CardData[];
+  BlogSectionCards: BlogSectionCardData[];
 }
 
 interface BlogSectionProps {
@@ -23,12 +23,11 @@ interface BlogSectionProps {
 }
 
 const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
-  if (!data || !data.cards || data.cards.length === 0) {
-    // Return null if data is not provided or cards array is empty
+  if (!data || !data.BlogSectionCards || data.BlogSectionCards.length === 0) {
     return null;
   }
 
-  const addBottomValue = data.cards.length <= 3 ? "0px" : "60px";
+  const addBottomValue = data.BlogSectionCards.length <= 3 ? "0px" : "60px";
   const imageUrl = `${process.env.awsImage_url}`;
 
   return (
@@ -54,7 +53,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             },
           }}
         >
-          {data.cards.map((card, index) => (
+          {data?.BlogSectionCards.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
                 <Image

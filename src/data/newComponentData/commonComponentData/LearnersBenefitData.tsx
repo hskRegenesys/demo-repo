@@ -1,10 +1,10 @@
 const LearnersBenefitData = {
-  LearnersBenefitHeding: "Learners' Benefits",
+  LearnersBenefitHeading: "Learners' Benefits",
   LearnersBenefitTitle: "See What Our Learners Can Get",
   LearnersBenefitFrame1: "Images/LearnBenefitsFrameRight.svg",
   LearnersBenefitFrame2: "Images/LearnBenefitsFrameLeft.svg",
   LearnersBenefitTickIcon: "Icons/VectorTick.svg",
-  card: [
+  LearnersBenfitsCardsData: [
     {
       LearnersBenefitCardImg: "Images/Lb-card-one.svg",
       LearnersBenefitCardTitle: "World Class Learning",

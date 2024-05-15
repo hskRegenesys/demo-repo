@@ -1,7 +1,7 @@
 const HomeDynamicData = {
   BlogSectionDataHome: {
     BlogSectionTitle: "Read Our Blogs For More Insights",
-    cards: [
+    BlogSectionCards: [
       {
         blogImg: "Images/Blog/blog.png",
         blogQuestion: "Understanding IELTS",
