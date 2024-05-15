@@ -2,178 +2,32 @@
 import React, { useState, useEffect } from "react";
 import OurLocationData from "../../../data/newComponentData/commonComponentData/OurLocationData";
 import Styles from "./OurLocation.module.css";
-import UsaSection from "./Contarys/UsaSection";
-import KenyaSection from "./Contarys/KenyaSecion";
-import IndiaSection from "./Contarys/IndiaSecion";
-import UgandaSection from "./Contarys/UgandaSection";
-import SouthAfricaSection from "./Contarys/SouthAfrica";
-import CroatiaSection from "./Contarys/CroatiaSection";
-import NigeriaSection from "./Contarys/NigeriaSection";
-import TanzaniaSection from "./Contarys/TanzaniaSection";
+import UsaSection from "./CountriesDetails/UsaSection";
+import KenyaSection from "./CountriesDetails/KenyaSection";
+import IndiaSection from "./CountriesDetails/IndiaSection";
+import UgandaSection from "./CountriesDetails/UgandaSection";
+import SouthAfricaSection from "./CountriesDetails/SouthAfrica";
+import CroatiaSection from "./CountriesDetails/CroatiaSection";
+import NigeriaSection from "./CountriesDetails/NigeriaSection";
+import TanzaniaSection from "./CountriesDetails/TanzaniaSection";
 import Image from "next/image";
 
 const OurLocation: React.FC = () => {
-  const {
-    smallHeading,
-    bigHeading,
-    paraText,
-    countryImage,
-    USA,
-    Kenya,
-    India,
-    SouthAfrica,
-    Croatia,
-    Uganda,
-    Nigeria,
-    Tanzania,
-    // Add other countries as needed
-  } = OurLocationData;
+  const { smallHeading, bigHeading, paraText, countryImage } = OurLocationData;
 
-  const [isUsaHovered, setUsaHovered] = useState(false);
-  const [isKenyaHovered, setKenyaHovered] = useState(false);
-  const [isIndiaHovered, setIndiaHovered] = useState(false);
-  const [isSouthAfricaHovered, setSouthAfricaHovered] = useState(false);
-  const [isCroatiaHovered, setCroatiaHovered] = useState(false);
-  const [isUgandaHovered, setUgandaHovered] = useState(false);
-  const [isNigeriaHovered, setNigeriaHovered] = useState(false);
-  const [isTanzaniaHovered, setTanzaniaHovered] = useState(false);
+  const [hoveredLocation, setHoveredLocation] = useState<string | null>(null);
   const [isExpanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const imageUrl = `${process.env.awsImage_url}`;
   let usaHoverTimeout: NodeJS.Timeout;
-
-  const handleUsaMouseEnter = () => {
+  const handleMouseEnter = (location: string) => {
     if (!isMobile) {
-      setUsaHovered(true);
-      setKenyaHovered(false);
-      setIndiaHovered(false);
-      setSouthAfricaHovered(false);
-      setCroatiaHovered(false);
-      setUgandaHovered(false);
-      setNigeriaHovered(false);
-      setTanzaniaHovered(false);
-    }
-  };
-  const handleUsaMouseLeave = () => {
-    setUsaHovered(false);
-  };
-
-  const handleKenyaMouseEnter = () => {
-    if (!isMobile) {
-      setKenyaHovered(true);
-      setUsaHovered(false);
-      setIndiaHovered(false);
-      setSouthAfricaHovered(false);
-      setCroatiaHovered(false);
-      setUgandaHovered(false);
-      setNigeriaHovered(false);
-      setTanzaniaHovered(false);
+      setHoveredLocation(location);
     }
   };
 
-  const handleKenyaMouseLeave = () => {
-    setKenyaHovered(false);
-  };
-
-  const handleIndiaMouseEnter = () => {
-    if (!isMobile) {
-      setIndiaHovered(true);
-      setUsaHovered(false);
-      setKenyaHovered(false);
-      setSouthAfricaHovered(false);
-      setCroatiaHovered(false);
-      setUgandaHovered(false);
-      setNigeriaHovered(false);
-      setTanzaniaHovered(false);
-    }
-  };
-
-  const handleIndiaMouseLeave = () => {
-    setIndiaHovered(false);
-  };
-
-  const handleUgandaMouseEnter = () => {
-    if (!isMobile) {
-      setIndiaHovered(false);
-      setUsaHovered(false);
-      setKenyaHovered(false);
-      setSouthAfricaHovered(false);
-      setCroatiaHovered(false);
-      setUgandaHovered(true);
-      setNigeriaHovered(false);
-      setTanzaniaHovered(false);
-    }
-  };
-
-  const handleUgandaMouseLeave = () => {
-    setUgandaHovered(false);
-  };
-
-  const handleSouthAfricaMouseEnter = () => {
-    if (!isMobile) {
-      setIndiaHovered(false);
-      setUsaHovered(false);
-      setKenyaHovered(false);
-      setSouthAfricaHovered(true);
-      setCroatiaHovered(false);
-      setUgandaHovered(false);
-      setNigeriaHovered(false);
-      setTanzaniaHovered(false);
-    }
-  };
-
-  const handleSouthAfricaMouseLeave = () => {
-    setSouthAfricaHovered(false);
-  };
-
-  const handleCroatiaMouseEnter = () => {
-    if (!isMobile) {
-      setIndiaHovered(false);
-      setUsaHovered(false);
-      setKenyaHovered(false);
-      setSouthAfricaHovered(false);
-      setCroatiaHovered(true);
-      setUgandaHovered(false);
-      setNigeriaHovered(false);
-      setTanzaniaHovered(false);
-    }
-  };
-
-  const handleCroatiaMouseLeave = () => {
-    setCroatiaHovered(false);
-  };
-
-  const handleNigeriaMouseEnter = () => {
-    if (!isMobile) {
-      setNigeriaHovered(true);
-      setIndiaHovered(false);
-      setUsaHovered(false);
-      setKenyaHovered(false);
-      setSouthAfricaHovered(false);
-      setCroatiaHovered(false);
-      setUgandaHovered(false);
-      setTanzaniaHovered(false);
-    }
-  };
-
-  const handleNigeriaMouseLeave = () => {
-    setNigeriaHovered(false);
-  };
-  const handleTanzaniaMouseEnter = () => {
-    if (!isMobile) {
-      setIndiaHovered(false);
-      setUsaHovered(false);
-      setKenyaHovered(false);
-      setSouthAfricaHovered(false);
-      setCroatiaHovered(false);
-      setUgandaHovered(false);
-      setNigeriaHovered(false);
-      setTanzaniaHovered(true);
-    }
-  };
-
-  const handleTanzaniaMouseLeave = () => {
-    setTanzaniaHovered(false);
+  const handleMouseLeave = () => {
+    setHoveredLocation(null);
   };
 
   useEffect(() => {
@@ -181,13 +35,10 @@ const OurLocation: React.FC = () => {
       setIsMobile(window.innerWidth <= 700);
     };
 
-    // Initial check
     handleResize();
 
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -233,61 +84,61 @@ const OurLocation: React.FC = () => {
         <div className={Styles.locationPin}>
           <div className={Styles.usaLocation}>
             <UsaSection
-              isHovered={isUsaHovered}
-              onMouseEnter={handleUsaMouseEnter}
-              onMouseLeave={handleUsaMouseLeave}
+              isHovered={hoveredLocation === "usa"}
+              onMouseEnter={() => handleMouseEnter("usa")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
 
           <div className={Styles.IndiaLocation}>
             <IndiaSection
-              isHovered={isIndiaHovered}
-              onMouseEnter={handleIndiaMouseEnter}
-              onMouseLeave={handleIndiaMouseLeave}
+              isHovered={hoveredLocation === "india"}
+              onMouseEnter={() => handleMouseEnter("india")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
 
           <div className={Styles.croatiaLocation}>
             <CroatiaSection
-              isHovered={isCroatiaHovered}
-              onMouseEnter={handleCroatiaMouseEnter}
-              onMouseLeave={handleCroatiaMouseLeave}
+              isHovered={hoveredLocation === "croatia"}
+              onMouseEnter={() => handleMouseEnter("croatia")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
           <div className={Styles.ugandaLocation}>
             <UgandaSection
-              isHovered={isUgandaHovered}
-              onMouseEnter={handleUgandaMouseEnter}
-              onMouseLeave={handleUgandaMouseLeave}
+              isHovered={hoveredLocation === "uganda"}
+              onMouseEnter={() => handleMouseEnter("uganda")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
           <div className={Styles.nigeriaLocation}>
             <NigeriaSection
-              isHovered={isNigeriaHovered}
-              onMouseEnter={handleNigeriaMouseEnter}
-              onMouseLeave={handleNigeriaMouseLeave}
+              isHovered={hoveredLocation === "nigeria"}
+              onMouseEnter={() => handleMouseEnter("nigeria")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
 
           <div className={Styles.KenyaLocation}>
             <KenyaSection
-              isHovered={isKenyaHovered}
-              onMouseEnter={handleKenyaMouseEnter}
-              onMouseLeave={handleKenyaMouseLeave}
+              isHovered={hoveredLocation === "kenya"}
+              onMouseEnter={() => handleMouseEnter("kenya")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
           <div className={Styles.tanzaniaLocation}>
             <TanzaniaSection
-              isHovered={isTanzaniaHovered}
-              onMouseEnter={handleTanzaniaMouseEnter}
-              onMouseLeave={handleTanzaniaMouseLeave}
+              isHovered={hoveredLocation === "tanzania"}
+              onMouseEnter={() => handleMouseEnter("tanzania")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
           <div className={Styles.southAfricaLocation}>
             <SouthAfricaSection
-              isHovered={isSouthAfricaHovered}
-              onMouseEnter={handleSouthAfricaMouseEnter}
-              onMouseLeave={handleSouthAfricaMouseLeave}
+              isHovered={hoveredLocation === "southAfrica"}
+              onMouseEnter={() => handleMouseEnter("southAfrica")}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
           {/* Add more sections for other countries */}

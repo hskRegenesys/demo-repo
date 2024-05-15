@@ -1,5 +1,3 @@
-// KenyaSection.tsx
-
 import React from "react";
 import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 import Image from "next/image";
@@ -25,6 +23,7 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
           className={`${Styles.SouthAfricaContaryShowHoverDetails}  ${
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
+          onMouseLeave={onMouseLeave}
         >
           <div
             className={`${Styles.SouthAfricacontaryAdressCard} ${Styles.contaryAdress}`}
@@ -47,6 +46,8 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.SouthAfricaContaryLocation} ${Styles.contaryLocation}`}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
@@ -55,8 +56,6 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
             }`}
             alt={OurLocationData.SouthAfrica.countryName}
             title={OurLocationData.SouthAfrica.countryName}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
             width={14}
             height={20}
           />
