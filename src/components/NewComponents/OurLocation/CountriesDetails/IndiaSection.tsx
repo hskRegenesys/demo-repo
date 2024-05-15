@@ -1,5 +1,3 @@
-// KenyaSection.tsx
-
 import React from "react";
 import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 import Image from "next/image";
@@ -25,6 +23,7 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
           className={`${Styles.IndiaContaryShowHoverDetails} ${
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
+          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.India.countryFlagImg}`}
@@ -47,6 +46,8 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.IndiaContaryLocation} ${Styles.contaryLocation}`}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <span className={Styles.contaryname}>
             {OurLocationData.India.countryName}
@@ -58,8 +59,6 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
             }`}
             alt={OurLocationData.India.countryName}
             title={OurLocationData.India.countryName}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
             width={14}
             height={20}
           />
