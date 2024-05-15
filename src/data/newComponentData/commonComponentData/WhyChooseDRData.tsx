@@ -1,7 +1,7 @@
 const whyChooseDRData = {
-  whyChooseDRHeading: "Smart Features",
-  whyChooseDRTitle: "Why choose Digital Regenesys?",
-  whyChooseDRButtonText: "Enroll Now",
+  whyChooseDRHeading: "Top Reasons",
+  whyChooseDRTitle: "Why Choose Digital Regenesys?",
+  whyChooseDRButtonText: "Enrol Now",
   whyChooseDRCard: [
     {
       cardImg: "Icons/Live Call.svg",
@@ -17,7 +17,7 @@ const whyChooseDRData = {
     },
     {
       cardImg: "Icons/Experts.svg",
-      cardText: "Career Counseling",
+      cardText: "Career Counselling",
     },
   ],
 };

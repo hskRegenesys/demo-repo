@@ -1,6 +1,6 @@
 const StudentReviewData = {
-  StudentReviewTitle: "Student Reviews",
-  StudentReviewHeading: "What Our Learners Say About Us.",
+  StudentReviewTitle: "Success Reviews",
+  StudentReviewHeading: "Over 10,000+ Learners",
 
   StudentReviewCard: [
     {
