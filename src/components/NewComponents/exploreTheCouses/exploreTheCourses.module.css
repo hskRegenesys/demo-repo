@@ -576,7 +576,10 @@
 .weekPoint {
   margin-top: 16px;
 }
-.weekPoint span {
+.weekPointImg {
+  width: 40px;
+}
+.weekPointText {
   color: var(--Light-Text-Secondary, #697386);
   font-family: Montserrat;
   font-size: 16px;
@@ -584,7 +587,6 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
-  margin-left: 10px;
 }
 
 .sideHeding {
@@ -637,9 +639,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
-.weekPoint span:first-child {
+.weekPointText:first-child {
   margin-right: 8px;
 }
 
@@ -658,7 +662,7 @@
     margin-bottom: 8px;
   }
 
-  .weekPoint span {
+  .weekPointText {
     font-size: 14px;
     line-height: 20px;
   }

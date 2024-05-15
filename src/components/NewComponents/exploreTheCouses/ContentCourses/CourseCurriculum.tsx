@@ -51,7 +51,7 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
                   width={24}
                   height={24}
                 />
-                <span>{week.weekHeading}</span>
+                <span className={styles.weekPointText}>{week.weekHeading}</span>
               </div>
               <Image
                 src={`${imageUrl}${dropDown}`}
@@ -74,7 +74,7 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
                           width={20}
                           height={20}
                         />
-                        <span>{value}</span>
+                        <span className={styles.weekPointText}>{value}</span>
                       </li>
                     ))}
                   </ul>

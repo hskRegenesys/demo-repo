@@ -66,9 +66,11 @@ interface Props {
         durationIcon: string;
         tickIcon: string;
         dropDown: string;
-        curriculumContainer: {
-          weekHeading: string;
-          weekPoints: string[] | { [key: string]: string[] };
+        DedenceToolBoxContainer: {
+          Heading: string;
+          PassageTop: string;
+          PassageBottom: string;
+          Points: string[] | { [key: string]: string[] };
         }[];
       };
     };

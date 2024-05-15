@@ -9,9 +9,12 @@ interface DefenceToolboxProps {
   durationIcon: string;
   tickIcon: string;
   dropDown: string;
-  curriculumContainer: {
-    weekHeading: string;
-    weekPoints: string[] | { [key: string]: string[] };
+
+  DedenceToolBoxContainer: {
+    Heading: string;
+    PassageTop: string;
+    PassageBottom: string;
+    Points: string[] | { [key: string]: string[] };
   }[];
 }
 
@@ -20,7 +23,7 @@ const DefenceToolbox: React.FC<DefenceToolboxProps> = ({
   durationIcon,
   tickIcon,
   dropDown,
-  curriculumContainer,
+  DedenceToolBoxContainer,
 }) => {
   const [activeWeekIndex, setActiveWeekIndex] = useState<number | null>(0);
   const imageUrl = `${process.env.awsImage_url}`;
@@ -34,7 +37,7 @@ const DefenceToolbox: React.FC<DefenceToolboxProps> = ({
       <h3>{contentHeading}</h3>
 
       <div className={styles.weekContainer}>
-        {curriculumContainer.map((week, index) => (
+        {DedenceToolBoxContainer.map((week, index) => (
           <div
             key={index}
             className={`${styles.weekCard} ${
@@ -51,7 +54,7 @@ const DefenceToolbox: React.FC<DefenceToolboxProps> = ({
                   width={24}
                   height={24}
                 />
-                <span>{week.weekHeading}</span>
+                <span>{week.Heading}</span>
               </div>
               <Image
                 src={`${imageUrl}${dropDown}`}
@@ -61,48 +64,59 @@ const DefenceToolbox: React.FC<DefenceToolboxProps> = ({
                 height={24}
               />
             </div>
+
             {index === activeWeekIndex && (
-              <div className={styles.dropdown}>
-                {Array.isArray(week.weekPoints) ? (
-                  <ul>
-                    {week.weekPoints.map((value, pointIndex) => (
-                      <li key={pointIndex} className={styles.weekPoint}>
-                        <Image
-                          src={`${imageUrl}${tickIcon}`}
-                          // src={tickIcon}
-                          alt="Tick Icon"
-                          width={20}
-                          height={20}
-                        />
-                        <span>{value}</span>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <ul>
-                    {Object.entries(week.weekPoints).map(
-                      ([key, value], pointIndex) => (
-                        <div key={key} style={{ marginBottom: "20px" }}>
-                          <h6 className={styles.sideHeding}>{key}</h6>
-                          <ul>
-                            {value.map((item: string, index: number) => (
-                              <li key={index} className={styles.weekPoint}>
-                                <Image
-                                  src={`${imageUrl}${tickIcon}`}
-                                  // src={tickIcon}
-                                  alt="Tick Icon"
-                                  width={20}
-                                  height={20}
-                                />
-                                <span>{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )
-                    )}
-                  </ul>
-                )}
+              <div>
+                <p className={styles.weekPointText}>{week.PassageTop}</p>
+                <div className={styles.dropdown}>
+                  {Array.isArray(week.Points) ? (
+                    <ul>
+                      {week.Points.map((value, pointIndex) => (
+                        <li key={pointIndex} className={styles.weekPoint}>
+                          <div className={styles.weekPointImg}>
+                            <Image
+                              src={`${imageUrl}${tickIcon}`}
+                              // src={tickIcon}
+                              alt="Tick Icon"
+                              width={20}
+                              height={20}
+                            />
+                          </div>
+                          <span className={styles.weekPointText}>{value}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <ul>
+                      {Object.entries(week.Points).map(
+                        ([key, value], pointIndex) => (
+                          <div key={key} style={{ marginBottom: "20px" }}>
+                            <h6 className={styles.sideHeding}>{key}</h6>
+                            <ul>
+                              {value.map((item: string, index: number) => (
+                                <li key={index} className={styles.weekPoint}>
+                                  <div className={styles.weekPointImg}>
+                                    <Image
+                                      src={`${imageUrl}${tickIcon}`}
+                                      // src={tickIcon}
+                                      alt="Tick Icon"
+                                      width={20}
+                                      height={20}
+                                    />
+                                  </div>
+                                  <span className={styles.weekPointText}>
+                                    {item}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )
+                      )}
+                    </ul>
+                  )}
+                </div>
+                <p className={styles.weekPointText}>{week.PassageBottom}</p>
               </div>
             )}
           </div>
