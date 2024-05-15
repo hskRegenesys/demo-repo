@@ -42,13 +42,10 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
       setIsMobile(window.innerWidth <= 700);
     };
 
-    // Initial check
     handleResize();
 
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
