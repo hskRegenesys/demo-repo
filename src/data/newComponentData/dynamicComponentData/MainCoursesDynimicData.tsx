@@ -31,8 +31,8 @@ const MainCoursesDynimicData = {
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Data Science Course Outcomes",
-      Heding: "What our learners have achieved",
+      courcename: "Data Science Course Result",
+      Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "Icons/money-tick.svg",
@@ -1135,7 +1135,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys’s Project Management Course?",
               answer:
-                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \t materials and beginning your online learning journey.",
             },
             {
               question:
@@ -1673,7 +1673,7 @@ const MainCoursesDynimicData = {
           facultyCard: [
             {
               facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
-              facultyName: "Dr.Saquib Ahmad Khan",
+              facultyName: "Dr. Saquib Ahmad Khan",
               facultyEducation: "PhD Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "10+ ",

@@ -76,7 +76,9 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                     {selectedQuestion === index && (
                       <p
                         dangerouslySetInnerHTML={{
-                          __html: faq.answer.replace(/\n/g, "<br> "),
+                          __html: faq.answer
+                            .replace(/\n/g, "<br> ")
+                            .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;"),
                         }}
                       ></p>
                     )}
@@ -186,7 +188,9 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                           <p
                             className={Styles.answerMobile}
                             dangerouslySetInnerHTML={{
-                              __html: faq.answer.replace(/\n/g, "<br><br>"),
+                              __html: faq.answer
+                                .replace(/\n/g, "<br> ")
+                                .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;"),
                             }}
                           ></p>
                         )}
