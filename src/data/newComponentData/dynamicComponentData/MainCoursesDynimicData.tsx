@@ -285,7 +285,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Data Science Course?",
               answer:
-                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ',
+                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n     materials and beginning your online learning journey',
             },
             {
               question:
@@ -692,7 +692,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Digital Marketing Course?",
               answer:
-                "To enrol in the Digital Regenesys online course, follow these steps:\n\n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enrol Now' button.\n5. Complete the registration form with all the required details.\n6. Submit the form and proceed to make the payment for the course.\n7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys online course, follow these steps:\n\n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enrol Now' button.\n5. Complete the registration form with all the required details.\n6. Submit the form and proceed to make the payment for the course.\n7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey",
             },
 
             {
@@ -1075,7 +1075,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys’s Project Management Course?",
               answer:
-                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \t materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course  \n    materials and beginning your online learning journey",
             },
             {
               question:
@@ -1437,7 +1437,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
               answer:
-                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n 1. Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>.\n 2. Navigate to the course page and select the required course.\n 3. Click the "Enrol Now" button.\n 4. Complete the registration form with all the required details.\n 5. Submit the form and proceed to make the payment for the course.\n 6. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n 1. Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>.\n 2. Navigate to the course page and select the required course.\n 3. Click the "Enrol Now" button.\n 4. Complete the registration form with all the required details.\n 5. Submit the form and proceed to make the payment for the course.\n 6. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey',
             },
           ],
         },
@@ -2034,7 +2034,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Cyber Security Course?",
               answer:
-                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button.\n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button.\n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey',
             },
           ],
         },
@@ -2422,7 +2422,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Design Thinking Course?",
               answer:
-                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enrol Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enrol Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey",
             },
           ],
         },

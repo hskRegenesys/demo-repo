@@ -75,10 +75,12 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                     </div>
                     {selectedQuestion === index && (
                       <p
+                        className={Styles.whiteSpaceText}
                         dangerouslySetInnerHTML={{
                           __html: faq.answer
-                            .replace(/\n/g, "<br> ")
-                            .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;"),
+                            .replace(/\n/g, "<br>")
+                            .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;")
+                            .replace(/ {2}/g, "&nbsp;&nbsp;"),
                         }}
                       ></p>
                     )}

@@ -134,6 +134,9 @@
   cursor: pointer;
   border: none;
 }
+.whiteSpaceText {
+  white-space: pre-wrap;
+}
 
 /* faq.module.css */
 /* ... (previous styles) */
