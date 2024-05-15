@@ -1,7 +1,10 @@
+// PricingAcrossCountries.js
+
 import React from "react";
 import Styles from "../exploreTheCourses.module.css";
 import Image from "next/image";
-interface Content6Props {
+
+interface PricingAcrossCountriesProps {
   handleEnrollButtonClick: (title?: string) => void;
   ContentHeding: string;
   PriceIcon: string;
@@ -15,7 +18,7 @@ interface Content6Props {
   }[];
 }
 
-const Content6: React.FC<Content6Props> = ({
+const PricingAcrossCountries: React.FC<PricingAcrossCountriesProps> = ({
   ContentHeding,
   PriceIcon,
   durationIcon,
@@ -36,7 +39,6 @@ const Content6: React.FC<Content6Props> = ({
               <div className={Styles.cardImg}>
                 <Image
                   src={`${imageUrl}${card.contaryFlag}`}
-                  // src={card.contaryFlag}
                   alt={card.contaryName}
                   title={card.contaryName}
                   width={48}
@@ -50,7 +52,6 @@ const Content6: React.FC<Content6Props> = ({
                 <div className={Styles.iconContent}>
                   <Image
                     src={`${imageUrl}${PriceIcon}`}
-                    // src={PriceIcon}
                     alt="Rate Icon"
                     width={24}
                     height={24}
@@ -62,26 +63,22 @@ const Content6: React.FC<Content6Props> = ({
                 <div className={Styles.iconContent}>
                   <Image
                     src={`${imageUrl}${durationIcon}`}
-                    // src={durationIcon}
                     alt="Duration Icon"
                     width={24}
                     height={24}
                   />
                 </div>
-
                 <span className={Styles.SpanText}>{card.duration}</span>
               </div>
               <div className={Styles.line}>
                 <div className={Styles.iconContent}>
                   <Image
                     src={`${imageUrl}${EnrollmentIcon}`}
-                    // src={EnrollmentIcon}
                     alt="Enrollment Icon"
                     width={24}
                     height={24}
                   />
                 </div>
-
                 <span className={Styles.SpanText}>Online Mode</span>
               </div>
             </div>
@@ -100,4 +97,4 @@ const Content6: React.FC<Content6Props> = ({
   );
 };
 
-export default Content6;
+export default PricingAcrossCountries;

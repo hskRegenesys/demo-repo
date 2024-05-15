@@ -54,122 +54,22 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Data Science With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DS-explore.webp",
           contentText:
             "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
-
           contentCard: [
-            {
-              icon: "Icons/Live Call.svg",
-              text: "Live Classes",
-            },
-            {
-              icon: "Icons/Award.svg",
-              text: "International Certificate",
-            },
-            {
-              icon: "Icons/Counselling.svg",
-              text: "Industry Expert Faculty",
-            },
-            {
-              icon: "Icons/Experts.svg",
-              text: "Career Counselling",
-            },
+            { icon: "Icons/Live Call.svg", text: "Live Classes" },
+            { icon: "Icons/Award.svg", text: "International Certificate" },
+            { icon: "Icons/Counselling.svg", text: "Industry Expert Faculty" },
+            { icon: "Icons/Experts.svg", text: "Career Counselling" },
           ],
         },
-        content2: {
-          contentHeading: "Tools Covered In This Course",
-          cardTools: [
-            { img: "DS/tools_covered3.png", alt: "" },
-            { img: "DS/tools_covered4.png", alt: "" },
-            { img: "DS/tools_covered1.png", alt: "" },
-            { img: "DS/tools_covered5.png", alt: "" },
-            { img: "DS/tools_covered6.png", alt: "" },
-            { img: "DS/tools_covered7.png", alt: "" },
-            { img: "DS/tools_covered2.png", alt: "" },
-            { img: "DS/tools_covered8.png", alt: "" },
-            { img: "DS/tools_covered9.png", alt: "" },
-            { img: "DS/tools_covered10.png", alt: "" },
-            { img: "DS/tools_covered11.png", alt: "" },
-            { img: "DS/tools_covered12.png", alt: "" },
-          ],
-        },
-        content3: {
-          contentHeading: "World Class Faculty",
-          tutors: "50+ Tutors",
-          facultyCard: [
-            {
-              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-              facultyName: "Dr. Nilay Karade",
-              facultyEducation: "Ph.D. in Computer Science",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "11+ ",
-            },
-            {
-              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "Head of Academics",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "20+ ",
-            },
-            {
-              facultyImg: "Images/Faculty/Samidha_Photo.webp",
-              facultyName: "Samidha Kurle",
-              facultyEducation: "Ph.D. in Computer Engineering",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "10+ ",
-            },
-          ],
-        },
-
-        // content5: {
-        //   contentHeading: "Course Curriculum",
-        //   durationIcon: "Icons/clock-green.svg",
-        //   tickIcon: "Icons/Check.svg",
-        //   dropDown: "Icons/arrow_drop_down.svg",
-        //   curriculumContainer: [
-        //     {
-        //       weekHeading: "Week1",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //     {
-        //       weekHeading: "Week2",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //     {
-        //       weekHeading: "Week3",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //   ],
-        // },
-
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -215,8 +115,55 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
-          ContentHeding: "Pricing Across The Countries",
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
+              facultyName: "Dr. Nilay Karade",
+              facultyEducation: "Ph.D. in Computer Science",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "11+ ",
+            },
+            {
+              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
+              facultyName: "Dr. Shilpa Joshi",
+              facultyEducation: "Head of Academics",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "20+ ",
+            },
+            {
+              facultyImg: "Images/Faculty/Samidha_Photo.webp",
+              facultyName: "Samidha Kurle",
+              facultyEducation: "Ph.D. in Computer Engineering",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ ",
+            },
+          ],
+        },
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
+          contentHeading: "Tools Covered In This Course",
+          cardTools: [
+            { img: "DS/tools_covered3.png", alt: "" },
+            { img: "DS/tools_covered4.png", alt: "" },
+            { img: "DS/tools_covered1.png", alt: "" },
+            { img: "DS/tools_covered5.png", alt: "" },
+            { img: "DS/tools_covered6.png", alt: "" },
+            { img: "DS/tools_covered7.png", alt: "" },
+            { img: "DS/tools_covered2.png", alt: "" },
+            { img: "DS/tools_covered8.png", alt: "" },
+            { img: "DS/tools_covered9.png", alt: "" },
+            { img: "DS/tools_covered10.png", alt: "" },
+            { img: "DS/tools_covered11.png", alt: "" },
+            { img: "DS/tools_covered12.png", alt: "" },
+          ],
+        },
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
+          contentHeading: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -229,7 +176,6 @@ const MainCoursesDynimicData = {
             },
             {
               contaryFlag: "Icons/India.svg",
-
               contaryName: "India",
               price: "₹ 242,694 + GST",
               duration: "30 weeks",
@@ -339,7 +285,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Data Science Course?",
               answer:
-                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.  ',
+                'To enrol in the Digital Regenesys online course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n     materials and beginning your online learning journey',
             },
             {
               question:
@@ -478,17 +424,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Digital Marketing With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DM-explore.webp",
           contentText:
@@ -512,7 +451,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DM/digital_marketing_tools1.png", alt: "" },
@@ -533,7 +473,8 @@ const MainCoursesDynimicData = {
             // { img: "DM/digital_marketing_tools16.png", alt: "" },
           ],
         },
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -554,8 +495,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        // content5: {
-        //   contentHeading: "Course Curriculum",
+        // CourseCurriculumData: {
+        //   sideHeading: "Course Curriculum",        //   contentHeading: "Course Curriculum",
         //   durationIcon: "Icons/clock-green.svg",
         //   tickIcon: "Icons/Check.svg",
         //   dropDown: "Icons/arrow_drop_down.svg",
@@ -590,7 +531,8 @@ const MainCoursesDynimicData = {
         //   ],
         // },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -633,7 +575,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -749,7 +692,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Digital Marketing Course?",
               answer:
-                "To enrol in the Digital Regenesys online course, follow these steps:\n\n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enrol Now' button.\n5. Complete the registration form with all the required details.\n6. Submit the form and proceed to make the payment for the course.\n7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys online course, follow these steps:\n\n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enrol Now' button.\n5. Complete the registration form with all the required details.\n6. Submit the form and proceed to make the payment for the course.\n7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey",
             },
 
             {
@@ -890,17 +833,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore the World of Project Management With Us",
       bigHeading: "Everything You Need to Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/PM-explore.webp",
           contentText:
@@ -924,7 +860,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "PM/project-management-tools1.png", alt: "" },
@@ -933,7 +870,8 @@ const MainCoursesDynimicData = {
             { img: "PM/project-management-tools4.png", alt: "" },
           ],
         },
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -954,7 +892,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -1009,7 +948,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -1135,7 +1075,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys’s Project Management Course?",
               answer:
-                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \t materials and beginning your online learning journey.",
+                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course  \n    materials and beginning your online learning journey",
             },
             {
               question:
@@ -1274,16 +1214,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore the World of Artificial Intelligence With Us",
       bigHeading: "Everything You Need to Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/AI-explore.webp",
           contentText:
@@ -1308,7 +1242,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -1336,7 +1271,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -1369,7 +1305,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -1500,7 +1437,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Artificial Intelligence Course?",
               answer:
-                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n 1. Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>.\n 2. Navigate to the course page and select the required course.\n 3. Click the "Enrol Now" button.\n 4. Complete the registration form with all the required details.\n 5. Submit the form and proceed to make the payment for the course.\n 6. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in Digital Regenesys’s Artificial Intelligence Course: \n\n 1. Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a>.\n 2. Navigate to the course page and select the required course.\n 3. Click the "Enrol Now" button.\n 4. Complete the registration form with all the required details.\n 5. Submit the form and proceed to make the payment for the course.\n 6. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey',
             },
           ],
         },
@@ -1632,17 +1569,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Cyber Security With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/CS-explore.webp",
           contentText:
@@ -1667,7 +1597,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -1681,7 +1612,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -1770,7 +1702,206 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+
+        DedenceToolBoxData: {
+          sideHeading: "Dedence Tool Box ",
+          contentHeading: "Dedence Tool Box",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
+          DedenceToolBoxContainer: [
+            {
+              Heading: "Email Forensics",
+              PassageTop:
+                "Email forensics involves the process of collecting, analysing, and interpreting electronic mail messages and metadata as evidence in legal or investigative matters.",
+              PassageBottom:
+                "By following a systematic and rigorous process, email forensic experts can uncover evidence that can be used in court or to improve the security posture of an organisation.",
+              Points: {
+                "The key steps in email forensics include:": [
+                  "The key steps in email forensics include identification, collection, analysis, interpretation, and reporting",
+                  "It is an essential tool for investigating criminal or fraudulent activities, data breaches, harassment, or other workplace violations involving email messages.",
+                ],
+              },
+            },
+            {
+              Heading: "John The Ripper",
+              PassageTop:
+                "John the Ripper is a popular open-source password cracking tool that is commonly used by security professionals and hackers alike. It was originally developed for Unix-based systems but has since been ported to a variety of platforms, including Windows and MacOS. The tool uses a various attack methods to crack passwords, including dictionary attacks, brute-force attacks, and hybrid attacks.",
+              Points: [
+                "John the Ripper can leverage various types of password-cracking techniques, such as rainbow tables, which can greatly increase its speed and efficiency",
+                "One of the key features of John the Ripper is its ability to detect weak passwords and provide recommendations for stronger ones",
+                "It can also be used to audit password policies and identify vulnerabilities in systems and applications",
+              ],
+            },
+            {
+              Heading: "KeePass",
+              PassageTop:
+                "KeePass is a popular open-source password manager that allows users to store and manage their passwords in a secure and organised manner. It is available for Windows, MacOS, Linux, and mobile platforms. The tool uses strong encryption algorithms to protect users' passwords, ensuring that they are secure even in the event of a data breach. KeePass also offers several additional security features, such as two-factor authentication, a master password, ability to lock the database after a set period of inactivity. \n KeePass allows users to store various types of information, including usernames, passwords, and website URLs. In addition, users can create custom fields to store additional information, such as security questions and answers.",
+              PassageBottom:
+                "Overall, KeePass is a powerful and secure password manager that provides users with an easy way to manage their passwords and keep them safe from cyber threats.",
+              Points: [
+                "One of the key advantages of KeePass is its flexibility and customisation options.",
+                "Users can create and manage multiple password databases, each with its own unique settings and password requirements.",
+                "The tool also offers a range of plugins and integrations that allow users to customise their experience even further",
+              ],
+            },
+            {
+              Heading: "VeraCrypt",
+              PassageTop:
+                "VeraCrypt is a popular open-source disk encryption tool that allows users to encrypt and protect their data stored on a computer or external drive. It is available for Windows, MacOS, and Linux. The tool uses strong encryption algorithms such as AES, Serpent, and Twofish to ensure that users' data is secure from unauthorised access, theft, and hacking attempts.",
+              PassageBottom:
+                "VeraCrypt can be used to encrypt an entire hard drive, a partition, or a removable storage device such as a USB drive. Overall, VeraCrypt is a powerful and reliable encryption tool that provides users with robust protection for their data",
+              Points: {
+                "VeraCrypt also offers several advanced security features, such as":
+                  [
+                    "Hidden volumes,",
+                    "Deniable encryption, and",
+                    "Keyfile support, which provides users with added protection against brute-force attacks and other types of threats.",
+                  ],
+              },
+            },
+            {
+              Heading: "Burpsuite",
+              PassageTop:
+                "Burp Suite is a popular web application security testing tool used by security professionals, ethical hackers, and penetration testers. It is designed to identify vulnerabilities and security issues in web applications, including Cross-Site Scripting (XSS), SQL injection, and session hijacking. Burp Suite offers a range of features and tools to help users identify and exploit vulnerabilities in web applications.",
+              PassageBottom:
+                "Overall, Burp Suite is a powerful and comprehensive web application security testing tool that provides users with a range of features and tools to identify and remediate vulnerabilities in web applications.",
+              Points: [
+                "Its proxy server intercepts all web traffic, allowing users to inspect and modify HTTP requests and responses.",
+                "Its scanner identifies common web application vulnerabilities and provides detailed reports and recommendations for remediation.",
+                "In addition to its scanning and proxy features, Burp Suite also offers a range of tools for advanced penetration testing and vulnerability research, including a repeater, intruder, and sequencer.",
+                "It offers a wide range of plugins and extensions, allowing users to tailor the tool to their specific needs and preferences.",
+                "It also provides integration with other tools and platforms, including popular vulnerability scanners and security frameworks.",
+              ],
+            },
+            {
+              Heading: "Nikto",
+              PassageTop:
+                "Nikto is an open-source web server scanner that helps security professionals identify and remediate vulnerabilities in web servers and applications. It is designed to test web servers for common vulnerabilities, such as outdated software versions, misconfigured server settings, and known vulnerabilities. In addition, Nikto offers a range of features and tools to help users identify and exploit vulnerabilities in web servers",
+              PassageBottom:
+                "Overall, Nikto is a powerful and comprehensive web server scanner that provides users with a range of features and tools to identify and remediate vulnerabilities in web servers and applications.",
+              Points: [
+                "It can scan multiple web servers simultaneously, allowing users to identify vulnerabilities across their entire infrastructure.",
+                "It also provides detailed reports on the vulnerabilities it finds, including recommendations for remediation.",
+                "It offers a simple and intuitive interface allowing users to configure and run scans quickly and easily.",
+                "It also provides detailed documentation and tutorials to help users get started and make the most of its features.",
+                "In addition to its scanning features, Nikto offers a range of customisation options and plugins, allowing users to tailor the tool to their specific needs and preferences.",
+                "It also integrates with other security tools and platforms, making it a valuable addition to any security toolkit.",
+              ],
+            },
+            {
+              Heading: "OWASP",
+              PassageTop:
+                "OWASP (Open Web Application Security Project) is a non-profit organisation dedicated to improving the security of software and web applications. It is a community-driven organisation providing tools, resources, and guidelines to help developers and security professionals build secure applications and protect against common web application vulnerabilities. OWASP offers a range of resources and tools to help organisations improve their application security posture.",
+              PassageBottom:
+                "Overall, OWASP is a valuable resource for developers and security professionals looking to improve the security of their software and web applications.",
+              Points: [
+                "Its flagship project, the OWASP Top 10, identifies the top 10 most critical web application security risks, including injection attacks, cross-site scripting, broken authentication and session management.",
+                "The organisation also offers a range of guides, tools, and best practices to help developers and security professionals mitigate these risks and protect their applications.",
+                "In addition to its educational and awareness-raising efforts, OWASP also supports a number of software security projects, including web application security scanners, vulnerability scanners, and security testing frameworks",
+                "These projects are open source and community-driven, providing users with free and reliable security tools that can help them improve their security posture.",
+              ],
+            },
+
+            {
+              Heading: "Wireshark",
+              PassageTop:
+                "Wireshark is a popular open-source network protocol analyser that allows users to capture and analyse network traffic in real-time. It is used by security professionals, network administrators, and developers to troubleshoot network issues, identify security threats, and optimise network performance.",
+              PassageBottom:
+                "One of the key advantages of Wireshark is its versatility and customisation options. Overall, Wireshark is a powerful and comprehensive network protocol analyser that provides users with a range of features and tools to analyse network traffic, identify security threats, and optimise network performance.",
+              Points: [
+                "Wireshark offers a range of features and tools to help users analyse network traffic",
+                "Ethernet, Wi-Fi, and Bluetooth are just a few of the network interfaces whose traffic its packet capture engine may record.",
+                "It can decode and analyse a wide range of network protocols, including TCP/IP, HTTP, DNS, and SSL/TLS. It also offers a powerful filtering engine, allowing users to focus on specific packets or protocols of interest.",
+                "Additionally, it offers integration with other tools and platforms, such as network vulnerability scanners and intrusion detection systems.",
+                "Wireshark includes a variety of statistics and visualisation tools alongside its packet analysis features to aid users in understanding network traffic patterns and optimising network efficiency.",
+                "Its powerful scripting engine allows users to automate and customise their analysis, making it more efficient and effective.",
+              ],
+            },
+            {
+              Heading: "Nmap",
+              PassageTop:
+                "Nmap (Network Mapper) is a popular open-source network scanning tool that allows users to discover hosts and services on a network, identify security vulnerabilities, and map network architecture. It is used by security professionals, network administrators, and developers to secure their networks and optimise network performance. \n Its powerful scanning engine can detect hosts and services on a wide range of network protocols, including TCP, UDP, and ICMP. It can also perform a range of scanning techniques, including ping scans, port scans, and OS detection. One of the key advantages of Nmap is its versatility and customisation options. ",
+              PassageBottom:
+                "Overall, Nmap is a powerful and comprehensive network scanning tool that provides users with a range of features and tools to discover hosts and services on a network, identify security vulnerabilities and map network architecture.",
+              Points: [
+                "It offers a wide range of scanning options and configuration parameters, allowing users to tailor the tool to their specific needs and preferences.",
+                "It also provides integration with other tools and platforms, including network vulnerability scanners and intrusion detection systems.",
+                "In addition to its scanning features, Nmap also offers a range of scripting and automation options, allowing users to automate their scanning and analysis tasks and integrate with other tools and platforms.",
+                "Its powerful reporting engine allows users to generate detailed reports on their network scans and analysis, making identifying and remediating security vulnerabilities easier.",
+              ],
+            },
+            {
+              Heading: "inSSIDer",
+              PassageTop:
+                "inSSIDer is a popular Windows-based wireless network scanner that allows users to discover and analyse wireless networks in their vicinity. It is used by security professionals, network administrators, and wireless network enthusiasts to troubleshoot wireless network issues, optimise wireless network performance, and identify security vulnerabilities. inSSIDer offers a range of features and tools to help users analyse wireless networks.",
+              PassageBottom:
+                "Overall, inSSIDer is a powerful and comprehensive wireless network scanner that provides users with a range of features and tools to analyse wireless networks, troubleshoot network issues, and optimise network performance.",
+              Points: [
+                "Its wireless network scanner can detect and display information on wireless networks, including inSSIDer, signal strength, encryption type, and channel.",
+                "It can also perform a range of scanning techniques, including active scanning, passive scanning, and war driving.",
+                "One of the key advantages of inSSIDer is its ease of use and user-friendly interface.",
+                "It provides clear and concise information on wireless networks, making it easy for users to understand and analyse their wireless network environment.",
+                "Additionally, a variety of customisation options are provided, enabling users to tailor the tool to meet their specific needs and preferences.",
+                "inSSIDer includes a variety of statistics and visualisation tools as well to its scanning features that help users in comprehend wireless network traffic patterns and enhance network efficiency.",
+              ],
+            },
+            {
+              Heading: "Tor",
+              PassageTop:
+                "Tor (The Onion Router) is a free and open-source network protocol that allows users to browse the internet anonymously. It is used by individuals and organisations to protect their privacy, avoid censorship and surveillance, and access content that may be restricted in their location. Tor works by routing internet traffic through a network of volunteer-operated servers known as nodes or relays. Each relay in the network only knows the IP address of the previous and next relays in the chain, creating multiple layers of encryption and making it difficult for anyone to trace the source of the traffic.",
+              PassageBottom:
+                "Overall, Tor is a powerful and versatile tool that provides users with a range of features and tools to protect their privacy and security online.",
+              Points: [
+                "One of the key advantages of Tor is its ability to protect user privacy & anonymity.",
+                "By encrypting internet traffic and routing it through multiple relays, Tor makes it difficult for anyone to monitor or track user activity.",
+                "It also allows users to access content that may be blocked or censored in their location, such as social media, news sites, and messaging apps.",
+                "In addition to its anonymity features, Tor also offers a range of security and privacy tools, including a built-in web browser, support for end-to-end encryption, and protection against common internet threats, such as malware and phishing attacks.",
+              ],
+            },
+            {
+              Heading: "Aircrack-NG",
+              PassageTop:
+                "Aircrack-NG is a popular open-source network security tool that is used for testing and analysing wireless networks. It is used by security professionals, network administrators, and penetration testers to test the security of wireless networks, identify vulnerabilities, and perform network audits. Aircrack-ng offers a range of features and tools to help users analyse wireless networks. Its wireless network scanner can detect and display information on wireless networks, including SSID, signal strength, encryption type, and channel. Aircrack-NG can perform a range of scanning techniques, including active scanning and passive scanning.",
+              PassageBottom:
+                "Overall, Aircrack-ng is a powerful and comprehensive wireless network security tool that provides users with a range of features and tools to analyse and test wireless networks.",
+              Points: [
+                "Its ability to perform wireless network cracking and analysis.",
+                "It can crack WEP and WPA-PSK encryption on wireless networks and capture network traffic for further analysis.",
+                "It offers a range of customisation options, allowing users to tailor the tool to their specific needs and preferences.",
+                "In addition to its cracking and analysis features, Aircrack-ng also offers a range of scripting and automation options, allowing users to automate their scanning and analysis tasks and integrate with other tools and platforms",
+              ],
+            },
+            {
+              Heading: "Splunk",
+              PassageTop:
+                "Splunk is a powerful and versatile data analysis platform used by organisations to collect, analyse, and visualise large amounts of machine-generated data in real-time. It is used by security professionals, IT administrators, and business analysts to gain insights into their systems, applications, and processes and to detect and remediate security threats and performance issues. One of the key advantages of Splunk is its ability to collect and analyse data from a wide range of sources, including servers, applications, network devices, and security systems.",
+              PassageBottom:
+                "Overall, Splunk is a powerful and comprehensive data analysis platform that provides organisations with a range of features and tools to monitor and analyse their systems, applications, and processes.",
+              Points: [
+                "It provides a centralised platform for organisations to monitor and analyse data in real-time, making it easier to detect and remediate issues as they arise.",
+                "Splunk also offers a range of advanced analytics and visualisation tools, allowing users to gain insights into their data and identify trends and patterns.",
+                "Its machine learning and artificial intelligence capabilities enable it to identify anomalies and threats automatically, making it easier for organisations to detect and respond to security threats quickly.",
+                "In addition to its data analysis and visualisation features, Splunk also offers a range of integration options, allowing users to integrate with other tools and platforms, such as security information and event management (SIEM) systems, cloud platforms, and IT service management (ITSM) tools. This makes it easier for organisations to streamline their operations and improve their overall security posture.",
+              ],
+            },
+            {
+              Heading: "Wazuh – SIEM",
+              PassageTop:
+                "Wazuh is an open-source security information and event management (SIEM) platform that provides organisations with a comprehensive set of tools to monitor and analyse security events across their network. It is used by security professionals and IT administrators to detect and respond to security threats in real-time and to improve the overall security posture of their organisation. One of the key advantages of Wazuh is its ability to collect, monitor, and analyse security events from a wide range of sources, including servers, network devices, and cloud platforms.",
+              PassageBottom:
+                "Overall, Wazuh is a comprehensive and powerful open-source SIEM platform that provides organisations with a range of features and tools to monitor and analyse security events across their network.",
+              Points: [
+                "Wazuh offers a range of compliance and regulatory compliance features, allowing organisations to monitor and enforce security policies and regulatory requirements, such as PCI DSS, HIPAA, and GDPR.",
+                "Its powerful reporting and visualisation tools allow organisations to generate detailed reports on security events and compliance status, making it easier to demonstrate compliance to auditors and stakeholders.",
+                "In addition to its SIEM features, Wazuh also offers a range of intrusion detection and prevention (IDS/IPS) capabilities, allowing organisations to detect and respond to known and unknown threats in real-time.",
+                "Its integration options with other security tools and platforms, such as endpoint detection and response (EDR) tools and vulnerability scanners, make it easier for organisations to streamline their security operations and improve their overall security posture",
+              ],
+            },
+          ],
+        },
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -1903,7 +2034,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Cyber Security Course?",
               answer:
-                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button.\n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+                'To enrol in the Digital Regenesys’s Cyber Security Course, follow these steps:\n \n 1. Visit the official website @ <a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n 2. Navigate to the course page.\n 3. Select the required course. \n 4. Click the "Enrol Now" button.\n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey',
             },
           ],
         },
@@ -2036,17 +2167,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Design Thinking With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DT-explore.webp",
           contentText:
@@ -2071,7 +2195,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -2092,7 +2217,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -2172,7 +2298,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -2295,7 +2422,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys Design Thinking Course?",
               answer:
-                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enrol Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.",
+                "To enrol in Digital Regenesys’s Design Thinking Course, follow these steps: \n\n 1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a>  \n 2. Navigate to the course page. \n 3. Select the required course. \n 4. Click the 'Enrol Now' button. \n 5. Complete the registration form with all the required details. \n 6. Submit the form and proceed to make the payment for the course. \n 7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey",
             },
           ],
         },
@@ -2427,17 +2554,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore the world of Full Stack Development With Us",
       bigHeading: "Everything You Need to Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/FSD-explore.webp",
           contentText:
@@ -2461,7 +2581,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "FDS/chatGpt.svg", alt: "" },
@@ -2475,7 +2596,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -2503,7 +2625,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -2608,7 +2731,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -2900,17 +3024,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Data And Business Analytics With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DBA-explore.webp",
           contentText:
@@ -2934,7 +3051,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DBA/DSA_power-bi.png", alt: "" },
@@ -2946,7 +3064,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -2974,7 +3093,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -3005,7 +3125,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -3302,16 +3423,10 @@ const MainCoursesDynimicData = {
       smallHeading:
         "Explore The World Of Management Advancement Programme With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/MD-explore.webp",
           contentText:
@@ -3335,7 +3450,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "MD/DSA_chatGpt.png", alt: "" },
@@ -3346,7 +3462,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        // content3: {
+        //   WorldClassFacultyData: {
+        sideHeading: "World Class Faculty",
         //   contentHeading: "World Class Faculty",
         //   tutors: "50+ Tutors",
         //   facultyCard: [
@@ -3361,7 +3478,8 @@ const MainCoursesDynimicData = {
         //   ],
         // },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -3458,7 +3576,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -3730,16 +3849,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Product Management With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/PDM-explore.png",
           contentText:
@@ -3763,7 +3876,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "PDM/PDM-tool-1.webp", alt: "" },
@@ -3775,7 +3889,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        // content3: {
+        //   WorldClassFacultyData: {
+        sideHeading: "World Class Faculty",
         //   contentHeading: "World Class Faculty",
         //   tutors: "50+ Tutors",
         //   facultyCard: [
@@ -3790,7 +3905,8 @@ const MainCoursesDynimicData = {
         //   ],
         // },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -3826,7 +3942,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",

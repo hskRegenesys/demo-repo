@@ -1,7 +1,10 @@
+// CourseCurriculum.js
+
 import React, { useState } from "react";
 import styles from "../exploreTheCourses.module.css";
 import Image from "next/image";
-interface Content5Props {
+
+interface CourseCurriculumProps {
   contentHeading: string;
   durationIcon: string;
   tickIcon: string;
@@ -12,7 +15,7 @@ interface Content5Props {
   }[];
 }
 
-const Content5: React.FC<Content5Props> = ({
+const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
   contentHeading,
   durationIcon,
   tickIcon,
@@ -48,7 +51,7 @@ const Content5: React.FC<Content5Props> = ({
                   width={24}
                   height={24}
                 />
-                <span>{week.weekHeading}</span>
+                <span className={styles.weekPointText}>{week.weekHeading}</span>
               </div>
               <Image
                 src={`${imageUrl}${dropDown}`}
@@ -71,7 +74,7 @@ const Content5: React.FC<Content5Props> = ({
                           width={20}
                           height={20}
                         />
-                        <span>{value}</span>
+                        <span className={styles.weekPointText}>{value}</span>
                       </li>
                     ))}
                   </ul>
@@ -109,4 +112,4 @@ const Content5: React.FC<Content5Props> = ({
   );
 };
 
-export default Content5;
+export default CourseCurriculum;

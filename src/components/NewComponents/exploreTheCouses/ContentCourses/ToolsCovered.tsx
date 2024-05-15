@@ -1,14 +1,20 @@
+// ToolsCovered.js
+
 import React from "react";
 import styles from "../exploreTheCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
-interface Content2Props {
+
+interface ToolsCoveredProps {
   contentHeading: string;
   cardTools: { img: string; alt: string }[];
 }
 
-const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
+const ToolsCovered: React.FC<ToolsCoveredProps> = ({
+  contentHeading,
+  cardTools,
+}) => {
   const addBottomValue = cardTools.length <= 4 ? "0px" : "60px";
   const imageUrl = `${process.env.awsImage_url}`;
 
@@ -42,7 +48,6 @@ const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
               <li key={index} className={styles.horizontalCard}>
                 <Image
                   src={`${imageUrl}Images/Tools/${tool.img}`}
-                  // src={`/assets/images/clients/${tool.img}`}
                   alt={tool.alt}
                   className={styles.toolImage}
                   width={144}
@@ -57,4 +62,4 @@ const Content2: React.FC<Content2Props> = ({ contentHeading, cardTools }) => {
   );
 };
 
-export default Content2;
+export default ToolsCovered;
