@@ -1,7 +1,7 @@
 const AllCourcesCardData = {
   // Featured Courses
   FeaturedCoursesHeading: "Featured Courses",
-  FeaturedCoursesSubHeading: "See what you can learn with us!",
+  FeaturedCoursesSubHeading: "Courses For All Your Interests",
   cardTimeIcon: "Icons/clock.svg",
   cardStudentsIcon: "Icons/user-tick.svg",
   cardBookIcon: "Icons/book.svg",
@@ -14,7 +14,7 @@ const AllCourcesCardData = {
   RelatedCoursesTitle: "Related Courses",
 
   allCoursesSliderHeading: "All Courses",
-  allCoursesSliderSubHeading: "Explore Our Courses",
+  allCoursesSliderSubHeading: "Find Your Suitable Course",
 
   Courses: {
     DataScience: {

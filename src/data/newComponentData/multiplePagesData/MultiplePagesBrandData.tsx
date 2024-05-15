@@ -97,20 +97,19 @@ const MultiplePagesBrandData = {
         heading: "Online Courses",
         faqs: [
           {
-            question: "What Are Online Courses?",
+            question: "What are online courses?",
             answer:
-              "Online courses are educational courses delivered over the Internet, allowing students to access lectures, assignments, and resources remotely.",
+              "Online courses are educational programmes delivered over the Internet, allowing learners to access content, participate in discussions, and complete assignments remotely. They provide flexibility in learning, enabling individuals to study at their own pace and from any location with internet access.",
           },
           {
-            question: "How Do Online Courses Work?",
+            question: "Can I get a certification through Online Courses?",
             answer:
-              "Online courses deliver content through a learning management system (LMS). Learners can access course materials, participate in discussions, submit assignments, and take exams online.",
+              "Yes, Digital Regenesys online courses offer certificates of completion.",
           },
           {
-            question:
-              "What Types of Online Courses Are Available at Digital Regenesys?",
+            question: "What are the benefits of taking online courses?",
             answer:
-              "Digital Regenesys offers various career-transforming, skill-enhancing and cutting-edge online courses across various digital domains. These online courses include data science, project management, cybersecurity, full-stack development, and data and business analytics.",
+              "Online courses offer flexibility, allowing learners to balance their studies with work, family, or other commitments. They provide access to a wide range of subjects and instructors from around the world.",
           },
         ],
       },
@@ -118,20 +117,20 @@ const MultiplePagesBrandData = {
         heading: "Online Certification Courses",
         faqs: [
           {
+            question: "What types of courses does Digital Regenesys offer?",
+            answer:
+              "Digital Regenesys offers courses in various digital fields such as - Data Science, Project Management, Cybersecurity, Artificial Intelligence, Full Stack Web & Software Development, Data & Business Analytics, Management Advancement and Product Management.",
+          },
+          {
+            question: "How long do the courses typically last?",
+            answer:
+              "The duration of our online certification courses varies depending on the subject matter and level of complexity. Some courses may be completed in a few weeks, while others may span several months. Each course outline specifies the duration and time commitment required.",
+          },
+          {
             question:
-              "Is Accreditation Required for Online Certification Courses?",
+              "How do I enrol in Digital Regeneys’s Certification course?",
             answer:
-              "Accreditation is essential for all online courses as it ensures the quality and recognition of the education. Accreditation varies depending on the institution or platform offering the course.",
-          },
-          {
-            question: "Can I Get a Certification Through Online Courses?",
-            answer:
-              "Yes, Digital Regenesys online courses offer certificates of completion.",
-          },
-          {
-            question: "Do Employers Recognise Online Courses?",
-            answer:
-              "Courses from reputable institutions and platforms are often recognised by employers. However, it's crucial to verify the credibility of the course provider and its accreditation status.",
+              "To enrol in a course, simply visit our website, browse our available courses, and select the course you're interested in. Then follow the procedure, pay the fees and be part of Digital Regenesys’s successful community.",
           },
         ],
       },
@@ -146,9 +145,9 @@ const MultiplePagesBrandData = {
           },
           {
             question:
-              "How do I enrol and register for the Digital Regenesys online course?",
+              "How do I enrol and register for the Digital Regenesys online courses?",
             answer:
-              'To enrol in the Digital Regenesys online course, follow these steps: \n \n 1. Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n  2. Navigate to the course page.  \n   3. Select the required course  \n  4. Click on the "Enrol Now" button  \n  5. Complete the registration form with all the required details.  \n  6. Submit the form and proceed to make the payment for the course.  \n  7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
+              'To enrol in the Digital Regenesys online courses, follow these steps: \n \n 1. Visit the official website @<a href="https://www.digitalregenesys.com/">https://www.digitalregenesys.com/</a> \n  2. Navigate to the course page.  \n   3. Select the required course  \n  4. Click on the "Enrol Now" button  \n  5. Complete the registration form with all the required details.  \n  6. Submit the form and proceed to make the payment for the course.  \n  7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course materials and beginning your online learning journey.',
           },
           {
             question:
@@ -174,9 +173,9 @@ const MultiplePagesBrandData = {
               "Yes. Once you successfully register for the online course, you will be eligible to download the required learning materials.",
           },
           {
-            question: "How are Exams Conducted in Online Courses?",
+            question: "How are exams conducted in online courses?",
             answer:
-              "Exams in online courses can be administered through various methods, including online quizzes, proctored exams, or assignments. Some online courses may also require in-person exams at designated locations.",
+              "Exams in online courses can be administered through various methods, including online quizzes, proctored exams, or assignments.",
           },
         ],
       },
@@ -184,17 +183,17 @@ const MultiplePagesBrandData = {
         heading: "Duration and Accessibility",
         faqs: [
           {
-            question: "How Long Does it Take to Complete an Online Course?",
+            question: "How long does it take to complete an online course?",
             answer:
               "The duration of online courses varies based on the course type and content. Some courses can be completed in a few weeks, while others may span several months. Self-paced courses allow flexibility in completion time.",
           },
           {
-            question: "Are Digital Regenesys Online Courses Self-Paced?",
+            question: "Are Digital Regenesys online courses self-paced?",
             answer:
-              "Digital Regenesys offers self-paced learning, allowing learners to progress through the material at their speed. However, some courses may have set deadlines for assignments and exams.",
+              "Digital Regenesys offers self-paced learning, allowing learners to progress through the material at their own speed. However, some courses may have set deadlines for assignments and exams.",
           },
           {
-            question: "Can I Take Online Courses from Anywhere in the World?",
+            question: "Can I take online courses from anywhere in the world?",
             answer:
               "Yes. One of the advantages of online courses is the ability to access them from anywhere with an internet connection. This global accessibility is a crucial benefit for learners around the world.",
           },
