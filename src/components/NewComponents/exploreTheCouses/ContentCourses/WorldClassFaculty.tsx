@@ -1,9 +1,11 @@
-// Content3.js
+// WorldClassFaculty.js
+
 import React from "react";
 import styles from "../exploreTheCourses.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
+
 interface FacultyCard {
   facultyImg: string;
   facultyName: string;
@@ -12,13 +14,13 @@ interface FacultyCard {
   yearsOfExperience: string;
 }
 
-interface Content3Props {
+interface WorldClassFacultyProps {
   contentHeading: string;
   tutors: string;
   facultyCard: FacultyCard[];
 }
 
-const Content3: React.FC<Content3Props> = ({
+const WorldClassFaculty: React.FC<WorldClassFacultyProps> = ({
   contentHeading,
   tutors,
   facultyCard,
@@ -57,7 +59,6 @@ const Content3: React.FC<Content3Props> = ({
                 <div className={styles.CardImg}>
                   <Image
                     src={`${imageUrl}${faculty.facultyImg}`}
-                    // src={faculty.facultyImg}
                     alt={faculty.facultyName}
                     title={faculty.facultyName}
                     width={88}
@@ -70,7 +71,6 @@ const Content3: React.FC<Content3Props> = ({
                     {faculty.facultyEducation}
                   </p>
                 )}
-                {/* <p className={styles.courseName}>{faculty.courseName}</p> */}
                 {faculty.yearsOfExperience ? (
                   <p className={styles.yearsOfExperience}>
                     <span>{faculty.yearsOfExperience} </span>Years of Experience{" "}
@@ -85,4 +85,4 @@ const Content3: React.FC<Content3Props> = ({
   );
 };
 
-export default Content3;
+export default WorldClassFaculty;

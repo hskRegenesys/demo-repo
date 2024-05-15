@@ -1,20 +1,18 @@
-// Content4.js
 import React from "react";
 import styles from "../exploreTheCourses.module.css";
 import Image from "next/image";
+
 interface LevelCard {
   courseName: string;
   frameImg: string;
   tickIcon: string;
   list: string[];
 }
-
-interface Content4Props {
+interface LevelCardProps {
   contentHeading: string;
   LevelCard: LevelCard[];
 }
-
-const Content4: React.FC<Content4Props> = ({ contentHeading, LevelCard }) => {
+const LevelCard: React.FC<LevelCardProps> = ({ contentHeading, LevelCard }) => {
   return (
     <div className={`${styles.content4} ${styles.content}`}>
       <h3>{contentHeading}</h3>
@@ -50,14 +48,13 @@ const Content4: React.FC<Content4Props> = ({ contentHeading, LevelCard }) => {
               </ul>
             </div>
             {/* Buttons
-            <div className={styles.buttonsContainer}>
-              <button className={styles.learnMoreButton}>Learn More</button>
-            </div> */}
+                    <div className={styles.buttonsContainer}>
+                      <button className={styles.learnMoreButton}>Learn More</button>
+                    </div> */}
           </div>
         ))}
       </div>
     </div>
   );
 };
-
-export default Content4;
+export default LevelCard;

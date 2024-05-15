@@ -54,122 +54,22 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Data Science With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DS-explore.webp",
           contentText:
             "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
-
           contentCard: [
-            {
-              icon: "Icons/Live Call.svg",
-              text: "Live Classes",
-            },
-            {
-              icon: "Icons/Award.svg",
-              text: "International Certificate",
-            },
-            {
-              icon: "Icons/Counselling.svg",
-              text: "Industry Expert Faculty",
-            },
-            {
-              icon: "Icons/Experts.svg",
-              text: "Career Counselling",
-            },
+            { icon: "Icons/Live Call.svg", text: "Live Classes" },
+            { icon: "Icons/Award.svg", text: "International Certificate" },
+            { icon: "Icons/Counselling.svg", text: "Industry Expert Faculty" },
+            { icon: "Icons/Experts.svg", text: "Career Counselling" },
           ],
         },
-        content2: {
-          contentHeading: "Tools Covered In This Course",
-          cardTools: [
-            { img: "DS/tools_covered3.png", alt: "" },
-            { img: "DS/tools_covered4.png", alt: "" },
-            { img: "DS/tools_covered1.png", alt: "" },
-            { img: "DS/tools_covered5.png", alt: "" },
-            { img: "DS/tools_covered6.png", alt: "" },
-            { img: "DS/tools_covered7.png", alt: "" },
-            { img: "DS/tools_covered2.png", alt: "" },
-            { img: "DS/tools_covered8.png", alt: "" },
-            { img: "DS/tools_covered9.png", alt: "" },
-            { img: "DS/tools_covered10.png", alt: "" },
-            { img: "DS/tools_covered11.png", alt: "" },
-            { img: "DS/tools_covered12.png", alt: "" },
-          ],
-        },
-        content3: {
-          contentHeading: "World Class Faculty",
-          tutors: "50+ Tutors",
-          facultyCard: [
-            {
-              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-              facultyName: "Dr. Nilay Karade",
-              facultyEducation: "Ph.D. in Computer Science",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "11+ ",
-            },
-            {
-              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "Head of Academics",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "20+ ",
-            },
-            {
-              facultyImg: "Images/Faculty/Samidha_Photo.webp",
-              facultyName: "Samidha Kurle",
-              facultyEducation: "Ph.D. in Computer Engineering",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "10+ ",
-            },
-          ],
-        },
-
-        // content5: {
-        //   contentHeading: "Course Curriculum",
-        //   durationIcon: "Icons/clock-green.svg",
-        //   tickIcon: "Icons/Check.svg",
-        //   dropDown: "Icons/arrow_drop_down.svg",
-        //   curriculumContainer: [
-        //     {
-        //       weekHeading: "Week1",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //     {
-        //       weekHeading: "Week2",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //     {
-        //       weekHeading: "Week3",
-        //       weekPoints: [
-        //         "Cyber security fundamentals",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //         "Security policies and procedures",
-        //       ],
-        //     },
-        //   ],
-        // },
-
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -215,8 +115,55 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
-          ContentHeding: "Pricing Across The Countries",
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
+          contentHeading: "World Class Faculty",
+          tutors: "50+ Tutors",
+          facultyCard: [
+            {
+              facultyImg: "Images/Faculty/dr_nilay_profile.webp",
+              facultyName: "Dr. Nilay Karade",
+              facultyEducation: "Ph.D. in Computer Science",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "11+ ",
+            },
+            {
+              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
+              facultyName: "Dr. Shilpa Joshi",
+              facultyEducation: "Head of Academics",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "20+ ",
+            },
+            {
+              facultyImg: "Images/Faculty/Samidha_Photo.webp",
+              facultyName: "Samidha Kurle",
+              facultyEducation: "Ph.D. in Computer Engineering",
+              courseName: "Senior Lecturer",
+              yearsOfExperience: "10+ ",
+            },
+          ],
+        },
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
+          contentHeading: "Tools Covered In This Course",
+          cardTools: [
+            { img: "DS/tools_covered3.png", alt: "" },
+            { img: "DS/tools_covered4.png", alt: "" },
+            { img: "DS/tools_covered1.png", alt: "" },
+            { img: "DS/tools_covered5.png", alt: "" },
+            { img: "DS/tools_covered6.png", alt: "" },
+            { img: "DS/tools_covered7.png", alt: "" },
+            { img: "DS/tools_covered2.png", alt: "" },
+            { img: "DS/tools_covered8.png", alt: "" },
+            { img: "DS/tools_covered9.png", alt: "" },
+            { img: "DS/tools_covered10.png", alt: "" },
+            { img: "DS/tools_covered11.png", alt: "" },
+            { img: "DS/tools_covered12.png", alt: "" },
+          ],
+        },
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
+          contentHeading: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
@@ -229,7 +176,6 @@ const MainCoursesDynimicData = {
             },
             {
               contaryFlag: "Icons/India.svg",
-
               contaryName: "India",
               price: "₹ 242,694 + GST",
               duration: "30 weeks",
@@ -478,17 +424,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Digital Marketing With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DM-explore.webp",
           contentText:
@@ -512,7 +451,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DM/digital_marketing_tools1.png", alt: "" },
@@ -533,7 +473,8 @@ const MainCoursesDynimicData = {
             // { img: "DM/digital_marketing_tools16.png", alt: "" },
           ],
         },
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -554,8 +495,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        // content5: {
-        //   contentHeading: "Course Curriculum",
+        // CourseCurriculumData: {
+        //   sideHeading: "Course Curriculum",        //   contentHeading: "Course Curriculum",
         //   durationIcon: "Icons/clock-green.svg",
         //   tickIcon: "Icons/Check.svg",
         //   dropDown: "Icons/arrow_drop_down.svg",
@@ -590,7 +531,8 @@ const MainCoursesDynimicData = {
         //   ],
         // },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -633,7 +575,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -890,17 +833,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore the World of Project Management With Us",
       bigHeading: "Everything You Need to Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/PM-explore.webp",
           contentText:
@@ -924,7 +860,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "PM/project-management-tools1.png", alt: "" },
@@ -933,7 +870,8 @@ const MainCoursesDynimicData = {
             { img: "PM/project-management-tools4.png", alt: "" },
           ],
         },
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -954,7 +892,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -1009,7 +948,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -1274,16 +1214,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore the World of Artificial Intelligence With Us",
       bigHeading: "Everything You Need to Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/AI-explore.webp",
           contentText:
@@ -1308,7 +1242,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -1336,7 +1271,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -1369,7 +1305,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -1632,17 +1569,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Cyber Security With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/CS-explore.webp",
           contentText:
@@ -1667,7 +1597,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -1681,7 +1612,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -1770,7 +1702,56 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+
+        DedenceToolBoxData: {
+          sideHeading: "Dedence Tool Box",
+          contentHeading: "Dedence Tool Box",
+          durationIcon: "Icons/clock-green.svg",
+          tickIcon: "Icons/Check.svg",
+          dropDown: "Icons/arrow_drop_down.svg",
+          curriculumContainer: [
+            {
+              weekHeading: "Basic Data Science",
+              weekPoints: {
+                "General Modules": ["Python Programming", "MySQL (DBMS)"],
+                "Complimentary Modules": [
+                  "Math for Data Science",
+                  "Excel",
+                  "ChatGPT Helping Data Scientists Big on their Day-To-Day Life",
+                ],
+                "Add-on Modules": ["R-Programming Language", "MongoDB (DBMS)"],
+                "Business Intelligence Tools": ["Power-BI", "Tableau"],
+              },
+            },
+            {
+              weekHeading: "Advanced Data Science",
+              weekPoints: {
+                "General Modules": [
+                  "Machine Learning & Artificial Intelligence",
+                  "Deep Learning",
+                  "Web development with Flask, Streamlit",
+                ],
+                "Add-on Modules": [
+                  "Natural Language Processing",
+                  "Computer Vision",
+                  "Time Series Analysis and Forecasting",
+                ],
+              },
+            },
+            {
+              weekHeading: "Applied Data Science",
+              weekPoints: {
+                "": [
+                  "AWS Cloud Computing",
+                  "Big Data - PySpark+Kafka",
+                  "ML Ops",
+                ],
+              },
+            },
+          ],
+        },
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -2036,17 +2017,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Design Thinking With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DT-explore.webp",
           contentText:
@@ -2071,7 +2045,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -2092,7 +2067,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -2172,7 +2148,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -2427,17 +2404,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore the world of Full Stack Development With Us",
       bigHeading: "Everything You Need to Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/FSD-explore.webp",
           contentText:
@@ -2461,7 +2431,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "FDS/chatGpt.svg", alt: "" },
@@ -2475,7 +2446,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -2503,7 +2475,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -2608,7 +2581,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -2900,17 +2874,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Data And Business Analytics With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "World Class Faculty", contentId: "content4" },
-        { text: "", contentId: "content5" },
 
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/DBA-explore.webp",
           contentText:
@@ -2934,7 +2901,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "DBA/DSA_power-bi.png", alt: "" },
@@ -2946,7 +2914,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content3: {
+        WorldClassFacultyData: {
+          sideHeading: "World Class Faculty",
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
@@ -2974,7 +2943,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -3005,7 +2975,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -3302,16 +3273,10 @@ const MainCoursesDynimicData = {
       smallHeading:
         "Explore The World Of Management Advancement Programme With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/MD-explore.webp",
           contentText:
@@ -3335,7 +3300,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "MD/DSA_chatGpt.png", alt: "" },
@@ -3346,7 +3312,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        // content3: {
+        //   WorldClassFacultyData: {
+        sideHeading: "World Class Faculty",
         //   contentHeading: "World Class Faculty",
         //   tutors: "50+ Tutors",
         //   facultyCard: [
@@ -3361,7 +3328,8 @@ const MainCoursesDynimicData = {
         //   ],
         // },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -3458,7 +3426,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
@@ -3730,16 +3699,10 @@ const MainCoursesDynimicData = {
     ExploreTheCoursesData: {
       smallHeading: "Explore The World Of Product Management With Us",
       bigHeading: "Everything You Need To Know",
-      sideHeadings: [
-        { text: "Course Overview", contentId: "content1" },
-        { text: "Course Curriculum", contentId: "content2" },
-        { text: "Tools Covered In This Course", contentId: "content3" },
-        { text: "", contentId: "content4" },
-        { text: "", contentId: "content5" },
-        { text: "Pricing Across The Countries", contentId: "content6" },
-      ],
-      sideContents: {
-        content1: {
+
+      contents: {
+        CourseOverviewData: {
+          sideHeading: "Course Overview",
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/PDM-explore.png",
           contentText:
@@ -3763,7 +3726,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content2: {
+        ToolsCoveredData: {
+          sideHeading: "Tools Covered In This Course",
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             { img: "PDM/PDM-tool-1.webp", alt: "" },
@@ -3775,7 +3739,8 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        // content3: {
+        //   WorldClassFacultyData: {
+        sideHeading: "World Class Faculty",
         //   contentHeading: "World Class Faculty",
         //   tutors: "50+ Tutors",
         //   facultyCard: [
@@ -3790,7 +3755,8 @@ const MainCoursesDynimicData = {
         //   ],
         // },
 
-        content5: {
+        CourseCurriculumData: {
+          sideHeading: "Course Curriculum",
           contentHeading: "Course Curriculum",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
@@ -3826,7 +3792,8 @@ const MainCoursesDynimicData = {
             },
           ],
         },
-        content6: {
+        PricingAcrossCountriesData: {
+          sideHeading: "Pricing Across The Countries",
           ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",

@@ -1,16 +1,17 @@
-// Content1.js
+// CourseOverview.js
+
 import React from "react";
 import styles from "../exploreTheCourses.module.css";
 import Image from "next/image";
 
-interface Content1Props {
+interface CourseOverviewProps {
   contentHeading: string;
   contentImg: string;
   contentText: string;
   contentCard: { icon: string; text: string }[];
 }
 
-const Content1: React.FC<Content1Props> = ({
+const CourseOverview: React.FC<CourseOverviewProps> = ({
   contentHeading,
   contentImg,
   contentText,
@@ -24,7 +25,6 @@ const Content1: React.FC<Content1Props> = ({
       <Image
         className={styles.content1img}
         src={`${imageUrl}${contentImg}`}
-        // src={contentImg}
         alt="Content 1"
         width={790}
         height={400}
@@ -35,7 +35,6 @@ const Content1: React.FC<Content1Props> = ({
           <li key={index}>
             <Image
               src={`${imageUrl}${card.icon}`}
-              // src={card.icon}
               alt={`card ${index + 1}`}
               width={32}
               height={32}
@@ -48,4 +47,4 @@ const Content1: React.FC<Content1Props> = ({
   );
 };
 
-export default Content1;
+export default CourseOverview;

@@ -1,7 +1,10 @@
+// DefenceToolbox.js
+
 import React, { useState } from "react";
 import styles from "../exploreTheCourses.module.css";
 import Image from "next/image";
-interface Content5Props {
+
+interface DefenceToolboxProps {
   contentHeading: string;
   durationIcon: string;
   tickIcon: string;
@@ -12,7 +15,7 @@ interface Content5Props {
   }[];
 }
 
-const Content5: React.FC<Content5Props> = ({
+const DefenceToolbox: React.FC<DefenceToolboxProps> = ({
   contentHeading,
   durationIcon,
   tickIcon,
@@ -109,4 +112,4 @@ const Content5: React.FC<Content5Props> = ({
   );
 };
 
-export default Content5;
+export default DefenceToolbox;

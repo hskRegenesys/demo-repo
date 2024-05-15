@@ -1,29 +1,37 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./exploreTheCourses.module.css";
-import Content1 from "./ContentCourses/Content1";
-import Content2 from "./ContentCourses/Content2";
-import Content3 from "./ContentCourses/Content3";
-import Content4 from "./ContentCourses/Content4";
-import Content5 from "./ContentCourses/Content5";
-import Content6 from "./ContentCourses/Content6";
+import CourseOverview from "./ContentCourses/CourseOverview";
+import CourseCurriculum from "./ContentCourses/CourseCurriculum";
+import PricingAcrossCountries from "./ContentCourses/PricingAcrossCountries";
+import ToolsCovered from "./ContentCourses/ToolsCovered";
+import WorldClassFaculty from "./ContentCourses/WorldClassFaculty";
+import DefenceToolbox from "./ContentCourses/DefenceToolbox";
 
 interface Props {
   data: {
     smallHeading: string;
     bigHeading: string;
-    sideHeadings: { text: string; contentId: string }[];
-    sideContents: {
-      content1: {
+    contents: {
+      CourseOverviewData?: {
+        sideHeading: string;
         contentHeading: string;
         contentImg: string;
         contentText: string;
         contentCard: { icon: string; text: string }[];
       };
-      content2?: {
+      CourseCurriculumData?: {
+        sideHeading: string;
         contentHeading: string;
-        cardTools: { img: string; alt: string }[];
+        durationIcon: string;
+        tickIcon: string;
+        dropDown: string;
+        curriculumContainer: {
+          weekHeading: string;
+          weekPoints: string[] | { [key: string]: string[] };
+        }[];
       };
-      content3?: {
+      WorldClassFacultyData?: {
+        sideHeading: string;
         contentHeading: string;
         tutors: string;
         facultyCard: {
@@ -34,26 +42,13 @@ interface Props {
           yearsOfExperience: string;
         }[];
       };
-      content4?: {
+      ToolsCoveredData?: {
+        sideHeading: string;
         contentHeading: string;
-        LevelCard: {
-          courseName: string;
-          frameImg: string;
-          tickIcon: string;
-          list: string[];
-        }[];
+        cardTools: { img: string; alt: string }[];
       };
-      content5?: {
-        contentHeading: string;
-        durationIcon: string;
-        tickIcon: string;
-        dropDown: string;
-        curriculumContainer: {
-          weekHeading: string;
-          weekPoints: string[] | { [key: string]: string[] };
-        }[];
-      };
-      content6?: {
+      PricingAcrossCountriesData?: {
+        sideHeading: string;
         ContentHeding: string;
         PriceIcon: string;
         durationIcon: string;
@@ -65,13 +60,21 @@ interface Props {
           contaryFlag: string;
         }[];
       };
+      DedenceToolBoxData?: {
+        sideHeading: string;
+        contentHeading: string;
+        durationIcon: string;
+        tickIcon: string;
+        dropDown: string;
+        curriculumContainer: {
+          weekHeading: string;
+          weekPoints: string[] | { [key: string]: string[] };
+        }[];
+      };
     };
   };
-
   handleEnrollButtonClick: (title?: string) => void;
 }
-
-interface MainCourseData {}
 
 const ExploreTheCourses: React.FC<Props> = ({
   data,
@@ -118,7 +121,6 @@ const ExploreTheCourses: React.FC<Props> = ({
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Get the contentId from the data attribute
           const contentId = entry.target.getAttribute("data-content-id");
           if (contentId) {
             setActiveContent(contentId);
@@ -129,7 +131,6 @@ const ExploreTheCourses: React.FC<Props> = ({
 
     const observer = new IntersectionObserver(handleIntersection, options);
 
-    // Attach the observer to each content element
     contentRefs.forEach((ref) => {
       if (ref.current) {
         observer.observe(ref.current);
@@ -137,7 +138,6 @@ const ExploreTheCourses: React.FC<Props> = ({
     });
 
     return () => {
-      // Disconnect the observer when the component unmounts
       observer.disconnect();
     };
   }, [contentRefs]);
@@ -145,16 +145,29 @@ const ExploreTheCourses: React.FC<Props> = ({
   const {
     smallHeading,
     bigHeading,
-    sideHeadings,
-    sideContents: {
-      content1,
-      content2,
-      content3,
-      content4,
-      content5,
-      content6,
+    contents: {
+      CourseOverviewData,
+      CourseCurriculumData,
+      DedenceToolBoxData,
+      WorldClassFacultyData,
+      ToolsCoveredData,
+      PricingAcrossCountriesData,
     },
   } = data;
+  const sideHeadings = [
+    { text: CourseOverviewData?.sideHeading, contentId: "CourseOverview" },
+    { text: CourseCurriculumData?.sideHeading, contentId: "CourseCurriculum" },
+    { text: DedenceToolBoxData?.sideHeading, contentId: "DedenceToolBox" },
+    {
+      text: WorldClassFacultyData?.sideHeading,
+      contentId: "WorldClassFaculty",
+    },
+    { text: ToolsCoveredData?.sideHeading, contentId: "ToolsCovered" },
+    {
+      text: PricingAcrossCountriesData?.sideHeading,
+      contentId: "PricingAcrossCountries",
+    },
+  ];
 
   return (
     <div
@@ -182,61 +195,58 @@ const ExploreTheCourses: React.FC<Props> = ({
         </div>
 
         <div className={styles.contentPanel}>
-          {/* Render Content 1 */}
-          <div ref={contentRefs[0]} data-content-id={sideHeadings[0].contentId}>
-            <Content1 {...content1} />
-          </div>
-          {/* Render Content 5 */}
-          {content5 && (
+          {CourseOverviewData && (
+            <div
+              ref={contentRefs[0]}
+              data-content-id={sideHeadings[0].contentId}
+            >
+              <CourseOverview {...CourseOverviewData} />
+            </div>
+          )}
+          {CourseCurriculumData && (
             <div
               className={styles.contentspace}
               ref={contentRefs[1]}
               data-content-id={sideHeadings[1].contentId}
             >
-              <Content5 {...content5} />
+              <CourseCurriculum {...CourseCurriculumData} />
             </div>
           )}
-          {/* Render Content 2 */}
-          {content2 && (
+          {DedenceToolBoxData && (
             <div
               className={styles.contentspace}
               ref={contentRefs[2]}
               data-content-id={sideHeadings[2].contentId}
             >
-              <Content2 {...content2} />
+              <DefenceToolbox {...DedenceToolBoxData} />
             </div>
           )}
-
-          {/* Render Content 3 */}
-          {content3 && (
+          {WorldClassFacultyData && (
             <div
               className={styles.contentspace}
               ref={contentRefs[3]}
               data-content-id={sideHeadings[3].contentId}
             >
-              <Content3 {...content3} />
+              <WorldClassFaculty {...WorldClassFacultyData} />
             </div>
           )}
-
-          {/* Render Content 4 */}
-
-          {content4 && (
+          {ToolsCoveredData && (
             <div
               className={styles.contentspace}
               ref={contentRefs[4]}
               data-content-id={sideHeadings[4].contentId}
             >
-              <Content4 {...content4} />
+              <ToolsCovered {...ToolsCoveredData} />
             </div>
           )}
-          {content6 && (
+          {PricingAcrossCountriesData && (
             <div
               className={styles.contentspace}
               ref={contentRefs[5]}
               data-content-id={sideHeadings[5].contentId}
             >
-              <Content6
-                {...content6}
+              <PricingAcrossCountries
+                {...PricingAcrossCountriesData}
                 handleEnrollButtonClick={handleEnrollButtonClick}
               />
             </div>
