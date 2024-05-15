@@ -1,19 +1,19 @@
 const AllCoursesDynamicData = {
   CertificationDRData: {
-    title: "Digital Regenesys Certificate",
-    heading: "Certification",
+    title: "Get Certified With Us",
+    heading: "Digital Regenesys Certification",
     paragraph:
-      "Digital Regenesys aims to foster an innovative ecosystem in new-age technologies like AI, ML, Drones, Robots, data analytics (often called CPS technologies) and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
+      "The Digital Regenesys Certificate equips professionals with essential skills to succeed in today’s digital realm. It aims to foster an innovative ecosystem in new-age technologies like AI, Data Science, Project Management, and Cybersecurity and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
     tickImage: "Icons/Check.svg",
     buttonText: "Start Learning",
     achievementsHeading: "Key Takeaways",
     achievementsText: [
-      "Freedom of teaching",
-      "Get teaching certification",
-      "Get teaching certification",
-      "Freedom of teaching",
-      "Get teaching certification",
-      "Get teaching certification",
+      "International Certification",
+      "Soft Skills Training",
+      "Unlimited 1-year Access to Learning Portal",
+      "Course Wise Capstone Projects",
+      "Industry Expert Sessions",
+      "Upskilling Opportunities",
     ],
     image: "Images/Certificate/DSN_certificates.webp",
     imageText:
