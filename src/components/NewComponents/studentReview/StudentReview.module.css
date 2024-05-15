@@ -1,6 +1,6 @@
 /* StudentReview.module.css */
 
-.cardContainer {
+.reviewCardContainer {
   width: 100%;
   margin: 0 auto;
   max-width: 1224px;
@@ -159,7 +159,7 @@
 
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
-  .cardContainer {
+  .reviewCardContainer {
     margin-top: 40px;
     padding: 0px;
   }

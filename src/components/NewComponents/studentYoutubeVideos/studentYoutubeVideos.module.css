@@ -1,4 +1,4 @@
-.container {
+.studentYoutubeContainer {
   text-align: center;
   max-width: 1224px;
   margin: 0 auto;
@@ -58,7 +58,7 @@
 
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
-  .container {
+  .studentYoutubeContainer {
     margin: 44px 16px 0px 16px;
     padding-top: 0px;
   }

@@ -16,7 +16,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   handleEnrollButtonClick,
   AdmiteCompaniesData,
 }) => {
-  const { AdmitsHeading, AdmitsTitle, buttenIcon, AdmitsCards } =
+  const { AdmitsHeading, AdmitsTitle, admitsButtonIcon, AdmitsCards } =
     AdmiteCompaniesData;
   const imageUrl = `${process.env.awsImage_url}`;
 
@@ -45,11 +45,11 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
       </div>
       <div className={Styles.admitsCardsContainer}>
         <Swiper {...swiperSettings}>
-          {AdmitsCards.map((card: any, index: any) => (
+          {AdmitsCards.map((item: any, index: any) => (
             <SwiperSlide key={index} className={Styles.admitsCard}>
               <Image
-                src={`${imageUrl}${card.AdmitsImage}`}
-                // src={card.AdmitsImage}
+                src={`${imageUrl}${item.AdmitsImage}`}
+                // src={item.AdmitsImage}
                 alt={`admitImg ${index}`}
                 width={100}
                 height={60}
@@ -67,8 +67,8 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           Enrol Now
           <div className={Styles.enrollIcon}>
             <Image
-              // src={buttenIcon}
-              src={`${imageUrl}${buttenIcon}`}
+              // src={admitsButtonIcon}
+              src={`${imageUrl}${admitsButtonIcon}`}
               alt="Enroll Icon"
               width={16}
               height={16}

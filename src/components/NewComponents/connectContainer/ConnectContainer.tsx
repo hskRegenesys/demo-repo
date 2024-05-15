@@ -14,9 +14,9 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
     connectContainerHeader,
     connectContainerTittle,
     connectContainerText,
-    icon1,
-    icon2,
-    icon3,
+    vectorWhiteIcon,
+    whiteFilledStarIcon,
+    discountIcon,
   } = connectContainerData;
   const imageUrl = `${process.env.awsImage_url}`;
 
@@ -34,10 +34,10 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
                     <Image
                       src={
                         index === 0
-                          ? `${imageUrl}${icon1}`
+                          ? `${imageUrl}${vectorWhiteIcon}`
                           : index === 1
-                          ? `${imageUrl}${icon2}`
-                          : `${imageUrl}${icon3}`
+                          ? `${imageUrl}${whiteFilledStarIcon}`
+                          : `${imageUrl}${discountIcon}`
                       }
                       alt={`Icon ${index + 1}`}
                       width={20}
@@ -45,7 +45,7 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
                     />
                   </div>
 
-                  {index < connectContainerText.length - 1 && (
+                  {index < connectContainerText?.length - 1 && (
                     <div className={styles.dottedLine}></div>
                   )}
                   <br></br>

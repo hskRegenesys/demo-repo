@@ -88,7 +88,6 @@ const HomeNew = ({
   useEffect(() => {
     const popupDisplayed = sessionStorage.getItem("popupDisplayed");
     if (!popupDisplayed) {
-      // Popup hasn't been displayed before
       const timeoutModal = setTimeout(() => {
         setIsPopupVisible(true);
         sessionStorage.setItem("popupDisplayed", "true");

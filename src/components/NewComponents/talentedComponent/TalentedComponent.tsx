@@ -4,7 +4,6 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
 import styles from "./TalentedComponent.module.css";
-import FacultyData from "../../../data/newComponentData/commonComponentData/FacultyData";
 import Image from "next/image";
 
 SwiperCore.use([Navigation, Pagination]);
@@ -65,7 +64,6 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
         }
       });
 
-      // Clean up function
       return () => {
         swiper.destroy(true, true);
       };

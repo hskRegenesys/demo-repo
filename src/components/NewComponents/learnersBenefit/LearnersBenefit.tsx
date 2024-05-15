@@ -1,5 +1,3 @@
-// LearnersBenefit.js
-
 import React from "react";
 // import LearnersBenefitData from "../../../data/newComponentData/commonComponentData/LearnersBenefitData";
 import Styles from "./learnersBenefit.module.css";
@@ -8,9 +6,9 @@ import "swiper/swiper-bundle.css";
 import Image from "next/image";
 const LearnersBenefit = ({ LearnersBenefitData }: any) => {
   const {
-    LearnersBenefitHeding,
+    LearnersBenefitHeading,
     LearnersBenefitTitle,
-    card,
+    LearnersBenfitsCardsData,
     LearnersBenefitTickIcon,
     LearnersBenefitFrame1,
     LearnersBenefitFrame2,
@@ -20,10 +18,9 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
   return (
     <div className={Styles.LearnersBenefitContainer}>
       <div className={Styles.TopSection}>
-        <h3 className={Styles.heding}>{LearnersBenefitHeding}</h3>
+        <h3 className={Styles.heading}>{LearnersBenefitHeading}</h3>
         <h2 className={Styles.title}>{LearnersBenefitTitle}</h2>
       </div>
-      {/* Positioning for frame1 and frame2 */}
       <div className={Styles.frame}>
         <div className={Styles.frame1}>
           <Image
@@ -42,7 +39,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
           />
         </div>
       </div>
-      <div className={Styles.CardContainer}>
+      <div className={Styles.LearnersBenefitsCardContainer}>
         <Swiper
           className={Styles.swiperStyleFC}
           slidesPerView={1}
@@ -54,11 +51,11 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
             delay: 8000,
           }}
         >
-          {card.map((item: any, index: any) => (
+          {LearnersBenfitsCardsData.map((item: any, index: any) => (
             <SwiperSlide key={index}>
-              <div className={Styles.Card} key={index}>
+              <div className={Styles.LearnersBenefitCard} key={index}>
                 <div className={Styles.LeftSide}>
-                  <div className={Styles.CardImg}>
+                  <div className={Styles.learnersBenefitCardImg}>
                     <Image
                       src={`${imageUrl}${item.LearnersBenefitCardImg}`}
                       alt="Card Image"
@@ -68,7 +65,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                   </div>
                 </div>
                 <div className={Styles.RightSide}>
-                  <h2 className={Styles.CardTitle}>
+                  <h2 className={Styles.learnersBenefitCardTitle}>
                     {item.LearnersBenefitCardTitle}
                   </h2>
                   <ul>
