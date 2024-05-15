@@ -1287,7 +1287,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/AI-explore.webp",
           contentText:
-            "The Digital Regenesys Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
+            "The Digital Regenesys’s Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
           contentCard: [
             {
               icon: "Icons/Live Call.svg",
@@ -1402,7 +1402,7 @@ const MainCoursesDynimicData = {
       title: "Get Certified With Us",
       heading: "Artificial Intelligence Certification",
       paragraph:
-        "The Digital Regenesys Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, graduates will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
+        "The Digital Regenesys’s Artificial Intelligence Certificate course is designed to equip individuals with the essential skills and knowledge in the field of AI. This certificate is ideal for professionals looking to enhance their expertise and stay ahead in a competitive industry. The course curriculum covers various topics, including machine learning, neural networks, and natural language processing. Upon completion, learners will be well-prepared to tackle real-world AI challenges and drive innovation within their organisations.",
       tickImage: "Icons/Check.svg",
       buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
@@ -2441,7 +2441,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "Images/Banner/FSD-explore.webp",
           contentText:
-            "Digital Regenesys’s Full Stack Web & Software Development is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on the front end and back end of the web and extract insights from them by using HTML, JavaScrit, and GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB.",
+            "Digital Regenesys’s Full Stack Web & Software Development is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on the front end and back end of the web and extract insights from them by using HTML, JavaScript, and GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB.",
           contentCard: [
             {
               icon: "Icons/Live Call.svg",
