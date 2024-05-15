@@ -23,6 +23,7 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
           className={`${Styles.TanzaniaContaryShowHoverDetails}  ${
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
+          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.Tanzania.countryFlagImg}`}
@@ -45,6 +46,8 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.TanzaniaContaryLocation} ${Styles.contaryLocation}`}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <span className={Styles.contaryname}>
             {OurLocationData.Tanzania.countryName}
@@ -56,8 +59,6 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
             }`}
             alt={OurLocationData.Tanzania.countryName}
             title={OurLocationData.Tanzania.countryName}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
             width={14}
             height={20}
           />

@@ -1,17 +1,15 @@
-// KenyaSection.tsx
-
 import React from "react";
 import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 import Image from "next/image";
 import Styles from "../OurLocation.module.css";
 
-interface KenyaSectionProps {
+interface NigeriaSectionProps {
   isHovered?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
 }
 
-const KenyaSection: React.FC<KenyaSectionProps> = ({
+const NigeriaSection: React.FC<NigeriaSectionProps> = ({
   isHovered,
   onMouseEnter,
   onMouseLeave,
@@ -19,54 +17,55 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
   const imageUrl = `${process.env.awsImage_url}`;
 
   return (
-    <div className={`${Styles.KenyaSection} `}>
+    <div className={`${Styles.NigeriaSection} `}>
       {isHovered && (
         <div
-          className={`${Styles.KenyaContaryShowHoverDetails}   ${
+          className={`${Styles.NigeriaContaryShowHoverDetails} ${
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
+          onMouseLeave={onMouseLeave}
         >
+          <div
+            className={`${Styles.NigeriacontaryAdressCard} ${Styles.contaryAdress}`}
+          >
+            <span>{OurLocationData.Nigeria.countryDescription}</span>
+            <h5>{OurLocationData.Nigeria.countryAddress}</h5>
+          </div>
           <Image
-            src={`${imageUrl}${OurLocationData.Kenya.countryFlagImg}`}
-            // src={OurLocationData.Kenya.countryFlagImg}
+            src={`${imageUrl}${OurLocationData.Nigeria.countryFlagImg}`}
+            // src={OurLocationData.Nigeria.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.Kenya.countryName}
-            title={OurLocationData.Kenya.countryName}
+            alt={OurLocationData.Nigeria.countryName}
+            title={OurLocationData.Nigeria.countryName}
             width={50}
             height={82}
             loading="eager"
           />
-          <div
-            className={`${Styles.KenyacontaryAdressCard} ${Styles.contaryAdress} `}
-          >
-            <span>{OurLocationData.Kenya.countryDescription}</span>
-            <h5>{OurLocationData.Kenya.countryAddress}</h5>
-          </div>
         </div>
       )}
       {!isHovered && (
         <div
-          className={`${Styles.KenyaContaryLocation} ${Styles.contaryLocation}`}
+          className={`${Styles.NigeriaContaryLocation} ${Styles.contaryLocation}`}
         >
+          <span className={Styles.contaryname}>
+            {OurLocationData.Nigeria.countryName}
+          </span>
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
-            alt={OurLocationData.Kenya.countryName}
-            title={OurLocationData.Kenya.countryName}
+            alt={OurLocationData.Nigeria.countryName}
+            title={OurLocationData.Nigeria.countryName}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             width={14}
             height={20}
           />
-          <span className={Styles.contaryname}>
-            {OurLocationData.Kenya.countryName}
-          </span>
         </div>
       )}
     </div>
   );
 };
 
-export default KenyaSection;
+export default NigeriaSection;

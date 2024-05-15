@@ -1,17 +1,15 @@
-// UgandaSection.tsx
-
 import React from "react";
 import OurLocationData from "../../../../data/newComponentData/commonComponentData/OurLocationData";
 import Image from "next/image";
 import Styles from "../OurLocation.module.css";
 
-interface UgandaSectionProps {
+interface CroatiaSectionProps {
   isHovered?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
 }
 
-const UgandaSection: React.FC<UgandaSectionProps> = ({
+const CroatiaSection: React.FC<CroatiaSectionProps> = ({
   isHovered,
   onMouseEnter,
   onMouseLeave,
@@ -19,53 +17,56 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
   const imageUrl = `${process.env.awsImage_url}`;
 
   return (
-    <div className={`${Styles.UgandaSection} `}>
+    <div className={`${Styles.CroatiaSection} `}>
       {isHovered && (
         <div
-          className={`${Styles.UgandaContaryShowHoverDetails}  ${
+          className={`${Styles.CroatiaContaryShowHoverDetails} ${
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
+          onMouseLeave={onMouseLeave}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.Uganda.countryFlagImg}`}
-            // src={OurLocationData.Uganda.countryFlagImg}
+            src={`${imageUrl}${OurLocationData.Croatia.countryFlagImg}`}
+            // src={OurLocationData.Croatia.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.Uganda.countryName}
-            title={OurLocationData.Uganda.countryName}
+            alt={OurLocationData.Croatia.countryName}
+            title={OurLocationData.Croatia.countryName}
             width={50}
             height={82}
             loading="eager"
           />
           <div
-            className={`${Styles.UgandacontaryAdressCard} ${Styles.contaryAdress}`}
+            className={`${Styles.CroatiacontaryAdressCard} ${
+              Styles.contaryAdress
+            } ${isHovered ? Styles.active : ""}`}
           >
-            <span>{OurLocationData.Uganda.countryDescription}</span>
-            <h5>{OurLocationData.Uganda.countryAddress}</h5>
+            <span>{OurLocationData.Croatia.countryDescription}</span>
+            <h5>{OurLocationData.Croatia.countryAddress}</h5>
           </div>
         </div>
       )}
       {!isHovered && (
         <div
-          className={`${Styles.UgandaContaryLocation} ${Styles.contaryLocation}`}
+          className={`${Styles.CroatiaContaryLocation} ${Styles.contaryLocation}`}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
-            alt={OurLocationData.Uganda.countryName}
-            title={OurLocationData.Uganda.countryName}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
+            alt={OurLocationData.Croatia.countryName}
+            title={OurLocationData.Croatia.countryName}
             width={14}
             height={20}
           />
           <span className={Styles.contaryname}>
-            {OurLocationData.Uganda.countryName}
+            {OurLocationData.Croatia.countryName}
           </span>
         </div>
       )}
     </div>
   );
 };
-export default UgandaSection;
+export default CroatiaSection;

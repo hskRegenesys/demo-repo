@@ -24,6 +24,7 @@ const UsaSection: React.FC<UsaSectionProps> = ({
           className={`${Styles.USAContaryShowHoverDetails} ${
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
+          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.USA.countryFlagImg}`}
@@ -46,6 +47,8 @@ const UsaSection: React.FC<UsaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.USAContaryLocation} ${Styles.contaryLocation}`}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
@@ -53,8 +56,6 @@ const UsaSection: React.FC<UsaSectionProps> = ({
             className={Styles.locationpin}
             alt={OurLocationData.USA.countryName}
             title={OurLocationData.USA.countryName}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
             width={14}
             height={20}
           />
