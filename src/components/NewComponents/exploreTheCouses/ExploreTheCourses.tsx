@@ -60,7 +60,7 @@ interface Props {
           contaryFlag: string;
         }[];
       };
-      DedenceToolBoxData?: {
+      DefenceToolboxData?: {
         sideHeading: string;
         contentHeading: string;
         durationIcon: string;
@@ -150,7 +150,7 @@ const ExploreTheCourses: React.FC<Props> = ({
     contents: {
       CourseOverviewData,
       CourseCurriculumData,
-      DedenceToolBoxData,
+      DefenceToolboxData,
       WorldClassFacultyData,
       ToolsCoveredData,
       PricingAcrossCountriesData,
@@ -159,7 +159,7 @@ const ExploreTheCourses: React.FC<Props> = ({
   const sideHeadings = [
     { text: CourseOverviewData?.sideHeading, contentId: "CourseOverview" },
     { text: CourseCurriculumData?.sideHeading, contentId: "CourseCurriculum" },
-    { text: DedenceToolBoxData?.sideHeading, contentId: "DedenceToolBox" },
+    { text: DefenceToolboxData?.sideHeading, contentId: "DefenceToolbox" },
     {
       text: WorldClassFacultyData?.sideHeading,
       contentId: "WorldClassFaculty",
@@ -214,13 +214,13 @@ const ExploreTheCourses: React.FC<Props> = ({
               <CourseCurriculum {...CourseCurriculumData} />
             </div>
           )}
-          {DedenceToolBoxData && (
+          {DefenceToolboxData && (
             <div
               className={styles.contentspace}
               ref={contentRefs[2]}
               data-content-id={sideHeadings[2].contentId}
             >
-              <DefenceToolbox {...DedenceToolBoxData} />
+              <DefenceToolbox {...DefenceToolboxData} />
             </div>
           )}
           {WorldClassFacultyData && (
