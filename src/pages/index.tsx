@@ -74,6 +74,7 @@ const HomeNew = ({
   initialAdmiteCompaniesData,
   initialLearnersBenefitData,
   initialFacultyData,
+  initialFaqData,
 }: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
@@ -115,7 +116,6 @@ const HomeNew = ({
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
-
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
@@ -156,7 +156,7 @@ const HomeNew = ({
         data={initialMultiplePagesBrandData?.LearnersSupportSectionData}
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
-      <Faq data={initialMultiplePagesBrandData?.faqSections} />
+      <Faq data={initialFaqData} />
       <ReadMoreDropDown data={initialAllCoursesDynamicData?.ReadMore} />
 
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
@@ -196,6 +196,9 @@ export async function getStaticProps() {
     const { default: FacultyData } = await import(
       "@/data/newComponentData/commonComponentData/FacultyData"
     );
+    const { default: HomeDynamicData } = await import(
+      "@/data/newComponentData/dynamicComponentData/HomeDynamicData"
+    );
 
     return {
       props: {
@@ -209,6 +212,7 @@ export async function getStaticProps() {
         initialAdmiteCompaniesData: AdmiteCompaniesData,
         initialLearnersBenefitData: LearnersBenefitData,
         initialFacultyData: FacultyData,
+        initialFaqData: HomeDynamicData?.faqSections,
       },
     };
   } catch (error) {
@@ -224,6 +228,7 @@ export async function getStaticProps() {
         initialAdmiteCompaniesData: [],
         initialLearnersBenefitData: [],
         initialFacultyData: [],
+        initialFaqData: [],
       },
     };
   }

@@ -88,7 +88,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
         <h2 className={styles.heading}>Meet our Faculty</h2>
         <h2 className={styles.subheading}>See Our Talented Faculty</h2>
         <button className={styles.btnStart} onClick={handleEnrollButtonClick}>
-          Start Learning Today!
+          Enrol Now
         </button>
       </div>
 
@@ -128,10 +128,12 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                     </div>
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
                     <p className={styles.courseName}>{faculty.courseName}</p>
-                    <p className={styles.yearsOfExperience}>
-                      <span>{faculty.yearsOfExperience} </span>Years of
-                      Experience
-                    </p>
+                    {faculty.yearsOfExperience && (
+                      <p className={styles.yearsOfExperience}>
+                        <span>{faculty.yearsOfExperience} </span>Years of
+                        Experience
+                      </p>
+                    )}
                   </div>
                 </SwiperSlide>
               ))}

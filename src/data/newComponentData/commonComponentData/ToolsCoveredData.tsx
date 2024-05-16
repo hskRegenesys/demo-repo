@@ -1,5 +1,5 @@
 const ToolsCoveredData = {
-  title: "  Interactive Learning Tools",
+  title: "Interactive Learning Tools",
   heading: "Tools Covered in Digital Regenesys",
   images: [
     { img: "DBA/DSA_power-bi.png", alt: "Power BI" },

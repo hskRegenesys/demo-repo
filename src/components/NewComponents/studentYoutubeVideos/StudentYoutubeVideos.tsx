@@ -7,7 +7,7 @@ const StudentYoutubeVideos = () => {
   return (
     <div className={Styles.studentYoutubeContainer}>
       <h2 className={Styles.title}>
-        Watch our students share their experiences.{" "}
+        Watch Our Students Share Their Experiences{" "}
       </h2>
       <div className={Styles.videoContainer}>
         <Swiper

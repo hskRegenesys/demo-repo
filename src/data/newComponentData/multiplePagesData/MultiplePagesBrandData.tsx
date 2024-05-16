@@ -30,7 +30,7 @@ const MultiplePagesBrandData = {
   },
   LearnersSupportSectionData: {
     LsSectionTitle: "Digital Regenesys Learners Support",
-    LsHeding: "Talk to our experts. We’re available 24/7",
+    LsHeding: "Talk To Our Experts. We’re Available 24/7",
     LearnersSupportCards: [
       {
         LsImg: "Images/LearnersSupport-one.png",

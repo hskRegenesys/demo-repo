@@ -1,5 +1,5 @@
 import React from "react";
-// import StudentReviewData from "../../../data/newComponentData/commonComponentData/StudentReviewData";
+import StudentReviewData from "../../../data/newComponentData/commonComponentData/StudentReviewData";
 import Styles from "./StudentReview.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
