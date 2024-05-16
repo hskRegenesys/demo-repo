@@ -36,6 +36,7 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
             width={50}
             height={82}
             loading="eager"
+            priority
           />
           <div
             className={`${Styles.UgandacontaryAdressCard} ${Styles.contaryAdress}`}
@@ -48,8 +49,6 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.UgandaContaryLocation} ${Styles.contaryLocation}`}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
@@ -58,8 +57,10 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
             }`}
             alt={OurLocationData.Uganda.countryName}
             title={OurLocationData.Uganda.countryName}
+            onMouseEnter={onMouseEnter}
             width={14}
             height={20}
+            priority
           />
           <span className={Styles.contaryname}>
             {OurLocationData.Uganda.countryName}

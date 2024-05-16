@@ -35,6 +35,7 @@ const UsaSection: React.FC<UsaSectionProps> = ({
             width={50}
             height={82}
             loading="eager"
+            priority
           />
           <div
             className={`${Styles.USAcontaryAdressCard} ${Styles.contaryAdress}`}
@@ -47,8 +48,6 @@ const UsaSection: React.FC<UsaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.USAContaryLocation} ${Styles.contaryLocation}`}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
@@ -57,7 +56,9 @@ const UsaSection: React.FC<UsaSectionProps> = ({
             alt={OurLocationData.USA.countryName}
             title={OurLocationData.USA.countryName}
             width={14}
+            onMouseEnter={onMouseEnter}
             height={20}
+            priority
           />
           <span className={Styles.contaryname}>
             {OurLocationData.USA.countryName}

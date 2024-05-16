@@ -34,6 +34,7 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
             width={50}
             height={82}
             loading="eager"
+            priority
           />
           <div
             className={`${Styles.IndiacontaryAdressCard} ${Styles.contaryAdress}`}
@@ -46,8 +47,6 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.IndiaContaryLocation} ${Styles.contaryLocation}`}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         >
           <span className={Styles.contaryname}>
             {OurLocationData.India.countryName}
@@ -59,8 +58,10 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
             }`}
             alt={OurLocationData.India.countryName}
             title={OurLocationData.India.countryName}
+            onMouseEnter={onMouseEnter}
             width={14}
             height={20}
+            priority
           />
         </div>
       )}
