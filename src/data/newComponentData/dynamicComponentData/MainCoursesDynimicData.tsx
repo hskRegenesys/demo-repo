@@ -1075,7 +1075,7 @@ const MainCoursesDynimicData = {
               question:
                 "How do I enrol and register for the Digital Regenesys’s Project Management Course?",
               answer:
-                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3.Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course  \n    materials and beginning your online learning journey",
+                "To enrol in the Digital Regenesys’s online Project Management course, follow these steps: \n \n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> Navigate to the course page. \n2. Select the required course. Click the 'Enrol Now' button. \n3. Complete the registration form with all the required details. \n4. Submit the form and proceed to make the payment for the course. \n5. Upon successful payment, you will receive a confirmation email with instructions on accessing the course  \n    materials and beginning your online learning journey",
             },
             {
               question:
@@ -1703,9 +1703,9 @@ const MainCoursesDynimicData = {
           ],
         },
 
-        DedenceToolBoxData: {
-          sideHeading: "Dedence Tool Box ",
-          contentHeading: "Dedence Tool Box",
+        DefenceToolboxData: {
+          sideHeading: "Defence Tool Box ",
+          contentHeading: "Defence Tool Box",
           durationIcon: "Icons/clock-green.svg",
           tickIcon: "Icons/Check.svg",
           dropDown: "Icons/arrow_drop_down.svg",
@@ -1736,7 +1736,7 @@ const MainCoursesDynimicData = {
             {
               Heading: "KeePass",
               PassageTop:
-                "KeePass is a popular open-source password manager that allows users to store and manage their passwords in a secure and organised manner. It is available for Windows, MacOS, Linux, and mobile platforms. The tool uses strong encryption algorithms to protect users' passwords, ensuring that they are secure even in the event of a data breach. KeePass also offers several additional security features, such as two-factor authentication, a master password, ability to lock the database after a set period of inactivity. \n KeePass allows users to store various types of information, including usernames, passwords, and website URLs. In addition, users can create custom fields to store additional information, such as security questions and answers.",
+                "KeePass is a popular open-source password manager that allows users to store and manage their passwords in a secure and organised manner. It is available for Windows, MacOS, Linux, and mobile platforms. The tool uses strong encryption algorithms to protect users' passwords, ensuring that they are secure even in the event of a data breach. KeePass also offers several additional security features, such as two-factor authentication, a master password, ability to lock the database after a set period of inactivity. \n \n KeePass allows users to store various types of information, including usernames, passwords, and website URLs. In addition, users can create custom fields to store additional information, such as security questions and answers.",
               PassageBottom:
                 "Overall, KeePass is a powerful and secure password manager that provides users with an easy way to manage their passwords and keep them safe from cyber threats.",
               Points: [

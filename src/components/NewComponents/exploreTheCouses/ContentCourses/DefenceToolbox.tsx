@@ -67,7 +67,12 @@ const DefenceToolbox: React.FC<DefenceToolboxProps> = ({
 
             {index === activeWeekIndex && (
               <div>
-                <p className={styles.weekPointText}>{week.PassageTop}</p>
+                <p
+                  className={styles.weekPointText}
+                  dangerouslySetInnerHTML={{
+                    __html: week.PassageTop.replace(/\n/g, "<br>"),
+                  }}
+                ></p>
                 <div className={styles.dropdown}>
                   {Array.isArray(week.Points) ? (
                     <ul>

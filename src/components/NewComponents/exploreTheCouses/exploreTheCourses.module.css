@@ -576,9 +576,7 @@
 .weekPoint {
   margin-top: 16px;
 }
-.weekPointImg {
-  width: 40px;
-}
+
 .weekPointText {
   color: var(--Light-Text-Secondary, #697386);
   font-family: Montserrat;
@@ -587,6 +585,7 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
+  width: 100%;
 }
 
 .sideHeding {
@@ -637,7 +636,6 @@
 
 .weekPoint {
   display: flex;
-  align-items: center;
   margin-bottom: 8px;
   justify-content: flex-start;
   gap: 10px;
