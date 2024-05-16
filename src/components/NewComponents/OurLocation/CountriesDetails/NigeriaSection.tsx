@@ -40,6 +40,7 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
             width={50}
             height={82}
             loading="eager"
+            priority
           />
         </div>
       )}
@@ -58,9 +59,9 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
             alt={OurLocationData.Nigeria.countryName}
             title={OurLocationData.Nigeria.countryName}
             onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
             width={14}
             height={20}
+            priority
           />
         </div>
       )}

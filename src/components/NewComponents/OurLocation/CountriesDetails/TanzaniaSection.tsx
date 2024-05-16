@@ -34,6 +34,7 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
             width={50}
             height={82}
             loading="eager"
+            priority
           />
           <div
             className={`${Styles.TanzaniacontaryAdressCard} ${Styles.contaryAdress}`}
@@ -46,8 +47,6 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.TanzaniaContaryLocation} ${Styles.contaryLocation}`}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         >
           <span className={Styles.contaryname}>
             {OurLocationData.Tanzania.countryName}
@@ -58,9 +57,11 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
               isHovered ? Styles.hovered : ""
             }`}
             alt={OurLocationData.Tanzania.countryName}
+            onMouseEnter={onMouseEnter}
             title={OurLocationData.Tanzania.countryName}
             width={14}
             height={20}
+            priority
           />
         </div>
       )}

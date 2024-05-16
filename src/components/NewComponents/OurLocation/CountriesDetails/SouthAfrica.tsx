@@ -40,14 +40,13 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
             width={50}
             height={82}
             loading="eager"
+            priority
           />
         </div>
       )}
       {!isHovered && (
         <div
           className={`${Styles.SouthAfricaContaryLocation} ${Styles.contaryLocation}`}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
@@ -55,9 +54,11 @@ const SouthAfricaSection: React.FC<SouthAfricaSectionProps> = ({
               isHovered ? Styles.hovered : ""
             }`}
             alt={OurLocationData.SouthAfrica.countryName}
+            onMouseEnter={onMouseEnter}
             title={OurLocationData.SouthAfrica.countryName}
             width={14}
             height={20}
+            priority
           />
           <span className={Styles.contaryname}>
             {OurLocationData.SouthAfrica.countryName}

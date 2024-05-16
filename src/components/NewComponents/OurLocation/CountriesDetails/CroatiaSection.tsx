@@ -34,6 +34,7 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
             width={50}
             height={82}
             loading="eager"
+            priority
           />
           <div
             className={`${Styles.CroatiacontaryAdressCard} ${
@@ -48,8 +49,6 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
       {!isHovered && (
         <div
           className={`${Styles.CroatiaContaryLocation} ${Styles.contaryLocation}`}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         >
           <Image
             src={`${imageUrl}${OurLocationData.locationPinImage}`}
@@ -58,8 +57,10 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
             }`}
             alt={OurLocationData.Croatia.countryName}
             title={OurLocationData.Croatia.countryName}
+            onMouseEnter={onMouseEnter}
             width={14}
             height={20}
+            priority
           />
           <span className={Styles.contaryname}>
             {OurLocationData.Croatia.countryName}
