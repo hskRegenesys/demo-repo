@@ -1,26 +1,26 @@
 const AboutUsData = {
   aboutUsImg: "Images/AboutUs.svg",
   aboutUsImgAlt: "About Us - Digital Regenesys",
-  aboutTitle: "About Us",
-  aboutHeading: "Unique Benefits That Set Us Apart from the Rest!",
+  aboutTitle: "About Digital Regenesys",
+  aboutHeading: "Reasons That Set Us Apart",
   aboutParagraph:
-    "Embark on a next-generation digital skills journey with Silicon Valley's cutting-edge Edtech. Introducing Digital Regenesys, the renowned EdTech platform by Regenesys Business School, an international Business School with campus in Johannesburg. Experience career-transforming, skill-enhancing and cutting-edge online courses across various digital domains. Our online courses are meticulously designed with diverse industries' evolving digital and technological requirements.",
+    "Digital Regenesys, a leading educational platform, is a beacon of innovation and excellence in digital education. With a commitment to personalised learning, industry relevance, and unwavering support, the platform offers a compelling choice for individuals seeking to elevate their skills, careers, and prospects in the digital age. Embrace the future of education with Digital Regenesys’s online courses.",
   aboutUsCardsData: [
     {
       image: "Icons/Live Call.svg",
-      title: "Live Classes",
+      title: "Flexibility and Accessibility",
     },
     {
       image: "Icons/Award.svg",
-      title: "International   Certificate",
+      title: "Mentorship and Support",
     },
     {
       image: "Icons/Counselling.svg",
-      title: "Industry Expert Faculty",
+      title: "Practical and Experiential Learning ",
     },
     {
       image: "Icons/Experts.svg",
-      title: "Career Counseling",
+      title: "Career Guidance",
     },
   ],
 };
