@@ -27,7 +27,7 @@ const RecommendedPost = () => {
       <Spinner animation="border" />
     </div>
   ) : (
-    <div className="bg-light-green ">
+    <div className="bg-light-green recommend-wrapper">
       <p className="text-center pt-4">
         <b>Recommended Posts</b>
       </p>

@@ -74,7 +74,7 @@ const sitemapData =postList?.flatMap(item=>item.posts)
               <div key={values?.category} className="py-3">
                 <div className="d-flex justify-content-between align-items-center">
                   <h2
-                    className="h6 p-0 m-0 fw-bold"
+                    className="h6 p-0 m-0 fw-bold new-heading-title"
                     dangerouslySetInnerHTML={{
                       __html: values?.category.toString(),
                     }}
@@ -85,7 +85,7 @@ const sitemapData =postList?.flatMap(item=>item.posts)
                       <a>
                         <b
                           role="button"
-                          className="btn px-1 py-0 text-dark-green m-0"
+                          className="btn px-1 py-0 text-dark-green m-0 new-view-more-title"
                         >
                           View more
                         </b>
