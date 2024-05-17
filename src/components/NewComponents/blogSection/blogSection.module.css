@@ -12,7 +12,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
@@ -62,7 +62,7 @@
   color: var(--light-text-primary, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
@@ -75,10 +75,8 @@
 
 .blogText {
   color: var(--light-text-secondary, #697386);
-  font-family: Montserrat;
+
   font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
   letter-spacing: 0.12px;
   margin-bottom: 10px;
   line-height: 1.5em;
@@ -98,7 +96,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;

@@ -8,12 +8,10 @@
 .footerContainer li {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
+
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.12px;
   margin-bottom: 12px;
-  font-family: Montserrat;
 }
 .footerContainer li:hover {
   color: #01ad6e;
@@ -29,11 +27,10 @@
 .footerContainer a {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 500;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.12px;
-  font-family: Montserrat;
 }
 
 .footerSection {
@@ -73,7 +70,7 @@
   color: #fff;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -91,7 +88,7 @@
   color: var(--primary-primary-white, #fff);
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   min-width: 260px;
@@ -105,7 +102,7 @@
   color: #1bb179;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
@@ -151,7 +148,6 @@
 
 .footerText p {
   margin: 5px 0;
-  font-family: Montserrat;
 }
 .footerTextInside {
   display: flex;
@@ -168,11 +164,9 @@
   gap: auto;
 }
 .footerTextDesktop p {
-  font-family: Montserrat;
   color: #fff;
 }
 .footerContent4 span {
-  font-family: Montserrat;
 }
 /* Media query for mobile view */
 @media only screen and (max-width: 800px) {

@@ -246,7 +246,7 @@ button {
 
 p {
   margin: 0 0 20px;
-  font-family: "Montserrat-semiBold";
+  font-family: "Montserrat";
   line-height: 1.6;
 }
 
@@ -3163,7 +3163,7 @@ tns-controls-tools {
   line-height: 25px;
   font-weight: bold;
   transition: all 500ms ease;
-  font-family: Montserrat;
+  
 }
 
 .service-block-three__single:hover h6 {
@@ -11338,7 +11338,7 @@ featured-section .right-col .sec-title h2 {
   color: #ffffff;
   overflow: hidden;
   color: var(--Light-Text-Green, #008554);
-  font-family: Montserrat;
+  
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -11477,7 +11477,7 @@ featured-section .right-col .sec-title h2 {
   }
   .mobile-sub-nav-item-new a {
     color: var(--Light-Text-Secondary, #697386);
-    font-family: Montserrat;
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -11502,7 +11502,7 @@ featured-section .right-col .sec-title h2 {
     padding: 10px;
     text-decoration: none;
     color: var(--Light-Text-Green, #008554);
-    font-family: Montserrat;
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -19322,7 +19322,7 @@ input.PhoneInputInput {
 }
 .inputForm input.PhoneInputInput {
   padding-left: 40px !important;
-  font-family: Montserrat;
+  
   color: #858c9a;
 }
 .blogs-apply-now .PhoneInputCountry {

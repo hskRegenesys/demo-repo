@@ -32,7 +32,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -43,7 +43,7 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 32px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -53,9 +53,7 @@
 .aboutParagraph {
   color: var(--neutral-80, #616364);
   font-size: 16px;
-  font-style: normal;
-  font-family: Montserrat;
-  font-weight: 500;
+
   line-height: 24px;
   letter-spacing: 0.12px;
   max-height: 168px;
@@ -98,7 +96,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -141,7 +139,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
