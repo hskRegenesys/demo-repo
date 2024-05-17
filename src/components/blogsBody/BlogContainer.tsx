@@ -56,7 +56,7 @@ const BlogContainer = ({
           </div>
         </div>
       </div>
-      <div className="py-5">
+      <div>
         <div className="container-fluid px-5 ">
           {postResponse?.length && (
             <div className="link-title d-flex justify-content-left mb-3">
@@ -101,9 +101,8 @@ const BlogContainer = ({
             <div className="col-12 col-lg-9">
               {postResponse?.length > 0 ? (
                 postResponse?.map((item) => (
-
                   <div key={item.id}>
-                   {item?.title && (
+                    {item?.title && (
                       <h1
                         dangerouslySetInnerHTML={{
                           __html: item?.title?.rendered,
