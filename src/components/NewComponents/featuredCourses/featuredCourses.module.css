@@ -162,9 +162,8 @@
 
 .normalText {
   color: #2b3340;
-
+  font-family: Montserrat-semiBold;
   font-size: 16px;
-
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-top: 10px;
