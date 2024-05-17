@@ -97,12 +97,13 @@ const BlogContainer = ({
               </p>
             </div>
           </Link>
-          <div className="row py-3">
+          <div className="row py-3 blog-content-container">
             <div className="col-12 col-lg-9">
               {postResponse?.length > 0 ? (
                 postResponse?.map((item) => (
+
                   <div key={item.id}>
-                    {item?.title && (
+                   {item?.title && (
                       <h1
                         dangerouslySetInnerHTML={{
                           __html: item?.title?.rendered,
