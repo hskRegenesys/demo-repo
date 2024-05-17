@@ -83,24 +83,24 @@ const ExploreTheCourses: React.FC<Props> = ({
   handleEnrollButtonClick,
 }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [activeContent, setActiveContent] = useState<string | null>();
+  const [currentSection, setCurrentSection] = useState("");
+  const [activeContent, setActiveContent] = useState<string>("");
+  const contentRef = useRef<HTMLDivElement>(null);
 
-  const contentRefs: React.RefObject<HTMLDivElement>[] = [
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-  ];
+  // Initialize contentRefs based on the number of content sections available
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const handleSidePanelClick = (contentId: string) => {
+  useEffect(() => {
+    contentRefs.current = Object.keys(data.contents).map(() => null);
+  }, [data.contents]);
+
+  const handleClick = (contentId: string) => {
     const index = sideHeadings.findIndex(
       (item) => item.contentId === contentId
     );
     if (index !== -1) {
       setActiveContent(contentId);
-      const targetElement = contentRefs[index].current;
+      const targetElement = contentRefs.current[index];
 
       if (targetElement) {
         const targetTop = targetElement.getBoundingClientRect().top;
@@ -113,36 +113,43 @@ const ExploreTheCourses: React.FC<Props> = ({
     }
   };
 
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.6,
-    };
+  const handleScroll = () => {
+    const contentPanel = contentRef.current;
 
-    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const contentId = entry.target.getAttribute("data-content-id");
-          if (contentId) {
-            setActiveContent(contentId);
-          }
-        }
-      });
-    };
+    if (contentPanel && contentPanel.scrollTop > 0) {
+      setScrolled(true);
+    } else if (contentPanel) {
+      setScrolled(false);
+    }
 
-    const observer = new IntersectionObserver(handleIntersection, options);
+    const sections = contentRefs.current;
+    let current = "Content-0";
 
-    contentRefs.forEach((ref) => {
-      if (ref.current) {
-        observer.observe(ref.current);
+    sections.forEach((section, index) => {
+      if (section && window.pageYOffset >= section.offsetTop + 1200) {
+        current = `Content-${index}`;
       }
     });
 
+    setCurrentSection(current);
+  };
+
+  useEffect(() => {
+    const contentPanel = contentRef.current;
+
+    if (contentPanel) {
+      contentPanel.addEventListener("scroll", handleScroll);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      observer.disconnect();
+      if (contentPanel) {
+        contentPanel.removeEventListener("scroll", handleScroll);
+      }
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [contentRefs]);
+  }, []);
 
   const {
     smallHeading,
@@ -156,19 +163,14 @@ const ExploreTheCourses: React.FC<Props> = ({
       PricingAcrossCountriesData,
     },
   } = data;
+
   const sideHeadings = [
-    { text: CourseOverviewData?.sideHeading, contentId: "CourseOverview" },
-    { text: CourseCurriculumData?.sideHeading, contentId: "CourseCurriculum" },
-    { text: DefenceToolboxData?.sideHeading, contentId: "DefenceToolbox" },
-    {
-      text: WorldClassFacultyData?.sideHeading,
-      contentId: "WorldClassFaculty",
-    },
-    { text: ToolsCoveredData?.sideHeading, contentId: "ToolsCovered" },
-    {
-      text: PricingAcrossCountriesData?.sideHeading,
-      contentId: "PricingAcrossCountries",
-    },
+    { text: CourseOverviewData?.sideHeading, contentId: "Content-0" },
+    { text: CourseCurriculumData?.sideHeading, contentId: "Content-1" },
+    { text: DefenceToolboxData?.sideHeading, contentId: "Content-2" },
+    { text: WorldClassFacultyData?.sideHeading, contentId: "Content-3" },
+    { text: ToolsCoveredData?.sideHeading, contentId: "Content-4" },
+    { text: PricingAcrossCountriesData?.sideHeading, contentId: "Content-5" },
   ];
 
   return (
@@ -182,34 +184,30 @@ const ExploreTheCourses: React.FC<Props> = ({
       <div className={styles.mainContent}>
         <div className={styles.sidePanel}>
           <div className={styles.sidePanelInside}>
-            {sideHeadings.map((heading) => (
+            {sideHeadings.map((heading, index) => (
               <p
                 key={heading.contentId}
-                className={`${styles.sidePanelItem} ${
-                  activeContent === heading.contentId ? styles.active : ""
+                onClick={() => handleClick(heading.contentId)}
+                className={`${
+                  currentSection === heading.contentId ? styles.active : ""
                 }`}
-                onClick={() => handleSidePanelClick(heading.contentId)}
               >
                 {heading.text}
               </p>
             ))}
           </div>
         </div>
-
-        <div className={styles.contentPanel}>
+        <div className={styles.contentPanel} ref={contentRef}>
           {CourseOverviewData && (
-            <div
-              ref={contentRefs[0]}
-              data-content-id={sideHeadings[0].contentId}
-            >
+            <div ref={(el) => (contentRefs.current[0] = el)} id="Content-0">
               <CourseOverview {...CourseOverviewData} />
             </div>
           )}
           {CourseCurriculumData && (
             <div
               className={styles.contentspace}
-              ref={contentRefs[1]}
-              data-content-id={sideHeadings[1].contentId}
+              ref={(el) => (contentRefs.current[1] = el)}
+              id="Content-1"
             >
               <CourseCurriculum {...CourseCurriculumData} />
             </div>
@@ -217,8 +215,8 @@ const ExploreTheCourses: React.FC<Props> = ({
           {DefenceToolboxData && (
             <div
               className={styles.contentspace}
-              ref={contentRefs[2]}
-              data-content-id={sideHeadings[2].contentId}
+              ref={(el) => (contentRefs.current[2] = el)}
+              id="Content-2"
             >
               <DefenceToolbox {...DefenceToolboxData} />
             </div>
@@ -226,8 +224,8 @@ const ExploreTheCourses: React.FC<Props> = ({
           {WorldClassFacultyData && (
             <div
               className={styles.contentspace}
-              ref={contentRefs[3]}
-              data-content-id={sideHeadings[3].contentId}
+              ref={(el) => (contentRefs.current[3] = el)}
+              id="Content-3"
             >
               <WorldClassFaculty {...WorldClassFacultyData} />
             </div>
@@ -235,8 +233,8 @@ const ExploreTheCourses: React.FC<Props> = ({
           {ToolsCoveredData && (
             <div
               className={styles.contentspace}
-              ref={contentRefs[4]}
-              data-content-id={sideHeadings[4].contentId}
+              ref={(el) => (contentRefs.current[4] = el)}
+              id="Content-4"
             >
               <ToolsCovered {...ToolsCoveredData} />
             </div>
@@ -244,8 +242,8 @@ const ExploreTheCourses: React.FC<Props> = ({
           {PricingAcrossCountriesData && (
             <div
               className={styles.contentspace}
-              ref={contentRefs[5]}
-              data-content-id={sideHeadings[5].contentId}
+              ref={(el) => (contentRefs.current[5] = el)}
+              id="Content-5"
             >
               <PricingAcrossCountries
                 {...PricingAcrossCountriesData}
