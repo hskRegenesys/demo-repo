@@ -157,7 +157,7 @@ const NewsLetter = () => {
             <div className="form-group mt-3 w-100 text-center">
               <button
                 style={{ background: "#ffde59", color: "black" }}
-                className="theme-btn btn-style-two mt-1 pt-1"
+                className="theme-btn btn-style-two mt-1"
                 type="submit"
               >
                 <i className="btn-curve"></i>
