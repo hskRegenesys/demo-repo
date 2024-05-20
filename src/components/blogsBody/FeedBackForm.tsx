@@ -65,7 +65,7 @@ const FeedBackForm = () => {
                   />
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-6 feedback-form-wrapper">
                 <div className="form-group mt-3">
                   <input
                     className={`form-control ${errors.Name && "invalid"}`}
@@ -88,7 +88,7 @@ const FeedBackForm = () => {
                   )}
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-6 feedback-form-wrapper">
                 <div className="form-group mt-3 position-relative">
                   <input
                     type="hidden"
@@ -123,7 +123,7 @@ const FeedBackForm = () => {
                   )}
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-6 feedback-form-wrapper">
                 <div className="form-group mt-3">
                   <input
                     className={`form-control ${errors.Email && "invalid"}`}
@@ -146,7 +146,7 @@ const FeedBackForm = () => {
                   )}
                 </div>
               </div>
-              <div className="col-6 mt-2">
+              <div className="col-6 mt-2 feedback-form-wrapper">
                 <button
                   style={{ background: "#ffde59", color: "black" }}
                   className="theme-btn btn-style-two mt-1 pt-1"

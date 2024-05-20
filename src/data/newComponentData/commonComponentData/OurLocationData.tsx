@@ -51,7 +51,7 @@ const OurLocationData = {
     countryName: "Uganda",
     countryFlagImg: "Images/ContaryImg/ua.svg",
     countryDescription: "Uganda Corporate Office",
-    countryAddress: "Lotis Towers, 6th floor, 16 Mackinnon Rd, Kampala, Uganda",
+    countryAddress: "Arie Tower, 6th Floor, 16 Mackinnon Rd, Kampala, Uganda",
   },
   Croatia: {
     countryName: "Croatia",

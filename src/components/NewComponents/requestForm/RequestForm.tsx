@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -26,6 +26,7 @@ function RequestForm(props: any) {
   const [phoneNumber, setPhoneNumber] = useState<any>("");
   const [formInteraction, setFormInteraction] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState<string>("");
+
 
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
@@ -64,14 +65,11 @@ function RequestForm(props: any) {
     handleSubmit,
   } = hookForm;
 
+
   const programmeOfInterest = watch("Programme_Of_Interest");
 
   const onSubmit = async (data: any, e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    if (phoneNumberError) {
-      return;
-    }
 
     setBtnDisable(true);
     const current = new Date();
@@ -183,6 +181,7 @@ function RequestForm(props: any) {
     mixpanel.track("partial_submitted");
   };
 
+
   return (
     <div className={Styles.RequestFormStyle}>
       <ToastContainer />
@@ -204,7 +203,7 @@ function RequestForm(props: any) {
                   className={`${errors?.Name && "invalid"} ${Styles.inputForm}`}
                   placeholder="Full Name*"
                   {...register("Name", {
-                    required: "Full Name is Required",
+                    required: "*Full Name is Required",
                     pattern: {
                       value: /^[a-zA-Z_ ]+$/,
                       message: "Invalid User Name",
@@ -234,7 +233,7 @@ function RequestForm(props: any) {
                   }`}
                   placeholder="Email*"
                   {...register("Email", {
-                    required: "Email is Required",
+                    required: "*Email is Required",
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                       message: "Invalid email address",
@@ -262,7 +261,8 @@ function RequestForm(props: any) {
                   className={Styles.inputForm}
                   type="hidden"
                   {...register("Phone", {
-                    required: "Phone is Required",
+                    required: "*Phone number is Required",
+                    
                   })}
                 />
                 <PhoneInput
@@ -271,21 +271,26 @@ function RequestForm(props: any) {
                   defaultCountry={geoLocationData?.country_code}
                   placeholder="Select Country Code*"
                   value={watch("Phone")}
+                  {...register("Phone", {
+                    required: "*Phone number is Required",
+                    
+                  })}
                   onChange={(e) => {
                     const phoneNumber = e ? e.toString() : "";
-                    const isValid = validator.isMobilePhone(phoneNumber);
-                    if (isValid) {
-                      setValue("Phone", phoneNumber);
-                      setPhoneNumber(phoneNumber);
-                      mixpanel.track("Phone Changed", {
-                        InputName: "Phone",
-                        Filled: phoneNumber !== "",
-                        newValue: phoneNumber,
-                      });
-                      setPhoneNumberError("");
-                    } else {
-                      setPhoneNumberError("Valid phone number Required");
-                    }
+                      const isValid = validator.isMobilePhone(phoneNumber);
+                      if (isValid) {
+                        setValue("Phone", phoneNumber);
+                        setPhoneNumber(phoneNumber);
+                        mixpanel.track("Phone Changed", {
+                          InputName: "Phone",
+                          Filled: phoneNumber !== "",
+                          newValue: phoneNumber,
+                        });
+                        setPhoneNumberError("");
+                      } else {
+                        setPhoneNumberError("Valid phone number Required");
+                      }
+                    
                   }}
                   onBlur={() => {
                     trigger("Phone");
@@ -293,11 +298,15 @@ function RequestForm(props: any) {
                   className={`inputForm ${phoneNumberError && "invalid"} ${
                     Styles.inputForm
                   }`}
+                  
                 />
-
-                {phoneNumberError && (
+       {phoneNumberError ? (
                   <small className={Styles.smallText}>{phoneNumberError}</small>
-                )}
+                ) :errors?.Phone && (
+                  <small className={Styles.smallText}>
+                    {errors?.Phone?.message}
+                  </small>
+                ) }
               </div>
             </div>
             <div className=" ">
@@ -309,7 +318,7 @@ function RequestForm(props: any) {
                     " focus:border-red-500 focus:ring-red-500 border-red-500"
                   } ${Styles.inputForm}`}
                   {...register("Programme_Of_Interest", {
-                    required: "Course is required",
+                    required: "*Course is required",
                   })}
                 >
                   <option value="" disabled selected>

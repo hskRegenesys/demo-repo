@@ -10,7 +10,7 @@ import { carousalProps } from "./dataTypes";
 
 const BlogsBody = () => {
   return (
-    <div style={{ paddingTop: "85px" }}>
+    <div className="blog-body-wrapper" style={{ paddingTop: "57px" }}>
       <CarouselComponent carouselProps={carousalProps} />
       <div className="container-fluid px-5">
         <div className="row">

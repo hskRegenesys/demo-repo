@@ -5,13 +5,13 @@ const homeSliderBannerData = {
       title: "Slide 1",
     },
     {
-      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-one.png",
+      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-two.png",
       title: "Slide 2",
     },
-    {
-      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-one.png",
-      title: "Slide 3",
-    },
+    // {
+    //   imageUrl: "Images/Banner/Home-Banner-Desktop-slider-three.png",
+    //   title: "Slide 3",
+    // },
   ],
   sliderDataMobile: [
     {
@@ -19,13 +19,13 @@ const homeSliderBannerData = {
       title: "Slide 1",
     },
     {
-      imageUrl: "Images/Banner/Home-Banner-Mobile-slider-one.png",
+      imageUrl: "Images/Banner/Home-Banner-Mobile-slider-two.png",
       title: "Slide 2",
     },
-    {
-      imageUrl: "Images/Banner/Home-Banner-Mobile-slider-one.png",
-      title: "Slide 3",
-    },
+    // {
+    //   imageUrl: "Images/Banner/Home-Banner-Mobile-slider-three.png",
+    //   title: "Slide 3",
+    // },
   ],
 };
 export default homeSliderBannerData;
