@@ -32,7 +32,7 @@ const About = () => {
       <Style />
       <HeaderOne pageTitle="privacyPolicy" />
       <MobileMenu />
-      <PageBanner title="Privacy Policy" />
+      <PageBanner title="Privacy Policy" pageTitle="privacyPolicy" />
       <PrivacyPolicy />
       <CallToSection />
       <MainFooter normalPadding={false} />

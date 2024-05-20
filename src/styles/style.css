@@ -10013,6 +10013,12 @@ featured-section .right-col .sec-title h2 {
   padding-bottom: 20px;
 }
 
+.page-banner .sticky-remove-space{
+  position: relative;
+  padding: 120px 0 40px;
+  padding-bottom: 20px;
+}
+
 .page-banner h1 {
   position: relative;
   font-size: 100px;
