@@ -21,6 +21,7 @@
 .LsSectionHeding {
   color: var(--yocket-com-ebony-clay, #697386);
   text-align: center;
+  font-size: 16px;
 
   font-weight: 600;
   line-height: 130%; /* 52px */
@@ -117,7 +118,7 @@
     margin-top: 40px;
   }
   .LsSectionTitle {
-    font-size: 23px;
+    font-size: 24px;
     margin-bottom: 15px;
   }
   .LsSectionHeding {
