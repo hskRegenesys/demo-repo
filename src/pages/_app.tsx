@@ -22,19 +22,24 @@ import "@/styles/hover.css";
 import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 import { useRouter } from "next/router";
-import { sourceCampaign } from "@/components/config/constant";
+import { useEffect, useState } from "react";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const router = useRouter();
-
+  const [currentUtmUrl, setCurrentUtmUrl] = useState("");
   const { utm_source, utm_medium, utm_campaign, utm_content, id } =
     router.query;
-  const sourceCompaign = sourceCampaign;
-
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
 
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentUtmUrl(window.location.href);
+    }
+  }, []);
+
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -380,14 +385,13 @@ const MyApp = ({ Component, pageProps }: any) => {
       };
 
       window.Tawk_API.onOfflineSubmit = function(data){
-        console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
         const utmSource = '${utm_source ? utm_source : "DR website chat"}'
         const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
         const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
         const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
-        const sourceCompaign = '${sourceCompaign}'
+        const utmUrl = '${currentUtmUrl}'
         
         const salesForceNewData = {
           domain: "crm",
@@ -403,7 +407,10 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_source: utmSource,
           utm_medium: utmMedium,
           utm_campaign: utmCompaign,
-          Source_Campaign:sourceCompaign,
+          utm_content: utmContent,
+          utm_term:"DR+Website+chat",
+          utm_url:utmUrl,
+          Source_Campaign:'DR Website',
           Lead_Source:"DR website chat"  
         };   
  
