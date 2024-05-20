@@ -56,7 +56,7 @@ const BlogContainer = ({
           </div>
         </div>
       </div>
-      <div className="py-5">
+      <div>
         <div className="container-fluid px-5 ">
           {postResponse?.length && (
             <div className="link-title d-flex justify-content-left mb-3">
@@ -97,7 +97,7 @@ const BlogContainer = ({
               </p>
             </div>
           </Link>
-          <div className="row py-3">
+          <div className="row py-3 blog-content-container">
             <div className="col-12 col-lg-9">
               {postResponse?.length > 0 ? (
                 postResponse?.map((item) => (
