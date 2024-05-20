@@ -53,7 +53,7 @@ const GoogleMapData = {
       countryName: "Uganda",
       campusImage: "/assets/images/background/campusImageCroatia.webp",
       corporateOfficeName: "Uganda Corporate Office",
-      address: "Lotis Towers, 6th floor, 16 Mackinnon Rd, Kampala, Uganda",
+      address: "Arie Tower, 6th Floor, 16 Mackinnon Rd, Kampala, Uganda",
     },
   },
 };
