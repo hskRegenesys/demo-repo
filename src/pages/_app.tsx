@@ -21,8 +21,16 @@ import "@/styles/style.css";
 import "@/styles/hover.css";
 import "@/styles/responsive.css";
 import Schemas from "src/schemas";
+import { useRouter } from "next/router";
+import { sourceCampaign } from "@/components/config/constant";
 
 const MyApp = ({ Component, pageProps }: any) => {
+  const router = useRouter();
+
+  const { utm_source, utm_medium, utm_campaign, utm_content, id } =
+    router.query;
+  const sourceCompaign = sourceCampaign;
+
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
 
@@ -245,7 +253,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: "",
           mobile:"",
           interest: "",
-          utm_source: "DR website chat ",
+          utm_source: "DR website chat",
           utm_medium: "DR Website",
           utm_campaign: "DR Website",
           Source_Campaign:"DR Website",
@@ -375,6 +383,12 @@ const MyApp = ({ Component, pageProps }: any) => {
         console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
+        const utmSource = '${utm_source ? utm_source : "DR website chat"}'
+        const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
+        const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
+        const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
+        const sourceCompaign = '${sourceCompaign}'
+        
         const salesForceNewData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -384,10 +398,12 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: "",
           mobile:"",
           interest: "",
-          utm_source: "DR website chat ",
-          utm_medium: "DR Website",
-          utm_campaign: "DR Website",
-          Source_Campaign:"DR Website",
+          source: utmSource,
+          campaign: utmCompaign,
+          utm_source: utmSource,
+          utm_medium: utmMedium,
+          utm_campaign: utmCompaign,
+          Source_Campaign:sourceCompaign,
           Lead_Source:"DR website chat"  
         };   
  
@@ -461,6 +477,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               console.log("question", question);
           }
         });
+        console.log("salesforceDta", salesForceNewData)
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
