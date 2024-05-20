@@ -30,7 +30,7 @@
   color: #bbf7d0;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
@@ -41,7 +41,7 @@
   color: var(--White, #fff);
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -57,12 +57,10 @@
 
 .textList li {
   color: var(--light-text-white, #fff);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
   bottom: 10px;
   position: relative;
-  font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
 }
@@ -73,11 +71,10 @@
 }
 .applyNowHeading {
   color: var(--primary-primary-charcoal, #131718);
-  font-family: Montserrat;
+
   text-align: center;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   margin-bottom: 10px;

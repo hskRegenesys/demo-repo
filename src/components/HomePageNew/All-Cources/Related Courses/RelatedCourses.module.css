@@ -11,7 +11,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
@@ -22,7 +22,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
@@ -55,7 +55,7 @@
   color: var(--light-text-primary, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 24px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -87,7 +87,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
@@ -121,7 +121,7 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -131,10 +131,8 @@
 
 .normalText {
   color: #2b3340;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+  font-family: Montserrat-semiBold;
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-top: 10px;
@@ -155,7 +153,7 @@
   color: var(--primary-primary-charcoal, #131718);
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
@@ -170,7 +168,7 @@
   color: var(--primary-primary-white, #fff);
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
