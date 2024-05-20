@@ -55,7 +55,7 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
           loading="eager"
         />
       </div>
-      <div className={Styles.bannerTextContainer}>
+      {/* <div className={Styles.bannerTextContainer}>
         <h1 className={Styles.headingText}>{HeadingText}</h1>
         <p className={Styles.paragraphText1}>{ParagraphTextDesktop}</p>
         <p className={Styles.paragraphText2}>{ParagraphTextMobile}</p>
@@ -63,7 +63,7 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
         <button className={Styles.button} onClick={handleEnrollButtonClick}>
           {ButtonText}
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
