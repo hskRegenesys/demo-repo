@@ -21,7 +21,7 @@ const RightSidePanel = ({
       <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5">
         {isRecommendedPost ? <RecommendedPost /> : <About />}
       </div>
-      <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5">
+      <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5 ads-new-style">
         <Ads />
       </div>
     </div>

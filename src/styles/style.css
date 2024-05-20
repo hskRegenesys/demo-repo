@@ -293,6 +293,76 @@ p {
   .modal-modify .closeBtn {
     position: absolute !important;
   }
+  .new-heading-title{
+    font-size: 16px !important;
+  }
+  .new-view-more-title{
+    white-space:nowrap !important;
+    font-size: 16px !important;
+  }
+  .read-more-text{
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    padding: 0px !important;
+  }
+  .horizontal-slider .slick-prev {
+    margin-left: -50px !important;
+  }
+  .horizontal-slider .slick-next {
+    margin-right: -50px !important;
+  }
+  .ads-new-style{
+    padding-bottom: 30px !important;
+    padding-top: 25px !important;
+  }
+
+  .blog-content-container .blog-h1{
+    font-size: 35px !important;
+  }
+  .blog-content-container .link-title h2, .blog-content-container .link-title h3{
+   font-size: 25px !important;
+   margin-top: 10px;
+  }
+  .blog-content-container .link-title h2 a{
+    font-size: 25px;
+  }
+  .blog-content-container .link-title h4{
+    font-size: 22px;
+  }
+
+  .btn-style-two .btn-title{
+    padding: 10px 10px 10px !important;
+    line-height: 15px !important;
+
+  }
+
+  .blog-content-container iframe {
+   width: 100% !important;
+  }
+ 
+
+  .blog-body-wrapper{
+    padding-top: 59px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width : 430px) {
+  .new-heading-title{
+    font-size: 14.5px !important;
+  }
+  .new-view-more-title{
+    white-space:nowrap !important;
+    font-size: 14.5px !important;
+  }
+   .feedback-form-wrapper{
+    width: 100% !important;
+  }
+  .feedback-form-wrapper .btn-style-two{
+    display: flex;
+    margin: 0 auto;
+  }
+ 
 }
 
 .auto-container {
@@ -21751,7 +21821,7 @@ h2.highlight {
 }
 .blog-grid-column {
   border: gray 1px solid;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;

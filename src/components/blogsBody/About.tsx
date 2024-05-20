@@ -18,7 +18,7 @@ const About = () => {
             by Regenesys Business School, an international business school with
             campuses in Johannesburg, Mumbai, and Lagos.
           </small>
-          <b onClick={handleReadMore} className="btn" role="button">
+          <b onClick={handleReadMore} className="btn  read-more-text" role="button">
             Read More.
           </b>
         </p>
