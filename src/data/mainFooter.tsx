@@ -87,7 +87,7 @@ export const mainFooter = {
     {
       addressTitle: "Uganda Corporate Office",
       fullAddress:
-        "Lotis Towers, 6th floor, \n 16 Mackinnon Rd, \n Kampala, Uganda",
+        "Arie Tower, 6th Floor, \n 16 Mackinnon Rd, \n Kampala, Uganda",
     },
   ],
   socials: [
