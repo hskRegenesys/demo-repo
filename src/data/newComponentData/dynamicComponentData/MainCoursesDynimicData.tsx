@@ -163,7 +163,7 @@ const MainCoursesDynimicData = {
         },
         PricingAcrossCountriesData: {
           sideHeading: "Pricing Across The Countries",
-          contentHeading: "Pricing Across The Countries",
+          ContentHeding: "Pricing Across The Countries",
           PriceIcon: "Icons/dollar-circle.svg",
           durationIcon: "Icons/timer.svg",
           EnrollmentIcon: "Icons/monitor-recorder.svg",
