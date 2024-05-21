@@ -246,9 +246,15 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        console.log("data",data);
+      
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
+        const utmSource = '${utm_source ? utm_source : "DR website chat"}'
+        const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
+        const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
+        const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
+        const utmUrl = '${currentUtmUrl}'
+
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -258,11 +264,16 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: "",
           mobile:"",
           interest: "",
-          utm_source: "DR website chat",
-          utm_medium: "DR Website",
-          utm_campaign: "DR Website",
-          Source_Campaign:"DR Website",
-          Lead_Source:"DR website chat"
+          source: utmSource,
+          campaign: utmCompaign,
+          utm_source: utmSource,
+          utm_medium: utmMedium,
+          utm_campaign: utmCompaign,
+          utm_content: utmContent,
+          utm_term:"DR+Website+chat",
+          utm_url:utmUrl,
+          Source_Campaign:'DR Website',
+          Lead_Source:"DR website chat" 
         };   
 
         const getCurrentDateNew = () => {
@@ -484,7 +495,6 @@ const MyApp = ({ Component, pageProps }: any) => {
               console.log("question", question);
           }
         });
-        console.log("salesforceDta", salesForceNewData)
       fetch(salesForceUrl, {
         method: 'POST', 
         headers: {
