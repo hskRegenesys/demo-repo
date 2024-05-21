@@ -26,19 +26,12 @@ import { useEffect, useState } from "react";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const router = useRouter();
-  const [currentUtmUrl, setCurrentUtmUrl] = useState("");
   const { utm_source, utm_medium, utm_campaign, utm_content, id } =
     router.query;
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
 
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCurrentUtmUrl(window.location.href);
-    }
-  }, []);
 
   return (
     <ContextProvider>
@@ -253,8 +246,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
         const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
         const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
-        const utmUrl = '${currentUtmUrl}'
-
+       
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -402,7 +394,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
         const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
         const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
-        const utmUrl = '${currentUtmUrl}'
         
         const salesForceNewData = {
           domain: "crm",
