@@ -271,7 +271,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: utmCompaign,
           utm_content: utmContent,
           utm_term:"DR+Website+chat",
-          utm_url:utmUrl,
+          utm_url:window?.location?.href,
           Source_Campaign:'DR Website',
           Lead_Source:"DR website chat" 
         };   
@@ -420,7 +420,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           utm_campaign: utmCompaign,
           utm_content: utmContent,
           utm_term:"DR+Website+chat",
-          utm_url:utmUrl,
+          utm_url:window?.location?.href,
           Source_Campaign:'DR Website',
           Lead_Source:"DR website chat"  
         };   
