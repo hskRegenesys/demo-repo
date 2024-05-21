@@ -65,7 +65,11 @@ const allCourse = () => {
         <HeaderOne pageTitle="all-courses" />
         <MobileMenu />
         <SearchPopup />
-        <PageBanner title="Products" page="All courses" />
+        <PageBanner
+          title="Products"
+          page="All courses"
+          pageTitle="all-courses"
+        />
         <AllCourseText />
         <AllCourseGallery />
         <PartnerOne />

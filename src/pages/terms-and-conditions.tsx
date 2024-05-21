@@ -18,7 +18,7 @@ const Terms = () => {
       <HeaderOne pageTitle="termsCondition" />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Terms & Conditions" />
+      <PageBanner title="Terms & Conditions" pageTitle="termsCondition" />
       <TermsAndConditions />
       <CallToSection />
       <MainFooter normalPadding={false} />

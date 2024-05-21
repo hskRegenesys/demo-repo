@@ -115,6 +115,7 @@ const DigitalMarketing = (props: any) => {
         parentToParentHref={`/${programBaseUrl}/${urlInfo(
           parentToParentName()
         )}`}
+        pageTitle={props.course}
       />
 
       {courseDetails && (

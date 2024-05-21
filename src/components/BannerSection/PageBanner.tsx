@@ -2,14 +2,26 @@ import Link from "next/link";
 import React from "react";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
+import AllPageStickyData from "@/data/stickyData";
 
-const PageBanner = ({
+interface PageBannerProps {
+  title?: string;
+  page?: string;
+  parent?: string;
+  parentHref?: string;
+  parentToParent?: string;
+  parentToParentHref?: string;
+  pageTitle?: string; // Explicitly define the type for pageTitle
+}
+
+const PageBanner: React.FC<PageBannerProps> = ({
   title = "",
   page = "",
   parent = "",
   parentHref = "/",
   parentToParent = "",
   parentToParentHref = "/",
+  pageTitle, // Specify the type for pageTitle
 }) => {
   const breadCrumbs = [
     {
@@ -17,6 +29,7 @@ const PageBanner = ({
       href: "/",
     },
   ];
+
   if (parent) {
     breadCrumbs.push({
       title: parent,
@@ -30,12 +43,21 @@ const PageBanner = ({
       href: parentToParentHref,
     });
   }
+
+  const stickyDataKeys = Object.keys(AllPageStickyData); // Store the keys
+
   return (
     <section className="page-banner">
       <Schemas type={Constants.breadCrumb} data={breadCrumbs} />
       <div className="banner-inner">
         <div className="auto-container">
-          <div className="inner-container clearfix">
+          <div
+            className={`${
+              pageTitle && stickyDataKeys.includes(pageTitle)
+                ? "inner-container"
+                : "sticky-remove-space"
+            } clearfix`}
+          >
             {/* <h1>{title}</h1> */}
             <div className="page-nav">
               <ul className="bread-crumb clearfix">
