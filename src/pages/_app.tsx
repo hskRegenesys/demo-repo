@@ -21,12 +21,25 @@ import "@/styles/style.css";
 import "@/styles/hover.css";
 import "@/styles/responsive.css";
 import Schemas from "src/schemas";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const MyApp = ({ Component, pageProps }: any) => {
+  const router = useRouter();
+  const [currentUtmUrl, setCurrentUtmUrl] = useState("");
+  const { utm_source, utm_medium, utm_campaign, utm_content, id } =
+    router.query;
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
 
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentUtmUrl(window.location.href);
+    }
+  }, []);
+
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -233,9 +246,15 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        console.log("data",data);
+      
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
+        const utmSource = '${utm_source ? utm_source : "DR website chat"}'
+        const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
+        const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
+        const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
+        const utmUrl = '${currentUtmUrl}'
+
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -245,11 +264,16 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: "",
           mobile:"",
           interest: "",
-          utm_source: "DR website chat ",
-          utm_medium: "DR Website",
-          utm_campaign: "DR Website",
-          Source_Campaign:"DR Website",
-          Lead_Source:"DR website chat"
+          source: utmSource,
+          campaign: utmCompaign,
+          utm_source: utmSource,
+          utm_medium: utmMedium,
+          utm_campaign: utmCompaign,
+          utm_content: utmContent,
+          utm_term:"DR+Website+chat",
+          utm_url:utmUrl,
+          Source_Campaign:'DR Website',
+          Lead_Source:"DR website chat" 
         };   
 
         const getCurrentDateNew = () => {
@@ -372,9 +396,14 @@ const MyApp = ({ Component, pageProps }: any) => {
       };
 
       window.Tawk_API.onOfflineSubmit = function(data){
-        console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
+        const utmSource = '${utm_source ? utm_source : "DR website chat"}'
+        const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
+        const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
+        const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
+        const utmUrl = '${currentUtmUrl}'
+        
         const salesForceNewData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -384,10 +413,15 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: "",
           mobile:"",
           interest: "",
-          utm_source: "DR website chat ",
-          utm_medium: "DR Website",
-          utm_campaign: "DR Website",
-          Source_Campaign:"DR Website",
+          source: utmSource,
+          campaign: utmCompaign,
+          utm_source: utmSource,
+          utm_medium: utmMedium,
+          utm_campaign: utmCompaign,
+          utm_content: utmContent,
+          utm_term:"DR+Website+chat",
+          utm_url:utmUrl,
+          Source_Campaign:'DR Website',
           Lead_Source:"DR website chat"  
         };   
  
