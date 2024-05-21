@@ -307,10 +307,10 @@ p {
     padding: 0px !important;
   }
   .horizontal-slider .slick-prev {
-    margin-left: -20px !important;
+    margin-left: -50px !important;
   }
   .horizontal-slider .slick-next {
-    margin-right: -20px !important;
+    margin-right: -50px !important;
   }
   .ads-new-style{
     padding-bottom: 30px !important;
@@ -352,7 +352,7 @@ p {
     max-width: 320px;
   }
   #tns1 > .tns-item {
-    padding-right: 70px !important;
+    padding-right: 50px !important;
   }
 }
 
