@@ -96,8 +96,7 @@
 .cardHeading {
   color: var(--light-text-primary, #2b3340);
   font-family: Montserrat-Bold;
-  font-size: 24px;
-
+  font-size: 22px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;

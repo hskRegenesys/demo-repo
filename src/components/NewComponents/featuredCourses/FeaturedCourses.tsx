@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 // import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
-import Styles from "./featuredCourses.module.css";
+import Styles from "../allCoursesSlider/AllCoursesSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -102,7 +102,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
 
   return (
     <div style={style} className={Styles.featuredCourses}>
-      <div className={Styles.featuredCoursesContainer}>
+      <div className={Styles.allCoursesSliderContainer}>
         <h2 className={Styles.smallHeading}>
           {AllCourcesCardData.FeaturedCoursesHeading}
         </h2>
