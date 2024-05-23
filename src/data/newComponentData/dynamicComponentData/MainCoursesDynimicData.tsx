@@ -365,8 +365,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/DS-Popup-Desktop.png",
-      PopupMobile: "Images/Popup/DS-Popup-Mobile.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   DigitalMarketing: {
@@ -773,8 +773,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   ProjectManagement: {
@@ -1155,8 +1155,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   ArtificialIntelligence: {
@@ -1510,8 +1510,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   CyberSecurity: {
@@ -2108,8 +2108,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   DesignThinking: {
@@ -2495,8 +2495,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   FullStackDeveloper: {
@@ -2965,8 +2965,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   DataAndBusinessAnalytics: {
@@ -3362,8 +3362,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   ManagementAdvancement: {
@@ -3790,8 +3790,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
   ProductManagement: {
@@ -4157,8 +4157,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
     },
   },
 };

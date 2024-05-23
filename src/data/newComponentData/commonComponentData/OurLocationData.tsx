@@ -3,7 +3,7 @@ const OurLocationData = {
   bigHeading: "Innovative. Transformative. Trailblazing.",
   paraText:
     "Digital Regenesys is a leading online educational platform that offers a wide array of upskilling courses designed to empower individuals and organisations with the latest industry-relevant skills. Digital Regenesys operates globally, with a strong presence in the United States, South Africa, Nigeria, Kenya, India, Croatia, Uganda, and Tanzania. Our mission is to bridge the skills gap and drive economic growth by providing learners with access to high-quality, cutting-edge education. Whether in Artificial Intelligence, Data Science or Cybersecurity, Digital Regenesys offers comprehensive courses that cater to diverse learning needs.",
-  countryImage: "Images/ContaryImg/World-Map.png",
+  countryImage: "Images/ContaryImg/World-Map.svg",
   locationPinImage: "Icons/Location-Pin.svg",
   USA: {
     countryName: "USA",

@@ -119,9 +119,8 @@ const FooterContent4: React.FC = () => {
           <strong className={styles.strong}>Follow Us</strong>
         </p>
         <div className={styles.socialIcons}>
-          <div>
-            <a target="_blank" href="https://www.facebook.com/digitalregenesys">
-              {" "}
+          <a target="_blank" href="https://www.facebook.com/digitalregenesys">
+            <div className={styles.socialIconsText}>
               <span className={styles.Icons}>
                 <Image
                   src={`${imageUrl}Icons/facebook-icon.svg`}
@@ -131,14 +130,16 @@ const FooterContent4: React.FC = () => {
                   height={14}
                 />
               </span>
-              <span>Facebook</span>
-            </a>
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
-            >
+              <span>Facebook</span>{" "}
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
+          >
+            {" "}
+            <div className={styles.socialIconsText}>
               <span className={styles.Icons}>
                 <Image
                   src={`${imageUrl}Icons/youtube-icon.svg`}
@@ -148,15 +149,16 @@ const FooterContent4: React.FC = () => {
                   height={14}
                 />
               </span>
-
-              <span>Youtube</span>
-            </a>
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/digital_regenesys/"
-            >
+              <span>Youtube</span>{" "}
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/digital_regenesys/"
+            className={styles.Icons}
+          >
+            {" "}
+            <div className={styles.socialIconsText}>
               <span className={styles.Icons}>
                 <Image
                   src={`${imageUrl}Icons/insta-icon.svg`}
@@ -166,10 +168,9 @@ const FooterContent4: React.FC = () => {
                   height={14}
                 />{" "}
               </span>
-
-              <span>Instagram</span>
-            </a>
-          </div>
+              <span>Instagram</span>{" "}
+            </div>
+          </a>
         </div>
       </div>
     </div>

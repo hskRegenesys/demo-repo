@@ -99,8 +99,8 @@ const HomeNew = ({
   }, []);
 
   const PopupData = {
-    PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
-    PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
+    PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
+    PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
   };
 
   return (

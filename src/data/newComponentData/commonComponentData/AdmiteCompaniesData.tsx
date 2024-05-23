@@ -4,22 +4,25 @@ const AdmiteCompaniesData = {
   admitsButtonIcon: "Icons/DoubleArrowWhite.svg",
   AdmitsCards: [
     {
-      AdmitsImage: "Images/Alumni/wipro.png",
+      AdmitsImage: "Images/Alumni/vodacom.svg",
     },
     {
-      AdmitsImage: "Images/Alumni/tridhya.png",
+      AdmitsImage: "Images/Alumni/liberty.svg",
     },
     {
-      AdmitsImage: "Images/Alumni/security-software-solution.png",
+      AdmitsImage: "Images/Alumni/discovery.svg",
     },
     {
-      AdmitsImage: "Images/Alumni/sankey-solution.png",
+      AdmitsImage: "Images/Alumni/mtn.svg",
     },
     {
-      AdmitsImage: "Images/Alumni/route-mobile.png",
+      AdmitsImage: "Images/Alumni/absa.svg",
     },
     {
-      AdmitsImage: "Images/Alumni/q-tech.png",
+      AdmitsImage: "Images/Alumni/samsung.svg",
+    },
+    {
+      AdmitsImage: "Images/Alumni/nedbank.svg",
     },
   ],
 };
