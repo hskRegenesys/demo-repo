@@ -48,8 +48,8 @@
 
 .studentReviewSideTag {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -2px;
+  right: -1px;
   width: 102px;
   height: 106px;
 }
