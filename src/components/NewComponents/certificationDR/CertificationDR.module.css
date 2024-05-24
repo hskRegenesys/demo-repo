@@ -100,8 +100,8 @@
 }
 
 .rightSection img {
-  box-shadow: 0px 2px 4px 0px #3741511a;
-  border: 0.5px solid #e3e8ee;
+  box-shadow: 0px 2px 4px 0px #3741511a !important;
+  border: 0.5px solid #e3e8ee !important;
 }
 
 .rightSection p {

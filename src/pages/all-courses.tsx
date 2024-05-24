@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import Layout from "@/components/Layout/Layout";
 import AllCoursesPageBanner from "@/components/NewComponents/allCoursesPageBanner/AllCoursesPageBanner";
+import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 
 const WhyChooseDR = dynamic(
   () => import("@/components/NewComponents/whychooseDR/WhyChooseDR")
@@ -38,7 +39,6 @@ const AllCoursesNew = ({
   intitialCoursesCardData,
   initialStudentReviewData,
   initialAllCoursesDynamicData,
-  initialMultiplePagesBrandData,
 }: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
@@ -95,10 +95,6 @@ const AllCoursesNew = ({
         allCourseList={initialCourses}
         AllCourcesCardData={intitialCoursesCardData}
       />
-      {/* <OurCourses
-          data={NewOurCoursesData}
-          handleEnrollButtonClick={handleEnrollButtonClick}
-        /> */}
       <CertificationDR
         data={initialAllCoursesDynamicData?.CertificationDRData}
         handleEnrollButtonClick={handleEnrollButtonClick}
@@ -107,7 +103,8 @@ const AllCoursesNew = ({
         handleEnrollButtonClick={handleEnrollButtonClick}
         StudentReviewData={initialStudentReviewData}
       />
-      <Faq data={initialMultiplePagesBrandData?.faqSections} />
+      <BlogSection data={initialAllCoursesDynamicData?.BlogSectionData} />
+      <Faq data={initialAllCoursesDynamicData?.faqSections} />
       <ReadMoreDropDown data={initialAllCoursesDynamicData?.ReadMore} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
@@ -127,16 +124,13 @@ export async function getStaticProps() {
     const { default: AllCoursesDynamicData } = await import(
       "@/data/newComponentData/dynamicComponentData/AllCoursesDynamicData"
     );
-    const { default: MultiplePagesBrandData } = await import(
-      "@/data/newComponentData/multiplePagesData/MultiplePagesBrandData"
-    );
+
     return {
       props: {
         initialCourses: allCourseList,
         intitialCoursesCardData: AllCourcesCardData,
         initialStudentReviewData: StudentReviewData,
         initialAllCoursesDynamicData: AllCoursesDynamicData,
-        initialMultiplePagesBrandData: MultiplePagesBrandData,
       },
     };
   } catch (error) {
@@ -147,7 +141,6 @@ export async function getStaticProps() {
         initialAllCoursePageBannerData: [],
         initialStudentReviewData: [],
         initialAllCoursesDynamicData: [],
-        initialMultiplePagesBrandData: [],
       },
     };
   }
