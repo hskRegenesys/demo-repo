@@ -2,7 +2,7 @@ const MainCoursesDynimicData = {
   DataScience: {
     CourseCode: "DSN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DS-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DS-Banner.png",
       coursePageName: " Certification Course in Data Science",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -58,7 +58,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DS-explore.webp",
+          contentImg: "Images/Banner/DS-explore.png",
           contentText:
             "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
           contentCard: [
@@ -372,7 +372,7 @@ const MainCoursesDynimicData = {
   DigitalMarketing: {
     CourseCode: "DMN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DM-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DM-Banner.png",
       coursePageName: "Certification Course in Digital Marketing",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -429,7 +429,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DM-explore.svg",
+          contentImg: "Images/Banner/DM-explore.png",
           contentText:
             "Digital Marketing is a comprehensive course that delivers the latest strategies and techniques in online marketing. Acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Stay competitive in the ever-evolving digital marketing landscape by joining our course today.",
           contentCard: [
@@ -781,7 +781,7 @@ const MainCoursesDynimicData = {
     CourseCode: "PM",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PM-Banner.webp",
+      BannerImgDesktop: "Images/Banner/PM-Banner.png",
       coursePageName: "Certification Course in Project Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -838,7 +838,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/PM-explore.svg",
+          contentImg: "Images/Banner/PM-explore.png",
           contentText:
             "Enhance your skills and boost your career prospects with Digital Regenesys’s Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course. ",
           contentCard: [
@@ -1162,7 +1162,7 @@ const MainCoursesDynimicData = {
   ArtificialIntelligence: {
     CourseCode: "AIN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/AI-Banner.webp",
+      BannerImgDesktop: "Images/Banner/AI-Banner.png",
       coursePageName: "Certification Course in Artificial Intelligence",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1219,7 +1219,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/AI-explore.webp",
+          contentImg: "Images/Banner/AI-explore.png",
           contentText:
             "The Digital Regenesys’s Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
           contentCard: [
@@ -1517,7 +1517,7 @@ const MainCoursesDynimicData = {
   CyberSecurity: {
     CourseCode: "CSC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/CS-Banner.webp",
+      BannerImgDesktop: "Images/Banner/CS-Banner.png",
       coursePageName: "Certification Course in Cybersecurity",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1574,7 +1574,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/CS-explore.webp",
+          contentImg: "Images/Banner/CS-explore.png",
           contentText:
             "A  Cyber Security course comprises various aspects of cyber security, including network security, information security, cryptography, and ethical hacking. Students learn how to identify vulnerabilities in systems, mitigate security risks, and respond to security incidents effectively. Upon completion of the course, learners are prepared to pursue careers as cyber security analysts, consultants, or administrators in both the private and public sectors.",
           contentCard: [
@@ -2115,7 +2115,7 @@ const MainCoursesDynimicData = {
   DesignThinking: {
     CourseCode: "DTC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DT-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DT-Banner.png",
       coursePageName: "Certification Course in Design Thinking",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2172,7 +2172,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DT-explore.webp",
+          contentImg: "Images/Banner/DT-explore.png",
           contentText:
             "Our Design Thinking course is designed to provide participants with the tools, techniques, and mindset to approach problem-solving in a human-centred, creative, and iterative manner. Through a combination of lectures, hands-on exercises, and real-world projects, participants will learn to empathise with users, define problems, ideate innovative solutions, prototype designs, and test them with users to gather feedback for continuous improvement.",
           contentCard: [
@@ -2502,7 +2502,7 @@ const MainCoursesDynimicData = {
   FullStackDeveloper: {
     CourseCode: "FSD",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/FSD-Banner.webp",
+      BannerImgDesktop: "Images/Banner/FSD-Banner.png",
       coursePageName: "Certification Course in Full Stack Development",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2559,7 +2559,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/FSD-explore.webp",
+          contentImg: "Images/Banner/FSD-explore.png",
           contentText:
             "Digital Regenesys’s Full Stack Web & Software Development is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on the front end and back end of the web and extract insights from them by using HTML, JavaScript, and GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB.",
           contentCard: [
@@ -2972,7 +2972,7 @@ const MainCoursesDynimicData = {
   DataAndBusinessAnalytics: {
     CourseCode: "DBA",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DBA-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DBA-Banner.png",
       coursePageName: "Certification Course in Data and Business Analytics.",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -3029,7 +3029,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DBA-explore.webp",
+          contentImg: "Images/Banner/DBA-explore.png",
           contentText:
             "Digital Regenesys’ Data and Business Analytics course is a 19-week course that offers a no-code approach to data and business analytics, covering essential concepts and tools for effective analysis and reporting. It emphasises the role of Management Information Systems (MIS) in leveraging data insights for decision-making. Participants will learn advanced techniques, focusing on storytelling through data visualisation and gaining expertise in predictive and prescriptive analytics. By the end of the course, participants will be equipped with the skills needed to tackle challenges in the dynamic field of business analytics.",
           contentCard: [
@@ -3370,7 +3370,7 @@ const MainCoursesDynimicData = {
     CourseCode: "MD",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/MA-Banner.webp",
+      BannerImgDesktop: "Images/Banner/MA-Banner.png",
       coursePageName: "Certification Course in Management Advancement",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -3428,7 +3428,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/MD-explore.webp",
+          contentImg: "Images/Banner/MA-explore.png",
           contentText:
             "Digital Regenesys’ Management Advancement Programme (MAP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management advancement.",
           contentCard: [
@@ -3797,7 +3797,7 @@ const MainCoursesDynimicData = {
   ProductManagement: {
     CourseCode: "PDM",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PDM-Banner.webp",
+      BannerImgDesktop: "Images/Banner/PDM-Banner.png",
       coursePageName: "Certification Course in Product Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",

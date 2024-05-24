@@ -110,8 +110,6 @@ const Course = (props: any) => {
     multiplePagesDatas,
   } = MainCourseData;
 
-  console.log(BlogSectionData);
-
   const isPageDataAvailable =
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
