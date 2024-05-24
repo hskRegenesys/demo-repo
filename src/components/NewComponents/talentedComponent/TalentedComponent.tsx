@@ -14,7 +14,7 @@ interface TalentedComponentProp {
 }
 
 interface Faculty {
-  facultyImg: string;
+  facultyImg?: string;
   facultyName: string;
   courseName: string;
   yearsOfExperience?: string;
@@ -117,14 +117,16 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                   <div className={styles.card}>
                     <div className={styles.bgcolor}></div>
                     <div className={styles.cardImg}>
-                      <Image
-                        src={`${imageUrl}${faculty.facultyImg}`}
-                        // src={faculty.facultyImg}
-                        alt={faculty.facultyName}
-                        title={faculty.facultyName}
-                        width={110}
-                        height={110}
-                      />
+                      {faculty.facultyImg && (
+                        <Image
+                          src={`${imageUrl}${faculty.facultyImg}`}
+                          // src={faculty.facultyImg}
+                          alt={faculty.facultyName}
+                          title={faculty.facultyName}
+                          width={110}
+                          height={110}
+                        />
+                      )}
                     </div>
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
                     <p className={styles.courseName}>{faculty.courseName}</p>

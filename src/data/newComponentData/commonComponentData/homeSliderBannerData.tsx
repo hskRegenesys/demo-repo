@@ -1,11 +1,11 @@
 const homeSliderBannerData = {
   sliderDataDesktop: [
     {
-      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-one.png",
+      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-one.svg",
       title: "Slide 1",
     },
     {
-      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-two.png",
+      imageUrl: "Images/Banner/Home-Banner-Desktop-slider-two.svg",
       title: "Slide 2",
     },
     // {
@@ -15,11 +15,11 @@ const homeSliderBannerData = {
   ],
   sliderDataMobile: [
     {
-      imageUrl: "Images/Banner/Home-Banner-Mobile-slider-one.png",
+      imageUrl: "Images/Banner/Home-Banner-Mobile-slider-one.svg",
       title: "Slide 1",
     },
     {
-      imageUrl: "Images/Banner/Home-Banner-Mobile-slider-two.png",
+      imageUrl: "Images/Banner/Home-Banner-Mobile-slider-two.svg",
       title: "Slide 2",
     },
     // {

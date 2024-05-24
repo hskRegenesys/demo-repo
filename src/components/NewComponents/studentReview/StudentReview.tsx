@@ -70,7 +70,7 @@ const StudentReview = ({
                 <div className={Styles.studentReviewCard}>
                   <div className={Styles.studentReviewSideTag}>
                     <Image
-                      src={`${imageUrl}Icons/Logo-DR-side.png`}
+                      src={`${imageUrl}Icons/Logo-DR-side.svg`}
                       // src="/assets/images/new-component-assets/Logo-DR-side.png"
                       alt="Side Tag"
                       width={102}

@@ -65,6 +65,7 @@
 .WebImage {
   width: 100%;
   height: auto;
+  overflow: hidden;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }

@@ -1,60 +1,82 @@
-const FacultyData = {
-  "Dr. Dennis Laxton": {
-    facultyImg: "Images/Faculty/Dennis-Laxton.webp",
-    facultyName: "Dr. Dennis Laxton ",
-    courseName: "Academic Team Leader and Senior Lecturer",
-    yearsOfExperience: "",
-  },
-  "James Forson": {
-    facultyImg: "Images/Faculty/James_forson.webp",
-    facultyName: "James Forson",
-    courseName: "BSocSc (Hons) and MBA from UCT",
-    yearsOfExperience: "",
-  },
-  "Samidha Kurle": {
-    facultyImg: "Images/Faculty/Samidha_Photo.webp",
-    facultyName: "Samidha Kurle",
-    courseName: "Ph.D. in Computer Engineering and Senior Lecturer",
-    yearsOfExperience: "10+",
-  },
-
-  "Dr. Nilay Karade": {
-    facultyImg: "Images/Faculty/dr_nilay_profile.webp",
-    facultyName: "Dr. Nilay Karade",
-    courseName: "Ph.D. in Computer Science and Senior Lecturer",
-    yearsOfExperience: "11+",
-  },
-  "Dr. Shilpa Joshi": {
-    facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-    facultyName: "Dr. Shilpa Joshi",
-    courseName: "Head of Academics",
+const FacultyData = [
+  {
+    facultyImg: "Images/Faculty/james_forson.svg",
+    facultyName: "Dr. James Forson",
+    courseName: "Ph.D. in Business Management",
     yearsOfExperience: "20+",
   },
-  "Dr. Saquib Ahmad Khan": {
-    facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
-    facultyName: "Dr. Saquib Ahmad Khan",
-    courseName: "PhD Computer Science",
+  {
+    facultyImg: "Images/Faculty/dr_nilay_profile.svg",
+    facultyName: "Dr. Nilay Karade",
+    courseName: "Ph.D. in Computer Science",
+    yearsOfExperience: "15+",
+  },
+  {
+    facultyImg: "Images/Faculty/samidha_kurle.svg",
+    facultyName: "Ms. Samidha Kurle",
+    courseName: "Masters in Computer Engineering",
     yearsOfExperience: "10+",
   },
-  "Dr. Shaista Fatima": {
-    facultyImg: "Images/Faculty/Shaista-Fatima.webp",
+  {
+    facultyImg: "Images/Faculty/gazal_nashte.svg",
+    facultyName: "Ms. Gazal Nashte",
+    courseName: "Masters of Computer Science",
+    yearsOfExperience: "13+",
+  },
+  {
+    facultyImg: "Images/Faculty/hetal_gandhi.svg",
+    facultyName: "Dr. Hetal Gandhi",
+    courseName: "Ph.D. in Computer Engineering",
+    yearsOfExperience: "12+",
+  },
+  {
+    facultyImg: "Images/Faculty/deepika_sharma.svg",
+    facultyName: "Dr. Deepika Sharma",
+    courseName: "Ph.D. in Business Management",
+    yearsOfExperience: "9+",
+  },
+  {
+    facultyImg: "Images/Faculty/rajesh_sharma.svg",
+    facultyName: "Dr. Rajesh Sharma",
+    courseName: "Ph.D. from SAQA",
+    yearsOfExperience: "22+",
+  },
+  {
+    facultyImg: "Images/Faculty/rumana_shaikh.svg",
+    facultyName: "Dr. Rumana Shaikh",
+    courseName: "Ph.D. in Business Management",
+    yearsOfExperience: "12+",
+  },
+  {
+    facultyImg: "Images/Faculty/yatin_karnik.svg",
+    facultyName: "Dr. Yatin Karnik",
+    courseName: "Ph.D. in Management",
+    yearsOfExperience: "30+",
+  },
+  {
+    facultyImg: "Images/Faculty/dennis-laxton.svg",
+    facultyName: "Dr. Dennis Laxton",
+    courseName: "Ph.D. in Business Administration",
+    yearsOfExperience: "20+",
+  },
+  {
+    facultyImg: "Images/Faculty/dr-saquib-ahmad-khan.svg",
+    facultyName: "Dr. Saquib Khan",
+    courseName: "Ph.D. in Computer Science",
+    yearsOfExperience: "10+",
+  },
+  {
+    facultyImg: "Images/Faculty/shaista-fatima.svg",
     facultyName: "Dr. Shaista Fatima",
-    courseName: "PhD. Management",
+    courseName: "Ph.D. in Management",
     yearsOfExperience: "10+",
   },
-
-  "Bhupendra Mishra": {
-    facultyImg: "Images/Faculty/bhupendra_mishra.webp",
-    facultyName: "Bhupendra Mishra",
-    courseName: "Ph.D. from ITM University and Senior Lecturer",
-    yearsOfExperience: "10+",
+  {
+    facultyImg: "Images/Faculty/saraswathy_kumar.svg",
+    facultyName: "Dr. Saraswathy Kumar",
+    courseName: "Ph.D. in Corporate Secretary Ship",
+    yearsOfExperience: "17+",
   },
+];
 
-  "Dr Deepika Sharma": {
-    facultyImg: "Images/Faculty/faculty_deepika_sharma.webp",
-    facultyName: "Dr Deepika Sharma",
-    courseName: "Senior Lecturer",
-    yearsOfExperience: "",
-  },
-};
 export default FacultyData;
