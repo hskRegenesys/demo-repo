@@ -105,7 +105,7 @@ body {
   color: var(--thm-black);
   line-height: 2.125em;
   font-weight: 400;
-  background: #ffffff;
+  background: #FCFCFC;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   top: 0 !important;

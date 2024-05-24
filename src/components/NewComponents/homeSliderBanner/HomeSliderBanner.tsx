@@ -36,22 +36,24 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
         >
           {sliderDataDesktop.map((slide, index) => (
             <SwiperSlide key={index}>
-              <Image
-                className={Styles.img}
-                // src={slide.imageUrl}
-                src={`${imageUrl}${slide.imageUrl}`}
-                alt={slide.title}
-                width={1440}
-                height={503}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                quality={100}
-                unoptimized
-                priority
-                layout="responsive"
-                objectFit="cover"
-                objectPosition="center"
-                loading="eager"
-              />
+              <a href={slide.link}>
+                <Image
+                  className={Styles.img}
+                  // src={slide.imageUrl}
+                  src={`${imageUrl}${slide.imageUrl}`}
+                  alt={slide.title}
+                  width={1440}
+                  height={503}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={100}
+                  unoptimized
+                  priority
+                  layout="responsive"
+                  objectFit="cover"
+                  objectPosition="center"
+                  loading="eager"
+                />
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -68,21 +70,23 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
         >
           {sliderDataMobile.map((slide, index) => (
             <SwiperSlide key={index}>
-              <Image
-                className={Styles.img}
-                src={`${imageUrl}${slide.imageUrl}`}
-                alt={slide.title}
-                width={360}
-                height={506}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                quality={100}
-                unoptimized
-                priority
-                layout="responsive"
-                objectFit="cover"
-                objectPosition="center"
-                loading="eager"
-              />
+              <a href={slide.link}>
+                <Image
+                  className={Styles.img}
+                  src={`${imageUrl}${slide.imageUrl}`}
+                  alt={slide.title}
+                  width={360}
+                  height={506}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={100}
+                  unoptimized
+                  priority
+                  layout="responsive"
+                  objectFit="cover"
+                  objectPosition="center"
+                  loading="eager"
+                />
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>

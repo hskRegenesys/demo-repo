@@ -372,7 +372,7 @@ const MainCoursesDynimicData = {
   DigitalMarketing: {
     CourseCode: "DMN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DM-Banner.svg",
+      BannerImgDesktop: "Images/Banner/DM-Banner.webp",
       coursePageName: "Certification Course in Digital Marketing",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -781,7 +781,7 @@ const MainCoursesDynimicData = {
     CourseCode: "PM",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PM-Banner.svg",
+      BannerImgDesktop: "Images/Banner/PM-Banner.webp",
       coursePageName: "Certification Course in Project Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1162,7 +1162,7 @@ const MainCoursesDynimicData = {
   ArtificialIntelligence: {
     CourseCode: "AIN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/AI-Banner.svg",
+      BannerImgDesktop: "Images/Banner/AI-Banner.webp",
       coursePageName: "Certification Course in Artificial Intelligence",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1517,7 +1517,7 @@ const MainCoursesDynimicData = {
   CyberSecurity: {
     CourseCode: "CSC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/CS-Banner.svg",
+      BannerImgDesktop: "Images/Banner/CS-Banner.webp",
       coursePageName: "Certification Course in Cybersecurity",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2115,7 +2115,7 @@ const MainCoursesDynimicData = {
   DesignThinking: {
     CourseCode: "DTC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DT-Banner.svg",
+      BannerImgDesktop: "Images/Banner/DT-Banner.webp",
       coursePageName: "Certification Course in Design Thinking",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2502,7 +2502,7 @@ const MainCoursesDynimicData = {
   FullStackDeveloper: {
     CourseCode: "FSD",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/FSD-Banner.svg",
+      BannerImgDesktop: "Images/Banner/FSD-Banner.webp",
       coursePageName: "Certification Course in Full Stack Development",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2972,7 +2972,7 @@ const MainCoursesDynimicData = {
   DataAndBusinessAnalytics: {
     CourseCode: "DBA",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DBA-Banner.svg",
+      BannerImgDesktop: "Images/Banner/DBA-Banner.webp",
       coursePageName: "Certification Course in Data and Business Analytics.",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -3370,7 +3370,7 @@ const MainCoursesDynimicData = {
     CourseCode: "MD",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/MA-Banner.svg",
+      BannerImgDesktop: "Images/Banner/MA-Banner.webp",
       coursePageName: "Certification Course in Management Advancement",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -3797,7 +3797,7 @@ const MainCoursesDynimicData = {
   ProductManagement: {
     CourseCode: "PDM",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PDM-Banner.svg",
+      BannerImgDesktop: "Images/Banner/PDM-Banner.webp",
       coursePageName: "Certification Course in Product Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
