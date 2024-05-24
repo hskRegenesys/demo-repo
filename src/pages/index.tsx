@@ -68,7 +68,8 @@ const HomeNew = ({
   initialCourses,
   intitialCoursesCardData,
   initialStudentReviewData,
-  initialMultiplePagesBrandData,
+  initialLearnersSupportSectionData,
+  initialBlogSectionDataHome,
   initialAllCoursesDynamicData,
   initialToolsCoveredData,
   initialAdmiteCompaniesData,
@@ -116,12 +117,16 @@ const HomeNew = ({
       <MobileMenu />
       <HomeSliderBanner onFormSubmit={() => {}} />
       <UspSection />
+      <AdmitsCompanies
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        AdmiteCompaniesData={initialAdmiteCompaniesData}
+      />
       <FeaturedCourses
         handleEnrollButtonClick={handleEnrollButtonClick}
-        style={{
-          background:
-            "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
-        }}
+        // style={{
+        //   background:
+        //     "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
+        // }}
         allCourseList={initialCourses}
         AllCourcesCardData={intitialCoursesCardData}
       />
@@ -140,10 +145,7 @@ const HomeNew = ({
         FacultyData={initialFacultyData}
       />
       <OurLocation />
-      <AdmitsCompanies
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        AdmiteCompaniesData={initialAdmiteCompaniesData}
-      />
+
       <StudentReview
         handleEnrollButtonClick={handleEnrollButtonClick}
         StudentReviewData={initialStudentReviewData}
@@ -151,9 +153,9 @@ const HomeNew = ({
       <LearnersBenefit LearnersBenefitData={initialLearnersBenefitData} />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-      <BlogSection data={initialMultiplePagesBrandData?.BlogSectionDataHome} />
+      <BlogSection data={initialBlogSectionDataHome} />
       <LearnersSupport
-        data={initialMultiplePagesBrandData?.LearnersSupportSectionData}
+        data={initialLearnersSupportSectionData}
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
       <Faq data={initialFaqData} />
@@ -206,7 +208,9 @@ export async function getStaticProps() {
         initialVideoTestimonialData: videoTestimonialData,
         intitialCoursesCardData: AllCourcesCardData,
         initialStudentReviewData: StudentReviewData,
-        initialMultiplePagesBrandData: MultiplePagesBrandData,
+        initialLearnersSupportSectionData:
+          HomeDynamicData?.LearnersSupportSectionData,
+        initialBlogSectionDataHome: HomeDynamicData?.BlogSectionDataHome,
         initialAllCoursesDynamicData: AllCoursesDynamicData,
         initialToolsCoveredData: ToolsCoveredData,
         initialAdmiteCompaniesData: AdmiteCompaniesData,
@@ -222,7 +226,8 @@ export async function getStaticProps() {
         initialVideoTestimonialData: [],
         initialAllCoursePageBannerData: [],
         initialStudentReviewData: [],
-        initialMultiplePagesBrandData: [],
+        initialLearnersSupportSectionData: [],
+        initialBlogSectionDataHome: [],
         initialAllCoursesDynamicData: [],
         initialToolsCoveredData: [],
         initialAdmiteCompaniesData: [],

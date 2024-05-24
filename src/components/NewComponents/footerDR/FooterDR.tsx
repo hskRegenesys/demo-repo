@@ -138,7 +138,6 @@ const FooterContent4: React.FC = () => {
             target="_blank"
             href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
           >
-            {" "}
             <div className={styles.socialIconsText}>
               <span className={styles.Icons}>
                 <Image

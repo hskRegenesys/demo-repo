@@ -1,42 +1,64 @@
 const HomeDynamicData = {
+  LearnersSupportSectionData: {
+    LsSectionTitle: "Digital Regenesys Learners Support",
+    LsHeding: "Talk To Our Experts. We’re Available 24/7",
+    LearnersSupportCards: [
+      {
+        LsImg: "Images/LearnersSupport-one.svg",
+        LsQuestion: "Discuss with a career advisor",
+        LsText: "Not sure? Talk to an expert",
+        LsButtonText: "Talk Now",
+      },
+      {
+        LsImg: "Images/LearnersSupport-two.svg",
+        LsQuestion: "Download Brochure",
+        LsText: "Get Complete Details",
+        LsButtonText: "Download",
+      },
+      {
+        LsImg: "Images/LearnersSupport-three.svg",
+        LsQuestion: "Eligibility",
+        LsText: "Know Your Eligibility",
+        LsButtonText: " Check Eligibility",
+      },
+    ],
+  },
   BlogSectionDataHome: {
     BlogSectionTitle: "Read Our Blogs For More Insights",
     BlogSectionCards: [
       {
-        blogImg: "Images/Blog/blog.png",
-        blogQuestion: "Understanding IELTS",
+        blogImg: "Images/Blog/brand-blog-online-course.svg",
+        blogQuestion: "What Are the Benefits of Taking Online Courses?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-taking-online-courses",
         blogText:
-          "The International English Language Testing System, or IELTS, is an exam designed for students who wish to study abroad...",
+          "In the ever-evolving landscape of education, online courses have transformed the traditional learning paradigm, offering many advantages to learners worldwide. These digital educational experiences,",
       },
       {
-        blogImg: "Images/Blog/blog.png",
-        blogQuestion: "Research Strategies for Students",
+        blogImg: "Images/Blog/brand-blog-certificates.svg",
+        blogQuestion:
+          "Where Do You Find The Best Online Courses With Certificates?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/where-do-you-find-the-best-online-courses-with-certificates",
         blogText:
-          "Effective research is crucial for academic success. Learn valuable strategies and tips to enhance your research skills as a student...",
+          "In the era of online education, the quest for the best courses, accompanied by valuable certificates, has become a vital pursuit",
       },
       {
-        blogImg: "Images/Blog/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
+        blogImg: "Images/Blog/brand-blog-it-courses.svg",
+        blogQuestion:
+          "How Do You Choose The Right Online IT Course For Your Career?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/why-online-courses-are-ideal-for-working-professionals",
         blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+          "In the ever-evolving landscape of Information Technology (IT), choosing the right online course for your career is a pivotal decision to shape your professional trajectory. As technology advances,",
       },
       {
-        blogImg: "Images/Blog/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
+        blogImg: "Images/Blog/brand-blog-working-professionals.svg",
+        blogQuestion: "Why Online Courses Are Ideal For Working Professionals?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/how-do-you-choose-the-right-online-it-course-for-your-career",
         blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-      },
-      {
-        blogImg: "Images/Blog/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
-        blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-      },
-      {
-        blogImg: "Images/Blog/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
-        blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+          "In the rapidly evolving education landscape, online courses have emerged as a transformat...",
       },
     ],
   },
