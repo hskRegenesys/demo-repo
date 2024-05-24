@@ -365,14 +365,14 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   DigitalMarketing: {
     CourseCode: "DMN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DM-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DM-Banner.svg",
       coursePageName: "Certification Course in Digital Marketing",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -429,7 +429,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DM-explore.webp",
+          contentImg: "Images/Banner/DM-explore.svg",
           contentText:
             "Digital Marketing is a comprehensive course that delivers the latest strategies and techniques in online marketing. Acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Stay competitive in the ever-evolving digital marketing landscape by joining our course today.",
           contentCard: [
@@ -773,15 +773,15 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   ProjectManagement: {
     CourseCode: "PM",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PM-Banner.webp",
+      BannerImgDesktop: "Images/Banner/PM-Banner.svg",
       coursePageName: "Certification Course in Project Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -838,7 +838,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/PM-explore.webp",
+          contentImg: "Images/Banner/PM-explore.svg",
           contentText:
             "Enhance your skills and boost your career prospects with Digital Regenesys’s Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course. ",
           contentCard: [
@@ -1155,14 +1155,14 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   ArtificialIntelligence: {
     CourseCode: "AIN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/AI-Banner.webp",
+      BannerImgDesktop: "Images/Banner/AI-Banner.svg",
       coursePageName: "Certification Course in Artificial Intelligence",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1510,14 +1510,14 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   CyberSecurity: {
     CourseCode: "CSC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/CS-Banner.webp",
+      BannerImgDesktop: "Images/Banner/CS-Banner.svg",
       coursePageName: "Certification Course in Cybersecurity",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2108,14 +2108,14 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   DesignThinking: {
     CourseCode: "DTC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DT-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DT-Banner.svg",
       coursePageName: "Certification Course in Design Thinking",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2495,14 +2495,14 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   FullStackDeveloper: {
     CourseCode: "FSD",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/FSD-Banner.webp",
+      BannerImgDesktop: "Images/Banner/FSD-Banner.svg",
       coursePageName: "Certification Course in Full Stack Development",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2965,14 +2965,14 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   DataAndBusinessAnalytics: {
     CourseCode: "DBA",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DBA-Banner.webp",
+      BannerImgDesktop: "Images/Banner/DBA-Banner.svg",
       coursePageName: "Certification Course in Data and Business Analytics.",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -3362,15 +3362,15 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   ManagementAdvancement: {
     CourseCode: "MD",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/MD-Banner.webp",
+      BannerImgDesktop: "Images/Banner/MA-Banner.svg",
       coursePageName: "Certification Course in Management Advancement",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -3790,14 +3790,14 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
   ProductManagement: {
     CourseCode: "PDM",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PDM-Banner.png",
+      BannerImgDesktop: "Images/Banner/PDM-Banner.svg",
       coursePageName: "Certification Course in Product Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -4157,8 +4157,8 @@ const MainCoursesDynimicData = {
       ],
     },
     PopupData: {
-      PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-      PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+      PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+      PopupMobile: "Images/Popup/Home-Desktop-Popup.png",
     },
   },
 };

@@ -75,9 +75,10 @@ const PopupForm: React.FC<PopupFormProps> = ({
                     alt="Popup Image"
                     width={388}
                     height={500}
-                    quality={100}
                     layout="responsive"
                     objectFit="cover"
+                    loading="eager"
+                    priority
                   />
                 </div>
                 <div className={Styles.MobileImage}>
@@ -87,9 +88,10 @@ const PopupForm: React.FC<PopupFormProps> = ({
                     alt="Popup Image"
                     width={360}
                     height={210}
-                    quality={100}
                     layout="responsive"
                     objectFit="cover"
+                    loading="eager"
+                    priority
                   />
                 </div>
               </div>
