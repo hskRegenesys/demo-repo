@@ -125,6 +125,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                           title={faculty.facultyName}
                           width={110}
                           height={110}
+                          priority
                         />
                       )}
                     </div>

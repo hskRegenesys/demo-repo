@@ -23,6 +23,7 @@ const nextConfig = {
       "www.regenesys.net",
       "blog-api.digitalregenesys.com",
       "s3-inf-uat-dr-website.s3.amazonaws.com",
+      "prod-inf-dr-website.s3.ap-south-1.amazonaws.com",
     ],
   },
 };

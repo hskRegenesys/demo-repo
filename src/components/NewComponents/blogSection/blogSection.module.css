@@ -23,8 +23,6 @@
   display: flex;
   justify-content: space-around;
   gap: 20px;
-
-  /* Add your container styles for cards */
 }
 .blogContent {
   display: flex;

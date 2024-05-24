@@ -63,8 +63,8 @@ const AllCoursesNew = ({
     }
   }, []);
   const PopupData = {
-    PopupDesktop: "Images/Popup/Home-Desktop-Popup.svg",
-    PopupMobile: "Images/Popup/Home-Mobile-Popup.svg",
+    PopupDesktop: "Images/Popup/Home-Desktop-Popup.png",
+    PopupMobile: "Images/Popup/Home-Mobile-Popup.png",
   };
   return (
     <Layout>
