@@ -2,10 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import UspSectionData from "../../../data/newComponentData/commonComponentData/UspSectionData";
 import styles from "./uspSection.module.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 const UspSection: React.FC = () => {
   const { uspLocationCard, uspEnrollmentCard, uspUpskillCard } = UspSectionData;
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   // const [enrollmentCount, setEnrollmentCount] = useState("0");
   // const [locationCount, setLocationCount] = useState("0");

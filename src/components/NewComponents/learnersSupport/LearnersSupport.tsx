@@ -3,6 +3,7 @@ import Styles from "./LearnersSupport.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 interface LearnerSupportCardData {
   LsImg: string;
   LsQuestion: string;
@@ -25,7 +26,7 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
   data,
   handleEnrollButtonClick,
 }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.LsSectionContainer}>

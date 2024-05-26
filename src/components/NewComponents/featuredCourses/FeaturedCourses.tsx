@@ -17,6 +17,7 @@ import {
   digitalMarkrtingCode,
   programBaseUrl,
 } from "../../config/constant";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 // import { allCourseList } from "@/data/courseData";
 SwiperCore.use([Pagination, Autoplay]);
@@ -49,7 +50,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (

@@ -4,6 +4,7 @@ import Styles from "./learnersBenefit.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 const LearnersBenefit = ({ LearnersBenefitData }: any) => {
   const {
     LearnersBenefitHeading,
@@ -13,7 +14,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
     LearnersBenefitFrame1,
     LearnersBenefitFrame2,
   } = LearnersBenefitData;
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.LearnersBenefitContainer}>

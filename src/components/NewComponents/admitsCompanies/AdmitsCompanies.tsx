@@ -6,6 +6,7 @@ import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Styles from "./admitsCompanies.module.css";
 // import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: () => void;
   AdmiteCompaniesData: any;
@@ -18,7 +19,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
 }) => {
   const { AdmitsHeading, AdmitsTitle, admitsButtonIcon, AdmitsCards } =
     AdmiteCompaniesData;
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   const swiperSettings = {
     loop: true,

@@ -19,6 +19,7 @@ import {
   digitalMarkrtingCode,
   programBaseUrl,
 } from "../../config/constant";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 // import { allCourseList } from "@/data/courseData";
 // import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
@@ -55,7 +56,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./footerDR.module.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 interface FooterContent1Props {
   handleEnrollButtonClick: (title?: string) => void;
@@ -9,7 +10,7 @@ interface FooterContent1Props {
 const FooterContent1: React.FC<FooterContent1Props> = ({
   handleEnrollButtonClick,
 }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={styles.footerContent1}>

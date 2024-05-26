@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 SwiperCore.use([Pagination, Autoplay]);
 
 interface BlogSectionCardData {
@@ -28,7 +29,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
   }
 
   const addBottomValue = data.BlogSectionCards.length <= 3 ? "0px" : "60px";
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.blogSectionContainer}>

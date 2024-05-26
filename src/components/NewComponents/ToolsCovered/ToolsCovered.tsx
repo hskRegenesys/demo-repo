@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./ToolsCovered.module.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 interface ToolCoveredData {
   heading: string;
   title: string;
@@ -12,7 +13,7 @@ interface ToolCoveredCardProps {
 }
 
 const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.toolCard}>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ReadMoreDropDown.module.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 // Define a type for the data prop
 interface ReadMoreData {
   heading: string;
@@ -12,7 +13,7 @@ interface ReadMoreData {
 
 const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   const toggleReadMore = () => {
     setIsOpen(!isOpen);

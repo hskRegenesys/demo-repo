@@ -1,3 +1,13 @@
+import { allCourseList } from "@/data/courseData";
+import AdmiteCompaniesData from "../commonComponentData/AdmiteCompaniesData";
+import ToolsCoveredData from "../commonComponentData/ToolsCoveredData";
+import AllCourcesCardData from "../commonComponentData/AllCourcesCardData";
+import StudentReviewData from "../commonComponentData/StudentReviewData";
+import FacultyData from "../commonComponentData/FacultyData";
+import LearnersBenefitData from "../commonComponentData/LearnersBenefitData";
+import AllCoursesDynamicData from "./AllCoursesDynamicData";
+import homeSliderBannerData from "../commonComponentData/homeSliderBannerData";
+
 const HomeDynamicData = {
   LearnersSupportSectionData: {
     LsSectionTitle: "Digital Regenesys Learners Support",
@@ -171,6 +181,33 @@ const HomeDynamicData = {
         ],
       },
     ],
+  },
+  ToolsCoveredData: {
+    ...ToolsCoveredData,
+  },
+  AdmiteCompaniesData: {
+    ...AdmiteCompaniesData,
+  },
+  allCourseList: {
+    ...allCourseList,
+  },
+  AllCourcesCardData: {
+    ...AllCourcesCardData,
+  },
+  StudentReviewData: {
+    ...StudentReviewData,
+  },
+  FacultyData: {
+    ...FacultyData,
+  },
+  LearnersBenefitData: {
+    ...LearnersBenefitData,
+  },
+  AllCoursesDynamicData: {
+    ...AllCoursesDynamicData,
+  },
+  homeSliderBannerData: {
+    ...homeSliderBannerData,
   },
 };
 

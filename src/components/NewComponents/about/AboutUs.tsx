@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AboutUsData from "../../../data/newComponentData/commonComponentData/AboutUsData";
 import Styles from "./aboutUs.module.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 interface AboutUsProps {
   handleEnrollButtonClick: () => void;
 }
@@ -19,7 +20,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [showFullParagraph, setShowFullParagraph] = useState(false);
   const [needsTruncation, setNeedsTruncation] = useState(false);
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   useEffect(() => {
     const handleResize = () => {
