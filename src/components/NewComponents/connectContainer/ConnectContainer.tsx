@@ -3,6 +3,7 @@ import styles from "./connectContainer.module.css";
 import RequestForm from "../requestForm/RequestForm";
 import connectContainerData from "../../../data/newComponentData/commonComponentData/ConnnectContainerData";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 interface ConnectContainerProps {
   onFormSubmit: () => void;
 }
@@ -18,7 +19,7 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
     whiteFilledStarIcon,
     discountIcon,
   } = connectContainerData;
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={styles.connectContainer}>

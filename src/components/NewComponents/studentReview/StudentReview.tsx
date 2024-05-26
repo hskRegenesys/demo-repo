@@ -4,6 +4,7 @@ import Styles from "./StudentReview.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 interface StudentReviewProps {
   handleEnrollButtonClick: () => void;
@@ -16,7 +17,7 @@ const StudentReview = ({
 }: StudentReviewProps) => {
   const { StudentReviewTitle, StudentReviewHeading, StudentReviewCard } =
     StudentReviewData;
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.reviewCardContainer}>

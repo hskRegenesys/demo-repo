@@ -11,6 +11,7 @@ import CroatiaSection from "./CountriesDetails/CroatiaSection";
 import NigeriaSection from "./CountriesDetails/NigeriaSection";
 import TanzaniaSection from "./CountriesDetails/TanzaniaSection";
 import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 const OurLocation: React.FC = () => {
   const { smallHeading, bigHeading, paraText, countryImage } = OurLocationData;
@@ -18,7 +19,7 @@ const OurLocation: React.FC = () => {
   const [hoveredLocation, setHoveredLocation] = useState<string | null>(null);
   const [isExpanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const imageUrl = `${process.env.awsImage_url}`;
+  const imageUrl = imageBaseUrl();
   let usaHoverTimeout: NodeJS.Timeout;
   const handleMouseEnter = (location: string) => {
     if (!isMobile) {

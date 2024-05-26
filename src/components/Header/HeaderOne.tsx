@@ -17,6 +17,7 @@ import ThankYouPopup from "../Modal/ThankYouPopup";
 import StickyData from "../StickyHeaderForm/StickyData";
 import { Input, Space } from "antd";
 import { allCourseList } from "@/data/courseData";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 const { Search } = Input;
 const {
@@ -55,6 +56,7 @@ const HeaderOne = ({
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : nav;
+  const imageUrl = imageBaseUrl();
 
   let Logo: any =
     logo === 2
@@ -247,7 +249,6 @@ const HeaderOne = ({
       window.removeEventListener("scroll", checkScroll);
     };
   }, []);
-  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <header

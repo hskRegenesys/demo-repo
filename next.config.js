@@ -4,7 +4,9 @@ const nextConfig = {
   swcMinify: false, // it should be false by default
   experimental: {
     newNextLinkBehavior: false,
+    externalDir: true,
   },
+  disableExperimentalFeaturesWarning: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
