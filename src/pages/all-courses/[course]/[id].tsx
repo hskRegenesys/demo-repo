@@ -80,17 +80,17 @@ const Course = (props: any) => {
   const handleYoutubePopupClose = () => {
     setIsisYoutubePopup(false);
   };
-  useEffect(() => {
-    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
-    if (!popupDisplayed) {
-      const timeoutModal = setTimeout(() => {
-        setIsPopupVisible(true);
-        sessionStorage.setItem("popupDisplayed", "true");
-      }, 5000);
+  // useEffect(() => {
+  //   const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+  //   if (!popupDisplayed) {
+  //     const timeoutModal = setTimeout(() => {
+  //       setIsPopupVisible(true);
+  //       sessionStorage.setItem("popupDisplayed", "true");
+  //     }, 5000);
 
-      return () => clearTimeout(timeoutModal);
-    }
-  }, []);
+  //     return () => clearTimeout(timeoutModal);
+  //   }
+  // }, []);
 
   const MainCourseData = DataSeparatorPages(page);
 

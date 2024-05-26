@@ -83,21 +83,37 @@ const HomeNew = ({
     setIsPopupVisible(true);
   };
 
+  // useEffect(() => {
+  //   const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+  //   if (!popupDisplayed) {
+  //     const timeoutModal = setTimeout(() => {
+  //       setIsPopupVisible(true);
+  //       sessionStorage.setItem("popupDisplayed", "true");
+  //     }, 5000);
+
+  //     return () => clearTimeout(timeoutModal);
+  //   }
+  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const experienceSection = document.getElementById("experience-section");
+      if (experienceSection) {
+        const { top } = experienceSection.getBoundingClientRect();
+        if (top < window.innerHeight * 0.5) {
+          setIsPopupVisible(true);
+          window.removeEventListener("scroll", handleScroll);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
-
-  useEffect(() => {
-    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
-    if (!popupDisplayed) {
-      const timeoutModal = setTimeout(() => {
-        setIsPopupVisible(true);
-        sessionStorage.setItem("popupDisplayed", "true");
-      }, 5000);
-
-      return () => clearTimeout(timeoutModal);
-    }
-  }, []);
 
   const PopupData = {
     PopupDesktop: "Images/Popup/Home-Desktop-Popup.webp",
@@ -138,6 +154,8 @@ const HomeNew = ({
         allCourseList={initialCourses}
         AllCourcesCardData={intitialCoursesCardData}
       />
+      <div id="experience-section"></div>
+
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={initialToolsCoveredData} />
       <TalentedComponent
@@ -158,7 +176,7 @@ const HomeNew = ({
         data={initialLearnersSupportSectionData}
         handleEnrollButtonClick={handleEnrollButtonClick}
       />
-      <Faq data={initialFaqData} />
+      {/* <Faq data={initialFaqData} /> */}
       <ReadMoreDropDown data={initialAllCoursesDynamicData?.ReadMore} />
 
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />

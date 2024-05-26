@@ -244,6 +244,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                           loading="eager"
                         />
                       </div>
+
                       <div className={Styles.boldText}>
                         {parentCourse.cardTool}
                       </div>
@@ -251,7 +252,22 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                         {AllCourcesCardData.cardToolsText}
                       </div>
                     </div>
-                  ) : null}
+                  ) : (
+                    <div className={Styles.line3}>
+                      <div className={Styles.icon}>
+                        <Image
+                          src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                          alt="icon"
+                          className={Styles.cardIcon}
+                          width={24}
+                          height={24}
+                          loading="eager"
+                        />
+                      </div>
+
+                      <div className={Styles.normalText}>Capstone Projects</div>
+                    </div>
+                  )}
                 </div>
                 <div className={Styles.buttonContainer}>
                   <button

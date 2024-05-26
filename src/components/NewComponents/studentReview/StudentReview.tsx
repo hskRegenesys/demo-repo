@@ -72,7 +72,7 @@ const StudentReview = ({
             return (
               <SwiperSlide key={index}>
                 <div className={Styles.studentReviewCard}>
-                  <div className={Styles.studentReviewSideTag}>
+                  {/* <div className={Styles.studentReviewSideTag}>
                     <Image
                       src={`${imageUrl}Icons/Logo-DR-side.svg`}
                       // src="/assets/images/new-component-assets/Logo-DR-side.png"
@@ -80,7 +80,7 @@ const StudentReview = ({
                       width={102}
                       height={106}
                     />
-                  </div>
+                  </div> */}
                   <div className={Styles.studentReviewCardImg}>
                     <Image
                       src={`${imageUrl}${item.StudentReviewCardImg}`}

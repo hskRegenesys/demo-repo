@@ -15,7 +15,7 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
     <div className={styles.footerContent1}>
       <div className={styles.footerLogo}>
         <Image
-          src={`${imageUrl}Images/DR_Logo.svg`}
+          src={`${imageUrl}Icons/DR-logo.webp`}
           // src="/assets/images/new-component-assets/DR_Logo.svg"
           alt="LogoIpsum"
           width={174}
