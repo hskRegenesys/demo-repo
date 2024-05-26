@@ -247,6 +247,7 @@ const HeaderOne = ({
       window.removeEventListener("scroll", checkScroll);
     };
   }, []);
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <header
@@ -272,7 +273,7 @@ const HeaderOne = ({
                   {/* <Image id="thm-logo" src={Logo} alt={title} title={title} /> */}
                   <div>
                     <Image
-                      src={Logo}
+                      src={`${imageUrl}Icons/DR-Logo-black.svg`}
                       layout="intrinsic"
                       width="237"
                       height="60"

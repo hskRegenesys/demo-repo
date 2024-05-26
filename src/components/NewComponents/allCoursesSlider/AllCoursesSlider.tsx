@@ -146,9 +146,14 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
           slidesPerView={3}
           pagination={{ clickable: true }}
           slidesPerGroup={3}
+          // centeredSlides={true}
+          // grabCursor={true}
+          // modules={[Pagination]}
           breakpoints={{
             0: {
-              slidesPerView: 1,
+              slidesPerView: 1.25,
+              slidesPerGroup: 1,
+              centeredSlides: true,
             },
             865: {
               slidesPerView: 2,

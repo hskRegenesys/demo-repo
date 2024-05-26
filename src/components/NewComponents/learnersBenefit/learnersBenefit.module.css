@@ -161,11 +161,12 @@
 }
 @media (max-width: 920px) {
   .LearnersBenefitContainer {
-    margin: 20px 16px;
+    margin: 20px 0px;
   }
   .LearnersBenefitCard {
     display: block;
     background: #ecfaef;
+    min-height: 432px;
   }
   .LeftSide {
     padding: 0px;

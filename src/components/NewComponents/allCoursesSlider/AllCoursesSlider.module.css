@@ -184,11 +184,10 @@
   color: var(--primary-primary-charcoal, #131718);
   font-family: Montserrat-Bold;
   font-size: 14px;
-
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
-  padding: 10px 20px;
+  padding: 10px 16px;
   border-radius: 8px;
   transition: background-color 0.8s;
   border: 1px solid var(--primary-primary-charcoal, #131718);
@@ -200,11 +199,10 @@
   color: var(--primary-primary-white, #fff);
   font-family: Montserrat-Bold;
   font-size: 14px;
-
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
-  padding: 10px 20px;
+  padding: 10px 16px;
   border-radius: 8px;
   border: 0.837px solid #008554;
   background: #008554;
@@ -255,8 +253,11 @@
     padding-bottom: var(--add-bottom) !important;
     align-items: center;
   }
+  .card {
+    padding: 20px 16px;
+  }
   .allCoursesSliderContainer {
-    padding: 40px 16px 0px 16px;
+    padding: 40px 0px 0px;
     background: none !important;
   }
   .card {
@@ -279,7 +280,11 @@
     margin-bottom: 32px;
   }
   .cardHeading {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .cardImage {
+    width: 352px !important;
+    height: 220px !important;
   }
   .cardStarContainer {
     padding: 7px 13px;

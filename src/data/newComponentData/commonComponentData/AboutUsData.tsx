@@ -1,5 +1,5 @@
 const AboutUsData = {
-  aboutUsImg: "Images/AboutUs.png",
+  aboutUsImg: "Images/AboutUs.webp",
   aboutUsImgAlt: "About Us - Digital Regenesys",
   aboutTitle: "About Digital Regenesys",
   aboutHeading: "Reasons That Set Us Apart",

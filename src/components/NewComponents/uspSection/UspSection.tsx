@@ -1,33 +1,91 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import UspSectionData from "../../../data/newComponentData/commonComponentData/UspSectionData";
 import styles from "./uspSection.module.css";
 import Image from "next/image";
 
-const UspSection = () => {
+const UspSection: React.FC = () => {
   const { uspLocationCard, uspEnrollmentCard, uspUpskillCard } = UspSectionData;
   const imageUrl = `${process.env.awsImage_url}`;
 
-  const [count, setCount] = useState("0");
+  const [enrollmentCount, setEnrollmentCount] = useState("0");
+  const [locationCount, setLocationCount] = useState("0");
+  const [upskillCount, setUpskillCount] = useState("0");
   const [isMobile, setIsMobile] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let start = 0;
-    const end = parseInt(uspEnrollmentCard.uspEnrollmentCount.substring(0, 3));
+    const countAnimation = (
+      startValue: number,
+      endValue: string,
+      setCount: React.Dispatch<React.SetStateAction<string>>,
+      duration: number
+    ) => {
+      let start = startValue;
+      const end = parseInt(endValue.substring(0, endValue.length - 1));
 
-    if (start === end) return;
+      if (start === end) return;
 
-    let incrementTime = 2000 / end;
+      const increment = (end - start) / (duration / 100); // Calculate increment value for each tick
 
-    let timer = setInterval(() => {
-      start += 1;
-      setCount(
-        String(start) + uspEnrollmentCard.uspEnrollmentCount.substring(3)
-      );
-      if (start === end) clearInterval(timer);
-    }, incrementTime);
+      let current = start;
 
-    return () => clearInterval(timer);
-  }, [uspEnrollmentCard.uspEnrollmentCount]);
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+          setCount(endValue); // Set final value when animation completes
+          clearInterval(timer);
+        } else {
+          setCount(Math.floor(current).toString() + endValue.slice(-1)); // Update count value
+        }
+      }, 100); // Update every 100ms
+
+      return () => clearInterval(timer);
+    };
+
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      if (entries[0].isIntersecting && !hasAnimated) {
+        setHasAnimated(true); // Mark the animation as triggered
+        countAnimation(
+          299900,
+          uspEnrollmentCard.uspEnrollmentCount,
+          setEnrollmentCount,
+          3000
+        );
+        countAnimation(
+          0,
+          uspLocationCard.uspEnrollmentCount,
+          setLocationCount,
+          2000
+        );
+        countAnimation(
+          0,
+          uspUpskillCard.uspEnrollmentCount,
+          setUpskillCount,
+          2500
+        );
+      }
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [
+    uspEnrollmentCard.uspEnrollmentCount,
+    uspLocationCard.uspEnrollmentCount,
+    uspUpskillCard.uspEnrollmentCount,
+    hasAnimated, // Add hasAnimated to dependencies
+  ]);
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -42,45 +100,44 @@ const UspSection = () => {
   }, []);
 
   return (
-    <div className={styles.uspSectionContainer}>
-      <div className={styles.uspCard}>
+    <div className={styles.uspSectionContainer} ref={sectionRef}>
+      <div className={styles.uspSectionGroupMobile}>
         <Image
-          // src={uspLocationCard.usplocationIcon}
-          src={`${imageUrl}${uspLocationCard.usplocationIcon}`}
+          src={`${imageUrl}Icons/DR-logo.svg`}
           alt="Icon 1"
-          width={40}
+          width={34}
           height={40}
         />
-        <p className={styles.CardText}>{uspLocationCard.uspLocationText}</p>
+        <h2>REGENESYS GROUP</h2>
       </div>
-      <div className={`${styles.uspCard} ${styles.enrollmentCard}`}>
-        <Image
-          // src={uspEnrollmentCard.StudentEnrolIcon}
-          src={`${imageUrl}${uspEnrollmentCard.StudentEnrolIcon}`}
-          alt="Icon 2"
-          width={40}
-          height={40}
-        />
-        <div className={styles.enrollmentContainer}>
-          <p className={styles.uspEnrollmentCount}>
-            {count}
-            <span className={styles.CardText}>
-              {isMobile
-                ? ` ${uspEnrollmentCard.uspEnrollmentTextMobile}`
-                : `${uspEnrollmentCard.uspEnrollmentText}`}
-            </span>
-          </p>
+      <div className={styles.uspSectionContent}>
+        <div className={styles.uspSectionGroup}>
+          <Image
+            src={`${imageUrl}Icons/DR-logo.svg`}
+            alt="Icon 1"
+            width={34}
+            height={40}
+          />
+          <h2>REGENESYS GROUP</h2>
         </div>
-      </div>
-      <div className={styles.uspCard}>
-        <Image
-          // src={uspUpskillCard.uspBookIcon}
-          src={`${imageUrl}${uspUpskillCard.uspBookIcon}`}
-          alt="Icon 3"
-          width={40}
-          height={40}
-        />
-        <p className={styles.CardText}>{uspUpskillCard.uspUpskillText}</p>
+        <div className={styles.uspSection}>
+          <div className={styles.uspCard}>
+            <h4 className={styles.uspGreenText}>{locationCount}</h4>
+            <p className={styles.CardText}>{uspLocationCard.uspLocationText}</p>
+          </div>
+          <div className={`${styles.uspCard} ${styles.enrollmentCard}`}>
+            <div className={styles.uspCard}>
+              <h4 className={styles.uspGreenText}>{enrollmentCount}</h4>
+              <p className={styles.CardText}>
+                {uspEnrollmentCard.uspEnrollmentTextMobile}
+              </p>
+            </div>
+          </div>
+          <div className={styles.uspCard}>
+            <h4 className={styles.uspGreenText}>{upskillCount}</h4>
+            <p className={styles.CardText}>{uspUpskillCard.uspUpskillText}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

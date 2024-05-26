@@ -13,16 +13,18 @@ const StudentYoutubeVideos = () => {
         <Swiper
           className={Styles.swiperStyle}
           spaceBetween={30}
+          loop={true}
           slidesPerView={2}
           pagination={{ clickable: true }}
           breakpoints={{
-            0: {
-              slidesPerView: 1,
-              pagination: { clickable: true }, // Fixed syntax error here
+            0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
+            560: {
+              slidesPerView: 1.25,
+              slidesPerGroup: 1,
+              centeredSlides: true,
             },
-            920: {
+            1440: {
               slidesPerView: 2,
-              pagination: { clickable: true }, // Fixed syntax error here
             },
           }}
         >
