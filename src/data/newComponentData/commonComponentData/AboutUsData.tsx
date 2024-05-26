@@ -8,11 +8,11 @@ const AboutUsData = {
   aboutUsCardsData: [
     {
       image: "Icons/Live Call.svg",
-      title: "Flexibility and Accessibility",
+      title: "Live Classes",
     },
     {
       image: "Icons/Award.svg",
-      title: "Mentorship and Support",
+      title: "International Certificate",
     },
     {
       image: "Icons/Counselling.svg",

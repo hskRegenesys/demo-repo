@@ -46,22 +46,39 @@ const AllCoursesNew = ({
     setIsPopupVisible(true);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const experienceSection = document.getElementById("experience-section");
+      if (experienceSection) {
+        const { top } = experienceSection.getBoundingClientRect();
+        if (top < window.innerHeight * 0.5) {
+          setIsPopupVisible(true);
+          window.removeEventListener("scroll", handleScroll);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
 
-  useEffect(() => {
-    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
-    if (!popupDisplayed) {
-      // Popup hasn't been displayed before
-      const timeoutModal = setTimeout(() => {
-        setIsPopupVisible(true);
-        sessionStorage.setItem("popupDisplayed", "true");
-      }, 5000);
+  // useEffect(() => {
+  //   const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+  //   if (!popupDisplayed) {
+  //     // Popup hasn't been displayed before
+  //     const timeoutModal = setTimeout(() => {
+  //       setIsPopupVisible(true);
+  //       sessionStorage.setItem("popupDisplayed", "true");
+  //     }, 5000);
 
-      return () => clearTimeout(timeoutModal);
-    }
-  }, []);
+  //     return () => clearTimeout(timeoutModal);
+  //   }
+  // }, []);
   const PopupData = {
     PopupDesktop: "Images/Popup/Home-Desktop-Popup.webp",
     PopupMobile: "Images/Popup/Home-Mobile-Popup.webp",
@@ -95,6 +112,8 @@ const AllCoursesNew = ({
         allCourseList={initialCourses}
         AllCourcesCardData={intitialCoursesCardData}
       />
+      <div id="experience-section"></div>
+
       <CertificationDR
         data={initialAllCoursesDynamicData?.CertificationDRData}
         handleEnrollButtonClick={handleEnrollButtonClick}
@@ -104,7 +123,7 @@ const AllCoursesNew = ({
         StudentReviewData={initialStudentReviewData}
       />
       <BlogSection data={initialAllCoursesDynamicData?.BlogSectionData} />
-      <Faq data={initialAllCoursesDynamicData?.faqSections} />
+      {/* <Faq data={initialAllCoursesDynamicData?.faqSections} /> */}
       <ReadMoreDropDown data={initialAllCoursesDynamicData?.ReadMore} />
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>

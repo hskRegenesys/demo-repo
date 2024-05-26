@@ -4,19 +4,19 @@ const HomeDynamicData = {
     LsHeding: "Talk To Our Experts. We’re Available 24/7",
     LearnersSupportCards: [
       {
-        LsImg: "Images/LearnersSupport-one.svg",
+        LsImg: "Images/LearnersSupport-one.webp",
         LsQuestion: "Discuss with a career advisor",
         LsText: "Not sure? Talk to an expert",
         LsButtonText: "Talk Now",
       },
       {
-        LsImg: "Images/LearnersSupport-two.svg",
+        LsImg: "Images/LearnersSupport-two.webp",
         LsQuestion: "Download Brochure",
         LsText: "Get Complete Details",
         LsButtonText: "Download",
       },
       {
-        LsImg: "Images/LearnersSupport-three.svg",
+        LsImg: "Images/LearnersSupport-three.webp",
         LsQuestion: "Eligibility",
         LsText: "Know Your Eligibility",
         LsButtonText: " Check Eligibility",
