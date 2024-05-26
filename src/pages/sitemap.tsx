@@ -25,8 +25,8 @@ const Sidemap = () => {
     setIsPopupVisible(false);
   };
   const PopupData = {
-    PopupDesktop: "/assets/images/new-component-assets/Home-Desktop-Popup.png",
-    PopupMobile: "/assets/images/new-component-assets/Home-Mobile-Popup.png",
+    PopupDesktop: "/assets/images/new-component-assets/Home-Desktop-Popup.webp",
+    PopupMobile: "/assets/images/new-component-assets/Home-Mobile-Popup.webp",
   };
 
   return (

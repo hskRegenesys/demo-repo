@@ -31,8 +31,12 @@ const StudentReview = ({
           slidesPerView={3}
           pagination={{ clickable: true }}
           breakpoints={{
-            0: { slidesPerView: 1 },
-            865: { slidesPerView: 2 },
+            0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
+            560: {
+              slidesPerView: 1.25,
+              slidesPerGroup: 1,
+              centeredSlides: true,
+            },
             1200: { slidesPerView: 3 },
             1700: { slidesPerView: 3 },
           }}

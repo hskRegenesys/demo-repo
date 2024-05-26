@@ -9,7 +9,6 @@
   color: var(--yocket-com-ebony-clay, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 40px;
-
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -59,7 +58,7 @@
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
   .studentYoutubeContainer {
-    margin: 44px 16px 0px 16px;
+    margin: 44px 0px 0px;
     padding-top: 0px;
   }
   .title {
@@ -67,11 +66,11 @@
     font-size: 24px;
   }
   .videoContainer {
-    max-width: 328px;
     margin: 0 auto;
   }
   .iframe {
-    width: 328px;
+    width: 100%;
+    max-width: 340px;
     height: 352px;
     border-radius: 12px;
   }

@@ -103,10 +103,15 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               }}
-              pagination={paginationText}
               breakpoints={{
-                0: { slidesPerView: 1 },
-                560: { slidesPerView: 1 },
+                0: {
+                  slidesPerView: 1.6,
+                  slidesPerGroup: 1,
+                },
+                560: {
+                  slidesPerView: 1.5,
+                  slidesPerGroup: 1,
+                },
                 1190: { slidesPerView: 2 },
                 1250: { slidesPerView: 2.5 },
                 1920: { slidesPerView: 3.5 },
@@ -154,6 +159,12 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
           </div>
         </div>
       </div>
+      <button
+        className={styles.btnStartMobile}
+        onClick={handleEnrollButtonClick}
+      >
+        Enrol Now
+      </button>
     </div>
   );
 };

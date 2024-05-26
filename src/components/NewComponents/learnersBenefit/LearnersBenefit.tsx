@@ -50,6 +50,12 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
           autoplay={{
             delay: 8000,
           }}
+          breakpoints={{
+            0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
+            560: {
+              slidesPerView: 1,
+            },
+          }}
         >
           {LearnersBenfitsCardsData.map((item: any, index: any) => (
             <SwiperSlide key={index}>

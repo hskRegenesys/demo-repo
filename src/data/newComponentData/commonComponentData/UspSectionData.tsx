@@ -1,18 +1,21 @@
+import { duration } from "@mui/material";
+
 const UspSectionData = {
   uspLocationCard: {
-    uspLocationText: "International Certification",
+    uspLocationText: "Years of Legacy",
     usplocationIcon: "Icons/Award.svg",
+    uspEnrollmentCount: "25+",
   },
   uspEnrollmentCard: {
-    uspEnrollmentText: "Students Enrolled",
+    uspEnrollmentText: "Alumni",
     uspEnrollmentTextMobile: "Students",
-    uspEnrollmentCount: "20000+",
+    uspEnrollmentCount: "300000+",
     StudentEnrolIcon: "Icons/profile-user.svg",
-    duration: "3000",
   },
   uspUpskillCard: {
-    uspUpskillText: "Live Sessions",
+    uspUpskillText: "Countries",
     uspBookIcon: "Icons/Live Call.svg",
+    uspEnrollmentCount: "190+",
   },
 };
 export default UspSectionData;
