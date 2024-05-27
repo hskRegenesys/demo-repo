@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 // import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 import Styles from "../allCoursesSlider/AllCoursesSlider.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
-import "swiper/swiper-bundle.css";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import SwiperCore, { Pagination, Autoplay } from "swiper";
+// import "swiper/swiper-bundle.css";
 import useActive from "@/hooks/useActive";
 import _ from "lodash";
 import { useRouter } from "next/router";
@@ -18,9 +18,12 @@ import {
   programBaseUrl,
 } from "../../config/constant";
 import imageBaseUrl from "src/utils/imageBaseUrl";
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // import { allCourseList } from "@/data/courseData";
-SwiperCore.use([Pagination, Autoplay]);
+// SwiperCore.use([Pagination, Autoplay]);
 
 interface Card {
   cardProgram: string;
@@ -51,6 +54,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
   const imageUrl = imageBaseUrl();
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
@@ -101,6 +105,54 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
     )
     .filter((course) => course); // filter out undefined values
 
+  const settings = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    autoplay: false,
+    speed: 500,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setCurrentSlide(newIndex);
+    },
+    customPaging: (i: number) => (
+      <div
+        className={`${Styles.customDotFeatureCourse} ${
+          currentSlide === i ? Styles.activeDot : ""
+        }`}
+      />
+    ),
+    dotsClass: Styles.customDotsfeatureCourse,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 1.25,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div style={style} className={Styles.featuredCourses}>
       <div className={Styles.allCoursesSliderContainer}>
@@ -121,34 +173,9 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
           />
         </div>
         <div className={Styles.cardContainer}>
-          <Swiper
-            className={Styles.swiperStyle}
-            spaceBetween={25}
-            slidesPerView={3}
-            pagination={{ clickable: true }}
-            slidesPerGroup={3}
-            // centeredSlides={true}
-            // grabCursor={true}
-            // modules={[Pagination]}
-            breakpoints={{
-              0: {
-                slidesPerView: 1.25,
-                slidesPerGroup: 1,
-                centeredSlides: true,
-              },
-              865: {
-                slidesPerView: 2,
-              },
-              1200: {
-                slidesPerView: 3,
-              },
-              1700: {
-                slidesPerView: 3,
-              },
-            }}
-          >
+          <MultiCarousel childSettings={settings}>
             {filteredParentCourses.map((parentCourse: any, index: number) => (
-              <SwiperSlide key={index}>
+              <div key={index}>
                 <div className={Styles.card}>
                   <div className={Styles.cardHeading}>
                     {parentCourse.cardProgram}
@@ -274,9 +301,9 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     </button>
                   </div>
                 </div>
-              </SwiperSlide>
+              </div>
             ))}
-          </Swiper>
+          </MultiCarousel>
         </div>
       </div>
     </div>
