@@ -27,8 +27,8 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
 
   const settings = {
     dots: false,
-    infinite: true,
-    slidesToShow: 8,
+    //infinite: true,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
