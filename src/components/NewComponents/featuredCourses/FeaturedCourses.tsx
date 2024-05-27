@@ -56,6 +56,54 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
   const imageUrl = imageBaseUrl();
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const settings = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    autoplay: false,
+    speed: 500,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setCurrentSlide(newIndex);
+    },
+    customPaging: (i: number) => (
+      <div
+        className={`${Styles.customDotFeatureCourse} ${
+          currentSlide === i ? Styles.activeDot : ""
+        }`}
+      />
+    ),
+    dotsClass: Styles.customDotsfeatureCourse,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 1.25,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
       code === dataScienceCode ||
@@ -105,54 +153,6 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
     )
     .filter((course) => course); // filter out undefined values
 
-  const settings = {
-    dots: true,
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    autoplay: false,
-    speed: 500,
-    beforeChange: (oldIndex: number, newIndex: number) => {
-      setCurrentSlide(newIndex);
-    },
-    customPaging: (i: number) => (
-      <div
-        className={`${Styles.customDotFeatureCourse} ${
-          currentSlide === i ? Styles.activeDot : ""
-        }`}
-      />
-    ),
-    dotsClass: Styles.customDotsfeatureCourse,
-    responsive: [
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 0,
-        settings: {
-          slidesToShow: 1.25,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div style={style} className={Styles.featuredCourses}>
       <div className={Styles.allCoursesSliderContainer}>
@@ -174,14 +174,15 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         </div>
         <div className={Styles.cardContainer}>
           <MultiCarousel childSettings={settings}>
-            {filteredParentCourses.map((parentCourse: any, index: number) => (
-              <div key={index}>
-                <div className={Styles.card}>
-                  <div className={Styles.cardHeading}>
-                    {parentCourse.cardProgram}
-                  </div>
-                  <div className={Styles.imgCardContainer}>
-                    {/* <div className={Styles.cardStarContainer}>
+            {filteredParentCourses &&
+              filteredParentCourses?.map((parentCourse: any, index: number) => (
+                <div key={index}>
+                  <div className={Styles.card}>
+                    <div className={Styles.cardHeading}>
+                      {parentCourse.cardProgram}
+                    </div>
+                    <div className={Styles.imgCardContainer}>
+                      {/* <div className={Styles.cardStarContainer}>
                     <img
                       src={AllCourcesCardData.cardStarIcon}
                       alt="cardStar"
@@ -189,60 +190,40 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     />
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
                   </div> */}
-                    <Image
-                      // src={parentCourse.cardImg}
-                      src={`${imageUrl}${parentCourse.cardImg}`}
-                      alt={parentCourse.ImgAlt}
-                      title={parentCourse.ImgAlt}
-                      className={Styles.cardImage}
-                      width={346}
-                      height={220}
-                      loading="eager"
-                    />
-                  </div>
-                  <div className={Styles.textContainer}>
-                    <div className={Styles.line1}>
-                      <div className={Styles.icon}>
-                        <Image
-                          src={`${imageUrl}${AllCourcesCardData.cardTimeIcon}`}
-                          alt="icon"
-                          className={Styles.cardIcon}
-                          width={24}
-                          height={24}
-                          loading="eager"
-                        />
-                      </div>
-                      <div className={Styles.boldText}>
-                        {parentCourse.cardWeek}
-                      </div>
-                      <div className={Styles.normalText}>
-                        {AllCourcesCardData.cardProgramText}
-                      </div>
+                      <Image
+                        // src={parentCourse.cardImg}
+                        src={`${imageUrl}${parentCourse.cardImg}`}
+                        alt={parentCourse.ImgAlt}
+                        title={parentCourse.ImgAlt}
+                        className={Styles.cardImage}
+                        width={346}
+                        height={220}
+                        loading="eager"
+                      />
                     </div>
-                    <div className={Styles.line2}>
-                      <div className={Styles.icon}>
-                        <Image
-                          src={`${imageUrl}${AllCourcesCardData.cardStudentsIcon}`}
-                          alt="icon"
-                          className={Styles.cardIcon}
-                          width={24}
-                          height={24}
-                          loading="eager"
-                        />
-                      </div>
-
-                      <div className={Styles.boldText}>
-                        {parentCourse.cardCount}
-                      </div>
-                      <div className={Styles.normalText}>
-                        {AllCourcesCardData.cardStudentEnrollmentText}
-                      </div>
-                    </div>
-                    {parentCourse.cardTool ? (
-                      <div className={Styles.line3}>
+                    <div className={Styles.textContainer}>
+                      <div className={Styles.line1}>
                         <div className={Styles.icon}>
                           <Image
-                            src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                            src={`${imageUrl}${AllCourcesCardData.cardTimeIcon}`}
+                            alt="icon"
+                            className={Styles.cardIcon}
+                            width={24}
+                            height={24}
+                            loading="eager"
+                          />
+                        </div>
+                        <div className={Styles.boldText}>
+                          {parentCourse.cardWeek}
+                        </div>
+                        <div className={Styles.normalText}>
+                          {AllCourcesCardData.cardProgramText}
+                        </div>
+                      </div>
+                      <div className={Styles.line2}>
+                        <div className={Styles.icon}>
+                          <Image
+                            src={`${imageUrl}${AllCourcesCardData.cardStudentsIcon}`}
                             alt="icon"
                             className={Styles.cardIcon}
                             width={24}
@@ -252,57 +233,77 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                         </div>
 
                         <div className={Styles.boldText}>
-                          {parentCourse.cardTool}
+                          {parentCourse.cardCount}
                         </div>
                         <div className={Styles.normalText}>
-                          {AllCourcesCardData.cardToolsText}
+                          {AllCourcesCardData.cardStudentEnrollmentText}
                         </div>
                       </div>
-                    ) : (
-                      <div className={Styles.line3}>
-                        <div className={Styles.icon}>
-                          <Image
-                            src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
-                            alt="icon"
-                            className={Styles.cardIcon}
-                            width={24}
-                            height={24}
-                            loading="eager"
-                          />
-                        </div>
+                      {parentCourse.cardTool ? (
+                        <div className={Styles.line3}>
+                          <div className={Styles.icon}>
+                            <Image
+                              src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                              alt="icon"
+                              className={Styles.cardIcon}
+                              width={24}
+                              height={24}
+                              loading="eager"
+                            />
+                          </div>
 
-                        <div className={Styles.normalText}>
-                          Capstone Projects
+                          <div className={Styles.boldText}>
+                            {parentCourse.cardTool}
+                          </div>
+                          <div className={Styles.normalText}>
+                            {AllCourcesCardData.cardToolsText}
+                          </div>
                         </div>
-                      </div>
-                    )}
-                  </div>
-                  <div className={Styles.buttonContainer}>
-                    <button
-                      className={Styles.learnMoreButton}
-                      onClick={() =>
-                        redirectCard(
-                          parentCourse.cardProgram,
-                          parentCourse.code,
-                          parentCourse.id,
-                          parentCourse.parentId
-                        )
-                      }
-                    >
-                      Learn More
-                    </button>
-                    <button
-                      onClick={() => {
-                        handleEnrollButtonClick(parentCourse.CourseNameCode);
-                      }}
-                      className={Styles.enrollNowButton}
-                    >
-                      Enrol Now
-                    </button>
+                      ) : (
+                        <div className={Styles.line3}>
+                          <div className={Styles.icon}>
+                            <Image
+                              src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                              alt="icon"
+                              className={Styles.cardIcon}
+                              width={24}
+                              height={24}
+                              loading="eager"
+                            />
+                          </div>
+
+                          <div className={Styles.normalText}>
+                            Capstone Projects
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    <div className={Styles.buttonContainer}>
+                      <button
+                        className={Styles.learnMoreButton}
+                        onClick={() =>
+                          redirectCard(
+                            parentCourse.cardProgram,
+                            parentCourse.code,
+                            parentCourse.id,
+                            parentCourse.parentId
+                          )
+                        }
+                      >
+                        Learn More
+                      </button>
+                      <button
+                        onClick={() => {
+                          handleEnrollButtonClick(parentCourse.CourseNameCode);
+                        }}
+                        className={Styles.enrollNowButton}
+                      >
+                        Enrol Now
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </MultiCarousel>
         </div>
       </div>
