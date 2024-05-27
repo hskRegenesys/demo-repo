@@ -16,8 +16,6 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
-
   return (
     <div className={`${Styles.KenyaSection} `}>
       {isHovered && (
@@ -28,8 +26,7 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
           onMouseLeave={onMouseLeave}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.Kenya.countryFlagImg}`}
-            // src={OurLocationData.Kenya.countryFlagImg}
+            src={OurLocationData.Kenya.countryFlagImg}
             className={Styles.contaryFlag}
             alt={OurLocationData.Kenya.countryName}
             title={OurLocationData.Kenya.countryName}
@@ -51,7 +48,7 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
           className={`${Styles.KenyaContaryLocation} ${Styles.contaryLocation}`}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.locationPinImage}`}
+            src={OurLocationData.locationPinImage}
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}

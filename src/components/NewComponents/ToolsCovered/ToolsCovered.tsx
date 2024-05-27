@@ -1,7 +1,6 @@
 import React from "react";
 import Styles from "./ToolsCovered.module.css";
 import Image from "next/image";
-import imageBaseUrl from "src/utils/imageBaseUrl";
 interface ToolCoveredData {
   heading: string;
   title: string;
@@ -13,8 +12,6 @@ interface ToolCoveredCardProps {
 }
 
 const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
-  const imageUrl = imageBaseUrl();
-
   return (
     <div className={Styles.toolCard}>
       <div className={Styles.bigCard}>
@@ -24,7 +21,7 @@ const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
           {data.images.map((image, index) => (
             <div key={index} className={Styles.imageCard}>
               <Image
-                src={`${imageUrl}Images/Tools/${image.img}`}
+                src={image.img}
                 // src={`/assets/images/clients/${image.img}`}
                 alt={image.alt}
                 title={image.alt}

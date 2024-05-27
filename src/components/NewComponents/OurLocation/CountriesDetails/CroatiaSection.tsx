@@ -14,8 +14,6 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
-
   return (
     <div className={`${Styles.CroatiaSection} `}>
       {isHovered && (
@@ -26,8 +24,7 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
           onMouseLeave={onMouseLeave}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.Croatia.countryFlagImg}`}
-            // src={OurLocationData.Croatia.countryFlagImg}
+            src={OurLocationData.Croatia.countryFlagImg}
             className={Styles.contaryFlag}
             alt={OurLocationData.Croatia.countryName}
             title={OurLocationData.Croatia.countryName}
@@ -51,7 +48,7 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
           className={`${Styles.CroatiaContaryLocation} ${Styles.contaryLocation}`}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.locationPinImage}`}
+            src={OurLocationData.locationPinImage}
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
