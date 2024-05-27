@@ -58,7 +58,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: false,
-    speed: 2000,
+    speed: 500,
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex);
     },
