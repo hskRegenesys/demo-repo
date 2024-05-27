@@ -1,77 +1,68 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
+import React from "react";
 import Styles from "./studentYoutubeVideos.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import videoTestimonialData from "@/data/videoTestimonial";
-import MultiCarousel from "@/components/multiCarousel/multiCarousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 
 const StudentYoutubeVideos = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handleSlideChange = (index: number) => {
-    setCurrentSlide(index);
-  };
-
-  const settings = {
-    dots: true,
-    autoplay: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    pauseOnHover: true,
-    beforeChange: (oldIndex: number, newIndex: number) => {
-      setCurrentSlide(newIndex);
-    },
-    customPaging: (i: number) => (
-      <div
-        className={`${Styles.customDot} ${
-          currentSlide === i ? Styles.activeDot : ""
-        }`}
-      />
-    ),
-    dotsClass: Styles.customDots,
-    responsive: [
-      {
-        breakpoint: 760,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 1920,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-    ],
-  };
-
   return (
     <div className={Styles.studentYoutubeContainer}>
       <h2 className={Styles.title}>
-        Watch Our Students Share Their Experiences
+        Watch Our Students Share Their Experiences{" "}
       </h2>
       <div className={Styles.videoContainer}>
-        <MultiCarousel childSettings={settings} className={Styles.sliderStyle}>
-          {videoTestimonialData.videos.map((video, index) => (
-            <div key={index} className={Styles.iframesecton}>
-              <iframe
-                width="100%"
-                height="100%"
-                src={video.url}
-                title={`Video ${index + 1}`}
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                className={Styles.iframe}
-                aria-label={`Video ${index + 1}`}
-              ></iframe>
-            </div>
-          ))}
-        </MultiCarousel>
+        <Swiper
+          className={Styles.swiperStyle}
+          spaceBetween={30}
+          loop={true}
+          slidesPerView={2}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
+            560: {
+              slidesPerView: 1.25,
+              slidesPerGroup: 1,
+              centeredSlides: true,
+            },
+            1440: {
+              slidesPerView: 2,
+            },
+          }}
+        >
+          <SwiperSlide>
+            <iframe
+              src="https://www.youtube.com/embed/ygZIi5tRC40"
+              title="Video 1"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              className={Styles.iframe}
+            ></iframe>
+          </SwiperSlide>
+          <SwiperSlide>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/pxKOmOX5muU"
+              title="Video 2"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              className={Styles.iframe}
+            ></iframe>
+          </SwiperSlide>
+          {/* <SwiperSlide>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/pxKOmOX5muU"
+              title="Video 2"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              className={Styles.iframe}
+            ></iframe>
+          </SwiperSlide> */}
+        </Swiper>
       </div>
     </div>
   );

@@ -1,11 +1,16 @@
-import React, { useCallback, useEffect, useState } from "react";
-import Slider from "react-slick";
+import React, { useCallback, useEffect, useMemo } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Styles from "./homeSliderBanner.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
+// import homeSliderBannerData from "../../../data/newComponentData/commonComponentData/homeSliderBannerData";
+// import RequestForm from "../requestForm/RequestForm";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
-import MultiCarousel from "@/components/multiCarousel/multiCarousel";
+
+// Install Swiper modules
+SwiperCore.use([Pagination, Autoplay]);
 
 interface Slide {
   imageUrl: string;
@@ -23,14 +28,15 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   homeSliderBannerData,
 }) => {
   const { sliderDataDesktop, sliderDataMobile } = homeSliderBannerData;
-  const [currentSlide, setCurrentSlide] = useState(0);
+
   const secondsPerSlide = 3;
+
   const imageUrl = imageBaseUrl();
 
   const renderSlides = useCallback(
     (sliderData: Slide[], isMobile: boolean) => {
       return sliderData.map((slide, index) => (
-        <div key={index}>
+        <SwiperSlide key={index}>
           <a href={slide.link}>
             <Image
               className={Styles.img}
@@ -48,51 +54,52 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
               loading="eager"
             />
           </a>
-        </div>
+        </SwiperSlide>
       ));
     },
     [imageUrl]
   );
-
-  const handleSlideChange = (index: number) => {
-    setCurrentSlide(index);
-  };
-
-  const settings = {
-    dots: true,
-    autoplay: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    pauseOnHover: true,
-    beforeChange: (oldIndex: number, newIndex: number) => {
-      setCurrentSlide(newIndex);
-    },
-    customPaging: (i: number) => (
-      <div
-        className={`${Styles.customDot} ${
-          currentSlide === i ? Styles.activeDot : ""
-        }`}
-      />
-    ),
-    dotsClass: Styles.customDots,
-  };
+  useEffect(() => {
+    console.log("HomeSliderBanner mounted");
+    return () => {
+      console.log("HomeSliderBanner unmounted");
+    };
+  }, []);
 
   return (
     <div>
       <div className={Styles.desktopSlide}>
-        <MultiCarousel childSettings={settings}>
+        <Swiper
+          pagination={{ clickable: true }}
+          className={Styles.swiperStyle}
+          autoplay={{
+            delay: secondsPerSlide * 1000,
+            disableOnInteraction: false,
+          }}
+        >
           {renderSlides(sliderDataDesktop, false)}
-        </MultiCarousel>
+        </Swiper>
       </div>
 
       <div className={Styles.mobileSlide}>
-        <MultiCarousel childSettings={settings}>
+        <Swiper
+          pagination={{ clickable: true }}
+          className={Styles.swiperStyle}
+          autoplay={{
+            delay: secondsPerSlide * 1000,
+            disableOnInteraction: false,
+          }}
+        >
           {renderSlides(sliderDataMobile, true)}
-        </MultiCarousel>
+        </Swiper>
+        {/* <div className={Styles.formcointent}>
+          <div className={Styles.formContainer}>
+            <RequestForm onFormSubmit={onFormSubmit} />
+          </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default HomeSliderBanner;
+export default React.memo(HomeSliderBanner);
