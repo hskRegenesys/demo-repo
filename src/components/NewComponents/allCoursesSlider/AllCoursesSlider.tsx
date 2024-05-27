@@ -210,7 +210,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     <div className={Styles.boldText}>
                       {parentCourse.cardWeek}
                     </div>
-                    a
+
                     <div className={Styles.normalText}>
                       {AllCourcesCardData.cardProgramText}
                     </div>
