@@ -140,8 +140,8 @@
   position: relative;
 }
 
-.slick-arrow .slick-next,
-.slick-arrow .slick-prev {
+.swiper-button-next,
+.swiper-button-prev {
   width: 30px;
   height: 30px;
   background-color: #007bff;
@@ -152,19 +152,9 @@
   z-index: 1;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  font-family: "slick";
-  font-size: 30px !important;
-  line-height: 1;
-  opacity: 0.75;
-  color: rgb(0, 0, 0) !important;
-  -webkit-font-smoothing: antialiased;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: rgb(0, 0, 0) !important;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
 }
 
 .swiper-button-next {
@@ -184,14 +174,12 @@
 
 .nextButton,
 .prevButton {
-  width: 300px;
-  background-color: #2b3340 !important;
+  background-color: #2b3340;
   width: 43px !important;
   border-radius: 50%;
 }
 .nextButton:after,
 .prevButton:after {
-  background-color: #2b3340 !important;
   font-size: 16px !important;
   color: #fff;
   font-weight: 600;
@@ -205,10 +193,6 @@
 }
 .btnStartMobile {
   display: none;
-}
-
-.container .slick-arrow::before {
-  color: inherit;
 }
 
 @media (max-width: 520px) {

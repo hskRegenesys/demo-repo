@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "./blogSection.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
-import MultiCarousel from "@/components/multiCarousel/multiCarousel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+SwiperCore.use([Pagination, Autoplay]);
 
 interface BlogSectionCardData {
   blogImg: string;
@@ -27,66 +28,34 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
     return null;
   }
 
-  const [currentSlide, setCurrentSlide] = useState(0);
   const addBottomValue = data.BlogSectionCards.length <= 3 ? "0px" : "60px";
   const imageUrl = imageBaseUrl();
-
-  const settings = {
-    dots: true,
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    autoplay: false,
-    speed: 500,
-    beforeChange: (oldIndex: number, newIndex: number) => {
-      setCurrentSlide(newIndex);
-    },
-    customPaging: (i: number) => (
-      <div
-        className={`${Styles.customDot} ${
-          currentSlide === i ? Styles.activeDot : ""
-        }`}
-      />
-    ),
-    dotsClass: Styles.customDots,
-    responsive: [
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 0,
-        settings: {
-          slidesToShow: 1.25,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <div className={Styles.blogSectionContainer}>
       <h2 className={Styles.blogSectionTitle}>{data.BlogSectionTitle}</h2>
 
       <div className={Styles.blogCardsContainer}>
-        <MultiCarousel childSettings={settings}>
+        <Swiper
+          style={{ paddingBottom: addBottomValue }}
+          className={Styles.swiperStyle}
+          spaceBetween={30}
+          slidesPerView={3}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            720: {
+              slidesPerView: 2,
+            },
+            1260: {
+              slidesPerView: 3,
+            },
+          }}
+        >
           {data?.BlogSectionCards.map((card, index) => (
-            <div key={index}>
+            <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
                 <Image
                   src={`${imageUrl}${card.blogImg}`}
@@ -120,9 +89,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </MultiCarousel>
+        </Swiper>
       </div>
     </div>
   );

@@ -1,3 +1,23 @@
+/* swiper style */
+
+.swiperStyle {
+  --swiper-pagination-color: #dcfce7;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-color: #8c93a1;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 120px;
+}
+.swiperStyle {
+  align-items: center;
+}
+.swiperStyle [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
+}
+
 .mobileSlide {
   display: none;
 }
@@ -37,27 +57,4 @@
   .formContainer {
     text-align: center;
   }
-}
-
-.customDot {
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  border-radius: 50%;
-  background-color: #bcbdbf;
-}
-
-.activeDot {
-  background-color: #fff;
-}
-
-.customDots {
-  display: flex !important;
-  position: relative;
-  top: -36px;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  background-color: transparent;
 }

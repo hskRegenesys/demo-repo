@@ -8,7 +8,6 @@
   );
   padding: 56px 0px 10px;
   position: relative;
-  padding-bottom: 80px;
 }
 
 .header {
@@ -116,13 +115,6 @@
   align-items: flex-start;
   border-radius: 16px;
   background: #fff;
-  margin-bottom: 15px;
-  margin-top: 44px;
-  max-width: 1080px;
-  width: 100%;
-}
-.swiperCard.slick-dots {
-  bottom: 16px !important;
 }
 
 /* careersTransformedDS.module.css */
@@ -351,12 +343,6 @@
   position: absolute;
   right: 0;
   width: 190px;
-}
-.CTStyle ul {
-  margin-top: 30px !important;
-}
-.CTStyle .slick-dots li.slick-active button:before {
-  color: #fff !important;
 }
 @media only screen and (max-width: 1225px) {
   .container {

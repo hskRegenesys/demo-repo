@@ -161,7 +161,7 @@
 }
 @media (max-width: 920px) {
   .LearnersBenefitContainer {
-    margin: 20px 20px;
+    margin: 20px 0px;
   }
   .LearnersBenefitCard {
     display: block;

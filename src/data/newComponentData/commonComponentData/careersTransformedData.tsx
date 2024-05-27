@@ -26,7 +26,7 @@ const careersTransformedData = {
   swiperCardContainer: [
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg: "Images/StudentsReview/Effiong-Udo-Inyang.webp",
+      profileImg: "Images/StudentsReview/Effiong-Udo-Inyang.svg",
       name: "Effiong Udo Inyang",
       role: "Data science",
       experienceText:
@@ -41,7 +41,7 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg: "Images/StudentsReview/Thibedi-Grandy-Mmatli.webp",
+      profileImg: "Images/StudentsReview/Thibedi-Grandy-Mmatli.svg",
       name: "Thibedi Grandy Mmatli",
       role: "Cyber security",
       experienceText:
@@ -56,7 +56,7 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg: "Images/StudentsReview/Akshay-Patil.webp",
+      profileImg: "Images/StudentsReview/Akshay-Patil.svg",
       name: "Akshay Patil",
       role: "Machine Learning",
       experienceText:
@@ -71,7 +71,7 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg: "Images/StudentsReview/DhirajGaikwad.webp",
+      profileImg: "Images/StudentsReview/DhirajGaikwad.svg",
       name: "Dhiraj Gaikwad",
       role: "Artificial Intelligence",
       experienceText:
