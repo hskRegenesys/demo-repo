@@ -25,7 +25,8 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
       <div className={Styles.frame}>
         <div className={Styles.frame1}>
           <Image
-            src={`${imageUrl}${LearnersBenefitFrame2}`}
+            src={LearnersBenefitFrame2}
+            //src={`${imageUrl}${LearnersBenefitFrame2}`}
             alt="Tick Icon"
             width={122}
             height={179}
@@ -33,7 +34,8 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
         </div>
         <div className={Styles.frame2}>
           <Image
-            src={`${imageUrl}${LearnersBenefitFrame1}`}
+            src={LearnersBenefitFrame1}
+            //src={`${imageUrl}${LearnersBenefitFrame1}`}
             alt="Tick Icon"
             width={122}
             height={179}
@@ -64,7 +66,8 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                 <div className={Styles.LeftSide}>
                   <div className={Styles.learnersBenefitCardImg}>
                     <Image
-                      src={`${imageUrl}${item.LearnersBenefitCardImg}`}
+                      src={item.LearnersBenefitCardImg}
+                      // src={`${imageUrl}${item.LearnersBenefitCardImg}`}
                       alt="Card Image"
                       width={180}
                       height={180}
@@ -81,7 +84,8 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                         <div className={Styles.tickimg}>
                           <Image
                             className={Styles.tickimg}
-                            src={`${imageUrl}${LearnersBenefitTickIcon}`}
+                            src={LearnersBenefitTickIcon}
+                            //src={`${imageUrl}${LearnersBenefitTickIcon}`}
                             alt="Tick Icon"
                             width={20}
                             height={20}
