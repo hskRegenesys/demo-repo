@@ -107,4 +107,4 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   );
 };
 
-export default React.memo(HomeSliderBanner);
+export default HomeSliderBanner;
