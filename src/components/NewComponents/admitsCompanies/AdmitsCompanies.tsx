@@ -26,32 +26,35 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   const imageUrl = imageBaseUrl();
 
   const settings = {
-    slidesToShow: 6,
-    slidesToScroll: 2,
+    dots: false,
     infinite: true,
+    slidesToShow: 8,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
 
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 6,
           slidesToScroll: 2,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 4,
+          slidesToScroll: 2,
           initialSlide: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -64,10 +67,10 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
         <h2 className={Styles.admitsHeading}>{AdmitsHeading}</h2>
         <h2 className={Styles.admitsTitleBig}>{AdmitsTitle}</h2>
       </div>
-      <div className="py-2">
+      <div className="py-2 text-center">
         <MultiCarousel childSettings={settings}>
           {AdmitsCards.map((item: any, index: any) => (
-            <SwiperSlide key={index} className={Styles.admitsCard}>
+            <div key={index} className={Styles.admitsCard}>
               <Image
                 src={`${imageUrl}${item.AdmitsImage}`}
                 // src={item.AdmitsImage}
@@ -76,7 +79,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
                 height={60}
                 loading="eager"
               />
-            </SwiperSlide>
+            </div>
           ))}
         </MultiCarousel>
       </div>
