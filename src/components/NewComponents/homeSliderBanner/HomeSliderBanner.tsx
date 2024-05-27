@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 
 interface Slide {
   imageUrl: string;
@@ -59,42 +60,36 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
 
   const settings = {
     dots: true,
-    infinite: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: secondsPerSlide * 1000,
     pauseOnHover: true,
-    arrows: false,
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex);
     },
     customPaging: (i: number) => (
-      <button>
-        <div
-          className={`${Styles.customDots} ${
-            currentSlide === i ? Styles.activeDot : ""
-          }`}
-        />
-      </button>
+      <div
+        className={`${Styles.customDot} ${
+          currentSlide === i ? Styles.activeDot : ""
+        }`}
+      />
     ),
-    dotsClass: `${Styles.slickDots} ${Styles.slickThumb}`,
+    dotsClass: Styles.customDots,
   };
 
   return (
     <div>
       <div className={Styles.desktopSlide}>
-        <Slider {...settings}>{renderSlides(sliderDataDesktop, false)}</Slider>
+        <MultiCarousel childSettings={settings}>
+          {renderSlides(sliderDataDesktop, false)}
+        </MultiCarousel>
       </div>
 
       <div className={Styles.mobileSlide}>
-        <Slider {...settings}>{renderSlides(sliderDataMobile, true)}</Slider>
-        {/* <div className={Styles.formcointent}>
-          <div className={Styles.formContainer}>
-            <RequestForm onFormSubmit={onFormSubmit} />
-          </div>
-        </div> */}
+        <MultiCarousel childSettings={settings}>
+          {renderSlides(sliderDataMobile, true)}
+        </MultiCarousel>
       </div>
     </div>
   );

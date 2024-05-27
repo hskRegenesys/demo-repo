@@ -39,27 +39,25 @@
   }
 }
 
-.dot {
-  width: 8px;
-  height: 8px;
-  margin: 0 3px;
-  border-radius: 999px;
-  transition: all 0.5s ease-in-out;
-  will-change: width;
-  background-color: #4d4d4dad;
-  list-style-type: none;
-  margin-top: 20px;
-  padding: 0px;
+.customDot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bcbdbf;
 }
 
 .activeDot {
-  background-color: #008554;
-  width: 24px;
+  background-color: #fff;
 }
 
-.slickDots.slickThumb {
+.customDots {
   display: flex !important;
+  position: relative;
+  top: -36px;
   justify-content: center;
-  list-style-type: none;
-  padding: 0px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  background-color: transparent;
 }
