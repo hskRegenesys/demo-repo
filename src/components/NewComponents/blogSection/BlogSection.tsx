@@ -36,7 +36,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 2,
-    speed: 2000,
+    autoplay: false,
+    speed: 500,
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex);
     },
