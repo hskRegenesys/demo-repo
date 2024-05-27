@@ -14,8 +14,6 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
-
   return (
     <div className={`${Styles.NigeriaSection} `}>
       {isHovered && (
@@ -32,8 +30,7 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
             <h5>{OurLocationData.Nigeria.countryAddress}</h5>
           </div>
           <Image
-            src={`${imageUrl}${OurLocationData.Nigeria.countryFlagImg}`}
-            // src={OurLocationData.Nigeria.countryFlagImg}
+            src={OurLocationData.Nigeria.countryFlagImg}
             className={Styles.contaryFlag}
             alt={OurLocationData.Nigeria.countryName}
             title={OurLocationData.Nigeria.countryName}
@@ -52,7 +49,7 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
             {OurLocationData.Nigeria.countryName}
           </span>
           <Image
-            src={`${imageUrl}${OurLocationData.locationPinImage}`}
+            src={OurLocationData.locationPinImage}
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}

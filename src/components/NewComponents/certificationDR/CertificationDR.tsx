@@ -35,7 +35,6 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
 
   const [isExpanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const imageUrl = `${process.env.awsImage_url}`;
 
   useEffect(() => {
     const handleResize = () => {
@@ -91,8 +90,7 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
               {achievementsText.map((item: string, index: number) => (
                 <div key={index} className={Styles.certificationListItem}>
                   <Image
-                    // src={tickImage}
-                    src={`${imageUrl}${tickImage}`}
+                    src={tickImage}
                     alt="Check Image"
                     className={Styles.checkImage}
                     width={20}
@@ -107,8 +105,7 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
 
         <div className={Styles.rightSection}>
           <Image
-            src={`${imageUrl}${image}`}
-            // src={image}
+            src={image}
             alt="Certification Image"
             width={468}
             height={336}

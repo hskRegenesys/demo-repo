@@ -4,7 +4,7 @@ const AllCoursesDynamicData = {
     heading: "Digital Regenesys Certification",
     paragraph:
       "The Digital Regenesys Certificate equips professionals with essential skills to succeed in today’s digital realm. It aims to foster an innovative ecosystem in new-age technologies like AI, Data Science, Project Management, and Cybersecurity and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
-    tickImage: "Icons/Check.svg",
+    tickImage: "/assets/images/allImages/Check.svg",
     buttonText: "Start Learning",
     achievementsHeading: "Key Takeaways",
     achievementsText: [
@@ -15,7 +15,7 @@ const AllCoursesDynamicData = {
       "Industry Expert Sessions",
       "Upskilling Opportunities",
     ],
-    image: "Images/Certificate/all_courses_certificates.webp",
+    image: "/assets/images/allImages/all_courses_certificates.webp",
     imageText:
       "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
   },

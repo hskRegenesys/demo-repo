@@ -5,7 +5,6 @@ import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
 import styles from "./TalentedComponent.module.css";
 import Image from "next/image";
-import imageBaseUrl from "src/utils/imageBaseUrl";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -28,7 +27,6 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   const data: Faculty[] = Object.values(FacultyData);
   const [paginationText, setPaginationText] = useState<any>(false);
   const swiperRef = useRef<any>(null);
-  const imageUrl = imageBaseUrl();
 
   useEffect(() => {
     const handleResize = () => {
@@ -125,8 +123,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                     <div className={styles.cardImg}>
                       {faculty.facultyImg && (
                         <Image
-                          src={`${imageUrl}${faculty.facultyImg}`}
-                          // src={faculty.facultyImg}
+                          src={faculty.facultyImg}
                           alt={faculty.facultyName}
                           title={faculty.facultyName}
                           width={110}

@@ -15,8 +15,6 @@ const UsaSection: React.FC<UsaSectionProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
-
   return (
     <div className={`${Styles.UsaSection} ${isHovered ? Styles.hidden : ""}`}>
       {isHovered && (
@@ -27,8 +25,7 @@ const UsaSection: React.FC<UsaSectionProps> = ({
           onMouseLeave={onMouseLeave}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.USA.countryFlagImg}`}
-            // src={OurLocationData.USA.countryFlagImg}
+            src={OurLocationData.USA.countryFlagImg}
             className={Styles.contaryFlag}
             alt={OurLocationData.USA.countryName}
             title={OurLocationData.USA.countryName}
@@ -50,7 +47,7 @@ const UsaSection: React.FC<UsaSectionProps> = ({
           className={`${Styles.USAContaryLocation} ${Styles.contaryLocation}`}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.locationPinImage}`}
+            src={OurLocationData.locationPinImage}
             // src={OurLocationData.locationPinImage}
             className={Styles.locationpin}
             alt={OurLocationData.USA.countryName}
