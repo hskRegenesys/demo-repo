@@ -58,8 +58,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
                 <Image
-                  src={`${imageUrl}${card.blogImg}`}
-                  // src={card.blogImg}
+                  //src={`${imageUrl}${card.blogImg}`}
+                  src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
                   width={360}
