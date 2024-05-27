@@ -18,7 +18,7 @@ const nextConfig = {
   },
   env: {
     ENV_NAME: process.env.ENV_NAME,
-    awsImage_url: process.env.AWS_BUCKET_URL_UAT,
+    awsImage_url: process.env.AWS_BUCKET_URL_PROD,
   },
   images: {
     domains: [
@@ -26,6 +26,7 @@ const nextConfig = {
       "blog-api.digitalregenesys.com",
       "s3-inf-uat-dr-website.s3.amazonaws.com",
       "prod-inf-dr-website.s3.ap-south-1.amazonaws.com",
+      "prod-inf-rbs-lp.s3.amazonaws.com",
     ],
   },
 };
