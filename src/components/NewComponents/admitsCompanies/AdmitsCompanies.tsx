@@ -49,7 +49,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           {AdmitsCards.map((item: any, index: any) => (
             <SwiperSlide key={index} className={Styles.admitsCard}>
               <Image
-                src={`${imageUrl}${item.AdmitsImage}`}
+                src={item.AdmitsImage}
                 // src={item.AdmitsImage}
                 alt={`admitImg ${index}`}
                 width={100}
@@ -69,7 +69,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           <div className={Styles.enrollIcon}>
             <Image
               // src={admitsButtonIcon}
-              src={`${imageUrl}${admitsButtonIcon}`}
+              src={admitsButtonIcon}
               alt="Enroll Icon"
               width={16}
               height={16}

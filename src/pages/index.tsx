@@ -107,8 +107,8 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
   };
 
   const PopupData = {
-    PopupDesktop: "Images/Popup/Home-Desktop-Popup.webp",
-    PopupMobile: "Images/Popup/Home-Mobile-Popup.webp",
+    PopupDesktop: "/assets/images/allImages/Home-Desktop-Popup.webp",
+    PopupMobile: "/assets/images/allImages/Home-Mobile-Popup.webp",
   };
 
   return (
