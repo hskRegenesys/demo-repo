@@ -2,7 +2,7 @@ const MainCoursesDynimicData = {
   DataScience: {
     CourseCode: "DSN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DS-Banner.png",
+      BannerImgDesktop: "Images/Banner/DS-banner.webp",
       coursePageName: " Certification Course in Data Science",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -58,7 +58,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DS-explore.png",
+          contentImg: "Images/Banner/DS-explore.webp",
           contentText:
             "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
           contentCard: [
@@ -124,22 +124,25 @@ const MainCoursesDynimicData = {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr. Nilay Karade",
               facultyEducation: "Ph.D. in Computer Science",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "11+ ",
+              yearsOfExperience: "15+",
             },
             {
-              facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
-              facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "Head of Academics",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "20+ ",
+              facultyImg: "Images/Faculty/samidha_kurle.webp",
+              facultyName: "Ms. Samidha Kurle",
+              facultyEducation: "Masters in Computer Engineering",
+              yearsOfExperience: "10+",
             },
             {
-              facultyImg: "Images/Faculty/Samidha_Photo.webp",
-              facultyName: "Samidha Kurle",
+              facultyImg: "Images/Faculty/gazal_nashte.webp",
+              facultyName: "Ms. Gazal Nashte",
+              facultyEducation: "Masters of Computer Science",
+              yearsOfExperience: "13+",
+            },
+            {
+              facultyImg: "Images/Faculty/hetal_gandhi.webp",
+              facultyName: "Dr. Hetal Gandhi",
               facultyEducation: "Ph.D. in Computer Engineering",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "10+ ",
+              yearsOfExperience: "12+",
             },
           ],
         },
@@ -206,7 +209,7 @@ const MainCoursesDynimicData = {
         "Data Visualisation",
         "Advanced-Data Analysis",
       ],
-      image: "Images/Certificate/DSN_certificates.webp",
+      image: "Images/Certificate/DS_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -372,7 +375,7 @@ const MainCoursesDynimicData = {
   DigitalMarketing: {
     CourseCode: "DMN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DM-Banner.png",
+      BannerImgDesktop: "Images/Banner/DM-banner.webp",
       coursePageName: "Certification Course in Digital Marketing",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -429,7 +432,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DM-explore.png",
+          contentImg: "Images/Banner/DM-explore.webp",
           contentText:
             "Digital Marketing is a comprehensive course that delivers the latest strategies and techniques in online marketing. Acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Stay competitive in the ever-evolving digital marketing landscape by joining our course today.",
           contentCard: [
@@ -479,18 +482,22 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg: "Images/Faculty/bhupendra_mishra.webp",
-              facultyName: "Bhupendra Mishra",
-              facultyEducation: "MBA in International Business",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "10+ ",
-            },
-            {
-              facultyImg: "Images/Faculty/faculty_deepika_sharma.webp",
+              facultyImg: "Images/Faculty/deepika_sharma.webp",
               facultyName: "Dr. Deepika Sharma",
               facultyEducation: "Ph.D. in Business Management",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "10+ ",
+              yearsOfExperience: "9+",
+            },
+            {
+              facultyImg: "Images/Faculty/rajesh_sharma.webp",
+              facultyName: "Dr. Rajesh Sharma",
+              facultyEducation: "Ph.D. from SAQA",
+              yearsOfExperience: "22+",
+            },
+            {
+              facultyImg: "Images/Faculty/rumana_shaikh.webp",
+              facultyName: "Dr. Rumana Shaikh",
+              facultyEducation: "Ph.D. in Business Management",
+              yearsOfExperience: "12+",
             },
           ],
         },
@@ -622,7 +629,7 @@ const MainCoursesDynimicData = {
         "Content Marketing Excellence",
         " Expertise in Various Digital Channels",
       ],
-      image: "Images/Certificate/DMN_certificates.webp",
+      image: "Images/Certificate/DM_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -781,7 +788,7 @@ const MainCoursesDynimicData = {
     CourseCode: "PM",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PM-Banner.png",
+      BannerImgDesktop: "Images/Banner/PM-banner.webp",
       coursePageName: "Certification Course in Project Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -838,7 +845,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/PM-explore.png",
+          contentImg: "Images/Banner/PM-explore.webp",
           contentText:
             "Enhance your skills and boost your career prospects with Digital Regenesys’s Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course. ",
           contentCard: [
@@ -876,18 +883,16 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg: "Images/Faculty/Dennis-Laxton.webp",
-              facultyName: "Dr. Dennis Laxton",
-              facultyEducation: "Academic Team Leader and Senior Lecturer",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "",
+              facultyImg: "Images/Faculty/yatin_karnik.webp",
+              facultyName: "Dr. Yatin Karnik",
+              facultyEducation: "Ph.D. in Management",
+              yearsOfExperience: "30+",
             },
             {
-              facultyImg: "Images/Faculty/James_forson.webp",
-              facultyName: "James Forson",
-              facultyEducation: "BSocSc (Hons)",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "",
+              facultyImg: "Images/Faculty/dennis-laxton.webp",
+              facultyName: "Dr. Dennis Laxton",
+              facultyEducation: "Ph.D. in Business Administration",
+              yearsOfExperience: "20+",
             },
           ],
         },
@@ -1162,7 +1167,7 @@ const MainCoursesDynimicData = {
   ArtificialIntelligence: {
     CourseCode: "AIN",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/AI-Banner.png",
+      BannerImgDesktop: "Images/Banner/AI-banner.webp",
       coursePageName: "Certification Course in Artificial Intelligence",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1219,7 +1224,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/AI-explore.png",
+          contentImg: "Images/Banner/AI-explore.webp",
           contentText:
             "The Digital Regenesys’s Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
           contentCard: [
@@ -1351,7 +1356,7 @@ const MainCoursesDynimicData = {
         "Machine Learning Fundamentals",
         "Introduction to Artificial Intelligence",
       ],
-      image: "Images/Certificate/AIN_certificates.webp",
+      image: "Images/Certificate/AI_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -1517,7 +1522,7 @@ const MainCoursesDynimicData = {
   CyberSecurity: {
     CourseCode: "CSC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/CS-Banner.png",
+      BannerImgDesktop: "Images/Banner/CS-banner.webp",
       coursePageName: "Certification Course in Cybersecurity",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1574,7 +1579,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/CS-explore.png",
+          contentImg: "Images/Banner/CS-explore.webp",
           contentText:
             "A  Cyber Security course comprises various aspects of cyber security, including network security, information security, cryptography, and ethical hacking. Students learn how to identify vulnerabilities in systems, mitigate security risks, and respond to security incidents effectively. Upon completion of the course, learners are prepared to pursue careers as cyber security analysts, consultants, or administrators in both the private and public sectors.",
           contentCard: [
@@ -1603,11 +1608,10 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg: "Images/Faculty/Dr-Saquib-Ahmad-Khan2.webp",
-              facultyName: "Dr. Saquib Ahmad Khan",
-              facultyEducation: "PhD Computer Science",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "10+ ",
+              facultyImg: "Images/Faculty/dr-saquib-ahmad-khan.webp",
+              facultyName: "Dr. Saquib Khan",
+              facultyEducation: "Ph.D. in Computer Science",
+              yearsOfExperience: "10+",
             },
           ],
         },
@@ -1946,7 +1950,7 @@ const MainCoursesDynimicData = {
         "Risk Assessment and Mitigation",
         "Vulnerability Analysis",
       ],
-      image: "Images/Certificate/CSC_certificates.webp",
+      image: "Images/Certificate/CS_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -2115,7 +2119,7 @@ const MainCoursesDynimicData = {
   DesignThinking: {
     CourseCode: "DTC",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DT-Banner.png",
+      BannerImgDesktop: "Images/Banner/DT-banner.webp",
       coursePageName: "Certification Course in Design Thinking",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2172,7 +2176,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DT-explore.png",
+          contentImg: "Images/Banner/DT-explore.webp",
           contentText:
             "Our Design Thinking course is designed to provide participants with the tools, techniques, and mindset to approach problem-solving in a human-centred, creative, and iterative manner. Through a combination of lectures, hands-on exercises, and real-world projects, participants will learn to empathise with users, define problems, ideate innovative solutions, prototype designs, and test them with users to gather feedback for continuous improvement.",
           contentCard: [
@@ -2201,18 +2205,10 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg: "Images/Faculty/Dennis-Laxton.webp",
-              facultyName: "Dr. Dennis Laxton",
-              facultyEducation: "NHD Industrial Engineering",
-              courseName: "Academic Team Leader and Senior Lecturer",
-              yearsOfExperience: "10+ ",
-            },
-            {
-              facultyImg: "Images/Faculty/Shaista-Fatima.webp",
+              facultyImg: "Images/Faculty/shaista-fatima.webp",
               facultyName: "Dr. Shaista Fatima",
-              facultyEducation: "UGC-NET for Lectureship Accreditation",
-              courseName: "PhD. Management",
-              yearsOfExperience: "10+ ",
+              facultyEducation: "Ph.D. in Management",
+              yearsOfExperience: "10+",
             },
           ],
         },
@@ -2344,7 +2340,7 @@ const MainCoursesDynimicData = {
         "Tools and Technical Proficiency",
         "Empathy and User-Centric Thinking",
       ],
-      image: "Images/Certificate/DTC_certificates.webp",
+      image: "Images/Certificate/DT_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -2502,7 +2498,7 @@ const MainCoursesDynimicData = {
   FullStackDeveloper: {
     CourseCode: "FSD",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/FSD-Banner.png",
+      BannerImgDesktop: "Images/Banner/FS-banner.webp",
       coursePageName: "Certification Course in Full Stack Development",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2559,7 +2555,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/FSD-explore.png",
+          contentImg: "Images/Banner/FS-explore.webp",
           contentText:
             "Digital Regenesys’s Full Stack Web & Software Development is a 40-week course that will teach you all the aspects of front and back-end technologies and allow you to work on full stack web development. You will learn how to work on the front end and back end of the web and extract insights from them by using HTML, JavaScript, and GitHub. Gain full stack development skills and delve into databases and analytics, Node.Js, GIT & GITHUB.",
           contentCard: [
@@ -2602,18 +2598,16 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg: "Images/Faculty/Samidha_Photo.webp",
-              facultyName: "Samidha Kurle",
-              facultyEducation: "Ph.D. in Computer Engineering",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "10+ ",
+              facultyImg: "Images/Faculty/samidha_kurle.webp",
+              facultyName: "Ms. Samidha Kurle",
+              facultyEducation: "Masters in Computer Engineering",
+              yearsOfExperience: "10+",
             },
             {
               facultyImg: "Images/Faculty/dr_nilay_profile.webp",
               facultyName: "Dr. Nilay Karade",
               facultyEducation: "Ph.D. in Computer Science",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "11+ ",
+              yearsOfExperience: "15+",
             },
             {
               facultyImg: "Images/Faculty/dr_shilpa_joshi.webp",
@@ -2777,7 +2771,7 @@ const MainCoursesDynimicData = {
         "Version Control",
         "Operating Sytems and DevOps",
       ],
-      image: "Images/Certificate/FSD_certificates.webp",
+      image: "Images/Certificate/FS_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -2972,8 +2966,8 @@ const MainCoursesDynimicData = {
   DataAndBusinessAnalytics: {
     CourseCode: "DBA",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/DBA-Banner.png",
-      coursePageName: "Certification Course in Data and Business Analytics.",
+      BannerImgDesktop: "Images/Banner/DBA-banner.webp",
+      coursePageName: "Certification Course in Data and Business Analytics",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
       contentText:
@@ -3029,7 +3023,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/DBA-explore.png",
+          contentImg: "Images/Banner/DBA-explore.webp",
           contentText:
             "Digital Regenesys’ Data and Business Analytics course is a 19-week course that offers a no-code approach to data and business analytics, covering essential concepts and tools for effective analysis and reporting. It emphasises the role of Management Information Systems (MIS) in leveraging data insights for decision-making. Participants will learn advanced techniques, focusing on storytelling through data visualisation and gaining expertise in predictive and prescriptive analytics. By the end of the course, participants will be equipped with the skills needed to tackle challenges in the dynamic field of business analytics.",
           contentCard: [
@@ -3370,7 +3364,7 @@ const MainCoursesDynimicData = {
     CourseCode: "MD",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/MA-Banner.png",
+      BannerImgDesktop: "Images/Banner/MA-banner.webp",
       coursePageName: "Certification Course in Management Advancement",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -3428,7 +3422,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/MA-explore.png",
+          contentImg: "Images/Banner/MA-explore.webp",
           contentText:
             "Digital Regenesys’ Management Advancement Programme (MAP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management advancement.",
           contentCard: [
@@ -3622,7 +3616,7 @@ const MainCoursesDynimicData = {
         "Financial risk management",
         "Interpersonal skills",
       ],
-      image: "Images/Certificate/MD_certificates.webp",
+      image: "Images/Certificate/MA_certificates.webp",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -3797,7 +3791,7 @@ const MainCoursesDynimicData = {
   ProductManagement: {
     CourseCode: "PDM",
     BannerWithVideoData: {
-      BannerImgDesktop: "Images/Banner/PDM-Banner.png",
+      BannerImgDesktop: "Images/Banner/PDM-banner.webp",
       coursePageName: "Certification Course in Product Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -3854,7 +3848,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Course Overview",
-          contentImg: "Images/Banner/PDM-explore.png",
+          contentImg: "Images/Banner/PDM-explore.webp",
           contentText:
             "Enhance your skills and boost your career prospects with the Product Management Course. Our course offers a thorough curriculum to empower professionals with the necessary skills and expertise to excel and focus on Product Lifecycle Management. It encompasses all product lifecycle stages, from initial concept generation and customer analysis to product creation, release, and continuous improvement. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to succeed as Product Managers.",
           contentCard: [

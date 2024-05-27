@@ -17,7 +17,7 @@ interface TalentedComponentProp {
 interface Faculty {
   facultyImg?: string;
   facultyName: string;
-  courseName: string;
+  facultyEducation: string;
   yearsOfExperience?: string;
 }
 
@@ -136,7 +136,9 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                       )}
                     </div>
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
-                    <p className={styles.courseName}>{faculty.courseName}</p>
+                    <p className={styles.courseName}>
+                      {faculty.facultyEducation}
+                    </p>
                     {faculty.yearsOfExperience && (
                       <p className={styles.yearsOfExperience}>
                         <span>{faculty.yearsOfExperience} </span>Years of
