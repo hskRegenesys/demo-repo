@@ -25,6 +25,7 @@ const StudentReview = ({
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 2,
+    autoplay: false,
     speed: 2000,
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex);

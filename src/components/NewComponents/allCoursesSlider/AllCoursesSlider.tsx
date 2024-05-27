@@ -1,17 +1,12 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import Styles from "./AllCoursesSlider.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
-import "swiper/swiper-bundle.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import useActive from "@/hooks/useActive";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import { urlInfo } from "../../config/helper";
 import Image from "next/image";
-
-SwiperCore.use([Pagination, Autoplay]);
 
 import {
   artificialIntelligenceCode,
@@ -20,9 +15,7 @@ import {
   programBaseUrl,
 } from "../../config/constant";
 import imageBaseUrl from "src/utils/imageBaseUrl";
-
-// import { allCourseList } from "@/data/courseData";
-// import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 
 interface Card {
   cardProgram: string;
@@ -57,6 +50,62 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
   const imageUrl = imageBaseUrl();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: false,
+    speed: 2000,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setCurrentSlide(newIndex);
+    },
+    customPaging: (i: number) => (
+      <div
+        className={`${Styles.customDot} ${
+          currentSlide === i ? Styles.activeDot : ""
+        }`}
+      />
+    ),
+    dotsClass: Styles.customDots,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 865,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 1.25,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
@@ -141,34 +190,9 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
         />
       </div> */}
       <div className={Styles.cardContainer}>
-        <Swiper
-          className={Styles.swiperStyle}
-          spaceBetween={25}
-          slidesPerView={3}
-          pagination={{ clickable: true }}
-          slidesPerGroup={3}
-          // centeredSlides={true}
-          // grabCursor={true}
-          // modules={[Pagination]}
-          breakpoints={{
-            0: {
-              slidesPerView: 1.25,
-              slidesPerGroup: 1,
-              centeredSlides: true,
-            },
-            865: {
-              slidesPerView: 2,
-            },
-            1200: {
-              slidesPerView: 3,
-            },
-            1700: {
-              slidesPerView: 3,
-            },
-          }}
-        >
+        <MultiCarousel childSettings={settings}>
           {parentCourses.map((parentCourse: any, index: number) => (
-            <SwiperSlide key={index}>
+            <div key={index}>
               <div className={Styles.card}>
                 <div className={Styles.cardHeading}>
                   {parentCourse.cardProgram}
@@ -294,9 +318,9 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   </button>
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </MultiCarousel>
       </div>
     </div>
   );

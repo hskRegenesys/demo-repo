@@ -5,6 +5,7 @@
   max-width: 1224px;
   margin: 0 auto;
   padding-top: 52px;
+  margin-top: 40px;
 }
 
 .aboutUs {
@@ -220,5 +221,7 @@
 @media only screen and (max-width: 1230px) {
   .aboutUsContainer {
     padding: 40px 20px 0px 20px;
+    margin-top: 40px;
   }
+
 }
