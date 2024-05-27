@@ -112,7 +112,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         </h2>
         <div className={Styles.rocketImg}>
           <Image
-            src={`${imageUrl}Images/Rocket-frame.svg`}
+            src="/assets/images/allImages/Rocket-frame.svg"
             alt="rocket"
             width={1440}
             height={550}
@@ -164,7 +164,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                   </div> */}
                     <Image
                       // src={parentCourse.cardImg}
-                      src={`${imageUrl}${parentCourse.cardImg}`}
+                      src={parentCourse.cardImg}
                       alt={parentCourse.ImgAlt}
                       title={parentCourse.ImgAlt}
                       className={Styles.cardImage}
@@ -177,7 +177,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     <div className={Styles.line1}>
                       <div className={Styles.icon}>
                         <Image
-                          src={`${imageUrl}${AllCourcesCardData.cardTimeIcon}`}
+                          src={AllCourcesCardData.cardTimeIcon}
                           alt="icon"
                           className={Styles.cardIcon}
                           width={24}
@@ -195,7 +195,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     <div className={Styles.line2}>
                       <div className={Styles.icon}>
                         <Image
-                          src={`${imageUrl}${AllCourcesCardData.cardStudentsIcon}`}
+                          src={AllCourcesCardData.cardStudentsIcon}
                           alt="icon"
                           className={Styles.cardIcon}
                           width={24}
@@ -215,7 +215,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                       <div className={Styles.line3}>
                         <div className={Styles.icon}>
                           <Image
-                            src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                            src={AllCourcesCardData.cardBookIcon}
                             alt="icon"
                             className={Styles.cardIcon}
                             width={24}
@@ -235,7 +235,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                       <div className={Styles.line3}>
                         <div className={Styles.icon}>
                           <Image
-                            src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                            src={AllCourcesCardData.cardBookIcon}
                             alt="icon"
                             className={Styles.cardIcon}
                             width={24}

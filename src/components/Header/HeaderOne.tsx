@@ -274,7 +274,7 @@ const HeaderOne = ({
                   {/* <Image id="thm-logo" src={Logo} alt={title} title={title} /> */}
                   <div>
                     <Image
-                      src={`${imageUrl}Icons/DR-Logo-black.webp`}
+                      src="/assets/images/allImages/DR-Logo-black.webp"
                       layout="intrinsic"
                       width="116"
                       height="40"

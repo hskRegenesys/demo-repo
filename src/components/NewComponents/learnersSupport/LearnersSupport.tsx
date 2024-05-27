@@ -56,8 +56,8 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
               <div key={index} className={Styles.LsCard}>
                 <div className={Styles.LsImage}>
                   <Image
-                    // src={card.LsImg}
-                    src={`${imageUrl}${item.LsImg}`}
+                    src={item.LsImg}
+                    //src={`${imageUrl}${item.LsImg}`}
                     alt="Ls"
                     width={360}
                     height={160}

@@ -84,8 +84,8 @@ const StudentReview = ({
                   </div> */}
                   <div className={Styles.studentReviewCardImg}>
                     <Image
-                      src={`${imageUrl}${item.StudentReviewCardImg}`}
-                      // src={card.StudentReviewCardImg}
+                      // src={`${imageUrl}$`}
+                      src={item.StudentReviewCardImg}
                       alt="Student Review"
                       width={88}
                       height={88}
