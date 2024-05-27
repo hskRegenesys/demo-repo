@@ -6,6 +6,7 @@ import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 
 interface StudentReviewProps {
   handleEnrollButtonClick: () => void;
@@ -75,7 +76,8 @@ const StudentReview = ({
         <h2 className={Styles.heading}>{StudentReviewHeading}</h2>
       </div>
       <div className={Styles.studentReviewCardContainer}>
-        <Slider {...settings} className={Styles.sliderStyle}>
+        {/* <Slider {...settings} className={Styles.sliderStyle}> */}
+        <MultiCarousel childSettings={settings}>
           {StudentReviewCard.map((item: any, index: number) => (
             <div key={index} className={Styles.studentReviewCard}>
               <div className={Styles.studentReviewCardImg}>
@@ -97,7 +99,7 @@ const StudentReview = ({
               </div>
             </div>
           ))}
-        </Slider>
+        </MultiCarousel>
       </div>
       <div
         className={Styles.studentReviewButton}
