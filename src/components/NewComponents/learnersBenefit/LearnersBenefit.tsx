@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 const LearnersBenefit = ({ LearnersBenefitData }: any) => {
   const {
     LearnersBenefitHeading,
@@ -15,7 +16,37 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
     LearnersBenefitFrame2,
   } = LearnersBenefitData;
   const imageUrl = imageBaseUrl();
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className={Styles.LearnersBenefitContainer}>
       <div className={Styles.TopSection}>
@@ -40,26 +71,11 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
           />
         </div>
       </div>
-      <div className={Styles.LearnersBenefitsCardContainer}>
-        <Swiper
-          className={Styles.swiperStyleFC}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          spaceBetween={20}
-          loop={true}
-          speed={2000}
-          autoplay={{
-            delay: 8000,
-          }}
-          breakpoints={{
-            0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
-            560: {
-              slidesPerView: 1,
-            },
-          }}
-        >
+
+      <div>
+        <MultiCarousel childSettings={settings}>
           {LearnersBenfitsCardsData.map((item: any, index: any) => (
-            <SwiperSlide key={index}>
+            <div key={index}>
               <div className={Styles.LearnersBenefitCard} key={index}>
                 <div className={Styles.LeftSide}>
                   <div className={Styles.learnersBenefitCardImg}>
@@ -93,9 +109,9 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                   </ul>
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </MultiCarousel>
       </div>
     </div>
   );
