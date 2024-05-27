@@ -16,7 +16,7 @@ const AboutUsData = {
     },
     {
       image: "Icons/Counselling.svg",
-      title: "Practical and Experiential Learning ",
+      title: "Practical Learning ",
     },
     {
       image: "Icons/Experts.svg",

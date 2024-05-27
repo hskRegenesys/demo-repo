@@ -14,6 +14,38 @@ const AllCourcesCardData = {
   allCoursesSliderSubHeading: "Find Your Suitable Course",
 
   Courses: {
+    ArtificialIntelligence: {
+      parentCource: {
+        code: "AI",
+        id: 5,
+        parentId: null,
+        name: "Artificial Intelligence",
+        cardProgram: "Artificial Intelligence",
+        cardImg: "Images/Course-Card/AI-card.webp",
+        ImgAlt: "Artificial Intelligence - Digital Regenesys",
+
+        cardWeek: "37 Weeks",
+        cardCount: "42,618+",
+        CourseNameCode: "AIN",
+        cardTool: "12+ Tools",
+      },
+    },
+    FullStackDevelopment: {
+      parentCource: {
+        id: 6,
+        name: "Full Stack Development",
+        code: "FSD",
+        description: "Full Stack Development",
+        parentId: null,
+        cardProgram: "Full Stack Development",
+        cardImg: "Images/Course-Card/FS-card.webp",
+        ImgAlt: "Full Stack Development - Digital Regenesys",
+        cardCount: "7,875+",
+        cardTool: "8+ Tools",
+        cardWeek: "40 Weeks",
+        CourseNameCode: "FSD",
+      },
+    },
     ProductManagement: {
       parentCource: {
         id: 9,
@@ -44,22 +76,6 @@ const AllCourcesCardData = {
         cardWeek: "40 Weeks",
         CourseNameCode: "MD",
         cardTool: "5+ Tools",
-      },
-    },
-    FullStackDevelopment: {
-      parentCource: {
-        id: 6,
-        name: "Full Stack Development",
-        code: "FSD",
-        description: "Full Stack Development",
-        parentId: null,
-        cardProgram: "Full Stack Development",
-        cardImg: "Images/Course-Card/FS-card.webp",
-        ImgAlt: "Full Stack Development - Digital Regenesys",
-        cardCount: "7,875+",
-        cardTool: "8+ Tools",
-        cardWeek: "40 Weeks",
-        CourseNameCode: "FSD",
       },
     },
 
@@ -95,22 +111,7 @@ const AllCourcesCardData = {
         CourseNameCode: "DSN",
       },
     },
-    ArtificialIntelligence: {
-      parentCource: {
-        code: "AI",
-        id: 5,
-        parentId: null,
-        name: "Artificial Intelligence",
-        cardProgram: "Artificial Intelligence",
-        cardImg: "Images/Course-Card/AI-card.webp",
-        ImgAlt: "Artificial Intelligence - Digital Regenesys",
 
-        cardWeek: "37 Weeks",
-        cardCount: "42,618+",
-        CourseNameCode: "AIN",
-        cardTool: "12+ Tools",
-      },
-    },
     CyberSecurity: {
       parentCource: {
         id: 4,

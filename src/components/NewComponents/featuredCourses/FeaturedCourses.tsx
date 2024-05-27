@@ -90,9 +90,9 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
   }
 
   const coursesToInclude = [
-    "ArtificialIntelligence",
-    "FullStackDevelopment",
-    "ProductManagement",
+    "DataScience",
+    "ProjectManagement",
+    "CyberSecurity",
   ];
   const filteredParentCourses = coursesToInclude
     .map(
