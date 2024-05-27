@@ -10,9 +10,6 @@ const AllCourcesCardData = {
   cardToolsText: "Covered",
   cardStarIcon: "/assets/images/new-component-assets/star.svg",
 
-  RelatedCoursesHeding: "Discover Trend's Top Courses in Demand",
-  RelatedCoursesTitle: "Related Courses",
-
   allCoursesSliderHeading: "All Courses",
   allCoursesSliderSubHeading: "Find Your Suitable Course",
 
