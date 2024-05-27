@@ -1,13 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import "swiper/swiper-bundle.css";
-import "swiper/swiper-bundle.min.css";
+import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
 import styles from "./TalentedComponent.module.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
-
-SwiperCore.use([Navigation, Pagination]);
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 
 interface TalentedComponentProp {
   handleEnrollButtonClick: () => void;
@@ -26,18 +24,15 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   FacultyData,
 }) => {
   const data: Faculty[] = Object.values(FacultyData);
-  const [paginationText, setPaginationText] = useState<any>(false);
-  const swiperRef = useRef<any>(null);
+  const [isMobile, setIsMobile] = useState(false);
   const imageUrl = imageBaseUrl();
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth <= 920;
-      setPaginationText(isMobile ? { clickable: true } : false);
+      setIsMobile(window.innerWidth <= 920);
     };
 
     handleResize();
-
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -45,42 +40,49 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
     };
   }, []);
 
-  useEffect(() => {
-    const swiper = swiperRef.current?.swiper;
-
-    if (swiper) {
-      const arrow = document.getElementsByClassName(
-        "swiper-button-prev"
-      )[0] as HTMLElement;
-      arrow.style.display = "none";
-
-      swiper.on("slideChange", () => {
-        const realIndex = swiper.realIndex;
-        if (realIndex === 0) {
-          console.log(`real index:${realIndex} - hide arrow`);
-          arrow.style.display = "none";
-        } else {
-          console.log(`real index:${realIndex} - show arrow`);
-          arrow.style.display = "block";
-        }
-      });
-
-      return () => {
-        swiper.destroy(true, true);
-      };
-    }
-  }, []);
-
-  const handleNextSlide = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
-    }
-  };
-
-  const handlePrevSlide = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
+  const settings = {
+    dots: false,
+    Loop: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: <div className={`slick-next ${styles.nextButton}`} />,
+    prevArrow: <div className={`slick-prev ${styles.prevButton}`} />,
+    responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
+        breakpoint: 1190,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 1.6,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -95,71 +97,35 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
 
       <div className={styles.rightSection}>
         <div className={styles.cardContainer}>
-          <div className={styles.swiperNavigation}>
-            <Swiper
-              ref={swiperRef}
-              className={styles.swiperStyle}
-              slidesPerView={3}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1.6,
-                  slidesPerGroup: 1,
-                },
-                560: {
-                  slidesPerView: 1.5,
-                  slidesPerGroup: 1,
-                },
-                1190: { slidesPerView: 2 },
-                1250: { slidesPerView: 2.5 },
-                1920: { slidesPerView: 3.5 },
-              }}
-            >
-              {data.map((faculty: Faculty, index: number) => (
-                <SwiperSlide key={index}>
-                  <div className={styles.card}>
-                    <div className={styles.bgcolor}></div>
-                    <div className={styles.cardImg}>
-                      {faculty.facultyImg && (
-                        <Image
-                          src={`${imageUrl}${faculty.facultyImg}`}
-                          // src={faculty.facultyImg}
-                          alt={faculty.facultyName}
-                          title={faculty.facultyName}
-                          width={110}
-                          height={110}
-                          priority
-                        />
-                      )}
-                    </div>
-                    <p className={styles.facultyName}>{faculty.facultyName}</p>
-                    <p className={styles.courseName}>
-                      {faculty.facultyEducation}
-                    </p>
-                    {faculty.yearsOfExperience && (
-                      <p className={styles.yearsOfExperience}>
-                        <span>{faculty.yearsOfExperience} </span>Years of
-                        Experience
-                      </p>
-                    )}
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <button
-              className={`swiper-button-next ${styles.nextButton}`}
-              onClick={handleNextSlide}
-            ></button>
-
-            <button
-              className={`swiper-button-prev ${styles.prevButton}`}
-              onClick={handlePrevSlide}
-            ></button>
-          </div>
+          <MultiCarousel
+            childSettings={settings}
+            className={styles.sliderStyle}
+          >
+            {data.map((faculty: Faculty, index: number) => (
+              <div key={index} className={styles.card}>
+                <div className={styles.bgcolor}></div>
+                <div className={styles.cardImg}>
+                  {faculty.facultyImg && (
+                    <Image
+                      src={`${imageUrl}${faculty.facultyImg}`}
+                      alt={faculty.facultyName}
+                      title={faculty.facultyName}
+                      width={110}
+                      height={110}
+                      priority
+                    />
+                  )}
+                </div>
+                <p className={styles.facultyName}>{faculty.facultyName}</p>
+                <p className={styles.courseName}>{faculty.facultyEducation}</p>
+                {faculty.yearsOfExperience && (
+                  <p className={styles.yearsOfExperience}>
+                    <span>{faculty.yearsOfExperience} </span>Years of Experience
+                  </p>
+                )}
+              </div>
+            ))}
+          </MultiCarousel>
         </div>
       </div>
       <button
