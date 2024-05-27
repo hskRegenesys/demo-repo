@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import StudentReviewData from "../../../data/newComponentData/commonComponentData/StudentReviewData";
 import Styles from "./StudentReview.module.css";
-import Slider from "react-slick";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
 import "slick-carousel/slick/slick.css";
