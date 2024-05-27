@@ -68,7 +68,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
       <div className={Styles.aboutUs}>
         <div className={Styles.aboutUsLeft}>
           <Image
-            src={`${imageUrl}${aboutUsImg}`}
+            src={aboutUsImg}
             alt={aboutUsImgAlt}
             title={aboutUsImgAlt}
             className={Styles.aboutUsImage}
@@ -119,7 +119,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
           <div key={index} className={Styles.aboutusCard}>
             <div className={Styles.aboutusCardImg}>
               <Image
-                src={`${imageUrl}${item.image}`}
+                src={item.image}
                 alt={`Card ${index + 1}`}
                 width={52}
                 height={52}

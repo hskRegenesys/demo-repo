@@ -70,7 +70,7 @@ const PopupForm: React.FC<PopupFormProps> = ({
               <div className={Styles.ImageContainer}>
                 <div className={Styles.WebImage}>
                   <Image
-                    src={`${imageUrl}${popupData.PopupDesktop}`}
+                    src={popupData.PopupDesktop}
                     // src={popupData.PopupDesktop}
                     alt="Popup Image"
                     width={388}
@@ -83,7 +83,7 @@ const PopupForm: React.FC<PopupFormProps> = ({
                 </div>
                 <div className={Styles.MobileImage}>
                   <Image
-                    src={`${imageUrl}${popupData.PopupMobile}`}
+                    src={popupData.PopupMobile}
                     // src={popupData.PopupMobile}
                     alt="Popup Image"
                     width={360}

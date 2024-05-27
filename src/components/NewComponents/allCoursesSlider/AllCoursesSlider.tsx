@@ -186,7 +186,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   </div> */}
                   <Image
                     // src={parentCourse.cardImg}
-                    src={`${imageUrl}${parentCourse.cardImg}`}
+                    src={parentCourse.cardImg}
                     alt={parentCourse.ImgAlt}
                     title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
@@ -199,7 +199,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   <div className={Styles.line1}>
                     <div className={Styles.icon}>
                       <Image
-                        src={`${imageUrl}${AllCourcesCardData.cardTimeIcon}`}
+                        src={AllCourcesCardData.cardTimeIcon}
                         alt="icon"
                         className={Styles.cardIcon}
                         width={24}
@@ -210,6 +210,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     <div className={Styles.boldText}>
                       {parentCourse.cardWeek}
                     </div>
+                    a
                     <div className={Styles.normalText}>
                       {AllCourcesCardData.cardProgramText}
                     </div>
@@ -217,7 +218,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   <div className={Styles.line2}>
                     <div className={Styles.icon}>
                       <Image
-                        src={`${imageUrl}${AllCourcesCardData.cardStudentsIcon}`}
+                        src={AllCourcesCardData.cardStudentsIcon}
                         alt="icon"
                         className={Styles.cardIcon}
                         width={24}
@@ -237,7 +238,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     <div className={Styles.line3}>
                       <div className={Styles.icon}>
                         <Image
-                          src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                          src={AllCourcesCardData.cardBookIcon}
                           alt="icon"
                           className={Styles.cardIcon}
                           width={24}
@@ -257,7 +258,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     <div className={Styles.line3}>
                       <div className={Styles.icon}>
                         <Image
-                          src={`${imageUrl}${AllCourcesCardData.cardBookIcon}`}
+                          src={AllCourcesCardData.cardBookIcon}
                           alt="icon"
                           className={Styles.cardIcon}
                           width={24}
