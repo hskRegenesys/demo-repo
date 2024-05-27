@@ -1,16 +1,10 @@
-import React, { useCallback, useEffect, useMemo } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useCallback, useEffect, useState } from "react";
+import Slider from "react-slick";
 import Styles from "./homeSliderBanner.module.css";
-import "swiper/css";
-import "swiper/css/pagination";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
-// import homeSliderBannerData from "../../../data/newComponentData/commonComponentData/homeSliderBannerData";
-// import RequestForm from "../requestForm/RequestForm";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
-
-// Install Swiper modules
-SwiperCore.use([Pagination, Autoplay]);
 
 interface Slide {
   imageUrl: string;
@@ -28,15 +22,14 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   homeSliderBannerData,
 }) => {
   const { sliderDataDesktop, sliderDataMobile } = homeSliderBannerData;
-
+  const [currentSlide, setCurrentSlide] = useState(0);
   const secondsPerSlide = 3;
-
   const imageUrl = imageBaseUrl();
 
   const renderSlides = useCallback(
     (sliderData: Slide[], isMobile: boolean) => {
       return sliderData.map((slide, index) => (
-        <SwiperSlide key={index}>
+        <div key={index}>
           <a href={slide.link}>
             <Image
               className={Styles.img}
@@ -54,11 +47,12 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
               loading="eager"
             />
           </a>
-        </SwiperSlide>
+        </div>
       ));
     },
     [imageUrl]
   );
+
   useEffect(() => {
     console.log("HomeSliderBanner mounted");
     return () => {
@@ -66,32 +60,43 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
     };
   }, []);
 
+  const handleSlideChange = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: secondsPerSlide * 1000,
+    pauseOnHover: true,
+    arrows: false,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setCurrentSlide(newIndex);
+    },
+    customPaging: (i: number) => (
+      <button>
+        <div
+          className={`${Styles.customDots} ${
+            currentSlide === i ? Styles.activeDot : ""
+          }`}
+        />
+      </button>
+    ),
+    dotsClass: `${Styles.slickDots} ${Styles.slickThumb}`,
+  };
+
   return (
     <div>
       <div className={Styles.desktopSlide}>
-        <Swiper
-          pagination={{ clickable: true }}
-          className={Styles.swiperStyle}
-          autoplay={{
-            delay: secondsPerSlide * 1000,
-            disableOnInteraction: false,
-          }}
-        >
-          {renderSlides(sliderDataDesktop, false)}
-        </Swiper>
+        <Slider {...settings}>{renderSlides(sliderDataDesktop, false)}</Slider>
       </div>
 
       <div className={Styles.mobileSlide}>
-        <Swiper
-          pagination={{ clickable: true }}
-          className={Styles.swiperStyle}
-          autoplay={{
-            delay: secondsPerSlide * 1000,
-            disableOnInteraction: false,
-          }}
-        >
-          {renderSlides(sliderDataMobile, true)}
-        </Swiper>
+        <Slider {...settings}>{renderSlides(sliderDataMobile, true)}</Slider>
         {/* <div className={Styles.formcointent}>
           <div className={Styles.formContainer}>
             <RequestForm onFormSubmit={onFormSubmit} />
