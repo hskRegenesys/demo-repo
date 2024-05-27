@@ -162,6 +162,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0) !important;
+}
+
 .swiper-button-next {
   right: 0;
 }
@@ -200,6 +205,10 @@
 }
 .btnStartMobile {
   display: none;
+}
+
+.container .slick-arrow::before {
+  color: inherit;
 }
 
 @media (max-width: 520px) {

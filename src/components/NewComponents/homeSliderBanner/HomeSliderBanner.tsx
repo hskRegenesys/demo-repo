@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 
 interface Slide {
   imageUrl: string;
@@ -80,11 +81,15 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   return (
     <div>
       <div className={Styles.desktopSlide}>
-        <Slider {...settings}>{renderSlides(sliderDataDesktop, false)}</Slider>
+        <MultiCarousel childSettings={settings}>
+          {renderSlides(sliderDataDesktop, false)}
+        </MultiCarousel>
       </div>
 
       <div className={Styles.mobileSlide}>
-        <Slider {...settings}>{renderSlides(sliderDataMobile, true)}</Slider>
+        <MultiCarousel childSettings={settings}>
+          {renderSlides(sliderDataMobile, true)}
+        </MultiCarousel>
       </div>
     </div>
   );

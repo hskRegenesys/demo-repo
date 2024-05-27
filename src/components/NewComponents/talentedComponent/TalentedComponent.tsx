@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
+import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 
 interface TalentedComponentProp {
   handleEnrollButtonClick: () => void;
@@ -40,7 +41,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   }, []);
 
   const settings = {
-    dots: isMobile,
+    dots: false,
     Loop: false,
     infinite: false,
     speed: 500,
@@ -96,7 +97,10 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
 
       <div className={styles.rightSection}>
         <div className={styles.cardContainer}>
-          <Slider {...settings} className={styles.sliderStyle}>
+          <MultiCarousel
+            childSettings={settings}
+            className={styles.sliderStyle}
+          >
             {data.map((faculty: Faculty, index: number) => (
               <div key={index} className={styles.card}>
                 <div className={styles.bgcolor}></div>
@@ -121,7 +125,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                 )}
               </div>
             ))}
-          </Slider>
+          </MultiCarousel>
         </div>
       </div>
       <button
