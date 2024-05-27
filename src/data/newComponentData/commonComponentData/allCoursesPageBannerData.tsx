@@ -1,6 +1,6 @@
 const allCoursesPageBannerData = {
-  DesktopBannerImg: "Images/Banner/All-Courses-Desktop-Banner.webp",
-  MobileBannerImg: "Images/Banner/All-Courses-Mobile-Banner.webp",
+  DesktopBannerImg: "/assets/images/allImages/All-Courses-Desktop-Banner.webp",
+  MobileBannerImg: "/assets/images/allImages/All-Courses-Mobile-Banner.webp",
   HeadingText: "Get Certified, Get Ahead with Our Courses",
   ParagraphTextMobile:
     "Digital Regenesys’s online courses offer learners training in a variety of courses, such as Data Science, Artificial Intelligence, and more.",

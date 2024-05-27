@@ -107,8 +107,8 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
 
         <div className={Styles.rightSection}>
           <Image
-            src={`${imageUrl}${image}`}
-            // src={image}
+            // src={`${imageUrl}${image}`}
+            src={image}
             alt="Certification Image"
             width={468}
             height={336}

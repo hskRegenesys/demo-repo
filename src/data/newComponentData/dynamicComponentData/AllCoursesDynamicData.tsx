@@ -15,7 +15,7 @@ const AllCoursesDynamicData = {
       "Industry Expert Sessions",
       "Upskilling Opportunities",
     ],
-    image: "Images/Certificate/all_courses_certificates.webp",
+    image: "/assets/images/Certificate/all_courses_certificates.webp",
     imageText:
       "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
   },
