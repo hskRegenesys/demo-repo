@@ -66,27 +66,22 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
 
   const settings = {
     dots: true,
-    infinite: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: secondsPerSlide * 1000,
     pauseOnHover: true,
-    arrows: false,
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex);
     },
     customPaging: (i: number) => (
-      <button>
-        <div
-          className={`${Styles.customDots} ${
-            currentSlide === i ? Styles.activeDot : ""
-          }`}
-        />
-      </button>
+      <div
+        className={`${Styles.customDot} ${
+          currentSlide === i ? Styles.activeDot : ""
+        }`}
+      />
     ),
-    dotsClass: `${Styles.slickDots} ${Styles.slickThumb}`,
+    dotsClass: Styles.customDots,
   };
 
   return (
@@ -97,11 +92,6 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
 
       <div className={Styles.mobileSlide}>
         <Slider {...settings}>{renderSlides(sliderDataMobile, true)}</Slider>
-        {/* <div className={Styles.formcointent}>
-          <div className={Styles.formContainer}>
-            <RequestForm onFormSubmit={onFormSubmit} />
-          </div>
-        </div> */}
       </div>
     </div>
   );
