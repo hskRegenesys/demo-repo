@@ -53,13 +53,6 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
     [imageUrl]
   );
 
-  useEffect(() => {
-    console.log("HomeSliderBanner mounted");
-    return () => {
-      console.log("HomeSliderBanner unmounted");
-    };
-  }, []);
-
   const handleSlideChange = (index: number) => {
     setCurrentSlide(index);
   };

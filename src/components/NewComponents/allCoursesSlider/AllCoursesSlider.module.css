@@ -36,8 +36,6 @@
 }
 
 .cardContainer {
-  display: flex;
-  justify-content: space-between;
   position: relative;
 }
 
@@ -224,6 +222,30 @@
   width: 100% !important;
 }
 
+.customDot {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bcbdbf;
+}
+ 
+.activeDot {
+  background-color: #008554;
+}
+ 
+.customDots {
+  display: flex !important;
+  position: relative;
+  bottom: -30px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+
 /* swiper style */
 
 .swiperStyle {
@@ -305,6 +327,10 @@
     height: 20px;
     width: 20px !important;
     height: 20px !important;
+  }
+
+  .customDots {
+    bottom: -25px !important;
   }
 }
 

@@ -280,7 +280,7 @@ const HeaderOne = ({
                       height="40"
                       title={title}
                       alt={title}
-                    ></Image>
+                    />
                   </div>
                 </a>
               </Link>

@@ -22064,6 +22064,31 @@ h2.highlight {
   display: flex;
   text-align: center;
 }
+.slick-dots li button:before {
+  font-family: slick;
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  content: "•";
+  text-align: center;
+  opacity: 0.15;
+  color: #008554 !important;
+  -webkit-font-smoothing: antialiased;
+}
+.slick-dots li button {
+  padding: 5px !important;
+  width: 10px !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #008554 !important;
+}
 @media (max-width: 560px) {
   .seats-count {
     text-align: center;
