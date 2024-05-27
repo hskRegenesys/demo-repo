@@ -1,21 +1,12 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-//import "swiper/css";
-//import "swiper/css/pagination";
-//import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Styles from "./admitsCompanies.module.css";
-// import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
 import Image from "next/image";
 import imageBaseUrl from "src/utils/imageBaseUrl";
-//import MultiCarousel from "@/components/multiCarousel/multiCarousel";
-
-import Slider from "react-slick";
 import MultiCarousel from "@/components/multiCarousel/multiCarousel";
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: () => void;
   AdmiteCompaniesData: any;
 }
-// SwiperCore.use([Pagination, Autoplay]);
 
 const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   handleEnrollButtonClick,

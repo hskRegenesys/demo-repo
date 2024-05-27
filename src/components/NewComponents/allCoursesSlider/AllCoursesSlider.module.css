@@ -229,6 +229,14 @@
   border-radius: 50%;
   background-color: #bcbdbf;
 }
+
+.customDotFeatureCourse{
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bcbdbf;
+}
  
 .activeDot {
   background-color: #008554;
@@ -245,6 +253,18 @@
   background-color: transparent;
 }
 
+.customDotsfeatureCourse{
+  display: flex !important;
+  position: relative;
+  bottom: -30px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  background-color: transparent;
+  visibility:hidden;
+
+}
 
 /* swiper style */
 
@@ -331,6 +351,31 @@
 
   .customDots {
     bottom: -25px !important;
+  }
+
+  .customDotFeatureCourse{
+    display: flex !important;
+    width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bcbdbf;
+  }
+  .customDotsfeatureCourse{
+    display: flex !important;
+    position: relative;
+    bottom: -15px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    background-color: transparent;
+    visibility: visible !important;
+  }
+  
+   
+  .activeDot {
+    background-color: #008554;
   }
 }
 
