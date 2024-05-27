@@ -20,8 +20,6 @@
 }
 
 .blogCardsContainer {
-  display: flex;
-  justify-content: space-around;
   gap: 20px;
 }
 .blogContent {
@@ -104,6 +102,29 @@
   margin-left: 2px;
 }
 
+.customDot {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bcbdbf;
+}
+ 
+.activeDot {
+  background-color: #008554;
+}
+ 
+.customDots {
+  display: flex !important;
+  position: relative;
+  bottom: -30px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  background-color: transparent;
+}
+
 /* swiper style */
 
 .swiperStyle {
@@ -147,5 +168,8 @@
   }
   .blogCard {
     margin: 0 auto;
+  }
+  .customDots {
+    bottom: -10px !important;
   }
 }
