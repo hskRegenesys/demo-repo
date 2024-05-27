@@ -14,8 +14,6 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
-  const imageUrl = `${process.env.awsImage_url}`;
-
   return (
     <div className={`${Styles.IndiaSection} `}>
       {isHovered && (
@@ -26,8 +24,7 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
           onMouseLeave={onMouseLeave}
         >
           <Image
-            src={`${imageUrl}${OurLocationData.India.countryFlagImg}`}
-            // src={OurLocationData.India.countryFlagImg}
+            src={OurLocationData.India.countryFlagImg}
             className={Styles.contaryFlag}
             alt={OurLocationData.India.countryName}
             title={OurLocationData.India.countryName}
@@ -52,7 +49,7 @@ const IndiaSection: React.FC<IndiaSectionProps> = ({
             {OurLocationData.India.countryName}
           </span>
           <Image
-            src={`${imageUrl}${OurLocationData.locationPinImage}`}
+            src={OurLocationData.locationPinImage}
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}

@@ -35,10 +35,10 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
                     <Image
                       src={
                         index === 0
-                          ? `${imageUrl}${vectorWhiteIcon}`
+                          ? vectorWhiteIcon
                           : index === 1
-                          ? `${imageUrl}${whiteFilledStarIcon}`
-                          : `${imageUrl}${discountIcon}`
+                          ? whiteFilledStarIcon
+                          : discountIcon
                       }
                       alt={`Icon ${index + 1}`}
                       width={20}
