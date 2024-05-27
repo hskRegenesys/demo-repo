@@ -5,6 +5,7 @@ import Layout from "@/components/Layout/Layout";
 
 import _ from "lodash";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
+import MobileMenu from "@/components/Header/MobileMenu";
 
 const UspSection = dynamic(
   () => import("@/components/NewComponents/uspSection/UspSection")
@@ -42,9 +43,7 @@ const FooterDR = dynamic(
 const PopupForm = dynamic(
   () => import("@/components/NewComponents/popupForm/PopupForm")
 );
-const MobileMenu = dynamic(() => import("@/components/Header/MobileMenu"), {
-  ssr: false,
-});
+
 const FeaturedCourses = dynamic(
   () => import("@/components/NewComponents/featuredCourses/FeaturedCourses")
 );

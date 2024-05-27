@@ -59,12 +59,6 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
     },
     [imageUrl]
   );
-  useEffect(() => {
-    console.log("HomeSliderBanner mounted");
-    return () => {
-      console.log("HomeSliderBanner unmounted");
-    };
-  }, []);
 
   return (
     <div>
@@ -102,4 +96,4 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   );
 };
 
-export default React.memo(HomeSliderBanner);
+export default HomeSliderBanner;
