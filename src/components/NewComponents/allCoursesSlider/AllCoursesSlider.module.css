@@ -16,7 +16,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 20px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -28,7 +28,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 40px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -51,40 +51,18 @@
   padding: 24px 20px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 14px;
   border-radius: 12px;
-  border-top: 1px solid #008554;
+  border: 1px solid #008554;
   background: #f1fdf4;
   box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
-  position: relative;
-}
-.card::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  right: 0;
-  top: 0;
-  height: 80%;
-  border-right: 1px solid transparent;
-  border-image: linear-gradient(180deg, #008554 0%, rgba(0, 133, 84, 0) 100%);
-  border-image-slice: 1 !important;
-}
-.card::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  top: 0;
-  height: 80%;
-  border-left: 1px solid transparent;
-  border-image: linear-gradient(180deg, #008554 0%, rgba(0, 133, 84, 0) 100%);
-  border-image-slice: 1 !important;
 }
 
 .cardHeading {
   color: var(--light-text-primary, #2b3340);
   font-family: Montserrat-Bold;
-  font-size: 22px;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -117,7 +95,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 14px;
-
+  font-style: normal;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
@@ -131,7 +109,6 @@
 
 .textContainer {
   padding: 0px 8px;
-  height: 100%;
 }
 
 .line1,
@@ -139,10 +116,7 @@
 .line3 {
   display: flex;
   align-items: center;
-}
-.line1,
-.line2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .icon {
@@ -155,18 +129,23 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 16px;
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-right: 5px;
+  margin-top: 10px;
 }
 
 .normalText {
   color: #2b3340;
-  font-family: Montserrat-semiBold;
+  font-family: Montserrat;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
+  margin-top: 10px;
 }
 
 .card .buttonContainer {
@@ -184,14 +163,14 @@
   color: var(--primary-primary-charcoal, #131718);
   font-family: Montserrat-Bold;
   font-size: 14px;
+  font-style: normal;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
-  padding: 10px 16px;
+  padding: 10px 20px;
   border-radius: 8px;
   transition: background-color 0.8s;
   border: 1px solid var(--primary-primary-charcoal, #131718);
-  background-color: transparent;
 }
 
 .card .enrollNowButton {
@@ -199,15 +178,16 @@
   color: var(--primary-primary-white, #fff);
   font-family: Montserrat-Bold;
   font-size: 14px;
+  font-style: normal;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
-  padding: 10px 16px;
+  padding: 10px 20px;
   border-radius: 8px;
   border: 0.837px solid #008554;
   background: #008554;
   transition: background-color 0.8s;
-  box-shadow: 0px 0.803px 1.607px 0px #008554;
+  box-shadow: 0px 0.803px 1.607px 0px rgba(16, 24, 40, 0.05);
 }
 .card .enrollNowButton:hover {
   color: var(--primary-primary-charcoal, #131718);
@@ -221,7 +201,8 @@
 .rocketImg {
   left: 0;
   position: absolute;
-  width: 100% !important;
+  width: 100%;
+  margin-top: 8%;
 }
 
 /* swiper style */
@@ -253,11 +234,8 @@
     padding-bottom: var(--add-bottom) !important;
     align-items: center;
   }
-  .card {
-    padding: 20px 16px;
-  }
   .allCoursesSliderContainer {
-    padding: 40px 0px 0px;
+    padding: 40px 16px 0px 16px;
     background: none !important;
   }
   .card {
@@ -280,11 +258,7 @@
     margin-bottom: 32px;
   }
   .cardHeading {
-    font-size: 16px;
-  }
-  .cardImage {
-    width: 352px !important;
-    height: 220px !important;
+    font-size: 20px;
   }
   .cardStarContainer {
     padding: 7px 13px;
@@ -303,8 +277,6 @@
   .icon {
     width: 20px;
     height: 20px;
-    width: 20px !important;
-    height: 20px !important;
   }
 }
 

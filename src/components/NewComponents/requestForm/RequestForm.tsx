@@ -98,7 +98,7 @@ function RequestForm(props: any) {
       const response = await courseService.downloadBrochure(brochureName?.name);
       setSubmitted(true);
       toast.success("Thank you for applying! We will get back to you.", {
-        position: "top-right",
+        position: toast.POSITION.TOP_RIGHT,
         autoClose: 3000,
       });
       props.onFormSubmit();
@@ -115,7 +115,7 @@ function RequestForm(props: any) {
           )
         : setSubmitted(true);
       toast.success(`Thank you for applying! We will get back to you.`, {
-        position: "top-right",
+        position: toast.POSITION.TOP_RIGHT,
         autoClose: 3000,
         className: Styles.tost,
       });

@@ -28,25 +28,13 @@ const ApplyNow = (props: any) => {
 
   let courses: any = [];
 
-  // if (courseData.length) {
-  //   courses = _.filter(
-  //     courseData,
-  //     (item: any) =>
-  //       item?.parent_id === null &&
-  //       item?.isAddon === false &&
-  //       item?.mode_id === 1
-  //   );
-  // }
   if (courseData.length) {
     courses = _.filter(
       courseData,
       (item: any) =>
         item?.parent_id === null &&
         item?.isAddon === false &&
-        item?.mode_id === 1 &&
-        (url === "/all-courses/software-development-course"
-          ? item?.id === 229
-          : item?.id !== 229)
+        item?.mode_id === 1
     );
   }
   if (courseData.length) {

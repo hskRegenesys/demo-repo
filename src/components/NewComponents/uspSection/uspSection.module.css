@@ -1,53 +1,27 @@
 .uspSectionContainer {
-  margin: 72px 20px 0px;
-}
-.uspSectionContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
-  margin: 0 auto;
-  padding: 24px 40px;
-  border-radius: 20px;
-  border: 1px solid var(--light-divider-borders-green, #008554);
-  background: var(--Light-Text-Surface-White, #fff);
-  max-width: 1224px;
-}
-.uspSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 60%;
-}
-.uspSectionGroup {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 40%;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
-.uspSectionGroup h2 {
-  color: var(--Light-Text-Primary, #2b3340);
+.uspCard {
   text-align: center;
-  font-family: Montserrat-bold;
-  font-size: 20px;
-  letter-spacing: -0.12px;
-  margin-bottom: 0px;
-}
-.uspCard img {
-  width: 40px;
-  margin-bottom: 12px;
+  padding: 24px;
 }
 
-.uspGreenText {
+.uspEnrollmentCount {
   color: #008554;
   text-align: center;
   font-family: Montserrat-Bold;
-  font-size: 28px;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
-  margin-bottom: 4px;
+  margin-right: 5px;
+  margin-bottom: 0px;
 }
 .enrollmentContainer {
   display: flex;
@@ -63,75 +37,15 @@
   color: #2b3340;
   text-align: center;
   font-size: 14px;
+  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
   font-family: Montserrat !important;
   margin-bottom: 0px;
 }
-.uspSectionGroupMobile {
-  display: none;
-}
-/* @media (max-width: 920px) {
-
-
-  .uspCard img {
-    width: 24px !important;
-  }
-  .CardText {
-    font-size: 12px;
-  }
-  .uspSectionGroup {
-    display: none !important;
-  }
-  .uspSection {
-    width: 100%;
-  }
-} */
-@media (max-width: 760px) {
+@media (max-width: 920px) {
   .uspSectionContainer {
-    margin: 24px 20px 0px;
-  }
-  .uspSectionContent {
-    padding: 16px 14px;
-    border-radius: 12px;
-    border: 1px solid var(--light-divider-borders-light, #e3e8ee);
-    background: var(--Light-Text-Surface-White, #fff);
-  }
-  .uspSectionGroupMobile {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 24px;
-  }
-  .uspSectionGroupMobile h2 {
-    color: var(--Light-Text-Primary, #2b3340);
-    text-align: center;
-    font-family: Montserrat-bold;
-    font-size: 20px;
-    letter-spacing: -0.12px;
-    margin-bottom: 0px;
-  }
-  .uspSectionGroupMobile img {
-    width: 24px !important;
-    height: 28px !important;
-  }
-
-  .uspGreenText {
-    margin-right: 0px;
-  }
-  .uspSectionGroup {
-    display: none !important;
-  }
-  .uspSection {
-    width: 100%;
-  }
-  .CardText {
-    font-size: 12px;
-    line-height: 12px;
-  }
-  .uspGreenText {
-    font-size: 16px;
+    display: none;
   }
 }

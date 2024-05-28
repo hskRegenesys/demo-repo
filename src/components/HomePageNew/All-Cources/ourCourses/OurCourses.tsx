@@ -18,7 +18,7 @@ import {
 
 import { allCourseList } from "@/data/courseData";
 
-interface OurCoursesCardData {
+interface CardData {
   code: any;
   id: number;
   parentId: number | null;
@@ -30,7 +30,7 @@ interface OurCoursesCardData {
 }
 
 interface CourseData {
-  [key: string]: OurCoursesCardData[];
+  [key: string]: CardData[];
 }
 
 interface OurCoursesData {
@@ -69,10 +69,11 @@ const OurCourses: React.FC<OurCoursesProps> = ({
   }>({});
 
   useEffect(() => {
+    // Initialize the selected category with the first category
     const courseCategories = Object.keys(data?.OurCoursesData?.Courses || {});
     if (courseCategories.length > 0) {
       setSelectedCategory(courseCategories[0]);
-
+      // Set default open state for the first dropdown
       setMobileDropdownState((prevState) => ({
         ...prevState,
         [courseCategories[0]]: true,
@@ -82,9 +83,10 @@ const OurCourses: React.FC<OurCoursesProps> = ({
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
-
+    // Close all other dropdowns and toggle the open/close state of the selected dropdown
     setMobileDropdownState((prevState) => {
       const newState = { [category]: !prevState[category] };
+      // Close all other dropdowns
       Object.keys(prevState).forEach((key) => {
         if (key !== category) {
           newState[key] = false;
@@ -182,9 +184,9 @@ const OurCourses: React.FC<OurCoursesProps> = ({
         <div className={Styles.downSection}>
           {selectedCategory &&
             data.OurCoursesData.Courses[selectedCategory].map(
-              (item: OurCoursesCardData, index: number) => (
+              (card: CardData, index: number) => (
                 <div key={index} className={Styles.card}>
-                  <div className={Styles.cardHeading}>{item.cardProgram}</div>
+                  <div className={Styles.cardHeading}>{card.cardProgram}</div>
 
                   <div className={Styles.imgCardContainer}>
                     <div className={Styles.cardStarContainer}>
@@ -196,9 +198,9 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                       <span className={Styles.cardStarText}>4.6 Ratings</span>
                     </div>
                     <img
-                      src={item.cardImg}
-                      alt={item.ImgAlt}
-                      title={item.ImgAlt}
+                      src={card.cardImg}
+                      alt={card.ImgAlt}
+                      title={card.ImgAlt}
                       className={Styles.cardImage}
                     />
                   </div>
@@ -211,7 +213,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                           className={Styles.cardIcon}
                         />
                       </div>
-                      <div className={Styles.boldText}>{item.cardCount}</div>
+                      <div className={Styles.boldText}>{card.cardCount}</div>
                       <div className={Styles.normalText}>
                         {data.OurCoursesData.cardStudentEnrollmentText}
                       </div>
@@ -224,7 +226,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                           className={Styles.cardIcon}
                         />
                       </div>
-                      <div className={Styles.boldText}>{item.cardTool}</div>
+                      <div className={Styles.boldText}>{card.cardTool}</div>
                       <div className={Styles.normalText}>
                         {data.OurCoursesData.cardToolsText}
                       </div>
@@ -235,10 +237,10 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                       className={Styles.learnMoreButton}
                       onClick={() =>
                         redirectCard(
-                          item.cardProgram,
-                          item.code,
-                          item.id,
-                          item.parentId
+                          card.cardProgram,
+                          card.code,
+                          card.id,
+                          card.parentId
                         )
                       }
                     >
@@ -311,11 +313,11 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                     },
                   }}
                 >
-                  {data.OurCoursesData.Courses[category].map((item, index) => (
+                  {data.OurCoursesData.Courses[category].map((card, index) => (
                     <SwiperSlide key={index}>
                       <div key={index} className={Styles.card}>
                         <div className={Styles.cardHeading}>
-                          {item.cardProgram}
+                          {card.cardProgram}
                         </div>
 
                         <div className={Styles.imgCardContainer}>
@@ -330,9 +332,9 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                             </span>
                           </div>
                           <img
-                            src={item.cardImg}
-                            alt={item.ImgAlt}
-                            title={item.ImgAlt}
+                            src={card.cardImg}
+                            alt={card.ImgAlt}
+                            title={card.ImgAlt}
                             className={Styles.cardImage}
                           />
                         </div>
@@ -346,7 +348,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                               />
                             </div>
                             <div className={Styles.boldText}>
-                              {item.cardCount}
+                              {card.cardCount}
                             </div>
                             <div className={Styles.normalText}>
                               {data.OurCoursesData.cardStudentEnrollmentText}
@@ -361,7 +363,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                               />
                             </div>
                             <div className={Styles.boldText}>
-                              {item.cardTool}
+                              {card.cardTool}
                             </div>
                             <div className={Styles.normalText}>
                               {data.OurCoursesData.cardToolsText}
@@ -373,10 +375,10 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                             className={Styles.learnMoreButton}
                             onClick={() =>
                               redirectCard(
-                                item.cardProgram,
-                                item.code,
-                                item.id,
-                                item.parentId
+                                card.cardProgram,
+                                card.code,
+                                card.id,
+                                card.parentId
                               )
                             }
                           >

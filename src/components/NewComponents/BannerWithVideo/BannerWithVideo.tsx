@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
-import Image from "next/image";
+import PopupForm from "../popupForm/PopupForm";
+
 interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;
   data: BannerCourseData;
@@ -15,7 +16,7 @@ type BannerCourseData = {
   topTextMessage: string;
   contentText: string;
   bannerVideoLink?: string;
-  BrochureIcon: string;
+  BrochureIcon?: string;
   vidoPlayIcon?: string;
   youtubeVideoLink: string;
   UspSectionData: {
@@ -54,7 +55,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
   const [count, setCount] = useState("0");
   const [title, setTitle] = useState("");
-  const imageUrl = `${process.env.awsImage_url}`;
 
   useEffect(() => {
     let start = 0;
@@ -84,17 +84,12 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <span className={styles.topTextBestsale}>{BestSaleText}</span>
               <span className={styles.topTextMessage}>{topTextMessage}</span>
             </div>
-            <h1 className={styles.courseHeading}>{coursePageName}</h1>
+            <h1 className={styles.courseHeading}>{pageName}</h1>
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles.uspSectionContainer}>
               <div className={styles.uspCardCountry}>
-                <Image
-                  src={`${imageUrl}${uspLocationCard.usplocationIcon}`}
-                  alt="Icon 1"
-                  width={40}
-                  height={40}
-                />
+                <img src={uspLocationCard.usplocationIcon} alt="Icon 1" />
                 <p className={styles.CardText}>
                   {uspLocationCard.uspLocationText}
                 </p>
@@ -102,12 +97,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <div
                 className={`${styles.uspCardCount} ${styles.enrollmentCard}`}
               >
-                <Image
-                  src={`${imageUrl}${uspEnrollmentCard.StudentEnrolIcon}`}
-                  alt="Icon 2"
-                  width={40}
-                  height={40}
-                />
+                <img src={uspEnrollmentCard.StudentEnrolIcon} alt="Icon 2" />
                 <div className={styles.enrollmentContainer}>
                   <p className={styles.uspEnrollmentCount}>
                     {count}{" "}
@@ -118,12 +108,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 </div>
               </div>
               <div className={styles.uspCardUpskill}>
-                <Image
-                  src={`${imageUrl}${uspUpskillCard.uspBookIcon}`}
-                  alt="Icon 3"
-                  width={40}
-                  height={40}
-                />
+                <img src={uspUpskillCard.uspBookIcon} alt="Icon 3" />
                 <p className={styles.CardText}>
                   {uspUpskillCard.uspUpskillText}
                 </p>
@@ -132,27 +117,25 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
             <div className={styles.buttonsContainer}>
               <a
-                className={styles.enrollButton}
-                onClick={() => {
-                  handleEnrollButtonClick("Enrol Now!");
-                }}
-              >
-                Enrol Now
-              </a>
-              <a
                 className={styles.brochureBtn}
                 onClick={() => {
                   handleEnrollButtonClick("Download Brochure");
                 }}
               >
-                <Image
+                <img
                   className={styles.brochureIcon}
-                  src={`${imageUrl}${BrochureIcon}`}
+                  src={BrochureIcon}
                   alt="Brochure Icon"
-                  width={24}
-                  height={24}
                 />
-                Download Brochure
+                Brochure
+              </a>
+              <a
+                className={styles.enrollButton}
+                onClick={() => {
+                  handleEnrollButtonClick("Enrol Now!");
+                }}
+              >
+                Enrol Now!
               </a>
             </div>
           </div>
@@ -162,7 +145,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
           <div className={styles.imageCard}>
             <img
               className={styles.imageBanner}
-              src={`${imageUrl}${data.BannerImgDesktop}`}
+              src={data.BannerImgDesktop}
               alt={`Banner for ${coursePageName}`}
             />
             <div
@@ -179,7 +162,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 </div>
                 <div className={styles.playIconStyle}>
                   <img
-                    src={`${imageUrl}${vidoPlayIcon}`}
+                    src={vidoPlayIcon}
                     className={styles.playIcon}
                     alt="play Icon"
                   />

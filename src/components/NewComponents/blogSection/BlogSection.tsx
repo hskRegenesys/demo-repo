@@ -3,11 +3,10 @@ import Styles from "./blogSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-import Image from "next/image";
-import imageBaseUrl from "src/utils/imageBaseUrl";
+
 SwiperCore.use([Pagination, Autoplay]);
 
-interface BlogSectionCardData {
+interface CardData {
   blogImg: string;
   blogQuestion: string;
   blogText: string;
@@ -16,7 +15,7 @@ interface BlogSectionCardData {
 
 interface BlogSectionData {
   BlogSectionTitle: string;
-  BlogSectionCards: BlogSectionCardData[];
+  cards: CardData[];
 }
 
 interface BlogSectionProps {
@@ -24,12 +23,12 @@ interface BlogSectionProps {
 }
 
 const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
-  if (!data || !data.BlogSectionCards || data.BlogSectionCards.length === 0) {
+  if (!data || !data.cards || data.cards.length === 0) {
+    // Return null if data is not provided or cards array is empty
     return null;
   }
 
-  const addBottomValue = data.BlogSectionCards.length <= 3 ? "0px" : "60px";
-  const imageUrl = imageBaseUrl();
+  const addBottomValue = data.cards.length <= 3 ? "0px" : "60px";
 
   return (
     <div className={Styles.blogSectionContainer}>
@@ -54,17 +53,13 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             },
           }}
         >
-          {data?.BlogSectionCards.map((card, index) => (
+          {data.cards.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
-                <Image
-                  //src={`${imageUrl}${card.blogImg}`}
+                <img
                   src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
-                  width={360}
-                  height={190}
-                  priority
                 />
 
                 <div className={Styles.blogContent}>
@@ -74,15 +69,13 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   </div>
                   <div className={Styles.knowMore}>
                     <a href={card.blogLink} className={Styles.knowMoreLink}>
-                      Know More
+                      Know More{" "}
                       <span className={Styles.arrowIcon}>
-                        <Image
-                          src={`${imageUrl}Icons/Readmore.svg`}
-                          // src="/assets/images/new-component-assets/Readmore.svg"
+                        {" "}
+                        <img
+                          src="/assets/images/new-component-assets/Readmore.svg"
                           alt="cardStar"
                           className={Styles.img}
-                          width={12}
-                          height={12}
                         />
                       </span>
                     </a>

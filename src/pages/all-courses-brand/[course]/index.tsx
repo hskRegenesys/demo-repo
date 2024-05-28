@@ -49,6 +49,7 @@ import ConnectContainer from "@/components/NewComponents/connectContainer/Connec
 import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
 import BannerWithImg from "@/components/NewComponents/BannerwithImg/BannerwithImg";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
@@ -69,10 +70,6 @@ const Course = (props: any) => {
   const [isYoutubePopup, setIsisYoutubePopup] = useState(false);
   const [youtubeVideoLink, setYoutubeVideoLink] = useState("");
   const [courseCode, setCourseCode] = useState("");
-  const [courses, setCourses] = useState(props?.initialCourses);
-  const [allCourseData, setAllCoursesData] = useState(
-    props?.intitialCoursesCardData
-  );
 
   const courseId: any = router?.query?.id;
   const allCourseList: any = [];
@@ -85,6 +82,14 @@ const Course = (props: any) => {
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
+
+  useEffect(() => {
+    const timeoutModal = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutModal);
+  }, []);
 
   const YoutubePopupButtonClick = (videoLink: string) => {
     setIsisYoutubePopup(true);
@@ -122,29 +127,13 @@ const Course = (props: any) => {
   const isPageDataAvailable =
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
-  useEffect(() => {
-    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
-    if (!popupDisplayed) {
-      const timeoutModal = setTimeout(() => {
-        setIsPopupVisible(true);
-        sessionStorage.setItem("popupDisplayed", "true");
-      }, 5000);
-
-      return () => clearTimeout(timeoutModal);
-    }
-  }, []);
-
-  const PopupData = {
-    PopupDesktop: "/assets/images/new-component-assets/WebModal.png",
-    PopupMobile: "/assets/images/new-component-assets/MobileModal.png",
-  };
   return (
     <Layout pageTitle={props?.course}>
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData}
+          popupData={PopupData.all}
           CourseCode={courseCode}
         />
       )}
@@ -172,35 +161,20 @@ const Course = (props: any) => {
         style={{
           background: "none",
         }}
-        allCourseList={courses}
-        AllCourcesCardData={allCourseData}
       />
       <AllCoursesSlider
         handleEnrollButtonClick={handleEnrollButtonClick}
         style={{
           background: "none",
         }}
-        allCourseList={courses}
-        AllCourcesCardData={allCourseData}
       />
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={ToolsCoveredData} />
-      <TalentedComponent
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        FacultyData={props?.initialFacultyData}
-      />
+      <TalentedComponent handleEnrollButtonClick={handleEnrollButtonClick} />
       <OurLocation />
-      <AdmitsCompanies
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        AdmiteCompaniesData={props?.initialAdmiteCompaniesData}
-      />
-      <StudentReview
-        handleEnrollButtonClick={handleEnrollButtonClick}
-        StudentReviewData={props?.initialStudentReviewData}
-      />
-      <LearnersBenefit
-        LearnersBenefitData={props?.initialLearnersBenefitData}
-      />
+      <AdmitsCompanies handleEnrollButtonClick={handleEnrollButtonClick} />
+      <StudentReview />
+      <LearnersBenefit />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
       <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
@@ -215,53 +189,8 @@ const Course = (props: any) => {
   );
 };
 export async function getServerSideProps(context: any) {
-  try {
-    const { id, course } = context.query;
-    const { allCourseList } = await import("@/data/courseData");
-    const { default: videoTestimonialData } = await import(
-      "@/data/videoTestimonial"
-    );
-    const { default: AllCourcesCardData } = await import(
-      "@/data/newComponentData/commonComponentData/AllCourcesCardData"
-    );
-    const { default: StudentReviewData } = await import(
-      "@/data/newComponentData/commonComponentData/StudentReviewData"
-    );
-    const { default: AdmiteCompaniesData } = await import(
-      "@/data/newComponentData/commonComponentData/AdmiteCompaniesData"
-    );
-    const { default: LearnersBenefitData } = await import(
-      "@/data/newComponentData/commonComponentData/LearnersBenefitData"
-    );
+  const { id, course } = context.query;
 
-    const { default: FacultyData } = await import(
-      "@/data/newComponentData/commonComponentData/FacultyData"
-    );
-
-    return {
-      props: {
-        course,
-        initialCourses: allCourseList,
-        initialVideoTestimonialData: videoTestimonialData,
-        intitialCoursesCardData: AllCourcesCardData,
-        initialStudentReviewData: StudentReviewData,
-        initialAdmiteCompaniesData: AdmiteCompaniesData,
-        initialLearnersBenefitData: LearnersBenefitData,
-        initialFacultyData: FacultyData,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        initialCourses: [],
-        initialVideoTestimonialData: [],
-        initialStudentReviewData: [],
-        intitialCoursesCardData: [],
-        initialAdmiteCompaniesData: [],
-        initialLearnersBenefitData: [],
-        initialFacultyData: [],
-      },
-    };
-  }
+  return { props: { course } };
 }
 export default Course;

@@ -9,7 +9,6 @@ import useActive from "@/hooks/useActive";
 import _ from "lodash";
 import { useRouter } from "next/router";
 import { urlInfo } from "../../config/helper";
-import Image from "next/image";
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -19,10 +18,9 @@ import {
   digitalMarkrtingCode,
   programBaseUrl,
 } from "../../config/constant";
-import imageBaseUrl from "src/utils/imageBaseUrl";
 
-// import { allCourseList } from "@/data/courseData";
-// import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
+import { allCourseList } from "@/data/courseData";
+import AllCourcesCardData from "../../../data/newComponentData/commonComponentData/AllCourcesCardData";
 
 interface Card {
   cardProgram: string;
@@ -40,15 +38,11 @@ interface Card {
 interface allCoursesSliderProps {
   handleEnrollButtonClick: (code?: string) => void;
   style?: React.CSSProperties; // Add style prop
-  allCourseList: any;
-  AllCourcesCardData: any;
 }
 
 const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   handleEnrollButtonClick,
   style,
-  allCourseList,
-  AllCourcesCardData,
 }) => {
   const router = useRouter();
 
@@ -56,7 +50,6 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  const imageUrl = imageBaseUrl();
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (
@@ -131,15 +124,13 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
       <h2 className={Styles.bigHeading}>
         {AllCourcesCardData.allCoursesSliderSubHeading}
       </h2>
-      {/* <div>
-        <Image
-
-
+      <div>
+        <img
           src="/assets/images/new-component-assets/Rocket BG.svg"
           alt="rocket"
           className={Styles.rocketImg}
         />
-      </div> */}
+      </div>
       <div className={Styles.cardContainer}>
         <Swiper
           className={Styles.swiperStyle}
@@ -147,14 +138,9 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
           slidesPerView={3}
           pagination={{ clickable: true }}
           slidesPerGroup={3}
-          // centeredSlides={true}
-          // grabCursor={true}
-          // modules={[Pagination]}
           breakpoints={{
             0: {
-              slidesPerView: 1.25,
-              slidesPerGroup: 1,
-              centeredSlides: true,
+              slidesPerView: 1,
             },
             865: {
               slidesPerView: 2,
@@ -175,55 +161,42 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                 </div>
                 <div className={Styles.imgCardContainer}>
                   {/* <div className={Styles.cardStarContainer}>
-                    <Image
-
-
+                    <img
                       src={AllCourcesCardData.cardStarIcon}
                       alt="cardStar"
                       className={Styles.cardStarIcon}
                     />
                     <span className={Styles.cardStarText}>4.6 Ratings</span>
                   </div> */}
-                  <Image
-                    // src={parentCourse.cardImg}
+                  <img
                     src={parentCourse.cardImg}
                     alt={parentCourse.ImgAlt}
                     title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
-                    width={346}
-                    height={220}
-                    loading="eager"
                   />
                 </div>
                 <div className={Styles.textContainer}>
                   <div className={Styles.line1}>
                     <div className={Styles.icon}>
-                      <Image
+                      <img
                         src={AllCourcesCardData.cardTimeIcon}
                         alt="icon"
                         className={Styles.cardIcon}
-                        width={24}
-                        height={24}
-                        loading="eager"
                       />
                     </div>
                     <div className={Styles.boldText}>
                       {parentCourse.cardWeek}
                     </div>
-
                     <div className={Styles.normalText}>
                       {AllCourcesCardData.cardProgramText}
                     </div>
                   </div>
                   <div className={Styles.line2}>
                     <div className={Styles.icon}>
-                      <Image
+                      <img
                         src={AllCourcesCardData.cardStudentsIcon}
                         alt="icon"
                         className={Styles.cardIcon}
-                        width={24}
-                        height={24}
-                        loading="eager"
                       />
                     </div>
 
@@ -237,16 +210,12 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   {parentCourse.cardTool ? (
                     <div className={Styles.line3}>
                       <div className={Styles.icon}>
-                        <Image
+                        <img
                           src={AllCourcesCardData.cardBookIcon}
                           alt="icon"
                           className={Styles.cardIcon}
-                          width={24}
-                          height={24}
-                          loading="eager"
                         />
                       </div>
-
                       <div className={Styles.boldText}>
                         {parentCourse.cardTool}
                       </div>
@@ -254,22 +223,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                         {AllCourcesCardData.cardToolsText}
                       </div>
                     </div>
-                  ) : (
-                    <div className={Styles.line3}>
-                      <div className={Styles.icon}>
-                        <Image
-                          src={AllCourcesCardData.cardBookIcon}
-                          alt="icon"
-                          className={Styles.cardIcon}
-                          width={24}
-                          height={24}
-                          loading="eager"
-                        />
-                      </div>
-
-                      <div className={Styles.normalText}>Capstone Projects</div>
-                    </div>
-                  )}
+                  ) : null}
                 </div>
                 <div className={Styles.buttonContainer}>
                   <button

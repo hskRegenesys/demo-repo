@@ -5,26 +5,24 @@ import "swiper/swiper-bundle.css";
 
 const StudentYoutubeVideos = () => {
   return (
-    <div className={Styles.studentYoutubeContainer}>
+    <div className={Styles.container}>
       <h2 className={Styles.title}>
-        Watch Our Students Share Their Experiences{" "}
+        Watch our students share their experiences.{" "}
       </h2>
       <div className={Styles.videoContainer}>
         <Swiper
           className={Styles.swiperStyle}
           spaceBetween={30}
-          loop={true}
           slidesPerView={2}
           pagination={{ clickable: true }}
           breakpoints={{
-            0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
-            560: {
-              slidesPerView: 1.25,
-              slidesPerGroup: 1,
-              centeredSlides: true,
+            0: {
+              slidesPerView: 1,
+              pagination: { clickable: true }, // Fixed syntax error here
             },
-            1440: {
+            920: {
               slidesPerView: 2,
+              pagination: { clickable: true }, // Fixed syntax error here
             },
           }}
         >
@@ -35,7 +33,19 @@ const StudentYoutubeVideos = () => {
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              className={Styles.iframe}
+              className={Styles.iframe} // Changed to lowercase "iframe" for consistency
+            ></iframe>
+          </SwiperSlide>
+          <SwiperSlide>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/pxKOmOX5muU"
+              title="Video 2"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              className={Styles.iframe} // Changed to lowercase "iframe" for consistency
             ></iframe>
           </SwiperSlide>
           <SwiperSlide>
@@ -50,18 +60,6 @@ const StudentYoutubeVideos = () => {
               className={Styles.iframe}
             ></iframe>
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/pxKOmOX5muU"
-              title="Video 2"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              className={Styles.iframe}
-            ></iframe>
-          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>

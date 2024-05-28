@@ -4,6 +4,7 @@ import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+// import { Image } from "react-bootstrap";
 import Image from "next/image";
 import NavItem from "./NavItem";
 import { courseService, wpService } from "src/services";
@@ -11,13 +12,14 @@ import _ from "lodash";
 import { programBaseUrl } from "../config/constant";
 import { urlInfo } from "../config/helper";
 import { url } from "inspector";
+import StickyForm from "../StickyHeaderForm/StickyForm";
 import Modal from "react-bootstrap/Modal";
 import ModalPopup from "@/components/Modal/ModalPopup";
 import ThankYouPopup from "../Modal/ThankYouPopup";
+import Loader from "../Loader/Loader";
 import StickyData from "../StickyHeaderForm/StickyData";
 import { Input, Space } from "antd";
 import { allCourseList } from "@/data/courseData";
-import imageBaseUrl from "src/utils/imageBaseUrl";
 
 const { Search } = Input;
 const {
@@ -56,7 +58,6 @@ const HeaderOne = ({
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : nav;
-  const imageUrl = imageBaseUrl();
 
   let Logo: any =
     logo === 2
@@ -266,7 +267,7 @@ const HeaderOne = ({
           <StickyData pageTitle={pageTitle} courseCode={courseCode} />
         )}
 
-        <div className="auto-container d-flex clearfix new-container-style">
+        <div className="auto-container d-flex clearfix">
           <div className="logo-box">
             <div className="logo">
               <Link href="/">
@@ -274,13 +275,13 @@ const HeaderOne = ({
                   {/* <Image id="thm-logo" src={Logo} alt={title} title={title} /> */}
                   <div>
                     <Image
-                      src="/assets/images/allImages/DR-Logo-black.webp"
+                      src={Logo}
                       layout="intrinsic"
-                      width="116"
-                      height="40"
+                      width="237"
+                      height="60"
                       title={title}
                       alt={title}
-                    />
+                    ></Image>
                   </div>
                 </a>
               </Link>

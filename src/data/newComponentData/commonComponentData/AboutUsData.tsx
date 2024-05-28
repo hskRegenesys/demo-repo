@@ -1,26 +1,26 @@
 const AboutUsData = {
-  aboutUsImg: "/assets/images/allImages/AboutUs.webp",
+  aboutUsImg: "./assets/images/new-component-assets/AboutUs.svg",
   aboutUsImgAlt: "About Us - Digital Regenesys",
-  aboutTitle: "About Digital Regenesys",
-  aboutHeading: "Reasons That Set Us Apart",
+  aboutTitle: "About Us",
+  aboutHeading: "Unique Benefits That Set Us Apart from the Rest!",
   aboutParagraph:
-    "Digital Regenesys, a leading educational platform, is a beacon of innovation and excellence in digital education. With a commitment to personalised learning, industry relevance, and unwavering support, the platform offers a compelling choice for individuals seeking to elevate their skills, careers, and prospects in the digital age. Embrace the future of education with Digital Regenesys’s online courses.",
-  aboutUsCardsData: [
+    "Embark on a next-generation digital skills journey with Silicon Valley's cutting-edge Edtech. Introducing Digital Regenesys, the renowned EdTech platform by Regenesys Business School, an international Business School with campus in Johannesburg. Experience career-transforming, skill-enhancing and cutting-edge online courses across various digital domains. Our online courses are meticulously designed with diverse industries' evolving digital and technological requirements.",
+  cards: [
     {
-      image: "/assets/images/allImages/Live Call.svg",
-      title: "Live Classes",
+      cardImg: "./assets/images/new-component-assets/Live Call.svg",
+      cardText: "Live Classes",
     },
     {
-      image: "/assets/images/allImages/Award.svg",
-      title: "International Certificate",
+      cardImg: "./assets/images/new-component-assets/Award.svg",
+      cardText: "International   Certificate",
     },
     {
-      image: "/assets/images/allImages/Counselling.svg",
-      title: "Practical Learning ",
+      cardImg: "./assets/images/new-component-assets/Counselling.svg",
+      cardText: "Industry Expert Faculty",
     },
     {
-      image: "/assets/images/allImages/Experts.svg",
-      title: "Career Guidance",
+      cardImg: "./assets/images/new-component-assets/Experts.svg",
+      cardText: "  Career Counseling",
     },
   ],
 };

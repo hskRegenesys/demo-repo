@@ -3,7 +3,7 @@ import styles from "./CourseBenefitsCard.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-import Image from "next/image";
+
 interface CardData {
   cardIcon: string;
   text1: string;
@@ -24,7 +24,6 @@ const CourseBenefitsCard: React.FC<Props> = ({
 }) => {
   const { courcename, Heding, Card } = data;
   const addBottomValue = Card.length <= 3 ? "0px" : "60px";
-  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={styles.courseBenefitsCardContainer}>
@@ -53,15 +52,13 @@ const CourseBenefitsCard: React.FC<Props> = ({
           {Card.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={styles.card}>
-                <Image
-                  src={`${imageUrl}${card.cardIcon}`}
+                <img
+                  src={card.cardIcon}
                   alt="Card Icon"
                   className={styles.cardIcon}
-                  width={64}
-                  height={64}
                 />
                 <div className={styles.cardText}>
-                  {/* <p className={styles.cardText1}>{card.text1}</p> */}
+                  <p className={styles.cardText1}>{card.text1}</p>
                   <p className={styles.cardText2}>{card.text2}</p>
                 </div>
               </div>

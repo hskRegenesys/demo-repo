@@ -1,26 +1,48 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./exploreTheCourses.module.css";
-import CourseOverview from "./ContentCourses/CourseOverview";
-import CourseCurriculum from "./ContentCourses/CourseCurriculum";
-import PricingAcrossCountries from "./ContentCourses/PricingAcrossCountries";
-import ToolsCovered from "./ContentCourses/ToolsCovered";
-import WorldClassFaculty from "./ContentCourses/WorldClassFaculty";
-import DefenceToolbox from "./ContentCourses/DefenceToolbox";
+import Content1 from "./ContentCourses/Content1";
+import Content2 from "./ContentCourses/Content2";
+import Content3 from "./ContentCourses/Content3";
+import Content4 from "./ContentCourses/Content4";
+import Content5 from "./ContentCourses/Content5";
+import Content6 from "./ContentCourses/Content6";
 
 interface Props {
   data: {
     smallHeading: string;
     bigHeading: string;
-    contents: {
-      CourseOverviewData?: {
-        sideHeading: string;
+    sideHeadings: { text: string; contentId: string }[];
+    sideContents: {
+      content1: {
         contentHeading: string;
         contentImg: string;
         contentText: string;
         contentCard: { icon: string; text: string }[];
       };
-      CourseCurriculumData?: {
-        sideHeading: string;
+      content2?: {
+        contentHeading: string;
+        cardTools: { img: string; alt: string }[];
+      };
+      content3?: {
+        contentHeading: string;
+        tutors: string;
+        facultyCard: {
+          facultyImg: string;
+          facultyName: string;
+          courseName: string;
+          yearsOfExperience: string;
+        }[];
+      };
+      content4?: {
+        contentHeading: string;
+        LevelCard: {
+          courseName: string;
+          frameImg: string;
+          tickIcon: string;
+          list: string[];
+        }[];
+      };
+      content5?: {
         contentHeading: string;
         durationIcon: string;
         tickIcon: string;
@@ -30,25 +52,7 @@ interface Props {
           weekPoints: string[] | { [key: string]: string[] };
         }[];
       };
-      WorldClassFacultyData?: {
-        sideHeading: string;
-        contentHeading: string;
-        tutors: string;
-        facultyCard: {
-          facultyImg: string;
-          facultyName: string;
-          facultyEducation: string;
-          courseName: string;
-          yearsOfExperience: string;
-        }[];
-      };
-      ToolsCoveredData?: {
-        sideHeading: string;
-        contentHeading: string;
-        cardTools: { img: string; alt: string }[];
-      };
-      PricingAcrossCountriesData?: {
-        sideHeading: string;
+      content6?: {
         ContentHeding: string;
         PriceIcon: string;
         durationIcon: string;
@@ -60,47 +64,37 @@ interface Props {
           contaryFlag: string;
         }[];
       };
-      DefenceToolboxData?: {
-        sideHeading: string;
-        contentHeading: string;
-        durationIcon: string;
-        tickIcon: string;
-        dropDown: string;
-        DedenceToolBoxContainer: {
-          Heading: string;
-          PassageTop: string;
-          PassageBottom: string;
-          Points: string[] | { [key: string]: string[] };
-        }[];
-      };
     };
   };
+
   handleEnrollButtonClick: (title?: string) => void;
 }
+
+interface MainCourseData {}
 
 const ExploreTheCourses: React.FC<Props> = ({
   data,
   handleEnrollButtonClick,
 }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [currentSection, setCurrentSection] = useState("");
-  const [activeContent, setActiveContent] = useState<string>("");
-  const contentRef = useRef<HTMLDivElement>(null);
+  const [activeContent, setActiveContent] = useState<string | null>();
 
-  // Initialize contentRefs based on the number of content sections available
-  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const contentRefs: React.RefObject<HTMLDivElement>[] = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+  ];
 
-  useEffect(() => {
-    contentRefs.current = Object.keys(data.contents).map(() => null);
-  }, [data.contents]);
-
-  const handleClick = (contentId: string) => {
+  const handleSidePanelClick = (contentId: string) => {
     const index = sideHeadings.findIndex(
       (item) => item.contentId === contentId
     );
     if (index !== -1) {
       setActiveContent(contentId);
-      const targetElement = contentRefs.current[index];
+      const targetElement = contentRefs[index].current;
 
       if (targetElement) {
         const targetTop = targetElement.getBoundingClientRect().top;
@@ -113,65 +107,53 @@ const ExploreTheCourses: React.FC<Props> = ({
     }
   };
 
-  const handleScroll = () => {
-    const contentPanel = contentRef.current;
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6,
+    };
 
-    if (contentPanel && contentPanel.scrollTop > 0) {
-      setScrolled(true);
-    } else if (contentPanel) {
-      setScrolled(false);
-    }
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Get the contentId from the data attribute
+          const contentId = entry.target.getAttribute("data-content-id");
+          if (contentId) {
+            setActiveContent(contentId);
+          }
+        }
+      });
+    };
 
-    const sections = contentRefs.current;
-    let current = "Content-0";
+    const observer = new IntersectionObserver(handleIntersection, options);
 
-    sections.forEach((section, index) => {
-      if (section && window.pageYOffset >= section.offsetTop + 1200) {
-        current = `Content-${index}`;
+    // Attach the observer to each content element
+    contentRefs.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
       }
     });
 
-    setCurrentSection(current);
-  };
-
-  useEffect(() => {
-    const contentPanel = contentRef.current;
-
-    if (contentPanel) {
-      contentPanel.addEventListener("scroll", handleScroll);
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
     return () => {
-      if (contentPanel) {
-        contentPanel.removeEventListener("scroll", handleScroll);
-      }
-      window.removeEventListener("scroll", handleScroll);
+      // Disconnect the observer when the component unmounts
+      observer.disconnect();
     };
-  }, []);
+  }, [contentRefs]);
 
   const {
     smallHeading,
     bigHeading,
-    contents: {
-      CourseOverviewData,
-      CourseCurriculumData,
-      DefenceToolboxData,
-      WorldClassFacultyData,
-      ToolsCoveredData,
-      PricingAcrossCountriesData,
+    sideHeadings,
+    sideContents: {
+      content1,
+      content2,
+      content3,
+      content4,
+      content5,
+      content6,
     },
   } = data;
-
-  const sideHeadings = [
-    { text: CourseOverviewData?.sideHeading, contentId: "Content-0" },
-    { text: CourseCurriculumData?.sideHeading, contentId: "Content-1" },
-    { text: DefenceToolboxData?.sideHeading, contentId: "Content-2" },
-    { text: WorldClassFacultyData?.sideHeading, contentId: "Content-3" },
-    { text: ToolsCoveredData?.sideHeading, contentId: "Content-4" },
-    { text: PricingAcrossCountriesData?.sideHeading, contentId: "Content-5" },
-  ];
 
   return (
     <div
@@ -184,69 +166,76 @@ const ExploreTheCourses: React.FC<Props> = ({
       <div className={styles.mainContent}>
         <div className={styles.sidePanel}>
           <div className={styles.sidePanelInside}>
-            {sideHeadings.map((heading, index) => (
+            {sideHeadings.map((heading) => (
               <p
                 key={heading.contentId}
-                onClick={() => handleClick(heading.contentId)}
-                className={`${
-                  currentSection === heading.contentId ? styles.active : ""
+                className={`${styles.sidePanelItem} ${
+                  activeContent === heading.contentId ? styles.active : ""
                 }`}
+                onClick={() => handleSidePanelClick(heading.contentId)}
               >
                 {heading.text}
               </p>
             ))}
           </div>
         </div>
-        <div className={styles.contentPanel} ref={contentRef}>
-          {CourseOverviewData && (
-            <div ref={(el) => (contentRefs.current[0] = el)} id="Content-0">
-              <CourseOverview {...CourseOverviewData} />
-            </div>
-          )}
-          {CourseCurriculumData && (
+
+        <div className={styles.contentPanel}>
+          {/* Render Content 1 */}
+          <div ref={contentRefs[0]} data-content-id={sideHeadings[0].contentId}>
+            <Content1 {...content1} />
+          </div>
+          {/* Render Content 5 */}
+          {content5 && (
             <div
               className={styles.contentspace}
-              ref={(el) => (contentRefs.current[1] = el)}
-              id="Content-1"
+              ref={contentRefs[1]}
+              data-content-id={sideHeadings[1].contentId}
             >
-              <CourseCurriculum {...CourseCurriculumData} />
+              <Content5 {...content5} />
             </div>
           )}
-          {DefenceToolboxData && (
+          {/* Render Content 2 */}
+          {content2 && (
             <div
               className={styles.contentspace}
-              ref={(el) => (contentRefs.current[2] = el)}
-              id="Content-2"
+              ref={contentRefs[2]}
+              data-content-id={sideHeadings[2].contentId}
             >
-              <DefenceToolbox {...DefenceToolboxData} />
+              <Content2 {...content2} />
             </div>
           )}
-          {WorldClassFacultyData && (
+
+          {/* Render Content 3 */}
+          {content3 && (
             <div
               className={styles.contentspace}
-              ref={(el) => (contentRefs.current[3] = el)}
-              id="Content-3"
+              ref={contentRefs[3]}
+              data-content-id={sideHeadings[3].contentId}
             >
-              <WorldClassFaculty {...WorldClassFacultyData} />
+              <Content3 {...content3} />
             </div>
           )}
-          {ToolsCoveredData && (
+
+          {/* Render Content 4 */}
+
+          {content4 && (
             <div
               className={styles.contentspace}
-              ref={(el) => (contentRefs.current[4] = el)}
-              id="Content-4"
+              ref={contentRefs[4]}
+              data-content-id={sideHeadings[4].contentId}
             >
-              <ToolsCovered {...ToolsCoveredData} />
+              <Content4 {...content4} />
             </div>
           )}
-          {PricingAcrossCountriesData && (
+          {content6 && (
             <div
               className={styles.contentspace}
-              ref={(el) => (contentRefs.current[5] = el)}
-              id="Content-5"
+              ref={contentRefs[5]}
+              data-content-id={sideHeadings[5].contentId}
             >
-              <PricingAcrossCountries
-                {...PricingAcrossCountriesData}
+              <Content6
+                {...content6}
                 handleEnrollButtonClick={handleEnrollButtonClick}
               />
             </div>

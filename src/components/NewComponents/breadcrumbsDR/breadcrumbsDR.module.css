@@ -38,8 +38,9 @@
   display: inline-block;
   margin-right: 8px;
   color: var(--Light-Text-Secondary, #697386);
-
+  font-family: Montserrat;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .fontCapitalized {
@@ -49,7 +50,7 @@
 .active {
   font-weight: bold;
   color: var(--Light-Text-Green, #008554);
-
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
 }
