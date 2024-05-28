@@ -4,26 +4,38 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Styles from "./admitsCompanies.module.css";
-import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
-
+// import AdmiteCompaniesData from "../../../data/newComponentData/commonComponentData/AdmiteCompaniesData";
+import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 interface AdmitsCompaniesProps {
   handleEnrollButtonClick: () => void;
+  AdmiteCompaniesData: any;
 }
 SwiperCore.use([Pagination, Autoplay]);
 
 const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
   handleEnrollButtonClick,
+  AdmiteCompaniesData,
 }) => {
-  const { AdmitsHeading, AdmitsTitle, buttenIcon, AdmitsCards } =
+  const { AdmitsHeading, AdmitsTitle, admitsButtonIcon, AdmitsCards } =
     AdmiteCompaniesData;
+  const imageUrl = imageBaseUrl();
 
   const swiperSettings = {
     loop: true,
-    autoplay: {
-      delay: 2000,
-    },
     slidesPerView: "auto" as const,
+    autoplay: {
+      enabled: true,
+      delay: 0,
+      pauseOnMouseEnter: false,
+      disableOnInteraction: true,
+    },
+    centeredSlides: true,
+    navigation: false,
+    noSwipingClass: "swiper-slide",
+    spaceBetween: 15,
     speed: 1000,
+    rewind: true,
   };
 
   return (
@@ -34,9 +46,16 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
       </div>
       <div className={Styles.admitsCardsContainer}>
         <Swiper {...swiperSettings}>
-          {AdmitsCards.map((card, index) => (
+          {AdmitsCards.map((item: any, index: any) => (
             <SwiperSlide key={index} className={Styles.admitsCard}>
-              <img src={card.AdmitsImage} alt={`admitImg ${index}`} />
+              <Image
+                src={item.AdmitsImage}
+                // src={item.AdmitsImage}
+                alt={`admitImg ${index}`}
+                width={100}
+                height={60}
+                loading="eager"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -47,11 +66,15 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           onClick={handleEnrollButtonClick}
         >
           Enrol Now
-          <img
-            src={buttenIcon}
-            alt="Enroll Icon"
-            className={Styles.enrollIcon}
-          />
+          <div className={Styles.enrollIcon}>
+            <Image
+              // src={admitsButtonIcon}
+              src={admitsButtonIcon}
+              alt="Enroll Icon"
+              width={16}
+              height={16}
+            />
+          </div>
         </div>
       </div>
     </div>

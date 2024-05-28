@@ -3,10 +3,11 @@ import Styles from "./blogSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-
+import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 SwiperCore.use([Pagination, Autoplay]);
 
-interface CardData {
+interface BlogSectionCardData {
   blogImg: string;
   blogQuestion: string;
   blogText: string;
@@ -15,7 +16,7 @@ interface CardData {
 
 interface BlogSectionData {
   BlogSectionTitle: string;
-  cards: CardData[];
+  BlogSectionCards: BlogSectionCardData[];
 }
 
 interface BlogSectionProps {
@@ -23,12 +24,12 @@ interface BlogSectionProps {
 }
 
 const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
-  if (!data || !data.cards || data.cards.length === 0) {
-    // Return null if data is not provided or cards array is empty
+  if (!data || !data.BlogSectionCards || data.BlogSectionCards.length === 0) {
     return null;
   }
 
-  const addBottomValue = data.cards.length <= 3 ? "0px" : "60px";
+  const addBottomValue = data.BlogSectionCards.length <= 3 ? "0px" : "60px";
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.blogSectionContainer}>
@@ -53,13 +54,17 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             },
           }}
         >
-          {data.cards.map((card, index) => (
+          {data?.BlogSectionCards.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
-                <img
+                <Image
+                  //src={`${imageUrl}${card.blogImg}`}
                   src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
+                  width={360}
+                  height={190}
+                  priority
                 />
 
                 <div className={Styles.blogContent}>
@@ -69,13 +74,15 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   </div>
                   <div className={Styles.knowMore}>
                     <a href={card.blogLink} className={Styles.knowMoreLink}>
-                      Know More{" "}
+                      Know More
                       <span className={Styles.arrowIcon}>
-                        {" "}
-                        <img
-                          src="/assets/images/new-component-assets/Readmore.svg"
+                        <Image
+                          src={`${imageUrl}Icons/Readmore.svg`}
+                          // src="/assets/images/new-component-assets/Readmore.svg"
                           alt="cardStar"
                           className={Styles.img}
+                          width={12}
+                          height={12}
                         />
                       </span>
                     </a>

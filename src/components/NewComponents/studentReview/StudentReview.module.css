@@ -1,17 +1,17 @@
 /* StudentReview.module.css */
 
-.cardContainer {
+.reviewCardContainer {
   width: 100%;
   margin: 0 auto;
   max-width: 1224px;
   padding-top: 100px;
 }
-.Title {
+.title {
   color: #008554;
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
@@ -22,7 +22,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
@@ -48,8 +48,8 @@
 
 .studentReviewSideTag {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -2px;
+  right: -1px;
   width: 102px;
   height: 106px;
 }
@@ -82,7 +82,7 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -92,7 +92,7 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
@@ -100,10 +100,9 @@
 
 .textContent3 {
   color: #697386;
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-bottom: 0;
@@ -131,13 +130,39 @@
   top: calc(50% - var(--add-bottom) / 2);
 }
 
+.studentReviewButton {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 7.68px;
+  font-family: Montserrat-Bold;
+  border: 1px solid var(--light-text-surface-primary-green, #008554);
+  background: var(--light-text-surface-primary-green, #008554);
+  box-shadow: 0px 0.96px 5.92px 0px #008554;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 280px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+}
+.studentReviewButton:hover {
+  color: var(--primary-primary-charcoal, #131718);
+  background-color: #ffffff;
+  border: 1px solid var(--primary-primary-charcoal, #131718);
+}
+
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
-  .cardContainer {
+  .reviewCardContainer {
     margin-top: 40px;
     padding: 0px;
   }
-  .Title {
+  .title {
     font-size: 14px;
     margin-bottom: 8px;
   }
@@ -181,12 +206,15 @@
 
   .textContent3 {
     color: #697386;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.12px;
     margin-bottom: 0;
+  }
+  .studentReviewButton {
+    max-width: 320px;
+    margin: 0px auto;
+    margin-top: 30px;
   }
 }

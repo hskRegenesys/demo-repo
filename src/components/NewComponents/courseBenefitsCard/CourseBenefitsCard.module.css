@@ -14,7 +14,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -25,7 +25,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -61,7 +61,7 @@
   color: var(--Heading, #2d2d2d);
   font-family: Montserrat-Bold;
   font-size: 24px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -69,10 +69,9 @@
 }
 .cardText2 {
   color: var(--Light-Text-Secondary, #697386);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+
   line-height: 24px;
   letter-spacing: 0.019px;
   margin-bottom: 0px;
@@ -93,7 +92,7 @@
   color: #fff;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;

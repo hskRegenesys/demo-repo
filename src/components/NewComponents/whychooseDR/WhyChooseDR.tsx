@@ -1,7 +1,7 @@
 import React, { MouseEventHandler } from "react";
 import Styles from "./whyChooseDR.module.css";
 import whyChooseDRData from "../../../data/newComponentData/commonComponentData/WhyChooseDRData";
-
+import Image from "next/image";
 interface WhyChooseDRProps {
   handleEnrollButtonClick: MouseEventHandler<HTMLDivElement>;
 }
@@ -15,6 +15,7 @@ const WhyChooseDR: React.FC<WhyChooseDRProps> = ({
     whyChooseDRCard,
     whyChooseDRButtonText,
   } = whyChooseDRData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={Styles.WhyChooseDRContainer}>
@@ -25,11 +26,15 @@ const WhyChooseDR: React.FC<WhyChooseDRProps> = ({
       <div className={Styles.cardsContainer}>
         {whyChooseDRCard.map((card, index) => (
           <div key={index} className={Styles.card}>
-            <img
-              src={card.cardImg}
-              alt={`Card ${index + 1}`}
-              className={Styles.cardImg}
-            />
+            <div className={Styles.cardImg}>
+              <Image
+                // src={card.cardImg}
+                src={`${imageUrl}${card.cardImg}`}
+                alt={`Card ${index + 1}`}
+                width={52}
+                height={52}
+              />
+            </div>
             <div className={Styles.cardText}>{card.cardText}</div>
           </div>
         ))}

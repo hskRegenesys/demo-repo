@@ -2,18 +2,19 @@ import React from "react";
 import Styles from "./LearnersSupport.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
-interface CardData {
+import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
+interface LearnerSupportCardData {
   LsImg: string;
   LsQuestion: string;
   LsText: string;
-  ButtenText: string;
+  LsButtonText: string;
 }
 
 interface LearnersSupportSectionData {
   LsSectionTitle: string;
   LsHeding: string;
-  cards: CardData[];
+  LearnersSupportCards: LearnerSupportCardData[];
 }
 
 interface LearnersSupportSectionProps {
@@ -25,6 +26,8 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
   data,
   handleEnrollButtonClick,
 }) => {
+  const imageUrl = imageBaseUrl();
+
   return (
     <div className={Styles.LsSectionContainer}>
       <h2 className={Styles.LsSectionTitle}>{data.LsSectionTitle}</h2>
@@ -48,21 +51,30 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
             },
           }}
         >
-          {data.cards.map((card, index) => (
+          {data?.LearnersSupportCards.map((item, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={Styles.LsCard}>
-                <img src={card.LsImg} alt="Ls" className={Styles.LsImage} />
+                <div className={Styles.LsImage}>
+                  <Image
+                    src={item.LsImg}
+                    //src={`${imageUrl}${item.LsImg}`}
+                    alt="Ls"
+                    width={360}
+                    height={160}
+                    loading="eager"
+                  />
+                </div>
 
                 <div className={Styles.LsContent}>
-                  <h3 className={Styles.LsQuestion}>{card.LsQuestion}</h3>
-                  <p className={Styles.LsText}>{card.LsText}</p>
+                  <h3 className={Styles.LsQuestion}>{item.LsQuestion}</h3>
+                  <p className={Styles.LsText}>{item.LsText}</p>
                 </div>
                 <div className={Styles.buttonsContainer}>
                   <button
                     className={Styles.learnMoreButton}
                     onClick={handleEnrollButtonClick}
                   >
-                    {card.ButtenText}{" "}
+                    {item.LsButtonText}
                   </button>
                 </div>
               </div>

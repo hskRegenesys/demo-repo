@@ -1,8 +1,8 @@
 import React from "react";
 
 const Style = ({
-  font = "Raleway, sans-serif",
-  bFont = "Raleway, sans-serif",
+  font = "Montserrat, sans-serif",
+  bFont = "Montserrat, sans-serif",
   black = "#000000",
   text = "#686a6f",
   base = "#FFE55B",

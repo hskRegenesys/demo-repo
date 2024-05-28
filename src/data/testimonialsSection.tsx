@@ -264,31 +264,31 @@ export const testimonialsFive = {
   items: [
     {
       id: 1,
-      image: "/assets/images/students/dhiraj.webp",
+      image: "/assets/images/allImages/dhiraj.webp",
       name: "Dhiraj Gaikwad",
       text: "I heard about the Artificial Intelligence course from Digital Regenesys, as a colleague of mine did it from there. I took the admission and I must say that I got my promotion because of Digital Regenesys. The overall procedure from talking to the counselors to ending the course, it helped me learn a lot and upskill myself the way I wanted.",
     },
     {
       id: 2,
-      image: "/assets/images/students/damilare_emmanuel.webp",
+      image: "/assets/images/allImages/damilare_emmanuel.webp",
       name: "Damilare Emmanuel",
       text: "Since I wanted a promotion, I started looking for an institute that will help me learn comprehensively. In my entire coding course journey with Digital Regenesys, I have learned a lot and also have been prepared to confidently look for a higher position with the help of industry expert interactions.",
     },
     {
       id: 3,
-      image: "/assets/images/students/akshay.webp",
+      image: "/assets/images/allImages/akshay.webp",
       name: "Akshay Patil",
       text: "After completing my course in Machine Learning, I registered myself for Data Science that was taught by Dr. Laika and I have to say both my instructors were very helpful and went beyond their ways to teach me. They also helped me create a professional LinkedIn profile. I am glad that I chose Digital Regenesys for my learning courses.",
     },
     {
       id: 4,
-      image: "/assets/images/students/effiong-Udo-Inyang.webp",
+      image: "/assets/images/allImages/effiong-Udo-Inyang.webp",
       name: "Effiong Udo Inyang",
       text: "The Data science course taught by Dr. Laika at Digital Regenesys was truly eye-opening for me. I had no idea how important Data science has become to level up professionally. I am also planning to enrol for some other upskilling course by Digital Regenesys and would recommend this platform to almost every friend of mine.",
     },
     {
       id: 5,
-      image: "/assets/images/students/Thibedi-Grandy-Mmatli.webp",
+      image: "/assets/images/allImages/Thibedi-Grandy-Mmatli.webp",
       name: "Thibedi Grandy Mmatli",
       text: "The best part about the Cybersecurity course that I took at Digital Regenesys is that my lecturer helped me greatly by solving my doubts during and outside the class as well. Vijal Mam was very helpful and she made sure that each and every student in the class understood the course properly.",
     },

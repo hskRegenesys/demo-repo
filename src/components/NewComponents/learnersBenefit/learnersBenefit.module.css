@@ -11,11 +11,11 @@
   /* Adjust the top margin as needed */
 }
 
-.heding {
+.heading {
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
@@ -25,13 +25,13 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
 }
 
-.CardContainer {
+.LearnersBenefitsCardContainer {
   display: flex;
   justify-content: center;
   align-items: center; /* Center vertically */
@@ -39,7 +39,7 @@
   margin-top: 20px;
 }
 
-.Card {
+.LearnersBenefitCard {
   position: relative;
   display: flex;
   width: 100%;
@@ -61,7 +61,7 @@
   box-shadow: 0px 2px 4px 0px rgba(3, 120, 71, 0.15) inset;
 }
 
-.CardImg {
+.learnersBenefitCardImg {
   width: 184px;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover;
@@ -72,25 +72,25 @@
   padding: 36px 40px;
 }
 
-.CardTitle {
+.learnersBenefitCardTitle {
   color: #008554;
   text-align: left;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
   margin-bottom: 24px;
 }
 
-.Card ul {
+.LearnersBenefitCard ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.Card li {
+.LearnersBenefitCard li {
   display: flex;
   margin-bottom: 16px;
   /* Add additional styling for each list item if needed */
@@ -104,10 +104,9 @@
 
 .list {
   color: #2b3340;
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-bottom: 0px;
@@ -145,7 +144,7 @@
 }
 .swiperStyleFC {
   --add-bottom: 50px;
-  padding-bottom: var(--add-bottom);
+  padding-bottom: var(--add-bottom) !important;
   align-items: center;
 }
 .swiperStyleFC [class^="swiper-button-"] {
@@ -162,16 +161,17 @@
 }
 @media (max-width: 920px) {
   .LearnersBenefitContainer {
-    margin: 20px 16px;
+    margin: 20px 0px;
   }
-  .Card {
+  .LearnersBenefitCard {
     display: block;
     background: #ecfaef;
+    min-height: 432px;
   }
   .LeftSide {
     padding: 0px;
   }
-  .CardImg {
+  .learnersBenefitCardImg {
     display: flex;
     margin: 0 auto;
     padding: 24px 0px;
@@ -183,7 +183,7 @@
   .RightSide {
     padding: 0px 16px 24px 16px;
   }
-  .CardTitle {
+  .learnersBenefitCardTitle {
     text-align: center;
   }
   .list {
@@ -193,7 +193,7 @@
   .tickimg {
     margin-top: 5px;
   }
-  .heding {
+  .heading {
     font-size: 16px;
     margin-bottom: 8px;
   }

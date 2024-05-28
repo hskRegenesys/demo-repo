@@ -12,7 +12,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
@@ -23,8 +23,6 @@
   display: flex;
   justify-content: space-around;
   gap: 20px;
-
-  /* Add your container styles for cards */
 }
 .blogContent {
   display: flex;
@@ -62,7 +60,7 @@
   color: var(--light-text-primary, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
@@ -75,10 +73,8 @@
 
 .blogText {
   color: var(--light-text-secondary, #697386);
-  font-family: Montserrat;
+
   font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
   letter-spacing: 0.12px;
   margin-bottom: 10px;
   line-height: 1.5em;
@@ -89,7 +85,7 @@
 }
 
 .knowMore {
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   /* Add your "Know More" container styles */
 }
 
@@ -98,16 +94,14 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   letter-spacing: 0.12px;
-  /* Add your "Know More" link styles */
 }
 
 .arrowIcon {
-  margin-left: 5px;
-  /* Add your arrow icon styles */
+  margin-left: 2px;
 }
 
 /* swiper style */

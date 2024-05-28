@@ -1,23 +1,23 @@
 const whyChooseDRData = {
-  whyChooseDRHeading: "Smart Features",
-  whyChooseDRTitle: "Why choose Digital Regenesys?",
-  whyChooseDRButtonText: "Enroll Now",
+  whyChooseDRHeading: "Top Reasons",
+  whyChooseDRTitle: "Why Choose Digital Regenesys?",
+  whyChooseDRButtonText: "Enrol Now",
   whyChooseDRCard: [
     {
-      cardImg: "./assets/images/new-component-assets/Live Call.svg",
+      cardImg: "Icons/Live Call.svg",
       cardText: "Live Classes",
     },
     {
-      cardImg: "./assets/images/new-component-assets/Award.svg",
-      cardText: "Live Classes",
+      cardImg: "Icons/Award.svg",
+      cardText: "International Certificate",
     },
     {
-      cardImg: "./assets/images/new-component-assets/Counselling.svg",
-      cardText: "Live Classes",
+      cardImg: "Icons/Counselling.svg",
+      cardText: "Industry Expert Faculty",
     },
     {
-      cardImg: "./assets/images/new-component-assets/Experts.svg",
-      cardText: "Live Classes",
+      cardImg: "Icons/Experts.svg",
+      cardText: "Career Counselling",
     },
   ],
 };

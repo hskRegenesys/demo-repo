@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import AboutUsData from "../../../data/newComponentData/commonComponentData/AboutUsData";
 import Styles from "./aboutUs.module.css";
-
+import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 interface AboutUsProps {
   handleEnrollButtonClick: () => void;
 }
@@ -12,13 +13,14 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
     aboutTitle,
     aboutHeading,
     aboutParagraph,
-    cards,
+    aboutUsCardsData,
     aboutUsImgAlt,
   } = AboutUsData;
 
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [showFullParagraph, setShowFullParagraph] = useState(false);
   const [needsTruncation, setNeedsTruncation] = useState(false);
+  const imageUrl = imageBaseUrl();
 
   useEffect(() => {
     const handleResize = () => {
@@ -65,11 +67,14 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
 
       <div className={Styles.aboutUs}>
         <div className={Styles.aboutUsLeft}>
-          <img
+          <Image
             src={aboutUsImg}
             alt={aboutUsImgAlt}
             title={aboutUsImgAlt}
             className={Styles.aboutUsImage}
+            width={480}
+            height={320}
+            priority
           />
         </div>
         <div className={Styles.aboutUsRight}>
@@ -109,15 +114,18 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
         </div>
       </div>
 
-      <div className={Styles.cardsContainer}>
-        {cards.map((card, index) => (
-          <div key={index} className={Styles.card}>
-            <img
-              src={card.cardImg}
-              alt={`Card ${index + 1}`}
-              className={Styles.cardImg}
-            />
-            <div className={Styles.cardText}>{card.cardText}</div>
+      <div className={Styles.aboutusCardsContainer}>
+        {aboutUsCardsData.map((item, index) => (
+          <div key={index} className={Styles.aboutusCard}>
+            <div className={Styles.aboutusCardImg}>
+              <Image
+                src={item.image}
+                alt={`Card ${index + 1}`}
+                width={52}
+                height={52}
+              />
+            </div>
+            <div className={Styles.aboutusCardText}>{item.title}</div>
           </div>
         ))}
       </div>

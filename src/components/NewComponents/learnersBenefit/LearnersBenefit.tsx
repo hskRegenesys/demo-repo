@@ -1,41 +1,48 @@
-// LearnersBenefit.js
-
 import React from "react";
-import LearnersBenefitData from "../../../data/newComponentData/commonComponentData/LearnersBenefitData";
+// import LearnersBenefitData from "../../../data/newComponentData/commonComponentData/LearnersBenefitData";
 import Styles from "./learnersBenefit.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-
-const LearnersBenefit = () => {
+import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
+const LearnersBenefit = ({ LearnersBenefitData }: any) => {
   const {
-    LearnersBenefitHeding,
+    LearnersBenefitHeading,
     LearnersBenefitTitle,
-    card,
+    LearnersBenfitsCardsData,
     LearnersBenefitTickIcon,
     LearnersBenefitFrame1,
     LearnersBenefitFrame2,
   } = LearnersBenefitData;
+  const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.LearnersBenefitContainer}>
       <div className={Styles.TopSection}>
-        <h3 className={Styles.heding}>{LearnersBenefitHeding}</h3>
+        <h3 className={Styles.heading}>{LearnersBenefitHeading}</h3>
         <h2 className={Styles.title}>{LearnersBenefitTitle}</h2>
       </div>
-      {/* Positioning for frame1 and frame2 */}
       <div className={Styles.frame}>
-        <img
-          className={Styles.frame1}
-          src={LearnersBenefitFrame2}
-          alt="Tick Icon"
-        />{" "}
-        <img
-          className={Styles.frame2}
-          src={LearnersBenefitFrame1}
-          alt="Tick Icon"
-        />{" "}
+        <div className={Styles.frame1}>
+          <Image
+            src={LearnersBenefitFrame2}
+            //src={`${imageUrl}${LearnersBenefitFrame2}`}
+            alt="Tick Icon"
+            width={122}
+            height={179}
+          />
+        </div>
+        <div className={Styles.frame2}>
+          <Image
+            src={LearnersBenefitFrame1}
+            //src={`${imageUrl}${LearnersBenefitFrame1}`}
+            alt="Tick Icon"
+            width={122}
+            height={179}
+          />
+        </div>
       </div>
-      <div className={Styles.CardContainer}>
+      <div className={Styles.LearnersBenefitsCardContainer}>
         <Swiper
           className={Styles.swiperStyleFC}
           slidesPerView={1}
@@ -46,29 +53,44 @@ const LearnersBenefit = () => {
           autoplay={{
             delay: 8000,
           }}
+          breakpoints={{
+            0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
+            560: {
+              slidesPerView: 1,
+            },
+          }}
         >
-          {card.map((item, index) => (
+          {LearnersBenfitsCardsData.map((item: any, index: any) => (
             <SwiperSlide key={index}>
-              <div className={Styles.Card} key={index}>
+              <div className={Styles.LearnersBenefitCard} key={index}>
                 <div className={Styles.LeftSide}>
-                  <img
-                    className={Styles.CardImg}
-                    src={item.LearnersBenefitCardImg}
-                    alt="Card Image"
-                  />
+                  <div className={Styles.learnersBenefitCardImg}>
+                    <Image
+                      src={item.LearnersBenefitCardImg}
+                      // src={`${imageUrl}${item.LearnersBenefitCardImg}`}
+                      alt="Card Image"
+                      width={180}
+                      height={180}
+                    />
+                  </div>
                 </div>
                 <div className={Styles.RightSide}>
-                  <h2 className={Styles.CardTitle}>
+                  <h2 className={Styles.learnersBenefitCardTitle}>
                     {item.LearnersBenefitCardTitle}
                   </h2>
                   <ul>
-                    {item.LearnersBenefittext.map((text, i) => (
+                    {item.LearnersBenefittext.map((text: any, i: any) => (
                       <li key={i}>
-                        <img
-                          className={Styles.tickimg}
-                          src={LearnersBenefitTickIcon}
-                          alt="Tick Icon"
-                        />
+                        <div className={Styles.tickimg}>
+                          <Image
+                            className={Styles.tickimg}
+                            src={LearnersBenefitTickIcon}
+                            //src={`${imageUrl}${LearnersBenefitTickIcon}`}
+                            alt="Tick Icon"
+                            width={20}
+                            height={20}
+                          />
+                        </div>
                         <p className={Styles.list}>{text}</p>
                       </li>
                     ))}

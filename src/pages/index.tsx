@@ -1,98 +1,90 @@
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-// import HomeBanner from "@/components/HomeBanner/HomeBanner";
-// import HomeCourses from "@/components/HomeCourses/HomeCourses";
 import HeaderOne from "@/components/Header/HeaderOne";
-import MobileMenu from "@/components/Header/MobileMenu";
-// import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-// import HomeSkillDescription from "@/components/HomeSkillDescription/HomeSkillDescription";
-// import Layout from "@/components/Layout/Layout";
-// import MainFooter from "@/components/MainFooter/MainFooter";
-import Style from "@/components/Reuseable/Style";
-// import SearchPopup from "@/components/SearchPopup/SearchPopup";
-// import StudentPlacement from "@/components/StudentPlacement/StudentPlacement";
-// import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
-// import PopularTopics from "@/components/PopularTopics/PopularTopics";
-// import TestimonialsStudent from "@/components/TestimonialsStudent/TestimonialsStudent";
-// import TrendingSection from "@/components/TrendingSection/TrendingSection";
-// import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
+import Layout from "@/components/Layout/Layout";
+
 import _ from "lodash";
-import Schemas from "../schemas";
-import { Constants } from "src/schemas/data";
-import StickyBar from "@/components/StickyFooter/Sticky";
-import { allCourseList } from "@/data/courseData";
+import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
+import MobileMenu from "@/components/Header/MobileMenu";
 
-// import ImageModalPopup from "@/components/Modal/ImageModalPopup";
-// import ThankYouPopup from "@/components/Modal/ThankYouPopup";
-import GoogleMap from "@/components/GoogleMap/GoogleMap";
-import TestimonialsVideo from "@/components/TestimonialsVideo/testimonialsVideo";
-import videoTestimonialData from "@/data/videoTestimonial";
-import PopupForm from "@/components/NewComponents/popupForm/PopupForm";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import PopupData from "@/components/NewComponents/popupForm/PopupData";
-
-const ExperienceSection = dynamic(
-  () => import("@/components/ExperienceSection/ExperienceSection")
+const UspSection = dynamic(
+  () => import("@/components/NewComponents/uspSection/UspSection")
 );
-const TrendingSection = dynamic(
-  () => import("@/components/TrendingSection/TrendingSection")
+const AboutUs = dynamic(
+  () => import("@/components/NewComponents/about/AboutUs")
 );
-const TestimonialsStudent = dynamic(
-  () => import("@/components/TestimonialsStudent/TestimonialsStudent")
+const AdmitsCompanies = dynamic(
+  () => import("@/components/NewComponents/admitsCompanies/AdmitsCompanies")
 );
-const PopularTopics = dynamic(
-  () => import("@/components/PopularTopics/PopularTopics")
+const StudentReview = dynamic(
+  () => import("@/components/NewComponents/studentReview/StudentReview")
 );
-const WhyChooseUs = dynamic(
-  () => import("@/components/WhyChooseUs/WhyChooseUs")
+const LearnersBenefit = dynamic(
+  () => import("@/components/NewComponents/learnersBenefit/LearnersBenefit")
 );
-const StudentPlacement = dynamic(
-  () => import("@/components/StudentPlacement/StudentPlacement")
+const ConnectContainer = dynamic(
+  () => import("@/components/NewComponents/connectContainer/ConnectContainer")
 );
-const SearchPopup = dynamic(
-  () => import("@/components/SearchPopup/SearchPopup")
+const StudentYoutubeVideos = dynamic(
+  () =>
+    import(
+      "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos"
+    )
 );
-const MainFooter = dynamic(() => import("@/components/MainFooter/MainFooter"));
-const Layout = dynamic(() => import("@/components/Layout/Layout"));
-const HomeSkillDescription = dynamic(
-  () => import("@/components/HomeSkillDescription/HomeSkillDescription")
+const BlogSection = dynamic(
+  () => import("@/components/NewComponents/blogSection/BlogSection")
 );
-const CallToSection = dynamic(
-  () => import("@/components/HomeSkillDescription/CallToSection")
+const Faq = dynamic(() => import("@/components/NewComponents/faq/Faq"), {
+  ssr: false,
+});
+const FooterDR = dynamic(
+  () => import("@/components/NewComponents/footerDR/FooterDR")
 );
-// const MobileMenu = dynamic(() => import("@/components/Header/MobileMenu"));
-const HomeBanner = dynamic(() => import("@/components/HomeBanner/HomeBanner"));
-const HomeCourses = dynamic(
-  () => import("@/components/HomeCourses/HomeCourses")
+const PopupForm = dynamic(
+  () => import("@/components/NewComponents/popupForm/PopupForm")
 );
 
-const Home2 = () => {
-  const [show, setShow] = useState(false);
-  const [thankYouShow, setThankYouShow] = useState<boolean>(false);
+const FeaturedCourses = dynamic(
+  () => import("@/components/NewComponents/featuredCourses/FeaturedCourses")
+);
+const OurLocation = dynamic(
+  () => import("@/components/NewComponents/OurLocation/OurLocation")
+);
+const AllCoursesSlider = dynamic(
+  () => import("@/components/NewComponents/allCoursesSlider/AllCoursesSlider")
+);
+
+const ToolCoveredCard = dynamic(
+  () => import("@/components/NewComponents/ToolsCovered/ToolsCovered")
+);
+const TalentedComponent = dynamic(
+  () => import("@/components/NewComponents/talentedComponent/TalentedComponent")
+);
+const LearnersSupport = dynamic(
+  () => import("@/components/NewComponents/learnersSupport/LearnersSupport")
+);
+const ReadMoreDropDown = dynamic(
+  () => import("@/components/NewComponents/readMore/ReadMoreDropDown")
+);
+
+const HomeNew = ({ initialFaqData, homePageData }: any) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  // const [courses, setCourses] = useState(initialCourses);
-  // const [videoTestimonialData, setVideoTestimonialData] = useState(
-  //   initialVideoTestimonialData
-  // );
 
-  let courses: any = [];
+  const handleEnrollButtonClick = () => {
+    setIsPopupVisible(true);
+  };
 
-  if (allCourseList?.length) {
-    courses = _.filter(
-      allCourseList,
-      (item: any) => item?.isAddon === false && item?.mode_id === 1
-    );
-  }
+  // useEffect(() => {
+  //   const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+  //   if (!popupDisplayed) {
+  //     const timeoutModal = setTimeout(() => {
+  //       setIsPopupVisible(true);
+  //       sessionStorage.setItem("popupDisplayed", "true");
+  //     }, 5000);
 
-  useEffect(() => {
-    const timeoutModal = setTimeout(() => {
-      setShow(true);
-    }, 4000);
-
-    return () => clearTimeout(timeoutModal);
-  }, []);
-
+  //     return () => clearTimeout(timeoutModal);
+  //   }
+  // }, []);
   useEffect(() => {
     const handleScroll = () => {
       const experienceSection = document.getElementById("experience-section");
@@ -114,80 +106,100 @@ const Home2 = () => {
     setIsPopupVisible(false);
   };
 
+  const PopupData = {
+    PopupDesktop: "/assets/images/allImages/Home-Desktop-Popup.webp",
+    PopupMobile: "/assets/images/allImages/Home-Mobile-Popup.webp",
+  };
+
   return (
-    <Layout pageTitle="home">
-      <Schemas type={Constants.home} />
-      <Style />
-      <HeaderOne pageTitle="home" />
-      <MobileMenu />
-      <SearchPopup />
-      <HomeBanner />
-      <StudentPlacement />
-      <HomeSkillDescription />
-      <TrendingSection />
-      <TestimonialsVideo videoDetails={videoTestimonialData} />
-      <GoogleMap />
-      <HomeCourses courses={courses} />
-      <div id="experience-section"></div>
-      <ExperienceSection />
-
-      <WhyChooseUs />
-      <PopularTopics />
-      <TestimonialsStudent />
-
-      <CallToSection />
-      <MainFooter normalPadding={false} />
-      <StickyBar />
-      {/* <div id="tawk_5825dfc218d9f16af02abeea"></div>; */}
-      {/* <Modal show={show} onHide={() => setShow(false)}>
-        <ImageModalPopup bgImage="DR-website-popup-1.webp" setShows={setShow} />
-      </Modal> */}
-
+    <Layout pageTitle="new-home">
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData.homePage}
+          popupData={PopupData}
         />
       )}
+      <HeaderOne />
+      <MobileMenu />
+      <HomeSliderBanner
+        onFormSubmit={() => {}}
+        homeSliderBannerData={homePageData?.homeSliderBannerData}
+      />
+      <UspSection />
+      <AdmitsCompanies
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        AdmiteCompaniesData={homePageData?.AdmiteCompaniesData}
+      />
+      <FeaturedCourses
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        // style={{
+        //   background:
+        //     "linear-gradient(180deg, #f2fef6 0%, rgba(255, 255, 255, 0) 100%)",
+        // }}
+        allCourseList={homePageData?.allCourseList}
+        AllCourcesCardData={homePageData?.AllCourcesCardData}
+      />
+      <AllCoursesSlider
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        style={{
+          background: "none",
+        }}
+        allCourseList={homePageData?.allCourseList}
+        AllCourcesCardData={homePageData?.AllCourcesCardData}
+      />
+      <div id="experience-section"></div>
 
-      {/* <Modal show={thankYouShow}>
-        <ThankYouPopup setShows={setThankYouShow} />
-      </Modal> */}
-      <ToastContainer />
+      <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
+      <ToolCoveredCard data={homePageData?.ToolsCoveredData} />
+      <TalentedComponent
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        FacultyData={homePageData?.FacultyData}
+      />
+      <OurLocation />
+
+      <StudentReview
+        handleEnrollButtonClick={handleEnrollButtonClick}
+        StudentReviewData={homePageData?.StudentReviewData}
+      />
+      <LearnersBenefit
+        LearnersBenefitData={homePageData?.LearnersBenefitData}
+      />
+      <ConnectContainer onFormSubmit={() => {}} />
+      <StudentYoutubeVideos />
+      <BlogSection data={homePageData?.BlogSectionDataHome} />
+      <LearnersSupport
+        data={homePageData?.LearnersSupportSectionData}
+        handleEnrollButtonClick={handleEnrollButtonClick}
+      />
+      {/* <Faq data={initialFaqData} /> */}
+      <ReadMoreDropDown data={homePageData?.AllCoursesDynamicData?.ReadMore} />
+
+      <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );
 };
 
-// export async function getStaticProps() {
-//   try {
-//     const { allCourseList } = await import("@/data/courseData");
-//     const { default: videoTestimonialData } = await import(
-//       "@/data/videoTestimonial"
-//     );
+export async function getStaticProps() {
+  try {
+    const { default: HomeDynamicData } = await import(
+      "@/data/newComponentData/dynamicComponentData/HomeDynamicData"
+    );
 
-//     let initialCourses: any = [];
+    return {
+      props: {
+        homePageData: HomeDynamicData,
+        initialFaqData: HomeDynamicData?.faqSections,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        homePageData: [],
+        initialFaqData: [],
+      },
+    };
+  }
+}
 
-//     if (allCourseList?.length) {
-//       initialCourses = _.filter(
-//         allCourseList,
-//         (item: any) => item?.isAddon === false && item?.mode_id === 1
-//       );
-//     }
-//     return {
-//       props: {
-//         initialCourses,
-//         initialVideoTestimonialData: videoTestimonialData,
-//       },
-//     };
-//   } catch (error) {
-//     return {
-//       props: {
-//         initialCourses: [],
-//         initialVideoTestimonialData: [],
-//       },
-//     };
-//   }
-// }
-
-export default Home2;
+export default HomeNew;

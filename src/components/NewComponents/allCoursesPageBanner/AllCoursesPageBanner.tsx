@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./allCoursesPageBanner.module.css";
 import allCoursesPageBannerData from "../../../data/newComponentData/commonComponentData/allCoursesPageBannerData";
-
+import Image from "next/image";
 interface AllCoursesPageBannerProps {
   handleEnrollButtonClick: () => void;
 }
@@ -17,21 +17,45 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
     ButtonText,
     ParagraphTextMobile,
   } = allCoursesPageBannerData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={Styles.bannerContainer}>
-      <img
-        src={DesktopBannerImg}
-        alt="Banner"
-        className={Styles.bannerImageDesktop}
-      />
-      <img
-        src={MobileBannerImg}
-        alt="Banner"
-        className={Styles.bannerImageMobile}
-      />
-
-      <div className={Styles.bannerTextContainer}>
+      <div className={Styles.bannerImageDesktop}>
+        <Image
+          //src={`${imageUrl}${DesktopBannerImg}`}
+          src={DesktopBannerImg}
+          alt="Banner"
+          width={1440}
+          height={580}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          quality={100}
+          unoptimized
+          priority
+          layout="responsive"
+          objectFit="cover"
+          objectPosition="center"
+          loading="eager"
+        />
+      </div>
+      <div className={Styles.bannerImageMobile}>
+        <Image
+          //src={`${imageUrl}${MobileBannerImg}`}
+          src={MobileBannerImg}
+          alt="Banner"
+          width={360}
+          height={524}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          quality={100}
+          unoptimized
+          priority
+          layout="responsive"
+          objectFit="cover"
+          objectPosition="center"
+          loading="eager"
+        />
+      </div>
+      {/* <div className={Styles.bannerTextContainer}>
         <h1 className={Styles.headingText}>{HeadingText}</h1>
         <p className={Styles.paragraphText1}>{ParagraphTextDesktop}</p>
         <p className={Styles.paragraphText2}>{ParagraphTextMobile}</p>
@@ -39,7 +63,7 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
         <button className={Styles.button} onClick={handleEnrollButtonClick}>
           {ButtonText}
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

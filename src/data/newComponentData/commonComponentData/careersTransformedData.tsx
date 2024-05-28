@@ -1,8 +1,8 @@
 const careersTransformedData = {
   frame1: "",
   frame2: "",
-  heading: "Over 10,000+ Successful Learners",
-  subheading: "Know About our Learners Journey from Them",
+  heading: "Success Reviews",
+  secondHeading: "Over 10,000+ Learners",
   "four-card": {
     card1: {
       percentage: "57%",
@@ -26,8 +26,7 @@ const careersTransformedData = {
   swiperCardContainer: [
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg:
-        "/assets/images/new-component-assets/students/Effiong-Udo-Inyang.webp",
+      profileImg: "Images/StudentsReview/Effiong-Udo-Inyang.svg",
       name: "Effiong Udo Inyang",
       role: "Data science",
       experienceText:
@@ -42,8 +41,7 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg:
-        "/assets/images/new-component-assets/students/Thibedi-Grandy-Mmatli.webp",
+      profileImg: "Images/StudentsReview/Thibedi-Grandy-Mmatli.svg",
       name: "Thibedi Grandy Mmatli",
       role: "Cyber security",
       experienceText:
@@ -58,8 +56,7 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg:
-        "/assets/images/new-component-assets/students/Akshay-Patil.webp",
+      profileImg: "Images/StudentsReview/Akshay-Patil.svg",
       name: "Akshay Patil",
       role: "Machine Learning",
       experienceText:
@@ -74,8 +71,7 @@ const careersTransformedData = {
     },
     {
       playImg: "/assets/images/new-component-assets/Polygon.svg",
-      profileImg:
-        "/assets/images/new-component-assets/students/DhirajGaikwad.webp",
+      profileImg: "Images/StudentsReview/DhirajGaikwad.svg",
       name: "Dhiraj Gaikwad",
       role: "Artificial Intelligence",
       experienceText:
@@ -90,7 +86,7 @@ const careersTransformedData = {
     },
     // {
     //   playImg: "/assets/images/new-component-assets/Polygon.svg",
-    //   profileImg: "/assets/images/new-component-assets/students/ADamilareEmmanuel.webp",
+    //   profileImg: "Images/StudentsReview/ADamilareEmmanuel.webp",
     //   name: "Akshay Patil",
     //   role: "Machine Learning",
     //   experienceText:
