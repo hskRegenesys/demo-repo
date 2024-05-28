@@ -69,7 +69,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* GTM code start */}
       <Script
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -98,7 +98,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* linked start */}
       <Script
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
           _linkedin_partner_id = "5438577";
@@ -120,7 +120,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Google Tag Script Start  */}
       <Script
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=AW-873313553"
       />
       {/* <!-- Google tag (gtag.js) --> Ramesh  */}
@@ -141,7 +141,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       />
       {/* <!-- Google tag (gtag.js) --> Ramesh END */}
       <Script
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -154,7 +154,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       />
       {/* linked start */}
       <Script
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
           _linkedin_partner_id = "5438577";
