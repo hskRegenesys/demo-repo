@@ -16657,6 +16657,9 @@ h2.curve-right:after {
   margin-bottom: 12px;
   align-items: center;
 }
+.funfact-six__count img {
+  margin-bottom: 10px;
+}
 
 .funfact-six__count .image-box {
   font-size: 26px;
@@ -18829,7 +18832,7 @@ h2.curve-right:after {
 .count-text span {
   color: #000;
   font-family: "Poppins-semibold", sans-serif;
-  font-size: 22px;
+  font-size: 19px;
   margin-bottom: 8px;
 }
 
@@ -19554,7 +19557,7 @@ input.PhoneInputInput {
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 850px;
+  min-height: 740px;
 }
 
 .tns-controls1 {
@@ -20685,6 +20688,10 @@ span.page-head {
   .page-head {
     font-size: 2.2rem !important;
     padding-right: 0px !important;
+  }
+  .privacy-policy {
+    margin-bottom: 0px;
+    
   }
 }
 .font-capitalized {
@@ -22009,7 +22016,6 @@ h2.highlight {
   text-align: center;
   font-feature-settings: "ss03" on, "liga" off;
   font-family: Poppins;
-  font-size: 36px;
   font-style: normal;
   font-weight: 800;
   line-height: 100%; /* 30.25px */

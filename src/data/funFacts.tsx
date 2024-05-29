@@ -3,7 +3,7 @@ export const funFactSix = [
     id: 1,
     image: "assets/images/icons/Location.svg",
     count: 0,
-    text: "USA, South Africa, Nigeria, Uganda, Kenya & India",
+    text: "USA, South Africa, Nigeria, Uganda, Kenya, Tanzania & India",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const funFactSix = [
     id: 3,
     image: "assets/images/icons/Users.svg",
     count: 0,
-    text: "Enhances Upskilling Courses",
+    text: "International Certification",
   },
 ];
 
