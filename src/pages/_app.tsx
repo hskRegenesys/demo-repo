@@ -320,22 +320,21 @@ const MyApp = ({ Component, pageProps }: any) => {
               }
             break;
             case "Mobile Number":     
-            if (!item?.answer?.startsWith("+")) {
-                const countryCode = getCountryCode(salesForceData?.country);
-                salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
-                leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
-            } else {
-              let mobileNumber = "";
+              if (!item?.answer?.startsWith("+")) {
+                  const countryCode = getCountryCode(salesForceData?.country);
+                  salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+                  leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
+              } else {
+                let mobileNumber = "";
               for (let char of item?.answer) {
                   if (char !== ' ') {
-                      mobileNumber += char;
+                    mobileNumber += char;
                   }
               } 
               salesForceData.mobile = mobileNumber;
-              leadsData.Phone = mobileNumber;
-            }
-            break; 
-            
+                  leadsData.Phone = mobileNumber;
+              }
+              break;   
             case "Course you are looking for":
               salesForceData.interest = item.answer;
               leadsData.Interested_Topic = item.answer;
@@ -345,7 +344,7 @@ const MyApp = ({ Component, pageProps }: any) => {
             console.log("item", item);
         }
         });
-
+console.log("salesforedtaaa",salesForceData )
         try {
           fetch(salesForceUrl, {
             method: 'POST',
