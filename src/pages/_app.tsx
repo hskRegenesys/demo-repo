@@ -468,15 +468,16 @@ const MyApp = ({ Component, pageProps }: any) => {
                 }
               break;
               case "Mobile Number":     
-                if (!question?.answer?.startsWith("+")) {
-                 const countryCode = getCountryCode(salesForceNewData?.country);
-                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
-                 leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
-             } else {
-                 salesForceNewData.mobile = question.answer;
-                 leadsNewData.Phone = question.answer;
-             }
-              break;    
+              const mobileNumber = question?.answer?.replace(/\s+/g, ''); 
+              if (!mobileNumber.startsWith("+")) {
+                  const countryCode = getCountryCode(salesForceNewData?.country);
+                  salesForceNewData.mobile = countryCode + mobileNumber.substring(0, 9);
+                  leadsNewData.Phone = countryCode + mobileNumber.substring(0, 9);
+              } else {
+                  salesForceNewData.mobile = mobileNumber;
+                  leadsNewData.Phone = mobileNumber;
+              }
+              break;   
               case "Course you are looking for":
                 salesForceNewData.interest = question.answer;
                 leadsNewData.Interested_Topic = question.answer;
