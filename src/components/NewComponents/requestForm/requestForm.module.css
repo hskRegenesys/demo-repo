@@ -9,7 +9,7 @@
   font-feature-settings: "ss03" on, "liga" off;
   font-family: Montserrat-Bold;
   font-size: 20px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
@@ -35,9 +35,10 @@
   border: 1px solid var(--border-border-dark, #ced1d9);
   background: var(--primary-primary-white, #fff);
   color: #858c9a;
-
+  font-family: Montserrat;
   font-size: 14px;
-
+  font-style: normal;
+  font-weight: 500;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.12px;
   max-height: 46px;
@@ -46,7 +47,7 @@
 .smallText {
   font-size: 12px;
   margin-left: 10px;
-
+  font-family: Montserrat;
   color: #a51f1f;
   font-weight: 100;
 }
@@ -88,16 +89,16 @@
 
 .FormButtonText {
   color: #fff;
-
+  font-family: Montserrat;
   font-size: 16px;
-
+  font-style: normal;
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
 }
 .formFooterText {
   font-size: 14px;
-
+  font-family: Montserrat;
   color: #858c9a;
   margin-top: 13px;
   line-height: 18px;

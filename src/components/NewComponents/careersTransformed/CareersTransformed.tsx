@@ -4,7 +4,6 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import careersTransformedData from "../../../data/newComponentData/commonComponentData/careersTransformedData";
-import Image from "next/image";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -34,7 +33,7 @@ interface CareersTransformedProps {
 
 interface MainCourseData {
   heading: string;
-  secondHeading: string;
+  subheading: string;
   "four-card": FourCardData;
   swiperCardContainer: SwiperCardData[];
 }
@@ -43,11 +42,10 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
   handleEnrollButtonVidio,
 }) => {
   const mainCourseData: MainCourseData = careersTransformedData;
-  const imageUrl = `${process.env.awsImage_url}`;
 
   const {
     heading,
-    secondHeading,
+    subheading,
     "four-card": { card1, card2, card3, card4 },
     swiperCardContainer,
   } = mainCourseData;
@@ -64,17 +62,14 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
   return (
     <div className={Styles.container}>
       <div className={Styles.ctFrame}>
-        <div className={Styles.ctFrameDown}>
-          <Image
-            src={`${imageUrl}Images/ct-frame-down.webp`}
-            width={198}
-            height={80}
-          />
-        </div>
+        <img
+          src="/assets/images/new-component-assets/ct-frame-down.webp"
+          className={Styles.ctFrameDown}
+        />
       </div>
       <div className={Styles.header}>
         <h2 className={Styles.heading}>{heading}</h2>
-        <h2 className={Styles.secondHeading}>{secondHeading}</h2>
+        <h2 className={Styles.subheading}>{subheading}</h2>
       </div>
 
       {/* <div className={Styles.cardsContainer}>
@@ -110,15 +105,12 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
             <SwiperSlide key={index} className={Styles.swiperCard}>
               <div className={Styles.topSection}>
                 <div className={Styles.profile}>
-                  <div className={Styles.profileImg}>
-                    <Image
-                      src={`${imageUrl}${swiperCard.profileImg}`}
-                      alt={swiperCard.name}
-                      title={swiperCard.name}
-                      width={80}
-                      height={80}
-                    />
-                  </div>
+                  <img
+                    className={Styles.profileImg}
+                    src={swiperCard.profileImg}
+                    alt={swiperCard.name}
+                    title={swiperCard.name}
+                  />
                   <div className={Styles.nameRole}>
                     <h4 className={Styles.name}>{swiperCard.name}</h4>
                     <p className={Styles.role}>{swiperCard.role}</p>
@@ -182,13 +174,10 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
       </div>
 
       <div className={Styles.ctFrame}>
-        <div className={Styles.ctFrameUp}>
-          <Image
-            src={`${imageUrl}Images/ct-frame-up.webp`}
-            width={198}
-            height={80}
-          />
-        </div>
+        <img
+          src="/assets/images/new-component-assets/ct-frame-up.webp"
+          className={Styles.ctFrameUp}
+        />
       </div>
     </div>
   );

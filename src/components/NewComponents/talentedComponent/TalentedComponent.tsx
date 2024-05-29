@@ -1,32 +1,29 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
 import styles from "./TalentedComponent.module.css";
-import Image from "next/image";
+import TalentedComponentData from "../../../data/newComponentData/commonComponentData/FacultyData";
+import FacultyData from "../../../data/newComponentData/commonComponentData/FacultyData";
 
 SwiperCore.use([Navigation, Pagination]);
-
 interface TalentedComponentProp {
   handleEnrollButtonClick: () => void;
-  FacultyData: any;
 }
 
 interface Faculty {
-  facultyImg?: string;
+  facultyImg: string;
   facultyName: string;
-  facultyEducation: string;
+  courseName: string;
   yearsOfExperience?: string;
 }
-
 const TalentedComponent: React.FC<TalentedComponentProp> = ({
   handleEnrollButtonClick,
-  FacultyData,
 }) => {
   const data: Faculty[] = Object.values(FacultyData);
-  const [paginationText, setPaginationText] = useState<any>(false);
   const swiperRef = useRef<any>(null);
+  const [paginationText, setPaginationText] = useState<any>(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,39 +31,13 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
       setPaginationText(isMobile ? { clickable: true } : false);
     };
 
-    handleResize();
+    handleResize(); // Initial call to set paginationText based on window width
 
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
-
-  useEffect(() => {
-    const swiper = swiperRef.current?.swiper;
-
-    if (swiper) {
-      const arrow = document.getElementsByClassName(
-        "swiper-button-prev"
-      )[0] as HTMLElement;
-      arrow.style.display = "none";
-
-      swiper.on("slideChange", () => {
-        const realIndex = swiper.realIndex;
-        if (realIndex === 0) {
-          console.log(`real index:${realIndex} - hide arrow`);
-          arrow.style.display = "none";
-        } else {
-          console.log(`real index:${realIndex} - show arrow`);
-          arrow.style.display = "block";
-        }
-      });
-
-      return () => {
-        swiper.destroy(true, true);
-      };
-    }
   }, []);
 
   const handleNextSlide = () => {
@@ -84,10 +55,10 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
   return (
     <div className={styles.talentedComponent}>
       <div className={styles.leftSection}>
-        <h2 className={styles.heading}>Meet our Faculty</h2>
-        <h2 className={styles.subheading}>See Our Talented Faculty</h2>
+        <h2 className={styles.heding}>Meet our Faculty</h2>
+        <h2 className={styles.subheding}>See Our Talented Faculty</h2>
         <button className={styles.btnStart} onClick={handleEnrollButtonClick}>
-          Enrol Now
+          Start Learning Today!
         </button>
       </div>
 
@@ -95,53 +66,47 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
         <div className={styles.cardContainer}>
           <div className={styles.swiperNavigation}>
             <Swiper
-              ref={swiperRef}
+              ref={(instance) => {
+                if (instance) swiperRef.current = instance as any;
+              }}
               className={styles.swiperStyle}
               slidesPerView={3}
               navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               }}
+              pagination={paginationText}
               breakpoints={{
                 0: {
-                  slidesPerView: 1.6,
-                  slidesPerGroup: 1,
+                  slidesPerView: 1,
                 },
                 560: {
-                  slidesPerView: 1.5,
-                  slidesPerGroup: 1,
+                  slidesPerView: 1,
                 },
-                1190: { slidesPerView: 2 },
-                1250: { slidesPerView: 2.5 },
-                1920: { slidesPerView: 3.5 },
+                1190: {
+                  slidesPerView: 2,
+                },
+                1250: {
+                  slidesPerView: 2.5,
+                },
+                1920: {
+                  slidesPerView: 3.5,
+                },
               }}
             >
               {data.map((faculty: Faculty, index: number) => (
                 <SwiperSlide key={index}>
                   <div className={styles.card}>
                     <div className={styles.bgcolor}></div>
-                    <div className={styles.cardImg}>
-                      {faculty.facultyImg && (
-                        <Image
-                          src={faculty.facultyImg}
-                          alt={faculty.facultyName}
-                          title={faculty.facultyName}
-                          width={110}
-                          height={110}
-                          priority
-                        />
-                      )}
-                    </div>
+                    <img
+                      src={faculty.facultyImg}
+                      alt={faculty.facultyName}
+                      title={faculty.facultyName}
+                    />
                     <p className={styles.facultyName}>{faculty.facultyName}</p>
-                    <p className={styles.courseName}>
-                      {faculty.facultyEducation}
-                    </p>
-                    {faculty.yearsOfExperience && (
-                      <p className={styles.yearsOfExperience}>
-                        <span>{faculty.yearsOfExperience} </span>Years of
-                        Experience
-                      </p>
-                    )}
+                    <p className={styles.courseName}>{faculty.courseName}</p>
+
+                    <span>{faculty?.yearsOfExperience}</span>
                   </div>
                 </SwiperSlide>
               ))}
@@ -159,12 +124,6 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
           </div>
         </div>
       </div>
-      <button
-        className={styles.btnStartMobile}
-        onClick={handleEnrollButtonClick}
-      >
-        Enrol Now
-      </button>
     </div>
   );
 };

@@ -32,7 +32,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 18px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -43,7 +43,7 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 32px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -53,7 +53,9 @@
 .aboutParagraph {
   color: var(--neutral-80, #616364);
   font-size: 16px;
-  font-family: Montserrat-medium;
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.12px;
   max-height: 168px;
@@ -67,14 +69,14 @@
   margin-left: 8px;
 }
 
-.aboutusCardsContainer {
+.cardsContainer {
   display: flex;
   justify-content: space-between;
   gap: 32px;
   margin-top: 56px;
 }
 
-.aboutusCard {
+.card {
   flex: 1;
   text-align: center;
   padding: 24px;
@@ -84,23 +86,21 @@
   box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
 }
 
-.aboutusCardImg {
+.cardImg {
   width: 52px;
   height: 52px;
   margin-bottom: 16px;
-  margin: 0 auto;
 }
 
-.aboutusCardText {
+.cardText {
   color: #2b3340;
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 18px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
-  margin-top: 16px;
 }
 
 .startLearningButton {
@@ -113,7 +113,7 @@
   font-family: Montserrat-Bold;
   border: 1px solid var(--light-text-surface-primary-green, #008554);
   background: var(--light-text-surface-primary-green, #008554);
-  box-shadow: 0px 0.96px 5.92px 0px #008554;
+  box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -139,7 +139,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 14px;
-
+  font-style: normal;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
@@ -190,7 +190,7 @@
     margin-bottom: 0px;
   }
 
-  .aboutusCardsContainer {
+  .cardsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -198,10 +198,10 @@
     margin-top: 24px;
   }
 
-  .aboutusCard {
+  .card {
     flex: 1 1 calc(50% - 16px);
   }
-  .aboutusCardText {
+  .cardText {
     font-size: 14px;
   }
 
@@ -210,7 +210,7 @@
     margin: 0px auto;
     margin-top: 40px;
   }
-  .aboutusCardImg {
+  .cardImg {
     width: 32px;
     height: 32px;
     margin-bottom: 12px;

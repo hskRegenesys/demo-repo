@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Styles from "./popupForm.module.css";
 import RequestForm from "../requestForm/RequestForm";
-import Image from "next/image";
 
 interface PopupFormProps {
   isVisible: boolean;
@@ -22,7 +21,6 @@ const PopupForm: React.FC<PopupFormProps> = ({
   CourseCode,
 }) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const imageUrl = `${process.env.awsImage_url}`;
 
   const closePopup = () => {
     setIsPopupVisible(false);
@@ -30,20 +28,20 @@ const PopupForm: React.FC<PopupFormProps> = ({
   };
 
   const handleFormSubmit = () => {
-    closePopup();
+    closePopup(); // Close the popup when the form is submitted
   };
 
   useEffect(() => {
     if (isVisible) {
       setIsPopupVisible(true);
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden"; // Prevent scrolling on the body
     } else {
       setIsPopupVisible(false);
-      document.body.style.overflow = "";
+      document.body.style.overflow = ""; // Restore scrolling on the body
     }
 
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = ""; // Ensure scrolling is restored on unmount
     };
   }, [isVisible]);
 
@@ -68,32 +66,16 @@ const PopupForm: React.FC<PopupFormProps> = ({
             </span>
             <div className={Styles.Content}>
               <div className={Styles.ImageContainer}>
-                <div className={Styles.WebImage}>
-                  <Image
-                    src={popupData.PopupDesktop}
-                    // src={popupData.PopupDesktop}
-                    alt="Popup Image"
-                    width={388}
-                    height={500}
-                    layout="responsive"
-                    objectFit="cover"
-                    loading="eager"
-                    priority
-                  />
-                </div>
-                <div className={Styles.MobileImage}>
-                  <Image
-                    src={popupData.PopupMobile}
-                    // src={popupData.PopupMobile}
-                    alt="Popup Image"
-                    width={360}
-                    height={210}
-                    layout="responsive"
-                    objectFit="cover"
-                    loading="eager"
-                    priority
-                  />
-                </div>
+                <img
+                  src={popupData.PopupDesktop}
+                  alt="Popup Image"
+                  className={Styles.WebImage}
+                />
+                <img
+                  src={popupData.PopupMobile}
+                  alt="Popup Image"
+                  className={Styles.MobileImage}
+                />
               </div>
               <div className={Styles.TextContainer}>
                 <div className={Styles.Form}>

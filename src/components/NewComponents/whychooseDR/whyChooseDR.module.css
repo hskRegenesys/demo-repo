@@ -10,7 +10,7 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 18px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -20,7 +20,7 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 32px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -48,7 +48,6 @@
   width: 52px;
   height: 52px;
   margin-bottom: 16px;
-  margin: 0 auto;
 }
 
 .cardText {
@@ -56,7 +55,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 18px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;

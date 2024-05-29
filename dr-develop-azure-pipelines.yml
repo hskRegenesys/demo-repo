@@ -20,7 +20,7 @@ steps:
     set -e
     npm install --force
     npm run build
-    mkdir dr-phase-2-ui
+    mkdir dr-phase-2-ui-test
     tar -czvf dr-1-$(Build.BuildId).tar.gz .next public src next-env.d.ts tsconfig.json package.json next.config.js .eslintrc.json
   displayName: 'npm install and build'
 # - task: CopyFiles@2

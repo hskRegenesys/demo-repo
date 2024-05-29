@@ -24,14 +24,14 @@
   margin-bottom: 8px;
 }
 
-.secondHeading {
+.subheading {
   color: #fff;
-  font-size: 28px;
-  font-family: Montserrat-Bold;
-  font-weight: 700;
-  line-height: 130%;
-  letter-spacing: -0.8px;
-  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Montserrat-semiBold;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 30px;
 }
 
 /* careersTransformedDS.module.css */
@@ -69,7 +69,7 @@
   color: var(--primary-primary-charcoal, #131718);
   text-align: center;
   font-size: 24px;
-
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -80,7 +80,7 @@
   color: #6a767c;
   text-align: center;
   font-size: 16px;
-
+  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -110,7 +110,7 @@
 }
 
 .swiperCard {
-  padding: 40px 28px;
+  padding: 40px 48px;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 16px;
@@ -157,9 +157,10 @@
   margin-bottom: 0px;
   color: var(--primary-primary-dark-grey, #6a767c);
   font-size: 16px;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
-
+  font-family: Montserrat;
   text-align: center;
 }
 .nameRole h4 {
@@ -204,9 +205,11 @@
 .increment {
   color: var(--secondary-1, #1f2b37);
   font-size: 14px;
+  font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
   margin-bottom: 0px;
+  font-family: Montserrat;
 }
 
 .contentSection {
@@ -216,9 +219,11 @@
 .experienceText {
   color: #6a767c;
   font-size: 16px;
-
+  font-style: normal;
+  font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
+  font-family: Montserrat;
 }
 
 .downSection {
@@ -302,10 +307,11 @@
 .playVideo span {
   color: #fff;
   text-align: center;
-
+  font-family: Montserrat;
   font-size: 16px;
-
+  font-style: normal;
   padding: 14px 32px 14px 16px;
+  font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.019px;
 }

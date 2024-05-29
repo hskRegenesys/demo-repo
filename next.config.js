@@ -4,9 +4,7 @@ const nextConfig = {
   swcMinify: false, // it should be false by default
   experimental: {
     newNextLinkBehavior: false,
-    externalDir: true,
   },
-  disableExperimentalFeaturesWarning: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -18,16 +16,9 @@ const nextConfig = {
   },
   env: {
     ENV_NAME: process.env.ENV_NAME,
-    awsImage_url: process.env.AWS_BUCKET_URL_PROD,
   },
   images: {
-    domains: [
-      "www.regenesys.net",
-      "blog-api.digitalregenesys.com",
-      "s3-inf-uat-dr-website.s3.amazonaws.com",
-      "prod-inf-dr-website.s3.ap-south-1.amazonaws.com",
-      "prod-inf-rbs-lp.s3.amazonaws.com",
-    ],
+    domains: ["www.regenesys.net", "blog-api.digitalregenesys.com"],
   },
 };
 
@@ -887,11 +878,11 @@ const redirectURL = () => {
       destination: "/",
       permanent: true,
     },
-    // {
-    //   source: "/new-home",
-    //   destination: "/home-new",
-    //   permanent: true,
-    // },
+    {
+      source: "/home-new",
+      destination: "/404",
+      permanent: true,
+    },
     // {
     //   source: "/sitemap",
     //   destination: "/404",
@@ -1083,11 +1074,11 @@ const redirectURL = () => {
       destination: "/all-courses/digital-marketing",
       permanent: true,
     },
-    // {
-    //   source: "/all-courses-new",
-    //   destination: "/all-courses",
-    //   permanent: true,
-    // },
+    {
+      source: "/all-courses-new",
+      destination: "/all-courses",
+      permanent: true,
+    },
     {
       source: "/undefined",
       destination: "/home",
@@ -1526,7 +1517,7 @@ const createReWrites = () => {
     "/online-courses-for-cyber-security",
     //==================DT==================
     // // "/design-thinking",
-    "/design-thinking-process",
+    // "/design-thinking-process",
     // "/what-is-design-thinking",
     // "/design-thinking-definition",
     // "/design-thinking-certification",
@@ -1572,7 +1563,7 @@ const createReWrites = () => {
     "/online-artificial-intelligence-course",
     "/online-course-artificial-intelligence",
     //==================FSD==================
-    "/full-stack-developer",
+    // // "/full-stack-developer",
     // "/full-stack-developer-salary",
     // "/what-is-a-full-stack-developer",
     // "/full-stack-development",
@@ -1594,7 +1585,7 @@ const createReWrites = () => {
     // "/learn-full-stack-web-development",
 
     //==================DBM==================
-    "/data-analysis",
+    // "/data-analysis",
     // "/business-analytics",
     // "/what-is-business-analytics",
     // "/what-is-data-analysis",
@@ -1616,7 +1607,7 @@ const createReWrites = () => {
     // "/data-science-and-business-analytics-online-course",
     // "/what-is-data-science-and-business-analytics",
     //===================MP======================
-    "/mdp",
+    // "/mdp",
     // "/management-development-courses",
     // "/management-certificate-programs",
     // "/management-development-program",

@@ -33,6 +33,7 @@ import BlogSection from "@/components/NewComponents/blogSection/BlogSection";
 import Faq from "@/components/NewComponents/faq/Faq";
 import ReadMoreDropDown from "@/components/NewComponents/readMore/ReadMoreDropDown";
 import FooterDR from "@/components/NewComponents/footerDR/FooterDR";
+import PopupData from "@/components/NewComponents/popupForm/PopupData";
 
 const Course = (props: any) => {
   const router = useRouter();
@@ -84,25 +85,11 @@ const Course = (props: any) => {
     CertificationDRData,
     BlogSectionData,
     faqSections,
-    PopupData,
     multiplePagesDatas,
   } = MainCourseData;
 
   const isPageDataAvailable =
     multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
-
-  useEffect(() => {
-    const popupDisplayed = sessionStorage.getItem("popupDisplayed");
-    if (!popupDisplayed) {
-      // Popup hasn't been displayed before
-      const timeoutModal = setTimeout(() => {
-        setIsPopupVisible(true);
-        sessionStorage.setItem("popupDisplayed", "true");
-      }, 5000);
-
-      return () => clearTimeout(timeoutModal);
-    }
-  }, []);
 
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
@@ -112,7 +99,7 @@ const Course = (props: any) => {
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData}
+          popupData={PopupData.all}
           CourseCode={CourseCode}
           title={bannerTitle}
         />
