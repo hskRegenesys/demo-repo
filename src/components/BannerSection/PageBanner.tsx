@@ -11,7 +11,7 @@ interface PageBannerProps {
   parentHref?: string;
   parentToParent?: string;
   parentToParentHref?: string;
-  // pageTitle?: string; // Explicitly define the type for pageTitle
+  pageTitle?: string; // Explicitly define the type for pageTitle
 }
 
 const PageBanner: React.FC<PageBannerProps> = ({
@@ -21,9 +21,8 @@ const PageBanner: React.FC<PageBannerProps> = ({
   parentHref = "/",
   parentToParent = "",
   parentToParentHref = "/",
-  // pageTitle, // Specify the type for pageTitle
+  pageTitle, // Specify the type for pageTitle
 }) => {
-  const pageTitle = "refund-policy";
   const breadCrumbs = [
     {
       title: "Home",
