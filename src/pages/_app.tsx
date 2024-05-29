@@ -321,14 +321,21 @@ const MyApp = ({ Component, pageProps }: any) => {
             break;
             case "Mobile Number":     
             if (!item?.answer?.startsWith("+")) {
-              const countryCode = getCountryCode(salesForceData?.country);
-              salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
-              leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
-             } else {
-              salesForceData.mobile = item.answer;
-              leadsData.Phone = question.answer;
-              }
-            break;
+                const countryCode = getCountryCode(salesForceData?.country);
+                salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+                leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
+            } else {
+              let mobileNumber = "";
+              for (let char of item?.answer) {
+                  if (char !== ' ') {
+                      mobileNumber += char;
+                  }
+              } 
+              salesForceData.mobile = mobileNumber;
+              leadsData.Phone = mobileNumber;
+            }
+            break; 
+            
             case "Course you are looking for":
               salesForceData.interest = item.answer;
               leadsData.Interested_Topic = item.answer;
@@ -468,22 +475,19 @@ const MyApp = ({ Component, pageProps }: any) => {
                 }
               break;
               case "Mobile Number":     
-              let mobileNumber = "";
-              for (let char of question.answer) {
+              if (!question?.answer?.startsWith("+")) {
+                  const countryCode = getCountryCode(salesForceNewData?.country);
+                  salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+                  leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
+              } else {
+                let newMobileNumber = "";
+              for (let char of question?.answer) {
                   if (char !== ' ') {
-                      mobileNumber += char;
+                    newMobileNumber += char;
                   }
               } 
-              console.log("mobile numr", mobileNumber)
-              if (!mobileNumber?.startsWith("+")) {
-                console.log("checking")
-                  const countryCode = getCountryCode(salesForceNewData?.country);
-                  salesForceNewData.mobile = countryCode + mobileNumber?.substring(0, 9);
-                  leadsNewData.Phone = countryCode + mobileNumber?.substring(0, 9);
-              } else if (mobileNumber?.startsWith("+")) {
-                console.log("new mvile", question.answer.trim())
-                  salesForceNewData.mobile = mobileNumber;
-                  leadsNewData.Phone = mobileNumber;
+                  salesForceNewData.mobile = newMobileNumber;
+                  leadsNewData.Phone = newMobileNumber;
               }
               break;   
               case "Course you are looking for":
