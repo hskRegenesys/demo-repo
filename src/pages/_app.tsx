@@ -468,17 +468,18 @@ const MyApp = ({ Component, pageProps }: any) => {
                 }
               break;
               case "Mobile Number":     
-              const mobileNumber = question?.answer?.replace(/\s+/g, ''); 
+              const mobileNumber = question?.answer; 
               console.log("mobile numr", mobileNumber)
               if (!mobileNumber?.startsWith("+")) {
                 console.log("checking")
                   const countryCode = getCountryCode(salesForceNewData?.country);
                   salesForceNewData.mobile = countryCode + mobileNumber?.substring(0, 9);
                   leadsNewData.Phone = countryCode + mobileNumber?.substring(0, 9);
-              } else {
+              } else if (mobileNumber?.startsWith("+")) {
                 console.log("new mvile", mobileNumber?.replace(/\s+/g, ''))
-                  salesForceNewData.mobile = mobileNumber?.replace(/\s+/g, '');
-                  leadsNewData.Phone = mobileNumber?.replace(/\s+/g, '');
+                const countryCode = getCountryCode(salesForceNewData?.country);
+                  salesForceNewData.mobile =countryCode+mobileNumber?.substring(0, 9);
+                  leadsNewData.Phone = countryCode+mobileNumber?.substring(0, 9);
               }
               break;   
               case "Course you are looking for":
