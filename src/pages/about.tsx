@@ -44,7 +44,7 @@ const About = () => {
       <HeaderOne pageTitle="about" />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="About" />
+      <PageBanner title="About" pageTitle="about" />
       <AboutUsDescription />
       <MissionVison />
       <AboutMarko />

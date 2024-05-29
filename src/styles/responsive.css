@@ -519,6 +519,9 @@
   .page-banner .inner-container {
     padding: 220px 0px 100px;
   }
+  .page-banner .sticky-remove-space {
+    padding: 100px 0px 30px;
+  }
 
   .team-section,
   .contact-section {
