@@ -21,12 +21,18 @@ import "@/styles/style.css";
 import "@/styles/hover.css";
 import "@/styles/responsive.css";
 import Schemas from "src/schemas";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const MyApp = ({ Component, pageProps }: any) => {
+  const router = useRouter();
+  const { utm_source, utm_medium, utm_campaign, utm_content, id } =
+    router.query;
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
 
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
+
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
@@ -233,9 +239,14 @@ const MyApp = ({ Component, pageProps }: any) => {
       })();
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_API.onPrechatSubmit = function(data){
-        console.log("data",data);
+      
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
+        const utmSource = '${utm_source ? utm_source : "DR website chat"}'
+        const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
+        const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
+        const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
+       
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -245,11 +256,16 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: "",
           mobile:"",
           interest: "",
-          utm_source: "DR website chat ",
-          utm_medium: "DR Website",
-          utm_campaign: "DR Website",
-          Source_Campaign:"DR Website",
-          Lead_Source:"DR website chat"
+          source: utmSource,
+          campaign: utmCompaign,
+          utm_source: utmSource,
+          utm_medium: utmMedium,
+          utm_campaign: utmCompaign,
+          utm_content: utmContent,
+          utm_term:"DR+Website+chat",
+          utm_url:window?.location?.href,
+          Source_Campaign:'DR Website',
+          Lead_Source:"DR website chat" 
         };   
 
         const getCurrentDateNew = () => {
@@ -304,15 +320,21 @@ const MyApp = ({ Component, pageProps }: any) => {
               }
             break;
             case "Mobile Number":     
-            if (!item?.answer?.startsWith("+")) {
-              const countryCode = getCountryCode(salesForceData?.country);
-              salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
-              leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
-             } else {
-              salesForceData.mobile = item.answer;
-              leadsData.Phone = question.answer;
+              if (!item?.answer?.startsWith("+")) {
+                  const countryCode = getCountryCode(salesForceData?.country);
+                  salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+                  leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
+              } else {
+                let mobileNumber = "";
+              for (let char of item?.answer) {
+                  if (char !== ' ') {
+                    mobileNumber += char;
+                  }
+              } 
+              salesForceData.mobile = mobileNumber;
+                  leadsData.Phone = mobileNumber;
               }
-            break;
+              break;   
             case "Course you are looking for":
               salesForceData.interest = item.answer;
               leadsData.Interested_Topic = item.answer;
@@ -372,9 +394,13 @@ const MyApp = ({ Component, pageProps }: any) => {
       };
 
       window.Tawk_API.onOfflineSubmit = function(data){
-        console.log("data onOfflineSubmit",data);
         const salesForceUrl = '${salesForceUrl}';
         const leadForceUrl = '${leadsGenerateUrl}';
+        const utmSource = '${utm_source ? utm_source : "DR website chat"}'
+        const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
+        const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
+        const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
+        
         const salesForceNewData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -384,10 +410,15 @@ const MyApp = ({ Component, pageProps }: any) => {
           country: "",
           mobile:"",
           interest: "",
-          utm_source: "DR website chat ",
-          utm_medium: "DR Website",
-          utm_campaign: "DR Website",
-          Source_Campaign:"DR Website",
+          source: utmSource,
+          campaign: utmCompaign,
+          utm_source: utmSource,
+          utm_medium: utmMedium,
+          utm_campaign: utmCompaign,
+          utm_content: utmContent,
+          utm_term:"DR+Website+chat",
+          utm_url:window?.location?.href,
+          Source_Campaign:'DR Website',
           Lead_Source:"DR website chat"  
         };   
  
@@ -443,15 +474,21 @@ const MyApp = ({ Component, pageProps }: any) => {
                 }
               break;
               case "Mobile Number":     
-                if (!question?.answer?.startsWith("+")) {
-                 const countryCode = getCountryCode(salesForceNewData?.country);
-                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
-                 leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
-             } else {
-                 salesForceNewData.mobile = question.answer;
-                 leadsNewData.Phone = question.answer;
-             }
-              break;    
+              if (!question?.answer?.startsWith("+")) {
+                  const countryCode = getCountryCode(salesForceNewData?.country);
+                  salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+                  leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
+              } else {
+                let newMobileNumber = "";
+              for (let char of question?.answer) {
+                  if (char !== ' ') {
+                    newMobileNumber += char;
+                  }
+              } 
+                  salesForceNewData.mobile = newMobileNumber;
+                  leadsNewData.Phone = newMobileNumber;
+              }
+              break;   
               case "Course you are looking for":
                 salesForceNewData.interest = question.answer;
                 leadsNewData.Interested_Topic = question.answer;

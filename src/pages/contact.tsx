@@ -61,7 +61,7 @@ const Contact = () => {
       <HeaderOne pageTitle="contact" />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Contact" />
+      <PageBanner title="Contact" pageTitle="contact" />
       <GetInTouch />
       <LandingForm />
       <ContactSection map />

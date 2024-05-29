@@ -23,21 +23,39 @@ const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
 
+const responsive1 = {
+  0: {
+    items: 1,
+    gutter: 30,
+  },
+  720: {
+    items: 2,
+    gutter: 30,
+  },
+  992: {
+    items: 3,
+    gutter: 30,
+  },
+  1200: {
+    items: 3,
+    gutter: 30,
+  },
+};
+
 const settings = {
-  container: ".my-slider2",
-  items: 3,
-  slideBy: "page",
-  autoplay: true,
+  container: ".my-slider-2",
   loop: false,
+  lazyload: true,
+  navPosition: false,
+  mouseDrag: true,
   gutter: 30,
-  rewind: true,
-  nav: false,
   controls: true,
   autoplayButtonOutput: false,
+  nav: false,
   controlsContainer: ".tns-controls1",
-  mouseDrag: true,
-  startIndex: 1,
-  fixedWidth: 320,
+  autoplay: true,
+  autoplayButton: false,
+  // fixedWidth: 320,
 };
 
 const { title, details, description } = trendingSection;
@@ -111,6 +129,7 @@ const TrendingSection = () => {
               <TinySlider
                 options={{
                   ...settings,
+                  responsive: responsive1,
                 }}
                 ref={listRef}
               >
