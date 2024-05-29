@@ -344,7 +344,7 @@ const MyApp = ({ Component, pageProps }: any) => {
             console.log("item", item);
         }
         });
-console.log("salesforedtaaa",salesForceData )
+
         try {
           fetch(salesForceUrl, {
             method: 'POST',
