@@ -469,11 +469,13 @@ const MyApp = ({ Component, pageProps }: any) => {
               break;
               case "Mobile Number":     
               const mobileNumber = question?.answer?.replace(/\s+/g, ''); 
+              console.log("mobile numr", mobileNumber)
               if (!mobileNumber.startsWith("+")) {
                   const countryCode = getCountryCode(salesForceNewData?.country);
-                  salesForceNewData.mobile = countryCode + mobileNumber.substring(0, 9);
-                  leadsNewData.Phone = countryCode + mobileNumber.substring(0, 9);
+                  salesForceNewData.mobile = countryCode+mobileNumber?.substring(0, 9);
+                  leadsNewData.Phone = countryCode+mobileNumber?.substring(0, 9);
               } else {
+                console.log("new mvile", mobileNumber)
                   salesForceNewData.mobile = mobileNumber;
                   leadsNewData.Phone = mobileNumber;
               }
