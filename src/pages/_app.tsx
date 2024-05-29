@@ -470,14 +470,15 @@ const MyApp = ({ Component, pageProps }: any) => {
               case "Mobile Number":     
               const mobileNumber = question?.answer?.replace(/\s+/g, ''); 
               console.log("mobile numr", mobileNumber)
-              if (!mobileNumber.startsWith("+")) {
+              if (!mobileNumber?.startsWith("+")) {
+                console.log("checking")
                   const countryCode = getCountryCode(salesForceNewData?.country);
-                  salesForceNewData.mobile = countryCode+mobileNumber?.substring(0, 9);
-                  leadsNewData.Phone = countryCode+mobileNumber?.substring(0, 9);
+                  salesForceNewData.mobile = countryCode + mobileNumber?.substring(0, 9);
+                  leadsNewData.Phone = countryCode + mobileNumber?.substring(0, 9);
               } else {
-                console.log("new mvile", mobileNumber)
-                  salesForceNewData.mobile = mobileNumber;
-                  leadsNewData.Phone = mobileNumber;
+                console.log("new mvile", mobileNumber?.replace(/\s+/g, ''))
+                  salesForceNewData.mobile = mobileNumber?.replace(/\s+/g, '');
+                  leadsNewData.Phone = mobileNumber?.replace(/\s+/g, '');
               }
               break;   
               case "Course you are looking for":
