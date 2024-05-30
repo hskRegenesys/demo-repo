@@ -5,6 +5,7 @@ import React from "react";
 import Schemas from "src/schemas";
 import { Constants } from "src/schemas/data";
 import Styles from "./breadcrumbsDR.module.css";
+import Image from "next/image";
 
 const BreadcrumbsDR = ({
   title = "",
@@ -34,6 +35,7 @@ const BreadcrumbsDR = ({
       href: parentToParentHref,
     });
   }
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <section className={Styles.BreadcrumbsDR}>
@@ -50,10 +52,13 @@ const BreadcrumbsDR = ({
                 {parent && (
                   <>
                     <li className={Styles.separator}>
-                      <img
+                      <Image
                         className={Styles.arrowIcon}
-                        src="/assets/images/new-component-assets/arrowGray.svg"
+                        src={`${imageUrl}Icons/arrowGray.svg`}
+                        // src="/assets/images/new-component-assets/arrowGray.svg"
                         alt="Arrow Icon"
+                        width={16}
+                        height={16}
                       />
                     </li>
                     <li>
@@ -64,10 +69,13 @@ const BreadcrumbsDR = ({
                 {parentToParent && (
                   <>
                     <li className={Styles.separator}>
-                      <img
+                      <Image
                         className={Styles.arrowIcon}
-                        src="/assets/images/new-component-assets/arrowGray.svg"
+                        src={`${imageUrl}Icons/arrowGray.svg`}
+                        // src="/assets/images/new-component-assets/arrowGray.svg"
                         alt="Arrow Icon"
+                        width={16}
+                        height={16}
                       />
                     </li>
                     <li className={Styles.fontCapitalized}>
@@ -76,10 +84,13 @@ const BreadcrumbsDR = ({
                   </>
                 )}
                 <li className={Styles.separator}>
-                  <img
+                  <Image
                     className={Styles.arrowIcon}
-                    src="/assets/images/new-component-assets/arrowGray.svg"
+                    src={`${imageUrl}Icons/arrowGray.svg`}
+                    // src="/assets/images/new-component-assets/arrowGray.svg"
                     alt="Arrow Icon"
+                    width={16}
+                    height={16}
                   />
                 </li>
                 <li className={`${Styles.fontCapitalized} ${Styles.active}`}>

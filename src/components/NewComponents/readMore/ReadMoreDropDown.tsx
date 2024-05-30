@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ReadMoreDropDown.module.css";
-
+import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 // Define a type for the data prop
 interface ReadMoreData {
   heading: string;
@@ -12,6 +13,7 @@ interface ReadMoreData {
 
 const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const imageUrl = imageBaseUrl();
 
   const toggleReadMore = () => {
     setIsOpen(!isOpen);
@@ -29,11 +31,14 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
           {!isOpen && (
             <button onClick={toggleReadMore} className={styles.readmoreButton}>
               Read More
-              <span>
-                <img
+              <span style={{ margin: "auto 0", display: "flex" }}>
+                <Image
                   onClick={toggleReadMore}
-                  src="./assets/images/new-component-assets/DoubleArrowWhite.svg"
+                  // src="/assets/images/new-component-assets/DoubleArrowWhite.svg"
+                  src={`${imageUrl}Icons/DoubleArrowWhite.svg`}
                   alt="Arrow"
+                  width={20}
+                  height={20}
                 />
               </span>
             </button>

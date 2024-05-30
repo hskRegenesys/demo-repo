@@ -74,7 +74,7 @@ const MainFooter = ({ normalPadding = true }) => {
       <div className="footer-bottom bg-secondary">
         <div className="inner clearfix">
           <div className="copyright">
-            Copyright &copy; {year} | Regenesys Business School (Pty) Ltd | All
+            Copyright &copy; {year} | Regenesys Business School (Pvt) Ltd | All
             Rights Reserved
           </div>
         </div>

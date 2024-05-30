@@ -4,6 +4,8 @@ import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData
 const pageMappings = [
   {
     pages: [
+      "data-science",
+      // =========multiple pages===========
       "data-science-course",
       "data-science-courses",
       "courses-in-data-science",
@@ -47,6 +49,7 @@ const pageMappings = [
   {
     pages: [
       "digital-marketing",
+      // =========multiple pages===========
       "what-is-digital-marketing",
       "digital-marketing-jobs",
       "digital-marketing-salary",
@@ -113,6 +116,8 @@ const pageMappings = [
   },
   {
     pages: [
+      "project-management",
+      // =========multiple pages===========
       "project-management-courses",
       "project-management-course",
       "project-management-courses-online",
@@ -146,6 +151,8 @@ const pageMappings = [
   },
   {
     pages: [
+      "cyber-security",
+      // =========multiple pages===========
       "cyber-security-course",
       "cyber-security-courses",
       "cyber-security-courses-online",
@@ -170,6 +177,8 @@ const pageMappings = [
   },
   {
     pages: [
+      "artificial-intelligence",
+      // =========multiple pages===========
       "artificial-intelligence-course",
       "artificial-general-intelligence-course",
       "artificial-intelligence-courses",
@@ -192,6 +201,7 @@ const pageMappings = [
   {
     pages: [
       "design-thinking",
+      // =========multiple pages===========
       "design-thinking-process",
       "what-is-design-thinking",
       "design-thinking-definition",
@@ -225,6 +235,8 @@ const pageMappings = [
   },
   {
     pages: [
+      "full-stack-development",
+      // =========multiple pages===========
       "full-stack-developer",
       "full-stack-developer-salary",
       "what-is-a-full-stack-developer",
@@ -250,6 +262,8 @@ const pageMappings = [
   },
   {
     pages: [
+      "data-and-business-analytics",
+      // =========multiple pages===========
       "data-analysis",
       "business-analytics",
       "what-is-business-analytics",
@@ -276,6 +290,8 @@ const pageMappings = [
   },
   {
     pages: [
+      "management-advancement",
+      // =========multiple pages===========
       "mdp",
       "management-development-courses",
       "management-certificate-programs",
@@ -289,6 +305,10 @@ const pageMappings = [
       "management-development-program-salary",
     ],
     data: MainCoursesDynimicData.ManagementAdvancement,
+  },
+  {
+    pages: ["product-management"],
+    data: MainCoursesDynimicData.ProductManagement,
   },
 ];
 

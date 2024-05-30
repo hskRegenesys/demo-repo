@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import AboutUsData from "../../../data/newComponentData/commonComponentData/AboutUsData";
 import Styles from "./aboutUs.module.css";
+import Image from "next/image";
+import imageBaseUrl from "src/utils/imageBaseUrl";
 
 interface AboutUsProps {
   handleEnrollButtonClick: () => void;
@@ -12,64 +14,57 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
     aboutTitle,
     aboutHeading,
     aboutParagraph,
-    cards,
+    aboutUsCardsData,
     aboutUsImgAlt,
   } = AboutUsData;
 
-  const [windowWidth, setWindowWidth] = useState<number | null>(null);
-  const [showFullParagraph, setShowFullParagraph] = useState(false);
-  const [needsTruncation, setNeedsTruncation] = useState(false);
+  const [windowWidth, setWindowWidth] = useState<number>(0);
+  const [isClient, setIsClient] = useState<boolean>(false);
+  const [showFullParagraph, setShowFullParagraph] = useState<boolean>(false);
 
   useEffect(() => {
+    // Set the window width on the client-side only
     const handleResize = () => {
-      if (typeof window !== "undefined") {
-        setWindowWidth(window.innerWidth);
-      }
+      setWindowWidth(window.innerWidth);
     };
 
-    if (typeof window !== "undefined") {
-      setWindowWidth(window.innerWidth);
-    }
+    handleResize(); // Set initial window width
+    setIsClient(true); // Mark as client-side rendering
 
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
-    }
-
+    window.addEventListener("resize", handleResize);
     return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("resize", handleResize);
-      }
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  useEffect(() => {
-    const truncatedParagraph =
-      windowWidth && windowWidth > 920
-        ? aboutParagraph.slice(0, 520)
-        : aboutParagraph.slice(0, 275);
-    setNeedsTruncation(truncatedParagraph !== aboutParagraph);
-  }, [aboutParagraph, windowWidth]);
-
   const toggleParagraph = () => {
-    if (needsTruncation) {
-      setShowFullParagraph(!showFullParagraph);
-    }
+    setShowFullParagraph(!showFullParagraph);
   };
+
+  // Determine if truncation is needed based on client-side window width
+  const needsTruncation = isClient
+    ? windowWidth > 920
+      ? aboutParagraph.length > 520
+      : aboutParagraph.length > 275
+    : false;
 
   return (
     <div className={Styles.aboutUsContainer}>
       <div className={Styles.hedingMobile}>
-        <div className={Styles.aboutTitle}>{aboutTitle}</div>
-        <div className={Styles.aboutHeading}>{aboutHeading}</div>
+        <p className="main-heading">{aboutTitle}</p>
+        <h2 className="main-sub-heading">{aboutHeading}</h2>
       </div>
 
       <div className={Styles.aboutUs}>
         <div className={Styles.aboutUsLeft}>
-          <img
+          <Image
             src={aboutUsImg}
             alt={aboutUsImgAlt}
             title={aboutUsImgAlt}
             className={Styles.aboutUsImage}
+            width={480}
+            height={320}
+            priority
           />
         </div>
         <div className={Styles.aboutUsRight}>
@@ -80,22 +75,20 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
           <p className={Styles.aboutParagraph}>
             {showFullParagraph
               ? aboutParagraph
-              : `${
-                  windowWidth && windowWidth > 920
-                    ? aboutParagraph.slice(0, 520)
-                    : aboutParagraph.slice(0, 275)
-                }`}
+              : aboutParagraph.slice(
+                  0,
+                  isClient && windowWidth > 920 ? 520 : 275
+                )}
             {needsTruncation && (
               <>
-                {!showFullParagraph && (
+                {!showFullParagraph ? (
                   <span
                     className={Styles.viewMoreButton}
                     onClick={toggleParagraph}
                   >
                     ...View More
                   </span>
-                )}
-                {showFullParagraph && (
+                ) : (
                   <span
                     className={Styles.viewLessButton}
                     onClick={toggleParagraph}
@@ -109,15 +102,18 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
         </div>
       </div>
 
-      <div className={Styles.cardsContainer}>
-        {cards.map((card, index) => (
-          <div key={index} className={Styles.card}>
-            <img
-              src={card.cardImg}
-              alt={`Card ${index + 1}`}
-              className={Styles.cardImg}
-            />
-            <div className={Styles.cardText}>{card.cardText}</div>
+      <div className={Styles.aboutusCardsContainer}>
+        {aboutUsCardsData.map((item, index) => (
+          <div key={index} className={Styles.aboutusCard}>
+            <div className={Styles.aboutusCardImg}>
+              <Image
+                src={item.image}
+                alt={`Card ${index + 1}`}
+                width={52}
+                height={52}
+              />
+            </div>
+            <div className={Styles.aboutusCardText}>{item.title}</div>
           </div>
         ))}
       </div>

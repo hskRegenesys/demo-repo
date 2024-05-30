@@ -1,6 +1,5 @@
 import { shopPage } from "@/data/shopPage";
-import Slider from "rc-slider";
-import "rc-slider/assets/index.css";
+
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import GallerySectionOne from "@/components/HomeCourses/GallerySectionOne";
@@ -19,15 +18,15 @@ const CoursesWithFilter = () => {
 
   const [sortBy, setSortBy] = useState("Sort by Price");
 
-  const handleSelectSortBy = (props:any) => {
+  const handleSelectSortBy = (props: any) => {
     setSortBy(props.value);
   };
 
-  const handleSlideChange = (value:any) => {
+  const handleSlideChange = (value: any) => {
     setSliderValue(value);
   };
 
-  const handleSearch = (e:any) => {
+  const handleSearch = (e: any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     console.log(formData.get("search"));
@@ -50,7 +49,7 @@ const CoursesWithFilter = () => {
               <div className="shop-range shop-sidebar__single">
                 <h3 className="shop-sidebar__title">Price</h3>
                 <div className="product-sidebar__price-range">
-                  <Slider
+                  {/* <Slider
                     range
                     allowCross={false}
                     value={sliderValue}
@@ -59,7 +58,7 @@ const CoursesWithFilter = () => {
                     min={10}
                     className="range-slider-price"
                     draggableTrack
-                  />
+                  /> */}
                   <div className="form-group">
                     <div className="left">
                       <p>

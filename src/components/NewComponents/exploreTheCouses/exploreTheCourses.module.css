@@ -38,7 +38,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.024px;
@@ -49,7 +49,7 @@
   font-family: Montserrat-Bold;
   color: var(--primary-primary-charcoal, #131718);
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -60,7 +60,7 @@
   cursor: pointer;
   color: #697386;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -94,7 +94,7 @@
   color: var(--Primary-Primary---Charcoal, #131718);
   font-family: Montserrat-Bold;
   font-size: 24px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -205,10 +205,9 @@
 
 .content1 p {
   color: var(--yocket-com-pale-sky, #697386);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+
   line-height: 24px;
   letter-spacing: 0.12px;
   margin-top: 20px;
@@ -245,7 +244,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 16px; /* 133.333% */
   letter-spacing: 0.12px;
@@ -348,7 +347,7 @@
   margin-bottom: 52px;
 }
 
-.card img {
+.CardImg {
   position: absolute;
   top: 22%;
   left: 34%;
@@ -363,8 +362,19 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.019px;
+  margin-bottom: 4px;
+}
+.facultyEducation {
+  color: var(--Light-Text-Primary, #008554);
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.019px;
   margin-bottom: 4px;
@@ -375,23 +385,28 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.12px;
-  margin-bottom: 20px;
 }
 
-.card span {
+.yearsOfExperience {
   color: var(--Light-Text-Secondary, #697386);
   text-align: center;
   margin-bottom: 20px;
-  font-family: Montserrat;
+
   font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
+
   line-height: 20px;
   letter-spacing: 0.12px;
+  border-top: 1px dotted #e3e8ee;
+  margin: 0px 20px;
+  padding-top: 10px;
+}
+.yearsOfExperience span {
+  font-family: Montserrat-Bold;
+  color: #2b3340;
 }
 
 @media screen and (max-width: 768px) {
@@ -451,7 +466,7 @@
   color: var(--Light-Text-Primary, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.019px;
@@ -463,7 +478,7 @@
   color: var(--Light-Text-Green, #008554);
   font-family: Montserrat-Bold;
   font-size: 28px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.034px;
@@ -490,10 +505,8 @@
 .tickListContainer li {
   color: #697386;
 
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   margin-bottom: 15px;
@@ -512,7 +525,7 @@
   color: var(--Primary-Primary---White, #fff);
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
@@ -559,25 +572,22 @@
 .weekPoint {
   margin-top: 16px;
 }
-.weekPoint span {
+
+.weekPointText {
   color: var(--Light-Text-Secondary, #697386);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
-}
-.weekPoint img {
-  width: 20px;
-  margin-right: 10px;
+  width: 100%;
 }
 
 .sideHeding {
   color: var(--Light-Text-Primary, #2b3340);
   font-family: Montserrat-semiBold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
@@ -593,7 +603,7 @@
   color: var(--Light-Text-Primary, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 133.333% */
   letter-spacing: 0.12px;
@@ -621,11 +631,12 @@
 
 .weekPoint {
   display: flex;
-  align-items: center;
   margin-bottom: 8px;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
-.weekPoint span:first-child {
+.weekPointText:first-child {
   margin-right: 8px;
 }
 
@@ -644,7 +655,7 @@
     margin-bottom: 8px;
   }
 
-  .weekPoint span {
+  .weekPointText {
     font-size: 14px;
     line-height: 20px;
   }
@@ -696,7 +707,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.019px;
@@ -728,9 +739,9 @@
   align-items: center;
   margin-bottom: 16px;
   color: var(--Light-Text-Primary, #2b3340);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.019px;
@@ -747,13 +758,14 @@
   font-weight: 700;
   letter-spacing: 0.026px;
   font-family: Montserrat-semiBold;
+  white-space: nowrap;
 }
 
 .SpanText {
   color: var(--Primary-Primary---Charcoal, #131718);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
@@ -772,7 +784,7 @@
   background: var(--primary-primary-charcoal, #131718);
   color: #fff;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;

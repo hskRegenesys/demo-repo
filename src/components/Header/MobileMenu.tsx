@@ -45,9 +45,10 @@ const MobileMenu = ({ onePage = false }) => {
 
             <a
               onClick={toggleMenu}
-              className="side-menu__toggler side-menu__close-btn"
+              className="side-menu__toggler side-menu__close-btn text-black"
+              style={{ fontSize: "30px" }}
             >
-              <Image src={icon} alt="" />
+              &times;
             </a>
           </div>
 

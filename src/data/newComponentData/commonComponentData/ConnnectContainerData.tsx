@@ -1,14 +1,14 @@
 const connectContainerData = {
-  connectContainerHeader: "Connect With our Expert Team",
+  connectContainerHeader: "Get In Touch With Us",
   connectContainerTittle:
     "Connect with us now for a Support experience like no other!",
-  icon1: "./assets/images/new-component-assets/checkVectorWhiteIcon.svg",
-  icon2: "./assets/images/new-component-assets/WhiteFilledStarIcon.svg",
-  icon3: "./assets/images/new-component-assets/DiscountIcon.svg",
+  vectorWhiteIcon: "/assets/images/allImages/checkVectorWhiteIcon.svg",
+  whiteFilledStarIcon: "/assets/images/allImages/WhiteFilledStarIcon.svg",
+  discountIcon: "/assets/images/allImages/DiscountIcon.svg",
   connectContainerText: [
-    "Fill your information once",
+    "Fill in your details",
     "Discuss your profile with us!",
-    "Explore the perfect course for you and brighten your path to the future",
+    "Explore the perfect course for you and brighten your path to the future.",
   ],
 };
 export default connectContainerData;
