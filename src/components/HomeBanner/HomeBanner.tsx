@@ -9,41 +9,40 @@ import CountDownSeatsAvailable from "../../components/CountDownSeatsAvailable/Co
 
 const { image, title, subtitle, subsubtitle, features } = featuredSection;
 import FunFactSix from "@/components/FunFacts/FunFactSix";
-import AnimatedText from "../AnimatedText/AnimatedText";
 
 const HomeBanner = ({ className = "" }) => {
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
 
-  // // -----Animation text --------
-  // const [displayText, setDisplayText] = useState("");
-  // const [showCursor, setShowCursor] = useState(true);
-  // const [currentIndex, setCurrentIndex] = useState(0);
-  // const text = "Providing World Class Upskilling Course";
-  // const speed = 200;
+  // -----Animation text --------
+  const [displayText, setDisplayText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const text = "Providing World Class Upskilling Course";
+  const speed = 200;
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     if (currentIndex < text.length) {
-  //       setDisplayText((prevText) => prevText + text[currentIndex]);
-  //       setCurrentIndex((prevIndex) => prevIndex + 1);
-  //     } else {
-  //       clearInterval(timer);
-  //       setTimeout(() => {
-  //         setShowCursor(false);
-  //         setCurrentIndex(0);
-  //         setDisplayText("");
-  //         setShowCursor(true);
-  //       }, speed * 3);
-  //     }
-  //   }, speed);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (currentIndex < text.length) {
+        setDisplayText((prevText) => prevText + text[currentIndex]);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      } else {
+        clearInterval(timer);
+        setTimeout(() => {
+          setShowCursor(false);
+          setCurrentIndex(0);
+          setDisplayText("");
+          setShowCursor(true);
+        }, speed * 3);
+      }
+    }, speed);
 
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }, [text, speed, currentIndex]);
-  // // -----------------------------------------
+    return () => {
+      clearInterval(timer);
+    };
+  }, [text, speed, currentIndex]);
+  // -----------------------------------------
 
   return (
     <>
@@ -58,9 +57,9 @@ const HomeBanner = ({ className = "" }) => {
                     <span>{subtitle}</span>
                     <div style={{ display: "flex", justifyContent: "center" }}>
                       <p>{subsubtitle}</p>
-                      <AnimatedText
-                        dataText={["Providing World Class Upskilling Course"]}
-                      />
+                      <p className="animi-text">
+                        {displayText} {showCursor && "|"}
+                      </p>
                     </div>
                   </h1>
                   {/* <div>

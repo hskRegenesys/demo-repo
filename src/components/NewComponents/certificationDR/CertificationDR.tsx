@@ -1,7 +1,7 @@
 // CertificationDR.js
 import React, { useState, useEffect, useRef } from "react";
 import Styles from "./CertificationDR.module.css";
-
+import Image from "next/image";
 interface CertificationDRProps {
   handleEnrollButtonClick: (title?: string) => void;
   data: {
@@ -41,13 +41,10 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
       setIsMobile(window.innerWidth <= 700);
     };
 
-    // Initial check
     handleResize();
 
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -92,10 +89,12 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
             <div className={Styles.certificationListText}>
               {achievementsText.map((item: string, index: number) => (
                 <div key={index} className={Styles.certificationListItem}>
-                  <img
+                  <Image
                     src={tickImage}
                     alt="Check Image"
                     className={Styles.checkImage}
+                    width={20}
+                    height={20}
                   />
                   <span>{item}</span>
                 </div>
@@ -105,7 +104,12 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
         </div>
 
         <div className={Styles.rightSection}>
-          <img src={image} alt="Certification Image" />
+          <Image
+            src={image}
+            alt="Certification Image"
+            width={468}
+            height={336}
+          />
           <p>{imageText}</p>
         </div>
       </div>

@@ -1,17 +1,19 @@
 const UspSectionData = {
   uspLocationCard: {
-    uspLocationText: "USA, South Africa, Nigeria, Kenya & India",
-    usplocationIcon: "/assets/images/new-component-assets/Location.svg",
+    uspLocationText: "Years of Legacy",
+    usplocationIcon: "/assets/images/allImages/Award.svg",
+    uspEnrollmentCount: "25+",
   },
   uspEnrollmentCard: {
-    uspEnrollmentText: "Students Enrolled",
-    uspEnrollmentCount: "10000+",
-    StudentEnrolIcon: "/assets/images/new-component-assets/Users.svg",
-    duration: "3000",
+    uspEnrollmentText: "Alumni",
+    uspEnrollmentTextMobile: "Students",
+    uspEnrollmentCount: "300000+",
+    StudentEnrolIcon: "/assets/images/allImages/profile-user.svg",
   },
   uspUpskillCard: {
-    uspUpskillText: "Enhances Upskilling Courses",
-    uspBookIcon: "/assets/images/new-component-assets/Learn.svg",
+    uspUpskillText: "Countries",
+    uspBookIcon: "/assets/images/allImages/Live Call.svg",
+    uspEnrollmentCount: "190+",
   },
 };
 export default UspSectionData;

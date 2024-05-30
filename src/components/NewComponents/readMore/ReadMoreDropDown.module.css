@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  font-family: Montserrat;
+
   background: var(--light-text-surface-primary-green-light, #f0fdf4);
   box-shadow: 0px 2px 4px 0px rgba(55, 65, 81, 0.1);
 }
@@ -25,7 +25,7 @@
   font-feature-settings: "ss03" on, "liga" off;
   font-family: Montserrat-Bold;
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -52,7 +52,7 @@
 .paragraph {
   text-align: left;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -70,7 +70,6 @@
   font-size: 18px;
   font-weight: 500;
   color: #0000009c;
-  font-family: Montserrat;
 }
 .paragraph p a {
   font-size: 18px;

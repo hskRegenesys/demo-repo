@@ -1,16 +1,11 @@
 import Preloader from "@/components/Preloader/Preloader";
-import useScroll from "@/hooks/useScroll";
 import Head from "next/head";
-
-import React, { useEffect, useLayoutEffect, useState } from "react";
-import { canonicalConstants } from "@/components/config/constant";
+import React, { useEffect, useState } from "react";
 import Data from "@/data/commonData";
 import { useRouter } from "next/router";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import CancelIcon from "@mui/icons-material/Cancel";
 import ModalPopup from "../Modal/ModalPopup";
-import { Modal } from "react-bootstrap";
 import mixpanel from "mixpanel-browser";
+import Script from "next/script";
 
 const Layout = (props: any) => {
   const [show, setShow] = useState(false);
@@ -76,7 +71,7 @@ const Layout = (props: any) => {
     pageTitle === "blog"
       ? blogList?.[0]?.yoast_head_json?.og_image[0]?.url
       : // : pageTitle === "category"
-      // ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_image?.[0]?.url
+      // ? categoryList?.[0]?.posts?.[0]?.yoast_head_json?.og_image?.[1]?.url
       metaData?.metaInfo?.ogImg?.[pageTitle]
       ? metaData?.metaInfo?.ogImg?.[pageTitle]
       : metaData?.metaInfo?.ogImg?.["home"];
@@ -189,14 +184,6 @@ const Layout = (props: any) => {
   return (
     <>
       <Head>
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-          (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lxj4wy0m9f");
-              `,
-          }}
-        />
         <title>{title}</title>
         {canonicalBaseUrl && (
           <link rel="canonical" href={canonicalBaseUrl} id="dynamic-url" />
@@ -242,6 +229,18 @@ const Layout = (props: any) => {
            hrefLang="x-default"
           href="https://uat-new.digitalregenesys.com"
         /> */}
+
+        {/* Clarity script */}
+        <Script
+          strategy="beforeInteractive"
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "lxj4wy0m9f");
+              `,
+          }}
+        />
+        {/* Clarity script end */}
       </Head>
 
       <Preloader className={preloaderClass} loading={loading} bg={preloader} />
@@ -255,13 +254,6 @@ const Layout = (props: any) => {
         />
       </div>
 
-      {/* <a
-        id="chat"
-        onClick={() => setShow(!show)}
-        className="chat d-inline-block fadeIn animated"
-      >
-        {show ? <CancelIcon /> : <WhatsAppIcon />}
-      </a> */}
       <main
         id="wrapper"
         style={{ opacity: loading ? 0 : 1 }}
