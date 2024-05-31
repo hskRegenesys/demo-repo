@@ -59,7 +59,7 @@
   position: relative;
   z-index: 9999;
   opacity: 0;
-  animation: fadeIn 0.03s ease forwards;
+  animation: fadeIn 0.01s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -72,24 +72,37 @@
 }
 
 .TanzaniaSection .ContaryShowHoverDetails {
-  top: -10px !important;
-  left: 67px !important;
+  top: -8px !important;
+  left: 65px !important;
 }
 .IndiaSection .ContaryShowHoverDetails {
-  top: 18px !important;
+  top: 22px !important;
   left: 20px !important;
 }
 .UsaSection .ContaryShowHoverDetails {
-  top: -10px !important;
-  left: 0px !important;
+  top: 8px !important;
+  left: 10px !important;
 }
 .CroatiaSection .ContaryShowHoverDetails {
   top: -10px !important;
   left: 0px !important;
 }
 .KenyaSection .ContaryShowHoverDetails {
-  top: -10px !important;
+  top: -6px !important;
+  left: 2px !important;
+}
+
+.SouthAfricaSection .ContaryShowHoverDetails {
+  top: -7px !important;
   left: 0px !important;
+}
+.UgandaSection .ContaryShowHoverDetails {
+  top: 7px !important;
+  left: 21px !important;
+}
+.NigeriaSection .ContaryShowHoverDetails {
+  left: 13px;
+  top: 18px;
 }
 
 .contaryLocation {
@@ -139,45 +152,55 @@
 .IndiaLocation,
 .ugandaLocation,
 .southAfricaLocation,
-.croatiaLocation,
 .tanzaniaLocation,
+.croatiaLocation,
 .nigeriaLocation {
   position: absolute;
   z-index: 1;
 }
 
 .usaLocation {
-  top: -14px;
-  left: 35px;
+  top: 20px;
+  left: 50px;
 }
 .KenyaLocation {
-  top: 91px;
-  left: 303px;
+  top: 97px;
+  left: 305px;
 }
 .IndiaLocation {
-  top: 55px;
-  left: 351px;
+  top: 58px;
+  left: 350px;
 }
 .ugandaLocation {
-  top: 60px;
-  left: 270px;
+  top: 71px;
+  left: 263px;
 }
 .southAfricaLocation {
-  top: 139px;
+  top: 152px;
   left: 75px;
 }
-.croatiaLocation {
-  top: 16px;
-  left: 268px;
+.CroatiaSection {
+  position: relative;
 }
+
+.croatiaLocation {
+  top: 28px;
+  left: 264px;
+}
+
+.UgandaContaryShowHoverDetails .contaryFlag {
+  z-index: 99;
+  position: absolute;
+}
+
 .tanzaniaLocation {
   top: 110px;
-  left: 204px;
+  left: 230px;
 }
 
 .nigeriaLocation {
-  top: 53px;
-  left: 24px;
+  top: 63px;
+  left: 30px;
 }
 
 .PinLocatioName {
@@ -188,6 +211,12 @@
 .IndiaContaryLocation {
   flex-direction: column;
   left: 20px;
+}
+.USAContaryLocation {
+  flex-direction: column;
+}
+.UgandaContaryLocation {
+  flex-direction: column;
 }
 
 .UgandaContaryShowHoverDetails {
@@ -202,11 +231,13 @@
   left: 182px;
 }
 .NigeriaContaryLocation {
-  left: 167px;
+  left: 180px;
+  top: 78px;
 }
 .USAContaryLocation .contaryname {
   position: relative;
-  top: 17px;
+  top: -5px;
+  font-weight: 700;
 }
 
 .contaryname {
@@ -348,6 +379,8 @@
   .rightSection {
     order: -1;
     margin-top: 0px;
+    position: relative;
+    left: 10px;
   }
   .leftSection p {
     font-size: 14px;
@@ -363,6 +396,8 @@
     font-size: 7px;
     text-align: center;
     white-space: nowrap;
+    top: 3px;
+    position: relative;
   }
   .contaryLocation img {
     width: 10px !important;
@@ -371,20 +406,20 @@
     display: none;
   }
   .usaLocation {
-    top: -30px;
-    left: 9px;
+    top: -20px;
+    left: 2px;
   }
   .KenyaLocation {
-    top: 25px;
-    left: 150px;
+    top: 24px;
+    left: 155px;
   }
   .IndiaLocation {
     top: -3px;
     left: 168px;
   }
   .ugandaLocation {
-    top: 4px;
-    left: 134px;
+    top: 2px;
+    left: 124px;
   }
   .southAfricaLocation {
     top: 56px;
@@ -393,17 +428,17 @@
   }
 
   .croatiaLocation {
-    top: -17px;
-    left: 141px;
+    top: -11px;
+    left: 137px;
   }
   .tanzaniaLocation {
-    top: 38px;
-    left: 140px;
+    top: 35px;
+    left: 152px;
   }
 
   .nigeriaLocation {
-    top: 4px;
-    left: 124px;
+    top: -5px;
+    left: 137px;
   }
   .NigeriaContaryLocation {
     left: -28px;
@@ -414,6 +449,7 @@
 
   .TanzaniaContaryLocation {
     left: -27px !important;
+    width: 70px;
   }
   .usaLocation,
   .KenyaLocation,
@@ -424,5 +460,10 @@
   .tanzaniaLocation,
   .nigeriaLocation {
     width: 51px !important;
+  }
+
+  .USAContaryLocation .contaryname {
+    position: relative;
+    top: 1px;
   }
 }

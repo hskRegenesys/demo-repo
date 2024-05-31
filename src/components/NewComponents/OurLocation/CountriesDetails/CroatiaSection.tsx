@@ -18,7 +18,7 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
     <div className={`${Styles.CroatiaSection} `}>
       {isHovered && (
         <div
-          className={`${Styles.CroatiaContaryShowHoverDetails} ${
+          className={`${Styles.CroatiaContaryShowHoverDetails}  ${
             Styles.ContaryShowHoverDetails
           } ${isHovered ? Styles.active : ""}`}
           onMouseLeave={onMouseLeave}
@@ -54,10 +54,10 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
             }`}
             alt="Location"
             title={OurLocationData.Croatia.countryName}
-            onMouseEnter={onMouseEnter}
             width={14}
             height={20}
             priority
+            onMouseEnter={onMouseEnter}
           />
           <span className={Styles.contaryname}>
             {OurLocationData.Croatia.countryName}

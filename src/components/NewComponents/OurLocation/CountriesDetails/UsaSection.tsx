@@ -46,6 +46,9 @@ const UsaSection: React.FC<UsaSectionProps> = ({
         <div
           className={`${Styles.USAContaryLocation} ${Styles.contaryLocation}`}
         >
+          <span className={Styles.contaryname}>
+            {OurLocationData.USA.countryName}
+          </span>
           <Image
             src={OurLocationData.locationPinImage}
             // src={OurLocationData.locationPinImage}
@@ -57,9 +60,6 @@ const UsaSection: React.FC<UsaSectionProps> = ({
             height={20}
             priority
           />
-          <span className={Styles.contaryname}>
-            {OurLocationData.USA.countryName}
-          </span>
         </div>
       )}
     </div>
