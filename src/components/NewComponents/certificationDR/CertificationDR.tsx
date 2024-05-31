@@ -115,7 +115,7 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
       </div>
       <div
         className={Styles.enrollButton}
-        onClick={() => handleEnrollButtonClick("Enroll Now!")}
+        onClick={() => handleEnrollButtonClick("Enrol Now!")}
       >
         {buttonText}
       </div>
