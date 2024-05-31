@@ -120,16 +120,23 @@
   color: var(--Light-Text-Green, #008554);
 }
 
-.courseHeading {
-  font-feature-settings: "ss03" on, "liga" off;
+.HeadingText {
   font-family: Montserrat-Bold;
   font-size: 40px;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: -0.8px;
+  margin-bottom: 0px;
+  color: var(--Light-Text-Primary, #2b3340);
+}
 
+.courseHeading {
+  font-family: Montserrat-Bold;
+  font-size: 40px;
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
   margin-bottom: 8px;
-  font-family: Montserrat-Bold;
   background: linear-gradient(
     115deg,
     #008554 14.58%,
@@ -143,9 +150,7 @@
 }
 .contentText {
   color: var(--Light-Text-Secondary, #697386);
-
   font-size: 16px;
-
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   margin-bottom: 28px;
