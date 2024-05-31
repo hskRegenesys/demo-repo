@@ -35,8 +35,9 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
                 <Image
                   onClick={toggleReadMore}
                   // src="/assets/images/new-component-assets/DoubleArrowWhite.svg"
-                  src={`${imageUrl}Icons/DoubleArrowWhite.svg`}
+                  src="/assets/images/allImages/single-arrow-right.svg"
                   alt="Arrow"
+                  className="right-single-arrow"
                   width={20}
                   height={20}
                 />
