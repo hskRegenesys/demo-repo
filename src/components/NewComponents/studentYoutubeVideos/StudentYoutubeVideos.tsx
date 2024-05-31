@@ -84,7 +84,7 @@ const StudentYoutubeVideos: React.FC = () => {
               slidesPerGroup: 1,
               centeredSlides: true,
             },
-            1440: {
+            1220: {
               slidesPerView: 2,
             },
           }}

@@ -44,7 +44,7 @@
 }
 
 .rightSection {
-  width: 60%;
+  width: 62%;
 }
 
 .cardContainer ul {
@@ -63,29 +63,27 @@
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
-  max-width: 280px;
+  max-width: 340px;
   min-width: 246px;
   width: 100%;
   height: 100%;
   min-height: 278px;
   box-shadow: 0px 2px 2px 0px rgba(55, 65, 81, 0.1);
   margin-left: 10px;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   margin: 0 auto;
 }
 
 .bgcolor {
   background: linear-gradient(90deg, #14c584 0%, #09905e 98.37%);
-  padding: 50px;
-  margin-bottom: 52px;
+  padding: 60px;
+  margin-bottom: 80px;
 }
 
 .cardImg {
   position: absolute !important;
-  top: 12%;
+  top: 14%;
   left: 32%;
-  width: 110px;
-  height: 110px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -94,38 +92,32 @@
   color: var(--Light-Text-Primary, #2b3340);
   text-align: center;
   font-family: Montserrat-Bold;
-  font-size: 16px;
-
-  font-weight: 700;
+  font-size: 20px;
   line-height: 24px;
-  /* 150% */
   letter-spacing: 0.019px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .courseName {
   color: var(--Light-Text-Green, #008554);
   text-align: center;
-  font-family: Montserrat-Bold;
-  font-size: 12px;
+  font-family: Montserrat-semiBold;
+  font-size: 16px;
   white-space: nowrap;
-  font-weight: 600;
   line-height: 16px;
-  /* 133.333% */
   letter-spacing: 0.12px;
   padding: 0px 28px;
+  margin-bottom: 30px;
 }
 
 .yearsOfExperience {
   color: var(--Light-Text-Secondary, #697386);
   text-align: center;
   margin-bottom: 20px;
-
-  font-size: 14px;
-
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.12px;
-  padding-top: 10px;
+  padding-top: 14px;
   margin: 0px 20px;
   border-top: 1px dotted #e3e8ee;
 }
@@ -193,27 +185,29 @@
   display: none;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
   .card {
     min-width: 200px;
     max-width: 200px;
     min-height: auto;
   }
   .cardImg {
-    width: 70px;
-    height: 70px;
+    width: 76px;
+    height: 76px;
   }
   .bgcolor {
-    padding: 30px;
-    margin-bottom: 36px;
+    padding: 38px;
+    margin-bottom: 44px;
   }
   .facultyName {
     font-size: 14px;
     font-weight: 500;
+    margin-bottom: 2px;
   }
   .courseName {
     font-size: 10px;
     padding: 0px 10px;
+    margin-bottom: 18px;
   }
   .yearsOfExperience {
     font-size: 10px;
