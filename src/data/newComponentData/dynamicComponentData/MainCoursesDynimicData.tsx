@@ -2574,7 +2574,7 @@ const MainCoursesDynimicData = {
       contentText:
         "The Full Stack Web & Software Development course provides a comprehensive curriculum, including concepts in front-end development, back-end development, databases and operating systems. Learners will gain practical skills to understand and perform front-end and back-end technologies. The course equips participants with the tools and techniques to work on full stack development concepts.",
       youtubeVideoLink:
-        "https://www.youtube.com/embed/t-tnGObE7zM??autoplay=1&loop=1&playlist=t-tnGObE7zM?",
+        "https://www.youtube.com/embed/t-tnGObE7zM?autoplay=1&loop=1&playlist=t-tnGObE7zM",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
       vidoPlayIcon: "/assets/images/allImages/Polygon.svg",
       UspSectionData: {
