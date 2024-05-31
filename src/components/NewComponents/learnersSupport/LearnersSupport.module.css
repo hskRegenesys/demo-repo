@@ -90,6 +90,7 @@
   margin-top: 24px;
   display: flex;
   gap: 16px;
+  padding: 12px;
 }
 
 .learnMoreButton {
@@ -148,5 +149,9 @@
   }
   .swiperStyle [class^="swiper-button-"] {
     top: calc(50% - var(--add-bottom) / 2);
+  }
+
+  .buttonsContainer {
+    padding: 3px !important;
   }
 }

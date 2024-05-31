@@ -281,24 +281,28 @@ const NavItem = (props: any) => {
                 >
                   <div className="nav-link new-mobile-nav-wrapper">
                     <Link href={navItem.href}>
-                      <div className="mobile-nav-img-title">
-                        <Image
-                          layout="intrinsic"
-                          width="24"
-                          height="24"
-                          alt="Mobile Icon"
-                          src={mobileIcons[id]}
-                        />
-                        <span
-                          className="m-2"
-                          style={{
-                            color:
-                              activeDropdown === navItem.name ? "#008554" : "",
-                          }}
-                        >
-                          {navItem.name}
-                        </span>
-                      </div>
+                      <a>
+                        <div className="mobile-nav-img-title">
+                          <Image
+                            layout="intrinsic"
+                            width="24"
+                            height="24"
+                            alt="Mobile Icon"
+                            src={mobileIcons[id]}
+                          />
+                          <span
+                            className="m-2"
+                            style={{
+                              color:
+                                activeDropdown === navItem.name
+                                  ? "#008554"
+                                  : "",
+                            }}
+                          >
+                            {navItem.name}
+                          </span>
+                        </div>
+                      </a>
                     </Link>
                     {navItem.subNavItems &&
                       navItem?.subNavItems?.length > 0 && (
@@ -378,14 +382,15 @@ const NavItem = (props: any) => {
                                                 paddingRight: "10px",
                                               }}
                                             ></span>
-
                                             <Link href={subNavItem.href}>
-                                              {subNavItem.name}
+                                              <a onClick={toggleMenu}>
+                                                {subNavItem.name}
+                                              </a>
                                             </Link>
                                           </div>
 
                                           {subNavItem.subItems &&
-                                            subNavItem.subItems.length > 0 && (
+                                            subNavItem.subItems?.length > 0 && (
                                               <span
                                                 className="fa fa-angle-right"
                                                 onClick={() =>
