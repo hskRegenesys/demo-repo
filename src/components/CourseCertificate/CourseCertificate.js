@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Modal } from "react-bootstrap";
-import ZoomInOutlinedIcon from "@mui/icons-material/ZoomInOutlined";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { Carousel } from "antd";
 const CourseCertificate = ({ courseDetails }) => {
   const {
@@ -60,19 +57,13 @@ const CourseCertificate = ({ courseDetails }) => {
             <span>{certificateListTitle}</span>
             <ul>
               {certificateSkillList?.map((item) => (
-                <li>
-                  <NavigateNextIcon />
-                  {item}
-                </li>
+                <li>{item}</li>
               ))}
             </ul>
             <strong>{certificateListPara}</strong>
             <ul>
               {certificateRolesList?.map((item) => (
-                <li>
-                  <NavigateNextIcon />
-                  {item}
-                </li>
+                <li>{item}</li>
               ))}
             </ul>
           </div>
@@ -88,8 +79,8 @@ const CourseCertificate = ({ courseDetails }) => {
                 autoplay={true}
                 arrows={false}
                 infinite
-                prevArrow={<ChevronLeft fontSize="large" />}
-                nextArrow={<ChevronRight fontSize="large" />}
+                nextArrow={<div className="nextArrow" />}
+                prevArrow={<div className="prevArrow" />}
                 swipeToSlide={true}
               >
                 {CertificateImage?.map((image) => (
@@ -108,7 +99,7 @@ const CourseCertificate = ({ courseDetails }) => {
                       href="javascript:void(0)"
                       onClick={() => toggleModal(image)}
                     >
-                      <ZoomInOutlinedIcon /> Click to zoom
+                      Click to zoom
                     </a>
                   </>
                 ))}

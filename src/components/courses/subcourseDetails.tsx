@@ -158,7 +158,7 @@ const SubCourseDetails = ({ page }: any) => {
                               layout="responsive"
                               width="274"
                               height="182"
-                              alt=""
+                              alt="Cards"
                             />
                           </figure>
                           <a

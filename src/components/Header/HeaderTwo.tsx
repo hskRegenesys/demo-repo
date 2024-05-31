@@ -24,7 +24,7 @@ const HeaderTwo = ({ headerStyle = "mainmenu-six", header = 6 }) => {
             <div className="mainmenu-seven__left">
               <Link href="#">
                 <a>
-                  <Image src={logo7} width={134} alt={title} />
+                  <Image src={logo7} width={134} alt="Logo" />
                 </a>
               </Link>
             </div>

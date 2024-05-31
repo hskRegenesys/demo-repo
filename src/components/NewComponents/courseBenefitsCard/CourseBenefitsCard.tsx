@@ -3,7 +3,7 @@ import styles from "./CourseBenefitsCard.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
-
+import Image from "next/image";
 interface CardData {
   cardIcon: string;
   text1: string;
@@ -24,11 +24,12 @@ const CourseBenefitsCard: React.FC<Props> = ({
 }) => {
   const { courcename, Heding, Card } = data;
   const addBottomValue = Card.length <= 3 ? "0px" : "60px";
+  const imageUrl = `${process.env.awsImage_url}`;
 
   return (
     <div className={styles.courseBenefitsCardContainer}>
-      <h2 className={styles.Heding}>{courcename}</h2>
-      <h3 className={styles.subHeding}>{Heding}</h3>
+      <p className="main-heading">{courcename}</p>
+      <h3 className="main-sub-heading">{Heding}</h3>
 
       <div className={styles.cardsContainer}>
         <Swiper
@@ -52,13 +53,17 @@ const CourseBenefitsCard: React.FC<Props> = ({
           {Card.map((card, index) => (
             <SwiperSlide key={index}>
               <div key={index} className={styles.card}>
-                <img
+                <Image
+                  //src={`${imageUrl}${card.cardIcon}`}
                   src={card.cardIcon}
                   alt="Card Icon"
                   className={styles.cardIcon}
+                  width={64}
+                  height={64}
+                  layout="fixed"
                 />
                 <div className={styles.cardText}>
-                  <p className={styles.cardText1}>{card.text1}</p>
+                  {/* <p className={styles.cardText1}>{card.text1}</p> */}
                   <p className={styles.cardText2}>{card.text2}</p>
                 </div>
               </div>

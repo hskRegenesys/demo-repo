@@ -1,29 +1,26 @@
 const LearnersBenefitData = {
-  LearnersBenefitHeding: "Learners' Benefits",
+  LearnersBenefitHeading: "Learners' Benefits",
   LearnersBenefitTitle: "See What Our Learners Can Get",
-  LearnersBenefitFrame1: "./assets/images/new-component-assets/Frame 1.svg",
-  LearnersBenefitFrame2: "./assets/images/new-component-assets/Frame2.svg",
-  LearnersBenefitTickIcon:
-    "./assets/images/new-component-assets/VectorTick.svg",
-  card: [
+  LearnersBenefitFrame1: "/assets/images/allImages/LearnBenefitsFrameRight.png",
+  LearnersBenefitFrame2: "/assets/images/allImages/LearnBenefitsFrameLeft.png",
+  LearnersBenefitTickIcon: "/assets/images/allImages/VectorTick.svg",
+  LearnersBenfitsCardsData: [
     {
-      LearnersBenefitCardImg:
-        "./assets/images/new-component-assets/Lb-card-img3.svg",
+      LearnersBenefitCardImg: "/assets/images/allImages/Lb-card-one.png",
       LearnersBenefitCardTitle: "World Class Learning",
       LearnersBenefittext: [
-        "Learn from the World's Best Faculty & Industry Experts",
-        "Learn with fun Hands-on Exercises & Assignments",
-        "Participate in Hackathons & Group Activities",
+        "Learn from one of the Best Faculty & Industry Experts",
+        "Experience Hands-on Exercises and Assignments",
+        "Participate in Hackathons and Group Activities ",
       ],
     },
     {
-      LearnersBenefitCardImg:
-        "./assets/images/new-component-assets/Lb-card-img1.svg",
-      LearnersBenefitCardTitle: "Personalized Guidance with 24*7 Support",
+      LearnersBenefitCardImg: "/assets/images/allImages/Lb-card-two.svg",
+      LearnersBenefitCardTitle: "Personalised Guidance with 24x7 Support",
       LearnersBenefittext: [
-        "Dedicated Learning Managers",
-        "24*7 learning Support",
-        "Network with Peers & Interact with Industry Leaders",
+        "Dedicated Support Team",
+        "24x7 Learning Support",
+        "Networking Opportunities",
       ],
     },
   ],

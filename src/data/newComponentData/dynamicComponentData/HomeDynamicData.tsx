@@ -1,176 +1,214 @@
+import { allCourseList } from "@/data/courseData";
+import AdmiteCompaniesData from "../commonComponentData/AdmiteCompaniesData";
+import ToolsCoveredData from "../commonComponentData/ToolsCoveredData";
+import AllCourcesCardData from "../commonComponentData/AllCourcesCardData";
+import StudentReviewData from "../commonComponentData/StudentReviewData";
+import FacultyData from "../commonComponentData/FacultyData";
+import LearnersBenefitData from "../commonComponentData/LearnersBenefitData";
+import AllCoursesDynamicData from "./AllCoursesDynamicData";
+import homeSliderBannerData from "../commonComponentData/homeSliderBannerData";
+
 const HomeDynamicData = {
+  LearnersSupportSectionData: {
+    LsSectionTitle: "Digital Regenesys Learners Support",
+    LsHeding: "Talk To Our Experts. We’re Available 24/7",
+    LearnersSupportCards: [
+      {
+        LsImg: "/assets/images/allImages/LearnersSupport-one.webp",
+        LsQuestion: "Discuss with a career advisor",
+        LsText: "Not sure? Talk to an expert",
+        LsButtonText: "Talk Now",
+      },
+      {
+        LsImg: "/assets/images/allImages/LearnersSupport-two.webp",
+        LsQuestion: "Download Brochure",
+        LsText: "Get Complete Details",
+        LsButtonText: "Download",
+      },
+      {
+        LsImg: "/assets/images/allImages/LearnersSupport-three.webp",
+        LsQuestion: "Eligibility",
+        LsText: "Know Your Eligibility",
+        LsButtonText: " Check Eligibility",
+      },
+    ],
+  },
   BlogSectionDataHome: {
-    BlogSectionTitle: "For Your Research & Information",
-    cards: [
+    BlogSectionTitle: "Read Our Blogs For More Insights",
+    BlogSectionCards: [
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
-        blogQuestion: "Understanding IELTS",
+        blogImg: "/assets/images/allImages/brand-blog-online-course.webp",
+        blogQuestion: "What Are the Benefits of Taking Online Courses?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/what-are-the-benefits-of-taking-online-courses",
         blogText:
-          "The International English Language Testing System, or IELTS, is an exam designed for students who wish to study abroad...",
+          "In the ever-evolving landscape of education, online courses have transformed the traditional learning paradigm, offering many advantages to learners worldwide. These digital educational experiences,",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
-        blogQuestion: "Research Strategies for Students",
+        blogImg: "/assets/images/allImages/brand-blog-certificates.webp",
+        blogQuestion:
+          "Where Do You Find The Best Online Courses With Certificates?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/where-do-you-find-the-best-online-courses-with-certificates",
         blogText:
-          "Effective research is crucial for academic success. Learn valuable strategies and tips to enhance your research skills as a student...",
+          "In the era of online education, the quest for the best courses, accompanied by valuable certificates, has become a vital pursuit",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
+        blogImg: "/assets/images/allImages/brand-blog-it-courses.webp",
+        blogQuestion:
+          "How Do You Choose The Right Online IT Course For Your Career?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/why-online-courses-are-ideal-for-working-professionals",
         blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+          "In the ever-evolving landscape of Information Technology (IT), choosing the right online course for your career is a pivotal decision to shape your professional trajectory. As technology advances,",
       },
       {
-        blogImg: "/assets/images/new-component-assets/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
+        blogImg:
+          "/assets/images/allImages/brand-blog-working-professionals.webp",
+        blogQuestion: "Why Online Courses Are Ideal For Working Professionals?",
+        blogLink:
+          "https://www.digitalregenesys.com/blog/how-do-you-choose-the-right-online-it-course-for-your-career",
         blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-      },
-      {
-        blogImg: "/assets/images/new-component-assets/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
-        blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
-      },
-      {
-        blogImg: "/assets/images/new-component-assets/blog.png",
-        blogQuestion: "Exploring Scientific Discoveries",
-        blogText:
-          "Dive into the latest scientific discoveries and breakthroughs that are shaping our world. Stay informed about the forefront of scientific research...",
+          "In the rapidly evolving education landscape, online courses have emerged as a transformat...",
       },
     ],
   },
   faqSections: {
-    arrowIcon: "/assets/images/new-component-assets/arrow_drop_down.svg",
-    HeadingDesktop: "Frequently Asked Questions",
-    HeadingMobile: "FAQ",
     sections: [
       {
-        heading: "Heding 1",
+        heading: "Data Science",
         faqs: [
           {
-            question: "What is DataScience?",
+            question: "What is Data Science?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "Data science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question: "Do I need a degree to become a data scientist?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "While a computer science, statistics, or mathematics degree can be beneficial, it is not always required. Many data scientists have also found success through boot camps and online Data science courses.",
           },
           {
-            question: "What is DataScience?",
+            question: "What skills do I need to pursue a Data Science course?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "A strong foundation in programming, statistics, and mathematics is essential. Data visualization, machine learning, and problem-solving skills are highly valued.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question:
+              "How long does it take to complete Digital Regenesys’s Data Science course?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "The total duration of Digital Regenesys’s Data Science course is 30 weeks.",
           },
         ],
       },
       {
-        heading: "Heding 2",
+        heading: "Project Management",
         faqs: [
           {
-            question: "What is DataScience?",
+            question: "What is project management?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "Project management is initiating, planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria within a specified time.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question:
+              "Do I need prior experience to take a project management course?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "No, you do not need any prior experience. Digital Regenesys’s Project Management course is designed for college students, beginners, and professionals looking to enhance their skills.",
           },
           {
-            question: "What is DataScience?",
+            question:
+              "What will I learn in the Digital Regenesys Project Management course?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "The Digital Regenesys Project Management course typically covers project initiation, planning, execution, monitoring, and essential tools and techniques used in project management.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question: "Can I study at my own pace?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "Yes. Digital Regenesys’s Project Management course offers flexible learning options, allowing individuals to study at their own pace and manage their time effectively.",
           },
         ],
       },
       {
-        heading: "Heding 3",
+        heading: "Cyber Security",
         faqs: [
           {
-            question: "What is DataScience?",
+            question: "What is a cyber security course?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "A cyber security course is designed to provide individuals with the knowledge and skills to protect computer systems, networks, and data from cyber threats.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question: "Are cyber security courses challenging?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "Like any technical field, cyber security requires dedication and a solid understanding of the concepts. However, anyone can learn and excel in this field with the right mindset and guidance from experienced instructors.",
           },
           {
-            question: "What is DataScience?",
+            question:
+              "What topics are covered in the Digital Regenesys Cyber Security course?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "The Digital Regenesys Cybersecurity course includes many topics, including network security, ethical hacking, cryptography, secure coding, incident response, and more.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question:
+              "What career opportunities are available after completing the Digital Regenesys cyber security course?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "The demand for cybersecurity professionals is increasing. After completing the Digital Regenesys cyber security course, individuals can pursue career opportunities such as security analyst, network administrator, ethical hacker, or even a cyber security consultant.",
           },
         ],
       },
       {
-        heading: "Heding 4",
+        heading: "Artificial Intelligence",
         faqs: [
           {
-            question: "What is DataScience?",
+            question: "Who should take an Artificial Intelligence course?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "AI courses are suitable for anyone interested in learning about Artificial Intelligence, whether you have a technical background or not. These courses cater to beginners and professionals looking to enhance their skills.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question: "What are the prerequisites for an AI course?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "There are no prerequisites for pursuing the Digital Regenesys Artificial Intelligence course, but a basic understanding of mathematics, programming, and statistics is usually helpful in grasping concepts effectively.",
           },
           {
-            question: "What is DataScience?",
+            question: "What will I learn in this AI course?",
             answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
+              "In an AI course, you'll learn the fundamentals of AI, including machine learning, neural networks, natural language processing, and more. You'll also gain hands-on experience through practical projects.",
           },
           {
-            question: "How important is social media in DataScience?",
+            question:
+              "What are the career prospects after completing the Digital Regenesys Artificial Intelligence course?",
             answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
-          },
-        ],
-      },
-      {
-        heading: "Heding 5",
-        faqs: [
-          {
-            question: "What is DataScience?",
-            answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
-          },
-          {
-            question: "How important is social media in DataScience?",
-            answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
-          },
-          {
-            question: "What is DataScience?",
-            answer:
-              "Digital marketing involves promoting products or services using digital technologies.",
-          },
-          {
-            question: "How important is social media in DataScience?",
-            answer:
-              "Social media plays a crucial role in digital marketing by connecting businesses with their audience.",
+              "The demand for AI professionals is rapidly growing across various industries, including healthcare, finance, and technology. Completing the Digital Regenesys Artificial Intelligence course can open doors to exciting career paths as data scientists, machine learning engineers, AI researchers, and more.",
           },
         ],
       },
     ],
+  },
+  ToolsCoveredData: {
+    ...ToolsCoveredData,
+  },
+  AdmiteCompaniesData: {
+    ...AdmiteCompaniesData,
+  },
+  allCourseList: {
+    ...allCourseList,
+  },
+  AllCourcesCardData: {
+    ...AllCourcesCardData,
+  },
+  StudentReviewData: {
+    ...StudentReviewData,
+  },
+  FacultyData: {
+    ...FacultyData,
+  },
+  LearnersBenefitData: {
+    ...LearnersBenefitData,
+  },
+  AllCoursesDynamicData: {
+    ...AllCoursesDynamicData,
+  },
+  homeSliderBannerData: {
+    ...homeSliderBannerData,
   },
 };
 

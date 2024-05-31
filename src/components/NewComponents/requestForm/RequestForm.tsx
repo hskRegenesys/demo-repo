@@ -27,7 +27,6 @@ function RequestForm(props: any) {
   const [formInteraction, setFormInteraction] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
-
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
     setCountryData(countryData);
@@ -65,7 +64,6 @@ function RequestForm(props: any) {
     handleSubmit,
   } = hookForm;
 
-
   const programmeOfInterest = watch("Programme_Of_Interest");
 
   const onSubmit = async (data: any, e: React.FormEvent<HTMLFormElement>) => {
@@ -98,7 +96,7 @@ function RequestForm(props: any) {
       const response = await courseService.downloadBrochure(brochureName?.name);
       setSubmitted(true);
       toast.success("Thank you for applying! We will get back to you.", {
-        position: toast.POSITION.TOP_RIGHT,
+        position: "top-right",
         autoClose: 3000,
       });
       props.onFormSubmit();
@@ -115,7 +113,7 @@ function RequestForm(props: any) {
           )
         : setSubmitted(true);
       toast.success(`Thank you for applying! We will get back to you.`, {
-        position: toast.POSITION.TOP_RIGHT,
+        position: "top-right",
         autoClose: 3000,
         className: Styles.tost,
       });
@@ -180,7 +178,6 @@ function RequestForm(props: any) {
     setFormInteraction(true);
     mixpanel.track("partial_submitted");
   };
-
 
   return (
     <div className={Styles.RequestFormStyle}>
@@ -262,7 +259,6 @@ function RequestForm(props: any) {
                   type="hidden"
                   {...register("Phone", {
                     required: "*Phone number is Required",
-                    
                   })}
                 />
                 <PhoneInput
@@ -273,24 +269,22 @@ function RequestForm(props: any) {
                   value={watch("Phone")}
                   {...register("Phone", {
                     required: "*Phone number is Required",
-                    
                   })}
                   onChange={(e) => {
                     const phoneNumber = e ? e.toString() : "";
-                      const isValid = validator.isMobilePhone(phoneNumber);
-                      if (isValid) {
-                        setValue("Phone", phoneNumber);
-                        setPhoneNumber(phoneNumber);
-                        mixpanel.track("Phone Changed", {
-                          InputName: "Phone",
-                          Filled: phoneNumber !== "",
-                          newValue: phoneNumber,
-                        });
-                        setPhoneNumberError("");
-                      } else {
-                        setPhoneNumberError("Valid phone number Required");
-                      }
-                    
+                    const isValid = validator.isMobilePhone(phoneNumber);
+                    if (isValid) {
+                      setValue("Phone", phoneNumber);
+                      setPhoneNumber(phoneNumber);
+                      mixpanel.track("Phone Changed", {
+                        InputName: "Phone",
+                        Filled: phoneNumber !== "",
+                        newValue: phoneNumber,
+                      });
+                      setPhoneNumberError("");
+                    } else {
+                      setPhoneNumberError("Valid phone number Required");
+                    }
                   }}
                   onBlur={() => {
                     trigger("Phone");
@@ -298,20 +292,23 @@ function RequestForm(props: any) {
                   className={`inputForm ${phoneNumberError && "invalid"} ${
                     Styles.inputForm
                   }`}
-                  
                 />
-       {phoneNumberError ? (
+                {phoneNumberError ? (
                   <small className={Styles.smallText}>{phoneNumberError}</small>
-                ) :errors?.Phone && (
-                  <small className={Styles.smallText}>
-                    {errors?.Phone?.message}
-                  </small>
-                ) }
+                ) : (
+                  errors?.Phone && (
+                    <small className={Styles.smallText}>
+                      {errors?.Phone?.message}
+                    </small>
+                  )
+                )}
               </div>
             </div>
             <div className=" ">
               <div className="">
                 <select
+                  aria-labelledby="lbl-main-menu-mob"
+                  name="Course"
                   value={programmeOfInterest}
                   className={`select-course form-select${
                     errors?.Programme_Of_Interest &&

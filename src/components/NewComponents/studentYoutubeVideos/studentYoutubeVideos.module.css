@@ -1,4 +1,4 @@
-.container {
+.studentYoutubeContainer {
   text-align: center;
   max-width: 1224px;
   margin: 0 auto;
@@ -9,11 +9,11 @@
   color: var(--yocket-com-ebony-clay, #2b3340);
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
   margin-bottom: 56px;
+  padding: 0px 24px;
 }
 
 .videoContainer {
@@ -44,7 +44,7 @@
 }
 .swiperStyle {
   --add-bottom: 50px;
-  padding-bottom: var(--add-bottom);
+  padding-bottom: var(--add-bottom) !important;
   align-items: center;
 }
 .swiperStyle [class^="swiper-button-"] {
@@ -58,8 +58,8 @@
 
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
-  .container {
-    margin: 44px 16px 0px 16px;
+  .studentYoutubeContainer {
+    margin: 44px 0px 0px;
     padding-top: 0px;
   }
   .title {
@@ -67,11 +67,11 @@
     font-size: 24px;
   }
   .videoContainer {
-    max-width: 328px;
     margin: 0 auto;
   }
   .iframe {
-    width: 328px;
+    width: 100%;
+    max-width: 340px;
     height: 352px;
     border-radius: 12px;
   }

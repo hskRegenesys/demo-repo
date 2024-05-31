@@ -68,7 +68,7 @@ const ToolsCovered = ({ courseDetails }) => {
                             layout="intrinsic"
                             width="320"
                             height="178"
-                            alt=""
+                            alt="Tools Covered"
                           />
                         </figure>
                       </div>

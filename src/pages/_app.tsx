@@ -8,8 +8,6 @@ import "@/vendors/linoor-icons.css";
 import "@/vendors/reey-font.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
-import "react-circular-progressbar/dist/styles.css";
-// import "react-modal-video/css/modal-video.min.css";
 import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
 import { leadService } from "src/services";
@@ -26,12 +24,19 @@ import { useEffect, useState } from "react";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const router = useRouter();
+  const [currentUtmUrl, setCurrentUtmUrl] = useState("");
   const { utm_source, utm_medium, utm_campaign, utm_content, id } =
     router.query;
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
 
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentUtmUrl(window.location.href);
+    }
+  }, []);
 
   return (
     <ContextProvider>
@@ -42,6 +47,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.localbusiness} />
       {/* Pixel code script start */}
       <Script
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           !function(f,b,e,v,n,t,s)
@@ -77,6 +83,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Google Tag Manager GTM code nanddeep start */}
       <Script
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -123,6 +130,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       />
 
       <Script
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];
@@ -179,6 +187,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       <noscript>
         <img
           height="1"
+          alt=""
           width="1"
           style={{ display: "none", visibility: "hidden" }}
           src="https://www.facebook.com/tr?id=613242390822464&ev=PageView&noscript=1"
@@ -187,6 +196,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       <noscript>
         <img
+          alt=""
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
@@ -224,7 +234,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         }}
       /> */}
 
-      <Script
+      {/* <Script
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
@@ -246,7 +256,8 @@ const MyApp = ({ Component, pageProps }: any) => {
         const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
         const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
         const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
-       
+        const utmUrl = '${currentUtmUrl}'
+
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -320,21 +331,15 @@ const MyApp = ({ Component, pageProps }: any) => {
               }
             break;
             case "Mobile Number":     
-              if (!item?.answer?.startsWith("+")) {
-                  const countryCode = getCountryCode(salesForceData?.country);
-                  salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
-                  leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
-              } else {
-                let mobileNumber = "";
-              for (let char of item?.answer) {
-                  if (char !== ' ') {
-                    mobileNumber += char;
-                  }
-              } 
-              salesForceData.mobile = mobileNumber;
-                  leadsData.Phone = mobileNumber;
+            if (!item?.answer?.startsWith("+")) {
+              const countryCode = getCountryCode(salesForceData?.country);
+              salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+              leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
+             } else {
+              salesForceData.mobile = item.answer;
+              leadsData.Phone = question.answer;
               }
-              break;   
+            break;
             case "Course you are looking for":
               salesForceData.interest = item.answer;
               leadsData.Interested_Topic = item.answer;
@@ -400,6 +405,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
         const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
         const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
+        const utmUrl = '${currentUtmUrl}'
         
         const salesForceNewData = {
           domain: "crm",
@@ -474,21 +480,15 @@ const MyApp = ({ Component, pageProps }: any) => {
                 }
               break;
               case "Mobile Number":     
-              if (!question?.answer?.startsWith("+")) {
-                  const countryCode = getCountryCode(salesForceNewData?.country);
-                  salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
-                  leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
-              } else {
-                let newMobileNumber = "";
-              for (let char of question?.answer) {
-                  if (char !== ' ') {
-                    newMobileNumber += char;
-                  }
-              } 
-                  salesForceNewData.mobile = newMobileNumber;
-                  leadsNewData.Phone = newMobileNumber;
-              }
-              break;   
+                if (!question?.answer?.startsWith("+")) {
+                 const countryCode = getCountryCode(salesForceNewData?.country);
+                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+                 leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
+             } else {
+                 salesForceNewData.mobile = question.answer;
+                 leadsNewData.Phone = question.answer;
+             }
+              break;    
               case "Course you are looking for":
                 salesForceNewData.interest = question.answer;
                 leadsNewData.Interested_Topic = question.answer;
@@ -543,7 +543,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       };
     `,
         }}
-      />
+      /> */}
 
       {/* Google Tag Script End */}
     </ContextProvider>

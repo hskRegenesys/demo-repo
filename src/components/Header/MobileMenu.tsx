@@ -31,23 +31,24 @@ const MobileMenu = ({ onePage = false }) => {
           <div className="side-menu__top">
             <div className="logo-box-mobile">
               <div className="logo">
-                <Link href="/">
+                {/* <Link href="/">
                   <a>
-                    {/* <Image
+                    <Image
                       alt="Digital Regenesys"
                       id="thm-logo"
                       src="/assets/images/logo.png"
-                    /> */}
+                    />
                   </a>
-                </Link>
+                </Link> */}
               </div>
             </div>
 
             <a
               onClick={toggleMenu}
-              className="side-menu__toggler side-menu__close-btn"
+              className="side-menu__toggler side-menu__close-btn text-black"
+              style={{ fontSize: "30px" }}
             >
-              <Image src={icon} alt="" />
+              &times;
             </a>
           </div>
 

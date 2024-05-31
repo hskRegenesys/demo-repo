@@ -279,31 +279,34 @@ const NavItem = (props: any) => {
                     activeDropdown === navItem.name ? "active" : ""
                   }`}
                 >
-                  <Link href={navItem.href}>
-                    <a
-                      className="nav-link"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Image
-                        layout="intrinsic"
-                        width="24"
-                        height="24"
-                        src={mobileIcons[id]}
-                      />
-                      <span
-                        className="m-2 "
-                        style={{
-                          color:
-                            activeDropdown === navItem.name ? "#008554" : "",
-                        }}
-                      >
-                        {navItem.name}
-                      </span>
-                      {navItem.subNavItems &&
-                        navItem.subNavItems.length > 0 && (
+                  <div className="nav-link new-mobile-nav-wrapper">
+                    <Link href={navItem.href}>
+                      <a>
+                        <div className="mobile-nav-img-title">
+                          <Image
+                            layout="intrinsic"
+                            width="24"
+                            height="24"
+                            alt="Mobile Icon"
+                            src={mobileIcons[id]}
+                          />
+                          <span
+                            className="m-2"
+                            style={{
+                              color:
+                                activeDropdown === navItem.name
+                                  ? "#008554"
+                                  : "",
+                            }}
+                          >
+                            {navItem.name}
+                          </span>
+                        </div>
+                      </a>
+                    </Link>
+                    {navItem.subNavItems &&
+                      navItem?.subNavItems?.length > 0 && (
+                        <div>
                           <span
                             className="fa fa-angle-right me-2"
                             onClick={() => handleDropdownClick(navItem.name)}
@@ -311,9 +314,9 @@ const NavItem = (props: any) => {
                               marginLeft: "122px",
                             }}
                           ></span>
-                        )}
-                    </a>
-                  </Link>
+                        </div>
+                      )}
+                  </div>
                   {activeDropdown === navItem.name && (
                     <div className="drop-down-1">
                       <ul>
@@ -330,24 +333,17 @@ const NavItem = (props: any) => {
                           }
                           onClick={toggleCoursesDropdown1}
                         >
-                          <span
-                            className="fa fa-circle"
-                            style={{
-                              fontSize: "8px",
-                              paddingRight: "10px",
-                            }}
-                          ></span>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              gap: "59px",
-                              fontSize: "14px",
-                            }}
-                          >
+                          <div className="inner-dropdown-li-dot">
+                            <span
+                              className="fa fa-circle"
+                              style={{
+                                fontSize: "8px",
+                                paddingRight: "10px",
+                              }}
+                            ></span>
                             Certificate Courses
-                            <span className="fa fa-angle-right"></span>
                           </div>
+                          <span className="fa fa-angle-right"></span>
                         </li>
                         {showCoursesDropdown1 && (
                           <div>
@@ -386,14 +382,15 @@ const NavItem = (props: any) => {
                                                 paddingRight: "10px",
                                               }}
                                             ></span>
-
                                             <Link href={subNavItem.href}>
-                                              {subNavItem.name}
+                                              <a onClick={toggleMenu}>
+                                                {subNavItem.name}
+                                              </a>
                                             </Link>
                                           </div>
 
                                           {subNavItem.subItems &&
-                                            subNavItem.subItems.length > 0 && (
+                                            subNavItem.subItems?.length > 0 && (
                                               <span
                                                 className="fa fa-angle-right"
                                                 onClick={() =>
@@ -456,28 +453,21 @@ const NavItem = (props: any) => {
                           }
                           onClick={toggleCoursesDropdown2}
                         >
-                          <span
-                            className="fa fa-circle"
-                            style={{
-                              fontSize: "8px",
-                              paddingRight: "10px",
-                            }}
-                          ></span>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              gap: "30px",
-                              fontSize: "14px",
-                            }}
-                          >
+                          <div className="inner-dropdown-li-dot">
+                            <span
+                              className="fa fa-circle"
+                              style={{
+                                fontSize: "8px",
+                                paddingRight: "10px",
+                              }}
+                            ></span>
                             Academic Programmes
-                            <span className="fa fa-angle-right"></span>
                           </div>
+                          <span className="fa fa-angle-right"></span>
                         </li>
                         {showCoursesDropdown2 && (
                           <div className="drop-down-2">
-                            <div className="degreeCoursesData">
+                            <div className="degreeCoursesData mobile-academic-programme">
                               <ul>
                                 {degreeProgrammesData.map((program, index) => (
                                   <li
@@ -492,14 +482,25 @@ const NavItem = (props: any) => {
                                       handleDropdownToggle(program.courseName)
                                     }
                                   >
-                                    <a
+                                    <div
                                       style={{
                                         display: "flex",
                                         justifyContent: "space-between",
                                         fontSize: "12px",
+                                        alignItems: "center",
                                       }}
+                                      className={
+                                        selectedProgram === program.courseName
+                                          ? "colorActiveGreen"
+                                          : ""
+                                      }
                                     >
-                                      <div style={{ display: "flex" }}>
+                                      <div
+                                        style={{
+                                          display: "flex",
+                                          alignItems: "center",
+                                        }}
+                                      >
                                         <span
                                           className="fa fa-circle"
                                           style={{
@@ -515,7 +516,7 @@ const NavItem = (props: any) => {
                                         </Link>
                                       </div>
                                       <span className="fa fa-angle-down"></span>
-                                    </a>
+                                    </div>
                                     {selectedProgram === program.courseName && (
                                       <a className="inlineDegreeCourse">
                                         {program.subDegreePrograms.map(
@@ -564,24 +565,17 @@ const NavItem = (props: any) => {
                           }
                           onClick={toggleCoursesDropdown3}
                         >
-                          <span
-                            className="fa fa-circle"
-                            style={{
-                              fontSize: "8px",
-                              paddingRight: "10px",
-                            }}
-                          ></span>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              gap: "44px",
-                              fontSize: "14px",
-                            }}
-                          >
+                          <div className="inner-dropdown-li-dot">
+                            <span
+                              className="fa fa-circle"
+                              style={{
+                                fontSize: "8px",
+                                paddingRight: "10px",
+                              }}
+                            ></span>
                             Training Programmes
-                            <span className="fa fa-angle-right"></span>
                           </div>
+                          <span className="fa fa-angle-right"></span>
                         </li>
                         {showCoursesDropdown3 && (
                           <div className="drop-down-3">

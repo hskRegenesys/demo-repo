@@ -1,7 +1,7 @@
 /* breadcrumbsDR.module.css */
 
 .BreadcrumbsDR {
-  background: #e5ffed;
+  background: #f2fff6;
   padding: 16px 0px 32px 0px;
   margin-top: 70px;
 }
@@ -38,9 +38,8 @@
   display: inline-block;
   margin-right: 8px;
   color: var(--Light-Text-Secondary, #697386);
-  font-family: Montserrat;
+
   font-size: 14px;
-  font-weight: 600;
 }
 
 .fontCapitalized {
@@ -50,7 +49,7 @@
 .active {
   font-weight: bold;
   color: var(--Light-Text-Green, #008554);
-  font-family: Montserrat;
+
   font-size: 14px;
   font-weight: 600;
 }

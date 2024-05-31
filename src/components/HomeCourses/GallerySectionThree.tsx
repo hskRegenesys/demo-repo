@@ -19,7 +19,7 @@ const GallerySectionThree = () => {
               <div className="gallery-item-three">
                 <Image
                   src={`/assets/images/update-1-12-2020/projects/${image}`}
-                  alt=""
+                  alt="Gallery"
                 />
                 <div className="gallery-item-three__content">
                   <p>{tagline}</p>

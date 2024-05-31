@@ -18,7 +18,7 @@ import {
 
 import { allCourseList } from "@/data/courseData";
 
-interface CardData {
+interface OurCoursesCardData {
   code: any;
   id: number;
   parentId: number | null;
@@ -30,7 +30,7 @@ interface CardData {
 }
 
 interface CourseData {
-  [key: string]: CardData[];
+  [key: string]: OurCoursesCardData[];
 }
 
 interface OurCoursesData {
@@ -69,11 +69,10 @@ const OurCourses: React.FC<OurCoursesProps> = ({
   }>({});
 
   useEffect(() => {
-    // Initialize the selected category with the first category
     const courseCategories = Object.keys(data?.OurCoursesData?.Courses || {});
     if (courseCategories.length > 0) {
       setSelectedCategory(courseCategories[0]);
-      // Set default open state for the first dropdown
+
       setMobileDropdownState((prevState) => ({
         ...prevState,
         [courseCategories[0]]: true,
@@ -83,10 +82,9 @@ const OurCourses: React.FC<OurCoursesProps> = ({
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
-    // Close all other dropdowns and toggle the open/close state of the selected dropdown
+
     setMobileDropdownState((prevState) => {
       const newState = { [category]: !prevState[category] };
-      // Close all other dropdowns
       Object.keys(prevState).forEach((key) => {
         if (key !== category) {
           newState[key] = false;
@@ -184,23 +182,23 @@ const OurCourses: React.FC<OurCoursesProps> = ({
         <div className={Styles.downSection}>
           {selectedCategory &&
             data.OurCoursesData.Courses[selectedCategory].map(
-              (card: CardData, index: number) => (
+              (item: OurCoursesCardData, index: number) => (
                 <div key={index} className={Styles.card}>
-                  <div className={Styles.cardHeading}>{card.cardProgram}</div>
+                  <div className={Styles.cardHeading}>{item.cardProgram}</div>
 
                   <div className={Styles.imgCardContainer}>
                     <div className={Styles.cardStarContainer}>
                       <img
                         src={data.OurCoursesData.cardTimeIcon}
-                        alt="cardStar"
+                        alt="card Star"
                         className={Styles.cardStarIcon}
                       />
                       <span className={Styles.cardStarText}>4.6 Ratings</span>
                     </div>
                     <img
-                      src={card.cardImg}
-                      alt={card.ImgAlt}
-                      title={card.ImgAlt}
+                      src={item.cardImg}
+                      alt="card Star"
+                      title={item.ImgAlt}
                       className={Styles.cardImage}
                     />
                   </div>
@@ -213,7 +211,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                           className={Styles.cardIcon}
                         />
                       </div>
-                      <div className={Styles.boldText}>{card.cardCount}</div>
+                      <div className={Styles.boldText}>{item.cardCount}</div>
                       <div className={Styles.normalText}>
                         {data.OurCoursesData.cardStudentEnrollmentText}
                       </div>
@@ -226,7 +224,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                           className={Styles.cardIcon}
                         />
                       </div>
-                      <div className={Styles.boldText}>{card.cardTool}</div>
+                      <div className={Styles.boldText}>{item.cardTool}</div>
                       <div className={Styles.normalText}>
                         {data.OurCoursesData.cardToolsText}
                       </div>
@@ -237,10 +235,10 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                       className={Styles.learnMoreButton}
                       onClick={() =>
                         redirectCard(
-                          card.cardProgram,
-                          card.code,
-                          card.id,
-                          card.parentId
+                          item.cardProgram,
+                          item.code,
+                          item.id,
+                          item.parentId
                         )
                       }
                     >
@@ -278,7 +276,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                 {mobileDropdownState[category] ? (
                   <img
                     src={data.OurCoursesData.DropdownarrowIcon}
-                    alt="iconFaq"
+                    alt="icon Faq"
                     className={`${Styles.arrowIcon} ${
                       selectedCategory === category ? Styles.selectedarrow : ""
                     }`}
@@ -286,7 +284,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                 ) : (
                   <img
                     src={data.OurCoursesData.DropdownarrowIcon}
-                    alt="iconFaq"
+                    alt="icon Faq"
                     className={Styles.arrowIconRotate}
                   />
                 )}
@@ -313,18 +311,18 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                     },
                   }}
                 >
-                  {data.OurCoursesData.Courses[category].map((card, index) => (
+                  {data.OurCoursesData.Courses[category].map((item, index) => (
                     <SwiperSlide key={index}>
                       <div key={index} className={Styles.card}>
                         <div className={Styles.cardHeading}>
-                          {card.cardProgram}
+                          {item.cardProgram}
                         </div>
 
                         <div className={Styles.imgCardContainer}>
                           <div className={Styles.cardStarContainer}>
                             <img
                               src={data.OurCoursesData.cardTimeIcon}
-                              alt="cardStar"
+                              alt="card Star"
                               className={Styles.cardStarIcon}
                             />
                             <span className={Styles.cardStarText}>
@@ -332,9 +330,9 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                             </span>
                           </div>
                           <img
-                            src={card.cardImg}
-                            alt={card.ImgAlt}
-                            title={card.ImgAlt}
+                            src={item.cardImg}
+                            alt="card Star"
+                            title={item.ImgAlt}
                             className={Styles.cardImage}
                           />
                         </div>
@@ -348,7 +346,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                               />
                             </div>
                             <div className={Styles.boldText}>
-                              {card.cardCount}
+                              {item.cardCount}
                             </div>
                             <div className={Styles.normalText}>
                               {data.OurCoursesData.cardStudentEnrollmentText}
@@ -363,7 +361,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                               />
                             </div>
                             <div className={Styles.boldText}>
-                              {card.cardTool}
+                              {item.cardTool}
                             </div>
                             <div className={Styles.normalText}>
                               {data.OurCoursesData.cardToolsText}
@@ -375,10 +373,10 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                             className={Styles.learnMoreButton}
                             onClick={() =>
                               redirectCard(
-                                card.cardProgram,
-                                card.code,
-                                card.id,
-                                card.parentId
+                                item.cardProgram,
+                                item.code,
+                                item.id,
+                                item.parentId
                               )
                             }
                           >

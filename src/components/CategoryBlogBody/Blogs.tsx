@@ -143,6 +143,7 @@ const Blogs = () => {
                   <div>
                     <img
                       src={item.yoast_head_json.og_image[0].url}
+                      alt="Blogs Image"
                       style={{
                         height: item.yoast_head_json.og_image[0].height,
                         width: item.yoast_head_json.og_image[0].width,

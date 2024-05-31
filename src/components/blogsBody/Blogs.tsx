@@ -20,7 +20,7 @@ const Blogs = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-const sitemapData =postList?.flatMap(item=>item.posts)
+  const sitemapData = postList?.flatMap((item) => item.posts);
   const xmlOperation = async (sitemapData: any) => {
     if (!(sitemapData.length > 0)) return;
 
@@ -39,7 +39,7 @@ const sitemapData =postList?.flatMap(item=>item.posts)
   useEffect(() => {
     xmlOperation(sitemapData);
   }, [sitemapData]);
-  
+
   const postByCategory = async (
     response: Array<{
       [key: string]: number | string;

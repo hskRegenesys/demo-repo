@@ -1,6 +1,5 @@
 import { Carousel } from "antd";
 import PostContainer from "./PostContainer";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { IPostCarouselTypes, postToShow } from "./dataTypes";
 
 const PostCarousel = ({ values, screen }: IPostCarouselTypes) => {
@@ -15,8 +14,8 @@ const PostCarousel = ({ values, screen }: IPostCarouselTypes) => {
               slidesToShow={postToShow[screen]}
               slidesToScroll={1}
               dots={false}
-              nextArrow={<ChevronRight fontSize="large" />}
-              prevArrow={<ChevronLeft fontSize="large" />}
+              nextArrow={<div className="nextArrow" />}
+              prevArrow={<div className="prevArrow" />}
               autoplay
               arrows
               infinite
