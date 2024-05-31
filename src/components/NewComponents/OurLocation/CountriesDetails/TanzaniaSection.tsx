@@ -26,7 +26,7 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
           <Image
             src={OurLocationData.Tanzania.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.Tanzania.countryName}
+            alt="Flag"
             title={OurLocationData.Tanzania.countryName}
             width={50}
             height={82}
@@ -53,7 +53,7 @@ const TanzaniaSection: React.FC<TanzaniaSectionProps> = ({
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
-            alt={OurLocationData.Tanzania.countryName}
+            alt="Location"
             onMouseEnter={onMouseEnter}
             title={OurLocationData.Tanzania.countryName}
             width={14}

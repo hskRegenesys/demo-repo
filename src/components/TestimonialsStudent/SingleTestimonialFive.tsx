@@ -7,12 +7,11 @@ const SingleTestimonialFive = (props: any) => {
   return (
     <div className="item" style={{ userSelect: "none" }}>
       <div className="testimonials-five-card">
-        {/* <Image src={image} alt="" className="testimonials-five-card__image" /> */}
         <Image
           priority={true}
           className="testimonials-five-card__image"
           src={image}
-          alt=""
+          alt="Testimonials"
           layout="intrinsic"
           width="122"
           height="122"

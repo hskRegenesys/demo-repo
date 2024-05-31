@@ -155,7 +155,7 @@ const TrendingSection = () => {
                             layout="responsive"
                             width="274"
                             height="182"
-                            alt=""
+                            alt="Trending Course"
                           />
                         </figure>
                         <a

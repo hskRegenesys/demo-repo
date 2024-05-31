@@ -31,15 +31,15 @@ const MobileMenu = ({ onePage = false }) => {
           <div className="side-menu__top">
             <div className="logo-box-mobile">
               <div className="logo">
-                <Link href="/">
+                {/* <Link href="/">
                   <a>
-                    {/* <Image
+                    <Image
                       alt="Digital Regenesys"
                       id="thm-logo"
                       src="/assets/images/logo.png"
-                    /> */}
+                    />
                   </a>
-                </Link>
+                </Link> */}
               </div>
             </div>
 

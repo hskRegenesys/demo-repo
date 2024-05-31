@@ -44,17 +44,13 @@ const ExperienceSectionMobile = () => {
                 <div ref={listRef} className="gallery-item" key={id}>
                   <div className="partner-one__card">
                     <div className="partner-one__image">
-                      {/* <Image
-                        src={`/assets/images/icons/${image}`}
-                        alt=""
-                      /> */}
                       <Image
                         priority={true}
                         src={`/assets/images/icons/${image}`}
                         layout="intrinsic"
                         width="1207"
                         height="761"
-                        alt=""
+                        alt="Icon"
                       />
                     </div>
                     <div className="partner-one__content">

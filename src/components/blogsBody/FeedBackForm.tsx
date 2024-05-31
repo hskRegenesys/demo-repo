@@ -45,6 +45,7 @@ const FeedBackForm = () => {
         src="/assets/images/allImages/red-star.svg"
         width={20}
         height={20}
+        alt="Star icons"
       />
     );
   }

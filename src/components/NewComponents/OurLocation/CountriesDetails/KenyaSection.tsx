@@ -28,7 +28,7 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
           <Image
             src={OurLocationData.Kenya.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.Kenya.countryName}
+            alt="Flag"
             title={OurLocationData.Kenya.countryName}
             width={50}
             height={82}
@@ -52,7 +52,7 @@ const KenyaSection: React.FC<KenyaSectionProps> = ({
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
-            alt={OurLocationData.Kenya.countryName}
+            alt="Location"
             title={OurLocationData.Kenya.countryName}
             onMouseEnter={onMouseEnter}
             width={14}

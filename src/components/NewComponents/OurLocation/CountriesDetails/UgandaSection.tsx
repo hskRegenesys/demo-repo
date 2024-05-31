@@ -28,7 +28,7 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
           <Image
             src={OurLocationData.Uganda.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.Uganda.countryName}
+            alt="Flag"
             title={OurLocationData.Uganda.countryName}
             width={50}
             height={82}
@@ -47,21 +47,21 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
         <div
           className={`${Styles.UgandaContaryLocation} ${Styles.contaryLocation}`}
         >
+          <span className={Styles.contaryname}>
+            {OurLocationData.Uganda.countryName}
+          </span>
           <Image
             src={OurLocationData.locationPinImage}
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
-            alt={OurLocationData.Uganda.countryName}
+            alt="Location"
             title={OurLocationData.Uganda.countryName}
             onMouseEnter={onMouseEnter}
             width={14}
             height={20}
             priority
           />
-          <span className={Styles.contaryname}>
-            {OurLocationData.Uganda.countryName}
-          </span>
         </div>
       )}
     </div>

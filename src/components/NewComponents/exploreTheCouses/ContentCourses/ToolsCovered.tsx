@@ -49,7 +49,7 @@ const ToolsCovered: React.FC<ToolsCoveredProps> = ({
                 <Image
                   //src={`${imageUrl}Images/Tools/${tool.img}`}
                   src={tool.img}
-                  alt={tool.alt}
+                  alt="Tools Covered"
                   className={styles.toolImage}
                   width={144}
                   height={82}

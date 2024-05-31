@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
-const ProductCard = (props:any) => {
+const ProductCard = (props: any) => {
   const { image, title, price, stars } = props.product;
 
   return (
@@ -10,9 +10,8 @@ const ProductCard = (props:any) => {
       <div className="product-card">
         <div className="product-card__image">
           <Image
-            src={`/assets/images/update-26-01-2021/shops/${image}`
-            }
-            alt=""
+            src={`/assets/images/update-26-01-2021/shops/${image}`}
+            alt="Product Cards"
           />
           <div className="product-card__buttons">
             <Link href="/cart">

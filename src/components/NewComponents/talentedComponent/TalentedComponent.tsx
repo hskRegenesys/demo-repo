@@ -129,7 +129,7 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                         {faculty.facultyImg && (
                           <Image
                             src={faculty.facultyImg}
-                            alt={faculty.facultyName}
+                            alt="Faculty"
                             title={faculty.facultyName}
                             width={132}
                             height={132}
@@ -155,11 +155,13 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
               </Swiper>
 
               <button
+                aria-label="Arrow Button"
                 className={`swiper-button-next ${styles.nextButton}`}
                 onClick={handleNextSlide}
               ></button>
 
               <button
+                aria-label="Arrow Button"
                 className={`swiper-button-prev ${styles.prevButton}`}
                 onClick={handlePrevSlide}
               ></button>

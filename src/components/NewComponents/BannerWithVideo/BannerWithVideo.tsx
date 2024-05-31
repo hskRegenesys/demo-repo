@@ -92,7 +92,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 <Image
                   //src={`${imageUrl}${uspLocationCard.usplocationIcon}`}
                   src={uspLocationCard.usplocationIcon}
-                  alt="Icon 1"
+                  alt="Icon Location"
                   width={40}
                   height={40}
                 />
@@ -106,7 +106,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 <Image
                   //src={`${imageUrl}${uspEnrollmentCard.StudentEnrolIcon}`}
                   src={uspEnrollmentCard.StudentEnrolIcon}
-                  alt="Icon 2"
+                  alt="Icon Enroll"
                   width={40}
                   height={40}
                 />
@@ -123,7 +123,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 <Image
                   //src={`${imageUrl}${uspUpskillCard.uspBookIcon}`}
                   src={uspUpskillCard.uspBookIcon}
-                  alt="Icon 3"
+                  alt="Icon Book"
                   width={40}
                   height={40}
                 />
@@ -168,7 +168,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               className={styles.imageBanner}
               //src={`${imageUrl}${data.BannerImgDesktop}`}
               src={data.BannerImgDesktop}
-              alt={`Banner for ${coursePageName}`}
+              alt={"Banner for Course"}
             />
             <div
               className={styles.playIconContainer}

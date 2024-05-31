@@ -190,14 +190,14 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                     <div className={Styles.cardStarContainer}>
                       <img
                         src={data.OurCoursesData.cardTimeIcon}
-                        alt="cardStar"
+                        alt="card Star"
                         className={Styles.cardStarIcon}
                       />
                       <span className={Styles.cardStarText}>4.6 Ratings</span>
                     </div>
                     <img
                       src={item.cardImg}
-                      alt={item.ImgAlt}
+                      alt="card Star"
                       title={item.ImgAlt}
                       className={Styles.cardImage}
                     />
@@ -276,7 +276,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                 {mobileDropdownState[category] ? (
                   <img
                     src={data.OurCoursesData.DropdownarrowIcon}
-                    alt="iconFaq"
+                    alt="icon Faq"
                     className={`${Styles.arrowIcon} ${
                       selectedCategory === category ? Styles.selectedarrow : ""
                     }`}
@@ -284,7 +284,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                 ) : (
                   <img
                     src={data.OurCoursesData.DropdownarrowIcon}
-                    alt="iconFaq"
+                    alt="icon Faq"
                     className={Styles.arrowIconRotate}
                   />
                 )}
@@ -322,7 +322,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                           <div className={Styles.cardStarContainer}>
                             <img
                               src={data.OurCoursesData.cardTimeIcon}
-                              alt="cardStar"
+                              alt="card Star"
                               className={Styles.cardStarIcon}
                             />
                             <span className={Styles.cardStarText}>
@@ -331,7 +331,7 @@ const OurCourses: React.FC<OurCoursesProps> = ({
                           </div>
                           <img
                             src={item.cardImg}
-                            alt={item.ImgAlt}
+                            alt="card Star"
                             title={item.ImgAlt}
                             className={Styles.cardImage}
                           />

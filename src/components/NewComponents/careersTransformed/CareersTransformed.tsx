@@ -69,6 +69,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
             src="/assets/images/allImages/ct-frame-down.webp"
             width={198}
             height={80}
+            alt="Career"
           />
         </div>
       </div>
@@ -76,33 +77,6 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
         <h2 className={Styles.heading}>{heading}</h2>
         <h2 className={Styles.secondHeading}>{secondHeading}</h2>
       </div>
-
-      {/* <div className={Styles.cardsContainer}>
-        {[card1, card2, card3, card4].map((card, index) => (
-          <div key={index} className={Styles.card}>
-            <div className={Styles.cardTop}>
-              {"percentage" in card && (
-                <p className={Styles.cardtext1}>{card.percentage}</p>
-              )}
-              {"rating" in card && (
-                <>
-                  <p className={Styles.cardtext1}>{card.rating}</p>
-                  {card.ratingImg && (
-                    <img
-                      className={Styles.ratingImg}
-                      src={card.ratingImg}
-                      alt="Rating"
-                    />
-                  )}
-                </>
-              )}
-            </div>
-            <div className={Styles.cardBottom}>
-              <p className={Styles.cardText}>{card.text}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
 
       <div className={Styles.swiperContainer}>
         <Swiper className={Styles.swiperStyle} {...swiperSettings}>
@@ -113,7 +87,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                   <div className={Styles.profileImg}>
                     <Image
                       src={swiperCard.profileImg}
-                      alt={swiperCard.name}
+                      alt="Career"
                       title={swiperCard.name}
                       width={80}
                       height={80}
@@ -124,58 +98,12 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                     <p className={Styles.role}>{swiperCard.role}</p>
                   </div>
                 </div>
-                {/* <div className={Styles.smallCard}>
-                  <div className={Styles.smallCardIndide}>
-                    <img
-                      className={Styles.riseImg}
-                      src={swiperCard.riseImg}
-                      alt="Rise"
-                    />
-                    <h2>50%</h2>
-                  </div>
-                  <p className={Styles.increment}>Increment in salary</p>
-                </div>
-                <div
-                  className={Styles.playVideo}
-                  onClick={() =>
-                    handleEnrollButtonVidio(swiperCard.StudentVidio)
-                  }
-                >
-                  <div className={Styles.Vidio}>
-                    <img src={swiperCard.playImg} alt="Rise" />
-                  </div>
-
-                  <span>Hear My Story</span>
-                </div> */}
               </div>
               <div className={Styles.contentSection}>
                 <p className={Styles.experienceText}>
                   {swiperCard.experienceText}
                 </p>
               </div>
-              {/* <div className={Styles.downSection}>
-                <div className={Styles.roleCard1}>
-                  <p className={Styles.roleText}>{swiperCard.firstRole}</p>
-                  <img
-                    className={Styles.companyImg}
-                    src={swiperCard.companyFirstRoleImg}
-                    alt="Company"
-                  />
-                </div>
-                <img
-                  className={Styles.arrowImg}
-                  src="/assets/images/new-component-assets/Arrow.webp"
-                  alt="Arrow"
-                />
-                <div className={Styles.roleCard2}>
-                  <p className={Styles.roleText}>{swiperCard.secondRole}</p>
-                  <img
-                    className={Styles.companyImg}
-                    src={swiperCard.companySecondRoleImg}
-                    alt="Company"
-                  />
-                </div>
-              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
@@ -187,6 +115,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
             src="/assets/images/allImages/ct-frame-up.webp"
             width={198}
             height={80}
+            alt="Career"
           />
         </div>
       </div>

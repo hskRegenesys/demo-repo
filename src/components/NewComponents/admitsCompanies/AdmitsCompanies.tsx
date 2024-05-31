@@ -52,7 +52,7 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
             <SwiperSlide key={index} className={Styles.admitsCard}>
               <Image
                 src={item.AdmitsImage}
-                alt={`admitImg ${index}`}
+                alt="admit"
                 className={Styles.admitImages}
                 width={100}
                 height={60}

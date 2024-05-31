@@ -18,7 +18,7 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
         <Image
           src={`${imageUrl}Icons/DR-logo.webp`}
           // src="/assets/images/new-component-assets/DR_Logo.svg"
-          alt="LogoIpsum"
+          alt="Logo footer"
           width={174}
           height={60}
         />
@@ -96,7 +96,7 @@ const FooterContent3: React.FC = () => (
       </p>
       <ul>
         <a href="https://www.digitalregenesys.com/about">
-          <li>Our Story</li>{" "}
+          <li>Our Story</li>
         </a>
 
         <a href="https://www.digitalregenesys.com/blog">
@@ -126,12 +126,12 @@ const FooterContent4: React.FC = () => {
                 <Image
                   src={`${imageUrl}Icons/facebook-icon.svg`}
                   // src="/assets/images/new-component-assets/facebook-icon.svg"
-                  alt="Facebook"
+                  alt="Facebook icon"
                   width={14}
                   height={14}
                 />
               </span>
-              <span>Facebook</span>{" "}
+              <span>Facebook</span>
             </div>
           </a>
 
@@ -144,12 +144,12 @@ const FooterContent4: React.FC = () => {
                 <Image
                   src={`${imageUrl}Icons/youtube-icon.svg`}
                   // src="/assets/images/new-component-assets/youtube-icon.png"
-                  alt="Youtube"
+                  alt="Youtube icon"
                   width={14}
                   height={14}
                 />
               </span>
-              <span>Youtube</span>{" "}
+              <span>Youtube</span>
             </div>
           </a>
           <a
@@ -157,18 +157,17 @@ const FooterContent4: React.FC = () => {
             href="https://www.instagram.com/digital_regenesys/"
             className={styles.Icons}
           >
-            {" "}
             <div className={styles.socialIconsText}>
               <span className={styles.Icons}>
                 <Image
                   src={`${imageUrl}Icons/insta-icon.svg`}
                   // src="/assets/images/new-component-assets/insta-icon.svg"
-                  alt="Instagram"
+                  alt="Instagram icon"
                   width={14}
                   height={14}
-                />{" "}
+                />
               </span>
-              <span>Instagram</span>{" "}
+              <span>Instagram</span>
             </div>
           </a>
         </div>

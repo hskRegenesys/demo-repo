@@ -23,7 +23,7 @@ const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
               <Image
                 src={image.img}
                 // src={`/assets/images/clients/${image.img}`}
-                alt={image.alt}
+                alt="Tools Covered"
                 title={image.alt}
                 width={148}
                 height={82}

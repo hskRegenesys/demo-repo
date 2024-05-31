@@ -30,7 +30,7 @@ const WhyChooseDR: React.FC<WhyChooseDRProps> = ({
               <Image
                 // src={card.cardImg}
                 src={`${imageUrl}${card.cardImg}`}
-                alt={`Card ${index + 1}`}
+                alt="Card Why choose"
                 width={52}
                 height={52}
               />

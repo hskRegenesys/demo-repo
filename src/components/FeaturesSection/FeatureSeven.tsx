@@ -66,14 +66,13 @@ const FeatureSeven = ({ courseDetails }: any) => {
                 <div className="feature-seven-card">
                   <div className="feature-seven-card__inner">
                     <div className="feature-seven-card__image">
-                      {/* <Image src={`/assets/images/faculties/${image}`} alt="" /> */}
                       <Image
                         priority={true}
                         src={`/assets/images/faculties/${image}`}
                         layout="intrinsic"
                         width="300"
                         height="300"
-                        alt=""
+                        alt="Faculty"
                       />
                     </div>
                     <div className="feature-seven-card__content">

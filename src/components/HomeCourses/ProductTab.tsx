@@ -123,7 +123,7 @@ const ProductTab = ({ courses = [], current }: any) => {
                         layout="responsive"
                         width="274"
                         height="182"
-                        alt=""
+                        alt="Gallery"
                       />
                     </figure>
                     <a

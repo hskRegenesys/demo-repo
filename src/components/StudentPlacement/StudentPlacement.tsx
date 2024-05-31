@@ -61,7 +61,7 @@ const StudentPlacement = ({ className = "" }) => {
                       src={`/assets/images/clients/${
                         className.includes("dark") ? "dark-1.png" : image
                       }`}
-                      alt=""
+                      alt="Placement"
                       layout="intrinsic"
                       width="240"
                       height="150"

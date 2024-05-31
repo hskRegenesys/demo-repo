@@ -306,7 +306,13 @@ function RequestForm(props: any) {
             </div>
             <div className=" ">
               <div className="">
+                <label id="lbl-main-menu-mob" htmlFor="Course">
+                  Course you are looking for *
+                </label>
+
                 <select
+                  aria-labelledby="lbl-main-menu-mob"
+                  name="Course"
                   value={programmeOfInterest}
                   className={`select-course form-select${
                     errors?.Programme_Of_Interest &&

@@ -40,7 +40,7 @@ const PricingAcrossCountries: React.FC<PricingAcrossCountriesProps> = ({
                 <Image
                   //src={`${imageUrl}${card.contaryFlag}`}
                   src={card.contaryFlag}
-                  alt={card.contaryName}
+                  alt="Pricing"
                   title={card.contaryName}
                   width={48}
                   height={48}
@@ -54,7 +54,7 @@ const PricingAcrossCountries: React.FC<PricingAcrossCountriesProps> = ({
                   <Image
                     //src={`${imageUrl}${PriceIcon}`}
                     src={PriceIcon}
-                    alt="Rate Icon"
+                    alt="Pricing"
                     width={24}
                     height={24}
                   />
@@ -66,7 +66,7 @@ const PricingAcrossCountries: React.FC<PricingAcrossCountriesProps> = ({
                   <Image
                     //src={`${imageUrl}${durationIcon}`}
                     src={durationIcon}
-                    alt="Duration Icon"
+                    alt="Pricing"
                     width={24}
                     height={24}
                   />

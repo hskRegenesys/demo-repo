@@ -113,11 +113,10 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         <div className={Styles.rocketImg}>
           <Image
             src="/assets/images/allImages/Rocket-frame.svg"
-            alt="rocket"
+            alt="Course"
             width={1440}
             height={550}
             layout="responsive"
-            loading="eager"
           />
         </div>
         <div className={Styles.cardContainer}>
@@ -154,23 +153,14 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                     {parentCourse.cardProgram}
                   </div>
                   <div className={Styles.imgCardContainer}>
-                    {/* <div className={Styles.cardStarContainer}>
-                    <img
-                      src={AllCourcesCardData.cardStarIcon}
-                      alt="cardStar"
-                      className={Styles.cardStarIcon}
-                    />
-                    <span className={Styles.cardStarText}>4.6 Ratings</span>
-                  </div> */}
                     <Image
                       // src={parentCourse.cardImg}
                       src={parentCourse.cardImg}
-                      alt={parentCourse.ImgAlt}
+                      alt="Course"
                       title={parentCourse.ImgAlt}
                       className={Styles.cardImage}
                       width={346}
                       height={220}
-                      loading="eager"
                     />
                   </div>
                   <div className={Styles.textContainer}>

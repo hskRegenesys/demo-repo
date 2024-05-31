@@ -65,7 +65,7 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                       <Image
                         // src={data.arrowIcon}
                         src={`${imageUrl}Icons/arrow_drop_down.svg`}
-                        alt="iconFaq"
+                        alt="icon Faq"
                         className={`${Styles.arrowIcon} ${
                           selectedQuestion === index ? Styles.selectedarrow : ""
                         }`}
@@ -152,7 +152,7 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                 >
                   <Image
                     src={`${imageUrl}Icons/arrow_drop_down.svg`}
-                    alt="iconFaq"
+                    alt="icon Faq"
                     width={20}
                     height={20}
                   />
@@ -180,7 +180,7 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                           >
                             <Image
                               src={`${imageUrl}Icons/arrow_drop_down.svg`}
-                              alt="iconFaq"
+                              alt="icon Faq"
                               width={20}
                               height={20}
                             />
