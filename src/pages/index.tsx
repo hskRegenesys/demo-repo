@@ -6,6 +6,7 @@ import Layout from "@/components/Layout/Layout";
 import _ from "lodash";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import MobileMenu from "@/components/Header/MobileMenu";
+import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
 
 // const UspSection = dynamic(
 //   () => import("@/components/NewComponents/uspSection/UspSection")
@@ -163,6 +164,8 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
         LearnersBenefitData={homePageData?.LearnersBenefitData}
       />
       <ConnectContainer onFormSubmit={() => {}} />
+      <StudentYoutubeVideos />
+
       <BlogSection data={homePageData?.BlogSectionDataHome} />
       <LearnersSupport
         data={homePageData?.LearnersSupportSectionData}
