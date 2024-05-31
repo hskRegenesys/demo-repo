@@ -53,6 +53,8 @@ const OurLocation: React.FC = () => {
   };
 
   const shouldRenderViewMore = !isExpanded && paraText.length > maxChars;
+  const inlineStyle =
+    hoveredLocation === "uganda" ? { zIndex: -1 } : { zIndex: 2 };
 
   return (
     <div className={Styles.locationContainer}>
@@ -99,17 +101,17 @@ const OurLocation: React.FC = () => {
             />
           </div>
 
-          <div className={Styles.croatiaLocation}>
-            <CroatiaSection
-              isHovered={hoveredLocation === "croatia"}
-              onMouseEnter={() => handleMouseEnter("croatia")}
-              onMouseLeave={handleMouseLeave}
-            />
-          </div>
           <div className={Styles.ugandaLocation}>
             <UgandaSection
               isHovered={hoveredLocation === "uganda"}
               onMouseEnter={() => handleMouseEnter("uganda")}
+              onMouseLeave={handleMouseLeave}
+            />
+          </div>
+          <div className={Styles.croatiaLocation} style={inlineStyle}>
+            <CroatiaSection
+              isHovered={hoveredLocation === "croatia"}
+              onMouseEnter={() => handleMouseEnter("croatia")}
               onMouseLeave={handleMouseLeave}
             />
           </div>

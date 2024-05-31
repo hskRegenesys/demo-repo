@@ -47,6 +47,9 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
         <div
           className={`${Styles.UgandaContaryLocation} ${Styles.contaryLocation}`}
         >
+          <span className={Styles.contaryname}>
+            {OurLocationData.Uganda.countryName}
+          </span>
           <Image
             src={OurLocationData.locationPinImage}
             className={`${Styles.locationpin} ${
@@ -59,9 +62,6 @@ const UgandaSection: React.FC<UgandaSectionProps> = ({
             height={20}
             priority
           />
-          <span className={Styles.contaryname}>
-            {OurLocationData.Uganda.countryName}
-          </span>
         </div>
       )}
     </div>
