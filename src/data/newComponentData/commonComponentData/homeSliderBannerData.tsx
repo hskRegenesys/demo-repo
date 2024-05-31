@@ -8,7 +8,7 @@ const homeSliderBannerData = {
     {
       imageUrl: "/assets/images/allImages/Home-Banner-Desktop-slider-one.svg",
       title: "Slide 1",
-      link: "https://uat-demo.digitalregenesys.com/all-courses",
+      link: "https://digitalregenesys.com/all-courses",
     },
 
     // {
@@ -25,7 +25,7 @@ const homeSliderBannerData = {
     {
       imageUrl: "/assets/images/allImages/Home-Banner-Mobile-slider-one.png",
       title: "Slide 1",
-      link: "https://uat-demo.digitalregenesys.com/all-courses",
+      link: "https://digitalregenesys.com/all-courses",
     },
 
     // {
