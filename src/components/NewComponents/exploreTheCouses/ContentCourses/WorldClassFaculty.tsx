@@ -59,7 +59,7 @@ const WorldClassFaculty: React.FC<WorldClassFacultyProps> = ({
                   <Image
                     //src={`${imageUrl}${faculty.facultyImg}`}
                     src={faculty.facultyImg}
-                    alt={faculty.facultyName}
+                    alt="Faculty"
                     title={faculty.facultyName}
                     width={88}
                     height={88}

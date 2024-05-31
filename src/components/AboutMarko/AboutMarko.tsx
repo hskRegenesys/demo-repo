@@ -17,7 +17,7 @@ const AboutMarko = () => {
                 layout="intrinsic"
                 width="450"
                 height="511"
-                alt=""
+                alt="Dr Marko"
               />
             </div>
           </Col>
@@ -42,7 +42,7 @@ const AboutMarko = () => {
                 layout="intrinsic"
                 width="450"
                 height="511"
-                alt=""
+                alt="Dr Marko"
               />
             </div>
           </Col>

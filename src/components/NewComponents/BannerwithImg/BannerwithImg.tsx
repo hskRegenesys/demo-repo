@@ -82,7 +82,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
           <div className={styles.imageCard}>
             <img
               src={data.BannerImgDesktop}
-              alt={data.BannerImgAlt}
+              alt="Banner Enrollment"
               title={data.BannerImgAlt}
             />
           </div>
@@ -92,7 +92,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
             <div className={styles.topSection}>
               {/* <span className={styles.topTextBestsale}>{BestSaleText}</span> */}
               <h2 className={styles.topTextMessage}>
-                {BestSaleText}{" "}
+                {BestSaleText}
                 <span className={styles.pointInside}>{topTextMessage}</span>
               </h2>
             </div>
@@ -101,7 +101,10 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
 
             <div className={styles.uspSectionContainer}>
               <div className={styles.uspCardCountry}>
-                <img src={uspLocationCard.usplocationIcon} alt="Icon 1" />
+                <img
+                  src={uspLocationCard.usplocationIcon}
+                  alt="Icon Location"
+                />
                 <p className={styles.CardText}>
                   {uspLocationCard.uspLocationText}
                 </p>
@@ -109,7 +112,10 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
               <div
                 className={`${styles.uspCardCount} ${styles.enrollmentCard}`}
               >
-                <img src={uspEnrollmentCard.StudentEnrolIcon} alt="Icon 2" />
+                <img
+                  src={uspEnrollmentCard.StudentEnrolIcon}
+                  alt="Icon Enroll"
+                />
                 <div className={styles.enrollmentContainer}>
                   <p className={styles.uspEnrollmentCount}>
                     {count}
@@ -120,7 +126,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
                 </div>
               </div>
               <div className={styles.uspCardUpskill}>
-                <img src={uspUpskillCard.uspBookIcon} alt="Icon 3" />
+                <img src={uspUpskillCard.uspBookIcon} alt="Icon Book" />
                 <p className={styles.CardText}>
                   {uspUpskillCard.uspUpskillText}
                 </p>

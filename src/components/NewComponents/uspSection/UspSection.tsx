@@ -105,7 +105,7 @@ const UspSection: React.FC = () => {
       <div className={styles.uspSectionGroupMobile}>
         <Image
           src="/assets/images/allImages/DR-logo.webp"
-          alt="Icon 1"
+          alt="Logo"
           width={34}
           height={40}
         />
@@ -115,7 +115,7 @@ const UspSection: React.FC = () => {
         <div className={styles.uspSectionGroup}>
           <Image
             src="/assets/images/allImages/DR-logo.webp"
-            alt="Icon 1"
+            alt="Logo"
             width={34}
             height={40}
           />

@@ -286,6 +286,7 @@ const NavItem = (props: any) => {
                           layout="intrinsic"
                           width="24"
                           height="24"
+                          alt="Mobile Icon"
                           src={mobileIcons[id]}
                         />
                         <span

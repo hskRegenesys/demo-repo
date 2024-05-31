@@ -40,7 +40,7 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
                             ? whiteFilledStarIcon
                             : discountIcon
                         }
-                        alt={`Icon ${index + 1}`}
+                        alt="Icon"
                         width={20}
                         height={20}
                       />

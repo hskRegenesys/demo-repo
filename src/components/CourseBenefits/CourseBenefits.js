@@ -16,17 +16,13 @@ const CourseBenefits = ({ courseDetails }) => {
           <Col md={4}>
             <div className="inner animated fadeInLeft">
               <div className="image-box">
-                {/* <Image
-                  src="/assets/images/background/career-support2.webp"
-                  alt=""
-                /> */}
                 <Image
                   priority={true}
                   src="/assets/images/background/career-support2.webp"
                   layout="intrinsic"
                   width="700"
                   height="703"
-                  alt=""
+                  alt="Career Support"
                 />
               </div>
             </div>

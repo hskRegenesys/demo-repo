@@ -57,7 +57,7 @@ const RecommendedPost = () => {
                         <Image
                           key={img.url}
                           src={img.url.toString()}
-                          alt={values?.yoast_head_json?.og_title}
+                          alt="Blog"
                           layout="fill"
                           objectFit="cover"
                           className="rounded"
@@ -68,7 +68,7 @@ const RecommendedPost = () => {
                         src={`/assets/images/background/${
                           bannerImages[getOneRandom(bannerImages)]
                         }`}
-                        alt={bannerImages[getOneRandom(bannerImages)]}
+                        alt="Background Image"
                         layout="fill"
                         objectFit="cover"
                         className="rounded"

@@ -17,7 +17,7 @@ const SponsorsSectionFour = () => {
                 <a href="#">
                   <Image
                     src={`/assets/images/update-09-06-2021/brand/${image}`}
-                    alt=""
+                    alt="Sponsor Banner"
                   />
                 </a>
               </div>

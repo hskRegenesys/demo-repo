@@ -17,7 +17,7 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
                 <Image
                   key={img.url}
                   src={img.url.toString()}
-                  alt={post?.yoast_head_json?.og_title}
+                  alt="icon"
                   layout="fill"
                   objectFit="cover"
                   className="rounded"
@@ -28,7 +28,7 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
                 src={`/assets/images/background/${
                   bannerImages[getOneRandom(bannerImages)]
                 }`}
-                alt={bannerImages[getOneRandom(bannerImages)]}
+                alt="Banner Blog"
                 layout="fill"
                 objectFit="cover"
                 className="rounded"

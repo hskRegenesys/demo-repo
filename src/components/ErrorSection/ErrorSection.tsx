@@ -17,7 +17,12 @@ const ErrorSection = () => {
       <div className="auto-container">
         <div className="content">
           <div className="big-text">
-            <Image src={image} id="error-404" className="img-fluid" alt="" />
+            <Image
+              src={image}
+              id="error-404"
+              className="img-fluid"
+              alt="Error"
+            />
           </div>
           <h4 className="mt-5">{title}</h4>
           <div className="text mt-3">{text}</div>

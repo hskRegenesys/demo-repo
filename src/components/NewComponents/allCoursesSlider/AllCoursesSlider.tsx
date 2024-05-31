@@ -134,15 +134,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
       <h2 className="main-sub-heading">
         {AllCourcesCardData.allCoursesSliderSubHeading}
       </h2>
-      {/* <div>
-        <Image
 
-
-          src="/assets/images/new-component-assets/Rocket BG.svg"
-          alt="rocket"
-          className={Styles.rocketImg}
-        />
-      </div> */}
       <div className={Styles.cardContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
@@ -178,20 +170,10 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                   {parentCourse.cardProgram}
                 </div>
                 <div className={Styles.imgCardContainer}>
-                  {/* <div className={Styles.cardStarContainer}>
-                    <Image
-
-
-                      src={AllCourcesCardData.cardStarIcon}
-                      alt="cardStar"
-                      className={Styles.cardStarIcon}
-                    />
-                    <span className={Styles.cardStarText}>4.6 Ratings</span>
-                  </div> */}
                   <Image
                     // src={parentCourse.cardImg}
                     src={parentCourse.cardImg}
-                    alt={parentCourse.ImgAlt}
+                    alt="All course"
                     title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
                     width={346}

@@ -27,7 +27,7 @@ const UsaSection: React.FC<UsaSectionProps> = ({
           <Image
             src={OurLocationData.USA.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.USA.countryName}
+            alt="Flag"
             title={OurLocationData.USA.countryName}
             width={50}
             height={82}
@@ -50,7 +50,7 @@ const UsaSection: React.FC<UsaSectionProps> = ({
             src={OurLocationData.locationPinImage}
             // src={OurLocationData.locationPinImage}
             className={Styles.locationpin}
-            alt={OurLocationData.USA.countryName}
+            alt="Location"
             title={OurLocationData.USA.countryName}
             width={14}
             onMouseEnter={onMouseEnter}

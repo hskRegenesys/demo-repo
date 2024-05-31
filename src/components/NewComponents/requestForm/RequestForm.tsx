@@ -27,7 +27,6 @@ function RequestForm(props: any) {
   const [formInteraction, setFormInteraction] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
-
   const getCountryCode = async () => {
     let countryData = await countryCodeService.countryDetails();
     setCountryData(countryData);
@@ -64,7 +63,6 @@ function RequestForm(props: any) {
     register,
     handleSubmit,
   } = hookForm;
-
 
   const programmeOfInterest = watch("Programme_Of_Interest");
 
@@ -181,7 +179,6 @@ function RequestForm(props: any) {
     mixpanel.track("partial_submitted");
   };
 
-
   return (
     <div className={Styles.RequestFormStyle}>
       <ToastContainer />
@@ -262,7 +259,6 @@ function RequestForm(props: any) {
                   type="hidden"
                   {...register("Phone", {
                     required: "*Phone number is Required",
-                    
                   })}
                 />
                 <PhoneInput
@@ -273,24 +269,22 @@ function RequestForm(props: any) {
                   value={watch("Phone")}
                   {...register("Phone", {
                     required: "*Phone number is Required",
-                    
                   })}
                   onChange={(e) => {
                     const phoneNumber = e ? e.toString() : "";
-                      const isValid = validator.isMobilePhone(phoneNumber);
-                      if (isValid) {
-                        setValue("Phone", phoneNumber);
-                        setPhoneNumber(phoneNumber);
-                        mixpanel.track("Phone Changed", {
-                          InputName: "Phone",
-                          Filled: phoneNumber !== "",
-                          newValue: phoneNumber,
-                        });
-                        setPhoneNumberError("");
-                      } else {
-                        setPhoneNumberError("Valid phone number Required");
-                      }
-                    
+                    const isValid = validator.isMobilePhone(phoneNumber);
+                    if (isValid) {
+                      setValue("Phone", phoneNumber);
+                      setPhoneNumber(phoneNumber);
+                      mixpanel.track("Phone Changed", {
+                        InputName: "Phone",
+                        Filled: phoneNumber !== "",
+                        newValue: phoneNumber,
+                      });
+                      setPhoneNumberError("");
+                    } else {
+                      setPhoneNumberError("Valid phone number Required");
+                    }
                   }}
                   onBlur={() => {
                     trigger("Phone");
@@ -298,20 +292,27 @@ function RequestForm(props: any) {
                   className={`inputForm ${phoneNumberError && "invalid"} ${
                     Styles.inputForm
                   }`}
-                  
                 />
-       {phoneNumberError ? (
+                {phoneNumberError ? (
                   <small className={Styles.smallText}>{phoneNumberError}</small>
-                ) :errors?.Phone && (
-                  <small className={Styles.smallText}>
-                    {errors?.Phone?.message}
-                  </small>
-                ) }
+                ) : (
+                  errors?.Phone && (
+                    <small className={Styles.smallText}>
+                      {errors?.Phone?.message}
+                    </small>
+                  )
+                )}
               </div>
             </div>
             <div className=" ">
               <div className="">
+                <label id="lbl-main-menu-mob" htmlFor="Course">
+                  Course you are looking for *
+                </label>
+
                 <select
+                  aria-labelledby="lbl-main-menu-mob"
+                  name="Course"
                   value={programmeOfInterest}
                   className={`select-course form-select${
                     errors?.Programme_Of_Interest &&

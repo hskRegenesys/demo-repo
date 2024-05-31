@@ -16,17 +16,13 @@ const GalleryItem = (props: any) => {
     >
       <div className="inner-box">
         <figure className="image">
-          {/* <Image
-            src={`/assets/images/gallery/${image}`}
-            alt=""
-          /> */}
           <Image
             priority={true}
             src={`/assets/images/gallery/${image}`}
             layout="responsive"
             width="274"
             height="182"
-            alt=""
+            alt="Gallery"
           />
         </figure>
         <a className="lightbox-image overlay-box"></a>
