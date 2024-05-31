@@ -3,7 +3,6 @@ import styles from "./connectContainer.module.css";
 import RequestForm from "../requestForm/RequestForm";
 import connectContainerData from "../../../data/newComponentData/commonComponentData/ConnnectContainerData";
 import Image from "next/image";
-import StudentYoutubeVideos from "../studentYoutubeVideos/StudentYoutubeVideos";
 interface ConnectContainerProps {
   onFormSubmit: () => void;
 }
@@ -68,7 +67,6 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
           </div>
         </div>
       </div>
-      <StudentYoutubeVideos />
     </>
   );
 };

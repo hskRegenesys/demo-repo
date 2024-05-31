@@ -202,6 +202,7 @@ const Course = (props: any) => {
         LearnersBenefitData={props?.initialLearnersBenefitData}
       />
       <ConnectContainer onFormSubmit={() => {}} />
+      <StudentYoutubeVideos />
       <BlogSection data={MultiplePagesBrandData.BlogSectionDataHome} />
       <LearnersSupport
         data={MultiplePagesBrandData.LearnersSupportSectionData}
