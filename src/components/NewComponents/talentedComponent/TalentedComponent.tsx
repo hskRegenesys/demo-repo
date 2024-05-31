@@ -109,13 +109,16 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                     slidesPerView: 1.6,
                     slidesPerGroup: 1,
                   },
-                  560: {
-                    slidesPerView: 1.5,
+                  452: {
+                    slidesPerView: 2.2,
+                  },
+                  760: {
+                    slidesPerView: 2.6,
                     slidesPerGroup: 1,
                   },
-                  1190: { slidesPerView: 2 },
-                  1250: { slidesPerView: 2.5 },
-                  1920: { slidesPerView: 3.5 },
+                  820: { slidesPerView: 1.5 },
+                  1360: { slidesPerView: 2.2 },
+                  1540: { slidesPerView: 2.3 },
                 }}
               >
                 {data.map((faculty: Faculty, index: number) => (
@@ -128,8 +131,8 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                             src={faculty.facultyImg}
                             alt="Faculty"
                             title={faculty.facultyName}
-                            width={110}
-                            height={110}
+                            width={132}
+                            height={132}
                             priority
                           />
                         )}

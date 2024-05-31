@@ -27,6 +27,7 @@ const StudentReview = ({
           spaceBetween={25}
           slidesPerView={3}
           pagination={{ clickable: true }}
+          centeredSlides={false}
           breakpoints={{
             0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
             560: {
@@ -34,8 +35,8 @@ const StudentReview = ({
               slidesPerGroup: 1,
               centeredSlides: true,
             },
-            1200: { slidesPerView: 3 },
-            1700: { slidesPerView: 3 },
+            720: { slidesPerView: 2 },
+            1000: { slidesPerView: 3 },
           }}
         >
           {StudentReviewCard.map((item: any, index: number) => (

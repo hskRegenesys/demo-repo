@@ -73,7 +73,11 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                     <h2 className={Styles.blogText}>{card.blogText}</h2>
                   </div>
                   <div className={Styles.knowMore}>
-                    <a href={card.blogLink} className={Styles.knowMoreLink}>
+                    <a
+                      href={card.blogLink}
+                      className={Styles.knowMoreLink}
+                      target="_blank"
+                    >
                       Know More
                       <span className={Styles.arrowIcon}>
                         <Image
