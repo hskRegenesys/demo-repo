@@ -112,7 +112,6 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                 <div className={Styles.profile}>
                   <div className={Styles.profileImg}>
                     <Image
-                      
                       src={swiperCard.profileImg}
                       alt={swiperCard.name}
                       title={swiperCard.name}

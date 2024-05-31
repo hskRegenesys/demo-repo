@@ -3,8 +3,8 @@
 .bannerSection {
   background: linear-gradient(
     180deg,
-    #e5ffed 0%,
-    rgba(231, 254, 238, 0.53) 59.4%,
+    #f2fff6 0%,
+    rgba(242, 255, 246, 0.53) 59.4%,
     rgba(252, 252, 252, 0) 100%
   );
 }
@@ -265,7 +265,7 @@
 }
 
 .uspCardCount {
-  max-width: 130px;
+  max-width: 142px;
 }
 
 .uspCardUpskill {
@@ -278,9 +278,8 @@
 .uspEnrollmentCount {
   color: #008554;
   text-align: center;
-  font-family: Montserrat-Bold;
+  font-family: Montserrat-semiBold;
   font-size: 14px;
-
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -301,7 +300,7 @@
   color: #2b3340;
   text-align: center;
   font-size: 14px;
-
+  font-family: Montserrat-semiBold;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;

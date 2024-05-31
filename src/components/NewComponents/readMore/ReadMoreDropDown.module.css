@@ -25,7 +25,6 @@
   font-feature-settings: "ss03" on, "liga" off;
   font-family: Montserrat-Bold;
   font-size: 20px;
-
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -52,7 +51,6 @@
 .paragraph {
   text-align: left;
   font-size: 16px;
-
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -117,7 +115,7 @@
     font-size: 12px;
   }
   .readmoreButton img {
-    width: 10px;
+    width: 12px !important;
   }
 
   .paragraph p {

@@ -69,9 +69,8 @@
 }
 .cardText2 {
   color: var(--Light-Text-Secondary, #697386);
-
+  font-family: Montserrat-semiBold;
   font-size: 16px;
-
   line-height: 24px;
   letter-spacing: 0.019px;
   margin-bottom: 0px;
@@ -147,7 +146,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1224px) {
-  .courseBenefitsCardContainer{
+  .courseBenefitsCardContainer {
     margin-top: 40px !important;
   }
 }
