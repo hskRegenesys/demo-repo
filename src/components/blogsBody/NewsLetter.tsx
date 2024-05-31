@@ -143,12 +143,23 @@ const NewsLetter = () => {
                 </div>
               </div>
             </div>
-            <div className="d-flex justify-content-center">
-              <Checkbox className="mt-3" onChange={handleCheckboxChange}>
+            <div className="mt-3">
+              {/* <Checkbox className="mt-3" onChange={handleCheckboxChange}>
+              By Checking this box, you confirm that you have read & agree to
+                our Terms of use regarding the storage of data submitted through
+                this form
+              </Checkbox> */}
+              <label className="new-letter-checkbox-class">
+                <input
+                  type="checkbox"
+                  checked={isCheckboxChecked}
+                  onChange={handleCheckboxChange}
+                  className="label-input-field"
+                />
                 By Checking this box, you confirm that you have read & agree to
                 our Terms of use regarding the storage of data submitted through
                 this form
-              </Checkbox>
+              </label>
             </div>
             {checkBoxError && (
               <span className="text-danger">{checkBoxError}</span>
