@@ -395,7 +395,8 @@
     height: 20px;
   }
 
-  .courseHeading {
+  .courseHeading,
+  .HeadingText {
     font-size: 20px;
   }
 
