@@ -18,15 +18,13 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
             <Col key={id} lg={4} md={4} sm={12} className="discover-block">
               <div className="inner-box">
                 <div className="image-box">
-                  {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
-
                   <Image
                     priority={true}
                     src={`/assets/images/icons/${image}`}
                     layout="intrinsic"
                     width="232"
                     height="232"
-                    alt=""
+                    alt="Icon"
                   />
                 </div>
                 <div className="cap-box animated fadeInUp">
@@ -66,14 +64,13 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
               <Col key={id} lg={4} md={4} sm={12} className="discover-block">
                 <div className="inner-box">
                   <div className="image-box">
-                    {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
                     <div>
                       <Image
                         src={`/assets/images/icons/${image}`}
                         layout="intrinsic"
                         width="232"
                         height="232"
-                        alt=""
+                        alt="Icon"
                       />
                     </div>
                   </div>
@@ -113,14 +110,13 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
               <Col key={id} lg={4} md={4} sm={12} className="discover-block">
                 <div className="inner-box">
                   <div className="image-box">
-                    {/* <Image src={`/assets/images/icons/${image}`} alt="" /> */}
                     <Image
                       priority={true}
                       src={`/assets/images/icons/${image}`}
                       layout="intrinsic"
                       width="232"
                       height="232"
-                      alt=""
+                      alt="Icon"
                     />
                   </div>
                   <div className="cap-box animated fadeInUp">

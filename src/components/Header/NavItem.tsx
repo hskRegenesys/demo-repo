@@ -292,6 +292,7 @@ const NavItem = (props: any) => {
                         width="24"
                         height="24"
                         src={mobileIcons[id]}
+                        alt="Mobile icon"
                       />
                       <span
                         className="m-2 "

@@ -84,7 +84,7 @@ const HomeBanner = ({ className = "" }) => {
                     layout="responsive"
                     width="432"
                     height="547"
-                    alt="gmba banner"
+                    alt="Home banner"
                   />
                 </div>
 

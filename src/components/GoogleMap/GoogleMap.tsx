@@ -37,7 +37,7 @@ const GoogleMap = () => {
                     layout="intrinsic"
                     width="900"
                     height="551"
-                    alt=""
+                    alt="Map"
                   />
                 </div>
 
@@ -49,21 +49,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.SAMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.SAMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.SAMapDetails?.corporateOfficeName}
@@ -81,21 +71,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.KEMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.KEMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.KEMapDetails?.corporateOfficeName}
@@ -113,21 +93,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.INMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.INMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.INMapDetails?.corporateOfficeName}
@@ -145,21 +115,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.NGMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.NGMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.NGMapDetails?.corporateOfficeName}
@@ -177,21 +137,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.USAMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.USAMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {
@@ -212,21 +162,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.KROMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.KROMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {
@@ -247,21 +187,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.TZMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.TZMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.TZMapDetails?.corporateOfficeName}
@@ -280,21 +210,11 @@ const GoogleMap = () => {
                         layout="intrinsic"
                         width="15"
                         height="24"
-                        alt=""
+                        alt="Map"
                       />
                       <p>{countryMapDetails?.UGMapDetails?.countryName}</p>
                     </div>
                     <div className="hover-details">
-                      {/* <div className="campus-image">
-                        <Image
-                          src={countryMapDetails?.TZMapDetails?.campusImage}
-                          layout="intrinsic"
-                          width="280"
-                          height="300"
-                          objectFit="cover"
-                          alt=""
-                        />
-                      </div> */}
                       <div className="campus-details">
                         <h6>
                           {countryMapDetails?.UGMapDetails?.corporateOfficeName}

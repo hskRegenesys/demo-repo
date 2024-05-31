@@ -32,7 +32,7 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
           <Image
             src={OurLocationData.Nigeria.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.Nigeria.countryName}
+            alt="Flag"
             title={OurLocationData.Nigeria.countryName}
             width={50}
             height={82}
@@ -53,7 +53,7 @@ const NigeriaSection: React.FC<NigeriaSectionProps> = ({
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
-            alt={OurLocationData.Nigeria.countryName}
+            alt="Location"
             title={OurLocationData.Nigeria.countryName}
             onMouseEnter={onMouseEnter}
             width={14}

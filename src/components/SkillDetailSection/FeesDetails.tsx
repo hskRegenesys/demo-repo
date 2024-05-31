@@ -159,7 +159,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                                 layout="intrinsic"
                                 width="100"
                                 height="69"
-                                alt="South Africa"
+                                alt="South Africa flag"
                               />
                             )}
                             {item.country_id === indiaCountryId && (
@@ -170,7 +170,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                                 layout="intrinsic"
                                 width="100"
                                 height="69"
-                                alt="India"
+                                alt="India flag"
                               />
                             )}
                             {item.country_id === nigeriaCountryId && (
@@ -178,7 +178,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                               <Image
                                 priority={true}
                                 src={flagnig}
-                                alt="Nigeria"
+                                alt="Nigeria flag"
                                 layout="intrinsic"
                                 width="100"
                                 height="69"
@@ -189,7 +189,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                               <Image
                                 priority={true}
                                 src={flagus}
-                                alt="UK"
+                                alt="UK flag"
                                 layout="intrinsic"
                                 width="100"
                                 height="69"
@@ -200,7 +200,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                               <Image
                                 priority={true}
                                 src={flagken}
-                                alt="Kenya"
+                                alt="Kenya flag"
                                 layout="intrinsic"
                                 width="100"
                                 height="69"
@@ -211,7 +211,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                               <Image
                                 priority={true}
                                 src={flagUg}
-                                alt="Uganda"
+                                alt="Uganda flag"
                                 layout="intrinsic"
                                 width="100"
                                 height="69"
@@ -222,7 +222,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                               <Image
                                 priority={true}
                                 src={flagTZ}
-                                alt="Tanzania"
+                                alt="Tanzania flag"
                                 layout="intrinsic"
                                 width="100"
                                 height="69"
@@ -278,7 +278,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                                     layout="intrinsic"
                                     width="100"
                                     height="69"
-                                    alt="South Africa"
+                                    alt="South Africa flag"
                                   />
                                 )}
                                 {item.country_id === indiaCountryId && (
@@ -289,7 +289,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                                     layout="intrinsic"
                                     width="100"
                                     height="69"
-                                    alt="India"
+                                    alt="India flag"
                                   />
                                 )}
                                 {item.country_id === nigeriaCountryId && (
@@ -297,7 +297,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                                   <Image
                                     priority={true}
                                     src={flagnig}
-                                    alt="Nigeria"
+                                    alt="Nigeria flag "
                                     layout="intrinsic"
                                     width="100"
                                     height="69"
@@ -308,7 +308,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                                   <Image
                                     priority={true}
                                     src={flagus}
-                                    alt="UK"
+                                    alt="UK flag"
                                     layout="intrinsic"
                                     width="100"
                                     height="69"
@@ -319,7 +319,7 @@ const ProductDetailsPage = ({ courseDetails, courseId, courseCode }: any) => {
                                   <Image
                                     priority={true}
                                     src={flagken}
-                                    alt="Kenya"
+                                    alt="Kenya flag"
                                     layout="intrinsic"
                                     width="100"
                                     height="69"

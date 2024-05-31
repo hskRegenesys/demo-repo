@@ -269,20 +269,17 @@ const HeaderOne = ({
         <div className="auto-container d-flex clearfix new-container-style">
           <div className="logo-box">
             <div className="logo">
-              <Link href="/">
-                <a title={title}>
-                  {/* <Image id="thm-logo" src={Logo} alt={title} title={title} /> */}
-                  <div>
-                    <Image
-                      src="/assets/images/allImages/DR-Logo-black.webp"
-                      layout="intrinsic"
-                      width="116"
-                      height="40"
-                      title={title}
-                      alt={title}
-                      priority={true}
-                    />
-                  </div>
+              <Link href="/" passHref>
+                <a aria-label={`${title} Home`}>
+                  <Image
+                    src="/assets/images/allImages/DR-Logo-black.webp"
+                    layout="intrinsic"
+                    width={116}
+                    height={40}
+                    title={title}
+                    alt={`${title} Home`}
+                    priority
+                  />
                 </a>
               </Link>
             </div>

@@ -26,7 +26,7 @@ const CourseOverview: React.FC<CourseOverviewProps> = ({
         className={styles.content1img}
         //src={`${imageUrl}${contentImg}`}
         src={contentImg}
-        alt="Content 1"
+        alt="Overview"
         width={790}
         height={400}
       />
@@ -37,7 +37,7 @@ const CourseOverview: React.FC<CourseOverviewProps> = ({
             <Image
               //src={`${imageUrl}${card.icon}`}
               src={card.icon}
-              alt={`card ${index + 1}`}
+              alt="Overview"
               width={32}
               height={32}
             />

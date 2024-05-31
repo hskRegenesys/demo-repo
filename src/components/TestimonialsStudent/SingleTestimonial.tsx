@@ -28,7 +28,7 @@ const SingleTestimonial = ({
               <a>
                 <Image
                   src={`/assets/images/resource/${image}`}
-                  alt=""
+                  alt="Testimonials"
                 />
               </a>
             </Link>

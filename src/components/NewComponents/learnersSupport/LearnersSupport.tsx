@@ -58,7 +58,7 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
                   <Image
                     src={item.LsImg}
                     //src={`${imageUrl}${item.LsImg}`}
-                    alt="Ls"
+                    alt="Learning Support"
                     width={360}
                     height={160}
                     loading="eager"

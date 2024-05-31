@@ -26,7 +26,7 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
           <Image
             src={OurLocationData.Croatia.countryFlagImg}
             className={Styles.contaryFlag}
-            alt={OurLocationData.Croatia.countryName}
+            alt="Croatia flag"
             title={OurLocationData.Croatia.countryName}
             width={50}
             height={82}
@@ -52,7 +52,7 @@ const CroatiaSection: React.FC<CroatiaSectionProps> = ({
             className={`${Styles.locationpin} ${
               isHovered ? Styles.hovered : ""
             }`}
-            alt={OurLocationData.Croatia.countryName}
+            alt="Location"
             title={OurLocationData.Croatia.countryName}
             onMouseEnter={onMouseEnter}
             width={14}

@@ -28,17 +28,13 @@ const DataScienceCourses = () => {
                         <div className="image">
                           <Link href="/all-courses/digital-marketing/basic-digital-marketing">
                             <a>
-                              {/* <Image
-                                src={`/assets/images/gallery/${image}`}
-                                alt=""
-                              /> */}
                               <Image
                                 priority={true}
                                 src={`/assets/images/gallery/${image}`}
                                 layout="responsive"
                                 width="274"
                                 height="182"
-                                alt=""
+                                alt="Gallery"
                               />
                             </a>
                           </Link>

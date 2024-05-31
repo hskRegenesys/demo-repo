@@ -22,7 +22,7 @@ const AboutUsDescription = (props: any) => {
           <Col md={7} lg={7}>
             <div className="about-me-one__content who-we-are">
               <div className="sign-arrow">
-                <Image src={imagearrow} alt="" />
+                <Image src={imagearrow} alt="About us" />
               </div>
               <h2 className="highlight small-heading">{highlight}</h2>
               <p className="about-me-one__text">{text1}</p>

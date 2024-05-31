@@ -18,7 +18,7 @@ const DataScienceText = () => {
       <div className="auto-container">
         <div className="content-box text-left digital-marketing-text mt-5">
           <div className="sign-arrow">
-            <Image src={imagearrow} alt="" />
+            <Image src={imagearrow} alt="Arrow" />
           </div>
           <h3>
             <TextSplit text={title} />

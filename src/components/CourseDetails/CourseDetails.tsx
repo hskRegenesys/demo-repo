@@ -32,10 +32,6 @@ const ProcessOne = ({ courseDetails, courseCode }: any) => {
                     className="process-one__image__column desktop-hide"
                   >
                     <div className="process-one__image animated fadeInLeft">
-                      {/* <Image
-                        src={`/assets/images/update-01-10-2021/${image}`}
-                        alt=""
-                      /> */}
                       <div className="iframe-border">
                         <iframe
                           width="320"
@@ -45,9 +41,6 @@ const ProcessOne = ({ courseDetails, courseCode }: any) => {
                         ></iframe>
                       </div>
                       <div className="btn-customize-programme-wise">
-                        {/* <strong className="text-white text-center d-block">
-                          Enrol Now & Get a 30% Discount
-                        </strong> */}
                         <a
                           className="theme-btn btn-style-two"
                           onClick={() => {
@@ -112,18 +105,6 @@ const ProcessOne = ({ courseDetails, courseCode }: any) => {
 
               <Col md={5} className="process-one__image__column mobile-hide">
                 <div className="process-one__image animated fadeInLeft">
-                  {/* <Image
-                    src={`/assets/images/update-01-10-2021/${image}`}
-                    alt=""
-                  /> */}
-                  {/* <Image
-                    priority={true}
-                    src={`/assets/images/update-01-10-2021/${image}`}
-                    layout="intrinsic"
-                    width="500"
-                    height="596"
-                    alt=""
-                  /> */}
                   <div className="iframe-border">
                     <iframe
                       width="440"
@@ -135,9 +116,6 @@ const ProcessOne = ({ courseDetails, courseCode }: any) => {
                   </div>
 
                   <div className="btn-customize-programme-wise">
-                    {/* <strong className="text-white text-center d-block">
-                      Enrol Now & Get a 30% Discount
-                    </strong> */}
                     <div className="product-details__buttons mobile-product-buttons d-block text-center">
                       <a
                         className="theme-btn btn-style-two"

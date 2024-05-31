@@ -79,7 +79,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                         <Image
                           src={`${imageUrl}Icons/Readmore.svg`}
                           // src="/assets/images/new-component-assets/Readmore.svg"
-                          alt="cardStar"
+                          alt="card Star"
                           className={Styles.img}
                           width={12}
                           height={12}

@@ -27,7 +27,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
                 <Image
                   style={{ cursor: "pointer" }}
                   src={`/assets/images/background/${desktopImage}`}
-                  alt={`${desktopImage}-index`}
+                  alt="Banner Image"
                   layout="fill"
                   objectFit="contain"
                 />
@@ -41,7 +41,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
                 <Image
                   style={{ cursor: "pointer" }}
                   src={`/assets/images/background/${mobileImage}`}
-                  alt={`${mobileImage}-index`}
+                  alt="Mobile Banner"
                   layout="fill"
                   objectFit="cover"
                 />

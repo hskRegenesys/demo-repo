@@ -41,16 +41,6 @@ const StudentReview = ({
           {StudentReviewCard.map((item: any, index: number) => (
             <SwiperSlide key={index}>
               <div className={Styles.studentReviewCard}>
-                {" "}
-                {/* <div className={Styles.studentReviewSideTag}>
-                    <Image
-                      src={`${imageUrl}Icons/Logo-DR-side.svg`}
-                      // src="/assets/images/new-component-assets/Logo-DR-side.png"
-                      alt="Side Tag"
-                      width={102}
-                      height={106}
-                    />
-                  </div> */}
                 <div className={Styles.studentReviewCardImg}>
                   <Image
                     src={item.StudentReviewCardImg}
