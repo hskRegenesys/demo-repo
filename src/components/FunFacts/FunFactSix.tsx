@@ -10,21 +10,17 @@ const FunFactSix = () => {
         <Row>
           {funFactSix?.map(({ id, image, text, count }) => (
             <Col key={id} sm={12} md={6} lg={4} className="pl-0">
-              <div className="funfact-six__item">              
-                <div className="funfact-six__count count-box">             
-                
-                <Image src={image} alt="" />
-            
-
+              <div className="funfact-six__item">
+                <div className="funfact-six__count count-box">
+                  <Image src={image} alt="Facts Image" />
 
                   <div className="count-text ">
-                    <VisibilityCountUp count={count}/><span>+</span>
-                    
+                    <VisibilityCountUp count={count} />
+                    <span>+</span>
+
                     <p className="funfact-six__text">{text}</p>
                   </div>
-                 
                 </div>
-              
               </div>
             </Col>
           ))}

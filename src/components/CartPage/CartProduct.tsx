@@ -13,7 +13,7 @@ const CartProduct = (props: any) => {
         <div className="product-box">
           <Image
             src={`/assets/images/update-26-01-2021/shops/${image}`}
-            alt=""
+            alt="Product"
           />
           <h3>
             <Link href="/product-details">{title}</Link>

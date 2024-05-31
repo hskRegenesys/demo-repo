@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import StarIcon from "@mui/icons-material/Star";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 import mixpanel from "mixpanel-browser";
+import Image from "next/image";
 
 const FeedBackForm = () => {
   const {
@@ -36,6 +36,20 @@ const FeedBackForm = () => {
     mixpanel.track("partial_submitted");
   };
 
+  const stars = [];
+
+  for (let i = 0; i < 4; i++) {
+    stars.push(
+      <Image
+        key={i}
+        src="/assets/images/allImages/red-star.svg"
+        width={20}
+        height={20}
+        alt="Star icons"
+      />
+    );
+  }
+
   return (
     <>
       <div
@@ -48,10 +62,16 @@ const FeedBackForm = () => {
             Your email id will not be published. Required Fields are marked as *
           </p>
           <p>
-            Rate the blog <StarIcon color="warning" />
-            <StarIcon color="warning" />
-            <StarIcon color="warning" />
-            <StarIcon color="warning" />
+            Rate the blog
+            <span
+              style={{
+                marginLeft: "5px",
+                position: "relative",
+                top: "4px",
+              }}
+            >
+              {stars}
+            </span>
           </p>
           <form onSubmit={handleSubmit(onSubmit)} onBlur={handleFormBlur}>
             <div className="row">

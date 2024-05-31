@@ -23,7 +23,7 @@ const FeaturesSectionTwo = () => {
                 <div className="sign-arrow-contact">
                   <Image
                     src="/assets/images/background/sign-arrow-left.png"
-                    alt=""
+                    alt="Arrrow Left"
                   />
                 </div>
               </div>

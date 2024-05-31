@@ -30,7 +30,7 @@
   color: #bbf7d0;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
@@ -41,7 +41,7 @@
   color: var(--White, #fff);
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.8px;
@@ -57,27 +57,24 @@
 
 .textList li {
   color: var(--light-text-white, #fff);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
-  bottom: 10px;
+  bottom: 12px;
   position: relative;
-  font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
 }
+
 .textContainer {
   display: grid;
-  justify-content: space-between;
-  gap: 10px;
+  grid-gap: 0;
 }
 .applyNowHeading {
   color: var(--primary-primary-charcoal, #131718);
-  font-family: Montserrat;
+
   text-align: center;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   margin-bottom: 10px;
@@ -86,11 +83,11 @@
 .icon {
   position: relative;
   display: flex;
-  left: -34px;
   justify-content: space-between;
   gap: 84px;
-  left: -11px;
+  left: -9px;
   bottom: 10px;
+  z-index: 3;
 }
 
 .icontext {
@@ -101,7 +98,7 @@
   content: "";
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: 6px;
   bottom: 0;
   left: 0%;
   height: 100%;
@@ -154,10 +151,26 @@
   .leftSection {
     padding: 16px;
   }
+
+  .icon {
+    width: 23px;
+    left: -10px;
+  }
+
+  .textContainer {
+    display: grid;
+    gap: 23px !important;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .icon {
-    width: 50px;
+    width: 23px;
+    left: -10px;
+  }
+
+  .textContainer {
+    display: grid;
+    gap: 46px !important;
   }
 }

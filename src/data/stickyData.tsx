@@ -3,7 +3,7 @@ interface IAllPageStickyDataType {
 }
 const AllPageStickyData: IAllPageStickyDataType = {
   "cyber-security": " Upskill yourself with Digital Regenesys's Courses",
-  home: "Master the Entire Stack: Frontend to Backend with Our Full Stack Development Course",
+  home: " From Front to Back, Master Every Stack with our Full Stack Development Course",
 
   "digital-marketing": " Upskill yourself with Digital Regenesys's Courses",
   "basic-digital-marketing":
@@ -16,7 +16,7 @@ const AllPageStickyData: IAllPageStickyDataType = {
   "all-courses": " Upskill yourself with Digital Regenesys's Courses",
   "data-science": " Upskill yourself with Digital Regenesys's Courses",
   "full-stack-development":
-    "Master the Entire Stack: Frontend to Backend with Our Full Stack Development Course",
+    " From Front to Back, Master Every Stack with our Full Stack Development Course",
   "basic-data-science": " Upskill yourself with Digital Regenesys's Courses",
   "advanced-data-science": " Upskill yourself with Digital Regenesys's Courses",
   "applied-data-science": " Upskill yourself with Digital Regenesys's Courses",

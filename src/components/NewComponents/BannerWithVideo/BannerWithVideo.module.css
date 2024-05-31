@@ -3,8 +3,8 @@
 .bannerSection {
   background: linear-gradient(
     180deg,
-    #e5ffed 0%,
-    rgba(231, 254, 238, 0.53) 59.4%,
+    #f2fff6 0%,
+    rgba(242, 255, 246, 0.53) 59.4%,
     rgba(252, 252, 252, 0) 100%
   );
 }
@@ -77,6 +77,7 @@
   width: 100%;
   height: 100%;
   max-width: 744px;
+  min-height: 588px;
   display: flex;
   padding: 52px 56px 56px 56px;
   align-items: center;
@@ -106,7 +107,7 @@
   text-align: center;
   font-family: Montserrat-semiBold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   letter-spacing: 0.12px;
 }
@@ -119,16 +120,23 @@
   color: var(--Light-Text-Green, #008554);
 }
 
-.courseHeading {
-  font-feature-settings: "ss03" on, "liga" off;
+.HeadingText {
   font-family: Montserrat-Bold;
   font-size: 40px;
-  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: -0.8px;
+  margin-bottom: 0px;
+  color: var(--Light-Text-Primary, #2b3340);
+}
+
+.courseHeading {
+  font-family: Montserrat-Bold;
+  font-size: 40px;
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
   margin-bottom: 8px;
-  font-family: Montserrat-Bold;
   background: linear-gradient(
     115deg,
     #008554 14.58%,
@@ -142,10 +150,7 @@
 }
 .contentText {
   color: var(--Light-Text-Secondary, #697386);
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   margin-bottom: 28px;
@@ -173,7 +178,7 @@
   align-self: stretch;
   font-family: Montserrat-semiBold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.019px;
@@ -265,7 +270,7 @@
 }
 
 .uspCardCount {
-  max-width: 130px;
+  max-width: 142px;
 }
 
 .uspCardUpskill {
@@ -278,9 +283,8 @@
 .uspEnrollmentCount {
   color: #008554;
   text-align: center;
-  font-family: Montserrat-Bold;
+  font-family: Montserrat-semiBold;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -301,11 +305,11 @@
   color: #2b3340;
   text-align: center;
   font-size: 14px;
-  font-style: normal;
+  font-family: Montserrat-semiBold;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
-  font-family: Montserrat;
+
   margin-bottom: 0px;
 }
 
@@ -349,6 +353,7 @@
     margin-top: -10%; /* Overlap the content section on top of the image section */
     border-radius: 20px; /* Adjust border-radius as needed */
     z-index: 2; /* Set a lower z-index to place it above the image section */
+    min-height: auto;
   }
   .playIconContainer {
     top: 45%;
@@ -390,7 +395,8 @@
     height: 20px;
   }
 
-  .courseHeading {
+  .courseHeading,
+  .HeadingText {
     font-size: 20px;
   }
 

@@ -4,6 +4,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import careersTransformedData from "../../../data/newComponentData/commonComponentData/careersTransformedData";
+import Image from "next/image";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -33,7 +34,7 @@ interface CareersTransformedProps {
 
 interface MainCourseData {
   heading: string;
-  subheading: string;
+  secondHeading: string;
   "four-card": FourCardData;
   swiperCardContainer: SwiperCardData[];
 }
@@ -42,10 +43,11 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
   handleEnrollButtonVidio,
 }) => {
   const mainCourseData: MainCourseData = careersTransformedData;
+  const imageUrl = `${process.env.awsImage_url}`;
 
   const {
     heading,
-    subheading,
+    secondHeading,
     "four-card": { card1, card2, card3, card4 },
     swiperCardContainer,
   } = mainCourseData;
@@ -62,42 +64,19 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
   return (
     <div className={Styles.container}>
       <div className={Styles.ctFrame}>
-        <img
-          src="/assets/images/new-component-assets/ct-frame-down.webp"
-          className={Styles.ctFrameDown}
-        />
+        <div className={Styles.ctFrameDown}>
+          <Image
+            src="/assets/images/allImages/ct-frame-down.webp"
+            width={198}
+            height={80}
+            alt="Career"
+          />
+        </div>
       </div>
       <div className={Styles.header}>
         <h2 className={Styles.heading}>{heading}</h2>
-        <h2 className={Styles.subheading}>{subheading}</h2>
+        <h2 className={Styles.secondHeading}>{secondHeading}</h2>
       </div>
-
-      {/* <div className={Styles.cardsContainer}>
-        {[card1, card2, card3, card4].map((card, index) => (
-          <div key={index} className={Styles.card}>
-            <div className={Styles.cardTop}>
-              {"percentage" in card && (
-                <p className={Styles.cardtext1}>{card.percentage}</p>
-              )}
-              {"rating" in card && (
-                <>
-                  <p className={Styles.cardtext1}>{card.rating}</p>
-                  {card.ratingImg && (
-                    <img
-                      className={Styles.ratingImg}
-                      src={card.ratingImg}
-                      alt="Rating"
-                    />
-                  )}
-                </>
-              )}
-            </div>
-            <div className={Styles.cardBottom}>
-              <p className={Styles.cardText}>{card.text}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
 
       <div className={Styles.swiperContainer}>
         <Swiper className={Styles.swiperStyle} {...swiperSettings}>
@@ -105,79 +84,40 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
             <SwiperSlide key={index} className={Styles.swiperCard}>
               <div className={Styles.topSection}>
                 <div className={Styles.profile}>
-                  <img
-                    className={Styles.profileImg}
-                    src={swiperCard.profileImg}
-                    alt={swiperCard.name}
-                    title={swiperCard.name}
-                  />
+                  <div className={Styles.profileImg}>
+                    <Image
+                      src={swiperCard.profileImg}
+                      alt="Career"
+                      title={swiperCard.name}
+                      width={80}
+                      height={80}
+                    />
+                  </div>
                   <div className={Styles.nameRole}>
                     <h4 className={Styles.name}>{swiperCard.name}</h4>
                     <p className={Styles.role}>{swiperCard.role}</p>
                   </div>
                 </div>
-                {/* <div className={Styles.smallCard}>
-                  <div className={Styles.smallCardIndide}>
-                    <img
-                      className={Styles.riseImg}
-                      src={swiperCard.riseImg}
-                      alt="Rise"
-                    />
-                    <h2>50%</h2>
-                  </div>
-                  <p className={Styles.increment}>Increment in salary</p>
-                </div>
-                <div
-                  className={Styles.playVideo}
-                  onClick={() =>
-                    handleEnrollButtonVidio(swiperCard.StudentVidio)
-                  }
-                >
-                  <div className={Styles.Vidio}>
-                    <img src={swiperCard.playImg} alt="Rise" />
-                  </div>
-
-                  <span>Hear My Story</span>
-                </div> */}
               </div>
               <div className={Styles.contentSection}>
                 <p className={Styles.experienceText}>
                   {swiperCard.experienceText}
                 </p>
               </div>
-              {/* <div className={Styles.downSection}>
-                <div className={Styles.roleCard1}>
-                  <p className={Styles.roleText}>{swiperCard.firstRole}</p>
-                  <img
-                    className={Styles.companyImg}
-                    src={swiperCard.companyFirstRoleImg}
-                    alt="Company"
-                  />
-                </div>
-                <img
-                  className={Styles.arrowImg}
-                  src="/assets/images/new-component-assets/Arrow.webp"
-                  alt="Arrow"
-                />
-                <div className={Styles.roleCard2}>
-                  <p className={Styles.roleText}>{swiperCard.secondRole}</p>
-                  <img
-                    className={Styles.companyImg}
-                    src={swiperCard.companySecondRoleImg}
-                    alt="Company"
-                  />
-                </div>
-              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
       <div className={Styles.ctFrame}>
-        <img
-          src="/assets/images/new-component-assets/ct-frame-up.webp"
-          className={Styles.ctFrameUp}
-        />
+        <div className={Styles.ctFrameUp}>
+          <Image
+            src="/assets/images/allImages/ct-frame-up.webp"
+            width={198}
+            height={80}
+            alt="Career"
+          />
+        </div>
       </div>
     </div>
   );

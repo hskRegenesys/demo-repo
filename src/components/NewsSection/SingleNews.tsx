@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
-const SingleNews = (props:any) => {
+const SingleNews = (props: any) => {
   const { image, date, admin, comments, header, text } = props.news;
 
   return (
@@ -11,10 +11,7 @@ const SingleNews = (props:any) => {
         <div className="image-box">
           <Link href="/blog-single">
             <a>
-              <Image
-                src={`/assets/images/resource/${image}`}
-                alt=""
-              />
+              <Image src={`/assets/images/resource/${image}`} alt="Blog" />
             </a>
           </Link>
         </div>

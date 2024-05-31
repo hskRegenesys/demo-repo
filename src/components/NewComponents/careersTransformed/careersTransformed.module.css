@@ -24,14 +24,14 @@
   margin-bottom: 8px;
 }
 
-.subheading {
+.secondHeading {
   color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Montserrat-semiBold;
-  line-height: 24px;
-  letter-spacing: 0.12px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  font-family: Montserrat-Bold;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  margin-bottom: 8px;
 }
 
 /* careersTransformedDS.module.css */
@@ -69,7 +69,7 @@
   color: var(--primary-primary-charcoal, #131718);
   text-align: center;
   font-size: 24px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -80,7 +80,7 @@
   color: #6a767c;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -110,11 +110,13 @@
 }
 
 .swiperCard {
-  padding: 40px 48px;
+  padding: 40px 28px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border-radius: 16px;
   background: #fff;
+  display: flex;
+  height: 100%;
 }
 
 /* careersTransformedDS.module.css */
@@ -157,10 +159,9 @@
   margin-bottom: 0px;
   color: var(--primary-primary-dark-grey, #6a767c);
   font-size: 16px;
-  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
-  font-family: Montserrat;
+
   text-align: center;
 }
 .nameRole h4 {
@@ -205,11 +206,9 @@
 .increment {
   color: var(--secondary-1, #1f2b37);
   font-size: 14px;
-  font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
   margin-bottom: 0px;
-  font-family: Montserrat;
 }
 
 .contentSection {
@@ -219,11 +218,9 @@
 .experienceText {
   color: #6a767c;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
-  font-family: Montserrat;
 }
 
 .downSection {
@@ -307,11 +304,10 @@
 .playVideo span {
   color: #fff;
   text-align: center;
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
+
   padding: 14px 32px 14px 16px;
-  font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.019px;
 }
@@ -372,7 +368,7 @@
   }
   .swiperCard {
     padding: 20px; /* Adjust padding as needed */
-    text-align: center;
+    min-height: 440px;
   }
   .swiperContainer {
     margin: 0px;
@@ -408,7 +404,7 @@
   }
   .heading {
     font-size: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 16px;
   }
 
   .subheading {
@@ -421,9 +417,7 @@
     font-size: 12px;
     margin-top: 0px;
   }
-  .swiperCard {
-    padding: 20;
-  }
+
   .nameRole p {
     font-size: 12px;
   }
@@ -451,9 +445,6 @@
     margin-right: 8px;
     width: 20px;
     height: 20px;
-  }
-  .profile {
-    display: block;
   }
   .playVideo {
     display: none;

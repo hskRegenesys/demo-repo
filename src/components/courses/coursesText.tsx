@@ -46,7 +46,7 @@ const CourseText = ({ page }: any) => {
         <div className="auto-container">
           <div className="content-box text-left digital-marketing-text mt-5">
             <div className="sign-arrow">
-              <Image src={imagearrow} alt="" />
+              <Image src={imagearrow} alt="Course Arrow" />
             </div>
             <h1 className="page-head">
               <TextSplit text={title} />

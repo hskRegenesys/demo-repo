@@ -17,7 +17,7 @@ const ContentSide = (props: any) => {
   return (
     <div className="service-details">
       <div className="main-image image">
-        <Image src={image} alt="" />
+        <Image src={image} alt="Slider image" />
       </div>
       <div className="text-content">
         <h3>{title}</h3>
@@ -26,7 +26,7 @@ const ContentSide = (props: any) => {
           <Row className="clearfix">
             <Col md={6} sm={12} className="image-col">
               <div className="image">
-                <Image src={featuredImage} alt="" />
+                <Image src={featuredImage} alt="Featured Image" />
               </div>
             </Col>
             <Col md={6} sm={12} className="text-col">

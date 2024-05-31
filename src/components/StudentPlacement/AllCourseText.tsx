@@ -26,7 +26,7 @@ const AllCourseText = () => {
         <div className="auto-container">
           <div className="content-box text-left">
             <div className="sign-arrow">
-              <Image src={imagearrow} alt="" />
+              <Image src={imagearrow} alt="All course" />
             </div>
             <h1 className="page-head">
               <TextSplit text={title} />

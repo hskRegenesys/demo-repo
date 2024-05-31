@@ -80,7 +80,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;
@@ -98,7 +98,7 @@
   color: var(--Light-Text-Green, #020202);
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 20px;
   margin-left: 5px;
@@ -109,7 +109,7 @@
   font-feature-settings: "ss03" on, "liga" off;
   font-family: Montserrat-Bold;
   font-size: 36px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
@@ -127,10 +127,9 @@
 }
 .contentText {
   color: var(--Light-Text-Secondary, #697386);
-  font-family: Montserrat;
+
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+
   line-height: 24px; /* 150% */
   letter-spacing: 0.12px;
   margin-bottom: 24px;
@@ -158,7 +157,7 @@
   align-self: stretch;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.019px;
@@ -293,7 +292,7 @@
   text-align: center;
   font-family: Montserrat-Bold;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;
@@ -314,7 +313,7 @@
   color: #2b3340;
   text-align: center;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.12px;

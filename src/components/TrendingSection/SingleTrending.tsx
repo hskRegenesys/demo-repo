@@ -22,17 +22,13 @@ const SingleTrending = ({
           <div className="image">
             <Link href="/team">
               <a>
-                {/* <Image
-                  src={`/assets/images/gallery/${image}`}
-                  alt=""
-                /> */}
                 <Image
                   priority={true}
                   src={`/assets/images/gallery/${image}`}
                   layout="responsive"
                   width="274"
                   height="182"
-                  alt=""
+                  alt="Trending Course"
                 />
               </a>
             </Link>
