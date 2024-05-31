@@ -24,7 +24,7 @@ const WorldClassFaculty: React.FC<WorldClassFacultyProps> = ({
   tutors,
   facultyCard,
 }) => {
-  const addBottomValue = facultyCard.length <= 4 ? "0px" : "60px";
+  const addBottomValue = facultyCard.length <= 3 ? "0px" : "60px";
   const imageUrl = `${process.env.awsImage_url}`;
 
   return (

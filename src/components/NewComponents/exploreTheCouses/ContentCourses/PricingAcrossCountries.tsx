@@ -1,5 +1,3 @@
-// PricingAcrossCountries.js
-
 import React from "react";
 import Styles from "../exploreTheCourses.module.css";
 import Image from "next/image";

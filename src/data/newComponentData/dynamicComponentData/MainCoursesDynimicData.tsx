@@ -196,7 +196,7 @@ const MainCoursesDynimicData = {
               duration: "30 weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 2414",
               duration: "30 weeks",
@@ -661,7 +661,7 @@ const MainCoursesDynimicData = {
               duration: "20 weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,238",
               duration: "20 weeks",
@@ -1043,7 +1043,7 @@ const MainCoursesDynimicData = {
               duration: "22 Weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,418",
               duration: "22 Weeks",
@@ -1400,7 +1400,7 @@ const MainCoursesDynimicData = {
               duration: "37 Weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 2,137",
               duration: "37 Weeks",
@@ -1994,7 +1994,7 @@ const MainCoursesDynimicData = {
               duration: "13 weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,128",
               duration: "13 weeks",
@@ -2384,7 +2384,7 @@ const MainCoursesDynimicData = {
               duration: "8 Weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 589",
               duration: "8 Weeks",
@@ -2815,7 +2815,7 @@ const MainCoursesDynimicData = {
               duration: "40 Weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,586",
               duration: "40 Weeks",
@@ -3209,7 +3209,7 @@ const MainCoursesDynimicData = {
               duration: "6 Months",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,418",
               duration: "6 Months",
@@ -3675,7 +3675,7 @@ const MainCoursesDynimicData = {
               duration: "40 Weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,920",
               duration: "40 Weeks",
@@ -4059,7 +4059,7 @@ const MainCoursesDynimicData = {
               duration: "24 Weeks",
             },
             {
-              contaryFlag: "/assets/images/allImages/USA.svg",
+              contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,075 ",
               duration: "24 Weeks",
