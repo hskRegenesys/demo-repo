@@ -60,6 +60,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
                   className={styles.cardIcon}
                   width={64}
                   height={64}
+                  layout="fixed"
                 />
                 <div className={styles.cardText}>
                   {/* <p className={styles.cardText1}>{card.text1}</p> */}
