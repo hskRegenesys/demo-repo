@@ -46,15 +46,16 @@
 .smallText {
   font-size: 12px;
   margin-left: 10px;
-
   color: #a51f1f;
   font-weight: 100;
 }
 .tost {
-  background: rgb(252, 252, 252);
   color: #515151;
-  font-size: 20px;
-  font-family: Montserrat !important;
+  font-size: 18px;
+  border: 1px solid var(--light-divider-borders-light, #cbcbcb);
+  background: var(--Light-Text-Surface-White, #fff);
+  position: relative;
+  top: 80px;
 }
 .formFooterText a {
   margin-left: 2px;

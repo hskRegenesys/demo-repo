@@ -7,8 +7,6 @@ import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import _ from "lodash";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Schemas from "../../../schemas";
 import { Constants } from "../../../schemas/data";
 import DataSeparatorPages from "src/pages/DataSeparatorPages/DataSeparatorPages";
@@ -119,7 +117,6 @@ const Course = (props: any) => {
         type={Constants.course}
         data={{ name: pageName, description: pageName }}
       />
-      <ToastContainer />
 
       {isPopupVisible && (
         <PopupForm

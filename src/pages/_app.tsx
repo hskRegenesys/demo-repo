@@ -13,6 +13,7 @@ import { Constants } from "src/schemas/data";
 import { leadService } from "src/services";
 import { apiEndPoints } from "@/data/axisos";
 import axios from "axios";
+import { Toaster } from "react-hot-toast";
 
 // extra css
 import "@/styles/style.css";
@@ -46,6 +47,8 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.organization} />
       <Schemas type={Constants.localbusiness} />
       {/* Pixel code script start */}
+      <Toaster />
+
       <Script
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
