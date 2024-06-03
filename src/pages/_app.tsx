@@ -338,11 +338,17 @@ const MyApp = ({ Component, pageProps }: any) => {
               const countryCode = getCountryCode(salesForceData?.country);
               salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
               leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
-             } else {
-              salesForceData.mobile = item.answer;
-              leadsData.Phone = question.answer;
+          } else {
+            let mobileNumber = "";
+          for (let char of item?.answer) {
+              if (char !== ' ') {
+                mobileNumber += char;
               }
-            break;
+          } 
+          salesForceData.mobile = mobileNumber;
+              leadsData.Phone = mobileNumber;
+          }
+          break;
             case "Course you are looking for":
               salesForceData.interest = item.answer;
               leadsData.Interested_Topic = item.answer;
@@ -483,15 +489,21 @@ const MyApp = ({ Component, pageProps }: any) => {
                 }
               break;
               case "Mobile Number":     
-                if (!question?.answer?.startsWith("+")) {
-                 const countryCode = getCountryCode(salesForceNewData?.country);
-                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
-                 leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
-             } else {
-                 salesForceNewData.mobile = question.answer;
-                 leadsNewData.Phone = question.answer;
-             }
-              break;    
+              if (!question?.answer?.startsWith("+")) {
+                const countryCode = getCountryCode(salesForceNewData?.country);
+                salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+                leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
+            } else {
+              let newMobileNumber = "";
+            for (let char of question?.answer) {
+                if (char !== ' ') {
+                  newMobileNumber += char;
+                }
+            } 
+                salesForceNewData.mobile = newMobileNumber;
+                leadsNewData.Phone = newMobileNumber;
+            }
+            break;    
               case "Course you are looking for":
                 salesForceNewData.interest = question.answer;
                 leadsNewData.Interested_Topic = question.answer;
