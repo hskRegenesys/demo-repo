@@ -303,7 +303,7 @@ function RequestForm(props: any) {
             <div className=" ">
               <div className="">
                 <select
-                  aria-labelledby="lbl-main-menu-mob"
+                  aria-label="Select Course"
                   name="Course"
                   value={programmeOfInterest}
                   className={`select-course form-select${
@@ -349,6 +349,7 @@ function RequestForm(props: any) {
               type="submit"
               className={Styles.FormButton}
               disabled={btnDisable}
+              aria-label="submit button"
             >
               <i className=""></i>
               <span className={Styles.FormButtonText}>Submit</span>
@@ -356,7 +357,10 @@ function RequestForm(props: any) {
           </div>
           <small className={Styles.formFooterText}>
             By submitting this form, <br /> you agree to our
-            <a href="https://www.digitalregenesys.com/privacy-policy">
+            <a
+              href="https://www.digitalregenesys.com/privacy-policy"
+              aria-label="Privacy policy"
+            >
               Privacy Policy
             </a>
             .

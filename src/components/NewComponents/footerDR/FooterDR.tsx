@@ -47,42 +47,62 @@ const FooterContent2: React.FC = () => (
         </a>
       </p>
       <ul>
-        <a href="https://www.digitalregenesys.com/all-courses/data-science">
-          <li>Data Science</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/all-courses/cyber-security">
-          <li>Cybersecurity</li>
-        </a>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/data-science">
+            Data Science
+          </a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/cyber-security">
+            Cybersecurity
+          </a>
+        </li>
         {/* <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
           <li>Digital Marketing</li>
         </a> */}
-        <a href="https://www.digitalregenesys.com/all-courses/artificial-intelligence">
-          <li>Artificial Intelligence</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/all-courses/project-management">
-          <li>Project Management</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/all-courses/full-stack-development">
-          <li>Full Stack Development</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
-          <li>Digital Marketing</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/all-courses/design-thinking">
-          <li>Design Thinking</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/all-courses/data-and-business-analytics">
-          <li>Data and Business Analytics</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/all-courses/management-advancement">
-          <li>Management Advancement</li>
-        </a>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/artificial-intelligence">
+            Artificial Intelligence
+          </a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/project-management">
+            Project Management
+          </a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/full-stack-development">
+            Full Stack Development
+          </a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
+            Digital Marketing
+          </a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/design-thinking">
+            Design Thinking
+          </a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/data-and-business-analytics">
+            Data and Business Analytics
+          </a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/management-advancement">
+            Management Advancement
+          </a>
+        </li>
         {/* <a href="https://www.digitalregenesys.com//all-courses/operations-and-supply-chain-management">
           <li>Operations and supply chain management</li>
         </a> */}
-        <a href="https://www.digitalregenesys.com/all-courses/product-management">
-          <li> Product Management</li>
-        </a>
+        <li>
+          <a href="https://www.digitalregenesys.com/all-courses/product-management">
+            Product Management
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -95,16 +115,15 @@ const FooterContent3: React.FC = () => (
         <strong className={styles.strong}>About</strong>
       </p>
       <ul>
-        <a href="https://www.digitalregenesys.com/about">
-          <li>Our Story</li>
-        </a>
-
-        <a href="https://www.digitalregenesys.com/blog">
-          <li>Blogs</li>
-        </a>
-        <a href="https://www.digitalregenesys.com/contact">
-          <li>Contact</li>
-        </a>
+        <li>
+          <a href="https://www.digitalregenesys.com/about">Our Story</a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/blog">Blogs</a>
+        </li>
+        <li>
+          <a href="https://www.digitalregenesys.com/contact">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
