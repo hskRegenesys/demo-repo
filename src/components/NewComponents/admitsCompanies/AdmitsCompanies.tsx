@@ -68,14 +68,14 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
           onClick={handleEnrollButtonClick}
         >
           Enrol Now
-          <div className={Styles.enrollIcon}>
+          {/* <div className={Styles.enrollIcon}>
             <Image
               src={admitsButtonIcon}
               alt="Enrol Icon"
               width={16}
               height={16}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
