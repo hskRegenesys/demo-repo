@@ -196,7 +196,8 @@ const FooterDR: React.FC<FooterDRProps> = ({ handleEnrollButtonClick }) => (
       </div>
       <div className={styles.footerTextDesktop}>
         <p>
-          Copyright © 2024 | Digital Regenesys (Pvt) Ltd | All Rights Reserved
+          Copyright © 2024 | Regenesys Business School (Pty) Ltd | All Rights
+          Reserved
         </p>
         <div className={styles.footerTextInside}>
           <a href="https://www.digitalregenesys.com/terms-and-conditions">
@@ -220,7 +221,8 @@ const FooterDR: React.FC<FooterDRProps> = ({ handleEnrollButtonClick }) => (
         </div>
         <div className={styles.footerText}>
           <p>
-            Copyright © 2024 | Digital Regenesys (Pvt) Ltd | All Rights Reserved
+            Copyright © 2024 | Regenesys Business School (Pty) Ltd | All Rights
+            Reserved
             <a href="https://www.digitalregenesys.com/terms-and-conditions">
               | Terms & Conditions
             </a>
