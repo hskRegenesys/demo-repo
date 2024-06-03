@@ -237,7 +237,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         }}
       /> */}
 
-      {/* <Script
+      <Script
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
@@ -259,8 +259,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
         const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
         const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
-        const utmUrl = '${currentUtmUrl}'
-
+       
         const salesForceData = {
           domain: "crm",
           type: "add_lead_to_crm",
@@ -334,15 +333,21 @@ const MyApp = ({ Component, pageProps }: any) => {
               }
             break;
             case "Mobile Number":     
-            if (!item?.answer?.startsWith("+")) {
-              const countryCode = getCountryCode(salesForceData?.country);
-              salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
-              leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
-             } else {
-              salesForceData.mobile = item.answer;
-              leadsData.Phone = question.answer;
+              if (!item?.answer?.startsWith("+")) {
+                  const countryCode = getCountryCode(salesForceData?.country);
+                  salesForceData.mobile = countryCode + item?.answer?.substring(0, 9);
+                  leadsData.Phone = countryCode + item?.answer?.substring(0, 9);
+              } else {
+                let mobileNumber = "";
+              for (let char of item?.answer) {
+                  if (char !== ' ') {
+                    mobileNumber += char;
+                  }
+              } 
+              salesForceData.mobile = mobileNumber;
+                  leadsData.Phone = mobileNumber;
               }
-            break;
+              break;   
             case "Course you are looking for":
               salesForceData.interest = item.answer;
               leadsData.Interested_Topic = item.answer;
@@ -408,7 +413,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         const utmCompaign = '${utm_campaign ? utm_campaign : "DR_Website"}'
         const utmContent = '${utm_content ? utm_content : "Dr_website_chat"}'
         const utmMedium = '${utm_medium ? utm_medium : "DR Website"}'
-        const utmUrl = '${currentUtmUrl}'
         
         const salesForceNewData = {
           domain: "crm",
@@ -483,15 +487,21 @@ const MyApp = ({ Component, pageProps }: any) => {
                 }
               break;
               case "Mobile Number":     
-                if (!question?.answer?.startsWith("+")) {
-                 const countryCode = getCountryCode(salesForceNewData?.country);
-                 salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
-                 leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
-             } else {
-                 salesForceNewData.mobile = question.answer;
-                 leadsNewData.Phone = question.answer;
-             }
-              break;    
+              if (!question?.answer?.startsWith("+")) {
+                  const countryCode = getCountryCode(salesForceNewData?.country);
+                  salesForceNewData.mobile = countryCode + question?.answer?.substring(0, 9);
+                  leadsNewData.Phone = countryCode + question?.answer?.substring(0, 9);
+              } else {
+                let newMobileNumber = "";
+              for (let char of question?.answer) {
+                  if (char !== ' ') {
+                    newMobileNumber += char;
+                  }
+              } 
+                  salesForceNewData.mobile = newMobileNumber;
+                  leadsNewData.Phone = newMobileNumber;
+              }
+              break;   
               case "Course you are looking for":
                 salesForceNewData.interest = question.answer;
                 leadsNewData.Interested_Topic = question.answer;
@@ -546,7 +556,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       };
     `,
         }}
-      /> */}
+      />
 
       {/* Google Tag Script End */}
     </ContextProvider>

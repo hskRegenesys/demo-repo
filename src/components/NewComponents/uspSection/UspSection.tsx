@@ -123,9 +123,9 @@ const UspSection: React.FC = () => {
         </div>
         <div className={styles.uspSection}>
           <div className={styles.uspCard}>
-            <h4 className={styles.uspGreenText}>
+            <h3 className={styles.uspGreenText}>
               {uspLocationCard.uspEnrollmentCount}
-            </h4>
+            </h3>
             <p className={styles.CardText}>{uspLocationCard.uspLocationText}</p>
           </div>
           <div className={`${styles.uspCard} ${styles.enrollmentCard}`}>

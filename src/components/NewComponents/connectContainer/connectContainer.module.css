@@ -55,7 +55,7 @@
   padding-left: 20px;
 }
 
-.textList li {
+.textList p {
   color: var(--light-text-white, #fff);
 
   font-size: 16px;
