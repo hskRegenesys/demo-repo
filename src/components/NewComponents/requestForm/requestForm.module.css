@@ -34,7 +34,7 @@
   border-radius: 10px;
   border: 1px solid var(--border-border-dark, #ced1d9);
   background: var(--primary-primary-white, #fff);
-  color: #858c9a;
+  color: #555963;
 
   font-size: 14px;
 
@@ -99,10 +99,21 @@
 .formFooterText {
   font-size: 14px;
 
-  color: #858c9a;
+  color: #555963;
   margin-top: 13px;
   line-height: 18px;
   margin: 18px auto;
   display: table;
   text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
