@@ -220,7 +220,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/*End Google Tag Manager (noscript) */}
 
-      {/* <Script
+      <Script
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
@@ -235,9 +235,9 @@ const MyApp = ({ Component, pageProps }: any) => {
           })();
               `,
         }}
-      /> */}
+      />
 
-      {/* <Script
+      <Script
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
@@ -546,7 +546,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       };
     `,
         }}
-      /> */}
+      />
 
       {/* Google Tag Script End */}
     </ContextProvider>
