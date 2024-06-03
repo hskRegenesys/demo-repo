@@ -951,12 +951,12 @@ const MainCoursesDynimicData = {
           contentHeading: "World Class Faculty",
           tutors: "50+ Tutors",
           facultyCard: [
-            {
-              facultyImg: "/assets/images/allImages/yatin_karnik.webp",
-              facultyName: "Dr. Yatin Karnik",
-              facultyEducation: "Ph.D. in Management",
-              yearsOfExperience: "30+",
-            },
+            // {
+            //   facultyImg: "/assets/images/allImages/yatin_karnik.webp",
+            //   facultyName: "Dr. Yatin Karnik",
+            //   facultyEducation: "Ph.D. in Management",
+            //   yearsOfExperience: "30+",
+            // },
             {
               facultyImg: "/assets/images/allImages/dennis-laxton.webp",
               facultyName: "Dr. Dennis Laxton",
@@ -1334,13 +1334,6 @@ const MainCoursesDynimicData = {
               facultyEducation: "Ph.D. in Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
-            },
-            {
-              facultyImg: "/assets/images/allImages/dr_shilpa_joshi.webp",
-              facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "Head of Academics",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "20+ ",
             },
           ],
         },
@@ -2678,13 +2671,6 @@ const MainCoursesDynimicData = {
               facultyEducation: "Ph.D. in Computer Science",
               yearsOfExperience: "15+",
             },
-            {
-              facultyImg: "/assets/images/allImages/dr_shilpa_joshi.webp",
-              facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "Head of Academics",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "20+ ",
-            },
           ],
         },
 
@@ -3145,13 +3131,6 @@ const MainCoursesDynimicData = {
               facultyEducation: "Ph.D. in Computer Science",
               courseName: "Senior Lecturer",
               yearsOfExperience: "11+ ",
-            },
-            {
-              facultyImg: "/assets/images/allImages/dr_shilpa_joshi.webp",
-              facultyName: "Dr. Shilpa Joshi",
-              facultyEducation: "Head of Academics",
-              courseName: "Senior Lecturer",
-              yearsOfExperience: "20+ ",
             },
           ],
         },
