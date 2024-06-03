@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { injectStyle } from "react-toastify/dist/inject-style";
+import toast, { Toaster } from "react-hot-toast";
 import validator from "validator";
 import _ from "lodash";
 import { countryCodeService, courseService, leadService } from "src/services";
@@ -91,48 +89,30 @@ function RequestForm(props: any) {
     );
     const brochureName: any = brochureDetails[selectedCourse.code];
 
-    try {
-      const result = await leadService.saveLead(data);
+    const result = await leadService.saveLead(data);
 
-      if (result?.data && props?.title === "Download Brochure") {
-        const response = await courseService.downloadBrochure(
-          brochureName?.name
-        );
-        setSubmitted(true);
-        toast.success("Thank you for applying! We will get back to you.", {
-          position: "top-right",
-          autoClose: 3000,
-          className: Styles.tost,
-        });
-        props.onFormSubmit();
-        reset();
-        downloadFromBlob(response?.data, brochureName?.name) == false;
-        if (response?.status === 200) {
-          mixpanel.track("submit-brochure-form", { submit_value: true });
-        }
-      } else {
-        props.isWhatsapp
-          ? router.push(
-              "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
-            )
-          : setSubmitted(true);
-        toast.success("Thank you for applying! We will get back to you.", {
-          position: "top-right",
-          autoClose: 3000,
-          className: Styles.tost,
-        });
-        mixpanel.track("submit-counselling-form", { submit_value: true });
-        props.onFormSubmit();
-        reset();
+    if (result?.data && props?.title === "Download Brochure") {
+      const response = await courseService.downloadBrochure(brochureName?.name);
+      setSubmitted(true);
+
+      props.onFormSubmit();
+      reset();
+      downloadFromBlob(response?.data, brochureName?.name) == false;
+      if (response?.status === 200) {
+        mixpanel.track("submit-brochure-form", { submit_value: true });
       }
-    } catch (error) {
-      console.error("Error submitting form", error);
-      toast.error("An error occurred. Please try again.", {
-        position: "top-right",
-        autoClose: 3000,
-      });
-      setBtnDisable(false);
     }
+    if (props?.title !== "Download Brochure") {
+      props.isWhatsapp
+        ? router.push(
+            "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
+          )
+        : setSubmitted(true);
+      mixpanel.track("submit-counselling-form", { submit_value: true });
+      props.onFormSubmit();
+      reset();
+    }
+    notify();
   };
 
   let courses: any = [];
@@ -190,15 +170,16 @@ function RequestForm(props: any) {
     setFormInteraction(true);
     mixpanel.track("partial_submitted");
   };
-
-  if (typeof window !== "undefined") {
-    injectStyle();
-  }
+  const notify = () =>
+    toast.success("Thank you for applying! We will get back to you.", {
+      position: "top-right",
+      duration: 3000,
+      className: Styles.tost,
+    });
 
   return (
     <div className={Styles.RequestFormStyle}>
-      <ToastContainer />
-
+      <Toaster />
       <form
         className={Styles.formContainer}
         onSubmit={handleSubmit(onSubmit)}
@@ -206,7 +187,6 @@ function RequestForm(props: any) {
       >
         <div className={Styles.FormCard}>
           <strong className={Styles.Title}>
-            {" "}
             {props.title ? props.title : "Request a call"}
           </strong>
           <div className={Styles.formContentInput}>
