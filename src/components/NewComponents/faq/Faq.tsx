@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Styles from "./faq.module.css";
 import Image from "next/image";
+
 interface FAQData {
   sections: {
     heading: string;
@@ -13,10 +14,14 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
     data.sections.length > 0 ? data.sections[0].heading : null
   );
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
-  const imageUrl = `${process.env.awsImage_url}`;
 
   const toggleAnswer = (index: number) => {
     setSelectedQuestion(selectedQuestion === index ? null : index);
+  };
+
+  const handleHeadingClick = (heading: string) => {
+    setSelectedHeading(heading);
+    setSelectedQuestion(null); // Reset selected question when heading changes
   };
 
   return (
@@ -28,7 +33,7 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
             {data.sections.map((section, index) => (
               <li
                 key={index}
-                onClick={() => setSelectedHeading(section.heading)}
+                onClick={() => handleHeadingClick(section.heading)}
                 className={`${Styles.heading} ${
                   selectedHeading === section.heading
                     ? Styles.selectedHeding
@@ -63,8 +68,7 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
                     >
                       <h3>{faq.question}</h3>
                       <Image
-                        // src={data.arrowIcon}
-                        src={`${imageUrl}Icons/arrow_drop_down.svg`}
+                        src="/assets/images/allImages/arrow_drop_down.svg"
                         alt="icon Faq"
                         className={`${Styles.arrowIcon} ${
                           selectedQuestion === index ? Styles.selectedarrow : ""
@@ -99,25 +103,28 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
   const [openHeadingDropdown, setOpenHeadingDropdown] = useState<string | null>(
     null
   );
-  const [openQuestionDropdown, setOpenQuestionDropdown] = useState<
-    string | null
-  >(null);
-  const imageUrl = `${process.env.awsImage_url}`;
 
   const toggleAnswer = (index: number, heading: string) => {
+    if (openHeadingDropdown !== heading) {
+      // If the heading dropdown is not open, do nothing
+      return;
+    }
+    // Toggle the question within the open heading dropdown
     setSelectedQuestion(selectedQuestion === index ? null : index);
-    // Toggle questions dropdown independently
-    setOpenQuestionDropdown(openQuestionDropdown === heading ? null : heading);
-    // Close heading dropdown when clicking on a question
-    setOpenHeadingDropdown(null);
   };
 
   const toggleDropdown = (heading: string) => {
-    // Toggle heading dropdown independently
-    setOpenHeadingDropdown((prev) => (prev === heading ? null : heading));
-    // Close questions dropdown when clicking on a heading
-    setOpenQuestionDropdown(null);
+    if (openHeadingDropdown === heading) {
+      // Close the heading dropdown and any open questions within it
+      setOpenHeadingDropdown(null);
+      setSelectedQuestion(null);
+    } else {
+      // Open the new heading dropdown and close any open questions
+      setOpenHeadingDropdown(heading);
+      setSelectedQuestion(null);
+    }
   };
+
   return (
     <div className={Styles.faqMobile}>
       <h2 className={`${Styles.topcontentMobile}`}>FAQ</h2>
@@ -151,7 +158,7 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                   }`}
                 >
                   <Image
-                    src={`${imageUrl}Icons/arrow_drop_down.svg`}
+                    src="/assets/images/allImages/arrow_drop_down.svg"
                     alt="icon Faq"
                     width={20}
                     height={20}
@@ -159,34 +166,37 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
                 </div>
                 {openHeadingDropdown === section.heading && (
                   <ul className={Styles.dropdownListMobile}>
-                    {section.faqs.map((faq, index) => (
+                    {section.faqs.map((faq, faqIndex) => (
                       <li
-                        key={index}
+                        key={faqIndex}
                         className={`${Styles.dropdownItem} ${
-                          selectedQuestion === index
+                          selectedQuestion === faqIndex
                             ? Styles.selectedQuestionMobile
                             : ""
                         }`}
-                        onClick={() => toggleAnswer(index, section.heading)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleAnswer(faqIndex, section.heading);
+                        }}
                       >
                         <div className={Styles.questionContainerMobile}>
                           <h3>{faq.question}</h3>
                           <div
                             className={`${Styles.arrowIconMobilequstion} ${
-                              selectedQuestion === index
+                              selectedQuestion === faqIndex
                                 ? Styles.selectedarrowMobilequstion
                                 : ""
                             }`}
                           >
                             <Image
-                              src={`${imageUrl}Icons/arrow_drop_down.svg`}
+                              src="/assets/images/allImages/arrow_drop_down.svg"
                               alt="icon Faq"
                               width={20}
                               height={20}
                             />
                           </div>
                         </div>
-                        {selectedQuestion === index && (
+                        {selectedQuestion === faqIndex && (
                           <p
                             className={Styles.answerMobile}
                             dangerouslySetInnerHTML={{
@@ -215,9 +225,7 @@ const Faq: React.FC<{ data: FAQData }> = ({ data }) => {
     <div className={Styles.faqContainer}>
       {/* Render the desktop FAQ component */}
       <FaqDesktop data={data} />
-      <FaqMobile data={data} />
-
-      {/* Mobile FAQ component can be added here */}
+      <FaqMobile data={data} />{" "}
     </div>
   );
 };
