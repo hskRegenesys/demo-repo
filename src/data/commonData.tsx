@@ -1050,7 +1050,7 @@ const Data = {
     },
 
     description: {
-      home: "Upskill yourself with Digital Regensys online courses for digital-age skills to become future-ready for the dynamic workplace in the disruptive digital age.",
+      home: "Upskill yourself with Digital Regenesys  online courses for digital-age skills to become future-ready for the dynamic workplace in the disruptive digital age.",
       about:
         "At Digital Regenesys, we provide top-notch education to empower all students for success in the 5th Industrial Revolution and beyond. Discover our digital courses now.",
       "management-advancement":
@@ -1447,7 +1447,7 @@ const Data = {
 
       //==================FSD==========================
       "full-stack-developer":
-        "Full Stack Developer: Explore the role of a full stack developer, mastering both front-end and back-end technologies. Learn from Digital Regensys Now.",
+        "Full Stack Developer: Explore the role of a full stack developer, mastering both front-end and back-end technologies. Learn from Digital Regenesys  Now.",
       "full-stack-developer-salary":
         "Full Stack Developer Salary: Discover insights into the average salary of a full stack developer. Understand compensation trends & opportunities in this field.",
       "what-is-a-full-stack-developer":
