@@ -47,12 +47,7 @@ const FacultyData = [
     facultyEducation: "Ph.D. in Business Management",
     yearsOfExperience: "12+",
   },
-  {
-    facultyImg: "/assets/images/allImages/yatin_karnik.webp",
-    facultyName: "Dr. Yatin Karnik",
-    facultyEducation: "Ph.D. in Management",
-    yearsOfExperience: "30+",
-  },
+
   {
     facultyImg: "/assets/images/allImages/dennis-laxton.webp",
     facultyName: "Dr. Dennis Laxton",
