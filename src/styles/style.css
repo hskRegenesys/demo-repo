@@ -19327,12 +19327,13 @@ h6.designation {
 
 .contact-section input,
 .contact-section textarea {
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5);
   padding: 12px;
-  border: 2px solid #000;
   border-radius: 12px;
-  height: 62px;
+  height: 62px; */
 }
+
+
 
 .contact-section textarea {
   width: 100%;
@@ -19591,6 +19592,7 @@ h6.designation {
 
 input.PhoneInputInput {
   padding-left: 66px !important;
+  background-color: transparent;
 }
 
 .PhoneInputCountry {
@@ -19599,9 +19601,11 @@ input.PhoneInputInput {
   margin-left: 18px;
   height: 10px;
 }
+
 .inputForm .PhoneInputCountry {
   margin: 5px;
 }
+
 .inputForm input.PhoneInputInput {
   padding-left: 40px !important;
   color: #555963;
