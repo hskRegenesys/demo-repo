@@ -40,7 +40,7 @@ const PrivacyPolicy = () => {
               <div className="effective-date">
                 <strong>Effective Date: </strong>
                 <span>
-                  01<sup>st</sup> June, 2023
+                  13<sup>th</sup> June, 2024
                 </span>
               </div>
               <h6>{listTitleOne}</h6>
