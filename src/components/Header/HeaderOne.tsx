@@ -56,7 +56,6 @@ const HeaderOne = ({
   const [nav, setNav] = useState<any>(navItems);
   const { toggleMenu, toggleSearch } = contextRoots;
   const newNavItems = onePage ? navItemsTwo : nav;
-  const imageUrl = imageBaseUrl();
 
   let Logo: any =
     logo === 2

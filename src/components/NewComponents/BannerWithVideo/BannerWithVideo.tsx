@@ -54,7 +54,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
   const [count, setCount] = useState("0");
   const [title, setTitle] = useState("");
-  const imageUrl = `${process.env.awsImage_url}`;
 
   useEffect(() => {
     let start = 0;
@@ -91,7 +90,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
             <div className={styles.uspSectionContainer}>
               <div className={styles.uspCardCountry}>
                 <Image
-                  //src={`${imageUrl}${uspLocationCard.usplocationIcon}`}
                   src={uspLocationCard.usplocationIcon}
                   alt="Icon Location"
                   width={40}
@@ -105,7 +103,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 className={`${styles.uspCardCount} ${styles.enrollmentCard}`}
               >
                 <Image
-                  //src={`${imageUrl}${uspEnrollmentCard.StudentEnrolIcon}`}
                   src={uspEnrollmentCard.StudentEnrolIcon}
                   alt="Icon Enroll"
                   width={40}
@@ -122,7 +119,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               </div>
               <div className={styles.uspCardUpskill}>
                 <Image
-                  //src={`${imageUrl}${uspUpskillCard.uspBookIcon}`}
                   src={uspUpskillCard.uspBookIcon}
                   alt="Icon Book"
                   width={40}
@@ -151,7 +147,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               >
                 <Image
                   className={styles.brochureIcon}
-                  //src={`${imageUrl}${BrochureIcon}`}
                   src={BrochureIcon}
                   alt="Brochure Icon"
                   width={24}
@@ -167,7 +162,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
           <div className={styles.imageCard}>
             <img
               className={styles.imageBanner}
-              //src={`${imageUrl}${data.BannerImgDesktop}`}
               src={data.BannerImgDesktop}
               alt={"Banner for Course"}
             />
@@ -185,7 +179,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                 </div>
                 <div className={styles.playIconStyle}>
                   <img
-                    //src={`${imageUrl}${vidoPlayIcon}`}
                     src={vidoPlayIcon}
                     className={styles.playIcon}
                     alt="play Icon"
