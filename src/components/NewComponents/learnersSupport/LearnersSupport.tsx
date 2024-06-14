@@ -26,7 +26,7 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
   data,
   handleEnrollButtonClick,
 }) => {
-  const imageUrl = imageBaseUrl();
+  // const imageUrl = imageBaseUrl();
 
   return (
     <div className={Styles.LsSectionContainer}>
