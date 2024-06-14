@@ -23,7 +23,7 @@ export const privacyPolicy = {
   ],
   listGroupThree: [
     "Service Providers: We may share your personal information with trusted third-party service providers who assist us in operating our website, conducting business, or providing services to you. These service providers are obligated to maintain the confidentiality and security of your personal information.",
-    "Legal Requirements: We may disclose your personal information if required to do so by law or if we believe that such action is necessary to (a) comply with a legal obligation, (b) protect and defend our rights or property, (c) prevent fraud, (d) act in urgent circumstances to protect the personal safety of users of our website or the public, or (e) enforce our Privacy Policy and Terms of Use.",
+    "Legal Requirements: We may disclose your personal information if required to do so by law or if we believe that such action is necessary to (a) comply with a legal obligation, (b) protect and defend our rights or property, (c) prevent fraud, (d) act in urgent circumstances to protect the personal safety of users of our website or the public, or (e) enforce our Privacy Policy and Terms of Use. The above shall be actioned in accordance with the relevant local data protection legislation, namely, the Data Protection Act 2018.",
     "Business Transfers: In the event of a merger, acquisition, sale of assets, or bankruptcy, your personal information may be transferred to a third party as part of the transaction. We will notify you via email and/or a prominent notice on our website of any change in ownership or uses of your personal information.",
   ],
   listGroupFour: [
@@ -33,13 +33,13 @@ export const privacyPolicy = {
     "You can update or correct your personal information by logging into your account or contacting us directly via email at info.digital@regenesys.net. You may also unsubscribe from our marketing communications by following the instructions provided in the emails you receive from us.",
   ],
   listGroupSix: [
-    "Our website and services are not directed to individuals under the age of 21. We do not knowingly collect personal information from children under 21. If we become aware that we have collected personal information from a child under the age of 21, we will take steps to delete it promptly.",
+    "Our website and services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children under 21. If we become aware that we have collected personal information from a child under the age of 18, we will take steps to delete it promptly.",
   ],
   listGroupSeven: [
     `We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the "Effective Date" at the top will reflect the date of the most recent changes. We encourage you to review this Privacy Policy periodically to stay informed about any changes to how we collect, use, disclose, or protect your personal information. Your continued use of our website or services after any modifications to this Privacy Policy constitutes your acceptance of the revised policy.`,
   ],
   listGroupEight: [
-    `Our website is operated and managed on servers located within the United States. If you access our website or use our services from outside the United States, please be aware that your personal information may be transferred to, stored, and processed in the United States, where our servers are located. By using our website or services, you consent to the transfer of your personal information to the United States, which may have different data protection laws than your country of residence.`,
+    `Our website is operated and managed on servers located within the United States. If you access our website or use our services from outside the United States, please be aware that your personal information may be transferred to, stored, and processed in the United States, where our servers are located. By using our website or services, you consent to the transfer of your personal information to the United States, which may have different data protection laws than the United Kingdom.`,
   ],
   listGroupNine: [
     `If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:`,
