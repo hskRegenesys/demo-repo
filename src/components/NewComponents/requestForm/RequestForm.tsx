@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { injectStyle } from "react-toastify/dist/inject-style";
+import toast, { Toaster } from "react-hot-toast";
 import validator from "validator";
 import _ from "lodash";
 import { countryCodeService, courseService, leadService } from "src/services";
@@ -91,48 +89,30 @@ function RequestForm(props: any) {
     );
     const brochureName: any = brochureDetails[selectedCourse.code];
 
-    try {
-      const result = await leadService.saveLead(data);
+    const result = await leadService.saveLead(data);
 
-      if (result?.data && props?.title === "Download Brochure") {
-        const response = await courseService.downloadBrochure(
-          brochureName?.name
-        );
-        setSubmitted(true);
-        toast.success("Thank you for applying! We will get back to you.", {
-          position: "top-right",
-          autoClose: 3000,
-          className: Styles.tost,
-        });
-        props.onFormSubmit();
-        reset();
-        downloadFromBlob(response?.data, brochureName?.name) == false;
-        if (response?.status === 200) {
-          mixpanel.track("submit-brochure-form", { submit_value: true });
-        }
-      } else {
-        props.isWhatsapp
-          ? router.push(
-              "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
-            )
-          : setSubmitted(true);
-        toast.success("Thank you for applying! We will get back to you.", {
-          position: "top-right",
-          autoClose: 3000,
-          className: Styles.tost,
-        });
-        mixpanel.track("submit-counselling-form", { submit_value: true });
-        props.onFormSubmit();
-        reset();
+    if (result?.data && props?.title === "Download Brochure") {
+      const response = await courseService.downloadBrochure(brochureName?.name);
+      setSubmitted(true);
+
+      props.onFormSubmit();
+      reset();
+      downloadFromBlob(response?.data, brochureName?.name) == false;
+      if (response?.status === 200) {
+        mixpanel.track("submit-brochure-form", { submit_value: true });
       }
-    } catch (error) {
-      console.error("Error submitting form", error);
-      toast.error("An error occurred. Please try again.", {
-        position: "top-right",
-        autoClose: 3000,
-      });
-      setBtnDisable(false);
     }
+    if (props?.title !== "Download Brochure") {
+      props.isWhatsapp
+        ? router.push(
+            "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
+          )
+        : setSubmitted(true);
+      mixpanel.track("submit-counselling-form", { submit_value: true });
+      props.onFormSubmit();
+      reset();
+    }
+    notify();
   };
 
   let courses: any = [];
@@ -190,26 +170,36 @@ function RequestForm(props: any) {
     setFormInteraction(true);
     mixpanel.track("partial_submitted");
   };
-
-  if (typeof window !== "undefined") {
-    injectStyle();
-  }
+  const notify = () =>
+    toast.success("Thank you for applying! We will get back to you.", {
+      position: "top-right",
+      duration: 3000,
+      className: Styles.tost,
+    });
 
   return (
     <div className={Styles.RequestFormStyle}>
-      <ToastContainer />
-
+      <Toaster />
       <form
         className={Styles.formContainer}
         onSubmit={handleSubmit(onSubmit)}
         onBlur={handleFormBlur}
       >
         <div className={Styles.FormCard}>
-          <strong className={Styles.Title}>
-            {" "}
+          <strong
+            className={
+              props.type === "contact" ? Styles.TitleContact : Styles.Title
+            }
+          >
             {props.title ? props.title : "Request a call"}
           </strong>
-          <div className={Styles.formContentInput}>
+          <div
+            className={
+              props.type === "contact"
+                ? Styles.ContectForm
+                : Styles.formContentInput
+            }
+          >
             <div className={Styles.formContent}>
               <div className={Styles.inputLabelContainer}>
                 <input
@@ -237,129 +227,138 @@ function RequestForm(props: any) {
                   </small>
                 )}
               </div>
-            </div>
-            <div className={Styles.inputLabelContainer}>
-              <div className={Styles.inputFormContainer}>
-                <input
-                  className={`${errors?.Email && "invalid"} ${
-                    Styles.inputForm
-                  }`}
-                  placeholder="Email*"
-                  {...register("Email", {
-                    required: "*Email is Required",
-                    pattern: {
-                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "Invalid email address",
-                    },
-                  })}
-                  onKeyUp={(e) => {
-                    trigger("Email");
-                    mixpanel.track("Email Changed", {
-                      InputName: "Email",
-                      Filled: (e.target as HTMLInputElement)?.value !== "",
-                      newValue: (e.target as HTMLInputElement)?.value,
-                    });
-                  }}
-                />
-                {errors?.Email && (
-                  <small className={Styles.smallText}>
-                    {errors?.Email?.message}
-                  </small>
-                )}
-              </div>
-            </div>
-            <div className={Styles.inputLabelContainer}>
-              <div className={Styles.formGroupPositionRelative}>
-                <input
-                  className={Styles.inputForm}
-                  type="hidden"
-                  {...register("Phone", {
-                    required: "*Phone number is Required",
-                  })}
-                />
-                <PhoneInput
-                  international
-                  countryCallingCodeEditable={false}
-                  defaultCountry={geoLocationData?.country_code}
-                  placeholder="Select Country Code*"
-                  value={watch("Phone")}
-                  {...register("Phone", {
-                    required: "*Phone number is Required",
-                  })}
-                  onChange={(e) => {
-                    const phoneNumber = e ? e.toString() : "";
-                    const isValid = validator.isMobilePhone(phoneNumber);
-                    if (isValid) {
-                      setValue("Phone", phoneNumber);
-                      setPhoneNumber(phoneNumber);
-                      mixpanel.track("Phone Changed", {
-                        InputName: "Phone",
-                        Filled: phoneNumber !== "",
-                        newValue: phoneNumber,
+              <div className={Styles.inputLabelContainer}>
+                <div className={Styles.inputFormContainer}>
+                  <input
+                    className={`${errors?.Email && "invalid"} ${
+                      Styles.inputForm
+                    }`}
+                    placeholder="Email*"
+                    {...register("Email", {
+                      required: "*Email is Required",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Invalid email address",
+                      },
+                    })}
+                    onKeyUp={(e) => {
+                      trigger("Email");
+                      mixpanel.track("Email Changed", {
+                        InputName: "Email",
+                        Filled: (e.target as HTMLInputElement)?.value !== "",
+                        newValue: (e.target as HTMLInputElement)?.value,
                       });
-                      setPhoneNumberError("");
-                    } else {
-                      setPhoneNumberError("Valid phone number Required");
-                    }
-                  }}
-                  onBlur={() => {
-                    trigger("Phone");
-                  }}
-                  className={`inputForm ${phoneNumberError && "invalid"} ${
-                    Styles.inputForm
-                  }`}
-                />
-                {phoneNumberError ? (
-                  <small className={Styles.smallText}>{phoneNumberError}</small>
-                ) : (
-                  errors?.Phone && (
+                    }}
+                  />
+                  {errors?.Email && (
                     <small className={Styles.smallText}>
-                      {errors?.Phone?.message}
+                      {errors?.Email?.message}
                     </small>
-                  )
-                )}
+                  )}
+                </div>
               </div>
             </div>
-            <div className=" ">
-              <div className="">
-                <select
-                  aria-labelledby="lbl-main-menu-mob"
-                  name="Course"
-                  value={programmeOfInterest}
-                  className={`select-course form-select${
-                    errors?.Programme_Of_Interest &&
-                    " focus:border-red-500 focus:ring-red-500 border-red-500"
-                  } ${Styles.inputForm}`}
-                  {...register("Programme_Of_Interest", {
-                    required: "*Course is required",
-                  })}
-                >
-                  <option value="" disabled selected>
-                    Course you are looking for *
-                  </option>
 
-                  {courses.map((val: any) => (
-                    <option
-                      key={val.id}
-                      value={val.name}
-                      selected={val.code === props.CourseCode}
-                    >
-                      {val.name}
+            <div className={Styles.formsplit}>
+              <div className={Styles.inputLabelContainer}>
+                <div className={Styles.formGroupPositionRelative}>
+                  <input
+                    className={
+                      props.type === "contact"
+                        ? Styles.inputFormContact
+                        : Styles.inputForm
+                    }
+                    type="hidden"
+                    {...register("Phone", {
+                      required: "*Phone number is Required",
+                    })}
+                  />
+                  <PhoneInput
+                    international
+                    countryCallingCodeEditable={false}
+                    defaultCountry={geoLocationData?.country_code}
+                    placeholder="Select Country Code*"
+                    value={watch("Phone")}
+                    {...register("Phone", {
+                      required: "*Phone number is Required",
+                    })}
+                    onChange={(e) => {
+                      const phoneNumber = e ? e.toString() : "";
+                      const isValid = validator.isMobilePhone(phoneNumber);
+                      if (isValid) {
+                        setValue("Phone", phoneNumber);
+                        setPhoneNumber(phoneNumber);
+                        mixpanel.track("Phone Changed", {
+                          InputName: "Phone",
+                          Filled: phoneNumber !== "",
+                          newValue: phoneNumber,
+                        });
+                        setPhoneNumberError("");
+                      } else {
+                        setPhoneNumberError("Valid phone number Required");
+                      }
+                    }}
+                    onBlur={() => {
+                      trigger("Phone");
+                    }}
+                    className={`inputForm ${phoneNumberError && "invalid"} ${
+                      Styles.inputForm
+                    }`}
+                  />
+                  {phoneNumberError ? (
+                    <small className={Styles.smallText}>
+                      {phoneNumberError}
+                    </small>
+                  ) : (
+                    errors?.Phone && (
+                      <small className={Styles.smallText}>
+                        {errors?.Phone?.message}
+                      </small>
+                    )
+                  )}
+                </div>
+              </div>
+              <div className=" ">
+                <div className="">
+                  <select
+                    aria-label="Select Course"
+                    name="Course"
+                    value={programmeOfInterest}
+                    className={`select-course form-select${
+                      errors?.Programme_Of_Interest &&
+                      " focus:border-red-500 focus:ring-red-500 border-red-500"
+                    } ${Styles.inputForm}`}
+                    {...register("Programme_Of_Interest", {
+                      required: "*Course is required",
+                    })}
+                  >
+                    <option value="" disabled selected>
+                      Course you are looking for *
                     </option>
-                  ))}
-                </select>
-                {errors?.Programme_Of_Interest && (
-                  <small className={Styles.smallText}>
-                    {errors?.Programme_Of_Interest?.message}
-                  </small>
-                )}
-                {(programmeOfInterest === "Digital Marketing" ||
-                  programmeOfInterest === "Design Thinking") && (
-                  <small className={Styles.formFooterText}>
-                    *Learn collaboratively! Apply with 15 people to begin the
-                    course
-                  </small>
-                )}
+
+                    {courses.map((val: any) => (
+                      <option
+                        key={val.id}
+                        value={val.name}
+                        selected={val.code === props.CourseCode}
+                      >
+                        {val.name}
+                      </option>
+                    ))}
+                  </select>
+                  {errors?.Programme_Of_Interest && (
+                    <small className={Styles.smallText}>
+                      {errors?.Programme_Of_Interest?.message}
+                    </small>
+                  )}
+                  {(programmeOfInterest === "Digital Marketing" ||
+                    programmeOfInterest === "Design Thinking") && (
+                    <small className={Styles.formFooterText}>
+                      *Learn collaboratively! Apply with 15 people to begin the
+                      course
+                    </small>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -369,6 +368,7 @@ function RequestForm(props: any) {
               type="submit"
               className={Styles.FormButton}
               disabled={btnDisable}
+              aria-label="submit button"
             >
               <i className=""></i>
               <span className={Styles.FormButtonText}>Submit</span>
@@ -376,7 +376,10 @@ function RequestForm(props: any) {
           </div>
           <small className={Styles.formFooterText}>
             By submitting this form, <br /> you agree to our
-            <a href="https://www.digitalregenesys.com/privacy-policy">
+            <a
+              href="https://www.digitalregenesys.com/privacy-policy"
+              aria-label="Privacy policy"
+            >
               Privacy Policy
             </a>
             .

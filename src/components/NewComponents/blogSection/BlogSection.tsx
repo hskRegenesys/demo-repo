@@ -58,7 +58,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             <SwiperSlide key={index}>
               <div key={index} className={Styles.blogCard}>
                 <Image
-                  //src={`${imageUrl}${card.blogImg}`}
+                  // src={`${imageUrl}${card.blogImg}`}
                   src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
@@ -81,8 +81,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                       Know More
                       <span className={Styles.arrowIcon}>
                         <Image
-                          src={`${imageUrl}Icons/Readmore.svg`}
-                          // src="/assets/images/new-component-assets/Readmore.svg"
+                          // src={`${imageUrl}Icons/Readmore.svg`}
+                          src="/assets/images/new-component-assets/Readmore.svg"
                           alt="card Star"
                           className={Styles.img}
                           width={12}

@@ -25,7 +25,13 @@ const RefundPolicy = () => {
             <div className=" p-0 privacy-policy">
               <h1 className="page-head">{heading}</h1>
               <h6>{titleIntro}</h6>
-              <p>{titleIntroParaph}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: titleIntroParaph
+                    .replace(/\n/g, "<br> ")
+                    .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;"),
+                }}
+              ></p>
 
               <h6>{titleAdmissionFee}</h6>
               <p>{titleAdmissionFeeParaph}</p>

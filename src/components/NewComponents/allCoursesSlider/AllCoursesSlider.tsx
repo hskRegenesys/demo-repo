@@ -56,7 +56,6 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
   const [show, setShow] = useState(false);
   const [thankYouShow, setThankYouShow] = useState<boolean>(false);
   const handleShow = () => setShow(true);
-  const imageUrl = imageBaseUrl();
 
   function redirectCard(name: any, code: any, id: any, parent_id: any) {
     if (

@@ -62,9 +62,9 @@ const MobileMenu = ({ onePage = false }) => {
                   <NavItem navItem={navItem} key={navItem.id} mobile />
                 ))}
               </ul> */}
-              <div>
+              <ul>
                 <NavItem />
-              </div>
+              </ul>
             </div>
           </nav>
           <div>
@@ -83,6 +83,7 @@ const MobileMenu = ({ onePage = false }) => {
                       layout="intrinsic"
                       width="24"
                       height="24"
+                      alt="login-icon"
                       src={"/assets/images/icons/icon_login.svg"}
                     />
                     <span className="btn-title-Mobile m-2">Login</span>

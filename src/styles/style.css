@@ -116,6 +116,11 @@ a {
   cursor: pointer;
   color: var(--thm-base);
 }
+b{
+  font-weight: 900;
+  font-family: Montserrat-Bold !important;
+
+}
 
 .link-title h2 {
   font-size: 40px;
@@ -19327,12 +19332,13 @@ h6.designation {
 
 .contact-section input,
 .contact-section textarea {
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5);
   padding: 12px;
-  border: 2px solid #000;
   border-radius: 12px;
-  height: 62px;
+  height: 62px; */
 }
+
+
 
 .contact-section textarea {
   width: 100%;
@@ -19591,6 +19597,7 @@ h6.designation {
 
 input.PhoneInputInput {
   padding-left: 66px !important;
+  background-color: transparent;
 }
 
 .PhoneInputCountry {
@@ -19599,13 +19606,14 @@ input.PhoneInputInput {
   margin-left: 18px;
   height: 10px;
 }
+
 .inputForm .PhoneInputCountry {
   margin: 5px;
 }
+
 .inputForm input.PhoneInputInput {
   padding-left: 40px !important;
-  
-  color: #858c9a;
+  color: #555963;
 }
 .blogs-apply-now .PhoneInputCountry {
   margin-top: 8px !important;
@@ -19743,11 +19751,13 @@ input.PhoneInputInput {
   margin-bottom: 15px;
   font-size: 14px;
   font-family: "Montserrat-semiBold";
-  text-align: justify;
 }
 .terms-list-items {
   position: relative;
 }
+
+.terms-list-items li  b {
+font-size: 16px !important;}
 
 .privacy-policy h5 {
   font-size: 16px;

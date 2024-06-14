@@ -26,7 +26,7 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
           <div className={styles.leftSection}>
             <h2 className={styles.heading}>{connectContainerHeader}</h2>
             <h2 className={styles.title}>{connectContainerTittle}</h2>
-            <ul className={styles.textList}>
+            <div className={styles.textList}>
               <div className={styles.iconContainer}>
                 {connectContainerText.map((text, index) => (
                   <div key={index} className={styles.icontext}>
@@ -56,11 +56,11 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
               <div className={styles.textContainer}>
                 {connectContainerText.map((text, index) => (
                   <div key={index} className={styles.textcontent}>
-                    <li>{text}</li>
+                    <p>{text}</p>
                   </div>
                 ))}
               </div>
-            </ul>
+            </div>
           </div>
           <div className={styles.rightSection}>
             <RequestForm onFormSubmit={onFormSubmit} />

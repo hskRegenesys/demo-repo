@@ -54,8 +54,8 @@ const BreadcrumbsDR = ({
                     <li className={Styles.separator}>
                       <Image
                         className={Styles.arrowIcon}
-                        src={`${imageUrl}Icons/arrowGray.svg`}
-                        // src="/assets/images/new-component-assets/arrowGray.svg"
+                        // src={`${imageUrl}Icons/arrowGray.svg`}
+                        src="/assets/images/new-component-assets/arrowGray.svg"
                         alt="Arrow Icon"
                         width={16}
                         height={16}
@@ -71,8 +71,8 @@ const BreadcrumbsDR = ({
                     <li className={Styles.separator}>
                       <Image
                         className={Styles.arrowIcon}
-                        src={`${imageUrl}Icons/arrowGray.svg`}
-                        // src="/assets/images/new-component-assets/arrowGray.svg"
+                        // src={`${imageUrl}Icons/arrowGray.svg`}
+                        src="/assets/images/new-component-assets/arrowGray.svg"
                         alt="Arrow Icon"
                         width={16}
                         height={16}
@@ -86,8 +86,8 @@ const BreadcrumbsDR = ({
                 <li className={Styles.separator}>
                   <Image
                     className={Styles.arrowIcon}
-                    src={`${imageUrl}Icons/arrowGray.svg`}
-                    // src="/assets/images/new-component-assets/arrowGray.svg"
+                    // src={`${imageUrl}Icons/arrowGray.svg`}
+                    src="/assets/images/new-component-assets/arrowGray.svg"
                     alt="Arrow Icon"
                     width={16}
                     height={16}

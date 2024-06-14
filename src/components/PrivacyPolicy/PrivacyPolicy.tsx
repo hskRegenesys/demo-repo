@@ -30,6 +30,9 @@ const {
 } = privacyPolicy;
 
 const PrivacyPolicy = () => {
+  const formattedHTML = listGroupFive.map((item, index) => (
+    <p key={index} dangerouslySetInnerHTML={{ __html: item }} />
+  ));
   return (
     <section className="privacy-bg">
       <div className="auto-container">
@@ -40,7 +43,7 @@ const PrivacyPolicy = () => {
               <div className="effective-date">
                 <strong>Effective Date: </strong>
                 <span>
-                  01<sup>st</sup> June, 2023
+                  13<sup>th</sup> June, 2024
                 </span>
               </div>
               <h6>{listTitleOne}</h6>
@@ -92,7 +95,8 @@ const PrivacyPolicy = () => {
                 <ul>
                   {listGroupFive?.map((items) => (
                     <li>
-                      <i className="far fa-check-circle"></i> {items}
+                      <i className="far fa-check-circle"></i>
+                      {formattedHTML}
                     </li>
                   ))}
                 </ul>
