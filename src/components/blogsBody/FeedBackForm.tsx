@@ -169,7 +169,7 @@ const FeedBackForm = () => {
               <div className="col-6 mt-2 feedback-form-wrapper">
                 <button
                   style={{ background: "#ffde59", color: "black" }}
-                  className="theme-btn btn-style-two mt-1 pt-1"
+                  className="theme-btn btn-style-two mt-1"
                   type="submit"
                 >
                   <i className="btn-curve"></i>
