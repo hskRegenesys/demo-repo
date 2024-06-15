@@ -5309,7 +5309,8 @@ tns-controls-tools {
 }
 
 .main-footer.normal-padding .widgets-section {
-  padding: 150px 0 0;
+  /* padding: 150px 0 0; */
+  padding: 0px 0 0;
 }
 
 .main-footer .footer-widget,
