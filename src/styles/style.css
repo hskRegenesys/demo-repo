@@ -289,6 +289,10 @@ p {
   left: 14px;
 }
 
+.feedback-form-wrapper .post-comment-btn{
+ padding-top: 0px !important;
+}
+
 @media (max-width: 1440px) {
   .page-wrapper.boxed-wrapper {
     max-width: 90%;
