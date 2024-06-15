@@ -230,6 +230,12 @@ const HeaderOne = ({
 
     variant === "blog" ? setNav(data2) : setNav(data);
   };
+  const handleKeyPress = (event: any) => {
+    if (event.key === "Enter") {
+      onSearch(event.target.value);
+    }
+  };
+
   useEffect(() => {
     allCourses();
   }, []);
@@ -324,15 +330,24 @@ const HeaderOne = ({
           </div>
           {variant === "blog" ? (
             <div className="other-links clearfix">
-              <div className="link-box">
-                <Space direction="vertical">
+              <div className="link-box search-container">
+                {/* <Space direction="vertical">
                   <Search
                     placeholder="Search Topics"
                     onSearch={onSearch}
                     style={{ width: 200 }}
                     loading={isSearching}
                   />
-                </Space>
+                </Space> */}
+
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Search Topics"
+                  onKeyPress={handleKeyPress}
+                  disabled={isSearching}
+                />
+                <span className="fa fa-search"></span>
               </div>
             </div>
           ) : (
