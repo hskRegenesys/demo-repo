@@ -39,18 +39,6 @@ const redirectURL = () => {
       permanent: true,
     },
 
-    // {
-    //   source: "/programs",
-    //   destination: "/all-courses",
-    //   permanent: true,
-    // },
-
-    // {
-    //   source: "/programsnew",
-    //   destination: "/all-courses-new",
-    //   permanent: true,
-    // },
-
     {
       source: "/programs/data-science/basic-data-science",
       destination: "/all-courses/data-science/basic-data-science",
@@ -548,21 +536,13 @@ const redirectURL = () => {
       destination: "/all-courses/data-science",
       permanent: true,
     },
-    // {
-    //   source: "/product-category/technology/?product_orderby=price",
-    //   destination: "/",
-    //   permanent: true,
-    // },
+
     {
       source: "/courses/professional-business-writing-skills/",
       destination: "/",
       permanent: true,
     },
-    // {
-    //   source: "/product-category/business/?product_count=36",
-    //   destination: "/",
-    //   permanent: true,
-    // },
+
     {
       source: "/sample-page/",
       destination: "/",
@@ -887,42 +867,12 @@ const redirectURL = () => {
       destination: "/",
       permanent: true,
     },
-    // {
-    //   source: "/new-home",
-    //   destination: "/home-new",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/sitemap",
-    //   destination: "/404",
-    //   permanent: true,
-    // },
+
     {
       source: "/site-map",
       destination: "/sitemap",
       permanent: true,
     },
-
-    // {
-    //   source: "/all-courses-new/design-thinking-new",
-    //   destination: "/404",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/all-courses-new/digital-marketing-new",
-    //   destination: "/404",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/all-courses-new/digital-marketing-1",
-    //   destination: "/404",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/all-courses-new/digital-marketing-1",
-    //   destination: "/404",
-    //   permanent: true,
-    // },
 
     //redirections from altaf end
     {
@@ -945,39 +895,13 @@ const redirectURL = () => {
       destination: "/all-courses/data-science",
       permanent: false,
     },
-    // {
-    //   source: "/all-course/data-science/applied-data-science",
-    //   destination: "/all-courses/data-science/applied-data-science",
-    //   permanent: true,
-    // },
+
     {
       source: "/all-course/project-management",
       destination: "/all-courses/project-management",
       permanent: true,
     },
-    // {
-    //   source: "/all-course/digital-marketing/basic-digital-marketing",
-    //   destination: "/all-courses/digital-marketing/basic-digital-marketing",
-    //   permanent: true,
-    // },
-    // {
-    //   source:
-    //     "/all-courses/digital-marketing/advanced-digital-marketing-course",
-    //   destination:
-    //     "/all-courses/digital-marketing/advance-digital-marketing-course",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/all-course/digital-marketing/advanced-digital-marketing",
-    //   destination:
-    //     "/all-courses/digital-marketing/advance-digital-marketing-course",
-    //   permanent: true,
-    // },
-    // {
-    //   source: "/all-course/digital-marketing/applied-digital-marketing",
-    //   destination: "/all-courses/digital-marketing/applied-digital-marketing",
-    //   permanent: true,
-    // },
+
     {
       source: "/all-course",
       destination: "/all-courses",
@@ -998,11 +922,7 @@ const redirectURL = () => {
       destination: "/all-courses",
       permanent: true,
     },
-    // {
-    //   source: "/all-courses/digital-marketing",
-    //   destination: "/all-courses",
-    //   permanent: false,
-    // },
+
     {
       source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
       destination: "/all-courses/digital-marketing",
@@ -1035,11 +955,6 @@ const redirectURL = () => {
       permanent: false,
     },
 
-    // {
-    //   source: "/all-courses/design-thinking",
-    //   destination: "/all-courses",
-    //   permanent: false,
-    // },
     {
       source: "/all-courses/cyber-security/1000",
       destination: "/all-courses/cyber-security",
@@ -1083,11 +998,7 @@ const redirectURL = () => {
       destination: "/all-courses/digital-marketing",
       permanent: true,
     },
-    // {
-    //   source: "/all-courses-new",
-    //   destination: "/all-courses",
-    //   permanent: true,
-    // },
+
     {
       source: "/undefined",
       destination: "/home",
@@ -1189,7 +1100,512 @@ const redirectURL = () => {
       destination: "/all-courses/data-science",
       permanent: true,
     },
-
+    //new redirections
+    {
+      source: "/online-courses",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-course",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/courses-online",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-coding-courses",
+      destination: "/blog/who-should-consider-taking-online-coding-courses",
+      permanent: true,
+    },
+    {
+      source: "/online-courses-with-certificates",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-certification-courses",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/coding-courses-online",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-certificate-courses",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-courses-for-adults",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-certificate-course",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-courses-certificates",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/online-training-courses",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/data-science-course",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/data-science-courses",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses-in-data-science",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/course-for-data-science",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/data-science-online-courses",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/data-science-course-online",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/courses-data-science",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/online-data-science-courses",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/data-science-courses-online",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/data-science-certification-course",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/online-course-in-data-science",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/online-data-science-course",
+      destination: "/all-courses/data-science",
+      permanent: true,
+    },
+    {
+      source: "/artificial-intelligence-course",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/artificial-general-intelligence-course",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/artificial-intelligence-courses",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/artificial-intelligence-online-course",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/course-on-artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/courses-on-artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/course-artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/artificial-intelligence-course-online",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/online-artificial-intelligence-courses",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/artificial-intelligence-course-free",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/artificial-intelligence-training-courses",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/online-artificial-intelligence-course",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/online-course-artificial-intelligence",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-course",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-course",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-courses-online",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-course-online",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/online-cyber-security-course",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/online-cyber-security-courses",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-online-courses",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses-for-cyber-security",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses-cyber-security",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-training-courses",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/online-course-for-cyber-security",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/courses-in-cyber-security",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-courses-near-me",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/cyber-security-online-course",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/online-courses-for-cyber-security",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-course",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-courses-online",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-manager-course",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/online-project-management-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-managment-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/courses-in-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/online-course-for-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/online-course-in-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-online-course",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-manager-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-certification-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-course-online",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-online-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-training-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/agile-project-management-course",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/construction-project-management-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/online-courses-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/online-project-management-course",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-manager-courses-online",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-managment-course",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/course-in-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/project-management-on-line-courses ",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-course",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-course",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-certificate",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-courses",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-near-me",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-specialist",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-certification",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-degree",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-training",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-certificates",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-course-online",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-online-courses",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/online-digital-marketing-courses",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-courses-online",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/google-digital-marketing-course",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/online-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-blogs",
+      destination: "/blog/category/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-certificate-online",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-certifications",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/online-digital-marketing-course",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/certificate-in-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/masters-in-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-degree-online",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-degrees",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-online",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
     //-------------------------new redirections end---------------------------------
   ];
   return path;
@@ -1206,10 +1622,7 @@ const createReWrites = () => {
       source: "/all-courses/management-advancement",
       destination: "/all-courses/management-advancement/48",
     },
-    // {
-    //   source: "/all-courses/operations-and-supply-chain-management",
-    //   destination: "/all-courses/operations-and-supply-chain-management/281",
-    // },
+
     {
       source: "/all-courses/product-management",
       destination: "/all-courses/product-management/49",
@@ -1218,14 +1631,7 @@ const createReWrites = () => {
       source: "/all-courses/data-and-business-analytics",
       destination: "/all-courses/data-and-business-analytics/30",
     },
-    // {
-    //   source: "/all-courses/software-development-course",
-    //   destination: "/all-courses/software-development/229",
-    // },
-    // {
-    //   source: "/all-courses/full-stack-web-and-software-development",
-    //   destination: "/all-courses/full-stack-web-and-software-development/230",
-    // },
+
     {
       source: "/all-courses/full-stack-development",
       destination: "/all-courses/full-stack-development/230",
@@ -1318,16 +1724,6 @@ const createReWrites = () => {
       destination: "/all-courses/ai-advanced-applied/403",
     },
 
-    // --------------------new pages---------------------
-    // {
-    //   source: "/all-courses-new/digital-marketing-new",
-    //   destination: "/all-courses-new/digital-marketing-new/702",
-    // },
-
-    // {
-    //   source: "/:path*",
-    //   destination: "/404",
-    // },
     // ------------brand-------------
     {
       source: "/online-courses",
@@ -1506,7 +1902,7 @@ const createReWrites = () => {
     "/why-is-digital-marketing-important",
     //==================CS==================
     "/cyber-security-course",
-    "/cyber-security-courses",
+    "/all-courses/cyber-security",
     "/cyber-security-courses-online",
     "/cyber-security-course-online",
     "/online-cyber-security-course",
