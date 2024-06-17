@@ -132,6 +132,7 @@ const redirectURL = () => {
       destination: "/all-courses/cyber-security",
       permanent: true,
     },
+
     {
       source: "/terms-and-condition",
       destination: "/terms-and-conditions",
@@ -1162,6 +1163,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
+      source: "/certificate-courses-online",
+      destination: "/",
+      permanent: true,
+    },
+    {
       source: "/data-science-course",
       destination: "/all-courses/data-science",
       permanent: true,
@@ -1292,7 +1298,7 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/cyber-security-course",
+      source: "/cyber-security-courses",
       destination: "/all-courses/cyber-security",
       permanent: true,
     },
@@ -1362,11 +1368,6 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/all-courses/project-management",
-      destination: "/all-courses/project-management",
-      permanent: true,
-    },
-    {
       source: "/project-management-courses",
       destination: "/all-courses/project-management",
       permanent: true,
@@ -1376,6 +1377,7 @@ const redirectURL = () => {
       destination: "/all-courses/project-management",
       permanent: true,
     },
+
     {
       source: "/project-management-courses-online",
       destination: "/all-courses/project-management",
@@ -1421,6 +1423,12 @@ const redirectURL = () => {
       destination: "/all-courses/project-management",
       permanent: true,
     },
+    {
+      source: "/project-managing-courses",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+
     {
       source: "/project-management-certification-courses",
       destination: "/all-courses/project-management",
@@ -1477,15 +1485,11 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/project-management-on-line-courses ",
+      source: "/project-management-on-line-courses",
       destination: "/all-courses/project-management",
       permanent: true,
     },
-    {
-      source: "/digital-marketing-course",
-      destination: "/all-courses/project-management",
-      permanent: true,
-    },
+
     {
       source: "/digital-marketing-course",
       destination: "/all-courses/digital-marketing",
