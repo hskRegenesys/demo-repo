@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.digitalregenesys.com/uk</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.digitalregenesys.com/all-courses</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>daily</changefreq>
@@ -1418,6 +1424,24 @@
   </url>
   <url>
     <loc>https://www.digitalregenesys.com/blog/how-do-i-start-a-career-in-cyber-security</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/uk/project-management-course</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+   <url>
+    <loc>https://www.digitalregenesys.com/uk/cyber-security-course</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/uk/data-science-course</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>Daily</changefreq>
     <priority>0.90</priority>
