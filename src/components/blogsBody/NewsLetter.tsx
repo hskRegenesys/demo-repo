@@ -1,18 +1,22 @@
-import { Checkbox } from "antd";
-import React, { useEffect, useState } from "react";
-import PhoneInput from "react-phone-number-input";
-import mixpanel from "mixpanel-browser";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+import toast, { Toaster } from "react-hot-toast";
 import validator from "validator";
+import { countryCodeService, leadService } from "src/services";
+import { useRouter } from "next/router";
+import mixpanel from "mixpanel-browser";
 
 const NewsLetter = () => {
-  const [formInteraction, setFormInteraction] = useState(false);
+  const router = useRouter();
+  const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
+
+  const [geoLocationData, setGeoLocationData] = useState({});
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
   const [checkBoxError, setCheckBoxError] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState<any>("");
-  const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
-  const hookForm: any = useForm();
+  const [phoneNumberError, setPhoneNumberError] = useState("");
 
   const {
     formState: { errors },
@@ -20,40 +24,38 @@ const NewsLetter = () => {
     trigger,
     watch,
     setValue,
-    setError,
     register,
     handleSubmit,
-  } = hookForm;
+  } = useForm();
 
-  useEffect(() => {
-    const beforeUnload = () => {
-      if (formInteraction) {
-        mixpanel.track("partial_submitted");
-      }
-    };
-    window.addEventListener("beforeunload", beforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", beforeUnload);
-    };
-  }, [formInteraction]);
-
-  const handleFormBlur = () => {
-    setFormInteraction(true);
-    mixpanel.track("partial_submitted");
-  };
-
-  const handleCheckboxChange = (e: any) => {
-    setIsCheckboxChecked(e.target.checked);
-  };
-
-  const onSubmit = (data: any) => {
+  const onSubmit = async (data: { [key: string]: any }) => {
     if (!isCheckboxChecked) {
       setCheckBoxError("*Please accept the conditions.");
       return;
     }
-    console.log(data);
+
+    const result = await leadService.saveLead(data);
+
+    if (result?.data) {
+      mixpanel.track("submit-newsletter-form", { submit_value: true });
+      reset();
+    }
     reset();
+    setIsCheckboxChecked(false);
+    notify();
+  };
+
+  const notify = () =>
+    toast.success("Thank you for applying! We will get back to you.", {
+      position: "top-right",
+      duration: 3000,
+    });
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsCheckboxChecked(e.target.checked);
+    if (e.target.checked) {
+      setCheckBoxError("");
+    }
   };
 
   return (
@@ -66,23 +68,28 @@ const NewsLetter = () => {
           <div className="sec-title text-center">
             <h2 className="text-center w-100">Our Newsletters!</h2>
           </div>
-
           <p className="text-center text-white w-100">
             Get notified about the latest career insights, study tips & offers
             at DIGITAL REGENYSYS
           </p>
-          <form onBlur={handleFormBlur} onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="d-flex align-items-center justify-content-center">
               <div className="d-sm-flex w-100 flex-sm-wrap align-items-center justify-content-sm-evenly">
                 <div className="form-group mt-3">
                   <input
                     className="form-control"
-                    placeholder="Name*"
-                    type="text"
-                    {...register("Name", { required: "Name is required" })}
+                    placeholder="Full Name*"
+                    {...register("Name", {
+                      required: "*Full Name is Required",
+                      pattern: {
+                        value: /^[a-zA-Z_ ]+$/,
+                        message: "Invalid User Name",
+                      },
+                    })}
+                    onKeyUp={() => trigger("Name")}
                   />
-                  {errors?.Name && (
-                    <span className="text-danger">{errors?.Name?.message}</span>
+                  {errors?.Name?.message && (
+                    <span className="text-danger">*Full Name is Required</span>
                   )}
                 </div>
                 <div className="form-group mt-3">
@@ -90,23 +97,23 @@ const NewsLetter = () => {
                     className="form-control"
                     placeholder="Email*"
                     {...register("Email", {
-                      required: "Email is required",
+                      required: "*Email is Required",
                       pattern: {
-                        value:
-                          /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                         message: "Invalid email address",
                       },
                     })}
+                    onKeyUp={() => trigger("Email")}
                   />
-                  {errors.Email && (
-                    <span className="text-danger">{errors.Email.message}</span>
+                  {errors?.Email?.message && (
+                    <span className="text-danger">*Email is Required</span>
                   )}
                 </div>
                 <div className="form-group mt-3 position-relative">
                   <input
                     type="hidden"
                     {...register("Phone", {
-                      required: "*Phone number is required",
+                      required: "*Phone number is Required",
                     })}
                   />
                   <PhoneInput
@@ -115,40 +122,37 @@ const NewsLetter = () => {
                     defaultCountry="ZA"
                     placeholder="Select Country Code*"
                     value={watch("Phone")}
-                    {...register("Phone", {
-                      required: "*Phone number is required",
-                    })}
                     onChange={(e) => {
                       const phoneNumber = e ? e.toString() : "";
                       const isValid = validator.isMobilePhone(phoneNumber);
                       if (isValid) {
                         setValue("Phone", phoneNumber);
-                        setPhoneNumber(phoneNumber);
+                        mixpanel.track("Phone Changed", {
+                          InputName: "Phone",
+                          Filled: phoneNumber !== "",
+                          newValue: phoneNumber,
+                        });
                         setPhoneNumberError("");
                       } else {
-                        setPhoneNumberError("Valid phone number required");
+                        setPhoneNumberError("Valid phone number Required");
                       }
                     }}
-                    onBlur={() => {
-                      trigger("Phone");
-                    }}
+                    onBlur={() => trigger("Phone")}
                     className="blogs-apply-now form-control"
                   />
-
-                  {errors?.Phone && (
-                    <span className="text-danger">
-                      {errors?.Phone?.message}
-                    </span>
+                  {phoneNumberError ? (
+                    <span className="text-danger">{phoneNumberError}</span>
+                  ) : (
+                    errors?.Phone?.message && (
+                      <span className="text-danger">
+                        Valid phone number Required{" "}
+                      </span>
+                    )
                   )}
                 </div>
               </div>
             </div>
             <div className="mt-3">
-              {/* <Checkbox className="mt-3" onChange={handleCheckboxChange}>
-              By Checking this box, you confirm that you have read & agree to
-                our Terms of use regarding the storage of data submitted through
-                this form
-              </Checkbox> */}
               <label className="new-letter-checkbox-class">
                 <input
                   type="checkbox"
@@ -164,7 +168,6 @@ const NewsLetter = () => {
             {checkBoxError && (
               <span className="text-danger">{checkBoxError}</span>
             )}
-
             <div className="form-group mt-3 w-100 text-center">
               <button
                 style={{ background: "#ffde59", color: "black" }}
@@ -178,6 +181,7 @@ const NewsLetter = () => {
           </form>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };
