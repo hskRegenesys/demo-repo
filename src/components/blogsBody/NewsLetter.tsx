@@ -74,8 +74,8 @@ const NewsLetter = () => {
             at DIGITAL REGENYSYS
           </p>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="d-flex align-items-center justify-content-center">
-              <div className="d-sm-flex w-100 flex-sm-wrap align-items-center justify-content-sm-evenly">
+            <div className="d-flex  justify-content-center">
+              <div className="d-sm-flex w-100 flex-sm-wrap  justify-content-sm-evenly">
                 <div className="form-group mt-3">
                   <input
                     className="form-control"
