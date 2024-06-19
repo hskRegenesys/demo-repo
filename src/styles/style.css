@@ -19831,6 +19831,14 @@ font-size: 16px !important;}
 .what-they-say-video iframe {
   width: 100%;
 }
+.tost {
+  color: #515151;
+  font-size: 18px;
+  border: 1px solid var(--light-divider-borders-light, #cbcbcb);
+  background: var(--Light-Text-Surface-White, #fff);
+  position: relative;
+  top: 80px;
+}
 @media only screen and (max-width: 479px) {
   .we-work-section .sec-title h2 {
     max-width: 100%;

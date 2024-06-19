@@ -49,6 +49,7 @@ const NewsLetter = () => {
     toast.success("Thank you for applying! We will get back to you.", {
       position: "top-right",
       duration: 3000,
+      className: "tost",
     });
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {

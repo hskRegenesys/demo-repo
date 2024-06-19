@@ -39,7 +39,7 @@ const RecommendedPost = () => {
           arrows={false}
           infinite
           dots={false}
-          slidesToShow={5}
+          slidesToShow={postList.length < 6 ? postList.length - 1 : 6}
           slidesToScroll={1}
           swipeToSlide
           vertical
@@ -54,7 +54,7 @@ const RecommendedPost = () => {
                 <div className="row align-items-center">
                   <div
                     className="col-5 position-relative rounded"
-                    style={{ height: "80px" }}
+                    style={{ height: "80px " }}
                   >
                     {values?.yoast_head_json?.og_image ? (
                       values?.yoast_head_json?.og_image.map((img) => (
@@ -84,6 +84,14 @@ const RecommendedPost = () => {
                       <b>
                         {values?.title && (
                           <small
+                            style={{
+                              lineHeight: "1.2em",
+                              height: "5em",
+                              overflow: "hidden",
+                              display: "-webkit-box",
+                              WebkitBoxOrient: "vertical",
+                              WebkitLineClamp: 4,
+                            }}
                             dangerouslySetInnerHTML={{
                               __html: values?.title?.rendered,
                             }}
