@@ -8,9 +8,6 @@
 .desktopSlide {
   margin-top: 80px;
 }
-.HeadTag {
-  display: none;
-}
 @media (max-width: 760px) {
   .mobileSlide {
     display: block;

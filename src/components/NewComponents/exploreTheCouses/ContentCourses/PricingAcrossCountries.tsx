@@ -45,7 +45,7 @@ const PricingAcrossCountries: React.FC<PricingAcrossCountriesProps> = ({
                 />
               </div>
             </div>
-            <p className={Styles.ContaryName}>{card.contaryName}</p>
+            <h4>{card.contaryName}</h4>
             <div className={Styles.ContarycardContent}>
               <div className={Styles.line}>
                 <div className={Styles.iconContent}>

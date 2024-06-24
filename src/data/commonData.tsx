@@ -1062,7 +1062,7 @@ const Data = {
       "product-management":
         "Best product management courses online. Find the best product management certification courses to enhance your skills and advance your career. Enrol today!        ",
       allCourse:
-        "Check out a wide range of online courses at Digital Regenesys. Our expertly crafted programs are designed to empower your career and personal growth. Enroll now!",
+        "Unlock your career potential with our professional courses. Expert instruction and flexible learning options to help you achieve your goals. Enroll now!",
       "data-and-business-analytics":
         "Data and Business Analytics No-Code Course: Unlock the power of data with Digital Regenesys. Dive into Data Science in Business Analytics without coding. Enrol Now!        ",
       contact:

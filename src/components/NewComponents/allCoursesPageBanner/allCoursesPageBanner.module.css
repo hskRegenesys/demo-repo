@@ -64,10 +64,6 @@
 .paragraphText2 {
   display: none;
 }
-
-.HeadTag {
-  display: none;
-}
 @media only screen and (max-width: 1140px) {
   .bannerTextContainer {
     position: absolute;
