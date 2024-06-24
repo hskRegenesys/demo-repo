@@ -7,23 +7,33 @@ import RecommendedPost from "./RecommendedPost";
 type IRightSidePanelTypes = {
   isRecommendedPost?: boolean;
   yellowBtn?: boolean;
+  isBlogDetail?: boolean;
 };
 
 const RightSidePanel = ({
   isRecommendedPost,
   yellowBtn,
+  isBlogDetail,
 }: IRightSidePanelTypes) => {
   return (
     <div className="row">
-      <div className="col-12 col-sm-4 col-lg-12 py-3 _ps-lg-5">
-        <ApplyNow yellowBtn={yellowBtn} />
-      </div>
-      <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5">
+      {!isBlogDetail && (
+        <div className="col-12 col-sm-4 col-lg-12 py-3 pt-4 _ps-lg-5">
+          <ApplyNow yellowBtn={yellowBtn} />
+        </div>
+      )}
+
+      <div
+        className={`col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5 ${
+          isBlogDetail && "blog-right-side-panel"
+        }`}
+      >
         {isRecommendedPost ? <RecommendedPost /> : <About />}
       </div>
-      <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5 ads-new-style">
+
+      {/* <div className="col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5 ads-new-style">
         <Ads />
-      </div>
+      </div> */}
     </div>
   );
 };

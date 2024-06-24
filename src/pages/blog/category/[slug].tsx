@@ -36,6 +36,8 @@ const PostsByCategory: React.FC<PostsByCategoryProps> = ({
   const [categoryList, setCategoryList] = useState<any>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>(initialCategory);
+  const [isBlogPage, setIsBlogPage] = useState(false);
+
   const [postList, setPostList] =
     useState<Array<IPostListTypes>>(initialPostList);
 
@@ -44,6 +46,10 @@ const PostsByCategory: React.FC<PostsByCategoryProps> = ({
       setIsLoading(false);
     }, 1000);
   }, [postList]);
+
+  useEffect(() => {
+    setIsBlogPage(true);
+  }, []);
 
   return (
     <>
@@ -77,7 +83,7 @@ const PostsByCategory: React.FC<PostsByCategoryProps> = ({
             isLoading={isLoading}
           />
         )}
-        <MainFooter />
+        <MainFooter isBlogPage={isBlogPage} />
         <StickyBar />
       </Layout>
       <noscript>

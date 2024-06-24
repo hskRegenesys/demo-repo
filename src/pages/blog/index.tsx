@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
@@ -12,6 +12,7 @@ import Script from "next/script";
 
 const Blogs = () => {
   const [searchData, setSearchData] = useState([]);
+  const [isBlogPage, setIsBlogPage] = useState(false);
   const search = (val: string) => {
     searchAPI(val);
   };
@@ -21,6 +22,10 @@ const Blogs = () => {
     });
     setSearchData(response);
   };
+
+  useEffect(() => {
+    setIsBlogPage(true);
+  }, []);
 
   return (
     <>
@@ -41,7 +46,7 @@ const Blogs = () => {
         <MobileMenu />
         <SearchPopup />
         <BlogsBody />
-        <MainFooter />
+        <MainFooter isBlogPage={isBlogPage} />
         <StickyBar />
       </Layout>
 

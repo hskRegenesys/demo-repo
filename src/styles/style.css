@@ -123,8 +123,13 @@ b{
 }
 
 .link-title h2 {
-  font-size: 40px;
+  font-size: 24px;
+  margin-top: 10px;
 }
+.link-title h2 span{
+  font-size: 24px;
+}
+
 
 .link-title p a {
   color: #000;
@@ -133,18 +138,42 @@ b{
 .link-title h2 a {
   color: #000;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 400;
 }
 .link-title h3 {
-  font-size: 40px;
+  font-size: 18px;
 }
+.link-title h4{
+  font-size: 16px;
+}
+.link-title p strong{
+  font-size: 18px;
+}
+
+
+.link-title ul li{
+  font-size: 16px;
+  list-style-type: disc;
+}
+
+
+/* 
+.link-title ul li:last-child{
+  padding-bottom: 10px;
+} */
+
+
 
 .link-title h3 a {
   color: #000;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 18px;
   font-weight: 400;
+}
+
+.blog-right-side-panel{
+  padding: 10px 0px 30px 0px !important;
 }
 
 .theme_color {
@@ -180,7 +209,7 @@ h1 {
 }
 
 .blog-h1 {
-  font-size: 60px;
+  font-size: 32px;
 }
 
 h2 {
@@ -338,19 +367,32 @@ p {
   }
 
   .blog-content-container .blog-h1{
-    font-size: 35px !important;
+    font-size: 22px !important;
   }
+
+  .blog-content-container{
+   padding-left: 10px;
+  }
+
+
   .blog-content-container .link-title h2, .blog-content-container .link-title h3{
-   font-size: 25px !important;
+   font-size: 20px !important;
    margin-top: 10px;
    letter-spacing: 0.20px;
-
   }
+.blog-content-container .link-title p{
+  font-size: 16px;
+}
+
+.blog-content-container .link-title ul li{
+  font-size: 16px;
+}
+
   .blog-content-container .link-title h2 a{
-    font-size: 25px;
+    font-size: 18px;
   }
   .blog-content-container .link-title h4{
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .btn-style-two .btn-title{
@@ -908,6 +950,8 @@ img {
   .contact-equal-spacing2 {
     margin-bottom: 71px;
   }
+
+  
 }
 
 .main-menu .navbar-collapse {
@@ -2764,6 +2808,9 @@ tns-controls-tools {
 @media (max-width: 991px) {
   .banner-section-four__nav .swiper-button-prev {
     margin-top: 10px;
+  }
+  .blog-detail-container{
+    padding: 1rem !important;
   }
 }
 
@@ -5306,6 +5353,9 @@ tns-controls-tools {
 .main-footer .widgets-section {
   position: relative;
   padding: 100px 0px 0;
+}
+.blog-widget-section{
+  padding-top:0px !important;
 }
 
 .main-footer.normal-padding .widgets-section {

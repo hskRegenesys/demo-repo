@@ -32,7 +32,7 @@ const RecommendedPost = () => {
       <p className="text-center pt-4">
         <b>Recommended Posts</b>
       </p>
-      {postList.length > 0 && (
+      {postList?.length > 0 && (
         <Carousel
           autoplay
           autoplaySpeed={6000}
@@ -50,7 +50,7 @@ const RecommendedPost = () => {
               className="m-2 w-100 rounded btn"
               role="button"
             >
-              <Link href={`/blog/${values?.slug}`} passHref>
+              <Link href={`/blog/${values?.slug}`}>
                 <div className="row align-items-center">
                   <div
                     className="col-5 position-relative rounded"
