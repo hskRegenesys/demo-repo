@@ -285,17 +285,24 @@ function RequestForm(props: any) {
                     onChange={(e) => {
                       const phoneNumber = e ? e.toString() : "";
                       const isValid = validator.isMobilePhone(phoneNumber);
-                      if (isValid) {
-                        setValue("Phone", phoneNumber);
-                        setPhoneNumber(phoneNumber);
-                        mixpanel.track("Phone Changed", {
-                          InputName: "Phone",
-                          Filled: phoneNumber !== "",
-                          newValue: phoneNumber,
-                        });
-                        setPhoneNumberError("");
+                      setPhoneNumber(phoneNumber);
+
+                      // Activate validation after typing 4 digits
+                      if (phoneNumber.replace(/[^0-9]/g, "").length >= 4) {
+                        if (isValid) {
+                          setValue("Phone", phoneNumber);
+                          setPhoneNumber(phoneNumber);
+                          mixpanel.track("Phone Changed", {
+                            InputName: "Phone",
+                            Filled: phoneNumber !== "",
+                            newValue: phoneNumber,
+                          });
+                          setPhoneNumberError("");
+                        } else {
+                          setPhoneNumberError("Valid phone number required");
+                        }
                       } else {
-                        setPhoneNumberError("Valid phone number Required");
+                        setPhoneNumberError("");
                       }
                     }}
                     onBlur={() => {
@@ -310,6 +317,9 @@ function RequestForm(props: any) {
                       {phoneNumberError}
                     </small>
                   ) : (
+                    (phoneNumber.length === 0
+                      ? !phoneNumberError
+                      : phoneNumberError) &&
                     errors?.Phone && (
                       <small className={Styles.smallText}>
                         {errors?.Phone?.message}
