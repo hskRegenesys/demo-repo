@@ -83,7 +83,7 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
                     {Object.entries(week.weekPoints).map(
                       ([key, value], pointIndex) => (
                         <div key={key} style={{ marginBottom: "20px" }}>
-                          <h6 className={styles.sideHeding}>{key}</h6>
+                          <p className={styles.sideHeding}>{key}</p>
                           <ul>
                             {value.map((item: string, index: number) => (
                               <li key={index} className={styles.weekPoint}>
