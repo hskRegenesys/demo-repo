@@ -172,7 +172,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
-                          priority={true}
+                          loading="eager"
                         />
                       </div>
                       <div className={Styles.boldText}>
@@ -190,7 +190,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
-                          priority={true}
+                          loading="eager"
                         />
                       </div>
 
@@ -210,7 +210,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                             className={Styles.cardIcon}
                             width={24}
                             height={24}
-                            priority={true}
+                            loading="eager"
                           />
                         </div>
 
@@ -230,7 +230,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                             className={Styles.cardIcon}
                             width={24}
                             height={24}
-                            priority={true}
+                            loading="eager"
                           />
                         </div>
 
