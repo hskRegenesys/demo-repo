@@ -155,7 +155,7 @@
   margin-bottom: 20px;
 }
 
-.nameRole p {
+.role {
   margin-bottom: 0px;
   color: var(--primary-primary-dark-grey, #6a767c);
   font-size: 16px;
@@ -164,7 +164,7 @@
 
   text-align: center;
 }
-.nameRole h4 {
+.name {
   margin-bottom: 6px;
   color: var(--primary-primary-charcoal, #131718);
   font-weight: 700;
@@ -380,7 +380,7 @@
     gap: 24px;
   }
 
-  .nameRole {
+  .role {
     margin-right: 0;
   }
 
@@ -418,10 +418,10 @@
     margin-top: 0px;
   }
 
-  .nameRole p {
+  .role {
     font-size: 12px;
   }
-  .nameRole h4 {
+  .name {
     font-size: 16px;
   }
   .experienceText {
