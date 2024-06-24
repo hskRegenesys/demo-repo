@@ -6,7 +6,7 @@ const homeSliderBannerData = {
     //   link: "https://uat-demo.digitalregenesys.com/all-courses",
     // },
     {
-      imageUrl: "/assets/images/allImages/Home-Banner-Desktop-slider-one.svg",
+      imageUrl: "/assets/images/allImages/Home-Banner-Desktop-slider-one.webp",
       title: "Slide 1",
       link: "https://digitalregenesys.com/all-courses",
     },
@@ -23,7 +23,7 @@ const homeSliderBannerData = {
     //   link: "https://uat-demo.digitalregenesys.com/all-courses",
     // },
     {
-      imageUrl: "/assets/images/allImages/Home-Banner-Mobile-slider-one.png",
+      imageUrl: "/assets/images/allImages/Home-Banner-Mobile-slider-one.webp",
       title: "Slide 1",
       link: "https://digitalregenesys.com/all-courses",
     },
