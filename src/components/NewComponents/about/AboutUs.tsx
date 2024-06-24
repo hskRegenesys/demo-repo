@@ -64,7 +64,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
             className={Styles.aboutUsImage}
             width={480}
             height={320}
-            priority
+            priority={true}
           />
         </div>
         <div className={Styles.aboutUsRight}>
