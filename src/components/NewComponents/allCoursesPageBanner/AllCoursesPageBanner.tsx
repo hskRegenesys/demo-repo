@@ -52,6 +52,7 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
           loading="eager"
         />
       </div>
+      <h1 className={Styles.HeadTag}>Explore Online Courses </h1>
       {/* <div className={Styles.bannerTextContainer}>
         <h1 className={Styles.headingText}>{HeadingText}</h1>
         <p className={Styles.paragraphText1}>{ParagraphTextDesktop}</p>

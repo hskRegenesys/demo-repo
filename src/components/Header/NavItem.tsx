@@ -681,7 +681,9 @@ const NavItem = (props: any) => {
                     <ul onMouseEnter={() => handleHover(subNavItems?.name)}>
                       <div className="mainMegaMenu">
                         <div className="megamenuCourses">
-                          <h2>Certificate Courses</h2>
+                          <p className="mainMegaMenuHeading">
+                            Certificate Courses
+                          </p>
 
                           {subNavItems?.map((subItem: any) => (
                             <li
@@ -768,7 +770,10 @@ const NavItem = (props: any) => {
                           ))}
                         </div>
                         <div className="degreeCoursesData">
-                          <h2> Academic Programmes</h2>
+                          <p className="mainMegaMenuHeading">
+                            {" "}
+                            Academic Programmes
+                          </p>
                           <ul>
                             {degreeProgrammesData.map((program, index) => (
                               <li
@@ -828,7 +833,9 @@ const NavItem = (props: any) => {
                           </ul>
                         </div>
                         <div className="trainingProgrammeData">
-                          <h2>Training Programmes</h2>
+                          <p className="mainMegaMenuHeading">
+                            Training Programmes
+                          </p>
                           {trainingProgrammesData?.map((item) => (
                             <Link key={item.courseName} href={item.courseUrl}>
                               {item.courseName}
