@@ -75,17 +75,6 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
     setIsPopupVisible(true);
   };
 
-  // useEffect(() => {
-  //   const popupDisplayed = sessionStorage.getItem("popupDisplayed");
-  //   if (!popupDisplayed) {
-  //     const timeoutModal = setTimeout(() => {
-  //       setIsPopupVisible(true);
-  //       sessionStorage.setItem("popupDisplayed", "true");
-  //     }, 5000);
-
-  //     return () => clearTimeout(timeoutModal);
-  //   }
-  // }, []);
   useEffect(() => {
     const handleScroll = () => {
       const experienceSection = document.getElementById("experience-section");

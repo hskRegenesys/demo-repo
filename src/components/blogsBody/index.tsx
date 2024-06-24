@@ -7,6 +7,7 @@ import TrendingSection from "@/components/TrendingSection/TrendingSection";
 import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
 import { carousalProps } from "./dataTypes";
+import { Toaster } from "react-hot-toast";
 
 const BlogsBody = () => {
   return (
@@ -25,6 +26,7 @@ const BlogsBody = () => {
       </div>
       <TrendingSection />
       <NewsLetter />
+      <Toaster />
     </div>
   );
 };

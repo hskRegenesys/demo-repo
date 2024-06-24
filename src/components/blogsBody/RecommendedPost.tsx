@@ -1,15 +1,16 @@
 import { Carousel } from "antd";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import { wpService } from "src/services";
 import Link from "next/link";
-import { IPostTypes, bannerImages } from "./dataTypes";
+import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
+import { wpService } from "src/services";
+import { IPostTypes, bannerImages } from "./dataTypes";
 import { getOneRandom } from "src/utils/common";
 
 const RecommendedPost = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [postList, setPostList] = useState<Array<IPostTypes>>([]);
+
   const getPostList = async () => {
     const response = await wpService.allPosts({ per_page: 12 });
     if (response?.length > 0) {
@@ -17,9 +18,9 @@ const RecommendedPost = () => {
       setPostList(response);
     }
   };
+
   useEffect(() => {
     getPostList();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return isLoading ? (
@@ -33,7 +34,6 @@ const RecommendedPost = () => {
       </p>
       {postList.length > 0 && (
         <Carousel
-          lazyLoad="ondemand"
           autoplay
           autoplaySpeed={6000}
           arrows={false}
@@ -44,16 +44,20 @@ const RecommendedPost = () => {
           swipeToSlide
           vertical
         >
-          {postList?.map((values) => (
-            <Link key={values.id} href={`/blog/${values?.slug}`} passHref>
-              <div className="m-2 w-100 rounded btn" role="button">
+          {postList.map((values) => (
+            <div
+              key={values.id}
+              className="m-2 w-100 rounded btn"
+              role="button"
+            >
+              <Link href={`/blog/${values?.slug}`} passHref>
                 <div className="row align-items-center">
                   <div
-                    className="col-5 position-relative rounded "
-                    style={{ height: "80px" }}
+                    className="col-5 position-relative rounded"
+                    style={{ height: "80px " }}
                   >
                     {values?.yoast_head_json?.og_image ? (
-                      values?.yoast_head_json?.og_image?.map((img) => (
+                      values?.yoast_head_json?.og_image.map((img) => (
                         <Image
                           key={img.url}
                           src={img.url.toString()}
@@ -76,15 +80,18 @@ const RecommendedPost = () => {
                     )}
                   </div>
                   <div className="col-7 text-start">
-                    <p
-                      className="m-0 py-1"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title={values?.yoast_head_json?.og_title}
-                    >
+                    <p className="m-0 py-1">
                       <b>
                         {values?.title && (
                           <small
+                            style={{
+                              lineHeight: "1.2em",
+                              height: "5em",
+                              overflow: "hidden",
+                              display: "-webkit-box",
+                              WebkitBoxOrient: "vertical",
+                              WebkitLineClamp: 4,
+                            }}
                             dangerouslySetInnerHTML={{
                               __html: values?.title?.rendered,
                             }}
@@ -94,8 +101,8 @@ const RecommendedPost = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </Carousel>
       )}
