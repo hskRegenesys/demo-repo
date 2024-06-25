@@ -65,6 +65,20 @@ function RequestForm(props: any) {
 
   const programmeOfInterest = watch("Programme_Of_Interest");
 
+  const handleWhatsAppMessage = async (formData: any) => {
+    try {
+      await fetch("/api/sendWhatsAppMessage", {
+        method: "POST",
+        body: JSON.stringify({ formData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log("Error", error);
+    }
+  };
+
   const onSubmit = async (data: any, e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -98,6 +112,7 @@ function RequestForm(props: any) {
       props.onFormSubmit();
       reset();
       downloadFromBlob(response?.data, brochureName?.name) == false;
+      handleWhatsAppMessage(data);
       if (response?.status === 200) {
         mixpanel.track("submit-brochure-form", { submit_value: true });
       }
@@ -108,6 +123,7 @@ function RequestForm(props: any) {
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : setSubmitted(true);
+      handleWhatsAppMessage(data);
       mixpanel.track("submit-counselling-form", { submit_value: true });
       props.onFormSubmit();
       reset();
