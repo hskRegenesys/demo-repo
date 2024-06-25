@@ -37,6 +37,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             objectFit="cover"
             objectPosition="center"
             priority={true}
+            decoding="async"
           />
         </a>
       </SwiperSlide>
