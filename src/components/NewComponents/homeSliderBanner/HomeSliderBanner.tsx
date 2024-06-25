@@ -29,6 +29,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
           <Image
             className={Styles.img}
             src={slide.imageUrl}
+            rel="preload"
             alt="Banner Home"
             width={isMobile ? 360 : 1440}
             height={isMobile ? 356 : 439}
