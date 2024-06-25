@@ -1,20 +1,14 @@
 const { WhatsAppMessagingAPIConstants } = require("../../data/axisos");
 
-const productToken =
-  process.env.CM_PRODUCT_TOKEN || "5a2cc47d-2f63-4fe9-85ef-26fcede14984";
-const namespaceToken =
-  process.env.CM_NAMESPACE || "1b8c1d6e_a041_4986_9875_d1c247485578";
-
 export default async function sendWhatsAppMessage(req, res) {
   if (req.method === "POST") {
-    console.log("reqeuess", req.body);
     const { Name, Phone } = req?.body?.formData;
     const PhoneNumber = Phone?.replace("+", "");
 
     const messageData = {
       messages: {
         authentication: {
-          producttoken: productToken,
+          producttoken: process.env.CM_PRODUCT_TOKEN,
         },
         msg: [
           {
@@ -34,7 +28,7 @@ export default async function sendWhatsAppMessage(req, res) {
                 {
                   template: {
                     whatsapp: {
-                      namespace: namespaceToken,
+                      namespace: process.env.CM_NAMESPACE,
 
                       element_name: "wa_openday_zoom_link",
                       language: {
@@ -77,7 +71,7 @@ export default async function sendWhatsAppMessage(req, res) {
     };
     console.log("messageee", messageData);
     try {
-      const response = await fetch("https://gw.cmtelecom.com/v1.0/message", {
+      const response = await fetch(WhatsAppMessagingAPIConstants?.baseURL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
