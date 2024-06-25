@@ -13,6 +13,11 @@ export const WPApiServiceConstants = {
 export const CountryCodeApiServiceConstants = {
   baseURL: "/api",
 };
+
+export const WhatsAppMessagingAPIConstants = {
+  baseURL: process.env.CM_TELECOM_BASE_URL,
+};
+
 export const apiEndPoints = Object.freeze({
   contactApi: "/contacts",
   coursesApi: "/course/all",
