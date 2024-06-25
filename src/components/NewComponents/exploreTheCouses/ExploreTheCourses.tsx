@@ -178,8 +178,8 @@ const ExploreTheCourses: React.FC<Props> = ({
       className={`${styles.appContainer} ${scrolled ? styles.scrolled : ""}`}
     >
       <div className={styles.headerSection}>
-        <p className="main-heading">{smallHeading}</p>
-        <h2 className="main-sub-heading">{bigHeading}</h2>
+        <h2 className="main-heading">{smallHeading}</h2>
+        <p className="main-sub-heading">{bigHeading}</p>
       </div>
       <div className={styles.mainContent}>
         <div className={styles.sidePanel}>

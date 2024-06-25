@@ -36,7 +36,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             layout="responsive"
             objectFit="cover"
             objectPosition="center"
-            loading="lazy"
+            priority={true}
           />
         </a>
       </SwiperSlide>
@@ -58,7 +58,9 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             {renderSlides(sliderDataDesktop, false)}
           </Swiper>
         </div>
-
+        <h1 className={Styles.HeadTag}>
+          Build Your Digital Skill with Industry Leading Online Courses
+        </h1>
         <div className={Styles.mobileSlide}>
           <Swiper
             pagination={{ clickable: true }}
