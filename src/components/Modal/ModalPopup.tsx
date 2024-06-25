@@ -14,7 +14,7 @@ import dynamic from "next/dynamic";
 
 import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
-import { brochureDetails, courseData } from "@/data/course";
+import { brochureDetails } from "@/data/course";
 // import Loader from "../Loader/Loader";
 const Loader = dynamic(() => import("../Loader/Loader"));
 

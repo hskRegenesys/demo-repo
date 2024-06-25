@@ -28,7 +28,7 @@ const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
 );
 const CallToSection = dynamic(
-  () => import("@/components/HomeSkillDescription/CallToSection")
+  () => import("@/components/CallToScetion/CallToSection")
 );
 
 const StickyBar = dynamic(() => import("@/components/StickyFooter/Sticky"));

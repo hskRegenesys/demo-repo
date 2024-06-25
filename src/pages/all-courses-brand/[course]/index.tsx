@@ -3,11 +3,7 @@ import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
-import MainFooter from "@/components/MainFooter/MainFooter";
-import Style from "@/components/Reuseable/Style";
-import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-import CourseText from "@/components/courses/coursesText";
+
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import _ from "lodash";
@@ -45,13 +41,6 @@ import ConnectContainer from "@/components/NewComponents/connectContainer/Connec
 import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
 import LearnersSupport from "@/components/NewComponents/learnersSupport/LearnersSupport";
 import BannerWithImg from "@/components/NewComponents/BannerwithImg/BannerwithImg";
-
-const PageBanner = dynamic(
-  () => import("@/components/BannerSection/PageBanner")
-);
-const SubCourseDetails = dynamic(
-  () => import("@/components/courses/subcourseDetails")
-);
 
 const Course = (props: any) => {
   const router = useRouter();

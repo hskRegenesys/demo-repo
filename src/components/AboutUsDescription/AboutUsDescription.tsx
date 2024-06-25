@@ -2,7 +2,6 @@ import { aboutUsDescriptionData } from "@/data/aboutUsDescriptionData";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import LiveSection from "@/components/LiveSection/LiveSection";
-import AllPageStickyData from "@/data/stickyData";
 
 const { pagedesc, imagearrow, text1, text2, highlight, title } =
   aboutUsDescriptionData;
