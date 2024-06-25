@@ -5,14 +5,10 @@ import "@/vendors/flaticon.css";
 import "@/vendors/fontawesome-all.css";
 import Script from "next/script";
 import "@/vendors/linoor-icons.css";
-import "@/vendors/reey-font.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
 import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
-import { leadService } from "src/services";
-import { apiEndPoints } from "@/data/axisos";
-import axios from "axios";
 import { Toaster } from "react-hot-toast";
 
 // extra css
