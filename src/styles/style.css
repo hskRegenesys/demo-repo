@@ -57,21 +57,29 @@
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
   font-style: normal;
+  font-display: swap;
+
 }
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
   font-style: normal;
+  font-display: swap;
+
 }
 @font-face {
   font-family: "Montserrat-semiBold";
   src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-style: normal;
+  font-display: swap;
+
 }
 @font-face {
   font-family: "Montserrat-medium";
   src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
   font-style: normal;
+  font-display: swap;
+
 }
 * {
   font-family: "Montserrat", sans-serif;
@@ -16484,7 +16492,7 @@ h2.curve-right:after {
 }
 
 .video-six__video__text {
-  font-family: "reeyregular";
+  font-family: "Montserrat-semiBold";
   font-size: 30px;
   color: #ffffff;
   margin: 0;
