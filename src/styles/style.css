@@ -317,6 +317,86 @@ p {
   top: 12px ;
   left: 14px;
 }
+.new-apply-now-btn{
+  margin-top: 30px;
+}
+
+.pagination-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+.pagination-container .pagination{
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-container ul{
+  gap: 10px;
+}
+
+.pagination-container  .pagination-btn{
+  height: 30px;
+  width: 30px;
+  border-radius:20px;
+  line-height: 20px;
+  background-color: #1fa393;
+  font-family: Montserrat-semiBold;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 3px 3px 0 0 #ffe55b;
+  color: white;
+  text-align: center;
+}
+
+.pagination-container .pagination-btn.active{
+height: 35px;
+width: 35px;
+}
+
+.pagination-container .prev-disable-btn{
+  background-color: lightgrey;
+  box-shadow: 3px 3px 0 0 grey;
+
+}
+.pagination-container .next-disable-btn{
+  background-color: lightgrey;
+  box-shadow: 3px 3px 0 0 grey;
+
+}
+
+.pagination-container .prev-button{
+  margin-right: 10px;
+  background-color: #1fa393;
+  box-shadow: 3px 3px 0 0 #ffe55b;
+}
+.pagination-container .next-button{
+  margin-left: 10px;
+  background-color: #1fa393;
+  box-shadow: 3px 3px 0 0 #ffe55b;
+}
+.main-blog-page-apply{
+  margin-top: 60px;
+}
+
+.prev-disable-btn svg{
+  color: #fff;
+}
+
+.next-disable-btn svg{
+  color: #fff;
+}
+
+.link-title h3.wp-block-heading{
+  font-size: 32px;
+}
+.link-title h4.wp-block-heading{
+  font-size: 24px;
+}
+.link-title p.wp-block-heading{
+  font-size: 16px;
+}
 
 @media (max-width: 1440px) {
   .page-wrapper.boxed-wrapper {
@@ -372,6 +452,16 @@ p {
 
   .blog-content-container{
    padding-left: 10px;
+  }
+
+  .new-apply-now-btn{
+    margin-top: 0px;
+  }
+  .bottom-apply-btn{
+    padding-bottom: 0px !important;
+  }
+  .main-blog-page-apply{
+    margin-top: 30px;
   }
 
 
@@ -22135,7 +22225,7 @@ h2.highlight {
   cursor: pointer;
 }
 .blog-grid-content {
-  /* height: 180px; */
+  height: 200px;
 }
 
 .blog-grid-title {

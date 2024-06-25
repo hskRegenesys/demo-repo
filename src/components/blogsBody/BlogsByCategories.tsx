@@ -4,7 +4,7 @@ import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
 import TrendingSection from "../TrendingSection/TrendingSection";
 import NewsLetter from "./NewsLetter";
-import { LeftOutlined } from "@ant-design/icons";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
 import PostContainer from "./PostContainer";
@@ -64,6 +64,84 @@ const BlogsByCategories = ({
   //     setCategoryList(apiResponse);
   //   }
   // };
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const postsPerPage = 9;
+
+  const handlePageChange = (
+    pageNumber: number,
+    totalPosts: number,
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+    if (pageNumber > 0 && pageNumber <= Math.ceil(totalPosts / postsPerPage)) {
+      setCurrentPage(pageNumber);
+    }
+  };
+
+  const handleNextPage = (
+    totalPosts: number,
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+    if (currentPage < Math.ceil(totalPosts / postsPerPage)) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePrevPage = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const renderPagination = (totalPosts: number) => {
+    if (totalPosts <= postsPerPage) return null;
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+      pageNumbers.push(i);
+    }
+    return (
+      <nav className="pagination-container">
+        <ul className="pagination">
+          <li className="page-item">
+            <button
+              onClick={(event) => handlePrevPage(event)}
+              className={`pagination-btn prev-button ${
+                currentPage === 1 && "prev-disable-btn"
+              }`}
+              disabled={currentPage === 1}
+            >
+              <span className="icon fas fa-angle-left"></span>
+            </button>
+          </li>
+          {pageNumbers.map((number) => (
+            <li key={number} className="page-item">
+              <button
+                onClick={(event) => handlePageChange(number, totalPosts, event)}
+                className={`pagination-btn ${
+                  currentPage === number ? "active" : ""
+                }`}
+              >
+                {number}
+              </button>
+            </li>
+          ))}
+          <li className="page-item">
+            <button
+              onClick={(event) => handleNextPage(totalPosts, event)}
+              className={`pagination-btn next-button ${
+                currentPage === pageNumbers?.length && "next-disable-btn"
+              }`}
+              disabled={currentPage === pageNumbers?.length}
+            >
+              <span className="icon fas fa-angle-right"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    );
+  };
 
   return (
     <div style={{ paddingTop: "85px" }}>
@@ -89,6 +167,12 @@ const BlogsByCategories = ({
             <h1 className="h5 p-0 m-0 fw-bold mt-3">{category} Blog</h1>
             {postList?.length > 0 &&
               postList?.map((values) => {
+                const indexOfLastPost = currentPage * postsPerPage;
+                const indexOfFirstPost = indexOfLastPost - postsPerPage;
+                const currentPosts = values?.posts?.slice(
+                  indexOfFirstPost,
+                  indexOfLastPost
+                );
                 return isLoading ? (
                   <div className="d-flex justify-content-center align-items-center h-25">
                     <Spinner animation={"border"} />
@@ -101,13 +185,14 @@ const BlogsByCategories = ({
                         __html: values?.category.toString(),
                       }}
                     /> */}
-                    {values?.posts?.length > 0 ? (
+                    {currentPosts?.length > 0 ? (
                       <div className="row py-3">
-                        {values?.posts?.map((item) => (
+                        {currentPosts?.map((item) => (
                           <PostContainer post={item} key={item.id} restPost />
                         ))}
                       </div>
                     ) : null}
+                    {renderPagination(values?.posts?.length)}
                   </div>
                 ) : null;
               })}

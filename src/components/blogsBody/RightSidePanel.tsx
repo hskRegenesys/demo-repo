@@ -3,6 +3,7 @@ import ApplyNow from "./ApplyNow";
 import About from "./About";
 import Ads from "./Ads";
 import RecommendedPost from "./RecommendedPost";
+import { useRouter } from "next/router";
 
 type IRightSidePanelTypes = {
   isRecommendedPost?: boolean;
@@ -15,16 +16,21 @@ const RightSidePanel = ({
   yellowBtn,
   isBlogDetail,
 }: IRightSidePanelTypes) => {
+  const router = useRouter();
   return (
     <div className="row">
       {!isBlogDetail && (
-        <div className="col-12 col-sm-4 col-lg-12 py-3 pt-4 _ps-lg-5">
+        <div
+          className={`col-12 col-sm-4 col-lg-12 py-3 pt-5 _ps-lg-5 new-apply-now-btn ${
+            router.pathname === "/blog" && "main-blog-page-apply"
+          }`}
+        >
           <ApplyNow yellowBtn={yellowBtn} />
         </div>
       )}
 
       <div
-        className={`col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5 ${
+        className={`col-12 col-sm-4 col-lg-12 py-5 _ps-lg-5 bottom-apply-btn ${
           isBlogDetail && "blog-right-side-panel"
         }`}
       >
