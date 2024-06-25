@@ -234,6 +234,7 @@ const Layout = (props: any) => {
           <meta name="twitter:description" content={description} />
         )}
         {ogImg && <meta name="twitter:image" content={ogImg} />}
+        <link rel="alternate" href={canonicalBaseUrl} hrefLang="en" />
         {/* <link
           rel="alternate"
            hrefLang="x-default"
