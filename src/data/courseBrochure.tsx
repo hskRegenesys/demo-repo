@@ -21,12 +21,6 @@ export const brochureDetails: any = {
     leadSource: leadSource,
     sourceCampaign: sourceCampaign,
   },
-  CS: {
-    name: "cybersecurity-complete-brochure.pdf",
-    leadSource: leadSource,
-    sourceCampaign: sourceCampaign,
-  },
-
   FSD: {
     name: "Full_Stack_Development_Brochure_compressed_compressed.pdf",
     leadSource: leadSource,
