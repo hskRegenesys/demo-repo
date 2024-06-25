@@ -9,10 +9,6 @@ import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import CallToSection from "@/components/HomeSkillDescription/CallToSection";
 import CourseText from "@/components/courses/coursesText";
 import React, { useEffect, useState } from "react";
-import PartnerOne from "@/components/ExperienceSection/ExperienceSection";
-import VideoOne from "@/components/VideoSection/VideoOne";
-import PopularTopics from "@/components/PopularTopics/PopularTopics";
-// import SubCourseDetails from "@/components/courses/subcourseDetails";
 import { useRouter } from "next/router";
 import _ from "lodash";
 

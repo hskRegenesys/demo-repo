@@ -5,7 +5,6 @@ import PhoneInput from "react-phone-number-input";
 import Data from "@/data/AllformsData";
 import _ from "lodash";
 import { useRouter } from "next/router";
-import ImageModalPopup from "../Modal/ImageModalPopup";
 import RequestForm from "../NewComponents/requestForm/RequestForm";
 
 const ApplyNow = (props: any) => {
