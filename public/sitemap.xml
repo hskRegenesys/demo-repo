@@ -36,9 +36,19 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
- 
-  
- 
+
+  <url>
+    <loc>https://www.digitalregenesys.com/online-data-science-course</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/certificate-courses-online</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 
   <url>
     <loc>https://www.digitalregenesys.com/all-courses/digital-marketing</loc>
@@ -502,7 +512,7 @@
     <changefreq>Daily</changefreq>
     <priority>0.90</priority>
   </url>
-   <url>
+  <url>
     <loc>https://www.digitalregenesys.com/uk/cyber-security-course</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>Daily</changefreq>

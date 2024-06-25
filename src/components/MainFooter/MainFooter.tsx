@@ -6,7 +6,15 @@ import TextSplit from "../Reuseable/TextSplit";
 
 const { year, text, socials, addressDetails, links } = mainFooter;
 
-const MainFooter = ({ normalPadding = true }) => {
+interface MainFooterProps {
+  normalPadding?: boolean;
+  isBlogPage?: boolean;
+}
+
+const MainFooter: React.FC<MainFooterProps> = ({
+  normalPadding = true,
+  isBlogPage,
+}) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -15,7 +23,7 @@ const MainFooter = ({ normalPadding = true }) => {
 
   return (
     <footer className={`main-footer${normalPadding ? " normal-padding" : ""}`}>
-      <div className="widgets-section">
+      <div className={`widgets-section ${isBlogPage && "blog-widget-section"}`}>
         <Row className="clearfix">
           <Col xl={3} lg={4} md={12} sm={12} className="column">
             <div className="footer-widget links-widget">

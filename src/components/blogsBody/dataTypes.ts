@@ -7,6 +7,7 @@ export interface IPostListTypes {
 export interface IPostTypes {
   id: number;
   slug: string;
+  link: string;
   yoast_head_json: {
     og_image: Array<{ [key: string]: string | number }>;
     og_title: string;
