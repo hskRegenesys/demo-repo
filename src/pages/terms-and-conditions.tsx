@@ -5,7 +5,7 @@ import Layout from "@/components/Layout/Layout";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
-import CallToSection from "@/components/HomeSkillDescription/CallToSection";
+import CallToSection from "@/components/CallToScetion/CallToSection";
 import TermsAndConditions from "@/components/TermsAndConditions/TermsAndConditions";
 import StickyBar from "@/components/StickyFooter/Sticky";
 

@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
 import { allCourseList } from "@/data/courseData";
 import Styles from "./requestForm.module.css";
-import { brochureDetails } from "@/data/course";
+import { brochureDetails } from "@/data/courseBrochure";
 import mixpanel from "mixpanel-browser";
 
 function RequestForm(props: any) {

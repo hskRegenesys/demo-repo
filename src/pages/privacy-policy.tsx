@@ -19,7 +19,7 @@ const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
 );
 const CallToSection = dynamic(
-  () => import("@/components/HomeSkillDescription/CallToSection")
+  () => import("@/components/CallToScetion/CallToSection")
 );
 const PrivacyPolicy = dynamic(
   () => import("@/components/PrivacyPolicy/PrivacyPolicy")

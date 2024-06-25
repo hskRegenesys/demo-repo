@@ -178,7 +178,6 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     width={346}
                     height={220}
                     priority={true}
-                    layout="responsive"
                     quality={75}
                     decoding="async"
                   />
