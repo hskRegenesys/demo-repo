@@ -84,7 +84,7 @@ const AllCoursesNew = ({
     PopupMobile: "/assets/images/allImages/Home-Mobile-Popup.webp",
   };
   return (
-    <Layout>
+    <Layout pageTitle="allCourse">
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
