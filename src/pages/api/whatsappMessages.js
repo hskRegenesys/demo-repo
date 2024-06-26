@@ -6,7 +6,7 @@ export default async function whatsappMessages(req, res) {
     const messageData = {
       messages: {
         authentication: {
-          producttoken: "5a2cc47d-2f63-4fe9-85ef-26fcede14984",
+          producttoken: process.env.CM_PRODUCT_TOKEN,
         },
         msg: [
           {
@@ -26,8 +26,7 @@ export default async function whatsappMessages(req, res) {
                 {
                   template: {
                     whatsapp: {
-                      namespace: "1b8c1d6e_a041_4986_9875_d1c247485578",
-
+                      namespace: process.env.CM_NAMESPACE,
                       element_name: "wa_openday_zoom_link",
                       language: {
                         policy: "deterministic",
@@ -76,6 +75,7 @@ export default async function whatsappMessages(req, res) {
         },
         body: JSON.stringify(messageData),
       });
+      console.log("reponiseee----", response);
       const data = await response.json();
       res.status(200).json(data);
     } catch (error) {

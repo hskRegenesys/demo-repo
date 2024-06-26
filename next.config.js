@@ -19,6 +19,8 @@ const nextConfig = {
   env: {
     ENV_NAME: process.env.ENV_NAME,
     awsImage_url: process.env.AWS_BUCKET_URL_PROD,
+    CM_PRODUCT_TOKEN: process.env.CM_PRODUCT_TOKEN,
+    CM_NAMESPACE: process.env.CM_NAMESPACE,
   },
   images: {
     domains: [
