@@ -1,15 +1,12 @@
 export default async function whatsappMessages(req, res) {
   if (req.method === "POST") {
-    console.log("reqqqq", req.body);
     const { Name, Phone } = req?.body?.formData;
     const PhoneNumber = Phone?.replace("+", "");
 
     const messageData = {
       messages: {
         authentication: {
-          producttoken:
-            process.env.CM_PRODUCT_TOKEN ||
-            "5a2cc47d-2f63-4fe9-85ef-26fcede14984",
+          producttoken: process.env.CM_PRODUCT_TOKEN,
         },
         msg: [
           {
@@ -29,9 +26,7 @@ export default async function whatsappMessages(req, res) {
                 {
                   template: {
                     whatsapp: {
-                      namespace:
-                        process.env.CM_NAMESPACE ||
-                        "1b8c1d6e_a041_4986_9875_d1c247485578",
+                      namespace: process.env.CM_NAMESPACE,
 
                       element_name: "wa_openday_zoom_link",
                       language: {
@@ -72,8 +67,6 @@ export default async function whatsappMessages(req, res) {
         ],
       },
     };
-
-    console.log("messages", messageData);
 
     try {
       const response = await fetch("https://gw.cmtelecom.com/v1.0/message", {
