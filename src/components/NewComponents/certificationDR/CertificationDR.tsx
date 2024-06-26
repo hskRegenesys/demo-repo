@@ -64,9 +64,8 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
       {isMobile && (
         <div className={Styles.topSectionMobile}>
           <h2 className={Styles.hedingmobile}>
-            {heading}
-            <br></br>
-            <span className={Styles.subHedingmobile}>{title}</span>
+            <span className={Styles.hedingmobileText}>{heading} </span>
+            <span className={Styles.subHedingmobile}>{title} </span>
           </h2>
         </div>
       )}
@@ -75,9 +74,8 @@ const CertificationDR: React.FC<CertificationDRProps> = ({
           {!isMobile && (
             <div className={Styles.topSectionDesktop}>
               <h2 className={Styles.heding}>
-                {heading}
-                <br></br>
-                <span className={Styles.subHeding}> {title}</span>
+                <span className={Styles.hedingdesktopText}>{heading} </span>
+                <span className={Styles.subHeding}>{title} </span>
               </h2>
             </div>
           )}
