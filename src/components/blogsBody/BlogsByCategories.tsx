@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
@@ -66,6 +66,7 @@ const BlogsByCategories = ({
   // };
   const [currentPage, setCurrentPage] = useState<number>(1);
   const postsPerPage = 9;
+  const postContainerRef = useRef<HTMLDivElement>(null);
 
   const handlePageChange = (
     pageNumber: number,
@@ -75,6 +76,9 @@ const BlogsByCategories = ({
     event.preventDefault();
     if (pageNumber > 0 && pageNumber <= Math.ceil(totalPosts / postsPerPage)) {
       setCurrentPage(pageNumber);
+      if (postContainerRef.current) {
+        postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -85,6 +89,9 @@ const BlogsByCategories = ({
     event.preventDefault();
     if (currentPage < Math.ceil(totalPosts / postsPerPage)) {
       setCurrentPage(currentPage + 1);
+      if (postContainerRef.current) {
+        postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -92,6 +99,9 @@ const BlogsByCategories = ({
     event.preventDefault();
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      if (postContainerRef.current) {
+        postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -143,6 +153,12 @@ const BlogsByCategories = ({
     );
   };
 
+  useEffect(() => {
+    if (postContainerRef.current) {
+      postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [currentPage]);
+
   return (
     <div style={{ paddingTop: "85px" }}>
       <div className="d-flex justify-content-center text-center py-5 bg-light-green">
@@ -155,7 +171,7 @@ const BlogsByCategories = ({
           </div>
         </div>
       </div>
-      <div className="container-fluid p-5">
+      <div className="container-fluid p-5" ref={postContainerRef}>
         <BreadCrumb
           title={`Category - ${categorySlug?.toString().replaceAll("-", " ")}`}
           parent="Blog"
@@ -165,6 +181,7 @@ const BlogsByCategories = ({
         <div className="row">
           <div className="col-12 col-lg-9">
             <h1 className="h5 p-0 m-0 fw-bold mt-3">{category} Blog</h1>
+
             {postList?.length > 0 &&
               postList?.map((values) => {
                 const indexOfLastPost = currentPage * postsPerPage;
