@@ -1,5 +1,6 @@
-export default async function sendWhatsAppMessages(req, res) {
+export default async function whatsappMessages(req, res) {
   if (req.method === "POST") {
+    console.log("reqqqq", req.body);
     const { Name, Phone } = req?.body?.formData;
     const PhoneNumber = Phone?.replace("+", "");
 
@@ -71,6 +72,8 @@ export default async function sendWhatsAppMessages(req, res) {
         ],
       },
     };
+
+    console.log("messages", messageData);
 
     try {
       const response = await fetch("https://gw.cmtelecom.com/v1.0/message", {
