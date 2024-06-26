@@ -6,20 +6,17 @@ export default async function sendWhatsAppMessage(req, res) {
     const { Name, Phone } = req?.body?.formData;
     const PhoneNumber = Phone?.replace("+", "");
 
-    const productToken =
-      process.env.CM_PRODUCT_TOKEN || "5a2cc47d-2f63-4fe9-85ef-26fcede14984";
-
     const messageData = {
       messages: {
         authentication: {
-          producttoken: productToken,
+          producttoken: "5a2cc47d-2f63-4fe9-85ef-26fcede14984",
         },
         msg: [
           {
             from: "0027733502575",
             to: [
               {
-                number: `00${PhoneNumber}`,
+                number: `00${PhoneNumber ? PhoneNumber : "27733502575"}`,
               },
             ],
             body: {
@@ -32,7 +29,7 @@ export default async function sendWhatsAppMessage(req, res) {
                 {
                   template: {
                     whatsapp: {
-                      namespace: process.env.CM_NAMESPACE,
+                      namespace: "1b8c1d6e_a041_4986_9875_d1c247485578",
 
                       element_name: "wa_openday_zoom_link",
                       language: {
@@ -59,7 +56,7 @@ export default async function sendWhatsAppMessage(req, res) {
                           parameters: [
                             {
                               type: "text",
-                              text: `${Name}`,
+                              text: `${Name ? Name : "test"}`,
                             },
                           ],
                         },
