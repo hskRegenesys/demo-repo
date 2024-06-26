@@ -56,7 +56,7 @@ export default async function sendWhatsAppMessage(req, res) {
                           parameters: [
                             {
                               type: "text",
-                              text: `${Name ? Name : "test"}`,
+                              text: `${Name ? Name : "User"}`,
                             },
                           ],
                         },
@@ -71,7 +71,6 @@ export default async function sendWhatsAppMessage(req, res) {
       },
     };
     console.log("messageee", messageData);
-    console.log("token", productToken);
     try {
       const response = await fetch("https://gw.cmtelecom.com/v1.0/message", {
         method: "POST",
