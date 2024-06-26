@@ -140,7 +140,7 @@ const AllCourcesCardData = {
         ImgAlt: "Project Management - Digital Regenesys",
         cardCount: "111,719+",
         cardTool: "5+ Tools",
-        cardWeek: "10 Weeks",
+        cardWeek: "22 Weeks",
         CourseNameCode: "PM",
       },
     },

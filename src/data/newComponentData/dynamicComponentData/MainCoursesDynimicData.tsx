@@ -1188,7 +1188,7 @@ const MainCoursesDynimicData = {
               question:
                 "How long does it take to complete a Project Management Course?",
               answer:
-                "The total duration of the Digital Regenesys Project Management Course is 10 weeks.",
+                "The total duration of the Digital Regenesys Project Management Course is 22 weeks.",
             },
             {
               question:
