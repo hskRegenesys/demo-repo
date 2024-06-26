@@ -67,7 +67,7 @@ function RequestForm(props: any) {
 
   const handleWhatsAppMessage = async (formData: any) => {
     try {
-      await fetch("/api/sendWhatsAppMessages", {
+      await fetch("/api/whatsappMessages", {
         method: "POST",
         body: JSON.stringify({ formData }),
         headers: {
