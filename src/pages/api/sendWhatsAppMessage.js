@@ -5,10 +5,13 @@ export default async function sendWhatsAppMessage(req, res) {
     const { Name, Phone } = req?.body?.formData;
     const PhoneNumber = Phone?.replace("+", "");
 
+    const productToken =
+      process.env.CM_PRODUCT_TOKEN || "5a2cc47d-2f63-4fe9-85ef-26fcede14984";
+
     const messageData = {
       messages: {
         authentication: {
-          producttoken: process.env.CM_PRODUCT_TOKEN,
+          producttoken: productToken,
         },
         msg: [
           {
