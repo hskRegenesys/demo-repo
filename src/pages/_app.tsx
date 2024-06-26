@@ -7,7 +7,6 @@ import Script from "next/script";
 import "@/vendors/linoor-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
-import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
 import { Toaster } from "react-hot-toast";
 
@@ -42,6 +41,16 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
       <Schemas type={Constants.localbusiness} />
+      <link
+        href="/assets/images/allImages/Home-Banner-Desktop-slider-one.webp"
+        rel="preload"
+        as="image"
+      />
+      <link
+        href="/assets/images/allImages/Home-Banner-Mobile-slider-one.webp"
+        rel="preload"
+        as="image"
+      />
       {/* Pixel code script start */}
       <Toaster />
 
