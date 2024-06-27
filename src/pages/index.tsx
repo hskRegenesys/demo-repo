@@ -7,6 +7,7 @@ import _ from "lodash";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import MobileMenu from "@/components/Header/MobileMenu";
 import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
+import UspSection from "@/components/NewComponents/uspSection/UspSection";
 
 // const UspSection = dynamic(
 //   () => import("@/components/NewComponents/uspSection/UspSection")
@@ -115,6 +116,7 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
       <HomeSliderBanner
         homeSliderBannerData={homePageData?.homeSliderBannerData}
       />
+      <UspSection />
       <AdmitsCompanies
         handleEnrollButtonClick={handleEnrollButtonClick}
         AdmiteCompaniesData={homePageData?.AdmiteCompaniesData}

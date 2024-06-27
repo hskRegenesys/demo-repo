@@ -2,7 +2,6 @@ import ContextProvider from "@/context/ContextProvider";
 import "@/vendors/flaticon.css";
 import "@/vendors/fontawesome-all.css";
 import Script from "next/script";
-import "@/vendors/linoor-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
 import { Constants } from "src/schemas/data";
