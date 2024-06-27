@@ -9,6 +9,7 @@ export function downloadFromBlob(blob, fileName) {
     link.click();
     return true;
   } catch (error) {
+    console.log(error);
     return false;
   }
 }

@@ -32,9 +32,7 @@ function RequestForm(props: any) {
     countryData ? setIsLoading(false) : setIsLoading(true);
 
     try {
-      const response = await fetch("https://geolocation-db.com/json/", {
-        mode: "no-cors",
-      });
+      const response = await fetch("https://geolocation-db.com/json/");
       const result = await response.json();
       setGeoLocationData(result);
 
