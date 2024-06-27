@@ -46,7 +46,6 @@ function ModalPopup(props: any) {
 
       return result;
     } catch (error) {
-      console.log("error", error);
       return error;
     }
   };

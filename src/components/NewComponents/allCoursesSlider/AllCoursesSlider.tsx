@@ -177,9 +177,10 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     className={Styles.cardImage}
                     width={346}
                     height={220}
-                    priority={true}
+                    loading="lazy"
                     quality={75}
-                    decoding="async"
+                    // decoding="async"
+                    // layout="responsive"
                   />
                 </div>
                 <div className={Styles.textContainer}>

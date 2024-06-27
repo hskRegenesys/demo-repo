@@ -9,7 +9,7 @@ const ContactInfoTwo = () => {
         <Row>
           {contactInfoTwo?.map(({ id, icon, text, email, phone }) => (
             <Col key={id} md={12} lg={4}>
-              <div className="contact-info-two__card animated fadeInUp">
+              <div className="contact-info-two__card  fadeInUp">
                 <i className={icon}></i>
                 <a
                   href={
