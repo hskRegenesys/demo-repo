@@ -7,7 +7,6 @@ import Script from "next/script";
 import "@/vendors/linoor-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
-import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
 import { Toaster } from "react-hot-toast";
 
