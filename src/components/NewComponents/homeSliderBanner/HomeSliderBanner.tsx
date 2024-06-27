@@ -29,16 +29,16 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
           <Image
             className={Styles.img}
             src={slide.imageUrl}
-            rel="preload"
+            // rel="preload"
             alt="Banner Home"
-            width={isMobile ? 360 : 1920}
-            height={isMobile ? 356 : 586}
+            width={isMobile ? 760 : 1440}
+            height={isMobile ? 752 : 439}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             layout="responsive"
             objectFit="cover"
             objectPosition="center"
             priority={true}
-            decoding="async"
+            // decoding="async"
           />
         </a>
       </SwiperSlide>
