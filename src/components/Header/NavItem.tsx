@@ -773,9 +773,13 @@ const NavItem = (props: any) => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  <Link key={index} href={program.courseUrl}>
+                                  <a
+                                    key={index}
+                                    href={program.courseUrl}
+                                    rel="nofollow"
+                                  >
                                     {program.courseName}
-                                  </Link>
+                                  </a>
                                   <span className="fa fa-angle-down"></span>
                                 </a>
                                 {selectedProgram === program.courseName && (

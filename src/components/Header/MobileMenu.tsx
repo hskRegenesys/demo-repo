@@ -43,13 +43,13 @@ const MobileMenu = ({ onePage = false }) => {
               </div>
             </div>
 
-            <a
+            <span
               onClick={toggleMenu}
               className="side-menu__toggler side-menu__close-btn text-black"
               style={{ fontSize: "30px" }}
             >
               &times;
-            </a>
+            </span>
           </div>
 
           <nav className="mobile-nav-new">
