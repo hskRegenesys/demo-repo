@@ -27,6 +27,56 @@ const NewsLetter = () => {
     handleSubmit,
   } = useForm();
 
+  const createEmailData = (params: any) => ({
+    fromAddressID: process.env.CM_DR_ADDRESSID,
+    fromName: "Digital Regenesys",
+    toAddress: params?.Email || params?.email,
+    toName: params?.Name || params?.name,
+    ccEmailAddress: "info.digital@regenesys.net",
+    subject: "Digital Regenesys",
+    htmlBody: `
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+          <body>
+            <p>Hello ${params?.Name || "Dear"}!</p>
+          </body>
+        </html>`,
+    textBody: `Hello ${params?.Name || "Dear"}`,
+    attachmentUrl:
+      "https://dr-website-marketing.s3.ap-south-1.amazonaws.com/regenesys-logo-cm.jpg",
+    attachmentFileName: "DigitalRegenesys.jpg",
+    customerReference: "123456789",
+  });
+
+  const handleWhatsAppMessage = async (formData: any) => {
+    try {
+      await fetch("/api/whatsappMessages", {
+        method: "POST",
+        body: JSON.stringify({ formData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log("Error", error);
+    }
+  };
+
+  const handleEmailMessage = async (params: any) => {
+    const emailData = createEmailData(params);
+    try {
+      await fetch("/api/emailMessageUrls", {
+        method: "POST",
+        body: JSON.stringify({ emailData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log("Error", error);
+    }
+  };
+
   const onSubmit = async (data: { [key: string]: any }) => {
     if (!isCheckboxChecked) {
       setCheckBoxError("*Please accept the conditions.");
@@ -39,6 +89,8 @@ const NewsLetter = () => {
       mixpanel.track("submit-newsletter-form", { submit_value: true });
       reset();
     }
+    handleEmailMessage(data);
+    handleWhatsAppMessage(data);
     reset();
     setIsCheckboxChecked(false);
     notify();

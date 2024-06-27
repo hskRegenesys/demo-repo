@@ -18,6 +18,10 @@ export const WhatsAppMessagingAPIConstants = {
   baseURL: process.env.CM_TELECOM_BASE_URL,
 };
 
+export const cmEmailServiceUrlConstant = {
+  baseURL: `https://api.cm.com/bulkemail/v1.0/accounts/${process.env.CM_DR_ACCOUNTID}/mails`,
+};
+
 export const apiEndPoints = Object.freeze({
   contactApi: "/contacts",
   coursesApi: "/course/all",
