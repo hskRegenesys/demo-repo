@@ -79,6 +79,7 @@
 .formFooterText a {
   margin-left: 2px;
   color: #008554;
+  font-family: Montserrat-semiBold;
 }
 .formFooterText a:hover {
   text-decoration: underline;

@@ -269,112 +269,251 @@ const NavItem = (props: any) => {
   return (
     <>
       {isMobileView === true ? (
-        <div>
-          <ul className="mobile-nav-new">
-            {newNavItems.map((navItem: any, id: any) => (
-              <>
-                <li
-                  key={navItem.id}
-                  className={`mobile-nav-item-new ${
-                    activeDropdown === navItem.name ? "active" : ""
-                  }`}
-                >
-                  <div className="nav-link new-mobile-nav-wrapper">
-                    <Link href={navItem.href}>
-                      <a>
-                        <div className="mobile-nav-img-title">
-                          <Image
-                            layout="intrinsic"
-                            width="24"
-                            height="24"
-                            alt="Mobile Icon"
-                            src={mobileIcons[id]}
-                          />
-                          <span
-                            className="m-2"
-                            style={{
-                              color:
-                                activeDropdown === navItem.name
-                                  ? "#008554"
-                                  : "",
-                            }}
-                          >
-                            {navItem.name}
-                          </span>
-                        </div>
-                      </a>
-                    </Link>
-                    {navItem.subNavItems &&
-                      navItem?.subNavItems?.length > 0 && (
-                        <div>
-                          <span
-                            className="fa fa-angle-right me-2"
-                            onClick={() => handleDropdownClick(navItem.name)}
-                            style={{
-                              marginLeft: "122px",
-                            }}
-                          ></span>
-                        </div>
-                      )}
+        <li className="mobile-nav-new">
+          {newNavItems.map((navItem: any, id: any) => (
+            <div
+              key={navItem.id}
+              className={`mobile-nav-item-new ${
+                activeDropdown === navItem.name ? "active" : ""
+              }`}
+            >
+              <div className="nav-link new-mobile-nav-wrapper">
+                <Link href={navItem.href}>
+                  <a>
+                    <div className="mobile-nav-img-title">
+                      <Image
+                        layout="intrinsic"
+                        width="24"
+                        height="24"
+                        alt="Mobile Icon"
+                        src={mobileIcons[id]}
+                      />
+                      <span
+                        className="m-2"
+                        style={{
+                          color:
+                            activeDropdown === navItem.name ? "#008554" : "",
+                        }}
+                      >
+                        {navItem.name}
+                      </span>
+                    </div>
+                  </a>
+                </Link>
+                {navItem.subNavItems && navItem?.subNavItems?.length > 0 && (
+                  <div>
+                    <span
+                      className="fa fa-angle-right me-2"
+                      onClick={() => handleDropdownClick(navItem.name)}
+                      style={{
+                        marginLeft: "122px",
+                      }}
+                    ></span>
                   </div>
-                  {activeDropdown === navItem.name && (
-                    <div className="drop-down-1">
-                      <ul>
-                        <li
+                )}
+              </div>
+              {activeDropdown === navItem.name && (
+                <div className="drop-down-1">
+                  <ul>
+                    <li
+                      style={{
+                        listStyle: "block",
+                        listStyleType: "disc !important",
+                      }}
+                      className={
+                        activeDropdown === navItem.name && showCoursesDropdown1
+                          ? "drop-down-li colorActiveGreen"
+                          : "drop-down-li"
+                      }
+                      onClick={toggleCoursesDropdown1}
+                    >
+                      <div className="inner-dropdown-li-dot">
+                        <span
+                          className="fa fa-circle"
                           style={{
-                            listStyle: "block",
-                            listStyleType: "disc !important",
+                            fontSize: "8px",
+                            paddingRight: "10px",
                           }}
-                          className={
-                            activeDropdown === navItem.name &&
-                            showCoursesDropdown1
-                              ? "drop-down-li colorActiveGreen"
-                              : "drop-down-li"
-                          }
-                          onClick={toggleCoursesDropdown1}
-                        >
-                          <div className="inner-dropdown-li-dot">
-                            <span
-                              className="fa fa-circle"
-                              style={{
-                                fontSize: "8px",
-                                paddingRight: "10px",
-                              }}
-                            ></span>
-                            Certificate Courses
-                          </div>
-                          <span className="fa fa-angle-right"></span>
-                        </li>
-                        {showCoursesDropdown1 && (
-                          <div>
-                            {navItem.subNavItems &&
-                              navItem.subNavItems.length > 0 && (
-                                <ul className="drop-down-container-new">
-                                  {navItem.subNavItems.map(
-                                    (subNavItem: any) => (
-                                      <li
-                                        key={subNavItem.id}
-                                        className="drop-down-subNavItem"
-                                      >
-                                        <a
-                                          style={{
-                                            display: "flex",
-                                            justifyContent: "space-between",
-                                            width: "100%",
-                                            maxWidth: "230px",
-                                          }}
-                                        >
-                                          {/* <span className="newAnimation blink-soft">
+                        ></span>
+                        Certificate Courses
+                      </div>
+                      <span className="fa fa-angle-right"></span>
+                    </li>
+                    {showCoursesDropdown1 && (
+                      <div>
+                        {navItem.subNavItems &&
+                          navItem.subNavItems.length > 0 && (
+                            <ul className="drop-down-container-new">
+                              {navItem.subNavItems.map((subNavItem: any) => (
+                                <li
+                                  key={subNavItem.id}
+                                  className="drop-down-subNavItem"
+                                >
+                                  <a
+                                    style={{
+                                      display: "flex",
+                                      justifyContent: "space-between",
+                                      width: "100%",
+                                      maxWidth: "230px",
+                                    }}
+                                  >
+                                    {/* <span className="newAnimation blink-soft">
                                             New
                                           </span> */}
 
-                                          {subNavItem.name ===
-                                          "Product Management" ? (
-                                            <span className="newAnimation blink-soft">
-                                              New
-                                            </span>
-                                          ) : null}
-                                          <div>
+                                    {subNavItem.name ===
+                                    "Product Management" ? (
+                                      <span className="newAnimation blink-soft">
+                                        New
+                                      </span>
+                                    ) : null}
+                                    <div>
+                                      <span
+                                        className="fa fa-circle"
+                                        style={{
+                                          fontSize: "6px",
+                                          paddingRight: "10px",
+                                        }}
+                                      ></span>
+                                      <Link href={subNavItem.href}>
+                                        <a onClick={toggleMenu}>
+                                          {subNavItem.name}
+                                        </a>
+                                      </Link>
+                                    </div>
+
+                                    {subNavItem.subItems &&
+                                      subNavItem.subItems?.length > 0 && (
+                                        <span
+                                          className="fa fa-angle-right"
+                                          onClick={() =>
+                                            handleSubDropdownClick(
+                                              subNavItem.name
+                                            )
+                                          }
+                                        ></span>
+                                      )}
+                                  </a>
+                                  {activeSubDropdown === subNavItem.name &&
+                                    subNavItem.subItems &&
+                                    subNavItem.subItems.length > 0 && (
+                                      <ul className="mobile-sub-nav-new">
+                                        {subNavItem.subItems.map(
+                                          (subSubItem: any) => (
+                                            <li
+                                              key={subSubItem.id}
+                                              className="mobile-sub-nav-item-new"
+                                            >
+                                              <div
+                                                style={{
+                                                  display: "flex",
+                                                }}
+                                              >
+                                                <span
+                                                  className="fa fa-circle"
+                                                  style={{
+                                                    fontSize: "4px",
+                                                    paddingRight: "10px",
+                                                  }}
+                                                ></span>
+                                                <Link href={subSubItem.href}>
+                                                  <a>{subSubItem.name}</a>
+                                                </Link>
+                                              </div>
+                                            </li>
+                                          )
+                                        )}
+                                      </ul>
+                                    )}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                      </div>
+                    )}
+                  </ul>
+                  <ul>
+                    <li
+                      className={
+                        activeDropdown === navItem.name && showCoursesDropdown2
+                          ? "drop-down-li colorActiveGreen"
+                          : "drop-down-li"
+                      }
+                      onClick={toggleCoursesDropdown2}
+                    >
+                      <div className="inner-dropdown-li-dot">
+                        <span
+                          className="fa fa-circle"
+                          style={{
+                            fontSize: "8px",
+                            paddingRight: "10px",
+                          }}
+                        ></span>
+                        Academic Programmes
+                      </div>
+                      <span className="fa fa-angle-right"></span>
+                    </li>
+                    {showCoursesDropdown2 && (
+                      <div className="drop-down-2">
+                        <div className="degreeCoursesData mobile-academic-programme">
+                          <ul>
+                            {degreeProgrammesData.map((program, index) => (
+                              <li
+                                className={
+                                  selectedProgram === program.courseName
+                                    ? "active"
+                                    : ""
+                                }
+                                style={{ padding: "10px 0px" }}
+                                key={index}
+                                onClick={() =>
+                                  handleDropdownToggle(program.courseName)
+                                }
+                              >
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    fontSize: "12px",
+                                    alignItems: "center",
+                                  }}
+                                  className={
+                                    selectedProgram === program.courseName
+                                      ? "colorActiveGreen"
+                                      : ""
+                                  }
+                                >
+                                  <div
+                                    style={{
+                                      display: "flex",
+                                      alignItems: "center",
+                                    }}
+                                  >
+                                    <span
+                                      className="fa fa-circle"
+                                      style={{
+                                        fontSize: "7px",
+                                        paddingRight: "10px",
+                                      }}
+                                    ></span>
+                                    <Link key={index} href={program.courseUrl}>
+                                      {program.courseName}
+                                    </Link>
+                                  </div>
+                                  <span className="fa fa-angle-down"></span>
+                                </div>
+                                {selectedProgram === program.courseName && (
+                                  <a className="inlineDegreeCourse">
+                                    {program.subDegreePrograms.map(
+                                      (subProgram, subIndex) => (
+                                        <span key={subIndex}>
+                                          <div
+                                            style={{
+                                              display: "flex",
+                                              alignItems: "center",
+                                              paddingBottom: "10px",
+                                            }}
+                                          >
                                             <span
                                               className="fa fa-circle"
                                               style={{
@@ -382,237 +521,77 @@ const NavItem = (props: any) => {
                                                 paddingRight: "10px",
                                               }}
                                             ></span>
-                                            <Link href={subNavItem.href}>
-                                              <a onClick={toggleMenu}>
-                                                {subNavItem.name}
-                                              </a>
+                                            <Link
+                                              key={subIndex}
+                                              href={subProgram.subCourseUrl}
+                                            >
+                                              {subProgram.subCourseName}
                                             </Link>
                                           </div>
-
-                                          {subNavItem.subItems &&
-                                            subNavItem.subItems?.length > 0 && (
-                                              <span
-                                                className="fa fa-angle-right"
-                                                onClick={() =>
-                                                  handleSubDropdownClick(
-                                                    subNavItem.name
-                                                  )
-                                                }
-                                              ></span>
-                                            )}
-                                        </a>
-                                        {activeSubDropdown ===
-                                          subNavItem.name &&
-                                          subNavItem.subItems &&
-                                          subNavItem.subItems.length > 0 && (
-                                            <ul className="mobile-sub-nav-new">
-                                              {subNavItem.subItems.map(
-                                                (subSubItem: any) => (
-                                                  <li
-                                                    key={subSubItem.id}
-                                                    className="mobile-sub-nav-item-new"
-                                                  >
-                                                    <div
-                                                      style={{
-                                                        display: "flex",
-                                                      }}
-                                                    >
-                                                      <span
-                                                        className="fa fa-circle"
-                                                        style={{
-                                                          fontSize: "4px",
-                                                          paddingRight: "10px",
-                                                        }}
-                                                      ></span>
-                                                      <Link
-                                                        href={subSubItem.href}
-                                                      >
-                                                        <a>{subSubItem.name}</a>
-                                                      </Link>
-                                                    </div>
-                                                  </li>
-                                                )
-                                              )}
-                                            </ul>
-                                          )}
-                                      </li>
-                                    )
-                                  )}
-                                </ul>
-                              )}
-                          </div>
-                        )}
-                      </ul>
-                      <ul>
-                        <li
-                          className={
-                            activeDropdown === navItem.name &&
-                            showCoursesDropdown2
-                              ? "drop-down-li colorActiveGreen"
-                              : "drop-down-li"
-                          }
-                          onClick={toggleCoursesDropdown2}
-                        >
-                          <div className="inner-dropdown-li-dot">
-                            <span
-                              className="fa fa-circle"
-                              style={{
-                                fontSize: "8px",
-                                paddingRight: "10px",
-                              }}
-                            ></span>
-                            Academic Programmes
-                          </div>
-                          <span className="fa fa-angle-right"></span>
-                        </li>
-                        {showCoursesDropdown2 && (
-                          <div className="drop-down-2">
-                            <div className="degreeCoursesData mobile-academic-programme">
-                              <ul>
-                                {degreeProgrammesData.map((program, index) => (
-                                  <li
-                                    className={
-                                      selectedProgram === program.courseName
-                                        ? "active"
-                                        : ""
-                                    }
-                                    style={{ padding: "10px 0px" }}
-                                    key={index}
-                                    onClick={() =>
-                                      handleDropdownToggle(program.courseName)
-                                    }
-                                  >
-                                    <div
-                                      style={{
-                                        display: "flex",
-                                        justifyContent: "space-between",
-                                        fontSize: "12px",
-                                        alignItems: "center",
-                                      }}
-                                      className={
-                                        selectedProgram === program.courseName
-                                          ? "colorActiveGreen"
-                                          : ""
-                                      }
-                                    >
-                                      <div
-                                        style={{
-                                          display: "flex",
-                                          alignItems: "center",
-                                        }}
-                                      >
-                                        <span
-                                          className="fa fa-circle"
-                                          style={{
-                                            fontSize: "7px",
-                                            paddingRight: "10px",
-                                          }}
-                                        ></span>
-                                        <Link
-                                          key={index}
-                                          href={program.courseUrl}
-                                        >
-                                          {program.courseName}
-                                        </Link>
-                                      </div>
-                                      <span className="fa fa-angle-down"></span>
-                                    </div>
-                                    {selectedProgram === program.courseName && (
-                                      <a className="inlineDegreeCourse">
-                                        {program.subDegreePrograms.map(
-                                          (subProgram, subIndex) => (
-                                            <span key={subIndex}>
-                                              <div
-                                                style={{
-                                                  display: "flex",
-                                                  alignItems: "center",
-                                                  paddingBottom: "10px",
-                                                }}
-                                              >
-                                                <span
-                                                  className="fa fa-circle"
-                                                  style={{
-                                                    fontSize: "6px",
-                                                    paddingRight: "10px",
-                                                  }}
-                                                ></span>
-                                                <Link
-                                                  key={subIndex}
-                                                  href={subProgram.subCourseUrl}
-                                                >
-                                                  {subProgram.subCourseName}
-                                                </Link>
-                                              </div>
-                                            </span>
-                                          )
-                                        )}
-                                      </a>
+                                        </span>
+                                      )
                                     )}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                        )}
-                      </ul>
-                      <ul>
-                        <li
-                          className={
-                            activeDropdown === navItem.name &&
-                            showCoursesDropdown3
-                              ? "drop-down-li colorActiveGreen"
-                              : "drop-down-li"
-                          }
-                          onClick={toggleCoursesDropdown3}
-                        >
-                          <div className="inner-dropdown-li-dot">
+                                  </a>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    )}
+                  </ul>
+                  <ul>
+                    <li
+                      className={
+                        activeDropdown === navItem.name && showCoursesDropdown3
+                          ? "drop-down-li colorActiveGreen"
+                          : "drop-down-li"
+                      }
+                      onClick={toggleCoursesDropdown3}
+                    >
+                      <div className="inner-dropdown-li-dot">
+                        <span
+                          className="fa fa-circle"
+                          style={{
+                            fontSize: "8px",
+                            paddingRight: "10px",
+                          }}
+                        ></span>
+                        Training Programmes
+                      </div>
+                      <span className="fa fa-angle-right"></span>
+                    </li>
+                    {showCoursesDropdown3 && (
+                      <div className="drop-down-3">
+                        {trainingProgrammesData?.map((item) => (
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              padding: "8px 0px",
+                              fontSize: "12px",
+                            }}
+                          >
                             <span
                               className="fa fa-circle"
                               style={{
-                                fontSize: "8px",
+                                fontSize: "6px",
                                 paddingRight: "10px",
                               }}
                             ></span>
-                            Training Programmes
+                            <Link key={item.courseName} href={item.courseUrl}>
+                              {item.courseName}
+                            </Link>
                           </div>
-                          <span className="fa fa-angle-right"></span>
-                        </li>
-                        {showCoursesDropdown3 && (
-                          <div className="drop-down-3">
-                            {trainingProgrammesData?.map((item) => (
-                              <div
-                                style={{
-                                  display: "flex",
-                                  alignItems: "center",
-                                  padding: "8px 0px",
-                                  fontSize: "12px",
-                                }}
-                              >
-                                <span
-                                  className="fa fa-circle"
-                                  style={{
-                                    fontSize: "6px",
-                                    paddingRight: "10px",
-                                  }}
-                                ></span>
-                                <Link
-                                  key={item.courseName}
-                                  href={item.courseUrl}
-                                >
-                                  {item.courseName}
-                                </Link>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                      </ul>
-                    </div>
-                  )}
-                </li>
-              </>
-            ))}
-          </ul>
-        </div>
+                        ))}
+                      </div>
+                    )}
+                  </ul>
+                </div>
+              )}
+            </div>
+          ))}
+        </li>
       ) : isMobileView === false ? (
         <li
           className={`dropdown${current ? " current" : ""}`}

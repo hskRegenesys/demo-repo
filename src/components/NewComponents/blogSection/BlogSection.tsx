@@ -62,8 +62,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
-                  width={360}
-                  height={190}
+                  width={384}
+                  height={187}
                   priority={true}
                 />
 
