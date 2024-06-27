@@ -1,3 +1,5 @@
+const { WhatsAppMessagingAPIConstants } = require("../../data/axisos");
+
 export default async function whatsappMessages(req, res) {
   if (req.method === "POST") {
     const { Name, Phone } = req?.body?.formData;
@@ -68,14 +70,13 @@ export default async function whatsappMessages(req, res) {
     };
 
     try {
-      const response = await fetch("https://gw.cmtelecom.com/v1.0/message", {
+      const response = await fetch(WhatsAppMessagingAPIConstants?.baseURL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(messageData),
       });
-      console.log("reponiseee----", response);
       const data = await response.json();
       res.status(200).json(data);
     } catch (error) {

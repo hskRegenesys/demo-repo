@@ -17,10 +17,6 @@ const ApplyNow = (props: any) => {
     setcourseData(courseListResponse);
   };
 
-  const onSubmit = (data: any) => {
-    console.log("form data", data);
-  };
-
   useEffect(() => {
     getData();
   }, []);
