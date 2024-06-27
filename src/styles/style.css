@@ -19758,6 +19758,11 @@ input.PhoneInputInput {
   margin-left: 18px;
   height: 10px;
 }
+.PhoneInputCountryIconImg{
+  width: 22px !important;
+}
+
+
 
 .inputForm .PhoneInputCountry {
   margin: 5px;
