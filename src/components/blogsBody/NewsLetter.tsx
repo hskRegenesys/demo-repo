@@ -12,7 +12,6 @@ const NewsLetter = () => {
   const router = useRouter();
   const { utm_source, utm_medium, utm_campaign, utm_content } = router.query;
 
-  const [geoLocationData, setGeoLocationData] = useState({});
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
   const [checkBoxError, setCheckBoxError] = useState("");
 

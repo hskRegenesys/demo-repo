@@ -496,9 +496,13 @@ const NavItem = (props: any) => {
                                         paddingRight: "10px",
                                       }}
                                     ></span>
-                                    <Link key={index} href={program.courseUrl}>
+                                    <a
+                                      key={index}
+                                      href={program.courseUrl}
+                                      rel="nofollow"
+                                    >
                                       {program.courseName}
-                                    </Link>
+                                    </a>
                                   </div>
                                   <span className="fa fa-angle-down"></span>
                                 </div>

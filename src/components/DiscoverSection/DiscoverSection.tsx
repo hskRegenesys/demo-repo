@@ -27,7 +27,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                     alt="Icon"
                   />
                 </div>
-                <div className="cap-box animated fadeInUp">
+                <div className="cap-box  fadeInUp">
                   <div className="cap-inner">
                     <h5>{title}</h5>
                     <p>{text}</p>
@@ -74,7 +74,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                       />
                     </div>
                   </div>
-                  <div className="cap-box animated fadeInUp">
+                  <div className="cap-box  fadeInUp">
                     <div className="cap-inner">
                       <h5>{title}</h5>
                       <p className="mb-0">{text}</p>
@@ -119,7 +119,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                       alt="Icon"
                     />
                   </div>
-                  <div className="cap-box animated fadeInUp">
+                  <div className="cap-box  fadeInUp">
                     <div className="cap-inner">
                       <h5>{title}</h5>
                       <p className="contact-equal-spacing2">{text}</p>

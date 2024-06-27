@@ -61,7 +61,8 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
                     alt="Learning Support"
                     width={384}
                     height={164}
-                    priority={true}
+                    layout="responsive"
+                    loading="lazy"
                   />
                 </div>
 

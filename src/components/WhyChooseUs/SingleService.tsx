@@ -2,12 +2,12 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import TextSplit from "../Reuseable/TextSplit";
 
-const SingleService = ({ service = {icon:'', title:''} }) => {
+const SingleService = ({ service = { icon: "", title: "" } }) => {
   const { icon, title } = service;
 
   return (
     <Col xl={3} lg={6} md={6} sm={12} className="service-block-two">
-      <div className="inner-box animated fadeInUp">
+      <div className="inner-box  fadeInUp">
         <div className="bottom-curve"></div>
         <div className="icon-box">
           <span className={icon}></span>

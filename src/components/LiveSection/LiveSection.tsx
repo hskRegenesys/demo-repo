@@ -24,7 +24,7 @@ const LiveSection = ({ className = "" }) => {
             style={{ backgroundImage: `url(${bg})` }}
           ></div>
           <div className="inner clearfix">
-            <div className="animated fadeInUp round-box">
+            <div className=" fadeInUp round-box">
               <div className="vid-link">
                 <a onClick={() => setOpen(true)} className="lightbox-image">
                   <div className="icon">

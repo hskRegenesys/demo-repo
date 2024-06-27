@@ -1,6 +1,4 @@
 import ContextProvider from "@/context/ContextProvider";
-import "@/vendors/animate.css";
-import "@/vendors/custom-animate.css";
 import "@/vendors/flaticon.css";
 import "@/vendors/fontawesome-all.css";
 import Script from "next/script";
