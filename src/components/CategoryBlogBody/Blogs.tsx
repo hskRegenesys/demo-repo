@@ -17,11 +17,9 @@ const Blogs = () => {
   const getAllCatogries = async () => {
     const response = await wpService.allCategories();
     !!response ? setResponse(response) : setResponse([]);
-    console.log(response);
   };
   const getAllPosts = async () => {
     const response = await wpService.allPosts();
-    console.log("res", response);
     !!response ? setResponsePost(response) : setResponsePost([]);
   };
 

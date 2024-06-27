@@ -40,7 +40,6 @@ class LeadService {
       ? "UGANDA"
       : "TANZANIA";
 
-    console.log("crmData", crmData);
     await axios
       .post(
         "https://api.vinecrms.com/api/",

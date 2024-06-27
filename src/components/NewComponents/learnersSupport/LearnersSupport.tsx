@@ -59,8 +59,8 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
                     src={item.LsImg}
                     //src={`${imageUrl}${item.LsImg}`}
                     alt="Learning Support"
-                    width={360}
-                    height={160}
+                    width={384}
+                    height={164}
                     priority={true}
                   />
                 </div>

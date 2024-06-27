@@ -41,16 +41,6 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Schemas type={Constants.image} />
       <Schemas type={Constants.organization} />
       <Schemas type={Constants.localbusiness} />
-      <link
-        href="/assets/images/allImages/Home-Banner-Desktop-slider-one.webp"
-        rel="preload"
-        as="image"
-      />
-      <link
-        href="/assets/images/allImages/Home-Banner-Mobile-slider-one.webp"
-        rel="preload"
-        as="image"
-      />
       {/* Pixel code script start */}
       <Toaster />
 
