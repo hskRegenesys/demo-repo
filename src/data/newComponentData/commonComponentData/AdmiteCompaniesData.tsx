@@ -4,25 +4,25 @@ const AdmiteCompaniesData = {
   admitsButtonIcon: "/assets/images/allImages/DoubleArrowWhite.svg",
   AdmitsCards: [
     {
-      AdmitsImage: "/assets/images/allImages/vodacom.svg",
+      AdmitsImage: "/assets/images/allImages/vodacom.webp",
     },
     {
-      AdmitsImage: "/assets/images/allImages/liberty.svg",
+      AdmitsImage: "/assets/images/allImages/liberty.webp",
     },
     {
-      AdmitsImage: "/assets/images/allImages/discovery.svg",
+      AdmitsImage: "/assets/images/allImages/discovery.webp",
     },
     {
-      AdmitsImage: "/assets/images/allImages/mtn.svg",
+      AdmitsImage: "/assets/images/allImages/mtn.webp",
     },
     {
-      AdmitsImage: "/assets/images/allImages/absa.svg",
+      AdmitsImage: "/assets/images/allImages/absa.webp",
     },
     {
-      AdmitsImage: "/assets/images/allImages/samsung.svg",
+      AdmitsImage: "/assets/images/allImages/samsung.webp",
     },
     {
-      AdmitsImage: "/assets/images/allImages/nedbank.svg",
+      AdmitsImage: "/assets/images/allImages/nedbank.webp",
     },
   ],
 };

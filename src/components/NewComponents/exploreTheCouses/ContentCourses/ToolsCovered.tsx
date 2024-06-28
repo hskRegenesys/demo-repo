@@ -24,7 +24,7 @@ const ToolsCovered: React.FC<ToolsCoveredProps> = ({
       <ul className={styles.horizontalCardContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
-          className={styles.swiperStyle}
+          className={`${styles.swiperStyle} swiperStyle`}
           slidesPerView={4}
           slidesPerGroup={4}
           pagination={{ clickable: true }}

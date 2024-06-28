@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
-import styles from "./TalentedComponent.module.css";
+import Styles from "./TalentedComponent.module.css";
 import Image from "next/image";
 import OurLocation from "../OurLocation/OurLocation";
 
@@ -84,21 +84,21 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
 
   return (
     <>
-      <div className={styles.talentedComponent}>
-        <div className={styles.leftSection}>
+      <div className={Styles.talentedComponent}>
+        <div className={Styles.leftSection}>
           <p className="main-heading-start">Meet our Faculty</p>
           <h2 className="main-sub-heading-start">See Our Talented Faculty</h2>
-          <button className={styles.btnStart} onClick={handleEnrollButtonClick}>
+          <button className={Styles.btnStart} onClick={handleEnrollButtonClick}>
             Enrol Now
           </button>
         </div>
 
-        <div className={styles.rightSection}>
-          <div className={styles.cardContainer}>
-            <div className={styles.swiperNavigation}>
+        <div className={Styles.rightSection}>
+          <div className={Styles.cardContainer}>
+            <div className={Styles.swiperNavigation}>
               <Swiper
                 ref={swiperRef}
-                className={styles.swiperStyle}
+                className={`${Styles.swiperStyle} swiperStyle`}
                 slidesPerView={3}
                 navigation={{
                   nextEl: ".swiper-button-next",
@@ -123,9 +123,9 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
               >
                 {data.map((faculty: Faculty, index: number) => (
                   <SwiperSlide key={index}>
-                    <div className={styles.card}>
-                      <div className={styles.bgcolor}></div>
-                      <div className={styles.cardImg}>
+                    <div className={Styles.card}>
+                      <div className={Styles.bgcolor}></div>
+                      <div className={Styles.cardImg}>
                         {faculty.facultyImg && (
                           <Image
                             src={faculty.facultyImg}
@@ -137,14 +137,14 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
                           />
                         )}
                       </div>
-                      <p className={styles.facultyName}>
+                      <p className={Styles.facultyName}>
                         {faculty.facultyName}
                       </p>
-                      <p className={styles.courseName}>
+                      <p className={Styles.courseName}>
                         {faculty.facultyEducation}
                       </p>
                       {faculty.yearsOfExperience && (
-                        <p className={styles.yearsOfExperience}>
+                        <p className={Styles.yearsOfExperience}>
                           <span>{faculty.yearsOfExperience} </span>Years of
                           Experience
                         </p>
@@ -156,20 +156,20 @@ const TalentedComponent: React.FC<TalentedComponentProp> = ({
 
               <button
                 aria-label="Arrow Button"
-                className={`swiper-button-next ${styles.nextButton}`}
+                className={`swiper-button-next ${Styles.nextButton}`}
                 onClick={handleNextSlide}
               ></button>
 
               <button
                 aria-label="Arrow Button"
-                className={`swiper-button-prev ${styles.prevButton}`}
+                className={`swiper-button-prev ${Styles.prevButton}`}
                 onClick={handlePrevSlide}
               ></button>
             </div>
           </div>
         </div>
         <button
-          className={styles.btnStartMobile}
+          className={Styles.btnStartMobile}
           onClick={handleEnrollButtonClick}
         >
           Enrol Now

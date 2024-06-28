@@ -38,7 +38,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
       <div className={Styles.blogCardsContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
-          className={Styles.swiperStyle}
+          className={`${Styles.swiperStyle} swiperStyle`}
           spaceBetween={30}
           slidesPerView={3}
           pagination={{ clickable: true }}

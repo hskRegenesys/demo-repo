@@ -35,7 +35,7 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
 
       <div className={Styles.LsCardsContainer}>
         <Swiper
-          className={Styles.swiperStyle}
+          className={`${Styles.swiperStyle} swiperStyle`}
           spaceBetween={30}
           slidesPerView={3}
           pagination={{ clickable: true }}

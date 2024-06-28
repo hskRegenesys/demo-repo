@@ -31,25 +31,6 @@
   border-radius: 20px;
 }
 
-.swiperStyle {
-  --swiper-pagination-color: #008554;
-  --swiper-pagination-bullet-size: 8px;
-  --swiper-pagination-bullet-width: 8px;
-  --swiper-pagination-bullet-height: 8px;
-  --swiper-pagination-bullet-inactive-color: #008554;
-  --swiper-pagination-bullet-inactive-opacity: 0.2;
-  --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-pagination-bullet-vertical-gap: 120px;
-}
-.swiperStyle {
-  --add-bottom: 50px;
-  padding-bottom: var(--add-bottom) !important;
-  align-items: center;
-}
-.swiperStyle [class^="swiper-button-"] {
-  top: calc(50% - var(--add-bottom) / 2);
-}
 .iframe {
   width: 560px;
   height: 315px;

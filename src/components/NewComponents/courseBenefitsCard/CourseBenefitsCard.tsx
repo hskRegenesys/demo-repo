@@ -34,7 +34,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
       <div className={styles.cardsContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
-          className={styles.swiperStyle}
+          className={`${styles.swiperStyle} swiperStyle`}
           spaceBetween={30}
           slidesPerView={3}
           pagination={{ clickable: true }}

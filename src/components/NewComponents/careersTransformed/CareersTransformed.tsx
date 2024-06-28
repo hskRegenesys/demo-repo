@@ -82,7 +82,10 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
       </div>
 
       <div className={Styles.swiperContainer}>
-        <Swiper className={Styles.swiperStyle} {...swiperSettings}>
+        <Swiper
+          className={`${Styles.swiperStyle} swiperStyle`}
+          {...swiperSettings}
+        >
           {swiperCardContainer.map((swiperCard, index) => (
             <SwiperSlide key={index} className={Styles.swiperCard}>
               <div className={Styles.topSection}>
