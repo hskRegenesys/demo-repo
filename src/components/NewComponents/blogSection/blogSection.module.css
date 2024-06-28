@@ -7,18 +7,6 @@
   padding-top: 100px;
 }
 
-.blogSectionTitle {
-  color: var(--yocket-com-ebony-clay, #2b3340);
-  text-align: center;
-  font-family: Montserrat-Bold;
-  font-size: 40px;
-
-  font-weight: 700;
-  line-height: 130%; /* 52px */
-  letter-spacing: -0.8px;
-  margin-bottom: 56px;
-}
-
 .blogCardsContainer {
   display: flex;
   justify-content: space-around;
