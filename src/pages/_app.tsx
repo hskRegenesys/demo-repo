@@ -1,5 +1,4 @@
 import ContextProvider from "@/context/ContextProvider";
-import "@/vendors/flaticon.css";
 import "@/vendors/fontawesome-all.css";
 import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";

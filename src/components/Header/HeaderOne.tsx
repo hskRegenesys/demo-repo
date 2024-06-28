@@ -285,7 +285,11 @@ const HeaderOne = ({
           </div>
           <div className="nav-outer clearfix">
             <div onClick={toggleMenu} className="mobile-nav-toggler">
-              <span className="icon flaticon-menu-2"></span>
+              <Image
+                src="/assets/images/allImages/bars-solid.svg"
+                width={26}
+                height={26}
+              ></Image>
               <span className="txt">Menu</span>
             </div>
 

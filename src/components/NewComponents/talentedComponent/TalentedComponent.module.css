@@ -157,6 +157,8 @@
 
 .swiperStyle {
   margin-top: 20px;
+  --add-bottom: 0px;
+  padding-bottom: var(--add-bottom) !important;
 }
 .btnStartMobile {
   display: none;

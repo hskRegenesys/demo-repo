@@ -71,7 +71,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
           {sliderDataDesktop.length > 1 && (
             <Swiper
               pagination={{ clickable: true }}
-              className={Styles.swiperStyle}
+              className={`${Styles.swiperStyle} swiperStyle`}
               autoplay={{
                 delay: secondsPerSlide * 1000,
                 disableOnInteraction: false,
@@ -90,7 +90,7 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
           {sliderDataMobile.length > 1 && (
             <Swiper
               pagination={{ clickable: true }}
-              className={Styles.swiperStyle}
+              className={`${Styles.swiperStyle} swiperStyle`}
               autoplay={{
                 delay: secondsPerSlide * 1000,
                 disableOnInteraction: false,

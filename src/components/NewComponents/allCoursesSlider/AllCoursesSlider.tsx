@@ -137,7 +137,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
       <div className={Styles.cardContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
-          className={Styles.swiperStyle}
+          className={`${Styles.swiperStyle} swiperStyle`}
           spaceBetween={25}
           slidesPerView={3}
           pagination={{ clickable: true }}

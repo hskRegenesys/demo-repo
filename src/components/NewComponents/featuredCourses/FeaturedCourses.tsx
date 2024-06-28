@@ -121,7 +121,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         </div>
         <div className={Styles.cardContainer}>
           <Swiper
-            className={Styles.swiperStyle}
+            className={`${Styles.swiperStyle} swiperStyle`}
             spaceBetween={25}
             slidesPerView={3}
             pagination={{ clickable: true }}

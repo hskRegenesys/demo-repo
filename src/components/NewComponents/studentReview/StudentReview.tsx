@@ -23,7 +23,7 @@ const StudentReview = ({
       </div>
       <div className={Styles.studentReviewCardContainer}>
         <Swiper
-          className={Styles.swiperStyle}
+          className={`${Styles.swiperStyle} swiperStyle`}
           spaceBetween={25}
           slidesPerView={3}
           pagination={{ clickable: true }}

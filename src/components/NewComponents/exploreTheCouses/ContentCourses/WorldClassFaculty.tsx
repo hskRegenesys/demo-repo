@@ -33,7 +33,7 @@ const WorldClassFaculty: React.FC<WorldClassFacultyProps> = ({
       <div className={styles.cardContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
-          className={styles.swiperStyle}
+          className={`${styles.swiperStyle} swiperStyle`}
           slidesPerView={3}
           pagination={{ clickable: true }}
           breakpoints={{

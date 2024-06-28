@@ -70,7 +70,12 @@ const MainFooter: React.FC<MainFooterProps> = ({
                     className="column-space"
                   >
                     <h6>{addressTitle}</h6>
-                    <span className="icon flaticon-pin-1"></span>
+                    <Image
+                      src="/assets/images/allImages/location-dot.svg"
+                      width={14}
+                      height={14}
+                      style={{ paddingRight: "5px" }}
+                    ></Image>
                     <TextSplit text={fullAddress} />
                   </Col>
                 ))}
