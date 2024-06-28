@@ -1,10 +1,10 @@
 import ContextProvider from "@/context/ContextProvider";
-import "@/vendors/fontawesome-all.css";
 import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
 import { Constants } from "src/schemas/data";
 import { Toaster } from "react-hot-toast";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // extra css
 import "@/styles/style.css";
