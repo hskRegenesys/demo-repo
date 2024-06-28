@@ -101,20 +101,13 @@
     margin-top: 40px;
     padding: 0px;
   }
-  .title {
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
+
   .studentReviewCard {
     max-width: 328px;
     padding: 36px 20px;
     width: 100%;
   }
-  .heading {
-    font-size: 24px;
-    margin-bottom: 32px;
-    padding: 0px 18px;
-  }
+
   .studentReviewSideTag {
     top: 0px;
     right: 0px;

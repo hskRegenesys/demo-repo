@@ -93,24 +93,18 @@
 }
 
 .startLearningButton {
-  position: relative;
   margin: 0 auto;
   margin-top: 64px;
   text-align: center;
   padding: 12px 20px;
-  border-radius: 7.68px;
+  border-radius: 8px;
   font-family: Montserrat-Bold;
-  border: 1px solid var(--light-text-surface-primary-green, #008554);
-  background: var(--light-text-surface-primary-green, #008554);
+  background: #008554;
   box-shadow: 0px 0.96px 5.92px 0px #008554;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
-  font-weight: bold;
   max-width: 280px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.12px;
 }
 
 .hedingMobile {
@@ -118,9 +112,9 @@
 }
 
 .startLearningButton:hover {
-  color: var(--primary-primary-charcoal, #131718);
+  color: #131718;
   background-color: #ffffff;
-  border: 1px solid var(--primary-primary-charcoal, #131718);
+  border: 1px solid #131718;
 }
 
 .viewMoreButton,
@@ -128,7 +122,6 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 14px;
-
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.12px;

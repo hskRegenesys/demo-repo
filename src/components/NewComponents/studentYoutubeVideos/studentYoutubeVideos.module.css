@@ -5,30 +5,11 @@
   padding-top: 100px;
 }
 
-.title {
-  color: var(--yocket-com-ebony-clay, #2b3340);
-  font-family: Montserrat-Bold;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 130%;
-  letter-spacing: -0.8px;
-  margin-bottom: 56px;
-  padding: 0px 24px;
-}
-
 .videoContainer {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.Iframe {
-  width: 100%;
-  max-width: 500px;
-  height: 315px;
-  margin-right: 10px;
-  border-radius: 20px;
 }
 
 .iframe {
@@ -41,14 +22,7 @@
 @media (max-width: 920px) {
   .studentYoutubeContainer {
     margin: 44px 0px 0px;
-    padding-top: 0px;
-  }
-  .title {
-    margin-bottom: 32px;
-    font-size: 24px;
-  }
-  .videoContainer {
-    margin: 0 auto;
+    padding: 2px;
   }
   .iframe {
     width: 100%;
