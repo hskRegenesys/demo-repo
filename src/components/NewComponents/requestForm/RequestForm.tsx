@@ -26,24 +26,22 @@ function RequestForm(props: any) {
   const [formInteraction, setFormInteraction] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
-  const getCountryCode = async () => {
-    let countryData = await countryCodeService.countryDetails();
-    setCountryData(countryData);
-    countryData ? setIsLoading(false) : setIsLoading(true);
-
-    try {
-      const response = await fetch("https://geolocation-db.com/json/");
-      const result = await response.json();
-      setGeoLocationData(result);
-
-      return result;
-    } catch (error) {
-      return error;
-    }
-  };
-
   useEffect(() => {
-    getCountryCode();
+    const fetchData = async () => {
+      let countryData = await countryCodeService.countryDetails();
+      setCountryData(countryData);
+      countryData ? setIsLoading(false) : setIsLoading(true);
+
+      try {
+        const response = await fetch("https://geolocation-db.com/json/");
+        const result = await response.json();
+        setGeoLocationData(result);
+      } catch (error) {
+        console.error("Error fetching geolocation data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   const hookForm: any = useForm();
@@ -330,7 +328,6 @@ function RequestForm(props: any) {
                     international
                     countryCallingCodeEditable={false}
                     defaultCountry={geoLocationData?.country_code || "ZA"}
-                    
                     placeholder="Select Country Code*"
                     value={watch("Phone")}
                     {...register("Phone", {

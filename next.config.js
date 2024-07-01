@@ -2043,4 +2043,8 @@ const createReWrites = () => {
   }));
   return [...paths, ...additionalRedirects];
 };
-module.exports = nextConfig;
+
+module.exports = {
+  nextConfig,
+  compress: false,
+};
