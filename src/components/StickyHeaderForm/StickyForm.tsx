@@ -107,8 +107,8 @@ export default function StickyForm(contactform: any) {
     // router.push("/thankYou");
 
     const result = leadService.saveLead(data);
-    handleEmailMessage(data);
-    handleWhatsAppMessage(data);
+    // handleEmailMessage(data);
+    // handleWhatsAppMessage(data);
   };
 
   useEffect(() => {

@@ -79,8 +79,8 @@ const FeedBackForm = () => {
     }
     reset();
     notify();
-    handleWhatsAppMessage(data);
-    handleEmailMessage(data);
+    // handleWhatsAppMessage(data);
+    // handleEmailMessage(data);
   };
 
   const notify = () =>

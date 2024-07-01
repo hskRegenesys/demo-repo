@@ -147,8 +147,8 @@ function RequestForm(props: any) {
       props.onFormSubmit();
       reset();
       downloadFromBlob(response?.data, brochureName?.name) == false;
-      handleWhatsAppMessage(data);
-      handleEmailMessage(data);
+      // handleWhatsAppMessage(data);
+      // handleEmailMessage(data);
       if (response?.status === 200) {
         mixpanel.track("submit-brochure-form", { submit_value: true });
       }
@@ -159,8 +159,8 @@ function RequestForm(props: any) {
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : setSubmitted(true);
-      handleWhatsAppMessage(data);
-      handleEmailMessage(data);
+      // handleWhatsAppMessage(data);
+      // handleEmailMessage(data);
       mixpanel.track("submit-counselling-form", { submit_value: true });
       props.onFormSubmit();
       reset();
