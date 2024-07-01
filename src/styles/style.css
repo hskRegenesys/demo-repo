@@ -22388,7 +22388,6 @@ h2.highlight {
   --add-bottom: 60px;
   padding-bottom: var(--add-bottom);
   align-items: center;
-  color: #008554;
 }
 .swiperStyle [class^="swiper-button-"] {
   top: calc(50% - var(--add-bottom) / 2);
