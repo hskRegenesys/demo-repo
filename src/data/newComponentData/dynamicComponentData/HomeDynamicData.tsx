@@ -7,6 +7,7 @@ import FacultyData from "../commonComponentData/FacultyData";
 import LearnersBenefitData from "../commonComponentData/LearnersBenefitData";
 import AllCoursesDynamicData from "./AllCoursesDynamicData";
 import homeSliderBannerData from "../commonComponentData/homeSliderBannerData";
+import UspSectionData from "../commonComponentData/UspSectionData";
 
 const HomeDynamicData = {
   LearnersSupportSectionData: {
@@ -183,8 +184,15 @@ const HomeDynamicData = {
       },
     ],
   },
+  PopupData: {
+    PopupDesktop: "/assets/images/allImages/Home-Desktop-Popup.webp",
+    PopupMobile: "/assets/images/allImages/Home-Mobile-Popup.webp",
+  },
   ToolsCoveredData: {
     ...ToolsCoveredData,
+  },
+  UspSectionData: {
+    ...UspSectionData,
   },
   AdmiteCompaniesData: {
     ...AdmiteCompaniesData,

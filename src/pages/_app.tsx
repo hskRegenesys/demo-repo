@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
 import { Constants } from "src/schemas/data";
 import { Toaster } from "react-hot-toast";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // extra css
 import "@/styles/style.css";

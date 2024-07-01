@@ -17,7 +17,11 @@
   height: 315px;
   border-radius: 20px;
 }
-
+.swiperStyle {
+  --add-bottom: 60px !important;
+  padding-bottom: var(--add-bottom);
+  align-items: center;
+}
 /* Media Query for screens with a maximum width of 768 pixels */
 @media (max-width: 920px) {
   .studentYoutubeContainer {

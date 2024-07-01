@@ -329,7 +329,8 @@ function RequestForm(props: any) {
                   <PhoneInput
                     international
                     countryCallingCodeEditable={false}
-                    defaultCountry={geoLocationData?.country_code}
+                    defaultCountry={geoLocationData?.country_code || "ZA"}
+                    
                     placeholder="Select Country Code*"
                     value={watch("Phone")}
                     {...register("Phone", {
