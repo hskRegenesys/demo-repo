@@ -5,6 +5,11 @@ import React, { useEffect, useState } from "react";
 import { useRootContext } from "@/context/context";
 import headerData from "@/data/header";
 import Image from "next/image";
+import {
+  trainingProgrammesData,
+  degreeProgrammesData,
+  mobileIcons,
+} from "../NewComponents/navProgramData/NavProgramData";
 
 const { icon, navItems, navItemsTwo } = headerData;
 
@@ -49,44 +54,6 @@ const NavItem = (props: any) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const trainingProgrammesData = [
-    {
-      courseName: "International Leadership Development",
-      courseUrl:
-        "https://corporateeducation.regenesys.net/international-leadership-development-programme/",
-    },
-    {
-      courseName: "Leadership Development",
-      courseUrl:
-        "https://corporateeducation.regenesys.net/leadership-development-programme/",
-    },
-    {
-      courseName: "New Managers",
-      courseUrl:
-        "https://corporateeducation.regenesys.net/new-managers-programme/",
-    },
-    {
-      courseName: "Middle Managers ",
-      courseUrl:
-        "https://corporateeducation.regenesys.net/middle-managers-programme/",
-    },
-    {
-      courseName: "Professional Communications",
-      courseUrl:
-        "https://corporateeducation.regenesys.net/professional-communications-bootcamp/",
-    },
-    {
-      courseName: "Women in Leadership",
-      courseUrl:
-        "https://corporateeducation.regenesys.net/customised-programmes/",
-    },
-    {
-      courseName: "Environmental, Social and Governance",
-      courseUrl:
-        "https://corporateeducation.regenesys.net/customised-programmes/",
-    },
-  ];
-
   const handleDropdownClick = (dropdownName: string) => {
     if (activeDropdown === dropdownName) {
       setActiveDropdown(null);
@@ -105,7 +72,6 @@ const NavItem = (props: any) => {
 
   const [showCoursesDropdown1, setShowCoursesDropdown1] = useState(false);
   const [showCoursesDropdown2, setShowCoursesDropdown2] = useState(false);
-
   const [showCoursesDropdown3, setShowCoursesDropdown3] = useState(false);
 
   const toggleCoursesDropdown1 = () => {
@@ -124,13 +90,6 @@ const NavItem = (props: any) => {
     setShowCoursesDropdown2(false);
     setShowCoursesDropdown1(false);
   };
-  const mobileIcons = [
-    "/assets/images/icons/icon_Home.png",
-    "/assets/images/icons/Icon_courses.png",
-    "/assets/images/icons/icon_about.png",
-    "/assets/images/icons/icon_blog.png",
-    "/assets/images/icons/icon_contact.png",
-  ];
 
   const [isIconActive, setIsIconActive] = useState(false);
 
@@ -143,122 +102,6 @@ const NavItem = (props: any) => {
   };
 
   const [selectedProgram, setSelectedProgram] = useState<string | null>(null);
-
-  const degreeProgrammesData = [
-    {
-      courseName: "Business Management",
-      courseUrl: "https://www.regenesys.net/all-programmes/business",
-      subDegreePrograms: [
-        {
-          subCourseName: "MBA",
-          subCourseUrl:
-            "https://www.regenesys.net/master-of-business-administration",
-        },
-        {
-          subCourseName: "DBM",
-          subCourseUrl:
-            "https://www.regenesys.net/doctor-of-business-management",
-        },
-        {
-          subCourseName: "PDBM",
-          subCourseUrl:
-            "https://www.regenesys.net/postgraduate-diploma-in-business-management",
-        },
-        {
-          subCourseName: "BBA",
-          subCourseUrl:
-            "https://www.regenesys.net/bachelor-of-business-administration",
-        },
-        {
-          subCourseName: "BBAR",
-          subCourseUrl:
-            "https://www.regenesys.net/bachelor-of-business-administration-in-retail",
-        },
-        {
-          subCourseName: "HCBM",
-          subCourseUrl:
-            "https://www.regenesys.net/higher-certificate-in-business-management",
-        },
-        {
-          subCourseName: "HCBMR",
-          subCourseUrl:
-            "https://www.regenesys.net/higher-certificate-in-business-management-in-retail",
-        },
-      ],
-    },
-    {
-      courseName: "Public Management",
-      courseUrl: "https://www.regenesys.net/all-programmes/public-management",
-      subDegreePrograms: [
-        {
-          subCourseName: "MPM",
-          subCourseUrl: "https://www.regenesys.net/master-of-public-management",
-        },
-        {
-          subCourseName: "PDPM",
-          subCourseUrl:
-            "https://www.regenesys.net/postgraduate-diploma-in-public-management",
-        },
-        {
-          subCourseName: "BPM",
-          subCourseUrl:
-            "https://www.regenesys.net/bachelor-of-public-management",
-        },
-        {
-          subCourseName: "NDPA",
-          subCourseUrl:
-            "https://www.regenesys.net/national-diploma-in-public-administration",
-        },
-        {
-          subCourseName: "HCPM",
-          subCourseUrl:
-            "https://www.regenesys.net/higher-certificate-in-public-management",
-        },
-      ],
-    },
-    {
-      courseName: "Finance",
-      courseUrl: "https://www.regenesys.net/all-programmes/finance",
-      subDegreePrograms: [
-        {
-          subCourseName: "BBAB",
-          subCourseUrl:
-            "https://www.regenesys.net/bachelor-of-business-administration-in-banking",
-        },
-        {
-          subCourseName: "HCBMB",
-          subCourseUrl:
-            "https://www.regenesys.net/higher-certificate-in-business-management-in-credit-banking",
-        },
-        {
-          subCourseName: "BCOMPT",
-          subCourseUrl:
-            "https://www.regenesys.net/bachelor-of-accounting-science",
-        },
-      ],
-    },
-    {
-      courseName: "Technology",
-      courseUrl: "https://www.regenesys.net/all-programmes/technology",
-      subDegreePrograms: [
-        {
-          subCourseName: "BSCS",
-          subCourseUrl:
-            "https://www.regenesys.net/bachelor-of-science-in-computer-science",
-        },
-      ],
-    },
-    {
-      courseName: "Law",
-      courseUrl: "https://www.law.regenesys.net/",
-      subDegreePrograms: [
-        {
-          subCourseName: "LLB",
-          subCourseUrl: "https://www.law.regenesys.net/",
-        },
-      ],
-    },
-  ];
 
   const handleDropdownToggle = (programName: string) => {
     setSelectedProgram((prevSelectedProgram) =>
