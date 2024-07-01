@@ -152,8 +152,8 @@ function ModalPopup(props: any) {
       const response = await courseService.downloadBrochure(brochureName?.name);
       props.setShows(false);
       downloadFromBlob(response?.data, brochureName?.name) == false;
-      handleEmailMessage(data);
-      handleWhatsAppMessage(data);
+      // handleEmailMessage(data);
+      // handleWhatsAppMessage(data);
       if (response?.status === 200) {
         mixpanel.track("submit-brochure-form", { submit_value: true });
       }
@@ -165,8 +165,8 @@ function ModalPopup(props: any) {
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : props.thankYouShow(true);
-      handleEmailMessage(data);
-      handleWhatsAppMessage(data);
+      // handleEmailMessage(data);
+      // handleWhatsAppMessage(data);
       mixpanel.track("submit-counselling-form", { submit_value: true });
     }
   };
