@@ -1,4 +1,3 @@
-import MultiplePagesCoursesData from "@/data/newComponentData/multiplePagesData/MultiplePagesCoursesData";
 import MainCoursesDynimicData from "@/data/newComponentData/dynamicComponentData/MainCoursesDynimicData";
 
 const pageMappings = [
@@ -319,7 +318,6 @@ const DataSeparatorPages = (page: string | undefined): any | undefined => {
     if (mapping.pages.includes(page)) {
       return {
         ...mapping.data,
-        multiplePagesDatas: MultiplePagesCoursesData[page],
       };
     }
   }
