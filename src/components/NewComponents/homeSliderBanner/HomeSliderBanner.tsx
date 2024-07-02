@@ -48,12 +48,13 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
               className={Styles.img}
               src={sliderData[0].imageUrl}
               alt="Banner Home"
-              width={isMobile ? 760 : 1920}
-              height={isMobile ? 752 : 586}
+              width={isMobile ? 560 : 1920}
+              height={isMobile ? 554 : 586}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               layout="responsive"
               objectFit="cover"
               objectPosition="center"
-              priority
+              priority={true}
             />
           </a>
         </div>
@@ -67,12 +68,13 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             className={Styles.img}
             src={slide.imageUrl}
             alt="Banner Home"
-            width={isMobile ? 760 : 1920}
-            height={isMobile ? 752 : 586}
+            width={isMobile ? 560 : 1920}
+            height={isMobile ? 554 : 586}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             layout="responsive"
             objectFit="cover"
             objectPosition="center"
-            priority
+            priority={true}
           />
         </a>
       </SwiperSlide>
