@@ -35,7 +35,7 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
 
       <div className={Styles.LsCardsContainer}>
         <Swiper
-          className={Styles.swiperStyle}
+          className={`${Styles.swiperStyle} swiperStyle`}
           spaceBetween={30}
           slidesPerView={3}
           pagination={{ clickable: true }}
@@ -59,9 +59,10 @@ const LearnersSupport: React.FC<LearnersSupportSectionProps> = ({
                     src={item.LsImg}
                     //src={`${imageUrl}${item.LsImg}`}
                     alt="Learning Support"
-                    width={360}
-                    height={160}
-                    loading="eager"
+                    width={384}
+                    height={164}
+                    layout="responsive"
+                    loading="lazy"
                   />
                 </div>
 

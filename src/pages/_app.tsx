@@ -1,19 +1,10 @@
 import ContextProvider from "@/context/ContextProvider";
-import "@/vendors/animate.css";
-import "@/vendors/custom-animate.css";
-import "@/vendors/flaticon.css";
-import "@/vendors/fontawesome-all.css";
 import Script from "next/script";
-import "@/vendors/linoor-icons.css";
-import "@/vendors/reey-font.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "node_modules/swiper/swiper-bundle.min.css";
-import "tiny-slider/dist/tiny-slider.css";
 import { Constants } from "src/schemas/data";
-import { leadService } from "src/services";
-import { apiEndPoints } from "@/data/axisos";
-import axios from "axios";
 import { Toaster } from "react-hot-toast";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // extra css
 import "@/styles/style.css";
@@ -31,11 +22,15 @@ const MyApp = ({ Component, pageProps }: any) => {
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
 
-  //const vineCrmTawk = `https://api.vinecrms.com/api/`;
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       setCurrentUtmUrl(window.location.href);
+
+      // Add preconnect for Google Tag Manager
+      const link = document.createElement("link");
+      link.rel = "preconnect";
+      link.href = "https://www.googletagmanager.com";
+      document.head.appendChild(link);
     }
   }, []);
 
@@ -50,6 +45,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       <Toaster />
 
       <Script
+        id="facebook_script"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -71,6 +67,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* GTM code start */}
       <Script
+        id="google-tag-manager"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
@@ -86,6 +83,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Google Tag Manager GTM code nanddeep start */}
       <Script
+        id="google-tag-manager"
         dangerouslySetInnerHTML={{
           __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -100,6 +98,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* linked start */}
       <Script
+        id="snap_licdn"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -122,16 +121,19 @@ const MyApp = ({ Component, pageProps }: any) => {
 
       {/* Google Tag Script Start  */}
       <Script
+        id="google-tag-manager"
         async
         src="https://www.googletagmanager.com/gtag/js?id=AW-873313553"
       />
       {/* <!-- Google tag (gtag.js) --> Ramesh  */}
       <Script
+        id="google-tag-manager"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-232125756-1"
       />
 
       <Script
+        id="google-tag-manager"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -144,6 +146,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       />
       {/* <!-- Google tag (gtag.js) --> Ramesh END */}
       <Script
+        id="google-tag-manager"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -157,6 +160,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       />
       {/* linked start */}
       <Script
+        id="linkedin_partner"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -232,11 +236,11 @@ const MyApp = ({ Component, pageProps }: any) => {
           s1.setAttribute('crossorigin','*');
           s0.parentNode.insertBefore(s1,s0);
           })();
-              `,
+            `,
         }}
       /> */}
-
       <Script
+        id="tawk_API"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `

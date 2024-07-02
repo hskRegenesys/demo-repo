@@ -1,6 +1,5 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import { useState } from "react";
 import Style from "@/components/Reuseable/Style";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import Layout from "@/components/Layout/Layout";
@@ -15,11 +14,11 @@ const SearchPopup = dynamic(
   () => import("@/components/SearchPopup/SearchPopup")
 );
 const CallToSection = dynamic(
-  () => import("@/components/HomeSkillDescription/CallToSection")
+  () => import("@/components/CallToScetion/CallToSection")
 );
 const AboutMarko = dynamic(() => import("@/components/AboutMarko/AboutMarko"));
 const AboutUsDescription = dynamic(
-  () => import("@/components/StudentPlacement/AboutUsDescription")
+  () => import("@/components/AboutUsDescription/AboutUsDescription")
 );
 const MissionVison = dynamic(
   () => import("@/components/MissionVison/MissionVison")

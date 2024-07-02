@@ -5,7 +5,6 @@ import PhoneInput from "react-phone-number-input";
 import Data from "@/data/AllformsData";
 import _ from "lodash";
 import { useRouter } from "next/router";
-import ImageModalPopup from "../Modal/ImageModalPopup";
 import RequestForm from "../NewComponents/requestForm/RequestForm";
 
 const ApplyNow = (props: any) => {
@@ -16,10 +15,6 @@ const ApplyNow = (props: any) => {
   const getData = async () => {
     let courseListResponse = await courseService.allParentCourses();
     setcourseData(courseListResponse);
-  };
-
-  const onSubmit = (data: any) => {
-    console.log("form data", data);
   };
 
   useEffect(() => {

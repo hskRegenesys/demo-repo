@@ -1585,7 +1585,7 @@ const MainCoursesDynimicData = {
     CourseCode: "CSC",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/CS-banner.webp",
-      coursePageName: " Cybersecurity",
+      coursePageName: " Cyber security",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
@@ -4048,8 +4048,8 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "Product Management Certification",
-      heading: "Get Certified With Us ",
+      title: "Get Certified With Us ",
+      heading: " Product Management Certification",
       paragraph:
         "The Digital Regenesys’s Product Management Certificate equips professionals with essential skills to excel in product management.  It serves as a validation of proficiency and expertise in product management. It can be used by learners to demonstrate that they have successfully completed the training and acquired the necessary skills and knowledge to excel in product management roles. ",
       tickImage: "/assets/images/allImages/Check.svg",

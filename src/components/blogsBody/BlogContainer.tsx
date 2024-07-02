@@ -16,10 +16,12 @@ const BlogContainer = ({
   slug,
   setBlogList,
   postResponse,
+  isBlogDetail,
 }: {
   slug: string;
   setBlogList: (value: any) => void;
   postResponse: Array<IPostTypes>;
+  isBlogDetail?: boolean;
 }) => {
   // const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
   // const getPost = async () => {
@@ -57,7 +59,7 @@ const BlogContainer = ({
         </div>
       </div>
       <div>
-        <div className="container-fluid px-5 ">
+        <div className="container-fluid px-5 blog-detail-container">
           {postResponse?.length && (
             <div className="link-title d-flex justify-content-left mb-3">
               <div className="p-2 bg-light text-dark rounded-left">
@@ -79,24 +81,7 @@ const BlogContainer = ({
             parent="Blog"
             parentHref="/blog"
           />
-          <Link href={`/blog/`} passHref>
-            <div style={{ display: "flex" }}>
-              <span
-                className="fa fa-angle-left"
-                style={{
-                  fontSize: "18px",
-                  paddingRight: "10px",
-                }}
-              ></span>
-              <p
-                role="button"
-                className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
-              >
-                {/* <LeftOutlined className="pe-2" /> */}
-                Back to list
-              </p>
-            </div>
-          </Link>
+
           <div className="row py-3 blog-content-container">
             <div className="col-12 col-lg-9">
               {postResponse?.length > 0 ? (
@@ -126,7 +111,11 @@ const BlogContainer = ({
               )}
             </div>
             <div className="col-12 col-lg-3">
-              <RightSidePanel isRecommendedPost yellowBtn />
+              <RightSidePanel
+                isRecommendedPost
+                yellowBtn
+                isBlogDetail={isBlogDetail}
+              />
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BannerWithVideo.module.css";
 import Image from "next/image";
+
 interface BannerComponentProps {
   handleEnrollButtonVidio: (videoLink: string) => void;
   data: BannerCourseData;
@@ -53,7 +54,6 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
   } = data;
 
   const [count, setCount] = useState("0");
-  const [title, setTitle] = useState("");
 
   useEffect(() => {
     let start = 0;
@@ -83,8 +83,11 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <span className={styles.topTextBestsale}>{BestSaleText}</span>
               <span className={styles.topTextMessage}>{topTextMessage}</span>
             </div>
-            <h2 className={styles.HeadingText}> Certification Course in</h2>
-            <h1 className={styles.courseHeading}>{coursePageName}</h1>
+            <h1 className={styles.HeadingText}>
+              Certification Course in
+              <br />
+              <span className={styles.courseHeading}> {coursePageName}</span>
+            </h1>
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles.uspSectionContainer}>
@@ -160,32 +163,40 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
         <div className={styles.imageSection}>
           <div className={styles.imageCard}>
-            <img
-              className={styles.imageBanner}
-              src={data.BannerImgDesktop}
-              alt={"Banner for Course"}
-            />
-            <div
-              className={styles.playIconContainer}
-              onClick={() => handleEnrollButtonVidio(data.youtubeVideoLink)}
-            >
-              <div className="video-main">
-                <div className="promo-video">
-                  <div className={styles.wavesBlock}>
-                    <div className={`${styles.waves} ${styles.wave1}`}></div>
-                    <div className={`${styles.waves} ${styles.wave2}`}></div>
-                    <div className={`${styles.waves} ${styles.wave3}`}></div>
+            {data.BannerImgDesktop && (
+              <Image
+                className={styles.imageBanner}
+                src={data.BannerImgDesktop}
+                alt={"Banner for Course"}
+                width={550}
+                height={660}
+              />
+            )}
+            {vidoPlayIcon && (
+              <div
+                className={styles.playIconContainer}
+                onClick={() => handleEnrollButtonVidio(data.youtubeVideoLink)}
+              >
+                <div className="video-main">
+                  <div className="promo-video">
+                    <div className={styles.wavesBlock}>
+                      <div className={`${styles.waves} ${styles.wave1}`}></div>
+                      <div className={`${styles.waves} ${styles.wave2}`}></div>
+                      <div className={`${styles.waves} ${styles.wave3}`}></div>
+                    </div>
+                  </div>
+                  <div className={styles.playIconStyle}>
+                    <Image
+                      src={vidoPlayIcon}
+                      className={styles.playIcon}
+                      alt="play Icon"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                 </div>
-                <div className={styles.playIconStyle}>
-                  <img
-                    src={vidoPlayIcon}
-                    className={styles.playIcon}
-                    alt="play Icon"
-                  />
-                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

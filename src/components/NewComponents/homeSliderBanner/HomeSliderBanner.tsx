@@ -1,8 +1,7 @@
-import React, { useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Styles from "./homeSliderBanner.module.css";
 import Image from "next/image";
-import UspSection from "../uspSection/UspSection";
 import imageBaseUrl from "src/utils/imageBaseUrl";
 
 interface Slide {
@@ -12,7 +11,10 @@ interface Slide {
 }
 
 interface HomeSliderBannerProps {
-  homeSliderBannerData: any;
+  homeSliderBannerData: {
+    sliderDataDesktop: Slide[];
+    sliderDataMobile: Slide[];
+  };
 }
 
 const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
@@ -21,8 +23,43 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
   const { sliderDataDesktop, sliderDataMobile } = homeSliderBannerData;
   const secondsPerSlide = 3;
   const imageUrl = imageBaseUrl();
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
 
-  const renderSlides = useCallback((sliderData: Slide[], isMobile: boolean) => {
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileScreen(window.innerWidth <= 700);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const renderSlides = (sliderData: Slide[], isMobile: boolean) => {
+    if (sliderData.length === 1) {
+      return (
+        <div className={Styles.singleImageContainer}>
+          <a href={sliderData[0].link}>
+            <Image
+              className={Styles.img}
+              src={sliderData[0].imageUrl}
+              alt="Banner Home"
+              width={isMobile ? 760 : 1920}
+              height={isMobile ? 752 : 586}
+              layout="responsive"
+              objectFit="cover"
+              objectPosition="center"
+              priority
+            />
+          </a>
+        </div>
+      );
+    }
+
     return sliderData.map((slide, index) => (
       <SwiperSlide key={index}>
         <a href={slide.link}>
@@ -30,51 +67,51 @@ const HomeSliderBanner: React.FC<HomeSliderBannerProps> = ({
             className={Styles.img}
             src={slide.imageUrl}
             alt="Banner Home"
-            width={isMobile ? 360 : 1440}
-            height={isMobile ? 356 : 439}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            width={isMobile ? 760 : 1920}
+            height={isMobile ? 752 : 586}
             layout="responsive"
             objectFit="cover"
             objectPosition="center"
-            loading="lazy"
+            priority
           />
         </a>
       </SwiperSlide>
     ));
-  }, []);
+  };
+
+  const renderSwiper = (sliderData: Slide[], isMobile: boolean) => (
+    <Swiper
+      pagination={{ clickable: true }}
+      className={`${Styles.swiperStyle} swiperStyle`}
+      autoplay={{
+        delay: secondsPerSlide * 1000,
+        disableOnInteraction: false,
+      }}
+    >
+      {renderSlides(sliderData, isMobile)}
+    </Swiper>
+  );
 
   return (
-    <>
-      <div>
+    <div>
+      <h1 className={Styles.HeadTag}>
+        Build Your Digital Skill with Industry Leading Online Courses
+      </h1>
+      {!isMobileScreen ? (
         <div className={Styles.desktopSlide}>
-          <Swiper
-            pagination={{ clickable: true }}
-            className={Styles.swiperStyle}
-            autoplay={{
-              delay: secondsPerSlide * 1000,
-              disableOnInteraction: false,
-            }}
-          >
-            {renderSlides(sliderDataDesktop, false)}
-          </Swiper>
+          {sliderDataDesktop.length > 1
+            ? renderSwiper(sliderDataDesktop, false)
+            : renderSlides(sliderDataDesktop, false)}
         </div>
-
+      ) : (
         <div className={Styles.mobileSlide}>
-          <Swiper
-            pagination={{ clickable: true }}
-            className={Styles.swiperStyle}
-            autoplay={{
-              delay: secondsPerSlide * 1000,
-              disableOnInteraction: false,
-            }}
-          >
-            {renderSlides(sliderDataMobile, true)}
-          </Swiper>
+          {sliderDataMobile.length > 1
+            ? renderSwiper(sliderDataMobile, true)
+            : renderSlides(sliderDataMobile, true)}
         </div>
-      </div>
-      <UspSection />
-    </>
+      )}
+    </div>
   );
 };
 
-export default React.memo(HomeSliderBanner);
+export default HomeSliderBanner;

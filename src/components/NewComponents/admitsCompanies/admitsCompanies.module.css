@@ -16,7 +16,6 @@
   color: #008554;
   font-family: Montserrat-Bold;
   font-size: 20px;
-
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: 0.12px;
@@ -27,7 +26,6 @@
   color: #2b3340;
   font-family: Montserrat-Bold;
   font-size: 40px;
-
   font-weight: 700;
   line-height: 130%; /* 52px */
   letter-spacing: -0.8px;
@@ -41,15 +39,16 @@
 }
 
 .admitsCard {
-  padding: 10px 16px;
+  /* padding: 10px 16px; */
   text-align: center;
-  border: 1px solid #e3e8ee;
+  /* border: 1px solid #e3e8ee; */
   border-radius: 8px;
-  max-width: 140px;
+  max-width: 160px;
+  height: 100%;
   margin: 0 10px;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .admitImages {

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
 import TrendingSection from "../TrendingSection/TrendingSection";
 import NewsLetter from "./NewsLetter";
-import { LeftOutlined } from "@ant-design/icons";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import RightSidePanel from "./RightSidePanel";
 import { Spinner } from "react-bootstrap";
 import PostContainer from "./PostContainer";
@@ -64,6 +64,100 @@ const BlogsByCategories = ({
   //     setCategoryList(apiResponse);
   //   }
   // };
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const postsPerPage = 9;
+  const postContainerRef = useRef<HTMLDivElement>(null);
+
+  const handlePageChange = (
+    pageNumber: number,
+    totalPosts: number,
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+    if (pageNumber > 0 && pageNumber <= Math.ceil(totalPosts / postsPerPage)) {
+      setCurrentPage(pageNumber);
+      if (postContainerRef.current) {
+        postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  const handleNextPage = (
+    totalPosts: number,
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+    if (currentPage < Math.ceil(totalPosts / postsPerPage)) {
+      setCurrentPage(currentPage + 1);
+      if (postContainerRef.current) {
+        postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  const handlePrevPage = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      if (postContainerRef.current) {
+        postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  const renderPagination = (totalPosts: number) => {
+    if (totalPosts <= postsPerPage) return null;
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+      pageNumbers.push(i);
+    }
+    return (
+      <nav className="pagination-container">
+        <ul className="pagination">
+          <li className="page-item">
+            <button
+              onClick={(event) => handlePrevPage(event)}
+              className={`pagination-btn prev-button ${
+                currentPage === 1 && "prev-disable-btn"
+              }`}
+              disabled={currentPage === 1}
+            >
+              <span className="icon fas fa-angle-left"></span>
+            </button>
+          </li>
+          {pageNumbers.map((number) => (
+            <li key={number} className="page-item">
+              <button
+                onClick={(event) => handlePageChange(number, totalPosts, event)}
+                className={`pagination-btn ${
+                  currentPage === number ? "active" : ""
+                }`}
+              >
+                {number}
+              </button>
+            </li>
+          ))}
+          <li className="page-item">
+            <button
+              onClick={(event) => handleNextPage(totalPosts, event)}
+              className={`pagination-btn next-button ${
+                currentPage === pageNumbers?.length && "next-disable-btn"
+              }`}
+              disabled={currentPage === pageNumbers?.length}
+            >
+              <span className="icon fas fa-angle-right"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    );
+  };
+
+  useEffect(() => {
+    if (postContainerRef.current) {
+      postContainerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [currentPage]);
 
   return (
     <div style={{ paddingTop: "85px" }}>
@@ -77,35 +171,25 @@ const BlogsByCategories = ({
           </div>
         </div>
       </div>
-      <div className="container-fluid p-5">
+      <div className="container-fluid p-5" ref={postContainerRef}>
         <BreadCrumb
           title={`Category - ${categorySlug?.toString().replaceAll("-", " ")}`}
           parent="Blog"
           parentHref="/blog"
         />
-        <Link href={`/blog/`} passHref>
-          <div style={{ display: "flex" }}>
-            <span
-              className="fa fa-angle-left"
-              style={{
-                fontSize: "18px",
-                paddingRight: "10px",
-              }}
-            ></span>
-            <p
-              role="button"
-              className="btn btn-hover px-1 py-0 d-flex align-items-center text-dark-green m-0"
-            >
-              {/* <LeftOutlined className="pe-2" /> */}
-              Back to list
-            </p>
-          </div>
-        </Link>
+
         <div className="row">
           <div className="col-12 col-lg-9">
             <h1 className="h5 p-0 m-0 fw-bold mt-3">{category} Blog</h1>
+
             {postList?.length > 0 &&
               postList?.map((values) => {
+                const indexOfLastPost = currentPage * postsPerPage;
+                const indexOfFirstPost = indexOfLastPost - postsPerPage;
+                const currentPosts = values?.posts?.slice(
+                  indexOfFirstPost,
+                  indexOfLastPost
+                );
                 return isLoading ? (
                   <div className="d-flex justify-content-center align-items-center h-25">
                     <Spinner animation={"border"} />
@@ -118,13 +202,14 @@ const BlogsByCategories = ({
                         __html: values?.category.toString(),
                       }}
                     /> */}
-                    {values?.posts?.length > 0 ? (
+                    {currentPosts?.length > 0 ? (
                       <div className="row py-3">
-                        {values?.posts?.map((item) => (
+                        {currentPosts?.map((item) => (
                           <PostContainer post={item} key={item.id} restPost />
                         ))}
                       </div>
                     ) : null}
+                    {renderPagination(values?.posts?.length)}
                   </div>
                 ) : null;
               })}

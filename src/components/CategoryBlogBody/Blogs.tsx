@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 import { types } from "util";
+import Image from "next/image";
 
 interface filterOptions {
   name: string;
@@ -17,11 +18,9 @@ const Blogs = () => {
   const getAllCatogries = async () => {
     const response = await wpService.allCategories();
     !!response ? setResponse(response) : setResponse([]);
-    console.log(response);
   };
   const getAllPosts = async () => {
     const response = await wpService.allPosts();
-    console.log("res", response);
     !!response ? setResponsePost(response) : setResponsePost([]);
   };
 
@@ -73,8 +72,8 @@ const Blogs = () => {
                 }}
               >
                 <ul>
-                  {response.map((item) => (
-                    <li className=" d-flex flex-row">
+                  {response.map((item, index) => (
+                    <li className=" d-flex flex-row" key={index}>
                       <div>{item.name}</div>
                       <div className="p-2 ms-auto">
                         <input type="checkbox" value="Bike"></input>
@@ -124,9 +123,9 @@ const Blogs = () => {
       </div>
       <div>
         <div className="row">
-          {responsePost.map((item) => {
+          {responsePost.map((item, index) => {
             return (
-              <div className="col-4">
+              <div className="col-4" key={index}>
                 <div
                   style={{
                     border: "gray 1px solid",
@@ -141,7 +140,7 @@ const Blogs = () => {
                   }}
                 >
                   <div>
-                    <img
+                    <Image
                       src={item.yoast_head_json.og_image[0].url}
                       alt="Blogs Image"
                       style={{

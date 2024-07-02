@@ -14,7 +14,7 @@ import dynamic from "next/dynamic";
 
 import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
-import { brochureDetails, courseData } from "@/data/course";
+import { brochureDetails } from "@/data/courseBrochure";
 // import Loader from "../Loader/Loader";
 const Loader = dynamic(() => import("../Loader/Loader"));
 
@@ -46,7 +46,6 @@ function ModalPopup(props: any) {
 
       return result;
     } catch (error) {
-      console.log("error", error);
       return error;
     }
   };
@@ -70,6 +69,56 @@ function ModalPopup(props: any) {
     handleSubmit,
   } = hookForm;
   const programmeOfInterest = watch("Programme_Of_Interest");
+
+  const createEmailData = (params: any) => ({
+    fromAddressID: process.env.CM_DR_ADDRESSID,
+    fromName: "Digital Regenesys",
+    toAddress: params?.Email || params?.email,
+    toName: params?.Name || params?.name,
+    ccEmailAddress: "info.digital@regenesys.net",
+    subject: "Digital Regenesys",
+    htmlBody: `
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+          <body>
+            <p>Hello ${params?.Name || "Dear"}!</p>
+          </body>
+        </html>`,
+    textBody: `Hello ${params?.Name || "Dear"}`,
+    attachmentUrl:
+      "https://dr-website-marketing.s3.ap-south-1.amazonaws.com/regenesys-logo-cm.jpg",
+    attachmentFileName: "DigitalRegenesys.jpg",
+    customerReference: "123456789",
+  });
+
+  const handleWhatsAppMessage = async (formData: any) => {
+    try {
+      await fetch("/api/whatsappMessages", {
+        method: "POST",
+        body: JSON.stringify({ formData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log("Error", error);
+    }
+  };
+
+  const handleEmailMessage = async (params: any) => {
+    const emailData = createEmailData(params);
+    try {
+      await fetch("/api/emailMessageUrls", {
+        method: "POST",
+        body: JSON.stringify({ emailData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log("Error", error);
+    }
+  };
 
   const onSubmit = async (data: any) => {
     if (phoneNumberError) {
@@ -103,6 +152,8 @@ function ModalPopup(props: any) {
       const response = await courseService.downloadBrochure(brochureName?.name);
       props.setShows(false);
       downloadFromBlob(response?.data, brochureName?.name) == false;
+      // handleEmailMessage(data);
+      // handleWhatsAppMessage(data);
       if (response?.status === 200) {
         mixpanel.track("submit-brochure-form", { submit_value: true });
       }
@@ -114,6 +165,8 @@ function ModalPopup(props: any) {
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : props.thankYouShow(true);
+      // handleEmailMessage(data);
+      // handleWhatsAppMessage(data);
       mixpanel.track("submit-counselling-form", { submit_value: true });
     }
   };

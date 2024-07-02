@@ -48,19 +48,9 @@
   color: var(--light-text-white, #fff);
 }
 
-.paragraph {
-  text-align: left;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.12px;
-  margin: 20px 0px;
-}
-
 .paragraph h2 {
   font-size: 21px;
-  padding: 10px 0px;
-  font-weight: 600;
+  padding-top: 10px;
   font-family: Montserrat-Bold;
 }
 
@@ -71,31 +61,24 @@
 }
 .paragraph p a {
   font-size: 18px;
-  font-weight: 500;
   color: #0000009c;
   text-decoration: underline;
   font-family: Montserrat-semiBold;
 }
 .closeButtonContainer {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .closeButton {
   width: 210px;
-  padding: 8px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
   cursor: pointer;
   border-radius: 7.68px;
-  border: 1px solid var(--light-text-green, #008554);
   background: var(--light-text-green, #008554);
   box-shadow: 0px 0.96px 1.92px 0px rgba(16, 24, 40, 0.05);
-  margin-top: 20px;
   font-family: Montserrat-Bold;
   font-size: 16px;
-  color: var(--light-text-white, #fff);
+  color: #fff;
 }
 
 @media (max-width: 940px) {

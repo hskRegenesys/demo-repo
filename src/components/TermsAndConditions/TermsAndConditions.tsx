@@ -23,8 +23,8 @@ const TermsAndConditions = () => {
 
               <div className="terms-list-items">
                 <ul>
-                  {listItems?.map((items) => (
-                    <li>
+                  {listItems?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle" />
                       <p dangerouslySetInnerHTML={{ __html: items }} />
                     </li>

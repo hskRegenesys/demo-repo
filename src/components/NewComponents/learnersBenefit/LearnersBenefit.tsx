@@ -40,7 +40,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
       </div>
       <div className={Styles.LearnersBenefitsCardContainer}>
         <Swiper
-          className={Styles.swiperStyleFC}
+          className={`${Styles.swiperStyle} swiperStyle`}
           slidesPerView={1}
           pagination={{ clickable: true }}
           spaceBetween={20}

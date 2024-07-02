@@ -291,7 +291,7 @@ const HeaderOne = ({
           </div>
           <div className="nav-outer clearfix">
             <div onClick={toggleMenu} className="mobile-nav-toggler">
-              <span className="icon flaticon-menu-2"></span>
+              <span className="fa-solid fa-bars"></span>
               <span className="txt">Menu</span>
             </div>
 

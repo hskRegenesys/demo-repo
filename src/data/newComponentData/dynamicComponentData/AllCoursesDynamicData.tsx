@@ -1,6 +1,6 @@
 const AllCoursesDynamicData = {
   CertificationDRData: {
-    title: "Get Certified With Us",
+    title: "Get Certified With Us ",
     heading: "Digital Regenesys Certification",
     paragraph:
       "The Digital Regenesys Certificate equips professionals with essential skills to succeed in today’s digital realm. It aims to foster an innovative ecosystem in new-age technologies like AI, Data Science, Project Management, and Cybersecurity and become the source for the next generation of digital technologies, products, and services by promoting core competencies and capacity building.",
