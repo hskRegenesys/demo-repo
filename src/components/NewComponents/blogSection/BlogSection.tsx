@@ -78,6 +78,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                       href={card.blogLink}
                       className={Styles.knowMoreLink}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Know More
                       <span className={Styles.arrowIcon}>

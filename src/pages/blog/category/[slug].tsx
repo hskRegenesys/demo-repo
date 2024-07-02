@@ -54,6 +54,7 @@ const PostsByCategory: React.FC<PostsByCategoryProps> = ({
   return (
     <>
       <Script
+        id="google-tag-manager"
         dangerouslySetInnerHTML={{
           __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -42,7 +42,7 @@ const MainFooter: React.FC<MainFooterProps> = ({
                     <ul className="social-links clearfix">
                       {socials?.map(({ id, icon, href, title }) => (
                         <li key={id}>
-                          <a href={href} target="_blank">
+                          <a href={href} target="_blank" rel="noreferrer">
                             <span title={title} className={icon}></span>
                           </a>
                         </li>
@@ -60,7 +60,7 @@ const MainFooter: React.FC<MainFooterProps> = ({
                 <h6>{text}</h6>
               </div>
               <div className="widget-content row">
-                {addressDetails?.map(({ addressTitle, fullAddress }) => (
+                {addressDetails?.map(({ addressTitle, fullAddress }, index) => (
                   <Col
                     xl={3}
                     lg={6}
@@ -68,6 +68,7 @@ const MainFooter: React.FC<MainFooterProps> = ({
                     sm={12}
                     xxl={3}
                     className="column-space"
+                    key={index}
                   >
                     <h6>{addressTitle}</h6>
                     <Image
@@ -75,6 +76,7 @@ const MainFooter: React.FC<MainFooterProps> = ({
                       width={14}
                       height={14}
                       style={{ paddingRight: "5px" }}
+                      alt="location-dot"
                     ></Image>
                     <TextSplit text={fullAddress} />
                   </Col>

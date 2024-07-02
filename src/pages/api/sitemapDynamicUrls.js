@@ -3,7 +3,7 @@ import { join } from "path";
 import { writeFile, readFile } from "fs/promises";
 import axios from "axios";
 
-export default async (_req, res) => {
+const updateSitemap = async (_req, res) => {
   try {
     const { body } = _req;
     const sitemapData = body.sitemapData.map((post) => ({
@@ -60,6 +60,9 @@ function buildXml(xmlObject) {
   const builder = new Builder();
   return builder.buildObject(xmlObject);
 }
+
+export default updateSitemap;
+
 export const config = {
   api: {
     bodyParser: {

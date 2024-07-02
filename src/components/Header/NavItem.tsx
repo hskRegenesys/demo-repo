@@ -410,8 +410,9 @@ const NavItem = (props: any) => {
                     </li>
                     {showCoursesDropdown3 && (
                       <div className="drop-down-3">
-                        {trainingProgrammesData?.map((item) => (
+                        {trainingProgrammesData?.map((item, index) => (
                           <div
+                            key={index}
                             style={{
                               display: "flex",
                               alignItems: "center",

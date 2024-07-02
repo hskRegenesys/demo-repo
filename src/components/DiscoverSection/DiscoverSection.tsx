@@ -35,6 +35,7 @@ const DiscoverSection = ({ ShowTitle = true, map = false }) => {
                       href={href}
                       className="theme-btn btn-style-four mobile-hide"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       {buttonText}
                     </a>
