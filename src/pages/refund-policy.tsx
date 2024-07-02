@@ -20,7 +20,7 @@ const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
 );
 const CallToSection = dynamic(
-  () => import("@/components/HomeSkillDescription/CallToSection")
+  () => import("@/components/CallToScetion/CallToSection")
 );
 const SearchPopup = dynamic(
   () => import("@/components/SearchPopup/SearchPopup")

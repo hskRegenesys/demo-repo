@@ -96,7 +96,7 @@ const DefenceToolbox: React.FC<DefenceToolboxProps> = ({
                       {Object.entries(week.Points).map(
                         ([key, value], pointIndex) => (
                           <div key={key} style={{ marginBottom: "20px" }}>
-                            <h6 className={styles.sideHeding}>{key}</h6>
+                            <p className={styles.sideHeding}>{key}</p>
                             <ul>
                               {value.map((item: string, index: number) => (
                                 <li key={index} className={styles.weekPoint}>

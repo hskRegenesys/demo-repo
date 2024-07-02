@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import trendingSection from "@/data/trendingSection";
 import useActive from "@/hooks/useActive";
 import dynamic from "next/dynamic";
-
 import _ from "lodash";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -16,47 +15,14 @@ import {
   digitalMarkrtingCode,
   programBaseUrl,
 } from "../config/constant";
-const TinySlider = dynamic(() => import("@/components/TinySlider/TinySlider"), {
-  ssr: false,
-});
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 import Loader from "../Loader/Loader";
 import { allCourseList } from "@/data/courseData";
-
-const responsive1 = {
-  0: {
-    items: 1,
-    gutter: 30,
-  },
-  720: {
-    items: 2,
-    gutter: 30,
-  },
-  992: {
-    items: 3,
-    gutter: 30,
-  },
-  1200: {
-    items: 3,
-    gutter: 30,
-  },
-};
-
-const settings = {
-  container: ".my-slider-2",
-  loop: false,
-  lazyload: true,
-  navPosition: false,
-  mouseDrag: true,
-  gutter: 30,
-  controls: true,
-  autoplayButtonOutput: false,
-  nav: false,
-  controlsContainer: ".tns-controls1",
-  autoplay: true,
-  autoplayButton: false,
-  // fixedWidth: 320,
-};
 
 const { title, details, description } = trendingSection;
 
@@ -93,7 +59,7 @@ const TrendingSection = () => {
 
   useEffect(() => {
     setIsLoading(false);
-  }, [allCourseList]);
+  }, []);
 
   let CourseCard: any = [];
 
@@ -116,7 +82,7 @@ const TrendingSection = () => {
   }
   return (
     <section ref={ref} className="testimonials-section" id="testimonials">
-      <div className="auto-container">
+      <div className="">
         <div className="sec-title text-center">
           <h2>{title}</h2>
           {/* <h6 className="desc">{description}</h6> */}
@@ -126,10 +92,35 @@ const TrendingSection = () => {
         ) : (
           <div className="carousel-box">
             <div className="testimonials-carousel">
-              <TinySlider
-                options={{
-                  ...settings,
-                  responsive: responsive1,
+              <Swiper
+                navigation={{
+                  nextEl: ".tns-next",
+                  prevEl: ".tns-prev",
+                }}
+                slidesPerView={3.7}
+                // centeredSlides={true}
+                slidesOffsetBefore={80}
+                slidesOffsetAfter={80}
+                spaceBetween={30}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1.4,
+                  },
+                  570: {
+                    slidesPerView: 1.4,
+                  },
+                  720: {
+                    slidesPerView: 2.4,
+                  },
+                  992: {
+                    slidesPerView: 2.1,
+                  },
+                  1200: {
+                    slidesPerView: 3.4,
+                  },
+                  1440: {
+                    slidesPerView: 3.7,
+                  },
                 }}
                 ref={listRef}
               >
@@ -143,94 +134,89 @@ const TrendingSection = () => {
                     durationInWeeks,
                     parent_id,
                   }: any) => (
-                    <div ref={listRef} className="gallery-item" key={id}>
-                      <div
-                        className="inner-box"
-                        // onClick={() => redirectCard(name, code, id, parent_id)}
-                      >
-                        <figure className="image">
-                          <Image
-                            priority={true}
-                            src={`/assets/images/gallery/${code}.webp`}
-                            layout="responsive"
-                            width="274"
-                            height="182"
-                            alt="Trending Course"
-                          />
-                        </figure>
-                        <a
-                          onClick={() =>
-                            redirectCard(name, code, id, parent_id)
-                          }
-                          className="lightbox-image overlay-box"
-                          data-fancybox="gallery"
-                        ></a>
-                        <div className="cap-box">
-                          <div className="cap-inner">
-                            <div className="title">
-                              <h5>
-                                <a
-                                  onClick={() =>
-                                    redirectCard(name, code, id, parent_id)
-                                  }
-                                >
-                                  {name}
-                                </a>
-                              </h5>
-                            </div>
-
-                            <div className="cat">
-                              <ul className="about-seven__list list-unstyled">
-                                <li>{courseMode.name} Classes</li>
-                                <li>{durationInWeeks} Weeks</li>
-                                <li>International Certification </li>
-                                <li>Capstone Projects </li>
-                              </ul>
-                            </div>
-                            <div className="batch">
-                              {batchInfo(batches)?.description}
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="link-box inline-button">
+                    <SwiperSlide key={id}>
+                      <div className="gallery-item">
+                        <div className="inner-box">
+                          <figure className="image">
+                            <Image
+                              priority={true}
+                              src={`/assets/images/gallery/${code}.webp`}
+                              layout="responsive"
+                              width="274"
+                              height="182"
+                              alt="Trending Course"
+                            />
+                          </figure>
                           <a
-                            className="theme-btn btn-style-two"
                             onClick={() =>
                               redirectCard(name, code, id, parent_id)
                             }
-                          >
-                            <i className="btn-curve"></i>
-                            <span className="btn-title">Learn More</span>
-                          </a>
-
-                          <a
-                            className="theme-btn btn-style-two"
-                            onClick={() => {
-                              handleShow();
-                              setcourseCode(code);
-                            }}
-                          >
-                            <i className="btn-curve"></i>
-                            <span className="btn-title">Enquire Now</span>
-                          </a>
+                            className="lightbox-image overlay-box"
+                            data-fancybox="gallery"
+                          ></a>
+                          <div className="cap-box">
+                            <div className="cap-inner">
+                              <div className="title">
+                                <h5>
+                                  <a
+                                    onClick={() =>
+                                      redirectCard(name, code, id, parent_id)
+                                    }
+                                  >
+                                    {name}
+                                  </a>
+                                </h5>
+                              </div>
+                              <div className="cat">
+                                <ul className="about-seven__list list-unstyled">
+                                  <li>{courseMode.name} Classes</li>
+                                  <li>{durationInWeeks} Weeks</li>
+                                  <li>International Certification </li>
+                                  <li>Capstone Projects </li>
+                                </ul>
+                              </div>
+                              <div className="batch">
+                                {batchInfo(batches)?.description}
+                              </div>
+                            </div>
+                          </div>
+                          <div className="link-box inline-button">
+                            <a
+                              className="theme-btn btn-style-two"
+                              onClick={() =>
+                                redirectCard(name, code, id, parent_id)
+                              }
+                            >
+                              <i className="btn-curve"></i>
+                              <span className="btn-title">Learn More</span>
+                            </a>
+                            <a
+                              className="theme-btn btn-style-two"
+                              onClick={() => {
+                                handleShow();
+                                setcourseCode(code);
+                              }}
+                            >
+                              <i className="btn-curve"></i>
+                              <span className="btn-title">Enquire Now</span>
+                            </a>
+                          </div>
                         </div>
+                        <Modal show={show}>
+                          <ModalPopup
+                            setShows={setShow}
+                            thankYouShow={setThankYouShow}
+                            courseCode={courseCode}
+                          />
+                        </Modal>
+                        <Modal show={thankYouShow}>
+                          <ThankYouPopup setShows={setThankYouShow} />
+                        </Modal>
                       </div>
-                      <Modal show={show}>
-                        <ModalPopup
-                          setShows={setShow}
-                          thankYouShow={setThankYouShow}
-                          courseCode={courseCode}
-                        />
-                      </Modal>
-                      <Modal show={thankYouShow}>
-                        <ThankYouPopup setShows={setThankYouShow} />
-                      </Modal>
-                    </div>
+                    </SwiperSlide>
                   )
                 )}
-              </TinySlider>
-
+              </Swiper>
               <div className="tns-controls1">
                 <button className="tns-prev">
                   <span className="icon fa fa-angle-left"></span>

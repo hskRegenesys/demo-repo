@@ -13,10 +13,7 @@
   letter-spacing: 0.12px;
   margin-bottom: 12px;
 }
-.footerContainer li:hover {
-  color: #01ad6e;
-  font-weight: 600;
-}
+
 .footerContent2 ul {
   list-style: none;
   display: grid;

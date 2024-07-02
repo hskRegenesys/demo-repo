@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { downloadFromBlob } from "@/components/config/helper";
 import { allCourseList } from "@/data/courseData";
 import Styles from "./requestForm.module.css";
-import { brochureDetails } from "@/data/course";
+import { brochureDetails } from "@/data/courseBrochure";
 import mixpanel from "mixpanel-browser";
 
 function RequestForm(props: any) {
@@ -26,25 +26,22 @@ function RequestForm(props: any) {
   const [formInteraction, setFormInteraction] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
-  const getCountryCode = async () => {
-    let countryData = await countryCodeService.countryDetails();
-    setCountryData(countryData);
-    countryData ? setIsLoading(false) : setIsLoading(true);
-
-    try {
-      const response = await fetch("https://geolocation-db.com/json/");
-      const result = await response.json();
-      setGeoLocationData(result);
-
-      return result;
-    } catch (error) {
-      console.log("error", error);
-      return error;
-    }
-  };
-
   useEffect(() => {
-    getCountryCode();
+    const fetchData = async () => {
+      let countryData = await countryCodeService.countryDetails();
+      setCountryData(countryData);
+      countryData ? setIsLoading(false) : setIsLoading(true);
+
+      try {
+        const response = await fetch("https://geolocation-db.com/json/");
+        const result = await response.json();
+        setGeoLocationData(result);
+      } catch (error) {
+        console.error("Error fetching geolocation data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   const hookForm: any = useForm();
@@ -64,6 +61,56 @@ function RequestForm(props: any) {
   } = hookForm;
 
   const programmeOfInterest = watch("Programme_Of_Interest");
+
+  const createEmailData = (params: any) => ({
+    fromAddressID: process.env.CM_DR_ADDRESSID,
+    fromName: "Digital Regenesys",
+    toAddress: params?.Email || params?.email,
+    toName: params?.Name || params?.name,
+    ccEmailAddress: "info.digital@regenesys.net",
+    subject: "Digital Regenesys",
+    htmlBody: `
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+          <body>
+            <p>Hello ${params?.Name || "Dear"}!</p>
+          </body>
+        </html>`,
+    textBody: `Hello ${params?.Name || "Dear"}`,
+    attachmentUrl:
+      "https://dr-website-marketing.s3.ap-south-1.amazonaws.com/regenesys-logo-cm.jpg",
+    attachmentFileName: "DigitalRegenesys.jpg",
+    customerReference: "123456789",
+  });
+
+  const handleWhatsAppMessage = async (formData: any) => {
+    try {
+      await fetch("/api/whatsappMessages", {
+        method: "POST",
+        body: JSON.stringify({ formData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log("Error", error);
+    }
+  };
+
+  const handleEmailMessage = async (params: any) => {
+    const emailData = createEmailData(params);
+    try {
+      await fetch("/api/emailMessageUrls", {
+        method: "POST",
+        body: JSON.stringify({ emailData }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.log("Error", error);
+    }
+  };
 
   const onSubmit = async (data: any, e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -98,6 +145,8 @@ function RequestForm(props: any) {
       props.onFormSubmit();
       reset();
       downloadFromBlob(response?.data, brochureName?.name) == false;
+      // handleWhatsAppMessage(data);
+      // handleEmailMessage(data);
       if (response?.status === 200) {
         mixpanel.track("submit-brochure-form", { submit_value: true });
       }
@@ -108,6 +157,8 @@ function RequestForm(props: any) {
             "https://api.whatsapp.com/send?phone=27733502575&text=Hi%20there"
           )
         : setSubmitted(true);
+      // handleWhatsAppMessage(data);
+      // handleEmailMessage(data);
       mixpanel.track("submit-counselling-form", { submit_value: true });
       props.onFormSubmit();
       reset();
@@ -276,7 +327,7 @@ function RequestForm(props: any) {
                   <PhoneInput
                     international
                     countryCallingCodeEditable={false}
-                    defaultCountry={geoLocationData?.country_code}
+                    defaultCountry={geoLocationData?.country_code || "ZA"}
                     placeholder="Select Country Code*"
                     value={watch("Phone")}
                     {...register("Phone", {

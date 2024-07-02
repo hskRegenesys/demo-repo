@@ -36,6 +36,8 @@ const PostsByCategory: React.FC<PostsByCategoryProps> = ({
   const [categoryList, setCategoryList] = useState<any>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [category, setCategory] = useState<string | number>(initialCategory);
+  const [isBlogPage, setIsBlogPage] = useState(false);
+
   const [postList, setPostList] =
     useState<Array<IPostListTypes>>(initialPostList);
 
@@ -45,9 +47,14 @@ const PostsByCategory: React.FC<PostsByCategoryProps> = ({
     }, 1000);
   }, [postList]);
 
+  useEffect(() => {
+    setIsBlogPage(true);
+  }, []);
+
   return (
     <>
       <Script
+        id="google-tag-manager"
         dangerouslySetInnerHTML={{
           __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -77,7 +84,7 @@ const PostsByCategory: React.FC<PostsByCategoryProps> = ({
             isLoading={isLoading}
           />
         )}
-        <MainFooter />
+        <MainFooter isBlogPage={isBlogPage} />
         <StickyBar />
       </Layout>
       <noscript>

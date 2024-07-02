@@ -6,7 +6,15 @@ import TextSplit from "../Reuseable/TextSplit";
 
 const { year, text, socials, addressDetails, links } = mainFooter;
 
-const MainFooter = ({ normalPadding = true }) => {
+interface MainFooterProps {
+  normalPadding?: boolean;
+  isBlogPage?: boolean;
+}
+
+const MainFooter: React.FC<MainFooterProps> = ({
+  normalPadding = true,
+  isBlogPage,
+}) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -15,7 +23,7 @@ const MainFooter = ({ normalPadding = true }) => {
 
   return (
     <footer className={`main-footer${normalPadding ? " normal-padding" : ""}`}>
-      <div className="widgets-section">
+      <div className={`widgets-section ${isBlogPage && "blog-widget-section"}`}>
         <Row className="clearfix">
           <Col xl={3} lg={4} md={12} sm={12} className="column">
             <div className="footer-widget links-widget">
@@ -34,7 +42,7 @@ const MainFooter = ({ normalPadding = true }) => {
                     <ul className="social-links clearfix">
                       {socials?.map(({ id, icon, href, title }) => (
                         <li key={id}>
-                          <a href={href} target="_blank">
+                          <a href={href} target="_blank" rel="noreferrer">
                             <span title={title} className={icon}></span>
                           </a>
                         </li>
@@ -52,7 +60,7 @@ const MainFooter = ({ normalPadding = true }) => {
                 <h6>{text}</h6>
               </div>
               <div className="widget-content row">
-                {addressDetails?.map(({ addressTitle, fullAddress }) => (
+                {addressDetails?.map(({ addressTitle, fullAddress }, index) => (
                   <Col
                     xl={3}
                     lg={6}
@@ -60,9 +68,16 @@ const MainFooter = ({ normalPadding = true }) => {
                     sm={12}
                     xxl={3}
                     className="column-space"
+                    key={index}
                   >
                     <h6>{addressTitle}</h6>
-                    <span className="icon flaticon-pin-1"></span>
+                    <Image
+                      src="/assets/images/allImages/location-dot.svg"
+                      width={14}
+                      height={14}
+                      style={{ paddingRight: "5px" }}
+                      alt="location-dot"
+                    ></Image>
                     <TextSplit text={fullAddress} />
                   </Col>
                 ))}

@@ -1,19 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
-
-//import PageBanner from "@/components/BannerSection/PageBanner";
-//import ContactSection from "@/components/ContactSection/ContactSection";
-//import GetInTouch from "@/components/FeaturesSection/FeaturesSectionTwo";
-//import HeaderOne from "@/components/Header/HeaderOne";
-//import MobileMenu from "@/components/Header/MobileMenu";
-//import Layout from "@/components/Layout/Layout";
-//import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
-//import SearchPopup from "@/components/SearchPopup/SearchPopup";
-//import CallToSection from "@/components/HomeSkillDescription/CallToSection";
-//import SocialMedia from "@/components/SocialMedia/SocialMedia";
-//import LandingForm from "@/components/commonForm/AllForms";
-//import StickyBar from "@/components/StickyFooter/Sticky";
 
 const GetInTouch = dynamic(
   () => import("@/components/FeaturesSection/FeaturesSectionTwo")
@@ -41,23 +28,15 @@ const PageBanner = dynamic(
   () => import("@/components/BannerSection/PageBanner")
 );
 const CallToSection = dynamic(
-  () => import("@/components/HomeSkillDescription/CallToSection")
+  () => import("@/components/CallToScetion/CallToSection")
 );
-const PartnerOne = dynamic(
-  () => import("@/components/ExperienceSection/ExperienceSection")
-);
-// import StickyBar from "@/components/StickyFooter/Sticky";
+
 const StickyBar = dynamic(() => import("@/components/StickyFooter/Sticky"));
-const AllCourseGallery = dynamic(
-  () => import("@/components/AllCourseGallery/AllCourseGallery"),
-  { loading: () => <p>Loading...</p> }
-);
 
 const Contact = () => {
   return (
     <Layout pageTitle="contact">
       <Style />
-
       <HeaderOne pageTitle="contact" />
       <MobileMenu />
       <SearchPopup />

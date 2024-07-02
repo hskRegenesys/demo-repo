@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import HeaderOne from "@/components/Header/HeaderOne";
 import Layout from "@/components/Layout/Layout";
-
 import _ from "lodash";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 import MobileMenu from "@/components/Header/MobileMenu";
 import StudentYoutubeVideos from "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos";
 
-// const UspSection = dynamic(
-//   () => import("@/components/NewComponents/uspSection/UspSection")
-// );
+const UspSection = dynamic(
+  () => import("@/components/NewComponents/uspSection/UspSection")
+);
 const AboutUs = dynamic(
   () => import("@/components/NewComponents/about/AboutUs")
 );
@@ -26,35 +25,21 @@ const LearnersBenefit = dynamic(
 const ConnectContainer = dynamic(
   () => import("@/components/NewComponents/connectContainer/ConnectContainer")
 );
-// const StudentYoutubeVideos = dynamic(
-//   () =>
-//     import(
-//       "@/components/NewComponents/studentYoutubeVideos/StudentYoutubeVideos"
-//     )
-// );
 const BlogSection = dynamic(
   () => import("@/components/NewComponents/blogSection/BlogSection")
 );
-// const Faq = dynamic(() => import("@/components/NewComponents/faq/Faq"), {
-//   ssr: false,
-// });
 const FooterDR = dynamic(
   () => import("@/components/NewComponents/footerDR/FooterDR")
 );
 const PopupForm = dynamic(
   () => import("@/components/NewComponents/popupForm/PopupForm")
 );
-
 const FeaturedCourses = dynamic(
   () => import("@/components/NewComponents/featuredCourses/FeaturedCourses")
 );
-// const OurLocation = dynamic(
-//   () => import("@/components/NewComponents/OurLocation/OurLocation")
-// );
 const AllCoursesSlider = dynamic(
   () => import("@/components/NewComponents/allCoursesSlider/AllCoursesSlider")
 );
-
 const ToolCoveredCard = dynamic(
   () => import("@/components/NewComponents/ToolsCovered/ToolsCovered")
 );
@@ -96,18 +81,13 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
     setIsPopupVisible(false);
   };
 
-  const PopupData = {
-    PopupDesktop: "/assets/images/allImages/Home-Desktop-Popup.webp",
-    PopupMobile: "/assets/images/allImages/Home-Mobile-Popup.webp",
-  };
-
   return (
     <Layout pageTitle="new-home">
       {isPopupVisible && (
         <PopupForm
           isVisible={isPopupVisible}
           onClose={handlePopupClose}
-          popupData={PopupData}
+          popupData={homePageData?.PopupData}
         />
       )}
       <HeaderOne />
@@ -115,6 +95,7 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
       <HomeSliderBanner
         homeSliderBannerData={homePageData?.homeSliderBannerData}
       />
+      <UspSection UspSectionData={homePageData?.UspSectionData} />
       <AdmitsCompanies
         handleEnrollButtonClick={handleEnrollButtonClick}
         AdmiteCompaniesData={homePageData?.AdmiteCompaniesData}
@@ -137,14 +118,12 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
         AllCourcesCardData={homePageData?.AllCourcesCardData}
       />
       <div id="experience-section"></div>
-
       <AboutUs handleEnrollButtonClick={handleEnrollButtonClick} />
       <ToolCoveredCard data={homePageData?.ToolsCoveredData} />
       <TalentedComponent
         handleEnrollButtonClick={handleEnrollButtonClick}
         FacultyData={homePageData?.FacultyData}
       />
-
       <StudentReview
         handleEnrollButtonClick={handleEnrollButtonClick}
         StudentReviewData={homePageData?.StudentReviewData}
@@ -154,7 +133,6 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
       />
       <ConnectContainer onFormSubmit={() => {}} />
       <StudentYoutubeVideos />
-
       <BlogSection data={homePageData?.BlogSectionDataHome} />
       <LearnersSupport
         data={homePageData?.LearnersSupportSectionData}
@@ -162,7 +140,6 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
       />
       {/* <Faq data={initialFaqData} /> */}
       <ReadMoreDropDown data={homePageData?.AllCoursesDynamicData?.ReadMore} />
-
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

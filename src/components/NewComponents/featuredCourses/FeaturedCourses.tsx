@@ -121,7 +121,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
         </div>
         <div className={Styles.cardContainer}>
           <Swiper
-            className={Styles.swiperStyle}
+            className={`${Styles.swiperStyle} swiperStyle`}
             spaceBetween={25}
             slidesPerView={3}
             pagination={{ clickable: true }}
@@ -161,6 +161,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                       className={Styles.cardImage}
                       width={346}
                       height={220}
+                      loading="lazy"
                     />
                   </div>
                   <div className={Styles.textContainer}>
@@ -172,7 +173,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
-                          loading="eager"
+                          priority={true}
                         />
                       </div>
                       <div className={Styles.boldText}>
@@ -190,7 +191,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
-                          loading="eager"
+                          priority={true}
                         />
                       </div>
 
@@ -210,7 +211,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                             className={Styles.cardIcon}
                             width={24}
                             height={24}
-                            loading="eager"
+                            priority={true}
                           />
                         </div>
 
@@ -230,7 +231,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                             className={Styles.cardIcon}
                             width={24}
                             height={24}
-                            loading="eager"
+                            priority={true}
                           />
                         </div>
 

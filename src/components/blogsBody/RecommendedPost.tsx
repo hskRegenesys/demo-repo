@@ -32,7 +32,7 @@ const RecommendedPost = () => {
       <p className="text-center pt-4">
         <b>Recommended Posts</b>
       </p>
-      {postList.length > 0 && (
+      {postList?.length > 0 && (
         <Carousel
           autoplay
           autoplaySpeed={6000}

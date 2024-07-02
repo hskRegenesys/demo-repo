@@ -38,7 +38,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
       <div className={Styles.blogCardsContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
-          className={Styles.swiperStyle}
+          className={`${Styles.swiperStyle} swiperStyle`}
           spaceBetween={30}
           slidesPerView={3}
           pagination={{ clickable: true }}
@@ -62,9 +62,10 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   src={card.blogImg}
                   alt="Blog"
                   className={Styles.blogImage}
-                  width={360}
-                  height={190}
-                  priority
+                  width={384}
+                  height={187}
+                  layout="responsive"
+                  loading="lazy"
                 />
 
                 <div className={Styles.blogContent}>
@@ -77,6 +78,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                       href={card.blogLink}
                       className={Styles.knowMoreLink}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Know More
                       <span className={Styles.arrowIcon}>

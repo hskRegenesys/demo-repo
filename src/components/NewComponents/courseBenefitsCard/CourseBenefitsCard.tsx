@@ -28,13 +28,13 @@ const CourseBenefitsCard: React.FC<Props> = ({
 
   return (
     <div className={styles.courseBenefitsCardContainer}>
-      <p className="main-heading">{courcename}</p>
-      <h3 className="main-sub-heading">{Heding}</h3>
+      <h2 className="main-heading">{courcename}</h2>
+      <h2 className="main-sub-heading">{Heding}</h2>
 
       <div className={styles.cardsContainer}>
         <Swiper
           style={{ paddingBottom: addBottomValue }}
-          className={styles.swiperStyle}
+          className={`${styles.swiperStyle} swiperStyle`}
           spaceBetween={30}
           slidesPerView={3}
           pagination={{ clickable: true }}

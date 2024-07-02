@@ -12,8 +12,7 @@ class CountryCodeService {
       result = response?.data;
     } catch (err: any) {
       result = err?.response;
-
-      console.log("Error while getting Country details ", err.message);
+      // console.log("Error while getting Country details ", err.message);
     } finally {
       // eslint-disable-next-line no-unsafe-finally
       return result;

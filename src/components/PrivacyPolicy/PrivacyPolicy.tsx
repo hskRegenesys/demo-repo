@@ -49,8 +49,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleOne}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupOne?.map((items) => (
-                    <li>
+                  {listGroupOne?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}
@@ -60,8 +60,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleTwo}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupTwo?.map((items) => (
-                    <li>
+                  {listGroupTwo?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}
@@ -71,8 +71,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleThree}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupThree?.map((items) => (
-                    <li>
+                  {listGroupThree?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}
@@ -82,8 +82,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleFour}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupFour?.map((items) => (
-                    <li>
+                  {listGroupFour?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}
@@ -93,8 +93,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleFive}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupFive?.map((items) => (
-                    <li>
+                  {listGroupFive?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i>
                       {formattedHTML}
                     </li>
@@ -105,8 +105,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleSix}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupSix?.map((items) => (
-                    <li>
+                  {listGroupSix?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}
@@ -116,8 +116,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleSeven}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupSeven?.map((items) => (
-                    <li>
+                  {listGroupSeven?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}
@@ -127,8 +127,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleEight}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupEight?.map((items) => (
-                    <li>
+                  {listGroupEight?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}
@@ -138,8 +138,8 @@ const PrivacyPolicy = () => {
               <h6>{listTitleNine}</h6>
               <div className="terms-list-items">
                 <ul>
-                  {listGroupNine?.map((items) => (
-                    <li>
+                  {listGroupNine?.map((items, index) => (
+                    <li key={index}>
                       <i className="far fa-check-circle"></i> {items}
                     </li>
                   ))}

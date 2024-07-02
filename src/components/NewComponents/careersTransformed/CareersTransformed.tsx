@@ -74,12 +74,18 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
         </div>
       </div>
       <div className={Styles.header}>
-        <h2 className={Styles.heading}>{heading}</h2>
-        <h2 className={Styles.secondHeading}>{secondHeading}</h2>
+        <h2 className={Styles.heading}>
+          {heading}
+          <br></br>
+          <span className={Styles.secondHeading}> {secondHeading}</span>
+        </h2>
       </div>
 
       <div className={Styles.swiperContainer}>
-        <Swiper className={Styles.swiperStyle} {...swiperSettings}>
+        <Swiper
+          className={`${Styles.swiperStyle} swiperStyle`}
+          {...swiperSettings}
+        >
           {swiperCardContainer.map((swiperCard, index) => (
             <SwiperSlide key={index} className={Styles.swiperCard}>
               <div className={Styles.topSection}>
@@ -94,7 +100,7 @@ const CareersTransformed: React.FC<CareersTransformedProps> = ({
                     />
                   </div>
                   <div className={Styles.nameRole}>
-                    <h4 className={Styles.name}>{swiperCard.name}</h4>
+                    <p className={Styles.name}>{swiperCard.name}</p>
                     <p className={Styles.role}>{swiperCard.role}</p>
                   </div>
                 </div>

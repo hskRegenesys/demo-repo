@@ -54,9 +54,9 @@ const AdmitsCompanies: React.FC<AdmitsCompaniesProps> = ({
                 src={item.AdmitsImage}
                 alt="admit"
                 className={Styles.admitImages}
-                width={100}
-                height={60}
-                loading="lazy"
+                width={200}
+                height={100}
+                priority
               />
             </SwiperSlide>
           ))}

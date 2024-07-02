@@ -139,7 +139,11 @@ const FooterContent4: React.FC = () => {
           <strong className={styles.strong}>Follow Us</strong>
         </p>
         <div className={styles.socialIcons}>
-          <a target="_blank" href="https://www.facebook.com/digitalregenesys">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/digitalregenesys"
+            rel="noreferrer"
+          >
             <div className={styles.socialIconsText}>
               <span className={styles.Icons}>
                 <Image
@@ -157,6 +161,7 @@ const FooterContent4: React.FC = () => {
           <a
             target="_blank"
             href="https://www.youtube.com/channel/UCPQNtnWidXkTSxDYJLkRY1A"
+            rel="noreferrer"
           >
             <div className={styles.socialIconsText}>
               <span className={styles.Icons}>
@@ -175,6 +180,7 @@ const FooterContent4: React.FC = () => {
             target="_blank"
             href="https://www.instagram.com/digital_regenesys/"
             className={styles.Icons}
+            rel="noreferrer"
           >
             <div className={styles.socialIconsText}>
               <span className={styles.Icons}>

@@ -26,6 +26,8 @@ const Post: React.FC<PostsByCategoryProps> = ({
   const router = useRouter();
   // const { slug } = router.query;
   const [blogList, setBlogList] = useState<any>(postResponse);
+  const [isBlogDetail, setIsBlogDetail] = useState(false);
+  const [isBlogPage, setIsBlogPage] = useState(false);
 
   // const xmlOperation = async (sitemapData: any) => {
   //   if (!(sitemapData.length > 0)) return;
@@ -45,6 +47,11 @@ const Post: React.FC<PostsByCategoryProps> = ({
   // useEffect(() => {
   //   xmlOperation(blogList);
   // }, [blogList]);
+
+  useEffect(() => {
+    setIsBlogDetail(true);
+    setIsBlogPage(true);
+  }, []);
   return (
     <Layout
       pageTitle="blog"
@@ -61,9 +68,10 @@ const Post: React.FC<PostsByCategoryProps> = ({
           slug={slug.toString()}
           setBlogList={setBlogList}
           postResponse={postResponse}
+          isBlogDetail={isBlogDetail}
         />
       )}
-      <MainFooter />
+      <MainFooter isBlogPage={isBlogPage} />
       <StickyBar />
     </Layout>
   );

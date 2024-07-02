@@ -72,7 +72,7 @@ const StudentYoutubeVideos: React.FC = () => {
       </h2>
       <div className={Styles.videoContainer}>
         <Swiper
-          className={Styles.swiperStyle}
+          className={`${Styles.swiperStyle} swiperStyle`}
           spaceBetween={30}
           loop={true}
           slidesPerView={2}
