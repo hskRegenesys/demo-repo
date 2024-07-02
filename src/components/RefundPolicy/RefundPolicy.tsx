@@ -38,9 +38,9 @@ const RefundPolicy = () => {
 
               <h6>{titleRefundStructure}</h6>
               <ul>
-                {details.map((item) => {
+                {details.map((item, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <i className="far fa-check-circle"></i>
                       {item.item}
                     </li>

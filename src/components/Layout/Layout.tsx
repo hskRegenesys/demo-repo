@@ -120,7 +120,7 @@ const Layout = (props: any) => {
   }
   useEffect(() => {
     setCanonicalBaseUrl();
-  }, [asPath]);
+  }, [asPath, setCanonicalBaseUrl]);
 
   // Mixpanel Integration
   const captureSessionEnd = () => {

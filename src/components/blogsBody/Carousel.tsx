@@ -23,7 +23,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
               className="w-100 position-relative d-none d-md-block "
               style={{ minHeight: "500px" }}
             >
-              <Link href={link}>
+              <Link href={link} passHref>
                 <Image
                   style={{ cursor: "pointer" }}
                   src={`/assets/images/background/${desktopImage}`}
@@ -37,7 +37,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
               className="w-100 position-relative d-block d-md-none"
               style={{ minHeight: "500px", cursor: "pointer" }}
             >
-              <Link href={link}>
+              <Link href={link} passHref>
                 <Image
                   style={{ cursor: "pointer" }}
                   src={`/assets/images/background/${mobileImage}`}

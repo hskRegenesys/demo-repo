@@ -59,7 +59,7 @@ const TrendingSection = () => {
 
   useEffect(() => {
     setIsLoading(false);
-  }, [allCourseList]);
+  }, []);
 
   let CourseCard: any = [];
 

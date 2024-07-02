@@ -50,7 +50,7 @@ const RecommendedPost = () => {
               className="m-2 w-100 rounded btn"
               role="button"
             >
-              <Link href={`/blog/${values?.slug}`}>
+              <Link href={`/blog/${values?.slug}`} passHref>
                 <div className="row align-items-center">
                   <div
                     className="col-5 position-relative rounded"
