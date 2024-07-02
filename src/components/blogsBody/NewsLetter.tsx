@@ -89,8 +89,8 @@ const NewsLetter = () => {
       mixpanel.track("submit-newsletter-form", { submit_value: true });
       reset();
     }
-    handleEmailMessage(data);
-    handleWhatsAppMessage(data);
+    // handleEmailMessage(data);
+    // handleWhatsAppMessage(data);
     reset();
     setIsCheckboxChecked(false);
     notify();
