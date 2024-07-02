@@ -96,6 +96,11 @@
   width: 100%;
 }
 
+.ContectForm {
+  display: flex;
+  gap: 20px;
+}
+
 @media (max-width: 720px) {
   .ContectForm {
     display: block;
