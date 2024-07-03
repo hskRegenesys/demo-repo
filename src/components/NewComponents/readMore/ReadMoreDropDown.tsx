@@ -33,7 +33,6 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
               <span style={{ margin: "auto 0", display: "flex" }}>
                 <Image
                   onClick={toggleReadMore}
-                  // src="/assets/images/new-component-assets/DoubleArrowWhite.svg"
                   src="/assets/images/allImages/single-arrow-right.svg"
                   alt="Arrow"
                   className="right-single-arrow"

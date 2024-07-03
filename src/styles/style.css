@@ -2021,7 +2021,7 @@ img.lazy-image.loaded {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/assets/images/main-slider/slide-2-pattern-1.png);
+  background-image: url(/assets/images/allImages/slide-2-pattern-1.png);
   z-index: 10;
 }
 
@@ -2292,7 +2292,7 @@ img.lazy-image.loaded {
   bottom: -50px;
   width: 330px;
   height: 330px;
-  background: url(/assets/images/main-slider/b-3-shape.png) center center
+  background: url(/assets/images/allImages/b-3-shape.png) center center
     no-repeat;
   z-index: 3;
   opacity: 0;

@@ -8,7 +8,7 @@ const AllCourcesCardData = {
   cardProgramText: "Course",
   cardStudentEnrollmentText: "Students Enquired",
   cardToolsText: "Covered",
-  cardStarIcon: "/assets/images/new-component-assets/star.svg",
+  cardStarIcon: "/assets/images/allImages/star.svg",
 
   allCoursesSliderHeading: "All Courses",
   allCoursesSliderSubHeading: "Find Your Suitable Course",

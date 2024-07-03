@@ -55,7 +55,7 @@ const BreadcrumbsDR = ({
                       <Image
                         className={Styles.arrowIcon}
                         // src={`${imageUrl}Icons/arrowGray.svg`}
-                        src="/assets/images/new-component-assets/arrowGray.svg"
+                        src="/assets/images/allImages/arrowGray.svg"
                         alt="Arrow Icon"
                         width={16}
                         height={16}
@@ -72,7 +72,7 @@ const BreadcrumbsDR = ({
                       <Image
                         className={Styles.arrowIcon}
                         // src={`${imageUrl}Icons/arrowGray.svg`}
-                        src="/assets/images/new-component-assets/arrowGray.svg"
+                        src="/assets/images/allImages/arrowGray.svg"
                         alt="Arrow Icon"
                         width={16}
                         height={16}
@@ -87,7 +87,7 @@ const BreadcrumbsDR = ({
                   <Image
                     className={Styles.arrowIcon}
                     // src={`${imageUrl}Icons/arrowGray.svg`}
-                    src="/assets/images/new-component-assets/arrowGray.svg"
+                    src="/assets/images/allImages/arrowGray.svg"
                     alt="Arrow Icon"
                     width={16}
                     height={16}

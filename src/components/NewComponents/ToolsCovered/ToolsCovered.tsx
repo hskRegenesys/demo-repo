@@ -22,7 +22,6 @@ const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
             <div key={index} className={Styles.imageCard}>
               <Image
                 src={image.img}
-                // src={`/assets/images/clients/${image.img}`}
                 alt="Tools Covered"
                 title={image.alt}
                 width={148}
