@@ -3688,7 +3688,7 @@ const MainCoursesDynimicData = {
     //   cards: [
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-course.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-course.webp",
     //       blogQuestion: "Which Is The Best Cyber Security Course?",
     //       blogText:
     //         "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
@@ -3697,7 +3697,7 @@ const MainCoursesDynimicData = {
     //     },
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-future.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-future.webp",
     //       blogQuestion:
     //         "Why Are Cyber Security Courses a Smart Investment for the Future",
     //       blogText:
@@ -3707,7 +3707,7 @@ const MainCoursesDynimicData = {
     //     },
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-qualifications.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-qualifications.webp",
     //       blogQuestion:
     //         "What qualifications do I need to study cyber security?",
     //       blogText:
@@ -3717,7 +3717,7 @@ const MainCoursesDynimicData = {
     //     },
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-promising.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-promising.webp",
     //       blogQuestion:
     //         "Why Enrol In A Cyber Security Course For A Promising Career?",
     //       blogText:
@@ -4072,7 +4072,7 @@ const MainCoursesDynimicData = {
     //   cards: [
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-course.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-course.webp",
     //       blogQuestion: "Which Is The Best Cyber Security Course?",
     //       blogText:
     //         "When it comes to cyber security, choosing the best course can make all the difference. However, with so many options available, deciding which one to pursue can take time and effort. That is where cyber security comes in. ",
@@ -4081,7 +4081,7 @@ const MainCoursesDynimicData = {
     //     },
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-future.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-future.webp",
     //       blogQuestion:
     //         "Why Are Cyber Security Courses a Smart Investment for the Future",
     //       blogText:
@@ -4091,7 +4091,7 @@ const MainCoursesDynimicData = {
     //     },
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-qualifications.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-qualifications.webp",
     //       blogQuestion:
     //         "What qualifications do I need to study cyber security?",
     //       blogText:
@@ -4101,7 +4101,7 @@ const MainCoursesDynimicData = {
     //     },
     //     {
     //       blogImg:
-    //         "/assets/images/new-component-assets/Courses-Page-Img/CS/cs-blog-promising.webp",
+    //         "/assets/images/allImages/Courses-Page-Img/CS/cs-blog-promising.webp",
     //       blogQuestion:
     //         "Why Enrol In A Cyber Security Course For A Promising Career?",
     //       blogText:

@@ -17,7 +17,7 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
       <div className={styles.footerLogo}>
         <Image
           // src={`${imageUrl}Icons/DR-logo.webp`}
-          src="/assets/images/new-component-assets/DR_Logo.svg"
+          src="/assets/images/allImages/DR_Logo.svg"
           alt="Logo footer"
           width={174}
           height={60}
@@ -148,7 +148,7 @@ const FooterContent4: React.FC = () => {
               <span className={styles.Icons}>
                 <Image
                   // src={`${imageUrl}Icons/facebook-icon.svg`}
-                  src="/assets/images/new-component-assets/facebook-icon.svg"
+                  src="/assets/images/allImages/facebook-icon.svg"
                   alt="Facebook icon"
                   width={14}
                   height={14}
@@ -167,7 +167,7 @@ const FooterContent4: React.FC = () => {
               <span className={styles.Icons}>
                 <Image
                   // src={`${imageUrl}Icons/youtube-icon.svg`}
-                  src="/assets/images/new-component-assets/youtube-icon.png"
+                  src="/assets/images/allImages/youtube-icon.png"
                   alt="Youtube icon"
                   width={14}
                   height={14}
@@ -186,7 +186,7 @@ const FooterContent4: React.FC = () => {
               <span className={styles.Icons}>
                 <Image
                   // src={`${imageUrl}Icons/insta-icon.svg`}
-                  src="/assets/images/new-component-assets/insta-icon.svg"
+                  src="/assets/images/allImages/insta-icon.svg"
                   alt="Instagram icon"
                   width={14}
                   height={14}

@@ -1289,10 +1289,8 @@ const redirectURL = () => {
     ],
     "/cyber-security": [
       "/cyber-security-course",
-      "/all-courses/cyber-security",
       "/cyber-security-courses-online",
       "/cyber-security-course",
-      "/all-courses/cyber-security",
       "/cyber-security-courses-online",
       "/cyber-security-course-online",
       "/online-cyber-security-course",

@@ -84,7 +84,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                       <span className={Styles.arrowIcon}>
                         <Image
                           // src={`${imageUrl}Icons/Readmore.svg`}
-                          src="/assets/images/new-component-assets/Readmore.svg"
+                          src="/assets/images/allImages/Readmore.svg"
                           alt="card Star"
                           className={Styles.img}
                           width={12}

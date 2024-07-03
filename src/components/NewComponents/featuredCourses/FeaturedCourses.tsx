@@ -161,7 +161,7 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                       className={Styles.cardImage}
                       width={346}
                       height={220}
-                      loading="lazy"
+                      priority={true}
                     />
                   </div>
                   <div className={Styles.textContainer}>

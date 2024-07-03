@@ -21,7 +21,7 @@ const LevelCard: React.FC<LevelCardProps> = ({ contentHeading, LevelCard }) => {
           <div className={styles.card4} key={index}>
             {/* Frame Image in the top-left corner */}
             <Image
-              src="/assets/images/new-component-assets/Group 2.svg"
+              src="/assets/images/allImages/Group 2.svg"
               alt="Frame"
               className={styles.frameImage}
               width={48}
@@ -36,7 +36,7 @@ const LevelCard: React.FC<LevelCardProps> = ({ contentHeading, LevelCard }) => {
                 {pricing.list.map((item, subIndex) => (
                   <li key={subIndex}>
                     <Image
-                      src="/assets/images/new-component-assets/Check.svg"
+                      src="/assets/images/allImages/Check.svg"
                       alt="Tick Icon"
                       className={styles.tickIcon}
                       width={24}
