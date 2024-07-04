@@ -106,3 +106,59 @@
     display: block;
   }
 }
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.phoneInputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneInput {
+  padding: 6px;
+  border: 1px solid #ced1d9;
+  border-radius: 10px;
+  color: #555963;
+  font-size: 14px;
+}
+
+.phoneInputError {
+  border: 1px solid red;
+}
+
+.input,
+.inputError {
+  width: 100%;
+  padding: 5px 14px;
+  border: 1px solid #ced1d9;
+  border-radius: 10px;
+  color: #555963;
+  font-size: 14px;
+}
+
+.errorMsg {
+  color: #a51f1f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.selectWrapper {
+  margin-bottom: 16px;
+}
+
+.select,
+.selectError {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced1d9;
+  border-radius: 10px;
+  color: #555963;
+  font-size: 14px;
+}
+
+.errorMsg {
+  color: #a51f1f;
+  font-size: 12px;
+  margin-top: 4px;
+}

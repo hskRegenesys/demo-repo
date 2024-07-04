@@ -19665,18 +19665,18 @@ h6.designation {
 }
 
 input.PhoneInputInput {
-  padding-left: 66px !important;
+  padding-left: 60px !important;
   background-color: transparent;
 }
 
 .PhoneInputCountry {
   position: absolute !important;
-  margin-top: 28px;
+  margin-top: 14px;
   margin-left: 18px;
   height: 10px;
 }
 .PhoneInputCountryIconImg {
-  width: 22px !important;
+  width: 24px !important;
 }
 
 .inputForm .PhoneInputCountry {

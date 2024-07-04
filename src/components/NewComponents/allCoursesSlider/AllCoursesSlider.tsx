@@ -175,7 +175,7 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     alt="All course"
                     title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
-                    width={346}
+                    width={347}
                     height={220}
                     priority={true}
                   />
