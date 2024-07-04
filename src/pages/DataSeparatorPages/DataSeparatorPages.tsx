@@ -47,13 +47,13 @@ const pageMappings = [
   },
   {
     pages: [
+      "digital-marketing-course",
       "digital-marketing",
       // =========multiple pages===========
       "what-is-digital-marketing",
       "digital-marketing-jobs",
       "digital-marketing-salary",
       "digital-marketer",
-      "digital-marketing-course",
       "digital-marketing-strategy",
       "digital-marketing-certificate",
       "google-digital-marketing-certification",

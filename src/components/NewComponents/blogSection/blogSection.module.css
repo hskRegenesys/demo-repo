@@ -74,6 +74,8 @@
 
 .knowMore {
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
   /* Add your "Know More" container styles */
 }
 
@@ -90,6 +92,8 @@
 
 .arrowIcon {
   margin-left: 2px;
+  position: relative;
+  top: 2px;
 }
 
 /* swiper style */

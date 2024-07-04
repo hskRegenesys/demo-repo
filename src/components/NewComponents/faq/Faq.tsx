@@ -7,9 +7,14 @@ interface FAQData {
     heading: string;
     faqs: { question: string; answer: string }[];
   }[];
+  HeadingDesktop?: string;
+  HeadingMobile?: string;
 }
 
-const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
+const FaqDesktop: React.FC<{ data: FAQData; pageName?: string }> = ({
+  data,
+  pageName,
+}) => {
   const [selectedHeading, setSelectedHeading] = useState<string | null>(
     data.sections.length > 0 ? data.sections[0].heading : null
   );
@@ -26,7 +31,11 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
 
   return (
     <div className={Styles.faqDesktop}>
-      <h2 className="main-sub-heading">Frequently Asked Questions</h2>
+      <h2 className="main-sub-heading">
+        {pageName === "Digital Marketing Course"
+          ? data?.HeadingDesktop
+          : "Frequently Asked Questions"}
+      </h2>
       <div className={Styles.faqSection}>
         <div className={Styles.section1}>
           <ul>
@@ -98,7 +107,10 @@ const FaqDesktop: React.FC<{ data: FAQData }> = ({ data }) => {
   );
 };
 
-const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
+const FaqMobile: React.FC<{ data: FAQData; pageName?: string }> = ({
+  data,
+  pageName,
+}) => {
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
   const [openHeadingDropdown, setOpenHeadingDropdown] = useState<string | null>(
     null
@@ -127,7 +139,9 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
 
   return (
     <div className={Styles.faqMobile}>
-      <h2 className={`${Styles.topcontentMobile}`}>FAQ</h2>
+      <h2 className={`${Styles.topcontentMobile}`}>
+        {pageName === "Digital Marketing Course" ? data.HeadingMobile : "FAQ"}
+      </h2>
       <div className={Styles.faqSectionMobile}>
         <div className={Styles.section1Mobile}>
           <ul>
@@ -220,12 +234,15 @@ const FaqMobile: React.FC<{ data: FAQData }> = ({ data }) => {
 };
 
 // Combined Component
-const Faq: React.FC<{ data: FAQData }> = ({ data }) => {
+const Faq: React.FC<{ data: FAQData; pageName?: string }> = ({
+  data,
+  pageName,
+}) => {
   return (
     <div className={Styles.faqContainer}>
       {/* Render the desktop FAQ component */}
-      <FaqDesktop data={data} />
-      <FaqMobile data={data} />{" "}
+      <FaqDesktop data={data} pageName={pageName} />
+      <FaqMobile data={data} pageName={pageName} />{" "}
     </div>
   );
 };

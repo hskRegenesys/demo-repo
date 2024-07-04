@@ -49,7 +49,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.digitalregenesys.com/all-courses/digital-marketing</loc>
+    <loc>https://www.digitalregenesys.com/all-courses/digital-marketing-course</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -151,7 +151,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.digitalregenesys.com/blog/category/digital-marketing</loc>
+    <loc>https://www.digitalregenesys.com/blog/category/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
@@ -1256,6 +1256,48 @@
   </url>
   <url>
     <loc>https://www.digitalregenesys.com/blog/data-engineering-salary-in-south-africa</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/business-intelligence-analyst-salary-in-south-africa</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/statistician-salary-in-south-africa</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/data-scientist-salary-johannesburg</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/data-scientist-salary-south-africa</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/data-architect-salary-south-africa</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/junior-data-engineer-salary-south-africa</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>Daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.digitalregenesys.com/blog/digital-marketing-salary-in-south-africa</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>Daily</changefreq>
     <priority>0.80</priority>

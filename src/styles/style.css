@@ -6461,7 +6461,7 @@ featured-section .right-col .sec-title h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 130%;
-  letter-spacing: -0.8px;
+  letter-spacing: -1.2px;
   margin-bottom: 56px;
   text-align: center;
 }
@@ -11649,7 +11649,7 @@ featured-section .right-col .sec-title h2 {
   width: 41px !important;
   height: 16px;
   position: absolute !important;
-  left: 167px;
+  left: 230px;
   top: -10px !important;
   font-style: italic;
   font-weight: 700;
@@ -12984,8 +12984,8 @@ featured-section .right-col .sec-title h2 {
     width: 30px !important;
     height: auto;
     position: absolute !important;
-    left: 225px;
-    top: 0px !important;
+    left: 235px;
+    top: -5px !important;
     line-height: normal;
   }
 }
