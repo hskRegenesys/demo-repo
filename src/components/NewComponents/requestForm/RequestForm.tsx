@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import toast, { Toaster } from "react-hot-toast";
 import validator from "validator";
@@ -11,8 +12,6 @@ import { allCourseList } from "@/data/courseData";
 import Styles from "./requestForm.module.css";
 import { brochureDetails } from "@/data/courseBrochure";
 import mixpanel from "mixpanel-browser";
-import FormInput from "./FormInput";
-import CourseSelect from "./CourseSelect";
 
 function RequestForm(props: any) {
   const router = useRouter();
@@ -253,49 +252,175 @@ function RequestForm(props: any) {
             }
           >
             <div className={Styles.formContent}>
-              <FormInput
-                type="text"
-                name="Name"
-                placeholder="Full Name*"
-                register={register}
-                errors={errors}
-                trigger={trigger}
-                mixpanel={mixpanel}
-              />
-              <FormInput
-                type="email"
-                name="Email"
-                placeholder="Email*"
-                register={register}
-                errors={errors}
-                trigger={trigger}
-                mixpanel={mixpanel}
-              />
+              <div className={Styles.inputLabelContainer}>
+                <input
+                  className={`${errors?.Name && "invalid"} ${Styles.inputForm}`}
+                  placeholder="Full Name*"
+                  {...register("Name", {
+                    required: "*Full Name is Required",
+                    pattern: {
+                      value: /^[a-zA-Z_ ]+$/,
+                      message: "Invalid User Name",
+                    },
+                  })}
+                  onKeyUp={(e) => {
+                    trigger("Name");
+                    mixpanel.track("Name Changed", {
+                      InputName: "name",
+                      Filled: (e.target as HTMLInputElement)?.value !== "",
+                      newValue: (e.target as HTMLInputElement)?.value,
+                    });
+                  }}
+                />
+                {errors?.Name && (
+                  <small className={Styles.smallText}>
+                    {errors?.Name?.message}
+                  </small>
+                )}
+              </div>
+              <div className={Styles.inputLabelContainer}>
+                <div className={Styles.inputFormContainer}>
+                  <input
+                    className={`${errors?.Email && "invalid"} ${
+                      Styles.inputForm
+                    }`}
+                    placeholder="Email*"
+                    {...register("Email", {
+                      required: "*Email is Required",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Invalid email address",
+                      },
+                    })}
+                    onKeyUp={(e) => {
+                      trigger("Email");
+                      mixpanel.track("Email Changed", {
+                        InputName: "Email",
+                        Filled: (e.target as HTMLInputElement)?.value !== "",
+                        newValue: (e.target as HTMLInputElement)?.value,
+                      });
+                    }}
+                  />
+                  {errors?.Email && (
+                    <small className={Styles.smallText}>
+                      {errors?.Email?.message}
+                    </small>
+                  )}
+                </div>
+              </div>
             </div>
+
             <div className={Styles.formsplit}>
-              <FormInput
-                type="phone"
-                name="Phone"
-                placeholder="Select Country Code*"
-                register={register}
-                errors={errors}
-                trigger={trigger}
-                setValue={setValue}
-                setPhoneNumber={setPhoneNumber}
-                setPhoneNumberError={setPhoneNumberError}
-                geoLocationData={geoLocationData}
-                validator={validator}
-                mixpanel={mixpanel}
-                phoneNumber={phoneNumber}
-                phoneNumberError={phoneNumberError}
-              />
-              <CourseSelect
-                register={register}
-                errors={errors}
-                courses={courses}
-                programmeOfInterest={programmeOfInterest}
-                mixpanel={mixpanel}
-              />
+              <div className={Styles.inputLabelContainer}>
+                <div className={Styles.formGroupPositionRelative}>
+                  <input
+                    className={
+                      props.type === "contact"
+                        ? Styles.inputFormContact
+                        : Styles.inputForm
+                    }
+                    type="hidden"
+                    {...register("Phone", {
+                      required: "*Phone number is Required",
+                    })}
+                  />
+                  <PhoneInput
+                    international
+                    countryCallingCodeEditable={false}
+                    defaultCountry={geoLocationData?.country_code || "ZA"}
+                    placeholder="Select Country Code*"
+                    value={watch("Phone")}
+                    {...register("Phone", {
+                      required: "*Phone number is Required",
+                    })}
+                    onChange={(e) => {
+                      const phoneNumber = e ? e.toString() : "";
+                      const isValid = validator.isMobilePhone(phoneNumber);
+                      setPhoneNumber(phoneNumber);
+
+                      // Activate validation after typing 4 digits
+                      if (phoneNumber.replace(/[^0-9]/g, "").length >= 4) {
+                        if (isValid) {
+                          setValue("Phone", phoneNumber);
+                          setPhoneNumber(phoneNumber);
+                          mixpanel.track("Phone Changed", {
+                            InputName: "Phone",
+                            Filled: phoneNumber !== "",
+                            newValue: phoneNumber,
+                          });
+                          setPhoneNumberError("");
+                        } else {
+                          setPhoneNumberError("Valid phone number required");
+                        }
+                      } else {
+                        setPhoneNumberError("");
+                      }
+                    }}
+                    onBlur={() => {
+                      trigger("Phone");
+                    }}
+                    className={`inputForm ${phoneNumberError && "invalid"} ${
+                      Styles.inputForm
+                    }`}
+                  />
+                  {phoneNumberError ? (
+                    <small className={Styles.smallText}>
+                      {phoneNumberError}
+                    </small>
+                  ) : (
+                    (phoneNumber.length === 0
+                      ? !phoneNumberError
+                      : phoneNumberError) &&
+                    errors?.Phone && (
+                      <small className={Styles.smallText}>
+                        {errors?.Phone?.message}
+                      </small>
+                    )
+                  )}
+                </div>
+              </div>
+              <div className=" ">
+                <div className="">
+                  <select
+                    aria-label="Select Course"
+                    name="Course"
+                    value={programmeOfInterest}
+                    className={`select-course form-select${
+                      errors?.Programme_Of_Interest &&
+                      " focus:border-red-500 focus:ring-red-500 border-red-500"
+                    } ${Styles.inputForm}`}
+                    {...register("Programme_Of_Interest", {
+                      required: "*Course is required",
+                    })}
+                  >
+                    <option value="" disabled selected>
+                      Course you are looking for *
+                    </option>
+
+                    {courses.map((val: any) => (
+                      <option
+                        key={val.id}
+                        value={val.name}
+                        selected={val.code === props.CourseCode}
+                      >
+                        {val.name}
+                      </option>
+                    ))}
+                  </select>
+                  {errors?.Programme_Of_Interest && (
+                    <small className={Styles.smallText}>
+                      {errors?.Programme_Of_Interest?.message}
+                    </small>
+                  )}
+                  {(programmeOfInterest === "Digital Marketing" ||
+                    programmeOfInterest === "Design Thinking") && (
+                    <small className={Styles.formFooterText}>
+                      *Learn collaboratively! Apply with 15 people to begin the
+                      course
+                    </small>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
           <div></div>

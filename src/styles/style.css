@@ -11597,7 +11597,7 @@ featured-section .right-col .sec-title h2 {
   display: flex;
   position: absolute;
   left: -57px;
-  top: 0px;
+  top: -22px;
   width: 100vw;
   height: 530px;
   justify-content: space-evenly;
@@ -19665,16 +19665,10 @@ h6.designation {
 }
 
 input.PhoneInputInput {
-  padding-left: 60px !important;
+  padding-left: 6px !important;
   background-color: transparent;
 }
 
-.PhoneInputCountry {
-  position: absolute !important;
-  margin-top: 14px;
-  margin-left: 18px;
-  height: 10px;
-}
 .PhoneInputCountryIconImg {
   width: 24px !important;
 }
@@ -19684,7 +19678,7 @@ input.PhoneInputInput {
 }
 
 .inputForm input.PhoneInputInput {
-  padding-left: 40px !important;
+  padding-left: 4px !important;
   color: #555963;
 }
 .blogs-apply-now .PhoneInputCountry {
@@ -20250,7 +20244,7 @@ input.PhoneInputInput {
   }
 
   .PhoneInputCountry {
-    margin-top: 20px;
+    margin-left: 5px !important;
   }
 
   .main-footer .footer-widget .contact-info h6 {
