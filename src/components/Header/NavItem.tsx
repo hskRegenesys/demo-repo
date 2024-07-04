@@ -109,6 +109,12 @@ const NavItem = (props: any) => {
     );
   };
 
+  const sortedSubNavItems = [...subNavItems].sort((a, b) => {
+    if (a.name === "Digital Marketing with GenAI") return -1;
+    if (b.name === "Digital Marketing with GenAI") return 1;
+    return 0;
+  });
+
   return (
     <>
       {isMobileView === true ? (
@@ -202,7 +208,7 @@ const NavItem = (props: any) => {
                                           </span> */}
 
                                     {subNavItem.name ===
-                                    "Product Management" ? (
+                                    "Digital Marketing with GenAI" ? (
                                       <span className="newAnimation blink-soft">
                                         New
                                       </span>
@@ -215,7 +221,14 @@ const NavItem = (props: any) => {
                                           paddingRight: "10px",
                                         }}
                                       ></span>
-                                      <Link href={subNavItem.href}>
+                                      <Link
+                                        href={
+                                          subNavItem.name ===
+                                          "Digital Marketing with GenAI"
+                                            ? "/all-courses/digital-marketing-course"
+                                            : subNavItem.href
+                                        }
+                                      >
                                         <a onClick={toggleMenu}>
                                           {subNavItem.name}
                                         </a>
@@ -493,7 +506,10 @@ const NavItem = (props: any) => {
                           <li key={item.id} style={{ marginLeft: "30px" }}>
                             <a
                               href={item.href}
-                              style={{ fontSize: "14px", fontWeight: "400" }}
+                              style={{
+                                fontSize: "14px",
+                                fontWeight: "400",
+                              }}
                             >
                               {item.name}
                             </a>
@@ -527,10 +543,18 @@ const NavItem = (props: any) => {
                                     handleLeave();
                                   }}
                                 >
-                                  <a href={subItem.href}>
+                                  <a
+                                    href={
+                                      subItem?.name ===
+                                      "Digital Marketing with GenAI"
+                                        ? "/all-courses/digital-marketing-course"
+                                        : subItem.href
+                                    }
+                                  >
                                     {subItem.name}
 
-                                    {subItem.name === "Product Management" ? (
+                                    {subItem.name ===
+                                    "Digital Marketing with GenAI" ? (
                                       <span className="newAnimation blink-soft">
                                         New
                                       </span>

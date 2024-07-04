@@ -69,54 +69,55 @@ const redirectURL = () => {
 
     {
       source: "/programs/digital-marketing-course",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/basic-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
       permanent: true,
     },
     {
-      source: "/all-courses/digital-marketing/basic-digital-marketing",
+      source: "/all-courses/digital-marketing-course/basic-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course ",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/advance-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course ",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course ",
       permanent: true,
     },
     {
-      source: "/all-courses/digital-marketing/advanced-digital-marketing",
+      source:
+        "/all-courses/digital-marketing-course/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course ",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course ",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing-course/applied-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course ",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course ",
       permanent: true,
     },
     {
-      source: "/all-courses/digital-marketing/applied-digital-marketing",
+      source: "/all-courses/digital-marketing-course/applied-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course ",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course ",
       permanent: true,
     },
     {
@@ -269,9 +270,10 @@ const redirectURL = () => {
       permanent: true,
     },
     {
-      source: "/all-courses/digital-marketing/basic-digital-marketing-course",
+      source:
+        "/all-courses/digital-marketing-course/basic-digital-marketing-course",
       destination:
-        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
       permanent: true,
     },
     {
@@ -350,17 +352,17 @@ const redirectURL = () => {
     {
       source: "/programs/digitalMarketingCourse/basicDigitalMarketing",
       destination:
-        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
       permanent: true,
     },
     {
       source: "/self-paced-digitalmarketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/fac-led-digitalmarketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -390,7 +392,7 @@ const redirectURL = () => {
     },
     {
       source: "/product/introduction-to-digital-marketing/",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -415,13 +417,13 @@ const redirectURL = () => {
     },
     {
       source: "/study-digital-marketing-sa",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/programs/digital-marketing/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
       permanent: true,
     },
     {
@@ -491,7 +493,7 @@ const redirectURL = () => {
     },
     {
       source: "/fac-led-digitalmarketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -536,7 +538,7 @@ const redirectURL = () => {
     },
     {
       source: "/courses/digital-marketing/",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -558,7 +560,7 @@ const redirectURL = () => {
     },
     {
       source: "/product/introduction-to-digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -618,7 +620,7 @@ const redirectURL = () => {
     },
     {
       source: "/courses/digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -674,24 +676,24 @@ const redirectURL = () => {
     {
       source: "/programs/digitalMarketingCourse/appliedDigitalMarketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
       permanent: true,
     },
     {
       source: "/courses/advanced-digital-marketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
       permanent: true,
     },
     {
       source: "/courses/advanced-digital-marketing/",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
       permanent: true,
     },
     {
       source: "/digital-marketing/",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -706,7 +708,7 @@ const redirectURL = () => {
     },
     {
       source: "/self-paced-digitalmarketing/",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -821,12 +823,12 @@ const redirectURL = () => {
     },
     {
       source: "/digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/all-course//project-management",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -837,12 +839,12 @@ const redirectURL = () => {
     {
       source: "/programs/digitalMarketingCourse/advancedDigitalMarketing",
       destination:
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
       permanent: true,
     },
     {
       source: "/programs/digitalMarketingCourse",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -932,19 +934,22 @@ const redirectURL = () => {
     },
 
     {
-      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
-      destination: "/all-courses/digital-marketing",
+      source:
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
+      destination: "/all-courses/digital-marketing-course",
       permanent: false,
     },
     {
-      source: "/all-courses/digital-marketing/advance-digital-marketing-course",
-      destination: "/all-courses/digital-marketing",
+      source:
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
+      destination: "/all-courses/digital-marketing-course",
       permanent: false,
     },
 
     {
-      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
-      destination: "/all-courses/digital-marketing",
+      source:
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
+      destination: "/all-courses/digital-marketing-course",
       permanent: false,
     },
     {
@@ -976,8 +981,8 @@ const redirectURL = () => {
     },
 
     {
-      source: "/digital-marketing-main",
-      destination: "/all-courses/digital-marketing",
+      source: "/digital-marketing-course",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -993,17 +998,17 @@ const redirectURL = () => {
     //-------------------------new redirections---------------------------------
     {
       source: "/all-course/digital-marketing/applied-digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/all-course/digital-marketing/basic-digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/all-course/digital-marketing/advanced-digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
 
@@ -1055,12 +1060,12 @@ const redirectURL = () => {
     },
     {
       source: "/advanced-digital-marketing",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
       source: "/Digital",
-      destination: "/all-courses/digital-marketing",
+      destination: "/all-courses/digital-marketing-course",
       permanent: true,
     },
     {
@@ -1223,13 +1228,13 @@ const redirectURL = () => {
       "/project-management-courses-for-beginners",
       "/project-management-on-line-courses",
     ],
-    "/digital-marketing": [
-      // "/digital-marketing",
+    "/digital-marketing-course": [
+      // "/digital-marketing-course",
+      "/digital-marketing",
       "/what-is-digital-marketing",
       "/digital-marketing-jobs",
       "/digital-marketing-salary",
       "/digital-marketer",
-      "/digital-marketing-course",
       "/digital-marketing-strategy",
       "/digital-marketing-certificate",
       "/google-digital-marketing-certification",
@@ -1466,8 +1471,8 @@ const createReWrites = () => {
       destination: "/all-courses/data-science/701",
     },
     {
-      source: "/all-courses/digital-marketing",
-      destination: "/all-courses/digital-marketing/702",
+      source: "/all-courses/digital-marketing-course",
+      destination: "/all-courses/digital-marketing-course/702",
     },
     {
       source: "/all-courses/artificial-intelligence",
@@ -1500,23 +1505,26 @@ const createReWrites = () => {
       destination: "/all-courses/applied-data-science/23",
     },
     {
-      source: "/all-courses/digital-marketing/basic-digital-marketing",
+      source: "/all-courses/digital-marketing-course/basic-digital-marketing",
       destination: "/all-courses/basic-digital-marketing/25",
     },
     {
-      source: "/all-courses/digital-marketing/advanced-digital-marketing",
+      source:
+        "/all-courses/digital-marketing-course/advanced-digital-marketing",
       destination: "/all-courses/advance-digital-marketing-course/26",
     },
     {
-      source: "/all-courses/digital-marketing/applied-digital-marketing",
+      source: "/all-courses/digital-marketing-course/applied-digital-marketing",
       destination: "/all-courses/applied-digital-marketing/27",
     },
     {
-      source: "/all-courses/digital-marketing/digital-marketing-fundamentals",
-      destination: "/all-courses/digital-marketing-fundamentals/101",
+      source:
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
+      destination: "/all-courses/digital-marketing-course-fundamentals/101",
     },
     {
-      source: "/all-courses/digital-marketing/advance-digital-marketing-course",
+      source:
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
       destination: "/all-courses/advance-digital-marketing-course/102",
     },
     {

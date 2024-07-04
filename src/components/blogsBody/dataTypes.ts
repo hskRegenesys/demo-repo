@@ -66,7 +66,7 @@ export const carousalProps = [
   },
   {
     desktopImage: "blog-home-Digital-Marketing.webp",
-    link: "/all-courses/digital-marketing",
+    link: "/all-courses/digital-marketing-course",
     mobileImage: "blog-home-Digital-Marketing-responsive.webp",
   },
 ];

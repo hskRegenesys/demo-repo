@@ -83,11 +83,18 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <span className={styles.topTextBestsale}>{BestSaleText}</span>
               <span className={styles.topTextMessage}>{topTextMessage}</span>
             </div>
-            <h1 className={styles.HeadingText}>
-              Certification Course in
-              <br />
-              <span className={styles.courseHeading}> {coursePageName}</span>
-            </h1>
+            {pageName === "Digital Marketing Course" ? (
+              <h1 className={`${styles.HeadingText} mb-2`}>
+                {coursePageName}
+                <br />
+              </h1>
+            ) : (
+              <h1 className={styles.HeadingText}>
+                Certification Course in
+                <br />
+                <span className={styles.courseHeading}> {coursePageName}</span>
+              </h1>
+            )}
             <p className={styles.contentText}>{contentText}</p>
 
             <div className={styles.uspSectionContainer}>

@@ -387,14 +387,14 @@ const MainCoursesDynimicData = {
   DigitalMarketing: {
     CourseCode: "DMN",
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/DM-banner.webp",
-      coursePageName: "Digital Marketing",
+      BannerImgDesktop: "/assets/images/allImages/Banner-DM-web.png",
+      coursePageName: "Digital Marketing Course With Gen AI",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "Digital Marketing is a comprehensive course to enhance your skills and stay ahead in the competitive online landscape. Gain practical knowledge in SEO, social media marketing, and paid advertising strategies. With hands-on experience and expert guidance,  master the latest trends and techniques in digital marketing. ",
+        "Gaining a competitive edge in digital marketing with expertise in generative AI. With us, you'll gain practical knowledge in AI, SEO, social media marketing, and paid advertising strategies. Our hands-on experience and expert guidance will help you master the latest trends and techniques in digital marketing. ",
       youtubeVideoLink:
-        "https://www.youtube.com/embed/mouJDO4peOk?autoplay=1&loop=1&playlist=mouJDO4peOk",
+        "https://www.youtube.com/embed/Y7wILgkvwd0?si=PWSsUbQ-7KjWxFkN",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
       vidoPlayIcon: "/assets/images/allImages/Polygon.svg",
       UspSectionData: {
@@ -416,53 +416,53 @@ const MainCoursesDynimicData = {
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Digital Marketing Course Result",
-      Heding: "What Our Learners Have Achieved",
+      courcename: "",
+      Heding: "Digital Marketing Course With Gen AI Outcomes",
       Card: [
         {
-          cardIcon: "/assets/images/allImages/money-tick.svg",
+          cardIcon: "/assets/images/allImages/Group.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Globally Recognised Certificate",
         },
         {
-          cardIcon: "/assets/images/allImages/brifecase-tick.svg",
+          cardIcon: "/assets/images/allImages/promotion.svg",
           text1: "1000+",
-          text2: "Latest Trends Knowledge",
+          text2: "Enhanced Career Prospects",
         },
         {
-          cardIcon: "/assets/images/allImages/medal.svg",
+          cardIcon: "/assets/images/allImages/cms.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore The World Of Digital Marketing With Us",
-      bigHeading: "Everything You Need To Know",
+      smallHeading: "",
+      bigHeading: "Explore the World of Digital Marketing With Gen AI With Us",
 
       contents: {
         CourseOverviewData: {
           sideHeading: "Course Overview",
-          contentHeading: "Course Overview",
-          contentImg: "/assets/images/allImages/DM-explore.webp",
+          contentHeading: "Digital Marketing Course With Gen AI Overview",
+          contentImg: "/assets/images/allImages/DM-explore-new.png",
           contentText:
-            "Digital Marketing is a comprehensive course that delivers the latest strategies and techniques in online marketing. Acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Stay competitive in the ever-evolving digital marketing landscape by joining our course today.",
+            "Dive into the future of digital marketing with our cutting-edge course on Digital Marketing with Gen AI. This course is designed to equip you with the knowledge and skills to leverage generative AI technologies for innovative and effective marketing strategies. You'll learn how to harness AI to create compelling content, optimise campaigns, and drive unprecedented engagement and conversions. Whether you're a seasoned marketer or a newcomer to the field, this course will transform your approach to digital marketing.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
               text: "Live Classes",
             },
             {
-              icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              icon: "/assets/images/allImages/hands-on-learning.svg",
+              text: "Hands-On Learning",
             },
             {
-              icon: "/assets/images/allImages/Counselling.svg",
-              text: "Industry Expert Faculty",
+              icon: "/assets/images/allImages/expert-instructor.svg",
+              text: "Expert Instructors",
             },
             {
-              icon: "/assets/images/allImages/Experts.svg",
-              text: "Career Counselling",
+              icon: "/assets/images/allImages/cms.svg",
+              text: "Cutting-Edge Tools",
             },
           ],
         },
@@ -597,51 +597,219 @@ const MainCoursesDynimicData = {
 
         CourseCurriculumData: {
           sideHeading: "Course Curriculum",
-          contentHeading: "Course Curriculum",
+          contentHeading: "Digital Marketing Course With Gen AI Curriculum",
           durationIcon: "/assets/images/allImages/clock-green.svg",
           tickIcon: "/assets/images/allImages/Check.svg",
           dropDown: "/assets/images/allImages/arrow_drop_down.svg",
           curriculumContainer: [
             {
-              weekHeading: "Digital Marketing Fundamentals",
-              weekPoints: {
-                "General Modules": [
-                  "Introduction to Marketing & Behavioural Digital Marketing",
-                  "Search Engine Optimisation",
-                  "Content Creation & Marketing/UX Digital Approach",
-                  "Social Media Marketing/Influencer Marketing",
-                ],
-                "Complimentary Modules": [
-                  "Pogo Sticking",
-                  "Whatsapp Marketing",
-                  "Meme & Topical Marketing",
-                  "Marketing Psychology",
-                ],
-              },
+              weekHeading:
+                "Introduction to Marketing, Digital Marketing with GenAI and Consumer Psychology",
+              weekPoints: [
+                "Introduction to Consumer Behavior",
+                "Consumer Psychology Models (AIDA,RACE,STPD,STDC)",
+                "Product Lifecycle (PLC) and Marketing Strategies",
+                "Developing Effective Marketing Strategies",
+                "Digital Marketing Overview",
+                "Trends in Digital Marketing",
+                "Digital Marketing in an African Context",
+                "Introduction to GenAI Digital Marketing - Overview and Significance",
+                "Using AI for Behaviour Analysis",
+                "AI-Driven Marketing Strategies with Case Study - Netflix",
+              ],
             },
             {
-              weekHeading: "Advance Digital Marketing Strategies",
-              weekPoints: {
-                "": [
-                  "Programmatic Advertising & Paid Media Marketing, Importance of Analytics",
-                  "Importance Of IMC (Media Planning & Media Buying & OTT Marketing)",
-                  "Online After Sales (Reputation) Management",
-                  "E-Commerce Marketing & Email Marketing & Chatbots",
-                  "Affiliate Marketing & Mobile Marketing & Podcast",
-                ],
-                "Complimentary Modules": [
-                  "Funnel Marketing",
-                  "Marktech & Adtech",
-                  "Koo App & Inshort App",
-                  "Metaverse",
-                ],
-              },
+              weekHeading: "Digital Marketing, Terminology and Analytics",
+              weekPoints: [
+                "Intro to Terminologies, reporting",
+                "Terminologies - Budget, Medium, Campaign, A/B Testing, PPC, Bounce Rate, Retargeting, CRM",
+                "Metrics -   CPL, CAC, ROAS, Conversion Rate, Impressions, CTR",
+                "Reporting Key metrics",
+                "Introduction to Data Visualisation tools for reporting ( PowerBI, Tableau )",
+              ],
+            },
+            {
+              weekHeading: "SEO Basics and Advanced With AI",
+              weekPoints: [
+                "Introduction to Website Development & Analytics",
+                "Understanding Search Engines",
+                "Search Engine Optimisation (SEO) vs Search Engine Marketing (SEM)",
+                "Search Engine Ads and Analytics",
+                "Backlinks and Their Importance",
+                "Multiple SEO Tools (Google Search Console, Ahrefs, SEMrush, Moz)",
+                "Various SEO Techniques",
+                "Keywords and Their Importance",
+                "AI Powered SEO",
+                "AI Tools for SEO Optimisation. Case study: Jasper AI",
+              ],
+            },
+            {
+              weekHeading: "Comprehensive Guide to Content Marketing",
+              weekPoints: [
+                "Introduction to Content Marketing",
+                "Types of Content (Blog Posts, Social Media Posts, Videos, Infographics, Podcasts, E-books, Case Studies, Webinars, Email Newsletters)",
+                "Content Marketing Best Practices",
+                "Writing for Content Marketing(Copywriting, Blog Writing, Ad Copies)",
+                "Developing a Content Strategy",
+                "Content Calendar and Pillars",
+                "SEO and Technical Aspects(FAQ Schema,PESO Model: Paid, Earned, Shared, Owned Media)",
+                "Storytelling in Content Marketing",
+                "Content Creation Tools: Grammarly, Hemingway, Canva, Lumen5",
+                "Using AI for Content Creation - Text, Image. Case study: Midjourney, OpenArt ( DALL- E )",
+                "Prompt Engineering for ChatGPT",
+                "Content Management Tools: WordPress, Trello, Hootsuite",
+                "Hands-on session",
+              ],
+            },
+            {
+              weekHeading: "Paid Media Marketing",
+              weekPoints: [
+                "Introduction to key tools: Programmatic Ads, Keywords, Google Ads, GSC, GA",
+                "Programmatic Ads and Keywords",
+                "Setting Up Digital Marketing Tools",
+                "AI-Driven Programmatic Advertising: Using AI to enhance programmatic ad campaigns",
+              ],
+            },
+            {
+              weekHeading:
+                "Social Media Marketing (SMM) & Influencer Marketing",
+              weekPoints: [
+                "Introduction to Social Media Marketing (SMM)",
+                "Social Selling",
+                "Marketing Qualified Leads (MQLs) and Sales Qualified Leads (SQLs)",
+                "Social Media Funnels",
+                "Social Media Strategy",
+                "Influencer Marketing",
+                "Types of Influencers(Micro-Influencers, Macro-Influencers, Mega-Influencers, and Nano-Influencers)",
+                "Tools and Techniques Related to Influencer Marketing (BuzzSumo, AspireIQ, Traackr, etc.)",
+                "Virtual AI Influencer with Case Study",
+                "Video Generation using AI - Synthesia",
+                "Creating music with Suno.ai",
+              ],
+            },
+            {
+              weekHeading: "Digital Marketing with Meta-Facebook",
+              weekPoints: [
+                "Intro to Meta and Facebook Ecosystem",
+                "Facebook Advertising",
+                "A/B Testing",
+                "Community Building and Engagement",
+                "Budgeting, Audience Targeting",
+                "Analysing and interpreting Key Metrics",
+                "Case study on campaign, Management",
+                "Facebook Advertising Policy and Compliance",
+                "Hands-on exercise",
+              ],
+            },
+            {
+              weekHeading: "Instagram and  TikTok Marketing",
+              weekPoints: [
+                "Introduction to Instagram Marketing",
+                "Content Creation and Strategy",
+                "Building and Engaging a Community",
+                "Budgeting, Audience Targeting",
+                "Analyzing and interpreting Key Metrics",
+                "Hands-on exercise",
+              ],
+            },
+            {
+              weekHeading: "Whatsapp Marketing",
+              weekPoints: [
+                "Introduction to Whatsapp Marketing",
+                "Content Creation and Strategy",
+                "Budgeting, Audience Targeting",
+                "Analysing and interpreting Key Metrics",
+                "Building and Engaging a Community",
+                "WhatsApp Marketing and CRMs",
+              ],
+            },
+            {
+              weekHeading: "Google Marketing",
+              weekPoints: [
+                "Introduction to Google and YouTube Ecosystem",
+                "Google Ads and SEO",
+                "Google Analytics",
+                "Budgeting, Audience Targeting",
+                "Analytics and Performance Management",
+                "Hands-on exercise",
+              ],
+            },
+            {
+              weekHeading: "Linkedin Marketing",
+              weekPoints: [
+                "Introduction to Linkedin Ecosystem",
+                "Setting up a Linkedin Ad",
+                "Budgeting, Audience Targeting",
+                "Analytics and Performance Management",
+                "Hands-on exercise",
+              ],
+            },
+            {
+              weekHeading: "E-Commerce Marketing",
+              weekPoints: [
+                "Choose Platform: Shopify, WooCommerce, Magento",
+                "Customize Website: Themes, Design",
+                "Integrate Payments: PayPal, Stripe",
+                "Metrics: Conversion Rate, AOV, CAC, CLV",
+                "Email Marketing: Mailchimp, Klaviyo",
+                "Brand Management: Consistent messaging, Social media engagement",
+                "Chatbot Integration: Dialogflow, ManyChat",
+                "Chatbot Components: Greeting, FAQs, Product Search",
+                "Tools: Dialogflow, ChatGPT, Google Analytics, Mailchimp, Hootsuite",
+                "Case study of Amazon",
+              ],
+            },
+            {
+              weekHeading:
+                "Importance of IMC (Media Planning, Buying & OTT Marketing)",
+              weekPoints: [
+                "Importance of Media Buying and Planning",
+                "Creating a Media Brief",
+                "Delivery of Ads on TV and the Internet",
+                "Client Presentations",
+                "Native Advertising",
+                "OTT Ads and Advantages",
+                "Importance of Ad Stitching",
+                "Delivery of OTT Ads",
+                "Various OTT and IMC Tools",
+              ],
+            },
+            {
+              weekHeading: "Online Reputation Management",
+              weekPoints: [
+                "Introduction to Online Reputation Management (ORM)",
+                "Understanding Brand Management and its Relationship with ORM",
+                "Google Business profile and management",
+                "Identifying and Addressing Online Brand Issues",
+                "Greenwashing: Risks and Strategies",
+                "Tools and Technologies for Effective ORM",
+                "Integrating ORM into Marketing Strategy",
+                "Leveraging Generative AI for ORM",
+                "Developing an ORM Implementation Plan",
+              ],
+            },
+            {
+              weekHeading: "Affiliate Marketing, Mobile Marketing & Podcasts",
+              weekPoints: [
+                "Introduction to Affiliate Marketing",
+                "Affiliate Programmes: Amazon vs. Konga",
+                "Affiliate Platforms: ClickBank, ShareASale, CJ",
+                "Importance of Mobile Strategy",
+                "App Store Optimisation (ASO)",
+                "Mobile Ads and Analytics",
+                "Tools for Mobile Marketing",
+                "Importance of Podcasts in Digital Strategy",
+                "Podcast Creation Process",
+                "Monetizing Podcasts",
+                "AI Tools for Podcasting - Descript, ReVoice, PodCastle, etc",
+              ],
             },
           ],
         },
         PricingAcrossCountriesData: {
           sideHeading: "Pricing Across The Countries",
-          ContentHeding: "Pricing Across The Countries",
+          ContentHeding:
+            "Digital Marketing With Gen AI Pricing Across The Countries",
           PriceIcon: "/assets/images/allImages/dollar-circle.svg",
           durationIcon: "/assets/images/allImages/timer.svg",
           EnrollmentIcon: "/assets/images/allImages/monitor-recorder.svg",
@@ -649,44 +817,66 @@ const MainCoursesDynimicData = {
           contraryPricingCard: [
             {
               contaryFlag: "/assets/images/allImages/south-africa.svg",
-              contaryName: "SouthAfrica",
-              price: "R 24,488",
-              duration: "20 Weeks",
+              contaryName: "South Africa",
+              price: "R 15,999",
+              duration: "23 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/India.svg",
 
               contaryName: "India",
-              price: "₹ 122,498 + GST",
-              duration: "20 weeks",
+              price: "₹ 70,000 + GST",
+              duration: "23 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
-              price: "$ 1,238",
-              duration: "20 weeks",
+              price: "$ 850",
+              duration: "23 Weeks",
             },
+            // {
+            //   contaryFlag: "/assets/images/allImages/usa.svg",
+            //   contaryName: "Nigeria",
+            //   price: "850,000",
+            //   duration: "23 Weeks",
+            // },
+            // {
+            //   contaryFlag: "/assets/images/allImages/usa.svg",
+            //   contaryName: "Kenya",
+            //   price: "KSh 74,999",
+            //   duration: "23 Weeks",
+            // },
+            // {
+            //   contaryFlag: "/assets/images/allImages/usa.svg",
+            //   contaryName: "Tanzania",
+            //   price: "TSh 1,300,000",
+            //   duration: "23 Weeks",
+            // },
+            // {
+            //   contaryFlag: "/assets/images/allImages/usa.svg",
+            //   contaryName: "Uganda",
+            //   price: "UGX 20,00,000",
+            //   duration: "23 Weeks",
+            // },
           ],
         },
       },
     },
     CertificationDRData: {
       title: "Get Certified With Us",
-      heading: "Digital Marketing Certification",
+      heading: "Digital Marketing With Gen AI Certification",
       paragraph:
-        "Enhance online marketing skills and boost your career prospects with the Digital Marketing Certificate Course. Learn advanced strategies in SEO, content marketing, social media, and more from industry experts. Enrol now, accelerate your professional growth and stand out in the competitive digital marketing field with our comprehensive certification course. Sign up now to stay ahead in the evolving digital landscape.",
+        "Digital Regenesys aims to equip participants with skills in leveraging generative AI to transform digital marketing strategies. This Digital Marketing with Generative AI certification course helps learners acquire hands-on insights and skills to confidently navigate the intricate world of digital marketing, foster innovation, optimise campaigns, and master the art of engaging with target audiences effectively.",
       tickImage: "/assets/images/allImages/Check.svg",
       buttonText: "Enrol Now",
       achievementsHeading: "Key Takeaways",
       achievementsText: [
-        "Effective Email Marketing",
-        "Data Analysis and Analytics ",
-        "Search Engine Optimisation (SEO)",
-        "Social Media Management",
-        "Content Marketing Excellence",
-        " Expertise in Various Digital Channels",
+        "Practical Application of AI Tools",
+        "Ongoing Improvement Techniques",
+        "Innovative Content Creation",
+        "Certification and Career Advancement",
       ],
-      image: "/assets/images/allImages/DM_certificates.webp",
+      image: "/assets/images/allImages/DM-certificate-new.svg",
       imageText:
         "Note: All certificate images are for illustrative purposes only and may be subject to change at the discretion of Digital Regenesys.",
     },
@@ -721,26 +911,28 @@ const MainCoursesDynimicData = {
       ],
     },
     faqSections: {
-      HeadingDesktop: "Frequently Asked Questions",
-      HeadingMobile: "FAQ",
+      HeadingDesktop:
+        "Digital Marketing With Gen AI Frequently Asked Questions",
+      HeadingMobile: "Digital Marketing With Gen AI Frequently Asked Questions",
       sections: [
         {
-          heading: "Digital Marketing Courses",
+          heading: "Digital Marketing With Gen AI",
           faqs: [
             {
-              question: "What is Digital Marketing?",
+              question: "Who is this course suitable for?",
               answer:
-                "Digital marketing refers to the use of online channels, platforms, and technologies to promote products or services, engage with audiences, and drive business growth. It encompasses various tactics such as social media marketing, search engine optimisation (SEO), content marketing, email marketing, and more. ",
+                "This course is ideal for digital marketing professionals, marketing managers, entrepreneurs, and anyone interested in leveraging AI for marketing. Both beginners and experienced marketers can benefit from the curriculum. ",
             },
             {
-              question: "What is the goal of Digital Marketing?",
+              question: "What topics are covered in the course?",
               answer:
-                "Digital marketing aims to increase brand visibility, drive website traffic, and generate leads or sales. By leveraging digital tools and analytics, businesses can better understand consumer behaviour and optimise their marketing efforts for improved results.",
+                "The course covers AI-driven marketing methodologies, user research, market trend analysis, business model frameworks, financial strategies, marketing roadmaps, campaign planning, Agile methodologies, and data analytics.",
             },
             {
-              question: "What is a Digital Marketing Course?",
+              question:
+                "What kind of support will I receive during the course?",
               answer:
-                "Digital Marketing is a comprehensive course that teaches the latest strategies and techniques in online marketing. It also guides you on how to acquire practical SEO, SEM, social media marketing, and content creation skills. Our industry experts will guide you through hands-on projects and real-world simulations to enhance your digital marketing proficiency. Join our course today to stay competitive in the ever-evolving digital marketing landscape.",
+                "You will receive dedicated tutor support, participate in live sessions with leading academics and industry experts, and have access to a community of peers for continuous learning and support.",
             },
           ],
         },
@@ -748,22 +940,23 @@ const MainCoursesDynimicData = {
           heading: "Eligibility and Enrolment",
           faqs: [
             {
-              question: "Who can pursue a Digital Marketing Course?",
+              question:
+                "Who is eligible to enrol in the Digital Marketing with Gen AI course?",
               answer:
-                "Digital marketing is one of the fastest-growing industries in the world. A digital marketing course is suitable for those passionate about digital trends and who want to learn strategies for expanding their online presence. By enroling in Digital Regenesys's Digital marketing course, participants can acquire in-demand skills to propel their careers forward in today's digital landscape.",
+                "The course is open to marketing professionals, business owners, students, and anyone interested in leveraging AI in digital marketing.",
             },
             {
               question:
-                "How do I enrol and register for the Digital Regenesys Digital Marketing Course?",
+                "Do I need any prior experience in digital marketing or AI to enrol?",
               answer:
-                "To enrol in the Digital Regenesys online course, follow these steps:\n\n1. Visit the official website @ <a href='https://www.digitalregenesys.com/'>https://www.digitalregenesys.com/</a> \n2. Navigate to the course page.\n3. Select the required course.\n4. Click the 'Enrol Now' button.\n5. Complete the registration form with all the required details.\n6. Submit the form and proceed to make the payment for the course.\n7. Upon successful payment, you will receive a confirmation email with instructions on accessing the course \n    materials and beginning your online learning journey",
+                "No prior experience is necessary, although a basic understanding of digital marketing concepts can be helpful.",
             },
 
             {
               question:
-                "Are there any age restrictions to pursue a Digital Marketing Course?",
+                "How do I enrol in the Digital Marketing with Gen AI course?",
               answer:
-                "There are typically no age restrictions to pursue a Digital Marketing Course. The Digital Marketing course is designed to accommodate learners of all ages, from high school students to working professionals looking to enhance their skills for their careers.",
+                "Enrollment can be completed online through our website by filling out the registration form and making the payment.",
             },
           ],
         },
@@ -771,20 +964,22 @@ const MainCoursesDynimicData = {
           heading: "Tools Covered",
           faqs: [
             {
-              question: "What is SEO in digital marketing?",
+              question:
+                "Will I learn how to use AI in content creation and marketing campaigns?",
               answer:
-                "SEO - Search Engine Optimization is a digital marketing tool widely used to optimise website content, blogs, or web pages. This digital marketing tool helps to improve the page's visibility and ranking in search engine results pages (SERPs).",
-            },
-            {
-              question: "Which tool is most widely used in Digital Marketing?",
-              answer:
-                "Google Ads is one of the most widely used and powerful digital marketing tools.",
+                "Yes, the course includes modules on using AI for content creation, campaign optimisation, customer segmentation, and personalisation.",
             },
             {
               question:
-                "What tools are covered in Digital Regenesys’s Digital Marketing course?",
+                "Is hands-on training provided for using these digital marketing tools?",
               answer:
-                "Tools used in the Digital Regenesys Digital Marketing course are: Adobe Creative Cloud, Buffer, Builtwith, Canva, Google Ads, Google Analytics, HypeAuditor, Impact, Klear, VidIQ, SocialBlade, WordPress, WPforms, Yoast, and YouTube.",
+                "Yes, the course includes practical assignments and projects that require the use of the covered tools.",
+            },
+            {
+              question:
+                "Are these tools applicable to various types of digital marketing strategies?",
+              answer:
+                "Yes, the tools and techniques taught are versatile and can be applied to a wide range of digital marketing strategies and campaigns.",
             },
           ],
         },
@@ -792,22 +987,26 @@ const MainCoursesDynimicData = {
           heading: "Duration and Accessibility",
           faqs: [
             {
-              question:
-                "How long does it take to complete a Digital Marketing Course?",
+              question: "How long is the Digital Marketing with Gen AI course?",
               answer:
-                "The total duration of the Digital Regenesys Digital Marketing Course is 20 weeks.",
+                "The course duration is 23 weeks, with a mix of live sessions and self-paced modules.",
+            },
+            {
+              question: "Is the course available online?",
+              answer:
+                "Yes, the course is fully online, allowing participants to access it from anywhere in the world.",
             },
             {
               question:
-                "Can I take a self-paced Digital Marketing course, or do they have fixed schedules?",
+                "Will I have access to course materials after the course is over?",
               answer:
-                "Some Digital Marketing courses are self-paced, allowing learners to progress through the material quickly. Others follow a fixed schedule with set start and end dates.",
+                "Yes, participants will have access to the course materials and recorded sessions for 1 year after the course completion.",
             },
             {
               question:
-                "What qualifications do I need to study a Digital Marketing Course?",
+                "Are there live sessions included in the course curriculum?",
               answer:
-                "There are no such eligibility criteria or Master's degree required to pursue this course. Individuals with graduation degrees across any stream and a basic understanding of business and marketing are preferred to pursue this course.",
+                "Yes, the course includes live sessions with instructors, which are interactive and allow for real-time Q&A.",
             },
           ],
         },
@@ -816,21 +1015,19 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "Is the Digital Marketing online certification course valuable for beginners?",
+                "What is the Digital Marketing with Generative AI certification course?",
               answer:
-                "Yes, an online certification course in digital marketing can be valuable for beginners as it provides a tangible credential, indicating that an individual has acquired certain knowledge and skills in digital marketing.",
+                "This course is designed to teach you how to integrate generative AI technologies into your digital marketing strategies. You'll learn to create innovative marketing campaigns, optimise performance, and drive engagement using AI tools.",
             },
             {
-              question:
-                "Does Digital Regenesys's online certification course in Digital Marketing include the latest industry trends and tools?",
+              question: "Will I receive a certificate upon completion?",
               answer:
-                "Yes. Digital Regenesys's Digital Marketing certification course is updated regularly to cover the latest industry trends and tools.",
+                "Yes, upon successfully completing the course, you will receive a recognised certificate that can enhance your professional credentials and career opportunities.",
             },
             {
-              question:
-                "How can Digital Regenesys's Digital Marketing certification course benefit entrepreneurs and small business owners?",
+              question: "How can this certification benefit my career?",
               answer:
-                "Digital Regenesys's Digital Marketing certification course empowers entrepreneurs and small business owners to enhance their online presence, understand customer behaviour, and implement effective digital marketing strategies to grow their businesses.",
+                "The certification can make you more competitive in the job market, open up new career opportunities, and potentially lead to higher earning potential. You'll gain cutting-edge skills that are highly valued in the industry.",
             },
           ],
         },

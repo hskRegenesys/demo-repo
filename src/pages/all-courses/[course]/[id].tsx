@@ -152,10 +152,12 @@ const Course = (props: any) => {
       <CourseBenefitsCard
         data={CourseBenefitsCardData}
         handleEnrollButtonClick={handleEnrollButtonClick}
+        pageName={pageName}
       />
       <ExploreTheCourses
         data={ExploreTheCoursesData}
         handleEnrollButtonClick={handleEnrollButtonClick}
+        pageName={pageName}
       />
       <CareersTransformed
         handleEnrollButtonVidio={(videoLink) =>
@@ -167,7 +169,7 @@ const Course = (props: any) => {
         data={CertificationDRData}
       />
       <BlogSection data={BlogSectionData} />
-      <Faq data={faqSections} />
+      <Faq data={faqSections} pageName={pageName} />
       {ReadMoreData && <ReadMoreDropDown data={ReadMoreData} />}
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>

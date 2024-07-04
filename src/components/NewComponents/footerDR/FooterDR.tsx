@@ -57,7 +57,7 @@ const FooterContent2: React.FC = () => (
             Cybersecurity
           </a>
         </li>
-        {/* <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
+        {/* <a href="https://www.digitalregenesys.com/all-courses/digital-marketing-course">
           <li>Digital Marketing</li>
         </a> */}
         <li>
@@ -76,7 +76,7 @@ const FooterContent2: React.FC = () => (
           </a>
         </li>
         <li>
-          <a href="https://www.digitalregenesys.com/all-courses/digital-marketing">
+          <a href="https://www.digitalregenesys.com/all-courses/digital-marketing-course">
             Digital Marketing
           </a>
         </li>

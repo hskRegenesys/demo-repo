@@ -63,7 +63,11 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
       code === digitalMarkrtingCode ||
       code === artificialIntelligenceCode
     ) {
-      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
+      router.push(
+        name === "Digital Marketing with GenAI"
+          ? "/all-courses/digital-marketing-course"
+          : `/${programBaseUrl}/${urlInfo(name)}`
+      );
     } else {
       const courseDetails = _.find(
         allCourseList,

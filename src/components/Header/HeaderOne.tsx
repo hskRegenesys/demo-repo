@@ -110,6 +110,7 @@ const HeaderOne = ({
       // "DTC",
       // "DT",
       // "AI",
+      "DMN",
       "PDM",
       // "OSCM",
       "MD",
@@ -122,7 +123,7 @@ const HeaderOne = ({
       "CSC",
       "PM",
       "DM",
-      "DMN",
+
       "DTC",
       "DT",
       "AI",
@@ -227,7 +228,6 @@ const HeaderOne = ({
       }
       return item;
     });
-
     variant === "blog" ? setNav(data2) : setNav(data);
   };
   useEffect(() => {

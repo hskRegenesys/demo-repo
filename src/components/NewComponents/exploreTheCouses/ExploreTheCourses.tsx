@@ -76,11 +76,13 @@ interface Props {
     };
   };
   handleEnrollButtonClick: (title?: string) => void;
+  pageName?: string;
 }
 
 const ExploreTheCourses: React.FC<Props> = ({
   data,
   handleEnrollButtonClick,
+  pageName,
 }) => {
   const [scrolled, setScrolled] = useState(false);
   const [currentSection, setCurrentSection] = useState("");
@@ -177,9 +179,9 @@ const ExploreTheCourses: React.FC<Props> = ({
     <div
       className={`${styles.appContainer} ${scrolled ? styles.scrolled : ""}`}
     >
-      <div className={styles.headerSection}>
+      <div className={`${styles.headerSection}`}>
         <h2 className="main-heading">{smallHeading}</h2>
-        <p className="main-sub-heading">{bigHeading}</p>
+        <p className="main-sub-heading mb-0">{bigHeading}</p>
       </div>
       <div className={styles.mainContent}>
         <div className={styles.sidePanel}>
