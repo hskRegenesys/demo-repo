@@ -629,6 +629,13 @@
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
+.weekHeader .textIcon img {
+  transform: none;
+  filter: grayscale(100%);
+}
+.active .weekHeader .textIcon img {
+  filter: grayscale(0);
+}
 
 .active .weekHeader img {
   transform: rotate(0deg);

@@ -54,6 +54,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
   } = data;
 
   const [count, setCount] = useState("0");
+  const [isMobileView, setIsMobileView] = useState(false);
 
   useEffect(() => {
     let start = 0;
@@ -73,6 +74,15 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
     return () => clearInterval(timer);
   }, [uspEnrollmentCard.uspEnrollmentCount]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 920);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className={styles.bannerSection}>
@@ -173,10 +183,22 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
             {data.BannerImgDesktop && (
               <Image
                 className={styles.imageBanner}
-                src={data.BannerImgDesktop}
+                src={
+                  isMobileView && pageName === "Digital Marketing Course"
+                    ? "/assets/images/allImages/Banner-DM-mobile.png"
+                    : data.BannerImgDesktop
+                }
                 alt={"Banner for Course"}
-                width={550}
-                height={660}
+                width={
+                  isMobileView && pageName === "Digital Marketing Course"
+                    ? 550
+                    : 550
+                }
+                height={
+                  isMobileView && pageName === "Digital Marketing Course"
+                    ? 430
+                    : 660
+                }
               />
             )}
             {vidoPlayIcon && (
