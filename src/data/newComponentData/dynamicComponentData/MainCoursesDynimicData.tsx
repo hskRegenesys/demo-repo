@@ -388,6 +388,7 @@ const MainCoursesDynimicData = {
     CourseCode: "DMN",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/Banner-DM-web.png",
+      BannerImgMobile: "/assets/images/allImages/Banner-DM-mobile.png",
       coursePageName: "Digital Marketing Course With Gen AI",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -863,7 +864,7 @@ const MainCoursesDynimicData = {
       },
     },
     CertificationDRData: {
-      title: "Get Certified With Us",
+      title: "Certification",
       heading: "Digital Marketing With Gen AI Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with skills in leveraging generative AI to transform digital marketing strategies. This Digital Marketing with Generative AI certification course helps learners acquire hands-on insights and skills to confidently navigate the intricate world of digital marketing, foster innovation, optimise campaigns, and master the art of engaging with target audiences effectively.",
