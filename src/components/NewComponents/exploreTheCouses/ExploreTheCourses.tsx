@@ -170,7 +170,13 @@ const ExploreTheCourses: React.FC<Props> = ({
     { text: CourseOverviewData?.sideHeading, contentId: "Content-0" },
     { text: CourseCurriculumData?.sideHeading, contentId: "Content-1" },
     { text: DefenceToolboxData?.sideHeading, contentId: "Content-2" },
-    { text: WorldClassFacultyData?.sideHeading, contentId: "Content-3" },
+    {
+      text:
+        pageName === "Digital Marketing Course"
+          ? ""
+          : WorldClassFacultyData?.sideHeading,
+      contentId: pageName === "Digital Marketing Course" ? "" : "Content-3",
+    },
     { text: ToolsCoveredData?.sideHeading, contentId: "Content-4" },
     { text: PricingAcrossCountriesData?.sideHeading, contentId: "Content-5" },
   ];
@@ -223,7 +229,7 @@ const ExploreTheCourses: React.FC<Props> = ({
               <DefenceToolbox {...DefenceToolboxData} />
             </div>
           )}
-          {WorldClassFacultyData && (
+          {WorldClassFacultyData && pageName !== "Digital Marketing Course" && (
             <div
               className={styles.contentspace}
               ref={(el) => (contentRefs.current[3] = el)}
@@ -238,7 +244,7 @@ const ExploreTheCourses: React.FC<Props> = ({
               ref={(el) => (contentRefs.current[4] = el)}
               id="Content-4"
             >
-              <ToolsCovered {...ToolsCoveredData} />
+              <ToolsCovered {...ToolsCoveredData} pageName={pageName} />
             </div>
           )}
           {PricingAcrossCountriesData && (

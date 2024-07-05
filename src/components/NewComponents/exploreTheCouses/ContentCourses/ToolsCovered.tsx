@@ -9,11 +9,13 @@ import Image from "next/image";
 interface ToolsCoveredProps {
   contentHeading: string;
   cardTools: { img: string; alt: string }[];
+  pageName?: string;
 }
 
 const ToolsCovered: React.FC<ToolsCoveredProps> = ({
   contentHeading,
   cardTools,
+  pageName,
 }) => {
   const addBottomValue = cardTools.length <= 4 ? "0px" : "60px";
   const imageUrl = `${process.env.awsImage_url}`;
@@ -45,7 +47,12 @@ const ToolsCovered: React.FC<ToolsCoveredProps> = ({
         >
           {cardTools.map((tool, index) => (
             <SwiperSlide key={index}>
-              <li key={index} className={styles.horizontalCard}>
+              <li
+                key={index}
+                className={`${styles.horizontalCard} ${
+                  pageName === "Digital Marketing Course" && styles.newToolCard
+                }`}
+              >
                 <Image
                   //src={`${imageUrl}Images/Tools/${tool.img}`}
                   src={tool.img}

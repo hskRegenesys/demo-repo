@@ -147,6 +147,14 @@
   min-width: 860px;
 }
 
+.newToolCard {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0px 11px !important;
+  max-width: 190px;
+}
+
 @media only screen and (max-width: 1225px) {
   .sidePanel {
     display: none;
@@ -311,7 +319,11 @@
 
   .content2 li {
     margin-bottom: 16px;
-    max-width: 154px;
+    max-width: 170px;
+  }
+  .newToolCard {
+    max-width: 190px !important;
+    margin-bottom: 10px !important;
   }
 }
 /* content3 */
