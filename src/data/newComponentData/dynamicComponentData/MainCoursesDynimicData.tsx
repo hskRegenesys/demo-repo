@@ -472,63 +472,123 @@ const MainCoursesDynimicData = {
           contentHeading: "Tools Covered In This Course",
           cardTools: [
             {
-              img: "/assets/images/allImages/digital_marketing_tools1.webp",
+              img: "/assets/images/toolsCoveredImages/dm-suno.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools2.webp",
+              img: "/assets/images/toolsCoveredImages/dm-traackr.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools3.webp",
+              img: "/assets/images/toolsCoveredImages/dm-dalle.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools4.webp",
+              img: "/assets/images/toolsCoveredImages/dm-amazon.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools5.webp",
+              img: "/assets/images/toolsCoveredImages/dm-ai.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools6.webp",
+              img: "/assets/images/toolsCoveredImages/dm-aspire.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools7.webp",
+              img: "/assets/images/toolsCoveredImages/dm-buzzsuno.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools8.webp",
+              img: "/assets/images/toolsCoveredImages/dm-canva.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools9.webp",
+              img: "/assets/images/toolsCoveredImages/dm-jasper.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools10.webp",
+              img: "/assets/images/toolsCoveredImages/dm-chatgpt.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools11.webp",
+              img: "/assets/images/toolsCoveredImages/dm-descript.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools12.webp",
+              img: "/assets/images/toolsCoveredImages/dm-dailogflow.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools13.webp",
+              img: "/assets/images/toolsCoveredImages/dm-google.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools14.webp",
+              img: "/assets/images/toolsCoveredImages/dm-grammarly.png",
               alt: "",
             },
             {
-              img: "/assets/images/allImages/digital_marketing_tools15.webp",
+              img: "/assets/images/toolsCoveredImages/dm-hootsuite.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-a-icon.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-gtm.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-lumen.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-mailchimp.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-boat.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-moz.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-netflix.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-heming.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-canva.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-powerbi.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-semrush.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-syntesia.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-tableau.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-trello.png",
+              alt: "",
+            },
+            {
+              img: "/assets/images/toolsCoveredImages/dm-wordpress.png",
               alt: "",
             },
             // { img: "DM/digital_marketing_tools16.png", alt: "" },

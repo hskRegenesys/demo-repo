@@ -127,6 +127,7 @@
   .cardsContainer {
     align-items: center;
     padding: 0px 16px;
+    margin-top: 20px;
   }
   .courseBenefitsCardContainer h2 {
     font-size: 14px;

@@ -79,14 +79,16 @@ const CourseBenefitsCard: React.FC<Props> = ({
         </Swiper>
       </div>
 
-      <button
-        className={styles.enrollNowButton}
-        onClick={() => {
-          handleEnrollButtonClick("Enrol Now!");
-        }}
-      >
-        Enrol Now
-      </button>
+      {pageName !== "Digital Marketing Course" && (
+        <button
+          className={styles.enrollNowButton}
+          onClick={() => {
+            handleEnrollButtonClick("Enrol Now!");
+          }}
+        >
+          Enrol Now
+        </button>
+      )}
     </div>
   );
 };

@@ -136,8 +136,16 @@ const Course = (props: any) => {
       <MobileMenu />
       <SearchPopup />
       <BreadcrumbsDR
-        title={pageName}
-        page={pageName}
+        title={
+          pageName === "Digital Marketing Course"
+            ? "Digital Marketing Course With Gen AI"
+            : pageName
+        }
+        page={
+          pageName === "Digital Marketing Course"
+            ? "Digital Marketing Course With Gen AI"
+            : pageName
+        }
         parent="All courses"
         parentHref="/all-courses"
       />
