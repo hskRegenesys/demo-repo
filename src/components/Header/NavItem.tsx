@@ -109,12 +109,6 @@ const NavItem = (props: any) => {
     );
   };
 
-  const sortedSubNavItems = [...subNavItems].sort((a, b) => {
-    if (a.name === "Digital Marketing with GenAI") return -1;
-    if (b.name === "Digital Marketing with GenAI") return 1;
-    return 0;
-  });
-
   return (
     <>
       {isMobileView === true ? (
