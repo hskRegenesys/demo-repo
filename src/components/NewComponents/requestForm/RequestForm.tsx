@@ -129,10 +129,12 @@ function RequestForm(props: any) {
     if (date) {
       data.date = date;
     }
-
     // Get the selected course's code
     const selectedCourse = courses.find(
-      (course: any) => course.name === data.Programme_Of_Interest
+      (course: any) =>
+        (course.name === "Digital Marketing with GenAI"
+          ? "Digital Marketing"
+          : course.name) === data.Programme_Of_Interest
     );
     const brochureName: any = brochureDetails[selectedCourse.code];
 
@@ -400,7 +402,11 @@ function RequestForm(props: any) {
                     {courses.map((val: any) => (
                       <option
                         key={val.id}
-                        value={val.name}
+                        value={
+                          val.name === "Digital Marketing with GenAI"
+                            ? "Digital Marketing"
+                            : val.name
+                        }
                         selected={val.code === props.CourseCode}
                       >
                         {val.name}
