@@ -219,12 +219,12 @@ const redirectURL = () => {
       destination: "https://lp.digitalregenesys.com/study-data-science-ky",
       permanent: true,
     },
-    {
-      source: "/landing/sa/data-science",
-      destination:
-        "https://lp.digitalregenesys.com/landing/sa/digital-marketing",
-      permanent: true,
-    },
+    // {
+    //   source: "/landing/sa/data-science",
+    //   destination:
+    //     "https://lp.digitalregenesys.com/landing/sa/digital-marketing",
+    //   permanent: true,
+    // },
     {
       source: "/landing/sa/digital-marketing",
       destination:
@@ -236,11 +236,7 @@ const redirectURL = () => {
       destination: "https://lp.digitalregenesys.com/study-digital-marketing-ng",
       permanent: true,
     },
-    {
-      source: "/study-cyber-security-sa",
-      destination: "https://lp.digitalregenesys.com/study-cyber-security-sa",
-      permanent: true,
-    },
+
     {
       source: "/study-cyber-security-ng",
       destination: "https://lp.digitalregenesys.com/study-cyber-security-ng",
@@ -260,8 +256,7 @@ const redirectURL = () => {
     },
     {
       source: "/study-project-management-ng",
-      destination:
-        "https://lp.digitalregenesys.com/study-project-management-ng",
+      destination: "/all-courses/project-management",
       permanent: true,
     },
     {
@@ -1176,6 +1171,222 @@ const redirectURL = () => {
     },
     {
       source: "/certificate-courses-online",
+      destination: "/",
+      permanent: true,
+    },
+    // redirection 09-07-2024
+
+    {
+      source: "/IT-courses-online",
+      destination:
+        "/blog/why-are-online-it-courses-essential-in-the-tech-industry",
+      permanent: true,
+    },
+    {
+      source: "/best-online-courses",
+      destination:
+        "/blog/where-do-you-find-the-best-online-courses-with-certificates",
+      permanent: true,
+    },
+
+    {
+      source: "/best-data-science-courses",
+      destination:
+        "/blog/what-are-the-key-considerations-for-choosing-the-best-online-data-science-courses",
+      permanent: true,
+    },
+    {
+      source: "/best-online-data-science-courses",
+      destination:
+        "/blog/what-are-the-key-considerations-for-choosing-the-best-online-data-science-courses",
+      permanent: true,
+    },
+    {
+      source: "/what-is-digital-marketing",
+      destination: "/blog/what-is-a-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-jobs",
+      destination:
+        "/blog/why-are-online-digital-marketing-courses-crucial-for-entry-level-job-seekers",
+      permanent: true,
+    },
+
+    {
+      source: "/digital-marketing-definition",
+      destination: "/blog/what-is-a-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-meaning",
+      destination: "/blog/what-is-a-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/what's-digital-marketing",
+      destination: "/blog/what-is-a-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/best-digital-marketing-courses",
+      destination: "/blog/the-best-digital-marketing-courses-for-beginners",
+      permanent: true,
+    },
+    {
+      source: "/definition-of-digital-marketing",
+      destination: "/blog/what-is-a-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketer",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/importance-of-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/what-is-a-digital-marketing",
+      destination: "/blog/what-is-a-digital-marketing-course",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-certificate",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/what's-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/future-of-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/best-digital-marketing-courses",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-tips",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+
+    {
+      source: "/learn-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-tools",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/best-data-science-courses",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/fundamentals-of-digital-marketing",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/IT-courses-online",
+      destination: "/all-courses",
+      permanent: true,
+    },
+    {
+      source: "/online-it-courses",
+      destination:
+        "/blog/why-are-online-it-courses-essential-in-the-tech-industry",
+      permanent: true,
+    },
+    {
+      source: "/digital-marketing-strategies",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/machine-learning-and-artificial-intelligence-courses",
+      destination: "/all-courses/artificial-intelligence",
+      permanent: true,
+    },
+    {
+      source: "/[id]",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/programs/cyber-security",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/request-a-call/",
+      destination: "/contact",
+      permanent: true,
+    },
+    {
+      source: "/request-a-call",
+      destination: "/contact",
+      permanent: true,
+    },
+    {
+      source: "/study-project-management-ng",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/json",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/landing/sa/data-science",
+      destination: "/all-courses/digital-marketing",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-project-management",
+      destination: "/all-courses/project-management",
+      permanent: true,
+    },
+    {
+      source: "/study-cyber-security-sa",
+      destination: "/all-courses/cyber-security",
+      permanent: true,
+    },
+    {
+      source: "/lp/management-development-sa",
+      destination: "/all-courses/management-advancement",
+      permanent: true,
+    },
+    {
+      source: "/lp/study-digital-regenesys-ng-AFM",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/lp/full-stack-web-and-software-development-sa",
+      destination: "/all-courses/full-stack-development",
+      permanent: true,
+    },
+    {
+      source: "/courses/introduction-to-professional-business-writing-skills",
       destination: "/",
       permanent: true,
     },
