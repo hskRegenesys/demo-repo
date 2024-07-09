@@ -128,7 +128,7 @@ const ExploreTheCourses: React.FC<Props> = ({
     let current = "Content-0";
 
     sections.forEach((section, index) => {
-      if (section && window.pageYOffset >= section.offsetTop + 1200) {
+      if (section && window.pageYOffset >= section.offsetTop + 1100) {
         current = `Content-${index}`;
       }
     });
@@ -171,11 +171,8 @@ const ExploreTheCourses: React.FC<Props> = ({
     { text: CourseCurriculumData?.sideHeading, contentId: "Content-1" },
     { text: DefenceToolboxData?.sideHeading, contentId: "Content-2" },
     {
-      text:
-        pageName === "Digital Marketing Course"
-          ? ""
-          : WorldClassFacultyData?.sideHeading,
-      contentId: pageName === "Digital Marketing Course" ? "" : "Content-3",
+      text: WorldClassFacultyData?.sideHeading,
+      contentId: "Content-3",
     },
     { text: ToolsCoveredData?.sideHeading, contentId: "Content-4" },
     { text: PricingAcrossCountriesData?.sideHeading, contentId: "Content-5" },
@@ -229,7 +226,7 @@ const ExploreTheCourses: React.FC<Props> = ({
               <DefenceToolbox {...DefenceToolboxData} />
             </div>
           )}
-          {WorldClassFacultyData && pageName !== "Digital Marketing Course" && (
+          {WorldClassFacultyData && (
             <div
               className={styles.contentspace}
               ref={(el) => (contentRefs.current[3] = el)}
