@@ -109,10 +109,30 @@ b {
 .link-title p strong {
   font-size: 18px;
 }
+.link-title table tbody tr td {
+  padding: 8px;
+  outline: 1px dashed #000;
+  outline-offset: -5px;
+  font-size: 14px;
+}
+.link-title table tbody tr td strong {
+  font-size: 14px;
+  line-height: 1px;
+}
+.link-title table {
+  border: 1px solid;
+  border-style: dashed;
+  padding: 8px;
+  margin-bottom: 10px;
+}
 
 .link-title ul li {
   font-size: 16px;
   list-style-type: disc;
+}
+.link-title ul {
+  padding-left: 44px !important;
+  margin-bottom: 10px;
 }
 
 /* 
@@ -404,7 +424,7 @@ p {
   }
 
   .blog-content-container {
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   .new-apply-now-btn {
@@ -1015,6 +1035,14 @@ img {
 
 .blog-menu .navigation > li:nth-child(4) {
   margin-left: 30px;
+}
+.BlogForm {
+  width: 100%;
+  max-width: 320px;
+  position: absolute;
+  right: 30px;
+  top: 120px;
+  z-index: 1;
 }
 
 .main-menu .navigation > li:last-child {
@@ -19682,12 +19710,12 @@ input.PhoneInputInput {
   color: #555963;
 }
 .blogs-apply-now .PhoneInputCountry {
-  margin-top: 8px !important;
+  margin-top: 0px !important;
   margin-left: 0px !important;
 }
 
 .blogs-apply-now input.PhoneInputInput {
-  padding-left: 40px !important;
+  padding-left: 0px !important;
 }
 
 .testimonials-carousel-two {
