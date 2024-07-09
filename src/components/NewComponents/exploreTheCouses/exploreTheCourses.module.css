@@ -168,6 +168,10 @@
     font-size: 20px;
     text-align: center;
   }
+  .contentPanel .contentspace:nth-child(3) h3 {
+    font-size: 22px;
+    padding: 0px 25px;
+  }
   .smallHeading {
     font-size: 14px;
     margin: 0;

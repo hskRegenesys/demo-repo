@@ -406,7 +406,7 @@ const MainCoursesDynimicData = {
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "34873+",
+          uspEnrollmentCount: "34000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -445,7 +445,7 @@ const MainCoursesDynimicData = {
         CourseOverviewData: {
           sideHeading: "Course Overview",
           contentHeading: "Digital Marketing Course With Gen AI Overview",
-          contentImg: "/assets/images/allImages/DM-explore-new.png",
+          contentImg: "/assets/images/allImages/dm-course-overview.png",
           contentText:
             "Dive into the future of digital marketing with our cutting-edge course on Digital Marketing with Gen AI. This course is designed to equip you with the knowledge and skills to leverage generative AI technologies for innovative and effective marketing strategies. You'll learn how to harness AI to create compelling content, optimise campaigns, and drive unprecedented engagement and conversions. Whether you're a seasoned marketer or a newcomer to the field, this course will transform your approach to digital marketing.",
           contentCard: [
@@ -600,22 +600,10 @@ const MainCoursesDynimicData = {
           tutors: "50+ Tutors",
           facultyCard: [
             {
-              facultyImg: "/assets/images/allImages/deepika_sharma.webp",
-              facultyName: "Dr. Deepika Sharma",
-              facultyEducation: "Ph.D. in Business Management",
-              yearsOfExperience: "9+",
-            },
-            {
-              facultyImg: "/assets/images/allImages/rajesh_sharma.webp",
-              facultyName: "Dr. Rajesh Sharma",
-              facultyEducation: "Ph.D. from SAQA",
-              yearsOfExperience: "22+",
-            },
-            {
-              facultyImg: "/assets/images/allImages/rumana_shaikh.webp",
-              facultyName: "Dr. Rumana Shaikh",
-              facultyEducation: "Ph.D. in Business Management",
-              yearsOfExperience: "12+",
+              facultyImg: "/assets/images/allImages/dr-cerneels-faculty.png",
+              facultyName: "Dr. Cerneels Coetzee",
+              facultyEducation: "PhD Business Management",
+              yearsOfExperience: "33+ ",
             },
           ],
         },
@@ -879,20 +867,20 @@ const MainCoursesDynimicData = {
             {
               contaryFlag: "/assets/images/allImages/south-africa.svg",
               contaryName: "South Africa",
-              price: "R 15,999",
+              price: "R14,199",
               duration: "23 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/India.svg",
 
               contaryName: "India",
-              price: "₹ 70,000 + GST",
+              price: "₹64,499 + GST",
               duration: "23 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
-              price: "$ 850",
+              price: "$749",
               duration: "23 Weeks",
             },
             // {
