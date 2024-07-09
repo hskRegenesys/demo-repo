@@ -867,20 +867,20 @@ const MainCoursesDynimicData = {
             {
               contaryFlag: "/assets/images/allImages/south-africa.svg",
               contaryName: "South Africa",
-              price: "R14,199",
+              price: "R20,999",
               duration: "23 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/India.svg",
 
               contaryName: "India",
-              price: "₹64,499 + GST",
+              price: "₹104,995 + GST",
               duration: "23 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
-              price: "$749",
+              price: "$1105",
               duration: "23 Weeks",
             },
             // {
