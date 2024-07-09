@@ -76,11 +76,23 @@ const Layout = (props: any) => {
       ? metaData?.metaInfo?.ogImg?.[pageTitle]
       : metaData?.metaInfo?.ogImg?.["home"];
 
+  const removeUtmParameters = (url: string): string => {
+    const urlObj = new URL(url);
+    urlObj.searchParams.forEach((_, key) => {
+      if (key.startsWith("utm_")) {
+        urlObj.searchParams.delete(key);
+      }
+    });
+    return urlObj.origin + urlObj.pathname;
+  };
+
   const canonicalBaseUrl = (() => {
     const isProduction = process.env.ENV_NAME === "PRODUCTION";
-    return isProduction
-      ? `https://www.digitalregenesys.com${slug ? `${slug}` : asPath}`
-      : `https://uat-new.digitalregenesys.com${slug ? `${slug}` : asPath}`;
+    const base = isProduction
+      ? "https://www.digitalregenesys.com"
+      : "https://uat-new.digitalregenesys.com";
+    const fullPath = base + (slug ? `${slug}` : asPath);
+    return removeUtmParameters(fullPath);
   })();
 
   useEffect(() => {
