@@ -13002,6 +13002,10 @@ featured-section .right-col .sec-title h2 {
   }
 }
 
+.blog-links-style {
+  color: #000 !important;
+}
+
 @media (max-width: 991px) {
   .newAnimation {
     padding: 1px 3px !important;
