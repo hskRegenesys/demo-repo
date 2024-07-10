@@ -1258,11 +1258,7 @@ const redirectURL = () => {
       destination: "/all-courses/digital-marketing",
       permanent: true,
     },
-    {
-      source: "/what's-digital-marketing",
-      destination: "/all-courses/digital-marketing",
-      permanent: true,
-    },
+
     {
       source: "/future-of-digital-marketing",
       destination: "/all-courses/digital-marketing",
