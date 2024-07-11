@@ -216,6 +216,7 @@ const FeedBackForm = () => {
                 {errors.Email && (
                   <small className="text-danger">Invalid email address</small>
                 )}
+
               </div>
             </div>
             <div className="col-6 mt-2 feedback-form-wrapper">

@@ -20,7 +20,7 @@ function CarouselComponent({ carouselProps = [] }: ICarouselProps) {
         ({ desktopImage, mobileImage, link, label, caption }, index) => (
           <Carousel.Item key={index}>
             <div
-              className="w-100 position-relative d-none d-md-block "
+              className="w-100 position-relative d-none d-md-block blogs-banner"
               style={{ minHeight: "500px" }}
             >
               <Link href={link} passHref>

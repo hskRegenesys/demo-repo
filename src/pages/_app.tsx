@@ -24,6 +24,8 @@ const MyApp = ({ Component, pageProps }: any) => {
 
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
 
+  //const vineCrmTawk = `https://api.vinecrms.com/api/`;
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       setCurrentUtmUrl(window.location.href);
@@ -55,6 +57,7 @@ const MyApp = ({ Component, pageProps }: any) => {
           s1.setAttribute('crossorigin','*');
           s0.parentNode.insertBefore(s1,s0);
           })();
+              `,
               `,
         }}
       /> */}
