@@ -121,7 +121,7 @@ const NavItem = (props: any) => {
               }`}
             >
               <div className="nav-link new-mobile-nav-wrapper">
-                <Link href={navItem.href}>
+                <Link href={navItem.href} passHref>
                   <div className="mobile-nav-img-title">
                     <Image
                       layout="fixed"
