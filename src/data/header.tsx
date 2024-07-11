@@ -51,7 +51,11 @@ const navItems = [
     name: "All Courses",
     href: "/all-courses",
     subNavItems: [
-      { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
+      {
+        id: 5,
+        name: "Digital Marketing with GenAI",
+        href: "/digital-marketing-course",
+      },
       { id: 6, name: "Data Science", href: "/data-science-main" },
     ],
   },
@@ -91,7 +95,11 @@ export const blogsNavItem = [
     name: "All Courses",
     href: "/all-courses",
     subNavItems: [
-      { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
+      {
+        id: 5,
+        name: "Digital Marketing with GenAI",
+        href: "/digital-marketing-course",
+      },
       { id: 6, name: "Data Science", href: "/data-science-main" },
     ],
   },
@@ -100,7 +108,7 @@ export const blogsNavItem = [
   //   name: "All Courses New",
   //   href: "/all-courses-new",
   //   subNavItems: [
-  //     { id: 5, name: "Digital Marketing", href: "/digital-marketing-main" },
+  //     { id: 5, name: "Digital Marketing", href: "/digital-marketing-course" },
   //     { id: 6, name: "Data Science", href: "/data-science-main" },
   //   ],
   // },

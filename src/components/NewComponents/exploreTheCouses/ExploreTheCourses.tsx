@@ -76,11 +76,13 @@ interface Props {
     };
   };
   handleEnrollButtonClick: (title?: string) => void;
+  pageName?: string;
 }
 
 const ExploreTheCourses: React.FC<Props> = ({
   data,
   handleEnrollButtonClick,
+  pageName,
 }) => {
   const [scrolled, setScrolled] = useState(false);
   const [currentSection, setCurrentSection] = useState("");
@@ -126,7 +128,7 @@ const ExploreTheCourses: React.FC<Props> = ({
     let current = "Content-0";
 
     sections.forEach((section, index) => {
-      if (section && window.pageYOffset >= section.offsetTop + 1200) {
+      if (section && window.pageYOffset >= section.offsetTop + 1100) {
         current = `Content-${index}`;
       }
     });
@@ -168,7 +170,10 @@ const ExploreTheCourses: React.FC<Props> = ({
     { text: CourseOverviewData?.sideHeading, contentId: "Content-0" },
     { text: CourseCurriculumData?.sideHeading, contentId: "Content-1" },
     { text: DefenceToolboxData?.sideHeading, contentId: "Content-2" },
-    { text: WorldClassFacultyData?.sideHeading, contentId: "Content-3" },
+    {
+      text: WorldClassFacultyData?.sideHeading,
+      contentId: "Content-3",
+    },
     { text: ToolsCoveredData?.sideHeading, contentId: "Content-4" },
     { text: PricingAcrossCountriesData?.sideHeading, contentId: "Content-5" },
   ];
@@ -177,9 +182,9 @@ const ExploreTheCourses: React.FC<Props> = ({
     <div
       className={`${styles.appContainer} ${scrolled ? styles.scrolled : ""}`}
     >
-      <div className={styles.headerSection}>
+      <div className={`${styles.headerSection}`}>
         <h2 className="main-heading">{smallHeading}</h2>
-        <p className="main-sub-heading">{bigHeading}</p>
+        <p className="main-sub-heading mb-0">{bigHeading}</p>
       </div>
       <div className={styles.mainContent}>
         <div className={styles.sidePanel}>
@@ -236,7 +241,7 @@ const ExploreTheCourses: React.FC<Props> = ({
               ref={(el) => (contentRefs.current[4] = el)}
               id="Content-4"
             >
-              <ToolsCovered {...ToolsCoveredData} />
+              <ToolsCovered {...ToolsCoveredData} pageName={pageName} />
             </div>
           )}
           {PricingAcrossCountriesData && (

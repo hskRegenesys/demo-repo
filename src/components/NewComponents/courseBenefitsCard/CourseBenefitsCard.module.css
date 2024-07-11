@@ -48,6 +48,20 @@
   gap: 20px;
   align-items: center;
 }
+.dmCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.dmCard .cardIcon {
+  width: 54px;
+  height: 54px;
+}
+
+.dmCard .cardText2 {
+  color: #2b3340;
+  font-size: 18px;
+}
 
 .cardIcon {
   width: 64px;
@@ -113,6 +127,7 @@
   .cardsContainer {
     align-items: center;
     padding: 0px 16px;
+    margin-top: 20px;
   }
   .courseBenefitsCardContainer h2 {
     font-size: 14px;

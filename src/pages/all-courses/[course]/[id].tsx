@@ -105,11 +105,8 @@ const Course = (props: any) => {
     BlogSectionData,
     faqSections,
     PopupData,
-    multiplePagesDatas,
+    ReadMoreData,
   } = MainCourseData;
-
-  const isPageDataAvailable =
-    multiplePagesDatas && Object.keys(multiplePagesDatas).length > 0;
 
   return (
     <Layout pageTitle={props?.course} context="multiple-page">
@@ -139,8 +136,16 @@ const Course = (props: any) => {
       <MobileMenu />
       <SearchPopup />
       <BreadcrumbsDR
-        title={pageName}
-        page={pageName}
+        title={
+          pageName === "Digital Marketing Course"
+            ? "Digital Marketing Course With Gen AI"
+            : pageName
+        }
+        page={
+          pageName === "Digital Marketing Course"
+            ? "Digital Marketing Course With Gen AI"
+            : pageName
+        }
         parent="All courses"
         parentHref="/all-courses"
       />
@@ -155,10 +160,12 @@ const Course = (props: any) => {
       <CourseBenefitsCard
         data={CourseBenefitsCardData}
         handleEnrollButtonClick={handleEnrollButtonClick}
+        pageName={pageName}
       />
       <ExploreTheCourses
         data={ExploreTheCoursesData}
         handleEnrollButtonClick={handleEnrollButtonClick}
+        pageName={pageName}
       />
       <CareersTransformed
         handleEnrollButtonVidio={(videoLink) =>
@@ -170,8 +177,8 @@ const Course = (props: any) => {
         data={CertificationDRData}
       />
       <BlogSection data={BlogSectionData} />
-      <Faq data={faqSections} />
-      {isPageDataAvailable && <ReadMoreDropDown data={multiplePagesDatas} />}
+      <Faq data={faqSections} pageName={pageName} />
+      {ReadMoreData && <ReadMoreDropDown data={ReadMoreData} />}
       <FooterDR handleEnrollButtonClick={handleEnrollButtonClick} />
     </Layout>
   );

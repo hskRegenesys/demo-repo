@@ -60,12 +60,16 @@
   left: 60%;
   transform: translate(-50%, -50%);
   z-index: 3;
+  cursor: pointer;
 }
 
 .playIconStyle {
   border-radius: 50%;
   background: var(--Light-Text-White, #fff);
-  padding: 13px 18px;
+  padding: 18px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .playIcon {
@@ -362,7 +366,7 @@
   .playIconStyle {
     border-radius: 50%;
     background: var(--Light-Text-White, #fff);
-    padding: 13px 18px;
+    padding: 18px 18px;
   }
 
   .playIcon {

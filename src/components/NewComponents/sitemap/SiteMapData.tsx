@@ -72,7 +72,7 @@ const Sidemapdata: Sidemapdata = {
           },
           {
             title: "Digital Marketing",
-            link: "https://www.digitalregenesys.com/all-courses/digital-marketing",
+            link: "https://www.digitalregenesys.com/all-courses/digital-marketing-course",
           },
           {
             title: "Design Thinking",
@@ -102,7 +102,7 @@ const Sidemapdata: Sidemapdata = {
           },
           {
             title: "Digital Marketing",
-            link: "https://www.digitalregenesys.com/blog/category/digital-marketing",
+            link: "https://www.digitalregenesys.com/blog/category/digital-marketing-course",
           },
           {
             title: "Project Management",

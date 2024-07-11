@@ -19,7 +19,7 @@ const AllCoursesPageBanner: React.FC<AllCoursesPageBannerProps> = ({
   } = allCoursesPageBannerData;
 
   return (
-    <div className={Styles.bannerContainer}>
+    <div className={Styles.bannerContainer} onClick={handleEnrollButtonClick}>
       <div className={Styles.bannerImageDesktop}>
         <Image
           src={DesktopBannerImg}
