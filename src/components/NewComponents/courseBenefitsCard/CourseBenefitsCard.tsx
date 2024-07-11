@@ -16,11 +16,13 @@ interface Props {
     Card: CardData[];
   };
   handleEnrollButtonClick: (title?: string) => void;
+  pageName?: string;
 }
 
 const CourseBenefitsCard: React.FC<Props> = ({
   handleEnrollButtonClick,
   data,
+  pageName,
 }) => {
   const { courcename, Heding, Card } = data;
   const addBottomValue = Card.length <= 3 ? "0px" : "60px";
@@ -29,7 +31,7 @@ const CourseBenefitsCard: React.FC<Props> = ({
   return (
     <div className={styles.courseBenefitsCardContainer}>
       <h2 className="main-heading">{courcename}</h2>
-      <h2 className="main-sub-heading">{Heding}</h2>
+      <h2 className="main-sub-heading mb-6">{Heding}</h2>
 
       <div className={styles.cardsContainer}>
         <Swiper
@@ -52,14 +54,19 @@ const CourseBenefitsCard: React.FC<Props> = ({
         >
           {Card.map((card, index) => (
             <SwiperSlide key={index}>
-              <div key={index} className={styles.card}>
+              <div
+                key={index}
+                className={`${styles.card} ${
+                  pageName === "Digital Marketing Course" && styles.dmCard
+                }`}
+              >
                 <Image
                   //src={`${imageUrl}${card.cardIcon}`}
                   src={card.cardIcon}
                   alt="Card Icon"
                   className={styles.cardIcon}
-                  width={64}
-                  height={64}
+                  width={pageName === "Digital Marketing Course" ? 54 : 64}
+                  height={pageName === "Digital Marketing Course" ? 54 : 64}
                   layout="fixed"
                 />
                 <div className={styles.cardText}>
@@ -72,14 +79,16 @@ const CourseBenefitsCard: React.FC<Props> = ({
         </Swiper>
       </div>
 
-      <button
-        className={styles.enrollNowButton}
-        onClick={() => {
-          handleEnrollButtonClick("Enrol Now!");
-        }}
-      >
-        Enrol Now
-      </button>
+      {pageName !== "Digital Marketing Course" && (
+        <button
+          className={styles.enrollNowButton}
+          onClick={() => {
+            handleEnrollButtonClick("Enrol Now!");
+          }}
+        >
+          Enrol Now
+        </button>
+      )}
     </div>
   );
 };

@@ -8,7 +8,7 @@ const AllCourcesCardData = {
   cardProgramText: "Course",
   cardStudentEnrollmentText: "Students Enquired",
   cardToolsText: "Covered",
-  cardStarIcon: "/assets/images/new-component-assets/star.svg",
+  cardStarIcon: "/assets/images/allImages/star.svg",
 
   allCoursesSliderHeading: "All Courses",
   allCoursesSliderSubHeading: "Find Your Suitable Course",
@@ -149,10 +149,10 @@ const AllCourcesCardData = {
         code: "DM",
         id: 3,
         parentId: null,
-        name: "Digital Marketing",
-        cardProgram: "Digital Marketing",
+        name: "Digital Marketing with GenAI",
+        cardProgram: "Digital Marketing with GenAI",
         cardImg: "/assets/images/allImages/DM-card.webp",
-        ImgAlt: "Digital Marketing - Digital Regenesys",
+        ImgAlt: "Digital Marketing with GenAI - Digital Regenesys",
 
         cardWeek: "20 Weeks",
         cardCount: "34,873+",

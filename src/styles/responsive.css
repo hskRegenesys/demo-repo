@@ -378,6 +378,13 @@
   .banner-section-four p br {
     display: none;
   }
+  .BlogForm {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

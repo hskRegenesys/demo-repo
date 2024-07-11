@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-// @ts-ignore
-import { LeftOutlined } from "@ant-design/icons";
+import Image from "next/image";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
-import { wpService } from "src/services";
 import { IPostTypes } from "./dataTypes";
-import Link from "next/link";
 import RightSidePanel from "./RightSidePanel";
 import ApplyNow from "./ApplyNow";
 import BreadCrumb from "./BreadCrumb";
@@ -32,48 +29,56 @@ const BlogContainer = ({
   // useEffect(() => {
   //   getPost();
   // }, [slug]);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 920);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const imageUrl = postResponse[0]?.yoast_head_json?.og_image[0]?.url;
 
   return (
     <>
       <Schemas type={Constants?.article} data={postResponse} />
-      <div style={{ paddingTop: "85px" }}>
+      <div style={{ paddingTop: "80px" }}>
         <div>
-          <div
-            className="d-lg-grid w-100 d-none blog-container-bg-image"
-            style={{
-              width: "1920px",
-              height: "600px",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "top left",
-              backgroundSize: "cover",
-              backgroundImage: `url(${postResponse[0]?.yoast_head_json?.og_image[0]?.url})`,
-            }}
-          >
-            <div
-              className="d-none d-lg-block align-self-center pe-5 col-3"
-              style={{ justifySelf: "end" }}
-            >
-              <ApplyNow yellowBtn isBlack />
-            </div>
+          {imageUrl && typeof imageUrl === "string" && (
+            <Image
+              src={imageUrl}
+              width={isMobileView ? 360 : 1920}
+              height={isMobileView ? 200 : 800}
+              alt="Blog Image"
+              layout="responsive"
+              objectPosition="center"
+              className="BlogImg"
+            />
+          )}
+          <div className="BlogForm">
+            <ApplyNow yellowBtn isBlack />
           </div>
         </div>
       </div>
       <div>
         <div className="container-fluid px-5 blog-detail-container">
           {postResponse?.length && (
-            <div className="link-title d-flex justify-content-left mb-3">
-              <div className="p-2 bg-light text-dark rounded-left">
+            <div className="link-title mb-3 p-2 bg-light ">
+              <div className="p-1  text-dark rounded-left">
                 Author : {postResponse[0]?.yoast_head_json?.author}
               </div>
-              <div className="p-2 bg-light text-dark">
-                Published Date :
+              <div className="p-1 text-dark">
+                Published Date :{" "}
                 {new Date(
                   postResponse[0]?.yoast_head_json?.article_published_time
                 )?.toLocaleDateString()}
               </div>
-              <div className="p-2 bg-light text-dark rounded-right">
-                Publisher :{postResponse[0]?.yoast_head_json?.og_site_name}
-              </div>
+              {/* <div className="p-2 bg-light text-dark rounded-right">
+                Publisher : {postResponse[0]?.yoast_head_json?.og_site_name}
+              </div> */}
             </div>
           )}
           <BreadCrumb

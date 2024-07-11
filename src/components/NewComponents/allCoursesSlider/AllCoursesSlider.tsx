@@ -63,7 +63,11 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
       code === digitalMarkrtingCode ||
       code === artificialIntelligenceCode
     ) {
-      router.push(`/${programBaseUrl}/${urlInfo(name)}`);
+      router.push(
+        name === "Digital Marketing with GenAI"
+          ? "/all-courses/digital-marketing-course"
+          : `/${programBaseUrl}/${urlInfo(name)}`
+      );
     } else {
       const courseDetails = _.find(
         allCourseList,
@@ -175,12 +179,9 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                     alt="All course"
                     title={parentCourse.ImgAlt}
                     className={Styles.cardImage}
-                    width={346}
+                    width={347}
                     height={220}
-                    loading="lazy"
-                    quality={75}
-                    // decoding="async"
-                    // layout="responsive"
+                    priority={true}
                   />
                 </div>
                 <div className={Styles.textContainer}>

@@ -83,11 +83,15 @@
 
   .breadCrumbHome li a {
     font-size: 12px;
+    margin-right: 0px;
   }
 
   .arrowIcon {
     width: 16px;
     height: 16px;
+  }
+  .separator {
+    margin: 0px !important;
   }
 
   .active {

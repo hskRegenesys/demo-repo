@@ -141,11 +141,13 @@ function ModalPopup(props: any) {
 
     // Get the selected course's code
     const selectedCourse = courses.find(
-      (course: any) => course.name === data.Programme_Of_Interest
+      (course: any) =>
+        (course.name === "Digital Marketing with GenAI"
+          ? "Digital Marketing"
+          : course.name) === data.Programme_Of_Interest
     );
     const brochureName: any = brochureDetails[selectedCourse.code];
 
-    console.log("data-----", data);
     const result = await leadService.saveLead(data);
 
     if (result?.data && props?.title === "Download Brochure") {
@@ -398,7 +400,11 @@ function ModalPopup(props: any) {
                           return (
                             <option
                               key={val.id}
-                              value={val.name}
+                              value={
+                                val.name === "Digital Marketing with GenAI"
+                                  ? "Digital Marketing"
+                                  : val.name
+                              }
                               selected={val.code === props.courseCode}
                             >
                               {val.name}

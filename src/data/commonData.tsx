@@ -17,8 +17,8 @@ const Data = {
       edforall: "Ed For All",
       cryptoCurrency: "Crypto Currency",
       "cyber-security": "Cyber Security Course Online | Digital Regenesys",
-      "digital-marketing":
-        "Digital Marketing Course Online | Digital Regenesys",
+      "digital-marketing-course":
+        "Digital Marketing Course online with Generative AI  – Enrol Now!",
 
       "digital-marketing-fundamentals":
         "Digital Marketing Fundamentals Course Online | Digital Regenesys",
@@ -177,7 +177,11 @@ const Data = {
       "cyber-security": `
       cyber security, cyber security course, what is cyber security, cyber security jobs, cyber security poster, cyber security salary, cyber security ppt, types of cyber security, cyber security certifications, importance of cyber security, cyber security awareness, cyber security course fees, cyber security definition
       `,
-      "digital-marketing": `
+      "digital-marketing-course": `
+       digital marketing course,
+       digital marketing course with generative ai,
+       online digital marketing course,
+       digital marketing certificate,
         Digital Regenesys, 
         digital skills, 
         digital marketing course, 
@@ -358,8 +362,8 @@ const Data = {
       cryptoCurrency: "Crypto Currency",
       "cyber-security":
         "High-quality Cyber Security course from Digital Regenesys. Learn all about network threats, vulnerabilities, data security, risk management, and much more.",
-      "digital-marketing":
-        "Digital marketing, advance your career in a Digital Marketing course with Digital Regenesys. We offer a Digital marketing course to help you achieve your career goals.",
+      "digital-marketing-course":
+        "Join our live online digital marketing course with Generative AI (GenAI). Gain in-demand skills & earn a digital marketing certificate and boost your career. Enrol Now!",
       "basic-digital-marketing":
         "The basic digital marketing course offered by Digital Regenesys lays a solid foundation of essential digital marketing domains. Visit our website to explore more.",
       "digital-marketing-fundamentals":
@@ -409,21 +413,21 @@ const Data = {
       privacyPolicy: "/privacy-policy",
       termsCondition: "/terms-and-conditions",
       "cyber-security": "/all-courses/cyber-security",
-      "digital-marketing": "/all-courses/digital-marketing",
+      "digital-marketing-course": "/all-courses/digital-marketing-course",
       "basic-digital-marketing":
-        "/all-courses/digital-marketing/basic-digital-marketing",
+        "/all-courses/digital-marketing-course/basic-digital-marketing",
       "digital-marketing-fundamentals":
-        "/all-courses/digital-marketing/digital-marketing-fundamentals",
+        "/all-courses/digital-marketing-course/digital-marketing-fundamentals",
 
       "operations-and-supply-chain-management":
         "/all-courses/operations-and-supply-chain-management",
 
       "advanced-digital-marketing":
-        "/all-courses/digital-marketing/advanced-digital-marketing",
+        "/all-courses/digital-marketing-course/advanced-digital-marketing",
       "applied-digital-marketing":
-        "/all-courses/digital-marketing/applied-digital-marketing",
+        "/all-courses/digital-marketing-course/applied-digital-marketing",
       "advance-digital-marketing-course":
-        "/all-courses/digital-marketing/advance-digital-marketing-course",
+        "/all-courses/digital-marketing-course/advance-digital-marketing-course",
       "project-management": "/all-courses/project-management",
 
       "data-science": "/all-courses/data-science",

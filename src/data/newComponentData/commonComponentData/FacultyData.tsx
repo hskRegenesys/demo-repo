@@ -69,7 +69,7 @@ const FacultyData = [
   {
     facultyImg: "/assets/images/allImages/saraswathy_kumar.webp",
     facultyName: "Dr. Saraswathy Kumar",
-    facultyEducation: "Ph.D. in Corporate Secretary Ship",
+    facultyEducation: "Ph.D. in Corporate Secretaryship",
     yearsOfExperience: "17+",
   },
 ];

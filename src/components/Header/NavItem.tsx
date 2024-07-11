@@ -122,26 +122,23 @@ const NavItem = (props: any) => {
             >
               <div className="nav-link new-mobile-nav-wrapper">
                 <Link href={navItem.href}>
-                  <a>
-                    <div className="mobile-nav-img-title">
-                      <Image
-                        layout="intrinsic"
-                        width="24"
-                        height="24"
-                        alt="Mobile Icon"
-                        src={mobileIcons[id]}
-                      />
-                      <span
-                        className="m-2"
-                        style={{
-                          color:
-                            activeDropdown === navItem.name ? "#008554" : "",
-                        }}
-                      >
-                        {navItem.name}
-                      </span>
-                    </div>
-                  </a>
+                  <div className="mobile-nav-img-title">
+                    <Image
+                      layout="fixed"
+                      width="24"
+                      height="24"
+                      alt="Mobile Icon"
+                      src={mobileIcons[id]}
+                    />
+                    <span
+                      className="m-2"
+                      style={{
+                        color: activeDropdown === navItem.name ? "#008554" : "",
+                      }}
+                    >
+                      {navItem.name}
+                    </span>
+                  </div>
                 </Link>
                 {navItem.subNavItems && navItem?.subNavItems?.length > 0 && (
                   <div>
@@ -205,7 +202,7 @@ const NavItem = (props: any) => {
                                           </span> */}
 
                                     {subNavItem.name ===
-                                    "Product Management" ? (
+                                    "Digital Marketing with GenAI" ? (
                                       <span className="newAnimation blink-soft">
                                         New
                                       </span>
@@ -218,7 +215,14 @@ const NavItem = (props: any) => {
                                           paddingRight: "10px",
                                         }}
                                       ></span>
-                                      <Link href={subNavItem.href}>
+                                      <Link
+                                        href={
+                                          subNavItem.name ===
+                                          "Digital Marketing with GenAI"
+                                            ? "/all-courses/digital-marketing-course"
+                                            : subNavItem.href
+                                        }
+                                      >
                                         <a onClick={toggleMenu}>
                                           {subNavItem.name}
                                         </a>
@@ -472,7 +476,7 @@ const NavItem = (props: any) => {
           {/* Sub navigation */}
           {subNavItems?.length > 0 && (
             <ul onMouseEnter={() => handleHover(subNavItems[0].name)}>
-              {subNavItems.map((subItem: any) => (
+              {subNavItems.map((subItem: any, index: any) => (
                 <>
                   {subItem.name === "Blog Categories" ? (
                     <li
@@ -496,7 +500,10 @@ const NavItem = (props: any) => {
                           <li key={item.id} style={{ marginLeft: "30px" }}>
                             <a
                               href={item.href}
-                              style={{ fontSize: "14px", fontWeight: "400" }}
+                              style={{
+                                fontSize: "14px",
+                                fontWeight: "400",
+                              }}
                             >
                               {item.name}
                             </a>
@@ -505,176 +512,187 @@ const NavItem = (props: any) => {
                       </ul>
                     </li>
                   ) : (
-                    <ul onMouseEnter={() => handleHover(subNavItems?.name)}>
-                      <div className="mainMegaMenu">
-                        <div className="megamenuCourses">
-                          <p className="mainMegaMenuHeading">
-                            Certificate Courses
-                          </p>
-
-                          {subNavItems?.map((subItem: any) => (
-                            <li
-                              key={subItem.id}
-                              className={`${
-                                subItem.subItems?.length ? "dropdown" : ""
-                              } ${pathname === subItem.href ? "current" : ""}`}
-                              onMouseEnter={() => {
-                                handleHoverIcon();
-                                handleHover(subItem.name);
-                              }}
-                              onMouseLeave={() => {
-                                handleLeaveIcon();
-                                handleLeave();
-                              }}
-                            >
-                              <a href={subItem.href}>
-                                {subItem.name}
-
-                                {subItem.name === "Product Management" ? (
-                                  <span className="newAnimation blink-soft">
-                                    New
-                                  </span>
-                                ) : (
-                                  !!subItem.subItems?.length && (
-                                    <span
-                                      className={`fa ${
-                                        isIconActive
-                                          ? "fa-angle-up"
-                                          : "fa-angle-down"
-                                      }`}
-                                    ></span>
-                                  )
-                                )}
-                                {/* {subItem.isNew && <span>new</span>} */}
-                              </a>
-
-                              <ul
-                                style={{
-                                  display:
-                                    activeSubItem === subItem.name
-                                      ? "block"
-                                      : "none",
-                                  opacity:
-                                    activeSubItem === subItem.name ? 1 : 0,
-                                  transition: "opacity 0.6s ease",
-                                }}
-                                className={
-                                  subItem.name === "Blog Categories"
-                                    ? "sub-nav-items"
-                                    : ""
-                                }
-                              >
-                                {subItem.subItems
-                                  ?.filter(
-                                    (item: any) => item.name !== "Full-Stack"
-                                  )
-                                  ?.map((item: any) => (
-                                    <li
-                                      key={item.id}
-                                      className={`dropdown`}
-                                      style={{
-                                        listStyle: "none",
-                                        listStyleType: "disc",
-                                        marginLeft: "30px",
-                                        marginBottom: "5px",
-                                        color: "#697386 ",
-                                      }}
-                                    >
-                                      <a
-                                        href={item.href}
-                                        style={{
-                                          fontSize: "14px",
-                                          fontWeight: "400",
-                                        }}
-                                      >
-                                        {item.name}
-                                        {item.isNew && <span>new</span>}
-                                      </a>
-                                    </li>
-                                  ))}
-                              </ul>
-                            </li>
-                          ))}
-                        </div>
-                        <div className="degreeCoursesData">
-                          <p className="mainMegaMenuHeading">
-                            {" "}
-                            Academic Programmes
-                          </p>
-                          <ul>
-                            {degreeProgrammesData.map((program, index) => (
-                              <li
-                                key={index}
-                                onClick={() =>
-                                  handleDropdownToggle(program.courseName)
-                                }
-                                className={
-                                  selectedProgram === program.courseName
-                                    ? "colorActiveGreen"
-                                    : ""
-                                }
-                              >
-                                <a
-                                  style={{
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    fontSize: "14px",
+                    index === 0 && (
+                      <li onMouseEnter={() => handleHover(subNavItems?.name)}>
+                        <div className="mainMegaMenu">
+                          <div className="megamenuCourses">
+                            <p className="mainMegaMenuHeading">
+                              Certificate Courses
+                            </p>
+                            <ul>
+                              {subNavItems?.map((subItem: any) => (
+                                <li
+                                  key={subItem.id}
+                                  className={`${
+                                    subItem.subItems?.length ? "dropdown" : ""
+                                  } ${
+                                    pathname === subItem.href ? "current" : ""
+                                  }`}
+                                  onMouseEnter={() => {
+                                    handleHoverIcon();
+                                    handleHover(subItem.name);
+                                  }}
+                                  onMouseLeave={() => {
+                                    handleLeaveIcon();
+                                    handleLeave();
                                   }}
                                 >
                                   <a
-                                    key={index}
-                                    href={program.courseUrl}
-                                    rel="nofollow"
+                                    href={
+                                      subItem?.name ===
+                                      "Digital Marketing with GenAI"
+                                        ? "/all-courses/digital-marketing-course"
+                                        : subItem.href
+                                    }
                                   >
-                                    {program.courseName}
+                                    {subItem.name}
+
+                                    {subItem.name ===
+                                    "Digital Marketing with GenAI" ? (
+                                      <span className="newAnimation blink-soft">
+                                        New
+                                      </span>
+                                    ) : (
+                                      !!subItem.subItems?.length && (
+                                        <span
+                                          className={`fa ${
+                                            isIconActive
+                                              ? "fa-angle-up"
+                                              : "fa-angle-down"
+                                          }`}
+                                        ></span>
+                                      )
+                                    )}
+                                    {/* {subItem.isNew && <span>new</span>} */}
                                   </a>
-                                  <span className="fa fa-angle-down"></span>
-                                </a>
-                                {selectedProgram === program.courseName && (
-                                  <ul className="inlineDegreeCourse">
-                                    {program.subDegreePrograms.map(
-                                      (subProgram, subIndex) => (
+
+                                  <ul
+                                    style={{
+                                      display:
+                                        activeSubItem === subItem.name
+                                          ? "block"
+                                          : "none",
+                                      opacity:
+                                        activeSubItem === subItem.name ? 1 : 0,
+                                      transition: "opacity 0.6s ease",
+                                    }}
+                                    className={
+                                      subItem.name === "Blog Categories"
+                                        ? "sub-nav-items"
+                                        : ""
+                                    }
+                                  >
+                                    {subItem.subItems
+                                      ?.filter(
+                                        (item: any) =>
+                                          item.name !== "Full-Stack"
+                                      )
+                                      ?.map((item: any) => (
                                         <li
-                                          key={subIndex}
+                                          key={item.id}
+                                          className={`dropdown`}
                                           style={{
                                             listStyle: "none",
                                             listStyleType: "disc",
+                                            marginLeft: "30px",
+                                            marginBottom: "5px",
+                                            color: "#697386 ",
                                           }}
-                                          className="DegreeProgram-li"
                                         >
-                                          <Link
-                                            key={subIndex}
-                                            href={subProgram.subCourseUrl}
+                                          <a
+                                            href={item.href}
+                                            style={{
+                                              fontSize: "14px",
+                                              fontWeight: "400",
+                                            }}
                                           >
-                                            <a
-                                              style={{
-                                                fontSize: "12px",
-                                              }}
-                                            >
-                                              {subProgram.subCourseName}
-                                            </a>
-                                          </Link>
+                                            {item.name}
+                                            {item.isNew && <span>new</span>}
+                                          </a>
                                         </li>
-                                      )
-                                    )}
+                                      ))}
                                   </ul>
-                                )}
-                              </li>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div className="degreeCoursesData">
+                            <p className="mainMegaMenuHeading">
+                              {" "}
+                              Academic Programmes
+                            </p>
+                            <ul>
+                              {degreeProgrammesData.map((program, index) => (
+                                <li
+                                  key={index}
+                                  onClick={() =>
+                                    handleDropdownToggle(program.courseName)
+                                  }
+                                  className={
+                                    selectedProgram === program.courseName
+                                      ? "colorActiveGreen"
+                                      : ""
+                                  }
+                                >
+                                  <p
+                                    style={{
+                                      display: "flex",
+                                      justifyContent: "space-between",
+                                      fontSize: "14px",
+                                      cursor: "pointer",
+                                    }}
+                                  >
+                                    <Link key={index} href={program.courseUrl}>
+                                      {program.courseName}
+                                    </Link>
+                                    <span className="fa fa-angle-down"></span>
+                                  </p>
+                                  {selectedProgram === program.courseName && (
+                                    <ul className="inlineDegreeCourse">
+                                      {program.subDegreePrograms.map(
+                                        (subProgram, subIndex) => (
+                                          <li
+                                            key={subIndex}
+                                            style={{
+                                              listStyle: "none",
+                                              listStyleType: "disc",
+                                            }}
+                                            className="DegreeProgram-li"
+                                          >
+                                            <Link
+                                              key={subIndex}
+                                              href={subProgram.subCourseUrl}
+                                            >
+                                              <a
+                                                style={{
+                                                  fontSize: "12px",
+                                                }}
+                                              >
+                                                {subProgram.subCourseName}
+                                              </a>
+                                            </Link>
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div className="trainingProgrammeData">
+                            <p className="mainMegaMenuHeading">
+                              Training Programmes
+                            </p>
+                            {trainingProgrammesData?.map((item) => (
+                              <Link key={item.courseName} href={item.courseUrl}>
+                                {item.courseName}
+                              </Link>
                             ))}
-                          </ul>
+                          </div>
                         </div>
-                        <div className="trainingProgrammeData">
-                          <p className="mainMegaMenuHeading">
-                            Training Programmes
-                          </p>
-                          {trainingProgrammesData?.map((item) => (
-                            <Link key={item.courseName} href={item.courseUrl}>
-                              {item.courseName}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    </ul>
+                      </li>
+                    )
                   )}
                 </>
               ))}
