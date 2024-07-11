@@ -28,10 +28,9 @@ function RequestForm(props: any) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let countryData = await countryCodeService.countryDetails();
-      setCountryData(countryData);
-      countryData ? setIsLoading(false) : setIsLoading(true);
-
+      // let countryData = await countryCodeService.countryDetails();
+      // setCountryData(countryData);
+      // countryData ? setIsLoading(false) : setIsLoading(true);
       try {
         const response = await fetch("https://geolocation-db.com/json/");
         const result = await response.json();
@@ -315,21 +314,10 @@ function RequestForm(props: any) {
             <div className={Styles.formsplit}>
               <div className={Styles.inputLabelContainer}>
                 <div className={Styles.formGroupPositionRelative}>
-                  <input
-                    className={
-                      props.type === "contact"
-                        ? Styles.inputFormContact
-                        : Styles.inputForm
-                    }
-                    type="hidden"
-                    {...register("Phone", {
-                      required: "*Phone number is Required",
-                    })}
-                  />
                   <PhoneInput
                     international
                     countryCallingCodeEditable={false}
-                    defaultCountry={geoLocationData?.country_code || "ZA"}
+                    defaultCountry={geoLocationData?.country_code}
                     placeholder="Select Country Code*"
                     value={watch("Phone")}
                     {...register("Phone", {
