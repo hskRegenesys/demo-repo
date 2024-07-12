@@ -238,7 +238,7 @@ const HeaderOne = ({
 
   useEffect(() => {
     allCourses();
-  }, [allCourses]);
+  }, []);
 
   const [scroll, setScroll] = useState(false);
   const checkScroll = () => {
