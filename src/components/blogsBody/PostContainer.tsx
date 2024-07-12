@@ -4,9 +4,11 @@ import Link from "next/link";
 import { getOneRandom } from "src/utils/common";
 
 const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
+  const blogBaseUrl = "https://www.digitalregenesys.com/blog";
+
   return (
     <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
-      <Link href={`/blog/${post?.slug}`}>
+      <Link href={`${blogBaseUrl}/${post?.slug}`}>
         <a className="blog-links-style">
           <div className="blog-grid-column">
             <div
