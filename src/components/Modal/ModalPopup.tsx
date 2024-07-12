@@ -35,10 +35,9 @@ function ModalPopup(props: any) {
   const handleShow = () => setShow(true);
 
   const getCountryCode = async () => {
-    let countryData = await countryCodeService.countryDetails();
-    setCountryData(countryData);
-    countryData ? setIsLoading(false) : setIsLoading(true);
-
+    // let countryData = await countryCodeService.countryDetails();
+    // setCountryData(countryData);
+    // countryData ? setIsLoading(false) : setIsLoading(true);
     try {
       const response = await fetch("https://geolocation-db.com/json/");
       const result = await response.json();

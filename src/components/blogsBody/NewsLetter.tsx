@@ -4,7 +4,7 @@ import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import toast, { Toaster } from "react-hot-toast";
 import validator from "validator";
-import { countryCodeService, leadService } from "src/services";
+import { leadService } from "src/services";
 import { useRouter } from "next/router";
 import mixpanel from "mixpanel-browser";
 

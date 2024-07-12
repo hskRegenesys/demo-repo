@@ -238,7 +238,8 @@ const HeaderOne = ({
 
   useEffect(() => {
     allCourses();
-  }, []);
+  }, [allCourses]);
+
   const [scroll, setScroll] = useState(false);
   const checkScroll = () => {
     if (window.scrollY > 38) {

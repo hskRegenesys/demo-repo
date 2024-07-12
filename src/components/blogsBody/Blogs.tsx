@@ -61,6 +61,8 @@ const Blogs = () => {
     }
   };
 
+  const blogBaseUrl = "https://www.digitalregenesys.com/blog/category";
+
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
       <Spinner animation={"border"} />
@@ -81,7 +83,7 @@ const Blogs = () => {
                   />
 
                   <div>
-                    <Link href={`/blog/category/${values?.slug}`} passHref>
+                    <Link href={`${blogBaseUrl}/${values?.slug}`} passHref>
                       <a>
                         <b
                           role="button"
