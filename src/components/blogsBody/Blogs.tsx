@@ -83,16 +83,16 @@ const Blogs = () => {
                   />
 
                   <div>
-                    <Link href={`${blogBaseUrl}/${values?.slug}`} passHref>
-                      <a>
-                        <b
-                          role="button"
-                          className="btn px-1 py-0 text-dark-green m-0 new-view-more-title"
-                        >
-                          View more
-                        </b>
-                      </a>
-                    </Link>
+                    {/* <Link  passHref> */}
+                    <a href={`${blogBaseUrl}/${values?.slug}`} rel="noreferrer">
+                      <b
+                        role="button"
+                        className="btn px-1 py-0 text-dark-green m-0 new-view-more-title"
+                      >
+                        View more
+                      </b>
+                    </a>
+                    {/* </Link> */}
                   </div>
                 </div>
                 <div className="d-none d-lg-block">
