@@ -868,20 +868,20 @@ const MainCoursesDynimicData = {
               contaryFlag: "/assets/images/allImages/south-africa.svg",
               contaryName: "South Africa",
               price: "R20,999",
-              duration: "23 Weeks",
+              duration: "24 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/India.svg",
 
               contaryName: "India",
               price: "₹104,995 + GST",
-              duration: "23 Weeks",
+              duration: "24 Weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$1105",
-              duration: "23 Weeks",
+              duration: "24 Weeks",
             },
             // {
             //   contaryFlag: "/assets/images/allImages/usa.svg",
@@ -1038,7 +1038,7 @@ const MainCoursesDynimicData = {
             {
               question: "How long is the Digital Marketing with Gen AI course?",
               answer:
-                "The course duration is 23 weeks, with a mix of live sessions and self-paced modules.",
+                "The course duration is 24 weeks, with a mix of live sessions and self-paced modules.",
             },
             {
               question: "Is the course available online?",
@@ -1848,7 +1848,7 @@ const MainCoursesDynimicData = {
         },
         uspEnrollmentCard: {
           uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "113741+",
+          uspEnrollmentCount: "110000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -2223,20 +2223,20 @@ const MainCoursesDynimicData = {
               contaryFlag: "/assets/images/allImages/south-africa.svg",
               contaryName: "South Africa",
               price: "R 19,379",
-              duration: "13 weeks",
+              duration: "15 weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/India.svg",
 
               contaryName: "India",
               price: "₹ 87,098 + GST",
-              duration: "13 weeks",
+              duration: "15 weeks",
             },
             {
               contaryFlag: "/assets/images/allImages/usa.svg",
               contaryName: "USA",
               price: "$ 1,128",
-              duration: "13 weeks",
+              duration: "15 weeks",
             },
           ],
         },
@@ -2379,7 +2379,7 @@ const MainCoursesDynimicData = {
               question:
                 "How Long Does It Take to Complete a Cyber Security Course?",
               answer:
-                "The total duration of the Digital Regenesys Cyber Security Course is 13 Weeks (8 Weeks + 5 Weeks) course.",
+                "The total duration of the Digital Regenesys Cyber Security Course is 15 Weeks (8 Weeks + 7 Weeks) course.",
             },
             {
               question:
