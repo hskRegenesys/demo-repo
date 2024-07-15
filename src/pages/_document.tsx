@@ -5,9 +5,38 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <Script
+        {/* GTM code start */}
+        <script
+          id="google-tag-manager"
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-M9XVQW4');
+              `,
+          }}
+        />
+        {/* Google Tag Manager GTM code nanddeep start */}
+        <script
+          id="google-tag-manager"
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K4F2983');
+              `,
+          }}
+        />
+        {/* GTM code end */}
+
+        <script
           id="fbevents"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
           !function(f,b,e,v,n,t,s)
@@ -26,44 +55,9 @@ export default function Document() {
 
         {/* Pixel code script end */}
 
-        {/* GTM code start */}
-        <Script
-          id="gtm-script"
-          type="text/javascript"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-M9XVQW4');
-              `,
-          }}
-        />
-        {/* GTM code end */}
-
-        {/* Google Tag Manager GTM code nanddeep start */}
-        <Script
-          id="gtm-script"
-          type="text/javascript"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-K4F2983');
-              `,
-          }}
-        />
-        {/* GTM code end */}
-
         {/* linked start */}
-        <Script
+        <script
           id="snap-licdn-script"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
           _linkedin_partner_id = "5438577";
@@ -94,9 +88,8 @@ export default function Document() {
           src="https://www.googletagmanager.com/gtag/js?id=UA-232125756-1"
         />
 
-        <Script
+        <script
           id="gtag"
-          strategy="afterInteractive"
           async
           dangerouslySetInnerHTML={{
             __html: `
@@ -108,9 +101,8 @@ export default function Document() {
           }}
         />
         {/* <!-- Google tag (gtag.js) --> Ramesh END */}
-        <Script
+        <script
           id="gtag"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
@@ -156,6 +148,15 @@ export default function Document() {
         </noscript>
 
         {/* Google Tag Manager (noscript) */}
+
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-M9XVQW4"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
 
         <noscript>
           <iframe
