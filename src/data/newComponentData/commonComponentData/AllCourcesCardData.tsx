@@ -124,7 +124,7 @@ const AllCourcesCardData = {
         ImgAlt: "Cyber Security - Digital Regenesys",
         cardCount: "113,741+",
         cardTool: "14+ Tools",
-        cardWeek: "13 Weeks",
+        cardWeek: "15 Weeks",
         CourseNameCode: "CSC",
       },
     },
@@ -153,8 +153,7 @@ const AllCourcesCardData = {
         cardProgram: "Digital Marketing with GenAI",
         cardImg: "/assets/images/allImages/DM-card.webp",
         ImgAlt: "Digital Marketing with GenAI - Digital Regenesys",
-
-        cardWeek: "20 Weeks",
+        cardWeek: "24 Weeks",
         cardCount: "34,873+",
         cardTool: "45+ Tools",
         CourseNameCode: "DMN",
