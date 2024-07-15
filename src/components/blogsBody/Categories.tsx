@@ -16,6 +16,8 @@ const Categories = () => {
     getCategoryList();
   }, []);
 
+  const blogBaseUrl = "https://www.digitalregenesys.com/blog/category";
+
   return (
     <>
       <div className="row">
@@ -28,16 +30,22 @@ const Categories = () => {
           ? categoryList?.map((item) => {
               const { slug, name } = item;
               return (
-                <Link key={item} href={`/blog/category/${slug}`} passHref>
-                  <div className="col-12 col-sm-6 col-lg-4">
+                // <Link key={item} href={`${blogBaseUrl}/${slug}`}>
+                <>
+                  <a
+                    href={`${blogBaseUrl}/${slug}`}
+                    rel="noreferrer"
+                    className="col-12 col-sm-6 col-lg-4"
+                  >
                     <div className="inline-button w-100 text-truncate">
-                      <a className="theme-btn btn-style-two category-btn  w-100">
+                      <div className="theme-btn btn-style-two category-btn  w-100">
                         <i className="btn-curve" />
                         <span className="btn-title">{name}</span>
-                      </a>
+                      </div>
                     </div>
-                  </div>
-                </Link>
+                  </a>
+                </>
+                // </Link>
               );
             })
           : null}
