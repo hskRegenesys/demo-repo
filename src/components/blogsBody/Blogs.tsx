@@ -61,7 +61,10 @@ const Blogs = () => {
     }
   };
 
-  const blogBaseUrl = "https://www.digitalregenesys.com/blog/category";
+  const blogBaseUrl =
+    process.env.ENV_NAME === "development"
+      ? "/blog/category"
+      : "https://www.digitalregenesys.com/blog/category";
 
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
