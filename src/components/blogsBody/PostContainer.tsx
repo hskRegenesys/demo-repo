@@ -9,47 +9,6 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
 
   return (
     <>
-      <div className={Styles.blogCard}>
-        <Image
-          // src={`${imageUrl}${card.blogImg}`}
-          src="/assets/images/allImages/brand-blog-online-course.webp"
-          alt="Blog"
-          className={Styles.blogImage}
-          width={384}
-          height={187}
-          layout="responsive"
-          loading="lazy"
-        />
-
-        <div className={Styles.blogContent}>
-          <div>
-            <h3 className={Styles.blogQuestion}>
-              What Are the Benefits of Taking Online Courses?
-            </h3>
-            <h2 className={Styles.blogText}>TESt</h2>
-          </div>
-          <div className={Styles.knowMore}>
-            <a
-              href="https://www.digitalregenesys.com/blog/machine-learning-engineer-salary-south-africa"
-              className={Styles.knowMoreLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Know More
-              <span className={Styles.arrowIcon}>
-                <Image
-                  // src={`${imageUrl}Icons/Readmore.svg`}
-                  src="/assets/images/allImages/read-more-new.svg"
-                  alt="card Star"
-                  className={Styles.img}
-                  width={12}
-                  height={12}
-                />
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
       <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
         {/* <Link > */}
         <a
