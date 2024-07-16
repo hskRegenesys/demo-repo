@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 import Styles from "../../components/NewComponents/blogSection/blogSection.module.css";
 import Image from "next/image";
 
-const BlogsBody = () => {
+const BlogsBody = (props: any) => {
   return (
     <div className="blog-body-wrapper" style={{ paddingTop: "57px" }}>
       <CarouselComponent carouselProps={carousalProps} />
@@ -19,7 +19,7 @@ const BlogsBody = () => {
         <div className="row">
           <div className="col-12 col-lg-9">
             <Categories />
-            <Blogs />
+            <Blogs response={props?.postData} />
           </div>
           <div className="col-12 col-lg-3">
             <RightSidePanel />
