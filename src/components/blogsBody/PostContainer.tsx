@@ -12,6 +12,7 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
       <a
         href={`${blogBaseUrl}/${post?.slug}`}
         rel="noreferrer"
+        target="_blank"
         className="blog-links-style"
       >
         <div className="blog-grid-column">

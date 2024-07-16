@@ -35,6 +35,7 @@ const Categories = () => {
                   <a
                     href={`${blogBaseUrl}/${slug}`}
                     rel="noreferrer"
+                    target="_blank"
                     className="col-12 col-sm-6 col-lg-4"
                   >
                     <div className="inline-button w-100 text-truncate">

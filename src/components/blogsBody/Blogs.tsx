@@ -84,7 +84,11 @@ const Blogs = () => {
 
                   <div>
                     {/* <Link  passHref> */}
-                    <a href={`${blogBaseUrl}/${values?.slug}`} rel="noreferrer">
+                    <a
+                      href={`${blogBaseUrl}/${values?.slug}`}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <b
                         role="button"
                         className="btn px-1 py-0 text-dark-green m-0 new-view-more-title"
