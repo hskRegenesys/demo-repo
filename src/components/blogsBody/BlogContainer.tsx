@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
@@ -30,6 +30,11 @@ const BlogContainer = ({
   //   getPost();
   // }, [slug]);
   const [isMobileView, setIsMobileView] = useState(false);
+  const [anchorData, setAnchorData] = useState<any>(null);
+  const [anchorClicked, setAnchorClicked] = useState(false);
+
+  const contentRef = useRef<HTMLDivElement>(null);
+  const headerOffset = 120;
 
   useEffect(() => {
     const handleResize = () => {
@@ -41,6 +46,92 @@ const BlogContainer = ({
   }, []);
 
   const imageUrl = postResponse[0]?.yoast_head_json?.og_image[0]?.url;
+
+  useEffect(() => {
+    const fetchBoldContent = () => {
+      postResponse.forEach((item, index) => {
+        if (item.content) {
+          const htmlString = item.content.rendered;
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(htmlString, "text/html");
+
+          const ulElements = doc.querySelectorAll("ul");
+          const h2Elements = doc.querySelectorAll("h2");
+
+          ulElements.forEach((ulElement, indexUl) => {
+            const liElements = ulElement.querySelectorAll("li");
+
+            liElements.forEach((liElement) => {
+              const anchorElements = liElement.querySelectorAll("a");
+
+              anchorElements.forEach((anchorElement) => {
+                let href = anchorElement.getAttribute("href");
+
+                if (href && href.includes("#")) {
+                  href = href.split("#")[1];
+                  anchorElement.setAttribute("href", `#${href}`);
+                }
+              });
+              h2Elements.forEach((h2Element) => {
+                const firstSpan = h2Element.querySelector("span");
+                if (firstSpan) {
+                  const spanId = firstSpan.getAttribute("id");
+                  if (spanId) {
+                    h2Element.setAttribute("id", spanId);
+                    firstSpan.removeAttribute("id");
+                  }
+                }
+              });
+            });
+          });
+          setAnchorData(Array.from(h2Elements));
+          item.content.rendered = doc.documentElement.innerHTML;
+        }
+      });
+    };
+
+    if (postResponse?.length > 0) {
+      fetchBoldContent();
+    }
+  }, [postResponse]);
+
+  const offsetScroll = (targetId: any) => {
+    const element = document.getElementById(targetId);
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  useEffect(() => {
+    const handleClick = (event: any) => {
+      event.preventDefault();
+      const targetId = event.currentTarget.getAttribute("href").substring(1);
+      setAnchorClicked(true);
+      offsetScroll(targetId);
+    };
+
+    if (contentRef.current) {
+      const anchorElements =
+        contentRef.current.querySelectorAll<HTMLAnchorElement>("ul li a");
+
+      anchorElements.forEach((anchorElement) => {
+        anchorElement.addEventListener("click", handleClick);
+      });
+
+      return () => {
+        anchorElements.forEach((anchorElement) => {
+          anchorElement.removeEventListener("click", handleClick);
+        });
+      };
+    }
+  }, [postResponse, anchorData]);
 
   return (
     <>
@@ -90,7 +181,7 @@ const BlogContainer = ({
           <div className="row py-3 blog-content-container">
             <div className="col-12 col-lg-9">
               {postResponse?.length > 0 ? (
-                postResponse?.map((item) => (
+                postResponse?.map((item, index) => (
                   <div key={item.id}>
                     {item?.title && (
                       <h1
@@ -102,6 +193,8 @@ const BlogContainer = ({
                     )}
                     {item?.content && (
                       <div
+                        ref={contentRef}
+                        id={`section-${index}`}
                         className="link-title"
                         dangerouslySetInnerHTML={{
                           __html: item?.content?.rendered,
