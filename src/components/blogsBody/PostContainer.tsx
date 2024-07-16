@@ -10,7 +10,7 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
     <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
       {/* <Link > */}
       <a
-        href={`${blogBaseUrl}/${post?.slug}`}
+        href="https://www.digitalregenesys.com/blog/machine-learning-engineer-salary-south-africa"
         rel="noreferrer"
         target="_blank"
         className="blog-links-style"
