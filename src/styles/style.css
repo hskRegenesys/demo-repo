@@ -19772,6 +19772,11 @@ h6.designation {
   margin-top: 11px;
   font-size: 13px;
 }
+.PhoneInput {
+  border: 2px solid #000;
+  border-radius: 14px;
+  padding: 0px 16px;
+}
 @media (min-width: 767px) {
   .modal.show .modal-dialog {
     width: 100%;
@@ -19791,6 +19796,7 @@ h6.designation {
 input.PhoneInputInput {
   padding-left: 6px !important;
   background-color: transparent;
+  border: none;
 }
 
 .PhoneInputCountryIconImg {
