@@ -12,36 +12,19 @@ import { allCourseList } from "@/data/courseData";
 import Styles from "./requestForm.module.css";
 import { brochureDetails } from "@/data/courseBrochure";
 import mixpanel from "mixpanel-browser";
+import useGeoLocation from "./useGeoLocation";
 
 function RequestForm(props: any) {
   const router = useRouter();
   const url = router?.asPath;
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [geoLocationData, setGeoLocationData] = useState<any>({});
-  const [countryData, setCountryData] = useState<any>({});
   const [btnDisable, setBtnDisable] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState<any>("");
   const [formInteraction, setFormInteraction] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
-  useEffect(() => {
-    const fetchData = async () => {
-      // let countryData = await countryCodeService.countryDetails();
-      // setCountryData(countryData);
-      // countryData ? setIsLoading(false) : setIsLoading(true);
-      try {
-        const response = await fetch("https://geolocation-db.com/json/");
-        const result = await response.json();
-        setGeoLocationData(result);
-      } catch (error) {
-        console.error("Error fetching geolocation data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const { geoLocationData } = useGeoLocation();
 
   const hookForm: any = useForm();
 
@@ -128,6 +111,8 @@ function RequestForm(props: any) {
     if (date) {
       data.date = date;
     }
+    data.city = geoLocationData?.city?.name;
+
     // Get the selected course's code
     const selectedCourse = courses.find(
       (course: any) =>
@@ -317,7 +302,7 @@ function RequestForm(props: any) {
                   <PhoneInput
                     international
                     countryCallingCodeEditable={false}
-                    defaultCountry={geoLocationData?.country_code}
+                    defaultCountry={geoLocationData?.country?.alpha2}
                     placeholder="Select Country Code*"
                     value={watch("Phone")}
                     {...register("Phone", {
