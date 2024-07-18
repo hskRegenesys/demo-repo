@@ -19750,10 +19750,16 @@ h6.designation {
 .mr-2 {
   margin-right: 10px;
 }
+.PhoneInput {
+  border: 2px solid #000;
+  border-radius: 14px;
+  padding: 0px 16px;
+}
 
 input.PhoneInputInput {
   padding-left: 6px !important;
   background-color: transparent;
+  border: none;
 }
 
 .PhoneInputCountryIconImg {
