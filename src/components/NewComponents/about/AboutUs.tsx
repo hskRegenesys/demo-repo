@@ -64,6 +64,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
             className={Styles.aboutUsImage}
             width={480}
             height={320}
+            priority
             // layout="responsive"
           />
         </div>
@@ -106,7 +107,13 @@ const AboutUs: React.FC<AboutUsProps> = ({ handleEnrollButtonClick }) => {
         {aboutUsCardsData.map((item, index) => (
           <div key={index} className={Styles.aboutusCard}>
             <div className={Styles.aboutusCardImg}>
-              <Image src={item.image} alt="About us" width={52} height={52} />
+              <Image
+                src={item.image}
+                alt="About us"
+                width={52}
+                height={52}
+                priority
+              />
             </div>
             <div className={Styles.aboutusCardText}>{item.title}</div>
           </div>

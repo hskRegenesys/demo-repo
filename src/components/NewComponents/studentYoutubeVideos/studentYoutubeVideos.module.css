@@ -17,9 +17,9 @@
   height: 315px;
   border-radius: 20px;
 }
-.swiperStyle {
+.swiperStyleYoutube {
   --add-bottom: 60px !important;
-  padding-bottom: var(--add-bottom);
+  padding-bottom: var(--add-bottom) !important;
   align-items: center;
 }
 /* Media Query for screens with a maximum width of 768 pixels */

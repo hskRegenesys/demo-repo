@@ -48,6 +48,7 @@ const StudentReview = ({
                     alt="Student Review"
                     width={88}
                     height={88}
+                    priority
                   />
                 </div>
                 <div className={Styles.textContent}>

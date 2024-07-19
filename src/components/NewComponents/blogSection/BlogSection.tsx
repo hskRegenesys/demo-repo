@@ -65,7 +65,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   width={384}
                   height={187}
                   layout="responsive"
-                  loading="lazy"
+                  priority
                 />
 
                 <div className={Styles.blogContent}>
@@ -89,6 +89,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                           className={Styles.img}
                           width={12}
                           height={12}
+                          priority
                         />
                       </span>
                     </a>
