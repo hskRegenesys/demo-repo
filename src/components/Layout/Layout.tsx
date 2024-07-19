@@ -267,7 +267,7 @@ const Layout = (props: any) => {
 
       <main
         id="wrapper"
-        style={{ opacity: loading ? 0 : 1 }}
+        style={{ opacity: 1 }}
         className={` ${mainClass} ${
           context === "multiple-page"
             ? ["page-wrapper-multiple"]

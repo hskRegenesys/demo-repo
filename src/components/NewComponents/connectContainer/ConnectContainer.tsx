@@ -42,6 +42,7 @@ const ConnectContainer: React.FC<ConnectContainerProps> = ({
                         alt="Icon"
                         width={20}
                         height={20}
+                        priority
                       />
                     </div>
 

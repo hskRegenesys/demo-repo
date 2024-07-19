@@ -27,6 +27,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
             alt="Tick Icon"
             width={122}
             height={179}
+            priority
           />
         </div>
         <div className={Styles.frame2}>
@@ -35,6 +36,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
             alt="Tick Icon"
             width={122}
             height={179}
+            priority
           />
         </div>
       </div>
@@ -62,6 +64,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                       alt="Card Image"
                       width={180}
                       height={180}
+                      priority
                     />
                   </div>
                 </div>
@@ -78,6 +81,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
                             alt="Tick Icon"
                             width={20}
                             height={20}
+                            priority
                           />
                         </div>
                         <p className={Styles.list}>{text}</p>
