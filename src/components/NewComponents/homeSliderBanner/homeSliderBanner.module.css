@@ -1,6 +1,3 @@
-.mobileSlide {
-  display: none;
-}
 .img {
   width: 100%;
 }
@@ -13,11 +10,7 @@
 }
 @media (max-width: 760px) {
   .mobileSlide {
-    display: block;
     margin-top: 80px;
-  }
-  .desktopSlide {
-    display: none;
   }
   .img {
     width: 100%;
