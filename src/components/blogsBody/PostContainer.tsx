@@ -10,7 +10,7 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
     <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
       {/* <Link > */}
       <a
-        href={`${blogBaseUrl}/${post?.slug}`}
+        href={`/blog/${post?.slug}`}
         rel="noreferrer"
         className="blog-links-style"
       >

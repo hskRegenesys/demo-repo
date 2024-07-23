@@ -63,7 +63,7 @@ const Blogs = (props: any) => {
   );
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const response = await wpService.allCategories({ per_page: 40 });
 
   return {
