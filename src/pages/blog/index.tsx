@@ -10,7 +10,7 @@ import BlogsBody from "@/components/blogsBody";
 import { wpService } from "src/services";
 import Script from "next/script";
 
-const Blogs = () => {
+const Blogs = (props: any) => {
   const [searchData, setSearchData] = useState([]);
   const [isBlogPage, setIsBlogPage] = useState(false);
   const search = (val: string) => {
@@ -46,7 +46,7 @@ const Blogs = () => {
         <HeaderOne variant="blog" />
         <MobileMenu />
         <SearchPopup />
-        <BlogsBody />
+        <BlogsBody postData={props?.response} />
         <MainFooter isBlogPage={isBlogPage} />
         <StickyBar />
       </Layout>
@@ -61,6 +61,16 @@ const Blogs = () => {
       </noscript>
     </>
   );
+};
+
+export const getServerSideProps = async () => {
+  const response = await wpService.allCategories({ per_page: 40 });
+
+  return {
+    props: {
+      response: response,
+    },
+  };
 };
 
 export default Blogs;
