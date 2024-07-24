@@ -3718,7 +3718,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/MA-explore.webp",
           contentText:
-            "Digital Regenesys’ Management Advancement Programme (MAP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management advancement.",
+            "Digital Regenesys’ Management Advancement Programme (MAP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management advancement programme.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -4005,7 +4005,7 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "Who is eligible to enrol in Digital Regenesys's Management Advancement Programme (MDP)?",
+                "Who is eligible to enrol in Digital Regenesys's Management Advancement Programme (MAP)?",
               answer:
                 "The Management Advancement Programme is open to professionals from various industries and backgrounds who seek to enhance their management skills and advance their careers. There are no specific prerequisites, but participants are typically mid-career professionals or individuals with some managerial experience.",
             },
@@ -4068,7 +4068,7 @@ const MainCoursesDynimicData = {
           ],
         },
         {
-          heading: "Management Advancement Online Certification Course",
+          heading: "Management Advancement Programme Online Certification Course",
           faqs: [
             {
               question:
@@ -4078,9 +4078,9 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Are there practical applications and projects in online Management Advancement Programmes?",
+                "Are there practical applications and projects in online Management Advancement Programme?",
               answer:
-                "Digital Regenesys’s Online Management Advancement programme includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+                "Digital Regenesys’s Online Management Advancement Programme includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
             },
             {
               question:
