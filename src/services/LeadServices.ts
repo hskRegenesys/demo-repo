@@ -15,7 +15,7 @@ class LeadService {
     ["Artificial Intelligence", "Artificial Intelligence"],
     ["Full Stack Development", "Full Stack Development"],
     ["Data and Business Analytics", "Data and Business Analytics"],
-    ["Management Advancement Programme", "Management Advancement Programme"],
+    ["Management Advancement", "Management Advancement"],
     [
       "Operations and Supply Chain Management",
       "Operations and Supply Chain Management",
