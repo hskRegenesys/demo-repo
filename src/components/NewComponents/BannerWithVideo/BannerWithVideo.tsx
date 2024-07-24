@@ -56,6 +56,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
   const [count, setCount] = useState("0");
   const [isMobileView, setIsMobileView] = useState(false);
 
+  console.log("pagename", pageName);
   useEffect(() => {
     let start = 0;
     const end = parseInt(uspEnrollmentCard.uspEnrollmentCount.substring(0, 3));
@@ -93,7 +94,8 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <span className={styles.topTextBestsale}>{BestSaleText}</span>
               <span className={styles.topTextMessage}>{topTextMessage}</span>
             </div>
-            {pageName === "Digital Marketing Course" ? (
+            {pageName === "Digital Marketing Course" ||
+            pageName === "Management Advancement Programme" ? (
               <h1 className={`${styles.HeadingText} mb-2`}>
                 {coursePageName}
                 <br />

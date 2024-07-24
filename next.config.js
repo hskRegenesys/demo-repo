@@ -1386,6 +1386,11 @@ const redirectURL = () => {
       destination: "/",
       permanent: true,
     },
+    {
+      source: "/all-courses/management-advancement",
+      destination: "/all-courses/management-advancement-programme",
+      permanent: true,
+    },
   ];
   const pathsToRedirect = {
     "/data-science": [
