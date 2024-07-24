@@ -686,9 +686,9 @@ export const allCourseList = [
   },
   {
     id: 48,
-    name: "Management Advancement",
+    name: "Management Advancement Programme",
     code: "MD",
-    description: "Management Advancement",
+    description: "Management Advancement Programme",
     parent_id: null,
     mode_id: 1,
     isAddon: false,
