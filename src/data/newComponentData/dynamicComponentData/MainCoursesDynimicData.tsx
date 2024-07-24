@@ -1244,7 +1244,7 @@ const MainCoursesDynimicData = {
             },
             {
               weekHeading:
-                "Advance Project Management: Global Strategy for Managers",
+                "Advanced Project Management: Global Strategy for Managers",
               weekPoints: {
                 "": [
                   "Introduction - Organisational Project Management",
@@ -3659,7 +3659,7 @@ const MainCoursesDynimicData = {
 
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/MA-banner.webp",
-      coursePageName: " Management Advancement",
+      coursePageName: " Management Advancement Programme",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
@@ -3911,7 +3911,7 @@ const MainCoursesDynimicData = {
     },
     CertificationDRData: {
       title: "Get Certified With Us",
-      heading: "Management Advancement Certification",
+      heading: "Management Advancement Programme Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Advancement certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
       tickImage: "/assets/images/allImages/Check.svg",
