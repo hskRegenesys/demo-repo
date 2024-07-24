@@ -79,8 +79,8 @@ const Sidemapdata: Sidemapdata = {
             link: "https://www.digitalregenesys.com/all-courses/design-thinking",
           },
           {
-            title: "Management Advancement",
-            link: "https://www.digitalregenesys.com/all-courses/management-advancement",
+            title: "Management Advancement Programme",
+            link: "https://www.digitalregenesys.com/all-courses/management-advancement-programme",
           },
 
           {

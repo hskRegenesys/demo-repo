@@ -65,13 +65,13 @@ const AllCourcesCardData = {
     ManagementAdvancement: {
       parentCource: {
         id: 10,
-        name: "Management Advancement",
+        name: "Management Advancement Programme",
         code: "DTC",
-        description: "Management Advancement",
+        description: "Management Advancement Programme",
         parentId: null,
-        cardProgram: "Management Advancement",
+        cardProgram: "Management Advancement Programme",
         cardImg: "/assets/images/allImages/MA-card.webp",
-        ImgAlt: "Management Advancement - Digital Regenesys",
+        ImgAlt: "Management Advancement Programme - Digital Regenesys",
         cardCount: "7,541+",
         cardWeek: "40 Weeks",
         CourseNameCode: "MD",

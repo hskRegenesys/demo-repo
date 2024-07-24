@@ -64,8 +64,8 @@ const Data = {
         "Artificial Intelligence Intermediate Course | Digital Regenesys",
       "ai-advanced-applied":
         "Advanced Applied Artificial Intelligence Course | Digital Regenesys",
-      "management-advancement":
-        "Management Advancement Course Online | Digital Regenesys",
+      "management-advancement-programme":
+        "Management Advancement Programme Course Online | Digital Regenesys",
 
       "product-management":
         " Product Management Course Online | Digital Regenesys",
@@ -315,8 +315,8 @@ const Data = {
         " AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
       "ai-advanced-applied":
         "AI training, online AI course, AI certification, machine learning, deep learning, AI algorithms, AI applications, AI programming, AI skills, Artificial Intelligence course, AI training, machine learning, deep learning, neural networks, natural language processing, computer vision, AI algorithms, AI applications.",
-      "management-advancement":
-        "Management Advancement course, Management Advancement course online, Management Advancement course career opportunities, leadership and Management Advancement, Management Advancement certification course, digital regenesys",
+      "management-advancement-programme":
+        "Management Advancement Programme course, Management Advancement Programme course online, Management Advancement Programme course career opportunities, leadership and Management Advancement Programme, Management Advancement Programme certification course, digital regenesys",
       "product-management": `
         product management courses,
         product management course,
@@ -333,8 +333,8 @@ const Data = {
       home: "Upskill yourself with Digital Regenesys  online courses for digital-age skills to become future-ready for the dynamic workplace in the disruptive digital age.",
       about:
         "At Digital Regenesys, we provide top-notch education to empower all students for success in the 5th Industrial Revolution and beyond. Discover our digital courses now.",
-      "management-advancement":
-        "With Management Advancement Course online at Digital Regenesys, explore career-enhancing opportunities and gain leadership skills & certification. Enroll Now!",
+      "management-advancement-programme":
+        "With Management Advancement Programme Course online at Digital Regenesys, explore career-enhancing opportunities and gain leadership skills & certification. Enroll Now!",
 
       "operations-and-supply-chain-management":
         "Operations & Supply Chain Management Course online at Digital Regenesys offers industry-relevant skills for success. Unlock your potential today.        ",
@@ -446,7 +446,7 @@ const Data = {
       "software-development": "/software-development-course",
       "full-stack-development": "/full-stack-development",
       "data-and-business-analytics": "/data-and-business-analytics",
-      "management-advancement": "/all-courses/management-advancement",
+      "management-advancement-programme": "/all-courses/management-advancement-programme",
       "product-management": "/all-courses/product-management",
     },
     ogImg: {
@@ -467,7 +467,7 @@ const Data = {
         "https://www.digitalregenesys.com/assets/images/gallery/DSN.webp",
       "artificial-intelligence":
         "https://www.digitalregenesys.com/assets/images/gallery/AIN.webp",
-      "management-advancement":
+      "management-advancement-programme":
         "https://www.digitalregenesys.com/assets/images/gallery/MD.webp",
       "product-management":
         "https://www.digitalregenesys.com/assets/images/gallery/PDM.webp",
