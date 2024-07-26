@@ -21,7 +21,6 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
           alt="Logo footer"
           width={174}
           height={60}
-          priority
         />
       </div>
       <div className={styles.footerTextheader}>

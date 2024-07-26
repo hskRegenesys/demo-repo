@@ -214,7 +214,6 @@ const AllCoursesSlider: React.FC<allCoursesSliderProps> = ({
                         className={Styles.cardIcon}
                         width={24}
                         height={24}
-                        priority={true}
                       />
                     </div>
 

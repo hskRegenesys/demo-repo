@@ -26,7 +26,6 @@ const ToolCoveredCard: React.FC<ToolCoveredCardProps> = ({ data }) => {
                 title={image.alt}
                 width={148}
                 height={82}
-                priority
               />
             </div>
           ))}
