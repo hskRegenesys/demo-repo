@@ -137,12 +137,15 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
               },
               865: {
                 slidesPerView: 2,
+                centeredSlides: false,
               },
               1200: {
                 slidesPerView: 3,
+                centeredSlides: false,
               },
               1700: {
                 slidesPerView: 3,
+                centeredSlides: false,
               },
             }}
           >

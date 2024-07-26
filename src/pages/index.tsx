@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Layout from "@/components/Layout/Layout";
+import HeaderOne from "@/components/Header/HeaderOne";
+import MobileMenu from "@/components/Header/MobileMenu";
+import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 
-const HeaderOne = dynamic(() => import("@/components/Header/HeaderOne"), {
-  ssr: false,
-});
-const MobileMenu = dynamic(() => import("@/components/Header/MobileMenu"), {
-  ssr: false,
-});
-const HomeSliderBanner = dynamic(
-  () => import("@/components/NewComponents/homeSliderBanner/HomeSliderBanner"),
-  { ssr: false }
-);
 const StudentYoutubeVideos = dynamic(
   () =>
     import(
