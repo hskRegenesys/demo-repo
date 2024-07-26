@@ -88,6 +88,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                           className={Styles.img}
                           width={12}
                           height={12}
+                          priority
                         />
                       </span>
                     </a>

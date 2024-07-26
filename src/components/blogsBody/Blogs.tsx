@@ -5,20 +5,20 @@ import { IPostListTypes } from "./dataTypes";
 import { Spinner } from "react-bootstrap";
 import PostCarousel from "./PostCarousel";
 
-const Blogs = () => {
+const Blogs = (props: any) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
 
-  const getCategoryList = async () => {
-    const response = await wpService.allCategories({ per_page: 40 });
-    if (response?.length > 0) {
-      postByCategory(response);
-    }
-  };
-  useEffect(() => {
-    getCategoryList();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // const getCategoryList = async () => {
+  //   const response = await wpService.allCategories({ per_page: 40 });
+  //   if (response?.length > 0) {
+  //     postByCategory(response);
+  //   }
+  // };
+  // useEffect(() => {
+  //   getCategoryList();
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   const sitemapData = postList?.flatMap((item) => item.posts);
   const xmlOperation = async (sitemapData: any) => {
@@ -55,11 +55,15 @@ const Blogs = () => {
         }),
       }))
     );
-    if (apiResponse.length > 0) {
+    if (apiResponse?.length > 0) {
       setIsLoading(false);
       setPostList(apiResponse);
     }
   };
+
+  useEffect(() => {
+    postByCategory(props?.response);
+  }, []);
 
   const blogBaseUrl =
     process.env.ENV_NAME === "development"

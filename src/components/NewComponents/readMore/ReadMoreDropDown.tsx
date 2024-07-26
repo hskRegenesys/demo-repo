@@ -38,6 +38,7 @@ const ReadMoreDropDown: React.FC<{ data: ReadMoreData }> = ({ data }) => {
                   className="right-single-arrow"
                   width={20}
                   height={20}
+                  priority
                 />
               </span>
             </button>

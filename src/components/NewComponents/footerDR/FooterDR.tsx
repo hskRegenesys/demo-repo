@@ -21,6 +21,7 @@ const FooterContent1: React.FC<FooterContent1Props> = ({
           alt="Logo footer"
           width={174}
           height={60}
+          priority
         />
       </div>
       <div className={styles.footerTextheader}>
@@ -152,6 +153,7 @@ const FooterContent4: React.FC = () => {
                   alt="Facebook icon"
                   width={14}
                   height={14}
+                  priority
                 />
               </span>
               <span>Facebook</span>
