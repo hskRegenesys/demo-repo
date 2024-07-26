@@ -510,8 +510,7 @@ function ModalPopup(props: any) {
                     </div>
                   </div> */}
                   <div className="text-center">
-                    {(programmeOfInterest === "Digital Marketing" ||
-                      programmeOfInterest === "Design Thinking") && (
+                    {(programmeOfInterest === "Design Thinking") && (
                       <small className="text-black">
                         *Learn collaboratively! Apply with 15 people to begin
                         the course
