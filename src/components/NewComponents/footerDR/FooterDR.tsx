@@ -171,6 +171,7 @@ const FooterContent4: React.FC = () => {
                   alt="Youtube icon"
                   width={14}
                   height={14}
+                  priority
                 />
               </span>
               <span>Youtube</span>
@@ -190,6 +191,7 @@ const FooterContent4: React.FC = () => {
                   alt="Instagram icon"
                   width={14}
                   height={14}
+                  priority
                 />
               </span>
               <span>Instagram</span>
