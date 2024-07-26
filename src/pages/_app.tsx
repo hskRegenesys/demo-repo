@@ -37,6 +37,7 @@ const MyApp = ({ Component, pageProps }: any) => {
       const countryCode = geoipResponse.country.iso_code.toLowerCase();
       const url = window.location.href;
       const { hostname, pathname } = new URL(url.startsWith('http') ? url : 'http://' + url);
+      console.log('GEO',hostname, pathname,url,countryCode)
       if (countryCode === "gb" && (url.includes('/all-courses') || pathname == '/')) {
        let ukURL =  process.env.ENV_NAME === "PRODUCTION" ? 'https://digitalregenesys.com/uk' : 'https://qa.digitalregenesys.com/uk';
         router.push(ukURL);
