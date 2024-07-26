@@ -35,8 +35,8 @@ const StudentReview = ({
               slidesPerGroup: 1,
               centeredSlides: true,
             },
-            720: { slidesPerView: 2 },
-            1000: { slidesPerView: 3 },
+            720: { slidesPerView: 2, centeredSlides: false },
+            1000: { slidesPerView: 3, centeredSlides: false },
           }}
         >
           {StudentReviewCard.map((item: any, index: number) => (

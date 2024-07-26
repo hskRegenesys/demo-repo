@@ -65,7 +65,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                   width={384}
                   height={187}
                   layout="responsive"
-                  priority
                 />
 
                 <div className={Styles.blogContent}>
