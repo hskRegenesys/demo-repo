@@ -5,6 +5,7 @@ import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import HomeSliderBanner from "@/components/NewComponents/homeSliderBanner/HomeSliderBanner";
 
+
 const StudentYoutubeVideos = dynamic(
   () =>
     import(
@@ -101,6 +102,8 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
   const handlePopupClose = () => {
     setIsPopupVisible(false);
   };
+
+  
 
   return (
     <Layout pageTitle="new-home">
