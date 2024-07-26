@@ -102,6 +102,31 @@ const HomeNew = ({ initialFaqData, homePageData }: any) => {
     setIsPopupVisible(false);
   };
 
+  useEffect(() => {
+    const updateCityText = (geoipResponse: any) => {
+      const countryCode = geoipResponse.country.iso_code.toLowerCase();
+      console.log("Country code", countryCode);
+      console.log("geo ip respo", geoipResponse.country);
+      // if (countryCode === "gb") {
+      //   window.location.href = `https://qa.digitalregenesys.com/uk`;
+      // }
+    };
+
+    const onSuccess = (geoipResponse: any) => {
+      updateCityText(geoipResponse);
+    };
+
+    const onError = (error: any) => {
+      console.log("Error", error);
+    };
+
+    if (typeof (window as any).geoip2 !== "undefined") {
+      (window as any).geoip2.city(onSuccess, onError);
+    } else {
+      console.log("Error fetching country");
+    }
+  }, []);
+
   return (
     <Layout pageTitle="new-home">
       {isPopupVisible && (

@@ -113,7 +113,13 @@ export default function Document() {
               `,
           }}
         />
+
+        <script
+          src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js"
+          type="text/javascript"
+        ></script>
       </Head>
+
       <body>
         <Main />
         <NextScript />
