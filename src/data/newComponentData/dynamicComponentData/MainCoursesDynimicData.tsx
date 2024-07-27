@@ -19,8 +19,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "100806+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -405,8 +405,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "34000+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -1108,8 +1108,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "111719+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -1499,8 +1499,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "42618+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -1847,8 +1847,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "110000+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -2444,8 +2444,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "3396+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -2823,8 +2823,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "7875+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -3284,8 +3284,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "12843+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -3675,8 +3675,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "7541+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
@@ -4068,7 +4068,8 @@ const MainCoursesDynimicData = {
           ],
         },
         {
-          heading: "Management Advancement Programme Online Certification Course",
+          heading:
+            "Management Advancement Programme Online Certification Course",
           faqs: [
             {
               question:
@@ -4117,8 +4118,8 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "2500+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
