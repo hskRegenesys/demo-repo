@@ -3,6 +3,7 @@ const MainCoursesDynimicData = {
     CourseCode: "DSN",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/DS-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/BA-banner-mobile.png",
       coursePageName: "Data Science",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -388,7 +389,8 @@ const MainCoursesDynimicData = {
     CourseCode: "DMN",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/Banner-DM-web.png",
-      BannerImgMobile: "/assets/images/allImages/Banner-DM-mobile.png",
+      BannerImgMobile:
+        "/assets/images/allImages/Digital-Marketing-GenAI-mobile.png",
       coursePageName: "Digital Marketing Course With Gen AI",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1091,7 +1093,8 @@ const MainCoursesDynimicData = {
     CourseCode: "PM",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/PM-banner.webp",
+      BannerImgDesktop: "/assets/images/allImages/PM-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/PM-banner-mobile.png",
       coursePageName: " Project Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1483,6 +1486,7 @@ const MainCoursesDynimicData = {
     CourseCode: "AIN",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/AI-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/AI-banner.webp",
       coursePageName: " Artificial Intelligence",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1831,6 +1835,7 @@ const MainCoursesDynimicData = {
     CourseCode: "CSC",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/CS-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/CS-banner.webp",
       coursePageName: " Cyber security",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2428,6 +2433,7 @@ const MainCoursesDynimicData = {
     CourseCode: "DTC",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/DT-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/DT-banner-mobile.png",
       coursePageName: " Design Thinking",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -2806,7 +2812,8 @@ const MainCoursesDynimicData = {
   FullStackDeveloper: {
     CourseCode: "FSD",
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/FS-banner.webp",
+      BannerImgDesktop: "/assets/images/allImages/FS-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/FS-banner-mobile.png",
       coursePageName: " Full Stack Development",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -3268,6 +3275,8 @@ const MainCoursesDynimicData = {
     CourseCode: "DBA",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/DBA-banner.webp",
+      BannerImgMobile:
+        "/assets/images/allImages/data-and-business-analytics.png",
       coursePageName: " Data and Business Analytics",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
@@ -3658,7 +3667,8 @@ const MainCoursesDynimicData = {
     CourseCode: "MD",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/MA-banner.webp",
+      BannerImgDesktop: "/assets/images/allImages/MA-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/MA-banner-mobile.png",
       coursePageName: " Management Advancement Programme",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -4101,7 +4111,8 @@ const MainCoursesDynimicData = {
   ProductManagement: {
     CourseCode: "PDM",
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/PDM-banner.webp",
+      BannerImgDesktop: "/assets/images/allImages/PDM-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/PDM-banner-mobile.png",
       coursePageName: " Product Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",

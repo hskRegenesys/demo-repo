@@ -11,6 +11,7 @@ interface BannerComponentProps {
 
 type BannerCourseData = {
   BannerImgDesktop: string;
+  BannerImgMobile: string;
   coursePageName: string;
   BestSaleText: string;
   topTextMessage: string;
@@ -182,7 +183,26 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
         <div className={styles.imageSection}>
           <div className={styles.imageCard}>
-            {data.BannerImgDesktop && (
+            <div className="d-none d-lg-block">
+              <Image
+                className={styles.imageBanner}
+                src={data.BannerImgDesktop}
+                alt={"Desktop Banner for Course"}
+                width={1100}
+                height={1112}
+              />
+            </div>
+            <div className="d-block d-lg-none">
+              <Image
+                className={styles.imageBanner}
+                src={data.BannerImgMobile}
+                alt={"Mobile Banner for Course"}
+                width={592}
+                height={400}
+              />
+            </div>
+
+            {/* {data.BannerImgDesktop && (
               <Image
                 className={styles.imageBanner}
                 src={
@@ -202,7 +222,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                     : 660
                 }
               />
-            )}
+            )} */}
             {vidoPlayIcon && (
               <div
                 className={styles.playIconContainer}
