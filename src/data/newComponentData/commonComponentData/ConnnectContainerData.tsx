@@ -1,7 +1,7 @@
 const connectContainerData = {
   connectContainerHeader: "Get In Touch With Us",
   connectContainerTittle:
-    "Connect with us now for a Support experience like no other!",
+    "Connect with us now for a support experience like no other!",
   vectorWhiteIcon: "/assets/images/allImages/checkVectorWhiteIcon.svg",
   whiteFilledStarIcon: "/assets/images/allImages/WhiteFilledStarIcon.svg",
   discountIcon: "/assets/images/allImages/DiscountIcon.svg",

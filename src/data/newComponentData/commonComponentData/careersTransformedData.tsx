@@ -1,7 +1,7 @@
 const careersTransformedData = {
   frame1: "",
   frame2: "",
-  heading: "Success Reviews",
+  heading: "Student Reviews",
   secondHeading: "Over 10,000+ Learners",
   "four-card": {
     card1: {

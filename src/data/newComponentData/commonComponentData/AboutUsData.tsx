@@ -12,7 +12,7 @@ const AboutUsData = {
     },
     {
       image: "/assets/images/allImages/Award.svg",
-      title: "International Certificate",
+      title: "Global Certificate",
     },
     {
       image: "/assets/images/allImages/Counselling.svg",
