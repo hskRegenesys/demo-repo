@@ -131,8 +131,65 @@ b {
   list-style-type: disc;
 }
 .link-title ul {
-  padding-left: 44px !important;
+  padding-left: 20px !important;
   margin-bottom: 10px;
+}
+
+#ez-toc-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ez-toc-title {
+  font-size: 22px;
+}
+
+.ez-toc-list li {
+  list-style: disc !important;
+  list-style-type: disc !important;
+  line-height: 35px !important;
+  overflow: visible !important;
+}
+
+.ez-toc-link {
+  font-size: 16px;
+  color: #000;
+}
+#ez-toc-container a:visited,
+#ez-toc-container a {
+  color: #000 !important;
+}
+
+.hide-toc-list {
+  display: none;
+}
+
+.hide-faq-list {
+  display: none;
+}
+
+.eb-accordion-title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 15px;
+}
+/* .eb-accordion-icon {
+  display: none;
+} */
+.eb-accordion-content {
+  border: 1px solid black;
+  padding: 15px 20px 0px 20px;
+  margin-bottom: 20px;
+}
+.eb-accordion-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.wp-block-essential-blocks-accordion-item {
+  cursor: pointer;
 }
 
 /* 
@@ -373,6 +430,13 @@ p {
 
 .feedback-form-wrapper .post-comment-btn {
   padding-top: 0px !important;
+}
+
+.blog-content-container .ez-toc-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 }
 
 @media (max-width: 1440px) {
