@@ -113,6 +113,26 @@ export default function Document() {
               `,
           }}
         />
+
+        <link
+          rel="stylesheet"
+          id="ez-toc-css"
+          href="https://blog-api.digitalregenesys.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.67.1"
+          media="all"
+        />
+
+        <link
+          rel="stylesheet"
+          id="essential-blocks-animation-css"
+          href="https://blog-api.digitalregenesys.com/wp-content/plugins/essential-blocks/assets/css/animate.min.css?ver=4.8.1"
+          media="all"
+        />
+        <link
+          rel="stylesheet"
+          id="essential-blocks-frontend-style-css"
+          href="https://blog-api.digitalregenesys.com/wp-content/uploads/eb-style/frontend/style.css?ver=4.8.1"
+          media="all"
+        />
       </Head>
       <body>
         <Main />
@@ -166,6 +186,19 @@ export default function Document() {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+
+        <script
+          id="ez-toc-scroll-scriptjs-js-extra"
+          dangerouslySetInnerHTML={{
+            __html: `
+            var eztoc_smooth_local = {"scroll_offset":"30","add_request_uri":""};
+          `,
+          }}
+        />
+        <script
+          src="https://blog-api.digitalregenesys.com/wp-content/plugins/easy-table-of-contents/assets/js/smooth_scroll.min.js?ver=2.0.67.1"
+          id="ez-toc-scroll-scriptjs-js"
+        />
       </body>
     </Html>
   );
