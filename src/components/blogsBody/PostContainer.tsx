@@ -4,7 +4,10 @@ import Link from "next/link";
 import { getOneRandom } from "src/utils/common";
 
 const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
-  const blogBaseUrl = "https://www.digitalregenesys.com/blog";
+  const blogBaseUrl =
+    process.env.ENV_NAME === "development"
+      ? "/blog"
+      : "https://www.digitalregenesys.com/blog";
 
   return (
     <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
