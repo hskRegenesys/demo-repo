@@ -509,11 +509,19 @@ p {
     margin-top: 30px;
   }
 
-  .blog-content-container .link-title h2,
-  .blog-content-container .link-title h3 {
+  .blog-content-container .link-title h2 {
     font-size: 20px !important;
     margin-top: 10px;
     letter-spacing: 0.2px;
+  }
+  .blog-content-container .link-title h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 0.2px;
+  }
+
+  .eb-accordion-title {
+    font-size: 16px !important;
   }
   .blog-content-container .link-title p {
     font-size: 16px;
