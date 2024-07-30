@@ -11,26 +11,26 @@ import UspSectionData from "../commonComponentData/UspSectionData";
 
 const HomeDynamicData = {
   LearnersSupportSectionData: {
-    LsSectionTitle: "Digital Regenesys Learners Support",
+    LsSectionTitle: "Digital Regenesys’ Learners Support",
     LsHeding: "Talk To Our Experts. We’re Available 24/7",
     LearnersSupportCards: [
       {
         LsImg: "/assets/images/allImages/LearnersSupport-one.webp",
-        LsQuestion: "Discuss with a career advisor",
-        LsText: "Not sure? Talk to an expert",
-        LsButtonText: "Talk Now",
+        LsQuestion: "Unsure About The NextStep?",
+        LsText: "Talk To A Career Advisor Today",
+        LsButtonText: "Connect Now",
       },
       {
         LsImg: "/assets/images/allImages/LearnersSupport-two.webp",
-        LsQuestion: "Download Brochure",
-        LsText: "Get Complete Details",
-        LsButtonText: "Download",
+        LsQuestion: "Get Your Free Brochure",
+        LsText: "Access Detailed Course Information",
+        LsButtonText: "Download Now",
       },
       {
         LsImg: "/assets/images/allImages/LearnersSupport-three.webp",
-        LsQuestion: "Eligibility",
-        LsText: "Know Your Eligibility",
-        LsButtonText: " Check Eligibility",
+        LsQuestion: "Eligibility Check Made Easy",
+        LsText: "See if You Qualify for Our Programmes",
+        LsButtonText: "Check Eligibility",
       },
     ],
   },
