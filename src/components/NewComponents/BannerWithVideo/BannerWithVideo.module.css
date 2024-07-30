@@ -40,9 +40,9 @@
 }
 
 .imageCard {
-  max-width: 660px;
+  /* max-width: 660px; */
   height: 100%;
-  max-width: 570px;
+  max-width: 640px;
   border-radius: 40px;
   background: #ebebeb;
   width: 100%;
@@ -343,7 +343,7 @@
     margin: 0px 16px;
     max-width: none;
     height: auto;
-    background: #ebebeb;
+    background: transparent;
     width: 100%;
     border-radius: 72px;
   }
