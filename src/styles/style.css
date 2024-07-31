@@ -19857,6 +19857,12 @@ input.PhoneInputInput {
   margin-left: 0px !important;
 }
 
+.news-phone-input-style {
+  border: none !important;
+  border-radius: 5px;
+  padding: 6px 16px !important;
+}
+
 .blogs-apply-now input.PhoneInputInput {
   padding-left: 0px !important;
 }

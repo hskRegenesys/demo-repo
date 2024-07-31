@@ -186,7 +186,7 @@ const FeedBackForm = () => {
                     }
                   }}
                   onBlur={() => trigger("Phone")}
-                  className="blogs-apply-now form-control"
+                  className="blogs-apply-now form-control news-phone-input-style"
                 />
                 {phoneNumberError ? (
                   <span className="text-danger">{phoneNumberError}</span>
@@ -216,7 +216,6 @@ const FeedBackForm = () => {
                 {errors.Email && (
                   <small className="text-danger">Invalid email address</small>
                 )}
-
               </div>
             </div>
             <div className="col-6 mt-2 feedback-form-wrapper">

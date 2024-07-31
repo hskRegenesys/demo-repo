@@ -159,18 +159,11 @@ Template[Constants.image] = (data) => {
 };
 
 Template[Constants.faq] = (data) => {
-  let faqs: Array<{ [key: string]: string }> = [];
-
-  data?.faqsSection?.map((value: { faqs: Array<{ [key: string]: string }> }) =>
-    value.faqs.map((val) =>
-      faqs.push({ question: val.title, answer: val.text })
-    )
-  );
-
+  const faqs = data;
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((item) => {
+    mainEntity: faqs?.map((item: any) => {
       return {
         "@type": "Question",
         name: item.question,

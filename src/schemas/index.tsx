@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Template } from "./data";
 
 interface props {
-  type: string;
+  type: any;
   data?: any;
 }
 

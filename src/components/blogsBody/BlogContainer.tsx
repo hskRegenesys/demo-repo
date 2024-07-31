@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
@@ -14,21 +14,14 @@ const BlogContainer = ({
   setBlogList,
   postResponse,
   isBlogDetail,
+  faqsSchemaData,
 }: {
   slug: string;
   setBlogList: (value: any) => void;
   postResponse: Array<IPostTypes>;
   isBlogDetail?: boolean;
+  faqsSchemaData?: any;
 }) => {
-  // const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
-  // const getPost = async () => {
-  //   const response = await wpService.allPosts({ slug: slug });
-  //   !!response && setPostResponse(response);
-  //   !!response && setBlogList(response);
-  // };
-  // useEffect(() => {
-  //   getPost();
-  // }, [slug]);
   const [isMobileView, setIsMobileView] = useState(false);
   const [anchorData, setAnchorData] = useState<any>(null);
   const [anchorClicked, setAnchorClicked] = useState(false);
@@ -54,7 +47,7 @@ const BlogContainer = ({
             }
 
             if (anchor) {
-              const span = document.createElement("span");
+              const span = doc.createElement("span");
               span.innerHTML = anchor.innerHTML;
               tocElement.replaceChild(span, anchor);
             }
@@ -190,11 +183,7 @@ const BlogContainer = ({
           const contentWrapper = document.getElementById(targetId);
           if (contentWrapper) {
             contentWrapper.classList.toggle("hide-faq-list");
-          } else {
-            console.log("Content with ID:", targetId, "not found.");
           }
-        } else {
-          console.log("Target ID is missing for:", titleToggle);
         }
       }
     };
@@ -213,6 +202,9 @@ const BlogContainer = ({
   return (
     <>
       <Schemas type={Constants?.article} data={postResponse} />
+      {faqsSchemaData && (
+        <Schemas type={Constants?.faq} data={faqsSchemaData} />
+      )}
       <div style={{ paddingTop: "80px" }}>
         <div>
           {imageUrl && typeof imageUrl === "string" && (
