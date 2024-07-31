@@ -190,7 +190,7 @@ const NewsLetter = () => {
                       }
                     }}
                     onBlur={() => trigger("Phone")}
-                    className="blogs-apply-now form-control"
+                    className="blogs-apply-now form-control news-phone-input-style"
                   />
                   {phoneNumberError ? (
                     <span className="text-danger">{phoneNumberError}</span>
