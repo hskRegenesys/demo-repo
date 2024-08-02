@@ -27,6 +27,6 @@
     "sourceMap": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/setCookie.js"],
   "exclude": ["node_modules"]
 }

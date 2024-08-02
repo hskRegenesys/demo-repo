@@ -13,6 +13,7 @@ import "@/styles/responsive.css";
 import Schemas from "src/schemas";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { getCookie, handleSetCookie } from "src/utils/cookieutils";
 
 const MyApp = ({ Component, pageProps }: any) => {
   const router = useRouter();
@@ -21,6 +22,7 @@ const MyApp = ({ Component, pageProps }: any) => {
     router.query;
   const salesForceUrl = `https://api.vinecrms.com/api/`;
   const leadsGenerateUrl = `https://uat-api-leads.digitalregenesys.com/leads/`;
+  const cookieName = "ukUser";
 
   //const vineCrmTawk = `https://api.vinecrms.com/api/`;
 
@@ -33,31 +35,54 @@ const MyApp = ({ Component, pageProps }: any) => {
   }, []);
 
   useEffect(() => {
-    const updateCityText = (geoipResponse: any) => {
-      const countryCode = geoipResponse.country.iso_code.toLowerCase();
-      const url = window.location.href;
-      const { hostname, pathname } = new URL(url.startsWith('http') ? url : 'http://' + url);
-      console.log('GEO',hostname, pathname,url,countryCode)
-      if (countryCode === "gb" && (url.includes('/all-courses') || pathname == '/')) {
-       let ukURL =  process.env.ENV_NAME === "PRODUCTION" ? 'https://digitalregenesys.com/uk' : 'https://qa.digitalregenesys.com/uk';
-        router.push(ukURL);
+    const isCookieSet = getCookie(cookieName);
+    if (!isCookieSet) {
+      const updateCityText = (geoipResponse: any) => {
+        const countryCode = geoipResponse.country.iso_code.toLowerCase();
+
+        const url = window.location.href;
+        const { hostname, pathname } = new URL(
+          url.startsWith("http") ? url : "http://" + url
+        );
+        console.log("GEO---", hostname, pathname, url, countryCode);
+        if (
+          countryCode === "gb" ||
+          (countryCode === "fr" &&
+            (url.includes("/all-courses") || pathname == "/"))
+        ) {
+          let ukURL =
+            process.env.ENV_NAME === "PRODUCTION"
+              ? "https://digitalregenesys.com/uk"
+              : "https://qa.digitalregenesys.com/uk";
+          router.push(ukURL);
+          handleSetCookie(cookieName, true);
+        } else {
+          handleSetCookie(cookieName, false);
+        }
+      };
+
+      const onSuccess = (geoipResponse: any) => {
+        updateCityText(geoipResponse);
+      };
+
+      const onError = (error: any) => {
+        console.log("GEOPIP_Error", error);
+      };
+
+      if (typeof (window as any).geoip2 !== "undefined") {
+        (window as any).geoip2.city(onSuccess, onError);
+      } else {
+        console.log("Error fetching country");
       }
-    };
-
-    const onSuccess = (geoipResponse: any) => {
-      updateCityText(geoipResponse);
-    };
-
-    const onError = (error: any) => {
-      console.log("GEOPIP_Error", error);
-    };
-
-    if (typeof (window as any).geoip2 !== "undefined") {
-      (window as any).geoip2.city(onSuccess, onError);
     } else {
-      console.log("Error fetching country");
+      let ukURL =
+        process.env.ENV_NAME === "PRODUCTION"
+          ? "https://digitalregenesys.com/uk"
+          : "https://qa.digitalregenesys.com/uk";
+      router.push(ukURL);
     }
   }, []);
+
   return (
     <ContextProvider>
       <div id="tawk_5825dfc218d9f16af02abeea"></div>
