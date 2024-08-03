@@ -36,7 +36,8 @@ const MyApp = ({ Component, pageProps }: any) => {
 
   useEffect(() => {
     const isCookieSet = getCookie(cookieName);
-    if (!isCookieSet) {
+    console.log("check cookiesssss", isCookieSet)
+    if (isCookieSet) {
       const updateCityText = (geoipResponse: any) => {
         const countryCode = geoipResponse.country.iso_code.toLowerCase();
 
@@ -46,9 +47,8 @@ const MyApp = ({ Component, pageProps }: any) => {
         );
         console.log("GEO---", hostname, pathname, url, countryCode);
         if (
-          countryCode === "gb" ||
-          (countryCode === "fr" &&
-            (url.includes("/all-courses") || pathname == "/"))
+          countryCode === "gb"  &&
+            (url.includes("/all-courses") || pathname == "/")
         ) {
           let ukURL =
             process.env.ENV_NAME === "PRODUCTION"
@@ -77,8 +77,8 @@ const MyApp = ({ Component, pageProps }: any) => {
     } else {
       let ukURL =
         process.env.ENV_NAME === "PRODUCTION"
-          ? "https://digitalregenesys.com/uk"
-          : "https://qa.digitalregenesys.com/uk";
+          ? "https://digitalregenesys.com/"
+          : "https://qa.digitalregenesys.com/";
       router.push(ukURL);
     }
   }, []);
