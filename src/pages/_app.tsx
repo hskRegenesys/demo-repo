@@ -45,8 +45,7 @@ const MyApp = ({ Component, pageProps }: any) => {
               url.startsWith("http") ? url : "http://" + url
             );
             console.log("GEO---", hostname, pathname, url, countryCode);
-            if (
-              countryCode === "gb"  &&
+            if (countryCode === "gb"  &&
                 (url.includes("/all-courses") || pathname == "/")
             ) {
               handleSetCookie(cookieName, true);
@@ -78,20 +77,23 @@ const MyApp = ({ Component, pageProps }: any) => {
 
          
       }
-      else if(isCookieSet === 'true') {
-      let ukURL =
-        process.env.ENV_NAME === "PRODUCTION"
-          ? "https://digitalregenesys.com/uk"
-          : "https://qa.digitalregenesys.com/uk";
-      router.push(ukURL);
-    }
-    else{
-      let ukURL =
-        process.env.ENV_NAME === "PRODUCTION"
-          ? "https://digitalregenesys.com/"
-          : "https://qa.digitalregenesys.com/";
-      router.push(ukURL);
-    }
+      else {
+        if(isCookieSet === 'true') {
+          const url = window.location.href;
+            const { hostname, pathname } = new URL(
+              url.startsWith("http") ? url : "http://" + url
+            );
+            if ((url.includes("/all-courses") || pathname == "/")) {
+              handleSetCookie(cookieName, true);
+              let ukURL =
+                process.env.ENV_NAME === "PRODUCTION"
+                  ? "https://digitalregenesys.com/uk"
+                  : "https://qa.digitalregenesys.com/uk";
+              router.push(ukURL);
+            }
+        }
+        
+      }
   }, []);
 
   return (
