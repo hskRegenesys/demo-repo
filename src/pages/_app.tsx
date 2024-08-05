@@ -36,45 +36,59 @@ const MyApp = ({ Component, pageProps }: any) => {
 
   useEffect(() => {
     const isCookieSet = getCookie(cookieName);
-    console.log("check cookiesssss", isCookieSet)
-    if (isCookieSet) {
-      const updateCityText = (geoipResponse: any) => {
-        const countryCode = geoipResponse.country.iso_code.toLowerCase();
+      if (isCookieSet == null) {
+        alert("Hiiiii")
+        
+          const updateCityText = (geoipResponse: any) => {
+            const countryCode = geoipResponse.country.iso_code.toLowerCase();
+  
+            const url = window.location.href;
+            const { hostname, pathname } = new URL(
+              url.startsWith("http") ? url : "http://" + url
+            );
+            console.log("GEO---", hostname, pathname, url, countryCode);
+            if (
+              countryCode === "gb"  &&
+                (url.includes("/all-courses") || pathname == "/")
+            ) {
+              handleSetCookie(cookieName, true);
 
-        const url = window.location.href;
-        const { hostname, pathname } = new URL(
-          url.startsWith("http") ? url : "http://" + url
-        );
-        console.log("GEO---", hostname, pathname, url, countryCode);
-        if (
-          countryCode === "gb"  &&
-            (url.includes("/all-courses") || pathname == "/")
-        ) {
-          let ukURL =
-            process.env.ENV_NAME === "PRODUCTION"
-              ? "https://digitalregenesys.com/uk"
-              : "https://qa.digitalregenesys.com/uk";
-          router.push(ukURL);
-          handleSetCookie(cookieName, true);
-        } else {
-          handleSetCookie(cookieName, false);
-        }
-      };
+              // let ukURL =
+              //   process.env.ENV_NAME === "PRODUCTION"
+              //     ? "https://digitalregenesys.com/uk"
+              //     : "https://qa.digitalregenesys.com/uk";
+              // router.push(ukURL);
+            }
+            else{
+              handleSetCookie(cookieName, false);
+            }
+            
+          };
+          const onSuccess = (geoipResponse: any) => {
+            updateCityText(geoipResponse);
+          };
 
-      const onSuccess = (geoipResponse: any) => {
-        updateCityText(geoipResponse);
-      };
+          const onError = (error: any) => {
+            console.log("GEOPIP_Error", error);
+          };
 
-      const onError = (error: any) => {
-        console.log("GEOPIP_Error", error);
-      };
+          if (typeof (window as any).geoip2 !== "undefined") {
+            (window as any).geoip2.country(onSuccess, onError);
+            console.log()
+          } else {
+            console.log("Error fetching country");
+          }
 
-      if (typeof (window as any).geoip2 !== "undefined") {
-        (window as any).geoip2.city(onSuccess, onError);
-      } else {
-        console.log("Error fetching country");
+         
       }
-    } else {
+      else if(isCookieSet === 'true') {
+      let ukURL =
+        process.env.ENV_NAME === "PRODUCTION"
+          ? "https://digitalregenesys.com/uk"
+          : "https://qa.digitalregenesys.com/uk";
+      router.push(ukURL);
+    }
+    else{
       let ukURL =
         process.env.ENV_NAME === "PRODUCTION"
           ? "https://digitalregenesys.com/"
