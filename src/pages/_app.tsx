@@ -52,12 +52,11 @@ const MyApp = ({ Component, pageProps }: any) => {
                 (url.includes("/all-courses") || pathname == "/")
             ) {
               handleSetCookie(cookieName, true);
-
-              // let ukURL =
-              //   process.env.ENV_NAME === "PRODUCTION"
-              //     ? "https://digitalregenesys.com/uk"
-              //     : "https://qa.digitalregenesys.com/uk";
-              // router.push(ukURL);
+              let ukURL =
+                process.env.ENV_NAME === "PRODUCTION"
+                  ? "https://digitalregenesys.com/uk"
+                  : "https://qa.digitalregenesys.com/uk";
+              router.push(ukURL);
             }
             else{
               handleSetCookie(cookieName, false);
