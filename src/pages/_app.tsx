@@ -36,9 +36,7 @@ const MyApp = ({ Component, pageProps }: any) => {
 
   useEffect(() => {
     const isCookieSet = getCookie(cookieName);
-      if (isCookieSet == null) {
-        alert("Hiiiii")
-        
+      if (isCookieSet == null) {        
           const updateCityText = (geoipResponse: any) => {
             const countryCode = geoipResponse.country.iso_code.toLowerCase();
   
