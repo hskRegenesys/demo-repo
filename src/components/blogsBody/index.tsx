@@ -8,6 +8,8 @@ import CarouselComponent from "./Carousel";
 import LandingForm from "../commonForm/AllForms";
 import { carousalProps } from "./dataTypes";
 import { Toaster } from "react-hot-toast";
+import Styles from "../../components/NewComponents/blogSection/blogSection.module.css";
+import Image from "next/image";
 
 const BlogsBody = (props: any) => {
   return (

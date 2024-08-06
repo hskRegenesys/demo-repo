@@ -65,10 +65,12 @@ const Blogs = (props: any) => {
     postByCategory(props?.response);
   }, []);
 
+
   const blogBaseUrl =
     process.env.ENV_NAME === "development"
       ? "/blog/category"
       : "https://www.digitalregenesys.com/blog/category";
+
 
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
@@ -91,7 +93,11 @@ const Blogs = (props: any) => {
 
                   <div>
                     {/* <Link  passHref> */}
-                    <a href={`${blogBaseUrl}/${values?.slug}`} rel="noreferrer">
+                    <a
+                      href={`${blogBaseUrl}/${values?.slug}`}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <b
                         role="button"
                         className="btn px-1 py-0 text-dark-green m-0 new-view-more-title"
