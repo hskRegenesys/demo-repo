@@ -3,6 +3,7 @@ const MainCoursesDynimicData = {
     CourseCode: "DSN",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/DS-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/BA-banner-mobile.png",
       coursePageName: "Data Science",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -19,35 +20,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "100806+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Data Science Course Result",
+      courcename: "Data Science Course Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification ",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -60,7 +61,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/DS-explore.webp",
           contentText:
-            "Digital Regenesys Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it by using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT & GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
+            "Digital Regenesys’ Data Science Course is a 30-week course that will teach you all the aspects of Data Science and allow you to work on real-life big data sets. You will learn how to manipulate data and extract insights from it using Python and pandas. Gain Data Science skills and delve into Databases and analytics, Spark NLP, GIT, and GITHUB. Acquire the skills to innovate and solve complex problems with Data Science.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -68,7 +69,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -388,12 +389,13 @@ const MainCoursesDynimicData = {
     CourseCode: "DMN",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/Banner-DM-web.png",
-      BannerImgMobile: "/assets/images/allImages/Banner-DM-mobile.png",
+      BannerImgMobile:
+        "/assets/images/allImages/Digital-Marketing-GenAI-mobile.png",
       coursePageName: "Digital Marketing Course With Gen AI",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "Gaining a competitive edge in digital marketing with expertise in generative AI. With us, you'll gain practical knowledge in AI, SEO, social media marketing, and paid advertising strategies. Our hands-on experience and expert guidance will help you master the latest trends and techniques in digital marketing. ",
+        "Grow in the Digital Marketing game with expertise in generative AI. Our comprehensive programme delivers practical knowledge in AI, SEO, social media marketing, and paid advertising strategies. Benefit from our hands-on experience and expert guidance to master the latest trends and techniques in digital marketing.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/Y7wILgkvwd0?si=PWSsUbQ-7KjWxFkN",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
@@ -405,13 +407,13 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "34000+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
@@ -447,7 +449,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Digital Marketing Course With Gen AI Overview",
           contentImg: "/assets/images/allImages/dm-course-overview.png",
           contentText:
-            "Dive into the future of digital marketing with our cutting-edge course on Digital Marketing with Gen AI. This course is designed to equip you with the knowledge and skills to leverage generative AI technologies for innovative and effective marketing strategies. You'll learn how to harness AI to create compelling content, optimise campaigns, and drive unprecedented engagement and conversions. Whether you're a seasoned marketer or a newcomer to the field, this course will transform your approach to digital marketing.",
+            "Dive into the future of digital marketing with a 24-week course on Digital Marketing with Gen AI. This course is designed to equip you with the knowledge and skills to leverage generative AI technologies for innovative and effective marketing strategies. You'll learn how to harness AI to create compelling content, optimise campaigns, and drive unprecedented engagement and conversions. Whether you're a seasoned marketer or a newcomer to the field, this course will transform your approach to digital marketing.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -704,7 +706,8 @@ const MainCoursesDynimicData = {
                 "SEO and Technical Aspects(FAQ Schema,PESO Model: Paid, Earned, Shared, Owned Media)",
                 "Storytelling in Content Marketing",
                 "Content Creation Tools: Grammarly, Hemingway, Canva, Lumen5",
-                "Using AI for Content Creation - Text, Image. Case study: Midjourney, OpenArt ( DALL- E )",
+                "Using AI for Content Creation: Text and Image",
+                "Case Study: Midjourney and OpenArt (DALL-E)",
                 "Prompt Engineering for ChatGPT",
                 "Content Management Tools: WordPress, Trello, Hootsuite",
                 "Hands-on session",
@@ -975,7 +978,7 @@ const MainCoursesDynimicData = {
             {
               question: "What topics are covered in the course?",
               answer:
-                "The course covers AI-driven marketing methodologies, user research, market trend analysis, business model frameworks, financial strategies, marketing roadmaps, campaign planning, Agile methodologies, and data analytics.",
+                "This course covers the tools Google Analytics, Mailchimp, ChatGPT, Hemingway, Canva, Lumen5, Power BI, Semrush, etc.",
             },
             {
               question:
@@ -1091,12 +1094,13 @@ const MainCoursesDynimicData = {
     CourseCode: "PM",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/PM-banner.webp",
+      BannerImgDesktop: "/assets/images/allImages/PM-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/PM-banner-mobile.png",
       coursePageName: " Project Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements. It involves planning, executing, controlling, and closing the work of a team to achieve specific goals within a specified time frame. As businesses evolve, the need for effective project management becomes increasingly crucial for success.",
+        "The Project Management course offers a detailed curriculum, focusing on essential skills in project planning, execution, monitoring, and closing. Learners will gain hands-on experience with industry-standard tools and methodologies. The course equips learners with the confidence to manage projects of varying sizes and complexities, ensuring they can effectively lead teams, allocate resources, and meet project deadlines. With a blend of theoretical knowledge and practical application, this course prepares learners to excel in the dynamic field of project management.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/8BJll51jQbg?autoplay=1&loop=1&playlist=8BJll51jQbg",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
@@ -1108,35 +1112,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "111719+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "International Certification",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Project Management Course Result ",
+      courcename: "Project Management Course Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certificate",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: " Career Opportunities",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Countries Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -1150,7 +1154,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/PM-explore.webp",
           contentText:
-            "Enhance your skills and boost your career prospects with Digital Regenesys’s Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course. ",
+            "Enhance your skills and boost your career prospects with Digital Regenesys’ 22-week Project Management Course. Gain practical knowledge and learn industry best practices from experienced professionals. Master key project management concepts and methodologies to effectively lead teams and deliver successful projects on time and within budget. Take your career to the next level with our comprehensive Project Management Course.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -1158,7 +1162,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -1244,7 +1248,7 @@ const MainCoursesDynimicData = {
             },
             {
               weekHeading:
-                "Advance Project Management: Global Strategy for Managers",
+                "Advanced Project Management: Global Strategy for Managers",
               weekPoints: {
                 "": [
                   "Introduction - Organisational Project Management",
@@ -1483,6 +1487,7 @@ const MainCoursesDynimicData = {
     CourseCode: "AIN",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/AI-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/AI-banner.webp",
       coursePageName: " Artificial Intelligence",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1499,35 +1504,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "42618+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Artificial Intelligence Course Result",
+      courcename: "Artificial Intelligence Course Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -1541,7 +1546,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/AI-explore.webp",
           contentText:
-            "The Digital Regenesys’s Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
+            "The Digital Regenesys’s 37-week Artificial Intelligence Course offers comprehensive training on AI concepts, algorithms, and applications. Individuals will gain practical skills in machine learning, neural networks, and natural language processing. The AI course covers the latest trends in AI technology and provides hands-on experience with industry tools and software. Upon completion, participants will be equipped to build and deploy AI solutions in various domains.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -1549,7 +1554,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -1831,6 +1836,7 @@ const MainCoursesDynimicData = {
     CourseCode: "CSC",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/CS-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/CS-banner.webp",
       coursePageName: " Cyber security",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
@@ -1847,35 +1853,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "110000+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised ",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Cyber Security Course Result",
+      courcename: "Cyber Security Course Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -1889,7 +1895,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/CS-explore.webp",
           contentText:
-            "A  Cyber Security course comprises various aspects of cyber security, including network security, information security, cryptography, and ethical hacking. Students learn how to identify vulnerabilities in systems, mitigate security risks, and respond to security incidents effectively. Upon completion of the course, learners are prepared to pursue careers as cyber security analysts, consultants, or administrators in both the private and public sectors.",
+            "Digital Regenesys’ 15-week Cyber Security course equips students with practical skills in various aspects of cyber security, including network security, information security, cryptography, and ethical hacking. They learn how to identify vulnerabilities in systems, mitigate security risks, and respond to security incidents effectively. Upon completion of the course, learners are prepared to apply these skills in careers as cyber security analysts, consultants, or administrators in both the private and public sectors.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -1897,7 +1903,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -2377,7 +2383,7 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "How Long Does It Take to Complete a Cyber Security Course?",
+                "How long does it take to complete a cybersecurity course?",
               answer:
                 "The total duration of the Digital Regenesys Cyber Security Course is 15 Weeks (8 Weeks + 7 Weeks) course.",
             },
@@ -2428,11 +2434,12 @@ const MainCoursesDynimicData = {
     CourseCode: "DTC",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/DT-banner.webp",
+      BannerImgMobile: "/assets/images/allImages/DT-banner-mobile.png",
       coursePageName: " Design Thinking",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "Design thinking is a human-centred problem-solving process that involves empathy, creativity, and iteration. It is about putting the requirements at the forefront and developing innovative solutions to meet those needs. While designers have been using this approach for years, its principles can be applied by anyone who wants to solve complex problems and drive innovation.",
+        "Design thinking is a human-centric problem-solving process that involves empathy, creativity, and iteration. It is about putting the requirements at the forefront and developing innovative solutions to meet those needs. While designers have been using this approach for years, its principles can be applied by anyone who wants to solve complex problems and drive innovation.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/OfyDsBKZXic?autoplay=1&loop=1&playlist=OfyDsBKZXic",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
@@ -2444,35 +2451,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "3396+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Design Thinking Course Result",
+      courcename: "Design Thinking Course Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -2486,7 +2493,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/DT-explore.webp",
           contentText:
-            "Our Design Thinking course is designed to provide participants with the tools, techniques, and mindset to approach problem-solving in a human-centred, creative, and iterative manner. Through a combination of lectures, hands-on exercises, and real-world projects, participants will learn to empathise with users, define problems, ideate innovative solutions, prototype designs, and test them with users to gather feedback for continuous improvement.",
+            "Our 8-week Design Thinking course is designed to provide participants with the tools, techniques, and mindset to approach problem-solving in a human-centred, creative, and iterative manner. Through a combination of lectures, hands-on exercises, and real-world projects, participants will learn to empathise with users, define problems, ideate innovative solutions, prototype designs, and test them with users to gather feedback for continuous improvement.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -2494,7 +2501,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -2806,12 +2813,13 @@ const MainCoursesDynimicData = {
   FullStackDeveloper: {
     CourseCode: "FSD",
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/FS-banner.webp",
+      BannerImgDesktop: "/assets/images/allImages/FS-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/FS-banner-mobile.png",
       coursePageName: " Full Stack Development",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "The Full Stack Web & Software Development course provides a comprehensive curriculum, including concepts in front-end development, back-end development, databases and operating systems. Learners will gain practical skills to understand and perform front-end and back-end technologies. The course equips participants with the tools and techniques to work on full stack development concepts.",
+        "The Full Stack Web & Software Development course offers a robust curriculum, focusing on practical skills in front-end development, back-end development, databases, and operating systems. Learners will gain hands-on experience and the confidence to understand and perform front-end and back-end technologies. The course equips learners with the tools and techniques to work on full-stack development concepts.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/t-tnGObE7zM?autoplay=1&loop=1&playlist=t-tnGObE7zM",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
@@ -2823,40 +2831,40 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "7875+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Full Stack Web & Software Development Course Result",
+      courcename: "Full Stack Development Course Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
     ExploreTheCoursesData: {
-      smallHeading: "Explore the world of Full Stack Development With Us",
+      smallHeading: "Full Stack Development Course Outcomes",
       bigHeading: "Everything You Need to Know",
 
       contents: {
@@ -2873,7 +2881,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -3268,11 +3276,13 @@ const MainCoursesDynimicData = {
     CourseCode: "DBA",
     BannerWithVideoData: {
       BannerImgDesktop: "/assets/images/allImages/DBA-banner.webp",
+      BannerImgMobile:
+        "/assets/images/allImages/data-and-business-analytics.png",
       coursePageName: " Data and Business Analytics",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions by Industry Experts",
       contentText:
-        "Digital Regenesys's Data and Business Analytics No-Code course is designed to meet the needs of professionals and students seeking a comprehensive understanding of data science and data visualisation without the need for coding expertise. This innovative course introduces participants to key concepts and tools essential for effective data analysis and reporting. ",
+        "Digital Regenesys's Data and Business Analytics No-Code course is designed for professionals and students seeking a comprehensive understanding of data science and data visualisation without the need for coding expertise. This innovative course introduces participants to key concepts and tools essential for effective data analysis and reporting.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/NG1wmJ0Dic4?autoplay=1&loop=1&playlist=NG1wmJ0Dic4",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
@@ -3284,35 +3294,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "12843+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Data and Business Analytics Course Result",
+      courcename: "Data and Business Analytics Course Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -3334,7 +3344,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -3658,12 +3668,13 @@ const MainCoursesDynimicData = {
     CourseCode: "MD",
 
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/MA-banner.webp",
-      coursePageName: " Management Advancement",
+      BannerImgDesktop: "/assets/images/allImages/MA-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/MA-banner-mobile.png",
+      coursePageName: " Management Advancement Programme",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "Digital Regenesys's Management Advancement Programme (MAP) is your gateway to a comprehensive curriculum spanning strategic management, innovation, operational excellence, finance, marketing, and leadership. Gain practical insights and skills to confidently navigate complex business environments, drive innovation, optimise operations, and lead teams effectively. ",
+        "Digital Regenesys' Management Advancement Programme (MAP) is your gateway to a robust curriculum covering strategic management, innovation, operational excellence, finance, marketing, and leadership. Gain practical insights and skills to navigate complex business environments confidently, drive innovation, optimise operations, and lead teams effectively.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/FKksF9fkf5w?autoplay=1&loop=1&playlist=FKksF9fkf5w",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
@@ -3675,35 +3686,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "7541+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Management Advancement Programme Result",
+      courcename: "Management Advancement Programme Outcomes",
       Heding: "What Our Learners Have Achieved",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -3718,7 +3729,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/MA-explore.webp",
           contentText:
-            "Digital Regenesys’ Management Advancement Programme (MAP)  is a 40-week course that offers a comprehensive curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership.  It fosters a culture of innovation and implements effective strategies for idea generation and implementation. Participants will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, participants will be equipped with the skills needed to tackle challenges in management advancement.",
+            "Digital Regenesys’ Management Advancement Programme (MAP) is a 40-week course that offers a robust curriculum covering key areas such as strategic management, innovation, operational excellence, finance, marketing, and leadership. It fosters a culture of innovation and implements effective strategies for idea generation and implementation. You will gain practical knowledge and skills to navigate complex business environments, drive innovation, optimise operations and effectively lead teams. By the end of the course, you will be equipped with the skills needed to tackle challenges in the management advancement programme.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -3726,7 +3737,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -3911,7 +3922,7 @@ const MainCoursesDynimicData = {
     },
     CertificationDRData: {
       title: "Get Certified With Us",
-      heading: "Management Advancement Certification",
+      heading: "Management Advancement Programme Certification",
       paragraph:
         "Digital Regenesys aims to equip participants with skills in understanding market dynamics and identifying economic, political, and social risks. This Management Advancement certificate programme helps learners acquire hands-on insights and skills to confidently navigate intricate business landscapes, foster innovation, streamline operations, and master the art of effective team leadership.",
       tickImage: "/assets/images/allImages/Check.svg",
@@ -4005,7 +4016,7 @@ const MainCoursesDynimicData = {
           faqs: [
             {
               question:
-                "Who is eligible to enrol in Digital Regenesys's Management Advancement Programme (MDP)?",
+                "Who is eligible to enrol in Digital Regenesys's Management Advancement Programme (MAP)?",
               answer:
                 "The Management Advancement Programme is open to professionals from various industries and backgrounds who seek to enhance their management skills and advance their careers. There are no specific prerequisites, but participants are typically mid-career professionals or individuals with some managerial experience.",
             },
@@ -4068,7 +4079,8 @@ const MainCoursesDynimicData = {
           ],
         },
         {
-          heading: "Management Advancement Online Certification Course",
+          heading:
+            "Management Advancement Programme Online Certification Course",
           faqs: [
             {
               question:
@@ -4078,9 +4090,9 @@ const MainCoursesDynimicData = {
             },
             {
               question:
-                "Are there practical applications and projects in online Management Advancement Programmes?",
+                "Are there practical applications and projects in online Management Advancement Programme?",
               answer:
-                "Digital Regenesys’s Online Management Advancement programme includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
+                "Digital Regenesys’s Online Management Advancement Programme includes Capstone projects and real-world applications. These practical components allow learners to apply their knowledge to solve actual problems, enhancing their practical skills.",
             },
             {
               question:
@@ -4100,12 +4112,13 @@ const MainCoursesDynimicData = {
   ProductManagement: {
     CourseCode: "PDM",
     BannerWithVideoData: {
-      BannerImgDesktop: "/assets/images/allImages/PDM-banner.webp",
+      BannerImgDesktop: "/assets/images/allImages/PDM-banner-desktop.png",
+      BannerImgMobile: "/assets/images/allImages/PDM-banner-mobile.png",
       coursePageName: " Product Management",
       BestSaleText: "In Demand",
       topTextMessage: "Live Sessions By Industry Expert",
       contentText:
-        "Digital Regenesys’s Product Management is a 24-week course that will teach you all the aspects of Product Management and provide you with an opportunity to upscale your career. ",
+        "Grow your career with Digital Regenesys’ Product Management course. Get in-depth knowledge and practical skills in product strategy, market research, agile development, and user experience design. Our comprehensive programme covers the entire product lifecycle, from ideation to launch. Benefit from real-world projects and expert mentorship & drive innovation.",
       youtubeVideoLink:
         "https://www.youtube.com/embed/53hvNdE2HPo?autoplay=1&loop=1&playlist=53hvNdE2HPo",
       BrochureIcon: "/assets/images/allImages/Brochure.svg",
@@ -4117,35 +4130,35 @@ const MainCoursesDynimicData = {
           usplocationIcon: "/assets/images/allImages/Location.svg",
         },
         uspEnrollmentCard: {
-          uspEnrollmentText: "Students Enquired",
-          uspEnrollmentCount: "2500+",
+          uspEnrollmentText: "Regenesys Alumni",
+          uspEnrollmentCount: "300,000+",
           StudentEnrolIcon: "/assets/images/allImages/Users.svg",
           duration: "3000",
         },
         uspUpskillCard: {
-          uspUpskillText: "Internationally Recognised",
+          uspUpskillText: "Globally Recognised",
           uspBookIcon: "/assets/images/allImages/Learn.svg",
         },
       },
     },
     CourseBenefitsCardData: {
-      courcename: "Project Management Course Result",
+      courcename: "Product Management Course Outcomes",
       Heding: "What Our Learners Have Achieved ",
       Card: [
         {
           cardIcon: "/assets/images/allImages/money-tick.svg",
           text1: "100%",
-          text2: "Guaranteed Certification ",
+          text2: "Globally Recognised Certificate",
         },
         {
           cardIcon: "/assets/images/allImages/brifecase-tick.svg",
           text1: "1000+",
-          text2: "Latest Knowledge On the Course",
+          text2: "Enhanced Career Prospects",
         },
         {
           cardIcon: "/assets/images/allImages/medal.svg",
           text1: "190+",
-          text2: "Global Exposure",
+          text2: "Skill Enhancement",
         },
       ],
     },
@@ -4159,7 +4172,7 @@ const MainCoursesDynimicData = {
           contentHeading: "Course Overview",
           contentImg: "/assets/images/allImages/PDM-explore.webp",
           contentText:
-            "Enhance your skills and boost your career prospects with the Product Management Course. Our course offers a thorough curriculum to empower professionals with the necessary skills and expertise to excel and focus on Product Lifecycle Management. It encompasses all product lifecycle stages, from initial concept generation and customer analysis to product creation, release, and continuous improvement. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to succeed as Product Managers.",
+            "Upskill and boost your career prospects with a 24-week Product Management Course. Our course offers a thorough curriculum to empower professionals with the necessary skills and expertise to excel and focus on Product Lifecycle Management. It encompasses all product lifecycle stages, from initial concept generation and customer analysis to product creation, release, and continuous improvement. Through a combination of expert-led training, real-world applications, and collaborative learning, participants will gain practical insights and skills to succeed as Product Managers.",
           contentCard: [
             {
               icon: "/assets/images/allImages/Live Call.svg",
@@ -4167,7 +4180,7 @@ const MainCoursesDynimicData = {
             },
             {
               icon: "/assets/images/allImages/Award.svg",
-              text: "International Certificate",
+              text: "Global Certificate",
             },
             {
               icon: "/assets/images/allImages/Counselling.svg",
@@ -4418,13 +4431,13 @@ const MainCoursesDynimicData = {
               question:
                 "How will the product management course help me master these tools?",
               answer:
-                "The product management course will provide hands-on experience through practical exercises and capstone projects. You'll have the opportunity to apply these tools to solve product management challenges under the guidance of experienced instructors.",
+                "This product management course will provide you with hands-on experience through practical exercises and capstone projects. You'll have the opportunity to apply what you have learned to solve product management challenges under the guidance of experienced instructors.",
             },
             {
               question:
-                "Are the tools covered in the course industry standard?",
+                "Are all tools covered in this course according to industry standards?",
               answer:
-                "Yes, product managers across various sectors widely use the tools selected for the course. Mastering these tools will give you a competitive edge in the job market and enhance your effectiveness as a product manager.",
+                "Yes, the tools covered in this course are used widely by product managing experts and industry leaders. Mastering these tools will give you a competitive edge in the job market and enhance your effectiveness as a product manager.",
             },
           ],
         },

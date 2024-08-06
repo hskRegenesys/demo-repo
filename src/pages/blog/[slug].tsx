@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import HeaderOne from "@/components/Header/HeaderOne";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
@@ -8,45 +7,26 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import StickyBar from "@/components/StickyFooter/Sticky";
 import BlogContainer from "@/components/blogsBody/BlogContainer";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { wpService } from "src/services";
 import { IPostTypes } from "@/components/blogsBody/dataTypes";
+import { parse } from "node-html-parser";
 
 interface PostsByCategoryProps {
   slug: string;
   resolvedUrl: string;
   postResponse: Array<IPostTypes>;
+  faqsSchemaData: any;
 }
 
 const Post: React.FC<PostsByCategoryProps> = ({
   slug,
   resolvedUrl,
   postResponse,
+  faqsSchemaData,
 }) => {
-  const router = useRouter();
-  // const { slug } = router.query;
   const [blogList, setBlogList] = useState<any>(postResponse);
   const [isBlogDetail, setIsBlogDetail] = useState(false);
   const [isBlogPage, setIsBlogPage] = useState(false);
-
-  // const xmlOperation = async (sitemapData: any) => {
-  //   if (!(sitemapData.length > 0)) return;
-
-  //   try {
-  //     await fetch("/api/sitemapDynamicUrls", {
-  //       method: "POST",
-  //       body: JSON.stringify({ sitemapData }),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-  // useEffect(() => {
-  //   xmlOperation(blogList);
-  // }, [blogList]);
 
   useEffect(() => {
     setIsBlogDetail(true);
@@ -69,6 +49,7 @@ const Post: React.FC<PostsByCategoryProps> = ({
           setBlogList={setBlogList}
           postResponse={postResponse}
           isBlogDetail={isBlogDetail}
+          faqsSchemaData={faqsSchemaData}
         />
       )}
       <MainFooter isBlogPage={isBlogPage} />
@@ -83,11 +64,33 @@ export const getServerSideProps = async (context: any) => {
 
   const response = await wpService.allPosts({ slug });
 
+  const processedData = response.flatMap((item: any) => {
+    if (item.content) {
+      const htmlString = item.content.rendered;
+      const root = parse(htmlString);
+
+      const result: Array<{ question: string; answer: string }> = [];
+
+      root.querySelectorAll(".eb-accordion-inner").forEach((element) => {
+        element.querySelectorAll(".eb-accordion-title").forEach((h3, index) => {
+          const question = h3.text.trim();
+          const answer =
+            element.querySelectorAll("p")[index]?.text.trim() || "";
+          result.push({ question, answer });
+        });
+      });
+
+      return result;
+    }
+    return [];
+  });
+
   return {
     props: {
       slug,
       resolvedUrl,
       postResponse: response,
+      faqsSchemaData: processedData,
     },
   };
 };

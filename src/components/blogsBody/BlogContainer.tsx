@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import FeedBackForm from "./FeedBackForm";
 import NewsLetter from "./NewsLetter";
@@ -14,36 +14,20 @@ const BlogContainer = ({
   setBlogList,
   postResponse,
   isBlogDetail,
+  faqsSchemaData,
 }: {
   slug: string;
   setBlogList: (value: any) => void;
   postResponse: Array<IPostTypes>;
   isBlogDetail?: boolean;
+  faqsSchemaData?: any;
 }) => {
-  // const [postResponse, setPostResponse] = useState<Array<IPostTypes>>([]);
-  // const getPost = async () => {
-  //   const response = await wpService.allPosts({ slug: slug });
-  //   !!response && setPostResponse(response);
-  //   !!response && setBlogList(response);
-  // };
-  // useEffect(() => {
-  //   getPost();
-  // }, [slug]);
   const [isMobileView, setIsMobileView] = useState(false);
   const [anchorData, setAnchorData] = useState<any>(null);
   const [anchorClicked, setAnchorClicked] = useState(false);
 
   const contentRef = useRef<HTMLDivElement>(null);
   const headerOffset = 120;
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth < 920);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const imageUrl = postResponse[0]?.yoast_head_json?.og_image[0]?.url;
 
@@ -54,6 +38,39 @@ const BlogContainer = ({
           const htmlString = item.content.rendered;
           const parser = new DOMParser();
           const doc = parser.parseFromString(htmlString, "text/html");
+
+          const tocElement = doc.querySelector(".ez-toc-title-toggle");
+          if (tocElement) {
+            const anchor = tocElement.querySelector("a");
+            if (anchor) {
+              anchor.removeAttribute("href");
+            }
+
+            if (anchor) {
+              const span = doc.createElement("span");
+              span.innerHTML = anchor.innerHTML;
+              tocElement.replaceChild(span, anchor);
+            }
+          }
+
+          const faqItemsTitle = doc.querySelectorAll(
+            ".eb-accordion-title-wrapper"
+          );
+
+          faqItemsTitle.forEach((item, index) => {
+            const uniqueId = `faq-${index + 1}`;
+            item.setAttribute("data-target", uniqueId);
+          });
+
+          const faqItemsContent = doc.querySelectorAll(
+            ".eb-accordion-content-wrapper"
+          );
+
+          faqItemsContent.forEach((item, index) => {
+            const uniqueId = `faq-${index + 1}`;
+            item.setAttribute("id", uniqueId);
+            item.classList.add("hide-faq-list");
+          });
 
           const ulElements = doc.querySelectorAll("ul");
           const h2Elements = doc.querySelectorAll("h2");
@@ -133,9 +150,61 @@ const BlogContainer = ({
     }
   }, [postResponse, anchorData]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 920);
+    };
+    handleResize();
+
+    const handleToogleTOC = (event: MouseEvent) => {
+      const clickedElement = event.target as HTMLElement;
+
+      const isTocToggleButton =
+        clickedElement.closest(".ez-toc-title-toggle") !== null;
+
+      if (isTocToggleButton) {
+        const tocList = document.querySelector(".ez-toc-list");
+        if (tocList) {
+          tocList.classList.toggle("hide-toc-list");
+        }
+      }
+    };
+
+    const handleTitleToggleClick = (event: MouseEvent) => {
+      const clickedElement = event.target as HTMLElement;
+      const titleToggle = clickedElement.closest(
+        ".eb-accordion-title-wrapper"
+      ) as HTMLElement;
+
+      if (titleToggle) {
+        const targetId = titleToggle.getAttribute("data-target");
+
+        if (targetId) {
+          const contentWrapper = document.getElementById(targetId);
+          if (contentWrapper) {
+            contentWrapper.classList.toggle("hide-faq-list");
+          }
+        }
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    document.addEventListener("click", handleToogleTOC);
+    document.addEventListener("click", handleTitleToggleClick);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("click", handleToogleTOC);
+      document.removeEventListener("click", handleTitleToggleClick);
+    };
+  }, []);
+
   return (
     <>
       <Schemas type={Constants?.article} data={postResponse} />
+      {faqsSchemaData && (
+        <Schemas type={Constants?.faq} data={faqsSchemaData} />
+      )}
       <div style={{ paddingTop: "80px" }}>
         <div>
           {imageUrl && typeof imageUrl === "string" && (
