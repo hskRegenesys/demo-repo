@@ -89,7 +89,7 @@ const MyApp = ({ Component, pageProps }: any) => {
         }
       }
     }
-  }, []);
+  }, [router.pathname]);
 
   return (
     <ContextProvider>
