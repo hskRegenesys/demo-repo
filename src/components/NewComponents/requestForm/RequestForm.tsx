@@ -24,7 +24,10 @@ function RequestForm(props: any) {
   const [formInteraction, setFormInteraction] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState<string>("");
 
-  const { geoLocationData } = useGeoLocation();
+  const geoLocationData = useGeoLocation();
+
+  // console.log("Country:", geoLocationData.country);
+  // console.log("City:", geoLocationData.city);
 
   const hookForm: any = useForm();
 
@@ -111,7 +114,7 @@ function RequestForm(props: any) {
     if (date) {
       data.date = date;
     }
-    data.city = geoLocationData?.city?.name;
+    data.city = geoLocationData?.city;
 
     // Get the selected course's code
     const selectedCourse = courses.find(
@@ -301,7 +304,7 @@ function RequestForm(props: any) {
                   <PhoneInput
                     international
                     countryCallingCodeEditable={false}
-                    defaultCountry={geoLocationData?.country?.alpha2 || "ZA"}
+                    defaultCountry={geoLocationData.country}
                     placeholder="Select Country Code*"
                     value={watch("Phone")}
                     {...register("Phone", {

@@ -64,18 +64,15 @@ const MyApp = ({ Component, pageProps }: any) => {
             updateCityText(geoipResponse);
           };
 
-          const onError = (error: any) => {
-            console.log("GEOPIP_Error", error);
-          };
+      const onError = (error: any) => {
+        console.log("GEOPIP_Error", error);
+      };
 
-          if (typeof (window as any).geoip2 !== "undefined") {
-            (window as any).geoip2.country(onSuccess, onError);
-            console.log()
-          } else {
-            console.log("Error fetching country");
-          }
-
-         
+      if (typeof (window as any).geoip2 !== "undefined") {
+        (window as any).geoip2.country(onSuccess, onError);
+        console.log();
+      } else {
+        console.log("Error fetching country");
       }
       else {
         if(isCookieSet === 'true') {

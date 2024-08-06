@@ -32,7 +32,8 @@ function ModalPopup(props: any) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const { geoLocationData } = useGeoLocation();
+
+  const geoLocationData = useGeoLocation();
 
   const hookForm: any = useForm();
 
@@ -120,7 +121,7 @@ function ModalPopup(props: any) {
       data.date = date;
     }
 
-    data.city = geoLocationData?.city?.name;
+    data.city = geoLocationData?.city;
 
     // Get the selected course's code
     const selectedCourse = courses.find(
@@ -300,7 +301,7 @@ function ModalPopup(props: any) {
                     <PhoneInput
                       international
                       countryCallingCodeEditable={false}
-                      defaultCountry={geoLocationData?.country?.alpha2}
+                      defaultCountry={geoLocationData.country}
                       // defaultCountry="ZA"
                       placeholder="Select Country Code*"
                       onChange={(e) => {
