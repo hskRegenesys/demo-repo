@@ -121,10 +121,9 @@ function RequestForm(props: any) {
       (course: any) =>
         (course.name === "Digital Marketing with GenAI"
           ? "Digital Marketing"
-          : course.name) === data.Programme_Of_Interest
+          : course.name === "Management Advancement Programme" ? "Management Advancement" : course.name) === data.Programme_Of_Interest
     );
     const brochureName: any = brochureDetails[selectedCourse.code];
-
     const result = await leadService.saveLead(data);
 
     if (result?.data && props?.title === "Download Brochure") {
@@ -381,7 +380,7 @@ function RequestForm(props: any) {
                         value={
                           val.name === "Digital Marketing with GenAI"
                             ? "Digital Marketing"
-                            : val.name
+                            : val.name === "Management Advancement Programme"  ? "Management Advancement" : val.name
                         }
                         selected={val.code === props.CourseCode}
                       >
@@ -394,8 +393,7 @@ function RequestForm(props: any) {
                       {errors?.Programme_Of_Interest?.message}
                     </small>
                   )}
-                  {(programmeOfInterest === "Digital Marketing" ||
-                    programmeOfInterest === "Design Thinking") && (
+                  {(programmeOfInterest === "Design Thinking") && (
                     <small className={Styles.formFooterText}>
                       *Learn collaboratively! Apply with 15 people to begin the
                       course

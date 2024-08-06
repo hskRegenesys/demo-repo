@@ -1371,7 +1371,7 @@ const redirectURL = () => {
     },
     {
       source: "/lp/management-development-sa",
-      destination: "/all-courses/management-advancement",
+      destination: "/all-courses/management-advancement-programme",
       permanent: true,
     },
     {
@@ -1387,6 +1387,11 @@ const redirectURL = () => {
     {
       source: "/courses/introduction-to-professional-business-writing-skills",
       destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/all-courses/management-advancement",
+      destination: "/all-courses/management-advancement-programme",
       permanent: true,
     },
   ];
@@ -1616,7 +1621,7 @@ const redirectURL = () => {
       // "/data-science-and-business-analytics-online-course",
       // "/what-is-data-science-and-business-analytics",
     ],
-    "/management-advancement": [
+    "/management-advancement-programme": [
       "/mdp",
       // "/management-development-courses",
       // "/management-certificate-programs",
@@ -1659,8 +1664,8 @@ const createReWrites = () => {
     },
 
     {
-      source: "/all-courses/management-advancement",
-      destination: "/all-courses/management-advancement/48",
+      source: "/all-courses/management-advancement-programme",
+      destination: "/all-courses/management-advancement-programme/48",
     },
 
     {

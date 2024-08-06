@@ -91,8 +91,8 @@ const FooterContent2: React.FC = () => (
           </a>
         </li>
         <li>
-          <a href="https://www.digitalregenesys.com/all-courses/management-advancement">
-            Management Advancement
+          <a href="https://www.digitalregenesys.com/all-courses/management-advancement-programme">
+          Management Advancement Programme
           </a>
         </li>
         {/* <a href="https://www.digitalregenesys.com//all-courses/operations-and-supply-chain-management">

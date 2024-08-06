@@ -289,7 +289,7 @@ const pageMappings = [
   },
   {
     pages: [
-      "management-advancement",
+      "management-advancement-programme",
       // =========multiple pages===========
       "mdp",
       "management-development-courses",

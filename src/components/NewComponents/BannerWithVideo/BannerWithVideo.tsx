@@ -11,6 +11,7 @@ interface BannerComponentProps {
 
 type BannerCourseData = {
   BannerImgDesktop: string;
+  BannerImgMobile: string;
   coursePageName: string;
   BestSaleText: string;
   topTextMessage: string;
@@ -56,6 +57,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
   const [count, setCount] = useState("0");
   const [isMobileView, setIsMobileView] = useState(false);
 
+  console.log("pagename", pageName);
   useEffect(() => {
     let start = 0;
     const end = parseInt(uspEnrollmentCard.uspEnrollmentCount.substring(0, 3));
@@ -93,7 +95,8 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
               <span className={styles.topTextBestsale}>{BestSaleText}</span>
               <span className={styles.topTextMessage}>{topTextMessage}</span>
             </div>
-            {pageName === "Digital Marketing Course" ? (
+            {pageName === "Digital Marketing Course" ||
+            pageName === "Management Advancement Programme" ? (
               <h1 className={`${styles.HeadingText} mb-2`}>
                 {coursePageName}
                 <br />
@@ -180,7 +183,26 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
 
         <div className={styles.imageSection}>
           <div className={styles.imageCard}>
-            {data.BannerImgDesktop && (
+            <div className="d-none d-lg-block">
+              <Image
+                className={styles.imageBanner}
+                src={data.BannerImgDesktop}
+                alt={"Desktop Banner for Course"}
+                width={1100}
+                height={1112}
+              />
+            </div>
+            <div className="d-block d-lg-none">
+              <Image
+                className={styles.imageBanner}
+                src={data.BannerImgMobile}
+                alt={"Mobile Banner for Course"}
+                width={592}
+                height={400}
+              />
+            </div>
+
+            {/* {data.BannerImgDesktop && (
               <Image
                 className={styles.imageBanner}
                 src={
@@ -200,7 +222,7 @@ const BannerWithVideo: React.FC<BannerComponentProps> = ({
                     : 660
                 }
               />
-            )}
+            )} */}
             {vidoPlayIcon && (
               <div
                 className={styles.playIconContainer}

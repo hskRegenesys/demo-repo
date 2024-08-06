@@ -36,32 +36,33 @@ const MyApp = ({ Component, pageProps }: any) => {
 
   useEffect(() => {
     const isCookieSet = getCookie(cookieName);
-    if (isCookieSet == null) {
-      const updateCityText = (geoipResponse: any) => {
-        const countryCode = geoipResponse.country.iso_code.toLowerCase();
-
-        const url = window.location.href;
-        const { hostname, pathname } = new URL(
-          url.startsWith("http") ? url : "http://" + url
-        );
-        console.log("GEO---", hostname, pathname, url, countryCode);
-        if (
-          countryCode === "gb" &&
-          (url.includes("/all-courses") || pathname == "/")
-        ) {
-          handleSetCookie(cookieName, true);
-          let ukURL =
-            process.env.ENV_NAME === "PRODUCTION"
-              ? "https://digitalregenesys.com/uk"
-              : "https://qa.digitalregenesys.com/uk";
-          router.push(ukURL);
-        } else {
-          handleSetCookie(cookieName, false);
-        }
-      };
-      const onSuccess = (geoipResponse: any) => {
-        updateCityText(geoipResponse);
-      };
+      if (isCookieSet == null) {        
+          const updateCityText = (geoipResponse: any) => {
+            const countryCode = geoipResponse.country.iso_code.toLowerCase();
+  
+            const url = window.location.href;
+            const { hostname, pathname } = new URL(
+              url.startsWith("http") ? url : "http://" + url
+            );
+            console.log("GEO---", hostname, pathname, url, countryCode);
+            if (countryCode === "gb"  &&
+                (url.includes("/all-courses") || pathname == "/")
+            ) {
+              handleSetCookie(cookieName, true);
+              let ukURL =
+                process.env.ENV_NAME === "PRODUCTION"
+                  ? "https://digitalregenesys.com/uk"
+                  : "https://qa.digitalregenesys.com/uk";
+              router.push(ukURL);
+            }
+            else{
+              handleSetCookie(cookieName, false);
+            }
+            
+          };
+          const onSuccess = (geoipResponse: any) => {
+            updateCityText(geoipResponse);
+          };
 
       const onError = (error: any) => {
         console.log("GEOPIP_Error", error);
@@ -73,19 +74,23 @@ const MyApp = ({ Component, pageProps }: any) => {
       } else {
         console.log("Error fetching country");
       }
-    } else if (isCookieSet === "true") {
-      let ukURL =
-        process.env.ENV_NAME === "PRODUCTION"
-          ? "https://digitalregenesys.com/uk"
-          : "https://qa.digitalregenesys.com/uk";
-      router.push(ukURL);
-    } else {
-      let ukURL =
-        process.env.ENV_NAME === "PRODUCTION"
-          ? "https://digitalregenesys.com/"
-          : "";
-      router.push(ukURL);
-    }
+      else {
+        if(isCookieSet === 'true') {
+          const url = window.location.href;
+            const { hostname, pathname } = new URL(
+              url.startsWith("http") ? url : "http://" + url
+            );
+            if ((url.includes("/all-courses") || pathname == "/")) {
+              handleSetCookie(cookieName, true);
+              let ukURL =
+                process.env.ENV_NAME === "PRODUCTION"
+                  ? "https://digitalregenesys.com/uk"
+                  : "https://qa.digitalregenesys.com/uk";
+              router.push(ukURL);
+            }
+        }
+        
+      }
   }, []);
 
   return (

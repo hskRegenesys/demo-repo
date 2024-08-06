@@ -140,7 +140,71 @@ b {
 }
 .link-title ul {
   padding-left: 20px !important;
+  padding-left: 20px !important;
   margin-bottom: 10px;
+}
+
+#ez-toc-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ez-toc-title {
+  font-size: 22px;
+}
+
+.ez-toc-list li {
+  list-style: disc !important;
+  list-style-type: disc !important;
+  line-height: 35px !important;
+  overflow: visible !important;
+}
+
+.ez-toc-link {
+  font-size: 16px;
+  color: #000;
+}
+#ez-toc-container a:visited,
+#ez-toc-container a {
+  color: #000 !important;
+}
+
+.hide-toc-list {
+  display: none;
+}
+
+.hide-faq-list {
+  display: none;
+}
+.eb-accordion-title {
+  font-weight: 500;
+}
+
+.eb-accordion-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+  flex-direction: row-reverse;
+  background-color: #eef5ed;
+  padding: 10px 15px 0px 15px;
+}
+/* .eb-accordion-icon {
+  display: none;
+} */
+.eb-accordion-content {
+  /* border: 1px solid black; */
+  padding: 15px 20px 0px 20px;
+  margin-bottom: 20px;
+}
+.eb-accordion-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.wp-block-essential-blocks-accordion-item {
+  cursor: pointer;
 }
 
 /* 
@@ -393,9 +457,6 @@ p {
   font-weight: bolder !important;
   font-size: 16px !important;
 }
-.blog-content-container .ez-toc-title-toggle {
-  display: none !important;
-}
 
 .blog-container-toc-main h2:first-child {
   padding-top: 30px !important;
@@ -475,11 +536,19 @@ p {
     margin-top: 30px;
   }
 
-  .blog-content-container .link-title h2,
-  .blog-content-container .link-title h3 {
+  .blog-content-container .link-title h2 {
     font-size: 20px !important;
     margin-top: 10px;
     letter-spacing: 0.2px;
+  }
+  .blog-content-container .link-title h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 0.2px;
+  }
+
+  .eb-accordion-title {
+    font-size: 16px !important;
   }
   .blog-content-container .link-title p {
     font-size: 16px;
@@ -19792,6 +19861,11 @@ h6.designation {
 .mr-2 {
   margin-right: 10px;
 }
+.PhoneInput {
+  border: 2px solid #000;
+  border-radius: 14px;
+  padding: 0px 16px;
+}
 
 input.PhoneInputInput {
   padding-left: 6px !important;
@@ -19814,6 +19888,12 @@ input.PhoneInputInput {
 .blogs-apply-now .PhoneInputCountry {
   margin-top: 0px !important;
   margin-left: 0px !important;
+}
+
+.news-phone-input-style {
+  border: none !important;
+  border-radius: 5px;
+  padding: 6px 16px !important;
 }
 
 .blogs-apply-now input.PhoneInputInput {
