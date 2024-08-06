@@ -137,12 +137,15 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
               },
               865: {
                 slidesPerView: 2,
+                centeredSlides: false,
               },
               1200: {
                 slidesPerView: 3,
+                centeredSlides: false,
               },
               1700: {
                 slidesPerView: 3,
+                centeredSlides: false,
               },
             }}
           >
@@ -173,7 +176,6 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
-                          priority={true}
                         />
                       </div>
                       <div className={Styles.boldText}>
@@ -191,7 +193,6 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                           className={Styles.cardIcon}
                           width={24}
                           height={24}
-                          priority={true}
                         />
                       </div>
 
@@ -211,7 +212,6 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                             className={Styles.cardIcon}
                             width={24}
                             height={24}
-                            priority={true}
                           />
                         </div>
 
@@ -231,7 +231,6 @@ const FeaturedCourses: React.FC<FeaturedCoursesProps> = ({
                             className={Styles.cardIcon}
                             width={24}
                             height={24}
-                            priority={true}
                           />
                         </div>
 

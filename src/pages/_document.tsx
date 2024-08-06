@@ -114,6 +114,10 @@ export default function Document() {
           }}
         />
 
+        <script
+          src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js"
+          type="text/javascript"
+        ></script>
         <link
           rel="stylesheet"
           id="ez-toc-css"
@@ -134,6 +138,7 @@ export default function Document() {
           media="all"
         />
       </Head>
+
       <body>
         <Main />
         <NextScript />

@@ -47,6 +47,7 @@ const LearnersBenefit = ({ LearnersBenefitData }: any) => {
           loop={true}
           speed={2000}
           autoplay={{ delay: 8000 }}
+          centeredSlides={false}
           breakpoints={{
             0: { slidesPerView: 1.25, slidesPerGroup: 1, centeredSlides: true },
             560: { slidesPerView: 1 },

@@ -26,6 +26,9 @@ const nextConfig = {
     CM_DR_ADDRESSID: process.env.CM_DR_ADDRESSID,
     CM_DR_ACCOUNTID: process.env.CM_DR_ACCOUNTID,
     // Cm.com Env End
+
+    base_key: process.env.API_KEY,
+    base_api_url: process.env.API_BASE_URL,
   },
   images: {
     domains: [

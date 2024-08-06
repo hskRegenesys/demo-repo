@@ -100,9 +100,17 @@ b {
   font-size: 24px;
   font-weight: 400;
 }
+
 .link-title h3 {
-  font-size: 18px;
+  font-size: 20px !important;
+  font-family: "Montserrat", sans-serif;
 }
+
+.link-title h3 span {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
 .link-title h4 {
   font-size: 16px;
 }
@@ -131,6 +139,7 @@ b {
   list-style-type: disc;
 }
 .link-title ul {
+  padding-left: 20px !important;
   padding-left: 20px !important;
   margin-bottom: 10px;
 }
@@ -438,11 +447,19 @@ p {
   padding-top: 0px !important;
 }
 
-.blog-content-container .ez-toc-title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+.blog-content-container .ez-toc-title-container .ez-toc-title {
+  font-size: 24px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+}
+.blog-content-container .ez-toc-list .ez-toc-link {
+  color: #000 !important;
+  font-weight: bolder !important;
+  font-size: 16px !important;
+}
+
+.blog-container-toc-main h2:first-child {
+  padding-top: 30px !important;
 }
 
 @media (max-width: 1440px) {
@@ -505,6 +522,10 @@ p {
     padding-left: 0px;
   }
 
+  .blog-content-container .ez-toc-title-container .ez-toc-title {
+    font-size: 20px !important;
+  }
+
   .new-apply-now-btn {
     margin-top: 0px;
   }
@@ -536,6 +557,9 @@ p {
   .blog-content-container .link-title ul li {
     font-size: 16px;
   }
+  .link-title ul {
+    padding-left: 20px !important;
+  }
 
   .blog-content-container .link-title h2 a {
     font-size: 18px;
@@ -562,6 +586,10 @@ p {
   }
   #tns1 > .tns-item {
     padding-right: 50px !important;
+  }
+
+  .link-title h2 span {
+    font-size: 21px !important;
   }
 }
 
@@ -19812,6 +19840,11 @@ h6.designation {
   text-align: center;
   margin-top: 11px;
   font-size: 13px;
+}
+.PhoneInput {
+  border: 2px solid #000;
+  border-radius: 14px;
+  padding: 0px 16px;
 }
 @media (min-width: 767px) {
   .modal.show .modal-dialog {

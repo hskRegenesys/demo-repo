@@ -15,6 +15,7 @@ import dynamic from "next/dynamic";
 import { allCourseList } from "@/data/courseData";
 import Image from "next/image";
 import { brochureDetails } from "@/data/courseBrochure";
+import useGeoLocation from "../NewComponents/requestForm/useGeoLocation";
 // import Loader from "../Loader/Loader";
 const Loader = dynamic(() => import("../Loader/Loader"));
 
@@ -24,8 +25,6 @@ function ModalPopup(props: any) {
   const router = useRouter();
   const url = router?.asPath;
   const [isLoading, setIsLoading] = useState(true);
-  const [geoLocationData, setGeoLocationData] = useState<any>({});
-  const [countryData, setCountryData] = useState<any>({});
   const [show, setShow] = useState(false);
   const [btnDisable, sebtnDisable] = useState(false);
   const [formInteraction, setFormInteraction] = useState(false);
@@ -33,24 +32,7 @@ function ModalPopup(props: any) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  const getCountryCode = async () => {
-    let countryData = await countryCodeService.countryDetails();
-    setCountryData(countryData);
-    countryData ? setIsLoading(false) : setIsLoading(true);
-    try {
-      const response = await fetch("https://geolocation-db.com/json/");
-      const result = await response.json();
-      setGeoLocationData(result);
-
-      return result;
-    } catch (error) {
-      return error;
-    }
-  };
-  useEffect(() => {
-    getCountryCode();
-  }, []);
+  const { geoLocationData } = useGeoLocation();
 
   const hookForm: any = useForm();
 
@@ -137,6 +119,8 @@ function ModalPopup(props: any) {
     if (date) {
       data.date = date;
     }
+
+    data.city = geoLocationData?.city?.name;
 
     // Get the selected course's code
     const selectedCourse = courses.find(
@@ -237,123 +221,111 @@ function ModalPopup(props: any) {
       </Modal.Header>
 
       <Modal.Body>
-        {isLoading ? (
-          // <div className="d-flex justify-content-center w-100">
-          //   <div className="spinner-border" role="status">
-          //     <span className="sr-only" />
-          //   </div>
-          // </div>
-          <Loader />
-        ) : (
-          <form
-            className="form-box text-start popup-form"
-            onSubmit={handleSubmit(onSubmit)}
-            onBlur={handleFormBlur}
-          >
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="row">
-                  {/* <strong>Book a Free Counseling Session</strong> */}
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label>Full Name*</label>
-                      <input
-                        className={`${errors?.Name && "invalid"}`}
-                        placeholder="Full Name*"
-                        {...register("Name", {
-                          required: "Full Name is Required",
-                          pattern: {
-                            value: /^[a-zA-Z_ ]+$/,
-                            message: "Invalid User Name",
-                          },
-                        })}
-                        onKeyUp={(e) => {
-                          trigger("Name");
-                          mixpanel.track("Name Changed", {
-                            InputName: "name",
-                            Filled:
-                              (e.target as HTMLInputElement)?.value !== "",
-                            newValue: (e.target as HTMLInputElement)?.value,
+        <form
+          className="form-box text-start popup-form"
+          onSubmit={handleSubmit(onSubmit)}
+          onBlur={handleFormBlur}
+        >
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="row">
+                {/* <strong>Book a Free Counseling Session</strong> */}
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <label>Full Name*</label>
+                    <input
+                      className={`${errors?.Name && "invalid"}`}
+                      placeholder="Full Name*"
+                      {...register("Name", {
+                        required: "Full Name is Required",
+                        pattern: {
+                          value: /^[a-zA-Z_ ]+$/,
+                          message: "Invalid User Name",
+                        },
+                      })}
+                      onKeyUp={(e) => {
+                        trigger("Name");
+                        mixpanel.track("Name Changed", {
+                          InputName: "name",
+                          Filled: (e.target as HTMLInputElement)?.value !== "",
+                          newValue: (e.target as HTMLInputElement)?.value,
+                        });
+                      }}
+                    />
+                    {errors?.Name && (
+                      <small className="text-danger">
+                        {errors?.Name?.message}
+                      </small>
+                    )}
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <label>Email*</label>
+                  <div className="form-group">
+                    <input
+                      className={`${errors?.Email && "invalid"}`}
+                      placeholder="Email*"
+                      {...register("Email", {
+                        required: "Email is Required",
+                        pattern: {
+                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                          message: "Invalid email address",
+                        },
+                      })}
+                      onKeyUp={(e) => {
+                        trigger("Email");
+                        mixpanel.track("Email Changed", {
+                          InputName: "Email",
+                          Filled: (e.target as HTMLInputElement)?.value !== "",
+                          newValue: (e.target as HTMLInputElement)?.value,
+                        });
+                      }}
+                    />
+                    {errors?.Email && (
+                      <small className="text-danger">
+                        {errors?.Email?.message}
+                      </small>
+                    )}
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="form-group position-relative">
+                    <label>Phone*</label>
+                    <input
+                      type="hidden"
+                      {...register("Phone", {
+                        required: "Phone is Required",
+                      })}
+                    />
+                    <PhoneInput
+                      international
+                      countryCallingCodeEditable={false}
+                      defaultCountry={geoLocationData?.country?.alpha2}
+                      // defaultCountry="ZA"
+                      placeholder="Select Country Code*"
+                      onChange={(e) => {
+                        const phoneNumber = e ? e.toString() : "";
+                        const isValid = validator.isMobilePhone(phoneNumber);
+                        if (isValid) {
+                          setValue("Phone", e);
+                          mixpanel.track("Phone Changed", {
+                            InputName: "Phone",
+                            Filled: e !== "",
+                            newValue: e,
                           });
-                        }}
-                      />
-                      {errors?.Name && (
-                        <small className="text-danger">
-                          {errors?.Name?.message}
-                        </small>
-                      )}
-                    </div>
+                          setPhoneNumberError("");
+                        } else {
+                          setPhoneNumberError("Valid phone number Required");
+                        }
+                      }}
+                      className={`${phoneNumberError && "invalid"}`}
+                    />
+                    {phoneNumberError && (
+                      <small className="text-danger">{phoneNumberError}</small>
+                    )}
                   </div>
-                  <div className="col-md-6">
-                    <label>Email*</label>
-                    <div className="form-group">
-                      <input
-                        className={`${errors?.Email && "invalid"}`}
-                        placeholder="Email*"
-                        {...register("Email", {
-                          required: "Email is Required",
-                          pattern: {
-                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                            message: "Invalid email address",
-                          },
-                        })}
-                        onKeyUp={(e) => {
-                          trigger("Email");
-                          mixpanel.track("Email Changed", {
-                            InputName: "Email",
-                            Filled:
-                              (e.target as HTMLInputElement)?.value !== "",
-                            newValue: (e.target as HTMLInputElement)?.value,
-                          });
-                        }}
-                      />
-                      {errors?.Email && (
-                        <small className="text-danger">
-                          {errors?.Email?.message}
-                        </small>
-                      )}
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group position-relative">
-                      <label>Phone*</label>
-                      <input
-                        type="hidden"
-                        {...register("Phone", {
-                          required: "Phone is Required",
-                        })}
-                      />
-                      <PhoneInput
-                        international
-                        countryCallingCodeEditable={false}
-                        defaultCountry={geoLocationData?.country_code}
-                        // defaultCountry="ZA"
-                        placeholder="Select Country Code*"
-                        onChange={(e) => {
-                          const phoneNumber = e ? e.toString() : "";
-                          const isValid = validator.isMobilePhone(phoneNumber);
-                          if (isValid) {
-                            setValue("Phone", e);
-                            mixpanel.track("Phone Changed", {
-                              InputName: "Phone",
-                              Filled: e !== "",
-                              newValue: e,
-                            });
-                            setPhoneNumberError("");
-                          } else {
-                            setPhoneNumberError("Valid phone number Required");
-                          }
-                        }}
-                        className={`${phoneNumberError && "invalid"}`}
-                      />
-                      {phoneNumberError && (
-                        <small className="text-danger">
-                          {phoneNumberError}
-                        </small>
-                      )}
-                    </div>
-                  </div>
-                  {/* <div className="col-md-6">
+                </div>
+                {/* <div className="col-md-6">
                     <div className="form-group">
                       <label>City*</label>
                       <input
@@ -378,47 +350,47 @@ function ModalPopup(props: any) {
                       )}
                     </div>
                   </div> */}
-                  <div className="col-md-6 ">
-                    <div className="form-group">
-                      <label>Course you are looking for*</label>
-                      <select
-                        // disabled={!!id}
-                        value={programmeOfInterest}
-                        className={`select-course form-select${
-                          errors?.Programme_Of_Interest &&
-                          " focus:border-red-500 focus:ring-red-500 border-red-500"
-                        }`}
-                        {...register("Programme_Of_Interest", {
-                          required: "Course is required",
-                        })}
-                      >
-                        {/* <option value="" disabled selected>
+                <div className="col-md-6 ">
+                  <div className="form-group">
+                    <label>Course you are looking for*</label>
+                    <select
+                      // disabled={!!id}
+                      value={programmeOfInterest}
+                      className={`select-course form-select${
+                        errors?.Programme_Of_Interest &&
+                        " focus:border-red-500 focus:ring-red-500 border-red-500"
+                      }`}
+                      {...register("Programme_Of_Interest", {
+                        required: "Course is required",
+                      })}
+                    >
+                      {/* <option value="" disabled selected>
                           Course you are looking for *
                         </option> */}
-                        {courses.map((val: any) => {
-                          return (
-                            <option
-                              key={val.id}
-                              value={
-                                val.name === "Digital Marketing with GenAI"
-                                  ? "Digital Marketing"
-                                  : val.name
-                              }
-                              selected={val.code === props.courseCode}
-                            >
-                              {val.name}
-                            </option>
-                          );
-                        })}
-                      </select>
-                      {errors?.Programme_Of_Interest && (
-                        <small className="text-danger">
-                          {errors?.Programme_Of_Interest?.message}
-                        </small>
-                      )}
-                    </div>
+                      {courses.map((val: any) => {
+                        return (
+                          <option
+                            key={val.id}
+                            value={
+                              val.name === "Digital Marketing with GenAI"
+                                ? "Digital Marketing"
+                                : val.name
+                            }
+                            selected={val.code === props.courseCode}
+                          >
+                            {val.name}
+                          </option>
+                        );
+                      })}
+                    </select>
+                    {errors?.Programme_Of_Interest && (
+                      <small className="text-danger">
+                        {errors?.Programme_Of_Interest?.message}
+                      </small>
+                    )}
                   </div>
-                  {/* <div className="col-md-6 d-none">
+                </div>
+                {/* <div className="col-md-6 d-none">
                     {!!id ? (
                       <div className="form-group">
                         <label>Course you are looking for*</label>
@@ -485,7 +457,7 @@ function ModalPopup(props: any) {
                       </div>
                     )}
                   </div> */}
-                  {/* <div className="col-md-6">
+                {/* <div className="col-md-6">
                     <div className="form-group">
                       <label>Select Highest Qualification*</label>
                       <select
@@ -509,16 +481,17 @@ function ModalPopup(props: any) {
                       )}
                     </div>
                   </div> */}
-                  <div className="text-center">
-                    {(programmeOfInterest === "Design Thinking") && (
-                      <small className="text-black">
-                        *Learn collaboratively! Apply with 15 people to begin
-                        the course
-                      </small>
-                    )}
-                  </div>
-                  <div className="d-flex mt-3 justify-content-center align-items-center">
-                    {/* <button
+                <div className="text-center">
+                  {(programmeOfInterest === "Digital Marketing" ||
+                    programmeOfInterest === "Design Thinking") && (
+                    <small className="text-black">
+                      *Learn collaboratively! Apply with 15 people to begin the
+                      course
+                    </small>
+                  )}
+                </div>
+                <div className="d-flex mt-3 justify-content-center align-items-center">
+                  {/* <button
                 className="theme-btn btn-style-two mr-2"
                 onClick={(e) => props.setShows(false)}
               >
@@ -526,24 +499,23 @@ function ModalPopup(props: any) {
                 <span className="btn-title">Cancel</span>
               </button> */}
 
-                    <button
-                      type="submit"
-                      className="theme-btn btn-style-two"
-                      onClick={handleShow}
-                      disabled={btnDisable}
-                    >
-                      <i className="btn-curve"></i>
-                      <span className="btn-title">{submitTitle}</span>
-                    </button>
-                  </div>
-                  {/* <small>
+                  <button
+                    type="submit"
+                    className="theme-btn btn-style-two"
+                    onClick={handleShow}
+                    disabled={btnDisable}
+                  >
+                    <i className="btn-curve"></i>
+                    <span className="btn-title">{submitTitle}</span>
+                  </button>
+                </div>
+                {/* <small>
                     By submitting this form, you agree to our Privacy Policy.
                   </small> */}
-                </div>
               </div>
             </div>
-          </form>
-        )}
+          </div>
+        </form>
       </Modal.Body>
     </>
   );

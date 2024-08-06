@@ -148,7 +148,13 @@ const OurLocation: React.FC = () => {
         </div>
 
         <div className={Styles.WorldImg}>
-          <Image src={countryImage} alt="World Map" width={620} height={300} />
+          <Image
+            src={countryImage}
+            alt="World Map"
+            width={620}
+            height={300}
+            priority
+          />
         </div>
       </div>
     </div>

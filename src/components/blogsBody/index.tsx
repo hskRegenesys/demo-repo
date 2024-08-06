@@ -9,7 +9,7 @@ import LandingForm from "../commonForm/AllForms";
 import { carousalProps } from "./dataTypes";
 import { Toaster } from "react-hot-toast";
 
-const BlogsBody = () => {
+const BlogsBody = (props: any) => {
   return (
     <div className="blog-body-wrapper" style={{ paddingTop: "57px" }}>
       <CarouselComponent carouselProps={carousalProps} />
@@ -17,7 +17,7 @@ const BlogsBody = () => {
         <div className="row">
           <div className="col-12 col-lg-9">
             <Categories />
-            <Blogs />
+            <Blogs response={props?.postData} />
           </div>
           <div className="col-12 col-lg-3">
             <RightSidePanel />
