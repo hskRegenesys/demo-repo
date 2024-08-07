@@ -44,7 +44,6 @@ const MyApp = ({ Component, pageProps }: any) => {
         const { hostname, pathname } = new URL(
           url.startsWith("http") ? url : "http://" + url
         );
-        console.log("GEO---", hostname, pathname, url, countryCode);
         if (
           countryCode === "gb" &&
           (url.includes("/all-courses") || pathname == "/")
