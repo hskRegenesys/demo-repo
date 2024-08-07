@@ -33,17 +33,22 @@ const useGeoLocation = (): { country?: any; city?: any } => {
     const cookieCity = getCookie("city");
 
     if (cookieCountry && cookieCity) {
-      console.log("Cookies are available");
       setGeoLocationData({ country: cookieCountry, city: cookieCity });
       setCookiesChecked(true);
-    } else {
-      console.log("Cookies not found, making API call");
+    } else if (process.env.ENV_NAME === "PRODUCTION") {
       axios
         .get("https://api.ipify.org?format=json")
         .then((res) => {
           setIPAddress(res?.data?.ip);
         })
         .catch((error) => console.log("Error fetching IP address:", error));
+    } else {
+      const defaultCountry = "ZA";
+      const defaultCity = "null";
+      setGeoLocationData({ country: defaultCountry, city: defaultCity });
+      handleSetCookie("country", defaultCountry);
+      handleSetCookie("city", defaultCity);
+      setCookiesChecked(true);
     }
   }, []);
 
