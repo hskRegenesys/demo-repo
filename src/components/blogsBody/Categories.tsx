@@ -2,8 +2,10 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { wpService } from "src/services";
 
-const Categories = () => {
-  const [categoryList, setCategoryList] = useState<Array<any>>([]);
+const Categories = ({ categories }: any) => {
+  const [categoryList, setCategoryList] = useState<Array<any>>(
+    categories.slice(0, 6)
+  );
 
   const getCategoryList = async () => {
     const response = await wpService.allCategories({ per_page: 40 });
@@ -13,7 +15,11 @@ const Categories = () => {
   };
 
   useEffect(() => {
-    getCategoryList();
+    if (categories?.length > 0) {
+      setCategoryList(categories.slice(0, 6));
+    } else {
+      getCategoryList();
+    }
   }, []);
 
   const blogBaseUrl =
@@ -28,6 +34,7 @@ const Categories = () => {
           <h1 className="h1 pt-2 pb-4 title-home">Digital Regenesys Blog</h1>
         </div>
       </div>
+
       <div className="row">
         {categoryList?.length > 0
           ? categoryList?.map((item) => {
@@ -38,7 +45,6 @@ const Categories = () => {
                   <a
                     href={`${blogBaseUrl}/${slug}`}
                     rel="noreferrer"
-                    target="_blank"
                     className="col-12 col-sm-6 col-lg-4"
                   >
                     <div className="inline-button w-100 text-truncate">

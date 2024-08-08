@@ -10,7 +10,7 @@ const PostContainer = ({ post, restPost }: IPostContainerTypes) => {
       : "https://www.digitalregenesys.com/blog";
 
   return (
-    <div className={`p-2 ${restPost ? " col-12 col-sm-6 col-lg-4" : ""}`}>
+    <div className={`p-2 ${restPost ? "col-12 col-sm-6 col-lg-4" : ""}`}>
       {/* <Link > */}
       <a
         href={`${blogBaseUrl}/${post?.slug}`}
