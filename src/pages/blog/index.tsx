@@ -11,17 +11,17 @@ import { wpService } from "src/services";
 import Script from "next/script";
 
 const Blogs = (props: any) => {
-  const [searchData, setSearchData] = useState([]);
+  // const [searchData, setSearchData] = useState([]);
   const [isBlogPage, setIsBlogPage] = useState(false);
-  const search = (val: string) => {
-    searchAPI(val);
-  };
-  const searchAPI = async (value: any) => {
-    const response = await wpService.allPosts({
-      search: value,
-    });
-    setSearchData(response);
-  };
+  // const search = (val: string) => {
+  //   searchAPI(val);
+  // };
+  // const searchAPI = async (value: any) => {
+  //   const response = await wpService.allPosts({
+  //     search: value,
+  //   });
+  //   setSearchData(response);
+  // };
 
   useEffect(() => {
     setIsBlogPage(true);

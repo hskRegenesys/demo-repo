@@ -18,7 +18,8 @@ const BlogsBody = (props: any) => {
       <div className="container-fluid px-5">
         <div className="row">
           <div className="col-12 col-lg-9">
-            <Categories />
+            <Categories categories={props?.postData} />
+
             <Blogs response={props?.postData} />
           </div>
           <div className="col-12 col-lg-3">

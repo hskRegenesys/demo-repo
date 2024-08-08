@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { wpService } from "src/services";
 import Link from "next/link";
 import { IPostListTypes } from "./dataTypes";
@@ -159,6 +159,15 @@ const BlogsByCategories = ({
     }
   }, [currentPage]);
 
+  const currentPosts = useMemo(() => {
+    if (!postList || postList?.length === 0) return [];
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    return postList.flatMap(({ posts }) =>
+      posts.slice(indexOfFirstPost, indexOfLastPost)
+    );
+  }, [postList, currentPage]);
+
   return (
     <div style={{ paddingTop: "85px" }}>
       <div className="d-flex justify-content-center text-center py-5 bg-light-green">
@@ -182,37 +191,18 @@ const BlogsByCategories = ({
           <div className="col-12 col-lg-9">
             <h1 className="h5 p-0 m-0 fw-bold mt-3">{category} Blog</h1>
 
-            {postList?.length > 0 &&
-              postList?.map((values) => {
-                const indexOfLastPost = currentPage * postsPerPage;
-                const indexOfFirstPost = indexOfLastPost - postsPerPage;
-                const currentPosts = values?.posts?.slice(
-                  indexOfFirstPost,
-                  indexOfLastPost
-                );
-                return isLoading ? (
-                  <div className="d-flex justify-content-center align-items-center h-25">
-                    <Spinner animation={"border"} />
-                  </div>
-                ) : values?.posts?.length > 0 ? (
-                  <div key={values?.category} className="py-3">
-                    {/* <h2
-                      className="h6 p-0 m-0 fw-bold"
-                      dangerouslySetInnerHTML={{
-                        __html: values?.category.toString(),
-                      }}
-                    /> */}
-                    {currentPosts?.length > 0 ? (
-                      <div className="row py-3">
-                        {currentPosts?.map((item) => (
-                          <PostContainer post={item} key={item.id} restPost />
-                        ))}
-                      </div>
-                    ) : null}
-                    {renderPagination(values?.posts?.length)}
-                  </div>
-                ) : null;
-              })}
+            {currentPosts?.length > 0 ? (
+              <div className="py-3">
+                <div className="row py-3">
+                  {currentPosts?.map((item) => (
+                    <PostContainer post={item} key={item.id} restPost />
+                  ))}
+                </div>
+                {renderPagination(
+                  postList.flatMap(({ posts }) => posts).length
+                )}
+              </div>
+            ) : null}
           </div>
           <div className="col-12 col-lg-3">
             <RightSidePanel />

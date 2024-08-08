@@ -9,20 +9,9 @@ const Blogs = (props: any) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [postList, setPostList] = useState<Array<IPostListTypes>>([]);
 
-  // const getCategoryList = async () => {
-  //   const response = await wpService.allCategories({ per_page: 40 });
-  //   if (response?.length > 0) {
-  //     postByCategory(response);
-  //   }
-  // };
-  // useEffect(() => {
-  //   getCategoryList();
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
-
   const sitemapData = postList?.flatMap((item) => item.posts);
   const xmlOperation = async (sitemapData: any) => {
-    if (!(sitemapData.length > 0)) return;
+    if (!(sitemapData?.length > 0)) return;
 
     try {
       await fetch("/api/sitemapDynamicUrls", {
@@ -65,12 +54,10 @@ const Blogs = (props: any) => {
     postByCategory(props?.response);
   }, []);
 
-
   const blogBaseUrl =
     process.env.ENV_NAME === "development"
       ? "/blog/category"
       : "https://www.digitalregenesys.com/blog/category";
-
 
   return isLoading ? (
     <div className="d-flex justify-content-center align-items-center h-25">
